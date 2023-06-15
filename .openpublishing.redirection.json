@@ -249,6 +249,51 @@
       "source_path": "docs/boards/work-items/changes-to-process-templates.md",
       "redirect_url": "/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops#removing-assigned-to-rule-on-bug-work-item-type",
       "redirect_document_id": false
+    }, 
+    {
+      "source_path": "docs/boards/report/dashboards/velocity-guidance.md",
+      "redirect_url": "/azure/devops/report/dashboards/team-velocity",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-excel-invalid-links-tree-list.md",
+      "redirect_url": "/azure/devops/boards/backlogs/office/faqs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/plans/edit-delivery-plans-permissions.md",
+      "redirect_url": "/azure/devops/organizations/security/set-permissions-access-work-tracking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/split-columns.md",
+      "redirect_url": "/azure/devops/boards/boards/add-columns",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "docs/boards/boards/reorder-cards.md",
+      "redirect_url": "/azure/devops/boards/boards/customize-cards#reorder-cards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-board-controls.md",
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview#use-kanban-board-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-key-concepts.md",
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview#kanban-concepts-and-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-enable-live-updates.md",
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview#enable-live-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-basics.md",
+      "redirect_url": "/azure/devops/boards/boards/kanban-quickstart",
+      "redirect_document_id": false
     }
   ]
 }

@@ -215,7 +215,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       <a id="burndown-analytics-widget"></a>  
       Adds a tile that displays a burndown chart that you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints.    
       
-      To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
+      To learn more, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -230,7 +230,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       <a id="burnup-analytics-widget"></a> 	    
       Adds a tile that displays a burnup chart that you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints.  
       
-      To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
+      To learn more, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -432,7 +432,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       Provides quick access to open these Agile tools and team resources:     
       
       - [Backlog](../../boards/backlogs/create-your-backlog.md)   
-      - [Kanban board](../../boards/boards/kanban-basics.md)    
+      - [Kanban board](../../boards/boards/kanban-overview.md)    
       - [Task board](../../boards/sprints/task-board.md)    
       - [Queries](../../boards/queries/using-queries.md)  
    :::column-end:::

@@ -24,7 +24,7 @@ The following repository types are supported.
         [Azure Repos Git](azure-repos-git.md) (`git`)
     :::column-end:::
     :::column span="2":::
-        * Azure DevOps Server 2020 (limited to repositories in the same organization)
+        * Azure DevOps Server (limited to repositories in the same organization)
         * Azure DevOps Services
     :::column-end:::
 :::row-end:::
@@ -57,7 +57,7 @@ The following repository types are supported.
 :::row-end:::
 
 > [!IMPORTANT]
-> Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server 2020.
+> Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server.
 
 > [!NOTE]
 > Azure Pipelines provides **Limit job scope** settings for Azure Repos Git repositories.

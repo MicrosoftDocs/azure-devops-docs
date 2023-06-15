@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 2/24/2023
+ms.date: 6/6/2023
 
 ms.topic: article
 ms.service: azure-devops
@@ -38,7 +38,16 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="2"><a href="2023/sprint-220-update.md" data-raw-source="[20 April 2023](2023/sprint-220-update.md)"> 20 April 2023</a></td>
+    <td rowspan="7"><a href="2023/sprint-222-update.md" data-raw-source="[6 June 2023](2023/sprint-222-update.md)"> 6 June 2023</a></td>
+    <td>GitHub Advanced Security for Azure DevOps (public preview)</td><td>General</td><td>N/A</td></tr>
+    <td>Fixed a bug that allowed users to bypass restrict global personal access token (PAT) creation</td><td>General</td><td>Future</td></tr>
+    <td>Markdown support for comments (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>Improvements to YAML pipeline traceability</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Automatic tokens created for Kubernetes Service Connection</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline agents can be registered using a Service Principal</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Preview of macOS 13 Ventura for Azure Pipeline hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
+<tr>
+    <td rowspan="3"><a href="2023/sprint-220-update.md" data-raw-source="[20 April 2023](2023/sprint-220-update.md)"> 20 April 2023</a></td>
     <td>Sticky "Save" and "Save and Close" button </td><td>Boards</td><td>Future</td></tr>
     <td>Stage quick actions</td><td>Pipelines</td><td>Future</td></tr>
     <td>Analytics Views are now generally available</td><td>Reporting</td><td>Future</td></tr>

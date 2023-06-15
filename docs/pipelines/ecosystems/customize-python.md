@@ -2,7 +2,7 @@
 title: Customize Python for Azure Pipelines
 description:  Customize how you use Python with Azure Pipelines
 ms.topic: conceptual
-ms.custom: contperf-fy22q4
+ms.custom: contperf-fy22q4, devx-track-python
 ms.date: 12/14/2022
 monikerRange: '<= azure-devops'
 ---

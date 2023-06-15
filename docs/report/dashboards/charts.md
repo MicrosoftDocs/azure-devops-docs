@@ -282,7 +282,7 @@ To create a burndown chart, make sure to add the numeric field you want to your 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Configure chart dialog, Remaining work for past four weeks.](media/charts/config-remaining-work-trend-chart.png)   
 
-In addition to query-based burndown charts, you can [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md). 
+In addition to query-based burndown charts, you can [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md). 
 
 ::: moniker-end  
 

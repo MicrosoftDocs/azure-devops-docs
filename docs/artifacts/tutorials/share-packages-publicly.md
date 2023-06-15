@@ -2,6 +2,7 @@
 title: Share Packages publicly with public feeds
 description: Use Azure Artifacts public feeds to share NuGet, npm, Maven, and Python packages publicly
 ms.service: azure-devops-artifacts
+ms.custom: devx-track-python
 ms.date: 11/22/2022
 monikerRange: 'azure-devops'
 ---

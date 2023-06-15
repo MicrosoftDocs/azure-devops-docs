@@ -315,6 +315,9 @@
           href: test/codecoverage-for-pullrequests.md
 - name: Deploy apps
   items:
+    - name: Create a multistage pipeline
+      href: process/create-multistage-pipeline.md
+      displayName: multi stage, multi stage pipelines 
     - name: Deploy apps to environments
       items:
         - name: Define and target environments
@@ -433,6 +436,8 @@
       items:
         - name: Build and push to Azure Container Registry with a Docker template
           href: ecosystems/containers/acr-template.md
+        - name: Build and push to Azure Container Registry - Managed Service Identity
+          href: ecosystems/containers/publish-to-acr.md
     - name: Azure Kubernetes Service
       items:
       - name: Build and deploy to Azure Kubernetes Service
@@ -503,6 +508,9 @@
     - name: Publish NuGet packages with Jenkins
       href: packages/jenkins.md
       displayName: nuget, package, publish, jenkins
+    - name: Publish NuGet packages to NuGet.org (Classic/YAML)
+      href: artifacts/publish-public-registry.md
+      displayName: publish, nuget, package
 - name: Create & use resources
   items:
     - name: About resources
@@ -536,7 +544,7 @@
     - name: About agents & agent pools
       href: agents/agents.md
       displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
-    - name: Agent version 3.x preview
+    - name: Agent version 3.x
       href: agents/v3-agent.md
     - name: Create & manage agent pools
       href: agents/pools-queues.md
@@ -546,11 +554,19 @@
     - name: Microsoft-hosted agents
       href: agents/hosted.md
     - name: Self-hosted Linux agents
-      href: agents/v2-linux.md
+      href: agents/linux-agent.md
     - name: Self-hosted macOS agents
-      href: agents/v2-osx.md
+      href: agents/osx-agent.md
     - name: Self-hosted Windows agents
-      href: agents/v2-windows.md
+      href: agents/windows-agent.md
+    - name: Self-hosted agents (previous version 2.x)
+      items:
+        - name: Self-hosted Linux agents (2.x)
+          href: agents/v2-linux-agent.md
+        - name: Self-hosted macOS agents (2.x)
+          href: agents/v2-osx-agent.md
+        - name: Self-hosted Windows agents (2.x)
+          href: agents/v2-windows-agent.md      
     - name: Scale set agents
       href: agents/scale-set-agents.md
       displayName: byos, elastic agents, VMSS, autoscale
@@ -624,6 +640,16 @@
           displayName: PATH, containers, control tasks, auditing
     - name: Download release permissions report
       href: ../organizations/security/download-permissions-report-release.md
+- name: Architectures
+  items:
+    - name: Baseline Azure Pipelines architecture
+      href: architectures/devops-pipelines-baseline-architecture.md
+    - name: Azure Web Apps architecture
+      href: architectures/devops-pipelines-azure-web-apps-architecture.md
+    - name: DevTest architecture
+      href: architectures/devops-pipelines-devtest-iaas-architecture.md
+    - name: IaaS architecture
+      href: architectures/devops-pipelines-iaas-vms-architecture.md
 - name: Integrate with 3rd party software
   items:
   - name: Microsoft Teams

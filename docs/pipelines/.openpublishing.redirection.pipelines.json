@@ -124,6 +124,18 @@
       "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/bake.md",
       "redirect_url":"/azure/devops/pipelines/ecosystems/kubernetes/deploy",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/agents/v2-linux.md",
+      "redirect_url":"/azure/devops/pipelines/agents/linux-agent"
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/agents/v2-windows.md",
+      "redirect_url":"/azure/devops/pipelines/agents/windows-agent"
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/agents/v2-osx.md",
+      "redirect_url":"/azure/devops/pipelines/agents/osx-agent"
     }
   ]
 }

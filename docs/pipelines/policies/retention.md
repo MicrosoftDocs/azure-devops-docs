@@ -5,7 +5,7 @@ description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
-ms.date: 11/08/2022
+ms.date: 05/03/2023
 ms.custom: contperf-fy21q1, contperf-fy21q2, cross-service
 monikerRange: '<= azure-devops'
 ---
@@ -45,11 +45,27 @@ To manage retention policies, you must have one of the following subscriptions:
 
 You can also buy monthly access to Azure Test Plans and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 ## Configure retention policies
 
-1. Sign in to your project (`https://dev.azure.com/{yourorganization}/{yourproject}`). 
+1. Sign in to your project. 
+
+2. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
+
+3. Select **Release retention** under **Pipelines** or **Retention** under **Test**.
+    * Select **Release retention** to set up your release retention policies and configure when to delete or permanently destroy releases.
+    * Select **Retention** to set up how long to keep manual and automated test runs.     
+
+    :::image type="content" source="media/devops-2019-retention-menu.png" alt-text="Screenshot of retention settings in Project settings for DevOps 2019.":::
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+## Configure retention policies
+
+1. Sign in to your project. 
 
 2. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
@@ -58,7 +74,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
     * Select **Release retention** to set up your release retention policies and configure when to delete or permanently destroy releases.
     * Select **Retention** to set up how long to keep manual and automated test runs.     
 
-    :::image type="content" source="media/retention-menu.png" alt-text="Retention settings in Project settings":::
+    :::image type="content" source="media/retention-menu.png" alt-text="Screenshot of retention settings in Project settings.":::
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022"
@@ -497,7 +513,9 @@ As the stage is deleted, so the stage level retention settings are not applicabl
 
 ### My organization requires us to retain builds and releases longer than what is allowed in the settings. How can I request a longer retention?
 
-The only way to retain a run or a release longer than what is allowed through retention settings is to manually mark it to be retained indefinitely. There is no way to configure a longer retention setting. You can also explore the possibility of using the REST APIs in order to download information and artifacts about the runs and upload them to your own storage or artifact repository.
+The only way to retain a run or a release longer than what is allowed through retention settings is to manually mark it to be retained indefinitely. There is no way to configure a longer retention setting manually. Please reach out to [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html) for assistance. 
+
+You can also explore the possibility of using the REST APIs in order to download information and artifacts about the runs and upload them to your own storage or artifact repository.
 
 ### I lost some runs. Is there a way to get them back?
 

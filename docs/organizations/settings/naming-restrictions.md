@@ -99,7 +99,7 @@ Files attached to work items must conform to the following restrictions.
 
 ### Board column and swimlane names 
 
-Your [Kanban board](../../boards/boards/kanban-basics.md) turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work. 
+Your [Kanban board](../../boards/boards/kanban-overview.md) turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work. 
 
 Customize your Kanban boards by adding, removing, or renaming [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md). Columns support the flow of work across the board. Swimlanes allow you to manage different classes of work as horizontal lanes on the board.
 
@@ -212,7 +212,7 @@ Tag names must conform to the following restrictions.
 
 ## Azure Pipelines
 
-Azure pipeline definitions must conform to the following restrictions.
+Azure Pipeline definitions must conform to the following restrictions.
 
 |Restriction type |Restriction  |
 |---------|---------|
@@ -320,7 +320,7 @@ Both the operating system and Active Directory impose certain restrictions on co
 A process defines the building blocks of the work item tracking system and other subsystems that you have access to after connecting to a project.  
 
 > [!NOTE]   
->  **Terminology**: Both "process" and "process template" refer to an interdependent set of files used to create a project. For more information, see [Choose a process](../../boards/work-items/guidance/choose-process.md), which describes the differences among the three default processes available to you.   
+>  **Terminology**: Both "process" and "process template" refer to an interdependent set of files used to create a project. For more information, see [About processes and process templates](../../boards/work-items/guidance/choose-process.md), which describes the differences among the three default processes available to you.   
 
 Processes that you define or customize must conform to the following restrictions.  
 

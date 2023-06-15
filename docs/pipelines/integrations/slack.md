@@ -17,6 +17,11 @@ With [Azure Pipelines app for Slack](https://slack.com/apps/AFH4Y66N9-azure-pipe
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
+## Prerequisites
+
+* In Slack, you need to have permission to install an app to your Slack workspace.
+* For Azure DevOps, you need to be in the Project Collection Administrators or Project Administrators group to set up a Slack subscription. 
+
 ## Install Azure Pipelines app
 
 Navigate to [Azure Pipelines Slack app](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installslackapp) to install the Azure Pipelines app to your Slack workspace. Once added, 

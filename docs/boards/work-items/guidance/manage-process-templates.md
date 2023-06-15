@@ -132,7 +132,7 @@ For other Hosted XML process management tasks, see [Import and export a Hosted X
    ![Process Template Manager dialog, Select process template to work with.](media/process-template-manager.png)
 
    > [!TIP]   
-   > For a comparison of the default process templates--Agile, CMMI, and Scrum--see [Choose a process](choose-process.md).  
+   > For a comparison of the default process templates--Agile, CMMI, and Scrum--see [About processes and process templates](choose-process.md).  
    The **Upload**, **Download**, **Make Default**, and **Delete** buttons are disabled when you don't have the necessary permissions to manage process templates. 
 
 3. Select the process template that you want to work with and then choose from the following actions.  

@@ -1,85 +1,123 @@
 ---
-title: "Azure DevOps docs: What's new for March 1, 2023 - March 31, 2023"
-description: "What's new in the Azure DevOps docs for March 1, 2023 - March 31, 2023."
-ms.date: 04/04/2023
+title: "Azure DevOps docs: What's new for May 1, 2023 - May 31, 2023"
+description: "What's new in the Azure DevOps docs for May 1, 2023 - May 31, 2023."
+ms.date: 06/01/2023
 ---
 
-# Azure DevOps docs: What's new for March 1, 2023 - March 31, 2023
+# Azure DevOps docs: What's new for May 1, 2023 - May 31, 2023
 
-Welcome to what's new in the Azure DevOps docs from March 1, 2023 through March 31, 2023. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from May 1, 2023 through May 31, 2023. This article lists some of the major changes to docs during this period.
+
+## Administration
+
+### Updated articles
+
+- [Default permissions quick reference for Azure DevOps](/azure/devops/organizations/security/permissions-access)
+- [Set work tracking permissions](/azure/devops/organizations/security/set-permissions-access-work-tracking)
 
 ## Artifacts
 
-### Updated articles
+### New articles
 
-- [Share packages publicly](/azure/devops/artifacts/tutorials/share-packages-publicly)
-
-## Boards
+- [Publish Maven artifacts using Gradle](/azure/devops/artifacts/maven/publish-with-gradle)
 
 ### Updated articles
 
-- [Best practices for Agile project management](/azure/devops/boards/best-practices-agile-project-management)
+- [Accelerate collaboration and Agile development with componentization](/azure/devops/artifacts/collaborate-with-packages)
+- [Publish and download universal packages in Azure Artifacts](/azure/devops/artifacts/quickstarts/universal-packages)
+- [Migrate your packages from file shares](/azure/devops/artifacts/nuget/move-from-fileshares)
+
+## Azure Boards
+
+### Updated articles
+
+- [About Kanban boards](/azure/devops/boards/boards/kanban-overview)
+- [Use your Kanban board](/azure/devops/boards/boards/kanban-quickstart)
 - [Manage columns on your Kanban board](/azure/devops/boards/boards/add-columns)
 - [Customize cards on a Kanban board](/azure/devops/boards/boards/customize-cards)
-- [Configure and customize Azure Boards](/azure/devops/boards/configure-customize)
-- [Azure Boards FAQs](/azure/devops/boards/faqs)
-- [Plan and track work in Azure Boards](/azure/devops/boards/get-started/plan-track-work)
-- [Sign up for Azure Boards](/azure/devops/boards/get-started/sign-up-invite-teammates)
-- [What is Azure Boards?](/azure/devops/boards/get-started/what-is-azure-boards)
-- [Customize Azure Boards to support SAFe&reg; practices](/azure/devops/boards/plans/safe-customize)
+- [Work in Excel connected to Azure Boards FAQs](/azure/devops/boards/backlogs/office/faqs)
+- [Import or update work items in bulk with CSV files](/azure/devops/boards/queries/import-work-items-from-csv)
+- [Expedite work using swimlanes](/azure/devops/boards/boards/expedite-work)
+- [About default processes and process templates](/azure/devops/boards/work-items/guidance/choose-process)
 
-## Integrate
-
-### New articles
-
-- [Use Azure AD service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)
-
-## Organizations
+## Azure DevOps Reporting and Analytics service
 
 ### Updated articles
 
-- [Get started with permissions, access, and security groups](/azure/devops/organizations/security/about-permissions)
-- [About security, authentication, and authorization](/azure/devops/organizations/security/about-security-identity)
-- [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url)
-- [Security best practices](/azure/devops/organizations/security/security-best-practices)
-- [Naming restrictions and conventions](/azure/devops/organizations/settings/naming-restrictions)
+- [View and configure team velocity](/azure/devops/report/dashboards/team-velocity)
 
-## Pipelines
+## Azure Pipelines
 
 ### New articles
 
-- [Set up MLOps with Azure DevOps](/azure/machine-learning/how-to-setup-mlops-azureml)
+- [Publish NuGet packages to NuGet.org with Azure Pipelines](/azure/devops/pipelines/artifacts/publish-public-registry)
+- [Self-hosted Linux agents](/azure/devops/pipelines/agents/linux-agent)
+- [Self-hosted macOS agents](/azure/devops/pipelines/agents/osx-agent)
+- [Self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent)
+- [Azure Pipelines architecture for Azure Web Apps](/azure/devops/pipelines/architectures/devops-pipelines-azure-web-apps-architecture)
+- [CI/CD baseline architecture with Azure Pipelines](/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture)
+- [Azure Pipelines architecture with DevTest Labs](/azure/devops/pipelines/architectures/devops-pipelines-devtest-iaas-architecture)
+- [Azure Pipelines architecture for IaaS](/azure/devops/pipelines/architectures/devops-pipelines-iaas-vms-architecture)
 
 ### Updated articles
 
-- [Use Azure Pipelines with Slack](/azure/devops/pipelines/integrations/slack)
-- [Migrate from Travis to Azure Pipelines](/azure/devops/pipelines/migrate/from-travis)
-- [Restore NuGet packages with Azure Pipelines](/azure/devops/pipelines/packages/nuget-restore)
+- [Use predefined variables](/azure/devops/pipelines/build/variables)
+- [Logging commands](/azure/devops/pipelines/scripts/logging-commands)
+- [Runtime parameters](/azure/devops/pipelines/process/runtime-parameters)
+- [Template types & usage](/azure/devops/pipelines/process/templates)
+- [Pipeline options for Git repositories](/azure/devops/pipelines/repos/pipeline-options-for-git)
 - [Set variables in scripts](/azure/devops/pipelines/process/set-variables-scripts)
+- [Publish and download Universal Packages with Azure Pipelines](/azure/devops/pipelines/artifacts/universal-packages)
+- [Self-hosted Linux agents (2.x)](/azure/devops/pipelines/agents/v2-linux-agent)
+- [Self-hosted macOS agents (2.x)](/azure/devops/pipelines/agents/v2-osx-agent)
+- [Self-hosted Windows agents (2.x)](/azure/devops/pipelines/agents/v2-windows-agent)
+- [Set retention policies for builds, releases, and tests](/azure/devops/pipelines/policies/retention)
+- [Agent software version 3](/azure/devops/pipelines/agents/v3-agent)
 
+## Azure Repos
 
-## User guide
+### New articles
+
+- [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features) - New feature
+- [Advanced Security billing](/azure/devops/repos/security/github-advanced-security-billing)
+- [Code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning)
+- [Dependency scanning](/azure/devops/repos/security/github-advanced-security-dependency-scanning)
+- [Advanced Security permissions](/azure/devops/repos/security/github-advanced-security-permissions)
+- [Secret scanning](/azure/devops/repos/security/github-advanced-security-secret-scanning)
 
 ### Updated articles
 
-- [Get started managing your organization or project collection](/azure/devops/user-guide/manage-organization-collection)
+- [Use Azure Repos with Microsoft Teams](/azure/devops/repos/integrations/repos-teams)
+- [Branch policies and settings](/azure/devops/repos/git/branch-policies)
+
+## Demo-gen
+
+### Updated articles
+
+- [Build a custom template](/azure/devops/demo-gen/build-your-own-template)
+
+## Extend
+
+### Updated articles
+
+- [Extend the work item form](/azure/devops/extend/develop/add-workitem-extension)
+- [Data storage](/azure/devops/extend/develop/data-storage)
+- [Extension samples](/azure/devops/extend/develop/samples-overview)
+- [Vertical navigation guidance](/azure/devops/extend/develop/web-navigation)
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31).
+Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-05-01..2023-05-31).
 
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [AdrianSanguineti](https://github.com/AdrianSanguineti) - Adrian Sanguineti (1)
-- [akanieski](https://github.com/akanieski) - Andrew Kanieski (1)
-- [beniaju2](https://github.com/beniaju2) (1)
-- [bjompen](https://github.com/bjompen) - Björn Sundling (1)
-- [derek-wade](https://github.com/derek-wade) - Derek (1)
-- [ethanknights](https://github.com/ethanknights) - Ethan Knights (1)
-- [fajterini](https://github.com/fajterini) - Michal F (1)
-- [incarnate](https://github.com/incarnate) - John C (1)
-- [JMCARY](https://github.com/JMCARY) - John Cary (1)
-- [kek-Sec](https://github.com/kek-Sec) - G. Petrakis (1)
-- [Michael-Coetzee](https://github.com/Michael-Coetzee) - Michael Coetzee (1)
+- [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (2)
+- [jennings](https://github.com/jennings) - Stephen Jennings (1)
+- [JynLeazy](https://github.com/JynLeazy) (1)
+- [ronwarner](https://github.com/ronwarner) - Ron (1)
+- [SampathDilhan](https://github.com/SampathDilhan) - Sampath Dilhan (1)
+- [stefkiourk](https://github.com/stefkiourk) - Stef Ki (1)
+- [TheJohnH](https://github.com/TheJohnH) - John H (1)
+- [yagnyaPatel](https://github.com/yagnyaPatel) - Yagnya Patel (1)

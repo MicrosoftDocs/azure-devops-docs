@@ -110,11 +110,9 @@ POST https://app.vssps.visualstudio.com/oauth2/token
 |  Header           | Value
 |-------------------|------------------------------------------------------------------
 | Content-Type      | `application/x-www-form-urlencoded`
-| Content-Length    | Calculated string length of the request body (see the following example)
 
 ```no-highlight
 Content-Type: application/x-www-form-urlencoded
-Content-Length: 1322
 ```
 
 ### HTTP request body - authorize app

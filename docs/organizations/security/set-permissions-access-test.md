@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 05/24/2023
 --- 
 
 # Set permissions and access for testing
@@ -76,29 +76,25 @@ For more information, see the following articles:
 
 To have full access to the Test feature set, your [access level must be set to Basic + Test Plans](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases.  
 
-
 <a id="manage-test-artifacts"></a>
 
 ## Manage test plans and test suites under an area path 
 
 Area path permissions let you grant or restrict access to edit or modify test plans or test suites assigned to those areas. You can restrict access to users or groups.  
 
-In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
+In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts, which are set for an area path. 
 
 [Open the **Security** page for area paths](set-permissions-access-work-tracking.md#set-permissions-area-path) and choose the user or group you want to grant permissions. 
 
-![Open Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-open-area-permissions.png)  
+:::image type="content" source="media/delete-test-plans-open-area-permissions.png" alt-text="Screenshot showing opened Area path permissions for project."::: 
 
 Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
 
-![Set Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-area-path-permissions.png)  
-
-<a id="delete-test-artifacts"></a>
-
+:::image type="content" source="media/manage-test-plans-test-suites-access.png" alt-text="Screenshot showing access set to Allow for test plans and suites.":::
 
 ## Set permissions to create and delete test artifacts 
 
-While test artifacts such as test plans, test suites, test cases, and so on are types of work items, the method for deleting them differs from deleting non-test work items. 
+While test artifacts such as test plans, test suites, test cases, and so on, are types of work items, the method for deleting them differs from deleting nontest work items. 
 
 > [!IMPORTANT]  
 > We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
@@ -107,7 +103,7 @@ When you delete test artifacts, the following actions occur:
 
 1.	Removes the deleted test artifact from the test case management (TCM) data store and deletes the underlying work item
 2.	Runs a job to delete all the child items both from the TCM side and the underlying work items. This action may take time (up to a few minutes) depending on the number of artifacts to be deleted. 
-3.	Causes all information in the work item tracking data store and TCM data store to be deleted and cannot be reactivated nor restored. 
+3.	Causes all information in the work item tracking data store and TCM data store to be deleted and can't be reactivated or restored. 
 
 
 ::: moniker range=">= azure-devops-2019"
