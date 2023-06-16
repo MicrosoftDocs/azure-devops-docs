@@ -518,7 +518,7 @@
     - name: Library & shared resources
       href: library/index.md
       displayName: resource, resources, pipeline resource, resources security, resources traceability
-    - name: Add protection to a resource
+    - name: Add an admin role to a resource
       href: library/add-resource-protection.md
     - name: Repository resource protection
       href: process/repository-resource.md
