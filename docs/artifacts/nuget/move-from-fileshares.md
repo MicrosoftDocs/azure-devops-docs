@@ -1,23 +1,23 @@
 ---
-title: Use Azure Artifacts feeds with NuGet packages
-description: Leave your file shares behind and bring your packages to Azure Artifacts feeds
+title: Migrate from file shares
+description: How to migrate from file shares to Azure Artifacts
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 01/14/2022
+ms.date: 06/16/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Migrate your packages from file shares
+# Migrate from file shares to Azure Artifacts
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts provides hosted NuGet feeds as a service. If you're using NuGet packages as a part of your continuous delivery workflow, Azure Artifacts can help you manage your dependencies through public and private feeds. Azure Artifacts works with any continuous integration system that supports authenticated NuGet feeds.
+Using Azure Artifacts, you can streamline package management to enhance collaboration, ensure package integrity, and leverage various capabilities such as versioning, access control, and feed management.
 
 ## Key concepts
 
-Azure Artifacts provides a number of benefits compared to file shares:
+Azure Artifacts offers several advantages over file shares:
 
 - **Indexing:** Azure Artifacts maintains an index of all the packages in each feed, which enables fast `nuget list` operations. List operations on your file shares require the client to open every `nupkg` and examine the `nuspec` for metadata unless your file share has been configured to provide an index that the NuGet client understands.
 
