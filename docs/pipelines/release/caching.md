@@ -34,7 +34,7 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 
 Caching is added to a pipeline using the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2). This task works like any other task and is added to the `steps` section of a job.
 
-When a cache step is encountered during a run, the task restores the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. 
+When a cache step is encountered during a run, the task restores the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run.
 
 After all steps in the job have run and assuming a **successful** job status, a special **"Post-job: Cache"** step is automatically added and triggered for each **"restore cache"** step that wasn't skipped. This step is responsible for **saving the cache**.
 
@@ -56,7 +56,7 @@ The [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) has two requi
 Fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
 
 * **File paths**: <br>
-Path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" doesn't exist. 
+Path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" doesn't exist.
   > [!TIP]
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 
@@ -209,7 +209,7 @@ steps:
   displayName: Bundler caching
   inputs:
     key: 'gems | "$(Agent.OS)" | Gemfile.lock'
-    restoreKeys: | 
+    restoreKeys: |
       gems | "$(Agent.OS)"
       gems
     path: $(BUNDLE_PATH)
@@ -227,7 +227,7 @@ variables:
 
 steps:
 - bash: |
-    sudo apt-get install ccache -y    
+    sudo apt-get install ccache -y
     echo "##vso[task.prependpath]/usr/lib/ccache"
   displayName: Install ccache and update PATH to use linked versions of gcc, cc, etc
 
@@ -235,7 +235,7 @@ steps:
   inputs:
     key: 'ccache | "$(Agent.OS)"'
     path: $(CCACHE_DIR)
-    restoreKeys: | 
+    restoreKeys: |
       ccache | "$(Agent.OS)"
   displayName: ccache
 ```
@@ -261,7 +261,7 @@ steps:
       key: 'docker | "$(Agent.OS)" | cache'
       path: $(Pipeline.Workspace)/docker
       cacheHitVar: CACHE_RESTORED                #Variable to set to 'true' when the cache is restored
-    
+
   - script: |
       docker load -i $(Pipeline.Workspace)/docker/cache.tar
     displayName: Docker restore
@@ -456,7 +456,7 @@ steps:
   displayName: Use cached Anaconda environment
   inputs:
     key: 'conda | "$(Agent.OS)" | environment.yml'
-    restoreKeys: | 
+    restoreKeys: |
       python | "$(Agent.OS)"
       python
     path: $(CONDA_CACHE_DIR)
@@ -474,12 +474,12 @@ steps:
       displayName: Cache Anaconda
       inputs:
         key: 'conda | "$(Agent.OS)" | environment.yml'
-        restoreKeys: | 
+        restoreKeys: |
           python | "$(Agent.OS)"
           python
         path: $(CONDA)/envs
         cacheHitVar: CONDA_CACHE_RESTORED
-    
+
     - script: conda env create --quiet --file environment.yml
       displayName: Create environment
       condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
