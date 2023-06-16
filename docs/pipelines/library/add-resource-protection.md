@@ -6,7 +6,7 @@ ms.date: 06/18/2023
 ms.custom: template-how-to-pattern
 ---
 
-# Add the Administrator role to a resource
+# Add a role to a resource
 
 Azure Pipelines requires the administrator role to open access to a [protected resource](../process/about-resources.md) to all pipelines. For all protected resource types other than Environments, you'll need the administrator role to create a protected resource or edit its **Security** configuration. For Environments, you'll need the **Creator** role. When you don't appropriate access, the **Grant access permission to all pipelines** option will be disabled.
 
@@ -24,9 +24,9 @@ For repository resources, see [protect a repository resource](../process/reposit
 
 ## Prerequisites
 
-* You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).  
+You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md) to update resource permissions.  
 
-## 1 - Add protection to an agent pool 
+## Agent pools
 
 You can add the **Administrator** role for a specific agent pool and for all agent pools. 
 
@@ -48,7 +48,7 @@ To add the **Administrator** role to a specific agent pool:
 
 1. In **User permissions**, assign the **Administrator** role in the **Role** column.
 
-## 2 - Add protection to Library resources (variable groups and secure files)
+## Library resources (variable groups and secure files)
 
 1. Go to **Pipelines** > **Library**. 
 
@@ -56,7 +56,7 @@ To add the **Administrator** role to a specific agent pool:
 
 1. Assign the **Administrator** role in the **Role** column.
 
-## 3 - Add protection to a service connection
+## Service connections
 
 1. Go to **Project Settings** > **Service connections**. 
 
@@ -66,7 +66,7 @@ To add the **Administrator** role to a specific agent pool:
 
 1. Assign the **Administrator** role. 
 
-## 4 - Add protection to an Environment
+## 4 Environments
 
 1. Go to **Pipelines** > **Environments**. 
 

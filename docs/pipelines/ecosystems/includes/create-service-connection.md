@@ -20,7 +20,7 @@ ms.date: 06/16/2023
    * **Subscription** Select your Azure portal subscription.
    * **Resource Group** Select the resource group you created earlier.
    * **Service connection name** Type a name and then copy and paste it into a text file so you can use it later. 
-   * Select **Grant access permission to all pipelines**. To select this option, you'll need the [service connection **Administrator** role](../../library/add-resource-protection.md#3---add-protection-to-a-service-connection). 
+   * Select **Grant access permission to all pipelines**. To select this option, you'll need the [service connection **Administrator** role](../../library/add-resource-protection.md). 
 
    ![New service connection dialog box](../media/add-service-connection-dialog-box.png)
 
