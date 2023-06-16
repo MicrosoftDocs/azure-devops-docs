@@ -29,6 +29,10 @@ While an environment is a grouping of resources, the resources themselves repres
 
 When you author a YAML pipeline and refer to an environment that doesn't exist, Azure Pipelines automatically creates the environment when the user performing the operation is known and permissions can be assigned. When Azure Pipelines doesn't have information about the user creating the environment (example: a YAML update from an external code editor), your pipeline fails if the environment doesn't already exist. 
 
+## Prerequisites
+
+* You need to have the [**Creator** role for Environments](../library/add-resource-protection.md) to add an Environment.
+
 <a name="creation"></a>
 
 ## Create an environment

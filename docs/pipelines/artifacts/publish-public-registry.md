@@ -19,8 +19,10 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 ## Prerequisites
 
 - An Azure DevOps organization and a project. [Create one for free](../get-started/pipelines-sign-up.md), if you don't have one already. 
+    - The [**Administrator** role for service connections](../library/add-resource-protection.md) in your Azure DevOps project. 
 
 - A [nuget.org](/nuget/nuget-org/individual-accounts#add-a-new-individual-account) account.
+
 
 ## Create an API key
 
@@ -46,7 +48,7 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 
 1. Enter the ApiKey you generated earlier in the **ApiKey** field, and then provide a name for your service connection.
 
-1. Check the **Grant access permission to all pipelines** checkbox, and then select **Save** when you're done.
+1. Check the **Grant access permission to all pipelines** checkbox, and then select **Save** when you're done. To select this option, you'll need the service connection **Administrator** role. 
 
 ## Publish packages
 

@@ -27,6 +27,8 @@ Using Azure Pipelines, you can set up a pipeline workflow to build and publish y
 - [An Azure DevOps organization](../../../organizations/accounts/create-organization.md).
 
 - [An Azure DevOps project](../../..//organizations/projects/create-project.md).
+    -  The [**Administrator** role for service connections](../../library/add-resource-protection.md) in your Azure DevOps project. 
+
 
 - An Azure account with an active subscription. [Sign up for free](https://azure.microsoft.com/free/) if you don't have one already.
 
@@ -225,7 +227,7 @@ To use Managed Service Identity with Azure Pipelines to publish Docker images to
 
 1. Enter your [Subscription ID](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription) **Subscription name**, and your [Azure container registry login server](/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli#create-a-container-registry). Paste your VM's system assigned Object ID that you created in the previous step in the **Tenant ID** text field.
 
-1. Enter a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
+1. Enter a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox. To select this option, you'll need the service connection **Administrator** role. 
 
 1. Select **Save** when you are done.
 
