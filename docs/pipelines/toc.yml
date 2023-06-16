@@ -519,7 +519,7 @@
       href: library/index.md
       displayName: resource, resources, pipeline resource, resources security, resources traceability
     - name: Add protection to a resource
-      href: process/add-resource-protection.md
+      href: library/add-resource-protection.md
     - name: Repository resource protection
       href: process/repository-resource.md
       displayName: protected resources, protection, checks
