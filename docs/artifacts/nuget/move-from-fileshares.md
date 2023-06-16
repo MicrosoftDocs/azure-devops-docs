@@ -39,45 +39,46 @@ If you are currently utilizing Active Directory-backed file shares, it is probab
   - **Visual Studio**: Credential acquisition happens automatically.
   - **nuget.exe**: Credential acquisition happens automatically after you install the [Azure Artifacts Credential Provider](../nuget/nuget-exe.md).
 
-- **Authorization:** Make sure that any user, service, organization, or group requiring access to your packages has the necessary permissions in place. See the [permissions](#make-a-plan-for-permissions) section for more details.
+- **Authorization:** Make sure that any user, service, organization, or group requiring access to your packages has the necessary permissions in place. See the [permissions](#plan-your-access-control-strategy) section for more details.
 
-## Migrate your packages
 
 Migrating your packages is a 4-step process:
 
 1. [Inventory your existing package sources](#inventory-your-existing-package-sources)
-1. [Make a plan for permissions](#make-a-plan-for-permissions)
+1. [Plan your access control strategy](#plan-your-access-control-strategy)
 1. [Set up your feeds](#set-up-your-feeds)
 1. [Use your feeds](#use-your-feeds)
 
-### Inventory your existing package sources
+## Inventory your existing package sources
 
-Before making any configuration changes, find your existing NuGet file shares by checking:
+Before making any configuration changes, it is important to inventory your existing package sources. This involves identifying and listing all the package sources currently used in your setup. By conducting this inventory, you will have a comprehensive understanding of the package sources that need to be migrated or reconfigured. Start b
 
-- Any nuget.config files in your codebase, likely in the same folder as your solution (.sln) file
+- Any nuget.config files in your codebase, likely in the same folder as your solution (.sln) file.
 
-- The global nuget.config file at:
-  - Command Prompt: `%APPDATA%\NuGet\NuGet.Config`
-  - PowerShell: `$env:APPDATA\NuGet\NuGet.Config`
+- The default NuGet configuration file at:
+  - Windows: `%APPDATA%\NuGet\NuGet.Config`
+  - macOS/Linux: `~/.config/NuGet/NuGet.Config` or `~/.nuget/NuGet/NuGet.Config`
 
-Look for your server path (example `<add key="SMBNuGetServer" value="\\server\share\NuGet" />`) and copy it. You'll use the list of paths in the following sections.
+Identify the server path associated with your package sources (e.g., `<add key="SMBNuGetServer" value="\\server\share\NuGet" />`) and make a copy of it. This list of server paths will be utilized in the subsequent sections for the migration process.
 
-### Make a plan for permissions
+## Plan your access control strategy
 
-When setting up your new feeds, you can either:
+When configuring your new feeds, you have two options:
 
-  - Set up your feed permissions to match your existing file share permissions.
-  - Align your feed permissions with existing Azure DevOps teams and groups.
+  - Configure the feed permissions to match the permissions of your existing file shares.
+  - Align the feed permissions with the teams and groups already set up in Azure DevOps.
 
-If you want to match your existing file share permissions, note the permissions on each share that contains packages. Specifically, note the principals with:
+If you want to replicate your existing file share permissions, make a note of the permissions on each share that contains packages. Specifically, take note of users or groups with:
 
   - **Full control** 
-  - **Modify** or **write**
-  - **Read & execute**, **List folder contents**, or **Read**
+  
+  - **Read** or **List**
+  
+  - **Write** or **Modify** 
 
-### Set up your feeds
+## Set up your feeds
 
-Now that you took inventory of your existing package sources, it's time to set up your feeds. For this walkthrough, we'll assume a 1:1 mapping of feeds to SMB shares.
+Now that you have taken inventory of your existing package sources, the next step is to configure your feeds. In this walkthrough, we will assume a one-to-one mapping of feeds to SMB shares.
 
 #### Create your feeds
 
