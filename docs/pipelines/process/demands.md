@@ -18,7 +18,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Use demands to make sure that the capabilities your pipeline needs are present on the agents that run it. Demands are asserted automatically by tasks or manually by you.
+Use demands to make sure that the [capabilities](../agents/agents.md#capabilities) your pipeline needs are present on the agents that run it. Demands are asserted automatically by tasks or manually by you.
 
 > [!NOTE]
 >
