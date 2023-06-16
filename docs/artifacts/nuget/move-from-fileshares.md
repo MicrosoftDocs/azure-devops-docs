@@ -19,21 +19,27 @@ Using Azure Artifacts, you can streamline package management to enhance collabor
 
 Azure Artifacts offers several advantages over file shares:
 
-- **Indexing:** Azure Artifacts maintains an index of all the packages in each feed, which enables fast `nuget list` operations. List operations on your file shares require the client to open every `nupkg` and examine the `nuspec` for metadata unless your file share has been configured to provide an index that the NuGet client understands.
+- **Indexing:**
 
-- **Immutability:** A package version (for example, `MyPackage.1.0.0.0.nupkg`) can only be pushed to a feed once. This ensures that any dependencies on that version are guaranteed to remain valid. However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Azure Artifacts feeds. Learn more about [Immutability](../artifacts-key-concepts.md#immutability) in Azure Artifacts.
+    Azure Artifacts maintains an index of packages within each feed, allowing for quick nuget list operations. In contrast, when using file shares, the client needs to open each nupkg file and inspect the nuspec metadata, unless the file share is configured with an index that the NuGet client recognizes.
 
-- **Well-formedness:** Azure Artifacts validates all pushed packages to ensure they're well formed. This prevents invalid packages from entering your development and build environments. However, any workflow that publishes malformed packages will break when moving to Azure Artifacts feeds.
+- **Immutability:** 
+
+    Each package version, such as *MyPackage.1.0.0.0.nupkg*, can only be pushed to a feed once in order to maintain the integrity of dependencies. This guarantees that any references to that version will always be accurate. However, if you have workflows that publish packages with updated binaries but without changing the version number, those workflows will encounter issues when transitioning to Azure Artifacts feeds. See [Immutability](../artifacts-key-concepts.md#immutability) for further information on this topic.
+
+- **Well-formedness:** 
+
+    Azure Artifacts performs thorough validation on all pushed packages to ensure their integrity and correctness. This validation process prevents any invalid packages from entering your development and build environments. However, it is important to note that any workflow that publishes packages with malformed structures will encounter issues when transitioning to Azure Artifacts feeds.
 
 ## Authentication and authorization
 
-If you're using Active Directory-backed file shares, you and your on-premises build agents are likely authenticating automatically using Windows NTLM. Moving your packages to Azure Artifacts will require a few changes:
+If you are currently utilizing Active Directory-backed file shares, it is probable that you and your on-premises build agents are automatically authenticated using Windows NTLM. Migrating your packages to Azure Artifacts will require a few adjustments:
 
 - **Authentication:** You need to provide access to the NuGet client in order to push and restore packages.
   - **Visual Studio**: Credential acquisition happens automatically.
-  - **nuget.exe**: Credential acquisition happens automatically after you install the [Credential Provider](../nuget/nuget-exe.md).
+  - **nuget.exe**: Credential acquisition happens automatically after you install the [Azure Artifacts Credential Provider](../nuget/nuget-exe.md).
 
-- **Authorization:** Ensure that any principal (user, service organization, group, etc.) that needs access to your packages has the appropriate permissions. See the [permissions](#make-a-plan-for-permissions) section for more details.
+- **Authorization:** Make sure that any user, service, organization, or group requiring access to your packages has the necessary permissions in place. See the [permissions](#make-a-plan-for-permissions) section for more details.
 
 ## Migrate your packages
 
