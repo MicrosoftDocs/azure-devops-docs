@@ -288,22 +288,19 @@ steps:
 
 ## Golang
 
-For Golang projects, you can specify the packages to be downloaded in the *go.mod* file. If your `GOCACHE` variable isn't already set, set it to where you want the cache to be downloaded.
+For Golang projects, you can specify the packages to be downloaded in the *go.mod* file.
 
 **Example**:
 
 ```yaml
-variables:
-  GO_CACHE_DIR: $(Pipeline.Workspace)/.cache/go-build/
-
 steps:
 - task: Cache@2
   inputs:
     key: 'go | "$(Agent.OS)" | go.mod'
-    restoreKeys: | 
+    restoreKeys: |
       go | "$(Agent.OS)"
-    path: $(GO_CACHE_DIR)
-  displayName: Cache GO packages
+    path: /home/vsts/go/pkg/mod
+  displayName: Configure Go caching
 
 ```
 
@@ -314,9 +311,6 @@ Using Gradle's [built-in caching support](https://docs.gradle.org/current/usergu
 **Example**:
 
 ```yaml
-variables:
-  GRADLE_USER_HOME: $(Pipeline.Workspace)/.gradle
-
 steps:
 - task: Cache@2
   inputs:
@@ -324,8 +318,8 @@ steps:
     restoreKeys: |
       gradle | "$(Agent.OS)"
       gradle
-    path: $(GRADLE_USER_HOME)
-  displayName: Configure gradle caching
+    path: /home/vsts/.gradle/caches
+  displayName: Configure Gradle caching
 
 - task: Gradle@2
   inputs:
@@ -334,9 +328,9 @@ steps:
     options: '--build-cache'
   displayName: Build
 
-- script: |   
+- script: |
     # stop the Gradle daemon to ensure no files are left open (impacting the save cache operation later)
-    ./gradlew --stop    
+    ./gradlew --stop
   displayName: Gradlew stop
 ```
 
@@ -347,15 +341,11 @@ steps:
 
 ## Maven
 
-Maven has a local repository where it stores downloads and built artifacts. To enable, set the `maven.repo.local` option to a path under `$(Pipeline.Workspace)` and cache this folder.
+Maven has a local repository where it stores downloads and built artifacts.
 
 **Example**:
 
 ```yaml
-variables:
-  MAVEN_CACHE_FOLDER: $(Pipeline.Workspace)/.m2/repository
-  MAVEN_OPTS: '-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
-
 steps:
 - task: Cache@2
   inputs:
@@ -363,19 +353,10 @@ steps:
     restoreKeys: |
       maven | "$(Agent.OS)"
       maven
-    path: $(MAVEN_CACHE_FOLDER)
-  displayName: Cache Maven local repo
+    path: /home/vsts/.m2/repository
+  displayName: Configure Maven caching
 
 - script: mvn install -B -e
-```
-
-If you're using a [Maven task](/azure/devops/pipelines/tasks/reference/maven-v3), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
-
-```yaml
-- task: Maven@4
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m $(MAVEN_OPTS)'
 ```
 
 ## .NET/NuGet
