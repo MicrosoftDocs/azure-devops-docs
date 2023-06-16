@@ -66,7 +66,7 @@ To add the **Administrator** role to a specific agent pool:
 
 1. Assign the **Administrator** role. 
 
-## 4 Environments
+## Environments
 
 1. Go to **Pipelines** > **Environments**. 
 
