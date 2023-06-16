@@ -74,7 +74,7 @@ To add the **Administrator** role to a specific agent pool:
 
 1. Go to :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Security**. 
 
-1. Assign the **Administrator** role. 
+1. Assign the **Creator** role. 
 
 
 ## Next steps
