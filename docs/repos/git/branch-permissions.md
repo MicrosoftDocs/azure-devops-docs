@@ -68,7 +68,7 @@ Control branch permission settings from the branch permission view. Users and gr
 
 
 ::: moniker range=">= azure-devops-2019"
-The following permissions are automatically assigned to branch creators: **Contribute**, **Edit policies**, **Force push**, **Manage permissions**, and **Remove others' locks**.
+The following permissions are automatically assigned to branch creators: **Contribute**, **Force push**, **Manage permissions** (when allowed through the repository setting **Permissions management**), and **Remove others' locks**.
 
 
 > [!NOTE]
@@ -78,8 +78,6 @@ The following permissions are automatically assigned to branch creators: **Contr
 >- **Bypass policies when pushing**
 >
 > Users that previously had **Exempt from policy enforcement** enabled now have the two new permissions enabled instead. See the following table for more details on these two new permissions.
-
-The following permissions are automatically assigned to branch creators: **Contribute**, **Edit policies**, **Force push**, **Manage permissions**, and **Remove others' locks**.
 ::: moniker-end
 
 :::row:::
