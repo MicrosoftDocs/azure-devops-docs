@@ -1,14 +1,14 @@
 ---
-title: Add the admin role to a protected resource
+title: Add an admin role to a protected resource
 description: Administer service connections, secure files, repositories, agent pools, secret variables, and Environments. 
 ms.topic: how-to 
 ms.date: 06/18/2023
 ms.custom: template-how-to-pattern
 ---
 
-# Add a role to a resource
+# Add an admin role to a protected resource
 
-Azure Pipelines requires the administrator role to open access to a [protected resource](../process/about-resources.md) to all pipelines. For all protected resource types other than Environments, you'll need the administrator role to create a protected resource or edit its **Security** configuration. For Environments, you'll need the **Creator** role. When you don't appropriate access, the **Grant access permission to all pipelines** option will be disabled.
+Azure Pipelines requires specific permissions to a [protected resource](../process/about-resources.md) and to open access to all pipelines. For all protected resource types other than Environments, you'll need the administrator role to create a protected resource or edit its **Security** configuration. For Environments, you'll need the **Creator** role. When you don't appropriate access, the **Grant access permission to all pipelines** option is disabled.
 
 Protected resources include:
 
