@@ -21,11 +21,11 @@ Azure Artifacts offers several advantages over file shares:
 
 - **Indexing:**
 
-    Azure Artifacts maintains an index of packages within each feed, allowing for quick nuget list operations. In contrast, when using file shares, the client needs to open each nupkg file and inspect the nuspec metadata, unless the file share is configured with an index that the NuGet client recognizes.
+    Azure Artifacts maintains an index of packages within each feed, allowing for quick list operations. In contrast, when using file shares, the client needs to open each nupkg file and inspect the nuspec metadata, unless the file share is configured with an index that the NuGet client recognizes.
 
 - **Immutability:** 
 
-    Each package version, such as *MyPackage.1.0.0.0.nupkg*, can only be pushed to a feed once in order to maintain the integrity of dependencies. This guarantees that any references to that version will always be accurate. However, if you have workflows that publish packages with updated binaries but without changing the version number, those workflows will encounter issues when transitioning to Azure Artifacts feeds. See [Immutability](../artifacts-key-concepts.md#immutability) for further information on this topic.
+    Each package version can only be pushed to a feed once in order to maintain the integrity of dependencies. This guarantees that any references to that version will always be accurate. However, if you have workflows that publish packages with updated binaries but without changing the version number, those workflows will encounter issues when transitioning to Azure Artifacts feeds. See [Immutability](../artifacts-key-concepts.md#immutability) for more details.
 
 - **Well-formedness:** 
 
@@ -105,8 +105,22 @@ Once you've set up your feeds, you can now set up your project to authenticate w
 > [!NOTE]
 > We recommend using NuGet version 5.5.x or later, as it includes critical bug fixes that address cancellations and timeouts.
 
-1. Ensure that your *nuget.config* file is in the same folder as your .csproj or .sln file, and then add the following snippet to your nuget.config file. Replace the placeholders with the appropriate values.
+1. Ensure that your *nuget.config* file is located in the same folder as your .csproj or .sln file. Once you have verified the file's placement, add the following snippet to your nuget.config file. Replace the placeholders with the appropriate values:
 
+    - **Organization scoped feed**:
+    
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+    </configuration>
+    ```
+
+    - **Project scoped feed**:
+    
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
         <configuration>
@@ -117,7 +131,7 @@ Once you've set up your feeds, you can now set up your project to authenticate w
     </configuration>
     ```
 
-1. Run the following `push` command to publish all your packages to your new feed. You can pass any string to the ApiKey argument, as it serves solely as a placeholder.
+1. Run the following `push` command to publish all your packages to your new feed. You can provide any string as the value for the ApiKey argument.
 
     ```Command
     nuget.exe push -Source <FEED_NAME> -ApiKey Az <PACKAGE_PATH>\*.nupkg
@@ -126,9 +140,9 @@ Once you've set up your feeds, you can now set up your project to authenticate w
 > [!TIP]
 > For larger teams, you should consider marking each share as read-only before doing the `nuget push` operation to ensure no one adds or updates packages during your migration.  
 
-#### Integrate with your builds
+### Integrate with your pipelines
 
-Update your builds to ensure they have the right credentials to consume and publish packages to and from your feeds. See how to [Restore NuGet packages in Azure Pipelines](../../pipelines/packages/nuget-restore.md) and how to [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md) for more details.
+Update your pipelines to ensure they have the right permissions to consume and publish packages to and from your feeds. See [Restore NuGet packages with Azure Pipelines](../../pipelines/packages/nuget-restore.md) and [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md) for more details.
 
 ## Related articles
 
