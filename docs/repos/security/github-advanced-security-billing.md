@@ -30,7 +30,7 @@ You can find the number of consumed licenses (active committer count in Advanced
 
 Total active committers are the number of committers who contributed to at least one repository with Advanced Security enabled. Regardless of their Azure DevOps access level, they must be a member of your Azure DevOps organization. 
 
-If you disable Advanced Security for your organization, the active committer estimate disappears but you can watch your billing on your Azure subscription in the Azure portal.
+If you disable Advanced Security for all repositories in your organization, the active committer estimate disappears but you can watch your billing on your Azure subscription in the Azure portal.
 
 ### Understanding active committer count 
 
