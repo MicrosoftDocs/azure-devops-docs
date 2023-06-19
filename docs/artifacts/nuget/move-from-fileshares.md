@@ -78,30 +78,27 @@ If you want to replicate your existing file share permissions, make a note of th
 
 ## Set up your feeds
 
-Now that you have taken inventory of your existing package sources, the next step is to configure your feeds. In this walkthrough, we will assume a one-to-one mapping of feeds to SMB shares.
-
-#### Create your feeds
+After completing the inventory of your current package sources, it's time to configure your feeds. In this step, we will assume a one-to-one mapping of feeds to SMB shares.
 
 For each SMB share, follow the instructions to [Create a feed](../get-started-nuget.md#create-a-feed):
 
-- Use the name of the SMB share folder as the **Feed name**.
+- Set the **Feed name** to match the name of your SMB share folder.
+
 - Choose your feed **Visibility**, **Upstream sources**, and **Scope**.
 
 For each feed you've created, there are a set of [feed permissions](../feeds/feed-permissions.md) that you should consider when setting up feed permissions.
 
-If you've chosen to set up your new feed permissions to match your existing file share permissions, use the following table to give your principals the appropriate permissions:
+If you have opted to configure your new feed permissions to match your existing file share permissions, refer to the table below to assign the appropriate permissions to your users:
 
 |            File share permissions          | Feed permissions |
 |--------------------------------------------|------------------|
 | Full control                               | Owners           |
-| Modify, Write                              | Contributors     |
-| Read & execute, List folder contents, Read | Readers          |
+| Write or Modify                            | Contributors     |
+| Read or List                               | Readers          |
 
-### Use your feeds
+## Migrate your packages
 
-For each feed, select **Connect to feed** > **NuGet.exe** and copy the **Source URL** from the **Project setup** section. You will need the source URL to migrate your packages and update your NuGet configuration.
-
-#### Migrate your NuGet packages
+For each feed, navigate to **Artifacts** > **Connect to feed** and then choose **NuGet.exe**. Copy the Source URL provided in the Project setup section. This source URL will be required to update your NuGet configuration and migrate your packages.
 
 Once you've set up your feeds, you can now set up your project to authenticate with your feed and publish your packages. Make sure you have installed the latest version of the [Azure Artifacts credential provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider) before proceeding to the next steps. 
 
