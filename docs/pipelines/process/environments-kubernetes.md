@@ -73,7 +73,7 @@ For more information about setting up a Kubernetes service connection outside of
    ```
    kubectl get secret -n <namespace>  -o jsonpath='{.items[?(@.metadata.annotations.kubernetes\.io/service-account\.name=="service-account-name")]}'
    ```
-    If you get nothing, see here how to create: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#manually-create-a-long-lived-api-token-for-a-serviceaccount
+    If you get nothing, see [Manually create a long-lived API token for a ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#manually-create-a-long-lived-api-token-for-a-serviceaccount).
 
    #### Kubernetes 1.22 and below:
     1. Find the service account secret name
