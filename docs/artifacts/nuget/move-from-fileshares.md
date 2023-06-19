@@ -29,11 +29,11 @@ Azure Artifacts offers several advantages over file shares:
 
 - **Well-formedness:** 
 
-    Azure Artifacts performs thorough validation on all pushed packages to ensure their integrity and correctness. This validation process prevents any invalid packages from entering your development and build environments. However, it is important to note that any workflow that publishes packages with malformed structures will encounter issues when transitioning to Azure Artifacts feeds.
+    Azure Artifacts performs thorough validation on all pushed packages to ensure their integrity and correctness. This validation process prevents any invalid packages from entering your development and build environments. However, it's important to note that any workflow that publishes packages with malformed structures will encounter issues when transitioning to Azure Artifacts feeds.
 
 ## Authentication and authorization
 
-If you are currently utilizing Active Directory-backed file shares, it is probable that you and your on-premises build agents are automatically authenticated using Windows NTLM. Migrating your packages to Azure Artifacts will require a few adjustments:
+If you're currently utilizing Active Directory-backed file shares, it's probable that you and your on-premises build agents are automatically authenticated using Windows NTLM. Migrating your packages to Azure Artifacts will require a few adjustments:
 
 - **Authentication:** You need to provide access to the NuGet client in order to push and restore packages.
   - **Visual Studio**: Credential acquisition happens automatically.
@@ -51,7 +51,7 @@ Migrating your packages is a 4-step process:
 
 ## Inventory your existing package sources
 
-Before making any configuration changes, it is important to inventory your existing package sources. This involves identifying and listing all the package sources currently used in your setup. By conducting this inventory, you will have a comprehensive understanding of the package sources that need to be migrated or reconfigured. Start b
+Before making any configuration changes, it's important to inventory your existing package sources. This involves identifying and listing all the package sources currently used in your setup. By conducting this inventory, you'll have a comprehensive understanding of the package sources that need to be migrated or reconfigured. Start b
 
 - Any nuget.config files in your codebase, likely in the same folder as your solution (.sln) file.
 
@@ -78,7 +78,7 @@ If you want to replicate your existing file share permissions, make a note of th
 
 ## Set up your feeds
 
-After completing the inventory of your current package sources, it's time to configure your feeds. In this step, we will assume a one-to-one mapping of feeds to SMB shares.
+After completing the inventory of your current package sources, it's time to configure your feeds. In this step, we'll assume a one-to-one mapping of feeds to SMB shares.
 
 For each SMB share, follow the instructions to [Create a feed](../get-started-nuget.md#create-a-feed):
 
@@ -98,7 +98,7 @@ If you have opted to configure your new feed permissions to match your existing 
 
 ## Migrate your packages
 
-For each feed, navigate to **Artifacts** > **Connect to feed** and then choose **NuGet.exe**. Copy the Source URL provided in the Project setup section. This source URL will be required to update your NuGet configuration and migrate your packages.
+For each feed, navigate to **Artifacts** > **Connect to feed** and then choose **NuGet.exe**. Copy the Source URL provided in the Project setup section. This source URL is required to update your NuGet configuration and migrate your packages.
 
 Once you've set up your feeds, you can now set up your project to authenticate with your feed and publish your packages. Make sure you have installed the latest version of the [Azure Artifacts credential provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider) before proceeding to the next steps. 
 
