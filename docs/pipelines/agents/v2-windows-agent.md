@@ -173,7 +173,7 @@ Then paste the [PAT token you created](#permissions) into the command prompt win
 > [!IMPORTANT]
 > 
 > Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
-  
+
 When you configure your agent to connect to TFS, you've got the following options:
 
 * **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
@@ -181,7 +181,7 @@ When you configure your agent to connect to TFS, you've got the following option
 * **Negotiate** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
 
 * **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
- 
+
 * **PAT** Supported only on Azure Pipelines and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
 
 > [!NOTE]
@@ -251,7 +251,7 @@ After you've removed the agent, you can [configure it again](#download-configure
 ## Unattended config
 
 The agent can be set up from a script with no human intervention.
-You must pass `--unattended` and the answers to all questions.
+You must pass `--unattended` and then answers to all questions.
 
 [!INCLUDE [unattend](./includes/v2/unattended-config.md)]
 

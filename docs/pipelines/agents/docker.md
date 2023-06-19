@@ -203,7 +203,7 @@ Next, create the Dockerfile.
 
 4. Save the following content to `~/dockeragent/Dockerfile`:
     * For Ubuntu 20.04:
-      ```docker
+      ```Dockerfile
       FROM ubuntu:20.04
       RUN DEBIAN_FRONTEND=noninteractive apt-get update
       RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
@@ -232,7 +232,7 @@ Next, create the Dockerfile.
       ENTRYPOINT [ "./start.sh" ]
       ```
     * For Ubuntu 18.04:
-      ```docker
+      ```Dockerfile
       FROM ubuntu:18.04
 
       # To make it easier for build and release pipelines to run apt-get,
@@ -443,7 +443,7 @@ If you're sure you want to do this, see the [bind mount](https://docs.docker.com
 ## Use Azure Kubernetes Service cluster
 
 > [!CAUTION]
-> Please, consider that any docker based tasks will not work on AKS 1.19 or earlier due to docker in docker restriction. 
+> Please, consider that any docker based tasks will not work on AKS 1.19 or later due to docker in docker restriction. 
 > [Docker was replaced with containerd](/azure/aks/cluster-configuration#container-runtime-configuration) in Kubernetes 1.19, and Docker-in-Docker became unavailable.
 
 ### Deploy and configure Azure Kubernetes Service 
@@ -485,7 +485,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 4. Save the following content to `~/AKS/ReplicationController.yaml`:
 
-   ```shell
+   ```yml
    apiVersion: apps/v1
    kind: Deployment
    metadata:
