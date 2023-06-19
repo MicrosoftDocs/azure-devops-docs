@@ -47,7 +47,7 @@ Migrating your packages is a 4-step process:
 1. [Inventory your existing package sources](#inventory-your-existing-package-sources)
 1. [Plan your access control strategy](#plan-your-access-control-strategy)
 1. [Set up your feeds](#set-up-your-feeds)
-1. [Use your feeds](#use-your-feeds)
+1. [Migrate your packages](#migrate-your-packages)
 
 ## Inventory your existing package sources
 
@@ -140,9 +140,7 @@ Once you've set up your feeds, you can now set up your project to authenticate w
 > [!TIP]
 > For larger teams, you should consider marking each share as read-only before doing the `nuget push` operation to ensure no one adds or updates packages during your migration.  
 
-### Integrate with your pipelines
-
-Update your pipelines to ensure they have the right permissions to consume and publish packages to and from your feeds. See [Restore NuGet packages with Azure Pipelines](../../pipelines/packages/nuget-restore.md) and [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md) for more details.
+If you're also incorporating Azure Pipelines into your workflow, make sure you update your pipelines to ensure they have the right permissions to publish packages to your feeds. See [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md) and [Restore NuGet packages with Azure Pipelines](../../pipelines/packages/nuget-restore.md) for more details.
 
 ## Related articles
 
