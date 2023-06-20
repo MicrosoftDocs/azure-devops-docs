@@ -8,7 +8,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/05/2023
+ms.date: 06/20/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -38,6 +38,7 @@ To set up PATs for non-Microsoft tools, use [Git credential managers](../../repo
 * [About security, authentication, and authorization](../security/about-security-identity.md)
 * [Default permissions and access for Azure DevOps](../security/permissions-access.md)
 * [Revoke user PATs (for admins)](admin-revoke-user-pats.md)
+* [Manage service principals and managed identities in Azure DevOps](../../integrate/get-started/authentication/service-principal-managed-identity.md)
 
 ::: moniker range="azure-devops"
 
