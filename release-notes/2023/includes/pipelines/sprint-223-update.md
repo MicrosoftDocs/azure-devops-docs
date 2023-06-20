@@ -1,15 +1,15 @@
 ---
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 6/6/2023
+ms.date: 6/21/2023
 ms.topic: include
 ---
 
 ### Checks user experience improvements
 
-We are making reading check logs easier. Checks are critical sources of information for your deployment's success. They can tell you if you forgot to close a work item ticket, or that you need to update a ticket in ServiceNow. Alas, knowing that a check provided such critical information is hard today.
+We are making reading check logs easier. Checks are critical sources of information for your deployment's success. They can tell you if you forgot to close a work item ticket, or that you need to update a ticket in ServiceNow. Previously, knowing that a check provided such critical information was hard.
 
-The pipeline run details page shows the latest check log _only_ for checks that follow our [recommended usage](https://learn.microsoft.com/azure/devops/pipelines/process/invoke-checks).
+Now, the pipeline run details page shows the latest check log _only_ for checks that follow our [recommended usage](https://learn.microsoft.com/azure/devops/pipelines/process/invoke-checks).
 
 > [!div class="mx-imgBorder"]
 > ![Image showing latest check log.](../../media/223-pipelines-01.png "showing latest check log")
@@ -47,7 +47,7 @@ And once you fix it, you can just enable it.
 >
 ### Instructions for manual pre-installation of Node 6 on Pipeline agents
 
-Customers that use the [`pipeline-` agent feed](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/node6.md) do not have Node 6 included in the agent. In some cases, where a Marketplace task is still dependent on Node 6 and the agent is not able to use the [NodeTaskRunnerInstaller task](https://learn.microsoft.com/azure/devops/release-notes/2023/pipelines/sprint-218-update#node-runner-download-task) (e.g. due to connectivity restrictions), users need to pre-install Node 6 independently. We provided an [instruction](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) on how to do that.
+If you use the [`pipeline-` agent feed](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/node6.md), you do not have Node 6 included in the agent. In some cases, where a Marketplace task is still dependent on Node 6 and the agent is not able to use the [NodeTaskRunnerInstaller task](https://learn.microsoft.com/azure/devops/release-notes/2023/pipelines/sprint-218-update#node-runner-download-task) (e.g. due to connectivity restrictions), you will need to pre-install Node 6 independently. To accomplish this, check out the [instructions](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) on how install Node 6 runner manually.
 
 ### Pipeline task changelog
 
