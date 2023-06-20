@@ -11,6 +11,10 @@ Placeholder.
 
 Check out the release notes to learn how you can sign up for the public preview.
 
+### General
+
+[!INCLUDE [sprint-223-update-links](includes/general/sprint-223-update-links.md)]
+
 ### Azure Pipelines
 
 [!INCLUDE [sprint-223-update-links](includes/pipelines/sprint-223-update-links.md)]
@@ -18,6 +22,10 @@ Check out the release notes to learn how you can sign up for the public preview.
 ### Reporting
 
 [!INCLUDE [sprint-223-update-links](includes/reporting/sprint-223-update-links.md)]
+
+## General
+
+[!INCLUDE [sprint-223-update](includes/general/sprint-223-update.md)]
 
 ## Azure Pipelines
 
