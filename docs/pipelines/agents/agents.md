@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 01/24/2023
+ms.date: 06/20/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -300,7 +300,17 @@ ID    Name                             Is Hosted    Pool Type
 
 ::: moniker-end
 
+::: moniker range=">tfs-2018 <azure-devops"
+
+### Communication with Azure DevOps Server
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
 ### Communication with TFS
+
+::: moniker-end
 
 The agent communicates with Azure Pipelines or Azure DevOps Server to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.
 
