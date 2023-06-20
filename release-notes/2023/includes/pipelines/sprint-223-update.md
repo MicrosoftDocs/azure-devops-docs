@@ -44,3 +44,6 @@ And once you fix it, you can just enable it.
 
 > [!div class="mx-imgBorder"]
 > ![Enable a check image.](../../media/223-pipelines-04.png "image showing enable check for pipeline")
+>
+### Instructions for manual pre-installation of Node 6 on Pipeline agents
+Customers that use the [`pipeline-` agent feed](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/node6.md) do not have Node 6 included in the agent. In some cases, where a Marketplace task is still dependent on Node 6 and the agent is not able to use the [NodeTaskRunnerInstaller task](https://learn.microsoft.com/azure/devops/release-notes/2023/pipelines/sprint-218-update#node-runner-download-task) (e.g. due to connectivity restrictions), users need to pre-install Node 6 independently. We provided an [instruction](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) on how to do that.
