@@ -16,16 +16,7 @@ ms.date: 06/19/2023
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Stay aligned and coordinated with Azure Boards and link your code activity and issues from GitHub. You can do the following tasks with Azure Boards-GitHub integration:
-
-- [Transition work items to a "Done" or "Completed" state with `fix`, `fixes`, or `fixed` in GitHub](link-to-from-github.md#use-ab-mention-to-link-from-github-to-azure-boards-work-items). 
-- [Post a comment to a GitHub commit, pull request, or issue when linked to a work item.](https://docs.github.com/en/get-started/quickstart/communicating-on-github) 
-- [Link from a work item to a GitHub commit, pull request, or issue](link-to-from-github.md#add-link-from-a-work-item-to-a-github-commit-pull-request-or-issue).
-- [View GitHub objects on a Kanban board](link-to-from-github.md#view-github-objects-on-kanban-board). 
-- [Configure status badges](configure-status-badges.md)
-- [Manage GitHub repository access](change-azure-boards-app-github-repository-access.md)
-- [Troubleshoot Azure Boards-GitHub integration](troubleshoot-github-connection.md)
-- [Enable DevSecOps with Azure and GitHub](/devops/devsecops/enable-devsecops-azure-github?branch=main)
+Stay aligned and coordinated with Azure Boards and link your code activity and issues from GitHub. 
 
 ## Integrate Azure Boards and GitHub
 
@@ -57,7 +48,20 @@ You can start from either Azure Boards or GitHub to integrate and connect up to 
 
 > [!IMPORTANT]   
 > We recommend that you use the [Azure Boards app for GitHub](install-github-app.md) to configure and manage your connections to GitHub.com. The app provides a more streamlined configuration experience and has the advantage of authenticating and operating as the app rather than an individual. Once you're connected, you can manage the repositories either from Azure Boards or GitHub.com.
- 
+
+## Use integration features
+
+You can do the following tasks with Azure Boards-GitHub integration:
+
+- [Transition work items to a "Done" or "Completed" state with `fix`, `fixes`, or `fixed` in GitHub](link-to-from-github.md#use-ab-mention-to-link-from-github-to-azure-boards-work-items). 
+- [Post a comment to a GitHub commit, pull request, or issue when linked to a work item.](https://docs.github.com/en/get-started/quickstart/communicating-on-github) 
+- [Link from a work item to a GitHub commit, pull request, or issue](link-to-from-github.md#add-link-from-a-work-item-to-a-github-commit-pull-request-or-issue).
+- [View GitHub objects on a Kanban board](link-to-from-github.md#view-github-objects-on-kanban-board). 
+- [Configure status badges](configure-status-badges.md)
+- [Manage GitHub repository access](change-azure-boards-app-github-repository-access.md)
+- [Troubleshoot Azure Boards-GitHub integration](troubleshoot-github-connection.md)
+- [Enable DevSecOps with Azure and GitHub](/devops/devsecops/enable-devsecops-azure-github?branch=main)
+
 ## Add or remove connections 
  
 - [Add or remove GitHub repositories](add-remove-repositories.md) from Azure Boards.  
