@@ -52,3 +52,7 @@ Customers that use the [`pipeline-` agent feed](https://github.com/microsoft/azu
 ### Pipeline task changelog
 
 We now publish changes to Pipeline tasks to this [changelog](https://github.com/microsoft/azure-pipelines-tasks/releases). This contains the complete list of changes made to [built-in Pipeline tasks](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/?view=azure-pipelines). We have retroactively published prior changes, so the changelog provides a historical record of task updates.
+
+### Release tasks use Microsoft Graph API
+
+We have updated our [release tasks](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/?view=azure-pipelines#deploy-tasks) to use the Microsoft Graph API. This removes any usage of the [AAD Graph API](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/azure-ad-change-management-simplified/ba-p/2967456) from our tasks.
