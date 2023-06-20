@@ -16,12 +16,10 @@ ms.date: 06/19/2023
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Stay aligned and coordinated with Azure Boards and link your code activity and issues from GitHub.
-
-You can do the following tasks with Azure Boards-GitHub integration:
+Stay aligned and coordinated with Azure Boards and link your code activity and issues from GitHub. You can do the following tasks with Azure Boards-GitHub integration:
 
 - [Transition work items to a "Done" or "Completed" state with `fix`, `fixes`, or `fixed` in GitHub](link-to-from-github.md#use-ab-mention-to-link-from-github-to-azure-boards-work-items). 
-- Support full traceability by posting a discussion comment to GitHub when you link from a work item to a GitHub commit, pull request, or issue. 
+- [Post a comment to a GitHub commit, pull request, or issue when linked to a work item.](https://docs.github.com/en/get-started/quickstart/communicating-on-github) 
 - [Link from a work item to a GitHub commit, pull request, or issue](link-to-from-github.md#add-link-from-a-work-item-to-a-github-commit-pull-request-or-issue).
 - [View GitHub objects on a Kanban board](link-to-from-github.md#view-github-objects-on-kanban-board). 
 - [Configure status badges](configure-status-badges.md)
@@ -50,7 +48,7 @@ You can start from either Azure Boards or GitHub to integrate and connect up to 
 > [!NOTE]   
 > When you install the Azure DevOps Server 2020.1.1 Patch 2, you can create connections from your Azure DevOps Server to GitHub.com repositories in addition to GitHub Enterprise Server repositories.
 :::moniker-end
-
+::: moniker range="< azure-devops-2022"
 - [Install and configure the Azure Boards app for GitHub](install-github-app.md)</br>   
 - [Approve and install the Azure Boards app](connect-to-github.md)
 - [Connect Azure DevOps Server to GitHub Enterprise Server (on-premises)](connect-on-premises-to-github.md)
