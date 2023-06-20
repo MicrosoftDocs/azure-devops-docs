@@ -5,7 +5,7 @@ ms.author: jukullam
 author: JuliaKM
 ms.subservice: azure-devops-pipelines-apps
 ms.custom: devx-track-azurecli, devx-track-arm-template
-ms.date: 01/25/2023
+ms.date: 06/20/2023
 ms.topic: how-to
 monikerRange: '=azure-devops'
 ---
@@ -161,7 +161,7 @@ To make commands easier to run, start by selecting a default region. After you s
     * Clear the selection for **Enable GIT**.
 
   
-   1. Run the following `az datafactory factory create` command to create a new data factory for testing.  
+   1. Run the following `az datafactory create` command to create a new data factory for testing.  
     
        ```azurecli
         az datafactory create \
