@@ -24,62 +24,52 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
     :::image type="content" source="media/configure-artifacts-settings.png" alt-text="A screenshot showing how to access Azure Artifacts settings.":::
 
     > [!NOTE]
-    > By default, the Azure Artifacts settings icon is only visible to the feed owner and the project collection administrators.
+    > By default, the Azure Artifacts settings icon is only visible to feed owners and [project collection administrators](../../organizations/security/look-up-project-collection-administrators.md).
 
-By default, users in an Azure DevOps organization can create new feeds in that organization. A user who creates a feed is both an owner and an administrator of that feed.
+1. Choose the users or groups who should have the ability to create and/or administer feeds, and then select **Save** when you're done. 
 
-1. Users in this Azure DevOps organization can create new feeds.
-
-2. Only feed administrators and users or groups specified here are able to create new feeds.
-
-3. Users or groups added here become administrators of all the feeds in the organization.
-
-:::image type="content" source="media/artifacts-settings.png" alt-text="Screenshot showing how to set up Azure Artifacts settings":::
-
-> [!NOTE]
-> It's very important to understand the difference between feeds, project, and project collection administrators.
-> 
-> A **Feed Administrator** can perform all operations on the feed (edit feed permissions, delete packages, promote packages, etc.).
->
-> A **Project Administrator** on the other hand has permissions to manage all project/team related operations (update project visibility, delete project, manage test environments etc.).
->
-> **Project Collection Administrators** are granted all collection-level permissions to manage resources for projects and project-collections (add/delete projects, trigger events, manage build resources, audit streams etc.).
-
-<a name="edit-permissions"></a>
+    :::image type="content" source="media/artifact-feed-settings.png" alt-text="Screenshot showing how to set up Azure Artifacts settings.":::
 
 ## Configure feed settings
 
-[!INCLUDE [edit-feed](../includes/edit-feed.md)]
-
 ::: moniker range=">= azure-devops-2019"
 
-2. Select **Permissions**, and then select **Add users/groups**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-    :::image type="content" source="media/feed-permissions.png" alt-text="A screenshot showing the feed's permissions.":::
+1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the gear icon to navigate to your feed's settings.
 
-3. Add new user(s)/group(s), and then select their **Role**.
+    :::image type="content" source="../media/feed-settings.png" alt-text="A screenshot showing how to navigate to the feed's settings.":::
+
+1. Select **Permissions**, and then select **Add users/groups**.
+
+    :::image type="content" source="media/feed-permissions.png" alt-text="A screenshot showing how to access feed permissions.":::
+
+1. Add new user(s)/group(s) and choose the appropriate **Role** for them.
 
     :::image type="content" source="media/add-users-groups-dialogue.png" alt-text="Screenshot showing how to add new users or groups.":::
 
-4. Select **Save** when you are done.
+1. Select **Save** when you're done.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-2. Select **Permissions**.
+1. Select **Build and Release**.
 
-    :::image type="content" source="media/editfeeddialog1.png" alt-text="Screenshot showing feed permissions TFS.":::
+1. Select **Packages**, and then select the gear icon to navigate to your feed's settings. 
 
-In the edit feed dialog:
+1. Select **Permissions**, and then select **Add user/group**.
 
-- Choose to make each person or team an Owner, Contributor, Collaborator, or Reader.
-- When you're done, select **Save**.
+    :::image type="content" source="media/editfeeddialog1.png" alt-text="A screenshot showing feed permissions in TFS.":::
+
+1. Add new user(s)/group(s) and choose the appropriate **Role** for them.
+
+1. Select **Save** when you're done.
 
 ::: moniker-end
 
 > [!NOTE]
-> The *Project Collection Build Service* (org-scoped) and the project-level *Build Service* (project-scoped) are set to **Collaborator** by default.
+> By default, the *Project Collection Build Service* (org-scoped) and the project-level *Build Service* (project-scoped) are assigned the **Collaborator** role.
 
 ## Permissions table
 
