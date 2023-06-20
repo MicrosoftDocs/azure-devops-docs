@@ -1,28 +1,30 @@
 ---
-title: Set up permissions
-description: Configure Artifacts permissions for feeds, views, and pipelines
+title: Configure permissions
+description: How to configure permissions for Artifacts feeds, views, and pipelines access
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 02/28/2022
+ms.date: 06/20/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Configure permissions
+# Manage permissions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts you can publish, consume, and store different types of packages in your feed. Setting up permissions for your feed allows you to control who can access your packages.
+Azure Artifacts enables you to publish, consume, and store various types of packages in your feed. By configuring permissions for your feed, you can manage access to your packages and control who can interact with them.
 
 ## Configure Azure Artifacts settings
 
-Feed owners can specify who can create and administer Artifacts feeds. To access Azure Artifacts settings, select the **Azure Artifacts settings** icon on the right.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-:::image type="content" source="media/azure-artifacts-settings.png" alt-text="A screenshot showing how to access Azure Artifacts settings":::
+1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the Azure Artifacts settings icon on the right.
 
-> [!NOTE]
-> The Azure Artifacts settings icon is only visible to **Project Collection Administrators** or those who have been granted permission to administer feeds in the Azure Artifacts settings panel.
+    :::image type="content" source="media/configure-artifacts-settings.png" alt-text="A screenshot showing how to access Azure Artifacts settings.":::
+
+    > [!NOTE]
+    > By default, the Azure Artifacts settings icon is only visible to the feed owner and the project collection administrators.
 
 By default, users in an Azure DevOps organization can create new feeds in that organization. A user who creates a feed is both an owner and an administrator of that feed.
 
