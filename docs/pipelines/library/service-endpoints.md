@@ -363,7 +363,7 @@ You can use the following PowerShell script to obtain a Base64-encoded represent
 
 Use OAuth with **Grant authorization** or a username and password with **Basic Authentication** to define a connection to Bitbucket Cloud. For pipelines to keep working, your repository access must remain active.
 
-### Grand authorization
+### Grant authorization
 
 | Parameter | Description |
 | --------- | ----------- |
