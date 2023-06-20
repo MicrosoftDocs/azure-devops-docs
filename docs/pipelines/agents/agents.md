@@ -302,7 +302,7 @@ ID    Name                             Is Hosted    Pool Type
 
 ::: moniker range=">tfs-2018 <azure-devops"
 
-### Communication with Azure DevOps Server or TFS
+### Communication with Azure DevOps Server
 
 ::: moniker-end
 
