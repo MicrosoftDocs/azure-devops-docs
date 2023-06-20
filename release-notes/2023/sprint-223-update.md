@@ -19,10 +19,6 @@ Check out the release notes to learn how you can sign up for the public preview.
 
 [!INCLUDE [sprint-223-update-links](includes/reporting/sprint-223-update-links.md)]
 
-### Azure Pipelines
-
-[!INCLUDE [sprint-223-update-links](includes/pipelines/sprint-223-update-links.md)]
-
 ## Azure Pipelines
 
 [!INCLUDE [sprint-223-update](includes/pipelines/sprint-223-update.md)]
