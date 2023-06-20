@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
-ms.date: 01/25/2023
+ms.date: 06/20/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -74,7 +74,7 @@ You create and manage agent queues from the agent queues tab in project settings
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-If you are a project team member, you create and manage agent queues from the agent pools tab in project settings.
+If you are a project team member, you create and manage agent pools from the agent pools tab in project settings.
 ::: moniker-end
 
 [!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
@@ -153,7 +153,7 @@ You create and manage agent queues from the agent queues tab in project settings
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-If you are a project team member, you create and manage agent queues from the agent pools tab in project settings.
+If you are a project team member, you create and manage agent pools from the agent pools tab in project settings.
 ::: moniker-end
 
 [!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
@@ -355,9 +355,18 @@ If you've got a lot of self-hosted agents intended for different teams or purpos
 Here are some typical situations when you might want to create self-hosted agent pools:
 
 ::: moniker range="azure-devops"
-* You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you've the permissions to create pools in your project by selecting **Security** on the agent pools page in your project settings. You must have **Administrator** role to be able to create new pools. Next, select **Add pool** and select the option to create a **new** pool at the organization level. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+* You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you've got the permissions to create pools in your project by selecting **Security** on the agent pools page in your **Project settings**. You must have **Administrator** role to be able to create new pools. Next, select **Add pool** and select the option to create a **new** pool. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
-* You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All agent pools** with the **Administrator** role by navigating to agent pools page in your organization settings. Next create a **New agent pool** and select the option to **Auto-provision corresponding agent pools in all projects** while creating the pool. This setting ensures all projects have access to this agent pool. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+* You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First, make sure you've got the permissions to create pools in your project by selecting **Security** on the agent pools page in your **Organization settings**. Next create a **New agent pool** and select the option to **Auto-provision this agent pool in all projects** while creating the pool. This setting ensures all projects have access to this agent pool. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+
+* You want to share a set of agent machines with multiple projects, but not all of them. First, navigate to the settings for one of the projects, add an agent pool, and select the option to create a **new** pool at the organization level. Next, go to each of the other projects, and create a pool in each of them while selecting the option to **Use an existing agent pool from the organization**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
+::: moniker-end
+
+::: moniker range=">azure-devops-2019 < azure-devops"
+
+* You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you've got the permissions to create pools in your project by selecting **Security** on the agent pools page in your **Project settings**. You must have **Administrator** role to be able to create new pools. Next, select **Add pool** and select the option to create a **new** pool. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+
+* You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First, make sure you've got the permissions to create pools in your project by selecting **Security** on the agent pools page in your **Project collection settings**. Next create a **New agent pool** and select the option to **Auto-provision this agent pool in all projects** while creating the pool. This setting ensures all projects have access to this agent pool. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
 * You want to share a set of agent machines with multiple projects, but not all of them. First, navigate to the settings for one of the projects, add an agent pool, and select the option to create a **new** pool at the organization level. Next, go to each of the other projects, and create a pool in each of them while selecting the option to **Use an existing agent pool from the organization**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
 ::: moniker-end
