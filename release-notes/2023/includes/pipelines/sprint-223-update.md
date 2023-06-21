@@ -30,21 +30,6 @@ Our solution to scale Invoke Azure Function and REST API checks is to enforce ch
 
 [Read more about the upcoming changes](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/).
 
-### Disable a check 
-
-We are making debugging checks less tedious. Sometimes, an Invoke Azure Function or Invoke REST API check doesn't work correctly, and you need to fix it. Previously, you had to delete the check, to prevent it from erroneously blocking a deployment. Once you fixed the check, you had to add it back, and configure it correctly, making sure all the required headers are set or the query parameters are correct. This is tedious.
-
-Now, you can just disable a check.
-
-> [!div class="mx-imgBorder"]
-> ![Disable a check image.](../../media/223-pipelines-03.png "image showing disable check for pipeline")
-
-
-And once you fix it, you can just enable it.
-
-> [!div class="mx-imgBorder"]
-> ![Enable a check image.](../../media/223-pipelines-04.png "image showing enable check for pipeline")
->
 ### Instructions for manual pre-installation of Node 6 on Pipeline agents
 
 If you use the [`pipeline-` agent feed](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/node6.md), you do not have Node 6 included in the agent. In some cases, where a Marketplace task is still dependent on Node 6 and the agent is not able to use the [NodeTaskRunnerInstaller task](https://learn.microsoft.com/azure/devops/release-notes/2023/pipelines/sprint-218-update#node-runner-download-task) (e.g. due to connectivity restrictions), you will need to pre-install Node 6 independently. To accomplish this, check out the [instructions](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) on how install Node 6 runner manually.
