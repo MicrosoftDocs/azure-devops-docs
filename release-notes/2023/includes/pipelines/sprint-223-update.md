@@ -7,9 +7,9 @@ ms.topic: include
 
 ### Checks user experience improvements
 
-We are making reading check logs easier. Checks are critical sources of information for your deployment's success. They can tell you if you forgot to close a work item ticket, or that you need to update a ticket in ServiceNow. Previously, knowing that a check provided such critical information was hard.
+We are making reading checks logs easier. Checks logs provide information critical for your deployment's success. They can tell you if you forgot to close a work item ticket, or that you need to update a ticket in ServiceNow. Previously, knowing that a check provided such critical information was hard.
 
-Now, the pipeline run details page shows the latest check log _only_ for checks that follow our [recommended usage](https://learn.microsoft.com/azure/devops/pipelines/process/invoke-checks).
+Now, the pipeline run details page shows the latest check log. This is _only_ for checks that follow our [recommended usage](https://learn.microsoft.com/azure/devops/pipelines/process/invoke-checks).
 
 > [!div class="mx-imgBorder"]
 > ![Image showing latest check log.](../../media/223-pipelines-01.png "showing latest check log")
@@ -32,7 +32,7 @@ Our solution to scale Invoke Azure Function and REST API checks is to enforce ch
 
 ### Disable a check 
 
-We are making debugging checks less tedious. Sometimes, an Invoke Azure Function or Invoke REST API check doesn't work correctly, and you need to fix it. Previously, you had to delete such checks, to prevent them from erroneously blocking a deployment. Once you fixed the check, you had to add it back, and configure it correctly, making sure all the required headers are set or the query parameters are correct. This is tedious.
+We are making debugging checks less tedious. Sometimes, an Invoke Azure Function or Invoke REST API check doesn't work correctly, and you need to fix it. Previously, you had to delete the check, to prevent it from erroneously blocking a deployment. Once you fixed the check, you had to add it back, and configure it correctly, making sure all the required headers are set or the query parameters are correct. This is tedious.
 
 Now, you can just disable a check.
 
