@@ -9,7 +9,7 @@ description: Change organization profile image.
 
 You can now replace the image that we automatically generate for your organization to include a preferred image. In addition, we added resolved work items as completed to the burndown and burnup charts. This will let you select if you want to include work items with resolved state as completed items to your burndown and burnup charts. 
 
-In Pipelines, we made improvements to Azure Pipelines checks. Now, the pipeline run details page shows the latest check log. We also made it easier for you to disable and enable a check from the approvals and checks page for your resources. 
+In Pipelines, we made improvements to approvals and checks. Now, the pipeline run details page shows the latest checks log. We also made it easier for you to disable and enable a check from the approvals and checks page for your resources. 
 
 Check out the release notes to learn more about these features.
 
