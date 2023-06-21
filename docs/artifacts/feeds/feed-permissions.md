@@ -97,7 +97,7 @@ Feed views enable users to share certain packages while keeping others private. 
 By default, there are three views in a feed: **@local**, **@prerelease**, and **@release** view. The latter two are suggested views that you can rename or delete as desired. The **@local** view is the default view and it includes all the packages published to the feed as well as all the packages downloaded from upstream sources.
 
 > [!IMPORTANT]
-> Users who have access a specific view are able to access and download packages from the feed through that view even if they don't have direct access to that feed.
+> Users who have access to a specific view are able to access and download packages from the feed through that view even if they don't have direct access to that feed.
 If you want to completely hide your packages, you must restrict access to both feed and views.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
