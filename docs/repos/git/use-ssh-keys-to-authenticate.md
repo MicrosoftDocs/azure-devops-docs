@@ -137,7 +137,7 @@ Associate the public key generated in the previous step with your user ID.
 
 5. On the overview page a note is displayed at the top containing the server fingerprints. Make note of them because they will be required when you first connect to Azure DevOps via SSH.
 
-   ![Accessing Security Configuration in Azure DevOps Services](media/use-ssh-authentication/ssh_accessing_security_key.png)
+   ![Screenshot of accessing security configuration in Azure DevOps Services.](media/use-ssh-authentication/ssh_accessing_security_key.png)
 
 6. Test the connection by running the following command:
 
@@ -361,7 +361,7 @@ Git commands accessing the remote called `origin` will now use SSH.
 **A:** To use a key stored in a different place than the default, perform these two tasks:
 
 1. The keys must be in a folder that only you can read or edit. If the folder has wider permissions, SSH won't use the keys.
-2. You must let SSH know the location of the keykey, e.g. by specifying it as an "Identity" in the SSH config:
+2. You must let SSH know the location of the key, e.g. by specifying it as an "Identity" in the SSH config:
 
    ```
    Host ssh.dev.azure.com
@@ -377,14 +377,14 @@ The `IdentitiesOnly yes` setting ensures that SSH will not use any other availab
 
 However, this doesn't work with Azure DevOps for technical reasons related to the SSH protocol and how our Git SSH URLs are structured. Azure DevOps will blindly accept the first key that the client provides during authentication. If that key is invalid for the requested repository, the request will fail without attempting other available keys due to the following error:
 
-> ```
-> remote: Public key authentication failed.
-> fatal: Could not read from remote repository.
-> ```
+```
+remote: Public key authentication failed.
+fatal: Could not read from remote repository.
+```
 
 For Azure DevOps, you'll need to configure SSH to explicitly use a specific key file. The procedure is the same as when using a key stored in a [non-default location](use-ssh-keys-to-authenticate.md#non-default-keys). Simply tell SSH to use the correct SSH key for the Azure DevOps host.
 
-### Q: How do I use different SSH keys for different organisations on Azure DevOps?
+### Q: How do I use different SSH keys for different organizations on Azure DevOps?
 
 **A:** Azure DevOps will blindly accept the first key that the client provides during authentication. If that key is invalid for the requested repository, the request will fail with the following error:
 
@@ -393,7 +393,7 @@ remote: Public key authentication failed.
 fatal: Could not read from remote repository.
 ```
 
-However, you can modify your SSH config to differentiate between different organisations and provide different keys for each. To do this you will need to use host aliases to create separate `Host` sections in your SSH configuration. This is because all hosted Azure DevOps URLs have the same hostname (`ssh.dev.azure.com`), so SSH has no way to distinguish them by default.
+However, you can modify your SSH config to differentiate between different organizations and provide different keys for each. To do this you will need to use host aliases to create separate `Host` sections in your SSH configuration. This is because all hosted Azure DevOps URLs have the same hostname (`ssh.dev.azure.com`), so SSH has no way to distinguish them by default.
 
 ```
 # The settings in each Host section are applied to any Git SSH remote URL with a
