@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to generate an open bugs Power BI report.
 ms.subservice: azure-devops-analytics
 ms.custom: powerbisample, engagement-fy23
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/05/2022
@@ -64,7 +64,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -222,7 +222,7 @@ Once you've expanded the columns, you may want to rename one or more fields. For
 
 ## Create the Matrix report
 
-1. In Power BI, choose the **Matrix** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Matrix** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/open-bugs-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Open Bugs report. ":::
 

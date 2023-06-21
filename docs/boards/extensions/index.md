@@ -2,23 +2,25 @@
 title: Extensions for Azure Boards 
 description: Learn about Azure Boards extensions that can help you customize or enhance your default experience.
 titleSuffix: Azure Boards 
-ms.custom: extensions
+ms.custom: extensions, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 09/28/2022 
+ms.date: 01/31/2023 
 ---
 
 # Overview of extensions for Azure Boards
 
-[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The Azure DevOps Marketplace offers a wide variety of extensions to customize or enhance the default experience. You can learn more about those extensions developed by Microsoft from the following articles and links. For information on developing your own extension, see [Develop a web extension](../../extend/get-started/node.md).
 
 > [!NOTE]   
-> Most extensions, such as [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) and [Delivery Plan](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
+> Extensions available to you depend on the Azure DevOps platform you use. Make sure you use the content version selector to view the extensions available for your version. 
+> 
+> Also, most extensions, such as [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives), are not supported features of Azure Boards and therefore not supported by the product team. Over time, some extensions are deprecated. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
 
 
 ::: moniker range="azure-devops"
@@ -33,11 +35,11 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ## Product planning 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 > [!NOTE]   
-> A new version of Delivery Plans is available. This feature is now part of Azure Boards and replaces the Delivery Plans extension. Delivery Plans provides support for the following tasks: 
-> - Add up to 15 team backlogs
+> A new version of Delivery Plans is available. This feature is now part of Azure Boards and replaces the [Delivery Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans). Delivery Plans provides support for the following tasks: 
+> - Add 20 team backlog levels for Azure DevOps Services or 15 backlog levels for Azure DevOps Server 2022
 > - Add custom portfolio backlogs as well as Epics 
 > - View work items that span several iterations 
 > - Reset Start Date and Target Date through drag and drop borders 
@@ -46,14 +48,14 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 > - View work item dependencies 
 > - Stakeholders can view plans
 
-To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
+To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md).
 ::: moniker-end
+ 
 
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
-- [Feature Timeline](feature-timeline.md)
-- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) 
+- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/epic-roadmap)  
+- [Feature Timeline extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/feature-timeline) 
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 - [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work&ssr=false#overview)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
@@ -62,33 +64,23 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
-- [Delivery Plans](delivery-plans.md)
-- [Feature Timeline](feature-timeline.md)
-- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) 
+- [Delivery Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans)
+- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/epic-roadmap)  
+- [Feature Timeline extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/feature-timeline) 
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 - [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work&ssr=false#overview)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
 - [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-- [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
-- [Delivery Plans](delivery-plans.md)
-- [Feature Timeline](feature-timeline.md)
-- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
-- [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
-- [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work&ssr=false#overview)
-- [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
-- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
-::: moniker-end
+ 
 
 ::: moniker range="tfs-2018"
-- [Delivery Plans](delivery-plans.md)
-- [Feature Timeline](feature-timeline.md)
-- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
+- [Delivery Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans)
+- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/epic-roadmap)  
+- [Feature Timeline extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/feature-timeline) 
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 
 ::: moniker-end
@@ -104,7 +96,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 - [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
 - [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) 
 - [Work item form control library](https://marketplace.visualstudio.com/items?itemName=mohitbagra.vsts-wit-control-library)
-[Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)
+- [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) 
 - [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
 
@@ -118,11 +110,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 - [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
 
 ::: moniker-end
-
-In addition to the above extensions, you can 
-
-
-
+ 
 ::: moniker range=">= azure-devops-2019"
 
 ## Query and reporting
@@ -136,8 +124,7 @@ In addition to the above extensions, you can
 ::: moniker-end
 
 
-## Dashboards
-
+## Dashboard widgets
 
 ::: moniker range=">= azure-devops-2019"
 

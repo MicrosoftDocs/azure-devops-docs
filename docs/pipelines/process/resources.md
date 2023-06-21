@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to define YAML resources that can be consumed anywhere in your pipelines.
 ms.topic: how-to
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 09/15/2022
+ms.date: 04/14/2023
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: '>= azure-devops-2019'
 Resources in YAML represent sources of pipelines, builds, repositories, containers, packages, and webhooks.
 Resources also provide you the full traceability of the services used in your pipeline including the version, artifacts, associated commits, and work items. When you define a resource, it can be consumed anywhere in your pipeline. And, you can fully automate your DevOps workflow by subscribing to trigger events on your resources.
 
-For more information, see [About resources](about-resources.md)
+For more information, see [About resources](about-resources.md).
 ### Schema
 
 ```yaml
@@ -216,7 +216,7 @@ resources:
       
 ```
 
-Your pipeline will run whenever the `SmartHotel` pipelines runs on one of the `releases` branches or on the `main` branch, is tagged with both `Verified` and `Signed`, and it completed both the `Production` and `PreProduction` stages.
+Your pipeline will run whenever the `SmartHotel-CI` pipelines runs on one of the `releases` branches or on the `main` branch, is tagged with both `Verified` and `Signed`, and it completed both the `Production` and `PreProduction` stages.
 
 ### `download` for pipelines
 
@@ -294,6 +294,8 @@ steps:
 
 ---
 
+For more information, see [Pipeline resource metadata as predefined variables](/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#pipeline-resource-metadata-as-predefined-variables).
+
 ## Define a `builds` resource
 
 If you have an external CI build system that produces artifacts, you can consume artifacts with a `builds` resource. A `builds` resource can be any external CI systems like Jenkins, TeamCity, CircleCI, and so on.
@@ -368,22 +370,13 @@ The `repository` keyword lets you specify an external repository.
 
 ```yaml
 resources:
-  repositories:
-  - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
-    type: enum  # see the following "Type" topic
-    name: string  # repository name (format depends on `type`)
-    ref: string  # ref name to use; defaults to 'refs/heads/main'
-    endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
-    trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
-      branches:
-        include: [ string ] # branch names which trigger a build
-        exclude: [ string ] # branch names which won't
-      tags:
-        include: [ string ] # tag names which trigger a build
-        exclude: [ string ] # tag names which won't
-      paths:
-        include: [ string ] # file paths which must match to trigger a build
-        exclude: [ string ] # file paths which won't trigger a build
+    repositories:
+    - repository: string # Required as first property. Alias for the repository.
+      endpoint: string # ID of the service endpoint connecting to this repository.
+      trigger: none | trigger | [ string ] # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos).
+      name: string # repository name (format depends on 'type'; does not accept variables).
+      ref: string # ref name to checkout; defaults to 'refs/heads/main'. The branch checked out by default whenever the resource trigger fires.
+      type: string # Type of repository: git, github, githubenterprise, and bitbucket.
 ```
 
 ## [Example](#tab/example)
@@ -424,13 +417,24 @@ Use `checkout` keyword to consume your repos defined as part of `repository` res
 
 ```yaml
 steps:
-- checkout: string  # identifier for your repository resource
-  clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
-  fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
-  lfs: boolean  # whether to download Git-LFS files; defaults to false
-  submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
-  path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
-  persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
+- checkout: string # Required as first property. Configures checkout for the specified repository.
+  clean: string # If true, run git clean -ffdx followed by git reset --hard HEAD before fetching.
+  fetchDepth: string # Depth of Git graph to fetch.
+  fetchTags: string # Set to 'true' to sync tags when fetching the repo, or 'false' to not sync tags. See remarks for the default behavior.
+  lfs: string # Set to 'true' to download Git-LFS files. Default is not to download them.
+  persistCredentials: string # Set to 'true' to leave the OAuth token in the Git config after the initial fetch. The default is not to leave it.
+  submodules: string # Set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules. Default is not to fetch submodules.
+  path: string # Where to put the repository. The root directory is $(Pipeline.Workspace).
+  condition: string # Evaluate this condition expression to determine whether to run this task.
+  continueOnError: boolean # Continue running even on failure?
+  displayName: string # Human-readable name for the task.
+  target: string | target # Environment in which to run this task.
+  enabled: boolean # Run this task when the job runs?
+  env: # Variables to map into the process's environment.
+    string: string # Name/value pairs
+  name: string # ID of the step.
+  timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
+  retryCountOnTaskFailure: string # Number of retries if the task fails.
 ```
 
 Repos from the `repository` resource aren't automatically synced in your jobs. Use `checkout` to fetch your repos as part of your jobs.
@@ -477,7 +481,7 @@ resources:
 
 ---
 
-You can use a first class container resource type for Azure Container Registry (ACR) to consume your ACR images. This resources type can be used as part of your jobs and also to enable automatic pipeline triggers.
+You can use a first class container resource type for Azure Container Registry (ACR) to consume your ACR images. This resources type can be used as part of your jobs and also to enable automatic pipeline triggers. You need to have **Contributor** or **Owner** permissions for ACR to use automatic pipeline triggers. For more information, see [Azure Container Registry roles and permissions](/azure/container-registry/container-registry-roles).
 
 ## [Schema](#tab/schema)
 
@@ -628,7 +632,12 @@ Do the following steps to configure the webhook triggers.
 
 1. Set up a webhook on your external service. When you're creating your webhook, you need to provide the following info:
 
-    - Request Url - `https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<WebHook Name>?api-version=6.0-preview`
+    - Request Url
+    
+      ```
+      https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<WebHook Name>?api-version=6.0-preview
+      ```
+  
     - Secret - Optional. If you need to secure your JSON payload, provide the **Secret** value.
 2. Create a new "Incoming Webhook" service connection. This connection is a newly introduced Service Connection Type that allows you to define the following important information:
     - **Webhook Name**: The name of the webhook should match webhook created in your external service.
@@ -809,15 +818,16 @@ You'll need to set up a [classic release pipeline](../release/index.md) because 
 
 
 1. Perform a `POST` API call with valid JSON in the body to 
-`https://dev.azure.com/{organization}/_apis/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. If you receive a 200 status code response, your webhook is ready for consumption by your pipeline. If you receive a 500 status code response with the error `Cannot find webhook for the given webHookId ...`, your code may be in a branch that is not your default branch. 
+`https://dev.azure.com/{organization}/_apis/public/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. If you receive a 200 status code response, your webhook is ready for consumption by your pipeline. If you receive a 500 status code response with the error `Cannot find webhook for the given webHookId ...`, your code may be in a branch that is not your default branch. 
 
     1. Open your pipeline. 
+    1. Select **Edit**.
     1. Select the more actions menu :::image type="content" source="../../media/icons/more-actions.png" alt-text="Select more actions menu":::. 
     1. Select **Triggers** > **YAML** > **Get Sources**. 
     1. Go to **Default branch for manual and scheduled builds** to update your feature branch. 
     1. Select **Save & queue**.
     1. After this pipeline runs successfully, perform a `POST` API call with valid JSON in the body to 
-`https://dev.azure.com/{organization}/_apis/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. You should now receive a 200 status code response.
+`https://dev.azure.com/{organization}/_apis/public/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. You should now receive a 200 status code response.
 
 ## Related articles
 

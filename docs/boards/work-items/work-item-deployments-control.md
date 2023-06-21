@@ -5,8 +5,8 @@ description: Learn how to link work items to other objects to improve traceabili
 ms.custom: boards-work-items, contperf-fy22q1  
 ms.service: azure-devops-boards
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2020'
 ms.date: 08/26/2022
 --- 
@@ -37,7 +37,7 @@ You can view all links through the work item form **Links** tab.
   
 :::image type="content" source="../../organizations/notifications/media/types-of-work-item-links.png" alt-text="Conceptual image of Git and integrated link types.":::
 
-To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) or [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json). To view objects linked to a work item, see [View list of links for a work item](#view-link-list).  
+To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) or [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json). To view objects linked to a work item, see [View list of links for a work item](#view-link-list).  
 
 ## Prerequisites
 
@@ -134,7 +134,7 @@ You can't query for work items that are included in releases. However, you can c
  
 **Link work items**
 
-- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json)
 - [End-to-end traceability](../../cross-service/end-to-end-traceability.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 - [Link type reference](../queries/link-type-reference.md)

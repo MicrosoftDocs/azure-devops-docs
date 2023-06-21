@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 11/29/2022
+ms.date: 01/25/2023
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -24,7 +24,7 @@ The following repository types are supported.
         [Azure Repos Git](azure-repos-git.md) (`git`)
     :::column-end:::
     :::column span="2":::
-        * Azure DevOps Server 2020 (limited to repositories in the same organization)
+        * Azure DevOps Server (limited to repositories in the same organization)
         * Azure DevOps Services
     :::column-end:::
 :::row-end:::
@@ -57,7 +57,7 @@ The following repository types are supported.
 :::row-end:::
 
 > [!IMPORTANT]
-> Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server 2020.
+> Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server.
 
 > [!NOTE]
 > Azure Pipelines provides **Limit job scope** settings for Azure Repos Git repositories.
@@ -223,6 +223,21 @@ steps:
 - checkout: MyGitHubRepo
 ```
 
+The following example uses [tags](../../repos/git/git-tags.md) to check out the commit referenced by `MyTag`.
+
+```yaml
+resources:
+  repositories:
+  - repository: MyGitHubRepo
+    type: github
+    endpoint: MyGitHubServiceConnection
+    name: MyGitHubOrgOrUser/MyGitHubRepo
+    ref: refs/tags/MyTag
+
+steps:
+- checkout: MyGitHubRepo
+```
+
 :::moniker range=">azure-devops-2020"
 
 ## Triggers
@@ -279,9 +294,13 @@ resources:
     trigger:
     - main
     - release
+steps:
+- checkout: self
+- checkout: A
+- checkout: B
 ```
 
-The following table shows which versions are checked out for each repository by a pipeline using the above YAML file, unless you explicitly override the behavior during `checkout`.
+The following table shows which versions are checked out for each repository by a pipeline using the above YAML file.
 
 | Change made to | Pipeline triggered | Version of YAML | Version of `self` | Version of `A` | Version of `B` |
 |----------------|--------------------|-----------------|-------------------|----------------|----------------|

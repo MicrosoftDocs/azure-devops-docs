@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to generate a sprint burndown Power BI report.
 ms.subservice: azure-devops-analytics
 ms.custom: powerbisample, engagement-fy23, engagement-fy23
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/08/2022
@@ -21,6 +21,8 @@ However, you can customize a sprint burndown chart using Analytics and Power BI 
 
 :::image type="content" source="media/reports-boards/sprint-burndown-clustered-column-chart.png" alt-text="Screenshot of Power BI Sprint burndown clustered column chart report.":::
  
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
+
 To learn more about burndown and burnup, and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
  
 
@@ -85,7 +87,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 * `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`. 
@@ -269,7 +271,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Burndown User Stories for all sprints since the start of a year   
 
-You may want to view a burndown of all the sprints in a single report. These queries pulls in sprint burndowns, and their by story points, for all  sprints since the beginning of year 2022.
+You may want to view a burndown of all the sprints in a single report. These queries pull in sprint burndowns, and their by story points, for all  sprints since the beginning of year 2022.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -388,7 +390,7 @@ To learn how to expand work items, see [Transform Analytics data to generate Pow
 
 ## Create the stacked column chart report
 
-1. In Power BI, choose the **Stacked column chart** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Stacked column chart** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/sprint-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Sprint Burndown report. ":::
 

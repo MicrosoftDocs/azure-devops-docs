@@ -6,8 +6,8 @@ ms.service: azure-devops-boards
 ms.custom: witadmin
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 12/01/2022
 ---
@@ -16,7 +16,7 @@ ms.date: 12/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
-You can manage the fields defined for work item types that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../xml/global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).  
+You can manage the fields defined for work item types that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](/previous-versions/azure/devops/reference/xml/global-workflow-xml-element-reference) and [importing it to the collection](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow).  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -112,7 +112,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 |`/reportingrefname:ReportingRefName`|Specifies the reference name of the field in the data warehouse to be used for reporting.|  
 |`/reportingtype:Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   `dimension:` Used for the Integer, String, or DateTime fields.<br />-   `detail:` Used for the Integer, Double, String, or DateTime fields.<br />-   `measure:` Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-  `none:` Used to disable reportability on the field.<br /><br /> For more information, see [About work item fields and attributes](../../boards/work-items/work-item-fields.md).|  
 |`/reportingformula:Formula`|Specifies the aggregation formula to be used when the field is reported as a `measure`. The only supported formula is `sum`.|  
-|`/type:HTML` &#124; `PlainText`|Specifies to convert the contents of the field from `PlainText` to `HTML` or from `HTML` to `PlainText`. You can specify this option only for fields whose type assignment is `PlainText` or `HTML`. See [FIELD (Definition) element reference](../xml/field-definition-element-reference.md).|  
+|`/type:HTML` &#124; `PlainText`|Specifies to convert the contents of the field from `PlainText` to `HTML` or from `HTML` to `PlainText`. You can specify this option only for fields whose type assignment is `PlainText` or `HTML`. See [FIELD (Definition) element reference](/previous-versions/azure/devops/reference/xml/field-definition-element-reference).|  
 |`/unused`|Lists all fields that are not used by any project defined in the project collection.|  
 |`/noprompt`|Disables prompt for confirmation.|  
 |`/?` or `help`|Displays help about the command in the Command Prompt window.|  
@@ -142,15 +142,15 @@ When you assign the `syncnamechanges` attribute to a String field, the field alw
 - The `VALIDUSER` rule is specified for a work item type    
 - The `ALLOWEDVALUES` rule is specified for a work item type, and that rule has a filter criteria that excludes groups  
   
-  For more information, see [All FIELD elements](../xml/field-definition-element-reference.md).  
+  For more information, see [All FIELD elements](/previous-versions/azure/devops/reference/xml/field-definition-element-reference).  
   
 ### Attributes that you can change for each work item type  
 
 You change the following attributes or values defined for a field by changing the work item type definition in which the field appears:  
   
--   **Name** that displays on the work item form. See [WebLayout and Control elements](../xml/weblayout-xml-elements.md) or [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).   
+-   **Name** that displays on the work item form. See [WebLayout and Control elements](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements) or [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).   
 -   **Help text**. See [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).    
--   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](../xml/define-pick-lists.md).  
+-   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](/previous-versions/azure/devops/reference//xml/define-pick-lists).  
   
 ## Examples  
 
@@ -166,7 +166,7 @@ Use `witadmin listfields` to see the set of fields in use, to select one to add 
   
 ### View the attributes of a work item field  
 
-- Enter the following command to list the attributes defined for a specified field, such as Microsoft.VSTS.Common.Issue.  
+- Enter the following command to list the attributes defined for a specified field, such as `Microsoft.VSTS.Common.Issue`.  
   
     ```  
     witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Issue  
@@ -329,7 +329,7 @@ witadmin reportfield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
   
 ### Delete a field  
 
-Before you delete a field, verify that the field is not in use. If the field is in use, you must first remove the field from the work item types that use it prior to deleting it from the project collection. The following command deletes the field AdventureWorks.Field from Collection1:  
+Before you delete a field, verify that the field is not in use. If the field is in use, you must first remove the field from the work item types that use it prior to deleting it from the project collection. The following command deletes the field `AdventureWorks.Field` from *Collection1*:  
   
 ```  
 witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:AdventureWorks.Field  
@@ -337,7 +337,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
   
 #### Verify a field is not in use  
   
-1.  Enter the following command, specifying the reference name for the work item field, such as MyCompany.MyProcess.MyField.  
+1.  Enter the following command, specifying the reference name for the work item field, such as `MyCompany.MyProcess.MyField`.  
   
     ```  
     witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.MyProcess.MyField  
@@ -354,7 +354,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
     Indexed: False  
     ```  
   
-2.  If the **Use** field indicates that the field is in use, then you must delete it from each work item type for each project that is listed. For example, the Microsoft.VSTS.TCM.SystemInfo field indicates that it is being used by the Bug and Code Defect work item types for four projects: Arroyo, Desert, Palm, and Springs.  
+2.  If the **Use** field indicates that the field is in use, then you must delete it from each work item type for each project that is listed. For example, the `Microsoft.VSTS.TCM.SystemInfo` field indicates that it is being used by the Bug and Code Defect work item types for four projects: Arroyo, Desert, Palm, and Springs.  
   
     ```  
     Field: Microsoft.VSTS.TCM.SystemInfo  
@@ -365,11 +365,11 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
     Indexed: False  
     ```  
   
-     Before you can delete this field, you must remove it from each of the work item types listed for each project for which it is defined. To remove the field, you modify the definition for the work item type by deleting the `FIELD` and `Control` elements that contain the field reference name. See [Import, export, and manage work item types](witadmin-import-export-manage-wits.md), [FIELD (Definition) element reference](../xml/field-definition-element-reference.md), and [Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).  
+     Before you can delete this field, you must remove it from each of the work item types listed for each project for which it is defined. To remove the field, you modify the definition for the work item type by deleting the `FIELD` and `Control` elements that contain the field reference name. See [Import, export, and manage work item types](witadmin-import-export-manage-wits.md), [FIELD (Definition) element reference](/previous-versions/azure/devops/reference/xml/field-definition-element-reference), and [Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).  
   
 #### Delete a field from a project collection  
   
-Enter the following command to delete the MyCompany.MyProcess.MyField field, and then choose Enter.  
+Enter the following command to delete the `MyCompany.MyProcess.MyField` field, and then choose Enter.  
   
 ```  
 witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:RefName  
@@ -382,9 +382,9 @@ Enter **y** at the confirmation prompt to complete this step.
 
 ## Q & A  
   
-### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
+### Q: What customizations can I make and still use the Configure Features Wizard to update my project after an upgrade?  
 
-**A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) will update your projects and you'll get access to the latest features.  
+**A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
   
 Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
 

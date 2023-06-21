@@ -1,7 +1,7 @@
 ---
 ms.subservice: azure-devops-security
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 10/19/2022
 ---

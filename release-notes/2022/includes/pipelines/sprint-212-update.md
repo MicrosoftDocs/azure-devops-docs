@@ -23,7 +23,7 @@ resources:
     - repository: library
       type: git
       name: FabrikamLibrary
-      ref: ${{ variables['Build.SourceBranchName'] }}
+      ref: ${{ variables['Build.SourceBranch'] }}
 
 steps:
 - checkout: library
@@ -67,7 +67,7 @@ resources:
     - repository: templates
       type: git
       name: Templates
-      ref: ${{ variables['Build.SourceBranchName'] }}
+      ref: ${{ variables['Build.SourceBranch'] }}
 
 extends:
   template: template.yml@templates
@@ -135,7 +135,7 @@ You can use `parameters.` and `variables.` in your template expressions. For var
 
 ### Audit Events for Changes to Approvals
 
-[Approvals](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#approvals) allow you to control when a stage should run. This is commonly used to control deployments to production environments. [Auditing](/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&tabs=preview-page) allows you to meet compliance requirements and monitor the security of your Azure DevOps organization.
+[Approvals](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#approvals&preserve-view=true) allow you to control when a stage should run. This is commonly used to control deployments to production environments. [Auditing](/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&tabs=preview-page&preserve-view=true) allows you to meet compliance requirements and monitor the security of your Azure DevOps organization.
 
 When a user is asked to approve a pipeline to deploy to a particular stage, that user can choose to reassign the approval to someone else. 
 

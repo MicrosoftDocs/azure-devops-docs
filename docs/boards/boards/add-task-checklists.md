@@ -5,8 +5,8 @@ description: Add tasks, subtasks, to do lists, bugs, or other child work items a
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 07/26/2022
@@ -17,7 +17,7 @@ ms.date: 07/26/2022
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
-Many teams find Kanban boards ideal for tracking work. Kanban boards are ideal because they support visualization the flow of work that is in progress. It also allows team members to quickly add new items and update work item status in a Kanban board. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md).  
+Many teams find Kanban boards ideal for tracking work. Kanban boards are ideal because they support visualization the flow of work that is in progress. It also allows team members to quickly add new items and update work item status in a Kanban board. If you're new to working with the Kanban board, see [Kanban overview](kanban-overview.md).  
 
 With checklists or to do lists, you continue to enjoy lightweight tracking. You gain visibility into which tasks, bugs, or other child items are in progress or completed. For example, here we show several tasks and bugs for work in progress, both yet to do and those items marked as completed. By adding the Issue work item type to the Iteration backlog, issues can be added as checklists. 
 ::: moniker range=">= azure-devops-2019"
@@ -148,7 +148,7 @@ Checklist items show the avatars of those team members assigned to the item. You
 
 ## Configure the Kanban board 
 
-To configure or change the layout of the Kanban board, see [Customize your boards](../get-started/customize-boards.md). 
+To configure or change the layout of the Kanban board, see [Customize your boards](../configure-customize.md). 
 
 
 ## Related articles  
@@ -157,8 +157,7 @@ To configure or change the layout of the Kanban board, see [Customize your board
 - [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Add, run, update manual tests](add-run-update-tests.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
-- [Kanban board controls](kanban-board-controls.md)
+- [Use Kanban board controls](kanban-overview.md#use-kanban-board-controls.md)
 
 ### REST API resources
 To programmatically create work items, see the [REST API, Work Items reference](/rest/api/azure/devops/wit/work-items/create).
-

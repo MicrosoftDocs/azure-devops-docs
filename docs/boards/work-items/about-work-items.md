@@ -1,18 +1,18 @@
 ---
-title: Understand how to use work items to track features, user stories, & more
+title: About work items and work item types
 titleSuffix: Azure Boards
 description: Learn how Azure Boards supports work items to plan, track, & collaborate with others when developing software apps in Azure DevOps. 
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 01/05/2023
+ms.date: 04/04/2023
 ---
 
-# About work items and work item types in Azure Boards
+# About work items and work item types
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -41,7 +41,7 @@ Each work item type belongs to a category. Categories are used to group work ite
 |Task   | Task | Sprint backlogs and Taskboards  |
 |Bug   | Bug | Dependent on [team configuration for tracking bugs](#track)  | 
 
-The Issue (Agile and CMMI) and Impediment (Scrum) work item types are used to track non-work project elements that can impact work getting done. By default, they don't appear on any backlog or board. 
+The Issue (Agile and CMMI) and Impediment (Scrum) work item types are used to track nonwork project elements that can impact work getting done. By default, they don't appear on any backlog or board. 
 
 For a list of other work item types, see [Work item types to track testing, reviews, and feedback ](#wit-other) later in this article. 
 
@@ -50,7 +50,7 @@ For a list of other work item types, see [Work item types to track testing, revi
 
 ### Track bugs as requirements or tasks 
 
-Teams have a choice for how they track bugs. They can track them along with requirements and have them show up on their product backlog and Kanban board. Or, they track them similar to tasks, in which case they typically link the bugs to a user story or product backlog item. A third option exists to not track them as requirements or tasks.  
+Your team can choose how to track bugs. They can track them along with requirements and have them show up on their product backlog and Kanban board. Or, they track them similar to tasks, in which case they typically link the bugs to a user story or product backlog item. A third option exists to not track them as requirements or tasks.  
  
 To configure the team bug tracking option, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). For an overview of all team settings, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
  
@@ -59,7 +59,7 @@ To configure the team bug tracking option, see [Show bugs on backlogs and boards
 
 ### Customize a work item type 
  
-You can add or modify the fields contained within a work item type, add a custom work item type, or change the work item types that appear on backlogs and boards. The method you use and what you can customize depends on the process model assigned to your project. To learn more, see the following articles: 
+You can add or modify the fields that are contained within a work item type, add a custom work item type, or change the work item types that appear on backlogs and boards. The method you use and what you can customize depends on the process model assigned to your project. To learn more, see the following articles: 
 
 ::: moniker range="azure-devops" 
 - [Customize your work tracking experience](../../organizations/settings/work/inheritance-process-model.md) 
@@ -76,7 +76,7 @@ You can add or modify the fields contained within a work item type, add a custom
 
 ## Work item form and Details tab
 
-The work item form shows the fields used to track information related to each work item. In general, you define and update a work item through it's work item form, although other methods are available to bulk import, export, update, and modify work items. For an overview of all form controls, see [Work item form controls](work-item-form-controls.md). 
+The work item form shows the fields used to track information related to each work item. In general, you define and update a work item through its work item form, although other methods are available to bulk import, export, update, and modify work items. For an overview of all form controls, see [Work item form controls](work-item-form-controls.md). 
 
 Each work item form contains several tabs. The **Details** tab contains the common fields, other fields defined for the work item type, and the **Discussion** control. Common fields defined for all work item types display at the top of the work item form. As shown in the following image, these fields include the following fields: **Title**, **Assigned To**, **State**, **Reason**, **Area**, and **Iteration**.  You can update these fields at any time. 
 
@@ -97,7 +97,7 @@ The following common fields appear in most work items in the header area of the 
 |Field |   Usage |
 |----------|------------------------|
 |[Title](../queries/titles-ids-descriptions.md)   |Enter a description of 255 characters or less. You can always modify the title later.|
-|[Assigned To](#assign)   |Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.|
+|[Assigned To](#assign)   |Assign the work item to the team member responsible for performing the work. Depending on the context you're working in, the drop-down menu lists only team members or contributors to the project.|
 |[State](#workflow-states)   |When the work item is created, the **State** defaults to the first state in the workflow. As work progresses, you update it to reflect the current state.|
 |[Reason](#workflow-states)   | Automatically updates when the State is changed. Each State is associated with a default reason.|
 |[Area](../queries/query-by-area-iteration-path.md)   |Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting. To change the dropdown list of areas, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md).|
@@ -107,7 +107,7 @@ The following common fields appear in most work items in the header area of the 
 
 ### Track active, open, resolved, or closed work items
 
-Workflow states define how a work item progresses from its creation to closure. Workflow states also determine whether a work item appears on a backlog or board as described in [How workflow category states are used in Azure Boards backlogs and boards](/workflow-and-state-categories.md). 
+Workflow states define how a work item progresses from its creation to closure. Workflow states also determine whether a work item appears on a backlog or board as described in [How workflow category states are used in Azure Boards backlogs and boards](workflow-and-state-categories.md). 
 
 The four main states that are defined for the User Story (Agile process) describe a user story's progression. The workflow states are *New*, *Active*, *Resolved*, *Closed*, and *Removed*. The following images illustrate the natural progressions and regressions for User Stories (Agile), Issues (Basic), Product Backlog Items (Scrum), or Requirements (CMMI). Similar progressions and regressions are defined for other work item types for each process.  
  
@@ -139,7 +139,7 @@ You can only assign a work item to one person at a time. The **Assigned To** fie
 > - To learn more about identity fields, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md).
  
 
-When Azure DevOps is configured with Azure Active Directory or Active Directory, then Azure DevOps synchronizes identity fields with these directories. Identity fields include **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. 
+When configured with Azure Active Directory or Active Directory, Azure DevOps synchronizes identity fields with these directories. Identity fields include **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. 
 
 You can grant access to a project by adding security groups that you created in Azure AD or Active Directory by adding accounts to existing or custom groups defined from the collection setting **Security** pages. For more information, see [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory) or [Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups). 
  
@@ -148,7 +148,7 @@ You can grant access to a project by adding security groups that you created in 
 
 ### Use work item templates to quickly fill in forms
 
-With work item templates, you can quickly create work items that have pre-populated values for your team's commonly used fields. For example, create a task template that sets the area path, iteration path, and discipline or activity whenever you use it to create a task. To learn more, see [Use templates to add and update work items](../backlogs/work-item-template.md). 
+With work item templates, you can quickly create work items that have prepopulated values for your team's commonly used fields. For example, create a task template that sets the area path, iteration path, and discipline or activity whenever you use it to create a task. To learn more, see [Use templates to add and update work items](../backlogs/work-item-template.md). 
 
 ## Follow, Refresh, Revert, and Actions menu
 
@@ -181,7 +181,7 @@ The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls a
 
 ## Discussion control  
 
-With the **Discussion** control, project members can  add and review comments made about the work being performed. The rich text editor tool bar displays below the text entry area when you click your cursor within each text box. Each comment added is recorded in the **History** field. To learn more, see [View and add work items](view-add-work-items.md#capture-comments-in-the-discussion-section). To query the Discussion or History, see [Query work item history and discussion fields](../queries/history-and-auditing.md).
+With the **Discussion** control, project members can  add and review comments made about the work being performed. The rich text editor tool bar displays below the text entry area when you select your cursor within each text box. Each comment added is recorded in the **History** field. To learn more, see [View and add work items](view-add-work-items.md#capture-comments-in-the-discussion-section). To query the Discussion or History, see [Query work item history and discussion fields](../queries/history-and-auditing.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Discussion section within a work item form.](../backlogs/media/discussion-section.png)   
@@ -289,8 +289,8 @@ Along with the work items types that appear on backlogs and boards, there are wo
 |-----------------------------|--------------------------------------|
 |Code Review Request|Tracks a code review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). To learn more, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). |
 |Code Review Response|A code review response is created for each person who's requested to provide review comments.|
-|Feedback Request|Feedback requests track requests for feedback generated through the feedback request form. See [Get feedback](../../project/feedback/get-feedback.md).|
-|Feedback Response|A feedback response is created for each person and for each item for which feedback is provided through the Microsoft Feedback Client. See [Get feedback](../../project/feedback/get-feedback.md).|
+|Feedback Request|Feedback requests track requests for feedback generated through the feedback request form. See [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback).|
+|Feedback Response|A feedback response is created for each person and for each item for which feedback is provided through the Microsoft Feedback Client. See [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback).|
 |Shared Step|Shared steps are used to [repeat tests with different data](../../test/repeat-test-with-different-data.md).|
 |Shared Parameter|Shared Parameters specify different data and parameters for running manual test cases. See [Repeat a test with different data](../../test/repeat-test-with-different-data.md).|
 |Test Case|Each test case [defines a manual test](../../test/create-test-cases.md).|
@@ -319,10 +319,10 @@ The following table summarizes the permissions that impact project member's abil
 Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. To learn more about work tracking permissions and feature access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
  
 
-## Try this next 
+## Next steps
 
 > [!div class="nextstepaction"]
-> [Add a work item](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+> [Add a work item](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json)
 
 
 ## Related articles 

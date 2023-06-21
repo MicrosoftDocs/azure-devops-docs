@@ -30,13 +30,13 @@ Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feed
   inputs:
     command: publish
     publishRegistry: useFeed
-    publishFeed: <PROJECT_NAME>/<FEED_NAME>
+    publishFeed: <FEED_NAME>        ## For project-scoped feeds, use: <PROJECT_NAME>/<FEED_NAME> 
 ```
 
-- **publishRegistry**: Select *useFeed* to use a feed in the same organization as your build. Options: useFeed | useExternalRegistry.
-- **publishFeed**: Target registry. Required when publishRegistry = useFeed.
+- **publishRegistry**: Options: *useExternalRegistry*, *useFeed*.  Select *useFeed* to use a feed within your organization.
+- **publishFeed**: Required when publishRegistry = useFeed. The feed you want to publish to.
 
-> [TIP]
+> [!TIP]
 > Using the YAML editor to add the npm publish task will generate the project and feed IDs for your `publishFeed`.
 
 ::: moniker-end

@@ -44,7 +44,7 @@ To create extensions for Azure DevOps, you need the following software and tools
   |--- vss-extension.json             // extension's manifest
   ```
 
-- The [vss-web-extension-sdk package installation](https://github.com/Microsoft/vss-web-extension-sdk).
+- The [azure-devops-extension-sdk package installation](https://github.com/Microsoft/azure-devops-extension-sdk).
 
 > [!IMPORTANT]
 > The dev machine needs to run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of azure-pipelines-task-lib.
@@ -99,10 +99,10 @@ Do every part of [1. Create a custom task](#1-create-a-custom-task) within the `
    npm install @types/mocha --save-dev
    ```
 
-7. Choose TypeScript version 2.3.4 or 4.0.2. 
+7. Choose TypeScript version 2.3.4 or 4.6.3. 
 
    ```
-   npm install typescript@4.0.2 -g --save-dev
+   npm install typescript@4.6.3 -g --save-dev
    ```
 
    > [!NOTE]
@@ -174,6 +174,12 @@ See the following descriptions of some of the components of the `task.json` file
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
 | `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
+
+> [!NOTE]
+> You can create an `id` with the following command in PowerShell:
+> ```powershell
+> (New-Guid).Guid
+> ```
 
 > [!NOTE]
 > For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, see the **[Build/release task reference](./integrate-build-task.md)**.
@@ -391,7 +397,7 @@ The extension manifest contains all of the information about your extension. It 
 | `id`              | Identifier of the contribution. Must be unique within the extension. Doesn't need to match the name of the build or release task. Typically the build or release task name is  in the ID of the contribution. |
 | `type`            | Type of the contribution. Should be **ms.vss-distributed-task.task**.                                                                                                                                         |
 | `targets`         | Contributions "targeted" by this contribution. Should be **ms.vss-distributed-task.tasks**.                                                                                                                   |
-| `properties.name` | Name of the task. This name must match the folder name of the corresponding self-contained build or release task pipeline.                                                                                    |
+| `properties.name` | Name of the task. This name must match the folder name of the corresponding self-contained build or release pipeline task.                                                                                    |
 
 ### Files
 
@@ -502,7 +508,7 @@ Use the following example to create a new pipeline with YAML. Learn more about h
 
 ```yaml
 trigger: 
-- master
+- main
 
 pool:
   vmImage: "ubuntu-latest"

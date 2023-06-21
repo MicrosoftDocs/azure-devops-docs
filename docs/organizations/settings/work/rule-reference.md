@@ -2,13 +2,13 @@
 title: Default rule reference
 titleSuffix: Azure DevOps 
 description: Default rules and the rule engine  
-ms.custom: inherited-process
+ms.custom: inherited-process, engagement-fy23
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: "<= azure-devops"
 ms.topic: conceptual
-ms.date: 04/04/2022
+ms.date: 01/17/2023
 
 
 #Customer intent: As a process designer, I need to understand how rules work and the limits to defining rules for a work item type or process, so I can add the right rules to support my business processes.
@@ -323,7 +323,7 @@ Most of these rule actions can be applied with the selection of any condition.
 
 # [On-premises XML process](#tab/on-premises)
 
-These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern. For the syntax structure and examples, see [Define a default value or copy a value to a field](../../../reference/xml/define-default-copy-value-field.md).
+These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern. For the syntax structure and examples, see [Define a default value or copy a value to a field](/previous-versions/azure/devops/reference/xml/define-default-copy-value-field).
 
 :::row:::
    :::column span="1":::
@@ -509,7 +509,7 @@ Most of these rule actions can be applied with the selection of any condition.
    :::column-end:::
    :::column span="3":::
       Clears the field of any value that it contains and then makes the field read-only when a user saves the work item. You shouldn't use `EMPTY` with `READONLY`.  
-      `EMPTY` is primarily used [during state transition](../../../reference/xml/transition-xml-element.md) to clear fields that apply to the state to which the item is transitioning.  
+      `EMPTY` is primarily used [during state transition](/previous-versions/azure/devops/reference/xml/transition-xml-element) to clear fields that apply to the state to which the item is transitioning.  
       > [!div class="tabbedCodeSnippets"]  
       > ```XML  
       > <FIELD refname="MyCorp.SubStatus" />  
@@ -524,7 +524,7 @@ Most of these rule actions can be applied with the selection of any condition.
       `MATCH`
    :::column-end:::
    :::column span="3":::
-      Forces entries made to a String field to conform to a [specified pattern of characters or numbers](../../../reference/xml/apply-pattern-matching-to-string-field.md). If you define multiple `MATCH` elements, the value is considered valid if it matches any of the patterns that you specify. If at least one element succeeds, the field has a valid value.  
+      Forces entries made to a String field to conform to a [specified pattern of characters or numbers](/previous-versions/azure/devops/reference/xml/apply-pattern-matching-to-string-field). If you define multiple `MATCH` elements, the value is considered valid if it matches any of the patterns that you specify. If at least one element succeeds, the field has a valid value.  
       > [!div class="tabbedCodeSnippets"]  
       > ```XML  
       > <FIELD refname="MyCorp.GitHubURL" name="GitHub URL" type="String">  
@@ -627,7 +627,7 @@ For an Inherited process, pick lists are defined through the Edit field dialog.
 
 # [On-premises XML process](#tab/on-premises)
 
-You define pick lists using XML elements listed in the following table. For syntax structure and examples, see [Define pick lists](../../../reference/xml/define-pick-lists.md).
+You define pick lists using XML elements listed in the following table. For syntax structure and examples, see [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists).
 
 You can combine lists, and expand or contract lists. Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 
@@ -776,7 +776,7 @@ You can specify multiple conditional rules per field. However, you can only spec
 
 The following XML elements are used to set conditions for when other rules are evaluated. You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table.  
 
-For syntax structure and examples, see [Assign conditional-based values and rules](../../../reference/xml/assign-conditional-based-values-and-rules.md). You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
+For syntax structure and examples, see [Assign conditional-based values and rules](/previous-versions/azure/devops/reference/xml/assign-conditional-based-values-and-rules). You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 
 :::row:::
    :::column span="1":::
@@ -1131,9 +1131,9 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 	- [Add a custom rule to a work item type](custom-rules.md)
 	- [Apply rules to workflow states](apply-rules-to-workflow-states.md)
 - **On-premises XML process**  
-	- [Define a default value or copy a value to a field](../../../reference/xml/define-default-copy-value-field.md)
-	- [Define pick lists](../../../reference/xml/define-pick-lists.md)
-	- [Assign conditional-based values and rules](../../../reference/xml/assign-conditional-based-values-and-rules.md)
+	- [Define a default value or copy a value to a field](/previous-versions/azure/devops/reference/xml/define-default-copy-value-field)
+	- [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists)
+	- [Assign conditional-based values and rules](/previous-versions/azure/devops/reference/xml/assign-conditional-based-values-and-rules)
 
  
 <!--- what On-premises rules aren't supported for Inherited? --> 

@@ -135,7 +135,7 @@ Don't forget to arrange the emulator parameters to fit your testing environment.
 #!/usr/bin/env bash
 
 # Install AVD files
-echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-27;google_apis;x86'
+echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --install 'system-images;android-27;google_apis;x86'
 
 # Create emulator
 echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-27;google_apis;x86' --force
@@ -207,7 +207,7 @@ task to release a new Android app version to the Google Play store.
 ::: moniker range="> tfs-2018"
 
 ```yaml
-- task: GooglePlayRelease@2
+- task: GooglePlayRelease@4
   inputs:
     apkFile: '**/*.apk'
     serviceEndpoint: 'yourGooglePlayServiceConnectionName'
@@ -224,7 +224,7 @@ task to promote a previously released Android application update from one track 
 ::: moniker range="> tfs-2018"
 
 ```yaml
-- task: GooglePlayPromote@2
+- task: GooglePlayPromote@3
   inputs:
     packageName: 'com.yourCompany.appPackageName'
     serviceEndpoint: 'yourGooglePlayServiceConnectionName'
@@ -242,13 +242,32 @@ task to increase the rollout percentage of an application that was previously re
 ::: moniker range="> tfs-2018"
 
 ```yaml
-- task: GooglePlayIncreaseRollout@1
+- task: GooglePlayIncreaseRollout@2
   inputs:
     packageName: 'com.yourCompany.appPackageName'
     serviceEndpoint: 'yourGooglePlayServiceConnectionName'
     userFraction: '0.5' # 0.0 to 1.0 (0% to 100%)
 ```
 
+::: moniker-end
+
+#### Status update
+
+Add the [Google Play Status Update](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---status-update)
+task to update the rollout status for the application that was previously released to the `rollout` track.
+
+::: moniker range="> tfs-2018"
+
+```yaml
+  - task: GooglePlayStatusUpdate@2
+    inputs:
+      authType: ServiceEndpoint
+      packageName: 'com.yourCompany.appPackageName'
+      serviceEndpoint: 'yourGooglePlayServiceConnectionName'
+      status: 'inProgress' # draft | inProgress | halted | completed
+```
+
+::: moniker-end
 
 ## Related extensions
 
@@ -267,6 +286,8 @@ A: You can build and sign your app bundle with an inline script and a secure fil
 Next, use the [Download Secure File](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) and [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) tasks to download your keystore and build and sign your app bundle.
 
 In this YAML file, download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, use [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) to copy the app bundle. From there, create and save an artifact with [Publish Build Artifact](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
+
+::: moniker range="> tfs-2018"
 
 ```yaml
 - task: DownloadSecureFile@1

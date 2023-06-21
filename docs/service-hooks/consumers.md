@@ -1,7 +1,7 @@
 ---
 title: Service hook consumers
 description: Service hooks consumer documentation for Azure DevOps.
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, devx-track-jenkins
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
 ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
@@ -185,7 +185,7 @@ Campfire is similar to instant messaging, but designed exclusively for groups.
 
 ### Post a message to a room
 
-Post a message about the event to a room in Campfire. For more information, see [Campfire](https://docs.helpscout.com/article/263-campfire).
+Post a message about the event to a room in Campfire.
 
 * Consumer ID: **campfire**
 * Action ID: **postMessageToRoom**

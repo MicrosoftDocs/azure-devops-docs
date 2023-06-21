@@ -2,11 +2,11 @@
 title: Query fields, operators, macros, and variables
 titleSuffix: Azure Boards
 description: Learn about field data types, operators, and macros/variables used by the Query Editor in Azure Boards and Azure DevOps.
-ms.custom: boards-queries
+ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 06/29/2022
@@ -17,7 +17,7 @@ ms.date: 06/29/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
+Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps version. 
 
 For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md). See also [Guidance to create high-performing queries](high-performing-queries.md) for tips on constructing high-performing queries.
 
@@ -28,7 +28,7 @@ For a quick reference of query tasks and operators and macros supported for each
 The value you specify for a field must conform to the data type for that field. The following table lists the supported data types:
 
 > [!NOTE]   
-> For Azure Boards cloud service, the data type corresponds to that listed for the field on the [Process>Fields page](../work-items/work-item-fields.md#review-fields). For on-premises deployments, the data type corresponds to the `type` attribute assigned to a [`FIELD` definition](../../reference/xml/field-definition-element-reference.md). For more information, see [Work item fields and field attributes](../work-items/work-item-fields.md). 
+> For Azure Boards cloud service, the data type corresponds to that listed for the field on the [Process>Fields page](../work-items/work-item-fields.md#review-fields). For on-premises deployments, the data type corresponds to the `type` attribute assigned to a [`FIELD` definition](/previous-versions/azure/devops/reference/xml/field-definition-element-reference). For more information, see [Work item fields and field attributes](../work-items/work-item-fields.md). 
 
 :::row:::
    :::column span="1":::
@@ -482,7 +482,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
    > [!NOTE]
    > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure Active Directory (Azure AD) when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.  
 
-   For information about category groups, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&amp;bc=/azure/devops/reference/breadcrumb/toc.json).
+   For information about category groups, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types).
 
    :::column-end:::
 :::row-end:::

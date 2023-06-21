@@ -27,7 +27,7 @@ ms.topic: include
 **Workflow states: Product backlog item, Scrum process**
 
 > [!div class="mx-imgBorder"]  
-> ![Product backlog item workflow states, Scrum process](../work-items/guidance/media/ALM_PT_Scrum_WF_PBI.png)
+> ![Screenshot of product backlog item workflow states, Scrum process.](../work-items/guidance/media/alm-pt-scrum-wf-pbi.png)
 
 #### [CMMI process](#tab/cmmi-process) 
 

@@ -6,8 +6,8 @@ description: Learn about Capability Maturity Model Integration (CMMI) process ob
 ms.service: azure-devops-boards
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -88,24 +88,24 @@ If you need to add reporting services or update reports to the latest versions, 
 As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the Azure DevOps on-premises process templates. For Azure Boards, the latest version is always used. Each template provides a `version` element. This element specifies a major and minor version. 
 
 > [!div class="mx-tdCol2BreakAll"]
-> |TFS version | CMMI name | Major version |
+> |Version | CMMI name | Major version |
 > |-------------|-------------------|--------------|
 > | Azure DevOps Services<br/>Azure DevOps Server 2022 | CMMI | 18 |
 > | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | CMMI | 17 |
 > | TFS 2018 | CMMI | 16 |
 
-For a summary of updates made to process templates, see [Changes made to process templates](changes-to-process-templates.md).
+For a summary of updates made to process templates, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
 
 ### More CMMI guidance
 
 The situations and working practices of development teams vary widely, and most companies will have their own well-established processes. For these reasons, the guidance given here doesn't attempt to prescribe a development process in full. Instead, we describe just the activities that are relevant to making best use of the CMMI process.
 
--  [Background to CMMI](cmmi/guidance-background-to-cmmi.md) : Provides an overview of CMMI and the six capability levels that are intrinsic to the model.
+-  [Background to CMMI](cmmi/guidance-background-to-cmmi.md): Provides an overview of CMMI and the six capability levels that are intrinsic to the model.
 
--  [Project management](cmmi/guidance-project-management.md) : Provides guidance to help you better understand how to manage, plan, and coordinate the development and maintenance of software products working with the CMMI model.
+-  [Project management](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management): Provides guidance to help you better understand how to manage, plan, and coordinate the development and maintenance of software products working with the CMMI model.
 
--  [Engineering](cmmi/guidance-engineering.md) : Addresses the value-added activities for discovering the information that is required to design and build software products
+-  [Engineering](cmmi/guidance-engineering.md): Addresses the value-added activities for discovering the information that is required to design and build software products
 
 Using the CMMI template and guidance can help you achieve the aims of CMMI if you use it as part of a process improvement program. Adapt this guidance to your own situation, which will depend on the type and history of the product that you're developing, the project's scale, the background of the team members, and accepted practices in your organization.
 

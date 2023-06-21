@@ -5,8 +5,8 @@ description: Add work items so you can plan and manage a software project using 
 ms.custom: devx-track-azurecli
 ms.service: azure-devops-boards
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: tutorial
 ms.date: 04/01/2022
@@ -47,7 +47,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 > Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](../work-items/guidance/scrum-process.md),
 or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), issues (Basic) product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of all default processes, see [Choose a process](../work-items/guidance/choose-process.md). The Basic process requires Azure DevOps Server 2019.1 or later version.
+> For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). The Basic process requires Azure DevOps Server 2019.1 or later version.
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -74,7 +74,7 @@ Create as many work items as you need of the type you need to track the work you
     >Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
     or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
     >
-    > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
+    > For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). 
 
     Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within **Work** drop down menu. 
 
@@ -84,7 +84,7 @@ Create as many work items as you need of the type you need to track the work you
 
     You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
-    Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
+    Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json).
 
 ::: moniker-end
 
@@ -302,9 +302,9 @@ To quickly add backlog items, such as user stories, requirements, or bugs, see t
 > [Kanban quickstart](../boards/kanban-quickstart.md) 
 
 
-For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ).  
+For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/azure/devops/boards/work-items/toc.json ).  
 
 
 Once you've added several work items, you can use additional features to get [notified of changes](../../organizations/notifications/manage-your-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
 
-For more clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
+For more clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json).

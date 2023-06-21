@@ -5,8 +5,8 @@ description: Learn how to create a flat-list, tree, or direct links queries to l
 ms.custom: boards-queries, contperf-fy23, linked-from-support, cross-project 
 ms.service: azure-devops-boards
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 12/16/2022
@@ -496,6 +496,6 @@ That's the basics about defining queries. For an index of query examples, see [Q
 
 - [Query FAQs](query-faqs.yml)
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
-- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
+- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json)
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)

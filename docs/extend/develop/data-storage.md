@@ -1,7 +1,7 @@
 ---
 ms.subservice: azure-devops-ecosystem
 title: Data and Setting Storage | Extensions for Azure DevOps
-description: DevOps extensions can store user preferences and complex data structures just like other project data. Use REST APIs or a Microsoft client service to do this. 
+description: DevOps extensions can store user preferences and complex data structures just like other project data. Use REST APIs or a Microsoft client service to do this.
 ms.assetid: 4662d1cf-ddb6-4079-8eb4-6f553861c1b4
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
@@ -14,9 +14,9 @@ ms.date: 08/04/2016
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure DevOps extensions have the ability to store user preferences and complex data structures directly on Microsoft-provided infrastructure. This ensures your user's data is secure and backed up just like other organization and project data. It also means for simple data storage needs, you (as the extension provider) are not required to setup or manage (or pay for) third-party data storage services.
+Azure DevOps extensions have the ability to store user preferences and complex data structures directly on Microsoft-provided infrastructure. This ensures your user's data is secure and backed up just like other organization and project data. It also means for simple data storage needs, you (as the extension provider) are not required to set up or manage (or pay for) third-party data storage services.
 
-There are two ways to interact with the data storage service: REST APIs or a Microsoft-provided client service available as part of the VSS SDK. It is highly recommended that extension developers use the provided client service APIs, which provide a convenient wrapper over the REST APIs. 
+There are two ways to interact with the data storage service: REST APIs or a Microsoft-provided client service available as part of the VSS SDK. It's highly recommended that extension developers use the provided client service APIs, which provide a convenient wrapper over the REST APIs.
 
 [!INCLUDE [rest-api-docs-rollout](../../includes/rest-api-docs-rollout.md)]
 
@@ -24,30 +24,30 @@ There are two ways to interact with the data storage service: REST APIs or a Mic
 
 The service is designed to let you store and manage two different types of data:
 
-1. **Settings**: simple key-value settings (like user preferences)
-2. **Documents**: collections of similar complex objects (documents)
+- **Settings**: simple key-value settings (like user preferences)
+- **Documents**: collections of similar complex objects (documents)
 
-A collection is as an indexed container for documents. A document is a JSON blob that belongs to a collection. Other than a few reserved property names, the schema of these documents is controlled and managed by you. 
+A collection is as an indexed container for documents. A document is a JSON blob that belongs to a collection. Other than a few reserved property names, the schema of these documents is controlled and managed by you.
 
 ### How you can scope data
 
 Settings and document collections can be scoped to either the:
 
-1. **Project Collection**: shared by all users of the project collection to which the extension is installed
-2. **User**: a single user of a project collection to which the extension is installed
+- **Project Collection**: shared by all users of the project collection to which the extension is installed
+- **User**: a single user of a project collection to which the extension is installed
 
 ## Setting storage
 
-The two primary functions for interacting with settings are getValue() and setValue(): 
+The two primary functions for interacting with settings are getValue() and setValue():
 
-* `getValue()` takes a string key (and other options such as scope) and returns an IPromise. The resolution of this promise contains a value for the provided key. 
+* `getValue()` takes a string key (and other options such as scope) and returns an IPromise. The resolution of this promise contains a value for the provided key.
 * `setValue()` take a string key and a value (and other options such as scope) and returns an IPromise. The resolution this promise contains the new value of the setting.
 
-Here is an example of how to set a value:
+Here's an example of how to set a value:
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Set value in user scope
         dataService.setValue("userScopedKey", 12345, {scopeType: "User"}).then(function(value) {
             console.log("User scoped key value is " + value);
@@ -55,11 +55,11 @@ Here is an example of how to set a value:
     });
 ```
 
-Here is an example of how to retrieve a setting value:
+Here's an example of how to retrieve a setting value:
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Get value in user scope
         dataService.getValue("userScopedKey", {scopeType: "User"}).then(function(value) {
             console.log("User scoped key value is " + value);
@@ -67,12 +67,12 @@ Here is an example of how to retrieve a setting value:
     });
 ```
 
-If `scopeType` is not specified, the settings are stored at the project collection level and they are accessible to all users in that project collection using the extension.
-Here is an example of how to set a setting value at the project collection level:
+If `scopeType` isn't specified, the settings are stored at the project collection level and they're accessible to all users in that project collection using the extension.
+Here's an example of how to set a setting value at the project collection level:
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Set value (default is project collection scope)
         dataService.setValue("someKey", "abcd-efgh").then(function(value) {
             console.log("Key value is " + value);
@@ -82,7 +82,7 @@ Here is an example of how to set a setting value at the project collection level
 
 ## Data (collections of documents) storage
 
-For interacting with richer data beyond key-value pairs, you can use the concepts of documents to perform CRUD operations on their extension's data. A document is a JSON blob, augmented with two special properties: ID and `__etag`. IDs can be user-defined if they are important a extension's data model, or, if left undefined, gets generated by the system. These IDs must be unique within a particular collection. Because a collection references a particular scope and instance of an extension, this means that the same document ID can be used across different collections. 
+For interacting with richer data beyond key-value pairs, you can use the concepts of documents to perform CRUD operations on their extension's data. A document is a JSON blob, augmented with two special properties: ID and `__etag`. IDs can be user-defined if they are important an extension's data model, or, if left undefined, gets generated by the system. These IDs must be unique within a particular collection. Because a collection references a particular scope and instance of an extension, this means that the same document ID can be used across different collections.
 
 The following document operations are available:
 
@@ -92,7 +92,7 @@ The following document operations are available:
 * Update a document
 * Delete a document
 
-There is also a single operation that can be performed on a collection:
+There's also a single operation that can be performed on a collection:
 
 * Get all documents
 
@@ -102,11 +102,11 @@ Retrieving a document by its identifier from a collection is easy:
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Get document by id
         dataService.getDocument("MyCollection", "MyDocumentId").then(function(doc) {
             // Assuming document has a property named foo
-            console.log("Doc foo: " + doc.foo); 
+            console.log("Doc foo: " + doc.foo);
         });
     });
 ```
@@ -119,13 +119,13 @@ To create a new document, perform a call such as the following:
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Prepare document first
         var newDoc = {
             fullScreen: false,
             screenWidth: 500
         };
-        
+
         dataService.createDocument("MyCollection", newDoc).then(function(doc) {
             // Even if no ID was passed to createDocument, one gets generated
             console.log("Doc id: " + doc.id);
@@ -134,26 +134,26 @@ To create a new document, perform a call such as the following:
 ```
 
 
-If the collection with the name and scope provided, doesn't yet exist, it gets created dynamically before the document itself is created. 
+If the collection with the name and scope provided, doesn't yet exist, it gets created dynamically before the document itself is created.
 
-If the document provided contains an `id` property, that value gets used as the unique ID for the document. If that field doesn't exist, a GUID gets generated by the service and included on the document that is returned when the promise is resolved. 
+If the document provided contains an `id` property, that value gets used as the unique ID for the document. If that field doesn't exist, a GUID gets generated by the service and included on the document that is returned when the promise is resolved.
 
 If another document in the collection already exists with the same ID as the one provided on the document, the operation fails. If the desired behavior is create a new document if the ID doesn't exist, but modify the existing document if it does, then the `setDocument()` method should be used.
 
 ### Set a document (update or create)
 
-`setDocument()` performs the equivalent of an "upsert" operation - modifying an existing document if there is an ID on the document provided that exists in the collection. If the ID doesn't exist, or no ID was provided, then a new document gets added to the collection. 
+`setDocument()` performs the equivalent of an "upsert" operation - modifying an existing document if there's an ID on the document provided that exists in the collection. If the ID doesn't exist, or no ID was provided, then a new document gets added to the collection.
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Prepare document first
         var myDoc = {
             id: 1,
             fullScreen: false,
             screenWidth: 500
         };
-        
+
         dataService.setDocument("MyCollection", myDoc).then(function(doc) {
             console.log("Doc id: " + doc.id);
         });
@@ -165,11 +165,11 @@ If another document in the collection already exists with the same ID as the one
 
 updateDocument requires that the document which is being modified already exists in the collection. If no ID is provided or the ID provided on the document doesn't exist in the collection, then an exception is thrown.
 
-Here is an example of how update is used:
+Here's an example of how update is used:
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         var collection = "MyCollection";
         var docId = "1234-4567-8910";
         // Get document first
@@ -188,10 +188,10 @@ Here is an example of how update is used:
 
 This function deletes the document with the provided ID from the provided collection. If the collection doesn't exist or the document doesn't exist, a 404 gets returned.
 
-Here is an example usage:
+Here's an example usage:
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         var docId = "1234-4567-8910";
         // Delete document
         dataService.deleteDocument("MyCollection", docId).then(function() {
@@ -206,7 +206,7 @@ In addition to the operations on documents themselves, the data storage service 
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Get all document under the collection
         dataService.getDocuments("MyCollection").then(function(docs) {
             console.log("There are " + docs.length + " in the collection.");
@@ -215,17 +215,17 @@ In addition to the operations on documents themselves, the data storage service 
 
 ```
 
-This call returns all documents within a scoped collection. If the collection doesn't exist, a 404 gets returned.
+This call returns all documents within a scoped collection, up to 100,000 documents. If the collection doesn't exist, a 404 gets returned.
 
 ### Advanced
 
 #### How settings are stored
 
-This call wraps the setDocument client method, passing it several pieces of information. As previously mentioned, settings are stored as documents internally, so a simple document is created on the fly, where the ID of the document, is the key that was provided in the setValue() method. There are two additional properties on the document. One is 'value', which contains value passed to the method. The other is 'revision', which is set to -1. The revision property gets discussed in more detail in the "Working with Documents" section, but in the context of settings, by passing revision: -1 in the document, we are indicating that we do not care about the versioning of this setting document. 
+This call wraps the setDocument client method, passing it several pieces of information. As previously mentioned, settings are stored as documents internally, so a simple document is created on the fly, where the ID of the document, is the key that was provided in the setValue() method. There are two additional properties on the document. One is 'value', which contains value passed to the method. The other is 'revision', which is set to -1. The revision property gets discussed in more detail in the "Working with Documents" section, but in the context of settings, by passing revision: -1 in the document, we're indicating that we do not care about the versioning of this setting document.
 
 Because settings are stored as documents, we need to provide a collection name, indicating where to store the document. To keep things simple, when working with the setValue()/getValue() methods, the collection name is always the special name '$settings'. The previous call issues a PUT Request at the following endpoint:
 
-```httprequest 
+```httprequest
 GET _apis/ExtensionManagement/InstalledExtensions/{publisherName}/{extensionName}/Data/Scopes/User/Me/Collections/%24settings/Documents
 ```
 
@@ -250,6 +250,4 @@ GET _apis/ExtensionManagement/InstalledExtensions/{publisherName}/{extensionName
 
 The `__etag` field is how the Data Storage Service handles document concurrency. Before an update to a document is stored by the service, a check is performed to verify that the `__etag` of the document currently stored is equal to the `__etag` of the document passed as part of the updated. If this check succeeds, the `__etag` is incremented, and the new document is returned to the caller. If this check fails, it means that the document that was attempted to be updated was out of date, and an exception gets thrown. It is up to the extension writer to gracefully handle this exception, by either getting the latest `__etag` of the document merging the changes, and re-attempting the update, or bubbling up a message to the user.
 
-There may be certain types of documents where this level of concurrency is not needed, and a last-in-wins model is what is actually desired. For these cases, when editing the document, pass -1 as the `__etag` value, to indicate this type of functionality. The settings service previously described uses this model for saving settings and preferences.
-
-
+There may be certain types of documents where this level of concurrency is not needed, and a last-in-wins model is what is desired. For these cases, when editing the document, pass -1 as the `__etag` value, to indicate this type of functionality. The settings service previously described uses this model for saving settings and preferences.

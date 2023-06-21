@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to use OData queries to create several sample Power BI reports.
 ms.subservice: azure-devops-analytics
 ms.custom: powerbisample
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/12/2022
@@ -93,7 +93,7 @@ Get started quickly with the following steps that embed the OData query in the P
     * `{startdate}` - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
 
     > [!div class="mx-imgBorder"] 
-    > [!Screenshot of Power BI,Advanced Editor, Replace strings in query.](media/odatapowerbi-advancededitor-replaced.png)
+    > ![Screenshot of Power BI, Advanced Editor, Replace strings in query.](media/odatapowerbi-advancededitor-replaced.png)
 
 6. To execute the query, select **Done**. 
 

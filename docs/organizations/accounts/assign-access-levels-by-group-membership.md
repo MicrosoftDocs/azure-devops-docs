@@ -1,13 +1,13 @@
 ---
 title: Add group rule to assign access levels
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
+ms.custom: seodec18, engagement-fy23
 description: Learn how to assign access levels with group rules in Azure Active Directory and Azure DevOps.
 ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 07/25/2022
+ms.date: 02/24/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -19,8 +19,7 @@ Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD
 
 When users leave the group, the licenses get freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 
-> [!NOTE]
-> We recommend that you re-evaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Azure AD can take up to 24 hours to update dynamic group membership. Automated reevaluation occurs every 24 hours and any time the group rule changes.
+[!INCLUDE [note-group-rules](../security/includes/note-group-rules.md)]
 
 ## Prerequisites
 
@@ -92,7 +91,7 @@ To manage a user's resources only by the groups that they're in, remove their di
 
    :::image type="content" source="media/assign-access-levels/select-users-in-organization-settings.png" alt-text="Select the Users tab":::
 
-4. Select all users with resources that should be managed only by groups.
+4. Select all users with resources for management only by groups.
 
    ![Select group rules for migration](media/remove-direct-assignments/choose-remove-direct-assignments-preview.png)
 

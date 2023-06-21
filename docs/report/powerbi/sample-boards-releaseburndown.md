@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to generate a release burndown Power BI report.
 ms.subservice: azure-devops-analytics
 ms.custom: powerbisample, engagement-fy23
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/08/2022
@@ -21,7 +21,9 @@ Burndown and burnup reports show how much work is getting completed over time. T
 
 Burndown charts only make sense if you plan your work for the time period of the chart. Otherwise, if you plan on a sprint-by-sprint basis, you won't see a standard burndown. In these instances, a burnup chart makes more sense to see how progress is made over time. 
 
-To learn more about burndown and burnup, see [Configure a Burndown or Burnup widget](../dashboards/configure-burndown-burnup-widgets.md) and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
+
+To learn more about burndown and burnup, see [Configure a burndown or burnup widget](../dashboards/configure-burndown-burnup-widgets.md) and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
@@ -85,7 +87,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -418,10 +420,7 @@ To learn how to expand work items, see [Transform Analytics data to generate Pow
 
 ## Create the clustered column chart  
 
-Power BI shows you the fields you can report on. The following example assumes that columns weren't renamed. 
-
-
-1. In Power BI, choose **Clustered column chart** under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose **Clustered column chart** under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/release-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Release burndown clustered column chart report. ":::
 
@@ -432,7 +431,7 @@ Power BI shows you the fields you can report on. The following example assumes t
 1. Add `TotalStoryPoints` to **Y-Axis**. 
   
 
-The example report displays burndown on both the Count of Stories and Story Points.
+The example report displays burndown on both the count of Stories and sum or **Story Points**.
 
 :::image type="content" source="media/reports-boards/release-burndown-clustered-column-chart-report.png" alt-text="Screenshot of Power BI Sample Release burndown clustered column chart report.":::
 

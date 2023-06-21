@@ -1,13 +1,13 @@
 ---
-title: Get started with notifications in Azure DevOps
-description: Understand how notifications or alerts are managed in Azure DevOps.
+title: About notifications
+description: Learn how to configure and manage notifications in Azure DevOps organizations to stay informed and improve collaboration within development teams.
 ms.subservice: azure-devops-notifications
 toc: show
-ms.custom: quarterly-update
+ms.custom: quarterly-update, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 04/04/2022
+ms.date: 02/13/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,22 +15,9 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Notifications help you and your team stay informed about activity that occurs within your projects in Azure DevOps. You can get notified when changes occur to the following items:
+Notifications in Azure DevOps keep you and your team informed about project activity, including changes to work items, code reviews, pull requests, source control files, and builds. When an event occurs in Azure DevOps, its content is compared with every subscription of that event type, and a notification is generated for every subscription/event match that meets the filter conditions. Notifications are delivered through email or service hook, based on the delivery properties defined in the subscription. 
 
-- Work items
-- Code reviews
-- Pull requests
-- Source control files
-- Builds
-
-For example, you can get notified whenever you or your team resolves a bug or are assigned a work item.
-
-Notifications get sent based on set up rules or subscriptions.
-Subscriptions arise from the following instances:
-
-- Out-of-the-box (OOB) or default
-- Created by an administrator for a team or group that you belong to
-- Created by you
+For more information, see the list of [supported event types](oob-supported-event-types.md) and [learn more about email delivery options](concepts-email-recipients.md).
 
 ## Notification types
 
@@ -83,7 +70,17 @@ For more information, see [Manage team, group, and global notifications](manage-
 
 Global notifications apply to all **projects** defined for an organization or collection.
 
-#### Default subscription
+## Subscriptions
+
+A notification **subscription** is associated with a [supported event type](oob-supported-event-types.md). The subscription includes a set of filters used to match events. For example, a subscription for a _work item created_ event might include a filter that matches only the work item type, _Bug_. Or a subscription for a _pull request created_ event might include a filter for a specific _repository and branch_.
+
+### Default email subscriptions
+
+Many useful email subscriptions are predefined and enabled by default in the system. They're known as **default subscriptions**. Default subscriptions provide out-of-box support for the most common notification scenarios. See the list of [available default subscriptions](oob-built-in-notifications.md).
+
+An organization or team administrator can choose which of the default subscriptions to make available to their users. Learn how to [manage team and organization notifications](manage-team-group-global-organization-notifications.md).
+
+Individual users can choose to opt out of any default subscription while other team members remain subscribed. Learn how to [manage personal notification subscriptions](manage-your-personal-notifications.md).
 
 The **Default subscriptions** tab lists all default global subscriptions available. The ![globe](media/oob-notification.png) on a notification subscription indicates the subscription is a default subscription. View all [default notification subscriptions](./oob-built-in-notifications.md).
 
@@ -91,17 +88,28 @@ Members of the **Project Collection Administrators** group have permission to en
 
    :::image type="content" source="media/view-organization-notification-default-subscriptions.png" alt-text="Screenshot of the organization-level notifications page: Default subscriptions tab.":::
 
+### Custom email subscriptions
+
+Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team and organization notifications](./manage-team-group-global-organization-notifications.md). To learn more about querying with group clauses, see [Create managed queries](../../boards/queries/using-queries.md#group-clauses).
+
+Individuals can also create custom subscriptions, which apply only to them. Learn how to [manage personal subscriptions](manage-your-personal-notifications.md).
+
+### Custom service hook subscriptions
+
+Use **service hooks subscriptions** to integrate with third-party services. When an Azure DevOps event matches a service hook subscription, the third-party service receives a notification. For example, when an Azure DevOps build completes, a notification goes to a Slack channel with links back to the build artifact in Azure DevOps. See [Integrating with third party services](integrate-third-party-services.md).
+
+
 #### Subscribers
 
 The **Subscribers** section begins with an empty identity search box. Enter any group, team, or individual to view the list of subscriptions associated with the specified identity.
 
-All notification subscriptions for the chosen identity are listed in this view. Management options are available from the context menu (`...`) associated with each subscription. The ![globe](media/oob-notification.png) on subscription row indicates a default subscription.
+You can find all notification subscriptions for the chosen identity in this view. Management options are available from the context menu (`...`) associated with each subscription. The ![globe](media/oob-notification.png) on subscription row indicates a default subscription.
 
    :::image type="content" source="media/view-organization-notification-subscribers.png" alt-text="Screenshot of organization-level notifications page: Subscribers list.":::
 
 #### Statistics
 
-The **Statistics** section shows the most active notification subscriptions and the top event initiators (group, team, or individual). The statistics are only for the current day and reset at 00:00 UTC. A benefit of these statistics is identifying unintended high volume subscriptions or event initiators.
+The **Statistics** section shows the most active notification subscriptions and the top event initiators (group, team, or individual). The statistics are only for the current day and reset at 00:00 UTC. A benefit of these statistics is identifying unintended high-volume subscriptions or event initiators.
 
    :::image type="content" source="media/view-organization-notification-stats.png" alt-text="Screenshot of organization-level notifications page, Statistics section.":::
 
@@ -135,7 +143,7 @@ The preferred email address for your organization profile gets notifications, by
 
 ## Integrating with other services
 
-If your team uses an external service to collaborate&mdash;such as Campfire or Slack&mdash;you can configure notifications to be sent to these services. These services are supported out of the box:
+If your team uses an external service to collaborate&mdash;such as Campfire or Slack&mdash;you can configure notifications for these services. We support the following out of the box services.
 
 - [Campfire](../../service-hooks/overview.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json) 
 - [HipChat](../../service-hooks/overview.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json) 

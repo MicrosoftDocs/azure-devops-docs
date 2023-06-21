@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 07/12/2022
+ms.date: 01/24/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -145,7 +145,7 @@ Building pull requests from Azure Repos forks is no different from building pull
 Azure Pipelines provides several security settings to configure the job authorization scope that your pipelines run with.
 
 - [Limit job authorization scope to current project](#limit-job-authorization-scope-to-current-project)
-- [Limit job authorization scope to referenced Azure DevOps repositories](#limit-job-authorization-scope-to-referenced-azure-devops-repositories)
+- [Protect access to repositories in YAML pipelines](#protect-access-to-repositories-in-yaml-pipelines)
 
 ### Limit job authorization scope to current project
 
@@ -295,7 +295,7 @@ fatal: repository 'XYZ' not found
 ##[error] Git fetch failed with exit code: 128
 ```
 
-Follow each of these steps to troubleshoot your failing triggers:
+Follow each of these steps to troubleshoot your failing checkout:
 
 * Does the repository still exist? First, make sure it does by opening it in the **Repos** page.
 

@@ -5,8 +5,8 @@ description: Customize your work item form to provide information or links to co
 ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: b6409e94-7e59-47a9-8a62-afdeeac8ad86
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '< azure-devops' 
 ms.date: 04/04/2022

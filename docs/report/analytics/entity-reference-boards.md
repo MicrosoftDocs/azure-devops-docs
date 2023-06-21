@@ -3,8 +3,8 @@ title: Work tracking metadata reference for Analytics
 titleSuffix: Azure DevOps
 description: Properties, enumerated types, and members metadata reference for the Analytics service for Azure Boards.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 11/07/2022
@@ -175,7 +175,7 @@ Many properties are date-based or user-based. These properties are associated wi
 |**Watermark**<br/>`Watermark` | String | A system-managed field that increments with changes made to a work item. Valid for these entity types: `WorkItemRevision` and `WorkItem`.<br/>`System.Watermark` | 
 |**Work Item Id**<br/>`WorkItemId` | Int32 | The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within an organization or project collection.<br/>`System.Id` | 
 |`WorkItemRevisionSK`  | Int32 | The Analytics unique key for the work item revision that is used by external tools to join related entities.  | 
-|**Work Item Type** <br/>`WorkItemType` | String | The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../../boards/work-items/guidance/choose-process.md).<br/>` System.WorkItemType` |
+|**Work Item Type** <br/>`WorkItemType` | String | The name of the work item type. Work item types are defined based on the process used when you created your project. For more information, see [About processes and process templates](../../boards/work-items/guidance/choose-process.md).<br/>` System.WorkItemType` |
 
 ### Navigation properties 
 
@@ -282,6 +282,7 @@ The following properties are valid for the **Areas** entity set, which is associ
 |**Area Name** | `AreaName` | String | Name defined for the Area Path when it's created.  | 
 |**Area Path** | `AreaPath` | String | Full path of the Area Path starting with the root node.   |  
 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 Navigation properties for the **Area** entity type and **Areas** entity set include `Project` and `Teams`.  
 
@@ -306,6 +307,7 @@ The following properties are valid for the **Iterations** entity set, which is a
 |**Iteration Path** | `IterationPath` | String |  Full path of the Iteration Path starting with the root node. The iteration must be a valid node in the project hierarchy.  <br/>`System.IterationPath`    | 
 |**Start Date** | `StartDate` | DateTime | Start date defined for the Iteration Path.   |  
 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 Navigation properties for the **Iteration** entity type and **Iterations** entity set include `Project` and `Teams`.  
 
@@ -425,7 +427,7 @@ For an index of all fields defined for a project, see [Field descriptions for wo
 
 ### Custom properties 
 
-Custom fields are automatically added to the Analytics service as a custom property. `Custom_` is prepended to the property name. For example, the custom field, **Risk Opportunity** is represented in the metadata as listed below. 
+Custom fields are automatically added to the Analytics service as a custom property. `Custom_` or `Custom.` is prepended to the property name. Check your collection's metadata as described in [Construct OData queries for Analytics, URL components to query the metadata](analytics-query-parts.md#url-components-to-query-the-metadata). The following example provides the metadata syntax for the custom field, **Risk Opportunity**. 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML

@@ -3,12 +3,13 @@ title: Customize a process that imports by using Hosted XML
 titleSuffix: Azure DevOps Services
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration
 ms.service: azure-devops-boards
+ms.custom: engagement-fy23
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/25/2020
+ms.date: 01/17/2023
 ---
 
 # Customize a Hosted XML process
@@ -129,9 +130,9 @@ You can apply the following customizations to your process:
 * [Add, remove, or modify a WIT](../../../../reference/add-modify-wit.md).
 * [Add or modify a field](../../../../reference/add-modify-wit.md).
 * [Add up to five portfolio backlogs](../../../../reference/add-portfolio-backlogs.md).
-* [Add categories](../../../../reference/xml/use-categories-to-group-work-item-types.md) that you'll use in your process configuration.
+* [Add categories](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types) that you'll use in your process configuration.
 * [Modify process configuration](../../../../reference/xml/process-configuration-xml-element.md).
-* [Add global lists](../../../../reference/xml/define-global-lists.md).
+* [Add global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).
 
 The following section lists limitations that the system imposes.
 
@@ -161,7 +162,7 @@ You can import up to 32 processes into Azure DevOps Services. Your custom proces
 
 ### Process template
 
-Your ProcessTemplate.xml file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../../../../reference/process-templates/process-template-xml-elements-reference.md). Also, it must meet the following conditions:
+Your ProcessTemplate.xml file must conform to the syntax and rules described in [ProcessTemplate XML element reference](/previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference). Also, it must meet the following conditions:
 
 * Limits the number of defined WITs to 64
 * Contains only one Categories.xml definition file
@@ -195,7 +196,7 @@ The ProcessConfiguration.xml definition file must conform to the syntax and rule
 
 ### Categories
 
-The Categories.xml definition file must conform to the syntax and rules described in [Categories XML element reference](../../../../reference/xml/categories-xml-element-reference.md). Also, it must meet the following conditions:
+The Categories.xml definition file must conform to the syntax and rules described in [Categories XML element reference](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference). Also, it must meet the following conditions:
 
 * Is limited to 32 categories
 * Defines all categories referenced in the ProcessConfiguration.xml file
@@ -204,19 +205,19 @@ The Categories.xml definition file must conform to the syntax and rules describe
 
 ### Work item types
 
-A **WITD** element and its child elements must conform to the syntax and rules described in [WITD XML element reference](../../../../reference/xml/all-witd-xml-elements-reference.md). Also, it must meet the following conditions:
+A **WITD** element and its child elements must conform to the syntax and rules described in [WITD XML element reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference). Also, it must meet the following conditions:
 
 * There are at most 512 fields within a single WIT and 512 fields across all WITs.
 * The friendly name and required **refname** attribute assigned to a WIT are unique within the set of WIT definition files.
 * The required **refname** attribute value doesn't contain disallowed characters or use the disallowed namespaces System.*Name* and Microsoft.*Name*.
 * Reference names contain at least one period (.), and all other characters are letters with no spaces.
-* The **WITD** element contains a **FORM** element that defines a **WebLayout** element conforming to the syntax specified in [WebLayout and Control elements](../../../../reference/xml/weblayout-xml-elements.md).
+* The **WITD** element contains a **FORM** element that defines a **WebLayout** element conforming to the syntax specified in [WebLayout and Control elements](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements).
 
 <a id="work-item-fields"></a>
 
 ### Work item fields
 
-A **FIELDS** element and its child elements must conform to the syntax and rules described in [FIELD XML element reference](../../../../reference/xml/field-definition-element-reference.md). Also, it must meet the following conditions:
+A **FIELDS** element and its child elements must conform to the syntax and rules described in [FIELD XML element reference](/previous-versions/azure/devops/reference/xml/field-definition-element-reference). Also, it must meet the following conditions:
 
 * The friendly name and required **refname** attribute assigned to a WIT are unique within the set of WIT definition files.
 * The required **refname** attribute value doesn't contain disallowed characters or use the disallowed namespaces System.*Name* and Microsoft.*Name*.
@@ -250,7 +251,7 @@ The following fields are specified in the ProcessConfiguration.xml file:
 
 #### Rule restrictions
 
-In addition to the standard [field-rule restrictions](../../../../organizations/settings/work/rule-reference.md), the following restrictions are enforced:
+In addition to the standard [field-rule restrictions](../rule-reference.md), the following restrictions are enforced:
 
 * Field-rule elements can't specify the **for** and **not** attributes.
 * **FIELD** elements can't contain the child-rule elements **CANNOTLOSEVALUE**, **NOTSAMEAS**, **MATCH**, and **PROHIBITEDVALUES**.
@@ -328,7 +329,7 @@ The following example isn't valid because it specifies:
 
 ### Workflow
 
-A **WORKFLOW** element and its child elements must conform to the syntax and rules described in [WORKFLOW XML element reference](../../../../reference/xml/all-workflow-xml-elements-reference.md). Also, it must meet the following conditions:
+A **WORKFLOW** element and its child elements must conform to the syntax and rules described in [WORKFLOW XML element reference](/previous-versions/azure/devops/reference/xml/all-workflow-xml-elements-reference). Also, it must meet the following conditions:
 
 * Limits each WIT to 16 workflow states
 * Defines all workflow states that are mapped to metastates in the ProcessConfiguration definition file
@@ -351,7 +352,7 @@ For the Hosted XML process model, the following limits are placed on global-list
 
 ### Form layout 
 
-A **FORM** element and its child elements must conform to the syntax and rules described in [FORM XML element reference](../../../../reference/xml/all-form-xml-elements-reference.md).
+A **FORM** element and its child elements must conform to the syntax and rules described in [FORM XML element reference](/previous-versions/azure/devops/reference/xml/all-form-xml-elements-reference).
 
 A **Control** element can't specify a custom control. Custom controls aren't supported.
 

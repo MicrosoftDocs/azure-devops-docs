@@ -57,7 +57,7 @@ First we create the file and add it to our repo:
 ```Git CLI
 > cd sample
 > git init
-> echo "some content" &gt; test.txt
+> echo "some content" > test.txt
 > git add test.txt
 > git commit -m "Initial commit"
 ```
@@ -68,7 +68,7 @@ Now we decide to append the text "donkeys" to the file in an animal branch:
 > [!div class="tabbedCodeSnippets"]
 ```Git CLI
 > git checkout -b animals
-> echo "donkeys" &gt;&gt; test.txt
+> echo "donkeys" >> test.txt
 > git commit -am "We have added an animal"
 ```
     
@@ -77,7 +77,7 @@ While we're experimenting, we decide maybe we want to go with fruit in our file 
 > [!div class="tabbedCodeSnippets"]
 ```Git CLI
 > git checkout main -b fruit
-> echo "bananas" &gt;&gt; test.txt
+> echo "bananas" >> test.txt
 > git commit -am "We have added a fruit"
 ```
     
@@ -121,8 +121,8 @@ So far so good, right? Nothing looks out of the ordinary in our log output. Now 
 
 > [!div class="tabbedCodeSnippets"]
 ```Git CLI
-> echo "some content" &gt; test.txt
-> echo "bananas" &gt;&gt; test.txt
+> echo "some content" > test.txt
+> echo "bananas" >> test.txt
 > git commit -am "Fixed merge conflict"
 ```
     

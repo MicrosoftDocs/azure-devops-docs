@@ -29,15 +29,17 @@ items:
 - name: Analytics views  
   items:  
   - name: What are Analytics views?  
-    href: what-are-analytics-views.md  
-  - name: Default Analytics views  
-    href: analytics-default-views.md  
+    href: what-are-analytics-views.md 
   - name: Create an Analytics view  
     href: analytics-views-create.md?  
   - name: Manage Analytics views  
     href: analytics-views-manage.md  
   - name: Analytics views dataset design  
     href: data-connector-dataset.md  
+  - name: Active bugs report
+    href: active-bugs-sample-report.md
+  - name: Get a count of work items
+    href: data-connector-examples.md
 - name: Power BI integration
   items:
   - name: About Power BI integration 
@@ -47,7 +49,7 @@ items:
   - name: Create a report using an OData query
     href: create-quick-report-odataq.md
     displayname: Expand
-  - name: Connect using Analytics Views
+  - name: Connect using Analytics views
     href: data-connector-connect.md
   - name: Connect using OData queries
     href: odataquery-connect.md
@@ -65,15 +67,9 @@ items:
     href: ../extend-analytics/aggregated-data-analytics.md
   - name: Query trend data
     href: ../extend-analytics/querying-for-trend-data.md
-- name: Sample reports, Analytics views
-  items:
-  - name: Active bugs report
-    href: active-bugs-sample-report.md
-  - name: Get a count of work items
-    href: data-connector-examples.md
   - name: Filter on teams
     href: create-team-filter.md
-  - name: Calculate time-in-state
+  - name: Add time-in-state measures
     href: create-timeinstate-report.md
 - name: Sample reports, Power BI and OData 
   items:

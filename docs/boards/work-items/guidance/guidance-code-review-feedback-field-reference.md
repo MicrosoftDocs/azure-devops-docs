@@ -5,8 +5,8 @@ description: Learn how to use the code review and feedback fields to track code 
 ms.service: azure-devops-boards
 ms.assetid: 4182c1c5-a768-4f4d-b6cb-862fc57e6ab4
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 11/07/2021
 ---
@@ -20,7 +20,7 @@ You can use the code review and feedback fields to create queries and reports th
 ::: moniker range="tfs-2018"
 
 > [!NOTE]  
->  If your Azure DevOps or TFS server has been upgraded from an earlier version you might need to update your project to get access to these work item types. See [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).   
+>  If your on-premises server has been upgraded from an earlier version, you might need to update your project to get access to these work item types. See [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).   
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ You can use the code review and feedback fields to create queries and reports th
 
 ## Fields used to track feedback 
  
- The following fields track feedback requests and responses. You complete the first three fields in the feedback request form. A feedback response is created for each person and for each item for which feedback is provided. See [Get feedback](../../../project/feedback/get-feedback.md).  
+ The following fields track feedback requests and responses. You complete the first three fields in the feedback request form. A feedback response is created for each person and for each item for which feedback is provided. See [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback).  
   
 |**Field name**|**Description**|**Data type**|  
 |--------------------|---------------------|-------------------|  
@@ -67,5 +67,5 @@ You can use the code review and feedback fields to create queries and reports th
 ## Related articles
 
 - [Index of work item fields](work-item-field.md)
-- [Get feedback](../../../project/feedback/get-feedback.md)
+- [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback)
 - [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)

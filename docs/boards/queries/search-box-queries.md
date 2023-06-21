@@ -5,8 +5,8 @@ description: Learn how to use the search box to quickly filter for assigned to, 
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -170,6 +170,7 @@ Free text search easily searches across all work item fields, including custom f
 
 4. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
+
 ::: moniker-end
 
 <a id="start-an-improvised-search-and-use-shortcut-filters" />

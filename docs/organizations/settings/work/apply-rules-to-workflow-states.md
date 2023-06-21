@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps Services
 description: Apply rules to workflow states to restrict transitions 
 ms.custom: inherited-process
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
 ms.date: 04/07/2021 
@@ -575,7 +575,7 @@ To automate State transitions of parent work items based on the State assignment
 
 ## Automate reassignment based on state change 
 
-The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been [removed from the default system process](../../../boards/work-items/guidance/changes-to-process-templates.md). You can reinstate the rule or add a similar rule to other work item types using the following condition and action: 
+The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been removed from the default system process. You can reinstate the rule or add a similar rule to other work item types using the following condition and action: 
 
 **When** `A work item state changes to` *Resolved* **Then** `Copy the value from `*Created By* **to** *Assigned To*.
 

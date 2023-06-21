@@ -2,7 +2,7 @@
 title: YAML pipeline editor guide
 description: Learn how to author and edit pipelines with the YAML pipeline editor.
 ms.topic: reference
-ms.date: 07/06/2022
+ms.date: 06/12/2023
 author: steved0x
 ms.author: sdanie
 monikerRange: '>=azure-devops-2019'
@@ -47,7 +47,7 @@ To access the YAML pipeline editor, do the following steps.
 To access the YAML pipeline editor, do the following steps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select your project, choose **Pipelines**, and then select the pipeline you want to edit. You can browse pipelines by **Recent**, **All**, and **Runs**. For more information, see [Pipelines landing page](multi-stage-pipelines-experience.md#pipelines-landing-page).
+2. Select your project, choose **Pipelines**, and then select the pipeline you want to edit. You can browse pipelines by **Recent**, **All**, and **Runs**. For more information, see [view and manage your pipelines](../create-first-pipeline.md#view-and-manage-your-pipelines).
 
     :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-landing-page.png" alt-text="Azure Pipelines landing page.":::
 
@@ -143,8 +143,6 @@ With Azure DevOps 2019 Update 1, you can manage your pipeline variables using th
 
 :::moniker-end
 
-### YAML pipeline
-
 To manage pipeline variables, do the following steps.
 
 1. Edit your YAML pipeline and choose **Variables** to manage pipeline variables.
@@ -159,9 +157,7 @@ To manage pipeline variables, do the following steps.
 
    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-manage-variables.png" alt-text="Manage pipeline variables in the YAML editor.":::
 
-### Pipeline settings UI
-
-To manage pipelines variables in the UI, do the following steps.
+To manage pipelines variables in the pipeline settings UI, do the following steps.
 
 1. Edit the pipeline and choose **More actions** > **Triggers**.
 
@@ -173,6 +169,34 @@ To manage pipelines variables in the UI, do the following steps.
 
 For more information on working with pipeline variables, see [Define variables](../process/variables.md).
 
+## Configure the default agent pool
+
+If a YAML pipeline doesn't specify an agent pool, the agent pool configured in the **Default agent pool for YAML** setting is used. This pool is also used for post-run cleanup tasks.
+
+To view and configure the **Default agent pool for YAML** setting:
+
+1. Edit the pipeline and choose **More actions** > **Triggers**.
+
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-menu.png" alt-text="Screenshot of the pipeline settings UI menu.":::
+
+2. Choose **YAML**, and select the desired agent pool using the **Default agent pool for YAML** dropdown list.
+
+   :::image type="content" source="media/yaml-pipeline-editor/default-agent-pool-for-yaml.png" alt-text="Screenshot of the default agent pool for YAML pipelines.":::
+
+**Default agent pool for YAML** is configured on a per-pipeline basis.
+
+## Manage settings using the pipeline settings UI
+
+Some YAML pipeline settings are configured using the pipeline settings UI instead of in the YAML file.
+
+1. Edit the pipeline and choose **More actions** > **Triggers**.
+
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-menu.png" alt-text="Screenshot of the pipeline settings UI menu.":::
+
+2. From the pipeline settings UI, choose the tab of the setting to configure.
+
+   :::image type="content" source="media/yaml-pipeline-editor/pipeline-settings-ui-triggers.png" alt-text="Screenshot of the pipeline settings UI for triggers.":::
+
 :::moniker range=">= azure-devops-2022"
 
 ## View and edit templates
@@ -181,7 +205,11 @@ For more information on working with pipeline variables, see [Define variables](
 Previously, the editor didn't support templates, so authors of YAML pipelines couldn't get intellisense assistance. Now Azure Pipelines supports a YAML editor, for which we're previewing support. To enable this preview, [go to preview features](../../project/navigation/preview-features.md) in your Azure DevOps organization, and enable **YAML templates editor**.
 
 > [!IMPORTANT]
-> This feature is in preview. There are known limitations. If the template has required parameters that aren't provided as inputs in the main YAML file, then the validation fails and prompts you to provide those inputs. In addition, you can't create a new template from the editor. You can only use or edit existing templates.
+> This feature has the following limitations.
+>
+> * If the template has required parameters that aren't provided as inputs in the main YAML file, then the validation fails and prompts you to provide those inputs.
+>
+> * You can't create a new template from the editor. You can only use or edit existing templates.
 
 As you edit your main Azure Pipelines YAML file, you can either _include_ or _extend_ a template. As you enter the name of your template, you may be prompted to validate your template. Once validated, the YAML editor understands the schema of the template, including the input parameters.
 

@@ -4,7 +4,7 @@ titleSuffix: Azure Pipelines
 description: How to migrate from Travis to Azure Pipelines
 ms.topic: how-to
 ms.assetid: F4592A2E-714A-4208-AD46-00D1A6D709C4
-ms.date: 01/14/2022
+ms.date: 03/02/2023
 monikerRange: azure-devops
 ---
 
@@ -12,78 +12,64 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure Pipelines is more than just a Continuous Integration tool, it's a
-flexible build and release orchestration platform.  It's designed for
-the software development and deployment process, but because of this
-extensibility, there are a number of differences from simpler build
-systems like Travis.
+This purpose of this guide is to help you migrate from Travis to Azure Pipelines. This guide describes shows how to translate from a Travis configuration to an Azure Pipelines configuration.
 
-This purpose of this guide is to help you migrate from Travis to Azure Pipelines. This guide describes the philosophical differences between Travis and
-Azure Pipelines, examines the practical effects on the configuration of
-each system, and shows how to translate from a Travis configuration to an
-Azure Pipelines configuration.
-
-> We need your help to make this guide better! Submit comments below or contribute your changes directly.
+> We need your help to make this guide better! Submit comments or contribute your changes directly.
 
 ## Key differences
 
-There are numerous differences between Travis and Azure
-Pipelines, including version control configuration, environment variables,
-and virtual machine environments, but at a higher level:
+There are many differences between Travis and Azure Pipelines, including:
 
-* Azure Pipelines configuration is more precise and relies less on shorthand configuration and implied steps. You'll see this in places like language selection and in the way Azure Pipelines allows flow to be controlled.
-
-* Travis builds have _stages_, _jobs_ and _phases_, while Azure Pipelines simply has steps that can be arranged and executed in an arbitrary order or grouping that you choose.  This gives you flexibility over the way that your steps are executed, including the way they're executed in parallel.
+* Travis builds have _stages_, _jobs_ and _phases_, while Azure Pipelines has steps that can be arranged and executed in an arbitrary order or grouping that you choose. 
 
 * Azure Pipelines allows job definitions and steps to be stored in separate YAML files in the same or a different repository, enabling steps to be shared across multiple pipelines.
 
-* Azure Pipelines provides full support for building and testing on Microsoft-managed Linux, Windows, and macOS images. See [Microsoft-hosted agents](../agents/hosted.md) for more details.
+* Azure Pipelines provides full support for building and testing on Microsoft-managed Linux, Windows, and macOS images. For more information about hosted agents, see [Microsoft-hosted agents](../agents/hosted.md).
 
-## Before starting your migration
+## Prerequisites
 
-If you are new to Azure Pipelines, see the following to learn more about Azure Pipelines and how it works prior to starting your migration:
-
-* [Create your first pipeline](../create-first-pipeline.md)
-* [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)
-* [Building GitHub repositories](../repos/github.md)
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
+  If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use.
+* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can [request a free tier](../troubleshooting/troubleshooting.md#check-for-available-parallel-jobs).
+* Basic knowledge of Azure Pipelines. If you're new to Azure Pipelines, see the following to learn more about Azure Pipelines and how it works prior to starting your migration:
+    * [Create your first pipeline](../create-first-pipeline.md)
+    * [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)
 
 ## Language
 
 Travis uses the `language` keyword to identify the prerequisite build
-environment to provision for your build. For example, to select Node.JS
-8.x:
+environment to set up for your build. For example, to select Node.JS
+16.x:
 
 **.travis.yml**
 ``` yaml
 language: node_js
 node_js:
-  - "8"
+  - 16
 ```
 
-[Microsoft-hosted agents](../agents/hosted.md) contain the SDKs for many languages out-of-the-box
-and most languages need no configuration.  But where a language has multiple
-versions installed, you may need to execute a [language selection task](/azure/devops/pipelines/tasks/reference/node-tool-v0)
+[Microsoft-hosted agents](../agents/hosted.md) contain the SDKs for many languages by default.  To use a specific language version, you may need to use a [language selection task](/azure/devops/pipelines/tasks/reference/node-tool-v0)
 to set up the environment.
 
-For example, to select Node.JS 8.x:
+For example, to select Node.JS 16.x:
 
 **azure-pipelines.yml**
 ``` yaml
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '8.x'
+    versionSpec: '16.x'
 ```
 
 ### Language mappings
 
-The `language` keyword in Travis does not just imply that a particular version
-of language tools be used, but also that a number of build steps be implicitly
-performed.  Azure Pipelines, on the other hand, does not do any work without
-your input, so you'll need to specify the commands that you want to execute.
+The `language` keyword in Travis implies both that version
+of language tools be used and that many build steps be implicitly
+performed.  In Azure Pipelines, you need to specify the commands that you want to run.
 
-Here is a translation guide from the `language` keyword to the commands
-that are executed automatically for the most commonly-used languages:
+Here's a translation guide from the `language` keyword to the commands
+that are executed automatically for the most commonly used languages:
 
 | Language      | Commands                       |
 |---------------|--------------------------------|
@@ -99,7 +85,7 @@ that are executed automatically for the most commonly-used languages:
 | `python`                 | `pip install -r requirements.txt`
 | `ruby`                   | `bundle install --jobs=3 --retry=3`<br>`rake` |
 
-In addition, less common languages can be enabled but require an additional
+In addition, less common languages can be enabled but require another
 dependency installation step or execution inside a docker container:
 
 | Language      | Commands                       |
@@ -118,11 +104,11 @@ dependency installation step or execution inside a docker container:
 | `scala`       | <code>echo "deb `https://repo.scala-sbt.org/scalasbt/debian` /" &#124; /etc/apt/sources.list.d/sbt.list</code><br>`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823`<br>`sudo apt-get update`<br>`sudo apt-get install sbt`<br>`sbt ++2.11.6 test` |
 | `smalltalk`   | `docker run -v $(pwd):/src -w /src hpiswa/smalltalkci smalltalkci` |
 
-### Multiple language selection
+### Multiple language selections
 
 You can also configure an environment that supports building
 different applications in multiple languages.  For example, to ensure the
-build environment targets both Node.JS 8.x and Ruby 2.5 or better:
+build environment targets both Node.JS 16.x and Ruby 3.2 or better:
 
 **azure-pipelines.yml**
 ``` yaml
@@ -132,13 +118,13 @@ steps:
     versionSpec: '8.x'
 - task: UseRubyVersion@0
   inputs:
-    versionSpec: '>= 2.5'
+    versionSpec: '>= 3.2'
 ```
 
 ## Phases
 
 In Travis, steps are defined in a fixed set of named phases such as
-`before_install` or `before_script`. Azure Pipelines does not have named phases and steps can be grouped, named, and organized in whatever way makes sense for the pipeline.
+`before_install` or `before_script`. Azure Pipelines doesn't have named phases and steps can be grouped, named, and organized in whatever way makes sense for the pipeline.
 
 For example:
 
@@ -182,11 +168,10 @@ steps:
 
 Travis provides parallelism by letting you define a stage, which
 is a group of jobs that are executed in parallel.  A Travis build can
-have multiple stages; once all jobs in a stage have completed, the execution
-of the next stage can begin.
+have multiple stages; once all jobs in a stage have completed, the next stage starts.
 
-Azure Pipelines gives you finer grained control of parallelism. You can make
-each step dependent on any other step you want. In this way, you specify which
+With Azure Pipelines, you can make
+each step or stage dependent on any other step. In this way, you specify which
 steps run serially, and which can run in parallel.
 So you can fan out with multiple steps run in parallel after
 the completion of one step, and then fan back in with a single step that runs afterward.
@@ -241,12 +226,10 @@ jobs:
 
 ### Advanced parallel execution
 
-In Azure Pipelines you have more options and control over how you orchestrate your pipeline. Unlike Travis, we don't require you to think of
-blocks that must be executed together.    Instead, you can focus on the resources that a job needs to start 
-and the resources that it produces when it's done.
+In Azure Pipelines you have more options and control over how you orchestrate your pipeline. 
 
 For example, a team has a set of fast-running unit tests, and another set of and slower integration tests. The team wants to begin creating the .ZIP file for a release as soon as the unit are completed because they provide high confidence 
-that the build will provide a good package. But before they deploy to pre-production, they want to wait until all tests have passed:
+that the build provides a good package. But before they deploy to pre-production, they want to wait until all tests have passed:
 
 ![Advanced Parallel Execution Illustration](media/parallel-azurepipelines.png)
 
@@ -281,19 +264,15 @@ jobs:
 
 ## Step reuse
 
-Most teams like to reuse as much business logic as possible to save time and 
-avoid replication errors, confusion, and staleness. 
-Instead of duplicating your change, you can make the change in a common area, and your leverage increases when you have similar processes that build on multiple platforms.
-
 In Travis you can use matrices to run multiple executions across a single
-configuration. In Azure Pipelines you can use matrices in the same way, but you can also implement configuration reuse by using YAML templates.
+configuration. In Azure Pipelines you can use matrices in the same way, but you can also implement configuration reuse with [templates](../process/templates.md).
 
 ### Example: Environment variable in a matrix
 
 One of the most common ways to run several builds with a slight variation
 is to change the execution using environment variables.  For example, your
 build script can look for the presence of an environment variable and change
-the way your software is built, or the way its tested.
+the way your software is built, or the way it's tested.
 
 You can use a matrix to have run a build configuration several
 times, once for each value in the environment variable.  For example,
@@ -334,7 +313,7 @@ different language environments.  Travis supports an implicit definition
 using the `language` keyword, while Azure Pipelines expects an explicit
 task to define how to configure that language version.
 
-You can easily use the environment variable matrix options in Azure Pipelines
+You can use the environment variable matrix options in Azure Pipelines
 to enable a matrix for different language versions.  For example, you can
 set an environment variable in each matrix variable that corresponds to the
 language version that you want to use, then in the first step, use that
@@ -353,7 +332,7 @@ script: ruby --version
 
 **azure-pipelines.yml**
 ``` yaml
-vmImage: 'Ubuntu 16.04'
+vmImage: 'ubuntu-latest'
 strategy:
   matrix:
     ruby 2.3:
@@ -410,27 +389,26 @@ steps:
 
 ## Success and failure handling
 
-Travis allows you to specify steps that will be run when the build succeeds,
+Travis allows you to specify steps that run when the build succeeds,
 using the `after_success` phase, or when the build fails, using the
-`after_failure` phase.  Since Azure Pipelines doesn't limit you to a finite
-number of specially-named phases, you can define success and failure 
+`after_failure` phase.  With Azure Pipelines you can define success and failure 
 conditions based on the result of any step, which enables more flexible
 and powerful pipelines.
 
 **.travis.yml**
 ``` yaml
 build: ./build.sh
-after_success: echo Success 😀
-after_failure: echo Failed 🙁
+after_success: echo Success 
+after_failure: echo Failed 
 ```
 
 **azure-pipelines.yml**
 ``` yaml
 steps:
 - script: ./build.sh
-- script: echo Success 😀
+- script: echo Success
   condition: succeeded()
-- script: echo Failed 🙁
+- script: echo Failed
   condition: failed()
 ```
 
@@ -444,7 +422,7 @@ You can even configure jobs to always run,
 regardless of the success of other jobs.
 
 For example, if you want to run a script when the build fails, but only 
-if it is running as a build on the main branch:
+if it's running as a build on the main branch:
 
 **azure-pipelines.yml**
 ``` yaml
@@ -461,12 +439,12 @@ jobs:
 
 ## Predefined variables
 
-Both Travis and Azure Pipelines set a number of environment variables
+Both Travis and Azure Pipelines set multiple environment variables
 to allow you to inspect and interact with the execution environment of the
 CI system.
 
-In most cases there's an Azure Pipelines variable to match 
-the environment variable in Travis. Here's a list of commonly-used
+In most cases, there's an Azure Pipelines variable to match 
+the environment variable in Travis. Here's a list of commonly used
 environment variables in Travis and their analog in Azure Pipelines:
 
 | Travis                       | Azure Pipelines               | Description                  |
@@ -476,18 +454,18 @@ environment variables in Travis and their analog in Azure Pipelines:
 | `TRAVIS_BUILD_DIR`           | `BUILD_SOURCESDIRECTORY`      | The location of your checked out source and the default working directory. |
 | `TRAVIS_BUILD_NUMBER`        | `BUILD_BUILDID`               | A unique numeric identifier for the current build invocation. |
 | `TRAVIS_COMMIT`              | **CI builds**:<br>`BUILD_SOURCEVERSION` | The commit ID currently being built. |
-| `TRAVIS_COMMIT`              | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into main; this command will identify the pull request commit itself. |
+| `TRAVIS_COMMIT`              | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into main; this command identifies the pull request commit itself. |
 | `TRAVIS_COMMIT_MESSAGE`      | `BUILD_SOURCEVERSIONMESSAGE`  | The log message of the commit being built. |
 | `TRAVIS_EVENT_TYPE`          | `BUILD_REASON` | The reason the build was queued; a map of values is in the "build reasons" table below. |
 | `TRAVIS_JOB_NAME`            | `AGENT_JOBNAME`                | The name of the current job, if specified. |
 | `TRAVIS_OS_NAME`             | `AGENT_OS`                     | The operating system that the job is running on; a map of values is in the "operating systems" table below. |
 | `TRAVIS_PULL_REQUEST`        | **Azure Repos**:<br>`SYSTEM_PULLREQUEST_PULLREQUESTID`<br><br>**GitHub**:<br>`SYSTEM_PULLREQUEST_PULLREQUESTNUMBER` | The pull request number that triggered this build. (For GitHub builds, this is a unique identifier that is _not_ the pull request number.) |
 | `TRAVIS_PULL_REQUEST_BRANCH` | `SYSTEM_PULLREQUEST_SOURCEBRANCH` | The name of the branch where the pull request originated. |
-| `TRAVIS_PULL_REQUEST_SHA`    | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into main; this command will identify the pull request commit itself. |
+| `TRAVIS_PULL_REQUEST_SHA`    | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into main; this command identifies the pull request commit itself. |
 | `TRAVIS_PULL_REQUEST_SLUG`   |                                | The name of the forked repository, if the pull request originated in a fork.  There's no analog to this in Azure Pipelines. |
 | `TRAVIS_REPO_SLUG`           | `BUILD_REPOSITORY_NAME`         | The name of the repository that this build is configured for. |
 | `TRAVIS_TEST_RESULT`         | `AGENT_JOBSTATUS`              | Travis sets this value to `0` if all previous steps have succeeded (returned `0`).  For Azure Pipelines, check that `AGENT_JOBSTATUS=Succeeded`. |
-| `TRAVIS_TAG`                 | `BUILD_SOURCEBRANCH`           | If this build was queued by the creation of a tag then this is the name of that tag.  For Azure Pipelines, the `BUILD_SOURCEBRANCH` will be set to the full Git reference name, eg `refs/tags/tag_name`. |
+| `TRAVIS_TAG`                 | `BUILD_SOURCEBRANCH`           | If this build was queued by the creation of a tag then this is the name of that tag.  For Azure Pipelines, the `BUILD_SOURCEBRANCH` is set to the full Git reference name, for example, `refs/tags/tag_name`. |
 | `TRAVIS_BUILD_STAGE_NAME`    |                                | The name of the stage in Travis. As we saw earlier, Azure Pipelines handles flow control using jobs. You can reference `AGENT_JOBNAME`. |
 
 **Build Reasons**:
@@ -549,7 +527,7 @@ trigger:
 ## Output caching
 
 Travis supports caching dependencies and intermediate build output to improve
-build times.  Azure Pipelines does not support caching intermediate build
+build times.  Azure Pipelines doesn't support caching intermediate build
 output, but does offer integration with
 [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/)
 for dependency storage.

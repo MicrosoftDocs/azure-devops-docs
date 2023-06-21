@@ -2,6 +2,7 @@
 title: Share Packages publicly with public feeds
 description: Use Azure Artifacts public feeds to share NuGet, npm, Maven, and Python packages publicly
 ms.service: azure-devops-artifacts
+ms.custom: devx-track-python
 ms.date: 11/22/2022
 monikerRange: 'azure-devops'
 ---
@@ -35,30 +36,51 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 1. Select **Create** when you are done.
 
-> [!NOTE]
-> Organization-scoped feeds cannot be converted into project-scoped feeds.
-
 ## Publish packages
 
-If you want to publish NuGet packages, make sure you have the latest [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+> [!NOTE]
+> If you want to publish NuGet packages, make sure you have the latest [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
 ### Publish packages (CLI)
 
+#### [NuGet](#tab/nuget)
+
 - [NuGet - NuGet.ext](../nuget/publish.md#publish-packages)
 - [NuGet - dotnet](../nuget/dotnet-exe.md#publish-packages)
-- [Npm](../npm/publish.md)
-- [Maven](../get-started-maven.md#publish-artifacts)
-- [Python](../quickstarts/python-cli.md#publish-python-packages)
+
+#### [Npm](#tab/npm)
+
+- [Publish Npm packages](../npm/publish.md)
+
+#### [Maven](#tab/maven)
+
+- [Publish Maven Artifacts](../get-started-maven.md#publish-artifacts)
+
+#### [Python](#tab/python)
+
+- [Publish Python packages](../quickstarts/python-cli.md#publish-python-packages)
+
+- - -
 
 ### Publish packages with Azure Pipelines
 
-- [NuGet](../../pipelines/artifacts/nuget.md#publish-a-package)
-- [Npm](../../pipelines/artifacts/npm.md#publish-to-azure-artifacts-feeds)
-- [Maven](../../pipelines/artifacts/publish-maven-artifacts.md)
-- [Python](../../pipelines/artifacts/pypi.md#publish-python-packages-to-azure-artifacts-feeds)
+#### [NuGet](#tab/nuget)
 
-> [!IMPORTANT]
-> Universal Packages are not supported in public feeds.
+- [Publish NuGet packages](../../pipelines/artifacts/nuget.md#publish-a-package)
+
+#### [Npm](#tab/npm)
+
+- [Publish Npm packages](../../pipelines/artifacts/npm.md#publish-to-azure-artifacts-feeds)
+
+#### [Maven](#tab/maven)
+
+- [Publish Maven Artifacts](../../pipelines/artifacts/publish-maven-artifacts.md)
+
+#### [Python](#tab/python)
+
+- [Publish Python packages](../../pipelines/artifacts/pypi.md#publish-python-packages-to-azure-artifacts-feeds)
+
+- - -
 
 ## Share packages
 
@@ -68,11 +90,9 @@ As long as your project is kept public, anyone can view and download packages fr
 
 :::image type="content" source="../media/public-feeds-access.png" alt-text="A screenshot showing packages in a public feed.":::
 
-> [!IMPORTANT]
-> Upstream sources are not supported in public feeds.
-
 ## Related articles
 
+- [Get started with NuGet packages in Azure Artifacts](../get-started-nuget.md)
 - [Package sizes and count limits](../reference/limits.md)
 - [Package notifications](../how-to/follow-package-notifications.md)
 - [Package badges](../package-badges.md)

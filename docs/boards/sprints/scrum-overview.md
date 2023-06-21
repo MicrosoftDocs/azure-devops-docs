@@ -2,14 +2,13 @@
 title: Implement Scrum work practices in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to implement Scrum practices, track work, and monitor progress and trends in Azure Boards. 
-ms.custom: boards-sprints
-ms.service: azure-devops-boards
-ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.custom: boards-sprints, engagement-fy23
+ms.service: azure-devops-boards 
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 01/23/2023
 ---
 
 # Implement Scrum practices for your team in Azure Boards 
@@ -51,6 +50,11 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 5. (Optional) [Share your sprint plan](share-plan.md)  
 6. [Update the Taskboard](task-board.md) 
 7. [Monitor your sprint burndown](../../report/dashboards/configure-sprint-burndown.md) 
+
+## Close out a sprint
+
+1. [End of sprint activities](end-sprint-activities.md)
+2. [Sprint retrospective meetings](best-practices-scrum.md#sprint-retrospective-meetings)
 
 
 ## Sprint backlogs and taskboards overview
@@ -110,50 +114,28 @@ Once you've [defined iteration (sprint) paths and configured team iterations](..
 
 At the start of each sprint, you'll want to plan the work that your team can commit to. The three Agile tools that support this work include the sprint backlog, capacity planning, and capacity bars. The sprint backlog contains a filtered subset of backlog items whose iteration path corresponds to the current sprint. 
 
-:::row::: 
-   :::column span="1":::
-   **Team capacity planning tool**
-   
-   By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity and days off. And, conveniently, you can set holidays or shared days off taken by the entire team. 
+### Team capacity planning tool 
 
-   Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. 
+By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity and days off. And, conveniently, you can set holidays or shared days off taken by the entire team. 
 
-   You [set recurring days off](../../organizations/settings/set-working-days.md), such as weekends, through team settings.
+Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. 
 
-   :::column-end:::
-   :::column span="1":::
-   
-   ![Screenshot of Team capacity planning tool.](media/team-capacity-planning-tool.png) 
-   :::column-end:::
-:::row-end:::
-:::row::: 
-   :::column span="1":::
-   
-   
-   **Individual and team capacity bars**
-   
-   With capacity bars, you can quickly see who is over, at, or under capacity. Capacity bars update with each of these activities: 
+You [set recurring days off](../../organizations/settings/set-working-days.md), such as weekends, through team settings.
 
-   
-   - Tasks are assigned with non-zero remaining work
+![Screenshot of Team capacity planning tool.](media/team-capacity-planning-tool.png) 
 
-   
-   - Change in remaining work
+### Individual and team capacity bars
 
-   
-   - Date change within the sprint cycle. Individual and team capacity always reflects their capacity from the current day until the end of the sprint.  
+With capacity bars, you can quickly see who is over, at, or under capacity. Capacity bars update with each of these activities: 
+- Tasks are assigned with non-zero remaining work
+- Change in remaining work
+- Date change within the sprint cycle. Individual and team capacity always reflects their capacity from the current day until the end of the sprint.  
 
-   
-   
-   Here&#39;s how to interpret the capacity colors:
+![Screenshot of Capacity bars.](media/ALM_DS_CapacityBars_S.png)
 
-   ![Screenshot of capacity bard that help distinguish capacity.](media/capacity-planning-tool-color-chart.png)
-   :::column-end:::
-   :::column span="1":::
-   
-   ![Screenshot of Capacity bars.](media/ALM_DS_CapacityBars_S.png)
-   :::column-end:::
-:::row-end:::
+Here's how to interpret the capacity colors:
+
+![Screenshot of capacity board that help distinguish capacity.](media/capacity-planning-tool-color-chart.png)
 
 
 ## Update tasks and monitor burndown 
@@ -161,34 +143,25 @@ At the start of each sprint, you'll want to plan the work that your team can com
 During a sprint, use the taskboard and sprint burndown chart to track their progress. Your sprint burndown chart provides you with an at-a-glance visual to determine if your team is on track to meet their sprint plan.  
  
 :::row::: 
-   :::column span="1":::
-   
-   
-   **Taskboard**
-   
+   :::column span="1":::  
+   **Taskboard**  
    Your [Taskboard](task-board.md) provides an interactive progress board for work required to complete the sprint backlog. During your sprint, you&#39;ll want to update the status of tasks and the remaining work for each task. 
 
    Updating tasks daily or several times a week yields a smoother burndown chart. 
-
    :::column-end:::
    :::column span="2":::
-   
    ![Screenshot of Taskboard.](media/ALM_DS_Task_board_S.png)
    :::column-end:::
 :::row-end:::
 :::row::: 
    :::column span="1":::
-   
-   
    **Sprint burndown chart**
    
    You use the [sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md) to mitigate risk and check for scope creep throughout your sprint cycle. The burndown chart reflects the progress made by your team in completing all the work they estimated during their sprint planning meeting. 
 
    The ideal trend line always indicates a steady burndown. The blue area, however, represents what&#39;s actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks.
-
    :::column-end:::
    :::column span="2":::
-   
    ![Screenshot of Sprint burndown chart.](media/ALM_DS_SprntBD_Chrt_S.png)
    :::column-end:::
 :::row-end:::
@@ -238,7 +211,7 @@ There isn't a sprint scope change chart or widget. However, you can query for wo
 
 ## List work items added after the start of the sprint
 
-1. [Screenshot to Open the velocity chart.](../../report/dashboards/team-velocity.md) for the team and choose the **Planned** bar for the sprint of interest. You can use the Planned bar for a velocity chart widget or the team backlog velocity chart. 
+1. [Open the velocity chart](../../report/dashboards/team-velocity.md) for the team and choose the **Planned** bar for the sprint of interest. You can use the Planned bar for a velocity chart widget or the team backlog velocity chart. 
 
 	:::image type="content" source="media/overview/velocity-chart.png" alt-text="Screenshot of team velocity chart, choose a planned work bar.":::
 
@@ -292,6 +265,7 @@ For other options to determine changes to the sprint scope, see [Query by date o
 If you work with several teams, and each team wants their own backlog view, you can [create more teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path. 
 
 - [Scrum concepts](scrum-key-concepts.md) 
+- [End of sprint activities](end-sprint-activities.md) 
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  

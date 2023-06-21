@@ -6,10 +6,10 @@ ms.service: azure-devops-boards
 ms.custom: seodec18
 ms.assetid:  
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 02/03/2023
 ---
 
 # Terms and concepts used when tracking work items in Azure Boards
@@ -41,7 +41,7 @@ A family of engineering best processes with a goal of enabling rapid delivery of
 
 ## Categories
 
-Groups one or more work item types to support flexible reporting, queries, and other functions made available through Agile tools. Categories support the process configuration used by the web portal backlog and taskboard pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and Kanban boards. To learn more, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
+Groups one or more work item types to support flexible reporting, queries, and other functions made available through Agile tools. Categories support the process configuration used by the web portal backlog and taskboard pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and Kanban boards. To learn more, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types). 
 
 [!INCLUDE [temp](../../includes/glossary-terms/collections.md)] 
 
@@ -59,11 +59,11 @@ Fields support tracking a piece of information about the work to perform. Values
 
 ## Global lists 
 
-Defines a list of menu items or picklist items that are shared across WITs and projects within a project collection. Global lists help to minimize the work that is required to update lists. You can define global lists within WITs that you upload with your process template. Learn more: [Manage global lists for work item types](../../reference/witadmin/manage-global-lists-for-work-item-types.md). (Only supported for Hosted XML and On-premises XML process models) 
+Defines a list of menu items or picklist items that are shared across WITs and projects within a project collection. Global lists help to minimize the work that is required to update lists. You can define global lists within WITs that you upload with your process template. Learn more: [Manage global lists for work item types](/previous-versions/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types). (Only supported for Hosted XML and On-premises XML process models) 
 
 ## Global workflow 
 
-Specifies both work item fields and global lists that multiple projects and types of work items can share. Learn more: [Manage global workflow](../../reference/witadmin/witadmin-import-export-global-workflow.md) (Only supported for On-premises XML process model).   
+Specifies both work item fields and global lists that multiple projects and types of work items can share. Learn more: [Manage global workflow](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow) (Only supported for On-premises XML process model).   
 
 <a id="hidden-types"> </a> 
 
@@ -71,7 +71,7 @@ Specifies both work item fields and global lists that multiple projects and type
 
 Specifies the set of work item types that you don't want users to create manually. By default this set includes:   
 -   [Code Review Request and Code Review Response](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
--   [Feedback Request and Feedback Response](../../project/feedback/get-feedback.md)    
+-   [Feedback Request and Feedback Response](/previous-versions/azure/devops/project/feedback/get-feedback)    
 -   [Shared Steps and Shared Parameter](../../test/create-test-cases.md)    
 -   [Test Plan and Test Suite](../../test/create-a-test-plan.md)  
   

@@ -5,8 +5,8 @@ description: Learn how to configure your project's backlogs and boards. Also, le
 ms.custom: boards-backlogs    
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -284,7 +284,7 @@ For example, if you want to track a custom work item type, Tickets, along with T
 For on-premises deployments that use the On-premises XML process model to customize work tracking, you can add existing and custom work item types to the sprint Taskboards. For example, if you want to track Issues (or Impediments for the Scrum process) and a custom work item type, Tickets, along with Tasks and Bugs, you would do the following tasks: 
 
 1. Define the Ticket custom work item type. See [Add or modify a work item type](../../reference/add-modify-wit.md). 
-2. Add Issue and Ticket work item types to the Task Category by modifying the Categories XML file. For details, see [Categories XML element reference](../../reference/xml/categories-xml-element-reference.md).  
+2. Add Issue and Ticket work item types to the Task Category by modifying the Categories XML file. For details, see [Categories XML element reference](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference).  
 
 	For example, here we add Issue and Ticket to the Task Category.  
 
@@ -361,5 +361,5 @@ The following settings can influence the type and number of work items that will
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Create your backlog](create-your-backlog.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
-- [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md)
+- [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)
 - [Workflow states & state categories](../work-items/workflow-and-state-categories.md)  

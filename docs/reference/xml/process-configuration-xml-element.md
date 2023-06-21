@@ -5,8 +5,8 @@ description: XML syntax and usage for all ProcessConfiguration elements to suppo
 ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
 monikerRange: '< azure-devops'
 ms.date: 12/15/2017  
@@ -249,7 +249,7 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
    - Agile: Use for all work item types.   
      - **Proposed**: Indicates work items that are new, not yet committed, or not yet being worked on. 
      - **InProgress**: Indicates work items that have been committed or are actively being worked on.
-     - **Complete**: Indicates work items that have been implemented. For the [Kanban board](../../boards/boards/kanban-basics.md) to be valid, exactly one workflow state must be mapped to the **Complete** state category. If additional workflow states need to be represented, they can be mapped to the **Resolved** state category.  
+     - **Complete**: Indicates work items that have been implemented. For the [Kanban board](../../boards/boards/kanban-overview.md) to be valid, exactly one workflow state must be mapped to the **Complete** state category. If additional workflow states need to be represented, they can be mapped to the **Resolved** state category.  
      Once a workflow state transitions to a state that is associated with the **Complete** metastate, the associated work item will fall off the product backlog. However, it will continue to be listed in the last column on the Kanban board.<br/><br/>
    Work items in a workflow state that aren&#39;t mapped to one of the state categories don&#39;t appear on the backlog or board.
    - Bug: Use only for work item types grouped within the Bug Category. In addition to the Agile state categories, includes the **Resolved** state category which indicates bugs that have been resolved.<br/><br/>
@@ -908,7 +908,7 @@ The color you associate with your work item states will appear across the produc
 
 - Work item form (web portal, see [New work item experience](../process/new-work-item-experience.md))  
 - Work item form links control (web portal, see [LinksControlOptions XML elements reference](linkscontroloptions-xml-elements.md))     
-- Cards displayed on the [Kanban board](../../boards/boards/kanban-basics.md) and [task boards](../../boards/sprints//task-board.md) (For settings, see [Customize cards](../../boards/boards/customize-cards.md))       
+- Cards displayed on the [Kanban board](../../boards/boards/kanban-overview.md) and [task boards](../../boards/sprints//task-board.md) (For settings, see [Customize cards](../../boards/boards/customize-cards.md))       
 - All backlogs (add State via column options)  
 - Query results (add State via column options)
 

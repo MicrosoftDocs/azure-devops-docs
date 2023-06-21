@@ -5,34 +5,31 @@ description: Learn about sample Power BI queries that generate aggregated view f
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.author: shdalv
-ms.custom: powerbisample
-author: KathrynEE
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 10/13/2021
+ms.date: 01/19/2023
 ---
 
 # Manual test suites aggregated view sample report
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-Some scenarios have a hierarchical organization of test suites as per organization departments or modules as shown below. 
+You can report on the execution state of one or more Test Suites. The report you create using the information in this article is similar to the following image.  
+
+:::image type="content" source="media/odatapowerbi-aggregatedatlevel.png" alt-text="Screenshot of Power BI Test Suites Aggregated View - Report.":::
+
+As shown in the following image, test suites can be arranged within a hierarchical organization. As shown, there are three test suites with the same names under two test suites labeled *Australia* and *Asia*. This article outlines how to aggregate data for a specific test suite level. 
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Power BI Test Plan structure for aggregated view.](media/odatapowerbi-aggregatedatlevel-plan.png)
 
-As shown in the above image, there are level 3 test suites with same names under different level 2 test suites. In that case, an aggregation at a particular test suite level may be required. This article explains how to do it for all level 3 test suites in a test plan.
-
 [!INCLUDE [temp](includes/preview-note.md)]
 
-For a sample test suite hierarchy in a test plan like below, you can configure this report.
- 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Test Suites Aggregated View - Report.](media/odatapowerbi-aggregatedatlevel.png)
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
-
-[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 For the report to generate useful data, the team must carry out the following activities to manage test plans:
 
@@ -41,10 +38,12 @@ For the report to generate useful data, the team must carry out the following ac
 
 	> [!NOTE]  
 	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.   
-
-
-
+ 
 ## Sample queries
+
+You can use the following queries of the `TestPoints` entity set to create aggregated test suite reports.
+
+[!INCLUDE [temp](includes/query-filters-test.md)] 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -103,7 +102,7 @@ $apply=filter((TestSuite/TestPlanTitle eq '{testPlanTitle}' and TestSuite/IdLeve
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
  
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
@@ -168,9 +167,11 @@ The following table describes each part of the query.
 :::row-end:::
 
 
-[!INCLUDE [temp](includes/query-filters-test.md)]
+[!INCLUDE [temp](includes/rename-query.md)]
 
-## Power BI transforms
+## Expand columns in Power Query Editor
+
+Prior to creating the report, you need to expand the `TestSuite` column to flatten the records into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns).
 
 In Power BI, do the following steps.  
 
@@ -197,42 +198,29 @@ When finished, you may choose to rename columns.
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI transform data, Rename Columns.](media/transform-data/powerbi-rename-columns.png)
 
-1. Change the type of count columns to **Whole Number** and percentage fields to **Decimal Number**.
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Power BI transform data, change column type.](media/powerbi-change-column-type.png)
+## Change column data type 
 
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
+From the Power Query Editor, select all columns containing numbers, such as *TotalCount*, *RunCount*, and *Passed*;  select **Data Type** from the **Transform** menu, and choose **Whole Number**. To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI transform data, Rename Query.](media/transform-data/powerbi-rename-query.png)
+## (Optional) Rename column fields
 
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
+You can rename column fields. For example, you can rename the column `NotApplicable` to `Not Applicable`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/transform-data/powerbi-close-apply.png)
+[!INCLUDE [temp](includes/close-apply.md)]
 
 
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-To create the report, do the following steps:
-
-1. Create a Power BI visualization **Table**.
-1. Add the columns **TestSuite.TitleLevel3, NotRunCount, RunCount, PassedCount, TotalCount**.
+## Create the Table report
+ 
+1. Under **Visualizations**, choose **Table**.
+1. Drag and drop `TestSuite.TitleLevel3`, `NotRunCount`, `RunCount`, `PassedCount`, `TotalCount` under **Columns**.
 1. Select **Sum** as aggregation for **Count**.
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI select Sum as aggregation.](media/powerbi-sum-aggregation.png)
 
 Your report should look similar to the following image.
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Test Suites Aggregated View report.](media/odatapowerbi-aggregatedatlevel.png)
-
+:::image type="content" source="media/odatapowerbi-aggregatedatlevel.png" alt-text="Screenshot of Power BI Sample Test Suites Aggregated View - Report.":::
 
 ## Related articles
 

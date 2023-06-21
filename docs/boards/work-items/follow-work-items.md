@@ -5,8 +5,8 @@ description: Learn how to track updates made to a work item or pull request by f
 ms.custom: work-items, seodec18, cross-project 
 ms.subservice: azure-devops-settings
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 07/13/2022

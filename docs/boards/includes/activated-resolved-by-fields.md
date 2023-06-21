@@ -1,9 +1,9 @@
 ---
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
-ms.date: 04/08/2021
+ms.date: 04/04/2023
 ---
 
 <a id="activated-resolved-fields" />
@@ -12,7 +12,7 @@ ms.date: 04/08/2021
 
 ### Activated By/Date and Resolved By/Date fields 
 
-The system updates these fields&mdash;**Activated By**, **Activated Date**, **Resolved By**, and **Resolved Date**&mdash;when a change occurs based on corresponding workflow category states. When the workflow state changes to a *Proposed* state category, **Activated By** and **Activated Date** are updated. When the workflow state changes to a *Resolved* state category, **Resolved By** and **Resolved Date** are updated. 
+The system updates these fields&mdash;**Activated By**, **Activated Date**, **Resolved By**, and **Resolved Date**&mdash;when a change occurs based on corresponding workflow category states. When the workflow state changes to an *In Progress* state category, **Activated By** and **Activated Date** are updated. When the workflow state changes to a *Resolved* state category, **Resolved By** and **Resolved Date** are updated. 
 
 To learn more how workflow states map to state categories, see [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md). 
 

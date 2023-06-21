@@ -2,11 +2,11 @@
 title: Use an index to query examples, tasks, operators, and macros
 titleSuffix: Azure Boards
 description: Learn how to use an index to query operators, macros, and sample queries that are used to list work items for Azure Boards and Azure DevOps.
-ms.custom: boards-queries
+ms.custom: boards-queriess, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: overview 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/05/2022
 ---
@@ -484,6 +484,6 @@ The following table lists common query fields and their data type for which samp
 
 - [Query by field value comparisons](query-field-value.md) 
 - [Guidance to create high-performing queries](high-performing-queries.md)
-- [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+- [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)  
 - [Define a managed query](using-queries.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 

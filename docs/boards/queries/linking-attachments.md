@@ -2,10 +2,11 @@
 title: Query work items by link or attachment count in Azure Boards  
 titleSuffix: Azure Boards
 description: Learn how to query work items based on link type, link count, link restrictions, and attachment file count in Azure Boards.
+ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 07/26/2022
@@ -362,13 +363,13 @@ You can view related work items and object within a work item form by installing
 
 ### Add custom link types or customize the links controls 
 
-To add link types, see [Manage link types [witadmin]](../../reference/witadmin/manage-link-types.md). 
+To add link types, see [Manage link types [witadmin]](/previous-versions/azure/devops/reference/witadmin/manage-link-types). 
 
-All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).  
+All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true).  
 
 ### Default data fields in lists of links
 
-You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).
+You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true).
 
 ::: moniker-end 
 

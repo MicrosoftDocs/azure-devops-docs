@@ -3,13 +3,13 @@ title: witAdmin Customize and manage objects for tracking work
 titleSuffix: Azure DevOps  
 description: Tracks your team's progress by creating and customizing objects that track work items.
 ms.service: azure-devops-boards
-ms.custom: witadmin
+ms.custom: witadmin, engagement-fy23
 ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/01/2022
+ms.date: 01/13/2023
 ---
 
 
@@ -26,7 +26,7 @@ In addition, for on-premises Azure DevOps Servers, you can manage the resolution
 
 As the following illustration shows, you manage categories and types of and work items for each project. You manage global lists, types of links, and fields in work item for each project collection. You can customize global workflow for a project or a collection.  
   
-![Work Item Tracking Objects](media/pnt_wit_objects.png "PNT_WIT_Objects")  
+![Conceptual image of Work Item Tracking Objects.](media/pnt_wit_objects.png)  
   
 [!INCLUDE [temp](../../includes/process-editor.md)]
 
@@ -211,7 +211,7 @@ For the Inherited process model, you can view and delete fields from the web por
  
 
 
-## [Categories](witadmin-import-export-categories.md)
+## [Categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories)
 
 Categories associate one or more work item types as belonging to the same category. Azure Boards relies on default category definitions, many of which specify a single work item type per category. To learn about categories and how they're used, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
  
@@ -254,7 +254,7 @@ Categories associate one or more work item types as belonging to the same catego
 ---
 
 
-## [Link types](manage-link-types.md)
+## [Link types](/previous-versions/azure/devops/reference/witadmin/manage-link-types)
 
 You use different link types to manage the various relationships between work items. For On-premises XML and Hosted XML process models, you can define custom link types. To learn more about default link types, see [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md) and [Reference guide for link types](../../boards/queries/link-type-reference.md).  
 
@@ -331,7 +331,7 @@ You use different link types to manage the various relationships between work it
 ---
  
 
-## [Global lists](manage-global-lists-for-work-item-types.md)
+## [Global lists](/previous-versions/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types)
 
 Global lists are pick lists that you can include within one or more fields and work item type definitions. You can share list items among several work item types for a collection of projects by including the list items in one or more **GLOBALLIST** elements. To learn more, see [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
 
@@ -397,7 +397,7 @@ Global lists are pick lists that you can include within one or more fields and w
 
 ::: moniker range="< azure-devops"
 
-## [Global workflow](witadmin-import-export-global-workflow.md)
+## [Global workflow](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow)
 
 With global workflow, you can define and update fields and global lists that apply to all work item types in a project or collection. To learn more, see [Global workflow XML element reference](../xml/global-workflow-xml-element-reference.md).  
 
@@ -485,7 +485,7 @@ For the Inherited process model, you can customize backlogs from the web portal.
 
 ::: moniker range="< azure-devops-2019"
 
-## [Work items](remove-work-items-permanently.md) 
+## [Work items](/previous-versions/azure/devops/reference/witadmin/remove-work-items-permanently) 
 
 The following **witadmin** command is only available for TFS 2018.1 and earlier versions. It has been deprecated for TFS 2018.2 and later versions. To learn more about how to permanently delete work items for later versions, see [Remove, delete, or restore work items](../../boards/backlogs/remove-delete-work-items.md).
 
@@ -494,7 +494,7 @@ The following **witadmin** command is only available for TFS 2018.1 and earlier 
 
 ::: moniker range="< azure-devops"
 
-## [Client cache](rebuild-client-cache.md)
+## [Client cache](/previous-versions/azure/devops/reference/witadmin/rebuild-client-cache)
 
 After certain maintenance operations, client computers require a cache refresh. After you move, restore, rename, or fail over a data-tier or application-tier server, you must refresh the cache for tracking work items and users must refresh the version control cache on client computers. 
 
@@ -507,7 +507,7 @@ The following `witadmin` command is only available for Azure DevOps Server on-pr
 
 ::: moniker range="< azure-devops"
 
-## [Test case management field mapping](tcm-customize-manage-test-experience.md)  
+## [Test case management field mapping](/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience)  
 
 To customize the resolution types, bug work item type, and failure types used when working with Azure Test Plans, you can use the following **tcm** command. This command is only available for Azure DevOps Server on-premises versions. 
 
@@ -538,7 +538,7 @@ To customize the resolution types, bug work item type, and failure types used wh
  
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 - [Customize your work tracking experience](../customize-work.md)   
 - [On-premises XML process model](../on-premises-xml-process-model.md)  
 - [What is Azure Test Plans?](../../test/overview.md)

@@ -5,8 +5,8 @@ description: Describes work tracking customizations supported by the inherited p
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview 
 monikerRange: '>= azure-devops-2019'
 ms.date: 07/08/2022
@@ -40,7 +40,7 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 You'll see two types of processes:
 
 - ![locked icon](media/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
-- ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes and their child inherited processes. Updates to processes are documented in [Changes made to process templates](../../../boards/work-items/guidance/changes-to-process-templates.md).
+- ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes and their child inherited processes. Updates to processes are documented in the [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
 ::: moniker range="azure-devops-2019"
 > [!NOTE]   
@@ -75,7 +75,7 @@ If you want to switch the process a project uses from one system process to anot
 
 Following the guidance provided in the above listed articles, you can also make additional changes, for example, from CMMI to Agile or Agile to CMMI. 
 
-Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The system processes are summarized in [Choose a process](../../../boards/work-items/guidance/choose-process.md).
+Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The system processes are summarized in [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
 ### Best practices when making changes
 
@@ -195,7 +195,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 - You can't change the field name or data type once you've defined it
 - You can't modify the gray area on the form where the State, Reason, Area Path, and iteration path fields are located  
-- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
+- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).  
 
 ::: moniker-end
 
@@ -207,7 +207,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
     - Change the picklist of an inherited field, such as the Activity or Discipline field  
     - Change the picklist order, picklists display in alphabetic order
 - You can't modify the Description help text of inherited fields
-- Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
+- Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).  
 
 > [!NOTE]    
 > With the inherited process, you can't modify the picklists of predefined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  

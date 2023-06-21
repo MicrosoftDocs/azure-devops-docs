@@ -20,7 +20,7 @@ If you have both Azure Pipelines and GitHub Actions workflows, you might want to
 
 - A working Azure pipeline. [Create your first pipeline](../create-first-pipeline.md). 
 - A GitHub account with a repository. [Join GitHub](https://github.com/join) and [create a repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo). 
-- An Azure DevOps personal access token (PAT) to use with GitHub Actions. [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+- An Azure DevOps personal access token (PAT) with the scope Build (Read & Execute) to use with GitHub Actions. [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Authenticate with Azure Pipelines
 

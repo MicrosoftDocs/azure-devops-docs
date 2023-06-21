@@ -3,9 +3,9 @@ title: Cumulative Flow Diagram (CFD) sample Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to generate a Cumulative Flow Diagram (CFD) Power BI report.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
+ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
-author: KathrynEE
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/08/2022
@@ -74,7 +74,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Wor
 ```
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -194,7 +194,7 @@ Once you've expanded the columns, you may want to rename one or more fields. For
 
 In the following example, the query was renamed to *CFD*, but no columns were renamed. 
 
-1. In Power BI, choose the **Stacked area** chart under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Stacked area** chart under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/cfd-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for CFD chart report. ":::
  

@@ -2,11 +2,11 @@
 title: Link user stories and issues to other work items in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to link one or more work items to other work items or to a new git branch in Azure Boards.
-ms.custom: cross-project  
+ms.custom: cross-project, devx-track-azurecli
 ms.service: azure-devops-boards
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 11/08/2022
@@ -470,4 +470,3 @@ To view the information for the linked work items, enter one of the URLs listed 
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 
 ::: moniker-end
-

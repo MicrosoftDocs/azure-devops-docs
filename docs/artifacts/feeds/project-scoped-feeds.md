@@ -52,6 +52,9 @@ Follow the instructions below and select the appropriate scope for your need to 
 
 ::: moniker-end
 
+> [!NOTE]
+> Organization-scoped feeds cannot be converted into project-scoped feeds.
+
 ## Project-scoped vs organization-scoped feeds
 
 A project-scoped feed is scoped to a project instead of an organization. Here are the main differences between the two types of feeds:
@@ -84,6 +87,16 @@ Alternatively, you can use the [Create Feed API](/rest/api/azure/devops/artifact
 > [!IMPORTANT]
 > If a user has permissions to access a specific view, and they don't have permissions to the feed, they will still be able to access and download packages through that view.  
 > If you want to completely hide your packages, you must restrict access to both the feed and the view. See [Feeds and views permissions](feed-permissions.md) for more details.
+
+## Q&A
+
+#### Q: How to access a project-scoped feed in another project using Azure Pipelines?
+
+In order for a pipeline to access a project-scoped feed in a different project, it is necessary to grant the pipeline access to both the project where the feed is scoped and the feed itself.
+
+- Project setup: navigate to the project hosting the feed, select **Project settings** > **Permissions** and then add your pipeline's *project build service* to the Contributors group or any other suitable group that provides contributor access to its users.
+
+- Feed setup: Navigate to the feed you want to access, select  **Settings** > **Feed permissions** and then add your *project build service* as a **Collaborator**. Your *Project build service* identity is displayed in the following format: `[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
 
 ## Related articles
 

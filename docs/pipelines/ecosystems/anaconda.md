@@ -4,7 +4,7 @@ description: Set up and use Anaconda environments with Azure Pipelines, Azure De
 ms.topic: quickstart
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
 ms.reviewer: vijayma
-ms.custom: seodec18, devx-track-python
+ms.custom: seodec18
 ms.date: 01/24/2022
 monikerRange: azure-devops
 author: JuliaKM
@@ -226,4 +226,3 @@ See examples of using `call` [in a pipeline](#run-pipeline-steps-in-an-anaconda-
 
 ### How can I run my tests with multiple versions of Python?
 See [Build Python apps in Azure Pipelines](./python.md).
-

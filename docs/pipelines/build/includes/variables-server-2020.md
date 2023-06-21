@@ -419,6 +419,9 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 Also, this variable is only available on the step level and is neither available in the job nor stage levels (i.e. the message is not extracted until the job had started and checked out the code).
 
 Note: This variable is available in TFS 2015.4.
+
+> [!NOTE]
+> The **Build.SourceVersionMessage** variable does not work with classic build pipelines in Bitbucket repositories when **Batch changes while a build is in progress** is enabled.
 </td>
 <td>No</td>
 </tr>
@@ -687,6 +690,13 @@ Otherwise, it is set to <code>False</code>.</td>
 <tr>
 <td>System.PullRequest.PullRequestNumber</td>
 <td>The number of the pull request that caused this build. This variable is populated for pull requests from GitHub which have a different pull request ID and pull request number. This variable is only available in a YAML pipeline if the PR is a affected by a branch policy.</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>System.PullRequest.targetBranchName</td>
+<td>The name of the target branch for a pull request. This variable can be used in a pipelines to conditionally execute tasks or steps based on the target branch of the pull request. For example, you might want to trigger a different set of tests or code analysis tools depending on the branch that the changes are being merged into.
+</td>
 <td>No</td>
 </tr>
 

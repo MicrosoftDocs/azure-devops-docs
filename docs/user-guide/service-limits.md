@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps Services
 description: Description of limits and rate limits on the Azure DevOps Service
 ms.topic: conceptual
 ms.subservice: azure-devops-new-user
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 01/03/2023
 ---
@@ -38,7 +38,7 @@ This article specifies certain limits placed on the use and configuration of Azu
 | Configuration object |  Limit | 
 |--------|-------|
 | Projects | 1000 per organization for Azure DevOps Services</br>No prescribed limit for on-premises</br>(See also [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md#projects) | 
-| Teams | 5,000 per organization | 
+| Teams | 5,000 per project | 
 | Work item tags | 150,000 tag definitions per organization | 
 | Area Paths | 10,000 per organization | 
 | Area Path Depth | 14 | 
