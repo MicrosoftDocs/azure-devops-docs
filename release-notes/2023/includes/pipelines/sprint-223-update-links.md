@@ -11,3 +11,4 @@ ms.topic: include
 - [Instructions for manual pre-installation of Node 6 on Pipeline agents](#instructions-for-manual-pre-installation-of-node-6-on-pipeline-agents)
 - [Pipeline task changelog](#pipeline-task-changelog)
 - [Release tasks use Microsoft Graph API](#release-tasks-use-microsoft-graph-api)
+- [Specify agent version in Agent VM extension](#specify-agent-version-in-agent-vm-extension)
