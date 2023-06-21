@@ -5,7 +5,7 @@ description: Learn how to authenticate to Azure Repos Git repositories with SSH 
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 01/11/2023
+ms.date: 06/21/2023
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -50,18 +50,18 @@ The following steps cover configuration of SSH key authentication on the followi
 > If you've already created RSA SSH keys on your system, skip this step and [configure your SSH keys](use-ssh-keys-to-authenticate.md#configuration).
 > To verify this go to your home directory and look into the `.ssh` folder (`%UserProfile%\.ssh\` on Windows or `~/.ssh/` on Linux, macOS, and Windows with Git Bash). If you see two files named `id_rsa` and `id_rsa.pub` respectively continue with [configuring your SSH keys](use-ssh-keys-to-authenticate.md#configuration).
 
-To use key-based authentication, you first need to generate public/private key pairs for your client. ssh-keygen.exe is used to generate key files and the algorithms DSA, RSA, ECDSA, or Ed25519 can be specified. If no algorithm is specified, RSA is used.
+To use key-based authentication, you first need to generate public/private key pairs for your client. **ssh-keygen.exe** is used to generate key files and the algorithms DSA, RSA, ECDSA, or Ed25519 can be specified. If no algorithm is specified, RSA is used.
 
 >[!NOTE]
 > The only SSH key type supported by Azure DevOps is _RSA_.
 
 To generate key files using the RSA algorithm, run the following command from a PowerShell or another shell such as `bash` on your client:
 
-```sh
+```powershell
 ssh-keygen
 ```
 
-The output from the command should display the following output (where "username" is replaced by your username):
+The output from the command should display the following output (where `username` is replaced by your username):
 
 ```Output
 Generating public/private rsa key pair.
@@ -141,7 +141,7 @@ Associate the public key generated in the previous step with your user ID.
 
 6. Test the connection by running the following command:
 
-   ```sh
+   ```powershell
    ssh -T git@ssh.dev.azure.com
    ```
 
@@ -206,7 +206,7 @@ Associate the public key generated in the previous step with your user ID.
 
 6. Test the connection by running the following command:
 
-   ```sh
+   ```powershell
    ssh -T git@ssh.dev.azure.com
    ```
 
@@ -246,7 +246,7 @@ Associate the public key generated in the previous step with your user ID.
 
 2. Run `git clone` from the command prompt.
 
-   ```sh
+   ```bash
    git clone git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
    ```
 
@@ -329,7 +329,7 @@ Copy your public key directly from the PuTTYgen window and paste into the **Key 
 **A:** You can verify the fingerprint of the public key uploaded with the one displayed in your profile through the following `ssh-keygen` command run against your public key using
   the command line. You'll need to change the path and the public key filename if you aren't using the defaults.
 
-```sh
+```powershell
 ssh-keygen -l -E md5 -f ~/.ssh/id_rsa.pub
 ```
 
