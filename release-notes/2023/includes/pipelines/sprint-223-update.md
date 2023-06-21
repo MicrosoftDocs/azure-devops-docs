@@ -55,7 +55,7 @@ We now publish changes to Pipeline tasks to this [changelog](https://github.com/
 
 ### Release tasks use Microsoft Graph API
 
-We have updated our [release tasks](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/?view=azure-pipelines#deploy-tasks) to use the Microsoft Graph API. This removes any usage of the [AAD Graph API](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/azure-ad-change-management-simplified/ba-p/2967456) from our tasks.
+We have updated our [release tasks](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/?view=azure-pipelines#deploy-tasks) to use the Microsoft Graph API. This removes the usage of the [AAD Graph API](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/azure-ad-change-management-simplified/ba-p/2967456) from our tasks.
 
 ### Specify agent version in Agent VM extension
 
