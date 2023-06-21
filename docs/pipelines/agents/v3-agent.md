@@ -47,7 +47,7 @@ The following operating systems are supported by the 3.x agent.
     * Windows 8.1
     * Windows 10
   * Server OS
-    * Windows Server 12 or higher
+    * Windows Server 2012 or higher
 
 ## Upgrade to 3.x agent on unsupported operating systems
 
