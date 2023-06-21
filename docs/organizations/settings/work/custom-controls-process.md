@@ -5,8 +5,8 @@ description: Customize a process by adding or modifying a custom control for wor
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms.date: 11/19/2018

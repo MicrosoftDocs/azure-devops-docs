@@ -2,14 +2,14 @@
 title: Catalog of Out Of Box widgets you can add to a dashboard
 titleSuffix: Azure DevOps
 description: An index of widgets you might want to add to your dashboards when working in Azure DevOps.
-ms.custom: dashboards, contperf-fy22q1 
+ms.custom: dashboards, contperf-fy22q1, engagement-fy23  
 ms.subservice: azure-devops-analytics
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'  
-ms.date: 04/04/2022
+ms.date: 02/14/2023
 ---
 
 # Out Of Box widget catalog 
@@ -21,9 +21,9 @@ Widgets display information and charts on dashboards. Many widgets are configura
 
 For example, you can add the **Build History** widget from the dashboard's **Add widget** dialog. 
 
-![Build history widget](media/widget-build-history-chart.png)   
+![Screenshot of Build history widget, example.](media/widget-build-history-chart.png)   
 
-This article provides a quick reference of all out of box (OOB) widgets that you can add to your dashboard. In addition to the OOB widgets, you may find more widgets in the [Marketplace](#marketplace) or create your own.
+This article provides a quick reference of all out of box (OOB) widgets that you can add to your dashboard. In addition to these widgets, you may find more widgets in the [Marketplace](#marketplace) or create your own.
 
 ## Supported OOB widgets
 
@@ -71,19 +71,19 @@ Widgets listed in the following table are provided out-of-box. They're organized
       ::: moniker range="azure-devops-2019"
       **Boards**
       - [Assigned to me](#assigned-to-me-widget) (User)
-      - [Burndown chart](#burndown-analytics-widget) (Analytics)    
-      - [Burnup chart](#burnup-analytics-widget) (Analytics)    
+      - [Burndown chart](#burndown-analytics-widget)  (Analytics, Teams)    
+      - [Burnup chart](#burnup-analytics-widget) (Analytics, Teams) 
       - [Chart for work items](#chart-wit-widget)  
-      - [Cumulative flow diagram](#cfd-widget)  
-      - [Cycle time (Analytics)](#cycle-time-widget) (Analytics)    
-      - [Lead time (Analytics)](#lead-time-widget) (Analytics)   
+      - [Cumulative flow diagram](#cfd-widget) (Team)  
+      - [Cycle time (Analytics)](#cycle-time-widget)  (Analytics, Team)   
+      - [Lead time (Analytics)](#lead-time-widget)  (Analytics, Team) 
       - [New Work item](#new-work-item-widget)  
       - [Query results](#query-results-widget)  
       - [Query tile](#query-tile-widget)  
-      - [Sprint burndown](#sprint-burndown-widget)  
-      - [Sprint capacity](#sprint-capacity-widget)  
-      - [Sprint overview](#sprint-overview-widget)  
-      - [Velocity](#velocity-widget) (Analytics)  
+      - [Sprint burndown](#sprint-burndown-widget) (Team)   
+      - [Sprint capacity](#sprint-capacity-widget) (Team)   
+      - [Sprint overview](#sprint-overview-widget) (Team)   
+      - [Velocity](#velocity-widget) (Analytics) (Team)   
       - [Work links](#work-links-widget)  
       ::: moniker-end
       ::: moniker range="tfs-2018"
@@ -93,21 +93,21 @@ Widgets listed in the following table are provided out-of-box. They're organized
       - [New Work item](#new-work-item-widget)  
       - [Query results](#query-results-widget)  
       - [Query tile](#query-tile-widget)  
-      - [Sprint burndown](#sprint-burndown-widget)  
-      - [Sprint capacity](#sprint-capacity-widget)  
-      - [Sprint overview](#sprint-overview-widget)  
+      - [Sprint burndown](#sprint-burndown-widget) (Team)   
+      - [Sprint capacity](#sprint-capacity-widget) (Team)   
+      - [Sprint overview](#sprint-overview-widget) (Team)   
       - [Work links](#work-links-widget)  
       ::: moniker-end
       ---
-      ::: moniker range="tfs-2018"
-      **Repos** 
-      - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
-      - [Pull request](#pull-request-widget) (Team, User)
-      ::: moniker-end
       ::: moniker range=">= azure-devops-2019"
       **Code** 
       - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
       - [Pull request](#pull-request-widget) (Team)
+      ::: moniker-end
+      ::: moniker range="tfs-2018"
+      **Repos** 
+      - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
+      - [Pull request](#pull-request-widget) (Team, User)
       ::: moniker-end
    :::column-end:::
    :::column span="1":::
@@ -126,7 +126,7 @@ Widgets listed in the following table are provided out-of-box. They're organized
       **Information and links**
       - [Embedded Webpage](#embedded-webpage-widget)  
       - [Markdown](#markdown-widget)  
-      - [Other links](#other-links-widget)  
+      - [Other links](#other-links-widget)  (Team)  
       - [Team members](#team-members-widget) (Team) 
       - [Visual Studio Shortcuts](#visual-studio-widget) 
       - [Welcome](#how-to-widget) 
@@ -142,12 +142,11 @@ Widgets listed in the following table are provided out-of-box. They're organized
       - [Chart for test plans](#chart-test-plan-widget)
       - [Test results trend](#test-trend-results) (Build or Release pipeline)  
       ::: moniker-end
-      ---
       ::: moniker range="tfs-2018"
       **Information and links**
       - [Embedded Webpage](#embedded-webpage-widget) 
       - [Markdown](#markdown-widget)  
-      - [Other links](#other-links-widget-2018)  
+      - [Other links](#other-links-widget-2018) (Team)  
       - [Team members](#team-members-widget) (Team) 
       - [Visual Studio Shortcuts](#visual-studio-widget) 
       - [Welcome](#how-to-widget) 
@@ -197,7 +196,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Assigned to me  
-      ![Assigned to me widget](media/widget-assigned-to-me.png)  
+      ![Screenshot of Assigned to me widget.](media/widget-assigned-to-me.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -209,14 +208,14 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Burndown chart  
-      ![Burndown chart widget](media/widget-burndown-chart.png)  
+      ![Screenshot of Burndown chart widget.](media/widget-burndown-chart.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
       <a id="burndown-analytics-widget"></a>  
       Adds a tile that displays a burndown chart that you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints.    
       
-      To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
+      To learn more, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -224,21 +223,21 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Burnup chart  
-      ![Burnup chart widget](media/widget-burnup-chart.png)  
+      ![Screenshot of Burnup chart widget.](media/widget-burnup-chart.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
       <a id="burnup-analytics-widget"></a> 	    
       Adds a tile that displays a burnup chart that you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints.  
       
-      To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
+      To learn more, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
 :::row:::
    :::column span="1":::
       ### Chart for work items  
-      ![Chart work item query widget](media/widget-chart-work-query.png)  
+      ![Screenshot of Chart work item query widget.](media/widget-chart-work-query.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -252,7 +251,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Cumulative flow diagram   
-      ![Cumulative flow diagram widget](media/widget-cfd-chart.png)  
+      ![Screenshot of Cumulative flow diagram widget.](media/widget-cfd-chart.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -267,7 +266,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Cycle time  
-      ![Cycle time widget](media/widget-cycle-time.png)  
+      ![Screenshot of Cycle time widget.](media/widget-cycle-time.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -282,7 +281,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Lead time  
-      ![Lead time widget](media/widget-lead-time.png)  
+      ![Screenshot of Lead time widget.](media/widget-lead-time.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -297,7 +296,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### New Work item
-      ![New work item widget](media/widget-new-work-items.png)  
+      ![Screenshot of New work item widget.](media/widget-new-work-items.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -310,7 +309,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Query results 
-      ![Query results widget](media/widget-query-results.png)  
+      ![Screenshot of Query results widget.](media/widget-query-results.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -324,7 +323,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Query tile 
-      ![Query tile widget](media/widget-query-tile.png)  
+      ![Screenshot of Query tile widget.](media/widget-query-tile.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -339,7 +338,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Sprint burndown (Analytics)  
-      ![Sprint burndown widget](media/widget-sprint-burndown-analytics.png)  
+      ![Screenshot of Sprint burndown widget.](media/widget-sprint-burndown-analytics.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -354,7 +353,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Sprint burndown (Legacy) 
-      ![Sprint burndown widget, legacy versions.](media/widget-sprint-burndown-legacy.png)  
+      ![Screenshot of Sprint burndown widget, legacy version.](media/widget-sprint-burndown-legacy.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -369,7 +368,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Sprint burndown 
-     ![Sprint burndown widget, Azure DevOps Server 2019 and earlier versions.](media/widget-sprint-burndown.png)  
+     ![Screenshot of Sprint burndown widget, Azure DevOps Server 2019 and earlier versions.](media/widget-sprint-burndown.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -383,7 +382,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Sprint capacity 
-      ![Sprint capacity widget](media/widget-sprint-capacity.png)  
+      ![Screenshot of Sprint capacity widget.](media/widget-sprint-capacity.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -397,13 +396,13 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Sprint overview 
-      ![Sprint overview widget](media/widget-sprint-overview.png)  
+      ![Screenshot of Sprint overview widget.](media/widget-sprint-overview.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
       <a id="sprint-overview-widget"></a>      
       
-      Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items.    
+      Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Also, selecting the **Show non-working days** checkbox indicates to count all remaining days in the sprint, regardless of the days the team has selected as days off.  
       
       Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
    :::column-end:::
@@ -412,7 +411,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Velocity   
-     ![Sprint velocity widget](media/widget-velocity.png)  
+     ![Screenshot of Team velocity widget.](media/widget-velocity.png)  
    :::column-end:::
    :::column span="1":::
       <a id="velocity-widget"></a> 
@@ -425,7 +424,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 :::row:::
    :::column span="1":::
       ### Work links 
-     ![Work links widget](media/widget-work-links.png)  
+     ![Screenshot of Work links widget.](media/widget-work-links.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -433,7 +432,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       Provides quick access to open these Agile tools and team resources:     
       
       - [Backlog](../../boards/backlogs/create-your-backlog.md)   
-      - [Kanban board](../../boards/boards/kanban-basics.md)    
+      - [Kanban board](../../boards/boards/kanban-overview.md)    
       - [Task board](../../boards/sprints/task-board.md)    
       - [Queries](../../boards/queries/using-queries.md)  
    :::column-end:::
@@ -454,7 +453,7 @@ Add code tracking widgets to track changes made within a repository or get quick
 :::row:::
    :::column span="1":::
       ### Code tile 
-     ![Code tile widget](media/widget-code-tile.png)  
+     ![Screenshot of Code tile widget.](media/widget-code-tile.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -465,7 +464,7 @@ Add code tracking widgets to track changes made within a repository or get quick
 :::row:::
    :::column span="1":::
       ### Pull request 
-      ![Pull request widget](media/widget-catalog-pull-request.png)  
+      ![Screenshot of Pull request widget.](media/widget-catalog-pull-request.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -476,6 +475,23 @@ Add code tracking widgets to track changes made within a repository or get quick
    :::column-end:::
 :::row-end:::
 
+::: moniker range="= azure-devops"
+:::row:::
+   :::column span="1":::
+      ### Pull request (multiple repos)
+      ![Screenshot of Pull request widget for multiple repos.](media/widget-catalog-pull-request-multi.png)  
+   :::column-end:::
+   :::column span="1":::
+      <br/>
+      <a id="pull-request-widget-multi"></a> 
+      Adds a configurable widget to display active PRs requested by the team, or assigned to or requested by the person logged in. Select the team and up to 10 repositories for the pull requests of interest.   
+      
+      To learn more about pull requests, see [Review code with pull requests](../../repos/git/pull-requests.md).
+
+      *This widget is currently in private preview*
+   :::column-end:::
+:::row-end:::
+::: moniker-end
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -493,7 +509,7 @@ Add build and release pipeline widgets to track the health of your builds and re
 :::row:::
    :::column span="1":::
       ### Build history  
-      ![Build history widget](media/widget-build-history-chart.png)  
+      ![Screenshot of Build history widget.](media/widget-build-history-chart.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -506,7 +522,7 @@ Add build and release pipeline widgets to track the health of your builds and re
 :::row:::
    :::column span="1":::
       ### Deployment status 
-      ![Deployment status widget](media/widget-deployment-status.png)  
+      ![Screenshot of Deployment status widget.](media/widget-deployment-status.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -521,7 +537,7 @@ Add build and release pipeline widgets to track the health of your builds and re
 :::row:::
    :::column span="1":::
       ### Release pipeline overview 
-      ![Release pipeline overview widget](media/widget-release-definitions.png)  
+      ![Screenshot of Release pipeline overview widget.](media/widget-release-definitions.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -535,7 +551,7 @@ Add build and release pipeline widgets to track the health of your builds and re
 :::row:::
    :::column span="1":::
       ### Requirements quality 
-      ![Requirements quality widget](media/widget-requirements-quality.png)  
+      ![Screenshot of Requirements quality widget.](media/widget-requirements-quality.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -561,7 +577,7 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
 :::row:::
    :::column span="1":::
       ### Chart for test plans  
-      ![Chart for test plans](media/widget-chart-test-plans.png) 
+      ![Screenshot of Chart for test plans widget.](media/widget-chart-test-plans.png) 
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -574,7 +590,7 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
 :::row:::
    :::column span="1":::
       ### Test results trend 
-      ![Test results trend widget](media/widget-test-results-trend.png) 
+      ![Screenshot of Test results trend widget.](media/widget-test-results-trend.png) 
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -589,10 +605,11 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
+      <a id="test-results-trend-advanced" />
       ### Test Results Trend (Advanced)
    :::column span="1":::
       > [!div class="mx-imgBorder"]  
-      > ![Test results trend widget, Advanced version based on Analytics service.](media/widget-test-results-trend-advanced.png) 
+      > ![Screenshot of Test results trend widget, Advanced version based on Analytics service.](media/widget-test-results-trend-advanced.png) 
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -616,12 +633,12 @@ Add one or more of the following widgets to support adding:
 :::row:::
    :::column span="1":::
       ### Embedded web page 
-      ![Embedded web page widget](media/embedded-web-page-widget.png) 
+      ![Screenshot of Embedded web page widget.](media/embedded-web-page-widget.png) 
    :::column-end:::
    :::column span="1":::
       <br/>
       <a id="embedded-webpage-widget"></a> 
-      Adds a configurable tile to display the contents of a web page.    
+      Adds a configurable tile to display the contents of a web page. The page displayed is interactive.   
       
       Only webpages that allow [iframe embedding](https://go.microsoft.com/fwlink/?LinkId=808035) are supported.
    :::column-end:::
@@ -629,7 +646,7 @@ Add one or more of the following widgets to support adding:
 :::row:::
    :::column span="1":::
       ### Markdown 
-      ![Markdown widget](media/widget-markdown-tile.png) 
+      ![Screenshot of Markdown widget.](media/widget-markdown-tile.png) 
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -644,14 +661,14 @@ Add one or more of the following widgets to support adding:
 :::row:::
    :::column span="1":::
       ### Other links 
-      ![Other links widget](media/widget-other-links.png)  
+      ![Screenshot of Other links widget.](media/widget-other-links.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
       <a id="other-links-widget"></a>   
       Provides links to the following features:   
       
-      - [Opens a form to initiate a request to provide feedback](../../project/feedback/get-feedback.md)   
+      - [Opens a form to initiate a request to provide feedback](/previous-versions/azure/devops/project/feedback/get-feedback)   
       - [Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team](../../boards/sprints/define-sprints.md)   
       - [Opens the team's quick dialog to modify your team's area path](../../organizations/settings/set-area-paths.md).   
    :::column-end:::
@@ -661,7 +678,7 @@ Add one or more of the following widgets to support adding:
 :::row:::
    :::column span="1":::
       ### Other links 
-      ![Other links widget](media/widget-other-links.png)  
+      ![Screenshot of Other links widget.](media/widget-other-links.png)  
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -680,7 +697,7 @@ Add one or more of the following widgets to support adding:
 :::row:::
    :::column span="1":::
       ### Team members 
-      ![Team members widget](media/widget-team-members.png) 
+      ![Screenshot of Team members widget.](media/widget-team-members.png) 
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -696,7 +713,7 @@ Add one or more of the following widgets to support adding:
 :::row:::
    :::column span="1":::
       ### Visual Studio Shortcuts 
-      ![Visual Studio widget](media/widget-visual-studio.png) 
+      ![Screenshot of Visual Studio widget.](media/widget-visual-studio.png) 
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -709,7 +726,7 @@ Add one or more of the following widgets to support adding:
 :::row:::
    :::column span="1":::
       ### Welcome 
-      ![How to links widget](media/widget-how-to-links.png) 
+      ![Screenshot of How to links widget.](media/widget-how-to-links.png) 
    :::column-end:::
    :::column span="1":::
       <br/>
@@ -727,8 +744,7 @@ Add one or more of the following widgets to support adding:
 You may find more widgets of interest in the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
 
 If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
-
-<img src="media/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" />   
+:::image type="content" source="media/widget-catalog-disabled-widget.png" alt-text="Screenshot of Disabled widget extension notification.":::
 
 To regain access to it, request your admin to reinstate or reinstall the widget. 
 

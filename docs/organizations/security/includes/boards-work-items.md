@@ -1,9 +1,9 @@
 ---
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
-ms.date: 04/04/2022
+ms.date: 02/02/2023
 ---
 
 
@@ -30,6 +30,7 @@ ms.date: 04/04/2022
      **Project admins**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
       **View work items in this node** 
@@ -60,6 +61,23 @@ ms.date: 04/04/2022
       ✔️
    :::column-end:::
 :::row-end:::
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="2":::
+      **Edit work item comments in this node** 
+      (Area Path permission)
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker-end 
 :::row:::
    :::column span="2":::
       **Create tag definition** 

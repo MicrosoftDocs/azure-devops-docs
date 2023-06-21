@@ -5,8 +5,8 @@ description: Learn how to create a branch, commit, or a pull request in Azure Bo
 ms.custom: "boards-backlogs, seodec18"
 ms.service: azure-devops-boards
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 07/26/2022
@@ -34,8 +34,8 @@ This article addresses creating new branches, adding links to commits, and addin
 
 > [!TIP]
 > You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. To learn how, see the following resources:   
-> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
-> - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
+> - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 > - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md).
 
 ## Development control
@@ -229,7 +229,7 @@ The link types you can add within the development section are Branch, Build, Cha
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
-To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
+To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements#development-links-control). 
  
 ::: moniker-end
 

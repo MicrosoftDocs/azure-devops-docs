@@ -147,7 +147,7 @@ This tutorial assumes you have a yaml pipeline with a single stage that deploys 
 
 ::: moniker range="azure-devops"
 
-**A**: We support the following versions: Kingston, London, New York, Paris, Quebec, Rome, and San Diego.
+**A**: We support the following versions: Kingston, London, New York, Paris, Quebec, Rome, San Diego, and Tokyo.
 
 ::: moniker-end
 

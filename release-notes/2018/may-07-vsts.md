@@ -3,6 +3,7 @@ title: Deploy to Azure Kubernetes Service (AKS) using DevOps Projects – VSTS S
 author: alexcnichols
 ms.author: alexn
 ms.date: 5/7/2018
+ms.custom: devx-track-extended-java, devx-track-python
 description: The Sprint 134 Update of Visual Studio Team Services (VSTS) brings better support for Ruby, Python, and Java languages in Build and even more deployment options to Release.
 ---
 

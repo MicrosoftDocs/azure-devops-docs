@@ -3,13 +3,13 @@ title: Add portfolio backlogs
 titleSuffix: Azure DevOps
 description: Add up to two additional work item types and portfolio backlogs in Azure DevOps Services
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, engagement-fy23
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops' 
-ms.date: 12/15/2017  
+ms.date: 01/17/2023 
 ---
 
 # Add a portfolio backlog level
@@ -57,7 +57,7 @@ This article walks you through adding a portfolio backlog to a project based on 
 
 You can apply the same steps if you work with a project based on the [Scrum](../boards/work-items/guidance/scrum-process.md) or [CMMI](../boards/work-items/guidance/cmmi-process.md) process. When you're done, you'll get to manage your portfolio of projects by grouping work within these four levels: User Stories (or Product backlog items or Requirements), Features, Epics, and Initiatives.   
 
-For an overview of the three system processes, see [Choose a process](../boards/work-items/guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
+For more informaiton, see [About processes and process templates](../boards/work-items/guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
 
 <a id="export-files">  </a>
 
@@ -261,11 +261,11 @@ If you want to add another WIT to your backlogs or boards, see [work item types 
 
 To learn more about the syntax for a definition file or command line tool, see these topics:  
 
-- [All WITD XML elements reference](xml/all-witd-xml-elements-reference.md)  
-- [Categories XML element reference](xml/categories-xml-element-reference.md)  
+- [All WITD XML elements reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference)  
+- [Categories XML element reference](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)  
 - [Process configuration XML element reference](xml/process-configuration-xml-element.md)  
 - [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md)  
-- [Import and export categories](witadmin/witadmin-import-export-categories.md)  
+- [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories)  
 - [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md)  
 
 Otherwise, see [Customize your work tracking experience](customize-work.md) to access other configuration and customization options available to you.  

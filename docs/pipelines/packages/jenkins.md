@@ -1,6 +1,6 @@
 ---
 title: Publish Artifacts with Jenkins
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-jenkins
 description: How to publish Artifacts with Jenkins and Azure Pipelines
 ms.assetid: FC3EC349-1F9B-42A7-B523-495F21BC73F6
 ms.date: 12/08/2021

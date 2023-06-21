@@ -18,7 +18,7 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
  
    ![Create project form ready for completion](../organizations/projects/media/create-project/create-new-project-form-new-nav.png) 
 
-   See [choosing the right version control for your project](../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../boards/work-items/guidance/choose-process.md) for guidance.  
+   For more information, see [Choose the right version control for your project](../repos/tfvc/comparison-git-tfvc.md) and [About processes and process templates](../boards/work-items/guidance/choose-process.md).  
 
 2. When your project is complete, the welcome page appears.
  

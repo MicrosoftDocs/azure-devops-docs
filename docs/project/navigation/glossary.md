@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Understand the key concepts that support navigation and managing projects available with Azure DevOps
 ms.custom: Navigation
 ms.subservice: azure-devops-projects 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 02/08/2019
@@ -34,7 +34,7 @@ Analytics views provide a simplified way to specify the filter criteria for a Po
 [!INCLUDE [temp](../../includes/glossary-terms/area-paths.md)] 
 
 ## Boards (Kanban) 
-An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../../boards/boards/kanban-basics.md).
+An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban overview](../../boards/boards/kanban-overview.md).
 
 [!INCLUDE [temp](../../includes/glossary-terms/collections.md)] 
 

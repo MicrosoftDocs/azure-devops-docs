@@ -8,7 +8,7 @@ description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelin
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 01/13/2022
+ms.date: 03/21/2023
 monikerRange: 'azure-devops'
 ---
  
@@ -142,7 +142,7 @@ This command deletes all the subscriptions related to any pipeline in the projec
 
 ## Link your notifications
 
-Link a set of related notifications to reduce the space occupied by notifications in a channel. All notifications linked to a particular run of a pipeline get linked together.
+All notifications linked to a particular run of a pipeline get linked together.
 
 **Example 1:** Compact view of linked notifications. 
 
@@ -180,8 +180,6 @@ If you're using a different email or tenant for Microsoft Teams and Azure DevOps
 |4     | email1@abc.com (tenant 1)        | email2@pqr.com (non-default tenant 3)        | Currently not supported.       |
 
 ## Troubleshoot 
-
-[!INCLUDE [troubleshooting](includes/troubleshoot-authentication.md)]
 
 In the **same browser**, start a new tab and sign in to `https://teams.microsoft.com/`. Run the `@Azure Pipelines signout` command and then run the `@Azure Pipelines signin` command in the channel where the Azure Pipelines app for Microsoft Teams is installed.
 

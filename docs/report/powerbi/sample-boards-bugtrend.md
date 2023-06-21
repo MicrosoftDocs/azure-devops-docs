@@ -3,9 +3,9 @@ title: Bug trends sample queries and Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to generate a bug trend Power BI report. 
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
+ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23, engagement-fy23
-author: KathrynEE
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/08/2022
@@ -77,7 +77,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -333,7 +333,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Expand columns in Power BI
 
-Expand the `Area/AreaPath)` and `Iteration/IterationPath` columns. Expanding the columns flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
+Expand the `Area/AreaPath` and `Iteration/IterationPath` columns. Expanding the columns flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
 
 
 ## (Optional) Rename fields
@@ -346,7 +346,7 @@ Once you've expanded the columns, you may want to rename one or more fields. For
 
 ## Create the Line chart report 
 
-1. In Power BI, choose the **Line chart** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Line chart** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/bug-trends-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Bug trends report. ":::
 

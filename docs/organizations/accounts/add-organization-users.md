@@ -1,7 +1,7 @@
 ---
 title: Add users to organizations and manage access
 titleSuffix: Azure DevOps
-ms.custom: seodec18, devx-track-azurecli
+ms.custom: seodec18
 description: Learn how to add users to an organization and manage users' access levels (like Stakeholder), direct assignments, invitations, and more.
 ms.topic: how-to
 ms.subservice: azure-devops-organizations
@@ -9,20 +9,20 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/25/2022
+ms.date: 03/23/2023
 ---
 
 # Add organization users and manage access
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to add users to your organization and manage user access through direct assignment. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md).
+Learn how to add users to your organization and manage user access through direct assignment. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md). Users can include human users, service accounts, and [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 
 The following types of users can join your Azure DevOps Services organization for free:
 
 * Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
 * Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries
-* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic features. More features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
+* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic or Basic + Test Plan features, depending on their subscription level. 
 
 [Need more users with Basic features?](../billing/buy-basic-access-add-users.md)
 
@@ -67,7 +67,7 @@ To give other users access to your organization, add their email addresses.
    > [!div class="mx-imgBorder"]  
    >![Web portal, organization admin context, Add new users dialog box](media/add-organization-users-from-user-hub/add-new-users-dialog.png)
 
-   * **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.yml).
+   * **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.yml). To add a service principal, enter the display name of the application or managed identity.
    * **Access level:** Leave the access level as **Basic** for users who contribute to the code base. To learn more, see [About access levels](../security/access-levels.md).  
    * **Add to projects:** Select the project you want to add them to.  
    * **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).  
@@ -75,6 +75,7 @@ To give other users access to your organization, add their email addresses.
    > [!NOTE]  
    > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
 5. Select **Add** to complete your invitation.
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 [Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
@@ -250,7 +251,7 @@ ID                                    Display Name         Email                
 To limit select users access to organizational information, enable the **Limit user visibility and collaboration to specific projects** preview feature and add the users to the **Project-Scoped Users** group. Once added, users in that group can't access projects that they haven't been added to.
 
 > [!NOTE]
-> Users and groups added to the **Project-Scoped Users** group have limited access to project and organization information as well as limited access to select identities through the people picker. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
+> Users and groups added to the **Project-Scoped Users** group have limited access to project and organization information as well as limited access to select identities through the people picker. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
 
 Complete the following steps to add users to the new **Project-Scoped Users** group:
 
@@ -259,7 +260,7 @@ Complete the following steps to add users to the new **Project-Scoped Users** gr
 2. Enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md#account-level).
 
    > [!TIP]  
-   > The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility and collaboration to specific projects** preview feature is enabled.
+   > The **Project-Scoped Users** group only appears under **Permissions** > **Groups** once **Limit user visibility and collaboration to specific projects** preview feature is enabled.
 
 3. Add users or groups to your project(s) as described in [Add users to a project or team](../security/add-users-team-project.md). Users added to a team are automatically added to the project and team group.
 
@@ -269,7 +270,11 @@ Complete the following steps to add users to the new **Project-Scoped Users** gr
 
 5. Open **Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to.
 
-   For more information, see [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md).
+[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
+
+For more information, see [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md).
+
+[!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 
 ## FAQ
 
@@ -281,7 +286,7 @@ Complete the following steps to add users to the new **Project-Scoped Users** gr
 
 * Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-azure-access.yml) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
 
-* If your organization is connected to your directory, all users must be directory members. They must sign in to Azure DevOps with work or school accounts that are managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
+* If your organization is connected to your directory, all users must be directory members. They must sign in to Azure DevOps with work or school accounts managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
 
 ![Add members' sign-in addresses or display names](media/add-team-members/add-user-or-group-to-project.png)
 

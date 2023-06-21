@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to add column fields to show and sort fields for a backlog or query in Azure Boards. 
 ms.service: azure-devops-boards
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

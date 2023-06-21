@@ -5,8 +5,8 @@ description: An index of articles that explain dashboard, chart, report, and wid
 ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 09/28/2022 
@@ -100,7 +100,7 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Test status or progress chart](../../test/track-test-status.md) 
       ::: moniker range=">= azure-devops-2019"
       **Analytics**  
-      - [Analytics views](../powerbi/analytics-default-views.md)  
+      - [Analytics views](../powerbi/what-are-analytics-views.md)  
       - [Analytics widgets](analytics-widgets.md)  
       - [What is Analytics?](../powerbi/what-is-analytics.md)  
       - [Enable or install Analytics](analytics-extension.md) 

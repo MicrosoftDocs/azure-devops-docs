@@ -8,9 +8,9 @@ metadata:
   description: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, & other work with customizable Kanban, Scrum, and Agile tools. 
   ms.service: azure-devops-boards
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
-  ms.date: 06/16/2020 
+  author: chcomley 
+  ms.author: chcomley 
+  ms.date: 03/16/2023 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -28,7 +28,7 @@ landingContent:
             url: ./work-items/about-work-items.md
       - linkListType: concept
         links:
-          - text: Choose a process
+          - text: About default processes
             url: ./work-items/guidance/choose-process.md
           - text: Agile process workflow
             url: ./work-items/guidance/agile-process-workflow.md
@@ -36,14 +36,12 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Sign up for free
+          - text: Sign up for Azure Boards
             url: ./get-started/sign-up-invite-teammates.md
           - text: Plan & track work
             url: ./get-started/plan-track-work.md
           - text: Get started as a Stakeholder
             url: ../organizations/security/get-started-stakeholder.md
-          - text: Manage Azure Boards
-            url: ./get-started/manage-boards.md
   - title: Plan your project
     linkLists:
       - linkListType: overview
@@ -72,12 +70,12 @@ landingContent:
             url: ./boards/kanban-quickstart.md
       - linkListType: tutorial
         links:
-          - text: Kanban board basics
-            url: ./boards/kanban-basics.md
+          - text: Kanban board overview
+            url: ./boards/kanban-overview.md
           - text: Add columns
             url: ./boards/add-columns.md
           - text: Customize your Kanban board
-            url: ./get-started/customize-boards.md
+            url: ./configure-customize.md
   - title: Implement Scrum
     linkLists:
       - linkListType: overview

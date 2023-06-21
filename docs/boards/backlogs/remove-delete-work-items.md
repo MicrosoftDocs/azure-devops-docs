@@ -5,8 +5,8 @@ description: Learn how to remove, delete, or restore work items in Azure Boards 
 ms.custom: "boards-backlogs, seodec18, contperf-fy21q2, linked-from-support"  
 ms.service: azure-devops-boards
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 06/01/2022
@@ -314,7 +314,7 @@ Use the `witadmin destroywi` command to permanently remove work items from the d
 
 Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the `witadmin.exe` tool has been installed.  
 
-For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](/previous-versions/azure/devops/reference/witadmin/remove-work-items-permanently)).  
 
 `%programfiles(x86)%\Microsoft Visual Studio\2018\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
 

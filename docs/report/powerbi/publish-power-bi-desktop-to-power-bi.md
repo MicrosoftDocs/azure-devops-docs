@@ -5,9 +5,9 @@ description: Learn how to publish and enable refresh of a Power BI Desktop file 
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
-ms.author: kaelli
+ms.author: chcomley
 monikerRange: '>=azure-devops-2019'
-author: KathrynEE
+author: chcomley
 ms.date: 10/05/2021
 ---
 
@@ -19,7 +19,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 ## Publish to Power BI
 
-1. If using an [Analytics View](what-are-analytics-views.md), verify that the view is Shared and not Private.
+1. If using an [Analytics view](what-are-analytics-views.md), verify that the view is Shared and not Private.
 
 1. Open the **Power BI Desktop** file with your data.  
 

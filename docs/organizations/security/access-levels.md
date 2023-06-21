@@ -5,8 +5,8 @@ description: Learn how access levels are used to grant or restrict access to web
 ms.subservice: azure-devops-security
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022  
 ---
@@ -384,7 +384,7 @@ The following table indicates those features available for each supported access
 ::: moniker-end
 :::row:::
    :::column span="3":::
-      [**Request and Manage Feedback**](../../project/feedback/get-feedback.md)
+      [**Request and Manage Feedback**](/previous-versions/azure/devops/project/feedback/get-feedback)
       Includes full access to request and manage feedback on working software.  
    :::column-end:::
    :::column span="1":::
@@ -481,7 +481,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **View My Work Items**  
-      Access to [add and modify work items](../../boards/work-items/about-work-items.md), [follow work items](../../boards/work-items/follow-work-items.md), [view and create queries](../../boards/queries/view-run-query.md), and [submit, view, and change feedback responses](../../project/feedback/give-feedback.md). Stakeholders can only assign existing tags to work items (can't add new tags) and can only save queries under My Queries (can't save under Shared Queries). 
+      Access to [add and modify work items](../../boards/work-items/about-work-items.md), [follow work items](../../boards/work-items/follow-work-items.md), [view and create queries](../../boards/queries/view-run-query.md), and [submit, view, and change feedback responses](/previous-versions/azure/devops/project/feedback/give-feedback). Stakeholders can only assign existing tags to work items (can't add new tags) and can only save queries under My Queries (can't save under Shared Queries). 
    :::column-end:::
    :::column span="1":::
       ✔️

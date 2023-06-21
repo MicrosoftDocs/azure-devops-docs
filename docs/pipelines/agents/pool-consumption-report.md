@@ -2,7 +2,7 @@
 title: Historical graph for agent pools
 description: View agent pool usage statistics
 ms.topic: conceptual
-ms.date: 01/07/2022
+ms.date: 01/25/2023
 monikerRange: 'azure-devops'
 ---
 

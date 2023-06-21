@@ -4,9 +4,9 @@ titleSuffix: Azure DevOps
 description: Learn how to generate a pipeline stage wise failure Power BI report.
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
-ms.author: kaelli
+ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
-author: KathrynEE
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
 ms.date: 12/15/2022
@@ -92,7 +92,7 @@ $apply=filter(
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -335,7 +335,7 @@ You can rename column fields to ones that are more user friendly. For example, y
 
 ## Create the Stacked column chart report 
 
-1. In Power BI, under **Visualizations**, choose the **Stacked column chart** report and select the fields as shown in the following image. The following example assumes that no one renamed any columns. 
+1. In Power BI, under **Visualizations**, choose the **Stacked column chart** report. The following example assumes that no one renamed any columns. 
 
 	:::image type="content" source="media/pipeline-reports/stagewise-failure-stacked-bar-chart-visualizations.png" alt-text="Screenshot of Visualization fields selections for stagewise failures Stacked column chart report. "::: 
 

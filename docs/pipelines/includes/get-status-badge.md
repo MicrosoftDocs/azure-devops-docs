@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/24/2022
+ms.date: 06/06/2023
 ---
 
 <a name="get-the-status-badge"></a>
@@ -37,7 +37,7 @@ Now with the badge Markdown in your clipboard, take the following steps in GitHu
 
 To configure anonymous access to badges for private projects:
 
-1. Navigate to **Project Settings**
+1. Navigate to **Project Settings** in the bottom left corner of the page
 
 2. Open the **Settings** tab under **Pipelines**
  

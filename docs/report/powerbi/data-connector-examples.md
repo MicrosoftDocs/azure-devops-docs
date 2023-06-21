@@ -3,10 +3,11 @@ title: Example reports based on Analytics views and Power BI data connector
 titleSuffix: Azure DevOps   
 description: Learn how to develop reports based on Analytics views data when using the Power BI Data Connector.
 ms.assetid: 3356B3EF-E9AB-4B42-8738-E58AA34A4B4F
+ms.custom: analytics-views, engagement-fy23 
 ms.subservice: azure-devops-analytics
 ms.topic: sample
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms date: 12/13/2022
 ---

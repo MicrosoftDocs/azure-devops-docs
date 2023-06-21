@@ -5,8 +5,8 @@ description: Learn how to download Azure DevOps clients and navigate in Team Exp
 keywords: Download Azure DevOps clients 
 ms.subservice: azure-devops-new-user
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 12/16/2022
@@ -83,8 +83,6 @@ To learn more about each page, see the following articles.
       - [Create build pipelines](../pipelines/tasks/index.md) 
       - [View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md) 
       - [Manage the build queue](../pipelines/agents/pools-queues.md) 
-      - [Install Continuous Delivery (CD) Tools for Visual Studio](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017) 
-      - [Configure and execute Continuous Delivery (CD) for your app](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app)  
    :::column-end:::
    :::column span="1":::
       - [Create a new repo](../repos/git/creatingrepo.md) 
@@ -145,8 +143,6 @@ To learn more about each page, see the following articles.
       - [Create build pipelines](../pipelines/tasks/index.md) 
       - [View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md) 
       - [Manage the build queue](../pipelines/agents/pools-queues.md) 
-      - [Install Continuous Delivery (CD) Tools for Visual Studio](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017) 
-      - [Configure and execute Continuous Delivery (CD) for your app](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app)  
    :::column-end:::
    :::column span="1":::
       - [Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace) 

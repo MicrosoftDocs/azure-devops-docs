@@ -3,8 +3,8 @@ title: Sample custom rule scenarios
 titleSuffix: Azure DevOps 
 description: Examples of custom rule definitions for inherited and XML processes 
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: "<= azure-devops"
 ms.topic: sample
 ms.date: 06/30/2021
@@ -400,8 +400,8 @@ For the [On-premises XML process model](../../../reference/on-premises-xml-proce
 For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. 
 
 You restrict access to work tracking objects in one of two ways:
-- [Set a condition field rule](rule-reference.md), [a condition-based field rule](../../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
-- By [adding WITs to the Hidden Categories group](../../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
+- [Set a condition field rule](rule-reference.md), [a condition-based field rule](/previous-versions/azure/devops/reference/xml/assign-conditional-based-values-and-rules) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
+- By [adding WITs to the Hidden Categories group](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
 
 ---
 

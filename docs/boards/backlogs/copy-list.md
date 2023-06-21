@@ -5,8 +5,8 @@ description: Learn how to copy a list of user stories, issues, bugs, tasks, or o
 ms.custom: seodec18
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

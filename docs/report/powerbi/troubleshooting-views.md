@@ -3,8 +3,8 @@ title: Troubleshoot an Analytics view
 titleSuffix: Azure DevOps
 description: Learn how to resolve errors that occur with an Analytics view and Power BI for Azure DevOps.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/13/2021

@@ -5,8 +5,8 @@ ms.custom: seodec18
 description: Guide to getting started using DevOps and Agile tools provided by Azure DevOps Services and Azure DevOps Server
 ms.subservice: azure-devops-new-user
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
-ms.author: kaelli
-author: KathrynEE 
+ms.author: chcomley
+author: chcomley 
 ms.date: 01/31/2022  
 monikerRange: '<= azure-devops'
 ---
@@ -84,7 +84,7 @@ Code Search also makes team collaboration easier and helps maximize developer ef
 
  Use Agile tools to plan and track work using Scrum and Kanban processes or a mix of both. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board. In addition, configurable charts, dashboards, and reports help teams monitor and share progress. 
 
-[![Define stories](media/overview/ov-agile-plan-1.png)](../boards/backlogs/create-your-backlog.md)[![Plan sprints](media/overview/ov-agile-plan-2.png)](../boards/sprints/assign-work-sprint.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](media/overview/ov-agile-plan-3.png)](../boards/boards/kanban-basics.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](media/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
+[![Define stories](media/overview/ov-agile-plan-1.png)](../boards/backlogs/create-your-backlog.md)[![Plan sprints](media/overview/ov-agile-plan-2.png)](../boards/sprints/assign-work-sprint.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](media/overview/ov-agile-plan-3.png)](../boards/boards/kanban-quickstart.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](media/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
 
 You also gain access to a [rich set of customization capabilities](../reference/customize-work.md).
  

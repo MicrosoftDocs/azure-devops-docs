@@ -5,13 +5,13 @@ description: Learn about query operators, macros, and sample queries used to lis
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/04/2023
+ms.date: 02/02/2023
 ---
 
-# Key concepts and work item tasks in Azure Boards and Azure DevOps
+# Key concepts and work item tasks
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -25,8 +25,8 @@ Use this index to quickly access concepts and tasks related to work items and in
 > - [Change the link type of an existing link](../backlogs/add-link.md#change-link-type)
 > - [Filter the history tab](../queries/history-and-auditing.md#filter-history) 
 > - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
-> - [Move a card to a specific column position](../boards/reorder-cards.md#move-to-column-position)
-
+> - [Move a card to a specific column position](../boards/customize-cards.md#reorder-cards)
+> - [Change the color of a swimlane on a Kanban board](../boards/expedite-work.md#add-or-remove-a-swimlane)
 ::: moniker-end
 
 
@@ -61,9 +61,9 @@ Use this index to quickly access concepts and tasks related to work items and in
    :::column span="1":::
       - [Link types](../queries/link-type-reference.md)  
       - [Linking and traceability](../queries/link-work-items-support-traceability.md)  
-      - [Mobile browser ](../..//project/navigation/mobile-work.md)  
+      - [Mobile browser](../..//project/navigation/mobile-work.md)  
       - [New Boards Hub](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview)  
-      - [New work item widget ](../../report/dashboards/widget-catalog.md#new-work-item)  
+      - [New work item widget](../../report/dashboards/widget-catalog.md#new-work-item)  
       - [On-premises XML process model](../../reference/on-premises-xml-process-model.md)  
       - [Permissions and access](../../organizations/security/permissions-access-work-tracking.md)  
       - [Process guidance](guidance/choose-process.md)  
@@ -162,7 +162,8 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Delete work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
       - [Delete work items](../backlogs/remove-delete-work-items.md)  
       ::: moniker-end
-      <br/>
+
+
       - [Email work item list](email-work-items.md)  
       - [Export a work item list](email-work-items.md#export)  
    :::column-end:::
@@ -186,7 +187,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Manage issues or impediments](../backlogs/manage-issues-impediments.md)
       - [Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
       - [Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) 
-      - [Move a card to a specific column position](../boards/reorder-cards.md#move-to-column-position) 
+      - [Move a card to a specific column position](../boards/customize-cards.md#reorder-cards) 
       - [Move work items to a sprint](../sprints/assign-work-sprint.md)  
       - [Move work items to another project](../backlogs/move-change-type.md#move)  
       <br/>
@@ -200,7 +201,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
       - [Reassign work items](../backlogs/bulk-modify-work-items.md#reassign-work-items)
       - [Remove work items](../backlogs/remove-delete-work-items.md#remove-work-items)  
-      - [Request feedback ](../../project/feedback/get-feedback.md)  
+      - [Request feedback ](/previous-versions/azure/devops/project/feedback/get-feedback)  
       - [Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)  
       <br/>
       - [Start storyboarding ](../queries/share-plans.md#storyboard)  
@@ -288,7 +289,8 @@ You customize work item types using either the Inheritance process model or On-p
       - [Move the field within the layout](../../organizations/settings/work/customize-process-form.md#move-field)  
       - [Remove a field from form](../../organizations/settings/work/customize-process-field.md#remove-field)  
       - [Restrict modification](../../organizations/security/restrict-access.md#restrict-modifications-wits)  
-      - [Set Required/Default options](../../organizations/settings/work/customize-process-field.md#options)  
+      - [Set required/default options](../../organizations/settings/work/customize-process-field.md#options)  
+      - [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md)
    :::column-end:::
 :::row-end:::
 ---
@@ -328,7 +330,8 @@ You customize work item types using either the Inheritance process model or On-p
       <br/>
       - [Remove a field from a form](../../organizations/settings/work/customize-process-field.md#remove-field)  
       - [Restrict modification](../../organizations/security/restrict-access.md#restrict-modifications-wits)  
-      - [Set Required/Default options](../../organizations/settings/work/customize-process-field.md#options)  
+      - [Set required/default options](../../organizations/settings/work/customize-process-field.md#options)  
+      - [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md)
    :::column-end:::
 :::row-end:::
 ---
@@ -362,7 +365,7 @@ You customize work item types using the On-premises XML process model. For more 
       - [Change a field label](../../reference/add-modify-field.md#change-label)    
       - [Define Area Paths](../../organizations/settings/set-area-paths.md)    
       - [Define Iteration Paths](../../organizations/settings/set-iteration-paths-sprints.md)    
-      - [Define global lists](../../reference/xml/define-global-lists.md)    
+      - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)    
       - [Delete a field](../../reference/add-modify-field.md#delete-field)    
       - [Modify a predefined pick list](../../reference/add-modify-field.md#picklist)  
       - [Remove a field from a form](../../reference/add-modify-field.md#change-label)  

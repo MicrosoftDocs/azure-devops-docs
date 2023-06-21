@@ -9,20 +9,20 @@ ms.date: 02/14/2022
 
 ::: moniker range=">= azure-devops-2019"
 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
 1. Select **Artifacts**, and then select **Create Feed**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create a feed button](../media/new-feed-button-azure-devops-newnav.png)
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="A screenshot showing the create a feed button.":::
 
-1. Give your feed a **Name** and choose its **visibility** (who can view packages in this feed), **upstream sources**, and **scope** (project-scoped or organization-scoped) settings.
+1. Provide a descriptive **Name** for your feed and specify its **Visibility** (determining who can view packages within the feed). Additionally, configure the **Upstream sources** and specify the **Scope** of your feed (project-scoped or organization-scoped).
 
-   > [!div class="mx-imgBorder"] 
-   > ![New feed dialog box](../media/new-feed-dialog-azure-devops.png)
+    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
 
 1. Select **Create** when you're done.
 
 > [!NOTE]
-> By default, the *Project Collection Build Service* (org-scoped) and the project-level *Build Service* (project-scoped) are set to **Collaborator** when you create a new feed.
+> When creating a new feed, the default access level for the *Project Collection Build Service* (organization-scoped) and the project-level *Build Service*(project-scoped) is set to **Collaborator**.
 
 ::: moniker-end
 

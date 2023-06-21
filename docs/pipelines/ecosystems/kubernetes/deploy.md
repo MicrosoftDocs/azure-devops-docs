@@ -1,37 +1,112 @@
 ---
 title: Deploy to Kubernetes
 description: Use Azure Pipelines to deploy to Kubernetes clusters
-ms.topic: quickstart
+ms.topic: how-to
 ms.assetid: 710a03c9-d8ba-4013-bf8f-e672efc7abe4
-ms.author: atulmal
-author: azooinmyluggage
-ms.date: 03/03/2022
+ms.date: 05/11/2023
 monikerRange: 'azure-devops'
+ms.custom: engagement-fy23
 ---
+
 # Deploy to Kubernetes
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-Azure Pipelines can be used to deploy to Kubernetes clusters offered by multiple cloud providers. This document contains the concepts associated with setting up deployments for any Kubernetes cluster.
+You can use Azure Pipelines to deploy to [Azure Kubernetes Service](/azure/aks/) and Kubernetes clusters offered by other cloud providers. Azure Pipelines has two tasks for working with Kubernetes:
 
-While it's possible to use script for loading kubeconfig files onto the agent from a remote location or secure files and then use kubectl for performing the deployments, the [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) and [Kubernetes service connection](../../library/service-endpoints.md) are the recommended approach. 
+* [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0): bake and deploy manifests to Kubernetes clusters with Helm, Kompose, or Kustomize
+* [Kubectl task](/azure/devops/pipelines/tasks/reference/kubernetes-v1): deploy, configure, and update a Kubernetes cluster in Azure Container Service by running kubectl commands
+
+If you're using Azure Kubernetes Service with either task, the Azure Resource Manager service connection type is the best way to connect to a private cluster, or a cluster that has local accounts disabled. 
+
+For added deployment traceability, use a [Kubernetes resource](../../process/environments-kubernetes.md) in [environments](../../process/environments.md) with a Kubernetes task. 
+
+To get started with Azure Pipelines and Azure Kubernetes service, see [Build and deploy to Azure Kubernetes Service with Azure Pipelines](/azure/aks/devops-pipeline). To get started with Azure Pipelines, Kubernetes, and the canary deployment strategy specifically, see [Use a canary deployment strategy for Kubernetes deployments with Azure Pipelines](./canary-demo.md). 
 
 ## KubernetesManifest task
 
-The [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) has the added benefits of being able to check for object stability before marking a task as success/failure. The task can also perform artifact substitution, add pipeline traceability-related annotations onto deployed objects, simplify creation and referencing of imagePullSecrets, bake manifests using Helm or kustomization.yaml or Docker compose files, and aid in deployment strategy roll outs.
+The [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) checks for object stability before marking a task as success/failure. The task can also perform artifact substitution, add pipeline traceability-related annotations, simplify creation and referencing of imagePullSecrets, bake manifests, and aid in deployment strategy roll outs.
 
-## Kubernetes resource in environments
+> [!NOTE]
+>  While YAML-based pipeline support triggers on a single Git repository, if you need a trigger for a manifest file stored in another Git repository or if triggers are needed for Azure Container Registry or Docker Hub, you should use a classic pipeline instead of a YAML-based pipeline.
 
-The [Kubernetes resource](../../process/environments-kubernetes.md) in [environments](../../process/environments.md) provides a secure way of specifying the credential required to connect to a Kubernetes cluster for performing deployments. 
+You can use the bake action in the [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) to bake templates into Kubernetes manifest files. The action lets you use tools such as [Helm](https://helm.sh), [Kustomize](https://github.com/kubernetes-sigs/kustomize), and [Kompose](https://github.com/kubernetes/kompose). The bake action of the Kubernetes manifest task provides visibility into the transformation between input templates and the end manifest files that are used in deployments.  You can consume baked manifest files downstream (in tasks) as inputs for the deploy action of the Kubernetes manifest task. 
 
-### Resource creation
+You can target [Kubernetes resources](../../process/environments-kubernetes.md) that are part of [environments](../../process/environments.md) with [deployment jobs](../../process/deployment-jobs.md). Using environments and resources deployment gives you access to better pipeline traceability so that you can diagnose deployment issues. You can also deploy to Kubernetes clusters with regular [jobs](../../process/phases.md) without the same health features.
 
-In the **Azure Kubernetes Service** provider option, once the subscription, cluster and namespace inputs are provided, in addition to fetching and securely storing the required credentials, for an RBAC-enabled cluster [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) and [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) objects are created such that the ServiceAccount is able to perform actions only on the chosen namespace.
+The following YAML code is an example of baking manifest files from Helm charts
 
-The **Generic provider** (reusing existing ServiceAccount) option can be used to configure a connection to any cloud provider's cluster (AKS/EKS/GKE/OpenShift/etc.).
+```yaml
+steps:
+- task: KubernetesManifest@0
+  name: bake
+  displayName: Bake K8s manifests from Helm chart
+  inputs:
+    action: bake
+    helmChart: charts/sample
+    overrides: 'image.repository:nginx'
 
-## Example
+- task: KubernetesManifest@0
+  displayName: Deploy K8s manifests
+  inputs:
+    kubernetesServiceConnection: someK8sSC
+    namespace: default
+    manifests: $(bake.manifestsBundle)
+    containers: |
+      nginx: 1.7.9
+```
+## Kubectl task
+
+As an alternative to the KubernetesManifest [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0), you can use the [Kubectl task](/azure/devops/pipelines/tasks/reference/kubernetes-v1) to deploy, configure, and update a Kubernetes cluster in Azure Container Service by running kubectl commands. 
+
+The following example shows how a service connection is used to refer to the Kubernetes cluster. 
+
+```yaml
+- task: Kubernetes@1
+  displayName: kubectl apply
+  inputs:
+    connectionType: Kubernetes Service Connection
+    kubernetesServiceEndpoint: Contoso
+```
+
+## Script task
+
+You can also use `kubectl` with a [script task](../../scripts/cross-platform-scripting.md). 
+
+The following example uses a script to run `kubectl`. 
+
+```yaml
+- script: |
+    kubectl apply -f manifest.yml
+```
+
+
+## Kubernetes deployment strategies
+
+The [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) currently supports canary deployment strategy. Use canary deployment strategy to partially deploy new changes so that the new changes coexist with the current deployments before  a full rollout. 
+
+For more information on canary deployments with pipelines, see [Use a canary deployment strategy for Kubernetes deployments with Azure Pipelines](./canary-demo.md). 
+
+## Multicloud Kubernetes deployments
+
+Kubernetes runs the same way on all cloud providers. Azure Pipelines can be used for deploying to Azure Kubernetes Service (AKS), Google Kubernetes Engine (GKE), Amazon Elastic Kubernetes Service (EKS), or clusters from any other cloud providers.
+
+To set up multicloud deployment, [create an environment](../../process/environments.md#creation) and then add your Kubernetes resources associated with namespaces of Kubernetes clusters. 
+
+* [Azure Kubernetes Service](../../process/environments-kubernetes.md#use-azure-kubernetes-service)
+* [Generic provider using existing service account](../../process/environments-kubernetes.md#use-an-existing-service-account)
+
+> The generic provider approach based on existing service account works with clusters from any cloud provider, including Azure. The benefit of using the Azure Kubernetes Service option instead is that it creates new [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) and [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) objects (instead of reusing an existing ServiceAccount) so that the newly created RoleBinding object can limit the operations of the ServiceAccount to the chosen namespace only.
+
+When you use the generic provider approach, [make sure that a RoleBinding exists](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#kubectl-create-rolebinding), which grants permissions in the `edit` `ClusterRole` to the desired service account. You need to grant permissions to the right services account so that the service account can be used by Azure Pipelines to create objects in the chosen namespace.
+
+### Parallel deployments to multiple clouds
+
+The following example shows how to do parallel deployments to clusters in multiple clouds. In this example, there are deployments to the AKS, GKE, EKS, and OpenShift clusters. These four namespaces are associated with Kubernetes resources under the `contoso` environment. 
+
 ```YAML
+trigger:
+- main
 
 jobs:
 - deployment:
@@ -45,45 +120,78 @@ jobs:
         steps:
         - checkout: self
         - task: KubernetesManifest@0
-          displayName: Create secret
-          inputs: 
-            action: createSecret
-            namespace: aksnamespace
-            secretType: dockerRegistry
-            secretName: foo-acr-secret
-            dockerRegistryEndpoint: fooACR
-            
-        - task: KubernetesManifest@0
-          displayName: Create secret
-          inputs: 
-            action: createSecret
-            namespace: aksnamespace
-            secretType: dockerRegistry
-            secretName: bar-acr-secret
-            dockerRegistryEndpoint: barACR
-            
-        - task: KubernetesManifest@0
-          displayName: Deploy
+          displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
             namespace: aksnamespace
-            manifests: manifests/deployment.yml|manifests/service.yml
-            containers: |
-              foo.azurecr.io/demo:$(tagVariable1)
-              bar.azurecr.io/demo:$(tagVariable2)
-            imagePullSecrets: |
-              foo-acr-secret
-              bar-acr-secret
+            manifests: manifests/*
+- deployment:
+  displayName: Deploy to GKE
+  pool:
+    vmImage: ubuntu-latest
+  environment: contoso.gkenamespace
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - checkout: self
+        - task: KubernetesManifest@0
+          displayName: Deploy to Kubernetes cluster
+          inputs:
+            action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
+            namespace: gkenamespace
+            manifests: manifests/*
+- deployment:
+  displayName: Deploy to EKS
+  pool:
+    vmImage: ubuntu-latest
+  environment: contoso.eksnamespace
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - checkout: self
+        - task: KubernetesManifest@0
+          displayName: Deploy to Kubernetes cluster
+          inputs:
+            action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
+            namespace: eksnamespace
+            manifests: manifests/*
+- deployment:
+  displayName: Deploy to OpenShift
+  pool:
+    vmImage: ubuntu-latest
+  environment: contoso.openshiftnamespace
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - checkout: self
+        - task: KubernetesManifest@0
+          displayName: Deploy to Kubernetes cluster
+          inputs:
+            action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
+            namespace: openshiftnamespace
+            manifests: manifests/*
+- deployment:
+  displayName: Deploy to DigitalOcean
+  pool:
+    vmImage: ubuntu-latest
+  environment: contoso.digitaloceannamespace
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - checkout: self
+        - task: KubernetesManifest@0
+          displayName: Deploy to Kubernetes cluster
+          inputs:
+            action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
+            namespace: digitaloceannamespace
+            manifests: manifests/*
 ```
-
-To allow image pull from private registries, before the `deploy` action, the `createSecret` action is used along with instances of [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) to create imagePullSecrets that are later referenced in the step corresponding to `deploy` action.
-
-> [!TIP]
-> - If setting up an end-to-end CI-CD pipeline from scratch for a repository containing a Dockerfile, checkout the [Deploy to Azure Kubernetes template](aks-template.md), which constructs an end-to-end YAML pipeline along with creation of an [environment](../../process/environments.md) and [Kubernetes resource](../../process/environments-kubernetes.md) to help visualize these deployments.
-> -  While YAML based pipeline currently supports triggers on a single Git repository, if triggers are required for manifest files stored in another Git repository or if triggers are required for Azure Container Registry or Docker Hub, usage of release pipelines instead of a YAML based pipeline is recommended for doing the Kubernetes deployments.
-
-## Alternatives
-
-Instead of using the KubernetesManifest task for deployment, one can also use the following alternatives:
-- [Kubectl task](/azure/devops/pipelines/tasks/reference/kubernetes-v1)
-- kubectl invocation on script. For example: ```script: kubectl apply -f manifest.yml```

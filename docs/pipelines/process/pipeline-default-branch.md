@@ -18,7 +18,7 @@ By default, a pipeline's default branch is the default branch of the repository.
 
 To view and update the **Default branch for manual and scheduled builds** setting:
 
-1. [Navigate](../get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
+1. [Go to the pipeline details](../create-first-pipeline.md#view-and-manage-your-pipelines) for your pipeline, and choose **Edit**.
 
     :::image type="content" source="media/pipeline-triggers/pipeline-edit.png" alt-text="Edit pipeline."::: 
 

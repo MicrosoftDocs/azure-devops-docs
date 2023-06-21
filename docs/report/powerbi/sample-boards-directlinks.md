@@ -3,9 +3,9 @@ title: List linked work items sample queries and reports
 titleSuffix: Azure DevOps
 description: Learn how to generate Power BI reports based on Work Items with Direct Links.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
+ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
-author: KathrynEE
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/08/2021
@@ -83,7 +83,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -406,7 +406,7 @@ In this example, the following fields have been renamed:
 
 ## Create a table report to list linked work items 
 
-1. In Power BI, choose **Table** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose **Table** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/parent-child-links-list-table-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Parent-Child Links list table report. ":::
 

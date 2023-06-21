@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description:  Learn how to generate a rollup of child work item values to the parent Power BI report.
 ms.subservice: azure-devops-analytics
 ms.custom: powerbisample, engagement-fy23
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/16/2022
@@ -76,7 +76,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 - `{organization}` - Your organization name 
@@ -396,7 +396,7 @@ Repeat for all the rollup columns.
 
 ## Create the Table report
 
-1. In Power BI, choose the **Table** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Table** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/rollup-table-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Rollup table report. ":::
 

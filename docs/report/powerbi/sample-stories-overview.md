@@ -5,11 +5,11 @@ description: Learn about Power BI queries to generate a report that tracks work 
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.author: shdalv
-ms.custom: powerbisample
-author: KathrynEE
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 09/17/2021
+ms.date: 01/19/2023
 ---
 
 # Requirements tracking sample report
@@ -18,24 +18,41 @@ ms.date: 09/17/2021
 
 You can track the quality of work items that belong to the Requirements category with the requirements tracking report. The Requirements category includes work items such as User Stories (Agile), Product Backlog Items (Scrum), Issues (Basic), and Requirements (CMMI). To learn more about work item categories, see [Track user stories, issues, bugs, and other work items](../../boards/work-items/about-work-items.md#wit).
 
-[!INCLUDE [temp](includes/preview-note.md)]
+The following image shows an example of a requirements tracking report. 
 
-An example is shown in the following image. 
+:::image type="content" source="media/odatapowerbi-storiesoverview.png" alt-text="Screenshot of Power BI Requirements tracking report.":::
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Stories Overview Report.](media/odatapowerbi-storiesoverview.png) 
- 
+This report displays the following information for each requirement that it lists:
+
+- **Percent work completed**:  Progress bar that shows the percentage of completed work based on the rollup of completed hours for all tasks that are linked to the requirement.
+- **Passed tests**: The number of test cases run that's passed based on the most recent test run.  
+- **Failed tests**: The number of test cases run that's failed based on the most recent test run. 
+- **Run tests**:  The number of test runs that's executed.  
+- **Active bugs**: The number of linked bugs in an Active state. 
+- **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
+
 
 > [!NOTE] 
 > Requirement tracking is supported only for test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
 
-[!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)]  
+[!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)] 
 
+[!INCLUDE [temp](includes/preview-note.md)]
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 [!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]  
 
-
 ## Sample queries
+
+To generate the report, you must add three Power BI queries to Power BI desktop and then link them. Each query executes either the `WorkItems` or `TestPoints` entity set.
+ 
+> [!NOTE]   
+> The Power BI query snippets provided in the following sections include the requisite data transforms to expand columns and change data type.
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]   
 
 ### Query area and iteration paths
 
@@ -115,6 +132,9 @@ $filter=(
 
 ### Query for test execution status of requirements
 
+
+[!INCLUDE [temp](includes/query-filters-test.md)] 
+
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
@@ -145,6 +165,7 @@ let
 in
     #"Changed Type"
 ```
+ 
 
 #### [OData query](#tab/odata/)
 
@@ -240,28 +261,140 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ```
 
 ***
+ 
+
+## Substitution strings and query breakdown
+
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+- `{organization}` - Your organization name 
+- `{project}` - The name of your project  
+- `{iterationSK}` - The GUID associated with the **Iteration Path** of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#iterationsk](Return the IterationSK for a specific Iteration Path)
+- `{areaSK}` - The GUID associated with the Area Path of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#areask](Return the AreaSK for a specific Area Path).
 
 
-[!INCLUDE [stories-overview-substitutions-breakdown](includes/sample-stories-overview-sub-breakdown.md)]
+### Query breakdown
+
+The following table describes each part of the query.
+
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       `$filter=(
+        IterationSK eq {iterationSK}
+        and AreaSK eq {areaSK}`
+        )`
+   :::column-end:::
+   :::column span="1":::
+   Returns data for only selected Iteration, Area, and backlog work items.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Processes/any(p:p/BacklogType eq 'RequirementBacklog')`
+   :::column-end:::
+   :::column span="1":::
+   Filter the work items in such a way that they should fall in 'requirements' category for at least one process associated with them.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Processes/all(p:p/IsBugType eq false)`
+   :::column-end:::
+   :::column span="1":::
+   Omit the bug type work items while getting requirements. In Basic process template, Issue work items are also of bug type, so for Basic process remove this clause from your query.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `filter(
+        (TestSuite/RequirementWorkItem/IterationSK eq {iterationSK} 
+        and TestSuite/RequirementWorkItem/AreaSK eq {areaSK}
+        and TestSuite/RequirementWorkItem/Processes/any(p:p/BacklogType eq 'RequirementBacklog') 
+        and TestSuite/RequirementWorkItem/Processes/all(p:p/IsBugType eq false)
+        )
+       )`
+   :::column-end:::
+   :::column span="1":::
+   Return data for only selected requirements based on Iteration and Area.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/aggregate($count as TotalCount,`
+   :::column-end:::
+   :::column span="1":::
+   Aggregate data across the filtered test points with having count as `TotalCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed`
+   :::column-end:::
+   :::column span="1":::
+   While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as '`Passed`' metric.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+       `&$expand=Descendants(
+        $apply=filter(
+            CompletedWork ne null 
+            or RemainingWork ne null
+        )`
+   :::column-end:::
+   :::column span="1":::
+   Returns *Completed Work* and *Remaining Work* data for child work items of filtered parent items.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    `/aggregate(
+        iif(CompletedWork ne null, CompletedWork, 0) with sum as SumCompletedWork, 
+        iif(RemainingWork ne null, RemainingWork, 0) with sum as SumRemainingWork`
+   :::column-end:::
+   :::column span="1":::
+   Aggregate *Completed Work* and *Remaining Work* data across the filtered work items.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `)/compute(
+            (SumCompletedWork add SumRemainingWork) as TotalWork, 
+            SumCompletedWork as SumCompleted`
+   :::column-end:::
+   :::column span="1":::
+   Compute the total rollup of *Completed Work* and *Remaining Work*.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `)/compute(
+            iif(TotalWork gt 0,(SumCompleted div cast(TotalWork, Edm.Double) mul 100), 0) as PercCompletedWork
+       )`
+   :::column-end:::
+   :::column span="1":::
+   Calculate the percent of completed wor.
+   :::column-end:::
+:::row-end:::
+ 
 
 
-## Power BI transforms
-
-The transforms applied to Power BI queries are already added in query snippets.
-
-
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The following example assumes that no one renamed any columns. 
+## Create the Table report 
 
 To create the report, perform the following steps:
 
-1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by WorkItemId column. 
-1. Create a Power BI visualization **Table**.
-1. Add the columns you are interested in from the three Power BI queries.
+1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by `WorkItemId` column. 
+1. Under **Visualizations**, choose **Table**.
+1. Add the columns you're interested in from the three Power BI queries.
 1. Select **Sum** as aggregation for additive columns like **Passed tests** etc.
     > [!div class="mx-imgBorder"] 
     > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/media/powerbi-sum-aggregation.png)

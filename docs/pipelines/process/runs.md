@@ -2,6 +2,7 @@
 title: Pipeline run sequence
 description: Learn how Azure Pipelines runs your jobs, tasks, and scripts
 ms.topic: conceptual
+ms.custom: devx-track-azurecli
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
 ms.date: 01/04/2023
 monikerRange: '>= azure-devops-2019'

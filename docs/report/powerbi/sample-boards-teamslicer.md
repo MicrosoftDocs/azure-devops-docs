@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to add a team slicer to a Power BI report.
 ms.subservice: azure-devops-analytics
 ms.custom: powerbisample, engagement-fy23
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/16/2022
@@ -60,7 +60,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 

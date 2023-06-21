@@ -3,21 +3,19 @@ title: View subscribed notifications
 titleSuffix: Azure DevOps
 description: View your notifications and unsubscribe from a default or built-in notification in Azure DevOps.
 ms.subservice: azure-devops-notifications
-ms.custom: quarterly-update
+ms.custom: quarterly-update, engagement-fy23
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2020
+ms.date: 01/23/2023
 monikerRange: '<= azure-devops'
 ---
 
-# View your subscriptions, opt-out as needed
+# View your subscriptions, opt out as needed
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If you want to stop receiving select email notifications, you can do so by unsubscribing from them. For a description of each default subscription, see [Default notifications](oob-built-in-notifications.md).  
-
-Start by opening your personal notification settings from your home page. Select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **Settings**, and then select **Profile**. If you don't have a project yet, create one in [Azure DevOps](../../organizations/accounts/set-up-vs.md).
 
 ## View subscriptions
 
@@ -27,7 +25,9 @@ Start by opening your personal notification settings from your home page. Select
 
    ![Open Azure DevOps profile](../../media/open-user-settings-profile-preview.png)
 
-   The notifications you're subscribed to are indicated with the the blue toggle under State. 
+2. Select **Notifications**.
+
+   Your subscribed notifications show the State as **On**.
 
    ![Notifications turned On](media/notifications-turned-on.png)
 
@@ -39,7 +39,7 @@ Start by opening your personal notification settings from your home page. Select
 
 2. To unsubscribe, slide the toggle to the *Off* position.
 
-    In the following image the "Build completes" subscription is turned off.
+    In the following image, the "Build completes" subscription is turned off.
 
     ![Notification is turned off](media/notification-turned-off.png)
 
@@ -51,7 +51,7 @@ Start by opening your personal notification settings from your home page. Select
 
     <img src="media/unsubscribe-open-notification-settings.png" alt="Open personal notification settings" />
 
-    The notifications you're subscribed to are indicated with the State as **On**.  
+    Your subscribed notifications show the State as **On**.  
 
     <img src="media/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" />
 
@@ -63,9 +63,15 @@ Start by opening your personal notification settings from your home page. Select
 
 2. To unsubscribe, slide the state **On/Off** indicator to the *Off* position.
 
-    In the following image the "Build completes" subscription is turned off.
+    In the following image, the "Build completes" subscription is turned off.
 
     <img src="media/unsubscribe-from-build-completes.png" alt="Unsubscribe from Build completes subscription" />
 
 ::: moniker-end
 
+## Related articles
+
+- [Manage personal notifications](manage-your-personal-notifications.md)
+- [Manage notifications for a team, project, or organization](manage-team-group-global-organization-notifications.md)
+- [Use @mentions in work items and pull requests](at-mentions.md)
+- [About notifications](about-notifications.md)

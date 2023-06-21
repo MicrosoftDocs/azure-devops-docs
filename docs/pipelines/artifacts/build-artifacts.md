@@ -12,8 +12,12 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+::: moniker range="azure-devops"
+
 > [!NOTE]
 > We recommend using [Download Pipeline Artifacts](pipeline-artifacts.md#download-artifacts) and [Publish Pipeline Artifacts](pipeline-artifacts.md#publish-artifacts) for faster performance.
+
+::: moniker-end
 
 Azure Artifacts enables teams to use feeds and upstream sources to manage their dependencies. You can use Azure Pipelines to publish and download different types of artifacts as part of your CI/CD workflow.
 

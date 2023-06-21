@@ -113,6 +113,7 @@
         "pipelines/*.md": "sdanie",
         "pipelines/agents/**": "sdanie",
         "pipelines/apps/**": "jukullam",
+        "pipelines/architectures/**": "jukullam",
         "pipelines/archive/**": "sdanie",
         "pipelines/artifacts/**": "rabououn",
         "pipelines/build/**": "sdanie",
@@ -196,6 +197,9 @@
         "pipelines/targets/**": "azure-devops-pipelines-targets",
         "pipelines/tasks/**": "azure-devops-pipelines-tasks",
         "pipelines/test/**": "azure-devops-pipelines-test"
+      },
+      "ms.custom": {
+        "repos/**": "UpdateFrequency3"
       },
       "recommendations": {
         "pipelines/repos/**": "true",

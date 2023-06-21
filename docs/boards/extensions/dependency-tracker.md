@@ -5,8 +5,8 @@ description: Learn how to plan and manage dependencies across teams, projects, a
 ms.custom: extensions, archive-candidate
 ms.service: azure-devops-boards
 ms.topic: how-to 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 06/02/2022
 ---

@@ -32,18 +32,16 @@
   - name: Track stakeholder feedback requests
     displayName: stakeholder, feedback, response, query
     href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
-- name: Microsoft Feedback client
+- name: Microsoft Feedback client (Archived)
   items:
   - name: Request feedback
-    href: get-feedback.md
+    href: /previous-versions/azure/devops/project/feedback/get-feedback 
   - name: Provide feedback
-    href: give-feedback.md
-- name: Track feedback requests
-  displayName: stakeholder, feedback, track
-  href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
-- name: Set feedback permissions (Security)
-  href: give-permissions-feedback.md
-- name: Enable remote audio capture
-  href: enable-remote-audio-capture.md
-- name: Change the audio device or annotation tool
-  href: change-audio-device-annotation-tool.md
+    href: /previous-versions/azure/devops/project/feedback/give-feedback
+  - name: Set feedback permissions  
+    href: /previous-versions/azure/devops/project/feedback/give-permissions-feedback
+    displayName: security
+  - name: Enable remote audio capture
+    href: /previous-versions/azure/devops/project/feedback/enable-remote-audio-capture
+  - name: Change the audio device or annotation tool
+    href: /previous-versions/azure/devops/project/feedback/change-audio-device-annotation-tool

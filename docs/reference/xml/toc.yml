@@ -1,6 +1,6 @@
 - name: On-premises XML process model
   href: ../on-premises-xml-process-model.md
-- name: Fields
+- name: Fields, workflow, and forms
   items:
   - name: View fields
     href: ../../boards/work-items/work-item-fields.md?toc=/azure/devops/reference/toc.json
@@ -8,125 +8,129 @@
     href: ../add-modify-field.md
   - name: Apply a field rule
     href: ../../organizations/settings/work/rule-reference.md
-  - name: Define pick lists
-    href: define-pick-lists.md
-  - name: Expand list and exclude groups
-    href: expand-list-items-and-exclude-groups-from-lists.md
-  - name: Combine list types
-    href: combine-list-types.md
-  - name: Reporting reference
-    items:
-    - name: Reportable fields reference
-      href: reportable-fields-reference.md
-    - name: Change reporting attributes
-      href: add-or-modify-work-item-fields-to-support-reporting.md
-- name: Change the workflow
-  href: change-workflow-wit.md
-- name: Work item type or form
-  items:
+  - name: Change the workflow
+    href: change-workflow-wit.md
   - name: Add or modify a work item type
     href: ../add-modify-wit.md
-  - name: Customize the work item form
-    href: ../customize-wit-form.md
   - name: Provide help text, hyperlinks, or web content
     href: provide-help-text-hyperlinks-web-content-form.md
-  - name: Specify work item form controls
-    href: specify-work-item-form-controls.md
-  - name: Define link controls
-    href: /previous-versions/azure/devops/reference/xml/define-link-controls?view=tfs-2017&preserve-view=true
-  - name: Change the maximum attachment size for work items
-    href: change-maximum-attachment-size-work-items.md
 - name: Backlogs and boards
   items:
   - name: Add work item types
     href: ../add-wits-to-backlogs-and-boards.md
   - name: Add portfolio backlogs
     href: ../add-portfolio-backlogs.md
-  - name: Use categories to group work item types
-    href: use-categories-to-group-work-item-types.md
-  - name: Resolve process configuration issues
-    href: ../troubleshoot-process-configuration.md
-- name: Define a custom link type
-  href: define-custom-link-type.md
-- name: Work tracking XML element reference
-  items:
-  - name: XML element reference
-    href: xml-element-reference.md
-  - name: All WITD elements
-    href: all-witd-xml-elements-reference.md
-  - name: Localization and globalization XML elements
-    href: localization-and-globalization-of-witd-child-elements.md
-  - name: FIELD (Definition) elements
-    items:
-    - name: All FIELD (Definition) elements
-      href: all-field-xml-elements-reference.md
-    - name: FIELD (Definition)
-      href: field-definition-element-reference.md
-    - name: COPY, DEFAULT, and SERVERDEFAULT
-      href: define-default-copy-value-field.md
-    - name: GLOBALLIST XML element reference
-      href: define-global-lists.md
-    - name: Global workflow XML element reference
-      href: global-workflow-xml-element-reference.md
-    - name: Apply pattern matching
-      href: apply-pattern-matching-to-string-field.md
-    - name: Conditional rules
-      href: assign-conditional-based-values-and-rules.md
-  - name: WORKFLOW elements
-    items:
-    - name: WORKFLOW elements
-      href: all-workflow-xml-elements-reference.md 
-    - name: FIELD (Workflow) elements
-      href: field-workflow-element-reference.md
-    - name: Automate field assignments
-      href: automate-field-assignments-state-transition-reason.md
-    - name: TRANSITION
-      href: transition-xml-element.md
-  - name: FORM elements
-    items:
-    - name: All FORM elements
-      href: all-form-xml-elements-reference.md
-    - name: New web form layout
-      items:
-      - name: WebLayout and Control elements
-        href: weblayout-xml-elements.md
-      - name: LinksControlOptions (web)
-        href: linkscontroloptions-xml-elements.md
-      - name: WebpageControlOptions
-        href: webpagecontroloptions-xml-elements-reference.md
-      - name: LabelText and Text
-        href: labeltext-and-text-xml-elements-reference.md
-  - name: CATEGORIES XML reference
-    href: categories-xml-element-reference.md
-  - name: LinkTypes elements reference
-    href: link-type-element-reference.md
   - name: ProcessConfiguration XML reference
     href: process-configuration-xml-element.md
-  - name: Web and client form layout (Legacy)
-    items:
-    - name: Manage roll out of the new web form
-      href: /previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true
-    - name: Add web content to a form
-      href: /previous-versions/azure/devops/reference/xml/edit-wit-definition-add-web-content-form?view=tfs-2015&preserve-view=true
-    - name: Change the work item form layout
-      href: /previous-versions/azure/devops/reference/xml/change-work-item-form-layout
-    - name: Design the work item form
-      href: /previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true
-    - name: Add the Attachments control
-      href: /previous-versions/azure/devops/reference/xml/add-the-attachments-control?view=tfs-2017&preserve-view=true
-    - name: Layout
-      href: /previous-versions/azure/devops/reference/xml/layout-xml-element-reference?view=tfs-2015&preserve-view=true
-    - name: Control
-      href: /previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true
-    - name: Tab
-      href: /previous-versions/azure/devops/reference/xml/tab-xml-element-reference?view=tfs-2015&preserve-view=true
-    - name: LinksControlOptions (web/client)
-      href: /previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true
-    - name: Link and Param
-      href: link-param-xml-elements-reference.md
-- name: Manual updates
+- name: Archived articles
   items:
-  - name: Update the workflow for agile projects
-    href: /previous-versions/azure/devops/reference/xml/update-the-workflow-for-agile-team-projects?view=tfs-2015&preserve-view=true
-  - name: Use team fields instead of area paths
-    href: /previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths?view=tfs-2017&preserve-view=true
+  - name: Change the maximum attachment size for work items
+    href: /previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items 
+  - name: XML element reference
+    items:
+    - name: XML element reference
+      href: /previous-versions/azure/devops/reference/xml/xml-element-reference
+    - name: All WITD elements
+      href: /previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference
+    - name: Localization and globalization XML elements
+      href: /previous-versions/azure/devops/reference/xml/localization-and-globalization-of-witd-child-elements
+    - name: FIELD (Definition) elements
+      items:
+      - name: All FIELD (Definition) elements
+        href: /previous-versions/azure/devops/reference/xml/all-field-xml-elements-reference
+      - name: FIELD (Definition)
+        href: /previous-versions/azure/devops/reference/xml/field-definition-element-reference
+      - name: COPY, DEFAULT, and SERVERDEFAULT
+        href: /previous-versions/azure/devops/reference/xml/define-default-copy-value-field
+      - name: GLOBALLIST XML element reference
+        href: /previous-versions/azure/devops/reference/xml/define-global-lists
+      - name: Global workflow XML element reference
+        href: /previous-versions/azure/devops/reference/xml/global-workflow-xml-element-reference
+      - name: Define pick lists
+        href: /previous-versions/azure/devops/reference/xml/define-pick-lists
+      - name: Expand list and exclude groups
+        href: /previous-versions/azure/devops/reference/xml/expand-list-items-and-exclude-groups-from-lists
+      - name: Combine list types
+        href: /previous-versions/azure/devops/reference/xml/combine-list-types
+      - name: Apply pattern matching
+        href: /previous-versions/azure/devops/reference/xml/apply-pattern-matching-to-string-field
+      - name: Conditional rules
+        href: /previous-versions/azure/devops/reference/xml/assign-conditional-based-values-and-rules
+    - name: WORKFLOW elements
+      items:
+      - name: WORKFLOW elements
+        href: /previous-versions/azure/devops/reference/xml/all-workflow-xml-elements-reference
+      - name: FIELD (Workflow) elements
+        href: /previous-versions/azure/devops/reference/xml/field-workflow-element-reference
+      - name: Automate field assignments
+        href: /previous-versions/azure/devops/reference/xml/automate-field-assignments-state-transition-reason
+      - name: TRANSITION
+        href: /previous-versions/azure/devops/reference/xml/transition-xml-element
+    - name: FORM elements
+      items:
+      - name: All FORM elements
+        href: /previous-versions/azure/devops/reference/xml/all-form-xml-elements-reference
+      - name: WebLayout and Control elements
+        href: /previous-versions/azure/devops/reference/xml/weblayout-xml-elements
+      - name: LinksControlOptions (web)
+        href: /previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements
+      - name: WebpageControlOptions
+        href: /previous-versions/azure/devops/reference/xml/webpagecontroloptions-xml-elements-reference
+      - name: LabelText and Text
+        href: /previous-versions/azure/devops/reference/xml/labeltext-and-text-xml-elements-reference
+      - name: Customize the work item form
+        href: /previous-versions/azure/devops/reference/customize-wit-form
+      - name: Specify work item form controls
+        href: /previous-versions/azure/devops/reference/xml/specify-work-item-form-controls 
+      - name: Define link controls
+        href: /previous-versions/azure/devops/reference/xml/define-link-controls 
+      - name: Web and client form layout (Legacy)
+        items:
+        - name: Manage roll out of the new web form
+          href: /previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true
+        - name: Add web content to a form
+          href: /previous-versions/azure/devops/reference/xml/edit-wit-definition-add-web-content-form?view=tfs-2015&preserve-view=true
+        - name: Change the work item form layout
+          href: /previous-versions/azure/devops/reference/xml/change-work-item-form-layout
+        - name: Design the work item form
+          href: /previous-versions/azure/devops/reference/xml/design-work-item-form
+        - name: Add the Attachments control
+          href: /previous-versions/azure/devops/reference/xml/add-the-attachments-control
+        - name: Layout
+          href: /previous-versions/azure/devops/reference/xml/layout-xml-element-reference
+        - name: Control
+          href: /previous-versions/azure/devops/reference/xml/control-xml-element-reference
+        - name: Tab
+          href: /previous-versions/azure/devops/reference/xml/tab-xml-element-reference
+        - name: LinksControlOptions (web/client)
+          href: /previous-versions/azure/devops/reference/xml/linkscontroloptions-elements
+        - name: Link and Param
+          href: link-param-xml-elements-reference.md
+    - name: CATEGORIES XML reference
+      href: /previous-versions/azure/devops/reference/xml/categories-xml-element-reference 
+    - name: Use categories to group work item types
+      href: /previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types 
+    - name: LinkTypes elements reference
+      href: /previous-versions/azure/devops/reference/xml/link-type-element-reference 
+    - name: Define a custom link type
+      href: /previous-versions/azure/devops/reference/xml/define-custom-link-type
+  - name: Reporting reference
+    items:
+    - name: Reportable fields reference
+      href: reportable-fields-reference.md
+    - name: Change reporting attributes
+      href: add-or-modify-work-item-fields-to-support-reporting.md
+  - name: Manual updates
+    items:
+    - name: Update the workflow for agile projects
+      href: /previous-versions/azure/devops/reference/xml/update-the-workflow-for-agile-team-projects
+    - name: Use team fields instead of area paths
+      href: /previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths
+  - name: Troubleshooting
+    items:
+    - name: Support bug update status using My Work
+      href: /previous-versions/azure/devops/reference/xml/support-bug-update-status-using-my-work
+    - name: Resolve errors received when configuring features
+      href: /previous-versions/azure/devops/reference/xml/resolve-errors-received-when-configuring-features
+    - name: Resolve process configuration issues
+      href: /previous-versions/azure/devops/reference/troubleshoot-process-configuration

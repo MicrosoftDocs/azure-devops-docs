@@ -5,7 +5,7 @@ description: Learn how to deploy to Azure using Azure Pipelines. Tutorials, refe
 ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235  
 ms.author: jukullam
 author: juliakm
-ms.date: 08/17/2021
+ms.date: 01/24/2023
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ---
@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
- Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. While you do not have to use Azure services with Pipelines, Pipelines can help you take advantage of Azure. You can use Pipelines to integrate your CI/CD process with most Azure services. 
+ Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. While you don't have to use Azure services with Pipelines, Pipelines can help you take advantage of Azure. You can use Pipelines to integrate your CI/CD process with most Azure services. 
 
 To learn more about selecting an Azure service for hosting your application code, see [Choose an Azure compute service for your application](/azure/architecture/guide/technology-choices/compute-decision-tree).
 
@@ -63,7 +63,7 @@ If you're just getting started, we recommend you review and get started with the
 :::row-end:::
 ---
 
-Follow the links provided in the following table to learn more about the Azure services that support continuous integration (CI) and continuous delivery (CD) using Azure Pipelines. For a complete list of Azure pipeline tasks, see [Build and release tasks](tasks/index.md).
+Follow the links provided in the following table to learn more about the Azure services that support continuous integration (CI) and continuous delivery (CD) using Azure Pipelines. For a complete list of Azure Pipelines tasks, see [Build and release tasks](tasks/index.md).
 
 
 :::row:::
@@ -248,9 +248,9 @@ Follow the links provided in the following table to learn more about the Azure s
    :::column-end::: 
    :::column span="3":::
       Use ARM templates to define the infrastructure and dependencies and streamline authentication to deploy your app using Azure Pipelines. Specifically, you can: 
-      - Create an ARM service connection using automated security
-      - Create an ARM service connection with an existing service principal
-      - Create an ARM service connection to a VM with a managed service identity
+      - Create an Azure Resource Manager service connection using automated security
+      - Create an Azure Resource Manager service connection with an existing service principal
+      - Create an Azure Resource Manager service connection to a VM with a managed service identity
       - Connect to an Azure Government Cloud
       - Connect to Azure Stack<br/>
       To learn more, see [Connect to Microsoft Azure](library/connect-to-azure.md).
@@ -293,7 +293,7 @@ Follow the links provided in the following table to learn more about the Azure s
       Simplify continuous delivery to Azure VMs using Azure Pipelines. To learn more, see these articles:
      - [Build an Azure virtual machine using an Azure RM template](./apps/cd/azure/deploy-arm-template.md)
      - [Deploy to Azure VMs using deployment groups in Azure Pipelines](release/deployment-groups/deploying-azure-vms-deployment-groups.md)
-     - [Tutorial: Deploy a Java app to a virtual machine scale set](apps/cd/azure/deploy-virtual-scale-set-java.md)  
+     - [Tutorial: Deploy a Java app to a Virtual Machine Scale Set](apps/cd/azure/deploy-virtual-scale-set-java.md)  
    :::column-end:::
 :::row-end:::
 ---

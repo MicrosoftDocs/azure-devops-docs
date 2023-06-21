@@ -31,7 +31,7 @@ This article walks through developing an extension that implements a **sample co
 
 :::image type="content" source="media/consumer-service.png" alt-text="Sample consumer service":::
 
-For more information, see the [Extension example GitHub repo](https://github.com/microsoft/vsts-extension-samples/tree/master/service-hooks-consumer).
+For more information, see the [Extension example GitHub repo](https://github.com/microsoft/azure-devops-extension-sample).
 For a list of all supported events you can use as triggers for your custom consumer extension, see [List of event types](../../service-hooks/events.md).
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
@@ -170,5 +170,5 @@ Actions for your consumer have the following properties:
 - [Available services for service hooks](../../service-hooks/overview.md#available-services)
 - [Create a service hook subscription programmatically](../../service-hooks/create-subscription.md)
 - [Test and debug extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)
-- [Extension example GitHub repo](https://github.com/microsoft/vsts-extension-samples/tree/master/service-hooks-consumer)
+- [Extension example GitHub repo](https://github.com/microsoft/azure-devops-extension-sample)
 - [List of event types](../../service-hooks/events.md)

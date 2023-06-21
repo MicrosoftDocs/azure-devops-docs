@@ -5,8 +5,8 @@ description: Learn about how Azure DevOps supports collaboration across all its 
 ms.subservice: azure-devops-cross-service
 ms.custom: cross-service
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 09/28/2022
 ---
@@ -435,7 +435,7 @@ Several collaboration scenarios are supported through Azure Boards work item typ
    :::column span="3":::
       Tracks information entered into a request feedback form. There are two forms that you can use to initiate a feedback request. 
       -  [Request stakeholder feedback](../test/request-stakeholder-feedback.md)
-      -  [Get feedback](../project/feedback/get-feedback.md). 
+      -  [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback). 
    :::column-end:::
 :::row-end:::
 ---
@@ -450,7 +450,7 @@ Several collaboration scenarios are supported through Azure Boards work item typ
       Enables stakeholders to provide feedback based on request for feedback or by volunteering feedback using the [Microsoft Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) marketplace extension. To learn more, see the following articles: 
       - [Provide feedback ](../test/provide-stakeholder-feedback.md)  
       - [Voluntarily provide stakeholder feedback](../test/voluntary-stakeholder-feedback.md)  
-      - [Give feedback](../project/feedback/give-feedback.md).  
+      - [Give feedback](/previous-versions/azure/devops/project/feedback/give-feedback).  
    :::column-end::: 
 :::row-end:::
 ---

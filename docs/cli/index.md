@@ -5,8 +5,8 @@ description: Use Azure DevOps extension command line interface
 ms.topic: quickstart
 ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
-ms.author: kaelli  
-author: KathrynEE
+ms.author: chcomley  
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 08/17/2020
 ---
@@ -46,7 +46,7 @@ Adding the Azure DevOps Extension adds `devops`, `pipelines`, `artifacts`, `boar
 For usage and help content for any command, enter the **-h** parameter, for example:
 
 ```azurecli
-$ az devops -h
+az devops -h
 ```
 
 ```output

@@ -5,8 +5,8 @@ description: Learn how to add a custom work item type for an Inheritance process
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
 ms.date: 08/03/2022

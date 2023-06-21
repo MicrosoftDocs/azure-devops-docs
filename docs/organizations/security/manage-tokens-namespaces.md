@@ -3,10 +3,10 @@ title: Manage permissions with a command line tool
 titleSuffix: Azure DevOps
 description: Manage security permissions using az devops security permission commands  
 ms.subservice: azure-devops-security
-ms.assetid: 
+ms.custom: devx-track-azurecli
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 03/31/2022
 ---

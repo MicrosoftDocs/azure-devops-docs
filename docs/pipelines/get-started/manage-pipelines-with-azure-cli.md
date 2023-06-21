@@ -3,6 +3,7 @@ title: Manage your pipeline with Azure CLI
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps extension command line interface to manage your pipelines
 ms.topic: conceptual
+ms.custom: devx-track-azurecli
 ms.author: sandrica
 author: silviuandrica
 monikerRange: '>= azure-devops-2020'

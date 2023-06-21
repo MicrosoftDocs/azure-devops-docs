@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Index to permissions defined for Azure DevOps
 ms.subservice: azure-devops-security
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022  
@@ -58,6 +58,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Administer task group permissions (Object)](../../pipelines/policies/permissions.md)
    - [Administer shelved changes (Collection)](change-organization-collection-level-permissions.md)
    - [Administer workspaces (Collection)](change-organization-collection-level-permissions.md)
+   - [Advanced Security](../../repos/security/github-advanced-security-permissions.md)
    - [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)
    - [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)

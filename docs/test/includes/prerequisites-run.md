@@ -1,7 +1,7 @@
 ---
 ms.service: azure-devops-test-plans
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 07/13/2021
 ---

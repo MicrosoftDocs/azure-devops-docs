@@ -5,8 +5,8 @@ description: Learn how to access Analytics OData from a Power BI Desktop OData f
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
 ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/01/2021
 ---

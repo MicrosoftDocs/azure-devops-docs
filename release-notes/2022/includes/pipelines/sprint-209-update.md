@@ -14,7 +14,7 @@ Previously, the Pipelines UI used to show the last commit message when displayin
 
 This message can be confusing, for example, when your YAML pipeline's code lives in a repository different from the one that holds the code it's building. We heard your feedback from the [Developer Community](https://developercommunity.visualstudio.com/content/idea/1030999/enabledisable-appending-the-to-the-title-of-every.html) asking us for a way to enable/disable appending the latest commit message to the title of every pipeline run. 
 
-With this update, we've added a new YAML property, named [`appendCommitMessageToRunName`](/azure/devops/pipelines/yaml-schema/pipeline?view=azure-pipelines#pipeline-stages), that lets you do exactly that. By default, the property is set to `true`. When you set it to `false`, the pipeline run will only display the [`BuildNumber`](/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml).
+With this update, we've added a new YAML property, named [`appendCommitMessageToRunName`](/azure/devops/pipelines/yaml-schema/pipeline?view=azure-pipelines#pipeline-stages&preserve-view=true), that lets you do exactly that. By default, the property is set to `true`. When you set it to `false`, the pipeline run will only display the [`BuildNumber`](/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Example of pipeline run with build number](../../media/209-pipelines-02.png)
@@ -24,7 +24,7 @@ With this update, we've added a new YAML property, named [`appendCommitMessageTo
 
 ### Consumed resources and template parameters in Pipelines Runs Rest API
 
-The extended [Pipelines Runs REST API](/rest/api/azure/devops/pipelines/runs/get?view=azure-devops-rest-7.1) now returns more types of artifacts used by a pipeline run and the parameters used to trigger that run. We enhanced the API to return the `container` and `pipeline` resources and the template parameters used in a pipeline run. You can now, for example, write compliance checks that evaluate the repositories, containers, and other pipeline runs used by a pipeline.
+The extended [Pipelines Runs REST API](/rest/api/azure/devops/pipelines/runs/get?view=azure-devops-rest-7.1&preserve-view=true) now returns more types of artifacts used by a pipeline run and the parameters used to trigger that run. We enhanced the API to return the `container` and `pipeline` resources and the template parameters used in a pipeline run. You can now, for example, write compliance checks that evaluate the repositories, containers, and other pipeline runs used by a pipeline.
 
 Here is an example of the new response body.
 
@@ -103,7 +103,7 @@ Here is an example of the new response body.
 
 ### Add support for string split function in YAML template expressions
 
-YAML pipelines provide you convenient ways to reduce code duplication, such as [looping through `each` value of a list](/azure/devops/pipelines/process/expressions?view=azure-devops#each-keyword) or property of an object. 
+YAML pipelines provide you convenient ways to reduce code duplication, such as [looping through `each` value of a list](/azure/devops/pipelines/process/expressions?view=azure-devops#each-keyword&preserve-view=true) or property of an object. 
 
 Sometimes, the set of items to iterate through is represented as a string. For example, when the list of environments to deploy to is defined by the string `integration1, integration2`.
 
@@ -125,7 +125,7 @@ jobs:
 
 ### Do not sync tags when fetching a Git repository
 
-The [checkout task](/azure/devops/pipelines/yaml-schema/steps-checkout?view=azure-pipelines) uses `--tags` option in fetching the contents of a Git repository. This causes the server to fetch all tags as well as all objects that are pointed to by those tags. This increases the time to run the task in a pipeline - particularly if you have a large repository with a number of tags. Furthermore, the checkout task syncs tags even when you enable the shallow fetch option, thereby possibly defeating its purpose. To reduce the amount of data fetched or pulled from a Git repository, we have now added a new option to the task to control the behavior of syncing tags. This option is available both in classic and YAML pipelines. 
+The [checkout task](/azure/devops/pipelines/yaml-schema/steps-checkout?view=azure-pipelines&preserve-view=true) uses `--tags` option in fetching the contents of a Git repository. This causes the server to fetch all tags as well as all objects that are pointed to by those tags. This increases the time to run the task in a pipeline - particularly if you have a large repository with a number of tags. Furthermore, the checkout task syncs tags even when you enable the shallow fetch option, thereby possibly defeating its purpose. To reduce the amount of data fetched or pulled from a Git repository, we have now added a new option to the task to control the behavior of syncing tags. This option is available both in classic and YAML pipelines. 
 
 #### [YAML](#tab/yaml/)
 

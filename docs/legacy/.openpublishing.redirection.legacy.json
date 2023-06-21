@@ -2128,7 +2128,7 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/control-display-work-item-fields.md",
-      "redirect_url": "/azure/devops/reference/xml/specify-work-item-form-controls",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/specify-work-item-form-controls",
       "redirect_document_id": false
     },
     {
@@ -4238,27 +4238,27 @@
     },
     {
       "source_path_from_root": "/docs/work/connect/get-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/get-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/get-feedback",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/connect/give-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/give-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/give-feedback",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/connect/give-permissions-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/give-permissions-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/give-permissions-feedback",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/change-audio-device-annotation-tool.md",
-      "redirect_url": "/azure/devops/project/feedback/change-audio-device-annotation-tool",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/change-audio-device-annotation-tool",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/enable-remote-audio-capture.md",
-      "redirect_url": "/azure/devops/project/feedback/enable-remote-audio-capture",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/enable-remote-audio-capture",
       "redirect_document_id": false
     },
     {
@@ -5368,32 +5368,32 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/add-or-modify-work-item-fields-to-support-reporting.md",
-      "redirect_url": "/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/all-field-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/all-field-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-field-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/all-form-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/all-form-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-form-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/all-witd-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/all-witd-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/all-workflow-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/all-workflow-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-workflow-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/apply-pattern-matching-to-string-field.md",
-      "redirect_url": "/azure/devops/reference/xml/apply-pattern-matching-to-string-field",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/apply-pattern-matching-to-string-field",
       "redirect_document_id": false
     },
     {
@@ -5408,22 +5408,22 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/assign-conditional-based-values-and-rules.md",
-      "redirect_url": "/azure/devops/reference/xml/assign-conditional-based-values-and-rules",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/assign-conditional-based-values-and-rules",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/automate-field-assignments-state-transition-reason.md",
-      "redirect_url": "/azure/devops/reference/xml/automate-field-assignments-state-transition-reason",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/automate-field-assignments-state-transition-reason",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/categories-xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/categories-xml-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/categories-xml-element-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/change-maximum-attachment-size-work-items.md",
-      "redirect_url": "/azure/devops/reference/xml/change-maximum-attachment-size-work-items",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items",
       "redirect_document_id": false
     },
     {
@@ -5433,7 +5433,7 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/combine-list-types.md",
-      "redirect_url": "/azure/devops/reference/xml/combine-list-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/combine-list-types",
       "redirect_document_id": false
     },
     {
@@ -5443,17 +5443,17 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/define-custom-link-type.md",
-      "redirect_url": "/azure/devops/reference/xml/define-custom-link-type",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-custom-link-type",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/define-default-copy-value-field.md",
-      "redirect_url": "/azure/devops/reference/xml/define-default-copy-value-field",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-default-copy-value-field",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/define-global-lists.md",
-      "redirect_url": "/azure/devops/reference/xml/define-global-lists",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-global-lists",
       "redirect_document_id": false
     },
     {
@@ -5468,7 +5468,7 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/define-pick-lists.md",
-      "redirect_url": "/azure/devops/reference/xml/define-pick-lists",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-pick-lists",
       "redirect_document_id": false
     },
     {
@@ -5478,12 +5478,12 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/expand-list-items-and-exclude-groups-from-lists.md",
-      "redirect_url": "/azure/devops/reference/xml/expand-list-items-and-exclude-groups-from-lists",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/expand-list-items-and-exclude-groups-from-lists",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/field-definition-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/field-definition-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/field-definition-element-reference",
       "redirect_document_id": false
     },
     {
@@ -5493,37 +5493,37 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/field-workflow-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/field-workflow-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/field-workflow-element-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/global-workflow-xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/global-workflow-xml-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/global-workflow-xml-element-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/labeltext-and-text-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/labeltext-and-text-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/labeltext-and-text-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/link-param-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/link-param-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/link-param-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/link-type-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/link-type-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/link-type-element-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/linkscontroloptions-xml-elements.md",
-      "redirect_url": "/azure/devops/reference/xml/linkscontroloptions-xml-elements",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/localization-and-globalization-of-witd-child-elements.md",
-      "redirect_url": "/azure/devops/reference/xml/localization-and-globalization-of-witd-child-elements",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/localization-and-globalization-of-witd-child-elements",
       "redirect_document_id": false
     },
     {
@@ -5543,17 +5543,17 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/reportable-fields-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/reportable-fields-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/reportable-fields-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/resolve-errors-received-when-configuring-features.md",
-      "redirect_url": "/azure/devops/reference/xml/resolve-errors-received-when-configuring-features",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/resolve-errors-received-when-configuring-features",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/specify-work-item-form-controls.md",
-      "redirect_url": "/azure/devops/reference/xml/specify-work-item-form-controls",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/specify-work-item-form-controls",
       "redirect_document_id": false
     },
     {
@@ -5563,7 +5563,7 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/support-bug-update-status-using-my-work.md",
-      "redirect_url": "/azure/devops/reference/xml/support-bug-update-status-using-my-work",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/support-bug-update-status-using-my-work",
       "redirect_document_id": false
     },
     {
@@ -5573,7 +5573,7 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/transition-xml-element.md",
-      "redirect_url": "/azure/devops/reference/xml/transition-xml-element",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/transition-xml-element",
       "redirect_document_id": false
     },
     {
@@ -5593,32 +5593,32 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/use-categories-to-group-work-item-types.md",
-      "redirect_url": "/azure/devops/reference/xml/use-categories-to-group-work-item-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/weblayout-xml-elements.md",
-      "redirect_url": "/azure/devops/reference/xml/weblayout-xml-elements",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/weblayout-xml-elements",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/webpagecontroloptions-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/webpagecontroloptions-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/webpagecontroloptions-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/xml-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/xml-element-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/manage-global-lists-for-work-item-types.md",
-      "redirect_url": "/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/manage-link-types.md",
-      "redirect_url": "/azure/devops/reference/witadmin/manage-link-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-link-types",
       "redirect_document_id": false
     },
     {
@@ -5628,12 +5628,12 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/rebuild-client-cache.md",
-      "redirect_url": "/azure/devops/reference/witadmin/rebuild-client-cache",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/rebuild-client-cache",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/tcm-customize-manage-test-experience.md",
-      "redirect_url": "/azure/devops/reference/witadmin/tcm-customize-manage-test-experience",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience",
       "redirect_document_id": false
     },
     {
@@ -5643,12 +5643,12 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/witadmin-import-export-categories.md",
-      "redirect_url": "/azure/devops/reference/witadmin/witadmin-import-export-categories",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/witadmin-import-export-global-workflow.md",
-      "redirect_url": "/azure/devops/reference/witadmin/witadmin-import-export-global-workflow",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow",
       "redirect_document_id": false
     },
     {
@@ -5663,67 +5663,67 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/add-link-type-definitions-to-a-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-link-type-definitions-to-a-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-link-type-definitions-to-a-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/add-reports-to-the-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-reports-to-the-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-reports-to-the-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/add-type-wit-category-definitions-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-type-wit-category-definitions-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-type-wit-category-definitions-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/add-wit-definitions-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-wit-definitions-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-wit-definitions-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/add-work-item-instance-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-work-item-instance-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-work-item-instance-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/add-work-item-queries-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-work-item-queries-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-work-item-queries-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/configure-initial-groups-teams-members-permissions.md",
-      "redirect_url": "/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/control-access-to-functional-areas.md",
-      "redirect_url": "/azure/devops/reference/process-templates/control-access-to-functional-areas",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/control-access-to-functional-areas",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/customize-process.md",
-      "redirect_url": "/azure/devops/reference/process-templates/customize-process",
+      "redirect_url": "/azure/devops/reference/process-templates/",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/define-classification-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-classification-plug-in",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-classification-plug-in",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/define-dependencies-plug-ins-groups-tasks.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-dependencies-plug-ins-groups-tasks",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-dependencies-plug-ins-groups-tasks",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/define-initial-configuration-build.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-build",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-build",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/define-initial-configuration-test-manager.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-test-manager",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-test-manager",
       "redirect_document_id": false
     },
     {
@@ -5733,37 +5733,37 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/define-project-portal-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-project-portal-plug-in",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-project-portal-plug-in",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/define-root-tasks-process-template-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-root-tasks-process-template-plug-in",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-root-tasks-process-template-plug-in",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/define-tasks-to-process-a-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-tasks-to-process-a-plug-in",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-tasks-to-process-a-plug-in",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/define-work-item-query-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-work-item-query-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-work-item-query-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/overview-process-template-files.md",
-      "redirect_url": "/azure/devops/reference/process-templates/overview-process-template-files",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/overview-process-template-files",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/process-template-plug-ins-xml-elements-index.md",
-      "redirect_url": "/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/process-template-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/process-templates/process-template-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference",
       "redirect_document_id": false
     },
     {
@@ -6003,7 +6003,7 @@
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/arrange-requirements-into-a-product-plan.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
       "redirect_document_id": false
     },
     {
@@ -6018,92 +6018,92 @@
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-build-product.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-build-product",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-build-product",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-change-request-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-create-solution-architecture.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-develop-requirements.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-develop-requirements",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-develop-requirements",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-engineering.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-engineering",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-engineering",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-implement-development-tasks.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-implement-development-tasks",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-implement-development-tasks",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-iteration-activities.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-iteration-activities",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-iteration-activities",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-manage-change.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-manage-issues-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-manage-risks.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-risks",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-risks",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-plan-a-project-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-plan-an-iteration-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-project-activities.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-activities",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-activities",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-project-inception.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-inception",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-inception",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-project-management.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-requirements-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/track-bugs.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/track-bugs",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/track-bugs",
       "redirect_document_id": false
     },
     {
@@ -8313,7 +8313,7 @@
     },
     {
       "source_path_from_root": "/docs/collaborate/project-vision-status.md",
-      "redirect_url": "/azure/devops//organizations/projects/project-vision-status",
+      "redirect_url": "/azure/devops/organizations/projects/project-vision-status",
       "redirect_document_id": false
     },
     {
@@ -8547,33 +8547,33 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs//project/feedback/about-feedback.md",
+      "source_path_from_root": "/docs/project/feedback/about-feedback.md",
       "redirect_url": "/azure/devops/project/feedback/index",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/feedback/change-audio-device-annotation-tool.md",
-      "redirect_url": "/azure/devops/project/feedback/change-audio-device-annotation-tool",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/change-audio-device-annotation-tool",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/feedback/enable-remote-audio-capture.md",
-      "redirect_url": "/azure/devops/project/feedback/enable-remote-audio-capture",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/enable-remote-audio-capture",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/feedback/get-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/get-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/get-feedback",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/feedback/give-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/give-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/give-feedback",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/feedback/give-permissions-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/give-permissions-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/give-permissions-feedback",
       "redirect_document_id": false
     },
     {
@@ -10108,7 +10108,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/manage-new-form-rollout.md",
-      "redirect_url": "/azure/devops/reference/manage-new-form-rollout",
+      "redirect_url": "/previous-versions/azure/devops/reference/manage-new-form-rollout",
       "redirect_document_id": false
     },
     {
@@ -10143,7 +10143,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/process/new-work-item-experience.md",
-      "redirect_url": "/azure/devops/reference/process/new-work-item-experience",
+      "redirect_url": "/previous-versions/azure/devops/reference/process/new-work-item-experience",
       "redirect_document_id": false
     },
     {
@@ -10313,42 +10313,42 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/add-link-type-definitions-to-a-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-link-type-definitions-to-a-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-link-type-definitions-to-a-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/add-reports-to-the-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-reports-to-the-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-reports-to-the-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/add-type-wit-category-definitions-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-type-wit-category-definitions-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-type-wit-category-definitions-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/add-wit-definitions-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-wit-definitions-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-wit-definitions-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/add-work-item-instance-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-work-item-instance-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-work-item-instance-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/add-work-item-queries-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/add-work-item-queries-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-work-item-queries-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/configure-initial-groups-teams-members-permissions.md",
-      "redirect_url": "/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/control-access-to-functional-areas.md",
-      "redirect_url": "/azure/devops/reference/process-templates/control-access-to-functional-areas",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/control-access-to-functional-areas",
       "redirect_document_id": false
     },
     {
@@ -10358,72 +10358,72 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-classification-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-classification-plug-in",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-classification-plug-in",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-dependencies-plug-ins-groups-tasks.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-dependencies-plug-ins-groups-tasks",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-dependencies-plug-ins-groups-tasks",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-initial-configuration-build.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-build",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-build",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-initial-configuration-test-manager.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-test-manager",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-test-manager",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-initial-configuration-version-control.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-version-control",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-project-portal-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-project-portal-plug-in",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-project-portal-plug-in",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-root-tasks-process-template-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-root-tasks-process-template-plug-in",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-root-tasks-process-template-plug-in",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-tasks-to-process-a-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-tasks-to-process-a-plug-in",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-tasks-to-process-a-plug-in",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-work-item-query-process-template.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-work-item-query-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-work-item-query-process-template",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/overview-process-template-files.md",
-      "redirect_url": "/azure/devops/reference/process-templates/overview-process-template-files",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/overview-process-template-files",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/process-template-plug-ins-xml-elements-index.md",
-      "redirect_url": "/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/process-template-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/process-templates/process-template-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/manage-global-lists-for-work-item-types.md",
-      "redirect_url": "/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/manage-link-types.md",
-      "redirect_url": "/azure/devops/reference/witadmin/manage-link-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-link-types",
       "redirect_document_id": false
     },
     {
@@ -10433,12 +10433,12 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/rebuild-client-cache.md",
-      "redirect_url": "/azure/devops/reference/witadmin/rebuild-client-cache",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/rebuild-client-cache",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/tcm-customize-manage-test-experience.md",
-      "redirect_url": "/azure/devops/reference/witadmin/tcm-customize-manage-test-experience",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience",
       "redirect_document_id": false
     },
     {
@@ -10448,12 +10448,12 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/witadmin-import-export-categories.md",
-      "redirect_url": "/azure/devops/reference/witadmin/witadmin-import-export-categories",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/witadmin-import-export-global-workflow.md",
-      "redirect_url": "/azure/devops/reference/witadmin/witadmin-import-export-global-workflow",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow",
       "redirect_document_id": false
     },
     {
@@ -10473,32 +10473,32 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/add-or-modify-work-item-fields-to-support-reporting.md",
-      "redirect_url": "/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/all-field-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/all-field-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-field-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/all-form-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/all-form-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-form-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/all-witd-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/all-witd-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/all-workflow-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/all-workflow-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-workflow-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/apply-pattern-matching-to-string-field.md",
-      "redirect_url": "/azure/devops/reference/xml/apply-pattern-matching-to-string-field",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/apply-pattern-matching-to-string-field",
       "redirect_document_id": false
     },
     {
@@ -10513,22 +10513,22 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/assign-conditional-based-values-and-rules.md",
-      "redirect_url": "/azure/devops/reference/xml/assign-conditional-based-values-and-rules",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/assign-conditional-based-values-and-rules",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/automate-field-assignments-state-transition-reason.md",
-      "redirect_url": "/azure/devops/reference/xml/automate-field-assignments-state-transition-reason",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/automate-field-assignments-state-transition-reason",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/categories-xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/categories-xml-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/categories-xml-element-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/change-maximum-attachment-size-work-items.md",
-      "redirect_url": "/azure/devops/reference/xml/change-maximum-attachment-size-work-items",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items",
       "redirect_document_id": false
     },
     {
@@ -10538,7 +10538,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/combine-list-types.md",
-      "redirect_url": "/azure/devops/reference/xml/combine-list-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/combine-list-types",
       "redirect_document_id": false
     },
     {
@@ -10548,17 +10548,17 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/define-custom-link-type.md",
-      "redirect_url": "/azure/devops/reference/xml/define-custom-link-type",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-custom-link-type",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/define-default-copy-value-field.md",
-      "redirect_url": "/azure/devops/reference/xml/define-default-copy-value-field",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-default-copy-value-field",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/define-global-lists.md",
-      "redirect_url": "/azure/devops/reference/xml/define-global-lists",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-global-lists",
       "redirect_document_id": false
     },
     {
@@ -10573,7 +10573,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/define-pick-lists.md",
-      "redirect_url": "/azure/devops/reference/xml/define-pick-lists",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-pick-lists",
       "redirect_document_id": false
     },
     {
@@ -10583,12 +10583,12 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/expand-list-items-and-exclude-groups-from-lists.md",
-      "redirect_url": "/azure/devops/reference/xml/expand-list-items-and-exclude-groups-from-lists",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/expand-list-items-and-exclude-groups-from-lists",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/field-definition-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/field-definition-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/field-definition-element-reference",
       "redirect_document_id": false
     },
     {
@@ -10598,37 +10598,37 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/field-workflow-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/field-workflow-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/field-workflow-element-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/global-workflow-xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/global-workflow-xml-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/global-workflow-xml-element-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/labeltext-and-text-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/labeltext-and-text-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/labeltext-and-text-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/link-param-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/link-param-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/link-param-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/link-type-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/link-type-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/link-type-element-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/linkscontroloptions-xml-elements.md",
-      "redirect_url": "/azure/devops/reference/xml/linkscontroloptions-xml-elements",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/localization-and-globalization-of-witd-child-elements.md",
-      "redirect_url": "/azure/devops/reference/xml/localization-and-globalization-of-witd-child-elements",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/localization-and-globalization-of-witd-child-elements",
       "redirect_document_id": false
     },
     {
@@ -10648,22 +10648,22 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/reportable-fields-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/reportable-fields-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/reportable-fields-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/resolve-errors-received-when-configuring-features.md",
-      "redirect_url": "/azure/devops/reference/xml/resolve-errors-received-when-configuring-features",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/resolve-errors-received-when-configuring-features",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/specify-work-item-form-controls.md",
-      "redirect_url": "/azure/devops/reference/xml/specify-work-item-form-controls",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/specify-work-item-form-controls",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/support-bug-update-status-using-my-work.md",
-      "redirect_url": "/azure/devops/reference/xml/support-bug-update-status-using-my-work",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/support-bug-update-status-using-my-work",
       "redirect_document_id": false
     },
     {
@@ -10673,7 +10673,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/transition-xml-element.md",
-      "redirect_url": "/azure/devops/reference/xml/transition-xml-element",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/transition-xml-element",
       "redirect_document_id": false
     },
     {
@@ -10693,22 +10693,22 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/use-categories-to-group-work-item-types.md",
-      "redirect_url": "/azure/devops/reference/xml/use-categories-to-group-work-item-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/weblayout-xml-elements.md",
-      "redirect_url": "/azure/devops/reference/xml/weblayout-xml-elements",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/weblayout-xml-elements",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/webpagecontroloptions-xml-elements-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/webpagecontroloptions-xml-elements-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/webpagecontroloptions-xml-elements-reference",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/xml-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/xml-element-reference",
       "redirect_document_id": false
     },
     {
@@ -11548,7 +11548,7 @@
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
       "redirect_document_id": false
     },
     {
@@ -11563,92 +11563,92 @@
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-build-product.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-build-product",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-build-product",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-create-solution-architecture.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-develop-requirements.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-develop-requirements",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-develop-requirements",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-engineering.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-engineering",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-engineering",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-implement-development-tasks.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-implement-development-tasks",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-implement-development-tasks",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-iteration-activities.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-iteration-activities",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-iteration-activities",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-manage-change.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-manage-issues-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-manage-risks.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-risks",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-risks",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-plan-a-project-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-project-activities.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-activities",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-activities",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-project-inception.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-inception",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-inception",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-project-management.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/track-bugs.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/track-bugs",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/track-bugs",
       "redirect_document_id": false
     },
     {
@@ -18095,7 +18095,7 @@
     },
     {
       "source_path_from_root": "/docs/repos/git/overview-2013.md",
-      "redirect_url": "/azure/devops/repos//get-started/what-is-repos",
+      "redirect_url": "/azure/devops/repos/get-started/what-is-repos",
       "redirect_document_id": false
     },
     {

@@ -5,8 +5,8 @@ description: Learn how to authorize other services to work with Azure DevOps Ser
 ms.subservice: azure-devops-security
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 monikerRange: 'azure-devops'
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 09/29/2020
 ---
 

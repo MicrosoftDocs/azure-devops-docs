@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.author: sdanie
 author: steved0x
-ms.date: 07/14/2020
+ms.date: 01/18/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Use demands to make sure that the capabilities your pipeline needs are present on the agents that run it. Demands are asserted automatically by tasks or manually by you.
+Use demands to make sure that the [capabilities](../agents/agents.md#capabilities) your pipeline needs are present on the agents that run it. Demands are asserted automatically by tasks or manually by you.
 
 > [!NOTE]
 >
@@ -31,7 +31,7 @@ Use demands to make sure that the capabilities your pipeline needs are present o
 
 Some tasks won't run unless one or more demands are met by the agent. For example, the [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1) task demands that ```msbuild``` and ```visualstudio``` are installed on the agent.
 
-## Manually entered demands
+## Manually entered agent demands
 
 You might need to use self-hosted agents with special capabilities. For example, your pipeline may require **SpecialSoftware** on agents in the `Default` pool. Or, if you have multiple agents with different operating systems in the same pool, you may have a pipeline that requires a Linux agent.
 

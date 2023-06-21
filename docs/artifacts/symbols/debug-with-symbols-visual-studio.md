@@ -34,7 +34,7 @@ To debug with symbols from the Azure Artifacts symbol server, we must authentica
 
     :::image type="content" source="media/symbol-locations.png" alt-text="New symbol server added to the list of symbol file locations":::
 
-## Debugging optimized modules
+## Debug optimized modules
 
 If you're planning to debug an optimized module (example release binaries) or a third-party source code, we recommend that you uncheck the `Enable Just My Code` checkbox in Visual Studio options.
 
@@ -43,9 +43,7 @@ To do so, select **Tools** > **Options** and then **Debugging**. Select **Genera
 :::image type="content" source="media/enable-just-my-code.png" alt-text="Enable just my code - enable 3rd party source code debugging":::
 
 > [!NOTE]
-> To enable support for portable PDB files, check the **Enable Source Link Support** checkbox from **Tools** > **Options** > **Debugging** > **General**.
-> 
-> To enable support for Windows PDB files on symbol servers, check the **Enable Source Server Support** checkbox from **Tools** > **Options** > **Debugging** > **General**.
+> To enable support for portable PDB files, check the **Enable Source Link Support** checkbox, and to enable support for Windows PDB files on symbol servers, check the **Enable Source Server Support** checkbox, both located under **Tools** > **Options** > **Debugging** > **General**.
 
 ## Start debugging
 

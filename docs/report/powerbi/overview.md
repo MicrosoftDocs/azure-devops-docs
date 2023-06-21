@@ -5,8 +5,8 @@ description: Learn about the different integration options you can use to connec
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.subservice: azure-devops-analytics
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>=azure-devops-2019'
 ms.date: 12/13/2022
 ---
@@ -121,7 +121,7 @@ To quickly get familiar with these Power BI basic features, see the following Po
 
 Several sample reports are provided to show how to generate reports from either an Analytics view or OData query. 
 
-### Sample reports using Analytics View
+### Sample reports using Analytics view
 
 - [Active bugs report](active-bugs-sample-report.md)  
 - [Get a count of work items](data-connector-examples.md)  

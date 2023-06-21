@@ -5,11 +5,11 @@ description: Learn how to manage your queries by using favorites and folders in 
 ms.custom: boards-queries, contperf-fy23 
 ms.service: azure-devops-boards
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 12/16/2022
+ms.date: 02/02/2023
 ---
 
 

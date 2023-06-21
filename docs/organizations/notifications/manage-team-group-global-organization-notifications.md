@@ -8,7 +8,7 @@ ms.custom: contperf-fy21q2, cross-project
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 05/24/2022
+ms.date: 04/24/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,23 +16,21 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Your team, project, or organization can receive email notifications as changes occur to the following items in Azure DevOps:
-- work items 
-- code reviews
-- pull requests
-- source control files
-- builds
+You can manage email notifications at team, project, and organization levels when changes occur to work items, code reviews, pull requests, source control files, and builds.
 
 For example, when a high priority work item is assigned to your team's area path, a notification email gets sent to the team. For more information, see [Notification types](about-notifications.md#notification-types).
 
 ## Prerequisites
 
-- To manage notifications, you must be an administrator at the level you want to manage them:
-	- Team administrator to modify subscription for a team
-	- A member of the **Project Administrators** group to create or modify subscriptions for a project.  
-	- A member of the **Project Collection Administrators** group to create or modify subscriptions for an organization or collection.  
+To manage notifications, you must be an administrator for the level you want to manage:
+- Team: You must be a **Team Administrator** to modify subscriptions for a team.
+- Project: You must be a member of the **Project Administrators** group to create or modify subscriptions for a project.  
+- Organization: You must be a member of the **Project Collection Administrators** group to create or modify subscriptions for an organization or collection.
 
-	If you're not an administrator, get added as one. See [Add a team administrator](../../organizations/settings/add-team-administrator.md), [Change permissions at the project-level](../../organizations/security/change-project-level-permissions.md), or [Change permissions at the organization or collection-level](../../organizations/security/change-organization-collection-level-permissions.md). 
+If you're not an administrator, get added as one. For more information, see the following articles:
+- [Add a team administrator](../../organizations/settings/add-team-administrator.md)
+- [Change permissions at the project-level](../../organizations/security/change-project-level-permissions.md)
+- [Change permissions at the organization or collection-level](../../organizations/security/change-organization-collection-level-permissions.md)
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 

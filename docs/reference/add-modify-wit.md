@@ -3,20 +3,23 @@ title: Add or modify a work item type
 titleSuffix: Azure DevOps Server
 description: Modify or add a work item type to support queries, reports, and workflow for On-premises XML process model for Azure DevOps  
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, engagement-fy23
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
-monikerRange: '< azure-devops' 
-ms.date: 04/04/2022
+monikerRange: '< azure-devops'
+ms.date: 01/17/2023 
 ---
 
 # Add or modify a work item type 
 
 [!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]
 
-Your project contains a number of work item types, based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. A work item type is the object you use to [track different types of work](../boards/backlogs/add-work-items.md).  
+Your project contains a number of work item types, based on the process used to create your project, such as [Agile](../boards/work-items/guidance/agile-process.md), [Basic](../boards/get-started/plan-track-work.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md).  A work item type is the object you use to [track different types of work](../boards/work-items/about-work-items.md). 
+
+> [!NOTE]    
+> For Azure DevOps Services or for project collections that use the Inherited process model, see [Add and manage work item types](../organizations/settings/work/customize-process-work-item-type.md).
 
 You can modify an existing work item type or add a custom work item type based on your team's tracking requirements or workflow processes. The most common reasons to modify a work item type are to add or modify the set of fields or field rules, change the workflow, or customize the work item form.   
 
@@ -36,7 +39,7 @@ Most work item type customizations are made to the work item type XML definition
 #### ProcessConfiguration definition  
 
 - [Specify the work item type color](#change-wit-color)
-- [Specify the work item type icon](#change-wit-color) (TFS 2017.2 and later versions)
+- [Specify the work item type icon](#change-wit-color)  
 - [Specify the workflow state color](#change-wit-color)
 - [Add or remove a work item type from the backlog or task board](#change-wit-backlog-board)
 - [Add a custom work item type to a backlog or board](add-wits-to-backlogs-and-boards.md)
@@ -97,7 +100,7 @@ If you want to completely remove the fields from the data store, use [`witadmin 
 
     An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
 
-3. Edit the file. For details, see [Index to XML element definitions](xml/xml-element-reference.md).  
+3. Edit the file. For details, see [Index to XML element definitions](/previous-versions/azure/devops/reference/xml/xml-element-reference).  
 
 4. Import the definition file.  
 
@@ -185,29 +188,28 @@ Apply workflow field rules to accomplish the following actions:
 -   Conditionally apply rules based on values in other fields using **WHEN**, **WHENNOT**, **WHENCHANGED**, and **WHENNOTCHANGED**  
 -   Limit rules to apply to specific users or groups. Most rules support the **for** or **not** attributes to focus who the rule does and doesn't apply to.    
 
-For more information about applying workflow field rules, see [FIELD (Workflow) element reference](xml/field-workflow-element-reference.md) and [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).  
+For more information about applying workflow field rules, see [FIELD (Workflow) element reference](/previous-versions/azure/devops/reference/xml/field-workflow-element-reference) and [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).  
 
 <a id="modify-form">  </a>
 
 ## Customize the work item form  
 
-The following illustrations highlight the most common elements on work item forms. You can customize all of them except the title area and form controls. The elements you use to customize the form depend on [whether or not the new form has been enabled by your admin](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true).  
+The following illustrations highlight the most common elements on work item forms. You can customize all of them except the title area and form controls. The elements you use to customize the form depend on [whether or not the new form has been enabled by your admin](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true).   
 
-**Web form with the new form enabled (VSTS, TFS 2017)**  
+![Screenshot of header element within work item web form.](xml/media/weblayout-system-controls-details-page.png)
 
-![Header element within web form](xml/media/weblayout-system-controls-details-page.png)
- 
-**Old web form in use (TFS 2015, TFS 2013)**  
-
-![Work item type form controls ](media/IC714121.png)
 
 You can customize the form to accomplish the following objectives:  
 
-
-> [!div class="mx-tdBreakAll"]  
-> | New form enabled  |Old form in use  |
-> |-------------|----------|  
-> |- [Add or modify a field](xml/weblayout-xml-elements.md)<br/>- [Change a field label](xml/weblayout-xml-elements.md)<br/>- [Rearrange fields](xml/weblayout-xml-elements.md)<br/>- [Add a group or page](xml/weblayout-xml-elements.md)<br/>- [Add a group](xml/weblayout-xml-elements.md)<br/>- [Add a custom control, group, or page](xml/weblayout-xml-elements.md)<br/>- [Add informational text or hyperlinks](xml/provide-help-text-hyperlinks-web-content-form.md)<br/>- [Embed HTML text or display dynamic reports](xml/provide-help-text-hyperlinks-web-content-form.md)  <br/>- [Add a links-control page](xml/linkscontroloptions-xml-elements.md) |- [Add or modify a field](xml/specify-work-item-form-controls.md)<br/>- [Change a field label](xml/specify-work-item-form-controls.md)<br/>- [Rearrange fields](xml/specify-work-item-form-controls.md)<br/>- [Add tabs, columns, or groups](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)<br/>- [Add informational text or hyperlinks](xml/provide-help-text-hyperlinks-web-content-form.md)<br/>- [Embed HTML text or display dynamic reports](xml/provide-help-text-hyperlinks-web-content-form.md)  <br/>- [Add a links-control tab](/previous-versions/azure/devops/reference/xml/define-link-controls?view=tfs-2017&preserve-view=true)<br/>- [Add an attachment control](/previous-versions/azure/devops/reference/xml/add-the-attachments-control?view=tfs-2017&preserve-view=true) |
+- [Add or modify a field](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)
+- [Change a field label](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)
+- [Rearrange fields](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)
+- [Add a group or page](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)
+- [Add a group](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)
+- [Add a custom control, group, or page](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)
+- [Add informational text or hyperlinks](xml/provide-help-text-hyperlinks-web-content-form.md)
+- [Embed HTML text or display dynamic reports](xml/provide-help-text-hyperlinks-web-content-form.md)
+- [Add a links-control page](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements) 
 
 
 <a id="change-wit-backlog-board">  </a>
@@ -216,12 +218,7 @@ You can customize the form to accomplish the following objectives:
 
 The Agile planning tools&mdash;product backlog, sprint backlog, and task board pages&mdash;display specific work item types based on the process template used to create your project. You can add or remove work item types to appear on these pages. For example, if your project uses Scrum work item types, both product backlog items and bugs appear on the backlog pages. However, if your project was created using the Agile, CMMI, or other process template, bugs don't appear on your backlog or task board.
 
-For example, you can add bugs from the product backlog page.
-
-[!INCLUDE [temp](../includes/image-differences.md)]
-
-![This screen shows how to add bugs from the product backlog page.](media/add-modify-wit-quick-add-panel.png)
-
+For example, you can add bugs from the product backlog page. 
 
 To learn how to add or remove work item types from the backlog or task board, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md). To add a new work item type to support a portfolio backlog, see [Add a portfolio backlog level](add-portfolio-backlogs.md).
 
@@ -232,28 +229,19 @@ To learn how to add or remove work item types from the backlog or task board, se
 
 In the web portal, work items appear in query results and on the backlog and board pages of the Agile tools. To change the color or icon associated with an existing work item type or add the color to use for a new work item type, [edit the process configuration](xml/process-configuration-xml-element.md#wit-colors). To change the color for a workflow state, you also [edit the process configuration](xml/process-configuration-xml-element.md#state-colors). 
 
-> [!NOTE]    
->**Feature availability:** <!---For Hosted XML process model, you can customize the work item type color, icon, and workflow state color. -->For On-premises XML, you can customize the workflow state color for TFS 2015.2 or later versions, and you can customize the work item type icon for TFS 2017.2 and later versions.  
  
-<img src="media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing work item type color, icon, and state color" />  
+<img src="media/add-modiy-wit-color-icon-state-color.png" alt="Screenshot of Query results showing work item type color, icon, and state color." />  
 
 
 ## Change the type of an existing work item  
 
-See [Move, change, or delete work items](../boards/backlogs/remove-delete-work-items.md) for the features available to you based on your platform. 
-
-When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](../boards/backlogs/copy-clone-work-items.md#copy-clone). For instance, you can copy an existing product backlog item and change the type to bug, as shown in the following illustration.
-
-![Clone a work item type](media/IC710198.png)  
-
-Also, if you have several work items with type changes you want to make, you might want to [export them using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type.
-
+See [Bulk move work items and change the work item type](../boards/backlogs/move-change-type.md) for the features available to you based on your platform. 
 
 <a id="deactivate-wit">  </a>
 
 ## Deactivate or disable a work item type  
 
-If you want to restrict creation of a specific work item type to a group of users, [add the work item type to the Hidden Categories group](xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
+If you want to restrict creation of a specific work item type to a group of users, [add the work item type to the Hidden Categories group](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
 
 > [!NOTE]   
 > You can't add field rules to restrict the workflow as you can't apply rules to system fields. 
@@ -269,7 +257,7 @@ To prevent team members from using a specific work item type to create a work it
 witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment" 
 ```
 
-When you delete a work item type that belongs to a category, you must update the categories definition for the project to reflect the new name. For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](witadmin/witadmin-import-export-categories.md).
+When you delete a work item type that belongs to a category, you must update the categories definition for the project to reflect the new name. For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories).
 
 <a name="rename-wit" />
 
@@ -283,25 +271,19 @@ witadmin renamewitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection
 
 When you rename a work item type that belongs to a category, you have to update the categories definition for the project to reflect the new name. In particular, the [backlogs and boards](../boards/backlogs/backlogs-boards-plans.md) will not work until you update the categories definition.
 
-For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](witadmin/witadmin-import-export-categories.md).  
+For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories).  
 
 
 ::: moniker range="tfs-2018"
 
 ## Enable features after upgrade 
 
-What customizations can you make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
+What customizations can you make and still use the Configure Features Wizard to update my project after an on-premises upgrade?  
 
 You can add custom work item types and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) will update your projects and you'll get access to the latest features.
 
 Changing the workflow or renaming a work item type might require you to perform some manual operations when updating your project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](on-premises-xml-process-model.md#before-you-customize).  
-
-### Workflow changes and earlier versions of the Test Manager client
-
-When you change the workflow for the test plan or test suite&mdash;and you work from a Test Manager client provided with Visual Studio 2013.2 or earlier versions&mdash;these work item types became available when you updated your application-tier server to TFS 2013.3. that appears on an Agile planning tool page.
-
-If you encounter an **Application detected an unexpected fault** error when you connect to your project after you changed the workflow, you can resolve it by mapping the new workflow states to metastates. To resolve this error, see [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md).
-
+ 
 ::: moniker-end
 
 ## Related articles

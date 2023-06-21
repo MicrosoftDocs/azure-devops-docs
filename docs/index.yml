@@ -62,7 +62,7 @@ productDirectory:
         - url: ./boards/get-started/what-is-azure-boards.md  
           text: What is Azure Boards? 
         - url: ./boards/work-items/guidance/choose-process.md 
-          text: Choose a process
+          text: About default processes
         - url: ./boards/backlogs/create-your-backlog.md
           text: Create your backlog
         - url: ./boards/get-started/plan-track-work.md
@@ -272,7 +272,7 @@ additionalContent:
             - text: Hosted XML process model
               url: ./organizations/settings/work/hosted-xml-process-model.md?toc=/azure/devops/reference/toc.json
             - text: Process templates
-              url: ./reference/process-templates/overview-process-template-files.md 
+              url: ./reference/process-templates/index.md 
             - text: See more >
               url: ./reference/index.yml 
     - title: Additional services

@@ -175,7 +175,7 @@ Now that you have created an image, you can run a container.
 
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
-If you want a fresh agent container for every pipeline run, pass the [`--once` flag](v2-windows.md#run-once) to the `run` command.
+If you want a fresh agent container for every pipeline run, pass the [`--once` flag](windows-agent.md#run-once) to the `run` command.
 You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 
 ## Linux
@@ -203,7 +203,7 @@ Next, create the Dockerfile.
 
 4. Save the following content to `~/dockeragent/Dockerfile`:
     * For Ubuntu 20.04:
-      ```docker
+      ```Dockerfile
       FROM ubuntu:20.04
       RUN DEBIAN_FRONTEND=noninteractive apt-get update
       RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
@@ -232,7 +232,7 @@ Next, create the Dockerfile.
       ENTRYPOINT [ "./start.sh" ]
       ```
     * For Ubuntu 18.04:
-      ```docker
+      ```Dockerfile
       FROM ubuntu:18.04
 
       # To make it easier for build and release pipelines to run apt-get,
@@ -402,7 +402,7 @@ Now that you have created an image, you can run a container.
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
     ```
 
-   If you want a fresh agent container for every pipeline job, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
+   If you want a fresh agent container for every pipeline job, pass the [`--once` flag](linux-agent.md#run-once) to the `run` command.
 
     ```shell
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest --once
@@ -443,7 +443,7 @@ If you're sure you want to do this, see the [bind mount](https://docs.docker.com
 ## Use Azure Kubernetes Service cluster
 
 > [!CAUTION]
-> Please, consider that any docker based tasks will not work on AKS 1.19 or earlier due to docker in docker restriction. 
+> Please, consider that any docker based tasks will not work on AKS 1.19 or later due to docker in docker restriction. 
 > [Docker was replaced with containerd](/azure/aks/cluster-configuration#container-runtime-configuration) in Kubernetes 1.19, and Docker-in-Docker became unavailable.
 
 ### Deploy and configure Azure Kubernetes Service 
@@ -485,7 +485,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 4. Save the following content to `~/AKS/ReplicationController.yaml`:
 
-   ```shell
+   ```yml
    apiVersion: apps/v1
    kind: Deployment
    metadata:
@@ -544,7 +544,7 @@ Now your agents will run the AKS cluster.
 
 Allow specifying MTU value for networks used by container jobs (useful for docker-in-docker scenarios in k8s cluster).
 
-You need to set the environment variable AGENT_MTU_VALUE to set the MTU value, after that restart the self-hosted agent. You can find more about agent restart [here](./v2-windows.md?#how-do-i-restart-the-agent) and about setting different environment variables for each individual agent [here](./v2-windows.md?#how-do-i-set-different-environment-variables-for-each-individual-agent).
+You need to set the environment variable AGENT_MTU_VALUE to set the MTU value, and then restart the self-hosted agent. You can find more about agent restart [here](./windows-agent.md?#how-do-i-restart-the-agent) and about setting different environment variables for each individual agent [here](./windows-agent.md?#how-do-i-set-different-environment-variables-for-each-individual-agent).
 
 This allows you to set up a network parameter for the job container, the use of this command is similar to the use of the next command while container network configuration:
 
@@ -601,7 +601,7 @@ Try again. You no longer get the error.
 
 ## Related articles
 
-- [Self-hosted Windows agents](v2-windows.md)
-- [Self-hosted Linux agents](v2-linux.md)
-- [Self-hosted macOS agents](v2-osx.md)
+- [Self-hosted Windows agents](windows-agent.md)
+- [Self-hosted Linux agents](linux-agent.md)
+- [Self-hosted macOS agents](osx-agent.md)
 - [Microsoft-hosted agents](hosted.md)

@@ -4,9 +4,9 @@ titleSuffix: Azure DevOps
 description: Learn how to generate a pipeline duration trend Power BI report.
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
-ms.author: kaelli
+ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
-author: KathrynEE
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'   
 ms.date: 12/14/2022
@@ -82,7 +82,7 @@ $apply=filter(
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -397,7 +397,7 @@ You can rename column fields. For example, you can rename the column `Pipeline.P
 
 ## Create the Line chart report 
 
-1. In Power BI, under **Visualizations**, choose the **Line chart** report and select the fields as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose the **Line chart** report. 
 
 	:::image type="content" source="media/pipeline-reports/duration-trend-visualizations.png" alt-text="Screenshot of Visualization fields selections for pipelines run duration trend report. ":::
   

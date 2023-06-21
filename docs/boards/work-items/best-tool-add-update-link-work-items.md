@@ -6,7 +6,7 @@ ms.custom: work-items, seodec18
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.topic: best-practice
-ms.author: kaelli
+ms.author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -367,8 +367,8 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    :::column span="3":::
     
    
-   - [Request feedback](../../project/feedback/get-feedback.md)
-   - [Give feedback using Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+   - [Request feedback](/previous-versions/azure/devops/project/feedback/get-feedback)
+   - [Give feedback using Microsoft Feedback Client](/previous-versions/azure/devops/project/feedback/give-feedback)
    
    :::column-end:::
 :::row-end:::

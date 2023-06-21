@@ -3,10 +3,10 @@ title: Link work items to support traceability in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to support an auto trail of changes and enable quick navigation by linking work items together.
 ms.service: azure-devops-boards
-ms.custom: boards-queries, cross-project, cross-service, contperf-fy23
+ms.custom: work-items, cross-project, cross-service, contperf-fy23, engagement-fy23
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 12/16/2022
@@ -34,8 +34,8 @@ This article describes the link types available for your use. You can link objec
  
 > [!TIP]
 > You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. To learn how, see the following resources:   
-> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
-> - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
+> - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 > - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 > - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md).
 
@@ -186,7 +186,7 @@ The link types used to construct these links&mdash;as illustrated in the followi
 
 ![Artifact-to-artifact link types](../backlogs/media/git/link-tracking-artifact-to-artifact-link-types.png)  
 
-To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
+To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements#development-links-control?view=tfs-2017&preserve-view=true). 
 
 ::: moniker-end
 
@@ -197,8 +197,8 @@ See the following articles for more information:
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
-- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
-- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md)
 - [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id)
@@ -206,8 +206,8 @@ See the following articles for more information:
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
-- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id)
 - [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).

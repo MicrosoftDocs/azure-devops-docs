@@ -5,30 +5,27 @@ description: Learn about sample Power BI queries that generate a Configuration b
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.author: shdalv
-ms.custom: powerbisample
-author: KathrynEE
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 10/13/2021
+ms.date: 01/19/2023
 ---
 
 # Configuration by outcome matrix sample report
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-When you've multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. 
+When you've multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. An example of the configuration by outcome matrix report is shown in the following image.
+
+:::image type="content" source="media/odatapowerbi-configurationbyoutcome.png" alt-text="Screenshot of Power BI Configuration by Outcome matrix report.":::
+
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-An example of the configuration by outcome matrix report is shown in the following image.
- 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Configuration by Outcome matrix report.](media/odatapowerbi-configurationbyoutcome.png)
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
-
-
-[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 For the report to generate useful data, the team must carry out the following activities to manage test plans:
 
@@ -41,6 +38,10 @@ For the report to generate useful data, the team must carry out the following ac
 
 
 ## Sample queries
+
+You can use the following queries of the `TestPoints` entity set to create different but similar test plan progress reports.
+
+[!INCLUDE [temp](includes/query-filters-test.md)] 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -72,16 +73,13 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Tes
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{testPlanTitle}` - Title of your test plan. Example: `Fabrikam test plan`. 
-
-
-
 
 ### Query breakdown
 
@@ -120,15 +118,11 @@ The following table describes each part of the query.
    Aggregate data across the filtered test points with having count as `Count`.
    :::column-end:::
 :::row-end:::
+ 
 
+[!INCLUDE [temp](includes/rename-query.md)]
 
-[!INCLUDE [temp](includes/query-filters-test.md)]
-
-## Power BI transforms
-
-In Power BI, do the following steps.  
-
-When finished, you may choose to rename columns. 
+## Expand the TestConfiguration column
 
 1. Expand `TestConfiguration`
     - Choose the expand button.
@@ -146,49 +140,33 @@ When finished, you may choose to rename columns.
         > [!div class="mx-imgBorder"] 
 	    > ![Power BI expanded test configuration](media/powerbi-expanded-testconfiguration.png)
 
-1. Right-click a column header and select **Rename...**
+1. (Optional) Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI transform data, Rename Columns.](media/transform-data/powerbi-rename-columns.png)
 
-1. Change the type of count columns to **Whole Number** and percentage fields to **Decimal Number**.
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Power BI transform data, change column type.](media/powerbi-change-column-type.png)
-
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI transform data, Rename Query.](media/transform-data/powerbi-rename-query.png)
-
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/transform-data/powerbi-close-apply.png)
 
 
-## Create the report
+## Change the data type of select columns  
 
-Power BI shows you the fields you can report on. 
+From the Power Query Editor, select the columns containing a number, such as *Blocked*, *Failed*, and *NotApplicable*; select **Data Type** from the **Transform** menu; and then choose **Whole Number**. To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
+[!INCLUDE [temp](includes/close-apply.md)]
 
-To create the report, do the following steps:
+## Create the Matrix report
 
-1. Create a Power BI visualization **Matrix**.
-1. Add the field **TestConfiguration.Name** to **Rows**.
-1. Add the field **LastResultOutcome** to **Columns**.
-1. Add the field **Count** to **Values**.
+ 
+1. Under **Visualizations**, choose **Matrix**.
+1. Add `TestConfiguration.Name` to **Rows**.
+1. Add `LastResultOutcome` to **Columns**.
+1. Add `Count` to **Values**.
 1. Select **Sum** as aggregation for **Count**.
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI select Sum as aggregation.](media/powerbi-sum-aggregation.png)
 
 Your report should look similar to the following image.
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI sample configuration by test outcome matrix report.](media/odatapowerbi-configurationbyoutcome.png)
- 
+:::image type="content" source="media/odatapowerbi-configurationbyoutcome.png" alt-text="Screenshot of Power BI Sample Configuration by Outcome matrix report.":::
 
 ## Related articles
 

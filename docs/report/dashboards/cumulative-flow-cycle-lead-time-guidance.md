@@ -5,8 +5,8 @@ description: Learn about using cumulative flow diagrams (CFD) to monitor the flo
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
 ms.topic: conceptual 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 ---
@@ -134,7 +134,7 @@ Two problems show up visually as flat lines and as bulges.
 
 :::row:::
    :::column span="2":::
-      Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The  [Kanban board](../../boards/boards/kanban-basics.md) provides the quickest way to transition work from one column to another.  
+      Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The  [Kanban board](../../boards/boards/kanban-overview.md) provides the quickest way to transition work from one column to another.  
       Flat lines can also appear when the work across one or more processes takes longer than planned. Flat lines appear across many parts of the system because if only one part of the system or two parts of a system have problems then you'll see a bulge. 
    :::column-end:::
    :::column span="3":::

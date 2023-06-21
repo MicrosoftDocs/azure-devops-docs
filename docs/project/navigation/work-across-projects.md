@@ -6,8 +6,8 @@ ms.custom: navigation, cross-project
 ms.subservice: azure-devops-projects
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.topic: quickstart
-ms.author: kaelli   
-author: KathrynEE
+ms.author: chcomley   
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 --- 

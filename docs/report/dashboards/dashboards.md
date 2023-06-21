@@ -5,8 +5,8 @@ description: Learn how to create, rename, and delete team dashboards, manage das
 ms.custom: "dashboards" 
 ms.subservice: azure-devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 07/07/2022

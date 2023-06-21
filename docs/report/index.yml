@@ -9,8 +9,8 @@ metadata:
   description: Add, view, manage, and monitor status and trends with dashboards, widgets, Analytics & Power BI.
   ms.subservice: azure-devops-analytics
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  author: chcomley 
+  ms.author: chcomley 
   ms.date: 09/17/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

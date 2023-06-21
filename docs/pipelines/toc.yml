@@ -14,8 +14,6 @@
     - name: Customize your pipeline
       href: customize-pipeline.md
       displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers
-    - name: Multi-stage pipelines user experience
-      href: get-started/multi-stage-pipelines-experience.md
 - name: Pipeline basics
   items:
     - name: Key concepts
@@ -317,6 +315,9 @@
           href: test/codecoverage-for-pullrequests.md
 - name: Deploy apps
   items:
+    - name: Create a multistage pipeline
+      href: process/create-multistage-pipeline.md
+      displayName: multi stage, multi stage pipelines 
     - name: Deploy apps to environments
       items:
         - name: Define and target environments
@@ -437,8 +438,6 @@
           href: ecosystems/containers/acr-template.md
         - name: Build and push to Azure Container Registry - Managed Service Identity
           href: ecosystems/containers/publish-to-acr.md
-        - name: Deploy ASP.NET Core app
-          href: apps/cd/azure/aspnet-core-to-acr.md
     - name: Azure Kubernetes Service
       items:
       - name: Build and deploy to Azure Kubernetes Service
@@ -460,19 +459,10 @@
       href: ecosystems/containers/content-trust.md
     - name: Kubernetes
       items:
-        - name: Deploy manifests
+        - name: Deploy to Kubernetes
           href: ecosystems/kubernetes/deploy.md
-          displayName: kubernetes, aks, gke, eks
-        - name: Bake manifests
-          href: ecosystems/kubernetes/bake.md
-          displayName: helm
-        - name: Multi-cloud deployments
-          href: ecosystems/kubernetes/multi-cloud.md
-          displayName: kubernetes, multicloud, aks, gke, eks, digital ocean
-        - name: Deployment strategies
-          href: ecosystems/kubernetes/deployment-strategies.md
-          displayName: canary, strategy, kubernetes, aks, gke, eks
-        - name: Kubernetes canary deployments
+          displayName: kubernetes, aks, gke, eks, canary
+        - name: Use a canary deployment strategy
           href: ecosystems/kubernetes/canary-demo.md
 - name: Consume & publish artifacts
   items:
@@ -518,6 +508,9 @@
     - name: Publish NuGet packages with Jenkins
       href: packages/jenkins.md
       displayName: nuget, package, publish, jenkins
+    - name: Publish NuGet packages to NuGet.org (Classic/YAML)
+      href: artifacts/publish-public-registry.md
+      displayName: publish, nuget, package
 - name: Create & use resources
   items:
     - name: About resources
@@ -525,7 +518,9 @@
     - name: Library & shared resources
       href: library/index.md
       displayName: resource, resources, pipeline resource, resources security, resources traceability
-    - name: Add protection to a repository resource
+    - name: Add an admin role to a resource
+      href: library/add-resource-protection.md
+    - name: Repository resource protection
       href: process/repository-resource.md
       displayName: protected resources, protection, checks
     - name: Manage service connections
@@ -551,6 +546,8 @@
     - name: About agents & agent pools
       href: agents/agents.md
       displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
+    - name: Agent version 3.x
+      href: agents/v3-agent.md
     - name: Create & manage agent pools
       href: agents/pools-queues.md
       displayName: queue, default, hosted, maintenance
@@ -559,11 +556,19 @@
     - name: Microsoft-hosted agents
       href: agents/hosted.md
     - name: Self-hosted Linux agents
-      href: agents/v2-linux.md
+      href: agents/linux-agent.md
     - name: Self-hosted macOS agents
-      href: agents/v2-osx.md
+      href: agents/osx-agent.md
     - name: Self-hosted Windows agents
-      href: agents/v2-windows.md
+      href: agents/windows-agent.md
+    - name: Self-hosted agents (previous version 2.x)
+      items:
+        - name: Self-hosted Linux agents (2.x)
+          href: agents/v2-linux-agent.md
+        - name: Self-hosted macOS agents (2.x)
+          href: agents/v2-osx-agent.md
+        - name: Self-hosted Windows agents (2.x)
+          href: agents/v2-windows-agent.md      
     - name: Scale set agents
       href: agents/scale-set-agents.md
       displayName: byos, elastic agents, VMSS, autoscale
@@ -637,6 +642,16 @@
           displayName: PATH, containers, control tasks, auditing
     - name: Download release permissions report
       href: ../organizations/security/download-permissions-report-release.md
+- name: Architectures
+  items:
+    - name: Baseline Azure Pipelines architecture
+      href: architectures/devops-pipelines-baseline-architecture.md
+    - name: Azure Web Apps architecture
+      href: architectures/devops-pipelines-azure-web-apps-architecture.md
+    - name: DevTest architecture
+      href: architectures/devops-pipelines-devtest-iaas-architecture.md
+    - name: IaaS architecture
+      href: architectures/devops-pipelines-iaas-vms-architecture.md
 - name: Integrate with 3rd party software
   items:
   - name: Microsoft Teams

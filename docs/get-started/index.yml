@@ -9,8 +9,8 @@ metadata:
   description: Learn how to start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
   ms.subservice: azure-devops-new-user
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  author: chcomley 
+  ms.author: chcomley 
   ms.date: 09/30/2019 
   manager: jillfra
 

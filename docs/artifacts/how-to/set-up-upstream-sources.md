@@ -15,9 +15,6 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 ## Create a new feed and enable upstream sources
 
-> [!NOTE]
-> Upstream sources are not supported in public feeds.
-
 1. From within your project, select **Artifacts**.
 
     :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot of Artifacts button.":::

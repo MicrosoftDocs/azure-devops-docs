@@ -26,21 +26,19 @@ Stakeholders have limited access to view the charts and dashboards. To learn mor
 
 ## Manage permissions
 
-To manage permissions for a collaboration tool, see the following articles:
-
-- [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md?toc=/azure/devops/project/wiki/toc.json)
-- [Set feedback permissions](../feedback/give-permissions-feedback.md?toc=/azure/devops/project/feedback/toc.json)
+To manage permissions for a wiki, see [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md?toc=/azure/devops/project/wiki/toc.json)
 
 To manage notifications, see the following articles:
 
 - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
 - [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
 
->[!NOTE]
->There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
+> [!NOTE]
+> There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
 
 ## Related articles
 
 - [Work across projects](../navigation/work-across-projects.md)
 - [Add a team administrator](../../organizations/settings/add-team-administrator.md)
 - [Permissions and groups reference](../../organizations/security/permissions.md)
+- [Set feedback permissions](/previous-versions/azure/devops/project/feedback/get-feedback)

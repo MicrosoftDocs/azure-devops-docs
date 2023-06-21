@@ -44,7 +44,7 @@ All members of the project experience the following effects when a private proje
 
 - You must have an organization created in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
 - You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-- Understand [access levels and unavailable features for public projects].(#access-levels-and-unavailable-features-for-public-projects).
+- Understand [access levels and unavailable features for public projects](#access-levels-and-unavailable-features-for-public-projects).
 - Be aware of [partial migration options](#partial-migration).
 - Review items in the [migration checklist](#migration-checklist). 
 
@@ -136,7 +136,7 @@ For more information, see [Instructions for a tip migration](#migrate-git-tip-on
 **Artifacts**
    :::column-end:::
    :::column span="2":::
-:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project become public. Public feeds can't have upstream sources. All existing upstream settings of the feeds that are scoped to the project are disabled once the project becomes public.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project become public. All existing upstream settings of the feeds that are scoped to the project are disabled once the project becomes public.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -238,7 +238,7 @@ The following user interface elements are hidden for non-members.
       Analytics
    :::column-end:::
    :::column span="2":::
-      Analytics Views is hidden, and the Analytics OData feed isn't supported for non-members. Power BI integration in general isn't supported.
+      Analytics views is hidden, and the Analytics OData feed isn't supported for non-members. Power BI integration in general isn't supported.
    :::column-end:::
 :::row-end:::
 :::row:::

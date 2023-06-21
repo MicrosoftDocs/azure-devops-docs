@@ -5,8 +5,8 @@ description: Learn how to track work by creating queries based on build and test
 ms.service: azure-devops-boards
 ms.custom: cross-service  
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -503,7 +503,7 @@ The ability of Team Foundation version control to resolve a work item requires t
 > [!NOTE]
 > When you use the **Checkin** action, you must set appropriate *from* and *to* states to reflect the state transition that you want.
 
-For more information about Actions, see [Automate field assignments based on State, Transition, or Reason](../../reference/xml/automate-field-assignments-state-transition-reason.md).
+For more information about Actions, see [Automate field assignments based on State, Transition, or Reason](/previous-versions/azure/devops/reference/xml/automate-field-assignments-state-transition-reason).
 
 ## Related articles
 
