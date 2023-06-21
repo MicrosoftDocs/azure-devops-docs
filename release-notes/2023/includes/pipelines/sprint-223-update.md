@@ -56,3 +56,18 @@ We now publish changes to Pipeline tasks to this [changelog](https://github.com/
 ### Release tasks use Microsoft Graph API
 
 We have updated our [release tasks](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/?view=azure-pipelines#deploy-tasks) to use the Microsoft Graph API. This removes any usage of the [AAD Graph API](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/azure-ad-change-management-simplified/ba-p/2967456) from our tasks.
+
+### Specify agent version in Agent VM extension
+
+Azure VM's can be included in Deployment Groups using a [VM Extension](https://learn.microsoft.com/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template). The VM extension has been updated to optionally specify the desired agent version to be installed:
+```
+    "properties": {
+      ...
+      "settings": {
+        ...
+        "AgentMajorVersion": "auto|2|3",
+        ...
+      },
+      ...
+     }
+```
