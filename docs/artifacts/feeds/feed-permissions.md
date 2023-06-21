@@ -117,41 +117,24 @@ If you want to completely hide your packages, you must restrict access to both f
 
 ## Pipelines permissions
 
-To access packages from your pipelines, the appropriate build identity must have access to your feed. By default, feeds have the **Project Collection Build Service** role set to **Collaborator**. If you have changed your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a Reader or Contributor.
+To access your feed from your pipeline, the corresponding build identity must have the necessary permissions. By default, feeds have the *Project Collection Build Service* role set to *Collaborator*. However, if you have configured your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a *Reader* or *Contributor*. The project-level build identity is named as follows: `[Project name] Build Service ([Organization name])`. Example: FabrikamFiber Build Service (codesharing-demo).
 
-The project-level build identity is named as follows: `[Project name] Build Service ([Organization name])`. Example: FabrikamFiber Build Service (codesharing-demo).
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. From within your feed, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
+1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
 
-1. Select the **Permissions** tab.
+1. Select **Permissions**, and then select **Add users/groups**.  Add your build identity and set its role to a **Contributor**.
 
-1. Select **Add users/groups**, and then add your build identity as a **Contributor**.
+    :::image type="content" source="media/feed-pipelines-permissions.png" alt-text="A screenshot showing the build identity permission.":::
 
 > [!NOTE]
-> If you want to access a feed in a different project from your pipeline, you must set up the other project to grant read/write access to the build service.
-
-### Share packages with all users in your organization
-
-If you want to make certain packages in your feed available to all users in your organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**.
-
-::: moniker range="azure-devops"
-
-### Share packages publicly
-
-You can make your packages available publicly to anonymous users with limited access by [creating a public feed](../tutorials/share-packages-publicly.md).
-
-::: moniker-end
+> If you want to access a feed in a different project from your pipeline, you must configure the other project to provide read/write access to the build service.
 
 ## Related articles
 
 - [Artifacts storage consumption](../artifact-storage.md).
 
-- [Delete and recover packages](../how-to/delete-and-recover-packages.md).
-
 - [Promote packages to a view](./views.md).
-
-- [Project-scoped feeds](project-scoped-feeds.md).
 
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md).
 
-- [Configure retention policies](../../pipelines/policies/retention.md).
