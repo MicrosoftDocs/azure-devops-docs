@@ -19,6 +19,9 @@
   href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json
 - name: Adjust organization settings
   items:
+  - name: Change organization image
+    displayName: image, icon, organization, update, change
+    href: change-organization-image.md
   - name: Add privacy policy URL
     displayName: GDPR, organization, public project, external guest, data, protection
     href: add-privacy-policy-url.md
