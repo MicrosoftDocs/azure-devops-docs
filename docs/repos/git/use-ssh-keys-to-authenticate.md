@@ -202,7 +202,7 @@ Associate the public key generated in the previous step with your user ID.
 
 5. On the overview page a note is displayed at the top containing the server fingerprints. Make note of them because they will be required when you first connect to Azure DevOps with SSH.
 
-   ![Accessing Security Configuration in Azure DevOps Services](media/use-ssh-authentication/ssh_accessing_security_key.png)
+   ![Screenshot showing where to locate server fingerprints in Azure DevOps Services.](media/use-ssh-authentication/ssh_accessing_security_key.png)
 
 6. Test the connection by running the following command:
 
