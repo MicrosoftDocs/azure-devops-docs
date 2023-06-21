@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 Azure Artifacts enables you to publish, consume, and store various types of packages in your feed. By configuring permissions for your feed, you can manage access to your packages and control who can interact with them.
 
-## Configure Azure Artifacts settings
+## Azure Artifacts settings
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -30,7 +30,7 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
     :::image type="content" source="media/artifact-feed-settings.png" alt-text="Screenshot showing how to set up Azure Artifacts settings.":::
 
-## Configure feed settings
+## Feed settings
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -73,8 +73,6 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 ## Permissions table
 
-In Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, users in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the different access levels for a feed
-
 |                   Permission                  |  Reader  | Collaborator | Contributor |   Owner  |  Administrator  |
 | --------------------------------------------- | -------- | ------------ | ----------- | -------- | --------------- |
 | List/install/restore packages                 | &#x2713; |   &#x2713;   |   &#x2713;  | &#x2713; |     &#x2713;    |
@@ -92,32 +90,30 @@ In Azure Artifacts, feeds can be grouped into two categories: project-scoped and
 > [!NOTE]
 > To access a project-scoped feed, a user must also have access to the project hosting that feed.
 
-## Views permissions
+## Feed views settings
 
 Feed views enable users to share certain packages while keeping others private. A common scenario for using a feed view is sharing a package version that has already been tested and validated but keeping packages under development private.
 
-By default, there are three views in a feed: **@local**, **@prerelease**, and **@release** view. The latter two are suggested views that you can rename or delete as desired.
-
-The **@local** view is the default view and it includes all the packages published to the feed as well as all the packages downloaded from [upstream sources](../concepts/upstream-sources.md).
+By default, there are three views in a feed: **@local**, **@prerelease**, and **@release** view. The latter two are suggested views that you can rename or delete as desired. The **@local** view is the default view and it includes all the packages published to the feed as well as all the packages downloaded from upstream sources.
 
 > [!IMPORTANT]
 > Users who have access a specific view are able to access and download packages from the feed through that view even if they don't have direct access to that feed.
 If you want to completely hide your packages, you must restrict access to both feed and views.
 
-To restrict access to your feed, simply select a user or group from the permission table in your [Feed Settings](#configure-feed-settings) and select **Delete**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-You can restrict access to a view by changing its visibility to **specific people** as shown below.
+1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the gear icon to navigate to your feed's settings.
 
-:::image type="content" source="media/view-permissions.png" alt-text="Screenshot showing how to change views visibility.":::
+1. Select **Views**, and then select the ellipsis button, and then select **Edit** to modify its permission. To restrict access to your view, change its visibility to **specific people**.
 
-After restricting your view's visibility to `specific people`, the access permissions column should reflect your changes.
+    :::image type="content" source="media/edit-view-permission.png" alt-text="A screenshot showing how to change views visibility.":::
 
-:::image type="content" source="media/edit-views.png" alt-text="A screenshot showing the access permissions for the preRelease view.":::
+1. Select **Save** when you're done. The access permissions column should reflect your changes.
+
+    :::image type="content" source="media/edit-views.png" alt-text="A screenshot showing the prerelease view permissions.":::
 
 > [!IMPORTANT]
-> Views inherit their permissions from the parent feed. Setting a view's visibility to **Specific people** without specifying users or groups will default the view's permissions back to its parent's feed permissions.
-
-<a name="common-identities"></a>
+> Views inherit permissions from the parent feed. If you set a view's visibility to *Specific people* without specifying any users or groups, the view's permissions will default back to the permissions of its parent feed.
 
 ## Pipelines permissions
 
