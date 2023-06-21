@@ -345,7 +345,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     <tbody>
       <tr>
       <tr>
-        <td rowspan="25"><strong>2023 Q3</strong></td>
+        <td rowspan="22"><strong>2023 Q3</strong></td>
         <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (general availability)</a></td>
         <td>Pipelines and Repos</td>
         <td>N/A</td>
@@ -431,21 +431,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/sort-test-plans" data-raw-source="[Pause and resume manual test execution](/azure/devops/release-notes/roadmap/2022/sort-test-plans)">Sort test plans by any column</a></td>
-        <td>Test Plans</td>
-        <td>2022.1</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/code-coverage-improvements" data-raw-source="[Code coverage improvements](/azure/devops/release-notes/roadmap/2022/code-coverage-improvements)">Improved support for code coverage publishing within Azure Pipelines</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/resume-test-execution" data-raw-source="[Pause and resume manual test execution](/azure/devops/release-notes/roadmap/2022/resume-test-execution)">Pause and resume manual test execution</a></td>
-        <td>Test Plans</td>
-        <td>2022.1</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/support-for-cargo-package" data-raw-source="[Support for Cargo package manager for Rust](/azure/devops/release-notes/roadmap/support-for-cargo-package)">Support for Cargo package manager for Rust</a></td>
         <td>Artifacts</td>
         <td>N/A</td>
@@ -471,13 +456,19 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>N/A</td>
       </tr>
       <tr>
-        <td rowspan="1"><strong>2023 Q4</strong></td>
-        <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source=""></a></td>
-        <td></td>
-        <td></td>
+        <td rowspan="2"><strong>2023 Q4</strong></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/improvements-to-code-coverage" data-raw-source="[Improvements to code coverage user experience in Pipeline results page](/azure/devops/release-notes/roadmap/2023/improvements-to-code-coverage)">Improvements to code coverage user experience in Pipeline results page</a></td>
+        <td>Test Plans</td>
+        <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="12"><strong>Future</strong></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/generate-code-coverage-results" data-raw-source="[Generate code coverage results in source /folder level view](/azure/devops/release-notes/roadmap/2023/generate-code-coverage-results)">Generate code coverage results in source /folder level view</a></td>
+        <td>Test Plans</td>
+        <td>Future</td>
+      </tr>
+      </tr>
+      <tr>
+        <td rowspan="13"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -511,6 +502,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts" data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td>
         <td>Artifacts</td>
         <td>Future</td>   
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2022/sort-test-plans" data-raw-source="[Pause and resume manual test execution](/azure/devops/release-notes/roadmap/2022/sort-test-plans)">Sort test plans by any column</a></td>
+        <td>Test Plans</td>
+        <td>Future</td>
       </tr>   
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
