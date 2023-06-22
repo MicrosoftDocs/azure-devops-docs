@@ -35,11 +35,13 @@ In this article, you'll learn how to:
 
 - [A personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate with Azure DevOps.
 
-## Install the PowerShell module
+## Install PowerShell module
+
+Using the command line interface, run the provided commands to install and import the PowerShell module. You can also download the migration scripts directly from the [azure-artifacts-migration](https://github.com/microsoft/azure-artifacts-migration) GitHub repository.
 
 ### [Windows](#tab/Windows/)
 
-1. Open an elevated PowerShell prompt window.
+1. Open a PowerShell prompt window.
  
 1. Run the following commands to install the `AzureArtifactsPackageMigration` PowerShell module and import it into your current session.
 
@@ -61,36 +63,34 @@ In this article, you'll learn how to:
 
 * * *
 
-Alternatively, you can also download the migration scripts from the [GitHub](https://github.com/microsoft/azure-artifacts-migration) repository.
-
 ## Migration setup
 
-To migrate your packages, you will need to get the package source URL for both the source and destination feeds. 
+To migrate your packages, you will need to get the source URLs for both the source feed (MyGet) and destination feed (Azure Artifacts). 
 
-### Azure Artifacts
+#### Azure Artifacts
 
-1. Select **Artifacts** and then select your feed.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Connect to feed**.
+1. Select **Artifacts**, select your feed from the dropdown menu and then select **Connect to feed**.
 
-    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to feed.":::
+    :::image type="content" source="../media/connect-to-feed-devops.png" alt-text="A screenshot showing how to connect to feed.":::
 
-1. Select **NuGet.exe** and then follow the instructions in the **Project setup** to set up your config file.
+1. Select **NuGet.exe** and then copy your feed's source URL.
 
-    :::image type="content" source="../media/nuget-project-setup.png" alt-text="Screenshot showing the instructions to set up a project.":::
+    :::image type="content" source="../media/nuget-source-url.png" alt-text="Screenshot showing how to find the feed source URL.":::
 
-### MyGet
+#### MyGet
 
 1. Log in to your [MyGet](https://myget.org/) Account.
 
-1. Navigate to the feed you want to migrate.
+1. Navigate to the feed you wish to migrate.
 
 1. Select **Feed Details**.
 
-1. Select **Packages** and then copy the **NuGet V3 feed URL**. 
+1. Select **Packages** and then copy your **NuGet V3 feed URL**. 
 
     ```
-    https://www.myget.org/F/<YOUR_FEED_NAME>/api/v3/index.json 
+    https://www.myget.org/F/<FEED_NAME>/api/v3/index.json 
     ```
 
 ## Migrate NuGet packages
