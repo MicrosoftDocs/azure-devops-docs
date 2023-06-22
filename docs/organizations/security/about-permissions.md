@@ -55,9 +55,7 @@ With the creation of an organization, collection, or project&mdash;Azure DevOps 
 	- Server-level (on-premises only)
 - When you add a team, a team security group gets created 
 
-> [!TIP]    
-> You can't create an object-level security group, but you can assign a custom group to an object-level and assign permissions to that level. To learn more about object-level permissions, see [Set object-level permissions](set-object-level-permissions.md). 
-
+You can't create an object-level security group, but you can assign a custom group to an object-level and assign permissions to that level. For more information, see [Set object-level permissions](set-object-level-permissions.md). 
  
 ### Default security groups 
 
@@ -78,8 +76,7 @@ For a description of each of these groups, see [Security groups, service account
 
 The following security groups are defined by default for each project and project collection. You typically add users or groups to the **Readers**, **Contributors**, or **Project Administrators** groups.  
 
-> [!NOTE]  
-> The following list indicates the latest groups defined for TFS 2017 and later versions. For earlier versions of Azure DevOps, the list may differ. Only add service accounts to [Azure DevOps service account groups](/azure/devops/server/admin/service-accounts-dependencies). To understand valid user groups, see [Valid user groups](#validusers) later in this article.  
+The following list indicates the latest groups defined for TFS 2017 and later versions. For earlier versions of Azure DevOps, the list may differ. Only add service accounts to [Azure DevOps service account groups](/azure/devops/server/admin/service-accounts-dependencies). To understand valid user groups, see [Valid user groups](#validusers) later in this article.  
 
 > [!div class="mx-tdBreakAll"]  
 > | Project level | Collection level| 
@@ -88,13 +85,8 @@ The following security groups are defined by default for each project and projec
 
 ::: moniker-end
 
-> [!TIP] 
-> For users tasked with managing project-level features—such as, teams, area and 
-> iteration paths, repositories, service hooks, and service end points&mdash;add them to 
-> the **Project Administrators** group. 
-> For users tasked with managing organization or collection-level features—such as, projects, policies, processes, retention policies, 
-> agent and deployment pools, and extensions&mdash;add them to the **Project Collection 
-> Administrators** group. To learn more, see [About user, team, project, and organization-level settings](../settings/about-settings.md). 
+For users tasked with managing project-level features—such as, teams, area and iteration paths, repositories, service hooks, and service end points&mdash;add them to the **Project Administrators** group. 
+For users tasked with managing organization or collection-level features—such as, projects, policies, processes, retention policies, agent and deployment pools, and extensions&mdash;add them to the **Project Collection Administrators** group. For more information, see [About user, team, project, and organization-level settings](../settings/about-settings.md). 
 
 For a description of each group and each permission, see [Permissions and groups reference, Groups](permissions.md#groups).
 
@@ -277,7 +269,7 @@ A permission can have the following assignments. They grant or restrict access a
 
 In some cases, members of the **Project Collection Administrators** or **Team Foundation Administrators** groups may always get the permission even if they're denied that permission in a different group. In other cases such as work item deletion or pipelines, being a member of Project Collection Administrators group doesn't bypass **Deny** permissions set elsewhere.
 	
-> [!TIP]
+> [!WARNING]
 > When you change a permission for a group, it changes that permission for all users who are members of that group. Depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the potential effects before you make a change.
 
 <a name="inheritance"></a>
@@ -356,15 +348,14 @@ A new window opens that shows the inheritance information for that permission.
 
 ## Role-based permissions   
 
-With Role-based permissions, you assign user accounts or security groups to a role, with each role assigned one or more permissions. Here are the primary roles and links to learn more.   
+With Role-based permissions, you assign user accounts or security groups to a role, with each role assigned one or more permissions. Here are the primary roles and links to more information.   
 
 - [Artifact or package feed security roles](../../artifacts/feeds/feed-permissions.md): Roles support various permission levels to edit and manage package feeds.   
 - [Marketplace extension Manager role](../../marketplace/grant-permissions.md): Members of the Manager role can install extensions and respond to requests for extensions to be installed.  
 - [Pipeline security roles](about-security-roles.md): Several roles are used to manage library resources, project-level and collection-level pipeline resources. 
 - [Team administrator role](../settings/manage-teams.md)  Team administrators are able to manage all team tools.   
 
-	> [!NOTE]
-	> Members of the Project Administrators or Project Collection Administrators groups can manage all team tools for all teams.
+Members of the Project Administrators or Project Collection Administrators groups can manage all team tools for all teams.
 
 ## Preview features 
  
