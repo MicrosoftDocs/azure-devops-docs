@@ -140,6 +140,7 @@ For a Windows VM, create an ARM template and add a resources element under the
         "TeamProject": "[parameters('TeamProject')]",
         "DeploymentGroup": "[parameters('DeploymentGroup')]",
         "AgentName": "[parameters('AgentName')]",
+        "AgentMajorVersion": "auto|N",
         "Tags": "[parameters('Tags')]"
       },
       "protectedSettings": {
