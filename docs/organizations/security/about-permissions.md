@@ -250,6 +250,7 @@ User or group *has* permissions to perform a task:
 - **Allow** 
 - **Allow (inherited)**
 - **Allow (system)** 
+
 User or group *doesn't have* permission to perform a task: 
 - **Deny** 
 - **Deny (inherited)**
