@@ -5,7 +5,7 @@ description: Learn how to run the build and release agent with a self-signed cer
 ms.topic: conceptual
 ms.assetid: 09E36E4D-D94B-4F5B-BE4D-9E7B4E7B68E2
 ms.reviewer: chrispat
-ms.date: 10/15/2018
+ms.date: 06/22/2023
 monikerRange: '< azure-devops'
 ---
 
@@ -92,9 +92,9 @@ There are 2 approaches to solve the problem.
 
 ## Work with SSL client certificate
 
-IIS has a SSL setting that requires all incoming requests to TFS must present client certificate in addition to the regular credential.
+IIS has a SSL setting that requires all incoming requests to Azure DevOps Server and TFS must present client certificate in addition to the regular credential.
 
-When that IIS SSL setting enabled, you need to use `2.125.0` or above version agent and follow these extra steps in order to configure the build machine against your TFS server.
+When that IIS SSL setting enabled, you need to use `2.125.0` or above version agent and follow these extra steps in order to configure the build machine against your Azure DevOps or TFS server.
 
 - Prepare all required certificate information
   - CA certificate(s) in `.pem` format (This should contains the public key and signature of the CA certificate, you need put the root ca certificate and all your intermediate ca certificates into one `.pem` file)  
