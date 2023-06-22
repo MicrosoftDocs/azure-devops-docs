@@ -80,7 +80,7 @@ There are 2 approaches to solve the problem.
    >
    > Setting system level Git config is not reliable on Windows. The system .gitconfig file is stored with the copy of Git we packaged, which will get replaced whenever the agent is upgraded to a new version.
 
-2. Enable git to use SChannel during configure with 2.129.0 or higher version agent
+2. Enable git to use `SChannel` during configure with 2.129.0 or higher version agent
    Pass `--gituseschannel` during agent configuration
    ```
    ./config.cmd --gituseschannel
@@ -92,15 +92,15 @@ There are 2 approaches to solve the problem.
 
 ## Work with SSL client certificate
 
-IIS has a SSL setting that requires all incoming requests to Azure DevOps Server or TFS must present client certificate in addition to the regular credential.
+IIS has an SSL setting that requires all incoming requests to Azure DevOps Server or TFS must present client certificate in addition to the regular credential.
 
 When that IIS SSL setting enabled, you need to use `2.125.0` or above version agent and follow these extra steps in order to configure the build machine against your Azure DevOps or TFS server.
 
 - Prepare all required certificate information
-  - CA certificate(s) in `.pem` format (This should contains the public key and signature of the CA certificate, you need put the root ca certificate and all your intermediate ca certificates into one `.pem` file)  
-  - Client certificate in `.pem` format (This should contains the public key and signature of the Client certificate)  
-  - Client certificate private key in `.pem` format (This should contains only the private key of the Client certificate)  
-  - Client certificate archive package in `.pfx` format (This should contains the signature, public key and private key of the Client certificate)  
+  - CA certificate(s) in `.pem` format (This should contain the public key and signature of the CA certificate, you need put the root ca certificate and all your intermediate ca certificates into one `.pem` file)  
+  - Client certificate in `.pem` format (This should contain the public key and signature of the Client certificate)  
+  - Client certificate private key in `.pem` format (This should contain only the private key of the Client certificate)  
+  - Client certificate archive package in `.pfx` format (This should contain the signature, public key and private key of the Client certificate)  
   - Use `SAME` password to protect Client certificate private key and Client certificate archive package, since they both have client certificate's private key  
 
 - Install CA certificate(s) into machine certificate store
