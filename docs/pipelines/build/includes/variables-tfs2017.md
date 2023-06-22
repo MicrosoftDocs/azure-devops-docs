@@ -418,7 +418,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 </tr>
 
 <tr>
-<td>System.PullRequest.SourceCommit</td>
+<td>System.PullRequest.SourceCommitId</td>
 <td>The commit that is being reviewed in a pull request. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
 </tr>
 
