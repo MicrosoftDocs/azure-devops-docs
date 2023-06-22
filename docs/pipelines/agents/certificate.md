@@ -92,7 +92,7 @@ There are 2 approaches to solve the problem.
 
 ## Work with SSL client certificate
 
-IIS has a SSL setting that requires all incoming requests to Azure DevOps Server and TFS must present client certificate in addition to the regular credential.
+IIS has a SSL setting that requires all incoming requests to Azure DevOps Server or TFS must present client certificate in addition to the regular credential.
 
 When that IIS SSL setting enabled, you need to use `2.125.0` or above version agent and follow these extra steps in order to configure the build machine against your Azure DevOps or TFS server.
 
