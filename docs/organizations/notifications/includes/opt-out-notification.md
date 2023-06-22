@@ -19,13 +19,13 @@ You can choose to not receive notifications for certain team notification subscr
 
    :::image type="content" source="../media/personal-notifications-preview.png" alt-text="Screenshot of personal notifications, preview page.":::
 
-3. To unsubscribe from any notification, slide the state **On/Off** indicator ot the *Off* position.
+3. To unsubscribe from any notification, slide the state **On/Off** indicator to the *Off* position.
 
 ::: moniker-end  
 
 ::: moniker range=" < azure-devops"
 
-To unsubscribe from any notification, slide the state **On/Off** indicator ot the *Off* position. For example, here we turn off the "Build completes" notification subscription.
+To unsubscribe from any notification, slide the state **On/Off** indicator to the *Off* position. For example, here we turn off the "Build completes" notification subscription.
 
 :::image type="content" source="../media/unsubscribe-from-build-completes.png" alt-text="Screenshot of unsubscribe from Build completes notification subscription.":::
 
