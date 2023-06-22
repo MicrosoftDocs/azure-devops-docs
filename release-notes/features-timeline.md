@@ -75,7 +75,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Secret-free deployments from Azure Pipelines](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Secret-free deployments from Azure Pipelines (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Workload Identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload Identity federation for Azure Deployments (preview)</a></td>
          <td>Pipelines</td>
          <td>2023 Q2</td>
          <td>N/A</td>
@@ -93,7 +93,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Secret-free deployments from Azure Pipelines](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (GA)</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Workload Identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Workload Identity federation for Azure Deployments (GA)</a></td>
          <td>Pipelines</td>
          <td>2023 H2</td>
          <td>N/A</td>
@@ -421,7 +421,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Workload Identity federation for Azure Deployments (Preview)](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Workload Identity federation for Azure Deployments (Preview)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
