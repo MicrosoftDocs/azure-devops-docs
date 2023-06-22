@@ -4,7 +4,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 07/19/2021
+ms.date: 06/22/2023
 ---
 
 ## Unsubscribe or opt out of a team or out-of-box (OOB) notification subscription
@@ -13,28 +13,13 @@ You can choose to not receive notifications for certain team notification subscr
 
 ::: moniker range="azure-devops"
 
-To access the Preview features options, open your profile menu. The profile menu appears, as shown, based on whether the **New Account Manager** feature is enabled.
-
-#### [New Account Manager enabled](#tab/new-account-enabled)
-
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-1. Select :::image type="icon" source="../../../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications** from the resulting list.
+2. Select :::image type="icon" source="../../../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications** from the resulting list.
 
    :::image type="content" source="../media/personal-notifications-preview.png" alt-text="Screenshot of personal notifications, preview page.":::
 
-1. To unsubscribe from any notification, slide the state **On/Off** indicator ot the *Off* position.
-#### [New Account Manager not enabled](#tab/new-account-not-enabled)
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-1. Open your **User settings**, and then select **Notification settings** from the resulting list.
-
-   :::image type="content" source="../media/nav-personal-notifications-hub-newnav.png" alt-text="Go to personal notifications, current page."::: 
-
-1. To unsubscribe from any notification, slide the state **On/Off** indicator ot the *Off* position.
-
-***
+3. To unsubscribe from any notification, slide the state **On/Off** indicator ot the *Off* position.
 
 ::: moniker-end  
 

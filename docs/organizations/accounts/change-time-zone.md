@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 05/23/2022
+ms.date: 06/23/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -31,48 +31,23 @@ If your organization time zone is EST, and user profile is PST, all date and tim
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
+   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing highlighted Organization settings button.":::
 
 3. Go to **Overview**, and then select the time zone from the dropdown menu.
 
-    ![Select time zone in Overview tab or Organization settings](media/change-time-zone/organization-time-zone-settings.png)
+   :::image type="content" source="media/change-time-zone/organization-time-zone-settings.png" alt-text="Screenshot showing time zone in Overview tab or Organization settings.":::
 
 4. Select **Save**.
 
 ## Change user profile time zone
 
-::: moniker range="azure-devops"
+1. From your home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings** > **Time and Locale**.
 
-> [!NOTE]   
-> To enable the new user interface for the New account manager, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page) 
-
-1. From your home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Time and Locale**.
-
-   ![Select User settings icon and then Time and Locale](media/change-time-zone/user-settings-time-locale.png)
+   :::image type="content" source="media/change-time-zone/user-settings-time-locale.png" alt-text="Screenshot showing select User settings icon and then Time and Locale.":::
 
 2. You can update your preferred language, date pattern, time pattern, and time zone. When you're done, select **Save**.
 
-   ![Select Time and Locale](media/change-time-zone/edit-time-locale.png)
-
-#### [Current page](#tab/current-page) 
-
-1. From your home page, open **User profile**, and then select **My profile**.
-
-    ![Open user profile settings](../settings/media/open-profile-user-settings.png)
-
-2. Select **Edit profile**.
-
-    ![Select Edit profile](media/change-time-zone/select-edit-profile.png)
-
-3. Select **Preferences**, set user profile time zone, and then select **Save changes**.
-
-    ![Select Edit profile to change user preference time zone](media/change-time-zone/change-user-preferences-time-zone.png)
-
-::: moniker-end
-
-***
+   :::image type="content" source="media/change-time-zone/edit-time-locale.png" alt-text="Screenshot showing time and locale entry.":::
 
 ## Related articles
 

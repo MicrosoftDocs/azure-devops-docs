@@ -1,5 +1,5 @@
 ---
-title: Navigating the notifications UI
+title: Navigate the notifications UI
 titleSuffix: Azure DevOps 
 description: Go to and explore the notifications pages in Azure DevOps.  
 ms.subservice: azure-devops-notifications
@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 12/07/2020 
+ms.date: 06/22/2023 
 ---
 
 # Access notification settings
@@ -23,7 +23,7 @@ Learn about navigating the notifications user interface.
 
 ## Notifications settings
 
-You can set notifications at the following four levels:
+You can set notifications at the following levels:
 
 * Personal
 * Team
@@ -39,34 +39,19 @@ You can set notifications at the following four levels:
 * To manage project-level notifications, you must be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md)
 * To manage organization or collection-level notifications, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). 
 
-For additional permission settings regarding notifications, see [Permissions and groups, Notifications or alerts](../../organizations/security/permissions.md#notifications-or-alerts).
-
+For more permission settings regarding notifications, see [Permissions and groups, Notifications or alerts](../../organizations/security/permissions.md#notifications-or-alerts).
 
 <a id="open-person-level" />
 
 ## Open your personal notifications 
- 
+
 ::: moniker range="azure-devops"
 
-Open your :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: profile menu, and then choose **Notifications** or **Notification settings**. 
-
-The profile menu appears based on whether the **New Account Manager** feature has been enabled or not. To enable the **New Account Manager** feature, see [Manage or enable features](../../project/navigation/preview-features.md).  
-
-:::row:::
-   :::column span="2":::
-      **New Account Manager enabled**  
-      :::image type="content" source="media/personal/open-profile-menu-s170-new-account-manager.png" alt-text="Select your profile menu, and then select Notifications":::
-   :::column-end:::
-   :::column span="2":::
-      **New Account Manager not enabled**  
-      :::image type="content" source="media/personal/open-profile-menu-not-new-account-s170.png" alt-text="Select your profile menu, and then Notification settings":::
-   :::column-end:::
-:::row-end:::
+Open your :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: profile menu, and then choose **Notifications** or **Notification settings**.
 
 :::image type="content" source="media/personal/user-notifications.png" alt-text="View your personal notifications page":::
 
 ::: moniker-end
-
 
 ::: moniker range="< azure-devops"
 Open your profile menu and choose **Notification settings**. 
@@ -115,7 +100,7 @@ For more information, see [Manage notifications for a team or group](manage-team
 
 	:::image type="content" source="../../media/settings/open-org-settings-s172.png" alt-text="Open Organization settings":::
 
-2. Choose **Global Notifications**.  
+2. Choose **Global notifications**.  
 
 	:::image type="content" source="media/nav-ui/organization-notifications-s172.png" alt-text="Open Global Notifications":::
 
@@ -141,18 +126,15 @@ Enter the following URL to reach the organization-level notifications page, repl
 
 ::: moniker-end
 
-
 ::: moniker range="tfs-2018" 
 
 ```URL
 https://dev.azure.com/{organization}/_admin/_notifications
 ```
 
-> [!div class="mx-imgBorder"] 
->![Go to organization notifications page](media/nav-organization-notifications-hub.png)  
-
-> [!div class="mx-imgBorder"] 
->![View organization level notifications page](media/view-organization-notification-hub.png)  
+:::image type="content" source="media/nav-organization-notifications-hub.png" alt-text="Screenshot showing notifications selection.":::
+ 
+:::image type="content" source="media/view-organization-notification-hub.png" alt-text="Screenshot showing notifications hub.":::
 
 ::: moniker-end
 
