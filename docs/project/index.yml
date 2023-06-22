@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 02/18/2022
+  ms.date: 06/22/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -53,6 +53,8 @@ landingContent:
             url: ./wiki/add-edit-wiki.md
           - text: Publish a Git repository to a wiki
             url: ./wiki/publish-repo-to-wiki.md
+          - text: Restore a deleted wiki
+            url: ./wiki/restore-deleted-wiki.md
       - linkListType: reference
         links:
           - text: Syntax guidance for basic Markdown usage

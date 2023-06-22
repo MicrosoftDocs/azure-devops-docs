@@ -16,26 +16,28 @@
     href: ../../repos/git/create-a-readme.md?toc=/azure/devops/project/toc.json
 - name: How-to guides
   items:
-  - name: Manage wikis with CLI
-    href: manage-wikis.md
-  - name: View wiki history and revert
-    href: wiki-view-history.md
+  - name: Add comments to wiki
+    href: add-comments-wiki.md
+  - name: Create work item from wiki content
+    href: create-embed-wit-from-wiki.md
   - name: Filter or print wiki content
     href: filter-print-wiki.md
   - name: Follow wiki pages, get notifications
     href: follow-notifications-wiki-pages.md
-  - name: Create work item from wiki content
-    href: create-embed-wit-from-wiki.md
-  - name: Add comments to wiki
-    href: add-comments-wiki.md
+  - name: Manage wiki permissions (Security)
+    href: manage-readme-wiki-permissions.md
+  - name: Manage wikis with CLI
+    href: manage-wikis.md
+  - name: Migrate wiki extension pages
+    href: migrate-extension-wiki-pages.md
+  - name: Restore a wiki
+    href: restore-deleted-wiki.md
   - name: Version, select, or un-publish a wiki
     href: wiki-select-unpublish-versions.md
   - name: Update wiki pages offline
     href: wiki-update-offline.md
-  - name: Manage wiki permissions (Security)
-    href: manage-readme-wiki-permissions.md
-  - name: Migrate wiki extension pages
-    href: migrate-extension-wiki-pages.md
+  - name: View wiki history and revert
+    href: wiki-view-history.md
 - name: Reference
   items:
   - name: Basic Markdown guidance
