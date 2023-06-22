@@ -1,14 +1,14 @@
 ---
-title: Migrate your packages to Azure Artifacts
-description: Use a PowerShell to easily migrate your packages to an Azure Artifacts Feed
+title: Migrate from MyGet to Azure Artifacts
+description: How to migrate your packages from MyGet to an Azure Artifacts Feed
 ms.service: azure-devops-artifacts
 ms.reviewer: elbatk 
-ms.date: 01/20/2022
+ms.date: 06/22/2023
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
 
-# Migrate NuGet packages to Azure Artifacts
+# Migrate your packages from MyGet to Azure Artifacts
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -19,15 +19,21 @@ In this article, you'll learn how to:
 > [!div class="checklist"]  
 > * Install the *AzureArtifactsPackageMigration* PowerShell module.
 > * Connect to Azure Artifacts feeds.
-> * Migrate NuGet packages.
+> * Migrate to Azure Artifacts.
 
 ## Prerequisites
 
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
+
+- Install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+
 - [Install NuGet CLI](/nuget/tools/nuget-exe-cli-reference).
-- [Install PowerShell](/powershell/scripting/install/installing-powershell) version 5.1 or later for Windows and version 6 or later for Linux/Mac.
-- [A personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate your feed.
-- [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
-- [Azure Artifacts feed](../get-started-nuget.md).
+
+- [Install PowerShell](/powershell/scripting/install/installing-powershell)
+
+- [A personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate with Azure DevOps.
 
 ## Install the PowerShell module
 
