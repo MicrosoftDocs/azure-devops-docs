@@ -708,7 +708,7 @@ Otherwise, it is set to <code>False</code>.</td>
 
 <tr>
 <td>System.PullRequest.SourceCommitId</td>
-<td>The commit that is being reviewed in a pull request. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>The commit that is being reviewed in a pull request. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>). This variable is only available in a YAML pipeline if the PR is affected by a branch policy.</td>
 </tr>
 
 <tr>
