@@ -246,16 +246,15 @@ For a description of each default security group, see [Security groups, service 
 
 A permission can have the following assignments. They grant or restrict access as indicated.
 
-- User or group *has* permissions to perform a task: 
-	- **Allow** 
-	- **Allow (inherited)**
-	- **Allow (system)** 
-- User or group *doesn't have* permission to perform a task: 
-	- **Deny** 
-	- **Deny (inherited)**
-	- **Deny (system)**
-	- **Not set** 
-
+User or group *has* permissions to perform a task: 
+- **Allow** 
+- **Allow (inherited)**
+- **Allow (system)** 
+User or group *doesn't have* permission to perform a task: 
+- **Deny** 
+- **Deny (inherited)**
+- **Deny (system)**
+- **Not set** 
 
 |Permission state  |Description  |
 |---------|---------|
