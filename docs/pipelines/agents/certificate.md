@@ -13,7 +13,7 @@ monikerRange: '< azure-devops'
 
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
-This topic explains how to run a self-hosted agent with self-signed certificate.
+This topic explains how to run a self-hosted agent with a self-signed certificate.
 
 > [!NOTE]
 > This article applies to agent versions 2.x and newer.
