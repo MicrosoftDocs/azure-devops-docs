@@ -65,7 +65,7 @@ Using the command line interface, run the provided commands to install and impor
 
 ## Migration setup
 
-To migrate your packages, you will need to get the source URLs for both the source feed (MyGet) and destination feed (Azure Artifacts). 
+To migrate your packages, you'll need to get the source URLs for both the source feed (MyGet) and destination feed (Azure Artifacts). 
 
 #### Azure Artifacts
 
@@ -79,9 +79,21 @@ To migrate your packages, you will need to get the source URLs for both the sour
 
     :::image type="content" source="../media/nuget-source-url.png" alt-text="Screenshot showing how to find the feed source URL.":::
 
+    - Project-scoped feed:
+        
+        ```command
+        https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json
+        ```
+
+    - Organization-scoped feed:
+    
+        ```command
+        https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json
+        ```
+
 #### MyGet
 
-1. Log in to your [MyGet](https://myget.org/) Account.
+1. Sign in to your [MyGet](https://myget.org/) Account.
 
 1. Navigate to the feed you wish to migrate.
 
@@ -93,9 +105,9 @@ To migrate your packages, you will need to get the source URLs for both the sour
     https://www.myget.org/F/<FEED_NAME>/api/v3/index.json 
     ```
 
-## Migrate NuGet packages
+## Migrate packages
 
-If your MyGet feed is private, you will need to create a password to authenticate. You can skip the first step if your MyGet feed is public.
+If your MyGet feed is private, you'll need to create a password to authenticate. You can skip the first step if your MyGet feed is public.
 
 1. Run the following command to convert your password to a secure string.
 
@@ -103,15 +115,15 @@ If your MyGet feed is private, you will need to create a password to authenticat
     $password = ConvertTo-SecureString -String '<YOUR_PASSWORD>' -AsPlainText -Force
     ```
 
-1. Run the following command to migrate your packages to Azure Artifacts;
+1. Run the following command to migrate your packages to Azure Artifacts.
 
-    - **Migrate from a private source feed**:
+    - **Migrate from a private MyGet feed**:
     
         ```PowerShell
           Move-MyGetNuGetPackages -SourceIndexUrl '<MYGET_SOURCE_URL>' -DestinationIndexUrl '<ARTIFACTS_FEED_SOURCE_URL>' -DestinationPAT '<AZURE_DEVOPS_PAT>' -DestinationFeedName '<ARTIFACTS_FEED_NAME>' -SourceUsername '<MYGET_USERNAME>' -SourcePassword $password -Verbose
         ```
 
-    - **Migrate from a public source feed**:
+    - **Migrate from a public MyGet feed**:
     
         ```PowerShell
           Move-MyGetNuGetPackages -SourceIndexUrl '<MYGET_SOURCE_URL>' -DestinationIndexUrl '<ARTIFACTS_FEED_SOURCE_URL>' -DestinationPAT '<AZURE_DEVOPS_PAT>' -DestinationFeedName '<ARTIFACTS_FEED_NAME>' -Verbose
@@ -119,7 +131,8 @@ If your MyGet feed is private, you will need to create a password to authenticat
 
 ## Related articles
 
-- [Publish NuGet packages (CLI)](../nuget/publish.md)
+- [Publish and restore NuGet packages (NuGet.exe)](../nuget/publish.md)
+
+- [Publish and restore NuGet packages (dotnet)](../nuget/dotnet-exe.md)
+
 - [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)
-- [NuGet.org upstream source](../nuget/upstream-sources.md)
-- [Package migration repository](https://github.com/microsoft/azure-artifacts-migration)
