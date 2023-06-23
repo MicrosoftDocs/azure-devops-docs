@@ -34,7 +34,7 @@ To change your organization URL, you need at least Basic access and organization
 
 2. Select :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**.
 
-   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing a gear icon and Organization settings surrounded by red box.":::
+   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing a gear icon and Organization settings emphasized.":::
 
 3. Select **Overview**, enter a new name for the organization, and then select **Save**. Move the toggle if you want to use the new URL.
 
