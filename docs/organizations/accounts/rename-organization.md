@@ -8,7 +8,7 @@ ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 06/21/2023
+ms.date: 06/23/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -38,7 +38,7 @@ To change your organization URL, you need at least Basic access and organization
 
 3. Select **Overview**, enter a new name for the organization, and then select **Save**. Move the toggle if you want to use the new URL.
 
-   :::image type="content" source="media/rename-vso-organization/rename-organization-new.png" alt-text="Screenshot showing the Organization tab, Name entry, and Save button all highlighted with red box.":::
+   :::image type="content" source="media/rename-vso-organization/rename-organization-new.png" alt-text="Screenshot showing the Organization tab, Name entry, and Save button all emphasized.":::
 
    [!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
 
