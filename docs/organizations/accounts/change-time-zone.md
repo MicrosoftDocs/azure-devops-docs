@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 06/21/2023
+ms.date: 06/23/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -45,38 +45,13 @@ Your organization's time zone is updated.
 
 ## Change user profile time zone
 
-::: moniker range="azure-devops"
-
-> [!NOTE]   
-> To enable the new user interface for the New account manager, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page) 
-
-1. From your home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Time and Locale**.
+1. From your home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings** > **Time and Locale**.
 
    :::image type="content" source="media/change-time-zone/user-settings-time-locale.png" alt-text="Screenshot showing User settings icon and Time and Locale surrounded by a red box.":::
 
 2. Update your preferred language, date pattern, time pattern, and time zone. When you're done, select **Save**.
 
-   :::image type="content" source="media/change-time-zone/edit-time-locale.png" alt-text="Screenshot showing Time and Locale dialog and Save button surrounded by red box.":::
-
-#### [Current page](#tab/current-page) 
-
-1. From your home page, open **User profile**, and then select **My profile**.
-
-   :::image type="content" source="../settings/media/open-profile-user-settings.png" alt-text="Screenshot showing user profile settings screen.":::
-
-2. Select **Edit profile**.
-
-   :::image type="content" source="media/change-time-zone/select-edit-profile.png" alt-text="Screenshot showing Edit profile button surrounded by red square.":::
-
-3. Select **Preferences**, set user profile time zone, and then select **Save changes**.
-
-   :::image type="content" source="media/change-time-zone/change-user-preferences-time-zone.png" alt-text="Screenshot showing User profile page with red box surrounding the Preferences tab, Time Zone dropdown menu, and Save changes button.":::
-
-::: moniker-end
-
-***
+   :::image type="content" source="media/change-time-zone/edit-time-locale.png" alt-text="Screenshot showing time and locale entry.":::
 
 Your user profile time zone is updated.
 
