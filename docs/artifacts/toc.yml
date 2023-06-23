@@ -59,9 +59,9 @@
       displayName: upstream sources, upstreams, artifact feeds 
     - name: Publish from GitHub Actions
       href: quickstarts/github-actions.md
-    - name: Migrate NuGet packages to Azure Artifacts
+    - name: Migrate from MyGet to Azure Artifacts
       href: tutorials/migrate-packages.md
-      displayName: migration, feed
+      displayName: migrate, nuget
   - name: npm 
     items:
     - name: npm quickstart
