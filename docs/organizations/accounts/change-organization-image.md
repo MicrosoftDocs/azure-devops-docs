@@ -25,7 +25,7 @@ When you [create an organization](create-organization.md) in Azure DevOps, the s
 
 2. Select :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**.
 
-   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing a gear icon and Organization settings surrounded by red box.":::
+   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing a gear icon and Organization settings emphasized.":::
 
 3. Select :::image type="icon" source="../../boards/backlogs/office/media/icons/edit.png" border="false"::: **Edit** on your organization's image.
 

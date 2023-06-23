@@ -33,11 +33,11 @@ If your organization time zone is EST, and user profile is PST, all date and tim
 
 2. Select :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**.
 
-   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing a gear icon and Organization settings surrounded by red box.":::
+   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing a gear icon and Organization settings emphasized.":::
 
 3. Select **Overview**, and then select the time zone from the dropdown menu.
 
-   :::image type="content" source="media/change-time-zone/organization-time-zone-settings.png" alt-text="Screenshot showing Overview tab and Time zone dropdown menu surrounded by red box.":::
+   :::image type="content" source="media/change-time-zone/organization-time-zone-settings.png" alt-text="Screenshot showing Overview tab and Time zone dropdown menu emphasized.":::
 
 4. Select **Save**.
 
@@ -58,7 +58,7 @@ Your organization's time zone is updated.
 
 2. Update your preferred language, date pattern, time pattern, and time zone. When you're done, select **Save**.
 
-   :::image type="content" source="media/change-time-zone/edit-time-locale.png" alt-text="Screenshot showing Time and Locale dialog and Save button surrounded by red box.":::
+   :::image type="content" source="media/change-time-zone/edit-time-locale.png" alt-text="Screenshot showing Time and Locale dialog and Save button emphasized.":::
 
 #### [Current page](#tab/current-page) 
 
