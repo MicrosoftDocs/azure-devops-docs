@@ -304,4 +304,3 @@ $attachmentId = $split[$split.count - 1]
 ## Related articles
 
 * [Choosing the right authentication method](authentication-guidance.md)
-* [Default permissions and access for Azure DevOps](../../../organizations/security/permissions-access.md)
