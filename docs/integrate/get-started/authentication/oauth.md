@@ -41,7 +41,7 @@ A beginner walkthrough of an Azure AD OAuth app example can be found on our [Man
 To get started with building your own Azure DevOps OAuth app, follow [our Azure DevOps OAuth guide here](./azure-devops-oauth.md).
 After an app has been built, users can also [manage which Azure DevOps apps they have authorized](../../../organizations/settings/manage-authorizations.md).
 
-## OAuth Scopes
+## Scopes
 These scopes are available on both OAuth models. The following scopes reflect those available via delegated (on-behalf-of user) flows only.
 To find out what scopes you need for your app, look under the `scopes` header on the API Reference page for each API you are using. Some scopes may be inclusive of other scopes, e.g. `code_manage` includes `code_write`. Consider what is the minimal number of scopes you need when requesting scope consent from users.
 
