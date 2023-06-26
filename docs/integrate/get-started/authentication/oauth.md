@@ -28,25 +28,26 @@ Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to aut
 To create an OAuth 2.0 app, you can rely on [our own implementation](./azure-devops-oauth.md) or use the one available through the [Microsoft Identity Platform, aka **Azure AD OAuth**](/azure/active-directory/fundamentals/auth-oauth2). We recommend that new apps move forward with registering on Azure AD OAuth, which comes with all of the powerful features of the Microsoft Identity platform. Azure DevOps OAuth remains spported, but no active investment is being made on this model at this time.
 
 ### Azure AD OAuth
+When you create an Azure AD OAuth app, your app is issued Azure AD tokens, not our access tokens. These tokens have a standard 1-hour duration before expiration.
+
 To get started with Azure AD OAuth, follow the Microsoft Identity docs. You may find the following resources helpful:
 * [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
 * [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
-* [](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#delegated-permission-to-microsoft-graph)
+* [Quickstart: Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#delegated-permission-to-microsoft-graph): The linked example demonstrates how to choose a permission for the Microsoft Graph resource. When you create an app, select `Azure DevOps` from the list of resources instead.
+
+A beginner walkthrough of an Azure AD OAuth app example can be found on our [Manage PATs via API guide](../../../organizations/accounts/manage-personal-access-tokens-via-api?view=azure-devops), as these PAT APIs require authentication via an Azure AD token. At this moment, these APIs only accept the `user_impersonation` scope. When you create apps that use other APIs, make sure to select the scopes needed for those APIs.
 
 ### Azure DevOps OAuth
-To get started with Azure DevOps OAuth, follow our Azure DevOps OAuth guide here.
+To get started with Azure DevOps OAuth, follow [our Azure DevOps OAuth guide here](./azure-devops-oauth.md).
 
 ## OAuth Scopes
-These scopes are available for both OAuth models. The following scopes reflect those available via delegated (on-behalf-of user) flows only.
+These scopes are available on both OAuth models. The following scopes reflect those available via delegated (on-behalf-of user) flows only.
+To find out what scopes you need for your app, look under the `scopes` header on the API Reference page for each API you are using. Some scopes may be inclusive of other scopes, e.g. `code_manage` includes `code_write`. Consider what is the minimal number of scopes you need when requesting scope consent from users.
 
 > [!IMPORTANT]
-> Scopes only enable access to REST APIs and select Git endpoints. SOAP API access isn't supported.  
+> Scopes only enable access to REST APIs and select Git endpoints. SOAP API access isn't supported.
 
 [!INCLUDE [scopes table](../../includes/scopes.md)]
-
-> [!NOTE]
-> The [PAT Management APIs](../../../organizations/accounts/manage-personal-access-tokens-via-api.md) are only available via Azure AD OAuth and still require a `user_impersonation` scope today.
-
 
 ## Samples
 
@@ -54,6 +55,5 @@ You can find a C# sample that implements OAuth to call Azure DevOps Services RES
 
 ## Related articles
 
-* [Using Azure AD OAuth](/azure/active-directory/fundamentals/auth-oauth2)
-* [Using Azure DevOps OAuth](./azure-devops-oauth.md)_
-* [Default permissions and access for Azure DevOps](../../../organizations/security/permissions-access.md)
+* [OAuth 2.0 authentication with Azure Active Directory](/azure/active-directory/fundamentals/auth-oauth2)
+* [Using Azure DevOps OAuth](./azure-devops-oauth.md)
