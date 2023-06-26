@@ -22,7 +22,7 @@ In this article, we'll show you how to configure an application that authenticat
 
 ## Prerequisites
 
-To use the API, you must authenticate with an Azure AD token, which can be done via [Azure AD OAuth](../../../integrate/get-started/authentication/oauth.md). Learn more on how to do this in the following [authentication section](#authenticate-with-azure-active-directory-azure-ad-tokens).
+To use the API, you must authenticate with an Azure AD token, which can be done via [Azure AD OAuth](../../integrate/get-started/authentication/oauth.md). Learn more on how to do this in the following [authentication section](#authenticate-with-azure-active-directory-azure-ad-tokens).
 
 In order to do so, a few prerequisites must be met:
 
