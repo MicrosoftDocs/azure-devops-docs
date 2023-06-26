@@ -159,7 +159,7 @@ GET https://dev.azure.com/myaccount/myproject/_apis/build-release/builds?api-ver
 Authorization: Bearer {access_token}
 ```
 
-### Refresh an expired access token
+### 5. Refresh an expired access token
 
 If a user's access token expires, you can use the refresh token that they acquired in the authorization flow to get a new access token. It's like the original process for exchanging the authorization code for an access and refresh token.
 
