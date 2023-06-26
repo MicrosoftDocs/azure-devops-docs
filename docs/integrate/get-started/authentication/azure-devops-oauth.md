@@ -280,3 +280,4 @@ $attachmentId = $split[$split.count - 1]
 * [Choosing the right authentication method](authentication-guidance.md)
 * [Understand the OAuth models](oauth.md)
 * [Default permissions and access for Azure DevOps](../../../organizations/security/permissions-access.md)
+* [Manage authorizations](../../../organizations/settings/manage-authorizations.md)
