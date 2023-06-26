@@ -107,7 +107,7 @@ Once you've defined a plan, you can modify or further customize it.
 
 	:::image type="content" source="media/plans/settings.png" border="true" alt-text="Screenshot of Delivery Plans title and settings button.":::  
 
-2. Then, choose the page you want to edit based on the [customizations you want to make](#customization-options). Here, we add the **Tags** to the **Field criteria**. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
+2. Then, choose the page you want to edit based on the [customizations you want to make](#customization-options). Here, we add the **Tags** to the **Field criteria**. Only work items that contain the *Build 2021* tag will appear in the Delivery Plan. 
 
 	:::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Dialog for Plan settings, Field criteria page.":::   
 
