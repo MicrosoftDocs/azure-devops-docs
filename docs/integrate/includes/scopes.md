@@ -77,5 +77,5 @@
 | **Work Items** | `vso.work` | Work items (read) | Grants the ability to read work items, queries, boards, area and iterations paths, and other work item tracking related metadata. Also grants the ability to execute queries, search work items and to receive notifications about work item events via service hooks. |
 | | `vso.work_write` | Work items (read and write) | Grants the ability to read, create, and update work items and queries, update board metadata, read area and iterations paths other work item tracking related metadata, execute queries, and to receive notifications about work item events via service hooks. |
 | | `vso.work_full` | Work items (full) | Grants full access to work items, queries, backlogs, plans, and work item tracking metadata. Also provides the ability to receive notifications about work item events via service hooks. |
-| | `user_impersonation` | User Impersonation | **Request and/or consent this scope with caution as it is very powerful!** Have full access to Visual Studio Team Services REST APIs. |
+| **User Impersonation** | `user_impersonation` | User Impersonation | **Request and/or consent this scope with caution as it is very powerful!** Have full access to Visual Studio Team Services REST APIs. |
 
