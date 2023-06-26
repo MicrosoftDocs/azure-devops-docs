@@ -23,7 +23,7 @@ Azure DevOps is an identity provider for OAuth 2.0 apps as well. Our implementat
 
 1. Go to `https://app.vsaex.visualstudio.com/app/register` to register your app.
 
-2. Select the [scopes](./oauth.md#oauth-scopes) that your application needs, and then use the same scopes when you [authorize your app](#2-authorize-your-app). If you registered your app using the preview APIs, re-register because the scopes that you used are now deprecated.
+2. Select the [scopes](./oauth.md#scopes) that your application needs, and then use the same scopes when you [authorize your app](#2-authorize-your-app). If you registered your app using the preview APIs, re-register because the scopes that you used are now deprecated.
 
 3. Select **Create application**.
 
