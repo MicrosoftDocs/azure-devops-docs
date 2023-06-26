@@ -38,7 +38,8 @@ To get started with Azure AD OAuth, follow the Microsoft Identity docs. You may 
 A beginner walkthrough of an Azure AD OAuth app example can be found on our [Manage PATs via API guide](../../../organizations/accounts/manage-personal-access-tokens-via-api?view=azure-devops), as these PAT APIs require authentication via an Azure AD token. At this moment, these APIs only accept the `user_impersonation` scope. When you create apps that use other APIs, make sure to select the scopes needed for those APIs.
 
 ### Azure DevOps OAuth
-To get started with Azure DevOps OAuth, follow [our Azure DevOps OAuth guide here](./azure-devops-oauth.md).
+To get started with building your own Azure DevOps OAuth app, follow [our Azure DevOps OAuth guide here](./azure-devops-oauth.md).
+After an app has been built, users can also [manage which Azure DevOps apps they have authorized](../../../organizations/settings/manage-authorizations.md).
 
 ## OAuth Scopes
 These scopes are available on both OAuth models. The following scopes reflect those available via delegated (on-behalf-of user) flows only.
