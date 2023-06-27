@@ -24,7 +24,7 @@ In this article, you'll learn how to:
 > * Recover recently deleted packages from the Recycle Bin.
 
 > [!NOTE]
-> To delete/recover packages or set up retention policies, you must be a feed **Owner**.
+> You must be a feed **Owner** to delete or recover packages or set up retention policies.
 
 ## Delete packages
 
@@ -84,7 +84,7 @@ Two options are available to delete a NuGet package from your feed, [Unlist](#qa
     ```
 
 > [!NOTE]
-> Azure DevOps and Visual Studio Team Foundation Server interpret the `nuget.exe delete` command as an unlist operation. To delete a package, you must use the REST API or the web interface.
+> Azure DevOps and Visual Studio Team Foundation Server interpret the `nuget.exe delete` command as an unlist operation. To delete a package, you must use the [REST API](/rest/api/azure/devops/artifactspackagetypes/nuget/delete-package-versio) or the web interface.
 
 #### [npm](#tab/npm/)
 
