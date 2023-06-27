@@ -25,8 +25,8 @@ The syntax shown works whether you've [connected your project to a GitHub.com or
 
 ## Prerequisites 
 
-* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Azure Boards-GitHub integration](index.md).  
-* You must have a Kanban board you want to configure. When you add a team, you add a Kanban board for that team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For more information, see [Azure Boards-GitHub integration](index.md).  
+* You must have a Kanban board you want to configure. When you add a team, you add a Kanban board for that team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 * You must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 * To add the status badge to the GitHub.com repository, you must be a contributor of the repository.  
 
@@ -62,17 +62,17 @@ The syntax shown works whether you've [connected your project to a GitHub.com or
 	[![Board Status](https://dev.azure.com/fabrikam/677da0fb-b067-4f77-b89b-f32c12bb8617/cdf5e823-1179-4503-9fb1-a45e2c1bc6d4/_apis/work/boardbadge/6fa7b56f-d27c-4e96-957d-f9e7b0f56705?columnOptions=2&columns=Proposed,Committed,In%20Progress,In%20Review)](https://dev.azure.com/fabrikam/677da0fb-b067-4f77-b89b-f32c12bb8617/_boards/board/t/cdf5e823-1179-4503-9fb1-a45e2c1bc6d4/Microsoft.RequirementCategory/)
 	```
 
-	And which will cause a badge similar to the following to display. 
+	A badge similar to the following displays. 
 
 	> [!div class="mx-imgBorder"]
 	> ![A badge that displays.](media/badges/custom-columns.png) 
 
-1. When done, choose <strong>Save and close</strong> or <strong>Cancel</strong>.
+2. When you're done, choose <strong>Save and close</strong> or <strong>Cancel</strong>.
 
 	> [!NOTE]  
 	> The only setting that you can configure is the <strong>Allow anonymous users to access the status badge</strong>. The badge type under <strong> Settings</strong> only switches the  Markdown syntax for you to copy from the <strong>Sample Markdown</strong> and <strong>Image URL</strong> values. 
 
-1. Open the README file in your GitHub repo and paste the syntax you copied to have the badge display.  
+3. Open the README file in your GitHub repo and paste the syntax you copied to have the badge display.  
 
 	You should see the same preview image that you selected with values that correspond to your Kanban board. For example: 
 

@@ -19,14 +19,14 @@ ms.date: 04/01/2022
 
 ::: moniker range=">= azure-devops-2020"
 
-Sprint Taskboards are similar to Kanban boards because they show work items as cards instead of as lists. They're different in the ways summarized in [Backlogs, Boards, and Plans](../backlogs/backlogs-boards-plans.md#kanban-taskboards). Similar to the Kanban boards, you can customize cards and add columns.  
+Sprint Taskboards are similar to Kanban boards because they show work items as cards instead of as lists. They're different in the ways summarized in [Backlogs, Boards, and Plans](../backlogs/backlogs-boards-plans.md#kanban-Taskboards). Similar to the Kanban boards, you can customize cards and add columns.  
 
 ::: moniker-end
 
 
 ::: moniker range="<= azure-devops-2019"
 
-Sprint Taskboards are similar to Kanban boards in that they show work items as cards instead of as lists. They're different in the ways summarized in [Backlogs, Boards, and Plans](../backlogs/backlogs-boards-plans.md#kanban-taskboards). Similar to the Kanban boards, you can customize cards. To change column names or add columns, you need to customize the workflow.   
+Sprint Taskboards are similar to Kanban boards in that they show work items as cards instead of as lists. They're different in the ways summarized in [Backlogs, Boards, and Plans](../backlogs/backlogs-boards-plans.md#kanban-Taskboards). Similar to the Kanban boards, you can customize cards. To change column names or add columns, you need to customize the workflow.   
 
 ::: moniker-end
 
@@ -36,7 +36,7 @@ Sprint Taskboards are similar to Kanban boards in that they show work items as c
 
 ## Prerequisites
 
-* You must have a sprint Taskboard you want to configure. When you add a team, you add a Taskboard for every sprint that you select for your team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+* You must have a sprint Taskboard you want to configure. When you add a team, you add a Taskboard for every sprint that you select for your team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 * To add or rename columns, or customize cards, you must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 
 
@@ -113,22 +113,22 @@ To add or remove columns, choose **Column Options**. You customize all other opt
 Before you configure your Taskboard, you'll want to make sure the following tasks are as complete as possible. Otherwise, you'll find yourself revisiting your configuration.  
 
 **Process Administrator**: 
-1. Add custom work item types that you want to appear on your Taskboard. For details, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
-2. Customize your iteration backlog to ensure all work item types you want to have will appear on the Taskboards. For details see [Customize backlogs & boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-3. Customize each work item type to have any custom fields you want to show. For details, see [Customize a workflow](../../organizations/settings/work/add-custom-field.md).
+1. Add custom work item types that you want to appear on your Taskboard. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
+2. Customize your iteration backlog to ensure all of your wanted work item types appear on the Taskboards. For more information, see [Customize backlogs & boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
+3. Customize each work item type to have any custom fields you want to show. For more information, see [Customize a workflow](../../organizations/settings/work/add-custom-field.md).
 
 
 ::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
-> You can customize a work item type which is different then customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
+> You can customize a work item type which is different then customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
 > [!NOTE]  
-> You can customize a work item type which is different then customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+> You can customize a work item type which is different then customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 
 ::: moniker-end
 
@@ -155,7 +155,7 @@ You can add columns or rename columns that appear in your Taskboard. You'll see 
 > [!NOTE] 
 > Columns you add to a Taskboard aren't supported with corresponding fields such as the Kanban board columns you add which is supported with Board Column field. 
 
-The changes made apply to all sprint taskboards for the selected team. 
+The changes made apply to all sprint Taskboards for the selected team. 
 
 1. From your web browser, open your team's sprint Taskboard as described in [Update and monitor your Taskboard](task-board.md). Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.
 
@@ -209,7 +209,7 @@ In the card shown below, the following customizations have been set for the task
 
 ![Card customize to show additional fields, tags, and style rule ](media/customize/task-conceptual.png)
 
-You can either increase or simplify the information that displays on your cards. It all depends on what's of interest to your team. Does your team like to refer to work items by their ID? Do they want to see estimates? Do they want to highlight work items according to set criteria? Or, will just the bare bones of title and assignment suffice? 
+You can either increase or simplify the information that displays on your cards. It all depends on what's of interest to your team. Does your team like to refer to work items by their ID? Do they want to see estimates? Do they want to highlight work items according to set criteria? Or, do just the bare bones of title and assignment suffice? 
 
 Your best bet is to show fields on cards based on what your team frequently refers to. Or, you can show fields based on updates when using the Taskboards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Sprint planning](../../boards/sprints/assign-work-sprint.md). 
 
@@ -239,7 +239,7 @@ You change the way cards appear on the Taskboard in the same way you change the 
  
 5. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
 
-6. When done with your changes, choose **Save**.
+6. When you're done with your changes, choose **Save**.
 
 ::: moniker-end  
 
@@ -265,7 +265,7 @@ You change the way cards appear on the Taskboard in the same way you change the 
 
 5. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.  
 
-6. When done with your changes, choose **Save**.
+6. When you're done with your changes, choose **Save**.
 
 ::: moniker-end  
  
@@ -356,7 +356,7 @@ You can apply style rules to change the color of Taskboard cards based on specif
 	> [!div class="mx-imgBorder"]
 	> ![Delete-clone-move menu options](media/customize/delete-clone-move.png)
 
-5. When done with your changes, choose **Save**.
+5. When you're done with your changes, choose **Save**.
 
 ::: moniker-end  
 
@@ -387,7 +387,7 @@ You can apply style rules to change the color of Taskboard cards based on specif
 
 4. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**, respectively.
 
-5. When done with your changes, choose **Save**.
+5. When you're done with your changes, choose **Save**.
 
 ::: moniker-end
 

@@ -21,12 +21,12 @@ Once you've connected your Azure Boards project with a GitHub repository, you ca
 
 ## Prerequisites 
 
-* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Azure Boards-GitHub integration](index.md).  
+* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For more information, see [Azure Boards-GitHub integration](index.md).  
 * You must be a Contributor to Azure Boards project and to the GitHub repository.  
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
-> Projects that use the Hosted XML process model require updates to the work item types to view the Development section and GitHub link types. For details, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits). 
+> Projects that use the Hosted XML process model require updates to the work item types to view the Development section and GitHub link types. For more information, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits). 
 ::: moniker-end
 
 
@@ -44,9 +44,9 @@ From a GitHub commit, pull request or issue, use the following syntax to create 
 AB#{ID}
 ```
 
-For example, `AB#125` will link to work item ID 125. 
+For example, `AB#125` links to work item ID 125. 
 
-You can also enter a commit or pull request message to transition the work item. The system will recognize `fix, fixes, fixed` and apply it to the #-mention item that follows. Mentioned work items transition to the first **State** associated with the *Resolved* workflow category state. If there's no **State** associated with *Resolved*, then it transitions to the **State** associated with the *Completed* workflow category state. To understand how workflow states and category states are mapped, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
+You can also enter a commit or pull request message to transition the work item. The system recognizes `fix, fixes, fixed` and applies it to the #-mention item that follows. Mentioned work items transition to the first **State** associated with the *Resolved* workflow category state. If there's no **State** associated with *Resolved*, then it transitions to the **State** associated with the *Completed* workflow category state. To understand how workflow states and category states are mapped, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
 
 Some examples are provided as shown. 
 
@@ -67,7 +67,7 @@ Some examples are provided as shown.
 
 
 > [!NOTE]   
-> If you have connected the same GitHub repo to projects defined in two or more Azure DevOps organizations, you may see unexpected **AB#** mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md). For this reason, we recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. 
+> If you have connected the same GitHub repo to projects defined in two or more Azure DevOps organizations, you may see unexpected **AB#** mention linking. For more information, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md). For this reason, we recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. 
 
 <a id="link-existing"> </a> 
 
@@ -103,7 +103,7 @@ Some examples are provided as shown.
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of work item form, Links tab, Add link dialog, GitHub pull request link type selected.](media/link/link-from-azb-gh-pull-requests.png)  
 
-	Azure Boards completes a check to ensure that you've entered a valid link. The linked-to GitHub repository [must be connected to the Azure Boards project](connect-to-github.md) or the validation will fail.
+	Azure Boards completes a check to ensure that you've entered a valid link. The linked-to GitHub repository [must be connected to the Azure Boards project](connect-to-github.md) or the validation fails.
 
 	Here, we add a link to a GitHub issue. 
 
@@ -135,7 +135,7 @@ With GitHub annotations enabled on the Kanban board, you can quickly open linked
 
 ::: moniker-end
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Configure status badges](configure-status-badges.md)

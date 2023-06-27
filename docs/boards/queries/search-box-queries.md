@@ -26,7 +26,7 @@ You can find work items by using shortcut filters or by specifying keywords or p
 - Run a full text search across all work item fields
 - Review work items assigned to a specific team member
 - Search against specific work item fields to quickly narrow down a list of work items
-- Determine what key words will support a managed search
+- Determine what key words support a managed search
 
 You can run a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or for on-premises deployments when the [server instance has been configured with the work item search extension](../../project/search/get-started-search.md).
  
@@ -61,7 +61,7 @@ Free text search easily searches across all work item fields, including custom f
 
    This search is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
-   "updating" will also find instances of the word "updated" and "update". Searches _aren't_ case-sensitive.
+   "updating" also finds instances of the word "updated" and "update". Searches _aren't_ case-sensitive.
 
 3. Select a snippet of a work item to display it in the right window. 
 
@@ -89,9 +89,9 @@ Free text search easily searches across all work item fields, including custom f
 
    This search is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
-   "updating" will also find instances of the word "updated" and "update". Searches _aren't_ case-sensitive.
+   "updating" also finds instances of the word "updated" and "update". Searches _aren't_ case-sensitive.
 
-1. Select a snippet of a work item to display it in the right window. 
+2. Select a snippet of a work item to display it in the right window. 
 
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
@@ -122,7 +122,7 @@ Free text search easily searches across all work item fields, including custom f
    * `s:` for **State** 
    * `t:` for **Work item type**<p />
 
-2. Start typing the name of a field in your work items; for example, type `ta`.
+2. Start entering the name of a field in your work items; for example, type `ta`.
 
    ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
@@ -155,7 +155,7 @@ Free text search easily searches across all work item fields, including custom f
    * `s:` for **State** 
    * `t:` for **Work item type**<p />
 
-2. Start typing the name of a field in your work items; for example, type `ta`.
+2. Start entering the name of a field in your work items; for example, type `ta`.
 
    ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
@@ -222,7 +222,7 @@ For example, to find work items with the specified keywords in the **Title** or 
 -   For the phrase "Getting Started", enter **"Getting Started"**.  
 -   For the phrase "Getting Started" or the keyword "feature", enter **feature "Getting Started"**.
 
-|Filter for items that contain these keywords or phrases:|Type the following string:|
+|Filter for items that contain these keywords or phrases:|Enter the following string:|
 |---|---|
 |Duplication|`duplication`|
 |Getting Started|`"Getting Started"`|
@@ -234,7 +234,7 @@ You can run partial or exact match queries on a keyword or a phrase contained wi
 
 To find work items based on a keyword or phrase contained within other text string fields, specify either the friendly name or the reference name of the field. Enclose each phrase in quotation marks. You can determine the friendly name of a field by hovering over the field within a work item form. To determine the reference name of commonly used fields or to find a field that isn't listed on the form, see [Work item field index](../work-items/guidance/work-item-field.md).
 
-|Filter for items that meet this criteria:|Type the following string:|  
+|Filter for items that meet this criteria:|Enter the following string:|  
 |---|---|  
 |Contains one attached file.|`System.AttachedFileCount=1`|  
 |Cut user stories.|`T:Story Reason=Cut`<br/>Or<br/>`T="User Story" System.Reason=Cut`|  
@@ -243,7 +243,7 @@ To find work items based on a keyword or phrase contained within other text stri
 |Created yesterday as a test activity.|`"Created Date"=@Today-1 Activity=Test`|  
 
 > [!NOTE]     
-> Some fields, such as **History** and **Description**, do not support partial word text searches. For example, if the **History** field contains the phrase `reproducible behavior` and you search for `History:repro` the work item will not be found. However, if you search for the complete string `History:reproducible` the work item will be found.
+> Some fields, such as **History** and **Description**, do not support partial word text searches. For example, if the **History** field contains the phrase `reproducible behavior` and you search for `History:repro` the work item isn't found. However, if you search for the complete string `History:reproducible` the work item is found.
 
 ## Use @Me or @Today macros
 
@@ -257,7 +257,7 @@ The <strong>@Me</strong> macro expands to the full name of the current user in a
       **Filter for**
    :::column-end::: 
    :::column span="2":::
-      **Type the following string**
+      **Enter the following string**
    :::column-end:::
 :::row-end:::
 ---
@@ -317,7 +317,7 @@ Use the following search operators to specify search criteria:
 
 The following examples show how to use operators when you create a search string.  
 
-|Filter for items that meet this criteria:|Type the following string:|  
+|Filter for items that meet this criteria:|Enter the following string:|  
 |-----------------------------------------|--------------------------|
 |Assigned to Peter and not Active.|`A:Peter -S=Active`|
 |In which the Activity field wasn't `Development`.|`- Activity=Development`|

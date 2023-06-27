@@ -28,7 +28,7 @@ Use this article to fix the issues that occur and that display one of the follow
 
 - `You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category".`  
 
-- `Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items will appear when you change the "In progress" filter to Show.`
+- `Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items appear when you change the "In progress" filter to Show.`
 
 > [!NOTE]   
 > This article addresses issues that arise when you create parent-child links that don't obey the natural hierarchy defined for backlogs. For other issues that may occur with multi-team ownership, see [Configure a hierarchy of teams, Exercising select features with shared area paths](../plans/configure-hierarchical-teams.md#op-issues).
@@ -88,7 +88,7 @@ The issue is resolved and the message no longer displays.
 
 ## Resolve the issue where work items that are in progress may disappear on a refresh
 
-The message&mdash;`Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items will appear when you change the "In progress" filter to Show.`&mdash;indicates that the **In Progress** filter for the backlog has been turned off.  
+The message&mdash;`Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items appear when you change the "In progress" filter to Show.`&mdash;indicates that the **In Progress** filter for the backlog has been turned off.  
 
 Upon refresh of your browser, the backlog displays those work items based on your selected filters. 
 
@@ -112,7 +112,7 @@ From the **View options** selector, you can choose to show or hide **In Progress
 Choose **In progress items** show or hide **In Progress** backlog items. If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) won't appear in the backlog. 
 ::: moniker-end
 
-You usually choose to hide **In Progress items** when you want to forecast work. To learn more, see [Forecast your product backlog](../sprints/forecast.md).
+You usually choose to hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
 
  
 <a id="recommended"> </a>
@@ -148,7 +148,7 @@ If you choose to track bugs as tasks, bugs should only be nested under the requi
 
 ## How backlogs and boards display nested items
 
-For TFS 2018 and earlier versions, the Kanban board only shows the last node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
+For TFS 2018 and earlier versions, the Kanban board only shows the last node with nested items of a same-category hierarchy. For all versions, sprint backlogs and Taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 ::: moniker range="tfs-2018"
 
@@ -177,7 +177,7 @@ As shown in the following images, the third user story, *Interim save on long fo
 
 <a id="bugs-as-tasks" > </a>
 
-### Sprint backlogs and taskboards
+### Sprint backlogs and Taskboards
 
 When bugs appear in the backlog with tasks, linking tasks and bugs to their parent requirements groups them correctly on the sprint backlog and taskboard.  
 But, if you create parent-child links between a requirement and a bug, and the bug and a task, as shown here, the task appears on the sprint backlog and taskboard, but not the bug. 
@@ -190,7 +190,7 @@ But, if you create parent-child links between a requirement and a bug, and the b
 
 ![Sprint backlog, leaf node task ](media/resolve/sprint-backlog-leaf-only.png)  
 
-**Only leaf nodes appear on taskboards**   
+**Only leaf nodes appear on Taskboards**   
 ![Sprint board, leaf node task appears](media/resolve/bugs-appear-on-taskboard.png)  
 Is there a workaround to display intermediate nodes within a hierarchy?  Not at this time. You can always check the entire list of items assigned to a sprint by using the **Create Query** link. 
 

@@ -308,7 +308,7 @@ Tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task, Agile process. ](media/plan-track-work/prep-images-task.png) 
 
-2. If you have many tasks to add, keep typing your task titles and type Enter.   
+2. If you have many tasks to add, keep entering your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added, Agile process.](media/plan-track-work/add-several-tasks.png)  
@@ -332,7 +332,7 @@ Tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task, Basic process.](media/track-issues/enter-first-task.png) 
 
-2. If you have various tasks to add, keep typing your task titles and type Enter.   
+2. If you have various tasks to add, keep entering your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added, Basic process.](media/track-issues/add-several-tasks.png)  
@@ -356,7 +356,7 @@ Tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task, Scrum process.](media/plan-track-work/prep-images-task.png) 
 
-1. If you have many tasks to add, just keep typing your task titles and type Enter.   
+1. If you have many tasks to add, just keep entering your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added, Scrum process.](media/plan-track-work/add-several-tasks.png)  
@@ -380,7 +380,7 @@ Tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task, CMMI process.](media/plan-track-work/prep-images-task.png) 
 
-1. If you have various tasks to add, just keep typing your task titles and type Enter.   
+1. If you have various tasks to add, just keep entering your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added, CMMI process.](media/plan-track-work/add-several-tasks.png)  

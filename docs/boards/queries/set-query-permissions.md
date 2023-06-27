@@ -61,7 +61,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
 2. Enter the name for the folder. If you want to change the location of the folder, select **Rename** from the folder drop-down menu.  
 
-	Here we name the folder *Service Delivery* with the intention that it will be used by the Service Delivery team.
+	Here we name the folder *Service Delivery* with the intention that it gets used by the Service Delivery team.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of New folder dialog.](media/permissions/new-folder-dialog.png)
@@ -77,9 +77,9 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
    **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
-5. (Optional) Turn off inheritance. Default is **On**. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
+5. (Optional) Turn off inheritance. Default is **On**. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. For more information, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
 
-6. Close the dialog when done.
+6. Close the dialog when you're done.
 
 7. Reopen the Security dialog and choose Service Delivery to verify that the permissions are set. 
 
@@ -99,7 +99,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
 2. Enter the name for the folder. If you want to change the location of the folder, select it from the Folder drop down menu.  
 
-	Here we name the folder *Service Delivery* with the intention that it will be used by the Service Delivery team.
+	Here we name the folder *Service Delivery* with the intention that it gets used by the Service Delivery team.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of New folder dialog, Azure DevOps Server 2019.](media/permissions/new-folder-dialog.png)
@@ -115,7 +115,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
    **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
-5. (Optional) Turn off inheritance. Default is **On**. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
+5. (Optional) Turn off inheritance. Default is **On**. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. For more information, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
   
 ::: moniker-end
 
@@ -140,7 +140,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
    **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
-3. (Optional) Turn off inheritance. Default is On. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
+3. (Optional) Turn off inheritance. Default is On. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. For more information, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
 
 ::: moniker-end
 

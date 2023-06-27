@@ -71,7 +71,7 @@ From your web browser, open your product backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Choose product backlog level, Backlog items, Stories, or Requirements.](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Open Column Options.](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -97,7 +97,7 @@ From your web browser, open your product backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Choose product backlog level, Backlog items, Stories, or Requirements, on-premises version.](../sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Open Column Options, on-premises version.](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -202,7 +202,7 @@ If you've already created your backlog, and now you want to organize it, you can
    > [!div class="mx-imgBorder"]
    > ![Screenshot of Map unparented items to a feature, cloud version.](media/organize-backlog/map-unparented-items-agile.png)
 
-2. To map features to epics, select the **Features** backlog from the backlog selector. The Epics Mapping pane will automatically display. 
+2. To map features to epics, select the **Features** backlog from the backlog selector. The Epics Mapping pane automatically displays. 
 
 ::: moniker-end
 
@@ -220,14 +220,14 @@ If you've already created your backlog, and now you want to organize it, you can
    > [!div class="mx-imgBorder"]
    > ![Screenshot of Map unparented items to a feature.](media/organize-backlog/map-unparented-items-agile.png)
 
-2. To map features to epics, select the **Features** backlog from the backlog selector. The Epics Mapping pane will automatically display. 
+2. To map features to epics, select the **Features** backlog from the backlog selector. The Epics Mapping pane automatically displays. 
 
 ::: moniker-end
 
 
 ::: moniker range="tfs-2018"
 
-To map a backlog item under a feature, you first turn on mapping from your backlog (Backlog items, Stories, or Requirements). Next, find the Unparented backlog items group by turning the **Parents** control to **Show**. Unparented backlog items will appear at the end of the parented set of backlog items. 
+To map a backlog item under a feature, you first turn on mapping from your backlog (Backlog items, Stories, or Requirements). Next, find the Unparented backlog items group by turning the **Parents** control to **Show**. Unparented backlog items appear at the end of the parented set of backlog items. 
  
 Drag items that are currently unparented to the feature under which they belong. Also, you can drag a backlog item to a different feature to change its parent. This mapping creates parent-child links from feature to user stories, which is captured in the ![Links tab icon](../backlogs/media/icon-links-tab-wi.png) (links) tab.
 

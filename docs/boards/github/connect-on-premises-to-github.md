@@ -76,7 +76,7 @@ The following authentication options are supported.
 
 ## Register Azure DevOps in GitHub as an OAuth App
 
-If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterprise Server, you first need to register the application as an OAuth App. For details, see [Creating an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
+If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterprise Server, you first need to register the application as an OAuth App. For more information, see [Creating an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
 
  
 <a id="register-services-oauth" />
@@ -95,7 +95,7 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 	> [!div class="mx-imgBorder"]  
 	> ![Open Settings>Developer settings>Oauth Apps and choose New OAuth App.](media/github-ent/ghe-settings-dev-oauth.png)  
 
-1. Fill out the form to register your Azure DevOps Server application.  
+1. Complete the form to register your Azure DevOps Server application.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Register your Azure DevOps Server project](media/github-ent/ghe-register-app.png)  
@@ -232,7 +232,7 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This l
 	> [!div class="mx-imgBorder"]  
 	> ![Sign in with username and password.](media/github-ent/ads-add-ghe-user-name.png)  
 
-1. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between **Mine** and **All** to determine if others appear, and then check the ones that you want to add. Choose **Save** when done.
+1. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between **Mine** and **All** to determine if others appear, and then check the ones that you want to add. Choose **Save** when you're done.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose repositories to add.](media/github-ent/ads-add-ghe-repositories.png)  
@@ -243,7 +243,7 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This l
 
 See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.md).
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Link GitHub commits and pull requests to work items](link-to-from-github.md) 

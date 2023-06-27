@@ -41,7 +41,7 @@ Each sprint represents a time-boxed period of development to which work is assig
 - Minimize work tracking efforts that have no value 
 
 > [!TIP]   
-> Team velocity is not a measure of team productivity and should only be used as a metric for planning future sprints. Work is either complete at the end of a sprint or it isn't. If it's done it counts. If it's not, then it gets reconsidered for a future sprint and not the current sprint. Velocity will tend to level itself out no matter what choices you make. However, by considering only done work, you work toward a more realistic value and a much better source of historical data to make future forecasts.
+> Team velocity is not a measure of team productivity and should only be used as a metric for planning future sprints. Work is either complete at the end of a sprint or it isn't. If it's done it counts. If it's not, then it gets reconsidered for a future sprint and not the current sprint. Velocity tends to level itself out no matter what choices you make. However, by considering only done work, you work toward a more realistic value and a much better source of historical data to make future forecasts.
 
 
 ## Decide team preferences 
@@ -53,7 +53,7 @@ The following suggestions walk through the main end-of-sprint activities teams s
 - **Reassign user stories, backlog items, and tasks not started to the product backlog or next sprint.** Using the [Planning pane](#reassign), you can reassign to the team backlog or a future sprint. Reassigned work items can be re-estimated and prioritized.   
 
 - **Determine how to handle incomplete user stories, backlog items, or tasks.** Keep in mind the goal is to ship working software. The two choices here are: 
-	- Split the story into two to represent the work completed in the current sprint and work yet to do. For details, see [Copy or clone stories, issues and other work items](../backlogs/copy-clone-work-items.md).
+	- Split the story into two to represent the work completed in the current sprint and work yet to do. For more information, see [Copy or clone stories, issues and other work items](../backlogs/copy-clone-work-items.md).
 	- Reassign the story to the next sprint where work can be completed. All unfinished stories in the current sprint account for zero to the sprint's velocity.
 
 - **Determine how to handle Remaining Work for completed tasks.** If tasks are complete, then having a non-zero value for **Remaining Work** doesn't make a lot of sense. Teams should decide how they want to handle these cases and consider setting the value of **Remaining Work** to zero for completed tasks.  
@@ -101,7 +101,7 @@ As a project or team administrator, make sure to meet the following guidance for
 - All sprints of interest to a team should be selected for that team's configuration.  
 - Several future sprints should be defined for your project and selected for your teams.  
  
-To learn more, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).
+For more information, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).
 
 ## Related articles
 
