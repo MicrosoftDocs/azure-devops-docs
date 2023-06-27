@@ -33,7 +33,7 @@ You use work items to share information, assign work to team members, track depe
 and more. Because the most important work appears at the top of the list, your team always knows what to work on next.
 
 > [!NOTE]  
-> Your product backlog is one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). If you're not seeing the work items you expect on your backlog, review [Setup your backlogs and boards](set-up-your-backlog.md).   
+> Your product backlog is one of three classes of backlogs available to you, backlogs, boards, and plans. If you don't see the work items you expect on your backlog, see [Set up your backlogs and boards](set-up-your-backlog.md).   
 
 
 ## Add a backlog
