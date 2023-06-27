@@ -198,7 +198,5 @@ Is there a workaround to display intermediate nodes within a hierarchy?  Not at 
 ## Related articles
 
 - [Set up your Backlogs and Boards](set-up-your-backlog.md)  
-- [About Boards and Kanban, Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)  
-- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs-boards-plans.md)  
-
+- [About Boards and Kanban, Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team) 
  
