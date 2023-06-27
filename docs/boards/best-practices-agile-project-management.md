@@ -408,7 +408,6 @@ For more information, see the following articles:
 ## Related articles
 
 - [Manage requirements](../cross-service/manage-requirements.md)
-- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs/backlogs-boards-plans.md) 
 - [Work with multi-team ownership of backlog items](backlogs/backlogs-overview.md#multi-team)
 - [11 Reasons for using Azure Boards to plan and track your work](get-started/why-use-azure-boards.md)
 
