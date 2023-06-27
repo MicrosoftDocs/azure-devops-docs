@@ -114,7 +114,7 @@ To resolve the problem, consider the following items:
       - [GitHub](https://status.github.com)  
       - [Azure DevOps](https://status.dev.azure.com/)
 
-	To resolve the first issue, delete and recreate the connection to the GitHub repository. This recreated connection will cause GitHub to prompt to reauthorize Azure Boards.   
+	To resolve the first issue, delete and recreate the connection to the GitHub repository. This recreated connection causes GitHub to prompt to reauthorize Azure Boards.   
 
 - **If the connection is using a PAT:**
   - The PAT may have been revoked or the required permission scopes changed and are insufficient.

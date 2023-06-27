@@ -66,9 +66,9 @@ All teams across organizations can participate in tracking dependencies.
 - The consumer owns entering the work into Azure Boards and submitting that work request to the producer
 - Once the work has been submitted to the producer, the producer owns the work item,
     - The producer is responsible for maintaining the work item in Azure Boards
-    - The producer owns the state of the work item (is it going to be done) and iteration (when it will be done).  
+    - The producer owns the state of the work item and iteration  
     - The consumer shouldn't touch these values, once the work item has been handed off
-- The consumer is in charge of managing the work they requested  so that they're aware of any material changes and adjustments.
+- The consumer is in charge of managing the work they requested  so that they're aware of any material changes and adjustments
 
 ## Prerequisites
 
@@ -76,14 +76,14 @@ All teams across organizations can participate in tracking dependencies.
 - To view dependencies, you must be a member of the Project Valid Users group for the project.  
 - To create a dependency, you must be a member of the Contributors group for both projects that participate in the dependency linking.
 - To support cross-organization participation, all organizations must authenticate users through the same [Azure Active Directory](../../organizations/accounts/connect-organization-to-azure-ad.md). 
-- Azure Boards must be enabled as a service. If it's disabled, then you'll need to have it reenabled. For details, see [Turn a service on or off](../../organizations/settings/set-services.md). 
+- Azure Boards must be enabled as a service. If it's disabled, then you'll need to have it reenabled. For more information, see [Turn a service on or off](../../organizations/settings/set-services.md). 
 - To modify the configuration, you must be a member of the  Project Collection Administrator Group. 
 
 > [!IMPORTANT]  
 > The default configuration for Dependency Tracker supports the Agile process. If your project(s) are based on a different process or you have customized your process, you may need to modify the configuration. See [Configure the Dependency Tracker](#configuration) later in this article. 
 
 Also, the following configuration or customization tasks should be performed: 
-- Set up the area paths and teams that will participate in dependency tracking. 
+- Set up the area paths and teams to participate in dependency tracking. 
 - Configure iteration paths/sprints for the project and assign them to work items participating in dependency tracking. This task is essential for the Timeline view to yield meaningful data.
 - Customize your process as needed to support any other work items or fields. 
 - [Configure the Dependency Tracker](#configuration) to support your business needs and address any customizations you've made.
@@ -109,7 +109,7 @@ Also, the following configuration or customization tasks should be performed:
 
 ## Filter options 
 
-You can filter each supported view by typing a keyword or using one or more of the fields. Provided fields include State, Work item type, and Iteration Path. Based on the keyword that you enter, the filter function lists work items based on any displayed column field.  
+You can filter each supported view by entering a keyword or using one or more of the fields. Provided fields include State, Work item type, and Iteration Path. Based on the keyword that you enter, the filter function lists work items based on any displayed column field.  
 
 To show the filter toolbar, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon. 
 
@@ -198,7 +198,7 @@ You can also link work items using the **Links** tab to create Successor/Predece
 > [!NOTE]   
 > The Successor/Predecessor (consumes/produces) link types are the default link types used by the Dependency Tracker. If you're projects are customized using a Hosted XML process model, it's possible to specify different link types in the Dependency Tracker configuration. See [Configure the Dependency Tracker](#configuration) later in this article.
 
-To learn more, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md). 
+For more information, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md). 
 
 ## Remove dependency links
 
@@ -273,7 +273,7 @@ The **Timeline** tab provides a calendar view of dependencies. The Timeline view
 - *What are all the deliverable dependencies against within the three-month time window for a given team?*
 
 > [!IMPORTANT]   
-> In order for the Timeline to show meaningful data, you must have assigned the dependent work items to Iteration Paths, and the Iteration Paths must have start and end dates assigned.  
+> For the Timeline to show meaningful data, you must have assigned the dependent work items to Iteration Paths, and the Iteration Paths must have start and end dates assigned.  
 
 There are two versions of the Timeline view: **Correct Flow** and **Incorrect Flow**. Each version shows the color-coded workflow state. Color codes can be customized within the [Dependency Tracker configuration](#configuration).
 
@@ -328,7 +328,7 @@ You can drill down into specifics by choosing one of the dependencies.
 
 You must be a member of the  Project Collection Administrator Group to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
 
-To change the configuration, choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon  and modify the syntax listed. Choose **Save** when done. 
+To change the configuration, choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon  and modify the syntax listed. Choose **Save** when you're done. 
 
 The main properties you can modify are summarized as follows: 
 - The link types to use to create dependency links. Defaults are the Successor/Predecessor link types. Only customize when you use the [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to customize work tracking.  
@@ -624,7 +624,7 @@ The following table describes each of the property items specified in the config
    :::column span="1":::
    partnerAccounts
    
-   > Optional configuration that specifies which Azure DevOps organizations are selectable from the Dependency dialog when creating a Cross account dependency. If not specified it will generate a list based on previous organizations that the user has visited. 
+   > Optional configuration that specifies which Azure DevOps organizations are selectable from the Dependency dialog when creating a Cross account dependency. If not specified generates a list based on previous organizations that the user has visited. 
    >    
 
    :::column-end:::

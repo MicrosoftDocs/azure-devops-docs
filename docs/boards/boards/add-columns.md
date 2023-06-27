@@ -43,12 +43,12 @@ Complete the following tasks, so you don't need to revisit your configuration.
 
 - Add custom work item types that you want to appear on your backlog or board. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
 - Customize your product and portfolio backlogs. Customization ensures that the chosen work item types appear on the backlogs and boards. For more information, see [Customize backlogs and boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-- Customize workflow states. Each workflow state appears as a column on the Kanban board. For details, see [Customize a workflow](../../organizations/settings/work/customize-process-workflow.md).
+- Customize workflow states. Each workflow state appears as a column on the Kanban board. For more information, see [Customize a workflow](../../organizations/settings/work/customize-process-workflow.md).
 
 #### [Team Administrator](#tab/team-administrator)
 
-- Set the backlogs that you want to be active for your team. You only need to configure the Kanban boards of backlogs that your team plans to use. For details, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
-- Determine how to track bugs. Bugs might have different workflow states from other types of work items in the **Requirement** category. As a result, bugs must be mapped separately from other work item types. For details, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
+- Set the backlogs that you want to be active for your team. You only need to configure the Kanban boards of backlogs that your team plans to use. For more information, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
+- Determine how to track bugs. Bugs might have different workflow states from other types of work items in the **Requirement** category. As a result, bugs must be mapped separately from other work item types. For more information, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
 - Identify the columns that your team can use to support its workflow and Kanban processes. For more information, see [Map the flow of work](#map-the-flow-of-work) later in this article. 
 - Add, remove, or rename columns and map workflow states to columns. For more information, see [Manage columns on your Kanban board](#add-or-rename-columns) later in this article.  
 

@@ -71,7 +71,7 @@ You can manage which GitHub repositories can participate in Azure Boards integra
 ::: moniker-end
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Change GitHub repository access, or suspend or uninstall the integration](change-azure-boards-app-github-repository-access.md)

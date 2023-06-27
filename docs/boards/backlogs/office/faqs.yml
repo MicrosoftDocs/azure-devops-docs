@@ -76,7 +76,7 @@ sections:
 
       - question: How do I share an Excel workbook with others? 
         answer: |
-          If you want to share an Excel workbook that has work items listed within it, you may want to disconnect the connection to Azure DevOps to prevent accidental publishing of changes by others. You can disconnect the workbook, share it or work offline, and later reconnect the workbook. For details, see [Connect Azure Boards to an Office client, Disconnect a document file from the network](track-work.md#WorkingOffline).
+          If you want to share an Excel workbook that has work items listed within it, you may want to disconnect the connection to Azure DevOps to prevent accidental publishing of changes by others. You can disconnect the workbook, share it or work offline, and later reconnect the workbook. For more information, see [Connect Azure Boards to an Office client, Disconnect a document file from the network](track-work.md#WorkingOffline).
 
       - question:  How do I connect when special protocols are in use on my network?   
         answer: |
@@ -229,7 +229,7 @@ sections:
           The following error message appears if you sort the work items in a tree list in Excel:  
   
           TF208102: You have performed an Excel sort on a tree list. This action removed the modified or newly introduced hierarchical link relationships of the tree.
-          You can still publish the changes you have made to individual work items. After you publish, the list will restore to previous hierarchy.
+          You can still publish the changes you have made to individual work items. After you publish, the list restores to previous hierarchy.
           In general, you shouldn't sort a tree list whose hierarchy has been modified.|
 
           This message indicates that you can publish the changes that you made to the fields, but all changes that you made to the link hierarchy have been discarded. The tree hierarchy automatically reverts to its original structure.  
@@ -258,11 +258,11 @@ sections:
       - question: Can I delete work items from Excel?
         answer: |
           ::: moniker range=">= azure-devops-2020" 
-          **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal or the `az boards work-item delete` command-line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
+          **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal or the `az boards work-item delete` command-line tool. For more information, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
           ::: moniker-end 
 
           ::: moniker range="< azure-devops-2020" 
-          **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal, or with the `az boards work-item delete` or **witadmin** command-line tools. For details, see [Remove or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
+          **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal, or with the `az boards work-item delete` or **witadmin** command-line tools. For more information, see [Remove or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
           ::: moniker-end 
 
   - name: Use built-in Excel functions

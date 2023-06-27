@@ -8,7 +8,7 @@
   href: agile-process.md
   displayname: MSF
 - name: Agile workflow
-  displayName: discussion, map stories, track progress, kanban, taskboards
+  displayName: discussion, map stories, track progress, kanban, Taskboards
   href: agile-process-workflow.md
 - name: Scrum process guidance
   displayName: work item, azure boards, user stories, item types, links

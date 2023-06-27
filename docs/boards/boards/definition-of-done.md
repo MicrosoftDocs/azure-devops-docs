@@ -63,7 +63,7 @@ If you're just getting started, review [Kanban overview](kanban-overview.md)  an
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, Configure Definition of Done](media/columns/definition-of-done-defined.png)  
 
-4. When done with your changes, choose **Save**.  
+4. When you're done with your changes, choose **Save**.  
    ::: moniker-end  
 
 

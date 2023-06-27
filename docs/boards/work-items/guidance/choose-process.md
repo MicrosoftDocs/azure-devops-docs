@@ -509,7 +509,7 @@ Each image shows only the default reason associated with the transition.
 
 Most WITs used by Agile tools, ones that appear on backlogs and boards, support any-to-any transitions. You can update the status of a work item using the Kanban board or the taskboard by dragging it to its corresponding state column.
 
-You can change the workflow to support other states, transitions, and reasons. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).
+You can change the workflow to support other states, transitions, and reasons. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
 <a id="removed-closed-done"></a>
 
