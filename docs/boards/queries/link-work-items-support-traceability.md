@@ -107,7 +107,7 @@ Open a work item and choose **Add link** or the :::image type="icon" source="../
 ![Web portal, work item form, Related work section](media/link-work-items-new-form-control.png) 
 ::: moniker-end
 
-Choose **Existing item** to link to a work item or other object using any supported link type. Choose **New item** to start a link and define a new work item at the same time. For details, see [Add link to work items](../backlogs/add-link.md).
+Choose **Existing item** to link to a work item or other object using any supported link type. Choose **New item** to start a link and define a new work item at the same time. For more information, see [Add link to work items](../backlogs/add-link.md).
 
 :::image type="content" source="media/link-work-items-support-traceability/related-work-menu.png" alt-text="Screenshot of Related work control, link menu options."::: 
 
@@ -122,7 +122,7 @@ From a query results page, you can also complete these actions:
 - Link selected items to a new work item  
 - Link selected items to an existing work item   
 
-For details, see [Add link to work items](../backlogs/add-link.md#link). 
+For more information, see [Add link to work items](../backlogs/add-link.md#link). 
 
 #### [Visual Studio](#tab/visual-studio/)
 

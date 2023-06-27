@@ -274,7 +274,7 @@ If your team follows Scrum processes, you [schedule work to be completed in spri
 Any item assigned to a sprint that corresponds to the current iteration path for the team is found. For example, if a team is on Sprint 5, the query returns items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query returns items assigned to Sprint 6.  
 
 > [!NOTE]
-> For the **@CurrentIteration** macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For details, see [Define iteration paths (also referred to as sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
+> For the **@CurrentIteration** macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For more information, see [Define iteration paths (also referred to as sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
@@ -288,7 +288,7 @@ Azure Boards adds a team parameter when you select the **@CurrentIteration** or 
 > [!TIP]  
 > If the **@CurrentIteration** macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 
-To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the **@CurrentIteration** macro.  
+To change the team parameter the system automatically sets, you choose it by entering the name of the team into the parameter field added below the **@CurrentIteration** macro.  
 
 > [!div class="mx-imgBorder"]
 > ![Choose team parameter](media/query-date-iteration/choose-team-parameter.png)
@@ -378,7 +378,7 @@ ORDER BY [System.Id]
 The Query Editor view of the syntax appears as shown. 
 
 > [!NOTE]   
-> The Query Editor displays a :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: information icon next to the **Was Ever** operator, indicating an issue with the clause. However, the query will still run and you can create query charts. However, to modify the query, you need to use the [WIQL editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
+> The Query Editor displays a :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: information icon next to the **Was Ever** operator, indicating an issue with the clause. However, the query still runs and you can create query charts. However, to modify the query, you need to use the [WIQL editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
 
 :::image type="content" source="media/example-work-item-queries/query-work-items-moved-out-of-sprint.png" alt-text="Screenshot of Query Editor, Work Items moved out of a sprint.":::
 
@@ -478,7 +478,7 @@ You can use date fields to filter your queries. Some of these fields are populat
       Finish Date (Note 3)
     :::column-end:::
     :::column span="2":::
-      The date and time when the schedule indicates that the task will be completed.  
+      The date and time when the schedule indicates that the task is completed.  
       Reference name=Microsoft.VSTS.Scheduling.FinishDate, Data type=DateTime
    :::column-end:::
    :::column span="1":::
@@ -514,7 +514,7 @@ You can use date fields to filter your queries. Some of these fields are populat
       Start Date (Note 3)
     :::column-end:::
     :::column span="2":::
-      The date and time when the schedule indicates that the task will start.
+      The date and time when the schedule indicates that the task starts.
       ::: moniker range="azure-devops"
       > [!NOTE]   
       > [Delivery Plans](../plans/review-team-plans.md) uses the **Start Date** and **Target Date** to show the span of Features, Epics, and other portfolio backlog items. 

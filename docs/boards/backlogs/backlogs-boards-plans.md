@@ -1,7 +1,7 @@
 ---
 title: Tasks that support backlogs, boards, & plans in Azure Boards
 titleSuffix: Azure Boards
-description: Learn about tasks that support backlogs, Kanban boards, taskboards, and plans in Azure Boards. 
+description: Learn about tasks that support backlogs, Kanban boards, Taskboards, and plans in Azure Boards. 
 ms.custom: "boards-backlogs, seodec18" 
 ms.service: azure-devops-boards
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
@@ -18,11 +18,11 @@ ms.date: 03/30/2023
 
 Learn about the different views available in Agile project management - backlogs, boards, and delivery plans - and how they differ from each other. 
 
-Backlogs list work items while boards display them as cards, and each is associated with the other. You can customize each view according to your team's needs. Use your product backlog to plan and prioritize work, your sprint backlogs and taskboards for Scrum, and your Kanban board to update work status. Changes made in one view are reflected in the corresponding board. Delivery plans allow you to monitor progress, deliverables, and dependencies across several teams.
+Backlogs list work items while boards display them as cards, and each is associated with the other. You can customize each view according to your team's needs. Use your product backlog to plan and prioritize work, your sprint backlogs and Taskboards for Scrum, and your Kanban board to update work status. Changes made in one view are reflected in the corresponding board. Delivery plans allow you to monitor progress, deliverables, and dependencies across several teams.
 
 ## Access a backlog or board
 
-You access your backlogs and boards from a web portal. If you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and taskboard. For an overview of working in Scrum or Kanban, see [What is Azure Boards?](../get-started/what-is-azure-boards.md).
+You access your backlogs and boards from a web portal. If you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and Taskboard. For an overview of working in Scrum or Kanban, see [What is Azure Boards?](../get-started/what-is-azure-boards.md).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -46,7 +46,7 @@ You access your backlogs and boards from a web portal. If you work from the Stor
 
 	[!INCLUDE [temp](../includes/note-basic-process.md)]
 
-2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -75,7 +75,7 @@ You access your backlogs and boards from a web portal. If you work from the Stor
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -114,13 +114,13 @@ For details about working in each type of backlog, see [Create your backlog](cre
 > [!TIP]  
 > You can't sort a backlog by column. However, you can use the Create Query option on each backlog to create a query that you can sort on any field column you choose. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).  
 
-<a id="kanban-taskboards" />
+<a id="kanban-Taskboards" />
 
 ### Kanban and Taskboards
 
 Kanban and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and you monitor the flow through the cumulative flow chart. Taskboards track tasks defined for a sprint and you monitor the flow via the sprint burndown chart. 
 
-For details about working in each type of board, see [Kanban overview](../boards/kanban-overview.md) and [taskboard](../sprints/task-board.md). 
+For details about working in each type of board, see [Kanban overview](../boards/kanban-overview.md) and [Taskboard](../sprints/task-board.md). 
 
 ### Feature support across backlogs and boards
 
@@ -346,7 +346,7 @@ The following table indicates those elements or tasks associated with each type 
    Yes, see [Column options](set-column-options.md)
    :::column-end:::
    :::column span="1":::
-   Yes, see [Customize Taskboard](../sprints/customize-taskboard.md)
+   Yes, see [Customize Taskboard](../sprints/customize-Taskboard.md)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -406,7 +406,7 @@ The following table indicates those elements or tasks associated with each type 
    n/a
    :::column-end:::
    :::column span="1":::
-   [Customize Taskboard](../sprints/customize-taskboard.md)
+   [Customize Taskboard](../sprints/customize-Taskboard.md)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -672,7 +672,7 @@ The following table indicates those elements or tasks associated with each type 
    Yes, see [Column options](set-column-options.md)
    :::column-end:::
    :::column span="1":::
-   Yes, see [Customize Taskboard](../sprints/customize-taskboard.md)
+   Yes, see [Customize Taskboard](../sprints/customize-Taskboard.md)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -712,7 +712,7 @@ The following table indicates those elements or tasks associated with each type 
    n/a
    :::column-end:::
    :::column span="1":::
-   [Customize Taskboard](../sprints/customize-taskboard.md)
+   [Customize Taskboard](../sprints/customize-Taskboard.md)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -761,7 +761,7 @@ The following table indicates those elements or tasks associated with each type 
 
 
 > [!NOTE]  
-> 1. Each team can determine how they want to track bugs: as requirements, as tasks, or not at all. When tracked as requirements, they appear in your product backlog, sprint backlogs, and Kanban board. When tracked as tasks, they appear in your sprint backlogs and taskboards. For details, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).  
+> 1. Each team can determine how they want to track bugs: as requirements, as tasks, or not at all. When tracked as requirements, they appear in your product backlog, sprint backlogs, and Kanban board. When tracked as tasks, they appear in your sprint backlogs and Taskboards. For more information, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).  
 > 2. Work items that appear on each team backlog and board meet the criteria defined for the [team selected area and iteration paths](../../organizations/settings/about-teams-and-settings.md).  
 > 3. The **In progress items Show/Hide** control is another filter you can apply to your product and portfolio backlogs. This control essentially shows or hides those work items where work has begun. It's useful to show/hide In Progress items when [forecasting sprint work](../sprints/forecast.md).  
 > 4. When you [add a team](../../organizations/settings/add-teams.md), you essentially add another product backlog associated with that team. Each team can then manage their own set of sprint backlogs and portfolio backlogs. See [Manage teams and configure team tools](../../organizations/settings/manage-teams.md) for details.  
@@ -773,7 +773,7 @@ The following table indicates those elements or tasks associated with each type 
 
 ## "In Progress" filter for the backlog
  
-The In progress items **Show/Hide** filter causes some backlog items to display or not display. Bugs and other backlog items aren't listed when **In progress items=Hide** and their assigned State corresponds to an In Progress state category. Bugs in a New state will display, however, bugs in an Assigned state won't. To learn more about state categories, see  [Workflow states and state categories](../work-items/workflow-and-state-categories.md).
+The In progress items **Show/Hide** filter causes some backlog items to display or not display. Bugs and other backlog items aren't listed when **In progress items=Hide** and their assigned State corresponds to an In Progress state category. Bugs in a New state  display, however, bugs in an Assigned state don't. For more information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
 On your [backlog](create-your-backlog.md), set **In progress items** to **Show** to see all active bugs and other items on your backlog.  
 
@@ -818,12 +818,12 @@ When you configure a plan, you select the team or teams and backlog levels of in
 
 ## Taskboard items versus query list items
 
-You may wonder why the items that are shown on the taskboard differ from those items that are listed in a query that was created from its corresponding sprint backlog. 
+You may wonder why the items that are shown on the Taskboard differ from those items that are listed in a query that was created from its corresponding sprint backlog. 
 
-It's possible to assign tasks to an iteration but not have them linked to a parent backlog item. These items will show up in the created query, but might not show up on the taskboard itself. The system runs the query and then applies a few background processes before displaying the taskboard items.
+It's possible to assign tasks to an iteration but not have them linked to a parent backlog item. These items appear in the created query, but might not appear on the Taskboard itself. The system runs the query and then applies a few background processes before displaying the Taskboard items.
 
-These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or taskboard:  
-- The task hasn't been linked to a parent backlog item. Only those bugs and tasks that you've linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.   
+These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or Taskboard:  
+- The task hasn't been linked to a parent backlog item. Only those bugs and tasks that you've linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint appear on the sprint backlog page.   
 - The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).  
 - The task's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's parent backlog item differs from the task's area path.  
 

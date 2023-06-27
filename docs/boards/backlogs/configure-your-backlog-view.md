@@ -138,7 +138,7 @@ Turn on filtering when you want to find one or more work items based on a keywor
 
 Filtering displays a flat list of all items in the hierarchy when you have selected to show **Parents**. The hierarchical grouping is restored once you dismiss the filter toolbar. The filter toolbar persists until you dismiss it.  
 
-To learn more, see [Filter backlogs, boards, and plans](filter-backlogs-boards-plans.md).   
+For more information, see [Filter backlogs, boards, and plans](filter-backlogs-boards-plans.md).   
 
 ::: moniker range="azure-devops"
 
@@ -170,11 +170,11 @@ To quickly define many items to a backlog, perform the following steps.
 	Work items are automatically assigned the default **Area Path** and **Iteration Path** selected for the team.  
 
 	> [!NOTE]  
-	> If you have **Stakeholder** access , you can only add work items to the bottom of the backlog. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+	> If you have **Stakeholder** access , you can only add work items to the bottom of the backlog. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 1. Continue entering a **Title** and pressing the **Enter** key to define more backlog work items.  
 
-To learn more, see [Create your product backlog](create-your-backlog.md) and [Define features and epics](define-features-epics.md).
+For more information, see [Create your product backlog](create-your-backlog.md) and [Define features and epics](define-features-epics.md).
  
 ## Prioritize your product backlog 
 
@@ -241,7 +241,7 @@ You can drag items to quickly link one or several work items to a parent portfol
 
 ::: moniker-end
 
-To learn more, see [Organize your backlog and map child work items to parents](organize-backlog.md).
+For more information, see [Organize your backlog and map child work items to parents](organize-backlog.md).
  
 
 ## Add child items to a portfolio backlog item  
@@ -251,7 +251,7 @@ To learn more, see [Organize your backlog and map child work items to parents](o
 
 1. In the work item form that appears, enter a **Title** and any other required fields or details. Save the work item to close it. 
  
-To learn more, see [Define features and epics, add child items](define-features-epics.md#add-child-items).
+For more information, see [Define features and epics, add child items](define-features-epics.md#add-child-items).
 
 
 ## View or find unparented work
@@ -294,7 +294,7 @@ The **Forecast** tool is only available for the product backlog. Use these steps
 > [!TIP]  
 > You can drag items to reprioritize them with forecast lines shown. You can also use the **Planning** pane with the **Forecast** tool turned on.  
 
-To learn more, see [Forecast your product backlog](../sprints/forecast.md).
+For more information, see [Forecast your product backlog](../sprints/forecast.md).
 
 ::: moniker range="azure-devops"
 
@@ -310,7 +310,7 @@ You can add a rollup progress bar, count of work items, or sum of any integer or
 
     It can take several moments for the progress bar or count to appear. 
 
-To learn more, see [Display rollup progress or totals](display-rollup.md).
+For more information, see [Display rollup progress or totals](display-rollup.md).
  
 
 ::: moniker-end

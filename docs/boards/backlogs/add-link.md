@@ -71,7 +71,7 @@ For an overview of how links are used to support traceability, see [End-to-end t
 For an overview of which link types to use and link-related capabilities, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md). In general, we recommend you follow these guidelines:
 
 - For work items that appear on your backlogs, both product and portfolio, use the **Parent** and **Child** link types to create a hierarchy and group work. To quickly link many backlog work items within a hierarchy, see [Organize your backlog, map child work items to parents](organize-backlog.md).
-- When linking work items with **Parent** and **Child** link types, avoid nesting work items of the same type. While the system allows you to nest work items of the same type--such as, linking bugs to bugs or bugs to user stories when tracking both types on your product backlog--it can cause problems. For example, drag-and-drop of work items on a backlog or display of items on a Kanban board may not work. To learn more, see [Fix display, reordering, and nesting issues](resolve-backlog-reorder-issues.md). 
+- When linking work items with **Parent** and **Child** link types, avoid nesting work items of the same type. While the system allows you to nest work items of the same type--such as, linking bugs to bugs or bugs to user stories when tracking both types on your product backlog--it can cause problems. For example, drag-and-drop of work items on a backlog or display of items on a Kanban board may not work. For more information, see [Fix display, reordering, and nesting issues](resolve-backlog-reorder-issues.md). 
 - To track dependencies of work items, use the **Predecessor** and **Successor** link types.  
 - For all other general tracking purposes, use the **Related** link type. 
 
@@ -118,7 +118,7 @@ For example, here we use the **Related** link type to link three items to the bu
 > [!div class="mx-imgBorder"]  
 > ![Add link dialog, web portal, to an existing work item.](media/add-link/add-link-dialog-s136.png)  
 
-To link to multiple work items, you can use inline add which finds work items based on your recent activity or keyword searches. Select one or more of the work items displayed automatically based on your recent activity, or enter a keyword. Keyword searches will display work items based on work items that include that keyword in their title. 
+To link to multiple work items, you can use inline add which finds work items based on your recent activity or keyword searches. Select one or more of the work items displayed automatically based on your recent activity, or enter a keyword. Keyword searches display work items based on work items that include that keyword in their title. 
 
 > [!NOTE]   
 > You need to add each link one at a time. (You can no longer enter their IDs separated by commas or spaces.) To quickly find work items of interest, you can also use [work item search](../../project/search/functional-work-item-search.md).
@@ -133,7 +133,7 @@ To view the work items selected for linking, you can choose the  :::image type="
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of backlog context menu, choose Add link to an existing work item, TFS-2018 and previous versions.](media/add-link/link-multi-to-existing.png)   
 
-To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different project, you can choose :::image type="icon" source="../../media/icons/more-actions.png" border="false":::  **More actions** to open a dialogue that will support you in [choosing work items that are based on IDs, a query, or title keyword](#find-items). 
+To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different project, you can choose :::image type="icon" source="../../media/icons/more-actions.png" border="false":::  **More actions** to open a dialogue that can support you in [choosing work items that are based on IDs, a query, or title keyword](#find-items). 
 ::: moniker-end 
   
 
@@ -157,7 +157,7 @@ For example, here we use the **Related** link type to link several items to the 
 
 ![Screenshot of Visual Studio, Add link dialog.](media/add-link-related-existing-item-vs.png)         
 
-To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different project, you can select the Browse button to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
+To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different project, you can select the Browse button to open a dialogue that supports you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
 
 You'll need to bulk save the work items you've modified. 
 
@@ -239,7 +239,7 @@ The following image shows an example of two remote links, indicated by the  :::i
 
 You can add a new git branch and link them to existing work items at the same time. 
 
-From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to link to a new git branch, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then **New branch...**. To learn more, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
+From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to link to a new git branch, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then **New branch...**. For more information, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of backlog, context menu, choose Link multiple backlog items to a git branch.](media/add-link/link-git-branch.png)   
