@@ -26,7 +26,7 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 > [!IMPORTANT]  
 > Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
 > 
-> If your project was created using the [Basic](../get-started/plan-track-work.md) process, which tracks work using Epics, Issues, and Tasks, then you track Issues using the product backlog. To learn more, see [Track issues and tasks](../get-started/plan-track-work.md).
+> If your project was created using the [Basic](../get-started/plan-track-work.md) process, which tracks work using Epics, Issues, and Tasks, then you track Issues using the product backlog. For more information, see [Track issues and tasks](../get-started/plan-track-work.md).
 
 ::: moniker-end
 
@@ -119,7 +119,7 @@ Issues and impediments don't appear on your backlog by default. Instead, you tra
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). They only appear on your backlog if your project is customized using the On-premises XML process model. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
+Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). They only appear on your backlog if your project is customized using the On-premises XML process model. For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 
 ::: moniker-end
 
@@ -134,18 +134,18 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 ## Add issues or impediments to your product backlog  
 
 ::: moniker range="azure-devops"
-If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by adding them to your custom Inherited process. For more information, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
 
 ::: moniker-end
 
 ::: moniker range=">= Azure-devops-2019 < azure-devops"
-If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by customizing your project's process. For details, see the following: 
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by customizing your project's process. For more information, see the following: 
 - **For the Inherited process**: [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
 - **For the On-premise XML process**: [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by adding them to your On-premise XML process. For details, see [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by adding them to your On-premise XML process. For more information, see [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
 
 ::: moniker-end
 

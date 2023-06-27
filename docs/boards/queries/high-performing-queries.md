@@ -20,7 +20,7 @@ ms.date: 01/31/2022
 While you can easily create work item queries, to create high-performing queries requires a deeper understanding. By improving your query performance, you improve your individual productivity, dashboard performance, and resource rate limits.  
 
 > [!NOTE]   
-> Reference to service or resource rate limits only applies to queries run against Azure DevOps Services. To learn more, see [Service limits and rate limits](../../user-guide/service-limits.md). 
+> Reference to service or resource rate limits only applies to queries run against Azure DevOps Services. For more information, see [Service limits and rate limits](../../user-guide/service-limits.md). 
 
 This article provides general guidelines on how to write a high-performing query. These guidelines apply to the following queries you create:
 

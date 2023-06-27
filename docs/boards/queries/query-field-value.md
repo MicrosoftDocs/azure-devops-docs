@@ -83,7 +83,7 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
 The following table provides an index to those fields that support field comparison queries. 
 
 > [!NOTE]  
-> Not all fields listed are supported for all projects or work item types. However, you can customize a process or work item type by adding custom fields which you can use for the purposes of queries and field comparisons. To learn more, see [Add a custom field to a work item type (Inheritance process)](../../organizations/settings/work/add-custom-field.md) or [Add or modify a field (Online XML process)](../../reference/add-modify-field.md).
+> Not all fields listed are supported for all projects or work item types. However, you can customize a process or work item type by adding custom fields which you can use for the purposes of queries and field comparisons. For more information, see [Add a custom field to a work item type (Inheritance process)](../../organizations/settings/work/add-custom-field.md) or [Add or modify a field (Online XML process)](../../reference/add-modify-field.md).
 
   
 :::row:::

@@ -35,7 +35,7 @@ Bugs also provide the following additional features:
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]  
 
 > [!TIP]
-> To report a bug, a user must have at a minimum, **Stakeholder** access and **Edit work items in this node** permission set to **Allow** for the **Area Path** where they will add the bug. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)
+> To report a bug, a user must have at a minimum, **Stakeholder** access and **Edit work items in this node** permission set to **Allow** for the **Area Path** where they add the bug. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)
 
 ## Bug work item type 
 
@@ -83,7 +83,7 @@ The Bug work item type uses some bug-specific fields. To capture both the initia
       [Found In Build](../queries/build-test-integration.md) 
    :::column-end:::
    :::column span="3":::
-       Information about the software and system configuration that is relevant to the bug and tests to apply.  The **System Info** and **Found in Build** fields are automatically filled in when you create a bug through a testing tool. These fields specify information about the software environment and build where the bug occurred. To learn more, see [Test different configurations](../../test/test-different-configurations.md). 
+       Information about the software and system configuration that is relevant to the bug and tests to apply.  The **System Info** and **Found in Build** fields are automatically filled in when you create a bug through a testing tool. These fields specify information about the software environment and build where the bug occurred. For more information, see [Test different configurations](../../test/test-different-configurations.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -102,7 +102,7 @@ The Bug work item type uses some bug-specific fields. To capture both the initia
    :::column-end:::
    :::column span="3":::
       Specifies the name of the build that incorporates the code that fixes the bug. This field should be specified when you resolve the bug. 
-      For on-premises Azure DevOps, to access a drop-down menu of all builds that have been run, you can update the `FIELD` definitions for **Found in Build** and **Integrated in Build** to reference a global list. The global list is automatically updated with each build that is run. To learn more, see [Query based on build and test integration fields](../queries/build-test-integration.md).  
+      For on-premises Azure DevOps, to access a drop-down menu of all builds that have been run, you can update the `FIELD` definitions for **Found in Build** and **Integrated in Build** to reference a global list. The global list is automatically updated with each build that is run. For more information, see [Query based on build and test integration fields](../queries/build-test-integration.md).  
       For information about how to define build numbers, see [build number format options](../../pipelines/build/options.md). 
    :::column-end:::
 :::row-end:::
@@ -137,7 +137,7 @@ The Bug work item type uses some bug-specific fields. To capture both the initia
       [Deployment](#deployment-control)
    :::column-end:::
    :::column span="3":::
-      The **Deployment** control supports links to and display of releases that contain work items. To use the control, you must enable settings for the release. To learn more, see [Link work items to releases](#deployment-control) later in this article.  
+      The **Deployment** control supports links to and display of releases that contain work items. To use the control, you must enable settings for the release. For more information, see [Link work items to releases](#deployment-control) later in this article.  
    :::column-end:::
 :::row-end:::
 ---
@@ -147,7 +147,7 @@ The Bug work item type uses some bug-specific fields. To capture both the initia
       [Development](#development-control) 
    :::column-end:::
    :::column span="3":::
-      The **Development** control supports links to and display of links made to development objects. These objects include Git commits and pull requests, or TFVC changesets and versioned items. You can define links from the work item or from the commits, pull requests, or other development objects. To learn more, see [Link work items to development](#development-control) later in this article. 
+      The **Development** control supports links to and display of links made to development objects. These objects include Git commits and pull requests, or TFVC changesets and versioned items. You can define links from the work item or from the commits, pull requests, or other development objects. For more information, see [Link work items to development](#development-control) later in this article. 
    :::column-end:::
 :::row-end:::
 ---
@@ -204,11 +204,11 @@ To customize your particular process, see [Customize the On-premises XML process
 You can define bugs from several different Azure DevOps tools. These include backlogs and boards and testing tools.  
 
 > [!TIP]   
-> By default, the **Title** field is the only required field when creating a bug. You can quickly add bugs in the same way you add user stories or product backlog items using Azure Boards. If you want to make some fields required, do that by adding conditional rules based on a state change. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
+> By default, the **Title** field is the only required field when creating a bug. You can quickly add bugs in the same way you add user stories or product backlog items using Azure Boards. If you want to make some fields required, do that by adding conditional rules based on a state change. For more information, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
 
 ### Add a bug from your backlog or board 
 
-If your team chose to *manage bugs with requirements*, you can define bugs from your product backlog or Kanban board. To learn more, see [Create your product backlog](create-your-backlog.md) or [Start using your Kanban board](../boards/kanban-quickstart.md). 
+If your team chose to *manage bugs with requirements*, you can define bugs from your product backlog or Kanban board. For more information, see [Create your product backlog](create-your-backlog.md) or [Start using your Kanban board](../boards/kanban-quickstart.md). 
 
 - **Add a bug from the product backlog**  
 	> [!div class="mx-imgBorder"]  
@@ -219,7 +219,7 @@ If your team chose to *manage bugs with requirements*, you can define bugs from 
 	> ![Screenshot to add a bug from  Kanban board, Add bug.](media/manage-bugs/add-bug-from-board.png)  
 
 > [!TIP]    
-> When you add a bug from your product backlog or Kanban board, the bug is automatically assigned the default Area Path and Iteration Path defined for the team. To learn more, see [Team defaults referenced by backlogs and boards](../../organizations/settings/about-teams-and-settings.md#team-defaults-referenced-by-backlogs-and-boards).
+> When you add a bug from your product backlog or Kanban board, the bug is automatically assigned the default Area Path and Iteration Path defined for the team. For more information, see [Team defaults referenced by backlogs and boards](../../organizations/settings/about-teams-and-settings.md#team-defaults-referenced-by-backlogs-and-boards).
 
 
 ### Add a bug from your sprint backlog or Taskboard 
@@ -227,12 +227,12 @@ If your team chose to *manage bugs with requirements*, you can define bugs from 
 If your team chose to *manage bugs with tasks*, you can define bugs from your Kanban board, product backlog, Sprint backlog, or Sprint Taskboard. You add a bug as a child to a product backlog work item.  
 
 - **Add a linked child bug from the Kanban board**  
-    You add a bug in the same way you add a task to a backlog item. To learn more, see [Add tasks or child items as checklists](../boards/add-task-checklists.md). 
+    You add a bug in the same way you add a task to a backlog item. For more information, see [Add tasks or child items as checklists](../boards/add-task-checklists.md). 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to add a bug from Kanban board, Add child bug to backlog item.](media/manage-bugs/add-child-bug-from-board.png)  
 
 - **Add a linked child bug from the Sprint Backlog**  
-	You add a bug in the same way you add a task to a Sprint backlog. To learn more, see [Add tasks to backlog items](../sprints/add-tasks.md). 
+	You add a bug in the same way you add a task to a Sprint backlog. For more information, see [Add tasks to backlog items](../sprints/add-tasks.md). 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to add a bug from Sprint backlog, Add child bug to backlog item.](media/manage-bugs/add-bug-sprint-backlog.png) 
 
@@ -240,11 +240,11 @@ If your team chose to *manage bugs with tasks*, you can define bugs from your Ka
 
 The two testing tools you can use to add bugs while testing include the web portal Test Runner and the Test & Feedback extension.  
 
-- **Test Runner**: When running manual tests, you can choose to **Create bug**. To learn more, see [Run manual tests](../../test/run-manual-tests.md).  
+- **Test Runner**: When running manual tests, you can choose to **Create bug**. For more information, see [Run manual tests](../../test/run-manual-tests.md).  
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to add a bug from Test Runner, Create bug feature.](media/manage-bugs/test-runner-create-bug.png)
 
-- **Test & Feedback extension**: When running exploratory tests, you can choose to **Create bug** or **Create task**. To learn more, see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md) 
+- **Test & Feedback extension**: When running exploratory tests, you can choose to **Create bug** or **Create task**. For more information, see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md) 
 	![Screenshot to add a bug from Test & Feedback extension, Create bug or task feature.](../../test/media/connected-mode-exploratory-testing/create-bugs-02.png)  
 
 
@@ -338,7 +338,7 @@ Once you've started coding and testing, you'll want to hold periodic triage meet
 
 The project owner can define a shared query for new and reopened bugs to list bugs to be triaged. 
 
-From the query results page, you can quickly move up and down within the list of bug work items using the up and down arrows. As you review each bug, you can assign it, add details, or set priority. To learn more, see [Triage work items](../queries/triage-work-items.md). 
+From the query results page, you can quickly move up and down within the list of bug work items using the up and down arrows. As you review each bug, you can assign it, add details, or set priority. For more information, see [Triage work items](../queries/triage-work-items.md). 
 
 
 > [!div class="mx-imgBorder"]  
@@ -362,7 +362,7 @@ If your team *tracks bugs as tasks*, use managed queries to list and triage bugs
 
 You might notice and wonder why the items shown on a sprint Taskboard can differ from a query list created in a corresponding sprint backlog. 
 
-It's possible to assign tasks or bugs to an iteration but not have them linked to a parent backlog item. These items will show up in the created query, but might not show up on the Taskboard itself. The system runs the query and then applies a few background processes before displaying Taskboard items.
+It's possible to assign tasks or bugs to an iteration but not have them linked to a parent backlog item. These items appear in the created query, but might not show up on the Taskboard itself. The system runs the query and then applies a few background processes before displaying Taskboard items.
 
 These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or Taskboard:  
 - The task or bug hasn't been linked to a parent backlog item. Only bugs and tasks you've linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) with an iteration path set to the sprint appears on the sprint backlog page.  
@@ -382,19 +382,19 @@ When your team *tracks bugs as requirements*, you can use the Kanban board to ad
 
 You can update the bug status by dragging and dropping bugs to a new column on a board. 
 
-- If your team *tracks bugs as requirements*, you use the Kanban board as shown in the following image.  To learn more, see [Get started with your Kanban board](../boards/kanban-quickstart.md#update-status).  
+- If your team *tracks bugs as requirements*, you use the Kanban board as shown in the following image.  For more information, see [Get started with your Kanban board](../boards/kanban-quickstart.md#update-status).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Kanban board, drag and drop to update status.](media/manage-bugs/kanban-board-update-status.png) 
 
-- If your team *tracks bugs as tasks*, you use the Taskboard. To learn more, see [Update and monitor your Taskboard](../sprints/task-board.md).  
+- If your team *tracks bugs as tasks*, you use the Taskboard. For more information, see [Update and monitor your Taskboard](../sprints/task-board.md).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Taskboard, drag and drop to update status.](../sprints/media/alm_tb_move_to_done.png) 
 
 ### Customize your board to track intermediate states 
 
-You can add intermediate columns to track your bug status on the board. You can also define queries that filter based on the status of a Board Column. To learn more, see the following articles: 
+You can add intermediate columns to track your bug status on the board. You can also define queries that filter based on the status of a Board Column. For more information, see the following articles: 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -413,7 +413,7 @@ You can add intermediate columns to track your bug status on the board. You can 
 
 ### Automate bug reassignment based on workflow state 
 
-To automate select actions, add custom rules to your Bug work item type. For example, add a rule as shown in the following image. This rule specifies to reassign a bug to the person who opened the bug once it's resolved. Typically, that person verifies that the bug is fixed and closes the bug. To learn more, see [Apply rules to workflow states (Inheritance process)](../../organizations/settings/work/apply-rules-to-workflow-states.md).
+To automate select actions, add custom rules to your Bug work item type. For example, add a rule as shown in the following image. This rule specifies to reassign a bug to the person who opened the bug once it's resolved. Typically, that person verifies that the bug is fixed and closes the bug. For more information, see [Apply rules to workflow states (Inheritance process)](../../organizations/settings/work/apply-rules-to-workflow-states.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of rule defined to reassign bug based on resolved state.](media/manage-bugs/rule-reassigned-resolved-bug.png) 
@@ -441,7 +441,7 @@ You can add a link from the work item or from the build and release objects.
 
 ### Link work items to development 
 
-The **Development** control supports linking to and displaying links made to builds, Git commits and pull requests. Or, when a TFVC repository is used, it supports links to changesets and versioned items. Choosing the link opens the corresponding item in a new browser tab. To learn more, see [Drive Git development from a work item](connect-work-items-to-git-dev-ops.md).  
+The **Development** control supports linking to and displaying links made to builds, Git commits and pull requests. Or, when a TFVC repository is used, it supports links to changesets and versioned items. Choosing the link opens the corresponding item in a new browser tab. For more information, see [Drive Git development from a work item](connect-work-items-to-git-dev-ops.md).  
 > [!div class="mx-imgBorder"]  
 > ![Development control on work item form with sample links to build, pull requests, and commits.](media/manage-bugs/development-links.png)  
 
@@ -449,20 +449,20 @@ The **Development** control supports linking to and displaying links made to bui
 
 ### Link work items to releases   
 
-The **Deployment** control supports links to and display of releases that contain the work items. For example, the following image shows several releases that contain links to the current work item. You can expand each release to see details about each stage. You can choose the link for each release and stage to open the corresponding release or stage. To learn more, see [Link work items to deployments](../work-items/work-item-deployments-control.md).  
+The **Deployment** control supports links to and display of releases that contain the work items. For example, the following image shows several releases that contain links to the current work item. You can expand each release to see details about each stage. You can choose the link for each release and stage to open the corresponding release or stage. For more information, see [Link work items to deployments](../work-items/work-item-deployments-control.md).  
 > [!div class="mx-imgBorder"]  
 > ![Deployment control on work item form with sample releases.](media/manage-bugs/deployment-section-with-releases.png)  
 
 ### Link work items to pipeline runs 
 
-Pipelines are often defined to automatically run when a new commit occurs to a Git repository. Work items associated with the commit pipelines will show up as part of the pipeline run if you customize your pipeline settings. To learn more, see [Customize your pipeline](../../pipelines/customize-pipeline.md).  
+Pipelines are often defined to automatically run when a new commit occurs to a Git repository. Work items associated with the commit pipelines appear as part of the pipeline run if you customize your pipeline settings. For more information, see [Customize your pipeline](../../pipelines/customize-pipeline.md).  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Pipeline Settings, Automatically link work items in this run from selected branch.](media/manage-bugs/pipeline-settings.png) 
  
 ### Create or edit a work item upon a build failure
 
-If you use classic pipelines (not YAML), you can create work items on a build failure. For details, see [Build options, Create a work item on failure](../../pipelines/build/options.md). 
+If you use classic pipelines (not YAML), you can create work items on a build failure. For more information, see [Build options, Create a work item on failure](../../pipelines/build/options.md). 
 
 ## Monitor bug status, assignments, and trends
 
@@ -492,7 +492,7 @@ Analytics views provide pre-built filters to view work items. Four Analytic view
 
 To learn more about using Analytic views, see [What are Analytics views](../../report/powerbi/what-are-analytics-views.md) and [Create an active bugs report in Power BI based on a custom Analytics view](../../report/powerbi/active-bugs-sample-report.md).
 
-You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
+You can use Power BI to create more complex reports than what you can get from a query. For more information, see [Connect with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
 
 ::: moniker-end  
 
@@ -518,7 +518,7 @@ There are multiple bug-related Marketplace extensions. See [Marketplace for Azur
 For more information on extensions, see [Azure Boards extensions developed by Microsoft](../extensions/index.md).
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Triage work items](../queries/triage-work-items.md) 

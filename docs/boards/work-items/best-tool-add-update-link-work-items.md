@@ -16,7 +16,7 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Azure Boards provides you several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that will help you work most efficiently. 
+Azure Boards provides you several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that help you work most efficiently. 
 
 
 ## Work item form 
@@ -341,7 +341,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    - Run full text search across all work item fields
    - Review work items assigned to a specific team member
    - Search against specific work item fields to quickly narrow down a list of work items
-   - Determine what key words will support a managed search.
+   - Determine what key words support a managed search
    
    :::column-end:::
 :::row-end:::
@@ -356,7 +356,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    - Capture templates
    - Apply templates to update work items
    - Use templates to create work items
-   - Manage work item templates.
+   - Manage work item templates
    
    :::column-end:::
 :::row-end:::

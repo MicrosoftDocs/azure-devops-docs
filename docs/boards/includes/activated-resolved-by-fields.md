@@ -25,6 +25,6 @@ Because these fields reference the workflow state categories, custom workflow st
 
 - The fields get updated anytime a work item moves from any category state other than that being set. For example, if you update a work item from *New* to *Fixed*, the **Resolved By/Resolved Date** fields are updated. However, if you update from *Fixed* and *Ready for Testing*&mdash;which are in the same category state&mdash;the **Resolved By/Resolved Date** fields aren't updated.
 - When you transition backwards, such as going from a *Resolved* to an *Active* state, the system clears the values for **Resolved By/Resolved Date**  fields. If you got from *Active* to *New*, the system clears the values for  **Activated By/Activated Date** fields.
-- Don't manually change the values for these fields. They are system fields that are governed by system rules. Any value you attempt to set will get over written. 
+- Don't manually change the values for these fields. They are system fields that are governed by system rules. Any value you attempt to set gets over written. 
 
 ::: moniker-end

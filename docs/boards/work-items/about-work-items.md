@@ -59,7 +59,7 @@ To configure the team bug tracking option, see [Show bugs on backlogs and boards
 
 ### Customize a work item type 
  
-You can add or modify the fields that are contained within a work item type, add a custom work item type, or change the work item types that appear on backlogs and boards. The method you use and what you can customize depends on the process model assigned to your project. To learn more, see the following articles: 
+You can add or modify the fields that are contained within a work item type, add a custom work item type, or change the work item types that appear on backlogs and boards. The method you use and what you can customize depends on the process model assigned to your project. For more information, see the following articles: 
 
 ::: moniker range="azure-devops" 
 - [Customize your work tracking experience](../../organizations/settings/work/inheritance-process-model.md) 
@@ -116,10 +116,10 @@ The four main states that are defined for the User Story (Agile process) describ
 > [!NOTE]
 > - A work item can exist in one and only one state. 
 > - When all work is complete, set the work item **State** to 
-> - The Kanban board and Sprint Taskboard support viewing and updating the workflow state of requirements or tasks, respectively, using drag and drop. To learn more, see [Start using your Kanban board](../boards/kanban-quickstart.md) and [Update and monitor your Taskboard](../sprints/task-board.md). 
+> - The Kanban board and Sprint Taskboard support viewing and updating the workflow state of requirements or tasks, respectively, using drag and drop. For more information, see [Start using your Kanban board](../boards/kanban-quickstart.md) and [Update and monitor your Taskboard](../sprints/task-board.md). 
 > - Depending on the :::image type="icon" source="../media/icons/view-options-icon.png" border="false"::: **View Options** you select, work items in a *Closed* or *Completed* state won't appear on the backlog. 
-> - The *Removed* state supports removing a work item from appearing on the backlog. To learn more, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove). 
-> - You can query work items by **State** and other fields to list work in progress, resolved, or completed. To learn more, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md).
+> - The *Removed* state supports removing a work item from appearing on the backlog. For more information, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove). 
+> - You can query work items by **State** and other fields to list work in progress, resolved, or completed. For more information, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md).
 
 
 <a id="assign" />
@@ -127,7 +127,7 @@ The four main states that are defined for the User Story (Agile process) describ
 
 ### Assign work 
 
-You can only assign a work item to one person at a time. The **Assigned To** field is an identity field designed to hold a user identity that has been added to the project. Within the work item form, choose the **Assigned To** field to select a project member. Or, you can begin typing the name of a project member to quickly focus your search to a select few.  
+You can only assign a work item to one person at a time. The **Assigned To** field is an identity field designed to hold a user identity that has been added to the project. Within the work item form, choose the **Assigned To** field to select a project member. Or, you can begin entering the name of a project member to quickly focus your search to a select few.  
  
 :::image type="content" source="media/about-work-items/assigned-to-field.png" alt-text="Screenshot of Assigned To field in the work item form."::: 
 
@@ -148,7 +148,7 @@ You can grant access to a project by adding security groups that you created in 
 
 ### Use work item templates to quickly fill in forms
 
-With work item templates, you can quickly create work items that have prepopulated values for your team's commonly used fields. For example, create a task template that sets the area path, iteration path, and discipline or activity whenever you use it to create a task. To learn more, see [Use templates to add and update work items](../backlogs/work-item-template.md). 
+With work item templates, you can quickly create work items that have prepopulated values for your team's commonly used fields. For example, create a task template that sets the area path, iteration path, and discipline or activity whenever you use it to create a task. For more information, see [Use templates to add and update work items](../backlogs/work-item-template.md). 
 
 ## Follow, Refresh, Revert, and Actions menu
 
@@ -159,7 +159,7 @@ The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls a
       :::image type="content" source="media/about-work-items/follow-refresh-actions-menu.png" alt-text="Screenshot of Follow and Refresh icons, and Actions menu.":::
    :::column-end:::
    :::column span="1":::
-      - Choose **Follow** to get updates when changes are made to the work item. To learn more, see [Follow changes made to a user story, bug, or other work item or pull request](follow-work-items.md). 
+      - Choose **Follow** to get updates when changes are made to the work item. For more information, see [Follow changes made to a user story, bug, or other work item or pull request](follow-work-items.md). 
       - Choose :::image type="icon" source="../media/icons/icon-refresh-wi.png" border="false"::: **Refresh**  to update the work item form with the latest changes that someone else may have made while you had the work item open. 
       - Choose  :::image type="icon" source="../media/icons/icon-undo-changes-wi.png" border="false"::: **Revert changes** to undo any changes you made to the work item form. 
       - To exercise a task available from the **Actions** menu, see the following articles: 
@@ -181,7 +181,7 @@ The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls a
 
 ## Discussion control  
 
-With the **Discussion** control, project members can  add and review comments made about the work being performed. The rich text editor tool bar displays below the text entry area when you select your cursor within each text box. Each comment added is recorded in the **History** field. To learn more, see [View and add work items](view-add-work-items.md#capture-comments-in-the-discussion-section). To query the Discussion or History, see [Query work item history and discussion fields](../queries/history-and-auditing.md).
+With the **Discussion** control, project members can  add and review comments made about the work being performed. The rich text editor tool bar displays below the text entry area when you select your cursor within each text box. Each comment added is recorded in the **History** field. For more information, see [View and add work items](view-add-work-items.md#capture-comments-in-the-discussion-section). To query the Discussion or History, see [Query work item history and discussion fields](../queries/history-and-auditing.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Discussion section within a work item form.](../backlogs/media/discussion-section.png)   
@@ -205,7 +205,7 @@ The **Deployment**, **Development** and **Related Work** controls are special co
 :::row-end:::
 
 
-The **Deployment** control provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. To learn more, see [Link work items to builds and deployments](work-item-deployments-control.md).
+The **Deployment** control provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. For more information, see [Link work items to builds and deployments](work-item-deployments-control.md).
 
 ::: moniker-end
 
@@ -227,9 +227,9 @@ The **Development** and **Related Work** controls are used to support common lin
 
 ::: moniker-end
 
-The **Development** control records all Git development processes that support completion of the work item.  It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. To learn more, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).
+The **Development** control records all Git development processes that support completion of the work item.  It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. For more information, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).
 
-The **Related Work** control provides a quick view of linked work items, and supports adding a link to a parent work item. Also, you can quickly add and remove linked work items. To learn more, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md). 
+The **Related Work** control provides a quick view of linked work items, and supports adding a link to a parent work item. Also, you can quickly add and remove linked work items. For more information, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md). 
   
 ## History, Links, and Attachment tabs 
 
@@ -245,7 +245,7 @@ The state change history diagram appears first. To see the entire history of sta
 
 :::image type="content" source="../queries/media/state-change-history-diagram.png" alt-text="Screenshot of Work item form, Web portal, State change history diagram (web portal only).":::
 
-Choose an entry in the left pane to view the details of changes made. To learn more, see [Query work item history and discussion fields](../queries/history-and-auditing.md). 
+Choose an entry in the left pane to view the details of changes made. For more information, see [Query work item history and discussion fields](../queries/history-and-auditing.md). 
 
 :::image type="content" source="../queries/media/hist-audit-wi-form.png" alt-text="Screenshot of Work item form, History tab, Web portal, Details.":::
 
@@ -267,7 +267,7 @@ To learn more about linking, see the following articles:
 
 ### Attachments: Attach files to a work item
 
-From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Attachments** tab, you can add, remove, or view files or images added to the work item. You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. To learn more, see [Share information within work items and social tools](../queries/share-plans.md). 
+From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Attachments** tab, you can add, remove, or view files or images added to the work item. You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. For more information, see [Share information within work items and social tools](../queries/share-plans.md). 
  
 
 <a id="portal-clients"></a>  
@@ -287,14 +287,14 @@ Along with the work items types that appear on backlogs and boards, there are wo
 
 | Category and Work item type | Used to track specified types of work| 
 |-----------------------------|--------------------------------------|
-|Code Review Request|Tracks a code review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). To learn more, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). |
+|Code Review Request|Tracks a code review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). For more information, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). |
 |Code Review Response|A code review response is created for each person who's requested to provide review comments.|
 |Feedback Request|Feedback requests track requests for feedback generated through the feedback request form. See [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback).|
 |Feedback Response|A feedback response is created for each person and for each item for which feedback is provided through the Microsoft Feedback Client. See [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback).|
 |Shared Step|Shared steps are used to [repeat tests with different data](../../test/repeat-test-with-different-data.md).|
 |Shared Parameter|Shared Parameters specify different data and parameters for running manual test cases. See [Repeat a test with different data](../../test/repeat-test-with-different-data.md).|
 |Test Case|Each test case [defines a manual test](../../test/create-test-cases.md).|
-|Test Plan|Test plan group test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites.To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md). |
+|Test Plan|Test plan group test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites.For more information, see [Create test plans and test suites](../../test/create-a-test-plan.md). |
 |Test Suite|Test suites group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. See [Create test plans and test suites](../../test/create-a-test-plan.md). |
  
 
