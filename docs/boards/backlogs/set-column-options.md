@@ -272,8 +272,7 @@ For other keyboard shortcuts, enter **?** to display available shortcuts based o
 
 - [Display rollup progress or totals](display-rollup.md)
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md) 
-- [Work item field index](../work-items/guidance/work-item-field.md) 
-- [Backlogs, boards, and plans](backlogs-boards-plans.md)   
+- [Work item field index](../work-items/guidance/work-item-field.md)  
 - [View, run, or email a work item query](../queries/view-run-query.md)
 - [Create managed queries](../queries/using-queries.md)
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
@@ -281,8 +280,7 @@ For other keyboard shortcuts, enter **?** to display available shortcuts based o
 
 ::: moniker range="< azure-devops-2020"
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md) 
-- [Work item field index](../work-items/guidance/work-item-field.md) 
-- [Backlogs, boards, and plans](backlogs-boards-plans.md)   
+- [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Create managed queries](../queries/using-queries.md)
 
 ::: moniker-end
