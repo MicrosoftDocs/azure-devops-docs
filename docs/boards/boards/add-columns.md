@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/30/2023
+ms.date: 06/28/2023
 ---
 
 # Manage columns on your Kanban board
@@ -18,18 +18,16 @@ ms.date: 05/30/2023
 
 The Kanban board helps you visualize your team's workflow, including the types of work and handoffs that occur regularly as your team progresses work items. Each column on your Kanban board corresponds to work that your team does before that stage is considered done.
 
-
-
 ::: moniker range=">= azure-devops-2020"
 
 > [!NOTE]    
-> To manage columns on a sprint taskboard, see [Customize a taskboard](../sprints/customize-taskboard.md). To manage columns on a backlog or in query results, see [Change column options](../backlogs/set-column-options.md).   
+> To manage columns on a sprint taskboard, see [Customize a Taskboard](../sprints/customize-taskboard.md). To manage columns on a backlog or in query results, see [Change column options](../backlogs/set-column-options.md).   
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
 > [!NOTE]    
-> To add columns to a taskboard, you need to customize the workflow. For more information, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
+> To add columns to a Taskboard, you need to customize the workflow. For more information, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
 > For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 
@@ -227,7 +225,7 @@ Drag an item up or down within a column.
 
 Use the [query tool](../queries/using-queries.md) to list a subset of work items for review, triage, update, or chart generation. For example, you can create a query to list all active user stories (specify two clauses: `Work Item Type=User Story` and `State=Active`). 
 
-Specify [WIP limits](wip-limits.md), [split columns](#split-columns), and [definition of done](definition-of-done.md)
+Specify [WIP limits](wip-limits.md), [split columns](#split-columns), and [definition of done](#definition-of-done)
 
 ## Split columns
 
@@ -302,6 +300,56 @@ Before you split columns, ensure you [mapped each stage of your team's process t
 You can query for work items in a split column using the **Board Column Done** field. This field takes of a value of False when in the *Doing* column and True when in the *Done* column. 
 
 For examples on querying Board columns, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields)
+
+<a id="definition-of-done"> </a>
+
+## Add the Definition of Done to a column 
+
+When your team advances from one stage to the next in their work, it's crucial that they have a shared understanding of what constitutes "done." You can define the criteria for the Definition of Done in each Kanban column. By doing so, the team can identify the necessary tasks that need to be completed before advancing an item to the next stage. By doing so, you're also implementing one of the core Kanban tenets, *make processes and policies explicit*.
+
+Team members can quickly double-check the done criteria.
+
+> [!div class="mx-imgBorder"]
+> ![Definition of Done](media/columns/move-doing-done-dod-develop.png)
+
+::: moniker range=">= azure-devops-2019"
+
+1. [Open your Kanban board](kanban-quickstart.md). 
+
+   If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+
+2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
+
+3. Choose **Columns** and then a column tab to configure the Definition of Done for that column. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Kanban board, Configure Definition of Done](media/columns/definition-of-done-defined.png)  
+
+4. When you're done with your changes, select **Save and close**.
+
+::: moniker-end 
+
+::: moniker range="tfs-2018" 
+
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+
+2. Choose ![settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+
+	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
+
+3. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.   
+
+	> [!div class="mx-imgBorder"]
+	> ![Kanban board, Configure Definition of Done](media/columns/definition-of-done-defined.png)  
+
+4. When you're done with your changes, choose **Save**.  
+   ::: moniker-end  
+
+
+Team members can quickly check that they've met the criteria by choosing the Information tooltip :::image type="icon" source="media/ALM_DD_InfoIcon.png" border="false"::: info icon.  
 
 ## Do more tasks
 
