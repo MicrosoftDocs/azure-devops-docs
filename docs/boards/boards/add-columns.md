@@ -21,15 +21,16 @@ The Kanban board helps you visualize your team's workflow, including the types o
 ::: moniker range=">= azure-devops-2020"
 
 > [!NOTE]    
-> To manage columns on a sprint taskboard, see [Customize a Taskboard](../sprints/customize-taskboard.md). To manage columns on a backlog or in query results, see [Change column options](../backlogs/set-column-options.md).   
+> - To manage columns on a sprint Taskboard, see [Customize a Taskboard](../sprints/customize-taskboard.md). 
+> - To manage columns on a backlog or in query results, see [Change column options](../backlogs/set-column-options.md).   
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
 > [!NOTE]    
-> To add columns to a Taskboard, you need to customize the workflow. For more information, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
->
-> For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
+> - To add columns to a Taskboard, you need to customize the workflow. For more information, see [Add or modify a work item type](../../reference/add-modify-wit.md). 
+> - To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
+> - For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 
 ::: moniker-end
 
@@ -51,7 +52,7 @@ Complete the following tasks, so you don't need to revisit your configuration.
 - Add, remove, or rename columns and map workflow states to columns. For more information, see [Manage columns on your Kanban board](#add-or-rename-columns) later in this article.  
 
 ---
-Also, we recommend that you review the following articles: 
+We recommend that you review the following articles: 
 
 - [Kanban overview](kanban-overview.md)
 - [Configure and customize Azure Boards](../configure-customize.md)
@@ -89,7 +90,7 @@ The Kanban board uses the **Work item type** and **State** categories to group w
    > [!TIP]   
    > We recommend that you map each workflow state to a Kanban column, as if it's not mapped, it doesn't appear on the Kanban board.
 
-1. Specify the workflow **State** for each work item type and column, using one of the following four categories.
+3. Specify the workflow **State** for each work item type and column, using one of the following four categories.
 
    |State category  |Description  |
    |---------|---------|
@@ -99,7 +100,7 @@ The Kanban board uses the **Work item type** and **State** categories to group w
    |Removed     | Workflow state doesn't need to be specified     |
 
 > [!NOTE]
-> Adding bugs or other work items to a Kanban board may create new workflow states, requiring adjustments to column-to-state mappings in the following situations:
+> When you add bugs or other work items to a Kanban board, it may create new workflow states that require adjustments to column-to-state mappings in the following situations:
 >
 >- When a team admin [shows bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
 >- When a project admin [adds work item types to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md)
@@ -119,13 +120,11 @@ Do the following steps to add and edit your columns.
 
 2. Select **Configure team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows open board settings for a team in a vertical navigation.](../../organizations/settings/media/configure-team/open-board-settings.png)  
+   :::image type="content" source="../../organizations/settings/media/configure-team/open-board-settings.png" alt-text="Screenshot that shows open board settings for a team.":::
 
 3. Select **Columns** and then a column tab to see all the settings that you can modify. Your initial column settings look similar to the settings shown in the following image. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows the Settings dialog and selection of an Active column.](media/columns/kanban-settings-columns-active-column.png)  
+   :::image type="content" source="media/columns/kanban-settings-columns-active-column.png" alt-text="Screenshot that shows the Settings dialog and selection of an Active column.":::
 
 4. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
@@ -137,8 +136,7 @@ Do the following steps to add and edit your columns.
 
 	Or, you can open the dialog and change one or more settings for a Kanban column. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows the Settings dialog and selections for adding a Test column.](media/add-columns-settings-dialog-add-test-ts.png)  
+   :::image type="content" source="media/add-columns-settings-dialog-add-test-ts.png" alt-text="Screenshot that shows the Settings dialog and selections for adding a Test column.":::
 
 5. To change the column order, drag the column tab to the position that you want.  
 
@@ -147,8 +145,7 @@ Do the following steps to add and edit your columns.
    1. Open **Settings**, select **Columns**, and select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: from the column tab.
    2. Select **Remove** from the menu.  
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows the selections for deleting a column in the Settings dialog.](media/columns/remove-column.png)    
+     :::image type="content" source="media/columns/remove-column.png" alt-text="Screenshot that shows the selections for deleting a column in the Settings dialog.":::
 
 7. [Change state mappings as needed](#state-mappings) for added columns, added workflow states, or added WITs. 
 
@@ -162,39 +159,37 @@ Do the following steps to add and edit your columns.
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Select **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to open the common configuration settings dialog for the Kanban board. 
+2. Select **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to open the common configuration settings dialog for the Kanban board. 
 
-	![Screenshot that shows the Settings icon on the Kanban board.](media/add-columns-open-settings-ts.png)  
+   :::image type="content" source="media/add-columns-open-settings-ts.png" alt-text="Screenshot that shows the Settings icon on the Kanban board.":::
 
-2. Select **Columns** and then a column tab to see all the settings that you can modify. Your initial column settings look similar to the following example. 
+3. Select **Columns** and then a column tab to see all the settings that you can modify. Your initial column settings look similar to the following example. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows column settings in the Settings dialog.](media/add-columns-settings-dialog-ts.png)
+   :::image type="content" source="media/add-columns-settings-dialog-ts.png" alt-text="Screenshot that shows column settings in the Settings dialog.":::
 
-3. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
+4. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
 	Rename the first, second, and third columns to **Backlog**, **Analyze**, and **Develop**. Then, add a column and label it **Test**. 
 
 	You can rename a column directly from the Kanban board. 
 
-	<img src="media/rename-kanban-columns-direct-ts.png" alt="Screenshot that shows renaming a column directly on a Kanban board." />
+   :::image type="content" source="media/rename-kanban-columns-direct-ts.png" alt-text="Screenshot that shows renaming a column directly on a Kanban board.":::
 
 	Or, you can open the dialog and change one or more settings for a Kanban column. 
 
-	<img src="media/add-columns-settings-dialog-add-test-ts.png" alt="Screenshot that shows the Settings dialog and selections for adding a Test column." /> 
+   :::image type="content" source="media/add-columns-settings-dialog-add-test-ts.png" alt-text="Screenshot that shows the Settings dialog and selections for adding a Test column.":::
 
-4. To change the column order, drag the column tab to the position that you want.  
+5. To change the column order, drag the column tab to the position that you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: on the column tab and select **Remove** from the menu. 
+6. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: on the column tab and select **Remove** from the menu. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows the selections for deleting a column in the Settings dialog.](media/columns/remove-column.png)  
+   :::image type="content" source="media/columns/remove-column.png" alt-text="Screenshot that shows the selections for deleting a column in the Settings dialog."::: 
 
-6. [Change state mappings as needed](#state-mappings) for added columns, added workflow states, or added WITs.  
+7. [Change state mappings as needed](#state-mappings) for added columns, added workflow states, or added WITs.  
 
    Usually, you need to update state mappings when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting, add [WITs to the Requirement category](../../reference/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../../organizations/settings/work/customize-process-workflow.md).  
 
-7. When you're done with your changes, select **Save**.  
+8. When you're done with your changes, select **Save**.  
 
 ::: moniker-end  
 
@@ -204,11 +199,11 @@ Do the following steps to add and edit your columns.
 
 Drag-and-drop your work items to update the status. For example, to signal when work can start in a downstream stage, drag items to the next column. 
 
-![Screenshot that shows dragging an item from the Analyze column to the Develop column.](media/ALM_AC_DragItem.png)
+:::image type="content" source="media/ALM_AC_DragItem.png" alt-text="Screenshot that shows dragging an item from the Analyze column to the Develop column.":::
 
 You can move an item from one column to any other column on the board, forward and back. To hand off work to another team member, reassign it directly from the board.
 
-![Screenshot that shows assigning an item from a Kanban board.](media/ALM_AC_Reassign.png)
+:::image type="content" source="media/ALM_AC_Reassign.png" alt-text="Screenshot that shows assigning an item from a Kanban board.":::
 
 Team members who receive the handoff can [set alerts](../../organizations/notifications/manage-your-personal-notifications.md) to get immediate email notifications of their newly assigned work. 
 
@@ -231,7 +226,7 @@ Specify [WIP limits](wip-limits.md), [split columns](#split-columns), and [defin
 
 Because each column corresponds to a stage of work, you can quickly see the number of items in progress at each stage. However, a lag often exists between when work gets moved into a column and when work actually starts. To counter that lag and reveal the actual state of work in progress, you can turn on split columns.  When they're split, each column contains two subcolumns, *Doing* and *Done*.
 
-![Kanban with split columns](media/kanban-board-split-columns-example-chart.png)  
+:::image type="content" source="media/kanban-board-split-columns-example-chart.png" alt-text="Screenshot showing Kanban with split columns.":::
 
 Split columns let your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item.  
 
@@ -243,14 +238,13 @@ With split columns turned on, you update status of items on the Kanban board in 
 
 For example, as a team member completes their coding task, they move the item into *Done* under the Develop column. When the tester is ready to test the item, they pull it into *Doing* under the Test column.  
 
-> [!div class="mx-imgBorder"]  
-> ![Kanban board showing split column](media/columns/split-columns-move-item.png)
+:::image type="content" source="media/columns/split-columns-move-item.png" alt-text="Screenshot showing Kanban board with split column.":::
 
 ### Identify bottlenecks
 
 Split columns provide you even greater insight into how many items sit idle in a *Done* column. Your team can readily see when items pile up, which signal a potential bottleneck.   
 
-![Kanban board, split columns showing stacked items](media/kanban-board-identify-bottlenecks.png)  
+:::image type="content" source="media/kanban-board-identify-bottlenecks.png" alt-text="Screenshot of Kanban board, split columns showing stacked items.":::
 
 By reviewing the frequency of pile ups and where they occur, your team can adjust their processes to eliminate the bottlenecks. Workflow processes that incur no or few bottlenecks correspond to perfect flows. No item sits in a queue for any 
 
@@ -259,6 +253,7 @@ By reviewing the frequency of pile ups and where they occur, your team can adjus
 Before you split columns, ensure you [mapped each stage of your team's process to a Kanban column](#map-workflow-states). Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage. 
 
 ::: moniker range=">= azure-devops-2019"
+
 1. [Open your Kanban board](kanban-quickstart.md) and choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
    :::image type="content" source="../../organizations/settings/media/configure-team/open-board-settings.png" alt-text="Screenshot of Open board settings for a team, vertical navigation.":::
@@ -266,11 +261,11 @@ Before you split columns, ensure you [mapped each stage of your team's process t
 2. Choose **Columns** and then choose the column tab that you want to split. Add a check mark in the checkbox to cause the column to split.  
 
 	> [!NOTE]   
-	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
+	> There are different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team chose to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
 	
    :::image type="content" source="media/columns/split-columns.png" alt-text="Screenshot of Kanban board settings page, Split columns.":::
 
-1. When you're done, choose **Save and close**.
+3. When you're done, choose **Save**.
 
 	> [!TIP]    
 	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields). 
@@ -278,6 +273,7 @@ Before you split columns, ensure you [mapped each stage of your team's process t
 ::: moniker-end 
 
 ::: moniker range="tfs-2018"
+
 1. [Open your Kanban board](kanban-quickstart.md) and choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
 
    :::image type="content" source="media/add-columns-open-settings-ts.png" alt-text="Screenshot of Kanban board, open common configuration settings.":::
@@ -285,7 +281,7 @@ Before you split columns, ensure you [mapped each stage of your team's process t
 2. Choose **Columns** and then choose the column tab that you want to split. Place a check in the checkbox to cause the column to split.   
 
 	> [!NOTE]   
-	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
+	> There are different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team chose to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
 
    :::image type="content" source="media/columns/split-columns-tfs-2018.png" alt-text="Screenshot of Kanban board settings dialog, Split columns.":::
 
@@ -299,57 +295,49 @@ Before you split columns, ensure you [mapped each stage of your team's process t
 
 You can query for work items in a split column using the **Board Column Done** field. This field takes of a value of False when in the *Doing* column and True when in the *Done* column. 
 
-For examples on querying Board columns, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields)
+For examples on querying Board columns, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields).
 
 <a id="definition-of-done"> </a>
 
 ## Add the Definition of Done to a column 
 
-When your team advances from one stage to the next in their work, it's crucial that they have a shared understanding of what constitutes "done." You can define the criteria for the Definition of Done in each Kanban column. By doing so, the team can identify the necessary tasks that need to be completed before advancing an item to the next stage. By doing so, you're also implementing one of the core Kanban tenets, *make processes and policies explicit*.
+When your team advances from one stage to the next in their work, it's crucial that they have a shared understanding of what constitutes as "done." You can define the criteria for the Definition of Done in each Kanban column. By doing so, the team can identify the necessary tasks that need to be completed before advancing an item to the next stage. This task also implements one of the core Kanban tenets, *make processes and policies explicit*.
 
-Team members can quickly double-check the done criteria.
+Team members can quickly double-check the criteria by choosing the Information tooltip :::image type="icon" source="media/ALM_DD_InfoIcon.png" border="false"::: info icon.  
 
-> [!div class="mx-imgBorder"]
-> ![Definition of Done](media/columns/move-doing-done-dod-develop.png)
+:::image type="content" source="media/columns/definition-of-done-information-tooltip.png" alt-text="Screenshot showing information tooltip of Definition of Done.":::
 
 ::: moniker range=">= azure-devops-2019"
 
-1. [Open your Kanban board](kanban-quickstart.md). 
-
-   If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. Open your Kanban board.
 
 2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
-	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
+   :::image type="content" source="../../organizations/settings/media/configure-team/open-board-settings.png" alt-text="Screenshot of the settings gear highlighted for selection.":::
 
 3. Choose **Columns** and then a column tab to configure the Definition of Done for that column. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Kanban board, Configure Definition of Done](media/columns/definition-of-done-defined.png)  
+   :::image type="content" source="media/columns/definition-of-done-defined.png" alt-text="Screenshot showing the columns management screen, entering plain text for Definition of Done.":::
 
-4. When you're done with your changes, select **Save and close**.
+4. When you're done with your changes, select **Save**.
 
 ::: moniker-end 
 
 ::: moniker range="tfs-2018" 
 
-1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. Open your Kanban board.
 
 2. Choose ![settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
-	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
+   :::image type="content" source="media/add-columns-open-settings-ts.png" alt-text="Screenshot showing the settings gear highlighted for selection.":::
 
 3. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.   
 
-	> [!div class="mx-imgBorder"]
-	> ![Kanban board, Configure Definition of Done](media/columns/definition-of-done-defined.png)  
+   :::image type="content" source="media/columns/definition-of-done-defined.png" alt-text="Screenshot of columns management screen, entering plain text for Definition of Done.":::
 
 4. When you're done with your changes, choose **Save**.  
-   ::: moniker-end  
 
-
-Team members can quickly check that they've met the criteria by choosing the Information tooltip :::image type="icon" source="media/ALM_DD_InfoIcon.png" border="false"::: info icon.  
+::: moniker-end
 
 ## Do more tasks
 
