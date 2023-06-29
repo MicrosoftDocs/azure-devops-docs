@@ -107,7 +107,7 @@ Your Kanban board is highly configurable to support your team's workflow. Each t
   :::column span="1":::
    - [Manage columns](add-columns.md)  
    - [Set WIP limits](wip-limits.md)  
-   - [Set Definition of Done](definition-of-done.md)  
+   - [Set Definition of Done](add-columns.md#add-the-definition-of-done-to-a-column)  
    - [Add swimlanes](expedite-work.md)
    - [Reorder cards](customize-cards.md#reorder-cards)
    - [Enable backlog and board levels](../../organizations/settings/select-backlog-navigation-levels.md)
