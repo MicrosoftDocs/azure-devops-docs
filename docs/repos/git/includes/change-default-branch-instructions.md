@@ -7,7 +7,7 @@ You can use a branch other than `main` for new changes or change your main line 
 To change your repo's default branch for merging new pull requests, you need at least two branches. If there's only one branch, it's already the default. You must create a second branch to change the default.
 
 >[!NOTE]
->This procedure might require you to [Set Git repository permissions](../set-git-repository-permissions.md).
+>Changing the default branch requires you to have **Edit policies** permission. For more information, see [Set Git repository permissions](../set-git-repository-permissions.md).
 
 ::: moniker range=">= azure-devops-2020"
 

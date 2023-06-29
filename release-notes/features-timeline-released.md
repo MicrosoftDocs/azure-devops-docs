@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 6/6/2023
+ms.date: 6/21/2023
 
 ms.topic: article
 ms.service: azure-devops
@@ -37,6 +37,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="8"><a href="2023/sprint-223-update.md" data-raw-source="[21 June 2023](2023/sprint-223-update.md)"> 21 June 2023</a></td>
+    <td>Organization profile image</td><td>General</td><td>Future</td></tr>
+    <td>Checks user experience improvements</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Scalable Invoke Azure Function and REST API checks changes</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Instructions for manual pre-installation of Node 6 on Pipeline agents</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline task changelog</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Release tasks use Microsoft Graph API</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Specify agent version in Agent VM extension</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Introducing resolved as completed in burndown and burnup charts</td><td>Reporting</td><td>Future</td></tr>
+<tr>
 <tr>
     <td rowspan="7"><a href="2023/sprint-222-update.md" data-raw-source="[6 June 2023](2023/sprint-222-update.md)"> 6 June 2023</a></td>
     <td>GitHub Advanced Security for Azure DevOps (public preview)</td><td>General</td><td>N/A</td></tr>

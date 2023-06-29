@@ -16,8 +16,7 @@ ms.date: 10/08/2021
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
-A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
-information to each backlog item, break them down into smaller items, prioritize, and estimate them, and finally, 
+A great backlog conveys customer needs and value. Over the course of the project, your team adds detailed information to each backlog item, break them down into smaller items, prioritize, and estimate them, and finally, 
 implement them and deliver the results to your customers. 
 
 To get started, see [Create your backlog](create-your-backlog.md). 
@@ -97,7 +96,7 @@ Backlog refinement supports your sprint planning efforts and helps minimize thes
 * Inability to forecast  
 
 A meeting to refine the backlog should occur separate from the sprint planning meeting. Use this meeting to complete these activities:  
-* Right-size backlog items by splitting larger items into smaller items. No backlog item should be larger than it will take to complete in a single sprint.  
+* Right-size backlog items by splitting larger items into smaller items. No backlog item should be larger than it takes to complete in a single sprint.  
 * Identify and fill in gaps in the product backlog. Capture new ideas and stories, architecture and design requirements, and other spikes.  
 * Reorder the backlog to represent today's priorities and business value focus.  
 * Ensure well-defined acceptance criteria has been added to each item.  

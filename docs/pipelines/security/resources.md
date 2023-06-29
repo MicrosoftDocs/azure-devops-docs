@@ -21,6 +21,7 @@ A pipeline can access two types of resources, protected and open.
 Your pipelines often have access to secrets.
 For instance, to sign your build, you need a signing certificate.
 To deploy to a production environment, you need a credential to that environment.
+Azure Pipelines requires the **Administrator** role when opening up access to a resource to all pipelines for all protected resources except for Environments. For Environments, you'll need the **Creator** role. Learn more about [resource protection](../library/add-resource-protection.md).  
 In Azure Pipelines, all of the following are considered *protected* resources in YAML pipelines:
 - [Agent pools](../agents/agents.md)
 - [Secret variables in variable groups](../library/variable-groups.md)

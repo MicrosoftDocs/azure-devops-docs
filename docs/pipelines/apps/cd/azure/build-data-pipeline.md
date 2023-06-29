@@ -5,7 +5,7 @@ ms.author: jukullam
 author: JuliaKM
 ms.subservice: azure-devops-pipelines-apps
 ms.custom: devx-track-azurecli, devx-track-arm-template
-ms.date: 01/25/2023
+ms.date: 06/20/2023
 ms.topic: how-to
 monikerRange: '=azure-devops'
 ---
@@ -23,9 +23,11 @@ Learn how to grab data from a CSV (comma-separated values) file and save the dat
 Before you begin, you need:
 - An Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
+    - The **Administrator** role for service connections in your Azure DevOps project. Learn how to [add the Administrator role](../../../library/add-resource-protection.md).  
 - Data from [sample.csv](https://github.com/MicrosoftDocs/azure-devops-docs-samples/raw/main/azure-data-pipeline/data/sample.csv).
 - Access to the [data pipeline solution](https://github.com/MicrosoftDocs/azure-devops-docs-samples/tree/main/azure-data-pipeline) in GitHub. 
 - [DevOps for Azure Databricks](https://marketplace.visualstudio.com/items?itemName=riserrad.azdo-databricks).
+
 
 ## Provision Azure resources
 
@@ -159,7 +161,7 @@ To make commands easier to run, start by selecting a default region. After you s
     * Clear the selection for **Enable GIT**.
 
   
-   1. Run the following `az datafactory factory create` command to create a new data factory for testing.  
+   1. Run the following `az datafactory create` command to create a new data factory for testing.  
     
        ```azurecli
         az datafactory create \
@@ -235,7 +237,7 @@ You'll use Azure Key Vault to store all connection information for your Azure se
 1. Select **Service Principal (automatic)**.
 1. Choose the **data-pipeline-cicd-rg** resource group.
 1. Name the service connection `azure_rm_connection`.
-1. Select **Grant access permission to all pipelines**. 
+1. Select **Grant access permission to all pipelines**. You'll need to have the Service Connections Administrator role to select this option. 
 
 ## Add pipeline variables
 
