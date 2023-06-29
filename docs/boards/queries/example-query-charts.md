@@ -21,7 +21,7 @@ Query charts are a great way to visualize status and trends. Also, by adding sev
 - *What charts help to maintain backlog hygiene?*
 - *What time frame should we monitor when creating trend charts?*
 
-Not all teams have the same goals or tracking needs. However, teams that adopt Agile methods tend to routinely perform the following tasks. So consider the status and trend charts that will help your team perform these tasks.  
+Not all teams have the same goals or tracking needs. However, teams that adopt Agile methods tend to routinely perform the following tasks. So consider the status and trend charts that can help your team perform these tasks.  
 - [Triage incoming work](../sprints/best-practices-scrum.md#tips-for-successful-triage-meetings), ensure new work is well defined 
 - Refine the backlog as described in [Backlog management ](../backlogs/best-practices-product-backlog.md) 
 - Plan sprints and set sprint goals as described in [Scrum and best practices](../sprints/best-practices-scrum.md)
@@ -30,7 +30,7 @@ Not all teams have the same goals or tracking needs. However, teams that adopt A
 
 ## Prerequisites
 
-- To create a query chart or view query charts from the Queries page, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
+- To create a query chart or view query charts from the Queries page, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
 - To add a query chart to a dashboard:
 	- You need to save the query under the **Shared Queries** folder. To do that, you must be granted permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](set-query-permissions.md). 
 	- You must have created the dashboard or be granted permissions to edit the dashboard. To learn more about dashboard permissions, see [Set dashboard permissions](../../report/dashboard-permissions.md). 
@@ -38,7 +38,7 @@ Not all teams have the same goals or tracking needs. However, teams that adopt A
 
 ::: moniker range="azure-devops"
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
  

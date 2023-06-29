@@ -294,6 +294,16 @@
       "source_path": "docs/boards/boards/kanban-basics.md",
       "redirect_url": "/azure/devops/boards/boards/kanban-quickstart",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/backlogs-boards-plans.md",
+      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/definition-of-done.md",
+      "redirect_url": "/azure/devops/boards/boards/add-columns",
+      "redirect_document_id": false
     }
   ]
 }

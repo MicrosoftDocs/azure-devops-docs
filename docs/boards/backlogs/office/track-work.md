@@ -376,7 +376,7 @@ To connect from your Office client to an Azure DevOps Server project, do the fol
 
 ***
 
-To learn more, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).
+For more information, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).
 
 > [!TIP]
 > You can use multiple worksheets within an Excel workbook to work with different input or query lists. However, you can only connect to one project per workbook.

@@ -133,6 +133,6 @@ With an understanding of how you want to use WIP limits, do the following steps 
 
 - [Split columns](split-columns.md)  
 - [Speed up work](expedite-work.md)  
-- [Definition of Done](definition-of-done.md)  
+- [Add the Definition of Done to a column](add-columns.md#definition-of-done)  
 - [Customize cards](../../boards/boards/customize-cards.md)  
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  

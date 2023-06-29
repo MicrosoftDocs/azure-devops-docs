@@ -26,7 +26,7 @@ Tags are a better choice to filter work items than using text strings as describ
 You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to modify tags in bulk.  
 
 > [!NOTE]   
-> Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags.  
+> Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams add to and work from the same set of tags.  
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
@@ -131,9 +131,9 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 
 ## Delete, remove, or manage tags 
 
-You can't delete a tag itself. However, if you delete a tag from all work items to which it's currently assigned, the system will delete the tag. The system automatically deletes unassigned tags after three days of disuse.  
+You can't delete a tag itself. However, if you delete a tag from all work items to which it's currently assigned, the system deletes the tag. The system automatically deletes unassigned tags after three days of disuse.  
 
-If you misspell a tag, don't assign the misspelled tag to any work item and the system will automatically delete it within three days.  
+If you misspell a tag, don't assign the misspelled tag to any work item and the system  automatically deletes it within three days.  
 
 Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2), which adds a **Tags** page under **Boards** or **Work** to manage tags. 
 
@@ -141,7 +141,7 @@ Another option is to install the [Marketplace Tags Manager](https://marketplace.
   
 ## Color-code tags on boards
 
-You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. They don't appear on backlogs or taskboards. To learn more, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
+You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. They don't appear on backlogs or Taskboards. For more information, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
 
 > [!div class="mx-imgBorder"]
 > ![Boards>Settings>Tag colors dialog](media/add-tags/color-code-tags.png)
@@ -174,7 +174,7 @@ To group a **Chart for Work Items** widget by tags, complete the same steps prov
 
 ### Limits on the number of tags
 
-While no hard limit exists, creating more than 100,000 tags for a project collection can negatively impact performance. Also, the autocomplete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
+While no hard limit exists, creating more than 100,000 tags for a project collection can negatively impact performance. Also, the autocomplete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin entering to cause the tag control to display relevant tags.  
 
 You can't assign more than 100 tags to a work item or you'll receive the following message:  
 
@@ -184,7 +184,7 @@ TF401243: Failed to save work item because too many new tags were added to the w
 
 Save the work item with the tags (100 or less) that you've added, and then you can add more tags. 
 
-Limit queries to fewer than 25 tags. More than that amount and the query will likely time out.  
+Limit queries to fewer than 25 tags. More than that amount and the query likely times out.  
 
 
 ::: moniker range="< azure-devops"

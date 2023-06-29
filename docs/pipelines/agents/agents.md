@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 01/24/2023
+ms.date: 06/20/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -80,6 +80,24 @@ After you've installed the agent on a machine, you can install any other softwar
 > Agents are widely backward compatible. Any version of the agent should be compatible with any Azure DevOps version as long as Azure DevOps isn't demanding a higher version of the agent.
 >
 > We only support the most recent version of the agent since that is the only version guaranteed to have all up-to-date patches and bug fixes.
+
+### Node runner versions
+
+The agent ships with several versions of NodeJS libraries to support target tasks that use different Node handlers.
+
+All official Azure DevOps tasks use Node 10 as a universal handler, however, customers may still use custom tasks
+that use the outdated Node 6 library. To support backward compatibility with Node that has currently reached End-of-Life, we provide the following self-service methods to install the designated Node runner manually.
+
+* Manually install the Node 6 runner. For more information on manually installing the Node 6 runner, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
+* Use the [NodeTaskRunnerInstaller@0](/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0) task in your pipelines that require the outdated Node 6 library.
+* Install an agent package that includes Node 6.
+  
+  Azure Pipelines provides two versions of agent packages.
+
+  * **vsts-agent-\*** packages support Node 6.
+  * **pipelines-agent-\*** packages do not support Node 6. This version of the package will become the default agent package in the future.
+
+  If you know that you are not using any Node 6 dependant tasks, and you don't want Node 6 installed on your agent machine, you can install the agent from the **Alternate Agent Downloads** section from [https://github.com/microsoft/azure-pipelines-agent/releases](https://github.com/microsoft/azure-pipelines-agent/releases).
 
 ## Azure Virtual Machine Scale Set agents
 
@@ -289,7 +307,17 @@ ID    Name                             Is Hosted    Pool Type
 
 ::: moniker-end
 
+::: moniker range=">tfs-2018 <azure-devops"
+
+### Communication with Azure DevOps Server
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
 ### Communication with TFS
+
+::: moniker-end
 
 The agent communicates with Azure Pipelines or Azure DevOps Server to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.
 

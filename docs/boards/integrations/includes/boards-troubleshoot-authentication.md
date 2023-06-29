@@ -10,7 +10,7 @@ permissions.](#configuration-failed-please-make-sure-that-the-organization-organ
 
 The Azure Boards app uses the OAuth authentication protocol, and requires [Third-party application access via OAuth for the 
 organization](../../../organizations/accounts/change-application-access-policies.md) to be enabled. 
-To enable this setting, navigate to **Organization Settings** > **Security** > **Policies**, and set the **Third-party application access
+To enable this setting, go to **Organization settings** > **Security** > **Policies**, and set the **Third-party application access
  via OAuth for the organization** setting to **On**.
 
 > [!div class="mx-imgBorder"]
@@ -18,9 +18,9 @@ To enable this setting, navigate to **Organization Settings** > **Security** > *
 
 ### Configuration failed. Please make sure that the organization '{organization name}' exists and that you have sufficient permissions.
 
-Sign out of Azure DevOps by navigating to `https://aka.ms/VsSignout` using your browser.
+Sign out of Azure DevOps by going to `https://aka.ms/VsSignout` using your browser.
 
-Open an **In private** or **incognito** browser window and navigate to `https://aex.dev.azure.com/me` and sign in. In the dropdown under the profile 
+Open an **In private** or **incognito** browser window and go to `https://aex.dev.azure.com/me` and sign in. In the dropdown under the profile 
 icon to the left, select the directory that contains the organization containing the project that you want to link.
 
 > [!div class="mx-imgBorder"]

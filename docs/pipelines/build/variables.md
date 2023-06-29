@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
-ms.date: 12/20/2022
+ms.date: 06/29/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -85,7 +85,7 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 
 1. Save the new variable. 
 
-Setting `System.Debug` to `true` will configure verbose logs for all runs. You can also configure verbose logs for a single run with the **Enable system diagnostics** checkbox. 
+Setting `System.Debug` to `true` configures verbose logs for all runs. You can also configure verbose logs for a single run with the **Enable system diagnostics** checkbox. 
 
 You can also set `System.Debug` to `true` as a variable in a pipeline or template. 
 
@@ -93,6 +93,15 @@ You can also set `System.Debug` to `true` as a variable in a pipeline or templat
 variables:
   system.debug: 'true'
 ```
+
+::: moniker range=">azure-devops-2022"
+
+When `System.Debug` is set to `true`, an extra variable named `Agent.Diagnostic` is set to `true`. When `Agent.Diagnostic` is `true`, the agent collects more logs that can be used for troubleshooting network issues for self-hosted agents. For more information, see [Network diagnostics for self-hosted agents](../troubleshooting/review-logs.md#network-diagnostics-for-self-hosted-agents).
+
+> [!NOTE]
+> The `Agent.Diagnostic` variable is available with [Agent v2.200.0](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.200.0) and higher.
+
+::: moniker-end
 
 For more information, see [Review logs to diagnose pipeline issues](../troubleshooting/review-logs.md).
 
@@ -129,7 +138,7 @@ The value depends on what caused the build and are specific to Azure Repos repos
 
 | If the build is triggered... | Then the Build.QueuedBy and Build.QueuedById values are based on... | Then the Build.RequestedFor and Build.RequestedForId values are based on... |
 | --- | --- | ---|
-| In Git or TFVC by the [Continuous integration (CI) triggers](triggers.md) | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The person who pushed or checked in the changes. |
+| In Git or by the [Continuous integration (CI) triggers](triggers.md) | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The person who pushed or checked in the changes. |
 | In Git or by a [branch policy build](../../repos/git/branch-policies.md#build-validation). | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The person who checked in the changes. |
 | In TFVC by a [gated check-in trigger](triggers.md) | The person who checked in the changes. | The person who checked in the changes. |
 | In Git or TFVC by the [Scheduled triggers](triggers.md) | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` |

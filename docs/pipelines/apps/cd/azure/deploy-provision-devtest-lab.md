@@ -237,7 +237,7 @@ release pipeline in Azure Pipelines.
 
    >For more information, or if you have any suggestions for 
    improvements to the extension, visit the 
-   [DevTest Labs feedback forum](https://feedback.azure.com/forums/320373-azure-devtest-labs).  
+   [DevTest Labs feedback forum](https://feedback.azure.com/d365community/forum/502dba10-7726-ec11-b6e6-000d3a4f032c).  
 
 ## FAQ
 

@@ -94,7 +94,7 @@ You can connect up to 250 GitHub repositories to an Azure Boards project.
 	> [!div class="mx-imgBorder"]  
 	> ![GitHub two-factor authentication dialog](media/github/github-dialog-two-factor.png)  
 
-	Otherwise, the system will automatically recognize your GitHub organization as your GitHub account has previously been associated with your Azure DevOps Services account. 
+	Otherwise, the system automatically recognizes your GitHub organization as your GitHub account has previously been associated with your Azure DevOps Services account. 
 
 <a id="choose-repositories" /> 
 
@@ -108,13 +108,13 @@ Once you've been authenticated, you can select the repositories you want to conn
 	> ![Choose your GitHub repositories.](media/github/add-github-repos.png)  
 
 	> [!TIP]   
-	> We recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. Connecting the same GitHub repo to projects defined in two or more Azure DevOps organizations can lead to unexpected **AB#** mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md#integrate-repo-to-several-organizations). 
+	> We recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. Connecting the same GitHub repo to projects defined in two or more Azure DevOps organizations can lead to unexpected **AB#** mention linking. For more information, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md#integrate-repo-to-several-organizations). 
 
 	If all repositories have been connected already to the current or other organization, then the following message displays. 
 
 	:::image type="content" source="media/connect-cloud/message-all-repositories-already-connected.png" alt-text="Screenshot of message where no more repositories exist to connect."::: 
 
-1. When done, choose **Save**.
+1. When you're done, choose **Save**.
 
 
 <a id="confirm-connection" /> 
@@ -130,7 +130,7 @@ In this step, you install the Azure Boards app for GitHub on the GitHub account 
 
 1. Provide your GitHub password to confirm.
 
-1.	When done, you should see the new connection with the selected repositories listed.
+1.	When you're done, you should see the new connection with the selected repositories listed.
 
 	> [!div class="mx-imgBorder"]  
 	> ![GitHub repositories connected](media/github/repos-list-s154.png)  
@@ -173,7 +173,7 @@ We recommend that you use your GitHub account credentials to connect to your Git
 
 ## Register Azure DevOps in GitHub as an OAuth App
 
-If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server with your GitHub Enterprise Server, you first need to register the application as an OAuth App. For details, see [Creating an OAuth App](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/).
+If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server with your GitHub Enterprise Server, you first need to register the application as an OAuth App. For more information, see [Creating an OAuth App](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/).
 
 
 <a id="register-services-oauth" />
@@ -191,7 +191,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 	> [!div class="mx-imgBorder"]  
 	> ![Open Settings>Developer settings>Oauth Apps and choose New OAuth App.](media/github-ent/ghe-settings-dev-oauth.png)  
 
-2. Fill out the form to register your Azure DevOps Server application.  
+2. Complete the form to register your Azure DevOps Server application.  
 
 	For the <strong>Homepage URL</strong>, specify the <strong>Organization URL</strong> of your organization.  
 	For the <strong>Authorization callback URL</strong>, use the following pattern to construct the URL.  
@@ -284,7 +284,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 	**Choose the repositories to connect to**  
 
-2. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between **Mine** and  **All** to determine if others appear, and then check the ones that you want to add. Choose **Save** when done.
+2. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between **Mine** and  **All** to determine if others appear, and then check the ones that you want to add. Choose **Save** when you're done.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose repositories to add.](media/github-ent/ads-add-ghe-repositories.png)  
@@ -300,7 +300,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.md).
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Link GitHub commits and pull requests to work items](link-to-from-github.md) 
