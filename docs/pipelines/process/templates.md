@@ -470,6 +470,9 @@ stages:
     steps: 
     - bash: $(RELEASE_COMMAND) #output release command
 ```
+
+::: moniker-end
+
 :::zone-end
 
 ## Reference template paths
@@ -636,7 +639,6 @@ jobs:
   steps: []
 ```
 
-::: moniker-end
 
 ## FAQ
 
