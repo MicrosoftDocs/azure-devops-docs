@@ -6,6 +6,7 @@ ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
 ms.date: 05/12/2023
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
+zone_pivot_groups: template-type
 ---
 
 # Template usage reference
@@ -33,6 +34,8 @@ To take full advantage of templates, you should also use [template expressions](
 Use templates to define your logic once and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline. You can pass parameters into a template from your parent pipeline. 
 
 ::: moniker-end
+
+::: zone pivot="templates-extends"  
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -120,6 +123,10 @@ steps:
 
 ::: moniker range=">=azure-devops-2020"
 
+:::zone-end
+
+::: zone pivot="templates-includes"  
+
 ## Insert a template
 
 You can copy content from one YAML and reuse it in a different YAML. Copying content from one YAML to another saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
@@ -154,9 +161,6 @@ jobs:
   - template: templates/include-npm-steps.yml  # Template reference
 ```
 
-## Template scenarios 
-
-You can use templates to reuse 
 
 #### Step reuse
 
@@ -195,7 +199,7 @@ jobs:
   - script: echo This step runs after the template's steps.
 ```
 
-### Job reuse
+#### Job reuse
 
 Much like steps, jobs can be reused with templates.
 
@@ -249,7 +253,7 @@ jobs:
 - template: templates/jobs.yml  # Template reference
 ```
 
-### Stage reuse
+#### Stage reuse
 
 Stages can also be reused with templates.
 
@@ -294,7 +298,7 @@ stages:
 ```
 
 
-### Job, stage, and step templates with parameters
+#### Job, stage, and step templates with parameters
 
 ```yaml
 # File: templates/npm-with-params.yml
@@ -464,6 +468,7 @@ stages:
     steps: 
     - bash: $(RELEASE_COMMAND) #output release command
 ```
+:::zone-end
 
 ## Reference template paths
 
