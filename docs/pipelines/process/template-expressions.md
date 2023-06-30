@@ -7,7 +7,7 @@ ms.date: 06/30/2023
 monikerRange: '>=azure-devops-2020'
 ---
 
-## Template expressions
+# Template expressions
 
 Use template [expressions](expressions.md) to specify how values are dynamically resolved during pipeline initialization.
 Wrap your template expression inside this syntax: `${{ }}`.

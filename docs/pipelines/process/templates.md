@@ -375,7 +375,7 @@ steps:
 > That [expression](expressions.md) could be rewritten to explicitly compare strings: `eq(parameters['myparam'], 'true')`.
 
 Parameters aren't limited to scalar strings.
-See the list of [data types](#parameter-data-types).
+See the list of [data types](template-parameters.md#parameter-data-types).
 For example, using the `object` type:
 
 ```yaml
@@ -402,7 +402,7 @@ jobs:
 ## Variable reuse
 
 Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. If you are using a template to include variables in a pipeline, the included template can only be used to define variables. You can use steps and more complex logic when you're [extending from a template](#extend-from-a-template). 
-Use [parameters](#passing-parameters) instead of variables when you want to restrict type. 
+Use [parameters](template-parameters.md#passing-parameters) instead of variables when you want to restrict type. 
 
 In this example, the variable `favoriteVeggie` is included in `azure-pipelines.yml`.
 
