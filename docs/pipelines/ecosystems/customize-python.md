@@ -15,13 +15,13 @@ To create your first pipeline with Python, see the [Python quickstart](python.md
 
 ### Use a specific Python version
 
-To use a specific version of Python in your pipeline, add the [Use Python Version task](/azure/devops/pipelines/tasks/reference/use-python-version-v0) to *azure-pipelines.yml*. This snippet sets the pipeline to use Python 3.6:
+To use a specific version of Python in your pipeline, add the [Use Python Version task](/azure/devops/pipelines/tasks/reference/use-python-version-v0) to *azure-pipelines.yml*. This snippet sets the pipeline to use Python 3.11:
 
 ```yaml
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '3.6'
+    versionSpec: '3.11'
 ```
 
 ### Use multiple Python versions
