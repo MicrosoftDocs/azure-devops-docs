@@ -120,15 +120,16 @@ resources:
 steps:
 - script: echo "Testing resource template"
 ```
+
 ::: moniker-end
 
 :::zone-end
 
 ::: zone pivot="templates-includes"  
 
-::: moniker range=">=azure-devops-2020"
-
 ## Insert a template
+
+::: moniker range=">=azure-devops-2020"
 
 You can copy content from one YAML and reuse it in a different YAML. Copying content from one YAML to another saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
@@ -635,6 +636,8 @@ jobs:
   steps: []
 ```
 
+::: moniker-end
+
 ## FAQ
 
 ### How can I use variables inside of templates?
@@ -665,5 +668,5 @@ steps:
 - script: echo I run after the conditions
 ```
 
-::: moniker-end
+
 
