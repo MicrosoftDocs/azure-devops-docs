@@ -122,11 +122,11 @@ steps:
 ```
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
-
 :::zone-end
 
 ::: zone pivot="templates-includes"  
+
+::: moniker range=">=azure-devops-2020"
 
 ## Insert a template
 
