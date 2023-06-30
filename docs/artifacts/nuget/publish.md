@@ -4,7 +4,7 @@ description: How to connect to your feed and publish NuGet packages using the co
 ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 06/23/2022
+ms.date: 06/30/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,7 @@ With Azure Artifacts, you can publish your NuGet packages to public or private f
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
 - An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
 
@@ -49,7 +49,7 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
 
 1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scope.
 
-1. Add your package source to your nuget.config file. This will add your PAT to your nuget.config file. Make sure to store this file in a safe place, and do not check this file into source control. See [nuget sources](/en-us/nuget/reference/cli-reference/cli-ref-sources) for more details.
+1. Add your package source to your nuget.config file. This will add your PAT to your nuget.config file. Store this file in a safe location, and make sure that your don't check it into source control. See [nuget sources](/en-us/nuget/reference/cli-reference/cli-ref-sources) for more details.
 
     ```Command
     nuget sources Add -Name <SOURCE_NAME> -Source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -UserName <USER_NAME> -Password <PERSONAL_ACCESS_TOKEN> -config <PATH_TO_NUGET_CONFIG_FILE>
@@ -70,7 +70,7 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
 
 ## Restore packages
 
-To restore your packages, run the following command in an elevated command prompt:
+Run the following command in a command prompt window to restore your packages:
 
 ```Command
 nuget.exe restore
