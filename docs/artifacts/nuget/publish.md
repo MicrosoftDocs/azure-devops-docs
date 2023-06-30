@@ -49,13 +49,13 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
 
 1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scope.
 
-1. Add your package source to your nuget.config file. This will add your PAT to your nuget.config file. Store this file in a safe location, and make sure that your don't check it into source control. See [nuget sources](/nuget/reference/cli-reference/cli-ref-sources) for more details.
+1. Add your package source to your nuget.config file. This will add your PAT to your nuget.config file. Store this file in a safe location, and make sure that you don't check it into source control. See [NuGet sources](/nuget/reference/cli-reference/cli-ref-sources) for more details.
 
     ```Command
     nuget sources Add -Name <SOURCE_NAME> -Source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -UserName <USER_NAME> -Password <PERSONAL_ACCESS_TOKEN> -config <PATH_TO_NUGET_CONFIG_FILE>
     ```
 
-1. Publish your package. See [nuget push](/nuget/reference/cli-reference/cli-ref-push) for more details.
+1. Publish your package. See [NuGet push](/nuget/reference/cli-reference/cli-ref-push) for more details.
 
     ```Command
     nuget push <PACKAGE_PATH> -src <SOURCE_NAME> -ApiKey <ANY_STRING>
