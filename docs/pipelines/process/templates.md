@@ -36,7 +36,7 @@ Use templates to define your logic once and then reuse it several times. Templat
 
 ::: moniker-end
 
-::: zone pivot="templates-extends"  
+::: zone pivot="templates-extends"
 
 ::: moniker range=">=azure-devops-2020"
 

@@ -9,7 +9,7 @@ groups:
   - id: pipelines-classic
     title: Classic
 - id: template-type
-  title: Template type
+  title: Template types
   prompt: Choose a template type
   pivots:
   - id: templates-includes
