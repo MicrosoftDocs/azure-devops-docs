@@ -7,6 +7,8 @@ ms.topic: conceptual
 ms.date: 06/30/2023
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 zone_pivot_groups: template-type
+zone_pivot_group_filename: zone-pivot-groups.json
+
 ---
 
 # Template usage reference
