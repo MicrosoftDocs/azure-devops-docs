@@ -19,11 +19,12 @@ Templates let you define reusable content, logic, and parameters in YAML pipelin
 
 Templates can help you speed up development. For example, you can have a series of the same tasks in a template and then include the template multiple times in different stages of your YAML pipeline. 
 
-Templates also can help you secure your pipeline. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow. For example, if you have a template that sets which tasks are allowed in your pipeline, then you can prevent someone from adding and successfully running a task to a pipeline that violates your organization's security rules.
+Templates can also help you secure your pipeline. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow. For example, you may want to restrict what tasks are allowed to run. For that scenario, you can use template to prevent someone from successfully running a task that violates your organization's security policies.
  
-Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. The second approach is useful for [building secure pipelines with templates](../security/templates.md).
+There are two types of templates: includes and extends. 
 
-If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow. 
+- **Includes templates** let you insert reusable content with a template. If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file.
+- **Extends template** control what is allowed in a pipeline. When an extends template controls what is allowed in a pipeline, the template defines logic that another file must follow. 
 
 To take full advantage of templates, you should also use [template expressions](template-expressions.md) and [template parameters](template-parameters.md). 
 
@@ -405,7 +406,7 @@ jobs:
 
 ## Variable reuse
 
-Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. If you are using a template to include variables in a pipeline, the included template can only be used to define variables. You can use steps and more complex logic when you're [extending from a template](#extend-from-a-template). 
+Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. If you're using a template to include variables in a pipeline, the included template can only be used to define variables. You can use steps and more complex logic when you're [extending from a template](#extend-from-a-template). 
 Use [parameters](template-parameters.md#passing-parameters) instead of variables when you want to restrict type. 
 
 In this example, the variable `favoriteVeggie` is included in `azure-pipelines.yml`.
@@ -638,7 +639,7 @@ jobs:
 
 ### How can I use variables inside of templates?
 
-There are times when it may be useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables will be available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
+There are times when it may be useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables are available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
 
 In this example, the predefined variables `Build.SourceBranch` and `Build.Reason` are used in conditions in template.yml.
 
