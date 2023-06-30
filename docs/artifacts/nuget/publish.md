@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, you can publish your NuGet packages to public or private feeds and share them with others based on your feed's visibility settings. This article will guide you through connecting to Azure Artifacts and publishing your NuGet packages.
+With Azure Artifacts, you can publish your NuGet packages to public or private feeds and share them with others based on your feed's visibility settings. This article will guide you through connecting to Azure Artifacts and publishing and restoring your NuGet packages.
 
 ## Prerequisites
 
@@ -30,14 +30,14 @@ With Azure Artifacts, you can publish your NuGet packages to public or private f
 
 ## Publish packages
 
-To publish a NuGet package to your feed, run the following command in an elevated command prompt. Replace the placeholders with the appropriate information:
+Run the following command to publish your packages to your feed. Replace the placeholders with the appropriate information:
 
 ```Command
 nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
 ```
 
 > [!NOTE]
-> The `ApiKey` is only used as a placeholder.
+> The `ApiKey` is required, but you can use any arbitrary value when pushing to Azure Artifacts feeds.
 
 - **Example**:
 
@@ -70,7 +70,7 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
 
 ## Restore packages
 
-Run the following command in a command prompt window to restore your packages:
+Run the following command to restore your packages:
 
 ```Command
 nuget.exe restore
