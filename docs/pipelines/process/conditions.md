@@ -320,7 +320,7 @@ jobs:
   - job: B
     steps:
     - script: echo I did a thing
-    condition: ${{ if eq(parameters.doThing, true) }}
+    condition: ${{ eq(parameters.doThing, true) }}
 ```
 
 ```yaml
