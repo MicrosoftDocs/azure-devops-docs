@@ -23,7 +23,8 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 ## Prerequisites
 
 - You must be a Project Collection Administrator group for the organization.
-- You must be a member or a guest in the source Azure AD and a member in the destination Azure AD. For more information, see how to [convert an Azure AD guest into a member](faq-azure-access.yml).
+- You must be a Member in the destination Azure AD. For more information, see how to [convert an Azure AD guest into a member](faq-azure-access.yml).
+- You must be a member or a guest in the source Azure AD.
 - Confirm there are 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users. You can map them to their Azure AD identities in the new tenant.
 - Request that SSH keys get manually cleared by [Support](https://azure.microsoft.com/support/devops/) before you switch directories. You can find the steps for how to recreate SSH keys [further in this article](#inform-users-of-the-completed-change). For more information, see the [FAQ](faq-azure-access.yml).
 - Don't add the users from the destination Azure AD into the Azure DevOps organization.
