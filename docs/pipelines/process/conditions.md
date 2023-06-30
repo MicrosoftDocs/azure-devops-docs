@@ -307,7 +307,7 @@ steps:
 ```
 
 
-When you pass a parameter to a template, you need to set the parameter's value in your template or use [templateContext to pass properties to templates](templates.md#use-templatecontext-to-pass-properties-to-templates). 
+When you pass a parameter to a template, you need to set the parameter's value in your template or [use templateContext to pass properties to templates](template-parameters.md#use-templatecontext-to-pass-properties-to-templates). 
 
 ```yaml
 # parameters.yml

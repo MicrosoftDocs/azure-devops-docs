@@ -7,7 +7,7 @@ ms.date: 06/30/2023
 monikerRange: '>=azure-devops-2019'
 ---
 
-## Template parameters
+# Template parameters
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -204,11 +204,10 @@ steps:
 - template: steps/msbuild.yml
 
 ```
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-
-## Template parameters
 
 You can pass parameters to templates.
 The `parameters` section defines what parameters are available in the template and their default values. 
@@ -315,4 +314,4 @@ jobs:
   pool: ${{ parameters.pool }}
 ```
 
-:: moniker-end
+::: moniker-end
