@@ -39,7 +39,7 @@ Let's break down each action one by one.
 ![Expand YAML templates](media/run-expansion.svg)
 
 To turn a pipeline into a run, Azure Pipelines goes through several steps in this order:
-1. First, expand [templates](templates.md) and evaluate [template expressions](templates.md).
+1. First, expand [templates](templates.md) and evaluate [template expressions](template-expressions.md).
 2. Next, evaluate dependencies at the [stage](stages.md) level to pick the first stage(s) to run.
 3. For each stage selected to run, two things happen:
     * All resources used in all jobs are gathered up and validated for [authorization](approvals.md) to run.
@@ -52,7 +52,7 @@ As runtime jobs complete, Azure Pipelines will see if there are new jobs eligibl
 If so, steps 4 - 6 repeat with the new jobs.
 Similarly, as stages complete, steps 2 - 6 will be repeated for any new stages.
 
-This ordering helps answer a common question: why can't I use certain variables in my template parameters?
+This ordering helps answer a common question: why can't I use certain variables in my [template parameters](template-parameters.md)?
 Step 1, template expansion, operates solely on the text of the YAML document.
 Runtime variables don't exist during that step.
 After step 1, template parameters have been resolved and no longer exist.
