@@ -181,7 +181,7 @@ A: These are some of the possible reasons of the failure:
 
   * In the following flows, Azure Pipelines doesn't have information about the user creating the environment: you update the YAML file using another external code editor, add a reference to an environment  that doesn't exist, and then cause a manual or continuous integration pipeline to be triggered. In this case, Azure Pipelines doesn't know about the user. Previously, we handled this case by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment. 
 
-  * You can use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create the environment or use the [templateContext property](templates.md#use-templatecontext-to-pass-properties-to-templates) to pass values to stages, steps, and jobs that are used as parameters in a template. [Runtime parameters](runtime-parameters.md) won't work when creating the environment because they are expanded at run time. 
+  * You can use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create the environment or use [templateContext to pass properties to templates](template-parameters.md#use-templatecontext-to-pass-properties-to-templates). [Runtime parameters](runtime-parameters.md) won't work when creating the environment because they are expanded at run time. 
 
   * A user with stakeholder access level can't create the environment as stakeholders don't have access to the repository.
   

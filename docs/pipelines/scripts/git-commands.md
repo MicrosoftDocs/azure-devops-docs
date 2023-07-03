@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can run a Git command in a build script for your workflow with Azure Pipelines
 ms.topic: conceptual
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
-ms.date: 02/28/2022
+ms.date: 07/03/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -53,7 +53,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
     :::image type="content" source="media/modify-repo-security.png" alt-text="Choose Security to edit your repository security. ":::
 
-1. Search for **Project Collection Build Service**. Choose the identity **Project Collection Build Service ({your organization})** (not the group **Project Collection Build Service Accounts ({your organization})**). By default, this identity can read from the repo but can’t push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
+1. Search for **Project Collection Build Service**. Choose the identity **{{your project name}} Build Service ({your organization})** (not the group **Project Collection Build Service Accounts ({your organization})**). By default, this identity can read from the repo but can’t push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
       * **Create branch:**  Allow
       * **Contribute:**  Allow
@@ -181,7 +181,7 @@ steps:
 
 ### List the files in your repo
 
-On the [build tab](../tasks/index.md) add this task:
+On the [build tab](../tasks/index.md), add this task:
 
 | Task | Arguments |
 | ---- | --------- |
@@ -258,7 +258,7 @@ Add `[skip ci]` to your commit message or description. Here are examples:
 * ```git commit -m "This is a commit message [skip ci]"```
 * ```git merge origin/features/hello-world -m "Merge to main [skip ci]"```
 
-You can also use any of the variations below. This is supported for commits to Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.
+You can also use any of these variations for commits to Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.
 
 - `[skip ci]` or `[ci skip]`
 - `skip-checks: true` or `skip-checks:true`
