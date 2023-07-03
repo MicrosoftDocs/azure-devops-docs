@@ -237,7 +237,7 @@ If you plan to use OAuth to connect Azure DevOps with your GitHub Enterprise Ser
 
 	Enter the URL for your GitHub Enterprise server and the administrator account credentials recognized by that server, and then select **Connect**.
 
-	:::image type="content" source="media/connect-cloud/new-github-enterprise-server-dialog-user-name.png" alt-text="New GitHub Enterprise connection screen, User Name connection dialog.":::
+	:::image type="content" source="media/connect-cloud/new-github-enterprise-server-dialog-user-name.png" alt-text="Screenshot of New GitHub Enterprise connection screen, User Name connection dialog.":::
 
 3. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between **Mine** and  **All** to determine if others appear, and then check the ones that you want to add. Select **Save** when you're done.
 
