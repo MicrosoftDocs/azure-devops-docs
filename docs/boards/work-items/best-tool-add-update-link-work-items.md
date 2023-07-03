@@ -16,7 +16,7 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Azure Boards provides you several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that help you work most efficiently. 
+Azure Boards provides you with several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that help you work most efficiently. 
 
 
 ## Work item form 
@@ -73,7 +73,6 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 [Product backlog board](../boards/kanban-quickstart.md) | [Features or Epics board](../boards/kanban-epics-features-stories.md) | [Customize cards](../boards/customize-cards.md)
 
 **Best tool for**: 
-- [Implementing Kanban methods](../boards/best-practices-kanban.md)  
 - Viewing the flow of work from start to completion  
 - Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items 
 - Updating the status of backlog items  
