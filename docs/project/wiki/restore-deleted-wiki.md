@@ -9,7 +9,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/22/2023
+ms.date: 07/03/2023
 ---
 
 # Restore a deleted wiki

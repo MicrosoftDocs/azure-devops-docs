@@ -30,7 +30,7 @@
     href: manage-wikis.md
   - name: Migrate wiki extension pages
     href: migrate-extension-wiki-pages.md
-  - name: Restore a wiki
+  - name: Restore a deleted wiki
     href: restore-deleted-wiki.md
   - name: Version, select, or un-publish a wiki
     href: wiki-select-unpublish-versions.md
