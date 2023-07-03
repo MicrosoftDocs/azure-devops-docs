@@ -314,6 +314,11 @@
       "source_path": "docs/boards/github/troubleshoot-github-connection.md",
       "redirect_url": "/azure/devops/boards/github/connect-to-github#resolve-connection-issues",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/definition-of-done.md",
+      "redirect_url": "/azure/devops/boards/boards/add-columns",
+      "redirect_document_id": false
     }
   ]
 }
