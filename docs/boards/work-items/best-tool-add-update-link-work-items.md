@@ -16,7 +16,7 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Azure Boards provides you several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that help you work most efficiently. 
+Azure Boards provides you with several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that help you work most efficiently. 
 
 
 ## Work item form 
