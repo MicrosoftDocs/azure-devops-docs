@@ -184,7 +184,7 @@ For detailed information on each configuration option, you can explore the follo
       - [Add columns](../../boards/boards/add-columns.md)  
       - [Split columns](../../boards/boards/split-columns.md)    
       - [WIP limits](../../boards/boards/wip-limits.md)    
-      - [Definition of Done](../../boards/boards/definition-of-done.md)   
+      - [Definition of Done](../../boards/boards/add-columns.md#definition-of-done)   
       - [Add swimlanes](../../boards/boards/expedite-work.md)
       - [Card reordering](../../boards/boards/customize-cards.md#reorder-cards)
       - [Configure status badges](../../boards/github/configure-status-badges.md)
@@ -193,7 +193,7 @@ For detailed information on each configuration option, you can explore the follo
       - [Add columns](../../boards/boards/add-columns.md)
       - [Split columns](../../boards/boards/split-columns.md)    
       - [WIP limits](../../boards/boards/wip-limits.md)    
-      - [Definition of Done](../../boards/boards/definition-of-done.md)  
+      - [Definition of Done](../../boards/boards/add-columns.md#definition-of-done)  
       - [Add swimlanes](../../boards/boards/expedite-work.md)
       - [Reorder cards](../../boards/boards/customize-cards.md#reorder-cards)
       ::: moniker-end
