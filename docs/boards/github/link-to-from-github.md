@@ -29,7 +29,8 @@ Once you connect your Azure Boards project with a GitHub repository, you can lin
 > Projects that use the Hosted XML process model require updates to the work item types to view the Development section and GitHub link types. For more information, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits). 
 ::: moniker-end
 
-## Use `AB#` to link from GitHub to Azure Boards work items 
+## Use `AB#` to link from GitHub to Azure Boards work items
+
 From a GitHub commit, pull request or issue, use the following syntax to create a link to your Azure Boards work item. Enter the `AB#ID` within the text of a commit message. Or, for a pull request or issue, enter the `AB#ID` within the title or description (not a comment).
 
 ::: moniker range="azure-devops-2019"

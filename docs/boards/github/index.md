@@ -53,7 +53,7 @@ You can start from either Azure Boards or GitHub to integrate and connect up to 
 
 You can do the following tasks with Azure Boards-GitHub integration:
 
-- [Transition work items to a "Done" or "Completed" state with `fix`, `fixes`, or `fixed` in GitHub](link-to-from-github.md#use-ab-mention-to-link-from-github-to-azure-boards-work-items). 
+- [Transition work items to a "Done" or "Completed" state with `fix`, `fixes`, or `fixed` in GitHub](link-to-from-github.md#use-ab-to-link-from-github-to-azure-boards-work-items). 
 - [Post a comment to a GitHub commit, pull request, or issue when linked to a work item.](https://docs.github.com/en/get-started/quickstart/communicating-on-github) 
 - [Link from a work item to a GitHub commit, pull request, or issue](link-to-from-github.md#add-link-from-a-work-item-to-a-github-commit-pull-request-or-issue).
 - [View GitHub objects on a Kanban board](link-to-from-github.md#view-github-objects-on-kanban-board). 
