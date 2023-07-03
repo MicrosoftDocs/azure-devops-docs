@@ -301,6 +301,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/boards/github/add-remove-repositories.md",
+      "redirect_url": "/azure/devops/boards/github/install-github-app#add-remove-repos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/github/change-azure-boards-app-github-repository-access.md",
+      "redirect_url": "/azure/devops/boards/github/install-github-app#change-repository-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/github/troubleshoot-github-connection.md",
+      "redirect_url": "/azure/devops/boards/github/connect-to-github#resolve-connection-issues",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/boards/boards/definition-of-done.md",
       "redirect_url": "/azure/devops/boards/boards/add-columns",
       "redirect_document_id": false
