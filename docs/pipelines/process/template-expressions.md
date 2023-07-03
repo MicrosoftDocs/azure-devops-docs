@@ -336,6 +336,3 @@ To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 100 separate YAML files may be included (directly or indirectly)
 - No more than 20 levels of template nesting (templates including other templates)
 - No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600 KB - 2 MB of on-disk YAML, depending on the specific features used)
-
-::: moniker-end
-

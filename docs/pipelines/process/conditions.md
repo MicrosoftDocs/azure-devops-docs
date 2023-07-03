@@ -290,7 +290,7 @@ When you declare a parameter in the same pipeline that you have a condition, par
 
 The `condition` in the pipeline combines two functions: `succeeded()` and `eq('${{ parameters.doThing }}', true)`. The `succeeded()` function checks if the previous step succeeded. The `succeeded()` function returns true because there was no previous step. 
 
-The `eq('${{ parameters.doThing }}', true)` function checks whether the doThing parameter is equal to `true`. Since the default value for doThing is true, the condition will return true by default unless a different values gets set in the pipeline. 
+The `eq('${{ parameters.doThing }}', true)` function checks whether the doThing parameter is equal to `true`. Since the default value for doThing is true, the condition will return true by default unless a different value gets set in the pipeline. 
 
 For more template parameter examples, see [Template types & usage](templates.md). 
 
