@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/30/2023
+ms.date: 07/03/2023
 ---
 
 # Connect Azure Boards to GitHub (cloud) 
@@ -351,13 +351,7 @@ When the Azure Boards connection to GitHub no longer has access, it shows an ale
 
 :::image type="content" source="media/troubleshoot/failed-connection.png" alt-text="Screenshot of failed connection.":::
 
-::: moniker-end
- 
-::: moniker range="azure-devops-2019"
-When the Azure Boards connection to GitHub no longer has access, it shows an alert status in the user interface with a red-X that has a tooltip such as, *Unable to connect to GitHub*.
-::: moniker-end
-
-To resolve the problem, consider the following items:  
+To resolve this issue, consider the following items:  
 
 - **If the connection is using OAuth**:
   - The Azure Boards application had its access denied for one of the repositories.
