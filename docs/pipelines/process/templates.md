@@ -321,7 +321,7 @@ jobs:
 ```
 
 When you consume the template in your pipeline, specify values for
-the template parameters.
+the [template parameters](template-parameters.md).
 
 ```yaml
 # File: azure-pipelines.yml
