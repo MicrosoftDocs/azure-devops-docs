@@ -143,13 +143,15 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This l
 
 1. Open the web portal for your Azure DevOps Server.   
 
-1. Select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open  **Projects**, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
+2. Select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open  **Projects**, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
+
 ::: moniker range="azure-devops-2020"
-1. Select **Project settings** > **GitHub connections**.   
+
+3. Select **Project settings** > **GitHub connections**.   
 
    :::image type="content" source="media/github-ent/open-project-settings-github-connections-2020-1.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::  
 
-1.	If it's the first time making a connection from the project, choose the authentication method you want to use to make the connection: 
+4.	If it's the first time making a connection from the project, choose the authentication method you want to use to make the connection: 
 
 	- **Personal Access Token**, for details see [Connect using a Personal Access Token](#github-ent-pat). 
 	- **User Name and Password**, see [Connect using a Username and Password](#server-github-ent-username).
@@ -160,7 +162,7 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This l
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 
-1. Choose **Project settings** > **GitHub connections** > **Connect your GitHub Enterprise account**.   
+3. Select **Project settings** > **GitHub connections** > **Connect your GitHub Enterprise account**.   
 
    :::image type="content" source="media/github-ent/open-project-settings-github-connections.png" alt-text="Screenshot of Project settings, selected Integrations.":::   
 

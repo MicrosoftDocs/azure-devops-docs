@@ -41,10 +41,10 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 3. Select **Status badge** and then check or uncheck the **Allow anonymous users to access the status badge**. When it's unchecked, users who aren't signed in can still view the status badge.
 
    ::: moniker range=">= azure-devops-2020"
-   :::image type="content" source="media/badges/status-badge-s188.png" alt-text="Screenshot of Kanban Board Settings dialog,Status badge tab.":::
+   :::image type="content" source="media/badges/status-badge-s188.png" alt-text="Screenshot of Kanban Board Settings dialog, Status badge tab.":::
    ::: moniker-end
    ::: moniker range="azure-devops-2019"
-   :::image type="content" source="media/badges/status-badge.png" alt-text="Screenshot of Kanban Board Settings dialog,Status badge tab, Azure DevOps Server 2019.":::
+   :::image type="content" source="media/badges/status-badge.png" alt-text="Screenshot of Kanban Board Settings dialog, Status badge tab, Azure DevOps Server 2019.":::
    ::: moniker-end
 
 4. Choose the badge type you want and choose the :::image type="icon" source="../../media/icons/copy.png" border="false"::: copy icon to copy the Markdown syntax for the badge. 

@@ -10,7 +10,5 @@
   href: link-to-from-github.md
 - name: Configure status badges
   href: configure-status-badges.md
-- name: Troubleshoot GitHub connection
-  href: troubleshoot-github-connection.md
 - name: Enable DevSecOps with Azure and GitHub
   href: /devops/devsecops/enable-devsecops-azure-github
