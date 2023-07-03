@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019 < azure-devops'
-ms.date: 06/30/2023
+ms.date: 07/03/2023
 ---
 
-# Connect an on-premises Azure DevOps Server to a GitHub repo 
+# Connect Azure DevOps Server to GitHub (on-premises)
 
 [!INCLUDE [version-gt-eq-2019-lt-azure-devops](../../includes/version-gt-eq-2019-lt-azure-devops.md)]
 
@@ -38,20 +38,18 @@ When you connect your Azure DevOps Server project with your GitHub Enterprise Se
 * [Install the Azure Boards app for GitHub](install-github-app.md) on the GitHub organizations or account. 
 * Connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 * You must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
-* You must be an administrator of the GitHub Enterprise Server you connect to. 
+* You must be an administrator of the GitHub Enterprise Server that you connect to. 
 
 ## Authentication options
 
 The following authentication options are supported. 
 
 ::: moniker range="azure-devops-2020"
-
 - [PAT](#server-github-ent-pat)
 - [Username plus password](#server-github-ent-username)
 
 > [!NOTE] 
 > OAuth isn't supported for Azure DevOps Server 2020.  
- 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -68,7 +66,7 @@ The following authentication options are supported.
 
 ## Register Azure DevOps in GitHub as an OAuth App
 
-If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterprise Server, you first need to register the application as an OAuth App. For more information, see [Creating an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
+If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterprise Server, you first need to register the application as an OAuth App. For more information, see [Create an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
 
 <a id="register-services-oauth" />
 <a id="register-server-oauth" />
@@ -98,8 +96,6 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 	For example: 
 
 	`http://contoso/DefaultCollection/_admin/oauth2/callback`
-
-	Or, 
 
 	`https://tfs.contoso.com/MyCollection/_admin/oauth2/callback`
 
@@ -306,7 +302,7 @@ Consider the following resolutions:
 
 #### Update XML definitions for select work item types 
 
-If your organization uses the Hosted XML or On-premises XML process model to customize the work tracking experience and you want to link to and view the GitHub link types from the Development section in the work item forms, you must update the XML definitions for the work item types. 
+If your organization uses the Hosted XML or on-premises XML process model to customize the work tracking experience and you want to link to and view the GitHub link types from the Development section in the work item forms, you must update the XML definitions for the work item types. 
 
 For example, if you want to link user stories and bugs to GitHub commits and pull requests from the **Development** section, you need to update the XML definitions for user stories and bugs. 
 
@@ -318,7 +314,7 @@ Follow the sequence of tasks provided in [Hosted XML process model](../../organi
 >              <ExternalLinkFilter Type="GitHub Commit" />  
 > ```
 
-When it updates, the section should appear as shown. 
+When it updates, the section should appear as follows. 
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
