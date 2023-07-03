@@ -14,13 +14,10 @@ ms.date: 07/03/2023
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
  
-To support linking of GitHub commits and pull requests to Azure Boards work items, you connect your Azure Boards project to GitHub.com repositories. Then, use GitHub for software development while using Azure Boards to plan and track your work. For an overview of the Azure Boards app for GitHub, see [Azure Boards-GitHub integration](index.md).  
-
-When you make the connection from Azure Boards, the list of GitHub repositories corresponds to ones that you allow Azure Boards to access. You can limit which repositories Azure Boards accesses overall, and limit project access or split the management of work across different projects.
+Use GitHub.com repositories for your software development and your Azure Boards project to plan and track your work. Connect your project and repo so your GitHub commits and pull requests get linked to your work items in Azure Boards. 
 
 > [!NOTE]   
 > Azure Boards and Azure DevOps Services support integration with GitHub.com and GitHub Enterprise Server repositories. If you want to connect from an on-premises Azure DevOps Server, see [Connect Azure DevOps Server to GitHub Enterprise Server](connect-on-premises-to-github.md).
-
 
 ## Prerequisites 
 
@@ -59,11 +56,11 @@ The following authentication options are supported based on the GitHub platform 
 
 1. Sign into your Azure DevOps project.  
 
-1. Select (1) **Project settings** > (2) **GitHub connections**.   
+2. Select **Project settings** > **GitHub connections**.   
 
 	:::image type="content" source="media/connect-cloud/open-project-settings-github-connections.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::
 
-1.	If it's the first time making a connection from the project, choose **Connect your GitHub account** to use your GitHub account credentials. 
+1.	If it's the first time you make a connection from the project, choose **Connect your GitHub account** to use your GitHub account credentials. 
 
 	:::image type="content" source="media/connect-cloud/connect-github-account-first-time.png" alt-text="Screenshot of first time connecting with GitHub credentials.":::
 
@@ -79,21 +76,11 @@ You can connect up to 250 GitHub repositories to an Azure Boards project.
 
 2. Choose the GitHub account or organization that you want to connect. Only those organizations that you own or are an administrator for are listed.  
 
-	:::image type="content" source="media/connect-cloud/multiple-github-orgs.png" alt-text="Screenshot of choosing from multiple GitHub organizations to connect to."::: 
-
 	If all repositories for an organization have already been connected to Azure Boards, you see the following message. 
 
 	:::image type="content" source="media/connect-cloud/message-all-repositories-already-connected.png" alt-text="Screenshot of message where no more repositories exist to connect."::: 
 
-3. 	Enter your GitHub credentials.
-
-   :::image type="content" source="media/github/github-dialog-two-factor.png" alt-text="Screenshot of GitHub sign in dialog.":::
-
-   If you have two-factor authentication enabled, enter the authentication code that GitHub sent you and choose **Verify**. 
-
-   :::image type="content" source="media/github/github-dialog-two-factor.png" alt-text="Screenshot of the GitHub two-factor authentication dialog.":::
-
-   Otherwise, the system automatically recognizes your GitHub organization as your GitHub account has previously been associated with your Azure DevOps Services account. 
+3. Enter your GitHub credentials. If you have two-factor authentication enabled, enter the authentication code that GitHub sent you and choose **Verify**. Otherwise, the system automatically recognizes your GitHub organization as your GitHub account has previously been associated with your Azure DevOps Services account. 
 
 <a id="choose-repositories" /> 
 
@@ -112,13 +99,11 @@ Once you're authenticated, you can select the repositories you want to connect.
 
 	:::image type="content" source="media/connect-cloud/message-all-repositories-already-connected.png" alt-text="Screenshot of message where no more repositories exist to connect."::: 
 
-2. When you're done, choose **Save**.
+2. When you're done, select **Save**.
 
 <a id="confirm-connection" /> 
 
 ### Confirm the connection 
-
-In this step, you install the Azure Boards app for GitHub on the GitHub account or organization associated with the repositories you chose to connect to. 
 
 1. Review the GitHub page that displays and then choose **Approve, Install, & Authorize**.
 
@@ -142,15 +127,11 @@ We recommend that you use your GitHub account credentials to connect to your Git
 > [!TIP]  
 > When you create your GitHub PAT, make sure that you include these scopes: `repo, read:user, user:email, admin:repo_hook`. 
 
-1. To choose a PAT when you connect a GitHub repository, choose **Personal Access Token** when you make the first-time connection. 
+1. Choose **Personal Access Token**. 
 
-	:::image type="content" source="media/connect-cloud/first-connection-pat.png" alt-text="Screenshot of First connection, choosing Personal Access Token.":::
+   :::image type="content" source="media/connect-cloud/connect-with-pat.png" alt-text="Screenshot of New GitHub connection dialog, choosing Personal Access Token.":::
 
-	Or, from the New GitHub connection dialog. 
-
-	:::image type="content" source="media/connect-cloud/connect-with-pat.png" alt-text="Screenshot of New GitHub connection dialog, choosing Personal Access Token.":::
-
-	To create a GitHub PAT, go to [GitHub Developer Settings>Personal access tokens](https://github.com/settings/tokens). 
+	To create a GitHub PAT, go to [GitHub Developer Settings > Personal access tokens](https://github.com/settings/tokens). 
 
 2. Enter the PAT and choose **Connect**. 
 
@@ -164,7 +145,7 @@ We recommend that you use your GitHub account credentials to connect to your Git
 
 ## Register Azure DevOps in GitHub as an OAuth App
 
-If you plan to use OAuth to connect Azure DevOps with your GitHub Enterprise Server, you first need to register the application as an OAuth App. For more information, see [Creating an OAuth App](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/).
+If you plan to use OAuth to connect Azure DevOps with your GitHub Enterprise Server, you first need to register the application as an OAuth App. For more information, see [Create an OAuth App](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/).
 
 <a id="register-services-oauth" />
 
@@ -189,7 +170,7 @@ If you plan to use OAuth to connect Azure DevOps with your GitHub Enterprise Ser
 
 	`https://dev.azure.com/fabrikam/_admin/oauth2/callback`
 
-  :::image type="content" source="media/github-ent/ghe-register-app-services.png" alt-text="Screenshot showing app to register.":::
+   :::image type="content" source="media/github-ent/ghe-register-app-services.png" alt-text="Screenshot showing app to register.":::
 
 4. Select **Register application**.
 
@@ -205,7 +186,7 @@ If you plan to use OAuth to connect Azure DevOps with your GitHub Enterprise Ser
 
 2. Add the GitHub Enterprise Oauth configuration to your organization. 
 
-3. Select **Organization settings** > **Oauth configurations** > **Add Oauth configuration**.  
+3. In **Organization settings**, select **Oauth configurations** > **Add Oauth configuration**.  
 
    :::image type="content" source="media/connect-cloud/open-oauth-configuration.png" alt-text="Screenshot of Open Organization Settings, OAuth configurations.":::
 
@@ -257,8 +238,6 @@ If you plan to use OAuth to connect Azure DevOps with your GitHub Enterprise Ser
 	Enter the URL for your GitHub Enterprise server and the administrator account credentials recognized by that server, and then select **Connect**.
 
 	:::image type="content" source="media/connect-cloud/new-github-enterprise-server-dialog-user-name.png" alt-text="New GitHub Enterprise connection screen, User Name connection dialog.":::
-
-	**Choose repositories to connect to**  
 
 3. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between **Mine** and  **All** to determine if others appear, and then check the ones that you want to add. Select **Save** when you're done.
 
@@ -410,8 +389,7 @@ Follow the sequence of tasks provided in [Hosted XML process model](../../organi
 >              <ExternalLinkFilter Type="GitHub Commit" />  
 > ```
 
-When updated, the section should appear as shown. 
-
+When it's updated, the section should appear as follows. 
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -448,5 +426,5 @@ When updated, the section should appear as shown.
 - [Configure status badges to add to GitHub README files](configure-status-badges.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 - [Build GitHub repositories](../../pipelines/repos/github.md) 
-- [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)
+- [Change GitHub repository access](install-github-app.md#change-repository-access)
 - [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)
