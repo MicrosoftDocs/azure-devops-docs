@@ -319,6 +319,11 @@
       "source_path": "docs/boards/boards/definition-of-done.md",
       "redirect_url": "/azure/devops/boards/boards/add-columns",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/best-practices-kanban.md",
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview",
+      "redirect_document_id": false
     }
   ]
 }
