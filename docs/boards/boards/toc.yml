@@ -31,5 +31,5 @@
     displayname: nested, hierarchical
   - name: Manage Cumulative Flow Diagram
     href: ../../report/dashboards/cumulative-flow.md?toc=/azure/devops/boards/toc.json
-  - name: Configure Lead &Cycle time widget
+  - name: Configure Lead & Cycle Time widget
     href: ../../report/dashboards/cycle-time-and-lead-time.md?toc=/azure/devops/boards/toc.json
