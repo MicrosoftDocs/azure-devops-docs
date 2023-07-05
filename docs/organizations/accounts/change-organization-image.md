@@ -7,7 +7,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/23/2023
+ms.date: 07/05/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-When you [create an organization](create-organization.md) in Azure DevOps, the system automatically generates a profile image. You can replace the default image with one that better represents your organization.
+When you [create an organization](create-organization.md) in Azure DevOps, the system automatically generates a profile image. You can replace the default image with one that better represents your organization. The max image size allowed is 2560 x 1024 px, and then we resize to 200 x 200.
 
 [!INCLUDE [pca-prerequisite](includes/pca-prerequisite.md)]
 
