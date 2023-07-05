@@ -1,8 +1,8 @@
 ---
 ms.service: azure-devops-repos
 ms.manager: mijacobs
-ms.author: chcomley
-author: chcomley
+ms.author: vijayma
+author: vijayma
 ms.topic: include
 ms.date: 12/10/2021
 ms.subservice: azure-devops-repos-git
