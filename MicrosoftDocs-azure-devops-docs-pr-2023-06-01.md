@@ -108,15 +108,12 @@ Welcome to what's new in the Azure DevOps docs from June 1, 2023 through June 30
 ### Updated articles
 
 - [Get started - manage your organization or project collection](/azure/devops/user-guide/manage-organization-collection)
-- 
-- ## GitHub issue content updates
-
-Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-06-01..2023-06-30).
 
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
+- [AlexandraRamirezMS](https://github.com/AlexandraRamirezMS) (1)
 - [andrey-shuvalov](https://github.com/andrey-shuvalov) (1)
 - [bbrandt](https://github.com/bbrandt) - Ben Brandt (1)
 - [cpickard](https://github.com/cpickard) - Colin Pickard (1)
