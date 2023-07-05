@@ -9,8 +9,8 @@ metadata:
   description: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
   ms.service: azure-devops-repos
   ms.topic: landing-page 
-  author: chcomley 
-  ms.author: chcomley 
+  ms.author: vijayma
+  author: vijayma 
   ms.date: 03/18/2021
   ms.subservice: azure-devops-repos-git
 
