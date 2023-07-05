@@ -141,7 +141,7 @@ Choose the :::image type="icon" source="../media/icons/more-actions.png" border=
 
 **Import test suites**
 
-Reuse the suites you have created and import them into the current suite/plan. You can select the **Project**, **Test Plan**, and **Test Suite** from which you want to import the tests. Depending upon the suite you select, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone or copy.Also note that we cannot import test suites from the same test plan. 
+Reuse the suites you have created and import them into the current suite/plan. You can select the **Project**, **Test Plan**, and **Test Suite** from which you want to import the tests. Depending upon the suite you select, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone or copy. Also note that we cannot import test suites from the same test plan. 
 
 :::image type="content" source="media/navigate/import-test-suites-dialog.png" alt-text="Test suites tree import overview.":::
 
