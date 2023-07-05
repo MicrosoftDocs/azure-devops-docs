@@ -168,6 +168,10 @@ From the **Define** tab you can exercise the following tasks:
 - **Order test cases**: Reorder test cases by dragging/dropping one or more test cases within a given suite. The order of test cases only applies to manual test cases and not to automated tests.
 - **Move test cases from one suite to another**: Using drag/drop, move test cases from one test suite to another. 
 
+**Drag and drop a test case from one suite to another**
+
+:::image type="content" source="media/navigate/drag-and-drop-test-case-to-different-suite.png" alt-text="Screenshot of drag and drop of one test case from one test suite to another.":::
+
 **Add existing test cases to a test suite dialog**
 
 :::image type="content" source="media/navigate/add-test-cases-to-suite-dialog.png" alt-text="**Define** tab, add existing test cases dialog.":::
