@@ -33,13 +33,19 @@ Use this article to address the issues that display one of the following message
 
 ## Natural hierarchy for work item types
 
-The following image shows the natural hierarchy for the Agile, Scrum, and Capability Maturity Model Integration (CMMI) processes. You can add other custom work item types and backlog levels. 
+The following image shows the natural hierarchy for the Agile, Scrum, and Capability Maturity Model Integration (CMMI) processes.
 
 :::image type="content" source="media/resolve/create-hierarchy-with-different-wits.png" alt-text="Conceptual image of natural hierarchy for the Agile, Scrum, and CMMI processes.":::
 
-This natural hierarchy breaks when you create same-category links between work items. 
+The natural hierarchy breaks when you create same-category or same-type links between work items. For example, parent-child links that are bug-bug or user story-user story or *requirements* category-*task* category.
 
-When you link work items of the same type with parent-child links&mdash;such as bug-bug or user story-user story&mdash;you create same-category links. Also, when you create parent-child links between work items that belong to the same category&mdash;such as the Requirements category or Task category&mdash;you create same-category links. The category a work item belongs to gets determined by your process backlog levels and your team's selected bug behavior. To understand more about same-category hierarchy, see the section [Recommended configuration](#recommended-configuration), further in this article.
+## Recommended configuration 
+
+We recommend that you maintain a flat list, rather than nest requirements, bugs, and tasks. In other words, only create parent-child links one level deep between items that belong to a different category. The category a work item belongs to gets determined by your process backlog levels and your team's selected bug behavior. To understand more about same-category hierarchy, see the next section [Recommended configuration](#recommended-configuration).
+
+Use the *feature* work item type to group user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](organize-backlog.md), which creates parent-child links in the background.
+
+Don't create a hierarchy of backlog items, tasks, and bugs. Don't create same-category hierarchies, like parent-child links among work items of the same type, such as story-story, bug-bug, task-task, or issue-issue. The backlog, board, and sprints experiences don't support reordering for same-category hierarchies, as it introduces confusion by ordering a work item that doesn't belong on that level.
 
 ## Resolve - Cannot reorder work items
 
@@ -100,15 +106,6 @@ Choose **In progress items** show or hide **In Progress** backlog items. If you 
 
 You usually choose to hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
 
-## Recommended configuration
-
-Don't create a hierarchy of backlog items, tasks, and bugs.
-Don't create same-category hierarchies, like parent-child links among work items of the same type, such as story-story, bug-bug, task-task, or issue-issue. The backlog, board, and sprints experiences don't support reordering for same-category hierarchies, as it introduces confusion by ordering a work item that doesn't belong on that level. 
-
-We recommend that you maintain a flat list, rather than nest requirements, bugs, and tasks. In other words, only create parent-child links one level deep between items that belong to a different category. 
-
-Use the *feature* work item type to group user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](organize-backlog.md), which creates parent-child links in the background.
-
 ## Track bugs as requirements or tasks  
 
 [Each team can choose how to track bugs](../../organizations/settings/show-bugs-on-backlog.md), like requirements or tasks, or neither. 
@@ -123,14 +120,12 @@ If you track bugs as *tasks*, only nest bugs under the *requirements* level.
 
 ## Display nested items on backlogs and boards
 
- Sprint backlogs and Taskboards only show the last node in a same-category hierarchy, called the leaf node. 
+Sprint backlogs and Taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 ::: moniker range="tfs-2018"
-
 > [!NOTE]
 > - For TFS 2018 and earlier versions, the Kanban board only shows the last node with nested items of a same-category hierarchy.
 > - For TFS 2018.2 and later versions, Kanban boards display all work items of nested same-category work items.  
-
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
