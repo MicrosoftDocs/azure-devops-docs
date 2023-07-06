@@ -20,16 +20,16 @@ ms.date: 07/06/2023
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
-Azure Boards backlogs display a natural hierarchy of work items. When you add parent-child links to work items not in the natural hierarchy, you receive a message that indicates reordering is disabled. Some items may not display. Also, the system may disable the drag-and-drop reorder feature.  
+When you add parent-child work item links that aren't in the natural hierarchy, reordering is disabled. Items may not display and the system may disable the drag-and-drop reorder feature.  
 
-Use this article to address the issues that display one of the following messages: 
+Use this article to address issues that display one of the following messages: 
 
 - `You cannot reorder work items and some work items may not be shown.`  
 - `You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category".`  
 - `Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items appear when you change the "In progress" filter to Show.`
 
 > [!NOTE]   
-> This article addresses issues that arise when you create parent-child links that don't obey the natural hierarchy defined for backlogs. For other issues that may occur with multi-team ownership, see [Configure a hierarchy of teams, Exercising select features with shared area paths](../plans/configure-hierarchical-teams.md#op-issues).
+> For other issues that may occur with multi-team ownership, see [Configure a hierarchy of teams, Exercise select features with shared area paths](../plans/configure-hierarchical-teams.md#op-issues).
 
 ## Natural hierarchy for work item types
 
@@ -41,11 +41,9 @@ The natural hierarchy breaks when you create same-category or same-type links be
 
 ## Recommended configuration 
 
-We recommend that you maintain a flat list, rather than nest requirements, bugs, and tasks. In other words, only create parent-child links one level deep between items that belong to a different category. The category a work item belongs to gets determined by your process backlog levels and your team's selected bug behavior. To understand more about same-category hierarchy, see the next section [Recommended configuration](#recommended-configuration).
-
-Use the *feature* work item type to group user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](organize-backlog.md), which creates parent-child links in the background.
-
-Don't create a hierarchy of backlog items, tasks, and bugs. Don't create same-category hierarchies, like parent-child links among work items of the same type, such as story-story, bug-bug, task-task, or issue-issue. The backlog, board, and sprints experiences don't support reordering for same-category hierarchies, as it introduces confusion by ordering a work item that doesn't belong on that level.
+- Maintain a flat list, rather than nesting requirements, bugs, and tasks. Only create parent-child links one level deep between items that belong to a different category. The category a work item belongs to gets determined by your process backlog levels and your team's selected bug behavior.
+- Use the *feature* work item type to group user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](organize-backlog.md), which creates parent-child links in the background.
+- Don't create a hierarchy of backlog items, tasks, and bugs. Don't create same-category hierarchies, like parent-child links among work items of the same type, such as story-story, bug-bug, task-task, or issue-issue. The backlog, board, and sprints experiences don't support reordering for same-category hierarchies, as it introduces confusion by ordering a work item that doesn't belong on that level.
 
 ## Resolve - Cannot reorder work items
 
@@ -87,24 +85,22 @@ The message&mdash;`Items added to the backlog may disappear on a refresh because
 When you refresh your browser, the backlog displays those work items based on your selected filters. To reset the filters, complete the following steps. 
 
 ::: moniker range=">= azure-devops-2019"
-
-From the **View options** selector, you can choose to show or hide **In Progress items**. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) don't appear in the backlog. 
-
+1. Open your backlog.
+2. From the **View options** selector, choose to show or hide **In Progress items**. 
+   - If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the [**In Progress** category state](../work-items/workflow-and-state-categories.md) don't appear in the backlog. 
 ::: moniker-end
-
 ::: moniker range=">= azure-devops-2020"
 :::image type="content" source="media/create-backlog/in-progress-control-2020.png" alt-text="Screenshot of View options selector, In progress control, version 2020 and later.":::
 ::: moniker-end
-
 ::: moniker range="azure-devops-2019"
 :::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="Screenshot of View options selector, In progress control, version 2019.":::
 ::: moniker-end
-
 ::: moniker range="tfs-2018"
-Choose **In progress items** show or hide **In Progress** backlog items. If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) don't appear in the backlog. 
+1. Open your backlog.
+2. Show or hide **In progress items** on your backlog. 
+   - If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the [**In Progress** category state](../work-items/workflow-and-state-categories.md) don't appear in the backlog. 
 ::: moniker-end
-
-You usually choose to hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
+   - Hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
 
 ## Track bugs as requirements or tasks  
 
