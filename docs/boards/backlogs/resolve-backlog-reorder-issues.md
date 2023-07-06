@@ -39,7 +39,7 @@ The following image shows the natural hierarchy for the Agile, Scrum, and Capabi
 
 This natural hierarchy breaks when you create same-category links between work items. 
 
-When you link work items of the same type with parent-child links&mdash;such as bug-bug or user story-user story&mdash;you create same-category links. Also, when you create parent-child links between work items that belong to the same category&mdash;such as the Requirements category or Task category&mdash;you create same-category links. The category a work item belongs to gets determined by your process backlog levels and your team's selected bug behavior. To understand more about same-category hierarchy, see the section [Recommended configuration](#recommended).
+When you link work items of the same type with parent-child links&mdash;such as bug-bug or user story-user story&mdash;you create same-category links. Also, when you create parent-child links between work items that belong to the same category&mdash;such as the Requirements category or Task category&mdash;you create same-category links. The category a work item belongs to gets determined by your process backlog levels and your team's selected bug behavior. To understand more about same-category hierarchy, see the section [Recommended configuration](#recommended-configuration), further in this article.
 
 ## Resolve - Cannot reorder work items
 
