@@ -32,7 +32,8 @@ You can track and manage work and access various functions within each of the fo
 |[**Delivery Plans**](../plans/review-team-plans.md)   | Management teams can view deliverables and track dependencies across multiple teams in a calendar view. Delivery plans support tasks such as viewing up to 15 team backlogs, custom portfolio backlogs and epics, and work that spans several iterations. Users can add backlog items to a plan, view rollup progress of features and epics, and dependencies between work items.        |
 | [**Analytics views**](../../report/powerbi/what-are-analytics-views.md) | Create highly sophisticated Power BI reports, based on Azure Boards data (work items). Access default Analytics views or create a custom view.  |
 
-**Azure Boards hubs**
+**Azure Boards hubs UI**
+
 :::image type="content" source="media/about-boards/boards-hubs.png" alt-text="Screenshot showing hubs in Azure Boards menu.":::
 
 ## Benefits of using Azure Boards
