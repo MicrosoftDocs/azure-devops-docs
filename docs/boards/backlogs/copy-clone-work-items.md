@@ -33,7 +33,7 @@ The second copy function is to copy a multi-selected list of work items to the c
 ::: moniker range="< azure-devops-2019"
 
 > [!TIP]    
-> You can't copy or clone linked work items at this time. To learn more, see the [Azure Boards FAQs](../faqs.yml#how-do-i-copy-or-clone-a-work-item-with-all-linked-items). 
+> You can't copy or clone linked work items at this time. For more information, see the [Azure Boards FAQs](../faqs.yml#how-do-i-copy-or-clone-a-work-item-with-all-linked-items). 
 
 ::: moniker-end
 

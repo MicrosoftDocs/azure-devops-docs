@@ -126,7 +126,7 @@ You can copy and paste HTML text or an image from another application directly i
 
 To support traceability and add context to work items, you can link items to other work items or objects. From a links control tab, you can choose from various link types to based on the objects you want to link to. 
 
-Your link options will differ depending on the client you use. For specific guidance, see these resources:
+Your link options differ depending on the client you use. For specific guidance, see these resources:
 
 - [Add link to work items](../backlogs/add-link.md)  
 - [Link items to support traceability and manage dependencies](link-work-items-support-traceability.md)  
@@ -180,7 +180,7 @@ You can continue viewing the attachments as a list or switch to a grid view to s
 
 ![Attachments tab, list or grid view](media/share-plans/142_attachments.gif) 
 
-You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. You can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
+You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. You can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For more information, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
 
 > [!TIP]  
 > To get the URL of an image file you've attached, choose to preview it, right-click the image and choose the copy image address. Paste the address into a text editor and discard everything starting with **&download** to the end. 
@@ -294,17 +294,17 @@ You can email a formatted query list by choosing the **Send to Microsoft Outlook
 
 You can share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. You can add widgets to provide Markdown information, query charts, and more. 
 
-For details, see [Manage dashboards](../../report/dashboards/dashboards.md). 
+For more information, see [Manage dashboards](../../report/dashboards/dashboards.md). 
 
 ## Share information with a project wiki 
 
 You can use your project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.  
 
-To learn more, see [Create a wiki for your project](../../project/wiki/wiki-create-repo.md). 
+For more information, see [Create a wiki for your project](../../project/wiki/wiki-create-repo.md). 
 
 ## Marketplace extensions  
 
-You may find more ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
+You may find more ways to share information by exporting work items to other applications such as Microsoft Word. For more information, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
 
 ## Related articles  
 

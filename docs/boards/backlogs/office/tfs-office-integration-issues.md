@@ -44,12 +44,12 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
 
 ### Update the registry 
 
-1.	Launch the Registry Editor from your Windows Start Menu by typing `regedit` in the Search or Run box.
+1.	Launch the Registry Editor from your Windows Start Menu by entering `regedit` in the Search or Run box.
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Run regedit command.](media/tfs-office-issues-run-regedit.png) 
 
-2.	Navigate to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
+2.	Go to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 	
 	> [!NOTE]  
 	> If there are multiple folders with the same name, select the one with the highest version number. 

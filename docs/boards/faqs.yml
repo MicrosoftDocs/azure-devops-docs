@@ -30,12 +30,12 @@ sections:
 
       - question: Who can contribute to Azure Boards? 
         answer: |
-          As a member of an Azure Boards project, you can use most features to track work. Limitations to select features are based on the access level and security group to which a user is assigned. Other limitations can be imposed based on work tracking permissions or custom rules. To learn more, see [Default permissions and access for Azure Boards](get-started/permissions-access-boards.md). 
+          As a member of an Azure Boards project, you can use most features to track work. Limitations to select features are based on the access level and security group to which a user is assigned. Other limitations can be imposed based on work tracking permissions or custom rules. For more information, see [Default permissions and access for Azure Boards](get-started/permissions-access-boards.md). 
 
       - question: How can noncontributors view or modify work items?  
         answer: |
           ::: moniker range="azure-devops"
-          For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users&mdash;ones who don't sign into the project&mdash;can view all work items. To learn more, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md) and [Make a private project public](../organizations/projects/make-project-public.md).   
+          For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users&mdash;ones who don't sign into the project&mdash;can view all work items. For more information, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md) and [Make a private project public](../organizations/projects/make-project-public.md).   
           Also, if your organization uses Azure Active Directory to manage user access, you can [add external users to your organization](../organizations/accounts/add-external-user.md).
           ::: moniker-end
 
@@ -45,7 +45,7 @@ sections:
 
       - question: How can I restrict viewing or modifying select work items?  
         answer: |
-          You can restrict access by setting permissions for an area path. To learn more, see the following articles: 
+          You can restrict access by setting permissions for an area path. For more information, see the following articles: 
           - [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json)
           - [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json) 
 
@@ -74,7 +74,7 @@ sections:
           - `Work Item Type = [Any]`
           - `State = [Any]` 
 
-          From there, you can add filters to refine the query. To learn more, see [Create and save managed queries with the query editor](queries/using-queries.md).
+          From there, you can add filters to refine the query. For more information, see [Create and save managed queries with the query editor](queries/using-queries.md).
 
       - question: Can a work item be assigned to several users or a user group? 
 
@@ -113,13 +113,13 @@ sections:
       - question: What determines which work item type should be a parent for another work item type? 
 
         answer: |
-          Each process defines four default backlog levels: the iteration backlog, requirement backlog, feature and epic portfolio backlogs. The work item types added to each backlog level are the natural work item types to form parent-child relationship and group work items into a hierarchy. To learn more, see [Organize your backlog, map child work items to parents](backlogs/organize-backlog.md). To customize the process, see [Customize your backlogs or boards, Edit or rename the requirement backlog](../organizations/settings/work/customize-process-backlogs-boards.md).   
+          Each process defines four default backlog levels: the iteration backlog, requirement backlog, feature and epic portfolio backlogs. The work item types added to each backlog level are the natural work item types to form parent-child relationship and group work items into a hierarchy. For more information, see [Organize your backlog, map child work items to parents](backlogs/organize-backlog.md). To customize the process, see [Customize your backlogs or boards, Edit or rename the requirement backlog](../organizations/settings/work/customize-process-backlogs-boards.md).   
 
       - question: How do I copy or clone a work item with all linked items? 
 
         answer: |
           ::: moniker range=">= azure-devops-2020"
-          With Azure Boards (cloud service), you can choose to copy child work items when copying a work item. For details, see [Copy or clone work items](backlogs/copy-clone-work-items.md#copy-clone).  
+          With Azure Boards (cloud service), you can choose to copy child work items when copying a work item. For more information, see [Copy or clone work items](backlogs/copy-clone-work-items.md#copy-clone).  
           ::: moniker-end
 
           ::: moniker range="< azure-devops-2020"
@@ -144,7 +144,7 @@ sections:
     questions: 
       - question: What's the difference between a backlog and a board?  
         answer: | 
-          Each backlog and board represents a filtered set of work items based on team area path and iteration path assignments. Backlogs list work items, boards display work items as cards. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults). For details on usage, see [Backlogs, Boards, and Plans](backlogs/backlogs-boards-plans.md).
+          Each backlog and board represents a filtered set of work items based on team area path and iteration path assignments. Backlogs list work items, boards display work items as cards. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults).
 
       - question: How do I add a backlog or board?  
         answer: | 
@@ -164,13 +164,11 @@ sections:
           Each backlog lists a filtered set of work items based on the team's selected area path, iteration paths, and work item types.  
           - **Product backlog**: By default lists User Stories (Agile), Issues (Basic), Product Backlog Items and Bugs (Scrum), or Requirements (CMMI). Provides options to show **Parents**, **Forecast**, and **In Progress** or **Completed** child items.  
           - **Portfolio backlog**: By default lists Features (all process models) for the Features backlog, and Epics (Agile, Scrum, and CMMI) for the Epic backlog. Provides options to show **Parents** and **In Progress** or **Completed** child items. 
-          - **Sprint backlog**: By default lists all product backlog items assigned to the selected iteration, regardless of status. Provides options to show **Work details**.   
-
-          To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs/backlogs-boards-plans.md).
+          - **Sprint backlog**: By default lists all product backlog items assigned to the selected iteration, regardless of status. Provides options to show **Work details**.
 
       - question: Can I define sprints and use them with my Kanban board? 
         answer: | 
-          **Yes**. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md). 
+          **Yes**. You can assign sprints to work items and filter your Kanban board based on the iteration path. For more information, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md). 
 
       - question: If I manage bugs with tasks, can I add bugs as a checklist to a requirement? 
         answer: | 
@@ -197,7 +195,7 @@ sections:
           Rollup columns allow you to view progress bars or totals of numeric fields or descendant items within a hierarchy. Descendant items correspond to all child items within the hierarchy. You can add one or more rollup columns to a product or portfolio backlog. You can add rollup columns to a product or portfolio backlog. See {Display rollup progress or totals](backlogs/display-rollup.md). 
           ::: moniker-end
           ::: moniker range="< azure-devops-2020"
-          Rollup provides summed values of select fields for all child work items of a parent. To learn more, see  [Rollup of work and other fields](../reference/xml/support-rollup-of-work-and-other-fields.md). 
+          Rollup provides summed values of select fields for all child work items of a parent. For more information, see  [Rollup of work and other fields](../reference/xml/support-rollup-of-work-and-other-fields.md). 
           ::: moniker-end
   
       - question: Can I get a rollup of team capacity?
@@ -274,7 +272,7 @@ sections:
         answer: |
           **Example request**: *When creating a template, I would like the Parent User Story to be defaulted. There isn't a predetermined field in the template. Would/could this function be under a user-defined selection?*  
 
-          No, there's no native support for creating hierarchy templates. In particular, you can't specify a default parent work item. You can, however, quickly copy tasks, bugs, and other items using [Excel](backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. Or, you can use a Kanban board to add child tasks, backlog items, or features. To learn more, see:  
+          No, there's no native support for creating hierarchy templates. In particular, you can't specify a default parent work item. You can, however, quickly copy tasks, bugs, and other items using [Excel](backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. Or, you can use a Kanban board to add child tasks, backlog items, or features. For more information, see:  
           - [Add task checklists](boards/add-task-checklists.md)
           - [Add, run, and update inline tests](boards/add-run-update-tests.md) 
           - [Add features and epics](boards/kanban-epics-features-stories.md)  
@@ -299,7 +297,7 @@ sections:
       - question: How do I connect Azure Boards to GitHub?
 
         answer: | 
-          Azure Boards integrates with GitHub for Azure DevOps Server 2019 and later versions. To learn more, see [Azure Boards & GitHub](github/index.md).
+          Azure Boards integrates with GitHub for Azure DevOps Server 2019 and later versions. For more information, see [Azure Boards & GitHub](github/index.md).
 
       - question: Can I specify the status when linking a work item to a GitHub commit or PR?
 

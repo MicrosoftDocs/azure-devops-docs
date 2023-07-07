@@ -28,7 +28,7 @@ As the following image shows, each work item form comes with several controls, f
 ::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]    
-> Depending on the process chosen when the project was created&mdash;[Agile](./guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+> Depending on the process chosen when the project was created&mdash;[Agile](./guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For more information, see [About processes and process templates](./guidance/choose-process.md). 
 
@@ -37,7 +37,7 @@ As the following image shows, each work item form comes with several controls, f
 ::: moniker range="< azure-devops-2019"
 
 > [!NOTE]    
->Depending on the process chosen when the project was created&mdash;[Agile](./guidance/agile-process.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>Depending on the process chosen when the project was created&mdash;[Agile](./guidance/agile-process.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > FFor more information, see [About processes and process templates](./guidance/choose-process.md). 
 
@@ -148,7 +148,7 @@ From each links control, you can complete these actions:
 ![Screenshot of Related Links control menu options, TFS 2018.](media/linkscontrol-related-work-menu-options.png)  
 ::: moniker-end
 
-To learn more, see [Add links to work items](../backlogs/add-link.md).
+For more information, see [Add links to work items](../backlogs/add-link.md).
 
 <a id="deployment">  </a>
 
@@ -157,7 +157,7 @@ To learn more, see [Add links to work items](../backlogs/add-link.md).
 ### Deployment control  
 
 The **Deployment** control supports a quick view of where and when a work item has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. 
-To learn more, see [Link work items to builds and deployments](work-item-deployments-control.md).
+For more information, see [Link work items to builds and deployments](work-item-deployments-control.md).
 
 :::image type="content" source="media/deployments-control/deployment-control-intro.png" alt-text="Screenshot of Deployment control with links to production and staging runs. "::: 
 

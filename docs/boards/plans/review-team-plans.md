@@ -54,7 +54,7 @@ For information on working with dependencies, see [Track dependencies](track-dep
 ## Prerequisites
 
 - To view a delivery plan, you must be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.  
-- To open or modify a work item or add work items to a plan, you must have **Edit work items in this node** set to **Allow** for the area paths assigned to the work item. For details, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).
+- To open or modify a work item or add work items to a plan, you must have **Edit work items in this node** set to **Allow** for the area paths assigned to the work item. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 
 For work items and dependency lines to appear on the plan:
@@ -93,7 +93,7 @@ In this way, a delivery plan is a driver of alignment while letting each team re
 	- Sync up monthly with several teams that have dependencies. 
 	- Review cross-project deliverables and identify dependencies. 
 - Use a consistent sprint schedule across your project teams and organization when possible. Although the plan can accommodate a variety of sprint schedules, it adds to visual clutter. Use the same sprints for backlogs, features, and epics. Don't create specific sprints for epics or other portfolio backlogs. 
-- Use **Start Date** and **Iteration** to specify the time frame for a work item. Or, use **Start Date** and **Target Date**. However, don't specify both **Iteration** and **Target Date** for a work item. **Target Date** will always override the **Iteration** end date on the plan.
+- Use **Start Date** and **Iteration** to specify the time frame for a work item. Or, use **Start Date** and **Target Date**. However, don't specify both **Iteration** and **Target Date** for a work item. **Target Date** always overrides the **Iteration** end date on the plan.
 - Minimize the number of fields that you choose to display on your cards.  
 - Eliminate cross-team ownership of area paths. Cross-team ownership of area paths can lead to undesirable edge cases.  
 - Keep your work items up to date. When changes occur, update the target dates or iteration paths. 

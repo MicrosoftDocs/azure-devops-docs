@@ -53,7 +53,7 @@ The value you specify for a field must conform to the data type for that field. 
    :::column span="3":::
    A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.) For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md).  
 
-   For WIQL queries, you can also specify the date in the Coordinated Universal Time (UTC) pattern. For details, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md). 
+   For WIQL queries, you can also specify the date in the Coordinated Universal Time (UTC) pattern. For more information, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -603,7 +603,7 @@ You can use the macros described in the following table to filter your queries b
       **@Follows**  
    :::column-end:::
    :::column span="3":::
-      Use with the **ID** field and **In** operator to list all work items that you are following in the project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md).  
+      Use with the **ID** field and **In** operator to list all work items that you're following in the project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md).  
       The **@Follows** macro is supported only when run from the web portal.
    :::column-end:::
 :::row-end:::
@@ -631,7 +631,7 @@ You can use the macros described in the following table to filter your queries b
       **@Project** 
    :::column-end:::
    :::column span="3":::
-      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>. The system automatically defaults to filtering based on the current project. To learn more, see [Define a query, Query across projects](using-queries.md#across-projects). 
+      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>. The system automatically defaults to filtering based on the current project. For more information, see [Define a query, Query across projects](using-queries.md#across-projects). 
    :::column-end:::
 :::row-end:::
 ---
@@ -649,7 +649,7 @@ You can use the macros described in the following table to filter your queries b
       **@RecentProjectActivity** <sup>1</sup>  
    :::column-end:::
    :::column span="3":::
-      Use with the **ID** field and **In** operator to list work items that have been recently updated. The number of work items listed depends on the work tracking activity of the project. For highly active projects, the macro will list work items that have been updated in the project within the last 30 days or so. For less active projects, however, this list could include work items older than 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). The number of work items returned is capped at 5000. 
+      Use with the **ID** field and **In** operator to list work items that have been recently updated. The number of work items listed depends on the work tracking activity of the project. For highly active projects, the macro lists work items that have been updated in the project within the last 30 days or so. For less active projects, however, this list could include work items older than 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). The number of work items returned is capped at 5000. 
    :::column-end:::
 :::row-end:::
 ---
@@ -726,7 +726,7 @@ For examples, see [Example work item queries](query-index-quick-ref.md) and [Que
 
 
 > [!NOTE]    
-> Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support the cloud service, do not support full-text search. In these instances, you will only see the **Contains** and **Does not Contain** operators.
+> Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support the cloud service, do not support full-text search. In these instances, you only see the **Contains** and **Does not Contain** operators.
 
 
 ::: moniker range="< azure-devops"

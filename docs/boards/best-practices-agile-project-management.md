@@ -58,7 +58,7 @@ For more information about configuring sprints, see the following articles:
  
 ## Choose your work item types  
 
-Determine which work item types your team will use to capture customer requirements and development work. If your project is based on the Agile process, we recommend using User Stories, Bugs, and Features.  
+Determine which work item types your team can use to capture customer requirements and development work. If your project is based on the Agile process, we recommend using User Stories, Bugs, and Features.  
 
 If your project is based on another process, such as Basic, Scrum, or CMMI, you have a choice from those shown in the following images. Also, each team can determine how they want to track bugs.
 
@@ -173,7 +173,7 @@ Here the features backlog shows the sequence of features to ship.
 
 ### Order the requirements backlog based on parent features 
 
-First you want to make sure you're completing the requirements needed to ship features. As shown in the following image, the requirements backlog has been ordered according to the features you want to ship. This ordering assumes that all requirements in a feature must be complete in order to ship it. Also, Story Points have been assigned to each User Story. 
+First you want to make sure you're completing the requirements needed to ship features. As shown in the following image, the requirements backlog has been ordered according to the features you want to ship. This ordering assumes that all requirements in a feature must be complete to ship it. Also, Story Points have been assigned to each User Story. 
 
 :::image type="content" source="media/best-practices/product-backlog-ordered-parent.png" alt-text="Screenshot of Requirements backlog, ordered by feature parent.":::
 
@@ -221,7 +221,7 @@ The following Add link dialog illustrates how two work items are linked using th
 
 ::: moniker range="azure-devops"
 
-You can view dependencies and identify dependencies that have issues with Delivery Plans. As shown in the following image, you can toggle the display of dependency lines between linked work items. To learn more, see [Track dependencies using Delivery Plans](plans/track-dependencies.md). 
+You can view dependencies and identify dependencies that have issues with Delivery Plans. As shown in the following image, you can toggle the display of dependency lines between linked work items. For more information, see [Track dependencies using Delivery Plans](plans/track-dependencies.md). 
 
 :::image type="content" source="plans/media/dependencies/dependency-lines.png" alt-text="Screenshot of dependency lines between several work items.":::
 
@@ -408,7 +408,6 @@ For more information, see the following articles:
 ## Related articles
 
 - [Manage requirements](../cross-service/manage-requirements.md)
-- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs/backlogs-boards-plans.md) 
 - [Work with multi-team ownership of backlog items](backlogs/backlogs-overview.md#multi-team)
 - [11 Reasons for using Azure Boards to plan and track your work](get-started/why-use-azure-boards.md)
 

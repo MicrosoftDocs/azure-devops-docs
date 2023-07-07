@@ -30,7 +30,7 @@ Burndown and burnup charts support project management to visually track work com
 Burndown charts begin with the total amount of planned work. As work is completed, the burndown graphs the remaining work. With the progression of time, the amount of to-do work decreases. 
 Burnup charts track work as it is completed over time. They are useful to show the rate at which work is getting completed.
 
-To learn more, see [Burndown and burnup guidance](../../report/dashboards/burndown-guidance.md)
+For more information, see [Burndown and burnup guidance](../../report/dashboards/burndown-guidance.md)
 
 ## Team and individual capacity
 
@@ -57,7 +57,7 @@ With capacity bars, you can quickly see who is over, at, or under capacity. Capa
 |----------------|--------------|
 |![Screenshot of capacity colors.](media/capacity-planning-tool-color-chart.png) | ![Screeshot of Capacity bars.](media/ALM_DS_CapacityBars_S.png) | 
 
-To learn more, see [Adjust work to fit sprint capacity](adjust-work.md). 
+For more information, see [Adjust work to fit sprint capacity](adjust-work.md). 
 
 
 ## Daily scrum meetings
@@ -173,7 +173,7 @@ For example, in the chart shown below the green bar indicates the total estimate
 Along with the built-in Velocity chart, you can add a Velocity widget to your team dashboard. You can configure this widget to sum a count of work items or the sum of effort. Learn more: [Configure the Velocity widget](../../report/dashboards/team-velocity.md). 
 ::: moniker-end  
 
-Each team is associated with one and only one velocity chart. Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog. By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics. Learn more: [Add tasks to backlog items](add-tasks.md).
+Each team is associated with one and only one velocity chart. Velocity varies depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog. By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics. Learn more: [Add tasks to backlog items](add-tasks.md).
 
 
 ## Related articles 

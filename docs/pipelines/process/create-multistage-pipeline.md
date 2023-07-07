@@ -2,7 +2,7 @@
 title: Create a multistage pipeline with Azure DevOps
 description: Build an app pipeline for development and staging.
 ms.topic: how-to 
-ms.date: 06/15/2023
+ms.date: 07/05/2023
 ms.custom: template-how-to-pattern
 ---
 
@@ -53,10 +53,10 @@ Before you can deploy your pipeline, you need to first create an App Service env
     webappsuffix=$RANDOM    
     ```
 
-1. Use a `az group create` command to create a resource group named *tailspin-space-game-rg* that contains all of your App Service instances.
+1. Use a `az group create` command to create a resource group named *tailspin-space-game-rg* that contains all of your App Service instances. Update the `location` value to use your closest region. 
     
     ```azurecli
-    az group create --name tailspin-space-game-rg
+    az group create --location eastus --name tailspin-space-game-rg
     ```
 
 1. Create an App Service plan.
@@ -162,7 +162,7 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
 
         :::image type="content" source="media/mutistage-pipeline/select-settings-azurewebapptask.png" alt-text="Screenshot of settings option in YAML editor task. ":::
 
-    1. Update the `your-subscription` value for **Azure Subscription** to use your own subscription. You may need to authorize access as part of this process. 
+    1. Update the `your-subscription` value for **Azure Subscription** to use your own subscription. You may need to authorize access as part of this process. If you run into a problem authorizing your resource within the YAML editor, an alternate approach is to [create a service connection](../library/service-endpoints.md#create-a-service-connection). 
     
         :::image type="content" source="media/mutistage-pipeline/edit-your-subscription-value.png" alt-text="Screenshot of Azure subscription menu item. ":::
 

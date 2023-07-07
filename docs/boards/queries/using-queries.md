@@ -60,7 +60,7 @@ Along with the query filters, you can [interactively apply filters to query resu
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE] 
-> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Functional work item search](../../project/search/functional-work-item-search.md).
+> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. For more information, see [Functional work item search](../../project/search/functional-work-item-search.md).
 ::: moniker-end
 
 ---
@@ -410,7 +410,7 @@ Grouped clauses operate as a single unit separate from the rest of the query. Gr
 As the following examples show, the grouped clauses are translated to the corresponding logical expression.
 
 > [!TIP]   
-> To view the WIQL syntax for a query, install the [WIQL query editor extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor) which will allow you to see the WIQL version of any Query UI entry. This extension allows you to see just how AND/OR grouped clauses are treated. 
+> To view the WIQL syntax for a query, install the [WIQL query editor extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor) which allows you to see the WIQL version of any Query UI entry. This extension allows you to see just how AND/OR grouped clauses are treated. 
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Query| Grouped clauses|Logical expression|

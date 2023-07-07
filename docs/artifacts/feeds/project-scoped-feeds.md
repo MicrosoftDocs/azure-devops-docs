@@ -90,6 +90,10 @@ Alternatively, you can use the [Create Feed API](/rest/api/azure/devops/artifact
 
 ## Q&A
 
+#### Q: How can I share packages with all users in my organization?
+
+A: If you want to make certain packages in your feed available to all users in your organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**.
+
 #### Q: How to access a project-scoped feed in another project using Azure Pipelines?
 
 In order for a pipeline to access a project-scoped feed in a different project, it is necessary to grant the pipeline access to both the project where the feed is scoped and the feed itself.

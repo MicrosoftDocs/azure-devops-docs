@@ -135,7 +135,7 @@ Only you can view and run queries that you save under **My Queries** with the qu
 
 Queries you and others save under **Shared Queries** can be viewed by everyone with access to the project. Shared queries can be organized within folders and favorited by you or for a team. Also, you can set permissions on the folders and queries to prevent others from moving or editing them. 
 
-For details, see:
+For more information, see:
 - [Manage queries & query folders ](organize-queries.md)
 - [Set query permissions](set-query-permissions.md)
 - [Favorite a query](view-run-query.md) and [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query)
@@ -145,7 +145,7 @@ For details, see:
 ## Query directory, query folders, and breadcrumbs 
 
 The **Queries** page  contains a directory-focused view that you can filter to find specific queries of interest. 
-When working in the **Queries** pages, you can navigate to a subfolder, folder, or page.
+When working in the **Queries** pages, you can go to a subfolder, folder, or page.
 
 ![Queries breadcrumbs](../../project/navigation/media/breadcrumbs/queries-breadcrumbs.png)
 
@@ -183,7 +183,7 @@ To add a custom field to support your query needs, see [Customize your work trac
 
 ## Taskboard versus query list items
 
-You may notice and wonder why the contents of the taskboard differ from the contents listed with its created query? To learn more, see [taskboard items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
+You may notice and wonder why the contents of the taskboard differ from the contents listed with its created query? For more information, see [taskboard items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 
 
 ::: moniker range="< azure-devops"
@@ -193,7 +193,7 @@ You may notice and wonder why the contents of the taskboard differ from the cont
 
 To support full-text search queries, the collation settings of the SQL Server database should correspond to a language that has a word breaker registered with SQL Server. If you use an unsupported language, you could receive unexpected results when you run a work item query that specifies the **Contains** or **Contains Words** operators with text strings.
 
-To learn more, see the following articles:
+For more information, see the following articles:
 
 -   [sys.fulltext\_languages (Transact-SQL)](/sql/relational-databases/system-catalog-views/sys-fulltext-languages-transact-sql)
 -   [ALTER FULLTEXT INDEX (Transact-SQL)](/sql/t-sql/statements/alter-fulltext-index-transact-sql)

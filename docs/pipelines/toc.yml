@@ -72,14 +72,20 @@
           displayName: release trigger, CD trigger, stage trigger, environment trigger, deploy PR, scheduled trigger, schedule
     - name: Tasks & templates
       items:
+        - name: Templates, parameters, & expressions
+          items:
+          - name: Templates
+            href: process/templates.md
+            displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
+          - name: Template parameters
+            href: process/template-parameters.md
+          - name: Template expressions
+            href: process/template-expressions.md
         - name: Task types & usage
           href: process/tasks.md
           displayName: custom tasks, task versions, task control options, conditions, task tool installers, build tool installers
         - name: Task groups (classic)
           href: library/task-groups.md
-        - name: Template types & usage
-          href: process/templates.md
-          displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
         - name: Add a custom task extension
           href: ../extend/develop/add-build-task.md?toc=/azure/devops/pipelines/toc.json
         - name: Upload tasks to project collection

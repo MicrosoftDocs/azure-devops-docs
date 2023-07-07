@@ -48,7 +48,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 > - View work item dependencies 
 > - Stakeholders can view plans
 
-To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md).
+For more information, see [Review team Delivery Plans](../plans/review-team-plans.md).
 ::: moniker-end
  
 
