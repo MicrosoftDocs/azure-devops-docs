@@ -91,8 +91,10 @@ When you refresh your browser, the backlog displays those work items based on yo
   
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= azure-devops-2020" 
+
    :::image type="content" source="media/create-backlog/in-progress-control-2020.png" alt-text="Screenshot of View options selector, In progress control, version 2020 and later.":::
+   
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
    :::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="Screenshot of View options selector, In progress control, version 2019.":::
@@ -104,7 +106,7 @@ When you refresh your browser, the backlog displays those work items based on yo
 
 ::: moniker-end
 
-   - Hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
+ - Hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
 
 ## Track bugs as requirements or tasks  
 
