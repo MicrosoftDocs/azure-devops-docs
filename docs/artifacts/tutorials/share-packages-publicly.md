@@ -45,8 +45,8 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [NuGet](#tab/nuget)
 
-- [NuGet - NuGet.ext](../nuget/publish.md#publish-packages)
-- [NuGet - dotnet](../nuget/dotnet-exe.md#publish-packages)
+- [Publish NuGet packages - (NuGet.exe)](../nuget/publish.md#publish-packages)
+- [Publish NuGet packages - (dotnet)](../nuget/dotnet-exe.md#publish-packages)
 
 #### [Npm](#tab/npm)
 
@@ -59,6 +59,10 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 #### [Python](#tab/python)
 
 - [Publish Python packages](../quickstarts/python-cli.md#publish-python-packages)
+
+#### [Universal Packages](#tab/universalpackages)
+
+- [Publish Universal Packages](../quickstarts/universal-packages.md#publish-packages)
 
 - - -
 
@@ -80,6 +84,10 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 - [Publish Python packages](../../pipelines/artifacts/pypi.md#publish-python-packages-to-azure-artifacts-feeds)
 
+#### [Universal Packages](#tab/universalpackages)
+
+- [Publish Universal Packages](../../pipelines/artifacts/universal-packages.md#publish-a-universal-package)
+
 - - -
 
 ## Share packages
@@ -92,7 +100,6 @@ As long as your project is kept public, anyone can view and download packages fr
 
 ## Related articles
 
-- [Get started with NuGet packages in Azure Artifacts](../get-started-nuget.md)
 - [Package sizes and count limits](../reference/limits.md)
-- [Package notifications](../how-to/follow-package-notifications.md)
+- [Follow a package for publish alerts](../how-to/follow-package-notifications.md)
 - [Package badges](../package-badges.md)
