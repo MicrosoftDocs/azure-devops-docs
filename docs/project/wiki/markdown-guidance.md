@@ -35,7 +35,7 @@ You can provide guidance in the following areas using Markdown:
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request (PR) comments](../../repos/git/pull-requests.md)  
-- [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
+- [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done)
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ You can provide guidance in the following areas using Markdown:
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request (PR) comments](../../repos/git/pull-requests.md)
-- [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
+- [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done)
 
 > [!NOTE]
 > Rich Markdown rendering in code repositories is supported for TFS 2018.2 and later versions. You can create rich README.md files in the code repositories. The Markdown rendering of the MD files in code repositories supports HTML tags, block quotes, emojis, image resizing, and mathematical formulas. There is parity in Markdown rendering in Wiki and MD files in code.

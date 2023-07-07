@@ -7,14 +7,14 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 03/23/2023
+ms.date: 06/22/2023
 ---
 
-# Get started managing your organization or project collection
+# Get started - manage your organization or project collection
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
 
-After you create an organization or project collection, you'll want to add contributors and configure policies, settings, and other options available to you. This article provides an overview of tasks you'll want to review to ensure you're setting up your organization or collection to get maximal use of your services. 
+After you create an organization or project collection, you'll want to add contributors and configure policies, settings, and other options available to you. This article provides an overview of tasks to ensure you set up your organization or collection to get maximal use of your services. 
 
 ::: moniker range="azure-devops"
 Each organization is associated with one and only one collection. If you need to create another organization, see [Plan your organizational structure](plan-your-azure-devops-org-structure.md) and [Create an organization](../organizations/accounts/create-organization.md).
@@ -84,7 +84,7 @@ If your organization requires more than five contributors, then you need to set 
 
 ## Manage security and permissions
 
-Access to select tasks is controlled by permissions and security groups.  
+Permissions and security groups control access to select tasks.  
 
 [!INCLUDE [collection-level-permissions](../organizations/security/includes/collection-level-permissions.md)]
 
@@ -97,10 +97,10 @@ For more information about security and setting permissions at the collection-le
 ### Add members to the Project Collection Administrators group 
 
 ::: moniker range="azure-devops"
-The person who creates an organization is automatically added as a member to the **Project Collection Administrators** group. Members of this group have permissions to manage the settings, policies, and processes for the organization, create and manage all projects that are defined in the organization, and install and manage extensions.   
+The person who creates an organization is automatically added as a member to the **Project Collection Administrators** group. Members of this group have permissions to manage the settings, policies, and processes for the organization. Members can also create and manage all projects defined in the organization, and install and manage extensions.   
 ::: moniker-end
 ::: moniker range="< azure-devops"
-The person who creates a project collection is automatically added as a member to the **Project Collection Administrators** group. Members of this group have permissions to manage the settings, policies, and processes for the organization, create and manage all projects that are defined in the organization, and install and manage extensions.   
+The person who creates a project collection is automatically added as a member to the **Project Collection Administrators** group. Members of this group have permissions to manage the settings, policies, and processes for the organization. Members can also create and manage all projects defined in the organization, and install and manage extensions.   
 ::: moniker-end
 
 It's always a good idea to have more than one person who has administrative privileges. To add a user to this group, see [Change permissions at the organization level,Add members to the Project Collection Administrators group](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-collection-administrators-group).
@@ -135,15 +135,14 @@ To enable this feature, see [Manage or enable features](../project/navigation/pr
 
 ### Limit identity search and selection  
 
-For organizations that manage users and groups using Azure Active Directory (Azure AD), people pickers support searching all users and groups added to Azure AD, not just those users and groups added to your project. people pickers support the following Azure DevOps functions: 
+Organizations that are connected to Azure Active Directory (Azure AD) use people pickers to search all users and groups in Azure AD, not just those in your project. People pickers support the following Azure DevOps functions: 
 - Selection of a user identity from a work tracking identity field such as **Assigned To**  
 - Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
 - Selection of a user or group using **@mention** from a wiki page 
 
 As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
- 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker](../organizations/notifications/media/at-mention/identity-selector.png)
+
+   :::image type="content" source="../organizations/notifications/media/at-mention/identity-selector.png" alt-text="Screenshot of people picker.":::
  
 Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they're connected to from a people picker. To scope people pickers for all project members, see [Limit user visibility for projects and more](#limit-identity-selection) earlier in this article. 
 
@@ -182,9 +181,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 
 To enable or disable a preview feature, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
 
-The following features are only enabled or disabled at the organization-level:  
-- [Limit identity search and selection](#limit-identity-selection)
-- [Full Access to Azure Pipelines for Stakeholders](../organizations/security/provide-stakeholder-pipeline-access.md)
+The [Limit identity search and selection](#limit-identity-selection) feature is only enabled or disabled at the organization-level.
 
 ::: moniker-end 
 
@@ -209,7 +206,7 @@ Code Search is a free Marketplace extension that you must install to enable sear
 
 ### Enable or disable Analytics
 
-The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
+The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Analytics is built for reporting and optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
 
 For more information, see [What is the Analytics service?](../report/powerbi/what-is-analytics.md) and [Install or enable the Analytics service](../report/dashboards/analytics-extension.md).
 ::: moniker-end 
@@ -227,7 +224,7 @@ When you create an organization, you specify the name of your organization and s
 
 ## Configure DevOps settings 
 
-There are a few settings that you define at the organization-level to support devops work. These include the following items: 
+Use the following settings, which get defined at the organization-level, to support your work. 
 
 - [Add agent pools](../pipelines/agents/pools-queues.md)
 - [Define pipeline retention settings](../pipelines/policies/retention.md#set-collection-level-retention-policies)
@@ -274,7 +271,7 @@ Many notifications are predefined at the organization or collection level. You c
 
 ### Configure an SMTP server
 
-In order for team members to receive notifications, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
+For team members to receive notifications, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
 
 ::: moniker-end  
 

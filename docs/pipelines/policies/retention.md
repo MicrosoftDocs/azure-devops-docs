@@ -95,7 +95,7 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2020"
 
 1. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 

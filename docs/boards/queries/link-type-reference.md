@@ -184,7 +184,7 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../test/repeat-test-with-different-data.md). In general, you wouldn&#39;t add this link type to a scoped links control.  To learn more, see [Repeat a test with different data](../../test/repeat-test-with-different-data.md). 
+   Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../test/repeat-test-with-different-data.md). In general, you wouldn&#39;t add this link type to a scoped links control.  For more information, see [Repeat a test with different data](../../test/repeat-test-with-different-data.md). 
 
    :::column-end:::
 
@@ -268,7 +268,7 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Use to link test cases with shared steps. You [share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases) to avoid having to create multiple entries of the same sequence of steps. To learn more, see [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases).
+   Use to link test cases with shared steps. You [share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases) to avoid having to create multiple entries of the same sequence of steps. For more information, see [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases).
 
    :::column-end:::
 :::row-end:::
