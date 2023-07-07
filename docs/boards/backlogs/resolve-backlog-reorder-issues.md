@@ -22,11 +22,10 @@ ms.date: 07/06/2023
 
 When you add parent-child work item links that aren't in the natural hierarchy, reordering is disabled. Items may not display and the system may disable the drag-and-drop reorder feature.  
 
-Use this article to address issues that display one of the following messages: 
-
-- `You cannot reorder work items and some work items may not be shown.`  
-- `You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category".`  
-- `Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items appear when you change the "In progress" filter to Show.`
+Use this article to address error messages that are similar to the following message: 
+- "You can't reorder work items and some work items may not be shown."  
+- "Work item can't be reordered because its parent is on the same category." 
+- "Items added to the backlog may disappear on a refresh because your team project marks them as "in progress." Those items appear when you change the "In progress" filter to Show."
 
 > [!NOTE]   
 > For other issues that may occur with multi-team ownership, see [Configure a hierarchy of teams, Exercise select features with shared area paths](../plans/configure-hierarchical-teams.md#op-issues).
@@ -47,9 +46,9 @@ The natural hierarchy breaks when you create same-category or same-type links be
 
 ## Resolve - Cannot reorder work items
 
-You may see a message such as: `You cannot reorder work items and some work items may not be shown`.  No work item IDs are listed. 
+You may see a message like: `You cannot reorder work items and some work items may not be shown`.  No work item IDs are listed. 
 
-To address this message, do the following steps: 
+To address this error, do the following steps: 
 
 1. Open your backlog.
 2. Review the list of items to determine which items of the same type are nested.  
@@ -68,9 +67,9 @@ The message no longer displays.
 
 ## Resolve - Cannot reorder work items, change link type or category
 
-You may see a message similar to: `You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category"`. 
+You may see a message like: `You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category"`. 
 
-To address this message, do the following steps: 
+To address this error, do the following steps: 
 
 1. Open the work item listed in the error message.
 2. Look for a parent or child link. Make sure this link goes to a work item within the same category as the work item you opened. This link goes to another work item  that appears on the same backlog level as the work item you opened. Depending on your team's bug behavior setting, bugs may appear with requirements or tasks. 
@@ -80,7 +79,7 @@ The message no longer displays.
 
 ## Resolve - Work items in progress may disappear on refresh
 
-The message&mdash;`Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items appear when you change the "In progress" filter to Show.`&mdash;indicates that the **In Progress** filter for the backlog is turned off.  
+You may see a message like: `Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items appear when you change the "In progress" filter to Show.`. This message indicates that the **In Progress** filter for the backlog is turned off.  
 
 When you refresh your browser, the backlog displays those work items based on your selected filters. To reset the filters, complete the following steps. 
 
