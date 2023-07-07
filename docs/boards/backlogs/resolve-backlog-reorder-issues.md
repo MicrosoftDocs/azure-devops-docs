@@ -85,9 +85,12 @@ When you refresh your browser, the backlog displays those work items based on yo
 
 ::: moniker range=">= azure-devops-2019"
 1. Open your backlog.
-2. From the **View options** selector, choose to show or hide **In Progress items**. 
-   - If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the [**In Progress** category state](../work-items/workflow-and-state-categories.md) don't appear in the backlog. 
+1. From the **View options** selector, choose to show or hide **In Progress items**. 
+
+- If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the [**In Progress** category state](../work-items/workflow-and-state-categories.md) don't appear in the backlog.
+  
 ::: moniker-end
+
 ::: moniker range=">= azure-devops-2020"
    :::image type="content" source="media/create-backlog/in-progress-control-2020.png" alt-text="Screenshot of View options selector, In progress control, version 2020 and later.":::
 ::: moniker-end
@@ -98,6 +101,7 @@ When you refresh your browser, the backlog displays those work items based on yo
 1. Open your backlog.
 2. Show or hide **In progress items** on your backlog. 
    - If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the [**In Progress** category state](../work-items/workflow-and-state-categories.md) don't appear in the backlog. 
+
 ::: moniker-end
 
    - Hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
