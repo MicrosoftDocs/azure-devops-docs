@@ -105,11 +105,11 @@ When you refresh your browser, the backlog displays those work items based on yo
 
 [Each team can choose how to track bugs](../../organizations/settings/show-bugs-on-backlog.md), like requirements or tasks, or neither. 
 
-If you track bugs as *requirements*, only nest bugs under the *feature* level.
+If you track bugs as *requirements*, only nest bugs under the *Feature* level.
 
 :::image type="content" source="media/resolve/bugs-as-requirements.png" alt-text="Screenshot of linked bugs like requirements."::: 
 
-If you track bugs as *tasks*, only nest bugs under the *requirements* level.
+If you track bugs as *tasks*, only nest bugs under the *Requirement* level.
 
 :::image type="content" source="media/resolve/bugs-as-tasks.png" alt-text="Screenshot of linked bugs like tasks.":::
 
