@@ -25,7 +25,7 @@ Check out the release notes to learn more about these features.
 
 ### Repos
 
-[!INCLUDE [sprint-224-update-links](includes/reporting/sprint-224-update-links.md)]
+[!INCLUDE [sprint-224-update-links](includes/repos/sprint-224-update-links.md)]
 
 ## General
 
@@ -41,7 +41,7 @@ Check out the release notes to learn more about these features.
 
 ## Repos
 
-[!INCLUDE [sprint-224-update](includes/reporting/sprint-224-update.md)]
+[!INCLUDE [sprint-224-update](includes/repos/sprint-224-update.md)]
 
 
 ## Next steps
