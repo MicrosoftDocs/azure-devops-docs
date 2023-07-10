@@ -9,7 +9,7 @@ ms.topic: include
 
 We have updated the  [KuberentesManifest@1](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1?view=azure-pipelines), [HelmDeploy@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/helm-deploy-v0?view=azure-pipelines), [Kubernetes@1](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/kubernetes-v1?view=azure-pipelines) and [AzureFunctionOnKubernetes@1](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-function-on-kubernetes-v1?view=azure-pipelines) tasks to support [kubelogin](https://learn.microsoft.com/azure/aks/managed-azure-ad#non-interactive-sign-in-with-kubelogin). This allows you to target Azure Kubernetes Service (AKS) configured with [Azure Active Directory integration](https://learn.microsoft.com/azure/aks/managed-azure-ad).
 
-Kubelogin is not pre-installed on Hosted images. To make sure above mentioned tasks use kubelogin, install it by inserting the KubeloginInstaller@0 task before the task that depends on it:
+Kubelogin is not pre-installed on [Hosted images](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml). To make sure above mentioned tasks use kubelogin, install it by inserting the KubeloginInstaller@0 task before the task that depends on it:
 
 ```yaml
  - task: KubeloginInstaller@0
