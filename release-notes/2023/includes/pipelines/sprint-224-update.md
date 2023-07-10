@@ -5,24 +5,11 @@ ms.date: 7/11/2023
 ms.topic: include
 ---
 
-### Use Service Principal in Agent VM extension
-
-Azure VM's can be included in Deployment Groups using a [VM Extension](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template). The VM extension has been updated to use a Service Principal instead of a PAT to register the agent:
-
-```
-"settings": {
-  "userServicePrincipal": true     
-}
-"protectedSettings": {
-  "clientId": "[parameters('clientId')]"      
-  "clientSecret": "[parameters('clientSecret')]"      
-  "tenantId": "[parameters('tenantId')]"      
-}
-```
-
 ### Kubernetes tasks now support kubelogin
 
-AKS configured with [Azure Active Directory integration](/azure/aks/managed-azure-ad) can now be used in the KuberentesManifestV1, HelmDeployV0, KubernetesV1 and AzureFunctionOnKubernetesV1 tasks. We have added support for [kubelogin](/azure/aks/managed-azure-ad#non-interactive-sign-in-with-kubelogin) to those tasks. To make sure kubelogin is installed, insert the KubeloginInstallerV0 task before the aforementioned tasks:
+We have updated the  [KuberentesManifest@1](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1?view=azure-pipelines), [HelmDeploy@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/helm-deploy-v0?view=azure-pipelines), [Kubernetes@1](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/kubernetes-v1?view=azure-pipelines) and [AzureFunctionOnKubernetes@1](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-function-on-kubernetes-v1?view=azure-pipelines) tasks to support [kubelogin](https://learn.microsoft.com/azure/aks/managed-azure-ad#non-interactive-sign-in-with-kubelogin). This allows you to target Azure Kubernetes Service (AKS) configured with [Azure Active Directory integration](https://learn.microsoft.com/azure/aks/managed-azure-ad).
+
+Kubelogin is not pre-installed on Hosted images. To make sure above mentioned tasks use kubelogin, install it by inserting the KubeloginInstaller@0 task before the task that depends on it:
 
 ```yaml
  - task: KubeloginInstaller@0
@@ -30,6 +17,21 @@ AKS configured with [Azure Active Directory integration](/azure/aks/managed-azur
  - task: HelmDeploy@0
    # arguments do not need to be modified to use kubelogin
 
+```
+
+### Use Service Principal in Agent VM extension
+
+Azure VM's can be included in Deployment Groups using a [VM Extension](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template). The VM extension has been updated to optionally use a Service Principal instead of a PAT to register the agent:
+
+```
+"settings": {
+  "userServicePrincipal": true
+}
+"protectedSettings": {
+  "clientId": "<clientId>",
+  "clientSecret": "<clientSecret>",
+  "tenantId": "<tenantId>"
+}
 ```
 
 ### Improvements to Approval REST API
