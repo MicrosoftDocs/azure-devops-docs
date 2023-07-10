@@ -1,8 +1,8 @@
 ---
-title: Create a multistage pipeline with Azure DevOps
+title: 'Tutorial: Create a multistage pipeline with Azure DevOps'
 description: Build an app pipeline for development and staging.
-ms.topic: how-to 
-ms.date: 07/05/2023
+ms.topic: tutorial 
+ms.date: 07/10/2023
 ms.custom: template-how-to-pattern
 ---
 
@@ -12,7 +12,7 @@ ms.custom: template-how-to-pattern
 
 You can use an Azure DevOps multistage pipeline to divide your CI/CD process into stages that represent different parts of your development cycle. Using a multistage pipeline gives you more visibility into your deployment process and makes it easier to integrate [approvals and checks](approvals.md). 
 
-In this article, you'll build a YAML pipeline with three stages: 
+In this article, you'll create two App Service instances and build a YAML pipeline with three stages: 
 
 1. Build: build the source code and produce a package
 2. Dev: deploy your package to a development site for testing
@@ -27,7 +27,7 @@ The example code in this exercise is for a .NET web application for a pretend sp
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
-    * An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
+* An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
 * An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
 
@@ -39,27 +39,27 @@ Fork the following sample repository at GitHub.
 https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy
 ```
 
-## 2 - Create the App Service environments
+## 2 - Create the App Service instances
 
-Before you can deploy your pipeline, you need to first create an App Service environment to deploy to. You'll use Azure CLI to create the environment. 
+Before you can deploy your pipeline, you need to first create an App Service instance to deploy to. You'll use Azure CLI to create the instance. 
 
-1. Go to [Azure portal](https://portal.azure.com) and sign in.  
+1. Sign in to the [Azure portal](https://portal.azure.com).  
 
 1. From the menu, select **Cloud Shell** and the **Bash** experience.
 
-1. Generate a random number that makes your web app's domain name unique.
+1. Generate a random number that makes your web app's domain name unique. The advantage of having a unique value is that your App Service instance won't have a name conflict with other learners completing this tutorial. 
 
     ```code
     webappsuffix=$RANDOM    
     ```
 
-1. Use a `az group create` command to create a resource group named *tailspin-space-game-rg* that contains all of your App Service instances. Update the `location` value to use your closest region. 
+1. Open a command prompt and use a `az group create` command to create a resource group named *tailspin-space-game-rg* that contains all of your App Service instances. Update the `location` value to use your closest region. 
     
     ```azurecli
     az group create --location eastus --name tailspin-space-game-rg
     ```
 
-1. Create an App Service plan.
+1. Use the command prompt to create an App Service plan.
 
     ```azurecli
     az appservice plan create \
@@ -69,7 +69,7 @@ Before you can deploy your pipeline, you need to first create an App Service env
       --is-linux
     ```
 
-1. Create two App Service instances, one for each environment (Dev and Staging) with the `az webapp create` command. 
+1. In the command prompt, create two App Service instances, one for each instance (Dev and Staging) with the `az webapp create` command. 
 
     ```azurecli
     az webapp create \
@@ -85,7 +85,7 @@ Before you can deploy your pipeline, you need to first create an App Service env
       --runtime "DOTNET|6.0"
     ```
 
-1. List both App Service instances to verify that they're running with the `az webapp list` command. 
+1. With the command prompt, list both App Service instances to verify that they're running with the `az webapp list` command. 
 
     ```azurecli
     az webapp list \
@@ -98,7 +98,7 @@ Before you can deploy your pipeline, you need to first create an App Service env
 
 ## 3 - Create your Azure DevOps project and variables
 
-Set up your Azure DevOps project and a build pipeline. You'll also add variables for your development and staging environments. 
+Set up your Azure DevOps project and a build pipeline. You'll also add variables for your development and staging instances. 
 
 Your build pipeline:
 
@@ -107,7 +107,7 @@ Your build pipeline:
 * Includes a stage named Build that builds the web application
 * Publishes an artifact you'll use in a later stage
 
-### Add a build pipeline 
+#### Add the Build stage 
 
 [!INCLUDE [include](../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
@@ -119,7 +119,7 @@ Your build pipeline:
 
 9. When you're ready, select **Save and run**.
 
-### Add environment variables
+#### Add instance variables
 
 1. In Azure DevOps, go to **Pipelines** > **Library**. 
 
@@ -127,7 +127,7 @@ Your build pipeline:
 
 1. Under **Properties**, add *Release* for the variable group name.
 
-1. Create a two variables to refer to your development and staging host names. Replace the value `1234` with the correct value for your environment. 
+1. Create a two variables to refer to your development and staging host names. Replace the value `1234` with the correct value for your instance. 
 
     
     |Variable name  |Example value  |
@@ -179,7 +179,7 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
 Last, you'll promote the Dev stage to Staging. Unlike the Dev environment, you want to have more control in the staging environment you'll add a manual approval. 
 
 
-### Create staging environment
+#### Create staging environment
 
 1. From Azure Pipelines, select **Environments**.
 
@@ -199,7 +199,7 @@ Last, you'll promote the Dev stage to Staging. Unlike the Dev environment, you w
 
 1. Select **Save**. 
 
-### Add new stage to pipeline
+#### Add new stage to pipeline
 
 You'll add new stage, `Staging` to the pipeline that includes a manual approval. 
 
