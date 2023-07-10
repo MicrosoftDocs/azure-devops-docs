@@ -5,4 +5,4 @@ ms.date: 7/11/2023
 ms.topic: include
 ---
 
-- [Placeholder for Boards](#placeholder-for-boards)
+- [Copy link to work item](#copy-link-to-work-item)
