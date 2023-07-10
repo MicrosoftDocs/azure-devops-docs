@@ -49,7 +49,10 @@ We support the following subset of .NET 6 supported distributions:
     * Red Hat Enterprise Linux 7+
       * No longer requires separate package
     * SUSE Enterprise Linux 12 SP2 or later
-    * Ubuntu 22.04, 20.04, 18.04, 16.04
+    * Ubuntu 20.04, 18.04, 16.04
+      * Ubuntu 22.04 only works after manually installing version 1.1.1 of the packages `openssl` and `libssl1.1`.  
+        The script `./bin/installdependencies.sh` doesn't take care of this.  
+        Related GitHub issues: [1](https://github.com/microsoft/azure-pipelines-agent/issues/3834), [2](https://github.com/microsoft/azure-pipelines-agent/issues/4267)
     * Azure Linux 2.0
   * ARM64
     * Debian 10+
