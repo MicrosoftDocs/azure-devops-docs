@@ -45,3 +45,31 @@ Using Azure Artifacts, you can publish and download Cargo packages to feeds and 
 1. Select **Create** when you're done.
 
 ::: moniker-end
+
+## Connect to feed
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Connect to feed**, and then select **Cargo** from the left navigation pane.
+
+1. Make sure you have installed rustup and msrustup and then run the following command to set the default toolchain:
+
+    ```Command
+    rustup default ms-stable
+    ```
+
+1. Add your feed source to your [.cargo/config.toml](https://doc.rust-lang.org/cargo/reference/config.html) file. Replace the placeholders with the appropriate values:
+
+    ```
+    [registries]
+    FEED_NAME = { index = "sparse+https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/Cargo/index/" }
+    ```
+
+1. Add the following to your *.cargo/config.toml* to replace *crates.io* source with your feed.
+
+    ```
+    [source.crates-io]
+    replace-with = "FEED_NAME"
+    ```
