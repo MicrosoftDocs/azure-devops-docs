@@ -50,15 +50,13 @@ Here is an example:
     [
         {
             "id": "87436c03-69a3-42c7-b5c2-6abfe049ee4c",
-            "steps":
-            [],
+            "steps": [],
             "status": "pending",
             "createdOn": "2023-06-27T13:58:07.417Z",
             "lastModifiedOn": "2023-06-27T13:58:07.4164237Z",
             "executionOrder": "anyOrder",
             "minRequiredApprovers": 1,
-            "blockedApprovers":
-            [],
+            "blockedApprovers": [],
             "_links":
             {
                 "self":
@@ -69,15 +67,13 @@ Here is an example:
         },
         {
             "id": "2549baca-104c-4a6f-b05f-bdc4065a53b7",
-            "steps":
-            [],
+            "steps": [],
             "status": "pending",
             "createdOn": "2023-06-27T13:58:07.417Z",
             "lastModifiedOn": "2023-06-27T13:58:07.4164237Z",
             "executionOrder": "anyOrder",
             "minRequiredApprovers": 1,
-            "blockedApprovers":
-            [],
+            "blockedApprovers": [],
             "_links":
             {
                 "self":
