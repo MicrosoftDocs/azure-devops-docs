@@ -1,13 +1,13 @@
 ---
-title:  TBD
+title:  Dismiss dependency scanning alerts in Advanced Security
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 7/11/2023
-description: TBD.
+description: Dismiss dependency scanning alerts in Advanced Security.
 ---
-# TBD
+# Dismiss dependency scanning alerts in Advanced Security
 
-TBD
+You can now dismiss dependency scanning alerts in Advanced Security. 
 
 Check out the release notes to learn more about these features.
 
