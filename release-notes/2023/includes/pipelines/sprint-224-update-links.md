@@ -9,4 +9,4 @@ ms.topic: include
 - [Use Service Principal in Agent VM extension](#use-service-principal-in-agent-vm-extension)
 - [Updates to YAML cron schedules](#updates-to-yaml-cron-schedules)
 - [Disable a check](#disable-a-check)
-- [Improvements to Approval REST API](#improvements-to-approval-rest-api)
+- [Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
