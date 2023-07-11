@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 6/21/2023
+ms.date: 7/11/2023
 
 ms.topic: article
 ms.service: azure-devops
@@ -37,6 +37,18 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="9"><a href="2023/sprint-224-update.md" data-raw-source="[11 July 2023](2023/sprint-224-update.md)"> 11 July 2023</a></td>
+    <td>Lift secret expiration check on Azure DevOps OAuth</td><td>General</td><td>Future</td></tr>
+    <td>Alert dismissals for dependency scanning alerts in Advanced Security</td><td>General</td><td>N/A</td></tr>
+    <td>Copy link to work item</td><td>Boards</td><td>Future</td></tr>
+    <td>Kubernetes tasks now support kubelogin</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use Service Principal in Agent VM extension</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updates to YAML cron schedules</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Disable a check</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improvements to Approval REST API</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Removing "Edit policies" permission to branch creator</td><td>Repos</td><td>Future</td></tr>
+<tr>
 <tr>
     <td rowspan="8"><a href="2023/sprint-223-update.md" data-raw-source="[21 June 2023](2023/sprint-223-update.md)"> 21 June 2023</a></td>
     <td>Organization profile image</td><td>General</td><td>Future</td></tr>
