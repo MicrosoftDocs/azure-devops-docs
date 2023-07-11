@@ -7,7 +7,7 @@ description: Dismiss dependency scanning alerts in Advanced Security.
 ---
 # Dismiss dependency scanning alerts in Advanced Security
 
-Dependency scanning in Advanced Security detects the open source components used in your source code and identifies if there are any associated vulnerabilities. Any found vulnerabilities from open source components gets flagged as an alert. With this update, you can dismiss dependency scanning alerts in Advanced Security that you believe to be a false positive or acceptable risk. 
+Dependency scanning in Advanced Security detects the open source components used in your source code and identifies if there are any associated vulnerabilities. Any found vulnerabilities from open source components get flagged as an alert. With this update, you can dismiss dependency scanning alerts in Advanced Security that you believe to be a false positive or acceptable risk. 
 
 In Azure Repos, we changed the default behavior to remove "Edit policies" permission when creating a new branch. 
 
