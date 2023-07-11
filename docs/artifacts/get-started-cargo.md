@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Get started with Cargo packages in Azure Artifacts
 
-Using Azure Artifacts, you can publish and download Cargo packages to feeds and public registries. This article will guide you through setting up your project and publishing and downloading your cargo packages to and from your Azure Artifacts feed.
+Using Azure Artifacts, you can publish and download Cargo packages to feeds and public registries. This article will guide you through setting up your project and publishing your cargo packages to your Azure Artifacts feed.
 
 ## Prerequisites
 
@@ -73,3 +73,26 @@ Using Azure Artifacts, you can publish and download Cargo packages to feeds and 
     [source.crates-io]
     replace-with = "FEED_NAME"
     ```
+
+1. Generate a [personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes. Copy your personal access token and store it in a secure location.
+
+1. Run the following command to log in to your registry:
+
+### [PowerShell](#tab/powershell)
+
+```powershell
+"Basic " + [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("PAT:" + (Read-Host -MaskInput "Enter PAT"))) | cargo login --registry FEED_NAME
+```
+
+### [Bash](#tab/bash)
+
+```bash
+read -p "Enter PAT: " PAT; echo Basic $(echo -n PAT:$PAT | base64) | cargo login --registry FEED_NAME
+```
+
+### [Azure CLI](#tab/azcli)
+
+```azurecli
+az login
+az account get-access-token --query "join(' ', ['Bearer', accessToken])" --output tsv | cargo login --registry FEED_NAME
+```
