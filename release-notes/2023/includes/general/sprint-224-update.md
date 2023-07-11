@@ -21,4 +21,4 @@ You can now dismiss any dependency scanning alerts you believe to be a false pos
 
 Note that you may need to re-run detection pipeline with the dependency scanning task as well as ensure you have the `Advanced Security: dismiss alerts` permissions in order to dismiss these alerts. 
 
-To learn more about alert dismissals, see [Dismiss dependency scanning alerts](/azure/repos/security/github-advanced-security-dependency-scanning.md#dismiss-dependency-scanning-alerts).
+To learn more about alert dismissals, see [Dismiss dependency scanning alerts](/azure/devops/repos/security/github-advanced-security-dependency-scanning?view=azure-devops#dismiss-dependency-scanning-alerts).
