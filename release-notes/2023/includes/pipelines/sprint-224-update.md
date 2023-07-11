@@ -34,12 +34,13 @@ Azure VM's can be included in Deployment Groups using a [VM Extension](/azure/de
 }
 ```
 
-### Improvements to Approval REST API
+### Improvements to Approvals REST API
 
-[Approvals](https://learn.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#approvals) increase your YAML pipeline's security by giving you the possibility to manually review a deployment to production. We are updating the [Approvals Query REST API](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/approvals/query) to make them more powerful. Now, you:
-Don't need to specify a list of `approvalId`s. All parameters are now optional.
-Can specify a list of `userId`s to retrieve the list of approvals pending on these users. Currently, the REST API returns the list of approvals for which the users are explicitly assigned as approvers.
-Can specify the `state` of the approvals to be returned, for example, `pending`.
+[Approvals](https://learn.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#approvals) increase your YAML pipeline's security by giving you the possibility to manually review a deployment to production. We updated the [Approvals Query REST API](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/approvals/query) to make it more powerful. Now, you:
+- Don't need to specify a list of `approvalId`s. All parameters are now optional.
+- Can specify a list of `userId`s to retrieve the list of approvals pending on these users. Currently, the REST API returns the list of approvals for which the users are explicitly assigned as approvers.
+- Can specify the `state` of the approvals to be returned, for example, `pending`.
+
 Here is an example:
 `GET https://dev.azure.com/fabrikamfiber/fabrikam-chat/_apis/pipelines/approvals?api-version=7.1-preview.1&userId=47acd774-9773-6c31-bbb6-5a0585695d19&state=pending` returns 
 ```json
@@ -91,7 +92,7 @@ Here is an example:
 
 ### Disable a check 
 
-We are making debugging checks less tedious. Sometimes, an Invoke Azure Function or Invoke REST API check doesn't work correctly, and you need to fix it. Previously, you had to delete such checks, to prevent them from erroneously blocking a deployment. Once you fixed the check, you had to add it back and configure it correctly, making sure all the required headers are set or the query parameters are correct. This is tedious.
+We made debugging checks less tedious. Sometimes, an Invoke Azure Function or Invoke REST API check doesn't work correctly, and you need to fix it. Previously, you had to delete such checks, to prevent them from erroneously blocking a deployment. Once you fixed the check, you had to add it back and configure it correctly, making sure all the required headers are set or the query parameters are correct. This is tedious.
 
 Now, you can just disable a check. The disabled check will not run in subsequent check suite evaluations.
 
@@ -107,7 +108,7 @@ Once you fix the erroneous check, you can just enable it.
 
 In YAML pipelines, you can define [scheduled triggers](https://learn.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml#scheduled-triggers) using the `cron` YAML property.
 
-We have updated how the `batch` property works. In a nutshell, if you set `batch` to `true`, the cron schedule will _not_ run if another scheduled pipeline run is in progress. This is regardless of the version of the pipeline repository.
+We updated how the `batch` property works. In a nutshell, if you set `batch` to `true`, the cron schedule will _not_ run if another scheduled pipeline run is in progress. This is regardless of the version of the pipeline repository.
 
 The following table describes how `always` and `batch` interact.
 
