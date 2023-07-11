@@ -68,7 +68,7 @@ Azure DevOps can also perform additional CAP validation once you're signed in an
 * All conditional access policies will be checked for all web flows, at least once per hour.
 * If the **“Enable IP Conditional Access policy Validation on non-interactive flows”** organization policy is enabled, we will check IP fencing policies for non-interactive flows, such as third-party cient flows like using a PAT with git operations.
 * Sign-in policies may be enforced for PATs as well. Using PATs to make Azure AD calls requires the user to adhere to any sign-in policies that are set. For example, if a sign-in policy requires that a user sign in every seven days, you must also sign in every seven days, if you wish to continue using PATs to make requests to Azure AD.
-* If you do not want CAPs to be applied to Azure DevOps 
+* If you do not want any CAPs to be applied to Azure DevOps, remove Azure DevOps as a resource for the CAP. We will not be doing org-by-org enforcement of CAPs on Azure DevOps.
 
 We support MFA policies on web flows only. For non-interactive flows, if they do not satisfy the conditional access policy, the user will not be prompted for MFA and will be blocked instead.
 
