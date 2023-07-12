@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 7/11/2023
+ms.date: 7/12/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -357,6 +357,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>N/A</td>
       </tr>    
       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
+        <td>General</td>
+        <td>N/A</td>
+      </tr>      
+      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (general availability)</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -364,21 +369,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
         <td>Boards</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section" data-raw-source="[Chart click thru to results by section](/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section)">Chart click thru to results by section</a></td>
-        <td>Reporting</td>
-        <td>Future</td>
-      </tr> 
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
-        <td>Reporting</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/2023/sprint-217-update#pull-request-widget-for-multiple-repos-private-preview" data-raw-source="[Pull request widget for multiple repos](/azure/devops/release-notes/2023/sprint-217-update#pull-request-widget-for-multiple-repos-private-preview)">Pull request widget for multiple repos (general availability)</a></td>
-        <td>Reporting</td>
         <td>Future</td>
       </tr>
       <tr>
@@ -440,24 +430,24 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/support-for-cargo-package" data-raw-source="[Support for Cargo package manager for Rust](/azure/devops/release-notes/roadmap/support-for-cargo-package)">Support for Cargo package manager for Rust</a></td>
         <td>Artifacts</td>
         <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section" data-raw-source="[Chart click thru to results by section](/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section)">Chart click thru to results by section</a></td>
+        <td>Reporting</td>
+        <td>Future</td>
+      </tr> 
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
+        <td>Reporting</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/2023/sprint-217-update#pull-request-widget-for-multiple-repos-private-preview" data-raw-source="[Pull request widget for multiple repos](/azure/devops/release-notes/2023/sprint-217-update#pull-request-widget-for-multiple-repos-private-preview)">Pull request widget for multiple repos (general availability)</a></td>
+        <td>Reporting</td>
+        <td>Future</td>
       </tr>                  
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
-        <td>General</td>
-        <td>N/A</td>
-      </tr>
-      <tr>
         <td rowspan="5"><strong>2023 Q4</strong></td>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/improvements-to-code-coverage" data-raw-source="[Improvements to code coverage user experience in Pipeline results page](/azure/devops/release-notes/roadmap/2023/improvements-to-code-coverage)">Improvements to code coverage user experience in Pipeline results page</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/generate-code-coverage-results" data-raw-source="[Generate code coverage results in source /folder level view](/azure/devops/release-notes/roadmap/2023/generate-code-coverage-results)">Generate code coverage results in source /folder level view</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -473,7 +463,42 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr> 
       <tr>
-        <td rowspan="12"><strong>Future</strong></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/improvements-to-code-coverage" data-raw-source="[Improvements to code coverage user experience in Pipeline results page](/azure/devops/release-notes/roadmap/2023/improvements-to-code-coverage)">Improvements to code coverage user experience in Pipeline results page</a></td>
+        <td>Test Plans</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/generate-code-coverage-results" data-raw-source="[Generate code coverage results in source /folder level view](/azure/devops/release-notes/roadmap/2023/generate-code-coverage-results)">Generate code coverage results in source /folder level view</a></td>
+        <td>Test Plans</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+      <td rowspan="12"><strong>Future</strong></td>
+        <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
+        <td>General</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable alternate authentication credentials](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
+        <td>General</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full support for Conditional Access Policies</a></td>
+        <td>General</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/access-events-for-pat" data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](/azure/devops/release-notes/roadmap/access-events-for-pat)">Access events for PAT, SSH will be available in the Auditing Log</a></td>
+        <td>General</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (GA)](/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (GA)</a></td>
+        <td>General</td>
+        <td>N/A</td>
+      </tr>
+      <tr>          
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -508,32 +533,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Test Plans</td>
         <td>Future</td>
       </tr>   
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
-        <td>General</td>
-        <td>N/A</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable alternate authentication credentials](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
-        <td>General</td>
-        <td>N/A</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full support for Conditional Access Policies</a></td>
-        <td>General</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/access-events-for-pat" data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](/azure/devops/release-notes/roadmap/access-events-for-pat)">Access events for PAT, SSH will be available in the Auditing Log</a></td>
-        <td>General</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (GA)](/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (GA)</a></td>
-        <td>General</td>
-        <td>N/A</td>
-      </tr>
-    </tbody>
+   </tbody>
 </table>
 
 ---
