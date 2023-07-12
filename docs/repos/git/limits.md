@@ -62,3 +62,23 @@ If the repository is more than 5GB, then you must use the web to [Import the rep
 
 ### Push size for LFS objects
 [Git LFS](https://git-lfs.github.com/) doesn't count towards the 5GB repo limit. The 5GB limit is only for files in the actual repo, not blobs stored as part of LFS. If you get failing pushes on the 5GB limit verify your ````.gitattributes```` file includes the extensions of the files you mean to track using LFS and that this file was saved and staged before you staged the large files to be tracked.
+
+## Path length
+
+Azure Repos has a push policy that limits the length of paths in a Git repository by rejecting pushes that introduce too-long paths.
+Unlike [Maximum path length policy](repository-settings.md#maximum-path-length-policy), there's no way to disable or override this policy with a different limit as it enforces the maximum possible values supported by our platform.
+
+There are two limits enforced:
+- Total path length: 32766 characters
+- Path component length (i.e. folder or file name): 4096 characters
+
+It only affects newly introduced paths in a push. If you change an existing file, it does not apply. But if you create a new file or rename or move an existing one, it does apply.
+
+If some of the commits being pushed introduce paths that exceed the limits, the push will be rejected with the following error message:
+```
+VS403729: The push was rejected because commit '6fbe8dc700fdb33ef512e2b9e35436faf555de76' contains a path, which exceeds the maximum length of 32766 characters.
+```
+or
+```
+VS403729: The push was rejected because commit 'd23277abfe2d8dcbb88456da880de631994dabb4' contains a path component, which exceeds the maximum length of 4096 characters.
+```
