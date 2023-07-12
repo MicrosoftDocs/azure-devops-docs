@@ -120,6 +120,6 @@ More experiences are in the works to improve and expand on the mobile experience
 
 Help us improve the mobile experience. 
 
-To provide feedback, select the list control from the work item form and then select **Send Feedback**. To complete the feedback, select either the smile or frown and optionally enter a comment. 
+To provide feedback, select the list control from the work item form and then select **Make a suggestion**. You can also **Report a bug** and **Contact support**.
 
 :::image type="content" source="media/mobile-work-send-feedback.png" alt-text="Screenshot of the mobile work item form, Send feedback.":::
