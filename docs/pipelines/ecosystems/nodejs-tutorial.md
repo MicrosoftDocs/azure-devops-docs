@@ -129,57 +129,96 @@ Use the Azure CLI to add the resources needed to deploy and run an App Service i
    ```
 
 ## Create the pipeline from a template
-TODO: Add introduction sentence(s)
-[Include a sentence or two to explain only what is needed to complete the procedure.]
-TODO: Add ordered list of procedure steps
-1. Step 1
-1. Step 2
-1. Step 3
+
+This process generates a pipelines configuration file named *azure-pipelines.yml*, which lives in the root directory of your Git repository.
+
+
+1. Sign into your account at [dev.azure.com](https://dev.azure.com?azure-portal=true).
+
+1. Select **+ New project**.
+
+   The **Create new project** dialog box opens.
+
+1. Create a new project with the following options.
+
+   | Field                              | Description  |
+   |:-----------------------------------|:-------------|
+   | **Project name**                   | Enter a name such as *nodejs-hello-world*. |
+   | **Visibility**                     | Choose whether to make your project public or private. |
+   | **Advanced** > **Version control** | Select **Git**. |
+
+
+1. Go to your ***nodejs-hello-world*** project.
+
+1. Go to **Pipelines**, and then select **Create pipeline**.
+
+1. Complete the steps of the wizard by first selecting **GitHub** as the location of your source code.
+
+1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+1. When you see the list of repositories, select your repository.
+
+1. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
+
+1. On the **Select** tab, select your ***nodejs-docs-hello-world*** repository.
+
+1. On the **Configure** tab, select **Node.js Express Web App to Linux on Azure**.
+
+    When prompted:
+
+    1. Select the Azure subscription from which you created the resources earlier.
+    1. Select **Continue**.
+    1. Select the app name you created earlier, for example **helloworld-nodejs-16353**.
+    1. Select **Validate and configure**.
+
+1. On the **Review** tab, review the code for your pipeline configuration. 
+
+1. Select **Save** to save your changes.
+1. 
 
 ## Deploy the Node.js app to Azure App Service
-TODO: Add introduction sentence(s)
-[Include a sentence or two to explain only what is needed to complete the procedure.]
-TODO: Add ordered list of procedure steps
-1. Step 1
-1. Step 2
-1. Step 3
 
+Once you run your pipeline, the code deploys to Azure App Service. The pipeline is configured to run whenever a change is committed to the `main` branch. 
+
+1. Make a small, insignificant change to your pipeline YAML such as adding a space. Select **Save and run** again to commit git changes and trigger the pipeline to run.
+
+1. In Azure DevOps, go to **Pipelines** > **Pipelines** and select your pipeline. 
+
+1. Watch your pipeline run and trace its build. 
+
+1. After the build succeeds, select the deploy task, and select the URL to view the deployed website.
+
+   :::image type="content" source="media/nodejs-tutorial/deploy-url.png" alt-text="Screenshot of the web site URL location in Azure Pipelines.":::
+
+1. Go to the deployed website URL and verify that you see the site running on App Service.
+
+    :::image type="content" source="media/nodejs-tutorial/hello-world-site.png" alt-text="Screenshot of the Node.js application running in a web browser.":::
 
 
 ## Clean up resources
 
-If you're not going to continue to use this application, delete
-<resources> with the following steps:
+If you're not going to continue to use this application, delete the resource group in Azure Portal and the project in Azure DevOps with the following steps:
 
-1. From the left-hand menu...
-2. ...click Delete, type...and then click Delete
+To clean up your resource group:
 
-<!-- 9. Next step/Related content ------------------------------------------------------------------------ 
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
+1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
 
-Optional: You have two options for manually curated links in this pattern: Next step and Related content. You don't have to use either, but don't use both.
-  - For Next step, provide one link to the next step in a sequence. Use the blue box format
-  - For Related content provide 1-3 links. Include some context so the customer can determine why they would click the link. Add a context sentence for the following links.
+   :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
--->
+1. Run the following [az group delete](/cli/azure/group#az-group-delete) command to delete the resource group that you used, `hello-world-nodejs-rg`.
 
-## Next step
+    ```azurecli
+    az group delete --name hello-world-nodejs-rg
+    ```
+To delete your Azure DevOps project, including the build pipeline:
 
-TODO: Add your next step link(s)
+1. In Azure DevOps, navigate to your project. 
+1. Select **Project settings**.
+1. In the **Project details**, select **Delete**.
 
-> [!div class="nextstepaction"]
-> [Write concepts](article-concept.md)
-
-<!-- OR -->
 
 ## Related content
 
-TODO: Add your next step link(s)
-
-- [Write concepts](article-concept.md)
-
-<!--
-Remove all the comments in this template before you sign-off or merge to the main branch.
--->
-
-
-[def]: https://portal.azure.com?azure-portal=true
+- [Customize JavaScript](customize-javascript.md)
+- [Deploy to App Service using Azure Pipelines](/azure/app-service/deploy-azure-pipelines)
