@@ -17,6 +17,13 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
+::: moniker range=">= azure-devops-2020"
+
+> [!TIP]  
+> The recommended approach for bulk import or update of work items is to use the [web portal](../bulk-modify-work-items.md) or [CSV import](../../queries/import-work-items-from-csv.md).
+
+::: moniker-end
+
 When you need to add or modify many work items, using Microsoft Excel can save you time. Excel supports adding work items, updating existing work items, adding links and attachments to multiple work items, and more. You can also use native Excel features to support other actions, such as summing a column, copy-and-paste rows, fill down data into cells, and more. 
 
 In this article you'll learn how to complete the following tasks:  
@@ -36,13 +43,6 @@ In this article you'll learn how to complete the following tasks:
 > * Edit Area and Iteration Paths (opens in web portal)   
 
 For information about connecting to Excel, see [Connect Azure Boards to an Office client](track-work.md). For answers to specific questions about the integration of Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.yml).  
-
-::: moniker range=">= azure-devops-2020"
-
-> [!NOTE]  
-> If you don't have access to Excel, you can still perform bulk import and update using CSV formatted files. For more information, see [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md).
-
-::: moniker-end
 
 ## Prerequisites 
 
@@ -669,10 +669,10 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 
 ::: moniker range=">= azure-devops-2020"  
 
-- [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
+- [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  
+- [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
-- [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [View and add work items](../../work-items/view-add-work-items.md) 
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
@@ -680,7 +680,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 
 ::: moniker range="< azure-devops"
 
-- [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
+- [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
 - [Create Excel reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)
