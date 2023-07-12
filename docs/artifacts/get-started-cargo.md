@@ -22,6 +22,11 @@ Using Azure Artifacts, you can publish and download Cargo packages to feeds and 
 
 ## Create a feed
 
+If you already have an existing Azure Artifacts feed that can be used for Cargo you can jump to the next section. 
+
+> [!NOTE]
+> Azure Artifacts recommends using a distinct feed for consuming crates from crates.io, and a separate feed exclusively for publishing internal crates.
+ 
 ::: moniker range=">= azure-devops-2019"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
@@ -96,3 +101,19 @@ read -p "Enter PAT: " PAT; echo Basic $(echo -n PAT:$PAT | base64) | cargo login
 az login
 az account get-access-token --query "join(' ', ['Bearer', accessToken])" --output tsv | cargo login --registry FEED_NAME
 ```
+
+## Publish packages
+
+To publish your Cargo package, run the following command in your project directory:
+
+```
+cargo publish
+```
+
+## Related articles
+
+- [Promote a package to a view](/feeds/views.md)
+
+- [Manage permissions](/feeds/feed-permissions.md)
+
+- [Use upstream sources](/concepts/upstream-sources.md)
