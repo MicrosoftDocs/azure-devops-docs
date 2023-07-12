@@ -20,7 +20,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
+- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You need your own Azure subscription to complete this tutorial.
 - A GitHub account where you can create a repository. [Create one for free](https://github.com).
 - An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up) with access to [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs). If your organization doesn't have access to parallel jobs, you can request parallel jobs for free for public or private projects using [this form](https://aka.ms/azpipelines-parallelism-request). Your request takes 2-3 business days.
 - Familiarity with [Azure App Service](/azure/app-service/) and [Azure DevOps](/azure/devops/). 
@@ -46,12 +46,87 @@ To fork the sample application, you'll need to sign in to GitHub, go to the samp
 
 
 ## Create Azure App Service resources
-TODO: Add introduction sentence(s)
-[Include a sentence or two to explain only what is needed to complete the procedure.]
-TODO: Add ordered list of procedure steps
-1. Step 1
-1. Step 2
-1. Step 3
+
+Use the Azure CLI to add the resources needed to deploy and run an App Service instance. You'll access Azure CLI from Azure Cloud Shell. 
+
+1. Go to the [Azure portal][https://portal.azure.com?azure-portal=true] and sign in.
+
+1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
+
+    :::image type="content" source="../apps/cd/azure/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the Cloud Shell menu item. ":::
+
+   > [!NOTE]
+   > Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
+
+1. From Cloud Shell, run the following [az account list-locations](/cli/azure/account#az-account-list-locations) command to list the regions that are available from your Azure subscription.
+
+   ```azurecli
+   az account list-locations \
+     --query "[].{Name: name, DisplayName: displayName}" \
+     --output table
+   ```
+1. From the `Name` column in the output, choose a region that's close to you. For example, choose `eastasia` or `westus2`.
+
+1. Run [az configure](/cli/azure/reference-index#az-configure) to set your default region. Replace `<REGION>` with the name of the region you chose. This example sets `westus2` as the default region:
+
+   ```azurecli
+   az configure --defaults location=westus2
+   ```
+
+1. Generate a random number to make your resource names unique. The advantage of having a unique value is that your App Service instance won't have a name conflict with other learners completing this tutorial. 
+
+
+   ```bash
+   resourceSuffix=$RANDOM
+   ```
+
+1. Create globally unique names for your App Service Web App, resource group, and App Service plan.
+
+   ```bash
+   webName="helloworld-nodejs-${resourceSuffix}"
+   rgName='hello-world-nodejs-rg'
+   planName='helloworld-nodejs-plan'
+   ```
+
+1. Run the following [az group create](/cli/azure/group#az-group-create) command to create a resource group using the name defined earlier.
+
+   ```azurecli
+   az group create --name $rgName
+   ```
+
+1. Run the following [az appservice plan create](/cli/azure/appservice/plan#az-appservice-plan-create) command to create an App Service plan using the name defined earlier.
+
+   ```azurecli
+   az appservice plan create \
+     --name $planName \
+     --resource-group $rgName \
+     --sku B1 \
+     --is-linux
+   ```
+
+   The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier. The `--is-linux` argument specifies to use Linux workers.
+
+   > [!IMPORTANT]
+   > If the B1 SKU isn't available in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as S1 (Standard).
+
+1. Run the following [az webapp create](/cli/azure/webapp#az-webapp-create) command to create the App Service instance.
+
+   ```azurecli
+   az webapp create \
+     --name $webName \
+     --resource-group $rgName \
+     --plan $planName \
+     --runtime "node|16-lts"
+   ```
+
+1. Run the following [az webapp list](/cli/azure/webapp#az-webapp-list) command to list the host name and state of the App Service instance.
+
+   ```azurecli
+   az webapp list \
+     --resource-group $rgName \
+     --query "[].{hostName: defaultHostName, state: state}" \
+     --output table
+   ```
 
 ## Create the pipeline from a template
 TODO: Add introduction sentence(s)
@@ -105,3 +180,6 @@ TODO: Add your next step link(s)
 <!--
 Remove all the comments in this template before you sign-off or merge to the main branch.
 -->
+
+
+[def]: https://portal.azure.com?azure-portal=true
