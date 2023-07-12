@@ -7,7 +7,7 @@ ms.date: 07/12/2023
 
 # Tutorial: Automate Node.js deployments with Azure Pipelines
 
-In this tutorial, you'll learn how Azure and Azure DevOps support Node.js applications by building an Azure DevOps pipeline that deploys a Node.js app to Azure App Service. With Azure DevOps Pipelines, you'll be able to deploy your Node.js app automatically and reduce the risk of errors and downtime with continuous integration and continuous delivery. 
+In this tutorial, you'll learn how Azure and Azure DevOps support Node.js applications by building an Azure DevOps pipeline that deploys a Node.js app to Azure App Service. With Azure Pipelines, you'll be able to deploy your Node.js app automatically and reduce the risk of errors and downtime with continuous integration and continuous delivery. 
 
 In this tutorial, you learn how to:
 
@@ -197,7 +197,7 @@ Once you run your pipeline, the code deploys to Azure App Service. The pipeline 
 
 ## Clean up resources
 
-If you're not going to continue to use this application, delete the resource group in Azure Portal and the project in Azure DevOps with the following steps:
+If you're not going to continue to use this application, delete the resource group in Azure portal and the project in Azure DevOps with the following steps:
 
 To clean up your resource group:
 
