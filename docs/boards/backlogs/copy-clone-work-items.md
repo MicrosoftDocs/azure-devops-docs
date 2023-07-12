@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley 
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 06/08/2023
+ms.date: 07/12/2023
 ---
 
 # Copy or clone work items and more
@@ -18,17 +18,17 @@ ms.date: 06/08/2023
    
 ::: moniker range=">= azure-devops-2019"
 
-There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. Also, you can choose to change the project or work item type when copying/cloning a work item. 
+There are two types of copy functions you can use. The first is to copy or duplicate a single work item, referred to as copy or clone.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
-There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. 
+There are two types of copy functions you can use. The first is to copy or duplicate a single work item, referred to as copy or clone. 
 
 ::: moniker-end
 
-The second copy function is to copy a multi-selected list of work items to the clipboard, referred to as copy as HTML or copy to clipboard. 
+The second function is to copy a multi-selected list of work items to the clipboard, referred to as copy as HTML or copy to clipboard. 
 
 ::: moniker range="< azure-devops-2019"
 
@@ -37,11 +37,10 @@ The second copy function is to copy a multi-selected list of work items to the c
 
 ::: moniker-end
 
-
 Use this article to learn how to:  
 
 >[!div class="checklist"]      
-> * Copy or clone a work item, essentially making a duplicate of a work item     
+> * Copy or clone a work item   
 > * Change the work item type, for example from a bug to a user story 
 > * Copy a list of work items to email or share with others  
 > * Copy the URL of a work item  
@@ -54,7 +53,11 @@ Use this article to learn how to:
 
 ## Copy or clone a work item   
 
-Clone a work item when you want to create another instance of it. This action opens a form with all fields prepopulated. Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields prepopulated except for the Title. A related link to the original work item is created. Also any parent link is copied over. No history or attachments are copied over from the original work item.  
+**Copy** a work item when you want to create a new work item that's a duplicate of an existing one. When you copy a work item, you create a new work item with a new ID, but the fields of the new work item are prepopulated with the same values as the original work item. You can then modify the fields of the new work item as needed. A related link to the original work item gets created and any parent link is copied over. No history or attachments are copied over from the original work item.
+
+**Clone** a work item when you want to create an exact copy of an existing work item, including all the fields and attachments, but with a new ID. Cloning is useful when you want to create a new work item that's the same as an existing one, with no field modifications needed.
+
+In other words, **copy** a work item to create a new work item with prepopulated values that you can adjust, and **clone** a work item to create an exact copy.
 
 > [!NOTE]
 > Some fields might get copied, depending on the on-premises version you're working with and how you customized your work item types. If the work item type of the work item that you clone has no state transition rule that says to clear the *Closed By* field when the *State* is **New** or **Active**, then that field gets copied. The current system out-of-box templates have this rule defined, which was added to TFS 2018 and later versions. 
@@ -63,7 +66,7 @@ Clone a work item when you want to create another instance of it. This action op
 
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
 
-   :::image type="content" source="media/copy/choose-copy-work-item-s171.png" alt-text="Screenshot showing."::: ![web portal, user story work item form, open context menu, choose Create copy of work item](media/copy/choose-copy-work-item-s171.png) 
+   :::image type="content" source="media/copy/choose-copy-work-item-s171.png" alt-text="Screenshot showing open context menu with Create copy of work item highlighted.":::
 
 2. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide more details. 
 
@@ -116,10 +119,8 @@ Clone a work item when you want to create another instance of it. This action op
 1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
 ::: moniker-end
 
-
 > [!TIP]    
 > Copied or cloned work items always have an ID that is greater than the work items from which they were copied or cloned.   
-
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -133,14 +134,12 @@ If you have a large number of work items whose type you want to change, use [Cha
 
 ## Copy a list of work items  
 
-With this option, you can copy an HTML formatted table of selected items from either a backlog page or query results list. You can then email this list using your choice of email client, or paste into a Word document, Excel spreadsheet, or other application. 
+You can copy an HTML formatted table of selected items from either a backlog page or query results list. Then, you can send an email of this list using your choice of email client, or paste the list into a Word document, Excel spreadsheet, or other application. 
 
 ::: moniker range="<= azure-devops-2019"
 > [!NOTE]  
 > The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
 ::: moniker-end
-
-
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
 
