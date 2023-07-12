@@ -17,7 +17,7 @@ In this article, you'll create two App Service instances and build a YAML pipeli
 > [!div class="checklist"]
 > * [Build: build the source code and produce a package](#add-the-build-stage)
 > * [Dev: deploy your package to a development site for testing](#add-the-dev-stage)
-> * [Staging: deploy to a staging Azure App Service instance a [manual approval check](approvals.md)](#add-the-staging-stage)
+> * [Staging: deploy to a staging Azure App Service instance with a manual approval check](#add-the-staging-stage)
 
 In a real-world scenario, you may have another stage for deploying to production depending on your DevOps process. 
 
