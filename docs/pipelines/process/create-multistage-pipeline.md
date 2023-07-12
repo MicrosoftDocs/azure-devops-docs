@@ -234,14 +234,30 @@ You'll add new stage, `Staging` to the pipeline that includes a manual approval.
 
 ## Clean up resources
 
-Delete the resource group that you used, *tailspin-space-game-rg*,  with the `az group delete` command.
+ If you're not going to continue to use this application, delete the resource group in Azure portal and the project in Azure DevOps with the following steps:
 
-```azurecli
-az group delete --name tailspin-space-game-rg
-```
+To clean up your resource group:
 
-## Next steps
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
+1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
 
-Advance to the next article to learn how to create...
-> [!div class="nextstepaction"]
-> [Next steps button](contribute-get-started-mvc.md)
+    :::image type="content" source="../apps/cd/azure/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing selecting the Cloud Shell menu item. ":::
+
+1. Run the following [az group delete](/cli/azure/group#az-group-delete) command to delete the resource group that you used, `tailspin-space-game-rg`.
+
+    ```azurecli
+    az group delete --name tailspin-space-game-rg
+    ```
+
+To delete your Azure DevOps project, including the build pipeline:
+
+1. In Azure DevOps, navigate to your project. 
+
+1. Select **Project settings**.
+
+1. In the **Project details**, select **Delete**.
+
+## Related content
+
+- [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)
+- [Deploy to App Service using Azure Pipelines](/azure/app-service/deploy-azure-pipelines)
