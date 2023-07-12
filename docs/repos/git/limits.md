@@ -20,7 +20,7 @@ Our goal is to ensure reliability and availability for all customers.
 Also, by keeping the amount of data and number of pushes reasonable, you can expect to have a better overall experience with Git.
 
 Git participates in [rate limiting](../../integrate/concepts/rate-limits.md) along with the rest of Azure DevOps Services.
-In addition, we impose limits on the total size of repositories and pushes, and file and directory path length restrictions.
+In addition, we impose limits on the total size of repositories, pushes, and length of file and directory paths.
 
 ## Repository size
 
@@ -74,11 +74,6 @@ There are two limits enforced:
 
 It only affects newly introduced paths in a push. If you change an existing file, it doesn't apply. But if you create a new file or rename or move an existing one, it does apply.
 
-If some of the commits being pushed introduce paths that exceed the limits, the push is rejected with the following error message:
-```
-VS403729: The push was rejected because commit '6fbe8dc700fdb33ef512e2b9e35436faf555de76' contains a path, which exceeds the maximum length of 32766 characters.
-```
-or
-```
-VS403729: The push was rejected because commit 'd23277abfe2d8dcbb88456da880de631994dabb4' contains a path component, which exceeds the maximum length of 4096 characters.
-```
+If some of the commits being pushed introduce paths that exceed the limits, the push is rejected with one of the following error messages:
+- `VS403729: The push was rejected because commit '6fbe8dc700fdb33ef512e2b9e35436faf555de76' contains a path, which exceeds the maximum length of 32766 characters.`
+- `VS403729: The push was rejected because commit 'd23277abfe2d8dcbb88456da880de631994dabb4' contains a path component, which exceeds the maximum length of 4096 characters.`
