@@ -27,6 +27,9 @@ To support your work tracking efforts, use Microsoft Excel and Microsoft Project
 
 ::: moniker-end
 
+> [!TIP]  
+> The recommended approach for bulk import or update of work items is to use the [web portal](../bulk-modify-work-items.md) or [CSV import](../../queries/import-work-items-from-csv.md).
+
 > [!IMPORTANT]
 > All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family).
 
@@ -450,8 +453,9 @@ For more extensions that integrate with Microsoft Project, see [Azure Boards mig
 
 ## Related articles
 
+- [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  
+- [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml)
 - [Resolve publishing errors](faqs.yml#how-do-i-resolve-publishing-issues)
-- [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)
 - [Create your backlog](../../backlogs/create-your-backlog.md)
 - [Requirements and compatibility](/azure/devops/server/requirements)

@@ -48,9 +48,9 @@ All work items that you import get created in a *New* state. This rule means tha
    Issue,Remove old test code,2
    ```
 
-3. From the web portal for your project, open **Boards** > **Queries**, and then select the **Import Work Items** option.
+3. From the web portal for your project, open **Boards** - **Queries**, and then select the **Import Work Items** option.
 
-   :::image type="content" source="media/import-csv/open-queries-import.png" alt-text="Screenshot showing Boards - Queries, Import Work Items.":::
+   :::image type="content" source="media/import-csv/open-queries-import.png" alt-text="Screenshot showing Boards - Queries, Import Work Items ":::
 
 4. Select your CSV file and then choose **Import**.
 
@@ -63,9 +63,10 @@ All work items that you import get created in a *New* state. This rule means tha
    :::image type="content" source="media/import-csv/imported-file.png" alt-text="Screenshot showing Save button for imported work items.":::
 
 	> [!NOTE]  
-	> Don't assign IDs to new work items that you're adding, otherwise you receive an error message similar to the following if you do so. 
-	> :::image type="content" source="media/import-csv/import-work-item-ids-assigned.png" alt-text="Screenshot of Error message of work item ID.":::
-
+	> Don't assign IDs to new work items that you're adding, otherwise you will receive an error message. 
+   >
+   > *TFS401232: Work item 1794 does not exist, or you do not have permissions to read it.*
+	
 6. The system highlights those work items with data issues. Resolve the data issues before you save the work items. In this example, an invalid value has been entered into the Priority field. Fix the data by opening the work item directly. Instead, use [bulk edit](../backlogs/bulk-modify-work-items.md) to fix several work items with the same issue.
 
    :::image type="content" source="media/import-csv/imported-file-error.png" alt-text="Screenshot showing fix work items with data issues.":::
