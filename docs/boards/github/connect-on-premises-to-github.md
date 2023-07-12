@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019 < azure-devops'
-ms.date: 07/03/2023
+ms.date: 07/12/2023
 ---
 
 # Connect Azure DevOps Server to GitHub (on-premises)
@@ -34,7 +34,7 @@ When you connect your Azure DevOps Server project with your GitHub Enterprise Se
 
 ## Prerequisites 
  
-* To connect to GitHub.com repositories, you must install Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories.
+* Connect to GitHub.com repositories by installing Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories.
 * [Install the Azure Boards app for GitHub](install-github-app.md) on the GitHub organizations or account. 
 * Connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 * You must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
@@ -46,7 +46,7 @@ The following authentication options are supported.
 
 ::: moniker range="azure-devops-2020"
 - [PAT](#server-github-ent-pat)
-- [Username plus password](#server-github-ent-username)
+- [Username and password](#server-github-ent-username)
 
 > [!NOTE] 
 > OAuth isn't supported for Azure DevOps Server 2020.  
@@ -55,7 +55,7 @@ The following authentication options are supported.
 ::: moniker range="azure-devops-2019"
 - [OAuth (Recommended, registration required)](#server-github-ent-oauth-register) 
 - [PAT](#server-github-ent-pat)
-- [Username plus password](#server-github-ent-username)
+- [Username and password](#server-github-ent-username)
 ::: moniker-end
 
 <a id="github-oauth" />
@@ -171,7 +171,7 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This l
 
 ::: moniker range="azure-devops-2019"
 
-#### Connect using OAuth  
+#### Connect with OAuth  
 
 Choose the configuration that you set up in [Step 4 of Register your OAuth configuration in Azure DevOps Server](#register-server-github-ent-oauth). Then, select **Connect**. 
 
@@ -195,7 +195,7 @@ Choose the configuration that you set up in [Step 4 of Register your OAuth confi
 
 <a id="server-github-ent-username" />
 
-#### Connect with a Username and Password   
+#### Connect with a username and password   
 
 1.	Enter the URL for your GitHub Enterprise server and the administrator account credentials recognized by that server. And then choose **Connect**.
 
@@ -304,7 +304,7 @@ Consider the following resolutions:
 
 #### Update XML definitions for select work item types 
 
-If your organization uses the Hosted XML or on-premises XML process model to customize the work tracking experience and you want to link to and view the GitHub link types from the Development section in the work item forms, you must update the XML definitions for the work item types. 
+If your organization uses the Hosted XML or on-premises XML process model to customize the work tracking experience, and you want to link to and view the GitHub link types from the Development section in the work item forms, you must update the XML definitions for the work item types. 
 
 For example, if you want to link user stories and bugs to GitHub commits and pull requests from the **Development** section, you need to update the XML definitions for user stories and bugs. 
 
