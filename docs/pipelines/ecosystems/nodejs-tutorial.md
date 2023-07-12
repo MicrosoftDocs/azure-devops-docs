@@ -12,10 +12,10 @@ In this tutorial, you'll learn how Azure and Azure DevOps support Node.js applic
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * [Fork a sample application in GitHub]
-> * [Create Azure App Service resources]
-> * [Select the Azure Pipelines Node.js Express Web App to Linux on Azure Azure DevOps template]
-> * [Create an Azure Pipeline that builds and deploys a basic Node.js application to Azure App Service]
+> * [Fork a sample application in GitHub](#fork-the-sample-application)
+> * [Create Azure App Service resources](#create-azure-app-service-resources)
+> * [Select the Azure Pipelines Node.js Express Web App to Linux on Azure Azure DevOps template](#create-the-pipeline-from-a-template)
+> * [Deploy a basic Node.js application to Azure App Service](#deploy-the-nodejs-app-to-azure-app-service)
 
 
 ## Prerequisites
@@ -26,7 +26,7 @@ In this tutorial, you learn how to:
 - Familiarity with [Azure App Service](/azure/app-service/) and [Azure DevOps](/azure/devops/). 
 
 
-## "Fork the sample application"
+## Fork the sample application
 
 To fork the sample application, you'll need to sign in to GitHub, go to the sample repository, and create a fork.
 
@@ -45,7 +45,7 @@ To fork the sample application, you'll need to sign in to GitHub, go to the samp
 1. Verify that you now have a version of the repository in your GitHub account by checking the URL path in a browser. Your URL should be `https://github.com/{GitHub User}/nodejs-docs-hello-world`.
 
 
-## "Create Azure App Service resources"
+## Create Azure App Service resources
 TODO: Add introduction sentence(s)
 [Include a sentence or two to explain only what is needed to complete the procedure.]
 TODO: Add ordered list of procedure steps
@@ -53,7 +53,7 @@ TODO: Add ordered list of procedure steps
 1. Step 2
 1. Step 3
 
-## "Create the pipeline from a template"
+## Create the pipeline from a template
 TODO: Add introduction sentence(s)
 [Include a sentence or two to explain only what is needed to complete the procedure.]
 TODO: Add ordered list of procedure steps
@@ -61,7 +61,7 @@ TODO: Add ordered list of procedure steps
 1. Step 2
 1. Step 3
 
-## "Deploy the Node.js app to Azure App Service"
+## Deploy the Node.js app to Azure App Service
 TODO: Add introduction sentence(s)
 [Include a sentence or two to explain only what is needed to complete the procedure.]
 TODO: Add ordered list of procedure steps
