@@ -203,8 +203,8 @@
     - name: .NET Framework
       href: apps/aspnet/build-aspnet-4.md
       displayName: ASP, ASPNET, web
-    - name: Ecosystems & integration
-     items:
+    - name: JavaScript
+      items:
       - name: JavaScript quickstart
         href: ecosystems/javascript.md
         displayName: node, node.js, nodetool, npm, yarn, react, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
