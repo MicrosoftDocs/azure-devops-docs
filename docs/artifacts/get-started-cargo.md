@@ -83,24 +83,26 @@ If you already have an existing Azure Artifacts feed that can be used for Cargo 
 
 1. Run the following command to log in to your registry:
 
-### [PowerShell](#tab/powershell)
+    ### [PowerShell](#tab/powershell)
+    
+    ```powershell
+    "Basic " + [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("PAT:" + (Read-Host -MaskInput "Enter PAT"))) | cargo login --registry FEED_NAME
+    ```
+    
+    ### [Bash](#tab/bash)
+    
+    ```bash
+    read -p "Enter PAT: " PAT; echo Basic $(echo -n PAT:$PAT | base64) | cargo login --registry FEED_NAME
+    ```
+    
+    ### [Azure CLI](#tab/azcli)
+    
+    ```azurecli
+    az login
+    az account get-access-token --query "join(' ', ['Bearer', accessToken])" --output tsv | cargo login --registry FEED_NAME
+    ```
 
-```powershell
-"Basic " + [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("PAT:" + (Read-Host -MaskInput "Enter PAT"))) | cargo login --registry FEED_NAME
-```
-
-### [Bash](#tab/bash)
-
-```bash
-read -p "Enter PAT: " PAT; echo Basic $(echo -n PAT:$PAT | base64) | cargo login --registry FEED_NAME
-```
-
-### [Azure CLI](#tab/azcli)
-
-```azurecli
-az login
-az account get-access-token --query "join(' ', ['Bearer', accessToken])" --output tsv | cargo login --registry FEED_NAME
-```
+- - -
 
 ## Publish packages
 
@@ -112,8 +114,8 @@ cargo publish
 
 ## Related articles
 
-- [Promote a package to a view](/feeds/views.md)
+- [Promote a package to a view](feeds/views.md)
 
-- [Manage permissions](/feeds/feed-permissions.md)
+- [Manage permissions](feeds/feed-permissions.md)
 
-- [Use upstream sources](/concepts/upstream-sources.md)
+- [Use upstream sources](concepts/upstream-sources.md)
