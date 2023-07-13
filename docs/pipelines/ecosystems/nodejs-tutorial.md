@@ -174,7 +174,7 @@ This process generates a pipelines configuration file named *azure-pipelines.yml
 1. On the **Review** tab, review the code for your pipeline configuration. 
 
 1. Select **Save** to save your changes.
-1. 
+
 
 ## Deploy the Node.js app to Azure App Service
 
