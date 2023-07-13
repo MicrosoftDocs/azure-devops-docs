@@ -202,13 +202,7 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Boards</td>
          <td>2023 Q3</td>
          <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Include additional fields on page filters.](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Include additional fields on page filters</a></td>
-         <td>Boards</td>
-         <td>2023 Q4</td>
-         <td>Future</td>
-      </tr>    
+      </tr>         
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New boards hub on by default.](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
          <td>Boards</td>
@@ -447,16 +441,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>                  
       <tr>
-        <td rowspan="5"><strong>2023 Q4</strong></td>
+        <td rowspan="4"><strong>2023 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>   
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>      
+      </tr>              
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Delivery plans improvements to filtering by parent](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
         <td>Boards</td>
@@ -473,7 +462,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-      <td rowspan="12"><strong>Future</strong></td>
+      <td rowspan="13"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -498,6 +487,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>General</td>
         <td>N/A</td>
       </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr> 
       <tr>          
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
         <td>Boards</td>
