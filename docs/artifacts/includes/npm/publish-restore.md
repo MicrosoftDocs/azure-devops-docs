@@ -20,6 +20,9 @@ ms.date: 01/24/2023
     npm publish
     ```
 
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
+
 ## Restore packages
 
 1. Run the following command in your project directory to restore your npm packages: 
