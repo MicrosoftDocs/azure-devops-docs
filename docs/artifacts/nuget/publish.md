@@ -68,6 +68,9 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
     nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
     ```
 
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
+
 ## Restore packages
 
 Run the following command to restore your packages:
