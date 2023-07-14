@@ -125,6 +125,8 @@ The body of the request is a [JSON Patch](https://jsonpatch.com/) document addin
 
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Universal packages - update package version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
+* * *
+
 - **Example**:
 
 ```HTTP
