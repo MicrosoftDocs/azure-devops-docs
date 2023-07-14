@@ -48,47 +48,86 @@ The body of the request is a [JSON Patch](https://jsonpatch.com/) document addin
 
 ### [NuGet](#tab/nuget)
 
-    ```Command
+- **Organization scoped feed**:
+
+    ```HTTP
+    PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
+    ```
+
+- **Project scoped feed**:
+   
+    ```HTTP
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
     ```
-    
+
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [NuGet - update package version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
 ### [Npm](#tab/npm)
   
-    ```Command
+- **Organization scoped feed**:
+
+    ```HTTP
+    PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
+    ```
+
+- **Project scoped feed**:
+    
+    ```HTTP
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
     ```
-    
+
     Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation) to construct the body of your request. See [npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
 ### [Python](#tab/python)
-   
-    ```Command
+ 
+- **Organization scoped feed**:
+  
+    ```HTTP
+    PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
+    ```
+
+- **Project scoped feed**:
+    
+    ```HTTP
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
     ```
-    
+
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Python - update package version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
 ### [Maven](#tab/maven)
 
-    ```Command
+- **Organization scoped feed**:
+
+    ```HTTP
+    PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feed}/maven/groups/{groupId}/artifacts/{artifactId}/versions/{version}?api-version=7.1-preview.1
+    ```
+- **Project scoped feed**:
+   
+    ```HTTP
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feed}/maven/groups/{groupId}/artifacts/{artifactId}/versions/{version}?api-version=7.1-preview.1
     ```
-    
+
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Maven  - update package version](/rest/api/azure/devops/artifactspackagetypes/maven/update-package-version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
 ### [Universal Packages](#tab/universalpackages)
     
-    ```Command
+- **Organization scoped feed**:
+
+    ```HTTP
+    PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
+    ```
+
+- **Project scoped feed**:
+
+    ```HTTP
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
     ```
-    
+
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Universal packages - update package version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
 - **Example**:
 
-```http
+```HTTP
 PATCH https://pkgs.dev.azure.com/fabrikam-fiber-inc/litware/_apis/packaging/feeds/litware-tools/nuget/packages/LitWare.Common/versions/1.0.0?api-version=5.1-preview.1 HTTP/1.1
 Content-Type: application/json-patch+json
 
