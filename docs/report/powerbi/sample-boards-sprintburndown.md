@@ -3,32 +3,41 @@ title: Sprint Burndown sample Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to generate a sprint burndown Power BI report.
 ms.subservice: azure-devops-analytics
-ms.custom: powerbisample
-ms.author: kaelli
-author: KathrynEE
+ms.custom: powerbisample, engagement-fy23, engagement-fy23
+ms.author: chcomley
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 12/08/2022
 ---
 
 # Sprint burndown sample reports
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article shows you how to display the current sprint's burndown of User Stories. The following example shows a burndown of both a sum of Story Points and a count of User Stories.
+Sprint burndown charts are useful to monitor how well a team is executing on their sprint plan. Several built-in charts and dashboard widgets support monitoring sprint burndown. See [Configure and monitor sprint burndown](../dashboards/configure-sprint-burndown.md). 
 
-> [!div class="mx-imgBorder"] 
-> ![sprint burndown by total story points and count of user stories](media/odatapowerbi-sprintburndown-report.png)
+However, you can customize a sprint burndown chart using Analytics and Power BI with the queries provided in this article. The following example shows a burndown of User Stories and their States.  
+
+:::image type="content" source="media/reports-boards/sprint-burndown-clustered-column-chart.png" alt-text="Screenshot of Power BI Sprint burndown clustered column chart report.":::
+ 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
+
+To learn more about burndown and burnup, and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
+ 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
-
-## Goal
-
-Burndown User Stories in the current Sprint
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+ 
 
 ## Sample queries
+
+Burndown charts require querying the `WorkItemSnapshot` entity set to get historical data.  
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
+
+### Burndown User Stories for an area path and the current iteration
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -78,7 +87,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 * `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`. 
@@ -97,6 +106,7 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -205,45 +215,9 @@ The following table describes each part of the query.
 :::row-end:::
 
 
-[!INCLUDE [temp](includes/query-filters-work-items.md)]
-
-## Power BI transforms
-
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
-
-[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Power BI + OData - expanding an entity column](media/odatapowerbi-sprintburndown-fields.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Clustered column chart**. 
-1. Add the field "DateValue" to **Axis**
-    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
-1. Add the field "TotalStoryPoints" to **Values**
-1. Add the field "Count" to **Values**
-
-The example report, which displays burndown on both Story Points and Count of Stories.
-
-> [!div class="mx-imgBorder"] 
-> ![sprint burndown by total story points and count of user stories](media/odatapowerbi-sprintburndown-report.png)
-
-[!INCLUDE [temp](includes/sample-multipleteams.md)]
-
-## Additional queries
-
-You can use the following additional queries to create different but similar reports. You can use these queries with the steps defined above.
-
-### Filter by Teams, rather than Area Path
+### Burndown User Stories for a team and the current iteration
 
 This query is the same as the one used above, except it filters by Team Name rather than Area Path. 
 
@@ -295,9 +269,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 * * *
 
-### All Sprints since the beginning of the year
+### Burndown User Stories for all sprints since the start of a year   
 
-You may want to view a burndown of all the sprints in a single report. These queries pulls in sprint burndowns (by story points) for all the sprints since the beginning of the year 2019.
+You may want to view a burndown of all the sprints in a single report. These queries pull in sprint burndowns, and their by story points, for all  sprints since the beginning of year 2022.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -312,7 +286,7 @@ let
             &"and StateCategory ne 'Completed' "
             &"and DateValue ge Iteration/StartDate "
             &"and DateValue le Iteration/EndDate "
-            &"and Iteration/StartDate ge 2019-01-01Z "
+            &"and Iteration/StartDate ge 2022-01-01Z "
         &") "
         &"/groupby( "
             &"(DateValue,Iteration/EndDate,Area/AreaPath,Iteration/IterationPath,State,WorkItemType,Priority,AreaSK), "
@@ -335,7 +309,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
             and StateCategory ne 'Completed'
             and DateValue ge Iteration/StartDate
             and DateValue le Iteration/EndDate
-            and Iteration/StartDate ge 2019-01-01Z
+            and Iteration/StartDate ge 2022-01-01Z
         )
         /groupby(
             (DateValue,Iteration/EndDate,Area/AreaPath,Iteration/IterationPath,State,WorkItemType,Priority,AreaSK),
@@ -347,8 +321,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 <a id="remaining-work" />
 
-
-### Burndown by Tasks' Remaining Work
+### Burndown Tasks and Remaining Work
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -399,9 +372,38 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-## Full list of sample reports
 
-[!INCLUDE [temp](includes/sample-fulllist.md)]
+
+[!INCLUDE [temp](includes/rename-query.md)]
+
+
+## Expand columns in Power Query Editor
+
+Prior to creating the report, you'll need to expand columns that return records containing several fields. In this instance, you'll want to expand the following records: 
+- `Area`
+- `Iteration`
+- `AssignedTo` 
+
+To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
+ 
+[!INCLUDE [temp](includes/close-apply.md)]
+
+## Create the stacked column chart report
+
+1. In Power BI, choose the **Stacked column chart** report under **Visualizations**. 
+
+	:::image type="content" source="media/reports-boards/sprint-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Sprint Burndown report. ":::
+
+1. Add `DateValue` to **X-Axis**, right-click and select `DateValue`, rather than `Date Hierarchy`   
+
+1. Add `Count` to **Y-Axis**. 
+
+1. Add `State` to **Y-Axis**. 
+
+The example report, which displays burndown on both Story Points and Count of Stories.
+
+
+:::image type="content" source="media/reports-boards/sprint-burndown-clustered-column-chart.png" alt-text="Screenshot of Sample Power BI Sprint burndown clustered column chart report.":::
 
 ## Related articles
 

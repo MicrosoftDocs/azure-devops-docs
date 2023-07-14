@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to view, run, or favorite a query in Azure Boards and Azure DevOps. 
 ms.custom: boards-queries
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -36,7 +36,7 @@ You can also run a query by using the [Azure DevOps command line interface](#cli
 #### [Browser](#tab/browser/) 
 
 > [!TIP]    
-> The **Queries** page, as with other web portal pages, remembers the view you last navigated to and returns you to that view.
+> The **Queries** page, as with other web portal pages, remembers the view you last went to and returns you to that view.
 	
 ::: moniker range=">= azure-devops-2019"
 1. Choose **All** to open the page where you can view all queries you've defined or that are shared within your project. 
@@ -46,7 +46,7 @@ You can also run a query by using the [Azure DevOps command line interface](#cli
 
 1. Choose **My Queries** as needed. 
    - To view all work items assigned to you, choose **Assigned to me**. This query uses the <strong>@Me</strong>  macro to list all work items assigned to you.  
-   - To view all work items you're following, choose **Followed work items**. This query uses the <strong>@Follows</strong>  macro (ID in @Follows) to list all work items you've chosen to follow. To learn more, see [Follow a work item or pull request](../work-items/follow-work-items.md).  
+   - To view all work items you're following, choose **Followed work items**. This query uses the <strong>@Follows</strong>  macro (ID in @Follows) to list all work items you've chosen to follow. For more information, see [Follow a work item or pull request](../work-items/follow-work-items.md).  
 
 2. Choose **Shared Queries** to expand the folder and access queries saved as shared queries. 
 
@@ -147,7 +147,7 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 ::: moniker range=">= azure-devops-2019"
 
 The **Queries** page  contains a directory-focused view that you can filter to find specific queries of interest. 
-When working in the **Queries** pages, you can navigate to a subfolder, folder, or page.
+When you're working in the **Queries** pages, you can go to a subfolder, folder, or page.
 
 ![Queries breadcrumbs](../../project/navigation/media/breadcrumbs/queries-breadcrumbs.png)
 
@@ -161,7 +161,7 @@ Also, you can choose a query that you've favorited from the selector menu, Or, y
 
 ::: moniker range="< azure-devops-2019"  
 
-The **Queries** page displays the folder structure in the left pane. You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. To learn more, see [Manage and organize queries](../queries/organize-queries.md).
+The **Queries** page displays the folder structure in the left pane. You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. For more information, see [Manage and organize queries](../queries/organize-queries.md).
 
 :::image type="content" source="media/organize-queries/query-folders-tfs.png" alt-text="Screenshot of Queries page, TFS 2018 and earlier versions.":::
 
@@ -174,7 +174,7 @@ The **Work Items** page displays the same folder structure as defined in the web
 
 :::image type="content" source="media/organize-queries/query-folders-visual-studio.png" alt-text="Screenshot of Work Items page, Visual Studio showing query folders.":::
 
-You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. To learn more, see [Manage and organize queries](../queries/organize-queries.md)
+You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. For more information, see [Manage and organize queries](../queries/organize-queries.md)
 
 * * *
 
@@ -249,7 +249,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 ![Web portal, Query Editor/Results, Copy query URL](media/view-run-queries/copy-url-old-exp.png)  
 
 > [!NOTE]
-> With **Email query**, the system will email the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). All email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
+> With **Email query**, the system sends an email of the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). All email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 
 ::: moniker-end
  
@@ -265,7 +265,7 @@ You can email a formatted query list by choosing the **Send to Microsoft Outlook
 
 * * * 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Define a query](using-queries.md)

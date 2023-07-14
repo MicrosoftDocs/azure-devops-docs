@@ -1,14 +1,14 @@
 ---
 title: Service hook consumers
 description: Service hooks consumer documentation for Azure DevOps.
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, devx-track-jenkins
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
 ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/14/2022
+ms.date: 11/21/2022
 ---
 
 # Service hook consumers
@@ -22,7 +22,6 @@ Select the consumer that you want to use in your subscription from the following
 - [Azure Service Bus](#azure-service-bus)
 - [Azure Storage](#azure-storage)
 - [Campfire](#campfire)
-- [Flowdock](#flowdock)
 - [Jenkins](#jenkins)
 - [Kato](#kato)
 - [Trello](#trello)
@@ -186,7 +185,7 @@ Campfire is similar to instant messaging, but designed exclusively for groups.
 
 ### Post a message to a room
 
-Post a message about the event to a room in Campfire. For more information, see [Campfire](https://docs.helpscout.com/article/263-campfire).
+Post a message about the event to a room in Campfire.
 
 * Consumer ID: **campfire**
 * Action ID: **postMessageToRoom**
@@ -211,100 +210,6 @@ Post a message about the event to a room in Campfire. For more information, see 
     * Send a detailed message
     * Post a short or detailed message about the event.
     * Data type: **boolean**
-    * Required: **No**
-
-<a id="flowdock"></a>
-
-## Flowdock
-
-Flowdock is chat and inbox for teams.
-
-### Post a message to a team chat
-
-Post a message about the event to a team chat in Flowdock.
-
-* Consumer ID: **flowdock**
-* Action ID: **postMessageToChat**
-* Supported events: **build.complete, git.push, tfvc.checkin, workitem.created, workitem.commented, workitem.updated**
-* Settings:
-  * **flowAPIToken**
-    * Flow API token
-    * The authorization token to post messages to a team inbox or a group chat. You can get the flow API Token from Flowdock (account settings).
-    * Data type: **string**
-    * Required: **Yes**
-  * **flowName**
-    * Flow name
-    * Flow name as seen in Flowdock
-    * Data type: **string**
-    * Required: **No**
-  * **showDetails**
-    * Send a detailed message
-    * Post a short or detailed message about the event.
-    * Data type: **boolean**
-    * Required: **No**
-  * **externalUserName**
-    * Sender user name
-    * Name of the "user" sending the message.
-    * Data type: **string**
-    * Required: **Yes**
-  * **tags**
-    * Tags
-    * List of tags to be added to the message (comma separated). User tags should start with '@'. Hashtags can optionally be prefixed with "#". Tags are case insensitive.
-    * Data type: **string**
-    * Required: **No**
-
-### Post a message to a team inbox
-
-Post a message about the event to a team inbox in Flowdock.
-
-* Consumer ID: **flowdock**
-* Action ID: **postMessageToTeamInbox**
-* Supported events: **build.complete, git.push, tfvc.checkin, workitem.created, workitem.commented, workitem.updated**
-* Settings:
-  * **flowAPIToken**
-    * Flow API token
-    * The authorization token to post messages to a team inbox or a group chat. You can get the flow API Token from Flowdock ([account settings](https://www.flowdock.com/account/tokens)).
-    * Data type: **string**
-    * Required: **Yes**
-  * **flowName**
-    * Flow name
-    * Flow name as seen in Flowdock
-    * Data type: **string**
-    * Required: **No**
-  * **showDetails**
-    * Send a detailed message
-    * Post a short or detailed message about the event.
-    * Data type: **boolean**
-    * Required: **No**
-  * **subject**
-    * Subject
-    * Subject line of the message (displayed as the title of the team inbox message)
-    * Data type: **string**
-    * Required: **Yes**
-  * **fromName**
-    * From name
-    * Name of the message sender
-    * Data type: **string**
-    * Required: **No**
-  * **fromAddress**
-    * From address
-    * Email address of the message sender (used to show an avatar of the sender)
-    * Data type: **string**
-    * Required: **Yes**
-  * **replyTo**
-    * Reply to
-    * Email address for replies (used when replying to the message within Flowdock)
-    * Data type: **string**
-    * Required: **No**
-  * **project**
-    * Project
-    * Human readable identifier for more detailed message categorization
-    * Data type: **string**
-    * Required: **No**
-  * **tags**
-    * Tags
-    * List of tags to be added to the message (comma separated). User tags should start with '@'. Hashtags can optionally be prefixed with "#". Tags are case insensitive.
-    * Data type: **string**
     * Required: **No**
 
 ## Jenkins

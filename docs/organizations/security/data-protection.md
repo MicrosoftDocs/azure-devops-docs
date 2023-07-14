@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 10/14/2022
+ms.date: 05/17/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -53,7 +53,7 @@ Azure DevOps uses Azure Storage as the primary repository for service metadata a
 
 - **Azure SQL Database storage** stores the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project, and provides indexes into the blob storage to look up files and attachments. For more information, see [Azure SQL Database](/azure/azure-sql/database).
 
-Administrators can manage access to resources by [granting or restricting permissions](../../reference/process-templates/configure-initial-groups-teams-members-permissions.md) on user identities or groups. Azure DevOps uses federated authentication of user identities via [Azure Active Directory](../accounts/access-with-azure-ad.md) (Azure AD) and Microsoft accounts. 
+Administrators can manage access to resources by [granting or restricting permissions](/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions) on user identities or groups. Azure DevOps uses federated authentication of user identities via [Azure Active Directory](../accounts/access-with-azure-ad.md) (Azure AD) and Microsoft accounts. 
 
 During authentication, the user is routed to the authentication provider, where they provide their credentials. After the authentication provider has verified the user's credentials, Azure DevOps issues an authentication cookie to the user, which allows the user to remain authenticated against Azure DevOps.
 
@@ -91,7 +91,7 @@ A further protection is that customers can recover their deleted organizations o
 
 Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, the restores do." While technically incorrect, the sentiment is right.
 
-Microsoft regularly practices restoring various datasets from backup. Geo-redundant storage from Azure is tested regularly. Also, from time to time, we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. There are many combinations of disaster and data corruption scenarios, which we continue to plan and run new tests for regularly.
+Microsoft regularly practices restoring various datasets from backup. Geo-redundant storage from Azure is tested regularly. There are many combinations of disaster and data corruption scenarios, which we continue to plan and run new tests for regularly.
 
 ## Service availability
 
@@ -176,11 +176,18 @@ Also, data we store on your behalf in Azure DevOps gets encrypted as follows:
 
 * Azure Blob Storage connections get encrypted to protect your data in transit. To protect data at rest stored in Azure Blob Storage, Azure DevOps uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption).
 
+> [!NOTE]
+> Azure DevOps is not Federal Information Processing Standards (FIPS) 140-2 or 140-3 compliant.
+
 The Azure infrastructure helps the Azure DevOps team to log and monitor key aspects of the service. This helps ensure that activities within the service are legitimate, and detects breaches or attempted breaches. In addition, all deployment and administrator activities are securely logged, as is operator access to production storage. Real-time alerts are raised because the log information is automatically analyzed to uncover potentially malicious or unauthorized behavior.
 
 Where a possible intrusion or high priority security vulnerability gets identified, the team has a clear response plan. This plan outlines responsible parties, steps required to secure customer data, and how to engage with security experts at Microsoft. The team also notifies any organization owners if data was disclosed or corrupted, so that they can take appropriate steps to remedy the situation.
 
 Finally, to help combat emerging threats, Azure DevOps employs an "Assume Breach" strategy. A highly specialized group of security experts within Microsoft, known as the Red Team, assumes the role of sophisticated adversaries. This team tests breach detection and response, to accurately measure readiness and the impacts of real-world attacks. This strategy strengthens threat detection, response, and defense of the service. It also allows the team to validate and improve the effectiveness of the entire security program.
+
+### Ransomware attack protection overview
+
+Azure DevOps is built on Azure and uses Azure's best-in-class controls to help prevent, detect, and respond to a ransomware attack. For more information about how Azure protects customers from ransomware attacks, see [Azure defenses for ransomware attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/).
 
 ## Data privacy
 
@@ -313,3 +320,4 @@ Azure DevOps supports enforcing certain types of conditional access policies (fo
 - [Features and services included with Azure DevOps](../../user-guide/services.md)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
+

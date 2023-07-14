@@ -24,95 +24,15 @@ In this article, you'll learn how to:
 > * Recover recently deleted packages from the Recycle Bin.
 
 > [!NOTE]
-> To delete/recover packages or set up retention policies, you must be a feed **Owner**.
+> You must be a feed **Owner** or **Administrator** to delete packages or set up retention policies.
 
 ## Delete packages
 
-#### [Maven](#tab/maven/)
-
-::: moniker range=">= azure-devops-2019"
-
-1. Select **Artifacts**, and then select your feed.
-
-1. Select the package that you want to delete, and then select **Delete latest**. Select **Delete** to confirm. 
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-1. Select **Build and Release**, and then select **Packages**.
-
-1. Select your feed, and then select the package that you want to delete.
-
-1. Select **Delete latest** to delete the latest version of your package.
-
-    :::image type="content" source="../media/delete/delete-maven-package.png" alt-text="Screenshot that shows the button to delete packages from feeds.":::  
-
 In Azure Artifacts, packages are immutable. When you publish a package to your feed, its version number will be reserved permanently. You can't upload a new package with that same version number, even if you delete it from your feed.
-
-::: moniker-end
-
-#### [npm](#tab/npm/)
-
-There are two options to delete an npm package from your feed:
-
-- **Deprecate**: When you deprecate a package version, a warning message is added to the package's metadata. Azure Artifacts and most npm clients will display the warning message whenever the package is viewed or installed. 
-- **Unpublish**: Unpublishing a package version makes it unavailable to install. Unpublished packages can be restored from the Recycle Bin within 30 days of deletion. After that, the packages will be permanently deleted.
-
-In Azure Artifacts, packages are immutable. When you publish a package to your feed, its version number will be reserved permanently. You can't upload a new package with that same version number, even if you delete it from your feed.
-
-> [!NOTE]
-> You must be a **Contributor** to deprecate a package and an **Owner** to unpublish it.
-
-::: moniker range=">= azure-devops-2019"
-
-1. Select **Artifacts**, and then select your feed.
-
-1. Select the package that you want to delete or deprecate, and then select **Deprecate** or **Unpublish latest**.
-
-    :::image type="content" source="../media/delete/deprecate-unpublish-npm-package-newnav.png" alt-text="Screenshot that shows the buttons for deprecating and unpublishing.":::
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-1. Select **Build and Release**.
-
-1. Select **Packages**, and then select the package that you want to delete. 
-
-1. Select **Deprecate** or **Unpublish latest**.
-
-    :::image type="content" source="../media/delete/deprecate-unpublish-npm-package.png" alt-text="Screenshot that shows the buttons for deprecating and unpublishing in Team Foundation Server.":::
-
-::: moniker-end
-
-#### Deprecate or unpublish an npm package by using the CLI
-
-1. [Set up your client's .npmrc file](../npm/npmrc.md).
-
-1. Use the following command to deprecate an npm package:
-
-    ```Command
-    npm deprecate <package>[@<version>] <message>
-    ```
-
-   Use the following command to unpublish an npm package:
-
-    ```Command
-    npm unpublish <package>@<version>
-    ```
-
-> [!NOTE]
-> The `npm unpublish` command won't unpublish all versions of the package. For more information, see the [deprecate](https://docs.npmjs.com/cli/deprecate) or [unpublish](https://docs.npmjs.com/cli/unpublish) documentation.
 
 #### [NuGet](#tab/nuget/)
 
-Two options are available to delete a NuGet package from your feed:
-
-- **Unlist**: Unlisting a package version hides it from the search results in Azure Artifacts feeds and on NuGet.org.
-- **Delete**:  Deleting a package version makes it unavailable to install. Deleted packages can be restored from the Recycle Bin within 30 days of deletion. After that, the packages will be permanently deleted.
-
-In Azure Artifacts, packages are immutable. When you publish a package to your feed, its version number will be reserved permanently. You can't upload a new package with that same version number, even if you delete it from your feed.
+Two options are available to delete a NuGet package from your feed, [Unlist](#qa) and [Delete](#qa).
 
 > [!NOTE]
 > You must be a **Contributor** to unlist a package and an **Owner** to delete it.
@@ -164,7 +84,55 @@ In Azure Artifacts, packages are immutable. When you publish a package to your f
     ```
 
 > [!NOTE]
-> Azure DevOps and Visual Studio Team Foundation Server interpret the `nuget.exe delete` command as an unlist operation. To delete a package, you must use the REST API or the web interface.
+> Azure DevOps and Visual Studio Team Foundation Server interpret the `nuget.exe delete` command as an unlist operation. To delete a package, you must use the [REST API](/rest/api/azure/devops/artifactspackagetypes/nuget/delete-package-version) or the web interface.
+
+#### [npm](#tab/npm/)
+
+There are two options to delete an npm package from your feed, [Deprecate](#qa) and [Unpublish](#qa).
+
+> [!NOTE]
+> You must be a **Contributor** to deprecate a package and an **Owner** to unpublish it.
+
+::: moniker range=">= azure-devops-2019"
+
+1. Select **Artifacts**, and then select your feed.
+
+1. Select the package that you want to delete or deprecate, and then select **Deprecate** or **Unpublish latest**.
+
+    :::image type="content" source="../media/delete/deprecate-unpublish-npm-package-newnav.png" alt-text="Screenshot that shows the buttons for deprecating and unpublishing.":::
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Select **Build and Release**.
+
+1. Select **Packages**, and then select the package that you want to delete. 
+
+1. Select **Deprecate** or **Unpublish latest**.
+
+    :::image type="content" source="../media/delete/deprecate-unpublish-npm-package.png" alt-text="Screenshot that shows the buttons for deprecating and unpublishing in Team Foundation Server.":::
+
+::: moniker-end
+
+#### Deprecate or unpublish an npm package by using the CLI
+
+1. [Set up your client's .npmrc file](../npm/npmrc.md).
+
+1. Use the following command to deprecate an npm package:
+
+    ```Command
+    npm deprecate <package>[@<version>] <message>
+    ```
+
+   Use the following command to unpublish an npm package:
+
+    ```Command
+    npm unpublish <package>@<version>
+    ```
+
+> [!NOTE]
+> The `npm unpublish` command won't unpublish all versions of the package. For more information, see the [deprecate](https://docs.npmjs.com/cli/deprecate) or [unpublish](https://docs.npmjs.com/cli/unpublish) documentation.
 
 #### [Python](#tab/python/)
 
@@ -176,6 +144,28 @@ In Azure Artifacts, packages are immutable. When you publish a package to your f
 > You must be a feed **Owner** to delete a Python package.
 
 :::image type="content" source="../media/delete/delete-python-package.png" alt-text="Screenshot that shows the button for deleting a package in Python.":::
+
+#### [Maven](#tab/maven/)
+
+::: moniker range=">= azure-devops-2019"
+
+1. Select **Artifacts**, and then select your feed.
+
+1. Select the package that you want to delete, and then select **Delete latest**. Select **Delete** to confirm. 
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Select **Build and Release**, and then select **Packages**.
+
+1. Select your feed, and then select the package that you want to delete.
+
+1. Select **Delete latest** to delete the latest version of your package.
+
+    :::image type="content" source="../media/delete/delete-maven-package.png" alt-text="Screenshot that shows the button to delete packages from feeds.":::  
+
+::: moniker-end
 
 #### [Universal Package](#tab/universal/)
 
@@ -251,12 +241,6 @@ To configure retention policies:
 > - The number of published versions reaches the **Maximum number of versions per package** limit.
 > - A version of that package has not been downloaded for the period defined in **Days to keep recently downloaded packages**.
 
-### What happens with old or existing packages when we enable retention policies?
-
-Old or existing packages will be soft-deleted and moved to the Recycle Bin. The deletion job runs once a day, but there might be an initial delay after the policy is turned on for the first time because of an influx of packages. 
-
-Packages remain in the Recycle Bin for 30 days before they're permanently deleted. To remove the packages from your billable storage, you can choose to delete them manually by using the UI or the REST API before the 30 days are up. 
-
 ## Recover deleted packages
 
 Deleted packages will remain in the Recycle Bin for 30 days. After that, they'll be permanently deleted. You must be a feed **Owner** to recover deleted packages.
@@ -294,6 +278,24 @@ Deleted packages will remain in the Recycle Bin for 30 days. After that, they'll
     :::image type="content" source="../media/recycle-bin/recycle-bin-restore.png" alt-text="Screenshot that shows the button for restoring to feed in Team Foundation Server.":::
 
 ::: moniker-end
+
+## Q&A
+
+### Q: What is the difference between *Deprecate*, *Unpublish*, *Unlist*, and *Delete* a package version?
+
+A: *Unpublish* and *Deprecate* applies to npm packages, while *Unlist* and *Delete* applies to NuGet packages. You can also *Delete* package versions for the rest of the package types (Maven, Python, and Universal Packages):
+
+- **Deprecate** (npm): When you deprecate a package version, a warning message is added to the package's metadata. Azure Artifacts and most npm clients will display the warning message whenever the package is viewed or installed.
+- **Unpublish** (npm): Unpublishing a package version makes it unavailable to install. Unpublished packages can be restored from the Recycle Bin within 30 days of deletion. After that, the packages will be permanently deleted.
+
+- **Unlist** (NuGet): Unlisting a package version hides it from the search results in Azure Artifacts feeds and on NuGet.org.
+- **Delete**: Deleting a package version makes it unavailable to install. Deleted packages can be restored from the Recycle Bin within 30 days of deletion. After that, the packages will be permanently deleted.
+
+### Q: What happens with old or existing packages when we enable retention policies?
+
+A: Old or existing packages will be soft-deleted and moved to the Recycle Bin. The deletion job runs once a day, but there might be an initial delay after the policy is turned on for the first time because of an influx of packages. 
+
+Packages remain in the Recycle Bin for 30 days before they're permanently deleted. To remove the packages from your billable storage, you can choose to delete them manually by using the UI or the REST API before the 30 days are up. 
 
 ## Related articles
 

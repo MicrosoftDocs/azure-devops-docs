@@ -8,9 +8,9 @@ ms.custom: cross-service
 ms.topic: how-to
 ms.reviewer: karrg
 ms.author: karrg
-author: KathrynEE
+author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 10/20/2021
+ms.date: 10/26/2022
 ---
  
 # Use the Azure Boards app in Microsoft Teams
@@ -41,12 +41,14 @@ Read this article to learn how to:
 
 
 > [!NOTE]
-> Azure Boards and Microsoft Teams integration is only supported for Azure DevOps Services. 
-
+> Azure Boards and Microsoft Teams integration is only supported for Azure DevOps Services.  
+>
+> Also, Azure Boards and Microsoft Teams integration isn't supported if you're an O365 Government Community Cloud (GCC) customer that uses an Azure Commercial subscription in conjunction with your GCC tenant. 
+ 
 
 ## Prerequisites
 
-- To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md). 
+- To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For more information, see [Start using Azure Boards](../get-started/index.md). 
 - To create subscriptions in a Teams channel for work item events, you must be a member of the Azure Boards Project Administrators group or added to the team administrator role for the team. To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add team administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, you must enable the **Third-party application access via OAuth** setting for the Azure DevOps organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
@@ -218,7 +220,7 @@ The following table lists all the `@azure boards` commands you can use in your M
 
 3. Choose the organization whose board or dashboard you want to add. 
 
-4. Fill out the form presented. For example, here we add a dashboard for the Azure DevOps team for the TechnicalContent project. 
+4. Complete the form presented. For example, here we add a dashboard for the Azure DevOps team for the TechnicalContent project. 
 
 	:::image type="content" source="media/integrations-teams/dialog-add-dashboard-kanban-board.png" alt-text="Dialog to add a team dashboard to a Teams channel.":::
  
@@ -296,7 +298,7 @@ Sign in using **Sign in** button.
 
 
 - Sign in the Azure DevOps account 
-- In the same browser, start a new tab, navigate to https://teams.microsoft.com 
+- In the same browser, start a new tab, go to https://teams.microsoft.com 
 - Run the `signin` command and choose the **Sign in** button. 
 
 
@@ -358,7 +360,7 @@ If you're experiencing the following errors when using the [Azure Boards App for
 
 [!INCLUDE [troubleshooting](includes/boards-troubleshoot-authentication.md)]
 
-In the **same browser**, start a new tab, navigate to `https://teams.microsoft.com/`. Run the `@azure boards signout` command and then run the `@azure boards signin` command in the channel where the Azure Boards app for Microsoft Teams is installed. 
+In the **same browser**, start a new tab, go to `https://teams.microsoft.com/`. Run the `@azure boards signout` command and then run the `@azure boards signin` command in the channel where the Azure Boards app for Microsoft Teams is installed. 
 
 Select the `Sign in` button and you'll be redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
 

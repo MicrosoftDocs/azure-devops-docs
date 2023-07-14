@@ -1,5 +1,6 @@
 - name: About backlogs
   href: backlogs-overview.md
+  displayname: In Progress, Rollup, Taskboard
 - name: Create your backlog
   href: create-your-backlog.md
   displayname: product backlog, reorder, details, description, acceptance criteria, effort, story points, size, business value,
@@ -9,7 +10,7 @@
 - name: Organize your backlog (map or reparent)
   href: organize-backlog.md
   displayname: tree hierarchy, expand, collapse, mapping, reorder, display rollup
-- name: Filter your backlogs
+- name: Filter your backlog
   href: filter-backlogs-boards-plans.md
   displayname: sort, reorder, rollup, group, parent, tags
 - name: Forecast
@@ -20,8 +21,6 @@
   - name: Configure your backlog view
     href: configure-your-backlog-view.md
     displayname: backlog level, view options, rollup, parents, forecasting, mapping, completed, expand, collapse, filter
-  - name: Filter your backlog 
-    href: filter-backlogs-boards-plans.md
   - name: Set up your backlogs & boards
     href: set-up-your-backlog.md
   - name: Backlog controls
@@ -42,7 +41,7 @@
     href: best-practices-product-backlog.md
     displayname: product owner, role, acceptance criteria, spikes
   - name: Rollup of work & other fields
-    href: ../../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/boards/toc.json
     displayname: native, Planning pane, tools, query charts, Excel
   - name: View/configure velocity
-    href: ../../report/dashboards/team-velocity.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../../report/dashboards/team-velocity.md?toc=/azure/devops/boards/toc.json

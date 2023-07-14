@@ -5,8 +5,8 @@ description: Learn how to plan, track, and organize user stories, features, and 
 ms.custom: "boards-backlogs, seodec18"
 ms.service: azure-devops-boards
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 08/04/2022
@@ -20,7 +20,7 @@ ms.date: 08/04/2022
 
 With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. Once you have your plan in place, you can start driving code development efforts. 
 
-If you're a project administrator just getting started, review the [Configure settings and manage your Azure Boards project](../get-started/manage-boards.md). Review the settings to learn more about defining area and iteration paths and customizing your work item types. Backlogs are automatically created when you create a project or add a team. Each team has access to their own product, portfolio, and sprint backlogs as described in [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md#each-team-gets-their-own-set-of-tools). 
+If you're a project administrator just getting started, review [Configure and customize Azure Boards](../configure-customize.md). Review the settings to learn more about defining area and iteration paths and customizing your work item types. Backlogs are automatically created when you create a project or add a team. Each team has access to their own product, portfolio, and sprint backlogs as described in [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md#each-team-gets-their-own-set-of-tools). 
 
 ## Use backlogs
 
@@ -28,7 +28,7 @@ You plan and track your project using the suite of Agile tools you access from t
 
 If you're new to Agile, see [What is Agile?](/devops/plan/what-is-agile) for an overview.
 
-In a nutshell, you use backlogs to: 
+Use backlogs to do the following tasks: 
 
 ::: moniker range=">= azure-devops-2020"  
 
@@ -78,15 +78,15 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 [!INCLUDE [temp](../includes/note-add-backlog-board.md)]
 
-Each backlog is associated with a team. Team configuration settings determine the work items that will appear on the team backlog. Specifically, the team administrator defines the following for their team: 
+Each backlog is associated with a team. Team configuration settings determine the work items that appear on the team backlog. Specifically, the team administrator defines the following for their team: 
 
 - Selects the Area Paths that are active for the team, only work items assigned to these area paths appear on the team's backlog  
 - Sets the default Area Path and Iteration Path used when defining work items from the team backlog 
 - Selects the Iteration Paths that are active for the team
 - Determines which backlog levels are active for the team 
-- Defines how bugs will be treated, as requirements or as tasks. 
+- Defines how bugs get treated, as requirements or as tasks. 
 
-For details, see the following articles: 
+For more information, see the following articles: 
 - [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
@@ -216,7 +216,7 @@ Items that are owned by other teams appear with an information icon :::image typ
 ::: moniker-end   
 
 
-For details, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). 
+For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). 
 
 ### View epics and child items owned by other teams
 
@@ -274,13 +274,13 @@ You can only use dragging to reorder or reparent work items assigned to area pat
 
 ## Display leaf node work items  
 
-For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
+For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and Taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 [!INCLUDE [temp](../includes/display-leaf-nodes.md)]  
 
 ## Permissions and access
 
-As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
+As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
 
 To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).   
 
@@ -288,7 +288,7 @@ To add users to a project, see [Add users to a project or team](../../organizati
 
 [!INCLUDE [temp](../includes/add-portfolio-backlogs.md)]
 
-## Try this next  
+## Next steps  
 
 If you're just getting started, see [Start using Azure Boards](../get-started/index.md). 
 

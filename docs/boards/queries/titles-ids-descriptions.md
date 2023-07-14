@@ -5,8 +5,8 @@ description: Learn about work queries based on titles, IDs, and rich-text fields
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 10/06/2022
@@ -79,7 +79,7 @@ Query clauses that specify a text or rich-text field can use the operators and m
 
 > [!NOTE]  
 > 1. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2019 RC2 and later versions
-> 2. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+> 2. The system automatically defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md#across-projects). 
 
 
 ## Use `Contains words` for string matches
@@ -122,7 +122,7 @@ In the following example, these operators filter work items for those items that
 
 ## Undefined field value queries
 
-You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters will list all work items of type Task whose Activity field is blank.  
+You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters list all work items of type Task whose Activity field is blank.  
 
 ![Filter based on blank entries](media/example-work-item-queries/IC736440.png)
 
@@ -137,7 +137,7 @@ To list work items based on a field that isn't blank, use the not operator (<>) 
 
 You can find work items where no **Description** has been entered. Using the **Is Empty** or **Is Not Empty** with an HTML field supports listing work items with empty or not empty rich text fields. You don't specify a value with this operator.  
 
-For example, the following query filters will list all work items where some entries have been made into the **Description** field.  
+For example, the following query filters list all work items where some entries have been made into the **Description** field.  
 
 > [!div class="mx-imgBorder"] 
 > ![Filter based non-empty HTML fields](media/example-queries/is-not-empty-query.png)
@@ -154,7 +154,7 @@ For example, the following query filters will list all work items where some ent
 
 ## Category-based queries
 
-To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
+To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria returns all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
 
 ![Query clause to find work items by category](media/example-work-item-queries/IC720125.png)
 
@@ -171,7 +171,7 @@ The default assignments of work item types to each category are listed below for
 | Scrum | Product Backlog Item, Bug | Task |
 | CMMI | Requirement | Task |
 
-Each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). You can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
+Each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). You can add custom work item types to a backlog. For more information, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
 
 <a id="following" />
 
@@ -231,7 +231,7 @@ The following table describes common fields used to filter queries. The **ID** f
    :::column span="2":::
    A description of the criteria to be met before the bug or product backlog item can be closed.
 
-   Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.
+   Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria helps ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.
  
    Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML
    :::column-end:::     
@@ -311,7 +311,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Team Project
    :::column-end:::
    :::column span="2":::
-   The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. To learn more, see [Example queries, query across projects](using-queries.md#across-projects).   
+   The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. For more information, see [Example queries, query across projects](using-queries.md#across-projects).   
 
    Reference name=System.TeamProject, Data type=String
    :::column-end:::
@@ -337,7 +337,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Work Item Type
    :::column-end:::
      :::column span="2":::
-   The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../work-items/guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../../reference/add-modify-wit.md). 
+   The name of the work item type. Work item types are defined based on the process used when you created your project. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) and [Add or modify a work item type](../../reference/add-modify-wit.md). 
 
    To filter work items based on their [category assignment](#category), you can use the **In Group** and **Not In Group** operators and select a category from the drop-down list.  
 

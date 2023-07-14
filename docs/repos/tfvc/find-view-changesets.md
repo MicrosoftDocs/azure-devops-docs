@@ -1,24 +1,23 @@
 ---
 title: Find and view changesets
 titleSuffix: Azure Repos
-description: Find and view changesets
+description: See how to find and view changesets in Team Foundation Version Control (TFVC).
 ms.assetid: bf36f78e-231a-46a1-94e4-4b44852f30b0
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 07/13/2022
+ms.date: 11/08/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
 
-
 # Find and view changesets
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-When you [check in your changes](check-your-work-team-codebase.md), they are stored on the server as a changeset. Changesets contain the history of each item in version control.
+When you [check in your changes](check-your-work-team-codebase.md) in Team Foundation Version Control (TFVC), they're stored on the server as a changeset. Changesets contain the history of each item in version control.
 
-![Version Control Changesets](media/find-view-changesets/IC263819.png)   
+![Diagram that shows TFVC changesets.](media/find-view-changesets/IC263819.png)   
 
 You can view a changeset to see what the exact file changes were, discover the owner's comments, find linked work items, and see if any policy warnings were triggered.
 
@@ -28,104 +27,83 @@ You must be one of the **Contributors** for your project. To learn more, see [De
 
 ## Find a changeset by ID
 
--   In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), press Ctrl + G.
+1. In Visual Studio [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), press Ctrl+G. The **Go to Changeset** dialog box appears.
 
-    The **Go to Changeset** dialog box appears.
+   ![Screenshot of the Go to Changeset dialog box.](media/find-view-changesets/go-to-changeset.png)
 
-    ![Go to Changeset dialog box](media/find-view-changesets/IC612254.png)
+1. Type the number of a changeset and select **OK**. The changeset details appear on the **Changeset Details** page in **Team Explorer**.
 
-    Type the number of the changeset and choose **OK**.
+   If you don't know the changeset number, choose **Find**. See [Find a changeset](find-view-changesets.md#find).
 
-    If you don't know the number, choose **Find**. See [Find a changeset](find-view-changesets.md#find).
+## Find changesets that update a specific file or folder
 
-## List changesets that update a specific file or folder
+1. In Visual Studio **Solution Explorer** or **Source Control Explorer**, right-click the folder or file and choose **View History**.
 
-1.  In Solution Explorer or [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), browse to the folder or file, open its shortcut menu, and choose **View History**.
+1. In the [History window](get-history-item.md), right-click the changeset for which you want to view details, and choose **Changeset Details**.
 
-2.  In the [History window](get-history-item.md), select the row that contains the changeset for which you want to view details, open its shortcut menu, and then choose **Changeset Details**.
+   The changeset details appear on the **Changeset Details** page in **Team Explorer**.
 
-    The **Changeset Details** page appears in Team Explorer.   
-    ![Changeset Details page](media/find-view-changesets/IC592883.png)
-    
-:::row:::
-   :::column span="1":::
-    **Tip**
-   :::column-end:::
-:::row-end:::
+   ![Screenshot of the Changeset Details page.](media/find-view-changesets/changeset-details.png)
 
-:::row:::
-   :::column span="1":::
-   
-   - You can ![Undock](media/find-view-changesets/IC667296.png) undock the **Pending Changes** page from Team Explorer and open it in a new window.
-
-   - You can toggle between tree and list view from the **Actions** menu (Visual Studio 2013) or **View Options** menu (Visual Studio 2015 and later).  
-   :::column-end:::
-:::row-end:::
-
+> [!TIP]
+> - You can ![undock icon](media/find-view-changesets/IC667296.png) undock the **Changeset Details** page from **Team Explorer** and open it in its own window.
+> 
+> - You can toggle between tree and list view by selecting **View Options** in the **Changes** section.
 
 <a name="find"></a>
 
+## Work with changesets
+
+The **Changeset Details** page in **Team Explorer** has links to do the following tasks:
+
+- **Rollback** removes the effects of the changeset. See [Roll back changesets](roll-back-changesets.md).
+
+- **Track** determines which branches have and haven't received a set of changes. See [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md).
+
+- **Request Review** under **Actions** requests a code review.
+
+- **Open in Browser** under **Actions** opens the changeset in your browser. For example, you could copy the URL into an email to discuss the change with your team.
+
 ## Search for changesets
 
-1. In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), on the menu bar, choose **File**, **Source Control**, **Find**, **Find Changesets**.
+1. On the Visual Studio menu bar, choose **File** > **Source Control** > **Find** > **Find Changesets**.
 
    The **Find Changesets** dialog box appears.
 
-   ![Find Changesets dialog box](media/find-view-changesets/IC612255.png)
+   ![Screenshot of the Find Changesets dialog box.](media/find-view-changesets/find-changesets.png)
 
-2. (Optional) In **Containing file**, select **Browse**.
+1. In the **Find Changesets** dialog box, enter a file or folder name in **Containing file**, or:
 
-3. (Optional) In the **By User** box, type the alias or the name of the project team member who is associated with the changeset.
+   - Select **Browse** to find and select a file or folder.
 
-4. (Optional) In the **Range** section, choose one of the following options:
+   - In the **By user** box, optionally enter a user name or select **Search** to select a project team member who's associated with the changeset.
 
-   -   **All changes**   Retrieves all changesets that were applied to that file or folder.
+   - Under **Range**, optionally choose one of the following ranges:
 
-   -   **Changeset number**   Retrieves changesets from a range of numbers. In the **from** and **to** boxes, type the range.
+     - **All changes** retrieves all changesets that were applied to that file or folder.
 
-   -   **Created date**   Retrieves changesets from a range of dates. In the **between** and **and** boxes, use the calendars to specify start and end dates.
+     - **Changeset number** retrieves changesets from a range of numbers. In the **From** and **To** boxes, type the range.
 
-5. Choose **Find**.
+     - **Created date** retrieves changesets from a range of dates. In the **Between** and **And** boxes, specify start and end dates.
 
-   Changesets that match your criteria appear in the **Results** list.
+1. Select **Find**. Changesets that match your criteria appear in the **Results** list.
 
-6. Right-click the changeset for which you want information, and select **Changeset Details...**
+1. Select a changeset and then select **Details**, or right-click the changeset and select **Changeset Details**.
 
    The **Details for Changeset** dialog box appears.
 
-   ![Details for Changeset dialog box](media/find-view-changesets/IC615597.png)
+   ![Screenshot of the Details for Changeset dialog box.](media/find-view-changesets/details-for-changeset.png)
 
-7. In the **Details for Changeset** dialog box, view the change types that were added and any comments, work items, check-in notes, and policy warnings that are associated with the changeset.
+   In the **Details for Changeset** dialog box, you can view the changes and change types, and any comments, work items, check-in notes, and policy warnings that are associated with the changeset.
 
-8. Close the **Details for Changeset** dialog box.
-
-9. Choose **OK**.
-
-## Work with changesets
-
-The **Changeset Details** view in Team Explorer has links to perform the following tasks:
-
--   **Rollback** to remove the effects of the changeset. See [Roll back changesets](roll-back-changesets.md).
-
--   **Track** to determine which branches have and have not received a set of changes. See [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md).
-
--   **Actions**, **Request Review** to request a code review.
-
--   **Actions**, **Open in Browser** to view the changeset in your browser (for example, if you want to copy the URL into an email to discuss the change with your team).
-
+1. Close the **Details for Changeset** and **Find Changesets** dialog boxes.
 
 ## Work from the command prompt
 
-To find a changeset from the [command prompt](use-team-foundation-version-control-commands.md):
+To find a changeset from the [command prompt](use-team-foundation-version-control-commands.md), enter `tf changeset`. For more information, see [Changeset command](changeset-command.md).
 
-```
-c:\users\jamal\workspaces\fabrikam>tf changeset
-```
+## Next steps
 
-To view or modify changesets and to learn about other options, see [Changeset Command](changeset-command.md).
+- To download the version of a file in a changeset, see [Download (get) files from the server](download-get-files-from-server.md).
 
-## Tips
-
--   ![Tip](media/find-view-changesets/IC572374.png) You can download the version of a file in a changeset. See [Download (get) files from the Server](download-get-files-from-server.md).
-
--   ![Tip](media/find-view-changesets/IC572374.png) You can add a link between a changeset and one or more work items. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).
+- To add a link between a changeset and one or more work items, see [Use links to view dependencies and track related work](../../boards/queries/link-work-items-support-traceability.md).

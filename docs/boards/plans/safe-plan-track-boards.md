@@ -3,8 +3,8 @@ title: Plan and track SAFe® projects in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to plan and track epics, release trains, and multiple backlogs in Azure Boards to support SAFe® practices.
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021
@@ -208,7 +208,7 @@ Just as you earlier mapped each Feature to its parent Epic, now you'll map each 
 
 Each team's Kanban board provides a visual interactive space for the team to plan and update status. With it, your team can track the critical information they need by seeing which work items are in progress, where the bottlenecks are, who work is assigned to, and more.
 
-For an overview of Kanban board tools and usage, see [About Boards and Kanban](../boards/kanban-overview.md). Each team can customize the boards columns, card fields, card styles, and more. To learn more, see [Customize your boards](../get-started/customize-boards.md).
+For an overview of Kanban board tools and usage, see [About Boards and Kanban](../boards/kanban-overview.md). Each team can customize the boards columns, card fields, card styles, and more. For more information, see [Customize your boards](../configure-customize.md).
 
 ### Open a Kanban board  
 
@@ -305,7 +305,7 @@ Also, you can bulk add or update work items with the following tools:
 - [Bulk import or update work items (CSV)](../queries/import-work-items-from-csv.md)  
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Review progress, delivery plans, and roadmaps](safe-review-roadmaps-progress.md) 

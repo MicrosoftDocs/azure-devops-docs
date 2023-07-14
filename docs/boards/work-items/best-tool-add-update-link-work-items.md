@@ -6,7 +6,7 @@ ms.custom: work-items, seodec18
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.topic: best-practice
-ms.author: kaelli
+ms.author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -16,7 +16,7 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Azure Boards provides you several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that will help you work most efficiently. 
+Azure Boards provides you with several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that help you work most efficiently. 
 
 
 ## Work item form 
@@ -73,7 +73,6 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 [Product backlog board](../boards/kanban-quickstart.md) | [Features or Epics board](../boards/kanban-epics-features-stories.md) | [Customize cards](../boards/customize-cards.md)
 
 **Best tool for**: 
-- [Implementing Kanban methods](../boards/best-practices-kanban.md)  
 - Viewing the flow of work from start to completion  
 - Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items 
 - Updating the status of backlog items  
@@ -341,7 +340,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    - Run full text search across all work item fields
    - Review work items assigned to a specific team member
    - Search against specific work item fields to quickly narrow down a list of work items
-   - Determine what key words will support a managed search.
+   - Determine what key words support a managed search
    
    :::column-end:::
 :::row-end:::
@@ -356,7 +355,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    - Capture templates
    - Apply templates to update work items
    - Use templates to create work items
-   - Manage work item templates.
+   - Manage work item templates
    
    :::column-end:::
 :::row-end:::
@@ -367,8 +366,8 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    :::column span="3":::
     
    
-   - [Request feedback](../../project/feedback/get-feedback.md)
-   - [Give feedback using Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+   - [Request feedback](/previous-versions/azure/devops/project/feedback/get-feedback)
+   - [Give feedback using Microsoft Feedback Client](/previous-versions/azure/devops/project/feedback/give-feedback)
    
    :::column-end:::
 :::row-end:::
@@ -379,9 +378,9 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    :::column span="3":::
     
    
-   - [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)
-   - [Manage team and project notifications](../../notifications/manage-team-group-global-organization-notifications.md)
-   - [Manage organization notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+   - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
+   - [Manage team and project notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
+   - [Manage organization notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    
    :::column-end:::
 :::row-end:::

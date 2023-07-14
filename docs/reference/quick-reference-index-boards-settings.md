@@ -2,14 +2,13 @@
 title: Quick reference index to Azure Boards settings 
 titleSuffix: Azure Boards
 description: Index to concepts and tasks for configuring and customizing Azure Boards.
-ms.custom: quick-reference-index
+ms.custom: quick-reference-index, engagement-fy23
 ms.service: azure-devops-boards
-ms.assetid:
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 01/17/2023 
 ---
 
 # Quick reference index for Azure Boards settings 
@@ -67,7 +66,7 @@ Each team administrator can configure the following elements for their team, bac
       **Kanban boards**
       - [Columns](../boards/boards/add-columns.md)  
       - [WIP limits](../boards/boards/wip-limits.md)    
-      - [Definition of Done](../boards/boards/definition-of-done.md)  
+      - [Definition of Done](../boards/boards/add-columns.md#definition-of-done)  
       - [Split columns](../boards/boards/split-columns.md)   
       - [Swimlanes](../boards/boards/expedite-work.md)  
       - [Card fields, styles, tag colors, annotations, and card reordering](../boards/boards/customize-cards.md#kanban-board)    
@@ -241,7 +240,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Change a field label](add-modify-field.md#change-label)  
       - [Add a custom control field](add-modify-field.md#custom-control)  
       - [Remove a field](add-modify-field.md#change-label)  
-      - [Define global lists](xml/define-global-lists.md)  
+      - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)  
             
             
       **Work item types**
@@ -313,7 +312,7 @@ With the On-premises XML process model, you modify the XML definition of work it
       - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)  
       - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)  
       - [Change process configuration](xml/process-configuration-xml-element.md)  
-      - [Add custom categories](xml/categories-xml-element-reference.md)  
+      - [Add custom categories](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)  
    :::column-end:::
 :::row-end:::
 ---

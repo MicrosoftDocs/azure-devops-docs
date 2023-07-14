@@ -1,10 +1,11 @@
 ---
-title: Analytics Views - Dataset design
+title: Dataset design for Analytics views
 titleSuffix: Azure DevOps
-description: Learn about the dataset that is created in Power BI for an Analytics View.
+description: Learn about the dataset that is created in Power BI for an Analytics view.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.custom: analytics-views 
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
 monikerRange: '>= azure-devops-2019'
 ms.date: 05/12/2022
@@ -122,27 +123,14 @@ not allowed. To handle this scenario, you could expand the Project column in the
 
 Now you can list Areas by Project and get a count of Areas in each project.
 
-## Historical data modeling
-
-Analytics models historical data as a **periodic snapshot fact table**. The fact table contains one row created at midnight for each work item at the end of each period. For example, history on a daily period is modeled as one row at midnight for each day, while a weekly period would be one row at midnight of the last day of the week. If the week hasn't completed, the snapshot value for the week is based on the current value.
-
-The grain of this table is the period, not the individual work item. It means that **a single Work Item will appear multiple times**, once for each historical period. Selecting the last 30 days of history will result in a single work item appearing 30 times in the data model. If the work item hasn't changed within the last 30 days, the most recent revision of the work item is replicated on each day.
-
-When working with the Power BI Data Connector and historical data, we recommend using the `Date` field.  **If the dataset contains historical data, but only the current values are needed, this can be setup by filtering `Is Current`**.  
-
-For example, if you want to show a table of work items and values for the associated fields you would use `Is Current` as a filter that is set to True. If you wanted to show a trend of work items based on state instead, you'd include the Date column on the Axis of the visualization.  
-
-> [!TIP]  
-> Always use the **Date** option when using the Date column. The Date field is not intended to support default hierarchies in Power BI.
-
-![Power BI Date menu of options](./media/data-connector-date.png)
 
 ## Related articles
 
+- [Historical data representation in Analytics](analytics-historical-filtering.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 - [Power BI integration overview](overview.md)  
 - [Work item field index](../../boards/work-items/guidance/work-item-field.md)
-- [Work item categories](../../reference/xml/use-categories-to-group-work-item-types.md)
+- [Work item categories](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)
 - [Backlogs, boards, and plans](../../boards/backlogs/backlogs-boards-plans.md)
 - [Connect with Power BI Data Connector](./data-connector-connect.md)
 - [Data Connector - Example reports](./data-connector-examples.md)

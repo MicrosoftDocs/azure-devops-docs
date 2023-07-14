@@ -66,7 +66,7 @@ To complete the steps in this guide you need:
 
    Keep this window open as you'll use it for subsequent steps.  
 
-4. Download the [DeepSpace sample code](https://deepspace.blob.core.windows.net/downloads/DeepSpace.zip) and extract it to the local directory on your computer where you cloned the DeepSpace repo.
+4. Download the [DeepSpace sample code](https://github.com/microsoft/deep-space) and extract it to the local directory on your computer where you cloned the DeepSpace repo.
 
 5. Switch back to your Git command window and run the following command, which commits the sample code files to your local repo.
 

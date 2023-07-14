@@ -11,7 +11,7 @@ metadata:
   ms.subservice: azure-devops-projects
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 02/18/2022
+  ms.date: 09/17/2022
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -21,11 +21,11 @@ highlightedContent:
     # Card
     - title: What is Azure DevOps?
       itemType: overview
-      url: ./user-guide/what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+      url: ./user-guide/what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json
     # Card
     - title: Azure DevOps Services vs. Azure DevOps Server
       itemType: overview
-      url: ./user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+      url: ./user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json
     # Card
     - title: What's new in Azure DevOps? 
       itemType: whats-new 
@@ -37,7 +37,7 @@ highlightedContent:
     # Card
     - title: Get started for free
       itemType: get-started
-      url: ./user-guide/sign-up-invite-teammates.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+      url: ./user-guide/sign-up-invite-teammates.md?toc=/azure/devops/get-started/toc.json
     # Card
     - title: Create your first pipeline
       itemType: get-started
@@ -62,7 +62,7 @@ productDirectory:
         - url: ./boards/get-started/what-is-azure-boards.md  
           text: What is Azure Boards? 
         - url: ./boards/work-items/guidance/choose-process.md 
-          text: Choose a process
+          text: About default processes
         - url: ./boards/backlogs/create-your-backlog.md
           text: Create your backlog
         - url: ./boards/get-started/plan-track-work.md
@@ -166,7 +166,7 @@ tools:
       url: ./pipelines/apps/windows/cpp.md
     - title: Docker 
       imageSrc: ./pipelines/media/index/logo_dockercontainer.svg
-      url: ./pipelines/tasks/build/docker.md
+      url: /azure/devops/pipelines/tasks/reference/docker-v2
     - title: Java
       imageSrc: /media/logos/logo_java.svg
       url: ./pipelines/ecosystems/java.md
@@ -205,15 +205,15 @@ additionalContent:
             - text: User preferences
               url: ./organizations/settings/set-your-preferences.md
             - text: Teams 
-              url: ./organizations/settings/about-teams-and-settings.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
+              url: ./organizations/settings/about-teams-and-settings.md?toc=/azure/devops/organizations/toc.json
             - text: Projects
-              url: ./organizations/projects/about-projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
+              url: ./organizations/projects/about-projects.md?toc=/azure/devops/organizations/toc.json
             - text: Public projects
-              url: ./organizations/public/about-public-projects.md
+              url: ./organizations/projects/about-projects.md
             - text: Organizations
               url: ./organizations/accounts/organization-management.md
             - text: Pipeline agent pools & queues 
-              url: ./pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
+              url: ./pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json
             - text: Auditing
               url: ./organizations/audit/azure-devops-auditing.md
             - text: See more >
@@ -249,32 +249,30 @@ additionalContent:
             - text: Azure DevOps and GitHub integration  
               url: ./cross-service/github-integration.md   
             - text: Deploy to Azure
-              url: ./pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json 
+              url: ./pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json 
             - text: Work across projects
-              url: ./project/navigation/work-across-projects.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json 
-            - text: Create a public project
-              url: ./organizations/public/create-public-project.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json    
+              url: ./project/navigation/work-across-projects.md?toc=/azure/devops/cross-service/toc.json    
             - text: Azure Boards & GitHub
-              url: ./boards/github/connect-to-github.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+              url: ./boards/github/connect-to-github.md?toc=/azure/devops/cross-service/toc.json
             - text: See more >
               url: ./cross-service/index.yml
           # Card
         - title: Azure Boards Customization
           links:
             - text: Configure & customize Azure Boards
-              url: ./boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+              url: ./boards/configure-customize.md?toc=/azure/devops/reference/toc.json
             - text: Compare processes
-              url: ./boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+              url: ./boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json
             - text: "Area & iteration paths"
-              url: ./organizations/settings/about-areas-iterations.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+              url: ./organizations/settings/about-areas-iterations.md?toc=/azure/devops/reference/toc.json
             - text: Customize Inherited process
-              url: ./organizations/settings/work/inheritance-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+              url: ./organizations/settings/work/inheritance-process-model.md?toc=/azure/devops/reference/toc.json
             - text: On-premises XML process model
-              url: ./reference/on-premises-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+              url: ./reference/on-premises-xml-process-model.md?toc=/azure/devops/reference/toc.json
             - text: Hosted XML process model
-              url: ./organizations/settings/work/hosted-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+              url: ./organizations/settings/work/hosted-xml-process-model.md?toc=/azure/devops/reference/toc.json
             - text: Process templates
-              url: ./reference/process-templates/overview-process-template-files.md 
+              url: ./reference/process-templates/index.md 
             - text: See more >
               url: ./reference/index.yml 
     - title: Additional services
@@ -311,22 +309,22 @@ additionalContent:
         - title: Marketplace & Extensibility
           links:
             - text: Discover extensions
-              url: ./marketplace/overview.md
+              url: ./extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Develop extensions
-              url: ./extend/get-started/node.md
+              url: ./extend/get-started/node.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Integrate applications
-              url: ./integrate/index.md
+              url: ./integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Service hooks
-              url: ./service-hooks/overview.md
+              url: ./service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: See more >
               url: ./marketplace-extensibility/index.yml
         # Card
         - title: Developer resources
           links:
             - text: Azure DevOps CLI 
-              url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+              url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json
             - text: Azure DevOps CLI quick reference
-              url: ./cli/quick-reference.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+              url: ./cli/quick-reference.md?toc=/azure/devops/dev-resources/toc.json
             - text: Git command reference
               url: ./repos/git/command-prompt.md 
             - text: Team Foundation version control commands
@@ -334,7 +332,7 @@ additionalContent:
             - text: Test case management (TCM) commands
               url: ./test/test-case-managment-reference.md 
             - text: Azure DevOps Services Demo Generator
-              url: ./demo-gen/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+              url: ./demo-gen/index.md?toc=/azure/devops/dev-resources/toc.json
             - text: REST APIs
               url: /rest/api/vsts/
             - text: DevOps resource center

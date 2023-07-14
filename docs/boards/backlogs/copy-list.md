@@ -5,8 +5,8 @@ description: Learn how to copy a list of user stories, issues, bugs, tasks, or o
 ms.custom: seodec18
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -48,7 +48,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 
 Once you've copied your list, you can paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the project or area node for those work items. 
 
-The formatted table contains a link to each work item included in your selected results list. A link to a query that will open only those work items selected is also provided.</p>
+The formatted table contains a link to each work item included in your selected results list. A link to a query that opens only those work items selected is also provided.</p>
 
 ![Screenshot of Copy as HTML paste results.](media/bulk-modify-copy-as-html-table-results.png)  
 

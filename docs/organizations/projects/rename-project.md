@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/05/2022
+ms.date: 12/16/2022
 ---
 
 # Rename a project in Azure DevOps
@@ -111,10 +111,8 @@ Opened clients keep a cache of all project names in memory, but this cache doesn
 
 For the following clients, save your work in each and then restart:
 
-- Visual Studio/Team Explorer
-- Eclipse, if your team uses the Team Explorer Everywhere plugin
-- Microsoft Excel, PowerPoint, or Project, if your team uses the Team Foundation Server Extension for these Office products
-- Any more clients that use the .NET Team Foundation Server Client Object Model
+- Visual Studio Team Explorer
+- Microsoft Excel, if your team uses the [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family) 
 
 <a id="git"></a>
 
@@ -129,13 +127,7 @@ For more information, see [Update the Git remotes on your dev machines](../../re
 ### Update TFVC server workspaces
 
 If your project uses TFVC with [server workspaces](../../repos/tfvc/decide-between-using-local-server-workspace.md), these workspaces must be updated with the new project name.
-For the following clients, execute a get or check-in and then the workspace mapping gets corrected to use the new project name:
-
-- Visual Studio 2015 (RC or newer)  
-- Visual Studio 2013  
-- Visual Studio 2012  
-- Visual Studio 2010 (Only supports server workspaces)  
-- Team Explorer Everywhere (2012 or later versions)  
+For Visual Studio clients, execute a get or check-in and then the workspace mapping gets corrected to use the new project name.
 
 ![Screenshot of source control explorer, showing get latest version selection.](media/rename-project/tfvc-get.png)
 
@@ -144,17 +136,9 @@ For the following clients, execute a get or check-in and then the workspace mapp
 ### Update TFVC local workspaces
 
 If your team uses TFVC with [local workspaces](../../repos/tfvc/decide-between-using-local-server-workspace.md), these workspaces need to be updated with the new project name.
-For the following clients, execute a get or check-in and the workspace mapping is corrected to use the new project name:
-
-- Visual Studio 2015 (RC or later versions)  
-- Visual Studio 2012 with [Update 5](https://go.microsoft.com/fwlink/?LinkId=615776) (RC or later versions)  
-- Team Foundation Server plugin [Team Explorer Everywhere 2015](https://go.microsoft.com/fwlink/?LinkID=617042)
-
-We recommend you update your clients to the latest update or release, if possible. For all other supported Visual Studio versions, you must create a new local workspace mapped to the new project name. Two exceptions include Visual Studio 2010, which only supports server workspaces, and Team Foundation Server plugin for Eclipse. 
-
-1.  [Shelve your changes](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md).
-2.  [Create a new workspace](../../repos/tfvc/create-work-workspaces.md) mapped to the new project name.
-3.  Unshelve your changes.
+For Visual Studio, execute a get or check-in and the workspace mapping is corrected to use the new project name. 
+ 
+We recommend you update your clients to the latest update or release, if possible. For all other supported Visual Studio versions, you must create a new local workspace mapped to the new project name.  
 
 Local workspaces get managed locally and not on the server. Older clients without the updated rename logic can't update local workspaces to the new project name. 
  

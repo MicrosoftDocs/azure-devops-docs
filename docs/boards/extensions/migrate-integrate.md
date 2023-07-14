@@ -2,11 +2,11 @@
 title: Migrate to or integrate work tracking data in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how you can migrate or integrate work tracking data from other software applications to Azure Boards.
-ms.custom: extensions
+ms.custom: extensions, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/01/2021
 ---
@@ -19,7 +19,7 @@ You have a choice of tools to help you migrate your work tracking data to the Az
 
 ## Migrate from an on-premises Azure DevOps server
 
-The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md).
+The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. For more information, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md).
 
 ## Migrate data between Azure DevOps Projects
 
@@ -31,20 +31,18 @@ The [Azure DevOps Migration Tools](https://marketplace.visualstudio.com/items?it
 - Edit work items in bulk
 - Migrate test suites and test plans 
 
-To learn more, see [Azure DevOps Migration Tools](https://nkdagility.github.io/azure-devops-migration-tools/).
+For more information, see [Azure DevOps Migration Tools](https://nkdagility.github.io/azure-devops-migration-tools/).
 
-[OpsHub Azure DevOps Migrator](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHubVisualStudioOnlineMigrationUtility) (OADOM) formerly known as OpsHub Visual Studio Migration Utility(OVSMU) enables a seamless migration between Azure DevOps Server(TFS) and Azure DevOps Services(VSTS) or Azure DevOps and Azure DevOps.  Migrate projects from DevOps Services to a collection on DevOps Server including:  
+[OpsHub Azure DevOps Migrator](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHubVisualStudioOnlineMigrationUtility) (OADOM) formerly known as OpsHub Visual Studio Migration Utility(OVSMU) enables a seamless migration between Azure DevOps Server and Azure DevOps Services.  Migrate projects from DevOps Services to a collection on DevOps Server including:  
 
 - All version control information and history
 - All work items and history
 - All test cases and test results
-- Supports the 2010, 2012, 2013, 2015, 2018, and 2019 versions of Azure DevOps Server
-- Supports all versions of Azure DevOps Services
+- Supports Team Foundation Server 2018 and Azure DevOps Server versions 2019, 2020, and 2022
+- Supports Azure DevOps Services.
 
 [OADOM](https://www.opshub.com/products/opshub-azure-devops-migrator/) covers the following scenarios:
-
-Supports data migration from Azure DevOps Server (TFS) to Azure DevOps Server (TFS), Azure DevOps Services (VSTS) to Azure DevOps Server (TFS) and Azure DevOps Services (VSTS) to Azure DevOps Services (VSTS).
-
+ 
 
 ## Migrate process models between Azure DevOps organizations
 
@@ -64,7 +62,7 @@ The [OpsHub Migration Manager](https://marketplace.visualstudio.com/items?itemNa
 
 ## Export and import work tracking data
 
-The main tool you can use to import work tracking data you've exported from elsewhere is Microsoft Excel. Excel supports publishing a flat list of work items or a hierarchical tree of parent-child linked work items. To learn more, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+The main tool you can use to import work tracking data you've exported from elsewhere is Microsoft Excel. Excel supports publishing a flat list of work items or a hierarchical tree of parent-child linked work items. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
 If you want to migrate from Jira to Azure Boards, consider using the Marketplace extension, [Jira to Azure DevOps work item migration tool](https://marketplace.visualstudio.com/items?itemName=solidify.jira-devops-migration). This tool provides support for the following tasks:  
 - Export Jira issues from Jira queries  
@@ -81,7 +79,7 @@ To learn how, see [Connect Azure Boards to GitHub](../github/connect-to-github.m
  
 ## Integrate with third-party tools using service hooks
 
-You can integrate Azure Boards with other third-party tools such as Jenkins and Trello. Using service hooks you can generate actions based on Azure DevOps events. To learn more, review one of the following articles: 
+You can integrate Azure Boards with other third-party tools such as Jenkins and Trello. Using service hooks you can generate actions based on Azure DevOps events. For more information, review one of the following articles: 
 -  [Create a service hook for Azure DevOps with Jenkins](../../service-hooks/services/jenkins.md) 
 -  [Create a service hook for Azure DevOps with Trello](../../service-hooks/services/trello.md)
 

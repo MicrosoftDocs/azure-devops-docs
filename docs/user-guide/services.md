@@ -230,7 +230,7 @@ Azure DevOps also provides the following collaboration services.
 - [Project wiki](../project/wiki/manage-wikis.md)
 - [Discussion within work item forms](../boards/work-items/work-item-fields.md)
 - Linking of [work items](../boards/queries/link-work-items-support-traceability.md), [commits](../repos/git/commits.md), [pull requests](../repos/git/pull-requests.md), and other artifacts to support traceability
-- [Alerts and change notifications](../notifications/about-notifications.md) managed per user, team, project, or organization
+- [Alerts and change notifications](../organizations/notifications/about-notifications.md) managed per user, team, project, or organization
 - Ability to [request](../test/request-stakeholder-feedback.md), [provide](provide-feedback.md), and manage feedback
 - [Analytics service](../report/powerbi/analytics-security.md), [analytics views](../report/powerbi/analytics-views-manage.md), and [Power BI reporting](../report/powerbi/access-analytics-power-bi.md)
 ::: moniker-end
@@ -240,7 +240,7 @@ Azure DevOps also provides the following collaboration services.
 - [Project wiki](../project/wiki/manage-wikis.md)
 - [Discussion within work item forms](../boards/work-items/work-item-fields.md)
 - Linking of [work items](../boards/queries/link-work-items-support-traceability.md), [commits](../repos/git/commits.md), [pull requests](../repos/git/pull-requests.md), and other artifacts to support traceability
-- [Alerts and change notifications](../notifications/about-notifications.md) managed per user, team, project, or collection
+- [Alerts and change notifications](../organizations/notifications/about-notifications.md) managed per user, team, project, or collection
 - Ability to [request](../test/request-stakeholder-feedback.md), [provide](provide-feedback.md), and manage feedback
 - [SQL Server Reporting](../report/sql-reports/analytics-insights-comparable-sql-reports.md)
 ::: moniker-end

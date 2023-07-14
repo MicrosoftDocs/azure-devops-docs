@@ -53,7 +53,10 @@ The tags you assign to your target servers allow you to limit deployment to spec
 A tag is limited to 256 characters, but there is no limit to the number of tags you can use.
 
 > [!NOTE]
-> A deployment pool is a set of target servers available to the organization (org-scoped). When you create a new deployment pool for projects in your organization, a corresponding deployment group is automatically provisioned for each project. The deployment groups will have the same target servers as the deployment pool.
+> A deployment pool is a set of target servers available to the organization (org-scoped). When you create a new deployment pool for projects in your organization, a corresponding deployment group is automatically provisioned for each project. The deployment groups will have the same target servers as the deployment pool. You can manually trigger an agent version upgrade for your target servers by hovering over the ellipsis (...) in **Deployment Pools** and selecting **Update targets**. See [Agent versions and upgrades](../../agents/agents.md) for more details.
+
+:::image type="content" source="media/update-targets-pools.png" alt-text="A screenshot showing how to update targets in deployment pools.":::
+
 
 ## Set up agents on deployment groups
 
@@ -65,8 +68,10 @@ Every target server in the deployment group requires a deployment agent. You can
 
 - By using the [ARM template deployment task](./howto-provision-deployment-group-agents.md#use-the-arm-template-deployment-task) in your release pipeline to create a deployment group dynamically.
 
-You can force the agents on the target servers to be upgraded to the latest version without needing to redeploy them by choosing the **Upgrade targets** command on the shortcut menu for a deployment group.  
- 
+You can force the agents on the target servers to be upgraded to the latest version without needing to redeploy them by selecting **Update targets** from your deployment groups page.  
+
+:::image type="content" source="media/update-targets-deployment-groups.png" alt-text="A screenshot showing how to update targets in deployment groups.":::
+
 ## Monitor release status for deployment groups
 
 When a release pipeline is executing, you can view the live logs for each target server in your deployment group. When the deployment is completed, you can download the log files for every server to examine the deployments and debug any issues.
@@ -104,6 +109,6 @@ From your release pipeline definition, select the post deployment icon, and then
 - [Deployment group jobs](../../process/deployment-group-phases.md)
 - [Deploy to Azure VMs using deployment groups](./deploying-azure-vms-deployment-groups.md)
 - [Provision agents for deployment groups](./howto-provision-deployment-group-agents.md)
-- [Self-hosted Windows agents](../../agents/v2-windows.md)
-- [Self-hosted macOS agents](../../agents/v2-osx.md)
-- [Self-hosted Linux agents](../../agents/v2-linux.md)
+- [Self-hosted Windows agents](../../agents/windows-agent.md)
+- [Self-hosted macOS agents](../../agents/osx-agent.md)
+- [Self-hosted Linux agents](../../agents/linux-agent.md)

@@ -3,6 +3,7 @@ title: Create test plans and suites
 description: Learn about Test tools. Create test plans in Azure Test Plans and Azure DevOps Server to make sure each of the deliverables meets your needs.
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
@@ -16,7 +17,7 @@ ms.date: 11/02/2021
 
 Create test plans and test suites to track manual testing for sprints or milestones.
 That way, you can see when the testing for a specific sprint or milestone is complete.
-For more information about manual testing, see [What is Azure Test Plans?](overview.md) and [Automated and Manual Testing with Azure Test Plans](https://www.youtube.com/watch?v=LF0hmSysWCg).
+For more information about manual testing, see [What is Azure Test Plans?](overview.md).
 
 ## Share work items across your test experience
 

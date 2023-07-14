@@ -533,7 +533,43 @@
     {
       "source_path_from_root": "/release-notes/index.md",
       "redirect_url": "/azure/devops/release-notes/features-timeline"
-    },    
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2023-03.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2023-02.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2023-01.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-12.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-11.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-10.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },  
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-09.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },  
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-08.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },  
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-07.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
     {
       "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-06.md",
       "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"

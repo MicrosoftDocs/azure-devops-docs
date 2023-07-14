@@ -7,7 +7,7 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 04/01/2022
+ms.date: 01/30/2023
 monikerRange: ">= azure-devops-2019"
 ---
 
@@ -40,7 +40,7 @@ Examine the contents of the YAML file.
       vmImage: 'ubuntu-latest'
 
     steps:
-    - task: Maven@3
+    - task: Maven@4
       inputs:
         mavenPomFile: 'pom.xml'
         mavenOptions: '-Xmx3072m'
@@ -191,7 +191,7 @@ To build a project using different versions of that language, you can use a `mat
       vmImage: $(imageName)
 
     steps:
-    - task: Maven@3
+    - task: Maven@4
       inputs:
         mavenPomFile: "pom.xml"
         mavenOptions: "-Xmx3072m"
@@ -227,9 +227,20 @@ Pipeline triggers cause a pipeline to run. You can use `trigger:` to cause a pip
 
 ## Pipeline settings
 
-There are some pipeline settings that you don't manage in your YAML file, such as the YAML file path and enabled status of your pipeline. To configure these settings, navigate to the [pipeline details page](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) and choose **More actions**, **Settings**. For more information on navigating and browsing your pipelines, see [Navigating pipelines](get-started/multi-stage-pipelines-experience.md).
+You can view and configure pipeline settings from the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: menu on the [pipeline details](create-first-pipeline.md#view-pipeline-details) page.
 
-:::image type="content" source="media/customize-pipeline/pipeline-settings.png" alt-text="Pipeline settings.":::
+:::image type="content" source="get-started/media/pipeline-more-actions.png" alt-text="Screenshot of pipeline settings and more actions menu.":::
+
+* **Manage security** - [Manage security](#manage-security)
+* **Rename/move** - Edit your pipeline name and folder location.
+  :::image type="content" source="get-started/media/rename-move-pipeline.png" alt-text="Screenshot of rename or move pipeline page.":::
+* **Status badge** - [Add a status badge to your repository](create-first-pipeline.md?view=azure-devops&preserve-view=true#add-a-status-badge-to-your-repository)
+* **Delete** - Deletes the pipeline including all builds and associated artifacts.
+* **Scheduled runs** - [Scheduled runs view](process/scheduled-triggers.md#scheduled-runs-view)
+
+Choose **Settings** to configure the following pipeline settings.
+
+:::image type="content" source="media/customize-pipeline/pipeline-settings.png" alt-text="Screenshot of pipeline settings page.":::
 
 From the **Pipeline settings** pane you can configure the following settings.
 
@@ -240,10 +251,18 @@ From the **Pipeline settings** pane you can configure the following settings.
 * **YAML file path** - If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
 * **Automatically link work items included in this run** - The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When **Automatically link work items included in this run** is selected, you must specify either a specific branch, or `*` for all branches, which is the default. If you specify a branch, work items are only associated with runs of that branch. If you specify `*`, work items are associated for all runs. 
 
-  :::image type="content" source="media/customize-pipeline/link-work-items.png" alt-text="Automatically link work items included in this run.":::
+  :::image type="content" source="media/customize-pipeline/link-work-items.png" alt-text="Screenshot of setting to automatically link work items included in this run.":::
 
-  * To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/manage-team-group-global-organization-notifications.md)
+  * To get notifications when your runs fail, see how to [Manage notifications for a team](../organizations/notifications/manage-team-group-global-organization-notifications.md)
 
+
+### Manage security
+
+You can configure pipelines security on a project level from the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: on the pipelines landing page, and on a pipeline level on the pipeline details page.
+
+![Screenshot of pipeline security menu options.](get-started/media/pipelines-context-menu.png)
+
+To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to predefined roles. You can manage security for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](policies/permissions.md).
 ## Create work item on failure
 
 YAML pipelines don't have a [Create work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. Classic build pipelines are single stage, and **Create work item on failure** applies to the whole pipeline. YAML pipelines can be multi-stage, and a pipeline level setting may not be appropriate. To implement **Create work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work-items/create) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command at the desired point in your pipeline. 

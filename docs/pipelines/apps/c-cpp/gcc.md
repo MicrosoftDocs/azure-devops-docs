@@ -120,7 +120,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
 ## Publish your build output
 
-Add the [Copy Files](../../tasks/utility/copy-files.md) and [Publish Build Artifacts](../../tasks/utility/publish-build-artifacts.md) tasks to your build to save its compiled output as a build artifact.
+Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks to your build to save its compiled output as a build artifact.
 
 ## Next steps
 

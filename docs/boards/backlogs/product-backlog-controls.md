@@ -5,8 +5,8 @@ description: Learn how to switch views and enable from your product or portfolio
 ms.custom: "boards-backlogs, seodec18" 
 ms.service: azure-devops-boards
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 04/28/2022
@@ -145,7 +145,7 @@ For details on using each of these controls, see [Configure your backlog view](c
    :::column span="2":::
       [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](media/backlogs-menu.png)  
       > [!NOTE]
-      > Your backlog levels may differ from the level shown in the previous image based on the process selected or customizations you made to your process. Other common labels are Backlog items (Scrum), Requirements (CMMI), and Issues (Basic). To learn more, see [Choose a process](../work-items/guidance/choose-process.md). 
+      > Your backlog levels may differ from the level shown in the previous image based on the process selected or customizations you made to your process. Other common labels are Backlog items (Scrum), Requirements (CMMI), and Issues (Basic). For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -286,7 +286,7 @@ For details on using each of these controls, see [Configure your backlog view](c
 
 
 > [!NOTE]   
-> Even if you have show parents turned on, the **Create Query** and **Email** ![mail icon](../media/icons/mail_icon.png) controls will only list items at the currently selected level. 
+> Even if you have show parents turned on, the **Create Query** and **Email** ![mail icon](../media/icons/mail_icon.png) controls only list items at the currently selected level. 
  
 
 ## Related articles

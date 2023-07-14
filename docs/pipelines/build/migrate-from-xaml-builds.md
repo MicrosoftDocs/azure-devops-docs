@@ -32,7 +32,7 @@ If you have customized your XAML templates or added custom tasks, then you'll ne
 
 Here are the steps to migrate from XAML builds to newer builds:
 
-1. If you're using a private TFS server, [set up agents](../agents/v2-windows.md) to run your builds.
+1. If you're using a private TFS server, [set up agents](../agents/windows-agent.md) to run your builds.
 
 2. To get familiar with the new build system, create a ["Hello world" build pipeline](../create-first-pipeline.md).
 
@@ -166,7 +166,7 @@ The new build pipeline offers you some new options. For example:
 
 | XAML process parameter | TFS 2017 and newer equivalent | Azure Pipelines equivalent |
 |-|-|-|
-| Clean workspace | On the **Repository** tab, open the **Clean** menu, and then select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Display **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
+| Clean workspace | On the **Repository** tab, open the **Clean** menu, and then select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Display **Advanced settings**, and then select **Clean**. (We plan to move this option out of advanced settings.) |
 | Get version | You can't specify a changeset in the build pipeline, but you can specify one when you manually queue a build. | You can't specify a changeset in the build pipeline, but you can specify one when you manually queue a build. |
 | Label Sources | On the **Repository** tab, select an option from the **Label sources** menu. | **Tasks** tab, in left pane click **Get sources**. Select one of the **Tag sources** options. (We plan to change the name of this to **Label sources**.) |
 
@@ -178,7 +178,7 @@ The new build pipeline offers you some new options. See [Build TFVC repositories
 
 | XAML process parameter | TFS 2017 and newer equivalent | Azure Pipelines equivalent |
 |-|-|-|
-| Clean repository | **Repository** tab, open **Clean** menu, select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Show **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
+| Clean repository | **Repository** tab, open **Clean** menu, select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Show **Advanced settings**, and then select **Clean**. (We plan to move this option out of advanced settings.) |
 | Checkout override | You can't specify a commit in the build pipeline, but you can specify one when you manually queue a build. | You can't specify a commit in the build pipeline, but you can specify one when you manually queue a build. |
 
 The new build pipeline offers you some new options. See [Pipeline options for Git repositories](../repos/pipeline-options-for-git.md).
@@ -204,15 +204,15 @@ On the **Build** tab (TFS 2017 and newer) or the **Tasks** tab (Azure Pipelines)
 > 
 > In the Visual Studio Build arguments, on the **Visual Studio Version** menu, make sure to select version of Visual Studio that you're using.
 
-The new build pipeline offers you some new options. See [Visual Studio Build](../tasks/build/visual-studio-build.md).
+The new build pipeline offers you some new options. See [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1).
 
-Learn more: [Visual Studio Build task](../tasks/build/visual-studio-build.md) (for building solutions), [MSBuild task](../tasks/build/msbuild.md) (for building individual projects).
+Learn more: [Visual Studio Build task](/azure/devops/pipelines/tasks/reference/vsbuild-v1) (for building solutions), [MSBuild task](/azure/devops/pipelines/tasks/reference/msbuild-v1) (for building individual projects).
 
 #### Test
 
 ![XAML source settings, Test.](media/migrate-from-xaml-builds/xaml-build-template-12-test.png)
 
-See [continuous testing](../ecosystems/dotnet-core.md#run-your-tests) and [Visual Studio Test task](../tasks/test/vstest.md).
+See [continuous testing](../ecosystems/dotnet-core.md#run-your-tests) and [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2).
 
 #### Publish Symbols
 
@@ -271,7 +271,7 @@ Here are a few examples of the kinds of apps you can build:
 
 ### Release
 
-The new build system is tightly integrated with Azure Pipelines. So it's easier then ever to automatically kick off a deployment after a successful build. Learn more:
+The new build system is tightly integrated with Azure Pipelines. So it's easier than ever to automatically kick-off a deployment after a successful build. Learn more:
 
 * [Create your first pipeline](../create-first-pipeline.md)
 
@@ -304,10 +304,10 @@ offers hundreds of extensions that you can install to add tasks that extend your
 
 A major feature of the new build system is its emphasis on using scripts to customize your build pipeline. You can check your scripts into version control and customize your build using any of these methods:
 
-* [PowerShell scripts](../tasks/utility/powershell.md) (Windows)
-* [Batch scripts](../tasks/utility/batch-script.md) (Windows)
-* [Command prompt](../tasks/utility/command-line.md)
-* [Shell scripts](../tasks/utility/shell-script.md) (macOS and Linux)
+* [PowerShell scripts](/azure/devops/pipelines/tasks/reference/powershell-v2) (Windows)
+* [Batch scripts](/azure/devops/pipelines/tasks/reference/batch-script-v1) (Windows)
+* [Command prompt](/azure/devops/pipelines/tasks/reference/cmd-line-v2)
+* [Shell scripts](/azure/devops/pipelines/tasks/reference/shell-script-v2) (macOS and Linux)
 
 > [!TIP]
 > 

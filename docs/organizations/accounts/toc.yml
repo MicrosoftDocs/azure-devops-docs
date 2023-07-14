@@ -2,12 +2,12 @@
   href: organization-management.md
 - name: Plan your organizational structure
   displayName: projects, teams, repos, version control, scenarios, quantity, mapping, reporting, structure, data
-  href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json
 - name: Create your organization
   href: create-organization.md
 - name: Manage your organization
   displayName: new, project
-  href: ../../user-guide/manage-organization-collection.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../user-guide/manage-organization-collection.md?toc=/azure/devops/organizations/toc.json
 - name: Look up organization owner
   displayName: access, permissions, owner, project collection administrator, valid
   href: ../security/look-up-organization-owner.md
@@ -16,44 +16,45 @@
   href: ../settings/manage-banners.md
 - name: Manage preview features
   displayName: set, enable, user, organization, features, pipelines, boards, repos, artifacts, test plans, dashboard, analytics, social, project
-  href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json
 - name: Adjust organization settings
   items:
   - name: Add privacy policy URL
     displayName: GDPR, organization, public project, external guest, data, protection
     href: add-privacy-policy-url.md
-  - name: Use policies to manage user PATs (for admins)
-    displayName: restrict, creation, global, full, scope, maximum, lifespan, authentication
-    href: manage-pats-with-policies-for-administrators.md
-  - name: Change time zone
-    displayName: update, organization, user profile, settings
-    href: change-time-zone.md
-  - name: Change organization region
-    displayName: update, reassign, region, geography, location, Virtual Support Agent
-    href: change-organization-location.md
+  - name: Change organization image
+    displayName: image, icon, organization, update, change, profile
+    href: change-organization-image.md
   - name: Change organization owner
     displayName: update, reassign, Project Collection Administrator, owner
     href: change-organization-ownership.md
-- name: Rename or delete an organization
-  items:
-  - name: Rename organization
-    displayName: owner, collection, administrator, new, name, Basic, URL, switch
-    href: rename-organization.md
+  - name: Change organization region
+    displayName: update, reassign, region, geography, location, Virtual Support Agent
+    href: change-organization-location.md
+  - name: Change time zone
+    displayName: update, organization, user profile, settings
+    href: change-time-zone.md
   - name: Delete organization
     displayName: remove, billing, subscription, unlink, project collection administrator
     href: delete-your-organization.md
   - name: Recover organization
     displayName: owner, restore, account
     href: recover-your-organization.md
-  - name: Restrict organization creation
-    displayName: settings, Azure Active Directory, role, administrator, prevent
-    href: azure-ad-tenant-policy-restrict-org-creation.md
+  - name: Rename organization
+    displayName: owner, collection, administrator, new, name, Basic, URL, switch
+    href: rename-organization.md
   - name: Resolve orphaned organization
     displayName: find, owner, collection, administrator, Azure Active Directory, claim ownership,
     href: resolve-orphaned-organization.md
+  - name: Restrict organization creation
+    displayName: settings, Azure Active Directory, role, administrator, prevent
+    href: azure-ad-tenant-policy-restrict-org-creation.md
+  - name: Use policies to manage user PATs (for admins)
+    displayName: restrict, creation, global, full, scope, maximum, lifespan, authentication
+    href: manage-pats-with-policies-for-administrators.md
 - name: Services status
   displayName: service, health, portal, geography, region, core, other, event, log, availability, RSS, REST APIs
-  href: ../../user-guide/service-status-info.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../user-guide/service-status-info.md?toc=/azure/devops/organizations/toc.json
 - name: FAQs
   items:
   - name: Create and configure an organization

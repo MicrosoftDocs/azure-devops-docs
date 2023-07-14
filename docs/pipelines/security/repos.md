@@ -32,7 +32,7 @@ To protect your products from contributed code, consider the following recommend
 
 ### Don't provide secrets to fork builds
 
-By default, your pipelines are configured to build forks, but secrets and protected resources are not made available to the jobs in those pipelines by default.
+By default, your pipelines are configured to build forks, but secrets and protected resources aren't made available to the jobs in those pipelines by default.
 Don't turn off this latter protection.
 
 :::moniker range="> azure-devops-2020"
@@ -58,7 +58,6 @@ Don't turn off this latter protection.
 :::moniker-end
 
 
-
 ### Consider manually triggering fork builds
 
 You can turn off automatic fork builds and instead use pull request comments as a way to manually building these contributions.
@@ -67,8 +66,18 @@ This setting will give you an opportunity to review the code before triggering a
 ### Use Microsoft-hosted agents for fork builds
 
 Don't run builds from forks on self-hosted agents.
-By doing so, you are effectively providing a path to external organizations to run outside code on machines inside your corporate network.
-Use Microsoft-hosted agents or some form of network isolation for your self-hosted agents.
+By doing so, you're effectively providing a path to external organizations to run outside code on machines inside your corporate network.
+Use Microsoft-hosted agents whenever possible. For your self-hosted agent, use some form of network isolation and ensure agents don't persist their state between jobs.
+
+### Review code changes
+
+Before you run your pipeline on a forked pull-request, carefully review the proposed changes, and make sure you're comfortable running it.
+
+The version of the YAML pipeline you'll run is the one from the pull request. Thus, pay special attention to changes to the YAML code and to the code that runs when the pipeline runs, such as command line scripts or unit tests.
+
+### GitHub token scope limitation
+
+When you build a GitHub forked pull request, Azure Pipelines ensures the pipeline can't change any GitHub repository content. This restriction applies _only_ if you use the [Azure Pipelines GitHub app](https://github.com/marketplace/azure-pipelines) to integrate with GitHub. If you use other forms of GitHub integration, for example, the OAuth app, the restriction isn't enforced.
 
 ## User branches
 
@@ -89,3 +98,4 @@ This can apply to a public project (with a separate private repo) as well as a n
 ## Next steps
 
 Next, learn about the more protection offered by checks on [protected resources](resources.md).
+

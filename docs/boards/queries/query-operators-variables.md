@@ -2,11 +2,11 @@
 title: Query fields, operators, macros, and variables
 titleSuffix: Azure Boards
 description: Learn about field data types, operators, and macros/variables used by the Query Editor in Azure Boards and Azure DevOps.
-ms.custom: boards-queries
+ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 06/29/2022
@@ -17,7 +17,7 @@ ms.date: 06/29/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
+Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps version. 
 
 For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md). See also [Guidance to create high-performing queries](high-performing-queries.md) for tips on constructing high-performing queries.
 
@@ -28,7 +28,7 @@ For a quick reference of query tasks and operators and macros supported for each
 The value you specify for a field must conform to the data type for that field. The following table lists the supported data types:
 
 > [!NOTE]   
-> For Azure Boards cloud service, the data type corresponds to that listed for the field on the [Process>Fields page](../work-items/work-item-fields.md#review-fields). For on-premises deployments, the data type corresponds to the `type` attribute assigned to a [`FIELD` definition](../../reference/xml/field-definition-element-reference.md). For more information, see [Work item fields and field attributes](../work-items/work-item-fields.md). 
+> For Azure Boards cloud service, the data type corresponds to that listed for the field on the [Process>Fields page](../work-items/work-item-fields.md#review-fields). For on-premises deployments, the data type corresponds to the `type` attribute assigned to a [`FIELD` definition](/previous-versions/azure/devops/reference/xml/field-definition-element-reference). For more information, see [Work item fields and field attributes](../work-items/work-item-fields.md). 
 
 :::row:::
    :::column span="1":::
@@ -51,9 +51,9 @@ The value you specify for a field must conform to the data type for that field. 
    **DateTime** or  **Date/Time**
    :::column-end:::
    :::column span="3":::
-   A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.) For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md).  
+   A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2023. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.) For query examples, see [Query by date or @CurrentIteration](query-by-date-or-current-iteration.md).  
 
-   For WIQL queries, you can also specify the date in the Coordinated Universal Time (UTC) pattern. For details, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md). 
+   For WIQL queries, you can also specify the date in the Coordinated Universal Time (UTC) pattern. For more information, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -482,7 +482,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
    > [!NOTE]
    > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure Active Directory (Azure AD) when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.  
 
-   For information about category groups, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&amp;bc=/azure/devops/reference/breadcrumb/toc.json).
+   For information about category groups, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types).
 
    :::column-end:::
 :::row-end:::
@@ -584,7 +584,7 @@ You can use the macros described in the following table to filter your queries b
    :::column-end:::
    :::column span="3":::
       Use with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../project/navigation/go-to-project-repo.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
-      The **@CurrentIteration** macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
+      The **@CurrentIteration** macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../organizations/notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
    :::column-end:::
 :::row-end:::
 ---
@@ -603,7 +603,7 @@ You can use the macros described in the following table to filter your queries b
       **@Follows**  
    :::column-end:::
    :::column span="3":::
-      Use with the **ID** field and **In** operator to list all work items that you are following in the project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md).  
+      Use with the **ID** field and **In** operator to list all work items that you're following in the project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md).  
       The **@Follows** macro is supported only when run from the web portal.
    :::column-end:::
 :::row-end:::
@@ -631,7 +631,7 @@ You can use the macros described in the following table to filter your queries b
       **@Project** 
    :::column-end:::
    :::column span="3":::
-      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>. The system automatically defaults to filtering based on the current project. To learn more, see [Define a query, Query across projects](using-queries.md#across-projects). 
+      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>. The system automatically defaults to filtering based on the current project. For more information, see [Define a query, Query across projects](using-queries.md#across-projects). 
    :::column-end:::
 :::row-end:::
 ---
@@ -649,7 +649,7 @@ You can use the macros described in the following table to filter your queries b
       **@RecentProjectActivity** <sup>1</sup>  
    :::column-end:::
    :::column span="3":::
-      Use with the **ID** field and **In** operator to list work items that have been recently updated. The number of work items listed depends on the work tracking activity of the project. For highly active projects, the macro will list work items that have been updated in the project within the last 30 days or so. For less active projects, however, this list could include work items older than 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). The number of work items returned is capped at 5000. 
+      Use with the **ID** field and **In** operator to list work items that have been recently updated. The number of work items listed depends on the work tracking activity of the project. For highly active projects, the macro lists work items that have been updated in the project within the last 30 days or so. For less active projects, however, this list could include work items older than 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). The number of work items returned is capped at 5000. 
    :::column-end:::
 :::row-end:::
 ---
@@ -704,7 +704,7 @@ You can use the macros described in the following table to filter your queries b
       **@Today**
    :::column-end:::
    :::column span="3":::
-      Use with a <code>DateTime</code> field to filter for work items that relate to the current date or to an earlier date. You can also modify the **@Today** macro by subtracting days. For example, you can find all items created in the last week with the clause <code>Created Date&gt;=Today-7</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with a <code>DateTime</code> field to filter for work items that relate to the current date or to an earlier date. You can also modify the **@Today** macro by subtracting days. For example, you can find all items created in the last week with the clause <code>Created Date&gt;=@Today-7</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -726,7 +726,7 @@ For examples, see [Example work item queries](query-index-quick-ref.md) and [Que
 
 
 > [!NOTE]    
-> Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support the cloud service, do not support full-text search. In these instances, you will only see the **Contains** and **Does not Contain** operators.
+> Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support the cloud service, do not support full-text search. In these instances, you only see the **Contains** and **Does not Contain** operators.
 
 
 ::: moniker range="< azure-devops"

@@ -1,14 +1,14 @@
 ---
-title: Manage paid user access in Azure DevOps
+title: Manage paid access for users
 titleSuffix: Azure DevOps
-ms.custom: seodec18, freshness-fy22q1
+ms.custom: seodec18, freshness-fy22q1, engagement-fy23
 description: Assign paid access and control the default access of your new users in Azure DevOps.
 ms.subservice: azure-devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 08/05/2022
+ms.date: 01/05/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,9 +16,9 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Rather than complete a purchase process, you can assign and remove users and get billed according to those assignments. This article helps you take advantage of the tools we have for managing paid access for users. This way you only pay for what you need.
+You can assign and remove users and get billed according to those assignments, rather than complete a purchase process. This article helps you take advantage of the tools we have for managing paid access for users. This way you only pay for what you need.
 
-Learn how to manage paid access to [Azure Boards](https://azure.microsoft.com/services/devops/boards/), [Azure Repos](https://azure.microsoft.com/services/devops/repos/), and [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/).
+For more information, learn how to manage paid access to [Azure Boards](https://azure.microsoft.com/services/devops/boards/), [Azure Repos](https://azure.microsoft.com/services/devops/repos/), and [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/).
 
 Visual Studio subscribers get access included with their subscription, and their subscription gets detected when they sign in to Azure DevOps for the first time.
 
@@ -37,8 +37,8 @@ Ensure you have the following items in place:
 
 Complete the following steps to pay via Azure.
 
-1. Set up an Azure DevOps organization, even if you don't intend to use it.
-2. Set up billing using an Azure subscription and add users or buy CI/CD.
+1. [Create an Azure DevOps organization](../accounts/create-organization.md), even if you don't intend to use it.
+2. [Set up billing](set-up-billing-for-your-organization-vs.md) using an Azure subscription and add users or buy CI/CD.
 3. Assign licenses to users.
 
 You're entitled to the same number of user licenses to be used in the server.
@@ -116,7 +116,9 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 ## Pay for a user once across multiple organizations
 
-If you're a member of more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** user once, for all organizations under the same billing Azure subscription. For more information, see [multi-organization billing FAQs](./billing-faq.yml). Complete the following steps.
+If you're a member of more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** human user once, for all organizations under the same billing Azure subscription. This does not apply to [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md), which you must pay for each organization the service principal has been added to where the service principal has **Basic** or **Basic + Test Plans**.
+
+For more information, see [multi-organization billing FAQs](./billing-faq.yml). Complete the following steps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 

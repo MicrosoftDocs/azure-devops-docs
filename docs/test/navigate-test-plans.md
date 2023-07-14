@@ -2,9 +2,10 @@
 title: Navigate Test Plans  
 description: Learn how to navigate Test Plans. 
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>=azure-devops-2020'
 ms.date: 09/14/2021
 ---
@@ -140,7 +141,7 @@ Choose the :::image type="icon" source="../media/icons/more-actions.png" border=
 
 **Import test suites**
 
-Reuse the suites you have created and import them into the current suite/plan. You can select the **Project**, **Test Plan**, and **Test Suite** from which you want to import the tests. Depending upon the suite you select, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone or copy.Also note that we cannot import test suites from the same test plan. 
+Reuse the suites you have created and import them into the current suite/plan. You can select the **Project**, **Test Plan**, and **Test Suite** from which you want to import the tests. Depending upon the suite you select, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone or copy. Also note that we cannot import test suites from the same test plan. 
 
 :::image type="content" source="media/navigate/import-test-suites-dialog.png" alt-text="Test suites tree import overview.":::
 
@@ -166,6 +167,10 @@ From the **Define** tab you can exercise the following tasks:
 	- **Add New test case using grid**: Create one or more test cases using the test cases grid view and automatically add them to the suite.
 - **Order test cases**: Reorder test cases by dragging/dropping one or more test cases within a given suite. The order of test cases only applies to manual test cases and not to automated tests.
 - **Move test cases from one suite to another**: Using drag/drop, move test cases from one test suite to another. 
+
+**Drag and drop a test case from one suite to another**
+
+:::image type="content" source="media/navigate/drag-and-drop-test-case-to-different-suite.png" alt-text="Screenshot of drag and drop of one test case from one test suite to another.":::
 
 **Add existing test cases to a test suite dialog**
 

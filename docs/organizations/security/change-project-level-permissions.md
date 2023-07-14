@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Quickstart guide to change project-level permissions or group membership in Azure DevOps
 ms.subservice: azure-devops-security
 ms.custom: security-refresh
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
@@ -35,7 +35,11 @@ See the following articles for related information:
 [!INCLUDE [project-level-permissions](./includes/project-level-permissions.md)]
 
 > [!NOTE]
-> By default, Contributors are assigned the **Create tag definition** permission. Although the **Create tag definition** permission appears in the security settings at the project-level, tagging permissions are actually collection-level permissions that are scoped at the project level when they appear in the user interface. To scope tagging permissions to a single project when using a command-line tool, you must provide the GUID for the project as part of the command syntax. Otherwise, your change will apply to the entire collection. To learn more about work item tagging permissions, see [Security groups, service accounts, and permissions, Work item tags](permissions.md#work-item-tags). 
+> The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the **Project Administrator**s group. It isn't controlled by a permissions surfaced within the user interface. 
+
+### Create tag definition permission
+
+By default, members of the **Contributors** group are assigned the **Create tag definition** permission. Although the **Create tag definition** permission appears in the security settings at the project-level, tagging permissions are actually collection-level permissions that are scoped at the project level when they appear in the user interface. To scope tagging permissions to a single project when using a command-line tool, you must provide the GUID for the project as part of the command syntax. Otherwise, your change will apply to the entire collection. To learn more about work item tagging permissions, see [Security groups, service accounts, and permissions, Work item tags](permissions.md#work-item-tags). 
 
 ## Prerequisites
 
@@ -43,7 +47,7 @@ See the following articles for related information:
 - If want to add security groups defined in Azure Active Directory or Active Directory, make sure those are first defined. To learn more, see [Add AD/Azure AD users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
 
 > [!NOTE]   
-> Users granted **Stakeholder** access, aren't able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
+> Users granted **Stakeholder** access, aren't able to access select features even if granted permissions to those features. To learn more, see [Stakeholder access quick reference](stakeholder-access.md).
  
 
 <a id="add-user-group" />
@@ -57,7 +61,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -164,12 +168,12 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 
 ## Change permissions for a group 
 
-You can change the project-level permissions for any project-level group. Each team added to a project is automatically added as a project-level group. To add security groups to a project, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md). To understand permission assignments and inheritance, see [About permissions, Permission states](about-permissions.md#permission-states).
+You can change the project-level permissions for any project-level group, except the **Project Administrators** group. Each team added to a project is automatically added as a project-level group. To add security groups to a project, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md). To understand permission assignments and inheritance, see [About permissions, Permission states](about-permissions.md#permission-states).
     
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -241,7 +245,7 @@ You can change the project-level permissions for a specific user. To understand 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 

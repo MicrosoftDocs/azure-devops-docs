@@ -73,7 +73,7 @@ You need to first configure how TFS connects to vCenter. You have to a setup a s
 3. Follow these steps to create a vCenter Server service connection in your project:
 
    * Open your Azure Pipelines or TFS project in 
-     your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
+     your web browser. Choose the **Settings** icon in the menu bar and select **Service connections**.
 
    * In the **Services** tab, choose **New service connection**, and select **VMware vCenter Server**.
 
@@ -152,5 +152,5 @@ To configure the **VMware Resource Deployment** task to provision a new virtual 
 
 Once you have the virtual machines set up, deploying a build to those virtual machines is no different than deploying to any other machine. For instance, you can:
 
-* Use the [PowerShell on Target Machines](../tasks/deploy/powershell-on-target-machines.md) task to run remote scripts on those machines using Windows Remote Management.
+* Use the [PowerShell on Target Machines](/azure/devops/pipelines/tasks/reference/powershell-on-target-machines-v3) task to run remote scripts on those machines using Windows Remote Management.
 * Use [Deployment groups](../release/deployment-groups/index.md) to run scripts and other tasks on those machines using build and release agent.

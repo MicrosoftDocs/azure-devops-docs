@@ -3,8 +3,8 @@ title: Set up or configure hierarchical teams in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn how to configure teams to support portfolio backlogs to track progress across teams in Azure Boards and  Azure DevOps.
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -136,10 +136,10 @@ You do this by opening each area path associated with a feature team and changin
 By including subarea paths for the management teams, you automatically include the backlog items of their feature teams onto the management team's backlog. The default setting for all teams is to exclude subarea paths. 
 
 > [!NOTE]   
-> Sub-area paths may break a team's ability to reorder or reparent items on the backlog. Also, it can introduce uncertainties with regards to assignments made to the Kanban Board Column, Done, and Lane fields. To learn more, see [Exercising select features with shared area paths](#op-issues) later in this article. 
+> Sub-area paths may break a team's ability to reorder or reparent items on the backlog. Also, it can introduce uncertainties with regards to assignments made to the Kanban Board Column, Done, and Lane fields. For more information, see [Exercising select features with shared area paths](#op-issues) later in this article. 
 
 ::: moniker range=">= azure-devops-2019"
-You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from **Teams**. 
+You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly go to it from **Teams**. 
 
 1. From **Project Settings**, choose **Teams**, and then choose the team whose settings you want to modify. 
 
@@ -212,7 +212,7 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 
 ## Configure other team settings 
 
-For teams to be well defined, you'll want to add team administrator(s) and have them verify or configure other team settings. To learn more, see [Manage and configure team tools](../../organizations/settings/manage-teams.md). 
+For teams to be well defined, you'll want to add team administrator(s) and have them verify or configure other team settings. For more information, see [Manage and configure team tools](../../organizations/settings/manage-teams.md). 
 
 ## Review area paths assigned to teams 
 
@@ -255,12 +255,12 @@ Because each team can customize the Kanban board columns and swimlanes, the valu
 By design, the team with the longest area path wins the conflict and determines the values for the Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields. If the shared area paths are of equal depth, the results are non-deterministic.  
  
 ::: moniker range=">= azure-devops-2019"
- The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For details, see [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md). 
+ The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For more information, see [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md). 
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
- The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For details, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
+ The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For more information, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
 ::: moniker-end
 
 

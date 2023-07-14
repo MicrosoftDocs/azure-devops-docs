@@ -8,7 +8,7 @@ ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/20/2020
+ms.date: 11/11/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -26,12 +26,15 @@ When you organize directory members with [Azure AD groups](/azure/active-directo
 Not familiar with Azure AD, but want to check it out? Learn more about [Azure AD benefits](/azure/active-directory/fundamentals/active-directory-whatis)
 and differences in how you [control organization access with Microsoft accounts or with Azure AD](access-with-azure-ad.md).
 
+> [!NOTE]
+> Due to a functional limitation on Microsoft Graph, [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md) will not appear in any list of Azure AD group members on Azure DevOps. Permissions set on any Azure AD groups will still apply to any service principals in the group that have been added to the organizations, even if they are not displaying on the web UI.
+
 ## Prerequisites
 
 * Your organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.yml#ChangeMSA). Learn how to [connect your organization to Azure AD](connect-organization-to-azure-ad.md).
 * You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group. You must also have at least Basic access, not Stakeholder.
 * To create and manage Azure AD groups, you need Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
-* Azure AD changes might take up to 1 hour to be visible in Azure DevOps.
+* Azure AD changes might take up to 1 hour to be visible in Azure DevOps, but you can immediately [reevaluate your permissions](../security/request-changes-permissions.md#refresh-or-re-evaluate-your-permissions).
 
 ## Add an Azure AD group to an Azure DevOps group
 
@@ -58,7 +61,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
     You [invite guests into Azure AD](https://devblogs.microsoft.com/devops/inviting-directory-guests-to-aad-backed-vsts-accounts/) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
 
-5. Add users or groups, and then choose **Save** when you're done.
+5. Add users or groups, and then **Save** your changes.
 
    ![Save add users or groups](media/user-hub/save-add-users-groups.png)
 
@@ -75,13 +78,13 @@ and differences in how you [control organization access with Microsoft accounts 
 3. Choose **Security**, select the group you want to add a member to, select **Members**, and then select **Add**.
 
    ![Add a member to your selected group](media/manage-azure-ad-groups/admin-settings-security-choose-group-add-member.png)
-4. Add groups, and then save your changes.
+4. Add groups, and then **Save** your changes.
 
     ![Bulk adds members to a group](media/manage-azure-ad-groups/bulk-add-groups.png)
 
     You [invite guests into Azure AD](https://devblogs.microsoft.com/devops/inviting-directory-guests-to-aad-backed-vsts-accounts/) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
 
-5. Add more users or groups, or save your changes if you're done.
+5. Add more users or groups if needed, and then **Save** your changes.
 
 * * *
 

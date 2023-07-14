@@ -1,26 +1,27 @@
 ---
 title: Search packages
 titleSuffix: Azure Artifacts
-description: How to search for packages across all your feeds in an Azure DevOps organization.
+description: How to search for packages across all your feeds and in upstream sources in an Azure DevOps organization.
 ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2020'
-ms.date: 01/14/2021
+monikerRange: 'azure-devops'
+ms.date: 11/28/2022
 ---
 
 # Search packages across your feeds
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Package Search is available to all users of Azure DevOps. For information on main search functions, see [Get started with search](get-started-search.md).
 
 ## Prerequisites
 
-- [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
-- [Azure Artifacts feed](../../artifacts/get-started-nuget.md).
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed. [Create a feed](../../artifacts/get-started-nuget.md#create-a-feed), if you don't have one already.
 
 ## Apply supported functions to package search
 
@@ -39,8 +40,30 @@ Using the **Type** filter, you can select the type of package you want to search
 
 You can use the Azure DevOps REST API to search for packages in a specific organization. See [Fetch Package Search Results](/rest/api/azure/devops/search/package-search-results/fetch-package-search-results) for more details.
 
+#### Example
+
+```Command
+POST https://almsearch.dev.azure.com/ORGANIZATION_NAME/_apis/search/packagesearchresults?api-version=7.0
+```
+
+```Request body
+{
+  "$orderBy": null,
+  "$top": 100,
+  "$skip": 0,
+  "searchText": "react-calendar",
+  "filters": {
+    "ProtocolType": "Npm"
+  }
+}
+```
+
+## Search in upstream sources
+
+Using upstream sources, you can consume packages from public registries and Azure Artifacts feeds. See [Search upstreams](../../artifacts/how-to/search-upstream.md) to lean how to search for packages in upstream sources and save them to your feed.
+
 > [!NOTE]
-> Searching for packages in upstreams with NuGet Package Explorer is not supported. See [Download NuGet packages](../../artifacts/get-started-nuget.md#download-nuget-packages) for more details.
+> Searching for packages in upstreams using the NuGet Package Explorer is not supported. See [Download NuGet packages](../../artifacts/get-started-nuget.md#download-nuget-packages) for more details.
 
 ## Next steps
 

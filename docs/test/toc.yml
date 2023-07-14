@@ -39,7 +39,7 @@
     href: repeat-test-with-different-data.md
   - name: Test from the Kanban board
     displayName: inline testing
-    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json
   - name: Perform user acceptance testing
     displayName: user acceptance, testing
     href: user-acceptance-testing.md
@@ -48,10 +48,10 @@
     href: collect-diagnostic-data.md
   - name: Delete test artifacts
     displayName: delete, artifacts
-    href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md
+    href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json.md
   - name: Set permissions and access
     displayName: access, permissions
-    href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json
   - name: Set test retention policies
     displayName: results, logs
     href: how-long-to-keep-test-results.md
@@ -75,32 +75,32 @@
   - name: Pipelines & test results
     items:
     - name: Code coverage
-      href: ../pipelines/test/review-code-coverage-results.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      href: ../pipelines/test/review-code-coverage-results.md?toc=/azure/devops/test/toc.json
     - name: Pipeline Analytics
-      href: ../pipelines/reports/pipelinereport.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      href: ../pipelines/reports/pipelinereport.md?toc=/azure/devops/test/toc.json
       displayname: pipeline pass rate, pipeline duration, test pass rate, failed runs, failure trend, tests in the pipeline, unique failing tests, top 10 steps by duration
     - name: Test Analytics
-      href: ../pipelines/test/test-analytics.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      href: ../pipelines/test/test-analytics.md?toc=/azure/devops/test/toc.json
       displayname: test failures, trends, pass rate, failing tests, group tests, individual tests, failure analysis
     - name: Build and release test results
-      href: ../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      href: ../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/test/toc.json
     - name: Tests and Requirements traceability
-      href: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      href: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/test/toc.json
     - name: Pool consumption report
-      href: ../pipelines/agents/pool-consumption-report.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      href: ../pipelines/agents/pool-consumption-report.md?toc=/azure/devops/test/toc.json
       displayname: agent usage, private self-hosted, public hosted, concurrency, historical graph, preview
     - name: Configure a Test Results Trend widget
-      href: ../report/dashboards/configure-test-results-trend.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      href: ../report/dashboards/configure-test-results-trend.md?toc=/azure/devops/test/toc.json
     - name: Test Impact Analysis (TIA)
-      href: ../pipelines/test/test-impact-analysis.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      href: ../pipelines/test/test-impact-analysis.md?toc=/azure/devops/test/toc.json
     - name: Flaky test management and reporting
-      href: ../pipelines/test/flaky-test-management.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      href: ../pipelines/test/flaky-test-management.md?toc=/azure/devops/test/toc.json
 - name: Troubleshooting
   items:
   - name: Manual testing FAQs
     href: reference-qa.yml
   - name: Unable to connect
-    href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json
 - name: Reference
   items:
   - name: Test case management commands
@@ -126,7 +126,7 @@
     href: /rest/api/azure/devops/testresults/result-meta-data
 - name: Resources
   items:
-  - name: Azure Load Test Preview
+  - name: Azure Load Testing
     href: /azure/load-testing/overview-what-is-azure-load-testing
   - name: Azure Pipelines
     href: ../pipelines/index.yml

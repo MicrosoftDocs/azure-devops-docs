@@ -7,7 +7,7 @@ metadata:
   title: Azure DevOps documentation what's new?
   description: "Learn about new and updated content in Azure DevOps docs."
   ms.topic: landing-page
-  ms.date: 05/01/2020
+  ms.date: 01/09/2023
   author: steved0x
   ms.author: sdanie
 
@@ -16,13 +16,12 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: September 2022
+          - text: June 2023
             url: azure-devops-docs-whats-new.md
-          - text: August 2022
-            url: azure-devops-docs-2022-08.md
-          - text: July 2022
-            url: azure-devops-docs-2022-07.md
-
+          - text: May 2023
+            url: azure-devops-docs-2023-05.md
+          - text: April 2023
+            url: azure-devops-docs-2023-04.md
 
   - title: "Get involved - contribute to Azure DevOps docs"
     linkLists:

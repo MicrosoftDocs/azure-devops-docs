@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 10/13/2022
+ms.date: 04/21/2023
 ms.custom: contperf-fy21q3
 monikerRange: '<= azure-devops'
 ---
@@ -19,9 +19,9 @@ They cover actions like creating new [variables](../process/variables.md), marki
 
 |Type  |Commands  |
 |---------|---------|
-|Task commands     |    [LogIssue](#logissue-log-an-error-or-warning), [SetProgress](#setprogress-show-percentage-completed),  [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [AddAttachment](#addattachment-attach-a-file-to-the-build), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable) |
+|Task commands     |    [AddAttachment](#addattachment-attach-a-file-to-the-build), [Complete](#complete-finish-timeline), [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [LogIssue](#logissue-log-an-error-or-warning), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [SetProgress](#setprogress-show-percentage-completed), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary) |
 |Artifact commands     |   [Associate](#associate-initialize-an-artifact), [Upload](#upload-upload-an-artifact)      |
-|Build commands     |  [UploadLog](#uploadlog-upload-a-log), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [AddBuildTag](#addbuildtag-add-a-tag-to-the-build) |
+|Build commands     |  [AddBuildTag](#addbuildtag-add-a-tag-to-the-build), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [UploadLog](#uploadlog-upload-a-log) |
 |Release commands     |    [UpdateReleaseName](#updatereleasename-rename-current-release)     |
 
 
@@ -153,12 +153,11 @@ exit 1
 Write-Host "##vso[task.logissue type=error]Something went very wrong."
 exit 1
 ```
-
 ---
 
 > [!TIP]
 > 
-> `exit 1` is optional, but is often a command you'll issue soon after an error is logged. If you select **Control Options: Continue on error**, then the `exit 1` will result in a partially successful build instead of a failed build.
+> `exit 1` is optional, but is often a command you'll issue soon after an error is logged. If you select **Control Options: Continue on error**, then the `exit 1` will result in a partially successful build instead of a failed build. As an alternative, you can also use `task.logissue type=error`.
 
 #### Example: Log a warning about a specific place in a file
 
@@ -238,9 +237,22 @@ Finish the timeline record for the current task, set task result and current ope
    
 #### Example
 
+Log a task as succeeded. 
+
 ```
 ##vso[task.complete result=Succeeded;]DONE
 ```
+
+Set a task as failed. As an alternative, you can also use `exit 1`.
+
+```yaml
+- bash: |
+    if [ -z "$SOLUTION" ]; then
+      echo "##vso[task.logissue type=error;]Missing template parameter \"solution\""
+      echo "##vso[task.complete result=Failed;]"
+    fi
+```
+
 
 ### LogDetail: Create or update a timeline record for a task
 
@@ -621,12 +633,19 @@ You can automatically generate a build number from tokens you specify in the [pi
 
 #### Usage
 
-Add a tag for current build.
+Add a tag for current build. You can expand the tag with a predefined or user-defined variable. For example, here a new tag gets added in a Bash task with the value `last_scanned-$(currentDate)`. You can't use a colon with AddBuildTag. 
+
 
 #### Example
 
-```
-##vso[build.addbuildtag]Tag_UnitTestPassed
+```yaml
+- task: Bash@3
+    inputs:
+    targetType: 'inline'
+    script: |
+        last_scanned="last_scanned-$(currentDate)"
+        echo "##vso[build.addbuildtag]$last_scanned"
+    displayName: 'Apply last scanned tag'
 ```
 
 

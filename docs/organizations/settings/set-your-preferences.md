@@ -5,8 +5,8 @@ ms.custom: contperf-fy22q4
 description: Learn how to change a user's picture, preferred email, and other user preferences from the user's Azure DevOps profile.
 ms.subservice: azure-devops-settings
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 07/27/2022
@@ -28,11 +28,9 @@ You can set user preferences on the user profile page in Azure DevOps. Changes c
 See the following articles for setting other user preferences:
 
 - [Change time and locale](../accounts/change-time-zone.md#change-user-profile-time-zone): Change the preferred language, date and time patterns, and time zone.  
-- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md): Add or review subscriptions to event changes.  
+- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md): Add or review subscriptions to event changes.  
 - [Refresh or re-evaluate your permissions](../security/troubleshoot-permissions.md#refresh-permissions): Use to refresh permissions and make any recent changes take effect.  
 - [Manage preview features](../../project/navigation/preview-features.md): Enable or disable a preview feature for your user account.  
-
-[!INCLUDE [preview-features-enabled](../../includes/preview-features-enabled-new-account.md)]
 
 ::: moniker-end
 
@@ -44,9 +42,7 @@ See the following articles for setting more user preferences:
 
 - [Use personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
-- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
-
-[!INCLUDE [preview-features-enabled](../../includes/preview-features-enabled-new-account.md)]
+- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)  
 
 ::: moniker-end
 
@@ -54,7 +50,7 @@ See the following articles for setting more user preferences:
 
 On your user profile page, you can change your picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences.
 
-Other tools for setting your Azure DevOps preferences include [Notifications](../../notifications/manage-your-personal-notifications.md) to add or review subscriptions to event changes.
+Other tools for setting your Azure DevOps preferences include [Notifications](../../organizations/notifications/manage-your-personal-notifications.md) to add or review subscriptions to event changes.
 
 ::: moniker-end
 ## Set preferences
@@ -65,7 +61,7 @@ Other tools for setting your Azure DevOps preferences include [Notifications](..
 
    ![Screenshot to open Azure DevOps profile.](../../media/open-user-settings-profile-preview.png)
 
-2. From the **Profile** page, you can change the profile picture, display name, contact information, and country. Select **Save**. Select the **Time and Locale** tab to change more settings, like language, date and time pattern, time zone, and UI theme.
+2. From the **Profile** page, you can change the profile picture, display name, contact information, and country/region. Select **Save**. Select the **Time and Locale** tab to change more settings, like language, date and time pattern, time zone, and UI theme.
 
    ![Screenshot to choose and edit the Profile page.](media/edit-about-page-preview.png)
 
@@ -105,7 +101,7 @@ Other tools for setting your Azure DevOps preferences include [Notifications](..
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of highlighted Edit profile button.](../../media/settings/profile-jamal-h.png)
 
-3. From the **About** page, you can change the user profile picture, display name, contact information, and country. 
+3. From the **About** page, you can change the user profile picture, display name, contact information, and country/region. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of the About User profile page.](../../media/settings/edit-profile-about-dialog.png)
@@ -126,7 +122,7 @@ User profile settings are updated.
 ## Related articles
 
 - [Time zone settings and usage](../settings/timezone-settings-usage.md)
-- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
+- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)  
 - [Usage](../../integrate/concepts/rate-limits.md)  
-- [Set favorites](../../notifications/manage-your-personal-notifications.md)  
+- [Set favorites](../../organizations/notifications/manage-your-personal-notifications.md)  
 - [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)

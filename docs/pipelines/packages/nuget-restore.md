@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Restore NuGet packages in Azure Pipelines
+# Restore NuGet packages with Azure Pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -21,8 +21,9 @@ With NuGet Package Restore you can install all your project's dependency without
 ### Prerequisites
 
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
+- An Azure DevOps project. If you don't have one yet, you can [create a new project](../../organizations/projects/create-project.md).
 - An Azure Artifacts feed. [Create a new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already.
-- [Set up your project](../../artifacts/nuget/nuget-exe.md).
+- Connect to Azure Artifacts feed: [NuGet.exe](../../artifacts/nuget/nuget-exe.md), [dotnet](../../artifacts/nuget/dotnet-setup.md).
 - [Set up your pipeline permissions](../../artifacts/feeds/feed-permissions.md#pipelines-permissions).
 
 ## Restore NuGet packages from a feed
@@ -44,19 +45,19 @@ With NuGet Package Restore you can install all your project's dependency without
     :::image type="content" source="media/nuget-restore-classic.png" alt-text="Screenshot that shows how to configure the NuGet restore task.":::
 
 > [!NOTE]
-> Classic NuGet restore uses the [NuGetCommand@2](../tasks/package/nuget.md) task. By default, this version uses NuGet 4.1.0. Use the [NuGet Tool Installer task](../tasks/tool/nuget.md) if you want to use a different NuGet version.
+> Classic NuGet restore uses the [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) task. By default, this version uses NuGet 4.1.0. Use the [NuGet Tool Installer task](/azure/devops/pipelines/tasks/reference/nuget-tool-installer-v1) if you want to use a different NuGet version.
 
 ### [YAML](#tab/yaml/)
 
 ```YAML
-- task: DotNetCoreCLI@2
-  displayName: dotnet restore
+- task: NuGetCommand@2
+  displayName: NuGet v2 Restore
   inputs:
-    command: restore                      ## The dotnet command to run. Options: build, push, pack, restore, run, test, and custom.
-    projects: '**/*.csproj'               ## Path to your csproj file
-    feedsToUse: 'select'                  ## Options: select, config
-    vstsFeed: '<projectName>/<feedName>'  ## Required when feedsToUse == Select
-    includeNuGetOrg: true                 ## Use packages from NuGet.org
+    command: restore                      
+    restoreSolution: '**/*.sln'             ## Required when command = restore. Path to solution, packages.config, or project.json. Default: **/*.sln.
+    feedsToUse: 'select'                    ## Required. Feeds to use. 'select' | 'config'. Alias: selectOrConfig. Default: select.
+    vstsFeed: '<PROJECT_NAME>/<FEED_NAME>'  ## Required when feedsToUse == Select. Use packages from this Azure Artifacts feed. 
+    includeNuGetOrg: true                   ## Use packages from upstream (NuGet.org)
 ```
 
 * * *
@@ -85,9 +86,9 @@ To restore your NuGet packages, run the following command in your project direct
 nuget.exe restore
 ```
 
-## Restore NuGet packages from feeds in a different organization
+## Restore NuGet packages from a feed in a different organization
 
-To restore NuGet packages from feeds in a different Azure DevOps organization, you must use a personal access token to authenticate.
+To restore NuGet packages from a feed in a different Azure DevOps organization, you must use a personal access token to authenticate.
 
 #### Create a personal access token
 
@@ -97,7 +98,9 @@ To restore NuGet packages from feeds in a different Azure DevOps organization, y
 
 1. Create a personal access token with **Packaging (read)** scope and copy your PAT to the clipboard.
 
-#### Restore packages
+    :::image type="content" source="media/create-read-feed-pat.png" alt-text="A screenshot showing how to create a personal access token with packaging read permissions.":::
+
+#### Restore NuGet packages
 
 ### [Classic](#tab/classic/)
 
@@ -120,27 +123,28 @@ To restore NuGet packages from feeds in a different Azure DevOps organization, y
 ### [YAML](#tab/yaml/)
 
 ```yml
-task: NuGetCommand@2
-      inputs:
-        restoreSolution: '**/*.sln'                     ## Path to your project's solution, packages.config, or project.json.
-        feedsToUse: 'config'
-        nugetConfigPath: 'Deployment/NuGet.config'      ## Path to your nuget.config file.
-        externalFeedCredentials: 'MyServiceConnection'  ## The name of your service connection.
+- task: NuGetCommand@2
+  displayName: NuGet Restore
+  inputs:
+    restoreSolution: '**/*.sln'                     ## Required when command = restore. Path to your project's solution, packages.config, or project.json.
+    feedsToUse: 'config'                            ## Required. 'select' | 'config'. Default: select.
+    nugetConfigPath: 'Deployment/NuGet.config'      ## Required when selectOrConfig = config. Path to your nuget.config file.
+    externalFeedCredentials: 'MyServiceConnection'  ## Use when selectOrConfig = config. The name of your service connection. Credentials for feeds outside your organization/collection.  
 ```
 
 * * *
 
 ## FAQ
 
-### My pipeline is failing to restore my NuGet packages?
+### Q: My pipeline is failing to restore my NuGet packages?
 
-The NuGet restore task can fail for several reasons. The most common scenario is when you add a new project that requires a [target framework](/nuget/schema/target-frameworks) that is not supported by the NuGet version your pipeline is using. This failure doesn't occur generally in the local development environment because Visual Studio takes care of updating your solution accordingly. Make sure you upgrade your NuGet task to the latest version.
+A: The NuGet restore task can fail for several reasons. The most common scenario is when you add a new project that requires a [target framework](/nuget/schema/target-frameworks) that is not supported by the NuGet version your pipeline is using. This failure doesn't occur generally in the local development environment because Visual Studio takes care of updating your solution accordingly. Make sure you upgrade your NuGet task to the latest version.
 
 ::: moniker range="tfs-2018" 
 
-### How do I use the latest version of NuGet?
+### Q: How do I use the latest version of NuGet?
 
-For new pipelines, the **NuGet Tool Installer** will be added automatically to any pipeline that uses a NuGet task. We periodically update the NuGet default version around the same time we install Visual Studio updates on the Hosted build agents.
+A: For new pipelines, the **NuGet Tool Installer** will be added automatically to any pipeline that uses a NuGet task. We periodically update the NuGet default version around the same time we install Visual Studio updates on the Hosted build agents.
 
 For existing pipelines, add the **NuGet Tool Installer** to your pipeline and select the NuGet version for all the subsequent tasks. Check out the [dist.nuget](https://dist.nuget.org/tools.json) to see all the available versions.
 

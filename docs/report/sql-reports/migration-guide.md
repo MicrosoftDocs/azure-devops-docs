@@ -3,8 +3,8 @@ title: Migrate to Analytics from SQL Reporting Services
 titleSuffix: Azure DevOps 
 description: Learn how to migrate from using the legacy SQL Reporting Services reports to using Analytics for Azure DevOps.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019 <= azure-devops-2020'
 ms.date: 05/26/2022
@@ -63,7 +63,7 @@ The following tools support interaction with the Analytics service:
 - **Analytics views**: Provide a quick way to generate reports based on work tracking and test cases. You can define an Analytics view and share with others. Using Power BI, you can build any type of report Power BI supports. TO learn more, see [What are Analytics views?](../powerbi/what-are-analytics-views.md).  
 - **Power BI**: Connect to Analytics from Power BI through an ANalytics view, OData query, or OData feed. See [About Power BI integration](../powerbi/overview.md). 
 - **OData query**: Use Odata to directly query Analytics from a supported browser and use the returned JSON data as needed.  
-- Programmatic query of the Analytics metadata [Explore the Analytics OData metadata](../extend-analytics/analytics-metadata.md). 
+- Programmatic query of the Analytics metadata [Construct OData queries for Analytics, URL components to query the metadata](../analytics/analytics-query-parts.md#query-metadata). 
  
 
 ### Query guidelines, query performance and latency 

@@ -26,6 +26,9 @@
   - name: 6. Update the Taskboard
     href: task-board.md
     displayname: status, remaining work, scope
+- name: End of sprint activities
+  href: end-sprint-activities.md
+  displayname: close sprint, remaining work, move work
 - name: Customize your sprint backlogs
   items:
   - name: Customize a Taskboard
@@ -48,7 +51,7 @@
     href: scrum-key-concepts.md
     displayname: capacity bars, scrum, scrum master, product owner, technical debt, triage, velocity
   - name: View/configure sprint burndown
-    href: ../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json
     displayname: charts, in-context charts, in context
-  - name: Configure a Burndown or Burnup widget
-    href: ../../report/dashboards/configure-burndown-burnup-widgets.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Configure a burndown or burnup widget
+    href: ../../report/dashboards/configure-burndown-burnup-widgets.md?toc=/azure/devops/boards/toc.json

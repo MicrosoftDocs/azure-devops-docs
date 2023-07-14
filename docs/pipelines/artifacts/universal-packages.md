@@ -1,39 +1,36 @@
 ---
 title: Publish & download Universal Packages
 ms.custom: seodec18, contperf-fy21q4
-description: Publish Universal Packages to Azure Artifacts feeds with Azure Pipelines
+description: Publish and download Universal Packages with Azure Pipelines YAML/Classic
 services: vsts
 ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.topic: conceptual
-ms.date: 05/03/2021
+ms.date: 05/05/2023
 monikerRange: 'azure-devops'
 ---
 
-# Publish and download Universal Packages in Azure Pipelines
+# Publish and download Universal Packages with Azure Pipelines
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Using Universal Packages you can pack any number of files of any type and share it with your team. Using the Universal Package task, you can pack, publish, and download packages of various sizes up to 4 TB. Each package will be uniquely identified with a name and a version number. Packages can be published and consumed to and from Artifacts feeds by using the Azure CLI or Azure Pipelines.
+Universal Packages allow you to package any number of files of any type and share them with your team. Using the Universal Package task in Azure Pipelines, you can pack, publish, and download packages of various sizes, up to 4 TB. Each package is uniquely identified with a name and a version number. You can use Azure CLI or Azure Pipelines to publish and consume packages from your Artifacts feeds.
 
 > [!NOTE]
 > Universal Packages are only available in Azure DevOps Services.
 
-## Prepare a Universal Package
+## Copy files
 
-By default, the Universal Packages task uses the `$(Build.ArtifactStagingDirectory)` as the publish directory. To prepare your Universal Package for publishing, place the files you want to publish in that directory. You can also use the [Copy Files](../tasks/utility/copy-files.md) utility task to copy those files to the publish directory.
-
-<a name="publish-packages"></a>
+The Universal Packages task in Azure Pipelines is set to use `$(Build.ArtifactStagingDirectory)` as the default publish directory. To ready your Universal Package for publishing, move the files you wish to publish to that directory. You can also use the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) utility task to copy those files to the publish directory.
 
 ## Publish a Universal Package
 
 # [YAML](#tab/yaml)
 
-To publish a Universal Package to your Artifacts feed, add the following task to your pipeline's yaml file.
+To publish a Universal Package to your Azure Artifacts feed, add the following task to your pipeline's YAML file.
 
 ```yaml
-# Publish a Universal Package
 - task: UniversalPackages@0
-  displayName: Universal Publish
+  displayName: Publish a Universal Package
   inputs:
     command: publish
     publishDirectory: '$(Build.ArtifactStagingDirectory)'
@@ -42,16 +39,16 @@ To publish a Universal Package to your Artifacts feed, add the following task to
     packagePublishDescription: '<Package description>'
 ```
 
-| Argument                                                          | Description                                                                       |
-|-------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| publishDirectory                                                  | Location of the files to be published.                                            |
-| vstsFeedPublish                                                   | The project and feed name to publish to.                                          |
-| vstsFeedPackagePublish                                            | The package name. Must be lower case. Use only letters, numbers, and dashes.                                                                |
-| packagePublishDescription                                         | Description of the content of the package.                                        |
+| Argument                    | Description                                                                                                               |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| publishDirectory            | Location of the files you wish to publish.                                                                                |
+| vstsFeedPublish             | The project and feed name to publish to. If you're working with an organization-scoped feed, specify only the feed name.  |
+| vstsFeedPackagePublish      | The package name. Must be lower case. Use only letters, numbers, and dashes.                                              |
+| packagePublishDescription   | Description of the package content.                                                                                       |
 
-To publish packages to an Azure Artifacts feed from your pipeline, you must add the **Project Collection Build Service** identity as a **Contributor** from the feed's settings. See [Adding users/groups permissions to a feed](../../artifacts/feeds/feed-permissions.md) for details.
+To publish packages to an Azure Artifacts feed from your pipeline, you must add the **Project Collection Build Service** identity as a **Contributor** from your feed's settings. See [Adding users/groups permissions to a feed](../../artifacts/feeds/feed-permissions.md) for more details.
 
-To publish to an external feed, you must first create a service connection to point to that feed. see [Manage service connection](../library/service-endpoints.md) for details. 
+To publish to an external feed, you must first create a service connection to authenticate with your feed. see [Manage service connection](../library/service-endpoints.md) for more details. 
 
 # [Classic](#tab/classic)
 
@@ -63,7 +60,7 @@ To publish your Universal Package, add the **Universal Package** task to your pi
 - **Destination feed:** Select the feed that you want to publish to.
 - **Package name:** Select an existing package (to publish a new version of that package), or enter a new package name (to publish the first version of a new package).
 
-    :::image type="content" source="media/universal-packages/publish.png" alt-text="Universal Package publish task":::
+    :::image type="content" source="media/universal-packages/publish.png" alt-text="A screenshot showing how to publish a universal package using a classic pipeline.":::
 
 [!INCLUDE [package management permissions](includes/package-management-permissions-for-web-build.md)]
 
@@ -71,27 +68,25 @@ To publish to an external feed, you must first create a service connection to po
 
 ---
 
-<a name="package-versioning"></a>
-
 ## Package versioning
 
-Universal Packages follow the semantic versioning spec and are identified by their names and version numbers. Semantic version numbers have three numeric components, Major, Minor, and Patch: `Major.Minor.Patch`.
+Universal Packages follow the semantic versioning specification and can be identified by their names and version numbers. Semantic version numbers are composed of three numeric components, Major, Minor, and Patch, in the format: `Major.Minor.Patch`.
 
-When you release a new backward-compatible feature, you increment the minor version and reset the patch version to 0 (`1.4.17` to `1.5.0`), and when you make a backward-incompatible change, you increment the major version and reset the minor and patch versions to 0 (`2.6.5` to `3.0.0`). The patch version number should be incremented in the case of fixing a bug (`1.0.0` to `1.0.1`). 
+The minor version number is incremented when new features are added that are backward compatible with previous versions, in this case, you increment the minor version and reset the patch version to 0 (`1.4.17` to `1.5.0`). The major version number is incremented when there are significant changes that could break compatibility with previous versions. In this case, you increment the major version and reset the minor and patch versions to 0 (`2.6.5` to `3.0.0`). The patch version number should be incremented when only bug fixes or other small changes are made that do not affect compatibility with previous versions (`1.0.0` to `1.0.1`). 
 
-The Universal Packages task automatically selects the next major, minor, or patch version for you when you publish a new package.
+When publishing a new package, the Universal Packages task will automatically select the next major, minor, or patch version for you.
 
 # [YAML](#tab/yaml)
 
 To enable versioning for your package, add a `versionOption` input to your YAML file. The options for publishing a new package version are: `major`, `minor`, `patch`, or `custom`.
 
-Selecting `custom` enables you to manually specify your package version. The other options will get the latest package version from your feed and increment the chosen version segment by 1. So if you have a _testPackage 1.0.0_, and select the _major_ option, your new package will be _testPackage 2.0.0_. If you select the _minor_ option, your package version will be 1.1.0, and if you select the _patch_ option, your package version will be 1.0.1.
+Selecting `custom` enables you to manually specify your package version. The other options will get the latest package version from your feed and increment the chosen version segment by 1. So if you have a *testPackage 1.0.0*, and select the *major* option, your new package will be *testPackage 2.0.0*. If you select the *minor* option, your package version will be *1.1.0*, and if you select the *patch* option, your package version will be *1.0.1*.
 
-One thing to keep in mind is that if you select the `custom` option, you must also provide a `versionPublish` as follows.
+Note that if you choose the `custom` option, you must also specify a `versionPublish` value as follows:
 
 ```yaml
 - task: UniversalPackages@0
-  displayName: Universal Publish
+  displayName: Publish a Universal Package
   inputs:
     command: publish
     publishDirectory: '$(Build.ArtifactStagingDirectory)'
@@ -102,20 +97,20 @@ One thing to keep in mind is that if you select the `custom` option, you must al
     packagePublishDescription: '<Package description>'
 ```
 
-| Argument                                                          | Description                                                                       |
-|-------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| publishDirectory                                                  | Location of the files to be published.                                            |
-| vstsFeedPublish                                                   | The project and feed name to publish to.                                          |
-| vstsFeedPackagePublish                                            | The package name.                                                                 |
-| versionOption                                                     | Select a version increment strategy. Options: `major`, `minor`, `patch`, `custom` |
-| versionPublish                                                    | The custom package version                                                        |
-| packagePublishDescription                                         | Description of the content of the package.                                        |
+| Argument                     | Description                                                                                                               |
+|------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| publishDirectory             | Location of the files you wish to publish.                                                                                |
+| vstsFeedPublish              | The project and feed name to publish to. If you're working with an organization-scoped feed, specify only the feed name.  |
+| vstsFeedPackagePublish       | The package name. Must be lower case. Use only letters, numbers, and dashes.                                              |
+| versionOption                | Select a versioning strategy. Options: `major`, `minor`, `patch`, `custom`.                                               |
+| versionPublish               | The custom package version.                                                                                               |
+| packagePublishDescription    | Description of the package content.                                                                                       |
 
 # [Classic](#tab/classic)
 
-From the Universal Packages task form, select a version increment strategy, or select **Custom** to input your package version manually.
+From the Universal Packages task form, select a versioning strategy, or select **Custom** to enter your package version manually.
 
-:::image type="content" source="media/universal-packages/publish-versioning.png" alt-text="Package versioning":::
+:::image type="content" source="media/universal-packages/publish-versioning.png" alt-text="A screenshot showing how to use a versioning strategy in classic pipeline.":::
 
 ---
 
@@ -123,12 +118,12 @@ From the Universal Packages task form, select a version increment strategy, or s
 
 #### [YAML](#tab/yaml/)
 
-To download a Universal Package from a feed in your organization, use the Universal package task with the `download` command input as follows: 
+To download a Universal Package from a feed in your organization, use the Universal Package task with the `download` command as follows: 
 
 ```yaml
 steps:
 - task: UniversalPackages@0
-  displayName: 'Universal download'
+  displayName: Download a Universal Package
   inputs:
     command: download
     vstsFeed: '<projectName>/<feedName>'
@@ -149,23 +144,23 @@ To download a Universal Package from an external source, use the following snipp
 ```yaml
 steps:
 - task: UniversalPackages@0
-  displayName: 'Universal download'
+  displayName: Download a Universal Package
   inputs:
     command: download
     feedsToUse: external
-    externalFeedCredentials: MSENG2
+    externalFeedCredentials: 'MSENG2'
     feedDownloadExternal: 'fabrikamFeedExternal'
     packageDownloadExternal: 'fabrikam-package'
     versionDownloadExternal: 1.0.0
 ```
 
-| Argument                       | Description                                                                                                                                              |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| feedsToUse                     | Set the value to `external` when downloading from an external source.                                                                                    |
-| externalFeedCredentials        | Name of the service connection pointing to the external feed. See [service connections](../library/service-endpoints.md) for details.                    |
-| feedDownloadExternal           | Name of the external feed.                                                                                                                               |
-| packageDownloadExternal        | The package name to be downloaded.                                                                                                                       |
-| versionDownloadExternal        | The version of the package to be downloaded.                                                                                                             |
+| Argument                       | Description                                                                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| feedsToUse                     | Set the value to `external` when downloading from an external source.                                                                    |
+| externalFeedCredentials        | Name of the service connection to the external feed. See [manage service connections](../library/service-endpoints.md) for more details. |
+| feedDownloadExternal           | Name of the external feed.                                                                                                               |
+| packageDownloadExternal        | The package name you wish to download.                                                                                                   |
+| versionDownloadExternal        | The version of the package you wish to download.                                                                                         |
 
 #### [Classic](#tab/classic/)
 
@@ -173,19 +168,20 @@ To download a Universal Package, add the **Universal Package** task to your pipe
 
 - **Command:** Download
 - **Destination directory**: Folder path where the packages will be downloaded. Default value: `$(System.DefaultWorkingDirectory)`.
-- **Feed location:** Download a Universal Package from an Azure Artifacts feed in your organization or in another organization.
+- **Feed location:** Download a Universal Package from a feed in your organization or in another organization.
 - **Feed:** The feed that you want to download from.
-- **Package name:** The package that you want to download.
+- **Package name:** Name of the package to be downloaded.
 - **Version:** The version of the package that you want to download.
 
-:::image type="content" source="media/universal-packages/download.png" alt-text="Download Universal Packages task configuration":::
+:::image type="content" source="media/universal-packages/download.png" alt-text="A screenshot showing how to download a Universal Package with classic pipeline.":::
 
 ---
 
-> [!NOTE]
-> You can use wildcards in the string you pass to the download command to download the latest version of a Universal Package. See [Universal Packages quickstart](../../artifacts/quickstarts/universal-packages.md#download-the-latest-version) for more details.
+> [!TIP]
+> You can use wildcards to download the latest version of a Universal Package. See [Download the latest version](../../artifacts/quickstarts/universal-packages.md#download-the-latest-version) for more details.
 
-## Next Steps
+## Related articles
 
-- [Publish and download artifacts in Azure Pipelines](pipeline-artifacts.md)
-- [Release artifacts and artifact sources](../release/artifacts.md)
+- [Universal Packages upstream sources](../../artifacts/universal-packages/universal-packages-upstream.md)
+- [Search for packages in upstream sources](../../artifacts/how-to/search-upstream.md)
+- [Feed permissions](../../artifacts/feeds/feed-permissions.md)

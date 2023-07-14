@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to create a query by filtering on field values that are compared to other field values in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 10/25/2021  
@@ -83,7 +83,7 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
 The following table provides an index to those fields that support field comparison queries. 
 
 > [!NOTE]  
-> Not all fields listed are supported for all projects or work item types. However, you can customize a process or work item type by adding custom fields which you can use for the purposes of queries and field comparisons. To learn more, see [Add a custom field to a work item type (Inheritance process)](../../organizations/settings/work/add-custom-field.md) or [Add or modify a field (Online XML process)](../../reference/add-modify-field.md).
+> Not all fields listed are supported for all projects or work item types. However, you can customize a process or work item type by adding custom fields which you can use for the purposes of queries and field comparisons. For more information, see [Add a custom field to a work item type (Inheritance process)](../../organizations/settings/work/add-custom-field.md) or [Add or modify a field (Online XML process)](../../reference/add-modify-field.md).
 
   
 :::row:::
@@ -96,7 +96,7 @@ The following table provides an index to those fields that support field compari
    - [Activated By](query-by-workflow-changes.md#fields)
    - [Activated Date](query-by-workflow-changes.md#fields)
    - [Activity](query-numeric.md#fields)
-   - [Actual Attendee 1-8](../work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
+   - [Actual Attendee 1-8](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Analysis](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    - [Application Launch Instructions](../work-items/guidance/guidance-code-review-feedback-field-reference.md#fields)
    - [Application Start Information](../work-items/guidance/guidance-code-review-feedback-field-reference.md#fields) 
@@ -125,8 +125,8 @@ The following table provides an index to those fields that support field compari
    - [Business Value](query-numeric.md#fields)
    
    ### C
-   - [Called By](../work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
-   - [Called Date](../work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
+   - [Called By](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
+   - [Called Date](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Changed By](history-and-auditing.md#fields) (System)
    - [Changed Date](history-and-auditing.md#fields) (System)
    - [Closed By](query-by-workflow-changes.md#fields) (System)
@@ -135,7 +135,7 @@ The following table provides an index to those fields that support field compari
    - [Closed Status Code](../work-items/guidance/guidance-code-review-feedback-field-reference.md#fields)
    - [Closing Comment](../work-items/guidance/guidance-code-review-feedback-field-reference.md#fields)
    - [Comment Count](linking-attachments.md#fields)
-   - [Comments](../work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
+   - [Comments](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Committed](planning-ranking-priorities.md#fields) (CMMI)
    - [Completed Work](query-numeric.md#fields)
    - [Contingency Plan](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
@@ -166,37 +166,37 @@ The following table provides an index to those fields that support field compari
    ### I
    
    - [ID](titles-ids-descriptions.md#fields) (System)
-   - [Impact Assessment](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md#fields) (CMMI)
-   - [Impact on Architecture](../work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
-   - [Impact on Development](../work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
-   - [Impact on Technical Publications](../work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
-   - [Impact on Test](../work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
-   - [Impact on User Experience](../work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
+   - [Impact Assessment](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields) (CMMI)
+   - [Impact on Architecture](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
+   - [Impact on Development](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
+   - [Impact on Technical Publications](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
+   - [Impact on Test](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
+   - [Impact on User Experience](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
    - [Integrated in Build](build-test-integration.md#fields) (TCM)
    - [Issue](build-test-integration.md#fields) (TCM)
    - [Iteration Id](query-by-area-iteration-path.md#fields)  (System)
    
    ### J-L-M-N
    
-   - [Justification](../work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
+   - [Justification](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
    - [Link Comment](linking-attachments.md#fields) (System)
    - [Link Description](linking-attachments.md#fields) (System)
    - [Local Data Source](build-test-integration.md#fields) (TCM)
-   - [Meeting Type](../work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
-   - [Minutes](../work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI) 
+   - [Meeting Type](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
+   - [Minutes](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI) 
    - [Mitigation Plan](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI) 
    - [Mitigation Triggers](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    - [Node Name](query-by-area-iteration-path.md#fields) (System)
    
    ### O-P-Q
    
-   - [Optional Attendee 1-8](../work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
+   - [Optional Attendee 1-8](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Original Estimate](query-numeric.md#fields)
    - [Parameters](build-test-integration.md#fields) (TCM)
    - [Priority](planning-ranking-priorities.md#fields) 
    - [Probability](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    - [Proposed Fix](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI) 
-   - [Purpose](../work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
+   - [Purpose](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Query Text](build-test-integration.md#fields) (TCM)
    
    :::column-end:::
@@ -209,8 +209,8 @@ The following table provides an index to those fields that support field compari
    - [Remaining Work](query-numeric.md#fields) 
    - [Remote Link Count](linking-attachments.md#remote-link-count) (System)
    - [Repro Steps](titles-ids-descriptions.md#fields)
-   - [Required Attendee 1-8](../work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
-   - [Requirement Type](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md#fields) (CMMI)
+   - [Required Attendee 1-8](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
+   - [Requirement Type](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields) (CMMI)
    - [Requires Review](query-numeric.md#fields) (CMMI)
    - [Requires Test](query-numeric.md#fields) (CMMI)
    - [Resolution](titles-ids-descriptions.md#fields) (Scrum)
@@ -235,7 +235,7 @@ The following table provides an index to those fields that support field compari
    - [Steps](build-test-integration.md#fields) (TCM)
    - [Steps to Reproduce](titles-ids-descriptions.md#fields) (TCM)
    - [Story Points](query-numeric.md#fields) (Agile)
-   - [Subject Matter Expert](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md#fields) (CMMI)
+   - [Subject Matter Expert](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields) (CMMI)
    - [Symptom](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    - [System Info](titles-ids-descriptions.md#fields) (TCM) 
    
@@ -254,7 +254,7 @@ The following table provides an index to those fields that support field compari
    
    ### U-V-W
    
-   - [User Acceptance Test](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md#fields) (CMMI)
+   - [User Acceptance Test](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields) (CMMI)
    - [Value Area](planning-ranking-priorities.md#fields)
    - [Watermark](history-and-auditing.md#fields) (System)
    - [Work Item Type](titles-ids-descriptions.md#fields) (System)  

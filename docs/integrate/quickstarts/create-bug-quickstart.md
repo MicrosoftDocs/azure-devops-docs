@@ -8,7 +8,7 @@ monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 06/27/2017
-ms.custom: quickstart
+ms.custom: quickstart, devx-track-dotnet
 ---
 # Create a bug in Azure DevOps Services using .NET client libraries
 

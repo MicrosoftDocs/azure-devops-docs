@@ -3,8 +3,8 @@ title: Scaled Agile Framework (SAFe®) and Azure Boards
 titleSuffix: Azure Boards
 description: Learn how Scaled Agile Framework concepts map to Azure Boards artifacts.
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021
@@ -102,7 +102,7 @@ SAFe® Release Trains, Releases, Iterations, Program Increments (PIs), and Sprin
 
 ![SAFe® release trains map to iterations](media/safe/iteration-mapping.png)  
 
-Because epics can span several release trains, the Portfolio team isn't associated with any specific iterations. Program teams track their Feature deliverables, which ship with a PI. And Feature teams work in Sprints to complete several stories. Each team chooses which iterations will support them to track their focused set of deliverables.
+Because epics can span several release trains, the Portfolio team isn't associated with any specific iterations. Program teams track their Feature deliverables, which ship with a PI. And Feature teams work in Sprints to complete several stories. Each team chooses which iterations support them to track their focused set of deliverables.
 
 ![Teams track deliverables using iterations](media/safe/program-iterations.png) 
 
@@ -113,7 +113,7 @@ Because epics can span several release trains, the Portfolio team isn't associat
 
 SAFe® practices include Agile release teams defining their iteration goals and objectives. We recommend using the project wiki or team dashboards to capture team information. The project wiki and team dashboards both support Markdown to add and format information. 
 
-To learn more, see [Share information](#share-information) later in this article. 
+For more information, see [Share information](#share-information) later in this article. 
 
 
 <a id="tags" />
@@ -208,14 +208,14 @@ This extension allows teams to create their own retrospective boards and capture
 Azure Boards provides many ways to share information. 
 
 - Work item forms provide rich-text fields to capture descriptions, acceptance criteria and more. File attachments can be added to work items or links to network file shares. 
-- Project and team dashboards can be used to share information along with status and progress charts and widgets. To learn more, see [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md). 
-- The Project wiki provides a central repository with versioning control built-in to share information with all project members. Other wikis can be created as needed. To learn more, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md). 
+- Project and team dashboards can be used to share information along with status and progress charts and widgets. For more information, see [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md). 
+- The Project wiki provides a central repository with versioning control built-in to share information with all project members. Other wikis can be created as needed. For more information, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md). 
 
 For details on supported Markdown features, see the following articles.  
 - [Syntax guidance for Markdown usage in Wiki](../../project/wiki/wiki-markdown-guidance.md)
 - [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md)
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Configure Azure Boards to support SAFe®](safe-configure-boards.md)

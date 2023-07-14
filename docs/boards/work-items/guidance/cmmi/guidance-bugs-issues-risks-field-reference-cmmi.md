@@ -2,11 +2,11 @@
 title: Track bugs, issues, & risks in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to track information about to bugs, issues, and risks in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-devops-boards 
 ms.assetid: 66d150ac-736f-4dde-8a2b-382c50d9e4f4
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE 
+ms.author: chcomley
+author: chcomley 
 monikerRange: '<= azure-devops'
 ms.date: 01/20/2017
 ---

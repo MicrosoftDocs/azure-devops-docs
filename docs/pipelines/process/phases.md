@@ -296,19 +296,19 @@ Learn more about [agent capabilities](../agents/agents.md#capabilities).
 
 <h3 id ="server-jobs">Server jobs</h3>
 
-Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks are supported in a server job at present.
+Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks are supported in a server job at present. The maximum time for a server job is 30 days. 
 
 <h3 id="agentless-tasks">Agentless jobs supported tasks</h3>
 
 Currently, only the following tasks are supported out of the box for agentless jobs:
 
-* [Delay task](../tasks/utility/delay.md)
-* [Invoke Azure Function task](../tasks/utility/azure-function.md)
-* [Invoke REST API task](../tasks/utility/http-rest-api.md)
-* [Manual Validation task](../tasks/utility/manual-validation.md)
-* [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
-* [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
-* [Query Work Items task](../tasks/utility/work-item-query.md)
+* [Delay task](/azure/devops/pipelines/tasks/reference/delay-v1)
+* [Invoke Azure Function task](/azure/devops/pipelines/tasks/reference/azure-function-v1)
+* [Invoke REST API task](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1)
+* [Manual Validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v0)
+* [Publish To Azure Service Bus task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1)
+* [Query Azure Monitor Alerts task](/azure/devops/pipelines/tasks/reference/azure-monitor-v1)
+* [Query Work Items task](/azure/devops/pipelines/tasks/reference/query-work-items-v0)
 
 Because tasks are extensible, you can add more agentless tasks by using extensions. The default timeout for agentless jobs is 60 minutes.  
 
@@ -326,7 +326,7 @@ jobs:
     maxParallel: number
     matrix: { string: { string: string } }
 
-  pool: server
+  pool: server # note: the value 'server' is a reserved keyword which indicates this is an agentless job
 ```
 
 You can also use the simplified syntax:
@@ -334,7 +334,7 @@ You can also use the simplified syntax:
 ```yaml
 jobs:
 - job: string
-  pool: server
+  pool: server # note: the value 'server' is a reserved keyword which indicates this is an agentless job
 ```
 
 ::: moniker-end
@@ -349,7 +349,7 @@ You add a server job in the editor by selecting '...' on the **Pipeline** channe
 
 <h2 id="dependencies">Dependencies</h2>
 
-When you define multiple jobs in a single stage, you can specify dependencies between them. Pipelines must contain at least one job with no dependencies.
+When you define multiple jobs in a single stage, you can specify dependencies between them. Pipelines must contain at least one job with no dependencies. By default Azure DevOps YAML pipeline jobs will run in parallel unless the `dependsOn` value is set.
 
 > [!NOTE]
 > Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
@@ -534,7 +534,7 @@ jobs:
 
 - job: B
   dependsOn: A
-  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/main'))
   steps:
   - script: echo this only runs for master
 ```
@@ -545,7 +545,7 @@ You can specify that a job run based on the value of an output variable set in a
 jobs:
 - job: A
   steps:
-  - script: "echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+  - script: "echo '##vso[task.setvariable variable=skipsubsequent;isOutput=true]false'"
     name: printvar
 
 - job: B
@@ -612,13 +612,12 @@ Select the job and then specify the timeout value.
 On the Options tab, you can specify default values for all jobs in the pipeline. If you specify a non-zero value for the job timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
 
 * * *
-::: moniker range=">=azure-devops-2020"
 
-> Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
+Timeouts have the following level of precedence.
 
-::: moniker-end
-
-You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions).
+1. On Microsoft-hosted agents, jobs are [limited in how long they can run based on project type and whether they are run using a paid parallel job](../agents/hosted.md#capabilities-and-limitations). When the Microsoft-hosted job timeout interval elapses, the job is terminated. On Microsoft-hosted agents, jobs cannot run longer than this interval, regardless of any job level timeouts specified in the job.
+2. The timeout configured at the job level specifies the maximum duration for the job to run. When the job level timeout interval elapses, the job is terminated. If the job is run on a Microsoft-hosted agent, setting the job level timeout to an interval greater than the [built-in Microsoft-hosted job level timeout](../agents/hosted.md#capabilities-and-limitations) has no effect and the Microsoft-hosted job timeout is used.
+1. You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). If the job level timeout interval elapses before the task completes, the running job is terminated, even if the task is configured with a longer timeout interval.
 
 <a name="parallelexec"></a>
 
@@ -717,7 +716,7 @@ To run multiple jobs using multi-configuration option,
   number less than you have configured for your subscription, enter that value as the
   **Maximum number of agents** parameter.
 
-For example, you might define two variables named **Location** and **Browser** as follows::
+For example, you might define two variables named **Location** and **Browser** as follows:
 
 * **Location** = `US,Europe`
 * **Browser** = `IE,Chrome,Edge,Firefox`
@@ -829,7 +828,7 @@ The `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are
 When you run a pipeline on a **self-hosted agent**, by default, none of the subdirectories other than `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
 
 > [!IMPORTANT]
-> The workspace clean options are applicable only for self-hosted agents. When using Microsoft-hosted agents, job are always run on a new agent. 
+> The workspace clean options are applicable only for self-hosted agents. Jobs are always run on a new agent with Microsoft-hosted agents. 
 
 ```yaml
 - job: myJob
@@ -856,13 +855,13 @@ When you specify one of the `clean` options, they are interpreted as follows:
 > [!NOTE]
 > Depending on your agent capabilities and pipeline demands, each job may be routed to a different agent in your self-hosted pool. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can configure agent capabilities and pipeline demands to specify which agents are used to run a pipeline job, but unless there is only a single agent in the pool that meets the demands, there is no guarantee that subsequent jobs will use the same agent as previous jobs. For more information, see [Specify demands](demands.md).
 
-In addition to workspace clean, you can also configure cleaning by configuring the **Clean** setting in the pipeline settings UI. When the **Clean** setting is **true** it is equivalent to specifying `clean: true` for every [checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step in your pipeline. When you specify `clean: true`, you'll run `git clean -ffdx` followed by `git reset --hard HEAD` before git fetching. To configure the **Clean** setting:
+In addition to workspace clean, you can also configure cleaning by configuring the **Clean** setting in the pipeline settings UI. When the **Clean** setting is **true**, which is also its default value, it is equivalent to specifying `clean: true` for every [checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step in your pipeline. When you specify `clean: true`, you'll run `git clean -ffdx` followed by `git reset --hard HEAD` before git fetching. To configure the **Clean** setting:
 
 1. Edit your pipeline, choose **...**, and select **Triggers**.
 
     :::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
 
-2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. 
+2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **true**. 
 
     :::image type="content" source="media/clean-setting.png" alt-text="Clean setting."::: 
 
@@ -940,7 +939,7 @@ For information about using **dependsOn** and **condition**, see [Specify condit
 ## Access to OAuth token
 
  You can allow scripts running in a job to access the current Azure Pipelines or TFS OAuth security token.
-  The token can be use to authenticate to the Azure Pipelines REST API.
+  The token can be used to authenticate to the Azure Pipelines REST API.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"

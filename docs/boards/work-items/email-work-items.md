@@ -2,29 +2,34 @@
 title: Email or print user stories and other work items
 titleSuffix: Azure Boards
 description: Learn how to email or print work items to share information in Azure Boards, Azure DevOps, and Visual Studio Team Explorer.
-ms.custom: work-items, seodec18
+ms.custom: work-items, contperf-fy23
 ms.service: azure-devops-boards
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 12/16/2022
 ---
 
 
 # Email or print user stories, bugs, and other work items 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-** Visual Studio 2019 - Visual Studio 2015 | Team Explorer Everywhere** 
+[!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)] 
 
-
-Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
-
+Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file. 
 
 ## Supported tasks 
 
-Emailing lists of work items is a common way to share work tracking information. The following table indicates which tasks or features are supported from the web portal, Visual Studio, or the Eclipse plug-in, Team Explorer Everywhere (TEE).   
+Emailing lists of work items is a common way to share work tracking information. The following table indicates which tasks or features are supported from the web portal and Visual Studio.   
+
+
+> [!NOTE]   
+> The tasks/features listed in the following table aren't available when you're connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio under the following conditions:   
+> 
+> * If you're set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
+> * If you're set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
  
 ---
 :::row:::
@@ -35,19 +40,13 @@ Emailing lists of work items is a common way to share work tracking information.
       **Web portal**
    :::column-end:::
    :::column span="":::
-      **Visual Studio 2019-2015**
-   :::column-end:::
-   :::column span="":::
-      **TEE (Eclipse)**
+      **Visual Studio**
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="2":::
       [Email summary list with links to work item(s)](#email-summary-lists)
-   :::column-end:::
-   :::column span="":::
-      ✔️
    :::column-end:::
    :::column span="":::
       ✔️
@@ -66,9 +65,6 @@ Emailing lists of work items is a common way to share work tracking information.
    :::column span="":::
       ✔️
    :::column-end:::
-   :::column span="":::
-        
-   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
@@ -80,9 +76,6 @@ Emailing lists of work items is a common way to share work tracking information.
    :::column span="":::
       ✔️
    :::column-end:::
-   :::column span="":::
-        
-   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
@@ -93,9 +86,6 @@ Emailing lists of work items is a common way to share work tracking information.
    :::column-end:::
    :::column span="":::
       ✔️
-   :::column-end:::
-   :::column span="":::
-        
    :::column-end:::
 :::row-end:::
 ::: moniker range=">= azure-devops-2019"
@@ -109,21 +99,10 @@ Emailing lists of work items is a common way to share work tracking information.
    :::column span="":::
         
    :::column-end:::
-   :::column span="":::
-        
-   :::column-end:::
 :::row-end:::
 ::: moniker-end 
 ---
 
-
-**Visual Studio 2019/Team Explorer** 
-
-The tasks/features listed in the table aren't available when you're connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio 2019 under the following conditions:   
-
-* If you're set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
-* If you're set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
- 
  
 
 ::: moniker range="< azure-devops"
@@ -132,9 +111,12 @@ The tasks/features listed in the table aren't available when you're connected to
 
 ::: moniker-end 
 
-Make sure you provide members of your organization [Stakeholder access](../../organizations/security/access-levels.md) who want to contribute to the discussion and review progress. These are typically members who don't contribute to code, but want to view work items, backlogs, Kanban boards, and dashboards.  
+
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
+
+> [!NOTE]   
+> Make sure you provide members of your organization [Stakeholder access](../../organizations/security/access-levels.md) who want to contribute to the discussion and review progress. These are typically members who don't contribute to code, but want to view work items, backlogs, Kanban boards, and dashboards.  
 
 
 <a id="email-print-send-links"></a>
@@ -154,21 +136,11 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 #### [Web portal](#tab/browser/)
 
-::: moniker range="tfs-2018"  
-
-**From the web portal**, open the work item, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
+**From the web portal**, open the work item, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list appears in a formatted table. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of work item form, context menu, Email work items option.](media/email/email-work-item.png)   
-::: moniker-end  
 
-
-::: moniker range="<= azure-devops-2019"  
-
-> [!NOTE]  
-> If you connect to an on-premises Azure DevOps Server, your server administrator must have [configured an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for the email feature to work.   
-
-::: moniker-end  
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -179,18 +151,23 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 From Visual Studio or Team Explorer, choose ![Send work item to Microsoft Outlook](../queries/media/IC764665.png). This option requires that you configure Office Outlook on your client computer.
 
-![Email work item from on-prem TFS](../queries/media/share-plans-email-work-item-te.png)  
-
-#### [Team Explorer Everywhere](#tab/tee/)
-
-<a id="tee-email" />
-
-**From Eclipse**, open the work item and choose the ![mail icon](../media/icons/mail_icon.png) mail icon.  
-
-![Email work item from TEE](../queries/media/share-plans-email-work-item-tfs.png)  
+![Screenshot for Email work item from on-prem Azure DevOps Server.](../queries/media/share-plans-email-work-item-te.png)  
 
 * * *
+
+
+::: moniker range="< azure-devops"  
+
+> [!NOTE]  
+> If you connect to an on-premises Azure DevOps Server, your server administrator must have [configured an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for the email feature to work.   
+
+::: moniker-end  
+
+
 <a id="email-summary-lists"></a>
+<a id="team-services-email-list" /> 
+<a id="email-list-web-portal" >  </a> 
+
 
 ## Email summary lists with links to items  
 
@@ -200,11 +177,6 @@ Depending on the option and client you choose, summary lists may or may not incl
 
 
 #### [Web portal](#tab/browser/)
-
-
-
-<a id="team-services-email-list" /> 
-<a id="email-list-web-portal" >  </a> 
 
 **To email items from the web portal**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.   
 
@@ -221,20 +193,13 @@ If you want to mail a list of all items in the backlog or query, choose the  :::
 
 <a id="team-explorer-email-list" />
 
-> [!IMPORTANT]  
+> [!NOTE]  
 > To email a query results list in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
 
 **To email items from Visual Studio**: Open a query, highlight the items from the list, choose the context menu, and select **Send selection to Microsoft Outlook** from the menu. This option requires that you configure Office Outlook on your client computer.  
 
-![Email selected items from Visual Studio query result list ](../queries/media/share-plans-email-work-item-list.png)   
+![Screenshot of Email selected items from Visual Studio query result list.](../queries/media/share-plans-email-work-item-list.png)   
 
-#### [Team Explorer Everywhere](#tab/tee/)
-
-<a id="tee-email-list" />
-
-**From Eclipse**: Open a query, highlight the items from the list, and then choose the Copy selected items to the clipboard from the context menu. Paste the clipboard contents to your email application.    
-
-![Email selected items from Eclipse query result list](../queries/media/share-plans-email-work-item-list-eclipse.png)  
 
 * * *
 
@@ -274,6 +239,7 @@ To print work item details, open a query in Visual Studio that contains the work
 Some teams want to work with physical cards when planning or updating their physical Kanban or Scrum task boards. There's no native support for printing work items as cards. However, you may find a solution from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/search?term=card&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance).   
 
 <a id="copy-url">  </a>
+<a id="team-explorer-copy-url" />
 
 ## Copy the URL to a single work item  
 
@@ -286,27 +252,17 @@ Some teams want to work with physical cards when planning or updating their phys
 
 **From the web portal**, copy the URL from the web browser address or hover over the title and then select the ![Copy to clipboard icon](../backlogs/media/icon-copy-to-clipboard.png) copy-to-clipboard icon.
 
-<img src="../backlogs/media/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" />  
+![Screenshot for Copy hyperlink for a work item from web portal.](../backlogs/media/add-work-item-copy-URL.png)
 
 
 #### [Visual Studio](#tab/visual-studio/)
 
-<a id="team-explorer-copy-url" />
-
-> [!IMPORTANT]  
+> [!NOTE]  
 > To copy the URL of a work item in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
 
 **From Visual Studio**, right-click the work item tab to copy the URL. The URL opens the work item in the web portal. 
 
-![Copy full path hyperlink for a work item from Visual Studio](../backlogs/media/add-work-items-copy-url-for-a-work-item.png)   
-
-#### [Team Explorer Everywhere](#tab/tee/)
-
-<a id="tee-copy-url" />
-
-**From Eclipse**, open a query that contains the work item, and then open the context menu to Copy the URL for the selected work item. 
-
-![Copy full path hyperlink for a work item from Eclipse](../queries/media/share-plans-copy-URL-wi-eclipse.png)   
+![Screenshot that shows how to copy full path hyperlink for a work item from Visual Studio.](../backlogs/media/add-work-items-copy-url-for-a-work-item.png)  
 
 * * *
 
@@ -317,7 +273,7 @@ Some teams want to work with physical cards when planning or updating their phys
 
 ## Export list as CSV 
 
-From any query, you can export a list of work items as a comma-delimited list. Open the query, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose <strong>Export to CSV</strong>. To learn more, see [Bulk import or update work items using CSV files](../queries/import-work-items-from-csv.md).
+From any query, you can export a list of work items as a comma-delimited list. Open the query, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose <strong>Export to CSV</strong>. For more information, see [Bulk import or update work items using CSV files](../queries/import-work-items-from-csv.md).
 
 ::: moniker-end
 
@@ -331,8 +287,7 @@ From any query, you can export a list of work items as a comma-delimited list. O
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Export a query as CSV](media/email/export.png)   
-
+> ![Screenshot that shows how to export a query as CSV.](media/email/export.png)   
 
 ::: moniker-end  
 
@@ -340,7 +295,7 @@ From any query, you can export a list of work items as a comma-delimited list. O
 
 ## Marketplace extensions  
 
-You may find other ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
+You may find other ways to share information by exporting work items to other applications such as Microsoft Word. For more information, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
 
 
 

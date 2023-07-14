@@ -6,8 +6,8 @@ ms.custom: boards-kanban
 ms.service: azure-devops-boards
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.topic: tutorial
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -89,12 +89,12 @@ Add new items to a feature or epic through the item's   :::image type="icon" sou
 
 ![Web portal, Feature Kanban board, Open the context menu of a feature to add a story](media/features-epics/add-user-story.png)
 
-When you have many items to add, keep typing your task titles and press Enter. If you have details you want to add about to a work item, hover over the item and press Enter.  
+When you have many items to add, keep entering your task titles and press Enter. If you have details you want to add about to a work item, hover over the item and press Enter.  
  
 
 ## Related articles
 
-If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md)
+If you're new to working with the Kanban board, see [Kanban overview](kanban-overview.md)
 
 For more information on working with a checklist on a Kanban board, see [Add tasks or child items as checklists](add-task-checklists.md). You can run the same operations for the features and epics Kanban boards as you do with the Kanban board for the product backlog. These operations include:    
 

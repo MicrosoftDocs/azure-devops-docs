@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn about scaling Agile recommended practices for working in Azure Boards and Azure DevOps.   
 ms.service: azure-devops-boards
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: best-practice
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021
@@ -82,7 +82,7 @@ You improve organizational effectiveness by attending to the culture you want to
 	See the [Agile Retrospective Resource Wiki](https://retrospectivewiki.org/index.php?title=Agile_Retrospective_Resource_Wiki) for ideas, tips, and tools  for planning and conducting retrospectives. See also the [Marketplace Retrospectives extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives).
 - **Improvement tracking board**: Good ideas to improve processes can arise from any one at any time. Capturing those ideas to discuss and decide on how to act on them quickly is a key to support process improvement efforts.  
 
-	A white board provides any easy and visual means with which to capture ideas. Also, you can create an Improvement tracking team and capture ideas that you track on an electronic [Kanban board](../boards/kanban-basics.md).  
+	A white board provides any easy and visual means with which to capture ideas. Also, you can create an Improvement tracking team and capture ideas that you track on an electronic [Kanban board](../boards/kanban-overview.md).  
 
 - **Institutionalize sharing**: Sharing best practices and communicating ideas helps all teams within an organization grow and improve. Developing a culture of learning is key to supporting this and other continuous improvement activities. Some ideas to consider: 
   - In-house wikis  

@@ -9,8 +9,8 @@ metadata:
   description: Work across Azure DevOps Services and projects, share information, and create public projects. 
   ms.subservice: azure-devops-projects 
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  author: chcomley 
+  ms.author: chcomley 
   ms.date: 02/18/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -30,13 +30,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Set your preferences
-            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json
           - text: Enable or disable preview features
             url: ./navigation/preview-features.md
           - text: Set personal or team favorites
-            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json
           - text: Connect to a project
-            url: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+            url: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/project/toc.json
   - title: Add and manage wikis
     linkLists:
       - linkListType: overview
@@ -65,10 +65,6 @@ landingContent:
         links:
           - text: Search across all your code, wiki, packages and work items
             url: ./search/get-started-search.md
-      - linkListType: video
-        links:
-          - text: Code search
-            url: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
       - linkListType: how-to-guide
         links:
           - text: Search code
@@ -102,9 +98,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Request feedback, Test & Feedback extension
-            url: ../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+            url: ../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
           - text: Request feedback, Microsoft Feedback Client
-            url: ./feedback/get-feedback.md
+            url: /previous-versions/azure/devops/project/feedback/get-feedback
           - text: Track feedback
-            url: ../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+            url: ../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
  

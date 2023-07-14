@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Quickstart guide to learn who is a member of the Project Administrators group in Azure DevOps
 ms.subservice: azure-devops-security
 ms.custom: security-refresh
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 02/11/2022
@@ -39,7 +39,7 @@ Choose the **Project Administrators** group from the **Project Settings > Permis
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 ::: moniker-end    
 

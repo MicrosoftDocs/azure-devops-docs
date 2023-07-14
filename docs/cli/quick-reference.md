@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps
 description: Find examples that showcase use of Azure DevOps CLI. 
 ms.topic: conceptual
 ms.subservice: azure-devops-reference
+ms.custom: devx-track-azurecli
 ms.manager: mijacobs 
-ms.author: kaelli  
-author: KathrynEE
+ms.author: chcomley  
+author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 05/20/2022
+ms.date: 11/08/2022
 ---
 
 # Index to Azure DevOps CLI examples 
@@ -54,10 +55,12 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Permanently delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
       #### Work items
       - [Add work items](../boards/work-items/view-add-work-items.md) 
+      - [Add or remove work item links](../boards/backlogs/add-link.md#azure-cli) 
       - [Delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
       - [List supported link types](../boards/queries/link-type-reference.md#list-link-types)
       - [Move work items](../boards/work-items/move-work-items.md#move-work-items) 
       - [Show work item details](../boards/backlogs/add-work-items.md#show-work-item) 
+      - [Show work item link details](../boards/backlogs/add-link.md#azure-cli)
       - [Update work items](../boards/backlogs/add-work-items.md#update-work-item) 
    :::column-end:::
 :::row-end:::
@@ -75,11 +78,10 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Update a banner](../organizations/settings/manage-banners.md#update-a-banner)
       #### Extensions
       - [Install an extension](../marketplace/install-extension.md) 
-      - [List extensions](../marketplace/uninstall-disable-extensions.md#list-extensions) 
-      - [List extension information](../marketplace/uninstall-disable-extensions.md#list-extension-information) 
+      - [List extensions](../marketplace/install-extension.md#list-extensions)
+      - [List extension information](../marketplace/install-extension.md#list-extension-information)
       - [Search for extension in the Marketplace](../marketplace/overview.md#search-extension) 
-      - [Uninstall an extension](../marketplace/uninstall-disable-extensions.md#uninstall-extension) 
-      - [Enable/disable an extension](../marketplace/uninstall-disable-extensions.md#disable-extension) 
+      - [Uninstall/disable an extension](../marketplace/install-extension.md#uninstall-disable-extension) 
       #### Manage wikis
       - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)
       - [Create a wiki from a repo](../project/wiki/wiki-create-repo.md)
@@ -244,12 +246,18 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 - [Show permissions for specified token, namespace and user or group](../organizations/security/manage-tokens-namespaces.md)
 - [Update a security group](../organizations/security/add-manage-security-groups.md) 
 
-## Service endpoints
+<a id="service-endpoints" />
+
+## Service endpoints or service connections
 
 - [Create a GitHub service endpoint](service-endpoint.md)
 - [Create an Azure RM service endpoint](service-endpoint.md)
 - [Create service endpoint using a configuration file](service-endpoint.md)
- 
+- [List service endpoints](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-list)
+- [Delete a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-delete)
+- [Manage GitHub service endpoints](/cli/azure/devops/service-endpoint/github)
+- [Show details of a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-show)
+- [Update a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-update)
 
 ## Related articles
  
@@ -263,5 +271,3 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 - [az devops](/cli/azure/azure-cli-reference-for-devops#azure-devops-organizations)
 - [az pipelines](/cli/azure/azure-cli-reference-for-devops#azure-pipelines)
 - [az repos](/cli/azure/azure-cli-reference-for-devops#azure-repos)
-
-

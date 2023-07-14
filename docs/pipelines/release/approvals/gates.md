@@ -32,7 +32,7 @@ Most of the health parameters vary over time, regularly changing their status fr
 
 ## Define a gate for a stage
 
-You can enable gates at the start of a stage (Pre-deployment conditions) or at the end of a stage (Post-deployment conditions) or for both. See [Set up gates](../deploy-using-approvals.md#set-up-manual-intervention) for more details.
+You can enable gates at the start of a stage (Pre-deployment conditions) or at the end of a stage (Post-deployment conditions) or for both. See [Set up gates](../deploy-using-approvals.md#set-up-gates) for more details.
 
 The **Delay before evaluation** is a time delay at the beginning of the gate evaluation process that allows the gates to initialize, stabilize, and begin providing accurate results for the current deployment. see [Gate evaluation flows](#gate-evaluation-flow-examples) for more details.
 
@@ -43,11 +43,11 @@ The **Delay before evaluation** is a time delay at the beginning of the gate eva
 
 The following gates are available by default:
 
-- **Invoke Azure function**: Trigger execution of an Azure function and ensure a successful completion. See [Azure function task](../../tasks/utility/azure-function.md) for more details.
-- **Query Azure monitor alerts**: Observe the configured Azure monitor alert rules for active alerts. See [Azure monitor task](../../tasks/utility/azure-monitor.md) for more details.
-- **Invoke REST API**: Make a call to a REST API and continue if it returns a successful response. See [Invoke REST API task](../../tasks/utility/http-rest-api.md) for more details.
-- **Query Work items**: Ensure the number of matching work items returned from a query is within a threshold. See [Query Work Items task](../../tasks/utility/work-item-query.md) for more details.
-- **Security and compliance assessment**: Assess Azure Policy compliance on resources within the scope of a given subscription and resource group, and optionally at a specific resource level. See [Check Azure Policy compliance task](../../tasks/deploy/azure-policy.md) for more details.
+- **Invoke Azure function**: Trigger execution of an Azure function and ensure a successful completion. See [Azure function task](/azure/devops/pipelines/tasks/reference/azure-function-v1) for more details.
+- **Query Azure monitor alerts**: Observe the configured Azure monitor alert rules for active alerts. See [Azure monitor task](/azure/devops/pipelines/tasks/reference/azure-monitor-v1) for more details.
+- **Invoke REST API**: Make a call to a REST API and continue if it returns a successful response. See [Invoke REST API task](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1) for more details.
+- **Query Work items**: Ensure the number of matching work items returned from a query is within a threshold. See [Query Work Items task](/azure/devops/pipelines/tasks/reference/query-work-items-v0) for more details.
+- **Security and compliance assessment**: Assess Azure Policy compliance on resources within the scope of a given subscription and resource group, and optionally at a specific resource level. See [Check Azure Policy compliance task](/azure/devops/pipelines/tasks/reference/azure-policy-check-gate-v0) for more details.
 
 :::image type="content" source="../media/default-gates.png" alt-text="A screenshot showing the default gates.":::
 

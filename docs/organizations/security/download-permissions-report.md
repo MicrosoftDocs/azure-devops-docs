@@ -3,8 +3,8 @@ title: Download permissions report for a repository
 titleSuffix: Azure DevOps Services
 description: Download json-formatted permission report for a repository.  
 ms.subservice: azure-devops-audit
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 07/07/2022

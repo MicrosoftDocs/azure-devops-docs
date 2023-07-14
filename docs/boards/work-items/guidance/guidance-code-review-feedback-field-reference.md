@@ -5,8 +5,8 @@ description: Learn how to use the code review and feedback fields to track code 
 ms.service: azure-devops-boards
 ms.assetid: 4182c1c5-a768-4f4d-b6cb-862fc57e6ab4
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 11/07/2021
 ---
@@ -20,7 +20,7 @@ You can use the code review and feedback fields to create queries and reports th
 ::: moniker range="tfs-2018"
 
 > [!NOTE]  
->  If your Azure DevOps or TFS server has been upgraded from an earlier version you might need to update your project to get access to these work item types. See [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).   
+>  If your on-premises server has been upgraded from an earlier version, you might need to update your project to get access to these work item types. See [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).   
 
 ::: moniker-end
 
@@ -55,17 +55,17 @@ You can use the code review and feedback fields to create queries and reports th
 
 ## Fields used to track feedback 
  
- The following fields track feedback requests and responses. You complete the first three fields in the feedback request form. A feedback response is created for each person and for each item for which feedback is provided. See [Get feedback](../../../project/feedback/get-feedback.md).  
+ The following fields track feedback requests and responses. You complete the first three fields in the feedback request form. A feedback response is created for each person and for each item for which feedback is provided. See [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback).  
   
 |**Field name**|**Description**|**Data type**|  
 |--------------------|---------------------|-------------------|  
 |**Application Launch Instructions**|Instructions to stakeholders on how to start the application.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationLaunchInstructions|HTML|  
 |**Application Start Information**|Guidelines to direct stakeholder feedback.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationStartInformation|PlainText|  
-|**Application Type**|The type of application that stakeholders will provide feedback on. The valid types are specified in the process configuration file, ProcessConfiguration. The default values are **Web Application**, **Remote Machine**, and **Client Application**.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationType|String|  
+|**Application Type**|The type of application that stakeholders provide feedback on. The valid types are specified in the process configuration file, ProcessConfiguration. The default values are **Web Application**, **Remote Machine**, and **Client Application**.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationType|String|  
 |**Rating**|The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response)<br /> The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0 &mdash; Not Rated**<br />-   **1 - Poor**<br />-   **2 - Fair**<br />-   **3- Good**<br />-   **4- Very Good**<br />-   **5 - Excellent**<br/>Reference name=Microsoft.VSTS.Common.Rating|String|  
   
 ## Related articles
 
 - [Index of work item fields](work-item-field.md)
-- [Get feedback](../../../project/feedback/get-feedback.md)
+- [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback)
 - [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)

@@ -5,27 +5,27 @@ description: Learn how to download Azure DevOps clients and navigate in Team Exp
 keywords: Download Azure DevOps clients 
 ms.subservice: azure-devops-new-user
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 03/03/2022
+ms.date: 12/16/2022
 ---
 
 # Navigate in Visual Studio Team Explorer
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../includes/version-vs-gt-eq-2019.md)]
 
-You use Team Explorer to coordinate your code efforts with other team members to develop a software project. In addition, you can manage work and that is assigned to you, your team, or your projects. Team Explorer is a plug-in that installs with Visual Studio and Team Explorer Everywhere is a plug-in that installs with Eclipse. Developers can effectively collaborate using Team Explorer connected to projects hosted on Azure DevOps Services or an on-premises Azure DevOps Server (previously named Team Foundation Server (TFS)).
+You use Team Explorer to coordinate your code efforts with other team members to develop a software project. In addition, you can manage work and that is assigned to you, your team, or your projects. Team Explorer is a plug-in that installs with Visual Studio. Developers can effectively collaborate using Team Explorer connected to projects hosted on Azure DevOps Services or an on-premises Azure DevOps Server.
 
 > [!TIP]
 > You can install the latest version of Visual Studio clients from the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). 
 > 
 > Additional options for connecting to Azure DevOps Services or TFS include:  
-> - [Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
 > - [Azure DevOps Plugin for Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)  
 > - [Azure DevOps Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
-> - [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)  
+> - [Visual Studio Code](https://code.visualstudio.com/docs)  
 > 
 > For information about compatibility among client and server versions, see [Requirements and compatibility](/azure/devops/server/requirements).
 
@@ -45,20 +45,18 @@ Team Explorer connects Visual Studio to projects in Azure DevOps. You can manage
 
 From the **Connect** page, you can select the projects you want to connect to and quickly switch connection to a different project and or repository. For details, see [Connect to a project](../organizations/projects/connect-to-projects.md).
 
-![Team Explorer, Connect](media/vs-2019-te/manage-connections.png)
+![Screenshot of Team Explorer, Connect options.](media/vs-2019-te/manage-connections.png)
 
 
 The Git and TFVC repos support different pages and functions. For a comparison of the two version control systems, see [Choosing the right version control for your project](../repos/tfvc/comparison-git-tfvc.md). 
 
 ## Git version control and repository 
 
-The following images show the pages available when you connect to a Git repository from Team Explorer. 
+The following image shows the pages available when you connect to a Git repository from Visual Studio Team Explorer. 
 
 [!INCLUDE [temp](../repos/git/includes/note-new-git-tool.md)] 
 
-> |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
-> |------|---------|---------|  
-> | ![Visual studio 2019, Team Explorer Home page with Git as source control](media/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](media/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page with Git as source control.](media/IC827210.png) |  
+![Screenshot of Visual studio 2019, Team Explorer Home page with Git as source control.](media/vs-2019-te/te-git-full.png) 
 
 To learn more about each page, see the following articles. 
 
@@ -85,8 +83,6 @@ To learn more about each page, see the following articles.
       - [Create build pipelines](../pipelines/tasks/index.md) 
       - [View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md) 
       - [Manage the build queue](../pipelines/agents/pools-queues.md) 
-      - [Install Continuous Delivery (CD) Tools for Visual Studio](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017) 
-      - [Configure and execute Continuous Delivery (CD) for your app](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app)  
    :::column-end:::
    :::column span="1":::
       - [Create a new repo](../repos/git/creatingrepo.md) 
@@ -118,13 +114,9 @@ To learn more about each page, see the following articles.
 
 ## Team Foundation version control 
 
-The following images show the pages available when you connect to a TFVC repository from Team Explorer. 
+The following image shows the pages available when you connect to a TFVC repository from Visual Studio Team Explorer. 
 
-> [!div class="mx-tdCol2BreakAll"]  
-> 
-> |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
-> |------|---------|---------|
-> | ![Visual Studio 2019, Team Explorer Home page w/ TFVC as source control](media/vs-2019-te/te-tfvc.png) | ![Visual Studio 2017, Team Explorer Home page w/ TFVC as source control](media/vs-2017-te/te-tfvc.png) | ![Visual Studio 2015, Team Explorer Home page with a TFVC repository as source control](media/IC827209.png) |  
+![Screenshot of Visual Studio 2019, Team Explorer Home page with TFVC as source control.](media/vs-2019-te/te-tfvc.png)  
 
 To learn more about each page, see the following articles. 
 
@@ -151,8 +143,6 @@ To learn more about each page, see the following articles.
       - [Create build pipelines](../pipelines/tasks/index.md) 
       - [View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md) 
       - [Manage the build queue](../pipelines/agents/pools-queues.md) 
-      - [Install Continuous Delivery (CD) Tools for Visual Studio](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017) 
-      - [Configure and execute Continuous Delivery (CD) for your app](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app)  
    :::column-end:::
    :::column span="1":::
       - [Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace) 
@@ -179,65 +169,6 @@ To learn more about each page, see the following articles.
 :::row-end:::
  
 
-
-## Team Explorer plug-in for Eclipse
-
-If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](/previous-versions/azure/devops/all/java/download-eclipse-plug-in#to-install-team-explorer-everywhere-from-within-eclipse). Once installed, you can share your Eclipse projects by adding them to Azure DevOps Services or TFS using [Git](../repos/git/share-your-code-in-git-eclipse.md) or [TFVC](../repos/tfvc/share-your-code-in-tfvc-eclipse.md).
-
-
-> [!div class="mx-tdBreakAll"]  
-> |Home page with Git (Eclipse) |Home page with TFVC (Eclipse) |
-> |-------------|----------|
-> |![Eclipse, Team Explorer, Git source control](media/work-team-explorer/tee-git-10.2018.png) |![Eclipse, Team Explorer, TFVC source control](media/work-team-explorer/tee-tfvc-10.2018.png) |
-
-
-To learn more about each page, see the following articles. 
-
-
-:::row:::
-   :::column span="1":::
-      **Home and Builds**
-   :::column-end:::
-   :::column span="1":::
-      **Version control**
-   :::column-end:::
-   :::column span="1":::
-      **Work items** 
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **Home** 
-      - [Web portal](../project/navigation/index.md) 
-        
-      **Builds**  
-      - [Create build pipelines](../pipelines/tasks/index.md) 
-      - [View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md) 
-      - [Manage the build queue](../pipelines/agents/pools-queues.md) 
-      - [Install Continuous Delivery (CD) Tools for Visual Studio](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017) 
-      - [Configure and execute Continuous Delivery (CD) for your app](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app) 
-   :::column-end:::
-   :::column span="1":::
-      **Git repo**
-      - [Share your code](../repos/git/share-your-code-in-git-eclipse.md)  
-      - [Git preferences](../repos/git/git-config.md)  
-      - [Git command reference](../repos/git/command-prompt.md)  
-
-      **TFVC repo**
-      - [Share your code](../repos/tfvc/share-your-code-in-tfvc-eclipse.md) 
-      - [Pending changes](../repos/tfvc/develop-code-manage-pending-changes.md) 
-      - [Source Control Explorer](../repos/tfvc/add-files-server.md) 
-      - [Add Check-In Policies](../repos/tfvc/add-check-policies.md) 
-      - [Version control commands](../repos/tfvc/use-team-foundation-version-control-commands.md)  
-   :::column-end:::
-   :::column span="1":::
-      - [Add work items](../boards/backlogs/add-work-items.md) 
-      - [Query editor](../boards/queries/using-queries.md) 
-      - [Query folders](../boards/queries/organize-queries.md) 
-      - [Query permissions](../boards/queries/set-query-permissions.md) 
-   :::column-end:::
-:::row-end:::
  
 
 ::: moniker range="< azure-devops"
@@ -265,15 +196,15 @@ From the **Settings** page, you can configure administrative features for either
       - [Work Item Areas](../organizations/settings/set-area-paths.md)  
       - [Work Item Iterations](../organizations/settings/set-iteration-paths-sprints.md)  
       - [Portal Settings](../project/configure-or-add-a-project-portal.md)  
-      - [Project Alerts](../notifications/manage-team-group-global-organization-notifications.md)  
+      - [Project Alerts](../organizations/notifications/manage-team-group-global-organization-notifications.md)  
 
    :::column-end:::
    :::column span="":::
       **Project Collection**  
       - [Security, Group Membership](../organizations/security/change-organization-collection-level-permissions.md) 
       - [Source Control (TFVC)](../repos/tfvc/decide-between-using-local-server-workspace.md) 
-      - [Process Template Manager](../boards/work-items/guidance/manage-process-templates.md) 
-        <br/>
+      - [Process Template Manager](../boards/work-items/guidance/manage-process-templates.md)  
+      <br/>  
       **Other**  
       - [Git Global Settings](../repos/git/git-config.md)  
       - [Git Repository Settings](../repos/git/git-config.md)  
@@ -284,13 +215,13 @@ From the **Settings** page, you can configure administrative features for either
 To learn more about settings, see [About team, project, and organizational-level settings](../organizations/settings/about-settings.md).
 
 
-## Refresh Team Explorer or Team Explorer Everywhere
+## Refresh Team Explorer  
 
-If data doesn't appear as expected, the first thing to try is to refresh your client. Refreshing your client updates the local cache with changes that were made in another client or in TFS. To refresh Team Explorer, do one of the following actions:
+If data doesn't appear as expected, the first thing to try is to refresh your client. Refreshing your client updates the local cache with changes that were made in another client or in Azure DevOps. To refresh Team Explorer, do one of the following actions:
 
 - To refresh a page that you are currently viewing, choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** in the menu bar (or choose **F5**).
 - To refresh the project you currently have selected, choose :::image type="icon" source="media/work-team-explorer/IC547418.png" border="false"::: **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** (or choose **F5**).
-- To refresh the set of teams defined for the project that you currently have selected, choose **Connect**, and then choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** (or choose **F5**).
+- To refresh the set of teams defined for the project that you currently have selected, choose **Connect**, and then choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** (or enter **F5**).
 
 [!INCLUDE [temp](includes/when-to-refresh-client.md)]
 
@@ -299,19 +230,6 @@ If data doesn't appear as expected, the first thing to try is to refresh your cl
 
 ## Related articles
 
-- [Troubleshoot connection](troubleshoot-connection.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)  
+- [Troubleshoot connection](troubleshoot-connection.md)  
 - [Create a project](../organizations/projects/create-project.md)
-
-
-### Additional tools provided with TFS Power Tools 
-
-By installing [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power), you gain access to these additional tools through the Team Explorer plug-in for Visual Studio:
-
--   Process Template Editor
--   Additional check-in policies for Team Foundation Version Control
--   Team Explorer enhancements including Team Members
--   Team Foundation Power Tool Command Line
--   Test Attachment Cleaner
--   Work Item Templates
-
-Additional requirements may apply.
+ 

@@ -4,11 +4,11 @@ description: Add a custom build or release task in an extension for Azure DevOps
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.subservice: azure-devops-ecosystem
 ms.custom: freshness-fy22q3
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-date: 03/07/2022
+date: 12/27/2022
 ---
 
 # Add a custom pipelines task extension
@@ -17,10 +17,6 @@ date: 03/07/2022
 
 Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps.
 
-These tasks appear next to Microsoft-provided tasks in the **Add Step** wizard.
-
-![Screenshot of Build task catalog for extensions in Azure DevOps.](media/build-task-ext-choose-task.png)
-
 For more information about the new cross-platform build/release system, see [What is Azure Pipelines?](../../pipelines/get-started/what-is-azure-pipelines.md).
 
 > [!NOTE]
@@ -28,13 +24,12 @@ For more information about the new cross-platform build/release system, see [Wha
 
 ## Prerequisites
 
-To create extensions for Azure DevOps, you need the following software and tools:
+To create extensions for Azure DevOps, you need the following software and tools.
 
 - An organization in Azure DevOps. For more information, see [Create an organization](../../organizations/accounts/create-organization.md).
 - A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support. Go to [code.visualstudio.com](https://code.visualstudio.com/) to download the latest version.
 - The [latest version](https://nodejs.org/en/download/) of Node.js.
-  The production environment uses only Node10 or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`).
-- TypeScript Compiler 2.2.0 or greater, although we recommend version 4.0.2 or newer for tasks that use Node10. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
+- TypeScript Compiler 2.2.0 or greater, although we recommend version 4.0.2 or newer. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
     <a name="cli"></a>
 - [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli) to package your extensions.
      You can install **tfx-cli** by using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.
@@ -49,64 +44,54 @@ To create extensions for Azure DevOps, you need the following software and tools
   |--- vss-extension.json             // extension's manifest
   ```
 
-- The [vss-web-extension-sdk package installation](https://github.com/Microsoft/vss-web-extension-sdk).
+- The [azure-devops-extension-sdk package installation](https://github.com/Microsoft/azure-devops-extension-sdk).
 
 > [!IMPORTANT]
-> The dev machine needs to run Node v10.21.0 to ensure that the code written is compatible with the production environment on the agent and the latest non-preview version of azure-pipelines-task-lib.
-
-### Develop in Unix vs. Windows
-
-We did this walk-through on Windows with PowerShell. We attempted to make it generic for all platforms, but the syntax for getting environment variables is different.
-
-If you're using a Mac or Linux, replace any instances of `$env:<var>=<val>` with `export <var>=<val>`.
+> The dev machine needs to run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of azure-pipelines-task-lib.
 
 <a name="createtask"></a>
 
 ## 1. Create a custom task
 
-Set up your task. Do every part of Step 1 within the `buildandreleasetask` folder.
+Do every part of [1. Create a custom task](#1-create-a-custom-task) within the `buildandreleasetask` folder.
+
+> [!NOTE]
+> This example walk-through is on Windows with PowerShell. We made it generic for all platforms, but the syntax for getting environment variables is different. If you're using a Mac or Linux, replace any instances of `$env:<var>=<val>` with `export <var>=<val>`.
 
 ### Create task scaffolding
 
-Create the folder structure for the task and install the required libraries and dependencies.
+1. Create the folder structure for the task and install the required libraries and dependencies.
+2. From within your `buildandreleasetask` folder, run the following command.
 
-#### Create a directory and package.json file
+   ```
+   npm init --yes
+   ```
 
-From within your `buildandreleasetask` folder, run the following command:
+   `npm init` creates the `package.json` file. We added the `--yes` parameter to accept all of the default `npm init` options.
 
-```
-npm init --yes
-```
+   > [!TIP]
+   > The agent doesn't automatically install the required modules because it's expecting your task folder to include the node modules. To mitigate this, copy the `node_modules` to `buildandreleasetask`. As your task gets bigger, it's easy to exceed the size limit (50MB) of a VSIX file. Before you copy the node folder, you may want to run `npm install --production` or `npm prune --production`, or you can write a script to build and pack everything.
 
-`npm init` creates the `package.json` file. We added the `--yes` parameter to accept all of the default `npm init` options.
+3. Add `azure-pipelines-task-lib` to your library.
 
-> [!TIP]
-> The agent doesn't automatically install the required modules because it's expecting your task folder to include the node modules. To mitigate this, copy the `node_modules` to `buildandreleasetask`. As your task gets bigger, it's easy to exceed the size limit (50MB) of a VSIX file. Before you copy the node folder, you may want to run `npm install --production` or `npm prune --production`, or you can write a script to build and pack everything.
+   ```
+   npm install azure-pipelines-task-lib --save
+   ```
 
-#### Add azure-pipelines-task-lib
-
-We provide a library, _azure-pipelines-task-lib_, that should be used to create tasks. Add it to your library.
-
-```
-npm install azure-pipelines-task-lib --save
-```
-
-#### Add typings for external dependencies
-
-- Ensure that TypeScript typings are installed for external dependencies.
+4. Ensure that TypeScript typings are installed for external dependencies.
 
    ```
    npm install @types/node --save-dev
    npm install @types/q --save-dev
    ```
 
-- Create a `.gitignore` file and add node_modules to it. Your build process should do an `npm install` and a `typings install` so that node_modules are built each time and don't need to be checked in.
+5. Create a `.gitignore` file and add node_modules to it. Your build process should do an `npm install` and a `typings install` so that node_modules are built each time and don't need to be checked in.
 
    ```
    echo node_modules > .gitignore
    ```
 
-- Install Mocha as a development dependency:
+6. Install [Mocha](https://mochajs.org/) as a development dependency.
 
    ```
    npm install mocha --save-dev -g
@@ -114,45 +99,33 @@ npm install azure-pipelines-task-lib --save
    npm install @types/mocha --save-dev
    ```
 
-#### Choose TypeScript version
+7. Choose TypeScript version 2.3.4 or 4.6.3. 
 
-Tasks can use TypeScript versions 2.3.4 or 4.0.2. 
+   ```
+   npm install typescript@4.6.3 -g --save-dev
+   ```
 
->[!NOTE]
->To have the `tsc` command available, make sure that TypeScript is installed globally with npm in your development environment.
+   > [!NOTE]
+   > To have the `tsc` command available, make sure that TypeScript is installed globally with npm in your development environment. If you skip this step, TypeScript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
 
-You can install the chosen TypeScript version using this command:
+8. Create `tsconfig.json` compiler options. This file ensures that your TypeScript files are compiled to JavaScript files.
 
-```
-npm install typescript@4.0.2 -g --save-dev
-```
+   ```
+   tsc --init --target es6
+   ```
 
-If you skip this step, TypeScript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
+   To ensure the ES6 (rather than ES5) standard is used, we added the `--target es6` parameter.
 
-
-#### Create tsconfig.json compiler options
-
-This file ensures that your TypeScript files are compiled to JavaScript files.
-
-```
-tsc --init --target es6
-```
-
-We want to compile to the ES6 standard instead of ES5. To ensure the ES6 standard is used, we added the `--target es6` parameter.
-
-
-### Task implementation
+### Create custom task
 
 Now that the scaffolding is complete, we can create our custom task.
 
-#### task.json
+1. Create a `task.json` file in the `buildandreleasetask` folder. The `task.json` file describes the build/release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
 
-Next, we create a `task.json` file in the buildandreleasetask folder. The `task.json` file describes the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
+2. Copy the following code and replace the `{{placeholders}}` with your task's information. The most important placeholder is the `taskguid`, and it must be unique.
 
-Copy the following code and replace the `{{placeholders}}` with your task's information. The most important placeholder is the `taskguid`, and it must be unique.
-
-```json
-{
+   ```json
+   {
     "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
     "id": "{{taskguid}}",
     "name": "{{taskname}}",
@@ -178,36 +151,40 @@ Copy the following code and replace the `{{placeholders}}` with your task's info
         }
     ],
     "execution": {
-        "Node10": {
+        "Node": {
             "target": "index.js"
         }
     }
-}
-```
+    }
+   ```
 
 **task.json components**
-Following are descriptions of some of the components of the `task.json` file:
 
-| Property             | Description                                                                                                                |
+See the following descriptions of some of the components of the `task.json` file.
+
+| Property             | Description                                                                                                            |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | `id`                 | A unique GUID for your task.                                                                                                |
 | `name`               | Name with no spaces.                                                                                                        |
 | `friendlyName`       | Descriptive name (spaces allowed).                                                                                          |
 | `description`        | Detailed description of what your task does.                                                                                |
 | `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation."              |
-| `instanceNameFormat` | How the task is displayed within the build or release step list. You can use variable values by using **$(variablename)**. |
+| `instanceNameFormat` | How the task displays within the build/release step list. You can use variable values by using **$(variablename)**. |
 | `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
-| `restrictions`       | Restrictions being applied to the task about [Visual Studio Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
-|
+| `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
 
->[!NOTE]
->For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, check out the **[build/release task reference](./integrate-build-task.md)**.
+> [!NOTE]
+> You can create an `id` with the following command in PowerShell:
+> ```powershell
+> (New-Guid).Guid
+> ```
 
-#### index.ts
+> [!NOTE]
+> For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, see the **[Build/release task reference](./integrate-build-task.md)**.
 
-Create an `index.ts` file by using the following code as a reference. This code runs when the task is called.
+3. Create an `index.ts` file by using the following code as a reference. This code runs when the task gets called.
 
 ```typescript
 import tl = require('azure-pipelines-task-lib/task');
@@ -229,44 +206,42 @@ async function run() {
 run();
 ```
 
-### Compile
-
-Enter "tsc" from the buildandreleasetask folder to compile an `index.js` file from `index.ts`.
+4. Enter "tsc" from the `buildandreleasetask` folder to compile an `index.js` file from `index.ts`.
 
 ### Run the task
 
-An agent can run the task with `node index.js` from PowerShell.
+1. Run the task with `node index.js` from PowerShell.
 
-In the following example, the task fails because inputs weren't supplied (`samplestring` is a required input).
+   In the following example, the task fails because inputs weren't supplied (`samplestring` is a required input).
 
-```
-node index.js
-##vso[task.debug]agent.workFolder=undefined
-##vso[task.debug]loading inputs and endpoints
-##vso[task.debug]loaded 0
-##vso[task.debug]task result: Failed
-##vso[task.issue type=error;]Input required: samplestring
-##vso[task.complete result=Failed;]Input required: samplestring
-```
+   ```
+    node index.js
+    ##vso[task.debug]agent.workFolder=undefined
+    ##vso[task.debug]loading inputs and endpoints
+    ##vso[task.debug]loaded 0
+    ##vso[task.debug]task result: Failed
+    ##vso[task.issue type=error;]Input required: samplestring
+    ##vso[task.complete result=Failed;]Input required: samplestring
+   ```
 
-As a fix, we can set the `samplestring` input and run the task again.
+   As a fix, we can set the `samplestring` input and run the task again.
 
-```
-$env:INPUT_SAMPLESTRING="Human"
-node index.js
-##vso[task.debug]agent.workFolder=undefined
-##vso[task.debug]loading inputs and endpoints
-##vso[task.debug]loading INPUT_SAMPLESTRING
-##vso[task.debug]loaded 1
-##vso[task.debug]Agent.ProxyUrl=undefined
-##vso[task.debug]Agent.CAInfo=undefined
-##vso[task.debug]Agent.ClientCert=undefined
-##vso[task.debug]Agent.SkipCertValidation=undefined
-##vso[task.debug]samplestring=Human
-Hello Human
-```
+   ```
+    $env:INPUT_SAMPLESTRING="Human"
+    node index.js
+    ##vso[task.debug]agent.workFolder=undefined
+    ##vso[task.debug]loading inputs and endpoints
+    ##vso[task.debug]loading INPUT_SAMPLESTRING
+    ##vso[task.debug]loaded 1
+    ##vso[task.debug]Agent.ProxyUrl=undefined
+    ##vso[task.debug]Agent.CAInfo=undefined
+    ##vso[task.debug]Agent.ClientCert=undefined
+    ##vso[task.debug]Agent.SkipCertValidation=undefined
+    ##vso[task.debug]samplestring=Human
+    Hello Human
+   ```
 
-This time, the task succeeded because `samplestring` was supplied, and it correctly outputted "Hello Human"!
+This time, the task succeeded because `samplestring` was supplied and it correctly outputted "Hello Human"!
 
 <a name="testscripts"></a>
 
@@ -274,144 +249,133 @@ This time, the task succeeded because `samplestring` was supplied, and it correc
 
 We unit test to quickly test the task script, and not the external tools that it's calling. We want to test all aspects of both success and failure paths.
 
-### Install test tools
+1. Install test tools. We use [Mocha](https://mochajs.org/) as the test driver in this walk through.
 
-We use [Mocha](https://mochajs.org/) as the test driver in this walk through.
+    ```
+    npm install mocha --save-dev -g
+    npm install sync-request --save-dev
+    npm install @types/mocha --save-dev
+    ```
 
-```
-npm install mocha --save-dev -g
-npm install sync-request --save-dev
-npm install @types/mocha --save-dev
-```
+2. Create a `tests` folder containing a `_suite.ts` file with the following contents:
 
-### Create test suite
-
-Create a `tests` folder containing a `_suite.ts` file with the following contents:
-
-```typescript
-import * as path from 'path';
-import * as assert from 'assert';
-import * as ttm from 'azure-pipelines-task-lib/mock-test';
-
-describe('Sample task tests', function () {
-
-    before( function() {
-
+    ```typescript
+    import * as path from 'path';
+    import * as assert from 'assert';
+    import * as ttm from 'azure-pipelines-task-lib/mock-test';
+    
+    describe('Sample task tests', function () {
+    
+        before( function() {
+    
+        });
+    
+        after(() => {
+    
+        });
+    
+        it('should succeed with simple inputs', function(done: Mocha.Done) {
+            // Add success test here
+        });
+    
+        it('it should fail if tool returns 1', function(done: Mocha.Done) {
+            // Add failure test here
+        });    
     });
+    ```
 
-    after(() => {
+   > [!TIP]
+   > Your test folder should be located in the buildandreleasetask folder. If you get a sync-request error, you can work around it by adding sync-request to the buildandreleasetask folder with the command
+   > `npm i --save-dev sync-request`.
 
-    });
+3. Create a `success.ts` file in your test directory with the following contents. This file creation simulates running the task and mocks all calls to outside methods.
 
+    ```typescript
+    import ma = require('azure-pipelines-task-lib/mock-answer');
+    import tmrm = require('azure-pipelines-task-lib/mock-run');
+    import path = require('path');
+    
+    let taskPath = path.join(__dirname, '..', 'index.js');
+    let tmr: tmrm.TaskMockRunner = new tmrm.TaskMockRunner(taskPath);
+    
+    tmr.setInput('samplestring', 'human');
+    
+    tmr.run();
+    ```
+
+   The success test validates that with the appropriate inputs, it succeeds with no errors or warnings and returns the correct output.
+
+
+4. Add the following example success test to your `_suite.ts` file to run the task mock runner.
+
+    ```typescript
     it('should succeed with simple inputs', function(done: Mocha.Done) {
-        // Add success test here
+        this.timeout(1000);
+    
+        let tp = path.join(__dirname, 'success.js');
+        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+    
+        tr.run();
+        console.log(tr.succeeded);
+        assert.equal(tr.succeeded, true, 'should have succeeded');
+        assert.equal(tr.warningIssues.length, 0, "should have no warnings");
+        assert.equal(tr.errorIssues.length, 0, "should have no errors");
+        console.log(tr.stdout);
+        assert.equal(tr.stdout.indexOf('Hello human') >= 0, true, "should display Hello human");
+        done();
     });
+    ```
 
+5. Create a `failure.ts` file in your test directory as your task mock runner with the following contents:
+
+    ```typescript
+    import ma = require('azure-pipelines-task-lib/mock-answer');
+    import tmrm = require('azure-pipelines-task-lib/mock-run');
+    import path = require('path');
+    
+    let taskPath = path.join(__dirname, '..', 'index.js');
+    let tmr: tmrm.TaskMockRunner = new tmrm.TaskMockRunner(taskPath);
+    
+    tmr.setInput('samplestring', 'bad');
+    
+    tmr.run();
+    ```
+
+   The failure test validates that when the tool gets bad or incomplete input, it fails in the expected way with helpful output.
+
+6. Add the following code to your `_suite.ts` file to run the task mock runner.
+
+    ```typescript
     it('it should fail if tool returns 1', function(done: Mocha.Done) {
-        // Add failure test here
-    });    
-});
-```
+        this.timeout(1000);
+    
+        let tp = path.join(__dirname, 'failure.js');
+        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+    
+        tr.run();
+        console.log(tr.succeeded);
+        assert.equal(tr.succeeded, false, 'should have failed');
+        assert.equal(tr.warningIssues.length, 0, "should have no warnings");
+        assert.equal(tr.errorIssues.length, 1, "should have 1 error issue");
+        assert.equal(tr.errorIssues[0], 'Bad input was given', 'error issue output');
+        assert.equal(tr.stdout.indexOf('Hello bad'), -1, "Should not display Hello bad");
+    
+        done();
+    });
+    ```
 
-> [!TIP]
-> Your test folder should be located in the buildandreleasetask folder. If you get a sync-request error, you can work around it by adding sync-request to the buildandreleasetask folder with the command
-> `npm i --save-dev sync-request`.
+7. Run the tests.
 
-### Create success test
+    ```
+    tsc
+    mocha tests/_suite.js
+    ```
 
-The success test validates that with the appropriate inputs, it succeeds with no errors or warnings and returns the correct output.
+   Both tests should pass. If you want to run the tests with more verbose output (what you'd see in the build console), set the environment variable: `TASK_TEST_TRACE=1`.
 
-Create a file containing your task mock runner. This file creation simulates running the task and mocks all calls to outside methods.
-
-Create a `success.ts` file in your test directory with the following contents:
-
-```typescript
-import ma = require('azure-pipelines-task-lib/mock-answer');
-import tmrm = require('azure-pipelines-task-lib/mock-run');
-import path = require('path');
-
-let taskPath = path.join(__dirname, '..', 'index.js');
-let tmr: tmrm.TaskMockRunner = new tmrm.TaskMockRunner(taskPath);
-
-tmr.setInput('samplestring', 'human');
-
-tmr.run();
-```
-
-Next, add the following example success test to your `_suite.ts` file to run the task mock runner:
-
-```typescript
-it('should succeed with simple inputs', function(done: Mocha.Done) {
-    this.timeout(1000);
-
-    let tp = path.join(__dirname, 'success.js');
-    let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
-
-    tr.run();
-    console.log(tr.succeeded);
-    assert.equal(tr.succeeded, true, 'should have succeeded');
-    assert.equal(tr.warningIssues.length, 0, "should have no warnings");
-    assert.equal(tr.errorIssues.length, 0, "should have no errors");
-    console.log(tr.stdout);
-    assert.equal(tr.stdout.indexOf('Hello human') >= 0, true, "should display Hello human");
-    done();
-});
-```
-
-### Create failure test
-
-The failure test validates that when the tool gets bad or incomplete input, it fails in the expected way with helpful output.
-
-First, we create our task mock runner. To do so, create a `failure.ts` file in your test directory with the following contents:
-
-```typescript
-import ma = require('azure-pipelines-task-lib/mock-answer');
-import tmrm = require('azure-pipelines-task-lib/mock-run');
-import path = require('path');
-
-let taskPath = path.join(__dirname, '..', 'index.js');
-let tmr: tmrm.TaskMockRunner = new tmrm.TaskMockRunner(taskPath);
-
-tmr.setInput('samplestring', 'bad');
-
-tmr.run();
-```
-
-Next, add the following to your `_suite.ts` file to run the task mock runner:
-
-```typescript
-it('it should fail if tool returns 1', function(done: Mocha.Done) {
-    this.timeout(1000);
-
-    let tp = path.join(__dirname, 'failure.js');
-    let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
-
-    tr.run();
-    console.log(tr.succeeded);
-    assert.equal(tr.succeeded, false, 'should have failed');
-    assert.equal(tr.warningIssues.length, 0, "should have no warnings");
-    assert.equal(tr.errorIssues.length, 1, "should have 1 error issue");
-    assert.equal(tr.errorIssues[0], 'Bad input was given', 'error issue output');
-    assert.equal(tr.stdout.indexOf('Hello bad'), -1, "Should not display Hello bad");
-
-    done();
-});
-```
-
-### Run the tests
-
-To run the tests, run the following commands:
-
-```
-tsc
-mocha tests/_suite.js
-```
-
-Both tests should pass. If you want to run the tests with more verbose output (what you'd see in the build console), set the environment variable: `TASK_TEST_TRACE=1`.
-
-```
-$env:TASK_TEST_TRACE=1
-```
+   ```
+   $env:TASK_TEST_TRACE=1
+   ```
 
 <a name="extensionmanifest"></a>
 
@@ -419,13 +383,12 @@ $env:TASK_TEST_TRACE=1
 
 The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images folders. Ensure you've created an images folder with extension-icon.png. The following example is an extension manifest that contains the build or release task.
 
-Copy the following .json code and save it as your `vss-extension.json` file in your `home` directory. Don't create this file in the buildandreleasetask folder.
+1. Copy the following .json code and save it as your `vss-extension.json` file in your `home` directory. **Don't create this file in the buildandreleasetask folder.**
 
 [!code-javascript[JSON](../_data/extension-build-tasks.json)]
 
 >[!NOTE]
->The **publisher** here must be changed to your publisher name. If you want to create a publisher now, go to
-[create your publisher](#createpublisher) for instructions.
+>Change the **publisher** to your publisher name. For more information, see [Create a publisher](#createpublisher).
 
 ### Contributions
 
@@ -434,7 +397,7 @@ Copy the following .json code and save it as your `vss-extension.json` file in y
 | `id`              | Identifier of the contribution. Must be unique within the extension. Doesn't need to match the name of the build or release task. Typically the build or release task name is  in the ID of the contribution. |
 | `type`            | Type of the contribution. Should be **ms.vss-distributed-task.task**.                                                                                                                                         |
 | `targets`         | Contributions "targeted" by this contribution. Should be **ms.vss-distributed-task.tasks**.                                                                                                                   |
-| `properties.name` | Name of the task. This name must match the folder name of the corresponding self-contained build or release task pipeline.                                                                                    |
+| `properties.name` | Name of the task. This name must match the folder name of the corresponding self-contained build or release pipeline task.                                                                                    |
 
 ### Files
 
@@ -452,11 +415,11 @@ Copy the following .json code and save it as your `vss-extension.json` file in y
 After you've written your extension, the next step toward getting it into the Visual Studio Marketplace is to package all of your files together. All extensions are packaged
 as VSIX 2.0-compatible .vsix files. Microsoft provides a cross-platform command-line interface (CLI) to package your extension.
 
-Packaging your extension into a .vsix file is effortless after you have the [tfx-cli](#cli), go to your extension's home directory, and run the following command:
+1. Once you have the [tfx-cli](#cli), go to your extension's home directory, and run the following command:
 
-```no-highlight
-tfx extension create --manifest-globs vss-extension.json
-```
+   ```no-highlight
+   tfx extension create --manifest-globs vss-extension.json
+   ```
 
 > [!NOTE]
 > An extension or integration's version must be incremented on every update.
@@ -469,6 +432,7 @@ After you have your packaged extension in a .vsix file, you're ready to publish 
 
 ## 5. Publish your extension
 
+To publish your extension, you first [create your publisher](#create-your-publisher), then [upload your extension](#upload-your-extension), and finally [share it](#share-your-extension).
 <a name="createpublisher"></a>
 
 ### Create your publisher
@@ -489,30 +453,26 @@ without the need to share a set of credentials across users.
 
 ### Upload your extension
 
-After creating a publisher, you can upload your extension to the Marketplace.
+1. Find the **Upload new extension** button, go to your packaged .vsix file, and select **Upload**.
 
-- Find the **Upload new extension** button, go to your packaged .vsix file, and select **Upload**.
+   You can also upload your extension via the command line by using the `tfx extension publish` command instead of `tfx extension create` to package and publish your extension in one step.
+   You can optionally use `--share-with` to share your extension with one or more accounts after publishing. You'll need a personal access token, too. For more information, see [Create a personal access token](../publish/command-line.md#create-a-personal-access-token).
 
-You can also upload your extension via the command line by using the `tfx extension publish` command instead of `tfx extension create`
-to package and publish your extension in one step.
-You can optionally use `--share-with` to share your extension with one or more accounts after publishing.
-You'll need a personal access token, too. For more information, see [Acquire a personal access token](../publish/command-line.md#create-a-personal-access-token).
-
-```no-highlight
-tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
-```
+   ```no-highlight
+   tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
+   ```
 
 ### Share your extension
 
 Now that you've uploaded your extension, it's in the Marketplace, but no one can see it.
 Share it with your organization so that you can install and test it.
 
-- Right-click your extension and select **Share**, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
+1. Right-click your extension and select **Share**, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
 
 > [!IMPORTANT]
 > Publishers must be verified to share extensions publicly. To learn more, see [Package/Publish/Install](../publish/overview.md).
 
-Now that your extension is in the Marketplace and shared, anyone who wants to use it must install it.
+Now that your extension is shared in the Marketplace, anyone who wants to use it must install it.
 
 <a name="createbuildrelease"></a>
 
@@ -529,12 +489,12 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 
 Create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How to use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
 
-Declare the following variables in the variable group:
+Declare the following variables in the variable group.
 
-- `publisherId`: ID of your marketplace publisher.
-- `extensionId`: ID of your extension, as declared in the vss-extension.json file.
-- `extensionName`: Name of your extension, as declared in the vss-extension.json file.
-- `artifactName`: Name of the artifact being created for the VSIX file.
+- `publisherId`: ID of your marketplace publisher
+- `extensionId`: ID of your extension, as declared in the vss-extension.json file
+- `extensionName`: Name of your extension, as declared in the vss-extension.json file
+- `artifactName`: Name of the artifact being created for the VSIX file
 
 Create a new Visual Studio Marketplace service connection and grant access permissions for all pipelines. For more information about creating a service connection, see [Service connections](../../pipelines/library/service-endpoints.md?tabs=yaml).
 
@@ -548,7 +508,7 @@ Use the following example to create a new pipeline with YAML. Learn more about h
 
 ```yaml
 trigger: 
-- master
+- main
 
 pool:
   vmImage: "ubuntu-latest"
@@ -561,7 +521,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@3
+          - task: TfxInstaller@4
             inputs:
               version: "v0.x"
           - task: Npm@1
@@ -588,7 +548,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@3
+          - task: TfxInstaller@4
             inputs:
               version: "0.x"
           - task: Npm@1
@@ -610,7 +570,7 @@ stages:
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               versionAction: 'Patch'
-          - task: PackageAzureDevOpsExtension@3
+          - task: PackageAzureDevOpsExtension@4
             inputs:
               rootFolder: '$(System.DefaultWorkingDirectory)'
               publisherId: '$(PublisherID)'
@@ -635,7 +595,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@3
+          - task: TfxInstaller@4
             inputs:
               version: "v0.x"
           - task: DownloadBuildArtifacts@0
@@ -644,7 +604,7 @@ stages:
               downloadType: "single"
               artifactName: "$(ArtifactName)"
               downloadPath: "$(System.DefaultWorkingDirectory)"
-          - task: PublishAzureDevOpsExtension@3
+          - task: PublishAzureDevOpsExtension@4
             inputs:
               connectTo: 'VsTeam'
               connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
@@ -687,14 +647,14 @@ To run unit tests, add a custom script to the package.json file. For example:
 1. Add the "npm" task with the "custom" command, target the folder that contains the unit tests, and input `testScript` as the command. Use the following inputs:
     - Command: custom
     - Working folder that contains package.json: /TestsDirectory
-    - Command and arguments: testScript
+    - Command and arguments: `testScript`
 
 1. Add the "Publish Test Results" task. If you're using the Mocha XUnit reporter, ensure that the result format is "JUnit" and not "XUnit." Set the search folder to the root directory. Use the following inputs:
     - Test result format: JUnit
     - Test results files: **/ResultsFile.xml
-    - Search folder: $(System.DefaultWorkingDirectory)
+    - Search folder: `$(System.DefaultWorkingDirectory)`
 
-After the test results have been published, the output under the tests tab should look like this:
+After the test results have been published, the output under the tests tab should look like the following example.
 
 ![Screenshot of the test result example.](media/test-results-example.png)
 
@@ -712,24 +672,24 @@ After the test results have been published, the output under the tests tab shoul
     - Output Variable: Task.Extension.Version
 
 1. Add the "Package Extension" task to package the extensions based on manifest Json. Use the following inputs:
-    - Root manifests folder: Points to root directory that contains manifest file. For example, $(System.DefaultWorkingDirectory) is the root directory.
-    - Manifest file(s): vss-extension.json.
-    - Publisher ID: ID of your Visual Studio Marketplace publisher.
-    - Extension ID: ID of your extension in the vss-extension.json file.
-    - Extension Name: Name of your extension in the vss-extension.json file.
-    - Extension Version: $(Task.Extension.Version).
-    - Override tasks version: checked (true).
-    - Override Type: Replace Only Patch (1.0.r).
-    - Extension Visibility: If the extension is still in development, set the value to private. To release the extension to the public, set the value to public.
+    - Root manifests folder: Points to root directory that contains manifest file. For example, $(System.DefaultWorkingDirectory) is the root directory
+    - Manifest file(s): vss-extension.json
+    - Publisher ID: ID of your Visual Studio Marketplace publisher
+    - Extension ID: ID of your extension in the vss-extension.json file
+    - Extension Name: Name of your extension in the vss-extension.json file
+    - Extension Version: $(Task.Extension.Version)
+    - Override tasks version: checked (true)
+    - Override Type: Replace Only Patch (1.0.r)
+    - Extension Visibility: If the extension is still in development, set the value to private. To release the extension to the public, set the value to public
 1. Add the "Copy files" task to copy published files. Use the following inputs:
     - Contents: All of the files to be copied for publishing them as an artifact
     - Target folder: The folder that the files get copied to
        - For example: $(Build.ArtifactStagingDirectory)
-2. Add "Publish build artifacts" to publish the artifacts for use in other jobs or pipelines. Use the following inputs:
-    - Path to publish: The path to the folder that contains the files that are being published.
-       - For example: $(Build.ArtifactStagingDirectory).
-    - Artifact name: The name given to the artifact.
-    - Artifacts publish location: Choose "Azure Pipelines" to use the artifact in future jobs.
+1. Add "Publish build artifacts" to publish the artifacts for use in other jobs or pipelines. Use the following inputs:
+    - Path to publish: The path to the folder that contains the files that are being published
+       - For example: $(Build.ArtifactStagingDirectory)
+    - Artifact name: The name given to the artifact
+    - Artifacts publish location: Choose "Azure Pipelines" to use the artifact in future jobs
 
 #### Stage: Download build artifacts and publish the extension
 
@@ -767,12 +727,13 @@ If you don't see the **Extensions** tab, then extensions aren't enabled for your
 To package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
 ## FAQs
+See the following frequently asked questions (FAQs) about adding custom build or release tasks in extensions for Azure DevOps
 
-### Q: How can I restrict Visual Studio Codespaces commands usage for task?
+### Q: How can I restrict GitHub Codespaces commands usage for task?
 
-You can restrict Visual Studio Codespaces commands usage and variables, which can be set by task.
+You can restrict GitHub Codespaces commands usage and variables, which can be set by task.
 This action could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. We recommend that you set it up for new tasks.
-To apply - you may need to add the following statement to your task.json file:
+To apply, you may need to add the following statement to your task.json file:
 
 ```json
   "restrictions": {
@@ -785,7 +746,7 @@ To apply - you may need to add the following statement to your task.json file:
 }
 ```
 
-If "restricted" value is specified for "mode" - you can only execute the following commands by the task:
+If `restricted` value is specified for `mode` - you can only execute the following commands by the task:
 
 - `logdetail`
 - `logissue`
@@ -798,23 +759,23 @@ If "restricted" value is specified for "mode" - you can only execute the followi
 - `prependpath`
 - `publish`
 
-"settableVariables" restrictions allow you to pass in an allowlist of variables, which can be set by `setvariable` or `prependpath` commands. It allows basic regular expressions as well. So for example, if your allowlist was: ['abc', 'test*'], setting abc, test, or test1 as variables with any value or prepending them to the path would succeed, but if you try to set a variable proxy it would warn. Empty list means that no variables can be changed by task.
+`settableVariables` restrictions allow you to pass in an allowlist of variables, which can be set by `setvariable` or `prependpath` commands. It also allows basic regular expressions. For example, if your allowlist was: `['abc', 'test*']`, setting `abc`, `test`, or `test1` as variables with any value or prepending them to the path would succeed, but if you try to set a variable proxy it would warn. Empty list means that no variables can be changed by task.
 
-"commands" and "settableVariables" are orthogonal - if either the settableVariables or commands key are omitted - relevant restriction isn't applied.
+If either the `settableVariables` or `commands` key is omitted, relevant restriction isn't applied.
 
-Restriction feature is available from [2.182.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.182.1) agent version.
+The restriction feature is available from [2.182.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.182.1) agent version.
 
-### Q: How is cancellation signal being handled by a task?
+### Q: How is the cancellation signal handled by a task?
 
-The pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There are no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
+The pipeline agent sends `SIGINT` and `SIGTERM` signals to the relevant child process. There are no explicit means in the [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process. For more information, see [Agent jobs cancellation](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
 
 ### Q: How can I remove the task from project collection?
 
-We don't support the automatic deletion of tasks. Automatic deletion isn't safe and breaks existing pipelines that already use such tasks. But, you can mark tasks as deprecated. To do so, bump the task version as described [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and follow steps described in [docs](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
+We don't support the automatic deletion of tasks. Automatic deletion isn't safe and breaks existing pipelines that already use such tasks. But, you can mark tasks as deprecated. To do so, [bump the task version](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and [mark the task as deprecated](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
 
-### Q: How can I migrate task to Node 10?
+### Q: How can I upgrade a task to the latest Node?
 
-You can find guidelines [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode10.md).
+We recommend upgrading to [the latest Node version](https://nodejs.org/en/download/). For example information, see [Upgrading tasks to Node 10](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode10.md).
 
 ## Related articles
 

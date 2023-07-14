@@ -1,15 +1,15 @@
 ---
 title: Wiki keyboard shortcuts 
 titleSuffix: Azure DevOps 
-description: Use keyboard shortcuts to manage, add, and edit pages in your built-in team project wiki in Azure DevOps
+description: Use keyboard shortcuts to manage, add, and edit pages in your built-in team project wiki in Azure DevOps.
+ms.custom: wiki, devdivchpfy22
 ms.subservice: azure-devops-wiki
-ms.custom: wiki 
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
-ms.date: 07/23/2020 
+ms.date: 11/02/2022 
 ---
 
 # Keyboard shortcuts for managing Wiki pages

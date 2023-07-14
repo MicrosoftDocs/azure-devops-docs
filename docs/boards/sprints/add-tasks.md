@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to add tasks to user stories assigned to a sprint. You can also add tasks to an iteration working with Scrum methods in Azure Boards.
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -54,7 +54,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -75,7 +75,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -143,7 +143,7 @@ From the **Backlog** view, choose the plus sign to open the work item form for a
 > [!div class="mx-imgBorder"]
 > ![Sprint backlog page, add task](media/add-tasks/add-task-from-backlog-agile.png)
 
-Fill out the form as described in the next section. 
+Complete the form as described in the next section. 
 
 Another option, is to open the **Taskboard**, and add tasks as cards. Select the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus icon, enter a title for the item, and then press Enter on your keyboard.   
 
@@ -165,7 +165,7 @@ From the **Backlog** view, choose the :::image type="icon" source="../../media/i
 > [!div class="mx-imgBorder"]
 > ![print backlog page, add task](media/add-tasks/sp-add-tasks.png)
 
-Fill out the form as described in the next section. 
+Complete the form as described in the next section. 
 
 Another option, is to open **Taskboard**, and add tasks as cards. Select the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus icon, enter a title for the item, and then press Enter on your keyboard.    
 
@@ -177,13 +177,13 @@ Another option, is to open **Taskboard**, and add tasks as cards. Select the :::
 
 ::: moniker-end
 
-To interactively filter sprint views, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::, and then specify a keyword or select a value for a field or tag. To learn more, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
+To interactively filter sprint views, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::, and then specify a keyword or select a value for a field or tag. For more information, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 
 
-## Fill out the task form 
+## Complete the task form 
 
-Name the task and enter an estimate for *Remaining Work*. Also, if you know who will do the work, go ahead and assign the task to that team member.  
+Name the task and enter an estimate for *Remaining Work*. Also, if you know who's doing the work, assign the task to that team member.  
 
 ::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
@@ -197,7 +197,7 @@ Name the task and enter an estimate for *Remaining Work*. Also, if you know who 
 ::: moniker-end
 
 
-At the planning stage, *Remaining Work* corresponds to an estimate of how long it will take to complete the task.  
+At the planning stage, *Remaining Work* corresponds to an estimate of how long it takes to complete the task.  
 
 A good rule of thumb is to size tasks to take no more than a day to complete. If a task is too large, the team should break it down. In some cases, you might not estimate some tasks effectively until other tasks have been completed. Create the task now, but estimate it when you have enough information.  
 

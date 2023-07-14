@@ -23,3 +23,8 @@ We have added the ability to copy the URL for a work item attachment so that it 
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo copy work item attachment URL.](../../media/211-boards-02.gif "gif to demo copy work item attachment URL")
+
+> [!NOTE]
+> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
+
+[Community suggestion](https://developercommunity.visualstudio.com/t/Link-to-attachments-in-Discussion/527072)

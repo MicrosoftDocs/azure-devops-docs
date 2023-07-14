@@ -4,11 +4,11 @@ titleSuffix: Azure DevOps
 description: Learn how to copy a project or team dashboard in Azure DevOps. 
 ms.custom: "dashboards, cross-project" 
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2022'
-ms.date: 07/26/2022
+ms.date: 10/18/2022
 ---
 
 # Copy a dashboard 
@@ -26,10 +26,10 @@ To create a dashboard for a team or project, see [Add, rename, and delete dashbo
 
 ## Prerequisites  
 
-- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/accounts/set-up-vs.md). 
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
-- Anyone with access to a project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards.
+- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/accounts/set-up-vs.md). If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- Anyone with access to a project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards. However, to view queries or work items displayed in a dashboard widget, you must have permissions to view the query and work items. To learn more, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md) and [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md).
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](../../organizations/settings/add-team-administrator.md), a project admin, or have [dashboard permissions](../dashboards/dashboard-permissions.md). In general, you need to be a team member for the currently selected team to edit dashboards.
+- When copying a dashboard as a team dashboard, you should be a member of the team. Otherwise, you may be able to copy it, but later won't be able to edit it. Also, when copying a dashboard, you should choose a Shared Queries folder to copy queries to that you have permissions to edit and contribute queries to. 
 
 
 ## Open the dashboard you want to copy
@@ -75,15 +75,19 @@ All dashboards are associated with either a team or a project. From the **Overvi
 	> [!div class="mx-imgBorder"]  
 	> ![New dashboard dialog, copy dashboard for a different team.](media/copy-dashboard/new-dashboard-dialog.png)  
 
-1. Select **Create**. 
+	Check the **Select folder to copy dashboard queries** checkbox to choose the folder into which dashboard queries will be copied. Make sure to select a folder where you have permissions to contribute queries. When copying dashboards to a different project, this checkbox is automatically selected and requires you to select a folder in the project. 
+  
+1. Select **Create**. Make sure you specify a unique name for the dashboard. 
 
 	The page updates to reflect the new dashboard. The widgets and layout appear the same as the dashboard selected for copy.  
 
-	In the background, a folder with the name of the new dashboard is created in Shared Queries. All the queries for the new dashboard are copied to that folder. Query names remain the same. Widgets with a team configuration are updated with the new team. Widgets with a team configuration that are copied from a team dashboard to a project dashboard retain the original configuration.
+	In the background, a folder with the name of the new dashboard is created in **Shared Queries**. All the queries for the new dashboard are copied to that folder. Query names remain the same. Widgets with a team configuration are updated with the new team. Widgets with a team configuration that are copied from a team dashboard to a project dashboard retain the original configuration.
 
 	:::image type="content" source="media/copy-dashboard/shared-query-folder-created.png" alt-text="Screenshot of Shared Queries folder created with copy dashboard experience.":::
 
-1. Open each widget as needed to verify or modify the configuration.  
+	Open each query that was copied to adjust it if needed. You can rename the queries and the dashboard widgets will automatically update to reflect the new name.
+
+1. Open each widget copied to the new dashboard as needed to verify or modify the configuration.  
  
 
 

@@ -9,9 +9,9 @@ metadata:
   description: Add, view, manage, and monitor status and trends with dashboards, widgets, Analytics & Power BI.
   ms.subservice: azure-devops-analytics
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
-  ms.date: 02/18/2022
+  author: chcomley 
+  ms.author: chcomley 
+  ms.date: 09/17/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -59,6 +59,52 @@ landingContent:
             url: ./dashboards/team-velocity.md
           - text: Work item query-based query charts
             url: ./dashboards/charts.md
+  - title: Pipeline reports 
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Review code coverage
+            url: ../pipelines/test/review-code-coverage-results.md?toc=/azure/devops/report/toc.json 
+          - text: Pipeline Analytics reports
+            url: ../pipelines/reports/pipelinereport.md?toc=/azure/devops/report/toc.json
+          - text: Historical graph for agent pools
+            url: ../pipelines/agents/pool-consumption-report.md?toc=/azure/devops/report/toc.json
+  - title: Explore Analytics OData model
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Construct OData queries
+            url: ./analytics/analytics-query-parts.md
+          - text: Define basic queries
+            url: ./extend-analytics/wit-analytics.md
+      - linkListType: overview
+        links:
+          - text: Best practices to use when querying Analytics
+            url: ./analytics/analytics-best-practices.md
+  - title: Analytics OData Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Calendar date, Project, and User metadata
+            url: ./analytics/entity-reference-general.md
+          - text: Azure Boards metadata
+            url: ./analytics/entity-reference-boards.md
+          - text: Azure Pipelines metadata
+            url: ./analytics/entity-reference-pipelines.md
+          - text: Azure Test Plans metadata
+            url: ./analytics/entity-reference-test-plans.md
+  - title: Test status and trends 
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Test result trends
+            url: ./dashboards/configure-test-results-trend.md
+          - text: Test status, progress, and result charts
+            url: ../test/track-test-status.md?toc=/azure/devops/report/toc.json
+          - text: Trace test requirements
+            url: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/report/toc.json
+          - text: Test Analytics and failure analysis
+            url: ../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json
   - title: Create Power BI reports
     linkLists:
       - linkListType: overview
@@ -95,19 +141,7 @@ landingContent:
             url: ./powerbi/add-last-refresh-time.md
           - text: Calculate time-in-state 
             url: ./powerbi/create-timeinstate-report.md
-  - title: Test status and trends 
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Test result trends
-            url: ./dashboards/configure-test-results-trend.md
-          - text: Test status, progress, and result charts
-            url: ../test/track-test-status.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-          - text: Trace test requirements
-            url: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-          - text: Test Analytics and failure analysis
-            url: ../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-  - title: Extend Analytics with OData (Preview)
+  - title: Extend Analytics with OData  
     linkLists:
       - linkListType: overview
         links:
@@ -141,19 +175,5 @@ landingContent:
             url: /previous-versions/azure/devops/report/sql-reports/create-a-detailed-report-using-report-designer
           - text: Add reports to a team project
             url: /previous-versions/azure/devops/report/admin/add-reports-to-a-team-project
-  - title: Develop widgets and dashboard extensions
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Develop a web extension
-            url: ../extend/get-started/node.md
-          - text: Add a dashboard widget
-            url: ../extend/develop/add-dashboard-widget.md
-          - text: Add a chart
-            url: ../extend/develop/add-chart.md
-
-
-
-
 
 

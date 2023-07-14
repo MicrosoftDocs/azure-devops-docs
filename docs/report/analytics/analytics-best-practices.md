@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn about the best practices to use when querying Analytics for Azure DevOps.
 ms.custom: analytics 
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
 ms.date: 08/12/2022
@@ -51,21 +51,21 @@ In addition, you can review select information from these resources:
 
 To query the minimum data set you need to create your report, follow these practices:   
 
-- [Choose the EntityType that supports the report your want to create](#entitytype)
+- [Choose the entity set that supports the report your want to create](#entityset)
 - [Specify query parts in the order they're executed](#order)
 - [Limit the columns you request in your query](#limit-columns)
 - [Create preview queries](#preview)
 - [Limit queries to projects you have access to](#limit-projects)
 
 
-<a id="entitytype" />
+<a id="entityset" />
 
 
-### Choose the EntityType  
+### Choose the entity set to support your report
 
-While there are several EntityTypes supported in the Analytics data model, only a few are used to generate reports. EntityTypes used to build reports fall into three categories: 
+While there are several `EntitySets` supported in the Analytics data model, only a few are used to generate reports.`EntitySets` used to build reports fall into three categories: 
 
-- **Current**: Contains information about the current configuration of an item. 
+- **Current**: Contains information about the current configuration of the `EntityTypes` contained within the `EntitySet`. 
 - **Snapshot**: Composite entities that combine historical and date-related data. Snapshot entities are intended to be used to support aggregation reports.  
 - **Revision**: Contains historical information. For example, `WorkItemRevision` maintains data about the history of work items. 
 
@@ -73,7 +73,7 @@ Here's a quick reference for the EntityTypes to specify to support reports. For 
 
 |Azure DevOps data | Current        | Snapshot                  | Revision       | 
 |------------------|----------------|---------------------------|----------------|   
-|Azure Boards | `WorkItems`  | `WorkItemSnapshot`<br/>`WorkItemBoardSnapshot` | `WorkItemRevision` | 
+|Azure Boards | `WorkItems`  | `WorkItemSnapshot`<br/>`WorkItemBoardSnapshot` | `WorkItemRevisions` | 
 |Azure Pipelines | `Pipelines`<br/>`PipelineTasks`  | `ParallelPipelineJobsSnapshot`<br/>`PipelineRuns`, `PipelineRunActivityResults` |  | 
 |Azure Pipelines and Tests | `TestResultsDaily` |  `TestRuns`        | 
 |Azure Test Plans | `Tests`<br/>`TestConfiguration`<br/>`TestPoints`<br/>`WorkItems` | `TestResultsDaily`<br/>`TestPointHistorySnapshot` |  | 
@@ -176,7 +176,7 @@ You can review usage for the service and for individuals by going to **Organizat
 ## Related articles
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
-- [Query the Analytics service in Azure DevOps](analytics-query-parts.md)
+- [Construct OData queries for Analytics](analytics-query-parts.md)
 - [Analytics OData metadata](../extend-analytics/analytics-metadata.md) 
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 

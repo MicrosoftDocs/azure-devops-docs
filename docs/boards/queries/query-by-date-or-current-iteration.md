@@ -5,8 +5,8 @@ description: Learn how to query for work items based on a date, a team's current
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 10/06/2022
@@ -120,7 +120,7 @@ You can use the `@CurrentIteration` macro in a query from the following clients:
 You can use the `@CurrentIteration +/- n` macro in a query against Azure Boards, Azure DevOps Server 2019, and later versions, and with a REST API that includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
   
 
-An error occurs if you open a query that contains the `@CurrentIteration` macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
+An error occurs if you open a query that contains the `@CurrentIteration` macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../organizations/notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
 
 
 ## Date-based queries  
@@ -274,7 +274,7 @@ If your team follows Scrum processes, you [schedule work to be completed in spri
 Any item assigned to a sprint that corresponds to the current iteration path for the team is found. For example, if a team is on Sprint 5, the query returns items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query returns items assigned to Sprint 6.  
 
 > [!NOTE]
-> For the **@CurrentIteration** macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For details, see [Define iteration paths (also referred to as sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
+> For the **@CurrentIteration** macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For more information, see [Define iteration paths (also referred to as sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
@@ -283,12 +283,12 @@ Any item assigned to a sprint that corresponds to the current iteration path for
 Azure Boards adds a team parameter when you select the **@CurrentIteration** or **@CurrentIteration +/- _n_** macros. The team parameter is derived from your current [team context](#team_view). 
 
 > [!div class="mx-imgBorder"]
-> ![Query filter using the @CurrentIteration macro with team parameter](media/query-date-iteration/at-current-with-team-parameter.png)  
+> ![Query filter using the CurrentIteration macro with team parameter](media/query-date-iteration/at-current-with-team-parameter.png)  
 
 > [!TIP]  
 > If the **@CurrentIteration** macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 
-To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the **@CurrentIteration** macro.  
+To change the team parameter the system automatically sets, you choose it by entering the name of the team into the parameter field added below the **@CurrentIteration** macro.  
 
 > [!div class="mx-imgBorder"]
 > ![Choose team parameter](media/query-date-iteration/choose-team-parameter.png)
@@ -300,7 +300,7 @@ To change the team parameter the system automatically sets, you choose it by typ
 Before creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
 
 > [!div class="mx-imgBorder"]
-> ![Query filter using the @CurrentIteration macro](media/query-date-iteration/at-current-no-team-specified.png)  
+> ![Query filter using the CurrentIteration macro](media/query-date-iteration/at-current-no-team-specified.png)  
 
 ::: moniker-end
 
@@ -378,7 +378,7 @@ ORDER BY [System.Id]
 The Query Editor view of the syntax appears as shown. 
 
 > [!NOTE]   
-> The Query Editor displays a :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: information icon next to the **Was Ever** operator, indicating an issue with the clause. However, the query will still run and you can create query charts. However, to modify the query, you need to use the [WIQL editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
+> The Query Editor displays a :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: information icon next to the **Was Ever** operator, indicating an issue with the clause. However, the query still runs and you can create query charts. However, to modify the query, you need to use the [WIQL editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
 
 :::image type="content" source="media/example-work-item-queries/query-work-items-moved-out-of-sprint.png" alt-text="Screenshot of Query Editor, Work Items moved out of a sprint.":::
 
@@ -478,7 +478,7 @@ You can use date fields to filter your queries. Some of these fields are populat
       Finish Date (Note 3)
     :::column-end:::
     :::column span="2":::
-      The date and time when the schedule indicates that the task will be completed.  
+      The date and time when the schedule indicates that the task is completed.  
       Reference name=Microsoft.VSTS.Scheduling.FinishDate, Data type=DateTime
    :::column-end:::
    :::column span="1":::
@@ -514,7 +514,7 @@ You can use date fields to filter your queries. Some of these fields are populat
       Start Date (Note 3)
     :::column-end:::
     :::column span="2":::
-      The date and time when the schedule indicates that the task will start.
+      The date and time when the schedule indicates that the task starts.
       ::: moniker range="azure-devops"
       > [!NOTE]   
       > [Delivery Plans](../plans/review-team-plans.md) uses the **Start Date** and **Target Date** to show the span of Features, Epics, and other portfolio backlog items. 

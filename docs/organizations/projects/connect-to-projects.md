@@ -6,9 +6,9 @@ ms.subservice: azure-devops-projects
 ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.author: sdanie
-author: steved0x
-ms.date: 11/15/2019 
+author: steved0x 
 monikerRange: '<= azure-devops'
+ms.date: 12/16/2022
 ---
 
 # Connect to a project in Azure DevOps
@@ -18,8 +18,7 @@ monikerRange: '<= azure-devops'
 Learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
   
 - [Web portal](#web-portal)  
-- [Visual Studio or Team Explorer](#visual-studio)  
-- [Eclipse/Team Explorer Everywhere](../../repos/git/share-your-code-in-git-eclipse.md)
+- [Visual Studio or Team Explorer](#visual-studio)   
 - [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)  
 - [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in) 
 - [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)
@@ -260,7 +259,7 @@ You can also provide access to Stakeholders in your organization who have limite
 
 <a name="proxy"></a>
 
-## Configure Visual Studio to connect to Azure DevOps Proxy Server
+## Configure Visual Studio to connect to Azure DevOps Proxy Server 
 
 If your remote team uses a [Azure DevOps Proxy Server](/azure/devops/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
 
@@ -277,16 +276,7 @@ If your remote team uses a [Azure DevOps Proxy Server](/azure/devops/server/inst
     Make sure you specify the port number that your administrator assigned to TFS Proxy.
 
 To associate a file type with a compare or merge tool, see [Associate a file type with a file-comparison tool](../../repos/tfvc/associate-file-type-file-comparison-tool.md) or [Associate a file type with a merge tool](../../repos/tfvc/associate-file-type-merge-tool.md).
-
-### What other clients support connection to Azure DevOps?
-
-Besides connecting through a web browser, Visual Studio, Eclipse, Excel, and Project you can connect to a project from these clients:
-
-- [Visual Studio Code](https://code.visualstudio.com/Docs)
-- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in) 
-- [Azure Test Plans](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage) (formerly Test Manager)
-- [Microsoft Feedback Client](../../project/feedback/give-feedback.md) 
+ 
 
 ### Requirements and client compatibility
 

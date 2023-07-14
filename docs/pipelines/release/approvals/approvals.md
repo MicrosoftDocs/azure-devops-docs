@@ -1,96 +1,70 @@
 ---
-title: Control deployments by using approvals
-ms.custom: seodec18
-description: Understand release approvals in Azure Pipelines and Team Foundation Server (TFS)
+title: Control deployments with release approvals
+ms.custom: seodec18, engagement-fy23
+description: Understand release approvals in Azure Pipelines
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage
-ms.date: 08/24/2018
+ms.date: 12/20/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Release deployment control using approvals
+# Deployment control using approvals
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
+With Azure release pipelines, You can enable manual deployment approvals for each stage in a release pipeline to control your deployment workflow. When using approvals in your pipeline, the deployment is paused at each point where approval is required until the specified approver grants approval, rejects the release, or reassigns the approval to another user.
 
-When a release is created from a release pipeline that defines
-approvals, the deployment stops at each point where approval is required
-until the specified approver grants approval or rejects the release (or
-reassigns the approval to another user).
-You can enable manual deployment approvals for each stage in a release pipeline.
+## Deployment approvals
 
-## Define a deployment approval
+You can set up approvals at the start of a stage (pre-deployment approvals), at the end of a stage (post-deployment approvals), or for both.
 
-You can define approvals at the start of a stage (pre-deployment approvers), 
-at the end of a stage (post-deployment approvers), or both. For details of 
-how to define and use approvals, see [Add approvals within a release pipeline](../define-multistage-release-process.md#add-approvals).
+### Pre-deployment approvals
 
-* For a **pre-deployment** approval, choose the icon at the entry point of the stage
-   and enable pre-deployment approvers.
-* For a **post-deployment** approval, choose the icon at the exit point of the stage
-   and enable post-deployment approvers.
+1. Select your classic release pipeline, and then select the **Pre-deployment conditions** icon and then click the toggle button to enable **Pre-deployment approvals**.
 
-You can add multiple approvers for both pre-deployment and post-deployment settings.
-These approvers can be individual users or groups of users. These users must have the
-[View releases](../../policies/permissions.md#set-release-permissions) permission.
+1. Add your **Approvers** and then choose the **Timeout** period. You can add multiple users or groups to the list of approvers. You can also select your **Approval policies** depending on your deployment workflow.
 
+    :::image type="content" source="media/pre-deployment-approvals.png" alt-text="A screenshot showing how to set up pre-deployment approvals.":::
 
-When a group is specified as an approver, only one of the users in that group needs to approve
-for the deployment to occur or the release to move forward.
+### Post-deployment approvals
 
-   * If you're using **Azure Pipelines**, you
-     can use local groups managed in Azure Pipelines or
-     Azure Active Directory (Azure AD) groups if they've been
-     added into Azure Pipelines.
-   * If you're using **Team Foundation Server** (TFS),
-     you can use local groups managed in TFS or Active
-     Directory (AD) groups if they've been added into TFS.
+1. Select your classic release pipeline, and then select the **Post-deployment conditions** icon and then click the toggle button to enable **Post-deployment approvals**.
 
-The creator of a deployment is considered to be a separate user
-role for deployments. For more information,
-see [Release permissions](../../policies/permissions.md#set-release-permissions).
-Either the release creator or the deployment creator can be restricted from approving deployments.
+1. Add your **Approvers** and then choose the **Timeout** period. You can add multiple users or groups to the list of approvers. You can also select your **Approval policies** depending on your deployment workflow.
 
-If no approval is granted within the **Timeout** specified for the approval, the deployment is rejected.
+    :::image type="content" source="media/post-deployment-approvals.png" alt-text="A screenshot showing how to set up post-deployment approvals.":::
 
-Use the **Approval policies** to:
+> [!NOTE]
+> Deployment approvers must have **View releases** [permissions](../../policies/permissions.md#set-release-permissions).
 
-   * Specify that the user who requested (initiated or created) the release can't approve it.
-     If you're experimenting with approvals, uncheck this option so that you can approve or reject your own deployments.
-     For information about the ID of the requester for CI/CD releases, see [How are the identity variables set?](../../build/variables.md#how-are-the-identity-variables-set)
-   * Force a revalidation of the user identity to take into account recently changed permissions.
-   * Reduce user workload by automatically approving subsequent prompts if the specified
-     user has already approved the deployment to a previous stage in the pipeline
-     (applies to pre-deployment approvals only). Take care when using this option; for example, you may
-     want to require a user to physically approve a deployment to production even though that user has
-     previously approved a deployment to a QA stage in the same release pipeline.  
+- **Approvers**:
+When a group is specified as approvers, only one user from that group is needed to approve, resume, or reject deployment.
 
-For information about approving or rejecting deployments, and viewing approval logs, see
-[Create a release](../define-multistage-release-process.md#create-release),
-[View the logs for approvals](../deploy-using-approvals.md#set-up-manual-validation), and
-[Monitor and track deployments](../define-multistage-release-process.md#monitor-track).
+- **Timeout**:
+If no approval is granted within the **Timeout** period, the deployment will be rejected.
 
-### Approval notifications
+- **Approval policies**:
 
-Notifications such as an email message can be sent to the approver(s) defined for
-each approval step. Configure recipients and settings in the **Notifications** section of the 
-[project settings page](../../../project/navigation/go-to-service-page.md#open-project-settings).
+   - For added security, you can add this approval policy to prevent the user who requested the release from approving it. If you're experimenting with approvals, uncheck this option so that you can approve or reject your own deployments. See [How are the identity variables set?](../../build/variables.md#how-are-the-identity-variables-set) to learn more about identity variables.
+   - This policy lets you enforce multi-factor authentication in the release approval flow. If this policy is checked it will prompt approvers to re-sign in before approving releases. This feature is only available in Azure DevOps Services for Azure Active Directory backed accounts only.
+   - Reduce user workload by automatically approving subsequent prompts if the specified user has already approved the deployment to a previous stage in the pipeline (applies to pre-deployment approvals only).
 
-![configuring notifications for manual approvals](media/notifications.png)
-  
-The link in the email message opens the **Summary** page for the release
-where the user can approve or reject the release.
+## Approval notifications
+
+You can enable notifications from your project settings to subscribe to release events. Emails are sent to approvers with links to the summary page where they can approve/reject the release. 
+
+1. From your project, select ![gear icon](../../../media/icons/gear-icon.png) **Project settings**.
+
+1. Select **Notifications** from the left navigation pane, and then select **New subscription** > **Release** to add a new event subscription.
+
+    :::image type="content" source="media/project-notifications.png" alt-text="A screenshot showing project notifications.":::
 
 ## Related articles
 
-* [Approvals and gates overview](index.md)
-* [Manual intervention](../deploy-using-approvals.md#set-up-manual-intervention)
-* [Stages](../../process/stages.md)
-* [Triggers](../triggers.md)
+- [Release gates and approvals](index.md)
+- [Use gates and approvals to control your deployment](../deploy-using-approvals.md)
+- [Add stages, dependencies, & conditions](../../process/stages.md)
+- [Release triggers](../triggers.md)
 
-[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

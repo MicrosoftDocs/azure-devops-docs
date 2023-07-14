@@ -3,6 +3,7 @@ title: Track stakeholder feedback
 description: Track stakeholder feedback in Azure DevOps using the Exploratory Testing browser extension when you want to test your applications.
 ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
@@ -15,7 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 All feedback is captured in a *Feedback Response* work item.
-You can track feedback, whether captured by the [Test & Feedback extension](provide-stakeholder-feedback.md) or the [Microsoft Feedback client](../project/feedback/give-feedback.md), through a work item query.
+You can track feedback, whether captured by the [Test & Feedback extension](provide-stakeholder-feedback.md) or the [Microsoft Feedback client](/previous-versions/azure/devops/project/feedback/give-feedback), through a work item query.
 
 [!INCLUDE [prerequisites-queries](../boards/includes/prerequisites-queries.md)]
 
@@ -80,6 +81,6 @@ To create a feedback query, follow these steps:
 
 - [What is Azure Test Plans?](overview.md)
 - [Request feedback using the Test & Feedback extension](request-stakeholder-feedback.md)
-- [Get feedback](../project/feedback/get-feedback.md)
+- [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback)
 - [Provide feedback using the Test & Feedback extension](provide-stakeholder-feedback.md#provide)
 - [Define a work item query](../boards/queries/using-queries.md)

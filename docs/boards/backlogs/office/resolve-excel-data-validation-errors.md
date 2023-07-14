@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to address rule errors that occur when publishing a list from Excel to Azure Boards. 
 ms.service: azure-devops-boards
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 10/08/2021
 ---
@@ -79,7 +79,7 @@ You can use the Office Excel tools to find and resolve an error in a work item l
     -   If a message appears that indicates error checking has completed, select **OK** to close both this message and the **Error Checking** dialog box.  
   
 ## Related articles
-
--  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
--  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
--  Connect Azure Boards to an Office client](track-work.md) 
+-  [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  
+-  [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
+-  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)      
+-  [Connect Azure Boards to an Office client](track-work.md) 

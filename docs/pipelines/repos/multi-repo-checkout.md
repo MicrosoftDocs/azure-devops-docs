@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 09/02/2022
+ms.date: 01/25/2023
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -24,7 +24,7 @@ The following repository types are supported.
         [Azure Repos Git](azure-repos-git.md) (`git`)
     :::column-end:::
     :::column span="2":::
-        * Azure DevOps Server 2020 (limited to repositories in the same organization)
+        * Azure DevOps Server (limited to repositories in the same organization)
         * Azure DevOps Services
     :::column-end:::
 :::row-end:::
@@ -57,7 +57,7 @@ The following repository types are supported.
 :::row-end:::
 
 > [!IMPORTANT]
-> Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server 2020.
+> Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server.
 
 > [!NOTE]
 > Azure Pipelines provides **Limit job scope** settings for Azure Repos Git repositories.
@@ -223,6 +223,21 @@ steps:
 - checkout: MyGitHubRepo
 ```
 
+The following example uses [tags](../../repos/git/git-tags.md) to check out the commit referenced by `MyTag`.
+
+```yaml
+resources:
+  repositories:
+  - repository: MyGitHubRepo
+    type: github
+    endpoint: MyGitHubServiceConnection
+    name: MyGitHubOrgOrUser/MyGitHubRepo
+    ref: refs/tags/MyTag
+
+steps:
+- checkout: MyGitHubRepo
+```
+
 :::moniker range=">azure-devops-2020"
 
 ## Triggers
@@ -240,32 +255,6 @@ You can trigger a pipeline when an update is pushed to the `self` repository or 
 If you do not specify a `trigger` section in a repository resource, then the pipeline won't be triggered by changes to that repository. If you specify a `trigger` section, then the behavior for triggering is similar to how CI triggers work for the self repository.
 
 If you specify a `trigger` section for multiple repository resources, then a change to any of them will start a new run.
-
-The trigger for `self` repository can be defined in a `trigger` section at the root of the YAML file, or in a repository resource for `self`. For example, the following two are equivalent.
-
-```yaml
-trigger:
-- main
-
-steps:
-...
-```
-
-```yaml
-resources:
-  repositories:
-  - repository: self
-    type: git
-    name: MyProject/MyGitRepo
-    trigger:
-    - main
-
-steps:
-...
-```
-
-> [!NOTE]
-> It is an error to define the trigger for `self` repository twice. Do not define it both at the root of the YAML file and in the `resources` section.
 
 When a pipeline is triggered, Azure Pipelines has to determine the version of the YAML file that should be used and a version for each repository that should be checked out. If a change to the `self` repository triggers a pipeline, then the commit that triggered the pipeline is used to determine the version of the YAML file. If a change to any other repository resource triggers the pipeline, then the latest version of YAML from the **default branch** of `self` repository is used.
 
@@ -305,9 +294,13 @@ resources:
     trigger:
     - main
     - release
+steps:
+- checkout: self
+- checkout: A
+- checkout: B
 ```
 
-The following table shows which versions are checked out for each repository by a pipeline using the above YAML file, unless you explicitly override the behavior during `checkout`.
+The following table shows which versions are checked out for each repository by a pipeline using the above YAML file.
 
 | Change made to | Pipeline triggered | Version of YAML | Version of `self` | Version of `A` | Version of `B` |
 |----------------|--------------------|-----------------|-------------------|----------------|----------------|
@@ -325,7 +318,7 @@ You can also trigger the pipeline when you create or update a pull request in an
 
 When you check out multiple repositories, some details about the `self` repository are available as [variables](../build/variables.md).
 When you use multi-repo triggers, some of those variables have information about the triggering repository instead.
-Details about all of the repositories consumed by the job are available as a [template context object](../process/templates.md#context) called `resources.repositories`.
+Details about all of the repositories consumed by the job are available as a [template context object](../process/template-expressions.md#context) called `resources.repositories`.
 
 For example, to get the ref of a non-`self` repository, you could write a pipeline like this:
 

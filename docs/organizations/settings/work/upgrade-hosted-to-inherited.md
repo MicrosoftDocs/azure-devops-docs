@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps Services
 description: Clone a Hosted XML process model to an inherited process in Azure DevOps Services
 ms.custom: inherited-process
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 05/30/2018

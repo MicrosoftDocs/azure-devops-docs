@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to add column fields to show and sort fields for a backlog or query in Azure Boards. 
 ms.service: azure-devops-boards
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -114,7 +114,7 @@ Specifically, you can do the following actions from the following list views:
 
 
 > [!TIP]    
-> Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose from the **Sorting** tab of the Column options dialog. While you may be able to add a field to sort on, not all fields are supported. For example, selection of the **Parent**, **History**, **Description**, or other rich-text field will result in the display of an error message as you can't sort on these fields. 
+> Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose from the **Sorting** tab of the Column options dialog. While you may be able to add a field to sort on, not all fields are supported. For example, selection of the **Parent**, **History**, **Description**, or other rich-text field results in the display of an error message as you can't sort on these fields. 
 
 
 ::: moniker range="azure-devops"
@@ -227,7 +227,7 @@ To change the fields use to sort the query results, choose the **Sorting** tab. 
 
 ## Add or remove rollup columns
 
-Rollup columns can display progress bars or the sum of numeric fields of child items. You can add them to any product or portfolio backlog. To learn more, see [Display rollup progress or totals](display-rollup.md). 
+Rollup columns can display progress bars or the sum of numeric fields of child items. You can add them to any product or portfolio backlog. For more information, see [Display rollup progress or totals](display-rollup.md). 
 
 ::: moniker-end
 
@@ -257,7 +257,7 @@ You can change the column order, column size, or sort options by using the follo
 - To change the column order, choose the field and drag it to a new location
 - To resize a column, choose the column divider to the right of the field and drag to a new location  
 - For query results:
-	- Add the field as a column in order to sort by that field 
+	- Add the field as a column to sort by that field 
 	- To sort by a column, hold down the SHIFT key and select on the field
 	- To reverse the sort order, SHIFT+click on the field 
 	- To sort by multiple columns, SHIFT+click on each column in the order you want to sort   
@@ -272,8 +272,7 @@ For other keyboard shortcuts, enter **?** to display available shortcuts based o
 
 - [Display rollup progress or totals](display-rollup.md)
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md) 
-- [Work item field index](../work-items/guidance/work-item-field.md) 
-- [Backlogs, boards, and plans](backlogs-boards-plans.md)   
+- [Work item field index](../work-items/guidance/work-item-field.md)  
 - [View, run, or email a work item query](../queries/view-run-query.md)
 - [Create managed queries](../queries/using-queries.md)
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
@@ -281,8 +280,7 @@ For other keyboard shortcuts, enter **?** to display available shortcuts based o
 
 ::: moniker range="< azure-devops-2020"
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md) 
-- [Work item field index](../work-items/guidance/work-item-field.md) 
-- [Backlogs, boards, and plans](backlogs-boards-plans.md)   
+- [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Create managed queries](../queries/using-queries.md)
 
 ::: moniker-end

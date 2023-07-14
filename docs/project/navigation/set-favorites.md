@@ -5,8 +5,8 @@ description: Quickly access views or artifacts by favoriting them in Azure DevOp
 ms.custom: "navigation, cross-project, cross-service"
 ms.subservice: azure-devops-projects
 ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 03/21/2019
@@ -323,7 +323,7 @@ Similarly, you can unfavorite an artifact from the same page where you favorited
 
 ## Related articles
 
-- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md) 
+- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md) 
 - [Set your preferences](../../organizations/settings/set-your-preferences.md) 
 
 

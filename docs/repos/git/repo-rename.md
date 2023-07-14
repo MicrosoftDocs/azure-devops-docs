@@ -14,11 +14,9 @@ ms.subservice: azure-devops-repos-git
 #  Rename a Git repository in your project
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team should take a few steps to re-enable their dev machines to connect to the repo on the server.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4sVSK]
 
 ## Prerequisites
 
@@ -119,7 +117,23 @@ Each member of your team must update their local Git repos to continue connectin
 ::: moniker-end
 
 
-### Update your remote in Visual Studio 
+### Update your remote in Visual Studio
+
+To update your remote:
+
+1. In the **Git** menu from the menu bar, select **Manage Remotes**.
+
+1. In the **Options** dialog, select the remote to edit, then select **Edit**.
+
+   :::image type="content" source="media/repo-rename/options-rename-remote.png" border="true" alt-text="Screenshot shows the Options dialog with the option to edit remotes." :::
+
+1. Replace the fetch and push remote references with the URL that you [copied from the remote repo](#copy_remote_repo_url).
+
+1. Select **Save** and then **OK** to close the **Options** dialog.
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
+
+To update your remote from Visual Studio Team Explorer:
 
 1. Connect to the repo.
 
@@ -137,26 +151,6 @@ Each member of your team must update their local Git repos to continue connectin
 
    ![Edit remote](media/repo-rename/EditRepoSettings.png)
 
-### Update your remote in older versions of Visual Studio from the command prompt
-
-If you use an older version of Visual Studio or work with Git from the command prompt:
-
-1. Open the Git command prompt.
-
-2. Go to the local repository and update the remote to the URL you [copied from the remote repo](#copy_remote_repo_url).
-
-    ```git remote set-url origin {URL_you_copied_from_the_remote_repo}```
-
-### Refresh Team Explorer
-
-1. Refresh Team Explorer.
-
-   ![Refresh Team Explorer](media/repo-rename/RefreshTeamExplorer.png)
-
-2. Team Explorer now shows the updated repo name. 
-
-   ![Team Explorer Updated](media/repo-rename/Result.png)
-
 ## Q&A
 
 <!-- BEGINSECTION class="m-qanda" -->
@@ -164,15 +158,6 @@ If you use an older version of Visual Studio or work with Git from the command p
 #### Q: Can I rename my repo again? Can I reuse an old repo name?
 
 A: Yes
-
-#### Q: What if I named my remote something other than the default origin?
-
-A: If you're using:
-
- * Visual Studio 2015, then edit the remote with the name you used. 
-
- * An older version of Visual Studio or the command prompt, then run this command: ```git remote set-url  {remote_name} {URL_you_copied_from_the_remote_repo}```
-
 
 <!-- ENDSECTION -->
 

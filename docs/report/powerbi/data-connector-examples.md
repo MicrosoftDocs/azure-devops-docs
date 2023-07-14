@@ -1,75 +1,65 @@
 ---
-title: Example reports for Power BI Data Connector
+title: Example reports based on Analytics views and Power BI data connector
 titleSuffix: Azure DevOps   
-description: Learn how to develop reports based on examples when using the Power BI Data Connector and Analytics for Azure DevOps.
+description: Learn how to develop reports based on Analytics views data when using the Power BI Data Connector.
 ms.assetid: 3356B3EF-E9AB-4B42-8738-E58AA34A4B4F
+ms.custom: analytics-views, engagement-fy23 
 ms.subservice: azure-devops-analytics
 ms.topic: sample
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms date: 10/04/2021
+ms date: 12/13/2022
 ---
 
-# Example reports for Power BI data connector
+# Example reports based on Analytics views
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Learn how to generate the following example reports in Power BI: 
+Learn how to generate the following example reports in Power BI based on an Analytics view.  
 
-- [Number of Work Items](#number-of-work-items)  
-- [Number of Bugs by Area Path and Priority](#number-of-bugs-by-area-path-and-priority)  
+- [Count of Work Items](#number-of-work-items)  
+- [Matrix report of work items by Area Path and State](#number-of-work-items-by-area-path-and-state)  
 
 Before generating these reports, you must first [connect to Analytics using the Power BI data connector](data-connector-connect.md). 
 
 > [!TIP]  
 > Use the search box if you are working with tables that contain many columns.
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 <a id="number-of-work-items" />
 
-## Number of work items
+## Show card with total count of work items
 
-1. Load `Work Items - Today` table with columns: `Work Item Count`.  
+1. Load the `Work Items - Today` Analytics view into Power BI.  
 
-2. Select *Card* visual.  
+2. From the **Visualizations** pane, choose **Card**, and drag the `Work Item ID` to **Fields**.    
 
-	![Power BI Visualizations, choose Card visual](./media/data-connector-recipes-count-1.png)  
+	:::image type="content" source="media/analytics-views/work-item-count-card.png" alt-text="Screenshot of Power BI Visualizations, choose Card and add Work Item ID to Fields. ":::
 
-3. Search for `Work Item Count` and drag it to the `Fields`.
+## Number of work items by area path and state
 
-	![Power BI, Filter for Work Item Count, add to fields](./media/data-connector-recipes-count-2.png)  
+1. Load `Work Items - Today` Analytics view into Power BI. The data table should include the following columns: `Area Path`, `Assigned To`, `Iteration Path`, `State`, `Title`, `Work Item ID`, and `Work Item Type`.  
 
-<a id="number-of-bugs-by-area-path-and-priority" />
+2. From the **Visualizations** pane, choose **Matrix**, and add `Area Path`, `State`, and `Work Item ID` to **Rows**, **Columns**, and **Values**, respectively. 
 
-## Number of bugs by area path and priority
+	:::image type="content" source="media/analytics-views/matrix-work-items-area-state.png" alt-text="Screenshot of Power BI Visualizations, choose Matrix and add Area Path, State, and Work Item ID fields to Rows, Columns, and Values. "::: 
 
-1. Load `Work Items - Today` table with columns: `Area Path`, `Priority`, `Work Item Count`, `Work Item Type`.  
+1. (Optional) Expand the **Filters** pane and choose one or more fields to filter the report. For example, the example report shown in the previous image only shows select `Area Paths`. 
 
-2. Select `Matrix` visual.  
+	:::image type="content" source="media/analytics-views/matrix-work-items-filters.png" alt-text="Screenshot of Power BI Filters, select Area Paths. "::: 
 
-	![Power BI Visualizations, choose Matrix visual](./media/data-connector-recipes-number-of-bugs-by-area-path-and-priority-1.png)
+	> [!NOTE]   
+	> To simplify the report, select `Area Paths` were renamed to shorten their labels. To learn how to replace values in a column, see [Transform Analytics data to generate Power BI reports, Replace values](transform-analytics-data-report-generation.md#replace-null-values). 
 
-3. Search for `Area Path` and drag it to `Rows`.
+1. To filter on other fields, such as `Iteration Path` or `Work Item Type`, drag the field to **Columns** in the **Visualizations** pane, and then filter the data from the **Filters** pane.
 
-	![Power BI, Add Area Path to Rows](./media/data-connector-recipes-number-of-bugs-by-area-path-and-priority-2.png)
-
-4. Search for `Priority` and drag it to `Columns`.
-
-	![Power BI, add Priority to Columns](./media/data-connector-recipes-number-of-bugs-by-area-path-and-priority-3.png)
-
-5. Search for `Work Item Count` and drag it to `Values`.
-
-	![Power BI, add Work Item Count to Values](./media/data-connector-recipes-number-of-bugs-by-area-path-and-priority-4.png)
-
-6. Search for `Work Item Type`, drag it to `Visual level filters` and select `Bugs`.
-
-	![Power BI, Add Work Item Type to Visual Level Filters, Filter on Bug](./media/data-connector-recipes-number-of-bugs-by-area-path-and-priority-5.png)
-
+ 
 ## Related articles 
 
 - [Power BI integration overview](overview.md) 
 - [Connect with Power BI Data Connector](./data-connector-connect.md)
+- [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md).   
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md) 
 - [Functions available in Power BI Data Connector](data-connector-functions.md) 

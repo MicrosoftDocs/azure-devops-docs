@@ -1,7 +1,7 @@
 ---
-title: Pipelines user permissions
+title: Add users to Azure Pipelines
 ms.custom: seodec18
-description: Add users to Azure Pipelines
+description: Add users to Azure Pipelines and set permissions.
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
 ms.topic: conceptual
 ms.date: 06/03/2021

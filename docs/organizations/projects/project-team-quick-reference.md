@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Find project and team tasks and related concepts 
 ms.subservice: azure-devops-projects
 ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
@@ -28,7 +28,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Access levels](../security/access-levels.md)  
 - [Area paths](../settings/about-areas-iterations.md)  
 - [Dashboards](../../report/dashboards/overview.md)  
-- [Events, notifications, subscriptions](../../notifications/concepts-events-and-notifications.md)  
+- [Notifications and subscriptions](../../organizations/notifications/about-notifications.md)  
 - [GitHub connections](../../boards/github/connect-to-github.md)  
 - [Iteration paths](../settings/about-areas-iterations.md)  
    :::column-end:::
@@ -43,7 +43,7 @@ Use this index to quickly access concepts and tasks related to managing projects
    :::column span="":::
 - [Project and process object limits](../settings/work/object-limits.md)  
 - [Projects page](../../project/navigation/work-across-projects.md)  
-- [Public vs private projects](../public/about-public-projects.md)  
+- [Public vs private projects](about-projects.md)  
 - [Security groups](../security/about-permissions.md)  
 - [Service hooks](../../service-hooks/overview.md)  
 - [Service visibility](../settings/set-services.md)  
@@ -63,7 +63,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Access levels](../security/access-levels.md)  
 - [Area paths](../settings/about-areas-iterations.md)  
 - [Dashboards](../../report/dashboards/overview.md)  
-- [Events, notifications, subscriptions](../../notifications/concepts-events-and-notifications.md)  
+- [Notifications and subscriptions](../../organizations/notifications/about-notifications.md)  
 - [GitHub connections](../../boards/github/connect-to-github.md)  
 - [Iteration paths](../settings/about-areas-iterations.md)  
    :::column-end:::
@@ -99,7 +99,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Access levels](../security/access-levels.md)  
 - [Area paths](../settings/about-areas-iterations.md)  
 - [Dashboards](../../report/dashboards/overview.md)  
-- [Events, notifications, subscriptions](../../notifications/concepts-events-and-notifications.md)  
+- [Notifications and subscriptions](../../organizations/notifications/about-notifications.md)  
 - [Iteration paths](../settings/about-areas-iterations.md)  
    :::column-end:::
    :::column span="":::
@@ -149,7 +149,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Enable/disable project services](../settings/set-services.md)  
 - [Export list of projects](create-project.md#list-and-connect-to-projects)  
 - [Export list of teams](../settings/add-teams.md#list-teams)  
-- [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
+- [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
@@ -164,7 +164,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
 - [Set project-level permissions](../security/change-project-level-permissions.md) 
-- [Set project visibility](../public/make-project-public.md)  
+- [Set project visibility](../projects/make-project-public.md)  
 - [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
    :::column-end:::
 :::row-end:::
@@ -193,7 +193,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Delete project](delete-project.md)  
 - [Edit project Summary](project-vision-status.md)
 - [Enable/disable project services](../settings/set-services.md)  
-- [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
+- [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
@@ -232,7 +232,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Create project](create-project.md)  
 - [Delete project](delete-project.md)  
 - [Edit project Summary](project-vision-status.md)
-- [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
+- [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  

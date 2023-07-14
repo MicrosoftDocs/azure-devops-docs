@@ -29,18 +29,18 @@ In the following example, we will be ignoring all files except the ones in the *
 ```
 
 > [!IMPORTANT]
-> The *.artifactignore* file must be in the directory provided to the `targetPath` argument in your [Publish Pipeline Artifacts](../../pipelines/tasks/utility/publish-pipeline-artifact.md) task.
+> The *.artifactignore* file must be in the directory provided to the `targetPath` argument in your [Publish Pipeline Artifacts](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
 
 ## Syntax
 
 The *.artifactignore* follows the same syntax as the [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths and some of the semantic versioning metadata for some package types like Maven.
 
 > [!Note]
-> *.git* file is ignored by default if you don't have an *.artifactignore* file. You can re-include it by creating an empty *.artifactignore* file.
+> The *.gitignore* file is ignored by default if you don't have an *.artifactignore* file. You can re-include it by creating an empty *.artifactignore* file.
 
 ## Related articles
 
-- [Package graphs](../concepts/package-graph.md)
-- [Package componentization](../collaborate-with-packages.md)
-- [Key concepts](../artifacts-key-concepts.md)
+- [Publish and download pipeline artifacts](../../pipelines/artifacts/pipeline-artifacts.md)
 - [Limits on package sizes and counts](limits.md)
+- [Package componentization](../collaborate-with-packages.md)
+

@@ -2,14 +2,14 @@
 title: Manage and organize your queries in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards  
 description: Learn how to manage your queries by using favorites and folders in Azure Boards and Azure DevOps.
-ms.custom: boards-queries 
+ms.custom: boards-queries, contperf-fy23 
 ms.service: azure-devops-boards
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/05/2022
+ms.date: 02/02/2023
 ---
 
 
@@ -18,7 +18,7 @@ ms.date: 10/05/2022
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
-Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
+Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer.
 
 > [!NOTE]  
 > To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. Also, you can perform bulk drag-and-drop of queries into query folders from Visual Studio but not from the web portal. 
@@ -65,7 +65,7 @@ The following example shows how to find all closed bugs by modifying the
    > [!div class="mx-imgBorder"]  
    > ![Save As query dialog, new experience](media/view-run-queries/save-as-new-exp.png)  
 
-   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
+   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. For more information, see [Set query permissions](set-query-permissions.md).  
 
 ::: moniker-end
 
@@ -87,7 +87,7 @@ The following example shows how to find all closed bugs by modifying the
 	
    ![Save Query As](media/6.png)  
 
-   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
+   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. For more information, see [Set query permissions](set-query-permissions.md).  
 
 ::: moniker-end  
 
@@ -128,8 +128,8 @@ From either the **Favorites** or **All** page, choose the  :::image type="icon" 
 
 For shared queries, you can also choose to do one of these tasks: 
 - **Add to team queries**: Select the team to add the query as a team favorite
-- **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).   
-- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
+- **Security...**: to set permissions for the query. For more information, see [Set query permissions](set-query-permissions.md).   
+- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. For more information, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
 ::: moniker-end
 
@@ -239,7 +239,7 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 
 1. To save a query as a team favorite, open :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More actions** or :::image type="icon" source="media/22.png" border="false"::: the context menu for the query from  the **Queries** page. 
 
-1. Choose **Add to team favorites**, and then select from the teams listed. Only teams for which you are a member are listed.
+1. Choose **Add to team favorites**, and then select from the teams listed. Only teams for which you're a member are listed.
 
 	:::image type="content" source="media/organize-queries/save-query-team-favorite.png" alt-text="Screenshot of Save query as a team favorite.":::
 

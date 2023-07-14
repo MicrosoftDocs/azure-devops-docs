@@ -3,6 +3,7 @@ title: Associate automated tests with test cases
 description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager and Azure DevOps with a build or release pipeline
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
@@ -20,7 +21,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
 * You created a manual test case that you later decide is a good test
   to automate, but you still want to be able to run that test as part of a test plan.
   Tests can be run in the CI/CD pipeline by choosing the test plan or test suite
-  in the settings of the [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
+  in the settings of the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task.
   Automated tests can also be run from the **Test Plans** web portal.
   If you are using XAML builds you can also
   [run these automated tests by using Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager).
@@ -48,7 +49,7 @@ The process to associate an automated test with a test case is:
 If you are using the build and release services in
 Azure DevOps (not a [XAML build](#xaml-build)), you can run associated tests in the 
 build and release pipelines by using the
-[Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
+[Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task.
 You _cannot_ run tests on-demand using Microsoft Test Manager unless you are using a XAML build. 
 
 The parameters in a test case are not used by any automated test that

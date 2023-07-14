@@ -5,8 +5,8 @@ description: Learn about Azure DevOps integration with GitHub.
 ms.subservice: azure-devops-cross-service
 ms.custom: cross-service
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 08/31/2021
 ---
@@ -232,8 +232,8 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
    :::column-end::: 
    :::column span="2":::
       Supported: 
-      - [Download GitHub Release task](../pipelines/tasks/utility/download-github-release.md) 
-      - [GitHub Release task](../pipelines/tasks/utility/github-release.md)
+      - [Download GitHub Release task](/azure/devops/pipelines/tasks/reference/download-github-release-v0) 
+      - [GitHub Release task](/azure/devops/pipelines/tasks/reference/github-release-v1)
       - [Open source Azure Pipeline tasks](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks) 
    :::column-end:::
 :::row-end:::
@@ -249,7 +249,7 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
       - Automate GitHub releases using the **GitHub Release** task.   
       For details, see:
       - [CI triggers](../pipelines/repos/github.md#ci-triggers)
-      - [Download GitHub Release task](../pipelines/tasks/utility/download-github-release.md) 
+      - [Download GitHub Release task](/azure/devops/pipelines/tasks/reference/download-github-release-v0) 
    :::column-end:::
 :::row-end:::
 ---
@@ -265,8 +265,8 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
       - Link your GitHub releases as an artifact source in release pipelines. This function lets you consume the GitHub release as part of your deployments.  
       For details, see:
       - [CI triggers](../pipelines/repos/github.md#ci-triggers)
-      - [Download GitHub Release task](../pipelines/tasks/utility/download-github-release.md) 
-      - [GitHub Release task](../pipelines/tasks/utility/github-release.md)
+      - [Download GitHub Release task](/azure/devops/pipelines/tasks/reference/download-github-release-v0) 
+      - [GitHub Release task](/azure/devops/pipelines/tasks/reference/github-release-v1)
    :::column-end:::
 :::row-end:::
 ---

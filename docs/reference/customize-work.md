@@ -5,8 +5,8 @@ description: Guide to configuring and customizing work tracking features in Azur
 ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
@@ -67,7 +67,7 @@ Each project provides a number of shared resources that support all teams added 
 The **Assigned To** and other Identity fields are supported by the people picker feature. For example, when you choose the **Assigned To** field from within a work item form, the people picker is activated. As shown in the following image, you simply start typing the name of the user you want to select, and search until you find a match. Users that you've previously selected appear in the list automatically. To select users that you haven't selected previously, simply enter their entire name or search against the full directory.  
  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker Assigned To field.](../notifications/media/at-mention/identity-selector.png)  
+> ![Screenshot of people picker Assigned To field.](../organizations/notifications/media/at-mention/identity-selector.png)  
 
 For organizations that manage their users and groups using Azure Active Directory (Azure AD) or Active Directory, people pickers provide support for searching all users and groups added to the AD, not just those added to the project. To learn more, see [Add AD/Azure AD users or groups to a built-in security group](../organizations/security/add-ad-aad-built-in-security-groups.md). 
 
@@ -493,7 +493,7 @@ Otherwise, to grant or restrict access to select features, review one of these t
    :::column-end:::
    :::column span="1":::
       **Shared resources** 
-      - [Alerts](../notifications/manage-your-personal-notifications.md) 
+      - [Alerts](../organizations/notifications/manage-your-personal-notifications.md) 
       - [Area paths](../organizations/settings/set-area-paths.md)  
       - [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
       - [Queries](../boards/queries/using-queries.md)  

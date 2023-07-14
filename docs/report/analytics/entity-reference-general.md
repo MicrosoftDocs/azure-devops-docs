@@ -3,11 +3,11 @@ title: Calendar date, Project, and User metadata reference for Analytics
 titleSuffix: Azure DevOps
 description: CalendarDate, Project, and User properties and enumerated members metadata for the Analytics service  
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2022
+ms.date: 11/07/2022
 ---
 
 
@@ -17,18 +17,18 @@ ms.date: 09/30/2022
 
 The entity types and entity sets listed in the following table can be used to filter and build reports based on Analytics data. 
 
-> [!div class="mx-tdCol2BreakAll"]  
-> |EntityType|  EntitySet | Description |  
-> |----------------------|-------------|-------------|  
-> |[**CalendarDate**](#calendar-date-properties)|  **Dates** | The dates used to filter and group other entities using relationships.  |  
-> |[**Project**](#project-properties)|  **Projects** |Projects defined for an organization (cloud) or project collection (on-premises). |  
-> |[**User**](#user-properties)|  **Users** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. |  
+
+|EntitySet|  EntityType | Description |  
+|----------------------|-------------|-------------|  
+| [**Dates**](#dates) |**CalendarDate** | The dates used to filter and group other entities using relationships.  |  
+|[**Projects**](#projects)|  **Project** |Projects defined for an organization (cloud) or project collection (on-premises). |  
+|[**Users**](#users)|  **User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. |  
 
 
 [!INCLUDE [note-analytics-early-draft](../includes/note-analytics-data-model.md)]
 
 
-## Calendar date properties 
+## Dates 
 
 The following properties are valid for the **CalendarDate** entity type. The surrogate key associated with **CalendarDate** is `DateSK`. You can specify calendar date properties to filter and structure reports.  
 
@@ -56,7 +56,7 @@ By default, all the snapshot tables are modeled as *daily snapshot fact* tables.
 When you aggregate data for a snapshot entity, you should include the `DateSK` or a `DateValue` column in a `groupby` clause as described in the [OData query guidelines](../extend-analytics/odata-query-guidelines.md#restrict-aggregate-snapshot). For example reports that specify a date filter, see the following articles: 
  
 - [Query trend data](../extend-analytics/querying-for-trend-data.md)
-- [Query your work tracking data using OData Analytics](../extend-analytics/wit-analytics.md)
+- [Define basic queries using OData Analytics](../extend-analytics/wit-analytics.md)
 - [Calculate time-in-state for an existing Analytics view](../powerbi/create-timeinstate-report.md) 
 - [Bug trends sample report](../powerbi/sample-boards-bugtrend.md)
 - [Lead time and Cycle time sample report](../powerbi/sample-boards-leadcycletime.md)
@@ -85,25 +85,24 @@ The following members are defined for the `Period` enumerated type that you can 
 |`All`                   | 2047         | All                     |      
 
 
-## Project properties
+## Projects
 
-The following properties are valid for the **Project** entity type and its surrogate key `ProjectSK`. When generating an organization scoped query, you can focus on one or more projects by specifying  one or more **Project Names**. To learn more, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md). 
+The following properties are valid for the **Projects** entity set and its surrogate key `ProjectSK`. When generating an organization scoped query, you can focus on one or more projects by specifying  one or more **Project Names**. To learn more, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md). 
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|
 |    | `AnalyticsUpdatedDate` | DateTime | Watermark that indicates the last time the Analytics data was updated.  | 
 |**Project Id** | `ProjectId` | GUID | Unique identifier assigned to a project when it's created.  | 
 |**Project Name** | `ProjectName` | String | Name assigned to a project when it's created.  | 
-|**Project Visibility** | `ProjectVisibility` | Enumerated | Indicates if the project is public or private. Valid values are listed below for [ProjectVisibility](#projectvisibility-enumerated-type-members).   | 
-|**Project Id** | `ProjectId` | GUID | Unique identifier assigned to a project when it's created.  | 
+|**Project Visibility** | `ProjectVisibility` | Enumerated | Indicates if the project is public or private. Valid values are listed below for [ProjectVisibility](#projectvisibility-enumerated-type-members).   |  
 
 ### Navigation properties 
 
 The following navigation properties are valid for the **Project** entity type.
 
-- [Areas](entity-reference-boards.md#area-path-properties)
-- [Iterations](entity-reference-boards.md#iteration-path-properties)
-- [Teams](entity-reference-boards.md#team-properties)
+- [Areas](entity-reference-boards.md#areas)
+- [Iterations](entity-reference-boards.md#iterations)
+- [Teams](entity-reference-boards.md#teams)
 
 ### ProjectVisibility enumerated type members 
 
@@ -116,14 +115,14 @@ The following members are defined for the `ProjectVisibility` enumerated type.  
 |`Public`              | 2            | Public                 |     
 
 
+## Users
 
-## User properties
-
-The following properties are valid for the **User** entity type and **Users** entity set with surrogate key `UserSK`.
+The following properties are valid for the **Users** entity set and **User** entity type with surrogate key `UserSK`.
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|
 |    | `AnalyticsUpdatedDate` | DateTime | Watermark that indicates the last time the Analytics data was updated.  | 
+|**User Email** | `UserEmail` | String | Email associated with a user account identity.  | 
 |**User Id** | `UserId` | GUID | Unique identifier assigned to a user account identity.  | 
 |**User Name** | `UserName` | String | Name assigned to a user when the user account identity is created.  |  
 |**GitHub User Id** | `GitHubUserId` | String | GitHub user ID associated with the user account.    | 

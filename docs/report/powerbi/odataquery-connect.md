@@ -3,11 +3,11 @@ title: Connect with data by using OData queries
 titleSuffix: Azure DevOps
 description: Learn how to write and test OData queries for use in Power BI integration.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 12/09/2022
 ---
 
 # Connect with data by using Power BI and OData queries
@@ -28,7 +28,7 @@ In this article, you learn how to:
 > * Write and test OData queries.
 > * Run an OData query from Power BI.
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Use Visual Studio Code to write and test OData queries
 
@@ -42,9 +42,9 @@ To download and install Visual Studio Code, go to the [Visual Studio Code downlo
 
 Open Visual Studio Code, select **Extensions**, and then search for *odata*. In the results list, select **vscode-odata**, and then install it.
 
-### Create an .odata file
+### Create an OData file
 
-In Visual Studio Code, create and save a file called *filename.odata*. You may name it whatever you want, but it must have an *.odata* extension to enable the OData extension functionality.
+In Visual Studio Code, create and save a file called `filename.odata`. You may name it whatever you want, but it must have a `.odata` extension to enable the OData extension functionality.
 
 ### Write the OData query
 
@@ -160,7 +160,7 @@ Replace `[Implementation="2.0"]` with the following string:
 
 Select **Close & Apply** to save your settings and pull the data into Power BI. After the data is refreshed, you can create a report as you would normally in Power BI.
 
-![Power BI "Close & Apply" button](media/powerbi-close-apply.png)
+![Power BI "Close & Apply" button](media/transform-data/powerbi-close-apply.png)
 
 ## Related articles
 

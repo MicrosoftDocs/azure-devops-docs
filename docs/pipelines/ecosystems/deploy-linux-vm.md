@@ -4,9 +4,7 @@ description: Deploy a web application to a web server on a Linux VM with an envi
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
 ms.custom: seodec18, freshness-fy22q2
-ms.author: ushan
-author: N-usha
-ms.date: 09/29/2022
+ms.date: 01/24/2023
 monikerRange: 'azure-devops' 
 ---
 
@@ -49,6 +47,7 @@ https://github.com/spring-projects/spring-petclinic
 ```
 > [!NOTE]
 > Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/).
+
 
 * * * 
 
@@ -118,7 +117,7 @@ You need a CI build pipeline that publishes your web app. You also need a deploy
       - job: Build
         displayName: Build Maven Project
         steps:
-        - task: Maven@3
+        - task: Maven@4
           displayName: 'Maven Package'
           inputs:
             mavenPomFile: 'pom.xml'

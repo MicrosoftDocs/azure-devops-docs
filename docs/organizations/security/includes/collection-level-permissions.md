@@ -1,7 +1,7 @@
 ---
 ms.subservice: azure-devops-security
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 02/28/2022
 ---
@@ -32,16 +32,16 @@ The following table lists the permissions assigned at the organization or collec
       - Delete process
       - Edit process
       ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
+      ::: moniker range="tfs-2018"
       - Delete field from organization or account  
       ::: moniker-end
-   :::column-end:::
-   :::column span="":::
+      
       **Repos** (TFVC)  
       - Administer shelved changes  
       - Administer workspaces  
       - Create a workspace  
-      
+   :::column-end:::
+   :::column span="":::
       **Pipelines**  
       ::: moniker range=">= azure-devops-2019"
       - Administer build resource permissions  
@@ -64,7 +64,7 @@ The following table lists the permissions assigned at the organization or collec
       - Manage audit streams
       - View audit log
       ::: moniker-end
-      ::: moniker range="azure-devops-2019"
+      ::: moniker range=">= azure-devops-2019"
       **Policies**  
       - Manage enterprise policies
       ::: moniker-end

@@ -5,8 +5,8 @@ description: Learn how to create a branch, commit, or a pull request in Azure Bo
 ms.custom: "boards-backlogs, seodec18"
 ms.service: azure-devops-boards
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 07/26/2022
@@ -34,8 +34,8 @@ This article addresses creating new branches, adding links to commits, and addin
 
 > [!TIP]
 > You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. To learn how, see the following resources:   
-> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
-> - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
+> - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 > - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md).
 
 ## Development control
@@ -66,7 +66,7 @@ Keep in mind that the **Development** control only appears within the web portal
 
 * Connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ Keep in mind that the **Development** control only appears within the web portal
 
 * Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
 ::: moniker-end
 
@@ -107,11 +107,11 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 	> [!NOTE]  
 	> You can only create a branch once you've added files to the main branch, which we recommend you label ```main``` or other distinctive label. The system automatically adds a README file to the initial repo created with each new project.   
 
-2. The system will open to the repository and branch that you created. 
+2. The system opens to the repository and branch that you created. 
 
 	You can edit a file within the web portal. 
 
-	Or, if you have extensive file edits or need to add files, then you'll need to work from Visual Studio or other supported IDE. You'll want to add a new local branch from the branch you created. For details, see [Update code with fetch and pull, Download changes with fetch](../../repos/git/pulling.md#download-changes-with-fetch). (While any code editing and committing process will work, we work best with an edition of Visual Studio.)  
+	Or, if you have extensive file edits or need to add files, then you'll need to work from Visual Studio or other supported IDE. You'll want to add a new local branch from the branch you created. For more information, see [Update code with fetch and pull, Download changes with fetch](../../repos/git/pulling.md#download-changes-with-fetch). (While any code editing and committing process works, we work best with an edition of Visual Studio.)  
 
 3. Add or modify files in the branch that you created.   
 
@@ -127,7 +127,7 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 
 	:::image type="content" source="media/git/create-pull-request.png" alt-text="Screenshot of Development control, Create pull request link.":::  
 
-5.	Your view will switch to **Code**, Pull Requests page. Complete creating the pull request as shown. 
+5.	Your view switches to **Code**, Pull Requests page. Complete creating the pull request as shown. 
   
  	![Code view, Pull Request page.](media/git/git-dev-create-pull-request.png)   
 
@@ -195,7 +195,7 @@ Or, you can select it from the **Links** :::image type="icon" source="media/icon
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/index.yml) 
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)  
-- [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
+- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 
 ### Associated work items in build 
 
@@ -229,7 +229,7 @@ The link types you can add within the development section are Branch, Build, Cha
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
-To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
+To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements#development-links-control). 
  
 ::: moniker-end
 

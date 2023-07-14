@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn about the tools you can use to query the Analytics service.
 ms.custom: "analytics" 
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 08/12/2022
@@ -31,7 +31,7 @@ To help you get started, use the guidance provided in the following table to det
 
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
-- [Query the Analytics service in Azure DevOps](analytics-query-parts.md)
+- [Construct OData queries for Analytics](analytics-query-parts.md)
 - [Analytics OData metadata](../extend-analytics/analytics-metadata.md) 
 
 

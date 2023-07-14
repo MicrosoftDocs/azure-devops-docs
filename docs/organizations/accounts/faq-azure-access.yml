@@ -8,7 +8,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 10/05/2022
+  ms.date: 03/02/2023
   monikerRange: 'azure-devops'
 title: Access via Azure AD FAQs
 summary: |
@@ -16,7 +16,7 @@ summary: |
   
   [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
   
-  Learn the answers to the following frequently asked questions (FAQs) about access to your Azure DevOps organization via Azure Active Directory (AD). FAQs are grouped by the following subjects:
+  Learn the answers to the following frequently asked questions (FAQs) about access to your Azure DevOps organization via Azure Active Directory (AD). We grouped the FAQs by the following subjects:
   - [General](#general)
   - [Azure AD users and permissions](#azure-ad-users-and-permissions)
   - [Azure AD groups](#azure-ad-groups)
@@ -108,25 +108,12 @@ sections:
       - question: |
           What happens to current users?
         answer: |
-          Your work in Azure DevOps Services is associated with your credentials for Azure AD. After your organization is connected to your directory, users continue working seamlessly if their credential addresses appear in the connected directory. If users' addresses don't appear, you must [add those users to your directory](/active-directory/fundamentals/add-users-azure-active-directory). Your organization might have policies about adding users to the directory, so find out more first.
+          Your work in Azure DevOps Services is associated with your credentials for Azure AD. After your organization is connected to your directory, users continue working seamlessly if their credential addresses appear in the connected directory. If users' addresses don't appear, you must [add those users to your directory](/azure/active-directory/fundamentals/add-users-azure-active-directory). Your organization might have policies about adding users to the directory, so find out more first.
       
       - question: |
           How do I find out whether my organization uses Azure AD to control access?
         answer: |
-          If you have at least Basic access, here's how to find out:
-          
-          Go to your **Organization settings**, and then select the **Azure Active Directory** tab.
-          See the following examples of an organization that's not connected, and then an organization that is connected to Azure AD.
-          
-          **Not connected**
-          
-          ![Check for a connected directory in Organization settings = Not connected](../../media/connect-your-organization-to-azure-ad.png)
-          
-          **Connected**
-          
-          ![Check for a connected directory in Organization settings = Connected](../../media/organization-connected-azure-ad.png)
-          
-          If your organization is connected to your organization's directory, only users from your organization's directory can join your organization. For more information, see [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
+          If you have at least Basic access, go to your **Organization settings**, and then select the **Azure Active Directory** tab. You either have an option to **Connect directory**, or **Disconnect directory**.
           
           <a name="DeleteFromDirectory"></a>
           
@@ -141,21 +128,22 @@ sections:
           Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
         answer: |
           You're probably a *guest* in the Azure AD that backs your Azure DevOps organization, rather than a *member*. Azure AD guests can't search the Azure AD in the manner required by Azure DevOps. For example, Azure AD guests can't use the Azure DevOps web portal to search for or select users who haven't already been added to the Azure DevOps organization. Learn how to [convert an Azure AD guest into a member](#how-can-i-convert-an-azure-ad-guest-into-a-member).
-          
-          <a name="how-can-i-convert-an-azure-ad-guest-into-a-member"></a>
       
       - question: |
           What if we can't use the same sign-in addresses?
         answer: |
-          Add these users to the directory with new work or school accounts, and reassign access levels and readd them to any projects. If they have existing work or school accounts, those accounts can be used instead. Work won't be lost and stays with their current sign-in addresses. Users can migrate work that they want to keep, except for their work history. For more information, see [how to add organization users](add-organization-users.md).
+          Add these users to the directory with new work or school accounts, and reassign access levels and readd them to any projects. If they have existing work or school accounts, those accounts can be used instead. Work isn't lost and stays with their current sign-in addresses. Users can migrate work that they want to keep, except for their work history. For more information, see [how to add organization users](add-organization-users.md).
       
       - question: |
           What if I accidentally delete a user in Azure AD?
         answer: |
-          [Restore the user](/active-directory/fundamentals/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user isn't associated with the previous identity.
+          [Restore the user](/azure/active-directory/fundamentals/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user isn't associated with the previous identity.
       
+          <a name="how-can-i-convert-an-azure-ad-guest-into-a-member"></a>
+
       - question: |
           How can I convert an Azure AD guest into a member?
+          
         answer: |
           Select from the following two options:
           
@@ -181,10 +169,7 @@ sections:
 
           1. Sign in to the [Azure portal](https://portal.azure.com) as global administrator for your organization's directory.
           2. Go to the tenant that backs your Azure DevOps organization.
-          3. Check the UserType. Confirm that the user is a guest.
-
-             ![Check UserType in Azure portal](media/faq/check-user-type-in-azure-portal.png)
-
+          3. Check the UserType. Confirm that the user is a *Guest*.
           4. Open an Administrative Windows PowerShell prompt.
           5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?&preserve-view=true&view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, pictured as follows. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true) page.
 
@@ -203,7 +188,7 @@ sections:
       - question: |
           Why can't I assign Azure DevOps permissions directly to an Azure AD group?
         answer: |
-          Because these groups are created and managed in Azure, you can't assign Azure DevOps permissions directly or secure version control paths to these groups. You'll get an error if you try to assign permissions directly.
+          Because these groups are created and managed in Azure, you can't assign Azure DevOps permissions directly or secure version control paths to these groups. You get an error if you try to assign permissions directly.
           
           You can add an Azure AD group to the Azure DevOps group that has the permissions you want. Or,
           you can assign these permissions to the group instead. Azure AD group members inherit permissions from the group where you add them.
@@ -317,7 +302,7 @@ sections:
       - question: |
           How do I use my work or school account with my Visual Studio with MSDN subscription?
         answer: |
-          If you used a Microsoft account to activate a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/) containing Azure DevOps as a benefit, you can add a work or school account. The account must be managed by Azure AD. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](/visualstudio/subscriptions/vs-alternate-identity).
+          If you used a Microsoft account to activate a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/) containing Azure DevOps as a benefit, you can add a work or school account. Azure AD must manage the account. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](/visualstudio/subscriptions/vs-alternate-identity).
           
           <a name="guest-access"></a>
           
@@ -367,7 +352,7 @@ sections:
           - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
       - question: |
-          How can I manage multiple organizations that are backed by Azure AD?
+          How can I manage multiple organizations that are connected to Azure AD?
         answer: |
           You can download a complete list of organizations backed by an Azure Active Directory tenant. For more information, see [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md).
           
@@ -409,6 +394,11 @@ sections:
           <a name="AlternateCredentials"></a>
           
       - question: |
+          Why and when should I request Support to manually clear my SSH keys?
+        answer: |
+          When you switch from one Azure AD tenant to another, the underlying identity also changes and any PAT tokens or SSH keys that the user had with their old identity stop working. Any active SSH keys uploaded to the organization aren't deleted as part of the tenant switch process, which may block the user from uploading new keys after the switch. We recommend that users delete all their SSH keys **before** they switch their active directory tenant. We have work in our backlog for automatic deletion of the SSH keys as part of the tenant switch process and in the interim if you're blocked from uploading new keys after tenant switch, we recommend you to contact Support to delete those old SSH keys.
+      
+      - question: |
           My alternate credentials don't work anymore. What do I do?
         answer: |
           Azure DevOps no longer supports Alternate Credentials authentication since the beginning of March 2, 2020. If you're still using Alternate Credentials, we strongly encourage you to switch to a more secure authentication method (for example, personal access tokens or SSH). [Learn more](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
@@ -428,7 +418,7 @@ sections:
           I got an error message when I was resolving disconnections. What should I do?
         answer: |
           * Try again.
-          * You might be a guest in Azure AD. Request that an organization administrator, who is a member of Azure AD,  do the mapping. Or, request that an admin of the Azure AD convert you to a member.
+          * You might be a guest in Azure AD. Request that an organization administrator, who is a member of Azure AD,  do the mapping. Or, request that an admin of the Azure AD converts you to a member.
           
             ![Screenshot showing an error when resolving disconnected users.](media/shared/guest-azure-ad-cannot-invite.png)
           
@@ -448,17 +438,6 @@ sections:
           What if I'm required to sign in when I use the people picker?
         answer: |
           Clear your browser cache and delete any cookies for the session. Close your browser, and then reopen.
-          
-      - question: |
-          What if my email account isn't found in Azure AD?
-        answer: |
-          * In your Azure DevOps **Organization settings**, select **Azure Active Directory**, and then select **Resolve**. 
-          
-             ![Select Azure AD and then Resolve](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
-          
-          * Match the identities. Select **Next** when you're done.
-          
-             ![Resolve disconnected users](media/shared/resolve-disconnected-users.png)
           
       - question: |
           What if my work items are indicating that the users aren't valid?
@@ -482,14 +461,9 @@ sections:
           ![Show disconnected users](media/shared/show-disconnected-users.png)
           
       - question: |
-          What if I have over 100 users and want to connect to Azure AD?
-        answer: |
-          With more than 100 users, you can still connect, however you may need to [contact Support](https://azure.microsoft.com/support/devops/) for help with disconnected users.
-          
-      - question: |
           With more than 100 members in my Azure DevOps organization, how can I connect to an Azure AD?
         answer: |
-          Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won't work beyond 100. [Contact Support](https://azure.microsoft.com/support/devops/).
+          Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection doesn't work beyond 100. [Contact Support](https://azure.microsoft.com/support/devops/).
           
       - question: |
           Why is git.exe/Visual Studio failing to authenticate after linking/unlinking from Azure Active Directory?

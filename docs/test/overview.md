@@ -3,9 +3,10 @@ title: What is Azure Test Plans? Manual, exploratory, and automated test tools.
 description: Learn about the test tools and capabilities that Azure Test Plans provides to drive quality and collaboration throughout the development process. 
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 12/13/2021
 ---
@@ -47,7 +48,7 @@ Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans)
 
 
 > [!NOTE]   
-> **Load and performance testing**: While Azure DevOps cloud-based load testing service is deprecated, Azure Load Testing Preview is available. Azure Load Testing Preview is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing). For more information about the deprecation of Azure DevOps load testing, see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/azure/load-testing/overview-what-is-azure-load-testing).
+> **Load and performance testing**: While Azure DevOps cloud-based load testing service is deprecated, Azure Load Testing is available. Azure Load Testing is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing?](/azure/load-testing/overview-what-is-azure-load-testing). For more information about the deprecation of Azure DevOps load testing, see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/all/load-test/overview).
 
 
 ### Key benefits 
@@ -298,11 +299,11 @@ Azure Test Plans supports automated testing in the following ways:
 
 - Associate test plans or test cases with build or release pipelines 
 - Specify test-enable tasks within a pipeline definition. Azure Pipelines provides several tasks, including those listed below, that support a comprehensive test reporting and analytics experience. 
-	- [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md): Use to publish test results to Azure Pipelines.
-	- [Visual Studio Test task](../pipelines/tasks/test/vstest.md): Use to run unit and functional tests (Selenium, Appium, Coded UI test, and more) using the Visual Studio Test Runner. 
-	- [.NET Core CLI task](../pipelines/tasks/build/dotnet-core-cli.md): Use to build, test, package, or publish a dotnet application.  
+	- [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2): Use to publish test results to Azure Pipelines.
+	- [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2): Use to run unit and functional tests (Selenium, Appium, Coded UI test, and more) using the Visual Studio Test Runner. 
+	- [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2): Use to build, test, package, or publish a dotnet application.  
 
-	For additional tasks, see [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md)
+	For additional tasks, see [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2)
 - Provide built-in reports and configurable dashboard widgets to display results of pipeline testing. 
 - Collect test results and associated test data into the Analytics service. 
 
@@ -599,7 +600,7 @@ tcm run /execute
 - [Unit testing](/visualstudio/test/developer-testing-scenarios) 
 - [Unit test basics](/visualstudio/test/unit-test-basics)
 - [Durable Functions unit testing](/azure/azure-functions/durable/durable-functions-unit-testing)
-- [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing)
+- [What is Azure Load Testing?](/azure/load-testing/overview-what-is-azure-load-testing)
  
 <!--- Removed content
 

@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: How to implement the Scaled Agile Framework® to support epics, release trains, and multiple backlogs in Azure Boards. 
 ms.service: azure-devops-boards
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021
@@ -222,7 +222,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Portfolio Vision 
    :::column-end:::
    :::column span="3":::
-      [**Wiki**](safe-concepts.md#wiki). Use the project wiki to share broadly within the organization information related to strategy, solutions, and how teams will collaborate to produce portfolio and program deliverables.    
+      [**Wiki**](safe-concepts.md#wiki). Use the project wiki to share broadly within the organization information related to strategy, solutions, and how teams collaborate to produce portfolio and program deliverables.    
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -344,7 +344,7 @@ Each of the following articles within this suite of tutorials provide details on
 > * [View SAFe® progress, roadmaps, and metrics](safe-review-roadmaps-progress.md)  
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [How SAFe&reg; concepts map to Azure Boards artifacts](safe-concepts.md)
@@ -358,7 +358,6 @@ Each of the following articles within this suite of tutorials provide details on
 - [About Sprints, Scrum and project management](../sprints/scrum-overview.md)
 - [About Boards and Kanban](../boards/kanban-overview.md) 
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe® resource site.  
-- [SAFe® in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
 - [Scaling Agile and SAFe® Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.    
  
 

@@ -1,8 +1,8 @@
 ---
 ms.service: azure-devops-boards
 ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 06/24/2020
 ---
@@ -22,4 +22,4 @@ If you rename or edit the work items defined for a portfolio backlog, the Featur
 - The label for the first portfolio backlog level  remains as Features, for example, **Closed Features**. 
 - The label for the second portfolio backlog level remains as Epics, for example **Epic** drop-down menu.  
 
-In order to define Epics and Features from the team backlogs or boards, they must be selected through the team settings. For details, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
+To define Epics and Features from the team backlogs or boards, they must be selected through the team settings. For more information, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).

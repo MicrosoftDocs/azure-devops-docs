@@ -8,17 +8,17 @@ ms.subservice: azure-devops-pipelines-tasks
 
 ### Should I use the Visual Studio Build task or the MSBuild task?
 
-If you are building a solution, in most cases you should use the [Visual Studio Build task](../build/visual-studio-build.md). This task automatically:
+If you are building a solution, in most cases you should use the [Visual Studio Build task](/azure/devops/pipelines/tasks/reference/vsbuild-v1). This task automatically:
 
 * Sets the `/p:VisualStudioVersion` property for you. This forces MSBuild to use a particular set of targets that increase the likelihood of a successful build.
 
 * Specifies the MSBuild version argument.
 
-In some cases you might need to use the [MSBuild task](../build/msbuild.md). For example, you should use it if you are building code projects apart from a solution.
+In some cases you might need to use the [MSBuild task](/azure/devops/pipelines/tasks/reference/msbuild-v1). For example, you should use it if you are building code projects apart from a solution.
 
 ### Where can I learn more about MSBuild?
 
-[MSBuild task](../build/msbuild.md)
+[MSBuild task](/azure/devops/pipelines/tasks/reference/msbuild-v1)
 
 [MSBuild reference](/visualstudio/msbuild/msbuild)
 

@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 ms.custom: contperf-fy22q4
 description: Control which services are available for a project from the web portal for Azure DevOps.  
 ms.subservice: azure-devops-settings
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'  
 ms.date: 07/27/2022
@@ -60,7 +60,7 @@ The service we disabled is no longer present in the side bar of Azure DevOps.
 ::: moniker range="azure-devops"
 - [About projects and scaling the organization](../projects/about-projects.md)  
 - [About user, team, project, and organization-level settings](about-settings.md)
-- [Change the project visibility, public or private](../public/make-project-public.md)
+- [Change the project visibility, public or private](../projects/make-project-public.md)
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"

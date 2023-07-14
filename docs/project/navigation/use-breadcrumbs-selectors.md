@@ -5,8 +5,8 @@ description: Navigate to pages and artifacts using breadcrumbs or selectors in t
 ms.custom: "navigation, cross-project, cross-service"
 ms.subservice: azure-devops-projects
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 07/30/2020 
 ---
@@ -224,7 +224,7 @@ From a specific page, you can open the directory from the breadcrumbs or a selec
 	> ![Team members](media/breadcrumbs/team-profile-members.png)
 
 - To view or change the team configuration, choose **Team Settings**.  
-	You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../notifications/manage-team-group-global-organization-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings). 
+	You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings). 
 
 See also [Manage and configure team tools](../../organizations/settings/manage-teams.md).
 

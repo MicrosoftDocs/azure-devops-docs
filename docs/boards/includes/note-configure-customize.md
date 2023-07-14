@@ -2,15 +2,19 @@
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
-ms.date: 01/24/2020
+ms.date: 05/02/2023
 ---
 
 ::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]   
-> For guidance on configuring and customizing your project and teams to support your business needs, review [Configuration and customization of Azure Boards](../configure-customize.md).  
+> For more information, see the following articles:
+> - [Configure and customize Azure Boards](../configure-customize.md)
+> - [Create a project using the process of your choice](../../organizations/projects/create-project.md)
+> - [Customize your work tracking experience (process models)](../../reference/customize-work.md)
+> - [Manage inherited processes](../../organizations/settings/work/manage-process.md)  
 
 ::: moniker-end

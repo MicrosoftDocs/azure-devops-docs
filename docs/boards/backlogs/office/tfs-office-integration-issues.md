@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to resolve common integration issues that occur with Azure DevOps Office integrations. 
 ms.service: azure-devops-boards
 ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 06/27/2022
 ---
@@ -44,12 +44,12 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
 
 ### Update the registry 
 
-1.	Launch the Registry Editor from your Windows Start Menu by typing `regedit` in the Search or Run box.
+1.	Launch the Registry Editor from your Windows Start Menu by entering `regedit` in the Search or Run box.
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Run regedit command.](media/tfs-office-issues-run-regedit.png) 
 
-2.	Navigate to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
+2.	Go to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 	
 	> [!NOTE]  
 	> If there are multiple folders with the same name, select the one with the highest version number. 
@@ -133,6 +133,7 @@ If the above steps are unsuccessful, try the following steps:
 
 
 ## Related articles
-
+- [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  
+- [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml)
 - [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)

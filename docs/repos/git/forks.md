@@ -5,7 +5,7 @@ description: Learn how to isolate experimental or risky code using a forking wor
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 07/08/2022
+ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -13,7 +13,7 @@ ms.subservice: azure-devops-repos-git
 # Forks
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Git repo forks are useful when people want to make experimental, risky, or confidential changes to a codebase, but those changes need to be isolated from the codebase in the original repo. A new fork is basically a clone of the original repo pushed to a new remote repo. The fork is independent of the original repo, and is a complete copy unless you specify a single branch.
 
@@ -35,23 +35,19 @@ In this article you learn how to:
 >* Create and complete a PR
 >* Sync your fork
 
-
 ## Prerequisites for access to Azure Repos
 
 [!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
-
 ## Share code between forks
 
 The original repo is often referred to as the *upstream* repo. You can create PRs to merge changes in either direction: from fork to upstream, or upstream to fork. The most common direction is from fork to upstream. The destination repo's permissions, policies, builds, and work items will apply to the PR.
-
 
 ## Choose between branches and forks
 
 For a small team of 2-5 developers, a [forking workflow](#the-forking-workflow) might not be necessary because everyone can work in [feature branches](git-branching-guidance.md#use-feature-branches-for-your-work) and [branch policies](branch-policies-overview.md) can protect the default branch. However, if your team expands and outgrows this arrangement they can switch to a forking workflow.
 
 If your repo has a large number of casual or infrequent committers, such as an open source project might, we recommend the forking workflow. Typically, only core contributors to your project should have direct commit rights to your original repo. Other collaborators should use a forking workflow to isolate their proposed changes until the core contributors have a chance to review their work.
-
 
 ## Enable repo forks
 
@@ -68,7 +64,6 @@ The forking workflow consists of five steps that are described in the following 
 1. [Push local changes to your fork](#push-local-changes-to-your-fork)
 1. [Create and complete a PR](#create-and-complete-a-pr)
 1. [Sync your fork](#sync-your-fork)
-
 
 ## Create a fork
 
@@ -87,7 +82,6 @@ The following steps describe how to fork an Azure Repos Git repo.
 
 For information about how to fork a GitHub repo, see [Fork a repo](https://docs.github.com/get-started/quickstart/fork-a-repo).
 
-
 ## Clone your fork locally
 
 After you've forked a repo, [clone](clone.md) your fork to create a local copy in a folder on your computer. You can clone from the [command line](clone.md?tabs=git-command-line#clone-an-azure-repos-git-repo) or by using an IDE like [Visual Studio](clone.md?tabs=visual-studio-2019#clone-an-azure-repos-git-repo). For more information about cloning a repo, see [Clone an existing Git repo](clone.md).
@@ -97,7 +91,7 @@ When you clone a remote repo, Git assigns the alias `origin` as shorthand for th
 >[!TIP]
 >For convenience, you can use the `origin` and `upstream` aliases instead of their corresponding URLs in your Git commands.
 
-#### [Visual Studio 2019](#tab/visual-studio-2019/)
+#### [Visual Studio](#tab/visual-studio)
 
 To add an `upstream` alias in Visual Studio, follow these steps:
 
@@ -109,35 +103,11 @@ To add an `upstream` alias in Visual Studio, follow these steps:
 
     :::image type="content" source="media/forks/visual-studio-2019/git-add-remote-dialog.png" border="true" alt-text="Screenshot of the Add Remote dialog box in Visual Studio 2019." lightbox="media/forks/visual-studio-2019/git-add-remote-dialog-lrg.png":::
 
-#### [Visual Studio 2017](#tab/visual-studio-2017)
-
-To add your upstream repository in Visual Studio, follow these steps:
-
-1. Open the **Settings** page.
-
-   :::image type="content" source="media/forks/visual-studio-2017/team-explorer/home-settings.png" border="false" alt-text="Screenshot of the Team Explorer Home view in Visual Studio 2017.":::
-
-1. Choose **Repository Settings**.
-
-    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/settings.png" border="false" alt-text="Screenshot of the Team Explorer settings in Visual Studio 2017.":::
-
-1. Under **Remotes**, choose **Add**.
-
-    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/reposettings.png" border="false" alt-text="Screenshot of the Repository settings in Visual Studio 2017.":::
-
-1. Add a new remote called `upstream`, using the Git clone URL of the repo you forked.
-
-    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/new-remote.png" border="false" alt-text="Screenshot of the Add New Remote dialog in Visual Studio 2017.":::
-
-1. Select **Save** and the new remote is added and displayed in the repository settings.
-
-    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/upstream-added.png" border="false" alt-text="Screenshot of the Remotes list in Visual Studio 2017.":::
-
 #### [Command Line](#tab/command-line)
 
 On the command line, navigate to the root folder of your local repo, and then run the following command to add a new remote named `upstream`. Replace `<clone URL>` with the Git [clone URL](clone.md#get-the-clone-url-of-an-azure-repos-git-repo) of the repo you forked.
 
-```cmd
+```console
 git remote add upstream <clone URL>
 ```
 
@@ -145,13 +115,11 @@ For example, `git remote add upstream https://fiber-teams@dev.azure.com/fiber-te
 
 To edit an existing `upstream` alias, run the following command:
 
-```cmd
+```console
 git remote set-url upstream <clone URL>
 ```
 
-
 ---
-
 
 ## Push local changes to your fork
 
@@ -170,7 +138,6 @@ A typical Git [workflow](gitworkflow.md#git-workflow) includes these steps:
 1. [Push](pushing.md) the feature or bug fix branch to your fork. Your fork has the alias `origin`.
 
 For information on how to push your changes, see [Share code with push](pushing.md).
-
 
 ## Create and complete a PR
 
@@ -191,7 +158,6 @@ In Azure Repos, to merge into the original repo the changes that you pushed to y
 
 For information about how to create and complete a GitHub PR, see [Creating a pull request](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) and [Merging a pull request](https://docs.github.com/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request).
 
-
 ## Sync your fork
 
 After a PR merges the changes from your fork into the target branch of the upstream repo, you can [pull](pulling.md) from the target branch of the upstream repo to update your corresponding local branch with both your changes and any changes made by other contributors. Then you're ready to:
@@ -202,13 +168,11 @@ After a PR merges the changes from your fork into the target branch of the upstr
 
 Typically, the target branch of the upstream repo is `main`. If you aren't directly editing your local `main` branch (you work in feature branches), then [pulling](pulling.md) from the upstream branch `upstream/main` will update your local `main` branch without merge conflicts.
 
-
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Share code with push](pushing.md)
 > [Review pull requests](review-pull-requests.md)
-
 
 ## Related articles
 

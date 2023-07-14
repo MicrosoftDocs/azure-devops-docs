@@ -3,11 +3,11 @@ title: What is Analytics?
 titleSuffix: Azure DevOps
 description: Learn how you can use Analytics data to answer quantitative questions about your projects in Azure DevOps.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/26/2022
+ms.date: 11/07/2022
 ---
 
 # What is Analytics?
@@ -110,14 +110,14 @@ Also, you can add rollup columns to product and portfolio backlogs that provide 
 
 ## Analytic views
 
-Analytics views is a web portal feature that supports filtering work tracking data for status and trend reports. With Analytics views, you can use default or custom views to generate reports in Power BI. Power BI provides a data connector for Analytics views.  quick generation of , you can create and manage Analytics views. 
+Analytics views is a web portal feature that supports filtering work tracking data for status and trend reports. With Analytics views, you can use default or custom views to generate reports in Power BI. Power BI provides a data connector for Analytics views.  
 
 To learn more, see [What are Analytics views?](what-are-analytics-views.md).
  
 
 ## Metadata & OData queries
 
-Analytics is fully accessible via OData. From a web browser, you can query the Analytics metadata or data using an OData query. To learn how, see [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md).
+Analytics is fully accessible via OData. From a web browser, you can query the Analytics metadata or data using an OData query. To learn how, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
  
 If you would like to prepare custom queries and tooling with our OData API, review [Sample reports and quick reference index](../extend-analytics/quick-ref.md).
 

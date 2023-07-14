@@ -1,7 +1,7 @@
 ---
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 03/05/2021
 ---
@@ -13,7 +13,7 @@ The following table summarizes the query filter functions supported by each Azur
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE] 
-> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Functional work items search](../../project/search/functional-work-item-search.md).
+> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. For more information, see [Functional work items search](../../project/search/functional-work-item-search.md).
 ::: moniker-end
 
 ---
@@ -217,4 +217,4 @@ The following table summarizes the query filter functions supported by each Azur
 :::row-end:::
 ---
 
-To bulk move, copy, or paste query clauses, install and use the WIQL editor. To learn more, see [Cross-service and enhanced query operations](../queries/query-support-integration-cross-service-extensions.md#wiql)
+To bulk move, copy, or paste query clauses, install and use the WIQL editor. For more information, see [Cross-service and enhanced query operations](../queries/query-support-integration-cross-service-extensions.md#wiql)

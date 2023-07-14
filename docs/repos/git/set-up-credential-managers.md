@@ -5,23 +5,22 @@ description: Authenticate to Azure Repos and TFS Git repos using credential mana
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 11/13/2020
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.date: 11/13/2020
 ---
 
 # Use Git Credential Manager to authenticate to Azure Repos
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Git Credential Manager simplifies authentication with your Azure Repos Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps Services web portal. Credential managers support multi-factor authentication through Microsoft account or Azure Active Directory (Azure AD).  Besides supporting multi-factor authentication with Azure Repos, credential managers also support [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
 
 Azure Repos provides IDE support for Microsoft account and Azure AD authentication through the following clients:
 
 - [Team Explorer in Visual Studio](../../organizations/projects/connect-to-projects.md)
-- [IntelliJ and Android Studio with the Azure Repos Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
-- [Eclipse with the Team Explorer Everywhere plug-in](https://github.com/Microsoft/team-explorer-everywhere)
+- [IntelliJ and Android Studio with the Azure Repos Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in) 
 
 If your environment doesn't have an integration available, configure your IDE with a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect to your repositories.
 
@@ -38,7 +37,7 @@ Download and run the latest [Git for Windows installer](https://git-scm.com/down
 You may [use SSH keys](use-ssh-keys-to-authenticate.md) to authenticate to Azure Repos, or you may use [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
 
 Installation instructions are included in the GitHub repository for GCM.
-On Mac, we recommend using [Homebrew](https://github.com/GitCredentialManager/git-credential-manager#macos-homebrew).
+On Mac, we recommend using [Homebrew](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md#macos).
 On Linux, you can install from a [.deb](https://github.com/GitCredentialManager/git-credential-manager#ubuntudebian-distributions) or a [tarball](https://github.com/GitCredentialManager/git-credential-manager#other-distributions).
 
 ## Using the Git Credential Manager

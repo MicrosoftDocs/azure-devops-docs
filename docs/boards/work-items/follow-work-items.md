@@ -5,8 +5,8 @@ description: Learn how to track updates made to a work item or pull request by f
 ms.custom: work-items, seodec18, cross-project 
 ms.subservice: azure-devops-settings
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 07/13/2022
@@ -20,10 +20,10 @@ ms.date: 07/13/2022
 
 To get notified of changes made to a specific work item or a pull request, you can choose to follow them. The Follow feature provides an improvised way of getting notified on a case-by-case basis. 
 
-If you want to subscribe to receive notifications automatically based on changes that occur based on your targeted set of criteria, see [Manage personal notifications](../../notifications/manage-your-personal-notifications.md). For example, you can create a subscription to automatically get notified whenever a work item that you created or that was assigned to you is modified. 
+If you want to subscribe to receive notifications automatically based on changes that occur based on your targeted set of criteria, see [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md). For example, you can create a subscription to automatically get notified whenever a work item that you created or that was assigned to you is modified. 
 
 > [!NOTE]  
-> Notification subscriptions allow you to personalize the notifications you receive automatically based on additional criteria you specify for [yourself](../../notifications/manage-your-personal-notifications.md), a team, or a project. For example, you can create a subscription and add field criteria to receive changes based on one or more of the following templates. 
+> Notification subscriptions allow you to personalize the notifications you receive automatically based on additional criteria you specify for [yourself](../../organizations/notifications/manage-your-personal-notifications.md), a team, or a project. For example, you can create a subscription and add field criteria to receive changes based on one or more of the following templates. 
 >
 > ![Work item notification templates](media/follow-work/work-item-notifications.png) 
 
@@ -37,7 +37,7 @@ This article shows you how to:
 
 ::: moniker range="<= azure-devops-2019"
 
-[Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
+[Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to receive notifications.   
 ::: moniker-end  
 
 
@@ -47,7 +47,7 @@ This article shows you how to:
 
 * Connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To view or follow work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md). Also, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+* To view or follow work items, you must be granted **Stakeholder** access or higher. For more information, see [About access levels](../../organizations/security/access-levels.md). Also, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 * To view or follow pull requests, you must have **Basic** access or higher.   
 
 ::: moniker-end
@@ -56,7 +56,7 @@ This article shows you how to:
 
 * You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To view or follow work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md). Also, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+* To view or follow work items, you must be granted **Stakeholder** access or higher. For more information, see [About access levels](../../organizations/security/access-levels.md). Also, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 * To view or follow pull requests, you must have **Basic** access or higher.  
 
 ::: moniker-end 
@@ -88,7 +88,7 @@ By default, you're **Subscribed** to receive a notification when any change is m
 
 You'll only receive notifications when other members of your team modify the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
-Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md)
+Notifications are sent to your preferred email address, which [you can change from your user profile](../../organizations/notifications/change-email-address.md)
 
 To stop following changes, choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  following icon.
  
@@ -102,7 +102,7 @@ To track the progress of a single pull request, choose the  :::image type="icon"
 
 You'll only receive notifications when other members of your team modify the PR, such as adding to the discussion or adding an attachment. 
 
-Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
+Notifications are sent to your preferred email address, which [you can change from your user profile](../../organizations/notifications/change-email-address.md).  
 
 To stop following changes, open the PR context menu and choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  Following icon. 
 
@@ -147,7 +147,7 @@ From this view, you can view all items you're following across all projects. Als
 - Set work item pane
 - Enter full screen mode. 
 
-You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
+You can also view and manage work that you're following from your Project pages. For more information, see [Work across projects](../../project/navigation/work-across-projects.md). 
 
 ::: moniker-end 
 
@@ -162,7 +162,7 @@ For example, the following query shows how to query across all projects for acti
 :::image type="content" source="media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Add, update, and follow a work item](../backlogs/add-work-items.md) 
@@ -170,10 +170,10 @@ For example, the following query shows how to query across all projects for acti
 
 ## Related articles  
 
-- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
+- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)  
 - [View and update work items via the mobile work item form](../../project/navigation/mobile-work.md)  
 
 
 ### Q: Can I add someone else to follow a work item or PR?
 
-**A:** No, you can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For details, see [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md).	
+**A:** No, you can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For more information, see [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md).	

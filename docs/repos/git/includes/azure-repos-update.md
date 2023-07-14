@@ -1,8 +1,8 @@
 ---
 ms.service: azure-devops-repos
 ms.topic: include
-ms.author: kaelli  
-author: KathrynEE
+ms.author: vijayma
+author: vijayma
 ms.date: 02/23/2022
 ms.subservice: azure-devops-repos-git
 ---

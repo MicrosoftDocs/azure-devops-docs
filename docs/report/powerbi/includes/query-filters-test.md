@@ -1,30 +1,12 @@
 ---
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
-ms.date: 09/21/2021
+ms.date: 01/19/2023
 ---
 
-## Query filters
 
-To determine available query filters, query the metadata as described in [Explore the Analytics OData metadata](../../extend-analytics/analytics-metadata.md). You can filter your queries using any of the **NavigationPropertyBinding Path** values listed under an **EntitySet**. To learn more about the data type of each value, review the metadata provided for the corresponding **EntityType**. Each **EntitySet** corresponds to the singular value for an **EntityType**. 
-
-
-For example, the **EntitySet Name="TestPoints"** corresponds to the **EntityType Name="TestPoint"**. The OData metadata for the **EntitySet Name="TestPoints"** is as shown below for **v4.0-preview**.  You can add filters based on any of the listed **NavigationPropertyBinding Path** values. 
-
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <EntitySet Name="TestPoints" EntityType="Microsoft.VisualStudio.Services.Analytics.Model.TestPoint">
-> 	<NavigationPropertyBinding Path="ChangedOn" Target="Dates"/>
-> 	<NavigationPropertyBinding Path="Project" Target="Projects"/>
-> 	<NavigationPropertyBinding Path="TestSuite" Target="TestSuites"/>
-> 	<NavigationPropertyBinding Path="TestConfiguration" Target="TestConfigurations"/>
-> 	<NavigationPropertyBinding Path="TestCase" Target="WorkItems"/>
-> 	<NavigationPropertyBinding Path="Tester" Target="Users"/>
-> 	<NavigationPropertyBinding Path="AssignedTo" Target="Users"/>
-> 	<Annotation Term="Org.OData.Display.V1.DisplayName" String="Test Points"/>
-> </EntitySet>
-> ```
-
-
+> [!NOTE]   
+> To determine available properties for filter or report purposes, see [Metadata reference for Test Plans Analytics](../../analytics/entity-reference-test-plans.md). You can filter your queries or return properties using any of the `Property` values under an `EntityType` or `NavigationPropertyBinding Path` values available with an `EntitySet`. Each `EntitySet` corresponds to an `EntityType`. To learn more about the data type of each value, review the metadata provided for the corresponding `EntityType`.  
+ 

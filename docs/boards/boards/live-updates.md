@@ -5,8 +5,8 @@ description: Learn how to turn live updates on or off for a Kanban board in Azur
 ms.custom: boards-kanban 
 ms.topic: how-to
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -18,7 +18,7 @@ ms.date: 04/01/2022
 
 <a id="live-updates"></a>
 
-Enable live updates to automatically refresh your Kanban board when changes occur. As other team members move or reorder cards, your board will automatically update with the changes. With live updates enabled, you no longer have to press F5 to see the latest changes.  
+Enable live updates to automatically refresh your Kanban board when changes occur. As other team members move or reorder cards, your board automatically updates with the changes. With live updates enabled, you no longer have to press F5 to see the latest changes.  
 
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
@@ -41,7 +41,7 @@ From the Kanban board, choose the :::image type="icon" source="../media/icons/li
 ::: moniker-end
 
 
-As one team member updates the status of a work item, other team members will see those updates in real time as they occur.  
+As one team member updates the status of a work item, other team members see those updates in real time as they occur.  
 
 ![Live update](media/kanban-live-updates.gif)  
 

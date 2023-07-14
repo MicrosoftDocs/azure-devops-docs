@@ -3,7 +3,7 @@ title: Build TFVC repositories
 description: Using a TFVC repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: d88333c9-e964-4f91-9532-5d014edb8277
-ms.date: 05/17/2022
+ms.date: 01/25/2023
 monikerRange: '<= azure-devops'
 ---
 

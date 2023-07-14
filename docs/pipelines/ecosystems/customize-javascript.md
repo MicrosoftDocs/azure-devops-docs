@@ -20,7 +20,7 @@ To create your first pipeline with JavaScript, see the [JavaScript quickstart](j
 
 ::: moniker range=">=azure-devops-2020"
 
-If you need a version of Node.js and npm that isn't already installed on the Microsoft-hosted agent, use the [Node tool installer task](../tasks/tool/node-js.md). Add the following snippet to your `azure-pipelines.yml` file.
+If you need a version of Node.js and npm that isn't already installed on the Microsoft-hosted agent, use the [Node tool installer task](/azure/devops/pipelines/tasks/reference/node-tool-v0). Add the following snippet to your `azure-pipelines.yml` file.
 
 > [!NOTE]
 > The hosted agents are regularly updated, and setting up this task results in spending significant time updating to a newer minor version every time the pipeline is run. Use this task only when you need a specific Node version in your pipeline.
@@ -49,7 +49,7 @@ To update just the npm tool, run the `npm i -g npm@version-number` command in yo
 
 ### Use multiple node versions
 
-You can build and test your app on multiple versions of Node with the [Node tool installer task](../tasks/tool/node-js.md).
+You can build and test your app on multiple versions of Node with the [Node tool installer task](/azure/devops/pipelines/tasks/reference/node-tool-v0).
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -85,7 +85,7 @@ See [multi-configuration execution](../process/phases.md#parallelexec).
 
 If you have tools that are development dependencies in your project `package.json` or `package-lock.json` file, install your tools and dependencies through npm. The exact version of the tools gets defined in the project, isolated from other versions that exist on the build agent.
 
-Use a [script](../scripts/cross-platform-scripting.md) or the [npm task](../tasks/package/npm.md). 
+Use a [script](../scripts/cross-platform-scripting.md) or the [npm task](/azure/devops/pipelines/tasks/reference/npm-v1). 
 
 ### Use a script to install with package.json
 
@@ -125,7 +125,7 @@ The following example installs the latest version of the [Angular CLI](https://c
 
 ::: moniker range="< azure-devops"
 
-Use the [npm](../tasks/package/npm.md) or [command-line](../tasks/utility/command-line.md) tasks in your pipeline to install tools on your build agent.
+Use the [npm](/azure/devops/pipelines/tasks/reference/npm-v1) or [command-line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) tasks in your pipeline to install tools on your build agent.
 
 ::: moniker-end
 
@@ -138,8 +138,8 @@ In your build, use [Yarn](https://yarnpkg.com) or Azure Artifacts to download pa
 You can use npm in the following ways to download packages for your build:
 
 * Directly run `npm install` in your pipeline, as it's the simplest way to download packages from a registry without authentication. If your build doesn't need development dependencies on the agent to run, you can speed up build times with the `--only=prod` option to `npm install`.
-* Use an [npm task](../tasks/package/npm.md). This task is useful when you're using an authenticated registry.
-* Use an [npm Authenticate task](../tasks/package/npm-authenticate.md). This task is useful when you run `npm install` from inside your task runners - Gulp, Grunt, or Maven.
+* Use an [npm task](/azure/devops/pipelines/tasks/reference/npm-v1). This task is useful when you're using an authenticated registry.
+* Use an [npm Authenticate task](/azure/devops/pipelines/tasks/reference/npm-authenticate-v0). This task is useful when you run `npm install` from inside your task runners - Gulp, Grunt, or Maven.
 
 If you want to specify an npm registry, put the URLs in an `.npmrc` file in your repository.
 If your feed gets authenticated, create an npm service connection on the **Services** tab in **Project settings** to manage its credentials.
@@ -172,7 +172,7 @@ To pass registry credentials to npm commands via task runners such as Gulp, add 
 
 ::: moniker range="< azure-devops"
 
-Use the [npm](../tasks/package/npm.md) or [npm authenticate](../tasks/package/npm-authenticate.md) task in your pipeline to download and install packages.
+Use the [npm](/azure/devops/pipelines/tasks/reference/npm-v1) or [npm authenticate](/azure/devops/pipelines/tasks/reference/npm-authenticate-v0) task in your pipeline to download and install packages.
 
 ::: moniker-end
 
@@ -206,7 +206,7 @@ Use a script stage to invoke [Yarn](https://yarnpkg.com) to restore dependencies
 
 ::: moniker range="< azure-devops"
 
-Use the [CLI](../tasks/utility/command-line.md) or [Bash](../tasks/utility/bash.md) task in your pipeline to invoke [Yarn](https://yarnpkg.com).
+Use the [CLI](/azure/devops/pipelines/tasks/reference/cmd-line-v2) or [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task in your pipeline to invoke [Yarn](https://yarnpkg.com).
 
 ::: moniker-end
 
@@ -232,7 +232,7 @@ You can call compilers directly from the pipeline by using the script task. Thes
 
 ::: moniker range="< azure-devops"
 
-Use the [npm](../tasks/package/npm.md) task in your pipeline if you have a compile script defined in your project package.json to build the code. Use the [Bash](../tasks/utility/bash.md) task to compile your code if you don't have a separate script defined in your project configuration.
+Use the [npm](/azure/devops/pipelines/tasks/reference/npm-v1) task in your pipeline if you have a compile script defined in your project package.json to build the code. Use the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task to compile your code if you don't have a separate script defined in your project configuration.
 
 ::: moniker-end
 
@@ -240,7 +240,7 @@ Use the [npm](../tasks/package/npm.md) task in your pipeline if you have a compi
 
 ::: moniker range=">=azure-devops-2020"
 
-Configure your pipelines to run your JavaScript tests so that they produce results formatted in the JUnit XML format. You can then publish the results using the built-in [publish test results](../tasks/test/publish-test-results.md) task.
+Configure your pipelines to run your JavaScript tests so that they produce results formatted in the JUnit XML format. You can then publish the results using the built-in [publish test results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task.
 
 If your test framework doesn't support JUnit output, add support through a partner reporting module, such as [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter). You can either update your test script to use the JUnit reporter, or if the reporter supports command-line options, pass those options into the task definition.
 
@@ -268,7 +268,7 @@ If you defined a `test` script in your project package.json file, you can invoke
 
 ### Publish test results
 
-To publish the results, use the [Publish Test Results](../tasks/test/publish-test-results.md) task.
+To publish the results, use the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task.
 
 ```yaml
 - task: PublishTestResults@2
@@ -280,7 +280,7 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
 
 ### Publish code coverage results
 
-If your test scripts run a code coverage tool, such as [Istanbul](https://github.com/istanbuljs), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. When you do so, you can find coverage metrics in the build summary and download HTML reports for further analysis. The task expects Cobertura or JaCoCo reporting output, so ensure that your code coverage tool runs with the necessary options to generate the right output. For example, `--report cobertura`.
+If your test scripts run a code coverage tool, such as [Istanbul](https://github.com/istanbuljs), add the [Publish Code Coverage Results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) task. When you do so, you can find coverage metrics in the build summary and download HTML reports for further analysis. The task expects Cobertura or JaCoCo reporting output, so ensure that your code coverage tool runs with the necessary options to generate the right output. For example, `--report cobertura`.
 
 The following example uses [nyc](https://github.com/istanbuljs/nyc), the Istanbul command-line interface, along with [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) and invokes `npm test` command.
 
@@ -301,7 +301,7 @@ The following example uses [nyc](https://github.com/istanbuljs/nyc), the Istanbu
 
 ::: moniker range="< azure-devops"
 
-Use the [Publish Test Results](../tasks/test/publish-test-results.md) and [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) tasks in your pipeline to publish test results along with code coverage results by using Istanbul.
+Use the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) and [Publish Code Coverage Results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) tasks in your pipeline to publish test results along with code coverage results by using Istanbul.
 
 Set the Control Options for the Publish Test Results task to run the task even if a previous task has failed, unless the deployment was canceled.
 
@@ -316,7 +316,7 @@ Run tests in headless browsers as part of your pipeline with tools like [Protrac
 1. Configure your test framework (usually with a reporter plug-in or configuration) to output JUnit-formatted test results.
 1. Set up a script task to run any CLI commands needed to start the headless browser instances.
 1. Run the end-to-end tests in the pipeline stages along with your unit tests.
-1. Publish the results by using the same [Publish Test Results](../tasks/test/publish-test-results.md) task alongside your unit tests.
+1. Publish the results by using the same [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task alongside your unit tests.
 
 ## Package web apps
 
@@ -330,7 +330,7 @@ The first example calls `webpack`. To have this work, make sure that `webpack` i
 - script: webpack
 ```
 
-The next example uses the [npm](../tasks/package/npm.md) task to call `npm run build` to call the `build` script object defined in the project package.json. Using script objects in your project moves the logic for the build into the source code and out of the pipeline.  
+The next example uses the [npm](/azure/devops/pipelines/tasks/reference/npm-v1) task to call `npm run build` to call the `build` script object defined in the project package.json. Using script objects in your project moves the logic for the build into the source code and out of the pipeline.  
 
 ```yaml
 - script: npm run build
@@ -340,7 +340,7 @@ The next example uses the [npm](../tasks/package/npm.md) task to call `npm run b
 
 ::: moniker range="< azure-devops"
 
-Use the [CLI](../tasks/utility/command-line.md) or [Bash](../tasks/utility/bash.md) task in your pipeline to invoke your packaging tool, such as `webpack` or  Angular's `ng build`.
+Use the [CLI](/azure/devops/pipelines/tasks/reference/cmd-line-v2) or [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task in your pipeline to invoke your packaging tool, such as `webpack` or  Angular's `ng build`.
 
 ::: moniker-end
 
@@ -405,7 +405,7 @@ All the dependencies for your React and Vue apps are captured in your *package.j
 
 ::: moniker-end
 
-The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `www`, that is ready for release. It uses the [Node Installer](../tasks/tool/node-js.md), [Copy File](../tasks/utility/copy-files.md)s, and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks. 
+The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `www`, that is ready for release. It uses the [Node Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0), [Copy File](/azure/devops/pipelines/tasks/reference/copy-files-v2)s, and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks. 
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -498,7 +498,7 @@ If the steps in your gulpfile.js file require authentication with an npm registr
 - script: gulp                       # include any additional options that are needed
 ```
 
-Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit or xUnit test results to the server.
+Add the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task to publish JUnit or xUnit test results to the server.
 
 ```yaml
 - task: PublishTestResults@2
@@ -507,7 +507,7 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
     testRunTitle: 'Test results for JavaScript using gulp'
 ```
 
-Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. You can find coverage metrics in the build summary, and you can download HTML reports for further analysis. 
+Add the [Publish Code Coverage Results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) task to publish code coverage results to the server. You can find coverage metrics in the build summary, and you can download HTML reports for further analysis. 
 
 ```yaml
 - task: PublishCodeCoverageResults@1
@@ -562,7 +562,7 @@ After you've built and tested your app, you can upload the build output to Azure
 
 ### Publish files to Azure Pipelines
 
-To upload the entire working directory of files, use the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task and add the following to your `azure-pipelines.yml` file.
+To upload the entire working directory of files, use the [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task and add the following to your `azure-pipelines.yml` file.
 
 ```yaml
 - task: PublishBuildArtifacts@1
@@ -570,7 +570,7 @@ To upload the entire working directory of files, use the [Publish Build Artifact
     PathtoPublish: '$(System.DefaultWorkingDirectory)'
 ```
 
-To upload a subset of files, first copy the necessary files from the working directory to a staging directory with the [Copy Files](../tasks/utility/copy-files.md) task, and then use the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md).
+To upload a subset of files, first copy the necessary files from the working directory to a staging directory with the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) task, and then use the [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1).
 
 ```yaml
 - task: CopyFiles@2
@@ -586,7 +586,7 @@ To upload a subset of files, first copy the necessary files from the working dir
 
 ### Publish a module to an npm registry
 
-If your project's output is an `npm` module for use by other projects and not a web application, use the [npm](../tasks/package/npm.md) task to publish the module to a local registry or to the public npm registry. Provide a unique name/version combination each time you publish. 
+If your project's output is an `npm` module for use by other projects and not a web application, use the [npm](/azure/devops/pipelines/tasks/reference/npm-v1) task to publish the module to a local registry or to the public npm registry. Provide a unique name/version combination each time you publish. 
 
 #### Examples
 
@@ -620,7 +620,7 @@ For more information about versioning and publishing npm packages, see [Publish 
 
 ### Deploy a web app
 
-To create a .zip file archive that is ready for publishing to a web app, use the [Archive Files](../tasks/utility/archive-files.md) task:
+To create a .zip file archive that is ready for publishing to a web app, use the [Archive Files](/azure/devops/pipelines/tasks/reference/archive-files-v2) task:
 
 ```yaml
 - task: ArchiveFiles@2
@@ -637,15 +637,15 @@ To publish this archive to a web app, see [Azure web app deployment](../targets/
 
 ### Publish artifacts to Azure Pipelines
 
-Use the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) to publish files from your build to Azure Pipelines.
+Use the [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) to publish files from your build to Azure Pipelines.
 
 ### Publish to an npm registry
 
-To create and publish an npm package, use the [npm task](../tasks/package/npm.md). For more information about versioning and publishing npm packages, see [Publish npm packages](../artifacts/npm.md).
+To create and publish an npm package, use the [npm task](/azure/devops/pipelines/tasks/reference/npm-v1). For more information about versioning and publishing npm packages, see [Publish npm packages](../artifacts/npm.md).
 
 ### Deploy a web app
 
-To create a .zip file archive that is ready for publishing to a web app, use the [Archive Files task](../tasks/utility/archive-files.md). To publish this archive to a web app, see [Azure Web App deployment](../targets/webapp.md).
+To create a .zip file archive that is ready for publishing to a web app, use the [Archive Files task](/azure/devops/pipelines/tasks/reference/archive-files-v2). To publish this archive to a web app, see [Azure Web App deployment](../targets/webapp.md).
 
 ::: moniker-end
 

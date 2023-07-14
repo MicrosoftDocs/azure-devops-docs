@@ -48,10 +48,10 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
 
-When setting up a release pipeline, choose **Start with an empty pipeline**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md) task.
+When setting up a release pipeline, choose **Start with an empty pipeline**, link the artifacts from build, and then add an [Azure SQL Database Deployment](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1) task.
 
 * * *
-See also [authentication information when using the Azure SQL Database Deployment task](../tasks/deploy/sql-azure-dacpac-deployment.md#arguments).
+See also [authentication information when using the Azure SQL Database Deployment task](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1).
 
 ## SQL scripts
 
@@ -98,15 +98,15 @@ $ErrorActionPreference = 'Stop'
 
 function New-AzureSQLServerFirewallRule {
   $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
-  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $FirewallRuleName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
+  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $FirewallRuleName -ServerName $ServerName
 }
 
 function Update-AzureSQLServerFirewallRule{
   $agentIP= (New-Object net.webclient).downloadstring("https://api.ipify.org")
-  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $FirewallRuleName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
+  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $FirewallRuleName -ServerName $ServerName
 }
 
-if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $FirewallRuleName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue) -eq $null)
+if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $FirewallRuleName -ErrorAction SilentlyContinue) -eq $null)
 {
   New-AzureSQLServerFirewallRule
 }
@@ -116,7 +116,7 @@ else
 }
 ```
 
-The following PowerShell script removes firewall rules. You can check-in this script as `RemoveAzureFirewallRule.ps1` into your repository.
+The following PowerShell script removes firewall rules. You can check in this script as `RemoveAzureFirewallRule.ps1` into your repository.
 
 ### ARM
 
@@ -144,32 +144,35 @@ param
 
 $ErrorActionPreference = 'Stop'
 
-if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $FirewallRuleName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue))
+if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $FirewallRuleName -ErrorAction SilentlyContinue))
 {
-  Remove-AzureSqlDatabaseServerFirewallRule -FirewallRuleName $FirewallRuleName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
+  Remove-AzureSqlDatabaseServerFirewallRule -RuleName $FirewallRuleName -ServerName $ServerName
 }
 ```
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range=">= azure-devops-2019"
 
 Add the following to your azure-pipelines.yml file to run a SQL script.
 
 ```yaml
 variables:
-  AzureSubscription: '<Azure service connection>'
-  ServerName: '<Database server name>'
-  ServerFqdn: '<SQL Database FQDN>'
-  DatabaseName: '<Database name>'
-  AdminUser: '<SQL user name>'
-  AdminPassword: '<SQL user password>'
-  SQLFile: '<Location of SQL file in $(Build.SourcesDirectory)>'
+  AzureSubscription: '<SERVICE_CONNECTION_NAME>'
+  ResourceGroupName: '<RESOURCE_GROUP_NAME>'
+  ServerName: '<DATABASE_SERVER_NAME>'
+  ServerFqdn: '<DATABASE_FQDN>'
+  DatabaseName: '<DATABASE_NAME>'
+  AdminUser: '<DATABASE_USERNAME>'
+  AdminPassword: '<DATABASE_PASSWORD>'
+  SQLFile: '<LOCATION_OF_SQL_FILE_IN_$(Build.SourcesDirectory)>'
 
 steps:
 - task: AzurePowerShell@5
-  displayName: Azure PowerShell script: FilePath
+  displayName: 'Azure PowerShell script'
   inputs:
     azureSubscription: '$(AzureSubscription)'
+    ScriptType: filePath
     ScriptPath: '$(Build.SourcesDirectory)\scripts\SetAzureFirewallRule.ps1'
     ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
@@ -178,12 +181,13 @@ steps:
   displayName: Run Sqlcmd
   inputs:
     filename: Sqlcmd
-  arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
+    arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
 
 - task: AzurePowerShell@5
-  displayName: Azure PowerShell script: FilePath
+  displayName: 'Azure PowerShell script'
   inputs:
     azureSubscription: '$(AzureSubscription)'
+    ScriptType: filePath
     ScriptPath: '$(Build.SourcesDirectory)\scripts\RemoveAzureFirewallRule.ps1'
     ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
@@ -198,15 +202,19 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure PowerShell scripts to configure firewall rules are part of the build artifact.
 
 When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
 
-- First, use an [Azure PowerShell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
-- Second, use a [Command line](../tasks/utility/command-line.md) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
-- Third, use another [Azure PowerShell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
+- First, use an [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
+- Second, use a [Command line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
+- Third, use another [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to remove the firewall rule in Azure.
+
+:::image type="content" source="media/classic-sql.png" alt-text="A screenshot showing a classic pipeline to run SQL script.":::
 
 * * *
+
 ## Azure service connection
 
 The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.

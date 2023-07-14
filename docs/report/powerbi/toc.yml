@@ -8,32 +8,38 @@ items:
   items:
   - name: Data available and versioning  
     href: data-available-in-analytics.md  
-  - name: Query Analytics 
+  - name: Construct OData queries  
     href: ../analytics/analytics-query-parts.md  
+  - name: Sample basic queries
+    href: ../extend-analytics/wit-analytics.md
   - name: Query tools  
     href: ../analytics/analytics-query-tools.md  
   - name: Best practices  
     href: ../analytics/analytics-best-practices.md  
+  - name: Project & organization-scoped queries
+    href: ../extend-analytics/account-scoped-queries.md
   - name: Permissions and prerequisites  
     href: ../analytics/analytics-permissions-prerequisites.md  
   - name: Set Analytics permissions (Security)  
     href: analytics-security.md  
   - name: Enable or install Analytics  
     href: ../dashboards/analytics-extension.md  
-  - name: Quick reference index  
+  - name: Analytics quick reference 
     href: ../extend-analytics/quick-ref.md  
 - name: Analytics views  
   items:  
   - name: What are Analytics views?  
-    href: what-are-analytics-views.md  
-  - name: Default Analytics views  
-    href: analytics-default-views.md  
+    href: what-are-analytics-views.md 
   - name: Create an Analytics view  
     href: analytics-views-create.md?  
   - name: Manage Analytics views  
     href: analytics-views-manage.md  
   - name: Analytics views dataset design  
     href: data-connector-dataset.md  
+  - name: Active bugs report
+    href: active-bugs-sample-report.md
+  - name: Get a count of work items
+    href: data-connector-examples.md
 - name: Power BI integration
   items:
   - name: About Power BI integration 
@@ -43,7 +49,7 @@ items:
   - name: Create a report using an OData query
     href: create-quick-report-odataq.md
     displayname: Expand
-  - name: Connect using Analytics Views
+  - name: Connect using Analytics views
     href: data-connector-connect.md
   - name: Connect using OData queries
     href: odataquery-connect.md
@@ -53,29 +59,17 @@ items:
     href: data-connector-functions.md
 - name: Sample queries, Work tracking
   items:
-  - name: Query work item data
-    href: ../extend-analytics/wit-analytics.md
-  - name: Project & organization-scoped queries
-    href: ../extend-analytics/account-scoped-queries.md
+  - name: Retrieve work item data
+    href: ../extend-analytics/analytics-recipes.md
+  - name: Retrieve work item links
+    href: ../extend-analytics/work-item-links.md
   - name: Query aggregate data
     href: ../extend-analytics/aggregated-data-analytics.md
   - name: Query trend data
     href: ../extend-analytics/querying-for-trend-data.md
-  - name: Query work item links
-    href: ../extend-analytics/work-item-links.md
-  - name: Basic work tracking queries
-    href: ../extend-analytics/analytics-recipes.md
-- name: Sample reports, Analytics views
-  items:
-  - name: Active bugs report
-    href: active-bugs-sample-report.md
-  - name: Get a count of work items
-    href: data-connector-examples.md
-  - name: Add a last refresh date
-    href: add-last-refresh-time.md
   - name: Filter on teams
     href: create-team-filter.md
-  - name: Calculate time-in-state
+  - name: Add time-in-state measures
     href: create-timeinstate-report.md
 - name: Sample reports, Power BI and OData 
   items:
@@ -83,6 +77,12 @@ items:
     href: sample-odata-overview.md
   - name: View the OData query of a built-in report
     href: ../extend-analytics/view-odata-query-analytics-report.md
+  - name: Transform Analytics data
+    href: transform-analytics-data-report-generation.md
+  - name: Refresh data, add last refresh date
+    href: add-last-refresh-time.md 
+  - name: Add a team slicer to a report
+    href: sample-boards-teamslicer.md
 - name: Sample reports, Boards
   items:
   - name: Open bugs
@@ -93,7 +93,7 @@ items:
     href: sample-boards-rollup.md
   - name: Feature progress
     href: sample-boards-featureprogress.md
-  - name: Work Items and Direct Links
+  - name: List linked work items 
     href: sample-boards-directlinks.md
   - name: Release burndown
     href: sample-boards-releaseburndown.md
@@ -104,8 +104,6 @@ items:
     displayname: CFD
   - name: Lead/Cycle time
     href: sample-boards-leadcycletime.md
-  - name: Add a team slicer
-    href: sample-boards-teamslicer.md
 - name: Sample reports, Pipelines
   items:
   - name: Outcome summary
@@ -156,30 +154,32 @@ items:
     href: sample-test-plans-tester-by-outcome.md
   - name: Configuration by outcome matrix
     href: sample-test-plans-configuration-by-outcome.md
+- name: Entity and properties reference
+  items:
+  - name: Date, Project, and User
+    href: ../analytics/entity-reference-general.md
+  - name: Work tracking (Azure Boards)  
+    href: ../analytics/entity-reference-boards.md
+  - name: Pipelines (Azure Pipelines)
+    href: ../analytics/entity-reference-pipelines.md
+  - name: Testing (Azure Test Plans)  
+    href: ../analytics/entity-reference-test-plans.md
 - name: Data model reference
   items:
   - name: Data model for Analytics
     href: ../extend-analytics/data-model-analytics-service.md
   - name: Analytics OData metadata
     href: ../extend-analytics/analytics-metadata.md
-  - name: Entity and properties reference
-    items:
-    - name: Date, Project, and User
-      href: ../analytics/entity-reference-general.md
-    - name: Work tracking (Azure Boards)  
-      href: ../analytics/entity-reference-boards.md
-    - name: Pipelines (Azure Pipelines)
-      href: ../analytics/entity-reference-pipelines.md
-    - name: Testing (Azure Test Plans)  
-      href: ../analytics/entity-reference-test-plans.md
-  - name: Analytics views dataset design
-    href: data-connector-dataset.md
-  - name: Filters applied to historical data
+  - name: Historical data representation
     href: analytics-historical-filtering.md
   - name: Supported functions & clauses
     href: ../extend-analytics/odata-supported-features.md
+  - name: OData batch support
+    href: ../extend-analytics/odata-batch.md
   - name: API versioning
     href: ../extend-analytics/odata-api-version.md
+  - name: Analytics views dataset design
+    href: data-connector-dataset.md
 - name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view  

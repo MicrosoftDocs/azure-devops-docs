@@ -3,13 +3,13 @@ title: Link types reference guide
 titleSuffix: Azure Boards
 description: Reference guide that describes all link types defined for Azure DevOps and Azure Boards. 
 ms.service: azure-devops-boards
-ms.custom: "boards-queries, cross-project, cross-service"
+ms.custom: work-items, cross-project, cross-service, engagement-fy23
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 10/18/2022
 ---
 
 
@@ -59,7 +59,7 @@ A specific field maintains a count of links for each of these link types, such a
 
 ::: moniker-end 
 
-Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you'll want to create.  To learn more about the different topologies, see [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology).
+Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you'll want to create.  To learn more about the different topologies, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology).
 
 
 <a id="work-link-types">  </a>
@@ -76,7 +76,7 @@ A work item's [*Related Link Count*](linking-attachments.md#related-link-count) 
 
 ::: moniker range="< azure-devops"  
 
-The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
+The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true). 
 
 ::: moniker-end  
 
@@ -184,7 +184,7 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../test/repeat-test-with-different-data.md). In general, you wouldn&#39;t add this link type to a scoped links control.  To learn more, see [Repeat a test with different data](../../test/repeat-test-with-different-data.md). 
+   Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../test/repeat-test-with-different-data.md). In general, you wouldn&#39;t add this link type to a scoped links control.  For more information, see [Repeat a test with different data](../../test/repeat-test-with-different-data.md). 
 
    :::column-end:::
 
@@ -268,7 +268,7 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Use to link test cases with shared steps. You [share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases) to avoid having to create multiple entries of the same sequence of steps. To learn more, see [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases).
+   Use to link test cases with shared steps. You [share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases) to avoid having to create multiple entries of the same sequence of steps. For more information, see [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases).
 
    :::column-end:::
 :::row-end:::
@@ -330,7 +330,7 @@ The following table describes the external link types you can choose when adding
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"  
-The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
+The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true). 
 ::: moniker-end  
 
 
@@ -514,7 +514,7 @@ The following table describes the external link types you can choose when adding
       Tag
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a tag that&#39;s been defined for a git commit or git repository. For more information, see [Work from the Git command prompt](../../repos/git/command-prompt.md) for more information.
+      Used to link a work item to a tag that&#39;s been defined for a git commit or git repository. For more information, see [Work from the Git command prompt](../../repos/git/command-prompt.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -708,8 +708,8 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
 ## Custom link types
 
 You can create custom link types; export and import definitions of link types; and delete, activate, deactivate, and reactivate types of links. See the following articles:  
-- [Link type element reference](../../reference/xml/link-type-element-reference.md) 
-- [Manage link types (witadmin)](../../reference/witadmin/manage-link-types.md) 
+- [Link type element reference](/previous-versions/azure/devops/reference/xml/link-type-element-reference) 
+- [Manage link types (`witadmin`)](/previous-versions/azure/devops/reference/witadmin/manage-link-types). 
 
 ::: moniker-end
 
@@ -723,7 +723,7 @@ To get a list of link types, you can use one of the supported command-line tools
 
 ### az boards work-item relation list-type  
 
-You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can list link types supported by your organization with the [az boards work-item relation list-type](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az boards work-item relation list-type [--org]
@@ -807,7 +807,7 @@ The default json format provides additional information about the attributes def
 
 ### `witadmin listlinktypes` 
 
-You can list link types supported for your project collection using the [**witadmin listlinktypes**](../../reference/witadmin/manage-link-types.md) command-line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. 
+You can list link types supported for your project collection using the [`witadmin listlinktypes`](/previous-versions/azure/devops/reference/witadmin/manage-link-types) command-line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. 
 
 Here we list the link types for the fabrikam-sever default collection: 
 
@@ -886,7 +886,7 @@ The following table provides descriptions for each of the link type attributes r
       `acyclic`
    :::column-end:::
    :::column span="2":::
-      Indicates whether the link type allows or (`true`) or restricts (`false`) circular relationships. For example, tree type links restrict circular relationships. For more information, see [LinkTypes elements reference](../../reference/xml/link-type-element-reference.md). 
+      Indicates whether the link type allows or (`true`) or restricts (`false`) circular relationships. For example, tree type links restrict circular relationships. For more information, see [LinkTypes elements reference](/previous-versions/azure/devops/reference/xml/link-type-element-reference). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -894,7 +894,7 @@ The following table provides descriptions for each of the link type attributes r
       `directional`
    :::column-end:::
    :::column span="2":::
-      Indicates whether the link type is directional (`true`) or not (`false`).  Directional link types are defined in pairs with a forward and reverse component. For more information, see [LinkTypes elements reference](../../reference/xml/link-type-element-reference.md). 
+      Indicates whether the link type is directional (`true`) or not (`false`).  Directional link types are defined in pairs with a forward and reverse component. For more information, see [LinkTypes elements reference](/previous-versions/azure/devops/reference/xml/link-type-element-reference). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -902,14 +902,14 @@ The following table provides descriptions for each of the link type attributes r
       `editable`
    :::column-end:::
    :::column span="2":::
-      Indicates whether the link type is editable (`true`) or not (`false`). You can only add and edit custom link types for on-premises deployments using [**witadmin** Manage link type](../../reference/witadmin/manage-link-types.md) command-line tool. System link types always have `editable=false`.  
+      Indicates whether the link type is editable (`true`) or not (`false`). You can only add and edit custom link types for on-premises deployments using [`witadmin` Manage link type](/previous-versions/azure/devops/reference/witadmin/manage-link-types) command-line tool. System link types always have `editable=false`.  
 :::row-end:::
 :::row:::
    :::column span="":::
       Is Active, `enabled`
    :::column-end:::
    :::column span="2":::
-      Indicates whether the link type is active (`true`) or not (`false`). You can only custom link types for on-premises deployments using the [**witadmin** Manage link type](../../reference/witadmin/manage-link-types.md) command-line tool. 
+      Indicates whether the link type is active (`true`) or not (`false`). You can only custom link types for on-premises deployments using the [`witadmin` Manage link type](/previous-versions/azure/devops/reference/witadmin/manage-link-types) command-line tool. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -949,7 +949,7 @@ The following table provides descriptions for each of the link type attributes r
       `topology`
    :::column-end:::
    :::column span="2":::
-      Specifies the topology type&mdash;dependency`, `network`, and `tree`. For descriptions, see [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology). 
+      Specifies the topology type&mdash;dependency`, `network`, and `tree`. For descriptions, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -977,5 +977,5 @@ The following table provides descriptions for each of the link type attributes r
 - [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
-- [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology)
+- [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#link-type-topologies-and-restrictions)
 - [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list)

@@ -2,8 +2,9 @@
 title: Pipeline run sequence
 description: Learn how Azure Pipelines runs your jobs, tasks, and scripts
 ms.topic: conceptual
+ms.custom: devx-track-azurecli
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
-ms.date: 02/16/2021
+ms.date: 01/04/2023
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -38,7 +39,7 @@ Let's break down each action one by one.
 ![Expand YAML templates](media/run-expansion.svg)
 
 To turn a pipeline into a run, Azure Pipelines goes through several steps in this order:
-1. First, expand [templates](templates.md) and evaluate [template expressions](templates.md).
+1. First, expand [templates](templates.md) and evaluate [template expressions](template-expressions.md).
 2. Next, evaluate dependencies at the [stage](stages.md) level to pick the first stage(s) to run.
 3. For each stage selected to run, two things happen:
     * All resources used in all jobs are gathered up and validated for [authorization](approvals.md) to run.
@@ -51,14 +52,14 @@ As runtime jobs complete, Azure Pipelines will see if there are new jobs eligibl
 If so, steps 4 - 6 repeat with the new jobs.
 Similarly, as stages complete, steps 2 - 6 will be repeated for any new stages.
 
-This ordering helps answer a common question: why can't I use certain variables in my template parameters?
+This ordering helps answer a common question: why can't I use certain variables in my [template parameters](template-parameters.md)?
 Step 1, template expansion, operates solely on the text of the YAML document.
 Runtime variables don't exist during that step.
 After step 1, template parameters have been resolved and no longer exist.
 
 It also answers another common issue: why can't I use [variables](variables.md) to resolve service connection / environment names?
 Resources are authorized before a stage can start running, so stage- and job-level variables aren't available.
-Pipeline-level variables can be used, but only those explicitly included in the pipeline.
+Pipeline-level variables can be used, but only those variables explicitly included in the pipeline.
 Variable groups are themselves a resource subject to authorization, so their data is likewise not available when checking resource authorization.
 
 ## Request an agent
@@ -92,11 +93,11 @@ If there are no available parallel slots, the job has to wait on a slot to free 
 Once a parallel slot is available, the self-hosted pool is examined for a compatible agent.
 Self-hosted agents offer [capabilities](../agents/agents.md#capabilities), which are strings indicating that particular software is installed or settings are configured.
 The pipeline has [demands](demands.md), which are the capabilities required to run the job.
-If a free agent whose capabilities match the pipeline's demands cannot be found, the job will continue waiting.
+If a free agent whose capabilities match the pipeline's demands can't be found, the job will continue waiting.
 If there are no agents in the pool whose capabilities match the demands, the job will fail.
 
 Self-hosted agents are typically reused from run to run.
-This means that a pipeline job can have side effects: warming up caches, having most commits already available in the local repo, and so on.
+For self-hosted agents, a pipeline job can have side effects such as warming up caches or having most commits already available in the local repo.
 
 ## Prepare to run a job
 
@@ -118,11 +119,11 @@ The task system routes inputs and outputs to the backing scripts.
 It also provides some common services such as altering the system path and creating new [pipeline variables](variables.md).
 
 Each step runs in its own process, isolating it from the environment left by previous steps.
-Because of this process-per-step model, environment variables are not preserved between steps.
+Because of this process-per-step model, environment variables aren't preserved between steps.
 However, tasks and scripts have a mechanism to communicate back to the agent: [logging commands](../scripts/logging-commands.md).
 When a task or script writes a logging command to standard out, the agent will take whatever action is requested.
 
-There is an agent command to create new pipeline variables.
+There's an agent command to create new pipeline variables.
 Pipeline variables will be automatically converted into environment variables in the next step.
 In order to set a new variable `myVar` with a value of `myValue`, a script can do this:
 
@@ -160,23 +161,23 @@ Before running a step, the agent will check that step's [condition](conditions.m
 By default, a step will only run when the job's status is succeeded or succeeded with issues.
 Many jobs have cleanup steps that need to run no matter what else happened, so they can specify a condition of "always()".
 Cleanup steps might also be set to run only on [cancellation](#timeouts-and-disconnects).
-A succeeding cleanup step cannot save the job from failing; jobs can never go back to success after entering failure.
+A succeeding cleanup step can't save the job from failing; jobs can never go back to success after entering failure.
 
 ## Timeouts and disconnects
 
 Each job has a timeout.
-If the job has not completed in the specified time, the server will cancel the job.
+If the job hasn't completed in the specified time, the server will cancel the job.
 It will attempt to signal the agent to stop, and it will mark the job as canceled.
 On the agent side, this means canceling all remaining steps and uploading any remaining [results](#report-and-collect-results).
 
 Jobs have a grace period known as the cancel timeout in which to complete any cancellation work.
 (Remember, steps can be marked to run [even on cancellation](#state-and-conditions).)
-After the timeout plus the cancel timeout, if the agent has not reported that work has stopped, the server will mark the job as a failure.
+After the timeout plus the cancel timeout, if the agent hasn't reported that work has stopped, the server will mark the job as a failure.
 
 Because Azure Pipelines distributes work to agent machines, from time to time, agents may stop responding to the server.
 This can happen if the agent's host machine goes away (power loss, VM turned off) or if there's a network failure.
 To help detect these conditions, the agent sends a heartbeat message once per minute to let the server know it's still operating.
-If the server doesn't receive a heartbeat for five consecutive minutes, it assumes the agent will not come back.
+If the server doesn't receive a heartbeat for five consecutive minutes, it assumes the agent won't come back.
 The job is marked as a failure, letting the user know they should retry the pipeline.
 
 ::: moniker range=">=azure-devops-2020"

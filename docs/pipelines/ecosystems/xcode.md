@@ -63,7 +63,7 @@ pool:
 
 ## Build an app with Xcode
 
-To build an app with Xcode, add the following snippet to your `azure-pipelines.yml` file. This is a minimal snippet for building an iOS project using its default scheme, for the Simulator, and without packaging. Change values to match your project configuration. See the [Xcode](../tasks/build/xcode.md) task for more about these options.
+To build an app with Xcode, add the following snippet to your `azure-pipelines.yml` file. This is a minimal snippet for building an iOS project using its default scheme, for the Simulator, and without packaging. Change values to match your project configuration. See the [Xcode](/azure/devops/pipelines/tasks/reference/xcode-v5) task for more about these options.
 
 ```yaml
 pool:
@@ -77,12 +77,12 @@ steps:
     sdk: 'iphoneos'
     configuration: 'Release'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
-    xcodeVersion: 'default' # Options: 8, 9, 10, 11, 12, default, specifyPath
+    xcodeVersion: 'default' # Options: 10, 11, 12, 13, 14, default, specifyPath
 ```
 
 ### Signing and provisioning
 
-An Xcode app must be signed and provisioned to run on a device or be published to the App Store. The signing and provisioning process needs access to your P12 signing certificate and one or more provisioning profiles. The [Install Apple Certificate](../tasks/utility/install-apple-certificate.md) and [Install Apple Provisioning Profile](../tasks/utility/install-apple-provisioning-profile.md) tasks make these available to Xcode during a build. 
+An Xcode app must be signed and provisioned to run on a device or be published to the App Store. The signing and provisioning process needs access to your P12 signing certificate and one or more provisioning profiles. The [Install Apple Certificate](/azure/devops/pipelines/tasks/reference/install-apple-certificate-v2) and [Install Apple Provisioning Profile](/azure/devops/pipelines/tasks/reference/install-apple-provisioning-profile-v1) tasks make these available to Xcode during a build. 
 
 See [Sign your mobile app](../apps/mobile/app-signing.md) to learn more. 
 
@@ -107,7 +107,7 @@ Here is an example that uses a secret variable named `myGitHubAccessToken` for t
 
 ### Testing on Azure-hosted devices
 
-Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid. 
+Add the [App Center Test](/azure/devops/pipelines/tasks/reference/app-center-test-v1) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid. 
 
 [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
 
@@ -115,7 +115,7 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 
 ### Retain artifacts with the build record
 
-Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks
+Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks
 to store your IPA with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../artifacts/pipeline-artifacts.md).
 
 ```yaml
@@ -134,7 +134,7 @@ to store your IPA with the build record or test and deploy it in subsequent pipe
 
 ### App Center
 
-Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task to distribute an app to a group of testers or beta users,
+Add the [App Center Distribute](/azure/devops/pipelines/tasks/reference/app-center-distribute-v3) task to distribute an app to a group of testers or beta users,
 or promote the app to Intune or the Apple App Store. A free [App Center](https://appcenter.ms) account is required (no payment is necessary).
 
 [!INCLUDE [temp](../tasks/includes/yaml/AppCenterDistributeV1.md)]

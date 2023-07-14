@@ -3,12 +3,13 @@ title: Query work items by history in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to query work item history and comments to support audit requirements when working in Azure Boards.
 ms.service: azure-devops-boards
+ms.custom: boards-queries, contperf-fy23
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 07/13/2022
+ms.date: 12/16/2022
 ---
 
 
@@ -19,7 +20,7 @@ ms.date: 07/13/2022
 The history of a work item tells you who opened the item, what changed, and why. This information helps you track how an item changes over time. When you enter information in the history field, provide as much information as possible to help the next work item owner understand what has happened and what they have to do.  
 
 > [!NOTE]  
-> There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the History field. The full content of the text entered into the Discussion text box is added to the History field. 
+> There is no **Discussion** work item field. To query work items with comments entered in the Discussion area, you filter on the **History** field. The full content of the text entered into the Discussion text box is added to the History field. 
 
 ## Supported operators and macros 
 
@@ -38,7 +39,7 @@ You can use either the web portal or Team Explorer to view the history of a work
 
 :::image type="content" source="media/hist-audit-query-ts-bt.png" alt-text="Screenshot of Query Editor to Search for items based on words contained in the History field.":::
 
-#### [Visual Studio 2015](#tab/visual-studio/)
+#### [Visual Studio](#tab/visual-studio/)
 <a id="tee-query-history" />
 <a id="team-explorer" />
 
@@ -46,9 +47,6 @@ You can use either the web portal or Team Explorer to view the history of a work
 The **Query Editor** isn't available when you're connected to GitHub or third-party Git repository. Also, it isn't available from Visual Studio 2019 under the following conditions:   
 * If you're set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](../work-items/set-work-item-experience-vs.md).  
 * If you're set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
- 
-
-**Visual Studio/Team Explorer and Team Explorer Everywhere**
 
 ![Screenshot of Query Editor to Search for items based on words contained in the History field in Team Explorer.](media/hist-audit-query-team-explorer.png) 
 
@@ -119,8 +117,8 @@ You can filter for work items by the date on which they were changed or for a sp
 
 ### Tips for using the query editor
 
-- Type the complete word or phrase that is specified in the **History** field of those work items that you want to find.
-- Enter the full text for the word that you want to search. The **History** field is indexed for full-text search. If you enter only a partial word, the query won't return work items that contain the full word. For example, if the **History** field contains the phrase *reproducible behavior* and you search for *repro*, the work item won't be found. However, if you search for the complete word *reproducible*, the work item will be found. You can also search for the string with a wild card, such as `repro*`. 
+- Enter the complete word or phrase that is specified in the **History** field of those work items that you want to find.
+- Enter the full text for the word that you want to search. The **History** field is indexed for full-text search. If you enter only a partial word, the query won't return work items that contain the full word. For example, if the **History** field contains the phrase *reproducible behavior* and you search for *repro*, the work item won't be found. However, if you search for the complete word *reproducible*, the work item can be found. You can also search for the string with a wild card, such as `repro*`. 
 - The query editor ignores common words or stop words as defined in  [Configure and Manage Stopwords and Stoplists for Full-Text Search](/sql/relational-databases/search/configure-and-manage-stopwords-and-stoplists-for-full-text-search).
 - On the query editor toolbar, choose ![Run query](../media/icons/run_query.png) or ![Run query, earlier version](../media/icons/run_query_te.png) icon and confirm that your query returns expected results. 
 - If you don&#39;t receive the results you expect, adjust the word or phrase that you entered, and run the query again. 
@@ -334,7 +332,7 @@ You can use the following fields to filter queries and create reports. Several o
    <a id="test-suite-audit"/>Test Suite Audit
    :::column-end:::
    :::column span="2":::
-   Tracks other operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.  
+   Tracks other operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There's a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.  
    Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
    :::column-end:::
    :::column span="1":::

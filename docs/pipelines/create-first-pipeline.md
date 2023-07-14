@@ -1,12 +1,12 @@
 ---
 title: Create your first pipeline
-ms.custom: seodec18, devx-track-python, devx-track-azurecli
+ms.custom: seodec18, devx-track-azurecli, py-fresh-zinc
 description: Create your first pipeline in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 09/02/2021
+ms.date: 06/06/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -242,7 +242,87 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 1. Azure DevOps will automatically start a pipeline run. Wait for the run to finish.
 
---- 
+---
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+## View and manage your pipelines
+
+You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu to go to the pipelines landing page.
+
+:::image type="content" source="get-started/media/pipelines-overview.png" alt-text="Screenshot of pipelines landing page.":::
+
+From the pipelines landing page you can view pipelines and pipeline runs, create and import pipelines, manage security, and drill down into pipeline and run details.
+
+Choose **Recent** to view recently run pipelines (the default view), or choose **All** to view all pipelines.
+
+![Screenshot of options for viewing pipeline runs on the pipelines landing page.](get-started/media/view-pipelines.png)
+
+Select a pipeline to manage that pipeline and [view the runs](#view-pipeline-details). Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
+
+![Screenshot of recently run pipelines.](get-started/media/pipelines-overview-pipeline-context-menu.png)
+
+Select **Runs** to view all pipeline runs. You can optionally filter the displayed runs.
+
+![Screenshot of pipeline runs.](get-started/media/all-pipeline-runs.png)
+
+Select a pipeline run to view information about that run.
+
+You can choose to **Retain** or **Delete** a run from the context menu. For more information on run retention, see [Build and release retention policies](policies/retention.md).
+
+![Screenshot of pipeline run context menu.](get-started/media/pipeline-run-context-menu.png)
+
+### View pipeline details
+
+The details page for a pipeline allows you to view and manage that pipeline.
+
+![Screenshot of pipeline details page.](get-started/media/pipeline-overview.png)
+
+Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](get-started/yaml-pipeline-editor.md).
+
+### View pipeline run details
+
+From the pipeline run summary you can view the status of your run, both while it is running and when it is complete.
+
+![Screenshot of pipeline run summary.](get-started/media/pipeline-run-summary.png)
+
+From the summary pane you can view job and stage details, download artifacts, and navigate to linked commits, test results, and work items.
+
+#### Jobs and stages
+
+The jobs pane displays an overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example, the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
+
+![Screenshot of pipeline jobs and stages.](get-started/media/pipeline-jobs-pane.png)
+
+Choose a job to see the steps for that job.
+
+![Screenshot of pipeline tasks.](get-started/media/pipeline-steps-list.png)
+
+From the steps view, you can review the status and details of each step. From the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: you can toggle timestamps or view a raw log of all steps in the pipeline.
+
+![Screenshot of pipeline tasks content menu.](get-started/media/pipeline-steps-context-menu.png)
+
+#### Cancel and re-run a pipeline
+
+If the pipeline is running, you can cancel it by choosing **Cancel**. If the run has completed, you can re-run the pipeline by choosing **Run new**.
+
+![Screenshot of cancelling a pipeline run.](get-started/media/cancel-pipeline-run.png)
+
+<a name="download-logs"></a>
+#### Pipeline run more actions menu
+
+From the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: menu you can download logs, add tags, edit the pipeline, delete the run, and configure [retention](policies/retention.md) for the run.
+
+![Screenshot of pipeline run summary page more actions menu.](get-started/media/pipeline-run-summary-context-menu.png)
+
+> [!NOTE]
+> You can't delete a run if the run is retained. If you don't see **Delete**, choose **Stop retaining run**, and then delete the run. If you see both **Delete** and **View retention releases**, one or more configured retention policies still apply to your run. Choose **View retention releases**, delete the policies (only the policies for the selected run are removed), and then delete the run.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 [!INCLUDE [include](includes/get-status-badge.md)]
 
@@ -270,7 +350,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 ## Prerequisites
 
-* A [self-hosted Windows agent](agents/v2-windows.md).
+* A [self-hosted Windows agent](agents/windows-agent.md).
 
 <a name="initialize-repo"></a>
 ## Initialize your repository
@@ -963,7 +1043,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 * Services
   * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
-  * Git service providers such as GitHub and Bitbucket Cloud
+  * Git service providers such as Azure Repos Git, GitHub, and Bitbucket Cloud
   * Subversion
 
 ::: moniker-end

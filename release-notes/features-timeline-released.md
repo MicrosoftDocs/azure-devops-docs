@@ -2,7 +2,8 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 10/11/2022
+ms.date: 7/11/2023
+
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,12 +38,135 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="9"><a href="2023/sprint-224-update.md" data-raw-source="[11 July 2023](2023/sprint-224-update.md)"> 11 July 2023</a></td>
+    <td>Lift secret expiration check on Azure DevOps OAuth</td><td>General</td><td>Future</td></tr>
+    <td>Alert dismissals for dependency scanning alerts in Advanced Security</td><td>General</td><td>N/A</td></tr>
+    <td>Copy link to work item</td><td>Boards</td><td>Future</td></tr>
+    <td>Kubernetes tasks now support kubelogin</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use Service Principal in Agent VM extension</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updates to YAML cron schedules</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Disable a check</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improvements to Approval REST API</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Removing "Edit policies" permission to branch creator</td><td>Repos</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="8"><a href="2023/sprint-223-update.md" data-raw-source="[21 June 2023](2023/sprint-223-update.md)"> 21 June 2023</a></td>
+    <td>Organization profile image</td><td>General</td><td>Future</td></tr>
+    <td>Checks user experience improvements</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Scalable Invoke Azure Function and REST API checks changes</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Instructions for manual pre-installation of Node 6 on Pipeline agents</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline task changelog</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Release tasks use Microsoft Graph API</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Specify agent version in Agent VM extension</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Introducing resolved as completed in burndown and burnup charts</td><td>Reporting</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="7"><a href="2023/sprint-222-update.md" data-raw-source="[6 June 2023](2023/sprint-222-update.md)"> 6 June 2023</a></td>
+    <td>GitHub Advanced Security for Azure DevOps (public preview)</td><td>General</td><td>N/A</td></tr>
+    <td>Fixed a bug that allowed users to bypass restrict global personal access token (PAT) creation</td><td>General</td><td>Future</td></tr>
+    <td>Markdown support for comments (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>Improvements to YAML pipeline traceability</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Automatic tokens created for Kubernetes Service Connection</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline agents can be registered using a Service Principal</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Preview of macOS 13 Ventura for Azure Pipeline hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
+<tr>
+    <td rowspan="4"><a href="2023/sprint-221-update.md" data-raw-source="[9 May 2023](2023/sprint-221-update.md)"> 9 May 2023</a></td>
+    <td>Swimlane rules is generally available</td><td>Boards</td><td>Future</td></tr>
+    <td>Pipeline agents can be registered using a Service Principal</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline settings audit improvements</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pull Request widget for multiple repos is now generally available</td><td>Reporting</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="3"><a href="2023/sprint-220-update.md" data-raw-source="[20 April 2023](2023/sprint-220-update.md)"> 20 April 2023</a></td>
+    <td>Sticky "Save" and "Save and Close" button </td><td>Boards</td><td>Future</td></tr>
+    <td>Stage quick actions</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Analytics Views are now generally available</td><td>Reporting</td><td>Future</td></tr>
+<tr>
+    <td rowspan="4"><a href="2023/sprint-219-update.md" data-raw-source="[31 March 2023](2023/sprint-219-update.md)"> 31 March 2023</a></td>
+    <td>Service principal and managed identity support in Azure DevOps </td><td>General</td><td>Future</td></tr>
+    <td>REST API support for connecting GitHub repositories (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>Swimlane rules (private preview) </td><td>Boards</td><td>Future</td></tr>
+    <td>Pipeline Agent end of support for Debian 9, Fedora 32, macOS 10.14 and others</td><td>Pipelines</td><td>Future</td></tr>
+ <tr>
+    <td rowspan="5"><a href="2023/sprint-218-update.md" data-raw-source="[8 March 2023](2023/sprint-218-update.md)"> 8 March 2023</a></td>
+    <td>Node runner download task</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updated TFX Node runner validation</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Service hook for job state change</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improved security when creating GitHub Enterprise Server (hosted Pipelines)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Dashboards last accessed date and modified By</td><td>Reporting</td><td>Future</td></tr>
+<tr>
+    <td rowspan="5"><a href="2023/sprint-217-update.md" data-raw-source="[17 February 2023](2023/sprint-217-update.md)"> 17 February 2023</a></td>
+    <td>License source column in user list export</td><td>General</td><td>Future</td></tr>
+    <td>Interactive boards reports</td><td>Boards</td><td>Future</td></tr>
+    <td>Search for filter stages in side panel</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline agent v3 (.NET 6) rolling out</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pull request widget for multiple repos (private preview)</td><td>Reporting</td><td>Future</td></tr>
+<tr>
+    <td rowspan="5"><a href="2023/sprint-216-update.md" data-raw-source="[7 February 2023](2023/sprint-216-update.md)"> 7 February 2023</a></td>
+    <td>New save comments permission</td><td>Boards</td><td>Future</td></tr>
+    <td>Red Hat 6 will no longer receive Pipeline agent updates</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline stages side panel</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Restrict opening protected resources to resource administrators</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Copy Dashboard</td><td>Reporting</td><td>Future</td></tr>   
+<tr>
+    <td rowspan="9"><a href="2023/sprint-215-update.md" data-raw-source="[25 January 2023](2023/sprint-215-update.md)"> 25 January 2023</a></td>
+    <td>Prevent editing of shareable picklists fields</td><td>Boards</td><td>Future</td></tr>
+    <td>Swimlane colors</td><td>Boards</td><td>Future</td></tr>
+    <td>Experience improvements to pipeline permissions</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Ability to disable masking for short secrets</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New PAT Scope for managing pipeline authorization and approvals and checks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Variables as inputs in checks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Script to self-validate pipeline agent version</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline run status overview icon</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Support for subpages table</td><td>Wiki</td><td>Future</td></tr>
+<tr>
+    <td rowspan="7"><a href="2023/sprint-214-update.md" data-raw-source="[12 January 2023](2023/sprint-214-update.md)"> 12 January 2023</a></td>
+    <td>Extensions should display their Scopes</td><td>General</td><td>Future</td></tr>
+    <td>Card resize logic in Delivery Plans</td><td>Boards</td><td>Future</td></tr>
+    <td>Batch update improvements</td><td>Boards</td><td>Future</td></tr>
+    <td>Batch delete API (GA)</td><td>Boards</td><td>Future</td></tr>
+    <td>Support for Tokyo version of ServiceNow</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New predefined system variable</td><td>Pipelines</td><td>Future</td></tr>
+    <td>General Availability of templates support in YAML editor</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="11"><a href="2022/sprint-213-update.md" data-raw-source="[8 December 2022](2022/sprint-213-update.md)"> 8 December 2022</a></td>
+    <td>Copy comment links</td><td>Boards</td><td>Future</td></tr>
+    <td>Container Registry service connections can now use Azure Managed Identities</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Audit log events related to pipeline permissions</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Ensure your organization only uses YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Service hook for job state change</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New PAT scope required to update pipeline General Settings</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Fine-grained access management for agent pools</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Prevent granting all pipelines access to protected resources</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improved security when building pull requests from forked GitHub repositories</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Macos-latest label will point to macos-12 image</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Ubuntu-latest label will point to ubuntu-22.04 image</td><td>Pipelines</td><td>N/A</td></tr>
+<tr>
+    <td rowspan="8"><a href="2022/sprint-212-update.md" data-raw-source="[2 November 2022](2022/sprint-212-update.md)"> 2 November 2022</a></td>
+    <td>Edit work item link types</td><td>Boards</td><td>Future</td></tr>
+    <td>Create temporary query REST endpoint</td><td>Boards</td><td>Future</td></tr>
+    <td>Batch delete API (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>@CurrentIteration macro in Delivery Plans</td><td>Boards</td><td>Future</td></tr>
+    <td>Template Expressions in Repository Resource Definition</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Template Expressions in Container Resource Definition</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Audit Events for Changes to Approvals</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Task library exposes Agent hosting model</td><td>Pipelines</td><td>Future</td></tr>
+</tr>
     <td rowspan="5"><a href="2022/sprint-211-update.md" data-raw-source="[11 October 2022](2022/sprint-211-update.md)"> 11 October 2022</a></td>
     <td>Create personal access tokens to deploy to the Marketplace</td><td>Platform</td><td>Future</td></tr>
     <td>Option to maintain hierarchy with filters</td><td>Boards</td><td>Future</td></tr>
     <td>Copy work item attachment URL</td><td>Boards</td><td>Future</td></tr>
     <td>Pipeline Agent supports Group Managed Service Accounts as service account</td><td>Pipelines</td><td>Future</td></tr>
     <td>Show Parent in Query Results Widget</td><td>Reporting</td><td>Future</td></tr>
+</tr>
+    <td rowspan="6"><a href="2022/sprint-210-update.md" data-raw-source="[4 October 2022](2022/sprint-210-update.md)"> 4 October 2022</a></td>
+    <td>All Public REST APIs support granular PAT scopes</td><td>General</td><td>Future</td></tr>
+    <td>Move to column and move to swimlane</td><td>Boards</td><td>Future</td></tr>
+    <td>Windows PowerShell task performance improvement</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipelines Agent on .NET 6 pre-announcement</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Node 16 task runner in pipeline agent</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New user interface for upstream package search</td><td>Artifacts</td><td>Future</td></tr>
 </tr>
     <td rowspan="8"><a href="2022/sprint-209-update.md" data-raw-source="[12 September 2022](2022/sprint-209-update.md)"> 12 September 2022</a></td>
     <td>Increase Delivery Plans team limit from 15 to 20</td><td>Boards</td><td>Future</td></tr>
@@ -4506,17 +4630,27 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops" data-raw-source="[2022 RC1](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RC1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RTW</a></td>
+          <td>December 6, 2022</td>
+          <td>19.205.33122.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RC2](azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true#azure-devops-server-2022-rc2-release-date-october-25-2022)">2022 RC2</a></td>
+          <td>October 25, 2022</td>
+          <td>19.205.33011.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RC1](azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true#azure-devops-server-2022-rc1-release-date-august-9-2022)">2022 RC1</a></td>
           <td>August 9, 2022</td>
           <td>19.205.32728.1</td>
         </tr>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops#azure-devops-server-2020-update-12-release-date-may-17-2022" data-raw-source="[2020.1.2 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops#azure-devops-server-2020-update-12-release-date-may-17-2022)">2020.1.2</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops#azure-devops-server-2020-update-12-release-date-may-17-2022&preserve-view=true" data-raw-source="[2020.1.2 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops#azure-devops-server-2020-update-12-release-date-may-17-2022)">2020.1.2</a></td>
           <td>May 17, 2022</td>
           <td>18.181.32404.7</td>
         </tr>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops#azure-devops-server-202002-release-date-may-17-2022" data-raw-source="[2020.0.2 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops#azure-devops-server-202002-release-date-may-17-2022)">2020.0.2</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops#azure-devops-server-202002-release-date-may-17-2022&preserve-view=true" data-raw-source="[2020.0.2 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops#azure-devops-server-202002-release-date-may-17-2022)">2020.0.2</a></td>
           <td>May 17, 2022</td>
           <td>18.170.32404.6</td>
         </tr>

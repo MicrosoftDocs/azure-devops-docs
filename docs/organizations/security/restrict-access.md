@@ -5,19 +5,19 @@ description: How to set permissions to grant or restrict access to select build,
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.topic: overview
 ms.subservice: azure-devops-security
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/10/2022 
+ms.date: 03/23/2023 
 --- 
 
 # Grant or restrict access using permissions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can grant or restrict access to resources that you manage in Azure DevOps. You may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
+You can grant or restrict access to resources that you manage in Azure DevOps. You may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need more security requirements not met by these assignments.
 
-If you're new to administrating permissions and groups, review [Get started with permissions, access, and security groups](about-permissions.md)to learn about permission states and inheritance.
+If you're new to administrating permissions and groups, review [Get started with permissions, access, and security groups](about-permissions.md) to learn about permission states and inheritance.
 
 In this article you learn how to do the following tasks: 
 
@@ -26,7 +26,7 @@ In this article you learn how to do the following tasks:
 > [!div class="checklist"]
 > * Recommended method for granting and restricting permissions
 > * Delegate tasks by assigning select permissions to specific roles 
-> * Limit visibility to organization information
+> * Limit user visibility to organization information
 > * Limit people picker to project users and groups 
 > * Restrict access to view or modify objects
 > * Restrict modification of work items based on a user or group
@@ -50,7 +50,7 @@ For maintenance purposes, we recommend you use either the built-in security grou
 
 You can't change the permission settings for the Project Administrators group or the Project Collection Administrators group, which is by design. However, for all other groups, you can change the permissions. 
 
-If you manage a small number of users, then you may find changing individual permissions a valid option. However, custom security groups allow you to better track roles and permissions assigned to those roles.  
+If you manage a few users, then you may find changing individual permissions a valid option. However, custom security groups allow you to better track roles and permissions assigned to those roles.  
 
 ## Delegate tasks to specific roles
 
@@ -109,7 +109,7 @@ To delegate tasks to other members within your organization, consider creating a
    :::column-end:::
    :::column span="2":::
    Create repositories, Force push, and Manage permissions  
-   See [Set Git repository permissions ](../../repos/git/set-git-repository-permissions.md)
+   See [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -198,9 +198,9 @@ To delegate tasks to other members within your organization, consider creating a
    
    You can also grant permissions to manage permissions for the following objects:
    
-   - [Set Git repository permissions ](../../repos/git/set-git-repository-permissions.md)
+   - [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
    - [Manage Git branch permissions](../../repos/git/branch-permissions.md)
-   - [Set TFVC repository permissions ](../../repos/tfvc/set-tfvc-repository-permissions.md)
+   - [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)
    - [Administer build and release permissions](../../pipelines/policies/set-permissions.md)
    - [Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md).
 
@@ -211,11 +211,15 @@ To delegate tasks to other members within your organization, consider creating a
 
 ::: moniker range="azure-devops" 
 
-## Limit visibility to organization and project information
+## Limit user visibility to organization and project information
+
+[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
 
 By default, users added to an organization can view all organization and project information and settings. To restrict access to only those projects that you add users to, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
 With this feature enabled, users added to the **Project-Scoped Users** group can't view most **Organization settings** and can only connect to those projects to which they've been added. 
+
+[!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 
 ::: moniker-end
 
@@ -223,7 +227,7 @@ With this feature enabled, users added to the **Project-Scoped Users** group can
 
 ## Limit people picker to project users and groups
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those added to a project. people pickers support the following Azure DevOps functions: 
+For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers support searching all users and groups added to Azure AD, not just those users or groups added to a project. People pickers support the following Azure DevOps functions: 
 
 - Selection of a user identity from a work tracking identity field such as **Assigned To**  
 - Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
@@ -232,9 +236,9 @@ For organizations that manage their users and groups using Azure Active Director
 As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker](../../notifications/media/at-mention/identity-selector.png)  
+> ![Screenshot of people picker](../../organizations/notifications/media/at-mention/identity-selector.png)  
 
-Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).
+Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they're connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).
 
 ::: moniker-end
  

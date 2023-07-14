@@ -18,10 +18,10 @@ A pipeline is made up of stages. A pipeline author can control whether a stage s
 
  Pipelines rely on resources such as environments, service connections, agent pools, variable groups, and secure files. Checks enable the _resource owner_ to control if and when a stage in any pipeline can consume a resource. As an owner of a resource, you can define checks that must be satisfied before a stage consuming that resource can start. For example, a _manual approval check_ on an [environment](environments.md) would ensure that deployment to that environment only happens after the designated user(s) has reviewed the changes being deployed. 
 
-A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. Checks are re-evaluation based on the retry interval specified in each check. If all checks are not successful until the **timeout** specified, then that stage is not executed.
+A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. Checks are reevaluated based on the retry interval specified in each check. If all checks aren't successful until the **timeout** specified, then that stage is not executed.
 If any of the checks terminally fails (for example, if you reject an approval on one of the resources), then that stage is not executed. 
 
-Approvals and other checks are not defined in the yaml file. Users modifying the pipeline yaml file cannot modify the checks performed before start of a stage. Administrators of resources manage checks using the web interface of Azure Pipelines.
+Approvals and other checks aren't defined in the yaml file. Users modifying the pipeline yaml file can't modify the checks performed before start of a stage. Administrators of resources manage checks using the web interface of Azure Pipelines.
 
 > [!IMPORTANT]
 > Checks can be configured on environments, service connections, repositories, variable groups, secure files, and agent pools.
@@ -30,9 +30,9 @@ Approvals and other checks are not defined in the yaml file. Users modifying the
 
 ## Approvals
 
-You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments.
+You can manually control when a stage should run using approval checks. This check is commonly used to control deployments to production environments.
 
-1. In your Azure DevOps project, go to the resource (eg environment) that needs to be protected. 
+1. In your Azure DevOps project, go to the resource (for example, environment) that needs to be protected. 
 
 2. Navigate to **Approvals and Checks** for the resource.
 
@@ -46,23 +46,23 @@ Using the advanced options, you can configure minimum number of approvers to com
 
 You can also restrict the user who requested (initiated or created) the run from completing the approval. This option is commonly used for segregation of roles amongst the users.
 
-When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. Users configured as approvers must review and approve or reject the deployment. If you have multiple runs executing simultaneously, you must approve or reject each of them independently. If all required approvals are not complete within the **Timeout** specified for the approval and all other checks succeed, the stage is marked skipped.
+When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. Users configured as approvers must review and approve or reject the deployment. If you have multiple runs executing simultaneously, you must approve or reject each of them independently. If all required approvals aren't completed within the **Timeout** specified for the approval and all other checks succeed, the stage is marked as skipped.
 
 ## Branch control
 
-Using the branch control check, you can ensure all the resources linked with the pipeline are built from the **allowed** branches and that the branches have protection enabled. This helps in controlling the release readiness and quality of deployments. In case multiple resources are linked with the pipeline, source for all the resources is verified. If you have linked another pipeline, then the branch of the specific run being deployed is verified for protection.
+Using the branch control check, you can ensure all the resources linked with the pipeline are built from the **allowed** branches and that the branches have protection enabled. This check helps in controlling the release readiness and quality of deployments. In case multiple resources are linked with the pipeline, source for all the resources is verified. If you've linked another pipeline, then the branch of the specific run being deployed is verified for protection.
 
 To define the branch control check:
 
-1. In your Azure DevOps project, go to the resource (eg environment) that needs to be protected. 
+1. In your Azure DevOps project, go to the resource (for example, environment) that needs to be protected. 
 
 2. Navigate to **Approvals and Checks** for the resource.
 
-3. Choose the **Branch control** check and provide a comma-separated list of allowed branches. You can mandate that the branch should have protection enabled and the behavior of the check-in case protection status for one of the branches is not known.
+3. Choose the **Branch control** check and provide a comma-separated list of allowed branches. You can mandate that the branch should have protection enabled. You can also define the behavior of the check in case protection status for one of the branches isn't known.
 
 :::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
 
-At run time, the check would validate branches for all linked resources in the run against the allowed list. If any of the branches does not match the criteria, the check fails and the stage is marked failed. 
+At run time, the check would validate branches for all linked resources in the run against the allowed list. If any of the branches doesn't match the criteria, the check fails and the stage is marked failed. 
 
 > [!NOTE]
 > The check requires the branch names to be fully qualified. Make sure the format for branch name is `refs/heads/<branch name>`
@@ -73,38 +73,41 @@ In case you want all deployments to your environment to happen in a specific tim
 
 :::image type="content" source="media/checks/business-hours-check.png" alt-text="Configuring business hours check.":::
 
-If execution of the stage has not started at the end of business hours (held up by to some other check), then the business hours approval is automatically withdrawn and a re-evaluation is scheduled for the next day.
-The check fails if execution of the stage does not start within the **Timeout** period specified for the check, and the stage is marked failed.
+If execution of the stage hasn't started at the end of business hours (held up by to some other check), then the business hours approval is automatically withdrawn and a reevaluation is scheduled for the next day.
+The check fails if execution of the stage doesn't start within the **Timeout** period specified for the check, and the stage is marked as  failed.
 
 ## Invoke Azure function
 
 Azure functions are the serverless computation platform offered by Azure. With Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
-Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check-in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](../tasks/utility/azure-function.md)
+Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check-in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](/azure/devops/pipelines/tasks/reference/azure-function-v1)
 
 :::image type="content" source="media/checks/azure-function-check.png" alt-text="Configuring Azure function check.":::
 
-The checks fail if the stage has not started execution within the specified **Timeout** period. See [Azure Function App task](../tasks/deploy/azure-function-app.md) for more details.
+The checks fail if the stage has not started execution within the specified **Timeout** period. See [Azure Function App task](/azure/devops/pipelines/tasks/reference/azure-function-app-v1) for more details.
 
 > [!NOTE]
-> User defined pipeline variables are not accessbile to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
+> User defined pipeline variables are not accessible to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
 
+[Read more about the recommended way to use Invoke Azure Function checks](invoke-checks.md).
 
 ## Invoke REST API
 
-Invoke REST API check enables you to integrate with any of your existing services. Periodically, make a call to a REST API and continue if it returns a successful response. [Learn More](../tasks/utility/http-rest-api.md)
+Invoke REST API check enables you to integrate with any of your existing services. Periodically, make a call to a REST API and continue if it returns a successful response. [Learn More](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1)
 
-The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fail if the stage has not started execution within the specified **Timeout** period. See [Invoke REST API task](../tasks/utility/http-rest-api.md) for more details.
+The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fail if the stage has not started execution within the specified **Timeout** period. See [Invoke REST API task](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1) for more details.
 
 > [!NOTE]
-> User defined pipeline variables are not accessbile to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
+> User defined pipeline variables are not accessible to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
+
+[Read more about the recommended way to use Invoke REST API checks](invoke-checks.md).
 
 ## Query Azure Monitor Alerts
 Azure Monitor offers visualization, query, routing, alerting, autoscale, and automation on data from the Azure infrastructure and each individual Azure resource. Alerts are a standard means to detect issues with the health of infrastructure or application, and take corrective actions. 
 Canary deployments and staged rollouts are common deployment strategies used to lower risk of regressions to critical applications. After deploying to a stage (set of customers), the application is observed for a period of time. Health of the application after deployment is used to decide whether the update should be made to the next stage or not.
 
-Query Azure Monitor Alerts helps you observe Azure Monitor and ensure no alerts are raised for the application after a deployment. The check succeeds if no alert rules are activated at the time of evaluation. [Learn More](../tasks/utility/azure-monitor.md)
+Query Azure Monitor Alerts helps you observe Azure Monitor and ensure no alerts are raised for the application after a deployment. The check succeeds if no alert rules are activated at the time of evaluation. [Learn More](/azure/devops/pipelines/tasks/reference/azure-monitor-v1)
 
-The evaluation is repeated after **Time between evaluations** setting in control options. The checks fail if the stage has not started execution within the specified **Timeout** period.  
+The evaluation is repeated after **Time between evaluations** setting in control options. The checks fail if the stage hasn't started execution within the specified **Timeout** period.  
 
 ## Required template
 
@@ -214,7 +217,7 @@ stages:
     - script: Hey!
 ```
 
-If you do not specify a `lockBehavior`, the default value of `runLatest` is used. 
+If you don't specify a `lockBehavior`, the default value of `runLatest` is used. 
 
 :::moniker-end
 
@@ -235,6 +238,46 @@ Any other stages that tried to take the lock will be canceled.
 The **servicenow change management** check allows for an integration of ServiceNow change management process in the pipelines. 
 By adding the check, a new change request in ServiceNow can be automatically created at the start of the stage. The pipeline waits for the change process to complete before starting the stage.
 More details are available [here](../release/approvals/servicenow.md).
+
+
+## Multiple Approvals and Checks
+
+A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed.
+
+A single final negative decision causes the pipeline to be denied access and the stage to fail. The decisions of all Approvals and Checks except for Invoke Azure Function / REST API and [Exclusive lock](#exclusive-lock) are final.
+
+When using Invoke Azure Function / REST API checks in the [recommended way](invoke-checks.md), their access decisions are also final. 
+
+When you specify _Time between evaluations_ for an Invoke Azure Function / REST API check to be non-zero, the check's decision is non-final. This scenario is worth exploring. 
+
+Let us look at an example. Imagine your YAML pipeline has a stage that uses a Service Connection. This Service Connection has two checks configured for it:
+1. An asynchronous check, named _External Approval Granted_, that verifies that [an external approval is given](invoke-checks.md#external-approval-must-be-granted) and is configured in the recommended way.
+1. A synchronous check, named _Deployment Reason Valid_, that verifies that [the deployment reason is valid](invoke-checks.md#deployment-reason-must-be-valid) and for which you set the _Time between evaluations_ to 7 minutes.
+
+A possible checks execution is shown in the following diagram.
+:::image type="content" source="media/checks/checks-timeline.png" alt-text="Diagram that shows the timeline of an asynchronous and a synchronous checks' executions.":::
+
+In this execution:
+- Both checks, _External Approval Granted_ and _Deployment Reason Valid_, are invoked at the same time. _Deployment Reason Valid_ fails immediately, but because _External Approval Granted_ is pending, it will be retried. 
+- At minute 7, _Deployment Reason Valid_ is retried and this time it passes. 
+- At minute 15, _External Approval Granted_ calls back into Azure Pipelines with a successful decision. Now, both checks pass, so the pipeline is allowed to continue to deploy the stage.
+
+Let us look at another example, involving two synchronous checks. Assume your YAML pipeline has a stage that uses a Service Connection. This Service Connection has two checks configured for it:
+1. A synchronous check, named _Sync Check 1_, for which you set the _Time between evaluations_ to 5 minutes.
+1. A synchronous check, named _Sync Check 2_, for which you set the _Time between evaluations_ to 7 minutes.
+
+A possible checks execution is shown in the following diagram.
+:::image type="content" source="media/checks/checks-timeline-sync.png" alt-text="Diagram that shows the timeline of two synchronous checks' executions.":::
+
+In this execution:
+- Both checks, _Sync Check 1_ and _Sync Check 2_, are invoked at the same time. _Sync Check 1_ passes, but it will be retried, because _Sync Check 2_ fails. 
+- At minute 5, _Sync Check 1_ is retried but fails, so it will be retried.
+- At minute 7, _Sync Check 2_ is retried and succeeds. The pass decision is valid for 7 minutes. If _Sync Check 1_ doesn't pass in this time interval, _Sync Check 2_ will be retried.
+- At minute 10, _Sync Check 1_ is retried but fails, so it will be retried.
+- At minute 14, _Sync Check 2_ is retried and succeeds. The pass decision is valid for 7 minutes. If _Sync Check 1_ doesn't pass in this time interval, _Sync Check 2_ will be retried.
+- At minute 15, _Sync Check 1_ is retried and succeeds. Now, both checks pass, so the pipeline is allowed to continue to deploy the stage.
+
+Let us look at an example that involves an Approval and a synchronous check. Imagine you configured a synchronous check and an Approval for a Service Connection with a _Time between evaluations_ of 5 minutes. Until the approval is given, your check will run every 5 minutes, regardless of decision.
 
 ## FAQ
 

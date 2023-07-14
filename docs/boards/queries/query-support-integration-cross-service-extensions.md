@@ -5,8 +5,8 @@ description: Learn about extra features, like cross-service operations, that are
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -39,7 +39,7 @@ Notifications support query filter criteria so that you can customize when you'l
 
 :::image type="content" source="media/about-queries/query-filter-notifications.png" alt-text="Screenshot of query filters in a notification subscription.":::
 
-To learn more, see [Manage your personal notifications](../../notifications/manage-your-personal-notifications.md) 
+For more information, see [Manage your personal notifications](../../organizations/notifications/manage-your-personal-notifications.md) 
 
 <a id="wiql" />
 
@@ -82,7 +82,7 @@ To learn more about WIQL, see [Syntax for the Work Item Query Language (WIQL)](w
  
 ### `.wiq` file structure
 
- The following syntax shows the structure of the `.wiq` file.  For details on each `WorkItemQuery` syntax element, see [Define a work item query to add to a process template](../../reference/process-templates/define-work-item-query-process-template.md)
+ The following syntax shows the structure of the `.wiq` file.  For details on each `WorkItemQuery` syntax element, see [Define a work item query to add to a process template](/previous-versions/azure/devops/reference/process-templates/define-work-item-query-process-template)
   
 > [!div class="tabbedCodeSnippets"]
 > ```XML 
@@ -105,11 +105,11 @@ The following Azure DevOps Marketplace extensions work with managed queries to p
 ::: moniker range=">= azure-devops-2019"
 - [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=realdolmen.EdTro-AzureDevOps-Extensions-QueryBasedBoards-Public) supports viewing a flat-list query of work items as a Kanban board. The query can contain different work item types and work items defined in different projects.  
 ::: moniker-end
-- [**Query Tile PRO**](https://marketplace.visualstudio.com/items?itemName=realdolmen.EdTro-AzureDevOps-Extensions-QueryBasedBoards-Public): Adds the **Query Tile PRO** widget to the widget catalog for dashboards. This widget provides support for all query types (not just flat list queries) and provides more options to configure calculated values on the widget.  
+- [**Query Tile PRO**](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-Query-Tile-PRO): Adds the **Query Tile PRO** widget to the widget catalog for dashboards. This widget provides support for all query types (not just flat list queries) and provides more options to configure calculated values on the widget.  
   
-- [**Wiql to OData**](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata): Adds the **Translate to OData** option to the **More commands** menu on the Query Editor and Query Results pages. You can then use this query or augment it to retrieve the work items from the Analytics service. To learn more, see [Query your work tracking data using OData Analytics](../../report/extend-analytics/wit-analytics.md).   
+- [**Wiql to OData**](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata): Adds the **Translate to OData** option to the **More commands** menu on the Query Editor and Query Results pages. You can then use this query or augment it to retrieve the work items from the Analytics service. For more information, see [Query your work tracking data using OData Analytics](../../report/extend-analytics/wit-analytics.md).   
 
-- [**Open in Power BI**](https://marketplace.visualstudio.com/items?itemName=stansw.vsts-open-in-powerbi): Adds the **Open in Power BI** option to the **More commands** menu on the Query Editor and Query Results pages. You can then use Power BI to generate reports based on the Analytics work tracking data. You can add these reports to an Azure DevOps dashboard. To learn more, see [Query your work tracking data using OData Analytics](../../report/extend-analytics/wit-analytics.md).    
+- [**Open in Power BI**](https://marketplace.visualstudio.com/items?itemName=stansw.vsts-open-in-powerbi): Adds the **Open in Power BI** option to the **More commands** menu on the Query Editor and Query Results pages. You can then use Power BI to generate reports based on the Analytics work tracking data. You can add these reports to an Azure DevOps dashboard. For more information, see [Query your work tracking data using OData Analytics](../../report/extend-analytics/wit-analytics.md).    
  
 - [**Enhanced Export**](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export): Lets you export work item queries or test plans to document-like formats. To get the output formatted the way you want, you can select different templates to get the form and layout of your choice. You can preview, print or even open the document directly in Office.  
  

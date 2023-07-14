@@ -1,163 +1,92 @@
-- name: Azure DevOps
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/index
+- name: Azure
+  tocHref: /azure/
+  topicHref: /azure/index
   items:
-  - name: Azure Artifacts
-    tocHref: /azure/devops/artifacts/
-    topicHref: /azure/devops/artifacts/index
-  - name: Azure Boards 
-    tocHref: /azure/devops/boards/
-    topicHref: /azure/devops/boards/index
-    items: 
-    - name: Get started 
-      tocHref: /azure/devops/boards/get-started/
-      topicHref: /azure/devops/boards/get-started/index
-    - name: Azure Boards & GitHub 
-      tocHref: /azure/devops/boards/github/
-      topicHref: /azure/devops/boards/github/index
-    - name: Work Items
-      tocHref: /azure/devops/boards/work-items/
-      topicHref: /azure/devops/boards/work-items/about-work-items
-    - name: Boards 
-      tocHref: /azure/devops/boards/boards
-      topicHref: /azure/devops/boards/boards/kanban-overview
-    - name: Backlogs
-      tocHref: /azure/devops/boards/backlogs
-      topicHref: /azure/devops/boards/backlogs/backlogs-overview
-    - name: Sprints
-      tocHref: /azure/devops/boards/sprints/
-      topicHref: /azure/devops/boards/sprints/scrum-overview
-    - name: Queries
-      tocHref: /azure/devops/boards/queries/
-      topicHref: /azure/devops/boards/queries/example-queries
-    - name: Plans & Agile at Scale
-      tocHref: /azure/devops/boards/plans/
-      topicHref: /azure/devops/boards/plans/index
-    - name: Excel, Project, PowerPoint
-      tocHref: /azure/devops/boards/backlogs/office/track-work
-      topicHref: /azure/devops/boards/backlogs/office/track-work
-    - name: Integrations & extensions
-      tocHref: /azure/devops/boards/extensions/
-      topicHref: /azure/devops/boards/extensions/index
-  - name: Get started
-    tocHref: /azure/devops/get-started/
-    topicHref: /azure/devops/get-started/index
+  - name: Azure DevOps
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/index
     items:
-    - name: Start using Azure DevOps
+    - name: Azure Artifacts
+      tocHref: /azure/devops/artifacts/
+      topicHref: /azure/devops/artifacts/index
+    - name: Azure Boards 
+      tocHref: /azure/devops/boards/
+      topicHref: /azure/devops/boards/index
+    - name: Azure Pipelines
+      tocHref: /azure/devops/pipelines/
+      topicHref: /azure/devops/pipelines/index
+    - name: Azure Repos
+      tocHref: /azure/devops/repos/
+      topicHref: /azure/devops/repos/index
+    - name: Azure Test Plans
+      tocHref: /azure/devops/test/
+      topicHref: /azure/devops/test/index
+    - name: Azure DevOps - Get Started
+      tocHref: /azure/devops/get-started/
+      topicHref: /azure/devops/get-started/index
+    - name: Get Started
       tocHref: /azure/devops/user-guide/
-      topicHref: /azure/devops/user-guide/what-is-azure-devops
-    - name: Migrate & import
+      topicHref: /azure/devops/get-started/index
+    - name: Get Started
       tocHref: /azure/devops/migrate/
-      topicHref: /azure/devops/migrate/migration-overview
-  - name: Azure Pipelines
-    tocHref: /azure/devops/pipelines/
-    topicHref: /azure/devops/pipelines/index
-  - name: Azure Repos
-    tocHref: /azure/devops/repos/
-    topicHref: /azure/devops/repos/index
-  - name: Azure Test Plans
-    tocHref: /azure/devops/test/
-    topicHref: /azure/devops/test/index
-  - name: Analytics & Reporting
-    tocHref: /azure/devops/report/
-    topicHref: /azure/devops/report/index
-  - name: Settings & Usage
-    tocHref: /azure/devops/organizations/
-    topicHref: /azure/devops/organizations/index
-    items:
+      topicHref: /azure/devops/get-started/index
+    - name: Cross-Service Overview
+      tocHref: /azure/devops/cross-service/
+      topicHref: /azure/devops/cross-service/index
+    - name: Wiki, Search, Navigation
+      tocHref: /azure/devops/project/
+      topicHref: /azure/devops/project/index
+    - name: Developer Resources
+      tocHref: /azure/devops/dev-resources/
+      topicHref: /azure/devops/dev-resources/index
+    - name: Developer Resources
+      tocHref: /azure/devops/cli/
+      topicHref: /azure/devops/dev-resources/index
+    - name: Developer Resources
+      tocHref: /azure/devops/demo-gen/
+      topicHref: /azure/devops/dev-resources/index
+    - name: Settings
+      tocHref: /azure/devops/organizations/
+      topicHref: /azure/devops/organizations/index
     - name: Settings
       tocHref: /azure/devops/organizations/settings/
-      topicHref: /azure/devops/organizations/settings/about-settings
-    - name: Projects
-      tocHref: /azure/devops/organizations/projects/
-      topicHref: /azure/devops/organizations/projects/about-projects
-    - name: Organizations
+      topicHref: /azure/devops/organizations/index
+    - name: Settings
       tocHref: /azure/devops/organizations/accounts/
-      topicHref: /azure/devops/organizations/accounts/organization-management
-    - name: Audit
-      tocHref: /azure/devops/organizations/audit/ 
-      topicHref: /azure/devops/organizations/audit/azure-devops-auditing 
-    - name: Notifications
-      tocHref: /azure/devops/notifications
-      topicHref: /azure/devops/notifications/about-notifications
-  - name: Security, Permissions, & Access 
-    tocHref: /azure/devops/organizations/security/
-    topicHref: /azure/devops/organizations/security/index
-    items:
-    - name: Billing
+      topicHref: /azure/devops/organizations/index
+    - name: Settings
+      tocHref: /azure/devops/organizations/audit/
+      topicHref: /azure/devops/organizations/index
+    - name: Settings
+      tocHref: /azure/devops/organizations/notifications/
+      topicHref: /azure/devops/organizations/index
+    - name: Settings
+      tocHref: /azure/devops/organizations/projects/
+      topicHref: /azure/devops/organizations/index
+    - name: Security
+      tocHref: /azure/devops/organizations/security/
+      topicHref: /azure/devops/organizations/security/index
+    - name: Security
       tocHref: /azure/devops/organizations/billing/
-      topicHref: /azure/devops/organizations/billing/overview?view=azure-devops&preserve-view=true
-  - name: Azure Boards customization 
-    tocHref: /azure/devops/reference/
-    topicHref: /azure/devops/reference/index
-    items:
-    - name: Inherited process
-      tocHref: /azure/devops/organizations/settings/work/ 
-      topicHref: /azure/devops/organizations/settings/work/inheritance-process-model
-    - name: On-premises XML process
-      tocHref: /azure/devops/reference/xml/ 
-      topicHref: /azure/devops/reference/on-premises-xml-process-model
-    - name: Hosted XML process
-      tocHref: /azure/devops/organizations/settings/work/hosted 
-      topicHref: /azure/devops/reference/on-premises-xml-process-model
-    - name: Process templates
-      tocHref: /azure/devops/reference/process-templates/ 
-      topicHref: /azure/devops/reference/process-templates/customize-process 
-    - name: witadmin command line
-      tocHref: /azure/devops/reference/witadmin/ 
-      topicHref: /azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work
-  - name: Marketplace & extensibility
-    tocHref: /azure/devops/marketplace-extensibility/
-    topicHref: /azure/devops/marketplace-extensibility/
-    items: 
-    - name: Install extensions
+      topicHref: /azure/devops/organizations/security/index
+    - name: Marketplace & Extensibility
+      tocHref: /azure/devops/marketplace-extensibility/
+      topicHref: /azure/devops/marketplace-extensibility/index?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Marketplace & Extensibility
       tocHref: /azure/devops/marketplace/
-      topicHref: /azure/devops/marketplace/overview
-    - name: Develop extensions
+      topicHref: /azure/devops/marketplace-extensibility/index?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Marketplace & Extensibility
       tocHref: /azure/devops/extend/
-      topicHref: /azure/devops/extend/overview
-    - name: Integrate applications
+      topicHref: /azure/devops/marketplace-extensibility/index?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Marketplace & Extensibility
       tocHref: /azure/devops/integrate/
-      topicHref: /azure/devops/integrate/index
-    - name: Service hooks
+      topicHref: /azure/devops/marketplace-extensibility/index?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Marketplace & Extensibility
       tocHref: /azure/devops/service-hooks/
-      topicHref: /azure/devops/service-hooks/overview
-  - name: Cross-service, Azure, & GitHub Integration
-    tocHref: /azure/devops/cross-service/
-    topicHref: /azure/devops/cross-service/index
-    items:
-    - name: Cross-service
-      tocHref: /azure/devops/cross-service/
-      topicHref: /azure/devops/cross-service/cross-service-overview
-    - name: Public projects
-      tocHref: /azure/devops/organizations/public/
-      topicHref: /azure/devops/organizations/public/about-public-projects
-    - name: Work across projects
-      tocHref: /azure/devops/project/
-      topicHref: /azure/devops/project/work-across-projects-faqs 
-  - name: Wikis, Search, & Navigation
-    tocHref: /azure/devops/project/
-    topicHref: /azure/devops/project/index
-    items:
-    - name: Search
-      tocHref: /azure/devops/project/search/
-      topicHref: /azure/devops/project/search/index
-    - name: Wikis
-      tocHref: /azure/devops/project/wiki/
-      topicHref: /azure/devops/project/wiki/index
-    - name: Navigation
-      tocHref: /azure/devops/project/navigation/
-      topicHref: /azure/devops/project/navigation/index
-    - name: Feedback
-      tocHref: /azure/devops/project/feedback/
-      topicHref: /azure/devops/project/feedback/index
-  - name: Developer Resources
-    tocHref: /azure/devops/dev-resources/
-    topicHref: /azure/devops/dev-resources/index
-    items: 
-    - name: Azure DevOps CLI
-      tocHref: /azure/devops/cli/
-      topicHref: /azure/devops/cli/index
-    - name: Demo Generator
-      tocHref: /azure/devops/demo-gen/
-      topicHref: /azure/devops/demo-gen/index
+      topicHref: /azure/devops/marketplace-extensibility/index?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Azure Boards Customization
+      tocHref: /azure/devops/reference/
+      topicHref: /azure/devops/reference/index
+    - name: Azure Boards Customization
+      tocHref: /azure/devops/organizations/settings/work/ 
+      topicHref: /azure/devops/reference/index?toc=/azure/devops/reference/toc.json 

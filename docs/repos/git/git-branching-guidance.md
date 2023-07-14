@@ -123,7 +123,7 @@ You can read more about our [Release Flow](/devops/deliver/what-is-continuous-de
 
 In this topic, we'll cover making changes in the release branch and porting them into mainline.
 Use cherry-picking instead of merging so that you have exact control over which commits are ported back to the main branch.
-Merging the feature branch into the main branch can bring over release-specific changes you don't want in the main branch.
+Merging the release branch into the main branch can bring over release-specific changes you don't want in the main branch.
 
 Update the main branch with a change made in the release branch with these steps:
 
@@ -157,5 +157,3 @@ Cherry-pick bug fixes in the deployment branch back to the main branch. Use the 
 An exception to this recommendation is if you're using a form of continuous deployment.
 Use [Azure Pipelines](../../pipelines/index.yml) when working with continuous deployment to promote builds from your main branch to your deployment targets.
 
-## Videos
-> [!VIDEO https://www.youtube.com/embed/t_4lLR6F_yk?start=0]

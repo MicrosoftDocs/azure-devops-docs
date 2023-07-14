@@ -5,8 +5,8 @@ description: Learn how to determine team capacity, adjust work to fit team capac
 ms.service: azure-devops-boards
 ms.custom: boards-sprints
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -38,8 +38,8 @@ If you haven't set up sprints yet for your team, see the [Manage sprint timeline
 
 * Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
-* To view or set capacity, you must be granted **Basic** access or higher. Users with **Stakeholder** access can't view or set capacity. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
-* To set capacity, you must be a member of the team. For details, see [Add users to a project or team](../../organizations/security/add-users-team-project.md#add-users-to-a-team). 
+* To view or set capacity, you must be granted **Basic** access or higher. Users with **Stakeholder** access can't view or set capacity. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
+* To set capacity, you must be a member of the team. For more information, see [Add users to a project or team](../../organizations/security/add-users-team-project.md#add-users-to-a-team). 
 
 <a id="customize-activity-list">  </a> 
 
@@ -84,7 +84,7 @@ Most teams specify capacity in hours. You can also specify it in days or any oth
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Choose another sprint.](media/add-tasks/select-specific-sprint-agile.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -256,7 +256,7 @@ From this view, you can easily see which individuals are at or near capacity. Te
 > [!TIP]  
 > Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
 >
-> Also, don't divide tasks into sub-tasks as [taskboards only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md). If you do divide a task into sub-tasks, specify Remaining Work only for the sub-tasks, as the system rolls up summary values to the parent task. 
+> Also, don't divide tasks into sub-tasks as [Taskboards only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md). If you do divide a task into sub-tasks, specify Remaining Work only for the sub-tasks, as the system rolls up summary values to the parent task. 
 
 ::: moniker-end
 

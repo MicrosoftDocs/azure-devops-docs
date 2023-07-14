@@ -7,8 +7,8 @@ ms.subservice: azure-devops-integration
 ms.topic: how-to
 ms.custom: cross-service
 ms.reviewer: karrg
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 10/20/2021
 ---
@@ -41,7 +41,7 @@ Read this article to learn how to:
 
 ## Prerequisites
 
-- To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md). 
+- To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For more information, see [Start using Azure Boards](../get-started/index.md). 
 - To create subscriptions in a Slack channel for work item events, you must be a member of the Azure Boards Project Administrators group  or Team Administrators group. To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
 
@@ -121,7 +121,7 @@ You can add areas that your team works on to the channel so that they're always 
 
 	![Create work item using command](./media/integrations-slack/create-work-item-command.png)
 	
-2. You can create work items directly from a command by passing work item type and title as parameters. Work items will be created only if they don't have any fields to be mandatorily filled.
+2. You can create work items directly from a command by passing work item type and title as parameters. Work items get created only if they don't have any fields to be mandatorily filled.
 
 	```
 	/azboards create [work item type] [work item title]
@@ -166,7 +166,7 @@ item URL, a preview is shown similar to the following image. This preview helps 
 
 ![Pic: URL unfurling](./media/integrations-slack/url-unfurling.png)
 
-For this feature to work, users have to be signed-in. Once they're signed in, this feature will work for all channels in a workspace.
+For this feature to work, users have to be signed-in. Once they're signed in, this feature works for all channels in a workspace.
 
 ## Unlink a project from a channel
 
@@ -202,7 +202,7 @@ If you're experiencing the following errors when using the [Azure Boards App for
 
 [!INCLUDE [troubleshooting](includes/boards-troubleshoot-authentication.md)]
 
-In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azboards signout` command followed by the `/azboards signin` command. 
+In the **same browser**, start a new tab, go to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azboards signout` command followed by the `/azboards signin` command. 
 
 Select the `Sign in` button and you'll be redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
 

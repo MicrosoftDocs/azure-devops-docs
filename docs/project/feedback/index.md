@@ -5,8 +5,8 @@ description: Learn about requesting and providing feedback about your software a
 ms.subservice: azure-devops-feedback
 ms.topic: overview
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE 
+ms.author: chcomley
+author: chcomley 
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 ---
@@ -54,9 +54,9 @@ and more.
   
 To learn more, see the following articles:  
 
-- [Install the Test & Feedback extension](../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json)
-- [Request stakeholder feedback](../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json)
-- [Provide stakeholder feedback](../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json)  
+- [Install the Test & Feedback extension](../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json)
+- [Request stakeholder feedback](../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json)
+- [Provide stakeholder feedback](../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/toc.json)  
 
 
 ## Microsoft Feedback client 
@@ -65,12 +65,12 @@ The Visual Studio 2015 Microsoft Feedback client is a downloadable tool that you
   
 To learn more, see the following articles:  
 
-- [Get feedback (Work tracking)](get-feedback.md) 
-- [Provide feedback with the Feedback client](give-feedback.md )  
-- [Set feedback permissions](give-permissions-feedback.md)  
+- [Get feedback (Work tracking)](/previous-versions/azure/devops/project/feedback/get-feedback) 
+- [Provide feedback with the Feedback client](/previous-versions/azure/devops/project/feedback/give-feedback)  
+- [Set feedback permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)  
 
 ## Related articles
 
-- [Give reviewers permissions to provide feedback](give-permissions-feedback.md)
-- [Default permissions and access set for collaboration tools](../wiki/wiki-readme-permissions.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/notifications/project/feedback/toc.json) 
-- [Give us feedback, get support](../../user-guide/provide-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json) 
+- [Give reviewers permissions to provide feedback](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
+- [Default permissions and access set for collaboration tools](../wiki/wiki-readme-permissions.md) 
+- [Give us feedback, get support](../../user-guide/provide-feedback.md) 

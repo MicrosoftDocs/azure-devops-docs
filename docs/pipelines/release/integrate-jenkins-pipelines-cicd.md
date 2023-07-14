@@ -5,7 +5,7 @@ ms.topic: tutorial
 ms.author: ronai
 ms.reviewer: vijayma
 ms.assetid: CE485C57-C26A-4B9D-9D75-2FDDFB3361D6
-ms.custom: "mvc, seodec18"
+ms.custom: mvc, seodec18, devx-track-jenkins
 ms.date: 01/15/2019
 monikerRange: '<= azure-devops'
 ---
@@ -128,7 +128,7 @@ Whenever you trigger your Azure release pipeline, the artifacts published by the
 are downloaded and made available for your deployment. You get full traceability of your workflow,
 including the commits associated with each job.
 
-[See more details of the Azure App Service Deploy task](../tasks/deploy/azure-rm-web-app-deployment.md)
+[See more details of the Azure App Service Deploy task](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4)
 If you are not familiar with the general concepts in this section, see
 [Build and release jobs](../process/phases.md?tabs=yaml)
 and [Using tasks in builds and releases](../tasks/index.md).
@@ -184,5 +184,3 @@ Now a new CD release will be triggered every time your Jenkins CI job is complet
 * [Triggers](triggers.md)
 
 :::moniker-end
-
-

@@ -363,7 +363,7 @@ You can use the following PowerShell script to obtain a Base64-encoded represent
 
 Use OAuth with **Grant authorization** or a username and password with **Basic Authentication** to define a connection to Bitbucket Cloud. For pipelines to keep working, your repository access must remain active.
 
-### Grand authorization
+### Grant authorization
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -468,10 +468,9 @@ Use the following parameters to define a connection to a GitHub repository.
 [Create an access token for command line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
 Then, complete the following steps to register your GitHub account in your profile.
 
-1. Open your profile from your account name at the right of the Azure Pipelines page heading.
-2. At the top of the left column, under **DETAILS**, choose **Security**.
-3. Select **Personal access tokens**.
-4. Select **Add** and enter the information required to create the token.
+1. Open your **User settings** from your account name at the right of the Azure Pipelines page heading.
+2. Choose **Personal access tokens**.
+3. Select **Add** and enter the information required to create the token.
 
 For more information, see [Artifact sources - version control](../release/artifacts.md#artifact-sources---version-control).
 
@@ -499,10 +498,9 @@ Use the following parameters to define a connection to a GitHub repository.
 [Create an access token for command line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
 Then, complete the following steps to register your GitHub account in your profile.
 
-1. Open your profile from your account name at the right of the Azure Pipelines page heading.
-2. At the top of the left column, under **DETAILS**, choose **Security**.
-3. Select **Personal access tokens**.
-4. Select **Add** and enter the information required to create the token.
+1. Open your **User settings** from your account name at the right of the Azure Pipelines page heading.
+2. Choose **Personal access tokens**.
+3. Select **Add** and enter the information required to create the token.
 
 ### Jenkins service connection
 
@@ -619,7 +617,7 @@ Use the following parameters when you define and secure a connection to a NuGet 
 | Username  | Required when connection type is **Basic authentication**. The username for authentication. |
 | Password  | Required when connection type is **Basic authentication**. The password for the username. |
 
-To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, see [NuGet Authenticate](../tasks/package/nuget-authenticate.md).
+To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, see [NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1).
 
 ### Python package download service connection
 
@@ -675,7 +673,7 @@ Use the following parameters when you define and secure a connection to a remote
 | Password or passphrase |  The password or passphrase for the specified username if using a keypair as credentials. |
 |Private key |  The entire contents of the private key file if using this type of authentication.|
 
-For more information, see [SSH task](../tasks/deploy/ssh.md) and [Copy files over SSH](../tasks/deploy/copy-files-over-ssh.md).
+For more information, see [SSH task](/azure/devops/pipelines/tasks/reference/ssh-v0) and [Copy files over SSH](/azure/devops/pipelines/tasks/reference/copy-files-over-ssh-v0).
 
 ### Subversion service connection
 

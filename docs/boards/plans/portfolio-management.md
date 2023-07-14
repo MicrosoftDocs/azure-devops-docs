@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to work with a hierarchical team structure to manage product and portfolio backlogs and to track progress across teams.
 ms.service: azure-devops-boards
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -72,7 +72,7 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 
 ## Feature team backlog ownership and view of progress 
 
-Each feature team has its own team home page or dashboards, product and portfolio backlogs, Kanban boards, and taskboards. These pages only show work relevant to each team. The relevance is based on assignments made to the work item area and iteration paths. For details, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+Each feature team has its own team home page or dashboards, product and portfolio backlogs, Kanban boards, and Taskboards. These pages only show work relevant to each team. The relevance is based on assignments made to the work item area and iteration paths. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 > [!TIP]
 > Add **Node Name** to the column options to show the team assigned to the work item.   
@@ -156,32 +156,30 @@ If you need more than three backlog levels, you can add more. To learn how, see 
 
 ::: moniker-end
 
-
-
 ## Track dependencies across teams 
 
 The simplest way to track dependencies across teams is to link work items using the **Related** link type. If they're dependent in time, then you can use the **Predecessor/Successor** link types.  You can then create queries that find work items containing these relationships. See [Manage dependencies, link work items to support traceability](../queries/link-work-items-support-traceability.md) to learn more. 
  
 ::: moniker range="azure-devops"
-Using Delivery Plans, you can track dependencies across projects within an organization. To learn more, see [Track dependencies using Delivery Plans](../plans/track-dependencies.md). 
+Using Delivery Plans, you can track dependencies across projects within an organization. For more information, see [Track dependencies using Delivery Plans](../plans/track-dependencies.md). 
 ::: moniker-end
 
 ## Portfolio feature progress
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= azure-devops-2022"
 
-To view feature progress based on linked requirements, you can add a rollup column or view the Feature Timeline. To learn more, see [Display rollup](../backlogs/display-rollup.md) and [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md). 
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-To view feature progress based on linked requirements, you can view the Feature Timeline. To learn more, see [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md). 
+To view feature progress based on linked requirements, you can add a rollup column or view a delivery plan. For more information, see [Display rollup](../backlogs/display-rollup.md) and [Review delivery plans](review-team-plans.md). 
 
 ::: moniker-end
 
+::: moniker range="< azure-devops-2022"
 
-## Try this next
+To view feature progress based on linked requirements, you can view the Feature Timeline. For more information, see [View portfolio progress with the Feature Timeline](/previous-versions/azure/devops/all/extensions/feature-timeline). 
+
+::: moniker-end
+
+
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Configure a hierarchy of teams](configure-hierarchical-teams.md)

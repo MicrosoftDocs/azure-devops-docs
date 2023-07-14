@@ -111,7 +111,7 @@ You can use the Azure Key Vault task to include secrets in your pipeline. This t
 
 1. In the pipeline editor, select **Show assistant** to expand the assistant panel. 
 
-1. Search for `vault` and select the [Azure Key Vault task](../tasks/deploy/azure-key-vault.md). 
+1. Search for `vault` and select the [Azure Key Vault task](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2). 
 
     :::image type="content" source="../release/media/azure-key-vault/configure-azure-key-vault-task.png" alt-text="Add the Azure Key Vault task.":::
  

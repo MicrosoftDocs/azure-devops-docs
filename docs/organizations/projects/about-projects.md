@@ -1,14 +1,14 @@
 ---
 title: About projects and scaling your organization
 titleSuffix: Azure DevOps
-ms.custom: seodec18, engagement-fy23  
+ms.custom: engagement-fy23  
 description: Understand how to structure your project to support collaboration on building software solutions.
 ms.subservice: azure-devops-projects
 ms.author: chcomley
 author: chcomley 
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/05/2022 
+ms.date: 03/23/2023
 --- 
 
 # About projects and scaling your organization
@@ -20,7 +20,6 @@ A project in Azure DevOps provides a place for users to plan, track progress, an
 When you create your project, Azure DevOps automatically creates a team of the same name, which is sufficient for small organizations. For enterprise-level organizations, it may be necessary to scale up and create more teams and projects. You can have up to 1000 projects within an organization in Azure DevOps. 
 
 The following diagram shows one project and team versus multiple projects and teams in an organization or collection. This structure allows teams to configure the tools in ways that work for them and complete administrative tasks at the appropriate levels. As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
-
 
 ---
 :::row:::
@@ -104,17 +103,17 @@ For more information, see [Create a project](create-project.md).
 
 ::: moniker range="azure-devops"
 
-## Limit visibility of projects
+## Limit user visibility of projects
 
 By default, users added to an organization can view all organization and project information and settings.  
+
+[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
 
 The **Limit user visibility and collaboration to specific projects** preview feature for the organization limits user access in the following ways.
 - Restricts views that display a list of users, list of projects, billing details, usage data, and more information accessed through **Organization settings**.
 - Limits the set of users or groups that appear through people-picker search selections and the ability to @mention users. 
 
-> [!IMPORTANT]
-> - The limited visibility features described in this section apply only to interactions through the web portal. With the REST APIs or `azure devops` CLI commands, project members can access the restricted data.
-> - Guest users who are members in the limited group with default access in Azure AD, can't search for users with the people picker. When the preview feature's turned *off* or when guest users aren't members of the limited group, guest users can search all Azure AD users, as expected.
+[!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 
 ### Limit access to organization settings 
 
@@ -122,7 +121,7 @@ To limit access to organization settings, [enable the **Limit user visibility an
 
 [!INCLUDE [version-all](../security/includes/hidden-security-groups.md)]
 
-### Limit visibility within people pickers
+### Limit user visibility within people pickers
 
 Organizations that are connected to Azure Active Directory (Azure AD) can use people pickers. People pickers support searching all users and groups added to Azure AD, not just those users and groups added to your project. People pickers support the following Azure DevOps functions: 
 - Select a user identity from a work tracking field, such as "Assigned to" 
@@ -132,10 +131,7 @@ Organizations that are connected to Azure Active Directory (Azure AD) can use pe
 As shown in the following image, start to enter a user in the people picker box until you find a match to the user name or security group.
  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker.](../../notifications/media/at-mention/identity-selector.png)  
-
-> [!WARNING]   
-> When you enable the **Limit user visibility and collaboration to specific projects** preview feature, project-scoped users can't search for users who were added to the organization through Azure AD group membership, rather than through an explicit user invitation. We're working on a solution to this behavior. As a work around, you can disable the **Limit user visibility and collaboration to specific projects** preview feature.  
+> ![Screenshot of people picker.](../../organizations/notifications/media/at-mention/identity-selector.png)
 
 Users and groups within the **Project-scoped users** group can only see and select users and groups in the project they're connected to from a people picker. To scope people pickers for all project members, see [Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
 
@@ -177,11 +173,27 @@ You may want to add another project in following instances:
 
 ## Use private and public projects
 
-You can add public and private projects to your organization. You can also [change the visibility of a project from private to public](../public/make-project-public.md).
+You can have both private and public projects. You can also [change the visibility of a project from private to public](make-project-public.md).
 
 **Private projects** require that you add and manage user access. Users must sign in to gain access to a project, even if it's read-only access. All project members have access to the project and organization information. For more information, see [Resources granted to project members](resources-granted-to-project-members.md).
 
-**Public projects** don't require users to sign in to gain read-only access to many of the services. Public projects provide support to share code with others and to support continuous integration/continuous deployment (CI/CD) of open-source software. For more information, see [What is a public project?](../public/about-public-projects.md).
+**Public projects** don't require users to sign in to gain read-only access to many of the following services. Public projects provide support to share code with others and to support continuous integration/continuous deployment (CI/CD) of open-source software.
+
+For more information about features and access levels for public projects, see [Make a private project public.](make-project-public.md)
+
+## Version control support
+
+Git repositories can be browsed and cloned, but only via HTTPS.
+SSH and GVFS endpoints are unavailable.
+Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't offer the connected experience linking to work items and other collateral.
+
+<a id="dashboard-widget-support" />
+
+## Dashboard widget support
+
+The following dashboard widgets don't display any useful information for nonmembers.
+
+[!INCLUDE [temp](includes/unavailable-widgets.md)]
 
 ::: moniker-end
 
@@ -197,7 +209,7 @@ Use the following elements to structure your project to support your business ne
 - [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Each team you create automatically creates a security group for that team, which you can use to manage permissions for a team. For more information, see [Portfolio management](../../boards/plans/portfolio-management.md).
 - [Grant or restrict access to select features and functions](../security/restrict-access.md) using custom security groups.
 - [Create query folders](../../boards/queries/organize-queries.md) to organize queries for teams or product areas into folders.
-- [Define or modify notifications](../../notifications/about-notifications.md) set at the project level.
+- [Define or modify notifications](../../organizations/notifications/about-notifications.md) set at the project level.
 
 ## Customize and configure your project
 
@@ -239,25 +251,13 @@ As your organization grows, you can add teams equipped with configurable Agile t
 
 Aside from connecting via a web browser, you can connect to a project from the following clients:
 
-::: moniker range=">= azure-devops-2019"
-- [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
+- [Visual Studio (Professional, Enterprise, Test Professional)](https://visualstudio.microsoft.com/vs/compare/)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
-- [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Azure Test Plans](/previous-versions/jj635157(v=vs.140)) (formerly Test Manager)
-- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
-::: moniker-end
+- [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md) 
+- [Test & Feedback extension](../../test/request-stakeholder-feedback.md)
+- [Microsoft Feedback Client](/previous-versions/azure/devops/project/feedback/give-feedback)
 
-::: moniker range="tfs-2018"
-- [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
-- [Visual Studio Code](https://code.visualstudio.com/Docs)
-- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
-- [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Azure Test Plans](/previous-versions/jj635157(v=vs.140)) (formerly Test Manager)
-- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
-::: moniker-end
 
 For more information, see [Compatibility with Azure DevOps Server versions](/azure/devops/server/compatibility).
 

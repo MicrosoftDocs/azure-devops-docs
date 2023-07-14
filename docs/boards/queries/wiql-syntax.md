@@ -6,10 +6,10 @@ ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.topic: reference
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
-ms.author: kaelli  
-author: KathrynEE  
+ms.author: chcomley  
+author: chcomley  
 monikerRange: '<= azure-devops'
-ms.date: 06/29/2022
+ms.date: 10/18/2022
 ---
  
 
@@ -117,11 +117,22 @@ ASOF '02-11-2020'
 Quote (single or double quotes are supported) DateTime literals used in comparisons. They must be in the .NET DateTime format of the local client computer running the query. Unless a time zone is specified, DateTime literals are in the time zone of the local computer.
 
 ```WIQL
-WHERE [System.ResolvedDate] >= '01-18-2019 GMT' and [Resolved Date/Time] < '01-09-2019 GMT'
-WHERE [Resolved Date] >= '01-18-2019 14:30:01'
+WHERE 
+   AND [System.ChangedDate] >= '01-18-2019 GMT'
+   AND ([Closed Date] < '01-09-2022 GMT'
+   OR [Resolved Date] >= '01-18-2019 14:30:01')  
 ```
+
 When the time is omitted in a DateTime literal and the dayPrecision parameter equals false, the time is assumed to be zero (midnight). The default setting for the dayPrecision parameter is false.
 
+Or, you can specify ISO 8601 format which is valid no matter the locale. ISO 8601 represents date and time by starting with the year, followed by the month, the day, the hour, the minutes, seconds and milliseconds. For example, 2021-12-10 15:00:00.000, represents the 10th of December 2021 at 3 p.m. in local time. An example of using ISO 8601 format is as follows. 
+
+```WIQL
+WHERE 
+   AND [System.ChangedDate] >= '2019-01-18T00:00:00.0000000'
+   AND ([Closed Date] < '2022-01-09T00:00:00.0000000'
+   OR [Resolved Date] >= '2019-01-18T00:00:00.0000000')  
+```
 
 
 ### Custom fields
@@ -138,7 +149,7 @@ You can add a custom field to a query clause. With WIQL, you must specify the re
 
 For projects that use the On-premises XML process model, the reference name is as defined by the XML work item type definitions. 
 
-To learn more, see [Work item fields and attributes](../work-items/work-item-fields.md).
+For more information, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
 ::: moniker-end 
 
@@ -146,7 +157,7 @@ To learn more, see [Work item fields and attributes](../work-items/work-item-fie
 
 You can add a custom field to a query clause. With WIQL, you must specify the reference name for the custom field. 
 
-To learn more, see [Add or modify a field to track work](../../reference/add-modify-field.md).
+For more information, see [Add or modify a field to track work](../../reference/add-modify-field.md).
 
 ::: moniker-end 
 
@@ -265,7 +276,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
    :::column-end:::
    :::column span="3":::
    
-   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Not Contains, In, Not In, In Group, Not In Group, Was Ever`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -274,7 +285,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
    :::column-end:::
    :::column span="3":::
    
-   `Contains Words, Does Not Contain Words, Is Empty, Is Not Empty`
+   `Contains Words, Not Contains Words, Is Empty, Is Not Empty`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -282,7 +293,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
    String
    :::column-end:::
    :::column span="3":::
-   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Not Contains, In, Not In, In Group, Not In Group, Was Ever`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -487,13 +498,13 @@ WHERE
  
 ### Custom macros 
 
-WIQL also supports arbitrary custom macros. Any string prefixed by an `@` is treated as a custom macro and will be substituted. The replacement value for the custom macro is retrieved from the context parameter of the query method in the object model. The following method is the API used for macros: 
+WIQL also supports arbitrary custom macros. Any string prefixed by an `@` is treated as a custom macro and gets substituted. The replacement value for the custom macro is retrieved from the context parameter of the query method in the object model. The following method is the API used for macros: 
 
 ```csharp
 public WorkItemCollection Query(string wiql, IDictionary context)
 ```
 
-The context parameter contains key-value pairs for macros. For example, if the context contains a key-value pair of (project, MyProject), then **@project** will be replaced by `MyProject` in the WIQL. This replacement is how the work item query builder handles the **@project** macro in Visual Studio.
+The context parameter contains key-value pairs for macros. For example, if the context contains a key-value pair of (project, MyProject), then **@project** gets replaced by `MyProject` in the WIQL. This replacement is how the work item query builder handles the **@project** macro in Visual Studio.
 
 ## Specify historical queries (`ASOF`)
 
@@ -502,7 +513,7 @@ You can use an `ASOF` clause in a query to filter for work items that satisfy th
 > [!NOTE] 
 > You can’t create `ASOF` queries in the query builder in Visual Studio. If you create a query file (.wiq) that includes an `ASOF` clause, and then load that in Visual Studio, the `ASOF` clause is ignored.
 
-Suppose a work item was classified under an **Iteration Path** of `Fabrikam Fiber\Release 1` and assigned to 'Jamal Hartnett' prior to 5/05/2022. However, the work item was recently assigned to 'Raisa Pokrovskaya' and moved to a new iteration path of Release 2. The following example query will return this work items assigned to Jamal Hartnett because the query is based on the state of work items as of a past date and time. 
+Suppose a work item was classified under an **Iteration Path** of `Fabrikam Fiber\Release 1` and assigned to 'Jamal Hartnett' prior to 5/05/2022. However, the work item was recently assigned to 'Raisa Pokrovskaya' and moved to a new iteration path of Release 2. The following example query returns work items assigned to Jamal Hartnett because the query is based on the state of work items as of a past date and time. 
 
 ```WIQL
 SELECT
@@ -516,7 +527,7 @@ WHERE
     AND [System.WorkItemType] <> ''
     AND ([System.IterationPath] UNDER 'Fabrikam Fiber\Release 1'
     AND [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>') 
-    ASOF  '01-05-2022T00:00:00.0000000'
+    ASOF  '01-05-2022 00:00:00.0000000'
 ```
 
 > [!NOTE]  
@@ -656,7 +667,7 @@ You can specify one of the following system link type names.
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-You can specify one of the system link type names, listed below, or [a custom link type you've defined with the On-premises XML process](../../reference/xml/link-type-element-reference.md). 
+You can specify one of the system link type names, listed below, or [a custom link type you've defined with the On-premises XML process](/previous-versions/azure/devops/reference/xml/link-type-element-reference). 
 ::: moniker-end
 
 - `System.LinkTypes.Hierarchy-Forward`
@@ -962,6 +973,6 @@ https://msdn.microsoft.com/library/bb130306.aspx
 <!---
 
 > [!WARNING]  
-> You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server will occur. For more information, see Performance Considerations.
+> You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server occurs. For more information, see Performance Considerations.
 
 -->

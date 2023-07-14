@@ -58,13 +58,13 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Create an organization 
-            url: ../accounts/create-organization.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+            url: ../accounts/create-organization.md?toc=/azure/devops/organizations/security/toc.json  
       - linkListType: how-to-guide
         links:
           - text: Add users to your organization 
-            url: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+            url: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json  
           - text: Connect your organization to Azure Active Directory
-            url: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+            url: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/security/toc.json  
           - text: Provide Stakeholders access to edit pipelines
             url: provide-stakeholder-pipeline-access.md 
   - title: Manage user access (on-premises) 
@@ -98,17 +98,17 @@ landingContent:
           - text: About security, authentication, & authorization
             url: about-security-identity.md  
           - text: Authentication guidance 
-            url: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json   
+            url: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json   
       - linkListType: how-to-guide
         links:
           - text: Use personal access tokens (PATs)
-            url: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json   
+            url: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json   
           - text: Manage PATs via API
-            url: ../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json   
+            url: ../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/security/toc.json   
           - text: Revoke user PATs 
-            url: ../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json   
+            url: ../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/security/toc.json   
           - text: Authorize access to REST APIs with OAuth 2.0
-            url: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+            url: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/security/toc.json  
   - title: Secure projects  
     linkLists:
       - linkListType: overview

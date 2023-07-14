@@ -34,8 +34,8 @@ If you'd like to be considered as part of the private preview, please share your
 2. Could you please provide a brief description of the tools/services you use today that need to authenticate against ADO? What authentication mechanism(s) are you using today? 
 3. Do you currently use Managed Identities to authenticate against any other Azure Resources?  
 4. What would you do with Managed Identity(s) if you could use them to authenticate against ADO? What does that workflow look like?
-5. Can you provide a list of what APIs you might be using? See the [ADO REST API documentation](https://learn.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-7.1) for help.
-6. What kind of scopes would be useful for you in helping your MI accomplish what it needs to do? See [this list of ADO OAuth scopes](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#scopes), as a jumping off point.
+5. Can you provide a list of what APIs you might be using? See the [ADO REST API documentation](/rest/api/azure/devops/?view=azure-devops-rest-7.1&preserve-view=true) for help.
+6. What kind of scopes would be useful for you in helping your MI accomplish what it needs to do? See [this list of ADO OAuth scopes](/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#scopes&preserve-view=true), as a jumping off point.
 7. Is there anything else that might be helpful for us to know about your Managed Identity user scenario?
 8. What is the name of your Azure DevOps organization(s) that you would like this feature enabled for?
 
@@ -86,7 +86,7 @@ Improve the GitHub connection experience for Enterprise customers by supporting 
 
 A common complaint with scale set agent pools is that the time it takes to initiate scaling events is too long. In fact, Azure Pipelines checks if it needs to scale out a pool every few minutes. However, it cannot perform that task if there is a prior operation already in progress on the VM scale set. As an example, if the VM scale set is deleting VMs from an earlier request to scale in, then Azure Pipelines cannot issue a new request to scale out unless that previous operation is complete.
 
-To address this problem, Azure Pipelines needs to rely on a new preview feature of VM scale sets called [Flexible Orchestration](https://learn.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes). As this feature comes out of preview in VM scale sets, Azure Pipelines will start making use of it and speed up its operations.
+To address this problem, Azure Pipelines needs to rely on a new preview feature of VM scale sets called [Flexible Orchestration](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes). As this feature comes out of preview in VM scale sets, Azure Pipelines will start making use of it and speed up its operations.
 
 ### Support Pipelines App with GitHub Enterprise
 

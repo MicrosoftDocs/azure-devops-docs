@@ -1,7 +1,7 @@
 ---
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 04/04/2022
 ---
@@ -97,6 +97,7 @@ ms.date: 04/04/2022
    :::column span="1":::
       ✔️
    :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="2":::
       Assign to a sprint (from card field)

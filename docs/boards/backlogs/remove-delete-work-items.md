@@ -5,8 +5,8 @@ description: Learn how to remove, delete, or restore work items in Azure Boards 
 ms.custom: "boards-backlogs, seodec18, contperf-fy21q2, linked-from-support"  
 ms.service: azure-devops-boards
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 06/01/2022
@@ -105,7 +105,7 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 
 ::: moniker range="azure-devops" 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 ::: moniker-end
  
 ## Remove or delete multiple work items 
@@ -119,7 +119,7 @@ From the web portal, you can multi-select several work items from a backlog or q
 
 ### Remove work items
 
-By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and Taskboards). The *Removed* state corresponds to the **Removed** workflow category state. If you [define custom workflow states](../../organizations/settings/work/customize-process-workflow.md), any state you map to the **Removed** workflow category state will act in a similar way. 
+By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and Taskboards). The *Removed* state corresponds to the **Removed** workflow category state. If you [define custom workflow states](../../organizations/settings/work/customize-process-workflow.md), any state you map to the **Removed** workflow category state act in a similar way. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of work item form, Change State to Removed.](media/move-change-delete/remove-state.png)  
@@ -314,7 +314,7 @@ Use the `witadmin destroywi` command to permanently remove work items from the d
 
 Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the `witadmin.exe` tool has been installed.  
 
-For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](/previous-versions/azure/devops/reference/witadmin/remove-work-items-permanently)).  
 
 `%programfiles(x86)%\Microsoft Visual Studio\2018\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
 

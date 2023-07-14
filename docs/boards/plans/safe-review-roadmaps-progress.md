@@ -3,8 +3,8 @@ title: View SAFe® progress, roadmaps, and metrics in Azure Boards
 titleSuffix: Azure Boards
 description: Review SAFe® metrics, progress, roadmaps, and KPIs supported by Azure DevOps and Azure Boards. 
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021
@@ -47,7 +47,7 @@ Quick progress views are available from each team's backlog through rollup colum
 > [!div class="mx-imgBorder"]  
 > ![Rollup progress bars](../backlogs/media/rollup/progress-by-work-items.png) 
 
-Other rollup options include progress by specific work item types, progress by story points, count of work items, or sum of a numeric field. To learn more, see [Display rollup progress or totals](../backlogs/display-rollup.md). 
+Other rollup options include progress by specific work item types, progress by story points, count of work items, or sum of a numeric field. For more information, see [Display rollup progress or totals](../backlogs/display-rollup.md). 
 
 
 ## View team velocity 
@@ -77,7 +77,7 @@ The following image shows an example CFD chart for User Stories with all Kanban 
 
 Teams can use their CFD to identify bottlenecks and monitor the batch size of work in their various Kanban states. 
 
-In-context CFD charts are quickly accessible from each backlog and board view. Also, CFD charts can be added to team and project dashboards. To learn more, see [View/configure a Cumulative Flow Diagram](../../report/dashboards/cumulative-flow.md).  
+In-context CFD charts are quickly accessible from each backlog and board view. Also, CFD charts can be added to team and project dashboards. For more information, see [View/configure a Cumulative Flow Diagram](../../report/dashboards/cumulative-flow.md).  
 
 
 ## View Lead Time and Cycle Time charts
@@ -88,7 +88,7 @@ Other metrics that teams use are derived from the Lead time and cycle time chart
 - Cycle time: Days on average to complete deliverables from date work started
 - Number of outliers 
  
-Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information and provide several interactive elements. To learn more, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). 
+Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information and provide several interactive elements. For more information, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). 
 
 #### Example Lead Time widget
 
@@ -147,7 +147,7 @@ Need to develop a report using Analytics view and Power BI. Want something to ap
 
 --> 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Sign up for Azure Boards for free](../get-started/sign-up-invite-teammates.md) 
@@ -155,7 +155,6 @@ Need to develop a report using Analytics view and Power BI. Want something to ap
 
 ## Related articles
 
-- [Review team Delivery Plans](review-team-plans.md)
-- [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md)
+- [Review team Delivery Plans](review-team-plans.md) 
 
 

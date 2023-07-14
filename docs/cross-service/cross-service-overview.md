@@ -5,8 +5,8 @@ description: Learn about how Azure DevOps supports collaboration across all its 
 ms.subservice: azure-devops-cross-service
 ms.custom: cross-service
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 09/28/2022
 ---
@@ -41,7 +41,7 @@ Collaborating within and across teams is supported with many of the features sum
       `@mentions` (add to discussions and comments)
    :::column-end::: 
    :::column span="3":::
-      You can @mention a team member or an entire team within a work item form discussion or the comment section of a commit, pull request, or changeset. For details, see [Use @mentions in work items and pull requests](../notifications/at-mentions.md).  
+      You can @mention a team member or an entire team within a work item form discussion or the comment section of a commit, pull request, or changeset. For details, see [Use @mentions in work items and pull requests](../organizations/notifications/at-mentions.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -50,7 +50,7 @@ Collaborating within and across teams is supported with many of the features sum
       `#ID` (link to a work item) 
    :::column-end::: 
    :::column span="3":::
-      To support end-to-end traceability, you can link to work items from commits, pull requests, and changesets. For details, see [Link to work items from other objects](../notifications/add-links-to-work-items.md).  
+      To support end-to-end traceability, you can link to work items from commits, pull requests, and changesets. For details, see [Link to work items from other objects](../organizations/notifications/add-links-to-work-items.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -62,8 +62,8 @@ Collaborating within and across teams is supported with many of the features sum
       Each team gets access to a suite of Agile tools and team assets. These tools let teams work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work. For quick navigation, they can favorite repositories, pipelines, and test plans. To learn more, see:  
       - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
       - [Set personal or team favorites](../project/navigation/set-favorites.md)
-      - [Unsubscribe from default notification](../notifications/unsubscribe-default-notification.md)
-      - [Manage team, group, and Global notifications](../notifications/manage-team-group-global-organization-notifications.md).  
+      - [Unsubscribe from default notification](../organizations/notifications/unsubscribe-default-notification.md)
+      - [Manage team, group, and Global notifications](../organizations/notifications/manage-team-group-global-organization-notifications.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -73,10 +73,10 @@ Collaborating within and across teams is supported with many of the features sum
    :::column-end::: 
    :::column span="3":::
       Configure or opt out of personal, team, project, or organization-level alerts. Subscribe to email alerts when changes occur to work items, code reviews, pull requests, source control files, builds and more. To learn more, see:  
-      - [About notifications](../notifications/about-notifications.md)
-      - [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
-      - [Unsubscribe from default notification](../notifications/unsubscribe-default-notification.md)
-      - [Manage team, group, and Global notifications](../notifications/manage-team-group-global-organization-notifications.md).  
+      - [About notifications](../organizations/notifications/about-notifications.md)
+      - [Manage personal notifications](../organizations/notifications/manage-your-personal-notifications.md)
+      - [Unsubscribe from default notification](../organizations/notifications/unsubscribe-default-notification.md)
+      - [Manage team, group, and Global notifications](../organizations/notifications/manage-team-group-global-organization-notifications.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -106,7 +106,7 @@ Collaborating within and across teams is supported with many of the features sum
 
 ## Azure Boards - Azure Repos 
 
-The following table summarizes the integration points between Azure Boards and Azure Repos. Through various link types, you can track code changes&mdash;commits and pull requests for Git, and changesets and versioned items for Team Foundation Version Control (TFVC)&mdash;that support development of user stories and features. The link types used to construct these links include *Branch , Commit, Pull Request*, and *Tag* for Git repositories, and *Changeset*, and *Versioned Item* for TFVC repositories. To learn more, see [Link to work items from other objects, View list of linked objects](../notifications/add-links-to-work-items.md#view-list-links).
+The following table summarizes the integration points between Azure Boards and Azure Repos. Through various link types, you can track code changes&mdash;commits and pull requests for Git, and changesets and versioned items for Team Foundation Version Control (TFVC)&mdash;that support development of user stories and features. The link types used to construct these links include *Branch , Commit, Pull Request*, and *Tag* for Git repositories, and *Changeset*, and *Versioned Item* for TFVC repositories. To learn more, see [Link to work items from other objects, View list of linked objects](../organizations/notifications/add-links-to-work-items.md#view-list-links).
 
 :::image type="content" source="media/overview/concept-link-types-repos.png" alt-text="Conceptual image of link types that link work items to Azure Repos objects."::: 
 
@@ -264,7 +264,7 @@ The following table summarizes the integration points between Azure Boards and A
       View list of build or release objects a single work item is linked to 
    :::column-end::: 
    :::column span="2":::
-      You can link work items to builds and releases&mdash;providing an audit trail of how a feature has been built and deployed. To learn more, see [Link to work items from other objects, View list of linked objects](../notifications/add-links-to-work-items.md#view-list-links). 
+      You can link work items to builds and releases&mdash;providing an audit trail of how a feature has been built and deployed. To learn more, see [Link to work items from other objects, View list of linked objects](../organizations/notifications/add-links-to-work-items.md#view-list-links). 
    :::column-end:::
 :::row-end:::
 --- 
@@ -317,7 +317,7 @@ The following table summarizes the integration points between Azure Boards and A
       Query Work Items task. Ensure the number of matching work items returned from a query is within a threshold.
    :::column-end::: 
    :::column span="2":::
-       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](../pipelines/tasks/utility/work-item-query.md).  
+       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](/azure/devops/pipelines/tasks/reference/query-work-items-v0).  
    :::column-end:::
 :::row-end:::
 --- 
@@ -371,7 +371,7 @@ The following table summarizes the integration features between Azure Repos and 
       Code coverage
    :::column-end::: 
    :::column span="2":::
-      Publish and review code coverage results that indicate the proportion of your project's code that is actually being tested. To learn more, see [Publish Code Coverage Results task](../pipelines/tasks/test/publish-code-coverage-results.md) and [Review code coverage results](../pipelines/test/review-code-coverage-results.md). 
+      Publish and review code coverage results that indicate the proportion of your project's code that is actually being tested. To learn more, see [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) and [Review code coverage results](../pipelines/test/review-code-coverage-results.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -435,7 +435,7 @@ Several collaboration scenarios are supported through Azure Boards work item typ
    :::column span="3":::
       Tracks information entered into a request feedback form. There are two forms that you can use to initiate a feedback request. 
       -  [Request stakeholder feedback](../test/request-stakeholder-feedback.md)
-      -  [Get feedback](../project/feedback/get-feedback.md). 
+      -  [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback). 
    :::column-end:::
 :::row-end:::
 ---
@@ -450,7 +450,7 @@ Several collaboration scenarios are supported through Azure Boards work item typ
       Enables stakeholders to provide feedback based on request for feedback or by volunteering feedback using the [Microsoft Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) marketplace extension. To learn more, see the following articles: 
       - [Provide feedback ](../test/provide-stakeholder-feedback.md)  
       - [Voluntarily provide stakeholder feedback](../test/voluntary-stakeholder-feedback.md)  
-      - [Give feedback](../project/feedback/give-feedback.md).  
+      - [Give feedback](/previous-versions/azure/devops/project/feedback/give-feedback).  
    :::column-end::: 
 :::row-end:::
 ---
@@ -597,10 +597,10 @@ Azure Test Plans is fully integrated with Azure Pipelines to support testing wit
    :::column-end::: 
    :::column span="2":::
       Specify test-enable tasks within a pipeline definition. Azure Pipelines provides several tasks, including those listed below, that support a comprehensive test reporting and analytics experience.  
-      - [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md): Use to publish test results to Azure Pipelines.
-      - [Visual Studio Test task](../pipelines/tasks/test/vstest.md): Use to run unit and functional tests (Selenium, Appium, Coded UI test, and more) using the Visual Studio Test Runner. 
-      - [.NET Core CLI task](../pipelines/tasks/build/dotnet-core-cli.md): Use to build, test, package, or publish a dotnet application.  
-      For additional tasks, see [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md)
+      - [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2): Use to publish test results to Azure Pipelines.
+      - [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2): Use to run unit and functional tests (Selenium, Appium, Coded UI test, and more) using the Visual Studio Test Runner. 
+      - [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2): Use to build, test, package, or publish a dotnet application.  
+      For additional tasks, see [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2)
    :::column-end:::
 :::row-end:::
 ---

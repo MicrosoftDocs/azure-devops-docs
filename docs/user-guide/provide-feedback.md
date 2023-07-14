@@ -33,7 +33,7 @@ Do you need to do any of the following?
 
 ### Get live help
 
-We offer a [live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (English only) support option. Choose from **Technical Support**, **Sales Support**, **Visual Studio (For your Company)**, and **Account, Subscription, and Billing Support**. Select your country from the dropdown menu, and then select **Live Chat (English)**.
+We offer a [live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (English only) support option. Choose from **Technical Support**, **Sales Support**, **Visual Studio (For your Company)**, and **Account, Subscription, and Billing Support**. Select your country/region from the dropdown menu, and then select **Live Chat (English)**.
 
 ## Documentation feedback
 

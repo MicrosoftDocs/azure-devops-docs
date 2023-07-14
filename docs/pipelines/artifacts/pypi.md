@@ -50,14 +50,14 @@ This article will show you how to:
 
 ## Authenticate with Azure Artifacts
 
-To use `twine` to publish your Python packages, you must first set up authentication to you Azure Artifacts feed. The [TwineAuthenticate](../tasks/package/twine-authenticate.md) task stores your  credentials in a `PYPIRC_PATH` environment variable. `twine` will reference this variable to publish your packages from your pipeline.
+To use `twine` to publish your Python packages, you must first set up authentication to your Azure Artifacts feed. The [TwineAuthenticate](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) task stores your  credentials in a `PYPIRC_PATH` environment variable. `twine` will reference this variable to publish your packages from your pipeline.
 
 # [YAML](#tab/yaml)
 
 ```yaml
 - task: TwineAuthenticate@1
   inputs:
-    artifactFeed: <PROJECT_NAME/FEED_NAME>                            #Provide the FeedName only if you are using an organization-scoped feed.
+    artifactFeed: <PROJECT_NAME/FEED_NAME>                            #For an organization-scoped feed, artifactFeed: <FEED_NAME>
     pythonUploadServiceConnection: <NAME_OF_YOUR_SERVICE_CONNECTION>
 ```
 
@@ -95,10 +95,29 @@ To use `twine` to publish your Python packages, you must first set up authentica
 - task: TwineAuthenticate@1
   displayName: Twine Authenticate
   inputs:
-    artifactFeed: projectName/feedName        #Provide the FeedName only if you are using an organization-scoped feed.
+    artifactFeed: <PROJECT_NAME/FEED_NAME>           #For an organization-scoped feed, artifactFeed: <FEED_NAME>.
   
 - script: |
-     python -m twine upload -r feedName --config-file $(PYPIRC_PATH) dist/*.whl
+     python -m twine upload -r <FEED_NAME> --config-file $(PYPIRC_PATH) dist/*.whl
+```
+
+Example using [Python build](https://pypi.org/project/build/) and [twine](https://pypi.org/project/twine/) to publish a Python package to an Azure Artifacts feed.
+
+```YAML
+- script: |
+    pip install twine
+    pip install build
+
+- script: |
+    python -m build -w
+
+- task: TwineAuthenticate@1
+  inputs:
+    artifactFeed: <PROJECT_NAME/FEED_NAME>
+
+- script: |
+    python -m twine upload -r <FEED_NAME> --config-file $(PYPIRC_PATH) dist/*.whl
+  displayName: 'upload'
 ```
 
 # [Classic](#tab/classic)

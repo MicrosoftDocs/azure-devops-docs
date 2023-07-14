@@ -4,13 +4,15 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 10/11/2022
+ms.date: 05/23/2023
 monikerRange: '>= azure-devops-2019'
 ---
 
 # Expressions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-gt-eq-2019.md)]
+
+[!INCLUDE [version-selector](../../includes/version-selector.md)]
 
 Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
 The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run.
@@ -512,6 +514,7 @@ You can use the following status check functions as expressions in conditions, b
 * For a job:
   * With no arguments, evaluates to `True` regardless of whether any jobs in the dependency graph succeeded or failed.
   * With job names as arguments, evaluates to `True` whether any of those jobs succeeded or failed.
+  * You may want to use `not(canceled())` instead when there are previous skipped jobs in the dependency graph. 
 
   > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
 
@@ -523,6 +526,9 @@ You can use `if`, `elseif`, and `else` clauses to conditionally assign variable 
 
 ::: moniker range="< azure-devops-2022"
 You can use `if`  to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
+
+The `elseif` and `else` clauses are are available starting with Azure DevOps 2022 and are not available for Azure DevOps Server 2020 and earlier versions of Azure DevOps.
+
 ::: moniker-end
 
 Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax). 
@@ -581,7 +587,9 @@ steps:
 - ${{ else }}:
   - script: echo "the value is not adaptum or contoso"
 ```
-::moniker-end
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 ## Each keyword
 
@@ -600,6 +608,23 @@ steps:
   - script: echo ${{ value }}
 ```
 
+Additionally, you can iterate through nested elements within an object.
+
+```yaml
+parameters:
+- name: listOfFruits
+  type: object
+  default:
+  - fruitName: 'apple'
+    colors: ['red','green']
+  - fruitName: 'lemon'
+    colors: ['yellow']
+steps:
+- ${{ each fruit in parameters.listOfFruits }} :
+  - ${{ each fruitColor in fruit.colors}} :
+    - script: echo ${{ fruit.fruitName}} ${{ fruitColor }}
+``` 
+
 ## Dependencies
 
 Expressions can use the dependencies context to reference previous jobs or stages. You can use dependencies to:
@@ -611,9 +636,75 @@ Expressions can use the dependencies context to reference previous jobs or stage
 * Reference output variables in a job in a previous stage in the following stage
 
 The context is called `dependencies` for jobs and stages and works much like variables.
-Inside a job, if you refer to an output variable from a job in another stage, the context is called `stageDependencies`.
+If you refer to an output variable from a job in another stage, the context is called `stageDependencies`.
 
 If you experience issues with output variables having quote characters (`'` or `"`) in them, see [this troubleshooting guide](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended).
+
+### Dependency syntax overview
+
+The syntax of referencing output variables with dependencies varies depending on the circumstances. Here's an overview of the most common scenarios. Note that there may be times when alternate syntax also works. 
+
+:::row:::
+   :::column span="1":::
+   **Type**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+    [stage to stage dependency](#stage-to-stage-dependencies) (different stages)
+   :::column-end:::
+   :::column span="2":::
+    Reference an output variable from a previous stage in a job in a different stage in a condition in `stages`. 
+    - Syntax: `and(succeeded(), eq(stageDependencies.<stage-name>.outputs['<job-name>.<step-name>.<variable-name>'], 'true'))` 
+    - Example: `and(succeeded(), eq(stageDependencies.A.outputs['A1.printvar.shouldrun'], 'true'))`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+    [job to job dependency](#job-to-job-dependencies-within-one-stage) (same stage) 
+   :::column-end:::
+   :::column span="2":::
+    Reference an output variable in a different job in the same stage in `stages`. 
+    - Syntax: `and(succeeded(), eq(dependencies.<stage-name>.outputs['<step-name>.<variable-name>'], 'true'))`
+    - Example: `and(succeeded(), eq(dependencies.A.outputs['printvar.shouldrun'], 'true'))` 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+    [Job to stage dependency](#job-to-job-dependencies-across-stages) (different stages) 
+   :::column-end:::
+   :::column span="2":::
+    Reference an output variable in a different stage in a `job`.
+    - Syntax: `eq(stageDependencies.<stage-name>.<job-name>.outputs['<step-name>.<variable-name>'], 'true')` 
+    - Example: `eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true')`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+    [Stage to stage dependency](#deployment-job-output-variables) (deployment job)
+   :::column-end:::
+   :::column span="2":::
+    Reference output variable in a deployment job in a different stage in `stages`.
+    - Syntax: `eq(dependencies.<stage-name>.outputs['<deployment-job-name>.<deployment-job-name>.<step-name>.<variable-name>'], 'true')`
+    - Example: `eq(dependencies.build.outputs['build_job.build_job.setRunTests.runTests'], 'true')`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+    [Stage to stage dependency](#deployment-job-output-variables) (deployment job with resource)
+   :::column-end:::
+   :::column span="2":::
+    Reference an output variable in a deployment job that includes a resource in different stage in `stages`. 
+    - Syntax: `eq(dependencies.<stage-name>.outputs['<deployment-job-name>.<Deploy_resource-name>.<step-name>.<variable-name>'], 'true')`
+    - Example: `eq(dependencies.build.outputs['build_job.Deploy_winVM.setRunTests.runTests'], 'true')`   
+    :::column-end:::
+:::row-end:::
+
+There are also different syntaxes for output variables in deployment jobs depending on the deployment strategy. For more information, see [Deployment jobs](deployment-jobs.md#support-for-output-variables). 
+
 
 ### Stage to stage dependencies
 Structurally, the `dependencies` object is a map of job and stage names to `results` and `outputs`.
@@ -633,11 +724,12 @@ Expressed as JSON, it would look like:
 }
 ```
 
-Use this form of `dependencies` to map in variables or check conditions at a stage level.
-In this example, Stage B runs whether Stage A is successful or skipped.
-
 > [!NOTE]
 > The following examples use standard pipeline syntax. If you're using deployment pipelines, both variable and conditional variable syntax will differ. For information about the specific syntax to use, see [Deployment jobs](deployment-jobs.md).
+
+Use this form of `dependencies` to map in variables or check conditions at a stage level.
+
+In this example, there are two stages, A and B. Stage A has the condition `false` and won't ever run as a result. Stage B runs if the result of Stage A is `Succeeded`, `SucceededWithIssues`, or `Skipped`. Stage B will run because Stage A was skipped. 
 
 ```yaml
 stages:
@@ -656,7 +748,8 @@ stages:
 ```
 
 Stages can also use output variables from another stage.
-In this example, Stage B depends on a variable in Stage A.
+In this example, there are also two stages. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs. Note that `stageDependencies` is used in the condition because you are referring to an output variable in a different stage. 
+
 
 ```yaml
 stages:
@@ -670,7 +763,7 @@ stages:
        name: printvar
 
 - stage: B
-  condition: and(succeeded(), eq(dependencies.A.outputs['A1.printvar.shouldrun'], 'true'))
+  condition: and(succeeded(), eq(stageDependencies.A.outputs['A1.printvar.shouldrun'], 'true'))
   dependsOn: A
   jobs:
   - job: B1
@@ -683,6 +776,7 @@ stages:
 > If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
 ### Job to job dependencies within one stage
+
 At the job level within a single stage, the `dependencies` data doesn't contain stage-level information.
 
 ```json
@@ -699,18 +793,19 @@ At the job level within a single stage, the `dependencies` data doesn't contain 
 }
 ```
 
-In this example, Job A will always be skipped and Job B will run.
-Job C will run, since all of its dependencies either succeed or are skipped.
+In this example, there are three jobs (a, b, and c). Job a will always be skipped because of `condition: false`. 
+Job b runs because there are no associated conditions. 
+Job c runs because all of its dependencies either succeed (job b) or are skipped (job a).
 
 ```yaml
 jobs:
 - job: a
   condition: false
   steps:
-  - script: echo Job A
+  - script: echo Job a
 - job: b
   steps:
-  - script: echo Job B
+  - script: echo Job b
 - job: c
   dependsOn:
   - a
@@ -722,7 +817,7 @@ jobs:
       in(dependencies.b.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
     )
   steps:
-  - script: echo Job C
+  - script: echo Job c
 ```
 
 In this example, Job B depends on an output variable from Job A.
@@ -774,11 +869,6 @@ In this example, job B1 will run if job A1 is skipped.
 Job B2 will check the value of the output variable from job A1 to determine whether it should run.
 
 ```yaml
-trigger: none
-
-pool:
-  vmImage: 'ubuntu-latest'
-
 stages:
 - stage: A
   jobs:
@@ -800,7 +890,6 @@ stages:
     condition: eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true')
     steps:
      - script: echo hello from Job B2
-
 ```
 ::: moniker-end
 
@@ -843,32 +932,10 @@ stages:
 
 ::: moniker range=">=azure-devops-2020"
 
-### Stage depending on job output
-
-If no changes are required after a build, you might want to skip a stage in a pipeline under certain conditions. An example is when you're using Terraform Plan, and you want to trigger approval and apply only when the plan contains changes.
-
-When you use this condition on a stage, you must use the `dependencies` variable, not `stageDependencies`.
-
-The following example is a simple script that sets a variable (use your actual information from Terraform Plan) in a step in a stage, and then invokes the second stage only if the variable has a specific value.
-
-```yaml
-stages:
-- stage: plan_dev
-  jobs:
-  - job: terraform_plan_dev
-    steps:
-    - bash: echo '##vso[task.setvariable variable=terraform_plan_exitcode;isOutput=true]2'
-      name: terraform_plan
-- stage: apply_dev
-  dependsOn: plan_dev
-  condition: eq(dependencies.plan_dev.outputs['terraform_plan_dev.terraform_plan.terraform_plan_exitcode'], '2')
-  jobs:
-  - job: part_b
-    steps:
-    - bash: echo "BA"
-```
+### Deployment job output variables
 
 If a stage depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the stage `test` depends on the deployment `build_job` setting `shouldTest` to `true`. Notice that in the `condition` of the `test` stage, `build_job` appears twice.
+
 ```yml
 stages:
 - stage: build
@@ -895,7 +962,44 @@ stages:
   - 'build'
   condition: eq(dependencies.build.outputs['build_job.build_job.setRunTests.runTests'], 'true')
   jobs:
-    ...
+    - job: A
+      steps:
+        - script: echo Hello from job A
+```
+
+In the example above, the condition references an environment and not an environment resource. To reference an environment resource, you'll need to add the environment resource name to the dependencies condition. In the following example, condition references an environment virtual machine resource named `vmtest`. 
+
+```yml
+stages:
+- stage: build
+  jobs:
+  - deployment: build_job
+    environment:
+      name: vmtest
+      resourceName: winVM2
+      resourceType: VirtualMachine
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: PowerShell@2
+            name: setRunTests
+            inputs:
+              targetType: inline
+              pwsh: true
+              script: |
+                $runTests = "true"
+                echo "setting runTests: $runTests"
+                echo "##vso[task.setvariable variable=runTests;isOutput=true]$runTests"
+
+- stage: test
+  dependsOn:
+  - 'build'
+  condition: eq(dependencies.build.outputs['build_job.Deploy_winVM2.setRunTests.runTests'], 'true')
+  jobs:
+  - job: A
+    steps:
+     - script: echo Hello from job A
 ```
 
 ::: moniker-end

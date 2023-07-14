@@ -3,9 +3,9 @@ title: Build Java apps
 description: Automatically build Java apps with Azure Pipelines.
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
 ms.reviewer: dastahel
-ms.custom: freshness-fy22q2, devdivchpfy22
+ms.custom: freshness-fy22q2, devdivchpfy22, devx-track-extended-java
 ms.topic: quickstart
-ms.date: 05/26/2022
+ms.date: 10/03/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -119,11 +119,11 @@ Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure
 
 ### Maven
 
-With your Maven build, the following snippet gets added to your `azure-pipelines.yml` file. You can change values, such as the path to your `pom.xml` file, to match your project configuration. See the [Maven](../tasks/build/maven.md) task for more information about these options.
+With your Maven build, the following snippet gets added to your `azure-pipelines.yml` file. You can change values, such as the path to your `pom.xml` file, to match your project configuration. See the [Maven](/azure/devops/pipelines/tasks/reference/maven-v3) task for more information about these options.
 
 ```yaml
 steps:
-- task: Maven@3
+- task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -135,7 +135,7 @@ steps:
     goals: 'package'
 ```
 
-For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](../tasks/build/maven.md) task as well. Make sure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you're using the [Spring Boot sample repo](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`.
+For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](/azure/devops/pipelines/tasks/reference/maven-v3) task as well. Make sure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you're using the [Spring Boot sample repo](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`.
 
 #### Customize the build path
 
@@ -149,7 +149,7 @@ For details about common Java phases and goals, see [Apache's Maven documentatio
 
 ### Gradle
 
-With the Gradle build, the following snippet gets added to your `azure-pipelines.yml` file. For more information about these options, see the [Gradle](../tasks/build/gradle.md) task.
+With the Gradle build, the following snippet gets added to your `azure-pipelines.yml` file. For more information about these options, see the [Gradle](/azure/devops/pipelines/tasks/reference/gradle-v3) task.
 
 ```yaml
 steps:
@@ -185,7 +185,7 @@ For more information about common Java Plugin tasks for Gradle, see [Gradle's do
 
 ### Ant
 
-With Ant build, the following snippet is added to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file to match your project configuration. For more information about these options, see the [Ant](../tasks/build/ant.md) task.
+With Ant build, the following snippet is added to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file to match your project configuration. For more information about these options, see the [Ant](/azure/devops/pipelines/tasks/reference/ant-v1) task.
 
 ```yaml
 steps:
@@ -206,7 +206,7 @@ To build with a command line or script, add one of the following snippets to you
 
 #### Inline script
 
-The `script:` step runs an inline script using Bash on Linux and macOS and Command Prompt on Windows. For details, see the [Bash](../tasks/utility/bash.md) or [Command line](../tasks/utility/powershell.md) task.
+The `script:` step runs an inline script using Bash on Linux and macOS and Command Prompt on Windows. For details, see the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) or [Command line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task.
 
 ```yaml
 steps:
@@ -218,7 +218,7 @@ steps:
 
 #### Script file
 
-This snippet runs a script file that is in your repo. For details, see the [Shell Script](../tasks/utility/shell-script.md), [Batch script](../tasks/utility/batch-script.md), or [PowerShell](../tasks/utility/powershell.md) task.
+This snippet runs a script file that is in your repo. For details, see the [Shell Script](/azure/devops/pipelines/tasks/reference/shell-script-v2), [Batch script](/azure/devops/pipelines/tasks/reference/batch-script-v1), or [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2) task.
 
 ```YAML
 steps:

@@ -3,11 +3,12 @@ title: Hosted XML process model
 titleSuffix: Azure DevOps Services
 description: How to customize work tracking features using the Hosted XML process model 
 ms.service: azure-devops-boards
+ms.custom: engagement-fy23
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 10/24/2019
+ms.date: 01/17/2023
 ---
 
 
@@ -65,7 +66,7 @@ You can perform the following tasks with the Hosted XML process model.
    - [Add a custom pick list](../../../reference/add-modify-field.md#picklist)
    - [Predefined field](../../../reference/add-modify-field.md#picklist)
    - [Resolution State or Failure Type](../../../reference/customize-work.md)
-   - [Define global lists](../../../reference/xml/define-global-lists.md)    
+   - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)    
    :::column-end:::
 :::row-end:::
 
@@ -77,7 +78,7 @@ You can perform the following tasks with the Hosted XML process model.
    
    - [Add or modify a work item type](../../../reference/add-modify-wit.md)
    - [Change the workflow (States, Reasons, Transitions)](../../../reference/xml/change-workflow-wit.md)
-   - [Customize the form](../../../reference/xml/change-work-item-form-layout.md)
+   - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
    - [Specify the WIT color](../../../reference/xml/process-configuration-xml-element.md#wit-colors)
    - [Specify the WIT icon](../../../reference/xml/process-configuration-xml-element.md)
    - [Specify the workflow state color](../../../reference/xml/process-configuration-xml-element.md#state-colors)     
@@ -99,7 +100,7 @@ You can perform the following tasks with the Hosted XML process model.
    - [Set default bug management behavior](../../../reference/xml/process-configuration-xml-element.md#behaviors)
    - [Set default hidden backlogs](../../../reference/xml/process-configuration-xml-element.md#behaviors)
    - [Process configuration](../../../reference/xml/process-configuration-xml-element.md)
-   - [Categories](../../../reference/xml/categories-xml-element-reference.md)     
+   - [Categories](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)     
    :::column-end:::
 :::row-end:::
 
@@ -143,7 +144,7 @@ This syntax has been been added to the following work item type definitions of t
 
 Use the following sequences when you manage customizations using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
 
-[![Export process](media/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](media/cust-wit-form-edit-def-file.png)](../../../reference/xml/weblayout-xml-elements.md)[![Import process](media/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
+[![Export process](media/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](media/cust-wit-form-edit-def-file.png)](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)[![Import process](media/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
 
 

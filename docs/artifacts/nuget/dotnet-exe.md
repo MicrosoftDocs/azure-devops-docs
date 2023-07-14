@@ -3,6 +3,7 @@ title: Publish and restore packages with dotnet CLI
 description: How to connect to a feed and use the dotnet CLI to publish and restore NuGet packages
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.service: azure-devops-artifacts
+ms.custom: devx-track-dotnet
 ms.topic: conceptual
 ms.date: 06/28/2022
 monikerRange: '<= azure-devops'
@@ -117,6 +118,9 @@ dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATI
     dotnet nuget add source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --name MySource --username MyUserName --password MyPersonalAccessToken --configfile ./nuget.config
     dotnet nuget push nupkgs/mypackage.1.1.0.nupkg --source MySource --api-key AZ
     ```
+
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
 
 ## Restore packages
 

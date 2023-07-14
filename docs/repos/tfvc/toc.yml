@@ -10,6 +10,8 @@
     href: share-your-code-in-tfvc-eclipse.md
   - name: Xcode
     href: share-your-code-in-tfvc-xcode.md
+  - name: Develop an app
+    href: develop-your-app-team-foundation-version-control.md
   - name: Write new code 
     href: day-life-alm-developer-write-new-code-user-story.md
   - name: Suspend work using My Work
@@ -48,6 +50,14 @@
     href: decide-between-using-local-server-workspace.md
   - name: Add check-in policies
     href: add-check-policies.md
+  - name: Edit check-in policies
+    href: edit-check-policies.md
+  - name: Enable or disable check-in policies
+    href: enable-disable-check-policies.md
+  - name: Remove check-in policies
+    href: remove-check-policies.md
+  - name: Configure check-in notes
+    href: configure-check-notes.md
   - name: Test impact for partially mapped repositories
     href: test-impact-for-partially-mapped-tfvc-repositories.md
 - name: Work with files
@@ -90,6 +100,8 @@
       href: lock-unlock-folders-files.md
 - name: Manage versions
   items:
+  - name: View and manage past versions
+    href: view-manage-past-versions.md
   - name: Get the history of an item
     href: get-history-item.md
   - name: View changes using annotate
@@ -105,7 +117,7 @@
 - name: Manage TFVC
   items:
   - name: Default TFVC permissions (Security)
-    href: ../../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/toc.json
   - name: Set TFVC permissions (Security)
     href: set-tfvc-repository-permissions.md
   - name: Control access to TFVC
@@ -125,7 +137,7 @@
   - name: Clean up files when users leave
     href: clean-up-files-when-users-leave.md
   - name: Destroy version controlled files
-    href: configure-check-out-settings.md
+    href: destroy-version-controlled-files.md
   - name: Migrate from Visual SourceSafe
     href: /previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120)
   - name: Download permissions report
@@ -165,6 +177,8 @@
     href: help-command-team-foundation-version-control.md
   - name: History
     href: history-command.md
+  - name: Info or Properties
+    href: properties-or-info-command.md
   - name: Label
     href: label-command-team-foundation-version-control.md
   - name: Labels
@@ -181,8 +195,6 @@
     href: msdn-command.md
   - name: Permission
     href: permission-command.md
-  - name: Properties
-    href: properties-or-info-command.md
   - name: Proxy
     href: proxy-command.md
   - name: Reconcile

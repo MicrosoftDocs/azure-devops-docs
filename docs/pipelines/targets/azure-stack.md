@@ -150,7 +150,7 @@ Create a service connection. You’ll need the values from your SPN and the name
     # Add steps that build, run tests, deploy, and more:
     # https://aka.ms/yaml
     trigger:
-    - master
+    - main
     variables:
       azureSubscription: '<your connection name>'
       VSTS_ARM_REST_IGNORE_SSL_ERRORS: true
@@ -173,12 +173,12 @@ Create a service connection. You’ll need the values from your SPN and the name
 
 The following Azure tasks are validated with Azure Stack Hub:
 
-* [Azure PowerShell](../tasks/deploy/azure-powershell.md)
-* [Azure File Copy](../tasks/deploy/azure-file-copy.md)
-* [Azure Resource Group Deployment](../tasks/deploy/azure-resource-group-deployment.md)
-* [Azure App Service Deploy](../tasks/deploy/azure-rm-web-app-deployment.md)
-* [Azure App Service Manage](../tasks/deploy/azure-app-service-manage.md) 
-* [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md)
+* [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5)
+* [Azure File Copy](/azure/devops/pipelines/tasks/reference/azure-file-copy-v4)
+* [Azure Resource Group Deployment](/azure/devops/pipelines/tasks/reference/azure-resource-group-deployment-v2)
+* [Azure App Service Deploy](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4)
+* [Azure App Service Manage](/azure/devops/pipelines/tasks/reference/azure-app-service-manage-v0) 
+* [Azure SQL Database Deployment](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1)
 
 ## Next steps
 

@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Run pipeline jobs inside of a container
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
-ms.date: 10/07/2022
+ms.date: 05/01/2023
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -220,7 +220,7 @@ jobs:
 
 ## Non glibc-based containers
 
-The Azure Pipelines agent supplies a copy of Node.js, which is required to run tasks and scripts.
+The Azure Pipelines agent supplies a copy of Node.js, which is required to run tasks and scripts. To find out the version of Node.js for an hosted agent, see [Microsoft-hosted agents](../agents/hosted.md#software). 
 The version of Node.js is compiled against the C runtime we use in our hosted cloud, typically glibc.
 Some variants of Linux use other C runtimes.
 For instance, Alpine Linux uses musl.

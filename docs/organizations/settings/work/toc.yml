@@ -2,7 +2,7 @@
   href: inheritance-process-model.md
   displayname: system process, custom, rule, work item type, workflow, backlog, limits
 - name: View and list fields
-  href: ../../../boards/work-items/work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  href: ../../../boards/work-items/work-item-fields.md?toc=/azure/devops/reference/toc.json
 - name: Add a custom field
   href: add-custom-field.md
   displayname: create, new, work item, type, inherit

@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn about sample work item templates you can use to pre-populate fields and provide guidance in work item forms. 
 ms.service: azure-devops-boards
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -18,14 +18,14 @@ ms.date: 04/01/2022
 Work item templates can help save time and provide guidance to your team when defining user stories, features, bugs, or tasks. Teams use templates to support the following goals:
 
 - Create bugs for specific product areas 
-- Provide guidance to fill out the work item 
+- Provide guidance to complete the work item 
 - Create work items with specific tags 
 - Define a bug template for use with another application or extension, such as [Bug Bash Pro](https://marketplace.visualstudio.com/items?itemName=mohitbagra.bugbashpro).
 
 Review this article for examples of defining specific values of work item templates. For guidance on adding, managing, and applying work item templates, see [Use templates to add and update work items](../backlogs/work-item-template.md).
 
 > [!NOTE]  
-> Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
+> Work item templates are distinct from process templates. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) or these specific articles for the process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 
 <a id="area-path"> </a> 
@@ -97,7 +97,7 @@ For example, the <strong>Triage</strong> custom field can be set to `False`, ind
 
 ## Access other features through extensions  
 
-An often requested feature is to allow the creation of a work item that automatically links to one or more work items. For example, a user story that links to five tasks. Work item templates don't support this capability. However, you may find a Marketplace extension will support this feature. For example, see the following extensions: 
+An often requested feature is to allow the creation of a work item that automatically links to one or more work items. For example, a user story that links to five tasks. Work item templates don't support this capability. However, you may find a Marketplace extension  supports this feature. For example, see the following extensions: 
 
 - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks) 
@@ -109,10 +109,10 @@ An often requested feature is to allow the creation of a work item that automati
 
 If your project uses the On-premises XML process model to customize work tracking, you can add help text, hyperlinks, or web content to a form to provide guidance. 
 
-To learn more, see the following articles: 
-- [WebLayout and Control elements](../../reference/xml/weblayout-xml-elements.md)
+For more information, see the following articles: 
+- [WebLayout and Control elements](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)
 - [Provide help text, hyperlinks, or web content on a work item form](../../reference/xml/provide-help-text-hyperlinks-web-content-form.md)
-- [Edit a WIT definition to add web content to a work item form](../../reference/xml/edit-wit-definition-add-web-content-form.md)
+- [Edit a WIT definition to add web content to a work item form](/previous-versions/azure/devops/reference/xml/edit-wit-definition-add-web-content-form)
  
 ::: moniker-end
 

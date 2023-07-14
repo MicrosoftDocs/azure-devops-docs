@@ -5,7 +5,7 @@ ms.topic: tutorial
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.author: jukullam
 author: juliakm
-ms.date: 10/17/2022
+ms.date: 01/19/2023
 monikerRange: 'azure-devops'
 ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2
 ---
@@ -29,11 +29,12 @@ To test the example app locally, from the folder containing the code, run the fo
 
 
 ```bash
-# Mac/Linux
+# Linux
 sudo apt-get install python3-venv  # If needed
 python3 -m venv .env
 source .env/bin/activate
-pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
+python3 -m pip install --upgrade pip
+python3 -m pip install -r ./requirements.txt
 export set FLASK_APP=hello_app.webapp
 python3 -m flask run
 ```
@@ -47,7 +48,9 @@ $env:FLASK_APP = "hello_app.webapp"
 python -m flask run
 ```
 
-Open a browser and go to *http:\//localhost:5000* to view the app. When you're finished, close the browser and stop the Flask server with **Ctrl**+**C**.
+Open a browser and go to *http:\//localhost:5000* to view the app. Verify that you see the title `Visual Studio Flask Tutorial`. 
+
+When you're finished, close the browser and stop the Flask server with **Ctrl**+**C**.
 
 ## Provision the target Azure App Service
 
@@ -108,7 +111,7 @@ The quickest way to create an App Service instance is to use the Azure command-l
       
       When the command completes, it shows JSON output in the Cloud Shell.
 
-5. To see the running app, open a browser and go to *http:\//\<your-appservice>.azurewebsites.net*. If you see a generic page, wait a few seconds for the App Service to start, and refresh the page.
+5. To see the running app, open a browser and go to *http:\//\<your-appservice>.azurewebsites.net*. If you see a generic page, wait a few seconds for the App Service to start, and refresh the page. Verify that you see the title `Visual Studio Flask Tutorial`. 
 
     > [!NOTE]
     > For a detailed description of the specific tasks performed by the `az webapp up` command, see [Provision an App Service with single commands](#provision-an-app-service-with-single-commands) at the end of this article.
@@ -203,7 +206,7 @@ The YAML file contains the following key elements:
 - Each stage has a `pool` element that specifies one or more virtual machines (VMs) in which the pipeline runs the `steps`. By default, the `pool` element contains only a single entry for an Ubuntu VM. You can use a pool to run tests in multiple environments as part of the build, such as using different Python versions for creating a package.
 - The `steps` element can contain children like `task`, which runs a specific task as defined in the Azure Pipelines [task reference](../tasks/index.md), and `script`, which runs an arbitrary set of commands. 
 
-- The first task under Build stage is [UsePythonVersion](../tasks/tool/use-python-version.md), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
+- The first task under Build stage is [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
 Then we have script-based task that creates a virtual environment and installs dependencies from file (requirements.txt).
 
    ```yaml
@@ -223,7 +226,7 @@ Then we have script-based task that creates a virtual environment and installs d
    ```
 
 
-- Next step creates the *.zip* file that the steps under deploy stage of the pipeline deploys. To create the *.zip* file, add an [ArchiveFiles](../tasks/utility/archive-files.md) task to the end of the YAML file:
+- Next step creates the *.zip* file that the steps under deploy stage of the pipeline deploys. To create the *.zip* file, add an [ArchiveFiles](/azure/devops/pipelines/tasks/reference/archive-files-v2) task to the end of the YAML file:
 
    ```yaml
    - task: ArchiveFiles@2
@@ -248,8 +251,8 @@ Then we have script-based task that creates a virtual environment and installs d
 
 - In the Deploy stage, we use the `deployment` keyword to define a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md). By using the template, an environment with same name as the Web app is automatically created if it doesn't already exist. Instead, you can pre-create the environment and provide the `environmentName`.
 
-- Within the deployment job, first task is [UsePythonVersion](../tasks/tool/use-python-version.md), which specifies the version of Python to use on the build agent. 
-- We then use the [AzureWebApp](../tasks/deploy/azure-rm-web-app.md) task to deploy the *.zip* file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
+- Within the deployment job, first task is [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0), which specifies the version of Python to use on the build agent. 
+- We then use the [AzureWebApp](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) task to deploy the *.zip* file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. If you need to use a different service connection, select **Settings** for the `AzureWebApp@1` task and update the **Azure subscription** value. Paste the following code at the end of the file:
 
     ```yaml
   jobs:
@@ -364,7 +367,7 @@ As part of your build process, you may want to run tests on your app code. Tests
   displayName: 'Remove .env before zip'
 ```
 
-You can also use a task like [PublishTestResults@2](../tasks/test/publish-test-results.md?tabs=yaml) to make test results appear in the pipeline results screen. For more information, see [Build Python apps - Run tests](python.md#run-tests).
+You can also use a task like [PublishTestResults@2](../tasks/test/publish-test-results.md?tabs=yaml) to make test results appear in the pipeline results screen. For more information, see [Build Python apps - Run tests](customize-python.md#run-tests).
 
 ## Provision an App Service with single commands
 

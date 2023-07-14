@@ -81,7 +81,7 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "reusable-content",
+      "path_to_root": "docs/reusable-content",
       "url": "https://github.com/MicrosoftDocs/reusable-content",
       "branch": "main",
       "branch_mapping": {}
@@ -103,7 +103,9 @@
     ".openpublishing.redirection.archive.2015.json",
     ".openpublishing.redirection.archive.2017.json",
     "docs/legacy/.openpublishing.redirection.legacy.json",
+    "docs/organizations/.openpublishing.redirection.notifications.json",
     "docs/pipelines/.openpublishing.redirection.pipelines.json",
+    "docs/pipelines/.openpublishing.redirection.tasks.json",
     "docs/report/.openpublishing.redirection.report.json",
     "docs/artifacts/.openpublishing.redirection.artifacts.json",
     "release-notes/.openpublishing.redirection.release-notes.json"

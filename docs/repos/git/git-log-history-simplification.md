@@ -12,7 +12,6 @@ ms.subservice: azure-devops-repos-git
 # Understand Git history simplification
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
  
 Git history simplification can be a confusing beast. 99% of the time you won't even know it exists, but occasionally it will jump out of the dark corners of Git and bite you. In this article, we'll explore what history simplification is and how it can cause confusion when looking at file history.
 
@@ -23,25 +22,25 @@ Let's start with a common scenario:
  3. You come back some time later and notice your changes are missing.
  4. Looking for the culprit, you go look at the file history and notice... your changes aren't even listed!?
 
-Git commit history is a tree. Sometimes, the chronological history is not the same as the actual file tree history. This occurs most often when a merge commit reverts a file back to its original state. In that case, the default history view *won't actually show you all changes*, because technically the file didn't change. In this scenario, Git realizes it can simplify the history and the "changes" you are most likely looking for are removed from the log.
+Git commit history is a tree. Sometimes, the chronological history isn't the same as the actual file tree history. This situation occurs most often when a merge commit reverts a file back to its original state. In that case, the default history view *won't actually show you all changes*, because technically the file didn't change. In this scenario, Git realizes it can simplify the history and the "changes" you're most likely looking for are removed from the log.
 
 Unless you have run into it before, you may become frustrated, wondering *Where the heck did my changes go?*
 
 ## History simplification: On by Default
 
-By default, running the log command on a file: `git log file.txt` will automatically simplify history, possibly hiding some commits from its output. For additional information, see [git log man page](https://git-scm.com/docs/git-log#_history_simplification).
+By default, running the log command on a file: `git log file.txt` will automatically simplify history, possibly hiding some commits from its output. For more information, see [git log man page](https://git-scm.com/docs/git-log#_history_simplification).
 
-What adds to the confusion is that history simplification does *not* occur if you just run `git log`, because you are looking at all changes there is nothing to simplify.
+What adds to the confusion is that history simplification does *not* occur if you just run `git log`, because you're looking at all changes there's nothing to simplify.
 
 In order to turn off history simplification, you need to use the command-line switch `--full-history`.
 
 ## An Example of History Simplification
 
-To better understand how this works, we create our own example of history simplification. First, let's look at a diagram of the history we are going to create:
+To better understand how simplification works, we create our own example of history simplification. First, let's look at a diagram of the history we're going to create:
 
 ![Git Branches](./media/git-log-history-simplification/history-simplification-branches.png)
 
-As you can see, we are going to:
+As you can see, we're going to:
 
 1. Create a file.
 2. Add a line to that file in a branch (animals).
@@ -50,7 +49,7 @@ As you can see, we are going to:
 5. Merge branch *fruit* back into main, and choose the entire copy of the file from the fruit branch.
 6. Check the history of the file.
 
-As you will see, Git is going to simplify the history for us. The key here is step 5 -- we ignored all changes from the *animal* branch. Git will notice that our file essentially *did not change* between step 1 and step 5, and so it will only show us *two history entries*.
+Git is going to simplify the history for us. Step 5 is the key here. We ignored all changes from the *animal* branch. Git will notice that our file essentially *did not change* between step 1 and step 5, and so it will only show us *two history entries*.
 
 First we create the file and add it to our repo:
 
@@ -58,7 +57,7 @@ First we create the file and add it to our repo:
 ```Git CLI
 > cd sample
 > git init
-> echo "some content" &gt; test.txt
+> echo "some content" > test.txt
 > git add test.txt
 > git commit -m "Initial commit"
 ```
@@ -69,16 +68,16 @@ Now we decide to append the text "donkeys" to the file in an animal branch:
 > [!div class="tabbedCodeSnippets"]
 ```Git CLI
 > git checkout -b animals
-> echo "donkeys" &gt;&gt; test.txt
+> echo "donkeys" >> test.txt
 > git commit -am "We have added an animal"
 ```
     
-While we are experimenting, we decide maybe we want to go with fruit in our file instead, so we create a different branch and append the text "bananas" at the end of the file instead:
+While we're experimenting, we decide maybe we want to go with fruit in our file instead, so we create a different branch and append the text "bananas" at the end of the file instead:
 
 > [!div class="tabbedCodeSnippets"]
 ```Git CLI
 > git checkout main -b fruit
-> echo "bananas" &gt;&gt; test.txt
+> echo "bananas" >> test.txt
 > git commit -am "We have added a fruit"
 ```
     
@@ -122,8 +121,8 @@ So far so good, right? Nothing looks out of the ordinary in our log output. Now 
 
 > [!div class="tabbedCodeSnippets"]
 ```Git CLI
-> echo "some content" &gt; test.txt
-> echo "bananas" &gt;&gt; test.txt
+> echo "some content" > test.txt
+> echo "bananas" >> test.txt
 > git commit -am "Fixed merge conflict"
 ```
     
@@ -179,14 +178,14 @@ As you can see, although it simplified the log without the `full-history` flag, 
 
 ## Git history simplification summary
 
-The thing about history simplification is that most of the time you will never notice it. But when a merge conflict goes wrong and you want to know what happened -- you may find yourself looking at the git log history and wondering where your changes went. 
+The thing about history simplification is that most of the time you'll never notice it. But when a merge conflict goes wrong and you want to know what happened, you may find yourself looking at the git log history and wondering where your changes went. 
 
 Now, instead of panicking, you know that:
 * History simplification for files is turned on by default
 * The `--full-history` flag will give you a more comprehensive file history
 
 **Update**: Since I wrote this article, [Azure DevOps Services has introduced a number of awesome history viewing options on the web](https://devblogs.microsoft.com/devops/announcing-git-graph-and-advanced-filters-to-visualize-commit-history/). 
-What this means is that if you don't want to go slogging through the command line, you can simply pull up the file you wish to view history for in our explorer and you will be presented with the below history filter where you can specify simple or non-simple history views:
+What this means is that if you don't want to go slogging through the command line, you can simply pull up the file you wish to view history for in our explorer and you'll be presented with the below history filter where you can specify simple or non-simple history views:
 
 ![Git Filters](./media/git-log-history-simplification/Filters.png)
 

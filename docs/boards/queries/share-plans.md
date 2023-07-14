@@ -2,14 +2,14 @@
 title: Share information in work items and social tools in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to easily share information about work items, queries, and more in Azure Boards.
-ms.custom: boards-queries
+ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 10/26/2022
 ---
 
 
@@ -126,7 +126,7 @@ You can copy and paste HTML text or an image from another application directly i
 
 To support traceability and add context to work items, you can link items to other work items or objects. From a links control tab, you can choose from various link types to based on the objects you want to link to. 
 
-Your link options will differ depending on the client you use. For specific guidance, see these resources:
+Your link options differ depending on the client you use. For specific guidance, see these resources:
 
 - [Add link to work items](../backlogs/add-link.md)  
 - [Link items to support traceability and manage dependencies](link-work-items-support-traceability.md)  
@@ -148,15 +148,14 @@ You can add up to 100 attachments to a work item. Attachments are limited to 60 
 
 You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. 
 
-By default, the size of work item attachments is limited to 4 MB. You can use the TFS web service to [increase the size of files you attach up to 2 GB](../../reference/xml/change-maximum-attachment-size-work-items.md).
+By default, the size of work item attachments is limited to 4 MB. You can use the web service to [increase the size of files you attach up to 2 GB](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).
 
 ::: moniker-end 
  
 Choose the ![Attachment tab icon](../backlogs/media/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. The following file types support preview as attachments.  
-- **Image types**: "jpg", "jpeg", "png", "jif", "jfif", "jpx", "fpx", "pcd", "bmp", "img", "eps", "psd", "wmf", "gif"
-- **Video Types**: "mp4", "mov", "m4v", "webm
-- **Text Types**:  "txt", "log"
-
+- **Image types**: jpg, jpeg, png, jif, jfif, jpx, fpx, pcd, bmp, img, eps, psd, wmf, gif, svg, webp
+- **Video types**: mp4, mov, m4v, webm
+- **Text & code types**:  sql, java, jsp, jar, asp, aspx, css, scss, sass, less, html, htm, xhtml, js, jsx, cs, csv, vb, cpp, cxx, c++, hpp, hxx, h, f#, ts, tsx, py, md, rs, rb, xml, c, php, swift, tex, json, yml, yaml, sbl, asm, d, f, for, go, m, p, pas, r, bat, sh, pl, awk, cmd, lua, sln, proj, txt, log, wiql
 
 <a id="attach-browser" />
 
@@ -181,7 +180,7 @@ You can continue viewing the attachments as a list or switch to a grid view to s
 
 ![Attachments tab, list or grid view](media/share-plans/142_attachments.gif) 
 
-You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. You can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
+You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. You can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For more information, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
 
 > [!TIP]  
 > To get the URL of an image file you've attached, choose to preview it, right-click the image and choose the copy image address. Paste the address into a text editor and discard everything starting with **&download** to the end. 
@@ -218,6 +217,17 @@ To open the menu options to download or delete several attachments, choose one o
 
 * * *
 
+<a id="copy-url-attached-file"></a>
+
+::: moniker range="azure-devops"
+
+## Copy URL of attached file 
+
+To quickly copy the URL of an attachment, you can select **Copy attachment link** option from the attachment's :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** menu.
+
+:::image type="content" source="media/share-plans/copy-url-attachment-menu-option.png" alt-text="Screenshot of work item form, Attachments tab, Copy attachment link  attachment menu option."::: 
+::: moniker-end 
+
 <a id="storyboard" />
 
 ## Storyboard your information
@@ -226,7 +236,7 @@ Storyboarding your ideas and goals increases visual understanding. With [PowerPo
 
 
 > [!NOTE]  
-> Starting with Visual Studio 2019, the Team Foundation plug-in for Office deprecated support for Storyboarding with PowerPoint. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated. You can still use the Storyboard link type to link to network share objects to share information, however, you can't link from PowerPoint to Azure DevOps using the link feature.
+> Starting with Visual Studio 2019, the Team Foundation plug-in for Office deprecated support for Storyboarding with PowerPoint. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated. You can still use the **Storyboard** link type to link to network share objects to share information, however, you can't link from PowerPoint to Azure DevOps using the link feature.
 
 
 ::: moniker range="tfs-2018"
@@ -284,17 +294,17 @@ You can email a formatted query list by choosing the **Send to Microsoft Outlook
 
 You can share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. You can add widgets to provide Markdown information, query charts, and more. 
 
-For details, see [Manage dashboards](../../report/dashboards/dashboards.md). 
+For more information, see [Manage dashboards](../../report/dashboards/dashboards.md). 
 
 ## Share information with a project wiki 
 
 You can use your project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.  
 
-To learn more, see [Create a wiki for your project](../../project/wiki/wiki-create-repo.md). 
+For more information, see [Create a wiki for your project](../../project/wiki/wiki-create-repo.md). 
 
 ## Marketplace extensions  
 
-You may find more ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
+You may find more ways to share information by exporting work items to other applications such as Microsoft Word. For more information, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
 
 ## Related articles  
 

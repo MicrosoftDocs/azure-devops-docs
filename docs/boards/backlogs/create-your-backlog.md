@@ -5,8 +5,8 @@ description: Learn how to add backlog items or user stories to plan your project
 ms.custom: "boards-backlogs, seodec18, contperf-fy20q4" 
 ms.service: azure-devops-boards
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -33,7 +33,7 @@ You use work items to share information, assign work to team members, track depe
 and more. Because the most important work appears at the top of the list, your team always knows what to work on next.
 
 > [!NOTE]  
-> Your product backlog is one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). If you're not seeing the work items you expect on your backlog, review [Setup your backlogs and boards](set-up-your-backlog.md).   
+> Your product backlog is one of three classes of backlogs available to you, backlogs, boards, and plans. If you don't see the work items you expect on your backlog, see [Set up your backlogs and boards](set-up-your-backlog.md).   
 
 
 ## Add a backlog
@@ -105,7 +105,7 @@ From your web browser, open your product backlog.
 
 	:::image type="content" source="media/create-backlog/backlog-selector.png" alt-text="Choose backlog level."::: 
 
-2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -132,7 +132,7 @@ From your web browser, open your product backlog.
     > [!div class="mx-imgBorder"]  
     > ![Select product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To select which columns display and in what order, select the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To select which columns display and in what order, select the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md). 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Column options](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -182,13 +182,13 @@ Your backlog shows work that you plan to do or have started to work on. As soon 
     > [!div class="mx-imgBorder"]
     > ![Add a product backlog item](media/create-backlog/view-options-parents-off.png) 
 
-1. To add a work item, select :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false":::**New Work Item** and enter a title. Then press Enter or select **Add to top**.  Work items are automatically assigned the default **Area Path** and **Iteration Path** selected for the team. To learn more, see [Configure team settings](../../organizations/settings/manage-teams.md). 
+1. To add a work item, select :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false":::**New Work Item** and enter a title. Then press Enter or select **Add to top**.  Work items are automatically assigned the default **Area Path** and **Iteration Path** selected for the team. For more information, see [Configure team settings](../../organizations/settings/manage-teams.md). 
 
     > [!div class="mx-imgBorder"]
     > ![Add the work item.](media/create-backlog/add-new-items-agile.png) 
 
 	> [!NOTE]  
-	> If you have **Stakeholder** access , you can only add work items to the bottom of the backlog. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+	> If you have **Stakeholder** access , you can only add work items to the bottom of the backlog. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 2. Repeat this step to capture all your ideas as work items.  
 
@@ -197,12 +197,12 @@ Your backlog shows work that you plan to do or have started to work on. As soon 
 
 ::: moniker range="tfs-2018"
 
-To build your backlog, enter a title and select **Add**. If you don't see the **Add** link, select **New** to open the quick add panel. Optionally, set **In progress items** to **Show** or **Hide**. Work items are automatically assigned the default **Area Path** and **Iteration Path** selected for the team. To learn more, see [Configure team settings](../../organizations/settings/manage-teams.md). 
+To build your backlog, enter a title and select **Add**. If you don't see the **Add** link, select **New** to open the quick add panel. Optionally, set **In progress items** to **Show** or **Hide**. Work items are automatically assigned the default **Area Path** and **Iteration Path** selected for the team. For more information, see [Configure team settings](../../organizations/settings/manage-teams.md). 
 
 ![Add work items to the backlog](media/create-backlog/add-new-items-standard.png) 
 
 > [!NOTE]  
-> If you have **Stakeholder** access , you can only add work items to the bottom of the backlog. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> If you have **Stakeholder** access , you can only add work items to the bottom of the backlog. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 Repeat this step until you capture all your main ideas. 
 
@@ -261,7 +261,7 @@ For example, here we assign the story to Raisa Pokrovskaya and we add a discussi
 > [!div class="mx-imgBorder"]
 > ![User Story work item form, add details](../get-started/media/plan-track-work/user-story-form-add-details.png)
 
- Choose **Save & Close** when done. 
+ Choose **Save & Close** when you're done. 
 
 
 ### [Basic process](#tab/basic-process) 
@@ -271,7 +271,7 @@ For example, here we assign the issue to Raisa Pokrovskaya and we add a discussi
 > [!div class="mx-imgBorder"]
 > ![Issues work item form, add details ](../get-started/media/track-issues/issue-form-add-details.png)
 
-Choose **Save & Close** when done. 
+Choose **Save & Close** when you're done. 
 
 ### [Scrum process](#tab/scrum-process) 
 
@@ -280,7 +280,7 @@ For example, here we assign the product backlog item to Christie Church and set 
 > [!div class="mx-imgBorder"]  
 > ![Product Backlog Item form](media/create-backlog/pbi-form.png) 
 
-Choose **Save & Close** when done. 
+Choose **Save & Close** when you're done. 
 
 
 ### [CMMI process](#tab/cmmi-process) 
@@ -290,7 +290,7 @@ For example, here we assign the product backlog item to Jamal Hartnett and set S
 > [!div class="mx-imgBorder"]  
 > ![Requirements work item form](../work-items/guidance/media/cmmi-requirement-form.png) 
 
-Choose **Save & Close** when done. 
+Choose **Save & Close** when you're done. 
 
 *** 
 
@@ -344,7 +344,7 @@ Choose **Save & Close** when done.
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Impact Assessment](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI only)
+      [Impact Assessment](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi) (CMMI only)
    :::column-end:::
    :::column span="3":::
       Describes the customer impact of not implementing the requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories.
@@ -375,7 +375,7 @@ From the **View options** selector, you can choose to show or hide **In Progress
 Choose **In progress items** show or hide **In Progress** backlog items. If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) won't appear in the backlog. 
 ::: moniker-end
 
-You usually choose to hide **In Progress items** when you want to forecast work. To learn more, see [Forecast your product backlog](../sprints/forecast.md).
+You usually choose to hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
 
 
 <a id="show-hide-completed" />  
@@ -390,13 +390,13 @@ From the **View options** selector, you can choose to show or hide **Completed C
 
 You usually choose to show Completed child items when you want to [view rollup columns](display-rollup.md).   
 
-You usually choose to hide Completed child items when you want to forecast work. To learn more, see [Forecast your product backlog](../sprints/forecast.md).
+You usually choose to hide Completed child items when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
 
 [!INCLUDE [temp](../includes/note-closed-items.md)]
 ::: moniker-end
 
 
-## Try this next
+## Next steps
 
 Now that you have a working backlog in place, your team can begin work on the top-priority items. From here, it's time to decide how you want to work as a team. Do you want to use Scrum or Kanban? You can use these methods independently or together.
 

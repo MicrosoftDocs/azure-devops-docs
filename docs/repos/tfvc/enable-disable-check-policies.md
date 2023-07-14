@@ -1,11 +1,11 @@
 ---
-title: Enable and Disable Check-In Policies
+title: Enable and disable check-in policies
 titleSuffix: Azure Repos
-description: Enable and Disable Check-In Policies
+description: See how TFVC administrators can enable and disable check-in policies in Team Foundation Version Control (TFVC).
 ms.assetid: 629bf67c-22c5-4047-92b8-aa8f7c201cc9
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 07/13/2022
+ms.date: 11/01/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -14,35 +14,28 @@ ms.subservice: azure-devops-repos-tfvc
 # Enable and disable check-in policies
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
+Team Foundation Version Control (TFVC) administrators can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control. For example, users can be required to associate work items with changesets. 
 
-Administrators of Team Foundation version control can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control; for example a user can be required to associate a work item with a changeset. For more information, see [Add Check-In Policies](add-check-policies.md). Prior to enabling or disabling check-in policies, you must first create a check-in policy. For more information, see [Add Check-In Policies](add-check-policies.md). The following procedures demonstrate how to enable or disable check-in policies for your project.
+Prior to enabling or disabling check-in policies, you must first create the check-in policies. For more information, see [Add check-in policies](add-check-policies.md). The following procedure describes how to enable or disable check-in policies for your project.
 
 ## Prerequisites
 
 To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 
-## Enable a check-in policy
+## Enable or disable a check-in policy
 
-1.  On the **Team** menu, click **Project Settings**, and then click **Source Control**.
+1. On the Visual Studio **Team** menu, select **Team Project Settings** > **Source Control**.
 
-2.  In the **Source Control Settings** dialog box, click the **Check-in Policy** tab.
+   Or, in the Visual Studio **Team Explorer** window, select **Settings**, and then select **Source Control** under **Team Project**.
 
-3.  In the policy type list, select the policy type you want to enable, and click **Enable**.
+1. In the **Source Control Settings** dialog box, select the **Check-in Policy** tab.
 
-4.  Click **OK**.
+1. In the **Policy Type** list, select the policy type you want to enable or disable, and then select **Enable** or **Disable**.
 
-## Disable a check-in policy
-
-1.  On the **Team** menu, click **Project Settings**, and then click **Source** **Control**.
-
-2.  In the **Source** **Control** **Settings** dialog box, click the **Check-in Policy** tab.
-
-3.  In the policy type list, select the policy type you want to delete, and click **Disable**.
-
-4.  Click **OK**.
+1. Select **OK**.
 
 ## Related articles
 

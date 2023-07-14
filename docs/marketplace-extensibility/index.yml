@@ -9,8 +9,8 @@ metadata:
   description: Discover, manage, and develop extensions and widgets for integration with Azure DevOps. 
   ms.subservice: azure-devops-marketplace
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  author: chcomley 
+  ms.author: chcomley 
   ms.date: 10/08/2019 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -24,39 +24,43 @@ landingContent:
       - linkListType: concept
         links:
           - text: About Azure DevOps Marketplace
-            url: ../marketplace/overview.md
-      - linkListType: quickstart
+            url: ../extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      - linkListType: how-to-guide
         links:
           - text: Request extensions
-            url: ../marketplace/request-extensions.md
+            url: ../marketplace/request-extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json
           - text: Install extensions
-            url: ../marketplace/install-extension.md
+            url: ../marketplace/install-extension.md?toc=/azure/devops/marketplace-extensibility/toc.json
+          - text: Manage extension permissions
+            url: ../marketplace/grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - title: Develop extensions
     linkLists:
       - linkListType: quickstart
         links:
           - text: Develop a web extension
-            url: ../extend/get-started/node.md
+            url: ../extend/get-started/node.md?toc=/azure/devops/marketplace-extensibility/toc.json
           - text: Extension samples
-            url: ../extend/develop/samples-overview.md
+            url: ../extend/develop/samples-overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
           - text: Extensibility points
-            url: ../extend/reference/targets/overview.md
+            url: ../extend/reference/targets/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
       - linkListType: tutorial
         links:
           - text: Create a custom pipelines task
-            url: ../extend/develop/add-build-task.md
+            url: ../extend/develop/add-build-task.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - title: Integrate applications
     linkLists:
       - linkListType: overview
         links:
           - text: Integration overview
-            url: ../integrate/index.md
+            url: ../integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
       - linkListType: how-to-guide
         links:
           - text: Authorize access to REST APIs with OAuth 2.0
-            url: ../integrate/get-started/authentication/oauth.md
+            url: ../integrate/get-started/authentication/oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+          - text: Authorize access with service principals and managed identities
+            url: ../integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/marketplace-extensibility/toc.json
           - text: Authenticate access with personal access tokens
-            url: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
+            url: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/marketplace-extensibility/toc.json
       - linkListType: reference
         links:
           - text: .NET client libraries
@@ -66,20 +70,20 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Azure Boards with Slack
-            url: ../boards/integrations/boards-slack.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+            url: ../boards/integrations/boards-slack.md?toc=/azure/devops/marketplace-extensibility/toc.json
           - text: Azure Pipelines with Slack
-            url: ../pipelines/integrations/slack.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+            url: ../pipelines/integrations/slack.md?toc=/azure/devops/marketplace-extensibility/toc.json
           - text: Azure Pipelines with Microsoft Teams
-            url: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+            url: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - title: Integrate with Service hooks
     linkLists:
       - linkListType: overview
         links:
           - text: Integrate with service hooks
-            url: ../service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+            url: ../service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
       - linkListType: tutorial
         links:
           - text: Create a service hook with Microsoft Teams
-            url: ../service-hooks/services/teams.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+            url: ../service-hooks/services/teams.md?toc=/azure/devops/marketplace-extensibility/toc.json
           - text: Create a service hook with WebHooks
-            url: ../service-hooks/services/webhooks.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+            url: ../service-hooks/services/webhooks.md?toc=/azure/devops/marketplace-extensibility/toc.json

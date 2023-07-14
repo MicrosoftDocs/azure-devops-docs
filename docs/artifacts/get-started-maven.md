@@ -25,11 +25,14 @@ This quickstart will guide you through setting up your Maven project to connect 
 [!INCLUDE [](includes/maven/pom-and-settings.md)]
 
 > [!TIP]
-> If you are using [Maven task](../pipelines/tasks/build/maven.md), set the `mavenAuthenticateFeed` argument to true to automatically authenticate with your Maven feed.
+> If you are using [Maven task](/azure/devops/pipelines/tasks/reference/maven-v3), set the `mavenAuthenticateFeed` argument to true to automatically authenticate with your Maven feed.
 
 ## Publish artifacts
 
 [!INCLUDE [](includes/maven/publish.md)]
+
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md#azure-artifacts). 
 
 ## Install artifacts
 

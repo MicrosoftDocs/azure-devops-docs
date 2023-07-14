@@ -1,11 +1,11 @@
 ---
 title: View where and when changesets have been merged
 titleSuffix: Azure Repos
-description: View where and when changesets have been merged
+description: Use the Team Foundation Version Control Tracking Changeset window to see which code branches received which changes and to see when the changes were merged.
 ms.assetid: 457567ff-7da3-4098-b047-bd169bad5a38
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 07/13/2022
+ms.date: 11/22/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -14,111 +14,94 @@ ms.subservice: azure-devops-repos-tfvc
 # View where and when changesets have been merged
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
+By branching your code base, you can isolate concurrent development efforts and take snapshots. However, when your team members work in a branched code base, they might not know which branches have received which changes and when those changes were merged.
 
-Branching your code base can be a useful way to isolate concurrent development efforts and to take snapshots. However, when your team members are working in a branched code base, they may have trouble finding information about which branches have received a particular set of changes and when those changes were merged.
+For example, say Feature Team B is waiting for a bug fix. You receive a notification that the bug has been fixed, but you can still reproduce the bug in the builds that come from your branch.
 
-For example, your team (Feature Team B) waits for a fix to a bug in some code on which your code depends. You receive an e-mail message that states that the bug has been fixed, but you can still reproduce the bug in the builds that come from your branch.
+In Team Foundation Version Control (TFVC), you can use the **Tracking Changeset** window to see which branches have received a set of changes. For example, in the following screenshot, the **Tracking Changeset** window shows how changeset 108 was merged from the **Dev** branch to a child branch and then baselessly merged to two other branches:
 
-By opening the **Tracking Changeset** window, you can determine which branches have and have not received a set of changes. For example, in the following illustration, the **Tracking Changeset** window shows how changeset 38 was merged from the **Dev** branch to a child branch and then baselessly merged to two other branches.
-
-Tracking Changeset window shows branches to which a changeset has merged
-
-![Tracking Changeset window](media/view-where-when-changesets-have-been-merged/IC451984.png)
+:::image type="content" source="media/view-where-when-changesets-have-been-merged/IC451985.png" alt-text="Screenshot of the Tracking Changeset window. The Dev branch contains changeset 108. Arrows point from the Dev and FeatureA branches to other branches.":::
 
 ## Prerequisites
 
-- To view changesets , your **Read** permission must be set to **Allow** for the branches with which you are working. 
-To display the timeline view of a changeset,  your **Manage branch object** permission must be set to **Allow**. 
+- To view changesets, your **Read** permission must be set to **Allow** for the branches that you're working with.
+- To display the timeline view of a changeset, your **Manage branch object** permission must be set to **Allow**. 
 
 For more information about permissions, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-## View the Tracking Changeset Window
+## View the Tracking Changeset window
 
-> [!IMPORTANT]   
-> These procedures can be performed only on a branch, not on a folder.  
-> ![View the Tracking Changeset Window](media/view-where-when-changesets-have-been-merged/IC268252.png)  
+> [!IMPORTANT]
+> You can perform these procedures on a branch but not on a folder. In the following screenshot, *BuildProcessTemplates* is a folder, and *Dev* is a branch:
+>
+> :::image type="content" source="media/view-branch-hierarchy-team-project/IC268252.png" alt-text="Screenshot of the Folders window in Visual Studio. The DinnerNow folder contains a folder named BuildProcessTemplates and a branch named Dev.":::
+>
 > For more information about how to branch, see [Branch folders and files](branch-folders-files.md).
 
-### To view the Tracking Changeset Window from the History window of a branch or file
+### View the Tracking Changeset window from the History window of a branch or file
 
-1.  In **Source Control Explorer**, click a branch or a folder or file that is contained by a branch.
+1. On the Visual Studio menu bar, select **View** > **Other Windows** > **Source Control Explorer**.
 
-2.  Click the **File** menu, point to **Source Control**, and then click **View History**.
+1. In **Source Control Explorer**, select a branch, or select a folder or file that's contained by a branch.
 
-3.  In the **History** window, right-click the changeset that you want to view, and click **Track Changeset**.
+1. On the **File** menu, select **Source Control**, and then select **View History**.
 
-    The **Select Branches** dialog box appears.
+1. In the **History** window, right-click the changeset that you want to view, and then select **Track Changeset**. The **Select Branches** dialog appears.
 
-4.  (Optional) In the **Branches** list, select or clear the check boxes for the branches that you want to show or hide.
+1. (Optional) In the **Branches** list, select or clear the branches that you want to show or hide. As you select or clear branches, a preview of your selections appears on the right side of the dialog.
 
-    As you select or clear check boxes, a preview of your selections appears on the right-hand side of the dialog box.
+1. (Optional) If your team has many branches, use the buttons above the preview to easily select the branches that you want. Hover over a button to get information about what it does.
 
-5.  (Optional) If your team has a lot of branches, click the buttons above the preview to select the branches that you want more easily.
+1. Select **Visualize**.
 
-    You can move the pointer over each button to get information about what the button does.
+### View the Tracking Changeset window from a work item that's linked to a changeset
 
-6.  Click **Visualize**.
+1. Open a work item that's linked to one or more changesets, and then select the **Track Work Item** button.
 
-### To view the Tracking Changeset window from a work item that is linked to a changeset
+   :::image type="content" source="media/view-where-when-changesets-have-been-merged/work-item-details.png" alt-text="Screenshot of the menu bar of a work item in TFVC. The Track Work Item icon is highlighted.":::
 
-1.  Open a work item that is linked to one or more changesets, and then click ![Work item](media/view-where-when-changesets-have-been-merged/IC267918.gif) **Track Work Item**.
+   The **Select Branches** dialog appears.
 
-    The **Select Branches** dialog box appears.
+1. (Optional) In the **Branches** list, select or clear the branches that you want to show or hide. As you select or clear branches, a preview of your selections appears on the right side of the dialog.
 
-2.  (Optional) In the **Branches** list, select or clear the check boxes for the branches that you want to show or hide.
+1. (Optional) If your team has many branches, select the buttons above the preview to easily select the branches that you want. Hover over a button to get information about what it does.
 
-    As you select or clear check boxes, a preview of your selections appears on the right-hand side of the dialog box.
-
-3.  (Optional) If your team has lots of branches, click the buttons above the preview to select the branches that you want more easily.
-
-    You can move the pointer over each button to show information about what the button does.
-
-4.  Click **Visualize**.
+1. Select **Visualize**.
 
 ### Overview of the Tracking Changeset Window
 
--   The following illustration shows an example of a changeset in the DinnerNow project.
+The following screenshot shows a changeset in the DinnerNow project:
 
-Tracking Changeset window elements
+:::image type="content" source="media/view-where-when-changesets-have-been-merged/IC451985.png" alt-text="Screenshot of the Tracking Changeset window. Arrows point from the Dev and FeatureA branches to several green branches and one patterned branch.":::
 
-![Tracking Changeset window elements](media/view-where-when-changesets-have-been-merged/IC451985.png)
+- The branches that the changeset has been merged to appear green. Each of those branches includes the number of the changeset that implemented the merge.
+- The branches that haven't received the changeset appear light blue.
+- If a branch received only some of the changes in the changeset, the branch is filled with a pattern, and an asterisk appears next to the changeset numbers within that branch. In the screenshot, only some of the changes in changeset 108 were merged to the **Test** branch.
+- An arrow represents a merge. A solid line indicates a standard merge, and a dashed line indicates a baseless merge.
 
-The previous example illustrates how you can use the **Tracking Changeset** window to visualize the following information:
+> [!TIP]
+> You can select a branch that received the changeset, for example, **Version2**. Then you can see all the merges that were required for the changeset to reach that branch. Those merges appear as dark green arrows.
 
--   The branches to which the changeset has been merged (displayed in green), including the numbers of changesets in which the merge was implemented.
+## Switch to the timeline view
 
-	> [!TIP]
-	> You can click one of these branches (for example, **Version2** in the previous example) to highlight all the merges that were required for the changeset to reach that branch.
+You can get information about when a changeset was merged to various branches by switching to the timeline view. This view shows the source, target, and time stamp of each merge.
 
--   Whether the merge was a standard merge (solid line) or a baseless merge (dashed line).
+### Display the timeline view of a changeset
 
--   If a branch has received some (but not all) of the changes in a changeset, the branch is filled with a pattern, and an asterisk follows the changeset numbers within that branch. For example, the previous illustration shows that only some of the changes in changeset 38 were merged to the **Test** branch.
+Open the **Tracking Changeset** or **Tracking Work Item** window, and then select :::image type="icon" source="media/view-where-when-changesets-have-been-merged/IC267920.gif"::: **Timeline Tracking**.
 
--   The branches to which the changeset has not been merged (displayed in light blue).
+### Example: Use the timeline view
 
-## Switch to Timeline View
+In the earlier example, various standard and baseless merges were visible. When you select :::image type="icon" source="media/view-where-when-changesets-have-been-merged/IC267920.gif"::: **Timeline Tracking**, the **Tracking Changeset** window switches to a view that shows the sequence of the merges:
 
-You can get information about when a changeset was merged to one or more branches by switching to the Timeline View. This view shows not only the sources and targets of each merge but also when the merge occurred.
+:::image type="content" source="media/view-where-when-changesets-have-been-merged/IC348439.png" alt-text="Screenshot of the timeline view. Bars labeled with branch names are stacked vertically. Arrows extend between branches, and a time stamp is visible.":::
 
+- The branches that received the changeset appear at the top of the view.
+- The branches that didn't receive the changeset appear in white at the bottom of the view. In this case, **FeatureB** and **Main** didn't receive the changeset.
+- The time stamp shows the date and time when the changeset was merged to a selected branch. In this case, **Version1** is selected, and the merge to that branch occurred at the displayed time.
 
-### To display the Timeline View of a changeset
+## Drag changesets and branches to merge them
 
--   Open the **Tracking Changeset** or **Tracking Work Item** window, and then click ![Timeline View of a changeset](media/view-where-when-changesets-have-been-merged/IC267920.gif) **Timeline Tracking**.
-
-### Example: Using Timeline View
-
-The previous illustration shows that two baseless merges and one standard merge occurred. When you click ![Track on Timeline View](media/view-where-when-changesets-have-been-merged/IC267920.gif) **Track on Timeline View**, the **Tracking Changeset** window switches to a view that shows the sequence of the merges.
-
-Timeline View provides detailed chronological data
-
-![Timeline View](media/view-where-when-changesets-have-been-merged/IC348439.png)
-
-The branches that have received the changeset appear at the top of the view. In the previous example, the user has clicked the **Version1** branch to show the date and time when the merge occurred.
-
-The branches to which the changeset has not been merged (for example, **FeatureB** and **Main** in the previous illustration) appear in white at the bottom of the view.
-
-## Use the drag and drop operation to merge branches
-
-You can use the drag and drop feature to merge a changeset or a branch to another branch. For more information, see [Merge folders and files](merge-folders-files.md).
+To merge a changeset or branch into another branch, you can drag the changeset or branch to another branch in the **Tracking Changeset** window. For more information, see [Merge folders and files](merge-folders-files.md).

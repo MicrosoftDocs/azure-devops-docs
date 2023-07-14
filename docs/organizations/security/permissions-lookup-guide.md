@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Index to permissions defined for Azure DevOps
 ms.subservice: azure-devops-security
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022  
@@ -58,10 +58,11 @@ Values in parenthesis indicate what level the permission is managed:
    - [Administer task group permissions (Object)](../../pipelines/policies/permissions.md)
    - [Administer shelved changes (Collection)](change-organization-collection-level-permissions.md)
    - [Administer workspaces (Collection)](change-organization-collection-level-permissions.md)
+   - [Advanced Security](../../repos/security/github-advanced-security-permissions.md)
    - [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)
    - [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)
-   - [Alerts (Team)](../../notifications/manage-team-group-global-organization-notifications.md)
+   - [Alerts (Team)](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    - [Analytics Service (Project)](../../report/powerbi/analytics-security.md)
    - [Analytics views (Object)](../../report/powerbi/analytics-security.md)
    - [Area path (Object)](set-permissions-access-work-tracking.md)
@@ -81,7 +82,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)
    - [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)
-   - [Alerts (Team)](../../notifications/manage-team-group-global-organization-notifications.md)
+   - [Alerts (Team)](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    - [Analytics Service (Project)](../../report/powerbi/analytics-security.md)
    - [Analytics views (Object)](../../report/powerbi/analytics-security.md)
    - [Area path (Object)](set-permissions-access-work-tracking.md)
@@ -95,7 +96,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)
    - [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)
-   - [Alerts (Team)](../../notifications/manage-team-group-global-organization-notifications.md)
+   - [Alerts (Team)](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    - [Area path (Object)](set-permissions-access-work-tracking.md)
    - [Azure Artifacts](../../artifacts/feeds/feed-permissions.md)
    ::: moniker-end
@@ -414,31 +415,6 @@ Values in parenthesis indicate what level the permission is managed:
    - [Workspaces (Collection)](change-project-level-permissions.md) 
    :::column-end:::
 :::row-end:::
-
- 
-
-## Edit project-level information
-
-The **Edit project-level information** permission is set through the [Project settings](change-project-level-permissions.md) page. It includes the ability to perform the following tasks for the selected project defined in an organization or collection.
-
-- [Edit the project description](../projects/project-vision-status.md)
-- [Modify project services visibility](../settings/set-services.md).
- 
-> [!NOTE]
-> The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the **Project Administrator**s group. It isn't controlled by a permissions surfaced within the user interface. 
-
-
-## Edit instance-level or collection-level information
-
-The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Organizations settings or Collection settings](change-organization-collection-level-permissions.md) page. It includes the ability to perform the following tasks 
-for all projects defined in the organization or collection:
-                
-- Add and administer teams and all team-related features
-- Edit collection-level permissions for users and groups in the collection
-- Add or remove collection-level security groups from the collection
-- Implicitly allows the user to modify version control permissions 
-- Edit project level and collection level permission ACLs
-- Edit event subscriptions or alerts for teams, projects, or collection level events.
 
 
 ## Related articles

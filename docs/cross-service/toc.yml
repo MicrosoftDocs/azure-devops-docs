@@ -7,18 +7,18 @@
   - name: GitHub integration
     href: github-integration.md
   - name: Deploy to Azure
-    href: ../pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json
   expanded: true
 - name: Traceability
   items:
   - name: End-to-end traceability
     href: end-to-end-traceability.md
   - name: Drive Git development
-    href: ../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/cross-service/toc.json
   - name: Link work items to builds and deployments
-    href: ../boards/work-items/work-item-deployments-control.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../boards/work-items/work-item-deployments-control.md?toc=/azure/devops/cross-service/toc.json
   - name: Link work items to other objects
-    href: ../notifications/add-links-to-work-items.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/cross-service/toc.json
   - name: Manage requirements
     href: manage-requirements.md
   - name: Manage change
@@ -26,34 +26,32 @@
 - name: Work across projects and services
   items:
   - name: Project summary
-    href: ../organizations/projects/project-vision-status.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../organizations/projects/project-vision-status.md?toc=/azure/devops/cross-service/toc.json
     displayname: stats, members, wiki, README, invite, share, collaborate
   - name: Work across projects
-    href: ../project/navigation/work-across-projects.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../project/navigation/work-across-projects.md?toc=/azure/devops/cross-service/toc.json
   - name: Manage projects
-    href: ../organizations/projects/about-projects.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../organizations/projects/about-projects.md?toc=/azure/devops/cross-service/toc.json
   - name: Work across projects FAQs
-    href: ../project/work-across-projects-faqs.yml?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
-- name: Public projects
-  href: ../organizations/public/toc.yml
-- name: Notifications
-  href: ../notifications/toc.yml
+    href: ../project/work-across-projects-faqs.yml?toc=/azure/devops/cross-service/toc.json
 - name: Azure Boards & GitHub
   href: ../boards/github/toc.yml
+- name: Notifications
+  href: ../organizations/notifications/toc.yml
 - name: Microsoft Teams & Slack integration
   items:
   - name: Azure Boards with Slack
-    href: ../boards/integrations/boards-slack.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../boards/integrations/boards-slack.md?toc=/azure/devops/cross-service/toc.json
   - name: Azure Boards with Microsoft Teams
-    href: ../boards/integrations/boards-teams.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../boards/integrations/boards-teams.md?toc=/azure/devops/cross-service/toc.json
   - name: Azure Repos with Slack
-    href: ../repos/integrations/repos-slack.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../repos/integrations/repos-slack.md?toc=/azure/devops/cross-service/toc.json
   - name: Azure Repos with Microsoft Teams
-    href: ../repos/integrations/repos-teams.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../repos/integrations/repos-teams.md?toc=/azure/devops/cross-service/toc.json
   - name: Azure Pipelines with Slack
-    href: ../pipelines/integrations/slack.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../pipelines/integrations/slack.md?toc=/azure/devops/cross-service/toc.json
   - name: Azure Pipelines with Microsoft Teams
-    href: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/cross-service/toc.json
 - name: Request & track feedback
   href: ../project/feedback/toc.yml
 - name: Enable DevSecOps with Azure and GitHub
@@ -68,6 +66,8 @@
   items:
   - name: Get Started
     href: ../get-started/index.yml
+  - name: Notifications
+    href: ../organizations/notifications/about-notifications.md?toc=/azure/devops/organizations/toc.json
   - name: Marketplace & Extensibility
     href: ../marketplace-extensibility/index.yml
   - name: Settings & Usage

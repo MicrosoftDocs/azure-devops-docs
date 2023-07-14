@@ -3,8 +3,8 @@ title: Permissions and prerequisites to access Analytics
 titleSuffix: Azure DevOps  
 description: Understand the permissions and prerequisites to meet to access and generate reports with Analytics. 
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2022
@@ -83,21 +83,21 @@ To capture meaningful data, software teams must perform meaningful actions. The 
 
 ::: moniker range=">= azure-devops-2020" 
 > [!NOTE]   
-> Branch, Pipeline, and Test EntityTypes and EntitySets are supported with Analytics **v3.0-preview** and later versions. Snapshot EntityTypes to support pipeline jobs, task agent requests, and task agent pool size were added with Analytics **v4.0-preview** version. Make sure you specify the Analytics version that supports the EntityType of interest. 
+> Branch, Pipeline, and Test entity sets are supported with Analytics **v3.0-preview** and later versions. Snapshot entity sets to support pipeline jobs, task agent requests, and task agent pool size were added with Analytics **v4.0-preview** version. Make sure you specify the Analytics version that supports the entity set of interest. 
 
-To understand what properties and enumerated list values you can filter or group data by, [explore the Analytics metadata](analytics-query-parts.md) for the corresponding EntityType.  
+To understand what properties and enumerated list values you can filter or group data by, [explore the Analytics metadata](analytics-query-parts.md) for the corresponding entity type.  
 
 ::: moniker-end
 
 ### Azure Boards and work tracking
 
-For a review of available EntityTypes to query, see [Metadata reference for Azure Boards Analytics](entity-reference-boards.md). 
+For a review of available entity sets that you can query, see [Metadata reference for Azure Boards Analytics](entity-reference-boards.md). 
 
 To report on work tracking, teams need to perform several tasks to ensure meaningful data is available. Review the following tasks prior to defining your Analytics queries and reports.   
 - To report on active bugs or bug trends, define bugs and update the bug **State**  as it is fixed, verified, and then closed. 
 - To report on backlog work or other work item types, make sure you define those work items, and update their **State** as it moves from new to closed. Consider whatever fields or tags you'll use to filter or group data in a report and make sure that is well defined and consistent. 
 - To support rollup reports, ensure parent-child links exist between product backlog items and tasks/bugs, or parent-child links exist between features or portfolio backlog work items and their child items. To learn more, see [Organize your backlog and map child work items to parents](../../boards/backlogs/organize-backlog.md). 
-- To create burndown or burnup reports, such as [Sprint burndown](../powerbi/sample-boards-sprintburndown.md) or [Release burndown](../powerbi/sample-boards-releaseburndown.md), ensure you have thought through how you want to filter and group data in your report. Burndown/burnup reports reference the `WorkItemsSnapshot` EntityType. Snapshot entity types are modeled as daily snapshots. Data is aggregated based on assignments made as of the date they are assigned. What this means is that to filter a burndown/burnup report based on field or tag assignments, you must assign the fields or tags prior to the period you want to report on. Otherwise, the fields/tags aren't registered by the report until the date on which they are applied.
+- To create burndown or burnup reports, such as [Sprint burndown](../powerbi/sample-boards-sprintburndown.md) or [Release burndown](../powerbi/sample-boards-releaseburndown.md), ensure you have thought through how you want to filter and group data in your report. Burndown/burnup reports reference the `WorkItemsSnapshot` entity set. Snapshot entity sets are modeled as daily snapshots. Data is aggregated based on assignments made as of the date they are assigned. What this means is that to filter a burndown/burnup report based on field or tag assignments, you must assign the fields or tags prior to the period you want to report on. Otherwise, the fields/tags aren't registered by the report until the date on which they are applied.
 - To support [Requirements tracking](../powerbi/sample-stories-overview.md), define test cases, and create a **Tested By** link from each test case to a user story, product backlog item, or requirement. 
 Define test cases and link test cases to their parent PBIs using the Tested By link. See Create your tests.
 - (Recommended)  To support filtering and grouping within a report, assign  **Area Path** and **Iteration Path** to all work items. For information about how to define iteration and area paths, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) or [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).  
@@ -124,7 +124,7 @@ To review test plan progress and test case readiness, teams need to perform the 
 To report on pipelines, teams need to Define pipelines using YAML and run pipelines regularly. To learn more, see [Key concepts for new Azure Pipelines users](../../pipelines/get-started/key-pipelines-concepts.md).
 
 In addition, consider the following actions:
-- Consider what data you want to report on and choose the correct EntityType. For a review of available EntityTypes to query, see [Metadata reference for Azure Pipelines Analytics](entity-reference-pipelines.md). 
+- Consider what data you want to report on and choose the correct entity set. For a review of available entity sets to query, see [Metadata reference for Azure Pipelines Analytics](entity-reference-pipelines.md). 
 - Consider which pipelines you want to report on and the date range of your report. You'll want to filter your data so as to meet [query best practices](analytics-best-practices.md) and minimize any performance issues.
 
 ### Pipelines and test 

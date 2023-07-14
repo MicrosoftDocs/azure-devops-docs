@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Stakeholder access to common user tasks for Azure DevOps 
 ms.subservice: azure-devops-security
 toc: show
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 08/03/2022
@@ -44,7 +44,7 @@ In general, use the following guidance when assigning **Stakeholder** access use
 
 ## Public versus private feature access
 
-Users granted **Stakeholder** access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
+Users granted **Stakeholder** access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../projects/about-projects.md).  
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -339,7 +339,7 @@ Users granted **Stakeholder** access can perform the following tasks related to 
 
 ## Dashboards, notifications, READMEs, and wikis 
 
-The following table summarizes the features **Stakeholder** access users have to these areas: [Dashboards](../../report/dashboards/overview.md), [Notifications](../../notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wiki.md#readmes), and [Wikis](../../project/wiki/provisioned-vs-published-wiki.md).
+The following table summarizes the features **Stakeholder** access users have to these areas: [Dashboards](../../report/dashboards/overview.md), [Notifications](../../organizations/notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wiki.md#readmes), and [Wikis](../../project/wiki/provisioned-vs-published-wiki.md).
 
 ::: moniker range="azure-devops" 
 > [!NOTE]   

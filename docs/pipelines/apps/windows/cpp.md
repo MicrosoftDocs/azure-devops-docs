@@ -57,7 +57,7 @@ It's often required to build your app in multiple configurations. The following 
 
 ## Copy output
 
-To copy the results of the build to Azure Pipelines select the [Copy Files task](../../tasks/utility/copy-files.md). Specify the following arguments:
+To copy the results of the build to Azure Pipelines select the [Copy Files task](/azure/devops/pipelines/tasks/reference/copy-files-v2). Specify the following arguments:
 
 ```
    contents: '**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)' 

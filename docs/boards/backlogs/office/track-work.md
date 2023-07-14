@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to connect Excel to integrate and track your work in Azure Boards or Azure DevOps 
 ms.service: azure-devops-boards
 ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -23,9 +23,12 @@ To support your work tracking efforts, you can use Microsoft Excel. You can eith
 
 ::: moniker range="tfs-2018"
 
-To support your work tracking efforts, use Microsoft Excel and Microsoft Project. You can either work in online mode, where you're connected to Azure Boards or Team Foundation Server (TFS). Or, work in offline mode, where you access the local computer and document.
+To support your work tracking efforts, use Microsoft Excel and Microsoft Project. You can either work in online mode, where you're connected to Azure DevOps. Or, work in offline mode, where you access the local computer and document.
 
 ::: moniker-end
+
+> [!TIP]  
+> The recommended approach for bulk import or update of work items is to use the [web portal](../bulk-modify-work-items.md) or [CSV import](../../queries/import-work-items-from-csv.md).
 
 > [!IMPORTANT]
 > All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family).
@@ -62,6 +65,7 @@ The following table indicates the Office clients supported for each Azure DevOps
 **PowerPoint Storyboarding**<sup>2</sup>
 :::column-end:::
 :::row-end:::
+---
 :::row:::
 :::column span="2":::
 Azure DevOps Services  
@@ -96,10 +100,9 @@ Visual Studio 2017
 :::column-end:::
 :::row-end:::
 
-#### Notes:
-
-1. Support for Project integration and the **TFSFieldMapping** command is deprecated for Azure DevOps Server 2019 and later versions. You might find support using one of the [Marketplace extensions](#marketplace-extensions).
-1. Support for linking PowerPoint files to work items from within PowerPoint has been deprecated starting with Visual Studio 2019 and  Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.
+> [!NOTE]  
+> 1. Support for Project integration and the **TFSFieldMapping** command is deprecated for Azure DevOps Server 2019 and later versions. You might find support using one of the [Marketplace extensions](#marketplace-extensions).
+> 1. Support for linking PowerPoint files to work items from within PowerPoint has been deprecated starting with Visual Studio 2019 and  Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.
 
 ## Prerequisites
 
@@ -112,7 +115,7 @@ Connection from an Office client to an Azure Boards project requires that you've
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
 
   > [!NOTE]
-  > The only way to get the Azure DevOps Office Integration plug-in is by installing one of the latest editions of Visual Studio or the Azure DevOps Office Integration installer. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.
+  > The only way to get the Azure DevOps Office Integration plug-in is by installing one of the latest editions of Visual Studio or Azure DevOps Office Integration. The plug-in supports connection to Azure DevOps from Excel.
 
 - To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../get-started/sign-up-invite-teammates.md).
 
@@ -120,12 +123,12 @@ Connection from an Office client to an Azure Boards project requires that you've
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- To connect Excel to Azure Boards, you must have installed Office Excel 2010 or later version, including Office Excel 365.
+- To connect Excel to Azure Boards, you must have installed Office Excel 2010 or later version, including Microsoft 365.
 
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
 
   > [!NOTE]
-  > The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+  > The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or Azure DevOps Office Integration 2019. The Azure DevOps Office Integration 2019 plug-in supports connection to Azure DevOps from Excel.
 
 - To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md).
 
@@ -133,16 +136,16 @@ Connection from an Office client to an Azure Boards project requires that you've
 
 ::: moniker range="tfs-2018"
 
-- To connect Excel to Azure Boards, you must have installed Office Excel 2010 or later version, including Office Excel 365.
+- To connect Excel to Azure Boards, you must have installed Office Excel 2010 or later version, including Microsoft 365.
 
-- To connect Project to Azure Boards, you must have installed Office Project 2010 or later version, including Office Project 365.
+- To connect Project to Azure Boards, you must have installed Office Project 2010 or later version, including Microsoft 365.
 
 - To connect PowerPoint to Azure Boards, you must have installed [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400).  
 
 - Installed Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 
   > [!NOTE]
-  > The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+  > The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration plug-in. The plug-in supports connection to TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
 
 - To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md).
 
@@ -163,7 +166,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 - Office Excel 2010 or later version, including Microsoft Office Excel 365
 - Office Project 2010 or later version, including Office Project 365
 - Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS.
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
 
@@ -223,20 +226,16 @@ This connection method requires that you have installed [Azure DevOps Open in Ex
    >    
    > 	
    >    
-   > ![Open Boards
-   >    
-   > Queries, vertical nav](/azure/devops/boards/queries/media/view-run-queries/open-queries-vert.png)
+   > ![Open Boards Queries, vertical nav](../../queries/media/view-run-queries/open-queries-vert.png)
 
 1. Choose the query you want to open in Excel.
 
-1. From the **Results** tab, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon
+1. From the **Results** tab, choose the  :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon.
    > [!div class="mx-imgBorder"]  
    >    
    > 	
    >    
-   > ![QUery Results, context menu, Open in Excel Open Boards
-   >    
-   > Queries, vertical nav](media/connect/open-in-excel-from-portal.png)
+   > ![Query Results, context menu, Open in Excel Open Boards Queries, vertical nav](media/connect/open-in-excel-from-portal.png)
 
 ### [Connect from client to Azure Boards](#tab/open-excel-cloud)
 
@@ -281,7 +280,7 @@ To connect from your Office client to an Azure DevOps Services project, do the f
    >    
    > 	
    >    
-   > ![Connect to Azure DevOps dialog, choose project ](media/connect/choose-project.png)
+   > ![Connect to Azure DevOps dialog, choose project.](media/connect/choose-project.png)
 
    Make sure your Azure DevOps user account appears at the bottom of the dialog. If it isn't, choose **Switch User** and sign in to the correct account.
 
@@ -380,7 +379,7 @@ To connect from your Office client to an Azure DevOps Server project, do the fol
 
 ***
 
-To learn more, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).
+For more information, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).
 
 > [!TIP]
 > You can use multiple worksheets within an Excel workbook to work with different input or query lists. However, you can only connect to one project per workbook.
@@ -454,8 +453,9 @@ For more extensions that integrate with Microsoft Project, see [Azure Boards mig
 
 ## Related articles
 
+- [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  
+- [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml)
 - [Resolve publishing errors](faqs.yml#how-do-i-resolve-publishing-issues)
-- [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)
 - [Create your backlog](../../backlogs/create-your-backlog.md)
 - [Requirements and compatibility](/azure/devops/server/requirements)

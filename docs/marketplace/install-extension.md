@@ -1,13 +1,13 @@
 ---
 title: Install extensions
-description: Learn how to install extensions and assign extensions for Azure DevOps.
+description: Learn how to install, assign, and uninstall extensions for Azure DevOps.
 ms.topic: how-to
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, devx-track-azurecli
 ms.subservice: azure-devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
 author: chcomley
-ms.date: 10/12/2022
+ms.date: 03/06/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,13 +15,13 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Install extensions for Azure DevOps to add new features and capabilities.
+Learn how to install, assign, disable, and uninstall extensions, which add new features and capabilities for Azure DevOps.
 
 For more information about extensions, see the [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) overviews.
 
 ## Prerequisites
 ::: moniker range="azure-devops"
-- Only Project Collection Administrators can install extensions. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
+- To install extensions, you must be a member of the Project Collection Administrators group. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
 - Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 ::: moniker-end
 
@@ -189,7 +189,7 @@ version: 5.0.1.34507
 
 4. Select the extension, and then **Install**.
 
-5. Confirm the project collection where you want to install this extension.
+5. Confirm the project collection that you want to install this extension to.
    
    :::image type="content" source="media/get-tfs-extensions/connected/select-team-project-collection.png" alt-text="Selection showing Project collection.":::
 
@@ -308,6 +308,209 @@ Users can install these extensions without requiring an external connection to M
 
 ::: moniker-end
 
+<a id="uninstall-disable-extension">  </a>
+
+## Uninstall or disable an extension 
+
+> [!NOTE]
+> Charges continue for a paid extension until you [reduce all users to zero (0) for the extension](install-extension.md). 
+
+::: moniker range="azure-devops"
+#### [Browser](#tab/browser)
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../media/settings/open-admin-settings-vert.png)
+
+3. Select **Extensions**, and then select the extension that you want to uninstall or disable.
+
+   ![Select uninstall or disable for extension](media/org-settings-select-extension.png)
+
+4. Select **Uninstall** or select the ellipses (**...**), and then select **Disable**.
+
+   ![Disable or uninstall extension](media/disable-or-uninstall-extension.png)
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+[Uninstall extension](#uninstall-an-extension) | [Disable extension](#disable-extension)
+
+### Uninstall an extension
+
+Uninstall an extension with the [az devops extension uninstall](/cli/azure/devops/extension#az-devops-extension-uninstall) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+
+```azurecli 
+az devops extension uninstall --extension-name
+                              --publisher-name
+                              [--org]
+                              [--yes]
+``` 
+
+#### Parameters - uninstall extension
+
+- **extension-name**: The name of the extension to uninstall.
+- **publisher-name**: The name of the extension publisher.
+- **org**: Azure DevOps organization URL. Configure the default organization with `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **yes**: Optional. Don't prompt for confirmation.
+
+#### Example - uninstall extension
+
+The following command uninstalls the "Timetracker" extension without prompts for confirmation.  
+
+```azurecli
+az devops extension uninstall --extension-name Timetracker --publisher-name 7pace --yes
+```
+<a id="disable-extension" /> 
+
+### Disable an extension
+
+Disable an extension with the [az devops extension disable](/cli/azure/devops/extension#az-devops-extension-disable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+
+```azurecli 
+az devops extension disable --extension-name
+                            --publisher-name
+                            [--org]
+``` 
+
+#### Parameters - disable extension
+
+- **extension-name**: The name of the extension to disable.
+- **publisher-name**: The name of the extension publisher.
+- **org**: Azure DevOps organization URL. Configure the default organization with `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+
+#### Example - disable extension
+
+The following command disables the **Timetracker** extension and shows the result in table format.  
+
+```azurecli
+az devops extension disable --extension-name Timetracker --publisher-name 7pace --output table
+
+Publisher Id    Extension Id    Name         Version      Last Updated     States
+--------------  --------------  -----------  -----------  ---------------  --------
+7pace           Timetracker     Timetracker  5.0.1.34507  2019-11-13       disabled
+```
+
+::: moniker-end
+
+* * *
+
+::: moniker range="< azure-devops"
+
+To uninstall extensions in a collection, perform the following steps. 
+
+1. Go to the local gallery management portal (```http://{server}:8080/tfs/_gallery/manage```).
+
+2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
+
+   ![Remove extension](media/remove-extension-TFS.png)
+
+::: moniker-end 
+
+::: moniker range="azure-devops"
+## Enable or list extensions through the command line
+
+Enable an extension with the [az devops extension enable](/cli/azure/devops/extension#az-devops-extension-enable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+
+```azurecli 
+az devops extension enable --extension-name
+                           --publisher-name
+                           [--org]
+``` 
+
+### Parameters - enable extension
+
+- **extension-name**: The name of the extension to enable.
+- **publisher-name**: The name of the extension publisher.
+- **org**: Azure DevOps organization URL. Configure the default organization with `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+
+### Example - enable extension
+
+The following command enables the **Timetracker** extension and shows the result in table format.  
+
+```azurecli 
+az devops extension enable --extension-name Timetracker --publisher-name 7pace --output table
+
+Publisher Id    Extension Id    Name         Version      Last Updated     States
+--------------  --------------  -----------  -----------  ---------------  --------
+7pace           Timetracker     Timetracker  5.0.1.34507  2019-11-13       none
+```
+
+## List extensions
+
+You can list the extensions that are installed in your organization with the [az devops extension list](/cli/azure/devops/extension#az-devops-extension-list) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+
+```azurecli
+az devops extension list [--include-built-in {false, true}]
+                         [--include-disabled {false, true}]
+                         [--org]
+``` 
+
+### Optional parameters - list extensions
+
+- **include-built-in**: Include the built-in extensions. Accepted values are *true* (default) and *false*.
+- **include-disabled**: Include the disabled extensions. Accepted values are *true* (default) and *false*.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+
+### Example - list extensions
+
+The following command lists extensions in your organization. It excludes the **disabled** and **built-in** extensions, and shows the results in table format.
+
+```azurecli 
+az devops extension list --include-built-in false --include-disabled false -output table
+
+Publisher Id    Extension Id             Name                     Version              Last Updated     States         		 Flags
+--------------  -----------------------  -----------------------  -------------------  ---------------  -----------------------  -------
+ms              vss-analytics            Analytics                18.160.0.2130149925  2019-11-22       multiVersion, truste...  trusted
+ms              vss-code-search          Code Search              18.160.0.1640944814  2019-11-22       multiVersion, truste...  trusted
+ms              vss-plans                Delivery Plans           18.160.0.1266795967  2019-11-25       multiVersion, truste...  trusted
+ms-eswm         dependencytracker        Dependency Tracker       2.1910.12801         2019-10-28       none
+ms-devlabs      workitem-feature-tim...  Feature timeline and...  0.0.357              2019-10-14       none
+AgileParts      gantt                    GANTT chart              1.0.79               2019-10-25       none
+gordon-bee...   github                   GitHub Widget            0.10.0               2016-03-16       none
+ms-devlabs      vsts-extensions-mult...  Multivalue control       2.2.26               2019-11-15       none
+agile-exte...   product-vision           Product Vision           2.0.6                2019-06-04       none
+mohitbagra      related-workitems        Related Work items       2.0.4                2017-11-12       none
+YodLabs         TagsManager2             Tags Manager             0.9.31               2019-02-04       none
+ms-devlabs      team-calendar            Team Calendar            2.0.15               2019-11-01       none
+ms              vss-testmanager-web      Test Manager for TFS...  18.160.0.2130893445  2019-11-25       multiVersion, truste...  trusted
+mmanela         vsts-workitem-recent...  Who recently viewed ...  1.0.4                2019-03-22       none
+ottostreif...   wiql-editor              Wiql Editor              2.0.90               2019-06-21       none
+mohitbagra      workitem-checklist       Work item checklist      3.2.4                2019-06-24       none
+mohitbagra      witoneclickactions       Work item form one c...  2.3.2                2018-04-03       none
+ms-devlabs      WorkItemVisualizatio...  Work Item Visualizat...  1.4.64               2018-04-03       none
+``` 
+
+## List extension information
+
+You can list the details about an extension with the [az devops extension show](/cli/azure/devops/extension#az-devops-extension-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+
+```azurecli 
+az devops extension show --extension-name
+                         --publisher-name
+                         [--org]
+```
+
+### Parameters - list extension information
+
+- **extension-name**: The name of the extension.
+- **publisher-name**: The name of the extension publisher.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+
+### Example - list extension information
+
+The following command shows information about the **Timetracker** extension in table format.  
+
+```azurecli 
+az devops extension show --extension-name Timetracker --publisher-name 7pace --output table
+
+Publisher Id    Extension Id    Name         Version      Last Updated     States
+--------------  --------------  -----------  -----------  ---------------  --------
+7pace           Timetracker     Timetracker  5.0.1.34507  2019-11-13       disabled
+```
+
+::: moniker-end
+
+
 ## Frequently asked questions (FAQs)
 
 ::: moniker range=" < azure-devops"
@@ -326,11 +529,11 @@ A: If you don't see your organization when buying from the Azure DevOps Marketpl
 ### Q: Why can't I install an extension?
 A: You can't install extensions for one of the following reasons.  
 - You must be a member of the [**Project Collection Administrators** group](../organizations/security/look-up-project-collection-administrators.md) or are the [**Organization owner**](../organizations/security/look-up-organization-owner.md). If you don't have permissions, but you're a project member, you can [request extensions](request-extensions.md) instead.
-- If you get an "already installed or requested" error check with your Project Collection Administrator and ask them to assign the extension to you.  
+- For an "already installed or requested" error, check with your Project Collection Administrator and ask them to assign the extension to you.  
 
 ### Q: Why can't users access extension features?
 A: Users can't access an extension for one of the following reasons:  
-- Most extensions require that users have at least Basic access, not Stakeholder. For example, you can install the free [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), but each user must have at least Basic access to search for code. To help your team improve app quality, you can install the free [Test & Feedback extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). You'll experience different capabilities, based on your access level and whether you work offline or connected to Azure DevOps Services or on-premises Azure DevOps Server. For more information, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
+- Most extensions require that users have at least Basic access, not Stakeholder. For example, you can install the free [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), but each user must have at least Basic access to search for code. To help your team improve app quality, you can install the free [Test & Feedback extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). You experience different capabilities, based on your access level and whether you work offline or connected to Azure DevOps Services or on-premises Azure DevOps Server. For more information, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 - If you're using an organization and you started a free extension trial, your trial might have expired. To check whether your trial expired:
    1. On your organization toolbar, select **Users**.
    2. Go to the extension pane.
@@ -383,8 +586,9 @@ A: Depending on the support you need, choose from the following articles:
 - [Azure support](https://azure.microsoft.com/support/options/).
 - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
 - [Visual Studio subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
-- [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
-- [Contact the Azure DevOps Marketplace team](mailto:vsmarketplace@microsoft.com)
+
+> [!NOTE]
+> The Azure DevOps support team is unable to support Visual Studio Marketplace extensions. To get support on marketplace extensions, locate the extension you're using in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs). On the extension page, you can find a link to the GitHub repository where you can create an issue, or a link to get community support.
 
 ## Next steps
 
@@ -394,4 +598,4 @@ A: Depending on the support you need, choose from the following articles:
 ## Related articles
 
 - [Request extensions and approve extension requests](request-extensions.md)
-- [Uninstall or disable extensions](uninstall-disable-extensions.md)
+- [Develop a web extension](../extend/get-started/node.md)

@@ -1,38 +1,37 @@
 ---
-title: Properties Command
+title: Info or properties command (Team Foundation Version Control)
 titleSuffix: Azure Repos
-description: Properties Command
+description: Use the tf info or deprecated properties command to display information about items that are under version control.
 ms.assetid: f306bc7a-db55-47d8-aa22-e2399260e838
 ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 07/13/2022
+ms.date: 11/29/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Properties Command
+# Info or Properties command (Team Foundation Version Control)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-The **properties** command displays information about items under version control.
-
+The `tf info` command displays information about items that are under Team Foundation Version Control (TFVC) version control. You can also use `tf properties`, but it's deprecated.
 
 ## Prerequisites
 
-To use the **properties** command, you must have the **Read** permission set to **Allow** for all specified files and folders.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `info` command, you must have the **Read** permission set to **Allow** for all specified files and folders.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 
 ```
-tf properties [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,[password]]
+tf info [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,[password]]
 itemspec [/version:versionspec] [/workspace] 
 ```
 
 ## Parameters
 
-### Argument
+### Arguments
 
 :::row:::
    :::column span="1":::
@@ -45,59 +44,47 @@ itemspec [/version:versionspec] [/workspace]
 ---
 :::row:::
    :::column span="1":::
-   *TeamProjectCollectionUrl*
+   `<TeamProjectCollectionUrl>`
    :::column-end:::
    :::column span="3":::
-   The URL of the project collection that contains the items for which you want to display properties (for example, http://myserver:8080/tfs/DefaultCollection).
+   The URL of the project collection that contains the items for which you want to display properties, for example `http://myserver:8080/tfs/DefaultCollection`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *Itemspec*
+   `<itemspec>`
    :::column-end:::
    :::column span="3":::
    Identifies the files and folders that are specified for property retrieval.
    
-   For more information about how Visual Studio Team Foundation Server parses *itemspecs* to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
+   For more information about how TFVC parses an `itemspec` to determine which items are within scope, see [Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options-to-modify-how-a-command-functions).
 
    > [!Note]  
-   > You can specify more than one *Itemspec* argument.
+   > You can specify more than one `itemspec` argument.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *Versionspec*
+   `<versionspec>`
    :::column-end:::
    :::column span="3":::
-   Provides a value such as C3 for the **/version** option. For more information about how Team Foundation Server parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   Provides a value such as `C3` for the `/version` option. For more information about how TFVC parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *username*
+   `<username>`
    :::column-end:::
    :::column span="3":::
-   Provides a value to the **/login** option. You can specify a username value as either *Domain*&lt;em&gt;UserName</em> or *UserName*.
+   Provides a value to the `/login` option. You can specify a user name value as either `DOMAIN\username` or `username`.
    :::column-end:::
 :::row-end:::
 
-
-### Option
-
-|**Option**|**Description**|
-|---|---|
-|**/recursive**|Displays all files and subfolders of a folder.|
-|**/version**|Specifies the version of the file to open for viewing the properties on.|
-|**/workspace**|Indicates the workspace to be used when displaying the &quot;local&quot; properties (such as location on disk).|
-|**/collection**|Specifies the project collection.|
-|**/login**|Specifies the user name and password to authenticate the user with Team Foundation Server.|
-
-## Remarks
-The properties command displays several pieces of information about a version-controlled item. Local and server information is listed separately.
+### Options
 
 :::row:::
    :::column span="1":::
-   **Property Name**
+   **Option**
    :::column-end:::
    :::column span="3":::
    **Description**
@@ -105,7 +92,62 @@ The properties command displays several pieces of information about a version-co
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Local path
+   `/recursive`
+   :::column-end:::
+   :::column span="3":::
+   Displays all files and subfolders of a folder.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/version`
+   :::column-end:::
+   :::column span="3":::
+   Specifies the version of the file to open for viewing the properties.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/workspace`
+   :::column-end:::
+   :::column span="3":::
+   Indicates the workspace to use when displaying the local properties, such as location on disk.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/collection`
+   :::column-end:::
+   :::column span="3":::
+   Specifies the project collection.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/login`
+   :::column-end:::
+   :::column span="3":::
+   Specifies the user name and password to authenticate the user with Azure DevOps.
+   :::column-end:::
+:::row-end:::
+
+## Remarks
+
+The `info` or `properties` command displays the following information about a version-controlled item. Local and server information is listed separately.
+
+:::row:::
+   :::column span="1":::
+   **Property name**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+**Local information:**
+   
+:::row:::
+   :::column span="1":::
+   `Local path`
    :::column-end:::
    :::column span="3":::
    Indicates the local path of the workspace folder for the specified item.
@@ -113,15 +155,15 @@ The properties command displays several pieces of information about a version-co
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Changeset
+   `Changeset`
    :::column-end:::
    :::column span="3":::
-   Indicates the version number of the file or folder that was last retrieved to the current workspace using the [Get Command](get-command.md).
+   Indicates the version number of the file or folder that was last retrieved to the current workspace by using the [Get command](get-command.md).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Change
+   `Change`
    :::column-end:::
    :::column span="3":::
    Indicates where a change is pending.
@@ -129,15 +171,17 @@ The properties command displays several pieces of information about a version-co
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Type
+   `Type`
    :::column-end:::
    :::column span="3":::
-   Indicates the item type, for example file.
+   Indicates the item type, for example `file`.
    :::column-end:::
 :::row-end:::
+**Server information:**
+   
 :::row:::
    :::column span="1":::
-   Server path
+   `Server path`
    :::column-end:::
    :::column span="3":::
    Indicates the full path of the item on the version control server.
@@ -145,7 +189,7 @@ The properties command displays several pieces of information about a version-co
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Changeset
+   `Changeset`
    :::column-end:::
    :::column span="3":::
    Indicates the version number of the item.
@@ -153,81 +197,79 @@ The properties command displays several pieces of information about a version-co
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Deletion ID
+   `Deletion ID`
    :::column-end:::
    :::column span="3":::
-   If the item is deleted, the deletion identification; otherwise 0.
+   If the item is deleted, indicates the deletion identification, otherwise `0`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Lock
+   `Lock`
    :::column-end:::
    :::column span="3":::
-   Indicates the type of lock.
+   Indicates the type of lock:
    
-   - **Checkin**   Check in is not permitted for the file.
-   - **Checkout**   Check out in not permitted for the file.
-   - **None**   A lock is not set. For more information, see [Lock Command](lock-command.md).
+   - `Checkin`: Check-in isn't permitted for the file.
+   - `Checkout`:   Check-out isn't permitted for the file.
+   - `None`: No lock is set. For more information, see [Lock command](lock-command.md).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Lock Owner
+   `Lock owner`
    :::column-end:::
    :::column span="3":::
-   Indicates the person who set a check-in lock.
+   Indicates the person who set a lock.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Last modified
+   `Last modified`
    :::column-end:::
    :::column span="3":::
-   Indicates the date and time stamp for when the item was last modified.
+   Indicates the date and time stamp when the item was last modified.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Type
+   `Type`
    :::column-end:::
    :::column span="3":::
-   Indicates the item type, for example file.
+   Indicates the item type, for example `file`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   File Type
+   `File type`
    :::column-end:::
    :::column span="3":::
-   Displays the file type encoding. For example, Windows-1252.
+   Displays the file type encoding, for example `Windows-1252`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Size
+   `Size`
    :::column-end:::
    :::column span="3":::
    Indicates the size of the file in bytes.
    :::column-end:::
 :::row-end:::
 
-
-
-For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
-The following example displays properties information about the file 314.cs.
+The following example displays properties information about the file *314.cs*.
 
 ```
-c:\projects>tf properties 314.cs
+c:\projects>tf info 314.cs
 ```
 
-The following example displays the properties of the working folder c:\\projects\\objects.
+The following example displays the properties of the working folder *c:\\projects\\objects*.
 
 ```
-c:\projects>tf properties objects
+c:\projects>tf info objects
 ```
 
 ## Related articles

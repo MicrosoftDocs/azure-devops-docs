@@ -3,11 +3,11 @@ title: OData metadata for Analytics
 titleSuffix: Azure DevOps  
 description: Learn about the entity model OData metadata defined for Analytics in Azure DevOps.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/12/2022
+ms.date: 11/08/2022
 ---
 
 # Analytics OData metadata
@@ -17,9 +17,8 @@ ms.date: 08/12/2022
 Understanding the metadata associated with the entity model for Analytics is a prerequisite for programmatically querying the [Data model for Analytics](data-model-analytics-service.md). OData metadata is a machine-readable description of the entity model designed to enable client consumption. 
 
 > [!NOTE]
-> "The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP and commonly accepted methodologies like REST for the web. There are various kinds of libraries and tools can be used to consume OData services." - [OData Organization Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/).
+> *"The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP and commonly accepted methodologies like REST for the web. There are various kinds of libraries and tools can be used to consume OData services."* - [OData Organization Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/).
 
-[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 In this article you'll learn how to:
 > [!div class="checklist"]
@@ -28,13 +27,19 @@ In this article you'll learn how to:
 > * Identify the keys, properties, and navigational properties associated with an Entity
 > * Identify the capabilities of the Analytics OData endpoint
 
-For detailed descriptions for all OData elements, see [OData model](/odata/concepts/data-model).
+For detailed descriptions for all OData elements, see [OData model](/odata/concepts/data-model). For information on querying the metadata, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
 
-## EntityTypes
 
-Entity types are named structured types with a key. They define the named properties and relationships of an entity. Entity types may derive by single inheritance from other entity types. The key of an entity type is formed from a subset of its primitive properties. 
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
-`EntityTypes` define each of the entities in the Analytics model including properties and relationships. The following example 
+## Entity sets and entity types
+
+Entities are the core identity types in a data model. Entity sets are named collections of entities. For example, `Projects` is an entity set containing `Project` entities. An entity can be a member of at most one entity set.
+
+
+`EntitySets` and `EntityTypes` define each of the entities in the Analytics model including properties and relationships. Entity types define the named properties and relationships of an entity. Entity types may derive by single inheritance from other entity types. The key of an entity type is formed from a subset of its primitive properties. 
+
+The following example shows the metadata associated with the `Project` entity type.  
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -57,7 +62,6 @@ Entity types are named structured types with a key. They define the named proper
 >   <NavigationProperty Name="Iterations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Iteration)"/>
 >   <NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
 > </EntityType>
-
 > ```
 
 ### Keys
@@ -124,7 +128,7 @@ A `NavigationaProperty` with a collection type represents a many-to-many relatio
 
 Entities are the core identity types in a data model. Entity sets are named collections of entities. For example, `WorkItems` and `WorkItemRevisions` are `EntitySets` within the `EntityContainer` named `Container`. An entity can be a member of at most one entity set. Entity sets provide the primary entry points into the data model, and represent a collection of entities and associated Navigational property bindings and annotations.
 
-The following XML syntax indicates the `Projects` entity set data model. For a description of each entity set, see [Data model for Analytics](data-model-analytics-service.md).
+The following syntax indicates the `Projects` entity set data model. For a description of each entity set, see [Data model for Analytics](data-model-analytics-service.md).
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML

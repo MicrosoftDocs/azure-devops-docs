@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn about the EntityTypes and relationships provided by Analytics for Azure DevOps.  
 ms.subservice: azure-devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177   
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/19/2022
@@ -28,24 +28,24 @@ The Analytics data model is based on two schema namespaces:
  
 <a id="entities" />
 
-## Entity types and entity sets  
+## Entity sets and entity types  
 
-Entity types are named structured types with a key. They define the named properties and relationships of each entity. The key of an **EntityType** is formed from a subset of the primitive properties, for example&mdash;*WorkItemId*, *PipelineId*, *ReleasePipelineId*&mdash;and more of the entity type.
+Entity types are named structured types with a key. They define the named properties and relationships of each entity. The key of an `EntityType` is formed from a subset of the primitive properties, for example&mdash;*WorkItemId*, *PipelineId*, *ReleasePipelineId*&mdash;and more of the entity type.
 
-Entity sets are named collections of entities. For example, **WorkItems** is an entity set containing **WorkItem** entities. An entity's key uniquely identifies the entity within an entity set. If multiple entity sets use the same entity type, the same combination of key values can appear in more than one entity set and identifies different entities, one per entity set where this key combination appears. Each of these entities has a different entity-id. Entity sets provide entry points into the data model.
+Entity sets are named collections of entities. For example, `WorkItems` is an entity set containing `WorkItem` entities. An entity's key uniquely identifies the entity within an entity set. If multiple entity sets use the same entity type, the same combination of key values can appear in more than one entity set and identifies different entities, one per entity set where this key combination appears. Each of these entities has a different entity-id. Entity sets provide entry points into the data model.
 
-Entity sets are described in OData metadata, and vary by project. You can explore the complete list of entity sets, entity types, and properties by requesting the OData metadata for your project. To learn how, see [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md).
+Entity sets are described in OData metadata, and vary by project. You can explore the complete list of entity sets, entity types, and properties by requesting the OData metadata for your project. To learn how, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
 
-[!INCLUDE [temp](../includes/api-versioning.md)]
+
 
 
 ### Composite entities
 
 Composite entities support specific scenarios. They're composed from simpler entities, often require more computing resources to generate, and may return larger result sets. To achieve the best performance and avoid unnecessary throttling, ensure that you query the correct entity for your scenario.
 
-For example, **WorkItemSnapshot** combines **WorkItemRevisions** and **Dates** such that each date has one revision for each work item. This representation supports OData queries that focus on-trend data for a filtered set of work items. However, you shouldn't use this composite entity to query the current state of work items. Instead, you should use the **WorkItems** entity set to generate a more quick-running query.
+For example, `WorkItemSnapshot` combines `WorkItemRevisions` and `Dates` such that each date has one revision for each work item. This representation supports OData queries that focus on-trend data for a filtered set of work items. However, you shouldn't use this composite entity to query the current state of work items. Instead, you should use the `WorkItems` entity set to generate a more quick-running query.
 
-Similarly, some entities may contain all historic values, while others may only contain current values. **WorkItemRevision** contains all work item history, which you shouldn't use in scenarios where the current values are of interest.
+Similarly, some entities may contain all historic values, while others may only contain current values. `WorkItemRevisions` contains all work item history, which you shouldn't use in scenarios where the current values are of interest.
 
 ### Relationships
 
@@ -66,7 +66,7 @@ Some navigation properties result in a single entity, while others result in a c
 The following entity types and entity sets are supported with the indicated API versions. For a complete reference, see [Work tracking metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). 
 
 > [!div class="mx-tdCol2BreakAll"]  
-> |EntityType/EntitySet | Description | v1.0 | v2.0 | v3.0-preview | v4.0-preview |
+> |`EntityType/EntitySet` | Description | v1.0 | v2.0 | v3.0-preview | v4.0-preview |
 > |----------------------|-------------|------|------|--------------|--------------|
 > |**Area**/<br/>**Areas** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | ✔️|✔️|✔️ | ✔️ |  
 > |**Iteration**/<br/>**Iterations** | The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |✔️|✔️|✔️ | ✔️ |  
@@ -116,7 +116,7 @@ The following entity types and entity sets are supported with the **v3.0-preview
 
 
 > [!div class="mx-tdCol2BreakAll"]  
-> |EntityType/EntitySet | Description | v3.0-preview | v4.0-preview |
+> |`EntityType/EntitySet` | Description | v3.0-preview | v4.0-preview |
 > |----------------------|-------------|--------------|--------------|
 > |**TestConfiguration**/<br/>**TestConfigurations** |Test plan configuration information. For details on configuring tests, see [Test different configurations](../../test/test-different-configurations.md)  |  ✔️ | ✔️ |
 > |**TestResult**/<br/>**TestResults** | Individual execution results for a specific **Test** associated with a **TestRun**.  |  ✔️ | ✔️ |
@@ -129,27 +129,6 @@ The following entity types and entity sets are supported with the **v3.0-preview
 
  
 ::: moniker-end
-
-<!--- 
-
-## Entity properties
-
-The following table provides _*a partial list*_ of the **WorkItemRevision** entity properties to illustrate some common details. The first three properties&mdash;**CreatedDate**, **CreatedDateSK**, **CreatedOn**&mdash;show that the same value is often expressed in multiple properties, each designed for different scenarios.
-
-| Property | Type | Description|  
-|--------|------------|------------|  
-|**CreatedDate** | DateTimeOffset | The date the work item was created, expressed in the [time zone defined for the organization](../../organizations/accounts/change-organization-location.md). Commonly used for filtering and for display. | 
-|**CreatedDateSK** | Int32 | The date the work item was created, expressed as `YYYYMMDD` in the time zone defined for the organization. Used by external tools to join related entities. | 
-|**CreatedOn** | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone defined for the organization. Commonly used to reference properties from the Date entity in ```groupby``` statements. | 
-|**StoryPoints** | Double | The points assigned to a work item, commonly aggregated as a sum. | 
-|**Tags** | Navigation | Navigation property to a Tag entity collection. Commonly used in ```$expand``` statements to access the Name property for multiple work item tags. | 
-|**Title** | String | The work item title.  | 
-|**Revision** | Int32 | The revision of the work item.  | 
-|**WorkItemId** | Int32 | The ID for the work item. | 
-|**WorkItemRevisionSK** | Int32 | The Analytics unique key for the work item revision - used by external tools to join related entities. | 
-|**WorkItemType** | String | The work item type, for example Bug, Task, User Story. | 
- 
--->
 
 
 ## Related articles 

@@ -1,23 +1,23 @@
 ---
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 08/14/2020
 ---
 
 
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       **Pipeline**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       **Pipeline and test** 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       - [Outcome summary](../sample-pipelines-outcome-summary.md)
       - [Outcome summary for all pipelines](../sample-pipelines-allpipelines.md)
       - [Pass rate trend](../sample-pipelines-pass-rate-trend.md)  
@@ -27,7 +27,7 @@ ms.date: 08/14/2020
       - [Task duration](../sample-pipelines-task-duration.md)  
       - [Task duration trend](../sample-pipelines-task-duration-trend.md)  
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       - [Test summary](../sample-test-analytics-test-summary.md) 
       - [Test summary trend](../sample-test-summary-trend.md) 
       - [Failed tests](../sample-test-analytics-failed-tests.md) 

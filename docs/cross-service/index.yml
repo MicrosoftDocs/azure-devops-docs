@@ -8,8 +8,8 @@ metadata:
   description: Work across Azure DevOps Services and projects, integrate with Azure, GitHub, and other resources, and create and manage public projects.
   ms.subservice: azure-devops-cross-service
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  author: chcomley 
+  ms.author: chcomley 
   ms.date: 02/18/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -27,17 +27,17 @@ landingContent:
           - text: Azure DevOps and GitHub integration overview
             url: github-integration.md
           - text: Deploy to Azure
-            url: ../pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json
   - title: Work across projects
     linkLists:
       - linkListType: get-started
         links:
           - text: View work assigned to you
-            url: ../project/navigation/work-across-projects.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../project/navigation/work-across-projects.md?toc=/azure/devops/cross-service/toc.json
       - linkListType: reference
         links:
           - text: Work across projects FAQs 
-            url: ../project/work-across-projects-faqs.yml?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../project/work-across-projects-faqs.yml?toc=/azure/devops/cross-service/toc.json
   - title: Track work, code, builds, and releases
     linkLists:
       - linkListType: overview
@@ -45,19 +45,19 @@ landingContent:
           - text: End-to-end traceability
             url: end-to-end-traceability.md
           - text: Configure Git repositories to integrate with work tracking 
-            url: ../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/cross-service/toc.json
       - linkListType: tutorial
         links:
           - text: Drive Git development
-            url: ../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/cross-service/toc.json
       - linkListType: how-to-guide
         links:
           - text: Link work items to builds and deployments
-            url: ../boards/work-items/work-item-deployments-control.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../boards/work-items/work-item-deployments-control.md?toc=/azure/devops/cross-service/toc.json
           - text: Link objects to work items
-            url: ../notifications/add-links-to-work-items.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/cross-service/toc.json
           - text: Configure pipelines to support work tracking 
-            url: ../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/cross-service/toc.json
   - title: Integrate with GitHub
     linkLists:
       - linkListType: quickstart
@@ -73,44 +73,40 @@ landingContent:
       - linkListType: overview
         links:
           - text: Integrate with service hooks
-            url: ../service-hooks/overview.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../service-hooks/overview.md?toc=/azure/devops/cross-service/toc.json
       - linkListType: tutorial
         links:
           - text: Create a service hook with WebHooks
-            url: ../service-hooks/services/webhooks.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../service-hooks/services/webhooks.md?toc=/azure/devops/cross-service/toc.json
           - text: Create a service hook with Microsoft Teams
-            url: ../service-hooks/services/teams.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../service-hooks/services/teams.md?toc=/azure/devops/cross-service/toc.json
   - title: Integrate with Microsoft Teams  
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Azure Boards with Microsoft Teams
-            url: ../boards/integrations/boards-teams.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../boards/integrations/boards-teams.md?toc=/azure/devops/cross-service/toc.json
           - text: Azure Repos with Microsoft Teams
-            url: ../repos/integrations/repos-teams.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../repos/integrations/repos-teams.md?toc=/azure/devops/cross-service/toc.json
           - text: Azure Pipelines with Microsoft Teams
-            url: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/cross-service/toc.json
   - title: Integrate with Slack  
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Azure Boards with Slack
-            url: ../boards/integrations/boards-slack.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../boards/integrations/boards-slack.md?toc=/azure/devops/cross-service/toc.json
           - text: Azure Repos with Slack
-            url: ../repos/integrations/repos-slack.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../repos/integrations/repos-slack.md?toc=/azure/devops/cross-service/toc.json
           - text: Azure Pipelines with Slack
-            url: ../pipelines/integrations/slack.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../pipelines/integrations/slack.md?toc=/azure/devops/cross-service/toc.json
   - title: Create and manage a public project
     linkLists:
       - linkListType: overview
         links:
           - text: What is a public project?
-            url: ../organizations/public/about-public-projects.md
+            url: ../organizations/projects/about-projects.md#use-private-and-public-projects
       - linkListType: quickstart
         links:
-          - text: Create a public project
-            url: ../organizations/public/create-public-project.md
-          - text: Invite users to your public project
-            url: ../organizations/public/invite-users-public.md
           - text: Make a private project public
-            url: ../organizations/public/make-project-public.md
+            url: ../organizations/projects/make-project-public.md

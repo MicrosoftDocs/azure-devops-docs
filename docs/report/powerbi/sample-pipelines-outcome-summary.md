@@ -3,34 +3,45 @@ title: Pipeline outcome summary sample Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to generate a pipeline outcome summary Power BI report.
 ms.subservice: azure-devops-analytics
-ms.reviewer: ravishan
-ms.author: kaghai
-ms.custom: powerbisample
-author: KathrynEE
+ms.reviewer: desalg
+ms.author: chcomley
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'     
-ms.date: 10/12/2021
+monikerRange: '>= azure-devops-2020' 
+ms.date: 12/14/2022
 ---
 
 # Pipeline outcome summary sample report 
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-This article shows you how to get the number of runs for different pipeline outcomes (Succeeded / Failed / Canceled / Partially Succeeded). 
+A pipeline run represents a single execution of a pipeline. During a run, the pipeline is processed, and agents process one or more jobs. Outcomes include *Succeeded*, *Failed*, *Canceled*, and *Partially Succeeded*. To create reports that show the outcomes of pipeline runs, you query the [``PipelineRuns` entity set`](../analytics/entity-reference-pipelines.md#pipelineruns). 
+
+This article provides several queries and instructions on how to create a report to get the number of runs for different pipeline outcomes. 
+
+The following image shows an example of an outcome summary report.
+
+:::image type="content" source="media/pipeline-reports/single-pipeline-run-split-by-outcome-report.png" alt-text="Screenshot of Power BI Pipelines Outcome Summary report.":::
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-An example is shown in the following image.
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
-
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
+
 
 ## Sample queries
+
+
+You can use the following queries of the `PipelineRuns` entity set to create different but similar pipeline outcome summary reports. 
+
+[!INCLUDE [temp](includes/query-filters-pipelines.md)] 
+
+### Pipeline duration for a named pipeline 
+
+The following queries return the pipeline runs for a specific pipeline from a specified start date.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -77,9 +88,11 @@ $apply=filter(
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
-[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+[!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
 
 
 ### Query breakdown
@@ -94,12 +107,13 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`
    :::column-end:::
    :::column span="1":::
-   Start filter()
+   Start `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -107,7 +121,7 @@ The following table describes each part of the query.
    `Pipeline/PipelineName eq '{pipelinename}'`
    :::column-end:::
    :::column span="1":::
-   Return pipeline runs for the specified pipeline
+   Return pipeline runs for the specified pipeline.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -115,7 +129,7 @@ The following table describes each part of the query.
    `and CompletedDate ge {startdate}`
    :::column-end:::
    :::column span="1":::
-   Return pipeline runs on or after the specified date
+   Return pipeline runs on or after the specified date.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -123,7 +137,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close filter()
+   Close `filter()` clause
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -131,7 +145,7 @@ The following table describes each part of the query.
    `/aggregate(`
    :::column-end:::
    :::column span="1":::
-   Start aggregate. For all the pipeline runs matching the above filter criteria:
+   Start `aggregate` clause for all the pipeline runs matching the filter criteria.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -139,7 +153,7 @@ The following table describes each part of the query.
    `$count as TotalCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of runs as TotalCount
+   Count the total number of runs as `TotalCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -147,7 +161,7 @@ The following table describes each part of the query.
    `SucceededCount with sum as SucceededCount ,`
    :::column-end:::
    :::column span="1":::
-   Count the number of successful runs as SucceededCount
+   Count the number of successful runs as `SucceededCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -155,7 +169,7 @@ The following table describes each part of the query.
    `FailedCount with sum as FailedCount,`
    :::column-end:::
    :::column span="1":::
-   Count the number of failed runs as FailedCount
+   Count the number of failed runs as `FailedCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -163,7 +177,7 @@ The following table describes each part of the query.
    `PartiallySucceededCount with sum as PartiallySucceededCount ,`
    :::column-end:::
    :::column span="1":::
-   Count the number of partially successful runs as PartiallySucceededCount
+   Count the number of partially successful runs as `PartiallySucceededCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -171,7 +185,7 @@ The following table describes each part of the query.
    `CanceledCount with sum as CanceledCount`
    :::column-end:::
    :::column span="1":::
-   Count the number of canceled runs as CanceledCount
+   Count the number of canceled runs as `CanceledCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -179,80 +193,20 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close aggregate()
+   Close `aggregate()` clause.
    :::column-end:::
 :::row-end:::
+ 
+ 
+### Pipeline run outcome summary for a specific pipeline ID
 
-[!INCLUDE [temp](includes/query-filters-pipelines.md)]
+Pipelines can be renamed. To ensure that the Power BI reports don't break when a pipeline name is changed, use the pipeline ID rather than its name. You can obtain the pipeline ID from the URL of the pipeline runs page. 
+ 
+```
+https://dev.azure.com/{organization}/{project}/_build?definitionId={pipelineid}
+```
 
-## Power BI transforms
-
-### Change column type
-
-1. Change the type of column TotalCount to **Whole Number**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/outcomesummary-changecolumntype.png)
-
-### Rename fields and query, then Close & Apply
-
-When finished, you may choose to rename columns. 
-
-1. Right-click a column header and select **Rename...**
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/outcomesummary-renamerightclick.png)
-
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
-
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
-  
-  
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Fields](media/odatapowerbi-pipelines/outcomesummary-fields.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Donut Chart**. 
-1. Add the field "SucceededCount" to **Values**.
-    - Right-click "SucceededCount" field and ensure **Sum** is selected.
-1. Add the field "FailedCount" to **Values**.
-	  - Right-click "FailedCount" field and ensure **Sum** is selected.
-1. Add the field "CanceledCount" to **Values**.
-	  - Right-click "CanceledCount" field and ensure **Sum** is selected.
-1. Add the field "PartiallySucceededCount " to **Values**.
-    - Right-click "PartiallySucceededCount " field and ensure **Sum** is selected.
-    
-Your report should look like this. 
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
-
-
-[!INCLUDE [temp](includes/sample-multipleteams.md)]
-
-## More queries
-
-You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
-
-### Use Pipeline ID, rather than Pipeline Name
-
-You can change your Pipeline name. To ensure that the Power BI reports don't break when a pipeline name is changed, use the pipeline ID rather than its name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
-
-`https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**`
+The following queries return the pipeline runs for a specific pipeline ID and from a specified start date.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -298,14 +252,15 @@ $apply=filter(
 
 ***
 
-### Filter by branch
+### Pipeline run outcome summary filtered by branch  
 
-You may want to view the outcome summary of a pipeline for a particular **branch**. To create the report, carry out the following extra steps along with what is defined previously in this article.
-
-- Expand Branch into Branch.BranchName
-- Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
-- Select the pipeline from the slicer for which you need to see the outcome summary
-
+To view the outcome summary of a pipeline for a particular branch, use the following queries. To create the report, do the following steps:  
+- Expand `Branch` into `Branch.BranchName`
+- [Change column data type](#change-column-data-type)
+- [Create the Donut chart report](#create-the-donut-chart-report)
+- Select **Slicer** from the **Visualizations** pane and add the `Branch.BranchName` to the slicer's **Field** 
+- Select the branch from the slicer for which you need to see the outcome summary.  
+ 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -355,12 +310,13 @@ aggregate(
 
 ***
 
-### Filter by Build Reason
+### Pipeline run outcome summary filtered by build reason
 
-You may want to view the outcome summary of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request, and so on) only. To create the report, follow the extra steps below along with what is defined previously in this article.
-
-- Select Power BI Visualization **Slicer** and add the field RunReason to the slicer's **Field**
-- Select the pipeline from the slicer for which you need to see the outcome summary
+You may want to view the outcome summary of a pipeline for only specific **Build Reasons** (Manual / BatchedCI, Pull Request, and so on). To create the report, do the following steps:   
+- [Change column data type](#change-column-data-type) 
+- [Create the Donut chart report](#create-the-donut-chart-report)
+- Select **Slicer** from the **Visualizations** pane and add the `Pipeline.PipelineName` to the slicer's **Field**
+- Select the pipeline from the slicer for which you need to see the outcome summary.  
 
 
 #### [Power BI query](#tab/powerbi/)
@@ -413,14 +369,14 @@ aggregate(
 
 ### Outcome summary for all project pipelines 
 
-You may want to view the pipeline outcome summary for all project pipelines in a single report. To create the report, carry out the following extra steps along with the ones provided previously in this article.
+You may want to view the pipeline outcome summary for all project pipelines in a single report. To create the report, do the following steps:  
+- Expand `Pipeline` into `Pipeline.PipelineName`  
+- [Change column data type](#change-column-data-type)
+- [Create the Donut chart report](#create-the-donut-chart-report)
+- Select **Slicer** from the **Visualizations** pane and add the `Pipeline.PipelineName` to the slicer's **Field** 
+- Select the pipeline from the slicer for which you need to see the outcome summary.  
 
-- Expand Pipeline into Pipeline.PipelineName
-- Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
-- Select the pipeline from the slicer for which you need to see the outcome summary.
-
-Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report for detailed steps. 
-
+See also [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report for detailed steps.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -466,11 +422,41 @@ aggregate(
     ))
 ```
 
-***
+*** 
 
-## Full list of Pipelines sample reports 
 
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+[!INCLUDE [temp](includes/rename-query.md)]
+
+## Change column data type 
+
+From the Power Query Editor, select the `TotalCount` column, and then select **Data Type** from the **Transform** menu, and choose **Whole Number**. To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+
+## (Optional) Rename column fields
+
+You can rename column fields. For example, you can rename the column `Pipeline.PipelineName` to `Pipeline Name`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+
+[!INCLUDE [temp](includes/close-apply.md)]
+
+## Create the Donut chart report
+
+1. In Power BI, under **Visualizations**, choose the **Donut** report. 
+
+	:::image type="content" source="media/pipeline-reports/single-pipelines-outcome-visualizations.png" alt-text="Screenshot of visualization fields selections for all pipeline runs report. ":::
+
+1. Add the following fields to **Values**, in the order indicated. Right-click each field and ensure **Sum** is selected.   
+	- `CanceledCount`  
+	- `PartiallySucceededCount`.  
+	- `SucceededCount` 
+	- `FailedCount` 
+
+1. To change the report title, select the **Format your visual** paint-brush icon from the **Visualizations** pane, select **General**, expand **Title**, and replace the existing text. 
+
+	:::image type="content" source="media/pipeline-reports/pipeline-runs-split-by-outcome-report-title-change.png" alt-text="Screenshot of Visualizations pane, Report format options, change title. ":::
+
+	The following image shows the resulting report.  
+
+	:::image type="content" source="media/pipeline-reports/single-pipeline-run-split-by-outcome-report.png" alt-text="Screenshot of Power BI sample Pipelines Outcome Summary report.":::
+
 
 ## Related articles
 

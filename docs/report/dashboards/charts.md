@@ -5,11 +5,11 @@ description: Learn how to add status, progress, and trend charts to dashboards f
 ms.custom: dashboards, contperf-fy20q4 
 ms.subservice: azure-devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 08/17/2022
+ms.date: 02/14/2023
 ---
 
 # Track progress with status and trend query-based charts 
@@ -18,7 +18,7 @@ ms.date: 08/17/2022
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). Different chart views such as pie, column, pivot, or trend are supported. Charts support viewing a count of work items or a sum of values for select numeric fields, such as Story Points, Effort, or Remaining Work. Group work by State, Assigned To, or other system defined or custom field.    
 
-In this article you'll learn how to carry out the following tasks:  
+In this article you'll learn how to perform the following tasks:  
 
 > [!div class="checklist"]    
 > * Construct a flat-list query to support your chart
@@ -38,7 +38,7 @@ In this article you'll learn how to carry out the following tasks:
 For example, the following image illustrates two different charts created from the same flat-list query. The pie chart groups the 19 bugs by state, and the bar chart groups the bugs by assignment and their current status.
 
 > [!div class="mx-imgBorder"]  
-> ![Active bug charts added to dashboards](media/overview/active-bug-charts-on-dashboards-2019.png)   
+> ![Screenshot of Active bug charts added to dashboards.](media/overview/active-bug-charts-on-dashboards-2019.png)   
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ For example, the following image illustrates two different charts created from t
 
 For example, the following image illustrates four different charts created from the same flat-list query. The pie chart groups the 146 active bugs by priority, and the bar chart groups the bugs by team and their triage status. The last two chart show two different trend views of the active bugs over the last two weeks.  
   
-![A view of 4 charts for a flat-list query](media/charts-active-bugs.png)
+![Screenshot of 4 charts for a flat-list query.](media/charts-active-bugs.png)
 
 ::: moniker-end
 
@@ -147,7 +147,7 @@ Most charts allow you to choose how you want to sort the data. You can sort by *
 ::: moniker range=">= azure-devops-2019" 
 When a chart contains more than eight or 12 items within the data series, values in the 9 or 13-plus items are consolidated into a set labeled "other"? However, if you increase the chart size through the configurable widget on a dashboard you may increase the series limit.  
 
-![Other category groups data beyond 12 set series](media/charts/other-12-series.png)  
+![Screenshot of Other category groups data beyond 12 set series.](media/charts/other-12-series.png)  
 
 ::: moniker-end 
 
@@ -156,7 +156,7 @@ When a chart contains more than eight or 12 items within the data series, values
 
 When a chart contains more than seven items within the data series, values in the eight-plus items are consolidated into a set labeled "other"?   
 
-![Other category groups data beyond 7 set series](media/tfs-vso-remaining-category-consolidation-chart.png)  
+![Screenshot of Other category groups data beyond 7 set series.](media/tfs-vso-remaining-category-consolidation-chart.png)  
 
 ::: moniker-end 
 
@@ -177,7 +177,7 @@ When a chart contains more than seven items within the data series, values in th
    ::: moniker-end  
 
    ::: moniker range="tfs-2018"  
-   <img src="media/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link." />  
+   :::image type="content" source="media/charts-new-chart.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, New chart link.":::  
    ::: moniker-end  
 
 	If you have **Stakeholder** access, the **Charts** and **New Chart** links won't appear. 
@@ -189,7 +189,7 @@ When a chart contains more than seven items within the data series, values in th
    ::: moniker-end  
 
    ::: moniker range="tfs-2018"  
-   <img src="media/charts-pie-chart-active-bugs-by-priority.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Configure a Pie chart" />  
+   :::image type="content" source="media/charts-pie-chart-active-bugs-by-priority.png" alt-text="Screenshot of web portal, Queries page, Chart tab, Configure Chart dialog, Configure a Pie chart.":::    
    ::: moniker-end  
 
    If you don't see the field you want in the **Group by** drop-down list, [add the field as a column to the query and save the query](../../boards/backlogs/set-column-options.md). Also, the **Aggregation** options depend on the fields used in the query or those selected from the **Column Options**.  
@@ -201,7 +201,7 @@ When a chart contains more than seven items within the data series, values in th
    ::: moniker range=">= azure-devops-2019"  
    To change a color, select a color from the Series set of color pickers.   
    > [!div class="mx-imgBorder"]  
-   > ![Charts, color series picker](media/charts/color-series-picker.png)  
+   > ![Screenshot of Charts dialog, color series picker.](media/charts/color-series-picker.png)  
    ::: moniker-end  
 
    ::: moniker range="tfs-2018"  
@@ -223,15 +223,16 @@ Use a pie chart to show group percentages with six or fewer categories. Good exa
 For example, the following query filters User Stories based on the State for Cut, In Progress, and Completed since the start of the year. 
 
 > [!div class="mx-imgBorder"]  
-> ![Query Editor, filter User Stories by State.](media/charts/pie-chart-query.png) 
+> ![Screenshot of Query Editor, filter User Stories by State.](media/charts/pie-chart-query.png) 
 
 The pie chart configuration is as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Configure chart dialog, Pie chart.](media/charts/pie-chart-configured.png)  
+> ![Screenshot of Configure chart dialog, Pie chart.](media/charts/pie-chart-configured.png)  
+
 The combined query and chart configuration yield the following pie chart. 
 
-![Charts, pie chart example ](media/charts/pie-chart-user-stories-progress.png)  
+![Screenshot of Charts, pie chart example.](media/charts/pie-chart-user-stories-progress.png)  
 
 ## Add a Stacked bar chart  
 
@@ -239,13 +240,12 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
-> ![Configure chart dialog, Stacked bar chart n](media/charts/config-stacked-bar-chart-team-qe.png)   
+> ![Screenshot of Configure chart dialog, Stacked bar chart.](media/charts/config-stacked-bar-chart-team-qe.png)   
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
-<img src="media/charts-add-stacked-bar.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart" />
-::: moniker-end  
-
+:::image type="content" source="media/charts-add-stacked-bar.png" alt-text="Screenshot of web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart.":::     
+::: moniker-end   
 
 ## Add a Pivot table  
 
@@ -254,7 +254,7 @@ The Pivot table displays a table of configurable rows and columns, with columns 
 The following image shows an example of active bugs assigned to developers and their current state.  
 
 > [!div class="mx-imgBorder"]  
-> ![Configure Chart dialog, Pivot table](../../boards/queries/media/numeric/config-pivot-items-developer.png) 
+> ![Screenshot of Configure Chart dialog, Pivot table.](../../boards/queries/media/numeric/config-pivot-items-developer.png) 
 
 ## Add a Trend chart  
 
@@ -262,11 +262,11 @@ Trend charts let you view progress over time. You can select a rolling period ra
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
-> ![Configure chart dialog, Stacked bar chart](media/charts/config-2-week-trend-chart-bugs.png)   
+> ![Screenshot of Configure chart dialog, two week trend chart.](media/charts/config-2-week-trend-chart-bugs.png)   
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
-<img src="media/charts-active-bugs-area-trend-2-weeks.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked area trend chart" />
+:::image type="content" source="media/charts-active-bugs-area-trend-2-weeks.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog, two week trend chart.":::  
 ::: moniker-end  
 
 Trend data is extracted from the work tracking data store. Like most data stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Therefore, data in the operational store is constantly changing and being updated, and all data is current.
@@ -280,16 +280,14 @@ To create a burndown chart, make sure to add the numeric field you want to your 
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
-> ![Configure chart dialog, Remaining work for past 4 weeks](media/charts/config-remaining-work-trend-chart.png)   
+> ![Screenshot of Configure chart dialog, Remaining work for past four weeks.](media/charts/config-remaining-work-trend-chart.png)   
 
-
-In addition to query-based burndown charts, you can [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md). 
-
+In addition to query-based burndown charts, you can [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md). 
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
-<img src="media/create-burndown-trend-sum-chart.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog,Trend chart for the past 4 weeks" />
+::: moniker range="tfs-2018"   
+:::image type="content" source="media/create-burndown-trend-sum-chart.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog, Trend chart for the past four weeks.":::  
 ::: moniker-end  
 
 
@@ -324,12 +322,13 @@ To add other types of charts, such as test results and build summary charts, see
 
 ## Query-based charts versus Excel-generated PivotCharts  
 
-Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) access data published to the Analysis Services cube, which is refreshed every two hours by default. Excel charts require your project's project collection is configured with SQL Server Reporting Services and Analysis Services. 
+Query-based charts generate data from the work item tracking data store and therefore display the most recent data. [Excel PivotCharts](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) access data published to the Analysis Services cube, which is refreshed every two hours by default. Excel charts require your project's project collection is configured with SQL Server Reporting Services and Analysis Services. 
 
 ::: moniker-end
 
 ## Related articles
 
+- [Example query charts](../../boards/queries/example-query-charts.md)
 - [Configure a chart for work items widget](configure-chart-work-items-widget.md)
 - [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Cumulative flow diagram](cumulative-flow.md)  

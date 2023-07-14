@@ -102,7 +102,7 @@ Before proceeding with the next steps, we must first create a service principal 
 
 ## Query and use secrets in your pipeline
 
-Using the [Azure Key Vault task](../tasks/deploy/azure-key-vault.md) we can fetch the value of our secret and use it in subsequent tasks in our pipeline. One thing to keep in mind is that secrets must be explicitly mapped to env variable as shown in the example below.
+Using the [Azure Key Vault task](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) we can fetch the value of our secret and use it in subsequent tasks in our pipeline. One thing to keep in mind is that secrets must be explicitly mapped to env variable as shown in the example below.
 
 ```YAML
 pool:

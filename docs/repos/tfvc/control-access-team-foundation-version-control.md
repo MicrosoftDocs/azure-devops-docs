@@ -1,11 +1,11 @@
 ---
-title: Control Access to Team Foundation Version Control
+title: Control access to Team Foundation Version Control
 titleSuffix: Azure Repos
-description: Control Access to Team Foundation Version Control
+description: See how to control access and permissions for Team Foundation Version Control.
 ms.assetid: cccf50be-5503-4155-974b-c75b57888603
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 10/12/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -14,44 +14,37 @@ ms.subservice: azure-devops-repos-tfvc
 # Control access to Team Foundation Version Control
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 
-Team Foundation version control supports granting access control permissions to Windows Groups, Windows Users, and Team Foundation Groups. Permissions can be inherited from the containing folder, or you can declare permissions explicitly.
+Team Foundation Version Control supports granting access control permissions to Windows users or groups or Azure DevOps Groups. Permissions can be inherited from the containing folder, or you can declare permissions explicitly.
 
-Permission settings are in the form of either **Grant** or **Deny**. **Deny** always overrides **Grant**, even if **Deny** is inherited and **Grant** is explicitly defined.
+Permission settings are in the form of either **Allow** or **Deny**. **Deny** always overrides **Allow**, even if **Deny** is inherited and **Allow** is explicitly defined.
 
 ## Prerequisites
 
-To complete this task, you must have the **Manipulate security settings** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To complete this task, you must have your **Manage permissions** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ### To set permissions for users or groups
 
-1.  On the Visual Studio **View** menu, click **Other Windows**, and then click **Source Control Explorer**.
+1. In Visual Studio, select **View** > **Other Windows** > **Source Control Explorer**.
 
-2.  Right-click the folder or file for which you want to set permissions, and then click **Properties**.
+1. Right-click the folder or file for which you want to set permissions, and select **Advanced** > **Security**.
 
-3.  In the **Properties** dialog box, click the **Security** tab.
+1. In the **Permissions for \<folder or file>** dialog box, select **Add** and then select **Add Azure DevOps Group** to set permissions for an Azure DevOps Group, or **Add a user** to add a Windows user or group.
 
-4.  In the **Add users and groups** area, select **Team Foundation Server Group** to set permissions for a Team Foundation Server group. Otherwise, select **Windows user or group**.
+1. If you selected **Add Azure DevOps Group**, in the **Add an Azure DevOps Services Group** dialog box, enter or select a group, and then select **Save changes**. The group appears under **Azure DevOps Groups** in the **Permissions for \<folder or file>** dialog box.
 
-5.  Click **Add**.
+1. If you selected **Add a user**, in the **Add a user** dialog box, enter or select the user or group you want to give permissions, and then select **Save changes**. The user or group appears under **Users** in the **Permissions for \<folder or file>** dialog box.
 
-    1.  If you selected **Team Foundation Server** group, the **Add Group** dialog box opens. Select a group, and then click **OK**. The group for which you want to set permissions appears in the **User and Groups** box of the **Properties** dialog box.
+1. On the left side of the **Permissions for \<folder or file>** dialog box, select the user or group for which you want to set permissions.
 
-    2.  If you selected **Windows User or Group**, the **Select Users or Groups** dialog box opens. Enter the user or group for whom you want to set permissions, and then click **OK**. The user or group appears in the **User and Groups** box of the **Properties** dialog box.
+1. On the right side of the dialog box, under **Access Control Summary**, select the setting next to each permission and click the setting or press Enter to select **Allow** or **Deny**. Changed settings appear in bold.
 
-    > [!NOTE]
-    > To view a ToolTip that provides information about the controls in the **Select Users or Groups** dialog box, click the Help icon on the title bar, and then click the control.
+   > [!NOTE]
+   > If you set **Inheritance** to **On**, the security settings of the containing folder are selected automatically. You can override these inherited settings by selecting **Allow** or **Deny**.
 
-6.  In the **Users and Groups** box of the **Properties** dialog box, select the user or group for which you want to set permissions.
-
-7.  In the **Permission** box, select either **Allow** or **Deny** for each permission.
-
-    > [!NOTE]
-    > If you select the **Inherit security settings** box, the security settings of the containing folder are selected automatically. You can override these inherited settings by selecting or clearing the **Deny** box.
-
-8.  Click **OK** to close the **Properties** dialog box.
+1. When you're finished setting permissions for the user or group, select **Save Changes**. When you're done setting permission levels for all users and groups, select **Close** to close the dialog box.
 
 ## Related articles
 

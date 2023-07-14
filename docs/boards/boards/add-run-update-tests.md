@@ -5,8 +5,8 @@ description: Add, run, and update manual test cases on your Kanban board for lig
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -16,7 +16,7 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests cases, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. See [Kanban basics](kanban-basics.md) if you're new to working with the Kanban board. If you're new to testing, see [Exploratory and manual testing scenarios and capabilities](../../test/overview.md).
+Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests cases, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban overview](kanban-overview.md). If you're new to testing, see [Exploratory and manual testing scenarios and capabilities](../../test/overview.md).
 
 In this article, you'll learn: 
 > [!div class="checklist"]    
@@ -36,7 +36,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 - You must connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
 - You must be added to a [team or project](../../organizations/security/add-users-team-project.md). 
 - To add work items and exercise all board features, you must be granted [**Basic** access or higher](../../organizations/security/access-levels.md).
-- To view or modify work items, your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+- To view or modify work items, your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 - To view or run tests, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or run tests.  
 ::: moniker-end
 
@@ -44,7 +44,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 - You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 - You must be added to a [team or project](../../organizations/security/add-users-team-project.md). 
 - To add work items and exercise all board features, you must be granted [**Basic** access or higher](../../organizations/security/access-levels.md).
-- To view or modify work items, your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+- To view or modify work items, your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 - To view or run tests, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or run tests.  
 
 ::: moniker-end
@@ -103,7 +103,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 	To learn more about test plans and test suites, see [Plan your tests](../../test/create-a-test-plan.md).  
 
-2. If you have many tests to add, keep typing each title and select Enter. 
+2. If you have many tests to add, keep entering each title and select Enter. 
 
 	<img src="media/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" />   
 
@@ -165,7 +165,7 @@ Other ways you can quickly add linked items and objects to user stories from the
 - [Add tasks or child items as checklists](add-task-checklists.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md) 
 
-To start web-based exploratory testing for a user story, you need to install the [Test & Feedback Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). For details, see [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md).
+To start web-based exploratory testing for a user story, you need to install the [Test & Feedback Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). For more information, see [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md).
 
 <a name="test-status-kanban"></a>
 

@@ -5,8 +5,8 @@ description: Learn how to track work by creating queries based on build and test
 ms.service: azure-devops-boards
 ms.custom: cross-service  
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -55,7 +55,7 @@ Most build and test integration fields have a data type of String, PlainText, or
    :::column-end:::
    :::column span="3":::
    `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]`, `Contains`, `Does Not Contain`, `In`, `Not In`, `In Group`, `Not In Group`, `Was Ever`  
-   **Macros**: `[Any]`, valid with the **Work Item Type** field; and `@Project`, valid with the **Team Project** field. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+   **Macros**: `[Any]`, valid with the **Work Item Type** field; and `@Project`, valid with the **Team Project** field. The system automatically defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md#across-projects). 
    :::column-end:::
 :::row-end:::
  
@@ -240,9 +240,9 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    :::column-end:::
    :::column span="2":::
    The test suite category. Allowed values are:  
-   - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite will automatically include every test case that is returned by the query that you define.  
-   - **Static**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.  
-   - **Requirement Based**: Use to group together test cases with any characteristics or test suites.  
+   - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite automatically includes every test case that is returned by the query that you define.  
+   - **Requirement Based**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.  
+   - **Static**: Use to group together test cases with any characteristics or test suites.  
    For more information, see [Create a test plan](../../test/create-a-test-plan.md).  
    Reference name=Microsoft.VSTS.TCM.TestSuiteType, Data type=String
    :::column-end:::
@@ -377,7 +377,7 @@ The following fields don't appear on work item forms, but these fields are track
 
    :::column-end:::
    :::column span="2":::
-   Tracks other operations run when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a combined history view, including changes done to work items field and changes resulting from related artifacts such as test points and configurations.
+   Tracks other operations run when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There's a combined history view, including changes done to work items field and changes resulting from related artifacts such as test points and configurations.
 
    Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
 
@@ -503,7 +503,7 @@ The ability of Team Foundation version control to resolve a work item requires t
 > [!NOTE]
 > When you use the **Checkin** action, you must set appropriate *from* and *to* states to reflect the state transition that you want.
 
-For more information about Actions, see [Automate field assignments based on State, Transition, or Reason](../../reference/xml/automate-field-assignments-state-transition-reason.md).
+For more information about Actions, see [Automate field assignments based on State, Transition, or Reason](/previous-versions/azure/devops/reference/xml/automate-field-assignments-state-transition-reason).
 
 ## Related articles
 

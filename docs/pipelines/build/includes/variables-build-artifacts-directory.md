@@ -9,7 +9,7 @@ ms.date: 02/13/2020
 
 The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: `c:\agent_work\1\a`
 <br/><br/>
-A typical way to use this folder is to publish your build artifacts with the [Copy files](../../tasks/utility/copy-files.md) and [Publish build artifacts](../../tasks/utility/publish-build-artifacts.md) tasks.
+A typical way to use this folder is to publish your build artifacts with the [Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks.
 <br/><br/>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don't have to clean it up yourself.
 <br/><br/> 

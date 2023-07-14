@@ -3,8 +3,9 @@ title: Pipeline caching
 description: Improve pipeline performance by caching files, like dependencies, between runs
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
+ms.custom: devx-track-dotnet, devx-track-js, devx-track-python
 ms.manager: adandree
-ms.date: 01/19/2022
+ms.date: 10/03/2022
 monikerRange: azure-devops
 ---
 
@@ -29,18 +30,20 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 > [!NOTE]
 > Pipeline caching and pipeline artifacts are free for all tiers (free and paid). see [Artifacts storage consumption](../../artifacts/artifact-storage.md) for more details.
 
-## Cache task
+## Cache task: how it works
 
-Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job.
+Caching is added to a pipeline using the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2). This task works like any other task and is added to the `steps` section of a job.
 
-When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that wasn't skipped. This step is responsible for saving the cache.
+When a cache step is encountered during a run, the task restores the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. 
+
+After all steps in the job have run and assuming a **successful** job status, a special **"Post-job: Cache"** step is automatically added and triggered for each **"restore cache"** step that wasn't skipped. This step is responsible for **saving the cache**.
 
 > [!NOTE]
 > Caches are immutable, meaning that once a cache is created, its contents cannot be changed.
 
 ### Configure the Cache task
 
-The [Cache task](../tasks/utility/cache.md) has two required arguments: *key* and *path*:
+The [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) has two required arguments: *key* and *path*:
 
 - **path**: the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`.
 
@@ -79,8 +82,8 @@ steps:
   inputs:
     key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
-       yarn | "$(Agent.OS)"
-       yarn
+       "yarn" | "$(Agent.OS)"
+       "yarn"
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -129,7 +132,7 @@ steps:
 - script: yarn --frozen-lockfile
 ```
 
-In this example, the cache task will attempt to find if the key exists in the cache. If the key doesn't exist in the cache, it will try to use the first restore key `yarn | $(Agent.OS)`.
+In this example, the cache task attempts to find if the key exists in the cache. If the key doesn't exist in the cache, it tries to use the first restore key `yarn | $(Agent.OS)`.
 This will attempt to search for all keys that either exactly match that key or has that key as a prefix. A prefix hit can happen if there was a different `yarn.lock` hash segment.
 For example, if the following key `yarn | $(Agent.OS) | old-yarn.lock` was in the cache where the old `yarn.lock` yielded a different hash than `yarn.lock`, the restore key will yield a partial hit.
 If there's a miss on the first restore key, it will then use the next restore key `yarn` which will try to find any key that starts with `yarn`. For prefix hits, the result will yield the most recently created cache key as the result.
@@ -145,27 +148,27 @@ When a cache step is encountered during a run, the cache identified by the key i
 
 ### CI, manual, and scheduled runs
 
-| Scope | Read | Write |
-|--------|------|-------|
-| Source branch | Yes | Yes |
-| main branch | Yes | No |
+| Scope                                             | Read | Write |
+|---------------------------------------------------|------|-------|
+| Source branch                                     | Yes  | Yes   |
+| main branch (default branch)                      | Yes  | No    |
 
 ### Pull request runs
 
-| Scope | Read | Write |
-|--------|------|-------|
-| Source branch | Yes | No |
-| Target branch | Yes | No |
-| Intermediate branch (such as `refs/pull/1/merge`) | Yes | Yes |
-| main branch | Yes | No |
+| Scope                                             | Read | Write |
+|---------------------------------------------------|------|-------|
+| Source branch                                     | Yes  | No    |
+| Target branch                                     | Yes  | No    |
+| Intermediate branch (such as `refs/pull/1/merge`) | Yes  | Yes   |
+| main branch (default branch)                      | Yes  | No    |
 
 ### Pull request fork runs
 
-| Branch | Read | Write |
-|--------|------|-------|
-| Target branch | Yes | No |
-| Intermediate branch (such as `refs/pull/1/merge`) | Yes | Yes |
-| main branch | Yes | No |
+| Branch                                            | Read | Write |
+|---------------------------------------------------|------|-------|
+| Target branch                                     | Yes  | No    |
+| Intermediate branch (such as `refs/pull/1/merge`) | Yes  | Yes   |
+| main branch (default branch)                      | Yes  | No    |
 
 > [!TIP]
 > Because caches are already scoped to a project, pipeline, and branch, there is no need to include any project, pipeline, or branch identifiers in the cache key.
@@ -277,7 +280,7 @@ steps:
       mkdir -p $(Pipeline.Workspace)/docker
       docker save -o $(Pipeline.Workspace)/docker/cache.tar $(repository):$(tag)
     displayName: Docker save
-    condition: and(not(canceled()), or(failed(), ne(variables.CACHE_RESTORED, 'true')))
+    condition: and(not(canceled()), not(failed()), ne(variables.CACHE_RESTORED, 'true'))
 ```
 
 - **key**: (required) - a unique identifier for the cache.
@@ -334,7 +337,7 @@ steps:
 - script: |   
     # stop the Gradle daemon to ensure no files are left open (impacting the save cache operation later)
     ./gradlew --stop    
-  displayName: Build
+  displayName: Gradlew stop
 ```
 
 - **restoreKeys**: The fallback keys if the primary key fails (Optional)
@@ -366,10 +369,10 @@ steps:
 - script: mvn install -B -e
 ```
 
-If you're using a [Maven task](../tasks/build/maven.md), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
+If you're using a [Maven task](/azure/devops/pipelines/tasks/reference/maven-v3), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
 
 ```yaml
-- task: Maven@3
+- task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m $(MAVEN_OPTS)'
@@ -378,7 +381,7 @@ If you're using a [Maven task](../tasks/build/maven.md), make sure to also pass 
 ## .NET/NuGet
 
 If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have a `packages.lock.json` file, you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(UserProfile)` and caching this directory. See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to lock dependencies.
-If you want to use multiple packages.lock.json, you can still use the following example without making any changes. The content of all the packages.lock.json files will be hashed and if one of the files are changed, a new cache key will be generated.
+If you want to use multiple packages.lock.json, you can still use the following example without making any changes. The content of all the packages.lock.json files will be hashed and if one of the files is changed, a new cache key will be generated.
 
 **Example**:
 
@@ -401,7 +404,7 @@ steps:
 
 There are different ways to enable caching in a Node.js project, but the recommended way is to cache npm's [shared cache directory](https://docs.npmjs.com/misc/config#cache). This directory is managed by npm and contains a cached version of all downloaded modules. During install, npm checks this directory first (by default) for modules that can reduce or eliminate network calls to the public npm registry or to a private registry.
 
-Because the default path to npm's shared cache directory is [not the same across all platforms](https://docs.npmjs.com/misc/config#cache), it is recommended to override the `npm_config_cache` environment variable to a path under `$(Pipeline.Workspace)`. This also ensures the cache is accessible from container and non-container jobs.
+Because the default path to npm's shared cache directory is [not the same across all platforms](https://docs.npmjs.com/misc/config#cache), it's recommended to override the `npm_config_cache` environment variable to a path under `$(Pipeline.Workspace)`. This also ensures the cache is accessible from container and non-container jobs.
 
 **Example**:
 
@@ -464,6 +467,10 @@ steps:
 - script: echo "##vso[task.prependpath]$CONDA/bin"
   displayName: Add conda to PATH
 
+- bash: |
+    sudo chown -R $(whoami):$(id -ng) $(CONDA_CACHE_DIR)
+  displayName: Fix CONDA_CACHE_DIR directory permissions
+
 - task: Cache@2
   displayName: Use cached Anaconda environment
   inputs:
@@ -522,7 +529,7 @@ steps:
 
 ## Known issues and feedback
 
-If you are experiencing issues setting up caching for your pipeline, check the list of [open issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the :::no-loc text="microsoft/azure-pipelines-tasks"::: repo. If you don't see your issue listed, [create](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching) a new one and provide the necessary information about your scenario.
+If you're experiencing issues setting up caching for your pipeline, check the list of [open issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the :::no-loc text="microsoft/azure-pipelines-tasks"::: repo. If you don't see your issue listed, [create](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching) a new one and provide the necessary information about your scenario.
 
 ## Q&A
 
@@ -543,6 +550,10 @@ key: 'version2 | yarn | "$(Agent.OS)" | yarn.lock'
 ### Q: When does a cache expire?
 
 A: Caches expire after seven days of no activity.
+
+### Q: When does the cache get uploaded?
+
+A: After the last step fo your pipeline a cache will be created from your cache `path` and uploaded. See the [example](#configure-the-cache-task) for more details.
 
 ### Q: Is there a limit on the size of a cache?
 

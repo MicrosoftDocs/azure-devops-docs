@@ -5,52 +5,24 @@ description: Learn about the different integration options you can use to connec
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.subservice: azure-devops-analytics
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>=azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 12/13/2022
 ---
 
 # About Power BI integration
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-With Azure DevOps, you can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). Azure DevOps also provides several reports in the product itself. Both dashboards and in-line reports offer easy access to Azure DevOps Analytics to enable data-driven decisions. However, we concede that customers often need more than what is provided in the product. 
 
-With Power BI, you can pull data from [Analytics](what-is-analytics.md), generate reports, and customize them to meet your needs. [Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do impromptu analysis, produce beautiful reports, and publish for enterprise consumption.
+With Power BI, a suite of business analytics tools, you can pull data from [Analytics](what-is-analytics.md), generate reports, and customize them to meet your needs. Use Power BI to do impromptu analysis, produce beautiful reports, and publish for enterprise consumption.
 
-[!INCLUDE [temp](../includes/analytics-preview.md)]
+The integration of Power BI with Analytics enables you to go beyond the built-in Analytics reports and dashboard widgets to generate fully custom reports. 
 
+## Data connection methods
 
-## Prerequisites
-
-Before you get started using Power BI to work with Analytics, make sure you've completed the following steps:
-
-::: moniker range="azure-devops"
-
-1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
-1. Configure the [permissions required to access Analytics](analytics-security.md).  
-1. Review the [knowledge base of Power BI articles](/power-bi).  
-1. If you aren't familiar with Analytics, read "[What is Analytics](what-is-analytics.md)" before continuing.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-
-1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
-1. [Verify that Analytics](../dashboards/analytics-extension.md) is installed, and if not, then enable it. You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.   
-1. Configure the [permissions required to access Analytics](analytics-security.md).  
-1. Review the [knowledge base of Power BI articles](/power-bi).  
-1. If you aren't familiar with Analytics, read "[What is Analytics](what-is-analytics.md)" before continuing.
-
-::: moniker-end
-
-
-
-## Supported data connection methods
-
-You can pull data from Analytics into Power BI in one of three ways. It's important to understand each method, before choosing. 
+You can pull data from Analytics into Power BI in one of the three ways described in the following table.
 
 > [!NOTE]  
 > OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/).
@@ -66,6 +38,7 @@ You can pull data from Analytics into Power BI in one of three ways. It's import
    **Considerations**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    [Connect using the OData queries](odataquery-connect.md)
@@ -101,10 +74,54 @@ You can pull data from Analytics into Power BI in one of three ways. It's import
 :::row-end:::
 
 
+## Query Editor
 
-## Sample Reports
+Once you've connected data from Analytics in Power BI, you can always modify the underlying data using Power BI's **Power Query Editor** and **Advanced Editor**. Note the following operational constraints: 
 
-### Sample reports using Analytics View
+- When you connect using OData queries or an OData feed, you can specify query filters, data to return, data to aggregate, and more. 
+- When you connect using an Analytics view, you must edit the Analytics view to modify the query filter and fields that you want to have returned. 
+
+For examples of reports, see [sample reports](#sample-reports) provided later in this article. 
+
+
+## Transform data in Power BI
+
+Once you've imported data into Power BI, you can use the Power Query Editor **Transform**, **Add Column**, and other menu options and tools to change the data as needed. Many of the [sample reports](#sample-reports) provided later in this article provide instructions on data transformations that you'll need to make. These instructions include some of the following operations: 
+
+- Expand data columns  
+- Pivot columns  
+- Transform a column data type  
+- Replace null values in column data 
+- Create a custom field and a calculated column 
+
+To get familiar with these operations, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md).
+
+
+## Data Analysis Expressions (DAX) 
+
+Power BI supports creating new information from data already in your data model using DAX. DAX provides a collection of functions, operators, and constants that you can use in a formula to calculate and return one or more values. 
+
+For an Analytics sample report that uses DAX, see [Calculate time-in-state for an existing Analytics view](create-timeinstate-report.md). 
+
+To learn more about DAX, see [Learn DAX basics in Power BI Desktop](/power-bi/transform-model/desktop-quickstart-learn-dax-basics).
+
+
+## Report visualizations, filters, sort operations 
+
+After you've made any data transformations required for your particular report, you craft your report using the **Visualizations** pane, dragging column fields onto the **Visualizations** pane. You can then use the **Filters** pane to filter all or select data based on one or more fields. 
+ 
+To quickly get familiar with these Power BI basic features, see the following Power BI articles: 
+- [Visualization types in Power BI](/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a)
+- [Visualizations in Power BI reports](/power-bi/visuals/power-bi-report-visualizations)
+- [Take a tour of the report Filters pane](/power-bi/consumer/end-user-report-filter) 
+ 
+
+
+## Sample reports
+
+Several sample reports are provided to show how to generate reports from either an Analytics view or OData query. 
+
+### Sample reports using Analytics view
 
 - [Active bugs report](active-bugs-sample-report.md)  
 - [Get a count of work items](data-connector-examples.md)  
@@ -112,22 +129,64 @@ You can pull data from Analytics into Power BI in one of three ways. It's import
 - [Filter on teams](create-team-filter.md)   
 - [Calculate time-in-state for an existing Analytics view](create-timeinstate-report.md)   
 
-### Sample reports using OData Queries
+### Sample reports using OData queries
 
-To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md)
+To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md). For specific examples, see one of the following articles: 
+ 
 
-For specific examples, see one of the following articles: 
+::: moniker range=">= azure-devops-2020"
+---
+:::row:::
+   :::column span="1":::
+      **Azure Boards**
+   :::column-end:::
+   :::column span="1":::
+      **Azure Test Plans**  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      [!INCLUDE [temp](includes/sample-fulllist.md)]
+   :::column-end:::
+   :::column span="1":::
+      [!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
+   :::column-end:::
+:::row-end:::
+---
 
-| Azure Boards reports | Azure Test Plans reports |
-|----------------------|--------------------------| 
-| [!INCLUDE [temp](includes/sample-fulllist.md)] | [!INCLUDE [temp](includes/sample-full-list-test-plans.md)] | 
+[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
 
+--- 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+[!INCLUDE [temp](includes/sample-fulllist.md)] 
+
+::: moniker-end
+
+All sample report articles provide the following sections and information: 
+
+* **Sample queries** - The Power BI Query and raw OData query used to pull data into Power BI along with other sample queries.
+* **Transform data in Power BI** - Steps to transform the data into a reportable format
+* **Create the report** - Steps to create a report from the data.
+
+## Power BI extensions 
+
+The following Marketplace extensions are available to support Power BI integration with Analytics.
+
+- [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata) translates an Azure DevOps work item query into an OData query for use with Azure DevOps Analytics OData endpoints. This can be useful for beginners to initiate a simple OData query.
+- [vscode-odata](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata) extension adds rich language support to Visual Studio Code for the OData query language. 
+ 
 
 
 ## Related articles
 
+- [Dashboards](../dashboards/dashboards.md)
 - [Extend Analytics with OData](../extend-analytics/quick-ref.md)    
 - [Dashboards, charts, reports & widgets](../dashboards/overview.md)  
 - [Power BI Desktop](/power-bi/fundamentals/desktop-get-the-desktop) 
 - [Power BI documentation](/power-bi)
 - [OData documentation](/odata/)
+ 

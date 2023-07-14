@@ -1,31 +1,13 @@
 ---
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
-ms.date: 09/21/2021
+ms.date: 12/13/2022
 ---
+ 
 
-## Query filters
-
-To determine available query filters, query the metadata as described in [Explore the Analytics OData metadata](../../extend-analytics/analytics-metadata.md). You can filter your queries using any of the **NavigationPropertyBinding Path** values listed under an **EntitySet**. To learn more about the data type of each value, review the metadata provided for the corresponding **EntityType**. Each **EntitySet** corresponds to the singular value for an **EntityType**.  
-
- For example, the **EntitySet Name="PipelineRunActivityResults"** corresponds to the **EntityType Name="PipelineRunActivityResult"**. The OData metadata for **EntitySet Name="PipelineRunActivityResults"** is as shown below for **v4.0-preview**.  You can add filters based on any of the listed **NavigationPropertyBinding Path** values. 
-
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <EntitySet Name="PipelineRunActivityResults" EntityType="Microsoft.VisualStudio.Services.Analytics.Model.PipelineRunActivityResult">
-> 	<NavigationPropertyBinding Path="Project" Target="Projects"/>
-> 	<NavigationPropertyBinding Path="Pipeline" Target="Pipelines"/>
-> 	<NavigationPropertyBinding Path="PipelineTask" Target="PipelineTasks"/>
-> 	<NavigationPropertyBinding Path="PipelineJob" Target="PipelineJobs"/>
-> 	<NavigationPropertyBinding Path="Branch" Target="Branches"/>
-> 	<NavigationPropertyBinding Path="PipelineRunQueuedOn" Target="Dates"/>
-> 	<NavigationPropertyBinding Path="PipelineRunStartedOn" Target="Dates"/>
-> 	<NavigationPropertyBinding Path="PipelineRunCompletedOn" Target="Dates"/>
-> 	<NavigationPropertyBinding Path="ActivityStartedOn" Target="Dates"/>
-> 	<NavigationPropertyBinding Path="ActivityCompletedOn" Target="Dates"/>
-> </EntitySet>
-> ```
+> [!NOTE]   
+> To determine available properties for filter or report purposes, see [Metadata reference for Azure Pipelines](../../analytics/entity-reference-pipelines.md). You can filter your queries or return properties using any of the `Property` values under an `EntityType` or `NavigationPropertyBinding Path` values available with an `EntitySet`. Each `EntitySet` corresponds to an `EntityType`. To learn more about the data type of each value, review the metadata provided for the corresponding `EntityType`.  
 
 

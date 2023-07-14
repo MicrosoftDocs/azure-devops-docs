@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to configure Azure Repos to support integration with Azure Boards and work tracking 
 ms.service: azure-devops-boards
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: vijayma
+author: vijayma
 monikerRange: '<= azure-devops'
 ms.date: 08/02/2021
 ---
@@ -36,7 +36,7 @@ The following table summarizes the integration points between Azure Boards and A
       Manually link work items to Git branches, commits, pull requests, and tags  
    :::column-end::: 
    :::column span="2":::
-      You can link from a work item or from a Git object. For details, see [Link to work items from other objects, View list of linked objects](../../notifications/add-links-to-work-items.md#view-list-links).
+      You can link from a work item or from a Git object. For details, see [Link to work items from other objects, View list of linked objects](../../organizations/notifications/add-links-to-work-items.md#view-list-links).
    :::column-end:::
 :::row-end:::
 ---
@@ -142,7 +142,7 @@ Turn on the **Check for linked work items** option.
 
 ## Related articles
 
-- [Link to work items from other objects](../../notifications/add-links-to-work-items.md#view-list-links)  
+- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md#view-list-links)  
 - [Link type reference](../../boards/queries/link-type-reference.md) 
 - [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json) 
 - [End-to-end traceability](../../cross-service/end-to-end-traceability.md) 

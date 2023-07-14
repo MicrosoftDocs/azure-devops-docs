@@ -27,6 +27,7 @@ This article will guide you through setting up your Azure Artifacts feed as a pr
 ## Prerequisites
 
 - [NuGet.exe](https://www.nuget.org/downloads)
+- [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider)
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
 - An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
 
@@ -213,6 +214,9 @@ If the *Install-Module* command is returning the following error: *Unable to res
 ```powershell
 Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -Trusted -SkipValidate -Credential $credsAzureDevopsServices
 ```
+
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
 ## Connect to feed with Azure Pipelines
 

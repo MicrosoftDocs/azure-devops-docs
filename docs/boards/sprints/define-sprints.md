@@ -5,8 +5,8 @@ description: Learn how to add and set dates for sprints, releases, or iterations
 ms.custom: boards-sprints
 ms.service: azure-devops-boards
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 09/20/2021
@@ -25,7 +25,7 @@ With Scrum, teams plan and track work at regular time intervals, referred to as 
 
 ## Prerequisites
 
-* To change sprint dates, you must be a member of the **Project Administrators** security group, or have the **Edit this node** permission for the iteration child node you want to change. By default, the user who created the project has these permissions set. To learn more, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+* To change sprint dates, you must be a member of the **Project Administrators** security group, or have the **Edit this node** permission for the iteration child node you want to change. By default, the user who created the project has these permissions set. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
 <a id="quick-start-schedule">   </a>
 
@@ -141,9 +141,9 @@ If you have several teams, more complex release and sprint cadences to schedule,
 > [!NOTE]    
 > Your sprint backlog and taskboard are designed to support your Scrum processes. In addition, you have access to product and portfolio backlogs and Kanban boards. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).  
 
-Your project comes with several sprints predefined. However, they aren't associated with any dates. For Scrum and sprint planning, you'll want to assign start and end dates for the sprints your team will use.   
+Your project comes with several sprints predefined. However, they aren't associated with any dates. For Scrum and sprint planning, assign start and end dates for your team's sprints.
 
-Defining other sprints is a two-step process. You first define the sprints for your project and then you select the sprints that each team will use&mdash;[Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). In this way, the system supports teams that work on different sprint cadences.  
+Defining other sprints is a two-step process. You first define the sprints for your project and then you select the sprints for each team to use&mdash;[Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). In this way, the system supports teams that work on different sprint cadences.  
 
 [![Define project sprints](media/define-sprints-project-level.png)](../../organizations/settings/set-area-paths.md)[![Select team sprints](media/define-sprints-team-level.png)](../../organizations/settings/set-iteration-paths-sprints.md)
 

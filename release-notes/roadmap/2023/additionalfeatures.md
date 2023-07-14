@@ -14,7 +14,7 @@ hide_comments: true
 ## Admin
 ### Associate all public APIs with PAT scopes
 
-Using scopes is a great way to limit the risk posed by [personal access tokens](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?toc=%2fazure%2fdevops%2forganizations%2ftoc.json&bc=%2fazure%2fdevops%2forganizations%2fbreadcrumb%2ftoc.json&view=azure-devops&tabs=preview-page) (PATs). We even have a policy allowing administrators to [restrict the creation of full-scoped PATs altogether](https://docs.microsoft.com/azure/devops/organizations/accounts/manage-pats-with-policies-for-administrators?view=azure-devops#restrict-creation-of-full-scoped-pats). 
+Using scopes is a great way to limit the risk posed by [personal access tokens](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?toc=%2fazure%2fdevops%2forganizations%2ftoc.json&bc=%2fazure%2fdevops%2forganizations%2fbreadcrumb%2ftoc.json&view=azure-devops&tabs=preview-page&preserve-view=true) (PATs). We even have a policy allowing administrators to [restrict the creation of full-scoped PATs altogether](/azure/devops/organizations/accounts/manage-pats-with-policies-for-administrators?view=azure-devops#restrict-creation-of-full-scoped-pats&preserve-view=true). 
 
 However, some of our public APIs are currently unassociated with a PAT scope and can only be used with “full-scoped” PATs. Because of this, restricting the creation of full-scoped PATs might block some workflows. We're working to identify, document, and associate all our public APIs with the appropriate scopes.
 

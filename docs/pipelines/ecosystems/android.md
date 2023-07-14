@@ -60,7 +60,7 @@ You have a working YAML file (`azure-pipelines.yml`) in your repository that's r
 
 ## Build with Gradle
 
-Gradle is a common build tool used for building Android projects. For more information about your options, see the [Gradle](../tasks/build/gradle.md) task.
+Gradle is a common build tool used for building Android projects. For more information about your options, see the [Gradle](/azure/devops/pipelines/tasks/reference/gradle-v3) task.
 
 ```yaml
 # https://learn.microsoft.com/azure/devops/pipelines/ecosystems/android
@@ -98,7 +98,7 @@ For more information, see the following Google Android development documentation
 ### Sign and align an Android Package (APK)
 
 If your build doesn't already [sign and zipalign](https://developer.android.com/studio/publish/app-signing) the APK,
-add the [Android Signing](../tasks/build/android-signing.md) task to the YAML.
+add the [Android Signing](/azure/devops/pipelines/tasks/reference/android-signing-v3) task to the YAML.
 An APK must be signed to run on a device instead of an emulator. Zipaligning reduces the RAM consumed by the application.
 
 > [!IMPORTANT]
@@ -127,7 +127,7 @@ An APK must be signed to run on a device instead of an emulator. Zipaligning red
 > [!NOTE]
 > The Android Emulator is currently available only on the **Hosted macOS** agent.
 
-Create the [Bash](../tasks/utility/bash.md) task and copy paste the code below in order to install and run the emulator. 
+Create the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task and copy paste the code below in order to install and run the emulator. 
 Don't forget to arrange the emulator parameters to fit your testing environment.
  The emulator starts as a background process and is available in later tasks.
 
@@ -135,7 +135,7 @@ Don't forget to arrange the emulator parameters to fit your testing environment.
 #!/usr/bin/env bash
 
 # Install AVD files
-echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-27;google_apis;x86'
+echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --install 'system-images;android-27;google_apis;x86'
 
 # Create emulator
 echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-27;google_apis;x86' --force
@@ -155,7 +155,7 @@ echo "Emulator started"
 
 ### Test on Azure-hosted devices
 
-Add the [App Center Test](../tasks/test/app-center-test.md) task to test the application in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required, which must later be converted to paid.
+Add the [App Center Test](/azure/devops/pipelines/tasks/reference/app-center-test-v1) task to test the application in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required, which must later be converted to paid.
 
 [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
 
@@ -167,7 +167,7 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 
 ### Keep artifacts with the build record
 
-Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks. Your APK gets stored with the build record or test, and gets deployed in later pipelines. For more information, see [Artifacts](../artifacts/pipeline-artifacts.md).
+Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks. Your APK gets stored with the build record or test, and gets deployed in later pipelines. For more information, see [Artifacts](../artifacts/pipeline-artifacts.md).
 
 ::: moniker range="> tfs-2018"
 
@@ -185,7 +185,7 @@ Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifact
 
 ### Add App Center
 
-Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task to distribute an application to a group of testers or beta users, or promote the application to Intune or Google Play. A free [App Center](https://appcenter.ms) account is required (no payment is necessary).
+Add the [App Center Distribute](/azure/devops/pipelines/tasks/reference/app-center-distribute-v3) task to distribute an application to a group of testers or beta users, or promote the application to Intune or Google Play. A free [App Center](https://appcenter.ms) account is required (no payment is necessary).
 
 ::: moniker range="> tfs-2018"
 
@@ -207,7 +207,7 @@ task to release a new Android app version to the Google Play store.
 ::: moniker range="> tfs-2018"
 
 ```yaml
-- task: GooglePlayRelease@2
+- task: GooglePlayRelease@4
   inputs:
     apkFile: '**/*.apk'
     serviceEndpoint: 'yourGooglePlayServiceConnectionName'
@@ -224,7 +224,7 @@ task to promote a previously released Android application update from one track 
 ::: moniker range="> tfs-2018"
 
 ```yaml
-- task: GooglePlayPromote@2
+- task: GooglePlayPromote@3
   inputs:
     packageName: 'com.yourCompany.appPackageName'
     serviceEndpoint: 'yourGooglePlayServiceConnectionName'
@@ -242,13 +242,32 @@ task to increase the rollout percentage of an application that was previously re
 ::: moniker range="> tfs-2018"
 
 ```yaml
-- task: GooglePlayIncreaseRollout@1
+- task: GooglePlayIncreaseRollout@2
   inputs:
     packageName: 'com.yourCompany.appPackageName'
     serviceEndpoint: 'yourGooglePlayServiceConnectionName'
     userFraction: '0.5' # 0.0 to 1.0 (0% to 100%)
 ```
 
+::: moniker-end
+
+#### Status update
+
+Add the [Google Play Status Update](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---status-update)
+task to update the rollout status for the application that was previously released to the `rollout` track.
+
+::: moniker range="> tfs-2018"
+
+```yaml
+  - task: GooglePlayStatusUpdate@2
+    inputs:
+      authType: ServiceEndpoint
+      packageName: 'com.yourCompany.appPackageName'
+      serviceEndpoint: 'yourGooglePlayServiceConnectionName'
+      status: 'inProgress' # draft | inProgress | halted | completed
+```
+
+::: moniker-end
 
 ## Related extensions
 
@@ -264,9 +283,11 @@ task to increase the rollout percentage of an application that was previously re
 
 A: You can build and sign your app bundle with an inline script and a secure file. To do so, first download your keystore and [store it as a secure file in the Library](../library/secure-files.md). Then, create variables for `keystore.password`, `key.alias`, and `key.password` in a [variable group](../library/variable-groups.md). 
 
-Next, use the [Download Secure File](../tasks/utility/download-secure-file.md) and [Bash](../tasks/utility/bash.md) tasks to download your keystore and build and sign your app bundle.
+Next, use the [Download Secure File](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) and [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) tasks to download your keystore and build and sign your app bundle.
 
-In this YAML file, download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, use [Copy Files](../tasks/utility/copy-files.md) to copy the app bundle. From there, create and save an artifact with [Publish Build Artifact](../tasks/utility/publish-build-artifacts.md) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
+In this YAML file, download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, use [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) to copy the app bundle. From there, create and save an artifact with [Publish Build Artifact](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
+
+::: moniker range="> tfs-2018"
 
 ```yaml
 - task: DownloadSecureFile@1

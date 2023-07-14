@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/04/2022
+ms.date: 01/06/2023
 ---
 
 # Extension manifest reference
@@ -18,7 +18,7 @@ Every extension has a JSON manifest file that defines basic information about th
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-Start by creating a file named `vss-extension.json` at the root of your extension folder. This file contains required attributes, like the extension's ID and its installation targets, where it can run. It also defines the contributions being made by your extension.
+Create a file named `vss-extension.json` at the root of your extension folder. This file contains required attributes, like the extension's ID and its installation targets, where it can run. It also defines the contributions being made by your extension.
 
 See the following example of a typical manifest:
 
@@ -239,7 +239,7 @@ If no scopes are specified, extensions are only provided access to user profile 
 
 ### Changing scope of published extension
 
-You can change the scope of a published extension. Customers who previously installed your extension (and authorized the previous set of scopes) remain on the previous version of the extension and must authorize the new scopes before you upgrade to the newest version.
+You can change the scope of a published extension. If you previously installed your extension (and authorized the previous set of scopes), you must authorize the new scopes before you can upgrade to the newest version.
 
 The **Action Required** section of the Extension settings hub shows a user that, if any, installed extensions require authorization:
 
@@ -251,7 +251,7 @@ An administrator can then review and authorize the new set of scopes:
 
 ## Installation targets
 
-As the name implies, installation targets define the products and services your extension can be installed into. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into Azure DevOps.
+As the name implies, installation targets define the products and services where you can install your extension. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into Azure DevOps.
 
 The installation targets for an extension or integration are specified via the `targets` field in the manifest. 
 
@@ -536,7 +536,7 @@ Properties for the Files section:
 
 Each contribution entry has the following properties:
 
-* **id** - A reference ID (string) for the contribution. Each contribution's ID must be unique within an extension. See [referencing contributions and types](#contributionIds) below. 
+* **id** - A reference ID (string) for the contribution. Each contribution's ID must be unique within an extension. See [referencing contributions and types](#contributionIds). 
 * **type** - The ID of the contributionType of this contribution. 
 * **description** - (Optional) A string describing what the contribution is providing.
 * **targets** - An array of contribution IDs that the contribution is targeting (contributing to). See [Targeting contributions](#contributionTargets).
@@ -550,7 +550,7 @@ For more information, see the [contribution model overview](contributions-overvi
 
 Each contribution entry has the following properties:
 
-* **id** - A reference ID (string) for the contribution type. Each contribution type's ID must be unique within an extension. See [referencing contributions and types](#contributionIds) below. 
+* **id** - A reference ID (string) for the contribution type. Each contribution type's ID must be unique within an extension. See [referencing contributions and types](#contributionIds). 
 * **name** - The friendly name of the contribution type. 
 * **description** - (Optional) A string describing in more detail what the contribution type is for.
 * **properties** - (Optional) A dictionary that maps property names to property descriptions. These properties describe the required and optional properties that can be used by contributions of this type.
@@ -559,7 +559,7 @@ Property descriptions have the following properties:
 
 * **description** - (Optional) A string describing what the property is used for. 
 * **required** - (Optional) A boolean value, which if true indicates that the property is required for all contributions of this type.
-* **type** - The type of value that the property can have. This may be: string, uri, guid, boolean, integer, double, dateTime, array, or object.
+* **type** - The type of value that the property can have, which could be string, uri, guid, boolean, integer, double, dateTime, array, or object.
 
 For more information, see the [contribution model overview](contributions-overview.md).
 
@@ -611,12 +611,15 @@ The Marketplace only supports badges from the following trusted services:
 * snyk.io/
 * travis-ci.com/
 * travis-ci.org/
-* vsmarketplacebadge.apphb.com/
+* vsmarketplacebadges.dev/
 * bithound.io/
 * deepscan.io/
 * githost.io/
 * gitlab.com/
 * opencollective.co/
+
+> [!NOTE]
+> Replace "vsmarketplacebadge.apphb.com" with "vsmarketplacebadges.dev".
 
 If you want to show a badge from another service, contact *vsmarketplace@microsoft.com*.
 

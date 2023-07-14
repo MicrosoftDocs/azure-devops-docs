@@ -27,7 +27,7 @@ landingContent:
           - text: About settings
             url: ./settings/about-settings.md 
           - text: Get started as an administrator
-            url: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json 
       - linkListType: quickstart
         links:
           - text: Set user preferences
@@ -35,7 +35,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Enable preview features
-            url: ../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+            url: ../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json 
   - title: Manage your organization (cloud)
     linkLists:
       - linkListType: overview
@@ -43,7 +43,7 @@ landingContent:
           - text: About managing your organization
             url: ./accounts/organization-management.md
           - text: Plan your organizational structure
-            url: ../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
+            url: ../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json 
       - linkListType: concept
         links:
           - text: Manage access with Azure Active Directory
@@ -51,13 +51,13 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Create an organization 
-            url: ./accounts/create-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
+            url: ./accounts/create-organization.md?toc=/azure/devops/organizations/toc.json 
       - linkListType: how-to-guide
         links:
           - text: Add users to your organization 
-            url: ./accounts/add-organization-users.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
+            url: ./accounts/add-organization-users.md?toc=/azure/devops/organizations/toc.json 
           - text: Connect your organization to Azure Active Directory
-            url: ./accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
+            url: ./accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/toc.json  
   - title: Add & manage projects
     linkLists:
       - linkListType: concept
@@ -69,7 +69,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Manage your project
-            url: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
+            url: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json 
       - linkListType: how-to-guide
         links:
           - text: Create a project
@@ -99,19 +99,19 @@ landingContent:
       - linkListType: concept
         links:
           - text: About notifications
-            url: ../notifications/about-notifications.md
+            url: ../organizations/notifications/about-notifications.md?toc=/azure/devops/organizations/toc.json 
       - linkListType: how-to-guide
         links:
           - text: Set personal notifications
-            url: ../notifications/manage-your-personal-notifications.md
+            url: ../organizations/notifications/manage-your-personal-notifications.md?toc=/azure/devops/organizations/toc.json 
           - text: Set team notifications
-            url: ../notifications/manage-team-group-global-organization-notifications.md
+            url: ../organizations/notifications/manage-team-group-global-organization-notifications.md?toc=/azure/devops/organizations/toc.json
   - title: Audit & usage (cloud)
     linkLists:
       - linkListType: concept
         links:
           - text: Rate limits & usage 
-            url: ../integrate/concepts/rate-limits.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../integrate/concepts/rate-limits.md?toc=/azure/devops/organizations/toc.json 
       - linkListType: quickstart
         links:
           - text: Access, export, and filter audit logs 
@@ -121,32 +121,32 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Create & manage agent pools
-            url: ../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json 
           - text: Create & manage deployment groups
-            url: ../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json 
           - text: Set build & release retention policies
-            url: ../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json 
           - text: Create & manage service connections
-            url: ../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/toc.json 
   - title: Configure Repos resources
     linkLists:
       - linkListType: overview
         links:
           - text: About branches and branch policies
-            url: ../repos/git/branch-policies-overview.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../repos/git/branch-policies-overview.md?toc=/azure/devops/organizations/toc.json 
       - linkListType: how-to-guide
         links:
           - text: Create & manage Git repositories
-            url: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json 
           - text: Set Git repository settings and policies
-            url: ../repos/git/repository-settings.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../repos/git/repository-settings.md?toc=/azure/devops/organizations/toc.json 
           - text: Manage Git branch policies
-            url: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json
           - text: Add TFVC check-in policies
-            url: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json
   - title: Configure Test resources
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Set test retention policies
-            url: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json

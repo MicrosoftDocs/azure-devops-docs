@@ -5,16 +5,16 @@ description: Learn how to authorize other services to work with Azure DevOps Ser
 ms.subservice: azure-devops-security
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 monikerRange: 'azure-devops'
-ms.author: kaelli
-author: KathrynEE
-ms.date: 09/29/2020
+ms.author: chcomley
+author: chcomley
+ms.date: 06/22/2023
 ---
 
 #  Authorize other services to access Azure DevOps
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to give a service access to Azure DevOps. The OAuth 2.0 framework provides safe, secure access to your resources. Some of these resources include work items, source code, and build results.
+You can authorize other services to access Azure DevOps. The OAuth 2.0 framework provides safe, secure access to your resources. Some of these resources include work items, source code, and build results.
 
 - A service uses the authorization, bound to your credentials, to access resources in any organization that you have access to.
 - Use your Microsoft account, like ```me@live.com```, or your work account, your account in Azure AD - like ```me@my-workplace.com```, to authorize the service.
@@ -52,26 +52,11 @@ To ensure an authorization request is legitimate, do the following actions:
 
 View the services that you've authorized to access your organization.
 
-To access the Preview features options, open your profile menu. The profile menu appears based on whether the **New Account Manager** feature has been enabled or not.
-For more information, see [Preview features](../../project/navigation/preview-features.md#user-level). 
-
-#### [New Account Manager enabled](#tab/new-account-enabled)
-
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Choose :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then choose **Profile**.
 3. Choose **Authorizations**.  
 
-   :::image type="content" source="media/profile-settings-authorizations.png" alt-text="Screenshot of profile settings with Authorizations selected, New Account Manager preview.":::
-
-
-#### [New Account Manager not enabled](#tab/new-account-not-enabled)
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Go to your profile, select  **User settings**, and then select **Authorizations**. 
-
-![User settings, authorizations tab](media/user-settings-authorizations.png)
-
----
+   :::image type="content" source="media/profile-settings-authorizations.png" alt-text="Screenshot of profile settings with Authorizations selected.":::
 
 You can revoke any authorizations so the service can no longer access your organization on your behalf.
 

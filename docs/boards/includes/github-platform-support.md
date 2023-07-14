@@ -1,20 +1,11 @@
 ---
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
-ms.date: 06/24/2021
+ms.date: 07/03/2023
 ---
 
-
-::: moniker range="azure-devops"
 > [!NOTE]   
-> With the Azure Boards app for GitHub, Azure Boards and Azure DevOps Services support integration with GitHub.com and GitHub Enterprise Server repositories. Integration with other Git repositories is not supported.
-::: moniker-end
-
-::: moniker range="< azure-devops"
-> [!NOTE]   
-> With the Azure Boards app for GitHub, Azure DevOps Servers 2019 and later versions support integration with GitHub Enterprise Server repositories. Integration with other Git repositories is not supported. 
-::: moniker-end
-
+> With the Azure Boards app for GitHub, Azure Boards and Azure DevOps Services support integration with GitHub.com and GitHub Enterprise Server repositories. Azure DevOps Servers 2019 and later versions support integration with GitHub Enterprise Server repositories only.Integration with other Git repositories is not supported.
  

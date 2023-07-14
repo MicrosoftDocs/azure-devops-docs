@@ -1,15 +1,15 @@
 ---
 title: Default permissions and access for Azure Boards
-titleSuffix: Azure Boards & TFS 
-description: Learn about default permissions and access levels in Azure Boards. The permissions and access levels help you support work-tracking tasks in Azure DevOps Services.
-ms.custom: boards-get-started
+titleSuffix: Azure Boards 
+description: Learn about default permissions and access levels in Azure Boards.  
+ms.custom: boards-get-started, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 09/15/2021
+ms.date: 02/02/2023
 ---
 
 # Default permissions and access levels for Azure Boards 
@@ -27,7 +27,7 @@ For a comparison chart of Stakeholder versus Basic access, see the [Feature matr
 
 ## Work item feature access
 
-You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../work-items/about-work-items.md).
+You can use work items to track anything you need to track. For more information, see [Understand how work items are used to track issues, tasks, and epics](../work-items/about-work-items.md).
 
 [!INCLUDE [temp](../../organizations/security/includes/boards-work-items.md)]
 
@@ -55,7 +55,7 @@ You can use work items to track anything you need to track. To learn more, see [
 [**Queries**](../queries/view-run-query.md) are filtered lists of work items based on criteria that you define by using a query editor.  
 
 > [!TIP]    
-> By default, Contributors can't create and save shared queries. We recommend that Project Administrators create a query folder for each team and give the team administrators or the team group query permissions to manage their folder. You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. To learn more, see [Set permissions on queries and query folders](../queries/set-query-permissions.md). 
+> By default, Contributors can't create and save shared queries. We recommend that Project Administrators create a query folder for each team and give the team administrators or the team group query permissions to manage their folder. You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. For more information, see [Set permissions on queries and query folders](../queries/set-query-permissions.md). 
 
 [!INCLUDE [temp](../../organizations/security/includes/boards-queries.md)]
 
@@ -64,11 +64,11 @@ You can use work items to track anything you need to track. To learn more, see [
 
 ## Stakeholder access
 
-Stakeholder access supports business owners. It also supports analysts and other team members who don't manage the work of a project, but need to view and add ideas to the backlog, add context and information to work items, and review status and progress. All members of an organization who don't use Visual Studio but want to contribute to work item tracking and monitor progress can be assigned as a stakeholder. Note, even if you change the permission level for a user assigned **Stakeholder** access, the user will be blocked from accessing the feature. 
+Stakeholder access supports business owners. It also supports analysts and other team members who don't manage the work of a project, but need to view and add ideas to the backlog, add context and information to work items, and review status and progress. All members of an organization who don't use Visual Studio but want to contribute to work item tracking and monitor progress can be assigned as a stakeholder. Note, even if you change the permission level for a user assigned **Stakeholder** access, the user is blocked from accessing the feature. 
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
-> For public projects, Stakeholder access gives users full access to all work-tracking features. To learn more, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> For public projects, Stakeholder access gives users full access to all work-tracking features. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
 

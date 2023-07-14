@@ -24,7 +24,7 @@ The default branch is an accurate representation of the history of each topic br
 
 ## Squash merge
 
-Squash merging is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on the topic branch being added to the history of the default branch, a squash merge adds all the file changes to a single new commit on the default branch. 
+Squash merging is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on the topic branch being added to the history of the default branch, a squash merge adds all the file changes to a single new commit on the default branch. Squash merge commit doesn't have a reference to the topic branch, it will produce a **new commit**, that contains all changes from the topic branch. Furthermore it is recommended to delete the topic branch to prevent any confusion.
 
 ![Diagram of squash merging in pull requests in Azure Repos.](media/merging-with-squash/squash-branch-merge.png)
 
@@ -62,16 +62,42 @@ Choose **Squash changes when merging** on the **Complete pull request** dialog t
 
 ## Multiple merge bases
 
-The **Files** tab in a pull request detects diffs by a three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their common merge base. The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there's more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common.
+The **Files** tab in a pull request detects diffs by a three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their [common merge base](https://git-scm.com/docs/git-merge-base) (i.e. the best common ancestor). The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there's more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common. You can check your branches for a multiple merge bases manually with ```git merge-base --all feature master``` command. Also there is an automatic detection for such a cases that will notify you with message "Multiple merge bases detected. The list of commits displayed might be incomplete".
+
+> [!NOTE]
+> In case you have lost changes during a PR review, please ensure that multiple merge bases is not the root cause.
 
 The following scenarios can cause multiple bases:
 
-- Cross-merges between different branches
+- Cross-merges (also known as a criss-cross) between different branches
+```
+---1---o---A
+    \ /
+     X
+    / \
+---2---o---o---B
+```
+- Handling aftermaths of main branch reverts, e.g. ammend the merge commit
+```
+*   42bb2d2 (HEAD, A) Amended merge commit
+|\  
+| | *   67c9bb8 (other) Merge branch 'A' into B
+| | |\  
+| |/ /  
+|/| /   
+| |/    
+| * fa78e32 add second commit
+* | 15845c9 add first commit
+|/  
+* 6a52130 add init
+```
 - Active reuse of feature branches
-- Handling aftermaths of main branch reverts
 - Other non-intuitive and convoluted manipulations with reverts, cherry picks, and merges
 
+
 Multiple merge base detection is part of security awareness. If there are multiple merge bases, the file-diff algorithm for the user interface might not properly detect file changes, depending on which merge base it chooses. If the files in the pull request have different versions between the merge bases, a multiple merge base warning occurs.
+
+Please review [the official git documentation](https://git-scm.com/docs/git-merge-base) for more details.
 
 ### Potential security risks of merging from multiple bases
 

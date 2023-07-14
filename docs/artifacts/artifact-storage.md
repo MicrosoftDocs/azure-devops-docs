@@ -1,10 +1,11 @@
 ---
-title: View Artifacts storage
+title: View Artifacts storage consumption
 description: View Azure Artifacts storage consumption at organization and project levels.
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 04/07/2021
+ms.date: 04/10/2023
 ms.author: rabououn
+ms.custom: engagement-fy23
 author: ramiMSFT
 monikerRange: '<= azure-devops'
 "recommendations": "true"
@@ -14,63 +15,58 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts free-tier plan, you get two Gibibytes (GiB) of free storage to store different types of packages. When you reach your maximum storage limit, you can either upgrade to a paid subscription or delete some of your existing artifacts.
+Azure Artifacts adopts a consumption-based billing model for all the package types it supports, such as NuGet, npm, Python, Maven, and Universal packages. The free-tier plan provides a storage capacity of two Gibibytes (GiB) to store various package types. If you exceed the storage limit, you can either upgrade to a paid subscription or remove some of your existing artifacts.
 
-Azure Artifacts uses a consumption-based billing for all the supported package types (NuGet, npm, Python, Maven, and Universal packages). Storing symbols files is free.
-
-Using the artifact storage UI from your organization/project settings, you can view your storage consumption at both the organization level and the project level. Storage is also grouped by project and/or by artifact type.
-
-> [!NOTE]
-> Azure Artifacts offers 2GiB of free storage for **every organization**. Once the maximum storage limit is reached, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
+The artifact storage UI available in your organization/project settings allows you to monitor your storage usage at the organization and project levels. Storage is also grouped by project and artifact type.
 
 ## Organization-level storage
 
-The organization-level view shows your total storage summary and your storage consumption by artifact type and by project.
+The organization-level view provides an overview of your total storage usage as well as the storage consumption by artifact type and by project.
+
+1. Sign in to your Azure DevOps organization.
 
 1. From within your organization, select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
 
-1. Under **Artifacts**, select **Storage** on the left pane.
+1. Select **Storage** from the left pane.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that shows a menu in organization settings with artifact storage highlighted.](media/artifact-storage-navigation.png)
+    :::image type="content" source="media/artifact-storage-navigation.png" alt-text="A screenshot showing how to navigate to org-level storage.":::
 
-1. View your storage consumption for each section.
+1. You can view your total storage summary, storage by artifact type, and storage by projects in your organization.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of organization-level artifact storage, with sections for summary, type, and projects.](media/org-level-storage.png)
+    :::image type="content" source="media/org-level-storage.png" alt-text="A screenshot showing the storage consumption levels.":::
 
-For the current release, you can view the storage breakdown for **Packages** and for projects listed in the **Storage by projects** section.
+1. Select **View storage breakdown** from **Storage by type** to view the total storage for packages in your organization-scoped feeds.
 
-The **Packages** storage breakdown lists packages in organization-scoped feeds.
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot that shows packages in organization-scoped feeds.](media/packages-org-scoped-feeds.png)
+    :::image type="content" source="media/packages-org-scoped-feeds.png" alt-text="A screenshot showing total storage for packages in organization-scoped feeds.":::
 
 > [!NOTE]
-> The **Storage by projects** section shows only projects with the largest storage consumption and not the full list of projects in your organization.
+> The list of **Storage by projects** only includes projects with the largest storage consumption and not the complete list of projects in your organization.
 
 ## Project-level storage
 
-The project-level view shows your total storage summary and your storage consumption by artifact type.
+The project-level view provides an overview of your total storage usage as well as the storage consumption by artifact type.
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. From within your project, select ![gear icon](../media/icons/gear-icon.png) **Project settings**.
 
-1. Under **Artifacts**, select **Storage** on the left pane.
+1. Select **Storage** from the left pane.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that shows a menu in project settings with artifact storage highlighted.](media/artifacts-storage-navigation-project-level.png)
+    :::image type="content" source="media/artifacts-storage-navigation-project-level.png" alt-text="A screenshot showing how to navigate to project-level storage.":::
 
-1. View your total storage summary and your storage by artifact type.
+1. You can view your total storage summary and storage consumption by artifact type for your project.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of project-level artifact storage, with sections for summary and type.](media/project-level-storage.png)
+    :::image type="content" source="media/proj-level-storage.png" alt-text="A screenshot showing project level storage consumption.":::
 
-The total storage summary shows your total billable stored artifacts. The **Storage by type** section lists your storage consumption by artifact type. For the current release, you can view your storage breakdown for the **Packages** section only.
+1. Select **View storage breakdown** from **Storage by type** to view the total storage for packages in project-scoped feeds.
+
+    :::image type="content" source="media/packages-proj-scoped-feeds.png" alt-text="A screenshot showing the total storage for packages in project-scoped feeds.":::
+
+> [!NOTE]
+> Azure Artifacts provides 2GiB of free storage for each organization. After reaching the maximum storage limit, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
 ## Related articles
 
-- [What are feeds?](concepts/feeds.md)
-- [What are feed views?](concepts/views.md)
-- [Get started with NuGet packages](get-started-nuget.md)
-- [Publish to NuGet feeds (YAML/classic)](../pipelines/artifacts/nuget.md)
-- [Azure Artifacts billing: blog post](https://devblogs.microsoft.com/devops/azure-artifacts-billing-changes-coming-october-2020/)
+- [Get started with NuGet packages in Azure Artifacts](get-started-nuget.md)
+- [Publish NuGet packages with Azure Pipelines (YAML/classic)](../pipelines/artifacts/nuget.md)
+- [Azure DevOps blog: Artifacts billing](https://devblogs.microsoft.com/devops/azure-artifacts-billing-changes-coming-october-2020/)

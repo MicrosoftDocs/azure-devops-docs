@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to configure pipelines to support integration with Azure Boards and work tracking
 ms.subservice: azure-devops-pipelines-integrations
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.custom: cross-service
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -43,7 +43,7 @@ The following table summarizes the integration points between Azure Boards and A
       Manually link work items to builds  
    :::column-end::: 
    :::column span="2":::
-      You can link from a work item to builds within the same project or other projects within the organization. For details, see [Link to work items from other objects](../../notifications/add-links-to-work-items.md).
+      You can link from a work item to builds within the same project or other projects within the organization. For details, see [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md).
    :::column-end:::
    :::column span="1":::
       All versions 
@@ -55,7 +55,7 @@ The following table summarizes the integration points between Azure Boards and A
       View builds linked to from a work item 
    :::column-end::: 
    :::column span="2":::
-      You can view all builds linked to from a work item, whether manual or automatically linked, from the Links tab.  For details, see [Link to work items from other objects, View list of linked objects](../../notifications/add-links-to-work-items.md#view-list-links).
+      You can view all builds linked to from a work item, whether manual or automatically linked, from the Links tab.  For details, see [Link to work items from other objects, View list of linked objects](../../organizations/notifications/add-links-to-work-items.md#view-list-links).
    :::column-end:::
    :::column span="1":::
       All versions 
@@ -120,7 +120,7 @@ The following table summarizes the integration points between Azure Boards and A
       Query Work Items task, ensure the number of matching work items returned from a query is within a threshold.
    :::column-end::: 
    :::column span="2":::
-       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](../tasks/utility/work-item-query.md).  
+       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](/azure/devops/pipelines/tasks/reference/query-work-items-v0).  
    :::column-end:::
    :::column span="1":::
       Azure DevOps Server 2020 and later versions 
@@ -326,7 +326,7 @@ To verify the integration is working, perform the following steps:
 
 1. Link one or more work items to a commit or pull request in Azure Repos Git repository. For details, see: 
 	-  [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md)  
-	-  [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
+	-  [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 
 1.  Run the pipeline. 
 
@@ -528,7 +528,7 @@ See [Speed up testing by using Test Impact Analysis (TIA), Enable Test Impact An
 - [Configure repositories to support work tracking](../../repos/git/configure-repos-work-tracking.md).  
 - [How to retrieve all work items associated with a release pipeline using Azure DevOps API](https://devblogs.microsoft.com/premier-developer/how-to-retrieve-all-work-items-associated-with-a-release-pipeline-using-azure-devops-api/)
 - [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md) 
-- [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
+- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 - [End-to-end traceability](../../cross-service/end-to-end-traceability.md)
 - [Linking, traceability, and managing dependencies](../../boards/queries/link-work-items-support-traceability.md)
 - [Link type reference](../../boards/queries/link-type-reference.md)
