@@ -70,5 +70,5 @@
 | | `vso.wiki_write` | Wiki (read and write) | Grants the ability to read, create and updates wikis, wiki pages and wiki attachments. |
 | **Work Items** | `vso.work` | Work items (read) | Grants the ability to read work items, queries, boards, area and iterations paths, and other work item tracking related metadata. Also grants the ability to execute queries, search work items and to receive notifications about work item events via service hooks. |
 | | `vso.work_write` | Work items (read and write) | Grants the ability to read, create, and update work items and queries, update board metadata, read area and iterations paths other work item tracking related metadata, execute queries, and to receive notifications about work item events via service hooks. |
-| | `vso.work_full` | Work items (read, write and manage) | Grants full access to work items, queries, backlogs, plans, and work item tracking metadata, including process template imports. Also provides the ability to receive notifications about work item events via service hooks. |
+| | `vso.work_full` | Work items (read, write, and manage) | Grants full access to work items, queries, backlogs, plans, and work item tracking metadata, including process template imports. Also provides the ability to receive notifications about work item events via service hooks. |
 
