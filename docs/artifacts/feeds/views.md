@@ -46,7 +46,7 @@ Use the actual user-facing name and version of the package for the `{packageName
 
 The body of the request is a [JSON Patch](https://jsonpatch.com/) document adding the view to the end of the `views` array. See [Get started with the REST API](../../integrate/how-to/call-rest-api.md) and the [REST API samples](../../integrate/get-started/rest/samples.md) for more information on how to interact with Azure DevOps REST API.
 
-- **NuGet**:
+### [NuGet](#tab/nuget)
 
     ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
@@ -54,7 +54,7 @@ The body of the request is a [JSON Patch](https://jsonpatch.com/) document addin
     
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [NuGet - update package version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
-- **npm**:
+### [Npm](#tab/npm)
   
     ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
@@ -62,7 +62,7 @@ The body of the request is a [JSON Patch](https://jsonpatch.com/) document addin
     
     Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation) to construct the body of your request. See [npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
-- **Python**:
+### [Python](#tab/python)
    
     ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
@@ -70,7 +70,7 @@ The body of the request is a [JSON Patch](https://jsonpatch.com/) document addin
     
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Python - update package version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
-- **Maven**:
+### [Maven](#tab/maven)
 
     ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feed}/maven/groups/{groupId}/artifacts/{artifactId}/versions/{version}?api-version=7.1-preview.1
@@ -78,7 +78,7 @@ The body of the request is a [JSON Patch](https://jsonpatch.com/) document addin
     
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Maven  - update package version](/rest/api/azure/devops/artifactspackagetypes/maven/update-package-version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
-- **Universal packages**:
+### [Universal Packages](#tab/universalpackages)
     
     ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
