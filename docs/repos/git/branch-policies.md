@@ -181,13 +181,21 @@ To set the policy, under **Branch Policies**, set **Require a minimum number of 
 
 - Select **Allow completion even if some reviewers vote to wait or reject** to allow PR completion even if some reviewers vote against approval. The minimum number of reviewers must still approve.
 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+
 - Under **When new changes are pushed**:
+  - Select **Require at least one approval on the last iteration** to require at least one approval vote for the last source branch change.
+  - Select **Reset all approval votes (does not reset votes to reject or wait)** to remove all approval votes, but keep votes to reject or wait, whenever the source branch changes.
+  - Select **Reset all code reviewer votes** to remove all reviewer votes whenever the source branch changes, including votes to approve, reject, or wait.
 
 ::: moniker-end
+
 ::: moniker range=">= azure-devops-2022"
+
+- Under **When new changes are pushed**:
   - Select **Require at least one approval on every iteration** to require at least one approval vote for the last source branch change. The user's approval is not counted against any previous unapproved iteration pushed by that user. As a result, additional approval on the last iteration is required to be done by another user.
-::: moniker-end
-::: moniker range=">= azure-devops-2020"
   - Select **Require at least one approval on the last iteration** to require at least one approval vote for the last source branch change.
   - Select **Reset all approval votes (does not reset votes to reject or wait)** to remove all approval votes, but keep votes to reject or wait, whenever the source branch changes.
   - Select **Reset all code reviewer votes** to remove all reviewer votes whenever the source branch changes, including votes to approve, reject, or wait.
