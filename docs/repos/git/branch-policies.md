@@ -185,7 +185,7 @@ To set the policy, under **Branch Policies**, set **Require a minimum number of 
 
 ::: moniker-end
 ::: moniker range=">= azure-devops-2022"
-  - Select **Require at least one approval on every iteration** to require at least one approval vote for the last source branch change. The user's approval is not counted against any previous unaproved iteration pushed by that user. As a result, additional approval on the last iteration is required to be done by another user.
+  - Select **Require at least one approval on every iteration** to require at least one approval vote for the last source branch change. The user's approval is not counted against any previous unapproved iteration pushed by that user. As a result, additional approval on the last iteration is required to be done by another user.
 ::: moniker-end
 ::: moniker range=">= azure-devops-2020"
   - Select **Require at least one approval on the last iteration** to require at least one approval vote for the last source branch change.
