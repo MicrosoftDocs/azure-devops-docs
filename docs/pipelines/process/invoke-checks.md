@@ -4,7 +4,7 @@ description: Use Invoke Azure Function / REST API checks to determine when a dep
 ms.topic: conceptual
 ms.author: sandrica
 author: silviuandrica
-ms.date: 07/13/2022
+ms.date: 07/17/2023
 monikerRange: ">= azure-devops-2020"
 ---
 
@@ -17,6 +17,7 @@ The Invoke Azure Function / REST API Checks allow you to write code to decide if
 In the rest of this guide, we refer to Azure Function / REST API Checks simply as checks.
 
 The recommended way to use checks is in asynchronous mode. This mode offers you the highest level of control over the check logic, makes it easy to reason about what state the system is in, and decouples Azure Pipelines from your checks implementation, providing the best scalability. All synchronous checks can be implemented using the asynchronous checks mode.
+
 
 ## Asynchronous checks
 
@@ -44,6 +45,10 @@ The steps in the diagram are:
    - 2.3 Evaluate the access conditions
    - 2.4 If it can't reach a final decision, reschedule a reevaluation of the conditions for a later point, then go to step 2.3
 1. Decision Communication. The Azure function calls back into Azure Pipelines with the access decision. Stage deployment can proceed
+
+When you use the recommended implementation, the pipeline run details page shows the latest check log.
+
+    :::image type="content" source="media/checks-pipeline-run-details.png" alt-text="Screenshot of pipeline run details with check information.":::
 
 ### Recommended configuration for asynchronous checks
 
