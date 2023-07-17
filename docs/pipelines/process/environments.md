@@ -67,7 +67,8 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
     pool:
       vmImage: 'Ubuntu-latest'
     # creates an environment if it doesn't exist
-    environment: 'smarthotel-dev'
+    environment: 
+      name: 'smarthotel-dev'
       resourceName: myVM
       resourceType: virtualMachine
     strategy:
@@ -85,7 +86,8 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
 You can scope the target of deployment to a particular resource within the environment. Then, you can record deployment history on a specific resource within the environment. The steps of the deployment job *automatically inherit* the service connection details from the resource targeted by the deployment job.
 
 ```YAML
-environment: 'smarthotel-dev.bookings'
+environment: 
+  name: 'smarthotel-dev.bookings'
 strategy: 
  runOnce:
    deploy:
@@ -179,7 +181,7 @@ A: These are some of the possible reasons of the failure:
     * You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that hasn't been created yet.
     * You update the YAML file using the Azure Pipelines web editor and save the pipeline after adding a reference to an environment that does not exist.  
 
-  * In the following flows, Azure Pipelines doesn't have information about the user creating the environment: you update the YAML file using another external code editor, add a reference to an environment  that doesn't exist, and then cause a manual or continuous integration pipeline to be triggered. In this case, Azure Pipelines doesn't know about the user. Previously, we handled this case by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment. 
+  * In the following flows, Azure Pipelines doesn't have information about the user creating the environment: you update the YAML file using another external code editor, add a reference to an environment that doesn't exist, and then cause a manual or continuous integration pipeline to be triggered. In this case, Azure Pipelines doesn't know about the user. Previously, we handled this case by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment. 
 
   * You can use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create the environment or use [templateContext to pass properties to templates](template-parameters.md#use-templatecontext-to-pass-properties-to-templates). [Runtime parameters](runtime-parameters.md) won't work when creating the environment because they are expanded at run time. 
 
