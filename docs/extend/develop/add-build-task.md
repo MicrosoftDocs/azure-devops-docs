@@ -53,7 +53,7 @@ To create extensions for Azure DevOps, you need the following software and tools
 
 ## 1. Create a custom task
 
-Do every part of [1. Create a custom task](#1-create-a-custom-task) within the `buildandreleasetask` folder.
+Do every part of the steps withing this procedure in the `buildandreleasetask` folder.
 
 > [!NOTE]
 > This example walk-through is on Windows with PowerShell. We made it generic for all platforms, but the syntax for getting environment variables is different. If you're using a Mac or Linux, replace any instances of `$env:<var>=<val>` with `export <var>=<val>`.
@@ -61,7 +61,7 @@ Do every part of [1. Create a custom task](#1-create-a-custom-task) within the `
 ### Create task scaffolding
 
 1. Create the folder structure for the task and install the required libraries and dependencies.
-2. From within your `buildandreleasetask` folder, run the following command.
+2. Open a PowerShell command window, go to your `buildandreleasetask` folder, and run the following command.
 
    ```
    npm init --yes
