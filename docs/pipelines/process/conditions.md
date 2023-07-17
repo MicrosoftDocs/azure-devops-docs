@@ -91,7 +91,7 @@ you can specify the conditions under which the task or job will run.
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
 
 Conditions are written as expressions in YAML pipelines.
-The agent evaluates the expression beginning with the innermost function and works out its way.
+The agent evaluates the expression beginning with the innermost function and works its way out.
 The final result is a boolean value that determines if the task, job, or stage should run or not.
 See the [expressions](expressions.md) article for a full guide to the syntax.
 
