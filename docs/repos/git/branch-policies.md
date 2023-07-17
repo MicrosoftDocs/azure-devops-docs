@@ -183,7 +183,7 @@ To set the policy, under **Branch Policies**, set **Require a minimum number of 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops-2022"
 
 - Under **When new changes are pushed**:
   - Select **Require at least one approval on the last iteration** to require at least one approval vote for the last source branch change.
