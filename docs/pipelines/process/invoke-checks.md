@@ -48,7 +48,7 @@ The steps in the diagram are:
 
 When you use the recommended implementation, the pipeline run details page shows the latest check log.
 
-    :::image type="content" source="media/checks-pipeline-run-details.png" alt-text="Screenshot of pipeline run details with check information.":::
+:::image type="content" source="media/checks-pipeline-run-details.png" alt-text="Screenshot of pipeline run details with check information.":::
 
 ### Recommended configuration for asynchronous checks
 
