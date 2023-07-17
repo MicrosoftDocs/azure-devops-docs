@@ -120,3 +120,14 @@ For example, assume `always: false` and `batch: true`. Assume there's a cron sch
 Your YAML pipeline may contain multiple cron schedules, and you may want your pipeline to run different stages / jobs based on which cron schedule runs. For example, you have a nightly build and a weekly build, and you wish that during the weekly build your pipeline collect more statistics. 
 
 We make this possible by introducing a new predefined system variable named `Build.CronSchedule.DisplayName` that contains the `displayName` property of a cron schedule.
+
+### New toggles to control creation of classic pipelines
+
+Last year, we launched a Pipelines configuration setting to [disable creation of classic build and release pipelines](azure/devops/release-notes/2022/sprint-213-update#ensure-your-organization-only-uses-yaml-pipelines).
+
+In response to your feedback, we have split the initial toggle into two: one for classic _build_ pipelines and one for classic _release_ pipelines, deployment groups, and task groups.
+
+> [!div class="mx-imgBorder"]
+> ![Disable creation](../../media/224-pipelines-03.png)
+
+If your organization has the `Disable creation of classic build and release pipelines` toggle on, both of the new toggles are on. If the original toggle is off, both new toggles are off.
