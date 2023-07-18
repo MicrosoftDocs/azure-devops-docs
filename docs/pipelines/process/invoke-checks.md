@@ -4,7 +4,7 @@ description: Use Invoke Azure Function / REST API checks to determine when a dep
 ms.topic: conceptual
 ms.author: sandrica
 author: silviuandrica
-ms.date: 07/17/2023
+ms.date: 07/18/2023
 monikerRange: ">= azure-devops-2020"
 ---
 
@@ -55,7 +55,7 @@ In the Azure Function / REST API check configuration panel, make sure you:
 - Selected _Callback_ for the _Completion event_
 - Set _Time between evaluations (minutes)_ to _0_
 
-Setting the _Time between evaluations_ to a non-zero value means the check decision (pass / fail) isn't final. The check is reevaluated until all other Approvals & Checks reach a final state. 
+Setting the _Time between evaluations_ to a nonzero value means the check decision (pass / fail) isn't final. The check is reevaluated until all other Approvals & Checks reach a final state. 
 
 <!-- > [!NOTE]
 > In the future, the _Time between evaluations_ will be removed, and a value of 0 will be used instead. -->
@@ -81,7 +81,7 @@ To reach a decision, your check may need information about the current pipeline 
 
 To call into Azure DevOps, we recommend you use the [job access token](/azure/devops/pipelines/process/access-tokens) issued for the check execution, instead of a [personal access token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate). The token is already provided to your checks by default, in the `AuthToken` header. 
 
-Compared to PATs, the job access token is less prone to getting throttled, doesn't need manual refresh, and is not tied to a personal account. The token is valid for 48 hours. 
+Compared to PATs, the job access token is less prone to getting throttled, doesn't need manual refresh, and isn't tied to a personal account. The token is valid for 48 hours. 
 
 Using the job access token all but removes Azure DevOps REST API throttling issues. When you use a PAT, you're using the same PAT for all runs of your pipeline. If you run a large number of pipelines, then the PAT gets throttled. This is less of an issue with the job access token since a new token is generated for each check execution.
 
@@ -227,7 +227,7 @@ When configuring the check, you can specify the pipeline run information you wis
 - `"TaskInstanceId": "$(system.TaskInstanceId)"` 
 - `"AuthToken": "$(system.AccessToken)"`
 
-We don't recommend making calls into Azure DevOps in synchronous mode, because it will most likely cause your check to take more than 3 seconds to reply, so the check will fail.
+We don't recommend making calls into Azure DevOps in synchronous mode, because it will most likely cause your check to take more than 3 seconds to reply, so the check fails.
 
 ### Error handling
 
@@ -296,7 +296,7 @@ Say you have a Service Connection to a production environment resource, and you 
 
 Invoke Azure Function and REST API checks now include rules to match recommended usage. Checks need to follow these rules depending on mode and the number of retries:
 
-- **Asynchronous checks (Callback mode)**: Azure Pipelines does not retry asynchronous checks. You should provide a result asynchronously when an evaluation is final. For asynchronous checks to be considered compliant, the time interval between evaluations needs to be 0.
+- **Asynchronous checks (Callback mode)**: Azure Pipelines doesn't retry asynchronous checks. You should provide a result asynchronously when an evaluation is final. For asynchronous checks to be considered compliant, the time interval between evaluations needs to be 0.
 
 - **Synchronous checks (ApiResponse mode)**: The maximum number of retries for your check is 10. You can do set in a number of ways. For example, you can configure timeout to 20 and time interval between evaluations to 2. Or, you can configure timeout to 100 and time interval between evaluations to 10. But, if you configure timeout to 100 and set the time interval between evaluations to 2, your check won't be compliant because your asking for 50 retries. The ratio of timeout to time interval between evaluations should be less than or equal to 10.
 
