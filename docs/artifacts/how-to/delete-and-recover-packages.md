@@ -247,13 +247,11 @@ Deleted packages will remain in the Recycle Bin for 30 days. After that, they'll
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Artifacts**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot of how to access Azure Artifacts.":::
+1. Select **Artifacts**, and then select **Recycle Bin**.
 
-1. Select **Recycle Bin**.
-
-    :::image type="content" source="../media/recycle-bin.png" alt-text="A screenshot showing how to access the recycle bin.":::
+    :::image type="content" source="../media/artifacts-recycle-bin.png" alt-text="A screenshot showing how to access the recycle bin.":::
 
 1. Select your package, and then select **Restore**.
 
