@@ -152,7 +152,7 @@ Because `release` was added to the branch filters in the `main` branch, but **no
 
 ::: moniker-end
 
-::: moniker range=">azure-devops-2022"
+::: moniker range=">=azure-devops-2022"
 
 ### Batch considerations for scheduled triggers
 
@@ -165,7 +165,7 @@ Because `release` was added to the branch filters in the `main` branch, but **no
 
 ::: moniker-end
 
-::: moniker range=">azure-devops-2022"
+::: moniker range=">=azure-devops-2022"
 
 The `batch` property configures whether to run the pipeline if the previously scheduled run is in-progress; the default is `false`. This is regardless of the version of the pipeline repository.
 
@@ -192,7 +192,7 @@ The following table describes how `always` and `batch` interact.
 
 ::: moniker-end
 
-::: moniker range=">azure-devops-2022"
+::: moniker range=">=azure-devops-2022"
 
 When a pipeline is running due to a cron scheduled trigger, the pre-defined `Build.CronSchedule.DisplayName` variable contains the `displayName` of the cron schedule that triggered the pipeline run.
 
