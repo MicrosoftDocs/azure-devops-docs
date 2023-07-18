@@ -60,7 +60,7 @@ To define the branch control check:
 
 3. Choose the **Branch control** check and provide a comma-separated list of allowed branches. You can mandate that the branch should have protection enabled. You can also define the behavior of the check in case protection status for one of the branches isn't known.
 
-:::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
+    :::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
 
 At run time, the check would validate branches for all linked resources in the run against the allowed list. If any of the branches doesn't match the criteria, the check fails and the stage is marked failed. 
 
@@ -155,20 +155,20 @@ To define a custom policy evaluation over the artifact(s), follow the below step
 
 1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. Learn more about [creating an environment](environments.md).
 
-:::image type="content" source="media/checks/environments.png" alt-text="View environment.":::
+    :::image type="content" source="media/checks/environments.png" alt-text="View environment.":::
 
 
 2. Navigate to **Approvals and checks** for the environment.
 
-:::image type="content" source="media/checks/approvals-and-checks.png" alt-text="Add checks to environment.":::
+    :::image type="content" source="media/checks/approvals-and-checks.png" alt-text="Add checks to environment.":::
 
 3. Select **Evaluate artifact**.
     
-:::image type="content" source="media/checks/evaluate-artifact.png" alt-text="Add evaluate artifact check.":::
+    :::image type="content" source="media/checks/evaluate-artifact.png" alt-text="Add evaluate artifact check.":::
    
 4. Paste the policy definition and click **Save**. [See more](artifact-policy.md) about writing policy definitions.
 
-:::image type="content" source="media/checks/policy-definition.png" alt-text="Add policy definition.":::
+    :::image type="content" source="media/checks/policy-definition.png" alt-text="Add policy definition.":::
  
 When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. The specified policy is evaluated against the available image metadata. The check passes when the policy is successful and fails otherwise. The stage is marked failed if the check fails.
 
