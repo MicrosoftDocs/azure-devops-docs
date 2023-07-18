@@ -301,3 +301,7 @@ Using the Invoke REST API check, you can add a check to wait on the API in the s
 By default, only predefined variables are available to checks. You can use a linked variable group to access other variables. The output variable from the previous stage can be written to the variable group and accessed in the check.
 
 
+## Learn more
+- [Invoke Azure Function / REST API checks](invoke-checks.md)
+- [Approvals and Checks REST API](/rest/api/azure/devops/approvalsandchecks/)
+- [Approvals Query REST API](/rest/api/azure/devops/approvalsandchecks/approvals/query)
