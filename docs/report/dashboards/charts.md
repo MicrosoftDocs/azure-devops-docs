@@ -313,7 +313,7 @@ In the dialog that opens, select the dashboard to add the chart to.
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
-![Chart context menu, add to a team dashboard](media/pin-chart-to-a-dashboard.png)
+![Chart context menu, add to a team dashboard](media/add-charts/pin-chart-to-a-dashboard.png)
 ::: moniker-end  
 
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
