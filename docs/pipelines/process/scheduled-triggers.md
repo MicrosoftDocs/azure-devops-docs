@@ -196,7 +196,7 @@ The following table describes how `always` and `batch` interact.
 
 When a pipeline is running due to a cron scheduled trigger, the pre-defined `Build.CronSchedule.DisplayName` variable contains the `displayName` of the cron schedule that triggered the pipeline run.
 
-Your YAML pipeline may contain multiple cron schedules, and you may want your pipeline to run different stages or jobs based on which cron schedule runs. For example, you have a nightly build and a weekly build, and you want to run a certain job only during the weekly build. You can use the `Build.CronSchedule.DisplayName` variable in a job or stage condition to determine whether to run that job or stage.
+Your YAML pipeline may contain multiple cron schedules, and you may want your pipeline to run different stages or jobs based on which cron schedule runs. For example, you have a nightly build and a weekly build, and you want to run a certain stage only during the nightly build. You can use the `Build.CronSchedule.DisplayName` variable in a job or stage condition to determine whether to run that job or stage.
 
 ```yml
 - stage: stage1
