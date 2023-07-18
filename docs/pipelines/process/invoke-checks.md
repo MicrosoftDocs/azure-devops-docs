@@ -300,6 +300,8 @@ Invoke Azure Function and REST API checks now include rules to match recommended
 
 - **Synchronous checks (ApiResponse mode)**: The maximum number of retries for your check is 10. You can do set in a number of ways. For example, you can configure timeout to 20 and time interval between evaluations to 2. Or, you can configure timeout to 100 and time interval between evaluations to 10. But, if you configure timeout to 100 and set the time interval between evaluations to 2, your check won't be compliant because your asking for 50 retries. The ratio of timeout to time interval between evaluations should be less than or equal to 10.
 
+Learn more about the [rollout of check compliance](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/#scalability-improvements). 
+
 ## Multiple checks
 
 Before Azure Pipelines deploys a stage in a pipeline run, multiple checks may need to pass. A protected resource may have one or more Checks associated to it. A stage may use multiple protected resources. Azure Pipelines collects all the checks associated to each protected resource used in a stage and evaluates them concurrently.
