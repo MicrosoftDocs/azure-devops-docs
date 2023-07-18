@@ -138,7 +138,7 @@ When debugging a check, you may want to temporarily disable and then enable it a
 
 1. In your Azure DevOps project, go to the resource with a check.  
 
-2. Open **Approvals and Checks**. 
+2. Open the **Approvals and Checks** tab. 
 
 3. In the contextual menu, select **Disable** or **Enable**. 
 
