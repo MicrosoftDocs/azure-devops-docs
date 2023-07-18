@@ -88,7 +88,7 @@ The checks fail if the stage has not started execution within the specified **Ti
 > [!NOTE]
 > User defined pipeline variables are not accessible to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
 
-[Read more about the recommended way to use Invoke Azure Function checks](invoke-checks.md).
+[Read more about the recommended way to use Invoke Azure Function checks](invoke-checks.md). Checks [need to follow specific rules](invoke-checks.md#check-compliance) depending on their mode and the number of retries to be compliant. 
 
 ## Invoke REST API
 

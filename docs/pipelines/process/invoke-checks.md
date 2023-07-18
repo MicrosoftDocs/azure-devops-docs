@@ -18,7 +18,6 @@ In the rest of this guide, we refer to Azure Function / REST API Checks simply a
 
 The recommended way to use checks is in asynchronous mode. This mode offers you the highest level of control over the check logic, makes it easy to reason about what state the system is in, and decouples Azure Pipelines from your checks implementation, providing the best scalability. All synchronous checks can be implemented using the asynchronous checks mode.
 
-
 ## Asynchronous checks
 
 In asynchronous mode, Azure DevOps makes a call to the Azure Function / REST API check and awaits a callback with the resource access decision. There's no open HTTP connection between Azure DevOps and your check implementation during the waiting period. 
@@ -292,6 +291,14 @@ Say you have a Service Connection to a production environment resource, and you 
 - When a pipeline that wants to use the Service Connection runs:
     - Azure Pipelines calls your check function
     - If the reason is other than `Manual`, the check fails, and the pipeline run fails
+
+## Check compliance 
+
+Invoke Azure Function and REST API checks now include rules to match recommended usage. Checks need to follow these rules depending on mode and the number of retries:
+
+- **Asynchronous checks (Callback mode)**: Azure Pipelines does not retry asynchronous checks. You should provide a result asynchronously when an evaluation is final. For asynchronous checks to be considered compliant, the time interval between evaluations needs to be 0.
+
+- **Synchronous checks (ApiResponse mode)**: The maximum number of retries for your check is 10. You can do set in a number of ways. For example, you can configure timeout to 20 and time interval between evaluations to 2. Or, you can configure timeout to 100 and time interval between evaluations to 10. But, if you configure timeout to 100 and set the time interval between evaluations to 2, your check won't be compliant because your asking for 50 retries. The ratio of timeout to time interval between evaluations should be less than or equal to 10.
 
 ## Multiple checks
 
