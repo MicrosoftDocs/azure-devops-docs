@@ -45,9 +45,13 @@ The steps in the diagram are:
    - 2.4 If it can't reach a final decision, reschedule a reevaluation of the conditions for a later point, then go to step 2.3
 1. Decision Communication. The Azure function calls back into Azure Pipelines with the access decision. Stage deployment can proceed
 
+::: moniker range="azure-devops"
+
 When you use the recommended implementation, the pipeline run details page shows the latest check log.
 
 :::image type="content" source="media/checks-pipeline-run-details.png" alt-text="Screenshot of pipeline run details with check information.":::
+
+::: moniker-end
 
 ### Recommended configuration for asynchronous checks
 
@@ -292,6 +296,8 @@ Say you have a Service Connection to a production environment resource, and you 
     - Azure Pipelines calls your check function
     - If the reason is other than `Manual`, the check fails, and the pipeline run fails
 
+::: moniker range="azure-devops"
+
 ## Check compliance 
 
 Invoke Azure Function and REST API checks now include rules to match recommended usage. Checks need to follow these rules depending on mode and the number of retries:
@@ -301,6 +307,8 @@ Invoke Azure Function and REST API checks now include rules to match recommended
 - **Synchronous checks (ApiResponse mode)**: The maximum number of retries for your check is 10. You can do set in a number of ways. For example, you can configure timeout to 20 and time interval between evaluations to 2. Or, you can configure timeout to 100 and time interval between evaluations to 10. But, if you configure timeout to 100 and set the time interval between evaluations to 2, your check won't be compliant because your asking for 50 retries. The ratio of timeout to time interval between evaluations should be less than or equal to 10.
 
 Learn more about the [rollout of check compliance](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/#scalability-improvements). 
+
+::: moniker-end
 
 ## Multiple checks
 
