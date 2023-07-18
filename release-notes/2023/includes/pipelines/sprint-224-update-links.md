@@ -10,3 +10,5 @@ ms.topic: include
 - [Updates to YAML cron schedules](#updates-to-yaml-cron-schedules)
 - [Disable a check](#disable-a-check)
 - [Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
+- [New toggles to control creation of classic pipelines](#new-toggles-to-control-creation-of-classic-pipelines)
+
