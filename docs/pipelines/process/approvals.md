@@ -132,6 +132,8 @@ You can have multiple required templates for the same service connection. In thi
 
 :::image type="content" source="media/checks/required-template.png" alt-text="Configuring required template check.":::
 
+::: moniker range="azure-devops"
+
 ## Disable a check
 
 When debugging a check, you may want to temporarily disable and then enable it again. To disable or enable a check:
@@ -143,6 +145,8 @@ When debugging a check, you may want to temporarily disable and then enable it a
 3. In the contextual menu, select **Disable** or **Enable**. 
 
     :::image type="content" source="media/checks/disable-check-approvals.png" alt-text="Screenshot of disable a check option.":::
+
+::: moniker-end
 
 ## Evaluate artifact
 
