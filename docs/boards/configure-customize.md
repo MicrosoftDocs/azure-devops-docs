@@ -355,7 +355,7 @@ If you use the Scrum process, your default setup is to track bugs along with pro
 Determine with your team how you want to manage bugs. Then, [change your team settings](../organizations/settings/show-bugs-on-backlog.md) accordingly.
 
 > [!TIP]  
-> After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlogs/resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
+> After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlogs/resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint Taskboards.  
 
 <a id="add-oob-to-backlog" /> 
 
@@ -450,7 +450,7 @@ The following table shows the effects of adding a custom work item type to a spe
 :::row:::
    :::column span="1":::
    - Child work items of the new WIT appear on the product backlog
-	- Work items based on the new WIT appear on the sprint backlogs and taskboards
+	- Work items based on the new WIT appear on the sprint backlogs and Taskboards
    :::column-end:::
    :::column span="1":::
    - Work items based on the new WIT appear on the product backlog and Kanban board
@@ -465,7 +465,7 @@ The following table shows the effects of adding a custom work item type to a spe
 
 ### Custom workflow 
 
-Each process supports a default workflow. This workflow defines the default columns that appear on the Kanban boards and sprint taskboards. 
+Each process supports a default workflow. This workflow defines the default columns that appear on the Kanban boards and sprint Taskboards. 
 
 [!INCLUDE [temp](includes/four-process-workflow.md)] 
 

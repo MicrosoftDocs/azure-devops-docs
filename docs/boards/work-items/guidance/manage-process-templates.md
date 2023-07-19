@@ -59,7 +59,7 @@ To manage process templates, you must be a member of the **Project Collection Ad
     > [!NOTE]    
     > If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../../../organizations/settings/work/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](../../../migrate/migration-overview.md).
 
-1.  Choose the file to upload. Your [custom process must meet specific constraints](../../../organizations/settings/work/import-process/customize-process.md) in order to pass validation checks during import.  
+2.  Choose the file to upload. Your [custom process must meet specific constraints](../../../organizations/settings/work/import-process/customize-process.md) to pass validation checks during import.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Import Process dialog, choose process file to import.](../../../organizations/settings/work/import-process/media/import-process-dialog.png)
@@ -69,7 +69,7 @@ To manage process templates, you must be a member of the **Project Collection Ad
 	> [!IMPORTANT]  
 	> You can't update one of the locked processes: Agile, Basic, CMMI, and Scrum.  
 
-1.  Upon successful import, you'll see the following message.  
+3.  Upon successful import, you'll see the following message.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Import Process success dialog.](../../../organizations/settings/work/import-process/media/import-process-success-dialog.png)
@@ -77,12 +77,12 @@ To manage process templates, you must be a member of the **Project Collection Ad
     If the process doesn't pass the validation checks performed on import, you'll receive a list of error messages.  
     [Correct each error](../../../organizations/settings/work/import-process/resolve-errors.md) and then retry the import. 
 
-1.  You can immediately create a project using the newly imported process. 
+4.  You can immediately create a project using the newly imported process. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Import process actions menu, Create new team project from imported process.](../../../organizations/settings/work/import-process/media/import-process-new-team-project.png)
 
-1. Fill out the form that appears. To learn more about the different options, see [Create a project](../../../organizations/projects/create-project.md).
+5. Complete the form that appears. To learn more about the different options, see [Create a project](../../../organizations/projects/create-project.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Dialog for Create new project.](../../../organizations/settings/work/import-process/media/create-project-from-hosted.png)
@@ -140,7 +140,7 @@ For other Hosted XML process management tasks, see [Import and export a Hosted X
 	|**Choose this task** | **To perform this operation** |
 	|---------------------|-------------------------------|
 	|**Upload**|To upload a process template.<br/>In the **Upload Process Template** dialog box, choose the folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions). |
-	|**Download** | To download the process template to a local computer.<br/>In the **Download Process Template** dialog box, select a folder where the process template will be downloaded.<br/><br/>If you're downloading a process template to use to [configure new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade), [manually add new features](/previous-versions/azure/devops/reference/upgrade/add-features-manually) or [update a custom process template to enable new features](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)--choose the process that corresponds to the one you used previously to create your project. For example, if you're updating a project based on the Scrum process template, then select **Scrum**. All version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). <br/><br/>You can determine which process template to select based on the [work item types defined for your existing project](#wit_correlation). |
+	|**Download** | To download the process template to a local computer.<br/>In the **Download Process Template** dialog box, select a folder where the process template gets downloaded.<br/><br/>If you're downloading a process template to use to [configure new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade), [manually add new features](/previous-versions/azure/devops/reference/upgrade/add-features-manually) or [update a custom process template to enable new features](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)--choose the process that corresponds to the one you used previously to create your project. For example, if you're updating a project based on the Scrum process template, then select **Scrum**. All version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). <br/><br/>You can determine which process template to select based on the [work item types defined for your existing project](#wit_correlation). |
 	|**Make Default**| To cause the selected process template to appear as the default selection in the **New Team Project Wizard**. | 
 	|**Delete**	|To permanently remove the selected process template from the collection.	| 
 
@@ -186,10 +186,10 @@ Resolve each error and then retry the upload process. You may find additional in
 
 The following validation checks must pass when uploading a process template.  
 
-- Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates. 
+- Process template names must be unique and 256 Unicode characters or less. Same-named templates overwrite existing templates. 
 Also, names can't contain the following characters: . , ; ' ` : / \ * | ? " &amp; % $ ! + = ( ) [ ] { } &lt; &gt;. For more restrictions, see [Naming restrictions](../../../organizations/settings/naming-restrictions.md). 
-- Process template folders can't contain any .exe files. If they do, the process template may upload successfully, however project creation will fail.
-- Process template total size should be 2 GB or less, or project creation will fail.
+- Process template folders can't contain any .exe files. If they do, the process template may upload successfully, however project creation fails.
+- Process template total size should be 2 GB or less, or project creation fails.
 - The upload process runs a partial verification check to make sure that the XML of each process template XML file is valid. If you receive any errors when you try to upload the process template, review the XML to determine the cause of the error. Duplicate tags in an XML file can cause errors. If there's no error in the XML, check to make sure all the appropriate files are included in your process template in the correct folder locations.
 - If XML definition files reference an extension, then the extension must be installed and enabled in the collection.
 

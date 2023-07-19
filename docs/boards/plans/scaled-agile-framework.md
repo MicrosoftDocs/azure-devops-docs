@@ -222,7 +222,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Portfolio Vision 
    :::column-end:::
    :::column span="3":::
-      [**Wiki**](safe-concepts.md#wiki). Use the project wiki to share broadly within the organization information related to strategy, solutions, and how teams will collaborate to produce portfolio and program deliverables.    
+      [**Wiki**](safe-concepts.md#wiki). Use the project wiki to share broadly within the organization information related to strategy, solutions, and how teams collaborate to produce portfolio and program deliverables.    
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -344,7 +344,7 @@ Each of the following articles within this suite of tutorials provide details on
 > * [View SAFe® progress, roadmaps, and metrics](safe-review-roadmaps-progress.md)  
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [How SAFe&reg; concepts map to Azure Boards artifacts](safe-concepts.md)

@@ -34,7 +34,7 @@ Use this article to learn how to complete these tasks:
 - To add or edit a Delivery Plan, you must be a member of the Contributors group for the project where you add the plan. 
 - To add team backlogs to a plan, you must have view permissions to those projects. 
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. 
-- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan. Or, you must be a member of the **Project Administrators**, **Project Collection Administrators** group, or be granted explicit permission through the plan's Security dialog. For details, see [Manage Delivery Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans).  
+- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan. Or, you must be a member of the **Project Administrators**, **Project Collection Administrators** group, or be granted explicit permission through the plan's Security dialog. For more information, see [Manage Delivery Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans).  
  
 ## Before you define a plan
 
@@ -93,7 +93,7 @@ When defining a plan, note the following information:
 - You can choose one or more teams from any project defined in the organization or collection. There can be up to a maximum of 15 teams   
 - You can choose one or more [active backlogs for a team](../../organizations/settings/select-backlog-navigation-levels.md) 
 	> [!NOTE] 
-	> If you aren't able to select a backlog level, check the Team Backlog settings to ensure the backlog level is enabled for the team. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
+	> If you aren't able to select a backlog level, check the Team Backlog settings to ensure the backlog level is enabled for the team. For more information, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 - You can reorder the team backlogs by dragging and dropping them into the sequence you want 
 -  To filter for specific work items, specify the field criteria. For example, to exclude bugs from the view, add the following criteria: `Work Item Type <> Bug`. 
 
@@ -107,7 +107,7 @@ Once you've defined a plan, you can modify or further customize it.
 
 	:::image type="content" source="media/plans/settings.png" border="true" alt-text="Screenshot of Delivery Plans title and settings button.":::  
 
-2. Then, choose the page you want to edit based on the [customizations you want to make](#customization-options). Here, we add the **Tags** to the **Field criteria**. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
+2. Then, choose the page you want to edit based on the [customizations you want to make](#customization-options). Here, we add the **Tags** to the **Field criteria**. Only work items that contain the *Build 2021* tag appear in the Delivery Plan. 
 
 	:::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Dialog for Plan settings, Field criteria page.":::   
 
@@ -134,7 +134,7 @@ Show those fields that are useful for your review purposes or if they contain ke
 
 1. To remove a field, choose the :::image type="icon" source="../media/icons/trash-can.png" border="false"::: delete icon next to the field.
 
-1. When done with your changes, choose **Save**.
+1. When you're done with your changes, choose **Save**.
 
 <a id="markers" />
 
@@ -146,13 +146,13 @@ Show those fields that are useful for your review purposes or if they contain ke
 
 1.	To add more markers, choose **+ Add marker**. You can add up to 30 markers. The **+ Add marker** button becomes disabled after 30 markers have been added.  
 
-2.	Choose **Save** when done. 
+2.	Choose **Save** when you're done. 
 
 	Markers appear on the plan as shown. 
 
 	:::image type="content" source="media/plans/markers.png" border="true" alt-text="Screenshot of Plans, Markers appear on calendar.":::   
 
-1. When done with your changes, choose **Save**.
+1. When you're done with your changes, choose **Save**.
 
 
 <a id="styles" />
@@ -199,7 +199,7 @@ Before setting tag colors, first [add tags to backlog items](../queries/add-tags
    
 2. To enable or disable a tag color, select the **Enabled** checkbox.  
 
-3. When done with your changes, choose **Save**.
+3. When you're done with your changes, choose **Save**.
 
    > [!TIP]
    > If tags don't display on the cards, choose **Fields** and make sure that you've checked **Show Tags**. 

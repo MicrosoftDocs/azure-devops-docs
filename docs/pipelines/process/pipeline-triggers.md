@@ -156,7 +156,7 @@ A typical scenario in which the pipeline completion trigger doesn't fire is when
 
 ## Combining trigger types
 
-When you specify both CI triggers and pipeline triggers in your pipeline, you can expect new runs to be started every time a push is made that matches the filters the CI trigger, and a run of the source pipeline is completed that matches the filters of the pipeline completion trigger. 
+When you specify both CI triggers and pipeline triggers in your pipeline, you can expect new runs to be started every time a push is made that matches the filters of the CI trigger, and a run of the source pipeline is completed that matches the filters of the pipeline completion trigger. 
 
 For example, consider two pipelines named `A` and `B` that are in the same repository, both have CI triggers, and `B` has a pipeline completion trigger configured for the completion of pipeline `A`. If you make a push to the repository:
 

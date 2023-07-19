@@ -5,8 +5,8 @@ description: Follow steps to grant or restrict access to a Team Foundation Versi
 ms.assetid:  
 ms.service: azure-devops-repos
 ms.topic: quickstart
-ms.author: chcomley
-author: chcomley
+ms.author: vijayma
+author: vijayma
 monikerRange: '<= azure-devops'
 ms.date: 11/30/2022
 ms.subservice: azure-devops-repos-git

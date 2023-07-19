@@ -286,7 +286,7 @@ For details on using each of these controls, see [Configure your backlog view](c
 
 
 > [!NOTE]   
-> Even if you have show parents turned on, the **Create Query** and **Email** ![mail icon](../media/icons/mail_icon.png) controls will only list items at the currently selected level. 
+> Even if you have show parents turned on, the **Create Query** and **Email** ![mail icon](../media/icons/mail_icon.png) controls only list items at the currently selected level. 
  
 
 ## Related articles
