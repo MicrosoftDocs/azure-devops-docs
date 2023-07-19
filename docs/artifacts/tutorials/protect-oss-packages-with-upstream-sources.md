@@ -49,9 +49,9 @@ In this tutorial, you will:
 
     :::image type="content" source="../media/new-feed-button.png" alt-text="Screenshot showing the create feed button - TFS.":::
 
-1. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
+1. Give your feed a **Name** and a **Description**, and set up **who can read** and **who can contribute**. Make sure you check the **Include external packages** checkbox, and then select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window - TFS.":::
+    :::image type="content" source="../media/new-feed-dialog-tfs.png" alt-text="A screenshot showing how to create a new feed window in TFS.":::
 
 ::: moniker-end
 
