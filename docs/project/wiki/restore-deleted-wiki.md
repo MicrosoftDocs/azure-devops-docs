@@ -1,7 +1,7 @@
 ---
 title: Restore a deleted wiki
 titleSuffix: Azure DevOps
-description: Restore a provisioned or published wiki that was deleted by mistake in Azure DevOps.
+description: Restore or revert a provisioned or published wiki that was accidentally deleted from Azure DevOps.
 ms.subservice: azure-devops-wiki
 ms.custom:
 ms.topic: how-to
@@ -16,7 +16,11 @@ ms.date: 07/18/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-If someone deleted a provisioned or published wiki by mistake, you can restore it.
+If someone deleted a provisioned (project) or published (code) wiki by mistake, you can restore it.
+We don't provide options via the UI to delete a wiki, but a user could have used the REST API to delete the repository associated with the wiki.
+
+> [!NOTE]
+> Deleted repositories remain in the recycle bin for 30 days, after which they are permanently deleted and can't be restored.
 
 <a id="prereq">  </a>
 
@@ -43,26 +47,63 @@ If someone deleted a provisioned or published wiki by mistake, you can restore i
 
 #### [Browser](#tab/browser) 
 
+1. Go to your wiki URL in Azure Devops. For example, `https://dev.azure.com/<OrgName>/<ProjectName>/_git/classicreleaseoption.wiki`. Wikis are managed as repos in Azure DevOps.
 
+2. Look for the main branch history.
+
+3. Find and select the commit, which deleted the files.
+
+4. Select the :::image type="icon" source="../../report/dashboards/media/icons/actions-icon.png" border="false"::: actions icon, and then **Revert**.
+
+5. Create a pull request and complete it.
+
+If you prefer command line options, you can clone the wiki to your local machine and search for the commit, which has deleted the page. Then, check out the commit and copy the page to make a new commit.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 ::: moniker range="azure-devops"
 
-https://learn.microsoft.com/en-us/rest/api/azure/devops/git/repositories/list?view=azure-devops-rest-7.1&tabs=HTTP
+When a wiki gets deleted, it doesn't appear in the wiki link in Azure DevOps UI, but you can restore it using REST API.
 
-(You need to use includeHidden=true parameter to see the WIKI repositories)
+```CLI 
+az devops wiki restore [--name]
+                      [--org]
+                      [--project]
+                      [--repositoryId]
+                      [--api-version]
+``` 
 
-GET https://dev.azure.com/dmittal/classicreleaseoption/_apis/git/repositories?includeHidden=true&api-version=7.1-preview.1
+#### Parameters 
 
-        {
+- **name**: Name of the wiki.
+- **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **repositoryId**: Name or ID of the repository to publish the wiki from.
+- **api-version**: Repository branch name to publish the code wiki from.
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]
+::: moniker range="azure-devops"
+
+#### Example 
+
+### List git repositories
+
+The following command [lists git repositories](/rest/api/azure/devops/git/repositories/list?view=azure-devops-rest-7.1&tabs=HTTP&preserve-view=true). Optionally, use the `includeHidden=true` parameter to see the hidden wiki repositories.
+
+```
+GET https://dev.azure.com/{organization}/{project}/_apis/git/repositories?api-version=7.1-preview.1
+```
+
+```azurecli 
+    {
             "id": "978e3886-64a8-4b6f-96da-6afc2936b04b",
             "name": "classicreleaseoption.wiki",
-            "url": https://dev.azure.com/dmittal/052a83ac-af70-4194-b53f-df073e5f1786/_apis/git/repositories/978e3886-64a8-4b6f-96da-6afc2936b04b,
+            "url": https://dev.azure.com/fabrikam/052a83ac-af70-4194-b53f-df073e5f1786/_apis/git/repositories/978e3886-64a8-4b6f-96da-6afc2936b04b,
             "project": {
                 "id": "052a83ac-af70-4194-b53f-df073e5f1786",
                 "name": "classicreleaseoption",
-                "url": https://dev.azure.com/dmittal/_apis/projects/052a83ac-af70-4194-b53f-df073e5f1786,
+                "url": https://dev.azure.com/fabrikam/_apis/projects/052a83ac-af70-4194-b53f-df073e5f1786,
                 "state": "wellFormed",
                 "revision": 421800049,
                 "visibility": "organization",
@@ -70,27 +111,21 @@ GET https://dev.azure.com/dmittal/classicreleaseoption/_apis/git/repositories?in
             },
             "defaultBranch": "refs/heads/wikiMaster",
             "size": 193,
-            "remoteUrl": https://dmittal@dev.azure.com/dmittal/classicreleaseoption/_git/classicreleaseoption.wiki,
-            "sshUrl": git@ssh.dev.azure.com:v3/dmittal/classicreleaseoption/classicreleaseoption.wiki,
-            "webUrl": https://dev.azure.com/dmittal/classicreleaseoption/_git/classicreleaseoption.wiki,
+            "remoteUrl": https://fabrikam@dev.azure.com/fabrikam/classicreleaseoption/_git/classicreleaseoption.wiki,
+            "sshUrl": git@ssh.dev.azure.com:v3/fabrikam/classicreleaseoption/classicreleaseoption.wiki,
+            "webUrl": https://dev.azure.com/fabrikam/classicreleaseoption/_git/classicreleaseoption.wiki,
             "isDisabled": false,
             "isInMaintenance": false
-        }
+    }
+```
 
-2. We do not provide any options in the UI to delete the WIKI, however, there are chances someone might have use REST API to delete the repository associated with WIKI
+### Search recycle bin for repositories
 
-Delete a repository:
-DELETE https://dev.azure.com/dmittal/classicreleaseoption/_apis/git/repositories/052a83ac-af70-4194-b53f-df073e5f1786?api-version=7.1-preview.1
+The following command [searches for repositories that are in the recycle bin](/rest/api/azure/devops/git/repositories/get-recycle-bin-repositories?view=azure-devops-rest-7.1&preserve-view=true).
 
-3. Once the WIKI is deleted, it wont show up in the WIKI link in Azure DevOps UI, however, it can be restored using REST API.
+Search from the wiki repositories from the list and note the ID. Generally, wiki repositories get named `.wiki`.
 
-Search for the respositores which are in recycle bin (please note deleted repositories are in recycle bin for 30 days after which they are permanantly deleted and cannot be restored)
-https://learn.microsoft.com/en-us/rest/api/azure/devops/git/repositories/get-recycle-bin-repositories?view=azure-devops-rest-7.1
-
-GET https://dev.azure.com/dmittal/classicreleaseoption/_apis/git/recycleBin/repositories?api-version=7.1-preview.1
-
-(Search for the wiki repositories from the list and note down the id, generally wiki repositories are named as .wiki if not renamed earlier)
-
+```
 {
     "value": [
         {
@@ -99,23 +134,23 @@ GET https://dev.azure.com/dmittal/classicreleaseoption/_apis/git/recycleBin/repo
             "project": {
                 "id": "052a83ac-af70-4194-b53f-df073e5f1786",
                 "name": "classicreleaseoption",
-                "url": https://dev.azure.com/dmittal/_apis/projects/052a83ac-af70-4194-b53f-df073e5f1786,
+                "url": https://dev.azure.com/fabrikam/_apis/projects/052a83ac-af70-4194-b53f-df073e5f1786,
                 "state": "wellFormed",
                 "revision": 421800049,
                 "visibility": "organization",
                 "lastUpdateTime": "2023-07-18T12:25:29.3Z"
             },
             "deletedBy": {
-                "displayName": "Deepak Mittal",
+                "displayName": "Christie Church",
                 "url": https://spsprodeus23.vssps.visualstudio.com/A1df9d653-bdfb-459b-a0c7-725052b2f944/_apis/Identities/0a0a4b55-9671-440d-87bf-26644f200d8a,
                 "_links": {
                     "avatar": {
-                        "href": https://dev.azure.com/dmittal/_apis/GraphProfile/MemberAvatars/aad.MDY4MDk2OGQtYWU5OS03Y2M5LTgxZTEtNTBjMDk4ZTllZTlh
+                        "href": https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/aad.MDY4MDk2OGQtYWU5OS03Y2M5LTgxZTEtNTBjMDk4ZTllZTlh
                     }
                 },
                 "id": "0a0a4b55-9671-440d-87bf-26644f200d8a",
-                "uniqueName": dmittal@microsoft.com,
-                "imageUrl": https://dev.azure.com/dmittal/_api/_common/identityImage?id=0a0a4b55-9671-440d-87bf-26644f200d8a,
+                "uniqueName": fabrikam@microsoft.com,
+                "imageUrl": https://dev.azure.com/fabrikam/_api/_common/identityImage?id=0a0a4b55-9671-440d-87bf-26644f200d8a,
                 "descriptor": "aad.MDY4MDk2OGQtYWU5OS03Y2M5LTgxZTEtNTBjMDk4ZTllZTlh"
             },
             "createdDate": "2023-07-18T12:23:55.64Z",
@@ -124,57 +159,19 @@ GET https://dev.azure.com/dmittal/classicreleaseoption/_apis/git/recycleBin/repo
     ],
     "count": 1
 }
-
-4. Restore WIKI from repository recycle bin
-
-https://learn.microsoft.com/en-us/rest/api/azure/devops/git/repositories/restore-repository-from-recycle-bin?view=azure-devops-rest-7.1
-
-PATCH https://dev.azure.com/dmittal/classicreleaseoption/_apis/git/recycleBin/repositories/978e3886-64a8-4b6f-96da-6afc2936b04b?api-version=7.1-preview.1
-
-Request body:
-    {
-    "deleted": false
-    }
-
-5. Woohoo!!, Wiki is restored.
-
-
-
-
-
-```azurecli 
-az devops wiki restore [--mapped-path]
-                      [--name]
-                      [--org]
-                      [--project]
-                      [--repository]
-                      [--type {codewiki, projectwiki}]
-                      [--version]
-``` 
-
-#### Parameters 
-
-- **mapped-path**: (Required for the **codewiki** type). Mapped path of the new wiki. For example, you can specify '/' to publish from the root of the repository. 
-- **name**: (Required for the **codewiki** type). Name of the new wiki. If you don't specify a name for type **projectwiki**, then the new wiki will be named *TeamProjectName.wiki*.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **repository**: (Required for the **codewiki** type). Name or ID of the repository to publish the wiki from.
-- **type**: Type of wiki to create. The accepted values are **projectwiki** (default) and **codewiki**.
-- **version**: (Required for the **codewiki** type). Repository branch name to publish the code wiki from.
-
-::: moniker-end
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]
-::: moniker range="azure-devops"
-
-#### Example 
-
-The following command restores a wiki named "Fabrikam Fiber" and shows the output in table format.
-
-```azurecli 
-....
-
 ```
 
+### Restore a wiki
+
+The following command [restores a wiki](/rest/api/azure/devops/git/repositories/restore-repository-from-recycle-bin?view=azure-devops-rest-7.1&preserve-view=true) from the repository recycle bin.
+
+```
+{
+   "deleted": false
+}
+```
+
+   The wiki is restored.
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
