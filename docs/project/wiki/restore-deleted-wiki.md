@@ -47,25 +47,27 @@ We don't provide options via the UI to delete a wiki, but a user could have used
 
 #### [Browser](#tab/browser) 
 
-1. Go to your wiki URL in Azure Devops. For example, `https://dev.azure.com/<OrgName>/<ProjectName>/_git/classicreleaseoption.wiki`. Wikis are managed as repos in Azure DevOps.
+1. In your browser, go to your Azure DevOps wiki. For example, `https://dev.azure.com/<OrgName>/<ProjectName>/_git/classicreleaseoption.wiki`. 
+ 
+   Wikis get managed as repositories in Azure DevOps.
 
-2. Look for the main branch history.
+3. Search the main branch history.
 
-3. Find and select the commit, which deleted the files.
+4. Find and select the commit, which deleted the files.
 
-4. Select the :::image type="icon" source="../../report/dashboards/media/icons/actions-icon.png" border="false"::: actions icon, and then **Revert**.
+5. Select the :::image type="icon" source="../../report/dashboards/media/icons/actions-icon.png" border="false"::: actions icon, and then **Revert**.
 
-5. Create a pull request and complete it.
+6. Create a pull request and complete it.
 
-If you prefer command line options, you can clone the wiki to your local machine and search for the commit, which has deleted the page. Then, check out the commit and copy the page to make a new commit.
+If you prefer command line options, you can clone the wiki to your local machine and search for the commit, which deleted the file. Then, check out the commit and copy the file to make a new commit.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 ::: moniker range="azure-devops"
 
-When a wiki gets deleted, it doesn't appear in the wiki link in Azure DevOps UI, but you can restore it using REST API.
+When a wiki gets deleted, it doesn't appear in the wiki link in Azure DevOps UI, but you can restore it using the Azure CLI.
 
-```CLI 
+```Azure CLI 
 az devops wiki restore [--name]
                       [--org]
                       [--project]
@@ -91,11 +93,11 @@ az devops wiki restore [--name]
 
 The following command [lists git repositories](/rest/api/azure/devops/git/repositories/list?view=azure-devops-rest-7.1&tabs=HTTP&preserve-view=true). Optionally, use the `includeHidden=true` parameter to see the hidden wiki repositories.
 
-```
+```Azure CLI
 GET https://dev.azure.com/{organization}/{project}/_apis/git/repositories?api-version=7.1-preview.1
 ```
 
-```azurecli 
+```Azure CLI
     {
             "id": "978e3886-64a8-4b6f-96da-6afc2936b04b",
             "name": "classicreleaseoption.wiki",
@@ -125,7 +127,7 @@ The following command [searches for repositories that are in the recycle bin](/r
 
 Search from the wiki repositories from the list and note the ID. Generally, wiki repositories get named `.wiki`.
 
-```
+```Azure CLI
 {
     "value": [
         {
@@ -165,7 +167,7 @@ Search from the wiki repositories from the list and note the ID. Generally, wiki
 
 The following command [restores a wiki](/rest/api/azure/devops/git/repositories/restore-repository-from-recycle-bin?view=azure-devops-rest-7.1&preserve-view=true) from the repository recycle bin.
 
-```
+```Azure CLI
 {
    "deleted": false
 }
