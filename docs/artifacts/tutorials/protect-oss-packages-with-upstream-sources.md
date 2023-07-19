@@ -249,8 +249,6 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 
 Now that you enabled upstream sources and set up your configuration file, we can run the package restore command to query the upstream source and retrieve the upstream packages.
 
-We recommend clearing your local cache first before running the *nuget restore*. Azure Artifacts will have a saved copy of any packages you installed from upstream.
-
 # [npm](#tab/npmrestore)
 
 Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
@@ -266,19 +264,19 @@ Your feed now should contain any packages you saved from the upstream source.
 
 # [NuGet](#tab/nugetrestore)
 
-- **Clear your local cache**:
+1. Clear your local cache:
 
     ```Command
     nuget locals -clear all
     ```
 
-- **Restore packages**:
+1. Restore your NuGet packages:
 
     ```Command
     nuget.exe restore
     ```
 
-Your feed now should contain any packages you saved from the upstream source.
+Your feed now should have a saved copy of any packages you installed from upstream.
 
 - - -
 
