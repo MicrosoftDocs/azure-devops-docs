@@ -260,7 +260,7 @@ npm install --force
 > [!NOTE]
 > The `--force` argument will force pull remotes even if a local copy exists. 
 
-Your feed now should contain any packages you saved from the upstream source.
+Your feed now should have a saved copy of any packages you installed from upstream.
 
 # [NuGet](#tab/nugetrestore)
 
@@ -275,6 +275,36 @@ Your feed now should contain any packages you saved from the upstream source.
     ```Command
     nuget.exe restore
     ```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Pip](#tab/piprestore)
+
+Run this command in your project directory:
+
+```Command
+pip install
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Maven](#tab/mavenrestore)
+
+Run this command in your project directory:
+
+```Command
+mvn install
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Gradle](#tab/gradlerestore)
+
+Run this command in your project directory:
+
+```Command
+gradle build
+```
 
 Your feed now should have a saved copy of any packages you installed from upstream.
 
