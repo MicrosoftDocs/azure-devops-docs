@@ -141,13 +141,13 @@ When your project collection uses the Inheritance process model to customize wor
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Collection Settings, Process, Fields page.](media/fields/list-fields.png)  
 
-If the On-premises XML process model is used, you can look up the data type through the [Work item field index](guidance/work-item-field.md). Or, you can open the Work Item Field Explorer to review the fields defined and their attribute assignments, or use the **witadmin listfields** command to list the field attributes. For details, see [Work Item Field Explorer](#wi-explorer) and [List field attributes](#list-attributes) later in this article.
+If the On-premises XML process model is used, you can look up the data type through the [Work item field index](guidance/work-item-field.md). Or, you can open the Work Item Field Explorer to review the fields defined and their attribute assignments, or use the **witadmin listfields** command to list the field attributes. For more information, see [Work Item Field Explorer](#wi-explorer) and [List field attributes](#list-attributes) later in this article.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018" 
 
-You can look up the data type through the [Work item field index](guidance/work-item-field.md). Or, you can open the Work Item Field Explorer to review the fields defined and their attribute assignments, or use the **witadmin listfields** command to list the field attributes.  For details, see [Work Item Field Explorer](#wi-explorer) and [List field attributes](#list-attributes) later in this article.
+You can look up the data type through the [Work item field index](guidance/work-item-field.md). Or, you can open the Work Item Field Explorer to review the fields defined and their attribute assignments, or use the **witadmin listfields** command to list the field attributes.  For more information, see [Work Item Field Explorer](#wi-explorer) and [List field attributes](#list-attributes) later in this article.
 
 ::: moniker-end
 
@@ -615,7 +615,7 @@ Attributes assigned to a field depend on the platform and version you use. For e
 
 > [!NOTE]  
 > 1. For on-premises deployments, you can enable indexing for a field to improve query response times when filtering on the field. For more information, see [Indexed fields](#index-fields) later in this article. 
-> 2. The **isPicklist** and **isPicklistSuggested** attributes are only assigned to custom fields defined for an inherited process. The Inherited process model is supported for Azure DevOps Server 2019 and later versions. To learn more, see [Inherited process model](../../organizations/settings/work/inheritance-process-model.md).
+> 2. The **isPicklist** and **isPicklistSuggested** attributes are only assigned to custom fields defined for an inherited process. The Inherited process model is supported for Azure DevOps Server 2019 and later versions. For more information, see [Inherited process model](../../organizations/settings/work/inheritance-process-model.md).
 > 3. All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services.   
 
 
@@ -625,7 +625,7 @@ Attributes assigned to a field depend on the platform and version you use. For e
 
 ## Reportable attributes
 
-All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. For details, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
+All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. For more information, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
 
 For a description of each reportable attribute, see [Add or modify work item fields to support reporting]((/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting). 
 
@@ -817,13 +817,13 @@ You can change how work tracking fields map to fields in Project, and you can ch
 
 ::: moniker range="azure-devops"  
 
-To add fields to a process, you add them to one or more work item types. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
+To add fields to a process, you add them to one or more work item types. For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
 ::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see:
+You can add or modify the fields contained within a WIT or add a custom WIT. For more information, see:
 - For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).  
 - For project collections that use the On-premises XML process model: [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 

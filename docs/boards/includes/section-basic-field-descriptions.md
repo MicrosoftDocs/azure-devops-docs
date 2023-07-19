@@ -32,7 +32,7 @@ ms.date: 09/21/2020
       [Assigned To](../queries/query-by-workflow-changes.md)
    :::column-end:::
    :::column span="3":::
-      Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu lists only team members or contributors to the project.
+      Assign the work item to the team member responsible for performing the work. Depending on the context you're working in, the drop-down menu lists only team members or contributors to the project.
       > [!NOTE]  
       > You can only assign work to a single user. If you need to assign work to more than one user, add a work item for each user and distinguish the work to be done by title and description. The Assigned To field only accepts user accounts that have been [added to a project or team](../../organizations/security/add-users-team-project.md). 
    :::column-end:::

@@ -1,8 +1,8 @@
 ---
 ms.service: azure-devops-repos
 ms.manager: mijacobs
-ms.author: chcomley
-author: chcomley
+ms.author: vijayma
+author: vijayma
 ms.topic: include
 ms.date: 10/27/2022
 ms.subservice: azure-devops-repos-tfvc

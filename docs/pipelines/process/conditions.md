@@ -91,7 +91,7 @@ you can specify the conditions under which the task or job will run.
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
 
 Conditions are written as expressions in YAML pipelines.
-The agent evaluates the expression beginning with the innermost function and works out its way.
+The agent evaluates the expression beginning with the innermost function and works its way out.
 The final result is a boolean value that determines if the task, job, or stage should run or not.
 See the [expressions](expressions.md) article for a full guide to the syntax.
 
@@ -290,7 +290,7 @@ When you declare a parameter in the same pipeline that you have a condition, par
 
 The `condition` in the pipeline combines two functions: `succeeded()` and `eq('${{ parameters.doThing }}', true)`. The `succeeded()` function checks if the previous step succeeded. The `succeeded()` function returns true because there was no previous step. 
 
-The `eq('${{ parameters.doThing }}', true)` function checks whether the doThing parameter is equal to `true`. Since the default value for doThing is true, the condition will return true by default unless a different values gets set in the pipeline. 
+The `eq('${{ parameters.doThing }}', true)` function checks whether the doThing parameter is equal to `true`. Since the default value for doThing is true, the condition will return true by default unless a different value gets set in the pipeline. 
 
 For more template parameter examples, see [Template types & usage](templates.md). 
 
@@ -307,7 +307,7 @@ steps:
 ```
 
 
-When you pass a parameter to a template, you need to set the parameter's value in your template or use [templateContext to pass properties to templates](templates.md#use-templatecontext-to-pass-properties-to-templates). 
+When you pass a parameter to a template, you need to set the parameter's value in your template or [use templateContext to pass properties to templates](template-parameters.md#use-templatecontext-to-pass-properties-to-templates). 
 
 ```yaml
 # parameters.yml
@@ -320,7 +320,7 @@ jobs:
   - job: B
     steps:
     - script: echo I did a thing
-    condition: ${{ if eq(parameters.doThing, true) }}
+    condition: ${{ eq(parameters.doThing, true) }}
 ```
 
 ```yaml

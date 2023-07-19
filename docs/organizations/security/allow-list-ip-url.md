@@ -293,7 +293,7 @@ If you use Microsoft-hosted agent to run your jobs and you need the information 
 For more information about hosted Windows, Linux and macOS agents, see [Microsoft-hosted agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges).
 
 ### Azure Pipelines Self-hosted agents
-If you're running a firewall and your code is in Azure Repos, see [Self-hosted Linux agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with), [Self-hosted macOS agents FAQs](../../pipelines/agents/osx-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) or [Self-hosted Windows agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
+If you're running a firewall and your code is in Azure Repos, see [Self-hosted Linux agents FAQs](../../pipelines/agents/linux-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with), [Self-hosted macOS agents FAQs](../../pipelines/agents/osx-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) or [Self-hosted Windows agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
 
 
 ## Azure DevOps import service

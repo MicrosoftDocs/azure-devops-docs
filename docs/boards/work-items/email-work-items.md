@@ -136,7 +136,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 #### [Web portal](#tab/browser/)
 
-**From the web portal**, open the work item, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
+**From the web portal**, open the work item, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list appears in a formatted table. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of work item form, context menu, Email work items option.](media/email/email-work-item.png)   
@@ -273,7 +273,7 @@ Some teams want to work with physical cards when planning or updating their phys
 
 ## Export list as CSV 
 
-From any query, you can export a list of work items as a comma-delimited list. Open the query, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose <strong>Export to CSV</strong>. To learn more, see [Bulk import or update work items using CSV files](../queries/import-work-items-from-csv.md).
+From any query, you can export a list of work items as a comma-delimited list. Open the query, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose <strong>Export to CSV</strong>. For more information, see [Bulk import or update work items using CSV files](../queries/import-work-items-from-csv.md).
 
 ::: moniker-end
 
@@ -295,7 +295,7 @@ From any query, you can export a list of work items as a comma-delimited list. O
 
 ## Marketplace extensions  
 
-You may find other ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
+You may find other ways to share information by exporting work items to other applications such as Microsoft Word. For more information, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
 
 
 

@@ -72,14 +72,20 @@
           displayName: release trigger, CD trigger, stage trigger, environment trigger, deploy PR, scheduled trigger, schedule
     - name: Tasks & templates
       items:
+        - name: Templates, parameters, & expressions
+          items:
+          - name: Templates
+            href: process/templates.md
+            displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
+          - name: Template parameters
+            href: process/template-parameters.md
+          - name: Template expressions
+            href: process/template-expressions.md
         - name: Task types & usage
           href: process/tasks.md
           displayName: custom tasks, task versions, task control options, conditions, task tool installers, build tool installers
         - name: Task groups (classic)
           href: library/task-groups.md
-        - name: Template types & usage
-          href: process/templates.md
-          displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
         - name: Add a custom task extension
           href: ../extend/develop/add-build-task.md?toc=/azure/devops/pipelines/toc.json
         - name: Upload tasks to project collection
@@ -197,12 +203,16 @@
     - name: .NET Framework
       href: apps/aspnet/build-aspnet-4.md
       displayName: ASP, ASPNET, web
-    - name: JavaScript quickstart
-      href: ecosystems/javascript.md
-      displayName: node, node.js, nodetool, npm, yarn, react, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
-    - name: Customize JavaScript
-      href: ecosystems/customize-javascript.md
-      displayName: configure javasript, node, configure node.js, nodetool, npm, yarn, react, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
+    - name: JavaScript
+      items:
+      - name: JavaScript quickstart
+        href: ecosystems/javascript.md
+        displayName: node, node.js, nodetool, npm, yarn, react, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
+      - name: Customize JavaScript
+        href: ecosystems/customize-javascript.md
+        displayName: configure javascript, node, configure node.js, nodetool, npm, yarn, react, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
+      - name: Node.js tutorial
+        href: ecosystems/nodejs-tutorial.md
     - name: Python quickstart
       href: ecosystems/python.md
       displayName: flake, python

@@ -123,7 +123,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 
 
 > [!TIP]
-> When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/team-velocity.md) of a seasoned team will be higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.
+> When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/team-velocity.md) of a seasoned team is higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.
 
 To learn more about this configuration, see [Portfolio management](portfolio-management.md), [Add teams](../../organizations/settings/add-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md).
 
@@ -141,9 +141,9 @@ For example, here we've added three query-based charts, one for each team, to a 
 <img src="media/visibility-bug-debt-email-team.png" alt="Bug debt, Email team" />  <img src="media/visibility-bug-debt-voice-team.png" alt="Bug debt, Voice team" />  <img src="media/visibility-bug-debt-web-team.png" alt="Bug debt, Web team" />
 
 
-When defining multi-team dashboards, consider the following questions:
-- What are you wanting to learn and how will it drive your organization's actions
-- What time frame is of interest.
+When you define multi-team dashboards, consider the following questions:
+- What are you wanting to learn and how will it drive your organization's actions?
+- What time frame is of interest?
 
 Review [Agile culture](agile-culture.md) and [Practices that scale](practices-that-scale.md) for guidance on team autonomy and organizational alignment.
 
@@ -187,11 +187,11 @@ While the management teams you configure can use the Kanban board to monitor fea
 Only when the work item state changes does the card column reflect the same on all boards.
 
 > [!IMPORTANT]   
-> Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../../reference/customize-work.md). 
+> Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For more information, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
 ## Related articles
 
-As you can see, there are many ways you can monitor progress and trends across several teams. The methods you choose will depend on your focus and organizational goals.
+As you can see, there are many ways you can monitor progress and trends across several teams. The methods you choose depend on your focus and organizational goals.
 
 Here are some other articles that address working with multiple teams:
 

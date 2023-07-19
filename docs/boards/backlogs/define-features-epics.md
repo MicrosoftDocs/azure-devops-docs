@@ -40,7 +40,7 @@ Use this article to learn how to perform these tasks:
 > * Add features and epics  
 > * Add child items   
 
-With portfolio backlogs, you can quickly add and group items into a hierarchy. You can also drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on backlogs and the types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).    
+With portfolio backlogs, you can quickly add and group items into a hierarchy. You can also drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).    
 
 [!INCLUDE [temp](../includes/work-item-types.md)] 
 
@@ -55,7 +55,7 @@ Typically, a feature is a shippable software component. An epic corresponds to a
 **Features**
 - View option enhancements 
 - Shopping cart support on mobile devices
-- Text alert support for login and account changes
+- Text alert support for sign in and account changes
 - Web portal user interface improvements  
 
 **Epics**
@@ -94,7 +94,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing how to Open Column Options from More commands menu.](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -117,7 +117,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of Choose product backlog level, Backlog items, Stories, or Requirements.](media/features-epics/choose-features-epics-agile.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. For more information, see [Change column options](../backlogs/set-column-options.md). 
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot showing how to Open Column Options from More commands menu, Azure DevOps Server 2019.](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -190,7 +190,7 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 ## Add details to a feature or epic 
 
-Open each item by double-clicking, or press Enter to open a selected item. Then, add the info you want to track. Enter as much detail as possible. The team will need to understand the scope, estimate the work, develop tests, and ensure that the end product meets acceptance criteria.
+Open each item by double-clicking, or press Enter to open a selected item. Then, add the info you want to track. Enter as much detail as possible. The team must understand the scope, estimate the work, develop tests, and ensure that the end product meets acceptance criteria.
 
 [!INCLUDE [temp](../includes/image-differences-with-wits.md)]  
 
@@ -258,7 +258,7 @@ With your features defined, add child items to them. You can add child items fro
 And you can add features to epics and backlog items to features. 
 
 > [!TIP]  
-> You can also add child user stories (Agile), or product backlog items (Scrum) or requirements (CMMI) from the Kanban board for Features. And, you can add child features from the Epic board. For details, see [Kanban board features and epics](../boards/kanban-epics-features-stories.md). Also, you can quickly parent or reparent children from a backlog using the mapping pane as described in [Organize your backlog, map child work items to parents](organize-backlog.md).
+> You can also add child user stories (Agile), or product backlog items (Scrum) or requirements (CMMI) from the Kanban board for Features. And, you can add child features from the Epic board. For more information, see [Kanban board features and epics](../boards/kanban-epics-features-stories.md). Also, you can quickly parent or reparent children from a backlog using the mapping pane as described in [Organize your backlog, map child work items to parents](organize-backlog.md).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -308,7 +308,7 @@ If you want bugs to show up on your backlog and you're not seeing them, [enable 
 [!INCLUDE [temp](../includes/display-rollup-section.md)]
 
  
-## Try this next  
+## Next steps  
 
 Portfolio backlogs are a great way to organize your project plan and provide visibility of project plans across enterprise teams. With portfolio backlogs, management teams gain insight into project status across their development teams. 
 
