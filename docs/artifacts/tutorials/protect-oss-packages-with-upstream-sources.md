@@ -141,27 +141,6 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     index-url=https://pkgs.dev.azure.com/ORGANIZATION-NAME/_packaging/FEED-NAME/pypi/simple/
     ```
 
-#### [Twine](#tab/twine/)
-
-1. Select **Artifacts**, and then select your feed from the dropdown list.
-
-1. Select **Connect to feed**, and then select **twine** under the Python section.
-
-    :::image type="content" source="../media/project-setup-twine.png" alt-text="A screenshot showing how to connect to a feed with twine projects.":::
-
-1. Add a .pypirc file to your home directory and paste the following snippet:
-
-    ```command
-    [distutils]
-    Index-servers = FEED-NAME
-    
-    [FEED-NAME]
-    Repository = https://pkgs.dev.azure.com/ORGANIZATION-NAME/_packaging/FEED-NAME/pypi/upload/
-    ```
-
-> [!TIP]
-> If you already have a .pypirc file, remove the [pypi] section if your file contains credentials.
-
 #### [Maven](#tab/maven/)
 
 1. Select **Artifacts**, and then select your feed from the dropdown list.
