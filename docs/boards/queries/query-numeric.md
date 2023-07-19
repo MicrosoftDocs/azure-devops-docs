@@ -139,7 +139,7 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 
 ## Undefined field value queries
 
-You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters will list all work items of type User Stories whose Story Points field is blank.  
+You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters list all work items of type User Stories whose Story Points field is blank.  
 
 > [!div class="mx-imgBorder"]  
 > ![Filter based on blank entries](media/numeric/field-value-blank.png)
@@ -490,6 +490,6 @@ The default assignments of work item types to each category are listed below for
 
 However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
-You can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
+You can add custom work item types to a backlog. For more information, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]

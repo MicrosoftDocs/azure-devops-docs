@@ -22,6 +22,9 @@
   - name: Add privacy policy URL
     displayName: GDPR, organization, public project, external guest, data, protection
     href: add-privacy-policy-url.md
+  - name: Change organization image
+    displayName: image, icon, organization, update, change, profile
+    href: change-organization-image.md
   - name: Change organization owner
     displayName: update, reassign, Project Collection Administrator, owner
     href: change-organization-ownership.md

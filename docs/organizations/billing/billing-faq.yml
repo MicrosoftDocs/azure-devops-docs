@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 05/23/2023
+  ms.date: 07/11/2023
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -45,7 +45,7 @@ sections:
           For more granular control over the access level that's assigned to new users, consider setting up group rules. [Group rules](../accounts/assign-access-levels-by-group-membership.md) take precedence over default access level. The default access level only applies when a user has zero group rules applied. Group rules assign access to users who aren't directly assigned an access level. To have these group rules apply to your existing users, you need to [remove direct assignments](../accounts/assign-access-levels-by-group-membership.md#remove-direct-assignments).
           
       - question: |
-          Q: Will I get charged for users even if they never sign in?
+          Q: Do I get charged for users even if they never sign in?
         answer: |
           A: If you add a user with Basic or Basic + Test Plans access level, you pay at the time of assignment. When you create a [group rule](../accounts/assign-access-levels-by-group-membership.md), applied to users without direct assignments, you don't start paying until they sign in and receive an access level.
           
@@ -173,7 +173,7 @@ sections:
 
           ## Multi-organization billing
 
-          Multi-organization billing allows you to pay once per human user, for organizations under the same Azure billing subscription. This does not apply to service principals and managed identities, which will still be charged on a user assignment-based billing. Any service principal or managed identity will be charged once per organization that it has been added to.
+          Multi-organization billing allows you to pay once per human user, for organizations under the same Azure billing subscription. This doesn't apply to service principals and managed identities, which still get charged on a user assignment-based billing. Any service principal or managed identity gets charged once per organization that it has been added to.
 
       - question: |
           Q: Does multi-organization billing make sense for all customers?
@@ -269,7 +269,7 @@ sections:
         answer: |
           A: If you work in more than one Azure DevOps organization that's billed to the same Azure subscription, you can separate the charges for each organization. 
           
-          To make this split easier, we automatically add the tag `"_organizationname_"` and the name of your Azure DevOps organization associated with the charges. We started emitting this tag in Feb 2020, so you won't see it before that date. See the following two ways you can use this tag to drill into charges for a given organization.
+          To make this split easier, we automatically add the tag `"_organizationname_"` and the name of your Azure DevOps organization associated with the charges. We started emitting this tag in Feb 2020, so you don't see it before that date. See the following two ways you can use this tag to drill into charges for a given organization.
           
           1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
           
@@ -307,12 +307,16 @@ sections:
       - question: |
           Q: Why is the location of my organization resource incorrect? 
         answer: |
-          A: The location of your organization resource could be incorrect for various reasons, such as [changing your organization region](../accounts/change-organization-location.md#change-organization-region). To find the location of your organization, [check the region listed in Azure DevOps](../accounts/change-organization-location.md), which is the source of truth for Azure DevOps locations. If the location listed there doesn't match the location listed inside the Azure portal, you can update the portal by [removing billing](change-azure-subscription.md#remove-your-billing-subscription) from your organization and then [setting it up](set-up-billing-for-your-organization-vs.md) again.
+          A: The location of your organization resource could be incorrect for various reasons, such as [changing your organization region](../accounts/change-organization-location.md#change-organization-region). To find the location of your organization, [check the region listed in Azure DevOps](../accounts/change-organization-location.md), which is the source of truth for Azure DevOps locations. If the location listed there doesn't match the location listed inside the Azure portal, do these steps:
           
+          1. In Azure DevOps Billing settings, [unlink your organization from the Azure subscription](change-azure-subscription.md#remove-your-billing-subscription).
+          2. In the Azure portal, delete the Azure DevOps resource group if it's still there. 
+          3. In Azure DevOps Billing settings, [link your organization to the Azure subscription](set-up-billing-for-your-organization-vs.md).
+
       - question: |
           Q: Why is the name of my organization resource incorrect? 
         answer: |
-          A: If you've [renamed your organization](../accounts/rename-organization.md) after you set up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again. 
+          A: If you have [renamed your organization](../accounts/rename-organization.md) after you set up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again. 
          
       - question: |
           Q: What happens if I delete my organization resource? 
@@ -368,7 +372,7 @@ sections:
       - question: |
           Q: How can I tell whether I have the necessary privileges to buy services through my organization's Enterprise Agreement?
         answer: |
-          A: The easiest approach to determine if you have the right privileges is to select the **Buy** button for a service. Select an Azure subscription, which is a billing account, from a presented list of Azure subscriptions that are linked to your sign-in credentials. Since the name of your Azure subscription defaults to the type of billing account, it's often clear whether the Azure subscription is part of your Enterprise Agreement. For example, subscriptions can be named "Pay-As-You-Go" or "Enterprise Agreement".
+          A: The easiest approach to determine if you have the right privileges is to select the **Buy** button for a service. Select an Azure subscription, which is a billing account, from a presented list of Azure subscriptions that are linked to your sign-in credentials. Since the name of your Azure subscription defaults to the type of billing account, it's often clear whether the Azure subscription is part of your Enterprise Agreement. For example, subscriptions can be named "Pay-As-You-Go" or "Enterprise Agreement."
           
           Another approach is to try to visit the [Azure Enterprise Portal](https://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization owner role. Only organization owners can set up new Azure billing in an Enterprise Agreement. 
           

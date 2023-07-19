@@ -57,9 +57,9 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 2. [Sprint retrospective meetings](best-practices-scrum.md#sprint-retrospective-meetings)
 
 
-## Sprint backlogs and taskboards overview
+## Sprint backlogs and Taskboards overview
 
-Sprint backlogs and taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
+Sprint backlogs and Taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
 
 ::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  

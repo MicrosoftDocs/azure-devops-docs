@@ -19,7 +19,7 @@ ms.date: 08/09/2022
 Use the visualization options that Delivery Plans provide to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
 > [!NOTE]   
-> Delivery Plans 2.0 is available for Azure DevOps Services and Azure DevOps Server 2022 and later versions. The new version of Delivery Plans supports several new features and is a supported feature of Azure Boards. It isn't an extension. The plans you have already defined with the extension will open using [Delivery Plans 2.0](../plans/review-team-plans.md). For a summary of the differences between the two versions, see [Delivery Plans FAQs](../plans/faqs.yml).
+> Delivery Plans 2.0 is available for Azure DevOps Services and Azure DevOps Server 2022 and later versions. The new version of Delivery Plans supports several new features and is a supported feature of Azure Boards. It isn't an extension. The plans you've already defined with the extension open using [Delivery Plans 2.0](../plans/review-team-plans.md). For a summary of the differences between the two versions, see [Delivery Plans FAQs](../plans/faqs.yml).
 
 
 Use Delivery Plans to ensure your teams are aligned with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule, opening cards, expanding and collapsing teams, and more.
@@ -50,7 +50,7 @@ In this article you'll learn:
 	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 	- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
-	- Team Backlog settings have enabled the backlogs to show in the delivery plans. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
+	- Team Backlog settings have enabled the backlogs to show in the delivery plans. For more information, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
 - To manage permissions for a Delivery Plan, to edit, or to delete a plan, you must:
   - Be the creator of the plan 
@@ -136,7 +136,7 @@ When defining a plan, note the following criteria:
 - You can choose one or more teams from any project defined in the organization or collection. Choose up to a maximum of 10 teams.   
 - You can choose one or more [active backlogs for a team](../../organizations/settings/select-backlog-navigation-levels.md) 
 	> [!NOTE] 
-	> If you aren't able to select a backlog level, check the Team Backlog settings to ensure the backlog level is enabled for the team. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
+	> If you aren't able to select a backlog level, check the Team Backlog settings to ensure the backlog level is enabled for the team. For more information, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 - You can reorder the team backlogs by dragging and dropping them into the sequence you want 
 -  To filter for specific work items, specify the field criteria. For example, to exclude bugs from the view, add the following criteria: `Work Item Type <> Bug`. 
 
@@ -151,11 +151,11 @@ Once you've defined a plan, you can further customize it.
 
 2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
    - Edit the teams you've selected and their backlog level  
-   - Set field criteria to further limit the work items that will appear on the plan 
+   - Set field criteria to further limit the work items that appear on the plan 
    - Add markers to show important upcoming events on your timeline 
    - Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
 
-     Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
+     Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag appear in the Delivery Plan. 
 
      <img src="media/plans/review-team-plans-set-field-criteria.png" alt="Settings dialog, Fields page" />
 
@@ -225,7 +225,7 @@ The collapsed card view allows you to quickly switch back and forth between card
 
 ## Update the iteration for a backlog item 
 
-As changes occur to the schedule, you can update the iteration for a backlog item. Update the iteration by moving a card to a different iteration. This action will help to drive alignment across your organization.
+As changes occur to the schedule, you can update the iteration for a backlog item. Update the iteration by moving a card to a different iteration. This action helps to drive alignment across your organization.
 
 > [!div class="mx-imgBorder"]  
 > ![Move a card to a different iteration](media/plans/plans-move-1.png)
@@ -233,7 +233,7 @@ As changes occur to the schedule, you can update the iteration for a backlog ite
 
 ## Minimize the fields displayed on cards  
 
-To quickly change the cards to only show their Title, enter the keyboard shortcut '**t**'. This will hide all other fields, as shown in the following image, the Assigned to field no longer appears. To persist this view, edit the [plan's settings for card fields](#card-settings).
+To quickly change the cards to only show their Title, enter the keyboard shortcut '**t**'. This action hided all other fields, as shown in the following image, the Assigned to field no longer appears. To persist this view, edit the [plan's settings for card fields](#card-settings).
 
 > [!div class="mx-imgBorder"]  
 > ![Cards showing the Title only](media/plans/plans-view-5.png)   

@@ -149,7 +149,7 @@ You can add a custom field to a query clause. With WIQL, you must specify the re
 
 For projects that use the On-premises XML process model, the reference name is as defined by the XML work item type definitions. 
 
-To learn more, see [Work item fields and attributes](../work-items/work-item-fields.md).
+For more information, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
 ::: moniker-end 
 
@@ -157,7 +157,7 @@ To learn more, see [Work item fields and attributes](../work-items/work-item-fie
 
 You can add a custom field to a query clause. With WIQL, you must specify the reference name for the custom field. 
 
-To learn more, see [Add or modify a field to track work](../../reference/add-modify-field.md).
+For more information, see [Add or modify a field to track work](../../reference/add-modify-field.md).
 
 ::: moniker-end 
 
@@ -498,13 +498,13 @@ WHERE
  
 ### Custom macros 
 
-WIQL also supports arbitrary custom macros. Any string prefixed by an `@` is treated as a custom macro and will be substituted. The replacement value for the custom macro is retrieved from the context parameter of the query method in the object model. The following method is the API used for macros: 
+WIQL also supports arbitrary custom macros. Any string prefixed by an `@` is treated as a custom macro and gets substituted. The replacement value for the custom macro is retrieved from the context parameter of the query method in the object model. The following method is the API used for macros: 
 
 ```csharp
 public WorkItemCollection Query(string wiql, IDictionary context)
 ```
 
-The context parameter contains key-value pairs for macros. For example, if the context contains a key-value pair of (project, MyProject), then **@project** will be replaced by `MyProject` in the WIQL. This replacement is how the work item query builder handles the **@project** macro in Visual Studio.
+The context parameter contains key-value pairs for macros. For example, if the context contains a key-value pair of (project, MyProject), then **@project** gets replaced by `MyProject` in the WIQL. This replacement is how the work item query builder handles the **@project** macro in Visual Studio.
 
 ## Specify historical queries (`ASOF`)
 
@@ -513,7 +513,7 @@ You can use an `ASOF` clause in a query to filter for work items that satisfy th
 > [!NOTE] 
 > You can’t create `ASOF` queries in the query builder in Visual Studio. If you create a query file (.wiq) that includes an `ASOF` clause, and then load that in Visual Studio, the `ASOF` clause is ignored.
 
-Suppose a work item was classified under an **Iteration Path** of `Fabrikam Fiber\Release 1` and assigned to 'Jamal Hartnett' prior to 5/05/2022. However, the work item was recently assigned to 'Raisa Pokrovskaya' and moved to a new iteration path of Release 2. The following example query will return this work items assigned to Jamal Hartnett because the query is based on the state of work items as of a past date and time. 
+Suppose a work item was classified under an **Iteration Path** of `Fabrikam Fiber\Release 1` and assigned to 'Jamal Hartnett' prior to 5/05/2022. However, the work item was recently assigned to 'Raisa Pokrovskaya' and moved to a new iteration path of Release 2. The following example query returns work items assigned to Jamal Hartnett because the query is based on the state of work items as of a past date and time. 
 
 ```WIQL
 SELECT
@@ -973,6 +973,6 @@ https://msdn.microsoft.com/library/bb130306.aspx
 <!---
 
 > [!WARNING]  
-> You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server will occur. For more information, see Performance Considerations.
+> You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server occurs. For more information, see Performance Considerations.
 
 -->

@@ -23,7 +23,8 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 ## Prerequisites
 
 - You must be a Project Collection Administrator group for the organization.
-- You must be a member or a guest in the source Azure AD and a member in the destination Azure AD. For more information, see how to [convert an Azure AD guest into a member](faq-azure-access.yml).
+- You must be a member in the destination Azure AD. For more information, see how to [convert an Azure AD guest into a member](faq-azure-access.yml).
+- You must be a member or a guest in the source Azure AD.
 - Confirm there are 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users. You can map them to their Azure AD identities in the new tenant.
 - Request that SSH keys get manually cleared by [Support](https://azure.microsoft.com/support/devops/) before you switch directories. You can find the steps for how to recreate SSH keys [further in this article](#inform-users-of-the-completed-change). For more information, see the [FAQ](faq-azure-access.yml).
 - Don't add the users from the destination Azure AD into the Azure DevOps organization.
@@ -43,17 +44,17 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 
 3. Select **Azure Active Directory**, and then **Switch directory**.
 
-   :::image type="content" source="media/change-azure-ad-connection.md/select-switch-directory.png" alt-text="Screenshot showing Switch directory button surrounded by red box.":::
+   :::image type="content" source="media/change-azure-ad-connection.md/select-switch-directory.png" alt-text="Screenshot showing Switch directory button emphasized.":::
 
 4. Select a directory from the dropdown menu, and then select **Connect**.
 
-   :::image type="content" source="media/shared/select-directory-connect.png" alt-text="Screenshot showing Azure AD dropdown menu, and then Connect button surrounded by red box.":::
+   :::image type="content" source="media/shared/select-directory-connect.png" alt-text="Screenshot showing Azure AD dropdown menu, and then Connect button emphasized.":::
 
    If you can't find your directory, contact your Azure AD administrator to request that they add you as a member to the Azure AD.
 
 5. Select **Sign out**.
 
-   :::image type="content" source="media/shared/connect-success-dialog.png" alt-text="Screenshot showing Sign out button surrounded by red box.":::
+   :::image type="content" source="media/shared/connect-success-dialog.png" alt-text="Screenshot showing Sign out button emphasized.":::
 
     Your organization connects to your Azure AD.
 
@@ -61,7 +62,7 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 
 7. If some members are disconnected, sign back in to Azure DevOps and map them to their Azure AD identities. Or, you can invite them as guests into the Azure AD. For more information, see the [FAQs](./faq-azure-access.yml#faq-connect).
 
-   :::image type="content" source="media/shared/azure-ad-select-resolve-for-disconnected-users.png" alt-text="Screenshot showing Resolve button surrounded by red box.":::
+   :::image type="content" source="media/shared/azure-ad-select-resolve-for-disconnected-users.png" alt-text="Screenshot showing Resolve button emphasized.":::
 
    :::image type="content" source="media/shared/resolve-disconnected-users.png" alt-text="Screenshot showing Resolve disconnected users dialog.":::
 
@@ -83,7 +84,7 @@ Complete the following steps to recreate your SSH keys.
 
 1. In Azure DevOps, open your **profile**, and then select **Security** from the resulting dropdown menu.
 
-   :::image type="content" source="media/shared/select-security-profile-menu.png" alt-text="Screenshot showing Security selection surrounded by red box.":::
+   :::image type="content" source="media/shared/select-security-profile-menu.png" alt-text="Screenshot showing Security selection emphasized.":::
 
 2. Select **SSH public keys**, and then select **Add**.
 

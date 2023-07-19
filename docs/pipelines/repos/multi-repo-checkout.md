@@ -318,7 +318,7 @@ You can also trigger the pipeline when you create or update a pull request in an
 
 When you check out multiple repositories, some details about the `self` repository are available as [variables](../build/variables.md).
 When you use multi-repo triggers, some of those variables have information about the triggering repository instead.
-Details about all of the repositories consumed by the job are available as a [template context object](../process/templates.md#context) called `resources.repositories`.
+Details about all of the repositories consumed by the job are available as a [template context object](../process/template-expressions.md#context) called `resources.repositories`.
 
 For example, to get the ref of a non-`self` repository, you could write a pipeline like this:
 

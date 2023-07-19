@@ -168,7 +168,6 @@ Review the following resources to learn more about CI/CD and Azure DevOps:
 
 - [What is DevOps?](/devops/what-is-devops)
 - [DevOps at Microsoft - How we work with Azure DevOps](https://azure.microsoft.com/solutions/devops/devops-at-microsoft)
-- [Step-by-step Tutorials: DevOps with Azure DevOps](https://www.azuredevopslabs.com/labs/vstsextend/azuredevopsprojectdotnet)
 - [Create a CI/CD pipeline for .NET with Azure DevOps Projects](/azure/devops-project/azure-devops-project-aspnet-core)
 - [What is Azure Repos?](/azure/devops/repos/get-started/what-is-repos)
 - [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines)

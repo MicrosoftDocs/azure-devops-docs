@@ -20,7 +20,7 @@ From any product, sprint, or portfolio backlog, you can drag a multi-selected li
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Drag-drop items onto sprint](../sprints/media/define-sprints/drag-drop-backlog-items-to-sprint.png)
 
-	This action will update the Iteration Path of the backlog items and any of its child tasks to the sprint you selected. 
+	This action updates the Iteration Path of the backlog items and any of its child tasks to the sprint you selected. 
 
 ::: moniker-end
 

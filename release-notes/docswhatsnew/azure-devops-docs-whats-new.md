@@ -1,123 +1,132 @@
 ---
-title: "Azure DevOps docs: What's new for May 1, 2023 - May 31, 2023"
-description: "What's new in the Azure DevOps docs for May 1, 2023 - May 31, 2023."
-ms.date: 06/01/2023
+title: "Azure DevOps docs: What's new for June 1, 2023 - June 30, 2023"
+description: "What's new in the Azure DevOps docs for June 1, 2023 - June 30, 2023."
+ms.date: 07/05/2023
 ---
 
-# Azure DevOps docs: What's new for May 1, 2023 - May 31, 2023
+# Azure DevOps docs: What's new for June 1, 2023 - June 30, 2023
 
-Welcome to what's new in the Azure DevOps docs from May 1, 2023 through May 31, 2023. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from June 1, 2023 through June 30, 2023. This article lists some of the major changes to docs during this period.
 
 ## Administration
 
+### New articles
+
+- [Change your organization image](/azure/devops/organizations/accounts/change-organization-image)
+
 ### Updated articles
 
-- [Default permissions quick reference for Azure DevOps](/azure/devops/organizations/security/permissions-access)
-- [Set work tracking permissions](/azure/devops/organizations/security/set-permissions-access-work-tracking)
+- [Get started with permissions and access](/azure/devops/organizations/security/about-permissions)
+- [Security glossary](/azure/devops/organizations/security/security-glossary)
+- [Change your preferred email address for notifications](/azure/devops/organizations/notifications/change-email-address)
+- [Manage your personal notifications](/azure/devops/organizations/notifications/manage-your-personal-notifications)
+- [Access notification settings](/azure/devops/organizations/notifications/navigating-the-ui)
+- [Change time zone](/azure/devops/organizations/accounts/change-time-zone)
+- [Rename your organization in Azure DevOps](/azure/devops/organizations/accounts/rename-organization)
+- [Change your organization connection to a different Azure AD](/azure/devops/organizations/accounts/change-azure-ad-connection)
+- [Restore a project](/azure/devops/organizations/projects/restore-project)
 
 ## Artifacts
 
-### New articles
-
-- [Publish Maven artifacts using Gradle](/azure/devops/artifacts/maven/publish-with-gradle)
-
 ### Updated articles
 
-- [Accelerate collaboration and Agile development with componentization](/azure/devops/artifacts/collaborate-with-packages)
-- [Publish and download universal packages in Azure Artifacts](/azure/devops/artifacts/quickstarts/universal-packages)
-- [Migrate your packages from file shares](/azure/devops/artifacts/nuget/move-from-fileshares)
+- [Publish and restore NuGet packages from the command line (NuGet.exe)](/azure/devops/artifacts/nuget/publish)
+- [Migrate your packages from MyGet to Azure Artifacts](/azure/devops/artifacts/tutorials/migrate-packages)
+- [Manage permissions](/azure/devops/artifacts/feeds/feed-permissions)
+- [Migrate from file shares to Azure Artifacts](/azure/devops/artifacts/nuget/move-from-fileshares)
+- [Get started with NuGet packages in Azure Artifacts](/azure/devops/artifacts/get-started-nuget)
+- [Set up your project and connect to Azure Artifacts](/azure/devops/artifacts/npm/npmrc)
 
 ## Azure Boards
 
 ### Updated articles
 
-- [About Kanban boards](/azure/devops/boards/boards/kanban-overview)
-- [Use your Kanban board](/azure/devops/boards/boards/kanban-quickstart)
 - [Manage columns on your Kanban board](/azure/devops/boards/boards/add-columns)
+- [What is Azure Boards?](/azure/devops/boards/get-started/what-is-azure-boards)
+- [About Azure Boards-GitHub integration](/azure/devops/boards/github/index)
+- [Copy or clone work items and more](/azure/devops/boards/backlogs/copy-clone-work-items)
+- [Manage Scrum process work item types & workflow](/azure/devops/boards/work-items/guidance/scrum-process-workflow)
+- [Manage Scrum process template objects](/azure/devops/boards/work-items/guidance/scrum-process)
+- [Set Work in Progress limits](/azure/devops/boards/boards/wip-limits)
+- [Import & update bulk work items with CSV files](/azure/devops/boards/queries/import-work-items-from-csv)
+- [Promote an Agile culture within your team](/azure/devops/boards/plans/agile-culture)
+- [Agile process work item types](/azure/devops/boards/work-items/guidance/agile-process)
 - [Customize cards on a Kanban board](/azure/devops/boards/boards/customize-cards)
-- [Work in Excel connected to Azure Boards FAQs](/azure/devops/boards/backlogs/office/faqs)
-- [Import or update work items in bulk with CSV files](/azure/devops/boards/queries/import-work-items-from-csv)
-- [Expedite work using swimlanes](/azure/devops/boards/boards/expedite-work)
-- [About default processes and process templates](/azure/devops/boards/work-items/guidance/choose-process)
+- [Agile workflow in Azure Boards](/azure/devops/boards/work-items/guidance/agile-process-workflow)
+- [Use your Kanban board](/azure/devops/boards/boards/kanban-quickstart)
 
 ## Azure DevOps Reporting and Analytics service
 
 ### Updated articles
 
-- [View and configure team velocity](/azure/devops/report/dashboards/team-velocity)
+- [Configure a burndown or burnup widget](/azure/devops/report/dashboards/configure-burndown-burnup-widgets)
 
 ## Azure Pipelines
 
 ### New articles
 
-- [Publish NuGet packages to NuGet.org with Azure Pipelines](/azure/devops/pipelines/artifacts/publish-public-registry)
-- [Self-hosted Linux agents](/azure/devops/pipelines/agents/linux-agent)
-- [Self-hosted macOS agents](/azure/devops/pipelines/agents/osx-agent)
-- [Self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent)
-- [Azure Pipelines architecture for Azure Web Apps](/azure/devops/pipelines/architectures/devops-pipelines-azure-web-apps-architecture)
-- [CI/CD baseline architecture with Azure Pipelines](/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture)
-- [Azure Pipelines architecture with DevTest Labs](/azure/devops/pipelines/architectures/devops-pipelines-devtest-iaas-architecture)
-- [Azure Pipelines architecture for IaaS](/azure/devops/pipelines/architectures/devops-pipelines-iaas-vms-architecture)
+- [Add an admin role to a protected resource](/azure/devops/pipelines/library/add-resource-protection)
+- [Create a multistage pipeline with Azure DevOps](/azure/devops/pipelines/process/create-multistage-pipeline)
 
 ### Updated articles
 
-- [Use predefined variables](/azure/devops/pipelines/build/variables)
-- [Logging commands](/azure/devops/pipelines/scripts/logging-commands)
-- [Runtime parameters](/azure/devops/pipelines/process/runtime-parameters)
-- [Template types & usage](/azure/devops/pipelines/process/templates)
-- [Pipeline options for Git repositories](/azure/devops/pipelines/repos/pipeline-options-for-git)
-- [Set variables in scripts](/azure/devops/pipelines/process/set-variables-scripts)
-- [Publish and download Universal Packages with Azure Pipelines](/azure/devops/pipelines/artifacts/universal-packages)
-- [Self-hosted Linux agents (2.x)](/azure/devops/pipelines/agents/v2-linux-agent)
-- [Self-hosted macOS agents (2.x)](/azure/devops/pipelines/agents/v2-osx-agent)
-- [Self-hosted Windows agents (2.x)](/azure/devops/pipelines/agents/v2-windows-agent)
-- [Set retention policies for builds, releases, and tests](/azure/devops/pipelines/policies/retention)
-- [Agent software version 3](/azure/devops/pipelines/agents/v3-agent)
+- [Azure Pipelines agents](/azure/devops/pipelines/agents/agents)
+- [Run the agent with a self-signed certificate](/azure/devops/pipelines/agents/certificate)
+- [Create and manage agent pools](/azure/devops/pipelines/agents/pools-queues)
+- [Environment - Kubernetes resource](/azure/devops/pipelines/process/environments-kubernetes)
+- [Build multiple branches in Azure Pipelines](/azure/devops/pipelines/build/ci-build-git)
+- [YAML pipeline editor](/azure/devops/pipelines/get-started/yaml-pipeline-editor)
+- [Troubleshoot pipeline runs](/azure/devops/pipelines/troubleshooting/troubleshooting)
+- [Classic release pipelines](/azure/devops/pipelines/release/index)
+- [Expressions](/azure/devops/pipelines/process/expressions)
+- [Review logs to diagnose pipeline issues](/azure/devops/pipelines/troubleshooting/review-logs)
 
 ## Azure Repos
 
+### Updated articles
+
+- [Use SSH key authentication](/azure/devops/repos/git/use-ssh-keys-to-authenticate)
+
+## Project
+
 ### New articles
 
-- [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features) - New feature
-- [Advanced Security billing](/azure/devops/repos/security/github-advanced-security-billing)
-- [Code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning)
-- [Dependency scanning](/azure/devops/repos/security/github-advanced-security-dependency-scanning)
-- [Advanced Security permissions](/azure/devops/repos/security/github-advanced-security-permissions)
-- [Secret scanning](/azure/devops/repos/security/github-advanced-security-secret-scanning)
+- [Restore a deleted wiki](/azure/devops/project/wiki/restore-deleted-wiki)
 
 ### Updated articles
 
-- [Use Azure Repos with Microsoft Teams](/azure/devops/repos/integrations/repos-teams)
-- [Branch policies and settings](/azure/devops/repos/git/branch-policies)
+- [Manage or enable features](/azure/devops/project/navigation/preview-features)
 
-## Demo-gen
-
-### Updated articles
-
-- [Build a custom template](/azure/devops/demo-gen/build-your-own-template)
-
-## Extend
+## Service-hooks
 
 ### Updated articles
 
-- [Extend the work item form](/azure/devops/extend/develop/add-workitem-extension)
-- [Data storage](/azure/devops/extend/develop/data-storage)
-- [Extension samples](/azure/devops/extend/develop/samples-overview)
-- [Vertical navigation guidance](/azure/devops/extend/develop/web-navigation)
+- [Service hooks events](/azure/devops/service-hooks/events)
+
+## User guide
+
+### Updated articles
+
+- [Get started - manage your organization or project collection](/azure/devops/user-guide/manage-organization-collection)
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-05-01..2023-05-31).
+Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-06-01..2023-06-30).
 
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (2)
-- [jennings](https://github.com/jennings) - Stephen Jennings (1)
-- [JynLeazy](https://github.com/JynLeazy) (1)
-- [ronwarner](https://github.com/ronwarner) - Ron (1)
-- [SampathDilhan](https://github.com/SampathDilhan) - Sampath Dilhan (1)
-- [stefkiourk](https://github.com/stefkiourk) - Stef Ki (1)
-- [TheJohnH](https://github.com/TheJohnH) - John H (1)
-- [yagnyaPatel](https://github.com/yagnyaPatel) - Yagnya Patel (1)
+- [andrey-shuvalov](https://github.com/andrey-shuvalov) (1)
+- [bbrandt](https://github.com/bbrandt) - Ben Brandt (1)
+- [cpickard](https://github.com/cpickard) - Colin Pickard (1)
+- [davhdavh](https://github.com/davhdavh) - Dennis (1)
+- [ethanknights](https://github.com/ethanknights) - Ethan Knights (1)
+- [fpoppinga](https://github.com/fpoppinga) - Finn Poppinga (1)
+- [kuntal2318](https://github.com/kuntal2318) - Kuntal Mehta (1)
+- [kwame-mintah](https://github.com/kwame-mintah) - Kwame Mintah (1)
+- [mathieu-lemay](https://github.com/mathieu-lemay) - Mathieu Lemay (1)
+- [mholder-learfield](https://github.com/mholder-learfield) (1)
+- [michaelmsonne](https://github.com/michaelmsonne) - Michael Morten Sonne (1)
+- [Okeanos](https://github.com/Okeanos) - Nikolas Grottendieck (1)
+- [Olivier-Lemay-Dostie](https://github.com/Olivier-Lemay-Dostie) (1)

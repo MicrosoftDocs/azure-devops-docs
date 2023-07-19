@@ -1028,7 +1028,7 @@ To quickly find revisions made that contain a keyword, or made by specific peopl
 
 :::image type="content" source="../queries/media/history-audit/history-filter.png" alt-text="Screenshot of Work item form, History tab, Web portal, history filter enabled.":::
 
-To learn more, see [Query work item history and discussion fields](../queries/history-and-auditing.md#filter-history).
+For more information, see [Query work item history and discussion fields](../queries/history-and-auditing.md#filter-history).
 
 ::: moniker-end
 
