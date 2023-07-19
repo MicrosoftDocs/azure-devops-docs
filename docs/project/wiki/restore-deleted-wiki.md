@@ -48,7 +48,7 @@ We don't provide options via the UI to delete a wiki, but a user could have used
 
 #### [Browser](#tab/browser) 
 
-1. In your browser, go to your Azure DevOps wiki. For example, `https://dev.azure.com/<OrgName>/<ProjectName>/_git/classicreleaseoption.wiki`. 
+1. In your browser, go to your Azure DevOps wiki. For example, `https://dev.azure.com/<OrgName>/<ProjectName>/_git/fabrikamfiber.wiki`. 
  
    Wikis get managed as repositories in Azure DevOps.
 
@@ -84,10 +84,6 @@ az devops wiki restore [--name]
 - **repositoryId**: Name or ID of the repository to publish the wiki from.
 - **api-version**: Repository branch name to publish the code wiki from.
 
-::: moniker-end
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]
-::: moniker range="azure-devops"
-
 #### Example 
 
 ### List git repositories
@@ -101,11 +97,11 @@ GET https://dev.azure.com/{organization}/{project}/_apis/git/repositories?api-ve
 ```Azure CLI
     {
             "id": "978e3886-64a8-4b6f-96da-6afc2936b04b",
-            "name": "classicreleaseoption.wiki",
+            "name": "fabrikamfiber.wiki",
             "url": https://dev.azure.com/fabrikam/052a83ac-af70-4194-b53f-df073e5f1786/_apis/git/repositories/978e3886-64a8-4b6f-96da-6afc2936b04b,
             "project": {
                 "id": "052a83ac-af70-4194-b53f-df073e5f1786",
-                "name": "classicreleaseoption",
+                "name": "fabrikamfiber",
                 "url": https://dev.azure.com/fabrikam/_apis/projects/052a83ac-af70-4194-b53f-df073e5f1786,
                 "state": "wellFormed",
                 "revision": 421800049,
@@ -114,9 +110,9 @@ GET https://dev.azure.com/{organization}/{project}/_apis/git/repositories?api-ve
             },
             "defaultBranch": "refs/heads/wikiMaster",
             "size": 193,
-            "remoteUrl": https://fabrikam@dev.azure.com/fabrikam/classicreleaseoption/_git/classicreleaseoption.wiki,
-            "sshUrl": git@ssh.dev.azure.com:v3/fabrikam/classicreleaseoption/classicreleaseoption.wiki,
-            "webUrl": https://dev.azure.com/fabrikam/classicreleaseoption/_git/classicreleaseoption.wiki,
+            "remoteUrl": https://fabrikam@dev.azure.com/fabrikam/fabrikamfiber/_git/fabrikamfiber.wiki,
+            "sshUrl": git@ssh.dev.azure.com:v3/fabrikam/fabrikamfiber/fabrikamfiber.wiki,
+            "webUrl": https://dev.azure.com/fabrikam/fabrikamfiber/_git/fabrikamfiber.wiki,
             "isDisabled": false,
             "isInMaintenance": false
     }
@@ -133,10 +129,10 @@ Search from the wiki repositories from the list and note the ID. Generally, wiki
     "value": [
         {
             "id": "978e3886-64a8-4b6f-96da-6afc2936b04b",
-            "name": "classicreleaseoption.wiki",
+            "name": "fabrikamfiber.wiki",
             "project": {
                 "id": "052a83ac-af70-4194-b53f-df073e5f1786",
-                "name": "classicreleaseoption",
+                "name": "fabrikamfiber",
                 "url": https://dev.azure.com/fabrikam/_apis/projects/052a83ac-af70-4194-b53f-df073e5f1786,
                 "state": "wellFormed",
                 "revision": 421800049,
@@ -175,6 +171,7 @@ The following command [restores a wiki](/rest/api/azure/devops/git/repositories/
 ```
 
    The wiki is restored.
+::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
