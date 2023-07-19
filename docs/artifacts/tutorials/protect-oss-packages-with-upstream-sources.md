@@ -27,9 +27,15 @@ In this tutorial, you will:
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Artifacts**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot showing how to navigate to Azure Artifacts.":::
+1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
+
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
+
+1. Provide a name for your feed, and choose its visibility. Make sure you check the **Include packages from common public sources** checkbox to enable upstream sources, and then select **Create** when you're done.
+
+    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window.":::
 
 ::: moniker-end
 
@@ -39,35 +45,11 @@ In this tutorial, you will:
 
     :::image type="content" source="../media/goto-feed-hub.png" alt-text="Screenshot showing how to navigate to Azure Artifacts - TFS.":::
 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
-2. Select **Create Feed** to create a new feed.
-
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-2. Select **New Feed** to create a new feed.
+1. Select **New Feed** to create a new feed.
 
     :::image type="content" source="../media/new-feed-button.png" alt-text="Screenshot showing the create feed button - TFS.":::
 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
-3. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
-
-    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window.":::
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-3. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
+1. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
 
     :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window - TFS.":::
 
