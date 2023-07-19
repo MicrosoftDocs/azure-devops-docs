@@ -19,4 +19,4 @@ With multi-select, you can perform several actions on several work items at once
 
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../media/icons/context_menu.png)) or action (![actions icon](../media/icons/actions-icon.png)) menu of one of the items. 
 
-To learn more, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
+For more information, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).

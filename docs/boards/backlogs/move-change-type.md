@@ -38,20 +38,20 @@ In this article you'll learn:
 ::: moniker range="azure-devops"
 
 * You must be a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
 * To change the work item type, you must be granted **Stakeholder** access or higher. 
 * To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set. Users granted **Stakeholder** access don't have access to this feature. 
 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
-* To change the work item type, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+* To change the work item type, you must be granted **Stakeholder** access or higher. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 * To move work items to another project, the project must use an Inherited process model.  
 * To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set. Users granted **Stakeholder** access don't have access to this feature. 
 
@@ -61,7 +61,7 @@ In this article you'll learn:
 
 ::: moniker-end 
 
-To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). 
+For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). 
 
 ::: moniker range="azure-devops"
 
@@ -83,7 +83,7 @@ To learn more, see [Set permissions and access for work tracking](../../organiza
 
 ## Change the work item type 
 
-Changing the work item type refreshes the work item form with the fields defined for the type selected. For example, you can change a bug to a task and the form will refresh with the fields defined for a task. 
+Changing the work item type refreshes the work item form with the fields defined for the type selected. For example, you can change a bug to a task and the form refreshes with the fields defined for a task. 
 
 > [!NOTE]  
 > You can't change the work item type if the project is defined on a collection that uses the On-premises XML process model. Also, you can't change the work item type of work items associated with test management. 
@@ -104,13 +104,13 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 	> [!IMPORTANT]   
 	> From the **Query Results page**, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
 
-1. Select the type and optionally enter a comment.  
+2. Select the type and optionally enter a comment.  
 
 	![Change work item type dialog](media/move-change-delete/change-work-item-type-dialog.png)    
 
 	Comments are automatically added to the [**Discussion** control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the **History** control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
-2. Save the work item(s) to complete the change.  
+3. Save the work item(s) to complete the change.  
  
 	> [!NOTE]     
 	> The system automatically resets the **State** and **Reason** fields to the default initial values of the specified type. However, in some cases you may need to open the work item to change the **State** or **Reason** field to a value supported by the changed-to work item type.

@@ -36,15 +36,15 @@ As roles and responsibilities change, you can change the owner for your organiza
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing Organization settings button surrounded by red box.":::
+   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing Organization settings button emphasized.":::
 
 3. Select **Overview**, and then **Change owner**.  
 
-   :::image type="content" source="media/change-organization-ownership/change-organization-owner.png" alt-text="Screenshot showing Overview, and then Change owner buttons surrounded by red box.":::
+   :::image type="content" source="media/change-organization-ownership/change-organization-owner.png" alt-text="Screenshot showing Overview, and then Change owner buttons emphasized.":::
 
 4. Select a user from the dropdown menu, or search for a user by entering the user's name, and then select **Change**.
 
-   :::image type="content" source="media/change-organization-ownership/save-new-organization-owner.png" alt-text="Screenshot showing Change button surrounded by red box.":::
+   :::image type="content" source="media/change-organization-ownership/save-new-organization-owner.png" alt-text="Screenshot showing Change button emphasized.":::
 
 Your organization has a new owner.
 

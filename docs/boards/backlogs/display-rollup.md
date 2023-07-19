@@ -28,7 +28,7 @@ For example, here we show **Progress by Work Items** which displays progress bar
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> You can also view rollup progress from the new version of Delivery Plans that is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans Experience**. To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md).
+> You can also view rollup progress from the new version of Delivery Plans that is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans Experience**. For more information, see [Review team Delivery Plans](../plans/review-team-plans.md).
 
 ::: moniker-end
 
@@ -38,13 +38,13 @@ For example, here we show **Progress by Work Items** which displays progress bar
 
 ::: moniker range="< azure-devops"
 
-- To add a rollup column, the Analytics service must be enabled on your on-premises Azure DevOps Server. To learn more, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).
+- To add a rollup column, the Analytics service must be enabled on your on-premises Azure DevOps Server. For more information, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).
 
 ::: moniker-end
 
 ## Rollup and hierarchical work items
 
-The default set of backlog work items that supports a natural hierarchical grouping varies depending on the process chosen for your project. The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a Kanban board. To learn more, see [Organize your backlog, map child work items to parents](organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) and [Kanban board features and epics](../boards/kanban-epics-features-stories.md).
+The default set of backlog work items that supports a natural hierarchical grouping varies depending on the process chosen for your project. The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a Kanban board. For more information, see [Organize your backlog, map child work items to parents](organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) and [Kanban board features and epics](../boards/kanban-epics-features-stories.md).
 
 #### [Agile process](#tab/agile-process)
 
@@ -126,7 +126,7 @@ Each user can set their own column options that persist for each backlog across 
 
 Rollup data is calculated from the Analytics service. When there's a large amount of data, it's possible to experience some latency in displaying rollup. If you hover over the :::image type="icon" source="../../media/icons/rollup.png" border="false"::: rollup icon, you can determine the state of the data.
 
-If an error occurs in retrieving rollup data, you'll see an  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon and empty rows. Errors indicate when the Analytics data was last updated. This means that the Analytics services are still processing changes made which may affect rollup calculations. Once the Analytics data is up to date, the rollup columns will refresh with the latest data.
+If an error occurs in retrieving rollup data, you'll see an  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon and empty rows. Errors indicate when the Analytics data was last updated. This means that the Analytics services are still processing changes made which may affect rollup calculations. Once the Analytics data is up to date, the rollup columns refresh with the latest data.
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Error getting data.](media/rollup/error-getting-data.png)
 
@@ -166,5 +166,4 @@ You can change the column order, column size, or sort options by using the follo
 - [Change column options](set-column-options.md)
 - [Work item field index](../work-items/guidance/work-item-field.md)
 - [Product backlog controls](product-backlog-controls.md)
-- [Backlogs, boards, and plans](backlogs-boards-plans.md)
 - [Create managed queries](../queries/using-queries.md)

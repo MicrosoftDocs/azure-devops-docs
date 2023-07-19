@@ -22,6 +22,7 @@ We don't provide options via the UI to delete a wiki, but a user could have used
 > [!NOTE]
 > Deleted repositories remain in the recycle bin for 30 days, after which they are permanently deleted and can't be restored.
 
+
 <a id="prereq">  </a>
 
 ## Prerequisites
@@ -172,7 +173,6 @@ The following command [restores a wiki](/rest/api/azure/devops/git/repositories/
 ```
 
    The wiki is restored.
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 

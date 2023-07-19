@@ -775,7 +775,7 @@ We don't support the automatic deletion of tasks. Automatic deletion isn't safe 
 
 ### Q: How can I upgrade a task to the latest Node?
 
-We recommend upgrading to [the latest Node version](https://nodejs.org/en/download/). For example information, see [Upgrading tasks to Node 10](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode10.md).
+We recommend upgrading to [the latest Node version](https://nodejs.org/en/download/). For example information, see [Upgrading tasks to Node 16](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md).
 
 ## Related articles
 

@@ -133,7 +133,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 # [Visual Studio 2019](#tab/visual-studio)
 
 
-To view a work item, double-click the title or open the context menu for the work item (right-click or enter the menu key) and select **Open**. A browser window will open with the work item form.
+To view a work item, double-click the title or open the context menu for the work item (right-click or enter the menu key) and select **Open**. A browser window opens with the work item form.
 
 :::row:::
    :::column span="2":::
@@ -141,7 +141,7 @@ To view a work item, double-click the title or open the context menu for the wor
    :::column-end:::
    :::column span="2":::
       - **Assign to me**: Changes the **Assigned To** field to your user name.    
-      - **New Branch...**: Opens a dialog to create a new branch automatically linked to the work item. For details, see [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md).
+      - **New Branch...**: Opens a dialog to create a new branch automatically linked to the work item. For more information, see [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md).
       - **Complete work item**: Updates the **State** field to Completed, Done, or Closed.
       - **Relate to changes**: Links the work item to the current commit of recent changes.  
    :::column-end:::
@@ -219,7 +219,7 @@ Choose **New Work Item** and select the work item type you want.
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Visual Studio 2019, Work Items hub, New Work Item, choose User Story.](media/view-add/add-user-story-vs-te.png)
 
-A browser window will open with the work item form to fill out. 
+A browser window opens with the work item form to complete. 
  
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
@@ -243,7 +243,7 @@ You can [add tags to any work item](../queries/add-tags-to-work-items.md) to fil
 
 ## Filter to create personal views
 
-You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots. To learn more about filtering, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).  
+You can filter each work item pivot view by entering a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots. To learn more about filtering, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).  
 
 
 # [Web portal](#tab/browser)
@@ -267,7 +267,7 @@ There's no [**az boards**](/cli/azure//boards) command that applies to filtering
 
 ## Add columns and sort by a column 
 
-From the web portal, you can sort your view by one of the column fields that you select from the **Column Options** dialog. For details, see [Change column options](../backlogs/set-column-options.md).
+From the web portal, you can sort your view by one of the column fields that you select from the **Column Options** dialog. For more information, see [Change column options](../backlogs/set-column-options.md).
 
 [!INCLUDE [temp](../includes/discussion-tip-azure-devops.md)] 
 
@@ -292,7 +292,7 @@ Queries provide other features that you can use, including:
 * Apply work item templates
 * And more
 
-For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md) and [Query fields, operators, and macros](../queries/query-operators-variables.md).
+For more information, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md) and [Query fields, operators, and macros](../queries/query-operators-variables.md).
 
 
 <a id="page-controls">  </a>

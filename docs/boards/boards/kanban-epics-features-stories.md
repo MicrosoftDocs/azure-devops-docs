@@ -89,7 +89,7 @@ Add new items to a feature or epic through the item's   :::image type="icon" sou
 
 ![Web portal, Feature Kanban board, Open the context menu of a feature to add a story](media/features-epics/add-user-story.png)
 
-When you have many items to add, keep typing your task titles and press Enter. If you have details you want to add about to a work item, hover over the item and press Enter.  
+When you have many items to add, keep entering your task titles and press Enter. If you have details you want to add about to a work item, hover over the item and press Enter.  
  
 
 ## Related articles
