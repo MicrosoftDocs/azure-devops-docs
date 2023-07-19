@@ -18,14 +18,14 @@ When you're working with information and data, particularly in a cloud-based sol
 
 Although it's not mandatory, incorporating best practices while using Azure DevOps can enhance your experience and make it more secure. We've compiled the following best practices that aim to keep your Azure DevOps environment secure:
 
-- Securing your [Azure DevOps environment](#securing-azure-devops-environment)
+- Securing your [Azure DevOps environment](#secure-azure-devops-environment)
 - Restrict access through [scoped permissions](#scoped-permissions) at the organization/collection, project, or object level
 - Maintain tight control of administrators and [security groups](#manage-security-groups)
 - Scope [service accounts](#scope-service-accounts) and [service connections](#scope-service-connections)
 - Learn best practices for [authenticating when integrating with Azure DevOps](#choose-the-right-authentication-method)
 - Secure specific product areas and associated services, like [Azure Artifacts](#secure-azure-artifacts), [Azure Boards](#secure-azure-boards), [Azure Pipelines](#secure-azure-pipelines), [Azure Repos](#secure-azure-repos), [Azure Test Plans](#secure-azure-test-plans), and [GitHub integrations](#secure-github-integrations).
 
-## Secure Azure DevOps environments
+## Secure Azure DevOps environment
 
 ### Removing users
 
