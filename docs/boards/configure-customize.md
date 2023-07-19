@@ -17,7 +17,8 @@ ms.date: 07/19/2023
 
  You can configure and customize Azure Boards in many ways, to better manage your portfolio, dependencies, and monitoring. We recommend the tasks covered in this article especially for administrators who are responsible for managing multi-team projects.
 
-**Quick access to common tasks:** 
+**Quick access to common tasks:**
+
 [Customize cards](boards/customize-cards.md) | [Manage columns](backlogs/set-column-options.md) | [Expedite work with swimlanes](boards/expedite-work.md) | [Configure your backlog](backlogs/configure-your-backlog-view.md). 
 
 > [!NOTE]   
@@ -38,7 +39,7 @@ The following table summarizes the primary items you should consider as you stru
       - How many teams you want to define 
       - How to structure area paths to support portfolio management views
       - Field customizations 
-      - Custom work item types
+      - Custom work item types (WITs)
       - Portfolio backlog customizations 
       - Workflow customizations 
    :::column-end:::
@@ -60,17 +61,17 @@ Customize your work tracking building blocks and tools to support business needs
 
 ## Work item types and portfolio backlogs
 
-When you create a project in Azure Boards, you first select a process. [Each process](work-items/guidance/choose-process.md) (Agile, Basic, Scrum, and CMMI) supports a hierarchy of work item types, including product and portfolio backlogs. Default WITs for each process are listed in corresponding tabs, with backlogs under **Requirements** and tasks under **Task**.
+When you create a project in Azure Boards, you first select a process. [Each process](work-items/guidance/choose-process.md) (Agile, Basic, Scrum, and CMMI) supports a hierarchy of WITs, including product and portfolio backlogs. Default WITs for each process are listed in corresponding tabs, with backlogs under **Requirements** and tasks under **Task**.
 
 [!INCLUDE [work-item-types](includes/work-item-types.md)]
 
-You can add custom work item types at each level, and even add custom portfolio backlogs. Here, for example, is a project that added Objectives and Key Results as custom work item types and corresponding portfolio backlogs to the Scrum process. 
+You can add custom WITs at each level, and even add custom portfolio backlogs. Here, for example, is a project that added Objectives and Key Results as custom WITs and corresponding portfolio backlogs to the Scrum process. 
 
 :::image type="content" source="media/config-custom/portfolio-backlogs-objectives-results.png" alt-text="Objectives and Key Results as additional portfolio backlogs":::
 
 ## Work tracking options and recommended usage  
 
-Teams can choose which work item types they use to track their work. The following table summarizes the main options, recommended usage, and supported tasks and tools.  
+Teams can choose which WITs they use to track their work. The following table summarizes the main options, recommended usage, and supported tasks and tools.  
 
 :::row:::
    :::column span="":::
@@ -136,7 +137,7 @@ Teams can choose which work item types they use to track their work. The followi
 :::row-end:::
 :::row:::
    :::column span="":::
-      Requirements grouped under portfolio work item types, such as epics and features
+      Requirements grouped under portfolio WITs, such as epics and features
    :::column-end:::
    :::column span="2":::
       **Supports calendar views, cross-team views, and portfolio planning**  
@@ -220,8 +221,8 @@ The following table shows the areas you can configure and customize and the tool
 :::row:::
    :::column span="1":::
    [Show bugs on backlogs &amp; boards (Team)](../organizations/settings/show-bugs-on-backlog.md)  
-   Custom work item types, Product backlog (Process)  
-   Custom work item types, Taskboard (Process)
+   Custom WITs, Product backlog (Process)  
+   Custom WITs, Taskboard (Process)
    :::column-end:::
    :::column span="1":::
    - Boards>Product board
@@ -238,7 +239,7 @@ The following table shows the areas you can configure and customize and the tool
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Custom work item types, Portfolio backlog (Process)  
+   Custom WITs, Portfolio backlog (Process)  
    More portfolio backlogs (Process)
    :::column-end:::
    :::column span="1":::
@@ -300,7 +301,7 @@ Use area paths to group work items by product, feature, or business areas and to
 
 ### Area paths and hierarchical grouping 
 
-The two main ways to group work items are by area path and by [parenting them under a portfolio work item type](#area-paths-and-hierarchical-grouping) as described early in this article. The two aren't mutually exclusive. Here are their differences:  
+The two main ways to group work items are by area path and by [parenting them under a portfolio WIT](#area-paths-and-hierarchical-grouping) as described early in this article. The two aren't mutually exclusive. Here are their differences:  
 - Area paths assigned to a team determine what work items appear in a team view: product backlog, portfolio backlog, delivery plans, or other portfolio planning tool 
 - Grouping work items under a parent feature or epic determine what rollup views are supported and how work appears in a portfolio planning tool   
 
@@ -338,7 +339,7 @@ For more information, see the following articles:
 > - Choose the `Node Name` field as a column option to view the leaf area node in a backlog list or board card. For more information, see [Customize cards](boards/customize-cards.md).
 > - Don't create parent-child links among work items of the same type, such as story-story, bug-bug, task-task.
 
-Most Azure Boards tools support a filtered view of work items based on area path or iteration path. You can also apply more filters based on keyword, assignment, work item type, and more. 
+Most Azure Boards tools support a filtered view of work items based on area path or iteration path. You can also apply more filters based on keyword, assignment, WIT, and more. 
 
 <a id="show-bugs" />
 
@@ -355,7 +356,7 @@ Determine with your team how you want to manage bugs. Then, [change your team se
 
 ::: moniker range="azure-devops"
 
-## System work item types on a backlog   
+## System WITs on a backlog   
 
 To track issues or impediments along with your requirements or in a portfolio backlog, add them to your custom Inherited process. For more information, see [Customize your backlogs or boards (Inheritance process)](../organizations/settings/work/customize-process-backlogs-boards.md#add-oob-to-backlog).
 
@@ -394,8 +395,7 @@ Iteration paths can be a flat list, or grouped under release milestones as shown
 
 :::image type="content" source="media/config-custom/iteration-paths-flat-or-grouped.png" alt-text="Screenshot of Iteration paths, grouped.":::
 
-> [!TIP]   
-> While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. For more information, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md).
+While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. For more information, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md).
 
 [!INCLUDE [temp](includes/list-sprint-dependent-tools.md)]
 
@@ -414,7 +414,7 @@ Any change made to a process that's applied to a project impacts all teams in th
 
 ### Custom fields
 
-Adding custom fields to a work item type doesn't impact any specific tool. The fields appear in the corresponding work items. If you add a custom numeric field, but, you can use it to support rollup on backlogs and the following reporting tools: 
+Adding custom fields to a WIT doesn't impact any specific tool. The fields appear in the corresponding work items. If you add a custom numeric field, but, you can use it to support rollup on backlogs and the following reporting tools: 
 - [In-context Velocity report and dashboard widget](../report/dashboards/team-velocity.md)
 - [In-context Sprint Burndown report and dashboard widget](../report/dashboards/configure-sprint-burndown.md)
 - [Dashboard Burndown and Burnup widget](../report/dashboards/configure-burndown-burnup-widgets.md)
@@ -422,9 +422,9 @@ Adding custom fields to a work item type doesn't impact any specific tool. The f
 > [!NOTE]   
 > All default and custom fields are shared across all projects in a collection or organization. There is a limit of 1024 fields that you can define for a process. 
 
-### Custom work item types 
+### Custom WITs 
 
-The following table shows the effects when you add a custom work item type to a specific category.
+The following table shows the effects when you add a custom WIT to a specific category.
 
 :::row:::
    :::column span="1":::
@@ -460,7 +460,7 @@ Each process supports a default workflow. This workflow defines the default colu
 [!INCLUDE [temp](includes/four-process-workflow.md)] 
 
 Sometimes, teams want to track the status of their work that goes beyond these default states. Support is provided in one of the following ways: 
-- Add custom workflow states to the work item type: This option impacts all teams and requires that they update their Kanban board configuration. 
+- Add custom workflow states to the WIT: This option impacts all teams and requires that they update their Kanban board configuration. 
 - [Add columns to a Kanban board](backlogs/set-column-options.md): This option only impacts the team that adds the columns.
 
 Both workflow states and Kanban columns appear in the Cumulative Flow diagram for a team. Individuals can choose which columns appear in the chart. For more information, see [Cumulative flow diagram](../report/dashboards/cumulative-flow.md). 
