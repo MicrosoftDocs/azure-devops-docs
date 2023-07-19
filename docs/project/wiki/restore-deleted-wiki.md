@@ -141,7 +141,7 @@ The wiki is restored.
  
 5. Create and complete a pull request.
 
-Your wiki page is restored
+Your wiki page is restored.
 
 ### Restore a wiki page with CLI
 
