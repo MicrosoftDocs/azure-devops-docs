@@ -247,13 +247,11 @@ Deleted packages will remain in the Recycle Bin for 30 days. After that, they'll
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Artifacts**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot of how to access Azure Artifacts.":::
+1. Select **Artifacts**, and then select **Recycle Bin**.
 
-1. Select **Recycle Bin**.
-
-    :::image type="content" source="../media/recycle-bin.png" alt-text="A screenshot showing how to access the recycle bin.":::
+    :::image type="content" source="../media/artifacts-recycle-bin.png" alt-text="A screenshot showing how to access the recycle bin.":::
 
 1. Select your package, and then select **Restore**.
 
@@ -296,6 +294,10 @@ A: *Unpublish* and *Deprecate* applies to npm packages, while *Unlist* and *Dele
 A: Old or existing packages will be soft-deleted and moved to the Recycle Bin. The deletion job runs once a day, but there might be an initial delay after the policy is turned on for the first time because of an influx of packages. 
 
 Packages remain in the Recycle Bin for 30 days before they're permanently deleted. To remove the packages from your billable storage, you can choose to delete them manually by using the UI or the REST API before the 30 days are up. 
+
+### Q: How long does it take for the billed storage amount to update after deleting Artifacts?
+
+A: Typically, storage consumption should be updated within 24 hours, although in certain cases it might take up to 48 hours for the changes to reflect. The Artifacts usage on the billing page of your organization is updated once a day. However, The Artifact Storage page is updated more frequently, which may lead to a minor discrepancy between the information displayed on the two pages.
 
 ## Related articles
 
