@@ -86,23 +86,17 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 
 Azure Artifacts is free for every organization up to 2 GiB of storage. Once you reach the maximum storage limit, you can no longer upload new artifacts and need to delete some of your existing artifacts or [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to increase your storage limit. See the [Pricing Calculator](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) to learn more about Azure DevOps billing.
 
-## Organization billing settings
+## View organization billing
 
 Follow the steps outlined below to view your billing settings for your organization:
 
 1. Sign in to your Azure DevOps organization.
 
-1. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
-
-    :::image type="content" source="../media/settings/open-admin-settings-vert.png" alt-text="A screenshot showing how to access the organization settings":::
-
-1. Select **Billing**.
-
-    :::image type="content" source="../organizations/billing/media/shared/select-billing-organization-settings.png" alt-text="A screenshot showing how to access the billing settings":::
+1. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**, and then select **Billing**.
 
 1. View your Artifacts tier and usage limit.
 
-    :::image type="content" source="media/billing-settings.png" alt-text="A screenshot showing Artifacts tier and usage limit":::
+    :::image type="content" source="media/organization-billing-artifacts.png" alt-text="A screenshot showing Artifacts tier and usage limit.":::
 
 ## View Artifacts storage consumption
 
