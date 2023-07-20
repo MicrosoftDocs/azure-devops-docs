@@ -51,7 +51,7 @@ In this tutorial, you will:
 
 1. Give your feed a **Name** and a **Description**, and set up **who can read** and **who can contribute**. Make sure you check the **Include external packages** checkbox, and then select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-dialog-tfs.png" alt-text="A screenshot showing how to create a new feed window in TFS.":::
+    :::image type="content" source="../media/create-new-feed-dialog.png" alt-text="A screenshot showing how to create a new feed window in TFS.":::
 
 ::: moniker-end
 
