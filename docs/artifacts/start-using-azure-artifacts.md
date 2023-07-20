@@ -108,6 +108,8 @@ Follow the steps outlined below to view your billing settings for your organizat
 
 - [Artifacts Storage - Project-level](./artifact-storage.md#project-level-storage)
 
+---
+
 ## FAQs
 
 ### Q: Which artifacts count toward my total billed storage?
