@@ -100,8 +100,13 @@ Follow the steps outlined below to view your billing settings for your organizat
 
 ## View Artifacts storage consumption
 
-- [Organization-level storage](./artifact-storage.md#organization-level-storage)
-- [Project-level storage](./artifact-storage.md#project-level-storage)
+### [Organization-level storage](#tab/orgstorage)
+
+- [Artifacts Storage - Organization-level](./artifact-storage.md#organization-level-storage)
+
+### [Project-level storage](#tab/projstorage)
+
+- [Artifacts Storage - Project-level](./artifact-storage.md#project-level-storage)
 
 ## FAQs
 
