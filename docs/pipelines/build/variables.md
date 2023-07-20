@@ -112,7 +112,13 @@ For more information, see [Review logs to diagnose pipeline issues](../troublesh
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 <= azure-devops-2022"
+::: moniker range="= azure-devops-2022"
+
+[!INCLUDE [include](includes/variables-server-2022.md)]
+
+::: moniker-end
+
+::: moniker range="= azure-devops-2020"
 
 [!INCLUDE [include](includes/variables-server-2020.md)]
 
