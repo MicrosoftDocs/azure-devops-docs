@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Microsoft-hosted agents
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 ::: moniker range="< azure-devops"
 
