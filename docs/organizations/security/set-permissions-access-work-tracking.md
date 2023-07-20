@@ -51,7 +51,7 @@ Custom rules don't control permissions, but they do affect whether a user can mo
 - Apply rules based on user or group membership of the user modifying a work item. For example:
   - Specify rules that restrict a group from creating a work item, transitioning a work item to a closed or completed state, or changing the value of a field.  
 
-There are some restrictions for applying custom rules to system fields. For example, you can't specify rules that set or clear the value for **Area Path** or **Iteration Path** as they're system fields. For more information, see [Rules and rule evaluation](../settings/work/rule-reference.md). and [Sample rule scenarios](../settings/work/rule-samples.md).   
+There are some restrictions for applying custom rules to system fields. For example, you can't specify rules that set or clear the value for **Area Path** or **Iteration Path** as they're system fields. For more information, see [Rules and rule evaluation](../settings/work/rule-reference.md) and [Sample rule scenarios](../settings/work/rule-samples.md).   
 
 ## Understand roles and permission levels for work tracking
 
@@ -145,7 +145,7 @@ Area path permissions let you grant or restrict access to edit or modify work it
 
 > [!NOTE]
 > Project members with permissions to create or edit **Area Paths** or **Iteration Paths** can't set team **Area Paths** and **Iteration Paths**. To configure team settings, you must be added to the [team administrator role](../settings/add-team-administrator.md) or be a member of the [**Project Administrators** group](change-project-level-permissions.md).
-* 
+ 
 ::: moniker range="azure-devops" 
 
 Define both areas and iterations for a project from the **Project Settings** > **Project configuration**. 
@@ -376,7 +376,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
     :::image type="content" source="media/process/mprocess-open-security-dialog-inherited.png" alt-text="Screenshot showing open Process, Open security dialog.":::
 
-2. Enter the user name, set the applicable permissions to **Allow**, and then exit. n you can exit. The page automatically saves. 
+2. Enter the user name, set the applicable permissions to **Allow**, and then exit. The page automatically saves. 
 
     Here we add Christie Church and allow Christie to edit the process.  
 
