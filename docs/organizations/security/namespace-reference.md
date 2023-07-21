@@ -175,7 +175,7 @@ The following table describes the namespaces that manage object-level permission
 ---
 :::row:::
    :::column span="1":::
-      GitRepositories <a id="git-repositories" />    
+      Git Repositories <a id="git-repositories" />    
    :::column-end:::
    :::column span="1":::
       `Administer`                
