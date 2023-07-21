@@ -7,9 +7,9 @@ ms.topic: include
 
 ### Kubernetes tasks now support kubelogin
 
-We have updated the  [KuberentesManifest@1](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1?view=azure-pipelines), [HelmDeploy@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/helm-deploy-v0?view=azure-pipelines), [Kubernetes@1](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/kubernetes-v1?view=azure-pipelines) and [AzureFunctionOnKubernetes@1](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-function-on-kubernetes-v1?view=azure-pipelines) tasks to support [kubelogin](https://learn.microsoft.com/azure/aks/managed-azure-ad#non-interactive-sign-in-with-kubelogin). This allows you to target Azure Kubernetes Service (AKS) configured with [Azure Active Directory integration](https://learn.microsoft.com/azure/aks/managed-azure-ad).
+We have updated the  [KuberentesManifest@1](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1), [HelmDeploy@0](/azure/devops/pipelines/tasks/reference/helm-deploy-v0), [Kubernetes@1](/azure/devops/pipelines/tasks/reference/kubernetes-v1) and [AzureFunctionOnKubernetes@1](/azure/devops/pipelines/tasks/reference/azure-function-on-kubernetes-v1) tasks to support [kubelogin](/azure/aks/managed-azure-ad#non-interactive-sign-in-with-kubelogin). This allows you to target Azure Kubernetes Service (AKS) configured with [Azure Active Directory integration](/azure/aks/managed-azure-ad).
 
-Kubelogin isn't pre-installed on [Hosted images](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml). To make sure above mentioned tasks use kubelogin, install it by inserting the [KubeloginInstaller@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/kubelogin-installer-v0?view=azure-pipelines) task before the task that depends on it:
+Kubelogin isn't pre-installed on [Hosted images](/azure/devops/pipelines/agents/hosted). To make sure above mentioned tasks use kubelogin, install it by inserting the [KubeloginInstaller@0](/azure/devops/pipelines/tasks/reference/kubelogin-installer-v0) task before the task that depends on it:
 
 ```yaml
  - task: KubeloginInstaller@0
@@ -21,7 +21,7 @@ Kubelogin isn't pre-installed on [Hosted images](https://learn.microsoft.com/azu
 
 ### Use Service Principal in Agent VM extension
 
-Azure VMs can be included in Deployment Groups using a [VM Extension](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template). The VM extension has been updated to optionally use a Service Principal instead of a PAT to register the agent:
+Azure VMs can be included in Deployment Groups using a [VM Extension](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops&preserve-view=true#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template). The VM extension has been updated to optionally use a Service Principal instead of a PAT to register the agent:
 
 ```
 "settings": {
@@ -36,7 +36,7 @@ Azure VMs can be included in Deployment Groups using a [VM Extension](/azure/dev
 
 ### Improvements to Approvals REST API
 
-[Approvals](https://learn.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#approvals) increase your YAML pipeline's security by giving you the possibility to manually review a deployment to production. We updated the [Approvals Query REST API](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/approvals/query) to make it more powerful. Now, you:
+[Approvals](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass&preserve-view=true#approvals) increase your YAML pipeline's security by giving you the possibility to manually review a deployment to production. We updated the [Approvals Query REST API](/rest/api/azure/devops/approvalsandchecks/approvals/query) to make it more powerful. Now, you:
 - Don't need to specify a list of `approvalId`s. All parameters are now optional.
 - Can specify a list of `userId`s to retrieve the list of approvals pending on these users. Currently, the REST API returns the list of approvals for which the users are explicitly assigned as approvers.
 - Can specify the `state` of the approvals to be returned, for example, `pending`.
@@ -102,7 +102,7 @@ Once you fix the erroneous check, you can just enable it.
 
 ### Updates to YAML cron schedules
 
-In YAML pipelines, you can define [scheduled triggers](https://learn.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml#scheduled-triggers) using the `cron` YAML property.
+In YAML pipelines, you can define [scheduled triggers](/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&preserve-view=true&tabs=yaml#scheduled-triggers) using the `cron` YAML property.
 
 We updated how the `batch` property works. In a nutshell, if you set `batch` to `true`, the cron schedule will _not_ run if another scheduled pipeline run is in progress. This is regardless of the version of the pipeline repository.
 
@@ -123,7 +123,7 @@ We make this possible by introducing a new predefined system variable named `Bui
 
 ### New toggles to control creation of classic pipelines
 
-Last year, we launched a Pipelines configuration setting to [disable creation of classic build and release pipelines](azure/devops/release-notes/2022/sprint-213-update#ensure-your-organization-only-uses-yaml-pipelines).
+Last year, we launched a Pipelines configuration setting to [disable creation of classic build and release pipelines](/azure/devops/release-notes/2022/sprint-213-update#ensure-your-organization-only-uses-yaml-pipelines).
 
 In response to your feedback, we have split the initial toggle into two: one for classic _build_ pipelines and one for classic _release_ pipelines, deployment groups, and task groups.
 
