@@ -15,15 +15,15 @@ ms.date: 07/21/2023
 
 When releasing a package, it is crucial to ensure that all dependencies of that package are available in your feed by consuming them from an upstream source. Once you consume a package from an upstream source, a copy of it is saved to your feed. This ensures that even if the upstream source becomes inaccessible, your copy will continue to be available to both you and your feed consumers.
 
-## How upstream sources construct the set of available packages
+## How upstreams construct the set of available packages
 
-Because Azure Artifacts feeds can have other feeds as upstream sources, it seems possible on the surface to have a cycle of upstream sources, where feed A upstreams to feed B, which upstreams to feed C, which upstreams back to feed A. Left unchecked, such a cycle could break package requests by creating an infinite loop where a user asks A for a package, then A asks B, then B asks C, then C asks A again, etc. Upstream sources are designed to prevent this failure.
+As Azure Artifacts feeds can have other feeds as upstreams, there is a potential for creating cycles of upstream sources, where feed A upstreams to feed B, which upstreams to feed C, and eventually, feed C upstreams back to feed A. Such a cycle, if not managed properly, could lead to issues with package requests, creating an infinite loop where a user requests a package from feed A, then A requests from B, then B requests from C, and finally, C requests back to A, forming a loop.
 
-When a feed consults its upstream sources for a package, Azure Artifacts will return the packages in the view configured for that upstream source. Thus, a query to feed A does not actually result in a transitive query to feed C (A -> B -> C), because views are read-only. A has access to any packages from C that a user of B has previously saved into B, but not the full set of packages available in C.
+Upstream sources are designed to handle this and prevent such situations. When a feed looks up a package from its upstream sources, it will receive the packages in the view configured for that upstream source. This means that querying feed A does not trigger a transitive query to feed C (A -> B -> C) because views are read-only. Consequently, feed A will have access to any packages from C that have been previously saved into B by a user, but not the full set of packages available in C.
 
-Thus, the onus falls to B to ensure that its local packages represent a complete dependency graph, so that users who consume B's package via an upstream source from another feed are able to successfully resolve the graph and install their desired B package.
+This places the responsibility on feed B to ensure that its local packages represent a complete dependency graph. By doing so, users who consume B's package via an upstream source from another feed can successfully resolve the graph and install their desired B package without encountering issues.
 
-## Example: constructing the set of available packages
+## Example: construct the set of available packages
 
 Assume three feeds, Fabrikam, Contoso, and AdventureWorks. In this example, we'll look at the packages available to the Fabrikam feed as we add upstream sources.
 
