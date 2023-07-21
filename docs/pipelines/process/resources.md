@@ -526,6 +526,9 @@ resources:
 
 Once you define a container as a resource, container image metadata gets passed to the pipeline in the form of variables. Information like image, registry, and connection details are accessible across all the jobs to be used in your container deploy tasks.
 
+Container resource variables work with Docker and Azure Container Registry. 
+You can't use container resource variables for local image containers. 
+
 ## [Schema](#tab/schema)
 
 ```yaml
