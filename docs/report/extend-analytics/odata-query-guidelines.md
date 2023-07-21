@@ -771,6 +771,7 @@ If the dataset exceeds the limit of 1000 records, the query immediately fails wi
 
 > *Query result contains 1,296 rows and it exceeds maximum allowed size of 1000. Please reduce the number of records by applying additional filters*
 
+For information about setting the max page size, see [ODataPreferenceHeader.MaxPageSize property](/dotnet/api/microsoft.odata.odatapreferenceheader.maxpagesize?view=odata-core-7.0&preserve-view=true).
 
 <a id="style"> </a>
 
