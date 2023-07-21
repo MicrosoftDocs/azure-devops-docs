@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Kubernetes tasks now support kubelogin
 
-We have updated the  [KuberentesManifest@1](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1), [HelmDeploy@0](/azure/devops/pipelines/tasks/reference/helm-deploy-v0), [Kubernetes@1](/azure/devops/pipelines/tasks/reference/kubernetes-v1) and [AzureFunctionOnKubernetes@1](/azure/devops/pipelines/tasks/reference/azure-function-on-kubernetes-v1?view=azure-pipelines) tasks to support [kubelogin](/azure/aks/managed-azure-ad#non-interactive-sign-in-with-kubelogin). This allows you to target Azure Kubernetes Service (AKS) configured with [Azure Active Directory integration](/azure/aks/managed-azure-ad).
+We have updated the  [KuberentesManifest@1](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1), [HelmDeploy@0](/azure/devops/pipelines/tasks/reference/helm-deploy-v0), [Kubernetes@1](/azure/devops/pipelines/tasks/reference/kubernetes-v1) and [AzureFunctionOnKubernetes@1](/azure/devops/pipelines/tasks/reference/azure-function-on-kubernetes-v1) tasks to support [kubelogin](/azure/aks/managed-azure-ad#non-interactive-sign-in-with-kubelogin). This allows you to target Azure Kubernetes Service (AKS) configured with [Azure Active Directory integration](/azure/aks/managed-azure-ad).
 
 Kubelogin isn't pre-installed on [Hosted images](/azure/devops/pipelines/agents/hosted). To make sure above mentioned tasks use kubelogin, install it by inserting the [KubeloginInstaller@0](/azure/devops/pipelines/tasks/reference/kubelogin-installer-v0) task before the task that depends on it:
 
@@ -36,7 +36,7 @@ Azure VMs can be included in Deployment Groups using a [VM Extension](/azure/dev
 
 ### Improvements to Approvals REST API
 
-[Approvals](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#approvals) increase your YAML pipeline's security by giving you the possibility to manually review a deployment to production. We updated the [Approvals Query REST API](/rest/api/azure/devops/approvalsandchecks/approvals/query) to make it more powerful. Now, you:
+[Approvals](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass&preserve-view=true#approvals) increase your YAML pipeline's security by giving you the possibility to manually review a deployment to production. We updated the [Approvals Query REST API](/rest/api/azure/devops/approvalsandchecks/approvals/query) to make it more powerful. Now, you:
 - Don't need to specify a list of `approvalId`s. All parameters are now optional.
 - Can specify a list of `userId`s to retrieve the list of approvals pending on these users. Currently, the REST API returns the list of approvals for which the users are explicitly assigned as approvers.
 - Can specify the `state` of the approvals to be returned, for example, `pending`.
