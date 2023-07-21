@@ -25,26 +25,28 @@ This places the responsibility on feed B to ensure that its local packages repre
 
 ## Example: construct the set of available packages
 
-Assume three feeds, Fabrikam, Contoso, and AdventureWorks. In this example, we'll look at the packages available to the Fabrikam feed as we add upstream sources.
+Let's consider three feeds: Fabrikam, Contoso, and AdventureWorks. In this illustration, we will examine the available packages to the Fabrikam feed as we introduce upstream sources.
 
-At first, Fabrikam has no upstream sources, and users connected to Fabrikam can only install versions 1.0.0 and 2.0.0 of the Widgets package. Likewise, Contoso has no upstream sources, and users connected to Contoso can only install versions 1.0.0 and 3.0.0 of the Gizmos package. Ditto for the AdventureWorks feed, where connected users can only install versions 1.0.0 and 2.0.0 of the Gadgets package or version 1.0.0 of the Things package.
+Initially, Fabrikam has no upstream sources, allowing users connected to Fabrikam to only install versions 1.0.0 and 2.0.0 of the Widgets package. Similarly, Contoso has no upstream sources, restricting users connected to Contoso to only install versions 1.0.0 and 3.0.0 of the Gizmos package. The same applies to the AdventureWorks feed, where connected users can only install versions 1.0.0 and 2.0.0 of the Gadgets package or version 1.0.0 of the Things package.
 
-:::image type="content" source="media/upstream-source-graph-1.svg" alt-text="three different feeds with no upstream sources":::
+:::image type="content" source="media/upstream-source-graph-1.svg" alt-text="An illustration showing three different feeds with no upstream sources.":::
 
-Next, consider what happens if Contoso adds AdventureWorks as an upstream source. A user connected to Contoso can install any version of Gizmos, any version of Gadgets, or any version of Things. If Gadgets@2.0.0 is installed, that package-version is saved to Contoso (with a link back to AdventureWorks).
+Now, let's explore the scenario where Contoso adds AdventureWorks as an upstream source. When a user is connected to Contoso, they gain access to a broader range of packages. They can install any version of Gizmos, Gadgets, or Things. For example, if the user installs Gadgets@2.0.0, this specific package-version will be saved to Contoso with a link back to AdventureWorks.
 
-:::image type="content" source="media/upstream-source-graph-2.svg" alt-text="Contoso adds AdventureWorks as an upstream source":::
+:::image type="content" source="media/upstream-source-graph-2.svg" alt-text="An illustration of Contoso adding AdventureWorks as an upstream source.":::
 
-Now, let's have the Fabrikam feed add Contoso as an upstream source. A user connected to Fabrikam can install any version of Widgets, any version of Gizmos, but **only saved** versions (2.0.0) of Gadgets.
+Now, let's consider a situation where the Fabrikam feed adds Contoso as an upstream source. A user connected to Fabrikam can install any version of Widgets, any version of Gizmos, but **ONLY SAVED** versions of Gadgets (2.0.0).
 
-:::image type="content" source="media/upstream-source-graph-3.svg" alt-text="Fabrikam adds Contoso as an upstream source":::
+:::image type="content" source="media/upstream-source-graph-3.svg" alt-text="An illustration of Fabrikam adding Contoso as an upstream source.":::
 
 The user will not be able to install version 1.0.0 of Gadgets or any version of Things, because those package versions haven't been saved to Contoso by a Contoso user.
 
-:::image type="content" source="media/upstream-source-graph-4.svg" alt-text="Fabrikam users unable to install Gadgets 1.0.0 and all versions of Things":::
+:::image type="content" source="media/upstream-source-graph-4.svg" alt-text="An illustration of packages available to Fabrikam users.":::
 
 ## Related articles 
 
-- [Key concepts](../artifacts-key-concepts.md)
-- [Use the .artifactignore file](../reference/artifactignore.md)
-- [componentization and composition](../collaborate-with-packages.md)
+- [Upstream sources](upstream-sources.md)
+
+- [Manage permissions](../feeds/feed-permissions.md)
+
+- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
