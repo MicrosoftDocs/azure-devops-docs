@@ -18,8 +18,6 @@ Using Azure Artifacts, you can publish and download Cargo packages to feeds and 
 
 - Download and install [rustup](https://rustup.rs/).
 
-- Install [msrustup](https://aka.ms/msrustup-win).
-
 ## Create a feed
 
 If you already have an existing Azure Artifacts feed that can be used for Cargo you can jump to the next section. 
@@ -59,13 +57,21 @@ If you already have an existing Azure Artifacts feed that can be used for Cargo 
 
 1. Select **Connect to feed**, and then select **Cargo** from the left navigation pane.
 
-1. Make sure you have installed rustup and msrustup and then run the following command to set the default toolchain:
+1. Make sure you have installed *rustup* and then run the following command to install the *nightly* toolchain and set it as the default toolchain:
 
     ```Command
-    rustup default ms-stable
+    rustup toolchain install nightly
+    rustup default nightly
     ```
 
-1. Add your feed source to your [.cargo/config.toml](https://doc.rust-lang.org/cargo/reference/config.html) file. Replace the placeholders with the appropriate values:
+1. Add the following snippet to your [.cargo/config.toml](https://doc.rust-lang.org/cargo/reference/config.html) to enable the *registry-auth* feature. Alternatively, the *registry-auth* feature can be enabled by passing `-Z registry-auth` on every Cargo command line that may access the network.
+
+    ```
+    [unstable]
+    registry-auth = true
+    ```
+
+1. Add your feed source to your *.cargo/config.toml* file. Replace the placeholders with the appropriate values:
 
     ```
     [registries]
