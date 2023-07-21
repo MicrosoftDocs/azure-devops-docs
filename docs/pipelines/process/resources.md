@@ -15,7 +15,7 @@ monikerRange: '>= azure-devops-2019'
 Resources in YAML represent sources of pipelines, builds, repositories, containers, packages, and webhooks.
 Resources also provide you the full traceability of the services used in your pipeline including the version, artifacts, associated commits, and work items. When you define a resource, it can be consumed anywhere in your pipeline. And, you can fully automate your DevOps workflow by subscribing to trigger events on your resources.
 
-For more information, see [About resources](about-resources.md).
+For more information, see [About resources](about-resources.md) and the [resources YAML schema definition](/azure/devops/pipelines/yaml-schema/resources).
 ### Schema
 
 ```yaml
