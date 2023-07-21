@@ -1,22 +1,19 @@
 ---
-title: Constructing a complete package graph
+title: Construct a complete package graph
 description: Package graphs in Azure Artifacts
 ms.assetid: 3f273ac7-3c2e-47d0-b333-3ca44c19bbf4
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.reviewer: amullans
 monikerRange: '<= azure-devops'
-ms.date: 2/6/2018
+ms.date: 07/21/2023
 ---
 
-# Constructing a complete package graph
+# Package graphs in Azure Artifacts
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-> [!NOTE]
-> Check your [package type](../start-using-azure-artifacts.md#feature-availability) to ensure compatibility with Azure DevOps Services or on-premises. 
-
-When you release a package, it's important to ensure that all the package dependencies are also available. Azure Artifacts recommend using [upstream sources](upstream-sources.md) to publish and consume package dependencies. When a package is consumed from an upstream source for the first time, a copy of that package is saved in the feed, so even if the upstream source goes down, your copy will remain available to you and your customers.
+When releasing a package, it is crucial to ensure that all dependencies of that package are available in your feed by consuming them from an upstream source. Once you consume a package from an upstream source, a copy of it is saved to your feed. This ensures that even if the upstream source becomes inaccessible, your copy will continue to be available to both you and your feed consumers.
 
 ## How upstream sources construct the set of available packages
 
