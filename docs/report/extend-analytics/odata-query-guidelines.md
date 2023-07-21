@@ -32,7 +32,7 @@ These guidelines are our recommendations prefixed with the terms **DO**, **CONSI
 
 ### **✔️ DO** review OData response warnings 
 
-Each query you execute gets checked against a set of predefined rules. Violations are returned back in the OData response following `@vsts.warnings`. Review these warnings as they provide current and context-sensitive information on how to improve your query. 
+Each query you execute gets checked against a set of predefined rules. Violations return the OData response following `@vsts.warnings`. Review these warnings as they provide current and context-sensitive information on how to improve your query. 
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
