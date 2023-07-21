@@ -7,29 +7,26 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/12/2022
+ms.date: 07/21/2023
 ---
 
 # OData Analytics query guidelines for Azure DevOps
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Extension developers can benefit by following the guidelines provided in this article for designing efficient OData queries against Analytics for Azure DevOps. Following these guidelines will help ensure the queries have good performance for execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
+Extension developers can benefit by following the guidelines provided in this article for designing efficient OData queries against Analytics for Azure DevOps. Following these guidelines helps ensure the queries have good performance for execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
-Guidelines are organized as simple recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID,** and **DON'T**. Restrictive rules enforced by Analytics contain the **[BLOCKED]** prefix. With these guidelines, you should understand the trade-offs between different solutions. Under certain circumstances, you may have data requirements that force you to violate one or more guidelines. Such cases should be rare. We recommend that you have a clear and compelling reason for such decisions.
+These guidelines are our recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID,** and **DON'T**. Restrictive rules enforced by Analytics contain the **[BLOCKED]** prefix. You should understand the trade-offs between different solutions. Under certain circumstances, you may have data requirements that force you to violate one or more guidelines. Such cases should be rare. We recommend that you have a clear and compelling reason for such decisions.
 
-> [!NOTE]
-> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+> [!TIP]
+> The examples shown in this document are based on an Azure DevOps Services URL. Use substitutions for on-premises versions.
 > 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 > ```
-> 
-
-
 
 ## Error and warning messages
 
@@ -50,7 +47,7 @@ Each query you execute gets checked against a set of predefined rules. Violation
 
 ### ✔️ DO review OData error messages 
 
-Queries that violate an OData error rule will result in a failed response with a 400 (Bad Request) status code. Associate messages don't appear within the `@vsts.warnings` property. Instead, they'll generate an error message in the `message` property in the JSON response. 
+Queries that violate an OData error rule results in a failed response with a 400 (Bad Request) status code. Associate messages don't appear within the `@vsts.warnings` property. Instead, they generate an error message in the `message` property in the JSON response. 
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -103,15 +100,15 @@ Queries that violate an OData error rule will result in a failed response with a
 
 ### ✔️ DO limit the query to the project(s) you have access to
 
-If your query targets data from a project you don't have access to, the query will return a "Project access denied" message. To ensure that you have access, make sure your **View analytics** permission is set to Allow for all projects that you query. To learn more, see [Permissions required to access Analytics](../powerbi/analytics-security.md).
+If your query targets data from a project you don't have access to, the query returns a "Project access denied" message. To ensure that you have access, make sure your **View analytics** permission is set to Allow for all projects that you query. To learn more, see [Permissions required to access Analytics](../powerbi/analytics-security.md).
 
-Here's the message you'll see if you don't have access to a project: 
+If you don't have access to a project, the following message displays: 
 
 ><em>The query results include data in one or more projects for which you don't have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you are using $expand or navigation properties, project filter is required for those entities.</em>
 
-<!---One of the core principles of Analytics is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to make sure that the target audience will be able to execute them. 
+<!---One of the core principles of Analytics is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to make sure that the target audience can execute them. 
 
-If a query tries to access the data in a project for which you don't have access, you will get the following error message.-->
+If a query tries to access the data in a project for which you don't have access, you get the following error message.-->
 
 To work around this problem, you can either explicitly add a project filter, or use the [project-scoped endpoint](#project-scoped-endpoint) as explained later in this article.
 
@@ -128,9 +125,9 @@ For example, the following query fetches work items that belong to projects name
 
 ### ✔️ DO specify project filter inside the `$expand` clause if your expansion could include data in other, potentially inaccessible projects
 
-When you expand navigation properties, there's a chance that you'll end up referencing data from other, inaccessible projects. If you reference inaccessible data, you'll receive the same error message listed previously, "*"The query results include data in one or more projects...*". Similarly, you can resolve this problem by adding explicit project filters to control the expanded data.
+When you expand navigation properties, there's a chance that you end up referencing data from other, inaccessible projects. If you reference inaccessible data, you receive the same error message listed previously, *"The query results include data in one or more projects...*". Similarly, you can resolve this problem by adding explicit project filters to control the expanded data.
 
-You can do so in the regular `$filter` clause for simple navigation properties. For example, the query below explicitly asks for `WorkItemLinks` where both the link and its target exist in the same project.
+You can do so in the regular `$filter` clause for simple navigation properties. For example, the following query explicitly asks for `WorkItemLinks` where both the link and its target exist in the same project.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -150,7 +147,7 @@ Instead, you can move the filter to `$filter` expand option in the `$expand` cla
 >   &$expand=TargetWorkItem($filter=ProjectSK eq {projectSK}; $select=WorkItemId, Title)
 > ```
 
-You'll find that the `$filter` expand option is useful when you use the expand collection property such as `Children` in `WorkItems` entity set. For example, the following query returns all work items from a given project together with all their children that belong in the same project. 
+The `$filter` expand option is useful when you use the expand collection property such as `Children` in `WorkItems` entity set. For example, the following query returns all work items from a given project together with all their children that belong in the same project. 
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -160,7 +157,7 @@ You'll find that the `$filter` expand option is useful when you use the expand c
 >   &$expand=Children($filter=ProjectSK eq {projectSK}; $select=WorkItemId, Title)
 > ```
 
-You'll need to specify the filter if you expand one of the following properties:
+Specify the filter if you expand one of the following properties:
 * `WorkItems` entity set: `Parent`, `Children`
 * `WorkItemLinks` entity set: `TargetWorkItem`.
 
@@ -194,7 +191,7 @@ You can apply this solution only when your focus is data from a single project. 
 
 ### ✔️ DO wait or stop the operation if your query exceeds usage limits
 
-If you execute many queries, or the queries require many resources to run, you might exceed service limits and get temporarily blocked. If you exceed the service limits, stop your operation as chances are that the next query you send will fail with the same error message.
+If you execute many queries, or the queries require many resources to run, you might exceed service limits and get temporarily blocked. If you exceed the service limits, stop your operation as chances are that the next query you send fails with the same error message.
 
 >*Request was blocked due to exceeding usage of resource '{resource}' in namespace '{namespace}'.*
 
@@ -205,7 +202,7 @@ To learn how to design efficient OData queries, refer to [Performance Guidelines
 
 ### ✔️ DO wait or stop the operation if your query fails with a timeout
 
-Similar to exceeding usage limits, you should wait or stop the operation if your query comes across a timeout. It could signal a transient problem, so you may retry once to see if the problem resolves. However, persistent timeouts indicate that the query is probably too expensive to run. Further retries will only result in exceeding usage limits and you'll get blocked.
+Similar to exceeding usage limits, you should wait or stop the operation if your query comes across a timeout. It could signal a transient problem, so you may retry once to see if the problem resolves. However, persistent timeouts indicate that the query is probably too expensive to run. Further retries only result in exceeding usage limits and you get blocked.
 
 >*TF400733: The request has been canceled: The request has exceeded request timeout, please try again.*
 
@@ -217,7 +214,7 @@ Timeouts indicate that a query requires optimization. To learn how to design eff
 
 Snapshot entity sets with the `Snapshot` suffix are special because they're modeled as *daily snapshots*. You can use them to get a state of entities as they were at the end of each day in the past. For example, if you queried `WorkItemSnapshot` and filter to a single `WorkItemId`, you would get one record for each day since the work item was created. Loading directly all of this data would be expensive and most likely would exceed usage limits and be blocked. However, aggregations on these entities are both allowed and recommended. In fact, the snapshot entity sets were designed with aggregation scenarios in mind.
 
-For example, the query below gets the number of work items as by date to observe how it grew in January 2020.
+For example, the following query gets the number of work items as by date to observe how it grew in January 2020.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -251,7 +248,7 @@ As the error messages hints, certain client tools can abuse direct entity addres
 
 ### ✔️ DO explicitly address entities with filter clauses
 
-If you want to fetch data for a single entity, you should use the same approach as for a collection of entities and explicitly define filters in the `$filter` clause.
+If you want to fetch data for a single entity, you should use the same approach as for a collection of entities, and explicitly define filters in the `$filter` clause.
 
 For example, the following query gets a single work item by its identifier.
 
@@ -279,7 +276,7 @@ If you're not sure which properties you should include in such a filter, you can
 
 ### ❌ [BLOCKED] DON'T expand `Revisions` on `WorkItem` entity
 
-The Analytics data model disallows certain types of expansions. One of them, which might be surprising to some, is the `Revisions` collection property on the `WorkItem` entity. If you try to expand this property, you'll receive the following error message.
+The Analytics data model disallows certain types of expansions. One of them, which might be surprising to some, is the `Revisions` collection property on the `WorkItem` entity. If you try to expand this property, you receive the following error message.
 
 >*The query specified in the URI is not valid. The property 'Revisions' cannot be used in the $expand query option.*
 
@@ -314,7 +311,7 @@ If you care about the full history for all the work items that match certain cri
 
 ### ❌ [BLOCKED] DON'T group on distinct columns
 
-You use a grouping operation to reduce the number of records. Using distinct columns in the `groupby` clause indicates a problem, and the query will fail immediately. Should you accidentally run into this situation, you'll receive the following error message. 
+You use a grouping operation to reduce the number of records. Using distinct columns in the `groupby` clause indicates a problem, and the query fails immediately. Should you accidentally run into this situation, you receive the following error message. 
 
 > *One or more of the columns specified in the groupby clause of this query are not recommended.*
 
@@ -324,7 +321,7 @@ To resolve this problem, remove the distinct column from the `groupby` clause.
 
 ### ❌ [BLOCKED] DON'T use `countdistinct` aggregation
 
-Analytics doesn't support the `countdistinct` function, even though OData does. While we plan to add support in the future, it currently isn't available. A query that contains this function will return the following error message.
+Analytics doesn't support the `countdistinct` function, even though OData does. While we plan to add support in the future, it currently isn't available. A query that contains this function returns the following error message.
 
 > *Queries which apply a count distinct with an aggregation are not supported.*
 
@@ -342,23 +339,22 @@ You can incur problems with long queries. Particularly, problems might occur whe
 - You query a project with many custom fields.
 - Your query is constructed programmatically. 
 
-The current limit of OData queries sent with `HTTP GET` is 3,000 characters. If you  exceed it, you'll get back a "*404 Not Found*" response.
+The current limit of OData queries sent with `HTTP GET` is 3,000 characters. If you  exceed it, you get back a "*404 Not Found*" response.
 
 ```http
 HTTP/1.1 404 Not Found
 Content-Length: 0
 ```
 
-To resolve this problem, use the OData batch endpoint as explained in the specification, [OData Version 4.0. Part 1: Protocol - 11.7 Batch Requests](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313). Batch capability was primarily designed to group multiple operations into a single `HTTP` request payload, but you can also use it as a workaround for the query length limitation. By sending an `HTTP POST` request, you can pass a query of an arbitrary length and it will be correctly interpreted by the service. 
-
+To resolve this problem, use the OData batch endpoint as explained in the specification, [OData Version 4.0. Part 1: Protocol - 11.7 Batch Requests](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313). Batch capability was primarily designed to group multiple operations into a single `HTTP` request payload, but you can also use it as a workaround for the query length limitation. By sending an `HTTP POST` request, you can pass a query of an arbitrary length and the service correctly interprets it. 
 
 <a name="odata_batch_query_size_invalid"></a>
 
 ### ❌ [BLOCKED] DON'T use batch endpoint for sending multiple queries
 
-We restrict use of the batch endpoint from handling a batch of multiple requests. A single request can still have only one query. If you try to send a batch of several queries, the operation will fail with the following error message. The only solution is to split queries into multiple requests.
+We restrict use of the batch endpoint from handling a batch of multiple requests. A single request can still have only one query. If you try to send a batch of several queries, the operation fails with the following error message. The only solution is to split queries into multiple requests.
 
-> *Analytics doesn't support processing of multiple operations which the current batch message contains. Analytics uses OData batch in order to support POST requests, but requires you limit the operation to a single request.*
+*Analytics doesn't support processing of multiple operations that the current batch message contains. Analytics uses OData batch in order to support POST requests, but requires that you limit the operation to a single request.*
 
 <a name="odata_query_result_width_invalid"></a>
 
@@ -376,7 +372,7 @@ Add a $select clause to your query, and to $expand operations in your query, to 
 
 We recommend that you evaluate your approach whenever you construct a long query. While there are many scenarios that need a long query (for example, complex filters or a long list of properties), typically they provide an early indicator of a suboptimal design. 
 
-When your query contains many entity keys in the query (for example, `WorkItemId eq {id 1} or WorkItemId eq {id 2} or ...`), you can probably rewrite it. Instead of passing the identifiers, try to define some other criteria that will select the same set of entities. Sometimes may need to modify your process (for example, add a new field or tag), but it's typically worth it. Queries that use more abstract filters are easier to maintain and have a greater potential to work better.
+When your query contains many entity keys in the query (for example, `WorkItemId eq {id 1} or WorkItemId eq {id 2} or ...`), you can probably rewrite it. Instead of passing the identifiers, try to define some other criteria that select the same set of entities. Sometimes may need to modify your process (for example, add a new field or tag), but it's typically worth it. Queries that use more abstract filters are easier to maintain and have a greater potential to work better.
 
 Another scenario that tends to generate long queries occurs when you include many individual dates (for example, `DateSK eq {dateSK 1} or DateSK eq {dateSK 2} or ...`). Look for  another pattern that you can use to create a more abstract filter. For example, the following query returns all work items that were created on Monday. 
 
@@ -387,12 +383,11 @@ Another scenario that tends to generate long queries occurs when you include man
 >   &$select=WorkItemId, Title, State
 > ```
 
-
 <a id="restrict-time-zone"> </a>
 
 ### ✔️ DO specify time zone when filtering on date columns
 
-The time zone (`Edm.DateTimeOffset`) exposes all date and time information with an offset that matches the [organization's time zone settings](../../organizations/accounts/change-time-zone.md). This data is precise and simple to interpret at the same time. Another non-obvious consequence is that all the filters have to pass the time zone information as well. If you skip it, you'll get the following error message.
+The time zone (`Edm.DateTimeOffset`) exposes all date and time information with an offset that matches the [organization's time zone settings](../../organizations/accounts/change-time-zone.md). This data is precise and simple to interpret at the same time. Another nonobvious consequence is that all the filters have to pass the time zone information as well. If you skip it, you get the following error message.
 
 > *The query specified in the URI is not valid. No datetime offset was specified.  Please use either of these formats YYYY-MM-ddZ to specify everything since midnight or yyyy-MM-ddThh:mm-hh:mm (ISO 8601 standard representation of dates and times) to specify the offset.*
 
@@ -405,7 +400,7 @@ To solve this problem, add the time zone information. For example, assuming that
 >   &$select=WorkItemId, Title, State
 > ```
 
-The same solution works for time zones with positive offsets, however, the plus character (`+`) has a special meaning in the URI and you must handle it correctly. If you specify `2020-01-01T00:00:00+08:00` (with a `+` character) as your starting point, you'll get the following error.
+The same solution works for time zones with positive offsets, however, the plus character (`+`) has a special meaning in the URI and you must handle it correctly. If you specify `2020-01-01T00:00:00+08:00` (with a `+` character) as your starting point, you get the following error.
 
 > *The query specified in the URI is not valid. Syntax error at position 31 in 'CreatedDate ge 2020-01-01T0000 08:00'.*
 
@@ -453,7 +448,7 @@ An alternative approach is to use date surrogate key properties as they don't ke
 
 ### Consider
 
-- [✔️ CONSIDER writing query to return small number of records](#perf-small-number) 
+- [✔️ CONSIDER writing queries to return small numbers of records](#perf-small-number) 
 - [✔️ CONSIDER limiting the number of selected properties to minimum](#perf-limit-number) 
 - [✔️ CONSIDER filtering on date surrogate key properties (`DateSK` suffix)](#perf-filter-date) 
 - [✔️ CONSIDER filtering on surrogate key columns](#perf-filter-surrogate)
@@ -464,10 +459,6 @@ An alternative approach is to use date surrogate key properties as they don't ke
 
 - [❌ AVOID using `Parent`, `Children`, or `Revisions` properties in the `$filter` or `$expand` clauses](#perf-avoid-parent-child)
 
-
-
-
-
 <a id="measure-impact"> </a>
 
 ### ✔️ DO measure the effect of implementing a performance guideline
@@ -476,13 +467,13 @@ As with any performance recommendations, you shouldn't blindly implement them. I
 
 There are many options to measure performance. The simplest one is to run two versions of the same query directly in the browser. Observe the time it takes in the developer tools. For example, you can use [Network panel](/microsoft-edge/devtools-guide/network#network-request-list) in [Microsoft Edge F12 Developer Tools](/microsoft-edge/devtools-guide)). Another option is to capture this information using [Fiddler Web Debugger Tool](/windows/win32/win7appqual/fiddler-web-debugger-tool). 
 
-Whatever your approach is, run both queries multiple times. For example, run the queries 30 times each to have a sufficiently large sample set. Then figure out the performance characteristics. Analytics follows multi-tenant architecture. So, duration of your queries might be affected by other operations that occur at the same time. 
+Whatever your approach is, run both queries multiple times. For example, run the queries 30 times each to have a sufficiently large sample set. Then figure out the performance characteristics. Analytics follows multi-tenant architecture. So, other operations occurring at the same time can affect the duration of your queries. 
 
 <a id="use-aggregation"> </a>
 
 ### ✔️ DO use aggregation extensions
 
-By far the best thing you can do to improve performance of your queries is to use aggregation extension - [OData Extension for Data Aggregation](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html). With the aggregation extension, ask the service to summarize data server-side and return a much smaller response than what you can fetch by applying the same function client-side. Finally, Analytics is optimized for this type of queries, so make use of it. 
+By far the best thing you can do to improve performance of your queries is to use aggregation extension - [OData Extension for Data Aggregation](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html). With the aggregation extension, ask the service to summarize data server-side and return a smaller response than what you can fetch by applying the same function client-side. Finally, Analytics is optimized for this type of queries, so make use of it. 
 
 To learn more, see [Aggregate data](aggregated-data-analytics.md).
 
@@ -501,15 +492,15 @@ For example, the following query specifies the columns for work items.
 > ```
 > 
 > [!NOTE]
-> Azure DevOps supports process customization. Some administrators use this feature and create hundreds of custom fields. If you omit the `$select` clause, your query will return all fields, including custom fields.
+> Azure DevOps supports process customization. Some administrators use this feature and create hundreds of custom fields. If you omit the `$select` clause, your query returns all fields, including custom fields.
 
 <a id="specify-columns-select"> </a>
 
 ### ✔️ DO specify columns in the `$select` expand option inside the `$expand` clause
 
-Similarly to the `$select` clause guidelines, specify the properties in the `$select` expand option within the `$expand` clause. It's easy to forget, but if you omit it, your response will contain all the properties from the expanded object.
+Similarly to the `$select` clause guidelines, specify the properties in the `$select` expand option within the `$expand` clause. It's easy to forget, but if you omit it, your response contains all the properties from the expanded object.
 
-For example, the query below specifies the columns for both the work item and its parent.
+For example, the following query specifies the columns for both the work item and its parent.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -524,7 +515,7 @@ For example, the query below specifies the columns for both the work item and it
 
 When you query for historical data, the chances are that you're interested in the most recent period (for example, 30 days, 90 days). Because of how work items entities are implemented,  there's a convenient way for you to write such queries to get great performance. Each time you update a work item it creates a new revision and records this action in the `System.RevisedDate` field, which makes it perfect for history filters.
 
-In Analytics, the revised date is represented by `RevisedDate` (`Edm.DateTimeOffset`) and `RevisedDateSK` (`Edm.Int32`) properties. For best performance, use the latter. It's the date *surrogate key* and it represents the date when a revision was created or it has `null` for active, incompleted revisions. If you want all the dates since the `{startDate}` inclusive, add the following filter to your query.
+In Analytics, the revised date is shown in the `RevisedDate` (`Edm.DateTimeOffset`) and `RevisedDateSK` (`Edm.Int32`) properties. For best performance, use the latter. It's the date *surrogate key* and it represents the date when a revision was created or it has `null` for active, incompleted revisions. If you want all the dates since the `{startDate}` inclusive, add the following filter to your query.
 
 `RevisedDateSK eq null or RevisedDateSK gt {startDateSK}`
 
@@ -550,7 +541,7 @@ For example, the following query returns the number of work items for each day s
 
 ### ✔️ DO use weekly or monthly snapshots for trend queries that span a long time period  
 
-By default, all the snapshot tables are modeled as *daily snapshot fact* tables. If you query for a time range it will get a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots. 
+By default, all the snapshot tables are modeled as *daily snapshot fact* tables. If you query for a time range it gets a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots. 
 
 You can do so with other filter expressions to remove days that don't finish a given week or month. Use the `IsLastDayOfPeriod` property, which was added to Analytics with this scenario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can determine if a day finishes in different periods (for example, weeks, months, and so on).
 
@@ -644,16 +635,16 @@ For example, the following query gets all the work items that were tagged with a
 > ```
 > 
 > [!IMPORTANT]
-> Property `TagNames` has a length limit of 1024 characters. It contains a set of tags that fit within that limit. If a work item has many tags or the tags are very long, then `TagNames` will not contain the full set and `Tag` navigation property should be used instead.
+> Property `TagNames` has a length limit of 1024 characters. It contains a set of tags that fit within that limit. If a work item has many tags or the tags are very long, then `TagNames` don't contain the full set and `Tag` navigation property should be used instead.
 
 
 <a id="perf-case-sensitive"> </a>
 
 ### ❌ DON'T use `tolower` and `toupper` functions to do case-insensitive comparison
 
-If you've worked with other systems, you might expect you need to use `tolower` or `toupper` functions for the case-insensitive comparison. With Analytics all the string comparisons are case-insensitive by default, so you don't need to apply any functions to explicitly handle it.
+If you've worked with other systems, you might expect to use the `tolower` or `toupper` functions for the case-insensitive comparison. With Analytics, all the string comparisons are case-insensitive by default, so you don't need to apply any functions to explicitly handle it.
 
-For example, the following query gets all the work items tagged with "QUALITY", "quality" or any other case combination of this word.
+For example, the following query gets all the work items tagged with "QUALITY," "quality," or any other case combination of this word.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -668,13 +659,13 @@ For example, the following query gets all the work items tagged with "QUALITY", 
 
 OData has the capability to expand all the levels of a hierarchical structure. For example, work item tracking has some entities where an unbounded expansion could be applied. This operation works only for organizations with a small amount of data. It doesn't scale well for larger datasets. Don't use it at all if:
 - You're working with large datasets.
-- You're developing a widget and you have no control over where the widget will be installed.
+- You're developing a widget and you have no control over where the widget gets installed.
 
 <a id="perf-paging"> </a>
 
 ### ✔️ DO use server-driven paging
 
-If you ask for a set that is too large to be sent in a single response, Analytics will apply paging. The response will include only a partial set and a link that allows retrieving the next partial set of items. This strategy is described in the OData specification - [OData Version 4.0. Part 1: Protocol - Server-Driven Paging](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Server-Driven_Paging). By letting the service control the paging, you get the best performance as the `skiptoken` has been carefully design for each entity to be as efficient as possible.
+If you ask for a set that is too large to be sent in a single response, Analytics applies paging. The response includes only a partial set and a link that allows retrieving the next partial set of items. This strategy is described in the OData specification - [OData Version 4.0. Part 1: Protocol - Server-Driven Paging](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Server-Driven_Paging). By letting the service control the paging, you get the best performance as the `skiptoken` has been carefully design for each entity to be as efficient as possible.
 
 The link to the next page is included in the `@odata.nextLink` property.
 
@@ -762,9 +753,9 @@ For example, instead of expanding `Parent`, you can fetch more work items and us
 
 ### ✔️ CONSIDER passing `VSTS.Analytics.MaxSize` preference in the header
 
-When you execute a query,  you don't know the number of records that the query will return.  You have to either send another query with aggregations or follow all the next links and fetch the entire dataset. Analytics respects `VSTS.Analytics.MaxSize` preference, which lets you fail fast in those instances that the dataset is bigger than what your client can accept. 
+When you execute a query, you don't know the number of records that the query returns. Either send another query with aggregations or follow all the next links and fetch the entire dataset. Analytics respects `VSTS.Analytics.MaxSize` preference, which lets you fail fast in those instances that the dataset is bigger than what your client can accept. 
 
-This option is helpful in data export scenarios. To use it, you have to add `Prefer` header to your HTTP request and set `VSTS.Analytics.MaxSize` to a non-negative value. The `VSTS.Analytics.MaxSize` value represents the maximum number of records you can accept. If you set it to zero, then a default value of 200K will be used.
+This option is helpful in data export scenarios. To use it, you have to add `Prefer` header to your HTTP request and set `VSTS.Analytics.MaxSize` to a non-negative value. The `VSTS.Analytics.MaxSize` value represents the maximum number of records you can accept. If you set it to zero, then a default value of 200 K gets used.
 
 For example, the following query returns work items if the dataset is smaller or equal to 1000 records.
 
@@ -776,7 +767,7 @@ OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
 Host: analytics.dev.azure.com/{OrganizationName}
 ```
-If the dataset exceeds the limit of 1000 records, the query will immediately fail with the following error.
+If the dataset exceeds the limit of 1000 records, the query immediately fails with the following error.
 
 > *Query result contains 1,296 rows and it exceeds maximum allowed size of 1000. Please reduce the number of records by applying additional filters*
 
@@ -850,7 +841,7 @@ If you want to add `filter` to your query, you have two options. You can either 
 
 Despite the expectation one might have, OData clearly defines an order of the evaluation. Also, the `$apply` clause has priority over `$filter`. For this reason, you should choose one or another but avoid these two filter options in a single query. It's important if the queries are generated automatically.
 
-For example, the following query first filters work items by `StoryPoint gt 5`, aggregates results by are path and finally filters the result by `StoryPoints gt 2`. With this evaluation order, the query will always return an empty set.
+For example, the following query first filters work items by `StoryPoint gt 5`, aggregates results by are path and finally filters the result by `StoryPoints gt 2`. With this evaluation order, the query always returns an empty set.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
