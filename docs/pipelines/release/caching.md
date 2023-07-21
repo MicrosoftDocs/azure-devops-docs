@@ -134,7 +134,7 @@ steps:
 
 In this example, the cache task attempts to find if the key exists in the cache. If the key doesn't exist in the cache, it tries to use the first restore key `yarn | $(Agent.OS)`.
 This will attempt to search for all keys that either exactly match that key or has that key as a prefix. A prefix hit can happen if there was a different `yarn.lock` hash segment.
-For example, if the following key `yarn | $(Agent.OS) | old-yarn.lock` was in the cache where the old `yarn.lock` yielded a different hash than `yarn.lock`, the restore key will yield a partial hit.
+For example, if the following key `yarn | $(Agent.OS) | old-yarn.lock` was in the cache where the `old-yarn.lock` yielded a different hash than `yarn.lock`, the restore key will yield a partial hit.
 If there's a miss on the first restore key, it will then use the next restore key `yarn` which will try to find any key that starts with `yarn`. For prefix hits, the result will yield the most recently created cache key as the result.
 
 > [!NOTE]
