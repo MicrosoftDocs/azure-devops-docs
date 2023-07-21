@@ -19,12 +19,12 @@ In addition to the warnings in Phase 1, we show warnings in a pipeline run’s d
 We show warnings in the Stages card. For example, this is how it looks for a stage named Deployment FabrikamFiber Feed WUS1 that accessed resources protected by non-compliant checks.
 
 > [!div class="mx-imgBorder"]
-> ![Scalable Checks.](../../media/225-pipelines-01.png)
+> ![Scalable Check.](../../media/225-pipelines-01.png)
 
 If you open the Approvals and checks side panel, we show warnings next to the non-compliant check.
 
 > [!div class="mx-imgBorder"]
-> ![Scalable Checks.](../../media/225-pipelines-02.png)
+> ![Scalable Check approve.](../../media/225-pipelines-02.png)
 
 ### Centralised control for building PRs from forked GitHub repos
 
