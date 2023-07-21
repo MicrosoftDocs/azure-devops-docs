@@ -17,15 +17,16 @@ When releasing a package, it is crucial to ensure that all dependencies of that 
 
 ## How upstreams construct the set of available packages
 
-As Azure Artifacts feeds can have other feeds as upstreams, there is a potential for creating cycles of upstream sources, where feed A upstreams to feed B, which upstreams to feed C, and eventually, feed C upstreams back to feed A. Such a cycle, if not managed properly, could lead to issues with package requests, creating an infinite loop where a user requests a package from feed A, then A requests from B, then B requests from C, and finally, C requests back to A, forming a loop.
+As Azure Artifacts feeds can have other feeds as upstreams, there's a potential for creating cycles of upstream sources, where feed *A* upstreams to feed *B*, which upstreams to feed *C*, and eventually, feed *C* upstreams back to feed *A*. Such a cycle, if not managed properly, could lead to issues with package requests, creating an infinite loop where a user requests a package from feed *A*, then *A* requests from *B*, then *B* requests from *C*, and finally, *C* requests back to *A*, forming a loop.
 
-Upstream sources are designed to handle this and prevent such situations. When a feed looks up a package from its upstream sources, it will receive the packages in the view configured for that upstream source. This means that querying feed A does not trigger a transitive query to feed C (A -> B -> C) because views are read-only. Consequently, feed A will have access to any packages from C that have been previously saved into B by a user, but not the full set of packages available in C.
+Upstream sources are designed to handle this and prevent such situations. When a feed looks up a package from its upstream sources, it will receive the packages in the view configured for that upstream source. This means that querying feed A doesn't trigger a transitive query to feed *C* (A -> B -> C) because views are read-only. 
+As a result, feed *A* will have access to any packages from *C* that have been previously saved into *B* by a user, but not the full set of packages available in *C*.
 
-This places the responsibility on feed B to ensure that its local packages represent a complete dependency graph. By doing so, users who consume B's package via an upstream source from another feed can successfully resolve the graph and install their desired B package without encountering issues.
+This places the responsibility on feed *B* to ensure that its local packages represent a complete dependency graph. By doing so, users who consume B's package via an upstream source from another feed can successfully resolve the graph and install their desired *B* package without encountering issues.
 
 ## Example: construct the set of available packages
 
-Let's consider three feeds: Fabrikam, Contoso, and AdventureWorks. In this illustration, we will examine the available packages to the Fabrikam feed as we introduce upstream sources.
+Let's consider three feeds: Fabrikam, Contoso, and AdventureWorks. In this illustration, we'll examine the available packages to the Fabrikam feed as we introduce upstream sources.
 
 Initially, Fabrikam has no upstream sources, allowing users connected to Fabrikam to only install versions 1.0.0 and 2.0.0 of the Widgets package. Similarly, Contoso has no upstream sources, restricting users connected to Contoso to only install versions 1.0.0 and 3.0.0 of the Gizmos package. The same applies to the AdventureWorks feed, where connected users can only install versions 1.0.0 and 2.0.0 of the Gadgets package or version 1.0.0 of the Things package.
 
@@ -39,7 +40,7 @@ Now, let's consider a situation where the Fabrikam feed adds Contoso as an upstr
 
 :::image type="content" source="media/upstream-source-graph-3.svg" alt-text="An illustration of Fabrikam adding Contoso as an upstream source.":::
 
-The user will not be able to install version 1.0.0 of Gadgets or any version of Things, because those package versions haven't been saved to Contoso by a Contoso user.
+The user won't be able to install version 1.0.0 of Gadgets or any version of Things, because those package versions haven't been saved to Contoso by a Contoso user.
 
 :::image type="content" source="media/upstream-source-graph-4.svg" alt-text="An illustration of packages available to Fabrikam users.":::
 
