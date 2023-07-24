@@ -173,8 +173,6 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
 
 1. Save and run your pipeline. 
 
-1. Verify that your app deployed by going to https://tailspin-space-game-web-dev-1234.azurewebsites.net in your browser. Substitute `1234` with the unique value for your site. 
-
 ## Add the Staging stage 
 
 Last, you'll promote the Dev stage to Staging. Unlike the Dev environment, you want to have more control in the staging environment you'll add a manual approval. 
@@ -229,8 +227,6 @@ You'll add new stage, `Staging` to the pipeline that includes a manual approval.
 1. Review the approval and allow the pipeline to run. 
  
     :::image type="content" source="media/mutistage-pipeline/pipeline-check-manual-validation.png" alt-text="Screenshot of manual validation check.":::
-    
-1. Verify that your app deployed by going to https://tailspin-space-game-web-staging-1234.azurewebsites.net in your browser. Substitute `1234` with the unique value for your site. 
 
 ## Clean up resources
 
