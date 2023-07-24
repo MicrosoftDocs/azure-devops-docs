@@ -44,7 +44,7 @@ As Visual Studio subscribers sign in to the organization, they're  automatically
 
 ## Builds
 
-Next, you want to configure your build agents. As part of the migration, all of your build pipelines have been brought over, but agents and pools need to be reconfigured against the new organization. Azure DevOps offers the ability to use a Microsoft-hosted pool of build agents that you can use, or you can connect your self-hosted build agent(s). It's important to note that only one self-hosted build agent is included for free. After that there's a [fee](https://visualstudio.microsoft.com/products/visual-studio-team-services-pricing-vs.aspx) for having more self-hosted build agents. To pay for Microsoft-hosted and self-hosted build agents, you need to link a subscription to your organization. See the following resources for details on performing this task:
+Next, you want to configure your build agents. As part of the migration, all of your build pipelines have been brought over, but agents and pools need to be reconfigured against the new organization. Azure DevOps offers the ability to use a Microsoft-hosted pool of build agents that you can use, or you can connect your self-hosted build agent(s). It's important to note that only one self-hosted build agent is included for free. After that there's a [fee](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/) for having more self-hosted build agents. To pay for Microsoft-hosted and self-hosted build agents, you need to link a subscription to your organization. See the following resources for details on performing this task:
 
 * [Build Agents](../pipelines/agents/agents.md) 
 
