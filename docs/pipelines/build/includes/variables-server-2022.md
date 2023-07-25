@@ -214,6 +214,12 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 </tr>
 
 <tr>
+<td>Build.CronSchedule.DisplayName</td>
+<td>The <code>displayName</code> of the cron schedule that triggered the pipeline run. This variable is only set if the pipeline run is triggered by a YAML scheduled trigger. For more information, see <a href="/azure/devops/pipelines/yaml-schema/schedules-cron#buildcronscheduledisplayname-variable">schedules.cron definition - Build.CronSchedule.DisplayName variable</a>. This variable is available in Azure DevOps Server 2022.1 and higher.</td>
+<td>Yes</td>
+</tr>
+
+<tr>
 <td>Build.DefinitionName</td>
 <td>The name of the build pipeline.
 <br><br>
@@ -731,7 +737,7 @@ Otherwise, it's set to <code>False</code>.</td>
 
 <tr>
 <td>System.PullRequest.targetBranchName</td>
-<td>The name of the target branch for a pull request. This variable can be used in a pipelines to conditionally execute tasks or steps based on the target branch of the pull request. For example, you might want to trigger a different set of tests or code analysis tools depending on the branch that the changes are being merged into.
+<td>The name of the target branch for a pull request. This variable can be used in a pipeline to conditionally execute tasks or steps based on the target branch of the pull request. For example, you might want to trigger a different set of tests or code analysis tools depending on the branch that the changes are being merged into.
 </td>
 <td>No</td>
 </tr>
