@@ -26,7 +26,7 @@ If you open the Approvals and checks side panel, we show warnings next to the no
 > [!div class="mx-imgBorder"]
 > ![Scalable Check approve.](../../media/225-pipelines-02.png)
 
-### Centralised control for building PRs from forked GitHub repos
+### Centralized control for building PRs from forked GitHub repos
 
 If you build public repositories from GitHub, you must consider your stance on fork builds. Forks are especially dangerous since they come from outside your organization. 
 
