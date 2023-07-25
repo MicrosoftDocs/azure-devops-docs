@@ -90,9 +90,10 @@ In other words, **copy** a work item to create a new work item with prepopulated
 ::: moniker range="azure-devops-2019"
 
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
-    ![web portal, user story work item form, open context menu, click Create copy of work item](media/copy/choose-copy-work-item-s171.png) 
 
-1. Choose the project and work item type if different from the copied work item.   
+   :::image type="content" source="media/copy/choose-copy-work-item-s171.png" alt-text="Screenshot of web portal, user story work item form, open context menu, select Create copy of work item.":::
+
+2. Choose the project and work item type if different from the copied work item.   
 
     :::image type="content" source="media/copy/copy-work-item-2020.png" alt-text="Copy work item dialog":::
 
@@ -101,9 +102,9 @@ In other words, **copy** a work item to create a new work item with prepopulated
 	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
 	- **Include existing attachments**: To include attachments in the copied work item.
 
-1. Choose **OK**.
+3. Select **OK**.
 
-1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
+4. In the work item form that opens, update other fields as needed. All work items start in the New state.  
 
 ::: moniker-end
 
@@ -114,7 +115,7 @@ In other words, **copy** a work item to create a new work item with prepopulated
 
     ![Copy work item dialog](media/copy-work-item-copy-clone-ts-dialogue.png)  
 
-1. Choose **OK**.
+1. Select **OK**.
 
 1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
 ::: moniker-end
@@ -129,8 +130,6 @@ In other words, **copy** a work item to create a new work item with prepopulated
 If you have a large number of work items whose type you want to change, use [Change work item type](move-change-type.md). If the **Change work item type** option isn't available to you, you can export a set of work items using Excel or CSV, copy them to a new list, and reimport them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md). 
 
 ::: moniker-end
-
-<a id="html"></a>
 
 ## Copy a list of work items  
 
@@ -170,7 +169,7 @@ Copy the URL from the web browser address or hover over the title and then selec
 
 ### [Visual Studio](#tab/visual-studio/)
 
-In Visual Studio, right-click the work item tab to copy the URL. The URL opens the work item in the web portal.  
+In Visual Studio, right-select the work item tab to copy the URL. The URL opens the work item in the web portal.  
 
 ![Copy full path hyperlink for a work item from Visual Studio](media/add-work-items-copy-url-for-a-work-item.png)
 

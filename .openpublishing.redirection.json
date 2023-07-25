@@ -324,6 +324,11 @@
       "source_path": "docs/boards/boards/best-practices-kanban.md",
       "redirect_url": "/azure/devops/boards/boards/kanban-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/notifications/add-links-to-work-items.md",
+      "redirect_url": "/azure/devops/boards/backlogs/add-link",
+      "redirect_document_id": false
     }
   ]
 }
