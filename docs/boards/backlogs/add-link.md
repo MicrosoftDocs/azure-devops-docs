@@ -206,38 +206,10 @@ From the **Add link** dialog, you can open a secondary dialog to help you choose
 
    :::image type="content" source="media/add-link/keyword-pr-link.png" alt-text="Screenshot of entering keyword after # and resulting work item in search":::
 
-::: moniker range=">= azure-devops-2020"
-
-### Set work item state in pull request
-
-[!INCLUDE [temp](../../includes/set-work-item-state-pull-request.md)]
-
-Azure DevOps considers the following criteria (in this order) when it attempts to set the state of #mentioned work items: State, State Category, and Keyword.
-
-#### Criteria logic for work item state
-The following table describes the criteria logic for work item state.
-
-| **Criteria**       | **Action**                 |
-|--------------------|----------------------------|
-| **If** the value matches a state,               | **Then** set it to that state.    |
-| **Else If** the value matches a state category, | **Then** set the work item to first state in that category.|
-| **Else If** the value matches a keyword,        | **Then** set the work item to matching keyword state.  |
-| **Else**                                        | Ignore it and do nothing.          |
-
-> [!NOTE]  
-> We don't support category matching on projects using a Hosted XML process. Category matching is only available for projects that are using an inherited process.
-
 ::: moniker-end
-
-[!INCLUDE [temp](../../includes/link-work-item-builds-projects.md)]
-
-For more information, see [Link work items to user stories, issues, bugs, and other work items](../../boards/backlogs/add-link.md)
 
 [!INCLUDE [temp](../../boards/includes/view-linked-objects.md)]
 
-## Set work item state in pull request
-
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/set-work-item-state-pull-request.md)]
 
@@ -248,9 +220,7 @@ Other features you can use to quickly link or change links that use the parent-c
 - To quickly link backlog items to portfolio backlog items with parent-child links, [use the mapping pane to organize your backlog](organize-backlog.md#mapping). Or, you can choose to Show Parents and [drag-and-drop items within the tree hierarchy](organize-backlog.md).  
 - To create and link tasks to backlog items, [use the sprint backlog page](../sprints/assign-work-sprint.md).  
 - To indent (![Indent](../queries/media/IC588323.png)), outdent (![Outdent](../queries/media/IC588324.png)), and change the tree hierarchy, use a tree query in Visual Studio.  
-- To add or delete work items or change the link structure, you can use Excel. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
-
-[!INCLUDE [temp](../includes/view-linked-objects.md)]
+- To add or delete work items or change the link structure, you can use Excel. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
 <a id="azure-cli" />
 
