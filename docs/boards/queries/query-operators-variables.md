@@ -543,14 +543,15 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
    :::column span="3":::
    **String** , **DateTime**
 
+   > [!NOTE]
+   > **Was Ever** on date fields is not currently supported when using the Query Editor. They are only supported when doing a direct WIQL.
+
    :::column-end:::
 :::row-end:::
 
 
 > [!TIP] 
 > It's possible to contsruct a query using WIQL syntax that uses an operator, such as **Was Ever**, for other data type fields than those listed. For example, you can use **Was Ever** within a clause using the **Iteration Path**. For an example, see [Query by date or current iteration, List work items moved out of a sprint](query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
-
-**Was Ever** on date fields is not currently supported when using the Query Editor.
 
 <a id="variables" /> 
 <a id="macros" /> 
