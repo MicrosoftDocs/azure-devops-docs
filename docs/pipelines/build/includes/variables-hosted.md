@@ -216,7 +216,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <tr>
 <td>Build.CronSchedule.DisplayName</td>
 <td>The <code>displayName</code> of the cron schedule that triggered the pipeline run. This variable is only set if the pipeline run is triggered by a YAML scheduled trigger. For more information, see <a href="/azure/devops/pipelines/yaml-schema/schedules-cron#buildcronscheduledisplayname-variable">schedules.cron definition - Build.CronSchedule.DisplayName variable</a></td>
-<td>No</td>
+<td>Yes</td>
 </tr>
 
 <tr>
