@@ -737,7 +737,7 @@ Otherwise, it's set to <code>False</code>.</td>
 
 <tr>
 <td>System.PullRequest.targetBranchName</td>
-<td>The name of the target branch for a pull request. This variable can be used in a pipelines to conditionally execute tasks or steps based on the target branch of the pull request. For example, you might want to trigger a different set of tests or code analysis tools depending on the branch that the changes are being merged into.
+<td>The name of the target branch for a pull request. This variable can be used in a pipeline to conditionally execute tasks or steps based on the target branch of the pull request. For example, you might want to trigger a different set of tests or code analysis tools depending on the branch that the changes are being merged into.
 </td>
 <td>No</td>
 </tr>
