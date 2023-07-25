@@ -114,6 +114,29 @@ If you delete a workspace that contains pending changes, TFVC cancels the pendin
 > [!NOTE]
 > Commands that run manually require the `/noprompt` option to bypass user acknowledgement. Be careful if you use the PowerShell `Start()` method to run commands. The `/noprompt` option can be automatically set in PowerShell.
 
+
+When deleting a workspace you need to provide the `<workspace-owner>` and `<workspace-name>`
+
+You can use the `<workspace` command to retrieve those values. For more information, see [workspaces command](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/workspaces-command?view=azure-devops)
+To find `<workspace-owner>` value, run the following command:
+
+```
+c:\projects>tf workspaces /computer:* /owner:* /collection:`<team-project-collection-url>` /format:xml
+```
+
+To find the `<workspace-name>` value, use the  `<OwnerId>` value from the previous command's output as the `<workspace-owner>` value. That value has the format of an Azure Active Directory (Azure AD) object ID followed by a backslash and a user principal name. Use the entire value. Then run the following command:
+
+```
+c:\projects>tf workspaces /owner:<workspace-owner> /computer:* /collection:`<team-project-collection-url>`
+```
+
+To delete the workspace, run the following command:
+
+```
+c:\projects>tf workspace /delete <workspace-name>;<workspace-owner> /collection:<team-project-collection-url>`
+```
+
+
 ### Edit a workspace
 
 You can change the following workspace attributes:
