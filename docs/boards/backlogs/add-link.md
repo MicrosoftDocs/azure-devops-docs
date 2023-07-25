@@ -42,7 +42,7 @@ You can [link work items to other work items](#link-to-an-existing-work-item) to
 
 ## Link to an existing work item  
 
-From the **Add link** dialog, choose from the following the following link types. For more information, see [Link type reference](../queries/link-type-reference.md).
+From the **Add link** dialog, choose from the following link types. For more information, see [Link type reference](../queries/link-type-reference.md).
 
    - **Duplicate**: When two work items capture the same information; close one of the work items and keep the other one active.  
    - **Parent/Child**: When you want to break down work items into smaller items--for example, break down features into stories, or stories into tasks.
