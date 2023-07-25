@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/13/2020
+ms.date: 07/25/2023
 ---
 <a id="agent-variables"></a>
 
@@ -210,6 +210,12 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <tr>
 <td>Build.ContainerId</td>
 <td>The ID of the container for your artifact. When you upload an artifact in your pipeline, it's added to a container that is specific for that particular artifact.</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>Build.CronSchedule.DisplayName</td>
+<td>The <code>displayName</code> of the cron schedule that triggered the pipeline run. This variable is only set if the pipeline run is triggered by a YAML scheduled trigger. For more information, see <a href="/azure/devops/pipelines/yaml-schema/schedules-cron#buildcronscheduledisplayname-variable">schedules.cron definition - Build.CronSchedule.DisplayName variable</a></td>
 <td>No</td>
 </tr>
 
