@@ -2,7 +2,7 @@
 title: Share Packages publicly with public feeds
 description: Use Azure Artifacts public feeds to share packages publicly.
 ms.service: azure-devops-artifacts
-ms.custom: devx-track-python
+ms.custom:
 ms.date: 07/07/2023
 monikerRange: 'azure-devops'
 ---
