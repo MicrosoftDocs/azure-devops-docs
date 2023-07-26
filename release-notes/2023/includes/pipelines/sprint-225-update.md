@@ -30,7 +30,7 @@ If you open the Approvals and checks side panel, we show warnings next to the no
 
 If you build public repositories from GitHub, you must consider your stance on fork builds. Forks are especially dangerous since they come from outside your organization. 
 
-You can improve the security of pipelines that build GitHub public repositories by following our recommendations [here](https://learn.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml#important-security-considerations&preserve-view=true ) and [here](https://learn.microsoft.com/azure/devops/pipelines/security/repos?view=azure-devops#forks&preserve-view=true ). Alas, when you have multiple pipelines, it's tedious to ensure all of them follow best practices. 
+You can improve the security of pipelines that build GitHub public repositories by following our recommendations [here](/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml#important-security-considerations&preserve-view=true ) and [here](/azure/devops/pipelines/security/repos?view=azure-devops#forks&preserve-view=true ). Alas, when you have multiple pipelines, it's tedious to ensure all of them follow best practices. 
 
 To help you more easily keep your pipelines safe, we added an organization-level control for defining how pipelines build PRs from forked GitHub repos. The new setting is named _Limit building pull requests from forked GitHub repositories_ and works at organization and project level.
 
