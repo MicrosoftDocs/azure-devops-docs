@@ -18,10 +18,6 @@ description: TBD
 
 [!INCLUDE [sprint-225-update-links](includes/pipelines/sprint-225-update-links.md)]
 
-### Azure Repos
-
-[!INCLUDE [sprint-225-update-links](includes/repos/sprint-225-update-links.md)]
-
 ## General
 
 [!INCLUDE [sprint-225-update](includes/general/sprint-225-update.md)]
@@ -29,11 +25,6 @@ description: TBD
 ## Azure Pipelines
 
 [!INCLUDE [sprint-225-update](includes/pipelines/sprint-225-update.md)]
-
-## Azure Repos
-
-[!INCLUDE [sprint-225-update](includes/repos/sprint-225-update.md)]
-
 
 ## Next steps
 
