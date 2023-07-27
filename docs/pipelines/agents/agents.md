@@ -29,7 +29,7 @@ Azure Pipelines provides several different types of agents.
 |------------|-------------|--------------|
 | [Microsoft-hosted agents](#microsoft-hosted-agents) | Agents hosted and managed by Microsoft | Azure DevOps Services |
 | [Self-hosted agents](#install) | Agents that you configure and manage, hosted on your VMs | Azure DevOps Services, Azure DevOps Server, TFS |
-| [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | Agents that you configure and manage, using Azure Virtual Machine Scale Sets | Azure DevOps Services |
+| [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be auto-scaled to meet demands | Azure DevOps Services |
 
 ::: moniker range=">= azure-devops-2019"
 Jobs can be run [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).
