@@ -68,6 +68,8 @@ pool:
 
 ### Equals operation
 
+The equals operation checks for the existince of a capability, and if present, checks its value with the specified value. If the capability is not present or the values don't match, the operation evaluates to false. If the two strings match (not case sensitive), the operation evaluates to true.
+
 ```yaml
 pool:
   name: MyPool
