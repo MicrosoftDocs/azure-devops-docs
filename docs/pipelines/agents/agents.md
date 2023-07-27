@@ -26,6 +26,7 @@ An agent is computing infrastructure with installed agent software that runs one
 Azure Pipelines provides several different types of agents.
 
 | Agent type | Description | Availability |
+|------------|-------------|--------------|
 | [Microsoft-hosted agents](#microsoft-hosted-agents) | Agents hosted and managed by Microsoft | Azure DevOps Services |
 | [Self-hosted agents](#install) | Agents that you configure and manage, hosted on your VMs | Azure DevOps Services, Azure DevOps Server, TFS |
 | [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | Agents that you configure and manage, using Azure Virtual Machine Scale Sets | Azure DevOps Services |
