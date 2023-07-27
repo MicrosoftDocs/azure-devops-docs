@@ -25,7 +25,7 @@ To manage role settings for a project agent pool, open **Project settings** and 
 	> [!div class="mx-imgBorder"]  
 	> ![Agent pools security roles for all pools within the project.](/azure/devops/organizations/security/media/security-roles/pipeline-all-security-roles.png) 
 
-- To set permissions for a specific pool, choose the pool and then **Security**. Then add a user and select their role.
+- To set permissions for a specific pool, choose the pool and then **Security**. Under **Pipeline permissions**, you can see which pipelines have access to the pool. You can explicitly allow a pipeline by using the `+` button or allow all pipelines by using the `⋮` button. Under **User permissions**, you can add a user or group and select their role.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Agent pools security roles for a specific pool within the project.](/azure/devops/organizations/security/media/security-roles/pipline-individual-security-role.png) 
