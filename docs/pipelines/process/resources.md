@@ -722,6 +722,44 @@ Webhooks automate your workflow based on any external webhook event that isn't s
 
 ## [Example](#tab/example)
 
+You can define your pipeline as follows.
+
+```yaml
+resources:
+  webhooks:
+    - webhook: WebHook
+      connection: IncomingWH
+
+steps:  
+- script: echo ${{ parameters.WebHook.resource.message.title }}
+```
+
+To trigger your pipeline using the webhook, you need to make a `POST` request to `https://dev.azure.com/<org_name>/_apis/public/distributedtask/webhooks/<webhook_connection_name>?api-version=6.0-preview`. This endpoint is publicly available, and no authorization is needed. The request should have the following body.
+
+```json
+{
+    "resource": {
+        "message": {
+            "title": "Hello, world!",
+            "subtitle": "I'm using WebHooks!"
+        }
+    }
+}
+```
+
+When you access data from the webhook's request body, be mindful that it may lead to incorrect YAML. For example, if in the previous pipeline, your step reads `- script: echo ${{ parameters.WebHook.resource.message }}`, and you trigger the pipeline via a webhook, the pipeline doesn't run. This is because in the process of replacing `${{ parameters.WebHook.resource.message.title }}` with `message`, which contains the following JSON, the generated YAML becomes invalid.
+
+```json
+{
+  "title": "Hello, world!",
+  "subtitle": "I'm using WebHooks!"
+}
+```
+
+Because the generated YAML becomes invalid, no pipeline run is queued in response.
+
+The following snippet shows another example using webhook filters.
+
 ```yml
 resources:
   webhooks:
