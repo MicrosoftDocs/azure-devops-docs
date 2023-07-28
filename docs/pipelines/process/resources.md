@@ -250,6 +250,8 @@ Or, to avoid downloading any of the artifacts:
 ---
 Artifacts from the `pipeline` resource get downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder.
 
+:::moniker range=">=azure-pipelines-2020"
+
 ### Pipeline resource variables
 
 In each run, the metadata for a pipeline resource is available to all jobs in the form of [predefined variables](../build/variables.md). The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime.
@@ -295,6 +297,8 @@ steps:
 ---
 
 For more information, see [Pipeline resource metadata as predefined variables](/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#pipeline-resource-metadata-as-predefined-variables).
+
+:::moniker-end
 
 ## Define a `builds` resource
 
@@ -408,6 +412,55 @@ The `git` type refers to Azure Repos Git repos.
 GitHub Enterprise repos require a [GitHub Enterprise service connection](../library/service-endpoints.md#github-enterprise-server-service-connection) for authorization.
 
 Bitbucket Cloud repos require a [Bitbucket Cloud service connection](../library/service-endpoints.md#bitbucket-cloud-service-connection) for authorization.
+
+:::moniker range=">=azure-pipelines-2020"
+
+### Variables
+
+In each run, the metadata for a repository resource is available to all jobs in the form of runtime variables. The `<Alias>` is the identifier that you gave for your repository resource.
+
+## [Schema](#tab/schema)
+
+```yaml
+resources.repositories.<Alias>.name
+resources.repositories.<Alias>.ref
+resources.repositories.<Alias>.type
+resources.repositories.<Alias>.id
+resources.repositories.<Alias>.url
+```
+
+## [Example](#tab/example)
+
+The following example has a repository resource with an alias of `common`, and the repository resource variables are accessed using `resources.repositories.common.*`.
+
+```yaml
+resources:
+  repositories:
+    - repository: common
+      type: git
+      ref: main
+      name: Repo
+
+variables:
+  ref: $[ resources.repositories.common.ref ]
+  name: $[ resources.repositories.common.name ]
+  id: $[ resources.repositories.common.id ]
+  type: $[ resources.repositories.common.type ]
+  url: $[ resources.repositories.common.url ]
+
+steps:
+- bash: |
+    echo "name = $(name)"
+    echo "ref = $(ref)"
+    echo "id = $(id)"
+    echo "type = $(type)"
+    echo "url = $(url)"
+```
+
+---
+
+::: moniker-end
+
 
 ### Use `checkout` to consume repository
 
