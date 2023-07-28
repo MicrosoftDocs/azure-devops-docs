@@ -250,7 +250,7 @@ Or, to avoid downloading any of the artifacts:
 ---
 Artifacts from the `pipeline` resource get downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder.
 
-:::moniker range=">=azure-pipelines-2020"
+:::moniker range=">=azure-devops-2020"
 
 ### Pipeline resource variables
 
@@ -413,7 +413,7 @@ GitHub Enterprise repos require a [GitHub Enterprise service connection](../libr
 
 Bitbucket Cloud repos require a [Bitbucket Cloud service connection](../library/service-endpoints.md#bitbucket-cloud-service-connection) for authorization.
 
-:::moniker range=">=azure-pipelines-2020"
+:::moniker range=">=azure-devops-2020"
 
 ### Variables
 
