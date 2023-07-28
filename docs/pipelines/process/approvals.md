@@ -86,7 +86,7 @@ Given the high flexibility, Azure functions provide a great way to author your o
 If your check doesn't succeed within the configured **Timeout**, the associated stage is skipped. Stages depending on it are skipped as well. For more information, see the [Azure Function App task](/azure/devops/pipelines/tasks/reference/azure-function-app-v1).
 
 > [!NOTE]
-> User defined pipeline variables are accessible to the check starting with [Sprint 215](azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks).
+> User defined pipeline variables are accessible to the check starting with [Sprint 215](/azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks).
 
 [Read more about the recommended way to use Invoke Azure Function checks](invoke-checks.md). Checks [need to follow specific rules](invoke-checks.md#check-compliance) depending on their mode and the number of retries to be compliant. 
 
@@ -97,7 +97,7 @@ Invoke REST API check enables you to integrate with any of your existing service
 The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. If your check doesn't succeed within the configured **Timeout**, the associated stage is skipped. Stages depending on it are skipped as well. For more information, see [Invoke REST API task](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1).
 
 > [!NOTE]
-> User defined pipeline variables are accessible to the check starting with [Sprint 215](azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks).
+> User defined pipeline variables are accessible to the check starting with [Sprint 215](/azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks).
 
 [Read more about the recommended way to use Invoke REST API checks](invoke-checks.md).
 
