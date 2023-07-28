@@ -70,7 +70,7 @@ pool:
 
 ### Equals operation
 
-The equals operation checks for the existince of a capability, and if present, checks its value with the specified value. If the capability is not present or the values don't match, the operation evaluates to false. The comparisons are not case sensitive.
+The equals operation checks for the existence of a capability, and if present, checks its value with the specified value. If the capability is not present or the values don't match, the operation evaluates to false. The comparisons are not case sensitive.
 
 ```yaml
 pool:
