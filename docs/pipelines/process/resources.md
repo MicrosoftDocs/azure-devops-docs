@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2019'
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Resources in YAML represent sources of pipelines, builds, repositories, containers, packages, and webhooks.
-Resources also provide you the full traceability of the services used in your pipeline including the version, artifacts, associated commits, and work items. When you define a resource, it can be consumed anywhere in your pipeline. And, you can fully automate your DevOps workflow by subscribing to trigger events on your resources.
+Resources also provide you with the full traceability of the services used in your pipeline including the version, artifacts, associated commits, and work items. When you define a resource, it can be consumed anywhere in your pipeline. And, you can fully automate your DevOps workflow by subscribing to trigger events on your resources.
 
 For more information, see [About resources](about-resources.md) and the [resources YAML schema definition](/azure/devops/pipelines/yaml-schema/resources).
 ### Schema
@@ -157,7 +157,7 @@ These examples are tags set on the continuous integration (CI) pipeline. These t
 
 The version of the resource pipeline's artifacts depends on how your pipeline is triggered.
 
-If your pipeline runs because you manually triggered it or due to a scheduled run, the version of artifacts's version is defined by the values of the `version`, `branch`, and `tags` properties.
+If your pipeline runs because you manually triggered it or due to a scheduled run, the version of artifact's version is defined by the values of the `version`, `branch`, and `tags` properties.
 
 |Specified properties | Artifact version |
 |---------|---------|
@@ -216,7 +216,7 @@ resources:
       
 ```
 
-Your pipeline will run whenever the `SmartHotel-CI` pipelines runs on one of the `releases` branches or on the `main` branch, is tagged with both `Verified` and `Signed`, and it completed both the `Production` and `PreProduction` stages.
+Your pipeline will run whenever the `SmartHotel-CI` pipeline runs on one of the `releases` branches or on the `main` branch, is tagged with both `Verified` and `Signed`, and it completed both the `Production` and `PreProduction` stages.
 
 ### `download` for pipelines
 
@@ -249,6 +249,8 @@ Or, to avoid downloading any of the artifacts:
 
 ---
 Artifacts from the `pipeline` resource get downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder.
+
+:::moniker range=">=azure-devops-2020"
 
 ### Pipeline resource variables
 
@@ -295,6 +297,8 @@ steps:
 ---
 
 For more information, see [Pipeline resource metadata as predefined variables](/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#pipeline-resource-metadata-as-predefined-variables).
+
+:::moniker-end
 
 ## Define a `builds` resource
 
@@ -408,6 +412,55 @@ The `git` type refers to Azure Repos Git repos.
 GitHub Enterprise repos require a [GitHub Enterprise service connection](../library/service-endpoints.md#github-enterprise-server-service-connection) for authorization.
 
 Bitbucket Cloud repos require a [Bitbucket Cloud service connection](../library/service-endpoints.md#bitbucket-cloud-service-connection) for authorization.
+
+:::moniker range=">=azure-devops-2020"
+
+### Variables
+
+In each run, the metadata for a repository resource is available to all jobs in the form of runtime variables. The `<Alias>` is the identifier that you gave for your repository resource.
+
+## [Schema](#tab/schema)
+
+```yaml
+resources.repositories.<Alias>.name
+resources.repositories.<Alias>.ref
+resources.repositories.<Alias>.type
+resources.repositories.<Alias>.id
+resources.repositories.<Alias>.url
+```
+
+## [Example](#tab/example)
+
+The following example has a repository resource with an alias of `common`, and the repository resource variables are accessed using `resources.repositories.common.*`.
+
+```yaml
+resources:
+  repositories:
+    - repository: common
+      type: git
+      ref: main
+      name: Repo
+
+variables:
+  ref: $[ resources.repositories.common.ref ]
+  name: $[ resources.repositories.common.name ]
+  id: $[ resources.repositories.common.id ]
+  type: $[ resources.repositories.common.type ]
+  url: $[ resources.repositories.common.url ]
+
+steps:
+- bash: |
+    echo "name = $(name)"
+    echo "ref = $(ref)"
+    echo "id = $(id)"
+    echo "type = $(type)"
+    echo "url = $(url)"
+```
+
+---
+
+::: moniker-end
+
 
 ### Use `checkout` to consume repository
 
@@ -665,7 +718,7 @@ resources:
           value: JSONParameterExpectedValue    ### Expected value in the path provided
 ```
 
-Webhooks automate your workflow based on any external webhook event that isn't supported by first class resources. Resources like pipelines, builds, containers, and packages. Also, for on-premise services where Azure DevOps doesn't have visibility into the process, you can configure webhooks on the service and to trigger your pipelines automatically.
+Webhooks automate your workflow based on any external webhook event that isn't supported by first class resources, like pipelines, builds, containers, and packages. Also, for on-premise services where Azure DevOps doesn't have visibility into the process, you can configure webhooks on the service and to trigger your pipelines automatically.
 
 ## [Example](#tab/example)
 
