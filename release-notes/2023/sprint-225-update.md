@@ -2,7 +2,7 @@
 title:  TBD
 author: ckanyika
 ms.author: ckanyika
-ms.date: 7/28/2023
+ms.date: 7/31/2023
 description: TBD
 ---
 # TBD
@@ -13,6 +13,10 @@ description: TBD
 
 [!INCLUDE [sprint-225-update-links](includes/general/sprint-225-update-links.md)]
 
+### Azure Boards
+
+[!INCLUDE [sprint-225-update-links](includes/boards/sprint-225-update-links.md)]
+
 
 ### Azure Pipelines
 
@@ -21,6 +25,10 @@ description: TBD
 ## General
 
 [!INCLUDE [sprint-225-update](includes/general/sprint-225-update.md)]
+
+## Azure Boards
+
+[!INCLUDE [sprint-225-update](includes/boards/sprint-225-update.md)]
 
 ## Azure Pipelines
 
