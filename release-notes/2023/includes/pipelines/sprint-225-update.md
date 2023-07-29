@@ -7,7 +7,7 @@ ms.topic: include
 
 ### No classic build pipelines for new organizations
 
-To improve the security of newly-created organizations, one can create only YAML pipelines, by default. This is because such organisations have the _Disable creation of classic build pipelines_ and _Disable creation of classic release pipelines_ toggles on upon creation. 
+To improve the security of newly-created organizations, one can create only YAML pipelines, by default. This is because such organizations have the _Disable creation of classic build pipelines_ and _Disable creation of classic release pipelines_ toggles on upon creation. 
 
 Existing projects and organizations aren't affected.
 
