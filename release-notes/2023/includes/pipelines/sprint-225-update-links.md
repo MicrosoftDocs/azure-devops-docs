@@ -6,4 +6,4 @@ ms.topic: include
 ---
 
 - [No classic build pipelines for new organizations](#no-classic-build-pipelines-for-new-organizations)
-- [Maximum ARM template size is now 4MB](#maximum-arm-template-size-is-now-4-mb)
+- [Maximum ARM template size is now 4 MB](#maximum-arm-template-size-is-now-4-mb)

@@ -11,6 +11,6 @@ To improve the security of newly-created organizations, one can create only YAML
 
 Existing projects and organizations aren't affected.
 
-### Maximum ARM template size is now 4MB
+### Maximum ARM template size is now 4 MB
 
-You can use the [AzureResourceManagerTemplateDeployment](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-resource-manager-template-deployment-v3?view=azure-pipelines) task to create Azure infrastructure. While ARM Templates can have a [maximum size of 4 MB](https://learn.microsoft.com/azure/azure-resource-manager/templates/best-practices#template-limits), Azure Pipelines had a lower limit. We have now increased the maximum size to the [ARM limit](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-resource-manager-template-deployment-v3?view=azure-pipelines).
+You can use the [AzureResourceManagerTemplateDeployment](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-resource-manager-template-deployment-v3?view=azure-pipelines&preserve-view=tru) task to create Azure infrastructure. While ARM Templates can have a [maximum size of 4 MB](https://learn.microsoft.com/azure/azure-resource-manager/templates/best-practices#template-limits&preserve-view=tru), Azure Pipelines had a lower limit. We have now increased the maximum size to the [ARM limit](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-resource-manager-template-deployment-v3?view=azure-pipelines&preserve-view=tru).
