@@ -331,9 +331,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/boards/work-items/best-tool-add-update-link-work-items.md",
-      "redirect_url": "/azure/devops/boards/work-items/about-work-items",
-      "redirect_document_id": false
+      "source_path": "docs/boards/extensions/delivery-plans.md",
+      "redirect_url": "/azure/devops/boards/plans/review-team-plans",
     }
   ]
 }

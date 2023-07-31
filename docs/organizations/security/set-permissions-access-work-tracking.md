@@ -277,7 +277,7 @@ To edit the permissions for a Delivery Plan, you must be the creator of the plan
 
 ::: moniker range=">= azure-devops-2019 < azure-devops-2022"
 
-1. Open **Boards>Plans**. For details, see [Review team delivery plans](../../boards/extensions/delivery-plans.md).  
+1. Open **Boards>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
 2. To grant permissions to a group or user to manage or edit a specific plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the **Security** dialog for the plan.  
 
