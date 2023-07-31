@@ -139,7 +139,7 @@ sections:
           - [**Gantt-chart extensions**](https://marketplace.visualstudio.com/search?term=Gantt&target=AzureDevOps&category=All%20categories&sortBy=Relevance): Marketplace extensions that provide support for visualizing portfolio roadmaps.  
           ::: moniker-end
           ::: moniker range="< azure-devops"
-          - [**Delivery Plans**](../../boards/extensions/delivery-plans.md): A marketplace extension that displays scheduled work items by sprint of selected teams against a calendar view.  
+          - [**Delivery Plans**](../../boards/plans/review-team-plans.md): A marketplace extension that displays scheduled work items by sprint of selected teams against a calendar view.  
           - [**Dependency Tracker**](../../boards/extensions/dependency-tracker.md)): A marketplace extension that supports planning and managing dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. 
           - [**Gantt-chart extensions**](https://marketplace.visualstudio.com/search?term=Gantt&target=AzureDevOps&category=All%20categories&sortBy=Relevance): Marketplace extensions that provide support for visualizing portfolio roadmaps.  
           ::: moniker-end
