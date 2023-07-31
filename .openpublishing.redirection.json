@@ -339,6 +339,11 @@
       "source_path": "docs/boards/extensions/index.md",
       "redirect_url": "/azure/devops/boards/extensions/migrate-integrate",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/best-tool-add-update-link-work-items.md",
+      "redirect_url": "/azure/devops/boards/work-items/about-work-items",
+      "redirect_document_id": false
     }
   ]
 }
