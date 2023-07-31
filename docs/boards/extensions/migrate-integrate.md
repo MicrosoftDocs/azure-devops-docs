@@ -8,14 +8,17 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/01/2021
+ms.date: 07/31/2023
 ---
 
 # Migrate and integrate work tracking data in Azure Boards 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You have a choice of tools to help you migrate your work tracking data to the Azure DevOps platform. This article provides an overview of what's available and links to tools that support migration of work tracking data and processes. You can also integrate Azure Boards with many third-party tools. 
+You have a choice of tools to help you migrate your work tracking data to the Azure DevOps platform. This article provides an overview of what's available and links to tools that support migration of work tracking data and processes. You can also integrate Azure Boards with many third-party tools.
+
+> [!NOTE]
+> With [Azure DevOps Marketplace extensions for Azure Boards](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Installs), you can customize and enhance the default experience. See a [list of recommended extensions for Azure Boards](#extensions-for-azure-boards), further in this article. 
 
 ## Migrate from an on-premises Azure DevOps server
 
@@ -31,7 +34,7 @@ The [Azure DevOps Migration Tools](https://marketplace.visualstudio.com/items?it
 - Edit work items in bulk
 - Migrate test suites and test plans 
 
-For more information, see [Azure DevOps Migration Tools](https://nkdagility.github.io/azure-devops-migration-tools/).
+For more information, see [Azure DevOps Migration Tools](https://nkdagility.github.io/azure-devops-migration-tools/) and [OADOM](https://www.opshub.com/products/opshub-azure-devops-migrator/).
 
 [OpsHub Azure DevOps Migrator](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHubVisualStudioOnlineMigrationUtility) (OADOM) formerly known as OpsHub Visual Studio Migration Utility(OVSMU) enables a seamless migration between Azure DevOps Server and Azure DevOps Services.  Migrate projects from DevOps Services to a collection on DevOps Server including:  
 
@@ -39,11 +42,8 @@ For more information, see [Azure DevOps Migration Tools](https://nkdagility.gith
 - All work items and history
 - All test cases and test results
 - Supports Team Foundation Server 2018 and Azure DevOps Server versions 2019, 2020, and 2022
-- Supports Azure DevOps Services.
-
-[OADOM](https://www.opshub.com/products/opshub-azure-devops-migrator/) covers the following scenarios:
+- Supports Azure DevOps Services
  
-
 ## Migrate process models between Azure DevOps organizations
 
 The [Process Tools for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=nkdagility.processtemplate) marketplace extension provides support to complete the following tasks:  
@@ -75,7 +75,7 @@ If you want to migrate from Jira to Azure Boards, consider using the Marketplace
 
 Azure Boards and Azure DevOps Server 2019 integrate with GitHub. By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits, pull requests, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.
 
-To learn how, see [Connect Azure Boards to GitHub](../github/connect-to-github.md).
+For more information, see [Connect Azure Boards to GitHub](../github/connect-to-github.md).
  
 ## Integrate with third-party tools using service hooks
 
@@ -83,7 +83,7 @@ You can integrate Azure Boards with other third-party tools such as Jenkins and 
 -  [Create a service hook for Azure DevOps with Jenkins](../../service-hooks/services/jenkins.md) 
 -  [Create a service hook for Azure DevOps with Trello](../../service-hooks/services/trello.md)
 
-## Project and portfolio management  
+## Manage project and portfolio 
 
 The following tools support integration and synchronization with Azure DevOps with one or more project and portfolio management tools. These tools also support integration between Azure Boards and Microsoft Project Online or Microsoft Project Server. 
 
@@ -92,11 +92,11 @@ The following tools support integration and synchronization with Azure DevOps wi
 - [Project Connect](https://www.wicresoftinternational.com/about-us) offers a seamless approach to exchange critical information between development teams and project teams using Microsoft Project Online and Azure DevOps Services.
 - [Tasktop](http://www.tasktop.com/products) provides enterprise-grade integration between Microsoft Project Server, Azure DevOps, and to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. 
 
+## Extensions for Azure Boards
+
+
 
 ## Related articles
 
 - [Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md)
 - [Integrate with service hooks](../../service-hooks/overview.md)
-
-
- 
