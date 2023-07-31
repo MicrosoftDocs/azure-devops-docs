@@ -84,7 +84,7 @@ You can integrate Azure Boards with other third-party tools such as Jenkins and 
 -  [Create a service hook for Azure DevOps with Trello](../../service-hooks/services/trello.md)
 -  [Integrate with service hooks](../../service-hooks/overview.md)
 
-## Manage project and portfolio 
+## Project and portfolio management 
 
 The following tools support integration and synchronization with Azure DevOps with one or more project and portfolio management tools. These tools also support integration between Azure Boards and Microsoft Project Online or Microsoft Project Server. 
 
