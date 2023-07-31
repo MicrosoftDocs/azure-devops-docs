@@ -372,7 +372,6 @@ To programmatically delete, restore, and destroy work items, see one of the foll
   
 ## Related articles   
 
-- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  

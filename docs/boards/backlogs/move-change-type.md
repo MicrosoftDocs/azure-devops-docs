@@ -157,4 +157,4 @@ Note the following:
 
 - [Remove or delete work items](remove-delete-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
-- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
+
