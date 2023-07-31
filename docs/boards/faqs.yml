@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   monikerRange: '<= azure-devops'
   "recommendations": "true"
-  ms.date: 05/08/2023
+  ms.date: 07/31/2023
 
 
 title: Azure Boards FAQs  
@@ -52,8 +52,9 @@ sections:
       - question: Can caching impact rules applied to work items?  
         answer: | 
 
-          **Yes**. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md). To learn more about conditional rules, see [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).    
-
+          **Yes**. Conditional rules based on user or group membership get cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. For more information about conditional rules, see [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).
+          If your cache stores outdated rules, you can wait for the client cache to expire within three days, or you can clear the cache.    
+          To clear the cache, run the following command in the browser command window and then refresh the browser:window.indexedDB.deleteDatabase("wit")
 
       - question: What client tools support work tracking with Azure Boards? 
         answer: |
@@ -128,7 +129,7 @@ sections:
           The easiest way to accomplish the task of copying many work items with child items, is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-as-a-tree-list).
 
           Other solutions include employing one of the following Marketplace extensions:  
-          - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
+          - [Work item form one select actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
           - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
           - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
           ::: moniker-end
@@ -152,7 +153,7 @@ sections:
 
       - question: What limits should I be aware of?  
         answer: | 
-          There are many limits Azure DevOps imposes such as the number of work items that display on a backlog or board, numbers of teams you can define, and more. For a full list, see [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md). 
+          Azure DevOps imposes limits such as the number of work items that display on a backlog or board, numbers of teams you can define, and more. For a full list, see [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md). 
 
       - question: How do I migrate my existing backlog to Azure Boards?  
         answer: | 
@@ -279,7 +280,7 @@ sections:
 
           ::: moniker range=">= azure-devops-2019"
           Alternatively, you may find a solution for creating child work items by installing one of the following Marketplace extensions:  
-          - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
+          - [Work item form one select actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
           - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
           - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks) 
           ::: moniker-end
