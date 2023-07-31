@@ -158,19 +158,15 @@ sections:
           > ![Screenshot of removing spending limit indefinitely.](media/remove-spending-limit.png)
           
       - question: |
+          Q: Can I use credits from the Azure Sponsorship Offer to pay for Azure DevOps Services?
+        answer: |
+          A: You can try to add the subscription with the Azure Sponsorship Offer and see if the system accepts it. If the subscription has a limit, then you likely can't use it.
+      
+      - question: |
           Q: Am I required to buy other Azure services?
         answer: |
           A: Not at all. If you only want to buy Azure DevOps via Azure, that's okay.
-          
-      - question: |
-          Q: Can I apply tags to organizations from the Azure portal?
-        answer: |
-          A: Yes. Select the Azure subscription that's linked to the desired Azure DevOps organization, in Settings > Resources.
-          :::image type="content" source="media/billing-faq/organization-under-subscription.png" alt-text="Screenshot of locating your organization":::
-          
-          Select the desired organization from list and apply tags by selecting the action **Assign tags**. The tags you assign appear in your Azure bill for the charges associated with the selected Azure DevOps organization.
-          :::image type="content" source="media/billing-faq/apply-billing-tag-on-organization.png" alt-text="Screenshot of applying tags":::
-
+ 
           ## Multi-organization billing
 
           Multi-organization billing allows you to pay once per human user, for organizations under the same Azure billing subscription. This doesn't apply to service principals and managed identities, which still get charged on a user assignment-based billing. Any service principal or managed identity gets charged once per organization that it has been added to.
@@ -322,12 +318,15 @@ sections:
           Q: What happens if I delete my organization resource? 
         answer: |
           A: Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-billing-subscription) and your organization returns to its [free limits](billing-faq.yml#q--can-i-use-azure-devops-for-free-). To [delete your Azure DevOps organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. 
-          
+      
       - question: |
-          Q: Can I use credits from the Azure Sponsorship Offer to pay for Azure DevOps Services?
+          Q: Can I apply tags to organizations from the Azure portal?
         answer: |
-          A: You can try to add the subscription with the Azure Sponsorship Offer and see if the system accepts it. If the subscription has a limit, then you likely can't use it.
+          A: Yes. Select the Azure subscription that's linked to the desired Azure DevOps organization, in Settings > Resources.
+          :::image type="content" source="media/billing-faq/organization-under-subscription.png" alt-text="Screenshot of locating your organization":::
           
+          Select the desired organization from list and apply tags by selecting the action **Assign tags**. The tags you assign appear in your Azure bill for the charges associated with the selected Azure DevOps organization.
+          :::image type="content" source="media/billing-faq/apply-billing-tag-on-organization.png" alt-text="Screenshot of applying tags":::          
   - name: How charges get processed
     questions:
       - question: |
