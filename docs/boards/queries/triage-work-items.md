@@ -122,11 +122,7 @@ Choose the ![double-save-icon](../media/icons/icon-double-save.png) double-save 
 
 ::: moniker-end
 
- 
-
 ## Related articles
 
-- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [Manage bugs](../backlogs/manage-bugs.md) 
 - [Create a query](using-queries.md) 
-

@@ -138,7 +138,6 @@ Azure Boards integrates with popular chat tools such as [Microsoft Teams](../int
 
 ## Related articles
 
-- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
 - [Configure and customize Azure Boards](../configure-customize.md)
 - [The DevOps journey at Microsoft](https://azure.microsoft.com/solutions/devops/devops-at-microsoft/)
 - [Agile culture](../plans/agile-culture.md)  
