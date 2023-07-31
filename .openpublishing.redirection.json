@@ -331,13 +331,18 @@
       "redirect_document_id": false
     },
     {
-<<<<<<< .merge_file_gqjQX6
       "source_path": "docs/boards/extensions/delivery-plans.md",
       "redirect_url": "/azure/devops/boards/plans/review-team-plans",
-=======
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/boards/work-items/best-tool-add-update-link-work-items.md",
       "redirect_url": "/azure/devops/boards/work-items/about-work-items",
->>>>>>> .merge_file_GD8bmj
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/extensions/delivery-plans.md",
+      "redirect_url": "/azure/devops/boards/plans/review-team-plans",
       "redirect_document_id": false
     }
   ]
