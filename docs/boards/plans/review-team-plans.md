@@ -18,9 +18,6 @@ ms.date: 07/12/2023
 
 Use the visualization options provided by the Delivery Plans feature of Azure Boards to review the schedule of stories or features that your teams plan to deliver. A delivery plan shows the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
-> [!NOTE]   
-> This article describes using Delivery Plans 2.0, which is available for Azure DevOps Services and Azure DevOps Server 2022. For information on the Delivery Plans Marketplace extension that supports Azure DevOps Server 2020 and earlier versions, see [Delivery Plans 1.0](../extensions/delivery-plans.md). 
-
 Use the Delivery Plans feature to ensure that your teams are aligned with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. Interact with the plan by using simple drag-and-drop operations to update or modify the schedule, open cards, expand and collapse teams, and more. 
 
 Delivery Plans supports the following tasks: 
