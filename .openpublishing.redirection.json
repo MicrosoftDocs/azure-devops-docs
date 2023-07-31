@@ -344,6 +344,10 @@
       "source_path": "docs/organizations/settings/work/troubleshoot-work-item-form-caching-issues.md",
       "redirect_url": "/azure/devops/boards/faqs",
       "redirect_document_id": false
+    },
+      "source_path": "docs/boards/extensions/index.md",
+      "redirect_url": "/azure/devops/boards/extensions/migrate-integrate",
+      "redirect_document_id": false
     }
   ]
 }
