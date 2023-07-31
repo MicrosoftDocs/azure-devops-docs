@@ -344,6 +344,11 @@
       "source_path": "docs/boards/extensions/delivery-plans.md",
       "redirect_url": "/azure/devops/boards/plans/review-team-plans",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/work/troubleshoot-work-item-form-caching-issues.md",
+      "redirect_url": "/azure/devops/boards/faqs",
+      "redirect_document_id": false
     }
   ]
 }
