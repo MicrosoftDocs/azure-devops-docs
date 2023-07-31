@@ -54,7 +54,7 @@ sections:
 
           **Yes**. Conditional rules based on user or group membership get cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. For more information about conditional rules, see [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).
           If your cache stores outdated rules, you can wait for the client cache to expire within three days, or you can clear the cache.    
-          To clear the cache, run the following command in the browser command window and then refresh the browser:window.indexedDB.deleteDatabase("wit")
+          To clear the cache, run the following command in the browser command window and then refresh the browser: window.indexedDB.deleteDatabase("wit")
 
       - question: What client tools support work tracking with Azure Boards? 
         answer: |
@@ -126,7 +126,7 @@ sections:
           ::: moniker range="< azure-devops-2020"
           This feature isn't supported at this time for Azure DevOps 2019 and earlier versions. Copying a work item doesn't copy any parent-child linked work items. However, is available for Azure DevOps Server 2020.1 update and Azure Boards (cloud service).  
 
-          The easiest way to accomplish the task of copying many work items with child items, is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-as-a-tree-list).
+          The easiest way to accomplish the task of copying many work items with child items is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-as-a-tree-list).
 
           Other solutions include employing one of the following Marketplace extensions:  
           - [Work item form one select actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
