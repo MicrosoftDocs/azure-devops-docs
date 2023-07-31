@@ -162,7 +162,6 @@ To group a **Chart for Work Items** widget by tags, complete the same steps prov
 
 ## Related articles
 
-- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [Use the query editor to list and manage queries](using-queries.md) 
 - [Show tags on cards](../../boards/boards/customize-cards.md)
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
