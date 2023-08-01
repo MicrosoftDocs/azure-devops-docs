@@ -38,11 +38,10 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="4"><a href="2023/sprint-225-update.md" data-raw-source="[31 July 2023](2023/sprint-225-update.md)"> 31 July 2023</a></td>
-    <td>Granular delegated scopes for Microsoft Identity/Azure AD OAuth apps</td><td>General</td><td>N/A</td></tr>
-    <td>New Boards Hub on by default</td><td>Boards</td><td>Future</td></tr>
+    <td rowspan="3"><a href="2023/sprint-225-update.md" data-raw-source="[1 August 2023](2023/sprint-225-update.md)"> 31 July 2023</a></td>
+    <td>New Boards Hub on by default</td><td>Boards</td><td>N/A</td></tr>
     <td>No classic build pipelines for new organizations</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Maximum ARM template size is now 4MB</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Maximum ARM template size is now 4 MB</td><td>Pipelines</td><td>Future</td></tr>
 <tr>
 <tr>
     <td rowspan="8"><a href="2023/sprint-223-update.md" data-raw-source="[21 June 2023](2023/sprint-223-update.md)"> 21 June 2023</a></td>
