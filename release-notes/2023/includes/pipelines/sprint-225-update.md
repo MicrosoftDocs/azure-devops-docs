@@ -5,9 +5,9 @@ ms.date: 8/2/2023
 ms.topic: include
 ---
 
-### Disable creation of classic pipelines for new organizations (_Pre-announcement_)
+### Disable creation of classic pipelines for new organizations (pre-announcement)
 
-To improve the security of newly created organizations, we will disable creating _classic build and release pipelines_ for new organizations, beginning next Sprint (Sprint 226). By default, you'll be able to create only YAML pipelines. In contrast to the classic build and release pipelines, YAML pipelines can undergo code review, provide resource access management and support runtime parameters, enhancing overall security with an extra layer of protection. You can enable creation of classic build and release pipelines in your organization's and projects' settings, using the [toggles](/azure/devops/release-notes/2023/sprint-224-update?#new-toggles-to-control-creation-of-classic-pipelines) introduced last sprint.
+To improve the security of newly created organizations, we will disable creating _classic build and release pipelines_ for new organizations, beginning next sprint. By default, you'll be able to create only YAML pipelines. In contrast to the classic build and release pipelines, YAML pipelines can undergo code review, provide resource access management and support runtime parameters, enhancing overall security with an extra layer of protection. You can enable creation of classic build and release pipelines in your organization's and projects' settings, using the [toggles](/azure/devops/release-notes/2023/sprint-224-update?#new-toggles-to-control-creation-of-classic-pipelines) introduced last sprint.
 
 The changes will not impact existing projects and organizations.
 
