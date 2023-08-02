@@ -38,17 +38,10 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="10"><a href="2023/sprint-224-update.md" data-raw-source="[11 July 2023](2023/sprint-224-update.md)"> 11 July 2023</a></td>
-    <td>Lift secret expiration check on Azure DevOps OAuth</td><td>General</td><td>Future</td></tr>
-    <td>Alert dismissals for dependency scanning alerts in Advanced Security</td><td>General</td><td>N/A</td></tr>
-    <td>Copy link to work item</td><td>Boards</td><td>Future</td></tr>
-    <td>Kubernetes tasks now support kubelogin</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Use Service Principal in Agent VM extension</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Disable a check</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Updates to YAML cron schedules</td><td>Pipelines</td><td>Future</td></tr>
-    <td>New toggles to control creation of classic pipelines</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Improvements to Approval REST API</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Removing "Edit policies" permission to branch creator</td><td>Repos</td><td>Future</td></tr>
+    <td rowspan="3"><a href="2023/sprint-225-update.md" data-raw-source="[2 August 2023](2023/sprint-225-update.md)"> 31 July 2023</a></td>
+    <td>New Boards Hub on by default</td><td>Boards</td><td>N/A</td></tr>
+    <td>No classic build pipelines for new organizations</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Increased Azure Pipeline limits to align with the 4 MB maximum Azure Resource Manager (ARM) template size</td><td>Pipelines</td><td>Future</td></tr>
 <tr>
 <tr>
     <td rowspan="8"><a href="2023/sprint-223-update.md" data-raw-source="[21 June 2023](2023/sprint-223-update.md)"> 21 June 2023</a></td>
@@ -808,7 +801,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td>Dark theme general availability</td><td>General</td><td>2019.1</td>
         </tr>
         <tr><td>Query work based on Azure Active Directory groups</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Share you team's board using a badge</td><td>Boards</td><td>2019.1</td></tr>
+        <tr><td>Share your team's board using a badge</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>Query for work relative to the start of the day, week, month, or year</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>Export query results to a CSV file</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>New merge types for completing pull requests</td><td>Repos</td><td>2019.1</td></tr>
