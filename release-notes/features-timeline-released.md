@@ -801,7 +801,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td>Dark theme general availability</td><td>General</td><td>2019.1</td>
         </tr>
         <tr><td>Query work based on Azure Active Directory groups</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Share you team's board using a badge</td><td>Boards</td><td>2019.1</td></tr>
+        <tr><td>Share your team's board using a badge</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>Query for work relative to the start of the day, week, month, or year</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>Export query results to a CSV file</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>New merge types for completing pull requests</td><td>Repos</td><td>2019.1</td></tr>

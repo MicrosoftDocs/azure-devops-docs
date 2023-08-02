@@ -43,7 +43,7 @@ Head over to Azure DevOps and take a look.
 We would love to hear what you think about these features. Use the help menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"] 
-> ![Make a suggestion](../media/make-a-suggestion.png)
+> ![Screenshot Make a suggestion.](../media/make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
 
