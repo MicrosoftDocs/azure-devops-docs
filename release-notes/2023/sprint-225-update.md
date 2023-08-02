@@ -2,12 +2,12 @@
 title:  Improvements to pipeline security and increased Azure Resource Manager (ARM) size limits.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 8/1/2023
+ms.date: 8/2/2023
 description: Improvements to pipeline security and increased Azure Resource Manager (ARM) size limits.
 ---
 # Improvements to pipeline security and increased Azure Resource Manager (ARM) size limits.
 
-With this update, we highlight improvements to pipeline security, along with the increased size limits of the Azure Resource Manager (ARM) template.
+With this update, we include a Pre-announcement, along with the increased size limits of the Azure Resource Manager (ARM) template.
 
 In addition, we've included New Boards Hub updates along with a link to our recent blog, keeping you informed of our progress of making New Boards Hub the default experience. 
 
