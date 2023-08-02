@@ -38,7 +38,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="3"><a href="2023/sprint-225-update.md" data-raw-source="[1 August 2023](2023/sprint-225-update.md)"> 31 July 2023</a></td>
+    <td rowspan="3"><a href="2023/sprint-225-update.md" data-raw-source="[2 August 2023](2023/sprint-225-update.md)"> 31 July 2023</a></td>
     <td>New Boards Hub on by default</td><td>Boards</td><td>N/A</td></tr>
     <td>No classic build pipelines for new organizations</td><td>Pipelines</td><td>Future</td></tr>
     <td>Maximum Azure Resource Manager (ARM) template size is now 4 MB</td><td>Pipelines</td><td>Future</td></tr>

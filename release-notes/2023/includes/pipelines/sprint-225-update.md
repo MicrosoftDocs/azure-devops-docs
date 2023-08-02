@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 8/1/2023
+ms.date: 8/2/2023
 ms.topic: include
 ---
 
@@ -11,6 +11,6 @@ To improve the security of newly-created organizations, we will be disabling the
 
 The changes will not impact existing projects and organizations.
 
-### Maximum Azure Resource Manager (ARM) template size is now 4 MB
+### Increased Azure Pipeline limits to align with the 4 MB maximum Azure Resource Manager (ARM) template size. 
 
-You can use the [Azure Resource Manager Template Deployment](/azure/devops/pipelines/tasks/reference/azure-resource-manager-template-deployment-v3?view=azure-pipelines&preserve-view=true) task to create Azure infrastructure. We have now increased the size of the ARM Templates to a [maximum size of 4 MB](/azure/azure-resource-manager/templates/best-practices#template-limits), Azure Pipelines had a lower limit.
+You can use the [Azure Resource Manager Template Deployment](/azure/devops/pipelines/tasks/reference/azure-resource-manager-template-deployment-v3?view=azure-pipelines&preserve-view=true) task to create Azure infrastructure. In response to your feedback, we have increased the Azure Pipelines integration limit of 2 MB to 4 MB. This will align with the ARM Templates [maximum size of 4 MB](/azure/azure-resource-manager/templates/best-practices#template-limits) resolving size constraints during integration of large templates.
