@@ -1,15 +1,15 @@
 ---
-title:  Improvements to pipeline security and increased Azure Resource Manager (ARM) size limits.
+title:  Increased Azure Pipelines limits for Azure Resource Manager (ARM) integration.
 author: ckanyika
 ms.author: ckanyika
 ms.date: 8/2/2023
-description: Improvements to pipeline security and increased Azure Resource Manager (ARM) size limits.
+description: Increased Azure Pipelines limits for Azure Resource Manager (ARM) integration.
 ---
-# Improvements to pipeline security and increased Azure Resource Manager (ARM) size limits.
+# Increased Azure Pipelines limits for Azure Resource Manager (ARM) integration. 
 
-With this update, we include a Pre-announcement, along with the increased size limits of the Azure Resource Manager (ARM) template.
+In this sprint, we have increased Azure Pipelines size limits to align with the Azure Resource Manager (ARM) maximum limit of 4 MB. We've also included a Pre-announcement,for changes coming to the classic build pipelines for new projects and organizations. 
 
-In addition, we've included New Boards Hub updates along with a link to our recent blog, keeping you informed of our progress of making New Boards Hub the default experience. 
+In addition, we're excited to update you on the progress we've made towards making New Boards Hub the default experience for all users. 
 
 ### Azure Boards
 
