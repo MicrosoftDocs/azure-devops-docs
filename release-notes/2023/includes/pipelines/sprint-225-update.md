@@ -5,9 +5,9 @@ ms.date: 8/1/2023
 ms.topic: include
 ---
 
-### No classic build pipelines for new organizations
+###  No classic build pipelines for new organizations (_Pre-announcement_)
 
-To improve the security of newly-created organizations,you can only create YAML pipelines, by default starting next Sprint (Sprint 226). This is because these organizations have the _Disable creation of classic build pipelines_ and _Disable creation of classic release pipelines_ toggles on upon creation. 
+To improve the security of newly-created organizations, we will be disabling the _classic build and release pipelines_ for new organizations. We will be enabling YAML pipelines as the default setting beginning next Sprint (Sprint 226). In contrast to the classic build and release pipelines, YAML pipelines can undergo code review, provide resource access management and support runtime parameters, enhancing overall security with an extra layer of protection
 
 The changes will not impact existing projects and organizations.
 
