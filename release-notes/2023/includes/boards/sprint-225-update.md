@@ -12,6 +12,6 @@ In March 2022, we announced the preview of the New Boards Hub. Since then, we ha
  Now, after a long journey, we are ready to take the next step by making New Boards Hub the default experience. The rollout process will take a couple of months as we carefully deploy it to all organizations. You will see the following banner when you open Boards for the first time after your organization has been updated.
 
 > [!div class="mx-imgBorder"]
-> ![Gif to demo New banner when you open Boards.](../../media/225-boards-01.gif "gif to demo New banner when you open Boards")
+> ![Animation to demo New banner when you open Boards.](../../media/225-boards-01.gif "Animation to demo New banner when you open Boards")
 
 For more information about New Boards Hub and the rollout, please see this [blog post](https://devblogs.microsoft.com/devops/new-boards-hub-path-to-ga/) on the topic.
