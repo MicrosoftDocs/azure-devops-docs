@@ -248,7 +248,7 @@ You can trigger a pipeline when an update is pushed to the `self` repository or 
 - You keep your YAML file in a separate repository from the application code. You want to trigger the pipeline every time an update is pushed to the application repository.
 
 > [!IMPORTANT]
-> Repository resource triggers only work for Azure Repos Git repositories in the same organization at present. They do not work for GitHub or Bitbucket repository resources.
+> Repository resource triggers only work for Azure Repos Git repositories in the same organization and when the `self` repository type is Azure Repos Git. They do not work for GitHub or Bitbucket repository resources.
 >
 > `batch` is not supported in repository resource triggers.
 
