@@ -910,7 +910,7 @@ jobs:
     displayName: 'Download Build Artifacts'
     inputs:
       artifactName: WebSite
-      downloadPath: $(System.DefaultWorkingDirectory)
+      downloadPath: $(Pipeline.Workspace)
 
   dependsOn: Build
   condition: succeeded()
