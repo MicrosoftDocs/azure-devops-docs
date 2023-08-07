@@ -14,6 +14,8 @@ ms.date: 05/09/2023
 
 # Secret scanning 
 
+[!INCLUDE [github-advanced-security-preview](includes/github-advanced-security-preview.md)]
+
 Exposed credentials in engineering systems provide easily exploitable opportunities for attackers. To defend against this threat, [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md)'s secret scanning tool scans for credentials and other sensitive content in your source code. Push protection also prevents any credentials from being leaked in the first place.  
 
 Secret scanning for your repository scans for any secrets that may already exist in your source code across history and push protection prevents any new secrets from being exposed in source code. 
