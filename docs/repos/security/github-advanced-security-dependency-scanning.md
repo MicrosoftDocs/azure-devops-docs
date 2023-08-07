@@ -14,6 +14,8 @@ ms.date: 04/21/2023
 
 # Dependency scanning 
 
+[!INCLUDE [github-advanced-security-preview](includes/github-advanced-security-preview.md)]
+
 Dependency scanning in [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) detects the open source components used in your source code and detects if there are any associated vulnerabilities. Any found vulnerabilities from open source components get flagged as an alert. 
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
