@@ -14,6 +14,8 @@ ms.date: 05/09/2023
 
 # Configure GitHub Advanced Security for Azure DevOps
 
+[!INCLUDE [github-advanced-security-preview](includes/github-advanced-security-preview.md)]
+
 GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Azure Repos. 
 
 GitHub Advanced Security for Azure includes:
