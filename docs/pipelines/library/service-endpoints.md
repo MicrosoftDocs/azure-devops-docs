@@ -379,7 +379,7 @@ Use OAuth with **Grant authorization** or a username and password with **Basic A
 
 ### Cargo service connection
 
-Use the following parameters to define and secure a connection to [Cargo](../../artifacts/get-started-cargo.md) artifacts feeds.
+Use the following parameters to define and secure a connection to a [Cargo](../../artifacts/get-started-cargo.md) artifact repository.
 
 | Parameter | Description |
 | --------- | ----------- |
