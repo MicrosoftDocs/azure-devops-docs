@@ -385,7 +385,7 @@ Use the following parameters to define and secure a connection to a [Cargo](../.
 | --------- | ----------- |
 | Authentication method | Choose the authentication method to the artifacts repository: **Basic username/password (including Azure DevOps PATs)** or **Authorization value (including crates.io tokens)**. |
 | Repository URL | URL for the repository. For crates.io, use `https://crates.io` |
-| Username | Username for connecting to the endpoint. The value can be arbitary if using personal access tokens. |
+| Username | Username for connecting to the endpoint. The value can be arbitary if using personal access tokens or the Authorization value authentication method. |
 | Password | Password for connecting to the endpoint. Personal access tokens are applicable for Azure DevOps Services organizations. |
 | Service connection name | Name for the service connection |
 | Description | Optional description of the service connection |
