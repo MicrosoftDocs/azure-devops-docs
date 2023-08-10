@@ -433,8 +433,6 @@ A query hyperlink uses the Work Item Query Language (WIQL), which resembles Tran
 > [!NOTE]    
 > Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
 
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
-
 ::: moniker range="azure-devops"  
 
 ### Query hyperlink syntax for Azure DevOps Services
