@@ -68,7 +68,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [Compare fields](./query-field-value.md) 
       - [Key words](./titles-ids-descriptions.md)  
       - [Linked work items](./linking-attachments.md)  
-      - [Logical groupings](#logical-groupings)  
+      - [Logical groupings](#andor-logical-expression)
       - [Query macros](./about-managed-queries.md#macros)  
       - [Tags](./add-tags-to-work-items.md#query)  
       - [Was Ever](./query-by-workflow-changes.md)  
@@ -79,7 +79,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [Compare fields](./query-field-value.md) 
       - [Key words](./titles-ids-descriptions.md)  
       - [Linked work items](./linking-attachments.md)  
-      - [Logical groupings](#logical-groupings)  
+      - [Logical groupings](#andor-logical-expression)  
       - [Query macros](./about-managed-queries.md#macros)  
       - [Tags](./add-tags-to-work-items.md#query)  
       - [Was Ever](./query-by-workflow-changes.md)  
@@ -94,13 +94,13 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [History and Discussion](./history-and-auditing.md) 
       - [Kanban board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
       - [In and Not In Group searches](./planning-ranking-priorities.md#picklist-query-examples) 
-      - [Search across projects](#across-projects)
+      - [Search across projects](#query-across-or-within-projects)
       ::: moniker-end
       ::: moniker range="tfs-2018"
       - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
       - [History and Discussion](./history-and-auditing.md) 
       - [In and Not In Group searches](./planning-ranking-priorities.md#picklist-query-examples) 
-      - [Search across projects](#across-projects) 
+      - [Search across projects](#query-across-or-within-projects)
       ::: moniker-end
    :::column-end:::
    :::column span="2":::
@@ -153,7 +153,7 @@ The Query Editor displays with the following default settings: **Flat list of wo
 
 :::image type="content" source="media/using-queries/new-query-web-portal.png" alt-text="Screenshot of Query Editor with flat list of work items selected."::: 
 
-You can modify the **Values** and [add or remove clauses](#define-clause). Or, change the **Type of query** to [Work items and direct links](#directs-link-query) or to a [Tree of work items](#tree-query). 
+You can modify the **Values** and [add or remove clauses](#define-a-clause). Or, change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
