@@ -3,20 +3,21 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 07/09/2020
+ms.date: 08/01/2023
 ---
-
 
 ::: moniker range=">= azure-devops-2020"  
 
-## Display rollup progress, counts, or totals 
+## Display rollup progress counts, or totals 
 
-Product and portfolio backlogs support the display of rollup columns. You can add one or more rollup columns to display progress bars, counts of descendant work items, or totals of select numeric fields. Your settings persist for each page you customize and are only valid for your views.
+Product and portfolio backlogs support rollup columns. You can add one or more rollup columns to display progress bars, counts of descendant work items, or totals of select numeric fields. Your settings persist for each page that you customize and are only valid for your views.
 
-*Progress bars* indicate the percentage of descendant items within a hierarchy that are closed or completed. *Counts* display the total number of descendant items. And, *Totals* provide a sum of numeric fields, such as Effort, Story Points, Completed Work, or Remaining Work of descendant items.     
-For example, progress bars are shown here for a portfolio backlog. 
+- *Progress bars* indicate the percentage of descendant items within a hierarchy that are closed or completed. 
+- *Counts* display the total number of descendant items. 
+- *Totals* provide a sum of numeric fields, such as Effort, Story Points, Completed Work, or Remaining Work of descendant items.     
 
-> [!div class="mx-imgBorder"]  
-> ![Example portfolio backlog with progress bars](../backlogs/media/rollup/epic-featurs-progress-user-stories-50-percent.png)
+The following example shows progress bars for a portfolio backlog. 
 
-::: moniker-end 
+:::image type="content" source="../backlogs/media/rollup/epic-features-progress-user-stories-50-percent.png" alt-text="Screenshot example of epic, feature, and user stories progress.":::
+
+::: moniker-end
