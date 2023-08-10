@@ -477,7 +477,7 @@ steps:
   lfs: string # Set to 'true' to download Git-LFS files. Default is not to download them.
   persistCredentials: string # Set to 'true' to leave the OAuth token in the Git config after the initial fetch. The default is not to leave it.
   submodules: string # Set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules. Default is not to fetch submodules.
-  path: string # Where to put the repository. The root directory is $(Pipeline.Workspace).
+  path: string # Where to put the repository. The default is $(Build.SourcesDirectory).
   condition: string # Evaluate this condition expression to determine whether to run this task.
   continueOnError: boolean # Continue running even on failure?
   displayName: string # Human-readable name for the task.
