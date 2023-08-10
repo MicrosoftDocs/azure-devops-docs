@@ -535,6 +535,10 @@
       "redirect_url": "/azure/devops/release-notes/features-timeline"
     },
     {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2023-04.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
       "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2023-03.md",
       "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
     }, 

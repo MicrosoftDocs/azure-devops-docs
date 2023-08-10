@@ -14,6 +14,8 @@ ms.date: 05/09/2023
 
 #  Advanced Security permissions
 
+[!INCLUDE [github-advanced-security-preview](includes/github-advanced-security-preview.md)]
+
 [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) includes extra permissions for more levels of control around Advanced Security results and management. There are three new permissions added through Advanced Security: read alerts, dismiss and manage alerts, and manage settings.
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]

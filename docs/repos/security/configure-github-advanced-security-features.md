@@ -14,6 +14,8 @@ ms.date: 05/09/2023
 
 # Configure GitHub Advanced Security for Azure DevOps
 
+[!INCLUDE [github-advanced-security-preview](includes/github-advanced-security-preview.md)]
+
 GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Azure Repos. 
 
 GitHub Advanced Security for Azure includes:
@@ -112,7 +114,7 @@ Add the tasks in the following order:
 1. Advanced Security Perform CodeQL Analysis (`AdvancedSecurity-Codeql-Analyze@1`)
 1. Advanced Security Publish Results (`AdvancedSecurity-Publish@1`) 
 
-![Screenshot of code scanning variables setup for YAML](media/code-scanning-config-yaml-variable.png)
+![Screenshot of code scanning pipeline setup for YAML](media/code-scanning-config-yaml-tasks.png)
 
 Additionally, add two build variables:
 1. `advancedsecurity.codeql.language` and set it for the languages you wish to analyze. A comma separated list can be used to analyze multiple languages at once. The supported languages are `csharp, cpp, go, java, javascript, python, ruby`.  
@@ -126,7 +128,7 @@ Additionally, add two build variables:
 
 If the language specified is `cpp, java,` or `csharp` either custom or `AutoBuild` build steps are required. For other languages, if AutoBuild is included the step completes successfully without performing any action.
 
-![Screenshot of code scanning pipeline setup for YAML](media/code-scanning-config-yaml-tasks.png)
+![Screenshot of code scanning variables setup for YAML](media/code-scanning-config-yaml-variable.png)
 
 
 #### [Classic](#tab/classic)
@@ -137,7 +139,7 @@ Add the tasks in the following order:
 1. `Advanced Security Perform CodeQL Analysis`
 1. `Advanced Security Publish Results`
 
-![Screenshot of code scanning variables setup for YAML](media/code-scanning-config-classic-variable.png)
+![Screenshot of code scanning pipeline setup for YAML](media/code-scanning-config-classic-tasks.png)
 
 Additionally, add two build variables:
 1. `advancedsecurity.codeql.language` and set it for the languages you wish to analyze. A comma separated list can be used to analyze multiple languages at once. The supported languages are `csharp, cpp, go, java, javascript, python, ruby`. 
@@ -145,7 +147,7 @@ Additionally, add two build variables:
 
 If the language specified is `cpp, java,` or `csharp,` either custom or `AutoBuild` build steps are required. For other languages, if AutoBuild is included the step completes successfully without performing any action. 
 
-![Screenshot of code scanning pipeline setup for YAML](media/code-scanning-config-classic-tasks.png)
+![Screenshot of code scanning variables setup for YAML](media/code-scanning-config-classic-variable.png)
 
 
 To generate alerts, run your first scan with a pipeline with the code scanning tasks included.
