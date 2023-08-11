@@ -35,10 +35,3 @@
     href: ../../organizations/settings/select-backlog-navigation-levels.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
   - name: Show bugs on backlogs & boards
     href: ../../organizations/settings/show-bugs-on-backlog.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
-- name: Best practices, monitoring, & reports
-  items:
-  - name: Rollup of work & other fields
-    href: ../../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/boards/toc.json
-    displayname: native, Planning pane, tools, query charts, Excel
-  - name: View/configure velocity
-    href: ../../report/dashboards/team-velocity.md?toc=/azure/devops/boards/toc.json
