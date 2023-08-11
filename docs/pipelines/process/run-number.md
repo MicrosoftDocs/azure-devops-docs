@@ -160,14 +160,15 @@ You can use variables as part of your run number. In this example, the variable 
 
 ```yaml
 variables:
-  ${{ if eq(variables['Build.Reason'], 'PullRequest') }}:
-    why: pr
-  ${{ elseif eq(variables['Build.Reason'], 'Manual' ) }}:
-    why: manual
-  ${{ elseif eq(variables['Build.Reason'], 'IndividualCI' ) }}:
-    why: indivci 
-  ${{ else }}:
-    why: other
+  - name: why
+    ${{ if eq(variables['Build.Reason'], 'PullRequest') }}:
+      value: pr
+    ${{ elseif eq(variables['Build.Reason'], 'Manual' ) }}:
+      value: manual
+    ${{ elseif eq(variables['Build.Reason'], 'IndividualCI' ) }}:
+      value: indivci
+    ${{ else }}:
+      value: other
 
 name: $(TeamProject)_$(SourceBranchName)_$(why)_$(Date:yyyyMMdd)$(Rev:.r)
 
