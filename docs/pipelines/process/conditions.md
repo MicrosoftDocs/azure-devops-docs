@@ -126,7 +126,7 @@ stages:
 
 If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` will still run, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
-In this pipeline, `stage1` depends on `stage2`. Job `B` has a `condition` set for it.
+In this pipeline, `stage2` depends on `stage1`. Job `B` has a `condition` set for it.
 
 ```yml
 stages:
