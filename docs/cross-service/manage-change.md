@@ -229,7 +229,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Work items and process guidance 
 
 - [Capability Maturity Model Integration (CMMI) process](../boards/work-items/guidance/cmmi-process.md)
-- [Acceptance criteria](../boards/backlogs/best-practices-product-backlog.md#acceptance-criteria)
 - [Definition of Done](../boards/boards/add-columns.md#definition-of-done)
 - [Add work item tags to categorize and filter lists and boards](../boards/queries/add-tags-to-work-items.md) 
 - [Customize your backlogs or boards (Inheritance process)](../organizations/settings/work/customize-process-backlogs-boards.md)
