@@ -104,7 +104,7 @@ Now you can embed videos in a wiki page from online services such as Microsoft S
 
 ```markdown
 ::: video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7DbslbKsQSk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/7DbslbKsQSk]
 :::
 ```
 
