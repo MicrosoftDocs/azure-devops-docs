@@ -19,21 +19,6 @@ Kubelogin isn't pre-installed on [Hosted images](/azure/devops/pipelines/agents/
 
 ```
 
-### Use Service Principal in Agent VM extension
-
-Azure VMs can be included in Deployment Groups using a [VM Extension](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops&preserve-view=true#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template). The VM extension has been updated to optionally use a Service Principal instead of a PAT to register the agent:
-
-```
-"settings": {
-  "userServicePrincipal": true
-}
-"protectedSettings": {
-  "clientId": "<clientId>",
-  "clientSecret": "<clientSecret>",
-  "tenantId": "<tenantId>"
-}
-```
-
 ### Improvements to Approvals REST API
 
 [Approvals](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass&preserve-view=true#approvals) increase your YAML pipeline's security by giving you the possibility to manually review a deployment to production. We updated the [Approvals Query REST API](/rest/api/azure/devops/approvalsandchecks/approvals/query) to make it more powerful. Now, you:
