@@ -354,6 +354,11 @@
       "source_path": "docs/boards/backlogs/best-practices-product-backlog.md",
       "redirect_url": "/azure/devops/boards/backlogs/set-up-your-backlog",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/query-support-integration-cross-service-extensions.md",
+      "redirect_url": "/azure/devops/boards/extensions/migrate-integrate",
+      "redirect_document_id": false
     }
   ]
 }

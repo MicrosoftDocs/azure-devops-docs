@@ -960,7 +960,6 @@ WHERE
 - [Query fields, operators, values, and variables](query-operators-variables.md)  
 - [Work item fields and attributes](../work-items/work-item-fields.md) 
 - [About managed queries](about-managed-queries.md)  
-- [Cross-service and enhanced query operations](query-support-integration-cross-service-extensions.md)
 - [Define a query](using-queries.md)      
 
 
