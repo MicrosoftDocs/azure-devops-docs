@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.author: sdanie
 author: steved0x
-ms.date: 01/18/2023
+ms.date: 07/27/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -56,10 +56,41 @@ pool:
   - Agent.Version -equals 2.144.0 # equals check for Agent.Version 2.144.0
 ```
 
-> [!NOTE]
-> Checking for the existence of a capability (exists) and checking for a specific string in a capability (equals) are the only two supported operations for demands.
+Checking for the existence of a capability (exists) and checking for a specific string in a capability (equals) are the only two supported operations for demands.
 
-For more information and examples, see [YAML schema - Demands](/azure/devops/pipelines/yaml-schema/pool).
+### Exists operation
+
+The exists operation checks for the presence of a capability with the specific name. The comparison is not case sensitive.
+
+```yaml
+pool:
+  name: MyPool
+  demands: myCustomCapability # exists check for myCustomCapability
+ ```
+
+### Equals operation
+
+The equals operation checks for the existence of a capability, and if present, checks its value with the specified value. If the capability is not present or the values don't match, the operation evaluates to false. The comparisons are not case sensitive.
+
+```yaml
+pool:
+  name: MyPool
+  demands: Agent.Version -equals 2.144.0 # equals check for Agent.Version 2.144.0
+```
+
+### Agent variables as system capabilities
+
+Self-hosted agents have the following system capabilities with similar names to agent variables, but they are not variables and don't require variable syntax when checking for exists or equals in a demand.
+
+* Agent.Name
+* Agent.Version
+* Agent.ComputerName
+* Agent.HomeDirectory
+* Agent.OS
+* Agent.OSArchitecture
+* Agent.OSVerion (Windows agents only)
+
+For more information, see [YAML schema - Demands](/azure/devops/pipelines/yaml-schema/pool).
 
 :::moniker-end
 

@@ -77,24 +77,29 @@ _Inbound connections_ originate from Azure DevOps and target resources within yo
 Ensure the following IP addresses are allowed for inbound connection, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from Azure DevOps Services to your on-premises or other cloud services.
 
 > [!div class="mx-tdCol2BreakAll"]  
-> |  Region  | IP V4 ranges |  
-> |------|---------|  
-> | Australia East | 20.37.194.0/24 |  
-> | Australia South East | 20.42.226.0/24 |  
-> | Brazil South | 191.235.226.0/24 |  
-> | Central Canada | 52.228.82.0/24 |
-> | Asia Pacific (Singapore) | 20.195.68.0/24 |
-> | South India | 20.41.194.0/24 |  
-> | Central United States | 20.37.158.0/23 |  
-> | West Central United States | 52.150.138.0/24 |  
-> | East United States   | 20.42.5.0/24 |  
-> | East 2 United States  | 20.41.6.0/23 |
-> | North United States  | 40.80.187.0/24 |  
-> | South United States   | 40.119.10.0/24 |
-> | West United States  | 40.82.252.0/24 |  
-> | West 2 United States | 20.42.134.0/23 |  
-> | Western Europe | 40.74.28.0/23 |  
-> | United Kingdom South | 51.104.26.0/24 |  
+> |  Geography | Region  | IP V4 ranges |  
+> |------|------|---------|  
+> | Australia | Australia East | 20.37.194.0/24 |  
+> |  | Australia South East | 20.42.226.0/24 |  
+> | Brazil | Brazil South | 191.235.226.0/24 |  
+> | Canada | Central Canada | 52.228.82.0/24 |
+> | Asia Pacific | Southeast Asia (Singapore) | 20.195.68.0/24 |
+> | India | South India | 20.41.194.0/24 |
+> |  | Central India | 20.204.197.192/26 |  
+> | United States | Central United States | 20.37.158.0/23 |  
+> |  | West Central United States | 52.150.138.0/24 |
+> |  | North Central United States | 40.80.187.0/24 |
+> |  | South Central United States | 40.119.10.0/24 |
+> |  | East United States   | 20.42.5.0/24 |  
+> |  | East 2 United States  | 20.41.6.0/23 |
+> |  | North United States  | 40.80.187.0/24 |  
+> |  | South United States   | 40.119.10.0/24 |
+> |  | West United States  | 40.82.252.0/24 |  
+> |  | West 2 United States | 20.42.134.0/23 |
+> |  | West 3 United States | 20.125.155.0/24 |  
+> | Europe | Western Europe | 40.74.28.0/23 |
+> |  | North Europe | 20.166.41.0/24 |
+> | United Kingdom | United Kingdom South | 51.104.26.0/24 |  
 
 Azure Service Tags are supported for *inbound* connection. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
 

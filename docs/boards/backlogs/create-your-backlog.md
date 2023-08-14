@@ -339,7 +339,7 @@ Choose **Save & Close** when you're done.
    :::column-end:::
    :::column span="3":::
       Define what &quot;Done&quot; means by describing the criteria for the team to use to verify whether the PBI or the bug fix is fully implemented.</p>
-      Before work begins on a PBI or bug, describe the [criteria for customer acceptance](best-practices-product-backlog.md#acceptance) as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers&#39; expectations. Also, this information provides the basis for acceptance testing.
+      Before work begins on a PBI or bug, describe the criteria for customer acceptance as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers&#39; expectations. Also, this information provides the basis for acceptance testing.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -413,7 +413,6 @@ Teams that want the least overhead for tracking and estimating might prefer Kanb
 - [Configure and customize Azure Boards](../configure-customize.md)  
 - [Bulk modify work items](bulk-modify-work-items.md)
 - [Copy or clone work items](copy-clone-work-items.md)
-- [Refine your backlog](best-practices-product-backlog.md)  
 - [Display rollup progress bars or counts](display-rollup.md)
 - [Product backlog controls](product-backlog-controls.md)
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md)
@@ -426,7 +425,6 @@ Teams that want the least overhead for tracking and estimating might prefer Kanb
 
 - [Bulk modify work items](bulk-modify-work-items.md)
 - [Copy or clone work items](copy-clone-work-items.md)
-- [Refine your backlog](best-practices-product-backlog.md)  
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)

@@ -234,7 +234,7 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
       Supported: 
       - [Download GitHub Release task](/azure/devops/pipelines/tasks/reference/download-github-release-v0) 
       - [GitHub Release task](/azure/devops/pipelines/tasks/reference/github-release-v1)
-      - [Open source Azure Pipeline tasks](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks) 
+      - [Open source Azure Pipelines tasks](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks) 
    :::column-end:::
 :::row-end:::
 ---

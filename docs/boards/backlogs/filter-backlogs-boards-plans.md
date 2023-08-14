@@ -242,7 +242,7 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range="< azure-devops-2022"
 :::row:::
    :::column span="1.5":::
-     [**Plans**](../extensions/delivery-plans.md)
+     [**Plans**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -659,7 +659,7 @@ Along with the standard filter functions summarized in the previous table, the f
 ::: moniker range="< azure-devops-2022"
 :::row:::
    :::column span="2":::
-     [**Plans**](../extensions/delivery-plans.md)
+     [**Plans**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="2":::
 

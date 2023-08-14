@@ -8,7 +8,7 @@
   href: connect-on-premises-to-github.md
 - name: Link GitHub commits, pull requests, & issues
   href: link-to-from-github.md
-- name: Configure status badges
+- name: Add status badges
   href: configure-status-badges.md
 - name: Enable DevSecOps with Azure and GitHub
   href: /devops/devsecops/enable-devsecops-azure-github

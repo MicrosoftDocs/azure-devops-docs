@@ -1,16 +1,16 @@
 ---
-title: Enable Kanban board badge status for a GitHub repo
+title: Add status badges for your GitHub repo
 titleSuffix: Azure Boards
-description: Learn how to configure your Kanban board badge status. You can configure the badge status to appear on your GitHub repo. 
+description: Learn how to add and configure your Kanban board badge status so it appears on your GitHub repo. 
 ms.service: azure-devops-boards
-ms.topic: quickstart
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/03/2023
+ms.date: 07/12/2023
 ---
 
-# Configure status badges for your GitHub repo 
+# Add status badges for your GitHub repo 
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
  
@@ -34,9 +34,9 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 
 1. Sign into Azure Boards and [open your Kanban board](../boards/kanban-quickstart.md). 
 
-2. Select the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
+2. Select the :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
-:::image type="content" source="../../organizations/settings/media/configure-team/open-board-settings.png" alt-text="Screenshot of opening board settings."::: 
+   :::image type="content" source="../../organizations/settings/media/configure-team/open-board-settings.png" alt-text="Screenshot of opening board settings."::: 
 
 3. Select **Status badge** and then check or uncheck the **Allow anonymous users to access the status badge**. When it's unchecked, users who aren't signed in can still view the status badge.
 
@@ -65,9 +65,9 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 
    The only setting that you can configure is the **Allow anonymous users to access the status badge**. The badge type under **Settings** only switches the Markdown syntax for you to copy from the **Sample Markdown** and **Image URL** values. 
 
-6. Open the README file in your GitHub repo and paste the syntax you copied to have the badge display.  
+6. Open the README file in your GitHub repo and paste the syntax you copied to make the badge display.  
 
-	You should see the same preview image that you selected with values that correspond to your Kanban board. For example: 
+	You should see the same preview image that you selected with values that correspond to your Kanban board. 
 
 ## Related articles
 

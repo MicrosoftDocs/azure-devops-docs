@@ -115,7 +115,7 @@ The four main states that are defined for the User Story (Agile process) describ
 
 > [!NOTE]
 > - A work item can exist in one and only one state. 
-> - When all work is complete, set the work item **State** to 
+> - When all work is complete, set the work item **State** to Closed.
 > - The Kanban board and Sprint Taskboard support viewing and updating the workflow state of requirements or tasks, respectively, using drag and drop. For more information, see [Start using your Kanban board](../boards/kanban-quickstart.md) and [Update and monitor your Taskboard](../sprints/task-board.md). 
 > - Depending on the :::image type="icon" source="../media/icons/view-options-icon.png" border="false"::: **View Options** you select, work items in a *Closed* or *Completed* state won't appear on the backlog. 
 > - The *Removed* state supports removing a work item from appearing on the backlog. For more information, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove). 
