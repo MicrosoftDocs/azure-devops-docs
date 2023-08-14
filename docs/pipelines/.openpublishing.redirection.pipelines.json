@@ -136,6 +136,10 @@
     {
       "source_path_from_root":"/docs/pipelines/agents/v2-osx.md",
       "redirect_url":"/azure/devops/pipelines/agents/osx-agent"
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/github-actions.md",
+      "redirect_url":"/azure/developer/github"
     }
   ]
 }
