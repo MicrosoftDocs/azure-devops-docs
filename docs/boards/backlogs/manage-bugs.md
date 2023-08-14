@@ -537,7 +537,6 @@ For more information on extensions, see [Azure Boards extensions developed by Mi
 - [Organize your backlog, map child work items to parents](organize-backlog.md)  
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md)  
 - [Forecast your product backlog](../sprints/forecast.md)  
-- [Refine your backlog](best-practices-product-backlog.md)  
 
 ### Kanban board
 

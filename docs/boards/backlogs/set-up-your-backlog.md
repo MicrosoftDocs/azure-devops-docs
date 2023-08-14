@@ -358,7 +358,6 @@ The following settings can influence the type and number of work items that appe
 ## Related articles
 
 - [Add a team, move from one default team to several teams](../../organizations/settings/add-teams.md)
-- [Refine your backlog](best-practices-product-backlog.md)  
 - [Create your backlog](create-your-backlog.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)
