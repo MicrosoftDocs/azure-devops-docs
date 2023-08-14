@@ -729,9 +729,9 @@ To package and publish Azure DevOps Extensions to the Visual Studio Marketplace,
 ## FAQs
 See the following frequently asked questions (FAQs) about adding custom build or release tasks in extensions for Azure DevOps
 
-### Q: How can I restrict GitHub Codespaces commands usage for task?
+### Q: How can I restrict Azure Pipelines commands usage for task?
 
-You can restrict GitHub Codespaces commands usage and variables, which can be set by task.
+You can restrict Azure Pipelines commands usage and variables, which can be set by task.
 This action could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. We recommend that you set it up for new tasks.
 To apply, you may need to add the following statement to your task.json file:
 
