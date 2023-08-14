@@ -427,4 +427,3 @@ When it's updated, the section should appear as follows.
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 - [Build GitHub repositories](../../pipelines/repos/github.md) 
 - [Change GitHub repository access](install-github-app.md#change-repository-access)
-- [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)
