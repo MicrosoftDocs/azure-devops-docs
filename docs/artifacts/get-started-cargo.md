@@ -61,7 +61,7 @@ If you already have an existing Azure Artifacts feed that can be used for Cargo 
 1. Select **Connect to feed**, and then select **Cargo** from the left navigation pane.
 
 > [!IMPORTANT]
-> Cargo support in Azure Artifacts is currently in preview and may require the [nightly toolchain](https://go.microsoft.com/fwlink/?linkid=2243883) with the `registry-auth`` [unstable-feature](https://go.microsoft.com/fwlink/?linkid=2243884) enabled. To enable registry-auth, add the following to [.cargo/config.toml](https://go.microsoft.com/fwlink/?linkid=2234410).
+> Cargo support in Azure Artifacts is currently in preview and may require the [nightly toolchain](https://go.microsoft.com/fwlink/?linkid=2243883) with the `registry-auth` [unstable-feature](https://go.microsoft.com/fwlink/?linkid=2243884) enabled. To enable registry-auth, add the following to [.cargo/config.toml](https://go.microsoft.com/fwlink/?linkid=2234410).
 >
 > ```
 > [unstable]
@@ -69,7 +69,7 @@ If you already have an existing Azure Artifacts feed that can be used for Cargo 
 > ```
 >
 > To use the nightly toolchain, you can run the following:
-
+>
 > ```
 > rustup default nightly
 > ```
