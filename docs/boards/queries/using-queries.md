@@ -20,10 +20,10 @@ ms.date: 08/10/2023
 Work item queries generate lists of work items based on the filter criteria that you provide. You can save and share these managed queries with others.
 
 ::: moniker range=">= azure-devops-2020"
-You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. You can also define and import a work item query using [WIQL syntax and a .wiq file](query-support-integration-cross-service-extensions.md#wiql). To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
+You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
-You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. You can also define and import a work item query using [WIQL syntax and a .wiq file](query-support-integration-cross-service-extensions.md#wiql). To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
+You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 ::: moniker-end
 
 #### [Browser](#tab/browser/) 
