@@ -208,7 +208,7 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
    :::column-end::: 
    :::column span="2":::
       - Supports continuous integration (CI) builds for GitHub Enterprise repositories.
-      - Create a pipeline to build code contained within a GitHub Enterprise repository using the the build pipeline wizard. 
+      - Create a pipeline to build code contained within a GitHub Enterprise repository using the build pipeline wizard. 
        For details, see [Build GitHub repositories, CI triggers](../pipelines/repos/github.md#ci-triggers).  
    :::column-end:::
 :::row-end:::
