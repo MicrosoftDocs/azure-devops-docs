@@ -60,6 +60,8 @@ If you already have an existing Azure Artifacts feed that can be used for Cargo 
 
 1. Select **Connect to feed**, and then select **Cargo** from the left navigation pane.
 
+1. Follow the **Project setup** instructions on the **Connect to feed** page.
+
 > [!IMPORTANT]
 > Cargo support in Azure Artifacts is currently in preview and may require the [nightly toolchain](https://go.microsoft.com/fwlink/?linkid=2243883) with the `registry-auth` [unstable-feature](https://go.microsoft.com/fwlink/?linkid=2243884) enabled. To enable registry-auth, add the following to [.cargo/config.toml](https://go.microsoft.com/fwlink/?linkid=2234410).
 >
