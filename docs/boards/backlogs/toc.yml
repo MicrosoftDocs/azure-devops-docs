@@ -37,9 +37,6 @@
     href: ../../organizations/settings/show-bugs-on-backlog.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
 - name: Best practices, monitoring, & reports
   items:
-  - name: Refine your backlog
-    href: best-practices-product-backlog.md
-    displayname: product owner, role, acceptance criteria, spikes
   - name: Rollup of work & other fields
     href: ../../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/boards/toc.json
     displayname: native, Planning pane, tools, query charts, Excel

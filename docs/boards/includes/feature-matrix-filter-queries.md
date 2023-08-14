@@ -217,4 +217,4 @@ The following table summarizes the query filter functions supported by each Azur
 :::row-end:::
 ---
 
-To bulk move, copy, or paste query clauses, install and use the WIQL editor. For more information, see [Cross-service and enhanced query operations](../queries/query-support-integration-cross-service-extensions.md#wiql)
+To bulk move, copy, or paste query clauses, install and use the [WIQL editor](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata).
