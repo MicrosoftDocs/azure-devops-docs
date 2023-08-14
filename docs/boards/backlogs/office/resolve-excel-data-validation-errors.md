@@ -79,6 +79,7 @@ You can use the Office Excel tools to find and resolve an error in a work item l
     -   If a message appears that indicates error checking has completed, select **OK** to close both this message and the **Error Checking** dialog box.  
   
 ## Related articles
-
+-  [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  
+-  [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)      
 -  [Connect Azure Boards to an Office client](track-work.md) 

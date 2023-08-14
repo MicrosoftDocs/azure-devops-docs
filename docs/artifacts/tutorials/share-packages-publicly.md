@@ -2,7 +2,7 @@
 title: Share Packages publicly with public feeds
 description: Use Azure Artifacts public feeds to share packages publicly.
 ms.service: azure-devops-artifacts
-ms.custom: devx-track-python
+ms.custom:
 ms.date: 07/07/2023
 monikerRange: 'azure-devops'
 ---
@@ -85,6 +85,9 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 - [Publish Universal Packages](../../pipelines/artifacts/universal-packages.md#publish-a-universal-package)
 
 - - -
+
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
 ## Share packages
 

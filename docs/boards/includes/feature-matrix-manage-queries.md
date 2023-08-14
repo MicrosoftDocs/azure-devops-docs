@@ -34,7 +34,7 @@ The following features provide support for working with query results, saving an
    :::column-end:::
    :::column span="1":::  
       - [Import/export a query (csv)](../queries/import-work-items-from-csv.md)  
-      - [Import/export a query (.wiq)](../queries/query-support-integration-cross-service-extensions.md#wiql)  
+      - [Import/export a query (.wiq)](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)  
       - [Open and run a query](../queries/view-run-query.md)  
       - [Publish/refresh a query (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md)  
       - [Run REST API queries](/rest/api/azure/devops/wit/queries)  

@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 06/20/2023
+ms.date: 07/26/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -22,6 +22,14 @@ To build your code or deploy your software using Azure Pipelines, you need at le
 
 When your pipeline runs, the system begins one or more jobs.
 An agent is computing infrastructure with installed agent software that runs one job at a time.
+
+Azure Pipelines provides several different types of agents.
+
+| Agent type | Description | Availability |
+|------------|-------------|--------------|
+| [Microsoft-hosted agents](#microsoft-hosted-agents) | Agents hosted and managed by Microsoft | Azure DevOps Services |
+| [Self-hosted agents](#install) | Agents that you configure and manage, hosted on your VMs | Azure DevOps Services, Azure DevOps Server, TFS |
+| [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be auto-scaled to meet demands | Azure DevOps Services |
 
 ::: moniker range=">= azure-devops-2019"
 Jobs can be run [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).

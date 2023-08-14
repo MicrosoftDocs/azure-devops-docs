@@ -2,11 +2,11 @@
 title: 'Tutorial: Create a multistage pipeline with Azure DevOps'
 description: Build an app pipeline for development and staging.
 ms.topic: tutorial 
-ms.date: 07/10/2023
+ms.date: 07/12/2023
 ms.custom: template-how-to-pattern
 ---
 
-# Create a multistage pipeline with Azure DevOps
+# Tutorial: Create a multistage pipeline with Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -14,9 +14,10 @@ You can use an Azure DevOps multistage pipeline to divide your CI/CD process int
 
 In this article, you'll create two App Service instances and build a YAML pipeline with three stages: 
 
-1. Build: build the source code and produce a package
-2. Dev: deploy your package to a development site for testing
-3. Staging: deploy to a staging Azure App Service instance a [manual approval check](approvals.md)
+> [!div class="checklist"]
+> * [Build: build the source code and produce a package](#add-the-build-stage)
+> * [Dev: deploy your package to a development site for testing](#add-the-dev-stage)
+> * [Staging: deploy to a staging Azure App Service instance with a manual approval check](#add-the-staging-stage)
 
 In a real-world scenario, you may have another stage for deploying to production depending on your DevOps process. 
 
@@ -31,7 +32,7 @@ The example code in this exercise is for a .NET web application for a pretend sp
 * An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
 
-## 1 - Fork the project
+## Fork the project
 
 Fork the following sample repository at GitHub. 
 
@@ -39,7 +40,7 @@ Fork the following sample repository at GitHub.
 https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy
 ```
 
-## 2 - Create the App Service instances
+## Create the App Service instances
 
 Before you can deploy your pipeline, you need to first create an App Service instance to deploy to. You'll use Azure CLI to create the instance. 
 
@@ -96,7 +97,7 @@ Before you can deploy your pipeline, you need to first create an App Service ins
 
 1. Copy the names of the App Service instances to use as variables in the next section. 
 
-## 3 - Create your Azure DevOps project and variables
+## Create your Azure DevOps project and variables
 
 Set up your Azure DevOps project and a build pipeline. You'll also add variables for your development and staging instances. 
 
@@ -138,7 +139,7 @@ Your build pipeline:
  
 1. Select **Save** to save your variables. 
 
-## 4 - Add the Dev stage
+## Add the Dev stage
 
 Next, you'll update your pipeline to promote your build to the *Dev* stage. 
 
@@ -172,9 +173,7 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
 
 1. Save and run your pipeline. 
 
-1. Verify that your app deployed by going to https://tailspin-space-game-web-dev-1234.azurewebsites.net in your browser. Substitute `1234` with the unique value for your site. 
-
-## 5 - Add the Staging stage 
+## Add the Staging stage 
 
 Last, you'll promote the Dev stage to Staging. Unlike the Dev environment, you want to have more control in the staging environment you'll add a manual approval. 
 
@@ -228,13 +227,33 @@ You'll add new stage, `Staging` to the pipeline that includes a manual approval.
 1. Review the approval and allow the pipeline to run. 
  
     :::image type="content" source="media/mutistage-pipeline/pipeline-check-manual-validation.png" alt-text="Screenshot of manual validation check.":::
-    
-1. Verify that your app deployed by going to https://tailspin-space-game-web-staging-1234.azurewebsites.net in your browser. Substitute `1234` with the unique value for your site. 
 
-## Clean up
+## Clean up resources
 
-Delete the resource group that you used, *tailspin-space-game-rg*,  with the `az group delete` command.
+ If you're not going to continue to use this application, delete the resource group in Azure portal and the project in Azure DevOps with the following steps:
 
-```azurecli
-az group delete --name tailspin-space-game-rg
-```
+To clean up your resource group:
+
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
+1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
+
+    :::image type="content" source="../apps/cd/azure/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing selecting the Cloud Shell menu item. ":::
+
+1. Run the following [az group delete](/cli/azure/group#az-group-delete) command to delete the resource group that you used, `tailspin-space-game-rg`.
+
+    ```azurecli
+    az group delete --name tailspin-space-game-rg
+    ```
+
+To delete your Azure DevOps project, including the build pipeline:
+
+1. In Azure DevOps, navigate to your project. 
+
+1. Select **Project settings**.
+
+1. In the **Project details**, select **Delete**.
+
+## Related content
+
+- [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)
+- [Deploy to App Service using Azure Pipelines](/azure/app-service/deploy-azure-pipelines)

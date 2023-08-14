@@ -7,7 +7,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/24/2023
+ms.date: 08/10/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -23,7 +23,7 @@ When users leave the group, the licenses get freed and returned to your pool. Yo
 
 ## Prerequisites
 
-- To manage licenses and group rules, you must be a member of the **Project Collection Administrators** group. If you're not a member, get added as one. See [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
+- To manage licenses and group rules, you must be a member of the **Project Collection Administrators** group. If you're not a member, [get added as one](../security/change-organization-collection-level-permissions.md).
 
 ## Add group rule
 
@@ -53,6 +53,7 @@ When users leave the group, the licenses get freed and returned to your pool. Yo
 
 > [!IMPORTANT]
 > Group rules only apply to users without direct assignments and to users added to the group going forward. [Remove direct assignments](#remove-direct-assignments) so the group rules apply to those users.
+> Visual Studio Subscribers are always directly assigned via the [Visual Studio Admin Portal](https://manage.visualstudio.com/) and take precedence in Azure DevOps over access levels assigned directly or via group rules. When viewing these users from the Users Hub, the License Source always shows as Direct. The only exception are Visual Studio Professional subscribers who are assigned Basic + Test Plans. Since Basic + Test Plans provides more access in Azure DevOps, it takes precedence over a Visual Studio Professional subscription.
 
 ## Manage group members
 

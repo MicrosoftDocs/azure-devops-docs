@@ -20,6 +20,11 @@ summary: |
   Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
 
   If you're having connection issues, make sure you meet the prerequisites as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md). Also be sure you've reviewed the information in [Azure Boards and Office integration](track-work.md). 
+  
+  ::: moniker range=">= azure-devops-2020" 
+   > [!TIP]  
+   > The recommended approach for bulk import or update of work items is to use the [web portal](../bulk-modify-work-items.md) or [CSV import](../../queries/import-work-items-from-csv.md).
+  ::: moniker-end 
 
 sections:
 
@@ -291,8 +296,9 @@ sections:
 
 additionalContent: | 
   ## Related articles
+  - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
+  - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
   - [Query FAQs](../../queries/query-faqs.yml)
-  - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md) 
   - [Create your backlog](../../backlogs/create-your-backlog.md) 
   - [Azure DevOps Office integration issues](tfs-office-integration-issues.md) 
   - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 

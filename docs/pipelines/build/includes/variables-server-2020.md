@@ -8,7 +8,7 @@ ms.date: 02/13/2020
 ---
 <a id="agent-variables"></a>
 
-## Agent variables (DevOps Server)
+## Agent variables (DevOps Server 2020)
 
 > [!NOTE]
 > You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
@@ -121,7 +121,7 @@ Note: This directory isn't guaranteed to be writable by pipeline tasks (for exam
 
 </table>
 
-## Build variables (DevOps Server)
+## Build variables (DevOps Server 2020)
 
 <a id="build-variables"></a>
 
@@ -513,7 +513,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 </table>
 
-## Pipeline variables (DevOps Server)
+## Pipeline variables (DevOps Server 2020)
 
 <a id="pipeline-variables"></a>
 
@@ -528,7 +528,7 @@ For example, <code>/home/vsts/work/1</code>.</td>
 
 </table>
 
-## Deployment job variables (DevOps Server)
+## Deployment job variables (DevOps Server 2020)
 
 <a id="deployment-job-variables"></a>
 
@@ -560,7 +560,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 </table>
 
 
-## System variables (DevOps Server)
+## System variables (DevOps Server 2020)
 
 <a id="system-variables"></a>
 
@@ -695,7 +695,7 @@ Otherwise, it's set to <code>False</code>.</td>
 
 <tr>
 <td>System.PullRequest.targetBranchName</td>
-<td>The name of the target branch for a pull request. This variable can be used in a pipelines to conditionally execute tasks or steps based on the target branch of the pull request. For example, you might want to trigger a different set of tests or code analysis tools depending on the branch that the changes are being merged into.
+<td>The name of the target branch for a pull request. This variable can be used in a pipeline to conditionally execute tasks or steps based on the target branch of the pull request. For example, you might want to trigger a different set of tests or code analysis tools depending on the branch that the changes are being merged into.
 </td>
 <td>No</td>
 </tr>
@@ -704,6 +704,11 @@ Otherwise, it's set to <code>False</code>.</td>
 <td>System.PullRequest.SourceBranch</td>
 <td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>). This variable is only available in a YAML pipeline if the PR is affected by a branch policy.</td>
 <td>No</td>
+</tr>
+
+<tr>
+<td>System.PullRequest.SourceCommitId</td>
+<td>The commit that is being reviewed in a pull request. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>). This variable is only available in a YAML pipeline if the PR is affected by a branch policy.</td>
 </tr>
 
 <tr>

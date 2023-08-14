@@ -324,6 +324,41 @@
       "source_path": "docs/boards/boards/best-practices-kanban.md",
       "redirect_url": "/azure/devops/boards/boards/kanban-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/notifications/add-links-to-work-items.md",
+      "redirect_url": "/azure/devops/boards/backlogs/add-link",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/extensions/delivery-plans.md",
+      "redirect_url": "/azure/devops/boards/plans/review-team-plans",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/best-tool-add-update-link-work-items.md",
+      "redirect_url": "/azure/devops/boards/work-items/about-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/work/troubleshoot-work-item-form-caching-issues.md",
+      "redirect_url": "/azure/devops/boards/faqs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/extensions/index.md",
+      "redirect_url": "/azure/devops/boards/extensions/migrate-integrate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/best-practices-product-backlog.md",
+      "redirect_url": "/azure/devops/boards/backlogs/set-up-your-backlog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/query-support-integration-cross-service-extensions.md",
+      "redirect_url": "/azure/devops/boards/extensions/migrate-integrate",
+      "redirect_document_id": false
     }
   ]
 }
