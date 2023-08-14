@@ -352,4 +352,3 @@ When it updates, the section should appear as follows.
 - [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 - [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)
-- [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)
