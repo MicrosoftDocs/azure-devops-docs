@@ -282,18 +282,6 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range="azure-devops"
-:::row:::
-   :::column span="1":::
-      GitHub Actions to trigger a pipeline run  
-   :::column-end::: 
-   :::column span="2":::
-      automate your software development workflows from within GitHub. You can deploy workflows in the same place where you store code and collaborate on pull requests and issues. For details, see [Quickstart: Trigger an Azure Pipelines run from GitHub Actions](../pipelines/ecosystems/github-actions.md).  
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019 < azure-devops-2020" 
 :::row:::
    :::column span="1":::
