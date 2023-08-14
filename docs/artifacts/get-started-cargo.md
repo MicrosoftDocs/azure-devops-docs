@@ -60,57 +60,19 @@ If you already have an existing Azure Artifacts feed that can be used for Cargo 
 
 1. Select **Connect to feed**, and then select **Cargo** from the left navigation pane.
 
-1. Make sure you have installed *rustup* and then run the following command to install the *nightly* toolchain and set it as the default toolchain:
+> [!IMPORTANT]
+> Cargo support in Azure Artifacts is currently in preview and may require the [nightly toolchain](https://go.microsoft.com/fwlink/?linkid=2243883) with the `registry-auth`` [unstable-feature](https://go.microsoft.com/fwlink/?linkid=2243884) enabled. To enable registry-auth, add the following to [.cargo/config.toml](https://go.microsoft.com/fwlink/?linkid=2234410).
+>
+> ```
+> [unstable]
+> registry-auth = true
+> ```
+>
+> To use the nightly toolchain, you can run the following:
 
-    ```Command
-    rustup toolchain install nightly
-    rustup default nightly
-    ```
-
-1. Add the following snippet to your [.cargo/config.toml](https://doc.rust-lang.org/cargo/reference/config.html) to enable the *registry-auth* feature. Alternatively, the *registry-auth* feature can be enabled by passing `-Z registry-auth` on every Cargo command line that may access the network.
-
-    ```
-    [unstable]
-    registry-auth = true
-    ```
-
-1. Add your feed source to your *.cargo/config.toml* file. Replace the placeholders with the appropriate values:
-
-    ```
-    [registries]
-    FEED_NAME = { index = "sparse+https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/Cargo/index/" }
-    ```
-
-1. Add the following to your *.cargo/config.toml* to replace *crates.io* source with your feed.
-
-    ```
-    [source.crates-io]
-    replace-with = "FEED_NAME"
-    ```
-
-1. Generate a [personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes. Copy your personal access token and store it in a secure location.
-
-1. Run the following command to log in to your registry:
-
-### [PowerShell](#tab/powershell)
-
-```powershell
-"Basic " + [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("PAT:" + (Read-Host -MaskInput "Enter PAT"))) | cargo login --registry FEED_NAME
-```
-
-### [Bash](#tab/bash)
-
-```bash
-read -p "Enter PAT: " PAT; echo Basic $(echo -n PAT:$PAT | base64) | cargo login --registry FEED_NAME
-```
-
-### [Azure CLI](#tab/azcli)
-
-```azurecli
-az login
-az account get-access-token --query "join(' ', ['Bearer', accessToken])" --output tsv | cargo login --registry FEED_NAME
-```
-- - -
+> ```
+> rustup default nightly
+> ```
 
 ## Publish packages
 
