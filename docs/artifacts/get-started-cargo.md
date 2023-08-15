@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Get started with Cargo packages in Azure Artifacts
 
-Using Azure Artifacts, you can publish and download Cargo packages to feeds and public registries. This article will guide you through setting up your project and publishing your cargo packages to your Azure Artifacts feed.
+Using Azure Artifacts, you can publish and download Cargo packages to feeds and public registries. This article will guide you through setting up your project and publishing your Cargo packages to your Azure Artifacts feed.
 
 > [!NOTE]
 > Cargo support in Azure Artifacts is currently in preview.
@@ -34,7 +34,7 @@ If you already have an existing Azure Artifacts feed that can be used for Cargo 
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
-1. Give your feed a **Name** and specify its **Visibility**. Check the **Upstream sources** checkbox if you wan to include packages from public registries and then select a **Scope** for your feed.
+1. Give your feed a **Name** and specify its **Visibility**. Check the **Upstream sources** checkbox if you want to include packages from public registries and then select a **Scope** for your feed.
 
 1. Select **Create** when you're done.
 
@@ -58,7 +58,7 @@ If you already have an existing Azure Artifacts feed that can be used for Cargo 
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-1. Select **Connect to feed**, and then select **Cargo** from the left navigation pane.
+1. Select **Connect to feed**, and then select **Cargo** from the tool selection pane.
 
 1. Follow the **Project setup** instructions on the **Connect to feed** page.
 
@@ -86,8 +86,6 @@ cargo publish
 
 ## Related articles
 
-- [Promote a package to a view](feeds/views.md)
-
 - [Manage permissions](feeds/feed-permissions.md)
-
 - [Use upstream sources](concepts/upstream-sources.md)
+- [Promote a package to a view](feeds/views.md)
