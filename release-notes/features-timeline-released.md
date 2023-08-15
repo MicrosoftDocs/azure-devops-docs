@@ -61,12 +61,10 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Markdown support for comments (private preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Improvements to YAML pipeline traceability</td><td>Pipelines</td><td>Future</td></tr>
     <td>Automatic tokens created for Kubernetes Service Connection</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Pipeline agents can be registered using a Service Principal</td><td>Pipelines</td><td>Future</td></tr>
     <td>Preview of macOS 13 Ventura for Azure Pipeline hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
 <tr>
     <td rowspan="4"><a href="2023/sprint-221-update.md" data-raw-source="[9 May 2023](2023/sprint-221-update.md)"> 9 May 2023</a></td>
     <td>Swimlane rules is generally available</td><td>Boards</td><td>Future</td></tr>
-    <td>Pipeline agents can be registered using a Service Principal</td><td>Pipelines</td><td>Future</td></tr>
     <td>Pipeline settings audit improvements</td><td>Pipelines</td><td>Future</td></tr>
     <td>Pull Request widget for multiple repos is now generally available</td><td>Reporting</td><td>Future</td></tr>
 <tr>
