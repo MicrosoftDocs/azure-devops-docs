@@ -254,9 +254,6 @@
     - name: Xcode
       href: ecosystems/xcode.md
       displayName: app certificate, test flight
-    - name: GitHub Actions
-      href: ecosystems/github-actions.md
-      displayName: github, pipelines action
 - name: Build apps
   items:
     - name: Build multiple branches

@@ -132,7 +132,6 @@ Periodically review each backlog:
 
 For more information, see the following articles:
 
-- [Refine your backlog](backlogs/best-practices-product-backlog.md) 
 - [Define features and epics](backlogs/define-features-epics.md)  
 - [Create your backlog](backlogs/create-your-backlog.md)  
 - [Configure your backlog view](backlogs/configure-your-backlog-view.md)  
