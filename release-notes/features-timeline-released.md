@@ -48,7 +48,6 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Alert dismissals for dependency scanning alerts in Advanced Security</td><td>General</td><td>Future</td></tr>
     <td>Copy link to work item</td><td>Boards</td><td>Future</td></tr>
     <td>Kubernetes tasks now support kubelogin</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Use Service Principal in Agent VM extension</td><td>Pipelines</td><td>Future</td></tr>
     <td>Updates to YAML cron schedules</td><td>Pipelines</td><td>Future</td></tr>
     <td>Disable a check</td><td>Pipelines</td><td>Future</td></tr>
     <td>Improvements to Approvals REST API</td><td>Pipelines</td><td>Future</td></tr>
