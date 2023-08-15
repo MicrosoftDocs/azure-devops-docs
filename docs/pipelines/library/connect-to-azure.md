@@ -6,7 +6,7 @@ ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 10/15/2020
+ms.date: 08/15/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -19,6 +19,44 @@ monikerRange: '<= azure-devops'
 To deploy your app to an Azure resource (to an app service or to a virtual machine), you need an Azure Resource Manager service connection. 
 
 > For other types of connection, and general information about creating and using connections, see [Service connections for builds and releases](service-endpoints.md).
+
+::: moniker range="azure-devops"
+
+## Create an Azure Resource Manager service connection using Workload Identity Federation 
+
+[Workflow identity federation](azure/active-directory/workload-identities/workload-identity-federation) uses Open ID Connect to authenticate with Azure Active Directory protected resources without needing to manage secrets. 
+
+We recommend this approach if:
+
+* You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
+* You're not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
+* You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS
+
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+
+1. Choose **+ New service connection** and select **Azure Resource Manager**.
+
+   ![Choosing a service connection type](media/new-service-connection-arm.png)
+
+1. Select **Workload identity federation (automatic)**. 
+
+   ![Select workload identity type](media/select-workload-identity-service.png)
+
+1. Specify the following parameters.
+
+   | Parameter | Description |
+   | --------- | ----------- |
+   | Subscription | Select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
+   | Resource Group | Leave empty to allow users to access all resources defined within the subscription, or select a resource group to which you want to restrict users' access (users will be able to access only the resources defined within that group). |
+   | Service connection name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure subscription. |
+
+
+1. After the new service connection is created, copy the connection name into your code as the `azureSubscription` value.
+
+1. To deploy to a specific Azure resource, the task will need additional data about that resource. Go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
+
+::: moniker-end
+
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -72,6 +110,8 @@ or if you want to further limit users' permissions, you can instead use a [servi
 or a [VM with a managed service identity](#use-msi).  
 
 ::: moniker-end
+
+
 
 <a name="use-spn"></a>
 
