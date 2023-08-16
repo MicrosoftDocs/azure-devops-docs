@@ -58,7 +58,7 @@ For more information, see [About processes and process templates](../../../board
 
 5. For the project you want to change, select the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Change process** and follow the steps in the wizard.
 
-:::image type="content" source="media/change-process/change-process-basic-to-agile.png" alt-text="Screenshot of highlighted Change process selection.":::
+   :::image type="content" source="media/change-process/change-process-basic-to-agile.png" alt-text="Screenshot of highlighted Change process selection.":::
 
 6. Choose **Agile** from the dropdown menu, and then select **Save**.
 
@@ -85,10 +85,7 @@ You can customize Kanban boards to display intermediate columns. For each column
 
    :::image type="content" source="media/change-process/kanban-stories-column-settings-to-correct.png" alt-text="Screenshot of Column dialog with settings to correct.":::
 
-2. Rename each column and choose the correct state for each column so that the column-to-state mapping is correct. As needed, add one or more columns. When you're done, select **Save and close**.
-
-   :::image type="content" source="media/change-process/kanban-stories-column-settings-corrected.png" alt-text="Screenshot of Columns dialog with corrections.":::
-
+2. Rename each column and choose the correct state for each column so that the column-to-state mapping is correct. As needed, add one or more columns. **Save** your work when you're done. For more information, see [Manage columns on your Kanban board.](../../../boards/boards/add-columns.md)
 
 ## Update work items
 
@@ -100,13 +97,13 @@ You can customize Kanban boards to display intermediate columns. For each column
 
    :::image type="content" source="media/change-process/query-column-sort.png" alt-text="Screenshot of column options dialog, sort tab.":::
 
+   For more information, see [Bulk add and modify work items in Excel](../../../boards/boards/add-columns.md).
+
 3. Select **Results** to show the list of work items.
 
 4. Highlight all Issues, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon, select **Change type**, and change the type to User Story and **Save**.
 
    :::image type="content" source="media/change-process/change-type-to-user-story.png" alt-text="Screenshot of the Change type dialog.":::
-
-   For more information, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/move-change-type.md#change-type).
 
    You might receive errors where the work item type and the state are mismatched. In that case, you can't save your changes until you update the state, which is described in the next step.
 
@@ -124,29 +121,18 @@ You can customize Kanban boards to display intermediate columns. For each column
 
 1. Go to your team backlog and review the user stories.
 
-  :::image type="content" source="media/change-process/backlog-basic-to-agile.png" alt-text="Screenshot of team backlog.":::
+   :::image type="content" source="media/change-process/backlog-basic-to-agile.png" alt-text="Screenshot of team backlog.":::
 
-   If you want to change any user stories to bugs, do so now using bulk update and **Change type**. If you want to show bugs at the same level as user stories, then make that change now. For more information, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
+   To change any user stories to bugs, do so now using [bulk update](../../../boards/boards/add-columns.md) and update the **Change type**. If you want to show bugs at the same level as user stories, make that change now. For more information, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
 
 2. Go to your team board and verify that the column settings are valid.
 
     :::image type="content" source="media/change-process/board-user-story.png" alt-text="Screenshot of board columns.":::
 
-For more information, see [Add columns to your Kanban board](../../../boards/boards/add-columns.md).
-
-## Optional updates
-
-After changing the process, you may want to make other updates as follows:
-
-- [Change the project name](../../../organizations/projects/rename-project.md)
-- [Update your project summary or vision](../../../organizations/projects/project-vision-status.md)
-
 ## Related articles
 
 - [Bulk modify work items](../../../boards/backlogs/bulk-modify-work-items.md)
-- [Change the process used by a project](./manage-process.md#change-the-process-used-by-a-project)
 - [Create an inherited process](./manage-process.md#create-an-inherited-process)
 - [Add and manage work item types](./customize-process-work-item-type.md)
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
-- [Customize your boards](../../../boards/configure-customize.md)
 - [Create and saved managed queries with the query editor](../../../boards/queries/using-queries.md)
