@@ -48,6 +48,7 @@ The following table indicates which preview features can be enabled per user or 
 |[New Boards Hubs](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview) | ✔️ | ✔️ |     
 |[New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)| ✔️ | ✔️ |    
 |[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ | ✔️ |    
+|[New workflow identity authentication option](../../pipelines/library/connect-to-azure.md)| ✔️ | ✔️ |    
 |[New Settings Search in the organization settings panel](../../organizations/settings/search-settings.md)| ✔️ | ✔️ |    
 |[New Teams page](../../organizations/settings/add-teams.md)| ✔️ | ✔️ |    
 |New Wiki experience| ✔️ | ✔️ |     
