@@ -22,25 +22,28 @@ To deploy your app to an Azure resource (to an app service or to a virtual machi
 
 ::: moniker range="azure-devops"
 
-## Create an Azure Resource Manager service connection using Workload Identity Federation 
+## Create an Azure Resource Manager service connection using workload identity federation 
 
-[Workflow identity federation](azure/active-directory/workload-identities/workload-identity-federation) uses Open ID Connect to authenticate with Azure Active Directory protected resources without needing to manage secrets. 
+[Workflow identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses Open ID Connect to authenticate with Azure Active Directory protected resources without needing to manage secrets. 
 
 We recommend this approach if:
 
 * You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
+* You have permission in Azure Active Directory to create app registrations. App registrations are not disabled and you have an appropriate role (example: Application Developer).
 * You're not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
-* You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS
+* You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS.
+* You are in a supported region. See [unsupported regions](/azure/active-directory/workload-identities/workload-identity-federation-considerations#unsupported-regions-user-assigned-managed-identities).
+* Your pipeline does not use Marketplace extensions.  
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Choosing a service connection type](media/new-service-connection-arm.png)
+   ![Choosing a workflow identity service connection type](media/new-service-connection-arm.png)
 
 1. Select **Workload identity federation (automatic)**. 
 
-   ![Select workload identity type](media/select-workload-identity-service.png)
+   ![Select workload identity service connection type](media/select-workload-identity-service.png)
 
 1. Specify the following parameters.
 
