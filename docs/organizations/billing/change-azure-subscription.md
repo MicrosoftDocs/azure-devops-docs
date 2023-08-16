@@ -74,9 +74,8 @@ Azure DevOps removes your billing subscription from your organization.
 
 ## Related articles
 
+* [Move Azure resources to a new resource group](/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 * [Add a backup billing manager](add-backup-billing-managers.md)
 * [Pay for Basic + Test Plans](buy-basic-access-add-users.md)
 * [Pay for Azure Pipelines](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
-* [Set up billing](set-up-billing-for-your-organization-vs.md)
-* [Change the Azure subscription used for billing](change-azure-subscription.md)
 * [Get Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
