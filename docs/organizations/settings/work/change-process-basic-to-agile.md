@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: dahellem
 monikerRange: ">= azure-devops-2020"
-ms.date: 08/14/2023
+ms.date: 08/16/2023
 ---
 
 # Change a project process from Basic to Agile
@@ -38,6 +38,8 @@ For more information, see [About processes and process templates](../../../board
 <!--- QUESTION: What happens to Analytics data when you do this change?  -->
 
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
+
+[!INCLUDE [image-differences](../../../includes/image-differences.md)]
 
 ## Change the process
 
@@ -94,7 +96,7 @@ You can customize Kanban boards to display intermediate columns. For each column
 
    :::image type="content" source="media/change-process/query-basic-items.png" alt-text="Screenshot of querying all items.":::
 
-2. Select the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and then select **Column options**. Choose to show the State and Reason fields. Choose the **Sort** tab, and then set it to sort the list by work item type and state value.
+2. Edit your columns to be sure you show the State and Reason fields. Select the **Sorting** tab, and then set it to sort the list by work item type and state value.
 
    :::image type="content" source="media/change-process/query-column-sort.png" alt-text="Screenshot of column options dialog, sort tab.":::
 
