@@ -390,7 +390,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Dependency management 
 
 - [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md) 
-- [Triage work items](../boards/queries/triage-work-items.md) 
 
 #### Milestone planning 
 

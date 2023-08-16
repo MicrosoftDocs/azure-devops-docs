@@ -235,7 +235,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Monitor and report on progress
 
-- [Triage work items](../boards/queries/triage-work-items.md)
 - [View or configure team velocity](../report/dashboards/team-velocity.md)
 - [Burndown guidance, scope management](../report/dashboards/burndown-guidance.md)
 - [Cumulative flow, lead time, and cycle time guidance](../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
