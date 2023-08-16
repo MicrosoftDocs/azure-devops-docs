@@ -285,7 +285,7 @@ The following table provides examples of how to expand several of these properti
 |-------------|-------------------|-------------------|
 | DateTime  | `DateSK`      | `$expand=CreatedDate($select=Date)` or<br/>`$expand=CreatedDate($select=WeekStartingDate)`  | 
 | Identity  | `UserSK`      | `$expand=AssignedTo($select=UserName)` or<br/>`$expand=AssignedTo($select=UserEmail)` | 
-| Area      | `AreaSK`      | `$expand=AssignedTo($select=AreaName)` or<br/>`$expand=AssignedTo($select=AreaPath)` | 
+| Area      | `AreaSK`      | `$expand=Area($select=AreaName)` or<br/>`$expand=Area($select=AreaPath)` | 
 | Iteration | `IterationSK` | `$expand=Iteration($select=IterationName)` or<br/>`$expand=Iteration($select=IterationPath)` or<br/>`$expand=Iteration($select=StartDate)`| 
 | Project	| `ProjectSK`   | `$expand=Project($select=ProjectName)` | 
 | Team 	    | `TeamSK`      | `$expand=Teams($select=TeamName)` | 
