@@ -206,7 +206,6 @@ Tasks listed below are available to users with **Contributor** permissions and *
       <br/>
       - [Start storyboarding ](../queries/share-plans.md#storyboard)  
       - [Track dependencies](../plans/track-dependencies.md)  
-      - [Triage work items](../queries/triage-work-items.md)  
       <br/>
       - [Update status of tasks (Taskboard)](../sprints/task-board.md)  
       - [Update status of work items (Kanban board)](../boards/kanban-quickstart.md)  
