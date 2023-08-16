@@ -861,7 +861,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]  # map in the variable
                                                                           # remember, expressions require single quotes
@@ -920,7 +920,7 @@ jobs:
 # Set an output variable from a job with a matrix
 - job: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   strategy:
     maxParallel: 2
     matrix:
@@ -940,7 +940,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromJobADebug: $[ dependencies.A.outputs['debugJob.setvarStep.myOutputVar'] ]
   steps:
@@ -954,7 +954,7 @@ jobs:
 # Set an output variable from a job with slicing
 - job: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
     parallel: 2 # Two slices
   steps:
   - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
@@ -966,7 +966,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
   steps:
@@ -982,7 +982,7 @@ jobs:
 # Set an output variable from a deployment
 - deployment: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   environment: staging
   strategy:
     runOnce:
@@ -997,7 +997,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
   steps:
