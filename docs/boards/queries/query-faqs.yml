@@ -220,8 +220,7 @@ sections:
     questions:
       - question: How can I best use queries to monitor progress on a project or team?
         answer: |
-          - [Define a chart for a query](../../report/dashboards/charts.md) and add it to a dashboard, or add the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to a dashboard. Each time you open the dashboard, the query automatically runs and refreshes. 
-          - Periodically, [triage query results](triage-work-items.md) to review and update status.   
+          - [Define a chart for a query](../../report/dashboards/charts.md) and add it to a dashboard, or add the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to a dashboard. Each time you open the dashboard, the query automatically runs and refreshes.   
 
 additionalContent: |
   ## Related articles
