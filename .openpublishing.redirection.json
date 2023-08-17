@@ -361,6 +361,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/boards/backlogs/product-backlog-controls.md",
+      "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview#product-backlog-controls",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/boards/queries/triage-work-items.md",
       "redirect_url": "/azure/devops/boards/work-items/about-work-items",
       "redirect_document_id": false
