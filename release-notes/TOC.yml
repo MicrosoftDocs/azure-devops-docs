@@ -10,6 +10,8 @@
       items:
         - name: "2023"
           items:
+          - name: August 22
+            href: 2023/sprint-226-update.md
           - name: August 2
             href: 2023/sprint-225-update.md
           - name: July 11
@@ -407,6 +409,8 @@
         items:
         - name: "2023"
           items:
+          - name: August 22
+            href: 2023/pipelines/sprint-226-update.md
           - name: August 2
             href: 2023/pipelines/sprint-225-update.md
           - name: July 11
