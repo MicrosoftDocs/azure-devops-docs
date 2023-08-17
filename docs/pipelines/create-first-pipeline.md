@@ -280,7 +280,7 @@ The details page for a pipeline allows you to view and manage that pipeline.
 
 ![Screenshot of pipeline details page.](get-started/media/pipeline-overview.png)
 
-Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](get-started/yaml-pipeline-editor.md).
+Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](get-started/yaml-pipeline-editor.md). You can also edit your pipeline by modifying the **azure-pipelines.yml** file directly in the repository that hosts the pipeline.
 
 ### View pipeline run details
 
