@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 06/06/2023
+ms.date: 08/17/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -280,7 +280,7 @@ The details page for a pipeline allows you to view and manage that pipeline.
 
 ![Screenshot of pipeline details page.](get-started/media/pipeline-overview.png)
 
-Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](get-started/yaml-pipeline-editor.md).
+Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](get-started/yaml-pipeline-editor.md). You can also edit your pipeline by modifying the **azure-pipelines.yml** file directly in the repository that hosts the pipeline.
 
 ### View pipeline run details
 
