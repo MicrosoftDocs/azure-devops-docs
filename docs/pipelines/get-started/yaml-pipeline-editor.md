@@ -14,7 +14,7 @@ monikerRange: '>=azure-devops-2019'
 
 Azure Pipelines provides a YAML pipeline editor that you can use to author and edit your pipelines. The YAML editor is based on the [Monaco Editor](https://github.com/microsoft/monaco-editor). The editor provides tools like Intellisense support and a task assistant to provide guidance while you edit a pipeline.
 
-This article shows you how to edit your pipelines using the YAML Pipeline editor, but you can also edit pipelines by modifying in the **azure-pipelines.yml** file into your pipeline's repository using a text editor of your choice, or by using a tool lie Visual Studio Code and the [Azure Pipelines for VS Code](https://github.com/Microsoft/azure-pipelines-vscode) extension.
+This article shows you how to edit your pipelines using the YAML Pipeline editor, but you can also edit pipelines by modifying the **azure-pipelines.yml** file directly in your pipeline's repository using a text editor of your choice, or by using a tool like Visual Studio Code and the [Azure Pipelines for VS Code](https://github.com/Microsoft/azure-pipelines-vscode) extension.
 
 :::moniker range="azure-devops-2019"
 
