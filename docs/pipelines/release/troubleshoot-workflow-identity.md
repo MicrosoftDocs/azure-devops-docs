@@ -39,12 +39,13 @@ If you see a message that there is `no matching federated identity record found`
 You can fix the issuer URL by editing and saving the service connection to update the issuer URL. For identities that not been created by Azure DevOps, the issuer needs to be updated manually. For Azure identities, the issuer URL automatically updates.  
 
 
+## Common issues and causes
 
-## Cause 1: I don't have permission to create a service principal in the Azure Entra ID tenant
+### I don't have permission to create a service principal in the Azure Entra ID tenant
 
 You can't use the the service connection configuration tool when you don't have the correct permissions. Your permission level is inadequate if you don't have permission to create service principals or you are using a different Azure Entra ID tenant than your Azure DevOps user. 
 
-### Solution 1: Manually configure workflow identity 
+#### Solution: Manually configure workflow identity 
 
 See `https://github.com/microsoft/azure-pipelines-tasks/blob/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/manual-configuration.md`
 
@@ -52,11 +53,12 @@ See `https://github.com/microsoft/azure-pipelines-tasks/blob/users/geekzter/oidc
 2. Step 2.
 
 
-## Cause 2: I can't enable features for my organization
-TODO: Add a description of the cause.
+### I can't enable features for my organization
+
+I want to set up workflow identity but I don't see the option to turn it on. 
 
 
-### Solution 2: Verify organization admins and enable features
+#### Solution 2: Verify organization admins and enable features
 
 1. Find your organization owners on the organization settings page `https://dev.azure.com/<org>/_settings/organizationOverview`. 
 1. Make sure the preview feature Workload Identity federation for ARM service connections is enabled for your organization, see [manage or enable features](../../project/navigation/preview-features.md). 
