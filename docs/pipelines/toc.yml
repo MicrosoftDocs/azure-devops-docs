@@ -397,6 +397,8 @@
     - name: Azure Resource Manager service connection
       href: library/connect-to-azure.md
       displayName: resource manager, service connection, service principal
+    - name: Troubleshoot workflow identity service connections
+      href: release/troubleshoot-workflow-identity.md
     - name: Azure App Service (Web Apps)
       items:
         - name: App Service
