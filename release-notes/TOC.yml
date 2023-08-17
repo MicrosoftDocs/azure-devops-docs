@@ -598,6 +598,11 @@
         expanded: false
       - name: Azure Artifacts
         items:
+        - name: "2023"
+          items:
+          - name: August 22
+            href: 2023/artifacts/sprint-216-update.md
+          expanded: false
         - name: "2022"
           items:
           - name: October 4
