@@ -251,4 +251,3 @@ For more information, see the following articles:
 - [Configure your backlog view](configure-your-backlog-view.md)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)  
-- [Product backlog controls](product-backlog-controls.md)

@@ -359,6 +359,11 @@
       "source_path": "docs/boards/queries/query-support-integration-cross-service-extensions.md",
       "redirect_url": "/azure/devops/boards/extensions/migrate-integrate",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/product-backlog-controls.md",
+      "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview#product-backlog-controls",
+      "redirect_document_id": false
     }
   ]
 }

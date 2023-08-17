@@ -165,5 +165,4 @@ You can change the column order, column size, or sort options by using the follo
 
 - [Change column options](set-column-options.md)
 - [Work item field index](../work-items/guidance/work-item-field.md)
-- [Product backlog controls](product-backlog-controls.md)
 - [Create managed queries](../queries/using-queries.md)

@@ -265,7 +265,7 @@ For TFS 2018 and earlier versions, the Kanban board only shows the leaf node wit
 
 [!INCLUDE [temp](../includes/display-leaf-nodes.md)]  
 
-## Use product backlog controls
+## Product backlog controls
 
 You can use the following controls to change or filter your product backlog view. 
 
