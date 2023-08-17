@@ -39,7 +39,6 @@ The following features provide support for working with query results, saving an
       - [Run REST API queries](/rest/api/azure/devops/wit/queries)  
       - [Save queries](../queries/organize-queries.md#flat-list-query)  
       - [Set query permissions](../queries/set-query-permissions.md)  
-      - [Triage query results](../queries/triage-work-items.md)  
    :::column-end:::  
 :::row-end:::
 ---
