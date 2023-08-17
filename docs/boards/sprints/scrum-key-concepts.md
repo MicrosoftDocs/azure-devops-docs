@@ -148,7 +148,6 @@ Technical debt includes anything the team must do to deploy production quality c
 ## Triage meetings 
 
 Triage meetings are used to review and organize the backlog and bugs assigned to a team. Other details, such as estimates, acceptance criteria, and more may be added to the work items. Typically, a product owner runs triage meetings, and team leads, business analysts, and other stakeholders who can speak about specific project risks attend them. 
-Learn more: [Triage work items](../queries/triage-work-items.md).
 
 [!INCLUDE [temp](../../includes/glossary-terms/user-story.md)] 
 
