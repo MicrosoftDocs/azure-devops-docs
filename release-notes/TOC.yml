@@ -664,6 +664,8 @@
         items:
         - name: "2023"
           items:
+          - name: August 22
+            href: 2023/general/sprint-226-update.md
           - name: July 11
             href: 2023/general/sprint-224-update.md
           - name: June 21
