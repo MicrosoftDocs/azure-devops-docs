@@ -9,4 +9,4 @@ ms.topic: include
 
 - [Centralized pipeline controls needed for forked builds](#centralized-pipeline-controls-needed-for-forked-builds)
 
-- [Granular Azure DevOps delegated scopes for Microsoft Identity/Azure AD OAuth apps](#granular-azure-devops-delegated-scopes-for-microsoft-identity-azure-ad-oauth-apps)
+- [Granular Azure DevOps delegated scopes for Microsoft Identity/Azure AD OAuth apps](#granular-azure-devops-delegated-scopes-for-microsoft-identityazure-ad-oauth-apps)
