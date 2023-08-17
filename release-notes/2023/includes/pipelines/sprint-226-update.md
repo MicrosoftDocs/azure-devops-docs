@@ -12,7 +12,6 @@ ms.topic: include
 ### Approvals Rest API Improvements - Search in Groups
 
 
-
 ### Add Administrator role to Environments Hub ACL
 
 You can use the [Azure Resource Manager Template Deployment](/azure/devops/pipelines/tasks/reference/azure-resource-manager-template-deployment-v3?view=azure-pipelines&preserve-view=true) task to create Azure infrastructure. In response to your feedback, we have increased the Azure Pipelines integration limit of 2 MB to 4 MB. This will align with the ARM Templates [maximum size of 4 MB](/azure/azure-resource-manager/templates/best-practices#template-limits) resolving size constraints during integration of large templates.
