@@ -15,7 +15,7 @@ To address this situation, we've added an extra step for new organizations in Az
 * To request your free grant, [submit a request](https://aka.ms/azpipelines-parallelism-request) and provide the following details clearly:
     * Your name
     * Azure DevOps organization for which you are requesting the free grant
-    * Whether you need the free grant for public projects, private projects, or both
+    * Whether you need the free grant for public projects or private projects
     * Links to the repositories that you plan to build (public projects only) 
     * Brief description of your project (public projects only) 
 
