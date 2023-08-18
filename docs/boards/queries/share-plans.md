@@ -273,7 +273,7 @@ A common way teams share information is by sharing a list of work items. You can
 
 #### [Browser](#tab/browser/) 
 
-You can quickly generate a formatted list using the **Copy as HTML** or **Copy to clipboard** options. See [Copy list](../backlogs/copy-list.md).
+You can quickly generate a formatted list using the **Copy as HTML** or **Copy to clipboard** options. See [Copy list](../backlogs/copy-clone-work-items.md#copy-a-list-of-work-items).
 
 
 > [!IMPORTANT]

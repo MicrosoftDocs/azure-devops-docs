@@ -369,6 +369,11 @@
       "source_path": "docs/boards/queries/triage-work-items.md",
       "redirect_url": "/azure/devops/boards/work-items/about-work-items",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/copy-list.md",
+      "redirect_url": "/azure/devops/boards/backlogs/copy-clone-work-items",
+      "redirect_document_id": false
     }
   ]
 }

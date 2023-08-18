@@ -18,7 +18,7 @@ The following features provide support for working with query results, saving an
       - [Apply interactive filters](../backlogs/filter-backlogs-boards-plans.md)  
       - [Choose column sort](../backlogs/set-column-options.md)  
       - [Choose query column options](../backlogs/set-column-options.md)  
-      - [Copy query results](../backlogs/copy-list.md)  
+      - [Copy query results](../backlogs/copy-clone-work-items.md#copy-a-list-of-work-items)
       - [Copy Query URL](../queries/view-run-query.md#email-query)   
       - [Create query charts](../../report/dashboards/charts.md)  
       - [Create query folders](../queries/organize-queries.md)  
