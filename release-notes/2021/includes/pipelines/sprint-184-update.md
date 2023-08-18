@@ -12,7 +12,7 @@ Azure Pipelines has been offering free CI/CD to public and private projects for 
 To address this situation, we've added an extra step for new organizations in Azure DevOps to get their free grant. The following changes are effective immediately:
 
 * By default, new organizations created in Azure DevOps will no longer get a free grant of concurrent pipelines. This applies to both public as well as private projects in new organizations.
-* To request your free grant, send an email to azpipelines-freetier@microsoft.com and provide the following details clearly:
+* To request your free grant, fil out [this form](https://aka.ms/azpipelines-parallelism-request) and provide the following details clearly:
     * Your name
     * Azure DevOps organization for which you are requesting the free grant
     * Whether you need the free grant for public projects, private projects, or both
