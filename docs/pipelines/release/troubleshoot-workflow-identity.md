@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops'
 # Troubleshoot Azure Resource Manager workflow identity service connections
 
 > [!IMPORTANT]
-> Workload Identity federation for Azure Resource Manager is currently in public preview.
+> Workload identity federation for Azure Resource Manager is currently in public preview.
 > See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 Get help debugging common issues with workflow identity service connections and learn how to manually create a service connection if necessary. 
