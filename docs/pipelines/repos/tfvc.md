@@ -3,13 +3,16 @@ title: Build TFVC repositories
 description: Using a TFVC repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: d88333c9-e964-4f91-9532-5d014edb8277
-ms.date: 01/25/2023
+ms.date: 08/18/2023
 monikerRange: '<= azure-devops'
 ---
 
 # Build TFVC repositories
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+> [!IMPORTANT]
+> TFVC is supported by classic pipelines only, and does not support YAML.
 
 ::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -19,18 +22,13 @@ monikerRange: '<= azure-devops'
 
 While editing a pipeline that uses a TFVC repo, you have the following options.
 
-| Feature | Azure Pipelines, TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
-|---------|-------------------------------------------------|--------------|
-| Clean              |Yes|Yes|
-| Specify local path |Yes|No|
-| Label sources      |Yes|No|
-
-> [!NOTE]
-> **Azure Pipelines, TFS 2017.2 and newer:** Click **Advanced settings** to see some of the following options.
+* Clean
+* Specify local path
+* Label sources
 
 ### Repository name
 
-Ignore this text box (**TFS 2017 RTM** or older).
+Name of the TFVC repository.
 
 ### Mappings (workspace)
 
