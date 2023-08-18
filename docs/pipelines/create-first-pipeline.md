@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="azure-devops"
 
-This is a step-by-step guide to using Azure Pipelines to build a sample application. This guide uses YAML pipelines configured with the [YAML pipeline editor](get-started/yaml-pipeline-editor.md). If you'd like to use Classic pipelines instead, see [Define your Classic pipeline](release/define-multistage-release-process.md).
+This is a step-by-step guide to using Azure Pipelines to build a sample application from a Git repository. This guide uses YAML pipelines configured with the [YAML pipeline editor](get-started/yaml-pipeline-editor.md). If you'd like to use Classic pipelines instead, see [Define your Classic pipeline](release/define-multistage-release-process.md). For guidance on using TFVC, see [Build TFVC repositories](./repos/tfvc.md).
 
 ## Prerequisites - Azure DevOps
 
