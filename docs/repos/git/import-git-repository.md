@@ -310,7 +310,7 @@ You can sync changes using the following commands.
 We'll treat the Azure Repos import as `origin` and the original repo as `upstream`.
 
 ```shell
-git clone --bare <Azure-Repos-clone-URL>
+git clone --bare <Azure-Repos-clone-URL>.git
 cd <name-of-repo>
 git remote add --mirror=fetch upstream <original-repo-URL>
 git fetch upstream --tags
