@@ -10,6 +10,9 @@
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
+> [!IMPORTANT]
+> When you create an environment, only the creator has the administrator role. 
+
 > [!div class="mx-tdCol2BreakAll"]  
 > | Role | Description |
 > |------------------------------------|---------|
