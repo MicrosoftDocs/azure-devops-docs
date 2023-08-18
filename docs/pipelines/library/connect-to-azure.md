@@ -24,6 +24,10 @@ To deploy your app to an Azure resource (to an app service or to a virtual machi
 
 ## Create an Azure Resource Manager service connection using workload identity federation 
 
+> [!IMPORTANT]
+> Workload identity federation for Azure Resource Manager is currently in public preview.
+> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+
 [Workflow identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses Open ID Connect to authenticate with Azure Active Directory protected resources without needing to manage secrets. 
 
 We recommend this approach if:
