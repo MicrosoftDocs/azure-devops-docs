@@ -1,7 +1,7 @@
 ---
 title: Copy or clone work items and more
 titleSuffix: Azure Boards  
-description: Learn how to copy or clone user stories, issues, bugs, tasks, or other work items in Azure Boards. 
+description: Learn how to copy work items and lists of stories or issues in Azure Boards.
 ms.custom: "seodec18, cross-project"   
 ms.service: azure-devops-boards
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley 
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 07/12/2023
+ms.date: 08/17/2023
 ---
 
 # Copy or clone work items and more
@@ -18,7 +18,7 @@ ms.date: 07/12/2023
    
 ::: moniker range=">= azure-devops-2019"
 
-There are two types of copy functions you can use. The first is to copy or duplicate a single work item, referred to as copy or clone.
+There are two types of copy functions you can use. The first is to copy or duplicate a single work item, referred to as [copy or clone](#copy-or-clone-a-work-item).
 
 ::: moniker-end
 
@@ -36,14 +36,6 @@ The second function is to copy a multi-selected list of work items to the clipbo
 > You can't copy or clone linked work items at this time. For more information, see the [Azure Boards FAQs](../faqs.yml#how-do-i-copy-or-clone-a-work-item-with-all-linked-items). 
 
 ::: moniker-end
-
-Use this article to learn how to:  
-
->[!div class="checklist"]      
-> * Copy or clone a work item   
-> * Change the work item type, for example from a bug to a user story 
-> * Copy a list of work items to email or share with others  
-> * Copy the URL of a work item  
 
 [!INCLUDE [temp](../includes/image-differences.md)] 
 

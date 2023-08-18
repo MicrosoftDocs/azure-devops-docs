@@ -141,7 +141,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker-end
 
-Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Copy a list of work items](../backlogs/copy-list.md?toc=/azure/devops/boards/sprints/toc.json). 
+Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Copy a list of work items](../backlogs/copy-clone-work-items.md#copy-a-list-of-work-items). 
 
 
 
