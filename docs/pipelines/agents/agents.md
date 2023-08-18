@@ -548,7 +548,12 @@ You can view the version of an agent by navigating to **Agent pools** and select
 To trigger agent update programmatically you can use Agent update API as described in section [How can I trigger agent updates programmatically for specific agent pool?](#how-can-i-trigger-agent-updates-programmatically-for-specific-agent-pool).
 
 > [!NOTE]
-> For servers with no internet access, manually copy the agent zip file to `%\ProgramData%\Microsoft\Azure DevOps\Agents\` to use as a local file. Create the **Agents** folder if it is not present.
+> For servers with no internet access, manually copy the agent zip file to the following folder to use as a local file. Create the **Agents** folder if it is not present.
+> * Windows: `%ProgramData%\Microsoft\Azure DevOps\Agents` 
+> * Linux: `usr/share/Microsoft/Azure DevOps/Agents`
+> * macOS: `usr/share/Microsoft/Azure DevOps/Agents`
+
+  Create the **Agents** folder if it is not present.
 
 ## FAQ
 
