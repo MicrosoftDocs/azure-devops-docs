@@ -397,7 +397,7 @@ Select **Security** from **More actions** :::image type="icon" source="../../med
 ### Environment permissions reference
 
 > [!IMPORTANT]
-> When you create an environment in a YAML, contributors and project administrators have the administrator role. When you create an environment through the UI, only the creator has the administrator role. 
+> When you create an environment, only the creator has the administrator role. 
 
 [!INCLUDE [temp](../../organizations/security/includes/environment-roles.md)]
 
