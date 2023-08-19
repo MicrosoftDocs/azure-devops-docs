@@ -2,7 +2,7 @@
 metadata:
   title: User and permissions management FAQs
   titleSuffix: Azure DevOps
-  ms.custom: seodec18
+  ms.custom: seodec18, has-azure-ad-ps-ref
   description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, manage Visual Studio subscriptions, and more.
   ms.subservice: azure-devops-organizations
   ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907

@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Access via Azure AD FAQs
-  ms.custom: seodec18, fasttrack-edit, engagement-fy23
+  ms.custom: seodec18, fasttrack-edit, engagement-fy23, has-azure-ad-ps-ref
   description: Learn the answers to frequently asked questions (FAQs), like how to understand Azure AD groups, add users, connect to, disconnect from, or switch your directory.
   ms.subservice: azure-devops-organizations
   ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
