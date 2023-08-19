@@ -5,10 +5,8 @@ ms.date: 8/22/2023
 ms.topic: include
 ---
 
-- [Enable Retries when any check times out](#enable-retries-when-any-check-times-out)
+- [Retry a stage when Approvals & Checks time out](#retry-a-stage-when-approvals-checks-time-out)
 
-- [Approvals Rest API Improvements - Search in Groups](approvals-rest-api-improvements-search-in-groups)
- 
-- [Add Administrator role to Environments Hub ACL](#add-administrator-role-to-environments-hub-acl)
- 
-- [Centralized pipeline controls needed for forked builds](#centralized-pipeline-controls-needed-for-forked-builds)
+- [Administrator Role for all Environments](administrator-role-for-all-environments)
+
+- [Centralized control for building PRs from forked GitHub repos](#centralized-control-for-building-prs-from-forked-gitHub-repos)
