@@ -133,6 +133,11 @@
     - name: Universal Packages in Azure Pipelines (YAML/Classic)
       href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json 
       displayName: universal packages yaml, universal packages classic 
+  - name: Cargo
+    items:
+    - name: Cargo quickstart
+      href: get-started-cargo.md
+      displayName: cargo
 - name: Feeds, views, and upstream sources
   items:
   - name: Feeds
