@@ -21,7 +21,7 @@ Tagging work items helps you quickly filter the product backlog or a work
 item query by categories that you define. 
 A tag corresponds to a one or two keyword phrase that you define and that supports your needs to filter a backlog or query, or define a query. 
 
-Tags are a better choice to filter work items than using text strings as described in [Guidance to create high-performing queries](high-performing-queries.md).
+Tags are a better choice to filter work items than using text strings as described in [Define a query/Best practices](using-queries.md#best-practices-for-creating-queries.md).
 
 You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to modify tags in bulk.  
 
