@@ -60,7 +60,7 @@ A work item revision limit of 10,000 is in effect for updates made through the R
 The default maximum attachment size is 4 MB. You can [change the maximum size up to 2 GB](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).
 ::: moniker-end
 
-To improve query performance, see [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md).
+To improve query performance, see [Define a query/Best practices](../../../boards/queries/using-queries.md#best-practices).
 
 ## Backlogs, boards, dashboards, and teams
 
@@ -270,7 +270,6 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker range="azure-devops"
 
-- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [About process customization and inherited processes](inheritance-process-model.md)
 - [Create an Inheritance process](manage-process.md)
 - [Best practices](../../../integrate/concepts/integration-bestpractices.md)
@@ -280,7 +279,6 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [About process customization and inherited processes](inheritance-process-model.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
@@ -291,7 +289,6 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker range="tfs-2018"
 
-- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
 - [Rules and rule evaluation](../../../organizations/settings/work/rule-reference.md)

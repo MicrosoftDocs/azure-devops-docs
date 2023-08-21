@@ -17,7 +17,7 @@ ms.date: 10/18/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]   
 
-You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md) or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).  
+You can use the WIQL syntax to [define a query as a hyperlink](using-queries.md#define-a-query-as-a-hyperlink) or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).  
 
 The WIQL syntax supports all functions available through the web portal Query Editor plus a few more. You can specify the fields to return and specify logical grouping of query clauses. In addition, you can use an `ASOF` clause to filter based on assignments based on a previous date.  
 
