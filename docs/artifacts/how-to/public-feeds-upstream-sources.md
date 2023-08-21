@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 
 # Use upstream sources in a public feed
 
-Azure Artifacts enables developers to manage their dependencies from a single feed. Using upstream sources, you can consume packages from feeds and public registries such as NuGet.org, and npmjs.com. Packages saved from upstreams are scanned for vulnerabilities to ensure that they're safe and comply with security policies. If a vulnerability is found, the package is flagged as "vulnerable", and a notification is sent to the feed owner(s).  
+Azure Artifacts enables developers to manage their dependencies from a single feed. Using upstream sources, you can consume packages from feeds and public registries such as NuGet.org, and npmjs.com. Packages saved from upstream sources are scanned for vulnerabilities to ensure that they're safe and comply with security policies. If a vulnerability is found, the package is flagged as "vulnerable", and a notification is sent to the feed owner(s).  
 
 In this article, you'll learn how to:
 
