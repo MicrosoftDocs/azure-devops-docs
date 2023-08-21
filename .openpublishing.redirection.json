@@ -374,6 +374,16 @@
       "source_path": "docs/boards/backlogs/copy-list.md",
       "redirect_url": "/azure/devops/boards/backlogs/copy-clone-work-items",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/high-performing-queries.md",
+      "redirect_url": "/azure/devops/boards/queries/using-queries#best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/define-query-hyperlink.md",
+      "redirect_url": "/azure/devops/boards/queries/using-queries#define-a-query-as-a-hyperlink",
+      "redirect_document_id": false
     }
   ]
 }
