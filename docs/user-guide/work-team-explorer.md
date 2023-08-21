@@ -106,7 +106,7 @@ To learn more about each page, see the following articles.
       - [Query folders](../boards/queries/organize-queries.md) 
       - [Query permissions](../boards/queries/set-query-permissions.md) 
       - [Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) 
-      - [Email query results using Outlook](../boards/queries/share-plans.md) 
+      - [Send email or print work items](../boards/work-items/email-work-items.md) 
       - [Create reports from query in Excel](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) 
    :::column-end:::
 :::row-end:::
@@ -163,7 +163,7 @@ To learn more about each page, see the following articles.
       - [Query folders](../boards/queries/organize-queries.md) 
       - [Query permissions](../boards/queries/set-query-permissions.md) 
       - [Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) 
-      - [Email query results using Outlook](../boards/queries/share-plans.md) 
+      - [Send email or print work items](../boards/work-items/email-work-items.md)
       - [Create reports from query in Excel](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) 
    :::column-end:::
 :::row-end:::

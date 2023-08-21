@@ -16,7 +16,7 @@ ms.date: 07/26/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following fields:
+You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and attach files to share information with your team. You can then list work items based on one or more of the following fields:
 
 ::: moniker range="azure-devops"  
 - Attachment File Count
