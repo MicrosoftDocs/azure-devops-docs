@@ -28,6 +28,9 @@ You can set up approvals at the start of a stage (pre-deployment approvals), at 
 
     :::image type="content" source="media/pre-deployment-approvals.png" alt-text="A screenshot showing how to set up pre-deployment approvals.":::
 
+> [!NOTE]
+> Azure AD groups are not receiving notifications. Azure DevOps doesn’t expand Azure AD groups when delivering Notifications. This is the limitation of the product.
+
 ### Post-deployment approvals
 
 1. Select your classic release pipeline, and then select the **Post-deployment conditions** icon and then click the toggle button to enable **Post-deployment approvals**.
