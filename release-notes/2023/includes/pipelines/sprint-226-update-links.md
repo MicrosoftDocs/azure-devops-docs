@@ -9,4 +9,4 @@ ms.topic: include
 
 - [Administrator Role for all Environments](administrator-role-for-all-environments)
 
-- [Centralized control for building PRs from forked GitHub repos](#centralized-control-for-building-prs-from-forked-gitHub-repos)
+- [Centralized control for building PRs from forked GitHub repos](#centralized-control-for-building-prs-from-forked-github-repos)

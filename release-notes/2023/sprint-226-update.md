@@ -7,6 +7,9 @@ description: TBD
 ---
 # TBD
 
+### General
+
+[!INCLUDE [sprint-226-update-links](includes/general/sprint-226-update-links.md)]
 
 ### Azure Pipelines
 
@@ -15,6 +18,10 @@ description: TBD
 ### Azure Artifacts
 
 [!INCLUDE [sprint-226-update-links](includes/artifacts/sprint-226-update-links.md)]
+
+## General
+
+[!INCLUDE [sprint-226-update](includes/general/sprint-226-update.md)]
 
 ## Azure Pipelines
 
