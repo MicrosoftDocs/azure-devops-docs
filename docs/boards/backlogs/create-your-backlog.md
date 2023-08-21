@@ -169,7 +169,7 @@ Before deciding, review [Configure and customize, Treat bugs as requirements or 
 
 ## Convert ideas into backlog items 
 
-Your backlog shows work that you plan to do or have started to work on. As soon as the **State** of a work item is set to *Done* or *Completed*, the work item no longer shows up on your backlog. You can use the [backlog controls](product-backlog-controls.md) to filter or change your view. 
+Your backlog shows work that you plan to do or have started to work on. As soon as the **State** of a work item is set to *Done* or *Completed*, the work item no longer shows up on your backlog. You can use the [backlog controls](backlogs-overview.md#product-backlog-controls) to filter or change your view. 
 
 > [!TIP]  
 > If you already have defined a long list of items, you don't have to reenter them one at a time. Instead, use [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md) or [Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
@@ -182,7 +182,7 @@ Your backlog shows work that you plan to do or have started to work on. As soon 
     > [!div class="mx-imgBorder"]
     > ![Add a product backlog item](media/create-backlog/view-options-parents-off.png) 
 
-1. To add a work item, select :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false":::**New Work Item** and enter a title. Then press Enter or select **Add to top**.  Work items are automatically assigned the default **Area Path** and **Iteration Path** selected for the team. For more information, see [Configure team settings](../../organizations/settings/manage-teams.md). 
+2. To add a work item, select :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false":::**New Work Item** and enter a title. Then press Enter or select **Add to top**.  Work items are automatically assigned the default **Area Path** and **Iteration Path** selected for the team. For more information, see [Configure team settings](../../organizations/settings/manage-teams.md). 
 
     > [!div class="mx-imgBorder"]
     > ![Add the work item.](media/create-backlog/add-new-items-agile.png) 
@@ -190,7 +190,7 @@ Your backlog shows work that you plan to do or have started to work on. As soon 
 	> [!NOTE]  
 	> If you have **Stakeholder** access , you can only add work items to the bottom of the backlog. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
-2. Repeat this step to capture all your ideas as work items.  
+3. Repeat this step to capture all your ideas as work items.  
 
 ::: moniker-end
 
@@ -339,7 +339,7 @@ Choose **Save & Close** when you're done.
    :::column-end:::
    :::column span="3":::
       Define what &quot;Done&quot; means by describing the criteria for the team to use to verify whether the PBI or the bug fix is fully implemented.</p>
-      Before work begins on a PBI or bug, describe the [criteria for customer acceptance](best-practices-product-backlog.md#acceptance) as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers&#39; expectations. Also, this information provides the basis for acceptance testing.
+      Before work begins on a PBI or bug, describe the criteria for customer acceptance as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers&#39; expectations. Also, this information provides the basis for acceptance testing.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -413,9 +413,7 @@ Teams that want the least overhead for tracking and estimating might prefer Kanb
 - [Configure and customize Azure Boards](../configure-customize.md)  
 - [Bulk modify work items](bulk-modify-work-items.md)
 - [Copy or clone work items](copy-clone-work-items.md)
-- [Refine your backlog](best-practices-product-backlog.md)  
 - [Display rollup progress bars or counts](display-rollup.md)
-- [Product backlog controls](product-backlog-controls.md)
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
@@ -426,8 +424,6 @@ Teams that want the least overhead for tracking and estimating might prefer Kanb
 
 - [Bulk modify work items](bulk-modify-work-items.md)
 - [Copy or clone work items](copy-clone-work-items.md)
-- [Refine your backlog](best-practices-product-backlog.md)  
-- [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)

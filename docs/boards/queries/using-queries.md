@@ -1,7 +1,7 @@
 ---
 title: Define a work item query with the Query Editor in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to create a flat-list, tree, or direct links queries to list, triage, update, and chart work items. 
+description: Learn how to use queries and perform tasks like define a flat-list, clause, or hyperlink, and use a tree, direct link, hyperlink or logical expression. Also learn how to query across or within projects and view results in a dashboard. 
 ms.custom: boards-queries, contperf-fy23, linked-from-support, cross-project 
 ms.service: azure-devops-boards
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 12/16/2022
+ms.date: 08/10/2023
 ---
 
 # Define a work item query in Azure Boards
@@ -17,45 +17,34 @@ ms.date: 12/16/2022
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
-Work item queries generate lists of work items based on the filter criteria you provide. You can then save and share these managed queries with others. In contrast, semantic searches list work items, but can't be saved or shared. 
+Work item queries generate lists of work items based on the filter criteria that you provide. You can save and share these managed queries with others.
+
 ::: moniker range=">= azure-devops-2020"
-Create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. You can also define and import a work item query using [WIQL syntax and a .wiq file](query-support-integration-cross-service-extensions.md#wiql). To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
+You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
-Create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. You can also define and import a work item query using [WIQL syntax and a .wiq file](query-support-integration-cross-service-extensions.md#wiql). To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
+You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 ::: moniker-end
 
 #### [Browser](#tab/browser/) 
 
-> [!div class="mx-imgBorder"]  
-> ![Query Editor, web browser.](media/using-queries/query-editor.png)  
+:::image type="content" source="media/using-queries/query-editor.png" alt-text="Screenshot of Query Editor, web browser.":::
  
 #### [Visual Studio](#tab/visual-studio/)
 
-> [!div class="mx-imgBorder"]  
-> ![Query Editor, Visual Studio.](media/using-queries/visual-studio-new-query-editor.png) 
+:::image type="content" source="media/using-queries/visual-studio-new-query-editor.png" alt-text="Screenshot fo Query Editor, Visual Studio.":::
 
-> [!NOTE]  
-> To define queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. 
+To define queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. 
 
 * * *
 
-
-If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
-
-In this article you'll learn:  
-
-> [!div class="checklist"]    
-> * How to add or create a query 
-> * How to query across projects   
-> * How to group and ungroup query clauses 
-> * How to create a tree of work items or a direct-links query 
+If your queries take too long to return results, see the [Guidance to create high-performing queries](high-performing-queries.md).
  
-For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
+For quick access to all query tasks, supported operators, and query examples, see [Query quick reference](query-index-quick-ref.md).  
  
 ## Choose a query filter 
 
-From the Query Editor, exercise the following filter functions. Choose the filter to jump to an article with sample queries. 
+From the Query Editor, you can select the filter to jump to an article with sample queries. 
 Along with the query filters, you can [interactively apply filters to query results](../backlogs/filter-backlogs-boards-plans.md).
 
 ::: moniker range=">= azure-devops-2019"
@@ -79,7 +68,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [Compare fields](./query-field-value.md) 
       - [Key words](./titles-ids-descriptions.md)  
       - [Linked work items](./linking-attachments.md)  
-      - [Logical groupings](#logical-groupings)  
+      - [Logical groupings](#andor-logical-expression)
       - [Query macros](./about-managed-queries.md#macros)  
       - [Tags](./add-tags-to-work-items.md#query)  
       - [Was Ever](./query-by-workflow-changes.md)  
@@ -90,7 +79,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [Compare fields](./query-field-value.md) 
       - [Key words](./titles-ids-descriptions.md)  
       - [Linked work items](./linking-attachments.md)  
-      - [Logical groupings](#logical-groupings)  
+      - [Logical groupings](#andor-logical-expression)  
       - [Query macros](./about-managed-queries.md#macros)  
       - [Tags](./add-tags-to-work-items.md#query)  
       - [Was Ever](./query-by-workflow-changes.md)  
@@ -105,13 +94,13 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [History and Discussion](./history-and-auditing.md) 
       - [Kanban board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
       - [In and Not In Group searches](./planning-ranking-priorities.md#picklist-query-examples) 
-      - [Search across projects](#across-projects)
+      - [Search across projects](#query-across-or-within-projects)
       ::: moniker-end
       ::: moniker range="tfs-2018"
       - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
       - [History and Discussion](./history-and-auditing.md) 
       - [In and Not In Group searches](./planning-ranking-priorities.md#picklist-query-examples) 
-      - [Search across projects](#across-projects) 
+      - [Search across projects](#query-across-or-within-projects)
       ::: moniker-end
    :::column-end:::
    :::column span="2":::
@@ -137,7 +126,7 @@ Along with the query filters, you can [interactively apply filters to query resu
 :::row-end:::
 ---
 
-Along with the filters you use from the Query Editor, you can interactively filter a query result using the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** function. To learn how, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
+In addition to the filters that you use from the Query Editor, you can interactively filter a query result using the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** function. For more information, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
@@ -164,7 +153,7 @@ The Query Editor displays with the following default settings: **Flat list of wo
 
 :::image type="content" source="media/using-queries/new-query-web-portal.png" alt-text="Screenshot of Query Editor with flat list of work items selected."::: 
 
-You can modify the **Values** and [add or remove clauses](#define-clause). Or, change the **Type of query** to [Work items and direct links](#directs-link-query) or to a [Tree of work items](#tree-query). 
+You can modify the **Values** and [add or remove clauses](#define-a-clause). Or, change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
@@ -175,28 +164,22 @@ The Query Editor displays with the following default settings: **Flat list of wo
 
 :::image type="content" source="media/using-queries/new-query-flat-list-tfs.png" alt-text="Screenshot of Query Editor with flat list of work items selected, TFS 2018 and earlier versions."::: 
 
-You can modify the **Values** and [add or remove clauses](#define-clause). Or, change the **Type of query** to [Work items and direct links](#directs-link-query) or to a [Tree of work items](#tree-query). 
+You can modify the **Values** and [add or remove clauses](#define-a-clause). Or, change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
 
 ::: moniker-end  
-
  
 #### [Visual Studio](#tab/visual-studio/)
 
-Choose **New Query** from the **Work Items** page. 
+Select **New Query** from the **Work Items** page. 
 
 :::image type="content" source="media/using-queries/new-query-visual-studio-2019.png" alt-text="Screenshot of Work Items, choose New Query."::: 
 The Query Editor displays with the following default settings: **Flat list (Default)**, **Team Project=current project**, **Work Item Type=[Any]**, and **State=[Any]**. 
 
 :::image type="content" source="media/using-queries/visual-studio-new-query-editor.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query."::: 
 
-You can modify the **Values** and [add or remove clauses](#define-clause). Or, change the **Type of query** to [Work items and direct links](#directs-link-query) or to a [Tree of work items](#tree-query). 
+You can modify the **Values** and [add or remove clauses](#define-a-clause). Or, change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies).
 
-
-* * * 
-
-<a id="query-across-projects" /> 
-
-<a id="across-projects" />  
+* * *
 
 ## Query across or within projects 
 
@@ -205,18 +188,19 @@ New queries scope to the current project by default. However, you can create que
 #### [Browser](#tab/browser/) 
 
 To list work items defined in two or more projects, checkmark **Query across projects**. For example, the following query finds all features created in all projects within the last 30 days.
- 
-![Screenshot of Query Editor with Query across projects checked.](media/using-queries/portal-query-across-projects.png) 
+
+:::image type="content" source="media/using-queries/portal-query-across-projects.png" alt-text="Screenshot of Query Editor with Query across projects checked.":::
 
 With the **Query across projects** checked, you can add the **Team Project** field to filter to a select number of projects.   
 
-![Screenshot of Query Editor with Team Project and other fields added to filter.](media/using-queries/portal-query-across-two-projects.png) 
+:::image type="content" source="media/using-queries/portal-query-across-two-projects.png" alt-text="Screenshot of Query Editor with Team Project and other fields added to filter.":::
 
 > [!NOTE]
-> Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
+> Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma `,`. 
 
-The **Team Project** field is available only after you check  **Query across projects**. Further, when **Query across projects** is unchecked, only those fields from those work item types, as defined in the current project, appear in the **Field** drop-down menu. When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.  
-
+- The **Team Project** field is available only after you check  **Query across projects**. 
+- When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.
+- When **Query across projects** is unchecked, only those fields from those work item types, as defined in the current project, appear in the **Field** drop-down menu.   
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -228,13 +212,9 @@ To query across all projects, delete the clause with the **Team Project** field.
 
 * * *
 
- 
-<a id="define-clause" />
-
 ## Define a clause
 
-You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. 
-
+To create a query, define one or more clauses. Each clause defines a filter criteria for a single field. 
 
 #### Sample query clause 
 
@@ -244,25 +224,23 @@ You create a query by defining one or more clauses. Each clause defines a filter
 
 For a list of available operators based on the field data type, see [Query index quick reference](query-index-quick-ref.md#fields-operators-macros). 
 
-All clauses you add are added as an **And** statement. Choose **Or** to change the grouping. You group clauses to ensure that the clause statements are run in the sequence required. 
+All clauses get added as an **And** statement. Select **Or** to change the grouping. Group clauses to ensure that the clause statements are run in the sequence required. 
 
 #### [Browser](#tab/browser/) 
 
-Choose **Add new clause** to add another clause at the end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
+Select **Add new clause** to add another clause at the end of the query, and then select the **Field**, **Operator**, and **Value** for that clause.  
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Query Editor showing how to add a clause.](media/using-queries/define-clause.png)  
+:::image type="content" source="media/using-queries/define-clause.png" alt-text="Screenshot of Query Editor showing how to add a clause.":::
 
 For example, search for all work items assigned to you by specifying the **Assigned To** field, the equals (**=**) operator, and the **@Me** macro, which represents your user identity.
 
-
 #### [Visual Studio](#tab/visual-studio/)
 
-Choose **Click here to add a clause** to add another clause at the end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
+Select **Click here to add a clause** to add another clause at the end of the query, and then select the **Field**, **Operator**, and **Value** for that clause.  
 
 :::image type="content" source="media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, add new clause.":::  
 
-To insert a clause within the existing set of query clauses, place your cursor on the clause below where you want to insert the clause, and then choose **Insert Clause**. Then, choose the **Field**, **Operator**, and **Value** for that clause.  
+To insert a clause within the existing set of query clauses, place your cursor on the following clause where you want to insert the clause, and then choose **Insert Clause**. Then, select the **Field**, **Operator**, and **Value** for that clause.  
 
 :::image type="content" source="media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, insert clause.":::  
 
@@ -273,27 +251,18 @@ Or, open the context menu for the clause and choose **Insert Clauses**.
 To delete a clause, choose the clause you want to delete, and choose :::image type="icon" source="../media/icons/icon-delete-clause-visual-studio.png" border="false"::: **Delete Clause**.
 
 When finished, choose :::image type="icon" source="../media/icons/run_query.png" border="false"::: **Run** or :::image type="icon" source="../media/icons/icon-save-visual-studio.png" border="false"::: **Save Query**.
- 
-
 
 * * *
-
 
 [!INCLUDE [temp](../includes/tip-wiql-extension.md)]
 
 ### Checklist for how to define a query clause
 
-1. In the first empty row, under the **Field** column heading, choose the down arrow to display the list of available fields, and choose an item in the list.
+1. In the first empty row, under the **Field** column heading, choose the down arrow to display the list of available fields, and choose an item in the list. For more information, see [Query Fields and Values](query-operators-variables.md#field-values).
 
-	For more information, see [Query Fields and Values](query-operators-variables.md#field-values).
+2. In the same row, under the **Operator** column heading, select the down arrow to display the list of available operators, and then choose an item in the list. For more information, see [Operators](query-operators-variables.md#operators).
 
-2. In the same row, under the **Operator** column heading, choose the down arrow to display the list of available operators, and choose an item in the list.
-
-	For more information, see [Operators](query-operators-variables.md#operators).
-
-3. In the same row, under the **Value** column heading, either type a value, or choose the down arrow, and choose an item in the list.
-
-	For more information about how to use a macro or variable to specify the current project, user, date, or other selection, see [Variables](query-operators-variables.md#variables).
+3. In the same row, under the **Value** column heading, either enter a value, or select the down arrow, and then choose an item in the list. For more information about how to use a macro or variable to specify the current project, user, date, or other selection, see [Variables](query-operators-variables.md#variables).
 
 5. To add a clause, choose **Add new clause**.
 
@@ -303,9 +272,6 @@ When finished, choose :::image type="icon" source="../media/icons/run_query.png"
 	- :::image type="icon" source="media/query-fields-operators-values-variables/IC588313.png" border="false"::: **Group selected clauses**
 	- :::image type="icon" source="media/query-fields-operators-values-variables/IC588314.png" border="false"::: **Ungroup clauses**
 
-
-<a id="tree-query" />
-
 ## Use a work item tree to view hierarchies  
 
 Use the :::image type="icon" source="media/11.png" border="false"::: **Tree of Work Items** query to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks. To focus on different parts of the tree, choose :::image type="icon" source="media/13.png" border="false"::: **Expand all** or :::image type="icon" source="media/14.png" border="false"::: **Collapse all**.  
@@ -313,29 +279,23 @@ Use the :::image type="icon" source="media/11.png" border="false"::: **Tree of W
 > [!NOTE]    
 > You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. However, you can create a direct links query that lists test-related work items. Also, you can, [view the hierarchy through the Test Plans page](../../test/create-a-test-plan.md). 
 
-
-
 #### [Browser](#tab/browser/)
 
 ::: moniker range=">= azure-devops-2019"  
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Query Results List showing a Tree Query.](media/view-run-queries/tree-query-new-exp.png)  
+:::image type="content" source="media/view-run-queries/tree-query-new-exp.png" alt-text="Screenshot of Query Results List showing a Tree Query.":::
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Query Results List showing a Tree Query, TFS 2018 view.](media/view-run-queries/tree-query-view-tfs.png)  
+:::image type="content" source="media/view-run-queries/tree-query-view-tfs.png" alt-text="Screenshot of Query Results List showing a Tree Query, TFS 2018 view.":::
 
 ::: moniker-end  
 
 Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Query Editor view of Tree of work items.](media/view-run-queries/tree-query-editor-s136.png)  
-
+:::image type="content" source="media/view-run-queries/tree-query-editor-s136.png" alt-text="Screenshot of Query Editor view of Tree of work items.":::
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -343,10 +303,7 @@ Define the filter criteria for both parent and child work items. To find linked 
 
 :::image type="content" source="media/using-queries/tree-backlog-te.png" alt-text="Screenshot, Query Editor, Tree Query, Team Explorer. ":::
 
-* * * 
- 
-
-<a id="directs-link-query" />
+* * *
 
 ## Use direct links to view dependencies
 
@@ -354,30 +311,23 @@ Use the :::image type="icon" source="media/16.png" border="false"::: **Work item
 
 Use the direct links query to track dependencies across teams. The query also helps you manage commitments your team makes. Choose the filter criteria for the top and linked work items. And, select the types of links to filter the dependencies. 
 
-
 #### [Browser](#tab/browser/)
 
-![Screenshot of Direct Links Query Results.](media/17.png)
+:::image type="content" source="media/17.png" alt-text="Screenshot of Direct Links Query Results.":::
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Query Editor, Direct Links Query.](media/view-run-queries/direct-query-editor-s136.png)  
+:::image type="content" source="media/view-run-queries/direct-query-editor-s136.png" alt-text="Screenshot of Query Editor, Direct Links Query.":::
 
 Filter your first-tier list of work items by choosing one of these options:
 
 - **Only return items that have matching links**: First-tier work items return, but only if they have links to work items specified by the linked work items filter criteria. 
-
 - **Return all top level items**: All first-tier work items return despite the linked work items filter criteria. Second-tier work items that are linked to the first tier return if they match the linked work items filter criteria.
-
 - **Only return items that do not have matching links**: First-tier work items are returned, but only if they don't have links to work items specified by the linked work items filter criteria.
- 
 
 #### [Visual Studio](#tab/visual-studio/)
 
 :::image type="content" source="media/using-queries/direct-links-te.png" alt-text="Screenshot, Query Editor, Direct Links Query, Team Explorer.":::
 
-
 Filter your first-tier list of work items by choosing one of these options:
-
 
 - **Return all top level work items**: All first-tier work items return despite the linked work items filter criteria. Second-tier work items that are linked to the first tier return if they match the linked work items filter criteria.
 
@@ -385,13 +335,9 @@ Filter your first-tier list of work items by choosing one of these options:
 
 - **Only return items that do not have the specified links**: First-tier work items return, but only if they don't have links to work items specified by the linked work items filter criteria.
  
-* * * 
+* * *
 
-To learn more about each link type, see [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md).
-
-
-<a id="and-or" /> 
-<a id="logical-groupings" /> 
+For more information about each link type, see [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md).
 
 ## And/Or logical expression
 
@@ -400,8 +346,6 @@ You specify **And** or **Or** to create logical expressions of your query clause
 Add one new clause for each work item field to refine your search criteria. Add clauses to return only the set of work items you want. If you don't receive the results you expect from your query, refine it. You can add, remove, group, or ungroup query clauses to improve your query results.
 
 Group query clauses to operate as a single unit separate from the rest of the query. Grouping clauses is similar to putting parentheses around an expression in a mathematical equation or logic statement. When you group clauses, the **AND** or **OR** for the first clause in the group applies to the whole group.
-
-<a id="group-clauses" /> 
 
 ### Group clauses
 
@@ -451,17 +395,14 @@ If your query results don't return expected results, follow these steps:
 
 #### [Browser](#tab/browser/) 
 
-To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
+To ungroup a clause, select the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
 
 
 #### [Visual Studio](#tab/visual-studio/)
 
-To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause-visual-studio.png" border="false"::: ungroup clauses icon for the grouped clause, Visual Studio. 
+To ungroup a clause, select the :::image type="icon" source="../media/icons/ungroup-clause-visual-studio.png" border="false"::: ungroup clauses icon for the grouped clause, Visual Studio. 
 
 * * *
-
-
-<a id="query-results-widget-dashboard" /> 
 
 ## View query results in a dashboard 
 
@@ -469,10 +410,7 @@ The following two widgets display query results. You can open work items directl
 - **Work assigned to me**: Lists all proposed or active work items assigned to the signed-in user. Lists the ID, State, and Title fields. 
 - **Query results widget**: Displays the results of a flat, tree, or direct-links query. You can configure the fields displayed through the widget, resize the column fields, and expand and collapse tree and direct-links query. 
 
-To learn more about adding widgets to a dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
-
-
-<a id="query-results-widget-parent-titles" /> 
+For more information, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
 ::: moniker range="azure-devops"
 
@@ -482,7 +420,7 @@ You can view the results of a query with the **Parent** title displayed. To do s
 1. Create the query that filters the work items of interest. The query can be a flat-list, tree, or direct-links query. 
 2. Add the **Parent** field as a column. 
 3. Save the query as a Shared query or Team favorite. 
-3. Add the **Query results widget** to your dashboard and configure the query. Make sure the Parent field is set to display. 
+4. Add the **Query results widget** to your dashboard and configure the query. Make sure the Parent field is set to display. 
 
 The following image illustrates a query results widget that displays the **Parent** field. 
 
@@ -490,10 +428,72 @@ The following image illustrates a query results widget that displays the **Paren
 
 ::: moniker-end
 
+A query hyperlink uses the Work Item Query Language (WIQL), which resembles Transact-SQL. For more information, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
+
+> [!NOTE]    
+> Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
+
+::: moniker range="azure-devops"  
+
+### Query hyperlink syntax for Azure DevOps Services
+
+Encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
+
+```  
+https://dev.azure.com/OrganizationName/ProjectName/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}
+```
+For example, the following hyperlink lists the ID and title of all active bugs defined under the FabrikamFiber/Web area path for the Fabrikam organization.
+
+```  
+https://dev.azure.com/fabrikam/FabrikamFiber/_workitems?_a=query&wiql=SELECT%20%5BSystem.ID%5D%2C%20%5BSystem.Title%5D%20FROM%20WorkItems%20WHERE%20%5BSystem.TeamProject%5D%3D'FabrikamFiber'%20AND%20%5BSystem.WorkItemType%5D%3D'Bug'%20AND%20%5BSystem.State%5D%3D'Active'%20AND%20%5BSystem.AreaPath%5D%3D'FabrikamFiber%5CWeb'
+```
+
+The decoded WIQL conforms to: 
+
+```wiql
+SELECT [System.ID], [System.Title]
+   FROM WorkItems 
+   WHERE [System.TeamProject]='FabrikamFiber' 
+   AND [System.WorkItemType]='Bug'
+   AND [System.State]='Active'
+   AND [System.AreaPath]='FabrikamFiber\Web'
+``` 
+
+> [!NOTE]  
+> The WIQL length must not exceed 32K characters for Azure Boards queries.
+
+::: moniker-end  
+
+::: moniker range="< azure-devops"  
+
+### Query hyperlink syntax for TFS 2018 through Azure DevOps Server
+
+```  
+https://{ServerName}/{CollectionName}/{ProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}
+```
+
+For example, the following hyperlink lists the ID, title, and state of all bugs under the FabrikamFiber/Web area path.
+
+```
+http://fabrikam:8080/tfs/DefaultCollection/FabrikamFiber/_workitems?_a=query&wiql=SELECT%20%5BSystem.ID%5D%2C%20%5BSystem.Title%5D%2C%20%5BSystem.State%5D%20FROM%20WorkItems%20WHERE%20%5BSystem.TeamProject%5D%3D'FabrikamFiber'%20AND%20%5BSystem.WorkItemType%5D%3D'Bug'%20AND%20%5BSystem.AreaPath%5D%3D'FabrikamFiber%5CWeb'%20%20
+```
+
+For example, see the following nonencoded entry. 
+
+```
+http://fabrikam:8080/tfs/DefaultCollection/FabrikamFiber/_workitems?_a=query&wiql=
+SELECT [System.ID], [System.Title], [System.State] 
+   FROM WorkItems 
+   WHERE [System.TeamProject]='FabrikamFiber' 
+   AND [System.WorkItemType]='Bug' 
+   AND [System.AreaPath]='FabrikamFiber\Web'   
+```
+
+::: moniker-end   
+
 ## Related articles
 
-That's the basics about defining queries. For an index of query examples, see [Query quick reference](query-index-quick-ref.md).  
-
+- [Query quick reference](query-index-quick-ref.md).  
 - [Query FAQs](query-faqs.yml)
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json)

@@ -131,6 +131,9 @@ If the above steps are unsuccessful, try the following steps:
 
 3.	Contact the Microsoft support team.  
 
+## Intermittent issues doing refresh and publish
+
+If a user has errors when doing a refresh or publish, it may be due to a Conditional Access Policy in AAD. To resolve this issue, try clearing the contents of the folder ```%LOCALAPPDATA%\.IdentityService```. 
 
 ## Related articles
 - [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  

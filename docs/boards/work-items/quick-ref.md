@@ -145,7 +145,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Copy or clone a work item](../backlogs/copy-clone-work-items.md)  
       - [Copy work item URL](work-item-form-controls.md#copy-the-url)  
       - [Copy URL of attachment](../queries/share-plans.md#copy-url-attached-file)       
-      - [Copy list of work items](../backlogs/copy-list.md)  
+      - [Copy list of work items](../backlogs/copy-clone-work-items.md#copy-a-list-of-work-items)  
       - [Create a branch](../backlogs/connect-work-items-to-git-dev-ops.md)  
       - [Create a work tracking chart](../../report/dashboards/charts.md)  
       <br/>
@@ -206,7 +206,6 @@ Tasks listed below are available to users with **Contributor** permissions and *
       <br/>
       - [Start storyboarding ](../queries/share-plans.md#storyboard)  
       - [Track dependencies](../plans/track-dependencies.md)  
-      - [Triage work items](../queries/triage-work-items.md)  
       <br/>
       - [Update status of tasks (Taskboard)](../sprints/task-board.md)  
       - [Update status of work items (Kanban board)](../boards/kanban-quickstart.md)  

@@ -210,7 +210,6 @@ For more information, see the following articles:
 
 - [Query FAQs](query-faqs.yml)
 - [Query quick reference](query-index-quick-ref.md)
-- [Cross-service and enhanced query operations](query-support-integration-cross-service-extensions.md)
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Set query permissions](set-query-permissions.md)   
 - [Query fields, operators, and macros](query-operators-variables.md) 

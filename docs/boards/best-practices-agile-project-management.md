@@ -132,7 +132,6 @@ Periodically review each backlog:
 
 For more information, see the following articles:
 
-- [Refine your backlog](backlogs/best-practices-product-backlog.md) 
 - [Define features and epics](backlogs/define-features-epics.md)  
 - [Create your backlog](backlogs/create-your-backlog.md)  
 - [Configure your backlog view](backlogs/configure-your-backlog-view.md)  
@@ -210,7 +209,7 @@ In Microsoft Project, you manage tasks that depend on the completion of other ta
 
 ### Add link dialog
 
-Azure Boards supports many link types to track related work. Choose the **Predecessor/Successor** link types to track work with dependencies. A quick way to link work items is to add a tag to work items that participate in producing or consuming dependencies, create a query based on this tag, and then add the required links from the [triage mode of the query results](queries/triage-work-items.md). 
+Azure Boards supports many link types to track related work. Choose the **Predecessor/Successor** link types to track work with dependencies. A quick way to link work items is to add a tag to work items that participate in producing or consuming dependencies, create a query based on this tag, and then add the required links.
 
 The following Add link dialog illustrates how two work items are linked using the Successor link type. 
 
@@ -256,7 +255,6 @@ Azure Boards doesn't provide a native view of the critical path. In part, as Agi
 For more information, see the following articles:
 
 - [Link user stories, issues, bugs, and other work items](backlogs/add-link.md) 
-- [Triage work items](queries/triage-work-items.md) 
 - [Track dependencies by using Delivery Plans](plans/track-dependencies.md)
  
 

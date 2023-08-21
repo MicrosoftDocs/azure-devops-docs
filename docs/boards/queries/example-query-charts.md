@@ -23,7 +23,6 @@ Query charts are a great way to visualize status and trends. Also, by adding sev
 
 Not all teams have the same goals or tracking needs. However, teams that adopt Agile methods tend to routinely perform the following tasks. So consider the status and trend charts that can help your team perform these tasks.  
 - [Triage incoming work](../sprints/best-practices-scrum.md#tips-for-successful-triage-meetings), ensure new work is well defined 
-- Refine the backlog as described in [Backlog management ](../backlogs/best-practices-product-backlog.md) 
 - Plan sprints and set sprint goals as described in [Scrum and best practices](../sprints/best-practices-scrum.md)
 - Conduct [daily stand-ups](../sprints/best-practices-scrum.md#daily-scrum-meetings).  
 

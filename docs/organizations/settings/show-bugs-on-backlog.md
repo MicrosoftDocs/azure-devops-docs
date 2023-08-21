@@ -131,5 +131,4 @@ You can review bugs defined for your project by creating a query and specifying 
 - [Enable backlog levels of interest to your team](select-backlog-navigation-levels.md) 
 - [Manage teams and configure team tools](manage-teams.md)
 - [View, run, or email a work item query](../../boards/queries/view-run-query.md)
-- [Triage work items](../../boards/queries/triage-work-items.md)
 - [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)

@@ -16,7 +16,7 @@ ms.date: 05/09/2023
 
 [!INCLUDE [github-advanced-security-preview](includes/github-advanced-security-preview.md)]
 
-To access results and use [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) features, you need a license. Each active committer to at least one repository with Advanced Security enabled consumes one license. A committer is considered active if they have committed code to the repository within the last 90 days.
+To access results and use [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) features, you need a license. Each active committer to at least one repository with Advanced Security enabled consumes one license and costs $49. A committer is considered active if they have committed code to the repository within the last 90 days.
 
 Advanced Security is billed directly to the Azure subscription associated with your Azure DevOps organization. The bill is metered monthly. Daily charges emit to your Azure subscription based off of the total number of active committers per day across your organizations.
 

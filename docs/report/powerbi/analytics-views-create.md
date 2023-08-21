@@ -86,6 +86,9 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
    By default, a view includes all the teams defined in the current project. You can specifically select teams in the current project or add other projects defined in the organization to the filter. 
 
+   > [!IMPORTANT]
+   > Microsoft recommends a limit of 500 projects per Analytics view. If you need more than 500 projects, you can create additional Analytics views and distribute the projects between the views.
+
   You can change the selected teams for the current project or add other projects to the filter. You can also change from filtering on teams to area Paths. Here's a view filtered by two Fabrikam area paths.
   > [!div class="mx-imgBorder"]
   > ![Area Path picker example](media/editable-views/area-path.png)
