@@ -5,7 +5,7 @@ ms.date: 8/22/2023
 ms.topic: include
 ---
 
-- [Retry a stage when Approvals & Checks time out](#retry-a-stage-when-approvals-and-checks-time-out)
+- [Retry a stage when Approvals and  Checks time out](#retry-a-stage-when-approvals-and-checks-time-out)
 
 - [Administrator Role for all Environments](#administrator-role-for-all-environments)
 
