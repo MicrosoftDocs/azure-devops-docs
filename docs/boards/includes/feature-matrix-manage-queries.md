@@ -24,7 +24,6 @@ The following features provide support for working with query results, saving an
       - [Create query folders](../queries/organize-queries.md)  
    :::column-end:::
    :::column span="1":::  
-      - [Define a query hyperlink](../queries/define-query-hyperlink.md)  
       - [Define and edit a query](../queries/using-queries.md)  
       - [Define WIQL syntax](../queries/wiql-syntax.md)  
       - [Email query results](../queries/view-run-query.md#email-query)  
