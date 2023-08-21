@@ -406,7 +406,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Maintain specifications and share information 
 
 - [About Wikis, READMEs, and Markdown](../project/wiki/about-readme-wiki.md)
-- [Share information within work items and social tools](../boards/queries/share-plans.md)
+- [Send email or print work items](../boards/work-items/email-work-items.md)
 
 
 #### Notifications

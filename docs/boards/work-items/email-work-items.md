@@ -304,7 +304,7 @@ You may find other ways to share information by exporting work items to other ap
 ::: moniker range="azure-devops"
 
 - [Use templates to add and update work items](../backlogs/work-item-template.md) 
-- [Share information in work items and social tools](../queries/share-plans.md) 
+- [Send email or print work items](../work-items/email-work-items.md)
 - [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
 
 ::: moniker-end
@@ -312,7 +312,7 @@ You may find other ways to share information by exporting work items to other ap
 ::: moniker range="< azure-devops"
 
 - [Use templates to add and update work items](../backlogs/work-item-template.md) 
-- [Share information in work items and social tools](../queries/share-plans.md) 
+- [Send email or print work items](../work-items/email-work-items.md)
 - [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
 - [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)
 
