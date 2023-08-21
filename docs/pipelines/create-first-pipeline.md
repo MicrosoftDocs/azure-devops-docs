@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 06/06/2023
+ms.date: 08/18/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="azure-devops"
 
-This is a step-by-step guide to using Azure Pipelines to build a sample application. This guide uses YAML pipelines configured with the [YAML pipeline editor](get-started/yaml-pipeline-editor.md). If you'd like to use Classic pipelines instead, see [Define your Classic pipeline](release/define-multistage-release-process.md).
+This is a step-by-step guide to using Azure Pipelines to build a sample application from a Git repository. This guide uses YAML pipelines configured with the [YAML pipeline editor](get-started/yaml-pipeline-editor.md). If you'd like to use Classic pipelines instead, see [Define your Classic pipeline](release/define-multistage-release-process.md). For guidance on using TFVC, see [Build TFVC repositories](./repos/tfvc.md).
 
 ## Prerequisites - Azure DevOps
 
@@ -144,11 +144,13 @@ https://github.com/Azure-Samples/js-e2e-express-server
 
 Learn more about [working with JavaScript](ecosystems/javascript.md) in your pipeline.
 
+<!-- Removing the Azure CLI steps as the pipeline templates feature seems to be down -->
+<!-- https://github.com/MicrosoftDocs/azure-devops-docs/issues/13016 -->
+<!--
 
 #### [Azure CLI (Java)](#tab/azure-cli)
 
-
-1. From a command prompt, sign in to the Azure CLI.
+1. From a command prompt, sign in to the Azure CLI. If you don't have Azure CLI installed, see [How to install the Azure CLI](/cli/azure/install-azure-cli).
 
     ```azurecli-interactive
     az login
@@ -168,8 +170,12 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 1. Create a new pipeline:
 
     ```azurecli-interactive
-    az pipelines create --name "First-Java.CI"
+    az pipelines create --name "First-Java.CI" --org <organization> --project <project>
     ```
+
+    Replace `<organization>` and `<project>` with naem of your Azure DevOps organization and project.
+
+    If you don't have the **azure-devops** Azure CLI extension, you'll be prompted to install it.
 
     The repository and branch details are picked up from the git configuration available in the cloned directory.   
 
@@ -242,6 +248,9 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 1. Azure DevOps will automatically start a pipeline run. Wait for the run to finish.
 
+-->
+<!--End of comment to temporarily remove Azure CLI -->
+
 ---
 
 ::: moniker-end
@@ -280,7 +289,7 @@ The details page for a pipeline allows you to view and manage that pipeline.
 
 ![Screenshot of pipeline details page.](get-started/media/pipeline-overview.png)
 
-Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](get-started/yaml-pipeline-editor.md).
+Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](get-started/yaml-pipeline-editor.md). You can also edit your pipeline by modifying the **azure-pipelines.yml** file directly in the repository that hosts the pipeline.
 
 ### View pipeline run details
 

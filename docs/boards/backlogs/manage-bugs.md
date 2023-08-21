@@ -338,7 +338,7 @@ Once you've started coding and testing, you'll want to hold periodic triage meet
 
 The project owner can define a shared query for new and reopened bugs to list bugs to be triaged. 
 
-From the query results page, you can quickly move up and down within the list of bug work items using the up and down arrows. As you review each bug, you can assign it, add details, or set priority. For more information, see [Triage work items](../queries/triage-work-items.md). 
+From the query results page, you can quickly move up and down within the list of bug work items using the up and down arrows. As you review each bug, you can assign it, add details, or set priority. 
 
 
 > [!div class="mx-imgBorder"]  
@@ -521,11 +521,10 @@ For more information on extensions, see [Azure Boards extensions developed by Mi
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Triage work items](../queries/triage-work-items.md) 
+> [Use templates to add and update work items](work-item-template.md)  
 
 ## Related articles 
 
-- [Use templates to add and update work items](work-item-template.md)  
 - [Move, change type, or delete work items](remove-delete-work-items.md) 
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
 
@@ -537,7 +536,6 @@ For more information on extensions, see [Azure Boards extensions developed by Mi
 - [Organize your backlog, map child work items to parents](organize-backlog.md)  
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md)  
 - [Forecast your product backlog](../sprints/forecast.md)  
-- [Refine your backlog](best-practices-product-backlog.md)  
 
 ### Kanban board
 

@@ -349,6 +349,31 @@
       "source_path": "docs/boards/extensions/index.md",
       "redirect_url": "/azure/devops/boards/extensions/migrate-integrate",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/best-practices-product-backlog.md",
+      "redirect_url": "/azure/devops/boards/backlogs/set-up-your-backlog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/query-support-integration-cross-service-extensions.md",
+      "redirect_url": "/azure/devops/boards/extensions/migrate-integrate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/product-backlog-controls.md",
+      "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview#product-backlog-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/triage-work-items.md",
+      "redirect_url": "/azure/devops/boards/work-items/about-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/copy-list.md",
+      "redirect_url": "/azure/devops/boards/backlogs/copy-clone-work-items",
+      "redirect_document_id": false
     }
   ]
 }

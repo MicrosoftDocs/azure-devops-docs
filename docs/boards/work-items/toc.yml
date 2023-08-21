@@ -43,9 +43,6 @@
     displayname: chart, color-code, filter, show, query, bulk modify
   - name: Share information
     href: ../queries/share-plans.md
-    displayname: rich text, link, attach files, storyboard, email, dashboards, wiki
-  - name: Copy list
-    href: ../backlogs/copy-list.md
   - name: Email or print work items
     displayName: cards
     href: email-work-items.md

@@ -370,7 +370,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Create your backlog](../boards/backlogs/create-your-backlog.md)  
 - [Organize your backlog](../boards/backlogs/organize-backlog.md)  
 - [Define features and epics](../boards/backlogs/define-features-epics.md) 
-- [Refine your backlog](../boards/backlogs/best-practices-product-backlog.md) 
 - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md) 
 - [Tasks supported by Backlogs, Boards, Taskboards, and Plans](../boards/backlogs/backlogs-boards-plans.md)
 - [Configure and customize Azure Boards](../boards/configure-customize.md)
@@ -391,7 +390,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Dependency management 
 
 - [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md) 
-- [Triage work items](../boards/queries/triage-work-items.md) 
 
 #### Milestone planning 
 

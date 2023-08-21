@@ -84,7 +84,7 @@ As shown here, a velocity of 20 indicates that it will take five sprints to comp
 
 ## Product owner role
 
-The role of product owners is to act as the interface between customers and the team. A product owner can reduce the need for detailed specifications. They reduce the need by being more responsive to the team's questions about implementation details. Also, they clearly define acceptance criteria within each requirement. Learn more: [Refine your backlog, Role of the product owner](../backlogs/best-practices-product-backlog.md#product-owner-role). 
+The role of product owners is to act as the interface between customers and the team. A product owner can reduce the need for detailed specifications. They reduce the need by being more responsive to the team's questions about implementation details. Also, they clearly define acceptance criteria within each requirement.
 
 ## Scrum Master role
 
@@ -148,7 +148,6 @@ Technical debt includes anything the team must do to deploy production quality c
 ## Triage meetings 
 
 Triage meetings are used to review and organize the backlog and bugs assigned to a team. Other details, such as estimates, acceptance criteria, and more may be added to the work items. Typically, a product owner runs triage meetings, and team leads, business analysts, and other stakeholders who can speak about specific project risks attend them. 
-Learn more: [Triage work items](../queries/triage-work-items.md).
 
 [!INCLUDE [temp](../../includes/glossary-terms/user-story.md)] 
 

@@ -277,9 +277,9 @@ As a workaround, if you're using YAML, you can add the following step before you
 steps:
 - script: |
     git config --global --add filter.lfs.required true
-    git config --global --add filter.lfs.smudge "git-lfs smudge -- %f"
+    git config --global --add filter.lfs.smudge "git-lfs smudge -- %%f"
     git config --global --add filter.lfs.process "git-lfs filter-process"
-    git config --global --add filter.lfs.clean "git-lfs clean -- %f"
+    git config --global --add filter.lfs.clean "git-lfs clean -- %%f"
   displayName: Configure LFS for use with submodules
 - checkout: self
   lfs: true
