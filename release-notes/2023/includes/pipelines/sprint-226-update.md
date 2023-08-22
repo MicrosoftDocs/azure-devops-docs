@@ -6,9 +6,9 @@ ms.topic: include
 ---
 
 
-### Retry a stage when Approvals and Checks time-out
+### Retry a stage when Approvals and Checks time out
 
-When Approvals & Checks time-out, the stage they belong to is skipped. Stages that have a dependency on the skipped stage are also excluded. 
+When Approvals & Checks time out, the stage they belong to is skipped. Stages that have a dependency on the skipped stage are also skipped. 
 
 Now you can retry a stage when Approvals and Checks time-out. Previously, this was possible only when an approval timed out. 
 
@@ -19,7 +19,7 @@ Now you can retry a stage when Approvals and Checks time-out. Previously, this w
 
 [Environments](/azure/devops/pipelines/process/environments) in YAML pipelines represent a compute resource to which you deploy your application, for example an AKS cluster or a set of VMs. They provide you with security controls and traceability for your deployments.
 
-Managing environments can be quite challenging. This is because, when an environment is created, the person creating it automatically becomes the sole administrator. For example, if you wanted to add Approvals & Checks to each environment in a centralized fashion using REST API, you had to ask every environment administrator to add a specific user or group as administrator. This approach doesn't accommodate scalability. 
+Managing environments can be quite challenging. This is because, when an environment is created, the person creating it automatically becomes the sole administrator. For example, if you wanted to manange the Approvals & Checks of all environments in a centralized fashion, you had to ask every environment administrator to add a specific user or group as administrator, and then use REST API to configure the checks. This approach is tedious, error-prone, and doesn't scale when new environments are added. 
  
 With this sprint, we introduce an [Administrator role](/azure/devops/pipelines/policies/permissions#set-environment-permissions) at the environments-hub level. This brings environments up to par with service connections or agent pools. To assign the Administrator role to a user or group, you need to already be an environments-hub administrator or organization-owner. 
 
