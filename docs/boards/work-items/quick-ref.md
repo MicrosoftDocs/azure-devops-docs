@@ -102,7 +102,7 @@ Use this index to quickly access concepts and tasks related to work items and in
       <br/> 
       - [Work item fields](guidance/work-item-field.md)  
       - [Work item form](about-work-items.md#work-item-form)  
-      - [Work item form controls](work-item-form-controls.md)  
+      - [Work item form controls](about-work-items.md#work-item-form-controls)  
       - [Work item templates](about-work-items.md#templates)  
       - [Work item types](about-work-items.md#work-item-types-wits)
       - [Work tracking limits](../../organizations/settings/work/object-limits.md)
@@ -138,7 +138,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Change the link type](../backlogs/add-link.md#change-link-type)
       - [Change work item type](../backlogs/move-change-type.md#change-the-work-item-type)  
       - [Copy or clone a work item](../backlogs/copy-clone-work-items.md)  
-      - [Copy work item URL](work-item-form-controls.md#copy-the-url)       
+      - [Copy work item URL](about-work-items.md#copy-the-url)       
       - [Copy list of work items](../backlogs/copy-clone-work-items.md#copy-a-list-of-work-items)  
       - [Create a branch](../backlogs/connect-work-items-to-git-dev-ops.md)  
       - [Create a work tracking chart](../../report/dashboards/charts.md)  
