@@ -1,7 +1,7 @@
 ---
-title: Email or print user stories and other work items
+title: Send an email of work items or print
 titleSuffix: Azure Boards
-description: Learn how to email or print work items to share information in Azure Boards, Azure DevOps, and Visual Studio Team Explorer.
+description: Learn how to send an email with work items, or print work items to share information in Azure Boards, Azure DevOps, and Visual Studio Team Explorer.
 ms.custom: work-items, contperf-fy23
 ms.service: azure-devops-boards
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
@@ -13,7 +13,7 @@ ms.date: 08/21/2023
 ---
 
 
-# Email or print user stories, bugs, and other work items 
+# Send an email of work items or print
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)] 
@@ -304,7 +304,7 @@ You may find other ways to share information by exporting work items to other ap
 ::: moniker range="azure-devops"
 
 - [Use templates to add and update work items](../backlogs/work-item-template.md) 
-- [Send email or print work items](../work-items/email-work-items.md)
+- [Send email with work item](../work-items/email-work-items.md)
 - [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
 
 ::: moniker-end
@@ -312,7 +312,7 @@ You may find other ways to share information by exporting work items to other ap
 ::: moniker range="< azure-devops"
 
 - [Use templates to add and update work items](../backlogs/work-item-template.md) 
-- [Send email or print work items](../work-items/email-work-items.md)
+- [Send email with work item](../work-items/email-work-items.md)
 - [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
 - [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)
 

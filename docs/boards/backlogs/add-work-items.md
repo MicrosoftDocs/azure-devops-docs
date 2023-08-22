@@ -294,13 +294,12 @@ To stop following changes, choose the  :::image type="icon" source="../media/ico
 
 ## Next steps  
 
-To quickly add backlog items, such as user stories, requirements, or bugs, see these articles:  
 > [!div class="nextstepaction"]
-> [Create your backlog](create-your-backlog.md)
+> [Create your backlog](create-your-backlog.md) or 
 > [Kanban quickstart](../boards/kanban-quickstart.md) 
 
 
-For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/azure/devops/boards/work-items/toc.json ).  
+For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json ) and [Work item form controls](../work-items/about-work-items.md#work-item-form-controls).  
 
 
 Once you've added several work items, you can use additional features to get [notified of changes](../../organizations/notifications/manage-your-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
