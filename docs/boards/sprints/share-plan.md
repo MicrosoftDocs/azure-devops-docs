@@ -152,4 +152,4 @@ Or, you can select all the items in the list, choose **Copy as HTML**, and paste
 
 ## Related articles
 
-- [Send email or print work items](../work-items/email-work-items.md)
+- [Send email with work items](../work-items/email-work-items.md)

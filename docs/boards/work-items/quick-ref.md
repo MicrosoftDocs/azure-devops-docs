@@ -158,7 +158,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       ::: moniker-end
 
 
-      - [Email work item list](email-work-items.md)  
+      - [Send email of work item list](email-work-items.md)  
       - [Export a work item list](email-work-items.md#export)  
    :::column-end:::
    :::column span="1":::

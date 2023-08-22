@@ -519,7 +519,7 @@ For more information about using each of these controls, see [Configure your bac
    :::column span="2":::
       - [Set column options](set-column-options.md)  
       - [Create Query](../queries/organize-queries.md)  
-      - [Email](../work-items/email-work-items.md)   
+      - [Send email](../work-items/email-work-items.md)   
    :::column-end:::
 :::row-end:::
 ::: moniker-end
