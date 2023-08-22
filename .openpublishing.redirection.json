@@ -389,6 +389,11 @@
       "source_path": "docs/boards/queries/share-plans.md",
       "redirect_url": "/azure/devops/boards/work-items/email-work-items",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/permissions-access-work-tracking.md",
+      "redirect_url": "/azure/devops/organizations/security/set-permissions-access-work-tracking",
+      "redirect_document_id": false
     }
   ]
 }

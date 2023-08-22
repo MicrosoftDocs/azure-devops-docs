@@ -160,7 +160,7 @@ For more information, see [Manage columns](add-columns.md).
 
 As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. 
 
-For more information about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
+For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
 ## Customize your project and board inheritance
 
