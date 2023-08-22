@@ -152,6 +152,4 @@ Or, you can select all the items in the list, choose **Copy as HTML**, and paste
 
 ## Related articles
 
-- [Email or print work items](../work-items/email-work-items.md)  
-- [Share information in work items and social tools](../queries/share-plans.md)  
-
+- [Send email or print work items](../work-items/email-work-items.md)

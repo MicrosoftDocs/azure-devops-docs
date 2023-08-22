@@ -169,7 +169,6 @@ The following features are now enabled for all Azure DevOps Services.
 - [Copy Dashboard Experience](../../report/dashboards/copy-dashboard.md)  
 - [New Delivery Plans Experience](../../boards/plans/review-team-plans.md)  
 - [Enable group by tags for work item chart widget on dashboard](../../boards/queries/add-tags-to-work-items.md#group-by-tags)  
-- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)
 - [New Queries Experience](../../boards/queries/view-run-query.md)   
 - [New Work Items](../../boards/work-items/view-add-work-items.md)   
 - [New Dashboards Experience](../../report/dashboards/dashboards.md)  
