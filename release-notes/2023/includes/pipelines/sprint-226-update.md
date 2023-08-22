@@ -28,7 +28,7 @@ With this sprint, we introduce an [Administrator role](/azure/devops/pipelines/p
 
 A user with this Administrator role can administer permissions, manage, view and use any environment. This includes opening up environments to all pipelines.
 
-When you grant a user Administrator role at environments-hub level, they become administrators all existing environments and for any future environments.
+When you grant a user Administrator role at environments-hub level, they become administrators for all existing environments and for any future environments.
 
 ### Centralized control for building PRs from forked GitHub repos
 
