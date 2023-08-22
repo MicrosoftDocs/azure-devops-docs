@@ -100,7 +100,7 @@ Each work item form contains several tabs. The **Details** tab contains the comm
 | ![Change work item type icon](../media/icons/change-type-icon.png) | [Change work item type](../backlogs/remove-delete-work-items.md) (Appears under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
 | ![Change project icon](../media/icons/change-team-project-icon.png) | [Move work item to a different project](../backlogs/remove-delete-work-items.md) (Appears under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
 | ![Clone icon](../media/icons/clone-icon.png) | [Copy work item and optionally change work item type](../backlogs/copy-clone-work-items.md#copy-clone) (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
-| ![Email icon](../media/icons/email-icon.png) | [Email work item](email-work-items.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
+| ![Email icon](../media/icons/email-icon.png) | [Send email with work item](email-work-items.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
 | ![Delete icon](../media/icons/delete_icon.png) | [Recycle work item](../backlogs/remove-delete-work-items.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
 | ![Storyboard icon](../media/icons/storyboard-icon.png) | [Storyboard with PowerPoint](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
 
@@ -209,7 +209,7 @@ The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls a
         - [Change type](../backlogs/move-change-type.md#change-the-work-item-type)
         - [Move to team project](../backlogs/move-change-type.md#change-the-work-item-type)
         - [Create copy of work item...](../backlogs/copy-clone-work-items.md)
-        - [Email work item](email-work-items.md) 
+        - [Send email with work item](email-work-items.md) 
         - [Delete](../backlogs/remove-delete-work-items.md) 
         - [Templates](../backlogs/work-item-template.md)
         - [New branch...](../backlogs/connect-work-items-to-git-dev-ops.md)  
