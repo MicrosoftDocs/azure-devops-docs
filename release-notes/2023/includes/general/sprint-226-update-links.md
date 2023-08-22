@@ -9,4 +9,3 @@ ms.topic: include
 
 - [Estimated committer count during Advanced Security enablement ](#estimated-committer-count-during-advanced-security-enablement )
 
-- [Granular Azure DevOps delegated scopes for Microsoft Identity/Azure AD OAuth apps](#granular-azure-devops-delegated-scopes-for-microsoft-identityazure-ad-oauth-apps)
