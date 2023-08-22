@@ -294,6 +294,9 @@ The help provides information on authentication alternatives and unattended conf
 
 ### How do I run the agent with self-signed certificate?
 
+> [!NOTE]
+> Running the agent with a self-signed certificate only applies to Azure DevOps Server.
+
 [Run the agent with self-signed certificate](certificate.md)
 
 ### How do I run the agent behind a web proxy?
