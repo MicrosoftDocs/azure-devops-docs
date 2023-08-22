@@ -316,8 +316,7 @@ The following table summarizes the permissions that impact project member's abil
 |Project |   **Delete and restore work items**|  
 |Project |   **Permanently delete work items**|    
 
-Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. To learn more about work tracking permissions and feature access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
- 
+Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ## Next steps
 
