@@ -91,7 +91,7 @@ All of the following actions can be completed by team members that belong to the
    :::column span="1":::
    - [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup>
    - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)
-   - [Email selected item(s)](../queries/share-plans.md)
+   - [Email selected item(s)](../work-items/email-work-items.md)
    - [Change work item type](move-change-type.md#change-type)<sup>1</sup>
    - [Move items to another project](move-change-type.md#move)<sup>1, 3</sup>
    :::column-end:::
@@ -159,7 +159,7 @@ All of the following actions can be completed by team members that belong to the
    :::column span="1":::
    - [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup>
    - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)
-   - [Email selected item(s)](../queries/share-plans.md)
+   - [Email selected item(s)](../work-items/email-work-items.md)
    
    :::column-end:::
 :::row-end:::

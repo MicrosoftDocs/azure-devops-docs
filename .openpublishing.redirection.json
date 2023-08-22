@@ -384,6 +384,11 @@
       "source_path": "docs/boards/queries/define-query-hyperlink.md",
       "redirect_url": "/azure/devops/boards/queries/using-queries#define-a-query-as-a-hyperlink",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/share-plans.md",
+      "redirect_url": "/azure/devops/boards/work-items/email-work-items",
+      "redirect_document_id": false
     }
   ]
 }
