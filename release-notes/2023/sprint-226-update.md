@@ -9,8 +9,9 @@ description: Enhanced security management
 
 With this update, you now have the option to enable or disable Advanced Security for your entire project or organization. You can also automatically enable Advanced Security for any newly created repositories or projects. 
 
-In Azure Pipelines, we introduce a centralized control to improve the security of pull requests built from forked GitHub repositories.
+In Azure Pipelines, we added a centralized control to improve the security of pull requests built from forked GitHub repositories.
 
+Check out the release notes to learn more about these features.
 
 ### General
 
