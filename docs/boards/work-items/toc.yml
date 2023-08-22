@@ -28,8 +28,6 @@
 - name: Copy or clone
   href: ../backlogs/copy-clone-work-items.md
   displayname: change type, URL, list
-- name: Work item form controls
-  href: work-item-form-controls.md 
 - name: Collaborate with others
   items:
   - name: Follow work

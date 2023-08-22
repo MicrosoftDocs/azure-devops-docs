@@ -389,6 +389,11 @@
       "source_path": "docs/boards/queries/share-plans.md",
       "redirect_url": "/azure/devops/boards/work-items/email-work-items",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/work-items-form-controls.md",
+      "redirect_url": "/azure/devops/boards/work-items/about-work-items#work-items-form-controls",
+      "redirect_document_id": false
     }
   ]
 }
