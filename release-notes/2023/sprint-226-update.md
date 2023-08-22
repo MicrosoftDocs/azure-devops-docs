@@ -1,11 +1,16 @@
 ---
-title:  TBD
+title:  Enhanced security management 
 author: ckanyika
 ms.author: ckanyika
 ms.date: 8/22/2023
-description: TBD
+description: Enhanced security management 
 ---
-# TBD
+# Enhanced security management 
+
+With this update, you have the option to enable or disable Advanced security for your entire project or organization. You can also automatically enable Advanced Security for any newly created repositories or projects. 
+
+In Azure Pipelines, we introduce a centralized control which allows you to set preferences for building pipelines from pull requests that originate from forked Github repositories.
+
 
 ### General
 
