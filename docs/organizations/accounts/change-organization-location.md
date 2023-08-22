@@ -1,8 +1,8 @@
 ---
-title: Find or change location or region of organization 
+title: Find or change location or geography of organization 
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18, references_regions
-description: Find your organization's default location or update your organization's region in Azure DevOps.
+description: Find your organization's default location or update your organization's geography in Azure DevOps.
 ms.subservice: azure-devops-organizations
 ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.topic: conceptual
@@ -12,13 +12,13 @@ ms.date: 06/21/2023
 monikerRange: 'azure-devops'
 ---
 
-# Find or change your organization region
+# Find or change your organization geography
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-When you [create an organization](create-organization.md) in Azure DevOps, you can choose the region your organization is hosted in. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available.
+When you [create an organization](create-organization.md) in Azure DevOps, you can choose the region your organization is hosted in. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers. Your organization's default location is based on the closest [Microsoft Azure geography](https://azure.microsoft.com/regions) where Azure DevOps is available.
 
-## Find your organization region
+## Find your organization geography
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -32,7 +32,7 @@ When you [create an organization](create-organization.md) in Azure DevOps, you c
 
 [!INCLUDE [pca-prerequisite](includes/pca-prerequisite.md)]
 
-## Change organization region
+## Change organization geography
 
 > [!IMPORTANT]
 > A region change is only possible in the following geographies across the world:
