@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Project and organization-level enablement for Advanced Security 
 
-You can now enable or disable **Advanced Security** for your entire project or organization. In conjunction with the new addition of displaying committer count prior to enablement, selecting **"enable all"** at the project or organization-level will provide you with an estimate of how many new active committers you may be billed for. You can also opt to automatically enable **Advanced Security** for any newly created repositories or projects under your respective project or organization. Any repositories enabled through this setting will have secret repository scanning and push protection active.  
+You can now enable or disable **Advanced Security** for your entire project or organization. In conjunction with the new addition of displaying committer count prior to enablement, selecting **"Enable all"** at the project or organization-level will provide you with an estimate of how many new active committers you may be billed for. You can also opt to automatically enable **Advanced Security** for any newly created repositories or projects under your respective project or organization. Any repositories enabled through this setting will have secret repository scanning and push protection active.  
 
 **Project-level enablement:**
 
