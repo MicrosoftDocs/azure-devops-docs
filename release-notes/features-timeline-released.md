@@ -43,7 +43,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Estimated committer count during Advanced Security enablement </td><td>General</td><td>Future</td></tr>
     <td>Retry a stage when approvals and checks time out</td><td>Pipelines</td><td>Future</td></tr>
     <td>Administrator Role for all Environments</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Centralized control for building PRs from forked GitHub repos</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Centralized control for building PRs from forked GitHub repos</td><td>Pipelines</td><td>Future</td></tr>
     <td>Azure Artifacts support for Cargo Crates (public preview) </td><td>Artifacts</td><td>Future</td></tr>  
 <tr>
 <tr>
