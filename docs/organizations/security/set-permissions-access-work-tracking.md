@@ -446,7 +446,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 
 By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).  
 
-![Screenshot of default permissions assigned to team contributors](../settings/media/add-team/default-permissions-assigned-to-team-contributors.png)  
+![Screenshot of default permissions assigned to team contributors.](../settings/media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
 ::: moniker range="< azure-devops-2022"
 If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
