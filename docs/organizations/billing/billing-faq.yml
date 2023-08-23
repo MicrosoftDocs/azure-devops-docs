@@ -303,7 +303,7 @@ sections:
       - question: |
           Q: Why is the location of my organization resource incorrect? 
         answer: |
-          A: The location of your organization resource could be incorrect for various reasons, such as [changing your organization region](../accounts/change-organization-location.md#change-organization-region). To find the location of your organization, [check the region listed in Azure DevOps](../accounts/change-organization-location.md), which is the source of truth for Azure DevOps locations. If the location listed there doesn't match the location listed inside the Azure portal, do these steps:
+          A: The location of your organization resource could be incorrect for various reasons, such as [changing your organization region](../accounts/change-organization-location.md#change-organization-geography). To find the location of your organization, [check the region listed in Azure DevOps](../accounts/change-organization-location.md), which is the source of truth for Azure DevOps locations. If the location listed there doesn't match the location listed inside the Azure portal, do these steps:
           
           1. In Azure DevOps Billing settings, [unlink your organization from the Azure subscription](change-azure-subscription.md#remove-your-billing-subscription).
           2. In the Azure portal, delete the Azure DevOps resource group if it's still there. 
