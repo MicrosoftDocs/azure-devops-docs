@@ -16,7 +16,7 @@ ms.date: 08/22/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To manage work tracking effectively, you can grant or restrict access to different features. Do so by assigning specific permissions to users or groups for a particular [object, project, or collection](#business-workflows). You can also can [define custom rules](#use-custom-rules) for processes or projects that apply to specific users or groups, thereby controlling their actions accordingly. For most features, we recommend that you add users to the project's **Contributors** group, which grants comprehensive access and ensures a seamless and efficient work tracking experience.
+To manage work tracking effectively, you can grant or restrict access to different features. Do so by assigning specific permissions to users or groups for a particular [object, project, or collection](#business-workflows). You also can [define custom rules](#use-custom-rules) for processes or projects that apply to specific users or groups, thereby controlling their actions accordingly. For most features, we recommend that you add users to the project's **Contributors** group, which grants comprehensive access and ensures a seamless and efficient work tracking experience.
 
 ::: moniker range="azure-devops"
 
@@ -446,7 +446,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 
 By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).  
 
-![Default permissions assigned to team contributors](../settings/media/add-team/default-permissions-assigned-to-team-contributors.png)  
+![Screenshot of default permissions assigned to team contributors](../settings/media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
 ::: moniker range="< azure-devops-2022"
 If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
