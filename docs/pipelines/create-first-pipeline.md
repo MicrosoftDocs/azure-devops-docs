@@ -1188,7 +1188,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 * Add and modify some [variables](build/variables.md).
 
-* Add [demands](process/demands.md).
+* Add [demands](/azure/devops/pipelines/yaml-schema/pool-demands).
 
 * In a Git repository
 
@@ -1214,7 +1214,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 * Add and modify some [variables](build/variables.md).
 
-* Add [demands](process/demands.md).
+* Add [demands](/azure/devops/pipelines/yaml-schema/pool-demands).
 
 * In a Git repository
 
