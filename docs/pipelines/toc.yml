@@ -259,9 +259,6 @@
     - name: Build multiple branches
       href: build/ci-build-git.md
       displayName: build, pipelines build, multiple branches
-    - name: Build on multiple platforms
-      href: get-started-multiplatform.md
-      displayName: platforms, multiplaform
     - name: Publish Pipeline Artifacts
       href: publish-pipeline-artifact.md
       displayName: publish, artifacts
