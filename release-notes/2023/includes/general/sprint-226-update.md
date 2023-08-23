@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 8/22/2023
+ms.date: 8/23/2023
 ms.topic: include
 ---
 
@@ -13,16 +13,16 @@ You can now enable or disable **Advanced Security** for your entire project or o
 **Project-level enablement:**
 
 > [!div class="mx-imgBorder"]
-> ![Project-level enablement.](../../media/226-general-02.png "image showing Project-level enablement")
+> ![Screenshot of Project-level enablement.](../../media/226-general-02.png "Screenshot of Project-level enablement")
 
 **Organization-level enablement:**
 
 > [!div class="mx-imgBorder"]
-> ![Organization-level enablement.](../../media/226-general-03.png "image showing Organization-level enablement")
+> ![Screenshot of Organization-level enablement.](../../media/226-general-03.png "Screenshot of Organization-level enablement")
 
 ### Estimated committer count during Advanced Security enablement 
 
 As a part of your **Advanced Security** onboarding experience, you can now see an estimate of how many active committers may have been added as a result of enabling **Advanced Security** for a particular repository, project, or organization. This count is an approximation and you may see slight discrepancies between the provided estimate and what is reported for billing after enablement. This estimate can also be obtained via API with additional documentation explaining this process coming soon. 
 
 > [!div class="mx-imgBorder"]
-> ![Advanced Security enablement.](../../media/226-general-01.png "image showing Advanced Security enablement ")
+> ![Screenshot of Advanced Security enablement.](../../media/226-general-01.png "Screenshot of Advanced Security enablement")

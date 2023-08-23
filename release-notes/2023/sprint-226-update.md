@@ -2,7 +2,7 @@
 title:  Enhanced security management 
 author: ckanyika
 ms.author: ckanyika
-ms.date: 8/22/2023
+ms.date: 8/23/2023
 description: Enhanced security management 
 ---
 # Enhanced security management 

@@ -38,11 +38,11 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="6"><a href="2023/sprint-226-update.md" data-raw-source="[22 August 2023](2023/sprint-226-update.md)"> 22 August 2023</a></td>
+    <td rowspan="6"><a href="2023/sprint-226-update.md" data-raw-source="[23 August 2023](2023/sprint-226-update.md)"> 23 August 2023</a></td>
     <td>Project and organization-level enablement for Advanced Security </td><td>General</td><td>Future</td></tr>
     <td>Estimated committer count during Advanced Security enablement </td><td>General</td><td>Future</td></tr>
     <td>Retry a stage when approvals and checks time out</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Administrator Role for all Environments</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Administrator role for all Environments</td><td>Pipelines</td><td>Future</td></tr>
     <td>Centralized control for building PRs from forked GitHub repos</td><td>Pipelines</td><td>Future</td></tr>
     <td>Azure Artifacts support for Cargo Crates (public preview) </td><td>Artifacts</td><td>Future</td></tr>  
 <tr>
@@ -214,7 +214,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Current project set as default scope for build access token in classic pipelines</td><td>Pipelines</td><td>Future</td></tr>
 </tr>
     <td rowspan="7"><a href="2022/sprint-205-update.md" data-raw-source="[27 June 2022](2022/sprint-205-update.md)"> 27 June 2022</a></td>
-    <td>Project Collection Administrators can opt-in for notifications related to personal access tokens found in a GitHub public repository</td><td>General</td><td>N/A</td></tr> 
+    <td>Project Collection Administrators can opt in for notifications related to personal access tokens found in a GitHub public repository</td><td>General</td><td>N/A</td></tr> 
     <td>Enforcing security validation for all Azure DevOps requests</td><td>General</td><td>N/A</td></tr>
     <td>Assigned To children in Kanban cards</td><td>Boards</td><td>2022</td></tr>
     <td>General availability of Query by Parent Id</td><td>Boards</td><td>Future</td></tr>
