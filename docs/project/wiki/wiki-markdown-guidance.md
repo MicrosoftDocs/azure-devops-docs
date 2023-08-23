@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 03/20/2023  
+ms.date: 08/22/2023  
 ---
 
 # Markdown syntax for wikis
@@ -297,7 +297,7 @@ To embed videos from YouTube and Microsoft Streams in a wiki page, use the follo
 > [!VIDEO https://www.youtube.com/embed/_EXAMPLE_]
 :::
 ```
-The IFrame is the embed IFrame block of the YouTube or Microsoft Streams video.
+The iframe corresponds to the embedding iframe block of either a YouTube or Microsoft Streams video.
 
 The ending ":::" is required to prevent a break in the page.
 
@@ -396,12 +396,6 @@ In wiki pages, you can also create rich content using HTML tags.
 <video src="https://sec.ch9.ms/ch9/7247/7c8ddc1a-348b-4ba9-ab61-51fded6e7247/vstswiki_high.mp4" width=400 controls>
 </video>
 ```
-
-</br>
-<strong>Result:</strong>
-</br>
-<video src="media/markdown-guidance/vstswiki_mid.mp4" width="600" controls>
-</video>
 
 **Example - Rich text format**
 
