@@ -348,8 +348,8 @@ Here is a common communication pattern between the agent and Azure Pipelines or 
 The payload of the messages exchanged between the agent and Azure Pipelines/Azure DevOps Server are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key. This is how secrets stored in pipelines or variable groups are secured as they are exchanged with the agent.
 
 > [!NOTE]
-> The agent provides support for UTF-8 client encoding output.
-> However, if your system has different encoding from UTF-8, you might encounter some problems with the output of logs, e.g. the logs contain characters that are not recognized by your system’s encoding so they might appear as garbled or missing symbols.
+> The agent provides support for UTF-8 client encoding output. 
+> However, if your system has a different encoding from UTF-8, you might encounter some problems with the output of logs, e.g. the logs contain characters that are not recognized by your system’s encoding so they might appear as garbled or missing symbols.
 
 ::: moniker range="azure-devops"
 
