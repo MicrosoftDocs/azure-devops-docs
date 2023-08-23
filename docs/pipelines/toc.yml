@@ -110,7 +110,7 @@
         - name: Specify conditions
           href: process/conditions.md
         - name: Specify demands
-          href: process/demands.md
+          href: /azure/devops/pipelines/yaml-schema/pool-demands
           displayName: task demands, manually entered demands, capabilities
     - name: Library, variables & secure files
       items:

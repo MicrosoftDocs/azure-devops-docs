@@ -92,7 +92,7 @@ If there are no available parallel slots, the job has to wait on a slot to free 
 
 Once a parallel slot is available, the self-hosted pool is examined for a compatible agent.
 Self-hosted agents offer [capabilities](../agents/agents.md#capabilities), which are strings indicating that particular software is installed or settings are configured.
-The pipeline has [demands](demands.md), which are the capabilities required to run the job.
+The pipeline has [demands](/azure/devops/pipelines/yaml-schema/pool-demands), which are the capabilities required to run the job.
 If a free agent whose capabilities match the pipeline's demands can't be found, the job will continue waiting.
 If there are no agents in the pool whose capabilities match the demands, the job will fail.
 

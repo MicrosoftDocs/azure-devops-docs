@@ -148,6 +148,10 @@
     {
       "source_path_from_root":"docs/pipelines/get-started-multiplatform.md",
       "redirect_url":"/azure/devops/pipelines/yaml-schema/jobs-job-strategy#examples"
+    },
+    {
+      "source_path": "docs/pipelines/process/demands.md",
+      "redirect_url": "/azure/devops/pipelines/yaml-schema/pool-demands"
     }
   ]
 }
