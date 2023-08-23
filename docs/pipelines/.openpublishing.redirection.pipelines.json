@@ -140,7 +140,12 @@
     {
       "source_path_from_root":"/docs/pipelines/ecosystems/github-actions.md",
       "redirect_url":"/azure/developer/github"
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/build/migrate-from-xaml-builds.md",
+      "redirect_url":"/previous-versions/azure/devops/pipelines/build/migrate-from-xaml-builds"
     }
+    
   ]
 }
 
