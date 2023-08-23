@@ -65,7 +65,7 @@ Use this index to quickly access concepts and tasks related to work items and in
       - [New Boards Hub](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview)  
       - [New work item widget](../../report/dashboards/widget-catalog.md#new-work-item)  
       - [On-premises XML process model](../../reference/on-premises-xml-process-model.md)  
-      - [Permissions and access](../../organizations/security/permissions-access-work-tracking.md)  
+      - [Set permissions and access](../../organizations/security/set-permissions-access-work-tracking.md)  
       - [Process guidance](guidance/choose-process.md)  
       - [Process models](../../reference/customize-work.md)  
       <br/>

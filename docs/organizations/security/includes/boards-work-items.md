@@ -6,15 +6,12 @@ ms.topic: include
 ms.date: 02/02/2023
 ---
 
-
-
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]   
 > You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you can use the [Analytics Service](../../../report/powerbi/what-is-analytics.md) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](/previous-versions/azure/devops/report/admin/disable-data-warehouse).
 
 ::: moniker-end    
-
 
 :::row:::
    :::column span="2":::
@@ -211,6 +208,6 @@ ms.date: 02/02/2023
    :::column-end:::
 :::row-end:::
 
-
 > [!NOTE] 
-> Work items are subject to rules applied to them. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](../../settings/work/troubleshoot-work-item-form-caching-issues.md). To learn more about conditional rules, see [Rules and rule evaluation](../../settings/work/rule-reference.md).   
+> Work items are subject to rules applied to them. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](../../settings/work/troubleshoot-work-item-form-caching-issues.md). For more information, see [Rules and rule evaluation](../../settings/work/rule-reference.md).
+   
