@@ -681,8 +681,6 @@
       href: migrate/from-jenkins.md
     - name: Migrate from Travis
       href: migrate/from-travis.md
-    - name: Migrate from XAML builds
-      href: build/migrate-from-xaml-builds.md
     - name: Migrate from Lab Management
       href: targets/create-virtual-network.md
 - name: Pipeline tasks
