@@ -3,7 +3,7 @@ title: Azure DevOps Release Notes - Azure Artifacts Sprint 226 Update
 description: See the Sprint 226 feature updates for Azure Artifacts, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 8/22/2023
+ms.date: 8/23/2023
 ---
 
 # Azure Artifacts - Sprint 226 Update
