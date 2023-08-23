@@ -467,4 +467,4 @@ This action only dismisses the alert for your selected branch. Other branches th
 
 ### Break-glass scenario for build task
 
-If the dependency scanning build task is blocking a successful execution of your pipeline and you need to urgently skip the build task, you can set a pipeline variable `DependencyScanning.Skip: false`.  
+If the dependency scanning build task is blocking a successful execution of your pipeline and you need to urgently skip the build task, you can set a pipeline variable `DependencyScanning.Skip: true`.  
