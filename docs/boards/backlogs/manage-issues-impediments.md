@@ -153,6 +153,6 @@ If you want to track issues or impediments along with your requirements or a por
 ## Related articles 
 
 - [Add work items](add-work-items.md)
-- [Work item form controls](../work-items/work-item-form-controls.md)
+- [Work item form controls](../work-items/about-work-items.md#work-item-form-controls)
 - [Manage bugs or code defects](manage-bugs.md)
 - [Create your backlog](create-your-backlog.md)
