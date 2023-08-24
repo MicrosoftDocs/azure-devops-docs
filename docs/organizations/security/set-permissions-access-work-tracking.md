@@ -222,15 +222,9 @@ Custom rules don't control permissions, but they affect whether a user can modif
 
 |Customization  |Examples |
 |---------|---------|
-|Apply rules upon work item creation, state change, and specified state.     |  - Make a field read-only</br> 
-  - Make a field required        |  
-|Apply rules when a field value is empty, set to a specific value, or change or not changed to a value.   | - Clear the value of a field if it's empty or meets certain criteria</br>
-  - Set a predefined value for the field if it's empty or meets specific conditions</br>
-  - Copy the value of one field to another field</br>
-  - Hide a field based on certain conditions or values        |     
-|Apply rules that dictate what state a work item can get moved to from a given state.     |- Reassign a work item based on state changes</br>
-  - Specify that a work item can only transition from "State A" to "State B"</br>
-  - Manage the state transitions of parent work items based on the state changes of their child work items         |       
+|Apply rules upon work item creation, state change, and specified state.     |  - Make a field read-only</br>- Make a field required        |  
+|Apply rules when a field value is empty, set to a specific value, or change or not changed to a value.   |- Clear the value of a field if it's empty or meets certain criteria</br>- Set a predefined value for the field if it's empty or meets specific conditions</br>- Copy the value of one field to another field</br>- Hide a field based on certain conditions or values        |     
+|Apply rules that dictate what state a work item can get moved to from a given state.     |- Reassign a work item based on state changes</br>- Specify that a work item can only transition from "State A" to "State B"</br>- Manage the state transitions of parent work items based on the state changes of their child work items         |       
 |Apply rules based on user or group membership of the user modifying a work item.     |Specify rules that restrict a group from creating a work item, transitioning a work item to a closed or completed state, or changing the value of a field         |      
 
 There are some restrictions for applying custom rules to system fields. For example, you can't specify rules that set or clear the value for **Area Path** or **Iteration Path** as they're system fields. For more information, see [Rules and rule evaluation](../settings/work/rule-reference.md) and [Sample rule scenarios](../settings/work/rule-samples.md).   
