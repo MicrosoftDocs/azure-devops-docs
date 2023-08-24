@@ -121,14 +121,14 @@ Before you configure your Taskboard, you'll want to make sure the following task
 ::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
-> You can customize a work item type which is different then customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
+> You can customize a work item type which is different than customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
 > [!NOTE]  
-> You can customize a work item type which is different then customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+> You can customize a work item type which is different than customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 
 ::: moniker-end
 
