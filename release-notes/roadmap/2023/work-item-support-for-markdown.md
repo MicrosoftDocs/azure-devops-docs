@@ -14,4 +14,4 @@ hide_comments: true
 
 As a user, I want to be able to use markdown when editing long text fields (Description, Repo Steps, etc.) and the Work Item discussion. 
 
-[Community Suggestion Ticket](https://developercommunity.visualstudio.com/t/add-markdown-support-in-discussions/365826)
+[Community Suggestion Ticket](https://developercommunity.visualstudio.com/t/support-markdown-as-an-alternative-to-html-for-wor/365464)
