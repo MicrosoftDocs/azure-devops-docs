@@ -405,4 +405,3 @@ Your Taskboard automatically refreshes when changes occur. There isn't any live 
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)
 - [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)   
-- [Set working days](../../organizations/settings/set-working-days.md)

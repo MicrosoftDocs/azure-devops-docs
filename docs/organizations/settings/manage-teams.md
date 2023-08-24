@@ -169,7 +169,6 @@ For detailed information on each configuration option, you can explore the follo
    :::column span="1":::
       **General**
       - [Backlogs](select-backlog-navigation-levels.md)
-      - [Working days](set-working-days.md)
       - [Working with bugs](show-bugs-on-backlog.md)            
       **Cards**
       - [Add fields](../../boards/boards/customize-cards.md)

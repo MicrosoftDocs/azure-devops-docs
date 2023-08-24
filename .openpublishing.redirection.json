@@ -399,6 +399,11 @@
       "source_path": "docs/boards/work-items/work-items-form-controls.md",
       "redirect_url": "/azure/devops/boards/work-items/about-work-items#work-items-form-controls",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/set-working-days.md",
+      "redirect_url": "/azure/devops/boards/sprints/set-capacity#set-capacity-for-the-team-and-team-members",
+      "redirect_document_id": false
     }
   ]
 }
