@@ -102,7 +102,7 @@ As the team makes progress, divergences from the ideal trend line help the team 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Sprint burndown report, with Burndown on Count of Work Items selected.](media/burndown/analytics-burndown-stories-count-past-s159.png) 
 
-[!INCLUDE [temp](../../includes/note-working-days-off.md)]
+The **Show non-working days** shades those days set through the team's [**Working days** and **Team days off** settings](../../boards/sprints/set-capacity.md).
 
 Increases instead of decreases within the blue graph may indicate:
 
