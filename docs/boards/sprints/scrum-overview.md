@@ -120,7 +120,7 @@ By setting team capacity, the team knows exactly the total number of work hours 
 
 Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. 
 
-You [set recurring days off](../../organizations/settings/set-working-days.md), such as weekends, through team settings.
+For more information, see [Set capacity for the team and team members](set-capacity.md#set-capacity-for-the-team-and-team-members).
 
 ![Screenshot of Team capacity planning tool.](media/team-capacity-planning-tool.png) 
 
