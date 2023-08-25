@@ -4,8 +4,8 @@ description: Implement deployment of your app to an Azure Virtual Machine Scale 
 ms.assetid: C08EC3FB-6787-4956-86D3-B4085B69FCBA
 ms.topic: conceptual
 ms.custom: seodec18
-ms.author: atulmal
-author: azooinmyluggage
+ms.author: ericvan
+author: geekzter
 ms.date: 09/07/2021
 monikerRange: '<= azure-devops'
 ---
