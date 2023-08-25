@@ -4,8 +4,8 @@ description: Continuous testing. Measuring code coverage for changes in pull req
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18, cross-service"
-ms.author: shashban
-author: shashban
+ms.author: ravikum
+author: raviLiftr
 ms.date: 10/04/2019
 monikerRange: 'azure-devops'
 ---

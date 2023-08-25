@@ -4,8 +4,8 @@ description: Use deployment approvals, gates, and manual intervention to control
 ms.assetid: 3D22D4B3-DE1F-482C-BBD4-475C829452C1
 ms.topic: tutorial
 ms.custom: seodec18, engagement-fy23
-ms.author: shashban
-author: azooinmyluggage
+ms.author: sandrica
+author: silviuandrica
 ms.date: 10/12/2022
 monikerRange: '<= azure-devops'
 ---
