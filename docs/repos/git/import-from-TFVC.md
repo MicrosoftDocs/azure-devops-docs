@@ -20,11 +20,6 @@ You can migrate code from an existing TFVC repository to a new Git repository wi
 * Removing binaries and executables
 * Training your team
 
-
-> [!NOTE]
-> The feature documented in this article requires TFS 2017 Update 2 or later version. 
-
-
 We strongly recommend reading our whitepapers - [Centralized version control to Git](/devops/develop/git/centralized-to-git) and [TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git) before starting the migration.
 
 The import experience is great for small simple TFVC repositories. It's also good for repositories that have already been "cleaned up" as outlined in the previous whitepapers. Those whitepapers also recommend other tools for more advanced TFVC repository configurations.
