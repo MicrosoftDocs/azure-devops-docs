@@ -34,7 +34,7 @@ This article describes the link types available for your use. You can link objec
  
 > [!TIP]
 > You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. To learn how, see the following resources:   
-> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
+> - [Cross-service overview](../../cross-service/cross-service-overview.md#azure-boards---azure-repos)
 > - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 > - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 > - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md).
@@ -197,7 +197,6 @@ See the following articles for more information:
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
-- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md)
@@ -206,7 +205,6 @@ See the following articles for more information:
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id)

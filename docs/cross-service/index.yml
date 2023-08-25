@@ -44,8 +44,6 @@ landingContent:
         links:
           - text: End-to-end traceability
             url: end-to-end-traceability.md
-          - text: Configure Git repositories to integrate with work tracking 
-            url: ../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/cross-service/toc.json
       - linkListType: tutorial
         links:
           - text: Drive Git development

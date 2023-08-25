@@ -201,7 +201,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 ### Linking  
 
-- [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 - [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 - [Drive Git development from a work item](../boards/backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
