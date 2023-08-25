@@ -238,7 +238,7 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 ::: moniker range=">= azure-devops-2020"
 
-Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB.
+Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB and the max image size allowed is 2560 x 1024 px, and then we resize to 200 x 200.
 
 
 ![Screenshot to Update team profile picture.](media/team-defaults/update-team-profile-pic-preview.png)
