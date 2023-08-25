@@ -132,7 +132,7 @@ If anonymous users who are restoring packages for a project are repeatedly being
 
 #### Q: I'm trying to restore my packages using Visual Studio, but I'm noticing that they're getting pulled from a different source?
 
-A: Make sure that Visual Studio is using the source referenced in your *nuget.config* file and not from the local NuGet package manager. See [Package sources](nuget/consume-packages/install-use-packages-visual-studio#package-sources) for more details. 
+A: Make sure that Visual Studio is using the source referenced in your *nuget.config* file and not from the local NuGet package manager. See [Package sources](/nuget/consume-packages/install-use-packages-visual-studio#package-sources) for more details. 
 
 You can also use the NuGet CLI to force NuGet to use the source in your config file by running the following command:
 
