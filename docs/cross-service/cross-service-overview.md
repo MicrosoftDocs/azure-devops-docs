@@ -124,7 +124,7 @@ The following table summarizes the integration points between Azure Boards and A
    :::column span="2":::
       You can initiate a Git branch or link to Git commits or pull requests and drive your Git development cycle for a work item from within the work item form.  
       :::image type="content" source="media/overview/development-control-git.png" alt-text="Screenshot of Development control for Git repositories.":::  
-      For details, see [Drive Git development from a work item](../boards/backlogs/connect-work-items-to-git-dev-ops.md).
+      For more information, see [Drive Git development from a work item](../boards/backlogs/connect-work-items-to-git-dev-ops.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -136,7 +136,7 @@ The following table summarizes the integration points between Azure Boards and A
       You can enable or disable the following options for a single Git repository:
       - Allow mentions in commit comments to close work items. 
       - Remember user preferences for completing work items with pull requests.
-      - Automatically create links for work items mentioned in a commit comment. You can enable several options to automate linking of work items from commits or pull requests in repo settings.</br>- **Commit mention linking**: Enable this option so commit messages containing `#` followed by a valid work item ID automatically link the commit to the mentioned work item. Disable this option when you push a repository previously contained by a different account or service. If you [import a repository](import-git-repository.md), we automatically turn off this option.</br>- **Commit mention work item resolution**: Enable this option to support closing work items mentioned in commits with the `Fixes` prefix, for example `Fixes #*WorkItemID*`.</br>- **Work item transition preferences**: Enabled by default, the system remembers each user's last choice to complete linked work items during pull request completion. Depending on your team's preference, you may choose to disable this option to discourage users from completing work items with their pull requests. When disabled, users must opt in to completing work items for each pull request.
+      - Automatically create links for work items mentioned in a commit comment. You can enable several options to automate linking of work items from commits or pull requests in repo settings.</br>- **Commit mention linking**: Enable this option so commit messages containing `#` followed by a valid work item ID automatically link the commit to the mentioned work item. Disable this option when you push a repository previously contained by a different account or service. If you [import a repository](../repos/git/import-git-repository.md), we automatically turn off this option.</br>- **Commit mention work item resolution**: Enable this option to support closing work items mentioned in commits with the `Fixes` prefix, for example `Fixes #*WorkItemID*`.</br>- **Work item transition preferences**: Enabled by default, the system remembers each user's last choice to complete linked work items during pull request completion. Depending on your team's preference, you may choose to disable this option to discourage users from completing work items with their pull requests. When disabled, users must opt in to completing work items for each pull request.
    :::column-end:::
 :::row-end:::
 ---
@@ -173,7 +173,7 @@ The following table summarizes the integration points between Azure Boards and A
       Query for external links 
    :::column-end::: 
    :::column span="2":::
-      You can query for work items that contain links to branches, commits, pull requests or tags. For more information, see [Query by link or attachment count](../../boards/queries/linking-attachments.md). 
+      You can query for work items that contain links to branches, commits, pull requests or tags. For more information, see [Query by link or attachment count](../boards/queries/linking-attachments.md). 
    :::column-end:::
 :::row-end:::
 :::row:::
