@@ -25,7 +25,7 @@ We strongly recommend reading [Centralized version control to Git](/devops/devel
 The import experience is great for small simple TFVC repositories. It's also good for repositories that have already been "cleaned up" as outlined in the previous whitepapers. Those whitepapers also recommend other tools for more advanced TFVC repository configurations.
 
 > [!IMPORTANT] 
-> Due to the differences in how TFVC and Git store version control history, we [recommend](/devops/develop/git/migrate-from-tfvc-to-git) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
+> Due to the differences in how TFVC and Git store version control history, we recommend that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
 
 ## Importing the repository
 
@@ -70,7 +70,7 @@ A link to the TFVC repository is added in the commit message of the 1st changese
 ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog-TFVC.png)
 
 > [!IMPORTANT] 
-> Due to the differences in how TFVC and Git store version control history, we [recommend](/devops/develop/git/migrate-from-tfvc-to-git) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
+> Due to the differences in how TFVC and Git store version control history, we recommend that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
 
 ::: moniker-end
 
@@ -83,7 +83,7 @@ while `$/Fabrikam/<branch>` would only import the branch.
 2. The imported repository and associated history (if imported) cannot exceed 1GB in size.
 3. You can import up to 180 days of history.
 
-If any of the above is a blocker for your import, we recommend you try external tools like [Git-TFS](https://github.com/git-tfs/git-tfs) for importing and reading our whitepapers - [Centralized version control to Git](/devops/develop/git/centralized-to-git) and [TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git)
+If any of the above is a blocker for your import, we recommend you try external tools like [Git-TFS](https://github.com/git-tfs/git-tfs) for importing and reading our whitepapers - [Centralized version control to Git](/devops/develop/git/centralized-to-git) and the following [TFVC to Git](#migrate-from-tfvc-to-git) section.
 
 
 > [!IMPORTANT]
@@ -105,7 +105,7 @@ differences between the two and [prepare for the migration](/devops/develop/git/
 
 ### Requirements
 
-In order to make migrations easier, there are a number of requirements before following the [importing the repository](#importing-the-repository) procedure in the previous sections of this article.
+In order to make migrations easier, there are a number of requirements before following the [importing the repository](#importing-the-repository) procedure in the previous section of this article.
 
 * Migrate only a single branch. When [planning the migration](/devops/develop/git/centralized-to-git), choose a new
    branching strategy for Git. Migrating only the main branch supports a topic-branch based workflow like
@@ -128,15 +128,15 @@ to do your migration instead.
 
 The process to migrate from TFVC is generally straightforward:
 
-1. Check out the latest version of the branch from TFVC on your local disk.
-2. Remove the binaries and build tools from the repository and set up a package management system like NuGet.
-3. Convert version control system-specific directives. For example, convert `.tfignore` files to
+1. [Check out the latest version](#check-out-the-latest-version) of the branch from TFVC on your local disk.
+2. [Remove binaries and build tools](#remove-binaries-and-build-tools) from the repository and set up a package management system like NuGet.
+3. [Convert version control-specific configuration](#convert-version-control-specific-configuration) directives. For example, convert `.tfignore` files to
     [`.gitignore`](https://git-scm.com/docs/gitignore), and convert `.tpattributes` files to
     [`.gitattributes`](https://git-scm.com/docs/gitattributes).
-4. Check in the final changes to Team Foundation Version Control and perform the migration to Git.
+4. [Check in changes and perform the migration](#check-in-changes-and-perform-the-migration) to Git.
 
 Steps 1-3 are optional. If there aren't binaries in the repository and there's no need to set up a
-`.gitignore` or a `.gitattributes`, you can proceed directly to [importing the repository](#importing-the-repository).
+`.gitignore` or a `.gitattributes`, you can proceed directly to the [Check in changes and perform the migration](#check-in-changes-and-perform-the-migration) step.
 
 #### Check out the latest version
 
@@ -157,7 +157,7 @@ Due to the way Git stores the history of changed files by providing a copy of ev
 every developer, checking in binary files directly to the repository causes the repo to grow quickly and
 can cause performance issues.
 
-For build tools and dependencies like libraries, adopt a [packaging solution](../../artifacts/) 
+For build tools and dependencies like libraries, adopt a [packaging solution](../../artifacts/start-using-azure-artifacts.md) 
 with versioning support, such as NuGet. Many open source tools and libraries are already available on the 
 [NuGet Gallery](https://www.nuget.org/), but for proprietary dependencies, create new NuGet packages.
 
@@ -183,7 +183,7 @@ Check in any changes that remove binaries, migrate to package management, or con
 control-specific configuration. Once you make this final change in TFVC, you can do the import.
 
 Follow the [Importing the repository](#importing-the-repository) procedure to do
-the input.
+the import.
 
 #### Advanced migrations
 
@@ -214,6 +214,9 @@ repository online, but read-only, in order to view history.
 To attempt an advanced migration with Git-TFS, see
 [clone a single branch with history](https://github.com/git-tfs/git-tfs/blob/master/doc/usecases/manage_tfs_branches.md#clone-just-the-trunk)
 or [clone all branches with merge history](https://github.com/git-tfs/git-tfs/blob/master/doc/usecases/manage_tfs_branches.md#clone-all-history).
+
+> [!IMPORTANT]
+> The usage of external tools like [Git-TFS](https://github.com/git-tfs/git-tfs) with Microsoft products, services, or platforms is entirely the responsibility of the user. Microsoft does not endorse, support, or guarantee the functionality, reliability, or security of such third-party extensions.
 
 ### Update the workflow
 
