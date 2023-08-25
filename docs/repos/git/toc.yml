@@ -14,7 +14,7 @@
     href: clone.md
   - name: Import repo
     href: import-git-repository.md
-  - name: Import and migrate a repo from TFVC
+  - name: Import and migrate from TFVC
     href: import-from-TFVC.md
   - name: Use Visual Studio with Git
     href: ../tfvc/use-visual-studio-git.md
