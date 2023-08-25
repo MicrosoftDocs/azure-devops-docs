@@ -1,7 +1,7 @@
 ---
-title: Import repositories from TFVC to Git
+title: Import and migrate repositories from TFVC to Git
 titleSuffix: Azure Repos
-description: Import your repositories from TFVC to Git repositories within the same account.
+description: Import and migrate your repositories from TFVC to Git repositories within the same account.
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
 ms.service: azure-devops-repos
 ms.topic: conceptual
@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
 
-# Import repositories from TFVC to Git
+# Import and migrate repositories from TFVC to Git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -86,7 +86,7 @@ while `$/Fabrikam/<branch>` would only import the branch.
 If any of the above is a blocker for your import, we recommend you try external tools like [Git-TFS](https://github.com/git-tfs/git-tfs) for importing and reading our whitepapers - [Centralized version control to Git](/devops/develop/git/centralized-to-git) and [TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git)
 
 
-> [!NOTE]
+> [!IMPORTANT]
 > The usage of external tools like [Git-TFS](https://github.com/git-tfs/git-tfs) with Microsoft products, services, or platforms is entirely the responsibility of the user. Microsoft does not endorse, support, or guarantee the functionality, reliability, or security of such third-party extensions.
 
 ## Migrate from TFVC to Git
@@ -105,8 +105,7 @@ differences between the two and [prepare for the migration](/devops/develop/git/
 
 ### Requirements
 
-In order to make migrations easier, there are a number of requirements on the
-[TFVC Import tool](/azure/devops/git/import-from-tfvc):
+In order to make migrations easier, there are a number of requirements before following the [importing the repository](#importing-the-repository) procedure in the previous sections of this article.
 
 * Migrate only a single branch. When [planning the migration](/devops/develop/git/centralized-to-git), choose a new
    branching strategy for Git. Migrating only the main branch supports a topic-branch based workflow like
@@ -122,6 +121,9 @@ In order to make migrations easier, there are a number of requirements on the
 If the repository doesn't meet these requirements, use the [Git-TFS tool](https://github.com/git-tfs/git-tfs) 
 to do your migration instead.
 
+> [!IMPORTANT]
+> The usage of external tools like [Git-TFS](https://github.com/git-tfs/git-tfs) with Microsoft products, services, or platforms is entirely the responsibility of the user. Microsoft does not endorse, support, or guarantee the functionality, reliability, or security of such third-party extensions.
+
 ### Steps to migrate
 
 The process to migrate from TFVC is generally straightforward:
@@ -134,7 +136,7 @@ The process to migrate from TFVC is generally straightforward:
 4. Check in the final changes to Team Foundation Version Control and perform the migration to Git.
 
 Steps 1-3 are optional. If there aren't binaries in the repository and there's no need to set up a
-`.gitignore` or a `.gitattributes`, skip to [perform the migration](/azure/devops/git/import-from-tfvc).
+`.gitignore` or a `.gitattributes`, you can proceed directly to [importing the repository](#importing-the-repository).
 
 #### Check out the latest version
 
@@ -155,12 +157,12 @@ Due to the way Git stores the history of changed files by providing a copy of ev
 every developer, checking in binary files directly to the repository causes the repo to grow quickly and
 can cause performance issues.
 
-For build tools and dependencies like libraries, adopt a [packaging solution](/azure/devops/package/overview) 
+For build tools and dependencies like libraries, adopt a [packaging solution](../../artifacts/) 
 with versioning support, such as NuGet. Many open source tools and libraries are already available on the 
 [NuGet Gallery](https://www.nuget.org/), but for proprietary dependencies, create new NuGet packages.
 
 Once dependencies are moved into NuGet, be sure that they aren't included in the Git repository
-by adding them to [`.gitignore`](/azure/devops/git/tutorial/ignore-files).
+by adding them to [`.gitignore`](./ignore-files.md).
 
 #### Convert version control-specific configuration
 
@@ -169,7 +171,7 @@ added to the TFVC repository. You can use the `.tfignore` file for automatically
 output so that they aren't accidentally checked in.
 
 If the project relies on this behavior, convert the `.tfignore` file to a 
-[`.gitignore`](/azure/devops/git/tutorial/ignore-files) file.
+[`.gitignore`](./ignore-files.md) file.
 
 Cross-platform TFVC clients also provide support for a `.tpattributes` file that controls how files
 are placed on the local disk or checked into the repository. If a `.tpattributes` file is in use,
@@ -180,7 +182,7 @@ convert it to a [`.gitattributes`](https://git-scm.com/docs/gitattributes) file.
 Check in any changes that remove binaries, migrate to package management, or convert version
 control-specific configuration. Once you make this final change in TFVC, you can do the import.
 
-Follow the [Import repositories](/azure/devops/git/import-from-tfvc) documentation to do
+Follow the [Importing the repository](#importing-the-repository) procedure to do
 the input.
 
 #### Advanced migrations
