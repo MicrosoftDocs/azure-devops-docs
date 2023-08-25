@@ -1321,3 +1321,10 @@ There is no [**az pipelines**](/cli/azure/pipelines) command that applies to the
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
+## Related articles
+
+* [Set variables in scripts](set-variables-scripts.md)
+* [Use predefined variables](../build/variables.md)
+* [Expressions](expressions.md)
+* [Variable group](../library/variable-groups.md)
