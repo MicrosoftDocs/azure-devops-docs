@@ -32,7 +32,7 @@ As shown in the following image, the  **Deployment** control shows release infor
  Work items linked to a Git repository branch, commit, or pull request participate in populating the **Deployment** control.   
 You can view all links through the work item form **Links** tab. 
  
-- Work items associated with commits in the build shows the status of the release  
+- Work items associated with commits in the build show the status of the release  
 - Only work items co-located with the same project where the release pipeline is defined are linked to. 
   
 :::image type="content" source="../../organizations/notifications/media/types-of-work-item-links.png" alt-text="Conceptual image of Git and integrated link types.":::
@@ -121,7 +121,7 @@ You can't query for work items that are included in releases. However, you can c
 
 **Azure Repos, Git**
 
-- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md)
+- [Cross-service overview](../../cross-service/cross-service-overview.md)
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 
 
