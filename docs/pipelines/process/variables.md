@@ -1322,6 +1322,8 @@ There is no [**az pipelines**](/cli/azure/pipelines) command that applies to the
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
+---
+
 ## Related articles
 
 * [Set variables in scripts](set-variables-scripts.md)
