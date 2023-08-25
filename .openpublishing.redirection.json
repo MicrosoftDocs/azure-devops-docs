@@ -404,6 +404,11 @@
       "source_path": "docs/organizations/settings/set-working-days.md",
       "redirect_url": "/azure/devops/boards/sprints/set-capacity#set-capacity-for-the-team-and-team-members",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/configure-repos-work-tracking.md",
+      "redirect_url": "/azure/devops/cross-service/cross-service-overview#azure-boards--azure-repos",
+      "redirect_document_id": false
     }
   ]
 }

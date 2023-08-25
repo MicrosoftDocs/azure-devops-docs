@@ -251,6 +251,6 @@ If possible, we recommended to always use identity services for authentication i
 ## Secure GitHub Integrations
 
 - Disable Personal Access Token (PAT)-based authentication, so the OAuth flow gets used with the GitHub service connection. 
-- Never authenticate GitHub service connections as an identity that's an administrator or owner of any repositories. [Check your policies](../../repos/git/configure-repos-work-tracking.md). 
+- Never authenticate GitHub service connections as an identity that's an administrator or owner of any repositories.
 - Never use a full-scope GitHub PAT (Personal Access Token) to authenticate GitHub service connections. 
 - Don't use a personal GitHub account as a service connection with Azure DevOps. 
