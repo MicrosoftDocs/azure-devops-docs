@@ -99,7 +99,7 @@ After you define a pipeline to build and release the code changes, you can track
 
 #### Deployment and Development controls 
 
-When you open the work item form, you can see the stages the requirement has been deployed to, and drill down for greater details by choosing the links. Under the **Development** section, you can open the branch ,commit, or pull requests that have been linked to the requirement.
+When you open the work item form, you can see the stages the requirement has been deployed to, and drill down for greater details by choosing the links. Under the **Development** section, you can open the branch, commit, or pull requests that have been linked to the requirement.
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Deployment control, Release Settings Stages.](/azure/devops/boards/work-items/media/deployments-control/deployments-control-1.png)
