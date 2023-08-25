@@ -121,7 +121,7 @@ You can't query for work items that are included in releases. However, you can c
 
 **Azure Repos, Git**
 
-- [Cross-service overview](../../cross-service/cross-service-overview.md.md)
+- [Cross-service overview](../../cross-service/cross-service-overview.md)
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 
 
