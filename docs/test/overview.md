@@ -592,7 +592,6 @@ tcm run /execute
 - [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 - [About requesting and providing feedback](../project/feedback/index.md)
 - [Cross-service integration and collaboration overview](../cross-service/cross-service-overview.md)
-- [Manage a virtual machine in Azure DevTest Labs](../pipelines/apps/cd/azure/deploy-provision-devtest-lab.md) 
 - [About pipeline tests](../pipelines/test/test-glossary.md)
 
 ## Additional resources

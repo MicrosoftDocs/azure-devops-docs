@@ -336,8 +336,6 @@
       items:
         - name: Linux virtual machines
           href: ecosystems/deploy-linux-vm.md
-        - name: Manage a VM in Azure DevTest Labs
-          href: apps/cd/azure/deploy-provision-devtest-lab.md
     - name: Deploy mobile apps
       items:
         - name: Manage signing certificates
