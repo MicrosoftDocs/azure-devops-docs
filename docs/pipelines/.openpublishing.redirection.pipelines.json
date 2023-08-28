@@ -160,6 +160,10 @@
     {
       "source_path": "docs/pipelines/targets/vmware.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/targets/vmware"
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/deploy-provision-devtest-lab.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/azure/deploy-provision-devtest-lab"
     }
   ]
 }
