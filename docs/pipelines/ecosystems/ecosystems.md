@@ -230,7 +230,7 @@ Deploy your app to any of the following platforms.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/virtualmachine.png":::
-        [Virtual Machine Manager](../targets/scvmm.md)
+        [Virtual machine resources](../process/environments-virtual-machines.md)
     :::column-end:::
 :::row-end:::
 
@@ -281,7 +281,7 @@ Deploy your app to any of the following platforms.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/virtualmachine.png":::
-        [Virtual Machine Manager](../targets/scvmm.md)
+        [Virtual machine resources](../process/environments-virtual-machines.md)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/virtualmachine.png":::
