@@ -1,8 +1,8 @@
 ---
 title: Query and use Azure Key Vault secrets in your Pipeline
-description: How to set up Azure Key vaults in your project and use it in your Azure Pipelines
+description: How to set up Azure Key vaults with your own project and use it in your Azure Pipelines
 ms.topic: tutorial
-ms.date: 08/26/2021
+ms.date: 08/28/2023
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
@@ -11,7 +11,14 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-With Azure Key Vault, you can securely store and manage your sensitive information such as passwords, API keys, certificates, etc. using Azure Key Vault, you can easily create and manage encryption keys to encrypt your data. Azure Key Vault can also be used to manage certificates for all your resources.
+With Azure Key Vault, you can securely store and manage your sensitive information such as passwords, API keys, certificates, etc. using Azure Key Vault, you can easily create and manage encryption keys to encrypt your data. Azure Key Vault can also be used to manage certificates for all your resources. In this article, you'll learn how to:
+
+> [!div class="checklist"]
+>
+> - Create an Azure Key Vault.
+> - Configure your Key Vault permissions.
+> - Create a new service connection.
+> - Query for secrets from your Azure Pipeline.
 
 ## Prerequisites
 
@@ -22,30 +29,29 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
 
 ## Create an Azure Key Vault
 
-
 ### [Azure portal](#tab/portal/)
 
 1. Navigate to [Azure portal](https://portal.azure.com/).
 
 1. Select **Create a resource** in the left navigation pane.
 
-    :::image type="content" source="media/create-resource-pane.png" alt-text="Create a new resource from the left nav pane":::
+    :::image type="content" source="media/create-resource-pane.png" alt-text="A screenshot showing how to create a new resource in Azure portal.":::
 
-1. Search for **Key Vault** and then click Enter.
+1. Search for **Key Vault** and then press Enter.
     
-    :::image type="content" source="media/search-resources.png" alt-text="Search for Azure Key Vault":::
+    :::image type="content" source="media/search-resources.png" alt-text="A screenshot showing how to search for Azure Key Vault in Azure portal.":::
 
 1. Select **Create** to create a new Azure Key Vault.
 
-    :::image type="content" source="media/create-key-vault.png" alt-text="Create a new Azure Key Vault":::
+    :::image type="content" source="media/create-key-vault.png" alt-text="A screenshot showing how to create a new Azure Key Vault in Azure portal.":::
 
-1. Select your **Subscription** and then add a new **Resource group**. Enter a **Key vault name** and select a **Region** and a **Pricing tier**. Select **Review + create** when you are done.
+1. Select your **Subscription** and then add a new **Resource group**. Enter a **Key vault name** and select a **Region** and a **Pricing tier**. Select **Review + create** when you're done.
 
-    :::image type="content" source="media/create-key-vault-window.png" alt-text="Create a new key vault window":::
+    :::image type="content" source="media/create-key-vault-window.png" alt-text="A screenshot showing the steps to create a new key vault in Azure portal.":::
 
 1. Select **Go to resource** when the deployment of your new resource is completed.
 
-    :::image type="content" source="media/go-to-resources.png" alt-text="Go to resource":::
+    :::image type="content" source="media/go-to-resources.png" alt-text="A screenshot showing how to navigate to your resource in Azure portal.":::
 
 ### [Azure CLI](#tab/cli/)
 
@@ -84,21 +90,41 @@ Before proceeding with the next steps, we must first create a service principal 
 
 1. Navigate to [Azure portal](https://portal.azure.com/).
 
-2. Select the key vault you created in the previous step.
+1. Select the key vault you created in the previous step.
 
-3. Select **Access policies**.
+1. Select **Access policies**.
 
-    :::image type="content" source="media/access-policies.png" alt-text="configure access policies":::
+    :::image type="content" source="media/access-policies.png" alt-text="A screenshot showing how to navigate to your key vault access policies in Azure portal.":::
 
-4. Select **Add Access Policy** to add a new policy.
+1. Select **Add Access Policy** to add a new policy.
 
-5. Add a **Get** and **List** to **Secret permissions**.
+1. Add a **Get** and **List** to **Secret permissions**.
 
-    :::image type="content" source="media/get-list-permissions.png" alt-text="Add get and list permissions":::
+    :::image type="content" source="media/get-list-permissions.png" alt-text="A screenshot showing how to add get and list permissions to your key vault in Azure portal.":::
 
-6. Under **Select principal**, select to add a service principal and choose the one you created earlier.
+1. Under **Select principal**, select to add a service principal and choose the one you created earlier.
 
-7. Select **Save** when you are done.
+1. Select **Save** when you're done.
+
+## Create a new service connection
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Project settings**, and then select **Service connections**.
+
+1. If you're setting up a service connection for the first time in your project, select **Create service connection**. If you've made service connections before, select **New service connection**.
+
+1. Select **Azure Resource Manager**, and then select **Next**.
+
+1. Select **Service principal (manual)**, and then select **Next**.
+
+1. Select **Subscription** for the **Scope Level** and complete the fields with the information from the service principal you created earlier, and then select **Verify**.
+
+1. Provide a name for your service connection, and make sure you check the **Grant access permission to all pipelines** checkbox.
+
+1. Select **Verify and save** when you're done.
+
+:::image type="content" source="../../media/service-principal-service-connection.png" alt-text="A screenshot showing how to create a new manual service principal service connection.":::
 
 ## Query and use secrets in your pipeline
 
