@@ -360,9 +360,6 @@
     - name: Stage templates in Azure Pipelines
       href: release/env-templates.md
       displayName: environment, templates, stages
-    - name: View release progress and test results
-      href: release/visualize-release-test-progress.md
-      displayName: release status, test summary
     - name: Deploy apps to VMs (Classic)
       items:
         - name: Linux VMs (Classic)
