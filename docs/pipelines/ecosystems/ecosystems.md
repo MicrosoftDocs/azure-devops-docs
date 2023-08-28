@@ -218,7 +218,7 @@ Deploy your app to any of the following platforms.
 :::row:::
     :::column:::
         :::image type="icon" source="./media/index/logo_linux-color.png":::
-        [Linux VM](../apps/cd/deploy-linuxvm-deploygroups.md)
+        [Linux VM](/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/logo_npm.png":::
@@ -266,7 +266,7 @@ Deploy your app to any of the following platforms.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/logo_linux-color.png":::
-        [Linux VM](../apps/cd/deploy-linuxvm-deploygroups.md)
+        [Linux VM](/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/logo_npm.png":::
