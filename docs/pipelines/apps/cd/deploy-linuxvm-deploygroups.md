@@ -7,7 +7,6 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 06/13/2022
-monikerRange: '<= azure-devops'
 ---
 
 # Deploy a web app to an NGINX web server running on a Linux Virtual Machine (Classic)
