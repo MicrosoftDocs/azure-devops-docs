@@ -342,8 +342,6 @@
       items:
         - name: Manage signing certificates
           href: apps/mobile/app-signing.md
-        - name: Manage signing certificates (TFS-2017)
-          href: apps/mobile/secure-certs.md
 - name: Deploy apps (Classic)
   items:
     - name: Release pipelines overview
