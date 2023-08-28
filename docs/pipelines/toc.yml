@@ -362,9 +362,6 @@
       displayName: environment, templates, stages
     - name: Deploy apps to VMs (Classic)
       items:
-        - name: Linux VMs (Classic)
-          href: apps/cd/deploy-linuxvm-deploygroups.md
-          displayName: linux, deployment vm
         - name: Windows VMs (Classic)
           href: apps/cd/deploy-webdeploy-iis-deploygroups.md
           displayName: windows vm, deployment vm

@@ -168,6 +168,11 @@
     {
       "source_path": "docs/pipelines/release/visualize-release-test-progress.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/release/visualize-release-test-progress"
+    },
+    {
+      "source_path_from_root": "/docs/build-release/apps/cd/deploy-linuxvm-deploygroups.md",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups"
+
     }
   ]
 }

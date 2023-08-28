@@ -179,4 +179,3 @@ Follow these steps to configure each target server.
 ## Related articles
 
 - [Deploy apps to Windows VMs](./deploy-webdeploy-iis-deploygroups.md).
-- [Deploy apps to Linux VMs](./deploy-linuxvm-deploygroups.md).
