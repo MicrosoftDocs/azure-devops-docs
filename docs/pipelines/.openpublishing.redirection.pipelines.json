@@ -164,6 +164,10 @@
     {
       "source_path": "docs/pipelines/apps/cd/azure/deploy-provision-devtest-lab.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/azure/deploy-provision-devtest-lab"
+    },
+    {
+      "source_path": "docs/pipelines/release/visualize-release-test-progress.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/visualize-release-test-progress"
     }
   ]
 }
