@@ -7,7 +7,6 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 09/07/2021
-monikerRange: '<= azure-devops'
 ---
 
 # How To: Extend your deployments to IIS Deployment Groups
