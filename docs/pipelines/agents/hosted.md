@@ -344,6 +344,13 @@ See the section [Agent IP ranges](#agent-ip-ranges)
 
 If you refer to the server by its DNS name, then make sure that your server is publicly accessible on the Internet through its DNS name. If you refer to your server by its IP address, make sure that the IP address is publicly accessible on the Internet. In both cases, ensure that any firewall in between the agents and your corporate network has the [agent IP ranges](#agent-ip-ranges) allowed.
 
+### MS hosted agents can’t be used for deploying App Services that have private endpoints
+
+There is a common scenario where customers want their app service being allocated inside private network and cannot be accessed by public network. Therefore, they usually enable private endpoint as well as configure Access Restriction to deny all the public traffic.
+
+When the private endpoint is enabled and public traffic is denied to the app service, all the public traffic to this app is cut off. Since there is a range of IP addresses where agents are deployed, they have a public IP; these agents are unable to reach app service.
+As a solution, we can either allow the [agent IP ranges](#agent-ip-ranges) list in the firewall or use self-hosted agents to deploy.
+
 ### I'm getting an SAS IP authorization error from an Azure Storage account
 
 If you get an SAS error code, it is most likely because the IP address ranges from the Microsoft-hosted agents aren't permitted due to your Azure Storage rules. There are a few workarounds:
