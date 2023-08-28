@@ -237,7 +237,7 @@ Deploy your app to any of the following platforms.
 :::row:::
     :::column:::
         :::image type="icon" source="./media/index/virtualmachine.png":::
-        [VMware](../targets/vmware.md)
+        [Virtual machine resources](../process/environments-virtual-machines.md)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/appservice.png":::
@@ -285,7 +285,7 @@ Deploy your app to any of the following platforms.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/virtualmachine.png":::
-        [VMware](../targets/vmware.md)
+        [Virtual machine resources](../process/environments-virtual-machines.md)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/appservice.png":::

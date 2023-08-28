@@ -180,4 +180,3 @@ Follow these steps to configure each target server.
 
 - [Deploy apps to Windows VMs](./deploy-webdeploy-iis-deploygroups.md).
 - [Deploy apps to Linux VMs](./deploy-linuxvm-deploygroups.md).
-- [Deploy apps to VMware vCenter Server](../../targets/vmware.md).

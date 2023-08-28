@@ -156,6 +156,10 @@
     {
       "source_path_from_root": "/docs/pipelines/targets/scvmm.md",
       "redirect_url": "/azure/devops/pipelines/process/environments-virtual-machines"
+    },
+    {
+      "source_path": "docs/pipelines/targets/vmware.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/targets/vmware"
     }
   ]
 }
