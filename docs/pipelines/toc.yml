@@ -381,9 +381,6 @@
         - name: Extend IIS Server deployments (Classic)
           href: apps/cd/howto-webdeploy-iis-deploygroups.md
           displayName: iis, server
-        - name: VMware (Classic)
-          href: targets/vmware.md
-          displayName: vmware, targets
 - name: Deploy to Azure
   items:
     - name: Deploy to Azure overview
