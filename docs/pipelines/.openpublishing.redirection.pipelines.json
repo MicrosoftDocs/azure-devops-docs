@@ -152,6 +152,10 @@
     {
       "source_path_from_root": "/docs/pipelines/process/demands.md",
       "redirect_url": "/azure/devops/pipelines/yaml-schema/pool-demands"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/targets/scvmm.md",
+      "redirect_url": "/azure/devops/pipelines/process/environments-virtual-machines"
     }
   ]
 }
