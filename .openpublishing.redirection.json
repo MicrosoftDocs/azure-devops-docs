@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "docs/pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/howto-webdeploy-iis-deploygroups.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/howto-webdeploy-iis-deploygroups",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/migrate/migration.md",
       "redirect_url": "/azure/devops/migrate/migration-overview",
       "redirect_document_id": false
