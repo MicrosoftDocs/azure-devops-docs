@@ -170,7 +170,7 @@
       "redirect_url": "/previous-versions/azure/devops/pipelines/release/visualize-release-test-progress"
     },
     {
-      "source_path_from_root": "/docs/build-release/apps/cd/deploy-linuxvm-deploygroups.md",
+      "source_path_from_root": "/docs/build-release/apps/cd/howto-webdeploy-iis-deploygroups.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/howto-webdeploy-iis-deploygroups"
 
     }
