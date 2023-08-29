@@ -171,7 +171,7 @@
     },
     {
       "source_path_from_root": "/docs/build-release/apps/cd/deploy-linuxvm-deploygroups.md",
-      "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups"
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/howto-webdeploy-iis-deploygroups"
 
     }
   ]
