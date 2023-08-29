@@ -10,8 +10,8 @@
                     "**/**.yml"],
         "exclude": [
           "artifacts/nuget/bootstrap-nuget.md",
-          "docs/pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
-          "docs/pipelines/apps/cd/howto-webdeploy-iis-deploygroups.md",
+          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
+          "pipelines/apps/cd/howto-webdeploy-iis-deploygroups.md",
           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
@@ -26,8 +26,8 @@
       {
         "files": [
           "artifacts/nuget/bootstrap-nuget.md",
-          "docs/pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
-          "docs/pipelines/apps/cd/howto-webdeploy-iis-deploygroups.md"
+          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
+          "pipelines/apps/cd/howto-webdeploy-iis-deploygroups.md"
         ],
         "exclude": [
           "**/obj/**",
