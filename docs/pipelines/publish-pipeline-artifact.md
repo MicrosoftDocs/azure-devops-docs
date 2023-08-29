@@ -4,7 +4,7 @@ description: Publish Artifacts with Azure Pipelines
 ms.topic: quickstart
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 10/11/2022
+ms.date: 08/29/2023
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -24,12 +24,11 @@ You can publish your Artifacts at any stage of your pipeline using YAML or the c
 # [YAML](#tab/yaml)
 
 ```yaml
-steps:
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
-    artifactType: 'pipeline'
-    artifactName: 'drop'
+    publishLocation: 'pipeline'
+    artifact: 'drop'
 ```
 
 - **targetPath**: (Required) The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](/build/variables.md), but wildcards are not supported. Default value: $(Pipeline.Workspace).
