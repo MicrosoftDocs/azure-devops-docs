@@ -32,9 +32,11 @@ steps:
     artifactName: 'drop'
 ```
 
-- **targetPath**: Path to the folder or file you want to publish. (Required)
-- **artifactType**: Artifacts publish location. (Required). Options: pipeline, filepath. Default value: pipeline.
-- **artifactName**: Name of your Artifact. (Optional).
+- **targetPath**: (Required) The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](/build/variables.md), but wildcards are not supported. Default value: $(Pipeline.Workspace).
+
+- **publishLocation**: (Required). Artifacts publish location: choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. Options: pipeline, filepath. Default value: pipeline.
+
+- **artifact**: (Optional) Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.
 
 # [Classic](#tab/classic)
 
