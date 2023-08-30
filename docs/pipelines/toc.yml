@@ -319,68 +319,55 @@
       href: test/codecoverage-for-pullrequests.md
 - name: Deploy apps
   items:
-  - name: Create a multistage pipeline
-    displayName: multi stage, multi stage pipelines
-    href: process/create-multistage-pipeline.md
-  - name: Deploy apps to environments
-    items:
-    - name: Define and target environments
-      displayName: clusters, vms, resources
-      href: process/environments.md
-    - name: Kubernetes resource
-      displayName: clusters, aks, manifest, service account
-      href: process/environments-kubernetes.md
-    - name: Virtual machine resource
-      href: process/environments-virtual-machines.md
-  - name: Deploy apps using VMs
-    items:
-    - name: Linux virtual machines
-      href: ecosystems/deploy-linux-vm.md
-    - name: Manage a VM in Azure DevTest Labs
-      href: apps/cd/azure/deploy-provision-devtest-lab.md
-  - name: Deploy mobile apps
-    items:
-    - name: Manage signing certificates
-      href: apps/mobile/app-signing.md
-    - name: Manage signing certificates (TFS-2017)
-      href: apps/mobile/secure-certs.md
+    - name: Create a multistage pipeline
+      href: process/create-multistage-pipeline.md
+      displayName: multi stage, multi stage pipelines 
+    - name: Deploy apps to environments
+      items:
+        - name: Define and target environments
+          href: process/environments.md
+          displayName: clusters, vms, resources
+        - name: Kubernetes resource
+          href: process/environments-kubernetes.md
+          displayName: clusters, aks, manifest, service account
+        - name: Virtual machine resource
+          href: process/environments-virtual-machines.md
+    - name: Deploy apps using VMs
+      items:
+        - name: Linux virtual machines
+          href: ecosystems/deploy-linux-vm.md
+    - name: Deploy mobile apps
+      items:
+        - name: Manage signing certificates
+          href: apps/mobile/app-signing.md
 - name: Deploy apps (Classic)
   items:
-  - name: Release pipelines overview
-    displayName: release, deploy, deployment
-    href: release/index.md
-  - name: Deploy from multiple branches
-    displayName: multiple branches, deployment
-    href: release/deploy-multiple-branches.md
-  - name: Deploy pull request Artifacts
-    displayName: pr release, deployment
-    href: release/deploy-pull-request-builds.md
-  - name: Classic release pipelines
-    displayName: classic release, classic deployment
-    href: release/define-multistage-release-process.md
-  - name: Pipelines with PowerShell DSC
-    displayName: powershell, dsc
-    href: release/dsc-cicd.md
-  - name: Stage templates in Azure Pipelines
-    displayName: environment, templates, stages
-    href: release/env-templates.md
-  - name: View release progress and test results
-    displayName: release status, test summary
-    href: release/visualize-release-test-progress.md
-  - name: Deploy apps to VMs (Classic)
-    items:
-    - name: Windows VMs (Classic)
-      displayName: windows vm, deployment vm
-      href: apps/cd/deploy-webdeploy-iis-deploygroups.md
-    - name: IIS servers (WinRM) (Classic)
-      displayName: iis, server, winrm
-      href: apps/cd/deploy-webdeploy-iis-winrm.md
-    - name: SCVMM (Classic)
-      displayName: scvmm, targets
-      href: targets/scvmm.md
-    - name: VMware (Classic)
-      displayName: vmware, targets
-      href: targets/vmware.md
+    - name: Release pipelines overview
+      href: release/index.md
+      displayName: release, deploy, deployment
+    - name: Deploy from multiple branches
+      href: release/deploy-multiple-branches.md
+      displayName: multiple branches, deployment
+    - name: Deploy pull request Artifacts
+      href: release/deploy-pull-request-builds.md
+      displayName: pr release, deployment
+    - name: Classic release pipelines
+      href: release/define-multistage-release-process.md
+      displayName: classic release, classic deployment
+    - name: Pipelines with PowerShell DSC
+      href: release/dsc-cicd.md
+      displayName: powershell, dsc
+    - name: Stage templates in Azure Pipelines
+      href: release/env-templates.md
+      displayName: environment, templates, stages
+    - name: Deploy apps to VMs (Classic)
+      items:
+        - name: Windows VMs (Classic)
+          href: apps/cd/deploy-webdeploy-iis-deploygroups.md
+          displayName: windows vm, deployment vm
+        - name: IIS servers (WinRM) (Classic)
+          href: apps/cd/deploy-webdeploy-iis-winrm.md
+          displayName: iis, server, winrm
 - name: Deploy to Azure
   items:
   - name: Deploy to Azure overview
@@ -404,8 +391,6 @@
     - name: Use a Resource Manager template to deploy
       displayName: Resource Manager, ARM, azure
       href: apps/cd/azure/deploy-arm-template.md
-    - name: Azure VM using Azure Resource Manager (Classic)
-      href: apps/cd/azure/deploy-provision-azure-vm.md
   - name: Azure Databricks
     items:
     - name: Data pipeline overview
@@ -426,8 +411,6 @@
     - name: Deploy a virtual machine scale set
       displayName: vmss, custom image
       href: apps/cd/azure/deploy-virtual-scale-set-java.md
-    - name: Deploy apps to a virtual machine scale set (Classic)
-      href: apps/cd/azure/deploy-azure-scaleset.md
   - name: Azure Stack
     href: targets/azure-stack.md
   - name: Azure Container Registry
@@ -648,17 +631,17 @@
 - name: Integrate with 3rd party software
   items:
   - name: Microsoft Teams
-    displayName: integrations, teams
     href: integrations/microsoft-teams.md
+    displayName: integrations, teams
   - name: Slack
     displayName: integrations, slack
     href: integrations/slack.md
   - name: Integrate with ServiceNow
-    displayName: integrations, servicenow
     href: release/approvals/servicenow.md
+    displayName: integrations, servicenow
   - name: Integrate with Jenkins (Classic)
-    displayName: integrations, jenkins
     href: release/integrate-jenkins-pipelines-cicd.md
+    displayName: integrations, jenkins
 - name: Migrate
   items:
   - name: Migrate from Classic pipelines
