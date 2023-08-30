@@ -74,8 +74,6 @@ To add the **Administrator** role to a specific agent pool:
 
 1. Go to :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Security**. 
 
-    :::image type="content" source="media/resources-select-security.png" alt-text="Screenshot of select the security option.":::
-
 1. Assign the **Administrator** role in the **Role** column. 
 
     :::image type="content" source="media/resources-admin-role.png" alt-text="Screenshot of assign the admin role. ":::
