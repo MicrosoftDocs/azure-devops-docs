@@ -172,6 +172,14 @@
     {
       "source_path": "docs/pipelines/apps/cd/deploy-webdeploy-iis-winrm.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-winrm"
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/deploy-provision-azure-vm.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/azure/deploy-provision-azure-vm"
+    },
+    {
+      "source_path_from_root": "/docs/build-release/apps/cd/azure/deploy-azure-scaleset.md",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/azure/deploy-azure-scaleset"
     }
   ]
 }

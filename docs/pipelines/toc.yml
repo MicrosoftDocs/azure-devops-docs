@@ -391,8 +391,6 @@
     - name: Use a Resource Manager template to deploy
       displayName: Resource Manager, ARM, azure
       href: apps/cd/azure/deploy-arm-template.md
-    - name: Azure VM using Azure Resource Manager (Classic)
-      href: apps/cd/azure/deploy-provision-azure-vm.md
   - name: Azure Databricks
     items:
     - name: Data pipeline overview
@@ -413,8 +411,6 @@
     - name: Deploy a virtual machine scale set
       displayName: vmss, custom image
       href: apps/cd/azure/deploy-virtual-scale-set-java.md
-    - name: Deploy apps to a virtual machine scale set (Classic)
-      href: apps/cd/azure/deploy-azure-scaleset.md
   - name: Azure Stack
     href: targets/azure-stack.md
   - name: Azure Container Registry
