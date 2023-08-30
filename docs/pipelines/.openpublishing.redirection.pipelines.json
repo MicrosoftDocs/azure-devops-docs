@@ -168,6 +168,10 @@
     {
       "source_path": "docs/pipelines/release/visualize-release-test-progress.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/release/visualize-release-test-progress"
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/deploy-webdeploy-iis-winrm.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-winrm"
     }
   ]
 }
