@@ -11,8 +11,7 @@
         "exclude": [
           "artifacts/nuget/bootstrap-nuget.md",
           "pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
-          "pipelines/apps/cd/howto-webdeploy-iis-deploygroups.md",
-          "**/obj/**",
+           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
           "**/_shared/**",
@@ -26,9 +25,7 @@
       {
         "files": [
           "artifacts/nuget/bootstrap-nuget.md",
-          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
-          "pipelines/apps/cd/howto-webdeploy-iis-deploygroups.md"
-        ],
+          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md"        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",

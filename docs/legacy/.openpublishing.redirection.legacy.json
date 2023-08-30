@@ -8113,7 +8113,7 @@
     },
     {
       "source_path_from_root": "/docs/build-release/apps/cd/howto-webdeploy-iis-deploygroups.md",
-      "redirect_url": "/azure/devops/pipelines/apps/cd/howto-webdeploy-iis-deploygroups",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/howto-webdeploy-iis-deploygroups",
       "redirect_document_id": false
     },
     {

@@ -368,9 +368,6 @@
         - name: IIS servers (WinRM) (Classic)
           href: apps/cd/deploy-webdeploy-iis-winrm.md
           displayName: iis, server, winrm
-        - name: Extend IIS Server deployments (Classic)
-          href: apps/cd/howto-webdeploy-iis-deploygroups.md
-          displayName: iis, server
 - name: Deploy to Azure
   items:
   - name: Deploy to Azure overview
