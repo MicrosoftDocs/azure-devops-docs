@@ -3,9 +3,8 @@ title: Pipeline deployment approvals
 description: Use approvals to determine when a deployment stage can run
 ms.topic: conceptual
 ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
-ms.manager: shashban
-ms.author: shashban
-author: shashban
+ms.author: sandrica
+author: silviuandrica
 ms.date: 07/18/2023
 monikerRange: ">= azure-devops-2020"
 ---

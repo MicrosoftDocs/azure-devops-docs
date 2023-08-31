@@ -9,14 +9,14 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 01/05/2023
+ms.date: 08/16/2023
 ---
 
 # Change your organization's billing subscription
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to change the Azure subscription that your Azure DevOps organization uses for billing. You might do so if your organization is tied to a subscription of a user who's left the organization. In this case, you'd likely switch to a common subscription or remove the billing. You can [remove your billing subscription](#remove-your-billing-subscription) at any time.   
+Learn how to change the Azure subscription that your Azure DevOps organization uses for billing. This adjustment could be necessary if your organization's subscription is linked to a user who's no longer part of the group. In such situations, you may consider transitioning to a shared subscription or eliminating the billing arrangement. You can [remove your billing subscription](#remove-your-billing-subscription) at any time. [Migrating between resource groups isn't supported](billing-faq.yml).   
 
 See also the following related articles:
 - [Pay for users](buy-basic-access-add-users.md)
@@ -59,7 +59,7 @@ Azure DevOps bills the newly saved subscription for your organization.
 > [!IMPORTANT]
 > When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Azure Test Plans users, Microsoft-hosted CI/CD, and self-hosted CI/CD go back to the [free tier](billing-faq.yml) of service immediately.
 >  
->If you delete your organization resource in the Azure Portal, do so *after* you change the billing subscription in Azure DevOps and not before, to avoid your organization reverting to the free tier of service.
+> If you delete your organization resource in the Azure Portal, do so *after* you change the billing subscription in Azure DevOps and not before, to avoid your organization reverting to the free tier of service.
 
 1. Sign in to your organization, choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings** > **Billing**, and then **Change billing**, following steps 1 through 4 provided in the [Change the subscription](#change-subscription) section.
 
@@ -74,9 +74,8 @@ Azure DevOps removes your billing subscription from your organization.
 
 ## Related articles
 
+* [Move Azure resources to a new resource group](/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 * [Add a backup billing manager](add-backup-billing-managers.md)
 * [Pay for Basic + Test Plans](buy-basic-access-add-users.md)
 * [Pay for Azure Pipelines](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
-* [Set up billing](set-up-billing-for-your-organization-vs.md)
-* [Change the Azure subscription used for billing](change-azure-subscription.md)
 * [Get Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

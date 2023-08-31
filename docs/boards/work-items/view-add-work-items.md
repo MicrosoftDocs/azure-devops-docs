@@ -314,6 +314,6 @@ Use the following three controls to manage your views in the web portal.
 - [Azure Boards FAQs](../faqs.yml)   
 - [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md)
 - [Manage or enable features](../../project/navigation/preview-features.md)
-- [Use work item form controls](work-item-form-controls.md)
+- [Use work item form controls](about-work-items.md#work-item-form-controls)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [Work across projects](../../project/navigation/work-across-projects.md)

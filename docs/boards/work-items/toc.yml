@@ -28,8 +28,6 @@
 - name: Copy or clone
   href: ../backlogs/copy-clone-work-items.md
   displayname: change type, URL, list
-- name: Work item form controls
-  href: work-item-form-controls.md 
 - name: Collaborate with others
   items:
   - name: Follow work
@@ -41,12 +39,7 @@
   - name: Add tags to work items
     href: ../queries/add-tags-to-work-items.md
     displayname: chart, color-code, filter, show, query, bulk modify
-  - name: Share information
-    href: ../queries/share-plans.md
-    displayname: rich text, link, attach files, storyboard, email, dashboards, wiki
-  - name: Copy list
-    href: ../backlogs/copy-list.md
-  - name: Email or print work items
+  - name: Send email of items or print
     displayName: cards
     href: email-work-items.md
   - name: Move work items from one team to another

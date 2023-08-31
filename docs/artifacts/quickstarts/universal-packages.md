@@ -24,7 +24,7 @@ Universal Packages offer developers the capability to store an extensive array o
 
 #### [Windows](#tab/Windows/)
 
-1. Run the following command to install the Azure DevOps extension.
+1. Run the following command to install the Azure DevOps extension. Make sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli). At the very least, your Azure CLI version should be 2.10.1. You can confirm this by using the command `az --version`. To run the Azure CLI, you can use the `az` command from the Windows Command Prompt or [PowerShell](/powershell/azure/install-azure-powershell).
 
    ```azurecli
    az extension add --name azure-devops

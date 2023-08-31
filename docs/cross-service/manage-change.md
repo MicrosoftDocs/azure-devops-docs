@@ -20,7 +20,7 @@ Managing change is an aspect of managing your project plan, your requirements, a
 > [!NOTE]
 > *Agile change management is the adaptive and iterative planning and execution of change management practices that encourages flexibility and speed. If organizations want to make effective change, they need to recognize and deal with the principles of how change happens within agile organizations and have the tools to make the work happen. &mdash;[Managing Change in an Agile World](https://www.agilealliance.org/resources/books/managing-change-in-an-agile-world/)* 
 
-You'll want to keep your change management process lightweight. You'll want to gain insight into where change is occurring in your project, and how the change impacts your team in their ability to deliver. And, when managing change, you'll want to consider your business requirements to meet the following scenarios.   
+Keep your change management process lightweight. Gain insight into where change is occurring in your project, and how the change impacts your team in their ability to deliver. Consider your business requirements to meet the following scenarios.   
 
 > [!div class="checklist"]  
 > - Define and track status of change  
@@ -61,7 +61,7 @@ To minimize avoidable changes, minimize the occurrence of the following.
 > *Agile is a project management approach that works by breaking projects into short, iterative cycles called “sprints”. At its core, Agile is based on the assumption that circumstances change as a project develops. That’s why, in an Agile project, the planning, design, development, and testing cycles are never done. They continue to change as the project takes form. &mdash;[IMA](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)*  
 
  
-To mitigate problems that arise from change, Agile project managers adopt a number of best practices. These practices are divided into the following three groups: 
+To mitigate problems that arise from change, Agile project managers adopt many best practices. These practices are divided into the following three groups: 
 
 ### Process practices 
 
@@ -80,7 +80,7 @@ To mitigate problems that arise from change, Agile project managers adopt a numb
 - Analyze the product backlog for dependencies and risks 
 - Develop contingency plans  
 - Analyze and triage change requests
-- Determine the scope impact of change requests on current and planned work 
+- Determine the scope effect of change requests on current and planned work 
 - Assess the risks of accepting or rejecting the change 
 - Use a light change control form as needed 
 
@@ -90,7 +90,7 @@ To mitigate problems that arise from change, Agile project managers adopt a numb
 - Work to minimize accepting changes after the start of the sprint, while still adhering to Agile principles   
 - Keep all stakeholders and teams involved as changes occur  
 - Control scope changes and minimize scope creep  
-- Protect your team against "gold plating", a practice of making changes to a project that are outside of the original agreed-upon scope.  
+- Protect your team against "gold plating," a practice of making changes to a project that are outside of the original agreed-upon scope.  
 
 > [!NOTE]
 > *What is Scope creep? Scope creep occurs when the deliverables or features of a project expand from what was originally defined, without a commensurate change in additional time or budget.*  
@@ -98,7 +98,7 @@ To mitigate problems that arise from change, Agile project managers adopt a numb
 ### Questions to ask before accepting a change
 - Does it serve the sprint goal?    
 - Is there a clear business value for the change? 
-- Upon release, will the customer use the result of the scope change?
+- Upon release, do you plan to use the result of the scope change?
 - What is the urgency for the change request?
 - If new scope is added to the sprint backlog, is there something that can be removed? 
 
@@ -116,7 +116,7 @@ With any of these methods, you can generate a query to list work items involve i
 
 ### Change request form 
 
-To formally track change, you can define a change request work item type, similar to the one shown in the following image for the Capability Maturity Model Integration (CMMI) process.
+Define a change request work item type similar to the one shown in the following image for the Capability Maturity Model Integration (CMMI) process.
 
 > [!div class="mx-imgBorder"]  
 > ![Change request work item form.](media/manage-change/change-request-form.png) 
@@ -132,7 +132,7 @@ You can adopt this form or customize your own. You can also customize your backl
 
 ### Ensure acceptance criteria is well-defined
 
-Acceptance criteria defines what "done" means. It clearly describes the conditions that the team should use to verify whether a requirement or bug fix has been fully implemented. Typically, you want to capture these criteria within the work item. Clear acceptance criteria helps teams estimate work and develop tests to ensure the criteria has been met.  
+Acceptance criteria define what "done" means. It clearly describes the conditions that the team should use to verify whether a requirement or bug fix has been fully implemented. Typically, you want to capture these criteria within the work item. Clear acceptance criteria help teams estimate work and develop tests to ensure the criteria has been met.  
 
 You can specify acceptance criteria for individual requirements and for sprints. Shared understanding of acceptance criteria ensures that all team members understand the scope of work. 
 
@@ -173,7 +173,7 @@ Teams can monitor changes through the following methods:
 
 ### Work item queries 
 
-With queries you can find and triage a list of change management requests or work items tagged with a change management tag. 
+With queries, you can find and triage a list of change management requests or work items tagged with a change management tag. 
 
 
 ### Team velocity and unplanned work  
@@ -185,7 +185,7 @@ The team velocity chart provides several pieces of information. This chart shows
 
 ### Sprint burndown and scope creep 
 
-Another chart to review for scope creep is the sprint burndown chart. As shown in the following image, a number of work items were added after the start of the sprint.   
+Another chart to review for scope creep is the sprint burndown chart. As shown in the following image, many work items were added after the start of the sprint.   
 
 :::image type="content" source="media/manage-change/sprint-burndown-scope-increase.png" alt-text="Screenshot of Sprint burndown showing scope creep":::
 
@@ -211,7 +211,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Industry articles
 
-- [5 Implications for Change Management in an Agile World](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)
+- [Five Implications for Change Management in an Agile World](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)
 - [How to Create the Best Agile Change Management Process](https://www.mindville.com/blog/create-the-best-agile-change-management-process) 
 - [Managing Change Requests in Scrum](https://www.infoq.com/news/2008/12/change-requests-in-scrum/) 
 - [Identify And Avoid Project Scope Creep](https://thedigitalprojectmanager.com/scope-creep/)
@@ -235,7 +235,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Monitor and report on progress
 
-- [Triage work items](../boards/queries/triage-work-items.md)
 - [View or configure team velocity](../report/dashboards/team-velocity.md)
 - [Burndown guidance, scope management](../report/dashboards/burndown-guidance.md)
 - [Cumulative flow, lead time, and cycle time guidance](../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
@@ -250,4 +249,4 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Maintain specifications and share information 
 
 - [About Wikis, READMEs, and Markdown](../project/wiki/about-readme-wiki.md)
-- [Share information within work items and social tools](../boards/queries/share-plans.md)
+- [Send email with work item or print](../boards/work-items/email-work-items.md)

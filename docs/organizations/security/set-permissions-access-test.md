@@ -194,7 +194,6 @@ In this example, we grant members assigned to the Team Collection Admin group pe
 ## Related articles 
 
 - [Grant or restrict access](restrict-access.md)   
-- [Permissions and access for work tracking](permissions-access-work-tracking.md) 
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
 - [Permissions and groups reference](permissions.md) 
 - [Troubleshoot permissions](troubleshoot-permissions.md)

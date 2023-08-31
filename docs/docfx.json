@@ -10,7 +10,8 @@
                     "**/**.yml"],
         "exclude": [
           "artifacts/nuget/bootstrap-nuget.md",
-          "**/obj/**",
+          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
+           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
           "**/_shared/**",
@@ -23,8 +24,8 @@
       },
       {
         "files": [
-          "artifacts/nuget/bootstrap-nuget.md"
-        ],
+          "artifacts/nuget/bootstrap-nuget.md",
+          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md"        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",

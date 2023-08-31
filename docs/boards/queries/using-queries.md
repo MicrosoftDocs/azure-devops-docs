@@ -1,7 +1,7 @@
 ---
-title: Define a work item query with the Query Editor in Azure Boards
+title: Define a work item query in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to use queries and perform tasks like define a flat-list, clause, or hyperlink, and use a tree, direct link, hyperlink or logical expression. Also learn how to query across or within projects and view results in a dashboard. 
+description: Learn how to use queries and perform tasks like define a flat-list, clause, or hyperlink, and use a tree, direct link, hyperlink or logical expression. Also learn how to query across or within projects and view results in a dashboard, and best practices. 
 ms.custom: boards-queries, contperf-fy23, linked-from-support, cross-project 
 ms.service: azure-devops-boards
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
@@ -17,7 +17,7 @@ ms.date: 08/10/2023
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
-Work item queries generate lists of work items based on the filter criteria that you provide. You can save and share these managed queries with others.
+Work item queries generate lists of work items based on the filter criteria provided by you. You can save and share these managed queries with others.
 
 ::: moniker range=">= azure-devops-2020"
 You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
@@ -26,22 +26,10 @@ You can create queries from the web portal or from a supported client, such as V
 You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 ::: moniker-end
 
-#### [Browser](#tab/browser/) 
+Check out our recommended best practices, later in this article.
 
-:::image type="content" source="media/using-queries/query-editor.png" alt-text="Screenshot of Query Editor, web browser.":::
- 
-#### [Visual Studio](#tab/visual-studio/)
+[!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
-:::image type="content" source="media/using-queries/visual-studio-new-query-editor.png" alt-text="Screenshot fo Query Editor, Visual Studio.":::
-
-To define queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. 
-
-* * *
-
-If your queries take too long to return results, see the [Guidance to create high-performing queries](high-performing-queries.md).
- 
-For quick access to all query tasks, supported operators, and query examples, see [Query quick reference](query-index-quick-ref.md).  
- 
 ## Choose a query filter 
 
 From the Query Editor, you can select the filter to jump to an article with sample queries. 
@@ -68,7 +56,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [Compare fields](./query-field-value.md) 
       - [Key words](./titles-ids-descriptions.md)  
       - [Linked work items](./linking-attachments.md)  
-      - [Logical groupings](#andor-logical-expression)
+      - [Logical groupings](#use-andor-logical-expression)
       - [Query macros](./about-managed-queries.md#macros)  
       - [Tags](./add-tags-to-work-items.md#query)  
       - [Was Ever](./query-by-workflow-changes.md)  
@@ -79,7 +67,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [Compare fields](./query-field-value.md) 
       - [Key words](./titles-ids-descriptions.md)  
       - [Linked work items](./linking-attachments.md)  
-      - [Logical groupings](#andor-logical-expression)  
+      - [Logical groupings](#use-andor-logical-expression)  
       - [Query macros](./about-managed-queries.md#macros)  
       - [Tags](./add-tags-to-work-items.md#query)  
       - [Was Ever](./query-by-workflow-changes.md)  
@@ -126,34 +114,31 @@ Along with the query filters, you can [interactively apply filters to query resu
 :::row-end:::
 ---
 
-In addition to the filters that you use from the Query Editor, you can interactively filter a query result using the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** function. For more information, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
-
-[!INCLUDE [temp](../includes/prerequisites-queries.md)]
+You can also [interactively filter a query](../backlogs/filter-backlogs-boards-plans.md) using the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** function.
 
 ## Open Queries 
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
-
 <a id="flat-list" />
 
 ## Define a flat-list query
 
-You can start a fresh, new query from the **Queries** tab in the web portal or the **Work Items** tab in Team Explorer.  
+Start a new query from the **Queries** tab in the web portal or the **Work Items** tab in Team Explorer.  
 
 #### [Browser](#tab/browser/) 
 
-
 ::: moniker range=">= azure-devops-2019"  
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot to Add new query, new experience.](media/view-run-queries/new-query-new-exp.png)  
+Select **New query**.
+
+:::image type="content" source="media/view-run-queries/new-query-new-exp.png" alt-text="Screenshot to Add new query, new experience.":::
 
 The Query Editor displays with the following default settings: **Flat list of work items**, **Work Item Type=[Any]**, and **State=[Any]**. 
 
 :::image type="content" source="media/using-queries/new-query-web-portal.png" alt-text="Screenshot of Query Editor with flat list of work items selected."::: 
 
-You can modify the **Values** and [add or remove clauses](#define-a-clause). Or, change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
+Modify the **Values** and [add or remove clauses](#define-a-clause), or change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
@@ -162,7 +147,7 @@ You can modify the **Values** and [add or remove clauses](#define-a-clause). Or,
 
 The Query Editor displays with the following default settings: **Flat list of work items**, **Team Project=@Project** (the current project), **Work Item Type=[Any]**, and **State=[Any]**. 
 
-:::image type="content" source="media/using-queries/new-query-flat-list-tfs.png" alt-text="Screenshot of Query Editor with flat list of work items selected, TFS 2018 and earlier versions."::: 
+:::image type="content" source="media/using-queries/new-query-flat-list-tfs.png" alt-text="Screenshot of Query Editor with flat list of work items selected."::: 
 
 You can modify the **Values** and [add or remove clauses](#define-a-clause). Or, change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
 
@@ -173,17 +158,18 @@ You can modify the **Values** and [add or remove clauses](#define-a-clause). Or,
 Select **New Query** from the **Work Items** page. 
 
 :::image type="content" source="media/using-queries/new-query-visual-studio-2019.png" alt-text="Screenshot of Work Items, choose New Query."::: 
+
 The Query Editor displays with the following default settings: **Flat list (Default)**, **Team Project=current project**, **Work Item Type=[Any]**, and **State=[Any]**. 
 
 :::image type="content" source="media/using-queries/visual-studio-new-query-editor.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query."::: 
 
 You can modify the **Values** and [add or remove clauses](#define-a-clause). Or, change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies).
 
-* * *
+---
 
 ## Query across or within projects 
 
-New queries scope to the current project by default. However, you can create queries to find work items defined within the organization or project collection. All queries that you save, however, are saved under a specific project. 
+New queries scope to the current project by default. But, you can create queries to find work items defined within the organization or project collection. All queries that you save, however, get saved under a specific project. 
 
 #### [Browser](#tab/browser/) 
 
@@ -210,7 +196,7 @@ To list work items defined in two or more projects, change the clause for the **
 
 To query across all projects, delete the clause with the **Team Project** field. 
 
-* * *
+---
 
 ## Define a clause
 
@@ -256,7 +242,7 @@ When finished, choose :::image type="icon" source="../media/icons/run_query.png"
 
 [!INCLUDE [temp](../includes/tip-wiql-extension.md)]
 
-### Checklist for how to define a query clause
+### Checklist for defining a query clause
 
 1. In the first empty row, under the **Field** column heading, choose the down arrow to display the list of available fields, and choose an item in the list. For more information, see [Query Fields and Values](query-operators-variables.md#field-values).
 
@@ -289,7 +275,7 @@ Use the :::image type="icon" source="media/11.png" border="false"::: **Tree of W
 
 ::: moniker range="tfs-2018"  
 
-:::image type="content" source="media/view-run-queries/tree-query-view-tfs.png" alt-text="Screenshot of Query Results List showing a Tree Query, TFS 2018 view.":::
+:::image type="content" source="media/view-run-queries/tree-query-view-tfs.png" alt-text="Screenshot of Query Results List showing a Tree Query.":::
 
 ::: moniker-end  
 
@@ -339,17 +325,17 @@ Filter your first-tier list of work items by choosing one of these options:
 
 For more information about each link type, see [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md).
 
-## And/Or logical expression
+## Use and/or logical expression
 
-You specify **And** or **Or** to create logical expressions of your query clauses. Specify **And** to find work items that meet the criteria in both the current clause and the previous clause. Specify **Or** to find work items that meet the criterion in either the current clause or the previous clause.
+Specify `And` or `Or` to create logical expressions of your query clauses. Use `And` to find work items that meet the criteria in both the current clause and the previous clause. Use `Or` to find work items that meet the criterion in either the current clause or the previous clause.
 
 Add one new clause for each work item field to refine your search criteria. Add clauses to return only the set of work items you want. If you don't receive the results you expect from your query, refine it. You can add, remove, group, or ungroup query clauses to improve your query results.
 
-Group query clauses to operate as a single unit separate from the rest of the query. Grouping clauses is similar to putting parentheses around an expression in a mathematical equation or logic statement. When you group clauses, the **AND** or **OR** for the first clause in the group applies to the whole group.
+Group query clauses to operate as a single unit separate from the rest of the query. Grouping clauses is similar to putting parentheses around an expression in a mathematical equation or logic statement. When you group clauses, the `And` or `Or` for the first clause in the group applies to the whole group.
 
 ### Group clauses
 
-Grouped clauses operate as a single unit separate from the rest of the query. Grouping clauses is similar to putting parentheses around a mathematical equation or logic expression. The **And** or **Or** operator for the first clause in the group applies to the whole group.
+Grouped clauses operate as a single unit separate from the rest of the query. Grouping clauses is similar to putting parentheses around a mathematical equation or logic expression. The `And` or `Or` operator for the first clause in the group applies to the whole group.
 
 As the following examples show, the grouped clauses are translated to the corresponding logical expression.
 
@@ -368,8 +354,7 @@ These queries return work items that are type Bug and meet the following logical
 - **Query 2**: `AND (State=Active OR Assigned to @Me)`  
 - **Query 3**: `OR (State=Active AND Assigned to @Me)`  
 
-
-To group one or more clauses, select them and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
+To group one or more clauses, select them and then select the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Web portal, Query Editor, Group Selected Query Clauses.](media/view-run-queries/group-clauses.png)  
@@ -380,29 +365,28 @@ You can also group several grouped clauses. Check the boxes of each clause that'
 > ![Screenshot of Web portal, Query Editor, Group multiple query clauses.](media/using-queries/multiple-clauses.png)
 
 
-If your query results don't return expected results, follow these steps: 
+If your query results don't return expected results, do the following steps: 
 
 - Make sure that each clause is defined as you intended.  
-- Verify And/Or assignments to each clause. If your results contain more work items than expected, often an Or clause is present instead of an And clause.  
-- Determine if you need to group or change the grouping of the query clauses and the And/Or assignments of each grouped clause.  
+- Verify `And`/`Or` assignments to each clause. If your results contain more work items than expected, often an `Or` clause is present instead of an `And` clause.  
+- Determine if you need to group or change the grouping of the query clauses and the `And`/`Or` assignments of each grouped clause.  
 - Add more query clauses to refine your query filter criteria.  
-- Review the options available to specify [fields, operators, and values](query-operators-variables.md).  
+- Review the options available to specify [fields, operators, and values](query-operators-variables.md).
+- See [best practices](#limit-or-operators), later in this article.  
 
 <a id="ungroup-clause" />
 
 ### Ungroup a clause
 
-
 #### [Browser](#tab/browser/) 
 
 To ungroup a clause, select the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
-
 
 #### [Visual Studio](#tab/visual-studio/)
 
 To ungroup a clause, select the :::image type="icon" source="../media/icons/ungroup-clause-visual-studio.png" border="false"::: ungroup clauses icon for the grouped clause, Visual Studio. 
 
-* * *
+---
 
 ## View query results in a dashboard 
 
@@ -428,11 +412,11 @@ The following image illustrates a query results widget that displays the **Paren
 
 ::: moniker-end
 
+## Define a query as a hyperlink
+
 A query hyperlink uses the Work Item Query Language (WIQL), which resembles Transact-SQL. For more information, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
-
 > [!NOTE]    
-> Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
-
+> Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.   
 ::: moniker range="azure-devops"  
 
 ### Query hyperlink syntax for Azure DevOps Services
@@ -461,7 +445,7 @@ SELECT [System.ID], [System.Title]
 
 > [!NOTE]  
 > The WIQL length must not exceed 32K characters for Azure Boards queries.
-
+ 
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"  
@@ -490,6 +474,67 @@ SELECT [System.ID], [System.Title], [System.State]
 ```
 
 ::: moniker-end   
+
+## Best practices
+
+The following best practices apply to the following queries you can create:
+
+::: moniker range="azure-devops"
+- [Web portal queries](view-run-query.md)
+- [Work Item Query Language (WIQL) queries](wiql-syntax.md) 
+- [az boards query command line](view-run-query.md#run-a-query-from-the-command-line)
+- [REST API queries](/rest/api/azure/devops/wit/queries)
+::: moniker-end
+
+::: moniker range="< azure-devops"
+- [Web portal queries](view-run-query.md)
+- [Work Item Query Language (WIQL) queries](wiql-syntax.md) 
+- [REST API queries](/rest/api/azure/devops/wit/queries)
+::: moniker-end
+
+### Create focused, selective queries  
+
+Define a highly selective query by applying all filters that are necessary for your query. The more selective the query is, the smaller the set of results. The smaller the result set is, the more targeted and selective your query is. 
+
+### Use tags to categorize work items
+
+Use [work item tags](add-tags-to-work-items.md) to categorize your work items instead of a custom field. Queries that filter on tags usually perform faster over those queries that filter on string matches. 
+
+Unlike custom field matches or partial matches, a query with a `Tags Contains` operation doesn't require a complete scan of all work item tables. 
+
+### Use `Contains words` for string matches
+ 
+To filter on a string match, use the `Contains Words` instead of the `Contains` operator. The `Contains Words` operator runs a full-text search on the specified field, which tends to complete more quickly. 
+
+The `Contains` operator runs a table scan, which is a slower operation than the  `Contains Words` operator. It also consumes more CPU cycles. These CPU cycles can cause you to encounter rate limitations. For more information, see [Service limits and rate limits](../../user-guide/service-limits.md) and [Rate limits](../../integrate/concepts/rate-limits.md).
+ 
+### Specify small groups with the `In Group` operator 
+
+The `In Group` operator filters work items based on matches within a group of values. The group of values correspond to the values contained within a team, security group, or [work tracking category](../work-items/agile-glossary.md#categories). For example, you can create a query to find all work items that are assigned to any member of a team. Or, find all work items that belong to the requirements category (`Microsoft.RequirementCategory`). 
+
+When you filter on a group that contains a large number of members, your result set tends to be larger and nonselective.  Also, if a group corresponds to a large Azure Active Directory (Azure AD) group, the query generates a fairly large cost to resolve that group from Azure AD.  
+
+### Avoid use of negated operators 
+
+Negated operators&mdash;such as `<>, Not In, Not Under, Not In Group`&mdash;tend to generate nonselective queries and large result sets. 
+
+Only use negated operators when necessary. Always try to find alternatives first. For example, if **Field1** has values *A*, *B*, *C*, *D*; specify the `Field1 In A, B, C` clause, instead of the negated `Field1 <> D` clause.
+
+### Avoid string comparisons  
+
+Queries that contain string comparisons generate table scans that are inherently inefficient. Instead, we recommend you use tags or a specific custom field as alternatives, particularly when a query performs poorly. 
+
+### Limit `Or` operators
+
+Limit the number of `Or` operators defined in your query. Queries run better when fewer `Or` operators are used. Too many `Or` operators can make your query nonselective. If your query runs slowly, reorder the `Or` operator clause towards the top of the query clauses.  
+
+### Save your query 
+
+Due to internal optimizations, saved queries tend to perform better over unsaved queries. Always save your query when you plan to reuse it. Even for WIQL queries run through a REST API, save the WIQL through the web portal to make your [REST API calls](/rest/api/azure/devops/wit/queries), so they're less prone to future performance regressions. 
+
+### Run your query 
+
+Sometimes you need to run your query a few times to reach the right optimization plan. Make sure to save your query and run it up to 10 times over a 30-minute period. This way, the system can examine and seek out the optimization plan that's most appropriate for your query. 
 
 ## Related articles
 

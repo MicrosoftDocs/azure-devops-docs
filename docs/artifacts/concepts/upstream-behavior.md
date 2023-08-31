@@ -1,9 +1,9 @@
 ---
 title: Configure upstream behavior
-description: How to allow external package versions.
+description: How to use upstream behavior
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 05/26/2022
+ms.date: 08/22/2023
 ms.author: rabououn
 author: ramiMSFT
 monikerRange: '<= azure-devops'
@@ -13,83 +13,96 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With upstream sources, developers can use a single feed to publish and consume packages from Artifact feeds and public registries such as NuGet.org or npmjs.com. To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
+With Azure Artifacts upstream sources, developers gain the convenience of utilizing a unified feed to both publish and consume packages from Artifact feeds and popular public registries like NuGet.org or npmjs.com. Previously, Artifact feeds combined a list of available package versions from both the feed itself and all the configured upstream sources.
 
-:::image type="content" source="media/include-upstream-sources.png" alt-text="Include packages from common public sources checkbox":::
+:::image type="content" source="media/previous-behavior.svg" alt-text="An illustration showing the content of a feed.":::
 
-Previously, Artifact feeds combined a list of available package versions from the feed and all the upstream sources.
+Upstream behavior is a feature that enables developers to choose if they want to consume externally sourced package versions. It governs which packages are accessible from the public registries for specific packages.
 
-:::image type="content" source="media/previous-behavior.svg" alt-text="Previous upstream sources behavior":::
+Once upstream behavior is enabled, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
 
-Upstream behavior is a feature that enables developers to choose if they want to consume externally sourced package versions. Upstream behavior dictates which packages will be made available from the public registries for individual packages.
+This approach adds an extra layer of security by preventing potential exposure to malicious packages that might have infiltrated the public registries.
 
-When the upstream behavior is enabled, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
-
-This approach provides another layer of security by blocking the exposure to malicious packages that may infiltrate the public registries.
-
-Users will still be able to toggle off the upstream behavior setting and consume packages from the public registries if they choose to do so.
+However, users still have the option to deactivate the upstream behavior setting, allowing them to consume packages from the public registries if they prefer to do so.
 
 > [!NOTE]
-> The new behavior won't affect any package versions that are already in use. Those are stored in the feed's `@local` view.
+> The new behavior will not impact any package versions that are currently in use, as they are preserved within the feed's *@local* view.
 
 ## Applicable scenarios
 
-The next section shows a few common scenarios where the upstream behavior is triggered to block externally sourced package versions along with few other cases where no blockage to the public packages is needed.
+The following section illustrates various common scenarios where the upstream behavior is triggered to block externally sourced package versions, and other scenarios where there's no need to block access to public packages.
 
-## Public versions will be blocked
+### Public versions are blocked
 
-- **Private package version made public**: in this scenario, a team has a private package that was made public. The upstream behavior in this case will be triggered to block any new public versions (untrusted packages).
+* [Private package version made public](#private-package-version-made-public)
+* [Having both private and public packages](#having-both-private-and-public-packages)
 
-    :::image type="content" source="media\internal-to-public.svg" alt-text="Internal package version made public":::
+#### Private package version made public
 
-- **Having both private and public packages**: in this scenario, if a team already has both private and public packages, enabling the upstream behavior will result in blocking any new package versions from the public registry.
+In this scenario, a team has a private package that was made public. The upstream behavior in this case will be triggered to block any new public versions (untrusted packages).
 
-    :::image type="content" source="media\private-and-public-packages.svg" alt-text="both private and public packages":::
+:::image type="content" source="media\internal-to-public.svg" alt-text="An illustration showing an internal package version made public.":::
 
-## Public versions will not be blocked
+#### Having both private and public packages 
 
-- **All packages are private**: if all existing packages are private and the team won't be consuming any public packages, the new upstream behavior will have no effect on the team's workflow in this scenario.
+In this scenario, if a team uses a combination of private and public packages, enabling the upstream behavior blocks any new package versions from the public registry.
 
-    :::image type="content" source="media\only-private-packages.svg" alt-text="private packages only":::
+:::image type="content" source="media\private-and-public-packages.svg" alt-text="An illustration showing available private and public packages.":::
 
-- **All packages are public**: if all the packages consumed are public, whether it's from the public registry or any other open-source repositories, the new upstream behavior will have no effect on the team's workflow in this scenario.
+### Public versions won't be blocked
 
-    :::image type="content" source="media\public-packages-only.svg" alt-text="public packages only":::
+* [All packages are private](#all-packages-are-private)
+* [All packages are public](#all-packages-are-public)
+* [Public package made private](#public-package-made-private)
 
-- **Public package made private**: if a public package is switched to a private package, the new upstream behavior will have no effect on the team's workflow in this scenario.
+#### All packages are private*
 
-    :::image type="content" source="media\public-to-internal.svg" alt-text="switched from public to private":::
+If all existing packages are private, and the team has no plans to use any public packages, the new upstream behavior will have no effect on the team's workflow in this scenario.
+
+:::image type="content" source="media\only-private-packages.svg" alt-text="An illustration showing feed with only private packages.":::
+
+#### All packages are public
+
+In this scenario, if the team exclusively consumes public packages, whether from the public registry or other open-source repositories, the new upstream behavior won't impact their workflow in any way.
+
+:::image type="content" source="media\public-packages-only.svg" alt-text="An illustration showing feed with only public packages.":::
+
+#### Public package made private
+
+In this situation, when a public package is converted to a private package, the new upstream behavior won't influence the team's workflow in any way.
+
+:::image type="content" source="media\public-to-internal.svg" alt-text="An illustration showing a package converted from public to private.":::
 
 ## Allow external versions
 
 > [!NOTE]
 > You must be a feed **Owner** or a feed **Administrator** to allow externally sourced versions. See [Feed permissions](../feeds/feed-permissions.md) for more details.
 
-1. Select **Artifacts**, and then select your feed.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
 1. Select your package, and then select the ellipsis button for more options. Select **Allow externally-sourced versions**.
 
-    :::image type="content" source="media\external-versions.png" alt-text="A screenshot showing how to set up external versions.":::
+    :::image type="content" source="media\allow-external-versions.png" alt-text="A screenshot showing how to allow externally sourced versions.":::
 
 1. Select the toggle button to allow external versions. Select **Close** when you're done.
 
-    :::image type="content" source="media\allow-external-versions.png" alt-text="A screenshot showing how to allow external versions.":::
+    :::image type="content" source="media\enable-external-versions.png" alt-text="A screenshot showing how to enable external versions.":::
 
 ## Allow external versions using the REST API
 
-Aside from using the feed's user interface, you can also configure the upstream behavior using the Azure DevOps Services REST API. Select the appropriate tab and find the links to the REST API docs.
-
 #### [NuGet](#tab/nuget/)
 
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/get-upstreaming-behavior)
 - [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/set-upstreaming-behavior)
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/get-upstreaming-behavior)
 
 #### [npm](#tab/npm/)
 
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-package-upstreaming-behavior)
-- [Get scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-scoped-package-upstreaming-behavior)
 - [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-upstreaming-behavior)
-- [Set scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-scoped-upstreaming-behavior)
+- [Set scoped upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-scoped-upstreaming-behavior)
+- [Get package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-package-upstreaming-behavior)
+- [Get scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-scoped-package-upstreaming-behavior)
 
 #### [Python](#tab/python/)
 
@@ -148,7 +161,7 @@ Run the following command to retrieve the upstream behavior state of your packag
 
 #### [Set upstreaming behavior](#tab/set/)
 
-Run the following commands to allow externally sourced versions for your package. This will set `versionsFromExternalUpstreams` to `AllowExternalVersions`, and will use the `$url` and `$headers` variables to query the REST API.
+Run the following commands to allow externally sourced versions for your package. This sets `versionsFromExternalUpstreams` to `AllowExternalVersions`, and uses the `$url` and `$headers` variables to query the REST API.
 
 ```PowerShell
 $body = '{"versionsFromExternalUpstreams": "AllowExternalVersions"}'

@@ -65,7 +65,7 @@ Use this index to quickly access concepts and tasks related to work items and in
       - [New Boards Hub](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview)  
       - [New work item widget](../../report/dashboards/widget-catalog.md#new-work-item)  
       - [On-premises XML process model](../../reference/on-premises-xml-process-model.md)  
-      - [Permissions and access](../../organizations/security/permissions-access-work-tracking.md)  
+      - [Set permissions and access](../../organizations/security/set-permissions-access-work-tracking.md)  
       - [Process guidance](guidance/choose-process.md)  
       - [Process models](../../reference/customize-work.md)  
       <br/>
@@ -73,7 +73,6 @@ Use this index to quickly access concepts and tasks related to work items and in
       - [Queries](../queries/about-managed-queries.md)  
       - [Recycle bin](../backlogs/remove-delete-work-items.md#restore)  
       - [Remote linking](../backlogs/add-link.md#remote-link)  
-      - [Rich text fields](../queries/share-plans.md#rich-text-fields)  
       - [Rollup](../backlogs/display-rollup.md)  
       - [Scrum process](guidance/scrum-process.md)  
       - [State categories](workflow-and-state-categories.md)  
@@ -81,7 +80,6 @@ Use this index to quickly access concepts and tasks related to work items and in
       ::: moniker range="azure-devops-2020"
       - [Queries](../queries/about-managed-queries.md)  
       - [Recycle bin](../backlogs/remove-delete-work-items.md#restore)  
-      - [Rich text fields](../queries/share-plans.md#rich-text-fields)  
       - [Rollup](../backlogs/display-rollup.md)  
       - [Scrum process](guidance/scrum-process.md)  
       - [State categories](workflow-and-state-categories.md)  
@@ -89,8 +87,7 @@ Use this index to quickly access concepts and tasks related to work items and in
       ::: moniker range="< azure-devops-2020"
       - [Queries](../queries/about-managed-queries.md)  
       - [Recycle bin](../backlogs/remove-delete-work-items.md#restore)  
-      - [Requirements](../../cross-service/manage-requirements.md)  
-      - [Rich text fields](../queries/share-plans.md#rich-text-fields)  
+      - [Requirements](../../cross-service/manage-requirements.md)    
       - [Rollup](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
       - [Scrum process](guidance/scrum-process.md)  
       - [State categories](workflow-and-state-categories.md)  
@@ -105,7 +102,7 @@ Use this index to quickly access concepts and tasks related to work items and in
       <br/> 
       - [Work item fields](guidance/work-item-field.md)  
       - [Work item form](about-work-items.md#work-item-form)  
-      - [Work item form controls](work-item-form-controls.md)  
+      - [Work item form controls](about-work-items.md#work-item-form-controls)  
       - [Work item templates](about-work-items.md#templates)  
       - [Work item types](about-work-items.md#work-item-types-wits)
       - [Work tracking limits](../../organizations/settings/work/object-limits.md)
@@ -133,8 +130,6 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Add to discussion](../backlogs/add-work-items.md#capture-comments-in-the-discussion-section)    
       - [Apply a template to a work item](../backlogs/work-item-template.md)  
       - [Assign work to a team member](about-work-items.md#assign-work-items)  
-      - [Attach files](../queries/share-plans.md#attach-files)  
-      <br/>
       - [Bulk add or remove tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)  
       - [Bulk modify work items (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md)  
       - [Bulk modify work items (Web)](../backlogs/bulk-modify-work-items.md)  
@@ -143,9 +138,8 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Change the link type](../backlogs/add-link.md#change-link-type)
       - [Change work item type](../backlogs/move-change-type.md#change-the-work-item-type)  
       - [Copy or clone a work item](../backlogs/copy-clone-work-items.md)  
-      - [Copy work item URL](work-item-form-controls.md#copy-the-url)  
-      - [Copy URL of attachment](../queries/share-plans.md#copy-url-attached-file)       
-      - [Copy list of work items](../backlogs/copy-list.md)  
+      - [Copy work item URL](about-work-items.md#copy-the-url)       
+      - [Copy list of work items](../backlogs/copy-clone-work-items.md#copy-a-list-of-work-items)  
       - [Create a branch](../backlogs/connect-work-items-to-git-dev-ops.md)  
       - [Create a work tracking chart](../../report/dashboards/charts.md)  
       <br/>
@@ -164,7 +158,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       ::: moniker-end
 
 
-      - [Email work item list](email-work-items.md)  
+      - [Send email of work item list](email-work-items.md)  
       - [Export a work item list](email-work-items.md#export)  
    :::column-end:::
    :::column span="1":::
@@ -201,12 +195,11 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
       - [Reassign work items](../backlogs/bulk-modify-work-items.md#reassign-work-items)
       - [Remove work items](../backlogs/remove-delete-work-items.md#remove-work-items)  
-      - [Request feedback ](/previous-versions/azure/devops/project/feedback/get-feedback)  
+      - [Request feedback](/previous-versions/azure/devops/project/feedback/get-feedback)  
       - [Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)  
       <br/>
-      - [Start storyboarding ](../queries/share-plans.md#storyboard)  
+      - [Start storyboarding](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint)
       - [Track dependencies](../plans/track-dependencies.md)  
-      - [Triage work items](../queries/triage-work-items.md)  
       <br/>
       - [Update status of tasks (Taskboard)](../sprints/task-board.md)  
       - [Update status of work items (Kanban board)](../boards/kanban-quickstart.md)  

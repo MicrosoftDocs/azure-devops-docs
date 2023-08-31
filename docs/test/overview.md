@@ -256,7 +256,7 @@ to help your developers reproduce the issues. To learn more, see [Run tests for 
 
 ### User acceptance testing 
 
-User acceptance testing (UAT) helps ensure teams deliver the the value requested by customers. You can create UAT test plans and suites, invite several testers to execute these tests, and monitor test progress and results using lightweight charts. To learn how, see [User acceptance testing](user-acceptance-testing.md).
+User acceptance testing (UAT) helps ensure teams deliver the value requested by customers. You can create UAT test plans and suites, invite several testers to execute these tests, and monitor test progress and results using lightweight charts. To learn how, see [User acceptance testing](user-acceptance-testing.md).
 
 ![Assigning testers to run all tests](media/overview/assign-testers.png)
 
@@ -592,7 +592,6 @@ tcm run /execute
 - [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 - [About requesting and providing feedback](../project/feedback/index.md)
 - [Cross-service integration and collaboration overview](../cross-service/cross-service-overview.md)
-- [Manage a virtual machine in Azure DevTest Labs](../pipelines/apps/cd/azure/deploy-provision-devtest-lab.md) 
 - [About pipeline tests](../pipelines/test/test-glossary.md)
 
 ## Additional resources

@@ -4,8 +4,8 @@ description: Ensure artifacts adhere to custom policies
 ms.topic: conceptual
 ms.assetid: C7E2BE58-2B01-414D-9A3A-67FA68637B51
 ms.manager: shashban
-ms.author: shashban
-author: shashankbansal
+ms.author: sandrica
+author: silviuandrica
 ms.date: 11/05/2019
 monikerRange: 'azure-devops'
 ---

@@ -16,9 +16,6 @@ Learn how to set up an Azure DevOps pipeline for multi-virtual machine deploymen
 
 Use the instructions in this article for any app that publishes a web deployment package.
 
-> [!NOTE]
-> If you want to deploy your application to a Linux virtual machine using the classic editor, see [Deploy web apps to Linux virtual machines (VMs)](../apps/cd/deploy-linuxvm-deploygroups.md).
-
 ## Prerequisites
 
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
