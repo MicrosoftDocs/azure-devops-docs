@@ -10,8 +10,8 @@ ms.date: 8/31/2023
 
 ## Features
 
-[!INCLUDE [sprint-226-update-links](../includes/repos/sprint-224-update-links.md)]
+[!INCLUDE [sprint-226-update-links](../includes/repos/sprint-226-update-links.md)]
 
-[!INCLUDE [sprint-226-update](../includes/repos/sprint-224-update.md)]
+[!INCLUDE [sprint-226-update](../includes/repos/sprint-226-update.md)]
 
 [!INCLUDE [nextsteps](../includes/nextsteps.md)]
