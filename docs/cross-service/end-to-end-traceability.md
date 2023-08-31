@@ -99,7 +99,7 @@ After you define a pipeline to build and release the code changes, you can track
 
 #### Deployment and Development controls 
 
-When you open the work item form, you can see the stages the requirement has been deployed to, and drill down for greater details by choosing the links. Under the **Development** section, you can open the branch ,commit, or pull requests that have been linked to the requirement.
+When you open the work item form, you can see the stages the requirement has been deployed to, and drill down for greater details by choosing the links. Under the **Development** section, you can open the branch, commit, or pull requests that have been linked to the requirement.
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Deployment control, Release Settings Stages.](/azure/devops/boards/work-items/media/deployments-control/deployments-control-1.png)
@@ -201,7 +201,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 ### Linking  
 
-- [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 - [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 - [Drive Git development from a work item](../boards/backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)

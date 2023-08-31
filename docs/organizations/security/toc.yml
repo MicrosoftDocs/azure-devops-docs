@@ -178,9 +178,6 @@
       displayName: password, user, name, token, safety
 - name: Secure Azure Boards
   items:
-  - name: Default Azure Boards permissions
-    href: permissions-access-work-tracking.md
-    displayName: area paths, iteration paths, test, process
   - name: Set work tracking & plan permissions 
     href: set-permissions-access-work-tracking.md
     displayName: area paths, iteration paths, test, process

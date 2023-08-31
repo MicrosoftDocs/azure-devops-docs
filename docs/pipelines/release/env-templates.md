@@ -73,4 +73,3 @@ To update a stage template, delete the existing one from the list of templates, 
 
 - [Deploy pull request Artifacts ](deploy-pull-request-builds.md).
 - [Deploy from multiple branches](deploy-multiple-branches.md).
-- [View release progress and test summary](visualize-release-test-progress.md).

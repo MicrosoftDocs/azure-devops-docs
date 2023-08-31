@@ -22,7 +22,7 @@ Each view supports the following tasks:
 
 | **Default experience**|**Legacy experience**|
 |-----------------------|---------------------| 
-|- [View and add work items](./view-add-work-items.md)|- [Add work items](../backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../queries/using-queries.md)<br/>- [Organize query folders and set query permissions](../queries/set-query-permissions.md)<br/>- [Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Email query results list using Outlook](../queries/share-plans.md)<br/>- [Create reports from query in Excel](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)<br/>(on-premises Azure DevOps Server only)</li></ul>|
+|- [View and add work items](./view-add-work-items.md)|- [Add work items](../backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../queries/using-queries.md)<br/>- [Organize query folders and set query permissions](../queries/set-query-permissions.md)<br/>- [Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Send email of query results list using Outlook](../work-items/email-work-items.md)<br/>- [Create reports from query in Excel](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)<br/>(on-premises Azure DevOps Server only)</li></ul>|
  
 > [!NOTE]
 > If you want to quickly access a list of work items based on their assignment to you, following, mentioned, or recent updates; then use the new default experience. However, if you rely on accessing queries from Team Explorer, then we recommend that you set your Landing page to the legacy option. 

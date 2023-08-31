@@ -390,7 +390,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Dependency management 
 
 - [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md) 
-- [Triage work items](../boards/queries/triage-work-items.md) 
 
 #### Milestone planning 
 
@@ -407,7 +406,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Maintain specifications and share information 
 
 - [About Wikis, READMEs, and Markdown](../project/wiki/about-readme-wiki.md)
-- [Share information within work items and social tools](../boards/queries/share-plans.md)
+- [Send email with work item or print](../boards/work-items/email-work-items.md)
 
 
 #### Notifications

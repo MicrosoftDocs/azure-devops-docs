@@ -108,7 +108,7 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 
 	![Change work item type dialog](media/move-change-delete/change-work-item-type-dialog.png)    
 
-	Comments are automatically added to the [**Discussion** control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the **History** control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
+	Comments are automatically added to the **Discussion** and an entry gets made to the **History**. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
 3. Save the work item(s) to complete the change.  
  
@@ -150,7 +150,7 @@ Note the following:
 	> [!NOTE]
 	> Child work items are not moved. They remain in the origin project, but the Parent-Child links remain in place.
 
-	Comments are automatically added to the [**Discussion** control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the **History** control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
+	Comments are automatically added to the **Discussion** and an entry gets made to the **History**. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
 
 ## Related articles   

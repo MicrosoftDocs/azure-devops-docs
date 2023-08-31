@@ -3,8 +3,8 @@ title: Push an image
 description: Push container images
 ms.topic: conceptual
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
-ms.author: atulmal
-author: azooinmyluggage
+ms.author: ericvan
+author: geekzter
 ms.date: 10/31/2022
 monikerRange: 'azure-devops'
 ---

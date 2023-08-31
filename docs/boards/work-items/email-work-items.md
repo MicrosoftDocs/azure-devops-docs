@@ -1,7 +1,7 @@
 ---
-title: Email or print user stories and other work items
+title: Send an email of work items or print
 titleSuffix: Azure Boards
-description: Learn how to email or print work items to share information in Azure Boards, Azure DevOps, and Visual Studio Team Explorer.
+description: Learn how to send an email with work items, or print work items to share information in Azure Boards, Azure DevOps, and Visual Studio Team Explorer.
 ms.custom: work-items, contperf-fy23
 ms.service: azure-devops-boards
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
@@ -9,11 +9,11 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/16/2022
+ms.date: 08/21/2023
 ---
 
 
-# Email or print user stories, bugs, and other work items 
+# Send an email of work items or print
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)] 
@@ -136,7 +136,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 #### [Web portal](#tab/browser/)
 
-**From the web portal**, open the work item, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list appears in a formatted table. 
+**From the web portal**, open the work item, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list appear in a formatted table. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of work item form, context menu, Email work items option.](media/email/email-work-item.png)   
@@ -224,7 +224,7 @@ With this option, you can copy an HTML formatted table of selected items. You ca
 
 ## Print items  
 
-To print work item details, open a query in Visual Studio that contains the work item(s) you want to print, and select or highlight those items that you want to print. Then, choose the **Print** option from the context menu.   
+Open a query in Visual Studio that contains a work item that you want to print, select or highlight those items, and then select the **Print** option from the context menu.   
 
 > [!IMPORTANT]  
 > To print work items in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
@@ -304,7 +304,7 @@ You may find other ways to share information by exporting work items to other ap
 ::: moniker range="azure-devops"
 
 - [Use templates to add and update work items](../backlogs/work-item-template.md) 
-- [Share information in work items and social tools](../queries/share-plans.md) 
+- [Send email with work item](../work-items/email-work-items.md)
 - [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
 
 ::: moniker-end
@@ -312,7 +312,7 @@ You may find other ways to share information by exporting work items to other ap
 ::: moniker range="< azure-devops"
 
 - [Use templates to add and update work items](../backlogs/work-item-template.md) 
-- [Share information in work items and social tools](../queries/share-plans.md) 
+- [Send email with work item](../work-items/email-work-items.md)
 - [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
 - [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)
 

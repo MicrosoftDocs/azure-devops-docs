@@ -81,7 +81,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 > | **Board**    | [Switch to Kanban board view](kanban-quickstart.md)            |  
 > | ![Kanban filter icon](../media/icons/kanban-filter-icon.png) | [Filter by keywords, tags, or fields](../backlogs/filter-backlogs-boards-plans.md)     | 
 > | ![Live updates icon](../media/icons/live-updates-icon.png)  | [Enable live updates](kanban-quickstart.md#enable-live-updates)  |
-> | ![Settings icon](../media/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../../boards/boards/customize-cards.md)  &#124; [Card reordering](../../boards/boards/customize-cards.md#reorder-cards) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../../organizations/settings/select-backlog-navigation-levels.md) &#124; [Working days](../../organizations/settings/set-working-days.md) &#124; [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)   |
+> | ![Settings icon](../media/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../../boards/boards/customize-cards.md)  &#124; [Card reordering](../../boards/boards/customize-cards.md#reorder-cards) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../../organizations/settings/select-backlog-navigation-levels.md) &#124; [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)   |
 > | ![full screen icon](../media/icons/full-screen-icon.png) / ![exit full screen icon](../media/icons/exit-full-screen-icon.png) | Enter or exit full screen mode      |  
 
 ### Open keyboard shortcuts
@@ -160,7 +160,7 @@ For more information, see [Manage columns](add-columns.md).
 
 As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. 
 
-For more information about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
+For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
 ## Customize your project and board inheritance
 

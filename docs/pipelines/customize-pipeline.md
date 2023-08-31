@@ -7,7 +7,7 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 01/30/2023
+ms.date: 08/17/2023
 monikerRange: ">= azure-devops-2019"
 ---
 
@@ -28,7 +28,7 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
 Navigate to the **Pipelines** page in Azure Pipelines, select the pipeline you created, and choose **Edit** in the context menu of the pipeline to open the YAML editor for the pipeline. 
 
 > [!NOTE]
-> For instructions on how to view and manage your pipelines in the Azure DevOps portal, see [Navigating pipelines](get-started/multi-stage-pipelines-experience.md).
+> For instructions on how to view and manage your pipelines in the Azure DevOps portal, see [View and manage your pipelines](create-first-pipeline.md#view-and-manage-your-pipelines).
 
 Examine the contents of the YAML file.
 

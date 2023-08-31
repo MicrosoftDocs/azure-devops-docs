@@ -139,7 +139,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 	In the **Days off for** dialog, select the start and end days during the sprint that the team member or team will take off. 
 
 	> [!NOTE]
-	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only have to indicate planned days off for the team. You set weekend days or other recurring days off under your team's [Settings, Working days](../../organizations/settings/set-working-days.md) page. 
+	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only have to indicate planned days off for the team. For more information, see [Set capacity for the team and team members](../../boards/sprints/set-capacity.md#set-capacity-for-the-team-and-team-members). 
 
 3. Now, set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned. 
 
@@ -167,7 +167,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 	In the Days off for the entire team dialog, select the start and end days during the sprint that the team will take off. 
 
 	> [!NOTE]
-	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's Settings, [Working days](../../organizations/settings/set-working-days.md) page.  
+	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's settings.
 
 4. Now, set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned. 
 

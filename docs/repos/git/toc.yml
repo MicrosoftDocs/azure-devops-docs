@@ -14,7 +14,7 @@
     href: clone.md
   - name: Import repo
     href: import-git-repository.md
-  - name: Import a repo from TFVC
+  - name: Import and migrate from TFVC
     href: import-from-TFVC.md
   - name: Use Visual Studio with Git
     href: ../tfvc/use-visual-studio-git.md
@@ -157,8 +157,8 @@
     href: git-log-history-simplification.md
 - name: Cross-service operations
   items:
-  - name: Configure repos to link to work items
-    href: configure-repos-work-tracking.md
+  - name: Cross-service overview
+    href: ../../cross-service/cross-service-overview.md
   - name: Auto complete work items with pull requests
     href: ../../boards/work-items/auto-complete-work-items-pull-requests.md?toc=/azure/devops/repos/toc.json
   - name: Drive Git development from a work item
