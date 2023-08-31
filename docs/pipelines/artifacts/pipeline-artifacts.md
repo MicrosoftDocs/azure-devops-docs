@@ -353,15 +353,15 @@ When migrating from build artifacts to pipeline artifacts:
 - task: PublishPipelineArtifact@1
   displayName: 'Publish'
   inputs:
-    targetPath: $(Build.ArtifactStagingDirectory)/**
+    targetPath: $(Pipeline.Workspace)
     ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
-        artifactName: 'prod'
+        artifact: 'prod'
     ${{ else }}:
-        artifactName: 'dev'
-    artifactType: 'pipeline'
+        artifact: 'dev'
+    publishLocation: 'pipeline'
 ```
 
-- **targetPath**: The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include variables, but wildcards are not supported.
+- **targetPath**: The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](../build/variables.md), but wildcards are not supported. Default value: $(Pipeline.Workspace).
 
 - **artifactName**: Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.
 
