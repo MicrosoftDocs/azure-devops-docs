@@ -394,35 +394,35 @@
     - name: Azure Databricks
       items:
        - name: Data pipeline overview
-        displayName: data science, machine learning
-        href: apps/cd/azure/cicd-data-overview.md
+         displayName: data science, machine learning
+         href: apps/cd/azure/cicd-data-overview.md
        - name: Build a data pipeline
-        href: apps/cd/azure/build-data-pipeline.md
+         href: apps/cd/azure/build-data-pipeline.md
     - name: Azure Machine Learning
       href: /azure/machine-learning/how-to-devops-machine-learning
     - name: Azure Databases
       items:
        - name: Azure SQL database
-        href: targets/azure-sqldb.md
+         href: targets/azure-sqldb.md
        - name: Azure MySQL database
-        href: /azure/mysql/single-server/azure-pipelines-mysql-deploy
+         href: /azure/mysql/single-server/azure-pipelines-mysql-deploy
     - name: Azure Virtual Machine Scale Set
       items:
        - name: Deploy a virtual machine scale set
-        displayName: vmss, custom image
-        href: apps/cd/azure/deploy-virtual-scale-set-java.md
+         displayName: vmss, custom image
+         href: apps/cd/azure/deploy-virtual-scale-set-java.md
     - name: Azure Stack
       href: targets/azure-stack.md
     - name: Azure Container Registry
       items:
        - name: Build and push to Azure Container Registry with a Docker template
-        href: ecosystems/containers/acr-template.md
+         href: ecosystems/containers/acr-template.md
        - name: Build and push to Azure Container Registry - Managed Service Identity
-        href: ecosystems/containers/publish-to-acr.md
+         href: ecosystems/containers/publish-to-acr.md
     - name: Azure Kubernetes Service
       items:
        - name: Build and deploy to Azure Kubernetes Service
-        href: /azure/aks/devops-pipeline
+         href: /azure/aks/devops-pipeline
     - name: Azure Policy Compliance (Classic)
       displayName: policy, compliance
       href: /azure/governance/policy/tutorials/policy-devops-pipelines
