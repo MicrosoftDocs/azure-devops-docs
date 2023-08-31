@@ -295,8 +295,8 @@ stages:
     - task: Npm@1
       inputs:
         command: 'install'
-- template: templates/stages1.yml
-- template: templates/stages2.yml
+- template: templates/stages1.yml # Template reference
+- template: templates/stages2.yml # Template reference
 ```
 
 
@@ -526,7 +526,7 @@ You can put the template in a core repo and then refer to it from each of your a
 # File: common.yml
 parameters:
 - name: 'vmImage'
-  default: 'ubuntu 16.04'
+  default: 'ubuntu-22.04'
   type: string
 
 jobs:
