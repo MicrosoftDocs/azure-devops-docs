@@ -62,10 +62,6 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2023 through Augus
 
 - [Manage test failure type](/azure/devops/test/manage-test-failure-type)
 
-## GitHub issue content updates
-
-Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-08-01..2023-08-31).
-
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
