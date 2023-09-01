@@ -202,13 +202,38 @@ Next, create the Dockerfile.
     ```
 
 4. Save the following content to `~/dockeragent/Dockerfile`:
+
+    * For Alpine:
+      ```Dockerfile
+      FROM alpine
+
+      RUN apk update
+      RUN apk upgrade
+      RUN apk add bash curl git icu-libs jq
+
+      ENV TARGETARCH="linux-musl-x64"
+
+      WORKDIR /azp/
+
+      COPY ./start.sh ./
+      RUN chmod +x ./start.sh
+
+      ENTRYPOINT ./start.sh
+      ```
+
     * For Ubuntu 20.04:
       ```Dockerfile
       FROM ubuntu:20.04
-      RUN DEBIAN_FRONTEND=noninteractive apt-get update
-      RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 
-      RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+      # To make it easier for build and release pipelines to run apt-get,
+      # configure apt to not require confirmation (assume the -y argument by default)
+      ENV DEBIAN_FRONTEND=noninteractive
+      RUN echo "APT::Get::Assume-Yes \"true\";" > /etc/apt/apt.conf.d/90assumeyes
+
+      RUN apt-get update
+      RUN apt-get upgrade -y
+
+      RUN apt-get install -y -qq --no-install-recommends \
           apt-transport-https \
           apt-utils \
           ca-certificates \
@@ -216,57 +241,23 @@ Next, create the Dockerfile.
           git \
           iputils-ping \
           jq \
+          libicu66 \
           lsb-release \
-          software-properties-common \
-          libicu66
+          software-properties-common
 
-      RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+      RUN curl -LsS https://aka.ms/InstallAzureCLIDeb | bash
 
-      # Can be 'linux-x64', 'linux-arm64', 'linux-arm', 'rhel.6-x64'.
-      ENV TARGETARCH=linux-x64
+      # Also can be "linux-arm", "linux-arm64".
+      ENV TARGETARCH="linux-x64"
 
-      WORKDIR /azp
+      WORKDIR /azp/
 
-      COPY ./start.sh .
-      RUN chmod +x start.sh
+      COPY ./start.sh ./
+      RUN chmod +x ./start.sh
 
-      ENTRYPOINT [ "./start.sh" ]
+      ENTRYPOINT ./start.sh
       ```
-    * For Ubuntu 18.04:
-      ```Dockerfile
-      FROM ubuntu:18.04
 
-      # To make it easier for build and release pipelines to run apt-get,
-      # configure apt to not require confirmation (assume the -y argument by default)
-      ENV DEBIAN_FRONTEND=noninteractive
-      RUN echo "APT::Get::Assume-Yes \"true\";" > /etc/apt/apt.conf.d/90assumeyes
-
-      RUN apt-get update && apt-get install -y --no-install-recommends \
-          ca-certificates \
-          curl \
-          jq \
-          git \
-          iputils-ping \
-          libcurl4 \
-          libicu60 \
-          libunwind8 \
-          netcat \
-          libssl1.0 \
-        && rm -rf /var/lib/apt/lists/*
-
-      RUN curl -LsS https://aka.ms/InstallAzureCLIDeb | bash \
-        && rm -rf /var/lib/apt/lists/*
-
-      # Can be 'linux-x64', 'linux-arm64', 'linux-arm', 'rhel.6-x64'.
-      ENV TARGETARCH=linux-x64
-
-      WORKDIR /azp
-
-      COPY ./start.sh .
-      RUN chmod +x start.sh
-
-      ENTRYPOINT ["./start.sh"]
-      ```
     > [!NOTE]
     > Tasks might depend on executables that your container is expected to provide.
     > For instance, you must add the `zip` and `unzip` packages
