@@ -13,6 +13,7 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2023 through Augus
 ### Updated articles
 
 - [Set work tracking permissions](/azure/devops/organizations/security/set-permissions-access-work-tracking)
+- [Find or change your organization geography](/azure/devops/organizations/accounts/change-organization-location)
 - [Change a project process from Basic to Agile](/azure/devops/organizations/settings/work/change-process-basic-to-agile)
 - [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url)
 
@@ -31,6 +32,7 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2023 through Augus
 ### Updated articles
 
 - [About work items and work item types](/azure/devops/boards/work-items/about-work-items)
+- [Send an email of work items or print](/azure/devops/boards/work-items/email-work-items)
 - [Define a work item query in Azure Boards](/azure/devops/boards/queries/using-queries)
 - [Use backlogs to manage projects](/azure/devops/boards/backlogs/backlogs-overview)
 - [Define features and epics, organize your backlog](/azure/devops/boards/backlogs/define-features-epics)
@@ -45,10 +47,16 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2023 through Augus
 
 ### Updated articles
 
+- [Publish and download pipeline Artifacts](/azure/devops/pipelines/artifacts/pipeline-artifacts)
+- [Publish Pipeline Artifacts](/azure/devops/pipelines/publish-pipeline-artifact)
 - [Use Azure Key Vault secrets in your Pipeline](/azure/devops/pipelines/release/key-vault-in-own-project)
+- [Create your Azure Pipelines ecosystem](/azure/devops/pipelines/ecosystems/ecosystems)
+- [Define variables](/azure/devops/pipelines/process/variables)
 - [Azure Pipelines agents](/azure/devops/pipelines/agents/agents)
+- [Build TFVC repositories](/azure/devops/pipelines/repos/tfvc)
 - [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline)
 - [Manage service connections](/azure/devops/pipelines/library/service-endpoints)
+- [Configure run or build numbers](/azure/devops/pipelines/process/run-number)
 
 ## Azure Repos
 
@@ -61,10 +69,6 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2023 through Augus
 ### New articles
 
 - [Manage test failure type](/azure/devops/test/manage-test-failure-type)
-
-## GitHub issue content updates
-
-Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-08-01..2023-08-31).
 
 ## Community contributors
 
