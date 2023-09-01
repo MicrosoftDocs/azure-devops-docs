@@ -485,9 +485,6 @@
   - name: Restore NuGet packages
     displayName: nuget, package, restore
     href: packages/nuget-restore.md
-  - name: Publish NuGet packages with Jenkins
-    displayName: nuget, package, publish, jenkins
-    href: packages/jenkins.md
   - name: Publish NuGet packages to NuGet.org (Classic/YAML)
     displayName: publish, nuget, package
     href: artifacts/publish-public-registry.md
