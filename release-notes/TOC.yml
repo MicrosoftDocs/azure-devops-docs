@@ -853,11 +853,11 @@
   items:
   - name: What's new
     href: docswhatsnew/index.yml
-  - name: July 2023
+  - name: August 2023
     href: docswhatsnew/azure-devops-docs-whats-new.md
+  - name: July 2023
+    href: docswhatsnew/azure-devops-docs-2023-07.md
   - name: June 2023
     href: docswhatsnew/azure-devops-docs-2023-06.md
-  - name: May 2023
-    href: docswhatsnew/azure-devops-docs-2023-05.md
 - name: Subscribe to updates
   href: https://azure.microsoft.com/updates/?product=azure-devops
