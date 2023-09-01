@@ -183,7 +183,7 @@
     },
     {
       "source_path": "docs/pipelines/packages/jenkins.md",
-      "redirect_url": "docs/artifacts/nuget"
+      "redirect_url": "/azure/devops/pipelines/artifacts/nuget"
     }
   ]
 }
