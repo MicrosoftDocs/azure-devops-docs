@@ -86,9 +86,9 @@ When the source branch in a PR changes, a new "iteration" is created to track th
 Services that evaluate code changes will want to post new status on each iteration of a PR. 
 Posting status to a specific iteration of a PR guarantees that status applies only to the code that was evaluated and none of the future updates. 
 
-::: moniker range=">= azure-devops-2022"
+::: moniker range=">= azure-devops-2018"
 > [!NOTE]
-> For performance and stability reasons, a PR which contains more than 100,000 modified files will not support iterations. This means that iterations will not be created each time a change is made to the source PR branch. So an attempt to create a status for a non-existent iteration will return an error.
+> If the PR being created contains more than 100,000 modified files, then, for performance and stability reasons, that PR will not support iterations. This means any additional change to such PR will be included but no new iteration will be created for that change. In addition any attempt to create a status for a non-existent iteration will return an error.
 ::: moniker-end
 
 Conversely, if the status posted applies to the entire PR, independent of the code, posting to the iteration may be unnecessary. For example, checking that the author (an immutable PR property) belongs to a specific group would only need to be evaluated once, and iteration status would not be needed.
