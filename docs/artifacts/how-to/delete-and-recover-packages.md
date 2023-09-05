@@ -28,14 +28,14 @@ In this article, you'll learn how to:
 
 ## Delete packages
 
-In Azure Artifacts, packages are immutable. When you publish a package to your feed, its version number will be reserved permanently. You can't upload a new package with that same version number, even if you delete it from your feed.
+In Azure Artifacts, packages are immutable. When you publish a package to your feed, its version number is reserved permanently. You can't upload a new package with that same version number, even if you delete it from your feed.
 
 #### [NuGet](#tab/nuget/)
 
-Two options are available to delete a NuGet package from your feed, [Unlist](#qa) and [Delete](#qa).
-
 > [!NOTE]
 > You must be a **Contributor** to unlist a package and an **Owner** to delete it.
+
+Two options are available to delete a NuGet package from your feed, [Unlist](#qa) and [Delete](#qa).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -94,10 +94,10 @@ Two options are available to delete a NuGet package from your feed, [Unlist](#qa
 
 #### [npm](#tab/npm/)
 
-There are two options to delete an npm package from your feed, [Deprecate](#qa) and [Unpublish](#qa).
-
 > [!NOTE]
 > You must be a **Contributor** to deprecate a package and an **Owner** to unpublish it.
+
+There are two options to delete an npm package from your feed, [Deprecate](#qa) and [Unpublish](#qa).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -146,14 +146,14 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 
 #### [Python](#tab/python/)
 
+> [!NOTE]
+> You must be a feed **Owner** to delete a Python package.
+
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed.
 
 1. Select the package that you want to delete, and then select **Delete latest**.
-
-> [!NOTE]
-> You must be a feed **Owner** to delete a Python package.
 
 :::image type="content" source="../media/delete/delete-python-package.png" alt-text="Screenshot that shows the button for deleting a package in Python.":::
 
@@ -165,7 +165,7 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 
 1. Select **Artifacts**, and then select your feed.
 
-1. Select the package that you want to delete, and then select **Delete latest**. Select **Delete** to confirm. 
+1. Select the package that you want to delete, and then select **Delete latest**. Select **Delete** to confirm your choice. 
 
 ::: moniker-end
 
@@ -185,14 +185,14 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 
 #### [Universal Package](#tab/universal/)
 
+> [!NOTE]
+> You must be a feed **Owner** to delete a Universal Package.
+
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed.
 
 1. Select the package that you want to delete, and then select **Delete latest**.
-
-> [!NOTE]
-> You must be a feed **Owner** to delete a Universal Package.
 
 :::image type="content" source="../media/delete/delete-universal-package.png" alt-text="Screenshot that shows the button for deleting a Universal Package.":::
 
@@ -227,7 +227,7 @@ If you want to retain a package indefinitely, you can promote it to a [view](../
 > [!NOTE]
 > Package demotion is not supported. If you want this feature to be added to future releases, feel free to use **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) page.
 
-To configure retention policies:
+Follow the steps below to set up retention policies for your feed:
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -235,18 +235,19 @@ To configure retention policies:
 
     :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot that shows the Artifacts button.":::
 
-1. Select the gear icon to navigate to your feed's settings.
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to your feed's settings.
 
     :::image type="content" source="../media/feed-settings.png" alt-text="A screenshot showing how to navigate to feed settings.":::
 
 1. Select **Feed details**, and then select the **Enable package retention** checkbox. Then enter values for:
 
-    - **Maximum number of versions per package**: How many versions of a package you want to keep.
-    - **Days to keep recently downloaded packages**: Packages will be deleted only if they haven't been downloaded for the number of days set in here.
-
     :::image type="content" source="../media/retention-policy-settings.png" alt-text="Screenshot that shows how to enable retention policies for your feed.":::
     
 1. Select **Save** when you're done.
+
+- **Maximum number of versions per package**: The number of versions for each package you wish to retain.
+
+- **Days to keep recently downloaded packages**: Packages will only get deleted if they haven't been downloaded for the specified number of days indicated here.
 
 ::: moniker-end
 
@@ -254,20 +255,20 @@ To configure retention policies:
 
 1. Select **Build and Release**.
 
-1. Select **Packages**, and then select the gear icon to access your feed's settings. 
+1. Select **Packages**, and then select the gear icon ![gear icon](../media/icons/gear-icon.png) to access your feed's settings. 
 
     :::image type="content" source="../media/edit-feed-full.png" alt-text="Screenshot that shows how access the feed's settings in Team Foundation Server.":::
 
 
 1. From the **Retention** tab, enter values for:
-
-    - **Maximum number of versions per package**: How many versions of a package you want to keep.
-    - **Days to keep recently downloaded packages**: Packages will be deleted only if they haven't been downloaded for the number of days set in here.
     
     :::image type="content" source="../media/retention-policy-settings-tfs.png" alt-text="Screenshot that shows retention policies in Team Foundation Server.":::
    
-    
 1. Select **Save** when you're done.
+
+- **Maximum number of versions per package**: The number of versions for each package you wish to retain.
+
+- **Days to keep recently downloaded packages**: Packages will only get deleted if they haven't been downloaded for the specified number of days indicated here.
 
 ::: moniker-end
 
