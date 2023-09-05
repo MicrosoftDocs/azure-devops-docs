@@ -255,7 +255,7 @@ Follow the steps below to set up retention policies for your feed:
 
 1. Select **Build and Release**.
 
-1. Select **Packages**, and then select the gear icon ![gear icon](../media/icons/gear-icon.png) to access your feed's settings. 
+1. Select **Packages**, and then select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your feed's settings. 
 
     :::image type="content" source="../media/edit-feed-full.png" alt-text="Screenshot that shows how access the feed's settings in Team Foundation Server.":::
 
@@ -279,7 +279,7 @@ Follow the steps below to set up retention policies for your feed:
 
 ## Recover deleted packages
 
-Deleted packages will remain in the Recycle Bin for 30 days. After that, they'll be permanently deleted. You must be a feed **Owner** to recover deleted packages.
+Deleted packages remain in the Recycle Bin for 30 days. After that, they'll be permanently deleted. You must be a feed **Owner** to recover deleted packages.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -337,7 +337,6 @@ A: Typically, storage consumption should be updated within 24 hours, although in
 
 ## Related articles
 
-- [Understand upstream sources](../concepts/upstream-sources.md)
-- [Feeds permissions](../feeds/feed-permissions.md)
-- [Configure upstream sources](./set-up-upstream-sources.md)
+- [Artifacts storage consumption](../artifact-storage.md)
 - [Promote a package to a view](../feeds/views.md)
+- [Manage permissions](../feeds/feed-permissions.md)
