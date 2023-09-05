@@ -37,7 +37,7 @@ We recommend this approach if:
 * You're not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
 * You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS.
 * You are in a supported region. See [unsupported regions](/azure/active-directory/workload-identities/workload-identity-federation-considerations#unsupported-regions-user-assigned-managed-identities).
-* Your pipeline does not use Marketplace extensions.  
+* Any Marketplace extensions tasks used have been updated to support workload identity federation. 
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
 
@@ -67,7 +67,7 @@ We recommend this approach if:
 
 ::: moniker range=">=azure-devops-2020"
 
-## Create an Azure Resource Manager service connection using automated security
+## Create an Azure Resource Manager service connection using a service principal secret
 
 We recommend this simple approach if:
 

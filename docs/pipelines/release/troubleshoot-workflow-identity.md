@@ -84,11 +84,13 @@ You may need to manually create a service principal with federated credentials, 
 
     |Field  |Description  |
     |---------|---------|
-    |Issuer     |  Enter `https://app.vstoken.visualstudio.com`.      |
+    |Issuer     |  Enter ` https://app.vstoken.visualstudio.com/<unique-identifier>`.      |
     |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<Project name>/<Service Connection name> `. You do not need to have created the service connection.      |
 
 1. Select **Save**.
 
+1. Keep this window open. You'll return and update your app registration federated credential later. 
+ 
 ##### Grant permissions to the app registration
 
 1. In Azure portal, go to the Azure resource that you want to target (example: resource group). 
@@ -112,10 +114,26 @@ You may need to manually create a service principal with federated credentials, 
 
 1. Enter the **Service connection name**. The name should match the name you used in the **Subject identifier** field when creating your federated credential. 
 
-1. Set the **Subscription Id** to the Subscription ID for your Azure portal account. 
+1. Set the **Subscription Id** to the subscription ID and the **Subscription Name** to the subscription name for your Azure portal account. 
+
+    :::image type="content" source="approvals/media/federated-set-subscription.png" alt-text="Screenshot of federated subscription credentials. ":::
 
 1. In the authentication section, set the **Service Principal Id** to the **Application (client) ID** value of your app registration.
 
 1. In the authentication section, set the **Tenant Id** to the **Directory (tenant) ID** value of your app registration.
 
-1. Select **Verify and save**.
+1. Copy the generated values for **Issuer** and **Subject identifier**.
+    
+    :::image type="content" source="approvals/media/federated-credentials-devops.png" alt-text="Screenshot of DevOps credentials for federated authentication.":::
+
+1. In Azure portal, return to your app registration federated credential. 
+
+1. Copy the values for **Issuer** and **Subject identifier** from your Azure DevOps project and enter those values in Azure portal for your federated credential. 
+
+    :::image type="content" source="approvals/media/copy-federated-credential.png" alt-text="Screenshot comparison of federated credential in DevOps and Azure portal. ":::
+
+1. In Azure portal, select **Update** to save the updated credential. 
+
+1. In Azure DevOps, select **Verify and save**.
+
+
