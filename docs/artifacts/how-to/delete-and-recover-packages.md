@@ -5,7 +5,7 @@ ms.service: azure-devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.custom: contperf-fy21q2, contperf-fy22q1
 ms.topic: conceptual
-ms.date: 02/16/2022
+ms.date: 09/05/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -39,6 +39,8 @@ Two options are available to delete a NuGet package from your feed, [Unlist](#qa
 
 ::: moniker range=">= azure-devops-2019"
 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
 1. Select **Artifacts**, and then select your feed.
 
 1. Select the package that you want to delete or deprecate, and then select **Unlist** or **Delete latest**.
@@ -48,6 +50,8 @@ Two options are available to delete a NuGet package from your feed, [Unlist](#qa
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
+1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 
 1. Select **Build and Release**.
 
@@ -61,7 +65,9 @@ Two options are available to delete a NuGet package from your feed, [Unlist](#qa
 
 ### Unlist a NuGet package by using NuGet.exe
 
-1. Select **Artifacts**, and then go to your feed. Select **Connect to feed**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu. Select **Connect to feed**.
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -95,6 +101,8 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 
 ::: moniker range=">= azure-devops-2019"
 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
 1. Select **Artifacts**, and then select your feed.
 
 1. Select the package that you want to delete or deprecate, and then select **Deprecate** or **Unpublish latest**.
@@ -104,6 +112,8 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
+1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 
 1. Select **Build and Release**.
 
@@ -136,6 +146,8 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 
 #### [Python](#tab/python/)
 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
 1. Select **Artifacts**, and then select your feed.
 
 1. Select the package that you want to delete, and then select **Delete latest**.
@@ -149,6 +161,8 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 
 ::: moniker range=">= azure-devops-2019"
 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
 1. Select **Artifacts**, and then select your feed.
 
 1. Select the package that you want to delete, and then select **Delete latest**. Select **Delete** to confirm. 
@@ -156,6 +170,8 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
+1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 
 1. Select **Build and Release**, and then select **Packages**.
 
@@ -168,6 +184,8 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 ::: moniker-end
 
 #### [Universal Package](#tab/universal/)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed.
 
@@ -190,15 +208,15 @@ Packages placed in the **Recycle Bin** get deleted permanently after 30 days. Ho
 
 1. Select **Recycle Bin** located in the upper-right corner.
 
-    :::image type="content" source="..media/recycle-bin.png" alt-text="A screenshot showing how to access the recycle bin in Azure Artifacts.":::
+    :::image type="content" source="../media/recycle-bin.png" alt-text="A screenshot showing how to access the recycle bin in Azure Artifacts.":::
 
 1. Select the package you wish to delete permanently, and then select **Permanently Delete**.
 
-    :::image type="content" source="..media/permanently-delete.png alt-text="A screenshot showing how to permanently delete a package in Azure Artifacts.":::
+    :::image type="content" source="../media/permanently-delete.png" alt-text="A screenshot showing how to permanently delete a package in Azure Artifacts.":::
 
 1. Select **Permanently Delete** one more time to confirm your choice. Your package will be deleted permanently.
 
-     :::image type="content" source="..media/permanently-delete-confirm.png alt-text="A screenshot showing a confirmation message before delete a package permanently.":::
+     :::image type="content" source="../media/permanently-delete-confirm.png" alt-text="A screenshot showing a confirmation message before delete a package permanently.":::
 
 ## Delete packages automatically with retention policies
 
