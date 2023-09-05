@@ -107,7 +107,7 @@ Restricting the parameters is useful when a user-configurable part of the pipeli
 
 <a name="shellTasksValidation"></a> 
 
-### Enable shell tasks arguments Parameter validation
+### Enable shell tasks Arguments parameter validation
 
 Pipelines can reference tasks that are executed in the pipeline. Several tasks included in Azure Devops have an Arguments parameter that enables you to specify additional options for the task.
 
