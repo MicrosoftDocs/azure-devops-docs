@@ -21,6 +21,10 @@ Check out the release notes to learn more about these features.
 
 [!INCLUDE [sprint-226-update-links](includes/pipelines/sprint-226-update-links.md)]
 
+### Azure Repos
+
+[!INCLUDE [sprint-226-update-links](includes/repos/sprint-226-update-links.md)]
+
 ### Azure Artifacts
 
 [!INCLUDE [sprint-226-update-links](includes/artifacts/sprint-226-update-links.md)]
@@ -32,6 +36,10 @@ Check out the release notes to learn more about these features.
 ## Azure Pipelines
 
 [!INCLUDE [sprint-226-update](includes/pipelines/sprint-226-update.md)]
+
+## Azure Repos
+
+[!INCLUDE [sprint-226-update](includes/repos/sprint-226-update.md)]
 
 ## Azure Artifacts
 
