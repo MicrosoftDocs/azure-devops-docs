@@ -58,7 +58,7 @@ You can't use the the service connection configuration tool when you don't have 
 
 #### Solution: Manually configure workflow identity 
 
-You may need to manually create a service principal with federated credentials, grant appropriate permissions, and configure managed identity.  
+You may need to manually create a managed identity with federated credentials and grant appropriate permissions. You can use the REST API for this process.    
 
 ##### Create app registration and federated credential
 
