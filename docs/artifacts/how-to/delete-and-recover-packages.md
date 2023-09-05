@@ -180,8 +180,19 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 
 * * *
 
-> [!NOTE]
-> Packages sent to the Recycle Bin will be deleted permanently after 30 days. However, these packages still count as part of your storage bill. If you want to delete them sooner, go to the Recycle Bin and delete them manually.
+## Delete a package permanently 
+
+Packages placed in the **Recycle Bin** get deleted permanently after 30 days. However, these packages still count as part of your storage bill. If you want to delete them sooner, you can manually delete them from the Recycle Bin following these steps:
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed.
+
+1. Select **Recycle Bin** located in the upper-right corner.
+
+1. Select the package you wish to delete permanently, and then select **Permanently Delete**.
+
+1. Select **Permanently Delete** one more time to confirm your choice. Your package will be deleted permanently.
 
 ## Delete packages automatically with retention policies
 
