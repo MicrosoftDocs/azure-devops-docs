@@ -43,7 +43,7 @@ Two options are available to delete a NuGet package from your feed, [Unlist](#qa
 
 1. Select **Artifacts**, and then select your feed.
 
-1. Select the package that you want to delete or deprecate, and then select **Unlist** or **Delete latest**.
+1. Select the package that you want to delete or deprecate, and then select **Unlist** or **Delete**.
 
     :::image type="content" source="../media/delete/unlist-delete-nuget-package-newnav.png" alt-text="Screenshot that shows buttons for unlisting and deleting NuGet packages.":::
 
@@ -239,7 +239,7 @@ Follow the steps below to set up retention policies for your feed:
 
     :::image type="content" source="../media/feed-settings.png" alt-text="A screenshot showing how to navigate to feed settings.":::
 
-1. Select **Feed details**, and then select the **Enable package retention** checkbox. Then enter values for:
+1. Select **Feed details**, and then select the **Enable package retention** checkbox. Specify a value for both the **Maximum number of versions per package** and **Days to keep recently downloaded packages**.
 
     :::image type="content" source="../media/retention-policy-settings.png" alt-text="Screenshot that shows how to enable retention policies for your feed.":::
     
@@ -253,14 +253,15 @@ Follow the steps below to set up retention policies for your feed:
 
 ::: moniker range="tfs-2018"
 
-1. Select **Build and Release**.
+1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 
-1. Select **Packages**, and then select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your feed's settings. 
+1. Select **Build and Release**, and then select **Packages**.
+
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your feed's settings. 
 
     :::image type="content" source="../media/edit-feed-full.png" alt-text="Screenshot that shows how access the feed's settings in Team Foundation Server.":::
 
-
-1. From the **Retention** tab, enter values for:
+1. From the **Retention** tab, specify a value for both the **Maximum number of versions per package** and **Days to keep recently downloaded packages**.
     
     :::image type="content" source="../media/retention-policy-settings-tfs.png" alt-text="Screenshot that shows retention policies in Team Foundation Server.":::
    
@@ -296,6 +297,8 @@ Deleted packages remain in the Recycle Bin for 30 days. After that, they'll be p
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
+1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 
 1. Select **Build and Release**, and then select **Packages**. 
 
