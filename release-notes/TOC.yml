@@ -348,6 +348,8 @@
         items:
         - name: "2023"
           items:
+          - name: August 23
+            href: 2023/repos/sprint-226-update.md
           - name: July 11
             href: 2023/repos/sprint-224-update.md
         - name: "2021"
