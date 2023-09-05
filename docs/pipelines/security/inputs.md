@@ -97,6 +97,31 @@ Using the [Builds - Queue](/rest/api/azure/devops/build/builds/queue) and the [R
 }
 ```
 
+<a name="shellTasksValidation"></a> 
+
+### Enable shell tasks arguments validation
+
+Pipelines can reference tasks that are executed in the pipeline. Several tasks included in Azure Devops have an Arguments parameter that allows you to specify additional options for the task.
+
+When you enable shell tasks argument validation, the arguments parameter is checked for any characters that may not be executed correctly by the shell, such as semi-colons, quotes, or parentheses.
+
+If the validation detects an issue, an error message like the following is logged:
+
+```
+Detected characters in arguments that may not be executed correctly by the shell. Please escape special characters using backtick (`). 
+```
+
+To resolve the issue, adjust the arguments by escaping special characters as indicated in the error message.
+
+When Enable shell tasks argument validation is enabled, validation is applied to the Arguments parameter following tasks.
+
+- PowerShell 
+- BatchScript
+- Bash 
+- Ssh
+- AzureFileCopy
+- WindowsMachineFileCopy
+
 ::: moniker-end
 
 ## Parameters
