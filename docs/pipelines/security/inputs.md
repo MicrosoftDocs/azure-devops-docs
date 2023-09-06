@@ -109,7 +109,7 @@ Restricting the parameters is useful when a user-configurable part of the pipeli
 
 ### Enable shell tasks Arguments parameter validation
 
-Pipelines can reference tasks that are executed in the pipeline. Several tasks included in Azure Devops have an Arguments parameter that enables you to specify additional options for the task.
+Pipelines can reference tasks that are executed in the pipeline. Several tasks included in Azure DevOps have an arguments parameter that enables you to specify additional options for the task.
 
 When the setting *Enable shell tasks arguments Parameter validation* is enabled, the arguments parameter is checked for any characters that may not be executed correctly by the shell, such as semi-colons, quotes, or parentheses.
 
