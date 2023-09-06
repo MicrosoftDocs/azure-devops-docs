@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting: manually configure Azure Resource Manager workflow identity service connections
+title: 'Troubleshooting: manually configure Azure Resource Manager workflow identity service connections'
 ms.custom: seodec18, devx-track-arm-template
 description: How to manually configure workflow identity service connections in Azure Pipelines
 ms.topic: conceptual
