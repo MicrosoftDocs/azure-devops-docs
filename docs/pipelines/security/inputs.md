@@ -113,7 +113,7 @@ Pipelines can reference tasks that are executed in the pipeline. Several tasks i
 
 When the setting 'Enable shell tasks arguments Parameter validation' is enabled, the Arguments parameter is checked for any characters that may not be executed correctly by the shell, such as semi-colons, quotes, or parentheses.
 
-Similar to 'Limit variables that can be set at queue time',  'Enable shell tasks arguments Parameter validation' may be configured at the Organization under Organization Settings -> Pipelines -> Settings or Project level under Project Settings -> Pipelines -> Settings.
+Similar to *Limit variables that can be set at queue time*,  *Enable shell tasks arguments Parameter validation* may be configured at the organization-level at **Settings** > **Pipelines** > **Settings** or at the project-level at **Settings** > **Pipelines** > **Settings**.
 
 When enabled, if validation detects an issue, an error message like the following is logged: ``
 Detected characters in arguments that may not be executed correctly by the shell. Please escape special characters using backtick (`).``
