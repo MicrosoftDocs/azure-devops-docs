@@ -455,7 +455,7 @@ Be aware of the following access restrictions when you're running pipelines in A
 #### Contributions from forks
 
 > [!IMPORTANT]
-> These settings affect the security of your pipeline. 
+> These settings affect the security of your pipeline.
 
 When you create a pipeline, it’s automatically triggered for pull requests from forks of your repository. You can change this behavior, carefully considering how it affects security. To enable or disable this behavior:
 
@@ -489,7 +489,6 @@ You can define centrally how pipeliness build PRs from forked GitHub repositorie
 When you choose the _Securely build pull requests from forked repositories_ option, all pipelines, organization- or project-wide, *cannot* make secrets available to builds of PRs from forked repositories, *cannot* make these builds have the same permissions as normal builds, and *must* be triggered by a PR comment. Projects can still decide to *not* allow pipelines to build such PRs.
 
 When you choose the _Customize_ option, you can define how to restrict pipeline settings. For example, you can ensure that all pipelines require a comment in order to build a PR from a forked GitHub repo, when the PR belongs to non-team members and non-contributors. But, you can choose to allow them to make secrets available to such builds. Projects can decide to *not* allow pipelines to build such PRs, or to build them securely, or have even more restrictive settings that what is specified at the organization level.
-
 
 The control is off for existing organizations. Starting Spetember 2023, new organizations have _Securely build pull requests from forked repositories_ turned on by default.
 
