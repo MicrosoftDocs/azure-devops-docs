@@ -479,10 +479,12 @@ To bypass this precaution on GitHub pipelines, enable the **Make secrets availab
 
 For more information, see [Repository protection - Forks](../security/repos.md#forks).
 
-You can define centrally how pipeliness build PRs from forked GitHub repos using the _Limit building pull requests from forked GitHub repositories_ control. It's available at organization and project level. You can choose to:
+You can define centrally how pipeliness build PRs from forked GitHub repositories using the _Limit building pull requests from forked GitHub repositories_ control. It's available at organization and project level. You can choose to:
 - Disable building pull requests from forked repositories
 - Securely build pull requests from forked repositories
 - Customize rules for building pull requests from forked repositories
+
+![Centralized control for how pipeliness build PRs from forked GitHub repositories](media/centralized-pipeline-control.png)
 
 When you choose the _Securely build pull requests from forked repositories_ option, all pipelines, organization- or project-wide, *cannot* make secrets available to builds of PRs from forked repositories, *cannot* make these builds have the same permissions as normal builds, and *must* be triggered by a PR comment. Projects can still decide to *not* allow pipelines to build such PRs.
 
