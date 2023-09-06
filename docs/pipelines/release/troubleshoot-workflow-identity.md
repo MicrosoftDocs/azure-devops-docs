@@ -78,7 +78,12 @@ You may need to manually create a managed identity with federated credentials an
     - **Region**: Choose a region to deploy the user-assigned managed identity, for example, **East US**.
     - **Name**: Enter the name for your user-assigned managed identity, for example, UADEVOPS.
 
-1. Copy the **Subscription ID** for your managed identity. You'll use this value later. 
+
+1. Copy the **Subscription ID** and  **Client ID**  for your managed identity. You'll use these values later. 
+
+1. Go to **Settings** > **Properties**. 
+
+1. Copy the **Tenant Id** value to use later. 
 
 1. Go to **Settings** > **Federated credentials**. 
 
@@ -95,13 +100,9 @@ You may need to manually create a managed identity with federated credentials an
 
 1. Select **Save**.
 
-1. Go to **Settings** > **Properties**. 
-
-1. Copy the **Tenant Id** value. 
-
 1. Keep this window open. You'll return and update your app registration federated credential later. 
  
-##### Grant permissions to the app registration
+##### Grant permissions to the managed identity
 
 1. In Azure portal, go to the Azure resource that you want to target (example: resource group). 
 
@@ -118,35 +119,34 @@ You may need to manually create a managed identity with federated credentials an
 1. In Azure DevOps, open your project and go to :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: > **Pipelines** > **Service connections**. 
 1. Select **New service connection**.
 1. Select **Azure Resource Manager**. 
-1. Select **Managed identity**. 
+
+1. Select **Workload Identity federation (manual)**. 
+
+    :::image type="content" source="approvals/media/workload-identity-service-connection-manual.png" alt-text="Screenshot of workload identity service connection selection. ":::
 
 1. Enter the **Service connection name**. The name should match the name you used in the **Subject identifier** field when creating your federated credential. 
 
-1. Set the **Subscription Id** to the subscription ID and the **Subscription Name** to the subscription name for your Azure portal account. 
+1. Set the **Subscription ID** to the subscription ID and the **Subscription Name** to the subscription name for your Azure portal account. 
 
     :::image type="content" source="approvals/media/federated-set-subscription.png" alt-text="Screenshot of federated subscription credentials. ":::
 
-1. In the authentication section, set the **Subscription ID** to the **Subscription ID** value of your managed identity.
+1. In the authentication section, set the **Service Principal Id** to the **Client Id** value of your managed identity, and set the **Tenant ID** to the **Tenant Id** value of your managed identity.
 
-1. In the authentication section, set the **Tenant Id** to the **Tenant ID** value of your managed identity.
+    :::image type="content" source="approvals/media/federated-managed-values.png" alt-text="Screenshot of Azure portal managed identity values. ":::
 
-1. Copy the generated values for **Issuer** and **Subject identifier**.
+1. In Azure DevOps, copy the generated values for **Issuer** and **Subject identifier**.
     
     :::image type="content" source="approvals/media/federated-credentials-devops.png" alt-text="Screenshot of DevOps credentials for federated authentication.":::
 
-
-# STOPPED (Need clarification)
-
 1. In Azure portal, return to your app registration federated credential. 
 
-1. Copy the values for **Issuer** and **Subject identifier** from your Azure DevOps project and enter those values in Azure portal for your federated credential. 
+1. Enter the values for **Issuer** and **Subject identifier** from your Azure DevOps project and enter those values in Azure portal for your federated credential. 
 
     :::image type="content" source="approvals/media/copy-federated-credential.png" alt-text="Screenshot comparison of federated credential in DevOps and Azure portal. ":::
 
 1. In Azure portal, select **Update** to save the updated credential. 
 
 1. In Azure DevOps, select **Verify and save**.
-
 
 
 #### Solution 2: Manually configure workflow identity with a service principal
