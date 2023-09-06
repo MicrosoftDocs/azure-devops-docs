@@ -120,7 +120,7 @@ Detected characters in arguments that may not be executed correctly by the shell
 
 To resolve the issue, adjust the arguments by escaping special characters as indicated in the error message.
 
-When 'Enable shell tasks argument validation is enabled', validation is applied to the Arguments parameter in the following tasks.
+When *Enable shell tasks argument validation is enabled*, validation is applied to the arguments parameter in the following tasks.
 
 - PowerShell 
 - BatchScript
