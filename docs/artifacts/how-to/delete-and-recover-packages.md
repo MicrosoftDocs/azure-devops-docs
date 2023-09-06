@@ -212,11 +212,11 @@ Packages placed in the **Recycle Bin** get deleted permanently after 30 days. Ho
 
 1. Select the package you wish to delete permanently, and then select **Permanently Delete**.
 
-    :::image type="content" source="../media/permanently-delete.png" alt-text="A screenshot showing how to permanently delete a package in Azure Artifacts.":::
+    :::image type="content" source="../media/delete-package-permanently.png" alt-text="A screenshot showing how to permanently delete a package in Azure Artifacts.":::
 
 1. Select **Permanently Delete** one more time to confirm your choice. Your package will be deleted permanently.
 
-     :::image type="content" source="../media/permanently-delete-confirm.png" alt-text="A screenshot showing a confirmation message before delete a package permanently.":::
+     :::image type="content" source="../media/delete-package-permanently-confirmation.png" alt-text="A screenshot showing a confirmation message before delete a package permanently.":::
 
 ## Delete packages automatically with retention policies
 
