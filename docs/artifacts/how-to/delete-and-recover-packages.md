@@ -216,7 +216,7 @@ Packages placed in the **Recycle Bin** get deleted permanently after 30 days. Ho
 
 1. Select **Permanently Delete** one more time to confirm your choice. Your package will be deleted permanently.
 
-     :::image type="content" source="../media/delete/delete-package-permanently-confirmation.png" alt-text="A screenshot showing a confirmation message before delete a package permanently.":::
+     :::image type="content" source="../media/delete/delete-package-permanently-confirmation.png" alt-text="A screenshot showing a confirmation message before you delete a package permanently.":::
 
 ## Delete packages automatically with retention policies
 
