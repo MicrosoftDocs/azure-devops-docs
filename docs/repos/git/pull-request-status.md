@@ -88,13 +88,13 @@ Posting status to a specific iteration of a PR guarantees that status applies on
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE]
-> If the PR being created contains more than 100,000 modified files, then, for performance and stability reasons, that PR will not support iterations. This means any additional change to such PR will be included but no new iteration will be created for that change. In addition any attempt to create a status for a non-existent iteration will return an error.
+> If the PR being created contains more than 100,000 modified files, then, for performance and stability reasons, that PR won't support iterations. This means any additional change to such PR will be included but no new iteration will be created for that change. In addition any attempt to create a status for a non-existent iteration will return an error.
 ::: moniker-end
 
 Conversely, if the status posted applies to the entire PR, independent of the code, posting to the iteration may be unnecessary. For example, checking that the author (an immutable PR property) belongs to a specific group would only need to be evaluated once, and iteration status would not be needed.
 
 When configuring the status policy, if iteration status is being used, the **Reset conditions** should be set to **Reset status whenever there are new changes**. 
-This further guarantees that the PR will not be able to be merged until the latest iteration has a status of `succeeded`.
+This further guarantees that the PR won't be able to be merged until the latest iteration has a status of `succeeded`.
 
 ![Status policy reset conditions](media/pull-request-status/pull-request-status-policy-reset-conditions.png)
 
@@ -104,10 +104,10 @@ See the REST API examples for posting status [on an iteration](/rest/api/azure/d
 
 Using status alone, details from an external service can be provided to users within the PR experience. 
 Sometimes, sharing information about a PR is all that is necessary, but in other cases PRs should be blocked from merging until requirements are met. 
-Like the in-box policies, the **Status policy** provides a way for external services to block PR completion until requirements are met. If the policy is required, it must pass in order to complete the pull request. If the policy is optional, it is informational only, and a status of `succeeded` is not required in order to complete the pull request.
+Like the in-box policies, the **Status policy** provides a way for external services to block PR completion until requirements are met. If the policy is required, it must pass in order to complete the pull request. If the policy is optional, it's informational only, and a status of `succeeded` isn't required in order to complete the pull request.
 
 Status policies are configured just like other [branch policies](branch-policies.md). 
-When adding a new status policy, the **name** and **genre** of the status policy must be entered. If the status has been posted previously you can pick it from the list; if it is a new policy you can type in the name of the policy in the format **genre**/**name**.
+When adding a new status policy, the **name** and **genre** of the status policy must be entered. If the status has been posted previously you can pick it from the list; if it's a new policy you can type in the name of the policy in the format **genre**/**name**.
 
 ![Status policy](media/pull-request-status/pull-request-status-policy.png)
 
@@ -121,7 +121,7 @@ The **Policy applicability** options determine whether this policy applies as so
 
 ![Policy applicability](media/pull-request-status/policy-applicability.png)
 
-1. **Apply by default** - The policy applies as soon as the pull request is created. With this option, the policy does not pass after pull request creation until a `succeeded` status is posted.
+1. **Apply by default** - The policy applies as soon as the pull request is created. With this option, the policy doesn't pass after pull request creation until a `succeeded` status is posted.
 A PR can be marked exempt from the policy by posting a status of `notApplicable`, which will remove the policy requirement. 
 
 2. **Conditional** - The policy doesn't apply until the first status is posted to the pull request.
@@ -129,11 +129,11 @@ A PR can be marked exempt from the policy by posting a status of `notApplicable`
 Together, these options can be used to create a suite of dynamic policies. 
 A top-level "orchestration" policy could be set to apply by default while the PR is being evaluated for applicable policies. 
 Then, as additional conditional policies are determined to apply (perhaps based on specific build output), status can be posted to make them required. 
-This orchestration policy could be marked `succeeded` when it is finished evaluating or could be marked `notApplicable` to indicate to the PR that the policy doesn't apply.
+This orchestration policy could be marked `succeeded` when it's finished evaluating or could be marked `notApplicable` to indicate to the PR that the policy doesn't apply.
 
 ## Custom actions
 
-In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [Azure DevOps Services extensions](../../extend/overview.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). For more information, see the [Azure DevOps extension sample](https://github.com/Microsoft/azure-devops-extension-sample). 
+In addition to predefined service hook events that can trigger the service to update PR status, it's possible to extend the status menu by using [Azure DevOps Services extensions](../../extend/overview.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it's possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). For more information, see the [Azure DevOps extension sample](https://github.com/Microsoft/azure-devops-extension-sample). 
 
 ![Status menu](media/pull-request-status/custom-status-menu-entries.png)
 
