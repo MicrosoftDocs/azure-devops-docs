@@ -47,7 +47,6 @@ You can fix the issuer URL by editing and saving the service connection to updat
 
 I want to set up workflow identity but I don't see the option to turn it on. 
 
-
 #### Solution: Verify organization admins and enable features
 
 1. Find your organization owners on the organization settings page `https://dev.azure.com/<org>/_settings/organizationOverview`. 
@@ -58,9 +57,101 @@ I want to set up workflow identity but I don't see the option to turn it on.
 
 You can't use the the service connection configuration tool when you don't have the correct permissions. Your permission level is inadequate if you don't have permission to create service principals or you are using a different Azure Entra ID tenant than your Azure DevOps user. 
 
-#### Solution: Manually configure workflow identity 
+You have two options:
 
-You may need to manually create a managed identity with federated credentials and grant appropriate permissions. You can use the REST API for this process.    
+* Solution 1: Manually configure workflow identity with managed identity
+* Solution 2: Manually configure workflow identity with a service principal
+
+#### Solution 1: Manually configure workflow identity with managed identity
+
+You may need to manually create a managed identity with federated credentials and grant appropriate permissions. You can also use the REST API for this process.    
+
+##### Create a managed identity
+
+1. Sign in to the [Azure portal](https://portal.azure.com). 
+
+1. In the search box, enter **Managed Identities**. 
+
+1. Select **Create**, and enter values in the following boxes in the **Create User Assigned Managed Identity** pane:
+    - **Subscription**: Choose the subscription to create the user-assigned managed identity under.
+    - **Resource group**: Choose a resource group to create the user-assigned managed identity in, or select **Create new** to create a new resource group.
+    - **Region**: Choose a region to deploy the user-assigned managed identity, for example, **East US**.
+    - **Name**: Enter the name for your user-assigned managed identity, for example, UADEVOPS.
+
+1. Copy the **Subscription ID** for your managed identity. You'll use this value later. 
+
+1. Go to **Settings** > **Federated credentials**. 
+
+1. Select **Add credentials**.
+
+1. Select the **Other issuer** scenario. 
+
+1. Enter values for **Issuer** and **Subject identifier**. You'll replace these values later. 
+
+    |Field  |Description  |
+    |---------|---------|
+    |Issuer     |  Enter ` https://app.vstoken.visualstudio.com/<unique-identifier>`.      |
+    |Subject identifier     |   Specify `sc://<Azure DevOps organization>/<Project name>/<Service Connection name> `. You do not need to have created the service connection.      |
+
+1. Select **Save**.
+
+1. Go to **Settings** > **Properties**. 
+
+1. Copy the **Tenant Id** value. 
+
+1. Keep this window open. You'll return and update your app registration federated credential later. 
+ 
+##### Grant permissions to the app registration
+
+1. In Azure portal, go to the Azure resource that you want to target (example: resource group). 
+
+1.  Select **Access control (IAM)**. 
+
+    :::image type="content" source="approvals/media/access-control-resource-group.png" alt-text="Screenshot of Access control selection. ":::
+
+1. Select **Add role assignment**. Assign the desired role to your managed identity (example: Contributor).
+
+1. Select **Review and assign**.
+
+##### Create service connection
+
+1. In Azure DevOps, open your project and go to :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: > **Pipelines** > **Service connections**. 
+1. Select **New service connection**.
+1. Select **Azure Resource Manager**. 
+1. Select **Managed identity**. 
+
+1. Enter the **Service connection name**. The name should match the name you used in the **Subject identifier** field when creating your federated credential. 
+
+1. Set the **Subscription Id** to the subscription ID and the **Subscription Name** to the subscription name for your Azure portal account. 
+
+    :::image type="content" source="approvals/media/federated-set-subscription.png" alt-text="Screenshot of federated subscription credentials. ":::
+
+1. In the authentication section, set the **Subscription ID** to the **Subscription ID** value of your managed identity.
+
+1. In the authentication section, set the **Tenant Id** to the **Tenant ID** value of your managed identity.
+
+1. Copy the generated values for **Issuer** and **Subject identifier**.
+    
+    :::image type="content" source="approvals/media/federated-credentials-devops.png" alt-text="Screenshot of DevOps credentials for federated authentication.":::
+
+
+# STOPPED (Need clarification)
+
+1. In Azure portal, return to your app registration federated credential. 
+
+1. Copy the values for **Issuer** and **Subject identifier** from your Azure DevOps project and enter those values in Azure portal for your federated credential. 
+
+    :::image type="content" source="approvals/media/copy-federated-credential.png" alt-text="Screenshot comparison of federated credential in DevOps and Azure portal. ":::
+
+1. In Azure portal, select **Update** to save the updated credential. 
+
+1. In Azure DevOps, select **Verify and save**.
+
+
+
+#### Solution 2: Manually configure workflow identity with a service principal
+
+You may need to manually create a service principal with federated credentials and grant appropriate permissions. You can also use the REST API for this process.    
 
 ##### Create app registration and federated credential
 
