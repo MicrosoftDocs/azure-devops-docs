@@ -106,6 +106,9 @@ Before proceeding with the next steps, we must first create a service principal 
 
 1. Select **Save** when you're done.
 
+> [!NOTE]
+> Azure Key Vaults that use Azure role-based access control (Azure RBAC) are not supported.
+
 ## Create a new service connection
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
