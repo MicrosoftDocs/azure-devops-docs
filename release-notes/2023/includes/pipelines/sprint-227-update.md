@@ -6,57 +6,70 @@ ms.topic: include
 ---
 
 
-### Retry a stage when approvals and checks time out
-
-When approvals and checks time out, the stage they belong to is skipped. Stages that have a dependency on the skipped stage are also skipped. 
-
-Now you can retry a stage when approvals and checks time-out. Previously, this was possible only when an approval timed out. 
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of stage retry.](../../media/226-pipelines-01.png "Screenshot of stage retry")
-
-### Administrator role for all Environments
-
-[Environments](/azure/devops/pipelines/process/environments) in YAML pipelines represent a compute resource to which you deploy your application, for example an AKS cluster or a set of VMs. They provide you with security controls and traceability for your deployments.
-
-Managing environments can be quite challenging. This is because, when an environment is created, the person creating it automatically becomes the sole administrator. For example, if you want to manage the approvals and checks of all environments in a centralized fashion, you had to ask every environment administrator to add a specific user or group as administrator, and then use REST API to configure the checks. This approach is tedious, error-prone, and doesn't scale when new environments are added. 
- 
-With this sprint, we added an [Administrator role](/azure/devops/pipelines/policies/permissions#set-environment-permissions) at the environments-hub level. This brings environments up to par with service connections or agent pools. To assign the Administrator role to a user or group, you need to already be an environments-hub administrator or organization-owner. 
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Administrator role.](../../media/226-pipelines-02.png "Screenshot of Administrator role")
-
-A user with this Administrator role can administer permissions, manage, view and use any environment. This includes opening up environments to all pipelines.
-
-When you grant a user Administrator role at environments-hub level, they become administrators for all existing environments and for any future environments.
-
-### Centralized control for building PRs from forked GitHub repos
-
-If you build public repositories from GitHub, you must consider your stance on fork builds. Forks are especially dangerous since they come from outside your organization. 
-
-You can improve the security of pipelines that build GitHub public repositories by reviewing our recommendations on how to [Build GitHub repositories](/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml#important-security-considerations&preserve-view=true) and [Repository protection](/azure/devops/pipelines/security/repos?view=azure-devops#forks&preserve-view=true). Unfortunately, managing numerous pipelines and ensuring their adherence to best practices can require a substantial amount of effort. 
-
-To enhance the security of your pipelines, we added an organization-level control for defining how pipelines build PRs from forked GitHub repos. The new setting is named _Limit building pull requests from forked GitHub repositories_ and works at organization and project level.
-
-The organization-level setting restricts the settings projects can have, and the project-level setting restricts the settings pipelines can have. 
-
-Let's look at how the toggle works at organization level. The new control is off by default, so no settings are universally enforced.
+### Pipeline Agent config
 
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of toggle organization level.](../../media/226-pipelines-03.png "Screenshot of toggle organization level")
 
-When you turn on the toggle, you can choose to disable building PRs from forked GitHub repos. This means, no pipeline will run when such a PR is created.
+### Upgrade AzDO owned tasks to Node 16
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of showing toggle on.](../../media/226-pipelines-04.png "Screenshot of toggle on")
 
-When you choose the _Securely build pull requests from forked repositories_ option, all pipelines, organization-wide, *cannot* make secrets available to builds of PRs from forked repositories, *cannot* make these builds have the same permissions as normal builds, and *must* be triggered by a PR comment. Projects can still decide to *not* allow pipelines to build such PRs.
+###  Pipeline agents can be registered using a Service Principal
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Securely build PR.](../../media/226-pipelines-05.png " Screenshot of Securely build PR")
+As Azure DevOps Service Service Principals support in preview, we have added the capability to use a Service Principal to register a Pipelines agent with Azure DevOps Service:
+```
+--auth 'SP' --clientid 12345678-1234-1234-abcd-1234567890ab --clientsecret --tenantid 12345678-1234-1234-abcd-1234567890ab
+```
+You can add the Service Principal access on the security settings of an agent pool. This removes the need to use a Personal Access Token (PAT)
 
-When you choose the _Customize_ option, you can define how to restrict pipeline settings. For example, you can ensure that all pipelines require a comment in order to build a PR from a forked GitHub repo, when the PR belongs to non-team members and non-contributors. But, you can choose to allow them to make secrets available to such builds. Projects can decide to *not* allow pipelines to build such PRs, or to build them securely, or have even more restrictive settings that what is specified at the organization level.
+###  Use Service Principal in Agent VM extension
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Customize.](../../media/226-pipelines-06.png " Screenshot of Customize")
+Azure VM's can be included in Deployment Groups using a [VM Extension](https://learn.microsoft.com/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template). The VM extension has been updated to use a Service Principal instead of a PAT to register the agent:
+```
+"settings": {
+  "userServicePrincipal": true     
+}
+"protectedSettings": {
+  "clientId": "[parameters('clientId')]"      
+  "clientSecret": "[parameters('clientSecret')]"      
+  "tenantId": "[parameters('tenantId')]"      
+}
+```
+###  Public preview of Workload Identity Federation in Azure Pipelines
+
+Want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](https://learn.microsoft.com/azure/active-directory/workload-identities/workload-identity-federation) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
+
+As part of this feature, the Azure (ARM) service connection has been updated with an additional scheme to support Workload identity federation. This allows Pipeline tasks that use the Azure service connection to authenticate using a federation subject (sc://<org>/<project>/<service connection name>). The main benefits of using this scheme over existing authentication schemes are as follows:
+
+Simplified management: You do not need to generate, copy, and store secrets from service principals in AAD to Azure DevOps anymore. Secrets that are used in other authentication schemes of Azure service connections (e.g., service principal) expire after a certain period (2 years currently). When they expire, pipelines fail. You have to regenerate a new secret and update the service connection. Switching to workload identity federation eliminates the need to manage these secrets and improves the overall experience of creating and managing service connections.
+More secure: With workload identity federation, there is no persistent secret involved in the communication between Azure Pipelines and Azure. As a result, tasks running in pipeline jobs cannot leak or exfiltrate secrets that have access to your production environments. This has often been a concern for our customers.
+You can take advantage of these features in two ways:
+
+Use the new workload identity federation scheme whenever you create a new Azure service connection. Moving forward, this will be the recommended mechanism.
+Convert your existing service connections (which are based on secrets) to the new scheme. You can do this conversion one connection at a time. Best of all, you do not have to modify any of the pipelines that use those service connections. They will automatically leverage the new scheme once you complete the conversion.
+To create a new service connection using workload identity federation, simply select Workload identity federation (automatic) or (manual) in the experience.
+
+https://github.com/microsoft/azure-pipelines-tasks/blob/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection1.png
+
+https://github.com/microsoft/azure-pipelines-tasks/blob/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection2.png
+
+To convert a previously created Azure service connection, select the "Convert" action after selecting the connection.
+
+https://github.com/microsoft/azure-pipelines-tasks/blob/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/convert-service-connection.png
+
+All of the Azure tasks that are included with Azure Pipelines now support this new scheme. However, if you are using a task from the Marketplace or a home-grown custom task to deploy to Azure, then it may not support workload identity federation. In these cases, we ask that you update your task to support workload identity federation to improve security. A complete list of supported tasks can be found here: https://github.com/microsoft/azure-pipelines-tasks/blob/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/troubleshooting.md.
+
+For this preview, we support workload identity federation only for Azure service connections. This scheme does not work with any other types of service connections. See our docs for more details.
+
+### Validate Azure RBAC when selecting an Azure subscription
+
+### Improvements to Approvals REST API
+
+We made searching for approvals assigned to a user more thorough by including approvals assigned to groups the user belongs to.
+
+We made approving pending approvals easier by including information about the pipeline run they belong to.
+
+### Incorrect APIs for VMs and VM groups
+
+### Default Centralised build control to Build Securely
+
+### Prevent unintended pipeline triggers
