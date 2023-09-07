@@ -1,5 +1,5 @@
 ---
-title: Connect to Microsoft Azure
+title: Connect to Microsoft Azure with an ARM service connection
 ms.custom: seodec18, devx-track-arm-template
 description: Use an ARM service connection to connect Azure Pipelines or TFS to Microsoft Azure
 ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
@@ -10,13 +10,21 @@ ms.date: 08/15/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Connect to Microsoft Azure
+# Connect to Microsoft Azure with an ARM service connection
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-To deploy your app to an Azure resource (to an app service or to a virtual machine), you need an Azure Resource Manager service connection. 
+You can use an Azure Resource Manager (ARM) service connection to connect to Azure resources with Service Principal Authentication (SPA) or an Azure-Managed Service Identity.  With an Azure Resource Manager service connection, you can use a pipeline to deploy to Azure resources like an App Service app without needing to reauthenticate each time. 
+
+There are multiple options for connecting to Azure with Azure Resource Manager service connections:
+
+::: moniker range="azure-devops"
+* service principal or managed identity with workflow identity federation
+::: moniker-end
+* service principal with secret	
+* agent-assigned managed identity	 
 
 > For other types of connection, and general information about creating and using connections, see [Service connections for builds and releases](service-endpoints.md).
 
@@ -40,6 +48,8 @@ We recommend this approach if:
 * You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS.
 * Any Marketplace extensions tasks used have been updated to support workload identity federation. 
 
+### Create a new workflow identity federation service connection
+
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
@@ -62,6 +72,36 @@ We recommend this approach if:
 1. After the new service connection is created, copy the connection name into your code as the `azureSubscription` value.
 
 1. To deploy to a specific Azure resource, the task will need additional data about that resource. Go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
+
+### Convert an existing ARM service connection to use workflow identity federation
+
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+
+1. Go to **Pipelines** > **Service connections** and open an existing service connection. 
+
+1. Select the service connection you want to convert to use workflow identity. 
+
+1. Select **Convert**. 
+
+    :::image type="content" source="media/federated-convert-credential.png" alt-text="Screenshot of selecting convert for federated credential.":::
+
+1. Select **Convert** again to confirm that you want to create a new service connection. You will have seven days to revert the connection. The conversion may take a few minutes to process. Once the process completes, you'll be able to use the new service connection. 
+
+### Revert an existing ARM service connection to use workflow identity federation
+
+You can revert a converted service connection for seven days. To revert a connection:
+
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+
+1. Go to **Pipelines** > **Service connections** and open an existing service connection. 
+
+1. Select the service connection you want to revert. 
+
+1. Select **Revert conversion to the original scheme**. 
+
+    :::image type="content" source="media/federated-revert-credential.png" alt-text="Screenshot of selecting revert for federated credential.":::
+
+1. Select **Revert** again to confirm your choice. 
 
 ::: moniker-end
 

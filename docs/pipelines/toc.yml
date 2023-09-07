@@ -370,15 +370,17 @@
           displayName: iis, server, winrm
 - name: Deploy to Azure
   items:
-    - name: Deploy to Azure overview
+    - name: Overview
       href: overview-azure.md
-    - name: Azure Resource Manager service connection
-      href: library/connect-to-azure.md
-      displayName: resource manager, service connection, service principal
-    - name: Troubleshoot workflow identity service connections
-      href: release/troubleshoot-workflow-identity.md
-    - name: Manually configure workflow identity service connections
-      href: release/configure-workflow-identity.md
+    - name: Connect to Azure
+      items:
+        - name: Azure Resource Manager service connection
+          href: library/connect-to-azure.md
+          displayName: resource manager, service connection, service principal
+        - name: Troubleshoot workflow identity service connections
+          href: release/troubleshoot-workflow-identity.md
+        - name: Manually configure workflow identity service connections
+          href: release/configure-workflow-identity.md
     - name: Azure App Service (Web Apps)
       items:
         - name: App Service
