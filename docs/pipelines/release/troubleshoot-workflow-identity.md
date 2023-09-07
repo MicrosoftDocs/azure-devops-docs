@@ -26,16 +26,16 @@ Get help debugging common issues with workflow identity service connections and 
 
 ### Review pipeline tasks
 
-Not all pipelines tasks support workflow identity. During the preview, no Azure Marketplace tasks support workflow identity service connections. The following tasks do not currently support with workflow identity federation.
+Not all pipelines tasks support workflow identity. During the preview, no Azure Marketplace tasks support workflow identity service connections. The following tasks don't currently support with workflow identity federation.
 
-- AzureCloudPowerShellDeploymentV1
-- AzCopy (AzureFileCopyV1, AzureFileCopyV2, AzureFileCopyV3, AzureFileCopyV4,AzureFileCopyV5 )
-- AzureIoTEdgeV2
-- AzureMonitorAlertsV0
-- AzureNLBManagementV1
-- PackerBuild (PackerBuildV0, PackerBuildV1)
-- ServiceFabricComposeDeployV0
-- ServiceFabricDeployV1	
+- `AzureCloudPowerShellDeploymentV1`
+- `AzCopy` (`AzureFileCopyV1`, `AzureFileCopyV2`, `AzureFileCopyV3`, `AzureFileCopyV4`, `AzureFileCopyV5`)
+- `AzureIoTEdgeV2`
+- `AzureMonitorAlertsV0`
+- `AzureNLBManagementV1`
+- `PackerBuild` (`PackerBuildV0`, `PackerBuildV1`)
+- `ServiceFabricComposeDeployV0`
+- `ServiceFabricDeployV1`	
 
 ### Verify workflow identity federation is active
 
@@ -45,9 +45,9 @@ Sign in to the Azure portal and verify that there are no policies in place that 
 
 ### Check the issuer URL for accuracy
 
-If you see a message that there is `no matching federated identity record found`, either the issuer URL or federation subject does not match. The correct issuer URL show start with `https://vstoken.dev.azure.com`. 
+If you see a message that there's `no matching federated identity record found`, either the issuer URL or federation subject doesn't match. The correct issuer URL show start with `https://vstoken.dev.azure.com`. 
 
-You can fix the issuer URL by editing and saving the service connection to update the issuer URL. For identities that not been created by Azure DevOps, the issuer needs to be updated manually. For Azure identities, the issuer URL automatically updates.  
+You can fix the issuer URL by editing and saving the service connection to update the issuer URL. The issuer needs to be updated manually if Azure DevOps didn't create the identity. For Azure identities, the issuer URL automatically updates.  
 
 
 ## Common issues and causes
@@ -64,7 +64,7 @@ I want to set up workflow identity but I don't see the option to turn it on.
 
 ### I don't have permission to create a service principal in the Azure Entra ID tenant
 
-You can't use the the service connection configuration tool when you don't have the correct permissions. Your permission level is inadequate if you don't have permission to create service principals or you are using a different Azure Entra ID tenant than your Azure DevOps user. 
+You can't use the service connection configuration tool when you don't have the correct permissions. Your permission level is inadequate if you don't have permission to create service principals or you're using a different Azure Entra ID tenant than your Azure DevOps user. 
 
 You need to either have permission in Microsoft Entra ID to create app registrations or you need to have an appropriate role (example: Application Developer).
 
@@ -77,11 +77,11 @@ You have two options:
 
 | Message | Plausible issue |
 |---------|-----------------|
-| *cannot request token: Get `?audience=api://AzureADTokenExchange: unsupported protocol scheme`* | Task does not support workload identity federation. |
-| *Identity not found* | Task does not support workload identity federation. |
-| *Could not fetch access token for Azure* | Task does not support workload identity federation. |
-| \<Task\> *only support(s) service principal authorization* | Task does not support workload identity federation. |
-| *AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer: `https://app.vstoken.visualstudio.com`. | The issuer url is not correct. The correct issuer url is `https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. You can fix the issuer URL by editing and re-saving a service connection. For identities that weren't created by Azure DevOps, you need to manually update the issuer. You can find the correct issuer in the edit dialog of the service connection, or or in the response (under authorization parameters) when using the REST API. |
-| *AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer:  `https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. Assertion Subject: `sc://\<org\>/\<project\>/\<service-connection\>.*` | Either the issuer url or federation subject does not match. This can happen when the Azure DevOps organization or project have been renamed, or a manually created service connection was renamed without updating the federation subject on the identity. |
+| *cannot request token: Get `?audience=api://AzureADTokenExchange: unsupported protocol scheme`* | Task doesn't support workload identity federation. |
+| *Identity not found* | Task doesn't support workload identity federation. |
+| *Could not fetch access token for Azure* | Task doesn't support workload identity federation. |
+| \<Task\> *only support(s) service principal authorization* | Task doesn't support workload identity federation. |
+| *AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer: `https://app.vstoken.visualstudio.com`. | The issuer URL isn't correct. The correct issuer URL is `https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. You can fix the issuer URL by editing and resaving a service connection. You need to manually update the issuer if Azure DevOps didn't create your identity. You can find the correct issuer in the edit dialog of the service connection, or in the response (under authorization parameters) when using the REST API. |
+| *AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer:  `https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. Assertion Subject: `sc://\<org\>/\<project\>/\<service-connection\>.*` | Either the issuer url or federation subject doesn't match. The Azure DevOps organization or project has been renamed, or a manually created service connection was renamed without updating the federation subject on the identity. |
 | *AADSTS700223* | Workload identity federation has been disabled on the Microsoft Entra ID tenant. |
 | *AADSTS700024: Client assertion is not within its valid time range* | You're using the AzureCLI task with `addSpnToEnvironment: true` to consume the `idToken` environment variable. The `idToken` has expired after 10 minutes. |
