@@ -317,6 +317,9 @@ The following table summarizes the policies you can define to customize a branch
 - Pull requests are required to update the branch.
 - The branch can't be deleted.
 
+> [!NOTE]
+> Branch policies are applied to Pull Requests based on the target branch of the Pull Request. Branch policies should not be set on temporary branches that will be deleted after a pull request. Adding branch policies to temporary branches will cause automatic branch deletion to fail.
+
 :::row:::
    :::column span="2":::
       **Policy**
