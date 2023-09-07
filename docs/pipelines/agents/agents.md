@@ -349,7 +349,7 @@ The payload of the messages exchanged between the agent and Azure Pipelines/Azur
 
 > [!NOTE]
 > The agent provides support for UTF-8 client encoding output. 
-> However, if your system has a different encoding from UTF-8, you might encounter some problems with the output of logs, e.g. the logs contain characters that are not recognized by your system’s encoding so they might appear as garbled or missing symbols.
+> However, if your system has a different encoding from UTF-8, you might encounter some problems with the output of logs. For example, the logs might contain characters that aren't recognized by your system’s encoding so they might appear as garbled or missing symbols.
 
 ::: moniker range="azure-devops"
 
