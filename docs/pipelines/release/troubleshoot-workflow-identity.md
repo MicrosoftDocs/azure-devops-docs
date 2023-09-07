@@ -26,7 +26,16 @@ Get help debugging common issues with workflow identity service connections and 
 
 ### Review pipeline tasks
 
-Not all pipelines tasks support workflow identity. During the preview, no Azure Marketplace tasks support workflow identity service connections. Check the [list of supported tasks](https://github.com/microsoft/azure-pipelines-tasks/blob/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/troubleshooting.md#task-coverage). Packer and Service Fabric don't currently support workflow identity. 
+Not all pipelines tasks support workflow identity. During the preview, no Azure Marketplace tasks support workflow identity service connections. The following tasks do not currently support with workflow identity federation.
+
+- AzureCloudPowerShellDeploymentV1
+- AzCopy (AzureFileCopyV1, AzureFileCopyV2, AzureFileCopyV3, AzureFileCopyV4,AzureFileCopyV5 )
+- AzureIoTEdgeV2
+- AzureMonitorAlertsV0
+- AzureNLBManagementV1
+- PackerBuild (PackerBuildV0, PackerBuildV1)
+- ServiceFabricComposeDeployV0
+- ServiceFabricDeployV1	
 
 ### Verify workflow identity federation is active
 
@@ -43,7 +52,7 @@ You can fix the issuer URL by editing and saving the service connection to updat
 
 ## Common issues and causes
 
-### I can't enable features for my organization
+<!-- ### I can't enable features for my organization
 
 I want to set up workflow identity but I don't see the option to turn it on. 
 
@@ -51,14 +60,28 @@ I want to set up workflow identity but I don't see the option to turn it on.
 
 1. Find your organization owners on the organization settings page `https://dev.azure.com/<org>/_settings/organizationOverview`. 
 1. Make sure the preview feature Workload Identity federation for ARM service connections is enabled for your organization, see [manage or enable features](../../project/navigation/preview-features.md). 
-
+ -->
 
 ### I don't have permission to create a service principal in the Azure Entra ID tenant
 
 You can't use the the service connection configuration tool when you don't have the correct permissions. Your permission level is inadequate if you don't have permission to create service principals or you are using a different Azure Entra ID tenant than your Azure DevOps user. 
+
+You need to either have permission in Microsoft Entra ID to create app registrations or you need to have an appropriate role (example: Application Developer).
 
 You have two options:
 
 * [Solution 1: Manually configure workflow identity with managed identity](configure-workflow-identity.md#workflow-identity-with-managed-identity)
 * [Solution 2: Manually configure workflow identity with a service principal](configure-workflow-identity.md#workflow-identity-with-a-service-principal)
 
+## Error messages
+
+| Message | Plausible issue |
+|---------|-----------------|
+| *cannot request token: Get "?audience=api://AzureADTokenExchange": unsupported protocol scheme* | Task does not support workload identity federation. |
+| *Identity not found* | Task does not support workload identity federation. |
+| *Could not fetch access token for Azure* | Task does not support workload identity federation. |
+| \<Task\> *only support(s) service principal authorization* | Task does not support workload identity federation. |
+| *AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer: 'https://app.vstoken.visualstudio.com'. | The issuer url is not correct. The correct issuer url is https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX. You can fix the issuer URL by editing and re-saving a service connection. For identities that weren't created by Azure DevOps, you need to manually update the issuer. You can find the correct issuer in the edit dialog of the service connection, or or in the response (under authorization parameters) when using the REST API. |
+| *AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer: 'https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'. Assertion Subject: 'sc://\<org\>/\<project\>/\<service-connection\>'.* | Either the issuer url or federation subject does not match. This can happen when the Azure DevOps organization or project have been renamed, or a manually created service connection was renamed without updating the federation subject on the identity. |
+| *AADSTS700223* | Workload identity federation has been disabled on the Microsoft Entra ID tenant. |
+| *AADSTS700024: Client assertion is not within its valid time range* | You're using the AzureCLI task with `addSpnToEnvironment: true` to consume the `idToken` environment variable. The `idToken` has expired after 10 minutes. |
