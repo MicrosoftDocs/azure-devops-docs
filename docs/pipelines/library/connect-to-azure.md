@@ -35,11 +35,9 @@ To deploy your app to an Azure resource (to an app service or to a virtual machi
 
 We recommend this approach if:
 
-* You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
-* You have permission in Azure Active Directory to create app registrations. App registrations are not disabled and you have an appropriate role (example: Application Developer).
+* You have the Owner role for your Azure subscription.
 * You're not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
 * You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS.
-* You are in a supported region. See [unsupported regions](/azure/active-directory/workload-identities/workload-identity-federation-considerations#unsupported-regions-user-assigned-managed-identities).
 * Any Marketplace extensions tasks used have been updated to support workload identity federation. 
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
