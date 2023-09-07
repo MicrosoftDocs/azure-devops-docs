@@ -73,10 +73,10 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Backlogs | 10,000 work items |
 | Boards | 1,000 cards (excluding those cards in the *[Proposed](../../../boards/work-items/workflow-and-state-categories.md)*[ and ](../../../boards/work-items/workflow-and-state-categories.md)*[Completed](../../../boards/work-items/workflow-and-state-categories.md)*[ workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) |
 | Taskboard | 1,000 tasks  |
-| Area Paths | 10,000 per organization |
+| Area Paths | 10,000 per project |
 | Area Path Depth | 14 |
 | Area Paths per team | 300 |
-| Iteration Paths | 10,000 per organization |
+| Iteration Paths | 10,000 per project |
 | Iteration Path Depth | 14 |
 | Iteration Paths per team | 300 |
 | Project Dashboards | 500 per project |
