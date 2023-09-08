@@ -1,28 +1,111 @@
 ---
-title: Connect to Microsoft Azure
+title: Connect to Microsoft Azure with an ARM service connection
 ms.custom: seodec18, devx-track-arm-template
 description: Use an ARM service connection to connect Azure Pipelines or TFS to Microsoft Azure
 ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 10/15/2020
+ms.date: 08/15/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Connect to Microsoft Azure
+# Connect to Microsoft Azure with an ARM service connection
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-To deploy your app to an Azure resource (to an app service or to a virtual machine), you need an Azure Resource Manager service connection. 
+You can use an Azure Resource Manager (ARM) service connection to connect to Azure resources with Service Principal Authentication (SPA) or an Azure-Managed Service Identity.  With an Azure Resource Manager service connection, you can use a pipeline to deploy to Azure resources like an App Service app without needing to reauthenticate each time. 
+
+There are multiple options for connecting to Azure with Azure Resource Manager service connections:
+
+::: moniker range="azure-devops"
+* service principal or managed identity with workflow identity federation
+::: moniker-end
+* service principal with secret	
+* agent-assigned managed identity	 
 
 > For other types of connection, and general information about creating and using connections, see [Service connections for builds and releases](service-endpoints.md).
 
+::: moniker range="azure-devops"
+
+## Create an Azure Resource Manager service connection using workload identity federation 
+
+[!INCLUDE [workflow-identity-preview](../release/includes/workflow-identity-preview.md)]
+
+[Workflow identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses Open ID Connect to authenticate with Azure Active Directory protected resources without needing to manage secrets. 
+
+We recommend this approach if:
+
+* You have the Owner role for your Azure subscription.
+* You're not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
+* You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS.
+* Any Marketplace extensions tasks used have been updated to support workload identity federation. 
+
+### Create a new workflow identity federation service connection
+
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+
+1. Choose **+ New service connection** and select **Azure Resource Manager**.
+
+   ![Screenshot of choosing a workflow identity service connection type.](media/new-service-connection-azure-resource-manager.png)
+
+1. Select **Workload identity federation (automatic)**. 
+
+   ![Screenshot of selecting a workload identity service connection type.](media/select-workload-identity-service.png)
+
+1. Specify the following parameters.
+
+   | Parameter | Description |
+   | --------- | ----------- |
+   | Subscription | Select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
+   | Resource Group | Leave empty to allow users to access all resources defined within the subscription, or select a resource group to which you want to restrict users' access (users will be able to access only the resources defined within that group). |
+   | Service connection name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure subscription. |
+
+
+1. After the new service connection is created, copy the connection name into your code as the `azureSubscription` value.
+
+1. To deploy to a specific Azure resource, the task will need additional data about that resource. Go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
+
+### Convert an existing ARM service connection to use workflow identity federation
+
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+
+1. Go to **Pipelines** > **Service connections** and open an existing service connection. 
+
+1. Select the service connection you want to convert to use workflow identity. 
+
+1. Select **Convert**. 
+
+    :::image type="content" source="media/federated-convert-credential.png" alt-text="Screenshot of selecting convert for federated credential.":::
+
+1. Select **Convert** again to confirm that you want to create a new service connection. You will have seven days to revert the connection. The conversion may take a few minutes to process. Once the process completes, you'll be able to use the new service connection. 
+
+### Revert an existing ARM service connection to use a service principal secret
+
+You can revert a converted service connection with its secret for seven days. After seven days, you'll need to manually create a new secret.
+
+To revert a connection:
+
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+
+1. Go to **Pipelines** > **Service connections** and open an existing service connection. 
+
+1. Select the service connection you want to revert. 
+
+1. Select **Revert conversion to the original scheme**. 
+
+    :::image type="content" source="media/federated-revert-credential.png" alt-text="Screenshot of selecting revert for federated credential.":::
+
+1. Select **Revert** again to confirm your choice. 
+
+::: moniker-end
+
+
 ::: moniker range=">=azure-devops-2020"
 
-## Create an Azure Resource Manager service connection using automated security
+## Create an Azure Resource Manager service connection using a service principal secret
 
 We recommend this simple approach if:
 
@@ -72,6 +155,7 @@ or if you want to further limit users' permissions, you can instead use a [servi
 or a [VM with a managed service identity](#use-msi).  
 
 ::: moniker-end
+
 
 <a name="use-spn"></a>
 
