@@ -107,20 +107,20 @@ Restricting the parameters is useful when a user-configurable part of the pipeli
 
 <a name="shellTasksValidation"></a> 
 
-### Enable shell tasks Arguments parameter validation
+### Enable shell tasks arguments parameter validation
 
-Pipelines can reference tasks that are executed in the pipeline. Several tasks included in Azure DevOps have an arguments parameter that enables you to specify additional options for the task.
+Pipelines can reference tasks that are executed in the pipeline. Several tasks included in Azure DevOps have an arguments parameter that lets you specify more options for the task.
 
-When the setting *Enable shell tasks arguments Parameter validation* is enabled, the arguments parameter is checked for any characters that may not be executed correctly by the shell, such as semi-colons, quotes, or parentheses.
+When the setting *Enable shell tasks arguments parameter validation* is enabled, the arguments parameter is reviewed for any characters that may not be executed correctly by the shell. Example characters include semi-colons, quotes, and parentheses.
 
-Similar to *Limit variables that can be set at queue time*,  *Enable shell tasks arguments Parameter validation* may be configured at the organization-level at **Settings** > **Pipelines** > **Settings** or at the project-level at **Settings** > **Pipelines** > **Settings**.
+Similar to the *Limit variables that can be set at queue time* option,  *Enable shell tasks arguments parameter validation* may be configured at the organization-level at **Settings** > **Pipelines** > **Settings** or at the project-level at **Settings** > **Pipelines** > **Settings**.
 
-When enabled, if validation detects an issue, an error message like the following is logged: ``
+When enabled, there's a detected validation issue, an error message like the following is logged: ``
 Detected characters in arguments that may not be executed correctly by the shell. Please escape special characters using backtick (`).``
 
 To resolve the issue, adjust the arguments by escaping special characters as indicated in the error message.
 
-When *Enable shell tasks argument validation is enabled*, validation is applied to the arguments parameter in the following tasks.
+When *Enable shell tasks arguments parameter validation* is enabled, validation is applied to the arguments parameter in the following tasks.
 
 - PowerShell 
 - BatchScript
