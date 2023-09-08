@@ -124,9 +124,6 @@ An APK must be signed to run on a device instead of an emulator. Zipaligning red
 
 ### Test on the Android Emulator
 
-> [!NOTE]
-> The Android Emulator is currently available only on the **Hosted macOS** agent.
-
 Create the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task and copy paste the code below in order to install and run the emulator. 
 Don't forget to arrange the emulator parameters to fit your testing environment.
  The emulator starts as a background process and is available in later tasks.
