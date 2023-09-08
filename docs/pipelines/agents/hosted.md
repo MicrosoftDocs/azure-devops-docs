@@ -214,12 +214,12 @@ namespace WeeklyFileIPRanges
 
             foreach (string region in USGeographyRegions)
             {
-                string azureCloudRegion = $"AzureCloud.{region}";
-                Console.WriteLine(azureCloudRegion);
+                string tag = $"AzureCloud.{region}";
+                Console.WriteLine(tag);
 
                 var ipList =
                     from v in values
-                    where (string)v["name"] == azureCloudRegion
+                    where tag.Equals((string)v["name"], StringComparison.OrdinalIgnoreCase)
                     select v["properties"]["addressPrefixes"];
 
                 foreach (var ip in ipList.Children())
