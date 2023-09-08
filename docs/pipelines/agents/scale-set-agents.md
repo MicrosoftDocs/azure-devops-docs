@@ -146,6 +146,11 @@ In the following example, a new resource group and Virtual Machine Scale Set are
 > [!IMPORTANT]
 > Azure Pipelines does not support [instance protection](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-protection). Make sure you have the *scale-in* and *scale set actions* instance protections disabled.
 
+### Orchestration modes
+Azure virtual machine scale sets can be configured with two [orchestration modes](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes): Uniform and Flexible. The Uniform orchestration mode is generally available, to all customers.
+
+The Flexible orchestration mode enables Azure Pipelines to queue multiple scale set operations in parallel. Azure Pipelines support for Flexible orchestration is available upon request and is subject to evaluation. Customers' usage patterns need to indicate a significant benefit from it. Such customers have large scale sets, do not reuse agents for multiple jobs, run multiple, short-lived jobs in parallel, and exclusively use ephemeral disks in their VMs. If you would like to use this feature, reach out to our [support team](https://azure.microsoft.com/support/devops/).
+
 ## Create the scale set agent pool
 
 1. Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select **Add pool** to create a new agent pool.
