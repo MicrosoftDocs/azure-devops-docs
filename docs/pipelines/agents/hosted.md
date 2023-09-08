@@ -188,7 +188,7 @@ namespace WeeklyFileIPRanges
     class Program
     {
         // Path to the locally saved weekly file
-        const string weeklyFilePath = @"C:\MyPath\ServiceTags_Public_20210823.json";
+        const string weeklyFilePath = @"C:\MyPath\ServiceTags_Public_20230904.json";
 
         static void Main(string[] args)
         {
