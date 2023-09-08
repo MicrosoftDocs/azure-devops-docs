@@ -370,62 +370,66 @@
           displayName: iis, server, winrm
 - name: Deploy to Azure
   items:
-  - name: Deploy to Azure overview
-    href: overview-azure.md
-  - name: Azure Resource Manager service connection
-    displayName: resource manager, service connection, service principal
-    href: library/connect-to-azure.md
-  - name: Azure App Service (Web Apps)
-    items:
-    - name: App Service
-      href: /azure/app-service/deploy-azure-pipelines
-    - name: Azure Web App for Containers
-      displayName: containers, docker, azure web app
-      href: apps/cd/deploy-docker-webapp.md
-  - name: Azure Functions
-    items:
+    - name: Overview
+      href: overview-azure.md
+    - name: Connect to Azure
+      items:
+        - name: Azure Resource Manager service connection
+          href: library/connect-to-azure.md
+          displayName: resource manager, service connection, service principal
+        - name: Troubleshoot workflow identity service connections
+          href: release/troubleshoot-workflow-identity.md
+        - name: Manually configure workflow identity service connections
+          href: release/configure-workflow-identity.md
+    - name: Azure App Service (Web Apps)
+      items:
+        - name: App Service
+          href: /azure/app-service/deploy-azure-pipelines
+        - name: Azure Web App for Containers
+          href: apps/cd/deploy-docker-webapp.md
+          displayName: containers, docker, azure web app
     - name: Azure Functions
       href: /azure/azure-functions/functions-how-to-azure-devops
-  - name: Azure Resource Manager (ARM) templates
-    items:
-    - name: Use a Resource Manager template to deploy
-      displayName: Resource Manager, ARM, azure
-      href: apps/cd/azure/deploy-arm-template.md
-  - name: Azure Databricks
-    items:
-    - name: Data pipeline overview
-      displayName: data science, machine learning
-      href: apps/cd/azure/cicd-data-overview.md
-    - name: Build a data pipeline
-      href: apps/cd/azure/build-data-pipeline.md
-  - name: Azure Machine Learning
-    href: /azure/machine-learning/how-to-devops-machine-learning
-  - name: Azure Databases
-    items:
-    - name: Azure SQL database
-      href: targets/azure-sqldb.md
-    - name: Azure MySQL database
-      href: /azure/mysql/single-server/azure-pipelines-mysql-deploy
-  - name: Azure Virtual Machine Scale Set
-    items:
-    - name: Deploy a virtual machine scale set
-      displayName: vmss, custom image
-      href: apps/cd/azure/deploy-virtual-scale-set-java.md
-  - name: Azure Stack
-    href: targets/azure-stack.md
-  - name: Azure Container Registry
-    items:
-    - name: Build and push to Azure Container Registry with a Docker template
-      href: ecosystems/containers/acr-template.md
-    - name: Build and push to Azure Container Registry - Managed Service Identity
-      href: ecosystems/containers/publish-to-acr.md
-  - name: Azure Kubernetes Service
-    items:
-    - name: Build and deploy to Azure Kubernetes Service
-      href: /azure/aks/devops-pipeline
-  - name: Azure Policy Compliance (Classic)
-    displayName: policy, compliance
-    href: /azure/governance/policy/tutorials/policy-devops-pipelines
+    - name: Azure Resource Manager (ARM) templates
+      items:
+       - name: Use a Resource Manager template to deploy
+         displayName: Resource Manager, ARM, azure
+         href: apps/cd/azure/deploy-arm-template.md
+    - name: Azure Databricks
+      items:
+       - name: Data pipeline overview
+         displayName: data science, machine learning
+         href: apps/cd/azure/cicd-data-overview.md
+       - name: Build a data pipeline
+         href: apps/cd/azure/build-data-pipeline.md
+    - name: Azure Machine Learning
+      href: /azure/machine-learning/how-to-devops-machine-learning
+    - name: Azure Databases
+      items:
+       - name: Azure SQL database
+         href: targets/azure-sqldb.md
+       - name: Azure MySQL database
+         href: /azure/mysql/single-server/azure-pipelines-mysql-deploy
+    - name: Azure Virtual Machine Scale Set
+      items:
+       - name: Deploy a virtual machine scale set
+         displayName: vmss, custom image
+         href: apps/cd/azure/deploy-virtual-scale-set-java.md
+    - name: Azure Stack
+      href: targets/azure-stack.md
+    - name: Azure Container Registry
+      items:
+       - name: Build and push to Azure Container Registry with a Docker template
+         href: ecosystems/containers/acr-template.md
+       - name: Build and push to Azure Container Registry - Managed Service Identity
+         href: ecosystems/containers/publish-to-acr.md
+    - name: Azure Kubernetes Service
+      items:
+       - name: Build and deploy to Azure Kubernetes Service
+         href: /azure/aks/devops-pipeline
+    - name: Azure Policy Compliance (Classic)
+      displayName: policy, compliance
+      href: /azure/governance/policy/tutorials/policy-devops-pipelines
 - name: Deploy apps using containers
   items:
   - name: Build images
