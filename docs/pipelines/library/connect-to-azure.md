@@ -89,7 +89,9 @@ We recommend this approach if:
 
 ### Revert an existing ARM service connection to use workflow identity federation
 
-You can revert a converted service connection for seven days. To revert a connection:
+You can revert a converted service connection with its secret for seven days. After seven days, you'll need to manually create a new secret.
+
+To revert a connection:
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
 
@@ -158,7 +160,6 @@ or if you want to further limit users' permissions, you can instead use a [servi
 or a [VM with a managed service identity](#use-msi).  
 
 ::: moniker-end
-
 
 
 <a name="use-spn"></a>
