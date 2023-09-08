@@ -182,6 +182,9 @@
     - name: Manage dependencies with upstream sources
       href: tutorials/protect-oss-packages-with-upstream-sources.md
       displayName: dependecies, artifacts, upstreams, public package 
+    - name: Use upstream sources with public feeds
+      href: how-to/public-feeds-upstream-sources.md
+      displayName: upstream, public feed 
     - name: Search for packages in upstream sources
       href: how-to/search-upstream.md
       displayName: search packages, upstreams 
