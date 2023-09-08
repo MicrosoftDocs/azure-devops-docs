@@ -49,11 +49,11 @@ We recommend this approach if:
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Choosing a workflow identity service connection type](media/new-service-connection-arm.png)
+   ![Screenshot of choosing a workflow identity service connection type.](media/new-service-connection-azure-resource-manager.png)
 
 1. Select **Workload identity federation (automatic)**. 
 
-   ![Select workload identity service connection type](media/select-workload-identity-service.png)
+   ![Screenshot of selecting a workload identity service connection type.](media/select-workload-identity-service.png)
 
 1. Specify the following parameters.
 

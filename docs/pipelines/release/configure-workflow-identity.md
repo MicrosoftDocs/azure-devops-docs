@@ -115,7 +115,7 @@ You may need to manually create a service principal with federated credentials a
 
 1. In Azure portal, go to [app registrations](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps). 
 1. Select **New registration**. 
-1. 
+
     :::image type="content" source="approvals/media/new-app-registration.png" alt-text="Screenshot of new app registration.":::
 
 1. Enter a **Name** for your app registration and select **Who can use this application or access this API**. 
