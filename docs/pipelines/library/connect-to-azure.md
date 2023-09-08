@@ -32,7 +32,7 @@ There are multiple options for connecting to Azure with Azure Resource Manager s
 
 ## Create an Azure Resource Manager service connection using workload identity federation 
 
-[!INCLUDE [workflow-identity-preview](includes/workflow-identity-preview.md)]
+[!INCLUDE [workflow-identity-preview](../release/includes/workflow-identity-preview.md)]
 
 [Workflow identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses Open ID Connect to authenticate with Azure Active Directory protected resources without needing to manage secrets. 
 
