@@ -32,12 +32,7 @@ There are multiple options for connecting to Azure with Azure Resource Manager s
 
 ## Create an Azure Resource Manager service connection using workload identity federation 
 
-> [!IMPORTANT]
-> Workload identity federation for Azure Resource Manager is currently in public preview.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
->
-> This feature is in public preview and may not be available yet in your region. To request early access, go to [https://aka.ms/azdo-rm-workload-identity-preview](https://aka.ms/azdo-rm-workload-identity-preview).
-
+[!INCLUDE [workflow-identity-preview](includes/workflow-identity-preview.md)]
 
 [Workflow identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses Open ID Connect to authenticate with Azure Active Directory protected resources without needing to manage secrets. 
 
@@ -87,7 +82,7 @@ We recommend this approach if:
 
 1. Select **Convert** again to confirm that you want to create a new service connection. You will have seven days to revert the connection. The conversion may take a few minutes to process. Once the process completes, you'll be able to use the new service connection. 
 
-### Revert an existing ARM service connection to use workflow identity federation
+### Revert an existing ARM service connection to use a service principal secret
 
 You can revert a converted service connection with its secret for seven days. After seven days, you'll need to manually create a new secret.
 
