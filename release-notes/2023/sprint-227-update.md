@@ -15,7 +15,7 @@ Check out the release notes to learn more about these features.
 
 ### Azure Boards
 
-[!INCLUDE [sprint-227-update-links](includes/general/sprint-227-update-links.md)]
+[!INCLUDE [sprint-227-update-links](includes/boards/sprint-227-update-links.md)]
 
 ### Azure Pipelines
 
@@ -27,7 +27,7 @@ Check out the release notes to learn more about these features.
 
 ## Azure Boards
 
-[!INCLUDE [sprint-227-update](includes/general/sprint-227-update.md)]
+[!INCLUDE [sprint-227-update](includes/boards/sprint-227-update.md)]
 
 ## Azure Pipelines
 
