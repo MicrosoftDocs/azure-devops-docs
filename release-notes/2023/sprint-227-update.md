@@ -13,7 +13,7 @@ In Azure Pipelines, we added a centralized control to improve the security of pu
 
 Check out the release notes to learn more about these features.
 
-### General
+### Azure Boards
 
 [!INCLUDE [sprint-227-update-links](includes/general/sprint-227-update-links.md)]
 
@@ -25,11 +25,7 @@ Check out the release notes to learn more about these features.
 
 [!INCLUDE [sprint-227-update-links](includes/repos/sprint-227-update-links.md)]
 
-### Azure Artifacts
-
-[!INCLUDE [sprint-227-update-links](includes/artifacts/sprint-227-update-links.md)]
-
-## General
+## Azure Boards
 
 [!INCLUDE [sprint-227-update](includes/general/sprint-227-update.md)]
 
@@ -40,10 +36,6 @@ Check out the release notes to learn more about these features.
 ## Azure Repos
 
 [!INCLUDE [sprint-227-update](includes/repos/sprint-227-update.md)]
-
-## Azure Artifacts
-
-[!INCLUDE [sprint-227-update](includes/artifacts/sprint-227-update.md)]
 
 ## Next steps
 
