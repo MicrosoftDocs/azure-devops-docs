@@ -5,4 +5,4 @@ ms.date: 9/12/2023
 ms.topic: include
 ---
 
-- [Support SP MI in Boards](#support-sp-mi-in-Boards)
+- [Limits for Area and Iteration Paths](#limits-for-area-and-iteration-paths)
