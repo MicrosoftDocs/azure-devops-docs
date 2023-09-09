@@ -6,13 +6,6 @@ ms.topic: include
 ---
 
 
-### Pipeline Agent config
-
-
-
-### Upgrade AzDO owned tasks to Node 16
-
-
 ###  Pipeline agents can be registered using a Service Principal
 
 As Azure DevOps Service Service Principals support in preview, we have added the capability to use a Service Principal to register a Pipelines agent with Azure DevOps Service:
@@ -34,6 +27,9 @@ Azure VM's can be included in Deployment Groups using a [VM Extension](https://l
   "tenantId": "[parameters('tenantId')]"      
 }
 ```
+### Pipeline Agent config
+
+
 ###  Public preview of Workload Identity Federation in Azure Pipelines
 
 Want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](https://learn.microsoft.com/azure/active-directory/workload-identities/workload-identity-federation) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
@@ -60,7 +56,11 @@ All of the Azure tasks that are included with Azure Pipelines now support this n
 
 For this preview, we support workload identity federation only for Azure service connections. This scheme does not work with any other types of service connections. See our docs for more details.
 
-### Validate Azure RBAC when selecting an Azure subscription
+### REST APIs for Environments
+
+An [Environments]() is a collection of resources that you can target with deployments from a pipeline. Environments provide you deployment history, traceability for work items and commits, and access control mechanisms.
+
+We know you want to create environments [programmatically](https://developercommunity.visualstudio.com/t/rest-api-to-manage-environments-yaml-pipelines/859033), so we published documentation for their [REST API](https://learn.microsoft.com/en-us/rest/api/azure/devops/environments/environments/add).
 
 ### Improvements to Approvals REST API
 
@@ -68,8 +68,33 @@ We made searching for approvals assigned to a user more thorough by including ap
 
 We made approving pending approvals easier by including information about the pipeline run they belong to.
 
-### Incorrect APIs for VMs and VM groups
+### Prevent Unintended Pipeline Runs
 
-### Default Centralised build control to Build Securely
+Today, if your YAML pipeline doesn't specify a `trigger` section, it runs for any changes pushed to its repository. This can create confusion as to why a pipeline ran and lead to many unintended runs.
 
-### Prevent unintended pipeline triggers
+We added an organization- and project-level Pipelines setting named _Disable implied YAML CI trigger_ that lets you change this behavior. You can choose to not trigger pipelines if their trigger section is missing.
+
+> [!div class="mx-imgBorder"]
+> ![ Screenshot of YAML CI trigger.](../../media/227-pipelines-01.png " Screenshot of YAML CI trigger")
+
+### Build GitHub Repositories Securely by Default
+
+Last sprint, we introduced a [centralized control for building PRs from forked GitHub repos](https://learn.microsoft.com/en-us/azure/devops/release-notes/2023/sprint-226-update#centralized-control-for-building-prs-from-forked-github-repos).
+
+Starting with this sprint, we are enabling the `Securely build pull requests from forked repositories` option at organization level, for new organizations. Existing organizations are unaffected.
+
+### Disabled override of code coverage policy status to Failed when build is failing.
+
+Earlier code coverage policy status was also overridden to Failed if build in PR was failing.
+This was acting as a blocker for some customers where they had build as optional check and code coverage policy was a required check for PR. PRs were blocked because of it.
+
+> [!div class="mx-imgBorder"]
+> ![ Screenshot of PRs blocked.](../../media/227-pipelines-02.png " Screenshot of PRs blocked")
+
+Results after this change : Code coverage policy won't be overridden to Failed if build fails.
+This feature will be enabled for all customers.
+
+> [!div class="mx-imgBorder"]
+> ![ Screenshot of Results after change.](../../media/227-pipelines-03.png " Screenshot of Results after change")
+
+
