@@ -4,16 +4,17 @@ description: How to use npm scopes in Azure Artifacts
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 06/08/2022
+ms.date: 09/11/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Npm scopes
+# Use Npm scopes in Azure Artifacts
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Npm scopes are a way of grouping related packages together. A scope allows you to create a package with the same name as other packages created by different users without conflicts. Using scopes, you can separate public and private packages by adding the scope prefix *@SCOPE_NAME* and configuring the *.npmrc* file to only use a feed for that scope.
-With Azure Artifacts, you can publish and download both scoped and non-scoped packages to/from feeds or public registries. Using npm scopes is also useful with self-hosted on-premise servers that do not have internet access because setting up upstream sources in that case is not possible. Using scopes:
+Npm scopes serve as a means to categorize related packages into groups. These scopes enable you to create packages with identical names to those created by different users without encountering conflicts. By using scopes, you have the ability to segregate public and private packages by adding the scope prefix *@scopeName* and configuring the .npmrc file to exclusively use a feed with that particular scope.
+
+Azure Artifacts provides the capability to publish and download both scoped and non-scoped packages from feeds or public registries. Npm scopes are particularly valuable when working with self-hosted on-premise servers lacking internet access, as configuring upstream sources in such scenarios is not feasible. In summary, when using scopes:
 
 - We don't have to worry about name collisions.
 - No need to change the npm registry in order to install or publish our packages.
