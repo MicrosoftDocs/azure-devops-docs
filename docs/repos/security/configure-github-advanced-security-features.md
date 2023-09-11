@@ -49,7 +49,7 @@ If your organization uses self-hosted agents, there are more requirements:
 
 * Install the CodeQL bundle to the agent tool cache: 
     1.	Pick the latest CodeQL release bundle from [GitHub](https://github.com/github/codeql-action/releases).
-    2.	Download and unzip the bundle to the following directory inside the agent tools directory, typically located under `_work/_tools`: `./CodeQL/0.0.0-[codeql-release-bundle-tag (i.e. codeql-bundle-20221105)]/x64/`. Learn more about the [agent tools directory](https://github.com/microsoft/azure-pipelines-tool-lib/blob/master/docs/overview.md#tool-cache). 
+    2.	Download and unzip the bundle to the following directory inside the agent tool directory, typically located under `_work/_tool`: `./CodeQL/0.0.0-[codeql-release-bundle-tag (i.e. codeql-bundle-v2.14.2)]/x64/`. Learn more about the [agent tool directory](https://github.com/microsoft/azure-pipelines-tool-lib/blob/master/docs/overview.md#tool-cache). 
     3.	Create an empty file at `./CodeQL/0.0.0-[codeql-release-bundle-tag (i.e. codeql-bundle-20221105)]/x64.complete`
 
 
