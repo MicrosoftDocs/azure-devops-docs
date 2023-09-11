@@ -141,7 +141,7 @@ The following built-in functions can be used in expressions.
 ::: moniker range=">= azure-devops-2019"
 
 ### coalesce
-* Evaluates the parameters in order, and returns the value that does not equal null or empty-string.
+* Evaluates the parameters in order, and returns the first value that does not equal null or empty-string.
 * Min parameters: 2. Max parameters: N
 * Example: `coalesce(variables.couldBeNull, variables.couldAlsoBeNull, 'literal so it always works')`
 
