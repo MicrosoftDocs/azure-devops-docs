@@ -3,10 +3,12 @@ ms.topic: include
 ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 05/25/2022
+ms.date: 09/11/2023
 ---
 
 ::: moniker range=">= azure-devops-2019"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select **Connect to feed**.
 
@@ -16,11 +18,21 @@ ms.date: 05/25/2022
 
 1. Add a `.npmrc` file in the same directory as your package.json, and paste the following snippet into your file.
 
-    ```JSON
-    registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/
+    - **Organization-scoped feed**:
     
-    always-auth=true
-    ```
+        ```Command
+        registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME/_packaging/<FEED_NAME>/npm/registry/
+        
+        always-auth=true
+        ```
+
+    - **Project-scoped feed**:
+
+        ```Command
+        registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
+        
+        always-auth=true
+        ```
 
 ### Set up credentials
 
@@ -54,7 +66,7 @@ ms.date: 05/25/2022
 
 1. Generate a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scopes.
 
-1. Run the following command to encode your newly generated personal access token. Paste your personal access token when prompted.
+1. Run the following command to encode your newly generated personal access token. When prompted, paste your personal access token and then copy the resulting Base64 encoded value.
 
     ```Command
     node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
@@ -66,11 +78,13 @@ ms.date: 05/25/2022
 
 ::: moniker range="tfs-2018"
 
+1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
+
+1. Select **Build and Release**.
+
 1. Select **Packages**, and then select **Connect to feed**.
 
-1. Select **npm**.
-
-1. Select **Generate npm credentials**, and then copy the credentials and add them to your .npmrc file.
+1. Select **npm** and then select **Generate npm credentials**, and then copy the credentials and add them to your .npmrc file.
 
     :::image type="content" source="../../media/tfs2018-connect-to-npm-feed.png" alt-text="Screenshot showing how to generate npm credentials in TFS.":::
 
