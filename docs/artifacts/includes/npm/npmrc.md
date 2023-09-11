@@ -12,7 +12,7 @@ ms.date: 09/11/2023
 
 1. Select **Artifacts**, and then select **Connect to feed**.
 
-    :::image type="content" source="../../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot showing how to connect to a feed.":::
+    :::image type="content" source="../../npm/media/npm-scopes-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed.":::
 
 1. Select **npm**, and then select **Other**.
 

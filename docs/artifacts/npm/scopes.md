@@ -24,19 +24,40 @@ Azure Artifacts provides the capability to publish and download both scoped and 
 
 [!INCLUDE [](../includes/npm/npmrc.md)]
 
-In your .npmrc file, replace `registry=<YOUR_SOURCE_URL>` with `@SCOPE_NAME:registry=<YOUR_SOURCE_URL>`. Make sure you add the scope and package names to your *package.json* file: `{ "name": "@SCOPE_NAME/PACKAGE_NAME" }`.
+## Scope setup
 
-```npmrc
-@[SCOPE_NAME]:registry=https://pkgs.dev.azure.com/[ORGANIZATION_NAME]/_packaging/[FEED_NAME]/npm/registry/
+In your .npmrc file, replace `registry=<YOUR_SOURCE_URL>` with `@ScopeName:registry=<YOUR_SOURCE_URL>`. 
+
+Make sure to include both the scope and package names in your package.json file as follows:  `{ "name": "@ScopeName/PackageName" }`. See the examples below:
+
+- **Organization-scoped feed**:
+
+```.npmrc file
+@ScopeName:registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/
     
 always-auth=true
 ```
 
 ```package.json
 {
-"name": "[@SCOPE_NAME]/[PACKAGE_NAME]" 
+"name": "@ScopeName/PackageName" 
 }
 ```
+
+- **Project-scoped feed**:
+
+```.npmrc file
+@ScopeName:registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
+    
+always-auth=true
+```
+
+```package.json
+{
+"name": "@ScopeName/PackageName" 
+}
+```
+
 ## Upstream sources vs scopes
 
 Upstream sources give you the most flexibility to use a combination of scoped and non-scoped packages in your feed, as well as scoped and non-scoped packages from public registries such as npmjs.com.
