@@ -9,9 +9,7 @@ description: Workload Identity Federation for Azure service connections is now i
 
 We are excited to announce that Workload Identity Federation for Azure service connections is now in public preview! In addition, the Azure (ARM) service connection has also been updated with an additional scheme to support Workload identity federation.
 
-In Boards, we are introducing hard limits of 10,000 per project for both Area and Iteration paths.
-
-Check out the release notes to learn more about the latest features.
+Check out the release notes to learn how you can sign up for the public preview.
 
 ### Azure Boards
 
