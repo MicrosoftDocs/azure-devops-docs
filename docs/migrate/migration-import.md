@@ -489,7 +489,7 @@ After the import has finished, you can delete the blob container and accompanyin
 
 A [shared access signature (SAS) token](/azure/storage/common/storage-sas-overview) provides delegated access to resources in a storage account. The token allows you to give Microsoft the lowest level of privilege that's required to access your data for executing the import. 
 
-SAS tokens can be [generated using the Azure Portal](/azure/storage/blobs/blob-containers-portal#generate-a-shared-access-signature). From a security point-of-view, we recommend:
+SAS tokens can be [generated using the Azure portal](/azure/storage/blobs/blob-containers-portal#generate-a-shared-access-signature). From a security point-of-view, we recommend:
 
 1. Selecting only **Read** and **List** as permissions for your SAS token. No other permissions are required.
 2. Setting an expiry time no further than seven days into the future.
