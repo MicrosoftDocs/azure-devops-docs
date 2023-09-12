@@ -36,7 +36,7 @@ The pipelines agent gained support for [Azure Entra ID Device Code Flow](https:/
 
 ###  Public preview of Workload Identity Federation in Azure Pipelines
 
-Want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](https://learn.microsoft.com/azure/active-directory/workload-identities/workload-identity-federation) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
+Want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
 
 As part of this feature, the Azure (ARM) service connection has been updated with an additional scheme to support Workload identity federation. This allows Pipeline tasks that use the Azure service connection to authenticate using a federation subject (sc://<org>/<project>/<service connection name>). The main benefits of using this scheme over existing authentication schemes are as follows:
 
@@ -64,7 +64,7 @@ For this preview, we support workload identity federation only for Azure service
 
 An [Environments]() is a collection of resources that you can target with deployments from a pipeline. Environments provide you deployment history, traceability for work items and commits, and access control mechanisms.
 
-We know you want to create environments [programmatically](https://developercommunity.visualstudio.com/t/rest-api-to-manage-environments-yaml-pipelines/859033), so we published documentation for their [REST API](https://learn.microsoft.com/en-us/rest/api/azure/devops/environments/environments/add).
+We know you want to create environments [programmatically](https://developercommunity.visualstudio.com/t/rest-api-to-manage-environments-yaml-pipelines/859033), so we published documentation for their [REST API](/rest/api/azure/devops/environments/environments/add).
 
 ### Improvements to Approvals REST API
 
@@ -83,7 +83,7 @@ We added an organization- and project-level Pipelines setting named _Disable imp
 
 ### Build GitHub Repositories Securely by Default
 
-Last sprint, we introduced a [centralized control for building PRs from forked GitHub repos](https://learn.microsoft.com/en-us/azure/devops/release-notes/2023/sprint-226-update#centralized-control-for-building-prs-from-forked-github-repos).
+Last sprint, we introduced a [centralized control for building PRs from forked GitHub repos](/azure/devops/release-notes/2023/sprint-226-update#centralized-control-for-building-prs-from-forked-github-repos).
 
 Starting with this sprint, we are enabling the `Securely build pull requests from forked repositories` option at organization level, for new organizations. Existing organizations are unaffected.
 

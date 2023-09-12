@@ -9,7 +9,7 @@ ms.topic: include
 
 - [Use Service Principal in Agent VM extension](#use-service-principal-in-agent-vm-extension)
 
-- [Pipeline Agent config](pipeline-agent-config)
+- [Azure Active Directory device code authentication flow for pipelines agent registration](#azure-active-directory-device-code-authentication-flow-for-pipelines-agent-registration)
 
 - [Public preview of Workload Identity Federation in Azure Pipelines](#public-preview-of-workload-identity-federation-in-azure-pipelines)
 
