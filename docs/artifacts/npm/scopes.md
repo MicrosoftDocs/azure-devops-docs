@@ -58,6 +58,27 @@ always-auth=true
 }
 ```
 
+- **Example**:
+
+
+```.npmrc file
+@local:registry=https://pkgs.dev.azure.com/FabrikamOrg/NpmDemo/_packaging/FabrikamFeed/npm/registry/
+    
+always-auth=true
+```
+
+```package.json
+{
+  "name": "@demo/js-e2e-express-server",
+  "version": "2.0.0",
+  "description": "JavaScript server written with Express.js",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  }
+```
+
 ## Upstream sources vs scopes
 
 Upstream sources give you the most flexibility to use a combination of scoped and non-scoped packages in your feed, as well as scoped and non-scoped packages from public registries such as npmjs.com.
