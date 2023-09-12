@@ -15,8 +15,6 @@ ms.topic: include
 
 - [REST APIs for Environments](#rest-apis-for-environments)
 
-- [Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
-
 - [Prevent Unintended Pipeline Runs](#prevent-unintended-pipeline-runs)
 
 - [Build GitHub Repositories Securely by Default](#build-github-repositories-securely-by-default) 
