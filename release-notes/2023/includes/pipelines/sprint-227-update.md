@@ -50,9 +50,8 @@ You can take advantage of these features in two ways:
 
 To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) or ([manual](https://aka.ms/azdo-rm-workload-identity-manual)) in the Azure service connection creation experience:
 
-<center>
-  <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/create-service-connection1-1.png" width="459" />
-</center>
+> [!div class="mx-imgBorder"]
+> ![ Screenshot of resource manager.](../../media/227-pipelines-05.png " Screenshot of resource manager")
 
 <center>
   <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/create-service-connection2-1.png" width="457" />
