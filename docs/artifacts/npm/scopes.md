@@ -32,52 +32,52 @@ Make sure to include both the scope and package names in your package.json file 
 
 - **Organization-scoped feed**:
 
-```.npmrc file
-@ScopeName:registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/
+    ```.npmrc file
+    @ScopeName:registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/
+        
+    always-auth=true
+    ```
     
-always-auth=true
-```
-
-```package.json
-{
-"name": "@ScopeName/PackageName" 
-}
-```
+    ```package.json
+    {
+    "name": "@ScopeName/PackageName" 
+    }
+    ```
 
 - **Project-scoped feed**:
 
-```.npmrc file
-@ScopeName:registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
-    
-always-auth=true
-```
+    ```.npmrc file
+    @ScopeName:registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
+        
+    always-auth=true
+    ```
 
-```package.json
-{
-"name": "@ScopeName/PackageName" 
-}
-```
+    ```package.json
+    {
+    "name": "@ScopeName/PackageName" 
+    }
+    ```
 
 - **Example**:
 
 
-```.npmrc file
-@local:registry=https://pkgs.dev.azure.com/FabrikamOrg/NpmDemo/_packaging/FabrikamFeed/npm/registry/
+    ```.npmrc file
+    @local:registry=https://pkgs.dev.azure.com/FabrikamOrg/NpmDemo/_packaging/FabrikamFeed/npm/registry/
+        
+    always-auth=true
+    ```
     
-always-auth=true
-```
-
-```package.json
-{
-  "name": "@demo/js-e2e-express-server",
-  "version": "2.0.0",
-  "description": "JavaScript server written with Express.js",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "test": "test"
-  }
-```
+    ```package.json
+    {
+      "name": "@demo/js-e2e-express-server",
+      "version": "2.0.0",
+      "description": "JavaScript server written with Express.js",
+      "main": "index.js",
+      "directories": {
+        "doc": "docs",
+        "test": "test"
+      }
+    ```
 
 ## Publish scoped packages
 
