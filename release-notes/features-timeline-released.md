@@ -38,6 +38,19 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="10"><a href="2023/sprint-227-update.md" data-raw-source="[12 September 2023](2023/sprint-227-update.md)"> 12 September 2023</a></td>
+    <td>Limits for Area and Iteration Paths</td><td>Boards</td><td>Future</td></tr>
+    <td>Pipeline agents can be registered using a Service Principal </td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use Service Principal in Agent VM extension</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Azure Active Directory device code authentication flow for pipelines agent registration</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Public preview of Workload Identity Federation in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>REST APIs for Environments</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Prevent Unintended Pipeline Runs</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Build GitHub Repositories Securely by Default</td><td>Pipelines</td><td>Future</td><tr>   
+    <td>Disabled override of code coverage policy status to Failed when build is failing </td><td>Pipelines</td><td>Future</td></tr>  
+    <td>Blobless and treeless filter support</td><td>Repos</td><td>Future</td></tr>
+<tr>
+<tr>
     <td rowspan="6"><a href="2023/sprint-226-update.md" data-raw-source="[23 August 2023](2023/sprint-226-update.md)"> 23 August 2023</a></td>
     <td>Project and organization-level enablement for Advanced Security </td><td>General</td><td>Future</td></tr>
     <td>Estimated committer count during Advanced Security enablement </td><td>General</td><td>Future</td></tr>

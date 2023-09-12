@@ -27,8 +27,12 @@ Azure VM's can be included in Deployment Groups using a [VM Extension](https://l
   "tenantId": "[parameters('tenantId')]"      
 }
 ```
-### Pipeline Agent config
+### Azure Active Directory device code authentication flow for pipelines agent registration
 
+The pipelines agent gained support for [Azure Entra ID Device Code Flow](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow). You can now use a web browser to easily complete setup instead of manually creating a PAT just for one-time setup. When you run the agent configuration script, enter "AAD" for authentication type. The script will guide you through the next steps, including where to go on the web and what code to enter. After you enter your code on the web, return to the console to finish setting up the agent.
+
+> [!div class="mx-imgBorder"]
+> ![ Screenshot of authentication flow.](../../media/227-pipelines-04.png " Screenshot of authentication flow")
 
 ###  Public preview of Workload Identity Federation in Azure Pipelines
 
