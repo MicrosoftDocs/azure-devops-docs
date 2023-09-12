@@ -54,28 +54,12 @@ To create a new Azure service connection using workload identity federation, sim
 > ![ Screenshot of resource manager.](../../media/227-pipelines-05.png " Screenshot of resource manager")
 
 > [!div class="mx-imgBorder" style="width="4200" height="300"]
-> ![ Screenshot of resource manager.](../../media/227-pipelines-05.png " Screenshot of resource manager")
-
-> [!div class="mx-imgBorder" style="width="100" height="100"]
-> ![ Screenshot of resource manager.](../../media/227-pipelines-05.png " Screenshot of resource manager")
-
-> [!div class="mx-imgBorder" style="width: 200px;]
-> ![ Screenshot of resource manager.](../../media/227-pipelines-05.png " Screenshot of resource manager")
-
-> [!div class="mx-imgBorder" style="width: 457px;]
-> ![ Screenshot of resource manager.](../../media/227-pipelines-05.png " Screenshot of resource manager")
-
-> [!div class="mx-imgBorder" style="width: 870px;]
-> ![ Screenshot of resource manager.](../../media/227-pipelines-05.png " Screenshot of resource manager")
-<center>
-  <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/create-service-connection2-1.png" width="457" />
-</center>
+> ![ Screenshot of identify federation.](../../media/227-pipelines-06.png " Screenshot of identify federation")
 
 To convert a previously created Azure service connection, select the "Convert" action after selecting the connection:
 
-<center>
-  <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/convert-service-connection.png" width="870" />
-</center>
+> [!div class="mx-imgBorder" style="width="4200" height="300"]
+> ![ Screenshot of convert.](../../media/227-pipelines-07.png " Screenshot of convert")
 
 All of the Azure tasks that are included with Azure Pipelines now support this new scheme. However, if you are using a task from the Marketplace or a home-grown custom task to deploy to Azure, then it may not support workload identity federation yet. In these cases, we ask that you update your task to support workload identity federation to improve security. A complete list of supported tasks can be found [here](https://aka.ms/azdo-rm-workload-identity-troubleshooting).
 
@@ -106,7 +90,7 @@ With this sprint, we are enabling the `Securely build pull requests from forked 
 
 Earlier, the code coverage policy status was overridden to 'Failed' if your build in PR was failing. This was a blocker for some of you who had the build as an optional check and the code coverage policy as a required check for PRs resulting in PRs being blocked.
 
-> [!div class="mx-imgBorder" style="width: 200px;] 
+> [!div class="mx-imgBorder"] 
 > ![ Screenshot of PRs blocked.](../../media/227-pipelines-02.png " Screenshot of PRs blocked")
 
 with this sprint, the code coverage policy won't be overridden to 'Failed' if the build fails.
