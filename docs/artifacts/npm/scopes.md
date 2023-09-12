@@ -79,11 +79,21 @@ always-auth=true
   }
 ```
 
+## Publish scoped packages
+
+Open a command prompt window, navigate to your project directory, and run the following command to publish your scoped package. In our example, our package is listed under the @local view.
+
+```Command
+npm publish
+```
+
+:::image type="content" source="../media/publish-scoped-packages.png" alt-text="A screenshot showing a scoped package in an Azure Artifacts feed.":::
+
 ## Upstream sources vs scopes
 
-Upstream sources give you the most flexibility to use a combination of scoped and non-scoped packages in your feed, as well as scoped and non-scoped packages from public registries such as npmjs.com.
+Upstream sources give you the most flexibility to use a combination of scoped and non-scoped packages in your feed, as well as both scoped and non-scoped packages from public registries like npmjs.com.
 
-Scopes add another restriction when naming your packages: each package name must start with `@<scope>`. If you want to publish your private packages to public registries, you must do so with the scopes intact. If you remove package scopes when deploying your packages, you'll need to update all the references in your *package.json*. With that in mind, scopes can be a viable alternative to [upstream sources](../concepts/upstream-sources.md).
+Scopes, however, impose a naming restriction on your packages: each package name must start with `@<scope>`. If you want to publish your private packages to public registries, you must do so with the scopes intact. If you remove package scopes when deploying your packages, you'll need to update all the references in your *package.json* file. With that in mind, scopes can serve as a viable alternative to [upstream sources](../concepts/upstream-sources.md).
 
 ## Related articles
 
