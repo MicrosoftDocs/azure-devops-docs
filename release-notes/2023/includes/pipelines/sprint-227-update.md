@@ -8,15 +8,15 @@ ms.topic: include
 
 ###  Pipeline agents can be registered using a Service Principal
 
-As Azure DevOps Service Principals support in preview, we have added the capability to use a Service Principal to register a Pipelines agent with Azure DevOps Service:
+As Azure DevOps support for Service Principals is in preview, we have added the option to use a Service Principal to register a Pipelines agent with Azure DevOps Services:
 ```
 --auth 'SP' --clientid 12345678-1234-1234-abcd-1234567890ab --clientsecret --tenantid 12345678-1234-1234-abcd-1234567890ab
 ```
-You can add the Service Principal access on the security settings of an agent pool. This removes the need to use a Personal Access Token (PAT)
+You can grant the Service Principal access on the security settings of an agent pool. This removes the need to use a Personal Access Token (PAT)
 
 ###  Use Service Principal in Agent VM extension
 
-Azure VM's can be included in Deployment Groups using a [VM Extension](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template&preserve-view=true). The VM extension has been updated to use a Service Principal instead of a PAT to register the agent:
+Azure VMs can be included in Deployment Groups using a [VM Extension](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template&preserve-view=true). The VM extension has been updated to use a Service Principal instead of a PAT to register the agent:
 ```
 "settings": {
   "userServicePrincipal": true     
@@ -67,7 +67,7 @@ For this preview, we support workload identity federation only for Azure service
 
 ### REST APIs for Environments
 
-An [Environments]() is a collection of resources that you can target with deployments from a pipeline. Environments provide you deployment history, traceability for work items and commits, and access control mechanisms.
+An [Environment](azure/devops/pipelines/process/environments) is a collection of resources that you can target with deployments from a pipeline. Environments provide you deployment history, traceability for work items and commits, and access control mechanisms.
 
 We know you want to create environments [programmatically](https://developercommunity.visualstudio.com/t/rest-api-to-manage-environments-yaml-pipelines/859033), so we published documentation for their [REST API](/rest/api/azure/devops/environments/environments/add).
 
@@ -88,12 +88,12 @@ With this sprint, we are enabling the `Securely build pull requests from forked 
 
 ### Disabled override of code coverage policy status to Failed when build is failing.
 
-Earlier, the code coverage policy status was overridden to 'Failed' if your build in PR was failing.This was a blocker for some of you who had the build as an optional check and the code coverage policy as a required check for PRs resulting in PRs being blocked.
+Earlier, the code coverage policy status was overridden to 'Failed' if your build in PR was failing. This was a blocker for some of you who had the build as an optional check and the code coverage policy as a required check for PRs resulting in PRs being blocked.
 
 > [!div class="mx-imgBorder"]
 > ![ Screenshot of PRs blocked.](../../media/227-pipelines-02.png " Screenshot of PRs blocked")
 
-As a results of out latest updates: The code coverage policy won't be overridden to 'Failed' if the build fails.
+with this sprint, the code coverage policy won't be overridden to 'Failed' if the build fails.
 This feature will be enabled for all customers.
 
 > [!div class="mx-imgBorder"]
