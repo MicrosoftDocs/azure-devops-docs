@@ -36,7 +36,7 @@ The pipelines agent gained support for [Azure Entra ID Device Code Flow](https:/
 
 ###  Public preview of Workload Identity Federation in Azure Pipelines
 
-Do you want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation&preserve-view=true) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
+Do you want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](https://learn.microsoft.com/azure/active-directory/workload-identities/workload-identity-federation&preserve-view=true) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
 
 As part of this feature, the Azure (ARM) service connection has been updated with an additional scheme to support Workload identity federation. This allows Pipeline tasks that use the Azure service connection to authenticate using a federation subject (`sc://<org>/<project>/<service connection name>`). The main benefits of using this scheme over existing authentication schemes are as follows:
 
@@ -49,6 +49,16 @@ You can take advantage of these features in two ways:
 - [Convert](https://aka.ms/azdo-rm-workload-identity-conversion) your existing Azure service connections (which are based on secrets) to the new scheme. You can perform this conversion one connection at a time. Best of all, you do not have to modify any of the pipelines that use those service connections. They will automatically leverage the new scheme once you complete the conversion.
 
 To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) or ([manual](https://aka.ms/azdo-rm-workload-identity-manual)) in the Azure service connection creation experience:
+
+> [!div class="mx-imgBorder"]
+> ![ Screenshot of resource manager.](../../media/227-pipelines-05.png " Screenshot of resource manager")
+
+> [!div class="mx-imgBorder"]
+> ![ Screenshot of identify federation.](../../media/227-pipelines-06.png " Screenshot of identify federation")
+
+> [!div class="mx-imgBorder"]
+> ![ Screenshot of convert.](../../media/227-pipelines-07.png " Screenshot of convert")
+
 
 <img src="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection1.png" width="459">
 
