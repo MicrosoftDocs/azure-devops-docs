@@ -36,7 +36,7 @@ The pipelines agent gained support for [Azure Entra ID Device Code Flow](https:/
 
 ###  Public preview of Workload Identity Federation in Azure Pipelines
 
-Do you want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation&preserve-view=true) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
+Do you want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](https://learn.microsoft.com/azure/active-directory/workload-identities/workload-identity-federation&preserve-view=true) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
 
 As part of this feature, the Azure (ARM) service connection has been updated with an additional scheme to support Workload identity federation. This allows Pipeline tasks that use the Azure service connection to authenticate using a federation subject (`sc://<org>/<project>/<service connection name>`). The main benefits of using this scheme over existing authentication schemes are as follows:
 
