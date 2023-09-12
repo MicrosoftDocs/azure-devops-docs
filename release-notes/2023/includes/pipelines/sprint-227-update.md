@@ -92,7 +92,7 @@ With this sprint, we are enabling the `Securely build pull requests from forked 
 
 Earlier, the code coverage policy status was overridden to 'Failed' if your build in PR was failing. This was a blocker for some of you who had the build as an optional check and the code coverage policy as a required check for PRs resulting in PRs being blocked.
 
-> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder" width="500" height="500"] 
 > ![ Screenshot of PRs blocked.](../../media/227-pipelines-02.png " Screenshot of PRs blocked")
 
 with this sprint, the code coverage policy won't be overridden to 'Failed' if the build fails.
