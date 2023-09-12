@@ -36,7 +36,7 @@ The pipelines agent gained support for [Azure Entra ID Device Code Flow](https:/
 
 ###  Public preview of Workload Identity Federation in Azure Pipelines
 
-Do you want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](https://learn.microsoft.com/azure/active-directory/workload-identities/workload-identity-federation&preserve-view=true) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
+Do you want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation&preserve-view=true) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
 
 As part of this feature, the Azure (ARM) service connection has been updated with an additional scheme to support Workload identity federation. This allows Pipeline tasks that use the Azure service connection to authenticate using a federation subject (`sc://<org>/<project>/<service connection name>`). The main benefits of using this scheme over existing authentication schemes are as follows:
 
@@ -52,26 +52,11 @@ To create a new Azure service connection using workload identity federation, sim
 
 <img src="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection1.png" width="459">
 
-:::image type="content"source="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection1.png" alt-text="Screenshot of resource manager.":::
-
-> [!div class="mx-imgBorder"]
-> ![ Screenshot of authentication flow.](../../media/227-pipelines-05.png " Screenshot of authentication flow")
-
 <img src="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection2.png" width="457">
-
-:::image type="content"source="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection2.png" alt-text="Screenshot of identify federation.":::
-
-> [!div class="mx-imgBorder"]
-> ![ Screenshot of authentication flow.](../../media/227-pipelines-06.png " Screenshot of authentication flow")
 
 To convert a previously created Azure service connection, select the "Convert" action after selecting the connection:
 
 <img src="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/convert-service-connection.png" width="870">
-
-:::image type="content"source="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/convert-service-connection.png" alt-text="Screenshot of convert.":::
-
-> [!div class="mx-imgBorder"]
-> ![ Screenshot of authentication flow.](../../media/227-pipelines-07.png " Screenshot of authentication flow")
 
 All of the Azure tasks that are included with Azure Pipelines now support this new scheme. However, if you are using a task from the Marketplace or a home-grown custom task to deploy to Azure, then it may not support workload identity federation yet. In these cases, we ask that you update your task to support workload identity federation to improve security. A complete list of supported tasks can be found [here](https://aka.ms/azdo-rm-workload-identity-troubleshooting).
 
