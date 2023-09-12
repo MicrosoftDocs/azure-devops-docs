@@ -50,11 +50,17 @@ You can take advantage of these features in two ways:
 
 To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) or ([manual](https://aka.ms/azdo-rm-workload-identity-manual)) in the Azure service connection creation experience:
 
+<img src="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection1.png" width="459">
+
 :::image type="content"source="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection1.png" alt-text="Screenshot of resource manager.":::
+
+<img src="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection2.png" width="457">
 
 :::image type="content"source="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection2.png" alt-text="Screenshot of identify federation.":::
 
 To convert a previously created Azure service connection, select the "Convert" action after selecting the connection:
+
+<img src="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/convert-service-connection.png" width="870">
 
 :::image type="content"source="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/convert-service-connection.png" alt-text="Screenshot of convert.":::
 
