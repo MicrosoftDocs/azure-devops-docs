@@ -8,7 +8,7 @@ ms.topic: include
 
 ###  Pipeline agents can be registered using a Service Principal
 
-As Azure DevOps Service Service Principals support in preview, we have added the capability to use a Service Principal to register a Pipelines agent with Azure DevOps Service:
+As Azure DevOps Service Principals support in preview, we have added the capability to use a Service Principal to register a Pipelines agent with Azure DevOps Service:
 ```
 --auth 'SP' --clientid 12345678-1234-1234-abcd-1234567890ab --clientsecret --tenantid 12345678-1234-1234-abcd-1234567890ab
 ```
@@ -51,7 +51,7 @@ You can take advantage of these features in two ways:
 To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) or ([manual](https://aka.ms/azdo-rm-workload-identity-manual)) in the Azure service connection creation experience:
 
 <center>
-  <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/create-service-connection1-1.png" width="459" />
+<img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/create-service-connection1-1.png" width="459"/>
 </center>
 
 <center>
@@ -87,17 +87,16 @@ We added an organization- and project-level Pipelines setting named _Disable imp
 
 Last sprint, we introduced a [centralized control for building PRs from forked GitHub repos](/azure/devops/release-notes/2023/sprint-226-update#centralized-control-for-building-prs-from-forked-github-repos).
 
-Starting with this sprint, we are enabling the `Securely build pull requests from forked repositories` option at organization level, for new organizations. Existing organizations are unaffected.
+With this sprint, we are enabling the `Securely build pull requests from forked repositories` option at the organization level, for new organizations. Existing organizations are unaffected.
 
 ### Disabled override of code coverage policy status to Failed when build is failing.
 
-Earlier code coverage policy status was also overridden to Failed if build in PR was failing.
-This was acting as a blocker for some customers where they had build as optional check and code coverage policy was a required check for PR. PRs were blocked because of it.
+Earlier, the code coverage policy status was overridden to 'Failed' if your build in PR was failing.This was a blocker for some of you who had the build as an optional check and the code coverage policy as a required check for PRs resulting in PRs being blocked.
 
 > [!div class="mx-imgBorder"]
 > ![ Screenshot of PRs blocked.](../../media/227-pipelines-02.png " Screenshot of PRs blocked")
 
-Results after this change : Code coverage policy won't be overridden to Failed if build fails.
+As a results of out latest updates: The code coverage policy won't be overridden to 'Failed' if the build fails.
 This feature will be enabled for all customers.
 
 > [!div class="mx-imgBorder"]
