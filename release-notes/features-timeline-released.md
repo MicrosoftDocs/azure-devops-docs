@@ -43,7 +43,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Pipeline agents can be registered using a Service Principal </td><td>Pipelines</td><td>Future</td></tr>
     <td>Use Service Principal in Agent VM extension</td><td>Pipelines</td><td>Future</td></tr>
     <td>Azure Active Directory device code authentication flow for pipelines agent registration</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Workload Identity Federation in Azure Pipelines (public preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Workload Identity Federation for Azure Pipelines (public preview)</td><td>Pipelines</td><td>Future</td></tr>
     <td>REST APIs for Environments</td><td>Pipelines</td><td>Future</td></tr>
     <td>Prevent Unintended Pipeline Runs</td><td>Pipelines</td><td>Future</td></tr>
     <td>Build GitHub Repositories Securely by Default</td><td>Pipelines</td><td>Future</td><tr>   

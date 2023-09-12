@@ -11,7 +11,7 @@ ms.topic: include
 
 - [Azure Active Directory device code authentication flow for pipelines agent registration](#azure-active-directory-device-code-authentication-flow-for-pipelines-agent-registration)
 
-- [Workload Identity Federation in Azure Pipelines (public preview)](#workload-identity-federation-in-azure-pipelines-public-preview)
+- [Workload Identity Federation for Azure Pipelines (public preview)](#workload-identity-federation-for-azure-pipelines-public-preview)
 
 - [REST APIs for Environments](#rest-apis-for-environments)
 
