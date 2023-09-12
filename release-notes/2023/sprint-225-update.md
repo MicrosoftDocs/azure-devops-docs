@@ -11,6 +11,8 @@ In this sprint, we have increased Azure Pipelines size limits to align with the 
 
 In addition, we're excited to update you on the progress we've made towards making New Boards Hub the default experience for all users. 
 
+Check out the release notes to learn more about these features.
+
 ### Azure Boards
 
 [!INCLUDE [sprint-225-update-links](includes/boards/sprint-225-update-links.md)]
