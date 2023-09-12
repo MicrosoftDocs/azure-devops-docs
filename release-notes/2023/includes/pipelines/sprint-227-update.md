@@ -36,27 +36,31 @@ The pipelines agent gained support for [Azure Entra ID Device Code Flow](https:/
 
 ###  Public preview of Workload Identity Federation in Azure Pipelines
 
-Want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
+Do you want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections. [Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation&preserve-view=true) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
 
-As part of this feature, the Azure (ARM) service connection has been updated with an additional scheme to support Workload identity federation. This allows Pipeline tasks that use the Azure service connection to authenticate using a federation subject sc://<org>/<project>/<service connection name>. The main benefits of using this scheme over existing authentication schemes are as follows:
+As part of this feature, the Azure (ARM) service connection has been updated with an additional scheme to support Workload identity federation. This allows Pipeline tasks that use the Azure service connection to authenticate using a federation subject (`sc://<org>/<project>/<service connection name>`). The main benefits of using this scheme over existing authentication schemes are as follows:
 
-Simplified management: You do not need to generate, copy, and store secrets from service principals in AAD to Azure DevOps anymore. Secrets that are used in other authentication schemes of Azure service connections (e.g., service principal) expire after a certain period (2 years currently). When they expire, pipelines fail. You have to regenerate a new secret and update the service connection. Switching to workload identity federation eliminates the need to manage these secrets and improves the overall experience of creating and managing service connections.
-More secure: With workload identity federation, there is no persistent secret involved in the communication between Azure Pipelines and Azure. As a result, tasks running in pipeline jobs cannot leak or exfiltrate secrets that have access to your production environments. This has often been a concern for our customers.
+- Simplified management: You do not need to generate, copy, and store secrets from service principals in AAD to Azure DevOps anymore. Secrets that are used in other authentication schemes of Azure service connections (e.g., service principal) expire after a certain period (2 years currently). When they expire, pipelines fail. You have to regenerate a new secret and update the service connection. Switching to workload identity federation eliminates the need to manage these secrets and improves the overall experience of creating and managing service connections.  
+- Improved security: With workload identity federation, there is no persistent secret involved in the communication between Azure Pipelines and Azure. As a result, tasks running in pipeline jobs cannot leak or exfiltrate secrets that have access to your production environments. This has often been a concern for our customers.
+
 You can take advantage of these features in two ways:
 
-Use the new workload identity federation scheme whenever you create a new Azure service connection. Moving forward, this will be the recommended mechanism.
-Convert your existing service connections (which are based on secrets) to the new scheme. You can do this conversion one connection at a time. Best of all, you do not have to modify any of the pipelines that use those service connections. They will automatically leverage the new scheme once you complete the conversion.
-To create a new service connection using workload identity federation, simply select Workload identity federation (automatic) or (manual) in the experience.
+- Use the [new workload identity federation scheme](https://aka.ms/azdo-rm-workload-identity) whenever you create a new Azure service connection. Moving forward, this will be the recommended mechanism.
+- [Convert](https://aka.ms/azdo-rm-workload-identity-conversion) your existing Azure service connections (which are based on secrets) to the new scheme. You can perform this conversion one connection at a time. Best of all, you do not have to modify any of the pipelines that use those service connections. They will automatically leverage the new scheme once you complete the conversion.
 
-https://github.com/microsoft/azure-pipelines-tasks/blob/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection1.png
+To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) or ([manual](https://aka.ms/azdo-rm-workload-identity-manual)) in the Azure service connection creation experience:
 
-https://github.com/microsoft/azure-pipelines-tasks/blob/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection2.png
+<img src="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection1.png" width="459">
 
-To convert a previously created Azure service connection, select the "Convert" action after selecting the connection.
 
-https://github.com/microsoft/azure-pipelines-tasks/blob/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/convert-service-connection.png
+<img src="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/create-service-connection2.png" width="457">
 
-All of the Azure tasks that are included with Azure Pipelines now support this new scheme. However, if you are using a task from the Marketplace or a home-grown custom task to deploy to Azure, then it may not support workload identity federation. In these cases, we ask that you update your task to support workload identity federation to improve security. A complete list of supported tasks can be found here: https://github.com/microsoft/azure-pipelines-tasks/blob/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/troubleshooting.md.
+
+To convert a previously created Azure service connection, select the "Convert" action after selecting the connection:
+
+<img src="https://raw.githubusercontent.com/microsoft/azure-pipelines-tasks/users/geekzter/oidc-preview-docs/docs/service-connections/azure-oidc/convert-service-connection.png" width="870">
+
+All of the Azure tasks that are included with Azure Pipelines now support this new scheme. However, if you are using a task from the Marketplace or a home-grown custom task to deploy to Azure, then it may not support workload identity federation yet. In these cases, we ask that you update your task to support workload identity federation to improve security. A complete list of supported tasks can be found [here](https://aka.ms/azdo-rm-workload-identity-troubleshooting).
 
 For this preview, we support workload identity federation only for Azure service connections. This scheme does not work with any other types of service connections. See our docs for more details.
 
@@ -65,12 +69,6 @@ For this preview, we support workload identity federation only for Azure service
 An [Environments]() is a collection of resources that you can target with deployments from a pipeline. Environments provide you deployment history, traceability for work items and commits, and access control mechanisms.
 
 We know you want to create environments [programmatically](https://developercommunity.visualstudio.com/t/rest-api-to-manage-environments-yaml-pipelines/859033), so we published documentation for their [REST API](/rest/api/azure/devops/environments/environments/add).
-
-### Improvements to Approvals REST API
-
-We made searching for approvals assigned to a user more thorough by including approvals assigned to groups the user belongs to.
-
-We made approving pending approvals easier by including information about the pipeline run they belong to.
 
 ### Prevent Unintended Pipeline Runs
 
