@@ -62,19 +62,19 @@ You run the validation by using the data migration tool. To start, [download the
 1. Because this is your first time validating a collection, let's keep it simple. Your command should have the following structure:
 
 	```cmdline
-	Migrator validate /collection:{collection URL} /tenantDomainName:{name}
+	Migrator validate /collection:{collection URL} /tenantDomainName:{name} /region:{region}
 	```
 
 	Where `{name}` provides the name of your Azure Active Directory tenant. For example, to run against the *DefaultCollection* and the *fabrikam* tenant, the command would look like:
 
 	```cmdline
-	Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com
+	Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region}
 	```
 
 1. To run the tool from a machine other than the Azure DevOps Server, you need the **/connectionString** parameter. The connection string parameter points to your Azure DevOps Server configuration database. As an example, if the validate command is being run by the Fabrikam corporation, the command would look like:
 
 	```cmdline
-	Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
+	Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region} /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
 	```
 
 	> [!Important]

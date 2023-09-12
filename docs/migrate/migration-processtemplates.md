@@ -110,7 +110,7 @@ Once you've determined which projects have errors and the error details, fix the
 To get the process template from the project add the **/SaveProcesses** parameter when running the data migration tool command.
 
 ```cmdline
-Migrator validate /collection:{collection URL} /SaveProcesses
+Migrator validate /collection:{collection URL} /tenantDomainName:{name} /region:{region} /SaveProcesses
 ```
 
 This command will extract the XML from the project and place it into the same folder as the logs. Extract the zip files to your local machine so that you can edit the files.
