@@ -36,7 +36,7 @@ ms.date: 09/11/2023
 
 ### Set up credentials
 
-1. Copy the following snippet into your `.npmrc` file.
+1. Copy the following snippet into your user-level `.npmrc` file, (Example: C:\Users\FabrikamUser\.npmrc). Make sure you don't paste it into the .npmrc file within your source repository.
 
     - **Organization-scoped feed**:
 
