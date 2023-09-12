@@ -50,15 +50,15 @@ You can take advantage of these features in two ways:
 
 To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) or ([manual](https://aka.ms/azdo-rm-workload-identity-manual)) in the Azure service connection creation experience:
 
-> [!div class="mx-imgBorder" style="width="400" height="300"]
+> [!div class="mx-imgBorder"]
 > ![ Screenshot of resource manager.](../../media/227-pipelines-05.png " Screenshot of resource manager")
 
-> [!div class="mx-imgBorder" style="width="4200" height="300"]
+> [!div class="mx-imgBorder"]
 > ![ Screenshot of identify federation.](../../media/227-pipelines-06.png " Screenshot of identify federation")
 
 To convert a previously created Azure service connection, select the "Convert" action after selecting the connection:
 
-> [!div class="mx-imgBorder" style="width="4200" height="300"]
+> [!div class="mx-imgBorder"]
 > ![ Screenshot of convert.](../../media/227-pipelines-07.png " Screenshot of convert")
 
 All of the Azure tasks that are included with Azure Pipelines now support this new scheme. However, if you are using a task from the Marketplace or a home-grown custom task to deploy to Azure, then it may not support workload identity federation yet. In these cases, we ask that you update your task to support workload identity federation to improve security. A complete list of supported tasks can be found [here](https://aka.ms/azdo-rm-workload-identity-troubleshooting).
@@ -93,7 +93,7 @@ Earlier, the code coverage policy status was overridden to 'Failed' if your buil
 > [!div class="mx-imgBorder"] 
 > ![ Screenshot of PRs blocked.](../../media/227-pipelines-02.png " Screenshot of PRs blocked")
 
-with this sprint, the code coverage policy won't be overridden to 'Failed' if the build fails.
+With this sprint, the code coverage policy won't be overridden to 'Failed' if the build fails.
 This feature will be enabled for all customers.
 
 > [!div class="mx-imgBorder"]
