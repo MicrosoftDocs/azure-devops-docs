@@ -36,11 +36,11 @@ When the Hosted XML process is the targeted process model, the data migration to
 
 - **DataMigrationTool.log**: Contains the set of process validation errors found in the collection. Fix all process errors found to proceed with your migration.  
     
-- **TryMatchOobProcesses.log**: Lists for each project the target process model - Inheritance or Hosted XML. For projects that are set to target the Hosted XML process model, it explains why they are considered to be customized. You don't have to fix these errors, but they give you guidance what to do in case you want to migrate to the Inheritance process model. Note that once a collection is imported, you can migrate a project to an Inheritance process model.  
+- **TryMatchOobProcesses.log**: Lists for each project the target process model - Inheritance or Hosted XML. For projects that are set to target the Hosted XML process model, it explains why they're considered to be customized. You don't have to fix these errors, but they give you guidance what to do in case you want to migrate to the Inheritance process model. Note that once a collection is imported, you can migrate a project to an Inheritance process model.  
     
-Most customers have a mix of projects within a collection. Some projects use a default process template and others use custom process templates. The data migration tool checks and validates each project accordingly. It is very possible that you'll have a mix of projects, some mapped to an Inherited process and others to a Hosted XML process.  
+Most customers have a mix of projects within a collection. Some projects use a default process template and others use custom process templates. The data migration tool checks and validates each project accordingly. It's very possible that you'll have a mix of projects, some mapped to an Inherited process and others to a Hosted XML process.  
 
-We recommend that for any project that has not been customized, that you review the **TryMatchOobProcesses.log** to determine if there are any errors. If so, make the adjustments accordingly so that the project can be mapped to an Inherited process upon data import.
+We recommend that for any project that hasn't been customized, that you review the **TryMatchOobProcesses.log** to determine if there are any errors. If so, make the adjustments accordingly so that the project can be mapped to an Inherited process upon data import.
 
 ## Update to a system process
 
@@ -66,7 +66,7 @@ Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: T
 
 If you have never customized your project (added fields, work item types, etc.), then fixing these errors is actually pretty simple. If you have customized your process, then this approach won't work. You'll need to manually change the process templates so that your customizations don't get overwritten.
 
-First, make sure you know what process your project started as. Is it Scrum, Agile or CMMI? In this example, let us assume Agile. Next, go to the [Process Customization Scripts](https://github.com/Microsoft/process-customization-scripts) provided on GitHub and download the repo. In this instance, we are going to focus on contents in the 
+First, make sure you know what process your project started as. Is it Scrum, Agile or CMMI? In this example, let us assume Agile. Next, go to the [Process Customization Scripts](https://github.com/Microsoft/process-customization-scripts) provided on GitHub and download the repo. In this instance, we're going to focus on contents in the 
 **Import** folder.
 
 Use the **ConformProject.ps1** script to conform a project of your choosing to the Agile system process. This will update the entire project to be Agile.
@@ -81,7 +81,7 @@ Make sure you do this for each and every project.
 
 ## Resolve process errors
 
-Are your process templates customized? Are you using an older outdated process template? If so, you'll most likely have process validation errors. The data migration tool does an exhaustive check against your process templates. It checks to make sure that it is valid for Azure DevOps Services. Odds are that you'll need to make some adjustments and apply them to your collection.
+Are your process templates customized? Are you using an older outdated process template? If so, you'll most likely have process validation errors. The data migration tool does an exhaustive check against your process templates. It checks to make sure that it's valid for Azure DevOps Services. Odds are that you'll need to make some adjustments and apply them to your collection.
 
 > [!NOTE]   
 > If you are using an OOB Agile, Scrum, or CMMI process, you probably won't see any errors in the **DataMigrationTool.log**. Instead, check the **TryMatchOobProcesses.log** for errors. If you are error free, then your project will map to an OOB process.
@@ -139,7 +139,7 @@ When the script has completed, re-run the data migration tool to validate the co
 
 #### VS402841: Field X in work item type Bug has syncnamechanges=false but has rules making it an identity field. Identity fields must have syncnamechanges=true. Please update your process template to include this change.
 
-In Azure DevOps Services we added a rule so that every identity field must have the **syncnamechanges=true** attribute. In Azure DevOps Server that rule does not apply. Therefore, the data migration tool will identify this as an issue. Don't worry, making this change on Azure DevOps Server on-prem will not cause any harm.
+In Azure DevOps Services we added a rule so that every identity field must have the **syncnamechanges=true** attribute. In Azure DevOps Server that rule doesn't apply. Therefore, the data migration tool will identify this as an issue. Don't worry, making this change on Azure DevOps Server on-premises won't cause any harm.
 
 Run the `witadmin changefield` command. Syntax for the command looks similar to the following:  
 
