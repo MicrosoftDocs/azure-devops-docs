@@ -8,7 +8,7 @@ ms.topic: include
 
 ###  Workload identity federation in Azure Pipelines (public preview)
 
-Do you want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections.[Workload identity federation](https://learn.microsoft.com/azure/active-directory/workload-identities/workload-identity-federation) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
+Do you want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections.[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
 
 As part of this feature, the Azure (ARM) service connection has been updated with an additional scheme to support Workload identity federation. This allows Pipeline tasks that use the Azure service connection to authenticate using a federation subject (`sc://<org>/<project>/<service connection name>`). The main benefits of using this scheme over existing authentication schemes are as follows:
 
@@ -94,13 +94,12 @@ With this sprint, we are enabling the `Securely build pull requests from forked 
 
 Previously in, the code coverage policy status was overridden to 'Failed' if your build in PR was failing. This was a blocker for some of you who had the build as an optional check and the code coverage policy as a required check for PRs resulting in PRs being blocked.
 
-> [!div class="mx-imgBorder"] 
-> ![ Screenshot of PRs blocked.](../../media/227-pipelines-02.png " Screenshot of PRs blocked")
+:::image type="content" source="../../media/227-pipelines-02.png" alt-text="Screenshot of PRs blocked." lightbox="../../media/227-pipelines-02.png":::
 
 With this sprint, the code coverage policy won't be overridden to 'Failed' if the build fails.
 This feature will be enabled for all customers.
 
-> [!div class="mx-imgBorder"]
-> ![ Screenshot of Results after change.](../../media/227-pipelines-03.png " Screenshot of Results after change")
+:::image type="content" source="../../media/227-pipelines-03.png" alt-text="Screenshot of results after change." lightbox="../../media/227-pipelines-03.png":::
+
 
 
