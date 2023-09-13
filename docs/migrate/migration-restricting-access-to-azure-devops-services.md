@@ -1,6 +1,6 @@
 # Restrict access to Azure DevOps Services IPs only
 
-We highly recommend that you restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You do this by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your storage account depend on the region you're importing into.
+We highly recommend that you restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You can restrict access by only allowing connections from Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your storage account depend on the region you're importing into.
 
 ## Option 1: Using Service Tags
 
@@ -20,7 +20,7 @@ You can add the list of IPs to your network security groups or firewalls either 
 
 ### Configure IP firewall exceptions
 
-Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started, go to your SQL Azure VM in the [Azure portal](https://ms.portal.azure.com). In **Settings**, select **Networking**. This will take you to the network interface page for your SQL Azure VM. The data migration tool requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1433. You can grant exceptions for the IPs by selecting **Add inbound port rule** in the networking settings. 
+Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started, go to your SQL Azure VM in the [Azure portal](https://ms.portal.azure.com). In **Settings**, select **Networking**. This takes you to the network interface page for your SQL Azure VM. The data migration tool requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1433. You can grant exceptions for the IPs by selecting **Add inbound port rule** in the networking settings. 
 
 ![Screenshot of the "Add inbound port rule" button on your SQL Azure VM network interface page.](media/migration-import/inbound.png)
 
