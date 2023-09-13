@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps
 description: How to guide for preparing restricting import collection access to Azure DevOps Services IPs only
 ms.topic: how-to
 ms.subservice: azure-devops-migrate
+ms.contentid: 17dabbed-c4a7-4df2-aae1-86dbcf353887
 ms.author: pwoosam
 author: pwoosam
 monikerRange: '<= azure-devops'
