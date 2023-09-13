@@ -22,12 +22,10 @@ You can take advantage of these features in two ways:
 
 To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) or ([manual](https://aka.ms/azdo-rm-workload-identity-manual)) in the Azure service connection creation experience:
 
-<center>
-<img src="../../media/227-pipelines-05.png" width="459" alt="Screenshot of resource manager">
+<img src="../../media/227-pipelines-05.png" width="459" height="285" alt="Screenshot of resource manager">
 
 <br/>
-<img src="../../media/227-pipelines-06.png" width="457" alt="Screenshot of identify federation">
-</center>
+<img src="../../media/227-pipelines-06.png" width="457" height="260" alt="Screenshot of identify federation">
 
 To convert a previously created Azure service connection, select the "Convert" action after selecting the connection:
 
