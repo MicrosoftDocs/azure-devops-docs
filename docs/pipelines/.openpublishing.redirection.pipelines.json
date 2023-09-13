@@ -184,6 +184,14 @@
     {
       "source_path": "docs/pipelines/packages/jenkins.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/nuget"
+    },
+    {
+      "source_path": "docs/pipelines/release/configure-workflow-identity.md",
+      "redirect_url": "/azure/devops/pipelines/release/configure-workload-identity"
+    },
+    {
+      "source_path": "docs/pipelines/release/troubleshoot-workflow-identity.md",
+      "redirect_url": "/azure/devops/pipelines/release/troubleshoot-workflow-identity"
     }
   ]
 }
