@@ -39,6 +39,8 @@ All of the Azure tasks that are included with Azure Pipelines now support this n
 
 For this preview, we support workload identity federation only for Azure service connections. This scheme does not work with any other types of service connections. See our docs for more details.
 
+[This blog post](https://devblogs.microsoft.com/devops/public-preview-of-workload-identity-federation-for-azure-pipelines/) contains more details.
+
 ###  Pipeline agents can be registered using Azure Active Directory instead of a PAT
 
 The Pipeline agent now supports additional arguments to use either a Service Principal or a user to register an agent. You should grant the identity used access to the agent pool in its security settings. This removes the need to use a Personal Access Token (PAT) for one-time setup of agents.
