@@ -68,7 +68,7 @@ The pipelines agent gained support for [Azure Entra ID Device Code Flow](https:/
 
 ### REST APIs for Environments
 
-An [Environment](/azure/devops/pipelines/process/environments?view=azure-devops) is a collection of resources that you can target with deployments from a pipeline. Environments provide you deployment history, traceability for work items and commits, and access control mechanisms.
+An [Environment](/azure/devops/pipelines/process/environments?view=azure-devops&preserve-view=true) is a collection of resources that you can target with deployments from a pipeline. Environments provide you deployment history, traceability for work items and commits, and access control mechanisms.
 
 We know you want to create environments [programmatically](https://developercommunity.visualstudio.com/t/rest-api-to-manage-environments-yaml-pipelines/859033), so we published documentation for their [REST API](/rest/api/azure/devops/environments/environments/add).
 
