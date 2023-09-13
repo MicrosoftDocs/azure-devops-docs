@@ -41,7 +41,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td rowspan="8"><a href="2023/sprint-227-update.md" data-raw-source="[13 September 2023](2023/sprint-227-update.md)"> 13 September 2023</a></td>
     <td>Limits for area and iteration paths</td><td>Boards</td><td>Future</td></tr>
     <td>Pipeline agents can be registered using Azure Active Directory instead of a PAT</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Workload Identity Federation for Azure Pipelines (public preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Workload identity federation for Azure Pipelines (public preview)</td><td>Pipelines</td><td>Future</td></tr>
     <td>REST APIs for Environments</td><td>Pipelines</td><td>Future</td></tr>
     <td>Prevent Unintended Pipeline Runs</td><td>Pipelines</td><td>Future</td></tr>
     <td>Build GitHub Repositories Securely by Default</td><td>Pipelines</td><td>Future</td><tr>   

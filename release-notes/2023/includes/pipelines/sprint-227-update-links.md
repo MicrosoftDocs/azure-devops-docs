@@ -5,9 +5,9 @@ ms.date: 9/13/2023
 ms.topic: include
 ---
 
-- [Workload Identity Federation in Azure Pipelines (public preview)](#workload-identity-federation-in-azure-pipelines-public-preview)
+- [Workload identity federation in Azure Pipelines (public preview)](#workload-identity-federation-in-azure-pipelines-public-preview)
 
-- [Pipeline agents can be registered using Azure Active Directory instead of a PAT](#pipeline-agents-can be-registered-using-azure-active-directory-instead-of-a-pat)
+- [Pipeline agents can be registered using Azure Active Directory instead of a PAT](#pipeline-agents-can-be-registered-using-azure-active-directory-instead-of-a-pat)
 
 - [REST APIs for Environments](#rest-apis-for-environments)
 
