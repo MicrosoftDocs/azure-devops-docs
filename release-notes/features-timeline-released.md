@@ -450,7 +450,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Allow stakeholders to drag and drop work items</td><td>Boards</td><td>Future</td>
     </tr>
     <tr><td>Default branch name preference</td><td>Repos</td><td>Future</td></tr>
-    <tr><td>Updates to MacOS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Updates to macOS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>[Feedback] Git Draft Pull Requests should not trigger the pipeline</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Multi-repo triggers for Azure Repos</td><td>Pipelines</td><td>Future</td></tr>
     <tr>

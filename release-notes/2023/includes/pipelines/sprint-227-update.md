@@ -12,7 +12,7 @@ Do you want to stop storing secrets and certificates in Azure service connection
 
 As part of this feature, the Azure (ARM) service connection has been updated with an additional scheme to support Workload identity federation. This allows Pipeline tasks that use the Azure service connection to authenticate using a federation subject (`sc://<org>/<project>/<service connection name>`). The main benefits of using this scheme over existing authentication schemes are as follows:
 
-- Simplified management: You do not need to generate, copy, and store secrets from service principals in AAD to Azure DevOps anymore. Secrets that are used in other authentication schemes of Azure service connections (e.g., service principal) expire after a certain period (2 years currently). When they expire, pipelines fail. You have to regenerate a new secret and update the service connection. Switching to workload identity federation eliminates the need to manage these secrets and improves the overall experience of creating and managing service connections.  
+- Simplified management: You do not need to generate, copy, and store secrets from service principals in Azure AD to Azure DevOps anymore. Secrets that are used in other authentication schemes of Azure service connections (e.g., service principal) expire after a certain period (2 years currently). When they expire, pipelines fail. You have to regenerate a new secret and update the service connection. Switching to workload identity federation eliminates the need to manage these secrets and improves the overall experience of creating and managing service connections.  
 - Improved security: With workload identity federation, there is no persistent secret involved in the communication between Azure Pipelines and Azure. As a result, tasks running in pipeline jobs cannot leak or exfiltrate secrets that have access to your production environments. This has often been a concern for our customers.
 
 You can take advantage of these features in two ways:
@@ -22,13 +22,11 @@ You can take advantage of these features in two ways:
 
 To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) or ([manual](https://aka.ms/azdo-rm-workload-identity-manual)) in the Azure service connection creation experience:
 
-<div class="mx-imgBorder">
-<img src="../../media/227-pipelines-05.png" width="459" height="285" alt="Screenshot of resource manager.">
-</div>
-<br/>
-<div class="mx-imgBorder">
-<img src="../../media/227-pipelines-06.png" width="457" height="260" alt="Screenshot of identify federation.">
-</div>
+> [!div class="mx-imgBorder"]
+> ![ Screenshot of resource.](../../media/227-pipelines-05.png "Screenshot of resource manager.")
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of identify federation.](../../media/227-pipelines-06.png "Screenshot of identify federation")
 
 To convert a previously created Azure service connection, select the "Convert" action after selecting the connection:
 
