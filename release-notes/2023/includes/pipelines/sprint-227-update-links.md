@@ -5,7 +5,7 @@ ms.date: 9/12/2023
 ms.topic: include
 ---
 
-- [Workload Identity Federation for Azure Pipelines (public preview)](#workload-identity-federation-for-azure-pipelines-public-preview)
+- [Workload Identity Federation in Azure Pipelines (public preview)](#workload-identity-federation-in-azure-pipelines-public-preview)
 
 - [Pipeline agents can be registered using a Service Principal](#pipeline-agents-can-be-registered-using-a-service-principal)
 
