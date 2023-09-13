@@ -293,7 +293,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Improved tenant switch requests reliability</td><td>General</td><td>N/A</td></tr>
     <td>Emphasize tags in Delivery Plans using colors</td><td>Boards</td><td>2022</td></tr>
     <td>Filter cards based on boolean field types in Delivery Plans</td><td>Boards</td><td>2022</td></tr>
-    <td>Work item title are always visible in Delivery Plan cards</td><td>Boards</td><td>2022</td></tr>
+    <td>Work item titles are always visible in Delivery Plan cards</td><td>Boards</td><td>2022</td></tr>
     <td>Show light green colored dependency icon for work items that have dependencies with no issues</td><td>Boards</td><td>2022</td></tr>
     <td>macOS-latest label will soon point to macOS-11 image</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Updated schedule for removal of Ubuntu 16.04 image on Microsoft-hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
