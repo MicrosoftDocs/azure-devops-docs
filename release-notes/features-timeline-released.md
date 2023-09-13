@@ -576,7 +576,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Checkout multiple repositories in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Use GitHub Actions to trigger a run in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Updated ServiceNow integration with Azure Pipelines</td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td>Set VSTest tasks to fail if a minimum number of test are not run</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Set VSTest tasks to fail if a minimum number of tests are not run</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>UCS-4 support for Python 2.7</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Create bulk subscriptions in Azure Pipelines app for Slack and Microsoft Teams</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Create bulk subscriptions in Azure Repos app for Slack and Microsoft Teams</td><td>Repos</td><td>N/A</td></tr>
