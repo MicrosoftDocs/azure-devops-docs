@@ -1,3 +1,15 @@
+---
+title: Restrict access to Azure DevOps Services IPs only
+titleSuffix: Azure DevOps
+description: How to guide for preparing restricting import collection access to Azure DevOps Services IPs only
+ms.topic: how-to
+ms.subservice: azure-devops-migrate
+ms.author: pwoosam
+author: pwoosam
+monikerRange: '<= azure-devops'
+ms.date: 09/13/2023
+---
+
 # Restrict access to Azure DevOps Services IPs only
 
 We highly recommend that you restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You can restrict access by only allowing connections from Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your storage account depend on the region you're importing into.
