@@ -191,7 +191,7 @@
     },
     {
       "source_path_from_root": "/docs/pipelines/release/troubleshoot-workflow-identity.md",
-      "redirect_url": "/azure/devops/pipelines/release/troubleshoot-workflow-identity"
+      "redirect_url": "/azure/devops/pipelines/release/troubleshoot-workload-identity"
     }
   ]
 }
