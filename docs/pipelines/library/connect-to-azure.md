@@ -21,7 +21,7 @@ You can use an Azure Resource Manager (ARM) service connection to connect to Azu
 There are multiple options for connecting to Azure with Azure Resource Manager service connections:
 
 ::: moniker range="azure-devops"
-* service principal or managed identity with workflow identity federation
+* service principal or managed identity with workload identity federation
 ::: moniker-end
 * service principal with secret	
 * agent-assigned managed identity	 
@@ -32,9 +32,9 @@ There are multiple options for connecting to Azure with Azure Resource Manager s
 
 ## Create an Azure Resource Manager service connection using workload identity federation 
 
-[!INCLUDE [workflow-identity-preview](../release/includes/workflow-identity-preview.md)]
+[!INCLUDE [workload-identity-preview](../release/includes/workload-identity-preview.md)]
 
-[Workflow identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses Open ID Connect to authenticate with Azure Active Directory protected resources without needing to manage secrets. 
+[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses Open ID Connect to authenticate with Azure Active Directory protected resources without needing to manage secrets. 
 
 We recommend this approach if:
 
@@ -43,13 +43,13 @@ We recommend this approach if:
 * You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS.
 * Any Marketplace extensions tasks used have been updated to support workload identity federation. 
 
-### Create a new workflow identity federation service connection
+### Create a new workload identity federation service connection
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Screenshot of choosing a workflow identity service connection type.](media/new-service-connection-azure-resource-manager.png)
+   ![Screenshot of choosing a workload identity service connection type.](media/new-service-connection-azure-resource-manager.png)
 
 1. Select **Workload identity federation (automatic)**. 
 
@@ -68,13 +68,13 @@ We recommend this approach if:
 
 1. To deploy to a specific Azure resource, the task will need additional data about that resource. Go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
 
-### Convert an existing ARM service connection to use workflow identity federation
+### Convert an existing ARM service connection to use workload identity federation
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
 
 1. Go to **Pipelines** > **Service connections** and open an existing service connection. 
 
-1. Select the service connection you want to convert to use workflow identity. 
+1. Select the service connection you want to convert to use workload identity. 
 
 1. Select **Convert**. 
 
