@@ -7,7 +7,7 @@ description: Workload Identity Federation for Azure Pipelines is now in public p
 ---
 # Workload Identity Federation for Azure Pipelines public preview
 
-We are excited to announce that Workload Identity Federation for Azure Pipelines is now in public preview! Azure (ARM) service connections have been updated with an additional scheme to support Workload identity federation.
+We are excited to announce that Workload Identity Federation for Azure Pipelines is now in public preview! Azure (ARM) service connections have been updated with an additional scheme to support workload identity federation.
 
 Check out the release notes to learn how you can sign up for the public preview.
 
