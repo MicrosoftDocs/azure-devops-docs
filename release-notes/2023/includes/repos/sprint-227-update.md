@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Blobless and treeless filter support
 
-Azure DevOps now support two additional filtering while cloning/fetching. These are:
+Azure DevOps now supports two additional filtering while cloning/fetching. These are:
 `--filter:blob=none`
 and
 `--filter:tree:0`
