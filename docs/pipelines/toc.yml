@@ -640,9 +640,6 @@
   - name: Integrate with ServiceNow
     href: release/approvals/servicenow.md
     displayName: integrations, servicenow
-  - name: Integrate with Jenkins (Classic)
-    href: release/integrate-jenkins-pipelines-cicd.md
-    displayName: integrations, jenkins
 - name: Migrate
   items:
   - name: Migrate from Classic pipelines
