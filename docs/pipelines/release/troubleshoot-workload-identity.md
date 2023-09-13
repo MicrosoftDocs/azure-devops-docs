@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot Azure Resource Manager workflow identity service connections
+title: Troubleshoot Azure Resource Manager workload identity service connections
 ms.custom: seodec18, devx-track-arm-template
-description: How to troubleshoot workflow identity service connections in Azure Pipelines
+description: How to troubleshoot workload identity service connections in Azure Pipelines
 ms.topic: troubleshooting-general
 ms.author: jukullam
 author: juliakm
@@ -11,17 +11,17 @@ monikerRange: '>= azure-devops'
 ---
 
 
-# Troubleshoot Azure Resource Manager workflow identity service connections
+# Troubleshoot Azure Resource Manager workload identity service connections
 
-Get help debugging common issues with workflow identity service connections and learn how to manually create a service connection if necessary.
+Get help debugging common issues with workload identity service connections and learn how to manually create a service connection if necessary.
 
-[!INCLUDE [workflow-identity-preview](includes/workflow-identity-preview.md)]
+[!INCLUDE [workload-identity-preview](includes/workload-identity-preview.md)]
 
 ## Troubleshooting checklist
 
 ### Review pipeline tasks
 
-Not all pipelines tasks support workflow identity. During the preview, no Azure Marketplace tasks support workflow identity service connections. The following tasks don't currently support with workflow identity federation.
+Not all pipelines tasks support workload identity. During the preview, no Azure Marketplace tasks support workload identity service connections. The following tasks don't currently support with workload identity federation.
 
 - `AzureCloudPowerShellDeploymentV1`
 - `AzCopy` (`AzureFileCopyV1`, `AzureFileCopyV2`, `AzureFileCopyV3`, `AzureFileCopyV4`, `AzureFileCopyV5`)
@@ -32,9 +32,9 @@ Not all pipelines tasks support workflow identity. During the preview, no Azure 
 - `ServiceFabricComposeDeployV0`
 - `ServiceFabricDeployV1`	
 
-### Verify workflow identity federation is active
+### Verify workload identity federation is active
 
-If you see the error message `AADSTS700223`, workflow identity federation was disabled in the Azure portal for your Microsoft Entra tenant. 
+If you see the error message `AADSTS700223`, workload identity federation was disabled in the Azure portal for your Microsoft Entra tenant. 
 
 Sign in to the Azure portal and verify that there are no policies in place that block federated credentials. 
 
@@ -49,7 +49,7 @@ You can fix the issuer URL by editing and saving the service connection to updat
 
 <!-- ### I can't enable features for my organization
 
-I want to set up workflow identity but I don't see the option to turn it on. 
+I want to set up workload identity but I don't see the option to turn it on. 
 
 #### Solution: Verify organization admins and enable features
 
@@ -65,8 +65,8 @@ You need to either have permission in Microsoft Entra ID to create app registrat
 
 You have two options:
 
-* [Solution 1: Manually configure workflow identity with managed identity](configure-workflow-identity.md#workflow-identity-with-managed-identity)
-* [Solution 2: Manually configure workflow identity with a service principal](configure-workflow-identity.md#workflow-identity-with-a-service-principal)
+* [Solution 1: Manually configure workload identity with managed identity](configure-workload-identity.md#workload-identity-with-managed-identity)
+* [Solution 2: Manually configure workload identity with a service principal](configure-workload-identity.md#workload-identity-with-a-service-principal)
 
 ## Error messages
 
