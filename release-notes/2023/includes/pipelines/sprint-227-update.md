@@ -6,9 +6,9 @@ ms.topic: include
 ---
 
 
-###  Workload Identity Federation in Azure Pipelines (public preview)
+###  Workload identity federation in Azure Pipelines (public preview)
 
-Do you want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections.[Workload identity federation](https://learn.microsoft.com/azure/active-directory/workload-identities/workload-identity-federation) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
+Do you want to stop storing secrets and certificates in Azure service connections? Want to stop worrying about rotating these secrets whenever they expire? We are now announcing a public preview of Workload Identity Federation for Azure service connections.[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses an industry-standard technology, Open ID Connect (OIDC), to simplify the authentication between Azure Pipelines and Azure. Instead of secrets, a federation subject is used to facilitate this authentication.
 
 As part of this feature, the Azure (ARM) service connection has been updated with an additional scheme to support Workload identity federation. This allows Pipeline tasks that use the Azure service connection to authenticate using a federation subject (`sc://<org>/<project>/<service connection name>`). The main benefits of using this scheme over existing authentication schemes are as follows:
 
@@ -22,11 +22,13 @@ You can take advantage of these features in two ways:
 
 To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) or ([manual](https://aka.ms/azdo-rm-workload-identity-manual)) in the Azure service connection creation experience:
 
-> [!div class="mx-imgBorder"]
-> ![ Screenshot of resource manager.](../../media/227-pipelines-05.png " Screenshot of resource manager")
-
-> [!div class="mx-imgBorder"]
-> ![ Screenshot of identify federation.](../../media/227-pipelines-06.png " Screenshot of identify federation")
+<div class="mx-imgBorder">
+<img src="../../media/227-pipelines-05.png" width="459" height="285" alt="Screenshot of resource manager">
+</div>
+<br/>
+<div class="mx-imgBorder">
+<img src="../../media/227-pipelines-06.png" width="457" height="260" alt="Screenshot of identify federation">
+</div>
 
 To convert a previously created Azure service connection, select the "Convert" action after selecting the connection:
 
@@ -37,15 +39,19 @@ All of the Azure tasks that are included with Azure Pipelines now support this n
 
 For this preview, we support workload identity federation only for Azure service connections. This scheme does not work with any other types of service connections. See our docs for more details.
 
-###  Pipeline agents can be registered using a Service Principal
+[This blog post](https://devblogs.microsoft.com/devops/public-preview-of-workload-identity-federation-for-azure-pipelines/) contains more details.
 
-As Azure DevOps support for Service Principals is in preview, we have added the option to use a Service Principal to register a Pipelines agent with Azure DevOps Services:
+###  Pipeline agents can be registered using Azure Active Directory instead of a PAT
+
+The Pipeline agent now supports additional arguments to use either a Service Principal or a user to register an agent. You should grant the identity used access to the agent pool in its security settings. This removes the need to use a Personal Access Token (PAT) for one-time setup of agents.
+
+####  Register an agent using a Service Principal
+
+To use a Service Principal to register a Pipelines agent with Azure DevOps Services, provide the following arguments:
 ```
 --auth 'SP' --clientid 12345678-1234-1234-abcd-1234567890ab --clientsecret --tenantid 12345678-1234-1234-abcd-1234567890ab
 ```
-You can grant the Service Principal access on the security settings of an agent pool. This removes the need to use a Personal Access Token (PAT)
-
-###  Use Service Principal in Agent VM extension
+####  Use a Service Principal in the Agent VM extension
 
 Azure VMs can be included in Deployment Groups using a [VM Extension](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template&preserve-view=true). The VM extension has been updated to use a Service Principal instead of a PAT to register the agent:
 ```
@@ -58,9 +64,9 @@ Azure VMs can be included in Deployment Groups using a [VM Extension](/azure/dev
   "tenantId": "[parameters('tenantId')]"      
 }
 ```
-### Azure Active Directory device code authentication flow for pipelines agent registration
+#### Register an agent interactively using device code flow
 
-The pipelines agent gained support for [Azure Entra ID Device Code Flow](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow). You can now use a web browser to easily complete setup instead of manually creating a PAT just for one-time setup. When you run the agent configuration script, enter "AAD" for authentication type. The script will guide you through the next steps, including where to go on the web and what code to enter. After you enter your code on the web, return to the console to finish setting up the agent.
+You can use a web browser to easily complete setup. When you run the agent configuration script, enter "AAD" for authentication type. The script will guide you through the next steps, including where to go on the web and what code to enter. After you enter your code on the web, return to the console to finish setting up the agent.
 
 > [!div class="mx-imgBorder"]
 > ![ Screenshot of authentication flow.](../../media/227-pipelines-04.png " Screenshot of authentication flow")
@@ -91,13 +97,12 @@ With this sprint, we are enabling the `Securely build pull requests from forked 
 
 Previously in, the code coverage policy status was overridden to 'Failed' if your build in PR was failing. This was a blocker for some of you who had the build as an optional check and the code coverage policy as a required check for PRs resulting in PRs being blocked.
 
-> [!div class="mx-imgBorder"] 
-> ![ Screenshot of PRs blocked.](../../media/227-pipelines-02.png " Screenshot of PRs blocked")
+:::image type="content" source="../../media/227-pipelines-02.png" alt-text="Screenshot of PRs blocked." lightbox="../../media/227-pipelines-02.png":::
 
 With this sprint, the code coverage policy won't be overridden to 'Failed' if the build fails.
 This feature will be enabled for all customers.
 
-> [!div class="mx-imgBorder"]
-> ![ Screenshot of Results after change.](../../media/227-pipelines-03.png " Screenshot of Results after change")
+:::image type="content" source="../../media/227-pipelines-03.png" alt-text="Screenshot of results after change." lightbox="../../media/227-pipelines-03.png":::
+
 
 
