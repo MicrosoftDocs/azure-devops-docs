@@ -39,7 +39,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     </thead>
 <tr>
     <td rowspan="10"><a href="2023/sprint-227-update.md" data-raw-source="[12 September 2023](2023/sprint-227-update.md)"> 12 September 2023</a></td>
-    <td>Limits for Area and Iteration Paths</td><td>Boards</td><td>Future</td></tr>
+    <td>Limits for area and iteration paths</td><td>Boards</td><td>Future</td></tr>
     <td>Pipeline agents can be registered using a Service Principal </td><td>Pipelines</td><td>Future</td></tr>
     <td>Use Service Principal in Agent VM extension</td><td>Pipelines</td><td>Future</td></tr>
     <td>Azure Active Directory device code authentication flow for pipelines agent registration</td><td>Pipelines</td><td>Future</td></tr>
