@@ -392,6 +392,13 @@ sections:
 
   - name: Other questions
     questions:
+       - question: |
+          Q: Why don't I see an Azure Subscription from a different tenant ID?
+        answer: |
+          A: User is missing the authentication to AAD where the Subscription is located.
+          When your organization is connected to "Tenant A" and your subscription is located to "Tenant B", in order to access your subscription, you need to force a login on the tenant where the subscription is.
+          You can access directly to aex.dev.azure.com and authenticate in the left AAD drop down to the desired Tenant and retry the operation.
+          
       - question: |
           Q: Why don't I see Team Projects in the Azure portal?
         answer: |
