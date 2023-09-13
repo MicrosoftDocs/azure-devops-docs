@@ -493,7 +493,7 @@ SAS tokens can be [generated using the Azure portal](/azure/storage/blobs/blob-c
 
 1. Selecting only **Read** and **List** as permissions for your SAS token. No other permissions are required.
 2. Setting an expiry time no further than seven days into the future.
-3. [Restrict access to Azure DevOps Services IPs only](#restrict-access-to-azure-devops-services-ips-only).
+3. [Restrict access to Azure DevOps Services IPs only](migration-restricting-access-to-azure-devops-services.md).
 4. Placing the SAS token in a secure location.
 
 ### Step 5: Complete the import specification
@@ -514,7 +514,7 @@ Using the Fabrikam example, the final import specification file should look like
 
 ### Restrict access to Azure DevOps Services IPs only
 
-We highly recommend that you restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You do this by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your storage account depend on the region you're importing into.
+See the [Restrict access to Azure DevOps Services IPs only](migration-restricting-access-to-azure-devops-services.md) page for more details.
 
 #### Option 1: Using Service Tags
 
