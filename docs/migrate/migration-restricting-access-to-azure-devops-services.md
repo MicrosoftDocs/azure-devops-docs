@@ -30,9 +30,11 @@ Migrator IpList /collection:{CollectionURI} /tenantDomainName:{name} /region:{re
 
 You can add the list of IPs to your network security groups or firewalls either through the portal or programatically.
 
-### Configure IP firewall exceptions
+### Configure IP firewall exceptions for SQL Azure
 
-Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started, go to your SQL Azure VM in the [Azure portal](https://ms.portal.azure.com). In **Settings**, select **Networking**. This takes you to the network interface page for your SQL Azure VM. The data migration tool requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1433. You can grant exceptions for the IPs by selecting **Add inbound port rule** in the networking settings. 
+> The data migration tool requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1433.
+
+Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started, go to your SQL Azure VM in the [Azure portal](https://ms.portal.azure.com). In **Settings**, select **Networking**. You can grant exceptions for the IPs by selecting **Add inbound port rule** in the networking settings.
 
 ![Screenshot of the "Add inbound port rule" button on your SQL Azure VM network interface page.](media/migration-import/inbound.png)
 
