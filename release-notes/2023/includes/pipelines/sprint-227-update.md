@@ -66,7 +66,7 @@ Azure VMs can be included in Deployment Groups using a [VM Extension](/azure/dev
 ```
 #### Register an agent interactively using device code flow
 
-You can use a web browser to easily complete setup. When you run the agent configuration script, enter "AAD" for authentication type. The script will guide you through the next steps, including where to go on the web and what code to enter. After you enter your code on the web, return to the console to finish setting up the agent.
+You can use a web browser to easily complete setup. When you run the agent configuration script, enter **"AAD"** for authentication type. The script will guide you through the next steps, including where to go on the web and what code to enter. After you enter your code on the web, return to the console to finish setting up the agent.
 
 > [!div class="mx-imgBorder"]
 > ![ Screenshot of authentication flow.](../../media/227-pipelines-04.png " Screenshot of authentication flow")
