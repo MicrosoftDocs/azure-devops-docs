@@ -37,15 +37,17 @@ All of the Azure tasks that are included with Azure Pipelines now support this n
 
 For this preview, we support workload identity federation only for Azure service connections. This scheme does not work with any other types of service connections. See our docs for more details.
 
-###  Pipeline agents can be registered using a Service Principal
+###  Pipeline agents can be registered using Azure Active Directory instead of a PAT
 
-As Azure DevOps support for Service Principals is in preview, we have added the option to use a Service Principal to register a Pipelines agent with Azure DevOps Services:
+The Pipeline agent now supports additional arguments to use either a Service Principal or a user to register an agent. You should grant the identity used access to the agent pool in its security settings. This removes the need to use a Personal Access Token (PAT) for one-time setup of agents.
+
+####  Register an agent using a Service Principal
+
+To use a Service Principal to register a Pipelines agent with Azure DevOps Services, provide the following arguments:
 ```
 --auth 'SP' --clientid 12345678-1234-1234-abcd-1234567890ab --clientsecret --tenantid 12345678-1234-1234-abcd-1234567890ab
 ```
-You can grant the Service Principal access on the security settings of an agent pool. This removes the need to use a Personal Access Token (PAT)
-
-###  Use Service Principal in Agent VM extension
+####  Use a Service Principal in the Agent VM extension
 
 Azure VMs can be included in Deployment Groups using a [VM Extension](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents?view=azure-devops#install-the-azure-pipelines-agent-azure-vm-extension-using-an-arm-template&preserve-view=true). The VM extension has been updated to use a Service Principal instead of a PAT to register the agent:
 ```
@@ -58,9 +60,9 @@ Azure VMs can be included in Deployment Groups using a [VM Extension](/azure/dev
   "tenantId": "[parameters('tenantId')]"      
 }
 ```
-### Azure Active Directory device code authentication flow for pipelines agent registration
+#### Register an agent interactively using device code flow
 
-The pipelines agent gained support for [Azure Entra ID Device Code Flow](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow). You can now use a web browser to easily complete setup instead of manually creating a PAT just for one-time setup. When you run the agent configuration script, enter "AAD" for authentication type. The script will guide you through the next steps, including where to go on the web and what code to enter. After you enter your code on the web, return to the console to finish setting up the agent.
+You can use a web browser to easily complete setup. When you run the agent configuration script, enter "AAD" for authentication type. The script will guide you through the next steps, including where to go on the web and what code to enter. After you enter your code on the web, return to the console to finish setting up the agent.
 
 > [!div class="mx-imgBorder"]
 > ![ Screenshot of authentication flow.](../../media/227-pipelines-04.png " Screenshot of authentication flow")
