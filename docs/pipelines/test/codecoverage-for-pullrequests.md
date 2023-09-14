@@ -89,6 +89,8 @@ Code coverage status check for pull requests is only a suggestion for developers
 
 > [!NOTE] 
 > Branch policies in Azure Repos (even optional policies) prevent pull requests from completing automatically if they fail. This behavior is not specific to code coverage policy.
+>
+> [Starting September 2023, the code coverage policy won't be overridden to **Failed** if the build fails. This feature will be enabled for all customers](/azure/devops/release-notes/2023/pipelines/sprint-227-update#disabled-override-of-code-coverage-policy-status-to-failed-when-build-is-failing).
 
 ## FAQ
 
