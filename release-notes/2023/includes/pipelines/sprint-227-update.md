@@ -18,7 +18,7 @@ As part of this feature, the Azure (ARM) service connection has been updated wit
 You can take advantage of these features in two ways:
 
 - Use the [new workload identity federation scheme](https://aka.ms/azdo-rm-workload-identity) whenever you create a new Azure service connection. Moving forward, this will be the recommended mechanism.
-- [Convert](https://aka.ms/azdo-rm-workload-identity-conversion) your existing Azure service connections (which are based on secrets) to the new scheme. You can perform this conversion one connection at a time. Best of all, you don't have to modify any of the pipelines that use those service connections. They'll automatically leverage the new scheme once you complete the conversion.
+- [Convert](https://aka.ms/azdo-rm-workload-identity-conversion) your existing Azure service connections (which are based on secrets) to the new scheme. You can perform this conversion one connection at a time. Best of all, you don't have to modify any of the pipelines that use those service connections. They'll automatically apply the new scheme once you complete the conversion.
 
 To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) or ([manual](https://aka.ms/azdo-rm-workload-identity-manual)) in the Azure service connection creation experience:
 
