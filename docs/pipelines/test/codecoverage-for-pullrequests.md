@@ -14,12 +14,11 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Code coverage is an important quality metric and helps you measure the percentage of your project's code that is being tested. To ensure that quality for your project improves over time (or at the least, does not regress), it is essential that new code being brought into the system is well tested. This means that when developers raise pull requests, knowing whether their changes are covered by tests would help plug any testing holes before the changes are merged into the target branch. Repo owners may also want to set policies to prevent merging large untested changes.
+Code coverage is an important quality metric and helps you measure the percentage of your project's code that is being tested. To ensure that quality for your project improves over time (or at the least, does not regress), new code being brought into the system must be well tested. When developers raise pull requests, knowing whether their changes are covered by tests helps plug any testing holes before the changes are merged into the target branch. Repo owners may also want to set policies to prevent merging large untested changes.
 
 ### Full coverage, diff coverage
 
-Typically, coverage gets measured for the entire codebase of a project. This is **full coverage**.
-However, in the context of pull requests, developers are focused on the changes they are making and want to know whether the specific lines of code they have added or changed are covered. This is **diff coverage**.
+**Full coverage** is when coverage gets measured for the entire codebase of a project. However, in the context of pull requests, developers are focused on the changes they are making and want to know whether the specific lines of code they have added or changed are covered. This type of coverage is **diff coverage**.
 
 ## Prerequisites
 
