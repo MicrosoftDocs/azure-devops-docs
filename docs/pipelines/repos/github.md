@@ -490,7 +490,7 @@ When you choose the **Securely build pull requests from forked repositories** op
 
 When you choose the **Customize** option, you can define how to restrict pipeline settings. For example, you can ensure that all pipelines require a comment in order to build a PR from a forked GitHub repo, when the PR belongs to non-team members and non-contributors. But, you can choose to allow them to make secrets available to such builds. Projects can decide to *not* allow pipelines to build such PRs, or to build them securely, or have even more restrictive settings than what is specified at the organization level.
 
-The control is off for existing organizations. Starting September 2023, new organizations have **Securely build pull requests from forked repositories** turned on by default.
+The control is off for existing organizations. [Starting September 2023, new organizations have **Securely build pull requests from forked repositories** turned on by default](/azure/devops/release-notes/2023/pipelines/sprint-227-update#build-github-repositories-securely-by-default).
 
 #### Important security considerations
 
