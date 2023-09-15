@@ -105,6 +105,8 @@ const String c_collectionUri = "https://dev.azure.com/fabrikam";
 const String c_projectName = "MyGreatProject";
 const String c_repoName = "MyRepo";
 
+Uri orgUrl = new Uri(c_collectionUri);
+
 // Connect to Azure DevOps Services
 VssConnection connection = new VssConnection(orgUrl, new VssBasicCredential(string.Empty, personalAccessToken));
 
