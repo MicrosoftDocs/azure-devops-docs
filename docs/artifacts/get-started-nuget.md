@@ -80,8 +80,12 @@ Azure Artifacts offers two types of feeds: project-scoped feeds and organization
 
 [!INCLUDE [](includes/nuget/consume.md)]
 
+::: moniker range="azure-devops"
+
 > [!NOTE]
 > Using NuGet Package Explorer to search for packages in upstreams is not supported.
+
+::: moniker-end
 
 ## Publish packages  
 
