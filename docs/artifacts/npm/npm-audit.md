@@ -65,11 +65,11 @@ Azure Pipelines does not support npm audit, if you attempt to use the regular np
 
     1. Use the following command to solely scan for security vulnerabilities:
     
-    ```Command
-    audit --registry=https://registry.npmjs.org/
-    ```
+       ```Command
+       audit --registry=https://registry.npmjs.org/
+       ```
 
-    1. If you wish to both scan and attempt to upgrade to non-vulnerable package versions, use the following command::
+    1. If you wish to both scan and attempt to upgrade to non-vulnerable package versions, use the following command:
     
     ```Command
     audit fix --registry=https://registry.npmjs.org/ --package-lock-only
