@@ -8,7 +8,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 03/02/2023
+  ms.date: 09/18/2023
   monikerRange: 'azure-devops'
 title: Access via Azure AD FAQs
 summary: |
@@ -34,7 +34,7 @@ sections:
           Why don't I see my organization in the Azure portal?
         answer: |
           In both applications, you must have
-          [Azure Service Administrator or Co-administrator](/azure/billing-add-change-azure-subscription-administrator) 
+          [Azure Service Administrator or Coadministrator](/azure/billing-add-change-azure-subscription-administrator) 
           permissions for the Azure subscription that's linked to your organization in Azure DevOps.
           Also, in the [Azure portal](https://portal.azure.com), you must have Project Collection Administrator or organization owner permissions.
           
@@ -113,7 +113,7 @@ sections:
       - question: |
           How do I find out whether my organization uses Azure AD to control access?
         answer: |
-          If you have at least Basic access, go to your **Organization settings**, and then select the **Azure Active Directory** tab. You either have an option to **Connect directory**, or **Disconnect directory**.
+          If you have at least Basic access, go to your **Organization settings**, and then select the **Azure Active Directory** tab. You can either **Connect directory**, or **Disconnect directory**.
           
           <a name="DeleteFromDirectory"></a>
           
@@ -232,6 +232,11 @@ sections:
            
           If you don't have enough access levels for all Azure AD group members, those members who sign in get a Stakeholder access.
           
+      - question: |
+          How can I protect access to built-in administrator groups?
+        answer: |
+          Require just-in-time access using an Azure AD Privileged Identity Management (PIM) group. For more information, see [Just-in-time access for admin groups](../security/security-best-practices.md#just-in-time-access-for-admin-groups).
+      
       - question: |
           Why doesn't the Security tab show all members when I select an Azure AD group?
         answer: |
