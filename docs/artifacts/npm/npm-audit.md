@@ -1,24 +1,22 @@
 ---
-title: Use npm audit with Azure Artifacts
+title: Enhance Project Security with npm audit
 description: Use npm audit to scan for security vulnerabilities
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 08/29/2022
+ms.date: 09/18/2023
 monikerRange: 'azure-devops'
 ---
 
-# Use npm audit
+# Use npm audit to detect package vulnerabilities
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-The *npm audit* command scans your project for security vulnerabilities and provides a detailed report of any identified anomaly. Performing security audits is an essential part in identifying and fixing vulnerabilities in the project's dependencies. Fixing these vulnerabilities could prevent things like data loss, service outages, and unauthorized access to sensitive information.
+The npm audit command conducts a comprehensive scan of your project to detect potential security vulnerabilities. It then generates a detailed report highlighting any identified issues. Performing security audits is a crucial step in identifying and addressing vulnerabilities within the project's dependencies. Addressing these vulnerabilities can help prevent issues such as data loss, service disruptions, and unauthorized access to sensitive information.
 
-Azure DevOps does not support *npm audit*, if you try to run the default *npm audit* command from your pipeline, the task will fail with the following message: *Unexpected end of JSON input while parsing...*.
-
-As a workaround, you can run *npm audit* with the registry argument `--registry=https://registry.npmjs.org/`. This will route the *npm audit* command directly to the public registry.
+Azure Pipelines does not support npm audit, if you attempt to use the regular npm audit command in your pipeline, it will fail with the following message: *Unexpected end of JSON input while parsing...*. As a workaround, you can run npm audit with the registry argument `--registry=https://registry.npmjs.org/`. This will route it straight to the public registry.
 
 >[!WARNING]
-> Running *npm audit* will forward all the packages' names from your *package.json* to the public registry.
+> Running npm audit will send the names of all packages listed in your *package.json* to the public registry.
 
 ## Run npm audit from your pipeline
 
