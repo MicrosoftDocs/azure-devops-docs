@@ -7,7 +7,7 @@ ms.topic: best-practice
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops' 
-ms.date: 07/18/2023  
+ms.date: 09/18/2023  
 ---
 
 # Security best practices
@@ -110,9 +110,28 @@ See the following recommendations for assigning permissions to security groups a
 |Keep groups as small as possible. Access should be restricted, and the groups should be frequently audited.    |         |
 |Take advantage of built-in roles and default to Contributor for developers. Admins get assigned to the Project Administrator security group for elevated permissions, allowing them to configure security permissions.|     |
 
-For more information, see [Valid user groups](about-permissions.md#valid-user-groups)  
+For more information, see [Valid user groups](about-permissions.md#valid-user-groups).
 
------
+### Just-in-time access for admin groups 
+
+You can change the configuration of your organization or project if you have [Project Collection Administrator](../../user-guide/manage-organization-collection.md) and [Project Administrator](../../user-guide/project-admin-tutorial.md) access. To protect access to these built-in administrator groups, require just-in-time access using an Azure AD [Privileged Identity Management (PIM) group](/azure/active-directory/privileged-identity-management/concept-pim-for-groups).
+
+#### Configure access 
+
+1. Create an Azure AD group: [Create a role-assignable group in Azure AD](/azure/active-directory/roles/groups-create-eligible?tabs=ms-powershell).
+2. Add your Azure AD group to the Azure DevOps group: [Grant permissions in Azure DevOps using the group you created](about-permissions.md). 
+
+> [!NOTE]
+> Make sure any user with elevated access using a PIM group also has standard access to the organization, so they can view the page to refresh their permissions. 
+
+#### Use access 
+
+1. [Activate your access](/azure/active-directory/privileged-identity-management/groups-activate-roles). 
+2. [Refresh your permissions](request-changes-permissions.md#refresh-or-re-evaluate-your-permissions) in Azure DevOps. 
+3. Take the action requiring administrator access. 
+
+> [!NOTE]
+> Users have elevated access in Azure DevOps for up to 1 hour after their PIM group access gets deactivated.
 
 ## Scope service accounts
 
@@ -189,7 +208,7 @@ If possible, we recommended to always use identity services for authentication i
 
 ### Policies
 
-- Require at least one reviewer outside of the original requester. The approver shares co-ownership of the changes and should be held equally accountable for any potential impact.
+- Require at least one reviewer outside of the original requester. The approver shares coownership of the changes and should be held equally accountable for any potential impact.
 - Require CI build to pass. This requirement is useful for establishing baseline code quality, through code linting, unit tests, and security checks, like virus and credential scans.
 - Ensure that the original pull requester can’t approve the change.  
 - Disallow completion of a PR (Pull Request), even if some reviewers vote to wait or reject.
