@@ -5,6 +5,7 @@ ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 09/18/2023
 monikerRange: 'azure-devops'
+"recommendations": "true"
 ---
 
 # Use npm audit to detect package vulnerabilities
@@ -13,7 +14,7 @@ monikerRange: 'azure-devops'
 
 The npm audit command conducts a comprehensive scan of your project to detect potential security vulnerabilities. It then generates a detailed report highlighting any identified issues. Performing security audits is a crucial step in identifying and addressing vulnerabilities within the project's dependencies. Addressing these vulnerabilities can help prevent issues such as data loss, service disruptions, and unauthorized access to sensitive information.
 
-Azure Pipelines does not support npm audit, if you attempt to use the regular npm audit command in your pipeline, it will fail with the following message: *Unexpected end of JSON input while parsing...*. As a workaround, you can run npm audit with the registry argument `--registry=https://registry.npmjs.org/`. This will route it straight to the public registry.
+Azure Pipelines does not support npm audit, if you attempt to use the regular npm audit command in your pipeline, it will fail with the following message: *Unexpected end of JSON input while parsing...*. As a workaround, you can run npm audit with the registry argument `--registry=https://registry.npmjs.org/`. This routes it straight to the public registry.
 
 >[!WARNING]
 > Running npm audit will send the names of all packages listed in your *package.json* to the public registry.
@@ -73,6 +74,9 @@ Azure Pipelines does not support npm audit, if you attempt to use the regular np
     ```Command
     audit fix --registry=https://registry.npmjs.org/ --package-lock-only
     ```
+
+:::image type="content" source="./media/npm-audit-classic-pipeline.png" alt-text="A screenshot showing the npm audit task in a classic pipeline.":::
+
 ---
 
 ## Run npm audit on your development environment 
@@ -81,7 +85,7 @@ To perform an npm audit locally on your development environment and optionally a
 
 1. Open a command prompt window, and navigate to the root directory of your project where your *package.json* file is located.
 
-1. Run the following command to generate the *package-lock.json* file. This command will analyze your *package.json* file, install the required dependencies, and generate the *package-lock.json* file.
+1. Run the following command to generate the *package-lock.json* file. This command analyzes your *package.json* file, installs the required dependencies, and generates the *package-lock.json* file.
 
     ```Command
     npm i --package-lock-only
@@ -99,9 +103,12 @@ To perform an npm audit locally on your development environment and optionally a
     audit fix --registry=https://registry.npmjs.org/ --package-lock-only
     ```
 
+Here's an example of the output you might see in your command prompt window after running the npm audit command:
+
+:::image type="content" source="./media/npm-audit-report.png" alt-text="A screenshot of a local npm audit security report.":::
+
 ## Related articles
 
-- [npm quickstart](../get-started-npm.md).
-- [Publish npm packages with Azure Pipelines](../../pipelines/artifacts/npm.md).
-- [Artifacts storage consumption](../artifact-storage.md)
+- [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md).
+- [Use Npm scopes in Azure Artifacts](./scopes.md).
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md).
