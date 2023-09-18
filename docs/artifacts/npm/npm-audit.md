@@ -75,19 +75,29 @@ Azure Pipelines does not support npm audit, if you attempt to use the regular np
     ```
 ---
 
-## Run npm audit on your development machine
+## Run npm audit on your development environment 
 
-To run npm audit locally, run the following command in a command prompt window:
+To perform an npm audit locally on your development environment and optionally attempt to upgrade to non-vulnerable package versions, follow these steps:
 
-```Command
-npm audit --registry=https://registry.npmjs.org/
-```
+1. Open a command prompt window, and navigate to the root directory of your project where your *package.json* file is located.
 
-To also attempt to upgrade to non-vulnerable package versions:
+1. Run the following command to generate the *package-lock.json* file. This command will analyze your *package.json* file, install the required dependencies, and generate the *package-lock.json* file.
 
-```Command
-audit fix --registry=https://registry.npmjs.org/ --package-lock-only
-```
+    ```Command
+    npm i --package-lock-only
+    ```
+
+1. Run the `npm audit` command to scan your project for security vulnerabilities and provide a report.
+
+    ```Command
+    npm audit --registry=https://registry.npmjs.org/
+    ```
+
+1. If you also want to attempt to upgrade to non-vulnerable package versions, use the following command instead:
+
+    ```Command
+    audit fix --registry=https://registry.npmjs.org/ --package-lock-only
+    ```
 
 ## Related articles
 
