@@ -119,7 +119,7 @@ You can change the configuration of your organization or project if you have [Pr
 #### Configure access 
 
 1. [Create a role-assignable group in Azure AD](/azure/active-directory/roles/groups-create-eligible?tabs=ms-powershell&branch=main).
-2. [Add your Azure AD group to the Azure DevOps group](/azure/devops/organizations/security/add-ad-aad-built-in-security-groups?view=azure-devops&branch=main&tabs=preview-page). 
+2. [Add your Azure AD group to the Azure DevOps group](/azure/devops/organizations/security/add-ad-aad-built-in-security-groups?view=azure-devops&branch=main&tabs=preview-page&preserve-view=true). 
 
 > [!NOTE]
 > Make sure any user with elevated access using a PIM group also has standard access to the organization, so they can view the page to refresh their permissions. 
