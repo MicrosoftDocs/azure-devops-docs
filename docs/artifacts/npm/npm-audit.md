@@ -20,59 +20,59 @@ Azure Pipelines does not support npm audit, if you attempt to use the regular np
 
 ## Run npm audit from your pipeline
 
-Select the YAML or the classic tab to learn how to run npm audit from you Pipeline.
-
 # [YAML](#tab/yaml)
 
-Add the following task to your yaml pipeline to only scan for security vulnerabilities.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-```yaml
-steps:
-- task: Npm@1
-  displayName: 'npm audit'
-  inputs:
-    command: custom
-    customCommand: 'audit --registry=https://registry.npmjs.org/'
-```
+1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline.
 
-Instead of only scanning, to scan and also attempt to upgrade to non-vulnerable package versions:
+1. Add the following task to your yaml pipeline to run npm audit and scan for security vulnerabilities.
 
-```yaml
-steps:
-- task: Npm@1
-  displayName: 'npm audit fix'
-  inputs:
-    command: custom
-    customCommand: 'npm audit fix --registry=https://registry.npmjs.org/ --package-lock-only'
-```
+    ```yaml
+    steps:
+    - task: Npm@1
+      displayName: 'npm audit'
+      inputs:
+        command: custom
+        customCommand: 'audit --registry=https://registry.npmjs.org/'
+    ```
 
-- **command**: the npm command to run.
-- **customCommand**: Required when command == custom.
+1. You can also simultaneously scan and upgrade to non-vulnerable package versions, as follows:
+
+    ```yaml
+    steps:
+    - task: Npm@1
+      displayName: 'npm audit & fix'
+      inputs:
+        command: custom
+        customCommand: 'audit fix --registry=https://registry.npmjs.org/ --package-lock-only'
+    ```
 
 # [Classic](#tab/classic)
 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline.
+
 1. From your pipeline definition, select the `+` sign to add a task to your agent job.
 
-    :::image type="content" source="media/add-new-task.png" alt-text="Screenshot showing how to add a new task to the agent job":::
+1. Search for the **npm** task, and then select **Add** to add it to your agent job.
 
-1. Search for the **npm** task. Select **Add** to add it to your agent job.
+1. Provide a **Display name** for your task, and select **custom** from the **Command** dropdown menu.
 
-1. Fill out the required fields as follows:
+1. Paste your custom command into the **Command and arguments** text box:
 
-    1. To only scan for security vulnerabilities use this command:
+    1. Use the following command to solely scan for security vulnerabilities:
     
     ```Command
     audit --registry=https://registry.npmjs.org/
     ```
 
-    1. To also attempt to upgrade to non-vulnerable package versions:
+    1. If you wish to both scan and attempt to upgrade to non-vulnerable package versions, use the following command::
     
     ```Command
     audit fix --registry=https://registry.npmjs.org/ --package-lock-only
     ```
-
-:::image type="content" source="media/npm-audit-task.png" alt-text="Screenshot showing the npm custom task to run npm audit":::
-
 ---
 
 ## Run npm audit on your development machine
