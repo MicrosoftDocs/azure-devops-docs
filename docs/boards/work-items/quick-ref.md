@@ -144,15 +144,13 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Create a work tracking chart](../../report/dashboards/charts.md)  
       <br/>
       ::: moniker range=">= azure-devops-2020"
-      - [Define a work item template](../backlogs/work-item-template.md)  
-      - [Define work item URL](work-item-url-hyperlink.md)  
+      - [Define a work item template](../backlogs/work-item-template.md)
       - [Delete work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
       - [Delete work items](../backlogs/remove-delete-work-items.md)  
       - [Display rollup](../backlogs/display-rollup.md)  
       ::: moniker-end
       ::: moniker range="< azure-devops-2020"
-      - [Define a work item template](../backlogs/work-item-template.md)  
-      - [Define work item URL](work-item-url-hyperlink.md)  
+      - [Define a work item template](../backlogs/work-item-template.md)    
       - [Delete work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
       - [Delete work items](../backlogs/remove-delete-work-items.md)  
       ::: moniker-end
