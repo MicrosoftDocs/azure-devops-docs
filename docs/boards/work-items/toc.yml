@@ -65,12 +65,8 @@
     href: ../backlogs/delete-test-artifacts.md
   - name: Use work item templates
     href: ../backlogs/work-item-template.md
-- name: Samples
-  items:
   - name: Sample work item templates
     href: work-item-template-examples.md
     displayname: rich text, tags
-  - name: Define a work item URL
-    href: work-item-url-hyperlink.md
 - name: Go mobile
   href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json
