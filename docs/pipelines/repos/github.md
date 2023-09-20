@@ -659,7 +659,7 @@ This means that your repository is already associated with a pipeline in a diffe
 
 [!INCLUDE [qa](includes/qa2-1.md)]
 
-[!INCLUDE [qa](includes/qa3.md)]
+[!INCLUDE [qa](includes/qa3-gh.md)]
 
 [!INCLUDE [qa](includes/qa4.md)]
 
