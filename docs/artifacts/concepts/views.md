@@ -23,13 +23,16 @@ The `@local` view contains all packages published directly to the feed and all p
 
 Feed views are read-only, which means that users connected to a view can only use packages that are published to that view and/or packages previously saved from upstream sources. See [package graphs](package-graph.md) to learn how available packages are constructed.
 
-> [!NOTE]
-> All feed views in a public project are accessible to everyone on the internet.
+> [!Note]
+> Azure Artifacts only supports publishing and restoring packages from and to the default view - *@Local*.
 
 ## Feed views and upstream sources
 
 Feed views and upstream sources are designed to work together to provide an enterprise-level solution to share and consume packages.
 In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's visibility to **members of your organization**, or **members of your Azure Active Directory**, depending on your scenario. If you choose the latter, all people in your organization will be able to access your feed. In addition, all feeds in your organization and other organizations associated with the same Azure Active Directory tenant will be able to upstream to your feed.
+
+> [!NOTE]
+> All feed views in a public project are accessible to everyone on the internet.
 
 ## Release packages with feed views
 
