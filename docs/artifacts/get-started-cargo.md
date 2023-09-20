@@ -19,7 +19,7 @@ Using Azure Artifacts, you can publish and download Cargo packages to feeds and 
 
 - An Azure DevOps organization and a project. Create an [organization](../organizations/accounts/create-organization.md) or a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Download and install [rustup](https://rustup.rs/).
+- Download and install [rustup](https://rustup.rs/). Make sure to install the **nightly toolchain** by running this command: `rustup toolchain install nightly`.
 
 ## Create a feed
 
