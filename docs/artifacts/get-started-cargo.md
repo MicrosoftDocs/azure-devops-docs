@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Get started with Cargo packages in Azure Artifacts
 
-Using Azure Artifacts, you can publish and download Cargo packages to feeds and public registries. This article will guide you through setting up your project and publishing your Cargo packages to your Azure Artifacts feed.
+Using Azure Artifacts, you can publish and download Cargo packages to feeds and public registries. This article will guide you through setting up your project and publishing your Cargo packages to your Azure Artifacts feed..
 
 > [!NOTE]
 > Cargo support in Azure Artifacts is currently in preview.
@@ -19,7 +19,7 @@ Using Azure Artifacts, you can publish and download Cargo packages to feeds and 
 
 - An Azure DevOps organization and a project. Create an [organization](../organizations/accounts/create-organization.md) or a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Download and install [rustup](https://rustup.rs/).
+- Download and install [rustup](https://rustup.rs/). Make sure to use the nightly toolchain. 
 
 ## Create a feed
 
