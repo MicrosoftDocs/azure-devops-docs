@@ -1,14 +1,14 @@
 ---
 ms.subservice: azure-devops-ecosystem
 title: Develop a web extension
-description: Tutorial showing you how to develop your first web extension for Azure DevOps.
+description: Learn how to develop your first web extension for Azure DevOps.
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.custom: engagement-fy23
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/12/2022
+ms.date: 09/20/2023
 ---
 
 # Develop a web extension
@@ -26,7 +26,7 @@ You must have the following permission and installations.
 
 * You must be an organization owner. If you don't have an organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
 * Install [Node.js](https://nodejs.org).
-* Install the extension packaging tool (TFX). Run `npm install -g tfx-cli` from a command prompt, which you'll use to [package your extension](../publish/overview.md) later on.
+* Install the extension packaging tool (TFX). Run `npm install -g tfx-cli` from a command prompt, which you use to [package your extension](../publish/overview.md) later on.
 
 ## Create a directory and manifest
 
@@ -90,9 +90,8 @@ An extension is composed of a set of files that includes a required manifest fil
                 "addressable": true
             },
             {
-                "path": "node_modules/azure-devops-extension-sdk/lib",
+                "path": "node_modules/azure-devops-extension-sdk",
                 "addressable": true,
-                "packagePath": "lib"
             }
         ]
     }
