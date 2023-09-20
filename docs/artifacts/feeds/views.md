@@ -17,7 +17,7 @@ Feed views are a way to enable users to share some packages while keeping other 
 By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. @local is the default view that contains all the published packages and all the packages saved from upstream sources. All views support NuGet, npm, Maven, Python, and Universal packages.
 
 > [!Note]
-> Publishing and restoring packages directly to/from a view is not supported in Azure Artifacts.
+> Azure Artifacts only supports publishing and restoring packages from and to the default view - *@Local*.
 
 ## Promote packages
 
