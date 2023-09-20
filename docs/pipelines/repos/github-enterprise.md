@@ -106,7 +106,7 @@ Problems related to GitHub Enterprise integration fall into the following catego
 
 [!INCLUDE [qa](includes/qa2-1.md)]
 
-[!INCLUDE [qa](includes/qa3.md)]
+[!INCLUDE [qa](includes/qa3-ghes.md)]
 
 ### Failing checkout
 
