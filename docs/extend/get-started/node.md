@@ -92,6 +92,7 @@ An extension is composed of a set of files that includes a required manifest fil
             {
                 "path": "node_modules/azure-devops-extension-sdk",
                 "addressable": true,
+                "packagePath": "lib"
             }
         ]
     }
@@ -106,7 +107,12 @@ An extension is composed of a set of files that includes a required manifest fil
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <script src="lib/SDK.min.js"></script>
+        <script type="text/javascript" src="lib/SDK.min.js">
+            SDK.init();
+            SDK.ready(function() {
+                document.getElementById("name").innerText = SDK.getUser().name;
+            });
+        </script>
         <style>
             body {
                 background-color: rgb(0, 67, 117);
@@ -115,12 +121,6 @@ An extension is composed of a set of files that includes a required manifest fil
                 font-family: "Segoe UI VSS (Regular)","-apple-system",BlinkMacSystemFont,"Segoe UI",sans-serif;
             }
         </style>
-        <script type="text/javascript">
-            SDK.init();
-            SDK.ready(function() {
-                document.getElementById("name").innerText = SDK.getUser().name;
-            });
-        </script>
     </head>
     <body>        
         <h1>Hello, <span id="name"></span></h1>
