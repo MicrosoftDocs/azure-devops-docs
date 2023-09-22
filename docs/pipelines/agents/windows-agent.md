@@ -98,36 +98,61 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ### Server URL and authentication
 
-When setup asks for your server URL, for Azure DevOps Services, answer `https://dev.azure.com/{your-organization}`.
+:::moniker range="azure-devops"
+
+    When setup asks for your server URL, for Azure DevOps Services, answer `https://dev.azure.com/{your-organization}`.
+
+:::moniker-end
+
+:::moniker range="<azure-devops"
+
+    When setup asks for your server URL, for Azure DevOps Server, answer `https://{my-server}/{my-collection}`.
+
+:::moniker-end
+
+When setup asks for your authentication type, choose one of the following authentication types.
+
+:::moniker range="azure-devops"
+
+* PAT
+* AAD (for device code flow)
+* SP (for Service Principal)
+
+:::moniker-end
+
+:::moniker range="> azure-devops-2022 < azure-devops"
+
+* PAT (requires your server to be [configured with HTTPS](/azure/devops/server/admin/websitesettings))
+* AAD (for device code flow)
+* SP (for Service Principal)
+* **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
+* **Negotiate** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
+* **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
 
 
-When setup asks for your authentication type, choose **PAT**.
-Then paste the [PAT token you created](#permissions) into the command prompt window.
+:::moniker-end
 
-> [!NOTE]
-> When using PAT as the authentication method, the PAT token is only used during the initial configuration of the agent. Later, if the PAT expires or needs to be renewed, no further changes are required by the agent.
+:::moniker range="<= azure-devops-2022"
 
-::: moniker range="< azure-devops"
+* PAT
+* **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
+* **Negotiate** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
+* **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
+
+Your server must be configured to support to use Alternate, Negotiate, or Integrated authentication.
+
 > [!IMPORTANT]
 > 
 > Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
-  
-When you configure your agent to connect to TFS, you've got the following options:
 
-* **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
-
-* **Negotiate** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
-
-* **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
- 
-* **PAT** Supported only on Azure Pipelines and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
-
-> [!NOTE]
-> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. If the PAT needs to be regenerated, no further changes are needed to the agent. 
+:::moniker-end
 
 Learn more at [Communication with Azure Pipelines or TFS](agents.md#communication).
 
-::: moniker-end
+
+
+> [!NOTE]
+> When using PAT as the authentication method, the PAT token is only used during the initial configuration of the agent. Later, if the PAT expires or needs to be renewed, no further changes are required by the agent.
 
 ### Choose interactive or service mode
 
