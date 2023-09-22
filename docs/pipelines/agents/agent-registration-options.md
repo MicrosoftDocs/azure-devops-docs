@@ -10,9 +10,21 @@ monikerRange: '<= azure-devops'
 
 | Agent rgistration method | Azure DevOps Services | Azure DevOps Server & TFS |
 |--------------------------|-----------------------|---------------------------|
-| Personal access token (PAT) | Supported | Supported when server is configured with HTTPS |
-| Service Principal (SP)      | Supported | Currently not supported |
-| Device code flow (AAD)      | Supported | Currently not suported |
-| Integrated | Not supported | Windows agents only |
-| Negotiate | Not supported | Windows agents only |
-| Alternate | Not supported | Supported when server is configured with HTTPS |
+| [Personal access token (PAT)](#personal-access-token-pat) | Supported | Supported when server is configured with HTTPS |
+| [Service Principal (SP)](#service-principal-sp)      | Supported | Currently not supported |
+| [Device code flow (AAD)](#device-code-flow-aad)     | Supported | Currently not suported |
+| [Integrated](#integrated) | Not supported | Windows agents only |
+| [Negotiate](#negotiate) | Not supported | Windows agents only |
+| [Alternate (ALT)](#alternate-alt) | Not supported | Supported when server is configured with HTTPS |
+
+## Personal access token (PAT)
+
+## Service Principal (SP)
+
+## Device code flow (AAD)
+
+## Integrated
+
+## Negotiate
+
+## Alternate (ALT)
