@@ -129,7 +129,7 @@ To publish your symbols to a file share add the following snippet to your YAML p
 
 Portable PDBs are symbol files that can be created and used on all platforms unlike the traditional PDBs which are used on Windows only. For portable PDBs, the build does the indexing, but you still need to use the **Index Sources and Publish Symbols** task to publish your symbols.
 
-### Use Source Link in .NET projects
+#### Use Source Link in .NET projects
 
 Source link is a set of tools that allow developers to debug their source code by mapping from the .NET assemblies back to the source code. Check out the [dotnet/sourcelink](https://github.com/dotnet/sourcelink) GitHub repository to learn about the different packages included.
 
@@ -157,36 +157,53 @@ Source link is a set of tools that allow developers to debug their source code b
   </ItemGroup>
   ```
 
-### Set up the publish task
+#### Set up the publish task
 
-The Index Sources & Publish Symbols task is used to index your source code and publish your symbols to Azure Artifacts symbols server. Because we are using Source Link, we will disable indexing in the publish task.
+The Index Sources & Publish Symbols task is used to index your source code and publish your symbols to Azure Artifacts symbols server and file shares. Because we are using **Source Link**, we will have to **disable indexing** in the publish task.
+
+# [Classic](#tab/classic)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline. 
 
 1. From your pipeline definition, select `+` to add a new task.
 
 1. Search for the **Index sources and publish symbols** task. Select **Add** to add it to your pipeline.
 
-    :::image type="content" source="media/index-sources-publish-symbols.png" alt-text="Screenshot showing how to add the index sources and publish symbols to the current pipeline":::
+1. Fill out the required fields and select *Symbol Server* for the **Symbol server type**. Make sure you uncheck **Index sources** to disable indexing. 
 
-1. Fill out the required fields as follows:
+    :::image type="content" source="media/publish-to-symbol-server-indexing-disabled.png" alt-text="A screenshot showing how to configure the publish task to publish portable PDBs to Azure Artifacts symbol server.":::
 
-    :::image type="content" source="media/publish-to-symbol-server-indexing-disabled.png" alt-text="Screenshot showing how to configure the publish task to publish symbols to Azure Artifacts symbol server":::
+# [YAML](#tab/yaml)
 
-- **Task version**: **2.\\***.
+To publish your portable PDBs to Azure Artifacts symbol server add the following snippet to your YAML pipeline:
 
-- **Index sources**: Uncheck to disable indexing. Source indexing in the publish task is not needed when using Source Link.
+```yml
+- task: PublishSymbols@2
+  inputs:
+    SymbolsFolder: '$(Build.SourcesDirectory)'
+    SearchPattern: '**/bin/**/*.pdb'
+    IndexSources: false
+    PublishSymbols: true
+    SymbolServerType: 'TeamServices' 
+    SymbolExpirationInDays: '36530'
+    IndexableFileFormats: 'Default'
+    DetailedLog: true
+    SymbolsArtifactName: 'Symbols_$(BuildConfiguration)'
+```
 
-- **Publish symbols**: indicates whether to publish the symbol files. 
-    - **Symbol server type**: select **Symbol Server in this organization/collection (requires Azure Artifacts)** to publish your symbols to Azure Artifacts symbol server.
+---
 
 > [!IMPORTANT]
-> To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
+> To delete symbols published via the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
 
 ::: moniker-end
 
 ## Set up Visual Studio
 
 > [!NOTE]
-> Visual Studio for Mac does not support provide support debugging using symbol servers. 
+> Visual Studio for Mac does not support debugging using symbol servers. 
 
 Before starting to consume our symbols from Azure Artifacts symbol server, let's make sure that Visual Studio is set up properly:
 
