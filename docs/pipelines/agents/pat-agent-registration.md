@@ -30,11 +30,11 @@ monikerRange: '<= azure-devops'
 
 2. From your home page, open your profile. Go to your security details.
 
-   ![Go to your security details.](/azure/devops/repos/git/media/my-profile-team-services.png)
+   ![Go to your security details.](../../repos/git/media/my-profile-team-services.png)
 
 3. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-   ![Create a personal access token.](/azure/devops/repos/git/media/add-personal-access-token.png)
+   ![Create a personal access token.](../../repos/git/media/add-personal-access-token.png)
 
    > [!NOTE]
    > If you are configuring a deployment group agent, or if you see an error when registering a VM environment resource, you must set the PAT scope to **All accessible organizations**. 
@@ -47,11 +47,11 @@ monikerRange: '<= azure-devops'
 
 2. From your home page, open your user settings, and then select **Personal access tokens**.
 
-   ![Go to your security details.](/azure/devops/repos/git/media/select-personal-access-tokens.jpg)
+   ![Go to your security details.](../../repos/git/media/select-personal-access-tokens.jpg)
 
 3. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-   ![Create a personal access token.](/azure/devops/repos/git/media/select-new-token.png)
+   ![Create a personal access token.](../../repos/git/media/select-new-token.png)
 
 ::: moniker-end
 
@@ -65,3 +65,6 @@ monikerRange: '<= azure-devops'
 5. Copy the token. You'll use this token when you configure the agent.
 
 ::: moniker-end
+
+> [!NOTE]
+> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with Azure Pipelines or TFS](./agents.md#communication).
