@@ -198,7 +198,7 @@ Not all fields are valid for all work item types. Jump to [date fields](#date_fi
 ---
 :::row:::
    :::column span="1":::
-      Items closed during the current sprint (the <code><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></code> macro references the sprint defined for the current team context)
+      Items closed during the current sprint (the `<xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref>` macro references the sprint defined for the current team context)
    :::column-end::: 
    :::column span="2":::
       :::image type="content" source="media/q-by-done-current-iteration.png" alt-text="Screenshot of query editor, Clause for items closed during the current sprint.":::  
