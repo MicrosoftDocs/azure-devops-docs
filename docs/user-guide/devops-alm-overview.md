@@ -142,7 +142,7 @@ Our extensibility framework enables you to build integrations directly within Az
 With Marketplace extensions, you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the Azure DevOps Services web portal.  
 
 - [Find marketplace extensions](../marketplace/overview.md)
-- [Get extensions](../marketplace/install-extension.md)</li>
+- [Get extensions](../marketplace/install-extension.md)</br>
 - [Using service hooks](../service-hooks/overview.md)
 - [Get started with REST APIs](/rest/api/azure/devops/)
 
