@@ -130,7 +130,7 @@ Once you've signed up for Azure DevOps Services or installed Azure DevOps Server
 
 ### Pricing, costs, and licenses</span>
 
-[Azure DevOps Services Pricing](https://visualstudio.microsoft.com/team-services/pricing/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.
+[Azure DevOps Services Pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.
 
 On-premises Azure DevOps Server provides three access levels: [Stakeholder, Basic, and Basic + Test Plans](../organizations/security/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing) to plan your licensing requirements.
 
