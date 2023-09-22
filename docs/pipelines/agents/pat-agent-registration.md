@@ -32,13 +32,13 @@ monikerRange: '<= azure-devops'
 
    ![Go to your security details.](/azure/devops/repos/git/media/my-profile-team-services.png)
 
-3. [Create a personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+3. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
    ![Create a personal access token.](/azure/devops/repos/git/media/add-personal-access-token.png)
 
    > [!NOTE]
    > If you are configuring a deployment group agent, or if you see an error when registering a VM environment resource, you must set the PAT scope to **All accessible organizations**. 
-   > :::image type="content" source="../media/prepare-permissions-pat-scope.png" alt-text="Screenshot of setting PAT scope to all accessible organizations.":::
+   > :::image type="content" source="media/prepare-permissions-pat-scope.png" alt-text="Screenshot of setting PAT scope to all accessible organizations.":::
 
 
 ::: moniker-end
@@ -49,7 +49,7 @@ monikerRange: '<= azure-devops'
 
    ![Go to your security details.](/azure/devops/repos/git/media/select-personal-access-tokens.jpg)
 
-3. [Create a personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+3. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
    ![Create a personal access token.](/azure/devops/repos/git/media/select-new-token.png)
 
@@ -58,7 +58,7 @@ monikerRange: '<= azure-devops'
 ::: moniker range="<= azure-devops"
 
 4. For the scope select **Agent Pools (read, manage)** and make sure all the other boxes are cleared.
-   If it's a [deployment group](../../release/deployment-groups/index.md) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.
+   If it's a [deployment group](../release/deployment-groups/index.md) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.
 
    Select **Show all scopes** at the bottom of the **Create a new personal access token window** window to see the complete list of scopes.
 
