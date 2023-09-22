@@ -120,18 +120,6 @@ When setup asks for your authentication type, choose one of the following authen
 
 :::moniker-end
 
-:::moniker range="> azure-devops-2022 < azure-devops"
-
-* PAT (requires your server to be [configured with HTTPS](/azure/devops/server/admin/websitesettings))
-* AAD (for device code flow)
-* SP (for Service Principal)
-* **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
-* **Negotiate** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
-* **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
-
-
-:::moniker-end
-
 :::moniker range="<= azure-devops-2022"
 
 * PAT
