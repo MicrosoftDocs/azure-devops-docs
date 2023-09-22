@@ -21,32 +21,52 @@ With Azure Pipelines, you can publish your symbols to Azure Artifacts symbol ser
 
 ## Publish symbols to Azure Artifacts symbol server
 
-To publish your symbols to Azure Artifacts symbols server, you can use the *Index Sources & Publish Symbols* task.
+# [Classic](#tab/classic)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline. 
 
 1. From your pipeline definition, select `+` to add a new task.
 
 1. Search for the **Index sources and publish symbols** task. Select **Add** to add it to your pipeline.
 
-    :::image type="content" source="media/index-sources-publish-symbols.png" alt-text="Screenshot showing how to add the index sources and publish symbols to the current pipeline":::
-
 1. Fill out the required fields as follows:
 
-    :::image type="content" source="media/publish-to-symbol-server.png" alt-text="Screenshot showing the index sources and publish symbols task to publish symbols to Azure Artifacts symbol server":::
+    - **Task version**: **2.\\***.
 
-- **Task version**: **2.\\***.
+    - **Display name**: task display name.
 
-- **Display name**: task display name.
+    - **Path to symbols folder**: path to the folder hosting the symbol files.
 
-- **Path to symbols folder**: path to the folder hosting the symbol files.
+    - **Search pattern**: the pattern used to locate the *.pdb* files in the folder you've designated under *Path to symbols folder*. Single-folder wildcard (`*`) and recursive wildcards (`**`) are both supported. Example: ***\bin\**\*.pdb*: will search for all *.pdb* files within all subdirectories named *bin*.
 
-- **Search pattern**: the pattern used to find the pdb files in the folder that you specified in **Path to symbols folder**. Single-folder wildcard (`*`) and recursive wildcards (`**`) are supported. Example: ***\bin\**\*.pdb* searches for all .pdb files in all the *bin* subdirectories.
+    - **Index sources**: indicates whether to inject source server information into the PDB files.
 
-- **Index sources**: indicates whether to inject source server information into the PDB files.
+    - **Publish symbols**: indicates whether to publish the symbol files. 
+        - **Symbol server type**: select **Symbol Server in this organization/collection (requires Azure Artifacts)** to publish your symbols to Azure Artifacts symbol server.
 
-- **Publish symbols**: indicates whether to publish the symbol files. 
-    - **Symbol server type**: select **Symbol Server in this organization/collection (requires Azure Artifacts)** to publish your symbols to Azure Artifacts symbol server.
+    - **Verbose logging**: include more information in your logs.
 
-- **Verbose logging**: check to include more information in your logs.
+  :::image type="content" source="media/publish-to-symbol-server.png" alt-text="Screenshot showing how to configure the index sources and publish symbols task to publish symbols to Azure Artifacts symbol server":::
+
+# [YAML](#tab/yaml)
+
+```yml
+- task: PublishSymbols@2
+  inputs:
+    SymbolsFolder: '$(Build.SourcesDirectory)'
+    SearchPattern: '**/bin/**/*.pdb'
+    IndexSources: true
+    PublishSymbols: true
+    SymbolServerType: 'TeamServices' 
+    SymbolExpirationInDays: '36530'
+    IndexableFileFormats: 'Default'
+    DetailedLog: true
+    SymbolsArtifactName: 'Symbols_$(BuildConfiguration)'
+```
+
+---
 
 ::: moniker-end
 
