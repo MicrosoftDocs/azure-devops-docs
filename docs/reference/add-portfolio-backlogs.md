@@ -76,43 +76,43 @@ For more informaiton, see [About processes and process templates](../boards/work
 The easiest way to create a work item type (WIT) is to copy an existing one, rename it, and edit it to support your requirements. In this example, we copy the Epic WIT and label it Initiative.  
 
 <ol>
-<li>Copy the <code>Epic</code> WIT definition to an XML file labeled <code>Initiative</code>. (The Epic.xml file is located in the WorkItem Tracking folder of the ProcessTemplate folder.)</li>
+- Copy the `Epic` WIT definition to an XML file labeled `Initiative`. (The Epic.xml file is located in the WorkItem Tracking folder of the ProcessTemplate folder.)</br>
 
-<li>Edit the file named <code>Initiative</code>. <br/> 
+- Edit the file named `Initiative`. <br/> 
 <ol type="a">
-<li>Rename the WIT. Replace <code>WORKITEMTYPE name=&quot;Epic&quot;</code> with <code>WORKITEMTYPE name=&quot;Initiative&quot;</code>, and update the description.<br/>
-<code>&lt;WORKITEMTYPE name=&quot;Initiative&quot; &gt;</code>  <br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;DESCRIPTION&gt;Initiatives help program managers to effectively manage and organize work across several teams &gt;</code>  <br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;/DESCRIPTION&gt;</code> <br/> 
-<code>. . .</code>  <br/>
-<code>&lt;/WORKITEMTYPE&gt;</code>  <br/>
-</li>
-<li>Add any <a href="add-modify-field.md" data-raw-source="[custom fields that you want to track](add-modify-field.md)">custom fields that you want to track</a> using this WIT. </li>
-<li>Rename the <code>Tab</code> section named <code>Features</code> to <code>Epics</code> and replace <code>Filter WorkItemType=&quot;Feature&quot;</code> with <code>Filter WorkItemType=&quot;Epic&quot;</code>. <br/>
-<code>&lt;Tab Label=&quot;Epics&quot;&gt;</code><br/>
-<code>&lt;Control Type=&quot;LinksControl&quot; Name=&quot;Hierarchy&quot;&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;LinksControlOptions&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;WorkItemLinkFilters FilterType=&quot;include&quot;&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;Filter LinkType=&quot;System.LinkTypes.Hierarchy&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;/WorkItemLinkFilters&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;WorkItemTypeFilters FilterType=&quot;include&quot;&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;Filter WorkItemType=&quot;Epic&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;/WorkItemTypeFilters&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;ExternalLinkFilters FilterType=&quot;excludeAll&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumns&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumn RefName=&quot;System.ID&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumn RefName=&quot;System.Title&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumn RefName=&quot;System.AssignedTo&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumn RefName=&quot;System.State&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumn LinkAttribute=&quot;System.Links.Comment&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;/LinkColumns&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;/LinksControlOptions&gt;</code><br/>
-<code>&lt;/Control&gt;</code><br/>
-<code>&lt;/Tab&gt;</code><br/>
+- Rename the WIT. Replace `WORKITEMTYPE name=&quot;Epic&quot;` with `WORKITEMTYPE name=&quot;Initiative&quot;`, and update the description.<br/>
+`&lt;WORKITEMTYPE name=&quot;Initiative&quot; &gt;`  <br/>
+&nbsp;&nbsp;&nbsp;`&lt;DESCRIPTION&gt;Initiatives help program managers to effectively manage and organize work across several teams &gt;`  <br/>
+&nbsp;&nbsp;&nbsp;`&lt;/DESCRIPTION&gt;` <br/> 
+`. . .`  <br/>
+`&lt;/WORKITEMTYPE&gt;`  <br/>
+</br>
+- Add any <a href="add-modify-field.md" data-raw-source="[custom fields that you want to track](add-modify-field.md)">custom fields that you want to track</a> using this WIT. </br>
+- Rename the `Tab` section named `Features` to `Epics` and replace `Filter WorkItemType=&quot;Feature&quot;` with `Filter WorkItemType=&quot;Epic&quot;`. <br/>
+`&lt;Tab Label=&quot;Epics&quot;&gt;`<br/>
+`&lt;Control Type=&quot;LinksControl&quot; Name=&quot;Hierarchy&quot;&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;LinksControlOptions&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;WorkItemLinkFilters FilterType=&quot;include&quot;&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;Filter LinkType=&quot;System.LinkTypes.Hierarchy&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;/WorkItemLinkFilters&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;WorkItemTypeFilters FilterType=&quot;include&quot;&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;Filter WorkItemType=&quot;Epic&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;/WorkItemTypeFilters&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;ExternalLinkFilters FilterType=&quot;excludeAll&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumns&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumn RefName=&quot;System.ID&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumn RefName=&quot;System.Title&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumn RefName=&quot;System.AssignedTo&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumn RefName=&quot;System.State&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumn LinkAttribute=&quot;System.Links.Comment&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;/LinkColumns&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;/LinksControlOptions&gt;`<br/>
+`&lt;/Control&gt;`<br/>
+`&lt;/Tab&gt;`<br/>
 <p>With this change, you cause the tab control to exclusively show or link to epics as child work items of the initiative.  </p>
-</li>
+</br>
 </ol>
-</li>
+</br>
 </ol>
 
 

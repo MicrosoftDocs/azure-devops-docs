@@ -22,13 +22,13 @@ ms.date: 06/29/2023
 <td>Agent.BuildDirectory</td>
 <td>
 <p>The local path on the agent where all folders for a given build pipeline are created.</p>
-<p>For example: <code>c:\agent_work\1</code></p>
+<p>For example: `c:\agent_work\1`</p>
 </td>
 </tr>
 
 <tr>
 <td>Agent.HomeDirectory</td>
-<td>The directory the agent is installed into. This contains the agent software. For example: <code>c:\agent</code>.</td>
+<td>The directory the agent is installed into. This contains the agent software. For example: `c:\agent`.</td>
 </tr>
 
 <tr>
@@ -40,12 +40,12 @@ ms.date: 06/29/2023
 <td>Agent.JobStatus</td>
 <td>The status of the build.
     <ul>
-        <li><code>Canceled</code>
-        <li><code>Failed</code>
-        <li><code>Succeeded</code>
-        <li><code>SucceededWithIssues</code> (partially successful)
+        - `Canceled`
+        - `Failed`
+        - `Succeeded`
+        - `SucceededWithIssues` (partially successful)
     </ul>
-<p>The environment variable should be referenced as <code>AGENT_JOBSTATUS</code>. The older <code>agent.jobstatus</code> is available for backwards compatibility.</p>
+<p>The environment variable should be referenced as `AGENT_JOBSTATUS`. The older `agent.jobstatus` is available for backwards compatibility.</p>
 </td>
 </tr>
 
@@ -73,7 +73,7 @@ A temporary folder that is cleaned after each pipeline job. This directory is us
 <td>Agent.ToolsDirectory</td>
 <td>
 The directory used by tasks such as <a href="/azure/devops/pipelines/tasks/reference/node-tool-v0" data-raw-source="[Node Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0)">Node Tool Installer</a> and <a href="/azure/devops/pipelines/tasks/reference/use-python-version-v0" data-raw-source="[Use Python Version](/azure/devops/pipelines/tasks/reference/use-python-version-v0)">Use Python Version</a> to switch between multiple versions of a tool.
-These tasks add tools from this directory to <code>PATH</code> so that subsequent build steps can use them.
+These tasks add tools from this directory to `PATH` so that subsequent build steps can use them.
 <br><br>
 Learn about <a href="https://go.microsoft.com/fwlink/?linkid=2008884" data-raw-source="[managing this directory on a self-hosted agent](https://go.microsoft.com/fwlink/?linkid=2008884)">managing this directory on a self-hosted agent</a>.
 </td>
@@ -83,7 +83,7 @@ Learn about <a href="https://go.microsoft.com/fwlink/?linkid=2008884" data-raw-s
 <td>Agent.WorkFolder</td>
 <td>
 The working directory for this agent.
-For example: <code>c:\agent_work</code>.
+For example: `c:\agent_work`.
 </td>
 </tr>
 
@@ -102,7 +102,7 @@ For example: <code>c:\agent_work</code>.
 <br/><br/>
 
 
-The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent_work\1\a</code>
+The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: `c:\agent_work\1\a`
 <br><br>
 A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1" data-raw-source="[Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1)">Publish build artifacts</a> tasks.
 <br><br>
@@ -137,7 +137,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>Build.BuildUri</td>
-<td>The URI for the build. For example: <code>vstfs:///Build/Build/1430</code>.
+<td>The URI for the build. For example: `vstfs:///Build/Build/1430`.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
@@ -148,7 +148,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <br/><br/>
 By default, new build pipelines aren't set up to clean this directory. You can define your build to clean it up on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br/><br/>
-For example: <code>c:\agent_work\1\b</code>.
+For example: `c:\agent_work\1\b`.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
@@ -185,13 +185,13 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <td>Build.Reason</td>
 <td>The event that caused the build to run.
 <ul>
-<li><code>Manual</code>: A user manually queued the build from the UI or an API call.</li>
-<li><code>IndividualCI</code>: <strong>Continuous integration (CI)</strong> triggered by a Git push or a TFVC check-in.</li>
-<li><code>BatchedCI</code>: <strong>Continuous integration (CI)</strong> triggered by a Git push or a TFVC check-in, and the <strong>Batch changes</strong> was selected.</li>
-<li><code>Schedule</code>: <strong>Scheduled</strong> trigger.</li>
-<li><code>ValidateShelveset</code>: A user manually queued the build of a specific TFVC shelveset.</li>
-<li><code>CheckInShelveset</code>: <strong>Gated check-in</strong> trigger.</li>
-<li><code>PullRequest</code>: The build was triggered by a Git branch policy that requires a build.</li>
+- `Manual`: A user manually queued the build from the UI or an API call.</br>
+- `IndividualCI`: <strong>Continuous integration (CI)</strong> triggered by a Git push or a TFVC check-in.</br>
+- `BatchedCI`: <strong>Continuous integration (CI)</strong> triggered by a Git push or a TFVC check-in, and the <strong>Batch changes</strong> was selected.</br>
+- `Schedule`: <strong>Scheduled</strong> trigger.</br>
+- `ValidateShelveset`: A user manually queued the build of a specific TFVC shelveset.</br>
+- `CheckInShelveset`: <strong>Gated check-in</strong> trigger.</br>
+- `PullRequest`: The build was triggered by a Git branch policy that requires a build.</br>
 </ul>
 See <a href="/azure/devops/pipelines/build/triggers" data-raw-source="[Build pipeline triggers](../triggers.md)">Build pipeline triggers</a>, <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[Improve code quality with branch policies](../../../repos/git/branch-policies.md)">Improve code quality with branch policies</a>.
 </td>
@@ -208,7 +208,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
+The local path on the agent where your source code files are downloaded. For example: `c:\agent_work\1\s`<br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -227,10 +227,10 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Provider</td>
 <td>The type of <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository you selected](../repos/index.md)">repository you selected</a>.
 <ul>
-<li><code>TfsGit</code>: <a href="/azure/devops/repos/git/overview" data-raw-source="[TFS Git repository](../../../repos/git/index.yml)">TFS Git repository</a>
-<li><code>TfsVersionControl</code>: <a href="/azure/devops/repos/tfvc/overview" data-raw-source="[Team Foundation Version Control](../../../repos/tfvc/what-is-tfvc.md)">Team Foundation Version Control</a>
-<li><code>Git</code>: Git repository hosted on an external server
-<li><code>Svn</code>: Subversion
+- `TfsGit`: <a href="/azure/devops/repos/git/overview" data-raw-source="[TFS Git repository](../../../repos/git/index.yml)">TFS Git repository</a>
+- `TfsVersionControl`: <a href="/azure/devops/repos/tfvc/overview" data-raw-source="[Team Foundation Version Control](../../../repos/tfvc/what-is-tfvc.md)">Team Foundation Version Control</a>
+- `Git`: Git repository hosted on an external server
+- `Svn`: Subversion
 </ul>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
@@ -240,7 +240,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Tfvc.Workspace</td>
 <td>Defined if your <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository](../repos/index.md)">repository</a> is Team Foundation Version Control. The name of the <a href="/azure/devops/repos/tfvc/create-work-workspaces" data-raw-source="[TFVC workspace](../../../repos/tfvc/create-work-workspaces.md)">TFVC workspace</a> used by the build agent.
 <br/><br/>
-For example, if the Agent.BuildDirectory is <code>c:\agent_work\12</code> and the Agent.Id is <code>8</code>, the workspace name could be: <code>ws_12_8</code>
+For example, if the Agent.BuildDirectory is `c:\agent_work\12` and the Agent.Id is `8`, the workspace name could be: `ws_12_8`
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
@@ -250,8 +250,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Uri</td>
 <td>The URL for the repository. For example:
 <ul>
-<li>Git: <code>https://fabrikamfiber/tfs/DefaultCollection/Scripts/_git/Scripts</code>
-<li>TFVC: <code>https://fabrikamfiber/tfs/DefaultCollection/</code>
+- Git: `https://fabrikamfiber/tfs/DefaultCollection/Scripts/_git/Scripts`
+- TFVC: `https://fabrikamfiber/tfs/DefaultCollection/`
 </ul>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
@@ -280,13 +280,13 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.SourceBranch</td>
 <td>The branch the build was queued for. Some examples:
 <ul>
-<li>Git repo branch: <code>refs/heads/main</code></li>
-<li>Git repo pull request: <code>refs/pull/1/merge</code></li>
-<li>TFVC repo branch: <code>$/teamproject/main</code></li>
-<li>TFVC repo gated check-in: <code>Gated_2016-06-06_05.20.51.4369;username@live.com</code></li>
-<li>TFVC repo shelveset build: <code>myshelveset;username@live.com</code></li>
+- Git repo branch: `refs/heads/main`</br>
+- Git repo pull request: `refs/pull/1/merge`</br>
+- TFVC repo branch: `$/teamproject/main`</br>
+- TFVC repo gated check-in: `Gated_2016-06-06_05.20.51.4369;username@live.com`</br>
+- TFVC repo shelveset build: `myshelveset;username@live.com`</br>
 </ul>
-When you use this variable in your build number format, the forward slash characters (<code>/</code>) are replaced with underscore characters <code>&#095;</code>).
+When you use this variable in your build number format, the forward slash characters (`/`) are replaced with underscore characters `&#095;`).
 <br/><br/>
 Note: In TFVC, if you're running a gated check-in build or manually building a shelveset, you can't use this variable in your build number format.
 </td>
@@ -296,9 +296,9 @@ Note: In TFVC, if you're running a gated check-in build or manually building a s
 <td>Build.SourceBranchName</td>
 <td>The name of the branch the build was queued for.
 <ul>
-<li>Git repo branch, pull request, or tag: The last path segment in the ref. For example, in <code>refs/heads/main</code> this value is <code>main</code>. In <code>refs/heads/feature/tools</code> this value is <code>tools</code>.</li>
-<li>TFVC repo branch: The last path segment in the root server path for the workspace. For example in <code>$/teamproject/main</code> this value is <code>main</code>. In <code>refs/tags/your-tag-name</code> this value is <code>your-tag-name</code>.</li>
-<li>TFVC repo gated check-in or shelveset build is the name of the shelveset. For example, <code>Gated_2016-06-06_05.20.51.4369;username@live.com</code> or <code>myshelveset;username@live.com</code>.</li>
+- Git repo branch, pull request, or tag: The last path segment in the ref. For example, in `refs/heads/main` this value is `main`. In `refs/heads/feature/tools` this value is `tools`.</br>
+- TFVC repo branch: The last path segment in the root server path for the workspace. For example in `$/teamproject/main` this value is `main`. In `refs/tags/your-tag-name` this value is `your-tag-name`.</br>
+- TFVC repo gated check-in or shelveset build is the name of the shelveset. For example, `Gated_2016-06-06_05.20.51.4369;username@live.com` or `myshelveset;username@live.com`.</br>
 </ul>
 Note: In TFVC, if you're running a gated check-in build or manually building a shelveset, you can't use this variable in your build number format.
 </td>
@@ -309,7 +309,7 @@ Note: In TFVC, if you're running a gated check-in build or manually building a s
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
+The local path on the agent where your source code files are downloaded. For example: `c:\agent_work\1\s`<br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -321,8 +321,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.SourceVersion</td>
 <td>The latest version control change that is included in this build.
 <ul>
-<li>Git: The <a href="/azure/devops/repos/git/commits" data-raw-source="[commit](../../../repos/git/commits.md)">commit</a> ID.</li>
-<li>TFVC: the <a href="/azure/devops/repos/tfvc/find-view-changesets" data-raw-source="[changeset](../../../repos/tfvc/find-view-changesets.md)">changeset</a>.</li>
+- Git: The <a href="/azure/devops/repos/git/commits" data-raw-source="[commit](../../../repos/git/commits.md)">commit</a> ID.</br>
+- TFVC: the <a href="/azure/devops/repos/tfvc/find-view-changesets" data-raw-source="[changeset](../../../repos/tfvc/find-view-changesets.md)">changeset</a>.</br>
 </ul>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
@@ -346,7 +346,7 @@ Note: This variable is available in TFS 2015.4.
 <td>
 
 
-The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent_work\1\a</code>
+The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: `c:\agent_work\1\a`
 <br><br>
 A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1" data-raw-source="[Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1)">Publish build artifacts</a> tasks.
 <br><br>
@@ -378,7 +378,7 @@ Note: This variable yields a value that is invalid for build use in a build numb
 
 <tr>
 <td>Common.TestResultsDirectory</td>
-<td>The local path on the agent where the test results are created. For example: <code>c:\agent_work\1\TestResults</code>
+<td>The local path on the agent where the test results are created. For example: `c:\agent_work\1\TestResults`
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
@@ -420,23 +420,23 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.HostType</td>
-<td>Set to <code>build</code> if the pipeline is a build or <code>release</code> if the pipeline is a release.</td>
+<td>Set to `build` if the pipeline is a build or `release` if the pipeline is a release.</td>
 <tr>
 
 <tr>
 <td>System.PullRequest.IsFork</td>
-<td>If the pull request is from a fork of the repository, this variable is set to <code>True</code>.
-Otherwise, it's set to <code>False</code>. Available in <strong>TFS 2018.2</strong>.</td>
+<td>If the pull request is from a fork of the repository, this variable is set to `True`.
+Otherwise, it's set to `False`. Available in <strong>TFS 2018.2</strong>.</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.PullRequestId</td>
-<td>The ID of the pull request that caused this build. For example: <code>17</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>The ID of the pull request that caused this build. For example: `17`. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.SourceBranch</td>
-<td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>The branch that is being reviewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>
@@ -446,17 +446,17 @@ Otherwise, it's set to <code>False</code>. Available in <strong>TFS 2018.2</stro
 
 <tr>
 <td>System.PullRequest.SourceRepositoryURI</td>
-<td>The URL to the repo that contains the pull request. For example: <code>http://our-server:8080/tfs/DefaultCollection/_git/OurProject</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Azure Repos Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Azure Repos Git PR affected by a branch policy</a>.)</td>
+<td>The URL to the repo that contains the pull request. For example: `http://our-server:8080/tfs/DefaultCollection/_git/OurProject`. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Azure Repos Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Azure Repos Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.TargetBranch</td>
-<td>The branch that is the target of a pull request. For example: <code>refs/heads/main</code>. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.</td>
+<td>The branch that is the target of a pull request. For example: `refs/heads/main`. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.</td>
 </tr>
 
 <tr>
 <td>System.TeamFoundationCollectionUri</td>
-<td>The URI of the team foundation collection. For example: <code>http://our-server:8080/tfs/DefaultCollection/</code>.
+<td>The URI of the team foundation collection. For example: `http://our-server:8080/tfs/DefaultCollection/`.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
@@ -473,7 +473,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>TF_BUILD</td>
-<td>Set to <code>True</code> if the script is being run by a build task.
+<td>Set to `True` if the script is being run by a build task.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>

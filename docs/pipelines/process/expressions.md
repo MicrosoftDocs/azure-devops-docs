@@ -490,7 +490,7 @@ You can use the following status check functions as expressions in conditions, b
 
 <h3 id="always">always</h3>
 
-* Always evaluates to <code>True</code> (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
+* Always evaluates to `True` (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
 
 ### canceled
 * Evaluates to `True` if the pipeline was canceled.

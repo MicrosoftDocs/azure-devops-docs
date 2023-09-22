@@ -7,5 +7,5 @@ author: juliakm
 ms.date: 02/14/2020
 ---
 
-<li>Email: <code>$(xamarin.email)</code></li>
-<li>Password: <code>$(xamarin.password)</code></li>
+- Email: `$(xamarin.email)`</br>
+- Password: `$(xamarin.password)`</br>

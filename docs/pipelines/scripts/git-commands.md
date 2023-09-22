@@ -68,9 +68,9 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 Go to the Version Control control panel tab
 
 <ul>
-<li>Azure Repos: <code>https:&#x2F;&#x2F;dev.azure.com/{your-organization}/{your-project}/_admin/_versioncontrol</code></li>
+- Azure Repos: `https:&#x2F;&#x2F;dev.azure.com/{your-organization}/{your-project}/_admin/_versioncontrol`</br>
 
-<li>On-premises: <code>https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-project}/_admin/_versioncontrol</code></li>
+- On-premises: `https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-project}/_admin/_versioncontrol`</br>
 </ul>
 
 <p>
