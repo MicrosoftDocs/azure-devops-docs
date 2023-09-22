@@ -48,8 +48,7 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
    :::column-end:::
    :::column span="1":::
    
-   `Created By <>[Field] Closed By`  
-   State = Closed`  
+   `Created By <>[Field] Closed By State = Closed`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -68,8 +67,7 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
    :::column-end:::
    :::column span="1":::
    
-   `Target Date <=[Field] Closed Date`  
-   State = Closed`  
+   `Target Date <=[Field] Closed Date State = Closed`  
    :::column-end:::
 :::row-end:::
   
