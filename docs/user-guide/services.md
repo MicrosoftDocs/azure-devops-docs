@@ -270,4 +270,4 @@ There are features and tasks associated with administering a collaborative softw
 - [Azure DevOps Services **vs.** Azure DevOps Server](about-azure-devops-services-tfs.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)  
-- [Azure DevOps pricing](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
