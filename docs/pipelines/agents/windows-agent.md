@@ -100,13 +100,13 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 :::moniker range="azure-devops"
 
-    When setup asks for your server URL, for Azure DevOps Services, answer `https://dev.azure.com/{your-organization}`.
+When setup asks for your server URL, for Azure DevOps Services, answer `https://dev.azure.com/{your-organization}`.
 
 :::moniker-end
 
 :::moniker range="<azure-devops"
 
-    When setup asks for your server URL, for Azure DevOps Server, answer `https://{my-server}/{my-collection}`.
+When setup asks for your server URL, for Azure DevOps Server, answer `https://{my-server}/{my-collection}`.
 
 :::moniker-end
 
