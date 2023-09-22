@@ -1,12 +1,12 @@
 ---
-title: Register an agent using a personal access token (PAT)
-description: Learn how to register a self-hosted agent using a personal access token (PAT)
+title: Register an agent using device code flow
+description: Learn how to register a self-hosted agent using device code flow
 ms.topic: conceptual
 ms.date: 09/22/2023
-monikerRange: '<= azure-devops'
+monikerRange: '> azure-devops-2022'
 ---
 
-# Register an agent using a personal access token (PAT)
+# Register an agent using device code flow
 
 ::: moniker range="< azure-devops-2019"
 
