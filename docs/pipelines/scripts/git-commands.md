@@ -67,31 +67,25 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
 Go to the Version Control control panel tab
 
-<ul>
-- Azure Repos: `https:&#x2F;&#x2F;dev.azure.com/{your-organization}/{your-project}/_admin/_versioncontrol`</br>
 
-- On-premises: `https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-project}/_admin/_versioncontrol`</br>
-</ul>
+- Azure Repos: `https:&#x2F;&#x2F;dev.azure.com/{your-organization}/{your-project}/_admin/_versioncontrol`
 
-<p>
+- On-premises: `https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-project}/_admin/_versioncontrol`
 
 ![manage project](media/manage-project.png)
 
-</p>
 
-<p>If you see this page, select the repo, and then select the link:</p>
+If you see this page, select the repo, and then select the link:
 
-<p>
+
 
 ![control panel top to project](media/control-panel-top-to-team-project.png)
 
-</p>
 
-<p>
 
 ![control panel project version control tab](media/control-panel-team-project-version-control-tab.png)
 
-</p>
+
 
 On the **Version Control** tab, select the repository in which you want to run Git commands, and then select **Project Collection Build Service**. By default, this identity can read from the repo but can’t push any changes back to it.
 
