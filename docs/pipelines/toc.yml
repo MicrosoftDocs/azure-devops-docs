@@ -545,7 +545,7 @@
   - name: Agent registration options
     items:
     - name: Self-hosted agent registration options
-      href: agents/agents.md
+      href: agents/agent-registration-options.md
     - name: Personal access token
       href: agents/pat-agent-registration.md
     - name: Service Principal
