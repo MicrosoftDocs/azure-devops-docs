@@ -48,9 +48,11 @@ With Azure Pipelines, you can publish your symbols to Azure Artifacts symbol ser
 
     - **Verbose logging**: include more information in your logs.
 
-  :::image type="content" source="media/publish-to-symbol-server.png" alt-text="Screenshot showing how to configure the index sources and publish symbols task to publish symbols to Azure Artifacts symbol server":::
+  :::image type="content" source="media/publish-to-symbol-server.png" alt-text="Screenshot showing how to configure the index sources and publish symbols task to publish symbols to Azure Artifacts symbol server.":::
 
 # [YAML](#tab/yaml)
+
+To publish your symbols to a Azure Artifacts symbol server add the following snippet to your YAML pipeline:
 
 ```yml
 - task: PublishSymbols@2
@@ -74,31 +76,52 @@ With Azure Pipelines, you can publish your symbols to Azure Artifacts symbol ser
 
 Aside from Azure Artifacts symbol server, you can also publish your symbols to a file share using the *Index Sources and Publish Symbols* task.
 
+# [Classic](#tab/classic)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline. 
+
 1. From your pipeline definition, select `+` to add a new task.
 
 1. Search for the **Index sources and publish symbols** task. Select **Add** to add it to your pipeline.
 
-    :::image type="content" source="media/index-sources-publish-symbols.png" alt-text="Screenshot showing how to add the index sources and publish symbols to the current pipeline":::
-
 1. Fill out the required fields as follows:
 
-    :::image type="content" source="media/publish-to-file-share.png" alt-text="Screenshot showing the index sources and publish symbols task to publish symbols to a file share":::
+    - **Task version**: **2.\\***.
 
-- **Task version**: **2.\\***.
+    - **Display name**: task display name.
 
-- **Display name**: task display name.
+    - **Path to symbols folder**: path to the folder hosting the symbol files.
 
-- **Path to symbols folder**: path to the folder hosting the symbol files.
+    - **Search pattern**: the pattern used to locate the *.pdb* files in the folder you've designated under *Path to symbols folder*.
 
-- **Search pattern**: the pattern used to find the pdb files in the folder that you specified in **Path to symbols folder**.
+    - **Index sources**: indicates whether to inject source server information into the PDB files.
 
-- **Index sources**: indicates whether to inject source server information into the PDB files.
+    - **Publish symbols**: indicates whether to publish the symbol files. 
+        - **Symbol server type**: select **File share** to publish your symbols to a file share.
+        - **Path to publish symbols**: the file share that will host your symbols.
 
-- **Publish symbols**: indicates whether to publish the symbol files. 
-    - **Symbol server type**: select **File share** to publish your symbols to a file share.
-    - **Path to publish symbols**: the file share that will host your symbols.
+    - **Verbose logging**: check to include more information in your logs.
 
-- **Verbose logging**: check to include more information in your logs.
+    :::image type="content" source="media/publish-to-file-share.png" alt-text="Screenshot showing how to configure the index sources and publish symbols task to publish symbols to a file share.":::
+
+# [YAML](#tab/yaml)
+
+To publish your symbols to a file share add the following snippet to your YAML pipeline:
+
+```yml
+- task: PublishSymbols@2
+  inputs:
+    SymbolsFolder: '$(Build.SourcesDirectory)'
+    SearchPattern: '**/bin/**/*.pdb'
+    IndexSources: true
+    PublishSymbols: true
+    SymbolServerType: 'FileShare' 
+    SymbolsPath: '\\server\shareName'
+```
+
+---
 
 ::: moniker range="azure-devops"
 
