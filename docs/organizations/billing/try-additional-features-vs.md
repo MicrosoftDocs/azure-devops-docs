@@ -8,7 +8,7 @@ ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 12/02/2022
+ms.date: 09/25/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -41,11 +41,9 @@ You must be a member of the [Project Collection Administrators group](../securit
 
 5. Select **Start free trial**.
 
-    ![Screenshot showing the "Start free trial" button.](media/try-additional-features/start-thirty-day-test-plans-trial.png)
-
 6. Assign users **Basic + Test Plans**, so they can access Test Plans during the trial. 
 
-For more information about using Azure Test Plans, see [Navigate Test Plans](../../test/navigate-test-plans.md).
+   During the trial, all your Basic users have full access to Test Plans. After trial expiration, you need to buy a Basic + Test Plans license and assign it to specific users, so they can continue using it.
 
 ## Next steps
 
@@ -54,6 +52,7 @@ For more information about using Azure Test Plans, see [Navigate Test Plans](../
 
 ## Related articles
 
+- [Navigate Test Plans](../../test/navigate-test-plans.md)
 - [Billing FAQs](billing-faq.yml)
 - [Manage paid access for users](buy-basic-access-add-users.md)
 - [Buy parallel jobs for Azure DevOps](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
