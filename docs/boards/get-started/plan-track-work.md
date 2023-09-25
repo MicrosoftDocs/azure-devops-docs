@@ -232,7 +232,7 @@ Choose **Save & Close** when you're done.
 
 #### [CMMI process](#tab/cmmi-process) 
 
-For example, here we assign the product backlog item to Jamal Hartnett and set Size to 8. 
+For example, here we assign the requirement to Jamal Hartnett and set Size to 8. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Requirements work item form.](../work-items/guidance/media/cmmi-requirement-form.png) 
