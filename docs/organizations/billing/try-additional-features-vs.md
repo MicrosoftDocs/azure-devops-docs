@@ -39,11 +39,11 @@ You must be a member of the [Project Collection Administrators group](../securit
 
    ![Screenshot showing highlighted link to "Start free trial".](media/try-additional-features/start-free-trial.png)
 
-5. Select **Start free trial**.
+5. Select **Start free trial** once more in the resulting window.
 
 6. Assign users **Basic + Test Plans**, so they can access Test Plans during the trial. 
 
-   During the trial, all your Basic users have full access to Test Plans. After trial expiration, you need to buy a Basic + Test Plans license and assign it to specific users, so they can continue using it.
+   During the trial, Test Plans users have full access to Test Plans and Basic users can execute tests only. After trial expiration, you need to buy a Basic + Test Plans license and assign it to specific users, so they can continue to use it.
 
 ## Next steps
 
