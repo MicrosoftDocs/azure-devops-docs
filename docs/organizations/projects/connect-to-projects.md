@@ -207,7 +207,7 @@ Your client remembers the set of connections you've configured. You can switch f
 
 1. Select the **Manage Connections** icon in Team Explorer, and then **Connect to a Project**.
 
-   ![Screenshot showing Connect to projects highlighted for selection in Team Explorer.](media/te-connect-page-connect-to-project-vs2019.png)  
+   ![Screenshot showing Connect to projects highlighted for selection.](media/te-connect-to-project-vs2022.png)  
 
 2. Select a different user or select **Add an account** to access a project using different credentials.
 
