@@ -27,9 +27,7 @@ A project defines a process and data storage in which you manage your software p
 
 ## Prerequisites
 
-- If you don't have a project yet, [create one](create-project.md).
-
-- If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md).
+- You must [have a project](create-project.md) in your organization. If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md).
 
 - From each of these clients, you can switch context to a different project and connect as a different user. If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy).
 
@@ -85,7 +83,7 @@ A project defines a process and data storage in which you manage your software p
 
     ::: moniker-end
 
-To learn more about each page and the tasks you can do, see [Web portal navigation](../../project/navigation/index.md).
+For more information, see [Web portal navigation](../../project/navigation/index.md).
 
 <a name="logindifferentcred"></a>
 
@@ -102,7 +100,7 @@ To learn more about each page and the tasks you can do, see [Web portal navigati
 
 Open the web portal from the home page.
 
-![Connect to the web portal](media/connect-tp-open-web-portal.png)
+![Screenshot showing Connecting to the web portal.](media/connect-tp-open-web-portal.png)
 
 <a id="visual-studio">  </a>
 
@@ -116,17 +114,17 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
 1. Select the **Manage Connections** icon in Team Explorer, and then **Connect to a Project**.
 
-   ![Screenshot showing Connect to projects highlighted for selection.](media/te-connect-page-connect-to-project-vs2019.png)  
+   ![Screenshot showing Connect to projects highlighted for selection.](media/te-connect-to-project-vs2022.png)  
 
-   All the projects that you can connect to get displayed, along with the repos in those projects.
+   All the projects that you can connect to are displayed, along with the repos in those projects.
 
    ![Screenshot of Connect to a Project dialog box.](media/connect-projects/connect-to-a-project-and-github.png)
 
-2. Select **Add Azure DevOps Server** to connect to a project in Azure DevOps Services. Enter the URL to your server and select **Add**.
+2. Select **Add Azure DevOps Server** to connect to a project in Azure DevOps Server. Enter the URL to your server and select **Add**.
 
    ![Screenshot of server URL field to connect to.](media/connect-projects-tfs/vs2017_add_tfs_server.png)
 
-3. Select a project from the list and select **Connect**.
+3. Select a project from the list and then select **Connect**.
 
 
 # [Visual Studio 2019](#tab/visual-studio-2019)
@@ -137,7 +135,7 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
    ![Screenshot of Connect to projects selection.](media/te-connect-page-connect-to-project-vs2019.png)  
 
-   **Connect to a Project** shows the projects you can connect to, along with the repos in those projects.
+   All the projects that you can connect to are displayed, along with the repos in those projects
 
    ![Screenshot of Connect to a Project dialog box.](media/connect-projects/connect-to-a-project-and-github.png)
 
@@ -157,7 +155,7 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
    ![Screenshot of Connect to projects button to select.](media/te-connect-page-connect-to-team-project.png)  
 
-   **Connect to a Project** shows the projects you can connect to, along with the repos in those projects.
+   All the projects that you can connect to are displayed, along with the repos in those projects
 
    ![Screenshot of Connect to Project dialog box.](media/connect-projects-tfs/vs2017_connect_dialog.png)
 
@@ -294,11 +292,11 @@ You can also provide access to Stakeholders in your organization who have limite
 
 If your remote team uses a [Azure DevOps Proxy Server](/azure/devops/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
 
-1. First, make sure that you've connected to Azure DevOps Server as described [in the previous section](#visual-studio).
+1. Make sure you're connected to Azure DevOps Server, as described [in the previous section](#visual-studio).
 
-1. From the Visual Studio **Tools** menu, select **Options**, then select **Source Control** > **Plug-in Selection**. Select **Visual Studio Team Foundation Server**.
+1. From the Visual Studio **Tools** menu, select **Options**, and then select **Source Control** > **Plug-in Selection**. Select **Visual Studio Team Foundation Server**.
 
-    ![screenshot of Plug-in Selection page, Options dialog box.](media/connect-projects-tfs/plug-in-selection-for-visual-studio.png)
+    ![Screenshot of Plug-in Selection page, Options dialog box.](media/connect-projects-tfs/plug-in-selection-for-visual-studio.png)
 
 1. For **Visual Studio Team Foundation Server**, enter the name and port number for the Azure DevOps Proxy Server. Select **Use SSL encryption (https) to connect**.
 
