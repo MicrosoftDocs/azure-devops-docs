@@ -15,7 +15,7 @@ monikerRange: '< azure-devops'
 
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
- For [Azure DevOps Server](https://visualstudio.microsoft.com/tfs/), you pay per user for [Basic](https://visualstudio.microsoft.com/team-services/compare-features/) features. Users with [Visual Studio subscriptions](https://visualstudio.microsoft.com/vs/pricing/) are free to add because Basic features are included in their subscription as a benefit. It's also free to add users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md), which provides free access to a limited set of features.
+ For [Azure DevOps Server](https://visualstudio.microsoft.com/tfs/), you pay per user for Basic features. Users with [Visual Studio subscriptions](https://visualstudio.microsoft.com/vs/pricing/) are free to add because Basic features are included in their subscription as a benefit. It's also free to add users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md), which provides free access to a limited set of features.
 
 [Buy monthly access](buy-basic-access-add-users.md), rather than a Visual Studio subscription or [Azure DevOps Server Client Access License (CAL)](../../user-guide/about-azure-devops-services-tfs.md). With paid monthly access, users have access to both Azure DevOps Services and Azure DevOps Server. Users aren't required to use Azure DevOps Services, though.
 
