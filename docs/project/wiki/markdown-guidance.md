@@ -212,7 +212,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 #### Supported in: Pull Requests | README files | Wikis
 
 Highlight suggested code segments using code highlight blocks.
-To indicate a span of code, wrap it with three backtick quotes (<code>&#96;&#96;&#96;</code>) on a new line at both the start and end of the block. To indicate code inline, wrap it with one backtick quote (<code>&#96;</code>).
+To indicate a span of code, wrap it with three backtick quotes (`&#96;&#96;&#96;`) on a new line at both the start and end of the block. To indicate code inline, wrap it with one backtick quote (`&#96;`).
 
 > [!NOTE] 
 > Code highlighting entered within the Markdown widget renders code as plain preformatted text.
@@ -417,13 +417,13 @@ When you're linking to another Markdown page in the same Git or TFVC repository,
 **Supported links for Markdown widget:**
 
 <ul>
-<li>URL: <code>[text to display](http://address.com)</code>  </li>
+- URL: `[text to display](http://address.com)`  </br>
 </ul>
 
 **Supported links for Wiki:**  
 <ul>
-<li>Absolute path of Wiki pages: <code>[text to display](/parent-page/child-page)</code> </li>
-<li>URL: <code>[text to display](http://address.com)</code>  </li>
+- Absolute path of Wiki pages: `[text to display](/parent-page/child-page)` </br>
+- URL: `[text to display](http://address.com)`  </br>
 </ul>
 
 > [!NOTE]  
@@ -616,7 +616,7 @@ To escape emojis, enclose them using the \` character.
 :::row-end:::
 :::row:::
    :::column span="1":::
-      To insert one of the following characters, prefix with a <code>&#92;</code>(backslash).  
+      To insert one of the following characters, prefix with a `&#92;`(backslash).  
       `&#92;`, backslash   
       `&#96;`, backtick  
       `&#95;`, underscore  

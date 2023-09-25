@@ -76,8 +76,8 @@ The following sections describe arguments and options of the `workspace` command
 |`/newname`|Renames an existing workspace.|
 |`/noprompt`|Performs the specified workspace command without displaying a dialog box.|
 |`/collection`|Specifies the project collection.|
-|`/permission`|Specifies the options for workspace permissions:</p><ul><li><p>`Private`: Only the owners can use, check in files to, or administer the workspace.</p></li><li><p>`Public Limited`: Any valid user can use the workspace. But only the owners can check in files to or administer the workspace.</p></li><li><p>`Public`: Any valid user can use, check in files to, or administer the workspace.</p></li></ul>|
-|`/location`|Specifies where the workspace is created:</p><ul><li><p>`local`: On the client machine. This value is the default.</p></li><li><p>`server`: On the Azure DevOps server.</p></li></ul>|
+|`/permission`|Specifies the options for workspace permissions:</p><ul>- `Private`: Only the owners can use, check in files to, or administer the workspace.</p></br>- `Public Limited`: Any valid user can use the workspace. But only the owners can check in files to or administer the workspace.</p></br>- `Public`: Any valid user can use, check in files to, or administer the workspace.</p></br></ul>|
+|`/location`|Specifies where the workspace is created:</p><ul>- `local`: On the client machine. This value is the default.</p></br>- `server`: On the Azure DevOps server.</p></br></ul>|
 |`/login`|Specifies the username and password to authenticate the user with Azure DevOps.|
 |`/newowner`|Specifies the username for the new owner of the workspace.|
 
