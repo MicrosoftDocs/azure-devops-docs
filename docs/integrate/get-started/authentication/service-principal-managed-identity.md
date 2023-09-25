@@ -1,5 +1,5 @@
 ---
-title: Use Azure Active Directory service principals & managed identities
+title: Use service principals & managed identities
 titleSuffix: Azure DevOps
 ms.custom: 
 description: Learn how to add and manage service principals and managed identities in your Azure DevOps organizations.
@@ -12,14 +12,11 @@ ms.date: 04/07/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Use Azure Active Directory service principals & managed identities
+# Use service principals & managed identities
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-You can now add Azure Active Directory (Azure AD) service principals and managed identities to your Azure DevOps organizations to grant access to your organization resources. For many teams, this feature can be a viable and preferred alternative to [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) when authenticating applications that power automation workflows for your company. 
-
-> [!NOTE]
-> Service principals and managed identities support is currently in public preview. They're only available to organizations that are connected to Azure AD.
+You can now add Azure Active Directory (Azure AD) service principals and managed identities to your Azure DevOps organizations to grant access to your organization resources. For many teams, this feature can be a viable and preferred alternative to [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) when authenticating applications that power automation workflows in your company. 
 
 ## About service principals and managed identities
 
@@ -117,6 +114,8 @@ Service principals can be used to call Azure DevOps REST APIs and do most action
 ### Q: Why should I use a service principal or a managed identity instead of a PAT?
 
 A: Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). As PATs are simply bearer tokens, meaning token strings that represent a user’s username and password, they're incredibly risky to use as they can easily fall into the wrong person’s hands. Azure AD tokens expire every hour and must be regenerated with a refresh token to get a new access token, which limits the overall risk factor when leaked.
+
+You cannot use a service principal to create a personal access token.
 
 ### Q: What are the rate limits on service principals and managed identities?
 
@@ -299,6 +298,9 @@ A: Yes. Do the following steps.
 tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-1.0.0.vsix --auth-type pat -t <AAD_ACCESS_TOKEN>
 ```
 
+### Q: Can I use a managed identity within a service connection? How can I more easily rotate secrets for the service principal in my service connection? Can I avoid storing secrets in a service connection altogether?
+Azure now supports workload identity federation using the Open ID Connect protocol. This allows us to create secret-free service connections in Azure Pipelines that are backed by service principals or managed identities with federated credentials in Azure Active Directory. As part of its execution, a pipeline can exchange its own internal token with an AAD token, thereby gaining access to Azure resources. Once implemented, this mechanism will be recommended in the product over [other types of Azure service connections](/azure/devops/pipelines/library/connect-to-azure) that exist today. This mechanism can also be used to set up secret-free deployments with any other OIDC compliant service provider. This preview is currently in private preview. You can follow along with its public release on our [public roadmap](/azure/devops/release-notes/roadmap/2022/secret-free-deployments).
+
 ## Potential errors
 
 ### Failed to create service principal with object ID '{`provided objectId`}'
@@ -315,6 +317,9 @@ This error might be due to one of the following reasons:
 
 ### Azure DevOps Graph List API returns empty list, even though we know there are service principals in the organization
 The Azure DevOps Graph List API may return an empty list, even if there are still more pages of users to return. Use the `continuationToken` to iterate through the lists, and you can eventually find a page where the service principals are returned. If a `continuationToken` is returned, that means there are more results available through the API. While we have plans to improve upon this logic, at this moment, it's possible that the first X results return empty.
+
+### TF401444: Please sign-in at least once as {`tenantId`\`tenantId`\`servicePrincipalObjectId`} in a web browser to enable access to the service.
+If the service principal has not been invited to the organization, you may come across the following error. Please ensure that the service principal has been added to the appropriate organization and has all permissions needed to access any required resources.
 
 ## Related articles
 
