@@ -17,8 +17,6 @@ With Azure Pipelines, you can publish your symbols to Azure Artifacts symbol ser
 > [!NOTE]
 > The [Index sources and publish symbols](/azure/devops/pipelines/tasks/reference/publish-symbols-v2) task is not supported in release pipelines.
 
-::: moniker range="azure-devops"
-
 ## Publish symbols to Azure Artifacts symbol server
 
 # [Classic](#tab/classic)
@@ -70,8 +68,6 @@ To publish your symbols to Azure Artifacts symbol server add the following snipp
 
 ---
 
-::: moniker-end
-
 ## Publish symbols to a file share
 
 Aside from Azure Artifacts symbol server, you can also publish your symbols to a file share using the *Index Sources and Publish Symbols* task.
@@ -122,8 +118,6 @@ To publish your symbols to a file share add the following snippet to your YAML p
 ```
 
 ---
-
-::: moniker range="azure-devops"
 
 ## Publish portable PDBs to Azure Artifacts symbol server
 
@@ -197,8 +191,6 @@ To publish your portable PDBs to Azure Artifacts symbol server add the following
 
 > [!IMPORTANT]
 > To delete symbols published via the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
-
-::: moniker-end
 
 ## Set up Visual Studio
 
