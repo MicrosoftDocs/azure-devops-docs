@@ -8,7 +8,7 @@ monikerRange: '<= azure-devops'
 
 # Self-hosted agent registration options
 
-| Agent rgistration method | Azure DevOps Services | Azure DevOps Server & TFS |
+| Agent registration method | Azure DevOps Services | Azure DevOps Server & TFS |
 |--------------------------|-----------------------|---------------------------|
 | [Personal access token (PAT)](#personal-access-token-pat) | Supported | Supported when server is configured with HTTPS |
 | [Service Principal (SP)](#service-principal-sp)      | Supported | Currently not supported |
