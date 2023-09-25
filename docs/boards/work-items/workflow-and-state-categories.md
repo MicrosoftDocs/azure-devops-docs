@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 09/25/2023
 ---
 
-# About workflow category states in backlogs and boards
+# About workflow states in backlogs and boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
