@@ -92,6 +92,12 @@ We expect this work to be a major focus of our efforts for multiple quarters.
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q3</td>
          <td>N/A</td>
       </tr>
+       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
+         <td>General</td>
+         <td>2023 Q4</td>
+         <td>N/A</td>
+      </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Workload Identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Workload Identity federation for Azure Deployments (GA)</a></td>
          <td>Pipelines</td>
