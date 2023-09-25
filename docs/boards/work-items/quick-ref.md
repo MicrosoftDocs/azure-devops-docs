@@ -40,7 +40,7 @@ Use this index to quickly access concepts and tasks related to work items and in
       - [Agile glossary](agile-glossary.md)  
       - [Agile process](guidance/agile-process.md)  
       - [Area Paths](../../organizations/settings/about-areas-iterations.md)  
-      - [Autocomplete work items](workflow-and-state-categories.md#auto-complete-work-items-with-pr)  
+      - [Autocomplete work items](workflow-and-state-categories.md#auto-completion-of-work-items-with-pull-requests)  
       - [Assigned to](about-work-items.md#assign)  
       - [Basic process](../get-started/plan-track-work.md)  
       <br/>
