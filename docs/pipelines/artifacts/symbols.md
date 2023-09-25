@@ -125,7 +125,7 @@ Portable PDBs are symbol files that can be created and used on all platforms unl
 
 #### Use Source Link in .NET projects
 
-Source link is a set of tools that allow developers to debug their source code by mapping from the .NET assemblies back to the source code. Check out the [dotnet/sourcelink](https://github.com/dotnet/sourcelink) GitHub repository to learn about the different packages included.
+Source Link is a set of tools that allow developers to debug their source code by mapping from the .NET assemblies back to the source code. Check out the [dotnet/sourcelink](https://github.com/dotnet/sourcelink) GitHub repository to learn about the different packages included.
 
 - For projects hosted on GitHub, add the `Microsoft.SourceLink.GitHub` package reference to your project file.
 
