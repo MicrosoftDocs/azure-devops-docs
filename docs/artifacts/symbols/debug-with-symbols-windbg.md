@@ -43,13 +43,13 @@ To use the Azure Artifacts symbol server, you must add your organization to the 
 WinDbg enhances the scope and versatility of debugging, enabling effective troubleshooting of components in both user-mode and kernel-mode:
 
 - [Get started with Windows debugging](/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
-- [Get started with WinDbg (user-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg).
-- [Get started with WinDbg (kernel-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-).
-- [Use the WinDbg Graphical Interface (Classic)](/windows-hardware/drivers/debugger/windbg-graphical-interface).
-- [Use the Debugger Commands](/windows-hardware/drivers/debugger/using-debugger-commands).
+- [Get started with WinDbg (user-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg)
+- [Get started with WinDbg (kernel-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-)
+- [Use the WinDbg Graphical Interface (Classic)](/windows-hardware/drivers/debugger/windbg-graphical-interface)
+- [Use the Debugger Commands](/windows-hardware/drivers/debugger/using-debugger-commands)
 
 ## Related articles
 
-- [Debug with Visual Studio](./debug-with-symbols-visual-studio.md).
+- [Debug with Visual Studio](./debug-with-symbols-visual-studio.md)
 - [Publish symbols with Azure Pipelines](../../pipelines/artifacts/symbols.md)
 - [Artifacts storage consumption](../artifact-storage.md)
