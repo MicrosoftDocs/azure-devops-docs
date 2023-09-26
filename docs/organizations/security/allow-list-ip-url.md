@@ -77,24 +77,29 @@ _Inbound connections_ originate from Azure DevOps and target resources within yo
 Ensure the following IP addresses are allowed for inbound connection, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from Azure DevOps Services to your on-premises or other cloud services.
 
 > [!div class="mx-tdCol2BreakAll"]  
-> |  Region  | IP V4 ranges |  
-> |------|---------|  
-> | Australia East | 20.37.194.0/24 |  
-> | Australia South East | 20.42.226.0/24 |  
-> | Brazil South | 191.235.226.0/24 |  
-> | Central Canada | 52.228.82.0/24 |
-> | Asia Pacific (Singapore) | 20.195.68.0/24 |
-> | South India | 20.41.194.0/24 |  
-> | Central United States | 20.37.158.0/23 |  
-> | West Central United States | 52.150.138.0/24 |  
-> | East United States   | 20.42.5.0/24 |  
-> | East 2 United States  | 20.41.6.0/23 |
-> | North United States  | 40.80.187.0/24 |  
-> | South United States   | 40.119.10.0/24 |
-> | West United States  | 40.82.252.0/24 |  
-> | West 2 United States | 20.42.134.0/23 |  
-> | Western Europe | 40.74.28.0/23 |  
-> | United Kingdom South | 51.104.26.0/24 |  
+> |  Geography | Region  | IP V4 ranges |  
+> |------|------|---------|  
+> | Australia | Australia East | 20.37.194.0/24 |  
+> |  | Australia South East | 20.42.226.0/24 |  
+> | Brazil | Brazil South | 191.235.226.0/24 |  
+> | Canada | Central Canada | 52.228.82.0/24 |
+> | Asia Pacific | Southeast Asia (Singapore) | 20.195.68.0/24 |
+> | India | South India | 20.41.194.0/24 |
+> |  | Central India | 20.204.197.192/26 |  
+> | United States | Central United States | 20.37.158.0/23 |  
+> |  | West Central United States | 52.150.138.0/24 |
+> |  | North Central United States | 40.80.187.0/24 |
+> |  | South Central United States | 40.119.10.0/24 |
+> |  | East United States   | 20.42.5.0/24 |  
+> |  | East 2 United States  | 20.41.6.0/23 |
+> |  | North United States  | 40.80.187.0/24 |  
+> |  | South United States   | 40.119.10.0/24 |
+> |  | West United States  | 40.82.252.0/24 |  
+> |  | West 2 United States | 20.42.134.0/23 |
+> |  | West 3 United States | 20.125.155.0/24 |  
+> | Europe | Western Europe | 40.74.28.0/23 |
+> |  | North Europe | 20.166.41.0/24 |
+> | United Kingdom | United Kingdom South | 51.104.26.0/24 |  
 
 Azure Service Tags are supported for *inbound* connection. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
 
@@ -293,7 +298,7 @@ If you use Microsoft-hosted agent to run your jobs and you need the information 
 For more information about hosted Windows, Linux and macOS agents, see [Microsoft-hosted agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges).
 
 ### Azure Pipelines Self-hosted agents
-If you're running a firewall and your code is in Azure Repos, see [Self-hosted Linux agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with), [Self-hosted macOS agents FAQs](../../pipelines/agents/osx-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) or [Self-hosted Windows agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
+If you're running a firewall and your code is in Azure Repos, see [Self-hosted Linux agents FAQs](../../pipelines/agents/linux-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with), [Self-hosted macOS agents FAQs](../../pipelines/agents/osx-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) or [Self-hosted Windows agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
 
 
 ## Azure DevOps import service

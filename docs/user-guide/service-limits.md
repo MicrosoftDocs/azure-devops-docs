@@ -40,10 +40,10 @@ This article specifies certain limits placed on the use and configuration of Azu
 | Projects | 1000 per organization for Azure DevOps Services</br>No prescribed limit for on-premises</br>(See also [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md#projects) | 
 | Teams | 5,000 per project | 
 | Work item tags | 150,000 tag definitions per organization | 
-| Area Paths | 10,000 per organization | 
+| Area Paths | 10,000 per project | 
 | Area Path Depth | 14 | 
 | Area Paths per team | 300 | 
-| Iteration Paths | 10,000 per organization | 
+| Iteration Paths | 10,000 per project | 
 | Iteration Path Depth | 14 | 
 | Iteration Paths per team | 300 | 
 

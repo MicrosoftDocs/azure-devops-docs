@@ -6,8 +6,6 @@ ms.topic: include
 ms.date: 07/09/2020
 ---
 
-For example, progress bars are shown here for a portfolio backlog. 
+For example, see the following progress bars for a portfolio backlog. 
 
-> [!div class="mx-imgBorder"]  
-> ![Example portfolio backlog with progress bars](../backlogs/media/rollup/epic-featurs-progress-user-stories-50-percent.png)
-
+:::image type="content" source="../backlogs/media/rollup/epic-features-progress-user-stories-50-percent.png" alt-text="Screenshot of example portfolio backlog with progress bars.":::

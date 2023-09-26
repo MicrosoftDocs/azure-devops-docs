@@ -32,9 +32,8 @@
   - name: "Use @mentions to further discussion"
     href:  at-mentions.md
     displayName: add, user, group, conversation, comments, PR, story, directory
-  - name: "Use #ID to link to work items"
-    href:  add-links-to-work-items.md
-    displayName: build, commit, pull, request, audit, connect, discussion, changeset, shelveset, comment
+  - name: Link work items and other objects
+    href: ../../boards/backlogs/add-link.md
 - name: Notifications to third parties
   items:
   - name: Send notifications to third-party services (Slack, Teams)

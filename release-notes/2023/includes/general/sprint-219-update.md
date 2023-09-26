@@ -5,7 +5,7 @@ ms.date: 3/31/2023
 ms.topic: include
 ---
 
-### Service principal and managed identity support in Azure DevOps 
+### Service principal and managed identity support in Azure DevOps (public preview)  
 
 You can now add Azure Active Directory (Azure AD) service principals and managed identities, to your Azure DevOps organizations to grant access to your organization’s resources. For many teams, this feature can be a viable alternative to personal access tokens (PATs) when safely authenticating applications that power automation tooling.
 

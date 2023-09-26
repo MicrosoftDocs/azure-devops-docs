@@ -40,14 +40,15 @@ The following operating systems are supported by the 3.x agent.
     * macOS 11.0 "Big Sur"
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
-    * Note: Not all Azure Pipeline tasks have been updated to support ARM64 yet
+    * Note: Not all Azure Pipelines tasks have been updated to support ARM64 yet
 * **Windows**
   * Client OS
     * Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
     * Windows 8.1
     * Windows 10
+    * Windows 11
   * Server OS
-    * Windows Server 12 or higher
+    * Windows Server 2012 or higher
 
 ## Upgrade to 3.x agent on unsupported operating systems
 

@@ -34,7 +34,7 @@ This article describes the link types available for your use. You can link objec
  
 > [!TIP]
 > You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. To learn how, see the following resources:   
-> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
+> - [Cross-service overview](../../cross-service/cross-service-overview.md#azure-boards---azure-repos)
 > - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 > - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 > - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md).
@@ -107,7 +107,7 @@ Open a work item and choose **Add link** or the :::image type="icon" source="../
 ![Web portal, work item form, Related work section](media/link-work-items-new-form-control.png) 
 ::: moniker-end
 
-Choose **Existing item** to link to a work item or other object using any supported link type. Choose **New item** to start a link and define a new work item at the same time. For details, see [Add link to work items](../backlogs/add-link.md).
+Choose **Existing item** to link to a work item or other object using any supported link type. Choose **New item** to start a link and define a new work item at the same time. For more information, see [Add link to work items](../backlogs/add-link.md).
 
 :::image type="content" source="media/link-work-items-support-traceability/related-work-menu.png" alt-text="Screenshot of Related work control, link menu options."::: 
 
@@ -122,7 +122,7 @@ From a query results page, you can also complete these actions:
 - Link selected items to a new work item  
 - Link selected items to an existing work item   
 
-For details, see [Add link to work items](../backlogs/add-link.md#link). 
+For more information, see [Add link to work items](../backlogs/add-link.md#link). 
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -197,7 +197,6 @@ See the following articles for more information:
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
-- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md)
@@ -206,7 +205,6 @@ See the following articles for more information:
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id)
@@ -306,7 +304,6 @@ For more information, see these articles:
 
 - [Add link to multiple work items](../backlogs/add-link.md)  
 - [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
-- [Share plans, add attachments](share-plans.md)  
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Link types reference](link-type-reference.md)

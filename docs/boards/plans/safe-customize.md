@@ -196,7 +196,7 @@ For example, you can add and rename workflow States to match the Kanban columns 
 Discuss with your team which workflow states best support their Agile practices. For more information, see the following articles:  
 - [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md)  
 - [Add columns to your Kanban board](../boards/add-columns.md)  
-- [Definition of Done](../boards/definition-of-done.md)  
+- [Definition of Done](../boards/add-columns.md#definition-of-done)  
 
 <a id="custom-control" /> 
 

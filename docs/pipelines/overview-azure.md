@@ -167,7 +167,7 @@ Follow the links provided in the following table to learn more about the Azure s
       [Azure DevTest Labs](https://azure.microsoft.com/services/devtest-lab/)   
    :::column-end::: 
    :::column span="3":::
-      Quickly provision development and test stages using reusable templates. To learn more, see [Manage a virtual machine in Azure DevTest Labs](apps/cd/azure/deploy-provision-devtest-lab.md).
+      Quickly provision development and test stages using reusable templates. 
    :::column-end:::
 :::row-end:::
 --- 

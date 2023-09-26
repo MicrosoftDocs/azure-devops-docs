@@ -32,7 +32,7 @@ Choose one of these icons--:::image type="icon" source="../../media/icons/at-men
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Discussion section, at-mention drop-down menu people-picker.](../media/discussion-at-mention.png)
 
-Type a name, or enter a number and the menu list will filter to match your entry. Choose the entry you want to add. You can bring a group into the discussion by typing **@** and the group name, such as a team or security group. 
+Enter a name or number and the menu list filters to match your entry. Choose the entry you want to add. You can bring a group into the discussion by entering **@** and the group name, such as a team or security group. 
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -69,7 +69,7 @@ Add one or more reactions to a comment by choosing a smiley icon at the upper-ri
 
 ### Save a comment without saving the work item
 
-If you only have permissions to add to the **Discussion** of a work item, then you can do so by saving comments. This permission is controlled by Area Path nodes and the **Edit work item comments in this node** permission. To learn more, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).
+If you only have permissions to add to the **Discussion** of a work item, then you can do so by saving comments. This permission is controlled by Area Path nodes and the **Edit work item comments in this node** permission. For more information, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 Once you save the comments, you don't need to save the work item.  
 

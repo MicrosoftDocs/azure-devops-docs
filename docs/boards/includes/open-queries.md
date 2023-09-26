@@ -19,7 +19,7 @@ From your web browser, (1) check that you have selected the right project, (2) c
 If it is your first time opening **Queries**, the page opens to **Favorites**. This page lists those queries that you have indicated are a favorite.  Otherwise, you can choose **All** to view all queries you've defined and shared queries defined for the project.  
 
 > [!TIP] 
-> Queries you or your team have chosen as favorites show up on the **Favorites** page. Favorite queries along with other objects also appear on your **Project** page. To learn more, see [Set personal or team favorites](../../project/navigation/set-favorites.md). 
+> Queries you or your team have chosen as favorites show up on the **Favorites** page. Favorite queries along with other objects also appear on your **Project** page. For more information, see [Set personal or team favorites](../../project/navigation/set-favorites.md). 
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ Or, select one of the following options:
 - **Edit Query**: Opens the [Query Editor](../queries/using-queries.md) for the selected query.
 - **New Query**: Opens the [Query Editor](../queries/using-queries.md) with the default new query options.
 - **Open in Microsoft Excel (Flat)**: [Opens the query in Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
-- **Send to Microsoft Outlook**: [Open](../queries/share-plans.md)
+- **Send to Microsoft Outlook**: [Open](../work-items/email-work-items.md)
 - **Cut**: Cuts the query. You can then paste the query under a different folder. 
 - **Copy**: Copies the query. You can then paste the query under the same folder or a different folder. 
 - **Delete**: [Deletes the query](../queries/organize-queries.md).  

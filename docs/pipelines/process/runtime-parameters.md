@@ -3,8 +3,8 @@ title: Use runtime and type-safe parameters
 ms.custom: seodec18
 description: You can use runtime parameters in pipelines or as part of a template 
 ms.topic: conceptual
-ms.date: 02/24/2022
-monikerRange: 'azure-devops || >= azure-devops-2020'
+ms.date: 07/03/2023
+monikerRange: '>=azure-devops-2020'
 ---
 
 # Runtime parameters
@@ -13,10 +13,10 @@ monikerRange: 'azure-devops || >= azure-devops-2020'
 
 Runtime parameters let you have more control over what values can be passed to a pipeline. With runtime parameters you can:
 - Supply different values to scripts and tasks at runtime
-- Control parameter types, ranges allowed, and defaults
-- Dynamically select jobs and stages with template expressions
+- Control parameter types, allowed ranges, and defaults
+- Dynamically select jobs and stages with [template expressions](template-expressions.md)
 
-You can specify [parameters in templates](templates.md) and in the pipeline. Parameters have data types such as number and string, and they can be restricted to a subset of values. The `parameters` section in a YAML defines what parameters are available. 
+You can specify [parameters in templates](template-parameters.md) and in the pipeline. Parameters have data types such as number and string, and they can be restricted to a subset of values. The `parameters` section in a YAML defines what parameters are available. 
 
 Parameters are only available at template parsing time. Parameters are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced with parameter values. Use [variables](variables.md) if you need your values to be more widely available during your [pipeline run](runs.md). 
 
@@ -26,7 +26,7 @@ Parameters are only available at template parsing time. Parameters are expanded 
 
 Parameters must contain a name and data type. Parameters can't be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. If you don't assign a default value or set `default` to `false`, the first available value is used. 
 
-Use [templateContext](templates.md#use-templatecontext-to-pass-properties-to-templates) to pass extra properties to stages, steps, and jobs that are used as parameters in a template. 
+Use [templateContext](template-parameters.md#use-templatecontext-to-pass-properties-to-templates) to pass extra properties to stages, steps, and jobs that are used as parameters in a template. 
 
 ## Use parameters in pipelines
 

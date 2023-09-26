@@ -12,7 +12,7 @@
         "Microsoft",
         "MicrosoftDocs"
       ],
-      "minAdditionsToFile": 10,
+      "minAdditionsToFile": 5,
       "omitPullRequestTitles": true
     },
     "areas": [

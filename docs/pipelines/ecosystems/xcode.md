@@ -111,7 +111,52 @@ Add the [App Center Test](/azure/devops/pipelines/tasks/reference/app-center-tes
 
 [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
 
-[!INCLUDE [temp](../tasks/includes/yaml/AppCenterTestV1.md)]
+```yml
+# App Center test v1
+# Test app packages with Visual Studio App Center.
+- task: AppCenterTest@1
+  inputs:
+    appFile: # string. Alias: app. Required. Binary application file path. 
+    artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest' # string. Alias: artifactsDir. Required. Artifacts directory. Default: $(Build.ArtifactStagingDirectory)/AppCenterTest.
+  # Prepare Tests
+    #prepareTests: true # boolean. Alias: enablePrepare. Prepare tests. Default: true.
+    frameworkOption: 'appium' # 'appium' | 'espresso' | 'calabash' | 'uitest' | 'xcuitest'. Alias: framework. Required when enablePrepare = true. Test framework. Default: appium.
+    #appiumBuildDirectory: # string. Alias: appiumBuildDir. Required when enablePrepare = true && framework = appium. Build directory. 
+    #espressoBuildDirectory: # string. Alias: espressoBuildDir. Optional. Use when enablePrepare = true && framework = espresso. Build directory. 
+    #espressoTestApkFile: # string. Alias: espressoTestApkPath. Optional. Use when enablePrepare = true && framework = espresso. Test APK path. 
+    #calabashProjectDirectory: # string. Alias: calabashProjectDir. Required when enablePrepare = true && framework = calabash. Project directory. 
+    #calabashConfigFile: # string. Optional. Use when enablePrepare = true && framework = calabash. Cucumber config file. 
+    #calabashProfile: # string. Optional. Use when enablePrepare = true && framework = calabash. Profile to run. 
+    #calabashSkipConfigCheck: false # boolean. Optional. Use when enablePrepare = true && framework = calabash. Skip Configuration Check. Default: false.
+    #uiTestBuildDirectory: # string. Alias: uitestBuildDir. Required when enablePrepare = true && framework = uitest. Build directory. 
+    #uitestStorePath: # string. Optional. Use when enablePrepare = true && framework = uitest. Store file. 
+    #uiTestStorePassword: # string. Alias: uitestStorePass. Optional. Use when enablePrepare = true && framework = uitest. Store password. 
+    #uitestKeyAlias: # string. Optional. Use when enablePrepare = true && framework = uitest. Key alias. 
+    #uiTestKeyPassword: # string. Alias: uitestKeyPass. Optional. Use when enablePrepare = true && framework = uitest. Key password. 
+    #uiTestToolsDirectory: # string. Alias: uitestToolsDir. Optional. Use when enablePrepare = true && framework = uitest. Test tools directory. 
+    #signInfo: # string. Optional. Use when framework = calabash || framework = uitest. Signing information. 
+    #xcUITestBuildDirectory: # string. Alias: xcuitestBuildDir. Optional. Use when enablePrepare = true && framework = xcuitest. Build directory. 
+    #xcUITestIpaFile: # string. Alias: xcuitestTestIpaPath. Optional. Use when enablePrepare = true && framework = xcuitest. Test IPA path. 
+    #prepareOptions: # string. Alias: prepareOpts. Optional. Use when enablePrepare = true. Additional options. 
+  # Run Tests
+    #runTests: true # boolean. Alias: enableRun. Run tests. Default: true.
+    credentialsOption: 'serviceEndpoint' # 'serviceEndpoint' | 'inputs'. Alias: credsType. Required when enableRun = true. Authentication method. Default: serviceEndpoint.
+    #serverEndpoint: # string. Required when enableRun = true && credsType = serviceEndpoint. App Center service connection. 
+    #username: # string. Required when enableRun = true && credsType = inputs. App Center username. 
+    #password: # string. Required when enableRun = true && credsType = inputs. App Center password. 
+    appSlug: # string. Required when enableRun = true. App slug. 
+    devices: # string. Required when enableRun = true. Devices. 
+    #series: 'master' # string. Optional. Use when enableRun = true. Test series. Default: master.
+    #dsymDirectory: # string. Alias: dsymDir. Optional. Use when enableRun = true. dSYM directory. 
+    localeOption: 'en_US' # 'da_DK' | 'nl_NL' | 'en_GB' | 'en_US' | 'fr_FR' | 'de_DE' | 'ja_JP' | 'ru_RU' | 'es_MX' | 'es_ES' | 'user'. Alias: locale. Required when enableRun = true. System language. Default: en_US.
+    #userDefinedLocale: # string. Optional. Use when enableRun = true && locale = user. Other locale. 
+    #loginOptions: # string. Alias: loginOpts. Optional. Use when enableRun = true && credsType = inputs. Additional options for login. 
+    #runOptions: # string. Alias: runOpts. Optional. Use when enableRun = true. Additional options for run. 
+    #skipWaitingForResults: false # boolean. Alias: async. Optional. Use when enableRun = true. Do not wait for test result. Default: false.
+  # Advanced
+    #cliFile: # string. Alias: cliLocationOverride. App Center CLI location. 
+    #showDebugOutput: false # boolean. Alias: debug. Enable debug output. Default: false.
+```
 
 ### Retain artifacts with the build record
 
@@ -137,7 +182,32 @@ to store your IPA with the build record or test and deploy it in subsequent pipe
 Add the [App Center Distribute](/azure/devops/pipelines/tasks/reference/app-center-distribute-v3) task to distribute an app to a group of testers or beta users,
 or promote the app to Intune or the Apple App Store. A free [App Center](https://appcenter.ms) account is required (no payment is necessary).
 
-[!INCLUDE [temp](../tasks/includes/yaml/AppCenterDistributeV1.md)]
+```yml
+# App Center distribute v3
+# Distribute app builds to testers and users via Visual Studio App Center.
+- task: AppCenterDistribute@3
+  inputs:
+    serverEndpoint: # string. Required. App Center service connection. 
+    appSlug: # string. Required. App slug. 
+    appFile: # string. Alias: app. Required. Binary file path. 
+    #buildVersion: # string. Build version. 
+    releaseNotesOption: 'input' # 'input' | 'file'. Alias: releaseNotesSelection. Required. Create release notes. Default: input.
+    releaseNotesInput: # string. Required when releaseNotesSelection = input. Release notes. 
+    #releaseNotesFile: # string. Required when releaseNotesSelection = file. Release notes file. 
+    #isMandatory: false # boolean. Require users to update to this release. Default: false.
+    destinationType: 'groups' # 'groups' | 'store'. Required. Release destination. Default: groups.
+    #distributionGroupId: # string. Alias: destinationGroupIds. Optional. Use when destinationType = groups. Destination IDs. 
+    #destinationStoreId: # string. Required when destinationType = store. Destination ID. 
+    #isSilent: # boolean. Optional. Use when destinationType = groups. Do not notify testers. Release will still be available to install. 
+  # Symbols
+    #symbolsOption: 'Apple' # 'Apple' | 'Android' | 'UWP'. Alias: symbolsType. Symbols type. Default: Apple.
+    #symbolsPath: # string. Optional. Use when symbolsType == AndroidNative || symbolsType = Windows. Symbols path. 
+    #appxsymPath: # string. Optional. Use when symbolsType = UWP. Symbols path (*.appxsym). 
+    #symbolsDsymFiles: # string. Alias: dsymPath. Optional. Use when symbolsType = Apple. dSYM path. 
+    #symbolsMappingTxtFile: # string. Alias: mappingTxtPath. Optional. Use when symbolsType = Android. Mapping file. 
+    #nativeLibrariesPath: # string. Optional. Use when symbolsType == Android. Native Library File Path. 
+    #symbolsIncludeParentDirectory: # boolean. Alias: packParentFolder. Optional. Use when symbolsType = Apple. Include all items in parent folder.
+```
 
 ### Apple App Store
 

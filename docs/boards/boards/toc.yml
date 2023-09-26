@@ -12,7 +12,7 @@
   displayname: reorder, group, parent, tags
 - name: Manage inline tests
   href: add-run-update-tests.md
-- name: Customize your boards
+- name: Customize boards
   items:
   - name: Configure & customize boards
     href: ../configure-customize.md
@@ -26,18 +26,10 @@
     href: wip-limits.md
   - name: Expedite work (swimlanes)
     href: expedite-work.md
-  - name: Add Definition of Done
-    href: definition-of-done.md
   - name: Show bugs on backlogs & boards
     href: ../../organizations/settings/show-bugs-on-backlog.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
     displayname: nested, hierarchical
-- name: Best practices, monitoring, & reports
-  items:
-  - name: Kanban best practices
-    href: best-practices-kanban.md
-  - name: Kanban concepts
-    href: kanban-key-concepts.md
-  - name: Manage CFD
+  - name: Manage Cumulative Flow Diagram
     href: ../../report/dashboards/cumulative-flow.md?toc=/azure/devops/boards/toc.json
-  - name: Configure Lead &Cycle time widget
+  - name: Configure Lead & Cycle Time widget
     href: ../../report/dashboards/cycle-time-and-lead-time.md?toc=/azure/devops/boards/toc.json

@@ -24,7 +24,7 @@ Universal Packages offer developers the capability to store an extensive array o
 
 #### [Windows](#tab/Windows/)
 
-1. Run the following command to install the Azure DevOps extension.
+1. Run the following command to install the Azure DevOps extension. Make sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli). At the very least, your Azure CLI version should be 2.10.1. You can confirm this by using the command `az --version`. To run the Azure CLI, you can use the `az` command from the Windows Command Prompt or [PowerShell](/powershell/azure/install-azure-powershell).
 
    ```azurecli
    az extension add --name azure-devops
@@ -77,6 +77,9 @@ To publish a universal package, run the following command in an elevated command
     ```azurecli
     az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --project <PROJECT_NAME> --scope project --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <PACKAGE_DIRECTORY> --description <PACKAGE_DESCRIPTION>
     ```
+
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
 
 ## View published packages
 

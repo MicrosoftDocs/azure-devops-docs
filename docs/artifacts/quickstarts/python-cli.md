@@ -62,6 +62,9 @@ Azure Artifacts enables developers publishing and consuming packages from Azure 
    twine upload -r <FEED_NAME> dist/*
    ```
 
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
+
 ## Consume Python packages
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.

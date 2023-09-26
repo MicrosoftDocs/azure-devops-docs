@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: jukullam
 author: juliakm 
 monikerRange: 'azure-devops'
-ms.date: 05/09/2023
+ms.date: 09/20/2023
 ---
 
 # Secret scanning 

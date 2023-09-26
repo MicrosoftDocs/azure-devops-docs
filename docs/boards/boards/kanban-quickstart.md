@@ -234,6 +234,5 @@ The [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=rea
 
 - [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Kanban key concepts](kanban-key-concepts.md)
-- [Kanban best practices](best-practices-kanban.md)
 - [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)
 - [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)

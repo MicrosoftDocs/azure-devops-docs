@@ -105,7 +105,7 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 
 ::: moniker range="azure-devops" 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 ::: moniker-end
  
 ## Remove or delete multiple work items 
@@ -119,7 +119,7 @@ From the web portal, you can multi-select several work items from a backlog or q
 
 ### Remove work items
 
-By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and Taskboards). The *Removed* state corresponds to the **Removed** workflow category state. If you [define custom workflow states](../../organizations/settings/work/customize-process-workflow.md), any state you map to the **Removed** workflow category state will act in a similar way. 
+By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and Taskboards). The *Removed* state corresponds to the **Removed** workflow category state. If you [define custom workflow states](../../organizations/settings/work/customize-process-workflow.md), any state you map to the **Removed** workflow category state act in a similar way. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of work item form, Change State to Removed.](media/move-change-delete/remove-state.png)  
@@ -372,7 +372,6 @@ To programmatically delete, restore, and destroy work items, see one of the foll
   
 ## Related articles   
 
-- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  

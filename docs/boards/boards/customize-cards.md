@@ -32,13 +32,13 @@ You can show fields on cards based on what your team frequently refers to or upd
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE]  
-> You can customize a work item type which is different than customizing the card displayed on the Kanban board. You customize a work item type by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
+> You can customize a work item type which is different than customizing the card displayed on the Kanban board. You customize a work item type by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
 > [!NOTE]  
-> You can customize a work item type which is different than customizing the card displayed on the Kanban board. You customize a work item type by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+> You can customize a work item type which is different than customizing the card displayed on the Kanban board. You customize a work item type by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
 Within the [Settings dialog for the Kanban board](#open-your-kanban-board-settings), you have the following customization options. 
@@ -73,9 +73,9 @@ Within the [Settings dialog for the Kanban board](#open-your-kanban-board-settin
 Before you configure the cards, make sure the following tasks are complete, or you might need to revisit your configuration.  
 
 **Process Administrator**: 
-1. Add custom work item types that you want to appear on your backlog or board. For details, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
+1. Add custom work item types that you want to appear on your backlog or board. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
 2. Customize your product and portfolio backlogs to ensure all the work item types you want to have appear on the backlogs and boards. For details see [Customize backlogs & boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-3. Customize each work item type to have any custom fields you want to show. For details, see [Customize a workflow](../../organizations/settings/work/add-custom-field.md).
+3. Customize each work item type to have any custom fields you want to show. For more information, see [Customize a workflow](../../organizations/settings/work/add-custom-field.md).
 
 **Team Administrator**:
 1. Meet with your team and determine how the team wants to manage bugs, similar to requirements or tasks.  
@@ -427,7 +427,6 @@ If you want to preserve the backlog priority when you move a card to a new colum
 - [Configure status badges](../github/configure-status-badges.md) 
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)  
-- [Set working days](../../organizations/settings/set-working-days.md) 
 - [Set up swimlanes](expedite-work.md)
 ::: moniker-end
 
@@ -436,5 +435,4 @@ If you want to preserve the backlog priority when you move a card to a new colum
 - [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)  
-- [Set working days](../../organizations/settings/set-working-days.md) 
 ::: moniker-end

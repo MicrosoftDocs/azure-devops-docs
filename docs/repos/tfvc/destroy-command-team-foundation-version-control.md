@@ -17,6 +17,8 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Use the `tf destroy` command to destroy, or permanently delete, version-controlled files from Team Foundation Version Control (TFVC).
+> [!NOTE]
+> Deleting a TFVC repository inside Azure Devops is not allowed once it has been created. The command `tf destroy` will only destroy, or permanently delete, version-controlled files or folders but will not delete the TFVC repository. It will still appear in the list of options with the message deleted. 
 
 Sometimes you have to clean up version control systems. For example, if some files are infected with a computer virus, you have to remove them permanently from version control. Don't destroy files that are still needed. The destroy action can't be reversed.
 

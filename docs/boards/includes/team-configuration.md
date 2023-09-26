@@ -47,7 +47,6 @@ ms.date: 01/09/2020
    :::column-end:::
    :::column span="3":::
    - [Select active iteration paths (sprints)](../../organizations/settings/set-iteration-paths-sprints.md)
-   - [Set working days](../../organizations/settings/set-working-days.md)
    :::column-end:::
 :::row-end:::
 :::row:::

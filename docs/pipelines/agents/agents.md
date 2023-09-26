@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 06/20/2023
+ms.date: 07/26/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -22,6 +22,14 @@ To build your code or deploy your software using Azure Pipelines, you need at le
 
 When your pipeline runs, the system begins one or more jobs.
 An agent is computing infrastructure with installed agent software that runs one job at a time.
+
+Azure Pipelines provides several different types of agents.
+
+| Agent type | Description | Availability |
+|------------|-------------|--------------|
+| [Microsoft-hosted agents](#microsoft-hosted-agents) | Agents hosted and managed by Microsoft | Azure DevOps Services |
+| [Self-hosted agents](#install) | Agents that you configure and manage, hosted on your VMs | Azure DevOps Services, Azure DevOps Server, TFS |
+| [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be auto-scaled to meet demands | Azure DevOps Services |
 
 ::: moniker range=">= azure-devops-2019"
 Jobs can be run [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).
@@ -143,7 +151,7 @@ The agent software automatically determines various system capabilities such as 
 > [!NOTE]
 > Storing environment variables as capabilities means that when an agent runs, the stored capability values are used to set the environment variables. Also, any changes to environment variables that are made while the agent is running won't be picked up and used by any task. If you have sensitive environment variables that change and you don't want them to be stored as capabilities, you can have them ignored by setting the `VSO_AGENT_IGNORE` environment variable, with a comma-delimited list of variables to ignore. For example, `PATH` is a critical variable that you might want to ignore if you're installing software.   
 
-When you author a pipeline, you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the [demands](../process/demands.md) specified in the pipeline. As a result, agent capabilities allow you to direct jobs to specific agents.
+When you author a pipeline, you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the [demands](/azure/devops/pipelines/yaml-schema/pool-demands) specified in the pipeline. As a result, agent capabilities allow you to direct jobs to specific agents.
 
 > [!NOTE]
 >
@@ -151,6 +159,41 @@ When you author a pipeline, you specify certain **demands** of the agent. The sy
 > meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
 > matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
 > to use capabilities with Microsoft-hosted agents.
+
+### Configure demands
+
+# [YAML](#tab/yaml)
+
+:::moniker range=">=azure-devops-2019"
+
+To add a demand to your YAML build pipeline, add the `demands:` line to the `pool` section.
+
+```yaml
+pool:
+  name: Default
+  demands: SpecialSoftware # exists check for SpecialSoftware
+```
+
+You can check for the existence of a capability, or make a comparison with the value of a capability. For more information, see [YAML schema - Demands](/azure/devops/pipelines/yaml-schema/pool-demands).
+
+:::moniker-end
+
+:::moniker range="<azure-devops-2019"
+
+YAML Pipelines are supported in Azure DevOps Server 2019 and higher.
+
+:::moniker-end
+
+# [Classic](#tab/classic)
+
+In the Tasks tab of the pipeline, add the demand to your agent job.
+
+| Name | Condition | Value |
+|---|---|---|
+| SpecialSoftware | exists | N/A |
+| Agent.OS | equals | Linux |
+
+---
 
 ### Configure agent capabilities
 
@@ -338,6 +381,10 @@ Here is a common communication pattern between the agent and Azure Pipelines or 
 3. After the job is completed, the agent discards the job-specific OAuth token and goes back to checking if there is a new job request using the listener OAuth token.
 
 The payload of the messages exchanged between the agent and Azure Pipelines/Azure DevOps Server are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key. This is how secrets stored in pipelines or variable groups are secured as they are exchanged with the agent.
+
+> [!NOTE]
+> The agent provides support for UTF-8 client encoding output. 
+> However, if your system has a different encoding from UTF-8, you might encounter some problems with the output of logs. For example, the logs might contain characters that aren't recognized by your system’s encoding so they might appear as garbled or missing symbols.
 
 ::: moniker range="azure-devops"
 
@@ -540,7 +587,12 @@ You can view the version of an agent by navigating to **Agent pools** and select
 To trigger agent update programmatically you can use Agent update API as described in section [How can I trigger agent updates programmatically for specific agent pool?](#how-can-i-trigger-agent-updates-programmatically-for-specific-agent-pool).
 
 > [!NOTE]
-> For servers with no internet access, manually copy the agent zip file to `%\ProgramData%\Microsoft\Azure DevOps\Agents\` to use as a local file. Create the **Agents** folder if it is not present.
+> For servers with no internet access, manually copy the agent zip file to the following folder to use as a local file. Create the **Agents** folder if it is not present.
+> * Windows: `%ProgramData%\Microsoft\Azure DevOps\Agents` 
+> * Linux: `usr/share/Microsoft/Azure DevOps/Agents`
+> * macOS: `usr/share/Microsoft/Azure DevOps/Agents`
+
+  Create the **Agents** folder if it is not present.
 
 ## FAQ
 

@@ -53,7 +53,7 @@ Use this article to learn how to:
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -74,7 +74,7 @@ Use this article to learn how to:
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -126,7 +126,7 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 
 ## Move items out of a sprint
 
-Move items from the sprint backlog back to the product backlog if your team is over capacity. This action will reset the Iteration Path to the default set for your team. Or, you can move the item into the next sprint your team will work in. All the tasks that you've defined for that item will move with the backlog items.   
+Move items from the sprint backlog back to the product backlog if your team is over capacity. This action resets the Iteration Path to the default set for your team. Or, you can move the item into the next sprint your team works in. All the tasks that you've defined for that item move with the backlog items.   
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -136,7 +136,7 @@ Here we select two items at the bottom of the sprint backlog, open the  :::image
 > ![Move work items to backlog](media/adjust-work/move-items-to-backlog-agile.png)
 
 > [!TIP]    
-> Optionally, you can open the **Planning** pane and drag a work item to the backlog or another sprint which will reassign all child tasks to the same iteration path. See [Assign work to a sprint](assign-work-sprint.md#drag-drop). Also, you can multi-select several items and drag them to the backlog or another sprint. Users with **Stakeholder** access can't drag-and-drop work items.
+> Optionally, you can open the **Planning** pane and drag a work item to the backlog or another sprint which reassigns all child tasks to the same iteration path. See [Assign work to a sprint](assign-work-sprint.md#drag-drop). Also, you can multi-select several items and drag them to the backlog or another sprint. Users with **Stakeholder** access can't drag-and-drop work items.
 
 ::: moniker-end
 

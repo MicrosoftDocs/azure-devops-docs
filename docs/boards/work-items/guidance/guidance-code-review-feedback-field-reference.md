@@ -61,7 +61,7 @@ You can use the code review and feedback fields to create queries and reports th
 |--------------------|---------------------|-------------------|  
 |**Application Launch Instructions**|Instructions to stakeholders on how to start the application.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationLaunchInstructions|HTML|  
 |**Application Start Information**|Guidelines to direct stakeholder feedback.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationStartInformation|PlainText|  
-|**Application Type**|The type of application that stakeholders will provide feedback on. The valid types are specified in the process configuration file, ProcessConfiguration. The default values are **Web Application**, **Remote Machine**, and **Client Application**.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationType|String|  
+|**Application Type**|The type of application that stakeholders provide feedback on. The valid types are specified in the process configuration file, ProcessConfiguration. The default values are **Web Application**, **Remote Machine**, and **Client Application**.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationType|String|  
 |**Rating**|The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response)<br /> The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0 &mdash; Not Rated**<br />-   **1 - Poor**<br />-   **2 - Fair**<br />-   **3- Good**<br />-   **4- Very Good**<br />-   **5 - Excellent**<br/>Reference name=Microsoft.VSTS.Common.Rating|String|  
   
 ## Related articles

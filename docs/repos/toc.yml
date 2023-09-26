@@ -22,9 +22,6 @@
   - name: 'Use #ID to link to work items'
     href: ../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/repos/toc.json 
     displayname: pull requests, commits, comments, build, wiki
-  - name: Configure Git repositories to integrate with work tracking
-    href: git/configure-repos-work-tracking.md?toc=/azure/devops/repos/toc.json
-    displayname: auto link, transition, check for linked work items, auto complete, external links
   - name: Configure pipelines to support work tracking
     href: ../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/repos/toc.json 
     displayname: auto link, create work item on build failure, report deployment status,

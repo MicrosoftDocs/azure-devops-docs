@@ -123,11 +123,11 @@ For best practice, we suggest using two separate configuration files. The first 
         node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
         ```
 
-        You can also use the following command to convert your personal access token to Base64. Use `-w 0` to disable line wrapping.
+        You can also use the following command to convert your personal access token to Base64. 
 
         - **Linux/Mac**:
             ```Command
-            echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64 -w 0
+            echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64
             ```
     1. Copy the Base64 encoded value.
 

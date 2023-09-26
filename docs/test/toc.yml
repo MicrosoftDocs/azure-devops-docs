@@ -55,6 +55,8 @@
   - name: Set test retention policies
     displayName: results, logs
     href: how-long-to-keep-test-results.md
+  - name: Manage test failure type
+    href: manage-test-failure-type.md
 - name: Automated tests
   items:
   - name: Associate automated tests with test cases

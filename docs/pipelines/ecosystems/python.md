@@ -81,8 +81,6 @@ pool:
   vmImage: ubuntu-latest
 strategy:
   matrix:
-    Python37:
-      python.version: '3.7'
     Python38:
       python.version: '3.8'
     Python39:

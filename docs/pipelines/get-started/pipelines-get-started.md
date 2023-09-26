@@ -104,7 +104,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 | [Caching](../release/caching.md) | ✅ | ✅ | ❌ | Reduces build time by allowing outputs or downloaded dependencies from one run to be reused in later runs. In Preview, available with Azure Pipelines only.| 
 | [Conditions](../process/conditions.md) | ✅ | ✅ | ✅ | Specifies conditions to be met prior to running a job.     |
 | [Container jobs](../process/container-phases.md) |  ✅ | ❌ | ❌ | Specifies jobs to run in a container.  |
-| [Demands](../process/demands.md) | ✅ | ✅ | ✅ | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
+| [Demands](/azure/devops/pipelines/yaml-schema/pool-demands) | ✅ | ✅ | ✅ | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
 | [Dependencies](../process/stages.md) | ✅ | ✅ | ✅ | Specifies a requirement that must be met in order to run the next job or stage.  |
 | [Deployment groups](../release/deployment-groups/index.md) | ❌ | ❌ | ✅ | Defines a logical set of deployment target machines. | 
 | [Deployment group jobs](../process/deployment-group-phases.md)| ❌ | ❌ | ✅ | Specifies a job to release to a deployment group. | 
@@ -136,7 +136,7 @@ TFS 2015 through TFS 2018 supports the Classic interface only. The following tab
 | [Approvals](../release/approvals/index.md) | ❌ | ✅ | Defines a set of validations required prior to completing a deployment stage. |
 | [Artifacts](../artifacts/artifacts-overview.md) | ✅ | ✅ | Supports publishing or consuming different package types. |
 | [Conditions](../process/conditions.md) | ✅ | ✅ | Specifies conditions to be met prior to running a job.     |
-| [Demands](../process/demands.md) | ✅ | ✅ | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
+| [Demands](/azure/devops/pipelines/yaml-schema/pool-demands) | ✅ | ✅ | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
 | [Dependencies](../process/stages.md) | ✅ | ✅ | Specifies a requirement that must be met in order to run the next job or stage.  |
 | [Deployment groups](../release/deployment-groups/index.md) | ❌ | ✅ | Defines a logical set of deployment target machines. | 
 | [Deployment group jobs](../process/deployment-group-phases.md)| ❌ | ✅ | Specifies a job to release to a deployment group. | 

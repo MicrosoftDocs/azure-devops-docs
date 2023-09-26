@@ -351,21 +351,21 @@ When migrating from build artifacts to pipeline artifacts:
 
 ```yaml
 - task: PublishPipelineArtifact@1
-  displayName: 'Publish'
+  displayName: 'Publish pipeline artifact'
   inputs:
-    targetPath: $(Build.ArtifactStagingDirectory)/**
+    targetPath: '$(Pipeline.Workspace)'
     ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
-        artifactName: 'prod'
+        artifact: 'prod'
     ${{ else }}:
-        artifactName: 'dev'
-    artifactType: 'pipeline'
+        artifact: 'dev'
+    publishLocation: 'pipeline'
 ```
 
-- **targetPath**: The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include variables, but wildcards are not supported.
+- **targetPath**: (Required) The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](../build/variables.md), but wildcards are not supported. Default: $(Pipeline.Workspace).
 
-- **artifactName**: Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.
+- **publishLocation**: (Required) Artifacts publish location. Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. Options: `pipeline`, `filepath`. Default: pipeline.
 
-- **artifactType**: Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. Options: `pipeline`, `filepath`.
+- **artifact**: (Optional) Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.
 
 ## FAQ
 

@@ -65,7 +65,7 @@ The following example shows how to find all closed bugs by modifying the
    > [!div class="mx-imgBorder"]  
    > ![Save As query dialog, new experience](media/view-run-queries/save-as-new-exp.png)  
 
-   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
+   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. For more information, see [Set query permissions](set-query-permissions.md).  
 
 ::: moniker-end
 
@@ -87,7 +87,7 @@ The following example shows how to find all closed bugs by modifying the
 	
    ![Save Query As](media/6.png)  
 
-   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
+   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. For more information, see [Set query permissions](set-query-permissions.md).  
 
 ::: moniker-end  
 
@@ -128,8 +128,8 @@ From either the **Favorites** or **All** page, choose the  :::image type="icon" 
 
 For shared queries, you can also choose to do one of these tasks: 
 - **Add to team queries**: Select the team to add the query as a team favorite
-- **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).   
-- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
+- **Security...**: to set permissions for the query. For more information, see [Set query permissions](set-query-permissions.md).   
+- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. For more information, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
 ::: moniker-end
 
@@ -239,7 +239,7 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 
 1. To save a query as a team favorite, open :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More actions** or :::image type="icon" source="media/22.png" border="false"::: the context menu for the query from  the **Queries** page. 
 
-1. Choose **Add to team favorites**, and then select from the teams listed. Only teams for which you are a member are listed.
+1. Choose **Add to team favorites**, and then select from the teams listed. Only teams for which you're a member are listed.
 
 	:::image type="content" source="media/organize-queries/save-query-team-favorite.png" alt-text="Screenshot of Save query as a team favorite.":::
 

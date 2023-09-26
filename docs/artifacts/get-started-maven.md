@@ -31,6 +31,9 @@ This quickstart will guide you through setting up your Maven project to connect 
 
 [!INCLUDE [](includes/maven/publish.md)]
 
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md#azure-artifacts). 
+
 ## Install artifacts
 
 [!INCLUDE [](includes/maven/install.md)]

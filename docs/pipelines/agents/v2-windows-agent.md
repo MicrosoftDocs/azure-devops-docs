@@ -23,7 +23,6 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 
 > Before you begin:
 > * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
-> * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](/previous-versions/azure/devops/pipelines/agents/v1-windows).
 > *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 
 [!INCLUDE [include](includes/concepts.md)]
@@ -99,9 +98,9 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
       [!INCLUDE [include](includes/agent-pools-tab.md)]
 
-1. Click **Download agent**.</li>
+1. Click **Download agent**.</br>
 
-1. On the **Get agent** dialog box, click **Windows**.</li>
+1. On the **Get agent** dialog box, click **Windows**.</br>
 
 1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
 The x64 version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
@@ -294,6 +293,9 @@ The help provides information on authentication alternatives and unattended conf
 ::: moniker-end
 
 ### How do I run the agent with self-signed certificate?
+
+> [!NOTE]
+> Running the agent with a self-signed certificate only applies to Azure DevOps Server.
 
 [Run the agent with self-signed certificate](certificate.md)
 

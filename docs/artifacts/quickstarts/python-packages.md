@@ -118,9 +118,9 @@ When you connect to Azure DevOps for the first time, you'll be prompted for cred
 
 ## Related articles
 
-- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
+- [Use feed views to share packages](../feeds/views.md)
 
-- [Publish and consume Python packages from the command line](python-cli.md)
+- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
 
 - [Build Python apps](../../pipelines/ecosystems/python.md).
 

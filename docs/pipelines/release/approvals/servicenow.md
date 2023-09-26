@@ -4,8 +4,8 @@ ms.custom: seodec18
 description: Understand ServiceNow gated releases in Azure Pipelines
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.topic: conceptual
-ms.author: shashban
-author: shashban
+ms.author: ericvan
+author: geekzter
 ms.date: 08/29/2022
 monikerRange: '<= azure-devops'
 "recommendations": "true"

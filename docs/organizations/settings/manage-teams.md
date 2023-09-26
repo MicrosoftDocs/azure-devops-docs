@@ -169,7 +169,6 @@ For detailed information on each configuration option, you can explore the follo
    :::column span="1":::
       **General**
       - [Backlogs](select-backlog-navigation-levels.md)
-      - [Working days](set-working-days.md)
       - [Working with bugs](show-bugs-on-backlog.md)            
       **Cards**
       - [Add fields](../../boards/boards/customize-cards.md)
@@ -184,7 +183,7 @@ For detailed information on each configuration option, you can explore the follo
       - [Add columns](../../boards/boards/add-columns.md)  
       - [Split columns](../../boards/boards/split-columns.md)    
       - [WIP limits](../../boards/boards/wip-limits.md)    
-      - [Definition of Done](../../boards/boards/definition-of-done.md)   
+      - [Definition of Done](../../boards/boards/add-columns.md#definition-of-done)   
       - [Add swimlanes](../../boards/boards/expedite-work.md)
       - [Card reordering](../../boards/boards/customize-cards.md#reorder-cards)
       - [Configure status badges](../../boards/github/configure-status-badges.md)
@@ -193,7 +192,7 @@ For detailed information on each configuration option, you can explore the follo
       - [Add columns](../../boards/boards/add-columns.md)
       - [Split columns](../../boards/boards/split-columns.md)    
       - [WIP limits](../../boards/boards/wip-limits.md)    
-      - [Definition of Done](../../boards/boards/definition-of-done.md)  
+      - [Definition of Done](../../boards/boards/add-columns.md#definition-of-done)  
       - [Add swimlanes](../../boards/boards/expedite-work.md)
       - [Reorder cards](../../boards/boards/customize-cards.md#reorder-cards)
       ::: moniker-end
@@ -239,7 +238,7 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 ::: moniker range=">= azure-devops-2020"
 
-Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB.
+Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB and 2560 x 1024 px, and then we resize to 200 x 200.
 
 
 ![Screenshot to Update team profile picture.](media/team-defaults/update-team-profile-pic-preview.png)

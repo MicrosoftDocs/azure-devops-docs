@@ -7,7 +7,7 @@ ms.subservice: azure-devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
 author: chcomley
-ms.date: 03/06/2023
+ms.date: 07/18/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -255,12 +255,12 @@ When you're disconnected from Azure DevOps Server, you can install free and prev
 
    You can now go to your project collection to use your extension. Tell your team about this extension, so they can start using its capabilities too. 
 
-### Install pre-installed extensions (first-party) for disconnected TFS
+### Install preinstalled extensions (first-party) for disconnected TFS
 
 >[!NOTE]
 > This section is only for adding pre-installed extensions (first-party), if you're installing extensions that aren't pre-installed with TFS, see the section [Install extensions when disconnected](#install-extensions-when-disconnected).
 
-For first-party extensions that come pre-installed with TFS, here's an alternate method of installation that prevents compatibility issues.
+For first-party extensions that come preinstalled with TFS, here's an alternate method of installation that prevents compatibility issues.
 
 1. Hover over the shopping bag and select **Manage extensions**
 
@@ -280,7 +280,7 @@ For first-party extensions that come pre-installed with TFS, here's an alternate
 
 ### Install extension from the local gallery
 
-Several extensions are pre-installed in the local extensions gallery.
+Several extensions are preinstalled in the local extensions gallery.
 Users can install these extensions without requiring an external connection to Marketplace or the internet.
 
 > [!TIP]
@@ -310,10 +310,7 @@ Users can install these extensions without requiring an external connection to M
 
 <a id="uninstall-disable-extension">  </a>
 
-## Uninstall or disable an extension 
-
-> [!NOTE]
-> Charges continue for a paid extension until you [reduce all users to zero (0) for the extension](install-extension.md). 
+## Uninstall or disable an extension
 
 ::: moniker range="azure-devops"
 #### [Browser](#tab/browser)
@@ -566,9 +563,9 @@ A: You must be a member of your project collection. Follow these steps to check 
 1. Open a private or incognito browsing session.
 1. Sign in to your Azure DevOps Server home page (```https://{server}:8080/tfs/```) with the identity that's a user in the project collection where you want to install the extension.
 
-   Azure DevOps might ask you to choose between a "work or school organization" or "personal account". This message means that you used an email address that's the same for a Microsoft account and a "work or school account" managed by your organization in Azure Active Directory. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions. Choose the identity that's the user in your project collection.
+   Azure DevOps might ask you to choose between a "work or school organization" or "personal account." This message means that you used an email address that's the same for a Microsoft account and a "work or school account" managed by your organization in Azure Active Directory. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions. Choose the identity that's the user in your project collection.
 
-1. From your project collection, go to the Marketplace.
+2. From your project collection, go to the Marketplace.
 
 ### Q: Why doesn't the extension that I want show a download button? (on-premises)
 A: Some extensions work only with Azure DevOps Services for one of the following reasons:  

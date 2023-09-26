@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 6/21/2023
+ms.date: 7/11/2023
 
 ms.topic: article
 ms.service: azure-devops
@@ -38,6 +38,43 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="8"><a href="2023/sprint-227-update.md" data-raw-source="[14 September 2023](2023/sprint-227-update.md)"> 14 September 2023</a></td>
+    <td>Limits for area and iteration paths</td><td>Boards</td><td>Future</td></tr>
+    <td>Pipeline agents can be registered using Azure Active Directory instead of a PAT</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Workload identity federation for Azure Pipelines (public preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>REST APIs for Environments</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Prevent Unintended Pipeline Runs</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Build GitHub Repositories Securely by Default</td><td>Pipelines</td><td>Future</td><tr>   
+    <td>Disabled override of code coverage policy status to Failed when build is failing </td><td>Pipelines</td><td>Future</td></tr>  
+    <td>Blobless and treeless filter support</td><td>Repos</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="6"><a href="2023/sprint-226-update.md" data-raw-source="[23 August 2023](2023/sprint-226-update.md)"> 23 August 2023</a></td>
+    <td>Project and organization-level enablement for Advanced Security </td><td>General</td><td>Future</td></tr>
+    <td>Estimated committer count during Advanced Security enablement </td><td>General</td><td>Future</td></tr>
+    <td>Retry a stage when approvals and checks time out</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Administrator role for all Environments</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Centralized control for building PRs from forked GitHub repos</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Azure Artifacts support for Cargo Crates (public preview) </td><td>Artifacts</td><td>Future</td></tr>  
+<tr>
+<tr>
+    <td rowspan="3"><a href="2023/sprint-225-update.md" data-raw-source="[2 August 2023](2023/sprint-225-update.md)"> 2 August 2023</a></td>
+    <td>New Boards Hub on by default</td><td>Boards</td><td>Future</td></tr>
+    <td>Disable creation of classic pipelines for new organizations (pre-announcement)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Increased Azure Pipeline limits to align with the 4 MB maximum Azure Resource Manager (ARM) template size</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="8"><a href="2023/sprint-224-update.md" data-raw-source="[11 July 2023](2023/sprint-223-update.md)"> 11 July 2023</a></td>
+    <td>Alert dismissals for dependency scanning alerts in Advanced Security</td><td>General</td><td>Future</td></tr>
+    <td>Copy link to work item</td><td>Boards</td><td>Future</td></tr>
+    <td>Kubernetes tasks now support kubelogin</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updates to YAML cron schedules</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Disable a check</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improvements to Approvals REST API</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New toggles to control creation of classic pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Removing "Edit policies" permission to branch creator</td><td>Repos</td><td>Future</td></tr>  
+<tr>
+<tr>
     <td rowspan="8"><a href="2023/sprint-223-update.md" data-raw-source="[21 June 2023](2023/sprint-223-update.md)"> 21 June 2023</a></td>
     <td>Organization profile image</td><td>General</td><td>Future</td></tr>
     <td>Checks user experience improvements</td><td>Pipelines</td><td>Future</td></tr>
@@ -49,14 +86,19 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Introducing resolved as completed in burndown and burnup charts</td><td>Reporting</td><td>Future</td></tr>
 <tr>
 <tr>
-    <td rowspan="7"><a href="2023/sprint-222-update.md" data-raw-source="[6 June 2023](2023/sprint-222-update.md)"> 6 June 2023</a></td>
+    <td rowspan="6"><a href="2023/sprint-222-update.md" data-raw-source="[6 June 2023](2023/sprint-222-update.md)"> 6 June 2023</a></td>
     <td>GitHub Advanced Security for Azure DevOps (public preview)</td><td>General</td><td>N/A</td></tr>
     <td>Fixed a bug that allowed users to bypass restrict global personal access token (PAT) creation</td><td>General</td><td>Future</td></tr>
     <td>Markdown support for comments (private preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Improvements to YAML pipeline traceability</td><td>Pipelines</td><td>Future</td></tr>
     <td>Automatic tokens created for Kubernetes Service Connection</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Pipeline agents can be registered using a Service Principal</td><td>Pipelines</td><td>Future</td></tr>
     <td>Preview of macOS 13 Ventura for Azure Pipeline hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
+<tr>
+    <td rowspan="4"><a href="2023/sprint-221-update.md" data-raw-source="[9 May 2023](2023/sprint-221-update.md)"> 9 May 2023</a></td>
+    <td>Swimlane rules is generally available</td><td>Boards</td><td>Future</td></tr>
+    <td>Pipeline settings audit improvements</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pull Request widget for multiple repos is now generally available</td><td>Reporting</td><td>Future</td></tr>
+<tr>
 <tr>
     <td rowspan="3"><a href="2023/sprint-220-update.md" data-raw-source="[20 April 2023](2023/sprint-220-update.md)"> 20 April 2023</a></td>
     <td>Sticky "Save" and "Save and Close" button </td><td>Boards</td><td>Future</td></tr>
@@ -64,7 +106,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Analytics Views are now generally available</td><td>Reporting</td><td>Future</td></tr>
 <tr>
     <td rowspan="4"><a href="2023/sprint-219-update.md" data-raw-source="[31 March 2023](2023/sprint-219-update.md)"> 31 March 2023</a></td>
-    <td>Service principal and managed identity support in Azure DevOps </td><td>General</td><td>Future</td></tr>
+    <td>Service principal and managed identity support in Azure DevOps (public preview) </td><td>General</td><td>Future</td></tr>
     <td>REST API support for connecting GitHub repositories (private preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Swimlane rules (private preview) </td><td>Boards</td><td>Future</td></tr>
     <td>Pipeline Agent end of support for Debian 9, Fedora 32, macOS 10.14 and others</td><td>Pipelines</td><td>Future</td></tr>
@@ -183,10 +225,10 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Current project set as default scope for build access token in classic pipelines</td><td>Pipelines</td><td>Future</td></tr>
 </tr>
     <td rowspan="7"><a href="2022/sprint-205-update.md" data-raw-source="[27 June 2022](2022/sprint-205-update.md)"> 27 June 2022</a></td>
-    <td>Project Collection Administrators can opt-in for notifications related to personal access tokens found in a GitHub public repository</td><td>General</td><td>N/A</td></tr> 
+    <td>Project Collection Administrators can opt in for notifications related to personal access tokens found in a GitHub public repository</td><td>General</td><td>N/A</td></tr> 
     <td>Enforcing security validation for all Azure DevOps requests</td><td>General</td><td>N/A</td></tr>
     <td>Assigned To children in Kanban cards</td><td>Boards</td><td>2022</td></tr>
-    <td>General availability of Query by Parent Id</td><td>Boards</td><td>Future</td></tr>
+    <td>General availability of Query by Parent ID</td><td>Boards</td><td>Future</td></tr>
     <td>Support Group Managed Service Accounts as agent service account</td><td>Pipelines</td><td>2022</td></tr>
     <td>Informational runs</td><td>Pipelines</td><td>2022</td></tr>
     <td>Build Definition REST API retentionRules property is obsolete</td><td>Pipelines</td><td>2022</td></tr>
@@ -198,7 +240,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Preview of macOS 12 Monterey for Azure Pipeline hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
 </tr>
     <td rowspan="4"><a href="2022/sprint-203-update.md" data-raw-source="[4 May 2022](2022/sprint-203-update.md)"> 4 May 2022</a></td> 
-    <td>Query by Parent Id (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>Query by Parent ID (private preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Move to column position on Kanban Board</td><td>Boards</td><td>2022</td></tr>
     <td>Added "Will not Fix" value to Bug reason field</td><td>Boards</td><td>2022</td></tr>
     <td>Upstream cross-organization packages</td><td>Artifacts</td><td>N/A</td></tr>
@@ -251,7 +293,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Improved tenant switch requests reliability</td><td>General</td><td>N/A</td></tr>
     <td>Emphasize tags in Delivery Plans using colors</td><td>Boards</td><td>2022</td></tr>
     <td>Filter cards based on boolean field types in Delivery Plans</td><td>Boards</td><td>2022</td></tr>
-    <td>Work item title are always visible in Delivery Plan cards</td><td>Boards</td><td>2022</td></tr>
+    <td>Work item titles are always visible in Delivery Plan cards</td><td>Boards</td><td>2022</td></tr>
     <td>Show light green colored dependency icon for work items that have dependencies with no issues</td><td>Boards</td><td>2022</td></tr>
     <td>macOS-latest label will soon point to macOS-11 image</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Updated schedule for removal of Ubuntu 16.04 image on Microsoft-hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
@@ -408,7 +450,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Allow stakeholders to drag and drop work items</td><td>Boards</td><td>Future</td>
     </tr>
     <tr><td>Default branch name preference</td><td>Repos</td><td>Future</td></tr>
-    <tr><td>Updates to Mac OS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Updates to macOS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>[Feedback] Git Draft Pull Requests should not trigger the pipeline</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Multi-repo triggers for Azure Repos</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
@@ -534,7 +576,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Checkout multiple repositories in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Use GitHub Actions to trigger a run in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Updated ServiceNow integration with Azure Pipelines</td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td>Set VSTest tasks to fail if a minimum number of test are not run</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Set VSTest tasks to fail if a minimum number of tests are not run</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>UCS-4 support for Python 2.7</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Create bulk subscriptions in Azure Pipelines app for Slack and Microsoft Teams</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Create bulk subscriptions in Azure Repos app for Slack and Microsoft Teams</td><td>Repos</td><td>N/A</td></tr>
@@ -620,7 +662,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Granularity for automatic reviewers</td><td>Repos</td><td>2020</td></tr>
         <tr><td>Get latest Universal Package with Semantic Versioning (SemVer) wildcard</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>Azure Artifacts feeds in the Visual Studio Package Manager</td><td>Artifacts</td><td>2020</td></tr>
-        <tr><td>Create Azure Pipelines from VSCode</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Create Azure Pipelines from VS Code</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>New task for configuring Azure App Service app settings</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Azure App Service now supports Swap with preview</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>YAML templates for Python and .NET Functions apps</td><td>Pipelines</td><td>2020</td></tr>
@@ -642,7 +684,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Reactions on discussion comments</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Pin Azure Boards reports to the dashboard</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Azure Repos app for Slack</td><td>Repos</td><td>N/A</td></tr>
-        <tr><td>Configure upstreams in different organizations within an AAD tenant</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Configure upstreams in different organizations within an Azure AD tenant</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>Use Python Credential Provider to authenticate pip and twine with Azure Artifacts feeds</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>Pipelines caching improvements</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Increase in gates timeout limit and frequency</td><td>Pipelines</td><td>2020</td></tr>    
@@ -788,7 +830,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td>Dark theme general availability</td><td>General</td><td>2019.1</td>
         </tr>
         <tr><td>Query work based on Azure Active Directory groups</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Share you team's board using a badge</td><td>Boards</td><td>2019.1</td></tr>
+        <tr><td>Share your team's board using a badge</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>Query for work relative to the start of the day, week, month, or year</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>Export query results to a CSV file</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>New merge types for completing pull requests</td><td>Repos</td><td>2019.1</td></tr>
@@ -843,7 +885,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Skip continuous integration (CI) for a commit</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Contribution point for variables in the create release dialog</td><td>Pipelines</td><td>2019.1</td></tr>
-        <tr><td>Support for Python Function Apps in DevOps projects</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Support for Python Function Apps in DevOps Projects</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Schedule releases on source or pipeline change</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Build and release log viewer enhancements</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Publish to Azure Service Bus session queues</td><td>Pipelines</td><td>2019.1</td></tr>
@@ -895,7 +937,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Change build numbers, upload, and download artifacts in forked repository builds</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>New option in &#39;Publish Test Results&#39; task to fail build on failed tests</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Updates to the Azure portal for creating an Azure DevOps project</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Use the Azure portal to set up and deploy to a CosmosDB database</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Use the Azure portal to set up and deploy to a Cosmos DB database</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Setup builds and release pipelines for Functions in Azure portal</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Package usage stats</td><td>Artifacts</td><td>2019.1</td></tr>
         <tr><td>Monospaced font for Wiki markdown editor</td><td>Wiki</td><td>2019.1</td></tr>
@@ -971,7 +1013,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Change the target branch of a pull request</td><td>Repos</td><td><em>2019</em></td></tr>
         <tr><td>Protect Git repos with cross platform compatibility settings</td><td>Repos</td><td>N/A</td></tr>
         <tr><td>Expanded search box</td><td>General</td><td><em>2019</em></td></tr>
-        <tr><td>Support AAD users in MSA accounts</td><td>Administration</td><td>N/A</td></tr>
+        <tr><td>Support Azure AD users in MSA accounts</td><td>Administration</td><td>N/A</td></tr>
         <tr>
             <td rowspan="10"><a href="2018/sprint-140-update.md" data-raw-source="[20 September 2018](2018/sprint-140-update.md)">20 September 2018</a></td>
             <td>Control-specific build dependencies using container jobs</td><td>Pipelines</td><td>Future</td>
@@ -3032,7 +3074,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td>Test – Automated testing for SCVMM and VMWare</td>
+            <td>Test – Automated testing for SCVMM and VMware</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
@@ -3280,7 +3322,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td>Release Management – Provision VMs or run a PS script using SCVMM extension</td>
+            <td>Release Management – Provision VMs or run a PowerShell script using SCVMM extension</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
@@ -3529,7 +3571,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
-            <td>On-Premises support for Exploratory Testing extension:</td>
+            <td>On-premises support for Exploratory Testing extension:</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>

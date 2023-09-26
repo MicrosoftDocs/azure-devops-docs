@@ -76,9 +76,6 @@
   - name: Fix "Ordering backlog items is disabled"
     href: backlogs/resolve-backlog-reorder-issues.md
     displayname: reorder, disable, nest, natural hierarchy, in progress
-  - name: Work item form caching
-    href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md
-    displayname: IndexDB, rule
 - name: Field reference
   items:
   - name: Work item field index

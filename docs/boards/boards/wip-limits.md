@@ -49,7 +49,7 @@ Respecting WIP limits means teams don't pull items into a column if doing so cau
 
 Although simple in theory, keeping within WIP limits can force individuals, teams, and organizations out of their comfort zone. Team members who like to multitask might feel constrained. Others might find themselves without work as they wait for work to complete at an upstream stage. 
 
-To gain the advantages of constraining work-in-progress, have your team meet frequently to discuss the process changes taking place. Consider hosting discussions around some of the [challenges and solutions to support successful implementation of WIP limits](best-practices-kanban.md#practices), in the following sections.
+To gain the advantages of constraining work-in-progress, have your team meet frequently to discuss the process changes taking place.
 
 <a id="Keep within WIP" />
 
@@ -85,7 +85,7 @@ Common wastes in software development include:
 * Insufficient requirements
 * Slow or poor communication
 
-Eliminating waste calls for team discussions to identify causes and solutions acceptable to the team. Along with addressing the [challenges and solutions posed by WIP limits](best-practices-kanban.md#practices), the team may decide to adjust their workflow process or WIP limits. 
+Eliminating waste calls for team discussions to identify causes and solutions acceptable to the team.
 
 <a id="Set" />
 
@@ -129,10 +129,42 @@ With an understanding of how you want to use WIP limits, do the following steps 
 4. When you're done, select **Save**.  
 ::: moniker-end
 
+## WIP limits, challenges, and solutions
+
+Teams occasionally exceed WIP limits by one or two items. However, if your team frequently exceeds the limits by three or more items, they should review processes or adjust the limits.
+
+After a team has worked with WIP limits for several weeks, discuss the challenges team members have. Then, decide which solutions they'd like to use and adjust the limits as needed. The following list, although not exhaustive, indicates some of the common challenges teams come across and proven solutions to overcome them. 
+
+### WIP challenges
+
+* **Social dynamics.** When it comes to following rules, team members can feel challenged. Some naturally want to rebel. Others don't see that the rule applies to them or don't see what they do as breaking the rules. Some team members may take on extra work that's outside the scope of what's been agreed to. And, still others don't want to give up multitasking as they believe it's the key to their productivity and individual achievement. 
+
+* **Variability of work in progress.** Wide variability in the size of work items&mdash;users stories and bugs—can negatively influence the overall workflow. For example, items with estimates that vary in size from 4 hours to 14 days, or 2 to 55 story points, can't be counted the same when it comes to constraining work in progress.
+
+* **Ignoring systemic problems.** Instead of addressing workflow problems when bottlenecks occur, teams soldier on, putting in more time to overcome the bottleneck. 
+
+* **Culture change.** Adopting WIP limits introduces changes to the system, culture, and team. 
+
+### Solutions for managing WIP
+
+* **Build a culture of team productivity.** Address the natural tension that exists between individual productivity versus team productivity. Identify ways in which team members can enhance the overall productivity of the team and workflow process. 
+
+* **Size work to minimize variability.** Before work starts on any item, the team should discuss the overall size of work required and determine if it can be broken down into smaller tasks. 
+
+* **Focus on the flow of high priority items.** When idle, team members ask how they can help move an upstream item forward. When blocked or challenged to deliver an item on time, team members ask for help with completing an item.
+
+* **Resource team capacity for each work stage.** Bottlenecks can occur when there aren't enough specialists who work in a particular stage. Determine ways to either increase team skills within each work stage, or add resources as needed to meet an understaffed work stage.
+
+* **Build shared understanding.** Continuously strive to increase the team's understanding of how to work using Kanban practices. Take actions that allow team members to contribute to process changes. Consider scheduling regular retrospectives or team meetings to discuss what works well and what needs changing. Document team policies to limit ambiguity.
+
+* **Use metrics to adjust processes.** Periodically check Kanban metrics of work in progress and lead time to determine when changes need to be made. 
+
+* **Manage culture changes mindfully.** People want to do their best work&mdash;a core tenet underlying Kanban and its associated disciplines. Apply change management principles as you adopt new practices. Create greater ownership within the team for the success of implementing WIP limits.
+
 ## Related articles
 
 - [Split columns](split-columns.md)  
 - [Speed up work](expedite-work.md)  
-- [Definition of Done](definition-of-done.md)  
+- [Add the Definition of Done to a column](add-columns.md#definition-of-done)  
 - [Customize cards](../../boards/boards/customize-cards.md)  
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  

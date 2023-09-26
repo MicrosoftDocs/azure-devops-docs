@@ -44,6 +44,10 @@ You can combine scheduled and event-based triggers in your pipelines, for exampl
 
 Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#cron-syntax).
 
+::: moniker-end
+
+::: moniker range=">azure-devops-2019 < azure-devops-2022"
+
 ```yaml
 schedules:
 - cron: string # cron syntax defining a schedule
@@ -53,6 +57,26 @@ schedules:
     exclude: [ string ] # which branches to exclude from the schedule
   always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2022"
+
+```yaml
+schedules:
+- cron: string # cron syntax defining a schedule
+  displayName: string # friendly name given to a specific schedule
+  branches:
+    include: [ string ] # which branches the schedule applies to
+    exclude: [ string ] # which branches to exclude from the schedule
+  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
+  batch: boolean # Whether to run the pipeline if the previously scheduled run is in-progress; the default is false.
+  # batch is available in Azure DevOps Server 2022.1 and higher
+```
+
+::: moniker-end
+
+::: moniker range=">azure-devops-2019"
 
 Scheduled pipelines in YAML have the following constraints.
 
@@ -125,6 +149,63 @@ schedules:
 ```
 
 Because `release` was added to the branch filters in the `main` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `release` branch is added to the branch filters in the YAML file **in the release branch** will the scheduled build be added to the scheduler.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2022"
+
+### Batch considerations for scheduled triggers
+
+::: moniker-end
+
+::: moniker range="=azure-devops-2022"
+
+> [!NOTE]
+> The `batch` property is available on Azure DevOps Server 2022.1 and higher.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2022"
+
+The `batch` property configures whether to run the pipeline if the previously scheduled run is in-progress; the default is `false`. This is regardless of the version of the pipeline repository.
+
+The following table describes how `always` and `batch` interact.
+
+| Always | Batch | Behavior |
+|--------|-------|----------|
+| `false` | `false` | Pipeline runs only if there's a change with respect to the last successful scheduled pipeline run. |
+| `false` | `true` | Pipeline runs only if there's a change with respect to the last successful scheduled pipeline run, and there's no in-progress scheduled pipeline run. |
+| `true` | `false` | Pipeline runs according to the cron schedule. |
+| `true` | `true` | Pipeline runs according to the cron schedule. |
+
+> [!IMPORTANT]
+> When `always` is `true`, the pipeline runs according to the cron schedule, even when `batch` is `true`.
+
+### Build.CronSchedule.DisplayName variable
+
+::: moniker-end
+
+::: moniker range="=azure-devops-2022"
+
+> [!NOTE]
+> The `Build.CronSchedule.DisplayName` variable is available on Azure DevOps Server 2022.1 and higher.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2022"
+
+When a pipeline is running due to a cron scheduled trigger, the pre-defined `Build.CronSchedule.DisplayName` variable contains the `displayName` of the cron schedule that triggered the pipeline run.
+
+Your YAML pipeline may contain multiple cron schedules, and you may want your pipeline to run different stages or jobs based on which cron schedule runs. For example, you have a nightly build and a weekly build, and you want to run a certain stage only during the nightly build. You can use the `Build.CronSchedule.DisplayName` variable in a job or stage condition to determine whether to run that job or stage.
+
+```yml
+- stage: stage1
+  # Run this stage only when the pipeline is triggered by the 
+  # "Daily midnight build" cron schedule
+  condition: eq(variables['Build.CronSchedule.DisplayName'], 'Daily midnight build')
+```
+
+For more examples, see [schedules.cron examples](/azure/devops/pipelines/yaml-schema/schedules-cron#examples).
 
 ::: moniker-end
 

@@ -3,8 +3,8 @@ title: Build and push Docker images to Azure Container Registry with Docker temp
 description: Build and push Docker images with Azure Pipelines and Docker templates
 ms.topic: tutorial
 ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
-ms.author: atulmal
-author: azooinmyluggage
+ms.author: ericvan
+author: geekzter
 ms.date: 03/01/2022
 monikerRange: 'azure-devops'
 ---

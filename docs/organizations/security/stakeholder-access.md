@@ -219,7 +219,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
       - Change the priority of an item within a backlog
       - Change fields on cards on a Taskboard, except for State field
       - View or set team capacity 
-      - Add tasks a sprint backlog 
+      - Add tasks to a sprint backlog 
    :::column-end:::
 :::row-end:::
 :::row:::

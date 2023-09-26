@@ -94,7 +94,7 @@ For more information about changing your project settings, see the following art
 	> [!div class="mx-imgBorder"]  
 	> ![Create account dialog for Azure DevOps with valid email address.](media/acquisition/create-account-1.png)
 
-	Or, you choose **Get a new email address** to  create an Outlook or Hotmail account at this time. To learn more, see [create a Microsoft account](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create). 
+	Or, you choose **Get a new email address** to  create an Outlook or Hotmail account at this time. For more information, see [create a Microsoft account](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create). 
 
 1. Enter the password you want to use with your Azure Boards Microsoft account and then choose **Next**. 
 
@@ -242,7 +242,7 @@ Your first project is automatically created using the Basic process and a Git re
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Open Projects.](../../organizations/projects/media/create-project/select-new-project.png)  
 
-2. Fill out the form, expand **Advanced** to choose the options available for [**Version control**](../../repos/tfvc/comparison-git-tfvc.md) and [**Work item process**](../work-items/guidance/choose-process.md). 
+2. Complete the form, expand **Advanced** to choose the options available for [**Version control**](../../repos/tfvc/comparison-git-tfvc.md) and [**Work item process**](../work-items/guidance/choose-process.md). 
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of create project with Agile process.](media/sign-up/create-agile-git-project.png)  
@@ -270,7 +270,7 @@ You can add and invite others to work on your project by adding their email addr
 		- **Basic**: Assign to users who must have access to all Azure Boards features. You can grant up to five users <strong>Basic</strong> access for free.  
         - **Stakeholder**: Assign to users who will have limited access to features to view, add, and modify work items. You can assign an unlimited amount of users Stakeholder access for free.   
 	- **Add to project**: Select the project you named in the preceding procedure.  
-    - **Azure DevOps Groups**: Select one of the following security groups, which will determine the permissions the users have to perform select tasks (To learn more, see [Default permissions and access for Azure Boards](permissions-access-boards.md).):  
+    - **Azure DevOps Groups**: Select one of the following security groups, which will determine the permissions the users have to perform select tasks (For more information, see [Default permissions and access for Azure Boards](permissions-access-boards.md).):  
         - **Project Readers**: Assign to users who only require read-only access.   
         - **Project Contributors**: Assign to users who will contribute fully to the project.  
         - **Project Administrators**: Assign to users who will configure project resources.  

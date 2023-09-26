@@ -40,8 +40,8 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 * Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * Get added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
-* To add work items and exercise all board features, you must be granted **Basic** access or higher. Users granted **Stakeholder** accesses have limited access to features. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+* To add work items and exercise all board features, you must be granted **Basic** access or higher. Users granted **Stakeholder** accesses have limited access to features. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
 ::: moniker range=">= azure-devops-2022"
 
@@ -81,7 +81,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot that shows how to Choose another sprint.](media/add-tasks/select-specific-sprint-agile.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md).
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md).
 
 ::: moniker-end
 
@@ -103,7 +103,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot that shows how to Choose another sprint, Azure DevOps 2019.](media/add-tasks/select-specific-sprint-agile.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md).
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md).
 
 ::: moniker-end
 
@@ -289,7 +289,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Taskboard, Group by people.](media/taskboard/group-by-people-agile.png)
 
-1. To filter on the tasks for a specific team member, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::, and then select their name from the **Assigned to** filter box. To learn more, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
+1. To filter on the tasks for a specific team member, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::, and then select their name from the **Assigned to** filter box. For more information, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Taskboard, Filter on tasks for a specific team member.](media/taskboard/filter-by-a-team-member.png)

@@ -118,6 +118,5 @@ Using release pipelines, you can deploy your build artifacts to your IIS servers
 
 ## Related articles
 
-- [Deploy to Linux VMs](./deploy-linuxvm-deploygroups.md)
 - [Deploy from multiple branches](../..//release/deploy-multiple-branches.md)
 - [Deploy pull request Artifacts](../../release/deploy-pull-request-builds.md)
