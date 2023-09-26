@@ -114,7 +114,7 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
 1. Select the **Manage Connections** icon in Team Explorer, and then **Connect to a Project**.
 
-   :::image type="content" source="media/team-explorer-connect-to-project-visual-stuido-2022.png" alt-text="Screenshot of Connect to projects highlighted for selection.":::  
+   :::image type="content" source="media/team-explorer-connect-to-project-visual-studio-2022.png" alt-text="Screenshot of Connect to projects highlighted for selection.":::  
 
    All the projects that you can connect to are displayed, along with the repos in those projects.
 
@@ -207,7 +207,7 @@ Your client remembers the set of connections you've configured. You can switch f
 
 1. Select the **Manage Connections** icon in Team Explorer, and then **Connect to a Project**.
 
-   :::image type="content" source="media/team-explorer-connect-to-project-visual-stuido-2022.png" alt-text="Screenshot showing Connect to projects highlighted for selection.":::
+   :::image type="content" source="media/team-explorer-connect-to-project-visual-studio-2022.png" alt-text="Screenshot showing Connect to projects highlighted for selection.":::
 
 2. Select a different user or select **Add an account** to access a project using different credentials.
 
