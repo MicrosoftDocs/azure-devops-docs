@@ -200,15 +200,21 @@ Note that most new features we are shipping in Boards are only available in the 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (general availability)</a></td>
          <td>Boards</td>
-         <td>2023 Q3</td>
+         <td>2023 Q4</td>
          <td>Future</td>
       </tr>                
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automated team work item rules (preview)](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules (preview)</a></td>
          <td>Boards</td>
          <td>2023 Q3</td>
          <td>Future</td>
-      </tr>         
+      </tr>    
+       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules (general availability)</a></td>
+         <td>Boards</td>
+         <td>2023 Q4</td>
+         <td>Future</td>
+      </tr>       
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New boards hub on by default.](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
          <td>Boards</td>
@@ -367,7 +373,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>      
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules (general availability)</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
