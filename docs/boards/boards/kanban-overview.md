@@ -47,7 +47,7 @@ See the following table of terms and available tools used in tracking work using
 |Card reordering  |Card reordering lets you change the priority order and forces cards to maintain the backlog priority when you drag and drop them on the board. For more information, see [Reorder cards](customize-cards.md#reorder-cards).          |
 |Cumulative flow diagram (CFD)   | The in-context CFD report shows the count of items in each Kanban column for the past 30 weeks or less. From this chart, you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. For more information, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow.md).       |
 |Cycle time  |Cycle time is the time calculated for a work item from first entering an *In Progress* category state to entering a *Completed* state category. For more information, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). You can gain valuable metrics and visualize the cycle time for a team and a configurable time period by [adding the Cycle Time widget to the dashboard](../../report/dashboards/cycle-time-and-lead-time.md). |
-|Definition of done  | Criteria that a team specifies for each stage of work to share and standardize on what makes up work being done at that stage. For more information, see [Kanban best practices, working software and the Definition of Done](best-practices-kanban.md#dod).         |
+|Definition of done  | Criteria that a team specifies for each stage of work to share and standardize on what makes up work being done at that stage.         |
 |Kanban board   | An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Azure DevOps provides a Kanban board for each product and portfolio backlog. For more information, see [Kanban basics](../../boards/boards/kanban-overview.md) and [Kanban board features and epics](../../boards/boards/kanban-epics-features-stories.md) and [Track work in swimlanes](expedite-work.md#track-work-in-swimlanes).        |
 |Kanban columns    | A Kanban column maps to a stage of work. The default columns map to the workflow states of the work item types that appear on the Kanban board. You configure the columns to map workflow states of your team. For more information, see [Map the flow](kanban-quickstart.md#map-the-flow-of-how-your-team-works).    |
 |Lead time    | Lead time is the time calculated for a work item from first entering a *Proposed* category state to entering a *Completed* state category. For more information, see  [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). You can gain valuable metrics and visualize the lead time for a team and a configurable time period by [adding the Lead Time widget to the dashboard](../../report/dashboards/cycle-time-and-lead-time.md). |
@@ -81,7 +81,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 > | **Board**    | [Switch to Kanban board view](kanban-quickstart.md)            |  
 > | ![Kanban filter icon](../media/icons/kanban-filter-icon.png) | [Filter by keywords, tags, or fields](../backlogs/filter-backlogs-boards-plans.md)     | 
 > | ![Live updates icon](../media/icons/live-updates-icon.png)  | [Enable live updates](kanban-quickstart.md#enable-live-updates)  |
-> | ![Settings icon](../media/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../../boards/boards/customize-cards.md)  &#124; [Card reordering](../../boards/boards/customize-cards.md#reorder-cards) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../../organizations/settings/select-backlog-navigation-levels.md) &#124; [Working days](../../organizations/settings/set-working-days.md) &#124; [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)   |
+> | ![Settings icon](../media/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../../boards/boards/customize-cards.md)  &#124; [Card reordering](../../boards/boards/customize-cards.md#reorder-cards) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../../organizations/settings/select-backlog-navigation-levels.md) &#124; [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)   |
 > | ![full screen icon](../media/icons/full-screen-icon.png) / ![exit full screen icon](../media/icons/exit-full-screen-icon.png) | Enter or exit full screen mode      |  
 
 ### Open keyboard shortcuts
@@ -107,7 +107,7 @@ Your Kanban board is highly configurable to support your team's workflow. Each t
   :::column span="1":::
    - [Manage columns](add-columns.md)  
    - [Set WIP limits](wip-limits.md)  
-   - [Set Definition of Done](definition-of-done.md)  
+   - [Set Definition of Done](add-columns.md#add-the-definition-of-done-to-a-column)  
    - [Add swimlanes](expedite-work.md)
    - [Reorder cards](customize-cards.md#reorder-cards)
    - [Enable backlog and board levels](../../organizations/settings/select-backlog-navigation-levels.md)
@@ -160,7 +160,7 @@ For more information, see [Manage columns](add-columns.md).
 
 As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. 
 
-For more information about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
+For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
 ## Customize your project and board inheritance
 

@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: jukullam
 author: juliakm 
 monikerRange: 'azure-devops'
-ms.date: 04/21/2023
+ms.date: 09/20/2023
 ---
 
 # Dependency scanning 
@@ -47,7 +47,7 @@ An alert’s state is automatically updated to `Closed` when the vulnerable comp
 
 ![Screenshot of viewing closed dependency scanning alerts](./media/dependency-scanning-alerts-closed.png)
 
-If for whatever reason, you turn off Advanced Security for your repository, you'll lose access to the results in the Advanced Security tab and build task. The build task won't fail, but any results from builds run with the task while Advanced Security is disabled are hidden and unretained. 
+If you turn off Advanced Security for your repository, you'll lose access to the results in the Advanced Security tab and build task. The build task won't fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
 
 ### Alert details
 
@@ -459,10 +459,14 @@ To dismiss an alert:
 
 ![Screenshot showing how to dismiss a dependency scanning alert](./media/dependency-scanning-dismiss-alert.png)
 
-This action only dismisses the alert for your selected branch. Other branches that may contain the same vulnerability stays active until otherwise acted upon. Any alert that has been previously dismissed can be manually re-opened.
+This action only dismisses the alert for your selected branch. Other branches that may contain the same vulnerability stays active until otherwise acted upon. Any alert that has been previously dismissed can be manually reopened.
 
 ## Troubleshooting dependency scanning 
 
+### Dependency scanning task timeout 
+
+The default time that the dependency scanning task runs before timing out is 300 seconds, or 5 minutes. If the task is timing out prior to completion, you can set a pipeline variable `DependencyScanning.Timeout`, which expects an integer representing seconds, such as `DependencyScanning.Timeout: 600`. Anything under the default timeout of 300 seconds has no effect. 
+
 ### Break-glass scenario for build task
 
-If the dependency scanning build task is blocking a successful execution of your pipeline and you need to urgently skip the build task, you can set a pipeline variable `DependencyScanning.Skip: false`.  
+If the dependency scanning build task is blocking a successful execution of your pipeline and you need to urgently skip the build task, you can set a pipeline variable `DependencyScanning.Skip: true`.  

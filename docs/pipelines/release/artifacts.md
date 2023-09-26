@@ -3,8 +3,8 @@ title: Release pipelines and artifact sources
 description: Understand release pipelines and the different artifact sources.
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.topic: conceptual
-ms.author: shashban
-author: shashban
+ms.author: sandrica
+author: silviuandrica
 ms.date: 01/12/2023
 ms.custom: contperf-fy20q4, seodec18, engagement-fy23, devx-track-jenkins
 monikerRange: '<= azure-devops'

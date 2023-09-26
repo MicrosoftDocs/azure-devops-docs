@@ -7,7 +7,7 @@ ms.date: 05/02/2023
 ---
 
 
-When you create a project, you choose a *process* or *process template* based on the *process model* for which your organization or collection was created. Before you choose a process for your project, understand the following terms: 
+When you create a project, you choose a *process* or *process template* based on the *process model* for which your organization or collection was created. Before you choose a process for your project, you should understand the following terms. 
 
 |Term  |Description  |
 |---------|---------|

@@ -31,20 +31,20 @@ As your organization grows, you want your tools to scale to support your growing
 
 Enterprise project managers often have a portfolio of projects that they manage. These projects are typically developed by several teams. By creating a hierarchy of teams, portfolio managers can gain insight into the tools being developed by their teams. 
 
-To learn more, see [Manage portfolios](portfolio-management.md).
+For more information, see [Manage portfolios](portfolio-management.md).
 
 
 ## Delivery plans 
 
 Delivery plans provide visibility into features under development by several teams across several sprints. With Delivery Plans, portfolio managers can review the schedule of stories or features their teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
-To learn more, see [Review delivery plans](review-team-plans.md).
+For more information, see [Review delivery plans](review-team-plans.md).
 
 ## Team dashboards
 
 Each team can construct several dashboards to track and monitor their progress. Also, portfolio managers can create dashboards to monitor progress across several teams. 
 
-To learn more, see [Add and manage dashboards](../../report/dashboards/dashboards.md?toc=/azure/devops/boards/plans/toc.json). 
+For more information, see [Add and manage dashboards](../../report/dashboards/dashboards.md?toc=/azure/devops/boards/plans/toc.json). 
 
 
 

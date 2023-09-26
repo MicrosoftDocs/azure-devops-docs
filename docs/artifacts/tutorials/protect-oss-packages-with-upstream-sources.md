@@ -27,9 +27,15 @@ In this tutorial, you will:
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Artifacts**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot showing how to navigate to Azure Artifacts.":::
+1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
+
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
+
+1. Provide a name for your feed, and choose its visibility. Make sure you check the **Include packages from common public sources** checkbox to enable upstream sources, and then select **Create** when you're done.
+
+    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window.":::
 
 ::: moniker-end
 
@@ -39,37 +45,13 @@ In this tutorial, you will:
 
     :::image type="content" source="../media/goto-feed-hub.png" alt-text="Screenshot showing how to navigate to Azure Artifacts - TFS.":::
 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
-2. Select **Create Feed** to create a new feed.
-
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-2. Select **New Feed** to create a new feed.
+1. Select **New Feed** to create a new feed.
 
     :::image type="content" source="../media/new-feed-button.png" alt-text="Screenshot showing the create feed button - TFS.":::
 
-::: moniker-end
+1. Give your feed a **Name** and a **Description**, and set up **who can read** and **who can contribute**. Make sure you check the **Include external packages** checkbox, and then select **Create** when you're done.
 
-::: moniker range=">= azure-devops-2019"
-
-3. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
-
-    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window.":::
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-3. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
-
-    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window - TFS.":::
+    :::image type="content" source="../media/create-new-feed-dialog.png" alt-text="A screenshot showing how to create a new feed window in TFS.":::
 
 ::: moniker-end
 
@@ -140,27 +122,6 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     [global]
     index-url=https://pkgs.dev.azure.com/ORGANIZATION-NAME/_packaging/FEED-NAME/pypi/simple/
     ```
-
-#### [Twine](#tab/twine/)
-
-1. Select **Artifacts**, and then select your feed from the dropdown list.
-
-1. Select **Connect to feed**, and then select **twine** under the Python section.
-
-    :::image type="content" source="../media/project-setup-twine.png" alt-text="A screenshot showing how to connect to a feed with twine projects.":::
-
-1. Add a .pypirc file to your home directory and paste the following snippet:
-
-    ```command
-    [distutils]
-    Index-servers = FEED-NAME
-    
-    [FEED-NAME]
-    Repository = https://pkgs.dev.azure.com/ORGANIZATION-NAME/_packaging/FEED-NAME/pypi/upload/
-    ```
-
-> [!TIP]
-> If you already have a .pypirc file, remove the [pypi] section if your file contains credentials.
 
 #### [Maven](#tab/maven/)
 
@@ -249,8 +210,6 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 
 Now that you enabled upstream sources and set up your configuration file, we can run the package restore command to query the upstream source and retrieve the upstream packages.
 
-We recommend clearing your local cache first before running the *nuget restore*. Azure Artifacts will have a saved copy of any packages you installed from upstream.
-
 # [npm](#tab/npmrestore)
 
 Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
@@ -262,23 +221,53 @@ npm install --force
 > [!NOTE]
 > The `--force` argument will force pull remotes even if a local copy exists. 
 
-Your feed now should contain any packages you saved from the upstream source.
+Your feed now should have a saved copy of any packages you installed from upstream.
 
 # [NuGet](#tab/nugetrestore)
 
-- **Clear your local cache**:
+1. Clear your local cache:
 
     ```Command
     nuget locals -clear all
     ```
 
-- **Restore packages**:
+1. Restore your NuGet packages:
 
     ```Command
     nuget.exe restore
     ```
 
-Your feed now should contain any packages you saved from the upstream source.
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Pip](#tab/piprestore)
+
+Run this command in your project directory:
+
+```Command
+pip install
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Maven](#tab/mavenrestore)
+
+Run this command in your project directory:
+
+```Command
+mvn install
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
+
+# [Gradle](#tab/gradlerestore)
+
+Run this command in your project directory:
+
+```Command
+gradle build
+```
+
+Your feed now should have a saved copy of any packages you installed from upstream.
 
 - - -
 

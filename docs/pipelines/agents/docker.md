@@ -217,7 +217,8 @@ Next, create the Dockerfile.
           iputils-ping \
           jq \
           lsb-release \
-          software-properties-common
+          software-properties-common \
+          libicu66
 
       RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
@@ -544,11 +545,11 @@ Now your agents will run the AKS cluster.
 
 Allow specifying MTU value for networks used by container jobs (useful for docker-in-docker scenarios in k8s cluster).
 
-You need to set the environment variable AGENT_MTU_VALUE to set the MTU value, and then restart the self-hosted agent. You can find more about agent restart [here](./windows-agent.md?#how-do-i-restart-the-agent) and about setting different environment variables for each individual agent [here](./windows-agent.md?#how-do-i-set-different-environment-variables-for-each-individual-agent).
+You need to set the environment variable AGENT_DOCKER_MTU_VALUE to set the MTU value, and then restart the self-hosted agent. You can find more about agent restart [here](./windows-agent.md?#how-do-i-restart-the-agent) and about setting different environment variables for each individual agent [here](./windows-agent.md?#how-do-i-set-different-environment-variables-for-each-individual-agent).
 
 This allows you to set up a network parameter for the job container, the use of this command is similar to the use of the next command while container network configuration:
 
-```-o com.docker.network.driver.mtu=AGENT_MTU_VALUE```
+```-o com.docker.network.driver.mtu=AGENT_DOCKER_MTU_VALUE```
 
 ## Mounting volumes using Docker within a Docker container
 

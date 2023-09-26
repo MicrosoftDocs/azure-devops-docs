@@ -117,8 +117,8 @@ You can filter for work items by the date on which they were changed or for a sp
 
 ### Tips for using the query editor
 
-- Type the complete word or phrase that is specified in the **History** field of those work items that you want to find.
-- Enter the full text for the word that you want to search. The **History** field is indexed for full-text search. If you enter only a partial word, the query won't return work items that contain the full word. For example, if the **History** field contains the phrase *reproducible behavior* and you search for *repro*, the work item won't be found. However, if you search for the complete word *reproducible*, the work item will be found. You can also search for the string with a wild card, such as `repro*`. 
+- Enter the complete word or phrase that is specified in the **History** field of those work items that you want to find.
+- Enter the full text for the word that you want to search. The **History** field is indexed for full-text search. If you enter only a partial word, the query won't return work items that contain the full word. For example, if the **History** field contains the phrase *reproducible behavior* and you search for *repro*, the work item won't be found. However, if you search for the complete word *reproducible*, the work item can be found. You can also search for the string with a wild card, such as `repro*`. 
 - The query editor ignores common words or stop words as defined in  [Configure and Manage Stopwords and Stoplists for Full-Text Search](/sql/relational-databases/search/configure-and-manage-stopwords-and-stoplists-for-full-text-search).
 - On the query editor toolbar, choose ![Run query](../media/icons/run_query.png) or ![Run query, earlier version](../media/icons/run_query_te.png) icon and confirm that your query returns expected results. 
 - If you don&#39;t receive the results you expect, adjust the word or phrase that you entered, and run the query again. 
@@ -332,7 +332,7 @@ You can use the following fields to filter queries and create reports. Several o
    <a id="test-suite-audit"/>Test Suite Audit
    :::column-end:::
    :::column span="2":::
-   Tracks other operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.  
+   Tracks other operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There's a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.  
    Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
    :::column-end:::
    :::column span="1":::

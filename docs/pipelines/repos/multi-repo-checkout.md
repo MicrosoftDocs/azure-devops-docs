@@ -248,7 +248,7 @@ You can trigger a pipeline when an update is pushed to the `self` repository or 
 - You keep your YAML file in a separate repository from the application code. You want to trigger the pipeline every time an update is pushed to the application repository.
 
 > [!IMPORTANT]
-> Repository resource triggers only work for Azure Repos Git repositories in the same organization at present. They do not work for GitHub or Bitbucket repository resources.
+> Repository resource triggers only work for Azure Repos Git repositories in the same organization and when the `self` repository type is Azure Repos Git. They do not work for GitHub or Bitbucket repository resources.
 >
 > `batch` is not supported in repository resource triggers.
 
@@ -318,7 +318,7 @@ You can also trigger the pipeline when you create or update a pull request in an
 
 When you check out multiple repositories, some details about the `self` repository are available as [variables](../build/variables.md).
 When you use multi-repo triggers, some of those variables have information about the triggering repository instead.
-Details about all of the repositories consumed by the job are available as a [template context object](../process/templates.md#context) called `resources.repositories`.
+Details about all of the repositories consumed by the job are available as a [template context object](../process/template-expressions.md#context) called `resources.repositories`.
 
 For example, to get the ref of a non-`self` repository, you could write a pipeline like this:
 

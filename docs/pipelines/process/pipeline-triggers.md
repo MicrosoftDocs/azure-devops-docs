@@ -27,7 +27,7 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 ## Configure pipeline resource triggers
 
-To trigger a pipeline upon the completion of another pipeline, configure a [pipeline resource](resources.md#define-a-pipelines-resource) trigger.
+To trigger a pipeline upon the completion of another pipeline, configure a [pipeline resource](resources.md#define-a-pipelines-resource) trigger. 
 
 The following example configures a pipeline resource trigger so that a pipeline named `app-ci` runs after any run of the `security-lib-ci` pipeline completes.
 
@@ -68,6 +68,8 @@ If the triggering pipeline and the triggered pipeline use the same repository, b
 
 > [!NOTE]
 > In some scenarios, the default branch for manual builds and scheduled builds doesn't include a `refs/heads` prefix. For example, the default branch might be set to `main` instead of to `refs/heads/main`. In this scenario, *a trigger from a different project doesn't work*. If you encounter issues when you set `project` to a value other than the target pipeline's, you can update the default branch to include `refs/heads` by changing its value to a different branch, and then by changing it back to the default branch you want to use.
+
+Configuring pipeline completion triggers is not supported in YAML templates. You can still define pipeline resources in templates.
 
 ## Branch filters
 
@@ -156,7 +158,7 @@ A typical scenario in which the pipeline completion trigger doesn't fire is when
 
 ## Combining trigger types
 
-When you specify both CI triggers and pipeline triggers in your pipeline, you can expect new runs to be started every time a push is made that matches the filters the CI trigger, and a run of the source pipeline is completed that matches the filters of the pipeline completion trigger. 
+When you specify both CI triggers and pipeline triggers in your pipeline, you can expect new runs to be started every time a push is made that matches the filters of the CI trigger, and a run of the source pipeline is completed that matches the filters of the pipeline completion trigger. 
 
 For example, consider two pipelines named `A` and `B` that are in the same repository, both have CI triggers, and `B` has a pipeline completion trigger configured for the completion of pipeline `A`. If you make a push to the repository:
 

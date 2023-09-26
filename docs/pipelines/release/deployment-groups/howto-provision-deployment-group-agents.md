@@ -32,7 +32,7 @@ For information about agents and pipelines, see:
 
 * [Parallel jobs in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
 * [Parallel jobs in Azure Pipelines](../../licensing/concurrent-jobs.md).
-* [Pricing for Azure Pipelines features](https://visualstudio.microsoft.com/team-services/pricing/)
+* [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
 <a name="runscript"></a>
 
@@ -140,7 +140,7 @@ For a Windows VM, create an ARM template and add a resources element under the
         "TeamProject": "[parameters('TeamProject')]",
         "DeploymentGroup": "[parameters('DeploymentGroup')]",
         "AgentName": "[parameters('AgentName')]",
-        "AgentMajorVersion": "auto|N",
+        "AgentMajorVersion": "auto|2|3",
         "Tags": "[parameters('Tags')]"
       },
       "protectedSettings": {

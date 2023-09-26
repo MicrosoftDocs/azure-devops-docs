@@ -55,7 +55,7 @@ Most build and test integration fields have a data type of String, PlainText, or
    :::column-end:::
    :::column span="3":::
    `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]`, `Contains`, `Does Not Contain`, `In`, `Not In`, `In Group`, `Not In Group`, `Was Ever`  
-   **Macros**: `[Any]`, valid with the **Work Item Type** field; and `@Project`, valid with the **Team Project** field. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+   **Macros**: `[Any]`, valid with the **Work Item Type** field; and `@Project`, valid with the **Team Project** field. The system automatically defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md#across-projects). 
    :::column-end:::
 :::row-end:::
  
@@ -240,7 +240,7 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    :::column-end:::
    :::column span="2":::
    The test suite category. Allowed values are:  
-   - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite will automatically include every test case that is returned by the query that you define.  
+   - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite automatically includes every test case that is returned by the query that you define.  
    - **Requirement Based**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.  
    - **Static**: Use to group together test cases with any characteristics or test suites.  
    For more information, see [Create a test plan](../../test/create-a-test-plan.md).  
@@ -377,7 +377,7 @@ The following fields don't appear on work item forms, but these fields are track
 
    :::column-end:::
    :::column span="2":::
-   Tracks other operations run when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a combined history view, including changes done to work items field and changes resulting from related artifacts such as test points and configurations.
+   Tracks other operations run when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There's a combined history view, including changes done to work items field and changes resulting from related artifacts such as test points and configurations.
 
    Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
 

@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Microsoft-hosted agents
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 ::: moniker range="< azure-devops"
 
@@ -145,7 +145,7 @@ All of these machines have at least 10 GB of free disk space available for your 
 
 ## Networking
 
-In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is updated weekly with new planned IP ranges. The new IP ranges become effective the following week. We recommend that you check back frequently (at least once every week) to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in the weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
+In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. Microsoft publishes a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is updated weekly with new planned IP ranges. Only the latest version of the file is available for download. If you need previous versions, you must download and archive them each week as they become available. The new IP ranges become effective the following week. We recommend that you check back frequently (at least once every week) to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in the weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
 
 Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions. While your agent may run in the same region as your organization, it is not guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
 
@@ -188,24 +188,26 @@ namespace WeeklyFileIPRanges
     class Program
     {
         // Path to the locally saved weekly file
-        const string weeklyFilePath = @"C:\MyPath\ServiceTags_Public_20210823.json";
+        const string weeklyFilePath = @"C:\MyPath\ServiceTags_Public_20230904.json";
 
         static void Main(string[] args)
         {
             // United States geography has the following regions:
-            // Central US, East US, East US 2, North Central US, 
-            // South Central US, West Central US, West US, West US 2
-            // This list is accurate as of 8/26/2021
+            // Central US, East US, East US 2, East US 3, North Central US, 
+            // South Central US, West Central US, West US, West US 2, West US 3
+            // This list is accurate as of 9/8/2023
             List<string> USGeographyRegions = new List<string>
             {
                 "centralus",
                 "eastus",
                 "eastus2",
+                "eastus3",
                 "northcentralus",
                 "southcentralus",
                 "westcentralus",
                 "westus",
-                "westus2"
+                "westus2",
+                "westus3"
             };
 
             // Load the weekly file
@@ -214,12 +216,12 @@ namespace WeeklyFileIPRanges
 
             foreach (string region in USGeographyRegions)
             {
-                string azureCloudRegion = $"AzureCloud.{region}";
-                Console.WriteLine(azureCloudRegion);
+                string tag = $"AzureCloud.{region}";
+                Console.WriteLine(tag);
 
                 var ipList =
                     from v in values
-                    where (string)v["name"] == azureCloudRegion
+                    where tag.Equals((string)v["name"], StringComparison.OrdinalIgnoreCase)
                     select v["properties"]["addressPrefixes"];
 
                 foreach (var ip in ipList.Children())

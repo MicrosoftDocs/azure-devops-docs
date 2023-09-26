@@ -7,7 +7,7 @@ ms.topic: best-practice
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops' 
-ms.date: 02/24/2023  
+ms.date: 09/18/2023  
 ---
 
 # Security best practices
@@ -18,19 +18,19 @@ When you're working with information and data, particularly in a cloud-based sol
 
 Although it's not mandatory, incorporating best practices while using Azure DevOps can enhance your experience and make it more secure. We've compiled the following best practices that aim to keep your Azure DevOps environment secure:
 
-- Securing your [Azure DevOps environment](#securing-azure-devops-environment)
+- Securing your [Azure DevOps environment](#secure-azure-devops-environment)
 - Restrict access through [scoped permissions](#scoped-permissions) at the organization/collection, project, or object level
 - Maintain tight control of administrators and [security groups](#manage-security-groups)
 - Scope [service accounts](#scope-service-accounts) and [service connections](#scope-service-connections)
 - Learn best practices for [authenticating when integrating with Azure DevOps](#choose-the-right-authentication-method)
 - Secure specific product areas and associated services, like [Azure Artifacts](#secure-azure-artifacts), [Azure Boards](#secure-azure-boards), [Azure Pipelines](#secure-azure-pipelines), [Azure Repos](#secure-azure-repos), [Azure Test Plans](#secure-azure-test-plans), and [GitHub integrations](#secure-github-integrations).
 
-## Securing Azure DevOps environment
+## Secure Azure DevOps environment
 
 ### Removing users
 
 - If your organization uses MSA accounts, then remove inactive users directly from the organization, as you have no other way to prevent access. When you do so, you can't create a query for work items assigned to the removed user account. For more information, see [Delete users from Azure DevOps](../accounts/delete-organization-users.md).
-- If your organization is connected to Azure AD, then you can disable or delete the Azure AD user account while leaving their Azure DevOps account active. In this way, you can continue to query their work item history using their account name.
+- If your organization is connected to Azure AD, then you can disable or delete the Azure AD user account and leave your Azure DevOps user account active. In this way, you can continue to query work item history using your Azure DevOps user ID.
 - [Revoke user PATs](../accounts/admin-revoke-user-pats.md).
 - Revoke any special permissions that may have been granted to individual user accounts.
 - Reassign work from users you’re removing to current team members.
@@ -81,7 +81,7 @@ The system manages permissions at different levels - individual, collection, pro
 - Enable the *Limit user visibility for projects* preview feature for the organization, which restricts access to only those projects that you add users to.
 - Add users to the *Project-scoped users* group, so they can only see and select users and groups in the project that they're connected to from a people picker.
 - Disable *"Allow public projects"* in your organization's policy settings to prevent every organization user from creating a public project. Azure DevOps Services allows you to change the visibility of your projects from public to private, and vice-versa. If users haven't signed into your organization, they have read-only access to your public projects. If users have signed in, they can be granted access to private projects and make any permitted changes to them.
-- Don’t allow users to create new projects. Use EasyStart “Governed Projects,” which require approval once they're submitted.
+- Don’t allow users to create new projects.
 
 ### External guest access 
 
@@ -110,9 +110,28 @@ See the following recommendations for assigning permissions to security groups a
 |Keep groups as small as possible. Access should be restricted, and the groups should be frequently audited.    |         |
 |Take advantage of built-in roles and default to Contributor for developers. Admins get assigned to the Project Administrator security group for elevated permissions, allowing them to configure security permissions.|     |
 
-For more information, see [Valid user groups](about-permissions.md#valid-user-groups)  
+For more information, see [Valid user groups](about-permissions.md#valid-user-groups).
 
------
+### Just-in-time access for admin groups 
+
+You can change the configuration of your organization or project if you have [Project Collection Administrator](../../user-guide/manage-organization-collection.md) and [Project Administrator](../../user-guide/project-admin-tutorial.md) access. To protect access to these built-in administrator groups, require just-in-time access using an Azure AD [Privileged Identity Management (PIM) group](/azure/active-directory/privileged-identity-management/concept-pim-for-groups).
+
+#### Configure access 
+
+1. [Create a role-assignable group in Azure AD](/azure/active-directory/roles/groups-create-eligible?tabs=ms-powershell&branch=main).
+2. [Add your Azure AD group to the Azure DevOps group](/azure/devops/organizations/security/add-ad-aad-built-in-security-groups?view=azure-devops&branch=main&tabs=preview-page&preserve-view=true). 
+
+> [!NOTE]
+> Make sure any user with elevated access using a PIM group also has standard access to the organization, so they can view the page to refresh their permissions. 
+
+#### Use access 
+
+1. [Activate your access](/azure/active-directory/privileged-identity-management/groups-activate-roles). 
+2. [Refresh your permissions](request-changes-permissions.md#refresh-or-re-evaluate-your-permissions) in Azure DevOps. 
+3. Take the action requiring administrator access. 
+
+> [!NOTE]
+> Users have elevated access in Azure DevOps for up to 1 hour after their PIM group access gets deactivated.
 
 ## Scope service accounts
 
@@ -158,7 +177,7 @@ If possible, we recommended to always use identity services for authentication i
 - PATs should never be hardcoded in the application code, even if it's tempting to do so to simplify the code.
 - Administrators should regularly audit all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list) and revoke any that doesn't meet the above criteria.
 
-- Keep your PATs secret. Your tokens are as critical as passwords.
+- Keep your PATs a secret. Your tokens are as critical as passwords.
 - Store your tokens in a safe place.
 - Don’t hard code tokens in applications. It can be tempting to simplify code to obtain a token for a long period of time and store it in your application, but don’t do that.
 - Give tokens an expiration date.
@@ -190,7 +209,7 @@ If possible, we recommended to always use identity services for authentication i
 ### Policies
 
 - Require at least one reviewer outside of the original requester. The approver shares coownership of the changes and should be held equally accountable for any potential impact.
-- Require CI build to pass, which is useful for establishing baseline code quality, through code linting, unit tests, and security checks, like virus and credential scans.
+- Require CI build to pass. This requirement is useful for establishing baseline code quality, through code linting, unit tests, and security checks, like virus and credential scans.
 - Ensure that the original pull requester can’t approve the change.  
 - Disallow completion of a PR (Pull Request), even if some reviewers vote to wait or reject.
 - Reset code reviewer votes when recent changes get pushed. 
@@ -251,6 +270,6 @@ If possible, we recommended to always use identity services for authentication i
 ## Secure GitHub Integrations
 
 - Disable Personal Access Token (PAT)-based authentication, so the OAuth flow gets used with the GitHub service connection. 
-- Never authenticate GitHub service connections as an identity that's an administrator or owner of any repositories. [Check your policies](../../repos/git/configure-repos-work-tracking.md). 
+- Never authenticate GitHub service connections as an identity that's an administrator or owner of any repositories.
 - Never use a full-scope GitHub PAT (Personal Access Token) to authenticate GitHub service connections. 
 - Don't use a personal GitHub account as a service connection with Azure DevOps. 

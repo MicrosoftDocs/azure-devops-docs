@@ -4,8 +4,8 @@ ms.custom: seodec18, engagement-fy23
 description: Understand release approvals in Azure Pipelines
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.topic: conceptual
-ms.author: shashban
-author: azooinmyluggage
+ms.author: sandrica
+author: silviuandrica
 ms.date: 12/20/2022
 monikerRange: '<= azure-devops'
 ---

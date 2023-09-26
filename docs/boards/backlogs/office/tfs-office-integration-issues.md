@@ -44,12 +44,12 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
 
 ### Update the registry 
 
-1.	Launch the Registry Editor from your Windows Start Menu by typing `regedit` in the Search or Run box.
+1.	Launch the Registry Editor from your Windows Start Menu by entering `regedit` in the Search or Run box.
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Run regedit command.](media/tfs-office-issues-run-regedit.png) 
 
-2.	Navigate to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
+2.	Go to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 	
 	> [!NOTE]  
 	> If there are multiple folders with the same name, select the one with the highest version number. 
@@ -131,8 +131,12 @@ If the above steps are unsuccessful, try the following steps:
 
 3.	Contact the Microsoft support team.  
 
+## Intermittent issues doing refresh and publish
+
+If a user has errors when doing a refresh or publish, it may be due to a Conditional Access Policy in AAD. To resolve this issue, try clearing the contents of the folder ```%LOCALAPPDATA%\.IdentityService```. 
 
 ## Related articles
-
+- [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  
+- [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml)
 - [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)

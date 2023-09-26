@@ -44,16 +44,16 @@ A project defines a process and data storage in which you manage your software p
 1. Open a browser and enter a URL that uses the following form:  
 
    ::: moniker range="azure-devops"
-   <pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>
+   <pre>`https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> `</pre>
    ::: moniker-end
 
    ::: moniker range=">= azure-devops-2019 < azure-devops" 
-   <pre><code>http://<i>ServerName</i>/DefaultCollection/<i>ProjectName</i></code></pre> 
+   <pre>`http://<i>ServerName</i>/DefaultCollection/<i>ProjectName</i>`</pre> 
 
    For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime/DefaultCollection**.
    ::: moniker-end
    ::: moniker range="< azure-devops-2019"  
-   <pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
+   <pre>`http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i>`</pre> 
 
    For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/DefaultCollection**.
 

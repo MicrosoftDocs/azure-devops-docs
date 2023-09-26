@@ -4,7 +4,7 @@ description: How to connect to your feed and publish NuGet packages using the co
 ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 06/23/2022
+ms.date: 06/30/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -12,11 +12,11 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, you can publish your NuGet packages to public or private feeds and share them with others based on your feed's visibility settings. This article will guide you through connecting to Azure Artifacts and publishing your NuGet packages.
+With Azure Artifacts, you can publish your NuGet packages to public or private feeds and share them with others based on your feed's visibility settings. This article will guide you through connecting to Azure Artifacts and publishing and restoring your NuGet packages.
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
 - An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
 
@@ -30,14 +30,14 @@ With Azure Artifacts, you can publish your NuGet packages to public or private f
 
 ## Publish packages
 
-To publish a NuGet package to your feed, run the following command in an elevated command prompt. Replace the placeholders with the appropriate information:
+Run the following command to publish your packages to your feed. Replace the placeholders with the appropriate information:
 
 ```Command
 nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
 ```
 
 > [!NOTE]
-> The `ApiKey` is only used as a placeholder.
+> The `ApiKey` is required, but you can use any arbitrary value when pushing to Azure Artifacts feeds.
 
 - **Example**:
 
@@ -49,16 +49,16 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
 
 1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scope.
 
-1. Add your package source to your nuget.config file. This will add your PAT to your nuget.config file. Make sure to store this file in a safe place, and do not check this file into source control.
+1. Add your package source to your nuget.config file. This will add your PAT to your nuget.config file. Store this file in a safe location, and make sure that you don't check it into source control. See [NuGet sources](/nuget/reference/cli-reference/cli-ref-sources) for more details.
 
     ```Command
-    nuget sources Add -Name <PACKAGE_SOURCE> -Source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -UserName <USER_NAME> -Password <PERSONAL_ACCESS_TOKEN> -config <PATH_TO_NUGET_CONFIG_FILE>
+    nuget sources Add -Name <SOURCE_NAME> -Source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -UserName <USER_NAME> -Password <PERSONAL_ACCESS_TOKEN> -config <PATH_TO_NUGET_CONFIG_FILE>
     ```
 
-1. Publish your package:
+1. Publish your package. See [NuGet push](/nuget/reference/cli-reference/cli-ref-push) for more details.
 
     ```Command
-    nuget push <PACKAGE_PATH> -src <PACKAGE_SOURCE> -ApiKey <ANY_STRING>
+    nuget push <PACKAGE_PATH> -src <SOURCE_NAME> -ApiKey <ANY_STRING>
     ```
 
 - **Example**:
@@ -68,9 +68,12 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
     nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
     ```
 
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
+
 ## Restore packages
 
-To restore your packages, run the following command in an elevated command prompt:
+Run the following command to restore your packages:
 
 ```Command
 nuget.exe restore

@@ -205,6 +205,9 @@ To renew the access token for an automatically created service principal:
 
 Your service principal's token has now been renewed for two more years.
 
+   > [!NOTE]
+   > This operation is available even if the service principal's token has not expired.
+
 <a name="failedToObtainJWT"></a>
 
 ### Failed to obtain the JWT by using the service principal client ID

@@ -215,6 +215,9 @@ If the *Install-Module* command is returning the following error: *Unable to res
 Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -Trusted -SkipValidate -Credential $credsAzureDevopsServices
 ```
 
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
+
 ## Connect to feed with Azure Pipelines
 
 The following example shows how to authenticate and install a PowerShell Module with YAML pipeline.

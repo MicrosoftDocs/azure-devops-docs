@@ -6,8 +6,7 @@ ms.date: 10/11/2022
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Swimlane rule on Kanban board
-hide_comments: true
+description: Swimlane rule on Kanban boa
 ---
 
 # Swimlane rules

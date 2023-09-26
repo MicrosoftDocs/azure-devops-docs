@@ -197,7 +197,7 @@ extends:
 ### Type-safe parameters
 
 Templates and their parameters are turned into constants before the pipeline runs.
-Template parameters provide type safety to input parameters.
+[Template parameters](../process/template-parameters.md) provide type safety to input parameters.
 For instance, it can restrict which pools can be used in a pipeline by offering an enumeration of possible options rather than a freeform string.
 
 ```yaml

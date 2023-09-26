@@ -101,6 +101,25 @@ To use `twine` to publish your Python packages, you must first set up authentica
      python -m twine upload -r <FEED_NAME> --config-file $(PYPIRC_PATH) dist/*.whl
 ```
 
+Example using [Python build](https://pypi.org/project/build/) and [twine](https://pypi.org/project/twine/) to publish a Python package to an Azure Artifacts feed.
+
+```YAML
+- script: |
+    pip install twine
+    pip install build
+
+- script: |
+    python -m build -w
+
+- task: TwineAuthenticate@1
+  inputs:
+    artifactFeed: <PROJECT_NAME/FEED_NAME>
+
+- script: |
+    python -m twine upload -r <FEED_NAME> --config-file $(PYPIRC_PATH) dist/*.whl
+  displayName: 'upload'
+```
+
 # [Classic](#tab/classic)
 
 - **Twine Authenticate**:

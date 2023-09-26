@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: jukullam
 author: juliakm 
 monikerRange: 'azure-devops'
-ms.date: 05/09/2023
+ms.date: 09/20/2023
 ---
 
 
@@ -38,6 +38,7 @@ CodeQL supports both compiled and interpreted languages and can find vulnerabili
 * Kotlin (beta)
 * Python 
 * Ruby 
+* Swift
 
 For more information, see the documentation on the CodeQL website on [Supported languages and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/).
 
@@ -59,7 +60,7 @@ There's no effect to results if pipelines or branches are renamed - it may take 
 
 ![Screenshot of code scanning alerts for a repository](./media/code-scanning-alerts.png) 
 
-If for whatever reason, you turn off Advanced Security for your repository, you'll lose access to the results in the Advanced Security tab and build task. The build task won't fail, but any results from builds run with the task while Advanced Security is disabled are hidden and unretained. 
+If you turn off Advanced Security for your repository, you'll lose access to the results in the Advanced Security tab and build task. The build task won't fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
 
 ### Alert details 
 

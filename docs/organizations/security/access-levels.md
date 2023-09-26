@@ -367,7 +367,7 @@ The following table indicates those features available for each supported access
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="3":::
-      [**Delivery Plans**](../../boards/extensions/delivery-plans.md)  
+      [**Delivery Plans**](../../boards/plans/review-team-plans.md)  
       Includes full access to add and view Delivery plans. 
    :::column-end:::
    :::column span="1":::

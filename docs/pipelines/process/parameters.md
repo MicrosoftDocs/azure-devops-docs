@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: You can link all important fields for tasks used across the build definition as process parameters
 ms.topic: conceptual
 ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
-ms.date: 01/18/2023
+ms.date: 06/30/2023
 monikerRange: '<= azure-devops'
 ---
 

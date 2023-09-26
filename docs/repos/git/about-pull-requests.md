@@ -25,6 +25,11 @@ This article describes pull request guidelines and management considerations. Fo
 - [Review pull requests](review-pull-requests.md)
 - [Complete pull requests](complete-pull-requests.md)
 
+::: moniker range=">= azure-devops-2022"
+> [!NOTE]
+> For performance and stability reasons, the number of reviewers that can be added to a pull request must be 1000 or less. New pull requests will not be created when adding more than 1000 reviewers, and existing pull requests won't allow you to add more than 1000 reviewers.
+::: moniker-end
+
 ## Permissions and prerequisites
 
 ::: moniker range="azure-devops"

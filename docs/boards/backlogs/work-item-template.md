@@ -24,7 +24,7 @@ With work item templates, you can quickly create work items that have pre-popula
 You can use work item templates to create work items or bulk update several work items. For examples that show usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
 
 > [!NOTE]  
-> Work item templates are distinct from process templates. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
+> Work item templates are distinct from process templates. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) or these specific articles for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 ## Supported template tasks   
 
@@ -246,7 +246,7 @@ If you primarily work in Visual Studio or Team Explorer, and want to create work
 
     <img src="media/wi-templates-capture-template-dialog-te.png" alt="Capture template dialog from Visual Studio with Power Tools installed" />
 
-4. Save the template and it will appear in the root of the Team Explorer pane under the Templates section.  
+4. Save the template and it appears in the root of the Team Explorer pane under the Templates section.  
 
 * * *
 
@@ -404,12 +404,12 @@ With Visual Studio with power tools installed, you can view the list of template
 
 	<img src="media/wi-templates-context-menu-te.png" alt="Open context menu and choose the option you want." />  
 
-- To make frequently used templates more accessible, you can set a default template for each work item type. To do so, right-click on a template in Team Explorer and select **Set As Default**. A checkmark will appear on the icon to indicate that it's now the default. 
+- To make frequently used templates more accessible, you can set a default template for each work item type. To do so, right-click on a template in Team Explorer and select **Set As Default**. A checkmark appears on the icon to indicate that it's now the default. 
 
 
 ### Set your template directory  
 
-- To change the directory where templates are stored, select the Configure link, or navigate to it via **Tools>Options>Microsoft Team Foundation Server>Work Item Templates**. Use this dialog to set your template store path. Place your templates in a network location to share them with your team.  
+- To change the directory where templates are stored, select the Configure link, or go to it via **Tools>Options>Microsoft Team Foundation Server>Work Item Templates**. Use this dialog to set your template store path. Place your templates in a network location to share them with your team.  
 
 * * *
 
@@ -468,7 +468,7 @@ Use the URL whenever you want to add a work item of the type you've defined with
 
 <a id="team-explorer-copy-link" />
 
-1. You can copy the link to a template, which will open in the web portal, by opening the context menu for the template.  
+1. You can copy the link to a template, which opens in the web portal, by opening the context menu for the template.  
 
     <img src="media/wi-templates-copy-URL-te.png" alt="Copy link to template from Visual Studio with Power Tools installed" />
 
@@ -579,7 +579,7 @@ You can add tags to a template and they'll be applied to the work item when you 
 > [!div class="mx-imgBorder"]  
 > ![Edit bug template, add or remove tags](media/templates/edit-template-add-tags.png)
 
-If you don't specify tags to remove, then all tags present in a work item will remain defined. They'll remain defined even when you apply a work item template to an existing work item. 
+If you don't specify tags to remove, then all tags present in a work item remain defined. They'll remain defined even when you apply a work item template to an existing work item. 
 
 
 <a id="adhoc-template"> </a>

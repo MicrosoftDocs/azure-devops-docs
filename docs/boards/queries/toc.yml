@@ -4,7 +4,7 @@
   href: query-index-quick-ref.md
 - name: Semantic search
   href: search-box-queries.md
-- name: Get started with queries
+- name: Manage queries
   items:
   - name: View, open, run a query
     href: view-run-query.md
@@ -16,32 +16,20 @@
     displayname: delete, rename, dashboard, share, save
   - name: Chart a query
     href: ../../report/dashboards/charts.md?toc=/azure/devops/boards/toc.json
-  - name: Triage work items
-    href: triage-work-items.md
   - name: Filter your queries
     href: ../backlogs/filter-backlogs-boards-plans.md
     displayname: sort, reorder, group, parent, tags
-  - name: Best practices to define a query
-    href: high-performing-queries.md
   - name: Query FAQs
     href: query-faqs.yml
   - name: Set query permissions (Security)
     href: set-query-permissions.md
-  expanded: true
-- name: Additional query operations
-  items:
   - name: Change column options
     href: ../backlogs/set-column-options.md
-  - name: Cross-service and enhanced query operations
-    href: query-support-integration-cross-service-extensions.md
-    displayname: OData, Power BI, WIQL
   - name: Bulk import & update work items (CSV)
     href: import-work-items-from-csv.md
     displayname: import, export, csv
   - name: Bulk add or modify work items (Excel)
     href: ../backlogs/office/bulk-add-modify-work-items-excel.md
-  - name: Define a query as a hyperlink
-    href: define-query-hyperlink.md
 - name: Sample queries
   items:
   - name: Example query charts

@@ -140,5 +140,5 @@ When the **Limit user visibility and collaboration to specific projects** previe
 
 ## Related articles
 
-- [Work item form controls](../../boards/work-items/work-item-form-controls.md)  
+- [Work item form controls](../../boards/work-items/about-work-items.md#work-item-form-controls)  
 - [Pull requests](../../repos/git/pull-requests.md)

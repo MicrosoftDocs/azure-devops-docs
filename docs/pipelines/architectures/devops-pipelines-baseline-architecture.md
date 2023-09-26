@@ -128,9 +128,9 @@ These considerations implement the pillars of the Azure Well-Architected Framewo
 
 - Consider implementing [Infrastructure as Code (IaC)](/devops/deliver/what-is-infrastructure-as-code) to define your infrastructure and to deploy it in your pipelines.
 
-- Consider using one of the [tokenization tasks](https://marketplace.visualstudio.com/search?term=token&target=VSTS&category=All%20categories&sortBy=Relevance) available in the VSTS marketplace.
+- Consider using one of the [Tokenization Tasks](https://marketplace.visualstudio.com/search?term=token&target=VSTS&category=All%20categories&sortBy=Relevance) available in the VSTS marketplace, in the context often refer to a process where sensitive information (such as API keys, passwords, or other secrets) is replaced with tokens or placeholders during deployment or configuration.
 
-- Use [release variables](/azure/devops/pipelines/release/variables) in your release definitions to drive configuration changes of your environments. Release variables can be scoped to an entire release or a given environment. When using variables for secret information, ensure that you select the padlock icon.
+- Use [Release Variables](/azure/devops/pipelines/release/variables) in your release definitions to drive configuration changes of your environments. Release variables can be scoped to an entire release or a given environment. When using variables for secret information, ensure that you select the padlock icon.
 
 - Consider using [Self-hosted agents](/azure/devops/pipelines/agents/agents?tabs=browser#install) if you're deploying to resources running in a secured virtual network. You might also consider self-hosted agents if you're running a high volume of builds. In cases of high build volumes, self-hosted agents can be used to speed up builds in a cost efficient manner.
 
@@ -168,7 +168,6 @@ Review the following resources to learn more about CI/CD and Azure DevOps:
 
 - [What is DevOps?](/devops/what-is-devops)
 - [DevOps at Microsoft - How we work with Azure DevOps](https://azure.microsoft.com/solutions/devops/devops-at-microsoft)
-- [Step-by-step Tutorials: DevOps with Azure DevOps](https://www.azuredevopslabs.com/labs/vstsextend/azuredevopsprojectdotnet)
 - [Create a CI/CD pipeline for .NET with Azure DevOps Projects](/azure/devops-project/azure-devops-project-aspnet-core)
 - [What is Azure Repos?](/azure/devops/repos/get-started/what-is-repos)
 - [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines)

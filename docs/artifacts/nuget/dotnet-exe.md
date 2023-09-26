@@ -119,6 +119,9 @@ dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATI
     dotnet nuget push nupkgs/mypackage.1.1.0.nupkg --source MySource --api-key AZ
     ```
 
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
+
 ## Restore packages
 
 To restore your packages, run the following command in an elevated command prompt. The `--interactive` flag is used to prompt the user for credentials.

@@ -172,8 +172,6 @@ landingContent:
             url: ./queries/query-index-quick-ref.md
           - text: Work item field index
             url: ./work-items/guidance/work-item-field.md
-          - text: Default work tracking permissions
-            url: ../organizations/security/permissions-access-work-tracking.md
   - title: Developer resources
     linkLists:
       - linkListType: reference

@@ -524,8 +524,7 @@ See [Speed up testing by using Test Impact Analysis (TIA), Enable Test Impact An
 
 - [Define your multi-stage continuous deployment (CD) pipeline](../release/define-multistage-release-process.md)
 - [Link and view work items to builds and deployments](../../boards/work-items/work-item-deployments-control.md) 
-- [Release pipelines (Classic) overview](../release/index.md)
-- [Configure repositories to support work tracking](../../repos/git/configure-repos-work-tracking.md).  
+- [Release pipelines (Classic) overview](../release/index.md)  
 - [How to retrieve all work items associated with a release pipeline using Azure DevOps API](https://devblogs.microsoft.com/premier-developer/how-to-retrieve-all-work-items-associated-with-a-release-pipeline-using-azure-devops-api/)
 - [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md) 
 - [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)

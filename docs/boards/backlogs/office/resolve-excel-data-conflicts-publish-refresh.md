@@ -44,9 +44,10 @@ A data conflict occurs when you try to publish a work item from [Excel](bulk-add
     >  This step publishes only the work items that you corrected. If you do not resolve all data validation errors related to a work item, that work item is not published.  
   
 ## Related articles 
+-  [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  
+-  [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 -  [Resolve data validation errors](resolve-excel-data-validation-errors.md)   
 -  [Connect Azure Boards to an Office client](track-work.md)  
-
 
 ### Required permissions  
   
