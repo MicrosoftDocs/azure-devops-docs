@@ -544,8 +544,8 @@
     href: agents/windows-agent.md
   - name: Agent registration options
     items:
-    - name: Self-hosted agent registration options
-      href: agents/agent-registration-options.md
+    - name: Self-hosted agent authentication options
+      href: agents/agent-authentication-options.md
     - name: Personal access token
       href: agents/pat-agent-registration.md
     - name: Service Principal
