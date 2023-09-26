@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Changes to Code Scanning (CodeQL) user input task and variables
 
-All user-provided inputs are now specified in the CodeQL Initialize task, which is responsible for configuring the CodeQL analysis environment used for code analysis with CodeQL 'AdvancedSecurity-Codeql-Init@1'. To see the full list of CodeQL User inputs, please refer to this documentation <Placeholder>
+All user-provided inputs are now specified in the CodeQL Initialize task, which is responsible for configuring the CodeQL analysis environment used for code analysis with CodeQL *AdvancedSecurity-Codeql-Init@1*. To see the full list of CodeQL User inputs, please refer to this documentation <Placeholder>
 
 In addition, user inputs take precedence over any values set by variables. For instance, if you establish the language variable as 'advancedsecurity.codeql.language: Java' and subsequently, during the codeQL initialization phase, you specify the language as an input with 'Language: cpp,' the input 'cpp' will override the variable 'java' for the language. Please ensure that your inputs are configured accurately.
 
@@ -18,7 +18,8 @@ Previously, when configuring code scanning, you were required to include the pub
 
 Below are the require task for code scanning. 
 
-< See attachement: Task Image>
+> [!div class="mx-imgBorder"]
+> ![Screenshot of required code scanning tasks.](../../media/228-general-01.png "Screenshot of required code scanning tasks")
 
 
 For more information, please refer to set up code scanning [documentation](/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops&tabs=yaml#set-up-code-scanning).

@@ -7,7 +7,7 @@ description: GitHub Advanced Security for Azure DevOps is now generally availabl
 ---
 # GitHub Advanced Security for Azure DevOps is now generally available
 
-We are excited to announce that GitHub Advanced Security for Azure DevOps is now generally available. With this update, we've also improved code scanning to include all user-provided inputs in the CodeQL Initialize task. In addition, we expanded CodeQL support to include Swift. 
+We are excited to announce that GitHub Advanced Security for Azure DevOps is now generally available! With this update, we've also improved code scanning to include all user-provided inputs in the CodeQL Initialize task. In addition, we expanded CodeQL support to include Swift. 
 
 In Boards, we are releasing Team Automation Rules in private preview. Now, you can configure each backlog level to automate the opening and closing/resolving of work items based on the state(s) of their children. Check out the release notes if you are interested in enrolling in the private preview.  
 
@@ -21,6 +21,10 @@ Head over to the feature list below to learn move about these features.
 
 [!INCLUDE [sprint-228-update-links](includes/boards/sprint-228-update-links.md)]
 
+### Azure Pipelines
+
+[!INCLUDE [sprint-228-update-links](includes/pipelines/sprint-228-update-links.md)]
+
 ## General
 
 [!INCLUDE [sprint-228-update](includes/general/sprint-228-update.md)]
@@ -28,6 +32,10 @@ Head over to the feature list below to learn move about these features.
 ## Azure Boards
 
 [!INCLUDE [sprint-228-update](includes/boards/sprint-228-update.md)]
+
+## Azure Pipelines
+
+[!INCLUDE [sprint-228-update](includes/pipelines/sprint-228-update.md)]
 
 ## Next steps
 
