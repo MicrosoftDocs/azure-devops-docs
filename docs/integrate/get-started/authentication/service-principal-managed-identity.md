@@ -111,21 +111,23 @@ Service principals can be used to call Azure DevOps REST APIs and do most action
 
 ## FAQs
 
-### Q: Why should I use a service principal or a managed identity instead of a PAT?
+### General
+
+#### Q: Why should I use a service principal or a managed identity instead of a PAT?
 
 A: Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). As PATs are simply bearer tokens, meaning token strings that represent a user’s username and password, they're incredibly risky to use as they can easily fall into the wrong person’s hands. Azure AD tokens expire every hour and must be regenerated with a refresh token to get a new access token, which limits the overall risk factor when leaked.
 
 You cannot use a service principal to create a personal access token.
 
-### Q: What are the rate limits on service principals and managed identities?
+#### Q: What are the rate limits on service principals and managed identities?
 
 A: At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
 
-### Q: Will using this feature cost more?
+#### Q: Will using this feature cost more?
 
 A: Service principals and managed identities are priced similarly as users, based on the access level. One notable change pertains to how we treat "multi-org billing" for service principals. Users get counted as only one license, no matter how many organizations they're in. Service principals get counted as one license per each organization the user's in. This scenario is similar to standard "user assignment-based billing". 
 
-### Q: Can I use a service principal or managed identity with Azure CLI?
+#### Q: Can I use a service principal or managed identity with Azure CLI?
 
 A: Yes! Anywhere that asks for PATs in the [Azure CLI](/cli/azure/authenticate-azure-cli) can also accept [Azure AD access tokens](#get-an-azure-ad-token). See these examples for how you might pass an Azure AD token in to authenticate with CLI.
 
@@ -157,7 +159,7 @@ Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -Expan
 
 Now, you can use `az cli` commands per usual. 
 
-### Q: Can I add a managed identity from a different tenant to my organization?
+#### Q: Can I add a managed identity from a different tenant to my organization?
 
 A: You can only add a managed identity from the same tenant that your organization is connected to. However, we have a workaround that allows you to set up a managed identity in the "resource tenant", where are all of your resources are. Then, you can enable it to be used by a service principal in the "target tenant", where your organization is connected. Do the following steps as a workaround:
 
@@ -207,39 +209,12 @@ private static async Task<AuthenticationResult> GetAppRegistrationAADAccessToken
 }
 ```
 
-### Q: Can I use a service principal to do git operations, like clone a repo?
-
-A: See the following example of how we've passed an [Azure AD token](#get-an-azure-ad-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
-
-```powershell
-$ServicePrincipalAadAccessToken = 'Azure AD access token of a service principal'
-git -c http.extraheader="AUTHORIZATION: bearer $ServicePrincipalAadAccessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
-```
-> [!TIP] 
-> To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), which can accept [Azure AD tokens (that is, Microsoft Identity OAuth tokens)](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/environment.md#GCM_AZREPOS_CREDENTIALTYPE) instead of PATs if an environment variable is changed.
-
-A helpful tip on how to get the access token from the Azure CLI to call git fetch:
-
-1. Open the Git configuration of your repository: 
-```sh
-git config -e
-```
-
-2. Add the following lines:
-```sh
-[credential]
-    helper = "!f() { test \"$1\" = get && echo \"password=$(az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query accessToken -o tsv)\"; }; f" 
-```
-
-3. Test that it works using: 
-```sh
-GIT_TRACE=1 GCM_TRACE=1 GIT_CURL_VERBOSE=1 git fetch
-```
-### Q: Can I use a service principal to connect to feeds?
+### Artifacts
+#### Q: Can I use a service principal to connect to feeds?
 
 A: Yes, you can connect to any feed using Basic authentication by replacing the PAT secret value with an SP access token. In the following examples, we demonstrate how to connect with an Azure AD token for NuGet and Maven, but other feed types should also work.
 
-#### Npm project setup with Azure AD tokens
+##### NPM project setup with Azure AD tokens
 > [!NOTE]
 > The vsts-npm-auth tool does not support Azure AD access tokens. 
 
@@ -254,7 +229,7 @@ always-auth=true
 //pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/:_authToken=[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]
 ```
 
-#### Maven project setup with Azure AD tokens
+##### Maven project setup with Azure AD tokens
 1. Add the repo to both your `pom.xml`'s `<repositories>` and `<distributionManagement>` sections.
 
 ```xml
@@ -287,7 +262,8 @@ always-auth=true
 </settings>
 ``` 
 
-### Q: Can I use a service principal to publish extensions to the Visual Studio Marketplace?
+### Marketplace
+#### Q: Can I use a service principal to publish extensions to the Visual Studio Marketplace?
 
 A: Yes. Do the following steps.
 
@@ -298,8 +274,40 @@ A: Yes. Do the following steps.
 tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-1.0.0.vsix --auth-type pat -t <AAD_ACCESS_TOKEN>
 ```
 
-### Q: Can I use a managed identity within a service connection? How can I more easily rotate secrets for the service principal in my service connection? Can I avoid storing secrets in a service connection altogether?
+### Pipelines
+
+#### Q: Can I use a managed identity within a service connection? How can I more easily rotate secrets for the service principal in my service connection? Can I avoid storing secrets in a service connection altogether?
 Azure now supports workload identity federation using the Open ID Connect protocol. This allows us to create secret-free service connections in Azure Pipelines that are backed by service principals or managed identities with federated credentials in Azure Active Directory. As part of its execution, a pipeline can exchange its own internal token with an AAD token, thereby gaining access to Azure resources. Once implemented, this mechanism will be recommended in the product over [other types of Azure service connections](/azure/devops/pipelines/library/connect-to-azure) that exist today. This mechanism can also be used to set up secret-free deployments with any other OIDC compliant service provider. This preview is currently in private preview. You can follow along with its public release on our [public roadmap](/azure/devops/release-notes/roadmap/2022/secret-free-deployments).
+
+### Repos
+#### Q: Can I use a service principal to do git operations, like clone a repo?
+
+A: See the following example of how we've passed an [Azure AD token](#get-an-azure-ad-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
+
+```powershell
+$ServicePrincipalAadAccessToken = 'Azure AD access token of a service principal'
+git -c http.extraheader="AUTHORIZATION: bearer $ServicePrincipalAadAccessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
+```
+> [!TIP] 
+> To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), which can accept [Azure AD tokens (that is, Microsoft Identity OAuth tokens)](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/environment.md#GCM_AZREPOS_CREDENTIALTYPE) instead of PATs if an environment variable is changed.
+
+A helpful tip on how to get the access token from the Azure CLI to call git fetch:
+
+1. Open the Git configuration of your repository: 
+```sh
+git config -e
+```
+
+2. Add the following lines:
+```sh
+[credential]
+    helper = "!f() { test \"$1\" = get && echo \"password=$(az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query accessToken -o tsv)\"; }; f" 
+```
+
+3. Test that it works using: 
+```sh
+GIT_TRACE=1 GCM_TRACE=1 GIT_CURL_VERBOSE=1 git fetch
+```
 
 ## Potential errors
 
