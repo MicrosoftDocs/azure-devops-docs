@@ -411,11 +411,15 @@ as shown in the following schematic.
 <a name="configure-tfs-authentication"></a>
 ## Authentication
 
-To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or Azure DevOps Server. In addition, you must be a local administrator on the server in order to configure the agent. 
+To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or Azure DevOps Server. In addition, you must be a local administrator on the server in order to configure the agent.
 
 ::: moniker range="azure-devops"
 
 Your agent can authenticate to Azure Pipelines using the following method:
+
+* [Personal access token (PAT)](./agent-registration-options.md#personal-access-token-pat)
+* [Service Principal (SP)](./agent-registration-options.md#service-principal-sp)
+* [Device code flow (AAD)](./agent-registration-options.md#device-code-flow-aad)
 
 ::: moniker-end
 
@@ -423,55 +427,13 @@ Your agent can authenticate to Azure Pipelines using the following method:
 
 Your agent can authenticate to Azure DevOps Server or TFS using one of the following methods:
 
-::: moniker-end
-
-
-### Personal Access Token (PAT): 
-[Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with Azure Pipelines or TFS 2017 and newer. PAT is the only scheme that works with Azure Pipelines. The PAT must have **Agent Pools (read, manage)** scope (for a [deployment group](../release/deployment-groups/index.md) agent, the PAT must have **Deployment group (read, manage)** scope), and while a single PAT can be used for registering multiple agents, the PAT is used only at the time of registering the agent, and not for subsequent [communication](#communication). For more information, see the Authenticate with a personal access token (PAT) section in the [Windows](windows-agent.md#authenticate-with-a-personal-access-token-pat), [Linux](linux-agent.md#authenticate-with-a-personal-access-token-pat), or [macOS](osx-agent.md#authenticate-with-a-personal-access-token-pat) self-hosted agents articles.
-
-To use a PAT with Azure DevOps Server, your server must be configured with HTTPS. See [Web site settings and security](/azure/devops/server/admin/websitesettings).
-
-::: moniker range="< azure-devops"
-
-### Integrated
-
-Connect a Windows agent to TFS using the credentials of the signed-in user through a Windows authentication scheme such as NTLM or Kerberos.
-
-To use this method of authentication, you must first configure your TFS server.
-
-1. Sign into the machine where you are running TFS.
-
-1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with a valid provider such as NTLM or Kerberos.
-
-![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
-
-![IIS TFS windows authentication with ntlm provider](media/configure-tfs-authentication/iis-tfs-authentication-windows-ntlm-provider.png)
-
-### Negotiate
-
-Connect to TFS as a user other than the signed-in user through a Windows authentication scheme such as NTLM or Kerberos.
-
-To use this method of authentication, you must first configure your TFS server.
-
-1. Log on to the machine where you are running TFS.
-
-1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with the Negotiate provider and with another method such as NTLM or Kerberos.
-
-![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
-
-![IIS TFS windows authentication with negotiate and ntlm provider](media/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
-
-
-### Alternate
-Connect to TFS using Basic authentication. To use this method, you must first [configure HTTPS on TFS](/azure/devops/server/admin/websitesettings).
-
-To use this method of authentication, you must configure your TFS server as follows:
-
-1. Sign in to the machine where you are running TFS.
-
-1. Configure basic authentication. See [Using `tfx` against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
+* [Personal access token (PAT)](./agent-registration-options.md#personal-access-token-pat)
+* [Integrated](./agent-registration-options.md##integrated)
+* [Negotiate](./agent-registration-options.md##negotiate)
+* [Alternate (ALT)](./agent-registration-options.md##alternate-alt)
 
 ::: moniker-end
+
 
 <h2 id="interactive-or-service">Interactive vs. service</h2>
 
