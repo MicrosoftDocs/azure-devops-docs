@@ -35,14 +35,16 @@ WinDbg should then acquire the symbols for your executable. To verify if your sy
 
 ## Start debugging
 
-With WinDbg, you can debug both kernel-mode and user-mode components:
+WinDbg enhances the scope and versatility of debugging, enabling effective troubleshooting of components in both user-mode and kernel-mode:
 
-- [Getting started with WinDbg (user-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg).
-- [Getting started with WinDbg (kernel-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-).
-- [Using the WinDbg Graphical Interface](/windows-hardware/drivers/debugger/windbg-graphical-interface).
-- [Using the Debugger Command Window](/windows-hardware/drivers/debugger/the-debugger-command-window).
+- [Get started with Windows debugging](/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
+- [Get started with WinDbg (user-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg).
+- [Get started with WinDbg (kernel-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-).
+- [Use the WinDbg Graphical Interface (Classic)](/windows-hardware/drivers/debugger/windbg-graphical-interface).
+- [Use the Debugger Commands](/windows-hardware/drivers/debugger/using-debugger-commands).
 
 ## Related articles
 
-- [Symbols overview](../concepts/symbols.md).
 - [Debug with Visual Studio](./debug-with-symbols-visual-studio.md).
+- [Publish symbols with Azure Pipelines](../../pipelines/artifacts/symbols.md)
+- [Artifacts storage consumption](../artifact-storage.md)
