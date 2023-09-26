@@ -417,9 +417,9 @@ To register an agent, you need to be a member of the [administrator role](pools-
 
 Your agent can authenticate to Azure Pipelines using the following method:
 
-* [Personal access token (PAT)](./agent-registration-options.md#personal-access-token-pat)
-* [Service Principal (SP)](./agent-registration-options.md#service-principal-sp)
-* [Device code flow (AAD)](./agent-registration-options.md#device-code-flow-aad)
+* [Personal access token (PAT)](./agent-authentication-options.md#personal-access-token-pat)
+* [Service Principal (SP)](./agent-authentication-options.md#service-principal-sp)
+* [Device code flow (AAD)](./agent-authentication-options.md#device-code-flow-aad)
 
 ::: moniker-end
 
@@ -427,10 +427,10 @@ Your agent can authenticate to Azure Pipelines using the following method:
 
 Your agent can authenticate to Azure DevOps Server or TFS using one of the following methods:
 
-* [Personal access token (PAT)](./agent-registration-options.md#personal-access-token-pat)
-* [Integrated](./agent-registration-options.md##integrated)
-* [Negotiate](./agent-registration-options.md##negotiate)
-* [Alternate (ALT)](./agent-registration-options.md##alternate-alt)
+* [Personal access token (PAT)](./agent-authentication-options.md#personal-access-token-pat)
+* [Integrated](./agent-authentication-options.md##integrated)
+* [Negotiate](./agent-authentication-options.md##negotiate)
+* [Alternate (ALT)](./agent-authentication-options.md##alternate-alt)
 
 ::: moniker-end
 
