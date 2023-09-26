@@ -1,15 +1,17 @@
 ---
-title:  TBD
+title:  GitHub Advanced Security for Azure DevOps is now generally available
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 9/27/2023
-description: TBD
+description: GitHub Advanced Security for Azure DevOps is now generally available.
 ---
-# Placeholder
+# GitHub Advanced Security for Azure DevOps is now generally available
 
-TBD
+We are excited to announce that GitHub Advanced Security for Azure DevOps is now generally available. With this update, we've also improved code scanning to include all user-provided inputs in the CodeQL Initialize task. In addition, we expanded CodeQL support to include Swift. 
 
-Check out the release notes to learn how you can sign up for the public preview.
+In Boards, we are releasing Team Automation Rules in private preview. Now, you can configure each backlog level to automate the opening and closing/resolving of work items based on the state(s) of their children. Check out the release notes if you are interested in enrolling in the private preview.  
+
+Head over to the feature list below to learn move about these features.
 
 ### General
 
