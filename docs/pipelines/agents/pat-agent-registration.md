@@ -8,9 +8,13 @@ monikerRange: '<= azure-devops'
 
 # Register an agent using a personal access token (PAT)
 
-[Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with Azure Pipelines or TFS 2017 and newer. PAT is the only scheme that works with Azure Pipelines. The PAT must have **Agent Pools (read, manage)** scope (for a [deployment group](../release/deployment-groups/index.md) agent, the PAT must have **Deployment group (read, manage)** scope), and while a single PAT can be used for registering multiple agents, the PAT is used only at the time of registering the agent, and not for subsequent [communication](./agents.md#communication). For more information, see the Authenticate with a personal access token (PAT) section in the [Windows](windows-agent.md), [Linux](linux-agent.md), or [macOS](osx-agent.md) self-hosted agents articles.
+Specify **PAT** for authentication type during agent configuration to use a personal access token to authenticate during agent registration, then specify a personal access token (PAT) with **Agent Pools (read, manage)** scope (or **Deployment group (read, manage)** scope for a [deployment group](../release/deployment-groups/index.md) agent) may be used for agent registration.
+
+A single PAT can be used for registering multiple agents, the PAT is used only at the time of registering the agent, and not for subsequent [communication](./agents.md#communication). 
 
 To use a PAT with Azure DevOps Server, your server must be configured with HTTPS. See [Web site settings and security](/azure/devops/server/admin/websitesettings).
+
+## Create a personal access token for agent registration
 
 ::: moniker range="< azure-devops-2019"
 

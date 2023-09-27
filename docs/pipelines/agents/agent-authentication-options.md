@@ -8,7 +8,7 @@ monikerRange: '<= azure-devops'
 
 # Self-hosted agent authentication options
 
-Azure Pipelines provides a choice of several authentication options yo use you are registering an agent. These methods of authentication are used only during agent registration. See [Agents communication](./agents.md#communication) for details of how agents communicate after registration.
+Azure Pipelines provides a choice of several authentication options you can use when you are registering an agent. These methods of authentication are used only during agent registration. See [Agents communication](./agents.md#communication) for details of how agents communicate after registration.
 
 | Agent registration method | Azure DevOps Services | Azure DevOps Server & TFS |
 |--------------------------|-----------------------|---------------------------|
@@ -21,7 +21,7 @@ Azure Pipelines provides a choice of several authentication options yo use you a
 
 ## Personal access token (PAT)
 
-Specify **PAT** for authentication type during agent configuration to use a personal access token to authenticate during agent registration, then ppecify a personal access token (PAT) with **Agent Pools (read, manage)** scope (or **Deployment group (read, manage)** scope for a [deployment group](../release/deployment-groups/index.md) agent) may be used for agent registration.
+Specify **PAT** for authentication type during agent configuration to use a personal access token to authenticate during agent registration, then specify a personal access token (PAT) with **Agent Pools (read, manage)** scope (or **Deployment group (read, manage)** scope for a [deployment group](../release/deployment-groups/index.md) agent) may be used for agent registration.
 
 For more information, see [Register an agent using a personal access token (PAT)](./pat-agent-registration.md)
 
