@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 7/11/2023
+ms.date: 9/27/2023
 
 ms.topic: article
 ms.service: azure-devops
@@ -37,6 +37,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="8"><a href="2023/sprint-228-update.md" data-raw-source="[27 September 2023](2023/sprint-227-update.md)"> 27 September 2023</a></td>
+    <td>Managed identity and service principal support for Azure DevOps now in general availability (GA)</td><td>General</td><td>Future</td></tr>
+    <td>New Azure DevOps scopes available for Microsoft Identity OAuth delegated flow apps</td><td>General</td><td>Future</td></tr>
+    <td>Changes to Code Scanning (CodeQL) user input task and variables</td><td>General</td><td>N/A</td></tr>
+    <td>Publish task is no longer required for Setting up code Scanning</td><td>General</td><td>N/A</td></tr>
+    <td>CodeQL code scanning now supports Swift</td><td>General</td><td>N/A</td></tr>
+    <td>Team Automation Rules (private preview)</td><td>Boards</td><td>Future</td><tr>   
+    <td>Pipeline logs now contain resource utilization</td><td>Pipelines</td><td>Future</td></tr>  
+    <td>Azure Pipelines agent now supports Alpine Linux</td><td>Pipelines</td><td>N/A</td></tr>
+<tr>
 <tr>
     <td rowspan="8"><a href="2023/sprint-227-update.md" data-raw-source="[14 September 2023](2023/sprint-227-update.md)"> 14 September 2023</a></td>
     <td>Limits for area and iteration paths</td><td>Boards</td><td>Future</td></tr>
