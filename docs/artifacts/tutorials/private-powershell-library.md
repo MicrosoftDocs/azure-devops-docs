@@ -220,7 +220,7 @@ Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://
 
 ## Register and install module using Azure Pipelines
 
-The following example shows how to authenticate and install a PowerShell Module with YAML pipeline. To use your personal access token in your YAML pipeline, add it as a pipeline variable as follow:
+This example illustrates the process of authenticating and installing a PowerShell Module using a YAML pipeline. To use your personal access token within the pipeline, you should include it as a pipeline variable, as follows:
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -262,8 +262,6 @@ steps:
   env:
     VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
 ```
-
-#### [Linux](#tab/linux/)
 
 ---
 
