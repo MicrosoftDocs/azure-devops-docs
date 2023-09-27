@@ -6,3 +6,4 @@ ms.topic: include
 ---
 
 - [Pipeline logs now contain resource utilization](#pipeline-logs-now-contain-resource-utilization)
+- [Azure Pipelines agent now supports Alpine Linux](#azure-pipelines-agent-now-supports-alpine-linux)
