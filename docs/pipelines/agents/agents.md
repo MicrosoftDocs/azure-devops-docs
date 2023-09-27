@@ -415,7 +415,7 @@ To register an agent, you need to be a member of the [administrator role](pools-
 
 ::: moniker range="azure-devops"
 
-Your agent can authenticate to Azure Pipelines using the following method:
+Your agent can authenticate to Azure Pipelines using the following methods:
 
 * [Personal access token (PAT)](./agent-authentication-options.md#personal-access-token-pat)
 * [Service Principal (SP)](./agent-authentication-options.md#service-principal-sp)
@@ -428,9 +428,9 @@ Your agent can authenticate to Azure Pipelines using the following method:
 Your agent can authenticate to Azure DevOps Server or TFS using one of the following methods:
 
 * [Personal access token (PAT)](./agent-authentication-options.md#personal-access-token-pat)
-* [Integrated](./agent-authentication-options.md##integrated)
-* [Negotiate](./agent-authentication-options.md##negotiate)
-* [Alternate (ALT)](./agent-authentication-options.md##alternate-alt)
+* [Integrated](./agent-authentication-options.md#integrated)
+* [Negotiate](./agent-authentication-options.md#negotiate)
+* [Alternate (ALT)](./agent-authentication-options.md#alternate-alt)
 
 ::: moniker-end
 
