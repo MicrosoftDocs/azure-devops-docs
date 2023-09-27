@@ -218,9 +218,20 @@ Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://
 > [!NOTE]
 > If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
-## Connect to feed with Azure Pipelines
+## Register and install module using Azure Pipelines
 
-The following example shows how to authenticate and install a PowerShell Module with YAML pipeline.
+The following example shows how to authenticate and install a PowerShell Module with YAML pipeline. To use your personal access token in your YAML pipeline, add it as a pipeline variable as follow:
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, select your pipeline and then select **Edit** to edit your pipeline.
+
+1. Select **Variables** at the top right corner, and then select the **+** sign to create a new variable.
+
+1. Provide a **Name** for your variable, and then paste your personal access token in the **Value** textbox. 
+ 
+1. Make sure you select the **Keep this value secret** checkbox. Select **Ok** when you're done. You are now ready to use your variable in your pipeline.
+
 
 ```yaml
 variables:
