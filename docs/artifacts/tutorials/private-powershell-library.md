@@ -232,34 +232,40 @@ The following example shows how to authenticate and install a PowerShell Module 
  
 1. Make sure you select the **Keep this value secret** checkbox. Select **Ok** when you're done. You are now ready to use your variable in your pipeline.
 
+##### [Windows](#tab/windows/)
 
 ```yaml
+trigger:
+- main
+
+pool:
+  vmImage: 'Windows-latest'
+
 variables:
-  PackageFeedEndpoint: https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2 # For Project-scoped feed use this endpoint url: https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2 
-  
-  # Construct a JSON object that contains the endpoint URL and the personal access token to pass them to Azure Artifacts credential provider. 
-  PackageFeedEndpointCredential: '{"endpointCredentials": [{"endpoint":"$(PackageFeedEndpoint)", "username":"OPTIONAL", "password":"ACCESS TOKEN"}]}'
-  
+  PackageFeedEndpoint: 'https://pkgs.dev.azure.com/ramiMSFTDevOps/PsRepository/_packaging/PsRepositoryFeed/nuget/v2'
+  PackageFeedEndpointCredential: '{"endpointCredentials": [{"endpoint":"$(PackageFeedEndpoint)", "username":"Admin", "password":"$(AZURE_DEVOPS_PAT)"}]}'
+
 steps:
-  # To prevent possible 'Unable to resolve package source' errors when installing modules from your feed, call Install-Module in a separate PowerShell task.
-  - powershell: |
-      Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "$(PackageFeedEndpoint)" -PublishLocation "$(PackageFeedEndpoint)" -InstallationPolicy Trusted
-    displayName: 'Register Azure Artifacts Feed as PSRepository'
-    env:
-      # This environment variable passes the credentials to the credential provider.
-      VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
-      
-  - powershell: |
-      Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices
-    displayName: 'Install Get-Hello PowerShell module'
-    env:
-      # The credentials must be set on every task that interacts with your private PowerShell repository.
-      VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
-      
-  - powershell: |
-        Get-Hello
-    displayName: Execute Get-Hello
+- powershell: |
+    Register-PSRepository -Name "psRepoPipeline" -SourceLocation '$(PackageFeedEndpoint)' -InstallationPolicy Trusted
+  displayName: 'Register Azure Artifacts Feed as PSRepository'
+  env:
+    VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
+
+- powershell: |
+     echo (Get-PSRepository)
+  displayName: 'Get all module repositories'
+
+- powershell: |
+    Find-Module -Name "Get-Hello" | Install-Module -Confirm:$false -Force
+  displayName: 'Install the Get-Hello PowerShell module'
+  env:
+    VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
 ```
+
+#### [Linux](#tab/linux/)
+
+---
 
 ## Related articles
 
