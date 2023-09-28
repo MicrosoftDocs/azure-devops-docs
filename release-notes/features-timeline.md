@@ -345,11 +345,16 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     <tbody>
       <tr>
       <tr>
-        <td rowspan="19"><strong>2023 Q3</strong></td>
+        <td rowspan="20"><strong>2023 Q3</strong></td>
+        <td><img src="roadmap/2023/media/checkmark.png" alt="Done"><a href="/azure/devops/pipelines/agents/scale-set-agents#orchestration-modes" data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode)">Support Flexible Orchestration mode in scale set agent pools</a></td>
+        <td>Pipelines</td>
+        <td>N/A</td>
+      </tr>  
+     <tr>
         <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (general availability)</a></td>
         <td>Pipelines and Repos</td>
         <td>N/A</td>
-      </tr>    
+      </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
         <td>General</td>
@@ -439,7 +444,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/2023/sprint-217-update#pull-request-widget-for-multiple-repos-private-preview" data-raw-source="[Pull request widget for multiple repos](/azure/devops/release-notes/2023/sprint-217-update#pull-request-widget-for-multiple-repos-private-preview)">Pull request widget for multiple repos (general availability)</a></td>
         <td>Reporting</td>
         <td>Future</td>
-      </tr>                  
+      </tr>    
       <tr>
         <td rowspan="3"><strong>2023 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
@@ -497,11 +502,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Boards</td>
         <td>Future</td>
       </tr>         
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode" data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode)">Support Flexible Orchestration mode in scale set agent pools</a></td>
-        <td>Pipelines</td>
-        <td>Future</td>
-      </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/support-pipelines-app" data-raw-source="[Support Pipelines App with GitHub Enterprise](/azure/devops/release-notes/roadmap/support-pipelines-app)">Support Pipelines App with GitHub Enterprise</a></td>
         <td>Pipelines</td>
