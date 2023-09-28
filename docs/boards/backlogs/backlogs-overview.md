@@ -249,6 +249,9 @@ This organization enables management teams to focus on high-level features and e
 
 For more information about hierarchical team and backlog structures, see [Portfolio management](../plans/portfolio-management.md).
 
+> [!IMPORTANT]
+> You have the flexibility to establish child links with work items from different projects. However, if the processes differ between projects, the hierarchy won't be visible on the backlog for those child items residing in the separate projects. Nonetheless, you can view all of the associated child items directly on the work item form.
+
 ### Reordering and reparenting work items 
 
 All backlogs and boards support dragging to reorder and reparent work items. Updates made to one team's backlogs and boards are reflected in other team backlogs and boards that share the same area path. You may need to refresh the page to view the changes. 
