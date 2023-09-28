@@ -29,7 +29,7 @@ To create an OAuth 2.0 app, you can rely on:
 1. [our own implementation](./azure-devops-oauth.md) or,
 2. use the implementation available through the [Microsoft Identity Platform, aka **Azure Active Directory OAuth**](/azure/active-directory/fundamentals/auth-oauth2). 
 
-We recommend that new apps move forward with registering on Azure AD OAuth, which comes with all of the powerful features of the Microsoft Identity platform. Azure DevOps OAuth remains sspported, but no active investment is being made on this model at this time.
+We recommend that new apps move forward with registering on Azure AD OAuth, which comes with all of the powerful features of the Microsoft Identity platform. Azure DevOps OAuth remains supported, but no active investment is being made on this model at this time.
 
 ### Azure Active Directory OAuth
 When you create an Azure AD OAuth app, your app is issued Azure Active Directory (Azure AD) tokens, not Azure DevOps access tokens. These tokens have a standard 1-hour duration before expiration.
