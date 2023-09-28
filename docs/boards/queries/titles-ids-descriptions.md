@@ -87,7 +87,7 @@ When you want to filter on a string match, try using the `Contains Words` operat
 While the `Contains` operator runs a table scan, which isn't only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
 
 > [!NOTE]
-> The `Contains Words` operator makes use of SQL's [full-text search indexing](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-operators-variables?view=azure-devops#full-text). When a new value is saved to a long-text field, SQL Server will:
+> The `Contains Words` operator makes use of SQL's [full-text search indexing](./query-operators-variables.md#full-text). When a new value is saved to a long-text field, SQL Server will:
 >
 > - Split the phrase into individual words
 > - Remove any common words that don't really add value to a search (like "a" or "is" in English)
