@@ -92,6 +92,13 @@ See the following table of examples.
 
 ::: moniker-end
 
+::: moniker range="<= azure-devops-2022"
+
+> [!NOTE]   
+> There is a delay when completing the AB# links if you are using Azure DevOps Sever and GitHub Enterprise Server. We have a 'push-and-pull' design to pull from the GitHub events every hour on the incremental changes on Commit, PR, and Issue.
+> 
+::: moniker-end
+
 ## View or open links from the Development section
 
 The Development section within the work item form lists the links created to GitHub commits and pull requests with the :::image type="icon" source="../../media/icons/github.png" border="false"::: GitHub icon. 

@@ -21,9 +21,9 @@ Your product is successful, your organization is growing, and it's time to scale
 
 - How do I give my teams autonomy to iterate at the pace that's right for them?
 
-These questions aren't just applicable to newly growing teams. If you're an established team with a legacy codebase, you may be asking these same questions as you're being asked to deliver more value, faster than ever. Regardless of your situation, componentization can help you build a codebase that scales to the size of your team and the speed of today's development.
+Teams at any stage can benefit from considering these questions. If you're an established team with a legacy codebase, you may be asking these same questions as you're being asked to deliver more value, faster than ever. Regardless of your situation, componentization can help you build a codebase that scales to the size of your team and the speed of today's development.
 
-In this article, we'll explore how binary composition through Azure Artifacts can help you manage and share your external dependencies, your open-source software, and your isolated shared components.
+In this article, we explore how binary composition through Azure Artifacts can help you manage and share your external dependencies, your open-source software, and your isolated shared components.
 
 ## Components and composition
 
@@ -35,13 +35,13 @@ As your product grows, the solution and the project model can become inefficient
 
 Once you've outgrown a single solution, how you componentize becomes an interesting question. We started with **source composition**, where each component is referenced via a project reference in Visual Studio. Source composition is possible as long as your source lives in a single composition boundary: a single solution within a single source repository.
 
-Unfortunately, these project references start to break down when multiple solutions are involved. At this point, when solution A depends on solution B it must refer to the built binaries (i.e. DLLs) produced by solution B - this is **binary composition**.
+Unfortunately, these project references start to break down when multiple solutions are involved. At this point, when solution A depends on solution B it must refer to the built binaries (such as DLLs) produced by solution B - this is **binary composition**.
 
 Accordingly, these binaries now need to be built and made available to solution A before it can build successfully. There are a few ways to do that:
 
 - You can check them into source control. Depending on your source control system, binaries can quickly balloon the size of your repo, slowing check-out times and general repo performance. If you start to work in branches, multiple teams can end up introducing the same binary at different versions, leading to challenging merge conflicts.
 
-- Alternatively, you can host them on a file share, although this approach comes with certain limitations. File shares lack an index for quick lookups, and they do not provide protection against overwriting a version in the future.
+- Alternatively, you can host them on a file share, although this approach comes with certain limitations. File shares lack an index for quick lookups, and they don't provide protection against overwriting a version in the future.
 
 ## Package composition
 
@@ -69,3 +69,9 @@ Then, for each group of related components, ask these questions:
 - For a single set, is there a shared release cadence?
 
 In our experience, we have found that using  **source composition** is most effective for related projects handled by a single team or a group of related teams. Conversely, **binary composition** proves advantageous for open-source software, external dependencies (components from distant or isolated teams), and independent shared components.
+
+## Related articles
+
+- [Azure Artifacts: best practices](./concepts/best-practices.md)
+- [Artifacts storage consumption](artifact-storage.md)
+- [Manage permissions](./feeds/feed-permissions.md)

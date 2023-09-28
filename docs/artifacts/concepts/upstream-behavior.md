@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 08/22/2023
 ms.author: rabououn
 author: ramiMSFT
-monikerRange: '<= azure-devops'
+monikerRange: 'azure-devops'
 ---
 
 # Configure upstream behavior

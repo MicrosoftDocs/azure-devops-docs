@@ -141,7 +141,7 @@ The following built-in functions can be used in expressions.
 ::: moniker range=">= azure-devops-2019"
 
 ### coalesce
-* Evaluates the parameters in order, and returns the value that does not equal null or empty-string.
+* Evaluates the parameters in order, and returns the first value that does not equal null or empty-string.
 * Min parameters: 2. Max parameters: N
 * Example: `coalesce(variables.couldBeNull, variables.couldAlsoBeNull, 'literal so it always works')`
 
@@ -490,7 +490,7 @@ You can use the following status check functions as expressions in conditions, b
 
 <h3 id="always">always</h3>
 
-* Always evaluates to <code>True</code> (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
+* Always evaluates to `True` (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
 
 ### canceled
 * Evaluates to `True` if the pipeline was canceled.
@@ -527,7 +527,7 @@ You can use `if`, `elseif`, and `else` clauses to conditionally assign variable 
 ::: moniker range="< azure-devops-2022"
 You can use `if`  to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
 
-The `elseif` and `else` clauses are are available starting with Azure DevOps 2022 and are not available for Azure DevOps Server 2020 and earlier versions of Azure DevOps.
+The `elseif` and `else` clauses are available starting with Azure DevOps 2022 and are not available for Azure DevOps Server 2020 and earlier versions of Azure DevOps.
 
 ::: moniker-end
 

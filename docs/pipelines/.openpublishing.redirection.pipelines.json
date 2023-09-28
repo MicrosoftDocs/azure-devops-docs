@@ -184,6 +184,18 @@
     {
       "source_path": "docs/pipelines/packages/jenkins.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/nuget"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/release/configure-workflow-identity.md",
+      "redirect_url": "/azure/devops/pipelines/release/configure-workload-identity"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/release/troubleshoot-workflow-identity.md",
+      "redirect_url": "/azure/devops/pipelines/release/troubleshoot-workload-identity"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/release/integrate-jenkins-pipelines-cicd.md",
+      "redirect_url": "/azure/devops/pipelines/release/artifacts"
     }
   ]
 }

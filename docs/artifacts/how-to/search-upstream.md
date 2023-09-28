@@ -4,7 +4,7 @@ description: How to search for packages in upstream sources
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 09/29/2022
-monikerRange: '<= azure-devops'
+monikerRange: 'azure-devops'
 ---
 
 # Search for packages in upstream sources
@@ -47,10 +47,10 @@ Using upstream sources enable developers to consume packages from different feed
 
     :::image type="content" source="../media/upstream-packages.png" alt-text="A screenshot showing package versions from upstream.":::
 
-## Save packages
-
 > [!NOTE]
-> Saving packages to your feed is only supported for NuGet, Npm, and Universal Packages.
+> Searching for packages in upstream sources from your feed is only supported in Azure DevOps services.
+
+## Save packages
 
 1. To save a package, select the ellipsis button and then select  **Save to feed**.
 
@@ -63,6 +63,9 @@ Using upstream sources enable developers to consume packages from different feed
 1. The saved versions will have the `In this feed` tag.
 
     :::image type="content" source="../media/downloaded-versions-from-upstream.png" alt-text="A screenshot showing the downloaded versions.":::
+
+> [!NOTE]
+> Saving package versions to your feed from the search upstreams result list is only supported for NuGet, Npm, and Universal Packages.
 
 ## Related articles
 

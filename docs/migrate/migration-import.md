@@ -62,19 +62,19 @@ You run the validation by using the data migration tool. To start, [download the
 1. Because this is your first time validating a collection, let's keep it simple. Your command should have the following structure:
 
 	```cmdline
-	Migrator validate /collection:{collection URL} /tenantDomainName:{name}
+	Migrator validate /collection:{collection URL} /tenantDomainName:{name} /region:{region}
 	```
 
 	Where `{name}` provides the name of your Azure Active Directory tenant. For example, to run against the *DefaultCollection* and the *fabrikam* tenant, the command would look like:
 
 	```cmdline
-	Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com
+	Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region}
 	```
 
 1. To run the tool from a machine other than the Azure DevOps Server, you need the **/connectionString** parameter. The connection string parameter points to your Azure DevOps Server configuration database. As an example, if the validate command is being run by the Fabrikam corporation, the command would look like:
 
 	```cmdline
-	Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
+	Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region} /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
 	```
 
 	> [!Important]
@@ -489,11 +489,11 @@ After the import has finished, you can delete the blob container and accompanyin
 
 A [shared access signature (SAS) token](/azure/storage/common/storage-sas-overview) provides delegated access to resources in a storage account. The token allows you to give Microsoft the lowest level of privilege that's required to access your data for executing the import. 
 
-SAS tokens can be [generated using the Azure Portal](/azure/storage/blobs/blob-containers-portal#generate-a-shared-access-signature). From a security point-of-view, we recommend:
+SAS tokens can be [generated using the Azure portal](/azure/storage/blobs/blob-containers-portal#generate-a-shared-access-signature). From a security point-of-view, we recommend:
 
 1. Selecting only **Read** and **List** as permissions for your SAS token. No other permissions are required.
 2. Setting an expiry time no further than seven days into the future.
-3. [Restricting IP addresses to only those used by the import process](migration-import-large-collections.md#optional-restrict-access-to-azure-devops-services-ips-only).
+3. [Restrict access to Azure DevOps Services IPs only](migration-restricting-access-to-azure-devops-services.md).
 4. Placing the SAS token in a secure location.
 
 ### Step 5: Complete the import specification
@@ -514,7 +514,15 @@ Using the Fabrikam example, the final import specification file should look like
 
 ### Restrict access to Azure DevOps Services IPs only
 
-We highly recommend that you restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You do this by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your storage account depend on the region you're importing into. Use the IpList option to get the list of IPs that need to be granted access.
+See the [Restrict access to Azure DevOps Services IPs only](migration-restricting-access-to-azure-devops-services.md) page for more details.
+
+#### Option 1: Using Service Tags
+
+You can easily allow connections from all Azure DevOps Services regions by adding the `azuredevops` [Service Tag](/azure/virtual-network/service-tags-overview) to your network security groups or firewalls either through the portal or programmatically.
+
+#### Option 2: Using IpList
+
+Use the `IpList` command to get the list of IPs that need to be granted access to allow connections from a specific Azure DevOps Services region.
 
 Included in the help documentation are instructions and examples for running Migrator from the Azure DevOps Server instance itself and a remote machine. If you're running the command from one of the Azure DevOps Server instance's application tiers, your command should have the following structure:
 
@@ -522,8 +530,7 @@ Included in the help documentation are instructions and examples for running Mig
 Migrator IpList /collection:{CollectionURI} /tenantDomainName:{name} /region:{region}
 ```
 
-> [!NOTE] 
-> Alternatively, you can also use [Service Tags](/azure/virtual-network/service-tags-overview) in place of explicit IP ranges. Azure Service Tags are a convenient way for customers to manage their networking configuration to allow traffic from specific Azure services. Customers can easily allow access by adding the tag name azuredevops to their network security groups or firewalls either through the portal or programmatically. 
+You can add the list of IPs to your network security groups or firewalls either through the portal or programatically.
 
 ### Determine the import type
 

@@ -4,16 +4,17 @@ description: How to use npm scopes in Azure Artifacts
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 06/08/2022
+ms.date: 09/11/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Npm scopes
+# Use Npm scopes in Azure Artifacts
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Npm scopes are a way of grouping related packages together. A scope allows you to create a package with the same name as other packages created by different users without conflicts. Using scopes, you can separate public and private packages by adding the scope prefix *@SCOPE_NAME* and configuring the *.npmrc* file to only use a feed for that scope.
-With Azure Artifacts, you can publish and download both scoped and non-scoped packages to/from feeds or public registries. Using npm scopes is also useful with self-hosted on-premise servers that do not have internet access because setting up upstream sources in that case is not possible. Using scopes:
+Npm scopes serve as a means to categorize related packages into groups. These scopes enable you to create packages with identical names to those created by different users without encountering conflicts. By using scopes, you have the ability to segregate public and private packages by adding the scope prefix *@scopeName* and configuring the .npmrc file to exclusively use a feed with that particular scope.
+
+Azure Artifacts provides the capability to publish and download both scoped and nonscoped packages from feeds or public registries. Npm scopes are particularly valuable when working with self-hosted on-premises servers lacking internet access, as configuring upstream sources in such scenarios isn't feasible. In summary, when using scopes:
 
 - We don't have to worry about name collisions.
 - No need to change the npm registry in order to install or publish our packages.
@@ -23,24 +24,76 @@ With Azure Artifacts, you can publish and download both scoped and non-scoped pa
 
 [!INCLUDE [](../includes/npm/npmrc.md)]
 
-In your .npmrc file, replace `registry=<YOUR_SOURCE_URL>` with `@SCOPE_NAME:registry=<YOUR_SOURCE_URL>`. Make sure you add the scope and package names to your *package.json* file: `{ "name": "@SCOPE_NAME/PACKAGE_NAME" }`.
+## Scope setup
 
-```npmrc
-@[SCOPE_NAME]:registry=https://pkgs.dev.azure.com/[ORGANIZATION_NAME]/_packaging/[FEED_NAME]/npm/registry/
+In your .npmrc file, replace `registry=<YOUR_SOURCE_URL>` with `@ScopeName:registry=<YOUR_SOURCE_URL>`. 
+
+Make sure to include both the scope and package names in your package.json file as follows:  `{ "name": "@ScopeName/PackageName" }`. See the examples below:
+
+- **Organization-scoped feed**:
+
+    ```.npmrc file
+    @ScopeName:registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/
+        
+    always-auth=true
+    ```
     
-always-auth=true
+    ```package.json
+    {
+    "name": "@ScopeName/PackageName" 
+    }
+    ```
+
+- **Project-scoped feed**:
+
+    ```.npmrc file
+    @ScopeName:registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
+        
+    always-auth=true
+    ```
+
+    ```package.json
+    {
+    "name": "@ScopeName/PackageName" 
+    }
+    ```
+
+- **Example**:
+
+
+    ```.npmrc file
+    @local:registry=https://pkgs.dev.azure.com/FabrikamOrg/NpmDemo/_packaging/FabrikamFeed/npm/registry/
+        
+    always-auth=true
+    ```
+    
+    ```package.json
+    {
+      "name": "@demo/js-e2e-express-server",
+      "version": "2.0.0",
+      "description": "JavaScript server written with Express.js",
+      "main": "index.js",
+      "directories": {
+        "doc": "docs",
+        "test": "test"
+      }
+    ```
+
+## Publish scoped packages
+
+Open a command prompt window, navigate to your project directory, and run the following command to publish your scoped package. In our example, our package is listed under the @local view.
+
+```Command
+npm publish
 ```
 
-```package.json
-{
-"name": "[@SCOPE_NAME]/[PACKAGE_NAME]" 
-}
-```
+:::image type="content" source="media/publish-scoped-packages.png" alt-text="A screenshot showing a scoped package in an Azure Artifacts feed.":::
+
 ## Upstream sources vs scopes
 
-Upstream sources give you the most flexibility to use a combination of scoped and non-scoped packages in your feed, as well as scoped and non-scoped packages from public registries such as npmjs.com.
+Upstream sources give you the most flexibility to use a combination of scoped and nonscoped packages in your feed, as well as both scoped and nonscoped packages from public registries like npmjs.com.
 
-Scopes add another restriction when naming your packages: each package name must start with `@<scope>`. If you want to publish your private packages to public registries, you must do so with the scopes intact. If you remove package scopes when deploying your packages, you'll need to update all the references in your *package.json*. With that in mind, scopes can be a viable alternative to [upstream sources](../concepts/upstream-sources.md).
+Scopes, however, impose a naming restriction on your packages: each package name must start with `@<scope>`. If you want to publish your private packages to public registries, you must do so with the scopes intact. If you remove package scopes when deploying your packages, you'll need to update all the references in your *package.json* file. With that in mind, scopes can serve as a viable alternative to [upstream sources](../concepts/upstream-sources.md).
 
 ## Related articles
 
