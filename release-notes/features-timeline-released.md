@@ -38,6 +38,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="8"><a href="2023/sprint-227-update.md" data-raw-source="[14 September 2023](2023/sprint-227-update.md)"> 14 September 2023</a></td>
+    <td>Limits for area and iteration paths</td><td>Boards</td><td>Future</td></tr>
+    <td>Pipeline agents can be registered using Azure Active Directory instead of a PAT</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Workload identity federation for Azure Pipelines (public preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>REST APIs for Environments</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Prevent Unintended Pipeline Runs</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Build GitHub Repositories Securely by Default</td><td>Pipelines</td><td>Future</td><tr>   
+    <td>Disabled override of code coverage policy status to Failed when build is failing </td><td>Pipelines</td><td>Future</td></tr>  
+    <td>Blobless and treeless filter support</td><td>Repos</td><td>Future</td></tr>
+<tr>
+<tr>
     <td rowspan="6"><a href="2023/sprint-226-update.md" data-raw-source="[23 August 2023](2023/sprint-226-update.md)"> 23 August 2023</a></td>
     <td>Project and organization-level enablement for Advanced Security </td><td>General</td><td>Future</td></tr>
     <td>Estimated committer count during Advanced Security enablement </td><td>General</td><td>Future</td></tr>
@@ -282,7 +293,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Improved tenant switch requests reliability</td><td>General</td><td>N/A</td></tr>
     <td>Emphasize tags in Delivery Plans using colors</td><td>Boards</td><td>2022</td></tr>
     <td>Filter cards based on boolean field types in Delivery Plans</td><td>Boards</td><td>2022</td></tr>
-    <td>Work item title are always visible in Delivery Plan cards</td><td>Boards</td><td>2022</td></tr>
+    <td>Work item titles are always visible in Delivery Plan cards</td><td>Boards</td><td>2022</td></tr>
     <td>Show light green colored dependency icon for work items that have dependencies with no issues</td><td>Boards</td><td>2022</td></tr>
     <td>macOS-latest label will soon point to macOS-11 image</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Updated schedule for removal of Ubuntu 16.04 image on Microsoft-hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
@@ -439,7 +450,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Allow stakeholders to drag and drop work items</td><td>Boards</td><td>Future</td>
     </tr>
     <tr><td>Default branch name preference</td><td>Repos</td><td>Future</td></tr>
-    <tr><td>Updates to MacOS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Updates to macOS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>[Feedback] Git Draft Pull Requests should not trigger the pipeline</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Multi-repo triggers for Azure Repos</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
@@ -565,7 +576,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Checkout multiple repositories in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Use GitHub Actions to trigger a run in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Updated ServiceNow integration with Azure Pipelines</td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td>Set VSTest tasks to fail if a minimum number of test are not run</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Set VSTest tasks to fail if a minimum number of tests are not run</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>UCS-4 support for Python 2.7</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Create bulk subscriptions in Azure Pipelines app for Slack and Microsoft Teams</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Create bulk subscriptions in Azure Repos app for Slack and Microsoft Teams</td><td>Repos</td><td>N/A</td></tr>

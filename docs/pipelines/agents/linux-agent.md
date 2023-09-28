@@ -100,7 +100,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. On the right pane, click the **Download** button.
 
-1. Follow the instructions on the page.</li>
+1. Follow the instructions on the page.</br>
 
 1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.
 

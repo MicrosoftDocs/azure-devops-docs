@@ -419,6 +419,21 @@
       "source_path": "docs/repos/git/configure-repos-work-tracking.md",
       "redirect_url": "/azure/devops/cross-service/cross-service-overview#azure-boards--azure-repos",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/work-item-url-hyperlink.md",
+      "redirect_url": "/azure/devops/boards/work-items/email-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/faq-search.yml",
+      "redirect_url": "/azure/devops/project/search/manage-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/search-settings.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
     }
   ]
 }

@@ -67,6 +67,8 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 
 ::: moniker-end
 
+> [!IMPORTANT]
+> You have the flexibility to establish child links with work items from different projects. However, if the processes differ between projects, the hierarchy won't be visible on the backlog for those child items residing in the separate projects. Nonetheless, you can view all of the associated child items directly on the work item form.
 
 <a id="feature-team-backlog"> </a>
 

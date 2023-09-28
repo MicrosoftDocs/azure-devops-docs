@@ -19,7 +19,7 @@ They cover actions like creating new [variables](../process/variables.md), marki
 
 |Type  |Commands  |
 |---------|---------|
-|Task commands     |    [AddAttachment](#addattachment-attach-a-file-to-the-build), [Complete](#complete-finish-timeline), [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [LogIssue](#logissue-log-an-error-or-warning), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [SetProgress](#setprogress-show-percentage-completed), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary) |
+|Task commands     |    [AddAttachment](#addattachment-attach-a-file-to-the-build), [Complete](#complete-finish-timeline), [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [LogIssue](#logissue-log-an-error-or-warning), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [SetProgress](#setprogress-show-percentage-completed), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [SetSecret](#setsecret-register-a-value-as-a-secret), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary) |
 |Artifact commands     |   [Associate](#associate-initialize-an-artifact), [Upload](#upload-upload-an-artifact)      |
 |Build commands     |  [AddBuildTag](#addbuildtag-add-a-tag-to-the-build), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [UploadLog](#uploadlog-upload-a-log) |
 |Release commands     |    [UpdateReleaseName](#updatereleasename-rename-current-release)     |
@@ -435,6 +435,70 @@ Secrets are not automatically mapped in, secretSauce is
 You can use macro replacement to get secrets, and they'll be masked in the log: ***
 ```
 ::: moniker-end
+
+### SetSecret: Register a value as a secret
+
+`##vso[task.setsecret]value`
+
+#### Usage
+
+The value is registered as a secret for the duration of the job. The value will be masked out from the logs from this point forward. This command is useful when a secret is transformed (e.g. base64 encoded) or derived.
+
+Note: Previous occurrences of the secret value will not be masked. 
+
+#### Examples
+
+# [Bash](#tab/bash)
+
+Set the variables:
+
+```yaml
+- bash: |
+    NEWSECRET=$(echo $OLDSECRET|base64)
+    echo "##vso[task.setsecret]$NEWSECRET"
+  name: SetSecret
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+Read the variables:
+
+```yaml
+- bash: |
+    echo "Transformed and derived secrets will be masked: $(echo $OLDSECRET|base64)"
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+# [PowerShell](#tab/powershell)
+
+Set the variables:
+
+```yaml
+- pwsh: |
+    $NewSecret = [convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($env:OLDSECRET))
+    Write-Host "##vso[task.setsecret]$NewSecret"
+  name: SetSecret
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+Read the variables:
+
+```yaml
+- pwsh: |
+    Write-Host "Transformed and derived secrets will be masked: $([convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($env:OLDSECRET)))"
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+---
+
+Console output:
+
+```
+Transformed and derived secrets will be masked: ***
+```
 
 ### SetEndpoint: Modify a service connection field
 

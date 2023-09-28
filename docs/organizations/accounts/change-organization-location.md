@@ -8,7 +8,7 @@ ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 06/21/2023
+ms.date: 09/13/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-When you [create an organization](create-organization.md) in Azure DevOps, you can choose the region your organization is hosted in. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers. Your organization's default location is based on the closest [Microsoft Azure geography](https://azure.microsoft.com/regions) where Azure DevOps is available.
+When you [create an organization](create-organization.md) in Azure DevOps, you can choose the region your organization gets hosted in. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers. Your organization's default location is based on the closest [Microsoft Azure geography](https://azure.microsoft.com/regions) where Azure DevOps is available.
 
 ## Find your organization geography
 
@@ -49,6 +49,8 @@ When you [create an organization](create-organization.md) in Azure DevOps, you c
 > We default your organization to your closest geography. Making a change to another data center within your geography isn't possible, for example, changing from EastUS to CentralUS.
 
 To change your organization region, use [Azure DevOps Virtual Support Agent](https://go.microsoft.com/fwlink/?linkid=2163146).
+
+Currently, we can't provide a specific time frame for your organization's relocation, as the migration process may experience potential delays stemming from various factors, and it's automated in nature. The process could get rescheduled to take place over the weekend until all necessary changes are successfully completed.
 
 ## Related articles
 
