@@ -13,7 +13,7 @@ ms.date: 07/26/2023
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
-> The following information remains available for all existing Azure DevOps OAuth apps. We recommend new app developers look into the Microsoft Identity Platform to create an Azure AD OAuth app instead, which is being continuously worked on..
+> The following information remains available for all existing Azure DevOps OAuth apps. We recommend new app developers look into the [Microsoft Identity Platform](./oauth?#azure-ad-oauth) to develop OAuth apps with Azure DevOps.
 
 Azure DevOps is an identity provider for OAuth 2.0 apps as well. Our implementation of OAuth 2.0 allows developers to authorize their app for users and get access tokens to access Azure DevOps resources.
 
