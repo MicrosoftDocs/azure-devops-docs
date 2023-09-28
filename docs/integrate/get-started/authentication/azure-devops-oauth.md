@@ -17,7 +17,7 @@ ms.date: 07/26/2023
 
 Azure DevOps is an identity provider for OAuth 2.0 apps as well. Our implementation of OAuth 2.0 allows developers to authorize their app for users and get access tokens to access Azure DevOps resources.
 
-## Getting Started with Azure DevOps OAuth
+## Getting started with Azure DevOps OAuth
 
 ### 1. Register your app
 
