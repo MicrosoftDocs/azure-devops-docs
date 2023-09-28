@@ -8,9 +8,6 @@
   - name: Get started as an administrator
     displayName: add, grant, restrict, user, permission, policies, define, customize, review, update
     href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json
-  - name: Search administrative settings
-    displayName: organization, keyword, notification
-    href: ./settings/search-settings.md?toc=/azure/devops/organizations/toc.json
   - name: Time zone settings
     displayName: timezone, organization
     href: ./settings/timezone-settings-usage.md?toc=/azure/devops/organizations/toc.json
