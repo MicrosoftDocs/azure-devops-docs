@@ -32,7 +32,8 @@ To create extensions for Azure DevOps, you need the following software and tools
 |Node.js    |[Download the latest version](https://nodejs.org/en/download/).          |
 |npmjs.com 4.0.2 or newer    |TypeScript Compiler. [Download the latest version](https://www.npmjs.com/package/typescript).         |
 |tfx-cli   | Package your extension with [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli). using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.|
-| A `home` directory for your project| The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
+|Azure DevOps extension SDK    | [Install the azure-devops-extension-sdk package](https://github.com/Microsoft/azure-devops-extension-sdk)|
+| A `home` directory for your project| The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:|
 
   ```
   |--- README.md    
@@ -40,9 +41,7 @@ To create extensions for Azure DevOps, you need the following software and tools
       |--- extension-icon.png  
   |--- buildandreleasetask            // where your task scripts are placed
   |--- vss-extension.json             // extension's manifest
-  ```         |
-|Azure DevOps extension SDK    | [Install the azure-devops-extension-sdk package](https://github.com/Microsoft/azure-devops-extension-sdk)        |
-
+  ``` 
 
 > [!IMPORTANT]
 > The dev machine needs to run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of azure-pipelines-task-lib.
