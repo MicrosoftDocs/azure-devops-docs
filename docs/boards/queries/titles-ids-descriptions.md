@@ -22,8 +22,6 @@ When you want to find work items based on a keyword or phrase or a null text fie
 
 Query clauses that specify a text or rich-text field can use the operators and macros listed in the following table.
 
-
-
 ---
 :::row:::
    :::column span="1":::
@@ -88,6 +86,15 @@ When you want to filter on a string match, try using the `Contains Words` operat
 
 While the `Contains` operator runs a table scan, which isn't only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
 
+> [!NOTE]
+> The `Contains Words` operator makes use of SQL's [full-text search indexing](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-operators-variables?view=azure-devops#full-text). When a new value is saved to a long-text field, SQL Server will:
+>
+> - Split the phrase into individual words
+> - Remove any common words that don't really add value to a search (like "a" or "is" in English)
+> - Convert words to their common stem (e.g. running, ran, and runner would get converted into "run", as they are all variations on that word)
+> - Store these unique keywords in an index.
+>
+> When a user then runs a query on this field using the `Contains Words` operator, the search will be run against the unique keywords stored in the index. For long-text fields, this makes searching much more efficient and quicker than doing a substring search. By default, SQL defines a "word" as a set of characters between punctuation. For example, periods signify the end of a word, but the period is not considered to be part of the word. Because the full-text search index contains keywords instead of exact phrases, you'll end up getting all the results that contain the same keywords, as determined by the indexing.
 
 <a id="keyword"/>
 
