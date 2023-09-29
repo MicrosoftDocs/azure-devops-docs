@@ -42,7 +42,7 @@ You add projects to an organization or project collection and you add teams to p
 - [Create a project](../projects/create-project.md) 
 - [Add team, go from one default team to others](../settings/add-teams.md)
 
-[!INCLUDE [version-all](../../includes/version-selector-minimize.md)]
+[!INCLUDE [version-all](../../includes/version-selector.md)]
 
 
 ## Supported options for adding users 
