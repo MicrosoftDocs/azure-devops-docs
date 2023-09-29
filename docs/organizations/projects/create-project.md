@@ -19,7 +19,7 @@ ms.date: 11/04/2022
 
 Create an Azure DevOps project to establish a repository for source code and to plan and track work. You can manage and structure your project to support your business needs. Each project provides boundaries to isolate data from other projects. For more information, see [About projects and scaling your organization](about-projects.md).
 
-[!INCLUDE [version-selector](../../includes/version-selector-minimize.md)]
+[!INCLUDE [version-selector](../../includes/version-selector.md)]
 
 If you don't want to create a project in Azure DevOps, you can create [Azure DevOps Projects](/azure/devops-project/).
 
