@@ -75,7 +75,7 @@ As needed, you can do the following actions at any time:
 <a id="admin-intro-team-services" />
 
 
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+[!INCLUDE [temp](../../includes/version-selector.md)]
 
 ## Open Project Settings, list project areas
 

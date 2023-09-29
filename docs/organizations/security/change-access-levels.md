@@ -23,8 +23,7 @@ Access levels grant or restrict access to use the functions and features that Az
 
 For a simplified overview of the permissions that are assigned to the most common groups&mdash;Readers, Contributors, and Project Administrators&mdash;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
-> [!IMPORTANT]  
-> version
+[!INCLUDE [version-selector](../../includes/version-selector.md)]
 
 ## Prerequisites
 
@@ -34,14 +33,13 @@ For a simplified overview of the permissions that are assigned to the most commo
 
 ## Open access levels
 
-You can manage access levels for the collections defined on the application tier. The default access level you set applies to all projects defined for all collections. Users or groups that you add to teams, projects, or collections are granted the access level that you set as the default. To change the access level for a specific group or user, add them specifically to a nondefault access level.
+You can manage access levels for the collections defined on the application tier. The default access level affects all the projects in all the collections. When you add users or groups to teams, projects, or collections, they get the default access level. To give a different access level to a certain user or group, you need to add them to a non-default access level.
 
 ::: moniker range=">= azure-devops-2019"
 
-- From the web portal home page for a project collection (for example, `http://MyServer:8080/tfs/DefaultCollection/`), open **Access levels**. If you are at a project level, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo and then choose **Access levels**.
+- From the web portal home page for a project collection (for example, `http://MyServer:8080/tfs/DefaultCollection/`), open **Access levels**. If you're at a project level, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo and then choose **Access levels**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of web portal, Open Access levels dialog.](media/change-access-levels/open-access-levels-2019.png)
+   ![Screenshot of web portal, Open Access levels dialog.](media/change-access-levels/open-access-levels-2019.png)
 
 	If you don't see **Access levels**, you aren't an administrator and need to [get permission](/azure/devops/server/admin/add-administrator).
 
@@ -53,7 +51,7 @@ From a user context, open **Server Settings** by choosing the :::image type="ico
 
 - From the web portal home page for a project (for example, `http://MyServer:8080/tfs/DefaultCollection/MyProject/`), open **Server settings**.
 
-	<img src="media/access-levels-2017-open-admin-context.png" alt="Screenshot of TFS 2017, Web portal, open the Server settings admin context." />  
+   ![Screenshot of TFS 2017, Web portal, open the Server settings admin context.](media/access-levels-2017-open-admin-context.png) 
 
 ::: moniker-end
 
@@ -67,15 +65,13 @@ Changes you make to the access level settings take effect immediately.
 
 	For example, here we choose **Basic**, and then **Add** to add a group to Basic access.
  
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Basic access level, adding group.](media/change-access-levels/basic-access-2019.png)
+   ![Screenshot of Basic access level, adding group.](media/change-access-levels/basic-access-2019.png)
 
-2. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
+1. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Add users and group dialog.](media/project-level-permissions-add-a-user.png)  
+   ![Screenshot of Add users and group dialog.](media/project-level-permissions-add-a-user.png)  
 
-3. Choose **Save changes**. 
+2. Choose **Save changes**. 
 
 ::: moniker-end
 
@@ -114,10 +110,12 @@ Make sure the default access level is the same as the access you're licensed for
 You can set an access level from its page. Choose **Set as default access level** as shown.
 
 ::: moniker range=">= azure-devops-2019"
+
 ![Screenshot of Stakeholder access level, set as default.](media/change-access-levels/set-stakeholder-as-default-2019.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
 ![Screenshot of Admin context, Control panel, Access levels, Stakeholder tab, set as default access level.](media/change-access-levels-set-default.png)
  
 ::: moniker-end
