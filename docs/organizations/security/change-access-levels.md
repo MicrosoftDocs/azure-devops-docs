@@ -16,17 +16,15 @@ ms.date: 09/28/2023
 
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
-Access levels grant or restrict access to use the functions and features that Azure DevOps Server provides. Access levels are in addition to permissions granted through security groups, which provide or restrict specific tasks. In this article, learn how to change access levels. For more information, see [About access levels](access-levels.md).
-
 > [!NOTE]
-> This article applies to managing access levels for project collections defined on Azure DevOps Server (on-premises). To manage access levels for Azure DevOps Services (cloud), see [Add users to your organization or project](../accounts/add-organization-users.md).
+> This article applies to Azure DevOps Server (on-premises). To manage access levels for Azure DevOps Services (cloud), see [Add users to your organization or project](../accounts/add-organization-users.md).
+
+Access levels grant or restrict access to use the functions and features that Azure DevOps Server provides. Access levels are in addition to permissions granted through security groups, which provide or restrict specific tasks. In this article, learn how to change access levels for users and groups. For more information, see [About access levels](access-levels.md).
 
 For a simplified overview of the permissions that are assigned to the most common groups&mdash;Readers, Contributors, and Project Administrators&mdash;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
-Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features - Basic + Test Plans, Advanced and Visual Studio Enterprise subscriber access levels include all Basic features. In the images provided, the circled features indicate the features made available from the previous access level.
-
 > [!IMPORTANT]  
-> Make sure that you select the correct version of this article. The version selector's located above the table of contents.
+> version
 
 ## Prerequisites
 
@@ -100,6 +98,8 @@ Changes you make to the access level settings take effect immediately.
 ## Change the access level for a user or group 
 
 To assign a different access level to a user or group, you need to first delete their current access level and then grant them the new one.
+
+Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features - Basic + Test Plans. Advanced and Visual Studio Enterprise subscriber access levels include all Basic features.
 
 1. Choose the user or group and then select **Remove**.
 
