@@ -29,7 +29,7 @@ You can upload, download, and delete process templates for a project collection.
 ::: moniker-end 
 
 
-[!INCLUDE [version-all](../../../includes/version-selector-minimize.md)]
+[!INCLUDE [version-all](../../../includes/version-selector.md)]
 
 
 [!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
