@@ -12,13 +12,13 @@ monikerRange: '<= azure-devops'
 
 # Deploy apps to a Windows Virtual Machine
 
-[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to use Azure Pipelines to build and deploy your ASP.NET, ASP.NET Core, or Node.js web app to an IIS web server running on a Windows Virtual Machine.
 
 ## Prerequisites
 
-- An Azure DevOps Organization. [Create an organization](../../../organizations/accounts/create-organization.md), if you don't have one already.
+- An Azure DevOps Organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
 - [Build pipeline](#build-pipeline)
 - [Configure IIS web server](#configure-iis-web-server)
 
@@ -28,15 +28,15 @@ Set up a build pipeline if you don't have one already.
 
 #### [.NET](#tab/net/)
 
-- [Build ASP.NET apps](../aspnet/build-aspnet-4.md)
+- [Build ASP.NET apps](../apps/aspnet/build-aspnet-4.md)
 
 #### [.NET Core](#tab/netcore/)
 
-- [Build .NET Core apps](../../ecosystems/dotnet-core.md)
+- [Build .NET Core apps](../ecosystems/dotnet-core.md)
 
 #### [Node](#tab/node/)
 
-- [Build Node.js apps](../../ecosystems/javascript.md)
+- [Build Node.js apps](../ecosystems/javascript.md)
 
 ---
 
@@ -46,7 +46,7 @@ Configure your IIS server if you haven't done so already
 
 #### [.NET](#tab/net/)
 
-[!INCLUDE [prepare-aspnet-windows-vm](../includes/prepare-aspnet-windows-vm.md)]
+[!INCLUDE [prepare-aspnet-windows-vm](../apps/includes/prepare-aspnet-windows-vm.md)]
 
 #### [.NET Core](#tab/netcore/)
 
@@ -77,7 +77,7 @@ Deployment groups make it easier to organize the servers that you want to use to
 1. When you're prompted for the user account, press **Enter** to accept the defaults.
 
    > [!NOTE]
-   > The agent running the pipeline must have access to the *C:\Windows\system32\inetsrv\* directory. See [Security groups, service accounts, and permissions](../../../organizations/security/permissions-access.md) for more details.
+   > The agent running the pipeline must have access to the *C:\Windows\system32\inetsrv\* directory. See [Security groups, service accounts, and permissions](../../organizations/security/permissions-access.md) for more details.
 
 1. You should see the following message when the script is done *Service vstsagent.account.computername started successfully*.
 
@@ -118,5 +118,5 @@ Using release pipelines, you can deploy your build artifacts to your IIS servers
 
 ## Related articles
 
-- [Deploy from multiple branches](../..//release/deploy-multiple-branches.md)
-- [Deploy pull request Artifacts](../../release/deploy-pull-request-builds.md)
+- [Deploy from multiple branches](deploy-multiple-branches.md)
+- [Deploy pull request Artifacts](deploy-pull-request-builds.md)
