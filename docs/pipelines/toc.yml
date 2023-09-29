@@ -360,14 +360,9 @@
     - name: Stage templates in Azure Pipelines
       href: release/env-templates.md
       displayName: environment, templates, stages
-    - name: Deploy apps to VMs (Classic)
-      items:
-        - name: Windows VMs (Classic)
-          href: apps/cd/deploy-webdeploy-iis-deploygroups.md
-          displayName: windows vm, deployment vm
-        - name: IIS servers (WinRM) (Classic)
-          href: apps/cd/deploy-webdeploy-iis-winrm.md
-          displayName: iis, server, winrm
+    - name: Deploy to a Windows VM
+      href: apps/cd/deploy-webdeploy-iis-deploygroups.md
+      displayName: windows vm, deployment vm
 - name: Deploy to Azure
   items:
     - name: Overview
