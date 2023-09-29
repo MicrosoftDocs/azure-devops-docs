@@ -89,9 +89,6 @@ Create as many work items as you need of the type you need to track the work you
 
 ### [Visual Studio 2019](#tab/visual-studio/)
 
-> [!TIP]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items?view=azure-devops&tabs=visual-studio) instead of the legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
-
 1. Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
 
     > [!div class="mx-imgBorder"]  
