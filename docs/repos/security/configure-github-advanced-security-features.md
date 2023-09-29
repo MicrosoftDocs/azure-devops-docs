@@ -134,14 +134,14 @@ Add the tasks in the following order:
 
 ![Screenshot of code scanning pipeline setup for YAML](media/code-scanning-config-yaml-tasks.png)
 
-Additionally, you'll need to specify which language(s) you're analyzing in the Initialize CodeQL task. A comma separated list can be used to analyze multiple languages at once. The supported languages are `csharp, cpp, go, java, javascript, python, ruby`.  
+Additionally, you'll need to specify which language(s) you're analyzing in the Initialize CodeQL task. A comma separated list can be used to analyze multiple languages at once. The supported languages are `csharp, cpp, go, java, javascript, python, ruby, swift`.  
 
 > [!TIP]
 > CodeQL analysis for Kotlin is currently in beta. During the beta, analysis of Kotlin will be less comprehensive than CodeQL analysis of other languages.
 > Use `java` to analyze code written in Java, Kotlin or both.
 > Use `javascript` to analyze code written in JavaScript, TypeScript, or both. 
 
-If the language specified is `cpp, java,` or `csharp` either custom or `AutoBuild` build steps are required. For other languages, if AutoBuild is included the step completes successfully without performing any action.
+If the language specified is `cpp, java, csharp` or `swift` either custom or `AutoBuild` build steps are required. For other languages, if AutoBuild is included the step completes successfully without performing any action.
 
 
 #### [Classic](#tab/classic)
@@ -153,7 +153,7 @@ Add the tasks in the following order:
 
 :::image type="content" source="media/code-scanning-config-classic-tasks.png" alt-text="Screenshot of code scanning pipeline setup for YAML." lightbox="media/code-scanning-config-classic-tasks.png" :::
 
-Additionally, you will need to specify which language(s) you are analyzing in the Initialize CodeQL task. If the language specified is `cpp, java,` or `csharp,` either custom or `AutoBuild` build steps are required. For other languages, if AutoBuild is included the step completes successfully without performing any action. 
+Additionally, you will need to specify which language(s) you are analyzing in the Initialize CodeQL task. If the language specified is `cpp, java, csharp` or `swift,` either custom or `AutoBuild` build steps are required. For other languages, if AutoBuild is included the step completes successfully without performing any action. 
 
 
 To generate alerts, run your first scan with a pipeline with the code scanning tasks included.
