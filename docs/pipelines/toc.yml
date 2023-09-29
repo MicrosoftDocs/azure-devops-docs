@@ -361,7 +361,7 @@
       href: release/env-templates.md
       displayName: environment, templates, stages
     - name: Deploy to a Windows VM
-      href: apps/cd/deploy-webdeploy-iis-deploygroups.md
+      href: release/deploy-webdeploy-iis-deploygroups.md
       displayName: windows vm, deployment vm
 - name: Deploy to Azure
   items:
