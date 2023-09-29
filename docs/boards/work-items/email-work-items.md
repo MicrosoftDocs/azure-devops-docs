@@ -30,9 +30,9 @@ Emailing lists of work items is a common way to share work tracking information.
 > 
 > * If you're set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).   
 
-
 > [!IMPORTANT]
 > We strongly recommend that everyone use the [default view](view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of the legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+
 ---
 :::row:::
    :::column span="2":::
