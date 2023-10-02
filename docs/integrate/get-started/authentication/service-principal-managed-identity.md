@@ -142,7 +142,7 @@ az login --service-principal -u <app-id> -p <password-or-cert> --tenant <tenant>
 az login --identity
 ```
 
-Now, let's get an Azure AD token and try to call an Azure DevOps API by passing it in the headers as a `Bearer` token:
+Now, let's get an Azure AD token (the Azure DevOps resource's UUID is `499b84ac-1321-427f-aa17-267ca6975798`) and try to call an Azure DevOps API by passing it in the headers as a `Bearer` token:
 ```powershell
 Write-Host "Obtain access token for Service Connection identity..."
 $accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
@@ -298,7 +298,7 @@ A helpful tip on how to get the access token from the Azure CLI to call git fetc
 git config -e
 ```
 
-2. Add the following lines:
+2. Add the following lines, where the Azure DevOps resource's UUID is `499b84ac-1321-427f-aa17-267ca6975798`:
 ```sh
 [credential]
     helper = "!f() { test \"$1\" = get && echo \"password=$(az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query accessToken -o tsv)\"; }; f" 
