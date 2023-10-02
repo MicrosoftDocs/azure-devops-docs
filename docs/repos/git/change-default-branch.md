@@ -101,7 +101,7 @@ trigger:
   branches:
     include:
     - main
-    - main
+    - master
  
 pool: { vmImage: ubuntu-latest }
 steps:
