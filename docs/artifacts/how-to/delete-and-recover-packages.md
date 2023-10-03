@@ -1,6 +1,6 @@
 ---
 title: Delete and recover packages
-description: Learn how to delete packages manually and with retention policies, and how to recover deleted packages from the Recycle Bin.
+description: How to manually delete packages, set up retention policies, and recover deleted packages from the Recycle Bin.
 ms.service: azure-devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.custom: contperf-fy21q2, contperf-fy22q1
@@ -14,21 +14,20 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts safely stores different types of packages in your feed, whether you published them directly or saved them from upstream sources. As older package versions fall out of use, you might want to clean them up either manually or automatically by using retention policies. 
-
-In this article, you'll learn how to:
+Azure Artifacts securely stores various package types within your feed, whether you've published them directly or saved them from upstream sources. As older package versions become less relevant, you may consider removing them through manual deletion or by using retention policies. In this article, you'll learn how to:
 
 > [!div class="checklist"]  
-> * Delete packages from feeds.
-> * Set up retention policies to automatically delete older packages.
-> * Recover recently deleted packages from the Recycle Bin.
+> * Delete packages from your feed.
+> * Set up retention policies.
+> * Manually delete packages permanently.
+> * Recover recently deleted packages.
 
 > [!NOTE]
-> You must be a feed **Owner** or **Administrator** to delete packages or set up retention policies.
+> To delete packages or set up retention policies, you must be a feed **Owner** or **Administrator**.
 
 ## Delete packages
 
-In Azure Artifacts, packages are immutable. When you publish a package to your feed, its version number is reserved permanently. You can't upload a new package with that same version number, even if you delete it from your feed.
+In Azure Artifacts, packages are immutable. Once you publish a package to your feed, its version number is reserved permanently. Even if you delete it from your feed, you cannot publish a new package with the same version number.
 
 #### [NuGet](#tab/nuget/)
 
