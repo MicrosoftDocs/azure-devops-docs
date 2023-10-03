@@ -34,17 +34,17 @@ In Azure Artifacts, packages are immutable. Once you publish a package to your f
 > [!NOTE]
 > You must be a **Contributor** to unlist a package and an **Owner** to delete it.
 
-Two options are available to delete a NuGet package from your feed, [Unlist](#qa) and [Delete](#qa).
+There are two available choices for removing a NuGet package from your feed, [Unlist](#qa) and [Delete](#qa). Unlisting a package version hides it from the search results in Azure Artifacts feeds and on NuGet.org, while deleting a package version sends it to the recycle bin and makes it unavailable for installation.
 
 ::: moniker range=">= azure-devops-2019"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-1. Select the package that you want to delete or deprecate, and then select **Unlist** or **Delete**.
+1. Select the package you wish to delete, and then select **Unlist** or **Delete**.
 
-    :::image type="content" source="../media/delete/unlist-delete-nuget-package-newnav.png" alt-text="Screenshot that shows buttons for unlisting and deleting NuGet packages.":::
+    :::image type="content" source="../media/delete/unlist-delete-nuget-package-newnav.png" alt-text="A screenshot showing how to delete or unlist a NuGet package.":::
 
 ::: moniker-end
 
@@ -54,59 +54,45 @@ Two options are available to delete a NuGet package from your feed, [Unlist](#qa
 
 1. Select **Build and Release**.
 
-1. Select **Packages**, and then select the package that you want to delete. 
+1. Select **Packages**, and then select the package you wish to delete. 
 
 1. Select **Unlist** or **Delete latest**.
 
-    :::image type="content" source="../media/delete/unlist-delete-nuget-package.png" alt-text="Screenshot that shows the buttons for unlisting and deleting NuGet packages in Team Foundation Server.":::
+    :::image type="content" source="../media/delete/unlist-delete-nuget-package.png" alt-text="A screenshot showing how to delete or unlist a NuGet package in Team Foundation Server 2018.":::
 
 ::: moniker-end
 
-### Unlist a NuGet package by using NuGet.exe
+### Unlist packages using NuGet.exe
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu. Select **Connect to feed**.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-   ::: moniker range=">= azure-devops-2019"
+1. Select **Connect to feed** > **NuGet.exe**, and then find and copy your **Package Source** URL. It should resemble this format: *"https://pkgs.dev.azure.com/OrganizationName/ProjectName/_packaging/FeedName/nuget/v3/index.json"*.
 
-     :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot that shows the button for connecting to a feed.":::
-
-   ::: moniker-end
-
-   ::: moniker range="tfs-2018"
-
-    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot that shows the button for connecting to a feed in Team Foundation Server.":::
-
-   ::: moniker-end
-
-2. Select **NuGet.exe**, and then find and copy your **Package Source** URL.
-
-3. Run the following command:
+1. Run the following command to unlist your NuGet package:
 
     ```Command
     nuget.exe delete <PACKAGE_NAME> <PACKAGE_VERSION> -Source <PACKAGE_SOURCE_URL> -ApiKey <KEY>
     ```
 
 > [!NOTE]
-> Azure DevOps and Visual Studio Team Foundation Server interpret the `nuget.exe delete` command as an unlist operation. To delete a package, you must use the [REST API](/rest/api/azure/devops/artifactspackagetypes/nuget/delete-package-version) or the web interface.
+> Azure DevOps and Visual Studio Team Foundation Server interpret the `nuget.exe delete` command as an unlisting operation. To delete a package, you must use the [REST API](/rest/api/azure/devops/artifactspackagetypes/nuget/delete-package-version) or delete it manually from the web interface.
 
 #### [npm](#tab/npm/)
 
 > [!NOTE]
-> You must be a **Contributor** to deprecate a package and an **Owner** to unpublish it.
+> You must be a **Contributor** to deprecate a package and an **Owner** to delete it.
 
-There are two options to delete an npm package from your feed, [Deprecate](#qa) and [Unpublish](#qa).
+There are two available choices for removing npm packages from your feed, [Deprecate](#qa) and [Delete](#qa). Deprecating a package adds a warning message to the package's metadata to be displayed whenever the package is viewed or installed. Deleting a package version, on the other hand, sends it to the Recycle Bin and makes it unavailable for installation.
 
 ::: moniker range=">= azure-devops-2019"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-1. Select the package that you want to delete or deprecate, and then select **Deprecate** or **Unpublish latest**.
-
-    :::image type="content" source="../media/delete/deprecate-unpublish-npm-package-newnav.png" alt-text="Screenshot that shows the buttons for deprecating and unpublishing.":::
+1. Select the package you wish to delete, and then select **Deprecate** or **Delete**.
 
 ::: moniker-end
 
@@ -116,17 +102,15 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 
 1. Select **Build and Release**.
 
-1. Select **Packages**, and then select the package that you want to delete. 
+1. Select **Packages**, and then select the package you wish to delete. 
 
-1. Select **Deprecate** or **Unpublish latest**.
-
-    :::image type="content" source="../media/delete/deprecate-unpublish-npm-package.png" alt-text="Screenshot that shows the buttons for deprecating and unpublishing in Team Foundation Server.":::
+1. Select **Deprecate** or **Delete**.
 
 ::: moniker-end
 
-#### Deprecate or unpublish an npm package by using the CLI
+### Deprecate or Delete packages CLI
 
-1. [Set up your client's .npmrc file](../npm/npmrc.md).
+1. [Set up your project's .npmrc](../npm/npmrc.md).
 
 1. Use the following command to deprecate an npm package:
 
@@ -134,14 +118,14 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
     npm deprecate <package>[@<version>] <message>
     ```
 
-   Use the following command to unpublish an npm package:
+1. If you want to delete your npm package, run the following command:
 
     ```Command
     npm unpublish <package>@<version>
     ```
 
 > [!NOTE]
-> The `npm unpublish` command won't unpublish all versions of the package. For more information, see the [deprecate](https://docs.npmjs.com/cli/deprecate) or [unpublish](https://docs.npmjs.com/cli/unpublish) documentation.
+> The `npm unpublish` command does not remove all versions of the package. For more information, see the [deprecate](https://docs.npmjs.com/cli/deprecate) or [unpublish](https://docs.npmjs.com/cli/unpublish) documentation.
 
 #### [Python](#tab/python/)
 
@@ -150,11 +134,9 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-1. Select the package that you want to delete, and then select **Delete latest**.
-
-:::image type="content" source="../media/delete/delete-python-package.png" alt-text="Screenshot that shows the button for deleting a package in Python.":::
+1. Select the package that you want to delete, and then select **Delete**.
 
 #### [Maven](#tab/maven/)
 
@@ -162,9 +144,11 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-1. Select the package that you want to delete, and then select **Delete latest**. Select **Delete** to confirm your choice. 
+1. Select the package that you want to delete, and then select **Delete**. 
+
+1. Select **Delete** one more time to confirm your choice. 
 
 ::: moniker-end
 
@@ -176,24 +160,22 @@ There are two options to delete an npm package from your feed, [Deprecate](#qa) 
 
 1. Select your feed, and then select the package that you want to delete.
 
-1. Select **Delete latest** to delete the latest version of your package.
+1. Select **Delete** to delete your package.
 
-    :::image type="content" source="../media/delete/delete-maven-package.png" alt-text="Screenshot that shows the button to delete packages from feeds.":::  
+    :::image type="content" source="../media/delete/delete-maven-package.png" alt-text="A screenshot showing how to delete a Maven package in Team Foundation Server 2018.":::  
 
 ::: moniker-end
 
-#### [Universal Package](#tab/universal/)
+#### [Universal Packages](#tab/universal/)
 
 > [!NOTE]
 > You must be a feed **Owner** to delete a Universal Package.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-1. Select the package that you want to delete, and then select **Delete latest**.
-
-:::image type="content" source="../media/delete/delete-universal-package.png" alt-text="Screenshot that shows the button for deleting a Universal Package.":::
+1. Select the package that you want to delete, and then select **Delete**.
 
 * * *
 
