@@ -94,6 +94,8 @@ There are two available choices for removing npm packages from your feed, [Depre
 
 1. Select the package you wish to delete, and then select **Deprecate** or **Delete**.
 
+    :::image type="content" source="../media/npm-deprecate-delete.png" alt-text="A screenshot showing how to deprecate or delete an npm package.":::
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
@@ -138,6 +140,8 @@ There are two available choices for removing npm packages from your feed, [Depre
 
 1. Select the package that you want to delete, and then select **Delete**.
 
+    :::image type="content" source="../media/python-delete-package.png" alt-text="A screenshot showing how to delete a Python package.":::
+
 #### [Maven](#tab/maven/)
 
 ::: moniker range=">= azure-devops-2019"
@@ -149,6 +153,8 @@ There are two available choices for removing npm packages from your feed, [Depre
 1. Select the package that you want to delete, and then select **Delete**. 
 
 1. Select **Delete** one more time to confirm your choice. 
+
+    :::image type="content" source="../media/maven-delete-package.png" alt-text="A screenshot showing how to delete a Maven package.":::
 
 ::: moniker-end
 
@@ -176,6 +182,8 @@ There are two available choices for removing npm packages from your feed, [Depre
 1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
 1. Select the package that you want to delete, and then select **Delete**.
+
+    :::image type="content" source="../media/universal-package-delete-package.png" alt-text="A screenshot showing how to delete a Universal Package.":::
 
 * * *
 
