@@ -413,7 +413,7 @@ GitHub Enterprise repos require a [GitHub Enterprise service connection](../libr
 
 Bitbucket Cloud repos require a [Bitbucket Cloud service connection](../library/service-endpoints.md#bitbucket-cloud-service-connection) for authorization.
 
-:::moniker range=">=azure-devops-2020"
+:::moniker range=">=azure-devops-2020 <azure-devops"
 
 ### Variables
 
@@ -461,6 +461,56 @@ steps:
 
 ::: moniker-end
 
+:::moniker range=">=azure-devops"
+
+### Variables
+
+In each run, the metadata for a repository resource is available to all jobs in the form of runtime variables. The `<Alias>` is the identifier that you gave for your repository resource.
+
+## [Schema](#tab/schema)
+
+```yaml
+resources.repositories.<Alias>.name
+resources.repositories.<Alias>.ref
+resources.repositories.<Alias>.type
+resources.repositories.<Alias>.id
+resources.repositories.<Alias>.url
+resources.repositories.<Alias>.version
+```
+
+## [Example](#tab/example)
+
+The following example has a repository resource with an alias of `common`, and the repository resource variables are accessed using `resources.repositories.common.*`.
+
+```yaml
+resources:
+  repositories:
+    - repository: common
+      type: git
+      ref: main
+      name: Repo
+
+variables:
+  ref: $[ resources.repositories.common.ref ]
+  name: $[ resources.repositories.common.name ]
+  id: $[ resources.repositories.common.id ]
+  type: $[ resources.repositories.common.type ]
+  url: $[ resources.repositories.common.url ]
+  url: $[ resources.repositories.common.version ]
+
+steps:
+- bash: |
+    echo "name = $(name)"
+    echo "ref = $(ref)"
+    echo "id = $(id)"
+    echo "type = $(type)"
+    echo "url = $(url)"
+    echo "version = $(version)"
+```
+
+---
+
+::: moniker-end
 
 ### Use `checkout` to consume repository
 
