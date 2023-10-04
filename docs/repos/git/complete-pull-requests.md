@@ -10,6 +10,7 @@ author: vijayma
 ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: devx-track-azurecli
 ---
 
 # Complete, abandon, or revert pull requests
