@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps
 description: Auto detect configuration and git aliases when using Azure DevOps extension command-line interface 
 ms.topic: how-to
 ms.subservice: azure-devops-reference
+ms.custom: devx-track-azurecli
 ms.manager: mijacobs 
 ms.author: chcomley  
 author: chcomley

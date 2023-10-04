@@ -3,6 +3,7 @@ title: Publish and download universal packages in Azure Artifacts
 description: How to publish and download universal packages to and from Artifacts feeds.
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
 ms.service: azure-devops-artifacts
+ms.custom: devx-track-azurecli
 ms.topic: conceptual
 ms.date: 05/19/2023
 monikerRange: 'azure-devops'
