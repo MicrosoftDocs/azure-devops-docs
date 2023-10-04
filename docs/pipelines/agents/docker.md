@@ -221,31 +221,13 @@ Next, create the Dockerfile.
       ENTRYPOINT ./start.sh
       ```
 
-    * For Ubuntu 20.04:
+    * For Ubuntu 22.04:
       ```Dockerfile
-      FROM ubuntu:20.04
+      FROM ubuntu:22.04
 
-      # To make it easier for build and release pipelines to run apt-get,
-      # configure apt to not require confirmation (assume the -y argument by default)
-      ENV DEBIAN_FRONTEND=noninteractive
-      RUN echo "APT::Get::Assume-Yes \"true\";" > /etc/apt/apt.conf.d/90assumeyes
-
-      RUN apt-get update
-      RUN apt-get upgrade -y
-
-      RUN apt-get install -y -qq --no-install-recommends \
-          apt-transport-https \
-          apt-utils \
-          ca-certificates \
-          curl \
-          git \
-          iputils-ping \
-          jq \
-          libicu66 \
-          lsb-release \
-          software-properties-common
-
-      RUN curl -LsS https://aka.ms/InstallAzureCLIDeb | bash
+      RUN apt update
+      RUN apt upgrade -y
+      RUN apt install -y curl git jq libicu70
 
       # Also can be "linux-arm", "linux-arm64".
       ENV TARGETARCH="linux-x64"
@@ -261,7 +243,7 @@ Next, create the Dockerfile.
     > [!NOTE]
     > Tasks might depend on executables that your container is expected to provide.
     > For instance, you must add the `zip` and `unzip` packages
-    > to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks. 
+    > to the `RUN apt install -y` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks. 
     > Also, as this is a Linux Ubuntu image for the agent to use, you can customize the image as you need.
     > E.g.: if you need to build .NET applications you can follow the document 
     > [Install the .NET SDK or the .NET Runtime on Ubuntu](/dotnet/core/install/linux-ubuntu)
@@ -298,7 +280,9 @@ Next, create the Dockerfile.
     export AGENT_ALLOW_RUNASROOT="1"
 
     cleanup() {
-      if [ -e config.sh ]; then
+      trap '' EXIT
+
+      if [ -e ./config.sh ]; then
         print_header "Cleanup. Removing Azure Pipelines agent..."
         
         # If the agent has some running jobs, the configuration removal process will fail.
@@ -315,7 +299,7 @@ Next, create the Dockerfile.
     print_header() {
       lightcyan='\033[1;36m'
       nocolor='\033[0m'
-      echo -e "${lightcyan}$1${nocolor}"
+      echo -e "\n${lightcyan}$1${nocolor}\n"
     }
 
     # Let the agent ignore the token env variables
@@ -351,7 +335,7 @@ Next, create the Dockerfile.
     ./config.sh --unattended \
       --agent "${AZP_AGENT_NAME:-$(hostname)}" \
       --url "$AZP_URL" \
-      --auth PAT \
+      --auth "PAT" \
       --token $(cat "$AZP_TOKEN_FILE") \
       --pool "${AZP_POOL:-Default}" \
       --work "${AZP_WORK:-_work}" \
@@ -360,13 +344,9 @@ Next, create the Dockerfile.
 
     print_header "4. Running Azure Pipelines agent..."
 
-    trap 'cleanup; exit 0' EXIT
-    trap 'cleanup; exit 130' INT
-    trap 'cleanup; exit 143' TERM
-
     chmod +x ./run.sh
 
-    # To be aware of TERM and INT signals call run.sh
+    # To be aware of TERM and INT signals call ./run.sh
     # Running it with the --once flag at the end will shut down the agent after the build is executed
     ./run.sh "$@" & wait $!
     ```
