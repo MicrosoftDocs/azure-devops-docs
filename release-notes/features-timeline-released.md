@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 9/27/2023
+ms.date: 10/4/2023
 
 ms.topic: article
 ms.service: azure-devops
@@ -38,7 +38,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="8"><a href="2023/sprint-228-update.md" data-raw-source="[27 September 2023](2023/sprint-227-update.md)"> 27 September 2023</a></td>
+    <td rowspan="8"><a href="2023/sprint-228-update.md" data-raw-source="[4 October 2023](2023/sprint-227-update.md)"> 4 October 2023</a></td>
     <td>Managed identity and service principal support for Azure DevOps now in general availability (GA)</td><td>General</td><td>Future</td></tr>
     <td>New Azure DevOps scopes available for Microsoft Identity OAuth delegated flow apps</td><td>General</td><td>Future</td></tr>
     <td>Changes to Code Scanning (CodeQL) user input task and variables</td><td>General</td><td>N/A</td></tr>
