@@ -54,6 +54,7 @@ By default, Docker for Windows is configured to use Linux containers. To allow r
 Next, create the Dockerfile.
 
 1. Open a command prompt.
+
 2. Create a new directory:
 
     ```shell
@@ -154,7 +155,7 @@ Next, create the Dockerfile.
 6. Run the following command within that directory:
 
     ```shell
-    docker build -t dockeragent:latest .
+    docker build --tag "dockeragent:latest" .
     ```
 
     This command builds the Dockerfile in the current directory.
@@ -167,6 +168,7 @@ Next, create the Dockerfile.
 Now that you have created an image, you can run a container.
 
 1. Open a command prompt.
+
 2. Run the container. This installs the latest version of the agent, configures it, and runs the agent. It targets the `Default` pool of a specified Azure DevOps or Azure DevOps Server instance of your choice:
 
     ```shell
@@ -175,7 +177,7 @@ Now that you have created an image, you can run a container.
 
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
-If you want a fresh agent container for every pipeline run, pass the [`--once` flag](windows-agent.md#run-once) to the `run` command.
+If you want a fresh agent container for every pipeline run, pass [the `--once` flag](windows-agent.md#run-once) to the `run` command.
 You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 
 ## Linux
@@ -189,6 +191,7 @@ Depending on your Linux Distribution, you can either install [Docker Community E
 Next, create the Dockerfile.
 
 1. Open a terminal.
+
 2. Create a new directory (recommended):
 
     ```shell
@@ -349,13 +352,14 @@ Next, create the Dockerfile.
     # Running it with the --once flag at the end will shut down the agent after the build is executed
     ./run.sh "$@" & wait $!
     ```
+
     > [!NOTE]
     >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 
 6. Run the following command within that directory:
 
     ```shell
-    docker build -t dockeragent:latest .
+    docker build --tag "dockeragent:latest" .
     ```
 
     This command builds the Dockerfile in the current directory.
@@ -368,13 +372,20 @@ Next, create the Dockerfile.
 Now that you have created an image, you can run a container.
 
 1. Open a terminal.
+
 2. Run the container. This installs the latest version of the agent, configures it, and runs the agent. It targets the `Default` pool of a specified Azure DevOps or Azure DevOps Server instance of your choice:
 
     ```shell
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
     ```
 
-   If you want a fresh agent container for every pipeline job, pass the [`--once` flag](linux-agent.md#run-once) to the `run` command.
+    For some images, you might need to specify `--interactive` and `--tty` flags (or simply `-it`) if you want to be able to stop the container with `Ctrl` + `C`.
+
+    ```shell
+    docker run --interactive --tty -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
+    ```
+
+    If you want a fresh agent container for every pipeline job, pass [the `--once` flag](linux-agent.md#run-once) to the `run` command.
 
     ```shell
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest --once
@@ -428,85 +439,85 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 1. Create the secrets on the AKS cluster.
 
-   ```shell
-   kubectl create secret generic azdevops \
-     --from-literal=AZP_URL=https://dev.azure.com/yourOrg \
-     --from-literal=AZP_TOKEN=YourPAT \
-     --from-literal=AZP_POOL=NameOfYourPool
-   ```
+    ```shell
+    kubectl create secret generic azdevops \
+      --from-literal=AZP_URL=https://dev.azure.com/yourOrg \
+      --from-literal=AZP_TOKEN=YourPAT \
+      --from-literal=AZP_POOL=NameOfYourPool
+    ```
 
 2. Run this command to push your container to Container Registry:
 
-   ```shell
-   docker push <acr-server>/dockeragent:latest
-   ```
+    ```shell
+    docker push <acr-server>/dockeragent:latest
+    ```
 
 3. Configure Container Registry integration for existing AKS clusters.
 
-  > [!NOTE]
-  > If you have multiple subscriptions on the Azure Portal, please, use this command first to select a subscription
-  >```azurecli
-  >az account set --subscription <subscription id or subscription name>
-  >```
+    > [!NOTE]
+    > If you have multiple subscriptions on the Azure Portal, please, use this command first to select a subscription
+    >```azurecli
+    >az account set --subscription <subscription id or subscription name>
+    >```
 
-   ```azurecli
-   az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-name>
-   ```
+    ```azurecli
+    az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-name>
+    ```
 
-4. Save the following content to `~/AKS/ReplicationController.yaml`:
+4. Save the following content to `~/AKS/ReplicationController.yml`:
 
-   ```yml
-   apiVersion: apps/v1
-   kind: Deployment
-   metadata:
-     name: azdevops-deployment
-     labels:
-       app: azdevops-agent
-   spec:
-     replicas: 1 #here is the configuration for the actual agent always running
-     selector:
-       matchLabels:
-         app: azdevops-agent
-     template:
-       metadata:
-         labels:
-           app: azdevops-agent
-       spec:
-         containers:
-         - name: kubepodcreation
-           image: <acr-server>/dockeragent:latest
-           env:
-             - name: AZP_URL
-               valueFrom:
-                 secretKeyRef:
-                   name: azdevops
-                   key: AZP_URL
-             - name: AZP_TOKEN
-               valueFrom:
-                 secretKeyRef:
-                   name: azdevops
-                   key: AZP_TOKEN
-             - name: AZP_POOL
-               valueFrom:
-                 secretKeyRef:
-                   name: azdevops
-                   key: AZP_POOL
-           volumeMounts:
-           - mountPath: /var/run/docker.sock
-             name: docker-volume
-         volumes:
-         - name: docker-volume
-           hostPath:
-             path: /var/run/docker.sock
-   ```
+    ```yml
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: azdevops-deployment
+      labels:
+        app: azdevops-agent
+    spec:
+      replicas: 1 # here is the configuration for the actual agent always running
+      selector:
+        matchLabels:
+          app: azdevops-agent
+      template:
+        metadata:
+          labels:
+            app: azdevops-agent
+        spec:
+          containers:
+          - name: kubepodcreation
+            image: <acr-server>/dockeragent:latest
+            env:
+              - name: AZP_URL
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_URL
+              - name: AZP_TOKEN
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_TOKEN
+              - name: AZP_POOL
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_POOL
+            volumeMounts:
+            - mountPath: /var/run/docker.sock
+              name: docker-volume
+          volumes:
+          - name: docker-volume
+            hostPath:
+              path: /var/run/docker.sock
+    ```
 
-   This Kubernetes YAML creates a replica set and a deployment, where `replicas: 1` indicates the number or the agents that are running on the cluster.
+    This Kubernetes YAML creates a replica set and a deployment, where `replicas: 1` indicates the number or the agents that are running on the cluster.
 
 5. Run this command:
 
-   ```shell
-   kubectl apply -f ReplicationController.yaml
-   ```
+    ```shell
+    kubectl apply -f ReplicationController.yml
+    ```
 
 Now your agents will run the AKS cluster.
 
@@ -518,7 +529,9 @@ You need to set the environment variable AGENT_DOCKER_MTU_VALUE to set the MTU v
 
 This allows you to set up a network parameter for the job container, the use of this command is similar to the use of the next command while container network configuration:
 
-```-o com.docker.network.driver.mtu=AGENT_DOCKER_MTU_VALUE```
+```
+-o com.docker.network.driver.mtu=AGENT_DOCKER_MTU_VALUE
+```
 
 ## Mounting volumes using Docker within a Docker container
 
@@ -526,47 +539,48 @@ If a Docker container runs inside another Docker container, they both use host's
 
 For example, if we want to mount path from host into outer Docker container, we can use this command:
 
-   ```
-   docker run ... -v <path-on-host>:<path-on-outer-container> ...
-   ```
+```
+docker run ... -v <path-on-host>:<path-on-outer-container> ...
+```
 
 And if we want to mount path from host into inner Docker container, we can use this command:
 
-   ```
-   docker run ... -v <path-on-host>:<path-on-inner-container> ...
-   ```
+```
+docker run ... -v <path-on-host>:<path-on-inner-container> ...
+```
 
 But we can't mount paths from outer container into the inner one; to work around that, we have to declare an ENV variable:
 
-   ```
-   docker run ... --env DIND_USER_HOME=$HOME ...
-   ```
+```
+docker run ... --env DIND_USER_HOME=$HOME ...
+```
 
 After this, we can start the inner container from the outer one using this command:
 
-   ```
-   docker run ... -v $DIND_USER_HOME:<path-on-inner-container> ...
-   ```
+```
+docker run ... -v $DIND_USER_HOME:<path-on-inner-container> ...
+```
 
 ## Common errors
 
 If you're using Windows, and you get the following error:
 
-   ```shell
-   standard_init_linux.go:178: exec user process caused "no such file or directory"
-   ```
+```shell
+standard_init_linux.go:178: exec user process caused "no such file or directory"
+```
 
 Install Git Bash by downloading and installing [git-scm](https://git-scm.com/download/win).
 
 Run this command:
 
-   ```shell
-   dos2unix ~/dockeragent/Dockerfile
-   dos2unix ~/dockeragent/start.sh
-   git add .
-   git commit -m 'Fixed CR'
-   git push
-   ```
+```shell
+dos2unix ~/dockeragent/Dockerfile
+dos2unix ~/dockeragent/start.sh
+git add .
+git commit -m "Fixed CR"
+git push
+```
+
 Try again. You no longer get the error.
 
 ## Related articles
