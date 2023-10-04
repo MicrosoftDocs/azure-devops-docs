@@ -68,7 +68,7 @@ Next, create the Dockerfile.
 
 4. Save the following content to a file called `C:\dockeragent\Dockerfile` (no file extension):
 
-    ```docker
+    ```Dockerfile
     FROM mcr.microsoft.com/windows/servercore:ltsc2019
 
     WORKDIR /azp
@@ -251,7 +251,7 @@ Next, create the Dockerfile.
 
 5. Save the following content to `~/dockeragent/start.sh`, making sure to use Unix-style (LF) line endings:
 
-    ```shell
+    ```bash
     #!/bin/bash
     set -e
 
@@ -446,7 +446,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
   > [!NOTE]
   > If you have multiple subscriptions on the Azure Portal, please, use this command first to select a subscription
   >```azurecli
-  >az account set --subscription <subscription id or >subscription name>
+  >az account set --subscription <subscription id or subscription name>
   >```
 
    ```azurecli
