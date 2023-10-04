@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2019'
 
 This article provides instructions for running your Azure Pipelines agent in Docker. You can set up a self-hosted agent in Azure Pipelines to run inside a Windows Server Core (for Windows hosts), or Ubuntu container (for Linux hosts) with Docker. This is useful when you want to run agents with outer orchestration, such as [Azure Container Instances](/azure/container-instances/). In this article, you'll walk through a complete container example, including handling agent self-update.
 
-Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. Windows containers should run on a Windows `vmImage`. 
+Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. Windows containers should run on a Windows `vmImage`.
 To run your agent in Docker, you'll pass a few [environment variables](#environment-variables) to `docker run`, which configures the agent to connect to Azure Pipelines or Azure DevOps Server. Finally, you [customize the container](#add-tools-and-customize-the-container) to suit your needs. Tasks and scripts might depend on specific tools being available on the container's `PATH`, and it's your responsibility to ensure that these tools are available.
 
 ::: moniker range="azure-devops-2019"
@@ -70,11 +70,11 @@ Next, create the Dockerfile.
 
     ```docker
     FROM mcr.microsoft.com/windows/servercore:ltsc2019
-    
+
     WORKDIR /azp
-    
+
     COPY start.ps1 .
-    
+
     CMD powershell .\start.ps1
     ```
 
@@ -85,49 +85,49 @@ Next, create the Dockerfile.
       Write-Error "error: missing AZP_URL environment variable"
       exit 1
     }
-    
+
     if (-not (Test-Path Env:AZP_TOKEN_FILE)) {
       if (-not (Test-Path Env:AZP_TOKEN)) {
         Write-Error "error: missing AZP_TOKEN environment variable"
         exit 1
       }
-    
+
       $Env:AZP_TOKEN_FILE = "\azp\.token"
       $Env:AZP_TOKEN | Out-File -FilePath $Env:AZP_TOKEN_FILE
     }
-    
+
     Remove-Item Env:AZP_TOKEN
-    
+
     if ((Test-Path Env:AZP_WORK) -and -not (Test-Path $Env:AZP_WORK)) {
       New-Item $Env:AZP_WORK -ItemType directory | Out-Null
     }
-    
+
     New-Item "\azp\agent" -ItemType directory | Out-Null
-    
+
     # Let the agent ignore the token env variables
     $Env:VSO_AGENT_IGNORE = "AZP_TOKEN,AZP_TOKEN_FILE"
-    
+
     Set-Location agent
-    
+
     Write-Host "1. Determining matching Azure Pipelines agent..." -ForegroundColor Cyan
-    
+
     $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$(Get-Content ${Env:AZP_TOKEN_FILE})"))
     $package = Invoke-RestMethod -Headers @{Authorization=("Basic $base64AuthInfo")} "$(${Env:AZP_URL})/_apis/distributedtask/packages/agent?platform=win-x64&`$top=1"
     $packageUrl = $package[0].Value.downloadUrl
-    
+
     Write-Host $packageUrl
-    
+
     Write-Host "2. Downloading and installing Azure Pipelines agent..." -ForegroundColor Cyan
-    
+
     $wc = New-Object System.Net.WebClient
     $wc.DownloadFile($packageUrl, "$(Get-Location)\agent.zip")
-    
+
     Expand-Archive -Path "agent.zip" -DestinationPath "\azp\agent"
-    
+
     try
     {
       Write-Host "3. Configuring Azure Pipelines agent..." -ForegroundColor Cyan
-      
+
       .\config.cmd --unattended `
         --agent "$(if (Test-Path Env:AZP_AGENT_NAME) { ${Env:AZP_AGENT_NAME} } else { hostname })" `
         --url "$(${Env:AZP_URL})" `
@@ -138,13 +138,13 @@ Next, create the Dockerfile.
         --replace
 
       Write-Host "4. Running Azure Pipelines agent..." -ForegroundColor Cyan
-      
+
       .\run.cmd
     }
     finally
     {
       Write-Host "Cleanup. Removing Azure Pipelines agent..." -ForegroundColor Cyan
-      
+
       .\config.cmd remove --unattended `
         --auth PAT `
         --token "$(Get-Content ${Env:AZP_TOKEN_FILE})"
@@ -243,12 +243,11 @@ Next, create the Dockerfile.
     > [!NOTE]
     > Tasks might depend on executables that your container is expected to provide.
     > For instance, you must add the `zip` and `unzip` packages
-    > to the `RUN apt install -y` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks. 
+    > to the `RUN apt install -y` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
     > Also, as this is a Linux Ubuntu image for the agent to use, you can customize the image as you need.
-    > E.g.: if you need to build .NET applications you can follow the document 
+    > E.g.: if you need to build .NET applications you can follow the document
     > [Install the .NET SDK or the .NET Runtime on Ubuntu](/dotnet/core/install/linux-ubuntu)
-    > and add that to your image. 
-
+    > and add that to your image.
 
 5. Save the following content to `~/dockeragent/start.sh`, making sure to use Unix-style (LF) line endings:
 
@@ -284,7 +283,7 @@ Next, create the Dockerfile.
 
       if [ -e ./config.sh ]; then
         print_header "Cleanup. Removing Azure Pipelines agent..."
-        
+
         # If the agent has some running jobs, the configuration removal process will fail.
         # So, give it some time to finish the job.
         while true; do
@@ -352,6 +351,7 @@ Next, create the Dockerfile.
     ```
     > [!NOTE]
     >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
+
 6. Run the following command within that directory:
 
     ```shell
@@ -382,17 +382,15 @@ Now that you have created an image, you can run a container.
 
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
-
 ## Environment variables
 
-| Environment variable | Description                                                 |
-|----------------------|-------------------------------------------------------------|
+| Environment variable | Description                                                  |
+|----------------------|--------------------------------------------------------------|
 | AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance. |
-| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user who has permission to [configure agents](pools-queues.md#create-agent-pools), at `AZP_URL`.    |
+| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user who has permission to [configure agents](pools-queues.md#create-agent-pools), at `AZP_URL`. |
 | AZP_AGENT_NAME       | Agent name (default value: the container hostname).          |
 | AZP_POOL             | Agent pool name (default value: `Default`).                  |
 | AZP_WORK             | Work directory (default value: `_work`).                     |
-
 
 ## Add tools and customize the container
 
@@ -415,10 +413,10 @@ If you're sure you want to do this, see the [bind mount](https://docs.docker.com
 ## Use Azure Kubernetes Service cluster
 
 > [!CAUTION]
-> Please, consider that any docker based tasks will not work on AKS 1.19 or later due to docker in docker restriction. 
+> Please, consider that any docker based tasks will not work on AKS 1.19 or later due to docker in docker restriction.
 > [Docker was replaced with containerd](/azure/aks/cluster-configuration#container-runtime-configuration) in Kubernetes 1.19, and Docker-in-Docker became unavailable.
 
-### Deploy and configure Azure Kubernetes Service 
+### Deploy and configure Azure Kubernetes Service
 
 Follow the steps in [Quickstart: Deploy an Azure Kubernetes Service (AKS) cluster by using the Azure portal](/azure/aks/kubernetes-walkthrough-portal). After this, your PowerShell or Shell console can use the `kubectl` command line.
 
@@ -552,10 +550,10 @@ After this, we can start the inner container from the outer one using this comma
 
 ## Common errors
 
-If you're using Windows, and you get the following error: 
+If you're using Windows, and you get the following error:
 
    ```shell
-   ‘standard_init_linux.go:178: exec user process caused "no such file or directory"
+   standard_init_linux.go:178: exec user process caused "no such file or directory"
    ```
 
 Install Git Bash by downloading and installing [git-scm](https://git-scm.com/download/win).
