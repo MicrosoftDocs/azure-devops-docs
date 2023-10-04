@@ -2,7 +2,7 @@
 title:  GitHub Advanced Security and Managed identity and service principal support for Azure DevOps are now generally available
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 9/27/2023
+ms.date: 10/4/2023
 description: GitHub Advanced Security and Managed identity and service principal support for Azure DevOps are now generally available.
 ---
 # GitHub Advanced Security and Managed identity and service principal support for Azure DevOps are now generally available
