@@ -2,7 +2,7 @@
 title: Pipeline decorator context
 description: Contextual data available to pipeline decorators
 ms.topic: reference
-ms.technology: devops-cicd
+ms.subservice: azure-devops-ecosystem
 ms.assetid: fe3e1e94-0415-400a-9b2d-7eeadb6101fc
 ms.author: chcomley
 author: chcomley

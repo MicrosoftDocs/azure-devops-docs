@@ -31,7 +31,7 @@ steps:
 ```
 
 > [!NOTE]
-> The `publish` keyword is a shortcut for the [Publish Pipeline Artifact task](../tasks/utility/publish-pipeline-artifact.md) .
+> The `publish` keyword is a shortcut for the [Publish Pipeline Artifact task](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) .
 
 # [YAML (task)](#tab/yaml-task)
 
@@ -92,7 +92,7 @@ Packages in Azure Artifacts are immutable. Once you publish a package, its versi
 
 ### Use .artifactignore
 
-`.artifactignore` uses a similar syntax to `.gitignore` (with few limitations) to specify which files should be ignored when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
+`.artifactignore` uses a similar syntax to `.gitignore` (with few limitations) to specify which files should be ignored when publishing artifacts. Make sure that the *.artifactignore* file is located within the directory specified by the *targetPath* argument of your [Publish Pipeline Artifacts task](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1).
 
 > [!NOTE]
 > The plus sign character `+` is not supported in URL paths and some builds metadata for package types such as Maven.
@@ -128,7 +128,7 @@ steps:
 > You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
 
 > [!NOTE]
-> The `download` keyword is a shortcut for the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
+> The `download` keyword is a shortcut for the [Download Pipeline Artifact](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) task.
 
 # [YAML (task)](#tab/yaml-task)
 
@@ -278,8 +278,8 @@ Not available.
 
 ## Artifacts in release and deployment jobs
 
-Artifacts are only downloaded automatically in deployment jobs. By default, artifacts are downloaded to `System.ArtifactsDirectory`. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
-In a regular build job, you need to explicitly use the `download` step keyword or the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task. See [lifecycle hooks](../process/deployment-jobs.md#descriptions-of-lifecycle-hooks) to learn more about the other types of hooks.
+Artifacts are only downloaded automatically in deployment jobs. By default, artifacts are downloaded to `$(Pipeline.Workspace)`. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
+In a regular build job, you need to explicitly use the `download` step keyword or the [Download Pipeline Artifact](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) task. See [lifecycle hooks](../process/deployment-jobs.md#descriptions-of-lifecycle-hooks) to learn more about the other types of hooks.
 
 ```yaml
 steps:
@@ -339,7 +339,7 @@ stages:
 
 ## Migrate from build artifacts
 
-Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) can still be downloaded using [Download Build Artifacts](../tasks/utility/download-build-artifacts.md), but we recommend using the latest [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task instead.
+Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) can still be downloaded using [Download Build Artifacts](/azure/devops/pipelines/tasks/reference/download-build-artifacts-v1), but we recommend using the latest [Download Pipeline Artifact](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) task instead.
 
 When migrating from build artifacts to pipeline artifacts:
 
@@ -347,19 +347,39 @@ When migrating from build artifacts to pipeline artifacts:
 
 2. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. For more information, see [single artifact selection](#single-artifact).
 
+### Example
+
+```yaml
+- task: PublishPipelineArtifact@1
+  displayName: 'Publish pipeline artifact'
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
+        artifact: 'prod'
+    ${{ else }}:
+        artifact: 'dev'
+    publishLocation: 'pipeline'
+```
+
+- **targetPath**: (Required) The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](../build/variables.md), but wildcards are not supported. Default: $(Pipeline.Workspace).
+
+- **publishLocation**: (Required) Artifacts publish location. Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. Options: `pipeline`, `filepath`. Default: pipeline.
+
+- **artifact**: (Optional) Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.
+
 ## FAQ
 
 #### Q: What are build artifacts?
 
 A: Build artifacts are the files generated by your build. See [Build Artifacts](build-artifacts.md) to learn more about how to publish and consume your build artifacts.
 
-#### Q: Do you support publishing artifacts to a shared folder?
-
-A: Not currently, but this feature is planned.
-
 #### Q: Can I delete pipeline artifacts when re-running failed jobs?
 
 A: Pipeline artifacts are not deletable or overwritable. If you want to regenerate artifacts when you re-run a failed job, you can include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables.md#system-variables) to learn more about predefined variables.
+
+#### Q: How can I access Artifacts feeds behind a firewall?
+
+A: If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
 ## Related articles
 

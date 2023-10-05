@@ -1,11 +1,13 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.author: sdanie
 ms.manager: mijacobs
 author: steved0x
 ms.date: 08/07/2020
 ---
+
+1. Sign in to your project collection (`http://your-server/DefaultCollection`).
 
 1. Choose **Azure DevOps**, **Collection settings**.
 

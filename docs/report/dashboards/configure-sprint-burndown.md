@@ -3,9 +3,9 @@ title: View and configure sprint burndown
 titleSuffix: Azure DevOps   
 description: Learn how to configure the sprint burndown in-context chart or widget to track team progress in Azure DevOps.
 ms.custom: dashboards
-ms.technology: devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops' 
 ms.date: 04/04/2022
@@ -53,6 +53,7 @@ Throughout your sprint, you can monitor the sprint burndown chart to determine i
 
 ::: moniker-end
 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 Use this article to learn about: 
 
@@ -64,6 +65,8 @@ Use this article to learn about:
 > * How to add the in-context Burndown Trend report to a dashboard  
 > * How to configure the Sprint Burndown widgets  
 > * How to view current and past sprint burndowns 
+
+For an overview of all burndown/burnup charts available to you, see [Burndown and burnup guidance](burndown-guidance.md).
 
 ::: moniker-end
 
@@ -83,6 +86,7 @@ Use this article to learn about:
 > Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
 
 
+
 ## The in-context Burndown Trend report
 
 ::: moniker range=">= azure-devops-2020"
@@ -93,8 +97,6 @@ A healthy sprint burndown report looks something like the image shown below. Typ
 The **Total Scope** line indicates the number of work items added after the sprint starts. The **Ideal Trend** line is calculated based on the number of work items, days in the sprint, and number of working days.  
 
 The blue area indicates the number of work items active or in progress each day of the sprint. As shown in this example, one work item is still active at the end of the sprint.  
-
-[!INCLUDE [temp](../../includes/note-working-days-off.md)]
 
 > [!div class="mx-imgBorder"]  
 > ![Select another team](media/burndown/analytics-burndown-stories-count-past-s159.png) 
@@ -309,7 +311,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 
    1. The **Burndown on** field to use to calculate burndown, either a Count of Work Items or a sum of a field, such as Story Points, Effort, or Size.  
 
-   1. Check or uncheck **Show non-working days**. Non-working days appear as gray bars in the background when enabled. Default non-working days are set for a team and for a team's sprint through the capacity page. See [Set working days](../../organizations/settings/set-working-days.md) and [Set sprint capacity](../../boards/sprints/set-capacity.md).  
+   1. Check or uncheck **Show non-working days**. Non-working days appear as gray bars in the background when enabled. Default non-working days are set for a team and for a team's sprint through the capacity page. For more information, see [Set sprint capacity](../../boards/sprints/set-capacity.md).  
 
       Select **Reset** to reset the controls to the default options. By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
 
@@ -467,8 +469,6 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
     - **Show non working days**: Displays non working days on the burndown. When displayed, non working days are shaded.  
     - **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.  
 
-[!INCLUDE [temp](../../includes/note-working-days-off.md)]
-
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
@@ -548,7 +548,7 @@ Teams may find it useful to review these reports periodically during their sprin
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Burndown guidance](burndown-guidance.md) 
+> [Burndown and burnup guidance](burndown-guidance.md) 
 
 In addition to the sprint burndown chart, teams can review the [velocity](team-velocity.md) at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint. You can use your team velocity as input into the [forecast](../../boards/sprints/forecast.md) tool to help plan your sprints.   
 

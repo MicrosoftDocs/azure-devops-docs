@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: How to Deploy Web Content to Azure | Extensions for Azure DevOps
 description: How to publish your extension for Azure DevOps to a Microsoft Azure web site.
 ms.assetid: 86c9d7d9-51ea-4169-bf2e-f95138679a00

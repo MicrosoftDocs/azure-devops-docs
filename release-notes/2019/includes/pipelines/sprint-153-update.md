@@ -57,7 +57,7 @@ schedules:
   displayName: Daily midnight build
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/ancient/*

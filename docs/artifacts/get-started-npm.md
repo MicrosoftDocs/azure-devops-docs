@@ -1,7 +1,7 @@
 ---
 title: publish and download npm packages
 description: How to set up your .npmrc config file to publish and download npm packages
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.custom: contperf-fy20q4, conterperfq3, contperf-fy21q3

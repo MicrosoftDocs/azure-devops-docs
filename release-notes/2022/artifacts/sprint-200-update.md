@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Azure Artifacts Sprint 200 Update
 description: See the Sprint 200 feature updates for Azure Artifacts, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 02/28/2022
 ---
 

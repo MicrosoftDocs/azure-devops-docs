@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Azure Repos Sprint 165 Update
 description: See the Sprint 165 feature updates for Azure Repos, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 02/17/2019
 ---
 

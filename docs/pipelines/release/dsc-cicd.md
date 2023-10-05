@@ -72,7 +72,7 @@ must have [Team Foundation Server 2017](https://visualstudio.microsoft.com/tfs/)
 ### BuildAgent
 
 The computer that runs the Windows build agent that builds the project. This computer must have a
-Windows build agent installed and running. See [Deploy an agent on Windows](../agents/v2-windows.md)
+Windows build agent installed and running. See [Deploy an agent on Windows](../agents/windows-agent.md)
 for instructions on how to install and run a Windows build agent.
 
 You also need to install both the `xDnsServer` and `xNetworking` DSC modules on this computer.

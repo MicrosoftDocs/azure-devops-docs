@@ -2,7 +2,6 @@
 title: Azure DevOps Release Notes - Azure Artifacts simplifies integration with other services
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 06/01/2020
 description: With this sprint 170, we have made it easier to authenticate Azure Artifacts with other popular package managers. Find further details about the actual implementation below.
 ---

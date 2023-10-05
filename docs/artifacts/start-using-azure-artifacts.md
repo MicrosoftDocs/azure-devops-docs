@@ -1,12 +1,12 @@
 ---
 title: Azure Artifacts overview
 description: Learn about Azure Artifacts offering
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: chcomley
-ms.date: 05/09/2022
+ms.date: 09/20/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -18,14 +18,18 @@ Azure Artifacts enables developers to share their code efficiently and manage al
 
 ## Prerequisites
 
+- An Azure DevOps organization and a project. Create an [organization](../organizations/accounts/create-organization.md) or a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
 - [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
-- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) if you plan to use more than the free 2-GiB storage.
+
+> [!NOTE]
+> If you anticipate using more than the provided 2-GiB storage, it is recommended to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
 ::: moniker range="tfs-2018"
 
-## Install Azure Artifacts in TFS
+## Install Azure Artifacts
 
-Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension is removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+Azure Artifacts comes pre-installed in TFS 2018. If the extension is removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ## Assign licenses in TFS
 
@@ -46,59 +50,74 @@ Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension is re
 
 With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
 
-- [NuGet](./get-started-nuget.md)
-- [npm](./get-started-npm.md)
-- [Maven](./get-started-maven.md)
-- [Python](./quickstarts/python-packages.md)
-- [Universal Packages](./quickstarts/universal-packages.md)
+# [NuGet](#tab/nuget)
+
+- [Get started with NuGet packages and Azure Artifacts](./get-started-nuget.md)
+
+# [Npm](#tab/npm)
+
+- [Get started with npm packages and Azure Artifacts](./get-started-npm.md)
+
+# [Maven](#tab/maven)
+
+- [Get started with Maven packages and Azure Artifacts](./get-started-maven.md)
+
+# [Python](#tab/python)
+
+- [Get started with Python packages and Azure Artifacts](./quickstarts/python-packages.md)
+
+# [Universal Packages](#tab/universalpackages)
+
+- [Universal Packages quickstart](./quickstarts/universal-packages.md)
+
+---
 
 ## Feature availability
 
-| Package type                      | Azure DevOps Services  |          Azure DevOps Server          |                    TFS                       |
-|-----------------------------------|------------------------| --------------------------------------|  --------------------------------------------|
-| **NuGet packages**                | Yes                    | Yes                                   | TFS 2017 and TFS 2018                        |
-| **npm packages**                  | Yes                    | Yes                                   | TFS 2017 and TFS 2018                        |
-| **Maven packages**                | Yes                    | Yes                                   | TFS 2018                                     |
-| **Python packages**               | Yes                    | Server 2019 Update 1 and newer, Server 2020| TFS 2018                                |
-| **Universal Packages**            | Yes                    | No                                    | No                                           |
+| Package type                      | Azure DevOps Services  |          Azure DevOps Server                 |                    TFS-2018                  |
+|-----------------------------------|------------------------|----------------------------------------------|----------------------------------------------|
+| **NuGet packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **npm packages**                  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Maven packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | Server 2019 Update 1 and newer, Server 2020, and Server 2022.  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
 
 ## Artifacts free tier and upgrade
 
 Azure Artifacts is free for every organization up to 2 GiB of storage. Once you reach the maximum storage limit, you can no longer upload new artifacts and need to delete some of your existing artifacts or [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to increase your storage limit. See the [Pricing Calculator](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) to learn more about Azure DevOps billing.
 
-## Organization billing settings
+## View organization billing
 
 Follow the steps outlined below to view your billing settings for your organization:
 
 1. Sign in to your Azure DevOps organization.
 
-1. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
-
-    :::image type="content" source="../media/settings/open-admin-settings-vert.png" alt-text="A screenshot showing how to access the organization settings":::
-
-1. Select **Billing**.
-
-    :::image type="content" source="../organizations/billing/media/shared/select-billing-organization-settings.png" alt-text="A screenshot showing how to access the billing settings":::
+1. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**, and then select **Billing**.
 
 1. View your Artifacts tier and usage limit.
 
-    :::image type="content" source="media/billing-settings.png" alt-text="A screenshot showing Artifacts tier and usage limit":::
+    :::image type="content" source="media/organization-billing-artifacts.png" alt-text="A screenshot showing Artifacts tier and usage limit.":::
 
 ## View Artifacts storage consumption
 
-- [Organization-level storage](./artifact-storage.md#organization-level-storage)
-- [Project-level storage](./artifact-storage.md#project-level-storage)
+### [Organization-level storage](#tab/orgstorage)
+
+- [Artifacts Storage - Organization-level](./artifact-storage.md#organization-level-storage)
+
+### [Project-level storage](#tab/projstorage)
+
+- [Artifacts Storage - Project-level](./artifact-storage.md#project-level-storage)
+
+---
 
 ## FAQs
 
 ### Q: Which artifacts count toward my total billed storage?
 
-A: You get billed for all package types (npm, NuGet, Python, Maven, and Universal Packages) including packages stored from upstream sources. However,
-
-you don't get billed for Pipeline Artifacts, and Pipeline Caching.
+A: You get billed for all package types (npm, NuGet, Python, Maven, and Universal Packages) including packages stored from upstream sources. However, you don't get billed for Pipeline Artifacts, and Pipeline Caching.
 
 > [!NOTE]
-> Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, go to your recycle bin and delete them manually.
+> Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, navigate to your recycle bin and delete them manually.
 
 ### Q: I'm storing Artifacts but my storage consumption shows 0 GiB?
 
@@ -122,7 +141,7 @@ The **used** column on the Billing page of your Organization gets updated once a
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
-A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you lower your storage below 2 GiB, or you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
+A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you lower your storage below 2 GiB. Or, you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
 
 ::: moniker-end
 

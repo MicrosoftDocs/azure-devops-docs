@@ -1,7 +1,7 @@
 ---
 title: Size and count limits
 description: Package count and size limits in Azure Artifacts 
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 02/25/2022
 monikerRange: '<= azure-devops'
@@ -17,6 +17,7 @@ Azure Artifacts is a highly scalable package management solution that enables de
 
 - **5000 versions** per package ID.
 - **Unlimited package IDs** per feed.
+- **20 upstreams** per package type per feed.
 
 > [!NOTE]
 > You can use [retention policies](../how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) to automatically delete older package versions.

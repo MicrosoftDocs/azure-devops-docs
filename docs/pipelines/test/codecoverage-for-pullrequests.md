@@ -4,9 +4,9 @@ description: Continuous testing. Measuring code coverage for changes in pull req
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18, cross-service"
-ms.author: shashban
-author: shashban
-ms.date: 10/04/2019
+ms.author: ravikum
+author: raviLiftr
+ms.date: 09/14/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -14,12 +14,11 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Code coverage is an important quality metric and helps you measure the percentage of your project's code that is being tested. To ensure that quality for your project improves over time (or at the least, does not regress), it is essential that new code being brought into the system is well tested. This means that when developers raise pull requests, knowing whether their changes are covered by tests would help plug any testing holes before the changes are merged into the target branch. Repo owners may also want to set policies to prevent merging large untested changes.
+Code coverage is an important quality metric and helps you measure the percentage of your project's code that is being tested. To ensure that quality for your project improves over time (or at the least, does not regress), new code being brought into the system must be well tested. When developers raise pull requests, knowing whether their changes are covered by tests helps plug any testing holes before the changes are merged into the target branch. Repo owners may also want to set policies to prevent merging large untested changes.
 
 ### Full coverage, diff coverage
 
-Typically, coverage gets measured for the entire codebase of a project. This is **full coverage**.
-However, in the context of pull requests, developers are focused on the changes they are making and want to know whether the specific lines of code they have added or changed are covered. This is **diff coverage**.
+**Full coverage** is when coverage gets measured for the entire codebase of a project. However, in the context of pull requests, developers are focused on the changes they are making and want to know whether the specific lines of code they have added or changed are covered. This type of coverage is **diff coverage**.
 
 ## Prerequisites
 
@@ -89,6 +88,8 @@ Code coverage status check for pull requests is only a suggestion for developers
 
 > [!NOTE] 
 > Branch policies in Azure Repos (even optional policies) prevent pull requests from completing automatically if they fail. This behavior is not specific to code coverage policy.
+>
+> [Starting September 2023, the code coverage policy won't be overridden to **Failed** if the build fails. This feature will be enabled for all customers](/azure/devops/release-notes/2023/pipelines/sprint-227-update#disabled-override-of-code-coverage-policy-status-to-failed-when-build-is-failing).
 
 ## FAQ
 

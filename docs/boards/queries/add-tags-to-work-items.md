@@ -3,13 +3,13 @@ title: Add tags to work items to categorize lists and boards
 titleSuffix: Azure Boards
 description: Learn how to add work item tags to categorize and filter lists & boards when working in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 07/07/2022
 ---
 
 # Add work item tags to categorize and filter lists and boards  
@@ -21,12 +21,12 @@ Tagging work items helps you quickly filter the product backlog or a work
 item query by categories that you define. 
 A tag corresponds to a one or two keyword phrase that you define and that supports your needs to filter a backlog or query, or define a query. 
 
-Tags are a better choice to filter work items than using text strings as described in [Guidance to create high-performing queries](high-performing-queries.md).
+Tags are a better choice to filter work items than using text strings as described in [Define a query/Best practices](using-queries.md#best-practices-for-creating-queries.md).
 
 You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to modify tags in bulk.  
 
 > [!NOTE]   
-> Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags.  
+> Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams add to and work from the same set of tags.  
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
@@ -41,6 +41,9 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 ## Add tags to a work item
 
 Tags should be 400 characters or less and not contain separators such as a `,` (comma), `;` (semicolon), or other formatting character. 
+
+> [!TIP]
+> We recommend that you don't use the `@` character in a tag. Tags that start with the `@` character can't be used in a work item query. The `@` character signifies a macro within a query and therefore the tag isn't recognized as a tag.  
 
 
 From the web portal, open a work item and add a tag. Choose **Add tag** and type your keyword. Or, select from the list of previously assigned tags.  
@@ -73,7 +76,7 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 > ![Edit work items dialog, Bulk add to several work items.](media/add-tags/bulk-add-tags.png) 
 
 > [!NOTE]   
-> Bulk modify of tags from the Visual Studio client isn't supported. 
+> Bulk modify of tags from the Visual Studio or other supported clients isn't supported. 
 
 
 <a id="query"></a>
@@ -83,7 +86,7 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 To query work items based on tags, add a clause for each tag you want to use to support your query.  
 
 > [!TIP]    
-> You can use the **Contains** or **Does Not Contain** operators. To learn more about queries, see [Create managed queries](using-queries.md). 
+> You can use the **Contains** or **Does Not Contain** operators. Tags that start with the `@` character can't be used in a work item query as the query editor interprets the `@` character as a macro.  To learn more about queries, see [Create managed queries](using-queries.md). 
 
 For example, here we query for all work items that are tagged either ```Web``` or ```Service```. 
 
@@ -128,9 +131,9 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 
 ## Delete, remove, or manage tags 
 
-You can't delete a tag itself. However, if you delete a tag from all work items to which it's currently assigned, the system will delete the tag. The system automatically deletes unassigned tags after three days of disuse.  
+You can't delete a tag itself. However, if you delete a tag from all work items to which it's currently assigned, the system deletes the tag. The system automatically deletes unassigned tags after three days of disuse.  
 
-If you misspell a tag, don't assign the misspelled tag to any work item and the system will automatically delete it within three days.  
+If you misspell a tag, don't assign the misspelled tag to any work item and the system  automatically deletes it within three days.  
 
 Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2), which adds a **Tags** page under **Boards** or **Work** to manage tags. 
 
@@ -138,7 +141,7 @@ Another option is to install the [Marketplace Tags Manager](https://marketplace.
   
 ## Color-code tags on boards
 
-You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. They don't appear on backlogs or taskboards. To learn more, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
+You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. They don't appear on backlogs or Taskboards. For more information, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
 
 > [!div class="mx-imgBorder"]
 > ![Boards>Settings>Tag colors dialog](media/add-tags/color-code-tags.png)
@@ -159,15 +162,18 @@ To group a **Chart for Work Items** widget by tags, complete the same steps prov
 
 ## Related articles
 
-- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [Use the query editor to list and manage queries](using-queries.md) 
 - [Show tags on cards](../../boards/boards/customize-cards.md)
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
 - [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
+### Marketplace extension
+
+- [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2)
+
 ### Limits on the number of tags
 
-While no hard limit exists, creating more than 100,000 tags for a project collection can negatively impact performance. Also, the autocomplete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
+While no hard limit exists, creating more than 100,000 tags for a project collection can negatively impact performance. Also, the autocomplete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin entering to cause the tag control to display relevant tags.  
 
 You can't assign more than 100 tags to a work item or you'll receive the following message:  
 
@@ -177,13 +183,13 @@ TF401243: Failed to save work item because too many new tags were added to the w
 
 Save the work item with the tags (100 or less) that you've added, and then you can add more tags. 
 
-Limit queries to fewer than 25 tags. More than that amount and the query will likely time out.  
+Limit queries to fewer than 25 tags. More than that amount and the query likely times out.  
 
 
 ::: moniker range="< azure-devops"
 
 ### Add tags to the default column view on the product backlog 
 
-To add the Tags field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```.  To learn how, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
+To add the **Tags** field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```.  To learn how, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 
 ::: moniker-end

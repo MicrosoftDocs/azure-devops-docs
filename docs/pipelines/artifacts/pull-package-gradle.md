@@ -1,19 +1,18 @@
 ---
-title: Publish Maven Artifacts
-description: How to publish Maven artifact with Azure Pipelines
-ms.technology: devops-artifacts
+title: Build and publish Artifacts using Gradle
+description: How to build and publish artifact with Gradle and Azure Pipelines 
 ms.reviewer: dastahel
 ms.topic: conceptual
-ms.date: 11/18/2021
+ms.date: 08/18/2022
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Publish Maven artifacts with Azure Pipelines
+# Build and publish artifacts with Gradle and Azure Pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Gradle is a popular build tool for Java applications and the primary build tool for Android. Using Azure Pipelines, we can add the gradle task to our build definition and build and publish our Maven artifacts.
+Gradle is a popular build tool for Java applications and the primary build tool for Android. Using Azure Pipelines, we can add the gradle task to our build definition and build and publish our build artifacts.
 
 ## Prerequisites
 
@@ -46,7 +45,7 @@ gradle -v
 
     :::image type="content" source="media/create-packaging-pat.png" alt-text="Screenshot showing how to create a new personal access token.":::  
 
-3. Select **Create** when you are done.
+3. Select **Create** when you're done.
 
 ::: moniker-end
 
@@ -72,7 +71,7 @@ gradle -v
     vstsMavenAccessToken=<PASTE_YOUR_PERSONAL_ACCESS_TOKEN_HERE>
     ```
 
-7. Save your file when you are done.
+7. Save your file when you're done.
 
 ## Build projects with Gradle CLI
 
@@ -106,7 +105,7 @@ Run the following command to build your project. Your build output should return
 gradle build
 ```
 
-## Use Gradle in Azure Pipeline
+## Use Gradle in Azure Pipelines
 
 1. Run the following command to create the Gradle wrapper **gradlew**. 
 
@@ -128,7 +127,7 @@ gradle build
 
     :::image type="content" source="media\publish-gradle-pipeline.png" alt-text="Screenshot showing the publish artifacts task.":::
 
-1. Select **Save & queue** when you are done.
+1. Select **Save & queue** when you're done.
 
 1. You can view your published artifact in your pipeline **Summary** once the run is complete.
 

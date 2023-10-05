@@ -2,7 +2,6 @@
 title: Introducing Azure DevOps
 author: alexcnichols
 ms.author: alexn
-ms.technology: devops-release-notes
 ms.date: 9/10/2018
 description: The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of Azure DevOps Services. Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
 ---

@@ -8,3 +8,11 @@ groups:
     title: YAML
   - id: pipelines-classic
     title: Classic
+- id: template-type
+  title: Template type
+  prompt: Choose a template type
+  pivots:
+  - id: templates-includes
+    title: Includes templates
+  - id: templates-extends
+    title: Extends templates

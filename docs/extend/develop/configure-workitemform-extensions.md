@@ -2,7 +2,7 @@
 title: Configure work item form extensions | Extensions for Azure DevOps
 description: Describes how to add and configure work item form extensions in Azure DevOps.
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.custom: freshness-fy22q3
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
@@ -15,7 +15,7 @@ ms.date: 02/03/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can export a work item type as xml using the `witadmin` tool, which includes the layout of the work item form. As part of this example, we add the page, group, and control contributions to the layout.  We also add the control to the Agile "User Story" work item type. For more information, see [WebLayout xml](../../reference/xml/weblayout-xml-elements.md). 
+You can export a work item type as xml using the `witadmin` tool, which includes the layout of the work item form. As part of this example, we add the page, group, and control contributions to the layout.  We also add the control to the Agile "User Story" work item type. For more information, see [WebLayout xml reference](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements). 
 
 > [!NOTE]
 > Work item form customization via xml is supported only on Azure DevOps Server, not Azure DevOps Services. 

@@ -2,11 +2,11 @@
 title: WIT Client OM to REST Migration Guide
 titleSuffix: Azure DevOps Services
 description: Migration guide to help you migrate your code from using WIT Client OM to REST based APIs
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 ms.assetid: 30272A34-2CE1-41B3-BA7A-815D69309CBE
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 03/28/2019
 ---

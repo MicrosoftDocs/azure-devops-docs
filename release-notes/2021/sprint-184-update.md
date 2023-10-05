@@ -2,7 +2,6 @@
 title: Changes to Azure Pipelines free grants   
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 03/23/2021
 description: In this release, changes to Azure Pipelines free grants.
 ---

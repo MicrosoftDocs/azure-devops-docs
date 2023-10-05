@@ -3,7 +3,7 @@ title: Plan your organizational structure
 titleSuffix: Azure DevOps
 ms.custom: seodec18, contperf-fy22q3
 description: Begin to plan your organizational structure, including projects, teams, repos, version control, and more.
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
@@ -94,7 +94,7 @@ Even if you have many teams working on hundreds of different applications and so
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. For more information, see [Manage your organization, Limit  user visibility for projects and more](manage-organization-collection.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. For more information and important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker-end  
 

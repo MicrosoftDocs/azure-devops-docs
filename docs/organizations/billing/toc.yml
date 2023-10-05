@@ -15,7 +15,7 @@
   href: ../../pipelines/licensing/concurrent-jobs.md
 - name: Buy Azure Artifacts
   displayName: signup, billing, basic, extension, license, storage
-  href: ../../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json
 - name: Manage billing
   items:
   - name: Add user to manage billing
@@ -34,10 +34,10 @@
   items:
   - name: 'CSPs: Buy Azure DevOps'
     displayName: enable, subscription
-    href: csp/buy-csp-azure-devops.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: csp/buy-csp-azure-devops.md?toc=/azure/devops/organizations/toc.json
   - name: 'CSPs: Buy and manage Visual Studio subscriptions'
     displayName: purchase, change, VS
-    href: /visualstudio/subscriptions/vscloud-csp?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /visualstudio/subscriptions/vscloud-csp?toc=/azure/devops/organizations/toc.json
   - name: 'CSPs: Buy App Center resources'
     displayName: enable, purchase, administration, co-owner
-    href: csp/buy-vs-app-center.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: https://visualstudio.microsoft.com/app-center/

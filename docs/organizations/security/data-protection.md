@@ -4,11 +4,11 @@ titleSuffix: Azure DevOps Services
 description: Learn how Microsoft helps protect your projects and data in Azure DevOps. 
 ms.custom: freshness-fy22
 ms.topic: article
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 03/25/2022
+ms.date: 05/17/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -53,7 +53,7 @@ Azure DevOps uses Azure Storage as the primary repository for service metadata a
 
 - **Azure SQL Database storage** stores the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project, and provides indexes into the blob storage to look up files and attachments. For more information, see [Azure SQL Database](/azure/azure-sql/database).
 
-Administrators can manage access to resources by [granting or restricting permissions](../../reference/process-templates/configure-initial-groups-teams-members-permissions.md) on user identities or groups. Azure DevOps uses federated authentication of user identities via [Azure Active Directory](../accounts/access-with-azure-ad.md) (Azure AD) and Microsoft accounts. 
+Administrators can manage access to resources by [granting or restricting permissions](/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions) on user identities or groups. Azure DevOps uses federated authentication of user identities via [Azure Active Directory](../accounts/access-with-azure-ad.md) (Azure AD) and Microsoft accounts. 
 
 During authentication, the user is routed to the authentication provider, where they provide their credentials. After the authentication provider has verified the user's credentials, Azure DevOps issues an authentication cookie to the user, which allows the user to remain authenticated against Azure DevOps.
 
@@ -80,15 +80,18 @@ For Azure Blob Storage, customer data gets replicated three times within a singl
 
 To protect against accidental deletion of data, Microsoft also takes point-in-time backups of both the blobs in Azure Blob Storage, and the databases in Azure SQL Database. There's a separate copy of all blobs, and changes are appended to each storage account. Because this data is immutable, you don't need to rewrite any existing storage as part of the backup procedures. 
 
-Backups are a standard part of Azure SQL Database, and Azure DevOps makes use of this. We maintain 28 days' worth of your data. In both cases, these backups are also replicated in a paired region, helping to ensure that you recover from a regional outage.
+Backups are a standard part of Azure SQL Database, and Azure DevOps makes use of this. We maintain 28 days' worth of your data. In both cases, these backups are also replicated in a paired region, helping to ensure that we recover from a regional outage. 
 
-A further protection is that Microsoft can recover entire organizations for up to 28 days after deletion. This is because we perform a "soft delete" for organization deletion operations.
+A further protection is that customers can recover their deleted organizations or projects for up to 28 days after deletion. Deleted organizations and projects are in a "soft deleted" stage for 28 days allowing customers to recover as needed. After 28 days they are permanently deleted and cannot be restored.
+
+>[!IMPORTANT]
+> Accidental deletion here refers to scenarios that arise as a result of an incident on our services and doesn't include accidental deletion of assets (e.g., repositories, work items, attachments, artifacts) by customers.  We do not support restoring assets that are accidently deleted by customers as these backups are meant for business continuity and aid recovery from outage or disaster scenarios only. 
 
 ### Practice is critical
 
 Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, the restores do." While technically incorrect, the sentiment is right.
 
-Microsoft regularly practices restoring various datasets from backup. Geo-redundant storage from Azure is tested regularly. Also, from time to time, we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. There are many combinations of disaster and data corruption scenarios, which we continue to plan and run new tests for regularly.
+Microsoft regularly practices restoring various datasets from backup. Geo-redundant storage from Azure is tested regularly. There are many combinations of disaster and data corruption scenarios, which we continue to plan and run new tests for regularly.
 
 ## Service availability
 
@@ -112,7 +115,7 @@ Live site management in Azure DevOps has three distinct tracks: telemetry, incid
 
 The operations team also monitors the availability metrics for individual organizations. These metrics provide insights into specific conditions that might affect only some of our customers. Investigations into this data can often result in targeted improvements to address customer-specific issues. In some cases, Microsoft might even contact you directly to understand your experience and work with you to improve the service.
 
-Microsoft publishes a service-level agreement (SLA) and provides a financial guarantee to ensure that we meet this agreement each month. For more information, see [SLA for Azure DevOps](https://azure.microsoft.com/support/legal/sla/azure-devops/v2_0/).
+Microsoft publishes a service-level agreement (SLA) and provides a financial guarantee to ensure that we meet this agreement each month. For more information, see [SLA for Azure DevOps](https://azure.microsoft.com/support/legal/sla/azure-devops/v2_1/).
 
 Sometimes partner teams or dependencies have incidents that affect Azure DevOps. All partner teams follow similar approaches to identifying, resolving, and learning from these service outages.
 
@@ -173,11 +176,18 @@ Also, data we store on your behalf in Azure DevOps gets encrypted as follows:
 
 * Azure Blob Storage connections get encrypted to protect your data in transit. To protect data at rest stored in Azure Blob Storage, Azure DevOps uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption).
 
+> [!NOTE]
+> Azure DevOps is not Federal Information Processing Standards (FIPS) 140-2 or 140-3 compliant.
+
 The Azure infrastructure helps the Azure DevOps team to log and monitor key aspects of the service. This helps ensure that activities within the service are legitimate, and detects breaches or attempted breaches. In addition, all deployment and administrator activities are securely logged, as is operator access to production storage. Real-time alerts are raised because the log information is automatically analyzed to uncover potentially malicious or unauthorized behavior.
 
 Where a possible intrusion or high priority security vulnerability gets identified, the team has a clear response plan. This plan outlines responsible parties, steps required to secure customer data, and how to engage with security experts at Microsoft. The team also notifies any organization owners if data was disclosed or corrupted, so that they can take appropriate steps to remedy the situation.
 
 Finally, to help combat emerging threats, Azure DevOps employs an "Assume Breach" strategy. A highly specialized group of security experts within Microsoft, known as the Red Team, assumes the role of sophisticated adversaries. This team tests breach detection and response, to accurately measure readiness and the impacts of real-world attacks. This strategy strengthens threat detection, response, and defense of the service. It also allows the team to validate and improve the effectiveness of the entire security program.
+
+### Ransomware attack protection overview
+
+Azure DevOps is built on Azure and uses Azure's best-in-class controls to help prevent, detect, and respond to a ransomware attack. For more information about how Azure protects customers from ransomware attacks, see [Ransomware protection in Azure](/azure/security/fundamentals/ransomware-protection).
 
 ## Data privacy
 
@@ -310,3 +320,4 @@ Azure DevOps supports enforcing certain types of conditional access policies (fo
 - [Features and services included with Azure DevOps](../../user-guide/services.md)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
+

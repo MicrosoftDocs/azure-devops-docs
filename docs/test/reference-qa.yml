@@ -3,9 +3,10 @@ metadata:
   title: Test plans frequently asked questions 
   description: Learn about frequently asked questions (FAQs) on test plans in Azure DevOps.
   titleSuffix: Azure Test Plans
-  ms.technology: devops-test
-  ms.author: kaelli
-  author: KathrynEE
+  ms.service: azure-devops-test-plans
+  ms.custom: UpdateFrequency3
+  ms.author: chcomley
+  author: chcomley
   ms.topic: FAQ
   monikerRange: '<= azure-devops'
   ms.date: 02/16/2022

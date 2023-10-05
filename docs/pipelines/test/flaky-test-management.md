@@ -4,9 +4,8 @@ description: Improve productivity with flaky test management system
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.reviewer: KathrynEE 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 08/31/2020
 monikerRange: 'azure-devops'
 ---
@@ -71,7 +70,7 @@ On the Test management page under **Flaky test options**, you can set options fo
 > ![Flaky Reporting](media/flaky-test-management/flaky_reporting.png)
 
 > [!NOTE]
-> The Test summary report is updated only for [Visual Studio Test task](../tasks/test/vstest.md) and [Publish Test Results task](../tasks/test/publish-test-results.md?tabs=yaml). You may need to add a custom script to suppress flaky test failure for other scenarios. 
+> The Test summary report is updated only for [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2) and [Publish Test Results task](../tasks/test/publish-test-results.md?tabs=yaml). You may need to add a custom script to suppress flaky test failure for other scenarios. 
 
 ## Tests marked as flaky
 
@@ -97,6 +96,6 @@ You can create bugs to manage flaky test debt. If you create or add to bug for a
 ## Related articles
 
 - [Review test results](review-continuous-test-results-after-build.md)
-- [Visual Studio Test task](../tasks/test/vstest.md)
+- [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2)
 - [Publish Test Results task](../tasks/test/publish-test-results.md?tabs=yaml)
 - [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result-meta-data/update)

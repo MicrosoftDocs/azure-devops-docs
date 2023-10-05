@@ -2,7 +2,6 @@
 title: Support for sequential deployments when using exclusive lock checks
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 08/04/2021
 description: In this sprint, we added support for queuing execution in exclusive lock check. 
 ---

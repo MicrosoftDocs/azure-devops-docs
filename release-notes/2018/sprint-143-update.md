@@ -2,7 +2,6 @@
 title: Draft pull requests and new work item text editor - Sprint 143 Update
 author: erindormier
 ms.author: egeaney
-ms.technology: devops-release-notes
 ms.date: 2/13/2018
 description: In the Sprint 143 Update of Azure DevOps, we introduce draft pull requests and a new work item text editor
 ---
@@ -120,7 +119,7 @@ By default, pipelines triggered by pull requests (PRs) will be canceled if a new
 pr:
   branches:
     include:
-    - master
+    - main
     - releases/*
   autoCancel: false
 ```

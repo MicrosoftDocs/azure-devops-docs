@@ -3,10 +3,11 @@ title: Azure DevOps Plugin for IntelliJ, IDEA, Android Studio
 titleSuffix: Azure Repos
 description: Intro to the IntelliJ plugin available for Azure DevOps.
 ms.assetid:
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 11/13/2020
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
@@ -65,7 +66,7 @@ To complete the steps in this guide you need:
 
    Keep this window open as you'll use it for subsequent steps.  
 
-4. Download the [DeepSpace sample code](https://deepspace.blob.core.windows.net/downloads/DeepSpace.zip) and extract it to the local directory on your computer where you cloned the DeepSpace repo.
+4. Download the [DeepSpace sample code](https://github.com/microsoft/deep-space) and extract it to the local directory on your computer where you cloned the DeepSpace repo.
 
 5. Switch back to your Git command window and run the following command, which commits the sample code files to your local repo.
 
@@ -198,4 +199,4 @@ future traceability purposes.
 > [Check out the entire DeepSpace IntelliJ tutorial](/azure/devops/java/labs/e2eintellij)
 
 > [!div class="nextstepaction"]
-> [View the IntelliJ plugin FAQ](/previous-versions/azure/devops/java/intellij-faq)
+> [View the IntelliJ plugin FAQ](/previous-versions/azure/devops/all/java/intellij-faq)

@@ -3,7 +3,6 @@ title: Reporting - Sprint 162 Update
 description: See the Sprint 162 feature updates for Azure reporting, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 12/16/2019
 ---
 

@@ -20,7 +20,7 @@ Below are some tips on how to handle this kind of challenge.
 
 ## Run cross-platform tools with a script step
 
-The script keyword is a shortcut for the [command line task](../tasks/utility/command-line.md). The `script` keyword runs Bash on Linux and macOS and cmd.exe on Windows.
+The script keyword is a shortcut for the [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2). The `script` keyword runs Bash on Linux and macOS and cmd.exe on Windows.
 
 Using `script` can be useful when your task just passes arguments to a cross-platform tool. For instance, calling
 `npm` with a set of arguments can be easily accomplished with a `script` step.
@@ -97,7 +97,7 @@ trigger:
     batch: true
     branches:
         include:
-        - master
+        - main
 steps:
 - bash: |
     echo "Hello world from $AGENT_NAME running on $AGENT_OS"

@@ -3,9 +3,10 @@ title: Change the default branch
 description: Learn how to change your default branch name
 ms.assetid: cd71e039-6e11-44f9-80fd-66c3bc146b46
 ms.topic: article
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.date: 10/07/2020
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Change the default branch
@@ -99,8 +100,8 @@ Update the triggering branches and the `git push` line if your branch names are 
 trigger:
   branches:
     include:
-    - master
     - main
+    - master
  
 pool: { vmImage: ubuntu-latest }
 steps:

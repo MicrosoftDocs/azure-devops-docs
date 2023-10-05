@@ -2,7 +2,7 @@
 title: Use packages from nuget.org
 description: How to use packages from nuget.org with Azure Artifacts
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 02/14/2022
 monikerRange: '<= azure-devops'
@@ -21,13 +21,9 @@ Enabling upstream sources on your feed enables developers to consume packages fr
 
 1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) button to navigate to **Feed settings**.
 
-1. Select **Upstream Sources**.
+1. Select **Upstream Sources**, and then select **Add Upstream**.
 
-    :::image type="content" source="./media/upstreams.png" alt-text="A screenshot showing how to access upstream sources from feed settings.":::
-
-1. Select **Add Upstream**.
-
-    :::image type="content" source="./media/add-nuget-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
+    :::image type="content" source="./media/settings-add-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
 
 1. Select **Public source**.
 
@@ -51,6 +47,16 @@ Enabling upstream sources on your feed enables developers to consume packages fr
     :::image type="content" source="./media/nuget-config.png" alt-text="A screenshot showing how to connect to NuGet feeds.":::
 
 1. Copy the XML snippet in the **Project Setup** section.
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <configuration>
+      <packageSources>
+        <clear />
+        <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+      </packageSources>
+    </configuration>
+    ```
 
 1. Create a new *nuget.config* file in the root of your project.
 

@@ -2,7 +2,6 @@
 title: Changes to Azure Boards Delivery Plans 2.0  
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 04/13/2021
 description: In this sprint, we resolved several dependency tracking issues in Azure Boards Delivery Plans 2.0.
 ---

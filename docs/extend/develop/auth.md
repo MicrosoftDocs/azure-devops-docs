@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Auth and Security | Extensions for Azure DevOps 
 description: Learn about authentication and security for Azure DevOps extensions.
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
@@ -14,7 +14,7 @@ ms.date: 08/29/2016
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article pertains only to _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](../../pipelines/tasks/utility/publish-to-azure-service-bus.md).
+This article pertains only to _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1).
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 

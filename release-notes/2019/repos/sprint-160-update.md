@@ -3,7 +3,6 @@ title: Azure Repos - Sprint 160 Update
 description: See the Sprint 160 feature updates for Azure Repos, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 11/04/2019
 ---
 

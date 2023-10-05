@@ -1,12 +1,12 @@
 ---
 title: Create your first pipeline
-ms.custom: seodec18, devx-track-python, devx-track-azurecli
+ms.custom: seodec18, devx-track-azurecli, py-fresh-zinc
 description: Create your first pipeline in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 09/02/2021
+ms.date: 08/18/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="azure-devops"
 
-This is a step-by-step guide to using Azure Pipelines to build a sample application. This guide uses YAML pipelines configured with the [YAML pipeline editor](get-started/yaml-pipeline-editor.md). If you'd like to use Classic pipelines instead, see [Define your Classic pipeline](release/define-multistage-release-process.md).
+This is a step-by-step guide to using Azure Pipelines to build a sample application from a Git repository. This guide uses YAML pipelines configured with the [YAML pipeline editor](get-started/yaml-pipeline-editor.md). If you'd like to use Classic pipelines instead, see [Define your Classic pipeline](release/define-multistage-release-process.md). For guidance on using TFVC, see [Build TFVC repositories](./repos/tfvc.md).
 
 ## Prerequisites - Azure DevOps
 
@@ -144,11 +144,13 @@ https://github.com/Azure-Samples/js-e2e-express-server
 
 Learn more about [working with JavaScript](ecosystems/javascript.md) in your pipeline.
 
+<!-- Removing the Azure CLI steps as the pipeline templates feature seems to be down -->
+<!-- https://github.com/MicrosoftDocs/azure-devops-docs/issues/13016 -->
+<!--
 
 #### [Azure CLI (Java)](#tab/azure-cli)
 
-
-1. From a command prompt, sign in to the Azure CLI.
+1. From a command prompt, sign in to the Azure CLI. If you don't have Azure CLI installed, see [How to install the Azure CLI](/cli/azure/install-azure-cli).
 
     ```azurecli-interactive
     az login
@@ -168,8 +170,12 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 1. Create a new pipeline:
 
     ```azurecli-interactive
-    az pipelines create --name "First-Java.CI"
+    az pipelines create --name "First-Java.CI" --org <organization> --project <project>
     ```
+
+    Replace `<organization>` and `<project>` with naem of your Azure DevOps organization and project.
+
+    If you don't have the **azure-devops** Azure CLI extension, you'll be prompted to install it.
 
     The repository and branch details are picked up from the git configuration available in the cloned directory.   
 
@@ -242,7 +248,90 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 1. Azure DevOps will automatically start a pipeline run. Wait for the run to finish.
 
---- 
+-->
+<!--End of comment to temporarily remove Azure CLI -->
+
+---
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+## View and manage your pipelines
+
+You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu to go to the pipelines landing page.
+
+:::image type="content" source="get-started/media/pipelines-overview.png" alt-text="Screenshot of pipelines landing page.":::
+
+From the pipelines landing page you can view pipelines and pipeline runs, create and import pipelines, manage security, and drill down into pipeline and run details.
+
+Choose **Recent** to view recently run pipelines (the default view), or choose **All** to view all pipelines.
+
+![Screenshot of options for viewing pipeline runs on the pipelines landing page.](get-started/media/view-pipelines.png)
+
+Select a pipeline to manage that pipeline and [view the runs](#view-pipeline-details). Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
+
+![Screenshot of recently run pipelines.](get-started/media/pipelines-overview-pipeline-context-menu.png)
+
+Select **Runs** to view all pipeline runs. You can optionally filter the displayed runs.
+
+![Screenshot of pipeline runs.](get-started/media/all-pipeline-runs.png)
+
+Select a pipeline run to view information about that run.
+
+You can choose to **Retain** or **Delete** a run from the context menu. For more information on run retention, see [Build and release retention policies](policies/retention.md).
+
+![Screenshot of pipeline run context menu.](get-started/media/pipeline-run-context-menu.png)
+
+### View pipeline details
+
+The details page for a pipeline allows you to view and manage that pipeline.
+
+![Screenshot of pipeline details page.](get-started/media/pipeline-overview.png)
+
+Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](get-started/yaml-pipeline-editor.md). You can also edit your pipeline by modifying the **azure-pipelines.yml** file directly in the repository that hosts the pipeline.
+
+### View pipeline run details
+
+From the pipeline run summary you can view the status of your run, both while it is running and when it is complete.
+
+![Screenshot of pipeline run summary.](get-started/media/pipeline-run-summary.png)
+
+From the summary pane you can view job and stage details, download artifacts, and navigate to linked commits, test results, and work items.
+
+#### Jobs and stages
+
+The jobs pane displays an overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example, the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
+
+![Screenshot of pipeline jobs and stages.](get-started/media/pipeline-jobs-pane.png)
+
+Choose a job to see the steps for that job.
+
+![Screenshot of pipeline tasks.](get-started/media/pipeline-steps-list.png)
+
+From the steps view, you can review the status and details of each step. From the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: you can toggle timestamps or view a raw log of all steps in the pipeline.
+
+![Screenshot of pipeline tasks content menu.](get-started/media/pipeline-steps-context-menu.png)
+
+#### Cancel and re-run a pipeline
+
+If the pipeline is running, you can cancel it by choosing **Cancel**. If the run has completed, you can re-run the pipeline by choosing **Run new**.
+
+![Screenshot of cancelling a pipeline run.](get-started/media/cancel-pipeline-run.png)
+
+<a name="download-logs"></a>
+#### Pipeline run more actions menu
+
+From the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: menu you can download logs, add tags, edit the pipeline, delete the run, and configure [retention](policies/retention.md) for the run.
+
+![Screenshot of pipeline run summary page more actions menu.](get-started/media/pipeline-run-summary-context-menu.png)
+
+> [!NOTE]
+> You can't delete a run if the run is retained. If you don't see **Delete**, choose **Stop retaining run**, and then delete the run. If you see both **Delete** and **View retention releases**, one or more configured retention policies still apply to your run. Choose **View retention releases**, delete the policies (only the policies for the selected run are removed), and then delete the run.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 [!INCLUDE [include](includes/get-status-badge.md)]
 
@@ -254,7 +343,7 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 We'll show you how to use the classic editor in Azure DevOps Server 2019 to create a build and release that prints "Hello world".
 
@@ -270,7 +359,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 ## Prerequisites
 
-* A [self-hosted Windows agent](agents/v2-windows.md).
+* A [self-hosted Windows agent](agents/windows-agent.md).
 
 <a name="initialize-repo"></a>
 ## Initialize your repository
@@ -279,7 +368,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Go to **Azure Repos**. (The **Code** hub in the previous navigation)
 
@@ -311,7 +400,7 @@ Create a PowerShell script that prints `Hello world`.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Go to **Azure Repos**.
 
@@ -383,7 +472,7 @@ Create a build pipeline that prints "Hello world."
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
 
@@ -464,7 +553,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. On the **Tasks** tab, select the plus sign **( + )** to add a task to **Job 1**.
 
@@ -517,7 +606,7 @@ Save and queue a build manually and test your build pipeline.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Select **Save & queue**, and then select **Save & queue**.
 
@@ -590,7 +679,7 @@ We'll pass some build variables to the script to make our pipeline a bit more in
 
    ::: moniker-end
 
-   ::: moniker range="azure-devops-2019 || azure-devops-2020"
+   ::: moniker range=">= azure-devops-2019 < azure-devops"
 
    > [!div class="mx-imgBorder"] 
    > ![Open the PowerShell task in the build console](media/get-started-designer/powershell-task-2-azure-devops-newnavon.png)
@@ -640,7 +729,7 @@ Next you'll add the arguments to your script.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 Now you can see the results of your changes. Go to **Azure Pipelines** and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
 
@@ -660,7 +749,7 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
 
    ::: moniker-end
 
-   ::: moniker range="azure-devops-2019 || azure-devops-2020"
+   ::: moniker range=">= azure-devops-2019 < azure-devops"
 
    > [!div class="mx-imgBorder"] 
    > ![Build a summary PowerShell script log](media/get-started-designer/build-summary-powershell-script-log-azure-devops-newnav.png)
@@ -688,7 +777,7 @@ Define the process for running the script in two stages.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Go to the **Pipelines** tab, and then select **Releases**.
 
@@ -810,7 +899,7 @@ Run the script in each stage.
 
 ::: moniker-end
 
- ::: moniker range="azure-devops-2019 || azure-devops-2020"
+ ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Create a new release.
 
@@ -881,7 +970,7 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="mx-imgBorder"] 
 > ![release script step final log - DevOps 2019 and 2020](media/get-started-designer/release-script-step-final-log-azure-devops-newnavon.png)
@@ -958,12 +1047,12 @@ When you're ready to get going with CI/CD for your app, you can use the version 
   * [Visual Studio with Git for Windows](../repos/git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
   * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
   * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
-  * [IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+  * [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
   * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
 
 * Services
   * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
-  * Git service providers such as GitHub and Bitbucket Cloud
+  * Git service providers such as Azure Repos Git, GitHub, and Bitbucket Cloud
   * Subversion
 
 ::: moniker-end
@@ -977,7 +1066,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
   * [Visual Studio with TFVC](../repos/tfvc/share-your-code-in-tfvc-vs.md)
   * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
   * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
-  * [IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+  * [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
   * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
 
 * Services
@@ -1024,7 +1113,7 @@ If you're editing a build pipeline and you want to test some changes that are no
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="mx-imgBorder"] 
 > ![save-as-draft](media/get-started-designer/save-as-draft-newnav.png)
@@ -1044,7 +1133,7 @@ You can edit and test your draft as needed.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="mx-imgBorder"] 
 > ![edit draft - DevOps 2019 and 2020](media/get-started-designer/edit-draft-newnav.png)
@@ -1058,7 +1147,7 @@ When you're ready, you can publish the draft to merge the changes into your buil
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="mx-imgBorder"] 
 > ![publish draft - DevOps 2019 and 2020](media/get-started-designer/publish-draft-newnav.png)
@@ -1099,7 +1188,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 * Add and modify some [variables](build/variables.md).
 
-* Add [demands](process/demands.md).
+* Add [demands](/azure/devops/pipelines/yaml-schema/pool-demands).
 
 * In a Git repository
 
@@ -1125,7 +1214,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 * Add and modify some [variables](build/variables.md).
 
-* Add [demands](process/demands.md).
+* Add [demands](/azure/devops/pipelines/yaml-schema/pool-demands).
 
 * In a Git repository
 

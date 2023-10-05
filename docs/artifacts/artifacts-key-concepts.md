@@ -1,7 +1,7 @@
 ---
 title: Key concepts for Azure Artifacts
 description: Important concepts for Azure Artifacts
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 01/12/2022
 monikerRange: '<= azure-devops'

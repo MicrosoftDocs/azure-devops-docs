@@ -3,10 +3,10 @@ title: Add and manage fields to an inherited process
 titleSuffix: Azure DevOps 
 description: Add and manage fields in the web form of a work item type for an Inheritance process 
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: how-to
 ms.date: 01/11/2022
@@ -111,7 +111,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 ::: moniker-end
 
 > [!NOTE] 
-> Each organization or collection can define up to 1024 picklists. Each picklist can contain up to 2048 items. Picklist items must be 256 or fewer characters. If you want to add dependent picklists, see [Cascading lists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension). 
+> Each organization or collection can define up to 2048 picklists. Each picklist can contain up to 2048 items. Picklist items must be 256 or fewer characters. If you want to add dependent picklists, see [Cascading lists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension). 
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can add an item and then press **Enter** to add another item. 
 
@@ -323,11 +323,19 @@ You may discard changes you made to an inherited field. From the **Layout** page
 
 <a id="delete-field">  </a>
 
-## Delete a field  
+## Delete a custom field  
+
+With the Inheritance process model, you can only delete custom fields. You can't delete fields defined for system default processes. 
 
 Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update). 
 
-We recommend that you only delete fields that are not in use. You can determine fields that aren't in use by exercising the **witadmin listfields** command. To learn how, see [Manage work item fields (witadmin)](../../../reference/witadmin/manage-work-item-fields.md).
+> [!NOTE]   
+> We recommend that you only delete fields that are not in use. You can determine fields that aren't in use by exercising the **witadmin listfields** command. To learn how, see [Manage work item fields (witadmin)](../../../reference/witadmin/manage-work-item-fields.md).  
+> Or, if Analytics is enabled for your organization or collection, you can query Analytics for where a custom field is in use with the following syntax:  
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/WorkItemTypeFields?$filter=FieldReferenceName eq {CustomFieldReferenceName}&$select=WorkItemType
+> ``` 
 
 
 1. You delete the field from the **All processes>Fields** page.  

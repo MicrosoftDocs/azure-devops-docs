@@ -4,13 +4,13 @@
   expanded: true
   items:
   - name: Set your preferences
-    href: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+    href: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json 
   - name: Set personal or team favorites
-    href: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+    href: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json 
   - name: Understand your default permissions
-    href: ../organizations/security/permissions-access.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+    href: ../organizations/security/permissions-access.md?toc=/azure/devops/project/toc.json 
   - name: Connect to a project
-    href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+    href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/project/toc.json 
   - name: Navigate the web portal
     href: ./navigation/index.md
   - name: Get started with Search
@@ -32,13 +32,13 @@
   - name: Wikis
     href: /rest/api/vsts/wiki/wikis
   - name: Fetch Wiki search results
-    href: /rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results
+    href: /rest/api/azure/devops/search/wiki-search-results/fetch-wiki-search-results
 - name: Resources
   items:
   - name: Get Started
     href: ../get-started/index.yml
   - name: Notifications
-    href: ../notifications/about-notifications.md
+    href: ../organizations/notifications/about-notifications.md?toc=/azure/devops/organizations/toc.json 
   - name: Manage projects
     href: ../organizations/projects/about-projects.md
   - name: Settings & Usage

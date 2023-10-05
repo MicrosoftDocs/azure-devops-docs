@@ -3,7 +3,6 @@ title: Wiki - Sprint 147 Update
 description: See the Sprint 147 feature updates for Wiki, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 01/14/2018
 ---
 

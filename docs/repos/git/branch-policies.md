@@ -3,11 +3,12 @@ title: Git branch policies and settings
 titleSuffix: Azure Repos
 description: Branch policies and settings provide teams with the means to protect their important branches.
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.custom: cross-service
+ms.custom: cross-service, devx-track-azurecli
 ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Branch policies and settings
@@ -180,10 +181,23 @@ To set the policy, under **Branch Policies**, set **Require a minimum number of 
 
 - Select **Allow completion even if some reviewers vote to wait or reject** to allow PR completion even if some reviewers vote against approval. The minimum number of reviewers must still approve.
 
-- Under **When new changes are pushed**:
+::: moniker-end
 
+::: moniker range=">= azure-devops-2020 < azure-devops-2022"
+
+- Under **When new changes are pushed**:
   - Select **Require at least one approval on the last iteration** to require at least one approval vote for the last source branch change.
-  - Select **Reset all approval votes (does not reset votes to reject or wait)** to remove all approval votes, but keep votes to reject or wait, whenever the source branch changes, 
+  - Select **Reset all approval votes (does not reset votes to reject or wait)** to remove all approval votes, but keep votes to reject or wait, whenever the source branch changes.
+  - Select **Reset all code reviewer votes** to remove all reviewer votes whenever the source branch changes, including votes to approve, reject, or wait.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2022"
+
+- Under **When new changes are pushed**:
+  - Select **Require at least one approval on every iteration** to require at least one approval vote for the last source branch change. The user's approval is not counted against any previous unapproved iteration pushed by that user. As a result, additional approval on the last iteration is required to be done by another user. **Require at least one approval on every iteration** is available in Azure DevOps Server 2022.1 and higher.
+  - Select **Require at least one approval on the last iteration** to require at least one approval vote for the last source branch change.
+  - Select **Reset all approval votes (does not reset votes to reject or wait)** to remove all approval votes, but keep votes to reject or wait, whenever the source branch changes.
   - Select **Reset all code reviewer votes** to remove all reviewer votes whenever the source branch changes, including votes to approve, reject, or wait.
 
 ::: moniker-end
@@ -1146,15 +1160,16 @@ In TFS 2015 through TFS 2018 Update 2, the **Exempt from policy enforcement** pe
 
 Several branch policies offer path filters. If a path filter is set, the policy applies only to files that match the path filter. Leaving this field blank means that the policy applies to all files in the branch.
 
-You can specify absolute paths and wildcards.
+You can specify absolute paths (path must start either by `/` or a wildcard) and wildcards.
 Examples:
 - `/WebApp/Models/Data.cs`
 - `/WebApp/*`
+- `*/Models/Data.cs`
 - `*.cs`
 
 You can specify multiple paths using `;` as a separator.
 Example:
-- `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`
+- `/WebApp/Models/Data.cs;/ClientApp/Models/Data.cs`
 
 Paths prefixed with `!` are excluded if they would otherwise be included.
 Example:
@@ -1176,6 +1191,8 @@ The order of filters is significant. Filters are applied left-to-right.
 - [How can I configure multiple users as required reviewers, but require only one of them to approve?](#how-can-i-configure-multiple-users-as-required-reviewers-but-require-only-one-of-them-to-approve)
 - [I have bypass policy permissions. Why do I still see policy failures in the pull request status?](#i-have-bypass-policy-permissions-why-do-i-still-see-policy-failures-in-the-pull-request-status)
 - [Why can't I complete my own pull requests when "Allow requestors to approve their own changes" is set?](#why-cant-i-complete-my-own-pull-requests-when-allow-requestors-to-approve-their-own-changes-is-set)
+- [What happens when path in path filters start neither with `/` nor with wildcard?](#what-happens-when-path-in-path-filters-start-neither-with--nor-with-wildcard)
+
 
 #### Can I push changes directly to branches that have branch policies?
 
@@ -1232,6 +1249,12 @@ For example, your pull request has the following policies set:
 In this case, your approval satisfies **Automatically included reviewers**, but not **Require a minimum number of reviewers**, so you can't complete the pull request.
 
 There might also be other policies, such as **Prohibit the most recent pusher from approving their own changes**, that prevent you from approving your own changes even if **Allow requestors to approve their own changes** is set.
+
+#### What happens when path in path filters start neither with `/` nor with wildcard?
+
+
+The path in path filters that start neither with `/` nor with a wildcard will have no effect, and the path filter will evaluate as if that path wasn't specified. That's because such a path can't match the `/` the absolute file path starts with.
+
 
 ## Related articles
 

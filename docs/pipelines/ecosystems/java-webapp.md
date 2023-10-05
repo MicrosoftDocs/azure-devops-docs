@@ -2,6 +2,7 @@
 title: Build and deploy to a Java web app on Linux
 description: Continuous integration and deployment (CI/CD) to a Java web app on Linux.
 ms.topic: tutorial
+ms.custom: devx-track-extended-java
 ms.assetid: 49253EA0-9CD6-4082-A303-95F78C7599C2
 ms.date: 12/22/2021
 monikerRange: 'azure-devops'

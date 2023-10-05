@@ -2,10 +2,10 @@
 title: Manage requirements, Agile methods
 titleSuffix: Azure DevOps
 description: Learn about the tools and features available to manage requirements 
-ms.technology: devops-agile 
+ms.subservice: azure-devops-cross-service
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 09/08/2020
 ---
@@ -184,7 +184,7 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 
 **Example Kanban board** 
 
-![Screenshot of Kanban board, Agile template, update status of work item](../boards/boards/media/ALM_CC_MoveCard.png) 
+:::image type="content" source="../boards/boards/media/alm-cc-move-card.png" alt-text="Screenshot of Kanban board, Agile template, update status of work item.":::
 
 Each team can quickly configure their board and the cards to support their business needs.  
  
@@ -358,7 +358,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 - [About work items](../boards/work-items/about-work-items.md) 
 - [Add work item tags to categorize and filter lists and boards](../boards/queries/add-tags-to-work-items.md)
-- [Choose a process](../boards/work-items/guidance/choose-process.md)
+- [About processes and process templates](../boards/work-items/guidance/choose-process.md)
 - [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md) 
 - [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [About Area and Iteration Paths (sprints)](../organizations/settings/about-areas-iterations.md) 
@@ -370,7 +370,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Create your backlog](../boards/backlogs/create-your-backlog.md)  
 - [Organize your backlog](../boards/backlogs/organize-backlog.md)  
 - [Define features and epics](../boards/backlogs/define-features-epics.md) 
-- [Refine your backlog](../boards/backlogs/best-practices-product-backlog.md) 
 - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md) 
 - [Tasks supported by Backlogs, Boards, Taskboards, and Plans](../boards/backlogs/backlogs-boards-plans.md)
 - [Configure and customize Azure Boards](../boards/configure-customize.md)
@@ -381,7 +380,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Add columns to your Kanban board](../boards/boards/add-columns.md) 
 - [Customize cards](../boards/boards/customize-cards.md)
 - [Filter your Kanban board](../boards/backlogs/filter-backlogs-boards-plans.md)
-- [Kanban best practices](../boards/boards/best-practices-kanban.md)
 
 #### Scrum
 
@@ -392,7 +390,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Dependency management 
 
 - [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md) 
-- [Triage work items](../boards/queries/triage-work-items.md) 
 
 #### Milestone planning 
 
@@ -409,11 +406,11 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Maintain specifications and share information 
 
 - [About Wikis, READMEs, and Markdown](../project/wiki/about-readme-wiki.md)
-- [Share information within work items and social tools](../boards/queries/share-plans.md)
+- [Send email with work item or print](../boards/work-items/email-work-items.md)
 
 
 #### Notifications
 
-- [Default and supported notifications](../notifications/oob-built-in-notifications.md) 
-- [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
-- [Manage notifications for a team or group](../notifications/manage-team-group-global-organization-notifications.md)
+- [Default and supported notifications](../organizations/notifications/oob-built-in-notifications.md) 
+- [Manage personal notifications](../organizations/notifications/manage-your-personal-notifications.md)
+- [Manage notifications for a team or group](../organizations/notifications/manage-team-group-global-organization-notifications.md)

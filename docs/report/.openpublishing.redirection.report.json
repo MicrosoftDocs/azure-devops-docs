@@ -335,6 +335,11 @@
       "source_path_from_root": "/docs/reference/xml/add-or-modify-work-item-fields-to-support-reporting.md",
       "redirect_url": "/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/powerbi/analytics-default-views.md",
+      "redirect_url": "/azure/devops/report/powerbi/what-are-analytics-views",
+      "redirect_document_id": false
     }
   ]
 }

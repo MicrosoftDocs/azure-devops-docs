@@ -3,13 +3,13 @@ title: Work tracking, process, and project limits
 titleSuffix: Azure DevOps Services
 description: Limits placed on the number of objects that can be specified for work tracking objects, queries and more  
 ms.custom: "inherited-process, linked-from-support, cross-project"
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
-ms.date: 05/31/2022
+ms.date: 07/07/2022
 ---
 
 # Work tracking, process, and project limits
@@ -37,7 +37,7 @@ When defining work items or running queries, the following operational limits ap
 | Work item tags assigned to a work item | 100 |
 | Work item revisions (REST API) | 10,000 | 
 
-A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restrict updates from the REST API, however, updates from the web portal are not affected.  
+A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restricts updates from the REST API, however, updates from the web portal are not affected.  
 
 
 
@@ -57,12 +57,12 @@ A work item revision limit of 10,000 is in effect for updates made through the R
 | Query length | 32,000 characters |
 | Shared queries under a folder | 999 queries |
 
-The default maximum attachment size is 4 MB. You can [change the maximum size up to 2 GB](../../../reference/xml/change-maximum-attachment-size-work-items.md).
+The default maximum attachment size is 4 MB. You can [change the maximum size up to 2 GB](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).
 ::: moniker-end
 
-To improve query performance, see [ Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md).
+To improve query performance, see [Define a query/Best practices](../../../boards/queries/using-queries.md#best-practices).
 
-## Backlogs, boards, and teams
+## Backlogs, boards, dashboards, and teams
 
 ::: moniker range="azure-devops"
 
@@ -73,14 +73,19 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Backlogs | 10,000 work items |
 | Boards | 1,000 cards (excluding those cards in the *[Proposed](../../../boards/work-items/workflow-and-state-categories.md)*[ and ](../../../boards/work-items/workflow-and-state-categories.md)*[Completed](../../../boards/work-items/workflow-and-state-categories.md)*[ workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) |
 | Taskboard | 1,000 tasks  |
-| Teams | 5,000 per organization |
-| Work item tags | 150,000 tag definitions per organization or collection |
-| Area Paths | 10,000 per organization |
+| Area Paths | 10,000 per project |
 | Area Path Depth | 14 |
 | Area Paths per team | 300 |
-| Iteration Paths | 10,000 per organization |
+| Iteration Paths | 10,000 per project |
 | Iteration Path Depth | 14 |
 | Iteration Paths per team | 300 |
+| Project Dashboards | 500 per project |
+| Team Dashboards | 500 per team |
+| Teams | 5,000 per project |
+| Work item tags | 150,000 tag definitions per organization or collection |
+| Delivery plans per project | 1,000 |
+| Templates per work item type | 100 |
+
 
 Each backlog can display up to 10,000 work items. This is a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
@@ -101,9 +106,11 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 |--------|-------|
 | Backlogs | 999 work items |
 | Boards | 400 cards  |
+| Dashboards per project | 500 |
 | Taskboard | 800 work items |
 | Teams | 5,000 per project |
 | Work item tags | 150,000 tag definitions per project |
+| Templates per work item type | 100 |
 
 Each backlog can display up to 999 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
@@ -122,7 +129,7 @@ Azure DevOps Services limits each organization to 1000 projects per organization
 
 > [!NOTE]
 > Above 300 projects certain experiences, such as connecting to a project from Visual Studio, may start to degrade. 
-For on-premises Azure DevOps Server, there are no hard limits to the number of projects. However, you may find performance issues if the number of projects approaches 300. If you plan to migrate your on-premises collection to Azure DevOps Services, you'll need to observe the maximum limit of 300 projects. If your collection has more than 300 projects, you'll either need to split the collection or delete older projects.
+For on-premises Azure DevOps Server, there are no hard limits to the number of projects. However, you may find performance issues if the number of projects approaches 300. If you plan to migrate your on-premises collection to Azure DevOps Services, you'll need to observe the maximum limit of 1000 projects. If your collection has more than 1000 projects, you'll either need to split the collection or delete older projects.
 
 For more information, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md).
 
@@ -141,7 +148,7 @@ The following table lists the maximum number of objects that you can define for 
 | Fields defined for an organization                  |        8192 |       8192 |
 | Fields defined for a process                        |        1024 |       1024 |
 | Fields defined for a work item type                 |        1024 |       1024 |
-| Picklists defined for an organization or collection |        1024 |          - |
+| Picklists defined for an organization or collection |        2048 |          - |
 | Picklist items defined for a list                   |        2048 |       2048 |
 | Picklist item character length                      |         256 |          - |
 | Workflow states defined for a work item type        |          32 |         16 |
@@ -234,6 +241,8 @@ We recommend that you consider the following guidance in order to minimize perfo
 
 > [!NOTE]
 > **Work Item Rules Validation Exceeds SQL Limits**: A single SQL expression is defined per project to validate work items whenever they are created or updated. This expression grows with the number of rules you specify for all work item types defined for the project. Each behavioral qualifier specified for a field results in an increase in the number of sub-expressions. Nested rules, rules that apply only on a transition or conditioned on the value of some other field, cause more conditions to be added to an IF statement. Once the expression reaches a certain size or complexity, SQL can't evaluate it any more and generates an error. Removing some WITs or eliminating some rules, can resolve the error. 
+
+
 ::: moniker range="azure-devops"
 
 ## Rate limits
@@ -261,7 +270,6 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker range="azure-devops"
 
-- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [About process customization and inherited processes](inheritance-process-model.md)
 - [Create an Inheritance process](manage-process.md)
 - [Best practices](../../../integrate/concepts/integration-bestpractices.md)
@@ -271,7 +279,6 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [About process customization and inherited processes](inheritance-process-model.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
@@ -282,7 +289,6 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker range="tfs-2018"
 
-- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
 - [Rules and rule evaluation](../../../organizations/settings/work/rule-reference.md)
@@ -295,3 +301,4 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 - [Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2&ssr=false#overview)
 - [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 - [Process Template Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.msdevlabs-pte)
+

@@ -1,10 +1,10 @@
 ---
 title: Delete, remove project
 titleSuffix: Azure DevOps
-ms.custom: seodec18, contperf-fy21q3
+ms.custom: seodec18, contperf-fy21q3, engagement-fy23
 description: Delete or remove a project from your organization in Azure DevOps.
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
@@ -18,20 +18,30 @@ ms.date: 08/16/2021
 
 If you have a project that's no longer valid, you can delete it from your organization or collection in Azure DevOps. Or, if you are migrating from an on-premises Azure DevOps Server to Azure DevOps Services, you'll need to delete project(s). Deleting projects also helps to simplify navigating to only those projects that are in use. 
 
-> [!Caution]
+::: moniker range=" > tfs-2018"  
+
+> [!CAUTION]
 > Deleting projects from the web portal generate a soft-delete where projects get permanently deleted if not restored within 28 days. Projects deleted from the on-premises Azure DevOps Administration Console undergo a hard delete and cannot be restored. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
+
+::: moniker-end    
+::: moniker range="tfs-2018"
+
+> [!Caution]
+> Deleting projects in TFS 2018 is permanent.  All projects deleted from the on-premises TFS 2018 undergo a hard delete and cannot be restored.
+
+::: moniker-end
 
 ## Prerequisites
 
 ::: moniker range="azure-devops" 
 
-- You must be a member of the **Project Administrators** group or have the project-level **Delete team project** permission set to **Allow**. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the project-level **Delete team project** permission set to **Allow**. Organization owners are automatically members of this group. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"  
 
-- You must be a member of the **Project Administrators** group or have the **Delete team project** permission set to **Allow**. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the **Delete team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end  
 
@@ -57,7 +67,7 @@ Use your web browser to perform a soft-delete. After 28 days, projects will be  
 
    :::image type="content" source="media/delete-project/delete-multiple-projects.png" alt-text="In Organization settings, select Projects, check each project, delete":::
 
-4. Confirm deletion by entering the organization name, and then select **Delete** in the popup screen.
+4. Confirm deletion by entering the project name, and then select **Delete** in the popup screen.
 
     ![popup confirmation delete project screen](media/delete-project/confirm-delete-project.png)
 
@@ -129,7 +139,7 @@ You can delete a team project with the [az devops project delete](/cli/azure/dev
 az devops project delete --id
                          [--org]
                          [--yes] 
-``` 
+```
 
 #### Parameters 
 
@@ -137,21 +147,19 @@ az devops project delete --id
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **yes**: Don't prompt for confirmation.
 
-
 #### Example 
 
 The following command deletes the team project with the specified ID without prompting you for confirmation.
 
 ```azurecli 
 az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
-``` 
+```
 
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
-* * * 
-
+***
  
 
 ::: moniker range="< azure-devops"
@@ -180,9 +188,14 @@ See the following frequently asked questions about deleting projects in Azure De
 
 A: Work items get deleted within 24 hours after your project is deleted.
 
+
+::: moniker range=" > tfs-2018"  
+
 ### Q: I deleted a project in Azure DevOps, but in Visual Studio Team Explorer it's still there, what do I do?
 
 A: Wait 28 days before the project is permanently deleted.
+
+::: moniker-end
 
 ::: moniker range="tfs-2018"
 
@@ -210,3 +223,4 @@ A: Review the status and log files for the delete action. Open the **Status** ta
 - [Restore a project](restore-project.md)
 - [Delete a project with REST API](/rest/api/azure/devops/core/projects/delete)
 - [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd)
+

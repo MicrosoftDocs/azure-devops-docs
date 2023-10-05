@@ -1,7 +1,7 @@
 ---
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 03/05/2021
 ---
@@ -13,7 +13,7 @@ The following table summarizes the query filter functions supported by each Azur
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE] 
-> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Functional work items search](../../project/search/functional-work-item-search.md).
+> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. For more information, see [Functional work items search](../../project/search/functional-work-item-search.md).
 ::: moniker-end
 
 ---
@@ -113,7 +113,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work items in one or more projects in an organization or collection. Default is the current project. Use the **Team Project** field to query on two or more projects.
    :::column-end:::
    :::column span="1":::
-      TFS 2015-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions 
    :::column-end:::
 :::row-end:::
 ---
@@ -152,7 +152,7 @@ The following table summarizes the query filter functions supported by each Azur
       **Supported operators**: `Is Empty, Is Not Empty`
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
+      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---
@@ -164,7 +164,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work whose field value matches any value in a delimited set, such as a set of work item types, workflow states, or picklist values.  Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
    :::column-end:::
    :::column span="1":::
-      TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions
    :::column-end:::
 :::row-end:::
 ---
@@ -176,7 +176,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work items based on boolean field value. 
    :::column-end:::
    :::column span="1":::
-      TFS 2017-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions
    :::column-end:::
 :::row-end:::
 ---
@@ -188,7 +188,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work items based on key words or phrases added through the Discussion. 
    :::column-end:::
    :::column span="1":::
-      TFS 2017.2-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions
    :::column-end:::
 :::row-end:::
 ---
@@ -200,7 +200,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work items based on their Kanban column, swimlane, or Doing/Done status.
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
+      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---
@@ -212,9 +212,9 @@ The following table summarizes the query filter functions supported by each Azur
       Filter query results based on a key word or select fields. 
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
+      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---
 
-To bulk move, copy, or paste query clauses, install and use the WIQL editor. To learn more, see [Cross-service and enhanced query operations](../queries/query-support-integration-cross-service-extensions.md#wiql)
+To bulk move, copy, or paste query clauses, install and use the [WIQL editor](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata).

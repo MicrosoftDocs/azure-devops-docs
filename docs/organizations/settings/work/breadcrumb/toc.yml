@@ -1,7 +1,0 @@
-- name: Azure DevOps
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/index
-  items: 
-  - name: Boards settings
-    tocHref: /azure/devops/reference/settings/work/
-    topicHref: /azure/devops/reference/index

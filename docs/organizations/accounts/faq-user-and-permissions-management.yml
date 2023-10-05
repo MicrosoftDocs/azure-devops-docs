@@ -2,9 +2,9 @@
 metadata:
   title: User and permissions management FAQs
   titleSuffix: Azure DevOps
-  ms.custom: seodec18
+  ms.custom: seodec18, has-azure-ad-ps-ref
   description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, manage Visual Studio subscriptions, and more.
-  ms.technology: devops-accounts
+  ms.subservice: azure-devops-organizations
   ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
   ms.topic: faq
   ms.author: chcomley
@@ -38,18 +38,18 @@ sections:
       - question: |
           Q: Why can't I manage users?
         answer: |
-          A: You must be a member of the Project Collection Administrators group or [Organization owner](../security/look-up-organization-owner.md) to manage users at the organization level. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
+          A: You must be a member of the Project Collection Administrators group or [organization Owner](../security/look-up-organization-owner.md) to manage users at the organization level. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
           
           <a name="find-owner"></a>
           
       - question: |
-          Q: How do I find the organization Owner?
+          Q: How do I find the organization owner?
         answer: |
           A: If you have at least Basic access, you can find the current owner in your organization settings.
           
           1. Go to your **Organization settings**.
           
-             ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+             ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
           
           2. Find the current owner.
           
@@ -134,13 +134,13 @@ sections:
       - question: |
           Q: Why can't users access some features?
         answer: |
-          A: Make sure that users have the correct [access level](https://visualstudio.microsoft.com/team-services/compare-features/) assigned to them.  
+          A: Make sure that users have the correct access level assigned to them.  
           
           * Learn [how to manage users and access levels for Azure DevOps](./add-organization-users.md).
           
           * Learn [how to change access levels for Azure DevOps Server](../security/change-access-levels.md).
           
-          Some features are available only as [extensions](https://visualstudio.microsoft.com/team-services/compare-features/). You need to install these extensions. Most extensions require you to have at least Basic access, not Stakeholder access. Check the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
+          Some features are available only as extensions. You need to install these extensions. Most extensions require you to have at least Basic access, not Stakeholder access. Check the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
           
           For example, to search your code, you can install the free [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), but you need at least Basic access to use the extension.
           

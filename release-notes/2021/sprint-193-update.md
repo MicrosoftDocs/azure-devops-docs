@@ -2,7 +2,6 @@
 title: Improvements to Delivery Plans
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 09/28/2021
 description: With this update, we've included multiple improvements to Delivery Plans.
 ---

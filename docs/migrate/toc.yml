@@ -10,6 +10,9 @@
 - name: Import large collections
   href: migration-import-large-collections.md
   displayName: reduce collection size
+- name: Restrict access to Azure DevOps Services IPs only
+  href: migration-restricting-access-to-azure-devops-services.md
+  displayName: restrict access to azure devops services ips only
 - name: Process templates
   href: migration-processtemplates.md
   displayName: inherited process model, hosted xml process model

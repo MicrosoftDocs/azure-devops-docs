@@ -2,7 +2,7 @@
 title: Add panels on backlog pages | Extensions for Azure DevOps Services
 description: Extend Azure DevOps Services with panels on backlogs.
 ms.assetid: 34f01da42-5a98-4bc5-981e-3f8d1ffdf163
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.author: chcomley
@@ -37,7 +37,7 @@ There are three types of backlogs that can be targets for panel extensions: Port
 
 ![backlog panel contribution point breakdown](media/add-panel-show-three-types.png)
 
-See the [Azure DevOps Services Extension Samples](https://github.com/Microsoft/vsts-extension-samples/tree/master/backlogs-panel) on GitHub for the full source of an example extension.
+For more information, see the [Azure DevOps Services Extension Sample](https://github.com/Microsoft/azure-devops-extension-sample).
 
 ## Update your extension manifest
 

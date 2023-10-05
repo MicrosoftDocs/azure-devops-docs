@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Azure Boards Sprint 186 Update
 description: See the Sprint 186 feature updates for Azure Boards, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 05/05/2021
 ---
 

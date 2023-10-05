@@ -2,9 +2,9 @@
 title: About pipeline security roles
 titleSuffix: Azure DevOps
 description: Learn about security roles and where they are used to manage select pipeline permissions 
-ms.technology: devops-security
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-security
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 10/11/2021

@@ -3,10 +3,11 @@ title: Troubleshoot migration import to Azure DevOps Services
 titleSuffix: Azure DevOps
 description: Resolve common DataMigratorTool validation errors 
 ms.topic: troubleshooting
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
+ms.custom: has-azure-ad-ps-ref
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/31/2022
 ---
@@ -517,7 +518,3 @@ If the error is more complex, then the email you receive provides instructions o
 - [Post-import](migration-post-import.md)
 - [Delete a project](../organizations/projects/delete-project.md)
 - [Restore a project](../organizations/projects/restore-project.md)
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: Use packages from Maven Central
 description: How to use packages from Maven upstream
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 02/15/2022
 monikerRange: '<= azure-devops'

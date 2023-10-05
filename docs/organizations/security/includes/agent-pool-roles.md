@@ -1,7 +1,7 @@
 ---
-ms.technology: devops-security
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-security
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ---
 

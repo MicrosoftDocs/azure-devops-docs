@@ -13,7 +13,7 @@
     href: concepts/best-practices.md
     displayName: best practices, concepts
   - name: Search packages
-    href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+    href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json
     displayName: search, packages
 - name: Packages
   items:
@@ -32,43 +32,43 @@
     items:
     - name: NuGet quickstart
       href: get-started-nuget.md
-      displayName: nuget, quickstart 
-    - name: Publish to a NuGet feed (YAML/Classic)
-      href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-      displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
-    - name: Publish NuGet packages (CLI)
+      displayName: nuget, quickstart
+    - name: Project setup (NuGet.exe)
+      href: nuget/nuget-exe.md
+      displayName: nuget package, artifacts feeds, publish packages, download packages
+    - name: Project setup (dotnet)
+      href: nuget/dotnet-setup.md
+      displayName: dotnet package, authenticate 
+    - name: Publish NuGet packages (NuGet.exe)
       href: nuget/publish.md
-      displayName: publish package, nuget feed, cli
+      displayName: publish package, nuget.exe, cli
+    - name: Publish NuGet packages (dotnet)
+      href: nuget/dotnet-exe.md
+      displayName: dotnet, artifacts, publish packages
     - name: Publish to NuGet.org
       href: nuget/publish-to-nuget-org.md
       displayName: publish package, nuget package, nuget.org
-    - name: Publish and restore packages (dotnet)
-      href: nuget/dotnet-exe.md
-      displayName: dotnet, artifacts, publish packages, download packages
-    - name: Project setup (NuGet.exe)
-      href: nuget/nuget-exe.md
-      displayName: nuget package, artifacts feeds, publish packages, download packages 
+    - name: Publish to a NuGet feed (YAML/Classic)
+      href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json
+      displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
     - name: Install NuGet packages with Visual Studio
       href: nuget/consume.md
       displayName: install package, nuget, visual studio
-    - name: Use NuGet or dotnet with TFS
-      href: nuget/tfs.md
-      displayName: nuget, dotnet, tfs, publish, download 
     - name: NuGet.org upstream source
       href: nuget/upstream-sources.md
       displayName: upstream sources, upstreams, artifact feeds 
     - name: Publish from GitHub Actions
       href: quickstarts/github-actions.md
-    - name: Migrate from file shares
-      href: nuget/move-from-fileshares.md
-      displayName: nuget feeds, artifacts 
+    - name: Migrate from MyGet to Azure Artifacts
+      href: tutorials/migrate-packages.md
+      displayName: migrate, nuget
   - name: npm 
     items:
     - name: npm quickstart
       href: get-started-npm.md
       displayName: npm, npm introduction
     - name: Publish npm packages (YAML/Classic)
-      href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+      href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json
       displayName: publish npm, npm packages, npm feed 
     - name: Publish npm packages (CLI)
       href: npm/publish.md
@@ -90,15 +90,15 @@
     - name: Maven quickstart
       href: get-started-maven.md
       displayName: maven, maven introduction 
-    - name: Set up authentication
+    - name: Project setup
       href: maven/pom-and-settings.md
       displayName: maven pom, maven artifacts, maven packages, maven authentication
-    - name: Install a Maven artifact
+    - name: Install Maven artifacts
       href: maven/install.md
       displayName: maven artifacts, maven packages, maven feeds
-    - name: Publish Maven artifacts with Gradle
-      href: maven/publish-package-gradle.md
-      displayName: maven artifacts, maven packages 
+    - name: Publish artifacts with Gradle
+      href: maven/publish-with-gradle.md
+      displayName: gradle, publish 
     - name: Maven Central Repository
       href: maven/upstream-sources.md
       displayName: maven packages, maven central, upstream ,upstream sources
@@ -131,8 +131,13 @@
       href: universal-packages/universal-packages-upstream.md
       displayName: universal packages, upstream sources, upstreams
     - name: Universal Packages in Azure Pipelines (YAML/Classic)
-      href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+      href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json 
       displayName: universal packages yaml, universal packages classic 
+  - name: Cargo
+    items:
+    - name: Cargo quickstart
+      href: get-started-cargo.md
+      displayName: cargo
 - name: Feeds, views, and upstream sources
   items:
   - name: Feeds
@@ -149,15 +154,15 @@
     - name: Delete and recover packages
       href: how-to/delete-and-recover-packages.md
       displayName: delete, recover, packages, artifacts 
-    - name: Migrate packages to Azure Artifacts feed
-      href: tutorials/migrate-packages.md
-      displayName: migration, artifact feeds, artifacts, packages 
     - name: Share PowerShell modules with Azure Artifacts feed
       href: tutorials/private-powershell-library.md
       displayName: powershell artifacts, artifact feeds, powershell module, powershell library
     - name: Use public feeds to share your packages publicly
       href: tutorials/share-packages-publicly.md
       displayName: share packages, share artifacts, artifact feeds, public feeds, feeds
+    - name: Migrate from file shares
+      href: nuget/move-from-fileshares.md
+      displayName: migrate, file share 
   - name: Feed views
     items:
     - name: What are feed views?
@@ -177,6 +182,12 @@
     - name: Manage dependencies with upstream sources
       href: tutorials/protect-oss-packages-with-upstream-sources.md
       displayName: dependecies, artifacts, upstreams, public package 
+    - name: Use upstream sources with public feeds
+      href: how-to/public-feeds-upstream-sources.md
+      displayName: upstream, public feed 
+    - name: Search for packages in upstream sources
+      href: how-to/search-upstream.md
+      displayName: search packages, upstreams 
     - name: Configure upstream behavior
       href: concepts/upstream-behavior.md
       displayName: upstreams, behavior, configure upstreams  

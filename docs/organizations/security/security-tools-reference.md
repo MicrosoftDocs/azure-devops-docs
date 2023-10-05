@@ -2,9 +2,9 @@
 title: Security and permission management tools 
 titleSuffix: Azure DevOps 
 description: Learn about the available tools to manage security and permissions for Azure DevOps 
-ms.technology: devops-security
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-security
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
@@ -19,7 +19,7 @@ While you set most permissions through the web portal, you can use other tools t
 To learn more about permissions not available through a user interface, see the [Security namespace and permission reference, Internal namespaces and permissions](namespace-reference.md#internal).  
 
 
-[!INCLUDE [version-selector-minimize](../../includes/version-selector-minimize.md)]
+[!INCLUDE [version-selector-minimize](../../includes/version-selector.md)]
 
 Additional options include the following tools: 
 

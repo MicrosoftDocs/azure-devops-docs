@@ -1,7 +1,7 @@
 ---
 title: Receive package notifications
 description: How to follow a package and get notified every time a new version is published
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 06/14/2022
 monikerRange: '<= azure-devops'
@@ -37,7 +37,7 @@ Aside from getting notifications when a new package version is published, you ca
 
 ## Follow a package with personal notifications
 
- In addition to following a package from the _Feeds_ page, you can also [manage your personal notifications](../../notifications/manage-your-personal-notifications.md) and set up alerts to be notified about a specific package or set of packages from the _Notification Settings_ page.
+ In addition to following a package from the _Feeds_ page, you can also [manage your personal notifications](../../organizations/notifications/manage-your-personal-notifications.md) and set up alerts to be notified about a specific package or set of packages from the _Notification Settings_ page.
 
 1. Navigate to your Azure DevOps organization: `https://dev.azure.com/<YOUR_ORGANIZATION>`.
 
@@ -61,5 +61,5 @@ Aside from getting notifications when a new package version is published, you ca
 - [Share your Artifacts with package badges](../package-badges.md)
 - [Limits on package sizes and counts](../reference/limits.md)
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md)
-- [Get started with notifications in Azure DevOps](../../notifications/about-notifications.md)
-- [Manage team, group, and global notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+- [Get started with notifications in Azure DevOps](../../organizations/notifications/about-notifications.md)
+- [Manage team, group, and global notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)

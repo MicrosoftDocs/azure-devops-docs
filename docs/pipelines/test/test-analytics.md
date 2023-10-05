@@ -118,7 +118,7 @@ However, observing test execution trends for a period can help infer hidden patt
 
 ## Report information source
 
-The source of information for test analytics is the set of [published test results](../tasks/test/publish-test-results.md) for
+The source of information for test analytics is the set of [published test results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) for
 the build or release pipeline.
 These result are accrued over a period of time, and form the basis of the rich insights that test analytics provides. 
 

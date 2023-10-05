@@ -2,7 +2,6 @@
 title: Improved pipelines security with read-only variables
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 01/28/2020
 description: In the **Sprint 164 Update** of Azure DevOps, we are improving pipelines security with read-only variables.
 ---

@@ -1,10 +1,10 @@
 ---
 title: 'Azure CLI sample for Azure Pipelines and variable groups'
 description: Azure CLI sample for accessing secret and nonsecret variables from a variable group in an Azure Pipeline. This sample uses the azure-devops extension.
-author: steved0x
+author: juliakm
 ms.author: jukullam
 manager: mijacobs
-ms.date: 05/20/2021
+ms.date: 01/12/2023
 ms.topic: sample
 ms.devlang: azurecli 
 monikerRange: '>=azure-devops-2020'
@@ -23,7 +23,7 @@ This script demonstrates three operations:
 * Creating a [variable group](../../library/variable-groups.md) with nonsecret and secret variables for use in a pipeline
 * Running the pipeline using [Azure DevOps CLI](../../../cli/index.md), which also opens a web page for monitoring the pipeline run's processing and output
 
-[!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
+[!INCLUDE [include](~/../docs/reusable-content/azure-cli/azure-cli-prepare-your-environment.md)]
 
 * [Sign up for Azure Pipelines](../../get-started/pipelines-sign-up.md) to get an Azure DevOps organization.
 * [Create an Azure DevOps personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) (PAT) for authentication.
@@ -61,7 +61,7 @@ variables:
   value: $[variables.contososecret]
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: ubuntu-latest
@@ -98,7 +98,7 @@ steps:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-After you have published the YAML file in GitHub, replace the placeholders in the following Bash script, and then run the script.
+After you've published the YAML file in GitHub, replace the placeholders in the following Bash script, and then run the script.
 
 ```azurecli
 #!/bin/bash
@@ -113,7 +113,7 @@ githubOrg="<my-github-organization-name>"
 githubRepo="<my-github-repository-name>"
 repoName="$githubOrg/$githubRepo"
 repoType="github"
-branch="master"
+branch="main"
 
 # Declare other variables.
 uniqueId=$RANDOM
@@ -126,6 +126,10 @@ variableGroupName="Contoso Variable Group"
 # Sign in to Azure CLI and follow the directions. May be unnecessary in some environments.
 echo "Sign in. (For Cloud Shell, provide the device login code.)"
 az login
+
+# Sign in using an Azure DevOps personal access token (PAT). May be unnecessary in some environments.
+echo "Sign in to Azure DevOps."
+az devops login
 
 # Create a resource group and a storage account.
 az group create --name "$resourceGroupName" --location "$resourceGroupLocation"

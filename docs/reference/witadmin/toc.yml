@@ -7,27 +7,29 @@
 - name: Manage work item fields
   href: manage-work-item-fields.md
   displayname: deletefield, listfields, indexfield, changefield, delete, list, index, change field attribute
-- name: Import & export categories
-  href: witadmin-import-export-categories.md
-  displayname: exportcategories, importcategories
-- name: Manage link types
-  href: manage-link-types.md
-  displayname: deletelinktype, exportlinktype, importlinktype, listlinktypes, reactivatelinktype, delete, export, import, list, reactivate
 - name: Import & export process configuration
   href: witadmin-import-export-process-configuration.md
   displayname: exportprocessconfig, importprocessconfig
-- name: Manage global lists
-  href: manage-global-lists-for-work-item-types.md
-  displayname: destroygloballist, exportgloballist, importgloballist, listgloballist, delete, global list, import, export, list
-- name: Import & export global workflow
-  href: witadmin-import-export-global-workflow.md
-  displayname: exportglobalworkflow, importglobalworkflow
-- name: Rebuild the client cache
-  href: rebuild-client-cache.md
-  displayname: rebuildcache
-- name: Delete work items
-  href: remove-work-items-permanently.md
-  displayname: destroywi
-- name: Customize & manage the test experience
-  href: tcm-customize-manage-test-experience.md
-  displayname: tcm fieldmapping, map test fields
+- name: Archived articles
+  items:
+  - name: Import & export categories
+    href: /previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories 
+    displayname: exportcategories, importcategories
+  - name: Manage link types
+    href: /previous-versions/azure/devops/reference/witadmin/manage-link-types
+    displayname: deletelinktype, exportlinktype, importlinktype, listlinktypes, reactivatelinktype, delete, export, import, list, reactivate
+  - name: Manage global lists
+    href: /previous-versions/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types
+    displayname: destroygloballist, exportgloballist, importgloballist, listgloballist, delete, global list, import, export, list
+  - name: Import & export global workflow
+    href: /previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow
+    displayname: exportglobalworkflow, importglobalworkflow
+  - name: Rebuild the client cache
+    href: /previous-versions/azure/devops/reference/witadmin/rebuild-client-cache
+    displayname: rebuildcache
+  - name: Delete work items
+    href: /previous-versions/azure/devops/reference/witadmin/remove-work-items-permanently
+    displayname: destroywi
+  - name: Customize & manage the test experience
+    href: /previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience
+    displayname: tcm fieldmapping, map test fields

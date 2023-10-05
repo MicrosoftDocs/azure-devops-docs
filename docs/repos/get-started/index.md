@@ -2,7 +2,7 @@
 title: Guide for getting started with Azure Repos 
 titleSuffix: Azure Repos 
 description: Sign up and get started using Azure Repos 
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.custom: seo-javascript-september2019
 monikerRange: '<= azure-devops'
 ms.date: 03/18/2021

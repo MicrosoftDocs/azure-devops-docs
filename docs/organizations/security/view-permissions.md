@@ -3,10 +3,10 @@ title: View permissions for yourself or others
 titleSuffix: Azure DevOps
 description: How to find what permissions you or a team member have, including project-level, collection-level, and object-level permissions 
 ms.assetid:  
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.topic: quickstart
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 --- 
@@ -134,7 +134,7 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 

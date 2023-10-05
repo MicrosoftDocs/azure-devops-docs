@@ -3,7 +3,7 @@ title: Resources granted to project members
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn about security and data access considerations and resources granted when you add members to a project or organization 
-ms.technology: devops-accounts
+ms.subservice: azure-devops-projects
 ms.assetid: 
 toc: show
 ms.topic: conceptual
@@ -26,7 +26,7 @@ If someone is not already a member of your organization, when you add them to a 
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. For more information and important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker-end  
 

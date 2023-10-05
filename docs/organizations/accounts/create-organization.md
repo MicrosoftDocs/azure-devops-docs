@@ -3,7 +3,7 @@ title: Create an organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18, contperf-fy20q4, contperf-fy22q3
 description: Learn how to create an organization or project collection with a personal Microsoft account, GitHub account, or work or school account.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: quickstart
 ms.author: chcomley
@@ -25,7 +25,7 @@ Use an organization to connect groups of related projects, and help to scale up 
 ::: moniker range="= azure-devops"
 
 > [!NOTE]
-> All organizations must be manually created via the web portal. We don't support automated creation of organizations. We do support automated organization configuration, project creation, and resource provisioning via [REST API](/rest/api/azure/devops/?view=azure-devops-rest-7.1&preserve-view=true).
+> All organizations must be manually created via the web portal. We don't support automated creation of organizations. We do support automated organization configuration, project creation, and resource provisioning via [REST API](/rest/api/azure/devops).
 
 <a name="how-sign-up"></a>
 

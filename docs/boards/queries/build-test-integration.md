@@ -2,11 +2,11 @@
 title: Build and test integration queries
 titleSuffix: Azure DevOps
 description: Learn how to track work by creating queries based on build and test integration fields in Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: cross-service  
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -33,29 +33,20 @@ Most build and test integration fields have a data type of String, PlainText, or
 :::row:::
    :::column span="1":::
    **Data type**
-
    :::column-end:::
    :::column span="3":::
    **Supported operators and macros**
-
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-    **Rich-text (HTML)** 
-
+    **Rich-text (HTML)** and  
+    **Multi-line text strings (PlainText)** 
    :::column-end:::
    :::column span="3":::
-   Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Multi-line text strings (PlainText)** 
-   :::column-end:::
-   :::column span="3":::
-   Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup>
+   `Contains Words`, `Does Not Contain Words`, `Is Empty`, `Is Not Empty`.   
+   The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2019 RC2 and later versions. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -63,17 +54,11 @@ Most build and test integration fields have a data type of String, PlainText, or
    **Single text (String)** 
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
-   **Macros**: **[Any]**, valid with the **Work Item Type** field  
-   **Project**<sup>2</sup>, valid with the **Team Project** field
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]`, `Contains`, `Does Not Contain`, `In`, `Not In`, `In Group`, `Not In Group`, `Was Ever`  
+   **Macros**: `[Any]`, valid with the **Work Item Type** field; and `@Project`, valid with the **Team Project** field. The system automatically defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md#across-projects). 
    :::column-end:::
 :::row-end:::
-
-
-> [!NOTE]  
-> 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
-> 2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
-
+ 
 
 ## Useful filters 
 
@@ -203,7 +188,7 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Parameters<sup> 3</sup>  
+   Parameters 
    :::column-end:::
    :::column span="2":::
    Contains the parameters to use when running a manual test.  
@@ -251,13 +236,13 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Test Suite Type<sup> 1,4</sup>
+   Test Suite Type<sup> 1</sup>
    :::column-end:::
    :::column span="2":::
    The test suite category. Allowed values are:  
-   - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite will automatically include every test case that is returned by the query that you define.  
-   - **Static**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.  
-   - **Requirement Based**: Use to group together test cases with any characteristics or test suites.  
+   - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite automatically includes every test case that is returned by the query that you define.  
+   - **Requirement Based**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.  
+   - **Static**: Use to group together test cases with any characteristics or test suites.  
    For more information, see [Create a test plan](../../test/create-a-test-plan.md).  
    Reference name=Microsoft.VSTS.TCM.TestSuiteType, Data type=String
    :::column-end:::
@@ -268,10 +253,9 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 
 
 > [!NOTE]  
-> 1.  Do not customize the picklist for these fields. The system accepts only those values listed.  
+> 1.  Do not customize the pick list for these fields. The system accepts only those values listed.  
 > 2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Builds and global list auto-population](#global-list) later in this article.
-> 3.  Requires TFS 2013.2 or later version to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
-> 4.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). 
+
 
 ## Other fields
 
@@ -389,11 +373,11 @@ The following fields don't appear on work item forms, but these fields are track
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Test Suite Audit <sup> 1</sup>
+   Test Suite Audit
 
    :::column-end:::
    :::column span="2":::
-   Tracks other operations run when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a combined history view, including changes done to work items field and changes resulting from related artifacts such as test points and configurations.
+   Tracks other operations run when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There's a combined history view, including changes done to work items field and changes resulting from related artifacts such as test points and configurations.
 
    Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
 
@@ -405,7 +389,7 @@ The following fields don't appear on work item forms, but these fields are track
 
 :::row:::
    :::column span="1":::
-   Test Suite Type ID <sup>1, 2</sup>
+   Test Suite Type ID <sup>1</sup>
 
    :::column-end:::
    :::column span="2":::
@@ -429,8 +413,7 @@ The following fields don't appear on work item forms, but these fields are track
 
 
 > [!NOTE]  
-> 1.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.  
-> 2.  Do not customize the picklist for these fields. The system accepts only those values listed.
+> 1.  Do not customize the pick list for these fields. The system accepts only those values listed.
 
 
 
@@ -520,7 +503,7 @@ The ability of Team Foundation version control to resolve a work item requires t
 > [!NOTE]
 > When you use the **Checkin** action, you must set appropriate *from* and *to* states to reflect the state transition that you want.
 
-For more information about Actions, see [Automate field assignments based on State, Transition, or Reason](../../reference/xml/automate-field-assignments-state-transition-reason.md).
+For more information about Actions, see [Automate field assignments based on State, Transition, or Reason](/previous-versions/azure/devops/reference/xml/automate-field-assignments-state-transition-reason).
 
 ## Related articles
 

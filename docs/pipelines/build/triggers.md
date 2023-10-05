@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 04/13/2021
+ms.date: 01/25/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -17,7 +17,10 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Use triggers to run a pipeline automatically. Azure Pipelines supports many types of triggers. Based on your pipeline's type, select the appropriate trigger from the list below:
+Use triggers to run a pipeline automatically. Azure Pipelines supports many types of triggers. Based on your pipeline's type, select the appropriate trigger from the lists below.
+
+> [!NOTE]
+> All trigger paths are case-sensitive.
 
 <a name="ci"></a>
 ## Classic build pipelines and YAML pipelines
@@ -57,7 +60,6 @@ YAML pipelines can have different versions of the pipeline in different branches
 | GitHub pull request comment triggers    | The version of the pipeline in the source branch for the pull request is used. |
 | Scheduled triggers         | See [Branch considerations for scheduled triggers](../process/scheduled-triggers.md?tabs=yaml#branch-considerations-for-scheduled-triggers). |
 | Pipeline completion triggers | See [Branch considerations for pipeline completion triggers](../process/pipeline-triggers.md?tabs=yaml#branch-considerations). |
-| [Azure Pipelines Action](https://github.com/marketplace/actions/azure-pipelines-action) | See [Branch considerations](../ecosystems/github-actions.md#branch-considerations). |
 
 ## Classic release pipelines
 
