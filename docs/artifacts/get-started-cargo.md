@@ -86,6 +86,6 @@ cargo publish
 
 ## Related articles
 
-- [Manage permissions](feeds/feed-permissions.md)
-- [Use upstream sources](concepts/upstream-sources.md)
+- [Feed permissions](feeds/feed-permissions.md)
+- [Delete/Yank Cargo packages](how-to/delete-and-recover-packages.md?tabs=cargo)
 - [Promote a package to a view](feeds/views.md)
