@@ -309,7 +309,7 @@ Deleted packages remain in the Recycle Bin for 30 days. After this period, they'
 
 ##### Q: What is the difference between *Deprecate*, *Unlist*, *Yank*, and *Delete* a package version?
 
-A: *Deprecate* applies to npm packages, *Yank* applies to Cargo packages while *Unlist* applies to NuGet packages. You can also *Delete* any of the package types (Npm, Maven, Python, Cargo, and Universal Packages):
+A: *Deprecate* applies to npm packages, *Yank* applies to Cargo packages while *Unlist* applies to NuGet packages. You can also *Delete* any of the package types (npm, Maven, Python, Cargo, and Universal Packages):
 
 - **Deprecate** (npm): When you deprecate a package version, a warning message is added to the package's metadata. Azure Artifacts and most npm clients will display this warning message whenever the package is viewed or installed.
 
