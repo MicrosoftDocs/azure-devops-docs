@@ -5,7 +5,7 @@ ms.service: azure-devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.custom: contperf-fy21q2, contperf-fy22q1
 ms.topic: conceptual
-ms.date: 09/05/2023
+ms.date: 10/05/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -84,7 +84,7 @@ There are two available choices for removing a NuGet package from your feed, [Un
 > [!NOTE]
 > You must be a **Contributor** to deprecate a package and an **Owner** to delete it.
 
-There are two available choices for removing npm packages from your feed, [Deprecate](#qa) and [Delete](#qa). Deprecating a package adds a warning message to the package's metadata to be displayed whenever the package is viewed or installed. Deleting a package version, on the other hand, sends it to the Recycle Bin and makes it unavailable for installation.
+For npm packages in your feed, you have the option to [Deprecate](#qa) or [Delete](#qa) them. Deprecating a package adds a warning message to the package's metadata to be displayed whenever the package is viewed or installed. Deleting a package version, on the other hand, sends it to the Recycle Bin and makes it unavailable for installation.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -184,6 +184,21 @@ There are two available choices for removing npm packages from your feed, [Depre
 1. Select the package that you want to delete, and then select **Delete**.
 
     :::image type="content" source="../media/universal-package-delete-package.png" alt-text="A screenshot showing how to delete a Universal Package.":::
+
+#### [Cargo](#tab/cargo/)
+
+> [!NOTE]
+> You must be a **Contributor** to yank a package and an **Owner** to delete it.
+
+There are two available choices for your Cargo package in your feed when it comes to deletion: [Yank](#qa) and [Delete](#qa). Yanking a package version marks is as unusable or deprecated. Yanking a package version doesn't delete it but effectively discourages its use. Deleting a package version on the other hand, sends it to the recycle bin and makes it unavailable for installation.
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select the package you wish to delete, and then select **Delete** or **Yank**.
+
+    :::image type="content" source="../media/delete-cargo-package.png" alt-text="A screenshot showing how to delete or yank a Cargo package.":::
 
 * * *
 
@@ -292,13 +307,15 @@ Deleted packages remain in the Recycle Bin for 30 days. After this period, they'
 
 ## Q&A
 
-##### Q: What is the difference between *Deprecate*, *Unlist*, and *Delete* a package version?
+##### Q: What is the difference between *Deprecate*, *Unlist*, *Yank*, and *Delete* a package version?
 
-A: *Deprecate* applies to npm packages, while *Unlist* and *Delete* applies to NuGet packages. You can also *Delete* package versions for the rest of the package types (Maven, Python, and Universal Packages):
+A: *Deprecate* applies to npm packages, *Yank* applies to Cargo packages while *Unlist* applies to NuGet packages. You can also *Delete* any of the package types (Npm, Maven, Python, Cargo, and Universal Packages):
 
 - **Deprecate** (npm): When you deprecate a package version, a warning message is added to the package's metadata. Azure Artifacts and most npm clients will display this warning message whenever the package is viewed or installed.
 
 - **Unlist** (NuGet): Unlisting a package version hides it from the search results in Azure Artifacts feeds and on NuGet.org.
+
+- **Yank** (Cargo): Yanking a package version marks it as obsolete or deprecated, discouraging its use, but it doesn't delete the package. 
 
 - **Delete**: Deleting a package version makes it unavailable to install. Deleted packages can be restored from the Recycle Bin within 30 days of deletion. After this period, the packages will be permanently deleted.
 
