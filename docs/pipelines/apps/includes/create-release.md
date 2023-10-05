@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
@@ -29,7 +29,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
    the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
-   continuous deployment trigger is enabled, and add a filter to include the **master** branch.
+   continuous deployment trigger is enabled, and add a filter to include the **main** branch.
 
    > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
 

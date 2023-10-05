@@ -2,7 +2,6 @@
 title: New extensibility points for Pipelines details view
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 3/29/2022
 description: With this update, we've added two new extensibility points that you can target in your extensions.  
 ---

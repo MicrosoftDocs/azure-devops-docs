@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Save project data, like source code, custom build templates, build data, and work items.
 ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
-ms.technology: devops-accounts
+ms.subservice: azure-devops-projects
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
@@ -23,7 +23,7 @@ You can use the following procedures to save data that users most care about, su
 * **Source code and custom build templates:** You can download your files as a zip file. Open ![Repository actions](../../media/icons/actions-icon.png) **actions** for the repository, file, or folder and choose **Download as Zip**. You can also **Download** from the right side of the screen to download either all of the files in the currently selected folder, or the currently selected file.
 
   > [!div class="mx-imgBorder"]
-  > ![Download code ](../public/media/download-code/download-zip-file.png)
+  > ![Download code ](media/public/download-zip-file.png)
 
   This process doesn't save any change history or links to other artifacts.
 

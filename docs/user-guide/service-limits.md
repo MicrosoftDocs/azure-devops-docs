@@ -3,11 +3,11 @@ title: Service and rate limits
 titleSuffix: Azure DevOps Services
 description: Description of limits and rate limits on the Azure DevOps Service
 ms.topic: conceptual
-ms.technology: devops-new-user
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-new-user
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 02/03/2022
+ms.date: 01/03/2023
 ---
 
 # Service and rate limits for Azure DevOps Services
@@ -38,12 +38,12 @@ This article specifies certain limits placed on the use and configuration of Azu
 | Configuration object |  Limit | 
 |--------|-------|
 | Projects | 1000 per organization for Azure DevOps Services</br>No prescribed limit for on-premises</br>(See also [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md#projects) | 
-| Teams | 5,000 per organization | 
+| Teams | 5,000 per project | 
 | Work item tags | 150,000 tag definitions per organization | 
-| Area Paths | 10,000 per organization | 
+| Area Paths | 10,000 per project | 
 | Area Path Depth | 14 | 
 | Area Paths per team | 300 | 
-| Iteration Paths | 10,000 per organization | 
+| Iteration Paths | 10,000 per project | 
 | Iteration Path Depth | 14 | 
 | Iteration Paths per team | 300 | 
 
@@ -58,18 +58,25 @@ This article specifies certain limits placed on the use and configuration of Azu
 
 When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md).
  
+## Dashboards
+
+A limit is placed on 500 dashboards per project. 
+
 ## Wiki
 
-Wikis defined for a project are limited to 1 GB per git repository. 
-
-> [!TIP]    
-> To derive the size of a wiki/git repository, download the repo to your local computer, unzip the file, and then open the **Properties** for the corresponding folder.  
-
-
+In addition to the usual repository limits (see the [Repository Size Limits](../repos/git/limits.md#repository-size)), Wikis defined for a project are limited to 25 MB per single file. 
 
 ## Data import
 - Limited to 300 projects per organization
 - See [data import documentation](../migrate/migration-overview.md) for details
+
+## Service connections
+
+There are no per-project limits placed on creating service connections. However, there may be limits which are imposed through Azure Active Directory. For additional information, review the following articles:
+
+- [Azure AD service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions)
+- [Azure subscription and service limits, quotas, and constraints](/azure/azure-resource-manager/management/azure-subscription-service-limits)
+
 
 ## Related articles 
 

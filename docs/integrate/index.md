@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 title: Integrating custom apps and third party services with Azure DevOps
 description: Overview of integrating with Azure DevOps.

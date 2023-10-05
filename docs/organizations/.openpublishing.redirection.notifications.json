@@ -1,0 +1,109 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/docs/notifications/about-notifications.md",
+      "redirect_url": "/azure/devops/organizations/notifications/about-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/notifications/add-links-to-work-items.md",
+      "redirect_url": "/azure/devops/organizations/notifications/add-links-to-work-items",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/at-mentions.md",
+      "redirect_url": "/azure/devops/organizations/notifications/at-mentions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/change-email-address.md",
+      "redirect_url": "/azure/devops/organizations/notifications/change-email-address",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/concepts-email-recipients.md",
+      "redirect_url": "/azure/devops/organizations/notifications/concepts-email-recipients",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/concepts-events-and-notifications.md",
+      "redirect_url": "/azure/devops/organizations/notifications/about-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/exclude-self-from-email.md",
+      "redirect_url": "/azure/devops/organizations/notifications/exclude-self-from-email",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/faq-notifications.yml",
+      "redirect_url": "/azure/devops/organizations/notifications/faq-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/integrate-third-party-services.md",
+      "redirect_url": "/azure/devops/organizations/notifications/integrate-third-party-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/manage-team-group-global-organization-notifications.md",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/manage-your-personal-notifications.md", 
+      "redirect_url": "/azure/devops/organizations/notifications/manage-your-personal-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/navigating-the-ui.md",
+      "redirect_url": "/azure/devops/organizations/notifications/navigating-the-ui",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/oob-built-in-notifications.md",
+      "redirect_url": "/azure/devops/organizations/notifications/oob-built-in-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/oob-supported-event-types.md",
+      "redirect_url": "/azure/devops/organizations/notifications/oob-supported-event-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/troubleshoot-contact-support.md",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-contact-support",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/troubleshoot-delayed-email.md",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-delayed-email",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/troubleshoot-not-getting-email.md",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/troubleshoot-unexpected-email.md",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-unexpected-email",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/unsubscribe-default-notification.md",
+      "redirect_url": "/azure/devops/organizations/notifications/unsubscribe-default-notification",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/use-subscription-logging.md",
+      "redirect_url": "/azure/devops/organizations/notifications/use-subscription-logging",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/notifications/view-organization-notification-statistics.md",
+      "redirect_url": "/azure/devops/organizations/notifications/view-organization-notification-statistics",
+      "redirect_document_id": true
+    }
+  ]
+}

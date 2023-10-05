@@ -4,9 +4,9 @@ titleSuffix: Azure DevOps
 description: At-a-glance view of default permissions assigned to built-in security groups made for Git repositories and branches 
 ms.topic: reference
 ms.custom: freshness-review 
-ms.technology: devops-security
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-security
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/14/2021
 ---
@@ -23,8 +23,6 @@ To change permissions or set policies for Git repositories or branches, see the 
 - [Git repository settings and policies](../../repos/git/repository-settings.md)
 - [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md). 
 - [Set permissions for a specific branch and set branch policies](../../repos/git/branch-permissions.md). 
- 
-[!INCLUDE [tip-search-settings](../../includes/tip-find-setting-permission.md)]
 
 ## Related articles
 

@@ -4,7 +4,7 @@ description: Set up and use Anaconda environments with Azure Pipelines, Azure De
 ms.topic: quickstart
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
 ms.reviewer: vijayma
-ms.custom: seodec18, devx-track-python
+ms.custom: seodec18
 ms.date: 01/24/2022
 monikerRange: azure-devops
 author: JuliaKM
@@ -121,6 +121,12 @@ You can check in an [`environment.yml`](https://conda.io/docs/user-guide/tasks/m
 > error on the next build since the environment already exists. To resolve, use the `--force`
 > argument: `conda env create --quiet --force --file environment.yml`.
 
+> [!NOTE]
+> If you are using self-hosted agents that are sharing storage, and running jobs in parallel 
+> using the same Anaconda environments, there may be clashes between those environments. 
+> To resolve, use the `--name` argument and a unique identifier as the argument value,
+> like a concatenation with the `$(Build.BuildNumber)` build variable.
+
 ### Install packages from Anaconda
 
 The following YAML installs the `scipy` package in the conda environment named `myEnvironment`.
@@ -220,4 +226,3 @@ See examples of using `call` [in a pipeline](#run-pipeline-steps-in-an-anaconda-
 
 ### How can I run my tests with multiple versions of Python?
 See [Build Python apps in Azure Pipelines](./python.md).
-

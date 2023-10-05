@@ -7,7 +7,6 @@ metadata:
   title: Azure Pipelines documentation
   titleSuffix: Azure DevOps 
   description: Configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
-  ms.prod: devops 
   ms.technology: devops-cicd
   ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
   ms.topic: landing-page 
@@ -64,7 +63,7 @@ landingContent:
           - text: Python apps
             url: ./ecosystems/python.md
           - text: PHP  
-            url: ./ecosystems/python-webapp.md
+            url: ./ecosystems/php.md
           - text: "See more >"
             url: ./ecosystems/ecosystems.md
   - title: Key concepts
@@ -174,13 +173,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Create and manage agent pools
-            url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json
           - text: Create and manage deployment groups
-            url: ./release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json
           - text: Create and manage service connections
-            url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json
           - text: Set build and release retention policies
-            url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide

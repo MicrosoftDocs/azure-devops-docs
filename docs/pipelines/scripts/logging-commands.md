@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 02/28/2022
+ms.date: 04/21/2023
 ms.custom: contperf-fy21q3
 monikerRange: '<= azure-devops'
 ---
@@ -19,9 +19,9 @@ They cover actions like creating new [variables](../process/variables.md), marki
 
 |Type  |Commands  |
 |---------|---------|
-|Task commands     |    [LogIssue](#logissue-log-an-error-or-warning), [SetProgress](#setprogress-show-percentage-completed),  [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [AddAttachment](#addattachment-attach-a-file-to-the-build), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable) |
+|Task commands     |    [AddAttachment](#addattachment-attach-a-file-to-the-build), [Complete](#complete-finish-timeline), [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [LogIssue](#logissue-log-an-error-or-warning), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [SetProgress](#setprogress-show-percentage-completed), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [SetSecret](#setsecret-register-a-value-as-a-secret), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary) |
 |Artifact commands     |   [Associate](#associate-initialize-an-artifact), [Upload](#upload-upload-an-artifact)      |
-|Build commands     |  [UploadLog](#uploadlog-upload-a-log), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [AddBuildTag](#addbuildtag-add-a-tag-to-the-build) |
+|Build commands     |  [AddBuildTag](#addbuildtag-add-a-tag-to-the-build), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [UploadLog](#uploadlog-upload-a-log) |
 |Release commands     |    [UpdateReleaseName](#updatereleasename-rename-current-release)     |
 
 
@@ -59,12 +59,12 @@ Write-Host "##vso[task.setvariable variable=testvar;]testvalue"
 File paths should be given as absolute paths: rooted to a drive on Windows, or beginning with `/` on Linux and macOS.
 
 > [!NOTE]
-> Please note that there is no support of 'set -x' command being executed before logging command on Linux and macOS.
+> Please note that you can't use the `set -x` command before a logging command when you are using Linux or macOS. See [troubleshooting](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended), to learn how to disable `set -x` temporarily for Bash.
 
 ## Formatting commands
 
 > [!NOTE]
-> Use UTF-8 formatting for logging commands. 
+> Use UTF-8 encoding for logging commands. 
 
 These commands are messages to the log formatter in Azure Pipelines.
 They mark specific log lines as errors, warnings, collapsible sections, and so on.
@@ -87,27 +87,27 @@ You can use the formatting commands in a bash or PowerShell task.
 
 ```yaml
 steps:
-  - bash: |
-      echo "##[group]Beginning of a group"
-      echo "##[warning]Warning message"
-      echo "##[error]Error message"
-      echo "##[section]Start of a section"
-      echo "##[debug]Debug text"
-      echo "##[command]Command-line being run"
-      echo "##[endgroup]"
+- bash: |
+    echo "##[group]Beginning of a group"
+    echo "##[warning]Warning message"
+    echo "##[error]Error message"
+    echo "##[section]Start of a section"
+    echo "##[debug]Debug text"
+    echo "##[command]Command-line being run"
+    echo "##[endgroup]"
 ```
 # [PowerShell](#tab/powershell)
 
 ```yaml
 steps:
-  - powershell: |
-      Write-Host "##[group]Beginning of a group"
-      Write-Host "##[warning]Warning message"
-      Write-Host "##[error]Error message"
-      Write-Host "##[section]Start of a section"
-      Write-Host "##[debug]Debug text"
-      Write-Host "##[command]Command-line being run"
-      Write-Host "##[endgroup]"
+- powershell: |
+    Write-Host "##[group]Beginning of a group"
+    Write-Host "##[warning]Warning message"
+    Write-Host "##[error]Error message"
+    Write-Host "##[section]Start of a section"
+    Write-Host "##[debug]Debug text"
+    Write-Host "##[command]Command-line being run"
+    Write-Host "##[endgroup]"
 ```
 ---
 
@@ -153,12 +153,11 @@ exit 1
 Write-Host "##vso[task.logissue type=error]Something went very wrong."
 exit 1
 ```
-
 ---
 
 > [!TIP]
 > 
-> `exit 1` is optional, but is often a command you'll issue soon after an error is logged. If you select **Control Options: Continue on error**, then the `exit 1` will result in a partially successful build instead of a failed build.
+> `exit 1` is optional, but is often a command you'll issue soon after an error is logged. If you select **Control Options: Continue on error**, then the `exit 1` will result in a partially successful build instead of a failed build. As an alternative, you can also use `task.logissue type=error`.
 
 #### Example: Log a warning about a specific place in a file
 
@@ -238,9 +237,22 @@ Finish the timeline record for the current task, set task result and current ope
    
 #### Example
 
+Log a task as succeeded. 
+
 ```
 ##vso[task.complete result=Succeeded;]DONE
 ```
+
+Set a task as failed. As an alternative, you can also use `exit 1`.
+
+```yaml
+- bash: |
+    if [ -z "$SOLUTION" ]; then
+      echo "##vso[task.logissue type=error;]Missing template parameter \"solution\""
+      echo "##vso[task.complete result=Failed;]"
+    fi
+```
+
 
 ### LogDetail: Create or update a timeline record for a task
 
@@ -423,6 +435,70 @@ Secrets are not automatically mapped in, secretSauce is
 You can use macro replacement to get secrets, and they'll be masked in the log: ***
 ```
 ::: moniker-end
+
+### SetSecret: Register a value as a secret
+
+`##vso[task.setsecret]value`
+
+#### Usage
+
+The value is registered as a secret for the duration of the job. The value will be masked out from the logs from this point forward. This command is useful when a secret is transformed (e.g. base64 encoded) or derived.
+
+Note: Previous occurrences of the secret value will not be masked. 
+
+#### Examples
+
+# [Bash](#tab/bash)
+
+Set the variables:
+
+```yaml
+- bash: |
+    NEWSECRET=$(echo $OLDSECRET|base64)
+    echo "##vso[task.setsecret]$NEWSECRET"
+  name: SetSecret
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+Read the variables:
+
+```yaml
+- bash: |
+    echo "Transformed and derived secrets will be masked: $(echo $OLDSECRET|base64)"
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+# [PowerShell](#tab/powershell)
+
+Set the variables:
+
+```yaml
+- pwsh: |
+    $NewSecret = [convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($env:OLDSECRET))
+    Write-Host "##vso[task.setsecret]$NewSecret"
+  name: SetSecret
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+Read the variables:
+
+```yaml
+- pwsh: |
+    Write-Host "Transformed and derived secrets will be masked: $([convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($env:OLDSECRET)))"
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+---
+
+Console output:
+
+```
+Transformed and derived secrets will be masked: ***
+```
 
 ### SetEndpoint: Modify a service connection field
 
@@ -621,12 +697,19 @@ You can automatically generate a build number from tokens you specify in the [pi
 
 #### Usage
 
-Add a tag for current build.
+Add a tag for current build. You can expand the tag with a predefined or user-defined variable. For example, here a new tag gets added in a Bash task with the value `last_scanned-$(currentDate)`. You can't use a colon with AddBuildTag. 
+
 
 #### Example
 
-```
-##vso[build.addbuildtag]Tag_UnitTestPassed
+```yaml
+- task: Bash@3
+    inputs:
+    targetType: 'inline'
+    script: |
+        last_scanned="last_scanned-$(currentDate)"
+        echo "##vso[build.addbuildtag]$last_scanned"
+    displayName: 'Apply last scanned tag'
 ```
 
 

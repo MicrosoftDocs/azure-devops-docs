@@ -2,10 +2,10 @@
 title: Add or remove users or groups
 titleSuffix: Azure DevOps
 description: How-to guide to add or remove users or groups to security groups and manage security groups in Azure DevOps.
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: security-refresh
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
@@ -75,7 +75,7 @@ Choose to create a project-level group when you want to manage permissions at th
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the **Project Permissions Settings Page** or the **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md). Both preview pages provide a group settings page that the current page does not. 
+> To enable the **Project Permissions Settings Page** or the **Organization Permissions Settings Page v2** preview pages, see [Enable preview features](../../project/navigation/preview-features.md). Both preview pages provide a group settings page that the current page does not. 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -261,7 +261,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the **Project Permissions Settings Page** or the **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md). Both preview pages provide a group settings page that the current page does not. 
+> To enable the **Project Permissions Settings Page** or the **Organization Permissions Settings Page v2** preview pages, see [Enable preview features](../../project/navigation/preview-features.md). Both preview pages provide a group settings page that the current page does not. 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -313,7 +313,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 ::: moniker-end 
 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Open the **Permissions** page for either the project-level or organization-level as described in the previous section, [Create a custom security group](#create-custom-group). 
 
@@ -400,7 +400,7 @@ You add or remove users from a group from the **Members** tab of a selected grou
 ::: moniker range="azure-devops" 
 
 > [!NOTE]   
-> To enable the new user interface for the **Project Permissions Settings Page** or the **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md). Both preview pages provide a group settings page that the current page does not. 
+> To enable the **Project Permissions Settings Page** or the **Organization Permissions Settings Page v2** preview pages, see [Enable preview features](../../project/navigation/preview-features.md). Both preview pages provide a group settings page that the current page does not. 
 
 #### [Preview page](#tab/preview-page) 
 
@@ -485,7 +485,7 @@ For on-premises deployments, see these additional articles:
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops"
 
 If your on-premises deployment is integrated with SQL Server Reports, you'll need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 

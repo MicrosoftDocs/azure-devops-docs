@@ -6,7 +6,7 @@ ms.topic: include
 
 ::: moniker range="azure-devops" 
  
-* You must be the **Organization owner** or a member of the **Project Collection Administrators** group. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
+* You must be the **organization Owner** or a member of the **Project Collection Administrators** group. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 
 ::: moniker-end  
 

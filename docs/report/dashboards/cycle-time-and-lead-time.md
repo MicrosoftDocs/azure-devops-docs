@@ -3,11 +3,11 @@ title: Cycle Time and Lead Time control charts
 titleSuffix: Azure DevOps Services
 description: Learn how to configure and use the cycle time and lead time control charts/widgets to improve your team's ability to plan and improve processes.
 ms.custom: dashboards 
-ms.technology: devops-analytics  
+ms.subservice: azure-devops-analytics
 ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B  
 ms.topic: tutorial
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019' 
 ms.date: 09/28/2021
 ---
@@ -87,7 +87,8 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. Y
 2. Select **Save** when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
     :::image type="content" source="media/cycle-lead-time-lt-sample-chart.png" alt-text="Screenshot ofExample CFD chart, rolling 30 days.":::
-	For your lead/cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-basics.md#track-work) of those work items that the widgets track. 
+
+	For your lead/cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-quickstart.md#track-work-in-progress) of those work items that the widgets track. 
 
 ::: moniker-end
 
@@ -112,7 +113,7 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. Y
 2. Select **Save** when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
     :::image type="content" source="media/cycle-lead-time-lt-sample-chart.png" alt-text="Screenshot  Example CFD chart, rolling 30 days, 2019 version.":::
-	For your lead/cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-basics.md#track-work) of those work items that the widgets track. 
+	For your lead/cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-quickstart.md#track-work-in-progress) of those work items that the widgets track. 
 
 ::: moniker-end
  
@@ -125,15 +126,16 @@ Both Lead Time and Cycle Time widgets display as scatter-plot control charts. Th
 **Example Lead Time widget**  
 
 :::image type="content" source="media/lead-time-control-chart.png" alt-text="Screenshot of Cycle Time widget.":::
-The chart dots represent completed work items where their position on the horizontal axis represents the date the team completed them. Their position on the vertical axis represents the calculated lead time or cycle time. 
+
+The chart dots represent completed work items, and their position on the horizontal axis represents the date the team completed them. Their position on the vertical axis represents the calculated lead time or cycle time. 
 - Larger dots represent multiple work items with the same lead/cycle time 
 - Dot color corresponds to the work item type displayed in the legend
 - Dark gray dots correspond to a mix of work item types.
 
 ### Summary elements 
 
-- Days on average (average lead time or cycle time) for the main work item types configured for the chart 
-- The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for Other  
+- Days on average (average lead time or cycle time) for the main work item types configured for the chart. This number may not be equal to the average cycle/lead time of all work items. It depends on configurations used for widgets. The average number is calculated based on each day the team takes time for work item. 
+- The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for **Other**  
 - The black trend line indicates the moving average 
 - The band around the trend line shows the standard deviation.
 
@@ -164,7 +166,7 @@ The standard deviation appears as a band that encompasses the moving average. St
 We recommend your team review the lead/cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.   
 
 - [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)  
-- [Kanban basics](../../boards/boards/kanban-basics.md)  
+- [About Kanban](../../boards/boards/kanban-overview.md)  
 - [Cumulative flow diagram](cumulative-flow.md)
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
 - [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes

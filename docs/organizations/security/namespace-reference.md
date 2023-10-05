@@ -2,11 +2,11 @@
 title: Namespace reference  
 titleSuffix: Azure DevOps
 description: Understand the set of namespaces used to manage security  
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: quarterly-review
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022  
 ---
@@ -80,7 +80,7 @@ The following table describes the namespaces that manage object-level permission
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      AnalyticsViews
+      <a id="analytic-views-namespace" />  AnalyticsViews
    :::column-end:::
    :::column span="1":::
       `Read`                
@@ -156,7 +156,7 @@ The following table describes the namespaces that manage object-level permission
 ---
 :::row:::
    :::column span="1":::
-      DashboardsPrivileges  
+      <a id="dashboard-previleges-namespace" />  DashboardsPrivileges  
    :::column-end:::
    :::column span="1":::
       `Read`              
@@ -167,7 +167,7 @@ The following table describes the namespaces that manage object-level permission
       `MaterializeDashboards`   
    :::column-end:::
    :::column span="2":::
-      [Manages dashboard object-level permissions](permissions.md#dasboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
+      [Manages dashboard object-level permissions](permissions.md#dashboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
       <br/>
       **ID:** `8adf73b7-389a-4276-b638-fe1653f7efc7`
    :::column-end:::
@@ -175,7 +175,7 @@ The following table describes the namespaces that manage object-level permission
 ---
 :::row:::
    :::column span="1":::
-      Git Repositories <a id="git-repositories" />    
+      GitRepositories <a id="git-repositories" />    
    :::column-end:::
    :::column span="1":::
       `Administer`                
@@ -197,6 +197,8 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
    :::column span="2":::
       [Manages Git repository permissions at the project-level and object-level](permissions.md#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/git/set-git-repository-permissions.md).  
+      <br/>
+      The `Administer` permission was divided into several more granular permissions [in 2017](/previous-versions/azure/devops/2017/jan-25-team-services#repo-admin-permission-changes), and should not be used.
       <br/>
       **Token format for project-level permissions**: `repoV2/PROJECT_ID`  
       You need to append `RepositoryID` to update repository-level permissions.  
@@ -404,7 +406,7 @@ The following table describes the namespaces that manage project-level permissio
 ---
 :::row:::
    :::column span="1":::
-      Tagging
+      <a id="tagging" />Tagging
    :::column-end:::
    :::column span="1":::
       `Enumerate`   
@@ -510,6 +512,7 @@ The following table describes the namespaces that manage organization-level perm
       `ManageBuildResources`                 
       `UseBuildResources`                    
       `AdministerBuildResourcePermissions`   
+      `ManagePipelinePolicies`  
    :::column-end:::
    :::column span="2":::
       [Manages access to view, manage, use, or administer permissions for build resources](permissions.md#collection-level).  
@@ -745,7 +748,7 @@ The following table describes the security namespaces and permissions used to ma
       `ManageSecurity`    
    :::column-end:::
    :::column span="2":::
-      The **Manager** role is the only role used to manage the security of Marketplace extensions. Members of the Manager role can install extensions and respond to requests for extensions to be installed. The other permissions are assigned automatically to members of default security groups and service principals. To add users to the Manager role, see [Manage extension permissions](../../marketplace/how-to/grant-permissions.md).    
+      The **Manager** role is the only role used to manage the security of Marketplace extensions. Members of the Manager role can install extensions and respond to requests for extensions to be installed. The other permissions are assigned automatically to members of default security groups and service principals. To add users to the Manager role, see [Manage extension permissions](../../marketplace/grant-permissions.md).    
       <br/>
       **ID:** `5d6d7b80-3c63-4ab0-b699-b6a5910f8029`  
    :::column-end:::
@@ -788,7 +791,7 @@ The following table describes the security namespaces and permissions used to ma
    :::column span="2":::
       Manages permissions to create and manage service connections. Role memberships for individual items are automatically inherited from those defined at the project-level.  By default, the following roles are assigned: 
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
-      - **Creator** role (`View`, `Use`, and `Create` permissions) to to members of the Endpoint Creators service security group.  
+      - **Creator** role (`View`, `Use`, and `Create` permissions) to members of the Endpoint Creators service security group.  
       - **Administrator** role (all permissions) to members of the Endpoint Administrators service security group.  
       Roles are assigned through [Service connection security roles](about-security-roles.md#service-endpoint-roles).<br/><br/>
       **ID:** `49b48001-ca20-4adc-8111-5b60c903a50c`

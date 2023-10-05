@@ -1,18 +1,20 @@
-Once your extension is packaged, you can upload it to the Marketplace under a publisher. The `publisher` identifer specified in your [extension's manifest file](../../develop/manifest.md) must match the identifier of the publisher the extension is uploaded under.
+Once your extension is packaged, you can upload it to the Marketplace under a publisher. The `publisher` identifier specified in your [extension's manifest file](../../develop/manifest.md) must match the identifier of the publisher the extension is uploaded under.
 
-To upload an extension to the Marketplace:
+1. From the [management portal](https://aka.ms/vsmarketplace-manage), select your publisher from the drop-down menu at the top of the page.
 
-1. Navigate to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/)
-2. Find the <b>Upload new extension</b> button, navigate to your packaged .vsix file, and select <i>upload</i>.
-3. After a quick validation, your extension appears in the extensions list: 
-    ![first](../../publish/media/manage-first.png)
+2. Select **New extension** > **Azure DevOps**.
+
+    :::image type="content" source="../../get-started/media/upload-new-extension.png" alt-text="Screenshot showing New extension  dropdown menu and highlighted Azure DevOps selection.":::
+
+3. Drag and drop your file or select it to find your VSIX file, which you created in the previous packaging step, and then choose **Upload**.
+
+   ![Upload new extension for Azure DevOps.](../../get-started/media/upload-new-extension2.png)
+
+   After quick validation, your extension appears in the list of published extensions. Don't worry, the extension is only visible to you.
+
+    :::image type="content" source="../../get-started/media/published-extension.png" alt-text="Screenshot showing extension in the list of published extensions."::: 
 
 At this point, your extension isn't visible to any accounts and can't be installed until you share it.
 
-**Protective Scans**
-
-As a Marketplace user, one expects to not get malicious software (malware) when they acquire an extension from Visual Studio Marketplace. To ensure this, we run a virus scan on each extension package published. This is performed for each new extension and for each extension update. Until the scan is all clear, we do not publish the extension in Marketplace for public usage.
-> Stated virus scan is run at extension publish only and not during extension's execution.
-
-We also perform a content scan for each extension in Marketplace. This is performed for each new extension and for each extension update. Through this we avoid surfacing inappropriate or offensive content on the Marketplace pages.
-
+> [!NOTE]
+> Microsoft runs a virus scan on each new and updated extension package published. Until the scan is all clear, we don't publish the extension in the Marketplace for public usage. This way we also avoid surfacing inappropriate or offensive content on the Marketplace pages.

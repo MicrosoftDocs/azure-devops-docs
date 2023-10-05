@@ -17,9 +17,6 @@
   displayname: rollup, group, parent, tags
 - name: Add or edit a Delivery Plan
   href: add-edit-delivery-plan.md
-  displayname: calendar, multi-team views, cards
-- name: Edit plan permissions
-  href: edit-delivery-plan-permissions.md
 - name: Delivery Plans FAQs
   href: faqs.yml
   displayname: custom work item types

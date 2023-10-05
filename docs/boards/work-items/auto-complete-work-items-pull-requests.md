@@ -2,9 +2,9 @@
 title: Automate work item completion with pull requests in Azure Boards
 titleSuffix: Azure Boards   
 description: Learn how to automate work item creation and state transition of work items.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: cross-service
-ms.author: kaelli
+ms.author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -37,7 +37,7 @@ As shown in the following image, check the box to **Complete linked work items a
 ![Complete pull request dialog, Autocomplete work items with completion of PR option](media/workflow-states-complete-pr.png)
 ::: moniker-end 
 
-In the following circumstances, the system won't automatically update the work item state to Done, Closed, or the state that belongs to the Closed category for the work item type: 
+In the following circumstances, the system won't automatically update the work item state to Done, Closed, or the state that belongs to the Completed category for the work item type: 
 - The work item, whose work item type is managed with the Inheritance process model, is already in a State that belongs to the Resolved category. In this instance, the system won't update the State. For example, if a bug derived from the Agile process is in a Resolved state, the system won't transition it to Closed.   
 - The work item is already in a State that belongs to the Completed category. No further transition is required. 
 - The WIT associated with the work item contains one or more workflow field rules that prevent the work item being saved to a next state. For example, a rule requires that another field must be defined as part of closing the work item.  

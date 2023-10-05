@@ -2,11 +2,11 @@
 title: GitHub integration overview
 titleSuffix: Azure DevOps
 description: Learn about Azure DevOps integration with GitHub.
-ms.technology: devops-agile 
+ms.subservice: azure-devops-cross-service
 ms.custom: cross-service
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 08/31/2021
 ---
@@ -208,7 +208,7 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
    :::column-end::: 
    :::column span="2":::
       - Supports continuous integration (CI) builds for GitHub Enterprise repositories.
-      - Create a pipeline to build code contained within a GitHub Enterprise repository using the the build pipeline wizard. 
+      - Create a pipeline to build code contained within a GitHub Enterprise repository using the build pipeline wizard. 
        For details, see [Build GitHub repositories, CI triggers](../pipelines/repos/github.md#ci-triggers).  
    :::column-end:::
 :::row-end:::
@@ -232,9 +232,9 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
    :::column-end::: 
    :::column span="2":::
       Supported: 
-      - [Download GitHub Release task](../pipelines/tasks/utility/download-github-release.md) 
-      - [GitHub Release task](../pipelines/tasks/utility/github-release.md)
-      - [Open source Azure Pipeline tasks](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks) 
+      - [Download GitHub Release task](/azure/devops/pipelines/tasks/reference/download-github-release-v0) 
+      - [GitHub Release task](/azure/devops/pipelines/tasks/reference/github-release-v1)
+      - [Open source Azure Pipelines tasks](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks) 
    :::column-end:::
 :::row-end:::
 ---
@@ -249,7 +249,7 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
       - Automate GitHub releases using the **GitHub Release** task.   
       For details, see:
       - [CI triggers](../pipelines/repos/github.md#ci-triggers)
-      - [Download GitHub Release task](../pipelines/tasks/utility/download-github-release.md) 
+      - [Download GitHub Release task](/azure/devops/pipelines/tasks/reference/download-github-release-v0) 
    :::column-end:::
 :::row-end:::
 ---
@@ -265,8 +265,8 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
       - Link your GitHub releases as an artifact source in release pipelines. This function lets you consume the GitHub release as part of your deployments.  
       For details, see:
       - [CI triggers](../pipelines/repos/github.md#ci-triggers)
-      - [Download GitHub Release task](../pipelines/tasks/utility/download-github-release.md) 
-      - [GitHub Release task](../pipelines/tasks/utility/github-release.md)
+      - [Download GitHub Release task](/azure/devops/pipelines/tasks/reference/download-github-release-v0) 
+      - [GitHub Release task](/azure/devops/pipelines/tasks/reference/github-release-v1)
    :::column-end:::
 :::row-end:::
 ---
@@ -282,18 +282,6 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range="azure-devops"
-:::row:::
-   :::column span="1":::
-      GitHub Actions to trigger a pipeline run  
-   :::column-end::: 
-   :::column span="2":::
-      automate your software development workflows from within GitHub. You can deploy workflows in the same place where you store code and collaborate on pull requests and issues. For details, see [Quickstart: Trigger an Azure Pipelines run from GitHub Actions](../pipelines/ecosystems/github-actions.md).  
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019 < azure-devops-2020" 
 :::row:::
    :::column span="1":::

@@ -2,7 +2,6 @@
 ms.topic: include
 ---
 
-
 <a id="powerbi-reports"></a>
 ::: moniker range=">= azure-devops-2019"
 
@@ -10,7 +9,6 @@ ms.topic: include
 
 The Analytics Service can answer quantitative questions about the past or present state of your projects. You can add [Analytics widgets](../../report/dashboards/analytics-widgets.md) to a dashboard or use [Power BI to create charts and reports](../../report/powerbi/data-connector-connect.md). 
 
-To learn more, see [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md)
-
+For more information, see [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md)
 
 ::: moniker-end

@@ -1,7 +1,7 @@
 ---
-ms.technology: devops-new-user
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-new-user
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 04/04/2022
 ---

@@ -1,8 +1,7 @@
 ---
-ms.prod: devops
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 05/24/2021
 ---

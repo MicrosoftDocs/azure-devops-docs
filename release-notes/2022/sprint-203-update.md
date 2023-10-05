@@ -2,7 +2,6 @@
 title: Query by Parent Id private preview.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 5/6/2022
 description: Query by Parent Id is now available in private preview.  
 ---

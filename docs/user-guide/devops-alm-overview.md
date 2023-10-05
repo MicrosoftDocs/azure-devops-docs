@@ -3,10 +3,10 @@ title: DevOps tools overview for Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18  
 description: Guide to getting started using DevOps and Agile tools provided by Azure DevOps Services and Azure DevOps Server
-ms.technology: devops-new-user  
+ms.subservice: azure-devops-new-user
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
-ms.author: kaelli
-author: KathrynEE 
+ms.author: chcomley
+author: chcomley 
 ms.date: 01/31/2022  
 monikerRange: '<= azure-devops'
 ---
@@ -55,7 +55,7 @@ You can develop your code in Android Studio, Eclipse, IntelliJ, Visual Studio, V
 
 Git is a distributed version control system. Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. Branches are lightweight. 
 
-[![Android Studio](media/overview/code-git-android-studio-1.png)](/previous-versions/azure/devops/java/download-android-studio-plug-in)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](media/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](media/overview/code-git-intellij-3.png)](/previous-versions/azure/devops/java/download-intellij-plug-in)  
+[![Android Studio](media/overview/code-git-android-studio-1.png)](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](media/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](media/overview/code-git-intellij-3.png)](/previous-versions/azure/devops/all/java/download-intellij-plug-in)  
 
 <br/>
 <a href="../repos/git/share-your-code-in-git-vs.md" data-raw-source="[![Visual Studio](media/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)"><img src="media/overview/code-git-visual-studio.png" alt="Visual Studio"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="https://code.visualstudio.com/docs/editor/versioncontrol" data-raw-source="[![Visual Studio Code](media/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)"><img src="media/overview/code-git-visual-studio-code.png" alt="Visual Studio Code"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="../repos/git/share-your-code-in-git-xcode.md" data-raw-source="[![Xcode](media/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)"><img src="media/overview/code-git-xcode.png" alt="Xcode"/></a>  
@@ -84,7 +84,7 @@ Code Search also makes team collaboration easier and helps maximize developer ef
 
  Use Agile tools to plan and track work using Scrum and Kanban processes or a mix of both. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board. In addition, configurable charts, dashboards, and reports help teams monitor and share progress. 
 
-[![Define stories](media/overview/ov-agile-plan-1.png)](../boards/backlogs/create-your-backlog.md)[![Plan sprints](media/overview/ov-agile-plan-2.png)](../boards/sprints/assign-work-sprint.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](media/overview/ov-agile-plan-3.png)](../boards/boards/kanban-basics.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](media/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
+[![Define stories](media/overview/ov-agile-plan-1.png)](../boards/backlogs/create-your-backlog.md)[![Plan sprints](media/overview/ov-agile-plan-2.png)](../boards/sprints/assign-work-sprint.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](media/overview/ov-agile-plan-3.png)](../boards/boards/kanban-quickstart.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](media/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
 
 You also gain access to a [rich set of customization capabilities](../reference/customize-work.md).
  
@@ -130,7 +130,7 @@ Once you've signed up for Azure DevOps Services or installed Azure DevOps Server
 
 ### Pricing, costs, and licenses</span>
 
-[Azure DevOps Services Pricing](https://visualstudio.microsoft.com/team-services/pricing/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.
+[Azure DevOps Services Pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.
 
 On-premises Azure DevOps Server provides three access levels: [Stakeholder, Basic, and Basic + Test Plans](../organizations/security/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing) to plan your licensing requirements.
 
@@ -142,7 +142,7 @@ Our extensibility framework enables you to build integrations directly within Az
 With Marketplace extensions, you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the Azure DevOps Services web portal.  
 
 - [Find marketplace extensions](../marketplace/overview.md)
-- [Get extensions](../marketplace/install-extension.md)</li>
+- [Get extensions](../marketplace/install-extension.md)</br>
 - [Using service hooks](../service-hooks/overview.md)
 - [Get started with REST APIs](/rest/api/azure/devops/)
 

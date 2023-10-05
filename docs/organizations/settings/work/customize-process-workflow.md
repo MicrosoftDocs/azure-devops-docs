@@ -3,10 +3,10 @@ title: Customize the workflow of an inherited process
 titleSuffix: Azure DevOps Services
 description: Learn how to add or remove workflow states to a work item type for an inherited process 
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
 ms.date: 08/17/2020

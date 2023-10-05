@@ -8,8 +8,7 @@ ms.topic: include
 
 Connect to your project using a [supported web browser](/azure/devops/server/compatibility#supported-browsers) and choose **Wiki**.
 
-> [!div class="mx-imgBorder"] 
->![Create wiki, provision a Git repo for your wiki or publish existing repo Markdown files](/azure/devops/organizations/public/media/wiki/open-wiki-vert-brn.png)
+:::image type="content" source="../media/open-wiki-vert-brn.png" alt-text="Screenshot showing highlighted Wiki menu selection.":::
 
 If you need to switch your team project, choose :::image type="icon" source="../../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to [browse all team projects and teams](../../navigation/work-across-projects.md).
 

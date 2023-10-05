@@ -1,7 +1,7 @@
 ---
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.prod: azure-devops
 ms.topic: include
 ms.date: 07/17/2020
@@ -71,6 +71,7 @@ For example, the Basic process, Issue WIT is characterized by the three States&m
 - You can't change the name of a custom state 
 - You can't specify a Reason for a state, instead, default reasons are defined such as *Moved to state Triaged*, *Moved out of state Triaged* 
 - You can't change the location of the State and Reason fields on the form
+- You can't customize state category names
 
 ::: moniker-end
 

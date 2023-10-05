@@ -3,10 +3,11 @@ title: Set Git branch security and permissions
 titleSuffix: Azure Repos
 description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 10/25/2021
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Set branch permissions
@@ -17,7 +18,7 @@ monikerRange: '<= azure-devops'
 Set up permissions to control who can read and update the code in a branch on your Git repo.
 You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](set-git-repository-permissions.md#git-repository).
 
-[!INCLUDE [version-selector-minimize](../../includes/version-selector-minimize.md)]
+[!INCLUDE [version-selector](../../includes/version-selector.md)]
 
 ## Use the branches view to configure security
 
@@ -67,7 +68,7 @@ Control branch permission settings from the branch permission view. Users and gr
 
 
 ::: moniker range=">= azure-devops-2019"
-The following permissions are automatically assigned to branch creators: **Contribute**, **Edit policies**, **Force push**, **Manage permissions**, and **Remove others' locks**.
+The following permissions are automatically assigned to branch creators: **Contribute**, **Force push**, **Manage permissions** (when allowed through the repository setting **Permissions management**), and **Remove others' locks**.
 
 
 > [!NOTE]
@@ -77,8 +78,6 @@ The following permissions are automatically assigned to branch creators: **Contr
 >- **Bypass policies when pushing**
 >
 > Users that previously had **Exempt from policy enforcement** enabled now have the two new permissions enabled instead. See the following table for more details on these two new permissions.
-
-The following permissions are automatically assigned to branch creators: **Contribute**, **Edit policies**, **Force push**, **Manage permissions**, and **Remove others' locks**.
 ::: moniker-end
 
 :::row:::

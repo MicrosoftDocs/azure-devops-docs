@@ -2,7 +2,7 @@
 title: What are feed views?
 description: Learn about feed views and why it's useful for package release
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 04/07/2022
 monikerRange: '<= azure-devops'
@@ -23,13 +23,16 @@ The `@local` view contains all packages published directly to the feed and all p
 
 Feed views are read-only, which means that users connected to a view can only use packages that are published to that view and/or packages previously saved from upstream sources. See [package graphs](package-graph.md) to learn how available packages are constructed.
 
-> [!NOTE]
-> All feed views in a public project are accessible to everyone on the internet.
+> [!Note]
+> Azure Artifacts only supports publishing and restoring packages from and to the default view - *@Local*.
 
 ## Feed views and upstream sources
 
 Feed views and upstream sources are designed to work together to provide an enterprise-level solution to share and consume packages.
-In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's visibility to **members of your organization**, or **members of your Azure Active Directory**, depending on your scenario. If you choose the latter, all people in your organization will be able to access your feed, and all feeds in your organization and other organizations associated with the same Azure Active Directory tenant will be able to upstream to your feed.
+In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's visibility to **members of your organization**, or **members of your Azure Active Directory**, depending on your scenario. If you choose the latter, all people in your organization will be able to access your feed. In addition, all feeds in your organization and other organizations associated with the same Azure Active Directory tenant will be able to upstream to your feed.
+
+> [!NOTE]
+> All feed views in a public project are accessible to everyone on the internet.
 
 ## Release packages with feed views
 
@@ -43,11 +46,11 @@ The nature and the risk of the change both pertain to the _change itself_, that 
 
 ### Quality of the change
 
-The **quality** of the change isn't generally known until the validation process is complete. This comes after your change is built and packaged. Because of this detail, it's not feasible to communicate the quality in the version number, which is specified during packaging and before validation. There are workarounds to pre-validate (e.g. consume the build's DLLs directly before they're packaged and publish the packages to a "debug" or "CI" environment then validate and republish those packages to a "release" environment) but none that we've seen can truly guarantee that the built package will meet the correct quality standard.
+The **quality** of the change isn't generally known until the validation process is complete. This comes after your change is built and packaged. Because of this detail, it's not feasible to communicate the quality of the change in the numerical segment of the version number (e.g 1.2.3). There are workarounds to pre-validate (e.g. consume the build's DLLs directly before they're packaged and publish the packages to a "debug" or "CI" environment then validate and republish those packages to a "release" environment) but none that we've seen can truly guarantee that the built package will meet the correct quality standard.
 
 :::image type="content" source="media/release-views-flow.png" alt-text="publishing packages workflow":::
 
-You can use the `@Release` view as a mean to convey the quality of your changes. Using the `@Release` view, you can share packages that met your quality bar and allow your consumers to only see the subset of package versions that were tested, validated, and are ready to be consumed.
+You can use the `@Release` view as a means to convey the quality of your changes. Using the `@Release` view, you can share packages that met your quality bar and allow your consumers to only see the subset of package versions that were tested, validated, and are ready to be consumed.
 
 :::image type="content" source="media/release-views-quality-tags.png" alt-text="deployment semantic version":::
 

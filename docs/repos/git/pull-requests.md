@@ -3,18 +3,20 @@ title: Create a pull request to review and merge code
 titleSuffix: Azure Repos
 description: Learn how to create pull requests or draft pull requests in Azure Repos using Git, and add details and reviewers. 
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
 ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
+ms.custom: devx-track-azurecli
 ---
 
 # Create pull requests
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Create pull requests (PRs) to change, review, and merge code in a [Git repository](creatingrepo.md). You can create PRs from branches in the upstream repository or from branches in your [fork](forks.md) of the repository. Your team can [review the PRs](review-pull-requests.md) and give feedback on changes. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the PRs. Depending on [branch policies](branch-policies.md) and other requirements, your PR might need to meet various criteria before you can [complete the PR](complete-pull-requests.md) and merge the changes into the target branch.
 
@@ -133,7 +135,17 @@ The link takes you to a page where you can [enter your PR details](pull-requests
 
 # [Visual Studio](#tab/visual-studio)
 
-In Visual Studio 2015, 2017, and 2019, you can create PRs from Visual Studio Team Explorer:
+To create a pull request:
+
+1. In the **Git** menu, select **Manage Branches**.
+
+1. Right-click a branch and select **Create Pull Request**.
+
+1. Edit the source and target branches as needed, enter a title and optional description, and select **Create**.
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
+
+To create PRs from Visual Studio Team Explorer:
 
 1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
@@ -307,7 +319,10 @@ To change an existing published PR to a draft, choose **Mark as draft**. Marking
 
 # [Visual Studio](#tab/visual-studio)
 
-To set a PR to draft, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** page, select **Mark as draft**. 
+To set a PR to draft, open the PR and select **Mark as draft**.
+
+- To open a pull request from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**, and select a pull request to open it.
+- To open a pull request from Visual Studio Team Explorer, from the **Pull Requests** view, right-click the PR and select **Open in browser**.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -372,8 +387,7 @@ Edit the PR description by selecting the **Edit** icon in the **Description** se
 
 When you create a PR in Visual Studio, enter a title and detailed description of your changes so others can see what problems the changes solve. Keep these fields up to date so reviewers can understand the changes in the PR.
 
-To edit the title, description, or any other details in an existing PR, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
-
+To edit the title, description, or any other details in an existing PR, open the PR in your browser.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -546,7 +560,7 @@ az repos pr reviewer add --id
 To link work items to a new PR:
 
   1. On the **New pull request** page, under **Work items to link**, select **Search work items by ID or title**.
-  1. Start to enter a work item ID or title, and select the work item to link from the dropdown list that appears.
+  1. Start to enter a work item ID or title, and select the work item to link from the dropdown list that appears. Search by title returns work items filtered by state; all work items with states having state categories **Completed** and **Removed** are excluded. These work items are also filtered by date and user, with only items created or updated in the last 30 days shown, and they should be created by, assigned to, or authorized as the current user.
 
 To link work items to an existing PR:
 
@@ -570,7 +584,7 @@ To link work items to your PR:
 
 2. Select the add button in the **Work Items** area. ![Add icon in PRs](media/pull-requests/pr_add_icon.png)
 
-3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears. Search by title returns work items filtered by state; all work items with states having state categories **Completed** and **Removed** are excluded. These work items are also filtered by date and user, with only items created or updated in the last 30 days shown, and they should be created by, assigned to, or authorized as the current user.
 
 Remove work item links by selecting the remove button that appears when you hover over the work item. ![remove button](media/pull-requests/pr_remove_icon.png)
 Removing a link only removes the link between a work item to a PR. Links created in the branch or from commits stay in the work item.
@@ -587,7 +601,7 @@ To link work items to your PR:
 
 2. Select the add button in the **Work Items** area. :::image type="icon" source="media/pull-requests/pull-request-add-button.png":::
 
-3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears. Search by title returns work items filtered by state; all work items with states having state categories **Completed** and **Removed** are excluded. These work items are also filtered by date and user, with only items created or updated in the last 30 days shown, and they should be created by, assigned to, or authorized as the current user.
 
 Remove work item links by selecting the remove button that appears when you hover over the work item. ![remove icon](media/pull-requests/pr_remove_icon.png)
 Removing a link only removes the link between the work item and the PR. Links created in the branch or from commits stay in the work item.

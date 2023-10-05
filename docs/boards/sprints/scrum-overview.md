@@ -2,14 +2,13 @@
 title: Implement Scrum work practices in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to implement Scrum practices, track work, and monitor progress and trends in Azure Boards. 
-ms.custom: boards-sprints
-ms.technology: devops-agile
-ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.custom: boards-sprints, engagement-fy23
+ms.service: azure-devops-boards 
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 01/23/2023
 ---
 
 # Implement Scrum practices for your team in Azure Boards 
@@ -52,21 +51,26 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 6. [Update the Taskboard](task-board.md) 
 7. [Monitor your sprint burndown](../../report/dashboards/configure-sprint-burndown.md) 
 
+## Close out a sprint
 
-## Sprint backlogs and taskboards overview
+1. [End of sprint activities](end-sprint-activities.md)
+2. [Sprint retrospective meetings](best-practices-scrum.md#sprint-retrospective-meetings)
 
-Sprint backlogs and taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
+
+## Sprint backlogs and Taskboards overview
+
+Sprint backlogs and Taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
 
 ::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
-> ![Boards>Sprints>Backlog](../work-items/media/view-add/view-sprint-backlogs.png)    
+> ![Screenshot of Web portal, Open Boards, Sprints, Backlog.](../work-items/media/view-add/view-sprint-backlogs.png)    
 
 ::: moniker-end
 
 
 ::: moniker range="tfs-2018"
 > [!div class="mx-imgBorder"]  
-> ["Web portal, choose Boards>Backlogs, Sprint](../work-items/media/view-add/view-sprint-backlog.png)
+> [Screenshot of Web portal, choose Boards, Backlogs, Sprint.](../work-items/media/view-add/view-sprint-backlog.png)
 
 ::: moniker-end
 
@@ -82,7 +86,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 1. You can gain an overview of your sprint planning by turning on the **Planning** view option. From the product backlog or any sprint backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Planning**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Boards>Backlogs>Planning pane](media/overview/sprints-new-nav.png)
+	> ![Screenshot of Sprints backlogs Planning pane.](media/overview/sprints-new-nav.png)
 
 	> [!NOTE]   
 	> The Planning pane will only show the current sprint and the next 10 future sprints in the list, even if more have been selected for the team. 
@@ -92,7 +96,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 1. To select a sprint backlog, you can choose one of the sprint links from the **Planning** pane, or from a Sprint backlog, choose a sprint from the sprint selector.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Boards>Sprints>Sprint selector](media/overview/select-a-sprint-new-nav.png)
+	> ![Screenshot showing how to select a sprint. ](media/overview/select-a-sprint-new-nav.png)
 
 ::: moniker-end
 
@@ -100,7 +104,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 For example, by selecting Sprints 1 through 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
-![Azure Boards and TFS 2017, Selected iterations generate sprint backlogs](media/define-sprints/selected-team-iterations-vsts.png)
+![Screenshot showing how selected iterations show up on Web portal, sprint backlogs.](media/define-sprints/selected-team-iterations-vsts.png)
 
 ::: moniker-end  
 
@@ -110,50 +114,28 @@ Once you've [defined iteration (sprint) paths and configured team iterations](..
 
 At the start of each sprint, you'll want to plan the work that your team can commit to. The three Agile tools that support this work include the sprint backlog, capacity planning, and capacity bars. The sprint backlog contains a filtered subset of backlog items whose iteration path corresponds to the current sprint. 
 
-:::row::: 
-   :::column span="1":::
-   **Team capacity planning tool**
-   
-   By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity and days off. And, conveniently, you can set holidays or shared days off taken by the entire team. 
+### Team capacity planning tool 
 
-   Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. 
+By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity and days off. And, conveniently, you can set holidays or shared days off taken by the entire team. 
 
-   You [set recurring days off](../../organizations/settings/set-working-days.md), such as weekends, through team settings.
+Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. 
 
-   :::column-end:::
-   :::column span="1":::
-   
-   ![Team capacity planning tool](media/team-capacity-planning-tool.png) 
-   :::column-end:::
-:::row-end:::
-:::row::: 
-   :::column span="1":::
-   
-   
-   **Individual and team capacity bars**
-   
-   With capacity bars, you can quickly see who is over, at, or under capacity. Capacity bars update with each of these activities: 
+For more information, see [Set capacity for the team and team members](set-capacity.md#set-capacity-for-the-team-and-team-members).
 
-   
-   - Tasks are assigned with non-zero remaining work
+![Screenshot of Team capacity planning tool.](media/team-capacity-planning-tool.png) 
 
-   
-   - Change in remaining work
+### Individual and team capacity bars
 
-   
-   - Date change within the sprint cycle. Individual and team capacity always reflects their capacity from the current day until the end of the sprint.  
+With capacity bars, you can quickly see who is over, at, or under capacity. Capacity bars update with each of these activities: 
+- Tasks are assigned with non-zero remaining work
+- Change in remaining work
+- Date change within the sprint cycle. Individual and team capacity always reflects their capacity from the current day until the end of the sprint.  
 
-   
-   
-   Here&#39;s how to interpret the capacity colors:
+![Screenshot of Capacity bars.](media/ALM_DS_CapacityBars_S.png)
 
-   ![These colors help you distinguish capacity](media/capacity-planning-tool-color-chart.png)
-   :::column-end:::
-   :::column span="1":::
-   
-   ![Capacity bars](media/ALM_DS_CapacityBars_S.png)
-   :::column-end:::
-:::row-end:::
+Here's how to interpret the capacity colors:
+
+![Screenshot of capacity board that help distinguish capacity.](media/capacity-planning-tool-color-chart.png)
 
 
 ## Update tasks and monitor burndown 
@@ -161,35 +143,26 @@ At the start of each sprint, you'll want to plan the work that your team can com
 During a sprint, use the taskboard and sprint burndown chart to track their progress. Your sprint burndown chart provides you with an at-a-glance visual to determine if your team is on track to meet their sprint plan.  
  
 :::row::: 
-   :::column span="1":::
-   
-   
-   **Taskboard**
-   
+   :::column span="1":::  
+   **Taskboard**  
    Your [Taskboard](task-board.md) provides an interactive progress board for work required to complete the sprint backlog. During your sprint, you&#39;ll want to update the status of tasks and the remaining work for each task. 
 
    Updating tasks daily or several times a week yields a smoother burndown chart. 
-
    :::column-end:::
    :::column span="2":::
-   
-   ![taskboard](media/ALM_DS_Task_board_S.png)
+   ![Screenshot of Taskboard.](media/ALM_DS_Task_board_S.png)
    :::column-end:::
 :::row-end:::
 :::row::: 
    :::column span="1":::
-   
-   
    **Sprint burndown chart**
    
    You use the [sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md) to mitigate risk and check for scope creep throughout your sprint cycle. The burndown chart reflects the progress made by your team in completing all the work they estimated during their sprint planning meeting. 
 
    The ideal trend line always indicates a steady burndown. The blue area, however, represents what&#39;s actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks.
-
    :::column-end:::
    :::column span="2":::
-   
-   ![Sprint burndown chart](media/ALM_DS_SprntBD_Chrt_S.png)
+   ![Screenshot of Sprint burndown chart.](media/ALM_DS_SprntBD_Chrt_S.png)
    :::column-end:::
 :::row-end:::
 
@@ -214,7 +187,7 @@ After several sprints, use the [Velocity chart](../../report/dashboards/team-vel
       By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics.
    :::column-end::: 
    :::column span="1":::
-      ![Velocity chart](media/velocity-chart.png)
+      ![Screenshot of Velocity chart.](media/velocity-chart.png)
    :::column-end:::
 :::row-end:::
 ---
@@ -225,7 +198,7 @@ After several sprints, use the [Velocity chart](../../report/dashboards/team-vel
       By plugging in a velocity, you can see which items are within scope for the set of sprints the team has selected. As shown here, a velocity of 15 indicates that it will take three sprints to complete the work shown.*
    :::column-end::: 
    :::column span="1":::
-      ![Forecast tool](media/forecast-tool.png)
+      ![Screenshot of Forecast tool.](media/forecast-tool.png)
    :::column-end:::
 :::row-end:::
 ---
@@ -292,6 +265,7 @@ For other options to determine changes to the sprint scope, see [Query by date o
 If you work with several teams, and each team wants their own backlog view, you can [create more teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path. 
 
 - [Scrum concepts](scrum-key-concepts.md) 
+- [End of sprint activities](end-sprint-activities.md) 
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  

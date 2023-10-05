@@ -2,7 +2,7 @@
 title: Clone or import a pipeline
 description: Create a pipeline by cloning or importing an existing pipeline
 ms.topic: conceptual
-ms.date: 12/23/2021
+ms.date: 12/20/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -42,7 +42,7 @@ For YAML pipelines, the process for cloning is to copy the YAML from the source 
 
 :::moniker range="> azure-devops-2019"
 
-1. [Navigate](multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
+1. [Go](../create-first-pipeline.md#view-and-manage-your-pipelines) to the [pipeline details](../create-first-pipeline.md#view-pipeline-details) for your pipeline, and choose **Edit**.
 
     :::image type="content" source="media/pipeline-edit.png" alt-text="Edit pipeline."::: 
 
@@ -117,7 +117,7 @@ In a YAML pipeline, exporting from one project and importing into another is the
 
 :::moniker range="> azure-devops-2019"
 
-1. [Navigate](multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
+1. [Go](../create-first-pipeline.md#view-and-manage-your-pipelines) to the [pipeline details](../create-first-pipeline.md#view-pipeline-details) for your pipeline, and choose **Edit**.
 
     :::image type="content" source="media/pipeline-edit.png" alt-text="Edit pipeline."::: 
 

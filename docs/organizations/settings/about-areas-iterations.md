@@ -2,10 +2,10 @@
 title: How are area and iteration paths used?
 titleSuffix: Azure DevOps
 description: Understand how area paths and iteration paths are used in Azure DevOps.
-ms.technology: devops-settings
-ms.custom: linked-from-support
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-settings
+ms.custom: teams, linked-from-support
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
@@ -42,6 +42,7 @@ The areas and iterations you see depend on the process you used to create your p
 > |<img src="media/iterations/project-configuration-iterations.png" alt="Default iterations, Scrum process" /> | <img src="media/areas/project-configuration-areas.png" alt="A set of sample area paths" /> | 
 
 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 <a id="area-path-guidance" />
 
@@ -57,10 +58,9 @@ If you're new to managing projects and teams, the most straight forward sequence
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
  
 > [!NOTE]  
-> Organizations are limited to defining a maximum of 10,000 **Area Paths**, and assigning a maximum of 300 **Area Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
-
-> [!NOTE] 
-> While you can assign the same **Area Path** to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).  
+> Projects are limited to defining a maximum of 10,000 **Area Paths**, and assigning a maximum of 300 **Area Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
+> 
+> Also, while you can assign the same **Area Path** to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).  
 
 As needed, you can do the following actions at any time: 
 
@@ -71,6 +71,7 @@ As needed, you can do the following actions at any time:
 - Rename a team 
 - Change the area path assignments made to a team
 
+See also, [Configure a hierarchy of teams](../../boards/plans/configure-hierarchical-teams.md). 
 
 ## How many areas should a team define?
 
@@ -100,7 +101,7 @@ Use the following guidance to configure **Iteration Paths** for your project and
 5. Each team should assign an iteration path to their work items that falls under the **Backlog iteration** path. Those work items will then show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
 
 > [!NOTE]  
-> Organizations are limited to defining a maximum of 10,000 **Iteration Paths**, and assigning a maximum of 300 **Iteration Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
+> Projects are limited to defining a maximum of 10,000 **Iteration Paths**, and assigning a maximum of 300 **Iteration Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
 
 
 As needed, you can do the following actions at any time: 

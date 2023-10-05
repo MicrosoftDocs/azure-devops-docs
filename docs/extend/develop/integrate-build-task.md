@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Custom build/release task reference | Extensions for Azure DevOps
 description: Reference for creating and integrating custom build or release tasks with an extension in Azure DevOps.
 ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73

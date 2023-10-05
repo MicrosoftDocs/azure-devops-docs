@@ -2,9 +2,9 @@
 title: Migrate to Analytics from SQL Reporting Services 
 titleSuffix: Azure DevOps 
 description: Learn how to migrate from using the legacy SQL Reporting Services reports to using Analytics for Azure DevOps.
-ms.technology: devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019 <= azure-devops-2020'
 ms.date: 05/26/2022
@@ -63,12 +63,12 @@ The following tools support interaction with the Analytics service:
 - **Analytics views**: Provide a quick way to generate reports based on work tracking and test cases. You can define an Analytics view and share with others. Using Power BI, you can build any type of report Power BI supports. TO learn more, see [What are Analytics views?](../powerbi/what-are-analytics-views.md).  
 - **Power BI**: Connect to Analytics from Power BI through an ANalytics view, OData query, or OData feed. See [About Power BI integration](../powerbi/overview.md). 
 - **OData query**: Use Odata to directly query Analytics from a supported browser and use the returned JSON data as needed.  
-- Programmatic query of the Analytics metadata [Explore the Analytics OData metadata](../extend-analytics/analytics-metadata.md). 
+- Programmatic query of the Analytics metadata [Construct OData queries for Analytics, URL components to query the metadata](../analytics/analytics-query-parts.md#query-metadata). 
  
 
 ### Query guidelines, query performance and latency 
 
-Analytics is not a real-time time store. It is a curated copy of data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and reduces the effect reporting scenarios have on Azure DevOps. Copying the data introduces up to a 30-second delay before the data associated with any one change shows up in Analytics. To learn more, see [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md).
+Analytics is not a real-time time store. It is a curated copy of data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and reduces the effect reporting scenarios have on Azure DevOps. Copying the data introduces up to a 30-second delay before the data associated with any one change shows up in Analytics. To learn more, see [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
 
 
 ### Analytics permissions
@@ -87,8 +87,8 @@ In addition, users can set permissions for individual shared Analytics views the
 - [Power BI Desktop download page](/power-bi/desktop-what-is-desktop)
 
 **Learn resources**:  
-- [Run quality tests in your build pipeline by using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline)
-- [Run functional tests in Azure DevOps](/learn/modules/run-functional-tests-azure-pipelines) 
+- [Run quality tests in your build pipeline by using Azure Pipelines](/training/modules/run-quality-tests-build-pipeline)
+- [Run functional tests in Azure DevOps](/training/modules/run-functional-tests-azure-pipelines) 
 
 ## Next steps
 > [!div class="nextstepaction"]

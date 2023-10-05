@@ -3,8 +3,7 @@ title: Azure DevOps Release Notes - Azure Pipelines Sprint 204 Update
 description: See the Sprint 204 feature updates for Azure Pipelines, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
-ms.date: 5/25/2022
+ms.date: 6/2/2022
 ---
 
 # Azure Pipelines - Sprint 204 Update

@@ -1,7 +1,7 @@
 ---
 title: Publish packages to NuGet.org
 description: How to publish packages to NuGet.org
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 4/01/2021

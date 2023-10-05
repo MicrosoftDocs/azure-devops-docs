@@ -2,7 +2,6 @@
 title: Use GitHub Actions to trigger a run in Azure Pipelines - Sprint 161 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 12/02/2019
 description: In the **Sprint 161 Update** of Azure DevOps, we are excited to announce GitHub Actions for Azure Pipelines.
 ---

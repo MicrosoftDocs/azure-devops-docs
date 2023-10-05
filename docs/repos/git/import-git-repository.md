@@ -3,10 +3,11 @@ title: Import a Git repo into your project
 titleSuffix: Azure Repos
 description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure DevOps Services/TFS Project
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 02/23/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 # Import a Git repo

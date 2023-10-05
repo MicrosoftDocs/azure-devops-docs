@@ -1,8 +1,8 @@
 ---
-ms.technology: devops-code-git
-ms.prod: devops
+ms.service: azure-devops-repos
 ms.topic: include
 ms.date: 02/03/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 ::: moniker range="azure-devops"
@@ -15,7 +15,7 @@ ms.date: 02/03/2022
   
   - If you aren't a project member, [get added](../../../organizations/accounts/add-organization-users.md).
 
-- To clone or contribute to code for a private project, you must be a member of the **Contributors** security group or have the corresponding permissions set. For public projects, anyone can clone and contribute code. To learn more, see [What is a public project?](/azure/devops/organizations/public/about-public-projects)
+- To clone or contribute to code for a private project, you must be a member of the **Contributors** security group or have the corresponding permissions set. For public projects, anyone can clone and contribute code. To learn more, see [What is a public project?](/azure/devops/organizations/projects/about-projects)
 
   > [!NOTE]
   > For public projects, users granted **Stakeholder** access have full access to **Azure Repos**.

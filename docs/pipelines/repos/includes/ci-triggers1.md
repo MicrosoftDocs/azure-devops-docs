@@ -1,11 +1,13 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
-ms.date: 03/29/2020
+ms.date: 09/02/2022
 ---
+
+::: moniker range=">= azure-devops-2019"
 
 YAML pipelines are configured by default with a CI trigger on all branches.
 
@@ -15,11 +17,11 @@ You can control which branches get CI triggers with a simple syntax:
 
 ```yaml
 trigger:
-- master
+- main
 - releases/*
 ```
 
-You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
+You can specify the full name of the branch (for example, `main`) or a wildcard (for example, `releases/*`).
 See [Wildcards](#wildcards) for information on the wildcard syntax.
 
 > [!NOTE]
@@ -35,13 +37,13 @@ For more complex triggers that use `exclude` or `batch`, you must use the full s
 trigger:
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/old*
 ```
 
-In the above example, the pipeline will be triggered if a change is pushed to master or to any releases branch. However, it won't be triggered if a change is made to a releases branch that starts with `old`. 
+In the above example, the pipeline will be triggered if a change is pushed to `main` or to any releases branch. However, it won't be triggered if a change is made to a releases branch that starts with `old`. 
 
 If you specify an `exclude` clause without an `include` clause, then it is equivalent to specifying `*` in the `include` clause.
 
@@ -79,10 +81,13 @@ trigger:
   batch: true
   branches:
     include:
-    - master
+    - main
 ```
 
-To clarify this example, let us say that a push `A` to master caused the above pipeline to run. While that pipeline is running, additional pushes `B` and `C` occur into the repository. These updates do not start new independent runs immediately. But after the first run is completed, all pushes until that point of time are batched together and a new run is started. 
+> [!NOTE]
+> `batch` is not supported in repository resource triggers.
+
+To clarify this example, let us say that a push `A` to `main` caused the above pipeline to run. While that pipeline is running, additional pushes `B` and `C` occur into the repository. These updates do not start new independent runs immediately. But after the first run is completed, all pushes until that point of time are batched together and a new run is started. 
 
 >[!NOTE]
 > If the pipeline has multiple jobs and stages, then the first run should still reach a terminal state by completing or skipping all its jobs and stages before the second run can start. For this reason, you must exercise caution when using this feature in a pipeline with multiple stages or approvals. If you wish to batch your builds in such cases, it is recommended that you split your CI/CD process into two pipelines - one for build (with batching) and one for deployments.
@@ -96,7 +101,7 @@ You can specify file paths to include or exclude.
 trigger:
   branches:
     include:
-    - master
+    - main
     - releases/*
   paths:
     include:
@@ -105,12 +110,20 @@ trigger:
     - docs/README.md
 ```
 
-When you specify paths, you must explicitly specify branches to trigger on. You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the branch filter.
+When you specify paths, you must explicitly specify branches to trigger on if you are using Azure DevOps Server 2019.1 or lower. You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the branch filter. If you are using Azure DevOps Server 2020 or newer, you can omit `branches` to filter on all branches in conjunction with the path filter.
 
-> **Tips:**
->  * Paths are always specified relative to the root of the repository.
->  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
->  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
->  * The order of path filters doesn't matter.
->  * Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
->  * You cannot use [variables](../../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
+::: moniker-end
+
+::: moniker range="> azure-devops-2020"
+
+Wilds cards are supported for path filters. For instance, you can include all paths that match `src/app/**/myapp*`. You can use wild card characters (`**`, `*`, or `?)` when specifying path filters.
+
+::: moniker-end
+
+
+* Paths are always specified relative to the root of the repository.
+* If you don't set path filters, then the root folder of the repo is implicitly included by default.
+* If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+* The order of path filters doesn't matter.
+* Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
+* You cannot use [variables](../../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).

@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 title: Create a service hook for Azure DevOps Services and Azure DevOps Server with Datadog.
 description: Use Datadog with your Azure DevOps Services organization

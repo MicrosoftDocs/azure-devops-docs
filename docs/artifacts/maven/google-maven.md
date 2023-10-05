@@ -1,7 +1,7 @@
 ---
 title: Google Maven Repository upstream source
 description: How to add Google Maven Repository upstream source
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 03/03/2022
 monikerRange: '<= azure-devops'
@@ -22,7 +22,7 @@ With Azure Artifacts, developers can enable upstream sources to store packages f
 
 1. Select **Add Upstream**.
 
-1. Select **Public source**, and then select **Google Maven Repository (https://dl.google.com/android/maven2/)** from the dropdown menu.
+1. Select **Public source**, and then select **Google Maven Repository (https://maven.google.com/web/index.html)** from the dropdown menu.
 
     :::image type="content" source="../media/google-maven-repository.png" alt-text="A screenshot showing how to add Google Maven Repository.":::
 

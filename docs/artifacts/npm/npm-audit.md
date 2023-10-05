@@ -1,70 +1,114 @@
 ---
-title: Use npm audit with Azure Artifacts
+title: Enhance Project Security with npm audit
 description: Use npm audit to scan for security vulnerabilities
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 08/02/2021
+ms.date: 09/18/2023
 monikerRange: 'azure-devops'
+"recommendations": "true"
 ---
 
-# Use npm audit
+# Use npm audit to detect package vulnerabilities
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-The *npm audit* command scans your project for security vulnerabilities and provides a detailed report of any identified anomaly. Performing security audits is an essential part in identifying and fixing vulnerabilities in the project's dependencies. Fixing these vulnerabilities could prevent things like data loss, service outages, and unauthorized access to sensitive information.
+The npm audit command conducts a comprehensive scan of your project to detect potential security vulnerabilities. It then generates a detailed report highlighting any identified issues. Performing security audits is a crucial step in identifying and addressing vulnerabilities within the project's dependencies. Addressing these vulnerabilities can help prevent issues such as data loss, service disruptions, and unauthorized access to sensitive information.
 
-Azure DevOps does not support *npm audit*, if you try to run the default *npm audit* command from your pipeline, the task will fail with the following message: *Unexpected end of JSON input while parsing...*.
-
-As a workaround, you can run *npm audit* with the registry argument `--registry=https://registry.npmjs.org/`. This will route the *npm audit* command directly to the public registry.
+Azure Pipelines does not support npm audit, if you attempt to use the regular npm audit command in your pipeline, it will fail with the following message: *Unexpected end of JSON input while parsing...*. As a workaround, you can run npm audit with the registry argument `--registry=https://registry.npmjs.org/`. This routes it straight to the public registry.
 
 >[!WARNING]
-> Running *npm audit* will forward all the packages' names from your *package.json* to the public registry.
+> Running npm audit will send the names of all packages listed in your *package.json* to the public registry.
 
 ## Run npm audit from your pipeline
 
-Select the YAML or the classic tab to learn how to run npm audit from you Pipeline.
-
 # [YAML](#tab/yaml)
 
-Add the following task to your yaml pipeline to scan for security vulnerabilities.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-```yaml
-steps:
-- task: Npm@1
-  displayName: 'npm audit'
-  inputs:
-    command: custom
-    customCommand: 'audit --registry=https://registry.npmjs.org/'
-```
+1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline.
 
-- **command**: the npm command to run.
-- **customCommand**: Required when command == custom.
+1. Add the following task to your yaml pipeline to run npm audit and scan for security vulnerabilities.
+
+    ```yaml
+    steps:
+    - task: Npm@1
+      displayName: 'npm audit'
+      inputs:
+        command: custom
+        customCommand: 'audit --registry=https://registry.npmjs.org/'
+    ```
+
+1. You can also simultaneously scan and upgrade to non-vulnerable package versions, as follows:
+
+    ```yaml
+    steps:
+    - task: Npm@1
+      displayName: 'npm audit & fix'
+      inputs:
+        command: custom
+        customCommand: 'audit fix --registry=https://registry.npmjs.org/ --package-lock-only'
+    ```
 
 # [Classic](#tab/classic)
 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline.
+
 1. From your pipeline definition, select the `+` sign to add a task to your agent job.
 
-    :::image type="content" source="media/add-new-task.png" alt-text="Screenshot showing how to add a new task to the agent job":::
+1. Search for the **npm** task, and then select **Add** to add it to your agent job.
 
-1. Search for the **npm** task. Select **Add** to add it to your agent job.
+1. Provide a **Display name** for your task, and select **custom** from the **Command** dropdown menu.
 
-1. Fill out the required fields as follows:
+1. Paste your custom command into the **Command and arguments** text box:
 
-    :::image type="content" source="media/npm-audit-task.png" alt-text="Screenshot showing the npm custom task to run npm audit":::
+    1. Use the following command to solely scan for security vulnerabilities:
+    
+       ```Command
+       audit --registry=https://registry.npmjs.org/
+       ```
+
+    1. If you wish to both scan and attempt to upgrade to non-vulnerable package versions, use the following command:
+    
+    ```Command
+    audit fix --registry=https://registry.npmjs.org/ --package-lock-only
+    ```
+
+:::image type="content" source="./media/npm-audit-classic-pipeline.png" alt-text="A screenshot showing the npm audit task in a classic pipeline.":::
 
 ---
 
-## Run npm audit on your development machine
+## Run npm audit on your development environment 
 
-To run npm audit locally, run the following command in an elevated command prompt window:
+To perform an npm audit locally on your development environment and optionally attempt to upgrade to non-vulnerable package versions, follow these steps:
 
-```Command
-npm audit --registry=https://registry.npmjs.org/
-```
+1. Open a command prompt window, and navigate to the root directory of your project where your *package.json* file is located.
+
+1. Run the following command to generate the *package-lock.json* file. This command analyzes your *package.json* file, installs the required dependencies, and generates the *package-lock.json* file.
+
+    ```Command
+    npm i --package-lock-only
+    ```
+
+1. Run the `npm audit` command to scan your project for security vulnerabilities and provide a report.
+
+    ```Command
+    npm audit --registry=https://registry.npmjs.org/
+    ```
+
+1. If you also want to attempt to upgrade to non-vulnerable package versions, use the following command instead:
+
+    ```Command
+    audit fix --registry=https://registry.npmjs.org/ --package-lock-only
+    ```
+
+Here's an example of the output you might see in your command prompt window after running the npm audit command:
+
+:::image type="content" source="./media/npm-audit-report.png" alt-text="A screenshot of a local npm audit security report.":::
 
 ## Related articles
 
-- [npm quickstart](../get-started-npm.md).
-- [Publish npm packages with Azure Pipelines](../../pipelines/artifacts/npm.md).
-- [Artifacts storage consumption](../artifact-storage.md)
+- [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md).
+- [Use Npm scopes in Azure Artifacts](./scopes.md).
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md).

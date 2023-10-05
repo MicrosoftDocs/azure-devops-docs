@@ -2,11 +2,11 @@
 title: Manage personal access tokens using policies
 titleSuffix: Azure DevOps
 description: Learn how to turn on policies that restrict the scope and lifespan of newly created user PATs, turn off automatic revocation of leaked PATs.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 04/18/2022
+ms.date: 03/29/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to turn on the Azure Active Directory (Azure AD) policies that restrict the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps. You can also manage automatic revocation of leaked PATs. These policies can be turned on or off. Learn the default behavior for each policy in its own section of this article.
+You can limit the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps by enabling Azure Active Directory (Azure AD) policies. You can also manage automatic revocation of leaked PATs. Learn the default behavior for each policy in its own section of this article.
 
 > [!IMPORTANT]
 > Existing PATs, created via both the UI and APIs, apply per the remainder of their lifespan. Update your existing PATs to comply with the new restriction, and then they can be successfully renewed.
@@ -43,8 +43,6 @@ The Azure DevOps Administrator in Azure AD restricts users from creating global 
 ## Restrict creation of full-scoped PATs
 
 The Azure DevOps Administrator in Azure AD restricts users from creating full-scoped PATs. Enabling this policy means new PATs must be limited to a specific custom defined set of scopes. By default, this policy is set to *off*.
-
-[!INCLUDE [warning-api-scopes](includes/warning-api-scopes.md)]
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -96,7 +94,7 @@ The [Azure DevOps Administrator in Azure AD](azure-ad-tenant-policy-restrict-org
 
 3. In the Azure Active Directory tab, find the *Automatically revoke leaked personal access tokens* policy and move the toggle to *off*.
 
-The policy is disabled and any PATs that get checked into public GitHub repositories will remain.
+The policy is disabled and any PATs that get checked into public GitHub repositories remain.
 
 ## Next steps
 

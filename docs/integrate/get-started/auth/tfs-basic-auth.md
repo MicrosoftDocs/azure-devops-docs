@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 title: Use the Cross-platform CLI for Azure DevOps 
 description: Use the Cross-platform CLI for Azure DevOps, using personal access tokens (PATs).

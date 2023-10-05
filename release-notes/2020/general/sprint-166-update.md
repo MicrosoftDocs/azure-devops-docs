@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - General Sprint 166 Update
 description: See the Sprint 166 general updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 03/16/2020
 ---
 

@@ -2,10 +2,10 @@
 title: OData batch support 
 titleSuffix: Azure DevOps 
 description: Learn how to write good OData queries for Analytics for Azure DevOps.
-ms.technology: devops-analytics
-ms.reviewer: prprice
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.reviewer: desalg
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2020

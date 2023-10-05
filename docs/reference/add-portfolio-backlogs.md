@@ -2,14 +2,14 @@
 title: Add portfolio backlogs
 titleSuffix: Azure DevOps
 description: Add up to two additional work item types and portfolio backlogs in Azure DevOps Services
-ms.technology: devops-agile
-ms.custom: process
+ms.service: azure-devops-boards
+ms.custom: process, engagement-fy23
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops' 
-ms.date: 12/15/2017  
+ms.date: 01/17/2023 
 ---
 
 # Add a portfolio backlog level
@@ -57,7 +57,7 @@ This article walks you through adding a portfolio backlog to a project based on 
 
 You can apply the same steps if you work with a project based on the [Scrum](../boards/work-items/guidance/scrum-process.md) or [CMMI](../boards/work-items/guidance/cmmi-process.md) process. When you're done, you'll get to manage your portfolio of projects by grouping work within these four levels: User Stories (or Product backlog items or Requirements), Features, Epics, and Initiatives.   
 
-For an overview of the three system processes, see [Choose a process](../boards/work-items/guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
+For more informaiton, see [About processes and process templates](../boards/work-items/guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
 
 <a id="export-files">  </a>
 
@@ -76,43 +76,43 @@ For an overview of the three system processes, see [Choose a process](../boards/
 The easiest way to create a work item type (WIT) is to copy an existing one, rename it, and edit it to support your requirements. In this example, we copy the Epic WIT and label it Initiative.  
 
 <ol>
-<li>Copy the <code>Epic</code> WIT definition to an XML file labeled <code>Initiative</code>. (The Epic.xml file is located in the WorkItem Tracking folder of the ProcessTemplate folder.)</li>
+- Copy the `Epic` WIT definition to an XML file labeled `Initiative`. (The Epic.xml file is located in the WorkItem Tracking folder of the ProcessTemplate folder.)</br>
 
-<li>Edit the file named <code>Initiative</code>. <br/> 
+- Edit the file named `Initiative`. <br/> 
 <ol type="a">
-<li>Rename the WIT. Replace <code>WORKITEMTYPE name=&quot;Epic&quot;</code> with <code>WORKITEMTYPE name=&quot;Initiative&quot;</code>, and update the description.<br/>
-<code>&lt;WORKITEMTYPE name=&quot;Initiative&quot; &gt;</code>  <br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;DESCRIPTION&gt;Initiatives help program managers to effectively manage and organize work across several teams &gt;</code>  <br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;/DESCRIPTION&gt;</code> <br/> 
-<code>. . .</code>  <br/>
-<code>&lt;/WORKITEMTYPE&gt;</code>  <br/>
-</li>
-<li>Add any <a href="add-modify-field.md" data-raw-source="[custom fields that you want to track](add-modify-field.md)">custom fields that you want to track</a> using this WIT. </li>
-<li>Rename the <code>Tab</code> section named <code>Features</code> to <code>Epics</code> and replace <code>Filter WorkItemType=&quot;Feature&quot;</code> with <code>Filter WorkItemType=&quot;Epic&quot;</code>. <br/>
-<code>&lt;Tab Label=&quot;Epics&quot;&gt;</code><br/>
-<code>&lt;Control Type=&quot;LinksControl&quot; Name=&quot;Hierarchy&quot;&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;LinksControlOptions&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;WorkItemLinkFilters FilterType=&quot;include&quot;&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;Filter LinkType=&quot;System.LinkTypes.Hierarchy&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;/WorkItemLinkFilters&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;WorkItemTypeFilters FilterType=&quot;include&quot;&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;Filter WorkItemType=&quot;Epic&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;/WorkItemTypeFilters&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;ExternalLinkFilters FilterType=&quot;excludeAll&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumns&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumn RefName=&quot;System.ID&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumn RefName=&quot;System.Title&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumn RefName=&quot;System.AssignedTo&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumn RefName=&quot;System.State&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;LinkColumn LinkAttribute=&quot;System.Links.Comment&quot; /&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;/LinkColumns&gt;</code><br/>
-&nbsp;&nbsp;&nbsp;<code>&lt;/LinksControlOptions&gt;</code><br/>
-<code>&lt;/Control&gt;</code><br/>
-<code>&lt;/Tab&gt;</code><br/>
+- Rename the WIT. Replace `WORKITEMTYPE name=&quot;Epic&quot;` with `WORKITEMTYPE name=&quot;Initiative&quot;`, and update the description.<br/>
+`&lt;WORKITEMTYPE name=&quot;Initiative&quot; &gt;`  <br/>
+&nbsp;&nbsp;&nbsp;`&lt;DESCRIPTION&gt;Initiatives help program managers to effectively manage and organize work across several teams &gt;`  <br/>
+&nbsp;&nbsp;&nbsp;`&lt;/DESCRIPTION&gt;` <br/> 
+`. . .`  <br/>
+`&lt;/WORKITEMTYPE&gt;`  <br/>
+</br>
+- Add any <a href="add-modify-field.md" data-raw-source="[custom fields that you want to track](add-modify-field.md)">custom fields that you want to track</a> using this WIT. </br>
+- Rename the `Tab` section named `Features` to `Epics` and replace `Filter WorkItemType=&quot;Feature&quot;` with `Filter WorkItemType=&quot;Epic&quot;`. <br/>
+`&lt;Tab Label=&quot;Epics&quot;&gt;`<br/>
+`&lt;Control Type=&quot;LinksControl&quot; Name=&quot;Hierarchy&quot;&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;LinksControlOptions&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;WorkItemLinkFilters FilterType=&quot;include&quot;&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;Filter LinkType=&quot;System.LinkTypes.Hierarchy&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;/WorkItemLinkFilters&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;WorkItemTypeFilters FilterType=&quot;include&quot;&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;Filter WorkItemType=&quot;Epic&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;/WorkItemTypeFilters&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;ExternalLinkFilters FilterType=&quot;excludeAll&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumns&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumn RefName=&quot;System.ID&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumn RefName=&quot;System.Title&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumn RefName=&quot;System.AssignedTo&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumn RefName=&quot;System.State&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;LinkColumn LinkAttribute=&quot;System.Links.Comment&quot; /&gt;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&lt;/LinkColumns&gt;`<br/>
+&nbsp;&nbsp;&nbsp;`&lt;/LinksControlOptions&gt;`<br/>
+`&lt;/Control&gt;`<br/>
+`&lt;/Tab&gt;`<br/>
 <p>With this change, you cause the tab control to exclusively show or link to epics as child work items of the initiative.  </p>
-</li>
+</br>
 </ol>
-</li>
+</br>
 </ol>
 
 
@@ -261,11 +261,11 @@ If you want to add another WIT to your backlogs or boards, see [work item types 
 
 To learn more about the syntax for a definition file or command line tool, see these topics:  
 
-- [All WITD XML elements reference](xml/all-witd-xml-elements-reference.md)  
-- [Categories XML element reference](xml/categories-xml-element-reference.md)  
+- [All WITD XML elements reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference)  
+- [Categories XML element reference](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)  
 - [Process configuration XML element reference](xml/process-configuration-xml-element.md)  
 - [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md)  
-- [Import and export categories](witadmin/witadmin-import-export-categories.md)  
+- [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories)  
 - [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md)  
 
 Otherwise, see [Customize your work tracking experience](customize-work.md) to access other configuration and customization options available to you.  

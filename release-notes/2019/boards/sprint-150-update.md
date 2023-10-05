@@ -3,7 +3,6 @@ title: Azure Boards - Sprint 150 Update
 description: See the Sprint 150 feature update for Azure Boards including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 04/08/2019
 ---
 

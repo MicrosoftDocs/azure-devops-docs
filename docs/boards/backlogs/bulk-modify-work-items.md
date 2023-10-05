@@ -2,11 +2,11 @@
 title: Edit user stories and other work items in bulk in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to quickly make the same change to many work items in Azure Boards using the bulk modify feature. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: "boards-backlogs, seodec18, linked-from-support" 
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -16,10 +16,10 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Use bulk modify when you need to quickly make the same change to many work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value.  
+Use bulk modify when you need to quickly make the same change to many work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that contain the same value.  
 
 > [!TIP]    
-> To add work items in bulk or update multiple fields with different values, use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). You can't complete a bulk add of work items through the web portal.   
+> To add work items in bulk or update multiple fields with different values, use [CSV Import](../queries/import-work-items-from-csv.md). You can't complete a bulk add of work items through the web portal.   
 
 With bulk modify, you may edit fields and add or remove tags. You can also reassign work or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions you've been granted.
 
@@ -36,7 +36,7 @@ In this article you'll learn:
 
 ## Supported tasks
 
-All of the following actions can be completed by team members that belong to the Contributors group. Members provided with Stakeholder access can run multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
+All of the following actions can be completed by team members that belong to the Contributors group. Members provided with Stakeholder access can run multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For more information, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -91,7 +91,7 @@ All of the following actions can be completed by team members that belong to the
    :::column span="1":::
    - [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup>
    - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)
-   - [Email selected item(s)](../queries/share-plans.md)
+   - [Send email with selected item(s)](../work-items/email-work-items.md)
    - [Change work item type](move-change-type.md#change-type)<sup>1</sup>
    - [Move items to another project](move-change-type.md#move)<sup>1, 3</sup>
    :::column-end:::
@@ -99,7 +99,7 @@ All of the following actions can be completed by team members that belong to the
 
 
 > [!NOTE]  
-> 1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
+> 1. You can't perform certain functions on work items whose [work item types (WITs)](../work-items/about-work-items.md) belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 > 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
 > 3. You must be a member of the Project Administrators group or be granted explicit permissions to [**Move work items**](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).  
 
@@ -159,7 +159,7 @@ All of the following actions can be completed by team members that belong to the
    :::column span="1":::
    - [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup>
    - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)
-   - [Email selected item(s)](../queries/share-plans.md)
+   - [Send email with selected item(s)](../work-items/email-work-items.md)
    
    :::column-end:::
 :::row-end:::
@@ -190,12 +190,12 @@ The menu options available to you change depending on the platform you work from
    :::column span="1":::
    **Backlog menu**  
    
-   ![Backlog multi-select menu](media/bulk-m-backlog-menu-options-ts.png)
+   ![Screenshot of Backlog multi-select menu.](media/bulk-m-backlog-menu-options-ts.png)
    :::column-end:::
    :::column span="1":::
    **Query results multi-select menu**  
    
-   ![Query results multi-select menu](media/bulk-m-query-results-menu-options-ts.png)
+   ![Screenshot of Query results multi-select menu.](media/bulk-m-query-results-menu-options-ts.png)
    :::column-end:::
 :::row-end:::
 
@@ -212,13 +212,13 @@ Here, we use the context menu to move several non-sequential items to the curren
 ::: moniker range=">= azure-devops-2019"  
 
 > [!div class="mx-imgBorder"]  
-> ![Product backlog, Open context menu, Move several backlog items to a different iteration](media/bulk-modify/move-iteration.png)
+> ![Screenshot of Product backlog, Open context menu, Move several backlog items to a different iteration.](media/bulk-modify/move-iteration.png)
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
 
-![Backlog page, multi-select items, Open context menu, Move to iteration](media/bulk-modify-multi-select-ts.png)
+![Screenshot of Backlog page, multi-select items, Open context menu, Move to iteration.](media/bulk-modify-multi-select-ts.png)
 
 ::: moniker-end
 
@@ -234,7 +234,7 @@ Here, we use the context menu to move several non-sequential items to the curren
 With work items selected, open the context menu for any selected item, and reassign all of them. By doing reassigning them, you can quickly assign them to a member of your team or to another sprint or iteration. 
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki view keyboard shortcuts popup](media/bulk-modify/assign-from-query.png)  
+> ![Screenshot of Queries Results page, bulk modify, Assign to selection from More actions menu.](media/bulk-modify/assign-from-query.png)  
 
 To learn more about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow, or Kanban board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
 
@@ -249,12 +249,12 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Edit work items dialog](media/bulk-modify/edit-work-items-new-text-editor.png)  
+	> ![Screeenshot of Edit work items dialog.](media/bulk-modify/edit-work-items-new-text-editor.png)  
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store.  The **Save items** button may be in a different place in the UI than shown in the picture below, depending on the layout of your browser and the specific version in use.
 
     > [!div class="mx-imgBorder"]  
-    > ![Query results page, save bulk modified items](media/bulk-modify/query-results-bulk-save-items.png) 
+    > ![Screenshot of Query results page, save bulk modified items.](media/bulk-modify/query-results-bulk-save-items.png) 
 
 ::: moniker-end
 
@@ -262,11 +262,11 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
-    ![TFS 2017, Query results page, bulk edit fields](media/bulk-modify-edit-fields-ts.png)  
+    !Screenshot of Query results page, bulk edit fields.](media/bulk-modify-edit-fields-ts.png)  
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store.  
 
-    ![Azure Boards and TFS 2017, Query results page, save bulk modified items](media/bulk-modify-save-ts.png)
+    ![Screenshot of Query results page, save bulk modified items, TFS 2018.](media/bulk-modify-save-ts.png)
 
 ::: moniker-end
 
@@ -293,7 +293,7 @@ From the Edit work items dialog, select **Tags (Add)** or **Tags (Remove)**.
 Here we choose to add the *Service* tag to the selected work items. 
 
 > [!div class="mx-imgBorder"]
-> ![Edit work items dialog, Add tags](media/bulk-modify/edit-tags-dialog.png)
+> ![Screenshot of Edit work items dialog, Add tags.](media/bulk-modify/edit-tags-dialog.png)
 
 
 ## Related articles

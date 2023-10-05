@@ -3,12 +3,12 @@ title: Import migrate process from on-premises to Azure DevOps
 titleSuffix: Azure DevOps
 description: How to guide for preparing an on-premises collection to importing it to the cloud
 ms.topic: how-to
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/07/2021
+ms.date: 08/18/2022
 ---
 
 # Validation and import processes
@@ -18,14 +18,25 @@ ms.date: 10/07/2021
 This article walks you through the preparation that's required to get an import to Azure DevOps Services ready to run. If you encounter errors during the process, see [Troubleshoot import and migration errors](migration-troubleshooting.md).
 
 
-> [!Note]
+> [!NOTE]
 > * Visual Studio Team Services (VSTS) is now [Azure DevOps Services.](../user-guide/about-azure-devops-services-tfs.md#visual-studio-team-services-is-now-azure-devops-services)
 > * With the release of Azure DevOps Server 2019, the TFS Database Import Service has been rebranded as the data migration tool for Azure DevOps. This change includes TfsMigrator (Migrator) becoming the data migration tool. This service works exactly the same as the former import service. If you're running an older version of on-premises Azure DevOps Server with the TFS branding, you can still use this feature to migrate to Azure DevOps as long as you've upgraded to one of the supported server versions.
 > * Before you begin the import tasks, check to ensure that you're running a [supported version of Azure DevOps Server](migration-overview.md#supported-azure-devops-server-versions-for-import). 
 
 We recommend that you use the [Step-by-step migration guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to technical documentation, tools, and best practices.
 
+## Prerequisites 
+
+- You must set up an Azure Active Directory tenant as described [Azure AD Connect sync: Make a change to the default configuration](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration). 
+  The data migration tool sets up a link to your Azure Active Directory tenant when your Azure DevOps Services organization is created as part of the beginning of the import process. 
+
+	By synchronizing your on-premises Active Directory with Azure Active Directory, your team
+	members will be able to use the same credentials to authenticate and your Azure DevOps
+	Services administrators will be able to leverage your Active Directory groups for setting
+	permissions within your Azure DevOps Services organization. To setup the synchronization, you will want to use the Azure AD Connect technology.  
+
 <a id="validate-collection"></a>
+
 ## Validate a collection 
 
 After you've confirmed that you're running the latest version of Azure DevOps Server, your next step is to validate each collection that you want to migrate to Azure DevOps Services. 
@@ -51,19 +62,19 @@ You run the validation by using the data migration tool. To start, [download the
 1. Because this is your first time validating a collection, let's keep it simple. Your command should have the following structure:
 
 	```cmdline
-	Migrator validate /collection:{collection URL}
+	Migrator validate /collection:{collection URL} /tenantDomainName:{name} /region:{region}
 	```
 
-	For example, to run against the default collection the command would look like:
+	Where `{name}` provides the name of your Azure Active Directory tenant. For example, to run against the *DefaultCollection* and the *fabrikam* tenant, the command would look like:
 
 	```cmdline
-	Migrator validate /collection:http://localhost:8080/DefaultCollection
+	Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region}
 	```
 
 1. To run the tool from a machine other than the Azure DevOps Server, you need the **/connectionString** parameter. The connection string parameter points to your Azure DevOps Server configuration database. As an example, if the validate command is being run by the Fabrikam corporation, the command would look like:
 
 	```cmdline
-	Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
+	Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region} /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
 	```
 
 	> [!Important]
@@ -108,7 +119,7 @@ Unlike the `validate` command, `prepare` *does* require an internet connection, 
 Migrator prepare /help
 ```
 
-Included in the help documentation are instructions and examples for running Migrator from the Azure DevOps Server instance itself and a remote machine. If you're running the command from one of the Azure DevOps Server instance's application tiers, your command should have the following structure:
+Included in the help documentation are instructions and examples for running the `Migrator` command from the Azure DevOps Server instance itself and a remote machine. If you're running the command from one of the Azure DevOps Server instance's application tiers, your command should have the following structure:
 
 
 ```cmdline
@@ -183,12 +194,15 @@ Azure DevOps Services is available in several [Azure regions](https://azure.micr
 | --- | --- | --- |
 | United States | Central United States | CUS |
 | Europe | Western Europe | WEU |
-| United Kingdom | United Kingdom South | UKS |
+| United Kingdom | United Kingdom South | UKS| 
 | Australia | Australia East | EAU |
 | South America | Brazil South | SBR |
 | Asia Pacific | South India | MA |
 | Asia Pacific | Southeast Asia (Singapore) | SEA |
 | Canada | Central Canada | CC |
+
+<!--- removing | United Kingdom | United Kingdom South | UKS | per https://dev.azure.com/mseng/TechnicalContent/_workitems/edit/1978987/ --> 
+
 
 <br> 
 
@@ -282,11 +296,11 @@ By now, you have everything ready to execute on your import. You need to schedul
 Step 1: [Take the collection offline and detach it](#step-1-detach-your-collection).  
 
 > [!NOTE] 
-> If the data migration tool displays a warning that you can't use the DACPAC method, you have to perform the import by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions provided in [Import large collections](migration-import-large-collections.md) and then continue to section [determine the import type](#determine-the-import-type).
+> The collection size limit for the DACPAC method is 150 GB. If the data migration tool displays a warning that you can't use the DACPAC method, you have to perform the import by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions provided in [Import large collections](migration-import-large-collections.md) and then continue to section [determine the import type](#determine-the-import-type).
 
 Step 2: [Generate a DACPAC file from the collection you're going to import](#step-2-generate-a-dacpac-file).  
 Step 3: [Upload the DACPAC file and import files to an Azure storage account](#step-3-upload-the-dacpac-file).  
-Step 4: [Generate an SAS key to the storage account](#step-4-generate-an-sas-key).  
+Step 4: [Generate an SAS token to access the storage account](#step-4-generate-an-sas-token).  
 Step 5: [Complete the import specification](#step-5-complete-the-import-specification). 
 
 > [!NOTE] 
@@ -453,6 +467,7 @@ Azure DevOps Services is available in multiple [regions](https://azure.microsoft
 | --- | --- |
 | Central United States | Central United States |
 | Western Europe | Western Europe |
+| United Kingdom | United Kingdom South | 
 | Australia East | Australia East |
 | Brazil South | Brazil South |
 | India South | India South |
@@ -470,40 +485,16 @@ After the import has finished, you can delete the blob container and accompanyin
 > [!NOTE] 
 > If your DACPAC file is larger than 10 GB, we recommend that you use AzCopy. AzCopy has multithreaded upload support for faster uploads.
 
-### Step 4: Generate an SAS key
+### Step 4: Generate an SAS token
 
-A [shared access signature (SAS) key](/azure/storage/common/storage-sas-overview) provides delegated access to resources in a storage account. The key allows you to give Microsoft the lowest level of privilege that's required to access your data for executing the import. 
+A [shared access signature (SAS) token](/azure/storage/common/storage-sas-overview) provides delegated access to resources in a storage account. The token allows you to give Microsoft the lowest level of privilege that's required to access your data for executing the import. 
 
-The recommended way to generate an SAS key is to use [Azure Storage Explorer](https://storageexplorer.com/). With Storage Explorer, you can easily create container-level SAS keys. This is essential, because the data migration tool does *not* support account-level SAS keys. 
+SAS tokens can be [generated using the Azure portal](/azure/storage/blobs/blob-containers-portal#generate-a-shared-access-signature). From a security point-of-view, we recommend:
 
-> [!NOTE] 
-> Do *not* generate an SAS key from the Azure portal. Azure portal-generated SAS keys are account scoped and don't work with the data migration tool. 
-
-After you install Storage Explorer, you can generate an SAS key by doing the following:
-
-1. Open Storage Explorer.
-1. Add an account.
-1. Select **Use a storage account name and key**, and then select **Connect**.
-
-   ![Screenshot of the Connect to Azure Storage pane.](media/migration-import/StorageExplorerAddAccount.png)
-
-1. On the **Attach External Storage** pane, enter your storage account name, provide one of your two [primary access keys](/azure/storage/common/storage-create-storage-account), and then select **Connect**.
-
-   ![Screenshot of the Attach External Storage pane for enter information to connect to the storage account.](media/migration-import/StorageExplorerConnectAccount.png)
-
-1. On the left pane, expand **Blob Containers**, right-click the container that stores your import files, and then select **Get Shared Access Signature**.
-
-   ![Screenshot of the command for selecting the container to create an SAS key.](media/migration-import/StorageExplorerGetSAS.png)
-
-1. For **Expiry time**, set the expiration date for seven days in the future.
-
-    ![Set the required properties and create the SAS key](media/migration-import/StorageExplorerCreateSAS.png) 
-
-1. Under **Permissions** for your SAS key, select the **Read** and **List** check boxes. Write and delete permissions aren't required. 
-
-    > [!NOTE]
-    > * Copy and store this SAS key to place in your import specification file in the next step.
-    > * Treat this SAS key as a secret. It provides access to your files in the storage container. 
+1. Selecting only **Read** and **List** as permissions for your SAS token. No other permissions are required.
+2. Setting an expiry time no further than seven days into the future.
+3. [Restrict access to Azure DevOps Services IPs only](migration-restricting-access-to-azure-devops-services.md).
+4. Placing the SAS token in a secure location.
 
 ### Step 5: Complete the import specification
 
@@ -523,7 +514,15 @@ Using the Fabrikam example, the final import specification file should look like
 
 ### Restrict access to Azure DevOps Services IPs only
 
-We highly recommend that you restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You do this by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your storage account depend on the region you're importing into. Use the IpList option to get the list of IPs that need to be granted access.
+See the [Restrict access to Azure DevOps Services IPs only](migration-restricting-access-to-azure-devops-services.md) page for more details.
+
+#### Option 1: Using Service Tags
+
+You can easily allow connections from all Azure DevOps Services regions by adding the `azuredevops` [Service Tag](/azure/virtual-network/service-tags-overview) to your network security groups or firewalls either through the portal or programmatically.
+
+#### Option 2: Using IpList
+
+Use the `IpList` command to get the list of IPs that need to be granted access to allow connections from a specific Azure DevOps Services region.
 
 Included in the help documentation are instructions and examples for running Migrator from the Azure DevOps Server instance itself and a remote machine. If you're running the command from one of the Azure DevOps Server instance's application tiers, your command should have the following structure:
 
@@ -531,8 +530,7 @@ Included in the help documentation are instructions and examples for running Mig
 Migrator IpList /collection:{CollectionURI} /tenantDomainName:{name} /region:{region}
 ```
 
-> [!NOTE] 
-> Alternatively, you can also use [Service Tags](/azure/virtual-network/service-tags-overview) in place of explicit IP ranges. Azure Service Tags are a convenient way for customers to manage their networking configuration to allow traffic from specific Azure services. Customers can easily allow access by adding the tag name azuredevops to their network security groups or firewalls either through the portal or programmatically. 
+You can add the list of IPs to your network security groups or firewalls either through the portal or programatically.
 
 ### Determine the import type
 

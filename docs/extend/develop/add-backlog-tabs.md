@@ -2,7 +2,7 @@
 title: Add tabs on backlog pages | Extensions for Azure DevOps Services
 description: Learn how to create a web page in an iframe, and host it in Azure DevOps Services as a tab on the backlog pages.
 ms.assetid: 3D0B51DA-66AA-45C7-B9F1-08973CFF7E5E
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.author: chcomley
@@ -95,7 +95,7 @@ For your files, set `addressable` to `true` unless you include other files that 
 	
 ## Example registeredObjectId
 ```javascript
-VSS.register("backlogTabObject", {
+SDK.register("backlogTabObject", {
     pageTitle: function(state) {
         return "Hello Tab";
     },

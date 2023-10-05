@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Basic styles for widgets | Extensions for Azure DevOps
 description: Styles from Widget SDK to be used in widgets on dashboards in Azure DevOps.
 ms.assetid: E5CB346F-E3EA-4A47-B10C-FFC300766585
@@ -38,7 +38,7 @@ It includes styles for font-family, font-size and styles for common form element
 > For these styles to apply to your widget, you need to add a "widget" class on the HTML element that contains your widget. All styles from the sdk-widgets.css are scoped to this class. 
 Similarly, add a "widget-configuration" class on the HTML element that contains your widget configuration. All styles from the sdk-widget-configuration.css are scoped to this class.
 
-Download the [samples](https://github.com/Microsoft/vsts-extension-samples/tree/master/widgets) to get started or use the code snippets provided below. 
+Download the [extension sample](https://github.com/Microsoft/azure-devops-extension-sample). 
 
 ### Widget body, title and description
 

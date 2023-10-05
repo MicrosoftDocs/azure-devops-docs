@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 05/31/2022
+ms.date: 09/08/2023
 monikerRange: azure-devops
 ---
 
@@ -340,7 +340,8 @@ pr:
     - docs/README.md
 ```
 > **Tips:**
->  * Wild cards are not supported with path filters.
+>  * Azure Pipelines posts a neutral status back to GitHub when it decides not to run a validation build because of a path exclusion rule. This provides a clear direction to GitHub indicating that Azure Pipelines has completed its processing. For more information, see [Post neutral status to GitHub when a build is skipped](/azure/devops/release-notes/2021/sprint-194-update#post-neutral-status-to-github-when-a-build-is-skipped).
+>  * [Wild cards are now supported with path filters](/azure/devops/release-notes/2021/sprint-192-update#support-for-wild-cards-in-path-filters).
 >  * Paths are always specified relative to the root of the repository.
 >  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
 >  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
@@ -435,7 +436,7 @@ To configure mandatory validation builds for a GitHub repository, you must be it
 
 ### Contributions from external sources
 
-If your GitHub repository is open source, you can make your Azure DevOps project [public](../../organizations/public/create-public-project.md) so that anyone can view your pipeline's build results, logs, and test results without signing in. When users outside your organization fork your repository and submit pull requests, they can view the status of builds that automatically validate those pull requests.
+If your GitHub repository is open source, you can [make your Azure DevOps project public](../../organizations/projects/make-project-public.md) so that anyone can view your pipeline's build results, logs, and test results without signing in. When users outside your organization fork your repository and submit pull requests, they can view the status of builds that automatically validate those pull requests.
 
 You should keep in mind the following considerations when using Azure Pipelines in a public project when accepting contributions from external sources.
 
@@ -470,6 +471,26 @@ By default with GitHub pipelines, secrets associated with your build pipeline ar
   * Build [variables](../process/variables.md#secret-variables) marked **secret**
 
 To bypass this precaution on GitHub pipelines, enable the **Make secrets available to builds of forks** check box. Be aware of this setting's effect on security.
+
+> [!NOTE]
+> When you enable fork builds to access secrets, Azure Pipelines by default restricts the access token used for fork builds.
+> It has more limited access to open resources than a normal access token.
+> To give fork builds the same permissions as regular builds, enable the **Make fork builds have the same permissions as regular builds** setting.
+
+For more information, see [Repository protection - Forks](../security/repos.md#forks).
+
+You can define centrally how pipelines build PRs from forked GitHub repositories using the **Limit building pull requests from forked GitHub repositories** control. It's available at organization and project level. You can choose to:
+- Disable building pull requests from forked repositories
+- Securely build pull requests from forked repositories
+- Customize rules for building pull requests from forked repositories
+
+:::image type="content" source="media/centralized-pipeline-control.png" alt-text="Screenshot of centralized control settings for how pipelines build PRs from forked GitHub repositories.":::
+
+When you choose the **Securely build pull requests from forked repositories** option, all pipelines, organization or project-wide, *cannot* make secrets available to builds of PRs from forked repositories, *cannot* make these builds have the same permissions as normal builds, and *must* be triggered by a PR comment. Projects can still decide to *not* allow pipelines to build such PRs.
+
+When you choose the **Customize** option, you can define how to restrict pipeline settings. For example, you can ensure that all pipelines require a comment in order to build a PR from a forked GitHub repo, when the PR belongs to non-team members and non-contributors. But, you can choose to allow them to make secrets available to such builds. Projects can decide to *not* allow pipelines to build such PRs, or to build them securely, or have even more restrictive settings than what is specified at the organization level.
+
+The control is off for existing organizations. [Starting September 2023, new organizations have **Securely build pull requests from forked repositories** turned on by default](/azure/devops/release-notes/2023/pipelines/sprint-227-update#build-github-repositories-securely-by-default).
 
 #### Important security considerations
 
@@ -561,6 +582,10 @@ GitHub allows three options when one or more Check Runs fail for a PR/commit. Yo
 
 Clicking on the "Rerun" link next to the Check Run name will result in Azure Pipelines retrying the run that generated the Check Run. The resultant run will have the same run number and will use the same version of the source code, configuration, and YAML file as the initial build. Only those jobs that failed in the initial run and any dependent downstream jobs will be run again. Clicking on the "Rerun all failing checks" link will have the same effect. This is the same behavior as clicking "Retry run" in the Azure Pipelines UI. Clicking on "Rerun all checks" will result in a new run, with a new run number and will pick up changes in the configuration or YAML file.
 
+## Limitations
+
+[!INCLUDE [limitations](includes/limitations-gh.md)]
+
 ## FAQ
 
 Problems related to GitHub integration fall into the following categories:
@@ -638,7 +663,7 @@ This means that your repository is already associated with a pipeline in a diffe
 
 [!INCLUDE [qa](includes/qa2-1.md)]
 
-[!INCLUDE [qa](includes/qa3.md)]
+[!INCLUDE [qa](includes/qa3-gh.md)]
 
 [!INCLUDE [qa](includes/qa4.md)]
 

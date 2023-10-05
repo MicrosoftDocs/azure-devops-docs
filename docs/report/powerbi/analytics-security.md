@@ -2,10 +2,10 @@
 title: Analytics permissions and security
 titleSuffix: Azure DevOps     
 description: Learn about the required permissions necessary to access Analytics and how to handle project access denied errors.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.assetid: 868DC7E6-540C-4F9F-B4A3-7680F1C49FC9
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/01/2021

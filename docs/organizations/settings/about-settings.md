@@ -2,12 +2,12 @@
 title: Settings overview for Azure DevOps
 titleSuffix: Azure DevOps
 description: Overview of settings available to administrators for your team, project, collection, and organization in Azure DevOps.
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 07/27/2022
 ---
 
 # About settings for users, teams, projects, or organizations
@@ -18,7 +18,7 @@ ms.date: 04/04/2022
 
 You configure resources either for yourself or for your team, project, or organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role that you belong to. 
 
-If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md). To quickly find a setting or related settings, see [Search organization settings](search-settings.md).
+If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
 > [!NOTE]  
 > You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md). For more information about Stakeholder access, see [Stakeholder access quick reference](../security/stakeholder-access.md). 
@@ -140,8 +140,8 @@ Individual contributors can set their user preferences, enable features that are
    :::column-end:::
    :::column span="2":::
       - [View your subscriptions, opt-out as needed](about-settings.md)
-      - [Change your preferred email address](../../notifications/change-email-address.md)
-      - [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)
+      - [Change your preferred email address](../../organizations/notifications/change-email-address.md)
+      - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
    :::column-end:::
    :::column span="2":::
       Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When a project is created, a number of notifications are defined. If you want to opt out of these, you can.
@@ -189,7 +189,6 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column span="2":::
       - [Backlog levels](select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Show bugs on backlogs & boards](show-bugs-on-backlog.md)
-      - [Set working days](set-working-days.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Configure area paths](set-area-paths.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Select active iteration paths (sprints)](set-iteration-paths-sprints.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Define work item templates](../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
@@ -217,10 +216,10 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       **Notifications**
    :::column-end:::
    :::column span="2":::
-      - [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+      - [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
    :::column span="2":::
-      Many team notifications are automatically defined when a team is added. For more information about how notifications are managed, see [About notifications](../../notifications/about-notifications.md).
+      Many team notifications are automatically defined when a team is added. For more information about how notifications are managed, see [About notifications](../../organizations/notifications/about-notifications.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -241,7 +240,14 @@ From the administrative **Project settings** page, you can configure settings av
 > ![Screenshot of Project settings, new navigation.](media/about/project-settings-new-nav.png) 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range="azure-devops-2022"
+**Project-level settings**  
+From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
+
+![Screenshot of Project settings page, Azure DevOps Server 2022.](media/about/project-settings-server-2022.png)  
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops-2022"
 **Project-level settings**  
 From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
 
@@ -278,7 +284,7 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - Set project description
-      - [Change the project visibility, public or private](../public/make-project-public.md)
+      - [Change the project visibility, public or private](../projects/make-project-public.md)
    :::column-end:::
    :::column span="2":::
       Update the project description or change its visibility.
@@ -341,7 +347,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Grant or restrict permissions to select tasks](../security/restrict-access.md)
       - [Set dashboard permissions](../security/../../report/dashboards/dashboard-permissions.md)
       - [Set Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
-      - [Set feedback permissions](../../project/feedback/give-permissions-feedback.md)
+      - [Set feedback permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
       - [Set build and release permissions](../../pipelines/policies/set-permissions.md)
    :::column-end:::
    :::column span="2":::
@@ -354,10 +360,10 @@ From the administrative **Project settings** page, you can configure settings av
       **Notifications**
    :::column-end:::
    :::column span="2":::
-      - [Manage project-level notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+      - [Manage project-level notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
    :::column span="2":::
-      Many project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-group-global-organization-notifications.md).
+      Many project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -369,7 +375,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Configure service hooks](../../service-hooks/overview.md)
    :::column-end:::
    :::column span="2":::
-      With service hooks, you can automate a task on other services, such as [Campfire, Flowdock, HipChat, and more](../../service-hooks/overview.md). You can use service hooks in custom apps and services to drive activities as events happen.
+      With service hooks, you can automate a task on other services, such as [Campfire, HipChat, and more](../../service-hooks/overview.md). You can use service hooks in custom apps and services to drive activities as events happen.
    :::column-end:::
 :::row-end:::
 ---
@@ -475,7 +481,7 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - [Manage and configure team tools](manage-teams.md)
-      - [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+      - [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
    :::column span="2":::
       For more information, see [About teams and Agile tools](about-teams-and-settings.md).
@@ -523,7 +529,7 @@ Members of the [**Project Collection Administrators** group](../security/change-
 From the administrative **Organization settings** page, you can configure settings available from the tabs shown in the following image and table. 
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** and **Projects** pages. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** and **Projects** pages. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 
 > [!div class="mx-imgBorder"]  
@@ -531,11 +537,20 @@ From the administrative **Organization settings** page, you can configure settin
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
-**Project collection-level settings**  
+::: moniker range="azure-devops-2022"
+**Collection-level settings**  
 From the administrative page for a collection, you can configure the settings shown in the following image. 
 
-![Screenshot of Collection settings options, server versions.](media/about/collection-settings-options-server-versions.png) 
+:::image type="content" source="media/about/collection-settings-2022.png" alt-text="Screenshot of Collection settings options, Azure DevOps Server 2022.":::
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops-2022"
+**Collection-level settings**  
+
+From the administrative page for a collection, you can configure the settings shown in the following image. 
+
+![Screenshot of Collection settings options, Azure DevOps Server 2019-2020 versions.](media/about/collection-settings-options-server-versions.png) 
 
 ::: moniker-end
 
@@ -670,10 +685,10 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       **Global notifications**
    :::column-end:::
    :::column span="2":::
-      - [Manage collection-level notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+      - [Manage collection-level notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
    :::column span="2":::
-      Many notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-group-global-organization-notifications.md).
+      Many notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -698,8 +713,8 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column span="2":::
       - [Install and manage Marketplace extensions](../../marketplace/install-extension.md)
       - [Approve extensions](../../marketplace/request-extensions.md)
-      - [Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)
-      - [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)
+      - [Grant permissions to manage extensions](../../marketplace/grant-permissions.md)
+      - [Uninstall or disable extensions](../../marketplace/install-extension.md#uninstall-an-extension)
    :::column-end:::
    :::column span="2":::
       An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) in the Azure DevOps tab to support planning and tracking of work items, sprints, scrums, and so on; build and release flows; code testing and tracking; and collaboration among team members.
@@ -736,7 +751,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Add administrators, set organization-level permissions](../security/change-organization-collection-level-permissions.md)
       - [Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)
       - [Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
-      - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)
+      - [Set permissions to manage extensions](../../marketplace/grant-permissions.md)
       - [Manage conditional access](../accounts/change-application-access-policies.md)
    :::column-end:::
    :::column span="2":::

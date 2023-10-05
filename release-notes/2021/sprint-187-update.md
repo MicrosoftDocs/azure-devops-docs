@@ -2,7 +2,6 @@
 title: Delivery Plans 2.0 is now generally available. 
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 05/26/2021
 description: In this sprint, Delivery Plans 2.0 is now generally available. 
 ---

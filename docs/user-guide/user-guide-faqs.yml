@@ -5,7 +5,7 @@ metadata:
   ms.topic: faq
   ms.custom: seodec18
   description: FAQs to support getting started using the hosted cloud offering and on-premises offering of Azure DevOps
-  ms.technology: devops-new-user 
+  ms.subservice: azure-devops-new-user
   ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
   ms.author: chcomley
   author: chcomley
@@ -51,10 +51,10 @@ sections:
           Go to one of the following pages to download a version of Visual Studio or client tool plug-in that supports connecting to a project:
           
           - [Visual Studio](https://visualstudio.microsoft.com/downloads/) 
-          - [Eclipse/Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)  
-          - [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)
-          - [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
-          - [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)
+          - [Eclipse/Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)  
+          - [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)
+          - [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
+          - [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)
           
       - question: How much does Azure DevOps cost?
         answer: |
@@ -99,7 +99,7 @@ sections:
           - [Azure Test Plans](/previous-versions/jj635157(v=vs.140))  
           - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
           - [Microsoft Feedback Client](../project/feedback/give-feedback.md) 
-          - For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../reference/process/new-work-item-experience.md).      
+          - For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](/previous-versions/azure/devops/reference/process/new-work-item-experience).      
           - For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). TFS Power Tools provide enhancements, tools, and command-line utilities that support increased productivity.                
                  
           > [!NOTE]  

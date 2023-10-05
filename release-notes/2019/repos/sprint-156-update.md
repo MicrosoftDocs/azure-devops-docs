@@ -3,7 +3,6 @@ title: Azure Repos - Sprint 156 Update
 description: See the Sprint 156 feature updates for Azure Repos, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 09/02/2019
 ---
 

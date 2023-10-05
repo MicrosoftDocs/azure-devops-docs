@@ -2,10 +2,11 @@
 title: Create or add a team
 titleSuffix: Azure DevOps 
 description: Learn how to create or add a team to a project to scale Azure DevOps.  
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
+ms.custom: teams, devx-track-azurecli
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 05/19/2022
@@ -139,7 +140,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 	From the team profile, you can perform these additional tasks:  
 	- [Add team members](#add-team-members)
 	- [Add and remove team administrators](add-team-administrator.md)
-	- [Navigate to team notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+	- [Navigate to team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
 	- [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
 	<a id="add-team-members" />
@@ -269,7 +270,7 @@ url: https://fabrikamprime.visualstudio.com/_apis/projects/854a3f67-9962-43d1-a9
 
 Upon creation of a team, the following items are automatically configured:  
 - Security group with the team name containing the members assigned to the team, for example, **[Fabrikam Fiber]\Production Planning**. You can use this name to filter queries or to **@mention** all members of the team. 
-- Default notifications assigned to the team. To learn more, see [Manage notifications for a team, project, or organization](../../notifications/manage-team-group-global-organization-notifications.md).
+- Default notifications assigned to the team. To learn more, see [Manage notifications for a team, project, or organization](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
 - Default dashboard named **Overview** assigned to the team. To configure the dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md).
 
 > [!IMPORTANT]   
@@ -390,7 +391,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 
 For more information on setting permissions and access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
-::: moniker range="<= azure-devops-2020" 
+::: moniker range="< azure-devops-2022" 
 
 If your deployment is integrated with SQL Server Reports, you need to [Grant permissions to view or create SQL Server reports to team members](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports). 
 

@@ -1,7 +1,7 @@
 ---
 title: Set up upstream sources for your feed
 description: How to configure upstream sources for your Azure Artifacts feeds
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 02/16/2022
 monikerRange: '<= azure-devops'
@@ -14,9 +14,6 @@ monikerRange: '<= azure-devops'
 With upstream sources, you can use a single feed to store the packages you generate and the packages you consume from public registries such as npmjs.com, NuGet.org, Maven Central, and PyPI.org. Once you've enabled an upstream source, every time you install a package from the public registry, Azure Artifacts will save a copy of that package in your feed.
 
 ## Create a new feed and enable upstream sources
-
-> [!NOTE]
-> Upstream sources are not supported in public feeds.
 
 1. From within your project, select **Artifacts**.
 

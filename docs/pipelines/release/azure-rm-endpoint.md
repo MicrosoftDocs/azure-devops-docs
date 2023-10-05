@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot Azure Resource Manager service connections
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-arm-template
 description: How to troubleshoot Azure Resource Manager service connections in Azure Pipelines
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: conceptual
@@ -181,7 +181,7 @@ This issue can be fixed by changing the **supported account types** settings and
 
 1. Select you application from the list of registered applications.
 
-1. Under **Essentials**, select **Supported account types**.
+1. Under **Authentication**, select **Supported account types**.
 
 1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
 
@@ -204,6 +204,9 @@ To renew the access token for an automatically created service principal:
 1. Select **Save**.
 
 Your service principal's token has now been renewed for two more years.
+
+   > [!NOTE]
+   > This operation is available even if the service principal's token has not expired.
 
 <a name="failedToObtainJWT"></a>
 

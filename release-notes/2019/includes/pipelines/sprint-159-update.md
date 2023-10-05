@@ -40,7 +40,7 @@ resources:
     trigger:     # Optional; Triggers are not enabled by default.
       branches:  
         include:  # branches to consider the trigger events, optional; defaults to all branches.
-        - master
+        - main
         - releases/*
         exclude:   # branches to discard the trigger events, optional; defaults to none.
         - users/*  

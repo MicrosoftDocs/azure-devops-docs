@@ -2,10 +2,11 @@
 title: About teams & Agile tools
 titleSuffix: Azure DevOps
 description: Overview for adding and configuring teams in Azure DevOps.
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
+ms.custom: teams
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
@@ -61,10 +62,7 @@ You can rename the default team and reassign a new team as the default.
 
 Each team you create gets access to a suite of Agile tools and team assets. These tools let teams work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
 
-::: moniker range=">= tfs-2018"
 ![Agile tools, team assets](media/agile-tools/agile-tools-team-assets-post-2018.png)
-::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -224,7 +222,7 @@ When you add a team, a security group is automatically created with the team nam
 
 ![Web portal, Queries page, Query that uses In Group operator and team group name](../../boards/plans/media/query-in-group-email-team-work-in-progress.png)
 
-You can also use the **\@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
+You can also use the **\@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../organizations/notifications/at-mentions.md).  
 
 ## Work on more than one team
 
@@ -238,12 +236,12 @@ By default, team members inherit the permissions afforded to members of the proj
 
 ![Default permissions assigned to team contributors](media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
-Limit access to select features by making a user a [Stakeholder](../security/get-started-stakeholder.md) or limiting their access to read-only. For more information, see [Permissions and access for work tracking](../security/permissions-access-work-tracking.md). 
+Limit access to select features by making a user a [Stakeholder](../security/get-started-stakeholder.md) or limiting their access to read-only. For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md). 
 
 ## Summary 
 
 - Every team owns their own backlog, to create a new backlog you [create a new team](../../organizations/settings/add-teams.md) 
-- Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-basics.md) you can use to track progress and update status  
+- Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-overview.md) you can use to track progress and update status  
 - The team's specified area and iteration paths determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
 -  Each team can control how [bugs show up on their backlogs and boards](show-bugs-on-backlog.md)   
 - For an overview of all team assets and how to configure them, see [Manage teams and configure team tools](manage-teams.md)   

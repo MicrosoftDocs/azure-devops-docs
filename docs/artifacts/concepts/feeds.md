@@ -2,7 +2,7 @@
 title: What are feeds?
 description: Learn about Artifacts feeds and the difference between project-scoped and organization-scoped feeds. Learn how to create, delete, and restore feeds. 
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 04/07/2022
 monikerRange: '<= azure-devops'
@@ -33,7 +33,6 @@ There some important things to note regarding public feeds:
 
 * Public feeds can only be created inside of public projects.
 * Public feeds aren't intended as a replacement for existing package management platforms (NuGet.org, npmjs.com, etc.).
-* Public feeds cannot have upstream sources.
 * Public users cannot currently download universal packages. All other package types are supported for public access.
 
 > [!NOTE]

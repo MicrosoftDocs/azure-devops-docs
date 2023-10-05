@@ -2,10 +2,10 @@
 title: Rename or remove/delete a team 
 titleSuffix: Azure DevOps 
 description: Learn how to rename or remove, delete a team in Azure DevOps. 
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

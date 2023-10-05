@@ -1,0 +1,341 @@
+- name: Azure DevOps 
+  href: index.yml 
+- name: Get started >>
+  href: get-started/index.yml
+- name: Azure Artifacts >>
+  href: artifacts/index.yml
+- name: Azure Boards >>
+  href: boards/index.yml
+- name: Azure Pipelines >>
+  href: pipelines/index.yml
+- name: Azure Repos >>
+  href: repos/index.yml
+- name: Azure Test Plans >>
+  href: test/index.yml
+- name: Reporting and Analytics >>
+  href: report/index.yml
+- name: Settings >>
+  href: organizations/index.yml
+- name: Cross-service >>
+  href: cross-service/index.yml
+- name: Customization >>
+  href: reference/index.yml
+- name: Wiki, Search, & Navigation >>
+  href: project/index.yml
+- name: Marketplace & extensibility
+  href: ./marketplace-extensibility/index.yml
+- name: Extensions overview
+  href: ./extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
+- name: Get started
+  items:
+  - name: Install an extension
+    displayName: Marketplace, publish, get, download, purchase, uninstall, disable
+    href: ./marketplace/install-extension.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Request and approve an extension
+    displayName: permission, administrator, contributor, get, collection, Marketplace
+    href: ./marketplace/request-extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Manage extension permissions
+    displayName: grant, publish, update, settings, admin
+    href: ./marketplace/grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+- name: Authenticate
+  items:
+  - name: Guide to authentication
+    href: ./integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Authenticate extensions and security
+    href: ./extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Authenticate with service principals or managed identities
+    href: ./integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Authenticate with PATs
+    href: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Authenticate with OAuth 2.0
+    href: ./integrate/get-started/authentication/oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Cross-platform CLI for Azure DevOps using PATs
+    href: ./integrate/get-started/auth/tfs-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: IIS Basic Authentication and PATs
+    href: ./integrate/get-started/authentication/iis-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+- name: Develop extensions
+  items:
+  - name: Get started
+    items:
+    - name: Develop a web extension
+      displayName: build, create, develop, extension, web
+      href: ./extend/get-started/node.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Extensibility points
+      href: ./extend/reference/targets/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Contribution model
+      displayName: plug, hub, action, build, task, type, target
+      href: ./extend/develop/contributions-overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Create a custom pipelines task
+      displayName: extension, manifest, package, publish, install, Marketplace
+      href: ./extend/develop/add-build-task.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Author a pipeline decorator
+      displayName: YAML, install, debug, job, create, add
+      href: ./extend/develop/add-pipeline-decorator.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Samples
+    items:
+    - name: Extension samples
+      displayName: contributions, source, description, framework
+      href: ./extend/develop/samples-overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Vertical navigation guidance
+      displayName: extension, team, context
+      href: ./extend/develop/web-navigation.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Work with URLs
+      displayName: API, organization, REST
+      href: ./extend/develop/work-with-urls.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Store data and settings
+      displayName: data, preferences, REST, API, settings, documents
+      href: ./extend/develop/data-storage.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Add a hub
+      displayName: create, work, SDK, contribute
+      href: ./extend/develop/add-hub.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Add a hub group
+      displayName: create, SDK, install, extension
+      href: ./extend/develop/add-hub-group.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Add a menu action
+      displayName: query, queries, extension, manifest, HTML, JavaScript
+      href: ./extend/develop/add-action.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Add a new service endpoint
+      displayName: connect, external, service, build, task, manifest
+      href: ./extend/develop/service-endpoints.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Add a service hook
+      displayName: subscription, publish, extension, manifest, package, install
+      href: ./extend/develop/add-service-hook.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Create a PR status server
+      displayName: configure, event, create, validate, PR
+      href: ./repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Use Azure Functions to create custom branch policies
+      displayName: pull, request, PR, Repos, configure, create, post
+      href: ./repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Add Azure Boards extensions
+      items:
+      - name: Add a tab to a Backlog
+        displayName: iframe, update, manifest, create
+        href: ./extend/develop/add-backlog-tabs.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      - name: Add a panel to a Backlog
+        displayName: create, extension, portfolio, product, iteration, selection
+        href: ./extend/develop/add-backlog-panel.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      - name: Extend the work item form
+        displayName: add, group, page, configure, contributions, action, custom
+        href: ./extend/develop/add-workitem-extension.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      - name: Add a custom control to a work item form
+        displayName: contribution, input, JavaScript, create
+        href: ./extend/develop/custom-control.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      - name: Configure work item form extensions (on-premises)
+        displayName: xml, witadmin, tool, add, page, group, control
+        href: ./extend/develop/configure-workitemform-extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      - name: Add query result tabs
+        displayName: iframe, create, update, extension, manifest, web, page
+        href: ./extend/develop/add-query-result-tabs.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Add dashboard extensions
+      items:
+      - name: Add a dashboard widget
+        displayName: create, contribution, REST, API, configure
+        href: ./extend/develop/add-dashboard-widget.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      - name: Add a chart
+        displayName: create, configure, HTML, extension, manifest
+        href: ./extend/develop/add-chart.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Call a REST API
+      displayName: client, service, API
+      href: ./extend/develop/call-rest-api.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Public project extensions
+      displayName: permission, dashboard, widget, build, release, tracking, contribution, visibility
+      href: ./extend/develop/public-project.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Package and publish
+    items:
+    - name: Package and publish extensions
+      displayName: upload, install, Marketplace, public, private
+      href: ./extend/publish/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Package and publish integrations
+      displayName: extend, enhance, tool, service, product, manifest, publisher
+      href: ./extend/publish/integration.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Make listing public and Top Publisher program
+      displayName: Marketplace, extension, requirements, qualifications
+      href: ./extend/publish/publicize.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Publish via command line
+      displayName: CLI, Marketplace, share
+      href: ./extend/publish/command-line.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Respond to Marketplace reviews
+      displayName: owner, creator, contributor, reply, appeal
+      href: ./extend/publish/manage-ratings-reviews.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Reference
+    items:
+    - name: Manifest reference
+      displayName: JSON, extend, enhance, required, attributes, targets, demands, contributions, example
+      href: ./extend/develop/manifest.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Integrate a Pipelines task into an extension
+      displayName: JSON, build, release, custom
+      href: ./extend/develop/integrate-build-task.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Pipeline decorator context
+      displayName: GUID, resources, job, variable
+      href: ./extend/develop/pipeline-decorator-context.md
+    - name: Endpoint authentication schemes
+      displayName: service, HTTP, token, certificate
+      href: ./extend/develop/auth-schemes.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Content hosting
+      displayName: static, host, public, endpoint
+      href: ./extend/develop/static-content.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Modal dialog
+      displayName: enable, customize, disable, pass, , show, values
+      href: ./extend/develop/using-host-dialog.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Host page navigation
+      displayName: API, hash, notification, refresh
+      href: ./extend/develop/host-navigation.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Basic styles for widgets
+      displayName: SDK, JavaScript, stylesheet, dashboard
+      href: ./extend/develop/styles-from-widget-sdk.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Deploy web content to Azure
+      displayName: publish, extension, install, subscription
+      href: ./extend/publish/publish-azure.md?toc=/azure/devops/marketplace-extensibility/toc.json
+- name: Integrate with Service Hooks
+  items:
+  - name: About service hooks
+    displayName: integrate, project, tasks, events, publisher, subscription, endpoint, notification
+    href: ./service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Create a service hook
+    items:
+    - name: Workplace messaging apps
+      displayName: integrate, integration, notification, events, deployment, teams, Slack
+      href: ./service-hooks/services/workplace-messaging-apps.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Grafana
+      displayName: open, source, dashboard, subscription, release, pipelines
+      href: ./service-hooks/services/grafana.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Slack
+      displayName: messages, events, changes, boards, pipelines, repos, app, subscription, webhook
+      href: ./service-hooks/services/slack.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Jenkins
+      displayName: integration, build, subscription, trigger, event
+      href: ./service-hooks/services/jenkins.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Trello
+      displayName: cards, lists, events, subscription, project
+      href: ./service-hooks/services/trello.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Datadog
+      displayName: integrate, configure, events, metrics, dashboards, monitor, troubleshoot, subscription
+      href: ./service-hooks/services/datadog.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Microsoft Teams
+      displayName: integrate, boards, pipelines, repos, connector, configure, project, activity
+      href: ./service-hooks/services/teams.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Webhooks
+    displayName: JSON, subscription, configure, event, endpoint
+    href: ./service-hooks/services/webhooks.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Authorize other services
+    displayName: oauth, secure, resources, access, credentials, account, approve
+    href: ./service-hooks/authorize.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Service hook consumers
+    displayName: subscription, event, consumer, action, storage, webhooks, bus, campfire, hipchat, jenkins, kato, trello, zendesk
+    href: ./service-hooks/consumers.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Service hook events
+    displayName: build, release, deployment, created, updated, deleted, restored, commented, changed, approval
+    href: ./service-hooks/events.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Troubleshoot and FAQs
+    displayName: issue, activity, debug, subscription, terminal, transient, failure
+    href: ./service-hooks/troubleshoot.md?toc=/azure/devops/marketplace-extensibility/toc.json
+- name: Integrate applications
+  items:
+  - name: Integrate applications overview 
+    href: ./integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Get started
+    items:
+    - name: Create a bug
+      displayName: client, library, code, project, PAT
+      href: ./integrate/quickstarts/create-bug-quickstart.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Query work items
+      displayName: get, fetch, queries, rest, api
+      href: ./integrate/quickstarts/work-item-quickstart.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Best practices
+      displayName: integrate, procedure, correct, effective
+      href: ./integrate/concepts/integration-bestpractices.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Service hooks
+      displayName: information, what, are
+      href: ./integrate/concepts/service-hooks.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Create service hooks subscriptions programmatically
+      displayName: rest, api, build, complete, code
+      href: ./service-hooks/create-subscription.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Call REST API
+      displayName: integrate, instance, collection
+      href: ./integrate/how-to/call-rest-api.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: REST API versioning
+      displayName: applications, services, usage
+      href: ./integrate/concepts/rest-api-versioning.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: .NET client libraries
+      displayName: integrate, developer, package, rest, api
+      href: ./integrate/concepts/dotnet-client-libraries.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Cross-origin resource sharing
+      displayName: CORS, JavaScript, code, Oauth, PATs
+      href: ./integrate/concepts/cross-origin-resource-sharing.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Samples
+    items:
+    - name: .NET
+      displayName: sample, c#, library, REST, authenticate
+      href: ./integrate/get-started/client-libraries/samples.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: .NET (Legacy)
+      displayName: SOAP, authenticate, PAT, Azure, Visual, Studio
+      href: ./integrate/get-started/client-libraries/soapSamples.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: REST API Samples
+      displayName: PATs, personal, access, token, client, libraries
+      href: ./integrate/get-started/rest/samples.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Create a PR status server
+      displayName: pull, request, web, configure, service, hook
+      href: ./repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Use Azure Functions to create custom branch policies
+      displayName: pull, request, PR, Repos, event, service, hook
+      href: ./repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+- name: Microsoft Teams & Slack
+  items:
+  - name: Azure Boards with Slack
+    href: ./boards/integrations/boards-slack.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Azure Boards with Microsoft Teams
+    href: ./boards/integrations/boards-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Azure Repos with Slack
+    href: ./repos/integrations/repos-slack.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Azure Repos with Microsoft Teams
+    href: ./repos/integrations/repos-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Azure Pipelines with Slack
+    href: ./pipelines/integrations/slack.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Azure Pipelines with Microsoft Teams
+    href: ./pipelines/integrations/microsoft-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json
+- name: Reference
+  items:
+  - name: REST API reference overview
+    href: ./integrate/rest-api-overview.md
+  - name: Rate limits
+    href: ./integrate/concepts/rate-limits.md
+  - name: Deprecation of WIT & Test client OM
+    href: ./integrate/concepts/wit-client-om-deprecation.md
+  - name: Migrate code to REST-based .NET Client Libraries
+    href: ./integrate/concepts/migration-guide.md
+  - name: .NET client libraries reference
+    href: /dotnet/api/index?view=azure-devops-dotnet&preserve-view=true
+  - name: Azure DevOps Services REST API >>
+    href: /rest/api/azure/devops/
+- name: Reference (Archived)
+  items:
+  - name: Client reference >>
+    href: /previous-versions/azure/devops/extend/reference/client/client-services?view=tfs-2017&preserve-view=true
+  - name: REST APIs for TFS 2015, 2017, and 2018 >>
+    href: /previous-versions/azure/devops/integrate/previous-apis/overview
+  - name: Extension Debugging in a Browser >>
+    href: /previous-versions/azure/devops/extend/test/debug-in-browser
+- name: Resources
+  items:
+  - name: How to buy Azure DevOps CALs >>
+    href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
+  - name: Billing
+    href: ./organizations/billing/overview.md
+  - name: Build Visual Studio extensions >>
+    href: /visualstudio/extensibility/shipping-visual-studio-extensions
+  - name: Build apps for Windows >>
+    href: /windows/apps/
+  - name: Mobile application development in Microsoft >>
+    href: /azure/mobile-apps/
+- name: Marketplace extensions
+  items:
+  - name: Extensions for Azure DevOps >>
+    href: https://marketplace.visualstudio.com/azuredevops
+  - name: Azure Boards extensions developed by Microsoft
+    href: ./boards/extensions/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Find and use Visual Studio extensions >>
+    href: /visualstudio/ide/finding-and-using-visual-studio-extensions
+  - name: Install Visual Studio Code extensions >>
+    href: https://code.visualstudio.com/docs/editor/extension-gallery
+- name: Developer Resources >>
+  href: dev-resources/index.yml

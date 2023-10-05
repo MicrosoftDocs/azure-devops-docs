@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 title: Webhooks with Azure DevOps
 description: Use webhooks with your Azure DevOps organization

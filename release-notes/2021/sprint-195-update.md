@@ -2,7 +2,6 @@
 title: Improvements to Copy Dashboard
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 11/16/2021
 description: With this update, We are excited to announce improvements to Copy Dashboard.
 ---

@@ -3,10 +3,10 @@ title: Query by area or iteration path in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn how to query for work items based on their area or iteration path in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 10/24/2021 
@@ -32,26 +32,26 @@ When creating queries and specifying the Area Path and Iteration Path fields, yo
 > [!div class="mx-tdCol2BreakAll"]  
 > |Operator     | Use when you want to...| 
 > |-------------|--------------|
-> | **=**           | Specify one specific area or iteration path  |
-> | **<>**          | Filter out one, specific area or iteration path. |
-> | **In**          | Filter for a set of area or iteration paths.  |
-> | **Not In**      | Exclude items that are assigned to a set of area or iteration paths. |
-> | **Under**       | Specify all paths under a select area or iteration path. |
-> | **Not Under**   | Exclude items assigned under a specific area or iteration path.  |
+> | `=`           | Specify one specific area or iteration path  |
+> | `<>`          | Filter out one, specific area or iteration path. |
+> | `In`          | Filter for a set of area or iteration paths.  |
+> | `Not In`      | Exclude items that are assigned to a set of area or iteration paths. |
+> | `Under`       | Specify all paths under a select area or iteration path. |
+> | `Not Under`   | Exclude items assigned under a specific area or iteration path.  |
 
 
 Along with these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 
-> |                     Macro                     |                                          Use when you want to...                                           |
-> |-----------------------------------------------|------------------------------------------------------------------------------------------------------------|
-> |      <strong>@CurrentIteration</strong>       |                  Specify the current iteration associated with the selected team context.                  |
-> | **@CurrentIteration +/- n**&nbsp;&nbsp;&nbsp; | Filter items based on assignment to a sliding window of sprints associated with the selected team context. |
-> |          <strong>@TeamAreas</strong>          |                      Filter items based on area path(s) assigned to a specific team.                       |
+> |            Macro      |               Use when you want to...                              |
+|-------------------------|---------------------------------------------------------------|
+> |  `@CurrentIteration`  |                  Specify the current iteration associated with the selected team context.                  |
+> | `@CurrentIteration +/- n` | Filter items based on assignment to a sliding window of sprints associated with the selected team context. |
+> | `@TeamAreas`       |        Filter items based on area path(s) assigned to a specific team.                       |
 
 > [!NOTE]
-> The **@CurrentIteration** macro is supported for TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for Azure DevOps Server 2019 and later versions. These macros are only supported from the web portal. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+> The `@CurrentIteration +/- n` and `@TeamAreas` macros are supported for Azure DevOps Server 2019 and later versions. These macros are only supported from the web portal. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
 
 ## Area path queries 
 
@@ -70,7 +70,7 @@ The following query yields the same result as the previous example.
 > [!div class="mx-imgBorder"]
 > ![Query on Node Name for several areas](media/query-area-iteration/query-with-in-operator-node-name.png)
 
-In this example, the filter will return any work items assigned to an area path whose last node contains the word "Azure".
+In this example, the filter returns any work items assigned to an area path whose last node contains the word "Azure".
 
 > [!div class="mx-imgBorder"]
 > ![Query for several sprints](media/query-area-iteration/query-filter-contains-node-name.png)
@@ -87,7 +87,7 @@ Here's another example that uses the **Node Name** and the **In** operator.
 
 ## Team area path queries  
 
-Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the area paths assigned to a specific team. Specify the **=** operator. The Query Editor automatically prompts for you to enter the name of the team. You can add it by typing the name of the team and choosing the team value that appears in the search filter criteria.   
+Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the area paths assigned to a specific team. Specify the **=** operator. The Query Editor automatically prompts for you to enter the name of the team. You can add it by entering the name of the team and choosing the team value that appears in the search filter criteria.   
 
 > [!div class="mx-imgBorder"]
 > ![Query on area paths assigned to a team](media/query-area-iteration/teamareas-macro-example.png)
@@ -109,7 +109,7 @@ For each field, data path=```TreePath```, reportable type=```Dimension```, index
 
 If you define a path name that is longer than 256 characters, you can't specify it in Microsoft Project. To avoid this problem, define path names of no more than 10 characters, and don't nest nodes more than 14 levels deep.
 
-You can't apply most field rules to system fields, such as System.AreaPath and System.IterationPath fields. To learn more, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).
+You can't apply most field rules to system fields, such as System.AreaPath and System.IterationPath fields. For more information, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).
 
 The following fields don't appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a project. You can use these fields to filter queries and create reports.
 

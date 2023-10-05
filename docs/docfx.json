@@ -1,14 +1,17 @@
 {
   "build": {
-    "content": [
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
+      "content":
+      [
+        {
+            "files": ["breadcrumb/toc.yml"]
+        },
+        {
+          "files": ["**/**.md",
+                    "**/**.yml"],
         "exclude": [
           "artifacts/nuget/bootstrap-nuget.md",
-          "**/obj/**",
+          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
+           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
           "**/_shared/**",
@@ -21,8 +24,8 @@
       },
       {
         "files": [
-          "artifacts/nuget/bootstrap-nuget.md"
-        ],
+          "artifacts/nuget/bootstrap-nuget.md",
+          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md"        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -55,26 +58,25 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/azure-devops-docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/AzureDevOps",
+      "breadcrumb_path": "/azure/devops/breadcrumb/toc.json", 
       "uhfHeaderId": "MSDocsHeader-AzureDevOps",
       "archive_url": "https://docs.microsoft.com/en-us/previous-versions/azure/devops/all/",
       "ms.topic": "conceptual",
-      "breadcrumb_path": "~/breadcrumb/toc.yml",
-      "extendBreadcrumb": true,
-      "zone_pivot_group_filename": "devops/zone-pivot-groups.json",
-      "searchScope": [
-        "Azure DevOps Services"
-      ],
       "ms.manager": "mijacobs",
       "author": "mijacobs",
       "ms.author": "mijacobs",
       "ms.date": "09/05/2018",
-      "ms.prod": "devops",
+      "ms.service": "azure-devops",
       "ms.version": "ALM",
+      "zone_pivot_group_filename": "zone-pivot-groups.json",
+      "searchScope": [
+        "Azure DevOps Services"
+      ],
       "MSHAttr.msprod": "ms.prod:ALM",
       "ms.prodfamily": "ALM",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/azure-devops-docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.team-services",
@@ -112,6 +114,7 @@
         "pipelines/*.md": "sdanie",
         "pipelines/agents/**": "sdanie",
         "pipelines/apps/**": "jukullam",
+        "pipelines/architectures/**": "jukullam",
         "pipelines/archive/**": "sdanie",
         "pipelines/artifacts/**": "rabououn",
         "pipelines/build/**": "sdanie",
@@ -134,7 +137,7 @@
         "pipelines/tasks/**": "sdanie",
         "pipelines/test/**": "sdanie",
         "service-hooks/**": "aaronha",
-        "repos/tfvc/**": "v-maksim",
+        "repos/tfvc/**": "vijayma",
         "repos/get-started/**": "vijayma",
         "repos/git/**": "vijayma"
       },
@@ -169,31 +172,35 @@
         "repos/get-started/**": "vijayma",
         "repos/git/**": "vijayma"
       },
-      "ms.technology": {
-        "pipelines/**": "devops-cicd",
-        "pipelines/agents/**": "devops-cicd-agents",
-        "pipelines/apps/**": "devops-cicd-apps",
-        "pipelines/archive/**": "devops-cicd-archive",
-        "pipelines/artifacts/**": "devops-cicd-artifacts",
-        "pipelines/build/**": "devops-cicd-build",
-        "pipelines/caching/**": "devops-cicd-caching",
-        "pipelines/ecosystems/**": "devops-cicd-ecosystems",
-        "pipelines/get-started/**": "devops-cicd-get-started",
-        "pipelines/integrations/**": "devops-cicd-integrations",
-        "pipelines/library/**": "devops-cicd-library",
-        "pipelines/licensing/**": "devops-cicd-licensing",
-        "pipelines/migrate/**": "devops-cicd-migrate",
-        "pipelines/packages/**": "devops-cicd-packages",
-        "pipelines/policies/**": "devops-cicd-policies",
-        "pipelines/process/**": "devops-cicd-process",
-        "pipelines/release/**": "devops-cicd-release",
-        "pipelines/reports/**": "devops-cicd-reports",
-        "pipelines/repos/**": "devops-cicd-repos",
-        "pipelines/security/**": "devops-cicd-security",
-        "pipelines/scripts/**": "devops-cicd-scripts",
-        "pipelines/targets/**": "devops-cicd-targets",
-        "pipelines/tasks/**": "devops-cicd-tasks",
-        "pipelines/test/**": "devops-cicd-test"
+      "ms.service": {
+        "pipelines/**": "azure-devops-pipelines",
+        "pipelines/ecosystems/**": "azure-devops"
+      },
+      "ms.subservice": {
+        "pipelines/agents/**": "azure-devops-pipelines-agents",
+        "pipelines/apps/**": "azure-devops-pipelines-apps",
+        "pipelines/artifacts/**": "azure-devops-pipelines-artifacts",
+        "pipelines/build/**": "azure-devops-pipelines-build",
+        "pipelines/ecosystems/**": "azure-devops-ecosystem",
+        "pipelines/get-started/**": "azure-devops-pipelines-get-started",
+        "pipelines/integrations/**": "azure-devops-pipelines-integrations",
+        "pipelines/library/**": "azure-devops-pipelines-library",
+        "pipelines/licensing/**": "azure-devops-pipelines-licensing",
+        "pipelines/migrate/**": "azure-devops-pipelines-migrate",
+        "pipelines/packages/**": "azure-devops-pipelines-packages",
+        "pipelines/policies/**": "azure-devops-pipelines-policies",
+        "pipelines/process/**": "azure-devops-pipelines-process",
+        "pipelines/release/**": "azure-devops-pipelines-release",
+        "pipelines/reports/**": "azure-devops-pipelines-reports",
+        "pipelines/repos/**": "azure-devops-pipelines-repos",
+        "pipelines/security/**": "azure-devops-pipelines-security",
+        "pipelines/scripts/**": "azure-devops-pipelines-scripts",
+        "pipelines/targets/**": "azure-devops-pipelines-targets",
+        "pipelines/tasks/**": "azure-devops-pipelines-tasks",
+        "pipelines/test/**": "azure-devops-pipelines-test"
+      },
+      "ms.custom": {
+        "repos/**": "UpdateFrequency3"
       },
       "recommendations": {
         "pipelines/repos/**": "true",
@@ -456,7 +463,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azure-devops || tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
+        "moniker_range": "azure-devops || tfs-2018 || >= azure-devops-2019 <= azure-devops-2022"
       }
     }
   }

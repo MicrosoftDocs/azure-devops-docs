@@ -3,7 +3,7 @@ title: Security through templates
 description: Using template features to improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.reviewer: vijayma
-ms.date: 02/24/2021
+ms.date: 01/24/2023
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -16,7 +16,13 @@ Checks work no matter the structure - the stages and jobs - of your pipeline.
 If several pipelines in your team or organization have the same structure, you can further simplify security using [templates](../process/templates.md).
 
 Azure Pipelines offers two kinds of templates: **includes** and **extends**.
-Included templates behave like `#include` in C++: it's as if you paste the template's code right into the outer file, which references it.
+Included templates behave like `#include` in C++: it's as if you paste the template's code right into the outer file, which references it. For example, here an includes template (`include-npm-steps.yml`) is inserted into `steps`. 
+
+```yaml
+  steps:
+  - template: templates/include-npm-steps.yml 
+```
+
 To continue the C++ metaphor, `extends` templates are more like inheritance: the template provides the outer structure of the pipeline and a set of places where the template consumer can make targeted alterations.
 
 ## Use extends templates
@@ -80,6 +86,8 @@ steps:
   target: builder
 ```
 
+::: moniker range=">=azure-devops-2022"
+
 ### Agent logging command restrictions
 
 Restrict what services the Azure Pipelines agent will provide to user steps.
@@ -111,7 +119,6 @@ One of the commands still allowed in restricted mode is the `setvariable` comman
       Write-Host "##vso[task.setvariable variable=BadVar]myValue"
 ```
 
-::: moniker range=">=azure-devops"
 ### Conditional insertion of stages or jobs
 
 Restrict stages and jobs to run under specific conditions.
@@ -190,7 +197,7 @@ extends:
 ### Type-safe parameters
 
 Templates and their parameters are turned into constants before the pipeline runs.
-Template parameters provide type safety to input parameters.
+[Template parameters](../process/template-parameters.md) provide type safety to input parameters.
 For instance, it can restrict which pools can be used in a pipeline by offering an enumeration of possible options rather than a freeform string.
 
 ```yaml
@@ -294,13 +301,13 @@ jobs:
       condition: always()
 ```
 ::: moniker-end
-<!-- Coming Q1 CY20
+
+
 ## Template enforcement
+
 A template is only a security mechanism if you can enforce it.
-The control point to enforce use of templates is once again a protected resource.
-Configure a template check on your agent pool or other protected resource.
-This check will fail if your pipeline does not extend the required template and will prevent access to that resource.
--->
+The control point to enforce use of templates is a [protected resource](resources.md).
+You can configure approvals and checks on your agent pool or other protected resources like repositories. For an example, see [Add a repository resource check](../process/repository-resource.md#add-a-repository-resource-check). 
 
 ## Next steps
 

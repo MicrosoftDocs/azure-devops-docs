@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Modal Dialog | Extensions for Azure DevOps
 description: Use the modal dialog provided by the host for Azure DevOps.
 ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010
@@ -238,14 +238,14 @@ The `okText` and `cancelText` attributes can be used to specify alternate titles
     };
 ```
 
-To not show any buttons on the dialog, you can set the `buttons` attribute to `null`:
+To not show any buttons on the dialog, you can set the `buttons` attribute to `[]`:
 
 ```javascript
     var dialogOptions = {
         title: "My Dialog Title",
         width: 800,
         height: 600,
-        buttons: null
+        buttons: []
     };
 ```
 

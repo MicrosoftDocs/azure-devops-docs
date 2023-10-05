@@ -10,7 +10,7 @@ When your project has been created, the welcome page appears.
 > ![Welcome to the project page](../media/welcome-to-the-project.png)
 
 > [!NOTE]   
-> Your first project was created by using a Git repository and the [Agile process](../boards/work-items/guidance/agile-process.md). If you want a project that uses the Team Foundation Version Control (TFVC) repository or the Scrum or CMMI process, see [Choose a process](../boards/work-items/guidance/choose-process.md) for a comparison of processes. Then, you can choose a process by [adding another project](../organizations/projects/create-project.md). 
+> Your first project was created by using a Git repository and the [Agile process](../boards/work-items/guidance/agile-process.md). If you want a project that uses the Team Foundation Version Control (TFVC) repository or the Scrum or CMMI process, see [About processes and process templates](../boards/work-items/guidance/choose-process.md) for a comparison of processes. Then, you can choose a process by [adding another project](../organizations/projects/create-project.md). 
 
 Select one of the following tasks to get started:  
 - **Boards** to begin [adding work items](../boards/work-items/view-add-work-items.md).
