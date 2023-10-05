@@ -256,9 +256,9 @@ If you want to retain a package indefinitely, you can promote it to a [view](../
 > - The number of published versions reaches the **Maximum number of versions per package** limit.
 > - A version of that package has not been downloaded for the period specified in **Days to keep recently downloaded packages**.
 
-## Recover deleted packages
+## Restore deleted packages
 
-Deleted packages remain in the Recycle Bin for 30 days. After that, they'll be permanently deleted. You must be a feed **Owner** to recover deleted packages.
+Deleted packages remain in the Recycle Bin for 30 days. After this period, they'll be permanently deleted. You must be a feed **Owner** to restore deleted packages.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -266,11 +266,11 @@ Deleted packages remain in the Recycle Bin for 30 days. After that, they'll be p
 
 1. Select **Artifacts**, and then select **Recycle Bin**.
 
-    :::image type="content" source="../media/artifacts-recycle-bin.png" alt-text="A screenshot showing how to access the recycle bin.":::
-
 1. Select your package, and then select **Restore**.
 
     :::image type="content" source="../media/restore-package.png" alt-text="A screenshot showing how to restore deleted packages.":::
+
+1. Select **Restore** once more to confirm your decision.
 
 ::: moniker-end
 
@@ -278,13 +278,9 @@ Deleted packages remain in the Recycle Bin for 30 days. After that, they'll be p
 
 1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 
-1. Select **Build and Release**, and then select **Packages**. 
+1. Select **Build and Release** > **Packages**, and then select **Recycle Bin**.
 
-1. Select **Recycle Bin**.
-
-    :::image type="content" source="../media/recycle-bin/find-recycle-bin.png" alt-text="Screenshot of how to access the Recycle Bin in Team Foundation Server.":::
-
-1. Select the appropriate package, and then select the package version that you want to delete.
+1. Select your package, and then select the package version that you want to delete.
 
     :::image type="content" source="../media/recycle-bin/recycle-bin-view.png" alt-text="Screenshot that shows the package in the Recycle Bin in Team Foundation Server.":::
 
@@ -296,25 +292,25 @@ Deleted packages remain in the Recycle Bin for 30 days. After that, they'll be p
 
 ## Q&A
 
-### Q: What is the difference between *Deprecate*, *Unpublish*, *Unlist*, and *Delete* a package version?
+##### Q: What is the difference between *Deprecate*, *Unlist*, and *Delete* a package version?
 
-A: *Unpublish* and *Deprecate* applies to npm packages, while *Unlist* and *Delete* applies to NuGet packages. You can also *Delete* package versions for the rest of the package types (Maven, Python, and Universal Packages):
+A: *Deprecate* applies to npm packages, while *Unlist* and *Delete* applies to NuGet packages. You can also *Delete* package versions for the rest of the package types (Maven, Python, and Universal Packages):
 
-- **Deprecate** (npm): When you deprecate a package version, a warning message is added to the package's metadata. Azure Artifacts and most npm clients will display the warning message whenever the package is viewed or installed.
-- **Unpublish** (npm): Unpublishing a package version makes it unavailable to install. Unpublished packages can be restored from the Recycle Bin within 30 days of deletion. After that, the packages will be permanently deleted.
+- **Deprecate** (npm): When you deprecate a package version, a warning message is added to the package's metadata. Azure Artifacts and most npm clients will display this warning message whenever the package is viewed or installed.
 
 - **Unlist** (NuGet): Unlisting a package version hides it from the search results in Azure Artifacts feeds and on NuGet.org.
-- **Delete**: Deleting a package version makes it unavailable to install. Deleted packages can be restored from the Recycle Bin within 30 days of deletion. After that, the packages will be permanently deleted.
 
-### Q: What happens with old or existing packages when we enable retention policies?
+- **Delete**: Deleting a package version makes it unavailable to install. Deleted packages can be restored from the Recycle Bin within 30 days of deletion. After this period, the packages will be permanently deleted.
+
+##### Q: What happens with old or existing packages when we enable retention policies?
 
 A: Old or existing packages will be soft-deleted and moved to the Recycle Bin. The deletion job runs once a day, but there might be an initial delay after the policy is turned on for the first time because of an influx of packages. 
 
-Packages remain in the Recycle Bin for 30 days before they're permanently deleted. To remove the packages from your billable storage, you can choose to delete them manually by using the UI or the REST API before the 30 days are up. 
+Packages remain in the Recycle Bin for 30 days before they're permanently deleted. To remove the packages from your billable storage, you can choose to delete them manually by using the UI or the REST API before the 30 days are up.
 
-### Q: How long does it take for the billed storage amount to update after deleting Artifacts?
+##### Q: How long does it take for the billed storage amount to update after deleting Artifacts?
 
-A: Typically, storage consumption should be updated within 24 hours, although in certain cases it might take up to 48 hours for the changes to reflect. The Artifacts usage on the billing page of your organization is updated once a day. However, The Artifact Storage page is updated more frequently, which may lead to a minor discrepancy between the information displayed on the two pages.
+A: Typically, storage consumption should be updated within 24 hours, although in certain cases it might take up to 48 hours for the changes to be reflected. The Artifacts usage on the billing page of your organization is updated once a day. However, The Artifact Storage page is updated more frequently, which may lead to a minor discrepancy between the information displayed on the two pages.
 
 ## Related articles
 
