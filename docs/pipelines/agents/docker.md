@@ -57,19 +57,19 @@ Next, create the Dockerfile.
 
 2. Create a new directory:
 
-    ```shell
-    mkdir C:\dockeragent
+    ```powershell
+    mkdir "C:\azp-agent-in-docker\"
     ```
 
-3. Change directories to this new directory:
+3. Go to this new directory:
 
-    ```shell
-    cd C:\dockeragent
+    ```powershell
+    cd "C:\azp-agent-in-docker\"
     ```
 
-4. Save the following content to a file called `C:\dockeragent\Dockerfile` (no file extension):
+4. Save the following content to a file called `C:\azp-agent-in-docker\azp-agent-windows.dockerfile`:
 
-    ```Dockerfile
+    ```dockerfile
     FROM mcr.microsoft.com/windows/servercore:ltsc2019
 
     WORKDIR /azp
@@ -79,7 +79,7 @@ Next, create the Dockerfile.
     CMD powershell .\start.ps1
     ```
 
-5. Save the following content to `C:\dockeragent\start.ps1`:
+5. Save the following content to `C:\azp-agent-in-docker\start.ps1`:
 
     ```powershell
     if (-not (Test-Path Env:AZP_URL)) {
@@ -154,14 +154,11 @@ Next, create the Dockerfile.
 
 6. Run the following command within that directory:
 
-    ```shell
-    docker build --tag "dockeragent:latest" .
+    ```powershell
+    docker build --tag "azp-agent:windows" --file "./azp-agent-windows.dockerfile" .
     ```
 
-    This command builds the Dockerfile in the current directory.
-
-    The final image is tagged `dockeragent:latest`.
-    You can easily run it in a container as `dockeragent`, because the `latest` tag is the default if no tag is specified.
+    The final image is tagged `azp-agent:windows`.
 
 ### Start the image
 
@@ -171,8 +168,8 @@ Now that you have created an image, you can run a container.
 
 2. Run the container. This installs the latest version of the agent, configures it, and runs the agent. It targets the `Default` pool of a specified Azure DevOps or Azure DevOps Server instance of your choice:
 
-    ```shell
-    docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
+    ```powershell
+    docker run -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<PAT token>" -e AZP_AGENT_NAME="azp-agent-windows" azp-agent:windows
     ```
 
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
@@ -194,20 +191,20 @@ Next, create the Dockerfile.
 
 2. Create a new directory (recommended):
 
-    ```shell
-    mkdir ~/dockeragent
+    ```bash
+    mkdir ~/azp-agent-in-docker/
     ```
 
-3. Change directories to this new directory:
+3. Go to this new directory:
 
-    ```shell
-    cd ~/dockeragent
+    ```bash
+    cd ~/azp-agent-in-docker/
     ```
 
-4. Save the following content to `~/dockeragent/Dockerfile`:
+4. Save the following content to `~/azp-agent-in-docker/azp-agent-linux.dockerfile`:
 
     * For Alpine:
-      ```Dockerfile
+      ```dockerfile
       FROM alpine
 
       RUN apk update
@@ -225,7 +222,7 @@ Next, create the Dockerfile.
       ```
 
     * For Ubuntu 22.04:
-      ```Dockerfile
+      ```dockerfile
       FROM ubuntu:22.04
 
       RUN apt update
@@ -252,7 +249,7 @@ Next, create the Dockerfile.
     > [Install the .NET SDK or the .NET Runtime on Ubuntu](/dotnet/core/install/linux-ubuntu)
     > and add that to your image.
 
-5. Save the following content to `~/dockeragent/start.sh`, making sure to use Unix-style (LF) line endings:
+5. Save the following content to `~/azp-agent-in-docker/start.sh`, making sure to use Unix-style (LF) line endings:
 
     ```bash
     #!/bin/bash
@@ -358,14 +355,11 @@ Next, create the Dockerfile.
 
 6. Run the following command within that directory:
 
-    ```shell
-    docker build --tag "dockeragent:latest" .
+    ```bash
+    docker build --tag "azp-agent:linux" --file "./azp-agent-linux.dockerfile" .
     ```
 
-    This command builds the Dockerfile in the current directory.
-
-    The final image is tagged `dockeragent:latest`.
-    You can easily run it in a container as `dockeragent`, because the `latest` tag is the default if no tag is specified.
+    The final image is tagged `azp-agent:linux`.
 
 ### Start the image
 
@@ -375,20 +369,20 @@ Now that you have created an image, you can run a container.
 
 2. Run the container. This installs the latest version of the agent, configures it, and runs the agent. It targets the `Default` pool of a specified Azure DevOps or Azure DevOps Server instance of your choice:
 
-    ```shell
-    docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
+    ```bash
+    docker run -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<PAT token>" -e AZP_AGENT_NAME="azp-agent-linux" azp-agent:linux
     ```
 
     For some images, you might need to specify `--interactive` and `--tty` flags (or simply `-it`) if you want to be able to stop the container with `Ctrl` + `C`.
 
-    ```shell
-    docker run --interactive --tty -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
+    ```bash
+    docker run --interactive --tty -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<PAT token>" -e AZP_AGENT_NAME="azp-agent-linux" azp-agent:linux
     ```
 
     If you want a fresh agent container for every pipeline job, pass [the `--once` flag](linux-agent.md#run-once) to the `run` command.
 
-    ```shell
-    docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest --once
+    ```bash
+    docker run -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<PAT token>" -e AZP_AGENT_NAME="azp-agent-linux" azp-agent:linux --once
     ```
 
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
@@ -439,7 +433,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 1. Create the secrets on the AKS cluster.
 
-    ```shell
+    ```bash
     kubectl create secret generic azdevops \
       --from-literal=AZP_URL=https://dev.azure.com/yourOrg \
       --from-literal=AZP_TOKEN=YourPAT \
@@ -448,8 +442,8 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 2. Run this command to push your container to Container Registry:
 
-    ```shell
-    docker push <acr-server>/dockeragent:latest
+    ```bash
+    docker push "<acr-server>/azp-agent:<tag>"
     ```
 
 3. Configure Container Registry integration for existing AKS clusters.
@@ -457,11 +451,11 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
     > [!NOTE]
     > If you have multiple subscriptions on the Azure Portal, please, use this command first to select a subscription
     >```azurecli
-    >az account set --subscription <subscription id or subscription name>
+    >az account set --subscription "<subscription id or subscription name>"
     >```
 
     ```azurecli
-    az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-name>
+    az aks update -n "<myAKSCluster>" -g "<myResourceGroup>" --attach-acr "<acr-name>"
     ```
 
 4. Save the following content to `~/AKS/ReplicationController.yml`:
@@ -485,7 +479,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
         spec:
           containers:
           - name: kubepodcreation
-            image: <acr-server>/dockeragent:latest
+            image: <acr-server>/azp-agent:<tag>
             env:
               - name: AZP_URL
                 valueFrom:
@@ -515,7 +509,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 5. Run this command:
 
-    ```shell
+    ```bash
     kubectl apply -f ReplicationController.yml
     ```
 
@@ -529,7 +523,7 @@ You need to set the environment variable AGENT_DOCKER_MTU_VALUE to set the MTU v
 
 This allows you to set up a network parameter for the job container, the use of this command is similar to the use of the next command while container network configuration:
 
-```
+```bash
 -o com.docker.network.driver.mtu=AGENT_DOCKER_MTU_VALUE
 ```
 
@@ -539,33 +533,33 @@ If a Docker container runs inside another Docker container, they both use host's
 
 For example, if we want to mount path from host into outer Docker container, we can use this command:
 
-```
-docker run ... -v <path-on-host>:<path-on-outer-container> ...
+```bash
+docker run ... -v "<path-on-host>:<path-on-outer-container>" ...
 ```
 
 And if we want to mount path from host into inner Docker container, we can use this command:
 
-```
-docker run ... -v <path-on-host>:<path-on-inner-container> ...
+```bash
+docker run ... -v "<path-on-host>:<path-on-inner-container>" ...
 ```
 
 But we can't mount paths from outer container into the inner one; to work around that, we have to declare an ENV variable:
 
-```
+```bash
 docker run ... --env DIND_USER_HOME=$HOME ...
 ```
 
 After this, we can start the inner container from the outer one using this command:
 
-```
-docker run ... -v $DIND_USER_HOME:<path-on-inner-container> ...
+```bash
+docker run ... -v "${DIND_USER_HOME}:<path-on-inner-container>" ...
 ```
 
 ## Common errors
 
 If you're using Windows, and you get the following error:
 
-```shell
+```
 standard_init_linux.go:178: exec user process caused "no such file or directory"
 ```
 
@@ -573,9 +567,9 @@ Install Git Bash by downloading and installing [git-scm](https://git-scm.com/dow
 
 Run this command:
 
-```shell
-dos2unix ~/dockeragent/Dockerfile
-dos2unix ~/dockeragent/start.sh
+```bash
+dos2unix ~/azp-agent-in-docker/Dockerfile
+dos2unix ~/azp-agent-in-docker/start.sh
 git add .
 git commit -m "Fixed CR"
 git push
