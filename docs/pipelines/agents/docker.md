@@ -82,6 +82,10 @@ Next, create the Dockerfile.
 5. Save the following content to `C:\azp-agent-in-docker\start.ps1`:
 
     ```powershell
+    function Print-Header ($header) {
+      Write-Host "`n${header}`n" -ForegroundColor Cyan
+    }
+
     if (-not (Test-Path Env:AZP_URL)) {
       Write-Error "error: missing AZP_URL environment variable"
       exit 1
@@ -110,7 +114,7 @@ Next, create the Dockerfile.
 
     Set-Location agent
 
-    Write-Host "1. Determining matching Azure Pipelines agent..." -ForegroundColor Cyan
+    Print-Header "1. Determining matching Azure Pipelines agent..."
 
     $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$(Get-Content ${Env:AZP_TOKEN_FILE})"))
     $package = Invoke-RestMethod -Headers @{Authorization=("Basic $base64AuthInfo")} "$(${Env:AZP_URL})/_apis/distributedtask/packages/agent?platform=win-x64&`$top=1"
@@ -118,16 +122,15 @@ Next, create the Dockerfile.
 
     Write-Host $packageUrl
 
-    Write-Host "2. Downloading and installing Azure Pipelines agent..." -ForegroundColor Cyan
+    Print-Header "2. Downloading and installing Azure Pipelines agent..."
 
     $wc = New-Object System.Net.WebClient
     $wc.DownloadFile($packageUrl, "$(Get-Location)\agent.zip")
 
     Expand-Archive -Path "agent.zip" -DestinationPath "\azp\agent"
 
-    try
-    {
-      Write-Host "3. Configuring Azure Pipelines agent..." -ForegroundColor Cyan
+    try {
+      Print-Header "3. Configuring Azure Pipelines agent..."
 
       .\config.cmd --unattended `
         --agent "$(if (Test-Path Env:AZP_AGENT_NAME) { ${Env:AZP_AGENT_NAME} } else { hostname })" `
@@ -138,13 +141,11 @@ Next, create the Dockerfile.
         --work "$(if (Test-Path Env:AZP_WORK) { ${Env:AZP_WORK} } else { '_work' })" `
         --replace
 
-      Write-Host "4. Running Azure Pipelines agent..." -ForegroundColor Cyan
+      Print-Header "4. Running Azure Pipelines agent..."
 
       .\run.cmd
-    }
-    finally
-    {
-      Write-Host "Cleanup. Removing Azure Pipelines agent..." -ForegroundColor Cyan
+    } finally {
+      Print-Header "Cleanup. Removing Azure Pipelines agent..."
 
       .\config.cmd remove --unattended `
         --auth PAT `
