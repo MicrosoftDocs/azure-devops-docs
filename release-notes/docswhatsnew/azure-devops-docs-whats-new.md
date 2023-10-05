@@ -54,8 +54,8 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2023 through Se
 
 ### New articles
 
-- [Title not found in: #6010](/azure/devops/pipelines/release/configure-workflow-identity.md)
-- [Title not found in: #6010](/azure/devops/pipelines/release/troubleshoot-workflow-identity.md)
+- [Title not found in: #6010](/azure/devops/pipelines/release/configure-workflow-identity)
+- [Title not found in: #6010](/azure/devops/pipelines/release/troubleshoot-workflow-identity)
 
 ### Updated articles
 
