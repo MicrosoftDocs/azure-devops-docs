@@ -187,23 +187,23 @@ There are two available choices for removing npm packages from your feed, [Depre
 
 * * *
 
-## Delete a package permanently 
+## Delete packages permanently 
 
-Packages placed in the **Recycle Bin** get deleted permanently after 30 days. However, these packages still count as part of your storage bill. If you want to delete them sooner, you can manually delete them from the Recycle Bin following these steps:
+Packages placed in the **Recycle Bin** are permanently deleted after 30 days, but they continue to contribute to your storage costs during that time.  If you wish to remove them before this period, you can manually delete them from the Recycle Bin by following these steps:
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-1. Select **Recycle Bin** located in the upper-right corner.
+1. Select **Recycle Bin** from the upper-right corner.
 
     :::image type="content" source="../media/delete/recycle-bin.png" alt-text="A screenshot showing how to access the recycle bin in Azure Artifacts.":::
 
-1. Select the package you wish to delete permanently, and then select **Permanently Delete**.
+1. Select the package you want to permanently delete, and then select **Permanently Delete**.
 
     :::image type="content" source="../media/delete/delete-package-permanently.png" alt-text="A screenshot showing how to permanently delete a package in Azure Artifacts.":::
 
-1. Select **Permanently Delete** one more time to confirm your choice. Your package will be deleted permanently.
+1. Select **Permanently Delete** once more to confirm your decision. Your package will be deleted permanently.
 
      :::image type="content" source="../media/delete/delete-package-permanently-confirmation.png" alt-text="A screenshot showing a confirmation message before you delete a package permanently.":::
 
@@ -211,32 +211,26 @@ Packages placed in the **Recycle Bin** get deleted permanently after 30 days. Ho
 
 The number of versions for each package hosted in your feed can grow quickly. To free up storage space, you can set up retention policies to automatically delete old packages.
 
-If you want to retain a package indefinitely, you can promote it to a [view](../concepts/views.md). Packages promoted to a view are exempt from retention policies and won't be deleted.
+If you want to retain a package indefinitely, you can promote it to a [view](../concepts/views.md). Packages promoted to a view are exempt from retention policies and will not be subject to deletion. To configure retention policies for your feed, please follow the steps below:
 
 > [!NOTE]
-> Package demotion is not supported. If you want this feature to be added to future releases, feel free to use **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) page.
-
-Follow the steps below to set up retention policies for your feed:
+> Azure Artifacts does not support package demotion.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Artifacts**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot that shows the Artifacts button.":::
+1. Select **Artifacts**, and then select the gear icon ![gear icon](../../media/icons/gear-icon.png) from the upper-right corner to access your feed's settings.
 
-1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to your feed's settings.
+1. Select **Feed details**, and then check the **Enable package retention** checkbox. Provide values for both the **Maximum number of versions per package** and **Days to keep recently downloaded packages**.
 
-    :::image type="content" source="../media/feed-settings.png" alt-text="A screenshot showing how to navigate to feed settings.":::
+    - **Maximum number of versions per package**: The number of versions for each package you wish to retain.
 
-1. Select **Feed details**, and then select the **Enable package retention** checkbox. Specify a value for both the **Maximum number of versions per package** and **Days to keep recently downloaded packages**.
-
-    :::image type="content" source="../media/retention-policy-settings.png" alt-text="Screenshot that shows how to enable retention policies for your feed.":::
+    - **Days to keep recently downloaded packages**: Packages will only be deleted if they haven't been downloaded for the specified number of days specified here.
     
 1. Select **Save** when you're done.
 
-- **Maximum number of versions per package**: The number of versions for each package you wish to retain.
-
-- **Days to keep recently downloaded packages**: Packages will only get deleted if they haven't been downloaded for the specified number of days indicated here.
+    :::image type="content" source="../media/retention-policy-settings.png" alt-text="A screenshot showing how to set up retention policies for your feed.":::
 
 ::: moniker-end
 
@@ -248,24 +242,19 @@ Follow the steps below to set up retention policies for your feed:
 
 1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your feed's settings. 
 
-    :::image type="content" source="../media/edit-feed-full.png" alt-text="Screenshot that shows how access the feed's settings in Team Foundation Server.":::
-
 1. From the **Retention** tab, specify a value for both the **Maximum number of versions per package** and **Days to keep recently downloaded packages**.
     
-    :::image type="content" source="../media/retention-policy-settings-tfs.png" alt-text="Screenshot that shows retention policies in Team Foundation Server.":::
-   
+    - **Maximum number of versions per package**: The number of versions for each package you wish to retain.
+    - **Days to keep recently downloaded packages**: Packages will only get deleted if they haven't been downloaded for the specified number of days indicated here.
+  
 1. Select **Save** when you're done.
-
-- **Maximum number of versions per package**: The number of versions for each package you wish to retain.
-
-- **Days to keep recently downloaded packages**: Packages will only get deleted if they haven't been downloaded for the specified number of days indicated here.
 
 ::: moniker-end
 
 > [!NOTE]
-> When you enable package retention, a version of a package will be deleted when *both* of the following criteria are met:
+> When you enable retention policies, a version of a package will be deleted when **both** of the following conditions are met:
 > - The number of published versions reaches the **Maximum number of versions per package** limit.
-> - A version of that package has not been downloaded for the period defined in **Days to keep recently downloaded packages**.
+> - A version of that package has not been downloaded for the period specified in **Days to keep recently downloaded packages**.
 
 ## Recover deleted packages
 
