@@ -70,11 +70,11 @@ Next, create the Dockerfile.
 4. Save the following content to a file called `C:\azp-agent-in-docker\azp-agent-windows.dockerfile`:
 
     ```dockerfile
-    FROM mcr.microsoft.com/windows/servercore:ltsc2019
+    FROM mcr.microsoft.com/windows/servercore:ltsc2022
 
-    WORKDIR /azp
+    WORKDIR /azp/
 
-    COPY start.ps1 .
+    COPY ./start.ps1 ./
 
     CMD powershell .\start.ps1
     ```
@@ -172,10 +172,19 @@ Now that you have created an image, you can run a container.
     docker run -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<PAT token>" -e AZP_AGENT_NAME="azp-agent-windows" azp-agent:windows
     ```
 
-Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
+    You might need to specify the `--network` parameter if you run into network issues.
 
-If you want a fresh agent container for every pipeline run, pass [the `--once` flag](windows-agent.md#run-once) to the `run` command.
-You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
+    ```powershell
+    docker run --network "Default Switch" -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<PAT token>" -e AZP_AGENT_NAME="azp-agent-windows" azp-agent:windows
+    ```
+
+    You might need to specify `--interactive` and `--tty` flags (or simply `-it`) if you want to be able to stop the container and remove the agent with `Ctrl` + `C`.
+
+    If you want a fresh agent container for every pipeline job, pass [the `--once` flag](windows-agent.md#run-once) to the `run` command.
+
+    With the `--once` flag, you might want to use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start a new copy of the container when the job completes.
+
+Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
 ## Linux
 
@@ -373,7 +382,7 @@ Now that you have created an image, you can run a container.
     docker run -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<PAT token>" -e AZP_AGENT_NAME="azp-agent-linux" azp-agent:linux
     ```
 
-    For some images, you might need to specify `--interactive` and `--tty` flags (or simply `-it`) if you want to be able to stop the container with `Ctrl` + `C`.
+    You might need to specify `--interactive` and `--tty` flags (or simply `-it`) if you want to be able to stop the container and remove the agent with `Ctrl` + `C`.
 
     ```bash
     docker run --interactive --tty -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<PAT token>" -e AZP_AGENT_NAME="azp-agent-linux" azp-agent:linux
@@ -384,6 +393,8 @@ Now that you have created an image, you can run a container.
     ```bash
     docker run -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<PAT token>" -e AZP_AGENT_NAME="azp-agent-linux" azp-agent:linux --once
     ```
+
+    With the `--once` flag, you might want to use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start a new copy of the container when the job completes.
 
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
