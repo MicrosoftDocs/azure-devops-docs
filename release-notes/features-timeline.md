@@ -30,20 +30,9 @@ Each feature is linked to an article where you can learn more about a particular
 
 ### GitHub Advanced Security for Azure DevOps
 
-GitHub Advanced Security (GHAS) for Azure DevOps, now in public preview, is a suite of developer security analysis tools integrated directly into Azure DevOps to protect your Azure Repos and Pipelines. It includes:
-- Secret Scanning to detect credentials and other secrets that may have already been committed to your Azure Repos, as well as push protection to prevent developers from accidentally pushing new secrets.
-- Dependency Scanning to identify any known vulnerable open-source packages you may be using, and offer straightforward guidance on how to upgrade those packages to fix the vulnerabilities.
-- Code Scanning with CodeQL, a powerful static analysis engine that identifies deep application security vulnerabilities in your source code.
- 
 ### Minimizing the risks associated with credential theft
 
-Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. These mechanisms are not created equal from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
-
-To minimize the risks of credential theft, we have work in flight covering four distinct areas:
-- Enable administrators to improve authentication security through control plane policies.
-- Reducing the need for PATs and other stealable secrets by adding support for more secure alternatives.
-- Deepening Azure DevOps' integration with Azure Active Directory to better support its various security features.
-- Avoiding the need to store production secrets in Azure Pipelines service connections.
+Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. These mechanisms are not created equally from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure. 
 
 We expect this work to be a major focus of our efforts for multiple quarters.
 <table>
@@ -115,9 +104,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
 
 ### Updated Boards experience
 
-The Azure Boards user experience is being updated from the ground up. While the functionality remains the same, you can expect a more modern design, responsive reflows, improved performance, and improved accessibility. 
-
-[Learn more](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview) about how to enable the New Boards Hub and provide us with feedback.
+The Azure Boards user experience has been updated from the ground up. While the functionality remains the same, you can expect a more modern design, responsive reflows, improved performance, and improved accessibility. This quarter we are rolling out the New Boards Hub as the default experience to all organizations. 
 
 Note that most new features we are shipping in Boards are only available in the New Boards Hub. These investments include:
 
