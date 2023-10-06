@@ -70,7 +70,7 @@ Teams can set a default iteration different from the backlog iteration. The back
 All work items that you create from your team context are automatically assigned both the team's default area path and default iteration path.
 
 
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+[!INCLUDE [temp](../../includes/version-selector.md)]
 
 
 <a id="open-project-settings" />

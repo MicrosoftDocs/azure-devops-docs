@@ -19,7 +19,7 @@ While you set most permissions through the web portal, you can use other tools t
 To learn more about permissions not available through a user interface, see the [Security namespace and permission reference, Internal namespaces and permissions](namespace-reference.md#internal).  
 
 
-[!INCLUDE [version-selector-minimize](../../includes/version-selector-minimize.md)]
+[!INCLUDE [version-selector-minimize](../../includes/version-selector.md)]
 
 Additional options include the following tools: 
 

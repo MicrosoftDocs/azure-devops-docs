@@ -246,8 +246,6 @@ The help provides information on authentication alternatives and unattended conf
 
 [!INCLUDE [include](includes/system-prefer-git-from-path.md)]
 
-[!INCLUDE [include](includes/v3/qa-agent-version.md)]
-
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [include](includes/v3/qa-agent-version.md)]

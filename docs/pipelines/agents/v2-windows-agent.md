@@ -98,9 +98,9 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
       [!INCLUDE [include](includes/agent-pools-tab.md)]
 
-1. Click **Download agent**.</li>
+1. Click **Download agent**.</br>
 
-1. On the **Get agent** dialog box, click **Windows**.</li>
+1. On the **Get agent** dialog box, click **Windows**.</br>
 
 1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
 The x64 version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.

@@ -153,7 +153,7 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 1. On the right pane, click the **Download** button.
 
-1. Follow the instructions on the page.</li>
+1. Follow the instructions on the page.</br>
 
 1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.
 
@@ -169,15 +169,15 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
    [!INCLUDE [include](includes/agent-pools-tab.md)]
 
-1. Click **Download agent**.</li>
+1. Click **Download agent**.</br>
 
-1. On the **Get agent** dialog box, click **Linux**.</li>
+1. On the **Get agent** dialog box, click **Linux**.</br>
 
 1. On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions.
 
 1. On the right pane, click the **Download** button.
 
-1. Follow the instructions on the page.</li>
+1. Follow the instructions on the page.</br>
 
 1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.
 
