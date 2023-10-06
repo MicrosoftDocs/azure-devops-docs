@@ -35,16 +35,16 @@ Before registering an agent using a Service Principal you must have [created a S
 
 ## Register the agent using a Service Principal
 
-Specify **SP** when prompted for authentication type during agent configuration to use a Service Principal to authenticate during agent registration.
+1. Specify **SP** when prompted for authentication type during agent configuration to use a Service Principal to authenticate during agent registration.
 
-When prompted, supply the **Client(App) ID** and the **Tenant ID**.
+1. When prompted, supply the **Client(App) ID** and the **Tenant ID**.
 
-:::image type="content" source="./media/agent-registration/service-principal-ids.png" alt-text="Screenshot of application ids.":::
+   :::image type="content" source="./media/agent-registration/service-principal-ids.png" alt-text="Screenshot of application ids.":::
 
-Specify the client secret. The client secret is used only during agent registration.
+1. Specify the client secret. The client secret is used only during agent registration.
 
-:::image type="content" source="./media/agent-registration/service-principal-client-secret.png" alt-text="Screenshot of client secret.":::
+   :::image type="content" source="./media/agent-registration/service-principal-client-secret.png" alt-text="Screenshot of client secret.":::
 
-Specify the name of the agent pool for which you granted administrator permission for the Service Principal, and continue the agent registration steps.
+1. Specify the name of the agent pool for which you granted administrator permission for the Service Principal, and continue the agent registration steps.
 
 
