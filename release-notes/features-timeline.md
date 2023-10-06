@@ -190,19 +190,25 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q2</td>
          <td>Future</td>
-      </tr>
+      </tr>                  
       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules (preview)</a></td>
+         <td>Boards</td>
+         <td>2023 Q3</td>
+         <td>Future</td>
+      </tr>    
+       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules (general availability)</a></td>
+         <td>Boards</td>
+         <td>2023 Q4</td>
+         <td>Future</td>
+      </tr>  
+       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (general availability)</a></td>
          <td>Boards</td>
-         <td>2023 Q3</td>
+         <td>2023 Q4</td>
          <td>Future</td>
-      </tr>                
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
-         <td>Boards</td>
-         <td>2023 Q3</td>
-         <td>Future</td>
-      </tr>         
+      </tr>        
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New boards hub on by default.](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
          <td>Boards</td>
@@ -300,13 +306,13 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/custom-vars-in-checks" data-raw-source="[Custom variables in checks](/azure/devops/release-notes/roadmap/2022/custom-vars-in-checks)">Custom variables in checks</a></td>
+         <td><a href="/azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks" data-raw-source="[Custom variables in checks](azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks)">Custom variables in checks</a></td>
          <td>Pipelines</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-scalability" data-raw-source="[Checks scalability](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/)">Checks scalability</a></td>
+         <td><a href="https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/" data-raw-source="[Checks scalability](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/)">Checks scalability</a></td>
          <td>Pipelines</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q2</td>
          <td>Future</td>
@@ -314,13 +320,13 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-sequencing" data-raw-source="[Sequencing approvals and other checks](/azure/devops/release-notes/roadmap/2022/checks-sequencing)">Sequencing approvals and other checks</a></td>
          <td>Pipelines</td>
-         <td>2023 Q3</td>
+         <td>2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/service-connections-in-checks" data-raw-source="[Service connections in checks](/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
          <td>Pipelines</td>
-         <td>2023 Q4</td>
+         <td>Future</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -361,7 +367,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>      
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules (general availability)</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
@@ -369,11 +375,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings" data-raw-source="[In-product recommendations for secure settings](/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td>
         <td>Pipelines</td>
         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-scalability" data-raw-source="[Checks scalability](/azure/devops/release-notes/roadmap/2022/checks-scalability)">Checks scalability</a></td>
-         <td>Pipelines</td>
-         <td>Future</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2022/remove-node-6" data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
@@ -442,19 +443,9 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode" data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode)">Support Flexible Orchestration mode in scale set agent pools</a></td>
-        <td>Pipelines</td>
-        <td>Future</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/support-pipelines-app" data-raw-source="[Support Pipelines App with GitHub Enterprise](/azure/devops/release-notes/roadmap/support-pipelines-app)">Support Pipelines App with GitHub Enterprise</a></td>
         <td>Pipelines</td>
         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Checks extensibility](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
-         <td>Pipelines</td>
-         <td>Future</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/package-promote-task" data-raw-source="[Package promote task in Azure Pipelines](/azure/devops/release-notes/roadmap/package-promote-task)">Package promote task in Azure Pipelines</a></td>
