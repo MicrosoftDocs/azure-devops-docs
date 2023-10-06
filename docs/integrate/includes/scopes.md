@@ -25,8 +25,6 @@
 | | `vso.graph_manage` | Graph (manage) | Grants the ability to read user, group, scope and group membership information, and to add users, groups, and manage group memberships. |
 | | `vso.identity` | Identity (read) | Grants the ability to read identities and groups. |
 | | `vso.identity_manage` | Identity (manage) | Grants the ability to read, write, and manage identities and groups. |
-| **Load Test** | `vso.loadtest` | Load test (read) | Grants the ability to read your load test runs, test results, and APM artifacts. |
-| | `vso.loadtest_write` | Load test (read and write) | Grants the ability to create and update load test runs, and read metadata including test results and APM artifacts. |
 | **Machine Group** | `vso.machinegroup_manage` | Deployment group (read, manage) | Provides ability to manage deployment group and agent pools. |
 | **Marketplace** | `vso.gallery` | Marketplace | Grants read access to public and private items and publishers. |
 | | `vso.gallery_acquire` | Marketplace (acquire) | Grants read access and the ability to acquire items. |
@@ -78,5 +76,6 @@
 | | `vso.wiki_write` | Wiki (read and write) | Grants the ability to read, create and updates wikis, wiki pages and wiki attachments. |
 | **Work Items** | `vso.work` | Work items (read) | Grants the ability to read work items, queries, boards, area and iterations paths, and other work item tracking related metadata. Also grants the ability to execute queries, search work items and to receive notifications about work item events via service hooks. |
 | | `vso.work_write` | Work items (read and write) | Grants the ability to read, create, and update work items and queries, update board metadata, read area and iterations paths other work item tracking related metadata, execute queries, and to receive notifications about work item events via service hooks. |
-| | `vso.work_full` | Work items (read, write, and manage) | Grants full access to work items, queries, backlogs, plans, and work item tracking metadata, including process template imports. Also provides the ability to receive notifications about work item events via service hooks. |
+| | `vso.work_full` | Work items (full) | Grants full access to work items, queries, backlogs, plans, and work item tracking metadata. Also provides the ability to receive notifications about work item events via service hooks. |
+| **User Impersonation** | `user_impersonation` | User Impersonation | Have full access to Visual Studio Team Services REST APIs. **Request and/or consent this scope with caution as it is very powerful!** |
 

@@ -35,13 +35,13 @@ sections:
         answer: |
           A: Azure DevOps is free for these users to join:
           
-          * Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/), like version control and tools for Agile, Java, and build and release management. 
+          * Five users who get Basic features, like version control and tools for Agile, Java, and build and release management. 
           
-          * Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), like working with your backlog, work items, and queries.
+          * Unlimited users who get Stakeholder features, like working with your backlog, work items, and queries.
           
-          * Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features.
-          
-              [Learn what else you get with Azure DevOps](https://visualstudio.microsoft.com/team-services/pricing/).
+          * Unlimited Visual Studio subscribers, who also get Basic features.
+
+          For more information, see [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
           
           <a name="browser-problems"></a>
           

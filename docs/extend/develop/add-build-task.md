@@ -8,16 +8,14 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-date: 12/27/2022
+date: 09/21/2023
 ---
 
 # Add a custom pipelines task extension
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps.
-
-For more information about the new cross-platform build/release system, see [What is Azure Pipelines?](../../pipelines/get-started/what-is-azure-pipelines.md).
+Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. For more information about the new cross-platform build/release system, see [What is Azure Pipelines?](../../pipelines/get-started/what-is-azure-pipelines.md)
 
 > [!NOTE]
 > This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, check out the [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
@@ -26,15 +24,16 @@ For more information about the new cross-platform build/release system, see [Wha
 
 To create extensions for Azure DevOps, you need the following software and tools.
 
-- An organization in Azure DevOps. For more information, see [Create an organization](../../organizations/accounts/create-organization.md).
-- A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support. Go to [code.visualstudio.com](https://code.visualstudio.com/) to download the latest version.
-- The [latest version](https://nodejs.org/en/download/) of Node.js.
-- TypeScript Compiler 2.2.0 or greater, although we recommend version 4.0.2 or newer. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
-    <a name="cli"></a>
-- [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli) to package your extensions.
-     You can install **tfx-cli** by using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.
-- A `home` directory for your project.
-  The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
+
+|Software/tool |Information |
+|---------|---------|
+|Azure DevOps organization    | [Create an organization](../../organizations/accounts/create-organization.md).       |
+|A text editor  | For many of the tutorials, we use Visual Studio Code, which provides intellisense and debugging support. [Download the latest version](https://code.visualstudio.com/).        |
+|Node.js    |[Download the latest version](https://nodejs.org/en/download/).          |
+|npmjs.com 4.0.2 or newer    |TypeScript Compiler. [Download the latest version](https://www.npmjs.com/package/typescript).         |
+|tfx-cli   | Package your extension with [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli). using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.|
+|Azure DevOps extension SDK    | [Install the azure-devops-extension-sdk package](https://github.com/Microsoft/azure-devops-extension-sdk)|
+| A `home` directory for your project| The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:|
 
   ```
   |--- README.md    
@@ -42,9 +41,7 @@ To create extensions for Azure DevOps, you need the following software and tools
       |--- extension-icon.png  
   |--- buildandreleasetask            // where your task scripts are placed
   |--- vss-extension.json             // extension's manifest
-  ```
-
-- The [azure-devops-extension-sdk package installation](https://github.com/Microsoft/azure-devops-extension-sdk).
+  ``` 
 
 > [!IMPORTANT]
 > The dev machine needs to run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of azure-pipelines-task-lib.
@@ -106,15 +103,13 @@ Do every part of the steps withing this procedure in the `buildandreleasetask` f
    ```
 
    > [!NOTE]
-   > To have the `tsc` command available, make sure that TypeScript is installed globally with npm in your development environment. If you skip this step, TypeScript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
+   > Make sure that TypeScript is installed globally with npm in your development environment, so the `tsc` command is available. If you skip this step, TypeScript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
 
 8. Create `tsconfig.json` compiler options. This file ensures that your TypeScript files are compiled to JavaScript files.
 
    ```
-   tsc --init --target es6
+   tsc --init --target es2023
    ```
-
-   To ensure the ES6 (rather than ES5) standard is used, we added the `--target es6` parameter.
 
 ### Create custom task
 
@@ -176,13 +171,11 @@ See the following descriptions of some of the components of the `task.json` file
 | `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
 
 > [!NOTE]
-> You can create an `id` with the following command in PowerShell:
-> ```powershell
-> (New-Guid).Guid
-> ```
-
-> [!NOTE]
-> For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, see the **[Build/release task reference](./integrate-build-task.md)**.
+> - You can create an `id` with the following command in PowerShell:
+>   ```powershell
+>   (New-Guid).Guid
+>   ```
+> - For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, see the **[Build/release task reference](./integrate-build-task.md)**.
 
 3. Create an `index.ts` file by using the following code as a reference. This code runs when the task gets called.
 
@@ -208,7 +201,7 @@ run();
 
 4. Enter "tsc" from the `buildandreleasetask` folder to compile an `index.js` file from `index.ts`.
 
-### Run the task
+### Run the task 
 
 1. Run the task with `node index.js` from PowerShell.
 
@@ -241,7 +234,10 @@ run();
     Hello Human
    ```
 
-This time, the task succeeded because `samplestring` was supplied and it correctly outputted "Hello Human"!
+This time, the task succeeded because `samplestring` was supplied and it correctly outputted "Hello Human!"
+
+> [!TIP]
+> For information about various task runners and how to include the latest node version in the task.json, see [Node runner update guidance for Azure Pipelines task authors](https://devblogs.microsoft.com/devops/node-runner-update-guidance-for-azure-pipelines-task-authors/#upcoming-changes).
 
 <a name="testscripts"></a>
 
@@ -415,7 +411,7 @@ The extension manifest contains all of the information about your extension. It 
 After you've written your extension, the next step toward getting it into the Visual Studio Marketplace is to package all of your files together. All extensions are packaged
 as VSIX 2.0-compatible .vsix files. Microsoft provides a cross-platform command-line interface (CLI) to package your extension.
 
-1. Once you have the [tfx-cli](#cli), go to your extension's home directory, and run the following command:
+1. Once you have the [tfx-cli](#prerequisites), go to your extension's home directory, and run the following command:
 
    ```no-highlight
    tfx extension create --manifest-globs vss-extension.json
@@ -438,7 +434,7 @@ To publish your extension, you first [create your publisher](#create-your-publis
 ### Create your publisher
 
 All extensions, including extensions from Microsoft, are identified as being provided by a publisher.
-If you aren't already a member of an existing publisher, you'll create one.
+If you aren't already a member of an existing publisher, you create one.
 
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage).
 2. If you aren't already a member of an existing publisher, you're prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select **Publish extensions** under **Related Sites**.
@@ -455,12 +451,13 @@ without the need to share a set of credentials across users.
 
 1. Find the **Upload new extension** button, go to your packaged .vsix file, and select **Upload**.
 
-   You can also upload your extension via the command line by using the `tfx extension publish` command instead of `tfx extension create` to package and publish your extension in one step.
-   You can optionally use `--share-with` to share your extension with one or more accounts after publishing. You'll need a personal access token, too. For more information, see [Create a personal access token](../publish/command-line.md#create-a-personal-access-token).
+   You can also upload your extension via the command line interface (CLI) by using the `tfx extension publish` command instead of `tfx extension create` to package and publish your extension in one step. You can optionally use `--share-with` to share your extension with one or more accounts after it's published. 
 
    ```no-highlight
    tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
    ```
+
+   - [Create a personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). Select the "Marketplace (publish)" scope. This scope limits the token to only being able to publish extensions to the Marketplace. 
 
 ### Share your extension
 
@@ -480,31 +477,22 @@ Now that your extension is shared in the Marketplace, anyone who wants to use it
 
 Create a build and release pipeline on Azure DevOps to help maintain the custom task on the Marketplace.
 
-### Prerequisites
+### Prerequisites - Create a build and release pipeline to publish extension
 
-- A project in your organization. For more information, see [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
-- An [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
-  1. Go to [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)
-  2. Choose **Get it free** and install the extension into your organization.
-
-Create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How to use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
-
-Declare the following variables in the variable group.
-
-- `publisherId`: ID of your marketplace publisher
-- `extensionId`: ID of your extension, as declared in the vss-extension.json file
-- `extensionName`: Name of your extension, as declared in the vss-extension.json file
-- `artifactName`: Name of the artifact being created for the VSIX file
-
-Create a new Visual Studio Marketplace service connection and grant access permissions for all pipelines. For more information about creating a service connection, see [Service connections](../../pipelines/library/service-endpoints.md?tabs=yaml).
-
-![Screenshot that shows the new service connection pane.](media/new-service-connection.png)
-
-![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png)
-
+|Software/tool |Information |
+|---------|---------|
+|Azure DevOps project    | [Create a project](../../organizations/projects/create-project.md?tabs=preview-page)  |
+|Azure DevOps Extension Tasks extension | Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)  in your organization. |
+|Pipeline library variable group.    | Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:</br>
+- `publisherId`: ID of your marketplace publisher</br>
+- `extensionId`: ID of your extension, as declared in the vss-extension.json file</br>
+- `extensionName`: Name of your extension, as declared in the vss-extension.json file</br>
+- `artifactName`: Name of the artifact being created for the VSIX file</br>|
+|Service connection | Create a new Marketplace service connection and grant access permissions for all pipelines. 
+![Screenshot that shows the new service connection pane.](media/new-service-connection.png)</br>
+![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png) |
 :::moniker range=">=azure-devops-2019"
-
-Use the following example to create a new pipeline with YAML. Learn more about how to [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](/azure/devops/pipelines/yaml-schema/).
+| YAML pipeline | Use the following example to create a new pipeline with YAML. For more information, see [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](/azure/devops/pipelines/yaml-schema/).
 
 ```yaml
 trigger: 
@@ -617,7 +605,7 @@ stages:
               extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
               extensionPricing: 'free'
 ```
-
+|
 :::moniker-end
 
 For more help with triggers, such as CI and PR triggers, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
@@ -731,7 +719,7 @@ See the following frequently asked questions (FAQs) about adding custom build or
 
 ### Q: How can I restrict Azure Pipelines commands usage for task?
 
-You can restrict Azure Pipelines commands usage and variables, which can be set by task.
+You can restrict Azure Pipelines commands usage and variables, which get set by task.
 This action could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. We recommend that you set it up for new tasks.
 To apply, you may need to add the following statement to your task.json file:
 
@@ -759,7 +747,7 @@ If `restricted` value is specified for `mode` - you can only execute the followi
 - `prependpath`
 - `publish`
 
-`settableVariables` restrictions allow you to pass in an allowlist of variables, which can be set by `setvariable` or `prependpath` commands. It also allows basic regular expressions. For example, if your allowlist was: `['abc', 'test*']`, setting `abc`, `test`, or `test1` as variables with any value or prepending them to the path would succeed, but if you try to set a variable proxy it would warn. Empty list means that no variables can be changed by task.
+`settableVariables` restrictions allow you to pass in an allowlist of variables, which get set by `setvariable` or `prependpath` commands. It also allows basic regular expressions. For example, if your allowlist was: `['abc', 'test*']`, setting `abc`, `test`, or `test1` as variables with any value or prepending them to the path would succeed, but if you try to set a variable proxy it would warn. Empty list means that no variables get changed by task.
 
 If either the `settableVariables` or `commands` key is omitted, relevant restriction isn't applied.
 

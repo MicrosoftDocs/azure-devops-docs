@@ -1,0 +1,2 @@
+* For best performance, we recommend a maximum of 50 pipelines in a single repository. For acceptable performance, we recommend a maximum of 100 pipelines in a single repository. The more pipelines there are, the slower the processing of a push to that repository. Whenever there is push to a repository, Azure Pipelines needs to load all YAML pipelines in that repository to figure out if any of them need to run, and each loaded pipeline incurs a performance penalty.
+* Azure Pipelines loads a maximum of 2000 branches from a repository.

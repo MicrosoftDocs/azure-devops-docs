@@ -86,6 +86,10 @@ If you want to set up YAML pipelines or if you want to enhance the experience wi
 
 To allow traffic from Azure DevOps to reach your GitHub Enterprise Server, add the IP addresses or service tags specified in [Inbound connections](../../organizations/security/allow-list-ip-url.md#inbound-connections) to your firewall's allowlist. If you use ExpressRoute, make sure to also include [ExpressRoute IP ranges](../../organizations/security/allow-list-ip-url.md#azure-devops-expressroute-connections) to your firewall's allowlist.
 
+## Limitations
+
+[!INCLUDE [limitations](includes/limitations-gh.md)]
+
 ## FAQ
 
 Problems related to GitHub Enterprise integration fall into the following categories:
@@ -106,7 +110,7 @@ Problems related to GitHub Enterprise integration fall into the following catego
 
 [!INCLUDE [qa](includes/qa2-1.md)]
 
-[!INCLUDE [qa](includes/qa3.md)]
+[!INCLUDE [qa](includes/qa3-ghes.md)]
 
 ### Failing checkout
 
