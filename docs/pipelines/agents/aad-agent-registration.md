@@ -35,7 +35,7 @@ Before registering an agent using device code flow, you must grant the desired u
 
 ## Register the agent using device code flow
 
-1. Specify **AAD** when prompted for authentication type during agent configuration to use a Service Principal to authenticate during agent registration. You'll receive a prompt similar to the following message: **lease finish AAD device code flow in browser (https://microsoft.com/devicelogin), user code: A12WDTGEFD**
+1. Specify **AAD** when prompted for authentication type during agent configuration to use a Service Principal to authenticate during agent registration. You'll receive a prompt similar to the following message: **Please finish AAD device code flow in browser (https://microsoft.com/devicelogin), user code: A12WDTGEFD**
 
 1. Go to the specified link, enter the user code, and complete the sign-in process there.
 
