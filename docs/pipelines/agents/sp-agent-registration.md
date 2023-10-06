@@ -16,7 +16,7 @@ Before registering an agent using a Service Principal you must have [created a S
 
 1. Open a browser and navigate to the **Agent pools** tab for your Azure Pipelines organization or Azure DevOps Server or TFS server:
 
-   [!INCLUDE [agent-pools-tab](./includes/agent-pools-tab.md)]
+   [!INCLUDE [agent-pools-tab](./includes/agent-pools-tab/agent-pools-tab.md)]
 
 1. Select the pool on the right side of the page and then click **Security**.
 
@@ -28,3 +28,7 @@ Before registering an agent using a Service Principal you must have [created a S
 
 > [!NOTE]
 > If you see a message like this: **Sorry, we couldn't add the identity. Please try a different identity.**, you probably followed the above steps for an organization owner or TFS or Azure DevOps Server administrator. You don't need to do anything; you already have permission to administer the agent pool.
+
+## Register the agent using the Service Principal
+
+Download and run the agent script
