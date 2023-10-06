@@ -209,10 +209,10 @@ steps:
   displayName: Bundler caching
   inputs:
     key: 'gems | "$(Agent.OS)" | Gemfile.lock'
+    path: $(BUNDLE_PATH)
     restoreKeys: | 
       gems | "$(Agent.OS)"
-      gems
-    path: $(BUNDLE_PATH)
+      gems   
 ```
 
 ## Ccache (C/C++)
@@ -232,12 +232,12 @@ steps:
   displayName: Install ccache and update PATH to use linked versions of gcc, cc, etc
 
 - task: Cache@2
+  displayName: Ccache caching
   inputs:
-    key: 'ccache | "$(Agent.OS)"'
+    key: 'ccache | "$(Agent.OS)" | $(Build.SourceVersion)'
     path: $(CCACHE_DIR)
     restoreKeys: | 
       ccache | "$(Agent.OS)"
-  displayName: ccache
 ```
 
 See [Ccache configuration settings](https://ccache.dev/manual/latest.html#_configuration_settings) for more details.
