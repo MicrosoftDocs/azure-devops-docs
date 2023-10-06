@@ -95,7 +95,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
        <tr>
          <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
          <td>General</td>
-         <td>2023 Q4</td>
+         <td>2023 H2</td>
          <td>N/A</td>
       </tr>
       <tr>
@@ -106,12 +106,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable alternate authentication credentials](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
-         <td>General</td>
-         <td>Future</td>
-         <td>N/A</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
          <td>General</td>
          <td>Future</td>
          <td>N/A</td>
@@ -351,7 +345,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     <tbody>
       <tr>          
       <tr>
-        <td rowspan="13"><strong>2023 Q4</strong></td>
+        <td rowspan="12"><strong>2023 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
         <td>General</td>
         <td>Future</td>
@@ -369,11 +363,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
         <td>Boards</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
-        <td>Repos</td>
         <td>Future</td>
       </tr>
       <tr>
@@ -417,7 +406,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-      <td rowspan="13"><strong>Future</strong></td>
+      <td rowspan="14"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -446,7 +435,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>         
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
+        <td>Repos</td>
+        <td>Future</td>
+      </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode" data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode)">Support Flexible Orchestration mode in scale set agent pools</a></td>
         <td>Pipelines</td>
