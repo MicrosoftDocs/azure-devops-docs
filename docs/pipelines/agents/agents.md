@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18, devx-track-azurecli
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 07/26/2023
+ms.date: 10/09/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -416,7 +416,6 @@ To register an agent, you need to be a member of the [administrator role](pools-
 When you register an agent, you can choose from the following authentication types. Agent setup will prompt you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
 
 [!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
-
 
 :::moniker range="<= azure-devops-2022"
 
