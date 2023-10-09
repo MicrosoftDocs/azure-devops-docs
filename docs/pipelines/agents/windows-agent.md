@@ -112,10 +112,9 @@ When setup asks for your server URL, for Azure DevOps Server, answer `https://{m
 
 ### Agent setup authentication type
 
-[!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
-
 When setup asks for your authentication type, choose one of the following authentication types. Agent setup will prompt you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
 
+[!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
 :::moniker range="<= azure-devops-2022"
 
@@ -129,8 +128,7 @@ Windows agents have the following two additional authentication options on Azure
 
 :::moniker-end
 
-Learn more at [Communication with Azure Pipelines or TFS](agents.md#communication).
-
+The authentication method used for registering the agent is used only during agent registration. To learn more about how agents communicate with Azure Pipelines after registration, see [Communication with Azure Pipelines or TFS](agents.md#communication).
 
 ### Choose interactive or service mode
 

@@ -7,8 +7,6 @@ author: steved0x
 ms.date: 10/09/2023
 ---
 
-When setup asks for your authentication type, choose one of the following authentication types. Agent setup will prompt you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](../agent-authentication-options.md).
-
 :::moniker range="azure-devops"
 
 * [**PAT**](../pat-agent-registration.md)
