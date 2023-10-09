@@ -21,7 +21,7 @@ Azure Pipelines provides a choice of several authentication options you can use 
 
 ## Personal access token (PAT)
 
-Specify **PAT** for authentication type during agent configuration to use a personal access token to authenticate during agent registration, then specify a personal access token (PAT) with **Agent Pools (read, manage)** scope (or **Deployment group (read, manage)** scope for a [deployment group](../release/deployment-groups/index.md) agent) may be used for agent registration.
+Specify **PAT** for authentication type during agent configuration to use a personal access token to authenticate during agent registration, then specify a personal access token (PAT) with **Agent Pools (read, manage)** scope (or **Deployment group (read, manage)** scope for a [deployment group](../release/deployment-groups/index.md) agent) can be used for agent registration.
 
 For more information, see [Register an agent using a personal access token (PAT)](./pat-agent-registration.md)
 
