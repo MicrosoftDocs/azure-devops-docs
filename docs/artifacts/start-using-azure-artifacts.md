@@ -76,6 +76,23 @@ Using Azure Artifacts, you have the capability to both publish and consume vario
 | **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
 | **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
 
+## FAQs
+
+##### Q: Which artifacts count toward my total billed storage?
+
+A: You get billed for all package types (npm, NuGet, Python, Maven, Cargo, and Universal Packages) including packages stored from upstream sources. However, you don't get billed for Pipeline Artifacts, and Pipeline Caching.
+
+> [!NOTE]
+> Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, navigate to your recycle bin and delete them manually.
+
+##### Q: How can I control how many days Artifacts are kept?
+
+A: You can set up the retention policies to delete packages automatically. For more information, see [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies).
+
+##### Q: How can I delete specific packages?
+
+A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for details.
+
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2019"
@@ -156,26 +173,26 @@ Follow the steps outlined below to view your billing settings for your organizat
 
 ## FAQs
 
-### Q: Which artifacts count toward my total billed storage?
+##### Q: Which artifacts count toward my total billed storage?
 
 A: You get billed for all package types (npm, NuGet, Python, Maven, Cargo, and Universal Packages) including packages stored from upstream sources. However, you don't get billed for Pipeline Artifacts, and Pipeline Caching.
 
 > [!NOTE]
 > Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, navigate to your recycle bin and delete them manually.
 
-### Q: I'm storing Artifacts but my storage consumption shows 0 GiB?
+##### Q: I'm storing Artifacts but my storage consumption shows 0 GiB?
 
 A: 1 GiB is currently our lowest granularity, so you most likely haven't reached 1 GiB yet.
 
-### Q: How can I control how many days Artifacts are kept?
+##### Q: How can I control how many days Artifacts are kept?
 
 A: You can set up the retention policies to delete packages automatically. For more information, see [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies).
 
-### Q: How can I delete specific packages?
+##### Q: How can I delete specific packages?
 
 A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for details.
 
-### Q: How long does it take for deleted Artifacts to reflect in the amount of billed storage?
+##### Q: How long does it take for deleted Artifacts to reflect in the amount of billed storage?
 
 A: Deletion of artifacts doesn't register immediately. Storage consumption should be updated within 24 hours, but in some cases it may take up to 48 hours. If you're blocked from uploading Artifacts, as a workaround you can temporarily increase your usage level, then reduce the level back once the storage metrics are updated.
 
@@ -183,7 +200,7 @@ The **used** column on the Billing page of your Organization gets updated once a
 
 :::image type="content" source="media/settings-vs-storage.png" alt-text="Artifacts billing settings vs Artifacts storage data":::
 
-### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
+##### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
 A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you lower your storage below 2 GiB. Or, you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
 
