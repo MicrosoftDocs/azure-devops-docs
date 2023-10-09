@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 05/05/2023
+ms.date: 10/09/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -117,7 +117,9 @@ Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ### Authentication type
 
-[!INCLUDE [include](includes/v3/unix-authentication-types.md)]
+When you register an agent, you can choose from the following authentication types. Agent setup will prompt you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
+
+[!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
 ## Run interactively
 
