@@ -2,13 +2,13 @@
 title: Register an agent using device code flow
 description: Learn how to register a self-hosted agent using device code flow
 ms.topic: conceptual
-ms.date: 09/22/2023
+ms.date: 10/09/2023
 monikerRange: '> azure-devops-2022'
 ---
 
 # Register an agent using device code flow
 
-You can register an agent using device code flow starting with [agent version 3.226.2](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v3.226.2) by specifying **AAD** as the agent authentication option.
+You can register an agent using device code flow starting with [agent version 3.227.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v3.227.1) by specifying **AAD** as the agent authentication option.
 
 ## Grant the user access to the agent pool
 
