@@ -14,7 +14,7 @@ Azure Pipelines provides a choice of several authentication options you can use 
 |--------------------------|-----------------------|---------------------------|
 | [Personal access token (PAT)](#personal-access-token-pat) | Supported | Supported when server is configured with HTTPS |
 | [Service Principal (SP)](#service-principal-sp)      | Supported | Currently not supported |
-| [Device code flow (AAD)](#device-code-flow-aad)     | Supported | Currently not suported |
+| [Device code flow (AAD)](#device-code-flow-aad)     | Supported | Currently not supported |
 | [Integrated](#integrated) | Not supported | Windows agents only |
 | [Negotiate](#negotiate) | Not supported | Windows agents only |
 | [Alternate (ALT)](#alternate-alt) | Not supported | Supported when server is configured with HTTPS |
@@ -91,7 +91,7 @@ To use this method of authentication, you must first configure your TFS server.
 
 :::moniker range="azure-devops"
 
-The alternate (basice) authentication method for agent registration is only available on Azure DevOps Server and TFS.
+The alternate (basic) authentication method for agent registration is only available on Azure DevOps Server and TFS.
 
 :::moniker-end
 

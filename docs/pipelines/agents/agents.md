@@ -53,7 +53,7 @@ Self-hosted agents give you more control to install dependent software needed fo
 Also, machine-level caches and configuration persist from run to run, which can boost speed.
 
 > [!NOTE]
-> Although multiple agents can be installed per machine, we strongly suggest to only install one agent per machine. Installing two or more agents may adversely affect performance and the result of your pipelines.
+> Although multiple agents can be installed per machine, we strongly suggest to only install one agent per machine. Installing two or more agents might adversely affect performance and the result of your pipelines.
 
 ::: moniker range="azure-devops"
 
@@ -93,7 +93,7 @@ After you've installed the agent on a machine, you can install any other softwar
 
 The agent ships with several versions of NodeJS libraries to support target tasks that use different Node handlers.
 
-All official Azure DevOps tasks use Node 10 as a universal handler, however, customers may still use custom tasks
+All official Azure DevOps tasks use Node 10 as a universal handler, however, customers might still use custom tasks
 that use the outdated Node 6 library. To support backward compatibility with Node that has currently reached End-of-Life, we provide the following self-service methods to install the designated Node runner manually.
 
 * Manually install the Node 6 runner. For more information on manually installing the Node 6 runner, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
@@ -294,7 +294,7 @@ The following example displays agent details for the agent with the ID of `3`. T
 
 ```azurecli
 az pipelines agent show --agent-id 3 --pool-id 4 --include-capabilities true
-This command group is in preview. It may be changed/removed in a future release.
+This command group is in preview. It might be changed/removed in a future release.
 {
   "accessPoint": null,
   "assignedAgentCloudRequest": null,
@@ -449,9 +449,9 @@ ensure that the agent starts automatically if the machine is restarted.
 1. **As an interactive process with auto-logon enabled**. In some cases,
    you might need to run the agent interactively for production use -
    such as to run UI tests. When the agent is configured to run in this
-   mode, the screen saver is also disabled. Some domain policies may
+   mode, the screen saver is also disabled. Some domain policies might
    prevent you from enabling auto-logon or disabling the screen saver. In
-   such cases, you may need to seek an exemption from the domain policy,
+   such cases, you might need to seek an exemption from the domain policy,
    or run the agent on a workgroup computer where the domain policies
    do not apply.
 
@@ -463,7 +463,7 @@ ensure that the agent starts automatically if the machine is restarted.
    > for example, located in a secure facility. If you use
    > Remote Desktop to access the computer on which an agent is running
    > with auto-logon, simply closing the Remote Desktop causes the
-   > computer to be locked and any UI tests that run on this agent may
+   > computer to be locked and any UI tests that run on this agent might
    > fail. To avoid this, use the [tscon](/windows-server/administration/windows-commands/tscon)
    > command to disconnect from Remote Desktop. For example:
    >
@@ -498,7 +498,7 @@ Microsoft-hosted agents are always kept up-to-date.
 If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically (configure this setting in **Agent pools**, select your agent, **Settings** - the default is enabled) by Azure Pipelines.
 An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
 
-If you run a self-hosted agent interactively, or if there is a newer _major_ version of the agent available, then you may have to manually upgrade the agents.
+If you run a self-hosted agent interactively, or if there is a newer _major_ version of the agent available, then you might have to manually upgrade the agents.
 You can do this easily from the **Agent pools** tab under your organization.
 Your pipelines won't run until they can target a compatible agent.
 
@@ -535,7 +535,7 @@ An upgrade is requested when a platform feature or one of the tasks used in the 
 Starting with Azure DevOps Server 2019, you don't have to wait for a new server release.
 You can [upload a new version of the agent to your application tier](#can-i-update-my-v2-agents-that-are-part-of-an-azure-devops-server-pool), and that version will be offered as an upgrade.
 
-If you run the agent interactively, or if there is a newer _major_ version of the agent available, then you may have to manually upgrade the agents.
+If you run the agent interactively, or if there is a newer _major_ version of the agent available, then you might have to manually upgrade the agents.
 You can do this easily from the **Agent pools** tab under your project collection.
 Your pipelines won't run until they can target a compatible agent.
 

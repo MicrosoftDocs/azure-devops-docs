@@ -8,7 +8,7 @@ monikerRange: '<= azure-devops'
 
 # Register an agent using a personal access token (PAT)
 
-Specify **PAT** for authentication type during agent configuration to use a personal access token to authenticate during agent registration, then specify a personal access token (PAT) with **Agent Pools (read, manage)** scope (or **Deployment group (read, manage)** scope for a [deployment group](../release/deployment-groups/index.md) agent) may be used for agent registration.
+Specify **PAT** for authentication type during agent configuration to use a personal access token to authenticate during agent registration, then specify a personal access token (PAT) with **Agent Pools (read, manage)** scope (or **Deployment group (read, manage)** scope for a [deployment group](../release/deployment-groups/index.md) agent) can be used for agent registration.
 
 A single PAT can be used for registering multiple agents, the PAT is used only at the time of registering the agent, and not for subsequent [communication](./agents.md#communication). 
 
