@@ -95,7 +95,7 @@ Azure DevOps Server: `https://{your_server}/tfs`
 
 ### Authentication type
 
-When you register an agent, you can choose from the following authentication types. Agent setup will prompt you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
+When you register an agent, choose from the following authentication types, and agent setup prompts you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
 
 [!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 

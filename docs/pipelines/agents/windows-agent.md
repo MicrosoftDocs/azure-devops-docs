@@ -112,7 +112,7 @@ When setup asks for your server URL, for Azure DevOps Server, answer `https://{m
 
 ### Agent setup authentication type
 
-When setup asks for your authentication type, choose one of the following authentication types. Agent setup will prompt you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
+When you register an agent, choose from the following authentication types, and agent setup prompts you for the specific additional information required for each authentication type.  For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
 
 [!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 

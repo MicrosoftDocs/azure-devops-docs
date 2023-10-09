@@ -413,7 +413,7 @@ as shown in the following schematic.
 
 To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or Azure DevOps Server. In addition, you must be a local administrator on the server in order to configure the agent.
 
-When you register an agent, you can choose from the following authentication types. Agent setup will prompt you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
+When you register an agent, choose from the following authentication types, and agent setup prompts you for the specific additional information required for each authentication type.  For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
 
 [!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
