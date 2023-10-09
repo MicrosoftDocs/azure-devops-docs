@@ -96,7 +96,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 > [!Note]
 > Please avoid using mintty based shells, such as git-bash, for agent configuration. Mintty is not fully compatible with native Input/Output Windows API ([here](https://github.com/mintty/mintty/wiki/Tips#inputoutput-interaction-with-alien-programs) is some info about it) and we couldn't guarantee correct work of setup script in this case.
 
-### Server URL and authentication
+### Server URL
 
 :::moniker range="azure-devops"
 
@@ -110,37 +110,27 @@ When setup asks for your server URL, for Azure DevOps Server, answer `https://{m
 
 :::moniker-end
 
-When setup asks for your authentication type, choose one of the following authentication types.
+### Agent setup authentication type
 
-:::moniker range="azure-devops"
+[!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
-* PAT
-* AAD (for device code flow)
-* SP (for Service Principal)
+When setup asks for your authentication type, choose one of the following authentication types. Agent setup will prompt you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
 
-:::moniker-end
 
 :::moniker range="<= azure-devops-2022"
 
-* PAT
-* **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
-* **Negotiate** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
-* **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
+Windows agents have the following two additional authentication options on Azure DevOps Server and TFS.
 
-Your server must be configured to support to use Alternate, Negotiate, or Integrated authentication.
+* [**Negotiate**](./agent-authentication-options.md#negotiate) Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
+* [**Integrated**](./agent-authentication-options.md#integrated) (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
 
 > [!IMPORTANT]
-> 
-> Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
+> Your server must be [configured to support the authentication method](agents.md#configure-tfs-authentication) to use Alternate, Negotiate, or Integrated authentication.
 
 :::moniker-end
 
 Learn more at [Communication with Azure Pipelines or TFS](agents.md#communication).
 
-
-
-> [!NOTE]
-> When using PAT as the authentication method, the PAT token is only used during the initial configuration of the agent. Later, if the PAT expires or needs to be renewed, no further changes are required by the agent.
 
 ### Choose interactive or service mode
 
