@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18, devx-track-azurecli
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 07/26/2023
+ms.date: 10/09/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -53,7 +53,7 @@ Self-hosted agents give you more control to install dependent software needed fo
 Also, machine-level caches and configuration persist from run to run, which can boost speed.
 
 > [!NOTE]
-> Although multiple agents can be installed per machine, we strongly suggest to only install one agent per machine. Installing two or more agents may adversely affect performance and the result of your pipelines.
+> Although multiple agents can be installed per machine, we strongly suggest to only install one agent per machine. Installing two or more agents might adversely affect performance and the result of your pipelines.
 
 ::: moniker range="azure-devops"
 
@@ -93,7 +93,7 @@ After you've installed the agent on a machine, you can install any other softwar
 
 The agent ships with several versions of NodeJS libraries to support target tasks that use different Node handlers.
 
-All official Azure DevOps tasks use Node 10 as a universal handler, however, customers may still use custom tasks
+All official Azure DevOps tasks use Node 10 as a universal handler, however, customers might still use custom tasks
 that use the outdated Node 6 library. To support backward compatibility with Node that has currently reached End-of-Life, we provide the following self-service methods to install the designated Node runner manually.
 
 * Manually install the Node 6 runner. For more information on manually installing the Node 6 runner, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
@@ -294,7 +294,7 @@ The following example displays agent details for the agent with the ID of `3`. T
 
 ```azurecli
 az pipelines agent show --agent-id 3 --pool-id 4 --include-capabilities true
-This command group is in preview. It may be changed/removed in a future release.
+This command group is in preview. It might be changed/removed in a future release.
 {
   "accessPoint": null,
   "assignedAgentCloudRequest": null,
@@ -411,67 +411,26 @@ as shown in the following schematic.
 <a name="configure-tfs-authentication"></a>
 ## Authentication
 
-To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or Azure DevOps Server. In addition, you must be a local administrator on the server in order to configure the agent. 
+To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or Azure DevOps Server. In addition, you must be a local administrator on the server in order to configure the agent.
 
-::: moniker range="azure-devops"
+When you register an agent, choose from the following authentication types, and agent setup prompts you for the specific additional information required for each authentication type.  For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
 
-Your agent can authenticate to Azure Pipelines using the following method:
+[!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
-::: moniker-end
+:::moniker range="<= azure-devops-2022"
 
-::: moniker range="< azure-devops"
+Windows agents have the following two additional authentication options on Azure DevOps Server and TFS.
 
-Your agent can authenticate to Azure DevOps Server or TFS using one of the following methods:
+* [**Negotiate**](./agent-authentication-options.md#negotiate) Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
+* [**Integrated**](./agent-authentication-options.md#integrated) (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
 
-::: moniker-end
+> [!IMPORTANT]
+> Your server must be [configured to support the authentication method](agents.md#configure-tfs-authentication) to use Alternate, Negotiate, or Integrated authentication.
 
+:::moniker-end
 
-### Personal Access Token (PAT): 
-[Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with Azure Pipelines or TFS 2017 and newer. PAT is the only scheme that works with Azure Pipelines. The PAT must have **Agent Pools (read, manage)** scope (for a [deployment group](../release/deployment-groups/index.md) agent, the PAT must have **Deployment group (read, manage)** scope), and while a single PAT can be used for registering multiple agents, the PAT is used only at the time of registering the agent, and not for subsequent [communication](#communication). For more information, see the Authenticate with a personal access token (PAT) section in the [Windows](windows-agent.md#authenticate-with-a-personal-access-token-pat), [Linux](linux-agent.md#authenticate-with-a-personal-access-token-pat), or [macOS](osx-agent.md#authenticate-with-a-personal-access-token-pat) self-hosted agents articles.
+The authentication method used for registering the agent is used only during agent registration. To learn more about how agents communicate with Azure Pipelines after registration, see [Communication with Azure Pipelines or TFS](#communication).
 
-To use a PAT with Azure DevOps Server, your server must be configured with HTTPS. See [Web site settings and security](/azure/devops/server/admin/websitesettings).
-
-::: moniker range="< azure-devops"
-
-### Integrated
-
-Connect a Windows agent to TFS using the credentials of the signed-in user through a Windows authentication scheme such as NTLM or Kerberos.
-
-To use this method of authentication, you must first configure your TFS server.
-
-1. Sign into the machine where you are running TFS.
-
-1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with a valid provider such as NTLM or Kerberos.
-
-![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
-
-![IIS TFS windows authentication with ntlm provider](media/configure-tfs-authentication/iis-tfs-authentication-windows-ntlm-provider.png)
-
-### Negotiate
-
-Connect to TFS as a user other than the signed-in user through a Windows authentication scheme such as NTLM or Kerberos.
-
-To use this method of authentication, you must first configure your TFS server.
-
-1. Log on to the machine where you are running TFS.
-
-1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with the Negotiate provider and with another method such as NTLM or Kerberos.
-
-![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
-
-![IIS TFS windows authentication with negotiate and ntlm provider](media/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
-
-
-### Alternate
-Connect to TFS using Basic authentication. To use this method, you must first [configure HTTPS on TFS](/azure/devops/server/admin/websitesettings).
-
-To use this method of authentication, you must configure your TFS server as follows:
-
-1. Sign in to the machine where you are running TFS.
-
-1. Configure basic authentication. See [Using `tfx` against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
-
-::: moniker-end
 
 <h2 id="interactive-or-service">Interactive vs. service</h2>
 
@@ -490,9 +449,9 @@ ensure that the agent starts automatically if the machine is restarted.
 1. **As an interactive process with auto-logon enabled**. In some cases,
    you might need to run the agent interactively for production use -
    such as to run UI tests. When the agent is configured to run in this
-   mode, the screen saver is also disabled. Some domain policies may
+   mode, the screen saver is also disabled. Some domain policies might
    prevent you from enabling auto-logon or disabling the screen saver. In
-   such cases, you may need to seek an exemption from the domain policy,
+   such cases, you might need to seek an exemption from the domain policy,
    or run the agent on a workgroup computer where the domain policies
    do not apply.
 
@@ -504,7 +463,7 @@ ensure that the agent starts automatically if the machine is restarted.
    > for example, located in a secure facility. If you use
    > Remote Desktop to access the computer on which an agent is running
    > with auto-logon, simply closing the Remote Desktop causes the
-   > computer to be locked and any UI tests that run on this agent may
+   > computer to be locked and any UI tests that run on this agent might
    > fail. To avoid this, use the [tscon](/windows-server/administration/windows-commands/tscon)
    > command to disconnect from Remote Desktop. For example:
    >
@@ -539,7 +498,7 @@ Microsoft-hosted agents are always kept up-to-date.
 If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically (configure this setting in **Agent pools**, select your agent, **Settings** - the default is enabled) by Azure Pipelines.
 An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
 
-If you run a self-hosted agent interactively, or if there is a newer _major_ version of the agent available, then you may have to manually upgrade the agents.
+If you run a self-hosted agent interactively, or if there is a newer _major_ version of the agent available, then you might have to manually upgrade the agents.
 You can do this easily from the **Agent pools** tab under your organization.
 Your pipelines won't run until they can target a compatible agent.
 
@@ -576,7 +535,7 @@ An upgrade is requested when a platform feature or one of the tasks used in the 
 Starting with Azure DevOps Server 2019, you don't have to wait for a new server release.
 You can [upload a new version of the agent to your application tier](#can-i-update-my-v2-agents-that-are-part-of-an-azure-devops-server-pool), and that version will be offered as an upgrade.
 
-If you run the agent interactively, or if there is a newer _major_ version of the agent available, then you may have to manually upgrade the agents.
+If you run the agent interactively, or if there is a newer _major_ version of the agent available, then you might have to manually upgrade the agents.
 You can do this easily from the **Agent pools** tab under your project collection.
 Your pipelines won't run until they can target a compatible agent.
 
