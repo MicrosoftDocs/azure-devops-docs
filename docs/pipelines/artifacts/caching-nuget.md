@@ -50,6 +50,9 @@ variables:
     cacheHitVar: 'CACHE_RESTORED'
 ```
 
+> [!NOTE]
+> Caches are immutable, once a cache is created, its contents cannot be modified.
+
 ## Restore cache
 
 This task will only run if the `CACHE_RESTORED` variable is false.
@@ -63,6 +66,9 @@ This task will only run if the `CACHE_RESTORED` variable is false.
 ```
 
 If you encounter the error message "project.assets.json not found" during your build task, you can resolve it by removing the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. By doing so, the restore command will be executed, generating your project.assets.json file. The restore task will not download packages that are already present in your corresponding folder.
+
+> [!NOTE]
+> A pipeline can contain one or more caching tasks, and jobs and tasks within the same pipeline can access and share the same cache.
 
 ## Performance comparison
 
