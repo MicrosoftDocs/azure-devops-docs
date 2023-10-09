@@ -55,8 +55,11 @@ sections:
       - question: |
           Which versions of Visual Studio can I use with Azure DevOps?
         answer: |
+          > [!IMPORTANT]  
+          > While previous versions of Visual Studio are compatible with Azure DevOps, it's a best practice to make sure you are on the latest update of that version and to use [supported versions](/visualstudio/productinfo/vs-servicing#older-versions-of-visual-studio) of Visual Studio whenever possible.
+        
           You can use the following versions:
-          
+                  
           * Visual Studio 2019
           * Visual Studio 2017
           * Visual Studio 2015
