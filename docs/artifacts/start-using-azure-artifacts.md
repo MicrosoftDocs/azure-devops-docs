@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to share their code efficiently and manage all their packages from one place. With Azure Artifacts, developers can publish packages to their feeds and share it within the same team, across organizations, and even publicly. Developers can also consume packages from different feeds and public registries such as NuGet.org or npmjs.com. Azure Artifacts supports multiple package types such as NuGet, npm, Python, Maven, and Universal Packages.
+Azure Artifacts enables developers to share their code efficiently and manage all their packages from one place. With Azure Artifacts, developers can publish packages to their feeds and share it within the same team, across organizations, and even publicly. Developers can also consume packages from different feeds and public registries such as NuGet.org or npmjs.com. Azure Artifacts supports multiple package types such as NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
 ## Prerequisites
 
@@ -52,19 +52,23 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 
 # [NuGet](#tab/nuget)
 
-- [Get started with NuGet packages and Azure Artifacts](./get-started-nuget.md)
+- [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
 
 # [Npm](#tab/npm)
 
-- [Get started with npm packages and Azure Artifacts](./get-started-npm.md)
+- [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
 
 # [Maven](#tab/maven)
 
-- [Get started with Maven packages and Azure Artifacts](./get-started-maven.md)
+- [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
 
 # [Python](#tab/python)
 
-- [Get started with Python packages and Azure Artifacts](./quickstarts/python-packages.md)
+- [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
+
+# [Cargo](#tab/cargo)
+
+- [Get started with Cargo packages in Azure Artifacts](./get-started-cargo.md)
 
 # [Universal Packages](#tab/universalpackages)
 
@@ -79,7 +83,9 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 | **NuGet packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
 | **npm packages**                  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
 | **Maven packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
-| **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | Server 2019 Update 1 and newer, Server 2020, and Server 2022.  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Gradle packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Cargo packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false"                                         |
+| **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
 | **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
 
 ## Artifacts free tier and upgrade
