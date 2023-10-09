@@ -42,6 +42,40 @@ Azure Artifacts comes pre-installed in TFS 2018. If the extension is removed, yo
    * Users with Visual Studio Enterprise subscriptions get Azure Artifacts automatically.  
    * Ensure that your Visual Studio Enterprise subscribers are assigned [VS Enterprise Access level](../organizations/security/change-access-levels.md).
 
+## Get started with Azure Artifacts
+
+Using Azure Artifacts, you have the capability to both publish and consume various package types. Select your preferred package type to get started:
+
+# [NuGet](#tab/nuget)
+
+- [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
+
+# [Npm](#tab/npm)
+
+- [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
+
+# [Maven](#tab/maven)
+
+- [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
+
+# [Gradle](#tab/gradle)
+
+- [Publish artifacts with Gradle](./maven/publish-with-gradle.md)
+
+---
+
+## Feature availability
+
+| Package type                      | Azure DevOps Services  |          Azure DevOps Server                 |                    TFS-2018                  |
+|-----------------------------------|------------------------|----------------------------------------------|----------------------------------------------|
+| **NuGet packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **npm packages**                  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Maven packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Gradle packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Cargo packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false"                                         |
+| **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
+| **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
+
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2019"
@@ -61,6 +95,10 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 # [Maven](#tab/maven)
 
 - [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
+
+# [Gradle](#tab/gradle)
+
+- [Publish artifacts with Gradle](./maven/publish-with-gradle.md)
 
 # [Python](#tab/python)
 
@@ -120,7 +158,7 @@ Follow the steps outlined below to view your billing settings for your organizat
 
 ### Q: Which artifacts count toward my total billed storage?
 
-A: You get billed for all package types (npm, NuGet, Python, Maven, and Universal Packages) including packages stored from upstream sources. However, you don't get billed for Pipeline Artifacts, and Pipeline Caching.
+A: You get billed for all package types (npm, NuGet, Python, Maven, Cargo, and Universal Packages) including packages stored from upstream sources. However, you don't get billed for Pipeline Artifacts, and Pipeline Caching.
 
 > [!NOTE]
 > Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, navigate to your recycle bin and delete them manually.
