@@ -37,7 +37,7 @@ Make sure your machine has these prerequisites:
     * Windows 11
   * Server OS
     * Windows Server 2012 or higher
-* The agent software installs its own version of .NET so there is no .NET prerequisite.
+* The agent software installs its own version of .NET so there's no .NET prerequisite.
 - [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
 * **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
 * Recommended - [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (2015 or higher)
@@ -52,7 +52,7 @@ The hardware specs for your agents will vary with your needs, team size, etc.
 It's not possible to make a general recommendation that will apply to everyone.
 As a point of reference, the Azure DevOps team builds the hosted agents code using pipelines that utilize [hosted agents](hosted.md).
 On the other hand, the bulk of the Azure DevOps code is built by 24-core server class machines
-running 4 self-hosted agents apiece.
+running four self-hosted agents apiece.
 
 <h2 id="permissions">Prepare permissions</h2>
 
@@ -172,14 +172,14 @@ To restart the agent, right-click the entry and choose **Restart**.
 
 > [!Note]
 > If you need to change the agent's logon account, don't do it from the Services
-> snap-in. Instead, see the information below to re-configure the agent.
+> snap-in. Instead, see the information below to reconfigure the agent.
 
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
 
 [!INCLUDE [include](includes/v3/replace-agent.md)]
 
-## Remove and re-configure an agent
+## Remove and reconfigure an agent
 
 To remove the agent:
 
@@ -257,7 +257,7 @@ The help provides information on authentication alternatives and unattended conf
 
 ### How do I restart the agent
 
-If you are running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you are running the agent as a service, restart the agent by following the steps in [Run as a service](#run-as-a-service).
+If you're running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you're running the agent as a service, restart the agent by following the steps in [Run as a service](#run-as-a-service).
 
 ::: moniker range=">=azure-devops-2020"
 ### How do I set different environment variables for each individual agent?
