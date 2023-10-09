@@ -19,7 +19,7 @@ monikerRange: '<= azure-devops'
 
 :::moniker-end
 
-To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
+To build and deploy Xcode apps or Xamarin.iOS projects, you need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
 > [!NOTE]
 > This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you're using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted macOS agent.
@@ -39,7 +39,7 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * Note: Not all Azure Pipelines tasks have been updated to support ARM64 yet
-- **Git** - Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
+- **Git** - Git 2.9.0 or higher (latest version recommended - you can easily install with [Homebrew](https://brew.sh/))
 * **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
 * **TFVC** - If you're building from a TFVC repo, see [TFVC prerequisites](#tfvc-prerequisites).
 
@@ -59,7 +59,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### Azure Pipelines
 
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
+1. Log on to the machine using the account for which you've prepared permissions as explained in the previous section.
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
@@ -126,7 +126,7 @@ For agents configured to run interactively, you can choose to have the agent acc
 ./run.sh --once
 ```
 
-Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
+Agents in this mode accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
 
 ## Run as a launchd service
 
