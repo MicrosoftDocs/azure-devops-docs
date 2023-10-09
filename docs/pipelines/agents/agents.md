@@ -413,26 +413,24 @@ as shown in the following schematic.
 
 To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or Azure DevOps Server. In addition, you must be a local administrator on the server in order to configure the agent.
 
-::: moniker range="azure-devops"
+When you register an agent, you can choose from the following authentication types. Agent setup will prompt you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
 
-Your agent can authenticate to Azure Pipelines using the following methods:
+[!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
-* [Personal access token (PAT)](./agent-authentication-options.md#personal-access-token-pat)
-* [Service Principal (SP)](./agent-authentication-options.md#service-principal-sp)
-* [Device code flow (AAD)](./agent-authentication-options.md#device-code-flow-aad)
 
-::: moniker-end
+:::moniker range="<= azure-devops-2022"
 
-::: moniker range="< azure-devops"
+Windows agents have the following two additional authentication options on Azure DevOps Server and TFS.
 
-Your agent can authenticate to Azure DevOps Server or TFS using one of the following methods:
+* [**Negotiate**](./agent-authentication-options.md#negotiate) Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
+* [**Integrated**](./agent-authentication-options.md#integrated) (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
 
-* [Personal access token (PAT)](./agent-authentication-options.md#personal-access-token-pat)
-* [Integrated](./agent-authentication-options.md#integrated)
-* [Negotiate](./agent-authentication-options.md#negotiate)
-* [Alternate (ALT)](./agent-authentication-options.md#alternate-alt)
+> [!IMPORTANT]
+> Your server must be [configured to support the authentication method](agents.md#configure-tfs-authentication) to use Alternate, Negotiate, or Integrated authentication.
 
-::: moniker-end
+:::moniker-end
+
+The authentication method used for registering the agent is used only during agent registration. To learn more about how agents communicate with Azure Pipelines after registration, see [Communication with Azure Pipelines or TFS](#communication).
 
 
 <h2 id="interactive-or-service">Interactive vs. service</h2>
