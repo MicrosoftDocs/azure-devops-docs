@@ -194,9 +194,9 @@ A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for 
 
 ##### Q: How long does it take for deleted Artifacts to reflect in the amount of billed storage?
 
-A: Deletion of artifacts doesn't register immediately. Storage consumption should be updated within 24 hours, but in some cases it may take up to 48 hours. If you're blocked from uploading Artifacts, as a workaround you can temporarily increase your usage level, then reduce the level back once the storage metrics are updated.
+A: Deletion of artifacts doesn't register immediately. Storage consumption should be updated within 24 hours, but in some cases it might take up to 48 hours. If you're blocked from uploading Artifacts, as a workaround you can temporarily increase your usage level, then reduce the level back once the storage metrics are updated.
 
-The **used** column on the Billing page of your Organization gets updated once a day. When you delete an Artifact, it may not reflect immediately on your billing page. The Artifact Storage page however gets updated more frequently, so you may see a small discrepancy between the two pages.  
+The **used** column on the Billing page of your Organization gets updated once a day. When you delete an Artifact, it might not be reflected immediately on your billing page. The Artifact Storage page however gets updated more frequently, so you might see a small discrepancy between the two pages.  
 
 :::image type="content" source="media/settings-vs-storage.png" alt-text="Artifacts billing settings vs Artifacts storage data":::
 
