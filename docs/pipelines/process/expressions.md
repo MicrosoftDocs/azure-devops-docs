@@ -14,10 +14,9 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
-The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
+Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline. When an expression returns an array, normal indexing rules apply and the index starts with `0`. 
 
-When an expression returns an array, normal indexing rules apply and the index starts with `0`. 
+The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
 
 ::: moniker range=">= azure-devops-2019"
 ```yaml
