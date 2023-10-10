@@ -542,11 +542,11 @@
     - name: Self-hosted agent authentication options
       href: agents/agent-authentication-options.md
     - name: Personal access token (PAT)
-      href: agents/pat-agent-registration.md
+      href: agents/personal-access-token-agent-registration.md
     - name: Service Principal (SP)
-      href: agents/sp-agent-registration.md
+      href: agents/service-principal-agent-registration.md
     - name: Device code flow (AAD)
-      href: agents/aad-agent-registration.md
+      href: agents/device-code-flow-token-agent-registration.md
   - name: Self-hosted agents (previous version 2.x)
     items:
     - name: Self-hosted Linux agents (2.x)
