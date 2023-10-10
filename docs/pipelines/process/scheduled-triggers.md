@@ -678,7 +678,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 If you want your pipeline to run only on the schedule, and not when someone pushes a change to a branch or merges a change to the main branch, you must explictly disabled the default CI and PR triggers on the pipelines.
 
-To disable the default CI and PR triggers, add the following statements to your YAML pipeline.
+To disable the default CI and PR triggers, add the following statements to your YAML pipeline, and [verify that you haven't overridden the YAML pipeline triggers with UI triggers](../troubleshooting/troubleshooting.md#ui-settings-override-yaml-trigger-setting).
 
 ```yaml
 trigger: none
