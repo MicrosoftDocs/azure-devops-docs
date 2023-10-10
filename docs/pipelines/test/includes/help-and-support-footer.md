@@ -2,8 +2,8 @@
 ms.topic: include
 ms.service: azure-devops-pipelines
 ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
+ms.author: ravikum
+author: raviLiftr
 ms.date: 02/19/2020
 ---
 
