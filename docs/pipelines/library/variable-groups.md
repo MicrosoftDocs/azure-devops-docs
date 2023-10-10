@@ -525,6 +525,9 @@ Deleted variable 'requires-login' successfully.
 
 ## Link secrets from an Azure key vault
 
+> [!NOTE]
+> Key Vaults using Azure role-based access control (Azure RBAC) are not supported.
+
 [!INCLUDE [set secret variable in UI](../process/includes/variable-groups-link-secrets.md)]
 
 ## Expand variables in a group
