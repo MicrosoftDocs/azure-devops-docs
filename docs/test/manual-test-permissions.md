@@ -5,7 +5,7 @@ ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: reference
-ms.author: sdanie
+ms.author: ravikum
 author: steved0x
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
