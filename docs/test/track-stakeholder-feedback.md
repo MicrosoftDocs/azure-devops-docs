@@ -6,7 +6,7 @@ ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: ravikum
-author: steved0x
+author: raviliftr
 ms.date: 11/30/2021
 monikerRange: '<= azure-devops'
 ---

@@ -7,7 +7,7 @@ ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
 ms.author: ravikum
-author: steved0x
+author: raviliftr
 monikerRange: '<= azure-devops'
 ms.date: 11/04/2021
 ---
