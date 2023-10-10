@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 05/23/2023
+ms.date: 10/10/2023
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -15,7 +15,9 @@ monikerRange: '>= azure-devops-2019'
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
 Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
-The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run.
+The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
+
+When an expression returns an array, normal indexing rules apply and the index starts with `0`. 
 
 ::: moniker range=">= azure-devops-2019"
 ```yaml
