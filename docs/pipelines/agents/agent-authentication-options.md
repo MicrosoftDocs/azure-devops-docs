@@ -23,19 +23,19 @@ Azure Pipelines provides a choice of several authentication options you can use 
 
 Specify **PAT** for authentication type during agent configuration to use a personal access token to authenticate during agent registration, then specify a personal access token (PAT) with **Agent Pools (read, manage)** scope (or **Deployment group (read, manage)** scope for a [deployment group](../release/deployment-groups/index.md) agent) can be used for agent registration.
 
-For more information, see [Register an agent using a personal access token (PAT)](./pat-agent-registration.md)
+For more information, see [Register an agent using a personal access token (PAT)](./personal-access-token-agent-registration.md)
 
 ## Service Principal (SP)
 
 Specify **SP** for authentication type during agent configuration to use a Service Principal to authenticate during agent registration.
 
-For more information, see [Register an agent using a Service Principal](./sp-agent-registration.md).
+For more information, see [Register an agent using a Service Principal](./service-principal-agent-registration.md).
 
 ## Device code flow (AAD)
 
 Specify **AAD** for authentication type during agent configuration to use device code flow to authenticate during agent registration.
 
-For more information, see [Register an agent using device code flow](./aad-agent-registration.md).
+For more information, see [Register an agent using device code flow](./device-code-flow-token-agent-registration.md).
 
 ## Integrated
 
@@ -57,9 +57,9 @@ To use this method of authentication, you must first configure your TFS server.
 
 1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with a valid provider such as NTLM or Kerberos.
 
-![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
+![Screenshot of IIS TFS windows authentication configuration.](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
 
-![IIS TFS windows authentication with ntlm provider](media/configure-tfs-authentication/iis-tfs-authentication-windows-ntlm-provider.png)
+![Screenshot of IIS TFS windows authentication with ntlm provider configuration.](media/configure-tfs-authentication/iis-tfs-authentication-windows-ntlm-provider.png)
 
 :::moniker-end
 
@@ -81,9 +81,9 @@ To use this method of authentication, you must first configure your TFS server.
 
 1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with the Negotiate provider and with another method such as NTLM or Kerberos.
 
-![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
+![Screenshot of IIS TFS windows authentication configuration.](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
 
-![IIS TFS windows authentication with negotiate and ntlm provider](media/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
+![Screenshot of IIS TFS windows authentication with negotiate and ntlm provider configuration.](media/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
 
 :::moniker-end
 
