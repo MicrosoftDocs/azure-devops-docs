@@ -35,7 +35,7 @@ For more information, see [Register an agent using a Service Principal](./servic
 
 Specify **AAD** for authentication type during agent configuration to use device code flow to authenticate during agent registration.
 
-For more information, see [Register an agent using device code flow](./device-code-flow-token-agent-registration.md).
+For more information, see [Register an agent using device code flow](./device-code-flow-agent-registration.md).
 
 ## Integrated
 
