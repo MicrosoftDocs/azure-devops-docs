@@ -561,7 +561,7 @@ To trigger agent update programmatically you can use Agent update API as describ
 
 In many cases, yes. Specifically:
 
-* If you use a self-hosted agent, you can run incremental builds. For example, if you define a pipeline that does not clean the repo and does not perform a clean build, your builds will typically run faster. When you use a Microsoft-hosted agent, you don't get these benefits because the agent is destroyed after the build or release pipeline is completed.
+* If you use a self-hosted agent, you can run incremental builds. For example, if you define a pipeline that does not clean the repo and does not perform a clean build, your builds will typically run faster. When you use a Microsoft-hosted agent, you don't get these benefits (unless you use features such as [caching](../release/caching.md)) because the agent is destroyed after the build or release pipeline is completed.
 
 * A Microsoft-hosted agent can take longer to start your build. While it often takes just a few seconds for your job to be assigned to a Microsoft-hosted agent, it can sometimes take several minutes for an agent to be allocated depending on the load on our system.
 
@@ -590,11 +590,30 @@ The commands issued to the process to cancel the pipeline differ based on the ag
 
 ### How can I trigger agent updates programmatically for specific agent pool?
 
-You can trigger agent updates for the pool by using next API:
+You can trigger agent updates for the pool by using the following API:
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ```
 POST https://dev.azure.com/{organization}/_apis/distributedtask/pools/{poolId}/messages?agentId={agentId}&api-version=6.0
 ```
+
+::: moniker-end
+
+::: moniker range="<azure-devops"
+
+```
+POST https://{server url}/tfs/{collection}/_apis/distributedtask/pools/{poolId}/messages?agentId={agentId}&api-version=6.0
+```
+
+> [!NOTE]
+> For more information in API and Azure DevOps Server and TFS version mapping, see [API and TFS version mapping](/rest/api/azure/devops#api-and-tfs-version-mapping)
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 #### URI Parameters
 
