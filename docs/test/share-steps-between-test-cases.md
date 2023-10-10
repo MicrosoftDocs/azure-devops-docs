@@ -5,7 +5,7 @@ description: Learn how to share steps between test cases when you want to test w
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: sdanie
+ms.author: ravikum
 author: steved0x
 monikerRange: '<= azure-devops'
 ms.date: 12/06/2021

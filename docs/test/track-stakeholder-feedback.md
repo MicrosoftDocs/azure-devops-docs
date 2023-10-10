@@ -5,7 +5,7 @@ ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: sdanie
+ms.author: ravikum
 author: steved0x
 ms.date: 11/30/2021
 monikerRange: '<= azure-devops'
