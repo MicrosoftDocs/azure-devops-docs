@@ -4,8 +4,8 @@ description: Learn how to navigate Test Plans.
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: chcomley
-author: chcomley
+ms.author: ravikum
+author: raviLiftr
 monikerRange: '>=azure-devops-2020'
 ms.date: 09/14/2021
 ---

@@ -5,8 +5,8 @@ ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: overview
-ms.author: chcomley
-author: chcomley
+ms.author: ravikum
+author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 12/13/2021
 ---
