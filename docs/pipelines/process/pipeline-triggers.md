@@ -4,7 +4,7 @@ description: Configure pipeline triggers
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 06/06/2023
+ms.date: 10/10/2023
 ms.custom: contperf-fy21q3
 monikerRange: ">=azure-devops-2020"
 ---
@@ -166,6 +166,6 @@ For example, consider two pipelines named `A` and `B` that are in the same repos
 - At the same time, a new run of `B` is started, based on its CI trigger. This run consumes the artifacts from a previous run of pipeline `A`.
 - When `A` completes, it triggers another run of `B`, based on the pipeline completion trigger in `B`.
 
-To prevent triggering two runs of `B` in this example, you must remove its CI trigger or pipeline trigger.
+To prevent triggering two runs of `B` in this example, you must disable its CI trigger (`trigger: none`) or pipeline trigger (`pr: none`).
 
 
