@@ -27,7 +27,7 @@ For more information, see [Register an agent using a personal access token (PAT)
 
 ## Service Principal (SP)
 
-Specify **SP** for authentication type during agent configuration to use a Service Principal to authenticate during agent registration.
+Specify **SP** for authentication type during agent configuration to use a service principal to authenticate during agent registration.
 
 For more information, see [Register an agent using a Service Principal](./service-principal-agent-registration.md).
 
@@ -59,7 +59,7 @@ To use this method of authentication, you must first configure your TFS server.
 
 ![Screenshot of IIS TFS windows authentication configuration.](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
 
-![Screenshot of IIS TFS windows authentication with ntlm provider configuration.](media/configure-tfs-authentication/iis-tfs-authentication-windows-ntlm-provider.png)
+![Screenshot of IIS TFS windows authentication with NTLM provider configuration.](media/configure-tfs-authentication/iis-tfs-authentication-windows-ntlm-provider.png)
 
 :::moniker-end
 

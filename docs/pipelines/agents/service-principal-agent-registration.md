@@ -1,12 +1,12 @@
 ---
-title: Register an agent using a Service Principal
+title: Register an agent using a service principal
 description: Learn how to register a self-hosted agent using a Service Principal
 ms.topic: conceptual
 ms.date: 10/09/2023
 monikerRange: 'azure-devops'
 ---
 
-# Register an agent using a Service Principal
+# Register an agent using a service principal
 
 You can register an agent using a Service Principal starting with [agent version 3.227.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v3.227.1) by specifying **SP** as the agent authentication option.
 
