@@ -38,11 +38,11 @@ To use a PAT with Azure DevOps Server, your server must be configured with HTTPS
 
 2. From your home page, open your profile. Go to your security details.
 
-   ![Go to your security details.](../../repos/git/media/my-profile-team-services.png)
+   ![Screenshot of security details in Azure DevOps Server.](../../repos/git/media/my-profile-team-services.png)
 
 3. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-   ![Create a personal access token.](../../repos/git/media/add-personal-access-token.png)
+   ![Screenshot of creating a personal access token in Azure DevOps Server.](../../repos/git/media/add-personal-access-token.png)
 
    > [!NOTE]
    > If you are configuring a deployment group agent, or if you see an error when registering a VM environment resource, you must set the PAT scope to **All accessible organizations**. 
@@ -55,11 +55,11 @@ To use a PAT with Azure DevOps Server, your server must be configured with HTTPS
 
 2. From your home page, open your user settings, and then select **Personal access tokens**.
 
-   ![Go to your security details.](../../repos/git/media/select-personal-access-tokens.jpg)
+   ![Screenshot of security details.](../../repos/git/media/select-personal-access-tokens.jpg)
 
 3. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-   ![Create a personal access token.](../../repos/git/media/select-new-token.png)
+   ![Screenshot of creating a personal access token.](../../repos/git/media/select-new-token.png)
 
 ::: moniker-end
 
@@ -76,3 +76,9 @@ To use a PAT with Azure DevOps Server, your server must be configured with HTTPS
 
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with Azure Pipelines or TFS](./agents.md#communication).
+
+## Next steps
+
+* [Self-hosted Windows agents](./windows-agent.md)
+* [Self-hosted Linux agents](./linux-agent.md)
+* [Self-hosted macOS agents](./osx-agent.md)
