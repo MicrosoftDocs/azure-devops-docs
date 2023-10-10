@@ -4,7 +4,7 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 01/17/2023
+ms.date: 10/10/2023
 ms.custom: contperf-fy21q3
 monikerRange: '<= azure-devops'
 ---
@@ -417,7 +417,10 @@ Classic schedules are defined using a graphical editor instead of cron syntax. F
 
 ::: moniker range=">azure-devops-2019"
 
-You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline. 
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline.
+
+> [!IMPORTANT]
+> The scheduled runs view only shows pipelines scheduled to run within seven days from the current date. If your cron schedule has an interval longer than 7 days and the next run is scheduled to start after seven days from the current date, it won't be displayed in the scheduled runs view.
 
 ![Scheduled runs menu](media/triggers/scheduled-runs-menu.png)
 
@@ -667,11 +670,25 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 ## FAQ
 
+* [I want my pipeline to run only on the schedule and not when someone pushes a change to a branch](#i-want-my-pipeline-to-run-only-on-the-schedule-and-not-when-someone-pushes-a-change-to-a-branch)
 * [I defined a schedule in the YAML file. But it didn't run. What happened?](#i-defined-a-schedule-in-the-yaml-file-but-it-didnt-run-what-happened)
 * [My YAML schedules were working fine. But, they stopped working now. How do I debug this?](#my-yaml-schedules-were-working-fine-but-they-stopped-working-now-how-do-i-debug-this)
 * [My code hasn't changed, yet a scheduled build is triggered. Why?](#my-code-hasnt-changed-yet-a-scheduled-build-is-triggered-why)
 * [I see the planned run in the Scheduled runs panel. However, it doesn't run at that time. Why?](#i-see-the-planned-run-in-the-scheduled-runs-panel-however-it-doesnt-run-at-that-time-why)
 * [Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?](#schedules-defined-in-yaml-pipeline-work-for-one-branch-but-not-the-other-how-do-i-fix-this)
+
+### I want my pipeline to run only on the schedule and not when someone pushes a change to a branch
+
+If you want your pipeline to run only on the schedule, and not when someone pushes a change to a branch or merges a change to the main branch, you must explictly disabled the default CI and PR triggers on the pipeline.
+
+To disable the default CI and PR triggers, add the following statements to your YAML pipeline, and [verify that you haven't overridden the YAML pipeline triggers with UI triggers](../troubleshooting/troubleshooting.md#ui-settings-override-yaml-trigger-setting).
+
+```yaml
+trigger: none
+pr: none
+```
+
+For more information, see [pr definition](/azure/devops/pipelines/yaml-schema/pr) and [trigger definition](/azure/devops/pipelines/yaml-schema/trigger).
 
 ### I defined a schedule in the YAML file. But it didn't run. What happened?
 
