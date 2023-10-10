@@ -83,7 +83,7 @@ To use this method of authentication, you must first configure your TFS server.
 
 ![Screenshot of IIS TFS windows authentication configuration.](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
 
-![Screenshot of IIS TFS windows authentication with negotiate and ntlm provider configuration.](media/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
+![Screenshot of IIS TFS windows authentication with negotiate and NTLM provider configuration.](media/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
 
 :::moniker-end
 
