@@ -631,11 +631,30 @@ The commands issued to the process to cancel the pipeline differ based on the ag
 
 ### How can I trigger agent updates programmatically for specific agent pool?
 
-You can trigger agent updates for the pool by using next API:
+You can trigger agent updates for the pool by using the following API:
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ```
 POST https://dev.azure.com/{organization}/_apis/distributedtask/pools/{poolId}/messages?agentId={agentId}&api-version=6.0
 ```
+
+::: moniker-end
+
+::: moniker range="<azure-devops"
+
+```
+POST https://{server url}/tfs/{collection}/_apis/distributedtask/pools/{poolId}/messages?agentId={agentId}&api-version=6.0
+```
+
+> [!NOTE]
+> For more information in API and Azure DevOps Server and TFS version mapping, see [API and TFS version mapping](/rest/api/azure/devops#api-and-tfs-version-mapping)
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 #### URI Parameters
 
