@@ -1,7 +1,8 @@
 ---
 ms.service: azure-devops-test-plans
 ms.author: chcomley
-author: chcomley
+ms.author: ravikum
+author: raviLiftr
 ms.topic: include
 ms.date: 11/09/2021
 ---
