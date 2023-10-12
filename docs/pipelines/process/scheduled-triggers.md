@@ -40,7 +40,7 @@ You can combine scheduled and event-based triggers in your pipelines, for exampl
 > Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
 > scheduled triggers to start being evaluated.
 >
-> To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshooting.md#ui-settings-override-yaml-scheduled-triggers).
+> To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-scheduled-triggers).
 
 Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#cron-syntax).
 
@@ -681,7 +681,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 If you want your pipeline to run only on the schedule, and not when someone pushes a change to a branch or merges a change to the main branch, you must explictly disabled the default CI and PR triggers on the pipeline.
 
-To disable the default CI and PR triggers, add the following statements to your YAML pipeline, and [verify that you haven't overridden the YAML pipeline triggers with UI triggers](../troubleshooting/troubleshooting.md#ui-settings-override-yaml-trigger-setting).
+To disable the default CI and PR triggers, add the following statements to your YAML pipeline, and [verify that you haven't overridden the YAML pipeline triggers with UI triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting).
 
 ```yaml
 trigger: none
