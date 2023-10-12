@@ -15,7 +15,7 @@ author: steved0x
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This topic provides guidance on the common reasons that pipelines fail to [trigger](./troubleshoot-triggers.md#pipeline-wont-trigger), [get an agent and start](./troubleshoot-start.md#pipeline-queues-but-never-starts), or [complete](#pipeline-fails-to-complete). For instructions on reviewing pipeline logs, see [Review logs to diagnose pipeline issues](review-logs.md).
+This topic provides guidance on the common reasons that pipelines fail to [trigger](./troubleshoot-triggers.md), [get an agent and start](./troubleshoot-start.md), or [complete](#pipeline-fails-to-complete). For instructions on reviewing pipeline logs, see [Review logs to diagnose pipeline issues](review-logs.md).
 
 > [!NOTE]
 > If your pipeline run failed and you were directed to this article from the **Troubleshooting failed runs** link in the Azure DevOps portal:
