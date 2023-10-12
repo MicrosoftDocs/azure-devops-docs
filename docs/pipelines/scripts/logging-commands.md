@@ -548,7 +548,7 @@ Upload and attach attachment to current timeline record. These files aren't avai
 
 #### Usage
 
-Upload and attach summary Markdown from a .md file in the repository to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary will appear on an **Extensions** tab. Markdown rendering on the Extensions tab is different from Azure DevOps wiki rendering.
+Upload and attach summary Markdown from a .md file in the repository to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary will appear on the **Extensions** tab of your pipeline run. Markdown rendering on the Extensions tab is different from Azure DevOps wiki rendering.
 
 
 #### Examples
