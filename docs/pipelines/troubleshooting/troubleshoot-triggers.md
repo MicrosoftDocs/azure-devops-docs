@@ -6,7 +6,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 06/06/2023
+ms.date: 10/12/2023
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -52,7 +52,7 @@ If your `pr` trigger isn't firing, and you are using Azure Repos, it is because 
 
 <a name="branch-filters-in-ci-and-pr-triggers" />
 
-###Branch filters misconfigured in CI and PR triggers
+## Branch filters misconfigured in CI and PR triggers
 
 ::: moniker range="azure-devops-2019"
 
