@@ -11,7 +11,7 @@ If your pipelines are in Azure Pipelines, then you've got a convenient option to
 
 Azure Pipelines provides a predefined agent pool named **Azure Pipelines** with Microsoft-hosted agents.
 
-For many teams this is the simplest way to run your jobs. You can try it first and see if it works for your build or deployment. If not, you can use a self-hosted agent.
+For many teams this is the simplest way to run your jobs. You can try it first and see if it works for your build or deployment. If not, you can use [scale set agents](../scale-set-agents.md) or a self-hosted agent.
 
 > [!TIP]
 >
