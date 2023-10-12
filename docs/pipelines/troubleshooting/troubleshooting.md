@@ -53,7 +53,7 @@ To configure this setting, navigate to [Preview features](../../project/navigati
 
 :::moniker-end
 
-### Job time-out
+## Job time-out
 
 A pipeline may run for a long time and then fail due to job time-out. 
 Job timeout closely depends on the agent being used. Free Microsoft hosted agents have a max timeout of 60 minutes per job for a private repository and 360 minutes for a public repository.
@@ -66,12 +66,12 @@ Learn more about job [timeout](../process/phases.md#timeouts).
 > [!NOTE]
 > If your Microsoft-hosted agent jobs are timing out, ensure that you haven't specified a pipeline timeout that is less than the max timeout for a job. To check, see [Timeouts](../process/phases.md#timeouts).
 
-### Issues downloading code
+## Issues downloading code
 
 * [My pipeline is failing on a checkout step](#my-pipeline-is-failing-on-a-checkout-step)
 * [Team Foundation Version Control (TFVC) issues](#team-foundation-version-control-tfvc-issues)
 
-#### My pipeline is failing on a checkout step
+### My pipeline is failing on a checkout step
 
 If you are using a `checkout` step on an Azure Repos Git repository in your organization that is in a different project than your pipeline, ensure that the **Limit job authorization scope to current project** setting is disabled, or follow the steps in [Scoped build identities](../build/options.md) to ensure that your pipeline has access to the repository.
 
@@ -79,16 +79,16 @@ When your pipeline can't access the repository due to limited job authorization 
 
 If your pipeline is failing immediately with `Could not find a project that corresponds with the repository`, ensure that your project and repository name are correct in the `checkout` step or the repository resource declaration.
 
-#### Team Foundation Version Control (TFVC) issues
+### Team Foundation Version Control (TFVC) issues
 
 * [Get sources not downloading some files](#get-sources-not-downloading-some-files)
 * [Get sources through Team Foundation Proxy](#get-sources-through-team-foundation-proxy)
 
-##### Get sources not downloading some files
+#### Get sources not downloading some files
 
 This may be characterized by a message in the log "All files up to date" from the `tf get` command. Verify the built-in service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build pipeline. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
 
-##### Get sources through Team Foundation Proxy
+#### Get sources through Team Foundation Proxy
 
 The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
 
@@ -103,7 +103,7 @@ macOS/Linux:
 ```
 
 
-### My pipeline is failing on a command-line step such as MSBUILD
+## My pipeline is failing on a command-line step such as MSBUILD
 
 It is helpful to narrow whether a build or release failure is the result of an Azure Pipelines/TFS product issue (agent or tasks). Build and release failures may also result from external commands.
 
@@ -114,7 +114,7 @@ For example, is the problem happening during the MSBuild part of your build pipe
 
 ::: moniker range="azure-devops"
 
-#### File layout
+### File layout
 
 The location of tools, libraries, headers, and other things needed for a build may be different on the hosted agent than from your local machine.
 If a build fails because it can't find one of these files, you can use the below scripts to inspect the layout on the agent.
@@ -167,13 +167,13 @@ steps:
 
 ::: moniker-end
 
-#### Differences between local command prompt and agent
+### Differences between local command prompt and agent
 
 Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
 
 
 
-### File or folder in use errors
+## File or folder in use errors
 
 `File or folder in use` errors are often indicated by error messages such as: 
 
@@ -189,15 +189,15 @@ Troubleshooting steps:
 * [MSBuild and /nodeReuse:false](#msbuild-and-nodereusefalse)
 * [MSBuild and /maxcpucount:[n]](#msbuild-and-maxcpucountn)
 
-#### Detect files and folders in use
+### Detect files and folders in use
 
 On Windows, tools like [Process Monitor](/sysinternals/downloads/procmon) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](/sysinternals/downloads/process-explorer) or [Handle](/sysinternals/downloads/handle) can be used.
 
-#### Anti-virus exclusion
+### Anti-virus exclusion
 
 Anti-virus software scanning your files can cause file or folder in use errors during a build or release. Adding an anti-virus exclusion for your agent directory and configured "work folder" may help to identify anti-virus software as the interfering process.
 
-#### MSBuild and /nodeReuse:false
+### MSBuild and /nodeReuse:false
 
 If you invoke MSBuild during your build, make sure to pass the argument `/nodeReuse:false` (short form `/nr:false`). Otherwise MSBuild process(es) will remain running after the build completes. The process(es) remain for some time in anticipation of a potential subsequent build.
 
@@ -206,7 +206,7 @@ This feature of MSBuild can interfere with attempts to delete or move a director
 The MSBuild and Visual Studio Build tasks already add `/nr:false` to the arguments passed to MSBuild. However, if you invoke MSBuild from your own script, then you would need to specify the argument.
 
 <!-- This header is linked internally from this document. Any changes to the header text must be made to the link as well. -->
-#### MSBuild and /maxcpucount:[n]
+### MSBuild and /maxcpucount:[n]
 
 By default the build tasks such as [MSBuild](/azure/devops/pipelines/tasks/reference/msbuild-v1) and [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues.
 
@@ -214,11 +214,11 @@ Try adding the `/m:1` argument to your build tasks to force MSBuild to run only 
 
 File-in-use issues may result when leveraging the concurrent-process feature of MSBuild. Not specifying the argument `/maxcpucount:[n]` (short form `/m:[n]`) instructs MSBuild to use a single process only. If you are using the MSBuild or Visual Studio Build tasks, you may need to specify "/m:1" to override the "/m" argument that is added by default.
 
-### Intermittent or inconsistent MSBuild failures
+## Intermittent or inconsistent MSBuild failures
 
 If you are experiencing intermittent or inconsistent MSBuild failures, try instructing MSBuild to use a single-process only. Intermittent or inconsistent errors may indicate that your target configuration is incompatible with the concurrent-process feature of MSBuild. See [MSBuild and /maxcpucount:[n]](#msbuild-and-maxcpucountn).
 
-### Process stops responding
+## Process stops responding
 
 Process stops responding causes and troubleshooting steps:
 
@@ -226,7 +226,7 @@ Process stops responding causes and troubleshooting steps:
 * [Process dump](#process-dump)
 * [WiX project](#wix-project)
 
-#### Waiting for Input
+### Waiting for Input
 
 A process that stops responding may indicate that a process is waiting for input.
 
@@ -234,15 +234,15 @@ Running the agent from the command line of an interactive logged on session may 
 
 Running the agent as a service may help to eliminate programs from prompting for input. For example in .NET, programs may rely on the System.Environment.UserInteractive Boolean to determine whether to prompt. When the agent is running as a Windows service, the value is false.
 
-#### Process dump
+### Process dump
 
 Analyzing a dump of the process can help to identify what a deadlocked process is waiting on.
 
-#### WiX project
+### WiX project
 
 Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` will work around the issue.
 
-### Line endings for multiple platforms
+## Line endings for multiple platforms
 
 When you run pipelines on multiple platforms, you can sometimes encounter problems with different line endings.
 Historically, Linux and macOS used linefeed (LF) characters while Windows used a carriage return plus a linefeed (CRLF).
@@ -257,7 +257,7 @@ In that file, add the following line:
 * text eol=lf
 ```
 
-### Variables having ' (single quote) appended
+## Variables having ' (single quote) appended
 
 If your pipeline includes a Bash script that sets variables using the `##vso` command, you may see an additional `'` appended to the value of the variable you set.
 This occurs because of an interaction with `set -x`.
@@ -270,7 +270,7 @@ echo ##vso[task.setvariable variable=MY_VAR]my_value
 set -x
 ```
 
-#### Why does this happen?
+### Why does this happen?
 
 Many Bash scripts include the `set -x` command to assist with debugging.
 Bash will trace exactly what command was executed and echo it to stdout.
@@ -295,7 +295,7 @@ When the agent sees the first line, `MY_VAR` will be set to the correct value, "
 However, when it sees the second line, the agent will process everything to the end of the line.
 `MY_VAR` will be set to "my_value'".
 
-### Libraries aren't installed for Python application when script executes 
+## Libraries aren't installed for Python application when script executes 
 
 When a Python application is deployed, in some cases, a CI/CD pipeline runs and the code is deployed successfully, but the *requirements.txt* file that's responsible for installing all dependency libraries doesn't execute. 
 
@@ -306,7 +306,7 @@ D:\home\python364x64\python.exe -m pip install -r requirements.txt
 ```
 
 
-### Service Connection related issues
+## Service Connection related issues
 
 To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
 
