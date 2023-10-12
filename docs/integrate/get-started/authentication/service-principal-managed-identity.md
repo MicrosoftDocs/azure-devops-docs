@@ -129,7 +129,7 @@ A: Service principals and managed identities are priced similarly as users, base
 
 #### Q: Can I use a service principal or managed identity with Azure CLI?
 
-A: Yes! Anywhere that asks for PATs in the [Azure CLI](/cli/azure/authenticate-azure-cli) can also accept [Entra ID access tokens](#get-an-azure-ad-token). See these examples for how you might pass an Entra ID token in to authenticate with CLI.
+A: Yes! Anywhere that asks for PATs in the [Azure CLI](/cli/azure/authenticate-azure-cli) can also accept [Entra ID access tokens](#get-an-entra-id-token). See these examples for how you might pass an Entra ID token in to authenticate with CLI.
 
 ```powershell
 # To authenticate with a command: After typing this command, the az devops login will prompt you to enter a token. You can add an Entra ID token too! Not just a PAT.
@@ -254,7 +254,6 @@ always-auth=true
   <servers>
     <server>
       <id>Fabrikam</id>
-      <!-- username is not used in the authentication -->
       <username>Fabrikam</username>
       <password>[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]</password>
     </server>
@@ -282,7 +281,7 @@ Azure now supports workload identity federation using the Open ID Connect protoc
 ### Repos
 #### Q: Can I use a service principal to do git operations, like clone a repo?
 
-A: See the following example of how we've passed an [Entra ID token](#get-an-azure-ad-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
+A: See the following example of how we've passed an [Entra ID token](#get-an-entra-id-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
 
 ```powershell
 $ServicePrincipalAadAccessToken = 'Entra ID access token of a service principal'
