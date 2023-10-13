@@ -17,13 +17,11 @@ author: steved0x
 
 Azure Pipelines provides diagnostics to help with troubleshooting failed pipeline runs. The pipeline run summary page provides diagnostic information and links to several troubleshooting options.
 
-:::image type="content" source="./media/pipeline-run-summary-troubleshooting.png" alt-text="Screenshot of pipeline run summary page.":::
+:::image type="content" source="./media/pipeline-run-summary-troubleshooting.png" lightbox="./media/pipeline-run-summary-troubleshooting.png" alt-text="Screenshot of pipeline run summary page.":::
 
 Select the error message to view the logs for the task.
 
-:::image type="content" source="./media/error-message.png" alt-text="Screenshot of task error message.":::
-
-:::image type="content" source="./media/task-error-log" lightbox="./media/task-error-log" alt-text="Screenshot of diagnostics log for the pipeline run.":::
+:::image type="content" source="./media/task-error-log.png" lightbox="./media/task-error-log.png" alt-text="Screenshot of diagnostics log for the pipeline run.":::
 
 Error link - takes you to the build log
 View analysis - details of the task
