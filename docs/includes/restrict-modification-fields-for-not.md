@@ -20,7 +20,7 @@ Using one of the following two conditions, you can make select fields required f
 
 
 > [!TIP]    
-> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Azure Active Directory or Active Directory security groups. To learn more, see [Default rules and the rule engine](../organizations/settings/work/rule-reference.md).
+> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. To learn more, see [Default rules and the rule engine](../organizations/settings/work/rule-reference.md).
 
 For example, you can make the Title or the State field Read-only for select users or groups. 
 

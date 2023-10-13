@@ -137,7 +137,7 @@ Here, we've selected to add a link to the selected work items.
 
 ## Link to a remote work item 
 
-You can link work items to objects defined in other Azure DevOps organizations as long as both organizations use the same Azure Active Directory to manage users. 
+You can link work items to objects defined in other Azure DevOps organizations as long as both organizations use the same Microsoft Entra ID to manage users. 
 
 1. Choose from one of the following two remote link types supported. 
 

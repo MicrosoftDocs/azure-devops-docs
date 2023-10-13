@@ -332,7 +332,7 @@ The following table describes fields associated with links and attachments. Most
 
    :::column-end:::
    :::column span="3":::
-   Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. For more information, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md).  
+   Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Microsoft Entra ID. Supported link types include Consumes From, Produced For, and Remote Related. For more information, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md).  
    Reference Name=System.RemoteLinkCount, Data type=Integer
    :::column-end:::
    :::column span="1":::
@@ -372,5 +372,3 @@ All tabs that support creating links between work items are implemented by using
 You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true).
 
 ::: moniker-end 
-
-
