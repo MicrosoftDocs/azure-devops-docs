@@ -51,7 +51,7 @@ Troubleshooting assistance is available using the **Error analysis** page.
 
 :::moniker-end
 
-:::moniker range="azure-devops"
+:::moniker range=">= azure-devops-2020 < azure-devops"
 
 :::image type="content" source="./media/pipeline-error-analysis-icon-server.png" alt-text="Screenshot of view analysis icon for Azure DevOps Server.":::
 
