@@ -56,14 +56,12 @@ We now support four new tasks which provide an easy yet powerful way to deploy A
 
 We also support a new utility task for file transformation and variable substitution for XML and JSON formats.
 
-<a name='azure-active-directory-ad-authentication-support-for-azure-sql-task'></a>
+### Azure Active Directory (AD) authentication support for Azure SQL task
 
-### Microsoft Entra authentication support for Azure SQL task
-
-The Azure SQL task has been enhanced to support connecting to a database using Microsoft Entra ID (Integrated & Password) and a connection string in addition to the existing support for SQL server authentication.
+The Azure SQL task has been enhanced to support connecting to a database using Azure AD (Integrated & Password) and a connection string in addition to the existing support for SQL server authentication.
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft Entra authentication support for Azure SQL task.](../../media/146_16.png)
+> ![Azure AD authentication support for Azure SQL task.](../../media/146_16.png)
 
 ### Grafana annotations service hook
 

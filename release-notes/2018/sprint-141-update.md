@@ -35,7 +35,7 @@ Azure Repos:
 
 Administration:
 
-- [Support Microsoft Entra users in MSA accounts](#support-aad-users-in-msa-accounts)
+- [Support AAD users in MSA accounts](#support-aad-users-in-msa-accounts)
 
 ## Next steps
 
@@ -147,15 +147,15 @@ To help teams protect their repo and its developers, we have added new repositor
 
 ## Administration
 
-### Support Microsoft Entra users in MSA accounts
+### Support AAD users in MSA accounts
 
-Azure DevOps now supports Microsoft Entra users accessing organizations that are backed by MSA. For administrators, this means that if your Azure DevOps organization uses MSAs for corporate users, you can now have new employees access using their Microsoft Entra credentials instead of creating a new MSA identity solely for use with Azure DevOps. 
+Azure DevOps now supports AzureAD (AAD) users accessing organizations that are backed by MSA. For administrators, this means that if your Azure DevOps organization uses MSAs for corporate users, you can now have new employees access using their AAD credentials instead of creating a new MSA identity solely for use with Azure DevOps. 
 
-We still believe that the best experience is for corporate users to [connect Azure DevOps to Microsoft Entra ID](/azure/devops/organizations/accounts/connect-organization-to-azure-ad), but we learned earlier this year that administrators needed more time to make that conversion. By allowing Microsoft Entra users into MSA backed organizations, new users will be able to access Azure DevOps once Azure DevOps has prevented creation of new MSA users with custom domain names backed by AzureAD at the end of the month. 
+We still believe that the best experience is for corporate users to [connect Azure DevOps to AAD](/azure/devops/organizations/accounts/connect-organization-to-azure-ad), but we learned earlier this year that administrators needed more time to make that conversion. By allowing AAD users into MSA backed organizations, new users will be able to access Azure DevOps once Azure DevOps has prevented creation of new MSA users with custom domain names backed by AzureAD at the end of the month. 
 
-For organizations that already use Microsoft Entra identities with Azure DevOps, this feature does not apply. For organizations that currently use MSA identities, please note that all existing users can continue to sign in with their MSA identities as they do today. This only applies for users added in the future (who potentially can't create an MSA with their corporate email address).
+For organizations that already use AAD identities with Azure DevOps, this feature does not apply. For organizations that currently use MSA identities, please note that all existing users can continue to sign in with their MSA identities as they do today. This only applies for users added in the future (who potentially can't create an MSA with their corporate email address).
 
-Here's an example scenario where this experience may be useful: Dorothy is the Azure DevOps organization owner for her company, Fabrikam. She and her team of 10 team members all sign into Azure DevOps with MSA identities that use their corporate email address, e.g. Dorothy@fabrikam.com. Sam is a new team member who joined the company today. Dorothy invites him to Azure DevOps by using his email, sam@fabrikam.com. When he clicks on the join now link in the email, he can sign into Azure DevOps with the same identity from Microsoft Entra ID that he was given to access his email with Microsoft 365. This allows Sam to collaborate with his 11 colleagues and gives Dorothy the freedom to connect her Azure DevOps organization to Microsoft Entra ID when she's ready.
+Here's an example scenario where this experience may be useful: Dorothy is the Azure DevOps organization owner for her company, Fabrikam. She and her team of 10 team members all sign into Azure DevOps with MSA identities that use their corporate email address, e.g. Dorothy@fabrikam.com. Sam is a new team member who joined the company today. Dorothy invites him to Azure DevOps by using his email, sam@fabrikam.com. When he clicks on the join now link in the email, he can sign into Azure DevOps with the same AAD identity he was given to access his email with Microsoft 365. This allows Sam to collaborate with his 11 colleagues and gives Dorothy the freedom to connect her Azure DevOps organization to AAD when she's ready.
 
 See our [blog post](https://blogs.msdn.microsoft.com/devops/2018/09/27/using-azuread-identities-in-azure-devops-organizations-backed-by-microsoft-accounts/) for more information.
 

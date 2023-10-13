@@ -2,11 +2,9 @@
 ms.topic: include
 ---
 
-<a name='query-work-based-on-azure-active-directory-groups'></a>
+### Query work based on Azure Active Directory groups
 
-### Query work based on Microsoft Entra groups
-
-With the increased adoption of Microsoft Entra ID and prevalence of using groups to manage security, teams have increasingly been looking for ways to leverage those groups in Azure Boards. Now, in addition to querying work items which have been assigned or changed by specific people using the **In Group** or **Not In Group** operators, you can also use Microsoft Entra groups directly.
+With the increased adoption of Azure Active Directory and prevalence of using groups to manage security, teams have increasingly been looking for ways to leverage those groups in Azure Boards. Now, in addition to querying work items which have been assigned or changed by specific people using the **In Group** or **Not In Group** operators, you can also use Azure Active Directory groups directly.
 
 See the [query operators](/azure/devops/boards/queries/query-by-workflow-changes?view=azure-devops&preserve-view=true#team-or-group-membership-queries) documentation for more information.
 

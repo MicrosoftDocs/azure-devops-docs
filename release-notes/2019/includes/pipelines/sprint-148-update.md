@@ -126,15 +126,13 @@ For more details on analyzing test results see the documentation [here](/azure/d
 > [!div class="mx-imgBorder"]
 > ![Simplified publishing of test results.](../../media/148_11.png)
 
-<a name='azure-active-directory-device-code-authentication-flow-for-pipelines-agent'></a>
+### Azure Active Directory device code authentication flow for pipelines agent
 
-### Microsoft Entra device code authentication flow for pipelines agent
-
-We've added support for [Microsoft Entra Device Code Flow](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow) to the pipelines agent. Previously you had to set up a PAT manually for a one-time setup. Now you can use your web browser to easily create a PAT.
-When you run the agent configuration script, enter "Microsoft Entra ID" for authentication type. The script will guide you through the next steps, including where to go on the web and what code to enter.
+We've added support for [Azure Active Directory Device Code Flow](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow) to the pipelines agent. Previously you had to set up a PAT manually for a one-time setup. Now you can use your web browser to easily create a PAT.
+When you run the agent configuration script, enter "AAD" for authentication type. The script will guide you through the next steps, including where to go on the web and what code to enter.
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft Entra device code authentication flow for pipelines agent.](../../media/148_12.png)
+> ![Azure Active Directory device code authentication flow for pipelines agent.](../../media/148_12.png)
 
 ### Support for Red Hat Enterprise Linux 6
 

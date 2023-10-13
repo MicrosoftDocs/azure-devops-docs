@@ -151,22 +151,20 @@ Deleting unused packages can help keep the package list clean but sometimes it c
 
 ### Manage access and extensions for large numbers of users using groups
 
-We’ve made it easy for administrators to manage large groups of users by enabling you to assign access levels and extensions to Azure Microsoft Entra ID or VSTS groups. After setting up the appropriate rules, adding someone to the group will automatically grant them the correct access levels and extensions when they access the VSTS account. As a result, access levels and extensions will no longer have to be managed on an individual basis.
+We’ve made it easy for administrators to manage large groups of users by enabling you to assign access levels and extensions to Azure AAD or VSTS groups. After setting up the appropriate rules, adding someone to the group will automatically grant them the correct access levels and extensions when they access the VSTS account. As a result, access levels and extensions will no longer have to be managed on an individual basis.
 
 > [!div class="mx-imgBorder"]
 > ![Group licensing](media/130_07.png)
 
 See the [large account user management roadmap post](https://blogs.msdn.microsoft.com/devops/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/) on the Microsoft DevOps Blog from last year and the [Assign access levels and extensions to users by group membership](/azure/devops/accounts/assign-access-levels-and-extensions-by-group-membership) documentation for more information.
 
-<a name='reduced-latency-for-azure-aad-group-membership-changes'></a>
+### Reduced latency for Azure AAD group membership changes
 
-### Reduced latency for Azure Microsoft Entra group membership changes
-
-If you're managing permissions through Microsoft Entra group memberships, any membership changes in Azure Microsoft Entra ID in the past may have taken 24 to 48 hours to be recognized by VSTS. This latency is now down to 1 hour, enabling you to get new team members up and running quicker.
+If you're managing permissions through Azure Active Directory (Azure AD) group memberships, any membership changes in Azure AAD in the past may have taken 24 to 48 hours to be recognized by VSTS. This latency is now down to 1 hour, enabling you to get new team members up and running quicker.
 
 ### Manage users with Graph REST APIs Public Preview
 
-The Graph REST API resources allow developers to write applications that manage users, groups, and group memberships. The set of APIs cover key user management scenarios including adding a Microsoft Account (MSA) or Microsoft Entra user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. See the Graph REST API [documentation](/azure/devops/integrate/) and [samples](https://github.com/Microsoft/vsts-dotnet-samples) for more information.
+The Graph REST API resources allow developers to write applications that manage users, groups, and group memberships. The set of APIs cover key user management scenarios including adding a Microsoft Account (MSA) or Azure Active Directory (Azure AD) user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. See the Graph REST API [documentation](/azure/devops/integrate/) and [samples](https://github.com/Microsoft/vsts-dotnet-samples) for more information.
 
 ### Leave account
 

@@ -15,5 +15,5 @@ ms.topic: include
 - [Publish to Azure Service Bus session queues](#publish-to-azure-service-bus-session-queues)
 - [Search by folder name in release definitions](#search-by-folder-name-in-release-definitions)
 - [Simplified publishing of test results](#simplified-publishing-of-test-results)
-- [Microsoft Entra device code authentication flow for pipelines agent](#azure-active-directory-device-code-authentication-flow-for-pipelines-agent)
+- [Azure Active Directory device code authentication flow for pipelines agent](#azure-active-directory-device-code-authentication-flow-for-pipelines-agent)
 - [Support for Red Hat Enterprise Linux 6](#support-for-red-hat-enterprise-linux-6)

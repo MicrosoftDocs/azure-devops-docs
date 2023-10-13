@@ -160,9 +160,9 @@ You can learn more about concurrency limits in the [CI/CD Concurrent Jobs in Tea
 
 ### Streamline authentication from agent VMs in Azure to Azure Resource Manager
 
-There are multiple ways to run build and release agents. Running them yourself in Azure just got easier and more secure. Now you can configure Azure Virtual Machines (VM)-based agents with an Azure Managed Service Identity in Microsoft Entra ID. By giving the Azure VM an assigned identity, you can use its Service Principal information to grant the VM access to any Azure resource that supports Microsoft Entra ID, such as Key Vault, instead of persisting credentials in VSTS for the endpoint.
+There are multiple ways to run build and release agents. Running them yourself in Azure just got easier and more secure. Now you can configure Azure Virtual Machines (VM)-based agents with an Azure Managed Service Identity in Azure Active Directory (Azure AD). By giving the Azure VM an assigned identity, you can use its Service Principal information to grant the VM access to any Azure resource that supports Azure AD, such as Key Vault, instead of persisting credentials in VSTS for the endpoint.
 
-For example, if your code needs to call Azure Resource Manager, then you would simply assign the VM’s Service Principal the appropriate role using Role-Based Access Control (RBAC) in Microsoft Entra ID. See the [build and release agents](/azure/devops/pipelines/agents/agents) and [Azure Managed Service Identity](/azure/active-directory/managed-service-identity/overview) documentation for more information.
+For example, if your code needs to call Azure Resource Manager, then you would simply assign the VM’s Service Principal the appropriate role using Role-Based Access Control (RBAC) in Azure AD. See the [build and release agents](/azure/devops/pipelines/agents/agents) and [Azure Managed Service Identity](/azure/active-directory/managed-service-identity/overview) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![Add Azure Resource Manager Service Endpoint dialog](media/135_09.png)
