@@ -108,7 +108,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 	:::image type="content" source="media/stakeholder-security/add-users-to-group.png" alt-text="Permissions, Group, Members tab, Choose Add":::  
 
-1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. Specify individual emails, groups defined in an existing Azure Active Directory  or existing Azure DevOps groups. The system automatically searches for matches. Choose the matches that meet your requirements.
+1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. Specify individual emails, groups defined in an existing Microsoft Entra ID  or existing Azure DevOps groups. The system automatically searches for matches. Choose the matches that meet your requirements.
 
 	:::image type="content" source="media/stakeholder-security/invite-members-dialog.png" alt-text="Invite members dialog":::  
 
@@ -127,7 +127,7 @@ To create a project-level security group, open the web portal and choose the pro
 	> [!div class="mx-imgBorder"]  
 	> ![Add members](media/stakeholder-security/choose-members-add.png) 
 
-1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. Specify individual emails, groups defined in an existing Azure Active Directory  or existing Azure DevOps groups. The system automatically searches for matches. Choose the matches that meet your requirements.
+1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. Specify individual emails, groups defined in an existing Microsoft Entra ID  or existing Azure DevOps groups. The system automatically searches for matches. Choose the matches that meet your requirements.
 
     <img src="media/project-level-permissions-add-a-user.png" alt="Add users and group dialog" />
 
