@@ -88,7 +88,22 @@ resources:
         exclude:
         - releases/old*
 ```
+To trigger the child pipeline for different branches for which the parent is triggered, include all the branch filters for which the parent is triggered. In the following example, the `app-ci` pipeline runs if the `security-lib-ci` completes on any `releases/*` branch or master branch, except for `releases/old*`.
 
+```yaml
+# app-ci YAML pipeline
+resources:
+  pipelines:
+  - pipeline: securitylib
+    source: security-lib-ci
+    trigger: 
+      branches:
+        include: 
+        - releases/*
+        - master
+        exclude:
+        - releases/old*
+```
 > [!NOTE]
 > If your branch filters aren't working, try using the prefix `refs/heads/`. For example, use `refs/heads/releases/old*`instead of `releases/old*`.
 
