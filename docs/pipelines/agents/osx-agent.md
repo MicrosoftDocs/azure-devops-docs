@@ -291,7 +291,7 @@ For example:
 ~/Library/LaunchAgents/vsts.agent.fabrikam.our-osx-agent.plist
 ```
 
-`sudo ./svc.sh install` generates this file from this template: `./bin/vsts.agent.plist.template`
+`./svc.sh install` generates this file from this template: `./bin/vsts.agent.plist.template`
 
 #### .service file
 
