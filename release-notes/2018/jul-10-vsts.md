@@ -50,7 +50,7 @@ Package:
 
 Admin:
 
-- [Connect or disconnect Azure Active Directory as a Project Collection Admin](#connect-or-disconnect-azure-active-directory-as-a-project-collection-admin)
+- [Connect or disconnect Microsoft Entra ID as a Project Collection Admin](#connect-or-disconnect-azure-active-directory-as-a-project-collection-admin)
 - [Public projects available in preview for all organizations](#public-projects-available-in-preview-for-all-organizations)
 - [Adopt the word "organization" when referring to a collection of projects in VSTS](#adopt-the-word-organization-when-referring-to-a-collection-of-projects-in-vsts)
 
@@ -152,9 +152,11 @@ The Package Management extension is pre-installed into all organizations. If you
 
 ## Administration
 
-### Connect or disconnect Azure Active Directory as a Project Collection Admin
+<a name='connect-or-disconnect-azure-active-directory-as-a-project-collection-admin'></a>
 
-A Project Collection Administrator (PCA) can now [connect or disconnect their organization from Azure Active Directory](/azure/devops/organizations/accounts/connect-organization-to-aad?view=azure-devops&preserve-view=true). Previously this had to be done by an organization owner.
+### Connect or disconnect Microsoft Entra ID as a Project Collection Admin
+
+A Project Collection Administrator (PCA) can now [connect or disconnect their organization from Microsoft Entra ID](/azure/devops/organizations/accounts/connect-organization-to-aad?view=azure-devops&preserve-view=true). Previously this had to be done by an organization owner.
 
 ### Public projects available in preview for all organizations
 

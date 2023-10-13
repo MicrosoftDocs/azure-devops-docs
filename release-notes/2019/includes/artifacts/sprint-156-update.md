@@ -2,9 +2,11 @@
 ms.topic: include
 ---
 
-### Configure upstreams in different organizations within an AAD tenant
+<a name='configure-upstreams-in-different-organizations-within-an-aad-tenant'></a>
 
-You can now add a feed in another organization associated with your Azure Active Directory (AAD) tenant as an upstream source to your Artifacts feed. Your feed can find and use packages from the feeds that are configured as upstream sources, allowing packages to be shared easily across organizations associated with your AAD tenant. See how to [set this up in the docs](/azure/devops/artifacts/how-to/set-up-upstream-sources?view=azure-devops&preserve-view=true#add-an-azure-artifacts-feed-in-a-different-organization-within-your-aad-tenant-as-an-upstream-source). 
+### Configure upstreams in different organizations within a Microsoft Entra tenant
+
+You can now add a feed in another organization associated with your Microsoft Entra tenant as an upstream source to your Artifacts feed. Your feed can find and use packages from the feeds that are configured as upstream sources, allowing packages to be shared easily across organizations associated with your Microsoft Entra tenant. See how to [set this up in the docs](/azure/devops/artifacts/how-to/set-up-upstream-sources?view=azure-devops&preserve-view=true#add-an-azure-artifacts-feed-in-a-different-organization-within-your-aad-tenant-as-an-upstream-source). 
 
 ### Use the Python Credential Provider (preview) to authenticate pip and twine with Azure Artifacts feeds
 
