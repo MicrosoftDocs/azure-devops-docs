@@ -59,7 +59,7 @@ Troubleshooting assistance is available using the **Error analysis** page. Move 
 
 :::moniker range=">= azure-devops-2020"
 
-Choose **View agent** to view more information about the agent used to run the pipeline, and **View log** to view the pipeline run logs.
+Choose **View agent** for self-hosted agents (or **About hosted agent image** for Microsoft-hosted agents) to view more information about the agent used to run the pipeline, and **View log** to view the pipeline run logs.
 
 :::image type="content" source="./media/error-analysis.png" alt-text="Screenshot of error analysis page.":::
 
