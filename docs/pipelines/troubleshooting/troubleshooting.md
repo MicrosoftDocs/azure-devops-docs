@@ -59,11 +59,15 @@ Troubleshooting assistance is available using the **Error analysis** page.
 
 :::moniker range=">= azure-devops-2020"
 
-* Choose **View agent** to view more information about the agent used to run the pipeline.
-* Choose **View log** to view the pipeline run logs.
-* Choose the name of the task below **Run-time details** to view information about the task.
-   :::image type="content" source="./media/task-details.png" alt-text="Screenshot of task details.":::
-  In this example, you can see that there is an error in the `Value` of the `Script`. Choose **About this task** to view the documentation for the task.
+Choose **View agent** to view more information about the agent used to run the pipeline, and **View log** to view the pipeline run logs.
+
+:::image type="content" source="./media/error-analysis.png" alt-text="Screenshot of error analysis page.":::
+
+Choose the name of the task below **Run-time details** to view information about the task.
+
+:::image type="content" source="./media/task-details.png" alt-text="Screenshot of task details.":::
+
+In this example, you can see that there is an error in the `Value` of the `Script`. Choose **About this task** to view the documentation for the task.
 
 :::moniker-end
 
