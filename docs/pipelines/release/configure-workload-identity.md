@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops'
 
 When you [troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md#troubleshoot-azure-resource-manager-workload-identity-service-connections), you many need to manually configure the connection instead of using the automated tool. You should [try the automated approach first](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-workload-identity-federation) before starting a manual configuration. 
 
-There are two options for authentication: managed identity and using a service principal. The advantage of the managed identity option is that you can use it when you don't have permission to create service principals or you are using a different Azure Entra ID tenant than your Azure DevOps user. 
+There are two options for authentication: managed identity and using a service principal. The advantage of the managed identity option is that you can use it when you don't have permission to create service principals or you are using a different Azure Microsoft Entra tenant than your Azure DevOps user. 
 
 ## Workload identity with managed identity
 
@@ -186,5 +186,3 @@ You may need to manually create a service principal with federated credentials a
 1. In Azure portal, select **Update** to save the updated credential. 
 
 1. In Azure DevOps, select **Verify and save**.
-
-
