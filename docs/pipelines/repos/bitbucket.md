@@ -202,7 +202,7 @@ pr: none
 For more information, see [PR trigger](/azure/devops/pipelines/yaml-schema/pr) in the [YAML schema](/azure/devops/pipelines/yaml-schema).
 
 > [!NOTE]
-> If your `pr` trigger isn't firing, ensure that you have not [overridden YAML PR triggers in the UI](../troubleshooting/troubleshooting.md#overridden-yaml-trigger-setting).
+> If your `pr` trigger isn't firing, ensure that you have not [overridden YAML PR triggers in the UI](../troubleshooting/troubleshoot-triggers.md#overridden-yaml-trigger-setting).
 
 # [Classic](#tab/classic/)
 

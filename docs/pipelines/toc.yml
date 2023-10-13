@@ -663,6 +663,10 @@
   items:
   - name: Troubleshoot pipeline runs
     href: troubleshooting/troubleshooting.md
+  - name: Troubleshoot pipeline triggers
+    href: troubleshooting/troubleshoot-triggers.md
+  - name: Pipeline queues but never starts
+    href: troubleshooting/troubleshoot-start.md
   - name: Review logs
     href: troubleshooting/review-logs.md
   - name: Debug deployment issues
