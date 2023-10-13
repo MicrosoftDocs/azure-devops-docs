@@ -85,4 +85,4 @@ For information on rate limits, see [Current rate limits](../../integrate/concep
 - [Work tracking, process, and project limits](../settings/work/object-limits.md)
 - [Access, export, and filter Azure DevOps audit logs](../audit/azure-devops-auditing.md)
 - [About Settings at the user, team, project, and organizational level](../settings/about-settings.md)
-- [Get list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+- [Get list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)

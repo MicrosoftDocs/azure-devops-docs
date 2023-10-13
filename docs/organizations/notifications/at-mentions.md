@@ -20,7 +20,7 @@ ms.date: 03/23/2023
 
 The **@mention** control allows you to quickly add a user or group to a work item or pull request discussion. Using the people picker of the **@mention** control, you can select a project member or group from the search list, and they receive an email notifying them of your comment. 
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers support searching all users and groups added to Azure AD, not only those users and groups added to your project. To limit the set to project members and groups, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).  
+For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups added to Microsoft Entra ID, not only those users and groups added to your project. To limit the set to project members and groups, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).  
 
 > [!NOTE]
 > You can post an @mention via API. 
@@ -127,9 +127,9 @@ Use the **\@mention** control in pull request discussions, commit comments, chan
 
 ## Limited identities in search selection  
 
-In general, people pickers search and select any user or group added to an organization's Azure AD. 
+In general, people pickers search and select any user or group added to an organization's Microsoft Entra ID. 
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching users and groups added to the Azure AD. For organizations that want to limit the search and selection to only those users and groups added to a specific project, they can do so by enabling the **Limit user visibility and collaboration to specific projects** preview feature for their organization. 
+For organizations that manage their users and groups using Microsoft Entra ID, people pickers provide support for searching users and groups added to the Microsoft Entra ID. For organizations that want to limit the search and selection to only those users and groups added to a specific project, they can do so by enabling the **Limit user visibility and collaboration to specific projects** preview feature for their organization. 
 
 [!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
 

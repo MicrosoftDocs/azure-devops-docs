@@ -220,7 +220,7 @@ https://azurecomcdn.azureedge.net
 
 The following endpoints are used to authenticate Azure DevOps organizations using a Microsoft Account (MSA). 
 These are only needed for Azure DevOps organizations backed by Microsoft Accounts (MSA). 
-Azure DevOps organizations backed an Azure Active Directory tenant does not need the following URLs.
+Azure DevOps organizations backed a Microsoft Entra tenant does not need the following URLs.
 
 ```
 https://live.com 

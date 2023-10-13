@@ -6,4 +6,4 @@ author: chcomley
 ---
 
 > [!IMPORTANT]
-> Auditing is only available for organizations backed by Azure Active Directory. For more information, see [Connect your organization to Azure Active Directory](../../accounts/connect-organization-to-azure-ad.md).
+> Auditing is only available for organizations backed by Microsoft Entra ID. For more information, see [Connect your organization to Microsoft Entra ID](../../accounts/connect-organization-to-azure-ad.md).
