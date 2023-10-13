@@ -471,7 +471,7 @@ The default time that the dependency scanning task runs before timing out is 300
 
 If the dependency scanning build task is blocking a successful execution of your pipeline and you need to urgently skip the build task, you can set a pipeline variable `DependencyScanning.Skip: true`.
 
-### Dependency scanning task lack of permissions
+### Dependency scanning task permissions
 
 The dependency scanning build task uses the pipeline identity to call to Advanced Security REST APIs, this is done to respect alert states from the service (aka Closed state). By default, pipelines in same project have access to fetch alerts. If you were to remove those permissions from build service account, or you have a custom setup (e.g. pipeline hosted in different project than repository) you would need to grant these permissions manually.
 
