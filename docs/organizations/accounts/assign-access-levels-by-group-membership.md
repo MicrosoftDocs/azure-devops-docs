@@ -2,7 +2,7 @@
 title: Add group rule to assign access levels
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18, engagement-fy23
-description: Learn how to assign access levels with group rules in Azure Active Directory and Azure DevOps.
+description: Learn how to assign access levels with group rules in Microsoft Entra ID and Azure DevOps.
 ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. Learn how to add a group rule to assign an access level to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are also used to add users to team projects and other specific groups, like Contributors, Readers, and Administrators.
+Azure DevOps includes group-based licensing for Microsoft Entra groups and Azure DevOps groups. Learn how to add a group rule to assign an access level to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are also used to add users to team projects and other specific groups, like Contributors, Readers, and Administrators.
 
 When users leave the group, the licenses get freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 
@@ -70,7 +70,7 @@ When users leave the group, the licenses get freed and returned to your pool. Yo
 When you assign the same access level to a user, the user consumes only one access level. User assignments can be made both directly and through a group. No other licenses are required.
 
 > [!NOTE]
-> You can assign Group rules to support both access levels and project memberships. Users are granted the highest access level when assigned to more than one rule or Azure AD group which specify different levels of access.  For example, if John is assigned to two Azure AD groups and two different Group rules that specify Stakeholder access and the other Basic access, then John's access level is Basic. 
+> You can assign Group rules to support both access levels and project memberships. Users are granted the highest access level when assigned to more than one rule or Microsoft Entra group which specify different levels of access.  For example, if John is assigned to two Microsoft Entra groups and two different Group rules that specify Stakeholder access and the other Basic access, then John's access level is Basic. 
 
 ## Verify group rule
 
@@ -107,6 +107,6 @@ Direct assignments are removed from the users.
 
 ## Related articles
 
-* [Install Active Directory and Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)
-* [About accessing your organization with Azure AD](access-with-azure-ad.md)
-* [Manage Azure Active Directory groups](manage-azure-active-directory-groups.md)
+* [Install Active Directory and Microsoft Entra users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)
+* [About accessing your organization with Microsoft Entra ID](access-with-azure-ad.md)
+* [Manage Microsoft Entra groups](manage-azure-active-directory-groups.md)

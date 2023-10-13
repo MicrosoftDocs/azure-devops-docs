@@ -88,7 +88,7 @@ sections:
           
           ![Rename project, change organization location, or select another process](../../media/change-details-standard2.png)
           
-          If you connected your organization to Azure Active Directory but you belong to multiple directories and want to select a different directory, change your directory here:
+          If you connected your organization to Microsoft Entra ID but you belong to multiple directories and want to select a different directory, change your directory here:
           
           ![Change your directory](../../media/change-details-standard2-with-directory.png)
           
@@ -159,7 +159,7 @@ sections:
           
           When you sign up with a work or school account:
           
-          * Your organization is automatically connected to your directory in Azure Active Directory.
+          * Your organization is automatically connected to your directory in Microsoft Entra ID.
           * All users must be members in the connected directory to get access to your organization.
           * The directory administrator has control over who can join the directory.
           * You sign in with work or school accounts, or with Microsoft accounts if your company allows that.
@@ -171,7 +171,7 @@ sections:
       - question: |
           Q: Can I change the directory after sign-in?
         answer: |
-          A: Yes, see [Disconnect your organization from Azure Active Directory](disconnect-organization-from-azure-ad.md) and  [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
+          A: Yes, see [Disconnect your organization from Microsoft Entra ID](disconnect-organization-from-azure-ad.md) and  [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md).
           
           <a name="ChooseOrgAcctMSAcct"></a>
           
@@ -217,12 +217,12 @@ sections:
           * The user isn't in your organization, or the user doesn't have organization access. Learn how to [add a user to your organization](add-organization-users.md).  
           * The user hasn't created a Visual Studio profile and agreed to the Terms of Service.  
           * If you recently added this person to your organization, you might experience a delay before the user appears in the possible organization owners list.  
-          * If your organization uses Azure Active Directory to control access, directory members don't appear in the possible organization owners list until they meet the requirements. For more information, see [Access Azure AD FAQs](faq-azure-access.yml).
+          * If your organization uses Microsoft Entra ID to control access, directory members don't appear in the possible organization owners list until they meet the requirements. For more information, see [Access Microsoft Entra FAQs](faq-azure-access.yml).
           
       - question: |
           Q: What if the owner of my organization has left the company/isn't active?
         answer: |
-          A: Azure DevOps Administrators can claim ownership of organizations where the current owner and any members of the Project Collection Administrators group are inactive in the Azure AD tenant that's connected to your organization. For more information, see [Resolve inactive organization owner](resolve-orphaned-organization.md).
+          A: Azure DevOps Administrators can claim ownership of organizations where the current owner and any members of the Project Collection Administrators group are inactive in the Microsoft Entra tenant that's connected to your organization. For more information, see [Resolve inactive organization owner](resolve-orphaned-organization.md).
           
       - question: |
           Q: Can I change my organization owner?
@@ -321,6 +321,6 @@ additionalContent: |
 
   ## Related articles
   
-  - [Access with Azure AD FAQs](faq-azure-access.yml)
-  - [Set up Visual Studio FAQs](faq-set-up-vs.yml)
-  - [User and permissions management FAQs](faq-user-and-permissions-management.yml)
+  - [Access with Microsoft Entra FAQ](faq-azure-access.yml)
+  - [Set up Visual Studio FAQ](faq-set-up-vs.yml)
+  - [User and permissions management FAQ](faq-user-and-permissions-management.yml)

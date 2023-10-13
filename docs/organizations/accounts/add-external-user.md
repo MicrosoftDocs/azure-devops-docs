@@ -16,14 +16,14 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to invite external users to your organization. If you access Azure DevOps via Azure Active Directory (Azure AD), you must add the identities of those users to your Azure AD. Doing so also grants the users more privileges. For more information, see [more organization-level resources](../projects/resources-granted-to-project-members.md).
+Learn how to invite external users to your organization. If you access Azure DevOps via Microsoft Entra ID, you must add the identities of those users to your Microsoft Entra ID. Doing so also grants the users more privileges. For more information, see [more organization-level resources](../projects/resources-granted-to-project-members.md).
 
 ## Prerequisites
 
 
 * You must be a member of the Project Collection Administrators or Project Administrators group for the organization that you want to invite external users to.
 
-* The Azure AD tenant, to which you want to invite external users, must allow adding new users, per your Azure AD guest policies. For more information, see [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
+* The Microsoft Entra tenant, to which you want to invite external users, must allow adding new users, per your Microsoft Entra guest policies. For more information, see [how to become eligible to invite external users on your Microsoft Entra tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
 
 * The user policy, **External guest access**, must be **On** for the organization that you want to invite external users to. See the following image example.
    * Team and Project Administrators can only invite external users if the user policy, **Allow team and project administrators to invite new users**, is **On**. For more information, see [Restrict invitations from Project and Team Administrators](../security/restrict-invitations.md).
@@ -63,11 +63,11 @@ Learn how to invite external users to your organization. If you access Azure Dev
 
 The external user is added to the organization to which they were invited and has immediate access.
 
-A guest user can add other guest users to the organization after being granted the Guest Inviter role in Azure AD.
+A guest user can add other guest users to the organization after being granted the Guest Inviter role in Microsoft Entra ID.
 
 ## Related articles
 
-* [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
+* [What is Microsoft Entra B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
 * [Migrate to group-based resource management](./assign-access-levels-by-group-membership.md)
 * [Assign access levels to users by group membership](assign-access-levels-by-group-membership.md)
 * [Restrict invitations to new users](../security/restrict-invitations.md)
