@@ -473,6 +473,6 @@ If the dependency scanning build task is blocking a successful execution of your
 
 ### Dependency scanning task permissions
 
-The dependency scanning build task uses the pipeline identity to call to Advanced Security REST APIs, this is done to respect alert states from the service (aka Closed state). By default, pipelines in same project have access to fetch alerts. If you were to remove those permissions from build service account, or you have a custom setup (e.g. pipeline hosted in different project than repository) you would need to grant these permissions manually.
+The dependency scanning build task uses the pipeline identity to call the Advanced Security REST APIs. By default, pipelines in same project have access to fetch alerts. If you were to remove those permissions from build service account, or you have a custom setup (e.g. pipeline hosted in different project than repository) you would need to grant these permissions manually.
 
 Grant the `Advanced Security: View Alerts` permission to be build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for project-collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
