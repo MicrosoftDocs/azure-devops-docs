@@ -15,7 +15,7 @@ author: steved0x
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If your pipeline fails to complete, you can use the diagnostic information and logs provided by the pipeline run summary page to help troubleshoot the issue.
+If your pipeline run fails to complete, you can use the diagnostic information and logs provided by the pipeline run summary page to help troubleshoot the issue.
 
 :::image type="content" source="./media/pipeline-run-summary-troubleshooting.png" lightbox="./media/pipeline-run-summary-troubleshooting.png" alt-text="Screenshot of pipeline run summary page.":::
 
@@ -23,7 +23,7 @@ If your pipeline fails to complete, you can use the diagnostic information and l
 
 ## View logs
 
-Select the error message to view the logs for the task.
+Select the error message to view the logs for the task that failed to complete.
 
 :::image type="content" source="./media/error-message.png" alt-text="Screenshot of task error message.":::
 
