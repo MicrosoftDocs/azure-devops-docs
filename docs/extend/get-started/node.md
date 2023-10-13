@@ -107,10 +107,25 @@ An extension is composed of a set of files that includes a required manifest fil
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <script type="text/javascript" src="lib/SDK.min.js">
-            SDK.init();
-            SDK.ready(function() {
-                document.getElementById("name").innerText = SDK.getUser().name;
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+        <script>
+            window.requirejs.config({
+                enforceDefine: true,
+                paths: {
+                    'SDK': './lib/SDK.min'
+                }
+            });
+            window.requirejs(['SDK'], function (SDK) {
+                if (typeof SDK !== 'undefined') {
+                    console.log("SDK is defined. Trying to initialize...");
+                    SDK.init();
+                    SDK.ready(function() {
+                        console.log("SDK is ready");
+                        document.getElementById("name").innerText = SDK.getUser().name;
+                    });
+                } else {
+                    console.log('SDK is not defined');
+                }
             });
         </script>
         <style>
