@@ -242,7 +242,7 @@ pool:
   vmImage: 'Windows-latest'
 
 variables:
-  PackageFeedEndpoint: 'https://pkgs.dev.azure.com/ramiMSFTDevOps/PsRepository/_packaging/PsRepositoryFeed/nuget/v2'
+  PackageFeedEndpoint: 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2'  ## For project scoped feeds use: 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2'
   PackageFeedEndpointCredential: '{"endpointCredentials": [{"endpoint":"$(PackageFeedEndpoint)", "username":"Admin", "password":"$(AZURE_DEVOPS_PAT)"}]}'
 
 steps:
