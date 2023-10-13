@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 author: steved0x
 ---
 
-# Troubleshoot pipeline faiure to start
+# Troubleshoot pipeline failure to start
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -22,7 +22,7 @@ If your pipeline queues but never starts, check the following items.
 * [Parallel job limits - no available agents or you have hit your free limits](#parallel-job-limits---no-available-agents-or-you-have-hit-your-free-limits)
 * [Can't access Azure Key Vault behind firewall from Azure DevOps](#cant-access-azure-key-vault-behind-firewall-from-azure-devops)
 * [You don't have enough concurrency](#you-dont-have-enough-concurrency)
-* [Your job may be waiting for approval](#your-job-may-be-waiting-for-approval)
+* [Your job might be waiting for approval](#your-job-might-be-waiting-for-approval)
 * [All available agents are in use](#all-available-agents-are-in-use)
 * [Demands that don't match the capabilities of an agent](#demands-that-dont-match-the-capabilities-of-an-agent)
 * [Check Azure DevOps status for a service degradation](#check-azure-devops-status-for-a-service-degradation)
@@ -54,7 +54,7 @@ If your pipeline queues but never starts, check the following items.
 
 ::: moniker range="azure-devops"
 
-If you are currently running other pipelines, you may not have any remaining parallel jobs, or you may have hit your [free limits](../licensing/concurrent-jobs.md).
+If you're currently running other pipelines, you might not have any remaining parallel jobs, or you might have hit your [free limits](../licensing/concurrent-jobs.md).
 
 ### Check for available parallel jobs
 
@@ -65,7 +65,7 @@ To check your limits, navigate to **Project settings**, **Parallel jobs**.
 
 ![Pipelines concurrent jobs](../media/troubleshooting/concurrent-pipeline-limits.png)
 
-If you are using [Microsoft-hosted](../agents/hosted.md) agents, check the parallel job limits for **Microsoft-hosted** for **Private projects** or **Public projects**, depending on whether your Azure DevOps project is a [private project (default) or public project](../../organizations/projects/make-project-public.md).
+If you're using [Microsoft-hosted](../agents/hosted.md) agents, check the parallel job limits for **Microsoft-hosted** for **Private projects** or **Public projects**, depending on whether your Azure DevOps project is a [private project (default) or public project](../../organizations/projects/make-project-public.md).
 
 After reviewing the limits, check concurrency to see how many jobs are currently running and how many are available.
 
@@ -73,7 +73,7 @@ After reviewing the limits, check concurrency to see how many jobs are currently
 
 ::: moniker range="< azure-devops"
 
-If you are currently running other pipelines, you may not have any remaining parallel jobs, or you may have hit your [free limits](../licensing/concurrent-pipelines-tfs.md).
+If you're currently running other pipelines, you might not have any remaining parallel jobs, or you might have hit your [free limits](../licensing/concurrent-pipelines-tfs.md).
 
 ::: moniker-end
 
@@ -107,13 +107,13 @@ To check how much concurrency you have:
 
     In this example, the concurrent job limit is one, with one job running and one queued up. When all agents are busy running jobs, as in this example, the following message is displayed when additional jobs are queued: `The agent request is not running because all potential agents are running other requests. Current position in queue: 1`. In this example the job is next in the queue so its position is one.
 
-## Your job may be waiting for approval
+## Your job might be waiting for approval
  
-Your pipeline may not move to the next stage because it is waiting on approval. For more information, see [Define approvals and checks](../process/approvals.md).
+Your pipeline might not move to the next stage because it's waiting on approval. For more information, see [Define approvals and checks](../process/approvals.md).
  
 ## All available agents are in use 
  
-Jobs may wait if all your agents are currently busy. To check your agents:
+Jobs might wait if all your agents are currently busy. To check your agents:
 1. Navigate to `https://dev.azure.com/{org}/_settings/agentpools`
 2. Select the agent pool to check, in this example **FabrikamPool**, and choose **Agents**.
 
@@ -125,7 +125,7 @@ Jobs may wait if all your agents are currently busy. To check your agents:
 
 ## Demands that don't match the capabilities of an agent
 
-If your pipeline has demands that don't meet the capabilities of any of your agents, your pipeline won't start. If only some of your agents have the desired capabilities and they are currently running other pipelines, your pipeline will be stalled until one of those agents becomes available.
+If your pipeline has demands that don't meet the capabilities of any of your agents, your pipeline won't start. If only some of your agents have the desired capabilities and they're currently running other pipelines, your pipeline will be stalled until one of those agents becomes available.
 
 To check the capabilities and demands specified for your agents and pipelines, see [Capabilities](../agents/agents.md#capabilities).
 
@@ -166,26 +166,26 @@ This issue is characterized by the error message:
 The job has been abandoned because agent did not renew the lock. Ensure agent is running, not sleeping, and has not lost communication with the service.
 ```
 
-This error may indicate the agent lost communication with the server for a span of several minutes. Check the following to rule out network or other interruptions on the agent machine:
+This error might indicate the agent lost communication with the server for a span of several minutes. Check the following to rule out network or other interruptions on the agent machine:
 
 * Verify automatic updates are turned off. A machine reboot from an update will cause a build or release to fail with the above error. Apply updates in a controlled fashion to avoid this type of interruption. Before rebooting the agent machine, mark the agent as disabled in the pool administration page and let any running build finish.
 * Verify the sleep settings are turned off.
-* If the agent is running on a virtual machine, avoid any live migration or other VM maintenance operation that may severely impact the health of the machine for multiple minutes.
+* If the agent is running on a virtual machine, avoid any live migration or other VM maintenance operation that might severely impact the health of the machine for multiple minutes.
 * If the agent is running on a virtual machine, the same operating-system-update recommendations and sleep-setting recommendations apply to the host machine. And also any other maintenance operations that several impact the host machine.
 * Performance monitor logging or other health metric logging can help to correlate this type of error to constrained resource availability on the agent machine (disk, memory, page file, processor, network).
-* Another way to correlate the error with network problems is to ping a server indefinitely and dump the output to a file, along with timestamps. Use a healthy interval, for example 20 or 30 seconds. If you are using Azure Pipelines, then you would want to ping an internet domain, for example bing.com. If you are using an on-premises TFS server, then you would want to ping a server on the same network.
+* Another way to correlate the error with network problems is to ping a server indefinitely and dump the output to a file, along with timestamps. Use a healthy interval, for example 20 or 30 seconds. If you're using Azure Pipelines, then you would want to ping an internet domain, for example bing.com. If you're using an on-premises TFS server, then you would want to ping a server on the same network.
 * Verify the network throughput of the machine is adequate. You can perform an online speed test to check the throughput.
 * If you use a proxy, verify the agent is configured to use your proxy. Refer to the agent deployment topic.
 
 ### TFS Job Agent not started
 
-This may be characterized by a message in the web console "Waiting for an agent to be requested". Verify the TFSJobAgent (display name: *Visual Studio Team Foundation Background Job Agent*) Windows service is started.
+This might be characterized by a message in the web console "Waiting for an agent to be requested". Verify the TFSJobAgent (display name: *Visual Studio Team Foundation Background Job Agent*) Windows service is started.
 
 ### Misconfigured notification URL (1.x agent version)
 
-This may be characterized by a message in the web console "Waiting for console output from an agent", and the process eventually times out.
+This might be characterized by a message in the web console "Waiting for console output from an agent", and the process eventually times out.
 
-A mismatching notification URL may cause the worker to process to fail to connect to the server. See *Team Foundation Administration Console*, *Application Tier*. The 1.x agent listens to the message queue using the URL that it was configured with. However, when a job message is pulled from the queue, the worker process uses the notification URL to communicate back to the server.
+A mismatching notification URL might cause the worker to process to fail to connect to the server. See *Team Foundation Administration Console*, *Application Tier*. The 1.x agent listens to the message queue using the URL that it was configured with. However, when a job message is pulled from the queue, the worker process uses the notification URL to communicate back to the server.
 
 ::: moniker-end
 
@@ -193,7 +193,7 @@ A mismatching notification URL may cause the worker to process to fail to connec
 
 ## Check Azure DevOps status for a service degradation
 
-Check the [Azure DevOps Service Status Portal](https://status.dev.azure.com/) for any issues that may cause a service degradation, such as increased queue time for agents. For more information, see [Azure DevOps Service Status](../../user-guide/service-status-info.md).
+Check the [Azure DevOps Service Status Portal](https://status.dev.azure.com/) for any issues that might cause a service degradation, such as increased queue time for agents. For more information, see [Azure DevOps Service Status](../../user-guide/service-status-info.md).
 
 ::: moniker-end
 
