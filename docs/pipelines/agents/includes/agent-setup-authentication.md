@@ -10,7 +10,7 @@ ms.date: 10/09/2023
 :::moniker range="azure-devops"
 
 * [**PAT**](../personal-access-token-agent-registration.md)
-* [**AAD**](../device-code-flow-agent-registration.md) (device code flow authentication)
+* [**Microsoft Entra ID**](../device-code-flow-agent-registration.md) (device code flow authentication)
 * [**SP**](../service-principal-agent-registration.md) (Service Principal authentication)
 
 :::moniker-end

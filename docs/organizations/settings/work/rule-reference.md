@@ -840,7 +840,7 @@ You can restrict application of a rule based on the current user's membership. W
 
 
 > [!TIP]    
-> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Azure Active Directory or Active Directory security groups. To learn more, see [Default rules and the rule engine](rule-reference.md). 
+> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. To learn more, see [Default rules and the rule engine](rule-reference.md). 
 
 # [Inheritance process](#tab/inheritance)
 
@@ -1008,7 +1008,7 @@ To learn more about default security groups, see [Permissions and groups](../../
 
 Rules that specify a condition based on the user or group membership of the user modifying a work item are evaluated in one of two ways. When the rule is evaluated, the application needs to determine whether the rule applies to the current user by checking if that user is or isn't a member of the specified group. 
  
-- When modifying the work item from the web portal, REST API, or **azure boards** command, a request to the Azure Active Directory or Active Directory is made. No problems occur for this operation.  
+- When modifying the work item from the web portal, REST API, or **azure boards** command, a request to the Microsoft Entra ID or Active Directory is made. No problems occur for this operation.  
 - When modifying the work item from Visual Studio, Excel or other custom tool using the WIT Client Object Model, the request to evaluate membership is based on a client cache. The client cache is not aware of Active Directory groups. 
 
 > [!NOTE] 

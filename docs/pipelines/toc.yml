@@ -545,7 +545,7 @@
       href: agents/personal-access-token-agent-registration.md
     - name: Service Principal (SP)
       href: agents/service-principal-agent-registration.md
-    - name: Device code flow (AAD)
+    - name: Device code flow (Microsoft Entra ID)
       href: agents/device-code-flow-agent-registration.md
   - name: Self-hosted agents (previous version 2.x)
     items:
