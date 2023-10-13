@@ -47,7 +47,7 @@ In this section, we'll cover best practices for consuming packages with Azure Ar
 
     Adding upstream sources to your feed is the recommended approach for consuming packages from public registries like NuGet.org or npmjs.com. See [Understand upstream sources](upstream-sources.md) and [how to configure upstream sources](../how-to/set-up-upstream-sources.md) for more details.
 
-- **Sources not in your organization but in the same AAD tenant should be added using the feed locator**:
+- **Sources not in your organization but in the same Microsoft Entra tenant should be added using the feed locator**:
 
     The syntax for the feed locator is as follows: `azure-feed://<organization>/<projectName>/<feed>@<view>`
 

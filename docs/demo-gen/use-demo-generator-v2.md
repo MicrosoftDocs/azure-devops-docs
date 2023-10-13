@@ -14,7 +14,7 @@ ms.date: 10/10/2019
 
 1. Browse to the [Azure DevOps Demo Generator site](https://azuredevopsdemogenerator.azurewebsites.net/) by selecting the link, or copy `https://azuredevopsdemogenerator.azurewebsites.net/` into your browser's URL field.
 
-2. Click **Sign In** and provide the Microsoft or Azure AD account credentials associated with an organization in Azure DevOps Services. If you don't have an organization, click on **Get Started for Free** to create one and then log in with your credentials.
+2. Click **Sign In** and provide the Microsoft or Microsoft Entra account credentials associated with an organization in Azure DevOps Services. If you don't have an organization, click on **Get Started for Free** to create one and then log in with your credentials.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="media/homepage.png" alt-text="Azure DevOps Demo Generator V2 login" lightbox="media/homepage.png":::

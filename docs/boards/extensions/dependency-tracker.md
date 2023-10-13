@@ -75,7 +75,7 @@ All teams across organizations can participate in tracking dependencies.
 - Install the [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) for the organization(s) for which you want to track dependencies.
 - To view dependencies, you must be a member of the Project Valid Users group for the project.  
 - To create a dependency, you must be a member of the Contributors group for both projects that participate in the dependency linking.
-- To support cross-organization participation, all organizations must authenticate users through the same [Azure Active Directory](../../organizations/accounts/connect-organization-to-azure-ad.md). 
+- To support cross-organization participation, all organizations must authenticate users through the same [Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). 
 - Azure Boards must be enabled as a service. If it's disabled, then you'll need to have it reenabled. For more information, see [Turn a service on or off](../../organizations/settings/set-services.md). 
 - To modify the configuration, you must be a member of the  Project Collection Administrator Group. 
 
@@ -948,4 +948,3 @@ The dependency bot works in the background to notify teams when dependencies are
 - Ask how her link type is Producing for/Consuming from link
 
 --> 
-

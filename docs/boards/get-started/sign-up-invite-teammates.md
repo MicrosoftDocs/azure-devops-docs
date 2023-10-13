@@ -40,7 +40,7 @@ You must have the latest version of one of the following web browsers: Microsoft
 		> - An organization and project get created based on your account name. Sign in to your organization at any time by entering `https://dev.azure.com/{yourorganization}` in your web portal. You can [change the organization or project settings](#change-settings) at any time. 
 	- **Start free with GitHub**: Choose this option if you have an  existing GitHub account.
 	    > [!IMPORTANT]
-        > If your GitHub email address is associated with an Azure AD-backed organization in Azure DevOps, you can't sign in with your GitHub account, rather you must sign in with your Azure AD account.
+        > If your GitHub email address is associated with a Microsoft Entra ID-backed organization in Azure DevOps, you can't sign in with your GitHub account, rather you must sign in with your Microsoft Entra account.
  
    If you've already signed up or have an organization set up to use Azure Boards, choose the **Sign in** link.
 
@@ -135,7 +135,7 @@ For more information about changing your project settings, see the following art
 
 ## Sign up with a personal Microsoft account 
 
-If you have a Microsoft account or Azure Active Directory organizational account, follow these steps to sign up for Azure Boards. 
+If you have a Microsoft account or Microsoft Entra organizational account, follow these steps to sign up for Azure Boards. 
 
 1. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and you get Azure DevOps as a benefit, use the Microsoft account associated with your subscription. Select **Next**.
 
@@ -175,7 +175,7 @@ If you have a Microsoft account or Azure Active Directory organizational account
 If you have a GitHub account, follow these steps to sign up for Azure Boards. 
 
 > [!IMPORTANT]
-> If your GitHub email address is associated with an Azure AD-backed organization in Azure DevOps, you can't sign in with your GitHub account, rather you must sign in with your Azure AD account.
+> If your GitHub email address is associated with an organization in Azure DevOps backed by Microsoft Entra ID, you can't sign in with your GitHub account, rather you must sign in with your Microsoft Entra account.
 
 1. From the [Azure Boards](https://azure.microsoft.com/services/devops/boards/) sign-up page, choose **Start Boards free with GitHub**. 
 
@@ -276,7 +276,7 @@ You can add and invite others to work on your project by adding their email addr
         - **Project Administrators**: Assign to users who will configure project resources.  
 		
 	> [!NOTE]  
-	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
+	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
 
 4. When you're done, select **Add** to complete your invitation.
 

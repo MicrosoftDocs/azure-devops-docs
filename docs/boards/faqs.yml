@@ -36,7 +36,7 @@ sections:
         answer: |
           ::: moniker range="azure-devops"
           For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users&mdash;ones who don't sign into the project&mdash;can view all work items. For more information, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md) and [Make a private project public](../organizations/projects/make-project-public.md).   
-          Also, if your organization uses Azure Active Directory to manage user access, you can [add external users to your organization](../organizations/accounts/add-external-user.md).
+          Also, if your organization uses Microsoft Entra ID to manage user access, you can [add external users to your organization](../organizations/accounts/add-external-user.md).
           ::: moniker-end
 
           ::: moniker range="< azure-devops"
