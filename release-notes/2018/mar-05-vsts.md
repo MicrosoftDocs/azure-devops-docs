@@ -137,13 +137,11 @@ Multiple artifact sources can be added to a release definition and configured to
 
 ## Subscriptions
 
-<a name='leverage-your-existing-subscription-using-an-aad-based-alternate-email-account'></a>
+### Leverage your existing subscription using an AAD-based alternate email account
 
-### Leverage your existing subscription using a Microsoft Entra ID-based alternate email account
+In the past, if a Visual Studio subscription is assigned to an Azure Active Directory (Azure AD) email address, you had to be added using the same email address in VSTS to be recognized as a Visual Studio subscriber. For subscriptions assigned to a Microsoft Account (MSA) however, you could add an alternate Azure AD email account in the **My Visual Studio** portal and use that Azure AD email to access VSTS.
 
-In the past, if a Visual Studio subscription is assigned to a Microsoft Entra ID email address, you had to be added using the same email address in VSTS to be recognized as a Visual Studio subscriber. For subscriptions assigned to a Microsoft Account (MSA) however, you could add an alternate Microsoft Entra ID email account in the **My Visual Studio** portal and use that Microsoft Entra ID email to access VSTS.
-
-This feature has been expanded to allow Microsoft Entra ID-based Visual Studio subscribers to be able to add another Microsoft Entra ID email account in the **My Visual Studio** portal. This will allow you to be able to use a different Microsoft Entra ID email in VSTS than what the subscription is assigned to.
+This feature has been expanded to allow AAD-based Visual Studio subscribers to be able to add another AAD email account in the **My Visual Studio** portal. This will allow you to be able to use a different AAD email in VSTS than what the subscription is assigned to.
 
 > [!div class="mx-imgBorder"]
 > ![Add alternate account to subscriptions](media/131_08.png)
