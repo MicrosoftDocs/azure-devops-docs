@@ -87,7 +87,7 @@ Attaching files to work items allows you and your team to centralize reference m
 Linking related or dependent work gives you broader context into the work you're tracking and helps you manage dependencies with other teams. With links for remote work, now you can keep track of work across organizations within your company. Simply copy the URL of an existing work item, go to another work item, and create a link using one of the three new link types: Consumes From, Produces For, and Remote Related. See the [work item linking](/azure/devops/boards/queries/link-work-items-support-traceability?view=azure-devops&preserve-view=true&tabs=new-web-form) documentation for more information about traceability in Azure Boards.
 
 > [!NOTE]
-> Permissions are respected across both Azure DevOps organizations, which must both be backed by the same Azure AD tenant.
+> Permissions are respected across both Azure DevOps organizations, which must both be backed by the same Microsoft Entra tenant.
 > 
 > [!div class="mx-imgBorder"]
 > ![Remote link](media/142_05.png)
@@ -239,7 +239,7 @@ Earlier, only users having **Create Repository** permission on a git repository 
 
 ### PATs enforce CAP
 
-In February 2017, we announced [support for Azure Active Directory Conditional Access Policy (CAP)](/previous-versions/azure/devops/2017/feb-15-team-services#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
+In February 2017, we announced [support for Microsoft Entra Conditional Access Policy (CAP)](/previous-versions/azure/devops/2017/feb-15-team-services#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
 
 ## Next steps
 

@@ -32,7 +32,7 @@ Alice gets @mentioned when her pull request gets approved
 
 ### Download a list of organizations to a directory
 
-You can now download the complete list of organizations backed by your Azure Active Directory tenant. This list can be retrieved from the **Azure Active Directory** tab in the Organization Settings of any organization associated with the directory. The download details will include the organization ID, Organization Name, Organization URL, and the Organization Owner.
+You can now download the complete list of organizations backed by your Microsoft Entra tenant. This list can be retrieved from the **Microsoft Entra ID** tab in the Organization Settings of any organization associated with the directory. The download details will include the organization ID, Organization Name, Organization URL, and the Organization Owner.
 
 > [!div class="mx-imgBorder"]
-> ![Download the complete list of organizations backed by your Azure Active Directory.](../../media/157_17.png)
+> ![Download the complete list of organizations backed by your Microsoft Entra ID.](../../media/157_17.png)

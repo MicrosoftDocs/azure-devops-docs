@@ -32,7 +32,7 @@ When you install Azure DevOps Server, you automatically create a default collect
 ## Add users to your organization 
 
 ::: moniker range="azure-devops" 
-For large enterprises, the recommended method to manage Azure DevOps users, is to connect Azure DevOps to Azure Active Directory (Azure AD) and manage user access through security groups defined in Azure AD. That way, when you add and remove users or groups from Azure AD, you automatically add and remove these same users and groups from Azure DevOps.  You limit the maintenance of managing permissions and user access. 
+For large enterprises, the recommended method to manage Azure DevOps users, is to connect Azure DevOps to Microsoft Entra ID and manage user access through security groups defined in Microsoft Entra ID. That way, when you add and remove users or groups from Microsoft Entra ID, you automatically add and remove these same users and groups from Azure DevOps.  You limit the maintenance of managing permissions and user access. 
 
 For small and large enterprises, you can add users and security groups directly through the web portal **Organization settings>Users** interface. All users added to an organization can be added to one or more projects defined for the organization. 
 ::: moniker-end 
@@ -48,7 +48,7 @@ When you add users, you specify their *access level*, which determines the featu
 - [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)  
 - [About access levels](../organizations/security/access-levels.md)   
 - [Add organization users and manage access](../organizations/accounts/add-organization-users.md)  
-- [Connect your organization to Azure Active Directory](../organizations/accounts/connect-organization-to-azure-ad.md)
+- [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md)
 
 > [!NOTE]  
 > If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. For more information including important security-related call-outs, see [Limit user visibility for projects and more](#limit-identity-selection) later in this article. 
@@ -115,7 +115,7 @@ By default, users added to an organization can view all organization and project
 
 [!INCLUDE [project-scoped-users-important-note](../includes/project-scoped-users-important-note.md)]
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
+To restrict select users, such as Stakeholders, Microsoft Entra guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
 
 - Restricted users to only access those projects to which they've been explicitly added. 
 - Restricts views that display list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**.
@@ -135,7 +135,7 @@ To enable this feature, see [Manage or enable features](../project/navigation/pr
 
 ### Limit identity search and selection  
 
-Organizations that are connected to Azure Active Directory (Azure AD) use people pickers to search all users and groups in Azure AD, not just those in your project. People pickers support the following Azure DevOps functions: 
+Organizations that are connected to Microsoft Entra ID use people pickers to search all users and groups in Microsoft Entra ID, not just those in your project. People pickers support the following Azure DevOps functions: 
 - Selection of a user identity from a work tracking identity field such as **Assigned To**  
 - Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
 - Selection of a user or group using **@mention** from a wiki page 

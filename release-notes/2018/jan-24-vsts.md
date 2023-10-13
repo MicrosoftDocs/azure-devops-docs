@@ -19,7 +19,7 @@ Other feature highlights include:
 * [View pull request merge commit](#view-pull-request-merge-commit) - See exactly what the merged commit would look like in the PR.
 * [Move work using suggested Areas and Iterations](#move-work-using-suggested-areas-and-iterations) - Get work to the proper area and iteration. Fast.
 * [Wiki Search is now Generally Available](#wiki-search-now-generally-available) and [printable](#print-wiki-pages) - With search and print, Wiki is ready to help you retain your team’s knowledge.
-* [Manage permissions directly on Azure AD groups](#manage-permissions-directly-on-azure-ad-groups) - Simplify your permissions using existing groups from Azure AD.
+* [Manage permissions directly on Microsoft Entra groups](#manage-permissions-directly-on-azure-ad-groups) - Simplify your permissions using existing groups from Microsoft Entra ID.
 
 ## What’s new in VSTS
 
@@ -216,21 +216,25 @@ Note: The final pricing will be determined based on the Azure subscription used 
 
 ## Administration
 
-### Manage permissions directly on Azure AD groups
+<a name='manage-permissions-directly-on-azure-ad-groups'></a>
 
-To avoid extra layers of groups in VSTS, you can now manage permissions directly on Azure Active Directory groups. This bring our support for Azure AD groups on par with VSTS groups.
+### Manage permissions directly on Microsoft Entra groups
+
+To avoid extra layers of groups in VSTS, you can now manage permissions directly on Microsoft Entra groups. This bring our support for Microsoft Entra groups on par with VSTS groups.
 
 > [!div class="mx-imgBorder"]
-> ![Azure AD group permissions](media/129_02.png)
+> ![Microsoft Entra group permissions](media/129_02.png)
 
 See the [about permissions and groups](/azure/devops/organizations/security/about-permissions) documentation for more information.
 
-### Connect or disconnect a VSTS account to Azure Active Directory via new Azure portal
+<a name='connect-or-disconnect-a-vsts-account-to-azure-active-directory-via-new-azure-portal'></a>
 
-With the [retirement of the classic Azure portal](/information-protection/deploy-use/migrate-portal) (manage.windowsazure.com), you can now connect or disconnect your VSTS account from Azure Active Directory via the new Azure portal (portal.azure.com) using the **Connect** control on the account blade. See the [documentation for connecting to Azure AD](/azure/devops/accounts/connect-account-to-aad) for more information.
+### Connect or disconnect a VSTS account to Microsoft Entra ID via new Azure portal
+
+With the [retirement of the classic Azure portal](/information-protection/deploy-use/migrate-portal) (manage.windowsazure.com), you can now connect or disconnect your VSTS account from Microsoft Entra ID via the new Azure portal (portal.azure.com) using the **Connect** control on the account blade. See the [documentation for connecting to Microsoft Entra ID](/azure/devops/accounts/connect-account-to-aad) for more information.
 
 > [!div class="mx-imgBorder"]
-> ![Connect Azure AD through Azure Portal](media/129_03.png)
+> ![Connect Microsoft Entra ID through Azure Portal](media/129_03.png)
 
 ### Warning for accounts with a single Project Collection Administrator
 

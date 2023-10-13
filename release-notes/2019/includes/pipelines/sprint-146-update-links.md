@@ -9,7 +9,7 @@ ms.topic: include
 - [Service containers for YAML pipelines](#service-containers-for-yaml-pipelines)
 - [Work items linked to GitHub commits in Release Summary](#work-items-linked-to-github-commits-in-release-summary)
 - [New Azure App service tasks optimized for YAML](#new-azure-app-service-tasks-optimized-for-yaml)
-- [Azure Active Directory (AD) authentication support for Azure SQL task](#azure-active-directory-ad-authentication-support-for-azure-sql-task)
+- [Microsoft Entra authentication support for Azure SQL task](#azure-active-directory-ad-authentication-support-for-azure-sql-task)
 - [Grafana annotations service hook](#grafana-annotations-service-hook)
 - [Query Azure Monitor alerts tasks](#query-azure-monitor-alerts-tasks)
 - [Inline input of spec file in Deploy to Kubernetes task](#inline-input-of-spec-file-in-deploy-to-kubernetes-task)
