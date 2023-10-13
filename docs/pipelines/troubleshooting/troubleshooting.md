@@ -6,7 +6,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 10/12/2023
+ms.date: 10/13/2023
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -15,10 +15,11 @@ author: steved0x
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines provides diagnostics to help with troubleshooting failed pipeline runs. The pipeline run summary page provides diagnostic information and links to troubleshooting resources.
+If your pipeline fails to complete, you can use the diagnostic information and logs provided by the pipeline run summary page to help troubleshoot the issue. 
 
 :::image type="content" source="./media/pipeline-run-summary-troubleshooting.png" lightbox="./media/pipeline-run-summary-troubleshooting.png" alt-text="Screenshot of pipeline run summary page.":::
 
+<a name="get-logs-to-diagnose-problems" />
 ## View logs
 
 Select the error message to view the logs for the task.
@@ -61,25 +62,13 @@ Troubleshooting assistance is available using the **Error analysis** page.
 
 :::moniker-end
 
-Error link - takes you to the build log
-View analysis - details of the task
-Run-time details
-View log
-Enable system diagnostics
-
-This topic provides guidance on the common reasons that pipelines fail to [trigger](./troubleshoot-triggers.md), [get an agent and start](./troubleshoot-start.md), or [complete](#pipeline-fails-to-complete). For instructions on reviewing pipeline logs, see [Review logs to diagnose pipeline issues](review-logs.md).
-
-> [!NOTE]
-> If your pipeline run failed and you were directed to this article from the **Troubleshooting failed runs** link in the Azure DevOps portal:
-> 1. Review the common causes in [Pipeline fails to complete](#pipeline-fails-to-complete).
-> 2. Follow the troubleshooting steps in [Review logs to diagnose pipeline issues](review-logs.md).
-
+If the issue isn't apparent from the pipeline run summary page or browsing the logs, check the following [Common issues](#common-issues) section, and see [Review logs to diagnose pipeline issues](./review-logs.md) to download complete logs which include additional diagnostic information, and how to configure more verbose logs to assist with your troubleshooting.
 
 <a name="my-pipeline-starts-but-fails-to-complete-successfully" />
 
 ## Common issues
 
-If your pipeline starts, but fails to complete, check the following common issues. If your issue doesn't seem to match one of these, see [Get logs to diagnose problems](#get-logs-to-diagnose-problems).
+This section lists the following common issues.
 
 * [Job time-out](#job-time-out)
 * [Issues downloading code](#issues-downloading-code)
@@ -366,20 +355,6 @@ To troubleshoot issues related to service connections, see [Service connection t
 
 In this scenario, you can use the [Azure File Copy task](/azure/devops/pipelines/tasks/reference/azure-file-copy-v4) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
 
-## Get logs to diagnose problems
+## Next steps
 
-If none of the previous suggestions match your problem, you can use the information in the logs to diagnose your failing pipeline.
-
-Start by looking at the logs in your completed build or release. You can view logs by navigating to the pipeline run summary and selecting the job and task. If a certain task is failing, check the logs for that task.
-
-In addition to viewing logs in the pipeline build summary, you can download complete logs which include additional diagnostic information, and you can configure more verbose logs to assist with your troubleshooting.
-
-For detailed instructions for configuring and using logs, see [Review logs to diagnose pipeline issues](review-logs.md).
-
-## I need more help. I found a bug. I've got a suggestion. Where do I go?
-
-[Get subscription, billing, and technical support](https://azure.microsoft.com/support/devops/)
-
-Report any problems or submit feedback at [Developer Community](https://developercommunity.visualstudio.com/).
-
-We welcome your suggestions:
+* [Review logs](./review-logs.md)
