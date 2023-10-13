@@ -100,6 +100,19 @@ The returned access token is a JWT with the defined roles, which can be used to 
 <a name='use-the-entra-id-token-to-authenticate-to-azure-devops-resources'></a>
 
 #### Use the Microsoft Entra token to authenticate to Azure DevOps resources
+* While service principals can be added to Entra ID groups (in the Azure portal), we have a current technical limitation preventing us from being able to display them in a list of Entra ID group members. This limitation isn't true for Azure DevOps groups. That being said, a service principal still inherits any group permissions set on top of an Entra ID group they belong to. 
+* Not all users in an Entra ID group are immediately part of an Azure DevOps organization just because an admin creates a group and adds an Entra ID group to it. We have a process called "materialization" that happens once a user from an Entra ID group signs in to the organization for the first time. A user signing into an organization allows us to determine which users should be granted a license. Since sign-in isn't possible for service principals, an admin must explicitly add it to an organization as described earlier. 
+* You can't modify a service principal’s display name or avatar on Azure DevOps.
+* A service principal counts as a license for each organization it's added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
+
+### 3. Access Azure DevOps resources with an Entra ID token
+
+#### Get an Entra ID token
+Acquiring an access token for a managed identity can be done by following along with the Entra ID documentation. For more information, see the examples for [service principals](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token). 
+
+The returned access token is a JWT with the defined roles, which can be used to access organization resources using the token as *Bearer*.
+
+#### Use the Entra ID token to authenticate to Azure DevOps resources
 In the following video example, we move from authenticating with a PAT to using a token from a service principal. We start by using a client secret for authentication, then move to using a client certificate. 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWNVM]
@@ -112,7 +125,7 @@ Follow along with these examples by finding the app code in our [collection of s
 
 Service principals can be used to call Azure DevOps REST APIs and do most actions, but it's limited from the following operations:
 * Service principals can't be Organization Owners or create organizations.
-* Service principals can't create tokens, like [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH Keys](../../../repos/git/use-ssh-keys-to-authenticate.md). They can generate their own Microsoft Entra tokens and these tokens can be used to call Azure DevOps REST APIs.
+* Service principals can't create tokens, like [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH Keys](../../../repos/git/use-ssh-keys-to-authenticate.md). They can generate their own Entra ID tokens and these tokens can be used to call Azure DevOps REST APIs.
 * We don't support [Azure DevOps OAuth](./oauth.md) for service principals.
 
 ## FAQs
@@ -149,6 +162,7 @@ az login --identity
 ```
 
 Now, let's get a Microsoft Entra token (the Azure DevOps resource's UUID is `499b84ac-1321-427f-aa17-267ca6975798`) and try to call an Azure DevOps API by passing it in the headers as a `Bearer` token:
+
 ```powershell
 Write-Host "Obtain access token for Service Connection identity..."
 $accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
@@ -240,6 +254,7 @@ always-auth=true
 <a name='maven-project-setup-with-entra-id-tokens'></a>
 
 ##### Maven project setup with Microsoft Entra tokens
+
 1. Add the repo to both your `pom.xml`'s `<repositories>` and `<distributionManagement>` sections.
 
 ```xml
@@ -297,6 +312,7 @@ A: See the following example of how we've passed an [Microsoft Entra token](#get
 $ServicePrincipalAadAccessToken = 'Entra ID access token of a service principal'
 git -c http.extraheader="AUTHORIZATION: bearer $ServicePrincipalAadAccessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
 ```
+
 > [!TIP] 
 > To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), which can accept [Microsoft Entra tokens (that is, Microsoft Identity OAuth tokens)](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/environment.md#GCM_AZREPOS_CREDENTIALTYPE) instead of PATs if an environment variable is changed.
 
