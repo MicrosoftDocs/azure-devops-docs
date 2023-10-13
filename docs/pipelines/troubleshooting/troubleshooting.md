@@ -15,11 +15,17 @@ author: steved0x
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines provides diagnostics to help with troubleshooting failed pipeline runs. The pipeline run summary page provides diagnostic information and links to several troubleshooting options.
+Azure Pipelines provides diagnostics to help with troubleshooting failed pipeline runs. The pipeline run summary page provides diagnostic information and links to troubleshooting resources.
 
 :::image type="content" source="./media/pipeline-run-summary-troubleshooting.png" lightbox="./media/pipeline-run-summary-troubleshooting.png" alt-text="Screenshot of pipeline run summary page.":::
 
-Select the error message to view the logs for the task. The logs page is displayed, with the error selected. In this example, there is an error in the `cmd-line` task, where the `echo` command is entered as `ech`.
+## View logs
+
+Select the error message to view the logs for the task.
+
+:::image type="content" source="./media/error-message.png" alt-text="Screenshot of task error message.":::
+
+The logs page is displayed, with the error selected. In this example, there is an error in the `cmd-line` task, where the `echo` command is entered as `ech`.
 
 :::image type="content" source="./media/task-error-log.png" lightbox="./media/task-error-log.png" alt-text="Screenshot of diagnostics log for the pipeline run.":::
 
