@@ -36,7 +36,7 @@ To access your organization without asking for user credentials multiple times, 
 * [**PATs**](use-personal-access-tokens-to-authenticate.md) to generate tokens for:
 
    * Accessing specific resources or activities, like builds or work items
-   * Clients, like Xcode and NuGet, that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory (Azure AD) features, like multi-factor authentication
+   * Clients, like Xcode and NuGet, that require usernames and passwords as basic credentials and don't support Microsoft account and Microsoft Entra features, like multi-factor authentication
    * Accessing [REST APIs for Azure DevOps](/rest/api/azure/devops/)
 
 By default, your organization allows access for all authentication methods. 
@@ -51,7 +51,7 @@ To remove access for PATs, you must [revoke them](use-personal-access-tokens-to-
 
 ## Conditional access policies 
 
-Azure AD allows tenants to define which users are allowed to gain access to Microsoft resources through their [Conditional Access Policy (CAP) feature](/azure/active-directory/conditional-access/overview). Through these settings, the tenant admin can require members must adhere to any of the following conditions, for example, the user must:
+Microsoft Entra ID allows tenants to define which users are allowed to gain access to Microsoft resources through their [Conditional Access Policy (CAP) feature](/azure/active-directory/conditional-access/overview). Through these settings, the tenant admin can require members must adhere to any of the following conditions, for example, the user must:
 
 - be a member of a specific security group	
 - belong to a certain location and/or network	
@@ -62,12 +62,12 @@ Depending on which conditions the user satisfies, you can then require multi-fac
 
 ### CAP Support on Azure DevOps
 
-If you sign in to the web portal of an Azure AD-backed organization, Azure AD will always check that you can move forward by performing validation for any CAPs that were set by tenant administrators.
+If you sign in to the web portal of a Microsoft Entra ID-backed organization, Microsoft Entra ID will always check that you can move forward by performing validation for any CAPs that were set by tenant administrators.
 
-Azure DevOps can also perform additional CAP validation once you're signed in and navigating through Azure DevOps on an Azure AD-backed organization:
+Azure DevOps can also perform additional CAP validation once you're signed in and navigating through Azure DevOps on a Microsoft Entra ID-backed organization:
 * All conditional access policies will be checked for all web flows, at least once per hour.
 * If the **“Enable IP Conditional Access policy Validation on non-interactive flows”** organization policy is enabled, we will check IP fencing policies for non-interactive flows, such as third-party cient flows like using a PAT with git operations.
-* Sign-in policies may be enforced for PATs as well. Using PATs to make Azure AD calls requires the user to adhere to any sign-in policies that are set. For example, if a sign-in policy requires that a user sign in every seven days, you must also sign in every seven days, if you wish to continue using PATs to make requests to Azure AD.
+* Sign-in policies may be enforced for PATs as well. Using PATs to make Microsoft Entra ID calls requires the user to adhere to any sign-in policies that are set. For example, if a sign-in policy requires that a user sign in every seven days, you must also sign in every seven days, if you wish to continue using PATs to make requests to Microsoft Entra ID.
 * If you do not want any CAPs to be applied to Azure DevOps, remove Azure DevOps as a resource for the CAP. We will not be doing org-by-org enforcement of CAPs on Azure DevOps.
 
 We support MFA policies on web flows only. For non-interactive flows, if they do not satisfy the conditional access policy, the user will not be prompted for MFA and will be blocked instead.
@@ -76,13 +76,13 @@ We support MFA policies on web flows only. For non-interactive flows, if they do
 
 We support IP-fencing conditional access policies for both IPv4 and IPv6 addresses. If you find your IPv6 address is being blocked, we recommend checking that the tenant admin has configured CAPs that allow your IPv6 address through. Similarly, it may help to include the IPv4-mapped address for any default IPv6 address in all CAP conditions.
 
-If users are accessing the Azure AD sign-in page via a different IP address than the one used to access Azure DevOps resources (common with VPN tunneling), check your VPN configuration or networking infrastructure to make sure all IP addresses you're using are included within your tenant admin's CAPs.
+If users are accessing the Microsoft Entra sign-in page via a different IP address than the one used to access Azure DevOps resources (common with VPN tunneling), check your VPN configuration or networking infrastructure to make sure all IP addresses you're using are included within your tenant admin's CAPs.
 
 
 ## Related articles
 
 - [Disable Request Access Policy](disable-request-access-policy.md)
-- [Restrict users from creating new organizations with Azure AD policy](azure-ad-tenant-policy-restrict-org-creation.md)
+- [Restrict users from creating new organizations with Microsoft Entra policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
-- [What is Conditional Access in Azure AD?](/azure/active-directory/active-directory-conditional-access)
+- [What is Conditional Access in Microsoft Entra ID?](/azure/active-directory/active-directory-conditional-access)
 - [Detailed instructions and requirements for Conditional Access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)

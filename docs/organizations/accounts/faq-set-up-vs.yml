@@ -48,7 +48,7 @@ sections:
         answer: |
           Sign in with a [personal Microsoft account](https://www.microsoft.com/account) 
           or a [work or school account](/azure/active-directory/fundamentals/sign-up-organization) 
-          that's managed by Azure Active Directory.
+          that's managed by Microsoft Entra ID.
           
           <a name="vs-versions"></a>
           
@@ -119,6 +119,6 @@ sections:
       - question: |
           Related articles 
         answer: |
-          - [Access with Azure AD FAQs](faq-azure-access.yml)
-          - [Configure and customize organization FAQs](faq-configure-customize-organization.yml)
-          - [User and permissions management FAQs](faq-user-and-permissions-management.yml)
+          - [Access with Microsoft Entra FAQ](faq-azure-access.yml)
+          - [Configure and customize organization FAQ](faq-configure-customize-organization.yml)
+          - [User and permissions management FAQ](faq-user-and-permissions-management.yml)

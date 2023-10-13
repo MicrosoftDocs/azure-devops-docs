@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 metadata:
-  title: Access via Azure AD FAQs
+  title: Access via Microsoft Entra FAQs
   ms.custom: seodec18, fasttrack-edit, engagement-fy23, has-azure-ad-ps-ref
-  description: Learn the answers to frequently asked questions (FAQs), like how to understand Azure AD groups, add users, connect to, disconnect from, or switch your directory.
+  description: Learn the answers to frequently asked questions (FAQs), like how to understand Microsoft Entra groups, add users, connect to, disconnect from, or switch your directory.
   ms.subservice: azure-devops-organizations
   ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
   ms.topic: faq
@@ -10,25 +10,25 @@ metadata:
   author: chcomley
   ms.date: 09/18/2023
   monikerRange: 'azure-devops'
-title: Access via Azure AD FAQs
+title: Access via Microsoft Entra FAQs
 summary: |
   [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
   
   [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
   
-  Learn the answers to the following frequently asked questions (FAQs) about access to your Azure DevOps organization via Azure Active Directory (AD). We grouped the FAQs by the following subjects:
+  Learn the answers to the following frequently asked questions (FAQs) about access to your Azure DevOps organization via Microsoft Entra ID. We grouped the FAQs by the following subjects:
   - [General](#general)
-  - [Azure AD users and permissions](#azure-ad-users-and-permissions)
-  - [Azure AD groups](#azure-ad-groups)
+  - [Microsoft Entra users and permissions](#azure-ad-users-and-permissions)
+  - [Microsoft Entra groups](#azure-ad-groups)
   - [Add users to directory](#add-users-to-directory)
   - [Remove users or groups](#remove-users-or-groups)
-  - [Connect to, disconnect from, or switch connection with Azure AD](#faq-connect)
+  - [Connect to, disconnect from, or switch connection with Microsoft Entra ID](#faq-connect)
   
   <a name="general"></a>
   
 
 sections:
-  - name: General access with Azure AD
+  - name: General access with Microsoft Entra ID
     questions:
       - question: |
           Why don't I see my organization in the Azure portal?
@@ -39,23 +39,23 @@ sections:
           Also, in the [Azure portal](https://portal.azure.com), you must have Project Collection Administrator or organization owner permissions.
           
       - question: |
-          What do I need to set up an existing Azure DevOps instance with Azure AD?
+          What do I need to set up an existing Azure DevOps instance with Microsoft Entra ID?
         answer: |
-          Ensure you meet the prerequisites in the following article, [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
+          Ensure you meet the prerequisites in the following article, [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md).
       
       - question: |
-          I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect, why?
+          I made changes to Microsoft Entra ID, but they didn't seem to take effect, why?
         answer: |
-          Changes made in Azure AD can take up to 1 hour to be visible in Azure DevOps.
+          Changes made in Microsoft Entra ID can take up to 1 hour to be visible in Azure DevOps.
           
           <a name="o365aad"></a>
           
       - question: |
-          Can I use Microsoft 365 and Azure AD with Azure DevOps?
+          Can I use Microsoft 365 and Microsoft Entra ID with Azure DevOps?
         answer: |
           **Yes**.  
           - Don't have an organization yet? [Create an organization in Azure DevOps](https://aka.ms/SignupAzureDevOps).
-          - Already have an organization? [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
+          - Already have an organization? [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md).
           
           <a name="ChooseOrgAcctMSAcct"></a>
           
@@ -66,16 +66,16 @@ sections:
           <a name="ChangeMSA"></a>
           
       - question: |
-          My organization uses Microsoft accounts only. Can I switch to Azure AD?
+          My organization uses Microsoft accounts only. Can I switch to Microsoft Entra ID?
         answer: |
-          **Yes**, but before you switch, make sure that Azure AD meets your needs for sharing the following items:
+          **Yes**, but before you switch, make sure that Microsoft Entra ID meets your needs for sharing the following items:
           - work items
           - code
           - resources
           - other assets with your team and partners
           
           Learn more about 
-          controlling access with Microsoft accounts versus Azure AD, and [how to switch when you're ready](access-with-azure-ad.md).
+          controlling access with Microsoft accounts versus Microsoft Entra ID, and [how to switch when you're ready](access-with-azure-ad.md).
           
           [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
           
@@ -94,40 +94,40 @@ sections:
           
           <a name="azure-ad-users-and-permissions"></a>
           
-          #### Azure AD users and permissions
+          #### Microsoft Entra users and permissions
 
           If you don't find an answer to your question here, see [User and permissions management FAQs](./faq-user-and-permissions-management.yml?view=azure-devops).
 
       - question: |
           Why do I have to add users to a directory?
         answer: |
-          Your organization authenticates users and controls access through Azure Active Directory (Azure AD). All users must be directory members to get access.
+          Your organization authenticates users and controls access through Microsoft Entra ID. All users must be directory members to get access.
           
           As a directory administrator, you can [add users to the directory](/previous-versions/azure/hh967632(v=azure.100)). If you're not an administrator, work with your directory administrator to add users. Learn more about [controlling access to Azure DevOps Services by using a directory](access-with-azure-ad.md).
           
       - question: |
           What happens to current users?
         answer: |
-          Your work in Azure DevOps Services is associated with your credentials for Azure AD. After your organization is connected to your directory, users continue working seamlessly if their credential addresses appear in the connected directory. If users' addresses don't appear, you must [add those users to your directory](/azure/active-directory/fundamentals/add-users-azure-active-directory). Your organization might have policies about adding users to the directory, so find out more first.
+          Your work in Azure DevOps Services is associated with your credentials for Microsoft Entra ID. After your organization is connected to your directory, users continue working seamlessly if their credential addresses appear in the connected directory. If users' addresses don't appear, you must [add those users to your directory](/azure/active-directory/fundamentals/add-users-azure-active-directory). Your organization might have policies about adding users to the directory, so find out more first.
       
       - question: |
-          How do I find out whether my organization uses Azure AD to control access?
+          How do I find out whether my organization uses Microsoft Entra ID to control access?
         answer: |
-          If you have at least Basic access, go to your **Organization settings**, and then select the **Azure Active Directory** tab. You can either **Connect directory**, or **Disconnect directory**.
+          If you have at least Basic access, go to your **Organization settings**, and then select the **Microsoft Entra ID** tab. You can either **Connect directory**, or **Disconnect directory**.
           
           <a name="DeleteFromDirectory"></a>
           
       - question: |
-          My organization controls access by using Azure Active Directory. Can I just delete users from the directory?
+          My organization controls access by using Microsoft Entra ID. Can I just delete users from the directory?
         answer: |
-          Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
+          Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Microsoft Entra Global Administrator permissions to [delete a user from your Microsoft Entra directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
 
           <a name="no-identities"></a>
 
       - question: |
-          Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
+          Why are "no identities found" when I try to add users from Microsoft Entra ID to my Azure DevOps organization?
         answer: |
-          You're probably a *guest* in the Azure AD that backs your Azure DevOps organization, rather than a *member*. Azure AD guests can't search the Azure AD in the manner required by Azure DevOps. For example, Azure AD guests can't use the Azure DevOps web portal to search for or select users who haven't already been added to the Azure DevOps organization. Learn how to [convert an Azure AD guest into a member](#how-can-i-convert-an-azure-ad-guest-into-a-member).
+          You're probably a *guest* in the Microsoft Entra ID that backs your Azure DevOps organization, rather than a *member*. Microsoft Entra guests can't search the Microsoft Entra ID in the manner required by Azure DevOps. For example, Microsoft Entra guests can't use the Azure DevOps web portal to search for or select users who haven't already been added to the Azure DevOps organization. Learn how to [convert a Microsoft Entra guest into a member](#how-can-i-convert-an-azure-ad-guest-into-a-member).
       
       - question: |
           What if we can't use the same sign-in addresses?
@@ -135,35 +135,35 @@ sections:
           Add these users to the directory with new work or school accounts, and reassign access levels and readd them to any projects. If they have existing work or school accounts, those accounts can be used instead. Work isn't lost and stays with their current sign-in addresses. Users can migrate work that they want to keep, except for their work history. For more information, see [how to add organization users](add-organization-users.md).
       
       - question: |
-          What if I accidentally delete a user in Azure AD?
+          What if I accidentally delete a user in Microsoft Entra ID?
         answer: |
           [Restore the user](/azure/active-directory/fundamentals/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user isn't associated with the previous identity.
       
           <a name="how-can-i-convert-an-azure-ad-guest-into-a-member"></a>
 
       - question: |
-          How can I convert an Azure AD guest into a member?
+          How can I convert a Microsoft Entra guest into a member?
           
         answer: |
           Select from the following two options:
           
-          * Have the Azure AD administrator(s) remove you from the Azure AD and readd you, making you an Azure AD *member*, rather than a *guest*. For more information, see [Can Azure AD B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
-          * [Change the UserType of the Azure AD guest using Azure AD PowerShell](#convert-azure-ad-usertype-from-guest-to-member-using-azure-ad-powershell). [We don't advise](/azure/active-directory/external-identities/user-properties#convert-usertype) using this advanced process, but it allows the user to query Azure AD from the Azure DevOps organization.
+          * Have a Microsoft Entra administrator remove your account from the directory and re-add it, making you a *member*, rather than a *guest*. For more information, see [Can Microsoft Entra B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
+          * [Change the UserType of the Microsoft Entra guest using Azure AD PowerShell](#convert-azure-ad-usertype-from-guest-to-member-using-azure-ad-powershell). [We don't advise](/azure/active-directory/external-identities/user-properties#convert-usertype) using this advanced process, but it allows the user to query Microsoft Entra ID from the Azure DevOps organization.
 
-          #### Convert Azure AD UserType from guest to member using Azure AD PowerShell
+          #### Convert the UserType from guest to member using Azure AD PowerShell
 
           > [!WARNING]
-          > This process is advanced, which [we don't advise](/azure/active-directory/external-identities/user-properties#convert-usertype), but it allows the user to query Azure AD from the Azure DevOps organization.
+          > This process is advanced, which [we don't advise](/azure/active-directory/external-identities/user-properties#convert-usertype), but it allows the user to query Microsoft Entra ID from the Azure DevOps organization.
 
           **Prerequisites**
 
           The user making the UserType change must have the following items:
 
-          * A work/school account (WSA)/native user in Azure AD. You can't change the UserType with a Microsoft Account.
+          * A work/school account (WSA)/native user in Microsoft Entra ID. You can't change the UserType with a Microsoft Account.
           * Global administrator permissions
 
           > [!IMPORTANT]
-          > We recommend that you create a brand new (native) Azure AD user who's a global admin in the Azure AD. Then, complete the following steps with that user. This new user should eliminate the possibility of connecting to the wrong Azure AD. You can delete the new user when you're done.
+          > We recommend that you create a brand new (native) Microsoft Entra user who's a global admin in Microsoft Entra ID. Then, complete the following steps with that user. This new user should eliminate the possibility of connecting to the wrong Microsoft Entra ID. You can delete the new user when you're done.
 
           **Process**
 
@@ -175,32 +175,32 @@ sections:
 
              ![Administrator action in Windows PowerShell](media/faq/Administrator-action-Windows-PowerShell.png)
 
-          6. Once the installation completes, execute `Connect-AzureAD`. You're prompted to sign in to the Azure AD. Be sure to use an ID that meets the previously mentioned criteria.
+          6. Once the installation completes, execute `Connect-AzureAD`. You're prompted to sign in to the Microsoft Entra ID. Be sure to use an ID that meets the previously mentioned criteria.
           7. Execute `Get-AzureADuser -SearchString "<display_name>"`, where <display_name> is part of the entire display name for the user, as seen inside the Azure portal). The command returns four columns for the user found - ObjectId, DisplayName, UserPrincipalName, UserType - and the UserType should say *guest*.
           8. Execute `Set-AzureADUser -ObjectID string -UserType Member`, where `string` is the value of ObjectId returned by the previous command. The user is set to member status.
-          9. Execute `Get-AzureADuser -SearchString "<display_name>"` again to verify the UserType has changed. You can also verify in the Azure Active Directory section of the Azure portal.
+          9. Execute `Get-AzureADuser -SearchString "<display_name>"` again to verify the UserType has changed. You can also verify in the Microsoft Entra ID section of the Azure portal.
           While not the norm, we've seen it takes several hours, or even days before this change is reflected inside Azure DevOps. If it doesn't fix your Azure DevOps issue immediately, give it some time and keep trying.
           
           <a name="azure-ad-groups"></a>
 
-  - name: Azure AD groups
+  - name: Microsoft Entra groups
     questions:
       - question: |
-          Why can't I assign Azure DevOps permissions directly to an Azure AD group?
+          Why can't I assign Azure DevOps permissions directly to a Microsoft Entra group?
         answer: |
           Because these groups are created and managed in Azure, you can't assign Azure DevOps permissions directly or secure version control paths to these groups. You get an error if you try to assign permissions directly.
           
-          You can add an Azure AD group to the Azure DevOps group that has the permissions you want. Or,
-          you can assign these permissions to the group instead. Azure AD group members inherit permissions from the group where you add them.
+          You can add a Microsoft Entra group to the Azure DevOps group that has the permissions you want. Or,
+          you can assign these permissions to the group instead. Microsoft Entra group members inherit permissions from the group where you add them.
           
       - question: |
-          Can I manage Azure AD groups in Azure DevOps?
+          Can I manage Microsoft Entra groups in Azure DevOps?
         answer: |
-          No, because these groups are created and managed in Azure. Azure DevOps doesn't store or sync member status for Azure AD groups. To manage Azure AD groups, use the [Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM),
+          No, because these groups are created and managed in Azure. Azure DevOps doesn't store or sync member status for Microsoft Entra groups. To manage Microsoft Entra groups, use the [Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM),
           or the group management tools that your organization supports.
           
       - question: |
-          How do I tell the difference between an Azure DevOps group and an Azure AD group?
+          How do I tell the difference between an Azure DevOps group and a Microsoft Entra group?
         answer: |
           The Azure DevOps UI indicates membership scope using brackets `[]`. For example, consider this permissions settings page:
           
@@ -210,69 +210,69 @@ sections:
           |:--|:--|
           | `[fabrikam-fiber]` | Membership is defined in Organization Settings |
           | `[Project Name]` | Membership is defined in Project Settings |
-          | `[TEAM FOUNDATION]` | Membership is defined _directly_ in Azure AD | 
+          | `[TEAM FOUNDATION]` | Membership is defined _directly_ in Microsoft Entra ID | 
           
           > [!Note]
-          > If you add an Azure AD group to a custom security group _and_ use a similar name, you may see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is an Azure AD Group.
+          > If you add a Microsoft Entra group to a custom security group _and_ use a similar name, you may see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is a Microsoft Entra group.
           
       - question: |
-          Why doesn't the Users list show all Azure AD group members?
+          Why doesn't the Users list show all Microsoft Entra group members?
         answer: |
           These users have to sign in to your organization before they appear in Users.
           
           <a name="AssignLicenses"></a>
           
       - question: |
-          How do I assign organization access to Azure AD group members?
+          How do I assign organization access to Microsoft Entra group members?
         answer: |
           When these group members sign in to your organization for the first time, Azure DevOps assigns an access level to them automatically. If they have
           [Visual Studio subscriptions](faq-user-and-permissions-management.yml#EligibleMSDNSubscriptions),
           Azure DevOps assigns the respective access level to them. Otherwise, Azure DevOps assigns them the next "best available"
           [access level](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs), in this order: Basic, Stakeholder.
            
-          If you don't have enough access levels for all Azure AD group members, those members who sign in get a Stakeholder access.
+          If you don't have enough access levels for all Microsoft Entra group members, those members who sign in get a Stakeholder access.
           
       - question: |
           How can I protect access to built-in administrator groups?
         answer: |
-          Require just-in-time access using an Azure AD Privileged Identity Management (PIM) group. For more information, see [Just-in-time access for admin groups](../security/security-best-practices.md#just-in-time-access-for-admin-groups).
+          Require just-in-time access using a Microsoft Entra Privileged Identity Management (PIM) group. For more information, see [Just-in-time access for admin groups](../security/security-best-practices.md#just-in-time-access-for-admin-groups).
       
       - question: |
-          Why doesn't the Security tab show all members when I select an Azure AD group?
+          Why doesn't the Security tab show all members when I select a Microsoft Entra group?
         answer: |
-          The Security tab shows Azure AD group members only after they sign in to your organization, and have an access level assigned to them.
+          The Security tab shows Microsoft Entra group members only after they sign in to your organization, and have an access level assigned to them.
           
-          To see all Azure AD group members, use the [Azure portal](https://portal.azure.com), MIM, or the group management tools that your organization supports.
+          To see all Microsoft Entra group members, use the [Azure portal](https://portal.azure.com), MIM, or the group management tools that your organization supports.
           
       - question: |
-          Why doesn't the team members widget show all Azure AD group members?
+          Why doesn't the team members widget show all Microsoft Entra group members?
         answer: |
           The team members widget shows only users who previously signed in to your organization.
           
       - question: |
-          Why doesn't the team capacity pane show all Azure AD group members?
+          Why doesn't the team capacity pane show all Microsoft Entra group members?
         answer: |
           The team capacity pane shows only users who previously signed in to your organization.
           To set capacity, manually add users to your team.
  
       - question: |
-          Why doesn't Azure DevOps reclaim access levels from users who aren't Azure AD group members anymore?
+          Why doesn't Azure DevOps reclaim access levels from users who aren't Microsoft Entra group members anymore?
         answer: |
           Azure DevOps doesn't automatically reclaim access levels from these users. To manually remove their access, go to **Users**.
 
       - question: |
-          Can I assign work items to Azure AD group members who haven't signed in?
+          Can I assign work items to Microsoft Entra group members who haven't signed in?
         answer: |
-          You can assign work items to any Azure AD member who has permissions for your organization. This action also adds that member to your organization. When you add users this way, they automatically appear as Users, with the best available
+          You can assign work items to any Microsoft Entra member who has permissions for your organization. This action also adds that member to your organization. When you add users this way, they automatically appear as Users, with the best available
           access level. The user also appears in the security settings.
           
       - question: |
-          Can I use Azure AD groups to query work items by using the "In Group" clause?
+          Can I use Microsoft Entra groups to query work items by using the "In Group" clause?
         answer: |
-          No, we don't support querying on Azure AD groups.
+          No, we don't support querying on Microsoft Entra groups.
           
       - question: |
-          Can I use Azure AD groups to set up field rules in my work item templates?
+          Can I use Microsoft Entra groups to set up field rules in my work item templates?
         answer: |
           No, but you might be interested in our [process customization plans](https://devblogs.microsoft.com/devops/visual-studio-online-process-customization-update/).
           
@@ -280,34 +280,34 @@ sections:
           
           #### Add users to directory
 
-          [Add organization users to your Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
+          [Add organization users to your Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory).
 
       - question: |
           Why did I get an error stating that my organization has multiple active identities with the same UPN?
         answer: |
-          During the connect process, we map existing users to members of the Azure AD tenant, based on their UPN, which is often known as sign-in address. If we detect multiple users with the same UPN, we don't know how to map these users. This scenario occurs if a user changes their UPN to match one already existing in the organization.
+          During the connect process, we map existing users to members of the Microsoft Entra tenant, based on their UPN, which is often known as sign-in address. If we detect multiple users with the same UPN, we don't know how to map these users. This scenario occurs if a user changes their UPN to match one already existing in the organization.
           
       - question: |
           Can I switch current users from Microsoft accounts to work accounts in Azure DevOps?
         answer: |
-          No. Although you can add new work accounts to your organization, they're treated as new users. If you want to access all your work, including its history, you must use the same sign-in addresses that you used before your organization was connected to your Azure AD.
-          Add your Microsoft account as a member to your Azure AD.
+          No. Although you can add new work accounts to your organization, they're treated as new users. If you want to access all your work, including its history, you must use the same sign-in addresses that you used before your organization was connected to your Microsoft Entra ID.
+          Add your Microsoft account as a member to your Microsoft Entra ID.
           
       - question: |
-          Why can't I add users from other directories to my Azure AD?
+          Why can't I add users from other directories to my Microsoft Entra ID?
         answer: |
           You must be a member or have read access in those directories. Otherwise, you can add them
-          [using B2B collaboration through your Azure AD administrator](/azure/active-directory/external-identities/what-is-b2b). You can also add them by using their Microsoft accounts, or by creating new work accounts for them in your directory.
+          [using B2B collaboration through your Microsoft Entra administrator](/azure/active-directory/external-identities/what-is-b2b). You can also add them by using their Microsoft accounts, or by creating new work accounts for them in your directory.
           
       - question: |
           What if I get an error trying to map a user to an existing member of my organization?
         answer: |
-          You can map the user onto a different identity that isn't yet an active member of the organization or add the existing user to your Azure AD. If you still need to map to the existing Azure DevOps organization member, [contact support.](https://developercommunity.visualstudio.com/spaces/21/index.html)
+          You can map the user onto a different identity that isn't yet an active member of the organization or add the existing user to your Microsoft Entra ID. If you still need to map to the existing Azure DevOps organization member, [contact support.](https://developercommunity.visualstudio.com/spaces/21/index.html)
           
       - question: |
           How do I use my work or school account with my Visual Studio with MSDN subscription?
         answer: |
-          If you used a Microsoft account to activate a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/) containing Azure DevOps as a benefit, you can add a work or school account. Azure AD must manage the account. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](/visualstudio/subscriptions/vs-alternate-identity).
+          If you used a Microsoft account to activate a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/) containing Azure DevOps as a benefit, you can add a work or school account. Microsoft Entra ID must manage the account. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](/visualstudio/subscriptions/vs-alternate-identity).
           
           <a name="guest-access"></a>
           
@@ -315,7 +315,7 @@ sections:
           Can I control access to my organization for external users in the connected directory?
         answer: |
           Yes, but only for external users who are [added as guests through Microsoft 365](https://support.office.com/article/Share-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232)
-          or [added using B2B collaboration by your Azure AD administrator](/azure/active-directory/external-identities/what-is-b2b). These external users are managed outside the connected directory. To learn more, contact your Azure AD administrator. The following setting doesn't affect [users who are added directly to your organization's directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
+          or [added using B2B collaboration by your Microsoft Entra administrator](/azure/active-directory/external-identities/what-is-b2b). These external users are managed outside the connected directory. To learn more, contact your Microsoft Entra administrator. The following setting doesn't affect [users who are added directly to your organization's directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
           
           Before you start, make sure you have at least Basic access, not Stakeholder.
           
@@ -326,47 +326,47 @@ sections:
   - name: Remove users or groups
     questions:
       - question: |
-          How do I remove an Azure AD group from Azure DevOps?
+          How do I remove a Microsoft Entra group from Azure DevOps?
         answer: |
           Go to your project collection or project. In the upper bar, select :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: **Settings**, and then select **Security**.
           
-          Find the Azure AD group, and delete it from your organization.
+          Find the Microsoft Entra group, and delete it from your organization.
           
           ![Screenshot of project, with Delete option highlighted](media/manage-azure-ad-groups/deleteaadgroupfromvso.png)
           
       - question: |
-          Why am I asked to remove a user from an Azure AD group when I delete that user from my organization?
+          Why am I asked to remove a user from a Microsoft Entra group when I delete that user from my organization?
         answer: |
-          Users can belong to your organization, both as individuals and as members of Azure AD groups in Azure DevOps groups. These users can still access your organization while they're members of these Azure AD groups.
+          Users can belong to your organization, both as individuals and as members of Microsoft Entra groups in Azure DevOps groups. These users can still access your organization while they're members of these Microsoft Entra groups.
           
-          To block all access for users, remove them from Azure AD groups in your organization, or remove these groups from your organization. We currently can't block access completely or make exceptions for such users.
+          To block all access for users, remove them from Microsoft Entra groups in your organization, or remove these groups from your organization. We currently can't block access completely or make exceptions for such users.
           
       - question: |
-          If an Azure AD user is removed, are all their related PATs revoked as well?
+          If a Microsoft Entra user is removed, are all their related PATs revoked as well?
         answer: |
           Users who are disabled or removed from your directory, can no longer access your organization by any mechanism, including via PATs or SSH.
           
           <a name="faq-connect"></a>
           
-          #### Connect to, disconnect from, or change Azure AD connection
+          #### Connect to, disconnect from, or change Microsoft Entra connection
 
-          - [Connect your organization to Azure AD](./connect-organization-to-azure-ad.md)
+          - [Connect your organization to Microsoft Entra ID](./connect-organization-to-azure-ad.md)
           - [Disconnect your organization from your directory](./disconnect-organization-from-azure-ad.md)
           - [Change the directory that's connected to Azure DevOps](change-azure-ad-connection.md)
-          - [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+          - [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
           - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
       - question: |
-          How can I manage multiple organizations that are connected to Azure AD?
+          How can I manage multiple organizations that are connected to Microsoft Entra ID?
         answer: |
-          You can download a complete list of organizations backed by an Azure Active Directory tenant. For more information, see [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md).
+          You can download a complete list of organizations backed by a Microsoft Entra tenant. For more information, see [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md).
           
           <a name="connect-o365-azure-ad"></a>
           
       - question: |
-          Can I connect my organization to an Azure AD created from Microsoft 365?
+          Can I connect my organization to a Microsoft Entra ID created from Microsoft 365?
         answer: |
-          **Yes**. If you can't find your Azure AD created from Microsoft 365, see
+          **Yes**. If you can't find your Microsoft Entra ID created from Microsoft 365, see
           [Why don't I see the directory that I want to connect?](#why-not-my-directory).
           
           <a name="why-not-my-directory"></a>
@@ -378,7 +378,7 @@ sections:
           
           * You aren't recognized as the [**organization Owner**](../security/look-up-organization-owner.md) to manage directory connections.
           
-          * Talk to your Azure AD organization administrator and ask them to make you a member of the organization. It's possible that you're not  part of the organization.
+          * Talk to your Microsoft Entra organization administrator and ask them to make you a member of the organization. It's possible that you're not  part of the organization.
           
           <a name="AlreadyConnected"></a>
           
@@ -392,7 +392,7 @@ sections:
       - question: |
           Can I switch to a different directory?
         answer: |
-          **Yes**. For more information, see [Switch to another Azure AD](change-azure-ad-connection.md).
+          **Yes**. For more information, see [Switch to another Microsoft Entra ID](change-azure-ad-connection.md).
 
           [!INCLUDE [note-azure-ad-tenant-switch](includes/note-azure-ad-tenant-switch.md)]  
                     
@@ -401,7 +401,7 @@ sections:
       - question: |
           Why and when should I request Support to manually clear my SSH keys?
         answer: |
-          When you switch from one Azure AD tenant to another, the underlying identity also changes and any PAT tokens or SSH keys that the user had with their old identity stop working. Any active SSH keys uploaded to the organization aren't deleted as part of the tenant switch process, which may block the user from uploading new keys after the switch. We recommend that users delete all their SSH keys **before** they switch their active directory tenant. We have work in our backlog for automatic deletion of the SSH keys as part of the tenant switch process and in the interim if you're blocked from uploading new keys after tenant switch, we recommend you to contact Support to delete those old SSH keys.
+          When you switch from one Microsoft Entra tenant to another, the underlying identity also changes and any PAT tokens or SSH keys that the user had with their old identity stop working. Any active SSH keys uploaded to the organization aren't deleted as part of the tenant switch process, which may block the user from uploading new keys after the switch. We recommend that users delete all their SSH keys **before** they switch their active directory tenant. We have work in our backlog for automatic deletion of the SSH keys as part of the tenant switch process and in the interim if you're blocked from uploading new keys after tenant switch, we recommend you to contact Support to delete those old SSH keys.
       
       - question: |
           My alternate credentials don't work anymore. What do I do?
@@ -409,11 +409,11 @@ sections:
           Azure DevOps no longer supports Alternate Credentials authentication since the beginning of March 2, 2020. If you're still using Alternate Credentials, we strongly encourage you to switch to a more secure authentication method (for example, personal access tokens or SSH). [Learn more](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
           
       - question: |
-          Some users are disconnected, but they have matching identities in Azure AD. What should I do?
+          Some users are disconnected, but they have matching identities in Microsoft Entra ID. What should I do?
         answer: |
-          - In your Azure DevOps **Organization settings**, select **Azure Active Directory**, and then select **Resolve**. 
+          - In your Azure DevOps **Organization settings**, select **Microsoft Entra ID**, and then select **Resolve**. 
           
-            ![Select Azure AD and then Resolve](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
+            ![Select Microsoft Entra ID and then Resolve](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
           
           - Match the identities. Select **Next** when you're done.
           
@@ -423,21 +423,21 @@ sections:
           I got an error message when I was resolving disconnections. What should I do?
         answer: |
           * Try again.
-          * You might be a guest in Azure AD. Request that an organization administrator, who is a member of Azure AD,  do the mapping. Or, request that an admin of the Azure AD converts you to a member.
+          * You might be a guest in Microsoft Entra ID. Request that an organization administrator, who is a member of Microsoft Entra ID,  do the mapping. Or, request that an admin of the Microsoft Entra ID converts you to a member.
           
             ![Screenshot showing an error when resolving disconnected users.](media/shared/guest-azure-ad-cannot-invite.png)
           
           * If the error message includes a user in your domain, but you don't see them active in your directory, the user likely left your company. Go to the organization user settings to remove the user from your organization.
           
       - question: |
-          When I was trying to invite a new user to my Azure AD, I got a 403 exception. What do I do?
+          When I was trying to invite a new user to my Microsoft Entra ID, I got a 403 exception. What do I do?
         answer: |
-          You may be a guest in Azure AD and don't have the right permission to invite users. Go to **External collaboration settings** in Azure AD and move the "Guests can invite" toggle to **Yes**. Refresh Azure AD and try again.
+          You may be a guest in Microsoft Entra ID and don't have the right permission to invite users. Go to **External collaboration settings** in Microsoft Entra ID and move the "Guests can invite" toggle to **Yes**. Refresh Microsoft Entra ID and try again.
           
       - question: |
           Will my users keep their existing Visual Studio subscriptions?
         answer: |
-          Visual Studio subscription administrators ordinarily assign subscriptions to users' corporate email addresses, so that users can receive welcome email and notifications. If the identity and subscription email addresses match, users can access the benefits of the subscription. As you transition from Microsoft to Azure AD identities, users' benefits still work with their new Azure AD identity. But, the email addresses must match. If the email addresses don't match, your subscription administrator must [reassign the subscription](../billing/csp/buy-vs-app-center.md). Otherwise, users must [add an alternate identity to their Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity).
+          Visual Studio subscription administrators ordinarily assign subscriptions to users' corporate email addresses, so that users can receive welcome email and notifications. If the identity and subscription email addresses match, users can access the benefits of the subscription. As you transition from Microsoft to Microsoft Entra identities, users' benefits still work with their new Microsoft Entra identity. But, the email addresses must match. If the email addresses don't match, your subscription administrator must [reassign the subscription](../billing/csp/buy-vs-app-center.md). Otherwise, users must [add an alternate identity to their Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity).
           
       - question: |
           What if I'm required to sign in when I use the people picker?
@@ -450,28 +450,28 @@ sections:
           Clear your browser cache and delete any cookies for the session. Close your browser, and then reopen.
           
       - question: |
-          Once my organization is connected to Azure AD, will it update Azure Boards work items, pull requests, and other pieces where I'm referenced in the system with my new ID? 
+          Once my organization is connected to Microsoft Entra ID, will it update Azure Boards work items, pull requests, and other pieces where I'm referenced in the system with my new ID? 
         answer: |
           **Yes**, all pieces in the system are updated with the new ID when a user's ID gets mapped from their personal email to their work email. 
           
       - question: |
           What if I get a warning about members who will lose access to the organization?
         answer: |
-          You can still connect to Azure AD, but try to resolve the mapping issue after you've connected. If you still need help, [contact support](https://developercommunity.visualstudio.com/spaces/21/index.html).
+          You can still connect to Microsoft Entra ID, but try to resolve the mapping issue after you've connected. If you still need help, [contact support](https://developercommunity.visualstudio.com/spaces/21/index.html).
           
-          ![Screenshot showing Azure AD connection warning.](media/shared/connection-warning.png)
+          ![Screenshot showing Microsoft Entra connection warning.](media/shared/connection-warning.png)
           
           Select the bolded text to see which users are affected.
           
           ![Show disconnected users](media/shared/show-disconnected-users.png)
           
       - question: |
-          With more than 100 members in my Azure DevOps organization, how can I connect to an Azure AD?
+          With more than 100 members in my Azure DevOps organization, how can I connect to a Microsoft Entra ID?
         answer: |
           Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection doesn't work beyond 100. [Contact Support](https://azure.microsoft.com/support/devops/).
           
       - question: |
-          Why is git.exe/Visual Studio failing to authenticate after linking/unlinking from Azure Active Directory?
+          Why is git.exe/Visual Studio failing to authenticate after linking/unlinking from Microsoft Entra ID?
         answer: |
           The tenant cache must be cleared if you're using a GCM version before v1.15.0. Clearing the tenant cache is as easy as deleting the `%LocalAppData%\GitCredentialManager\tenant.cache` file on each machine returning a sign-in error. The GCM automatically recreates and populates the cache file, as needed, on subsequent sign-in attempts.
           
