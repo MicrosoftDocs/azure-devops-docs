@@ -27,19 +27,21 @@ Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to aut
 ## Available OAuth models
 To create an OAuth 2.0 app, you can rely on:
 1. [our own implementation](./azure-devops-oauth.md) or,
-2. use the implementation available through the [Microsoft Identity Platform, aka **Azure Active Directory OAuth**](/azure/active-directory/fundamentals/auth-oauth2). 
+2. use the implementation available through the [Microsoft identity platform, aka **Microsoft Entra ID OAuth**](/azure/active-directory/fundamentals/auth-oauth2). 
 
-We recommend that new apps move forward with registering on Azure AD OAuth, which comes with all of the powerful features of the Microsoft Identity platform. Azure DevOps OAuth remains supported, but no active investment is being made on this model at this time.
+We recommend that new apps move forward with registering on Microsoft Entra ID OAuth, which comes with all of the powerful features of the Microsoft identity platform. Azure DevOps OAuth remains supported, but no active investment is being made on this model at this time.
 
-### Azure Active Directory OAuth
-When you create an Azure AD OAuth app, your app is issued Azure Active Directory (Azure AD) tokens, not Azure DevOps access tokens. These tokens have a standard 1-hour duration before expiration.
+<a name='azure-active-directory-oauth'></a>
 
-To get started with Azure AD OAuth, follow the Microsoft Identity docs. You may find the following resources helpful:
+### Microsoft Entra ID OAuth
+When you create a Microsoft Entra ID OAuth app, your app is issued Microsoft Entra tokens, not Azure DevOps access tokens. These tokens have a standard 1-hour duration before expiration.
+
+To get started with Microsoft Entra ID OAuth, follow the Microsoft Identity docs. You may find the following resources helpful:
 * [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
 * [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 * [Quickstart: Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#delegated-permission-to-microsoft-graph): The linked example demonstrates how to choose a permission for the Microsoft Graph resource. When you create an app, select `Azure DevOps` from the list of resources instead.
 
-A beginner walkthrough of an Azure AD OAuth app example can be found on our [Manage PATs via API guide](../../../organizations/accounts/manage-personal-access-tokens-via-api.md), as these PAT APIs mandate authentication via an Azure AD token. At this moment, these PAT APIs only accept the `user_impersonation` scope. 
+A beginner walkthrough of a Microsoft Entra ID OAuth app example can be found on our [Manage PATs via API guide](../../../organizations/accounts/manage-personal-access-tokens-via-api.md), as these PAT APIs mandate authentication via a Microsoft Entra token. At this moment, these PAT APIs only accept the `user_impersonation` scope. 
 
 When you create apps that use other APIs, make sure to select the [scopes](#scopes) needed for those APIs.
 
@@ -64,5 +66,5 @@ You can find a C# sample that implements OAuth to call Azure DevOps Services RES
 
 ## Related articles
 
-* [OAuth 2.0 authentication with Azure Active Directory](/azure/active-directory/fundamentals/auth-oauth2)
+* [OAuth 2.0 authentication with Microsoft Entra ID](/azure/active-directory/fundamentals/auth-oauth2)
 * [Using Azure DevOps OAuth](./azure-devops-oauth.md)

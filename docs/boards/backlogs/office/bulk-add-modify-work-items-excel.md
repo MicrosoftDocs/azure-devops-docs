@@ -530,7 +530,7 @@ You can use the Select User feature to find user accounts and assign values to p
 	> [!div class="mx-imgBorder"]  
 	> ![Team ribbon, Select User](media/excel/select-user.png)
 
-	An identity or person-named field is a field that contains a user identity. These fields are typically synchronized to a database of user accounts, such as Azure Active Directory, Active Directory, or a Workgroup. 
+	An identity or person-named field is a field that contains a user identity. These fields are typically synchronized to a database of user accounts, such as Microsoft Entra ID, Active Directory, or a Workgroup. 
 
 3. Begin entering the name of the user account and the Assign User dialog automatically filters the results until you can select the account of interest.  
 
@@ -687,4 +687,3 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
 ::: moniker-end  
-

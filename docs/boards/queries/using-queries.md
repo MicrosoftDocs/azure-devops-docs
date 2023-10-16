@@ -518,7 +518,7 @@ The `Contains` operator runs a table scan, which is a slower operation than the 
 
 The `In Group` operator filters work items based on matches within a group of values. The group of values correspond to the values contained within a team, security group, or [work tracking category](../work-items/agile-glossary.md#categories). For example, you can create a query to find all work items that are assigned to any member of a team. Or, find all work items that belong to the requirements category (`Microsoft.RequirementCategory`). 
 
-When you filter on a group that contains a large number of members, your result set tends to be larger and nonselective.  Also, if a group corresponds to a large Azure Active Directory (Azure AD) group, the query generates a fairly large cost to resolve that group from Azure AD.  
+When you filter on a group that contains a large number of members, your result set tends to be larger and nonselective.  Also, if a group corresponds to a large Microsoft Entra group, the query generates a fairly large cost to resolve that group from Microsoft Entra ID.  
 
 ### Avoid use of negated operators 
 
