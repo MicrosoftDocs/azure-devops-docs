@@ -22,7 +22,7 @@ To use Azure DevOps features, users must be added to a security group with the a
 
 ## Assign users to a security group 
 
-The most common built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators—and team administrator role grant permissions to specific features. 
+The most common built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**—and team administrator role grant permissions to specific features. 
 
 In general, use the following guidance when assigning users to a security group: 
 - Add to the **Contributors** security group full-time workers who contribute to the code base or manage projects.
