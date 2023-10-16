@@ -53,7 +53,7 @@ Azure DevOps uses Azure Storage as the primary repository for service metadata a
 
 - **Azure SQL Database storage** stores the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project, and provides indexes into the blob storage to look up files and attachments. For more information, see [Azure SQL Database](/azure/azure-sql/database).
 
-Administrators can manage access to resources by [granting or restricting permissions](/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions) on user identities or groups. Azure DevOps uses federated authentication of user identities via [Azure Active Directory](../accounts/access-with-azure-ad.md) (Azure AD) and Microsoft accounts. 
+Administrators can manage access to resources by [granting or restricting permissions](/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions) on user identities or groups. Azure DevOps uses federated authentication of user identities via [Microsoft Entra ID](../accounts/access-with-azure-ad.md) and Microsoft accounts. 
 
 During authentication, the user is routed to the authentication provider, where they provide their credentials. After the authentication provider has verified the user's credentials, Azure DevOps issues an authentication cookie to the user, which allows the user to remain authenticated against Azure DevOps.
 
@@ -242,7 +242,7 @@ Teams across Microsoft are adopting Azure DevOps internally. The Azure DevOps te
 
 Obviously, large teams move more gradually than smaller ones, given their investments in existing DevOps systems. For teams able to move quickly, we have established a project classification approach. It assesses risk tolerance, based on project characteristics, to determine if the project is appropriate for Azure DevOps. For larger teams, the adoption typically occurs in phases, with more planning. 
 
-Additional requirements for internal projects include associating the organization with Azure AD to ensure proper user identity life cycle and password complexity. For more sensitive projects, two-factor authentication is also required.
+Additional requirements for internal projects include associating the organization with Microsoft Entra ID to ensure proper user identity life cycle and password complexity. For more sensitive projects, two-factor authentication is also required.
 
 ### Compliance certifications
 
@@ -272,13 +272,15 @@ horizon, and the damage that might occur if it gets compromised. Many
 enterprises have existing classification methods that can be reused when
 projects move to Azure DevOps. For more information, you can download the "Data classification for cloud readiness" document from Microsoft Trustworthy Computing.
 
-### Adopt Azure Active Directory
+<a name='adopt-azure-active-directory'></a>
 
-Use Azure Active Directory (Azure AD) to manage your organization's access to Azure DevOps. Azure AD provides another way to improve the security of your users' credentials. Azure AD allows your IT department to manage its end-user access policy, password complexity, password refreshes, and expiration if the user leaves your organization. Through Active Directory federation, you can directly link Azure AD to your organization's central directory, so you have only one location to manage these details for your enterprise. 
+### Adopt Microsoft Entra ID
 
-The following table compares Microsoft account and Azure AD characteristics relative to Azure DevOps access:
+Use Microsoft Entra ID to manage your organization's access to Azure DevOps. Microsoft Entra ID provides another way to improve the security of your users' credentials. Microsoft Entra ID allows your IT department to manage its end-user access policy, password complexity, password refreshes, and expiration if the user leaves your organization. Through Active Directory federation, you can directly link Microsoft Entra ID to your organization's central directory, so you have only one location to manage these details for your enterprise. 
 
-| Properties                            | Microsoft account                        | Azure AD  |
+The following table compares Microsoft account and Microsoft Entra characteristics relative to Azure DevOps access:
+
+| Properties                            | Microsoft account                        | Microsoft Entra ID  |
 | :-------------------------------------|:---------------------------|:-----|
 | Identity creator      | User | Organization |
 | Single username / password for all work assets      | No      |   Yes |
@@ -293,7 +295,7 @@ Learn more about [configuring this support for your organization](../accounts/ac
 
 ### Require two-factor authentication
 
-You might want to restrict access to your organization by requiring more than one factor to sign in. You can require multiple factors with Azure AD. For example, you can require phone authentication, in addition to a username and password, for all authentication requests.
+You might want to restrict access to your organization by requiring more than one factor to sign in. You can require multiple factors with Microsoft Entra ID. For example, you can require phone authentication, in addition to a username and password, for all authentication requests.
 
 ### Use BitLocker
 
@@ -307,7 +309,7 @@ You can still make choices for increased security. All communication gets sent o
 
 ### Secure access to your organization
 
-Azure AD provides the ability for administrators to control access to Azure resources and applications such as Azure DevOps. With conditional access control in place, Azure AD checks for the specific conditions you set for a user to access an application. After access requirements are met, the user is authenticated and can access the application.
+Microsoft Entra ID provides the ability for administrators to control access to Azure resources and applications such as Azure DevOps. With conditional access control in place, Microsoft Entra ID checks for the specific conditions you set for a user to access an application. After access requirements are met, the user is authenticated and can access the application.
 
 Azure DevOps supports enforcing certain types of conditional access policies (for example, IP fencing) for custom Azure DevOps authentication mechanisms. These mechanisms include personal access tokens, alternate authentication, OAuth, and SSH keys. If your users are accessing Azure DevOps through a third-party client, only IP-based policies (IPv4 based only) are honored. 
 
@@ -320,4 +322,3 @@ Azure DevOps supports enforcing certain types of conditional access policies (fo
 - [Features and services included with Azure DevOps](../../user-guide/services.md)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
-

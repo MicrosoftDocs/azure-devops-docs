@@ -36,7 +36,7 @@ Sign in to your organization at any time `https://dev.azure.com/{Your_Organizati
 ## Sign up with a GitHub account
 
 > [!NOTE]
-> If your GitHub email address is already associated with an organization in Azure DevOps that's [connected to Azure Active Directory (Azure AD)](../organizations/accounts/connect-organization-to-azure-ad.md), you can't sign in with your GitHub account. You must sign in with your Azure AD account.
+> If your GitHub email address is already associated with an organization in Azure DevOps that's [connected to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md), you can't sign in with your GitHub account. You must sign in with your Microsoft Entra account.
 
 1. If you don't have one, [create a GitHub account now](https://github.com/join).
 2. Go to [Azure DevOps](https://azure.microsoft.com/services/devops/) and select **Start free with GitHub**.
