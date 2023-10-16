@@ -69,7 +69,7 @@ The **Assigned To** and other Identity fields are supported by the people picker
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of people picker Assigned To field.](../organizations/notifications/media/at-mention/identity-selector.png)  
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD) or Active Directory, people pickers provide support for searching all users and groups added to the AD, not just those added to the project. To learn more, see [Add AD/Azure AD users or groups to a built-in security group](../organizations/security/add-ad-aad-built-in-security-groups.md). 
+For organizations that manage their users and groups using Microsoft Entra ID or Active Directory, people pickers provide support for searching all users and groups added to the AD, not just those added to the project. To learn more, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](../organizations/security/add-ad-aad-built-in-security-groups.md). 
 
 ::: moniker range="azure-devops"
 

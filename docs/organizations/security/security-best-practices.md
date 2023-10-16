@@ -30,27 +30,29 @@ Although it's not mandatory, incorporating best practices while using Azure DevO
 ### Removing users
 
 - If your organization uses MSA accounts, then remove inactive users directly from the organization, as you have no other way to prevent access. When you do so, you can't create a query for work items assigned to the removed user account. For more information, see [Delete users from Azure DevOps](../accounts/delete-organization-users.md).
-- If your organization is connected to Azure AD, then you can disable or delete the Azure AD user account and leave your Azure DevOps user account active. In this way, you can continue to query work item history using your Azure DevOps user ID.
+- If your organization is connected to Microsoft Entra ID, then you can disable or delete the Microsoft Entra user account and leave your Azure DevOps user account active. In this way, you can continue to query work item history using your Azure DevOps user ID.
 - [Revoke user PATs](../accounts/admin-revoke-user-pats.md).
 - Revoke any special permissions that may have been granted to individual user accounts.
 - Reassign work from users you’re removing to current team members.
 
-### Use Azure AD
+<a name='use-azure-ad'></a>
 
-Integrate Azure DevOps with Azure AD to have a single plane for identity. Consistency and a single authoritative source increases clarity and reduces security risks from human errors and configuration complexity. The key to end governance is to have multiple role assignments (with different role definitions and different resource scopes to the same Azure AD groups). Without Azure AD, you're solely responsible for controlling organization access. 
+### Use Microsoft Entra ID
 
-Using Azure AD also allows you to access other security features, like multi-factor authentication or other conditional access policies.
+Integrate Azure DevOps with Microsoft Entra ID to have a single plane for identity. Consistency and a single authoritative source increases clarity and reduces security risks from human errors and configuration complexity. The key to end governance is to have multiple role assignments (with different role definitions and different resource scopes to the same Microsoft Entra groups). Without Microsoft Entra ID, you're solely responsible for controlling organization access. 
+
+Using Microsoft Entra ID also allows you to access other security features, like multi-factor authentication or other conditional access policies.
 
 For more information, see the following articles:
-- [About accessing your organization with Azure AD](../accounts/access-with-azure-ad.md)
-- [Add AD/Azure AD users or groups to a built-in security groups](add-ad-aad-built-in-security-groups.md)
+- [About accessing your organization with Microsoft Entra ID](../accounts/access-with-azure-ad.md)
+- [Add Active Directory / Microsoft Entra users or groups to a built-in security groups](add-ad-aad-built-in-security-groups.md)
 - [Limit access by location or IP addresses](/azure/active-directory/conditional-access/howto-conditional-access-policy-location)
 - [Manage conditional access](../accounts/change-application-access-policies.md)
 - [Require all users to use multi-factor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)
 
 ### Review auditing events
 
-Once you have an Azure AD backed organization, you can turn on Auditing in your Security policies. Periodically [review audit events](../audit/azure-devops-auditing.md#review-audit-log) to monitor and react to unexpected usage patterns by administrators and other users. 
+Once you have a Microsoft Entra backed organization, you can turn on Auditing in your Security policies. Periodically [review audit events](../audit/azure-devops-auditing.md#review-audit-log) to monitor and react to unexpected usage patterns by administrators and other users. 
 
 ### Secure your network
 
@@ -77,9 +79,7 @@ The system manages permissions at different levels - individual, collection, pro
 ### Project-level permissions
 
 - Limit access to projects and repos to reduce the risk of leaking sensitive information and deploying insecure code to production.
-- Use either the built-in security groups or custom security groups to manage permissions. For more information, see [Grant or restrict permissions to select tasks](restrict-access.md) and [project-scoped user groups](about-permissions.md#project-scoped-user-group).
-- Enable the *Limit user visibility for projects* preview feature for the organization, which restricts access to only those projects that you add users to.
-- Add users to the *Project-scoped users* group, so they can only see and select users and groups in the project that they're connected to from a people picker.
+- Use either the built-in security groups or custom security groups to manage permissions. For more information, see [Grant or restrict permissions to select tasks](restrict-access.md).
 - Disable *"Allow public projects"* in your organization's policy settings to prevent every organization user from creating a public project. Azure DevOps Services allows you to change the visibility of your projects from public to private, and vice-versa. If users haven't signed into your organization, they have read-only access to your public projects. If users have signed in, they can be granted access to private projects and make any permitted changes to them.
 - Don’t allow users to create new projects.
 
@@ -87,10 +87,10 @@ The system manages permissions at different levels - individual, collection, pro
 
 - Block external guest access entirely by disabling the ["Allow invitations to be sent to any domain" policy](/azure/active-directory/external-identities/allow-deny-list). It's a good idea to do so if there's no business need for it.
 - Use a different email or user principal name (UPN) for your personal and business accounts, even though it's allowed. This action eliminates the challenge of disambiguating between your business and personal accounts when the email/UPN is the same.  
-- Put all the external guest users in a single Azure AD group and manage the permissions of that group appropriately. You can easily manage and audit this way.
+- Put all the external guest users in a single Microsoft Entra group and manage the permissions of that group appropriately. You can easily manage and audit this way.
   - Remove direct assignments so the group rules apply to those users. For more information, see [Add a group rule to assign access levels](../accounts/assign-access-levels-by-group-membership.md).
-  - Reevaluate rules regularly on the Group rules tab of the Users page. Clarify whether any group membership changes in Azure AD might affect your organization. Azure AD can take up to 24 hours to update dynamic group membership. Every 24 hours and anytime a group rule changes, rules get automatically reevaluated in the system.
-- For more information, see [B2B guests in the Azure AD](/azure/active-directory/external-identities/delegate-invitations). 
+  - Reevaluate rules regularly on the Group rules tab of the Users page. Clarify whether any group membership changes in Microsoft Entra ID might affect your organization. Microsoft Entra ID can take up to 24 hours to update dynamic group membership. Every 24 hours and anytime a group rule changes, rules get automatically reevaluated in the system.
+- For more information, see [B2B guests in the Microsoft Entra ID](/azure/active-directory/external-identities/delegate-invitations). 
 
 
 -----
@@ -103,7 +103,7 @@ See the following recommendations for assigning permissions to security groups a
 
 |**Do** :::image type="icon" source="../../media/icons/checkmark.png" border="false":::|**Don't** :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: |
 |---------|---------|
-|Use Azure Active Directory, Active Directory, or Windows security groups when you're managing lots of users.    | Don’t change the default permissions for the *Project Valid Users* group. This group can access and view project information.        |
+|Use Microsoft Entra ID, Active Directory, or Windows security groups when you're managing lots of users.    | Don’t change the default permissions for the *Project Valid Users* group. This group can access and view project information.        |
 |When you're adding teams, consider what permissions you want to assign to team members who need to create and modify area paths, iteration paths, and queries.   | Don't add users to multiple security groups that contain different permission levels. In certain cases, a *Deny* permission level may override an *Allow* permission level.        |
 |When you're adding many teams, consider creating a *Team Administrators* custom group where you allocate a subset of the permissions available to *Project Administrators*.     | Don't change the default assignments made to the *Project Valid Users* groups. If you remove or set *View instance-level information* to *Deny* for one of the *Project Valid Users* groups, no users in the group can access whatever project, collection, or deployment you set the permission on.        |
 |Consider granting the work item query folders *Contribute* permission to users or groups who require the ability to create and share work item queries for the project.    | Don't assign permissions that are noted as *Assign only to service accounts* to user accounts.        |
@@ -114,12 +114,12 @@ For more information, see [Valid user groups](about-permissions.md#valid-user-gr
 
 ### Just-in-time access for admin groups 
 
-You can change the configuration of your organization or project if you have [Project Collection Administrator](../../user-guide/manage-organization-collection.md) and [Project Administrator](../../user-guide/project-admin-tutorial.md) access. To protect access to these built-in administrator groups, require just-in-time access using an Azure AD [Privileged Identity Management (PIM) group](/azure/active-directory/privileged-identity-management/concept-pim-for-groups).
+You can change the configuration of your organization or project if you have [Project Collection Administrator](../../user-guide/manage-organization-collection.md) and [Project Administrator](../../user-guide/project-admin-tutorial.md) access. To protect access to these built-in administrator groups, require just-in-time access using a Microsoft Entra [Privileged Identity Management (PIM) group](/azure/active-directory/privileged-identity-management/concept-pim-for-groups).
 
 #### Configure access 
 
-1. [Create a role-assignable group in Azure AD](/azure/active-directory/roles/groups-create-eligible?tabs=ms-powershell&branch=main).
-2. [Add your Azure AD group to the Azure DevOps group](/azure/devops/organizations/security/add-ad-aad-built-in-security-groups?view=azure-devops&branch=main&tabs=preview-page&preserve-view=true). 
+1. [Create a role-assignable group in Microsoft Entra ID](/azure/active-directory/roles/groups-create-eligible?tabs=ms-powershell&branch=main).
+2. [Add your Microsoft Entra group to the Azure DevOps group](/azure/devops/organizations/security/add-ad-aad-built-in-security-groups?view=azure-devops&branch=main&tabs=preview-page&preserve-view=true). 
 
 > [!NOTE]
 > Make sure any user with elevated access using a PIM group also has standard access to the organization, so they can view the page to refresh their permissions. 
@@ -164,7 +164,7 @@ Select your [authentication methods](../../integrate/get-started/authentication/
 ### Consider service principals
 
 
-Explore alternatives like [service principals and managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) that enable you to use Azure AD tokens to access Azure DevOps resources. Such tokens carry less risk when leaked compared to PATs and contain benefits like easy credential management.
+Explore alternatives like [service principals and managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) that enable you to use Microsoft Entra tokens to access Azure DevOps resources. Such tokens carry less risk when leaked compared to PATs and contain benefits like easy credential management.
 
 ### Use PATs sparingly
 
