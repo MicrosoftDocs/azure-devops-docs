@@ -18,7 +18,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="= azure-devops"
 
-Use an organization to connect groups of related projects, and help to scale up your enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
+Use an organization to connect groups of related projects, and help to scale up your enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Use your work or school account to *automatically connect* your organization to your Microsoft Entra ID.
 
 ::: moniker-end
 
@@ -32,7 +32,7 @@ Use an organization to connect groups of related projects, and help to scale up 
 ## Prerequisites
 
 * Understand how to [plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
-* Determine whether you want to use only Microsoft accounts or authenticate users with Azure AD. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choose-your-organization-administrator-account-type).
+* Determine whether you want to use only Microsoft accounts or authenticate users with Microsoft Entra ID. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choose-your-organization-administrator-account-type).
 
 ::: moniker-end
 
