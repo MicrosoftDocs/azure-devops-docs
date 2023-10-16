@@ -14,7 +14,7 @@ Azure Pipelines provides a choice of several authentication options you can use 
 |--------------------------|-----------------------|---------------------------|
 | [Personal access token (PAT)](#personal-access-token-pat) | Supported | Supported when server is configured with HTTPS |
 | [Service Principal (SP)](#service-principal-sp)      | Supported | Currently not supported |
-| [Device code flow (Microsoft Entra ID)](#device-code-flow-aad)     | Supported | Currently not supported |
+| [Device code flow (Microsoft Entra ID)](#device-code-flow-microsoft-entra-id)     | Supported | Currently not supported |
 | [Integrated](#integrated) | Not supported | Windows agents only |
 | [Negotiate](#negotiate) | Not supported | Windows agents only |
 | [Alternate (ALT)](#alternate-alt) | Not supported | Supported when server is configured with HTTPS |

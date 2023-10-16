@@ -11,6 +11,7 @@ metadata:
   author: chcomley
   ms.date: 10/16/2023
   monikerRange: '<= azure-devops'
+
 title: User and permissions management FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -255,7 +256,7 @@ sections:
           
           **Example 2**: group rule gives me the same access
           
-          I have a Visual Studio Test Pro subscription and I'm in a group rule that gives me Basic + Test Plans – what happens?
+          I have a Visual Studio Test Pro subscription and I'm in a group rule that gives me Basic + Test Plans what happens?
           
           Expected: I get detected as a Visual Studio Test Pro subscriber, because the access is the same as the group rule, and I'm already paying for the Visual Studio Test Pro, so I wouldn't want to pay again.
           
