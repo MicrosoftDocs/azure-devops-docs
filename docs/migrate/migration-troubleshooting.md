@@ -232,35 +232,37 @@ Run the completed command against the Azure DevOps Server configuration database
 >
 > If you receive a -1 result when you run the command, ensure that your collection database that produced the error is attached to your Azure DevOps Server instance and that you're running the command on the configuration database. 
 
-### Azure Active Directory timeout exception
+<a name='azure-active-directory-timeout-exception'></a>
 
-On rare occasions, you may receive an Azure Active Directory (Azure AD) timeout error when running the data migration tool prepare command. 
+### Microsoft Entra timeout exception
+
+On rare occasions, you may receive a Microsoft Entra timeout error when running the data migration tool prepare command. 
 
 ```cmdline
 Exception Message: Request failed (type AadGraphTimeoutException)
 ```
 
-This error means that the requests to Azure AD to find the matching Azure AD identities for users in your collection timed out. Generally, you can resolve this error by waiting to run the **prepare** command at a less busy time of the day, such as after regular business hours. 
+This error means that the requests to Microsoft Entra ID to find the matching Microsoft Entra identities for users in your collection timed out. Generally, you can resolve this error by waiting to run the **prepare** command at a less busy time of the day, such as after regular business hours. 
 
-In the event that the error continues, you should undertake a few troubleshooting steps. First, you will want to test your connection to Azure AD from the machine running the **prepare** command. Execute the following steps to retrieve information on a user in your Azure AD. 
+In the event that the error continues, you should undertake a few troubleshooting steps. First, you will want to test your connection to Microsoft Entra ID from the machine running the **prepare** command. Execute the following steps to retrieve information on a user in your Microsoft Entra ID. 
 
-Open PowerShell in elevated mode and replace 'someone@somecompany.com' in the following command with your Azure AD user identity.  
+Open PowerShell in elevated mode and replace 'someone@somecompany.com' in the following command with your Microsoft Entra user identity.  
 
 ```PowerShell
-//Install the AzureAD PowerShell module - ensuring to select Yes to All
+# Install the AzureAD PowerShell module - ensuring to select Yes to All
 Install-Module AzureAD 
 
-// Install the MSOnline PowerShell module -  ensuring to select Yes to All
+# Install the MSOnline PowerShell module -  ensuring to select Yes to All
 Install-Module MSOnline
 
-// Connect to Azure AD and use your Azure AD credentials (someone@somecompany.com) to login when the pop-up appears
+# Connect to Azure AD and use your Azure AD credentials (someone@somecompany.com) to login when the pop-up appears
 Connect-MsolService 
 
-// Try to retrieve information on a user from your Azure AD
+# Try to retrieve information on a user from your Azure AD
 Get-MsolUser -UserPrincipalName someone@somecompany.com
 ```
 
-If any of the above steps fail or you're unable to look up a user's identity, a connection issue may exist between the machine running the **prepare** command and Azure AD. Run a network trace while executing the **prepare** command to ensure that nothing within your network is interfering with calls reaching Azure AD. If you've confirmed that the problem isn't with your network, contact Azure support for assistance with troubleshooting. 
+If any of the above steps fail or you're unable to look up a user's identity, a connection issue may exist between the machine running the **prepare** command and Microsoft Entra ID. Run a network trace while executing the **prepare** command to ensure that nothing within your network is interfering with calls reaching Microsoft Entra ID. If you've confirmed that the problem isn't with your network, contact Azure support for assistance with troubleshooting. 
 If you're able to retrieve user information, open your log file from the **prepare** attempt and look for a line similar to the following entry. 
 
 ```cmdline

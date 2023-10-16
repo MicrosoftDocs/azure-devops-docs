@@ -21,9 +21,9 @@ If users no longer require access to a team, project, or organization, you can r
 > [!IMPORTANT]
 > - [Removing a user from a team or project](#remove-users-from-a-team-or-project) doesn’t remove the user from the organization.
 > - Work items that are assigned to the user aren't affected by removing user access.
-> - Azure Active Directory (Azure AD)-backed organizations: 
->    - After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
->    - Removing a user from the organization doesn't remove their memberships to any Azure AD groups. If the user is a member of an access-granting Azure AD group, then the user still has access to Azure DevOps, even after you remove them from the organization. If you'd like to completely remove the user from the organization, make sure they aren't in any of your access-granting Azure AD groups. For more information, see about managing access with [Azure AD groups](manage-azure-active-directory-groups.md)
+> - Microsoft Entra ID-backed organizations: 
+>    - After you remove a user from Microsoft Entra ID, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
+>    - Removing a user from the organization doesn't remove their memberships to any Microsoft Entra groups. If the user is a member of an access-granting Microsoft Entra group, then the user still has access to Azure DevOps, even after you remove them from the organization. If you'd like to completely remove the user from the organization, make sure they aren't in any of your access-granting Microsoft Entra groups. For more information, see about managing access with [Microsoft Entra groups](manage-azure-active-directory-groups.md)
 > - Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
 ## Prerequisites  
