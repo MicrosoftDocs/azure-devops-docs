@@ -27,7 +27,7 @@ This article shows how to perform the following tasks:
 
 For information on the following related tasks, see the corresponding articles: 
 
-  - [Add AD/Azure AD users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md)
+  - [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md)
   - [Add users & manage access](../accounts/add-organization-users.md)  
   - [Add users or groups to a team or project](add-users-team-project.md)  
   - [Remove user accounts](remove-users-prohibit-access.md) 
@@ -255,7 +255,7 @@ Choose to create a project-level group when you want to manage permissions at th
 
 As roles and responsibilities change, you might need to change the permission levels for individual members of a project. The easiest way to do that is to add the user or a group of users to either a default or custom security group.  If roles change, you can then remove the user from a group.
 
-Here we show how to add a user to the built-in **Project Administrators** group. The method is similar no matter what group you are adding. If your organization is connected to Azure Active Directory or Active Directory, then you can add security groups defined in those directories to Azure DevOps security groups. To learn more, see [Add AD/Azure AD users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
+Here we show how to add a user to the built-in **Project Administrators** group. The method is similar no matter what group you are adding. If your organization is connected to Microsoft Entra ID or Active Directory, then you can add security groups defined in those directories to Azure DevOps security groups. To learn more, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
 
 
 ::: moniker range="azure-devops"
@@ -505,4 +505,3 @@ If your on-premises deployment is integrated with SQL Server Reports, you'll nee
 - [Permissions lookup reference](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
-

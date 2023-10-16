@@ -197,8 +197,8 @@ To filter data by more than the date/time range, we recommend downloading logs a
 
 The following limitations exist for what can be audited.
 
-* Azure Active Directory (Azure AD) group membership changes – Auditing Logs include updates to Azure DevOps groups and group membership (when an event Area is "Groups"). However, if you manage membership via Azure AD groups, such additions and removals of users from those Azure AD groups aren't audited by Azure DevOps in these logs. Review the Azure AD audit logs to see when a user or group was added or removed from an Azure AD group. 
-* Sign in events – We don't track sign in events for Azure DevOps. View the Azure AD audit logs to review sign in events to your Azure AD. 
+* Microsoft Entra group membership changes – Auditing Logs include updates to Azure DevOps groups and group membership (when an event Area is "Groups"). However, if you manage membership via Microsoft Entra groups, such additions and removals of users from those Microsoft Entra groups aren't audited by Azure DevOps in these logs. Review the Microsoft Entra audit logs to see when a user or group was added or removed from a Microsoft Entra group. 
+* Sign in events – We don't track sign in events for Azure DevOps. View the Microsoft Entra audit logs to review sign in events to your Microsoft Entra ID. 
 
 ## Frequently asked questions
 

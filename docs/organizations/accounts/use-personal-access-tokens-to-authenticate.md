@@ -22,7 +22,7 @@ You can use a personal access token (PAT) as an alternate password to authentica
 
 A personal access token contains your security credentials for Azure DevOps. A PAT identifies you, your accessible organizations, and scopes of access. As such, they're as critical as passwords, so you should treat them the same way.
 
-If you're working within Microsoft tools, then your Microsoft account (MSA) or Azure Active Directory (Azure AD) is an acceptable and well-supported approach. But, if you're working with third-party tools that don't support Microsoft or Azure AD accounts – or you don't want to provide your primary credentials to the tool – use PATs to limit your risk.
+If you're working within Microsoft tools, then your Microsoft account (MSA) or Microsoft Entra ID is an acceptable and well-supported approach. But, if you're working with third-party tools that don't support Microsoft or Microsoft Entra accounts – or you don't want to provide your primary credentials to the tool – use PATs to limit your risk.
 
 You can create and manage your PATs through one of the following ways:
 
@@ -46,7 +46,7 @@ To set up PATs for non-Microsoft tools, use [Git credential managers](../../repo
 
 ### Q: What happens to a PAT if a user account is disabled?
 
-A: Once a user's removed from Azure DevOps, the PAT is invalidated within 1 hour. If your organization is connected to Azure Active Directory (Azure AD), the PAT is also invalidated in Azure AD, as it belongs to the user. We recommend that the user rotates their PAT to another user or service account to keep services running.
+A: Once a user's removed from Azure DevOps, the PAT is invalidated within 1 hour. If your organization is connected to Microsoft Entra ID, the PAT is also invalidated in Microsoft Entra ID, as it belongs to the user. We recommend that the user rotates their PAT to another user or service account to keep services running.
 
 ### Q: Is there a way to renew a PAT via REST API?
 
@@ -69,7 +69,6 @@ If you want to publish your packages using Azure Pipelines, use the [NuGet Authe
 
 ### Q: Why did my PAT stop working?
 
-A: PAT authentication requires you to regularly sign into Azure DevOps using the full authentication flow. Once every 30 days is sufficient for many, but you may need to sign in more often than that depending upon your Azure Active Directory configuration. If your PAT stops working, first try signing into your organization, ensuring that you go through the full authentication prompt. If your PAT still doesn't work after that, check to see if your PAT has expired.
+A: PAT authentication requires you to regularly sign into Azure DevOps using the full authentication flow. Once every 30 days is sufficient for many, but you may need to sign in more often than that depending upon your Microsoft Entra configuration. If your PAT stops working, first try signing into your organization, ensuring that you go through the full authentication prompt. If your PAT still doesn't work after that, check to see if your PAT has expired.
 
 ::: moniker-end
-

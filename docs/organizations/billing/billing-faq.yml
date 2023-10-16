@@ -50,9 +50,9 @@ sections:
           A: If you add a user with Basic or Basic + Test Plans access level, you pay at the time of assignment. When you create a [group rule](../accounts/assign-access-levels-by-group-membership.md), applied to users without direct assignments, you don't start paying until they sign in and receive an access level.
           
       - question: |
-          Q: What happens when a user is deleted in Azure AD?
+          Q: What happens when a user is deleted in Microsoft Entra ID?
         answer: |
-          A: When a user is permanently deleted in Azure AD, within a few hours, they're removed from Azure DevOps and you're no longer be billed for their license. Guest users may need to be removed manually from Azure DevOps. For more information, see [Delete a user in Azure AD](https://learn.microsoft.com/troubleshoot/azure/active-directory/troubleshoot-user-creation-deletion-issues?tabs=azure-portal#delete-a-user)
+          A: When a user is permanently deleted in Microsoft Entra ID, within a few hours, they're removed from Azure DevOps and you're no longer be billed for their license. Guest users may need to be removed manually from Azure DevOps. For more information, see [Delete a user in Microsoft Entra ID](https://learn.microsoft.com/troubleshoot/azure/active-directory/troubleshoot-user-creation-deletion-issues?tabs=azure-portal#delete-a-user)
       
       - question: |
           Q: How can I stop paying for users who aren't actively using Azure DevOps?
