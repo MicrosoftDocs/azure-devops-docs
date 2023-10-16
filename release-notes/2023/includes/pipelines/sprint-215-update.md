@@ -6,18 +6,18 @@ ms.topic: include
 ---
 ### New PAT Scope for managing pipeline authorization and approvals and checks
 
-To limit damage done by leaking a PAT token, we've added a new PAT scope, named `Pipeline Resources`. You can use this PAT scope when managing pipeline authorization using a [protected resource](https://learn.microsoft.com/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources), such as a service connection, or to manage [approvals and checks](https://learn.microsoft.com/azure/devops/pipelines/process/approvals) for that resource.
+To limit damage done by leaking a PAT token, we've added a new PAT scope, named `Pipeline Resources`. You can use this PAT scope when managing pipeline authorization using a [protected resource](/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources), such as a service connection, or to manage [approvals and checks](/azure/devops/pipelines/process/approvals) for that resource.
 
 > [!div class="mx-imgBorder"]
 > ![Pipelines REST API Updates](../../media/215-pipelines-01.png)
 
 The following REST API calls support the new PAT scope as follows:
 
-* [Update an Approval](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/approvals/update) supports scope `Pipeline Resources Use` 
-* [Manage Checks](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/check-configurations) supports scope `Pipeline Resources Use and Manage` 
-* [Update Pipeline Permissions For Resources](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/pipeline-permissions/update-pipeline-permisions-for-resources) supports scope `Pipeline Resources Use and Manage` 
-* [Authorize Definition Resources](https://learn.microsoft.com/rest/api/azure/devops/build/resources/authorize-definition-resources) supports scope `Pipeline Resources Use and Manage` 
-* [Authorize Project Resources](https://learn.microsoft.com/rest/api/azure/devops/build/authorizedresources/authorize-project-resources) supports scope `Pipeline Resources Use and Manage`
+* [Update an Approval](/rest/api/azure/devops/approvalsandchecks/approvals/update) supports scope `Pipeline Resources Use` 
+* [Manage Checks](/rest/api/azure/devops/approvalsandchecks/check-configurations) supports scope `Pipeline Resources Use and Manage` 
+* [Update Pipeline Permissions For Resources](/rest/api/azure/devops/approvalsandchecks/pipeline-permissions/update-pipeline-permisions-for-resources) supports scope `Pipeline Resources Use and Manage` 
+* [Authorize Definition Resources](/rest/api/azure/devops/build/resources/authorize-definition-resources) supports scope `Pipeline Resources Use and Manage` 
+* [Authorize Project Resources](/rest/api/azure/devops/build/authorizedresources/authorize-project-resources) supports scope `Pipeline Resources Use and Manage`
 
 ### Experience improvements to pipeline permissions
 
@@ -26,9 +26,9 @@ We've improved the experience around managing pipeline permissions to make the p
 In the past, if you checked off "Grant access permission to all pipelines" when you created a protected resource, but then you restricted access to the resource, your pipeline needed a new authorization to use the resource. This behavior was inconsistent with subsequent opening and closing access to the resource, where a new authorization wasn't required. This is now fixed.
 ### Variables as inputs in checks
 
-[Approvals and checks](https://learn.microsoft.com/azure/devops/pipelines/process/approvals) are a runtime security mechanism that allows resource owners to control which pipeline _runs_ can use their resource. 
+[Approvals and checks](/azure/devops/pipelines/process/approvals) are a runtime security mechanism that allows resource owners to control which pipeline _runs_ can use their resource. 
 
-Two popular checks are _Invoke Azure Function_ and _Invoke REST API_. In the past, when configuring them, one could only use [predefined system variables](https://learn.microsoft.com/azure/devops/pipelines/build/variables) or [variable groups](https://learn.microsoft.com/azure/devops/pipelines/library/variable-groups).
+Two popular checks are _Invoke Azure Function_ and _Invoke REST API_. In the past, when configuring them, one could only use [predefined system variables](/azure/devops/pipelines/build/variables) or [variable groups](/azure/devops/pipelines/library/variable-groups).
 
 In this sprint, we've added support for pipeline-defined variables. This works when specifying `Function key`, `Headers`, `Body`, and `Query` parameters for such checks. 
 
@@ -65,7 +65,7 @@ You can configure an Invoke Azure Function check on the Production environment a
 
 The syntax for using runtime-defined variables is `StageId.JobId.StepOrTaskName.Variable`.
 
-Learn more about [the recommended way to use Invoke Azure Function & REST API checks](https://learn.microsoft.com/azure/devops/pipelines/process/invoke-checks).
+Learn more about [the recommended way to use Invoke Azure Function & REST API checks](/azure/devops/pipelines/process/invoke-checks).
 ### Ability to disable masking for short secrets
 
 Azure Pipelines masks secrets in logs. Secrets can be variables marked as secret, variables from variable groups that are linked to Azure Key Vault or elements of a Service Connection marked as secret by the Service Connection provider.
