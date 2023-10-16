@@ -106,10 +106,8 @@ create two additional subscriptions.
 
 ### Q: Why don't I see my organization when trying to connect Microsoft Teams?
 
-A: Only organizations in the same Azure Active Directory tenant as your Microsoft Teams account can be connected. Even if your email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants, so they can't be linked.
+A: Only organizations in the same Microsoft Entra tenant as your Microsoft Teams account can be connected. Even if your email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants, so they can't be linked.
 
-Create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams, see [Access via Azure AD FAQs, Why is my organization already connected to a directory?](../../organizations/accounts/faq-azure-access.yml#AlreadyConnected).
+Create a new Team in the same Microsoft Entra ID as Azure DevOps Services, or move your Azure DevOps Services to the same Microsoft Entra ID as Teams, see [Access via Microsoft Entra FAQs, Why is my organization already connected to a directory?](../../organizations/accounts/faq-azure-access.yml#AlreadyConnected).
 
 <!-- ENDSECTION -->
-
-
