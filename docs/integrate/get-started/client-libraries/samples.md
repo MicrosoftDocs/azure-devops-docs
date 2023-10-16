@@ -135,7 +135,9 @@ public static void PersonalAccessTokenRestSample()
 }
 ```
 
-##### Visual Studio sign-in prompt (Microsoft Account or Azure Active Directory backed) for REST services (.NET Framework only)
+<a name='visual-studio-sign-in-prompt-microsoft-account-or-azure-active-directory-backed-for-rest-services-net-framework-only'></a>
+
+##### Visual Studio sign-in prompt (Microsoft Account or Microsoft Entra backed) for REST services (.NET Framework only)
 
 Because interactive dialogs aren't supported by the .NET Core version of the clients, this sample applies only to the .NET Framework version of the clients.
 
@@ -147,7 +149,9 @@ public static void MicrosoftAccountRestSample()
 }
 ```
 
-##### Azure Active Directory Authentication for REST services
+<a name='azure-active-directory-authentication-for-rest-services'></a>
+
+##### Microsoft Entra authentication for REST services
 ```cs
 public static void AADRestSample()
 {

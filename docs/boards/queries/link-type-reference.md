@@ -651,7 +651,7 @@ The following table describes the GitHub link types you can choose when adding a
 
 ## Remote work link types
 
-Remote work link types are system-defined link types that support linking work items defined in different organizations. Organizations must be managed by the same Azure Active Directory as described in [Connect your organization to Azure Active Directory](../../organizations/accounts/connect-organization-to-azure-ad.md). 
+Remote work link types are system-defined link types that support linking work items defined in different organizations. Organizations must be managed by the same Microsoft Entra ID as described in [Connect your organization to Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). 
 
 A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) corresponds to the sum of all links defined with a remote work link type. 
 
@@ -682,7 +682,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
       Link category: System-defined  
    :::column-end:::
    :::column span="":::
-      Use this directional link to create links between work items that have dependencies and are defined in different organizations. Organizations must be managed by the same Azure Active Directory. Typically used to track change requests made to requirements.
+      Use this directional link to create links between work items that have dependencies and are defined in different organizations. Organizations must be managed by the same Microsoft Entra ID. Typically used to track change requests made to requirements.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -696,7 +696,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
       Link category: System-defined  
    :::column-end:::
    :::column span="":::
-      Use this non-directional link to create links between work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.
+      Use this non-directional link to create links between work items defined in different organizations. Organizations must be managed by the same Microsoft Entra ID.
    :::column-end:::
 :::row-end:::
 

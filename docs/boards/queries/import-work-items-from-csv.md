@@ -207,7 +207,7 @@ The work item results always list the data errors found for individual work item
 
 ### Q: Why am I getting errors for some identity values?
 
-A: When you use the Web UI, the identity picker goes through extra steps to validate the user. First it checks to see if the person is a valid user in the org. If not, it searches on the identity in Azure Active Directory (Azure AD). If the user's in Azure AD but not in the org, that user gets added to the valid identities. When you import via CSV, for performance reasons, the identity picker doesn't go through these extra steps. It only checks to see if there's a matching UPN already in the org. If it doesn't find a matching UPN, it reports that the identity is unknown.
+A: When you use the Web UI, the identity picker goes through extra steps to validate the user. First it checks to see if the person is a valid user in the org. If not, it searches on the identity in Microsoft Entra ID. If the user's in Microsoft Entra ID but not in the org, that user gets added to the valid identities. When you import via CSV, for performance reasons, the identity picker doesn't go through these extra steps. It only checks to see if there's a matching UPN already in the org. If it doesn't find a matching UPN, it reports that the identity is unknown.
 
 ### Q: Does CSV import support all work item types?
 

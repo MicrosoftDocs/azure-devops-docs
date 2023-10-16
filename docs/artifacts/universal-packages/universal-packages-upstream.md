@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Universal Packages upstream sources
 
-With Azure Artifacts, you can enable upstream sources to start consuming packages from public registries such as NuGet.org or npmjs.com. Once you enable upstream sources, Azure Artifacts will save a copy of any packages you install from upstream. Azure Artifacts also supports using other feeds as upstreams. In this article, you'll learn how to add a new Universal Packages upstream source with a feed in your organization or other organizations within the same Azure Active Directory. See [Manage access with Azure Active Directory](../../organizations/accounts/connect-organization-to-azure-ad.md) to learn how to connect your organization to Azure Active Directory.
+With Azure Artifacts, you can enable upstream sources to start consuming packages from public registries such as NuGet.org or npmjs.com. Once you enable upstream sources, Azure Artifacts will save a copy of any packages you install from upstream. Azure Artifacts also supports using other feeds as upstreams. In this article, you'll learn how to add a new Universal Packages upstream source with a feed in your organization or other organizations within the same Microsoft Entra ID. See [Manage access with Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md) to learn how to connect your organization to Microsoft Entra ID.
 
 ## Add a feed in your organization as an upstream source
 
@@ -40,7 +40,7 @@ With Azure Artifacts, you can enable upstream sources to start consuming package
 
     :::image type="content" source="./media/upack-add-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
 
-1. Select **Azure Artifacts feed in another organization** to use packages from a feed in a different organization within the same Azure Active Directory.
+1. Select **Azure Artifacts feed in another organization** to use packages from a feed in a different organization within the same Microsoft Entra ID.
 
     :::image type="content" source="./media/other-org-feed.png" alt-text="A screenshot showing the types of upstream sources - feed in another org.":::
 

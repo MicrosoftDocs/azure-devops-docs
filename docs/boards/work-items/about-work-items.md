@@ -182,9 +182,9 @@ You can only assign a work item to one person at a time. The **Assigned To** fie
 > - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
 > - To learn more about identity fields, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md).
  
-When configured with Azure Active Directory or Active Directory, Azure DevOps synchronizes identity fields with these directories. Identity fields include **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. 
+When configured with Microsoft Entra ID or Active Directory, Azure DevOps synchronizes identity fields with these directories. Identity fields include **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. 
 
-You can grant access to a project by adding security groups that you created in Azure AD or Active Directory by adding accounts to existing or custom groups defined from the collection setting **Security** pages. For more information, see [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory) or [Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups). 
+You can grant access to a project by adding security groups that you created in Microsoft Entra ID or Active Directory by adding accounts to existing or custom groups defined from the collection setting **Security** pages. For more information, see [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory) or [Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups). 
 
 <a id="templates" />
 

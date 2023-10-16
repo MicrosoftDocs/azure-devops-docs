@@ -81,7 +81,7 @@ monikerRange: '<= azure-devops'
     nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Any_String_But_Not_Null> -password <Personal_Access_Token>
     ```
 
-1. If your organization is connected to Azure Active Directory, you must first authenticate with your AD credentials and then add your personal access token using the *setapikey* command:
+1. If your organization is connected to Microsoft Entra ID, you must first authenticate with your AD credentials and then add your personal access token using the *setapikey* command:
 
     ```Command
     nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Azure_Active_Directory_UserName> -password <Azure_Active_Directory_Password>
@@ -115,7 +115,7 @@ monikerRange: '<= azure-devops'
     nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Any_String_But_Not_Null> -password <Personal_Access_Token>
     ```
 
-1. If your organization is connected to Azure Active Directory, you must first authenticate with your AD credentials and then add your personal access token using the *setapikey* command:
+1. If your organization is connected to Microsoft Entra ID, you must first authenticate with your AD credentials and then add your personal access token using the *setapikey* command:
 
     ```Command
     nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Azure_Active_Directory_UserName> -password <Azure_Active_Directory_Password>

@@ -480,7 +480,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    
    > [!NOTE]
-   > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure Active Directory (Azure AD) when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.  
+   > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Microsoft Entra ID when your Azure Boards account is backed by Microsoft Entra ID, or Active Directory when your on-premises server instance is backed by Active Directory.  
 
    For information about category groups, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types).
 
@@ -499,7 +499,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
     **String**  that matches the name of a user group in Team Foundation Server or a category group defined for a project.
 
    > [!NOTE]
-   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure AD when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.     
+   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Microsoft Entra ID when your Azure Boards account is backed by Microsoft Entra ID, or Active Directory when your on-premises server instance is backed by Active Directory.     
 
    :::column-end:::
 :::row-end:::
