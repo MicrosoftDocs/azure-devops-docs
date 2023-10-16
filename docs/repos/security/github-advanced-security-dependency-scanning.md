@@ -475,4 +475,4 @@ If the dependency scanning build task is blocking a successful execution of your
 
 The dependency scanning build task uses the pipeline identity to call the Advanced Security REST APIs. By default, pipelines in same project have access to fetch alerts. If you were to remove those permissions from build service account, or you have a custom setup (e.g. pipeline hosted in different project than repository) you would need to grant these permissions manually.
 
-Grant `Advanced Security: View Alerts` permission to the build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for project-collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
+Grant `Advanced Security: View Alerts` permission to the build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
