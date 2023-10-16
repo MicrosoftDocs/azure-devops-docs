@@ -62,7 +62,7 @@ For an overview of default assignments, see [Default permissions and access for 
 
 ### Direct assignment
 
-If you don't manage your user base with Azure AD, as described in the next section, then you can add users through the following ways:
+If you don't manage your user base with Microsoft Entra ID, as described in the next section, then you can add users through the following ways:
 
 * Add users to your organization from the **Organization settings > Users** page. Only organization owners or members of the Project Collection Administration group can add users at this level. Specify the access level and the project(s) the user gets added to. For more information, see [Add users to your organization or project](add-organization-users.md).
 
@@ -88,23 +88,25 @@ For more information about adding users to your organization, see the following 
 
 <a id="access-azure-ad" />
 
-### Azure AD
+<a name='azure-ad'></a>
 
-If you manage your users with Azure AD, you can connect your organization to Azure AD and manage access through Azure AD. If you already use Azure AD, [use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md).
+### Microsoft Entra ID
 
-Do the following tasks, to add users through Azure AD:
+If you manage your users with Microsoft Entra ID, you can connect your organization to Microsoft Entra ID and manage access through Microsoft Entra ID. If you already use Microsoft Entra ID, [use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md).
 
-1. [Connect your organization to Azure AD](connect-organization-to-azure-ad.md). If you need to set up Azure AD, do that now.  
-2. Go to [Azure AD](https://azure.microsoft.com/services/active-directory/) and sign in with your organization account.  
-3. [Add organization users to your Azure AD](/azure/active-directory/fundamentals/add-users-azure-active-directory).  
-4. [Add an Azure AD group to an Azure DevOps group](manage-azure-active-directory-groups.md).  
+Do the following tasks, to add users through Microsoft Entra ID:
+
+1. [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md). If you need to set up Microsoft Entra ID, do that now.  
+2. Go to [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) and sign in with your organization account.  
+3. [Add organization users to your Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory).  
+4. [Add a Microsoft Entra group to an Azure DevOps group](manage-azure-active-directory-groups.md).  
 5. [Create bulk assignments of access levels for users](add-organization-users.md), or [define group rules and assign access levels](assign-access-levels-by-group-membership.md).
 
 <a id="add-users-notes" />
 
 ### Group rules
 
-A best practice is to manage users through security groups. You can use the default security groups, create custom security groups, or reference Azure AD groups. You can use any of these  groups to add and manage user access levels using group rules. For more information, see [Add a group rule to assign access levels and extensions](assign-access-levels-by-group-membership.md).
+A best practice is to manage users through security groups. You can use the default security groups, create custom security groups, or reference Microsoft Entra groups. You can use any of these  groups to add and manage user access levels using group rules. For more information, see [Add a group rule to assign access levels and extensions](assign-access-levels-by-group-membership.md).
 
 ## Other organization management tasks
 
@@ -120,13 +122,15 @@ A best practice is to manage users through security groups. You can use the defa
    - [Authenticate with PATs](use-personal-access-tokens-to-authenticate.md)
    - [Revoke user PATs](admin-revoke-user-pats.md)
    
-   #### Manage Azure AD access
+   <a name='manage-azure-ad-access'></a>
+
+#### Manage Microsoft Entra ID access
    
    - [Remove Azure DevOps users](add-external-user.md)
-   - [Disconnect from Azure AD](disconnect-organization-from-azure-ad.md)
-   - [Change your Azure AD tenant connection](change-azure-ad-connection.md)
+   - [Disconnect from Microsoft Entra ID](disconnect-organization-from-azure-ad.md)
+   - [Change your Microsoft Entra tenant connection](change-azure-ad-connection.md)
    - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-   - [About accessing your organization with Azure AD](access-with-azure-ad.md)
+   - [About accessing your organization with Microsoft Entra ID](access-with-azure-ad.md)
    
    #### Manage group-based licensing
    
@@ -172,5 +176,5 @@ A best practice is to manage users through security groups. You can use the defa
 * [Change project-level permissions](../security/change-project-level-permissions.md)
 * [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md)
 * [Add a user as a team administrator](../settings/add-team-administrator.md)
-* [About using Azure AD to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
-* [Troubleshoot permissions and access with Azure AD](faq-azure-access.yml)
+* [About using Microsoft Entra ID to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
+* [Troubleshoot permissions and access with Microsoft Entra ID](faq-azure-access.yml)

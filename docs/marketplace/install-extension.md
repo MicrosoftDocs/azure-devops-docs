@@ -520,7 +520,7 @@ A: If you don't see your organization when buying from the Azure DevOps Marketpl
 1. Sign in to the Visual Studio Marketplace. Use the identity of a user in the organization that you want.
 
 > [!TIP]
-> Azure DevOps might ask you to choose between "work or school account" or "personal account". If so, then you used an email address that's the same for a Microsoft account and a "work or school account" that your organization manages in Azure Active Directory. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions.
+> Azure DevOps might ask you to choose between "work or school account" or "personal account". If so, then you used an email address that's the same for a Microsoft account and a "work or school account" that your organization manages in Microsoft Entra ID. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions.
 > Choose the identity for the user in the organization that you want to select.
  
 ### Q: Why can't I install an extension?
@@ -563,7 +563,7 @@ A: You must be a member of your project collection. Follow these steps to check 
 1. Open a private or incognito browsing session.
 1. Sign in to your Azure DevOps Server home page (```https://{server}:8080/tfs/```) with the identity that's a user in the project collection where you want to install the extension.
 
-   Azure DevOps might ask you to choose between a "work or school organization" or "personal account." This message means that you used an email address that's the same for a Microsoft account and a "work or school account" managed by your organization in Azure Active Directory. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions. Choose the identity that's the user in your project collection.
+   Azure DevOps might ask you to choose between a "work or school organization" or "personal account." This message means that you used an email address that's the same for a Microsoft account and a "work or school account" managed by your organization in Microsoft Entra ID. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions. Choose the identity that's the user in your project collection.
 
 2. From your project collection, go to the Marketplace.
 
