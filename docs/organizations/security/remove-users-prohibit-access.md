@@ -1,7 +1,7 @@
 ---
-title: Remove users from AD/Azure AD security groups 
+title: Remove users from Active Directory / Microsoft Entra security groups 
 titleSuffix: Azure DevOps
-description: Manage changes to an organization when users leave a project or company by removing their user account from AD/Azure AD security groups  
+description: Manage changes to an organization when users leave a project or company by removing their user account from Active Directory / Microsoft Entra security groups  
 ms.subservice: azure-devops-security
 ms.assetid: 
 ms.author: chcomley
@@ -11,11 +11,11 @@ monikerRange: '<= azure-devops'
 ms.date: 10/14/2019
 ---
 
-# Remove user accounts from Azure Active Directory or Active Directory
+# Remove user accounts from Microsoft Entra ID or Active Directory
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When a user with access to Azure DevOps leaves a company, an administrator would typically remove them from Azure Active Directory or Active Directory. This automatically voids their user account and remove their ability to access or connect to Azure DevOps.
+When a user with access to Azure DevOps leaves a company, an administrator would typically remove them from Microsoft Entra ID or Active Directory. This automatically voids their user account and remove their ability to access or connect to Azure DevOps.
 
 ::: moniker range="azure-devops"  
 If you manage your Azure DevOps users with Microsoft Service Accounts (MSA), then you'll need to [remove their account](../accounts/delete-organization-users.md). 
@@ -24,7 +24,7 @@ In this article you'll find:
 > [!div class="checklist"]
 > * A checklist to review when removing user accounts
 > * Options for removing users from organizations in Azure DevOps
-> * Links to articles for removing user accounts from AD or Azure AD  
+> * Links to articles for removing user accounts from Active Directory or Microsoft Entra ID  
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"  
@@ -32,7 +32,7 @@ In this article you'll find:
 In this article you'll find:
 > [!div class="checklist"]
 > * A checklist to review when removing user accounts
-> * Links to articles for removing user accounts from AD or Azure AD  
+> * Links to articles for removing user accounts from Active Directory or Microsoft Entra ID  
 ::: moniker-end  
 
 
@@ -48,15 +48,17 @@ In this article you'll find:
 
 If your organization uses MSA accounts, then to you must remove users from the organization as you have no other way to prevent access. When you do so, you'll not be able to create a query for work items assigned to the removed user account. To learn more, see [Delete users from Azure DevOps](../accounts/delete-organization-users.md).
 
-If your organization is backed by Azure AD, then you can disable or delete the Azure AD user account while leaving their Azure DevOps account active. In this way, you can continue to query their work item history using their account name.
+If your organization is backed by Microsoft Entra ID, then you can disable or delete the Microsoft Entra user account while leaving their Azure DevOps account active. In this way, you can continue to query their work item history using their account name.
 
 ::: moniker-end 
 
-## Remove users from AD or Azure AD
+<a name='remove-users-from-ad-or-azure-ad'></a>
 
-For information on removing users from AD or Azure AD, see one of the following articles: 
+## Remove users from Active Directory or Microsoft Entra ID
 
-* [Delete users from Azure AD](/azure/active-directory/add-users-azure-active-directory#delete-a-user)
+For information on removing users from Active Directory or Microsoft Entra ID, see one of the following articles: 
+
+* [Delete users from Microsoft Entra ID](/azure/active-directory/add-users-azure-active-directory#delete-a-user)
 * [Delete a User Account from Active Directory](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
 
 ## Related articles

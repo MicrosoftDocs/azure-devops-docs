@@ -46,7 +46,7 @@ Audit logs contain many changes that occur throughout an Azure DevOps organizati
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into an organization in Azure DevOps. These services/servers typically integrate with and rely upon the security features provided by services such as Active Directory or Azure Active Directory. For more information, see [About security, authentication, and authorization](about-security-identity.md).
+Authentication verifies a user's identify based on the credentials provided when they sign into an organization in Azure DevOps. These services/servers typically integrate with and rely upon the security features provided by services such as Active Directory or Microsoft Entra ID. For more information, see [About security, authentication, and authorization](about-security-identity.md).
 
 ## Authorization
 
@@ -60,7 +60,7 @@ A user account that has been granted membership to an organization in Azure DevO
 
 ## Conditional access
 
-Conditional access provides support for securing Azure DevOps resources backed by an Azure Active Directory (Azure AD) tenant. For example, you can enable multi-factor authentication to help protect against the risk of compromised credentials. For more information, see [Manage conditional access to Azure DevOps](../accounts/change-application-access-policies.md).
+Conditional access provides support for securing Azure DevOps resources backed by a Microsoft Entra tenant. For example, you can enable multi-factor authentication to help protect against the risk of compromised credentials. For more information, see [Manage conditional access to Azure DevOps](../accounts/change-application-access-policies.md).
 
 ## Inheritance
 
@@ -90,7 +90,7 @@ OAuth 2.0 is an industry-standard protocol for authorization. OAuth 2.0 is suppo
 
 ## Organizational project
 
-Projects that are visible to everyone in the Organization (Azure AD tenant).
+Projects that are visible to everyone in the Organization (Microsoft Entra tenant).
 Everyone in the Organization can discover them and perform limited operations.
 Admins control who gets to fully contribute.
 -->
@@ -131,7 +131,7 @@ An account used to monitor or manage select services, such as build or test serv
 
 ## Service principal
 
-A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. For more information, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals) and [service principal and managed identity support in Azure DevOps](../../integrate/get-started/authentication/service-principal-managed-identity.md).
+A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. For more information, see [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals) and [service principal and managed identity support in Azure DevOps](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 
 ## Secure Sockets Layer (SSL)
 
@@ -153,7 +153,7 @@ A security group that is defined when a team is created and automatically popula
 
 ## Tenant
 
-An Azure Active Directory used to manage access or billing. For more information, see [Change Azure AD tenant](../accounts/change-organization-location.md)
+A Microsoft Entra ID used to manage access or billing. For more information, see [Change Microsoft Entra tenant](../accounts/change-organization-location.md)
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ For Azure DevOps Server, see [Use TFSSecurity to manage groups and permissions f
 
 ## Valid users
 
-Valid users are users that Azure DevOps recognizes as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they're automatically added to one of the valid user groups. For more information, see [Get started with permissions, access, and security groups](about-permissions.md).
+Valid users are users that Azure DevOps recognizes as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Microsoft Entra group, they're automatically added to one of the valid user groups. For more information, see [Get started with permissions, access, and security groups](about-permissions.md).
 
 
 

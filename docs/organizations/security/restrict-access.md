@@ -227,7 +227,7 @@ With this feature enabled, users added to the **Project-Scoped Users** group can
 
 ## Limit people picker to project users and groups
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers support searching all users and groups added to Azure AD, not just those users or groups added to a project. People pickers support the following Azure DevOps functions: 
+For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups added to Microsoft Entra ID, not just those users or groups added to a project. People pickers support the following Azure DevOps functions: 
 
 - Selection of a user identity from a work tracking identity field such as **Assigned To**  
 - Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments

@@ -8,7 +8,7 @@ monikerRange: '> azure-devops-2022'
 
 # Register an agent using device code flow
 
-You can register an agent using device code flow starting with [agent version 3.227.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v3.227.1) by specifying **AAD** as the agent authentication option.
+You can register an agent using device code flow starting with [agent version 3.227.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v3.227.1) by specifying **Microsoft Entra ID** as the agent authentication option.
 
 ## Grant the user access to the agent pool
 
@@ -35,7 +35,7 @@ Before registering an agent using device code flow, you must grant the desired u
 
 ## Register the agent using device code flow
 
-1. Specify **AAD** when prompted for authentication type during agent configuration to use a Service Principal to authenticate during agent registration. You'll receive a prompt similar to the following message: **Please finish AAD device code flow in browser (https://microsoft.com/devicelogin), user code: A12WDTGEFD**
+1. Specify **Microsoft Entra ID** when prompted for authentication type during agent configuration to use a Service Principal to authenticate during agent registration. You'll receive a prompt similar to the following message: **Please finish Microsoft Entra device code flow in browser (https://microsoft.com/devicelogin), user code: A12WDTGEFD**
 
 1. Go to the specified link, enter the user code, and complete the sign-in process there.
 

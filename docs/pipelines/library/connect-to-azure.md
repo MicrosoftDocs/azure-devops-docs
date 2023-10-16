@@ -34,7 +34,7 @@ There are multiple options for connecting to Azure with Azure Resource Manager s
 
 [!INCLUDE [workload-identity-preview](../release/includes/workload-identity-preview.md)]
 
-[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses Open ID Connect to authenticate with Azure Active Directory protected resources without needing to manage secrets. 
+[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect to authenticate with Microsoft Entra protected resources without needing to manage secrets. 
 
 We recommend this approach if:
 
@@ -143,7 +143,7 @@ We recommend this simple approach if:
 
 > [!NOTE]
 > 
-> When you follow this approach, Azure DevOps *connects with Azure Active Directory (Azure AD) and creates an app registration with a secret that's valid for two years*. When the service connection is close to two years old, Azure AD displays this prompt: **A certificate or secret is expiring soon. Create a new one**. In this scenario, you must refresh the service connection.
+> When you follow this approach, Azure DevOps *connects with Microsoft Entra ID and creates an app registration with a secret that's valid for two years*. When the service connection is close to two years old, Microsoft Entra ID displays this prompt: **A certificate or secret is expiring soon. Create a new one**. In this scenario, you must refresh the service connection.
 >
 > To refresh a service connection, in the Azure DevOps portal, edit the connection and select **Verify**. After you save the edit, the service connection is valid for another two years.
 > 
@@ -163,7 +163,7 @@ or a [VM with a managed service identity](#use-msi).
 
 1. If you want to use a predefined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
-   * [Use the portal to create an Azure Active Directory application and a service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+   * [Use the portal to create a Microsoft Entra application and a service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
    * [Use Azure PowerShell to create an Azure service principal with a certificate](/azure/active-directory/develop/howto-create-service-principal-portal#option-1-upload-a-certificate)   
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
@@ -224,8 +224,8 @@ See also: [Troubleshoot Azure Resource Manager service connections](../release/a
 
 You can configure Azure Virtual Machines (VM)-based agents with an
 [Azure Managed Service Identity](/azure/active-directory/managed-service-identity/overview)
-in Azure Active Directory (Azure AD). This lets you use the system assigned identity (Service Principal)
- to grant the Azure VM-based agents access to any Azure resource that supports Azure AD,
+in Microsoft Entra ID. This lets you use the system assigned identity (Service Principal)
+ to grant the Azure VM-based agents access to any Azure resource that supports Microsoft Entra ID,
 such as Key Vault, instead of persisting credentials in Azure DevOps for the connection.
 
 
@@ -258,7 +258,7 @@ such as Key Vault, instead of persisting credentials in Azure DevOps for the con
    * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
 
 1. Ensure that the VM (agent) has the appropriate permissions.
-   For example, if your code needs to call Azure Resource Manager, assign the VM the appropriate role using Role-Based Access Control (RBAC) in Azure AD.
+   For example, if your code needs to call Azure Resource Manager, assign the VM the appropriate role using Role-Based Access Control (RBAC) in Microsoft Entra ID.
    For more details, see [How can I use managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview#how-can-i-use-managed-identities-for-azure-resources) and
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
 
