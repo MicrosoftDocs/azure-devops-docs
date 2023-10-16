@@ -19,7 +19,7 @@ monikerRange: 'azure-devops'
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 Learn about controlling access to your organization via Microsoft Entra ID.
-If your organization was created with a Microsoft account, connect your organization to your [Azure Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis).
+If your organization was created with a Microsoft account, connect your organization to your [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis).
 Sign in to Azure DevOps with the same username and password that you use with your Microsoft services.
 Enforce policies for accessing your team's critical resources and key assets.
 
