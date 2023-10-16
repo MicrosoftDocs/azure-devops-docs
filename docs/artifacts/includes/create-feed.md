@@ -4,7 +4,7 @@ ms.service: azure-devops-artifacts
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 02/14/2022
+ms.date: 10/16/2023
 ---
 
 ::: moniker range=">= azure-devops-2019"
@@ -13,9 +13,7 @@ ms.date: 02/14/2022
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="A screenshot showing the create a feed button.":::
-
-1. Provide a descriptive **Name** for your feed and specify its **Visibility** (determining who can view packages within the feed). Additionally, configure the **Upstream sources** and specify the **Scope** of your feed (project-scoped or organization-scoped).
+1. Provide a descriptive **Name** for your feed and specify its **Visibility** (determining who can view packages within the feed). Specify the **Scope** of your feed and check the **Upstream sources** checkbox if you want to include packages from public sources.
 
     :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
 
@@ -30,20 +28,15 @@ ms.date: 02/14/2022
 
 Azure Artifacts comes pre-installed in TFS 2018. If this is the first time using your feed, you might be asked to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses-in-tfs)
 
-1. Go to **Build & Release** and select **Packages**.
+1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Go to Azure Artifacts TFS](../media/goto-feed-hub.png)
+1. Select **Build & Release**, and then select **Packages**.
 
-1. Select **+ New feed**.
+1. Select **+ New feed** to create a new feed.
 
-   > [!div class="mx-imgBorder"] 
-   > ![New feed button TFS](../media/new-feed-button.png)
+1. Give your feed a **Name**, a **Description**, and choose **who can read** and **who can contribute** to your feed and if you want to **Include external packages**.
 
-1. Give your feed a **Name**, a **Description**, and set up **who can read**, **who can contribute** and if you want to **Include external packages**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![New feed dialog box TFS](../media/new-feed-dialog-azure-tfs.png)
+    :::image type="content" source="../media/new-feed-dialog-azure-tfs.png" alt-text="A screenshot showing how to create a new feed in TFS.":::
 
 1. Select **Create** when you're done.
 
