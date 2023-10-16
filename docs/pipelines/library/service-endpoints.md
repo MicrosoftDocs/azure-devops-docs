@@ -342,11 +342,11 @@ Defines and secures a connection to a Microsoft Azure Service Fabric cluster.
 
 | Parameter | Description |
 | --------- | ----------- |
-| \[authentication type\] | Required. Select **No authentication**, **Azure Active Directory credentials**, or **Certificate based**. |
+| \[authentication type\] | Required. Select **No authentication**, **Microsoft Entra credentials**, or **Certificate based**. |
 | Connection name | Required. The name you will use to refer to this connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Cluster connection | Required. The client connection of the remote cluster to connect to. Prefix with **tcp://**. |
-| Username | Required for Azure Active Directory authentication. The username to use when connecting to the remote cluster. |
-| Password | Required for Azure Active Directory authentication. The password for the specified username. |
+| Username | Required for Microsoft Entra authentication. The username to use when connecting to the remote cluster. |
+| Password | Required for Microsoft Entra authentication. The password for the specified username. |
 | Client certificate | Required for certificate based authentication. The Base64-encoded contents of the client certificate. |
 | Password | The password for the certificate when using certificate based authentication. |
 <p />
@@ -551,7 +551,7 @@ For an Azure RBAC enabled cluster, a ServiceAccount gets created in the chosen n
 For an Azure RBAC disabled cluster, a ServiceAccount gets created in the chosen namespace, but, the created ServiceAccount has cluster-wide privileges (across namespaces).
 
 > [!NOTE]
-> This option lists all the subscriptions the service connection creator has access to *across different Azure tenants*. If you can't see subscriptions from other Azure tenants, check your Azure AD permissions in those tenants.
+> This option lists all the subscriptions the service connection creator has access to *across different Azure tenants*. If you can't see subscriptions from other Azure tenants, check your Microsoft Entra permissions in those tenants.
 
 #### Service account option
 
@@ -665,11 +665,11 @@ Use the following parameters when you define and secure a connection to a Servic
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  Connection name  | Required. The name used to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Cluster Endpoint  | Required. The TCP endpoint of the cluster. |
-| Server Certificate Thumbprint | Required when connection type is **Certificate based** or **Azure Active Directory**. |
+| Server Certificate Thumbprint | Required when connection type is **Certificate based** or **Microsoft Entra ID**. |
 |Client Certificate | Required when connection type is **Certificate based**. |
 |  Password|  Required when connection type is **Certificate based**. The certificate password.|
-|  Username|  Required when connection type is **Azure Active Directory**. The username for authentication.|
-|  Password| Required when connection type is **Azure Active Directory**. The password for the username. |
+|  Username|  Required when connection type is **Microsoft Entra ID**. The username for authentication.|
+|  Password| Required when connection type is **Microsoft Entra ID**. The password for the username. |
 |  Use Windows security| Required when connection type is **Others**.|
 | Cluster SPN | Required when connection type is **Others** and using Windows security. |
 

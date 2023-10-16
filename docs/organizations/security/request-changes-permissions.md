@@ -78,7 +78,7 @@ To request a change or increase in your permission levels, take the following ac
 
 ## Refresh or re-evaluate your permissions  
 
-After your permission levels are changed, you may need to refresh your permissions for Azure DevOps to recognize the changes. This step is recommended when a change is made to your permission level, role level, or if you are added to a new or different Azure DevOps, Azure Active Directory, or Active Directory security group. When you are added to a new or different security group, your inherited permissions may change. 
+After your permission levels are changed, you may need to refresh your permissions for Azure DevOps to recognize the changes. This step is recommended when a change is made to your permission level, role level, or if you are added to a new or different Azure DevOps, Microsoft Entra ID, or Active Directory security group. When you are added to a new or different security group, your inherited permissions may change. 
 
 By refreshing your permissions, you cause Azure DevOps to re-evaluate your permission assignments. Otherwise, your permission assignments won't be refreshed until you sign-off, close your browser, and sign-in again. 
 

@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-git
 Set up permissions to control who can read and update the code in a branch on your Git repo.
 You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](set-git-repository-permissions.md#git-repository).
 
-[!INCLUDE [version-selector-minimize](../../includes/version-selector-minimize.md)]
+[!INCLUDE [version-selector](../../includes/version-selector.md)]
 
 ## Use the branches view to configure security
 

@@ -143,7 +143,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 
 ### Add an Identity field  
 
-Use an Identity-based field to add a field similar to the Assigned To field. Identity-based fields act in the same way as the Assigned To field, providing a search and identity picker function. When your organization manages users with Azure Active Directory or Active Directory, the system synchronizes Identity-based fields with the names defined in these directories. 
+Use an Identity-based field to add a field similar to the Assigned To field. Identity-based fields act in the same way as the Assigned To field, providing a search and identity picker function. When your organization manages users with Microsoft Entra ID or Active Directory, the system synchronizes Identity-based fields with the names defined in these directories. 
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then the field name, Identity type, and optionally a description. 
 

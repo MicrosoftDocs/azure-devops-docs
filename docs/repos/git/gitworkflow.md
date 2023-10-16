@@ -44,7 +44,7 @@ These terms might sound familiar if you've used a version control system like Te
 2. [Commit changes](commits.md) to your branch. People often have multiple commits for a bug fix or feature.
 3. [Push your branch](pushing.md) to the remote repository. 
 4. [Create a pull request](pull-requests.md#create-a-pull-request) so other people can review your changes. To incorporate feedback, you might need to make more commits and push more changes.
-5. [Complete your pull request](complete-pull-requests.md) and resolve any merge conflicts from changes other people made after you created your branch.
+5. [Complete your pull request](complete-pull-requests.md) resolve any [merge conflicts](merging.md#resolve-merge-conflicts-1) and complete your pull request.
 
 ---
 

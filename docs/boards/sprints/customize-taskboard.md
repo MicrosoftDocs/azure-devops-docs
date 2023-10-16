@@ -44,7 +44,7 @@ Sprint Taskboards are similar to Kanban boards in that they show work items as c
 
 To add or remove columns, choose **Column Options**. You customize all other options through the **Settings** dialog for the Taskboard.  
 
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
+[!INCLUDE [temp](../../includes/version-selector.md)] 
 
 :::row:::
    :::column span="1":::
