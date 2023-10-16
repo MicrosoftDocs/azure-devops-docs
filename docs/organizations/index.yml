@@ -46,7 +46,7 @@ landingContent:
             url: ../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json 
       - linkListType: concept
         links:
-          - text: Manage access with Azure Active Directory
+          - text: Manage access with Microsoft Entra ID
             url: ./accounts/access-with-azure-ad.md
       - linkListType: quickstart
         links:
@@ -56,7 +56,7 @@ landingContent:
         links:
           - text: Add users to your organization 
             url: ./accounts/add-organization-users.md?toc=/azure/devops/organizations/toc.json 
-          - text: Connect your organization to Azure Active Directory
+          - text: Connect your organization to Microsoft Entra ID
             url: ./accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/toc.json  
   - title: Add & manage projects
     linkLists:

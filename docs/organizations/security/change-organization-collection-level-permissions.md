@@ -51,7 +51,7 @@ See the following articles for related information:
 ## Prerequisites
 
 - To manage permissions or groups at the organization or collection level, you must be a member of the **Project Collection Administrators** security group. If you created the organization or collection, you are automatically added as a member of this group. To get added to this group, you need to request permissions from a member of the **Project Collection Administrators** group. See [Look up a project collection administrator](look-up-project-collection-administrators.md).
-- If want to add security groups defined in Azure Active Directory or Active Directory, make sure those are first defined. To learn more, see [Add AD/Azure AD users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
+- If want to add security groups defined in Microsoft Entra ID or Active Directory, make sure those are first defined. To learn more, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
 
 
 ::: moniker range="azure-devops"  
@@ -74,7 +74,7 @@ See the following articles for related information:
 
 You can add users who've been added to a project, organization, or collection to the **Project Collection Administrators** group, or any other group at the organization or collection-level. To add a custom security group, first create the group as described in [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md).
 
-Here we show how to add a user to the **Project Collection Administrators** group. The method is similar to adding an Azure Active Directory or Active Directory group. 
+Here we show how to add a user to the **Project Collection Administrators** group. The method is similar to adding a Microsoft Entra ID or Active Directory group. 
 
 ::: moniker range="azure-devops"
 

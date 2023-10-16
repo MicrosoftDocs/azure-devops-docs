@@ -41,7 +41,7 @@ The following tables describe the type of events (or actions) that are available
 | [Group](#group)            | Create groups and modify group memberships.          |
 | [Library](#library)        | Create, modify, delete, and track usage of service connections, variable groups, secure files, and agent pools in Azure Pipelines. |
 | [Licensing](#licensing)    | Assign, modify, and remove licensing. Create, modify, and delete group licensing rules.           |
-| [Organization](#organization)| Create and modify Azure DevOps organization. Link and unlink to Azure Active Directory organizations. |
+| [Organization](#organization)| Create and modify Azure DevOps organization. Link and unlink to Microsoft Entra organizations. |
 | [OrganizationPolicy](#organizationpolicy) | Add, modify, or remove organization policies.           |
 | [Permissions](#permissions)| Modify or remove permissions and access control lists for users and groups throughout an Azure DevOps organization.           |
 | [Pipelines](#pipelines)    | Create, modify, and delete Pipelines in Azure Pipelines. Authorize and unauthorize resource for projects and pipelines. Modify pipeline retention settings. Retain and unretain pipeline runs. |
@@ -170,8 +170,8 @@ The following tables describe the type of events (or actions) that are available
 | ActionId | Category |	Details |
 |----------|----------|---------|
 | Organization.Create	| Create |	Organization {OrganizationName} was created in {PreferredRegion} region |
-| Organization.LinkToAAD |	Modify |	Organization {OrganizationName} was linked to Azure Active Directory tenant {AADTenant} |
-| Organization.UnlinkFromAAD |	Modify |	Organization {OrganizationName} was unlinked from Azure Active Directory tenant |
+| Organization.LinkToAAD |	Modify |	Organization {OrganizationName} was linked to Microsoft Entra tenant {AADTenant} |
+| Organization.UnlinkFromAAD |	Modify |	Organization {OrganizationName} was unlinked from Microsoft Entra tenant |
 | Organization.Update.Delete |	Modify |	Organization {OrganizationName} was deleted |
 | Organization.Update.ForceUpdateOwner |	Modify |	Organization owner was changed from {OldOwnerName} to {NewOwnerName}. Reason specified by actor "{ForceUpdateReason}" |
 | Organization.Update.Owner |	Modify |	Organization owner was changed from {OldOwnerName} to {NewOwnerName} |

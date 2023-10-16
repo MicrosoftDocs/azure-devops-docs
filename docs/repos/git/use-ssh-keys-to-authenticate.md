@@ -439,7 +439,7 @@ Afterwards, instead of using the real URLs, tell Git you want to use these URLs 
 
 **A:** If you receive a notification of an SSH key being registered and you didn't manually upload it to the service, your credentials may have been compromised.
 
-The next step would be to investigate whether or not your password has been compromised. Changing your password is always a good first step to defend against this attack vector. If you're an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.
+The next step would be to investigate whether or not your password has been compromised. Changing your password is always a good first step to defend against this attack vector. If you're a Microsoft Entra user, talk with your administrator to check if your account was used from an unknown source/location.
 
 ### Q: What do I do if I'm still prompted for my password and `GIT_SSH_COMMAND="ssh -v" git fetch` shows `no mutual signature algorithm` or `corresponding algo not in PubkeyAcceptedAlgorithms`?
 

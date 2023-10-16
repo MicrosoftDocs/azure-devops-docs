@@ -1,7 +1,7 @@
 ---
-title: Add AD/Azure AD groups to security groups 
+title: Add Active Directory / Microsoft Entra groups to security groups 
 titleSuffix: Azure DevOps
-description: Manage large groups of users by adding AD/Azure AD groups to built-in security groups 
+description: Manage large groups of users by adding Active Directory / Microsoft Entra groups to built-in security groups 
 ms.subservice: azure-devops-security
 ms.assetid: 
 ms.author: chcomley
@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 ms.date: 03/23/2023
 --- 
 
-# Add AD/Azure AD users or groups to a built-in security group
+# Add Active Directory / Microsoft Entra users or groups to a built-in security group
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -23,7 +23,7 @@ Review [Default permissions and access](permissions-access.md) to gain insight i
 
 Learn how to do the following task:
 > [!div class="checklist"]
-> * Add an Azure AD user or group to a built-in security group
+> * Add a Microsoft Entra user or group to a built-in security group
 
 ::: moniker-end
 
@@ -50,11 +50,13 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ::: moniker range="azure-devops"
 
-## Add Azure AD user or group to a built-in security group 
+<a name='add-azure-ad-user-or-group-to-a-built-in-security-group'></a>
+
+## Add Microsoft Entra user or group to a built-in security group 
 
 > [!IMPORTANT]  
 > If you're adding a user to Azure DevOps for the first time, see [Add users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json).
-> To manage the permissions of an Azure AD group in Azure DevOps, you must first add the Azure AD group to a built-in security group. Once you complete this task, you can then manage your Azure AD group permissions throughout Azure DevOps.
+> To manage the permissions of a Microsoft Entra group in Azure DevOps, you must first add the Microsoft Entra group to a built-in security group. Once you complete this task, you can then manage your Microsoft Entra group permissions throughout Azure DevOps.
 
 > [!NOTE]   
 > To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
