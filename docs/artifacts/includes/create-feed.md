@@ -36,7 +36,7 @@ Azure Artifacts comes pre-installed in TFS 2018. If this is the first time using
 
 1. Give your feed a **Name**, a **Description**, and choose **who can read** and **who can contribute** to your feed and if you want to **Include external packages**.
 
-    :::image type="content" source="../media/new-feed-dialog-azure-tfs.png" alt-text="A screenshot showing how to create a new feed in TFS.":::
+    :::image type="content" source="../media/new-feed-dialog-azure-tfs.png" alt-text="A screenshot showing how to create a new feed in TFS 2018.":::
 
 1. Select **Create** when you're done.
 

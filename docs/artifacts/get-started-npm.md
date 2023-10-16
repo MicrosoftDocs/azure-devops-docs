@@ -29,7 +29,7 @@ If you aren't sure, you can select **Start 30-day free trial**. Every user in yo
 
 1. From any collection in Team Foundation Server, hover over the settings menu and select **Users**. Then select **Package Management**.
 
-    :::image type="content" source="media/users-hub-tfs.png" alt-text="Screenshot showing the user page in TFS":::
+    :::image type="content" source="media/users-hub-tfs.png" alt-text="Screenshot showing the user page in TFS 2018":::
 
 1. Select **Assign**, enter the users you want to assign licenses, and then select **OK**.
 
@@ -62,32 +62,55 @@ We recommend using two .npmrc files. The first one should be located in the same
 
 1. Insert the following snippet into your .npmrc file, the one located in the same directory as your package.json file. Replace the placeholders with the appropriate values.
 
+    - **Organization-scoped feed**:
+    
     ```npmrc
-    registry=https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/npm/registry/ 
+    registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
                             
     always-auth=true
     ```
-     
-### Set up authentication on your development machine
+
+    - **Project-scoped feed**:   
+    
+    ```npmrc
+    registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
+                            
+    always-auth=true
+    ```
+
+## Setup credentials
 
 > [!IMPORTANT]
 > npm supports a single `registry` in your .npmrc file. Multiple registries are possible with [scopes](npm/scopes.md) and [upstream sources](npm/upstream-sources.md).
 
 #### [Windows](#tab/Windows/)
 
-If you're developing on Windows, we recommend using `vsts-npm-auth` to authenticate with Azure Artifacts. Run `npm install -g vsts-npm-auth` to install the package globally and then add a run script to your package.json.
+If you're developing on Windows, we recommend using *vsts-npm-auth* to authenticate with Azure Artifacts. Make sure you have *vsts-npm-auth* installed from **Get the tools** and then run vsts-npm-auth to get an Azure Artifacts token added to your user-level .npmrc file:
 
-```JSON
-"scripts": {
-    "refreshVSToken": "vsts-npm-auth -config .npmrc"
-}
+```Command
+vsts-npm-auth -config .npmrc
 ```
 
 #### [Other](#tab/Other/)
 
-To authenticate with Azure Artifacts, we have to create a personal access token and add it to our .npmrc file.
+If you're developing on a non-Windows platform and need to authenticate with Azure Artifacts, you will need to create a personal access token, encode it in Base64, and then add it to your user-level .npmrc file.
 
-1. Copy the following code snippet to your .npmrc file.
+1. Generate a [personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
+
+1. Encode your newly generated personal access token as follows:
+
+    1. Run the following command in a command prompt window to encode your PAT: 
+        
+        ```Command
+        node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
+        ```
+
+    1. Paste your personal access token, and then press **Enter**.
+ 
+    1. Copy the Base64 encoded personal access token.
+
+
+1. Copy the following code snippet to your user-level .npmrc file and replace the `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` placeholder with your Base64 personal access token: 
 
     - **Organization-scoped feed**:
 
@@ -115,22 +138,6 @@ To authenticate with Azure Artifacts, we have to create a personal access token 
         ; end auth token
         ```
 
-1. Generate a [personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
-
-1. Encode your newly generated personal access token as follows:
-
-    1. Run the following command in an elevated command prompt window.
-        
-        ```Command
-        node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
-        ```
-
-    1. Paste your personal access token, and then press **Enter**.
- 
-    1. Copy the Base64 encoded value.
-
-1. Replace the `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` placeholder in your .npmrc file with your Base64 personal access token. 
-
 ::: moniker-end
 
 * * * 
@@ -139,13 +146,15 @@ To authenticate with Azure Artifacts, we have to create a personal access token 
 
 ## Connect to feed
 
-1. Select **Packages**, and then select **Connect to feed**.
+1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 
-2. Select **npm**.
+1. Select **Build & Release**, and then select **Packages**.
 
-3. Select **Generate npm credentials**. Copy the credentials and add them to your .npmrc file.
+1. Select **Connect to feed**, and then select **npm**.
 
-    :::image type="content" source="./media/tfs2018-connect-to-npm-feed.png" alt-text="Screenshot showing how generate credentials":::
+1. Select **Generate npm credentials**. Copy the credentials and add them to your user-level .npmrc file.
+
+    :::image type="content" source="./media/tfs2018-connect-to-npm-feed.png" alt-text="A screenshot showing how to generate npm credentials in TFS 2018.":::
 
 ::: moniker-end
 
