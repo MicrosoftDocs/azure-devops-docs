@@ -85,13 +85,13 @@ Azure DevOps supports many different authentication mechanisms, including basic 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Workload Identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload Identity federation for Azure Deployments (preview)</a></td>
          <td>Pipelines</td>
-         <td>2023 Q3</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q3</td>
          <td>N/A</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
          <td>General</td>
-         <td>2023 Q3</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q3</td>
          <td>N/A</td>
       </tr>
       <tr>
@@ -273,7 +273,7 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/node-16-agent" data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
          <td>Pipelines</td>
-         <td>2023 Q3</td>
+         <td>2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -514,7 +514,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/improve-traceability" data-raw-source="[Improve traceability of in-progress test executions](/azure/devops/release-notes/roadmap/2022/improve-traceability)">Restore deleted test plans and test suites using REST API</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/improve-traceability" data-raw-source="[Improve traceability of in-progress test executions](/azure/devops/release-notes/roadmap/2022/improve-traceability)">Improve traceability of in-progress test executions</a></td>
         <td>Test Plans</td>
         <td>Future</td>
       </tr>

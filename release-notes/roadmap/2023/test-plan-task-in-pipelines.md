@@ -12,4 +12,4 @@ hide_comments: true
 
 # Test Plan task in Pipelines
 
-TMake Test Plan run part of your Pipeline run. New task will allow you to trigger Test Plan execution (even if it contains only manual test cases) from your Build or Release Pipeline run. This new task will help you to make sure that nothing gets released without proper testing. 
+Make Test Plan run part of your Pipeline run. New task will allow you to trigger Test Plan execution (even if it contains only manual test cases) from your Build or Release Pipeline run. This new task will help you to make sure that nothing gets released without proper testing. 
