@@ -47,15 +47,15 @@
   - name: Remove user accounts from Active Directory
     displayName: delete, revoke, organization, members
     href: remove-users-prohibit-access.md
-  - name: Manage access with Azure Active Directory
+  - name: Manage access with Microsoft Entra ID
     items:
-    - name: Connect organization to Azure AD
+    - name: Connect organization to Microsoft Entra ID
       href: ../accounts/connect-organization-to-azure-ad.md
       displayName: link, attach, security
-    - name: Add or delete users in Azure AD
+    - name: Add or delete users in Microsoft Entra ID
       href: /azure/active-directory/fundamentals/add-users-azure-active-directory?toc=/azure/devops/organizations/security/toc.json  
       displayName: create, remove, account
-    - name: Add AD/Azure AD security groups to built-in security groups
+    - name: Add Active Directory / Microsoft Entra security groups to built-in security groups
       href: add-ad-aad-built-in-security-groups.md
       displayName: update, permission, access, security
     - name: Manage groups
@@ -64,13 +64,13 @@
     - name: Manage group rules
       href: ../accounts/assign-access-levels-by-group-membership.md
       displayName: update, add, assignment
-    - name: Change Azure AD connection
+    - name: Change Microsoft Entra connection
       href: ../accounts/change-azure-ad-connection.md
       displayName: update, add, remove
-    - name: Disconnect from Azure AD
+    - name: Disconnect from Microsoft Entra ID
       href: ../accounts/disconnect-organization-from-azure-ad.md
       displayName: remove, update, detach, unlink
-    - name: Get list of organizations backed by Azure AD
+    - name: Get list of organizations backed by Microsoft Entra ID
       href: ../accounts/get-list-of-organizations-connected-to-azure-active-directory.md
       displayName: record, catalog, inventory, name, owner, URL, ID
 - name: Manage user access (on-premises)
@@ -279,7 +279,7 @@
     href: faq-permissions.yml
   - name: Authenticate & invite with GitHub
     href: faq-github-authentication.yml
-  - name: Access with Azure Active Directory FAQs
+  - name: Access with Microsoft Entra FAQs
     href: ../accounts/faq-azure-access.yml?toc=/azure/devops/organizations/security/toc.json  
   - name: Set up Visual Studio
     href: ../accounts/faq-set-up-vs.yml?toc=/azure/devops/organizations/security/toc.json  

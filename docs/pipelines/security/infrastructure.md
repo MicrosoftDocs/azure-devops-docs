@@ -31,13 +31,13 @@ To eliminate that form of lateral movement and to prevent one project from "pois
 ## Use low-privileged accounts to run agents
 
 It's tempting but dangerous to run the agent under an identity that can directly access Azure DevOps resources.
-This problematic setup is common in organizations that use Azure Active Directory (Azure AD).
-If you run the agent under an identity that's backed by Azure AD, then it can directly access Azure DevOps APIs without using the job's access token.
+This problematic setup is common in organizations that use Microsoft Entra ID.
+If you run the agent under an identity that's backed by Microsoft Entra ID, then it can directly access Azure DevOps APIs without using the job's access token.
 You should instead run the agent as a non-privileged local account such as *Network Service*.
 
 Azure DevOps has a group that's misleadingly named *Project Collection Service Accounts*.
 By inheritance, members of Project Collection Service Accounts are also members of Project Collection Administrators.
-Customers sometimes run their build agents by using an identity that's backed by Azure AD and that's a member of Project Collection Service Accounts.
+Customers sometimes run their build agents by using an identity that's backed by Microsoft Entra ID and that's a member of Project Collection Service Accounts.
 If adversaries run a pipeline on one of these build agents, then they can take over the entire Azure DevOps organization.
 
 We've also seen self-hosted agents run under highly privileged accounts.
