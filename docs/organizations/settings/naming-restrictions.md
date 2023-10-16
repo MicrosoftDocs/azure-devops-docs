@@ -374,7 +374,7 @@ Names you assign to projects that you create must conform to the following restr
 
 With Azure DevOps security groups, you can apply certain rights or permissions to a group of users.
 
-On-premises groups may consist of Active Directory group accounts, Azure DevOps security groups, Windows user accounts, Windows group accounts, or any mixture of these types. For more information, see [Add AD/Azure AD users or groups to a built-in security group](../../organizations/security/add-ad-aad-built-in-security-groups.md).  
+On-premises groups may consist of Active Directory group accounts, Azure DevOps security groups, Windows user accounts, Windows group accounts, or any mixture of these types. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](../../organizations/security/add-ad-aad-built-in-security-groups.md).  
 
 Security groups must conform to the following restrictions.  
 
@@ -447,7 +447,7 @@ Team names must conform to the following restrictions.
 
 ## User account names
 
-User accounts identify people added to a project or project collection. User accounts might correspond to entries within Active Directory, Azure Active Directory, Windows server group.  
+User accounts identify people added to a project or project collection. User accounts might correspond to entries within Active Directory, Microsoft Entra ID, Windows server group.  
 
 User accounts that you add to an organization or collection must conform to the following restrictions. To add user accounts to a  project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
 

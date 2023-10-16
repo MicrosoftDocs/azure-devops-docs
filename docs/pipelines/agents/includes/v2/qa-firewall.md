@@ -28,7 +28,7 @@ If you're running an agent in a secure network behind a firewall, make sure the 
 | `https://*.vstmr.visualstudio.com`                   | Azure DevOps Test Management Services for organizations using the `dev.azure.com` domain|
 | `https://app.vssps.visualstudio.com`                 | For organizations using the `{organization_name}.visualstudio.com` domain              |
 | `https://dev.azure.com`                              | For organizations using the `dev.azure.com` domain                                     |
-| `https://login.microsoftonline.com`                  | Azure Active Directory sign in                                                         |
+| `https://login.microsoftonline.com`                  | Microsoft Entra sign-in                                                         |
 | `https://management.core.windows.net`                | Azure Management API's                                                                 |
 | `https://vstsagentpackage.azureedge.net`             | Agent package                                                                          |
 
