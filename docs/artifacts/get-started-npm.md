@@ -5,7 +5,7 @@ ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.custom: contperf-fy20q4, conterperfq3, contperf-fy21q3
-ms.date: 04/13/2022
+ms.date: 10/16/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -14,17 +14,13 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, you can publish and download npm packages from feeds and public registries such as npmjs.com. This quickstart will guide you through creating your own feed, setting up your project, and publishing and downloading npm packages to and from your Azure Artifacts feed.
+Using Azure Artifacts, you can publish and download npm packages from feeds and public registries like npmjs.com. This quickstart will walk you through the process of creating your feed, configuring your project, and publishing and downloading npm packages to and from your Azure Artifacts feed.
 
 ::: moniker range="tfs-2018"
 
 ## License the Azure Artifacts extension
 
-To use Azure Artifacts in TFS, you must upgrade to Visual Studio Team Foundation Server 2017. If the Azure Artifacts extension has been removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
-
-### Assign licenses in Team Foundation Server
-
-Each organization gets five free licenses. If you need more than five licenses, go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed), and select **Get it free**.
+If the Azure Artifacts extension has been removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Each organization gets five free licenses. If you need more than five licenses, go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed), and select **Get it free**.
 
 If you aren't sure, you can select **Start 30-day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users. If you need additional licenses at this point, you can purchase them from Visual Studio Marketplace. If you have a license for Visual Studio Enterprise, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
@@ -45,7 +41,7 @@ If you aren't sure, you can select **Start 30-day free trial**. Every user in yo
 
 ## Create a feed
 
-A feed is an organizational construct that allows users to store their packages and control who can access them. Azure Artifacts support storing several package types in a single feed such as NuGet, npm, Maven, Python, and Universal packages.
+A feed is an organizational construct that allows users to store their packages and control who can access them. Azure Artifacts support storing several package types in a single feed such as NuGet, npm, Maven, Python, Cargo, and Universal packages.
 
 [!INCLUDE [](includes/create-feed.md)]
 
