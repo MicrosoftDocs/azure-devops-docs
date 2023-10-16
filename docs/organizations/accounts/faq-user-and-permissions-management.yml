@@ -2,14 +2,14 @@
 metadata:
   title: User and permissions management FAQs
   titleSuffix: Azure DevOps
-  ms.custom: seodec18, has-azure-ad-ps-ref
+  ms.custom: seodec18, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
   description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, manage Visual Studio subscriptions, and more.
   ms.subservice: azure-devops-organizations
   ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 07/24/2020
+  ms.date: 10/16/2023
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
@@ -309,36 +309,36 @@ sections:
           
           * Have another Azure DevOps admin, who isn't a Microsoft Entra guest, manage the users in Azure DevOps for you. Members of the Project Collection Administrators group inside Azure DevOps can administer users.
           * Have the Microsoft Entra admin remove your account from the connected directory and re-add it. The admin needs to make you a Microsoft Entra member rather than a guest. See [Can Microsoft Entra B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
-          * Change the **User Type** of the Microsoft Entra guest by using Azure AD PowerShell. We don't advise using the following process, but it works and allows the user to query Microsoft Entra ID from Azure DevOps  thereafter.
+          * Change the **User Type** of the Microsoft Entra guest by using Microsoft Graph PowerShell. We don't advise using the following process, but it works and allows the user to query Microsoft Entra ID from Azure DevOps  thereafter.
           
-          1. [Download and install Azure AD PowerShell module](/powershell/module/azuread/?view=azureadps-2.0&preserve-view=true).
+          1. [Download and install Microsoft Graph PowerShell](/powershell/microsoftgraph/installation).
               ```
-              PS Install-Module -Name AzureAD
+              PS Install-Module -Name Mg.Graph
               ```
           2. Open PowerShell and run the following cmdlets.
           
               a. Connect to Microsoft Entra ID:
           
               ```
-              PS Connect-AzureAD
+              PS Connect-MgGraph
               ```
           
               b. Find the **objectId** of the user:
           
               ```
-              PS Get-AzureADuser -SearchString "YourUPN"
+              PS Get-MgUser -SearchString "YourUPN"
               ```
           
               c. Check the **usertype** attribute for this user to see if they're a guest or member:
           
               ```
-              PS Get-AzureADUser -objectId This is the result of the previous command
+              PS Get-MgUser -objectId This is the result of the previous command
               ```
           
               d. Change the **usertype** from **member** to **guest**:
           
               ```
-              PS Set-AzureADUser -objectId <replacethe object ID for the result of the command to search> -UserType Member
+              PS Set-MgUser -objectId <replace the object ID for the result of the command to search> -UserType Member
               ```
           
           <a name="users-delay"></a>
