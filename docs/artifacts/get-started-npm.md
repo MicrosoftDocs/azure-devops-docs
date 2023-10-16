@@ -45,29 +45,29 @@ A feed is an organizational construct that allows users to store their packages 
 
 [!INCLUDE [](includes/create-feed.md)]
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 ## Set up your .npmrc files
 
 > [!NOTE]
 > `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
 
-We recommend having two .npmrc files. The first one should be placed in the same directory as your package.json file. The second one should be placed in the **$home** directory (Linux/macOS) or **$env.HOME** (Windows) to store your credentials. The npm client then will be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
+We recommend using two .npmrc files. The first one should be located in the same directory as your package.json file. The second should be placed in the *$home* directory (Linux/macOS) or *$env.HOME* (Windows) to securely store your credentials. The npm client then will be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select **Connect to feed**.
 
-    :::image type="content" source="media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed":::
+1. Select **npm** from the left navigation pane. If this is your first time using Azure Artifacts with npm, select **Get the tools** and follow the steps to download Node.js and set up your machine.
 
-1. Select **npm**. If this is your first time using Azure Artifacts, select **Get the tools** and then follow the steps to download Node.js and set up the credential provider. 
+1. Insert the following snippet into your .npmrc file, the one located in the same directory as your package.json file. Replace the placeholders with the appropriate values.
 
-1. Follow the instructions in the **Project setup** to set up your project.
-
-    :::image type="content" source="media/npm-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your project":::
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-       
+    ```npmrc
+    registry=https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/npm/registry/ 
+                            
+    always-auth=true
+    ```
+     
 ### Set up authentication on your development machine
 
 > [!IMPORTANT]
