@@ -582,6 +582,10 @@ GitHub allows three options when one or more Check Runs fail for a PR/commit. Yo
 
 Clicking on the "Rerun" link next to the Check Run name will result in Azure Pipelines retrying the run that generated the Check Run. The resultant run will have the same run number and will use the same version of the source code, configuration, and YAML file as the initial build. Only those jobs that failed in the initial run and any dependent downstream jobs will be run again. Clicking on the "Rerun all failing checks" link will have the same effect. This is the same behavior as clicking "Retry run" in the Azure Pipelines UI. Clicking on "Rerun all checks" will result in a new run, with a new run number and will pick up changes in the configuration or YAML file.
 
+## Limitations
+
+[!INCLUDE [limitations](includes/limitations-gh.md)]
+
 ## FAQ
 
 Problems related to GitHub integration fall into the following categories:
@@ -659,7 +663,7 @@ This means that your repository is already associated with a pipeline in a diffe
 
 [!INCLUDE [qa](includes/qa2-1.md)]
 
-[!INCLUDE [qa](includes/qa3.md)]
+[!INCLUDE [qa](includes/qa3-gh.md)]
 
 [!INCLUDE [qa](includes/qa4.md)]
 

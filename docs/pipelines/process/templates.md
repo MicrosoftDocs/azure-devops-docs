@@ -477,7 +477,11 @@ stages:
 
 ## Reference template paths
 
-Template paths should be relative to the file that does the including. Here's an example nested hierarchy. 
+Template paths can be an absolute path within the repository or relative to the file that does the including.
+
+To use an absolute path, the template path must start with a `/`. All other paths are considered relative.
+
+Here's an example nested hierarchy.
 
 ```
 |
@@ -513,6 +517,14 @@ When `fileB.yml` is your starting point, you can include `fileA.yml` and `fileC.
 steps:
 - template: ../fileA.yml
 - template: dir2/fileC.yml
+```
+
+Alternatively, `fileB.yml` could refer to `fileA.yml` and `fileC.yml` using absolute paths like this.
+
+```yaml
+steps:
+- template: /fileA.yml
+- template: /dir1/dir2/fileC.yml
 ```
 
 ### Use other repositories

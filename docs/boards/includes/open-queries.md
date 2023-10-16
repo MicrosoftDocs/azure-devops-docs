@@ -11,7 +11,7 @@ ms.date: 07/27/2021
 
 ::: moniker range=">= azure-devops-2019"
 
-From your web browser, (1) check that you have selected the right project, (2) choose **Boards>Queries**, and then (3) choose **All**. 
+From your web browser, (1) check that you have selected the right project, (2) choose **Boards > Queries**, and then (3) choose **All**. 
  
 > [!div class="mx-imgBorder"]  
 > ![Open Boards>Queries, vertical nav](../queries/media/view-run-queries/open-queries-vert.png) 
@@ -26,7 +26,7 @@ If it is your first time opening **Queries**, the page opens to **Favorites**. T
 
 ::: moniker range="tfs-2018"  
 
-From your web browser, open **Boards>Queries**. 
+From your web browser, open **Boards > Queries**. 
 
 ![From your web browser, open Boards>Queries](../queries/media/view-run-queries/open-hub-page.png)  
 
@@ -34,9 +34,8 @@ From your web browser, open **Boards>Queries**.
 
 #### [Visual Studio](#tab/visual-studio/)
 
-> [!NOTE]  
-> To open, view, and run queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. 
-
+> [!IMPORTANT]
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 1. From the Team Explorer home page, choose **Work Items**. 
   

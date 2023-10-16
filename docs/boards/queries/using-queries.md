@@ -155,6 +155,9 @@ You can modify the **Values** and [add or remove clauses](#define-a-clause). Or,
  
 #### [Visual Studio](#tab/visual-studio/)
 
+> [!IMPORTANT]
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+
 Select **New Query** from the **Work Items** page. 
 
 :::image type="content" source="media/using-queries/new-query-visual-studio-2019.png" alt-text="Screenshot of Work Items, choose New Query."::: 
@@ -190,6 +193,9 @@ With the **Query across projects** checked, you can add the **Team Project** fie
 
 #### [Visual Studio](#tab/visual-studio/)
 
+> [!IMPORTANT]
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+
 To list work items defined in two or more projects, change the clause for the **Team Project** using the **In** operator, and enter the names of the projects to search in. For example, the following query finds work items defined in the *Fabrikam Fiber* and *Design Agile* projects.  
 
 :::image type="content" source="media/using-queries/visual-studio-query-multiple-projects.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query, specify two projects clause.":::  
@@ -221,6 +227,9 @@ Select **Add new clause** to add another clause at the end of the query, and the
 For example, search for all work items assigned to you by specifying the **Assigned To** field, the equals (**=**) operator, and the **@Me** macro, which represents your user identity.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+> [!IMPORTANT]
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 Select **Click here to add a clause** to add another clause at the end of the query, and then select the **Field**, **Operator**, and **Value** for that clause.  
 
@@ -285,6 +294,9 @@ Define the filter criteria for both parent and child work items. To find linked 
 
 #### [Visual Studio](#tab/visual-studio/)
 
+> [!IMPORTANT]
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+
 Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
 
 :::image type="content" source="media/using-queries/tree-backlog-te.png" alt-text="Screenshot, Query Editor, Tree Query, Team Explorer. ":::
@@ -310,6 +322,9 @@ Filter your first-tier list of work items by choosing one of these options:
 - **Only return items that do not have matching links**: First-tier work items are returned, but only if they don't have links to work items specified by the linked work items filter criteria.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+> [!IMPORTANT]
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 :::image type="content" source="media/using-queries/direct-links-te.png" alt-text="Screenshot, Query Editor, Direct Links Query, Team Explorer.":::
 
@@ -338,9 +353,6 @@ Group query clauses to operate as a single unit separate from the rest of the qu
 Grouped clauses operate as a single unit separate from the rest of the query. Grouping clauses is similar to putting parentheses around a mathematical equation or logic expression. The `And` or `Or` operator for the first clause in the group applies to the whole group.
 
 As the following examples show, the grouped clauses are translated to the corresponding logical expression.
-
-> [!TIP]   
-> To view the WIQL syntax for a query, install the [WIQL query editor extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor) which allows you to see the WIQL version of any Query UI entry. This extension allows you to see just how AND/OR grouped clauses are treated. 
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Query| Grouped clauses|Logical expression|
@@ -378,13 +390,7 @@ If your query results don't return expected results, do the following steps:
 
 ### Ungroup a clause
 
-#### [Browser](#tab/browser/) 
-
 To ungroup a clause, select the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
-
-#### [Visual Studio](#tab/visual-studio/)
-
-To ungroup a clause, select the :::image type="icon" source="../media/icons/ungroup-clause-visual-studio.png" border="false"::: ungroup clauses icon for the grouped clause, Visual Studio. 
 
 ---
 

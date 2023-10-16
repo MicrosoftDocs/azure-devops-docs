@@ -6,11 +6,7 @@
   href: functional-work-item-search.md
 - name: Functional package search
   href: functional-package-search.md
-- name: Search organization settings
-  href: ../../organizations/settings/search-settings.md
 - name: Install and configure search
   href: install-configure-search.md
 - name: Manage search indexing
   href: manage-search.md
-- name: FAQs
-  href: faq-search.yml

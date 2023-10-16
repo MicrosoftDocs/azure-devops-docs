@@ -31,7 +31,7 @@ There are many differences between Travis and Azure Pipelines, including:
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
   If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use.
-* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can [request a free tier](../troubleshooting/troubleshooting.md#check-for-available-parallel-jobs).
+* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can [request a free tier](../troubleshooting/troubleshoot-start.md#check-for-available-parallel-jobs).
 * Basic knowledge of Azure Pipelines. If you're new to Azure Pipelines, see the following to learn more about Azure Pipelines and how it works prior to starting your migration:
     * [Create your first pipeline](../create-first-pipeline.md)
     * [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)

@@ -29,7 +29,7 @@ If you're new to Analytics, we recommend that you review the following articles.
 - [Permissions and prerequisites for working with Analytics](../analytics/analytics-permissions-prerequisites.md) 
 
 
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+[!INCLUDE [temp](../../includes/version-selector.md)]
 
 Analytics supports several widgets and built-in reports. In addition, we've created several sample reports to showcase how to query the data and build the reports of interest using Power BI. 
 
