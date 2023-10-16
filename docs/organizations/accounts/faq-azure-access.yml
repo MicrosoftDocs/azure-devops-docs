@@ -1,14 +1,14 @@
 ### YamlMime:FAQ
 metadata:
   title: Access via Microsoft Entra FAQs
-  ms.custom: seodec18, fasttrack-edit, engagement-fy23, has-azure-ad-ps-ref
+  ms.custom: seodec18, fasttrack-edit, engagement-fy23, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
   description: Learn the answers to frequently asked questions (FAQs), like how to understand Microsoft Entra groups, add users, connect to, disconnect from, or switch your directory.
   ms.subservice: azure-devops-organizations
   ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 09/18/2023
+  ms.date: 10/16/2023
   monikerRange: 'azure-devops'
 title: Access via Microsoft Entra FAQs
 summary: |
@@ -170,15 +170,12 @@ sections:
           1. Sign in to the [Azure portal](https://portal.azure.com) as global administrator for your organization's directory.
           2. Go to the tenant that backs your Azure DevOps organization.
           3. Check the UserType. Confirm that the user is a *Guest*.
-          4. Open an Administrative Windows PowerShell prompt.
-          5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?&preserve-view=true&view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, pictured as follows. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true) page.
-
-             ![Administrator action in Windows PowerShell](media/faq/Administrator-action-Windows-PowerShell.png)
-
-          6. Once the installation completes, execute `Connect-AzureAD`. You're prompted to sign in to the Microsoft Entra ID. Be sure to use an ID that meets the previously mentioned criteria.
-          7. Execute `Get-AzureADuser -SearchString "<display_name>"`, where <display_name> is part of the entire display name for the user, as seen inside the Azure portal). The command returns four columns for the user found - ObjectId, DisplayName, UserPrincipalName, UserType - and the UserType should say *guest*.
-          8. Execute `Set-AzureADUser -ObjectID string -UserType Member`, where `string` is the value of ObjectId returned by the previous command. The user is set to member status.
-          9. Execute `Get-AzureADuser -SearchString "<display_name>"` again to verify the UserType has changed. You can also verify in the Microsoft Entra ID section of the Azure portal.
+          4. Open an Administrative Windows PowerShell prompt to use Microsoft Graph PowerShell.
+          5. Execute `Install-Module -Name Microsoft.Graph -Scope CurrentUser`. The [Microsoft Graph](/powershell/microsoftgraph/installation?view=graph-powershell-1.0) downloads from the PowerShell Gallery.
+          6. Once the installation completes, execute `Connect-MgGraph`. You're prompted to sign in to the Microsoft Entra ID. Be sure to use an ID that meets the previously mentioned criteria.
+          7. Execute `Get-MgUser -SearchString "<display_name>"`, where <display_name> is part of the entire display name for the user, as seen inside the Azure portal). The command returns four columns for the user found - ObjectId, DisplayName, UserPrincipalName, UserType - and the UserType should say *guest*.
+          8. Execute `Set-MgUser -ObjectID string -UserType Member`, where `string` is the value of ObjectId returned by the previous command. The user is set to member status.
+          9. Execute `Get-MgUser -SearchString "<display_name>"` again to verify the UserType has changed. You can also verify in the Microsoft Entra ID section of the Azure portal.
           While not the norm, we've seen it takes several hours, or even days before this change is reflected inside Azure DevOps. If it doesn't fix your Azure DevOps issue immediately, give it some time and keep trying.
           
           <a name="azure-ad-groups"></a>
