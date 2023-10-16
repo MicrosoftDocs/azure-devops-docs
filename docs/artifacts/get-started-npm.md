@@ -52,7 +52,7 @@ A feed is an organizational construct that allows users to store their packages 
 > [!NOTE]
 > `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
 
-We recommend using two .npmrc files. The first one should be located in the same directory as your package.json file. The second should be placed in the *$home* directory (Linux/macOS) or *$env.HOME* (Windows) to securely store your credentials. The npm client then will be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
+We recommend using two .npmrc files. The first one should be located in the same directory as your package.json file. The second should be placed in the *$home* directory (Linux/macOS) or *$env.HOME* (Windows) to securely store your credentials. The npm client will then be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -93,7 +93,7 @@ vsts-npm-auth -config .npmrc
 
 #### [Other](#tab/Other/)
 
-If you're developing on a non-Windows platform and need to authenticate with Azure Artifacts, you will need to create a personal access token, encode it in Base64, and then add it to your user-level .npmrc file.
+If you're developing on a non-Windows platform and need to authenticate with Azure Artifacts, you'll need to create a personal access token, encode it in Base64, and then add it to your user-level .npmrc file.
 
 1. Generate a [personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
 
@@ -160,7 +160,7 @@ If you're developing on a non-Windows platform and need to authenticate with Azu
 
 ## Publish packages
 
-To publish your npm package, run the following command in your project directory
+To publish your npm package, run the following command in your project directory:
 
 ```Command
 npm publish
@@ -171,16 +171,20 @@ npm publish
 
 ## Restore packages
 
-To restore an npm package, run the following command in your project directory
+To restore an npm package, run the following command in your project directory:
 
 ```Command
 npm install --save <package>
 ```
 
-## Next steps
+To restore all your npm packages, run the following command from your project directory:
 
-> [!div class="nextstepaction"]
-> [Publish npm packages (YAML/Classic)](../pipelines/artifacts/npm.md)
-> [Use packages from npmjs.com](./npm/upstream-sources.md)
-> [Use npm scopes](npm/scopes.md)
-> [Use npm audit](npm/npm-audit.md)
+```Command
+npm install
+```
+
+## Related articles
+
+- [Publish npm packages (YAML/Classic)](../pipelines/artifacts/npm.md)
+- [Use packages from npmjs.com](./npm/upstream-sources.md)
+- [Use npm scopes](npm/scopes.md)
