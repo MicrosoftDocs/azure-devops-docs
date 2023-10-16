@@ -29,7 +29,7 @@ Feed views are read-only, which means that users connected to a view can only us
 ## Feed views and upstream sources
 
 Feed views and upstream sources are designed to work together to provide an enterprise-level solution to share and consume packages.
-In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's visibility to **members of your organization**, or **members of your Azure Active Directory**, depending on your scenario. If you choose the latter, all people in your organization will be able to access your feed. In addition, all feeds in your organization and other organizations associated with the same Azure Active Directory tenant will be able to upstream to your feed.
+In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's visibility to **members of your organization**, or **members of your Microsoft Entra ID**, depending on your scenario. If you choose the latter, all people in your organization will be able to access your feed. In addition, all feeds in your organization and other organizations associated with the same Microsoft Entra tenant will be able to upstream to your feed.
 
 > [!NOTE]
 > All feed views in a public project are accessible to everyone on the internet.

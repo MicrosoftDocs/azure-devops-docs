@@ -74,7 +74,7 @@ Also, you can use the context menu in the web portal or Team Explorer.
 
 ## Cross-organization work item linking 
 
-Organizations that use Azure Active Directory can link work items that exist in different projects across organizations. Use the following link types as indicated:
+Organizations that use Microsoft Entra ID can link work items that exist in different projects across organizations. Use the following link types as indicated:
 
 - Use the **Consumes From/Produces For** link types when you want to track dependencies of work items that are defined in different organizations and managed by different teams. 
 - Use the **Remote Related** link type when the work items being linked are defined in different organizations and managed by different teams, but don't have strong inter-dependencies.
