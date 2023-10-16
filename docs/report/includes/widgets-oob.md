@@ -15,14 +15,14 @@ Widgets are annotated as follows:
 - **Release**: Widget derives data for a selected release pipeline  
 - **Team**: Widget is scoped to a single team  
 - **Teams**: Widget is scoped to one or more teams
-- **User**: Widget is scoped to the logged in user account
+- **User**: Widget is scoped to the signed in user account
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 - **Build**: Widget derives data for a selected build pipeline  
 - **Release**: Widget derives data for a selected release pipeline  
 - **Team**: Widget is scoped to a single team  
-- **User**: Widget is scoped to the logged in user account
+- **User**: Widget is scoped to the signed in user account
 ::: moniker-end
 
 

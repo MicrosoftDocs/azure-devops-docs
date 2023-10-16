@@ -1,7 +1,7 @@
 ---
 title: Default permissions quick reference
 titleSuffix: Azure DevOps 
-description: Default permissions and access to common user tasks for Azure DevOps
+description: Default permissions and access to common user tasks for Azure DevOps.
 ms.custom: "permissions, engagement-fy23" 
 ms.subservice: azure-devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
@@ -10,19 +10,19 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 02/02/2023
+ms.date: 10/06/2023
 ---
 
-# Default permissions quick reference for Azure DevOps
+# Default permissions quick reference
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To use Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to most Azure DevOps Services, except for Azure Test Plans. **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. To learn more about access levels, see [About access levels](access-levels.md) and [Stakeholder access quick reference](stakeholder-access.md). 
+To use Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to most Azure DevOps services, except for Azure Test Plans. **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. To learn more about access levels, see [About access levels](access-levels.md) and [Stakeholder access quick reference](stakeholder-access.md). 
 
 
 ## Assign users to a security group 
 
-The most common built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
+The most common built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators—and team administrator role grant permissions to specific features. 
 
 In general, use the following guidance when assigning users to a security group: 
 - Add to the **Contributors** security group full-time workers who contribute to the code base or manage projects.
@@ -56,7 +56,7 @@ You can plan and track work from the web portal **Work** hub, and using Eclipse,
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the **Project Administrators** group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Change project-level permissions](change-project-level-permissions.md). 
 
-Access to the following tasks is controlled by each user's access level or by permission assignments. Members of the Readers, Contributors, or Project Administrators group are assumed to have Basic access or greater.  
+Each user's access level or permission assignment controls access to the following tasks . Members of the Readers, Contributors, or Project Administrators group are assumed to have Basic access or greater.  
 
 ### General work item permissions
 
@@ -231,13 +231,13 @@ Users granted **Visual Studio Enterprise** or **Advanced** access level can defi
 
 ::: moniker range="azure-devops" 
 
-You can manage feeds from the web portal, **Artifacts**. Users granted Stakeholder or Basic access, or higher can access Azure Artifacts features. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
+You can manage feeds from the web portal, **Artifacts**. Users with Stakeholder or Basic access, or higher can access Azure Artifacts features. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops" 
 
-You can manage feeds from the web portal, **Artifacts**. Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md). 
+You can manage feeds from the web portal, **Artifacts**. Users with Basic access or higher can access Azure Artifacts features. Users with Stakeholder access can't. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md). 
 
 ::: moniker-end
 
@@ -245,7 +245,7 @@ You can manage feeds from the web portal, **Artifacts**. Users granted Basic acc
 
 ## Package management
 
-You can manage feeds from the web portal, **Build and release > Packages**. Users granted Basic access or higher can access Package management features. Users granted Stakeholder access have no access. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
+You can manage feeds from the web portal, **Build and release > Packages**. Users with Basic access or higher can access Package management features. Users with Stakeholder access can't. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
 ::: moniker-end
 

@@ -166,7 +166,7 @@ For example:
 A---B---F---G   master
 ```
 
-Pull Requests: ```git diff branch...master``` will produce only F, G commits. 
+Pull Requests: ```git diff branch...master``` will produce only C, D, E commits. 
 Branch Compare: ```git diff branch..master``` will produce C, D, E, F, G commits.
 
 For more details, see [three-dot-and-two-dot-git-diff-comparisons](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests#three-dot-and-two-dot-git-diff-comparisons) and [git diff](https://git-scm.com/docs/git-diff)

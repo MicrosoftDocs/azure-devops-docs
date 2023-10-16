@@ -196,6 +196,10 @@
     {
       "source_path_from_root": "/docs/pipelines/release/integrate-jenkins-pipelines-cicd.md",
       "redirect_url": "/azure/devops/pipelines/release/artifacts"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups.md",
+      "redirect_url": "/azure/devops/pipelines/release/deploy-webdeploy-iis-deploygroups"
     }
   ]
 }

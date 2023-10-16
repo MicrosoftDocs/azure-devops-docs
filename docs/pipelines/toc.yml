@@ -360,14 +360,9 @@
     - name: Stage templates in Azure Pipelines
       href: release/env-templates.md
       displayName: environment, templates, stages
-    - name: Deploy apps to VMs (Classic)
-      items:
-        - name: Windows VMs (Classic)
-          href: apps/cd/deploy-webdeploy-iis-deploygroups.md
-          displayName: windows vm, deployment vm
-        - name: IIS servers (WinRM) (Classic)
-          href: apps/cd/deploy-webdeploy-iis-winrm.md
-          displayName: iis, server, winrm
+    - name: Deploy to a Windows VM
+      href: release/deploy-webdeploy-iis-deploygroups.md
+      displayName: windows vm, deployment vm
 - name: Deploy to Azure
   items:
     - name: Overview
@@ -542,6 +537,16 @@
     href: agents/osx-agent.md
   - name: Self-hosted Windows agents
     href: agents/windows-agent.md
+  - name: Agent registration options
+    items:
+    - name: Self-hosted agent authentication options
+      href: agents/agent-authentication-options.md
+    - name: Personal access token (PAT)
+      href: agents/personal-access-token-agent-registration.md
+    - name: Service Principal (SP)
+      href: agents/service-principal-agent-registration.md
+    - name: Device code flow (Microsoft Entra ID)
+      href: agents/device-code-flow-agent-registration.md
   - name: Self-hosted agents (previous version 2.x)
     items:
     - name: Self-hosted Linux agents (2.x)
@@ -658,6 +663,10 @@
   items:
   - name: Troubleshoot pipeline runs
     href: troubleshooting/troubleshooting.md
+  - name: Troubleshoot pipeline triggers
+    href: troubleshooting/troubleshoot-triggers.md
+  - name: Pipeline queues but never starts
+    href: troubleshooting/troubleshoot-start.md
   - name: Review logs
     href: troubleshooting/review-logs.md
   - name: Debug deployment issues
