@@ -92,13 +92,13 @@ Finally, projects are used to encapsulate the assets of individual software proj
 **Azure DevOps Services**
 
 With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You either authenticate with [Microsoft account](https://www.microsoft.com/account) credentials or with
-[Azure AD](/azure/active-directory/active-directory-whatis) 
-credentials, depending on your organization setup. You can also set up Azure AD to require features such as multi-factor-authentication, IP address restrictions, and so on.
+[Microsoft Entra ID](/azure/active-directory/active-directory-whatis) 
+credentials, depending on your organization setup. You can also set up Microsoft Entra ID to require features such as multi-factor-authentication, IP address restrictions, and so on.
 
-We recommend that you configure your organizations to use Azure AD rather than
+We recommend that you configure your organizations to use Microsoft Entra rather than
 Microsoft accounts. This method provides a better experience in many scenarios and more options for enhanced security.
 
-For more information, see [About accessing Azure DevOps Services with Azure AD](../organizations/accounts/access-with-azure-ad.md).
+For more information, see [About accessing Azure DevOps Services with Microsoft Entra ID](../organizations/accounts/access-with-azure-ad.md).
 
 **Azure DevOps Server**
 
@@ -109,7 +109,7 @@ With Azure DevOps Server, you connect to an intranet server (for example, ```htt
 **Azure DevOps Services**
 
 In Azure DevOps Services, you can use a similar mechanism to
-[provide access to groups of users](../organizations/accounts/manage-azure-active-directory-groups.md). You can add Azure AD groups to Azure DevOps Services groups. If you use Microsoft Accounts instead of Azure AD, you have to
+[provide access to groups of users](../organizations/accounts/manage-azure-active-directory-groups.md). You can add Microsoft Entra groups to Azure DevOps Services groups. If you use Microsoft Accounts instead of Microsoft Entra ID, you have to
 [add users](../organizations/accounts/add-organization-users.md) one at a time.
 
 **Azure DevOps Server**
@@ -129,7 +129,7 @@ to each user in your organization. Azure DevOps Services validates Visual Studio
 To give Basic access or higher to more users, [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization and [pay for more users](../organizations/billing/buy-basic-access-add-users.md).
 Otherwise, all other users get Stakeholder access.
 
-Azure AD groups give access to groups of users. Access levels are automatically assigned at first sign-in. For organizations that are configured to use Microsoft accounts for signing in, you must assign access levels to each user explicitly.
+Microsoft Entra groups give access to groups of users. Access levels are automatically assigned at first sign-in. For organizations that are configured to use Microsoft accounts for signing in, you must assign access levels to each user explicitly.
 
 **Azure DevOps Server**
 

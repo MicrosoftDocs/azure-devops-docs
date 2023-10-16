@@ -15,9 +15,9 @@ ms.date: 11/13/2020
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Git Credential Manager simplifies authentication with your Azure Repos Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps Services web portal. Credential managers support multi-factor authentication through Microsoft account or Azure Active Directory (Azure AD).  Besides supporting multi-factor authentication with Azure Repos, credential managers also support [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
+Git Credential Manager simplifies authentication with your Azure Repos Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps Services web portal. Credential managers support multi-factor authentication through Microsoft account or Microsoft Entra ID.  Besides supporting multi-factor authentication with Azure Repos, credential managers also support [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
 
-Azure Repos provides IDE support for Microsoft account and Azure AD authentication through the following clients:
+Azure Repos provides IDE support for Microsoft account and Microsoft Entra authentication through the following clients:
 
 - [Team Explorer in Visual Studio](../../organizations/projects/connect-to-projects.md)
 - [IntelliJ and Android Studio with the Azure Repos Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in) 
@@ -42,7 +42,7 @@ On Linux, you can install from a [.deb](https://github.com/GitCredentialManager/
 
 ## Using the Git Credential Manager
 
-When you connect to a Git repository from your Git client for the first time, the credential manager prompts for credentials. Provide your Microsoft account or Azure AD credentials. If your account has multi-factor authentication enabled, the credential manager prompts you to go through that process as well.
+When you connect to a Git repository from your Git client for the first time, the credential manager prompts for credentials. Provide your Microsoft account or Microsoft Entra credentials. If your account has multi-factor authentication enabled, the credential manager prompts you to go through that process as well.
 
 ![Git Credential Manager prompting during Git pull](media/gcm_login_prompt.gif)
 

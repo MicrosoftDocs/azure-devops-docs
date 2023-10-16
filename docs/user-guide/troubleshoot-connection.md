@@ -34,7 +34,7 @@ As a first step in resolving connectivity issues with Azure DevOps, complete the
 
 ## Troubleshoot signing in
 
-Two types of identities can sign in: Microsoft accounts and Azure Active Directory (Azure AD) accounts. Depending on your account, you might experience one of the following errors.
+Two types of identities can sign in: Microsoft accounts and Microsoft Entra accounts. Depending on your account, you might experience one of the following errors.
 
 > 401 - Not Authorized
 > 
@@ -52,29 +52,29 @@ If you think you're a member of the organization, but are blocked by this error 
 
 ### Scenario 1
 
-Your work or school Azure AD account doesn't have access, but your personal Microsoft account does.
+Your work or school Microsoft Entra account doesn't have access, but your personal Microsoft account does.
 
 > 401 - Work or school, or Personal account
 > 
 > [!div class="mx-imgBorder"]
 > ![troubleshoot Azure DevOps connection 401 error 2](media/troubleshoot-connection/401_AAD.png)
 
- A highly specific 401 error case. In this case, both a personal Microsoft account and a work or school account (Azure AD) that have the same sign-in address exist. You've signed in with your work or school account, but your personal account is the identity with access to the organization.
+ A highly specific 401 error case. In this case, both a personal Microsoft account and a work or school account (Microsoft Entra ID) that have the same sign-in address exist. You've signed in with your work or school account, but your personal account is the identity with access to the organization.
 
 ### Mitigation
 
-In some cases, you might not know you have two identities with the same sign-in address. The work or school Azure AD account might have been created by an administrator when you were added to Office365 or Azure AD.
+In some cases, you might not know you have two identities with the same sign-in address. The work or school Microsoft Entra account might have been created by an administrator when you were added to Office365 or Microsoft Entra ID.
 
-To sign out of your current work or school Azure AD account, select **Sign in with your personal MSA account**, and then sign in by using your personal Microsoft account. After authentication, you should have access to the organization.
+To sign out of your current work or school Microsoft Entra account, select **Sign in with your personal MSA account**, and then sign in by using your personal Microsoft account. After authentication, you should have access to the organization.
 
-* If you can´t access to the organization, make sure that your Azure Active Directory still exists and that your work or school account is in the Azure AD tenant.
+* If you can´t access to the organization, make sure that your Microsoft Entra ID still exists and that your work or school account is in the Microsoft Entra tenant.
 
 > [!TIP]
-> To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity, your work or school account, or Azure AD account, uses your sign-in address.
+> To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity, your work or school account, or Microsoft Entra account, uses your sign-in address.
 
 ### Scenario 2
 
-Your personal Microsoft account doesn't have access, but your Azure AD account does. This scenario is an opposite version of the 401 error page. In this case, the personal account (Microsoft account identity) doesn't have access to the organization and the work or school account (Azure AD identity) does. The same guidance from Scenario 1 applies, but in reverse.
+Your personal Microsoft account doesn't have access, but your Microsoft Entra account does. This scenario is an opposite version of the 401 error page. In this case, the personal account (Microsoft account identity) doesn't have access to the organization and the work or school account (Microsoft Entra identity) does. The same guidance from Scenario 1 applies, but in reverse.
 
 > 401 - Work or school, or Personal account
 > 
@@ -111,7 +111,7 @@ For additional troubleshooting tips, see [TF31002: Unable to connect to this Azu
 
 ## Switch organizations
 
-When you use two or more organizations that are linked to Azure AD, the sign-out function might not work as expected. For example, you can't switch between different organizations to connect to multiple organizations that are linked to directory tenants.
+When you use two or more organizations that are linked to Microsoft Entra ID, the sign-out function might not work as expected. For example, you can't switch between different organizations to connect to multiple organizations that are linked to directory tenants.
 
 When this problem occurs, a blank screen flashes several times. Then, one of the following error messages appears after you connect to or add a new connection in the **Connect to Azure DevOps Server** dialog box:
 

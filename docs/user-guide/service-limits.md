@@ -72,9 +72,9 @@ In addition to the usual repository limits (see the [Repository Size Limits](../
 
 ## Service connections
 
-There are no per-project limits placed on creating service connections. However, there may be limits which are imposed through Azure Active Directory. For additional information, review the following articles:
+There are no per-project limits placed on creating service connections. However, there may be limits which are imposed through Microsoft Entra ID. For additional information, review the following articles:
 
-- [Azure AD service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions)
+- [Microsoft Entra service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions)
 - [Azure subscription and service limits, quotas, and constraints](/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 
