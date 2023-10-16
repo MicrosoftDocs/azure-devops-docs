@@ -90,7 +90,9 @@ public static void PersonalAccessTokenSoapSample()
 }
 ```
 
-### Azure Active Directory authentication for SOAP services
+<a name='azure-active-directory-authentication-for-soap-services'></a>
+
+### Microsoft Entra authentication for SOAP services
 ```cs
 public static void AADSoapSample()
 {
@@ -103,7 +105,9 @@ public static void AADSoapSample()
 }
 ```
 
-### Visual Studio sign-in prompt (Microsoft Account or Azure Active Directory backed) for SOAP services
+<a name='visual-studio-sign-in-prompt-microsoft-account-or-azure-active-directory-backed-for-soap-services'></a>
+
+### Visual Studio sign-in prompt (Microsoft Account or Microsoft Entra backed) for SOAP services
 ```cs
 public static void MicrosoftAccountSample()
 {
