@@ -57,7 +57,7 @@ You can scale your organization in the following ways:
 - Within a project, you can add teams
 - Add repositories and branches
 - To support continuous integration and deployment, you can add agents, agent pools, and deployment pools
-- To manage a large number of users, you can manage access through Azure Active Directory
+- To manage a large number of users, you can manage access through Microsoft Entra ID
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -123,7 +123,7 @@ To limit access to organization settings, [enable the **Limit user visibility an
 
 ### Limit user visibility within people pickers
 
-Organizations that are connected to Azure Active Directory (Azure AD) can use people pickers. People pickers support searching all users and groups added to Azure AD, not just those users and groups added to your project. People pickers support the following Azure DevOps functions: 
+Organizations that are connected to Microsoft Entra ID can use people pickers. People pickers support searching all users and groups added to Microsoft Entra ID, not just those users and groups added to your project. People pickers support the following Azure DevOps functions: 
 - Select a user identity from a work tracking field, such as "Assigned to" 
 - Select a user or group with *@mention* in a work item discussion or field, pull request discussion, commit comments, or changeset or shelveset comments
 - Select a user or group using *@mention* from a wiki page 

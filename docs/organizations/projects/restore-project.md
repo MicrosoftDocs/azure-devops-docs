@@ -145,4 +145,4 @@ Your project and associated data are restored.
 * [Delete a project](delete-project.md)
 * [Save project data](save-project-data.md)
 * [Create a project](create-project.md)
-* [Disconnect your organization from Azure Active Directory (Azure AD)](../accounts/disconnect-organization-from-azure-ad.md)
+* [Disconnect your organization from Microsoft Entra ID](../accounts/disconnect-organization-from-azure-ad.md)

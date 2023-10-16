@@ -103,7 +103,7 @@ Azure DevOps controls access through these three inter-connected functional area
 Each functional area uses security groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to. Or permissions get based on the object, project, collection, or server level to which you add groups.  
 
 ::: moniker range="azure-devops"
-Security group members can be a combination of users, other groups, and Azure Active Directory groups.  
+Security group members can be a combination of users, other groups, and Microsoft Entra groups.  
 ::: moniker-end
 ::: moniker range="< azure-devops"
 Security group members can be a combination of users, other groups, and Active Directory groups or a Workgroup. 
@@ -116,27 +116,29 @@ You can create [local groups or Active Directory (AD) groups to manage your user
 
 <a id="aad" /> 
 
-### Active Directory and Azure Active Directory security groups
+<a name='active-directory-and-azure-active-directory-security-groups'></a>
 
-You can populate security groups by adding individual users. However, for ease of management, it's easier if you populate these groups by using Azure Active Directory (Azure AD) for Azure DevOps Services and Active Directory (AD) or Windows user groups for Azure DevOps Server.  This method enables you to manage group membership and permissions more efficiently across multiple computers. 
+### Active Directory and Microsoft Entra security groups
+
+You can populate security groups by adding individual users. However, for ease of management, it's easier if you populate these groups by using Microsoft Entra ID for Azure DevOps Services and Active Directory (AD) or Windows user groups for Azure DevOps Server.  This method enables you to manage group membership and permissions more efficiently across multiple computers. 
  
-If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you need to set up Azure AD for use with Azure DevOps to support billing.
+If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up Active Directory or Microsoft Entra ID. Also, if you plan on paying for extra services, you need to set up Microsoft Entra ID for use with Azure DevOps to support billing.
  
 > [!NOTE]
-> Without Azure AD, all Azure DevOps users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../billing/set-up-billing-for-your-organization-vs.md).
+> Without Microsoft Entra ID, all Azure DevOps users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../billing/set-up-billing-for-your-organization-vs.md).
 
 ::: moniker range="azure-devops"
 
-To set up Azure Active Directory for use with Azure DevOps Services, see [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md).
+To set up Microsoft Entra ID for use with Azure DevOps Services, see [Connect your organization to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md).
 
-When your organization is connected to Azure Active Directory, there are many organization policies that you can enable or disable to secure your organization. For more information, see [About security, authentication, and authorization, Security-policies](about-security-identity.md#security-policies). 
+When your organization is connected to Microsoft Entra ID, there are many organization policies that you can enable or disable to secure your organization. For more information, see [About security, authentication, and authorization, Security-policies](about-security-identity.md#security-policies). 
 
-To manage organizational access with Azure AD, refer to the following articles: 
+To manage organizational access with Microsoft Entra ID, refer to the following articles: 
 
-* [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
-* [Troubleshoot access with Azure Active Directory](../accounts/faq-azure-access.yml) 
+* [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory)
+* [Troubleshoot access with Microsoft Entra ID](../accounts/faq-azure-access.yml) 
 
-Azure DevOps registers the changes that get made to an Azure AD group within an hour of that change in Azure AD. Any permissions that are inherited via group membership get refreshed. If you want to refresh your Azure AD membership and inherited permissions in Azure DevOps, sign out and then sign back in, or trigger a [refresh to reevaluate your permission](request-changes-permissions.md#refresh-or-re-evaluate-your-permissions).  
+Azure DevOps registers the changes that get made to a Microsoft Entra group within an hour of that change in Microsoft Entra ID. Any permissions that are inherited via group membership get refreshed. If you want to refresh your Microsoft Entra membership and inherited permissions in Azure DevOps, sign out and then sign back in, or trigger a [refresh to reevaluate your permission](request-changes-permissions.md#refresh-or-re-evaluate-your-permissions).  
 
 ::: moniker-end
 
@@ -194,7 +196,7 @@ By default, users added to an organization can view all organization and project
 
 [!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+To restrict select users, such as Stakeholders, Microsoft Entra guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
 
 [!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 
@@ -334,7 +336,7 @@ A new window opens that shows the inheritance information for that permission.
 ### Best practices for permissions
  
 **Do:**  
-- Use Azure Active Directory, Active Directory, or Windows security groups when you manage lots of users.  
+- Use Microsoft Entra ID, Active Directory, or Windows security groups when you manage lots of users.  
 - When you add a team, consider which permissions you want to assign to team leads, scrum masters, and other team members. Consider who creates and modifies area paths, iteration paths, and queries.
 - When you add many teams, consider creating a **Team Administrators** custom group where you can allocate a subset of the permissions available to **Project Administrators**.  
 - Consider granting the [work item query folders **Contribute**](../../boards/queries/set-query-permissions.md) permission to users or groups that require the ability to create and share work item queries for the project.  
@@ -372,8 +374,8 @@ Feature flags control access to select, new features. Periodically, Azure DevOps
 
 - [Troubleshoot access and permission issues](troubleshoot-permissions.md)
 - [About security, authentication, and authorization](about-security-identity.md)
-- [What is Azure Active Directory?](/azure/active-directory/active-directory-whatis)
-- [Get started with Azure AD](/azure/active-directory/get-started-azure-ad)
+- [What is Microsoft Entra ID?](/azure/active-directory/active-directory-whatis)
+- [Get started with Microsoft Entra ID](/azure/active-directory/get-started-azure-ad)
 - [Permissions and groups reference](permissions.md)  
 - [Security and permission management tools](security-tools-reference.md)  
 - [Add users to an organization](../accounts/add-organization-users.md) 

@@ -63,7 +63,7 @@ landingContent:
         links:
           - text: Add users to your organization 
             url: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json  
-          - text: Connect your organization to Azure Active Directory
+          - text: Connect your organization to Microsoft Entra ID
             url: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/security/toc.json  
           - text: Provide Stakeholders access to edit pipelines
             url: provide-stakeholder-pipeline-access.md 

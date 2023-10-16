@@ -65,7 +65,7 @@ For project collection and project administrators, learn more about security and
       - [Auditing](../audit/azure-devops-auditing.md)  
       - [Authentication](about-security-identity.md#authentication)    
       - [Authorization](about-security-identity.md#authorization)    
-      - [Azure Active Directory](about-permissions.md#aad)  
+      - [Microsoft Entra ID](about-permissions.md#aad)  
       - [Basic access](access-levels.md) 
       - [Collections](../projects/about-projects.md)  
       - [Conditional access](../accounts/change-application-access-policies.md#conditional-access-policies)  
@@ -149,15 +149,15 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-       **Azure Active Directory**  
-       - [Connect organization to Azure AD](../accounts/connect-organization-to-azure-ad.md)  
-       - [Add users to Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json)  
-       - [Add Azure AD security groups to Azure DevOps security groups](add-ad-aad-built-in-security-groups.md)  
-       - [Manage Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)  
+       **Microsoft Entra ID**  
+       - [Connect organization to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md)  
+       - [Add users to Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json)  
+       - [Add Microsoft Entra security groups to Azure DevOps security groups](add-ad-aad-built-in-security-groups.md)  
+       - [Manage Microsoft Entra groups](../accounts/manage-azure-active-directory-groups.md)  
        - [Manage group rules](../accounts/assign-access-levels-by-group-membership.md)  
-       - [Change Azure AD connection](../accounts/change-azure-ad-connection.md)  
-       - [Disconnect from Azure AD](../accounts/disconnect-organization-from-azure-ad.md)  
-       - [List organizations connected to Azure AD](../accounts/get-list-of-organizations-connected-to-azure-active-directory.md)
+       - [Change Microsoft Entra connection](../accounts/change-azure-ad-connection.md)  
+       - [Disconnect from Microsoft Entra ID](../accounts/disconnect-organization-from-azure-ad.md)  
+       - [List organizations connected to Microsoft Entra ID](../accounts/get-list-of-organizations-connected-to-azure-active-directory.md)
        
        
       **Set organization or collection-level permissions**  
@@ -178,7 +178,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [Add external users](../accounts/add-external-user.md)   
        - [Disable Request Access policy](../accounts/disable-request-access-policy.md)  
        - [Restrict admins from inviting new users](../security/restrict-invitations.md)   
-       - [Restrict users from creating new organizations with Azure Active Directory policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
+       - [Restrict users from creating new organizations with Microsoft Entra policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
        - [Enable Conditional Access or Multi-factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
        
        
@@ -321,4 +321,3 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
 
 
  
-
