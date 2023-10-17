@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 10/17/2023
 ---
 
-# Fix reodering and nesting issues on your backlog 
+# Fix backlog reorder, nest, and display issues
 
 <a id="display-hierarchy">  </a>
 
