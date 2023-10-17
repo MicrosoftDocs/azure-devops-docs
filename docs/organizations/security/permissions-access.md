@@ -17,24 +17,24 @@ ms.date: 10/06/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To use Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to most Azure DevOps services, except for Azure Test Plans. **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. To learn more about access levels, see [About access levels](access-levels.md) and [Stakeholder access quick reference](stakeholder-access.md). 
+To use Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to most Azure DevOps services, except for Azure Test Plans. **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. To learn more about access levels, see [About access levels](access-levels.md) and [Stakeholder access quick reference](stakeholder-access.md).
 
+## Assign users to a security group
 
-## Assign users to a security group 
+The most common built-in security groups—**Readers**, **Contributors**, and **Project Administrators**—and team administrator role grant permissions to specific features.
 
-The most common built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators—and team administrator role grant permissions to specific features. 
+In general, use the following guidance when assigning users to a security group:
 
-In general, use the following guidance when assigning users to a security group: 
 - Add to the **Contributors** security group full-time workers who contribute to the code base or manage projects.
-- Add to the **Project Administrators** security group users tasked with managing project resources. I 
+- Add to the **Project Administrators** security group users tasked with managing project resources.
 - Add to the **Project Collection Administrators** security group users tasked with managing organization or collection resources.  
 
-To learn more about administrative tasks see [About user, team, project, and organization-level settings](../settings/about-settings.md).  For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about access levels, see [About access levels](access-levels.md). 
+To learn more about administrative tasks see [About user, team, project, and organization-level settings](../settings/about-settings.md). For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about access levels, see [About access levels](access-levels.md).
 
-In the tables provided in this article, a ✔️ (checkmark) indicates that the corresponding access level or security group has access to a feature by default. 
- 
+In the tables provided in this article, a ✔️ (checkmark) indicates that the corresponding access level or security group has access to a feature by default.
+
 To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](request-changes-permissions.md), you can do so.
- 
+
 <a id="agile-tools-and-work-tracking" />
 
 ::: moniker range=">= azure-devops-2019"
@@ -44,29 +44,28 @@ To assign or change an access level, see [Add users and assign licenses](../acco
 You can plan and track work from the web portal **Boards** hub, and using Visual Studio, Excel, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). To change permissions, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md). In addition to the permissions set at the [project level via the built-in groups](change-project-level-permissions.md), you can set permissions for the following objects: [area and iteration paths](set-permissions-access-work-tracking.md) and individual [queries and query folders](../../boards/queries/set-query-permissions.md).  
 
 ::: moniker-end
- 
+
 ::: moniker range="tfs-2018"
 
 ## Work tracking
 
-You can plan and track work from the web portal **Work** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients. 
+You can plan and track work from the web portal **Work** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients.
 
 ::: moniker-end
 
-> [!NOTE]   
-> Team administrators can configure settings for their team's tools. Organization owners and members of the **Project Administrators** group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Change project-level permissions](change-project-level-permissions.md). 
+> [!NOTE]
+> Team administrators can configure settings for their team's tools. Organization owners and members of the **Project Administrators** group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Change project-level permissions](change-project-level-permissions.md).
 
-Each user's access level or permission assignment controls access to the following tasks . Members of the Readers, Contributors, or Project Administrators group are assumed to have Basic access or greater.  
+Each user's access level or permission assignment controls access to the following tasks. Members of the Readers, Contributors, or Project Administrators group are assumed to have Basic access or greater.  
 
 ### General work item permissions
 
-You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md). 
+You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md).
 
 ::: moniker range="tfs-2018"  
 > [!NOTE]  
-> There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).   
+> There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
 ::: moniker-end  
-
 
 [!INCLUDE [temp](includes/boards-work-items.md)]
 
@@ -82,27 +81,23 @@ You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanb
 
 [!INCLUDE [temp](includes/boards-backlogs.md)]
 
-
 ### Sprints  
 
-You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/sprints/assign-work-sprint.md) set of tools provide filtered views of work items that a team has assigned to specific iteration paths or sprints. 
+You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/sprints/assign-work-sprint.md) set of tools provide filtered views of work items that a team has assigned to specific iteration paths or sprints.
 
 [!INCLUDE [temp](includes/boards-sprints.md)]
 
-### Queries 
+### Queries
 
 [**Queries**](../../boards/queries/view-run-query.md) are filtered lists of work items based on criteria that you define by using a query editor. [Adhoc searches](../../boards/queries/search-box-queries.md) are powered by a semantic search engine.
 
 [!INCLUDE [temp](includes/boards-queries.md)]
-
 
 ### Delivery plans  
 
 [Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team.  
 
 [!INCLUDE [temp](includes/boards-plans.md)]
-
-
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -118,9 +113,9 @@ Stakeholders for private projects have no access to **Repos**. Stakeholders for 
 
 ::: moniker-end
 
-::: moniker range="azure-devops" 
+::: moniker range="azure-devops"
 
-### Advanced Security 
+### Advanced Security
 
 You can use [Advanced Security](../../repos/security/configure-github-advanced-security-features.md) to identify security vulnerabilities in your repository.
 
@@ -130,10 +125,9 @@ You can use [Advanced Security](../../repos/security/configure-github-advanced-s
 
 [!INCLUDE [temp](includes/advanced-security.md)]
 
-
 ## Code: Source control
 
-You can connect to your code from the web portal **Code** hub, or using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, or Visual Studio Code. Stakeholders for private projects have no access to **Code**. 
+You can connect to your code from the web portal **Code** hub, or using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, or Visual Studio Code. Stakeholders for private projects have no access to **Code**.
 
 ::: moniker-end
 
@@ -143,16 +137,11 @@ You can use [Git repositories](../../repos/git/index.yml) to host and collaborat
 
 [!INCLUDE [temp](includes/code-git.md)]
 
-
-
 ### TFVC
 
-
-
-[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml) provides a centralized version control system to manage your source control. 
+[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml) provides a centralized version control system to manage your source control.
 
 [!INCLUDE [temp](includes/code-tfvc.md)]
-
 
 <a id="pipelines" />
 
@@ -176,7 +165,7 @@ You can define and manage your builds and releases from the web portal **Pipelin
 
 [!INCLUDE [temp](includes/pipelines-build.md)]
 
-### Release 
+### Release
 
 [!INCLUDE [temp](includes/pipelines-release.md)]
 
@@ -186,58 +175,57 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 [!INCLUDE [temp](includes/task-groups.md)]
 
-::: moniker-end   
+::: moniker-end
 
 ::: moniker range="tfs-2018"
 
 ## Build and Release
 
-You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md). From the web portal, you can set permissions for all or individual builds and releases. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
+You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md). From the web portal, you can set permissions for all or individual builds and releases. See [Set build and release permissions](../../pipelines/policies/set-permissions.md).
 
-
-### Build  
+### Build
 
 [!INCLUDE [temp](includes/build.md)]
 
-### Release  
+### Release
 
 [!INCLUDE [temp](includes/release.md)]
 
-::: moniker-end    
-
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
 ## Azure Test Plans
 
-Users granted **Basic + Test Plans** or **Visual Studio Enterprise** access level can define and manage manual tests from the web portal. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set several [test permissions at the project level](change-project-level-permissions.md) from **Project Settings>Permissions**. 
+Users granted **Basic + Test Plans** or **Visual Studio Enterprise** access level can define and manage manual tests from the web portal. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set several [test permissions at the project level](change-project-level-permissions.md) from **Project Settings>Permissions**.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018" 
+::: moniker range="tfs-2018"
 
 ## Test
 
-Users granted **Visual Studio Enterprise** or **Advanced** access level can define and manage manual tests from the web portal. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set  several [test permissions at the project level](change-project-level-permissions.md)  from **Project Settings>Permissions**. 
+Users granted **Visual Studio Enterprise** or **Advanced** access level can define and manage manual tests from the web portal. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set  several [test permissions at the project level](change-project-level-permissions.md)  from **Project Settings>Permissions**.
 
 ::: moniker-end
 
 [!INCLUDE [temp](includes/test.md)]
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range=">= azure-devops-2019"
 
 ## Azure Artifacts
+
 ::: moniker-end
 
-::: moniker range="azure-devops" 
+::: moniker range="azure-devops"
 
 You can manage feeds from the web portal, **Artifacts**. Users with Stakeholder or Basic access, or higher can access Azure Artifacts features. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops" 
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-You can manage feeds from the web portal, **Artifacts**. Users with Basic access or higher can access Azure Artifacts features. Users with Stakeholder access can't. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md). 
+You can manage feeds from the web portal, **Artifacts**. Users with Basic access or higher can access Azure Artifacts features. Users with Stakeholder access can't. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
 ::: moniker-end
 
@@ -251,8 +239,7 @@ You can manage feeds from the web portal, **Build and release > Packages**. User
 
 [!INCLUDE [temp](includes/package-feeds.md)]
 
-
-## Notifications, alerts, and team collaboration tools 
+## Notifications, alerts, and team collaboration tools
 
 To manage notifications, see [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md) and [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
 
@@ -261,12 +248,11 @@ To manage notifications, see [Manage personal notifications](../../organizations
 
 [!INCLUDE [temp](includes/collaborate.md)]
 
-
 ## Dashboards, charts, reports, and widgets
 
 ::: moniker range="azure-devops"
 
-You can define and manage team and project dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You can set [individual dashboard permissions](../../report/dashboards/dashboard-permissions.md) to grant or restrict the ability to edit or delete dashboards. 
+You can define and manage team and project dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You can set [individual dashboard permissions](../../report/dashboards/dashboard-permissions.md) to grant or restrict the ability to edit or delete dashboards.
 
 Users granted Stakeholder access to private projects can't view or create query charts. Stakeholder access to public projects can view and create query charts.
 
@@ -274,17 +260,17 @@ Users granted Stakeholder access to private projects can't view or create query 
 
 ::: moniker range="< azure-devops"
 
-You can define and manage team dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
+You can define and manage team dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page.
 
 ::: moniker-end
 
 [!INCLUDE [temp](includes/report.md)]
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range=">= azure-devops-2019"
 
 ## Power BI Integration and Analytics views
 
-From the web portal **Analytics views**, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. To learn more, see [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md). 
+From the web portal **Analytics views**, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. To learn more, see [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md).
 
 You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. Users with **Stakeholder** access have no access to view or edit Analytics views.
 
@@ -292,13 +278,11 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 
 ::: moniker-end
 
-
 ## Related articles
 
 - [Add users to a project or team](../../organizations/security/add-users-team-project.md)  
 - [Security and permission management tools](security-tools-reference.md)  
 - [Permissions and groups reference](permissions.md)  
 - [About access levels](access-levels.md)
-- [Web portal navigation](../../project/navigation/index.md) 
+- [Web portal navigation](../../project/navigation/index.md)
 - [Troubleshoot permissions](troubleshoot-permissions.md)
-
