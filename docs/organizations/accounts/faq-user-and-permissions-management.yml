@@ -314,32 +314,32 @@ sections:
           
           1. [Download and install Microsoft Graph PowerShell](/powershell/microsoftgraph/installation).
               ```
-              PS Install-Module -Name Mg.Graph
+              PS Install-Module -Name Microsoft Graph
               ```
           2. Open PowerShell and run the following cmdlets.
           
               a. Connect to Microsoft Entra ID:
           
               ```
-              PS Connect-MgGraph
+              PS Connect-MgGraph -Scopes 'User.Read.All'
               ```
           
               b. Find the **objectId** of the user:
           
               ```
-              PS Get-MgUser -SearchString "YourUPN"
+              PS Get-MgUser -Filter "UserPrincipalName eq '<YourUPN>'"
               ```
           
               c. Check the **usertype** attribute for this user to see if they're a guest or member:
           
               ```
-              PS Get-MgUser -objectId This is the result of the previous command
+              PS Get-MgUser -UserId <Id> -Property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType 
               ```
           
               d. Change the **usertype** from **member** to **guest**:
           
               ```
-              PS Set-MgUser -objectId <replace the object ID for the result of the command to search> -UserType Member
+              PS Update-MgUser -UserID <replace the  ID for the result of the command to search> -UserType Member
               ```
           
           <a name="users-delay"></a>
