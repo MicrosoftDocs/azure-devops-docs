@@ -13,8 +13,8 @@ Azure Pipelines provides a choice of several authentication options you can use 
 | Agent registration method | Azure DevOps Services | Azure DevOps Server & TFS |
 |--------------------------|-----------------------|---------------------------|
 | [Personal access token (PAT)](#personal-access-token-pat) | Supported | Supported when server is configured with HTTPS |
-| [Service Principal (SP)](#service-principal-sp)      | Supported | Currently not supported |
-| [Device code flow (Microsoft Entra ID)](#device-code-flow-aad)     | Supported | Currently not supported |
+| [Service Principal](#service-principal)      | Supported | Currently not supported |
+| [Device code flow](#device-code-flow)     | Supported | Currently not supported |
 | [Integrated](#integrated) | Not supported | Windows agents only |
 | [Negotiate](#negotiate) | Not supported | Windows agents only |
 | [Alternate (ALT)](#alternate-alt) | Not supported | Supported when server is configured with HTTPS |
@@ -25,15 +25,15 @@ Specify **PAT** for authentication type during agent configuration to use a pers
 
 For more information, see [Register an agent using a personal access token (PAT)](./personal-access-token-agent-registration.md)
 
-## Service Principal (SP)
+## Service Principal
 
 Specify **SP** for authentication type during agent configuration to use a service principal to authenticate during agent registration.
 
 For more information, see [Register an agent using a Service Principal](./service-principal-agent-registration.md).
 
-## Device code flow (Microsoft Entra ID)
+## Device code flow 
 
-Specify **Microsoft Entra ID** for authentication type during agent configuration to use device code flow to authenticate during agent registration.
+Specify `AAD` for authentication type during agent configuration to use device code flow to authenticate during agent registration.
 
 For more information, see [Register an agent using device code flow](./device-code-flow-agent-registration.md).
 
