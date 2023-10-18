@@ -148,7 +148,7 @@ sections:
           Select from the following two options:
           
           * Have a Microsoft Entra administrator remove your account from the directory and re-add it, making you a *member*, rather than a *guest*. For more information, see [Can Microsoft Entra B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
-          * [Change the UserType of the Microsoft Entra guest using Azure AD PowerShell](#convert-azure-ad-usertype-from-guest-to-member-using-azure-ad-powershell). [We don't advise](/azure/active-directory/external-identities/user-properties#convert-usertype) using this advanced process, but it allows the user to query Microsoft Entra ID from the Azure DevOps organization.
+          * [Change the UserType of the Microsoft Entra guest using Azure AD PowerShell](#convert-microsoft-entra-ad-usertype-from-guest-to-member-using-azure-ad-powershell). [We don't advise](/azure/active-directory/external-identities/user-properties#convert-usertype) using this advanced process, but it allows the user to query Microsoft Entra ID from the Azure DevOps organization.
 
           #### Convert the UserType from guest to member using Azure AD PowerShell
 
