@@ -245,16 +245,16 @@ Open PowerShell in elevated mode and replace 'someone@somecompany.com' in the fo
 
 ```PowerShell
 # Install the Microsoft Graph PowerShell module - ensuring to select Yes to All
-Install-Module MgGraph 
+Install-Module Microsoft Graph 
 
 # Install the MSOnline PowerShell module -  ensuring to select Yes to All
 Install-Module MSOnline
 
 # Connect to Microsoft Entra and use your Microsoft Entra ID credentials (someone@somecompany.com) to login when the pop-up appears
-Connect-MgGraph 
+Connect-MgGraph  -Scopes 'User.Read.All'
 
 # Try to retrieve information on a user from your Microsoft Entra
-Get-MgUser -UserPrincipalName someone@somecompany.com
+Get-MgUser -Filter "UserPrincipalName eq 'someone@somecompany.com'"
 ```
 
 If the steps fail or you can’t find the user, check the connection between the **prepare** machine and Microsoft Entra ID. Run a network trace with **prepare** to see if the network blocks calls. If not, contact Azure support. Check the log file for the user information.
