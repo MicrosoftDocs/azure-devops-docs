@@ -31,46 +31,13 @@ As some new features get introduced, you can turn them on or off. You can try th
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
-
-The following table shows the preview features you can turn on or off based on your role: user or team member, or for the organization. Only Project Collection Administrators can manage organization-level features. 
-
-|**Preview features**|**Per user**|**Per organization**|
-|--------------------|--------------|-----------------|
-|[Pull Request Summary - Load of large files](#pull-request-summary)  | ✔️ |   |   
-|[Experimental themes](#experimental-themes) | ✔️ | ✔️ | 
-|[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)|   | ✔️ |    
-|New Artifacts (Feeds) Experience (accessibility updates) | ✔️ | ✔️ |   
-|[New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)| ✔️ | ✔️ |    
-|[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ | ✔️ |
-| New Settings Search in the organization settings panel| ✔️ |✔️   |    
-|[New workflow identity authentication option](../../pipelines/library/connect-to-azure.md)| ✔️ | ✔️ |    
-|[New Teams page](../../organizations/settings/add-teams.md)| ✔️ | ✔️ |    
-|New Wiki experience| ✔️ | ✔️ |     
-|[Organization Permissions Settings Page v2](../../organizations/security/change-organization-collection-level-permissions.md)| ✔️ | ✔️ |     
-|[Project Permissions Settings page](../../organizations/security/change-project-level-permissions.md)| ✔️ | ✔️ |     
-|[Task Insights for Failed Pipeline Runs](../../pipelines/troubleshooting/troubleshooting.md#task-insights-for-failed-pipeline-runs)| ✔️ | ✔️ | 
-|[Workload Identity federation for Azure Resource Manager service connections](../../pipelines/library/connect-to-azure.md)|    | ✔️  |     
-|[YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)| ✔️ | ✔️ |   
-
-::: moniker-end::: moniker range="azure-devops-2020"
-
-The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. These preview features are only available to manage for Azure DevOps Server 2020 RTW. 
-
-|**Feature**|**User**|**Project** | **Collection**|
-|--------------------|--------------|-----------------||-----------------|
-|[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ |   |  ✔️ |     
-|[Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)|   | ✔️ |  ✔️ |   
-
-::: moniker-end
- 
-## Manage preview features
+## Turn on or off preview features
 
 ::: moniker range="azure-devops"
 
-Slide the toggle to **on** or **off** to change the feature status.
+Select either your organization or personal settings from the dropdown menu and slide the toggle to **on** or **off** to change the feature status.
 
-:::image type="content" source="media/preview-features/preview-features-user.png" alt-text="Screenshot of Preview features options for yourself.":::
+:::image type="content" source="media/preview-features/manage-preview-features.png" alt-text="Screenshot of Preview features options and dropdown menu for either personal or organizational settings.":::
 
 Enabling a feature at the organization level activates it for all users. They can still turn it off individually. Disabling a feature at the organization level doesn’t affect user settings. Users can change feature status on their own. For more information, see [Set user preferences](../../organizations/settings/set-your-preferences.md).
 
@@ -105,6 +72,41 @@ When you turn on a feature at the project or collection-level, you turn it on fo
 
 ::: moniker-end
 
+## Preview features
+
+::: moniker range="azure-devops"
+
+The following table shows the preview features you can turn on or off based on your role: user or team member, or for the organization. Only Project Collection Administrators can manage organization-level features. 
+
+|**Preview features**|**Per user**|**Per organization**|
+|--------------------|--------------|-----------------|
+|[Pull Request Summary - Load of large files](#pull-request-summary)  | ✔️ |   |   
+|[Experimental themes](#experimental-themes) | ✔️ | ✔️ | 
+|[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)|   | ✔️ |    
+|New Artifacts (Feeds) Experience (accessibility updates) | ✔️ | ✔️ |   
+|[New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)| ✔️ | ✔️ |    
+|[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ | ✔️ |
+| New Settings Search in the organization settings panel| ✔️ |✔️   |    
+|[New workflow identity authentication option](../../pipelines/library/connect-to-azure.md)| ✔️ | ✔️ |    
+|[New Teams page](../../organizations/settings/add-teams.md)| ✔️ | ✔️ |    
+|New Wiki experience| ✔️ | ✔️ |     
+|[Organization Permissions Settings Page v2](../../organizations/security/change-organization-collection-level-permissions.md)| ✔️ | ✔️ |     
+|[Project Permissions Settings page](../../organizations/security/change-project-level-permissions.md)| ✔️ | ✔️ |     
+|[Task Insights for Failed Pipeline Runs](../../pipelines/troubleshooting/troubleshooting.md#task-insights-for-failed-pipeline-runs)| ✔️ | ✔️ | 
+|[Workload Identity federation for Azure Resource Manager service connections](../../pipelines/library/connect-to-azure.md)|    | ✔️  |     
+|[YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)| ✔️ | ✔️ |   
+
+::: moniker-end::: moniker range="azure-devops-2020"
+
+The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. These preview features are only available to manage for Azure DevOps Server 2020 RTW. 
+
+|**Feature**|**User**|**Project** | **Collection**|
+|--------------------|--------------|-----------------||-----------------|
+|[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ |   |  ✔️ |     
+|[Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)|   | ✔️ |  ✔️ |   
+
+::: moniker-end
+
 ::: moniker range="azure-devops"
 
 <a id="pull-request-summary">  </a>
@@ -125,9 +127,9 @@ With **Experimental themes** on, you can select from many other themes.
 
 :::image type="content" source="media/preview-features/choose-your-theme.png" alt-text="Screenshot of Choose your theme dialog.":::
 
-## Released features for Azure DevOps
+## GA features for Azure DevOps
 
-The following features are active for Azure DevOps.
+The following features are generally available for Azure DevOps.
 
 ### General
 
