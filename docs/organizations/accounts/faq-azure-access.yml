@@ -171,11 +171,11 @@ sections:
           2. Go to the tenant that backs your Azure DevOps organization.
           3. Check the UserType. Confirm that the user is a *Guest*.
           4. Open an Administrative Windows PowerShell prompt to use Microsoft Graph PowerShell.
-          5. Execute `Install-Module -Name Microsoft.Graph -Scope CurrentUser`. The [Microsoft Graph](/powershell/microsoftgraph/installation?view=graph-powershell-1.0) downloads from the PowerShell Gallery.
-          6. Once the installation completes, execute `Connect-MgGraph`. You're prompted to sign in to the Microsoft Entra ID. Be sure to use an ID that meets the previously mentioned criteria.
-          7. Execute `Get-MgUser -SearchString "<display_name>"`, where <display_name> is part of the entire display name for the user, as seen inside the Azure portal). The command returns four columns for the user found - ObjectId, DisplayName, UserPrincipalName, UserType - and the UserType should say *guest*.
-          8. Execute `Set-MgUser -ObjectID string -UserType Member`, where `string` is the value of ObjectId returned by the previous command. The user is set to member status.
-          9. Execute `Get-MgUser -SearchString "<display_name>"` again to verify the UserType has changed. You can also verify in the Microsoft Entra ID section of the Azure portal.
+          5. Execute `Install-Module -Name Microsoft.Graph -Scope CurrentUser`. The [Microsoft Graph](/powershell/microsoftgraph/installation) downloads from the PowerShell Gallery.
+          6. Once the installation completes, execute `Connect-MgGraph -Scopes "User.ReadWrite.All"`. You'll prompted to sign in to the Microsoft Entra ID. Be sure to use an ID that meets the previously mentioned criteria and consent to the permissions.
+          7. Execute `Get-MgUser -Filter "DisplayName eq '<display name'" -property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType`, where <display_name> is the display name for the user, as seen inside the Azure portal.  We want to change the userType to `Member`.
+          8. Execute `Update-MgUser -UserId string -UserType Member`, where `string` is the value of Id returned by the previous command. The user is set to member status.
+          9. Execute `Get-MgUser -Filter "DisplayName eq '<display name'" -property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType` again to verify the UserType has changed. You can also verify in the Microsoft Entra ID section of the Azure portal.
           While not the norm, we've seen it takes several hours, or even days before this change is reflected inside Azure DevOps. If it doesn't fix your Azure DevOps issue immediately, give it some time and keep trying.
           
           <a name="azure-ad-groups"></a>
