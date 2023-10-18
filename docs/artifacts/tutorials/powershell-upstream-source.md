@@ -39,3 +39,31 @@ If the PowerShell Gallery upstream source is not available in your feed by defau
     :::image type="content" source="media/add-powershell-gallery-upstream.png" alt-text="A screenshot showing how to add the PowerShell Gallery as an upstream source.":::
 
 1. Select **Save** in the upper right corner to save your changes. Select **Save** again if prompted to confirm your choices.
+
+## Connect to feed
+
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** permissions.
+
+1. Run the following commands in a PowerShell prompt window, replacing the placeholders with the appropriate information:
+
+    ```powershell
+    $patToken = "<YOUR_PERSONAL_ACCESS_TOKEN>" | ConvertTo-SecureString -AsPlainText -Force
+    ```
+
+    ```powershell
+    $myCredentialsObject = New-Object System.Management.Automation.PSCredential("<USER_NAME>", $patToken)
+    ```
+
+1. Run the following command to register your feed as a PSRepository. Replace the placeholders with the appropriate values:
+
+    - Project-scoped feed:
+
+        ```powershell
+        Register-PSRepository -Name "PSGalleryUpstream" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $myCredentialsObject
+        ```
+
+    - Org-scoped feed:
+
+        ```powershell
+        Register-PSRepository -Name "PSGalleryUpstream" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $myCredentialsObject
+        ```
