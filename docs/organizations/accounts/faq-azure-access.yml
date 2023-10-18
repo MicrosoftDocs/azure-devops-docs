@@ -148,7 +148,7 @@ sections:
           Select from the following two options:
           
           * Have a Microsoft Entra administrator remove your account from the directory and re-add it, making you a *member*, rather than a *guest*. For more information, see [Can Microsoft Entra B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
-          * [Change the UserType of the Microsoft Entra guest using Azure AD PowerShell](#convert-azure-ad-usertype-from-guest-to-member-using-azure-ad-powershell). [We don't advise](/azure/active-directory/external-identities/user-properties#convert-usertype) using this advanced process, but it allows the user to query Microsoft Entra ID from the Azure DevOps organization.
+          * [Change the UserType of the Microsoft Entra guest using Azure AD PowerShell](#convert-the-usertype-from-guest-to-member-using-azure-ad-powershell). [We don't advise](/azure/active-directory/external-identities/user-properties#convert-usertype) using this advanced process, but it allows the user to query Microsoft Entra ID from the Azure DevOps organization.
 
           #### Convert the UserType from guest to member using Azure AD PowerShell
 
@@ -171,7 +171,7 @@ sections:
           2. Go to the tenant that backs your Azure DevOps organization.
           3. Check the UserType. Confirm that the user is a *Guest*.
           4. Open an Administrative Windows PowerShell prompt.
-          5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?&preserve-view=true&view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, pictured as follows. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true) page.
+          5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?&preserve-view=true&view=azureadps-2.0) downloads from the PowerShell Gallery. You might see prompts about installing NuGet and untrusted repository, pictured as follows. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true) page.
 
              ![Administrator action in Windows PowerShell](media/faq/Administrator-action-Windows-PowerShell.png)
 
@@ -213,7 +213,7 @@ sections:
           | `[TEAM FOUNDATION]` | Membership is defined _directly_ in Microsoft Entra ID | 
           
           > [!Note]
-          > If you add a Microsoft Entra group to a custom security group _and_ use a similar name, you may see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is a Microsoft Entra group.
+          > If you add a Microsoft Entra group to a custom security group _and_ use a similar name, you might see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is a Microsoft Entra group.
           
       - question: |
           Why doesn't the Users list show all Microsoft Entra group members?
@@ -401,7 +401,7 @@ sections:
       - question: |
           Why and when should I request Support to manually clear my SSH keys?
         answer: |
-          When you switch from one Microsoft Entra tenant to another, the underlying identity also changes and any PAT tokens or SSH keys that the user had with their old identity stop working. Any active SSH keys uploaded to the organization aren't deleted as part of the tenant switch process, which may block the user from uploading new keys after the switch. We recommend that users delete all their SSH keys **before** they switch their active directory tenant. We have work in our backlog for automatic deletion of the SSH keys as part of the tenant switch process and in the interim if you're blocked from uploading new keys after tenant switch, we recommend you to contact Support to delete those old SSH keys.
+          When you switch from one Microsoft Entra tenant to another, the underlying identity also changes and any PAT tokens or SSH keys that the user had with their old identity stop working. Any active SSH keys uploaded to the organization aren't deleted as part of the tenant switch process, which might block the user from uploading new keys after the switch. We recommend that users delete all their SSH keys **before** they switch their active directory tenant. We have work in our backlog for automatic deletion of the SSH keys as part of the tenant switch process and in the interim if you're blocked from uploading new keys after tenant switch, we recommend you to contact Support to delete those old SSH keys.
       
       - question: |
           My alternate credentials don't work anymore. What do I do?
@@ -432,7 +432,7 @@ sections:
       - question: |
           When I was trying to invite a new user to my Microsoft Entra ID, I got a 403 exception. What do I do?
         answer: |
-          You may be a guest in Microsoft Entra ID and don't have the right permission to invite users. Go to **External collaboration settings** in Microsoft Entra ID and move the "Guests can invite" toggle to **Yes**. Refresh Microsoft Entra ID and try again.
+          You might be a guest in Microsoft Entra ID and don't have the right permission to invite users. Go to **External collaboration settings** in Microsoft Entra ID and move the "Guests can invite" toggle to **Yes**. Refresh Microsoft Entra ID and try again.
           
       - question: |
           Will my users keep their existing Visual Studio subscriptions?
