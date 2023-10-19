@@ -32,9 +32,9 @@ If the PowerShell Gallery upstream source is not available in your feed by defau
 
 1. Select **Upstream Sources**, and then select **Add Upstream**.
 
-    :::image type="content" source="media/add-upstream-source.png" alt-text="A screenshot showing how to add an new upstream source.":::
+    :::image type="content" source="media/add-upstream-source.png" alt-text="A screenshot showing how to add a new upstream source.":::
 
-1. Select **Public source**, and then select **PowerShell Gallery** from the dropdown menu. Select **Save** when you are done.
+1. Select **Public source**, and then select **PowerShell Gallery** from the dropdown menu. Select **Save** when you're done.
 
     :::image type="content" source="media/add-powershell-gallery-upstream.png" alt-text="A screenshot showing how to add the PowerShell Gallery as an upstream source.":::
 
@@ -70,7 +70,7 @@ If the PowerShell Gallery upstream source is not available in your feed by defau
 
 ## Save packages from upstream
 
-Now that you added the PowerShell Gallery as an upstream source and registered your feed as a PSRepository, every time you install a package from upstream, a copy will be saved to your feed. In the following example, we will install the *PSScriptAnalyzer* module:
+Now that you added the PowerShell Gallery as an upstream source and registered your feed as a PSRepository, every time you install a package from upstream, a copy will be saved to your feed. In the following example, we'll install the *PSScriptAnalyzer* module:
 
 ```PowerShell
 Install-Module -Name PSScriptAnalyzer -Repository PSGalleryUpstream
