@@ -70,12 +70,29 @@ If the PowerShell Gallery upstream source is not available in your feed by defau
 
 ## Save packages from upstream
 
-Now that you added the PowerShell Gallery as an upstream source and registered your feed as a PSRepository, every time you install a package from upstream, a copy will be saved to your feed. In the following example, we will install the *PSReadLine* module:
+Now that you added the PowerShell Gallery as an upstream source and registered your feed as a PSRepository, every time you install a package from upstream, a copy will be saved to your feed. In the following example, we will install the *PSScriptAnalyzer* module:
 
 ```PowerShell
-Install-Module -Name PSReadLine -Repository PSGalleryUpstream
+Install-Module -Name PSScriptAnalyzer -Repository PSGalleryUpstream
 ```
 
 > [!NOTE]
 > To save packages from upstream sources you must be at least a **Collaborator**. See [Configure permissions](../feeds/feed-permissions.md#permissions-table) for more details.
 
+## View saved packages
+
+You can access the packages you've saved from the PowerShell Gallery by choosing the appropriate **Source** from the dropdown menu.
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Source** on the right, and then select **PowerShell Gallery** to filter for packages saved from upstream. You can see that the *PSScriptAnalyzer* package, which we installed in the previous step, has been saved to our feed.
+
+    :::image type="content" source="media/saved-package-from-upstream.png" alt-text="A screenshot showing packages saved from upstream in an Azure Artifacts feed.":::
+
+## Related articles
+
+- [NuGet.org upstream source](../nuget/upstream-sources.md)
+- [Use upstream sources in a public feed](../how-to/public-feeds-upstream-sources.md)
+- [Use feeds as a private PowerShell repository](/private-powershell-library.md)
