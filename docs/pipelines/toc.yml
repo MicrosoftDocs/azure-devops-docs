@@ -543,9 +543,9 @@
       href: agents/agent-authentication-options.md
     - name: Personal access token (PAT)
       href: agents/personal-access-token-agent-registration.md
-    - name: Service Principal (SP)
+    - name: Service Principal
       href: agents/service-principal-agent-registration.md
-    - name: Device code flow (Microsoft Entra ID)
+    - name: Device code flow
       href: agents/device-code-flow-agent-registration.md
   - name: Self-hosted agents (previous version 2.x)
     items:
