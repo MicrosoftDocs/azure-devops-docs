@@ -34,7 +34,7 @@ The [Azure DevOps Migration Tools](https://marketplace.visualstudio.com/items?it
 - Edit work items in bulk
 - Migrate test suites and test plans 
 
-For more information, see [Azure DevOps Migration Tools](https://marketplace.visualstudio.com/items?itemName=nkdagility.vsts-sync-migration) and [OADOM](https://www.opshub.com/products/opshub-azure-devops-migrator/).
+For more information, see [Azure DevOps Migration Tools](https://github.com/nkdagility/azure-devops-migration-tools/) and [OADOM](https://www.opshub.com/products/opshub-azure-devops-migrator/).
 
 [OpsHub Azure DevOps Migrator](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHubVisualStudioOnlineMigrationUtility) (OADOM), formerly known as OpsHub Visual Studio Migration Utility(OVSMU), gives a seamless migration between Azure DevOps Server and Azure DevOps Services.  Migrate projects from DevOps Services to a collection on DevOps Server including:  
 
