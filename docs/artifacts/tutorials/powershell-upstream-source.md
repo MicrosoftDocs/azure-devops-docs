@@ -95,4 +95,4 @@ You can access the packages you've saved from the PowerShell Gallery by choosing
 
 - [NuGet.org upstream source](../nuget/upstream-sources.md)
 - [Use upstream sources in a public feed](../how-to/public-feeds-upstream-sources.md)
-- [Use feeds as a private PowerShell repository](/private-powershell-library.md)
+- [Use feeds as a private PowerShell repository](private-powershell-library.md)
