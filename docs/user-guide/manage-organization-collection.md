@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 ms.date: 06/22/2023
 ---
 
-# Get started - manage your organization or project collection
+# Manage your organization or collection
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
 
@@ -24,17 +24,15 @@ Each organization is associated with one and only one collection. If you need to
 When you install Azure DevOps Server, you automatically create a default collection. If you need to create another project collection, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
 ::: moniker-end
 
-
 > [!NOTE]   
-> This article provides an overview of tasks that require membership in the **Project Collection Administrators** group. For information on tasks to be performed by members of a **Project Administrators** group, see [Manage your project](project-admin-tutorial.md).
-
+> This article provides an overview of tasks that require membership in the **Project Collection Administrators** group. For information on tasks performed by members of a **Project Administrators** group, see [Manage your project](project-admin-tutorial.md).
 
 ## Add users to your organization 
 
 ::: moniker range="azure-devops" 
-For large enterprises, the recommended method to manage Azure DevOps users, is to connect Azure DevOps to Microsoft Entra ID and manage user access through security groups defined in Microsoft Entra ID. That way, when you add and remove users or groups from Microsoft Entra ID, you automatically add and remove these same users and groups from Azure DevOps.  You limit the maintenance of managing permissions and user access. 
+For large enterprises, connect Azure DevOps to Microsoft Entra ID and use its security groups to control user access. This way, you can sync users and groups between Microsoft Entra ID and Azure DevOps, and reduce the overhead of managing permissions and user access.
 
-For small and large enterprises, you can add users and security groups directly through the web portal **Organization settings>Users** interface. All users added to an organization can be added to one or more projects defined for the organization. 
+You can add users and security groups to your organization through the web portal **Organization settings > Users** interface, regardless of the size of your enterprise. You can also assign these users and groups to one or more projects within your organization.
 ::: moniker-end 
 
 ::: moniker range="< azure-devops" 
@@ -51,7 +49,7 @@ When you add users, you specify their *access level*, which determines the featu
 - [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md)
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. For more information including important security-related call-outs, see [Limit user visibility for projects and more](#limit-identity-selection) later in this article. 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is turned on the organization, users added to the **Project-Scoped Users** group can't access projects that they haven't been added to. For more information including important security-related call-outs, see [Limit user visibility for projects and more](#limit-identity-selection), later in this article. 
 
 ::: moniker-end  
 
@@ -69,7 +67,7 @@ When you add users, you specify their *access level*, which determines the featu
 
 ## Set up billing
 
-Azure DevOps Services charges for the following services as described in [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).  
+Azure DevOps charges for the following services as described in [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).  
 - Individual services:
 	- Microsoft-hosted CI/CD parallel jobs 
 	- Self-hosted CI/CD parallel jobs
@@ -97,10 +95,10 @@ For more information about security and setting permissions at the collection-le
 ### Add members to the Project Collection Administrators group 
 
 ::: moniker range="azure-devops"
-The person who creates an organization is automatically added as a member to the **Project Collection Administrators** group. Members of this group have permissions to manage the settings, policies, and processes for the organization. Members can also create and manage all projects defined in the organization, and install and manage extensions.   
+When you create an organization, you become a member of the Project Collection Administrators group. This group has the authority to manage the organization’s settings, policies, and processes. It can also create and manage all the projects and extensions in the organization. 
 ::: moniker-end
 ::: moniker range="< azure-devops"
-The person who creates a project collection is automatically added as a member to the **Project Collection Administrators** group. Members of this group have permissions to manage the settings, policies, and processes for the organization. Members can also create and manage all projects defined in the organization, and install and manage extensions.   
+The person who creates a project collection is automatically added as a member to the Project Collection Administrators group. Members of this group have permissions to manage the settings, policies, and processes for the organization. Members can also create and manage all projects defined in the organization, and install and manage extensions.   
 ::: moniker-end
 
 It's always a good idea to have more than one person who has administrative privileges. To add a user to this group, see [Change permissions at the organization level,Add members to the Project Collection Administrators group](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-collection-administrators-group).
@@ -115,7 +113,7 @@ By default, users added to an organization can view all organization and project
 
 [!INCLUDE [project-scoped-users-important-note](../includes/project-scoped-users-important-note.md)]
 
-To restrict select users, such as Stakeholders, Microsoft Entra guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
+To restrict select users, such as Stakeholders, Microsoft Entra guest users, or members of a particular security group, you can turn on the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once it's turned on, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
 
 - Restricted users to only access those projects to which they've been explicitly added. 
 - Restricts views that display list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**.
@@ -123,10 +121,9 @@ To restrict select users, such as Stakeholders, Microsoft Entra guest users, or 
 
 [!INCLUDE [project-scoped-users-warning](../includes/project-scoped-users-warning.md)]
 
-To enable this feature, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
+For more information, see [Manage preview features](../project/navigation/preview-features.md). 
 
-> [!NOTE]  
-> All security groups are organization-level entities, even those groups that only have permissions to a specific project. From the web portal, visibility of some security groups may be limited based on user permissions. However, you can discover the names of all groups in an organization using the **azure devops** CLI tool or our REST APIs. For more information, see [Add and manage security groups](../organizations/security/add-manage-security-groups.md).
+All security groups are organization-level entities, even those groups that only have permissions to a specific project. From the web portal, visibility of some security groups might be limited based on user permissions. However, you can discover the names of all groups in an organization using the **azure devops** CLI tool or our REST APIs. For more information, see [Add and manage security groups](../organizations/security/add-manage-security-groups.md).
 ::: moniker-end  
 
 ::: moniker range="azure-devops"
@@ -135,7 +132,7 @@ To enable this feature, see [Manage or enable features](../project/navigation/pr
 
 ### Limit identity search and selection  
 
-Organizations that are connected to Microsoft Entra ID use people pickers to search all users and groups in Microsoft Entra ID, not just those in your project. People pickers support the following Azure DevOps functions: 
+With Microsoft Entra ID, you can use people pickers to search for any user or group in your organization, not just the ones in your current project. People pickers support the following Azure DevOps functions: 
 - Selection of a user identity from a work tracking identity field such as **Assigned To**  
 - Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
 - Selection of a user or group using **@mention** from a wiki page 
@@ -146,12 +143,12 @@ As shown in the following image, you simply start typing into a people picker bo
  
 Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they're connected to from a people picker. To scope people pickers for all project members, see [Limit user visibility for projects and more](#limit-identity-selection) earlier in this article. 
 
-To limit the identity selection to just those users and groups added to a project, perform the following procedure for your organization and projects. 
+To limit the identity selection to only users and groups added to a project, perform the following procedure for your organization and projects. 
 
-1. Enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. To learn how, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
+1. Turn on the **Limit user visibility and collaboration to specific projects** preview feature for the organization. For more information, see [Manage preview features](../project/navigation/preview-features.md).  
 2. Add the users to your project(s) as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
 3. Open **Organizations Settings>Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to. For more information, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
-	The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility and collaboration to specific projects** preview feature is enabled. 
+	The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility and collaboration to specific projects** preview feature is turned on. 
 
 ::: moniker-end  
 
@@ -159,7 +156,7 @@ To limit the identity selection to just those users and groups added to a projec
 
 ### Set security policies
 
-Configure the security policies for your organization through the **Organization settings>Policies** page. These policies enable you to grant or restrict the following features: 
+Configure the security policies for your organization through the **Organization settings>Policies** page. These policies let you grant or restrict the following features: 
 - Third-party application access via OAuth 
 - SSH authentication
 - Creation of public projects
@@ -169,23 +166,9 @@ Configure the security policies for your organization through the **Organization
 
 For more information, see [Change application connection & security policies for your organization](../organizations/accounts/change-application-access-policies.md). 
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range="azure-devops"
-
-## Enable preview features for your organization 
-
-As new features are introduced to Azure DevOps Services, you can choose to enable them or not for an organization. Some features are introduced and automatically enabled. You can try them out, provide feedback, and work with those features that meet your requirements.
-
-When you enable a feature at the organization level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose. If you disable a feature at the organization level, user settings aren't changed. Users can enable or disable the feature on their own. 
-
-To enable or disable a preview feature, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
-
-The [Limit identity search and selection](#limit-identity-selection) feature is only enabled or disabled at the organization-level.
-
-::: moniker-end 
-
-## Install and manage extensions 
+## Manage extensions 
 
 An extension is an installable unit that adds new capabilities to your projects. Azure DevOps extensions support the following functions:
 
@@ -200,15 +183,15 @@ You want to tell your users about extensions and that they can [request an exten
 
 ### Install Code Search 
 
-Code Search is a free Marketplace extension that you must install to enable searching across all your source repositories. To learn how, see [Install and configure Search](../project/search/install-configure-search.md).
+Code Search is a free Marketplace extension that lets you search across all your source repositories. For more information, see [Install and configure Search](../project/search/install-configure-search.md).
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-### Enable or disable Analytics
+### Turn on Analytics
 
 The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Analytics is built for reporting and optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
 
-For more information, see [What is the Analytics service?](../report/powerbi/what-is-analytics.md) and [Install or enable the Analytics service](../report/dashboards/analytics-extension.md).
+For more information, see [What is the Analytics service?](../report/powerbi/what-is-analytics.md) and [Turn on the Analytics service](../report/dashboards/analytics-extension.md).
 ::: moniker-end 
 
 ::: moniker range="azure-devops"
@@ -236,7 +219,7 @@ Use the following settings, which get defined at the organization-level, to supp
 
 ::: moniker range=">= azure-devops-2019"
   
-All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. Processes are easily customized through the user interface. However, you may want to establish a methodology for who manages the updates and evaluates requests.
+All work-tracking tools are available immediately after you create a project. Often, one or more users might want to customize the experience to meet one or more business needs. Processes are easily customized through the user interface. However, you might want to establish a methodology for who manages the updates and evaluates requests.
 
 For more information, see the following articles:
 
@@ -248,7 +231,7 @@ For more information, see the following articles:
 
 ::: moniker range="tfs-2018"
 
-All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. But, you may want to establish a methodology for who manages the updates and evaluates requests.
+All work-tracking tools are available immediately after you create a project. Often, one or more users might want to customize the experience to meet one or more business needs. But, you might want to establish a methodology for who manages the updates and evaluates requests.
 
 For more information, see [On-premises XML process model](../reference/on-premises-xml-process-model.md).
 
@@ -258,14 +241,12 @@ For more information, see [On-premises XML process model](../reference/on-premis
 
 ## Alert users with information banners
 
-You can quickly communicate with your Azure DevOps users through information banners. Use banners to alert your Azure DevOps users to upcoming changes or events without sending mass emails. To learn how, see [Add and manage information banners](../organizations/settings/manage-banners.md). 
+Communicate with your Azure DevOps users quickly through information banners. Use banners to alert your Azure DevOps users to upcoming changes or events without sending mass emails. For more information, see [Add and manage information banners](../organizations/settings/manage-banners.md). 
 ::: moniker-end 
 
 ## Review and update notifications
 
-Many notifications are predefined at the organization or collection level. You can disable or modify these subscriptions, or add new subscriptions as described in [Manage notifications for a team, project, or organization](../organizations/notifications/manage-team-group-global-organization-notifications.md).  
- 
-:::image type="content" source="../media/global-notifications.png" alt-text="Screenshot of Azure DevOps global notifications.":::
+Many notifications are predefined at the organization or collection level. You can [manage subscriptions or add new subscriptions](../organizations/notifications/manage-team-group-global-organization-notifications.md).  
 
 ::: moniker range="< azure-devops"  
 
@@ -277,7 +258,7 @@ For team members to receive notifications, [you must configure an SMTP server](/
 
 ## Scale your organization or collection  
 
-To learn about scaling your organization, review the following articles. 
+To learn about scaling your organization, see the following articles. 
 
 - [About projects and scaling your organization](../organizations/projects/about-projects.md)
 - [Plan your organizational structure](plan-your-azure-devops-org-structure.md)  
