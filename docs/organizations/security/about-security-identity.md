@@ -243,7 +243,7 @@ To restrict select users, such as Stakeholders, Microsoft Entra guest users, or 
 - Can only connect and view those projects to which they've been added to explicitly (see [Add users to a project or team](add-users-team-project.md). 
 - Can only select user and group identities that have been added explicitly to the project they're connected to. 
 
-For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). To enable the feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group) and [Manage preview features](../../project/navigation/preview-features.md). 
 
 [!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 

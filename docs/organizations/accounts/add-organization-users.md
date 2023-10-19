@@ -257,7 +257,7 @@ Complete the following steps to add users to the new **Project-Scoped Users** gr
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md#account-level).
+2. Turn on the **Limit user visibility and collaboration to specific projects** preview feature for the organization. For more information, see [Manage preview features](../../project/navigation/preview-features.md).
 
    > [!TIP]  
    > The **Project-Scoped Users** group only appears under **Permissions** > **Groups** once **Limit user visibility and collaboration to specific projects** preview feature is enabled.
