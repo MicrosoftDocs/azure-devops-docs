@@ -26,7 +26,7 @@ The data migration tool for Azure DevOps provides a high fidelity way to migrate
 
 ## Migrate data between Azure DevOps Projects
 
-The [Azure DevOps Migration Tools](https://marketplace.visualstudio.com/items?itemName=nkdagility.vsts-sync-migration) marketplace extension allows you to bulk edit and migrate data between Azure DevOps Projects on both on-premises and the cloud. This tool supports the following tasks:  
+The [Azure DevOps Migration Tools marketplace extension](https://github.com/nkdAgility/azure-devops-migration-tools) allows you to bulk edit and migrate data between Azure DevOps Projects on both on-premises and the cloud. This tool supports the following tasks:  
 - Migrate work items from one project to another project and synchronize changes after a migration
 - Merge many projects into a single project
 - Split one project into many projects
