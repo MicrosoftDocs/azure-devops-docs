@@ -67,3 +67,15 @@ If the PowerShell Gallery upstream source is not available in your feed by defau
         ```powershell
         Register-PSRepository -Name "PSGalleryUpstream" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $myCredentialsObject
         ```
+
+## Save packages from upstream
+
+Now that you added the PowerShell Gallery as an upstream source and registered your feed as a PSRepository, every time you install a package from upstream, a copy will be saved to your feed. In the following example, we will install the *PSReadLine* module:
+
+```PowerShell
+Install-Module -Name PSReadLine -Repository PSGalleryUpstream
+```
+
+> [!NOTE]
+> To save packages from upstream sources you must be at least a **Collaborator**. See [Configure permissions](../feeds/feed-permissions.md#permissions-table) for more details.
+
