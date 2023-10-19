@@ -8,7 +8,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 10/16/2023
+  ms.date: 10/19/2023
   monikerRange: 'azure-devops'
 title: Access via Microsoft Entra FAQs
 summary: |
@@ -169,13 +169,13 @@ sections:
 
           1. Sign in to the [Azure portal](https://portal.azure.com) as global administrator for your organization's directory.
           2. Go to the tenant that backs your Azure DevOps organization.
-          3. Check the UserType. Confirm that the user is a *Guest*.
-          4. Open an Administrative Windows PowerShell prompt to use Microsoft Graph PowerShell.
-          5. Execute `Install-Module -Name Microsoft.Graph -Scope CurrentUser`. The [Microsoft Graph](/powershell/microsoftgraph/installation) downloads from the PowerShell Gallery.
-          6. Once the installation completes, execute `Connect-MgGraph -Scopes "User.ReadWrite.All"`. You'll prompted to sign in to the Microsoft Entra ID. Be sure to use an ID that meets the previously mentioned criteria and consent to the permissions.
-          7. Execute `Get-MgUser -Filter "DisplayName eq '<display name'" -property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType`, where <display_name> is the display name for the user, as seen inside the Azure portal.  We want to change the userType to `Member`.
-          8. Execute `Update-MgUser -UserId string -UserType Member`, where `string` is the value of Id returned by the previous command. The user is set to member status.
-          9. Execute `Get-MgUser -Filter "DisplayName eq '<display name'" -property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType` again to verify the UserType has changed. You can also verify in the Microsoft Entra ID section of the Azure portal.
+          3. Open an Administrative Windows PowerShell prompt to use Microsoft Graph PowerShell.
+          4. Execute `Install-Module -Name Microsoft.Graph -Scope CurrentUser`. The [Microsoft Graph](/powershell/microsoftgraph/installation) downloads from the PowerShell Gallery.
+          5. Once the installation completes, execute `Connect-MgGraph -Scopes "User.ReadWrite.All"`. You'll prompted to sign in to the Microsoft Entra ID. Be sure to use an ID that meets the previously mentioned criteria and consent to the permissions.
+          6. Execute `Get-MgUser -Filter "DisplayName eq '<display name'" -property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType`, where <display_name> is the display name for the user, as seen inside the Azure portal.  We want to change the userType to `Member`.
+          7. Execute `Update-MgUser -UserId string -UserType Member`, where `string` is the value of Id returned by the previous command. The user is set to member status.
+          8. Execute `Get-MgUser -Filter "DisplayName eq '<display name'" -property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType` again to verify the UserType has changed. You can also verify in the Microsoft Entra ID section of the Azure portal.
+
           While not the norm, we've seen it takes several hours, or even days before this change is reflected inside Azure DevOps. If it doesn't fix your Azure DevOps issue immediately, give it some time and keep trying.
           
           <a name="azure-ad-groups"></a>
@@ -210,7 +210,7 @@ sections:
           | `[TEAM FOUNDATION]` | Membership is defined _directly_ in Microsoft Entra ID | 
           
           > [!Note]
-          > If you add a Microsoft Entra group to a custom security group _and_ use a similar name, you may see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is a Microsoft Entra group.
+          > If you add a Microsoft Entra group to a custom security group _and_ use a similar name, you might see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is a Microsoft Entra group.
           
       - question: |
           Why doesn't the Users list show all Microsoft Entra group members?
@@ -398,7 +398,7 @@ sections:
       - question: |
           Why and when should I request Support to manually clear my SSH keys?
         answer: |
-          When you switch from one Microsoft Entra tenant to another, the underlying identity also changes and any PAT tokens or SSH keys that the user had with their old identity stop working. Any active SSH keys uploaded to the organization aren't deleted as part of the tenant switch process, which may block the user from uploading new keys after the switch. We recommend that users delete all their SSH keys **before** they switch their active directory tenant. We have work in our backlog for automatic deletion of the SSH keys as part of the tenant switch process and in the interim if you're blocked from uploading new keys after tenant switch, we recommend you to contact Support to delete those old SSH keys.
+          When you switch from one Microsoft Entra tenant to another, the underlying identity also changes and any PAT tokens or SSH keys that the user had with their old identity stop working. Any active SSH keys uploaded to the organization aren't deleted as part of the tenant switch process, which might block the user from uploading new keys after the switch. We recommend that users delete all their SSH keys **before** they switch their active directory tenant. We have work in our backlog for automatic deletion of the SSH keys as part of the tenant switch process and in the interim if you're blocked from uploading new keys after tenant switch, we recommend you to contact Support to delete those old SSH keys.
       
       - question: |
           My alternate credentials don't work anymore. What do I do?
@@ -429,7 +429,7 @@ sections:
       - question: |
           When I was trying to invite a new user to my Microsoft Entra ID, I got a 403 exception. What do I do?
         answer: |
-          You may be a guest in Microsoft Entra ID and don't have the right permission to invite users. Go to **External collaboration settings** in Microsoft Entra ID and move the "Guests can invite" toggle to **Yes**. Refresh Microsoft Entra ID and try again.
+          You might be a guest in Microsoft Entra ID and don't have the right permission to invite users. Go to **External collaboration settings** in Microsoft Entra ID and move the "Guests can invite" toggle to **Yes**. Refresh Microsoft Entra ID and try again.
           
       - question: |
           Will my users keep their existing Visual Studio subscriptions?
