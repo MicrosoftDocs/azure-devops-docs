@@ -117,7 +117,7 @@ The **Limit user visibility and collaboration to specific projects** preview fea
 
 ### Limit access to organization settings 
 
-To limit access to organization settings, [enable the **Limit user visibility and collaboration to specific projects** preview feature](../../project/navigation/preview-features.md#account-level). Users and groups in the "Project-scoped users group" can't access organization settings. They can only see the **Overview** and **Projects** pages and those projects to which they've been added. 
+To limit access to organization settings, [Turn on the **Limit user visibility and collaboration to specific projects** preview feature](../../project/navigation/preview-features.md). Users and groups in the "Project-scoped users group" can't access organization settings. They can only see the **Overview** and **Projects** pages and those projects to which they've been added. 
 
 [!INCLUDE [version-all](../security/includes/hidden-security-groups.md)]
 
@@ -152,7 +152,7 @@ For more information, see [How many projects do you need?](../../user-guide/plan
 ### Add another project
 
 ::: moniker range="azure-devops"
-Another feasible approach is to have multiple projects. It can be a recommend approach if your organization is looking to accomodate the following scenarios:
+Another feasible approach is to have multiple projects. It can be a recommend approach if your organization is looking to accommodate the following scenarios:
 
 - To prohibit or manage access to the information contained within a project to select groups
 - To support custom work tracking processes for specific business units within your organization  
