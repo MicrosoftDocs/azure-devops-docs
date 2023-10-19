@@ -1,23 +1,23 @@
 ---
 ms.topic: how-to
-title: Use our OAuth 2.0 implementation
-description: Using the Azure DevOps OAuth 2.0 implementation for your app
+title: Use Azure DevOps OAuth 2.0 implementation
+description: How to use the Azure DevOps OAuth 2.0 implementation for existing web apps.
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/26/2023
+ms.date: 10/17/2023
 ---
 
 # Use Azure DevOps OAuth 2.0 to create a web app
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-> [!NOTE]
-> The following information remains available for all existing Azure DevOps OAuth apps. We recommend new app developers look into the [Microsoft Identity Platform](./oauth.md#azure-active-directory-oauth) when integrating with Azure DevOps.
+> [!IMPORTANT]
+> This information is for existing Azure DevOps OAuth apps only. New app developers should use  [Microsoft Entra ID OAuth](oauth.md#microsoft-entra-id-oauth) to integrate with Azure DevOps.
 
-Azure DevOps is an identity provider for OAuth 2.0 apps as well. Our implementation of OAuth 2.0 allows developers to authorize their app for users and get access tokens to access Azure DevOps resources.
+Azure DevOps is an identity provider for OAuth 2.0 apps. Our implementation of OAuth 2.0 lets developers authorize their app for users and get access tokens for Azure DevOps resources.
 
-## Getting started with Azure DevOps OAuth
+## Get started with Azure DevOps OAuth
 
 ### 1. Register your app
 
@@ -278,6 +278,6 @@ $attachmentId = $split[$split.count - 1]
 ## Related articles
 
 * [Choosing the right authentication method](authentication-guidance.md)
-* [Understand the OAuth models](oauth.md)
+* [Use Microsoft Entra ID OAuth](oauth.md)
 * [Default permissions and access for Azure DevOps](../../../organizations/security/permissions-access.md)
 * [Manage authorizations](../../../organizations/settings/manage-authorizations.md)
