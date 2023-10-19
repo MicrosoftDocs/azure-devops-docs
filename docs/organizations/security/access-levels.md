@@ -1,14 +1,14 @@
 ---
 title: About access levels
 titleSuffix: Azure DevOps
-description: Learn how access levels are used to grant or restrict access to web portal features through stakeholder, basic, basic+Test Plans, or VS Enterprise access levels 
+description: Understand how access levels control the features and functions of Azure DevOps. Learn about assigning and changing access levels for users and groups.
 ms.subservice: azure-devops-security
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022  
+ms.date: 10/17/2023  
 ---
 
 
@@ -16,11 +16,11 @@ ms.date: 04/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Access levels grant or restrict access to select web portal features. This is in addition to permissions granted through security groups, which provide or restrict specific tasks. Access levels enable administrators to provide their user base access to the features they need and only pay for those features. 
+Access levels control which web portal features are available or not. Access levels supplement security groups, which allow or deny certain tasks. Administrators provide their user-base access to the features they need and only pay for those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md) and [Manage users and access](../accounts/add-organization-users.md).
 
 [!INCLUDE [temp](../../includes/version-selector.md)] 
 
-When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level and those supported by the security group to which they are added. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups **Readers**, **Contributors**, and **Project Administrators**, see [Default permissions](permissions-access.md).  
+Adding a user or group to a team or project gives them automatic access to the features of the default access level and security group. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups **Readers**, **Contributors**, and **Project Administrators**, see [Default permissions](permissions-access.md).  
 
 ::: moniker range="azure-devops"  
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md). Make sure to set each user's access level based on what you've purchased for that user.
@@ -37,8 +37,8 @@ Assign users or groups of users to one of the following access levels:
 ::: moniker range="azure-devops"
 
 - **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional subscription, an Azure DevOps Server CAL, and to users for whom you're paying for Basic access in an organization.
-- **Basic + Test Plans**: Provides access to all features included in **Basic**, as well as Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
-- **Stakeholder**: Can be assigned to unlimited users for free. Provides partial access to private projects and mostly full access to public projects. Assign to users with no license or subscriptions who need access to a limited set of features. For feature access details, see [Stakeholder access quick reference](stakeholder-access.md). 
+- **Basic + Test Plans**: Provides access to all features included in **Basic** and Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
+- **Stakeholder**: Can be assigned to unlimited users for free. Provides partial access to private projects and mostly full access to public projects. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Visual Studio Subscriber**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features that are included in their subscription level. If you assign **Basic** or **Stakeholder**, they also receive their Visual Studio subscription benefits upon sign-in.
 
 > [!TIP]
@@ -49,13 +49,11 @@ Assign users or groups of users to one of the following access levels:
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign  to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
+- **Basic**: Provides access to most features. Assign to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
 - **Basic + Test Plans**: Provides access for users who have a monthly Test Manager subscription, Visual Studio Test Professional, or MSDN Platforms subscription. 
 - **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 
 ::: moniker-end  
-
- 
 
 ::: moniker range="tfs-2018"
 
@@ -190,7 +188,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Agile boards**  
-      Stakeholders have limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders can add work items and update status through drag-and-drop, but can't update fields displayed on cards (except for the work item State) and can't [view or set capacity](../../boards/sprints/set-capacity.md).
+      Stakeholders have limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders use drag-and-drop to create and change work items, but only change the State field on cards. They also can’t [see or adjust capacity](../../boards/sprints/set-capacity.md).
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -240,7 +238,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       [**Artifacts**](../../artifacts/start-using-azure-artifacts.md)  
-      Includes full access to all Azure Artifacts features, up to 2 GiB free storage.
+      Includes full access to all Azure Artifacts features, up to 2-GiB free storage.
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -271,7 +269,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Basic backlog and sprint planning tools**  
-      Includes limited access to add and modify items on [backlogs](../../boards/backlogs/backlogs-overview.md) and [sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md). Stakeholders can't assign items to an iteration, use the mapping pane, or forecasting.
+      Includes limited access to add and modify items on [backlogs](../../boards/backlogs/backlogs-overview.md) and [sprint backlogs and Taskboards](../../boards/sprints/scrum-overview.md). Stakeholders can't assign items to an iteration, use the mapping pane, or forecasting.
    :::column-end:::
    :::column span="1":::
        
@@ -539,13 +537,13 @@ With VS Enterprise access, users have access to any fee-based, Marketplace exten
 
 ## Advanced access
 
-Users assigned Advanced access can manage test cases when you have [purchased the Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for Azure Test Plans and assigned to the user accounts to gain full access to [Web-based test case management tools](../../test/create-a-test-plan.md).
+Advanced access lets users manage test cases with [Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for Azure Test Plans. Advanced access user accounts gain full access to [Web-based test case management tools](../../test/create-a-test-plan.md).
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-Users assigned Advanced access have all the Basic features, plus [web-based test case management tools](../../test/create-a-test-plan.md). You can [buy monthly access](../billing/buy-access-tfs-test-hub.md#buy-monthly-access-to-test-plans) or add users who already have a Visual Studio Test Professional with MSDN or MSDN Platforms subscription. 
+Advanced access gives users all the Basic features, plus [web-based test case management tools](../../test/create-a-test-plan.md). You can [buy monthly access](../billing/buy-access-tfs-test-hub.md#buy-monthly-access-to-test-plans) or add users who already have a Visual Studio Test Professional with MSDN or MSDN Platforms subscription. 
  
 ::: moniker-end
 
@@ -611,7 +609,7 @@ If a user belongs to a group that has **Basic** access and another group that ha
 
 ## Service account access
 
-Azure DevOps Server [service accounts](/azure/devops/server/admin/service-accounts-dependencies) are added to the default access level. If you make Stakeholder the default access level, you must add the service accounts to Basic or Advanced/VS Enterprise access.  
+Azure DevOps [service accounts](/azure/devops/server/admin/service-accounts-dependencies) are added to the default access level. If you make Stakeholder the default access level, you must add the service accounts to Basic or Advanced/VS Enterprise access.  
 
 Service accounts don't require a CAL or other purchase.  
 
@@ -623,7 +621,6 @@ Service accounts don't require a CAL or other purchase.
 
 - [Stakeholder access quick reference](stakeholder-access.md)
 - [Free access to Pipelines Preview](provide-stakeholder-pipeline-access.md)
-- [Manage users and access](../accounts/add-organization-users.md)
 - [Get started as a Stakeholder](get-started-stakeholder.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)
