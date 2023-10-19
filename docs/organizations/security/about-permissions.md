@@ -200,7 +200,7 @@ To restrict select users, such as Stakeholders, Microsoft Entra guest users, or 
 
 [!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 
-To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+For more information, see [Manage preview features](../../project/navigation/preview-features.md). 
 
 [!INCLUDE [version-all](./includes/hidden-security-groups.md)]
 

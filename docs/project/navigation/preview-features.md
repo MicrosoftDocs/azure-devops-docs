@@ -96,7 +96,9 @@ The following table shows the preview features you can turn on or off based on y
 |[Workload Identity federation for Azure Resource Manager service connections](../../pipelines/library/connect-to-azure.md)|    | ✔️  |     
 |[YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)| ✔️ | ✔️ |   
 
-::: moniker-end::: moniker range="azure-devops-2020"
+::: moniker-end
+
+:::moniker range="azure-devops-2020"
 
 The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. These preview features are only available to manage for Azure DevOps Server 2020 RTW. 
 
