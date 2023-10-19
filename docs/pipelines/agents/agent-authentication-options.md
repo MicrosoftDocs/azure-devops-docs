@@ -25,15 +25,15 @@ Specify **PAT** for authentication type during agent configuration to use a pers
 
 For more information, see [Register an agent using a personal access token (PAT)](./personal-access-token-agent-registration.md)
 
-## Service Principal (SP)
+## Service Principal
 
 Specify **SP** for authentication type during agent configuration to use a service principal to authenticate during agent registration.
 
 For more information, see [Register an agent using a Service Principal](./service-principal-agent-registration.md).
 
-## Device code flow (Microsoft Entra ID)
+## Device code flow 
 
-Specify **Microsoft Entra ID** for authentication type during agent configuration to use device code flow to authenticate during agent registration.
+Specify `AAD` for authentication type during agent configuration to use device code flow to authenticate during agent registration.
 
 For more information, see [Register an agent using device code flow](./device-code-flow-agent-registration.md).
 
