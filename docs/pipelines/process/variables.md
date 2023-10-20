@@ -42,7 +42,7 @@ Use [templates](templates.md) to define variables in one file that are used in m
 
 Azure DevOps supports multi-line variables but there are a few limitations.
 
-Downstream components such as pipeline tasks may not handle the variable values correctly. 
+Downstream components such as pipeline tasks might not handle the variable values correctly. 
 
 Azure DevOps won't alter user-defined variable values. Variable values need to be formatted correctly before being passed as multi-line variables. When formatting your variable, avoid special characters, don't use restricted names, and make sure you use a line ending format that works for the operating system of your agent. 
 
@@ -1135,7 +1135,7 @@ steps:
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-If a variable appears in the `variables` block of a YAML file, its value is fixed and can't be overridden at queue time. Best practice is to define your variables in a YAML file but there are times when this doesn't make sense. For example, you may want to define a secret variable and not have the variable exposed in your YAML. Or, you may need to manually set a variable value during the pipeline run.
+If a variable appears in the `variables` block of a YAML file, its value is fixed and can't be overridden at queue time. Best practice is to define your variables in a YAML file but there are times when this doesn't make sense. For example, you might want to define a secret variable and not have the variable exposed in your YAML. Or, you might need to manually set a variable value during the pipeline run.
 
 You have two options for defining queue-time values. You can define a variable in the UI and select the option to **Let users override this value when running this pipeline** or you can use [runtime parameters](runtime-parameters.md) instead. If your variable is not a secret, the best practice is to use [runtime parameters](runtime-parameters.md).
 
