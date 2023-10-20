@@ -232,6 +232,12 @@ Next, create the Dockerfile.
       COPY ./start.sh ./
       RUN chmod +x ./start.sh
 
+      RUN adduser -D agent
+      RUN chown agent ./
+      USER agent
+      # Another option is to run the agent as root.
+      # ENV AGENT_ALLOW_RUNASROOT="true"
+
       ENTRYPOINT ./start.sh
       ```
 
@@ -251,8 +257,16 @@ Next, create the Dockerfile.
       COPY ./start.sh ./
       RUN chmod +x ./start.sh
 
+      RUN useradd agent
+      RUN chown agent ./
+      USER agent
+      # Another option is to run the agent as root.
+      # ENV AGENT_ALLOW_RUNASROOT="true"
+
       ENTRYPOINT ./start.sh
       ```
+
+    Uncomment the `ENV AGENT_ALLOW_RUNASROOT="true"` line and remove adding the `agent` user before this line if you want to run the agent as root.
 
     > [!NOTE]
     > Tasks might depend on executables that your container is expected to provide.
@@ -289,8 +303,6 @@ Next, create the Dockerfile.
     if [ -n "${AZP_WORK}" ]; then
       mkdir -p "${AZP_WORK}"
     fi
-
-    export AGENT_ALLOW_RUNASROOT="1"
 
     cleanup() {
       trap "" EXIT
@@ -365,7 +377,7 @@ Next, create the Dockerfile.
     ```
 
     > [!NOTE]
-    >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
+    > You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 
 6. Run the following command within that directory:
 
