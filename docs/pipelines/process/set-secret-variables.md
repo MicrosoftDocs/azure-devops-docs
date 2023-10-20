@@ -14,14 +14,11 @@ Secret variables are encrypted variables that you can use in pipelines without e
 
 The recommended ways to [set secret variables are in the UI](#secret-variable-in-the-ui), [in a variable group](#set-a-secret-variable-in-a-variable-group), and [in a variable group from Azure Key Vault](#link-secrets-from-an-azure-key-vault). You can also [set secret variables in a script with a logging command](#set-secret-variable-in-a-script-with-logging-commands) but this is not recommended since anyone who can access your pipeline will be able to also see the secret.
 
-Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they are set. You can use variable groups to share secret variables across pipelines. 
+Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they are set. You can use variable groups to share secret variables across pipelines.
 
 ## Secret variable in the UI
 
 You can set secret variables in the pipeline editor when you are editing an individual pipeline. You'll encrypt and make a pipeline variable secret by selecting the lock icon. 
-
-> [!NOTE]
-> Azure Pipelines makes an effort to mask secrets when emitting data to pipeline logs, so you may see variables masked in output and logs that are not set as secrets.
 
 You set secret variables the same way for YAML and Classic. 
 
@@ -59,6 +56,10 @@ True
 My second secret variable: ***
 Strings are equal.
 ```
+
+> [!NOTE]
+> Azure Pipelines makes an effort to mask secrets when emitting data to pipeline logs, so you may see variables masked in output and logs that are not set as secrets.
+
 For a more detailed example, see [Define variables](variables.md#secret-variables).
 
 #### [Classic](#tab/classic/)
