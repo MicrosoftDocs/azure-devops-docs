@@ -7,7 +7,10 @@ author: juliakm
 ms.date: 05/31/2022
 ---
 
-When `issecret` is set to true, the value of the variable will be saved as secret and masked out from log.
+When `issecret` is set to true, the value of the variable will be saved as secret and masked out from logs.
+
+> [!NOTE]
+> Azure Pipelines makes an effort to mask secrets when emitting data to pipeline logs, so you may see additional variables and data masked in output and logs that are not set as secrets.
 
 # [Bash](#tab/bash)
 
