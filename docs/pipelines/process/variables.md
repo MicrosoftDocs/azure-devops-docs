@@ -425,8 +425,7 @@ Deleted variable 'Configuration' successfully.
 
 Don't set secret variables in your YAML file. Operating systems often log commands for the processes that they run, and you wouldn't want the log to include a secret that you passed in as an input. Use the script's environment or map the variable within the `variables` block to pass secrets to your pipeline.
 
-> [!NOTE]
-> Azure Pipelines makes an effort to mask secrets when emitting data to pipeline logs, so you may see variables masked in output and logs that are not set as secrets.
+[!INCLUDE [secrests masked](./includes/masked-secrets.md)]
 
 You need to set secret variables in the pipeline settings UI for your pipeline. These variables are scoped to the pipeline where they are set. You can also set [secret variables in variable groups](#reference-secret-variables-in-variable-groups). 
 

@@ -57,8 +57,7 @@ My second secret variable: ***
 Strings are equal.
 ```
 
-> [!NOTE]
-> Azure Pipelines makes an effort to mask secrets when emitting data to pipeline logs, so you may see variables masked in output and logs that are not set as secrets.
+[!INCLUDE [secrests masked](./includes/masked-secrets.md)]
 
 For a more detailed example, see [Define variables](variables.md#secret-variables).
 
