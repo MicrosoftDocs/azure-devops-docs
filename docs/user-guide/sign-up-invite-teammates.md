@@ -15,15 +15,13 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-Sign up for Azure DevOps and get the following tier of free services:
-[!INCLUDE [free-tier](../includes/free-tier.md)]
-For more information, see [What is Azure DevOps?](what-is-azure-devops.md)
+Sign up for Azure DevOps and get the [free tier of services](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/). For more information, see [What is Azure DevOps?](what-is-azure-devops.md)
 
 ## Sign up
 
-Sign up for Azure DevOps with a Microsoft or GitHub account. 
+Sign up for Azure DevOps with either a [Microsoft account](#sign-up-with-a-microsoft-accounttabsign-up-with-a-microsoft-account) or [GitHub account](#sign-up-with-a-github-accounttabsign-up-with-a-github-account). 
 
-# [Sign up with a Microsoft account](#tab/sign-up-with-a-microsoft-account)
+# [Microsoft account](#tab/microsoft-account)
 
 1. If you don't have one, [create a Microsoft account](https://azure.microsoft.com/services/devops/).
 2. Go to [Azure DevOps](https://azure.microsoft.com/services/devops/) and select **Start free**.
@@ -35,7 +33,7 @@ Sign up for Azure DevOps with a Microsoft or GitHub account.
 
 Sign in to your organization at any time `https://dev.azure.com/{Your_Organization}`.
 
-# [Sign up with a GitHub account](#tab/sign-up-with-a-github-account)
+# [GitHub account](#tab/github-account)
 
 > [!NOTE]
 > If your GitHub email address is already associated with an organization in Azure DevOps that's [connected to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md), you can't sign in with your GitHub account. You must sign in with your Microsoft Entra account.
@@ -48,6 +46,8 @@ Sign in to your organization at any time `https://dev.azure.com/{Your_Organizati
    Azure DevOps turns on the *Invite GitHub users* policy by default. 
    ![Screenshot of the Invite GitHub users policy.](../media/invite-github-users-policy.png)
 ---
+
+
 
 ## Next steps  
  
