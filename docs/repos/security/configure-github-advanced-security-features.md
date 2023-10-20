@@ -70,8 +70,7 @@ You can enable Advanced Security at the organization, project, or repository lev
 1. Select **Begin billing** to activate Advanced Security for every existing repository in your project. 
 1. Optionally, select **Automatically enable Advanced Security for new repositories** so that any newly created repositories have Advanced Security enabled upon creation. 
 
-![Screenshot of project-level enablement for Advanced Security.](media/enable-github-advanced-security-project.png)](media/enable-github-advanced-security-project.png#lightbox)
-
+:::image type="content" source="media/enable-github-advanced-security-project.png" lightbox="media/enable-github-advanced-security-project.png" alt-text="Screenshot of project-level enablement for Advanced Security.":::
 
 #### Organization-level onboarding
 1. Go to your **Organization settings** for your Azure DevOps organization. 
@@ -80,13 +79,13 @@ You can enable Advanced Security at the organization, project, or repository lev
 1. Select **Begin billing** to activate Advanced Security for every existing repository in each project in your organization. 
 1. Optionally, select **Automatically enable Advanced Security for new repositories** so that any newly created projects have Advanced Security enabled upon creation. 
 
-![Screenshot of org-level enablement for Advanced Security.](media/enable-github-advanced-security-organization.png)](media/enable-github-advanced-security-organization.png#lightbox)
+:::image type="content" source="media/enable-github-advanced-security-organization.png" lightbox="media/enable-github-advanced-security-organization.png" alt-text="Screenshot of org-level enablement for Advanced Security.":::
 
 ## Set up secret scanning
 
 Secret scanning push protection and repository scanning are automatically enabled when you turn on Advanced Security. You can enable or disable secret push protection from the repository settings page. 
 
-![Screenshot of enabling push protection](media/secret-scanning-push-protection.png)
+:::image type="content" source="media/secret-scanning-push-protection.png" lightbox="media/secret-scanning-push-protection.png" alt-text="Screenshot of enabling push protection.":::
 
 As mentioned, secret scanning repository scanning is automatically kicked off upon enabling Advanced Security for a selected repository.
 
@@ -101,14 +100,13 @@ Dependency scanning is a pipeline-based scanning tool. Results are aggregated pe
 
 Add the task Advanced Security Dependency Scanning task ([AdvancedSecurity-Dependency-Scanning@1](/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1)) directly to your YAML pipeline file or select the **Advanced Security Dependency Scanning** task from the [task assistant](../../pipelines/get-started/yaml-pipeline-editor.md#use-task-assistant).
 
-![Screenshot of dependency scanning pipeline setup for YAML](media/dependency-scanning-config-yaml.png)
+:::image type="content" source="media/dependency-scanning-config-yaml.png" lightbox="media/dependency-scanning-config-yaml.png" alt-text="Screenshot of dependency scanning pipeline setup for YAML.":::
 
 #### [Classic](#tab/classic)
 
 Add the `Advanced Security Dependency Scanning` task to your pipeline. 
 
-![Screenshot of dependency scanning pipeline setup for classic pipelines](media/dependency-scanning-config-classic.png)
-
+:::image type="content" source="media/dependency-scanning-config-classic.png" lightbox="media/dependency-scanning-config-classic.png" alt-text="Screenshot of dependency scanning pipeline setup for classic pipelines.":::
 
 
 To generate alerts, run your first scan with a pipeline with the dependency scanning task included.
@@ -129,7 +127,7 @@ Add the tasks in the following order:
 1. Advanced Security AutoBuild (language-dependent) ([AdvancedSecurity-Codeql-Autobuild@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-autobuild-v1)) or replace this with your own custom build steps
 1. Advanced Security Perform CodeQL Analysis ([AdvancedSecurity-Codeql-Analyze@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1))
 
-![Screenshot of code scanning pipeline setup for YAML](media/code-scanning-config-yaml-tasks.png)
+:::image type="content" source="media/code-scanning-config-yaml-tasks.png" lightbox="media/code-scanning-config-yaml-tasks.png" alt-text="Screenshot of code scanning pipeline setup for YAML.":::
 
 Additionally, you'll need to specify which language(s) you're analyzing in the Initialize CodeQL task. A comma separated list can be used to analyze multiple languages at once. The supported languages are `csharp, cpp, go, java, javascript, python, ruby, swift`.  
 
