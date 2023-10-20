@@ -19,7 +19,7 @@ Sign up for Azure DevOps and get the [free tier of services](https://azure.micro
 
 ## Sign up
 
-Sign up for Azure DevOps with either a [Microsoft account](#microsoft-accounttabmicrosoft-account) or [GitHub account](#github-accounttabgithub-account). 
+Sign up for Azure DevOps with either a Microsoft account or GitHub account.
 
 # [Microsoft account](#tab/microsoft-account)
 
