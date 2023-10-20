@@ -9,13 +9,13 @@ ms.custom: cross-service
 ms.author: jukullam
 author: juliakm 
 monikerRange: 'azure-devops'
-ms.date: 09/20/2023
+ms.date: 10/20/2023
 ---
 
 
 # Code scanning 
 
-Code scanning in [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) let's you analyze the code in an Azure DevOps repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are raised as an alert. Code scanning uses CodeQL to identify vulnerabilities.  
+Code scanning in [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) lets you analyze the code in an Azure DevOps repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are raised as an alert. Code scanning uses CodeQL to identify vulnerabilities.  
 
 CodeQL is the code analysis engine developed by GitHub to automate security checks. You can analyze your code using CodeQL and display the results as code scanning alerts.  
 
