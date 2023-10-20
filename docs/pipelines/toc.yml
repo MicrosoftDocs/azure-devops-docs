@@ -354,9 +354,6 @@
     - name: Classic release pipelines
       href: release/define-multistage-release-process.md
       displayName: classic release, classic deployment
-    - name: Pipelines with PowerShell DSC
-      href: release/dsc-cicd.md
-      displayName: powershell, dsc
     - name: Stage templates in Azure Pipelines
       href: release/env-templates.md
       displayName: environment, templates, stages

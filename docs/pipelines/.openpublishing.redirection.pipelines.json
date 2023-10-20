@@ -200,6 +200,10 @@
     {
       "source_path_from_root": "/docs/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups.md",
       "redirect_url": "/azure/devops/pipelines/release/deploy-webdeploy-iis-deploygroups"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/release/dsc-cicd.md",
+      "redirect_url": "/azure/devops/pipelines/release/define-multistage-release-process"
     }
   ]
 }
