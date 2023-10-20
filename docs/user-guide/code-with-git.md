@@ -2,21 +2,21 @@
 title: Code with Git
 titleSuffix: Azure DevOps
 ms.custom: seodec18, engagement-fy23
-description: Learn how to share code within a Git repo and project.
+description: Follow these steps to share code within a Git repo and project in Azure DevOps.
 ms.assetid: 
 ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley
-ms.date: 10/07/2022
-ms.topic: quickstart
+ms.date: 10/20/2023
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ---
 
-# Code with Git
+# Share your code with Git
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to share your code with others when you use a Git repository. 
+Share your code with others in Azure DevOps when you use a Git repository. 
 
 ## Prerequisites
 
@@ -26,12 +26,12 @@ You must have an [organization](../organizations/accounts/create-organization.md
 
 Install one of the following Git command-line tools:
 
-   - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager](../repos/git/set-up-credential-managers.md).
+   - [Git for Windows and Git Credential Manager](../repos/git/set-up-credential-managers.md).
    - To install on macOS or Linux, check out the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) chapter in the open-source _Pro Git_ book. For macOS and Linux, we recommend that you [configure SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md).
 
 ## 2. Clone the repo to your computer
 
-To work with a Git repo, you clone it to your computer, which creates a complete local copy of the repo for you to work with. Your code might be in one of several places. 
+To work with a Git repo, clone it to your computer, which creates a complete local copy of the repo. Your code might be in one of several places. 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -110,10 +110,9 @@ Git [branches](../repos/git/branch-policies-overview.md) isolate your changes fr
    ```
    This command creates a reference in Git for the new branch. It also creates a pointer back to the parent commit so Git can keep a history of changes as you add commits to the branch.
 
-   > [!TIP]
-   > If you're working with a previously cloned repository, ensure that you've checked out the right branch (`git checkout main`) and that it's up to date (`git pull origin main`) before you create your new branch.
+   If you're working with a previously cloned repository, ensure that you've checked out the right branch (`git checkout main`) and that it's up to date (`git pull origin main`) before you create your new branch.
 
-2. Use `checkout` to switch to that branch.
+1. Use `checkout` to switch to that branch.
 
    ```
    git checkout users/jamal/feature1
@@ -161,10 +160,9 @@ In the following steps, we make a change to the files on your computer, commit t
 
    The `git add .` command stages any new or changed files, and `git commit -m` creates a commit with the specified commit message.
    
-   > [!TIP]
-   > Check what branch you're working on before you commit, so that you don't commit changes to the wrong branch. Git always adds new commits to the current local branch.
+   Check which branch you're working on before you commit, so that you don't commit changes to the wrong branch. Git always adds new commits to the current local branch.
 
-4. Push your changes to the Git repo on the server. Enter the following command into the Git command window:
+1. Push your changes to the Git repo on the server. Enter the following command into the Git command window:
 
    ```
    git push origin users/jamal/feature1
@@ -182,13 +180,11 @@ The following example shows the basic steps of creating and completing a pull re
 
 1. Open the team project for your organization in your web browser and select **Repos** > **Files**. If you kept your browser open after getting the clone URL, you can just switch back to it.
 
-   ![Repos files](media/clone-repo/repos-files.png)
-
 2. Select **Create a pull request** in the upper-right corner of the **Files** window. If you don't see a message like **You updated users/jamal/feature1 just now**, refresh your browser.
 
    ![Create a pull request](../repos/get-started/media/updated-file-create-pull-request.png)
 
-   New pull requests are configured to merge your branch into the default branch, which in this example is `main`. The title and description are pre-populated with your commit message.
+   New pull requests are configured to merge your branch into the default branch, which in this example is `main`. The title and description are prepopulated with your commit message.
 
    ![New pull request](../repos/get-started/media/create-pull-request.png)
 
@@ -239,7 +235,7 @@ The following example shows the basic steps of creating and completing a pull re
    cd fabrikam-web
    ```
 
-   Keep this command window open, because you'll use it in the following steps.
+   Keep this command window open, because you use it in the following steps.
 
 ::: moniker-end
 
