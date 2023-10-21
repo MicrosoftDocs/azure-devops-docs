@@ -245,10 +245,10 @@ Open PowerShell in elevated mode and replace 'someone@somecompany.com' in the fo
 
 ```PowerShell
 # Install the Microsoft Graph PowerShell module - ensuring to select Yes to All
-Install-Module Microsoft Graph 
+Install-Module Microsoft.Graph 
 
-# Install the MSOnline PowerShell module -  ensuring to select Yes to All
-Install-Module MSOnline
+# Import Users module
+Import-Module Microsoft.Graph.Users
 
 # Connect to Microsoft Entra and use your Microsoft Entra ID credentials (someone@somecompany.com) to login when the pop-up appears
 Connect-MgGraph  -Scopes 'User.Read.All'
