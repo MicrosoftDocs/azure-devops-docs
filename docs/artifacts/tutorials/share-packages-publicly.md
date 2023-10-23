@@ -52,6 +52,10 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 - [Publish Maven Artifacts](../get-started-maven.md#publish-artifacts)
 
+#### [Gradle](#tab/gradle)
+
+- [Publish Artifacts using Gradle](../maven/publish-with-gradle.md)
+
 #### [Python](#tab/python)
 
 - [Publish Python packages](../quickstarts/python-cli.md#publish-python-packages)
@@ -75,6 +79,10 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 #### [Maven](#tab/maven)
 
 - [Publish Maven Artifacts](../../pipelines/artifacts/publish-maven-artifacts.md)
+
+#### [Gradle](#tab/gradle)
+
+- [Publish Artifacts with Gradle](../../pipelines/artifacts/pull-package-gradle.md)
 
 #### [Python](#tab/python)
 
