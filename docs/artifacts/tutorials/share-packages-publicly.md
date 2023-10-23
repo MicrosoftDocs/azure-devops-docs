@@ -60,10 +60,6 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 - [Publish Python packages](../quickstarts/python-cli.md#publish-python-packages)
 
-#### [Cargo](#tab/cargo)
-
-- [Publish Cargo packages](../get-started-cargo.md)
-
 #### [Universal Packages](#tab/universalpackages)
 
 - [Publish Universal Packages](../quickstarts/universal-packages.md#publish-packages)
