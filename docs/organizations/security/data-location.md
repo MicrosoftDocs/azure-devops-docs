@@ -25,7 +25,7 @@ Azure DevOps data is available in the following eight geographies across the wor
 - Brazil
 - Canada
 - Asia Pacific
-- Europe (EU)
+- North Europe (EU)
 - India
 - United Kingdom
 - United States (US)
