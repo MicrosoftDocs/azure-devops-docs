@@ -1,0 +1,16 @@
+---
+author: ckanyika
+ms.author: ckanyika
+ms.date: 10/25/2023
+ms.topic: include
+---
+### Improvements to Approvals REST API
+
+We made searching for approvals assigned to a user more thorough by including approvals assigned to groups the user belongs to.
+
+We made approving pending approvals easier by including information about the pipeline run they belong to.
+
+
+### Building PRs from forked GitHub repositories
+
+To improve the security of your pipelines, Azure Pipelines no longer automatically builds pull requests from forked GitHub repositories for new projects and organizations. That is, the default value of the _Limit building pull requests from forked GitHub repositories_ setting is _Disable building pull requests from forked repositories_ for new projects and organizations.
