@@ -53,6 +53,14 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 - To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo using git CLI](#manual-import-git-cli).
 ::: moniker-end
 
+> [!NOTE]
+> When the import of the repository is completed, Azure DevOps sets the Default branch for that imported repository. The Default branch is set as per the following table:
+> | Imported repository contains branch "master" | Default branch set to |
+> | --- | --- |
+> | YES | Branch named "master" |
+> | NO | First branch (in alphabetical order) of the imported repository |
+
+
 ## Import into a new repo  
  
 
