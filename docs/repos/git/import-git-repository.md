@@ -54,11 +54,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 ::: moniker-end
 
 > [!NOTE]
-> When the import of the repository is completed, Azure DevOps sets the Default branch for that imported repository. The Default branch is set as per the following table:
-> | Imported repository contains branch "master" | Default branch set to |
-> | --- | --- |
-> | YES | Branch named "master" |
-> | NO | First branch (in alphabetical order) of the imported repository |
+> When the import of the repository is completed, Azure DevOps sets the **Default** branch for that imported repository. If the imported repository contains a branch named `master`, it is set as the default branch, otherwise the first branch (in alphabetical order) of the imported repository is set as **Default**.
 
 
 ## Import into a new repo  
@@ -311,7 +307,7 @@ To move over the LFS files (you will need both Git.exe and LFS client in the sam
 
 ### Can I import updates if the source changes later?
 
-The import service is for initially importing a entire repository.
+The import service is for initially importing an entire repository.
 To mirror later changes, you'll need a local clone of the repository with remotes set to both source and destination.
 
 You can sync changes using the following commands.
