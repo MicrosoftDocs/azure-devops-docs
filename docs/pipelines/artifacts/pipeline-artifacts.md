@@ -128,7 +128,7 @@ steps:
 > You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
 
 > [!NOTE]
-> The `download` keyword downloads linked artifacts. For more information, see [steps.download](/azure/devops/pipelines/yaml-schema/steps-download).
+> The `download` keyword downloads artifacts. For more information, see [steps.download](/azure/devops/pipelines/yaml-schema/steps-download).
 
 # [YAML (task)](#tab/yaml-task)
 
