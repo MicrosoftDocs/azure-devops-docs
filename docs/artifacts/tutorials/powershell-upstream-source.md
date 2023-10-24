@@ -89,7 +89,7 @@ You can access the packages you've saved from the PowerShell Gallery by choosing
 
 1. Select **Source** on the right, and then select **PowerShell Gallery** to filter for packages saved from upstream. You can see that the *PSScriptAnalyzer* package, which we installed in the previous step, has been saved to our feed.
 
-    :::image type="content" source="media/saved-package-from-upstream.png" alt-text="A screenshot showing packages saved from upstream in an Azure Artifacts feed.":::
+    :::image type="content" source="media/saved-package-from-upstream-cropped.png" alt-text="A screenshot showing packages saved from upstream in an Azure Artifacts feed." lightbox="media/saved-package-from-upstream.png":::
 
 ## Related articles
 
