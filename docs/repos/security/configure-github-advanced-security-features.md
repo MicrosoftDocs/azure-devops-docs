@@ -131,6 +131,55 @@ Add the tasks in the following order:
 
 Additionally, you'll need to specify which language(s) you're analyzing in the Initialize CodeQL task. A comma separated list can be used to analyze multiple languages at once. The supported languages are `csharp, cpp, go, java, javascript, python, ruby, swift`.  
 
+Here is an example starter pipeline:
+
+>[!div class="tabbedCodeSnippets"]
+```yaml
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  advancedsecurity.codeql.querysuite: security-extended
+  advancedsecurity.submittoadvancedsecurity: true
+  CODEQL_EXTRACTOR_JAVA_RUN_ANNOTATION_PROCESSORS: true
+
+steps:
+
+  - task: AdvancedSecurity-Codeql-Init@1
+    inputs:
+      languages: "java"
+      # Supported languages: csharp, cpp, go, java, javascript, python, ruby, swift
+      # You can customize the initialize task: https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1?view=azure-pipelines
+
+  - task: AdvancedSecurity-Codeql-Autobuild@1    
+
+# It's possible that the the autobuild step does not execute, specifically if you are scanning a language like cpp, java, csharp, or swift.
+# If the above does not execute correctly, you can replace the Autobuild task with your customized build. E.g.:
+
+# If you had a Maven app:
+#   - task: Maven@4
+#     inputs:
+#       mavenPomFile: 'pom.xml'
+#       publishJUnitResults: true
+#       testResultsFiles: '**/TEST-*.xml'
+#       javaHomeOption: 'JDKVersion'
+#       jdkVersionOption: '1.17'
+#       mavenVersionOption: 'Default'
+
+# Or a general script:
+#   - script: |
+#       echo "Run, Build Application using script"
+#       ./location_of_script_within_repo/buildscript.sh
+
+  - task: AdvancedSecurity-Dependency-Scanning@1 # More details on this task: https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1?view=azure-pipelines
+
+  - task: AdvancedSecurity-Codeql-Analyze@1 # More details on this task: https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1?view=azure-pipelines
+
+```
+
 > [!TIP]
 > CodeQL analysis for Kotlin is currently in beta. During the beta, analysis of Kotlin will be less comprehensive than CodeQL analysis of other languages.
 > Use `java` to analyze code written in Java, Kotlin or both.
