@@ -6,7 +6,7 @@ ms.topic: include
 ---
 ### Improvements to Approvals REST API
 
-We made searching for approvals assigned to a user more thorough by including approvals assigned to groups the user belongs to.
+We made searching for approvals assigned to a user more thorough by including approvals assigned to the groups the user belongs to.
 
 We made approving pending approvals easier by including information about the pipeline run they belong to.
 

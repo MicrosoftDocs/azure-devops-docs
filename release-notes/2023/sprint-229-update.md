@@ -7,14 +7,6 @@ description: TBD
 ---
 # TBD
 
-We are excited to announce that [GitHub Advanced Security](https://devblogs.microsoft.com/devops/now-generally-available-github-advanced-security-for-azure-devops-is-ready-for-you-to-use/) and Managed identity and service principal support for Azure DevOps are now generally available!
-
-On GitHub Advanced Security, we've also improved code scanning to include all user-provided inputs in the CodeQL Initialize task. In addition, we expanded CodeQL support to include Swift. 
-
-In Boards, we are releasing Team Automation Rules in private preview. Now, you can configure each backlog level to automate the opening and closing/resolving of work items based on the state(s) of their children. Check out the release notes if you are interested in enrolling in the private preview.  
-
-Head over to the feature list below to learn move about these features.
-
 ### General
 
 [!INCLUDE [sprint-229-update-links](includes/general/sprint-229-update-links.md)]
