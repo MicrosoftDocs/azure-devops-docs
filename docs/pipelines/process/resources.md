@@ -923,7 +923,7 @@ Resource triggers can fail to execute for the following reasons.
 
 Using a `pipelines` resource is a way to consume artifacts from a CI pipeline and also configure automated triggers. A resource gives you full visibility into the process by displaying the version consumed, artifacts, commits, and work items. When you define a pipeline resource, the associated artifacts get automatically downloaded in deployment jobs.
 
-You can choose to download the artifacts in build jobs or to override the download behavior in deployment jobs with `download`. The `download` task internally uses the [Download Pipeline Artifacts task](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2).
+You can choose to download the artifacts in build jobs or to override the download behavior in deployment jobs with `download`. The `download` keyword downloads linked artifacts. For more information, see [steps.download](/azure/devops/pipelines/yaml-schema/steps-download).
 
 ### Why should I use `resources` instead of the Download Pipeline Artifacts task?
 
