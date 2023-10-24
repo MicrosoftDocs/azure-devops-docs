@@ -94,12 +94,11 @@ Create a project-level group when you want to manage permissions at the project-
  
     For example, here we define a Work Tracking Administrators group.  
 
-    ![Screenshot of the security group dialog, Add a security group at the organization-level.](media/project-collection/create-new-group-at-org-level.png)  
+    :::image type="content" source="media/project-collection/create-new-group-at-org-level.png" alt-text="Screenshot of the security group dialog, Add a security group at the organization-level.":::
 
 2. Choose **Create** when you're done. 
 
 #### [Current page](#tab/current-page) 
-
 
 ### Create a project-level group 
 
@@ -129,7 +128,7 @@ Create a project-level group when you want to manage permissions at the project-
 
    ![Screenshot of security group dialog, Add a security group at the organization-level.](media/project-collection/create-new-group-at-org-level.png)  
 
-    Choose **Create** when done. 
+2. Select **Create** when you're done. 
 
 ---
 
