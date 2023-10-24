@@ -5,7 +5,7 @@ ms.author: ckanyika
 ms.date: 10/25/2023
 description: TBD
 ---
-# GitHub Advanced Security and Managed identity and service principal support for Azure DevOps are now generally available
+# TBD
 
 We are excited to announce that [GitHub Advanced Security](https://devblogs.microsoft.com/devops/now-generally-available-github-advanced-security-for-azure-devops-is-ready-for-you-to-use/) and Managed identity and service principal support for Azure DevOps are now generally available!
 
