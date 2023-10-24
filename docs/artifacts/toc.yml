@@ -181,7 +181,10 @@
       displayName: upstreams, set up upstreams 
     - name: Manage dependencies with upstream sources
       href: tutorials/protect-oss-packages-with-upstream-sources.md
-      displayName: dependecies, artifacts, upstreams, public package 
+      displayName: dependecies, artifacts, upstreams, public package
+    - name: Use packages from PowerShell Gallery
+      href: tutorials/powershell-upstream-source.md
+      displayName: powershell gallery, upstream 
     - name: Use upstream sources with public feeds
       href: how-to/public-feeds-upstream-sources.md
       displayName: upstream, public feed 
