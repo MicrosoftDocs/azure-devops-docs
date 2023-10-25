@@ -3,7 +3,7 @@ title: Azure DevOps Release Notes - Azure Pipelines Sprint 229 Update
 description: See the Sprint 229 feature updates for Azure Pipelines, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 10/25/2023
+ms.date: 10/26/2023
 ---
 
 # Azure Pipelines - Sprint 229 Update
