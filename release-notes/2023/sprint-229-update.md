@@ -15,6 +15,10 @@ description: TBD
 
 [!INCLUDE [sprint-229-update-links](includes/pipelines/sprint-229-update-links.md)]
 
+### Azure Artifacts
+
+[!INCLUDE [sprint-229-update-links](includes/artifacts/sprint-229-update-links.md)]
+
 ## General
 
 [!INCLUDE [sprint-229-update](includes/general/sprint-229-update.md)]
@@ -22,6 +26,10 @@ description: TBD
 ## Azure Pipelines
 
 [!INCLUDE [sprint-229-update](includes/pipelines/sprint-229-update.md)]
+
+## Azure Artifacts
+
+[!INCLUDE [sprint-229-update](includes/artifacts/sprint-229-update.md)]
 
 ## Next steps
 
