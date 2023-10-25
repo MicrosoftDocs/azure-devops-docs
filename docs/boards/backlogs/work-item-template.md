@@ -334,7 +334,7 @@ For example, choose **User Story** to view templates defined for capturing user 
    - Copy link: Select **Copy link**. Use the URL whenever you want to add a work item of the type you've defined with its predefined values. You can save the URL as a text file, add it to a web page as a hyperlink, copy the link to a shared network, or send to your team via email. Also, consider [adding a link to the team dashboard](#markdown-widget). 
    - Create copy: Select **Create copy**. Name the template, optionally add and remove fields, and then **Save** it when you're done. 
 
-#### [Visual Studio 2015](#tab/visual-studio/)
+### [Visual Studio 2015](#tab/visual-studio/)
 
 <a id="team-explorer-manage" />
 
@@ -380,7 +380,7 @@ You can use Visual Studio with power tools to manage your own work item template
 
 The main method for adding a work item using a template is to open the template link within a browser window. To get the template link, see the [Edit, delete, copy link, create copy](#edit-delete-copy-link-or-create-copy) section.
 
-#### [Visual Studio 2015](#tab/visual-studio/)
+### [Visual Studio 2015](#tab/visual-studio/)
 
 <a id="team-explorer-copy-link" />
 
@@ -400,7 +400,7 @@ You can apply a template to a single work item or do a bulk update of several wo
 
 <a id="team-services-apply" />
 
-#### [Web portal](#tab/browser/)
+### [Web portal](#tab/browser/)
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -462,7 +462,7 @@ You can apply a template to a single work item or do a bulk update of several wo
 
 ::: moniker-end 
 
-#### [Visual Studio 2015](#tab/visual-studio/)
+### [Visual Studio 2015](#tab/visual-studio/)
 
 <a id="team-explorer-apply" />
 
