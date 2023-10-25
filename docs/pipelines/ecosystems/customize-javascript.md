@@ -290,11 +290,9 @@ The following example uses [nyc](https://github.com/istanbuljs/nyc), the Istanbu
     npm test -- --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results.xml
   displayName: 'Build code coverage report'
 
-- task: PublishCodeCoverageResults@1
+- task: PublishCodeCoverageResults@2
   inputs: 
-    codeCoverageTool: Cobertura # or JaCoCo
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
 ```
 
 ::: moniker-end
