@@ -19,7 +19,7 @@ ms.date: 10/25/2023
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
-Use work item templates to quickly create work items that have prepopulated values for your team's commonly used fields or make bulk updates to several work items. For examples showing usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
+With work item templates, you can quickly create work items that have pre-populated values for your team's commonly used fields. You can use work item templates to create work items or make bulk updates to several work items. You can add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. For examples showing usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
 
 Work item templates are distinct from process templates. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) or these specific articles for default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
