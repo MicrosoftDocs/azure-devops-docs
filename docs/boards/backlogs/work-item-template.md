@@ -378,19 +378,7 @@ You can use Visual Studio with power tools to manage your own work item template
 
 ## Add a work item using a template  
 
-The main method for adding a work item using a template is to open the template link within a browser window. To get the template link, see the [Edit, delete, copy link, create copy](#edit-delete-copy-link-or-create-copy) section.
-
-### [Visual Studio 2015](#tab/visual-studio/)
-
-<a id="team-explorer-copy-link" />
-
-1. You can copy the link to a template, which opens in the web portal, by opening the context menu for the template.  
-
-   :::image type="content" source="media/wi-templates-copy-URL-te.png" alt-text="Screenshot of Copy link to template from Visual Studio with Power Tools installed.":::
-
-2. Paste the copied link into a web browser to check that it works as expected.    
-
-* * *
+The main method used to add a work item using a template is to open the template link within a browser window. To get the template link, see the [Edit, delete, copy link, create copy](#edit-delete-copy-link-or-create-copy) section.
 
 <a id="apply"> </a>
 
