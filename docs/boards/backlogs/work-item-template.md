@@ -69,7 +69,7 @@ As shown in the following table, a ✔️ indicates the task is available from t
 ---
 :::row:::
    :::column span="2":::
-      [Copy link (URL) of a template](#copy-link)
+      [Copy link (URL) of a template](#edit-delete-copy-link-or-create-copy)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -380,7 +380,7 @@ You can use Visual Studio with power tools to manage your own work item template
 
 The main method for adding a work item using a template is to open the template link within a browser window. To get the template link, see the [Edit, delete, copy link, create copy](#edit-delete-copy-link-or-create-copy) section.
 
-### [Visual Studio 2015](#tab/visual-studio/)
+#### [Visual Studio 2015](#tab/visual-studio/)
 
 <a id="team-explorer-copy-link" />
 
