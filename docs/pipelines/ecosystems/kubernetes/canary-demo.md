@@ -51,7 +51,7 @@ Here's a brief overview of the files in the repository that are used during this
 
 To install Prometheus on your cluster, use the following command from your development machine. You must have kubectl and Helm installed, and you must set the context to the cluster you want to deploy against. [Grafana](https://grafana.com), which you use later to visualize the baseline and canary metrics on dashboards, is installed as part of this Helm chart.
 
-You'll first add the prometheus-community repository to your Helm installation.  Then you'll install the [kube-prometheus stack](https://github.com/prometheus-operator/kube-prometheus), a collection of Kubernetes manifests, Grafana dashboards, and Prometheus rules.
+You'll first add the [Prometheus Community Kubernetes Helm Charts repository](https://prometheus-community.github.io/helm-charts/) to your Helm installation.  Then you'll install the [kube-prometheus stack](https://github.com/prometheus-operator/kube-prometheus), a collection of Kubernetes manifests, Grafana dashboards, and Prometheus rules.
 
 ```
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
