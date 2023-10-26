@@ -29,3 +29,6 @@ To view and update the **Default branch for manual and scheduled builds** settin
 3. Select **YAML**, **Get sources**, and view the **Default branch for manual and scheduled builds** setting. If you change it, choose **Save** or **Save & queue** to save the change.
 
     :::image type="content" source="media/pipeline-triggers/default-branch-setting.png" alt-text="Default branch for manual and scheduled builds setting."::: 
+
+> [!IMPORTANT]
+> Azure Pipelines loads a maximum of 2000 branches from a repository into the **Default branch for manual and scheduled builds**. If you don't see your desired branch in the list, type the desired branch name manually.

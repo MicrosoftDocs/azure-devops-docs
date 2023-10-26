@@ -109,7 +109,7 @@ steps:
 ```
 
 > [!NOTE] 
-> Pipeline decorator task with service connection usage is not supported for classic release.
+> Pipeline decorator tasks with service connection usage are not supported for classic release pipelines.
 
 ## 3. Install the decorator
 
