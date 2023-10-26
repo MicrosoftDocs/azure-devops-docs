@@ -108,6 +108,9 @@ steps:
     script: dir
 ```
 
+> [!NOTE] 
+> Pipeline decorator task with service connection usage is not supported for classic release.
+
 ## 3. Install the decorator
 
 To add a pipeline decorator to your organization, you must [install an extension](../../marketplace/install-extension.md).
