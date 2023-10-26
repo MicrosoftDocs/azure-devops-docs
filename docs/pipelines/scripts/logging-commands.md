@@ -306,16 +306,6 @@ Update exist timeline record:
 
 #### Usage
 
-> [!IMPORTANT]
-> We make an effort to mask secrets from appearing in Azure Pipelines output, but you still need to take precautions. Never echo secrets as output.
-> Some operating systems log command line arguments. Never pass secrets on the command line.
-> Instead, we suggest that you map your secrets into environment variables.
-> 
-> We never mask substrings of secrets. If, for example, "abc123" is set as a secret, "abc" isn't masked from the logs.
-> This is to avoid masking secrets at too granular of a level, making the logs unreadable.
-> For this reason, secrets should not contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
-> "bar" isn't masked from the logs.
-
 Sets a variable in the variable service of taskcontext. The first task can set a variable, and following tasks are able to use the variable. The variable is exposed to the following tasks as an environment variable.
 
 When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables aren't passed into tasks as environment variables and must instead be passed as inputs.
@@ -447,6 +437,16 @@ You can use macro replacement to get secrets, and they'll be masked in the log: 
 ### SetSecret: Register a value as a secret
 
 `##vso[task.setsecret]value`
+
+> [!IMPORTANT]
+> We make an effort to mask secrets from appearing in Azure Pipelines output, but you still need to take precautions. Never echo secrets as output.
+> Some operating systems log command line arguments. Never pass secrets on the command line.
+> Instead, we suggest that you map your secrets into environment variables.
+> 
+> We never mask substrings of secrets. If, for example, "abc123" is set as a secret, "abc" isn't masked from the logs.
+> This is to avoid masking secrets at too granular of a level, making the logs unreadable.
+> For this reason, secrets should not contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
+> "bar" isn't masked from the logs.
 
 #### Usage
 
