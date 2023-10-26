@@ -4,11 +4,6 @@ ms.author: ckanyika
 ms.date: 10/26/2023
 ms.topic: include
 ---
-### Improvements to Approvals REST API
-
-We've made the search for user-assigned approvals more comprehensive by including approvals assigned to the groups the user belongs to.
-
-In addition, we made it easier to approve pending approvals by including information about the associated pipeline run.
 
 ### Building PRs from forked GitHub repositories
 
