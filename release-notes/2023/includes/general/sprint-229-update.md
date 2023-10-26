@@ -14,6 +14,6 @@ Documentation for the Advanced Security REST APIs is now available through the [
 > ![Screenshot of advanced security section.](../../media/229-general-01.png "Screenshot of advanced security section")
 
 
-### Publish Test Results Task
+### Publish Test Results task
 
 The Publish Test Results task now supports test run attachments for the JUnit report format.

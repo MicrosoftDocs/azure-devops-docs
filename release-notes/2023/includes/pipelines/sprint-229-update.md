@@ -8,9 +8,9 @@ ms.topic: include
 
 We made searching for approvals assigned to a user more thorough by including approvals assigned to the groups the user belongs to.
 
-We made approving pending approvals easier by including information about the pipeline run they belong to.
+We've also improved the ease of approving pending approvals by including information about the pipeline run they belong to.
 
 
 ### Building PRs from forked GitHub repositories
 
-To improve the security of your pipelines, Azure Pipelines no longer automatically builds pull requests from forked GitHub repositories for new projects and organizations. That is, the default value of the _Limit building pull requests from forked GitHub repositories_ setting is _Disable building pull requests from forked repositories_ for new projects and organizations.
+To improve the security of your pipelines, Azure Pipelines no longer automatically builds pull requests from forked GitHub repositories for new projects and organizations. Now, the default value of the _Limit building pull requests from forked GitHub repositories_ setting is _Disable building pull requests from forked repositories_ for new projects and organizations.
