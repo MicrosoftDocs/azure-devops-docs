@@ -1,11 +1,17 @@
 ---
-title:  REST API documentation now available for Advanced Security
+title:  Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks
 author: ckanyika
 ms.author: ckanyika
 ms.date: 10/26/2023
-description: REST API documentation now available for Advanced Security
+description: Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks
 ---
-# TBD
+# Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks
+
+With this update, we are announcing the upcoming deprecation of NuGet Restore v1 and NuGet Installer v0 pipeline tasks. Promptly transition to the NuGetCommand@2 pipeline task to avoid build failure starting on November 27, 2023. 
+
+In Azure Pipelines, we also introduce security improvements for the process of building pull requests from forked GitHub repositories.
+
+Check out the release notes for details.
 
 ### General
 
@@ -52,4 +58,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-Rajesh Ramamurthy
+Silviu Andrica

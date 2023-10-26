@@ -6,10 +6,9 @@ ms.topic: include
 ---
 ### Improvements to Approvals REST API
 
-We made searching for approvals assigned to a user more thorough by including approvals assigned to the groups the user belongs to.
+We've made the search for user-assigned approvals more comprehensive by including approvals assigned to the groups the user belongs to.
 
-We've also improved the ease of approving pending approvals by including information about the pipeline run they belong to.
-
+In addition, we made it easier to approve pending approvals by including information about the associated pipeline run.
 
 ### Building PRs from forked GitHub repositories
 
