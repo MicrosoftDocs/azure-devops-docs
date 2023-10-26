@@ -1,9 +1,9 @@
 ---
-title:  TBD
+title:  REST API documentation now available for Advanced Security
 author: ckanyika
 ms.author: ckanyika
 ms.date: 10/26/2023
-description: TBD
+description: REST API documentation now available for Advanced Security
 ---
 # TBD
 
