@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps Release Notes - Azure Artifacts Sprint 229 Update
+title: Azure DevOps release notes - Azure Artifacts Sprint 229 update
 description: See the Sprint 229 feature updates for Azure Artifacts, including next steps.
 author: ckanyika
 ms.author: ckanyika
