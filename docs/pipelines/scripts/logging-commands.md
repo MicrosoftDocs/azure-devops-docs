@@ -15,6 +15,16 @@ monikerRange: '<= azure-devops'
 Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
 They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md). Logging commands are useful when you're troubleshooting a pipeline. 
 
+> [!IMPORTANT]
+> We make an effort to mask secrets from appearing in Azure Pipelines output, but you still need to take precautions. Never echo secrets as output.
+> Some operating systems log command line arguments. Never pass secrets on the command line.
+> Instead, we suggest that you map your secrets into environment variables.
+> 
+> We never mask substrings of secrets. If, for example, "abc123" is set as a secret, "abc" isn't masked from the logs.
+> This is to avoid masking secrets at too granular of a level, making the logs unreadable.
+> For this reason, secrets should not contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
+> "bar" isn't masked from the logs.
+
 |Type  |Commands  |
 |---------|---------|
 |Task commands     |    [AddAttachment](#addattachment-attach-a-file-to-the-build), [Complete](#complete-finish-timeline), [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [LogIssue](#logissue-log-an-error-or-warning), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [SetProgress](#setprogress-show-percentage-completed), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [SetSecret](#setsecret-register-a-value-as-a-secret), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary) |
@@ -437,16 +447,6 @@ You can use macro replacement to get secrets, and they'll be masked in the log: 
 ### SetSecret: Register a value as a secret
 
 `##vso[task.setsecret]value`
-
-> [!IMPORTANT]
-> We make an effort to mask secrets from appearing in Azure Pipelines output, but you still need to take precautions. Never echo secrets as output.
-> Some operating systems log command line arguments. Never pass secrets on the command line.
-> Instead, we suggest that you map your secrets into environment variables.
-> 
-> We never mask substrings of secrets. If, for example, "abc123" is set as a secret, "abc" isn't masked from the logs.
-> This is to avoid masking secrets at too granular of a level, making the logs unreadable.
-> For this reason, secrets should not contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
-> "bar" isn't masked from the logs.
 
 #### Usage
 
