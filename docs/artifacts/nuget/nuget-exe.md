@@ -86,41 +86,51 @@ Azure Artifacts allows developers to both publish and download NuGet packages fr
 
 ::: moniker range="azure-devops"
 
-## Legacy project setup (NuGet v2)
+## Legacy project setup
 
-1. Select **Artifacts** and then select your feed.
+If you're using an older version of NuGet, follow the instructions below to connect to your feed:
 
-1. Select **Connect to feed**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing the connect to feed button":::
+1. Select **Artifacts** and then select your feed from the dropdown menu.
 
-1. Select **NuGet.exe** from the left panel.
+1. Select **Connect to feed**, and then select **NuGet.exe** from the left panel.
 
-1. Copy your source URL, and then replace `/v3/index.json` with `/v2`.
+1. Copy your source URL, and then replace `/v3/index.json` with `/v2`. Your updated source URL should resemble the following:
 
-    :::image type="content" source="../media/nuget-consume-url-azure-devops-newnav.png" alt-text="Screenshot showing the source URL":::
+    - **Project-scoped feed**:
+    
+        ```
+        https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2
+        ```
+    
+    - **Organization-scoped feed**:
+    
+        ```
+        https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2
+        ```
 
-1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat). Scope your PAT to the organization(s) you want to access and to one of the following scopes: Packaging (read), Packaging (read and write), or Packaging (read, write, and manage).
+1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat), and make sure you scope it to the right organization you want to access and select one of the following scopes: **Packaging (read)**, **Packaging (read and write)**, or **Packaging (read, write, and manage)**.
 
-1. Run the following command in an elevated command prompt window to add your package source:
+1. Run the following command in a command prompt window to add your feed source to your *nuget.config* file:
 
     ```Command
-    nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Any_String_But_Not_Null> -password <Personal_Access_Token>
+    nuget sources add -name <FEED_NAME> -source <SOURCE_URL> -username <ANY_STRING_BUT_NOT_NULL> -password <YOUR_PERSONAL_ACCESS_TOKEN>
     ```
 
 1. If your organization is connected to Microsoft Entra ID, you must first authenticate with your AD credentials and then add your personal access token using the *setapikey* command:
 
     ```Command
-    nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Azure_Active_Directory_UserName> -password <Azure_Active_Directory_Password>
+    nuget sources add -name <FEED_NAME> -source <SOURCE_URL> -username <AZURE_ACTIVE_DIRECTORY_USERNAME> -password <AZURE_ACTIVE_DIRECTORY_PASSWORD>
     
-    nuget setapikey <Personal_Access_Token> -source <Feed_URL> 
+    nuget setapikey <YOUR_PERSONAL_ACCESS_TOKEN> -source <SOURCE_URL> 
     ```
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-## Legacy project setup (NuGet v2)
+## Legacy project setup
 
 1. Select **Build and Release** > **Packages**.
 
