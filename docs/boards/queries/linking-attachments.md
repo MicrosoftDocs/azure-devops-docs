@@ -19,13 +19,7 @@ ms.date: 10/27/2023
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and attach files to share information with your team. You can then list work items based on one or more of the following fields:
 
 ::: moniker range="azure-devops"  
-- Attachment File Count
-- (Discussion) Comment Count 
-- External Link count
-- Hyperlink Count
-- Link Comment
-- Related Link Count
-- Remote Link Count
+Attachment File Count | (Discussion) Comment Count | External Link count| Hyperlink Count| Link Comment| Related Link Count|Remote Link Count
 ::: moniker-end 
 
 ::: moniker range="< azure-devops" 
@@ -41,20 +35,12 @@ For more information about these fields, see the [table provided later in this a
 
 ## Supported operators and macros 
 
-Query clauses that specify an integer field can use the operators listed below.
+Clauses that specify an integer field can use the following operators.
 
 `= , <> , > , < , >= , <= ,`  
 `=[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field],`   
 `In, Not In,`   
 `Was Ever`  
-
-## Link or attachment count queries
-
-You can filter for work items by the link type, link count, or attachment count.  
-
----
-::: moniker-end 
-
 
 <a id="tree" />
 
@@ -72,9 +58,12 @@ Add a query and select **Tree of work items** to begin your query. You should se
 
 ***
 > [!NOTE]
-> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. However, you can create a Direct links query that lists test-related work items. Also, you can, [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md). 
+> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. But, you can create a direct links query that lists test-related work items. Also, you can [view the hierarchy through the Test Plans page](../../test/create-a-test-plan.md). 
 
-From there, you can add query clauses or change the filter options for linked work items. 
+## Options for filters and query clauses
+
+Change the filter options for linked work items and add query clauses via the following options. 
+
 :::row:::
    :::column span="":::
      **Filter for**
@@ -85,7 +74,7 @@ From there, you can add query clauses or change the filter options for linked wo
 :::row-end:::
 :::row:::
    :::column span="":::
-     View only child items of work item 645
+     Only child items of work item 645
    :::column-end:::
    :::column span="":::
       **Add to Filters for top-level work items:**  
@@ -133,13 +122,9 @@ The following query finds work items in all projects that are linked to work ite
 
 :::image type="content" source="media/link-attachments/direct-links-query-web-portal.png" alt-text="Screenshot of Query Editor, Work items, and direct links, Web portal.":::
 
-**Why this works:**
-
-- Checking the **Query across projects** checkbox enables all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to.
-
-- Specifying the **Area Path Under Fabrikam** clause indicates to find only work items that are linked to work items defined under the Fabrikam project.   
-
-- Specifying **Only return items that have matching links**, and **Return selected link types** causes the query to return only work items that are linked based on the **Predecessor** and **Successor** link types.  
+- Check the **Query across projects** checkbox to enable all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to.
+- Specify the **Area Path Under Fabrikam** clause to find only work items that are linked to work items defined under the Fabrikam project.   
+- Specify **Only return items that have matching links**, and **Return selected link types** to return only work items that are linked based on the **Predecessor** and **Successor** link types.  
 
 
 #### [Visual Studio 2015](#tab/visual-studio/)
@@ -148,28 +133,25 @@ Use this type of query to list all dependent work items that link to active Prod
 
 ![Work Items and Dependent Links Query](media/example-work-item-queries/IC588290.png)   
 
-**Why this works:**
+- Remove the **Team Project = @Project** to enable all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to in the collection.
+- Group each of two clauses to return all **Product Backlog Item**s on the backlog or in progress, and the second grouped clause returns all **Bug**s on the backlog or in progress.
+- Group the two clauses with the **OR** operator at the start of the second clause to return work items that match either of the two filter criteria.
+- Choose the **Only return items that have the specified links** to return only top-level work items that have dependencies.
+- Choose **Return links of any type** to return all linked work items that match the filter criteria for linked work items, in this case, returning all work items that aren't under the **Phone Saver\\Phone Customers** area path, and aren't completed or removed.
 
-- Removing the **Team Project = @Project** clause enables all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to in the collection.
+The following image shows the query results.
 
-- Grouping each of two clauses returns all **Product Backlog Item**s on the backlog or in progress, and the second grouped clause returns all **Bug**s on the backlog or in progress.
-
-- Grouping the two clauses with the **OR** operator at the start of the second clause returns work items that match either of the two filter criteria.
-
-- Choosing the **Only return items that have the specified links** returns only top-level work items that have dependencies.
-
-- Choosing **Return links of any type** returns all linked work items that match the filter criteria for linked work items, in this case, returning all work items that aren't under the **Phone Saver\\Phone Customers** area path, and aren't completed or removed.
-
-The following image shows the query results that are returned.
-
-![Direct links query results](media/example-work-item-queries/IC588291.png)  
+![Screenshot of Direct links query results.](media/example-work-item-queries/IC588291.png)  
 
 ***
 <a id="orphan-stories" />
 
 ## List orphan user stories 
 
-If you typically organize your user stories under features, you can quickly find  user stories that are orphan by opening the product backlog, enable **Parents On** view option, and scroll down to the section that lists **Unparented Stories** (Agile) or **Unparented Backlog items** (Scrum).
+If you typically organize your user stories under features, you can quickly find them by doing the following steps.
+
+1. Open the product backlog and turn on the **Parents On** view option. 
+2. Scroll down to the section that lists **Unparented Stories** (Agile) or **Unparented Backlog items** (Scrum).
 
 :::image type="content" source="media/link-attachments/list-orphan-stories.png" alt-text="Screenshot of List orphan stories or backlog items.":::
 
@@ -181,7 +163,7 @@ Or, you can find unparented backlog items using a **Work items and direct links*
 
 ## Fields associated with links and attachments
 
-The following table describes fields associated with links and attachments. Most of these fields don't appear within the work item form, but are tracked for all work item types. 
+The following table describes fields associated with links and attachments. Most of these fields don't appear within the work item form, but get tracked for all work item types. 
 
 :::row:::
    :::column span="1":::
@@ -211,7 +193,7 @@ The following table describes fields associated with links and attachments. Most
 
    :::column-end:::
    :::column span="3":::
-   The number of links from the work item to artifacts that are not work items. such as pull requests, commits, changesets, or other link types.  
+   The number of links from the work item to artifacts that aren't work items. such as pull requests, commits, changesets, or other link types.  
    Reference Name=System.ExternalLinkCount, Data type=Integer
    :::column-end:::
 :::row-end:::
@@ -293,7 +275,7 @@ The following table describes fields associated with links and attachments. Most
 
    :::column-end:::
    :::column span="3":::
-   The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types).  
+   The number of links defined for a work item that use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types).  
    Reference Name=System.RelatedLinkCount, Data type=Integer
    :::column-end:::
 :::row-end:::
@@ -305,7 +287,7 @@ The following table describes fields associated with links and attachments. Most
 
    :::column-end:::
    :::column span="3":::
-   Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Microsoft Entra ID. Supported link types include Consumes From, Produced For, and Remote Related. For more information, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md).  
+   Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. The same Microsoft Entra ID must manage the organizations. Supported link types include Consumes From, Produced For, and Remote Related. For more information, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md).  
    Reference Name=System.RemoteLinkCount, Data type=Integer
    :::column-end:::
 :::row-end:::
@@ -323,16 +305,13 @@ The following table describes fields associated with links and attachments. Most
 
 ### Visualize related work and other objects 
 
-You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
-::: moniker-end 
-
-::: moniker range="< azure-devops" 
+You can view related work items and objects within a work item with the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab.
 
 ### Add custom link types or customize the links controls 
 
 To add link types, see [Manage link types [witadmin]](/previous-versions/azure/devops/reference/witadmin/manage-link-types). 
 
-All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true).  
+All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link. It also controls the types of links that you can create and whether you can link work items in another project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true).  
 
 ### Default data fields in lists of links
 
