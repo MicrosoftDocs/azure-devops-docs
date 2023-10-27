@@ -38,6 +38,14 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="5"><a href="2023/sprint-229-update.md" data-raw-source="[26 October 2023](2023/sprint-229-update.md)"> 26 October 2023</a></td>
+    <td>REST API documentation now available for Advanced Security </td><td>General</td><td>Future</td></tr>
+    <td>Publish Test Results Task</td><td>General</td><td>Future</td></tr>
+    <td>Improvements to Approvals REST API</td><td>Pipelines</td><td>Future</td></tr>  
+    <td>Building PRs from forked GitHub repositories</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks</td><td>Artifacts</td><td>Future</td></tr>
+<tr>
+<tr>
     <td rowspan="8"><a href="2023/sprint-228-update.md" data-raw-source="[4 October 2023](2023/sprint-227-update.md)"> 4 October 2023</a></td>
     <td>Managed identity and service principal support for Azure DevOps now in general availability (GA)</td><td>General</td><td>Future</td></tr>
     <td>New Azure DevOps scopes available for Microsoft Identity OAuth delegated flow apps</td><td>General</td><td>Future</td></tr>
