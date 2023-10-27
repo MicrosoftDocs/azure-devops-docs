@@ -40,7 +40,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
-You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
 
 
 ### Recent updates
@@ -48,12 +48,12 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 * The macOS 13 image is available
 * The macOS 10.15 image is fully unsupported as of 4/24/2023
 * Ubuntu 18.04 has been retired
-* [`ubuntu-latest` images will use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
+* [`ubuntu-latest` images use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
 * [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
 * [The Ubuntu 18.04 image will begin deprecation on 8/8/22 and will be fully unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/6002).
 * [The macOS 10.15 image will begin deprecation on 5/31/22 and will be fully unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583).
-* [`windows-latest` images will use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
-* [`macOS-latest` images will use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
+* [`windows-latest` images use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
+* [`macOS-latest` images use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
 * [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/runner-images/issues/3287).
 * The Windows Server 2016 with Visual Studio 2017 image has been deprecated and will be retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
 * In December 2021, we removed the following Azure Pipelines hosted image:
@@ -89,7 +89,7 @@ You can also query job history for deprecated images across projects using the s
 
 # [YAML](#tab/yaml)
 
-In YAML pipelines, if you do not specify a pool, pipelines will default to the Azure Pipelines agent pool. You simply need to specify which virtual machine image you want to use.
+In YAML pipelines, if you do not specify a pool, pipelines default to the Azure Pipelines agent pool. You simply need to specify which virtual machine image you want to use.
 
 ```yaml
 jobs:
@@ -259,9 +259,10 @@ Microsoft-hosted agents:
   * Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month. [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
   * Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
   * When you create a new Azure DevOps organization, you are not given these free grants by default. To request the free grant for public or private projects, submit [a request](https://aka.ms/azpipelines-parallelism-request).
-* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series)
-* Run as an administrator on Windows and a passwordless sudo user on Linux
-* (Linux only) Run steps in a `cgroup` that offers 6 GB of physical memory and 13 GB of total memory
+* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series).
+* Run as an administrator on Windows and a passwordless sudo user on Linux.
+* (Linux only) Run steps in a `cgroup` that offers 6 GB of physical memory and 13 GB of total memory.
+* Use VM images that are regularly updated (every 3 weeks).
 
 Microsoft-hosted agents do not offer:
 
@@ -272,6 +273,7 @@ Microsoft-hosted agents do not offer:
 * The ability to pre-load custom software. You can install software during a pipeline run, such as through [tool installer tasks](../process/tasks.md#tool-installers) or in a script.
 * Potential performance advantages that you might get by using self-hosted agents that might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
 * The ability to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
+* The ability to roll back to a previous VM image version. You always use the latest version.
 
 If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install) or use [scale set agents](scale-set-agents.md).
 
@@ -322,7 +324,7 @@ All Azure DevOps organizations are provided with several free parallel jobs for 
 
 Your self-hosted agent probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your self-hosted agent. In some cases, Microsoft-hosted agents may have the tools that you need (for example, Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
 
-- You can create a new issue on the [repository](https://github.com/actions/runner-images), where we track requests for additional software. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
+- You can create a new issue on the [repository](https://github.com/actions/runner-images), where we track requests for additional software. Contacting support can't help you set up new software on Microsoft-hosted agents.
 
 - You can use [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md). With these agents, you are fully in control of the images that are used to run your pipelines.
 
