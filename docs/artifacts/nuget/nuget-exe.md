@@ -12,6 +12,16 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+Azure Artifacts allows developers to both publish and download NuGet packages from various sources, including feeds and public registries. You can use it to privately share packages with your team or specific users and also make them publicly accessible, allowing you to share them openly with anyone on the internet.
+
+## Prerequisites
+
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- Install the [latest NuGet version](https://www.nuget.org/downloads).
+
+- Install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+
 ## Project setup
 
 ::: moniker range=">= azure-devops-2019"
