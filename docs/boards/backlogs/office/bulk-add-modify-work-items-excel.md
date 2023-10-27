@@ -35,11 +35,11 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 |Prerequisite  |Description |
 |---------|---------|
-|Microsoft Excel 2010 or later   | Including Microsoft Office Excel 365        |
+|Microsoft Excel 2010 or later   | Including Microsoft Office Excel 365.        |
 |[Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family)    | The only way to get the Azure DevOps Office Integration plug-in is by installing one of the latest editions of Visual Studio or the Azure DevOps Office Integration installer. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.        |
-|[Member of the project](../../../organizations/security/add-users-team-project.md)    | If you don't have an Azure Boards project yet, [create one now](../../get-started/sign-up-invite-teammates.md)        |
-|Permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**  | By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md)        |
-|**Stakeholder** access or higher   | For more information, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md)        |
+|[Member of the project](../../../organizations/security/add-users-team-project.md)    | If you don't have an Azure Boards project yet, [create one now](../../get-started/sign-up-invite-teammates.md).        |
+|Permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**  | By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).        |
+|**Stakeholder** access or higher   | For more information, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md).        |
 |[Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/)   | To use the [Select User](#select-user) feature, you can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.          |
 
 ::: moniker-end  
@@ -48,11 +48,11 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 |Prerequisite  |Description |
 |---------|---------|
-|Microsoft Excel 2010 or later   | Including Microsoft Office Excel 365        |
+|Microsoft Excel 2010 or later   | Including Microsoft Office Excel 365.        |
 |[Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family)    | The only way to get the plug-in is by installing one of the latest editions of Visual Studio or the Azure DevOps Standalone Office Integration installer. The Azure DevOps Office Integration 2019 plug-in supports connection to Azure Boards and Azure DevOps from Excel, Project, and the PowerPoint-based storyboarding tool.   |
 |[Member of the project](../../../organizations/security/add-users-team-project.md)    | To connect to an Azure Boards project, you must be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, [create one now](../../../organizations/projects/create-project.md).         |
-|Permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**  | By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md)        |
-|**Stakeholder** access or higher   | For more information, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md)        |
+|Permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**  | By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).        |
+|**Stakeholder** access or higher   | For more information, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md).        |
 |[Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/)   | To use the [Select User](#select-user) feature, install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.      |
 
 ::: moniker-end  
@@ -64,7 +64,9 @@ For more information about compatibility requirements, see [Compatibility with A
 
 You can add, modify, publish, and refresh work items using any query type and list type. 
 
-[Use a flat list](../../queries/using-queries.md#flat-list) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their tree-topology links. Do the following best practices:
+[Use a flat list](../../queries/using-queries.md#flat-list) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. 
+
+[Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their tree-topology links. Do the following best practices:
 
 ::: moniker range="azure-devops" 
 - Use an **input list, flat list**: To import a list of work items or create new work items, no hierarchy   
@@ -84,8 +86,8 @@ You can add, modify, publish, and refresh work items using any query type and li
 ### Query types  
 
 **Query types**: 
-	- **None**: Indicates it's an **input list**. 
-	- **Query title**: Indicates the list of work items is tied to the specified **query**. 
+- **None**: Indicates it's an **input list**. 
+- **Query title**: Indicates the list of work items is tied to the specified **query**. 
 
 Azure Boards supports three query types. The icon next to each query indicates the query type. The first two query types, **Flat list of work items** and **Work items and direct links** are imported as flat list queries. 
 
@@ -100,12 +102,14 @@ Only the **Tree of work items** queries import as a tree list. Direct links quer
 You can bulk add a nested list of work items, such as a work breakdown structure or a hierarchical set of user stories and customer experiences. For example, you can add a nested list of tasks, subtasks, and bugs, as shown in the following illustration, or linked tasks to product backlog items.
 
 **List types**: 
-	- **Flat list**: Simple list of work items that shows a single **Title** column. No link management is supported. 
-	- **Tree list**: Hierarchical list of work items that support creating and updating tree topology links, such as Parent-Child links, between work items. These lists include two or more **Title** columns.  
+- **Flat list**: Simple list of work items that shows a single **Title** column. No link management is supported. 
+- **Tree list**: Hierarchical list of work items that support creating and updating tree topology links, such as Parent-Child links, between work items. These lists include two or more **Title** columns.  
 
 :::image type="content" source="media/IC354953.png" alt-text="Screenshot of Tree list of work items, conceptual image.":::
 
 Parent-child links or other tree topology link types support creating a hierarchical backlog structure. The work item types that participate in the hierarchy differ with different processes and are shown in the following images. 
+
+**Hierarchies**
 
 [!INCLUDE [temp](../../includes/work-item-types.md)]
 
@@ -117,7 +121,9 @@ You can open in Excel any query you've defined in Azure Boards. That includes qu
 
 ## Use Excel features 
 
-You can use most Excel features when working with a list of work items. For example, you can use the following features: 
+You can use most Excel features when working with a list of work items. 
+
+**Features:**
 
 - Format a cell or apply conditional formatting to a cell or column 
 - Cut and paste from one cell to other cells 
@@ -129,7 +135,7 @@ You can use most Excel features when working with a list of work items. For exam
 
 Each worksheet in Excel can contain a different input list or query. However, all worksheets within the workbook must connect to the same project within an organization or project collection.
 
-The following features work slightly differently when working with a worksheet connected to Azure Boards.  
+The following features work slightly differently when you're working with a worksheet connected to Azure Boards.  
 
 - Each cell or column of cells corresponds to a work item field. Each field is associated with a data type. You can't enter data into an Excel cell that doesn't meet the data type and requirements for that field.  
 - You can only insert a single row at a time within the worksheet. 
@@ -138,15 +144,11 @@ The following features work slightly differently when working with a worksheet c
 - Use **Outdent** and **Indent** to change the location of a work item within the tree. 
 - Undo (Ctrl Z) might not work. If you do something that you want to revert, you can refresh the worksheet. 
 
-We recommend you publish and refresh your worksheet often to make sure your local work remains in sync with Azure Boards data store.
-
-For more information about Excel, see [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) .
+We recommend you publish and refresh your worksheet often to make sure your local work remains in sync with Azure Boards data store. For more information about Excel, see [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) .
 
 ###  Sort work items  
 
-You can sort work item flat lists using the [Excel sort feature](https://support.office.com/article/sort-data-in-a-range-or-table-62d0b95d-2a90-4610-a6ae-2e545c4a4654). 
-
-However, if you're working from a tree list, you don't want to do any type of sort. Doing so changes the tree structure and as such, the links between work items.  
+You can sort work item flat lists using the [Excel sort feature](https://support.office.com/article/sort-data-in-a-range-or-table-62d0b95d-2a90-4610-a6ae-2e545c4a4654). But, if you're working from a tree list, you don't want to do any type of sort. Doing so changes the tree structure and as such, the links between work items.  
 
 If you want to use Excel to manage the order of your work items as they appear in a [team backlog](../create-your-backlog.md#reorder-your-backlog), you can do that by using the [Stack Rank](../../queries/planning-ranking-priorities.md#fields-table) or [Backlog Priority](../../queries/planning-ranking-priorities.md#fields-table) field (Agile or Scrum process). You can set values in these fields, publish your worksheet, and refresh your backlog. Your backlog items should appear reordered based on lowest to highest number. However, the next time the backlog is reordered from the backlog, the values you entered are subject to change. 
 
@@ -154,39 +156,41 @@ If you want to maintain a certain order of work items, consider adding a custom 
 
 ### Tasks you can and can't do with Excel
 
-You can do the following tasks: 
 
-- Add tags and bulk update work items with tags as described in [Add work item tags to categorize and filter lists and boards](../../queries/add-tags-to-work-items.md).
-	Add the **Tags** field to your worksheet. Add multiple tags separated by a semicolon (;). 
-- You can add simple text to a rich-text field, but if you're updating several work items in bulk, you might lose formatting in existing work items. 
-- You can work offline and then reconnect and publish your changes. For more information, see [Connect Azure Boards to an Office client, Work offline, and reconnect](track-work.md#work-offline).
+You can and can't do the following tasks from an Excel worksheet: 
 
-You can't do the following tasks from an Excel worksheet: 
+**Can do:**
+
+- Add tags and bulk update work items with tags as described in [Add work item tags to categorize and filter lists and boards](../../queries/add-tags-to-work-items.md). Add the **Tags** field to your worksheet. Add multiple tags separated by a semicolon (;). 
+- Add simple text to a rich-text field, but if you're updating several work items in bulk, you might lose formatting in existing work items. 
+- Work offline and then reconnect and publish your changes. For more information, see [Connect Azure Boards to an Office client, Work offline, and reconnect](track-work.md#work-offline).
+
+**Can't do:**
 
 ::: moniker range="azure-devops" 
-- You can't delete work items 
-- You can't change the work item type of an existing work item
-- You can't move work items to another project  
-- You can't import or update test case steps or other test artifacts 
-- You can't add work items in any other State than the new State 
-- You can't add to a work item discussion thread 
-- You can't link to a remote work item. 
+- Delete work items 
+- Change the work item type of an existing work item
+- Move work items to another project  
+- Import or update test case steps or other test artifacts 
+- Add work items in any other State than the new State 
+- Add to a work item discussion thread 
+- Link to a remote work item. 
 ::: moniker-end  
 
 ::: moniker range="azure-devops-2020" 
-- You can't delete work items 
-- You can't change the work item type of an existing work item
-- You can't move work items to another project  
-- You can't import or update test case steps or other test artifacts 
-- You can't add work items in any other State than the new State 
-- You can't add to a work item discussion thread. 
+- Delete work items 
+- Change the work item type of an existing work item
+- Move work items to another project  
+- Import or update test case steps or other test artifacts 
+- Add work items in any other State than the new State 
+- Add to a work item discussion thread. 
 ::: moniker-end  
 
 ::: moniker range="<= azure-devops-2019" 
-- You can't delete work items 
-- You can't import or update test case steps or other test artifacts 
-- You can't add work items in any other State than the new State 
-- You can't add to a work item discussion thread 
+- Delete work items 
+- Import or update test case steps or other test artifacts 
+- Add work items in any other State than the new State 
+- Add to a work item discussion thread 
 ::: moniker-end  
 
 <a id="add-work-items"> </a>  
@@ -204,7 +208,7 @@ You can't do the following tasks from an Excel worksheet:
 
    :::image type="content" source="media/excel/team-ribbon.png" alt-text="Screenshot of Choose New List.":::
 
-4.	From the **New List** dialog, choose **Input list**.  
+4. From the **New List** dialog, choose **Input list**.  
 
     :::image type="content" source="media/excel/2019-input-list-dialog.png" alt-text="Screenshot of Select input list.":::
 
@@ -212,13 +216,13 @@ You can't do the following tasks from an Excel worksheet:
 
 	:::image type="content" source="media/excel/2019-input-list.png" alt-text="Screenshot of Empty flat list connected to a project."::: 
 
-6.  Specify the titles of the work items you want to add and their work item type.
+6. Specify the titles of the work items you want to add and their work item type.
 
 	:::image type="content" source="media/excel/2019-specify-titles.png" alt-text="Screenshot of adding work items to Excel.":::
 
     The **State** and **Reason** fields automatically populate with default values once your select the work item type.
 
-7.  Publish your worksheet. 
+7. **Publish** your worksheet. 
 
 	:::image type="content" source="media/excel/2019-publish.png" alt-text="Screenshot of Publish your worksheet.":::
 
@@ -306,7 +310,7 @@ You can add a hierarchy of work items linked using parent-child links or other t
 
 3. **Refresh** your worksheet. The column containing empty values for the Title is removed. 
 
-	You receive an error message if you attempt to delete the column. 
+	You get an error message if you attempt to delete the column. 
 
 ### Tips for working with a tree list 
 
@@ -545,15 +549,15 @@ You can edit any link listed. You can change the link type and the work items li
 
 ## Add attachments
 
-- To add attachments, choose the work item, then **Links and Attachments**, and then the **Attachments** tab.  
+1. Open the work item, then select **Links and Attachments** > **Attachments**.  
 
-	Choose the file you want to attach, then choose **OK** and then **Publish**.  
+	Choose the file you want to attach, then select **OK** > **Publish**.  
 
 	:::image type="content" source="media/excel/add-attachment.png" alt-text="Screenshot of Links and Attachments dialog, Add Attachment.":::
 
-	When finished, choose **Close** to dismiss the dialog. 
+	When you're done, select **Close** to dismiss the dialog. 
 
-- To add the same attachment(s) to several work items, multi-select them by using **Ctrl-click** for consecutive rows, or **Shift-click** for nonconsecutive rows. 
+2. Optional: To add the same attachment(s) to several work items, multi-select them by using **Ctrl-click** for consecutive rows, or **Shift-click** for nonconsecutive rows. 
 
 ## Create a report 
 
@@ -562,7 +566,7 @@ You can create a report or chart from the web portal for flat-list queries. See 
 > [!IMPORTANT]
 > You can only create an Excel report using **New Report** from an on-premises Azure DevOps Server. These reports require that your project's project collection is configured to support SQL Server Analytics Server. 
  
-You can create a report using the **New Report** feature based on a flat list of work items. 
+Select **New Report**.
 
 :::image type="content" source="media/excel/team-ribbon-new-report.png" alt-text="Screenshot of Create a report using the New Report feature.":::
 
