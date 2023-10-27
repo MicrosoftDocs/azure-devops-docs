@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 07/26/2022
+ms.date: 10/27/2023
 ---
 
 # Query work items by link or attachment count  
@@ -28,7 +28,6 @@ You can [link work items to track related work and dependencies](link-work-items
 - Remote Link Count
 ::: moniker-end 
 
-
 ::: moniker range="< azure-devops" 
 - Attachment File Count
 - (Discussion) Comment Count 
@@ -38,8 +37,7 @@ You can [link work items to track related work and dependencies](link-work-items
 - Related Link Count
 ::: moniker-end 
 
-
-For descriptions of each of these fields, see the [table provided later in this article](#table-field). 
+For more information about these fields, see the [table provided later in this article](#table-field). 
 
 ## Supported operators and macros 
 
@@ -173,8 +171,7 @@ The following image shows the query results that are returned.
 
 If you typically organize your user stories under features, you can quickly find  user stories that are orphan by opening the product backlog, enable **Parents On** view option, and scroll down to the section that lists **Unparented Stories** (Agile) or **Unparented Backlog items** (Scrum).
 
-> [!div class="mx-imgBorder"]  
-> ![List orphan stories or backlog items](media/link-attachments/list-orphan-stories.png) 
+:::image type="content" source="media/link-attachments/list-orphan-stories.png" alt-text="Screenshot of List orphan stories or backlog items.":::
 
 Or, you can find unparented backlog items using a **Work items and direct links** query. For example, the following query lists active user stories for the Azure DevOps team that don't have a Parent link. 
 
@@ -182,7 +179,7 @@ Or, you can find unparented backlog items using a **Work items and direct links*
 <a id="table-field"/>
 <a id="fields" />
 
-## Link, attachment count, and comment fields 
+## Fields associated with links and attachments
 
 The following table describes fields associated with links and attachments. Most of these fields don't appear within the work item form, but are tracked for all work item types. 
 
@@ -196,9 +193,6 @@ The following table describes fields associated with links and attachments. Most
    > [!NOTE]
    > For Azure Boards (cloud service), you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.  
    :::column-end:::
-   :::column span="1":::
-   All
-   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
@@ -207,9 +201,6 @@ The following table describes fields associated with links and attachments. Most
    :::column span="3":::
    The number of comments added to the **Discussion** section of the work item.  
    Reference Name=System.CommentCount, Data type=Integer  
-   :::column-end:::
-   :::column span="1":::
-   All
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -222,9 +213,6 @@ The following table describes fields associated with links and attachments. Most
    :::column span="3":::
    The number of links from the work item to artifacts that are not work items. such as pull requests, commits, changesets, or other link types.  
    Reference Name=System.ExternalLinkCount, Data type=Integer
-   :::column-end:::
-   :::column span="1":::
-   All
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -239,9 +227,6 @@ The following table describes fields associated with links and attachments. Most
 
    Reference Name=System.HyperLinkCount, Data type=Integer
    :::column-end:::
-   :::column span="1":::
-   All
-   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
@@ -251,9 +236,6 @@ The following table describes fields associated with links and attachments. Most
    Contains comments from the team member who created the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.)  
 
    Reference Name=System.Links.Comment, Data type=PlainText
-   :::column-end:::
-   :::column span="1":::
-   All
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -266,9 +248,6 @@ The following table describes fields associated with links and attachments. Most
    Contains the work item type, ID, and title of the work item that is the target of the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.) 
 
    Reference Name=System.Links.Description, Data type=PlainText
-   :::column-end:::
-   :::column span="1":::
-   All
    :::column-end:::
 :::row-end:::
 ::: moniker range=">= azure-devops-2022" 
@@ -304,9 +283,6 @@ The following table describes fields associated with links and attachments. Most
    > The **Parent** field is available from Azure DevOps Server 2020 and later versions. You can't specify this field within a query clause.   
    Reference Name=System.Parent, Data type=Integer
    :::column-end:::
-   :::column span="1":::
-   All
-   :::column-end:::
 :::row-end:::
 ::: moniker-end 
 :::row:::
@@ -320,9 +296,6 @@ The following table describes fields associated with links and attachments. Most
    The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types).  
    Reference Name=System.RelatedLinkCount, Data type=Integer
    :::column-end:::
-   :::column span="1":::
-   All
-   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
@@ -335,22 +308,16 @@ The following table describes fields associated with links and attachments. Most
    Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Microsoft Entra ID. Supported link types include Consumes From, Produced For, and Remote Related. For more information, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md).  
    Reference Name=System.RemoteLinkCount, Data type=Integer
    :::column-end:::
-   :::column span="1":::
-   All
-   :::column-end:::
 :::row-end:::
 
 ## Related articles
 
 - [Add a link to multiple work items](../backlogs/add-link.md) 
 - [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md) 
-- [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Query quick reference](query-index-quick-ref.md)
 - [Query editor](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
-- [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 
-
 
 ::: moniker range="< azure-devops" 
 

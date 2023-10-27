@@ -588,7 +588,7 @@ To resolve publishing errors that might arise when you're working in Excel, see 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Next steps button](contribute-get-started-mvc.md)
+> [Integrate Azure Boards and GitHub](../../github/index.md)
 
 ## Related articles
 
