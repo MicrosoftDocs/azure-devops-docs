@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 > [!NOTE]
 > To integrate Bitbucket Cloud with Azure Pipelines, see [Bitbucket Cloud](bitbucket.md).
 
-You can integrate your on-premises Bitbucket server or another Git server with Azure Pipelines. Your on-premises server may be exposed to the Internet or it may not be.
+You can integrate your on-premises Bitbucket server or another Git server with Azure Pipelines. Your on-premises server might be exposed to the Internet or it might not be.
 
 If your on-premises server is reachable from the servers that run Azure Pipelines service, then:
 - you can set up classic build and configure CI triggers
@@ -93,7 +93,7 @@ Problems related to Bitbucket Server integration fall into the following categor
 
 Follow each of these steps to troubleshoot your failing triggers:
 
-* Is your Bitbucket server accessible from Azure Pipelines? Azure Pipelines periodically polls Bitbucket server for changes. If the Bitbucket server is behind a firewall, this traffic may not reach your server. For more information, see [Azure DevOps IP Addresses](#azure-devops-ip-addresses) and verify that you have granted exceptions to all the required IP addresses. These IP addresses may have changed since you have originally set up the exception rules. You can only start manual runs if you used an external Git connection and if your server isn't accessible from Azure Pipelines.
+* Is your Bitbucket server accessible from Azure Pipelines? Azure Pipelines periodically polls Bitbucket server for changes. If the Bitbucket server is behind a firewall, this traffic might not reach your server. For more information, see [Azure DevOps IP Addresses](#azure-devops-ip-addresses) and verify that you have granted exceptions to all the required IP addresses. These IP addresses might have changed since you have originally set up the exception rules. You can only start manual runs if you used an external Git connection and if your server isn't accessible from Azure Pipelines.
 
 * Is your pipeline paused or disabled? Open the editor for the pipeline, and then select **Settings** to check. If your pipeline is paused or disabled, then triggers do not work.
 
@@ -111,4 +111,4 @@ Follow each of these steps to troubleshoot your failing triggers:
 
 #### The checkout step fails with the error that the server can't be resolved.
 
-Do you use Microsoft-hosted agents? If so, these agents may not be able to reach your Bitbucket server. See [Not reachable from Microsoft-hosted agents](#not-reachable-from-microsoft-hosted-agents) for more information.
+Do you use Microsoft-hosted agents? If so, these agents might not be able to reach your Bitbucket server. See [Not reachable from Microsoft-hosted agents](#not-reachable-from-microsoft-hosted-agents) for more information.

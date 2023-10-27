@@ -257,7 +257,7 @@ Pipeline decorators currently work with Azure Dev Ops Git and GitHub. They do no
 -->
 ## Debug
 
-You might need to debug when you create your decorator. You also may want to see what data you have available in the context.
+You might need to debug when you create your decorator. You also might want to see what data you have available in the context.
 
 You can set the `system.debugContext` variable to `true` when you queue a pipeline.
 Then, look at the pipeline summary page.
