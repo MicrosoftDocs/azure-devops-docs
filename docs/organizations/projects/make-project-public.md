@@ -1,7 +1,7 @@
 ---
-title: Make your private project public
-titleSuffix: Azure DevOps Services Public Project 
-description: Change your project visibility from private to public and learn about access levels and feature restrictions for public projects. 
+title: Change project to public or private
+titleSuffix: Azure DevOps Services Public and Private Projects
+description: Change your project visibility (private or public) and learn about access levels and feature restrictions for public projects. 
 ms.subservice: azure-devops-public-projects
 ms.assetid:
 ms.reviewer: 
@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 ms.date: 11/07/2022
 ---
 
-# Make your private project public
+# Change project to public or private
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 

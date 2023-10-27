@@ -3,7 +3,7 @@ title: Plan an approach to secure your YAML pipelines
 description: Apply security recommendations incrementally in your YAML pipelines. Incremental improvements add up.
 ms.assetid: a506a55a-2379-4d14-a52c-f4c28abae0ec
 ms.reviewer: vijayma
-ms.date: 01/26/2023
+ms.date: 10/27/2023
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -33,15 +33,29 @@ This way, as you start to apply security practices, you have a centralized place
 
 For more information, see [Templates](templates.md).
 
+:::moniker range=">= azure-devops-2022"
+
 ## Disable creation of classic pipelines
+
+:::moniker-end
+
+:::moniker range="=azure-devops-2022"
+
+[!INCLUDE [feature-added-2022-1](../../includes/feature-added-2022-1.md)]
+
+:::moniker-end
+
+:::moniker range=">= azure-devops-2022"
 
 If you develop *only* YAML pipelines, disable creation of classic build and release pipelines. Doing so prevents a security concern that stems from YAML and classic pipelines sharing the same resources, for example the same service connections. 
 
-When the feature is enabled, no classic build pipeline, classic release pipeline, task groups, and deployment groups can be created using either the user interface or the REST API.
+You can disable the creation of classic build pipelines and classic release pipelines independently. When you disable both, no classic build pipeline, classic release pipeline, task groups, and deployment groups can be created using either the user interface or the REST API.
 
-You can disable creation of classic pipelines by turning on a toggle at either organization level or project level. To turn it on, navigate to your *Organization / Project settings*, then under the *Pipelines* section choose *Settings*. In the *General* section, toggle on *Disable creation of classic build and classic release pipelines*.
+You can disable creation of classic pipelines by turning on two toggles at either organization level or project level. To turn them on, navigate to your *Organization / Project settings*, then under the *Pipelines* section choose *Settings*. In the *General* section, toggle on *Disable creation of classic build pipelines* and *Disable creation of classic release pipelines*.
 
-When you turn it on at organization level, it is on for all projects in that organization. If you leave it off, you can choose for which projects you wish to turn it on.
+When you turn them on at organization level, it is on for all projects in that organization. If you leave them off, you can choose for which projects you wish to turn them on.
+
+:::moniker-end
 
 ## Next steps
 
