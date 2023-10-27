@@ -325,7 +325,7 @@ For example, choose **User Story** to view templates defined for capturing user 
 
 ### Edit, delete, copy link, or create copy
 
-1. From the work item type page, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template to access the menu options to **Edit**, **Delete**, **Copy link**, or **Create copy**.  
+From the work item type page, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template to access the menu options to **Edit**, **Delete**, **Copy link**, or **Create copy**.  
 
 	:::image type="content" source="media/wi-templates-template-action-menu.png" alt-text="Screenshot of Open template action menu."::: 
 
