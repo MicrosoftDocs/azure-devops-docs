@@ -327,12 +327,12 @@ For example, choose **User Story** to view templates defined for capturing user 
 
 From the work item type page, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template to access the menu options to **Edit**, **Delete**, **Copy link**, or **Create copy**.  
 
-	:::image type="content" source="media/wi-templates-template-action-menu.png" alt-text="Screenshot of Open template action menu."::: 
+:::image type="content" source="media/wi-templates-template-action-menu.png" alt-text="Screenshot of Open template action menu."::: 
 
-   - Edit: Select **Edit** and **Save** your changes.
-   - Delete: Select **Delete**, and then **Delete** again from the Delete template confirmation dialog. Once you delete a template, you can't recover it.
-   - Copy link: Select **Copy link**. Use the URL whenever you want to add a work item of the type you've defined with its predefined values. You can save the URL as a text file, add it to a web page as a hyperlink, copy the link to a shared network, or send to your team via email. Also, consider [adding a link to the team dashboard](#markdown-widget). 
-   - Create copy: Select **Create copy**. Name the template, optionally add and remove fields, and then **Save** it when you're done. 
+- Edit: Select **Edit** and **Save** your changes.
+- Delete: Select **Delete**, and then **Delete** again from the Delete template confirmation dialog. Once you delete a template, you can't recover it.
+- Copy link: Select **Copy link**. Use the URL whenever you want to add a work item of the type you've defined with its predefined values. You can save the URL as a text file, add it to a web page as a hyperlink, copy the link to a shared network, or send to your team via email. Also, consider [adding a link to the team dashboard](#markdown-widget). 
+- Create copy: Select **Create copy**. Name the template, optionally add and remove fields, and then **Save** it when you're done. 
 
 ### [Visual Studio 2015](#tab/visual-studio/)
 
