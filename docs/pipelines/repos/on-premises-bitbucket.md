@@ -2,7 +2,7 @@
 title: Build code from on-premises Bitbucket server
 description: Using on-premises Bitbucket with Azure Pipelines
 ms.topic: reference
-ms.date: 01/25/2023
+ms.date: 10/27/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -75,6 +75,10 @@ Allow Azure Pipelines to attempt accessing the Git server in the **Other Git** s
 [!INCLUDE [informational-runs](../includes/information-run-include.md)]
 
 Learn more about [informational runs](../process/information-run.md).
+
+## Limitations
+
+[!INCLUDE [bb-limitations](./includes/bb-limitations.md)]
 
 ## FAQ
 
