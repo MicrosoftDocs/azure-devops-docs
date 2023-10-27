@@ -39,10 +39,9 @@ For more information, see [Templates](templates.md).
 
 :::moniker-end
 
-:::moniker range="= azure-devops-2022"
+:::moniker range="=azure-devops-2022"
 
-> [!NOTE]
-> This feature is available starting in Azure DevOps Server 2022.1.
+[!INCLUDE [feature-added-2022-1](../../includes/feature-added-2022-1.md)]
 
 :::moniker-end
 
