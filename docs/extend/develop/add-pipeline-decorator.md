@@ -108,6 +108,9 @@ steps:
     script: dir
 ```
 
+> [!NOTE] 
+> Pipeline decorator tasks with service connection usage are not supported for classic release pipelines.
+
 ## 3. Install the decorator
 
 To add a pipeline decorator to your organization, you must [install an extension](../../marketplace/install-extension.md).
@@ -254,7 +257,7 @@ Pipeline decorators currently work with Azure Dev Ops Git and GitHub. They do no
 -->
 ## Debug
 
-You might need to debug when you create your decorator. You also may want to see what data you have available in the context.
+You might need to debug when you create your decorator. You also might want to see what data you have available in the context.
 
 You can set the `system.debugContext` variable to `true` when you queue a pipeline.
 Then, look at the pipeline summary page.
