@@ -18,7 +18,7 @@ You can integrate your on-premises Bitbucket server or another Git server with A
 If your on-premises server is reachable from the servers that run Azure Pipelines service, then:
 - you can set up classic build and configure CI triggers
 
-If your on-premises server is not reachable from the servers that run Azure Pipelines service, then:
+If your on-premises server isn't reachable from the servers that run Azure Pipelines service, then:
 - you can set up classic build pipelines and start manual builds
 - you can't configure CI triggers
 
@@ -84,16 +84,16 @@ Learn more about [informational runs](../process/information-run.md).
 
 Problems related to Bitbucket Server integration fall into the following categories:
 
-* **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+* **[Failing triggers](#failing-triggers):** My pipeline isn't being triggered when I push an update to the repo.
 * **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
 
 ### Failing triggers
 
-#### I pushed a change to my server, but the pipeline is not being triggered.
+#### I pushed a change to my server, but the pipeline isn't being triggered.
 
 Follow each of these steps to troubleshoot your failing triggers:
 
-* Is your Bitbucket server accessible from Azure Pipelines? Azure Pipelines periodically polls Bitbucket server for changes. If the Bitbucket server is behind a firewall, this traffic may not reach your server. For more information, see [Azure DevOps IP Addresses](#azure-devops-ip-addresses) and verify that you have granted exceptions to all the required IP addresses. These IP addresses may have changed since you have originally set up the exception rules. You can only start manual runs if you used an external Git connection and if your server is not accessible from Azure Pipelines.
+* Is your Bitbucket server accessible from Azure Pipelines? Azure Pipelines periodically polls Bitbucket server for changes. If the Bitbucket server is behind a firewall, this traffic may not reach your server. For more information, see [Azure DevOps IP Addresses](#azure-devops-ip-addresses) and verify that you have granted exceptions to all the required IP addresses. These IP addresses may have changed since you have originally set up the exception rules. You can only start manual runs if you used an external Git connection and if your server isn't accessible from Azure Pipelines.
 
 * Is your pipeline paused or disabled? Open the editor for the pipeline, and then select **Settings** to check. If your pipeline is paused or disabled, then triggers do not work.
 
@@ -107,7 +107,7 @@ Follow each of these steps to troubleshoot your failing triggers:
 
 #### When I attempt to start a new run manually, there is a delay of 4-8 minutes before it starts.
 
-* Your Bitbucket server is not reachable from Azure Pipelines. Make sure that you have not selected the option to **attempt accessing this Git server from Azure Pipelines** in the Bitbucket service connection. If that option is selected, Azure Pipelines will attempt to contact to your server and since your server is unreachable, it eventually times out and starts the run anyway. Unchecking that option speeds up your manual runs.
+* Your Bitbucket server isn't reachable from Azure Pipelines. Make sure that you have not selected the option to **attempt accessing this Git server from Azure Pipelines** in the Bitbucket service connection. If that option is selected, Azure Pipelines will attempt to contact to your server and since your server is unreachable, it eventually times out and starts the run anyway. Unchecking that option speeds up your manual runs.
 
 #### The checkout step fails with the error that the server can't be resolved.
 
