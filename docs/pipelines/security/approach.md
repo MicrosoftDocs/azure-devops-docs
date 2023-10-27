@@ -44,9 +44,9 @@ For more information, see [Templates](templates.md).
 > [!NOTE]
 > This feature is available starting in Azure DevOps Server 2022.1.
 
-:::moniker range=">= azure-devops-2022"
-
 :::moniker-end
+
+:::moniker range=">= azure-devops-2022"
 
 If you develop *only* YAML pipelines, disable creation of classic build and release pipelines. Doing so prevents a security concern that stems from YAML and classic pipelines sharing the same resources, for example the same service connections. 
 
