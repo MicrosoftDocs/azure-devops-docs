@@ -84,6 +84,22 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
     ```
 ---
 
+## Create a service principal
+
+In this step, we will create a new service principal in Azure, enabling us to query our Azure Key Vault from Azure Pipelines.
+
+1. Navigate to [Azure portal](https://portal.azure.com/).
+
+1. From the menu bar, select the **>_** icon to open the **Cloud Shell**.
+
+1. Select **PowerShell** or leave it as **Bash** based on your preference.
+
+1. Run the following command to create a new service principal:
+
+    ```Azure CLI
+    az ad sp create-for-rbac -name YOUR_SERVICE_PRINCIPAL_NAME
+    ```
+
 ## Configure Key Vault access permissions
 
 Before proceeding with the next steps, we must first create a service principal to be able to query our Azure Key Vault from Azure Pipelines. Complete the steps in [Create a service principal](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal), and then continue with the next steps.
