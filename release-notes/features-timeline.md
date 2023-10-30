@@ -428,6 +428,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/boards-bot-better-ab-validation" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/roadmap/2023/boards-bot-better-ab-validation)">Improved AB# validation (preview)</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>
+      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings" data-raw-source="[In-product recommendations for secure settings](/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td>
         <td>Pipelines</td>
         <td>Future</td>
