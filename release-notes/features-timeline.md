@@ -247,7 +247,7 @@ These investments include:
          <td>2023 Q4</td>
          <td>Future</td>
       </tr>
-       <tr>
+      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item)">Add link to GitHub Commit or Pull Request from work item</a></td>
          <td>Boards</td>
          <td>2024 Q1</td>
@@ -463,7 +463,17 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-      <td rowspan="23"><strong>Future</strong></td>
+       <td rowspan="2"><strong>2024 Q1</strong></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item)">Add link to GitHub Commit or Pull Request from work item</a></td>
+        <td>Boards</td>         
+        <td>Future</td>
+      </tr>      
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item)">Show more details about a GitHub Pull Request</a></td>
+         <td>Boards</td>      
+         <td>Future</td>
+      </tr>
+      <td rowspan="25"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -487,6 +497,16 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
         <td>Future</td>
+      </tr>
+       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
+         <td>Boards</td>        >
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability to link more than 500 GitHub repos to a Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability to link more than 500 GitHub repos to a Azure DevOps project</a></td>
+         <td>Boards</td>         
+         <td>Future</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
