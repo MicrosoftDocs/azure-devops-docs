@@ -38,10 +38,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="6"><a href="2023/sprint-229-update.md" data-raw-source="[26 October 2023](2023/sprint-229-update.md)"> 26 October 2023</a></td>
+    <td rowspan="5"><a href="2023/sprint-229-update.md" data-raw-source="[26 October 2023](2023/sprint-229-update.md)"> 26 October 2023</a></td>
     <td>REST API documentation now available for Advanced Security </td><td>General</td><td>Future</td></tr>
     <td>Publish Test Results Task</td><td>General</td><td>Future</td></tr>
-    <td>Improvements to Approvals REST API</td><td>Pipelines</td><td>Future</td></tr>  
     <td>Building PRs from forked GitHub repositories</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks</td><td>Artifacts</td><td>Future</td></tr>
     <td>New Dashboard directory experience</td><td>Reporting</td><td>Future</td></tr>
