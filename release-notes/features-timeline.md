@@ -407,7 +407,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     <tbody>
       <tr>          
       <tr>
-        <td rowspan="11"><strong>2023 Q4</strong></td>
+        <td rowspan="12"><strong>2023 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
         <td>General</td>
         <td>Future</td>
