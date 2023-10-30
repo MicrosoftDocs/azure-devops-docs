@@ -463,7 +463,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-       <td rowspan="2"><strong>2024 Q1</strong></td>
+       <td rowspan="3"><strong>2024 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item)">Add link to GitHub Commit or Pull Request from work item</a></td>
         <td>Boards</td>         
         <td>Future</td>
@@ -473,7 +473,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td>Boards</td>      
          <td>Future</td>
       </tr>
-      <td rowspan="25"><strong>Future</strong></td>
+          <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>
+      <td rowspan="24"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -507,12 +512,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability to link more than 500 GitHub repos to a Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability to link more than 500 GitHub repos to a Azure DevOps project</a></td>
          <td>Boards</td>         
          <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>
+      </tr>  
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>
