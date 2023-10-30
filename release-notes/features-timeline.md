@@ -224,6 +224,56 @@ Note that most new features we are shipping in Boards are only available in the 
     </tbody>
 </table>
 
+
+### Improved Boards + GitHub Integration
+
+The existing Azure Boards + GitHub integration has been in place for several years now. The integration is a great starting point, but it does not offer the level of traceability that our customers have grown accustomed to. Based on customer feedback, we have put together set of investments to enhance this integration. Our goal is to improve the integration so that Azure Boards customers who choose to use GitHub repositories can maintain an equivalent level of traceability to having repositories in Azure DevOps.
+
+These investments include:
+
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Service</th>
+            <th>Server</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/boards-bot-better-ab-validation" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/roadmap/2023/boards-bot-better-ab-validation)">Improved AB#{ID} validation</a></td>
+         <td>Boards</td>
+         <td>2023 Q4</td>
+         <td>Future</td>
+      </tr>
+       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item)">Add link to GitHub Commit or Pull Request from work item</a></td>
+         <td>Boards</td>
+         <td>2024 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item)">Show more details about a GitHub Pull Request</a></td>
+         <td>Boards</td>
+         <td>2024 H1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
+         <td>Boards</td>
+         <td>2024 H1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability to link more than 500 GitHub repos to a Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability to link more than 500 GitHub repos to a Azure DevOps project</a></td>
+         <td>Boards</td>
+         <td>Future</td>
+         <td>Future</td>
+      </tr>
+    </tbody>
+</table>
+
 ### Pipelines agent Node lifecycle
 
 Azure Pipelines tasks can be authored either in Node or PowerShell, and they use the corresponding runner in the Azure Pipelines agent. Node has a [regular cadence of releases](https://github.com/nodejs/release#release-schedule), with Node 16 being the LTS and Node 18 the Current version as of October, 2022. The original design of the Node task runner did not make Node version upgrades straightforward for task authors, and as a result has not kept up with the latest Node releases. We've heard feedback from customers on this, and are now making a number of changes to enable Azure Pipelines agents to keep installed Node versions in sync with the Node release cadence and support lifecycle while minimizing impacts on task and pipeline authors. 
