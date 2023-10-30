@@ -86,7 +86,7 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
 
 ## Create a service principal
 
-In this step, we will create a new [service principal](/azure/azure-cli-sp-tutorial-1) in Azure, enabling us to query our Azure Key Vault from Azure Pipelines.
+In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-tutorial-1) in Azure, enabling us to query our Azure Key Vault from Azure Pipelines.
 
 1. Navigate to [Azure portal](https://portal.azure.com/).
 
