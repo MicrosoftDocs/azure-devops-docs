@@ -218,7 +218,7 @@ Note that most new features we are shipping in Boards are only available in the 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New boards hub on by default.](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
          <td>Boards</td>
-         <td>2023 Q4</td>
+         <td>2024 Q1</td>
          <td>Future</td>
       </tr>             
     </tbody>
