@@ -18,7 +18,7 @@ A pipeline is made up of stages. A pipeline author can control whether a stage s
  Pipelines rely on resources such as environments, service connections, agent pools, variable groups, and secure files. Checks enable the _resource owner_ to control if and when a stage in any pipeline can consume a resource. As an owner of a resource, you can define checks that must be satisfied before a stage consuming that resource can start. For example, a _manual approval check_ on an [environment](environments.md) would ensure that deployment to that environment only happens after the designated user(s) has reviewed the changes being deployed. 
 
 A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. Checks are reevaluated based on the retry interval specified in each check. If all checks aren't successful until the **timeout** specified, then that stage isn't executed.
-If any of the checks terminally fails (for example, if you reject an approval on one of the resources), then that stage isn't executed. 
+If any of the checks terminally fails (for example, if you reject an approval on one of the resources), then that stage isn't executed. However, you can retry a stage when approvals and checks time out.
 
 Approvals and other checks aren't defined in the yaml file. Users modifying the pipeline yaml file can't modify the checks performed before start of a stage. Administrators of resources manage checks using the web interface of Azure Pipelines.
 
