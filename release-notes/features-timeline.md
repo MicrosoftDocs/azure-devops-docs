@@ -395,6 +395,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
 </table>
 
 ## All features
+
 <table>
     <thead>
         <tr>
@@ -404,8 +405,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
             <th>Server</th>
         </tr>
     </thead>
-    <tbody>
-      <tr>          
+    <tbody>       
       <tr>
         <td rowspan="11"><strong>2023 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
@@ -473,7 +473,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td>Boards</td>      
          <td>Future</td>
       </tr>
-          <tr>
+      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -505,7 +505,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>
        <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
-         <td>Boards</td>        >
+         <td>Boards</td>        
          <td>Future</td>
       </tr>
       <tr>
