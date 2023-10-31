@@ -1,31 +1,34 @@
 ---
 title: Upstream sources overview
-description: Understand upstream sources
+description: Understand Azure Artifacts upstream sources
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 02/16/2022
+ms.date: 10/31/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Upstream sources
+# Azure Artifacts Upstream Sources
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Using upstream sources, you can conveniently store packages from various sources in a single feed - including those that you publish, as well as those you consume from other feeds and public registries such as NuGet.org, npmjs.com, Maven Central, and PyPI. Once upstream sources enabled, a copy of any package installed from upstream will be automatically saved to your feed
+Using upstream sources, you can conveniently store packages from various sources in a single feed. This includes packages you publish and those you consume from external feeds and public registries like NuGet.org, npmjs.com, Maven Central, and PyPI. Once you've enabled upstream sources, any package installed from these upstream sources, a copy will be automatically saved to your feed.
 
 > [!NOTE]
-> You must be a **Collaborator** or higher to install packages from upstream sources.
+> To save packages from upstream sources, you must be a **Collaborator** or higher. See [Permissions](../feeds/feed-permissions.mds#permissions-table) for more details.
 
 ## Advantages
 
-Upstream sources enable you to manage all of your product's dependencies in a single feed. Publishing all your packages to a single feed has a few benefits:
+Enabling upstream sources offers several advantages for managing your product's dependencies within a single feed:
 
-- **Simplicity:** your config file such as NuGet.config, npmrc, or settings.xml will contain only one feed so it less prone to mistakes and bugs.
-- **Determinism:** your feed resolves package requests in order, so rebuilding your code will be more consistent.
-- **Provenance:** your feed knows the provenance of the packages it saved from upstream sources, so you can verify that you're using the original package and not a copy or malicious package.
-- **Peace of mind:** a copy is saved to your feed for any package installed from upstream sources. So if the upstream source is disabled, removed, or undergoing maintenance, you can still continue to develop and build because you have a copy of that package in your feed.
+- **Simplicity:** When you publish all your packages to a single feed, it simplifies your configuration files like NuGet.config, npmrc, or settings.xml. YWith just one feed in your config file, you reduce the chances of errors and bugs, streamlining your setup.
+
+- **Determinism:** your feed resolves package requests in order, resulting in more consistency when rebuilding your code.
+
+- **Provenance:** Your feed retains information about the packages it saved from upstream sources. This allows you to verify that you're using the original package and not a copy or a potentially malicious version.
+
+- **Peace of mind:** Every package installed from upstream sources is automatically saved to your feed. This means that even if the upstream source is disabled, removed, or undergoing maintenance, you can continue developing and building with confidence because you have a copy of that package in your feed.
 
 ## Best practices - package consumers
 
