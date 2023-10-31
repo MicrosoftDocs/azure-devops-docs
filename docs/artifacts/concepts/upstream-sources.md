@@ -34,43 +34,37 @@ Enabling upstream sources offers several advantages for managing your product's 
 
 To take full advantage of the benefits of upstream sources as a package consumer, follow these best practices:
 
-#### Use a single feed in your config file
+1. **Use a single feed in your config file**:
 
-In order for your feed to provide [deterministic restore](#search-order), it's important to ensure that your configuration file such as nuget.config or .npmrc references only one feed with the upstream sources enabled.
+In order for your feed to provide a [deterministic restore](#search-order), make sure that your configuration file such as nuget.config or .npmrc references only one feed with the upstream sources enabled. See the example below:
 
-Example:
+```nuget.config
+<packageSources>
+  <clear />
+  <add key="FabrikamFiber" value="https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/nuget/v3/index.json" />
+</packageSources>
+```
 
-- **nuget.config**
+> [!NOTE]
+> NuGet compiles several [configuration files](/nuget/consume-packages/configuring-nuget-behavior) to determine the complete set of options to apply. By using `<clear />`, you can effectively ignore all other package sources specified in higher-level configuration files.
 
-    ```
-    <packageSources>
-      <clear />
-      <add key="FabrikamFiber" value="https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/nuget/v3/index.json" />
-    </packageSources>
-    ```
+```.npmrc
+registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
+always-auth=true
+```
 
-    > [!NOTE]
-    > NuGet composes several [config files](/nuget/consume-packages/configuring-nuget-behavior) to determine the full set of options to use. Using `<clear />` allow us to ignore all other package sources defined in higher-level configuration files.
+2. **Order your upstream sources intentionally**:
 
-- **.npmrc**:
+If you're exclusively using public registries like nuget.org or npmjs.com, the order of your upstream sources is irrelevant. Requests to the feed follow the sequence detailed in the [search order](#search-order) section.
 
-    ```
-    registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
-    always-auth=true
-    ```
+However, when you're managing multiple sources, which may include a combination of feeds and public registries, each upstream source is searched in the order it's listed in the feed's configuration settings. In this case, we recommend placing the public registries first in the list of upstream sources.
 
-#### Order your upstream sources intentionally
+In some unique scenarios, certain organizations choose to customize open-source software (OSS) packages. This could involve addressing security concerns, enhancing functionality, or meeting specific requirements that necessitate internally rebuilding the package rather than directly obtaining it from a public repository. 
+If your organization follows this practice, it's advisable to position the upstream source containing these modified OSS packages ahead of the public package managers. This arrangement ensures the use of your organization's customized versions.
 
-If you're only using public registries such as nuget.org or npmjs.com, the order of your upstream sources is irrelevant. Requests to the feed follow the [search order](#search-order).
+3. **Use the suggested default view**:
 
-If you're using multiple sources such as a mixture of feeds and public registries, then each upstream is searched in the order it's listed in the feed's configuration settings. In this case, we recommend placing the public registries first in the list of upstream sources.
-
-In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository.
-If your organization follows this pattern, place the upstream source that contains these modified OSS packages before the public package managers to ensure you use your organization's modified versions.
-
-#### Use the suggested default view
-
-When you add a remote feed as an upstream source, you must select its feed's view. This enables the upstream sources to construct a set of available packages. See [complete package graphs](package-graph.md) for more details. 
+When you add a remote feed as an upstream source, you must select its feed's view. This enables the upstream sources to construct a set of available packages. See [How upstreams construct the set of available packages](package-graph.md#how-upstreams-construct-the-set-of-available-packages) for more details.
 
 ## Best practices: feed owners/package publishers
 
