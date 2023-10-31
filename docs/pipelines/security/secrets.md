@@ -7,17 +7,15 @@ monikerRange: '> azure-devops-2019'
 
 # Using secrets
 
-Sensitive values should never be stored as plaintext in an Azure Pipelines **.yml** file.
-
 This article provides best practices on using secrets in Azure Pipelines.
 
 ## Use secret variables
 
-Secret variables are encrypted variables that you can use in pipelines without exposing their value. Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want to have exposed in a pipeline. You can also link secrets from Azure Key Vault. For more information, see [Set secret variables](../process/set-secret-variables.md).
+Sensitive values should never be stored as plaintext in an Azure Pipelines **.yml** file. Secret variables are encrypted variables that you can use in pipelines without exposing their value. Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want to have exposed in a pipeline. You can also link secrets from Azure Key Vault. For more information, see [Set secret variables](../process/set-secret-variables.md).
 
 ## Don't write secrets to logs
 
-Azure Pipelines attempts to scrub secrets from logs wherever possible. This filtering is on a best-effort basis and can't catch every way that secrets can be leaked. Avoid echoing secrets to the console, using them in command line parameters, or logging them to files.
+Azure Pipelines attempts to scrub secrets from logs wherever possible. This filtering is on a best-effort basis and can't catch every way that secrets can be leaked. Avoid echoing secrets to the console, using them in command line parameters, or logging them to files. For example, some Azure CLI commands output information you must protect. If you call Azure CLI from your pipeline, use the [None output format](https://aka.ms/clisecrets).
 
 ## Don't use structured data as secrets
 
