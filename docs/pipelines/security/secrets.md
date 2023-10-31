@@ -42,7 +42,3 @@ Secrets used by pipelines can include:
 * [Azure Key Vault secrets](/azure/key-vault/)
 * [Service connections](../library/service-endpoints.md)
 
-## See also
-
-* [Security hardening for GitHub Actions](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions)
-* [Using secrets in GitHub Actions](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)
