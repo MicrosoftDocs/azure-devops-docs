@@ -70,32 +70,32 @@ When you add a remote feed as an upstream source, you must select its feed's vie
 
 To make sure your feed is easily configured as an upstream source, consider applying the following best practices:
 
-#### Use the default view
+1. **Use the default view**:
 
-The `@local` view is the default view for all newly created feeds. It contains all the packages published to your feed or saved from upstream sources.
+The default view for all newly created feeds is the `@local` view, which contains all the packages published to your feed or saved from upstream sources.
 
-If you want to use views to release new package versions, you can promote your package to a view such as `@release` and make it available to your consumers.
+If you want to use other views such as a view for newly released package versions, you can promote your package to the `@release` view and then make that view available for your package consumers.
 
-#### Construct a package graph
+2. **Construct a package graph**:
 
-To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is installed correctly in the default view, users who want to consume it will be able to resolve the package graph and install the desired package. Packages from upstream sources are displayed based on the configured view for the corresponding upstream source.
+To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is saved to the default view, users who want to consume it will be able to resolve the package graph and install the desired package. Packages from upstream sources are displayed based on the configured view for the corresponding upstream source.
 
 ## Search order
 
-For public package managers that support multiple feeds (NuGet and Maven), the order in which feeds are queried is sometimes unclear or nondeterministic. For example in NuGet, parallel queries are made to all the feeds in the config file, and the responses are processed first-In, first-out FIFO.
+For public package managers that support multiple feeds like NuGet and Maven, the order in which feeds are queried can sometimes be unclear or non-deterministic. For example, in NuGet, parallel queries are sent to all the feeds in the configuration file, and the responses are processed in a first-in, first-out (FIFO) manner.
 
-Upstream sources prevent this nondeterministic behavior by searching the feed and its upstream sources using the following order:
+Upstream sources address this non-deterministic behavior by searching the feed and its upstream sources in the following order:
 
-1. Packages pushed to the feed.
+1. Packages that have been published directly to the feed.
 
-1. Packages saved from an upstream source.
+1. Packages that have been saved from an upstream source.
 
-1. Packages available from upstream sources: each upstream is searched in the order it's listed in the feed's configuration
+1. Packages available from upstream sources. Each upstream source is searched in the order it's listed in the feed's configuration.
 
-To take full advantage of the fast lookup feature, we recommend that you only include one feed in your config file.
+To take full advantage of the fast lookup feature, we recommend that you include only one feed in your configuration file.
 
 > [!NOTE]
-> Searching for packages in upstreams with NuGet Package Explorer is not supported.
+> Searching for packages in upstream sources using the NuGet Package Explorer is not supported.
 
 ## Save packages from upstream sources
 
