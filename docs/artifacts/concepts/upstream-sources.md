@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 Using upstream sources, you can conveniently store packages from various sources in a single feed. This includes packages you publish and those you consume from external feeds and public registries like NuGet.org, npmjs.com, Maven Central, and PyPI. Once you've enabled upstream sources, any package installed from these upstream sources, a copy will be automatically saved to your feed.
 
 > [!NOTE]
-> To save packages from upstream sources, you must be a **Collaborator** or higher. See [Permissions](../feeds/feed-permissions.mds#permissions-table) for more details.
+> To save packages from upstream sources, you must be a **Collaborator** or higher. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
 
 ## Advantages
 
@@ -34,7 +34,7 @@ Enabling upstream sources offers several advantages for managing your product's 
 
 To take full advantage of the benefits of upstream sources as a package consumer, follow these best practices:
 
-1. **Use a single feed in your config file**:
+#### 1. Use a single feed in your config file:
 
 In order for your feed to provide a [deterministic restore](#search-order), make sure that your configuration file such as nuget.config or .npmrc references only one feed with the upstream sources enabled. See the example below:
 
@@ -53,7 +53,7 @@ registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/regist
 always-auth=true
 ```
 
-2. **Order your upstream sources intentionally**:
+#### 2. Order your upstream sources intentionally:
 
 If you're exclusively using public registries like nuget.org or npmjs.com, the order of your upstream sources is irrelevant. Requests to the feed follow the sequence detailed in the [search order](#search-order) section.
 
@@ -62,7 +62,7 @@ However, when you're managing multiple sources, which may include a combination 
 In some unique scenarios, certain organizations choose to customize open-source software (OSS) packages. This could involve addressing security concerns, enhancing functionality, or meeting specific requirements that necessitate internally rebuilding the package rather than directly obtaining it from a public repository. 
 If your organization follows this practice, it's advisable to position the upstream source containing these modified OSS packages ahead of the public package managers. This arrangement ensures the use of your organization's customized versions.
 
-3. **Use the suggested default view**:
+#### 3. Use the suggested default view:
 
 When you add a remote feed as an upstream source, you must select its feed's view. This enables the upstream sources to construct a set of available packages. See [How upstreams construct the set of available packages](package-graph.md#how-upstreams-construct-the-set-of-available-packages) for more details.
 
@@ -70,13 +70,13 @@ When you add a remote feed as an upstream source, you must select its feed's vie
 
 To make sure your feed is easily configured as an upstream source, consider applying the following best practices:
 
-1. **Use the default view**:
+##### 1. Use the default view:
 
 The default view for all newly created feeds is the `@local` view, which contains all the packages published to your feed or saved from upstream sources.
 
 If you want to use other views such as a view for newly released package versions, you can promote your package to the `@release` view and then make that view available for your package consumers.
 
-2. **Construct a package graph**:
+##### 2. Construct a package graph:
 
 To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is saved to the default view, users who want to consume it will be able to resolve the package graph and install the desired package. Packages from upstream sources are displayed based on the configured view for the corresponding upstream source.
 
