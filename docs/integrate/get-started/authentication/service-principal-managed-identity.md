@@ -234,7 +234,7 @@ private static async Task<AuthenticationResult> GetAppRegistrationAADAccessToken
 
 A: Yes, you can connect to any Azure Artifacts feed with a service principal. In the following examples, we demonstrate how to connect with a Microsoft Entra ID token for NuGet, npm, and Maven, but other feed types should also work.
 
-##### NuGet project setup with Microsoft Entra
+##### NuGet project setup with Microsoft Entra token
 
 1. Add a nuget.config file to your project, in the same folder as your *.csproj* or *.sln* file
 
@@ -265,15 +265,17 @@ A: Yes, you can connect to any Azure Artifacts feed with a service principal. In
 > The vsts-npm-auth tool does not support Microsoft Entra access tokens. 
 
 1. Add a `.npmrc` to your project, in the same directory as your `package.json`.
-```
-registry=https://pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/registry/ 
-always-auth=true
-```
+
+    ```
+    registry=https://pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/registry/ 
+    always-auth=true
+    ```
 2. Get an access token for your service principal or managed identity.
 3. Add this code to your `${user.home}/.npmrc` and replace the placeholder `[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]` with the access token from the previous step.
-```
-//pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/:_authToken=[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]
-```
+
+    ```
+    //pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/:_authToken=[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]
+    ```
 
 <a name='maven-project-setup-with-entra-id-tokens'></a>
 
@@ -281,34 +283,37 @@ always-auth=true
 
 1. Add the repo to both your `pom.xml`'s `<repositories>` and `<distributionManagement>` sections.
 
-```xml
-<repository>
-  <id>Fabrikam</id>
-  <url>https://pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/maven/v1</url>
-  <releases>
-    <enabled>true</enabled>
-  </releases>
-  <snapshots>
-    <enabled>true</enabled>
-  </snapshots>
-</repository>
-```
-2. Get an access token for your Service Principal or Managed Identity.
-3. Add or edit the `settings.xml` file in `${user.home}/.m2` and replace the placeholder `[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]` with the access token from the previous step.
-```xml
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-                              https://maven.apache.org/xsd/settings-1.0.0.xsd">
-  <servers>
-    <server>
+    ```xml
+    <repository>
       <id>Fabrikam</id>
-      <username>Fabrikam</username>
-      <password>[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]</password>
-    </server>
-  </servers>
-</settings>
-``` 
+      <url>https://pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    ```
+
+2. Get an access token for your Service Principal or Managed Identity.
+
+3. Add or edit the `settings.xml` file in `${user.home}/.m2` and replace the placeholder `[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]` with the access token from the previous step.
+
+    ```xml
+    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                                  https://maven.apache.org/xsd/settings-1.0.0.xsd">
+      <servers>
+        <server>
+          <id>Fabrikam</id>
+          <username>Fabrikam</username>
+          <password>[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]</password>
+        </server>
+      </servers>
+    </settings>
+    ``` 
 
 ### Marketplace
 #### Q: Can I use a service principal to publish extensions to the Visual Studio Marketplace?
