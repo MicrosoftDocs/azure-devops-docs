@@ -70,13 +70,13 @@ When you add a remote feed as an upstream source, you must select its feed's vie
 
 To make sure your feed is easily configured as an upstream source, consider applying the following best practices:
 
-##### 1. Use the default view:
+#### 1. Use the default view:
 
 The default view for all newly created feeds is the `@local` view, which contains all the packages published to your feed or saved from upstream sources.
 
 If you want to use other views such as a view for newly released package versions, you can promote your package to the `@release` view and then make that view available for your package consumers.
 
-##### 2. Construct a package graph:
+#### 2. Construct a package graph:
 
 To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is saved to the default view, users who want to consume it will be able to resolve the package graph and install the desired package. Packages from upstream sources are displayed based on the configured view for the corresponding upstream source.
 
@@ -99,9 +99,9 @@ To take full advantage of the fast lookup feature, we recommend that you include
 
 ## Save packages from upstream sources
 
-When you enable upstream sources for your feed, packages installed from upstream sources will be automatically saved to your feed. These packages could be installed directly from the upstream as follows `npm install express` or they could be installed as part of a dependency resolution (installing `express` would also save dependencies like `accepts`).
+When you enable upstream sources for your feed, and you install a package from an upstream source, a copy of that package will be automatically saved to your feed. Saving packages can enhance download performance and conserve network bandwidth, which is particularly beneficial for TFS servers in internal networks.
 
-Saving packages can improve download performance and save network bandwidth especially for TFS servers in internal networks.
+For instance, you can install them directly from the upstream source using a command like *npm install express*, or they can be installed as part of a dependency resolution. In the latter case, installing *express* would also save its dependencies, such as *accepts*.
 
 ::: moniker range="azure-devops"
 
@@ -112,7 +112,7 @@ Saving packages can improve download performance and save network bandwidth espe
 
 ## Override packages from upstream sources
 
-When you enable upstream sources, you must be aware that publishing a package version that already exists in upstream will not be possible. For instance, when you enable the NuGet.org upstream, you won't be able to publish the `Newtonsoft.Json 10.0.3` package because that same package version is already present in NuGet.org.
+When you enable upstream sources, you must be aware that publishing a package version that already exists in upstream will not be possible. For instance, when you enable the NuGet.org upstream, you won't be able to publish the *Newtonsoft.Json 10.0.3* package because that same package version is already present in NuGet.org.
 
 If you must publish a package version that already exists on one of your upstream sources, you must disable that upstream source, publish your package, and then re-enable the upstream source.
 
