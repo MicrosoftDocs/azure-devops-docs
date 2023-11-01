@@ -232,7 +232,31 @@ private static async Task<AuthenticationResult> GetAppRegistrationAADAccessToken
 ### Artifacts
 #### Q: Can I use a service principal to connect to feeds?
 
-A: Yes, you can connect to any feed using Basic authentication by replacing the PAT secret value with an SP access token. In the following examples, we demonstrate how to connect with a Microsoft Entra token for NuGet and Maven, but other feed types should also work.
+A: Yes, you can connect to any Azure Artifacts feed with a service principal. In the following examples, we demonstrate how to connect with a Microsoft Entra ID token for NuGet, npm, and Maven, but other feed types should also work.
+
+##### NuGet project setup with Microsoft Entra
+
+1. Add a nuget.config file to your project, in the same folder as your *.csproj* or *.sln* file
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <configuration>
+      <packageSources>
+        <clear />
+        <add key="FeedName" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+      </packageSources>
+    </configuration>
+    ```
+
+1. [Get a Microsoft Entra ID token](/azure/databricks/dev-tools/service-prin-aad-token) for your service principal.
+
+1. Run the following command to authenticate with your credentials and then add your token using the setapikey command. This will add your feed source to your nuget.config:
+
+    ```Command
+    nuget sources add -name <FEED_NAME> -source <SOURCE_URL> -username <USERNAME> -password <PASSWORD>
+
+    nuget setapikey <YOUR_ACCESS_TOKEN> -source <SOURCE_URL> 
+    ```
 
 <a name='npm-project-setup-with-entra-id-tokens'></a>
 
