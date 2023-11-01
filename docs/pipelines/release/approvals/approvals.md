@@ -29,7 +29,7 @@ You can set up approvals at the start of a stage (pre-deployment approvals), at 
     :::image type="content" source="media/pre-deployment-approvals.png" alt-text="A screenshot showing how to set up pre-deployment approvals.":::
 
 > [!NOTE]
-> Azure AD groups are not receiving notifications. Azure DevOps doesn’t expand Azure AD groups when delivering Notifications. This is the limitation of the product.
+> Azure DevOps doesn’t expand Azure Active Directory groups when delivering Notifications. If you must use Azure AD groups, we suggest that you add an email alias as an explicit recipient to your subscription and associate that alias with your AD group, if applicable to your scenario.
 
 ### Post-deployment approvals
 
