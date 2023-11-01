@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
 ms.reviewer: dastahel
 ms.custom: seodec18,contperf-fy21q2, freshness-fy22q2
-ms.date: 12/28/2021
+ms.date: 11/01/2023
 monikerRange: 'azure-devops'
 # Customer intent: As an Azure DevOps user, I want to build a pipeline that deploys a Xamarin app so that I can take advantage of automated builds.
 ---
@@ -73,7 +73,7 @@ Create a file named **azure-pipelines.yml** in the root of your repository. Then
 ```yaml
 # https://learn.microsoft.com/azure/devops/pipelines/ecosystems/xamarin
 pool:
-  vmImage: 'macOS-10.15' # For Windows, use 'windows-2019'
+  vmImage: 'macOS-12' # For Windows, use 'windows-2019'
 ```
 
 ## Build a Xamarin.Android app
@@ -213,7 +213,7 @@ jobs:
 
 - job: iOS
   pool:
-    vmImage: 'macOS-10.15'
+    vmImage: 'macOS-12'
 
   steps:
   # To manually select a Xamarin SDK version on the Hosted macOS agent, enable this script with the SDK version you want to target
