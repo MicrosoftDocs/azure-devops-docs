@@ -305,15 +305,21 @@ From the **View options** selector, you can turn on **In Progress Items**. If yo
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
+
 :::image type="content" source="media/create-backlog/in-progress-control-2020.png" alt-text="Screenshot of View options selector, In progress control.":::
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-:::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="View options selector, In progress control":::
+
+:::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="View options selector, In progress control.":::
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
 Choose **In progress items** show or hide **In Progress** backlog items. If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) don't appear in the backlog. 
+
 ::: moniker-end
 
 You'd likely choose to hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
