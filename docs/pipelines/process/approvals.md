@@ -45,6 +45,12 @@ You can manually control when a stage should run using approval and checks. This
 
 1. Select **Create** when you're done.
 
+    :::image type="content" source="media/create-new-approval.png" alt-text="A screenshot showing how to create a new approval.":::
+
+1. Once the approval check is triggered, a prompt window, as shown in the example below, is presented in the user interface. This window provides the option for approvers to either reject or approve the run, along with any accompanying instructions.
+
+    :::image type="content" source="media/approval-prompt.png" alt-text="A screenshot showing the approval prompt window.":::
+
 > [!NOTE]
 > If a group is designated as an approver, only one user within the group needs to approve for the run to proceed.
 
