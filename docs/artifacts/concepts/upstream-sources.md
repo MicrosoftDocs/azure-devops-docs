@@ -99,9 +99,9 @@ To take full advantage of the fast lookup feature, we recommend that you include
 
 ## Save packages from upstream sources
 
-When you enable upstream sources for your feed, and you install a package from an upstream source, a copy of that package will be automatically saved to your feed. Saving packages can enhance download performance and conserve network bandwidth, which is particularly beneficial for TFS servers in internal networks.
+When you enable upstream sources for your feed and install a package from an upstream source, an automatic copy of that package is saved to your feed. This practice enhances download performance and conserves network bandwidth, making it particularly beneficial for TFS servers in internal networks.
 
-For instance, you can install them directly from the upstream source using a command like *npm install express*, or they can be installed as part of a dependency resolution. In the latter case, installing *express* would also save its dependencies, such as *accepts*.
+For instance, you can install packages directly from the upstream source using a command like *npm install express*. Alternatively, packages may be installed as part of a dependency resolution process. In the latter scenario, installing *express* would also save its dependencies, such as *accepts*.
 
 ::: moniker range="azure-devops"
 
@@ -112,25 +112,35 @@ For instance, you can install them directly from the upstream source using a com
 
 ## Override packages from upstream sources
 
-When you enable upstream sources, you must be aware that publishing a package version that already exists in upstream will not be possible. For instance, when you enable the NuGet.org upstream, you won't be able to publish the *Newtonsoft.Json 10.0.3* package because that same package version is already present in NuGet.org.
+When enabling upstream sources, it's important to note that publishing a package version that already exists in an upstream source will not be possible. For example, if you enable the NuGet.org upstream, you won't be able to publish the *Newtonsoft.Json 10.0.3* package, as that exact version already exists in NuGet.org.
 
-If you must publish a package version that already exists on one of your upstream sources, you must disable that upstream source, publish your package, and then re-enable the upstream source.
+If you need to publish a package version that's already present in one of your upstream sources, you must follow these steps:
+
+1. Disable the relevant upstream source.
+2. Publish your package.
+3. Re-enable the upstream source.
 
 > [!Note]
 > Package versions are immutable. Saved packages remain in the feed even if the upstream source is disabled or removed.
 
-## Health status
+## Upstream sources health status
 
-If a feed has a failing upstream source, the metadata can no longer be refreshed for packages of the same protocol. To view your upstream source's health status, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, and then select **Upstream sources**.
+If a feed has a failing upstream source, the metadata for packages of the same protocol can no longer be refreshed. To check the health status of your upstream sources, follow these steps:
 
-:::image type="content" source="media/upstreams-last-sync.png" alt-text="A screenshot showing the upstream source failure status.":::
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-If there are any failures, a warning message will be displayed. Selecting the failed status provides more details such as the reason of failure and instructions on how to solve it.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-:::image type="content" source="media/upstream-last-sync-details.png" alt-text="A screenshot showing details about the sync up failure.":::
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to your **Feed settings**, and then select **Upstream sources**.
+
+    :::image type="content" source="media/last-sync-upstreams.png" alt-text="A screenshot showing the upstream sources last sync up status.":::
+
+1. If any failures occur, a warning message will be displayed. Clicking on the *Failed* status will provide additional details, including the cause of the failure and instructions on how to resolve it.
+
+    :::image type="content" source="media/last-sync-upstreams-details.png" alt-text="A screenshot displaying details of the sync up failure.":::
 
 > [!NOTE]
-> For public registries such as NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it is available for download. This delay depends on job timing and data propagation. When the upstream source is an Azure Artifacts feed, the latency is typically no more than a few minutes.
+> In the case of public registries like NuGet.org, there is a 3-6 hour delay between the time a package is pushed to the public registry and when it becomes available for download. This delay depends on job timing and data propagation. However, when the upstream source is an Azure Artifacts feed, the latency is usually no more than a few minutes.
 
 ## Offline upstream sources
 
