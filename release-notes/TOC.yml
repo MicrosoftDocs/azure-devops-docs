@@ -788,6 +788,8 @@
         items:
         - name: "2023"
           items:
+          - name: October 26
+            href: 2023/reporting/sprint-229-update.md
           - name: June 21
             href: 2023/reporting/sprint-223-update.md
           - name: May 9
