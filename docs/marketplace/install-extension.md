@@ -20,12 +20,16 @@ Install, assign, disable, and uninstall extensions, which add new features and c
 For more information about extensions, see the [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) overviews.
 
 ## Prerequisites
+
 ::: moniker range="azure-devops"
+
 - To install extensions, you must be a member of the Project Collection Administrators group. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
 - Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
+
 - Only members of the Project Collection Administrators group or who have "Edit collection-level information" permissions can install extensions. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
 
 > [!NOTE]
@@ -33,6 +37,7 @@ For more information about extensions, see the [developing](../extend/overview.m
 
 Your project collection reuses your Azure subscription for future Marketplace purchases. 
 [Where can I find more info about Azure billing?](faq-extensions.yml)
+
 ::: moniker-end
 
 ## Install an extension
@@ -40,6 +45,7 @@ Your project collection reuses your Azure subscription for future Marketplace pu
 Install an extension to your organization by doing the following steps.
 
 ::: moniker range="azure-devops"
+
 #### [Browser](#tab/browser)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
@@ -180,7 +186,7 @@ version: 5.0.1.34507
 
 ::: moniker-end
 
-::: moniker range=" tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your Azure DevOps Server home page (```https://{server}:8080/tfs/```), 
    go to the project collection where you want to install the extension.
@@ -207,9 +213,6 @@ version: 5.0.1.34507
    
    :::image type="content" source="media/get-tfs-extensions/connected/assign-extension-to-users.png" alt-text="Screenshot showing installed extension confirmation.":::
 
-::: moniker-end
-
-::: moniker range=" tfs-2018"
 ### Install extensions when disconnected
 
 When you're disconnected from Azure DevOps Server, you can install free and preview extensions. First, you [download the extension](#download-from-the-marketplace), then [upload it to Azure DevOps Server](#upload-extension-to-azure-devops), and then [install it in a project collection](#install-extension-in-your-project-collection).
@@ -319,6 +322,7 @@ Users can install these extensions without requiring an external connection to M
 ## Uninstall or disable an extension
 
 ::: moniker range="azure-devops"
+
 #### [Browser](#tab/browser)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
@@ -410,6 +414,7 @@ To uninstall extensions in a collection, perform the following steps.
 ::: moniker-end 
 
 ::: moniker range="azure-devops"
+
 ## Enable or list extensions through the command line
 
 Enable an extension with the [az devops extension enable](/cli/azure/devops/extension#az-devops-extension-enable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
@@ -552,10 +557,6 @@ For more information, see [Assign extensions to users](../marketplace/install-ex
 ### Q: What happened to my preview extension?
 A: Your extension might be out of preview. After a preview period, an extension longer is generally available as a paid extension. A grace period might be offered before you have to buy the extension. All preview extensions automatically convert to a [free trial](../organizations/billing/try-additional-features-vs.md) before you have to buy the extension.
 
-::: moniker-end
-
-::: moniker range=" < azure-devops"
-
 ### Q: Why can't I install extensions for Azure DevOps Server?  (on-premises)
 A: You can't install extensions for Azure DevOps Server for one of the following reasons:
 - You must be a member of the **Project Collection Administrators** group or have the **Edit collection-level information** permission set to **Allow** in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
@@ -591,7 +592,7 @@ A: Depending on the support you need, choose from the following articles:
 - [Visual Studio subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
 
 > [!NOTE]
-> The Azure DevOps support team is unable to support Visual Studio Marketplace extensions. To get support on marketplace extensions, locate the extension you're using in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs). On the extension page, you can find a link to the GitHub repository where you can create an issue, or a link to get community support.
+> The Azure DevOps support team doesn't support Visual Studio Marketplace extensions. To get support on marketplace extensions, locate the extension you're using in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs). On the extension page, you can find a link to the GitHub repository where you can create an issue, or get a link to get community support.
 
 ## Next steps
 
