@@ -31,13 +31,17 @@ Approvals and other checks aren't defined in the yaml file. Users modifying the 
 
 You can manually control when a stage should run using approval checks. This check is commonly used to control deployments to production environments.
 
-1. In your Azure DevOps project, go to the resource (for example, environment) that needs to be protected. 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-2. Navigate to **Approvals and Checks** for the resource.
+1. Select **Pipelines** > **Environments**, and then select your environment. 
 
-:::image type="content" source="media/checks/approvals-and-checks.png" alt-text="Approvals and Checks on environment.":::
-   
-3. Select **Create**, provide the approvers and an optional message, and select **Create** again to complete the addition of the manual approval check.
+1. Select the **Approvals and checks** tab, and then select the **+** sign to add a new check.
+
+1. Select **Approvals**, and then select **Next**.
+
+1. Add users or groups as your designated **Approvers**, and, if desired, provide **instructions for the approvers**.
+
+1. Select **Create** when you're done.
 
 You can add multiple approvers to an environment. These approvers can be individual users or groups of users. When a group is specified as an approver, only one of the users in that group needs to approve for the run to move forward.
 
