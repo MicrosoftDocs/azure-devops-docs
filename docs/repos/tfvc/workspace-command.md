@@ -118,13 +118,13 @@ If you delete a workspace that contains pending changes, TFVC cancels the pendin
 When deleting a workspace you need to provide the `<workspace-owner>` and `<workspace-name>`
 
 You can use the `<workspace` command to retrieve those values. For more information, see [workspaces command](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/workspaces-command?view=azure-devops)
-To find `<workspace-owner>` value, run the following command:
+To find the `<workspace-owner>` value, run the following command:
 
 ```
 c:\projects>tf workspaces /computer:* /owner:* /collection:`<team-project-collection-url>` /format:xml
 ```
 
-To find the `<workspace-name>` value, use the  `<OwnerId>` value from the previous command's output as the `<workspace-owner>` value. That value has the format of an Azure Active Directory (Azure AD) object ID followed by a backslash and a user principal name. Use the entire value. Then run the following command:
+To find the `<workspace-name>` value, use the `<OwnerId>` value from the previous command's output as the `<workspace-owner>` value. That value has the format of an Azure Active Directory (Azure AD) object ID followed by a backslash and a user principal name. Use the entire value. Then run the following command:
 
 ```
 c:\projects>tf workspaces /owner:<workspace-owner> /computer:* /collection:`<team-project-collection-url>`
