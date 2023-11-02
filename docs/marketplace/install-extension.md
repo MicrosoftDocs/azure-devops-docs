@@ -7,7 +7,7 @@ ms.subservice: azure-devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
 author: chcomley
-ms.date: 07/18/2023
+ms.date: 11/02/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to install, assign, disable, and uninstall extensions, which add new features and capabilities for Azure DevOps.
+Install, assign, disable, and uninstall extensions, which add new features and capabilities for Azure DevOps.
 
 For more information about extensions, see the [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) overviews.
 
@@ -145,32 +145,38 @@ version: 5.0.1.34507
 
 ::: moniker range="> tfs-2018 < azure-devops"
 
-1. Open your Azure DevOps Server home page (`https://{server}:DefaultCollection`).
-
-2. Open the extensions menu and choose **Browse Marketplace**.
-
-   ![Browse Marketplace](media/get-devops-extensions/install-devops-extension-01.png)
-
+1. Go to [Marketplace.visualstudio.com](https://marketplace.visualstudio.com/azuredevops).
+2.	Sign in using your Azure DevOps credentials.
 3. Find the extension that you want to install. Use the search box to filter the list of extensions.
 
-   ![Select an extension](media/get-devops-extensions/install-devops-extension-02.png)
+   :::image type="content" source="media/get-devops-extensions/install-devops-extension-02.png" alt-text="Screenshot of Selecting an extension.":::
 
 4. Select the extension and choose **Get** or **Get it free**.
    Or, for some third-party extensions, choose **Get Started** to show pricing information
    and extension-specific installation instructions.
 
-   ![Get the extension](media/get-devops-extensions/install-devops-extension-04.png)
+   :::image type="content" source="media/get-devops-extensions/install-devops-extension-04.png" alt-text="Screenshot of getting the extensions.":::
 
    If you don't have permission to install the extension, you can request an administrator
    to install it for you. Your request gets stored in Azure DevOps Server and is ready for attention from an administrator.
 
-5. Select the project collection where you want to install this extension and choose **Install**.
+5. Select **Download** to download the vsix file.
+6. Upload the vsix to your on premises local Marketplace. Open your Azure DevOps Server home page (`https://{server}:DefaultCollection`).
+7. Go to **Collection settings** > **Browse local extensions**.
 
-   ![Select project collection and choose Install.](media/get-devops-extensions/install-devops-extension-06.png)
+   :::image type="content" source="media/get-tfs-extensions/standalone/browse-local-extensions.png" alt-text="Screenshot of selection, Browse local extensions button.":::
 
-6. After installation is complete, go to the project collection or return to the Marketplace to find other extensions. 
+8. Select **Manage extensions** and then **Upload** the vsix file.
 
-   ![Installation done](media/get-devops-extensions/install-devops-extension-07.png)
+   :::image type="content" source="media/manage-extensions-on-premises.png" alt-text="Screenshot of selection, Manage extensions.":::
+
+9.  Install the extension in your project collection on the **Manage extensions** page. Select the project collection where you want to install the extension and choose **Install**.
+
+   :::image type="content" source="media/get-devops-extensions/install-devops-extension-06.png" alt-text="Screenshot of Select project collection and choose Install.":::
+
+10. After installation is complete, go to the project collection or return to the Marketplace to find other extensions. 
+
+   :::image type="content" source="media/get-devops-extensions/install-devops-extension-07.png" alt-text="Screenshot showing completed installation of extension.":::
 
 ::: moniker-end
 
@@ -193,9 +199,9 @@ version: 5.0.1.34507
    
    :::image type="content" source="media/get-tfs-extensions/connected/select-team-project-collection.png" alt-text="Selection showing Project collection.":::
 
-5. Finish installing your extension.
+6. Finish installing your extension.
 
-6. Assign the extension to users who need access. 
+7. Assign the extension to users who need access. 
    Otherwise, you can go to your project collection to use your extension. 
    Tell your team about this extension, so they can start using its capabilities too. 
    
@@ -249,7 +255,7 @@ When you're disconnected from Azure DevOps Server, you can install free and prev
 
    :::image type="content" source="media/get-tfs-extensions/standalone/choose-collection.png" alt-text="Screenshot showing Continue button selection.":::
 
-3. Review the permissions that the extension gets when it's installed. Finish installing your extension.
+3. Review the permissions that the extension gets. Finish installing your extension.
 
    :::image type="content" source="media/get-tfs-extensions/standalone/confirm.png" alt-text="Screenshot showing review of permissions granted to the extension.":::
 
@@ -531,7 +537,7 @@ A: You can't install extensions for one of the following reasons.
 ### Q: Why can't users access extension features?
 A: Users can't access an extension for one of the following reasons:  
 - Most extensions require that users have at least Basic access, not Stakeholder. For example, you can install the free [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), but each user must have at least Basic access to search for code. To help your team improve app quality, you can install the free [Test & Feedback extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). You experience different capabilities, based on your access level and whether you work offline or connected to Azure DevOps Services or on-premises Azure DevOps Server. For more information, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
-- If you're using an organization and you started a free extension trial, your trial might have expired. To check whether your trial expired:
+- If you're using an organization and you started a free extension trial, your trial might be expired. To check whether your trial expired:
    1. On your organization toolbar, select **Users**.
    2. Go to the extension pane.
    3. Check for an expiration message to find if or when your extension expired.
@@ -544,7 +550,7 @@ A: Users can't access an extension for one of the following reasons:
 For more information, see [Assign extensions to users](../marketplace/install-extension.md).
 
 ### Q: What happened to my preview extension?
-A: Your extension may have been moved out of preview. After a preview period, an extension longer is generally available as a paid extension. A grace period may be offered before you have to buy the extension. All preview extensions automatically convert to a [free trial](../organizations/billing/try-additional-features-vs.md) before you have to buy the extension.
+A: Your extension might be out of preview. After a preview period, an extension longer is generally available as a paid extension. A grace period might be offered before you have to buy the extension. All preview extensions automatically convert to a [free trial](../organizations/billing/try-additional-features-vs.md) before you have to buy the extension.
 
 ::: moniker-end
 
