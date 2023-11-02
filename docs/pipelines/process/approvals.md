@@ -37,7 +37,7 @@ You can manually control when a stage should run using approval and checks. This
 
 1. Select the **Approvals and checks** tab, and then select the **+** sign to add a new check.
 
-    :::image type="content" source="media/add-approvals-and-checks.png" alt-text="A screenshot showing how to add approvals and checks in azure pipelines.":::
+    :::image type="content" source="media/add-approvals-and-checks.png" alt-text="A screenshot showing how to add approvals and checks in Azure Pipelines.":::
 
 1. Select **Approvals**, and then select **Next**.
 
@@ -142,7 +142,7 @@ You can have multiple required templates for the same service connection. In thi
 
 ## Disable a check
 
-When debugging a check, you may want to temporarily disable and then enable it again. To disable or enable a check:
+When debugging a check, you might want to temporarily disable and then enable it again. To disable or enable a check:
 
 1. In your Azure DevOps project, go to the resource with a check.  
 
@@ -277,7 +277,7 @@ Let us look at an example. Imagine your YAML pipeline has a stage that uses a Se
 1. A synchronous check, named _Deployment Reason Valid_, that verifies that [the deployment reason is valid](invoke-checks.md#deployment-reason-must-be-valid) and for which you set the _Time between evaluations_ to 7 minutes.
 
 A possible checks execution is shown in the following diagram.
-:::image type="content" source="media/checks/checks-timeline.png" alt-text="Diagram that shows the timeline of an asynchronous and a synchronous checks' executions.":::
+:::image type="content" source="media/checks/checks-timeline.png" alt-text="Diagram that shows the timeline of an asynchronous and a synchronous check's executions.":::
 
 In this execution:
 - Both checks, _External Approval Granted_ and _Deployment Reason Valid_, are invoked at the same time. _Deployment Reason Valid_ fails immediately, but because _External Approval Granted_ is pending, it will be retried. 
