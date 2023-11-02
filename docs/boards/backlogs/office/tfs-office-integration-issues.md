@@ -10,7 +10,6 @@ ms.topic: troubleshooting
 ms.date: 06/27/2022
 ---
 
-
 # Resolve Azure DevOps Office integration issues
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
@@ -49,17 +48,19 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Run regedit command.](media/tfs-office-issues-run-regedit.png) 
 
-2.	Go to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
-	
-	> [!NOTE]  
-	> If there are multiple folders with the same name, select the one with the highest version number. 
+1. Go to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 
-	- `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins` (if this key doesn't exist, try one of the options below)
-	- `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Addins`
-	- `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins`
+> [!NOTE]
+> If there are multiple folders with the same name, select the one with the highest version number. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of LoadBehavior entry.](media/tfs-office-issues-regedit-loadbehavior-key.png) 
+- `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins` (if this key doesn't exist, try one of the options below)
+
+- `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Addins`
+
+- `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins`
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of LoadBehavior entry.](media/tfs-office-issues-regedit-loadbehavior-key.png) 
 
 3.	Double-click to open **LoadBehavior** and set the value data field to **3** (if the value is **0**, the **Team** ribbon won't load).
  
@@ -131,6 +132,26 @@ If the above steps are unsuccessful, try the following steps:
 
 3.	Contact the Microsoft support team.  
 
+## User cannot log in to Azure DevOps from Excel after password change
+
+If a user changed their network password and begins receiving authentication errors with the new account info, they may be experiencing a known issue. The token stored within Visual Studio is no longer valid, but the system does not recognize that it needs to be refreshed.  The user does not have to take any action, the token will expire after some time and authentication will begin working again, but there is no way to estimate the delay. To avoid this, use the following workaround to manually remove the token.
+
+#### Remove the token from the registry
+
+1. Close all open instances of Excel.
+1. Save and then clear the registry path, these commands can be run from Command Prompt opened with the "run as administrator" option:
+   ```CommandPrompt
+   reg export HKEY_CURRENT_USER\SOFTWARE\Microsoft\VSCommon\14.0\ClientServices\TokenStorage\VisualStudio\VssApp %TEMP%\oicreds.reg
+   ```
+
+   ```CommandPrompt
+   reg delete HKEY_CURRENT_USER\SOFTWARE\Microsoft\VSCommon\14.0\ClientServices\TokenStorage\VisualStudio\VssApp
+   ```
+
+1. Open Excel, it will prompt for sign-in when it connects to Azure DevOps.
+
+Users will need to wait until the token expires or delete this reg key every time a password changes, if configured in a way that causes this issue.  
+
 ## Intermittent issues doing refresh and publish
 
 If a user has errors when doing a refresh or publish, it may be due to a Conditional Access Policy in Microsoft Entra ID. To resolve this issue, try clearing the contents of the folder ```%LOCALAPPDATA%\.IdentityService```. 
@@ -140,3 +161,5 @@ If a user has errors when doing a refresh or publish, it may be due to a Conditi
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml)
 - [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)
+
+

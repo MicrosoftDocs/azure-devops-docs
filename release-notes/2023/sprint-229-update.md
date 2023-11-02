@@ -25,6 +25,10 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-229-update-links](includes/artifacts/sprint-229-update-links.md)]
 
+### Reporting
+
+[!INCLUDE [sprint-229-update-links](includes/reporting/sprint-229-update-links.md)]
+
 ## General
 
 [!INCLUDE [sprint-229-update](includes/general/sprint-229-update.md)]
@@ -36,6 +40,10 @@ Check out the release notes for details.
 ## Azure Artifacts
 
 [!INCLUDE [sprint-229-update](includes/artifacts/sprint-229-update.md)]
+
+## Reporting
+
+[!INCLUDE [sprint-229-update](includes/reporting/sprint-229-update.md)]
 
 ## Next steps
 
