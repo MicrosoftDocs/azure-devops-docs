@@ -29,7 +29,7 @@ Approvals and other checks aren't defined in the yaml file. Users modifying the 
 
 ## Approvals
 
-You can manually control when a stage should run using approval checks. This check is commonly used to control deployments to production environments.
+You can manually control when a stage should run using approval and checks. This check is commonly used to control deployments to production environments.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -37,19 +37,16 @@ You can manually control when a stage should run using approval checks. This che
 
 1. Select the **Approvals and checks** tab, and then select the **+** sign to add a new check.
 
+    :::image type="content" source="media/add-approvals-and-checks.png" alt-text="A screenshot showing how to add approvals and checks in azure pipelines.":::
+
 1. Select **Approvals**, and then select **Next**.
 
-1. Add users or groups as your designated **Approvers**, and, if desired, provide **instructions for the approvers**.
+1. Add users or groups as your designated **Approvers**, and, if desired, provide **instructions for the approvers**. Specify if you want to permit or restrict approvers from approving their own runs, and specify your desired **Timeout**. If approvals aren't completed within the specified Timeout, the stage is marked as skipped.
 
 1. Select **Create** when you're done.
 
-You can add multiple approvers to an environment. These approvers can be individual users or groups of users. When a group is specified as an approver, only one of the users in that group needs to approve for the run to move forward.
-
-Using the advanced options, you can configure minimum number of approvers to complete the approval. A group is considered as one approver. 
-
-You can also restrict the user who requested (initiated or created) the run from completing the approval. This option is commonly used for segregation of roles amongst the users.
-
-When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. Users configured as approvers must review and approve or reject the deployment. If you have multiple runs executing simultaneously, you must approve or reject each of them independently. If all required approvals aren't completed within the **Timeout** specified for the approval and all other checks succeed, the stage is marked as skipped.
+> [!NOTE]
+> If a group is designated as an approver, only one user within the group needs to approve for the run to proceed.
 
 ## Branch control
 
