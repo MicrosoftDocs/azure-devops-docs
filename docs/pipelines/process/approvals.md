@@ -29,23 +29,30 @@ Approvals and other checks aren't defined in the yaml file. Users modifying the 
 
 ## Approvals
 
-You can manually control when a stage should run using approval checks. This check is commonly used to control deployments to production environments.
+You can manually control when a stage should run using approval and checks. This check is commonly used to control deployments to production environments.
 
-1. In your Azure DevOps project, go to the resource (for example, environment) that needs to be protected. 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-2. Navigate to **Approvals and Checks** for the resource.
+1. Select **Pipelines** > **Environments**, and then select your environment. 
 
-:::image type="content" source="media/checks/approvals-and-checks.png" alt-text="Approvals and Checks on environment.":::
-   
-3. Select **Create**, provide the approvers and an optional message, and select **Create** again to complete the addition of the manual approval check.
+1. Select the **Approvals and checks** tab, and then select the **+** sign to add a new check.
 
-You can add multiple approvers to an environment. These approvers can be individual users or groups of users. When a group is specified as an approver, only one of the users in that group needs to approve for the run to move forward.
+    :::image type="content" source="media/add-approvals-and-checks.png" alt-text="A screenshot showing how to add approvals and checks in Azure Pipelines.":::
 
-Using the advanced options, you can configure minimum number of approvers to complete the approval. A group is considered as one approver. 
+1. Select **Approvals**, and then select **Next**.
 
-You can also restrict the user who requested (initiated or created) the run from completing the approval. This option is commonly used for segregation of roles amongst the users.
+1. Add users or groups as your designated **Approvers**, and, if desired, provide **instructions for the approvers**. Specify if you want to permit or restrict approvers from approving their own runs, and specify your desired **Timeout**. If approvals aren't completed within the specified Timeout, the stage is marked as skipped.
 
-When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. Users configured as approvers must review and approve or reject the deployment. If you have multiple runs executing simultaneously, you must approve or reject each of them independently. If all required approvals aren't completed within the **Timeout** specified for the approval and all other checks succeed, the stage is marked as skipped.
+1. Select **Create** when you're done.
+
+    :::image type="content" source="media/create-new-approval.png" alt-text="A screenshot showing how to create a new approval.":::
+
+1. Once the approval check is triggered, a prompt window, as shown in the example below, is presented in the user interface. This window provides the option for approvers to either reject or approve the run, along with any accompanying instructions.
+
+    :::image type="content" source="media/approval-prompt.png" alt-text="A screenshot showing the approval prompt window.":::
+
+> [!NOTE]
+> If a group is designated as an approver, only one user within the group needs to approve for the run to proceed.
 
 ## Branch control
 
@@ -135,7 +142,7 @@ You can have multiple required templates for the same service connection. In thi
 
 ## Disable a check
 
-When debugging a check, you may want to temporarily disable and then enable it again. To disable or enable a check:
+When debugging a check, you might want to temporarily disable and then enable it again. To disable or enable a check:
 
 1. In your Azure DevOps project, go to the resource with a check.  
 
@@ -270,7 +277,7 @@ Let us look at an example. Imagine your YAML pipeline has a stage that uses a Se
 1. A synchronous check, named _Deployment Reason Valid_, that verifies that [the deployment reason is valid](invoke-checks.md#deployment-reason-must-be-valid) and for which you set the _Time between evaluations_ to 7 minutes.
 
 A possible checks execution is shown in the following diagram.
-:::image type="content" source="media/checks/checks-timeline.png" alt-text="Diagram that shows the timeline of an asynchronous and a synchronous checks' executions.":::
+:::image type="content" source="media/checks/checks-timeline.png" alt-text="Diagram that shows the timeline of an asynchronous and a synchronous check's executions.":::
 
 In this execution:
 - Both checks, _External Approval Granted_ and _Deployment Reason Valid_, are invoked at the same time. _Deployment Reason Valid_ fails immediately, but because _External Approval Granted_ is pending, it will be retried. 
