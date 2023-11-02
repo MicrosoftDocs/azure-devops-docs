@@ -92,7 +92,8 @@ In the following example, a new resource group and Virtual Machine Scale Set are
     --upgrade-policy-mode manual \
     --single-placement-group false \
     --platform-fault-domain-count 1 \
-    --load-balancer ""
+    --load-balancer "" \
+    --orchestration-mode Uniform
     ```
 
     > [!NOTE]
