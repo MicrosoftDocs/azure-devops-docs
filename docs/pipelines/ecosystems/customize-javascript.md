@@ -3,7 +3,7 @@ title: Customize JavaScript for Azure Pipelines
 description:  Customize how you use JavaScript with Azure Pipelines
 ms.topic: conceptual
 ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2, contperf-fy22q2
-ms.date: 06/20/2022
+ms.date: 11/02/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -131,7 +131,7 @@ Use the [npm](/azure/devops/pipelines/tasks/reference/npm-v1) or [command-line](
 
 ## Manage dependencies
 
-In your build, use [Yarn](https://yarnpkg.com) or Azure Artifacts to download packages from the public npm registry. This registry is a type of private npm registry that you specify in the .npmrc file. 
+In your build, use [Yarn](https://yarnpkg.com) or Azure Artifacts to download packages from the public npm registry. This registry is a type of private npm registry that you specify in the `.npmrc` file. 
 
 ### Use npm
 
@@ -403,7 +403,7 @@ All the dependencies for your React and Vue apps are captured in your *package.j
 
 ::: moniker-end
 
-The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `www`, that is ready for release. It uses the [Node Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0), [Copy File](/azure/devops/pipelines/tasks/reference/copy-files-v2)s, and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks. 
+The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact - `www` - that is ready for release. It uses the [Node Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0), [Copy File](/azure/devops/pipelines/tasks/reference/copy-files-v2)s, and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks. 
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -534,7 +534,7 @@ Grunt gets preinstalled on Microsoft-hosted agents. To run the grunt command in 
 - script: grunt                      # include any additional options that are needed
 ```
 
-If the steps in your `Gruntfile.js` file require authentication with a npm registry:
+If the steps in your `Gruntfile.js` file require authentication with an npm registry:
 
 ```yaml
 - task: npmAuthenticate@0
@@ -705,7 +705,7 @@ A: [Build, release, and test tasks](../tasks/index.md)
 
 ### Q: How do I fix a pipeline failure with the message 'FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory'?
 
-A: This failure type happens when the Node.js package has exceeded the memory usage limit. To resolve the issue, add a variable like `NODE_OPTIONS` and assign it a value of ***--max_old_space_size=16384***.
+A: This failure type happens when the Node.js package exceeds the memory usage limit. To resolve the issue, add a variable like `NODE_OPTIONS` and assign it a value of ***--max_old_space_size=16384***.
 
 ### Q: How can I version my npm packages as part of the build process?
 
