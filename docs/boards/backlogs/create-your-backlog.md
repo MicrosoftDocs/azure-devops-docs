@@ -305,7 +305,7 @@ From the **View options** selector, you can turn on **In Progress Items**. If yo
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
-:::image type="content" source="media/create-backlog/in-progress-control-2020.png" alt-text="Screenshot of View options selector, In progress control":::
+:::image type="content" source="media/create-backlog/in-progress-control-2020.png" alt-text="Screenshot of View options selector, In progress control.":::
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
