@@ -610,6 +610,17 @@ If you want to pin a specific commit, first create a tag pointing to that commit
 > [!NOTE]
 > If no `ref` is specified, the pipeline will default to using `refs/heads/main`.
 
+You can also pin to a specific commit in Git with the SHA value for a repository resource. The SHA value is a 40-character checksum hash that uniquely identifies the commit.
+
+```yaml
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: Contoso/BuildTemplates
+      ref: 1234567890abcdef1234567890abcdef12345678
+```
+
 You may also use `@self` to refer to the repository where the original pipeline was found.
 This is convenient for use in `extends` templates if you want to refer back to contents in the extending pipeline's repository.
 For example:

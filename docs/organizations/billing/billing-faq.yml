@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 07/11/2023
+  ms.date: 11/02/2023
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -286,7 +286,7 @@ sections:
       - question: |
           Q: Can I move between subscriptions? 
         answer: |
-          A: No, you can't move the organization resource that appears in the Azure portal between Azure subscriptions via the Azure portal. But you can move it between subscriptions by [changing the subscription](change-azure-subscription.md) your organization uses for billing. 
+          A: No, you can't move the organization resource that appears in the Azure portal between Azure subscriptions via the Azure portal. But you can move it between subscriptions by [changing the subscription](change-azure-subscription.md) your organization uses for billing. When you change the subscription, a new resource group gets created for your organization. You can then safely delete the old resource group.
           
       - question: |
           Q: Can I move between resource groups? 

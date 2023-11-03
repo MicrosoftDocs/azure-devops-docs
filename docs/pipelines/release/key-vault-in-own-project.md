@@ -84,9 +84,34 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
     ```
 ---
 
-## Configure Key Vault access permissions
+## Create a service principal
 
-Before proceeding with the next steps, we must first create a service principal to be able to query our Azure Key Vault from Azure Pipelines. Complete the steps in [Create a service principal](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal), and then continue with the next steps.
+In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-tutorial-1) in Azure, enabling us to query our Azure Key Vault from Azure Pipelines.
+
+1. Navigate to [Azure portal](https://portal.azure.com/).
+
+1. From the menu bar, select the **>_** icon to open the **Cloud Shell**.
+
+1. Select **PowerShell** or leave it as **Bash** based on your preference.
+
+1. Run the following command to create a new service principal:
+
+    ```Azure CLI
+    az ad sp create-for-rbac -name YOUR_SERVICE_PRINCIPAL_NAME
+    ```
+
+1. Your output should match the example below. Be sure to copy the output of your command, as you will need it to create the service connection in the upcoming step. 
+
+    ```json
+    {
+      "appId": "p951q3e2-8e5r-z697-e9q52aviu8a2",
+      "displayName": "MyServicePrincipal",
+      "password": "***********************************",
+      "tenant": "85wes2u6-63sh-95zx-2as3-qw58wex269df"
+    }
+    ```
+
+## Configure Key Vault access permissions
 
 1. Navigate to [Azure portal](https://portal.azure.com/).
 
@@ -121,13 +146,17 @@ Before proceeding with the next steps, we must first create a service principal 
 
 1. Select **Service principal (manual)**, and then select **Next**.
 
-1. Select **Subscription** for the **Scope Level** and complete the fields with the information from the service principal you created earlier, and then select **Verify**.
+1. Select **Subscription** for the **Scope Level**, and fill in the required fields with information from the previously created service principal. Select **Verify** when you're done: 
+
+    - **Service Principal Id**: Your service principal **appId**.
+    - **Service Principal key**: Your service principal **password**.
+    - **Tenant ID**: Your service principal **tenant**.
 
 1. Provide a name for your service connection, and make sure you check the **Grant access permission to all pipelines** checkbox.
 
 1. Select **Verify and save** when you're done.
 
-:::image type="content" source="../../media/service-principal-service-connection.png" alt-text="A screenshot showing how to create a new manual service principal service connection.":::
+    :::image type="content" source="../../media/service-principal-service-connection.png" alt-text="A screenshot showing how to create a new manual service principal service connection.":::
 
 ## Query and use secrets in your pipeline
 
