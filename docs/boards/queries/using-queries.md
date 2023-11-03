@@ -371,7 +371,7 @@ To group one or more clauses, select them and then select the :::image type="ico
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Web portal, Query Editor, Group Selected Query Clauses.](media/view-run-queries/group-clauses.png)  
 
-You can also group several grouped clauses. Check the boxes of each clause that's already been grouped. Then, choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
+You can also group several grouped clauses. Check the boxes of each clause. Then, choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Web portal, Query Editor, Group multiple query clauses.](media/using-queries/multiple-clauses.png)
@@ -402,7 +402,7 @@ The following two widgets display query results. You can open work items directl
 
 For more information, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
-::: moniker range="azure-devops"
+::: moniker range=" >= azure-devops-2022"
 
 ### View query results widget with Parent titles
 
@@ -425,7 +425,7 @@ A query hyperlink uses the Work Item Query Language (WIQL), which resembles Tran
 > Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.   
 ::: moniker range="azure-devops"  
 
-### Query hyperlink syntax for Azure DevOps Services
+### Query hyperlink syntax
 
 Encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
@@ -456,7 +456,7 @@ SELECT [System.ID], [System.Title]
 
 ::: moniker range="< azure-devops"  
 
-### Query hyperlink syntax for TFS 2018 through Azure DevOps Server
+### Query hyperlink syntax
 
 ```  
 https://{ServerName}/{CollectionName}/{ProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}

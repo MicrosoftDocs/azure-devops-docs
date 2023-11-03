@@ -106,7 +106,7 @@ sections:
           You can track dependencies between work items by linking them using a related or other link type. See [Link work items](backlogs/add-link.md) and [Linking, traceability, and managing dependencies](queries/link-work-items-support-traceability.md). 
 
           ::: moniker range=">= azure-devops-2022"
-          You can view dependencies using [Delivery Plans (Preview)](plans/review-team-plans.md). 
+          You can view dependencies using [Delivery Plans](plans/review-team-plans.md). 
           ::: moniker-end
 
           If you're tracking dependencies across one or more organizations, you may want to use the [Dependency Tracker](extensions/dependency-tracker.md).
