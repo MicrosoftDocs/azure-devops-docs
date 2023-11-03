@@ -156,7 +156,7 @@ You can modify the **Values** and [add or remove clauses](#define-a-clause). Or,
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 Select **New Query** from the **Work Items** page. 
 
@@ -194,7 +194,7 @@ With the **Query across projects** checked, you can add the **Team Project** fie
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 To list work items defined in two or more projects, change the clause for the **Team Project** using the **In** operator, and enter the names of the projects to search in. For example, the following query finds work items defined in the *Fabrikam Fiber* and *Design Agile* projects.  
 
@@ -229,7 +229,7 @@ For example, search for all work items assigned to you by specifying the **Assig
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 Select **Click here to add a clause** to add another clause at the end of the query, and then select the **Field**, **Operator**, and **Value** for that clause.  
 
@@ -295,7 +295,7 @@ Define the filter criteria for both parent and child work items. To find linked 
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
 
@@ -324,7 +324,7 @@ Filter your first-tier list of work items by choosing one of these options:
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 :::image type="content" source="media/using-queries/direct-links-te.png" alt-text="Screenshot, Query Editor, Direct Links Query, Team Explorer.":::
 
@@ -371,7 +371,7 @@ To group one or more clauses, select them and then select the :::image type="ico
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Web portal, Query Editor, Group Selected Query Clauses.](media/view-run-queries/group-clauses.png)  
 
-You can also group several grouped clauses. Check the boxes of each clause that's already been grouped. Then, choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
+You can also group several grouped clauses. Check the boxes of each clause. Then, choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Web portal, Query Editor, Group multiple query clauses.](media/using-queries/multiple-clauses.png)
@@ -402,7 +402,7 @@ The following two widgets display query results. You can open work items directl
 
 For more information, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
-::: moniker range="azure-devops"
+::: moniker range=" >= azure-devops-2022"
 
 ### View query results widget with Parent titles
 
@@ -425,7 +425,7 @@ A query hyperlink uses the Work Item Query Language (WIQL), which resembles Tran
 > Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.   
 ::: moniker range="azure-devops"  
 
-### Query hyperlink syntax for Azure DevOps Services
+### Query hyperlink syntax
 
 Encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
@@ -456,7 +456,7 @@ SELECT [System.ID], [System.Title]
 
 ::: moniker range="< azure-devops"  
 
-### Query hyperlink syntax for TFS 2018 through Azure DevOps Server
+### Query hyperlink syntax
 
 ```  
 https://{ServerName}/{CollectionName}/{ProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}
