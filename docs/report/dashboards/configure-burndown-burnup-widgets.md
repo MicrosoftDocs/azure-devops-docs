@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'  
-ms.date: 06/09/2023
+ms.date: 11/02/2023
 ---
 
 # Configure a burndown or burnup widget 
@@ -61,8 +61,8 @@ Do the following steps to configure both widget types. The only difference betwe
 |Field criteria| Select field criteria to limit the work items that appear in the chart. Filtering is based on values assigned to fields as defined for each work item on the date within the tracking period. For more information, see [Filters that apply to historical data](../powerbi/analytics-historical-filtering.md). </br>Analytics-based charts are built based on the `WorkItemsSnapshot` EntitySet. Snapshot entity types are modeled as daily snapshots. Data aggregates based on assignments made as of the date they're assigned. So, if you want to filter a burndown/burnup widget based on field or tag assignments, assign them prior to the period you want to monitor. Otherwise, the widget doesn't recognize them until the date on which they're applied. You can filter on a null value for the **Field criteria**, which is consistent with a query using the same field criteria. |
 |Burndown on |Choose how you want to calculate burndown by **Count** of work items or by **Sum** based on a selected field. You can select from standard or custom fields of integer or decimal data type, such as **Story Points**, **Effort**, or  **Remaining Work**. Burndown works best when you aggregate size fields like Story Points. If you choose to burndown on fields that change during the sprint, like Remaining Work for Tasks, the calculation of "Items not Estimated" grows as items get closed.   |
 |Time period |- **Start Date**: Determines the original scope baseline. The chart burns down from the original scope.<br/>- **% Complete** and **Total Scope Increase**: Calculated based on your original scope.<br/>- **End Date**: Specifies the target date of completion. Your goal is to burndown the original scope of work by the End Date.
-|Plot interval   |Select the intervals to plot between the **Start Date** and **End Date**. Average burndown is based on the selected interval. After you select the Start Date, set Plot burndown by to Iteration. The Average Burndown assumes that every interval is the same length and that the interval between the Start Date and the first month is a full month, even if the length of time between Start Date and the first month's end date doesn't match your typical length of a month. For best results, enter a Start Date that is the same as the first month's start date, which is also true when plotting by weekly intervals.     |
-|Advanced features |- **Show burndown**: Displays both the historical and projected future burndown.<br/>- **Show total scope**: Displays both the historical and projected scope increase.<br/>- **Show completed work**: It displays remaining work and completed work as stack bar.<br/>- **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.   |
+|Plot interval   |Select the intervals to plot between the **Start Date** and **End Date**. Average burndown is based on the selected interval. After you select the Start Date, set Plot burndown by to Iteration. The Average Burndown assumes that every interval is the same length and that the interval between the Start Date and the first month is a full month. Even if the length of time between Start Date and the first month's end date doesn't match your typical length of a month, the length is the same. For best results, enter a Start Date that is the same as the first month's start date, which is also true when plotting by weekly intervals.     |
+|Advanced features |- **Show burndown**: Displays both the historical and projected future burndown.<br/>- **Show total scope**: Displays both the historical and projected scope increase.<br/>- **Show completed work**: It displays remaining work and completed work as stack bar.<br/>- **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.<br/>- **Show Resolved work items as Completed**: Displays resolved items as completed, providing a true reflection of the burndown state.   |
 
 ::: moniker-end
 
@@ -83,11 +83,11 @@ Do the following steps to configure both widget types. The only difference betwe
 
 ## Interpret a burndown or burnup chart
 
-Your team can get immediate insight as to their progress and learn about their rhythm and behavior. Most burndown lines aren't straight lines. The team never moves at exactly one fixed velocity. Scope increases occur over time. For example, if your projected completion date moves, you may want to ask one of these questions: 
+Your team can get immediate insight as to their progress and learn about their rhythm and behavior. Most burndown lines aren't straight lines. The team never moves at exactly one fixed velocity. Scope increases occur over time. For example, if your projected completion date moves, you might want to ask one of these questions: 
 * *Are we adding too much scope?*
 * *Is the average burn rate changing, and if so, why?*
 
-Burndown charts also help teams understand risks to their release. If the projected end date exceeds the release target date, teams may need to reduce scope or lengthen the project. Burndown can also indicate that progress is greater than expected, providing the uncommon, but wonderful option of adding scope. 
+Burndown charts also help teams understand risks to their release. If the projected end date exceeds the release target date, teams might need to reduce scope or lengthen the project. Burndown can also indicate that progress is greater than expected, providing the uncommon, but wonderful option of adding scope. 
 
 As the following diagram shows, charts based on the burndown/burnup widgets provide many calculated elements. 
 

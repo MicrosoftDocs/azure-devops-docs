@@ -52,7 +52,7 @@ sections:
       - question: Can caching impact rules applied to work items?  
         answer: | 
 
-          **Yes**. Conditional rules based on user or group membership get cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. For more information about conditional rules, see [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).
+          **Yes**. Conditional rules based on user or group membership get cached for your web browser. If you find yourself restricted to update a work item, you might have encountered one of these rules. For more information about conditional rules, see [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).
           If your cache stores outdated rules, you can wait for the client cache to expire within three days, or you can clear the cache.    
           To clear the cache, run the following command in the browser command window and then refresh the browser: window.indexedDB.deleteDatabase("wit")
 
@@ -106,10 +106,10 @@ sections:
           You can track dependencies between work items by linking them using a related or other link type. See [Link work items](backlogs/add-link.md) and [Linking, traceability, and managing dependencies](queries/link-work-items-support-traceability.md). 
 
           ::: moniker range=">= azure-devops-2022"
-          You can view dependencies using [Delivery Plans (Preview)](plans/review-team-plans.md). 
+          You can view dependencies using [Delivery Plans](plans/review-team-plans.md). 
           ::: moniker-end
 
-          If you're tracking dependencies across one or more organizations, you may want to use the [Dependency Tracker](extensions/dependency-tracker.md).
+          If you're tracking dependencies across one or more organizations, you might want to use the [Dependency Tracker](extensions/dependency-tracker.md).
 
       - question: What determines which work item type should be a parent for another work item type? 
 
@@ -181,7 +181,7 @@ sections:
 
           That said, we recommend that you use [Delivery Plans](plans/review-team-plans.md) to view dependencies and a calendar view of work.  
 
-          If your organization supports connection to Microsoft Project, you may find more [Marketplace extensions](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance) that support connection of Azure DevOps to Microsoft Project.  
+          If your organization supports connection to Microsoft Project, you might find more [Marketplace extensions](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance) that support connection of Azure DevOps to Microsoft Project.  
 
           For more context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42).
 
@@ -279,7 +279,7 @@ sections:
           - [Add features and epics](boards/kanban-epics-features-stories.md)  
 
           ::: moniker range=">= azure-devops-2019"
-          Alternatively, you may find a solution for creating child work items by installing one of the following Marketplace extensions:  
+          Alternatively, you might find a solution for creating child work items by installing one of the following Marketplace extensions:  
           - [Work item form one select actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
           - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
           - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks) 

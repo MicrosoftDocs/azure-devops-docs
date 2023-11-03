@@ -10,16 +10,15 @@ ms.date: 07/18/2023
 
 ::: moniker range="azure-devops"
 
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- You must be a [member of the project](../../organizations/accounts/add-organization-users.md).
 - Anyone with access to a project, including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
 - To add, edit, or manage a team dashboard, you must have **Basic** access, be a member of the team, a member of the Project Administrators group, or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you.  
 - To add, edit, or manage a project dashboard, you must have **Basic** access or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you for the select project dashboard.  
 ::: moniker-end
 
-
 ::: moniker range=">= azure-devops-2020 <= azure-devops-2022"
 
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- You must be a [member of the project](../../organizations/accounts/add-organization-users.md).
 - Anyone with access to a project, including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
 - To add, edit, or manage a team dashboard, you must have **Basic** access, be a member of the team, a member of the Project Administrators group, or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you. Team members added to the [team administrator role](../../organizations/settings/add-team-administrator.md) can manage permissions for the team. 
 - To add, edit, or manage a project dashboard, you must have **Basic** access or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you for the select project dashboard. 
@@ -27,10 +26,9 @@ ms.date: 07/18/2023
 
 ::: moniker-end
 
-
 ::: moniker range="azure-devops-2019"
 
-- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).
+- You must be a [member of the project](../../organizations/security/add-users-team-project.md).
 - Install or enable the [Analytics Marketplace extension](../dashboards/analytics-extension.md). Analytics widgets aren't available if Analytics isn't installed, enabled, or running.  
 - Anyone with access to a project, including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
 - To add, edit, or manage a team dashboard, you must have **Basic** access, be a member of the team, a member of the Project Administrators group, or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you. Team members added to the [team administrator role](../../organizations/settings/add-team-administrator.md) can manage permissions for the team.
@@ -38,10 +36,9 @@ ms.date: 07/18/2023
 
 ::: moniker-end
 
-
 ::: moniker range="tfs-2018"
 
-- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).
+- You must be a [member of the project](../../organizations/security/add-users-team-project.md).
 - Anyone with access to a project, including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
 - To add, edit, or manage a team dashboard, you must have **Basic** access, be added to the [team administrator role](../../organizations/settings/add-team-administrator.md), be a member of the Project Administrators group, or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you.  Team administrators can manage permissions for the team. 
 
