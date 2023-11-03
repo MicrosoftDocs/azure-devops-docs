@@ -1,51 +1,28 @@
 ---
 title: Analytics best practices
 titleSuffix: Azure DevOps  
-description: Learn about the best practices to use when querying Analytics for Azure DevOps.
+description: Learn about the best practices to use when you query Analytics for Azure DevOps.
 ms.custom: analytics 
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/12/2022
+ms.date: 11/02/2023
 ---
 
-# Best practices to use when querying Analytics  
+# Analytics best practices 
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-There are several reasons to follow best practices when querying Analytics, such as those practices listed below.
-
-::: moniker range="azure-devops" 
-
-- Ensure high performance queries
-- Return just the data you need 
-- Minimize receipt of warning or error messages
-- Minimize consumption of resources that could lead to throttling 
-
-::: moniker-end
-
-::: moniker range="< azure-devops" 
-
-- Ensure high performance queries
-- Return just the data you need 
-- Minimize receipt of warning or error messages
-::: moniker-end
-
-Follow the guidance provided below as you get started. If you're an extension developer, you'll also want to review [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
-
+Analytics is the reporting platform for Azure DevOps, which allows you to gain insights from your data and make data-driven decisions. Analytics is optimized for fast read-access and server-based aggregations, and it provides various tools to visualize and analyze your data. In this article, we share some best practices for using Analytics in Azure DevOps.
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+- If you're an extension developer, make sure to review [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
 
 ## Get familiar with the Analytics metadata 
 
-Query the Analytics metadata to gain familiarity with the entity types, entity sets, properties, and enumerated lists. To learn how, see [Query the Analytics service](analytics-query-parts.md). 
-
-In addition, you can review select information from these resources: 
-- [Analytics OData metadata](../extend-analytics/analytics-metadata.md)
-- [Entities and properties reference for Azure Boards](entity-reference-boards.md)
-
+Query the Analytics metadata to gain familiarity with the entity types, entity sets, properties, and enumerated lists. For more information, see [Query the Analytics service](analytics-query-parts.md), [Analytics OData metadata](../extend-analytics/analytics-metadata.md), and [Entities and properties reference for Azure Boards](entity-reference-boards.md). 
 
 ## Structure your query to return the data you need 
 
@@ -57,9 +34,7 @@ To query the minimum data set you need to create your report, follow these pract
 - [Create preview queries](#preview)
 - [Limit queries to projects you have access to](#limit-projects)
 
-
 <a id="entityset" />
-
 
 ### Choose the entity set to support your report
 
@@ -78,8 +53,6 @@ Here's a quick reference for the EntityTypes to specify to support reports. For 
 |Azure Pipelines and Tests | `TestResultsDaily` |  `TestRuns`        | 
 |Azure Test Plans | `Tests`<br/>`TestConfiguration`<br/>`TestPoints`<br/>`WorkItems` | `TestResultsDaily`<br/>`TestPointHistorySnapshot` |  | 
 
-
-
 <a id="order" />
 
 ### Specify query parts in the order they're executed 
@@ -94,8 +67,7 @@ The recommended order for the various query parts is to specify them in the foll
 1. `$skip`
 1. `$top`
 
-All queries must contain an `$apply` or `$select` clause, otherwise you may receive a warning message. 
-
+All queries must contain an `$apply` or `$select` clause, otherwise you might receive a warning message. 
 
 <a id="limit-columns" />
 
@@ -110,7 +82,6 @@ To look up the list of properties and their corresponding field names, see [Enti
 <!--- General info 
 Analytics is built on top of a Columnstore Index technology. That means that data is both storage and query processing is column-based. So, the more properties that a query references, the more expensive it's to process. 
 -->
-
 
 <a id="preview" />
 
@@ -140,15 +111,13 @@ The response returns a total of 1415 work items.
 }
 ```
 
-
-
 <a id="limit-projects" />
 
 ### Limit queries to projects you have access to 
 
 Project-scope queries return information about a single project, whereas organization-scope queries are designed to return information that cross project boundaries. Organization scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn't blocked due to a lack of project permissions. 
 
-If you have access to one or more projects, but not all projects, and you submit an organization-scoped query, you'll receive an error message.
+If you have access to one or more projects, but not all projects, and you submit an organization-scoped query, you receive an error message.
 
 `"VS403496: The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you're using $expand or navigation properties, project filter is required for those entities. More information can be found here: https://go.microsoft.com/fwlink/?LinkId=786441."`
 
@@ -160,10 +129,9 @@ Analytics reviews each query it receives for violations to its rules. It returns
 
 ::: moniker range="azure-devops" 
 
-
 ## Rate limits and throttling 
 
-Queries made to Analytics for Azure DevOps Services are subject to rate limits. If too  many queries are sent that request the return of large amounts of data within a short time frame, the service may be subject to throttling. Rate limits are discussed in [Service and rate limits for Azure DevOps Services](../../user-guide/service-limits.md).
+Queries made to Analytics for Azure DevOps Services are subject to rate limits. If too  many queries are sent that request the return of large amounts of data within a short time frame, the service might be subject to throttling. Rate limits are discussed in [Service and rate limits for Azure DevOps Services](../../user-guide/service-limits.md).
 
 You can review usage for the service and for individuals by going to **Organization Settings>Usage** and exercising the filters. For example, the following image shows the usage by *Jamal Hartnett* to the Analytics service. 
 
@@ -171,39 +139,9 @@ You can review usage for the service and for individuals by going to **Organizat
 
 ::: moniker-end
  
-
-
 ## Related articles
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
 - [Construct OData queries for Analytics](analytics-query-parts.md)
 - [Analytics OData metadata](../extend-analytics/analytics-metadata.md) 
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
-
-
-
-<!--- 
-<a id="limit-records-returned" />
-
-### Limit the number of records returned 
-
-GET https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems HTTP/1.1
-User-Agent: {application}
-Prefer: VSTS.Analytics.MaxSize=1000
-OData-MaxVersion: 4.0
-Accept: application/json;odata.metadata=minimal
-Host: analytics.dev.azure.com/{OrganizationName}
-
-
-
-## Understand how to formulate date queries
-
-While there are several ways to define a date filter, the preferred method for best performance is to use a surrogate key representation. For example, the following query returns all the work items created since the beginning of 2022 regardless of the organization's settings.
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
->   $filter=CreatedDateSK ge 20220101
->   &$select=WorkItemId, Title, State
-> ```
--->
