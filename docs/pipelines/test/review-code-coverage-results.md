@@ -35,7 +35,7 @@ over time by reducing the test debt.
 
 To view an example of publishing code coverage results for your choice of language,
 see the **Ecosystems** section of the Pipelines topics. For example, collect and publish
-code coverage for [JavaScript](../ecosystems/javascript.md) using Istanbul.
+code coverage for [JavaScript](../ecosystems/customize-javascript.md) using Istanbul.
 
 ## View results 
 

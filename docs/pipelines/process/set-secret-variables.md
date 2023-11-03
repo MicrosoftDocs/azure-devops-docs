@@ -2,7 +2,7 @@
 title: Set secret variables
 description: Learn how to set secret variables.
 ms.topic: conceptual
-ms.date: 06/03/2022
+ms.date: 10/30/2023
 monikerRange: 'azure-devops || >= azure-devops-2019'
 ---
 
@@ -10,15 +10,15 @@ monikerRange: 'azure-devops || >= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2019.md)]
 
-Secret variables are encrypted variables that you can use in pipelines without exposing their value. Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want to have exposed in a pipeline. Secret variables are encrypted at rest with a 2048-bit RSA key and are available on the agent for tasks and scripts to use. 
+Secret variables are encrypted variables that you can use in pipelines without exposing their value. Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want exposed in a pipeline. Secret variables are encrypted at rest with a 2048-bit RSA key and are available on the agent for tasks and scripts to use. 
 
-The recommended ways to [set secret variables are in the UI](#secret-variable-in-the-ui), [in a variable group](#set-a-secret-variable-in-a-variable-group), and [in a variable group from Azure Key Vault](#link-secrets-from-an-azure-key-vault). You can also [set secret variables in a script with a logging command](#set-secret-variable-in-a-script-with-logging-commands) but this is not recommended since anyone who can access your pipeline will be able to also see the secret. To learn more about security and secret variables, see [Use secrets securely in Azure Pipelines](../security/secrets.md).
+The recommended ways to [set secret variables are in the UI](#secret-variable-in-the-ui), [in a variable group](#set-a-secret-variable-in-a-variable-group), and [in a variable group from Azure Key Vault](#link-secrets-from-an-azure-key-vault). You can also [set secret variables in a script with a logging command](#set-secret-variable-in-a-script-with-logging-commands) but this isn't recommended since anyone who can access your pipeline can also see the secret.
 
-Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they are set. You can use variable groups to share secret variables across pipelines.
+Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they're set. You can use variable groups to share secret variables across pipelines.
 
 ## Secret variable in the UI
 
-You can set secret variables in the pipeline editor when you are editing an individual pipeline. You'll encrypt and make a pipeline variable secret by selecting the lock icon. 
+You can set secret variables in the pipeline editor when you're editing an individual pipeline. You'll encrypt and make a pipeline variable secret by selecting the lock icon. 
 
 You set secret variables the same way for YAML and Classic. 
 
@@ -57,14 +57,14 @@ My second secret variable: ***
 Strings are equal.
 ```
 
-[!INCLUDE [secrests masked](./includes/masked-secrets.md)]
+[!INCLUDE [secrets masked](./includes/masked-secrets.md)]
 
 For a more detailed example, see [Define variables](variables.md#secret-variables).
 
 #### [Classic](#tab/classic/)
 
 
-Unlike a normal variable, secret are not automatically decrypted into environment variables for scripts. You need to explicitly map secret variables.
+Unlike a normal variable, secret aren't automatically decrypted into environment variables for scripts. You need to explicitly map secret variables.
 
 In this example, the variable `mySecret` is set on the Variables tab. The value of `mySecret` is `foo`.
 
@@ -117,7 +117,7 @@ You can use the Azure Key Vault task to include secrets in your pipeline. This t
 
     :::image type="content" source="../release/media/azure-key-vault/configure-azure-key-vault-task.png" alt-text="Add the Azure Key Vault task.":::
  
-The **Make secrets available to whole job** option is not currently supported in Azure DevOps Server 2019 and 2020.
+The **Make secrets available to whole job** option isn't currently supported in Azure DevOps Server 2019 and 2020.
 
 To learn more about the Azure Key Vault task, see [Use Azure Key Vault secrets in Azure Pipelines](../release/azure-key-vault.md). 
  

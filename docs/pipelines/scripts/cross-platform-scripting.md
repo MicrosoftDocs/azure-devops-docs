@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Patterns for safe cross-platform scripting
 ms.topic: conceptual
 ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2
-ms.date: 02/28/2022
+ms.date: 11/02/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,8 +15,7 @@ monikerRange: '<= azure-devops'
 With Azure Pipelines, you can run your builds on macOS, Linux, and Windows machines. If you develop on cross-platform technologies such as .NET Core, Node.js and Python, these capabilities bring both benefits and challenges.
 
 For example, most pipelines include one or more scripts that you want to run during the build process.
-But scripts often don't run the same way on different platforms.
-Below are some tips on how to handle this kind of challenge.
+But scripts often don't run the same way on different platforms. You can use the `script` keyword shortcut to make writing scripts easier and also can use conditions to target specific platforms with your scripts. 
 
 ## Run cross-platform tools with a script step
 
@@ -51,7 +50,7 @@ Command line, PowerShell, and Bash each have different ways of reading environme
 If you need to access an operating system-provided value like PATH, you'll need different techniques per platform.
 
 However, Azure Pipelines offers a cross-platform way to refer to variables that
-it knows about called [macro syntax](../process/variables.md#understand-variable-syntax). By surrounding a variable name in `$( )`, it will be expanded
+it knows about called [macro syntax](../process/variables.md#understand-variable-syntax). By surrounding a variable name in `$( )`, it's expanded
 before the platform's shell ever sees it. For instance, if you want to echo out
 the ID of the pipeline, the following script is cross-platform friendly:
 
