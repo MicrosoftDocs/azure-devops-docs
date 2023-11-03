@@ -239,7 +239,7 @@ If possible, we recommended to always use identity services for authentication i
 
 - Avoid remotely fetched resources, but, if necessary, use versioning and hash checking. 
 - Don’t log secrets. 
-- Don’t store secrets in pipeline variables, use Azure KeyVault. Regularly scan your build pipelines to ensure secrets aren’t being stored in build pipeline variables. 
+- Don’t store secrets in pipeline variables, use Azure Key Vault. Regularly scan your build pipelines to ensure secrets aren’t being stored in build pipeline variables. 
 - Don’t let users run builds against arbitrary branches or tags on security-critical pipelines. 
 - Disable inheritance on the pipeline, as inherited permissions are broad and don’t accurately reflect your needs for permissions. 
 - Limit job authorization scopes in all cases. 
@@ -248,7 +248,7 @@ If possible, we recommended to always use identity services for authentication i
 
 - Set the “Require a minimum number of reviewers,” policy to *on*, so that every pull request gets reviewed by at least two approvers.  
 - Configure security policies specific to each repository or branch, instead of project wide. Security policies reduce risk, enforce change management standards, and improve your team’s quality of code.  
-- Store production secrets in a separate KeyVault and ensure that access is only granted on a need-to-know basis to keep nonproduction builds separate.  
+- Store production secrets in a separate Key Vault and ensure that access is only granted on a need-to-know basis to keep nonproduction builds separate.  
 - Don’t mix test environments with production, including use of credentials.  
 - Disable forking. The more forks there are, the harder it's to keep track of each fork’s security. Also, a user can easily fork a copy of a repository to their own private account.
 - [Don't provide secrets to fork builds](../../pipelines/security/repos.md#dont-provide-secrets-to-fork-builds).
