@@ -1,11 +1,11 @@
 ---
-title:  Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks
+title:  TBD
 author: ckanyika
 ms.author: ckanyika
-ms.date: 10/26/2023
-description: Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks
+ms.date: 11/14/2023
+description: TBD
 ---
-# Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks
+# TBD
 
 With this update, we are announcing the upcoming deprecation of NuGet Restore v1 and NuGet Installer v0 pipeline tasks. Promptly transition to the NuGetCommand@2 pipeline task to avoid build failure starting on November 27, 2023. 
 
@@ -15,35 +15,43 @@ Check out the release notes for details.
 
 ### General
 
-[!INCLUDE [sprint-229-update-links](includes/general/sprint-229-update-links.md)]
+[!INCLUDE [sprint-230-update-links](includes/general/sprint-230-update-links.md)]
+
+### Azure Boards
+
+[!INCLUDE [sprint-230-update-links](includes/boards/sprint-230-update-links.md)]
 
 ### Azure Pipelines
 
-[!INCLUDE [sprint-229-update-links](includes/pipelines/sprint-229-update-links.md)]
-
-### Azure Artifacts
-
-[!INCLUDE [sprint-229-update-links](includes/artifacts/sprint-229-update-links.md)]
+[!INCLUDE [sprint-230-update-links](includes/pipelines/sprint-230-update-links.md)]
 
 ### Reporting
 
-[!INCLUDE [sprint-229-update-links](includes/reporting/sprint-229-update-links.md)]
+[!INCLUDE [sprint-230-update-links](includes/reporting/sprint-230-update-links.md)]
+
+### Wiki
+
+[!INCLUDE [sprint-230-update-links](includes/wiki/sprint-230-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-229-update](includes/general/sprint-229-update.md)]
+[!INCLUDE [sprint-230-update](includes/general/sprint-230-update.md)]
+
+## Azure Boards
+
+[!INCLUDE [sprint-230-update](includes/boards/sprint-230-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-229-update](includes/pipelines/sprint-229-update.md)]
-
-## Azure Artifacts
-
-[!INCLUDE [sprint-229-update](includes/artifacts/sprint-229-update.md)]
+[!INCLUDE [sprint-230-update](includes/pipelines/sprint-230-update.md)]
 
 ## Reporting
 
-[!INCLUDE [sprint-229-update](includes/reporting/sprint-229-update.md)]
+[!INCLUDE [sprint-230-update](includes/reporting/sprint-230-update.md)]
+
+## Wiki
+
+[!INCLUDE [sprint-230-update](includes/wiki/sprint-230-update.md)]
 
 ## Next steps
 
