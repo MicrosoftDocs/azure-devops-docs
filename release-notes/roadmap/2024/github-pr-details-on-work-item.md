@@ -1,22 +1,22 @@
 ---
-title: Show more details about a GitHub Pull Request
+title: Show more details about a GitHub pull request
 author: danhellem
 ms.author: dahellem
 ms.date: 10/30/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Show more details about a GitHub Pull Request
+description: Show more details about a GitHub pull request
 hide_comments: true
 ---
 
-# Show more details about a GitHub Pull Request
+# Show more details about a GitHub pull request
 
-Today the GitHub integration shows if a Pull Request is either open or closed. We want to improve that to match how GitHub displays the status of a Pull Request from the Pull Request list. This will include the following:
+Today the GitHub integration shows if a pull request is either open or closed. We want to improve that to match how GitHub displays the status of a pull request from the Pull Requests list. This will include the following:
 
-- Pull Request id 
-- Date the Pull Request was created
-- Show the status of the Pull Request (draft, review required, approved, merged)
+- Pull request ID 
+- Date the pull request was created
+- Show the status of the pull request (draft, review required, approved, merged)
 - Status of checks (completed, partially completed, failed)
 
 Example:
