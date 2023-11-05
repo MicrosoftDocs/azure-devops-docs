@@ -18,6 +18,3 @@ Example:
 
 > [!div class="mx-imgBorder"]
 > ![screen shot example AB# validation from bot](media\boards-github-ab-validation.png)
-
-> [!NOTE]
-> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/)
