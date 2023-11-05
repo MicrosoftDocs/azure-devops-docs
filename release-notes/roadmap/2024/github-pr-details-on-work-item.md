@@ -14,7 +14,7 @@ hide_comments: true
 
 Today the GitHub integration shows if a pull request is either open or closed. We want to improve that to match how GitHub displays the status of a pull request from the Pull Requests list. This will include the following:
 
-- Pull request id 
+- Pull request ID 
 - Date the pull request was created
 - Show the status of the pull request (draft, review required, approved, merged)
 - Status of checks (completed, partially completed, failed)
