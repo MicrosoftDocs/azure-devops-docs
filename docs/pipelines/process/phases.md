@@ -23,9 +23,9 @@ monikerRange: '<= azure-devops'
 You can organize your pipeline into jobs. Every pipeline has at least one job. A job is a series of steps that run sequentially as a unit.
 In other words, a job is the smallest unit of work that can be scheduled to run.
 
- Azure Pipelines does not support job priority for YAML pipelines. To control when jobs run, you can specify <a href="#conditions">conditions</a> and <a href="#dependencies">dependencies</a>.
-
 To learn about the key concepts and components that make up a pipeline, see [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md). 
+
+Azure Pipelines does not support job priority for YAML pipelines. To control when jobs run, you can specify <a href="#conditions">conditions</a> and <a href="#dependencies">dependencies</a>.
 
 ::: moniker-end
 
