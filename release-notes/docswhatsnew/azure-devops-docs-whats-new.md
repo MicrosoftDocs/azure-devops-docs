@@ -69,6 +69,10 @@ Welcome to what's new in the Azure DevOps docs from October 1, 2023 through Octo
 - [Register an agent using device code flow](/azure/devops/pipelines/agents/device-code-flow-agent-registration)
 - [Register an agent using a personal access token (PAT)](/azure/devops/pipelines/agents/personal-access-token-agent-registration)
 - [Register an agent using a service principal](/azure/devops/pipelines/agents/service-principal-agent-registration)
+- [AdvancedSecurity-Codeql-Autobuild@1 - Advanced Security AutoBuild v1 task](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-autobuild-v1)
+- [AdvancedSecurity-Dependency-Scanning@1 - Advanced Security Dependency Scanning v1 task](/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1)
+- [AdvancedSecurity-Codeql-Init@1 - Advanced Security Initialize CodeQL v1 task](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1)
+- [AdvancedSecurity-Codeql-Analyze@1 - Advanced Security Perform CodeQL analysis v1 task](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1)
 
 ### Updated articles
 
