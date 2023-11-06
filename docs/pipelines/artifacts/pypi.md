@@ -28,34 +28,33 @@ Using Azure Pipelines, developers can publish Python packages to Azure Artifacts
 
 ## Authenticate with Azure Artifacts
 
-To use `twine` to publish your Python packages, you must first set up authentication to your Azure Artifacts feed. The [TwineAuthenticate](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) task stores your  credentials in a `PYPIRC_PATH` environment variable. `twine` will reference this variable to publish your packages from your pipeline.
+To use `twine` for publishing your Python packages, you must first authenticate with your Azure Artifacts feed. The [TwineAuthenticate task](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) provides twine credentials to a `PYPIRC_PATH` environment variable. This variable is then used by`twine` to facilitate the publishing of your packages directly from your pipeline.
 
 # [YAML](#tab/yaml)
 
 ```yaml
 - task: TwineAuthenticate@1
   inputs:
-    artifactFeed: <PROJECT_NAME/FEED_NAME>                            #For an organization-scoped feed, artifactFeed: <FEED_NAME>
-    pythonUploadServiceConnection: <NAME_OF_YOUR_SERVICE_CONNECTION>
+    artifactFeed: <PROJECT_NAME/FEED_NAME>     ## For an organization-scoped feed, artifactFeed: <FEED_NAME>
 ```
-
-- **artifactFeed**: The name of your feed.
-- **pythonUploadServiceConnection**: a [service connection](../library/service-endpoints.md#python-package-upload-service-connection) to authenticate with twine.
 
 # [Classic](#tab/classic)
 
-1. From your pipeline definition, select `+` to add a new task. Search for the **Python twine upload authenticate** task :::image type="icon" source="../tasks/package/media/python-twine-authenticate.png" border="false":::
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Add** to add the task to your pipeline.
+1. Select **Pipelines**, select your pipeline definition, and then select **Edit**.
 
-1. Select your feed from the **My feed** dropdown menu or select a **Feed from external organizations** if you want to authenticate with a feed outside your organization.
+1. Select the `+` sign to add a new task. Search for the :::image type="icon" source="../tasks/package/media/python-twine-authenticate.png" border="false"::: **Python twine upload authenticate** task, and then select **Add** to add it to your pipeline.
 
-:::image type="content" source="media/twine-authenticate.png" alt-text="Screenshot of the Python twine task in Azure Pipelines":::
+1. Select your feed from the **My feed name** dropdown menu, or select a **Feed from external organizations** if you want to authenticate with a feed outside your organization.
+
+    :::image type="content" source="media/twine-authenticate.png" alt-text="A screenshot of the Python twine upload authenticate task in Azure Pipelines.":::
 
 * * *
 
-> [!TIP]
+> [!IMPORTANT]
 > The credentials stored in the `PYPIRC_PATH` environment variable supersede those in your `.ini` and `.conf` files.  
+>
 > If you add multiple TwineAuthenticate tasks at different stages in your pipeline, each additional task execution will extend **(not override)** the existing `PYPIRC_PATH` environment variable.
 
 ## Publish Python packages to Azure Artifacts feeds
