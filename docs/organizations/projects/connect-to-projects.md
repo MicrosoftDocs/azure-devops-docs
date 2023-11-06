@@ -290,7 +290,7 @@ You can also provide access to Stakeholders in your organization who have limite
 
 ## Configure Visual Studio to connect to Azure DevOps Proxy Server 
 
-If your remote team uses a [Azure DevOps Proxy Server](/azure/devops/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
+If your remote team uses an [Azure DevOps Proxy Server](/azure/devops/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
 
 1. Make sure you're connected to Azure DevOps Server, as described [in the previous section](#visual-studio).
 
