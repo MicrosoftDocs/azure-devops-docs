@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 05/17/2023
+ms.date: 11/06/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -251,6 +251,7 @@ evaluation of our data security procedures. Azure DevOps has achieved the follow
 
 - ISO 27001:2013
 - ISO 27018:2019
+- ISO 26262:2023
 - HIPAA (Health Insurance Portability and Accountability Act)
 - BAA (Business Associate Agreement)
 - EU Model Clauses
@@ -260,6 +261,8 @@ evaluation of our data security procedures. Azure DevOps has achieved the follow
 
 The SOC audit for Azure DevOps covers controls for data security, availability, 
 processing integrity, and confidentiality. The SOC reports for Azure DevOps are available through the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports).
+
+The Consensus Assessments Initiative Questionnaire (CAIQ) is a valuable tool used in the realm of cloud computing and cybersecurity, designed to help organizations assess and evaluate the security practices and capabilities of cloud service providers. In alignment with our commitment to security and transparency, we've recently completed the CAIQ assessment for Azure DevOps. We invite you to access the full report on the [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/PrivacyDataProtection), where you can download it for your review. 
 
 ## Steps you can take
 
