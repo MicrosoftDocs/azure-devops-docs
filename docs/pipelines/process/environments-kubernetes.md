@@ -4,7 +4,7 @@ description: Target Kubernetes clusters with the Kubernetes resource. Use Kubern
 ms.custom: pipelinesresourcesrefresh
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
-ms.date: 03/23/2022
+ms.date: 11/06/2023
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-The Kubernetes resource view provides a glimpse into the status of objects within the namespace that's mapped to the resource. This view also overlays pipeline traceability so you can trace back from a Kubernetes object to the pipeline, and then back to the commit.
+The Kubernetes resource view shows the status of objects within the namespace that are mapped to the resource. The resource view also overlays pipeline traceability so you can trace back from a Kubernetes object to the pipeline, and then back to the commit.
 
 Use Kubernetes resources to target Kubernetes clusters in an [environment](environments.md) for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider. 
 
@@ -27,7 +27,7 @@ See the following advantages of using Kubernetes resource views within environme
   > [!div class="mx-imgBorder"]
   > ![Pipeline traceability](media/k8s-pipeline-traceability.png)
 
-- **Diagnose resource health** - Workload status can be useful for quickly debugging mistakes or regressions that might have been introduced by a new deployment. For example, for unconfigured *imagePullSecrets* resulting in ImagePullBackOff errors, pod status information can help you identify the root cause for the issue.
+- **Diagnose resource health** - Workload status can be useful for quickly debugging mistakes or regressions that were introduced by a new deployment. For example, for unconfigured *imagePullSecrets* resulting in ImagePullBackOff errors, pod status information can help you identify the root cause for the issue.
   > [!div class="mx-imgBorder"]
   > ![ImagePullBackOff](media/k8s-imagepullbackoff.png)
 
@@ -42,7 +42,7 @@ A [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/conf
 2. Select **Azure Kubernetes Service** in the Provider dropdown.
 3. Choose the Azure subscription, cluster, and namespace (new/existing).
 4. Select **Validate and create** to create the Kubernetes resource.
-5. Verify that you see a cluster for your environment. You'll see the text "Never deployed" if you have not yet deployed code to your cluster. 
+5. Verify that you see a cluster for your environment. You'll see the text "Never deployed" if you haven't yet deployed code to your cluster. 
 
     :::image type="content" source="media/kubernetes-environment-cluster.png" alt-text="Add a Kubernetes cluster.":::
 
@@ -168,7 +168,9 @@ stages:
     displayName: Production
     pool:
       vmImage: $(vmImageName)
-    environment: $(envName).$(resourceName)
+    environment: 
+      name: $(envName).$(resourceName)
+      resourceType: Kubernetes 
     strategy:
       runOnce:
         deploy:
@@ -198,7 +200,9 @@ stages:
     pool:
       vmImage: $(vmImageName)
 
-    environment: $(envName).$(resourceName)
+    environment: 
+      name: $(envName).$(resourceName)
+      resourceType: Kubernetes
     strategy:
       runOnce:
         deploy:
