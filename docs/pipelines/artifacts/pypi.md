@@ -13,14 +13,20 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Using Azure Pipelines, you can publish your Python packages to Azure Artifacts feeds, public registries, or as a pipeline artifacts. 
-
-This article will show you how to: 
+Using Azure Pipelines, developers can publish Python packages to Azure Artifacts feeds, public registries, or store them as pipeline artifacts. This article will guide you through how to: 
 
 > [!div class="checklist"]  
-> * Install `Twine` 
-> * Authenticate with your Azure Artifacts feeds
+> * Install the prerequisites 
+> * Connect to an Azure Artifacts feed
 > * Publish Python packages to an Azure Artifacts feed
+
+## Prerequisites
+
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- Download [Python](https://www.python.org/downloads/).
+
+- Install Twine (1.13.0+) and the keyring.
 
 ## Install twine
 
