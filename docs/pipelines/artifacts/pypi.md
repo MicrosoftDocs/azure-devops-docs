@@ -24,35 +24,7 @@ Using Azure Pipelines, developers can publish Python packages to Azure Artifacts
 
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Download [Python](https://www.python.org/downloads/).
-
-- Install Twine (1.13.0+) and the keyring.
-
-## Install twine
-
-#### [YAML](#tab/yaml/)
-
-```yaml
-- script: 'pip install twine'
-```
-
-#### [Classic](#tab/classic/)
-
-1. From your pipeline definition, select `+` to add a new task. Search for the **PowerShell** task ![PowerShell icon](../tasks/utility/media/powershell.png).
-
-1. Select **Add** to add the task to your pipeline.
-
-1. Select **Inline** for your script **Type**
-
-1. Enter the following command in the script area
-
-    ```Command
-    pip install twine
-    ```
-
-:::image type="content" source="media/powershell-pipelines.png" alt-text="Screenshot of the PowerShell task in Azure Pipelines":::
-
-* * *
+- An Azure Artifacts feed. [Create a feed](./concepts/feeds.md#create-public-feeds.) if you don't have one already.
 
 ## Authenticate with Azure Artifacts
 
