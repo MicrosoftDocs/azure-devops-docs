@@ -114,6 +114,9 @@ To use `twine` for publishing your Python packages, you must first authenticate 
 
 * * *
 
+> [!NOTE]
+> To publish your packages to a feed using Azure Pipelines, both the **Project Collection Build Service** and your project's **Build Service** identities must have the **Contributor** role assigned in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md) for details.
+
 ## Related articles
 
 - [Publish and download Python packages CLI](../../artifacts/quickstarts/python-cli.md)
