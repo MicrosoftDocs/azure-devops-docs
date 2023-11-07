@@ -86,7 +86,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [Python](#tab/python)
 
-- [Publish Python packages](../../pipelines/artifacts/pypi.md#publish-python-packages-to-azure-artifacts-feeds)
+- [Publish Python packages](../../pipelines/artifacts/pypi.md#publish-python-packages-to-an-azure-artifacts-feed)
 
 #### [Universal Packages](#tab/universalpackages)
 
