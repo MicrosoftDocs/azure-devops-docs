@@ -158,7 +158,6 @@ The following features are generally available for Azure DevOps.
 - [New Work Items](../../boards/work-items/view-add-work-items.md)   
 - [New Dashboards Experience](../../report/dashboards/dashboards.md)  
 - [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)
-- [New Boards Hub on by default](/release-notes/2023/sprint-225-update#new-boards-hub-on-by-default)
 - [Analytics views](../../report/powerbi/what-are-analytics-views.md)
 
 ### Azure Repos
