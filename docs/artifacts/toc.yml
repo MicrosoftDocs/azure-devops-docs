@@ -116,12 +116,12 @@
     - name: Python quickstart 
       href: quickstarts/python-packages.md
       displayName: python packages, python introduction 
-    - name: Publish to a Python feed
-      href: ../pipelines/artifacts/pypi.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-      displayName: python packages, python artifacts, python feed 
-    - name: Publish and consume Python packages from the command line
+    - name: Publish and consume Python packages (CLI)
       href: quickstarts/python-cli.md
-      displayName: python overview, python artifacts 
+      displayName: python, publish, download, cli
+    - name: Publish Python packages to a feed (Classic/YAML)
+      href: ../pipelines/artifacts/pypi.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
+      displayName: python, publish, pipeline, yaml, classic
   - name: Universal Packages
     items:
     - name: Quickstart
