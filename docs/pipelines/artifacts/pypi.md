@@ -57,55 +57,58 @@ To use `twine` for publishing your Python packages, you must first authenticate 
 >
 > If you add multiple TwineAuthenticate tasks at different stages in your pipeline, each additional task execution will extend **(not override)** the existing `PYPIRC_PATH` environment variable.
 
-## Publish Python packages to Azure Artifacts feeds
+## Publish Python packages to an Azure Artifacts feed
 
 # [YAML](#tab/yaml)
 
 ```YAML
 - script: |
-     pip install wheel
-     pip install twine
-  
-- script: |
-     python setup.py bdist_wheel
-   
-- task: TwineAuthenticate@1
-  displayName: Twine Authenticate
-  inputs:
-    artifactFeed: <PROJECT_NAME/FEED_NAME>           #For an organization-scoped feed, artifactFeed: <FEED_NAME>.
-  
-- script: |
-     python -m twine upload -r <FEED_NAME> --config-file $(PYPIRC_PATH) dist/*.whl
-```
-
-Example using [Python build](https://pypi.org/project/build/) and [twine](https://pypi.org/project/twine/) to publish a Python package to an Azure Artifacts feed.
-
-```YAML
-- script: |
-    pip install twine
     pip install build
+    pip install twine
+  displayName: 'Install build and twine'
 
 - script: |
     python -m build -w
+  displayName: 'Python build'
 
 - task: TwineAuthenticate@1
   inputs:
     artifactFeed: <PROJECT_NAME/FEED_NAME>
+  displayName: 'Twine Authenticate'
 
 - script: |
     python -m twine upload -r <FEED_NAME> --config-file $(PYPIRC_PATH) dist/*.whl
-  displayName: 'upload'
+  displayName: 'Upload to feed'
 ```
 
 # [Classic](#tab/classic)
 
-- **Twine Authenticate**:
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-    :::image type="content" source="media/twine-authenticate.png" alt-text="Screenshot of the twine authenticate task to publish python packages.":::
+1. Select **Pipelines**, select your pipeline definition, and then select **Edit**.
 
-- **PowerShell**:
+1. Select the `+` sign to add a new task. Search for the **Use Python version** task, and then select **Add** to add it to your pipeline. In this example we're setting the **Version spec** to *>= 3.7*.
 
-    :::image type="content" source="media/powershell-pipelines.png" alt-text="Screenshot of the PowerShell task to publish python packages.":::
+1. Select the `+` sign to add a new task. Search for the **Command line** task, and then select **Add** to add it to your pipeline. Paste the following commands in the **Script** textbox to install *build* and *twine* on your agent:
+
+    ```command
+    pip install build
+    pip install twine
+    ```
+
+1. Select the `+` sign to add a new task. Search for the **Command line** task, and then select **Add** to add it to your pipeline. Paste the following command in the **Script** textbox to build your project:
+
+    ```command
+    python -m build -w
+    ```
+
+1. Select the `+` sign to add a new task. Search for the **Twine Authenticate** task, and then select **Add** to add it to your pipeline. Select your feed from the **My feed name** dropdown menu.
+
+1. Select the `+` sign to add a new task. Search for the **Command line** task, and then select **Add** to add it to your pipeline. Paste the following command in the **Script** textbox to publish your package to your feed, replacing the placeholder with your feed name:
+ 
+    ```command
+    python -m twine upload -r <FEED_NAME> --config-file $(PYPIRC_PATH) dist/*.whl
+    ```
 
 * * *
 
