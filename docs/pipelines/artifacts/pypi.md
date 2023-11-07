@@ -1,10 +1,10 @@
 ---
-title: Publish Python packages
+title: Publish Python packages to an Azure Artifacts feed
 ms.custom: seodec18, devx-track-python
-description: How to publish Python packages with Azure Pipelines
+description: How to publish Python packages to an Azure Artifacts feed using Azure Pipelines
 services: vsts
 ms.topic: conceptual
-ms.date: 02/03/2022
+ms.date: 11/07/2023
 monikerRange: azure-devops
 "recommendations": "true"
 ---
@@ -110,10 +110,12 @@ To use `twine` for publishing your Python packages, you must first authenticate 
     python -m twine upload -r <FEED_NAME> --config-file $(PYPIRC_PATH) dist/*.whl
     ```
 
+    :::image type="content" source="media/publish-to-feed-python-classic.png" alt-text="A screenshot of a classic pipeline to publish Python packages to an Azure Artifacts feed.":::
+
 * * *
 
 ## Related articles
 
-- [Publish and download pipeline Artifacts](./pipeline-artifacts.md)
-- [Artifacts in Azure Pipelines](./build-artifacts.md)
-- [Release artifacts and artifact sources](../release/artifacts.md)
+- [Publish and download Python packages CLI](../../artifacts/quickstarts/python-cli.md)
+- [Search for packages in upstream sources](../../artifacts/how-to/search-upstream.md)
+- [Configure permissions](../../artifacts/feeds/feed-permissions.md)
