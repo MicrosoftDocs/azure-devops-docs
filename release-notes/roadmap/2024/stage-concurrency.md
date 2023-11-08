@@ -13,9 +13,9 @@ hide_comments: true
 # Stage concurrency
 
 In YAML pipelines, runs of the same pipeline execute in parallel. 
-This is true of stages as well.
-There are usage scenarios in which the parallel execution of the same stage is not allowed.
+The same is true of stages as well.
+There are usage scenarios in which the parallel execution of the same stage isn't allowed.
 For example, each stage of your pipeline kicks off an external deployment orchestration for a particular resource, 
 and you must ensure that no two pipeline runs execute the same stage at the same time. 
-Today, you can achieve this by artificially making use of environments and the execlusive lock check, but this is tedious.
+Today, you can achieve mutual exclusion by making use of environments and the exclusive lock check, but doing so is tedious.
 We plan to give you the ability to define stage-level locks, to ensure mutual exclusion of stages.
