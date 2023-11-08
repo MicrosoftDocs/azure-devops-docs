@@ -162,7 +162,7 @@ steps:
 
 ---
 
-To download an artifact from a different project within your organization, you must deactivate the following features within the project where the pipeline is initiated: *Limit job authorization scope to the current project for non-release pipelines* and/or *Limit job authorization scope to the current project for release pipelines* based on your pipeline type. You can do this by navigating to **Project Settings** > **Pipelines** > **Settings** and switching them off. 
+To download a pipeline artifact from a different project within your organization, make sure that you have the appropriate [permissions](../../artifacts/feeds/project-scoped-feeds.md#q-i-want-to-download-a-pipeline-artifact-from-another-project-but-my-pipeline-is-failing) configured for both your downstream project and downstream pipeline.
 By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded. See [File matching patterns](../tasks/file-matching-patterns.md) for more details.
 
 ```yml
