@@ -122,7 +122,7 @@ To complete this section successfully, you must have an [Azure Container Registr
 
     :::image type="content" source="media/enable-admin-user.png" alt-text="Enable Admin user":::
 
-## Create a Web App for Containers
+## Create a Web App
 
 1. Navigate to [Azure portal](https://portal.azure.com).
 
@@ -134,9 +134,7 @@ To complete this section successfully, you must have an [Azure Container Registr
 
     :::image type="content" source="media/configure-web-app.png" alt-text="Configure the web app":::
 
-1. In the **SKU and Size** section, select **Change size** to specify the pricing tier. Select the **Dev/Test** plan, and then choose the **F1 Free plan**. Select **Apply** when you are done.
-
-    :::image type="content" source="media/pricing-tier.png" alt-text="Change pricing tier to free":::
+1. In the **Pricing plans** section, choose the **F1 Free plan**.
 
 1. Select **Review and create**. Review your configuration, and select **Create** when you are done.
 
@@ -192,7 +190,7 @@ stages:
       inputs:
         azureSubscription: $(azureSubscription)
         appName: $(appName)
-        imageName: $(containerRegistry)/$(imageRepository):$(tag)
+        containers: $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
 # [Classic](#tab/classic/)
@@ -243,7 +241,7 @@ The following YAML snippet shows how to deploy to a staging slot, and then swap 
   inputs:
     azureSubscription: '<Azure service connection>'
     appName: '<Name of the web app>'
-    imageName: $(containerRegistry)/$(imageRepository):$(tag)
+    containers: $(containerRegistry)/$(imageRepository):$(tag)
     deployToSlotOrASE: true
     resourceGroupName: '<Name of the resource group>'
     slotName: staging
