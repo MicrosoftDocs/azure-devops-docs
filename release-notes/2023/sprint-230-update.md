@@ -7,9 +7,16 @@ description: TBD
 ---
 # TBD
 
-With this update, we are announcing the upcoming deprecation of NuGet Restore v1 and NuGet Installer v0 pipeline tasks. Promptly transition to the NuGetCommand@2 pipeline task to avoid build failure starting on November 27, 2023. 
+With this update, 
 
-In Azure Pipelines, we also introduce security improvements for the process of building pull requests from forked GitHub repositories.
+
+
+
+
+
+
+
+
 
 Check out the release notes for details.
 
