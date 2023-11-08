@@ -5,7 +5,7 @@ ms.date: 11/14/2023
 ms.topic: include
 ---
 
-### GitHub Integration - Improved AB# validation (preview)
+### GitHub Integration - Improved AB# validation (private preview)
 
 We are starting our journey of Boards + GitHub integration improvements by addressing the bot responses when linking to work items using the AB# syntax. Today, when you link to a Pull Request using the ``AB#{ID}`` syntax, the only way to know if the link was successful is by looking at the work item or noticing the AB#{ID} turn into a link.
 
