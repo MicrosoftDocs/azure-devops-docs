@@ -12,8 +12,8 @@ hide_comments: true
 
 # Rerun single stage
 
-In YAML pipelines, you can rerun a successful stage, but it will cause all depending stages to rerun as well.
-One use case for rerunning a stage is to do rollback. 
+In YAML pipelines, you can rerun a successful stage, but it triggers all stages that depend on it to rerun as well.
+One use case for rerunning a stage is to roll back to a previous version of your system.
 That is, you can choose an older version of the pipeline and wish to rerun a particular stage, and only that one.
-Today, you can achieve this by artificially making use of environments and approvals & checks or the `ManualValidation` task, but this is tedious.
-We plan to give you the ability to rerun a single stage, without causing depending stages to rerun, too.
+Today, you can achieve simulate rerunning a single stage by making use of environments and approvals or the `ManualValidation` task, but doing so is tedious.
+We plan to give you the ability to rerun a single stage, without causing following stages to rerun too.
