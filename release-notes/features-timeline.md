@@ -341,9 +341,11 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
     </tbody>
 </table>
 
-### Pipelines checks
+### YAML Pipelines feature parity
 
-Customers prefer YAML pipelines over classic for builds (CI). However, for releases (CD), many customers have continued to use classic release management pipelines over YAML. The primary reason for this is the lack of parity in various CD features between the two solutions. Over the next year, we will invest in bridging these gaps. As a first step, we will focus on **checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. 
+Customers prefer YAML pipelines over classic for builds (CI). However, for releases (CD), many customers have continued to use classic release management pipelines over YAML. The primary reason for this is the lack of parity in various CD features between the two solutions. Over the next year, we will invest in bridging these gaps. 
+
+As a first step, we will focus on **checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. 
 
 <table>
     <thead>
@@ -380,6 +382,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td>Future</td>
       </tr>
       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/bypass-checks" data-raw-source="[Bypass approvals and checks](/azure/devops/release-notes/roadmap/2023/bypass-checks)">Bypass approvals and checks</a></td>
+         <td>Pipelines</td>
+         <td>2023 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/service-connections-in-checks" data-raw-source="[Service connections in checks](/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
          <td>Pipelines</td>
          <td>Future</td>
@@ -389,6 +397,45 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Checks extensibility](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
          <td>Pipelines</td>
          <td>Future</td>
+         <td>Future</td>
+      </tr>
+    </tbody>
+</table>
+
+Next, we will focus on **CD functionality**. 
+
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Service</th>
+            <th>Server</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2023/manual-queuing-of-stages)">Manual queuing of stages</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/rerun-single-stage" data-raw-source="[Rerun single stage](/azure/devops/release-notes/roadmap/2023/rerun-single-stage)">Rerun single stage</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2023/stage-conncurrency)">Stage-level concurrency</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2023/stage-traceability)">Stage-level traceability</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
          <td>Future</td>
       </tr>
     </tbody>
