@@ -11,7 +11,7 @@ ms.topic: include
 
 - [Azure RmWeb App Deployment V3/4](#azure-rmwebappdeployment-v34)
 
-[Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
+- [Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
 
 - [Support repository type](#support-repository-type)
 
