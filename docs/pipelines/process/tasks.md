@@ -395,10 +395,10 @@ pool:
 
 steps:
 # Node install
-- task: NodeTool@0
+- task: NodeTool@1
   displayName: Node install
   inputs:
-    versionSpec: '12.x' # The version we're installing
+    version: '16.x' # The version we're installing
 # Write the installed version to the command line
 - script: which node
 ```
