@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Deploy to Azure Web App for Containers
+# Deploy a custom container to Azure App Service with Azure Pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
