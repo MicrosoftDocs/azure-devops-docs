@@ -148,9 +148,9 @@ You need a CI build pipeline that publishes your web app. You also need a deploy
       - job: Build
         displayName: Build
         steps:
-        - task: NodeTool@0
+        - task: NodeTool@1
           inputs:
-            versionSpec: '16.x'
+            version: '16.x'
           displayName: 'Install Node.js'
         - script: |
             npm install
