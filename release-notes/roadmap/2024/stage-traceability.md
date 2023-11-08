@@ -13,8 +13,7 @@ hide_comments: true
 # Stage traceability
 
 In YAML pipelines, it's hard to tell what is the state of your system.
-For example, you cannot easily see what is the latest pipeline run that executed a particular stage.
-This makes debugging the system more diffifcult.
-It is also difficult to reason what changes are going to be deployed in a particular stage.
-We plan to give you the ability to see a stage-focused view of all the runs of a pipeline.
-You'll be able to say that pipeline run `#123` was the last one to run to stage `Deploy WUS1`.
+For example, you can't easily see what is the latest pipeline run that executed a particular stage.
+This limitation makes debugging the system more difficult.
+In YAML pipelines, it's also difficult to reason what changes are going to be deployed in a particular stage.
+We plan to give you the ability to see a stage-focused view of all the runs of a pipeline, so you can say that pipeline run `#123` was the last one to run in stage `Deploy WUS1`.
