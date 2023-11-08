@@ -463,7 +463,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-       <td rowspan="5"><strong>2024 Q1</strong></td>
+       <td rowspan="7"><strong>2024 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item)">Add link to GitHub Commit or Pull Request from work item</a></td>
         <td>Boards</td>         
         <td>Future</td>
@@ -479,22 +479,22 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="">Security Overview</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview" data-raw-source="[Security Overview](/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview)">Security Overview</a></td>
         <td>Advanced Security</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="">Third-party SARIF support</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-3p-sarif" data-raw-source="[Third-party SARIF support](/azure/devops/release-notes/roadmap/2024/ghazdo-3p-sarif)">Third-party SARIF support</a></td>
         <td>Advanced Security</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="">Improved secret detection</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-improved-generic-secrets" data-raw-source="[Improved secret detection](/azure/devops/release-notes/roadmap/2024/ghazdo-improved-generic-secrets)">Improved secret detection</a></td>
         <td>Advanced Security</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="">Custom CodeQL queries</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-custom-codeql" data-raw-source="[Custom CodeQL queries](/azure/devops/release-notes/roadmap/2024/ghazdo-custom-codeql)">Custom CodeQL queries</a></td>
         <td>Advanced Security</td>
         <td>N/A</td>
       </tr>
