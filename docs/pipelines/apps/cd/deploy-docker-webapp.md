@@ -1,6 +1,6 @@
 ---
-title: Deploy a web app to Azure Web App for Containers
-description: How to deploy web apps to Azure Web App for Containers
+title: Deploy a container on Azure App Service with Azure Pipelines
+description: How to deploy containerized web apps to Azure App Service with Azure Pipelines
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.custom: seodec18
@@ -13,13 +13,13 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Pipelines, you can build, test, and automatically deploy your web app to Azure Web App for Containers. In this article, you will learn how to use YAML or Classic pipelines to:
+Using Azure Pipelines, you can build, test, and automatically deploy your web app to an Azure App Service Web App container on Linux. In this article, you will learn how to use YAML or Classic pipelines to:
 
 > [!div class="checklist"]
 >
 > - Build and publish a Docker image to Azure Container Registry
-> - Create a Web App for Containers  
-> - Deploy to Azure Web App for Container
+> - Create an Azure Web App  
+> - Deploy a container to Azure App Service
 > - Deploy to deployment slots
 
 ## Prerequisites
