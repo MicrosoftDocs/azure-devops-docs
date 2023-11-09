@@ -47,14 +47,14 @@ Azure DevOps works with and uses many Microsoft Azure services. For more informa
 
 Azure DevOps stores information that's global in nature, such as user identities and profile information, as follows:
 
-- US-based users: Profile data is in the US datacenter.
-- EU-based users: Profile data is in the EU datacenter.  
-- UK-based users: Profile data is in the UK datacenter.
-- Users from all other countries and regions: Profile data is in the US datacenter.
+- For US-based users, profile data is in the US datacenter.
+- For EU-based users, profile data is in the EU datacenter.  
+- For UK-based users, profile data is in the UK datacenter.
+- For users from all other countries and regions, profile data is in the US datacenter.
 
 ### Token data
 
-Azure DevOps considers token information, such as personal access tokens and SSH keys, global in nature. The service stores this information in a US datacenter.
+Azure DevOps considers token information, such as personal access tokens and Secure Shell (SSH) keys, to be global in nature. The service stores this information in a US datacenter.
 
 ## Allowlist data for tenant policies
 
@@ -71,7 +71,7 @@ We don't transfer customer data outside your selected location. However, we tran
 If necessary, you can transfer your data by using preview, beta, or other prerelease services. These services typically store your data in the United States, but they might store it globally.
 
 > [!NOTE]
-> For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to a GitHub datacenter in the United States. GitHub owns and manages this datacenter location with compliance certifications, such as [SOC 1 and 2 Type II reports](https://github.com/security).
+> For builds and releases that run on Microsoft-provided macOS agents, your data is transferred to a GitHub datacenter in the United States. GitHub owns and manages this datacenter location with compliance certifications, such as [SOC 1 Type 2 and SOC 2 Type 2](https://github.com/security).
 
 Microsoft doesn't control or limit the locations from which you or your users can access your data.
 
