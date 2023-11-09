@@ -8,7 +8,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/25/2023
+ms.date: 11/09/2023
 ---
 
 # .NET client libraries
@@ -84,7 +84,7 @@ For the latest preview versions, see the [NuGet packages gallery](https://www.nu
 
 ## Install
 
-From a NuGet package manager command prompt:
+Install from a NuGet package manager command prompt:
 
 ```powershell
 PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
@@ -92,7 +92,7 @@ PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
 
 ## Connect
 
-Create an authenticated connection to Azure DevOps, get an HttpClient for the service you want to work with, and then call methods against that service.
+To create an authenticated connection to Azure DevOps, get an HttpClient for the service you want to work with, and then call methods against that service.
 
 See the following examples:
 
@@ -154,7 +154,7 @@ namespace ConsoleApp1
 
 ```
 
-Further authentication samples can be found on our [.NET Samples page](../get-started/client-libraries/samples.md).
+For more authentication samples, see [.NET Samples](../get-started/client-libraries/samples.md).
 
 ## Reference
 
