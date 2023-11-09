@@ -10,7 +10,7 @@ ms.topic: include
 
 ### task deprecation warning and retirement date TBD
 
-### AzureRmWebAppDeploymentV3/4 
+### Azure RmWeb App Deployment
 
 ### Improvements to Approvals REST API
 
