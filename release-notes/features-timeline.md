@@ -266,7 +266,7 @@ These investments include:
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability to link more than 500 GitHub repos to a Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability to link more than 500 GitHub repos to a Azure DevOps project</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability to link more than 500 GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability to link more than 500 GitHub repos to an Azure DevOps project</a></td>
          <td>Boards</td>
          <td>Future</td>
          <td>Future</td>
@@ -509,7 +509,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability to link more than 500 GitHub repos to a Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability to link more than 500 GitHub repos to a Azure DevOps project</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability to link more than 500 GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability to link more than 500 GitHub repos to an Azure DevOps project</a></td>
          <td>Boards</td>         
          <td>Future</td>
       </tr>  
