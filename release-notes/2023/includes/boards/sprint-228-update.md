@@ -7,6 +7,9 @@ ms.topic: include
 
 ### Team Automation Rules (private preview)
 
+> [!IMPORTANT]
+> As of 11/9/2023, we are not taking any new organizations into the private preview. We have had great feedback with just a couple of minor bugs to resolve. We are working on those bugs and will be releasing the feature to everyone in the next few sprints.
+
 You can now configure each backlog level to automate the opening and closing/resolving of work items based on the state(s) of their children. There are two main scenarios we are attempting to solve.
 
 1. When a single child item is activated, then activate the parent.
@@ -30,4 +33,3 @@ The features was prioritized based on [this Developer Community suggestion ticke
 
 > [!NOTE]
 > This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
-
