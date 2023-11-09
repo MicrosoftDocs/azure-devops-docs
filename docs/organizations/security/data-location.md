@@ -1,7 +1,7 @@
 ---
 title: Data locations for Azure DevOps 
 titleSuffix: Azure DevOps Services
-description: Learn where your data is stored for Azure DevOps
+description: Learn where your data is stored for Azure DevOps.
 ms.topic: article
 ms.subservice: azure-devops-security
 ms.author: chcomley
@@ -15,11 +15,11 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-You can choose the location for your data during initial sign-up and creation of your organization. Azure DevOps operates in the following geographical locations, or “geos”.
+You can choose the location for your data during initial sign-up and creation of your organization.
 
 ## Data locations
 
-Azure DevOps data is available in the following eight geographies across the world:
+Azure DevOps data is available in the following geographical locations:
 
 - Australia
 - Brazil
@@ -28,57 +28,55 @@ Azure DevOps data is available in the following eight geographies across the wor
 - North Europe (EU)
 - India
 - United Kingdom
-- United States (US)
+- United States
 
-We default your organization to your closest geography. However, you can choose a different geography. If you change your mind afterward, you can [migrate your organization to a different geography](../accounts/change-organization-location.md).
-
-For more information, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
+By default, your organization uses the closest location. However, you can [migrate your organization to a different location](../accounts/change-organization-location.md).
 
 ## Customer data
 
-Except [as noted](#transferring-your-data), Azure DevOps maintains all customer data within your selected geography. Customer data includes the following data types:
+Except [as noted later in this article](#transferring-your-data), Azure DevOps maintains all customer data within your selected geographical location. Customer data includes the following data types:
 
 - Source code
 - Work items
 - Test results
 - Geo-redundant mirrors and offsite backups
 
-Azure DevOps works with and uses many Microsoft Azure services. For more information and details on customer data retention by location, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).  
+Azure DevOps works with and uses many Microsoft Azure services. For more information on customer data retention by location, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).  
 
 ### Profile data
 
-Azure DevOps stores information that's global in nature, such as user identities and profile information as follows:
+Azure DevOps stores information that's global in nature, such as user identities and profile information, as follows:
 
-- US-based users: profile data is in US data center
-- EU-based users: profile data is in EU data center  
-- UK-based users: profile data is in UK data center
-- Users from all other countries and regions: profile data is in US data center
+- US-based users: Profile data is in the US datacenter.
+- EU-based users: Profile data is in the EU datacenter.  
+- UK-based users: Profile data is in the UK datacenter.
+- Users from all other countries and regions: Profile data is in the US datacenter.
 
 ### Token data
 
-Azure DevOps considers token information, such as personal access tokens (PATs) and SSH keys, global in nature, and stores this information in a US data center.
+Azure DevOps considers token information, such as personal access tokens and SSH keys, global in nature. The service stores this information in a US datacenter.
 
 ## Allowlist data for tenant policies
 
-We recommend using groups with your tenant policy allow list(s). If you use a named user, be aware that a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
+We recommend using groups with your tenant policy allowlists. If you use a named user, be aware that a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
 ## Transferring your data
 
-We don't transfer customer data outside of your selected geography. However, we transfer your data if we need to do any of the following actions:
+We don't transfer customer data outside your selected location. However, we transfer your data if we need to take any of the following actions:
 
-- provide customer support
-- troubleshoot the service
-- comply with legal requirements
+- Provide customer support
+- Troubleshoot the service
+- Comply with legal requirements
 
-If needed, you can transfer your data using preview, beta, or other prerelease services. These services typically store your data in the United States, but may store it globally.
-
-> [!NOTE]
-> For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to a GitHub data center in the US. This data center location is owned and managed by GitHub with compliance certifications, such as SOC 1 & 2 Type II reports available [here](https://github.com/security).
-
-Microsoft doesn't control or limit the geographies from which you or your users may access your data.
+If necessary, you can transfer your data by using preview, beta, or other prerelease services. These services typically store your data in the United States, but they might store it globally.
 
 > [!NOTE]
-> Because there's only one region in Brazil, customer data is replicated to south-central United States for disaster recovery and load balancing purposes. For more information, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).
+> For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to a GitHub datacenter in the United States. GitHub owns and manages this datacenter location with compliance certifications, such as [SOC 1 and 2 Type II reports](https://github.com/security).
+
+Microsoft doesn't control or limit the locations from which you or your users can access your data.
+
+> [!NOTE]
+> Because there's only one region in Brazil, customer data in Brazil is replicated to the South Central US region for disaster recovery and load balancing. For more information, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).
 
 ## Related articles
 
