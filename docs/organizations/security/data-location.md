@@ -45,16 +45,16 @@ Azure DevOps works with and uses many Microsoft Azure services. For more informa
 
 ### Profile data
 
-Azure DevOps stores information that's global in nature, such as user identities and profile information, as follows:
+Azure DevOps stores information that's global in nature, such as user identities and profile data, as follows:
 
-- For US-based users, profile data is in the US datacenter.
-- For EU-based users, profile data is in the EU datacenter.  
-- For UK-based users, profile data is in the UK datacenter.
-- For users from all other countries and regions, profile data is in the US datacenter.
+- For US-based users: in the US datacenter
+- For EU-based users: in the EU datacenter  
+- For UK-based users: in the UK datacenter
+- For users from all other countries and regions: in the US datacenter
 
 ### Token data
 
-Azure DevOps considers token information, such as personal access tokens and Secure Shell (SSH) keys, to be global in nature. The service stores this information in a US datacenter.
+Azure DevOps stores token data, such as personal access tokens and Secure Shell (SSH) keys, in a US datacenter.
 
 ## Allowlist data for tenant policies
 
