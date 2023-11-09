@@ -402,7 +402,7 @@ As a first step, we will focus on **checks**. Checks are the primary mechanism i
     </tbody>
 </table>
 
-Next, we will focus on **CD functionality**. 
+Next, we will focus on **CD functionality**, to make it possible to have deployment strategies in YAML pipelines similar to the ones in classic release pipelines.
 
 <table>
     <thead>
