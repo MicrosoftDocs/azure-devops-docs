@@ -276,7 +276,7 @@ These investments include:
 
 ### Pipelines agent Node lifecycle
 
-Azure Pipelines tasks can be authored either in Node or PowerShell, and they use the corresponding runner in the Azure Pipelines agent. Node has a [regular cadence of releases](https://github.com/nodejs/release#release-schedule), with Node 16 being the LTS and Node 18 the Current version as of October, 2022. The original design of the Node task runner did not make Node version upgrades straightforward for task authors, and as a result has not kept up with the latest Node releases. We've heard feedback from customers on this, and are now making a number of changes to enable Azure Pipelines agents to keep installed Node versions in sync with the Node release cadence and support lifecycle while minimizing impacts on task and pipeline authors. 
+Azure Pipelines tasks can be authored either in Node or PowerShell, and they use the corresponding runner in the Azure Pipelines agent. Node has a [regular cadence of releases](https://github.com/nodejs/release#release-schedule), with Node 16 being the LTS and Node 18 the Current version as of October 2022. The original design of the Node task runner did not make Node version upgrades straightforward for task authors, and as a result has not kept up with the latest Node releases. We've heard feedback from customers on this, and are now making a number of changes to enable Azure Pipelines agents to keep installed Node versions in sync with the Node release cadence and support lifecycle while minimizing impacts on task and pipeline authors. 
 
 As a first step, we recently released a new [Node 16 task runner](/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent) for the agent. Over the next few months, we plan to provide improved guidance for task authors to keep up with Node updates. Because not all tasks in the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs) will be continuously updated to run on the latest versions of Node, we will also provide pipeline authors the ability to continue using non-upgraded tasks. Once all these features are available, we'll remove end-of-life versions of Node from Microsoft hosted agents and self-hosted agent images. 
 
@@ -343,9 +343,9 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
 
 ### YAML and release pipelines feature parity
 
-Customers prefer YAML pipelines over classic for builds (CI). However, for releases (CD), many customers have continued to use classic release management pipelines over YAML. The primary reason for this is the lack of parity in various CD features between the two solutions. Over the next year, we will invest in bridging these gaps. 
+Customers prefer YAML pipelines over classic for builds (CI). However, for releases (CD), many customers have continued to use classic release management pipelines over YAML. The primary reason for this is the lack of parity in various CD features between the two solutions. Over the next year, we'll invest in bridging these gaps. 
 
-As a first step, we will focus on **checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. 
+As a first step, we'll focus on **checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. 
 
 <table>
     <thead>
@@ -402,7 +402,7 @@ As a first step, we will focus on **checks**. Checks are the primary mechanism i
     </tbody>
 </table>
 
-Next, we will focus on **CD functionality**, to make it possible to have deployment strategies in YAML pipelines similar to the ones in classic release pipelines.
+Next, we'll focus on **deployment functionality**, to make it possible to have deployment strategies in YAML pipelines similar to the ones in classic release pipelines.
 
 <table>
     <thead>
