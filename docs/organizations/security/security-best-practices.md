@@ -7,7 +7,7 @@ ms.topic: best-practice
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops' 
-ms.date: 09/18/2023  
+ms.date: 11/09/2023
 ---
 
 # Security best practices
@@ -175,7 +175,7 @@ If possible, we recommended to always use identity services for authentication i
 - PATs shouldn't grant write or manage permissions on builds or releases.
 - PATs should have an expiration date and be kept secret since they're as critical as passwords.
 - PATs should never be hardcoded in the application code, even if it's tempting to do so to simplify the code.
-- Administrators should regularly audit all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list) and revoke any that doesn't meet the above criteria.
+- Administrators should regularly audit all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list) and revoke any that don't meet the above criteria.
 
 - Keep your PATs a secret. Your tokens are as critical as passwords.
 - Store your tokens in a safe place.
@@ -205,6 +205,7 @@ If possible, we recommended to always use identity services for authentication i
 
 - [Use extends templates](../../pipelines/security/templates.md#use-extends-templates).
 - For more information about how to set permission levels for pipelines, see [Set pipeline permissions](../../pipelines/policies/set-permissions.md). 
+- For more information about Azure Pipelines security best practices, see [Securing Azure Pipelines](../../pipelines/security/overview.md).
 
 ### Policies
 
