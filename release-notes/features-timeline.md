@@ -341,7 +341,7 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
     </tbody>
 </table>
 
-### YAML Pipelines feature parity
+### YAML and release pipelines feature parity
 
 Customers prefer YAML pipelines over classic for builds (CI). However, for releases (CD), many customers have continued to use classic release management pipelines over YAML. The primary reason for this is the lack of parity in various CD features between the two solutions. Over the next year, we will invest in bridging these gaps. 
 
