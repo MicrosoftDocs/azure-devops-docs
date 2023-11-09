@@ -49,7 +49,7 @@ To help you understand the Azure DevOps Services approach to data protection, he
 
 Administrators can manage access to resources by [granting or restricting permissions](/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions) on user identities or groups. Azure DevOps uses federated authentication of user identities via [Microsoft Entra ID](../accounts/access-with-azure-ad.md) and Microsoft accounts.
 
-During authentication, the user is routed to the authentication provider, where they provide their credentials. After the authentication provider has verified the user's credentials, Azure DevOps issues an authentication cookie to the user. This cookie allows the user to remain authenticated against Azure DevOps.
+During authentication, the user is routed to the authentication provider, where they provide their credentials. After the authentication provider verifies the user's credentials, Azure DevOps issues an authentication cookie to the user. This cookie allows the user to remain authenticated against Azure DevOps.
 
 In this way, the user's credential information is never shared directly with Azure DevOps. For each Azure DevOps resource that the user tries to access, validation of permissions is based on the user's explicit permissions and on permissions that the user inherited through group membership.
 
@@ -107,7 +107,7 @@ For application-specific attacks that can penetrate the Azure defense systems, A
 
 In rare circumstances, you might require a live site response to a problem with service availability. We have an operations team that's constantly available to rapidly identify the problem and to engage the necessary development team resources.
 
-The development team resources then address the problem. They also aim to update the service status page within minutes of detecting a problem that affects the service. After development team resources addresses a problem, they identify the root cause and track the necessary changes to prevent similar problems in the future.
+The development team resources then address the problem. They also aim to update the service status page within minutes of detecting a problem that affects the service. After development team resources address a problem, they identify the root cause and track the necessary changes to prevent similar problems in the future.
 
 Azure DevOps processes for live site management focus on your experience and the health of your service. These processes minimize the time to detect, respond to, and mitigate problems. All engineering disciplines are involved and responsible, so continual improvements evolve out of direct experience. Monitoring, diagnostics, resiliency, and quality assurance processes then improve over time.
 
@@ -129,7 +129,7 @@ Service security requires constant vigilance, from proper design and coding tech
 
 Azure DevOps is designed to be secure. Azure DevOps uses the Microsoft Security Development Lifecycle at the core of its development process. The Microsoft Operational Security Assurance program guides cloud operation procedures in Azure DevOps.
 
-The Azure DevOps team has annual training requirements for all engineers and operations personnel. The team also sponsors informal meetings hosted by Microsoft engineers. After the team solves a problem that's raised in a meeting, it shares the lessons learned with other teams.
+The Azure DevOps team has annual training requirements for all engineers and operations personnel. The team also sponsors informal meetings hosted by Microsoft engineers. After the team solves a problem that surfaces in a meeting, it shares the lessons learned with other teams.
 
 The following methodologies specify the training requirements:
 
@@ -170,7 +170,7 @@ We track and monitor access requests and approvals in a separate system. All acc
 
 We use two-factor authentication for all remote system access. If the username and password for one of our developers or operations staff is stolen, the data remains protected. Additional authentication checks via smart card or a phone call to a preapproved number must occur before we permit any remote access to the service.
 
-To manage and maintain the service, Microsoft uses secrets such as RDP passwords, SSL certificates, and encryption keys. These are all managed, stored, and transmitted securely through the Azure portal. Any access to these secrets requires specific permission, which is logged and recorded securely. All secrets are rotated on a regular cadence, and we can rotate them on demand if there's a security event.
+To manage and maintain the service, Microsoft uses secrets such as RDP passwords, SSL certificates, and encryption keys. These secrets are all managed, stored, and transmitted securely through the Azure portal. Any access to these secrets requires specific permission, which is logged and recorded securely. All secrets are rotated on a regular cadence, and we can rotate them on demand if there's a security event.
 
 The Azure DevOps operations team uses hardened administrator workstations to manage the service. These machines run a minimal number of applications and operate in a logically segmented environment.
 
@@ -324,7 +324,7 @@ You can disable alternate authentication credentials if you decide that it doesn
 
 Administrators can use Microsoft Entra ID to control access to Azure resources and applications, such as Azure DevOps. With conditional access control in place, Microsoft Entra ID checks for the specific conditions that you set for a user to access an application. After the user meets access requirements, the user is authenticated and can access the application.
 
-Azure DevOps supports enforcing certain types of conditional access policies (for example, IP fencing) for custom Azure DevOps authentication mechanisms. These mechanisms include personal access tokens, alternate authentication, OAuth, and SSH keys. If your users access Azure DevOps through a third-party client, only IPv4-based policies are honored.
+Azure DevOps supports enforcing certain types of conditional access policies (for example, IP fencing) for custom Azure DevOps authentication mechanisms. These mechanisms include personal access tokens, alternate authentication, OAuth, and Secure Shell (SSH) keys. If your users access Azure DevOps through a third-party client, only IPv4-based policies are honored.
 
 ## Additional resources
 
