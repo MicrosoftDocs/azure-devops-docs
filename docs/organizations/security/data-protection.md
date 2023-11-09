@@ -209,7 +209,7 @@ The General Data Protection Regulation (GDPR) is the biggest change in data prot
 
 ### Data residency and sovereignty
 
-Azure DevOps is available in the following eight geographical locations across the world: United States, Canada, Europe, United Kingdom, India, Australia, Asia Pacific, and Brazil. By default, your organization is assigned to your closest location. You can migrate your organization to a different location with the assistance of Microsoft support.
+Azure DevOps is available in the following eight geographical locations across the world: United States, Canada, Europe, United Kingdom, India, Australia, Asia Pacific, and Brazil. By default, your organization is assigned to your closest location. However, you can choose a different location when you create your organization. If you change your mind later, you can migrate the organization to a different location with the assistance of Microsoft support.
 
 Azure DevOps doesn't move or replicate customer data outside the chosen location. Instead, your data is geo-replicated to a second region within the same location. The only exception is Brazil, which replicates data to the South Central US region for disaster recovery purposes.
 

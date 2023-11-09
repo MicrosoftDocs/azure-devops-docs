@@ -30,7 +30,7 @@ Azure DevOps data is available in the following geographical locations:
 - United Kingdom
 - United States
 
-By default, your organization uses the closest location. However, you can [migrate your organization to a different location](../accounts/change-organization-location.md).
+By default, your organization uses the closest location. However, you can choose a different location when you create your organization. If you change your mind later, you can [migrate your organization to a different location](../accounts/change-organization-location.md).
 
 ## Customer data
 
