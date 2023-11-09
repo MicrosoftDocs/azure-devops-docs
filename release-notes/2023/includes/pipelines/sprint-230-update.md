@@ -24,7 +24,7 @@ Approvals now contain information about the pipeline run they belong to.
 
 Say you added the following checks on the service connection: an Approval, a Business Hours check, and an Invoke Azure Function check (to enforce a delay between different regions).
 
-Now, imagine you have to do a hotfix deployment. You start a pipeline run, but it doesn't proceed, it waits for most of the checks to complete. You cannot afford to wait for the approvals and checks to complete.
+Now, imagine you have to do a hotfix deployment. You start a pipeline run, but it doesn't proceed,it waits for most of the checks to complete. You cannot afford to wait for the approvals and checks to complete.
 
 In this sprint we've added the possibility to bypass running approvals and checks, so you can completed your hotfix. 
 
