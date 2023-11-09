@@ -28,6 +28,8 @@ If you are interested in enrolling in the private preview, please [send us an em
 
 The features was prioritized based on [this Developer Community suggestion ticket](https://developercommunity.visualstudio.com/t/update-automatically-user-story-state-according-to/376465).
 
-> [!NOTE]
+> [!IMPORTANT]
 > This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
 
+> [!NOTE]
+> As of 11/9/2023, we are not taking any new organizations into the private preview. We have had great feedback with just a couple of minor bugs to resolve. We are working on those bugs and will be releasing the feature to everyone in the next few sprints.
