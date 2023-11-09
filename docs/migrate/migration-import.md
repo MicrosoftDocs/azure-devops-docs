@@ -326,19 +326,14 @@ DACPACs offer a fast and relatively easy method for moving collections into Azur
 > If the data migration tool doesn't display a warning, use the DACPAC method described in this step.  
 
 
-[DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications) is a feature of SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. A DACPAC file can also be restored directly to Azure DevOps Services, so you can use it as the packaging method for getting your collection's data in the cloud. You use the SqlPackage.exe tool to generate the DACPAC file. The tool is included as part of [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt). 
+[DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications) is a feature of SQL Server that allows databases to be packaged into a single file and deployed to other instances of SQL Server. A DACPAC file can also be restored directly to Azure DevOps Services, so you can use it as the packaging method for getting your collection's data in the cloud.
 
-Multiple versions of the SqlPackage.exe tool are installed with SSDT. The versions are stored in folders with names such as 120, 130, and 140. When you use SqlPackage.exe, it's important to use the right version to prepare the DACPAC.
+> [!IMPORTANT]
+> When you use SqlPackage.exe, you must use the .NET Framework version of SqlPackage.exe to prepare the DACPAC. The MSI Installer must be used to install the .NET Framework version of SqlPackage.exe. Do not use the dotnet CLI or .zip (Windows .NET 6) versions of SqlPackage.exe because those versions may generate DACPACs that are incompatible with Azure DevOps Services.
 
-* TFS 2018 imports need to use the SqlPackage.exe version from the 140 folder or higher.
+Download and install SqlPackage.exe using the latest MSI Installer from the [SqlPackage release notes](/sql/tools/sqlpackage/release-notes-sqlpackage).
 
-If you installed SSDT for Visual Studio, you'll find your SqlPackage.exe version in one of the following folder paths:
-
-* If you installed SSDT and integrated it with an existing installation of Visual Studio, your SqlPackage.exe folder path is similar to `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\`.
-* If you installed SSDT as a standalone installation, your SqlPackage.exe folder path is similar to `C:\Program Files (x86)\Microsoft Visual. Studio\2017\SQL\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\`.
-* If you already have an installation of SQL Server, SqlPackage.exe might already be present, and your folder path is similar to `%PROGRAMFILES%\Microsoft SQL Server\130\DAC\bin\`.
-
-Both versions of SSDT that you can download from [SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) include both the 130 and 140 folders and their SqlPackage.exe versions.
+After using the MSI Installer, SqlPackage.exe will be installed in a path similar to `%PROGRAMFILES%\Microsoft SQL Server\160\DAC\bin\`.
 
 When you generate a DACPAC, keep two considerations in mind: the disk that the DACPAC will be saved on and the disk space on the machine that's generating the DACPAC. You want to ensure that you have enough disk space to complete the operation. 
 
