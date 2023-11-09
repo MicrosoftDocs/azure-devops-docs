@@ -39,7 +39,7 @@ You should consider all data to be potentially at risk, no matter where it is or
 
 We host Azure DevOps entirely in Azure datacenters. Azure DevOps uses many core Azure services, including compute, storage, networking, Azure SQL, identity and access management, and Azure Service Bus.
 
-Azure DevOps uses Azure Storage as the primary repository for service metadata and customer data. Depending on the type of data and the storage and retrieval requirements, Azure DevOps uses Azure Blob Storage and Azure SQL Database.
+Azure DevOps uses Azure Storage as the primary repository for service metadata and customer data. Depending on the type of data and the storage and retrieval requirements, Azure DevOps uses Azure Blob Storage and Azure SQL Database storage.
 
 To help you understand the Azure DevOps Services approach to data protection, here's some background on the storage services:
 
@@ -61,7 +61,7 @@ Azure DevOps uses many Azure Storage features to help ensure data availability i
 
 ### Data redundancy
 
-To help protect data during hardware or service failures, Azure Storage geo-replicates customer data between two regions in the same geographical location. For example, Azure can geo-replicate data between northern and western Europe or between northern and southern United States.
+To help protect data during hardware or service failures, Azure Storage geo-replicates customer data between two regions in the same geographical location. For example, Azure Storage can geo-replicate data between North and West Europe or between North and South United States.
 
 For Azure Blob Storage, customer data is replicated three times within a single region. Customer data is replicated asynchronously to a second region in the same geographical location. As such, Azure always maintains the equivalent of six copies of your data.
 
@@ -101,7 +101,7 @@ Azure DevOps offers distributed denial-of-service (DDoS) protections and live si
 
 In some cases, a malicious DDoS attack can affect service availability. Azure has a DDoS defense system that helps prevent attacks against our service. It uses standard detection and mitigation techniques such as SYN cookies, rate limiting, and connection limits. The system is designed to withstand attacks not only from the outside but also from within Azure.
 
-For application-specific attacks that can penetrate the Azure defense systems, Azure DevOps establishes application and organization-level quotas and throttling. This practice helps prevent any overuse of key service resources during an attack or accidental misuse of resources.
+For application-specific attacks that can penetrate the Azure defense systems, Azure DevOps establishes application-level and organization-level quotas and throttling. This practice helps prevent any overuse of key service resources during an attack or accidental misuse of resources.
 
 ### Live site response
 
@@ -109,7 +109,7 @@ In rare circumstances, you might require a live site response to a problem with 
 
 The development team resources then address the problem. They also aim to update the service status page within minutes of detecting a problem that affects the service. After development team resources address a problem, they identify the root cause and track the necessary changes to prevent similar problems in the future.
 
-Azure DevOps processes for live site management focus on your experience and the health of your service. These processes minimize the time to detect, respond to, and mitigate problems. All engineering disciplines are involved and responsible, so continual improvements evolve out of direct experience. Monitoring, diagnostics, resiliency, and quality assurance processes then improve over time.
+Azure DevOps processes for live site management focus on your experience and the health of the service. These processes minimize the time to detect, respond to, and mitigate problems. All engineering disciplines are involved and responsible, so continual improvements evolve out of direct experience. Monitoring, diagnostics, resiliency, and quality assurance processes then improve over time.
 
 Live site management in Azure DevOps has three distinct tracks: telemetry, incident management, and live site review. Here's what these tracks entail:
 
@@ -156,7 +156,7 @@ We use industry best practices to store your credentials in Azure DevOps. [Learn
 If you believe that your penetration testing has revealed a potential security flaw related to the Azure DevOps service, report it to Microsoft within 24 hours. For more information, see the [Microsoft webpage for reporting a computer security vulnerability](https://technet.microsoft.com/organizations/security/ff852094).
 
 > [!IMPORTANT]
-> Although you no longer need to notify Microsoft about penetration testing activities, you must still comply with the [Microsoft Penetration Testing Rules of Engagement](https://technet.microsoft.com/mt784683).
+> Although you don't need to notify Microsoft about penetration testing activities, you must comply with the [Microsoft Penetration Testing Rules of Engagement](https://technet.microsoft.com/mt784683).
 
 ### Bounty program
 
@@ -168,7 +168,7 @@ Microsoft maintains strict control over who gets access to our production enviro
 
 We track and monitor access requests and approvals in a separate system. All access to the system correlates against these approvals. If we detect unapproved access, we alert the operations team to investigate.
 
-We use two-factor authentication for all remote system access. If the username and password for one of our developers or operations staff is stolen, the data remains protected. Additional authentication checks via smart card or a phone call to a preapproved number must occur before we permit any remote access to the service.
+We use two-factor authentication for all remote system access. If the username and password for one of our developers or operations staff are stolen, the data remains protected. Additional authentication checks via smart card or a phone call to a preapproved number must occur before we permit any remote access to the service.
 
 To manage and maintain the service, Microsoft uses secrets such as RDP passwords, SSL certificates, and encryption keys. These secrets are all managed, stored, and transmitted securely through the Azure portal. Any access to these secrets requires specific permission, which is logged and recorded securely. All secrets are rotated on a regular cadence, and we can rotate them on demand if there's a security event.
 
@@ -216,7 +216,7 @@ Azure DevOps doesn't move or replicate customer data outside the chosen location
 > [!NOTE]
 > For builds and releases that run on Microsoft-provided macOS agents, your data is transferred to a GitHub datacenter in the United States.
 
-To learn more, see [Azure DevOps data location](data-location.md).
+To learn more, see [Data locations for Azure DevOps](data-location.md).
 
 ### Law enforcement access
 
@@ -226,7 +226,7 @@ Some customers require their data storage in a particular geographical location 
 
 ### Microsoft access
 
-From time to time, Microsoft employees need to obtain access to customer data stored in Azure DevOps. As a precaution, all employees who have (or might ever have) access to customer data must pass a background check that verifies previous employment and looks for criminal convictions. We permit access to the production systems only when there's a live site incident or other approved maintenance activity, which is logged and monitored.
+From time to time, Microsoft employees need to obtain access to customer data stored in Azure DevOps. As a precaution, all employees who have (or might ever have) access to customer data must pass a background check that includes previous employment and criminal convictions. We permit access to the production systems only when there's a live site incident or other approved maintenance activity, which is logged and monitored.
 
 Because not all data within our system is treated the same way, we classify data into these types:
 
