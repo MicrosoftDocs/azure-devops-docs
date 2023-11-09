@@ -9,7 +9,7 @@ monikerRange: '> azure-devops-2019'
 
 This article provides best practices on using secrets in Azure Pipelines. 
 
-Azure DevOps doesn't generate secret values. However, you might need to add a secret to a pipeline to store sensitive data like an API key. To learn more about setting secret variables, see [Set secret variables](../process/set-secret-variables.md). 
+Azure Pipelines doesn't generate secret values. However, you might need to add a secret to a pipeline to store sensitive data like an API key. To learn more about setting secret variables, see [Set secret variables](../process/set-secret-variables.md). 
 
 ## Use secret variables
 
@@ -50,10 +50,17 @@ Periodically review the registered secrets used by your pipelines to confirm the
 
 Periodically rotate secrets to reduce the window of time during which a compromised secret is valid.
 
-Secrets used by pipelines can include:
+Types of secrets used by pipelines can include:
 
 * [Personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+  * [Security best practices - Choose the right authentication method](../../organizations/security/security-best-practices.md#choose-the-right-authentication-method)
+  * [Manage personal access tokens (PATs) using REST API](../../organizations/accounts/manage-personal-access-tokens-via-api.md)
 * [Secret variables](../process/set-secret-variables.md)
-* [Azure Key Vault secrets](/azure/key-vault/)
+* [Azure Key Vault secrets](/azure/key-vault/general/overview)
 * [Service connections](../library/service-endpoints.md)
 
+## Next steps
+
+<!-- * [Best practices for protecting Azure secrets](/azure/security/fundamentals/secrets-best-practices) -->
+* [Key and secret management considerations in Azure](/azure/well-architected/security/design-storage-keys)
+* [Azure DevOps security best practices](../../organizations/security/security-best-practices.md)
