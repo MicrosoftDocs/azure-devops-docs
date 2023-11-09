@@ -9,10 +9,10 @@ ms.topic: include
 
 - [task deprecation warning and retirement date TBD](#task-deprecation-warning-and-retirement-date-tbd)
 
-- [Azure RmWeb App Deployment V3/4](#azure-rmwebappdeployment-v34)
+- [Azure RmWeb App Deployment](#azure-rmwebappdeployment)
 
 - [Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
 
 - [Support repository type](#support-repository-type)
 
-- [Rerun Invoke Azure Function checks](rerun-invoke-azure-function-checks)
+- [Rerun Invoke Azure Function checks](#rerun-invoke-azure-function-checks)
