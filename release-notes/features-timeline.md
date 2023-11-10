@@ -30,7 +30,7 @@ Each feature is linked to an article where you can learn more about a particular
 
 ### GitHub Advanced Security for Azure DevOps
 
-GitHub Advanced Security (GHAS) for Azure DevOps is now generally available. Any project collection administrator can now enable Advanced Security for their organization, projects and repos from the Project Settings or Organization Settings. You can learn more about how to configure GitHub Advanced Security for Azure DevOps in our [documentation](/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops&tabs=yaml). 
+GitHub Advanced Security (GHAS) for Azure DevOps is now generally available. Any project collection administrator can now enable Advanced Security for their organization, projects and repos from the Project Settings or Organization Settings. You can learn more about how to configure GitHub Advanced Security for Azure DevOps in our [documentation](/azure/devops/repos/security/configure-github-advanced-security-features). 
 
 New capabilities we expect to deliver in the upcoming semester include: 
 
