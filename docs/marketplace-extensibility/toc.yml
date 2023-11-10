@@ -270,7 +270,7 @@
 - name: Reference
   items:
   - name: REST API overview
-    href: /rest/api/azure/devops/?view=azure-devops-rest-7.2&viewFallbackFrom=azure-devops
+    href: /rest/api/azure/devops/?view=azure-devops-rest-7.2&preserve-view=true
   - name: Rate limits
     href: ../integrate/concepts/rate-limits.md
   - name: Deprecation of WIT & Test client OM
