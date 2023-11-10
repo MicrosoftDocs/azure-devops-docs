@@ -7,9 +7,9 @@ ms.topic: include
 
 - [Upgrade AzDO owned tasks to Node 16](#upgrade-azdo-owned-tasks-to-node-16)
 
-- [task deprecation warning and retirement date TBD](#task-deprecation-warning-and-retirement-date-tbd)
+- [task deprecation warning and retirement date ](#task-deprecation-warning-and-retirement-date)
 
-- [Azure RmWeb App Deployment](#azure-rmwebappdeployment)
+- [Azure RmWeb App Deployment](#azure-rmweb-app-deployment)
 
 - [Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
 

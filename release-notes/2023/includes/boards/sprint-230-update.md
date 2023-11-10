@@ -7,9 +7,9 @@ ms.topic: include
 
 ### GitHub Integration - Improved AB# validation (private preview)
 
-We are starting our journey of Boards + GitHub integration improvements by addressing the bot responses when linking to work items using the AB# syntax. Today, when you link to a Pull Request using the ``AB#{ID}`` syntax, the only way to know if the link was successful is by looking at the work item or noticing the AB#{ID} turn into a link.
+We're starting our journey of Boards + GitHub integration improvements by addressing the bot responses when linking to work items using the AB# syntax. Today, when you link to a Pull Request using the ``AB#{ID}`` syntax, the only way to know if the link was successful is by looking at the work item or noticing the AB#{ID} turn into a link.
 
-Today we are opening up a private preview where we have made some improvements to the Azure Boards GitHub app to better inform users when a link to a work item is valid or invalid. This will help users identify bad links and fix them before the Pull Request is merged.
+Today we're opening up a private preview where we have made some improvements to the Azure Boards GitHub app to better inform users when a link to a work item is valid or invalid. This helps users identify bad links and fix them before the Pull Request is merged.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshots of Team Settings.](../../media/230-boards-01.png "Screenshots of Team Settings.")
