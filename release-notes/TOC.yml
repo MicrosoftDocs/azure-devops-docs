@@ -851,8 +851,6 @@
         items:
         - name: "2023"
           items:
-          - name: November 14
-            href: 2023/wiki/sprint-230-update.md
           - name: January 23
             href: 2023/wiki/sprint-215-update.md
           expanded: false
