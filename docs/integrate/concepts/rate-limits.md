@@ -147,7 +147,7 @@ Azure DevOps imposes limits for the number of projects you can have in an organi
 
 ## Wiki
 
-In addition to the usual [repository limits](../repos/git/limits.md#repository-size), wikis defined for a project are limited to 25 MB per single file. 
+In addition to the usual [repository limits](../../repos/git/limits.md#repository-size), wikis defined for a project are limited to 25 MB per single file. 
 
 ## Service connections
 
