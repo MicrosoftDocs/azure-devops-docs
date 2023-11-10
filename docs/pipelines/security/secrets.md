@@ -1,7 +1,7 @@
 ---
 title: Use secrets in Azure Pipelines
 description: Learn best practices for using secrets in Azure Pipelines.
-ms.date: 01/26/2023
+ms.date: 11/10/2023
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -17,7 +17,7 @@ Sensitive values should never be stored as plaintext in an Azure Pipelines **.ym
 
 Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want exposed in a pipeline. The recommended ways to [set secret variables](../process/set-secret-variables.md) are in the UI, in a variable group, and in Azure Key Vault. You can also set secret variables in a script with a logging command but this is not recommended since anyone who can access your pipeline will be able to also see the secret. 
 
-Secret variables are encrypted and can be used in pipelines without exposing their values. Although there values aren't exposed, never echo secrets as output and don't pass secrets on the command line. Instead, we suggest that you map your secrets into environment variables.
+Secret variables are encrypted and can be used in pipelines without exposing their values. Although their values aren't exposed, never echo secrets as output and don't pass secrets on the command line. Instead, we suggest that you map your secrets into environment variables.
 
 When you create a secret, follow [variable naming guidelines](../process/variables.md#variable-naming-restrictions) and make sure that your secret name does not disclose sensitive information. 
 
@@ -25,13 +25,13 @@ When you create a secret, follow [variable naming guidelines](../process/variabl
 
 To limit access to secrets in Azure DevOps, you can:
  
- - Store your secrets in [Azure Key Vault](/azure/key-vault/). With Azure Key Vault, you can then use Azure's role-based access control model to limit access to an secret or group of secrets. 
+ - Store your secrets in [Azure Key Vault](/azure/key-vault/). With Azure Key Vault, you can then use Azure's role-based access control model to limit access to a secret or group of secrets. 
  - Set secret variables in the UI for a pipeline. Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they are set. So, you can have secrets that only visible to users with access to that pipeline. 
  - Set secrets in a variable group. Variable groups follow the [library security model](../library/index.md#library-security). You can control who can define new items in a library, and who can use an existing item.
 
 ## Don't write secrets to logs
 
-Azure Pipelines attempts to scrub secrets from logs wherever possible. This filtering is on a best-effort basis and can't catch every way that secrets can be leaked. Avoid echoing secrets to the console, using them in command line parameters, or logging them to files. For example, some Azure CLI commands output information you must protect. If you call Azure CLI from your pipeline, use the [None output format](https://aka.ms/clisecrets).
+Azure Pipelines attempts to scrub secrets from logs wherever possible. This filtering is on a best-effort basis and can't catch every way that secrets can be leaked. Avoid echoing secrets to the console, using them in command line parameters, or logging them to files. For example, some Azure CLI commands output information you must protect. If you call Azure CLI from your pipeline, use the [None output format](https://aka.ms/clisecrets), and if you need to retrieve a secret from an Azure CLI call, [Use none output format and retrieve security information to a secret variable](/cli/azure/format-output-azure-cli#use-none-and-retrieve-security-information-at-a-later-time).
 
 ## Don't use structured data as secrets
 
@@ -42,7 +42,6 @@ Structured data can cause secret redaction within logs to fail, because redactio
 Audit how secrets are used, to help ensure they’re being handled as expected. You can do this by reviewing the source code of the repository executing the workflow, and checking any actions used in the workflow. For example, check that they’re not sent to unintended hosts, or explicitly being printed to log output.
 
 View the run logs for your pipeline after testing valid/invalid inputs, and check that secrets are properly redacted, or not shown. It's not always obvious how a command or tool you're invoking will emit errors, and secrets might later end up in error logs. Azure Pipelines attempts to scrub secrets from logs wherever possible. This filtering is on a best-effort basis and can't catch every way that secrets can be leaked. As a result, it's good practice to manually review the pipeline logs after testing valid and invalid inputs.
-
 
 ## Audit and rotate secrets
 
