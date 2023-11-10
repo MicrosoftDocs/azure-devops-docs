@@ -31,16 +31,16 @@ and Azure Repos returns the appropriate meta tags so that `go get` knows
 the type and location of the repo to retrieve it.
 
 ```
-go get dev.azure.com/<organization>/<project>/_git/<repo>
+go get dev.azure.com/<organization>/<project>/_git/<repo>.git
 ```
 
 You can also import/get a Go package in a subfolder of a repo by appending 
 the subfolder names, as shown in the following examples.
 
 ```
-go get dev.azure.com/<organization>/<project>/<repo>/subfolder1
+go get dev.azure.com/<organization>/<project>/_git/<repo>.git/subfolder1
 
-go get dev.azure.com/<organization>/<project>/<repo>/subfolder1/subfolder2
+go get dev.azure.com/<organization>/<project>/_git/<repo>.git/subfolder1/subfolder2
 ```
 
 ## Go get with private projects
@@ -57,14 +57,15 @@ To use SSH with `go get`, you must have SSH keys set up for Azure DevOps as desc
 When you have SSH keys set up, add this entry to your .gitconfig file:
 
 ```
-[url "git@ssh.dev.azure.com:v3/<organization>/"]
-  insteadOf = https://dev.azure.com/<organization>/
+[url "git@ssh.dev.azure.com:v3/<organization>/<project>/<repo>"]
+	insteadOf = https://dev.azure.com/<organization>/<project>/<repo>
 ```
 
 With this entry and a specific URL format, you can now use `go get`.
 
 > [!NOTE]
-> The `.git` that follows the repo name and `_git` are not included because you're using the SSH URL.
+> Be sure to use `.git` after the repo name.
+> Also, `_git` is not included in the package URL that you're passing to `go get` because you're using the SSH URL.
 
 ```
 go get dev.azure.com/<organization>/<project>/<repo>.git
@@ -77,8 +78,8 @@ To use HTTPS with `go get`, you must create a PAT as described in [Authenticate 
 After you create the PAT, add this entry to your .gitconfig file:
 
 ```
-[url "https://<user>:<token>@dev.azure.com/<organization>/<project>/<repo>"]
-    insteadOf = https://dev.azure.com/<organization>/<project>/<repo>
+[url "https://<user>:<token>@dev.azure.com/<organization>/<project>/_git/<repo>"]
+	insteadOf = https://dev.azure.com/<organization>/<project>/_git/<repo>
 ```
 
 The `<user>` part can be any non-empty string; we suggest the word `pat`.
@@ -89,15 +90,14 @@ With this entry and a specific URL format, you can now use `go get`.
 > Be sure to use `.git` after the repo name.
 
 ```
-go get dev.azure.com/<organization>/<project>/<repo>.git
+go get dev.azure.com/<organization>/<project>/_git/<repo>.git
 ```
 
 You can also import/get a Go package in a subfolder of a repo by appending the subfolder 
 names, as shown in the following examples.
 
 ```
-go get dev.azure.com/<organization>/<project>/<repo>.git/subfolder1
+go get dev.azure.com/<organization>/<project>/_git/<repo>.git/subfolder1
 
-go get dev.azure.com/<organization>/<project>/<repo>.git/subfolder1/subfolder2
+go get dev.azure.com/<organization>/<project>/_git/<repo>.git/subfolder1/subfolder2
 ```
-
