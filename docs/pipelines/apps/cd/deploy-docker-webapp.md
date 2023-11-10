@@ -1,25 +1,25 @@
 ---
-title: Deploy a web app to Azure Web App for Containers
-description: How to deploy web apps to Azure Web App for Containers
+title: Deploy a container to Azure App Service with Azure Pipelines
+description: How to deploy containerized web apps to Azure App Service with Azure Pipelines
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.custom: seodec18
-ms.date: 10/10/2023
+ms.date: 11/08/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Deploy to Azure Web App for Containers
+# Deploy a custom container to Azure App Service with Azure Pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Pipelines, you can build, test, and automatically deploy your web app to Azure Web App for Containers. In this article, you will learn how to use YAML or Classic pipelines to:
+Using Azure Pipelines, you can build, test, and automatically deploy your web app to an Azure App Service Web App container on Linux. In this article, you will learn how to use YAML or Classic pipelines to:
 
 > [!div class="checklist"]
 >
 > - Build and publish a Docker image to Azure Container Registry
-> - Create a Web App for Containers  
-> - Deploy to Azure Web App for Container
+> - Create an Azure Web App  
+> - Deploy a container to Azure App Service
 > - Deploy to deployment slots
 
 ## Prerequisites
@@ -122,7 +122,7 @@ To complete this section successfully, you must have an [Azure Container Registr
 
     :::image type="content" source="media/enable-admin-user.png" alt-text="Enable Admin user":::
 
-## Create a Web App for Containers
+## Create a Web App
 
 1. Navigate to [Azure portal](https://portal.azure.com).
 
@@ -134,9 +134,7 @@ To complete this section successfully, you must have an [Azure Container Registr
 
     :::image type="content" source="media/configure-web-app.png" alt-text="Configure the web app":::
 
-1. In the **SKU and Size** section, select **Change size** to specify the pricing tier. Select the **Dev/Test** plan, and then choose the **F1 Free plan**. Select **Apply** when you are done.
-
-    :::image type="content" source="media/pricing-tier.png" alt-text="Change pricing tier to free":::
+1. In the **Pricing plans** section, choose the **F1 Free plan**.
 
 1. Select **Review and create**. Review your configuration, and select **Create** when you are done.
 
@@ -192,7 +190,7 @@ stages:
       inputs:
         azureSubscription: $(azureSubscription)
         appName: $(appName)
-        imageName: $(containerRegistry)/$(imageRepository):$(tag)
+        containers: $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
 # [Classic](#tab/classic/)
@@ -243,7 +241,7 @@ The following YAML snippet shows how to deploy to a staging slot, and then swap 
   inputs:
     azureSubscription: '<Azure service connection>'
     appName: '<Name of the web app>'
-    imageName: $(containerRegistry)/$(imageRepository):$(tag)
+    containers: $(containerRegistry)/$(imageRepository):$(tag)
     deployToSlotOrASE: true
     resourceGroupName: '<Name of the resource group>'
     slotName: staging
