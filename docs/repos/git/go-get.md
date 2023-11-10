@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-git
 Go is an open-source programming language, also referred to as Golang. 
 In Go, you can use the `get` command to download and install packages and dependencies. 
 Azure Repos Git provides support for `go get` within an Azure Repos Git repository. 
-With `go get`, you will be able to download packages with their dependencies named by the import paths. 
+With `go get`, you're able to download packages with their dependencies named by the import paths. 
 You can also use the `import` key word inside a go file to specify the import path, using the 
 same syntax described in the following sections.
 
@@ -82,7 +82,7 @@ After you create the PAT, add this entry to your .gitconfig file:
 	insteadOf = https://dev.azure.com/<organization>/<project>/_git/<repo>
 ```
 
-The `<user>` part can be any non-empty string; we suggest the word `pat`.
+The `<user>` part can be any nonempty string; we suggest the word `pat`.
 
 With this entry and a specific URL format, you can now use `go get`.
 
