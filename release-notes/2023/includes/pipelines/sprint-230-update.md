@@ -7,8 +7,7 @@ ms.topic: include
 
 ### Upgrade AzDO owned tasks to Node 16
 
-
-### task deprecation warning and retirement date TBD
+### Task deprecation warning and retirement date 
 
 ### Azure RmWeb App Deployment
 
@@ -100,7 +99,7 @@ When a check is bypassed, you can see this in the checks panel.
 > [!div class="mx-imgBorder"]
 > ![Screenshot of check bypassed.](../../media/230-pipelines-04.png " Screenshot of check bypassed.")
 
-You can bypass a check only if you are an Administrator of the resource on which the checks were defined.
+You can bypass a check only if you're an Administrator of the resource on which the checks were defined.
 
 ### Support for GitHub Enterprise Server in Requited template check
 
@@ -116,9 +115,9 @@ Starting with this sprint, you can specify templates located in GitHub Enterpris
 
 ### Rerun Invoke Azure Function checks
 
-Imagine you deploy your system in multiple stages. Before deploying the second stage, there is an Approval and an Invoke Azure Function check that runs a sanity check on the already-deployed part of the system. 
+Imagine you deploy your system in multiple stages. Before deploying the second stage, there's an Approval and an Invoke Azure Function check that runs a sanity check on the already-deployed part of the system. 
 
-Say you come to review the Approval request and you notice the sanity check ran 2 days ago. Say you are aware there was another deployment that might have affected the result of the sanity check.
+Say you come to review the Approval request and you notice the sanity check ran 2 days ago. Say you're aware there was another deployment that might have affected the result of the sanity check.
 
 Starting with this sprint, you'll be able to rerun Invoke Azure Function and Invoke REST API check.
 
