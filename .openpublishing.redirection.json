@@ -296,11 +296,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/boards/boards/kanban-enable-live-updates.md",
-      "redirect_url": "/azure/devops/boards/boards/kanban-overview#enable-live-updates",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/boards/boards/kanban-basics.md",
       "redirect_url": "/azure/devops/boards/boards/kanban-quickstart",
       "redirect_document_id": false
@@ -448,6 +443,11 @@
     {
       "source_path": "docs/integrate/rest-api-overview.md",
       "redirect_url": "/rest/api/azure/devops/?view=azure-devops-rest-7.2&viewFallbackFrom=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-enable-live-updates.md",
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview",
       "redirect_document_id": false
     }
   ]
