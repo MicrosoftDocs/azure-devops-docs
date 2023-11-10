@@ -25,10 +25,6 @@ Head over to the feature list below to learn move about these features.
 
 [!INCLUDE [sprint-230-update-links](includes/reporting/sprint-230-update-links.md)]
 
-### Wiki
-
-[!INCLUDE [sprint-230-update-links](includes/wiki/sprint-230-update-links.md)]
-
 ## General
 
 [!INCLUDE [sprint-230-update](includes/general/sprint-230-update.md)]
@@ -44,10 +40,6 @@ Head over to the feature list below to learn move about these features.
 ## Reporting
 
 [!INCLUDE [sprint-230-update](includes/reporting/sprint-230-update.md)]
-
-## Wiki
-
-[!INCLUDE [sprint-230-update](includes/wiki/sprint-230-update.md)]
 
 ## Next steps
 
