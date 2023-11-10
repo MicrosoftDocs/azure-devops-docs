@@ -1,7 +1,7 @@
 ---
-title: Integration best practices with REST APIs
+title: Integration best practices
 titleSuffix: Azure DevOps Services 
-description: Best practices for integrating Azure DevOps Services with REST APIs.
+description: Best practices for integrating Azure DevOps Services.
 ms.subservice: azure-devops-ecosystem
 ms.assetid: 9E1F3FD7-E1C1-44D9-B265-5368B3BD621E
 ms.custom: content-health, FY22Q3, freshness
@@ -13,7 +13,7 @@ ms.date: 11/09/2023
 
 <!--- Supports FWLINK:  https://go.microsoft.com/fwlink/?LinkId=692096   --> 
 
-# Best integration practices with REST APIs
+# Best integration practices
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -29,7 +29,7 @@ Don't add work items into Azure DevOps for the sake of having them all in one pl
 
 ## Batch your changes
 
-Doing single operations is slow and expensive, which is the leading cause for performance issues and rate limiting. Batch your changes into a single call. For more informaiton, see our [batch documentation](/previous-versions/azure/devops/integrate/previous-apis/wit/batch) and [sample code](/previous-versions/azure/devops/integrate/previous-apis/wit/samples).
+Doing single operations is slow and expensive, which is the leading cause for performance issues and rate limiting. Batch your changes into a single call. For more information, see our [batch documentation](/previous-versions/azure/devops/integrate/previous-apis/wit/batch) and [sample code](/previous-versions/azure/devops/integrate/previous-apis/wit/samples).
 
 ## Limit your revisions
 

@@ -8,23 +8,27 @@ ms.custom: devx-track-dotnet
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/06/2020
+ms.date: 11/10/2023
 ---
 
-# Get started sample
+# REST API samples for Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
+Most samples in this article use personal access tokens (PATs). PATs are a compact example for authentication. There are many other authentication mechanisms available, including Microsoft Authentication Library, OAuth, and Session tokens. For more information to gauge which is best suited for your scenario, see [Authentication guidance](../authentication/authentication-guidance.md).
+
+For more information, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?view=azure-devops-rest-7.2&preserve-view=true) and [Get started with REST APIs](../../how-to/call-rest-api.md).
+
 ## Personal access tokens
 
-Authenticate with Azure DevOps when you're using the REST APIs or .NET Libraries. Most samples in this article use PATs. PATs are a compact example for authentication. There are many other authentication mechanisms available, including Microsoft Authentication Library, OAuth, and Session tokens. For more information to gauge which is best suited for your scenario, see [Authentication](../authentication/authentication-guidance.md).
+Authenticate with Azure DevOps when you use the REST APIs or .NET Libraries. 
 
-Get started with these samples and [create a personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+Get started with these samples and [create a PAT](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 > [!TIP]
-> Personal access tokens are like passwords. Keep them secret. Make sure you save them in a secure location once your personal access token is created.
+> PATs are like passwords. Keep them secret. Make sure you save them in a secure location once your PAT gets created.
 
-To provide the personal access token through an HTTP header, first convert it to a Base64 string. The following example shows how to convert to Base64 using C#.  The resulting string can then be provided as an HTTP header in the following format:
+To provide the PAT through an HTTP header, first convert it to a Base64 string. The following example shows how to convert to Base64 using C#.  You can provide the resulting string as an HTTP header in the following format:
 
 ``
 Authorization: Basic BASE64USERNAME:PATSTRING
@@ -70,7 +74,7 @@ using (var client = new HttpClient())
 
 ## .NET Client Libraries
 
-Here, we're using two of the .NET Client Libraries. Make sure these .NET Client Libraries are referenced within your .NET project.
+Here, we're using two of the .NET Client Libraries. Make sure you reference the following .NET Client Libraries within your .NET project.
 
 - [Microsoft.TeamFoundationServer.Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
 - [Microsoft.Visual Studio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
@@ -94,7 +98,7 @@ using (ProjectHttpClient projectHttpClient = new ProjectHttpClient(uri, credenti
 
 ```
 
-## Q & A
+## FAQs
 
 <!-- BEGINSECTION class="md-qanda" -->
 
