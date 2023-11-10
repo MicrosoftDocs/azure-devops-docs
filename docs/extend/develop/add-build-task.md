@@ -8,7 +8,7 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-date: 09/21/2023
+date: 11/10/2023
 ---
 
 # Add a custom pipelines task extension
@@ -23,7 +23,6 @@ Learn how to install extensions to your organization for custom build or release
 ## Prerequisites
 
 To create extensions for Azure DevOps, you need the following software and tools.
-
 
 |Software/tool |Information |
 |---------|---------|
@@ -44,7 +43,15 @@ To create extensions for Azure DevOps, you need the following software and tools
   ``` 
 
 > [!IMPORTANT]
-> The dev machine needs to run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of azure-pipelines-task-lib.
+> The dev machine needs to run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of azure-pipelines-task-lib. Update your task.json file as per the following command:
+>
+```
+"execution": {
+    "Node16": {
+      "target": "index.js"
+    }
+  }
+```
 
 <a name="createtask"></a>
 
@@ -165,7 +172,7 @@ See the following descriptions of some of the components of the `task.json` file
 | `description`        | Detailed description of what your task does.                                                                                |
 | `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation."              |
 | `instanceNameFormat` | How the task displays within the build/release step list. You can use variable values by using **$(variablename)**. |
-| `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
+| `groups`             | Describes groups that task properties might be grouped logically by in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
 | `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
@@ -377,7 +384,7 @@ We unit test to quickly test the task script, and not the external tools that it
 
 ## 3. Create the extension manifest file
 
-The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images folders. Ensure you've created an images folder with extension-icon.png. The following example is an extension manifest that contains the build or release task.
+The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images folders. Ensure you created an images folder with extension-icon.png. The following example is an extension manifest that contains the build or release task.
 
 1. Copy the following .json code and save it as your `vss-extension.json` file in your `home` directory. **Don't create this file in the buildandreleasetask folder.**
 
@@ -408,7 +415,7 @@ The extension manifest contains all of the information about your extension. It 
 
 ## 4. Package your extension
 
-After you've written your extension, the next step toward getting it into the Visual Studio Marketplace is to package all of your files together. All extensions are packaged
+The next step to get your extension into the Visual Studio Marketplace is to package all of your files together. All extensions are packaged
 as VSIX 2.0-compatible .vsix files. Microsoft provides a cross-platform command-line interface (CLI) to package your extension.
 
 1. Once you have the [tfx-cli](#prerequisites), go to your extension's home directory, and run the following command:
@@ -422,7 +429,7 @@ as VSIX 2.0-compatible .vsix files. Microsoft provides a cross-platform command-
 > When you're updating an existing extension, either update the version in the manifest or pass the `--rev-version` command line switch. This  increments the *patch* version number of your extension and saves the new version to your manifest.
 > You must rev both the task version and extension version for an update to occur. `tfx extension create --manifest-globs vss-extension.json --rev-version` only updates the extension version and not the task version. For more information, see [Build Task in GitHub](https://github.com/microsoft/tfs-cli/blob/master/docs/buildtasks.md).
 
-After you have your packaged extension in a .vsix file, you're ready to publish your extension to the Marketplace.
+Once your packaged extension is in a .vsix file, you're ready to publish your extension to the Marketplace.
 
 <a name="publishext"></a>
 
@@ -451,7 +458,7 @@ without the need to share a set of credentials across users.
 
 1. Find the **Upload new extension** button, go to your packaged .vsix file, and select **Upload**.
 
-   You can also upload your extension via the command line interface (CLI) by using the `tfx extension publish` command instead of `tfx extension create` to package and publish your extension in one step. You can optionally use `--share-with` to share your extension with one or more accounts after it's published. 
+   You can also upload your extension via the command line interface (CLI) by using the `tfx extension publish` command instead of `tfx extension create` to package and publish your extension in one step. You can optionally use `--share-with` to share your extension with one or more accounts after it gets published. 
 
    ```no-highlight
    tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
@@ -461,7 +468,7 @@ without the need to share a set of credentials across users.
 
 ### Share your extension
 
-Now that you've uploaded your extension, it's in the Marketplace, but no one can see it.
+Now that you uploaded your extension, it's in the Marketplace, but no one can see it.
 Share it with your organization so that you can install and test it.
 
 1. Right-click your extension and select **Share**, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
@@ -642,7 +649,7 @@ To run unit tests, add a custom script to the package.json file. For example:
     - Test results files: **/ResultsFile.xml
     - Search folder: `$(System.DefaultWorkingDirectory)`
 
-After the test results have been published, the output under the tests tab should look like the following example.
+After the test results get published, the output under the tests tab should look like the following example.
 
 ![Screenshot of the test result example.](media/test-results-example.png)
 
@@ -721,7 +728,7 @@ See the following frequently asked questions (FAQs) about adding custom build or
 
 You can restrict Azure Pipelines commands usage and variables, which get set by task.
 This action could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. We recommend that you set it up for new tasks.
-To apply, you may need to add the following statement to your task.json file:
+To apply, you might need to add the following statement to your task.json file:
 
 ```json
   "restrictions": {
