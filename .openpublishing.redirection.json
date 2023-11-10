@@ -434,6 +434,11 @@
       "source_path": "docs/organizations/settings/search-settings.md",
       "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/service-limits.md",
+      "redirect_url": "/azure/devops/integrate/concepts/rate-limits",
+      "redirect_document_id": false
     }
   ]
 }
