@@ -18,14 +18,14 @@ Using Azure Artifacts upstream sources allows you to use a single feed for hosti
 
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- An Azure Artifacts feed. [Create a new feed](../feeds/project-scoped-feeds.md#create-a-new-feed) if you don't have one already.
+- An Azure Artifacts feed.
 
 > [!NOTE]
 > Maven snapshots are not supported with Maven upstream sources.
 
 ## Enable upstream sources
 
-Follow the instructions below to create a new feed and enable upstream sources:
+If you don't have a feed already, follow the instructions below to create one, and make sure that you check the *upstream sources* checkbox to enable them. If you already have a feed, move to the [next step](#add-maven-central-upstream) to add Maven Central as an upstream source.
 
 [!INCLUDE [](../includes/create-feed.md)]
 
