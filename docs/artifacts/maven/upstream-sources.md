@@ -1,9 +1,9 @@
 ---
 title: Use packages from Maven Central
-description: How to use packages from Maven upstream
+description: How to use packages from Maven Central upstream source
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 02/15/2022
+ms.date: 11/10/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -12,7 +12,13 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With upstream sources, you can use both private packages you've created and public packages from Maven Central. When you enable upstream sources in your feed, Azure Artifacts will save a copy of any packages you install from Maven central. Azure Artifacts also support other Maven upstream sources such as Google Maven Repository, Gradle Plugins, and JitPack.
+Using Azure Artifacts upstream sources allows you to use a single feed for hosting both the packages you produce and those from public registries such as Maven Central. By enabling upstream sources in your feed, Azure Artifacts will automatically save a copy of any package installed from upstream. This ensures continued accessibility for your development, even in the event of a public registry outage. Additionally, Azure Artifacts supports various other Maven upstream sources, including the Google Maven Repository, Gradle Plugins, and JitPack.
+
+## Prerequisites
+
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed. [Create a new feed](../feeds/project-scoped-feeds.md#create-a-new-feed) if you don't have one already.
 
 > [!NOTE]
 > Maven snapshots are not supported with Maven upstream sources.
