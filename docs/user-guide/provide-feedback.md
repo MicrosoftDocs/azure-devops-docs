@@ -8,7 +8,7 @@ ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 10/25/2023
+ms.date: 11/10/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,25 +16,23 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Share your feedback and ideas with us, or join our communities. We're always working to improve Azure DevOps, and we want you to be part of the process! 
+Share your feedback and ideas with us, or join our communities. We're always working to improve Azure DevOps, and we want you to be part of the process!
 
-Do you need to do any of the following?
-
-* **Get advice** Visit StackOverflow for [Azure DevOps Services](https://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](https://stackoverflow.com/questions/tagged/tfs).
-
-* **Report a bug** Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [Azure DevOps Server](https://developercommunity.visualstudio.com/spaces/22/index.html).
-
-* **Suggest a feature or a fix** Submit your idea or issue through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [Azure DevOps Server](https://developercommunity.visualstudio.com/content/idea/post.html?space=22).
-
-* **Find out what's new in Azure DevOps** Check out the [current Azure DevOps Release Notes](/azure/devops/server/release-notes/azuredevops2020). These notes are updated every three weeks.
-
-* **Chat with our virtual support agent** Get help with common issues, troubleshooting steps, or create a request to change the region your Azure DevOps instance is hosted in using our [virtual support agent](https://go.microsoft.com/fwlink/?linkid=2160944).
+|Action |More info  |
+|---------|---------|
+|Get advice  | Visit StackOverflow for [Azure DevOps Services](https://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](https://stackoverflow.com/questions/tagged/tfs).        |
+|Report a bug   | Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [Azure DevOps Server](https://developercommunity.visualstudio.com/spaces/22/index.html).        |
+|Suggest a feature or fix    | Submit your idea or issue through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [Azure DevOps Server](https://developercommunity.visualstudio.com/content/idea/post.html?space=22).        |
+| Contact Support     |  You can contact Support by creating a support ticket. To create a support ticket, visit the [Microsoft Azure Support Ticket page](https://azure.microsoft.com/support/create-ticket/) and follow the instructions to create and manage support requests for Azure DevOps Services.                      |
+| Find out what's new in Azure DevOps   | Check out the [current Azure DevOps Release Notes](/azure/devops/server/release-notes/azuredevops2020). These notes are updated every three weeks.
+        |
+|Chat with our virtual support agent    | Get help with common issues, troubleshooting steps, or create a request to change the region your Azure DevOps instance is hosted in using our [virtual support agent](https://go.microsoft.com/fwlink/?linkid=2160944).        |
 
 ## Documentation feedback
 
-All articles on Microsoft Learn have a ratings tool in the lower right-hand corner of the page. It asks "Is this content helpful?" Answer **Yes** or **No** depending on your experience.
+All articles on Microsoft Learn have a ratings tool. Select **Feedback** beneath the title of the article, and in the resulting "Was this page helpful?" pane, select **Yes** or **No** depending on your experience.
 
-Add more detailed feedback by selecting the **Tell us more** link after selecting **Yes** or **No**. Check an appropriate box and enter what we can do to improve the content for you! Although we can't reply back, we collect and review this feedback regularly, and use your sentiments in our content planning.
+Enter more detailed feedback in the **Tell us more** section. Make sure you don't include sensitive or personal information. Although we can't reply back, we collect and review this feedback regularly, and use your sentiments in our content planning.
 
 ## Tips for effective feedback
 

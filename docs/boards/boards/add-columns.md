@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/28/2023
+ms.date: 11/10/2023
 ---
 
 # Manage columns on your Kanban board
@@ -110,7 +110,7 @@ The Kanban board uses the **Work item type** and **State** categories to group w
 
 ## Add and edit columns
 
-Column titles and choices depend on the [process](../work-items/guidance/choose-process.md) that you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).
+Column titles and choices depend on the [process](../work-items/guidance/choose-process.md) that you used to create your project and whether your team chose to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).
 
 Do the following steps to add and edit your columns.
 
@@ -228,13 +228,13 @@ Because each column corresponds to a stage of work, you can quickly see the numb
 
 :::image type="content" source="media/kanban-board-split-columns-example-chart.png" alt-text="Screenshot showing Kanban with split columns.":::
 
-Split columns let your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item.  
+Split columns let your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item.  
 
 With split columns, your team knows exactly how many items sit idle, waiting for work to begin. You have greater visibility into the quantity of items that sit idle at each stage throughout your workflow process.
 
 ### Move items into the *Doing* and *Done* columns 
 
-With split columns turned on, you update status of items on the Kanban board in the same way you have before. However, now when you've completed work on an item, you move it into *Done*, instead of a downstream column. When the next team member becomes free to work on the next high priority item, they pull it into *Doing* and reassign it to themselves.  
+With split columns turned on, you update status of items on the Kanban board in the same way you have before. However, now when you complete work on an item, you move it into *Done*, instead of a downstream column. When the next team member becomes free to work on the next high priority item, they pull it into *Doing* and reassign it to themselves.  
 
 For example, as a team member completes their coding task, they move the item into *Done* under the Develop column. When the tester is ready to test the item, they pull it into *Doing* under the Test column.  
 
@@ -341,7 +341,7 @@ Team members can quickly double-check the criteria by choosing the Information t
 
 ## Do more tasks
 
-In the following table, we've listed tasks and their associated articles, so you can do more with your Kanban board. 
+In the following table, we list tasks and their associated articles, so you can do more with your Kanban board. 
 
 |Article |Task |
 |---------|---------|
@@ -356,6 +356,5 @@ In the following table, we've listed tasks and their associated articles, so you
 
 - [Accelerate work with swimlanes](expedite-work.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
-- [Enable live updates](live-updates.md)
 - [Azure Boards FAQs](../faqs.yml)
 - [REST API Boards reference](/rest/api/azure/devops/work/boards)
