@@ -8,7 +8,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/09/2023
+ms.date: 11/10/2023
 ---
 
 # .NET client libraries
@@ -199,4 +199,7 @@ For version 16.143.1 of our NuGet packages, we support NetStandard 2.0. These pa
 
 ### Microsoft.TeamFoundationServer.ExtendedClient package doesn't have NetStandard support
 
-The [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) currently doesn't support a NetStandard compliant version. This package includes our older SOAP object model, which we replaced by our newer REST object model.  At this point, we're no longer investing in the older SOAP object model, and have no plans to create a NetStandard version of it.
+The [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) doesn't support a NetStandard compliant version. 
+
+> [!IMPORTANT]
+> This package includes our older SOAP object model, which we replaced by our newer REST object model. We're no longer investing in the older SOAP object model, and have no plans to create a NetStandard version of it.

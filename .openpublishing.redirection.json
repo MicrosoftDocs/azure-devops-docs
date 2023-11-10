@@ -439,6 +439,11 @@
       "source_path": "docs/user-guide/service-limits.md",
       "redirect_url": "/azure/devops/integrate/concepts/rate-limits",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/concepts/cross-origin-resource-sharing.md",
+      "redirect_url": "/azure/devops/integrate/how-to/call-rest-api?view=azure-devops#cross-origin-resource-sharing-cors",
+      "redirect_document_id": false
     }
   ]
 }
