@@ -5,7 +5,7 @@ description: How to use the Azure DevOps OAuth 2.0 implementation for existing w
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/17/2023
+ms.date: 11/10/2023
 ---
 
 # Use Azure DevOps OAuth 2.0 to create a web app
@@ -45,7 +45,7 @@ The settings for each app that you register are available from your profile `htt
 
 ### 2. Authorize your app
 
-1. If your user hasn't yet authorized your app to access their organization, call the authorization URL. It calls you back with an authorization code, if the user approves the authorization.
+1. If your user didn't authorize your app to access their organization, call the authorization URL. It calls you back with an authorization code, if the user approves the authorization.
 
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
@@ -238,7 +238,7 @@ A: Check that you set the content type to application/x-www-form-urlencoded in y
 
 ### Q: I get an HTTP 401 error when I use an OAuth-based access token, but a PAT with the same scope works fine. Why?
 
-A: Verify that **Third-party application access via OAuth** hasn't been disabled by your organization's admin at `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`.
+A: Verify that **Third-party application access via OAuth** wasn't disabled by your organization's admin at `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`.
 In this scenario, the flow to authorize an app and generate an access token works, but all REST APIs return only an error, such as `TF400813: The user "<GUID>" is not authorized to access this resource.`
 
 ### Q: Can I use OAuth with the SOAP endpoints and REST APIs?

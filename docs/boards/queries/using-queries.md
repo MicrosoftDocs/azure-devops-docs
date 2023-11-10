@@ -512,7 +512,7 @@ Unlike custom field matches or partial matches, a query with a `Tags Contains` o
  
 To filter on a string match, use the `Contains Words` instead of the `Contains` operator. The `Contains Words` operator runs a full-text search on the specified field, which tends to complete more quickly. 
 
-The `Contains` operator runs a table scan, which is a slower operation than the  `Contains Words` operator. It also consumes more CPU cycles. These CPU cycles can cause you to encounter rate limitations. For more information, see [Service limits and rate limits](../../user-guide/service-limits.md) and [Rate limits](../../integrate/concepts/rate-limits.md).
+The `Contains` operator runs a table scan, which is a slower operation than the  `Contains Words` operator. It also consumes more CPU cycles. These CPU cycles can cause you to encounter rate limitations. For more information, see [Rate and usage limits](../../integrate/concepts/rate-limits.md).
  
 ### Specify small groups with the `In Group` operator 
 

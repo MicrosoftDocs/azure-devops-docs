@@ -131,7 +131,7 @@ Analytics reviews each query it receives for violations to its rules. It returns
 
 ## Rate limits and throttling 
 
-Queries made to Analytics for Azure DevOps Services are subject to rate limits. If too  many queries are sent that request the return of large amounts of data within a short time frame, the service might be subject to throttling. Rate limits are discussed in [Service and rate limits for Azure DevOps Services](../../user-guide/service-limits.md).
+Queries made to Analytics for Azure DevOps Services are subject to rate limits. If too  many queries are sent that request the return of large amounts of data within a short time frame, the service might be subject to throttling. For more information, see [Rate and usage limits](../../integrate/concepts/rate-limits.md).
 
 You can review usage for the service and for individuals by going to **Organization Settings>Usage** and exercising the filters. For example, the following image shows the usage by *Jamal Hartnett* to the Analytics service. 
 

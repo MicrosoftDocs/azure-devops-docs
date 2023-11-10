@@ -36,7 +36,7 @@ To avoid issues, you may need to rewrite tools or update build processes. This a
 - The Count column gives the number of commands in the window.
 - Other columns highlight total TSTUs and delay time.
 
-For information on rate limits, see [Current rate limits](../../integrate/concepts/rate-limits.md#current-rate-limits).
+For more information, see [Rate and usage limits](../../integrate/concepts/rate-limits.md).
 
 ## View usage
 
