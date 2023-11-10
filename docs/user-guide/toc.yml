@@ -75,7 +75,7 @@
   - name: FAQs
     href: user-guide-faqs.yml?toc=/azure/devops/get-started/toc.json
   - name: Service limits
-    href: service-limits.md?toc=/azure/devops/get-started/toc.json
+    href: ../integrate/concepts/rate-limits.md?toc=/azure/devops/get-started/toc.json
 - name: Resources
   items:
   - name: Azure CLI

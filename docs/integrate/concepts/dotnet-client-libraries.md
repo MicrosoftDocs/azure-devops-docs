@@ -8,7 +8,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/25/2023
+ms.date: 11/10/2023
 ---
 
 # .NET client libraries
@@ -28,7 +28,7 @@ Client libraries are available for .NET developers who build Windows apps and se
 
 * Downloadable from [NuGet.org](https://www.nuget.org/) and easily importable into your Visual Studio projects
 * Libraries are licensed for redistribution in your apps and services ([view the license](https://go.microsoft.com/fwlink/?LinkId=329770))
-* Access both traditional client object model APIs and [new REST APIs](../rest-api-overview.md)
+* Access both traditional client object model APIs and [REST APIs](/rest/api/azure/devops/?view-azure-devops-rest-7.2&preserve-view=true)
 
 > [!NOTE]
 > REST-based clients only work with Azure DevOps and TFS 2015 or later.
@@ -84,7 +84,7 @@ For the latest preview versions, see the [NuGet packages gallery](https://www.nu
 
 ## Install
 
-From a NuGet package manager command prompt:
+Install from a NuGet package manager command prompt:
 
 ```powershell
 PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
@@ -92,7 +92,7 @@ PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
 
 ## Connect
 
-Create an authenticated connection to Azure DevOps, get an HttpClient for the service you want to work with, and then call methods against that service.
+To create an authenticated connection to Azure DevOps, get an HttpClient for the service you want to work with, and then call methods against that service.
 
 See the following examples:
 
@@ -154,7 +154,7 @@ namespace ConsoleApp1
 
 ```
 
-Further authentication samples can be found on our [.NET Samples page](../get-started/client-libraries/samples.md).
+For more authentication samples, see [.NET Samples](../get-started/client-libraries/samples.md).
 
 ## Reference
 
@@ -199,4 +199,7 @@ For version 16.143.1 of our NuGet packages, we support NetStandard 2.0. These pa
 
 ### Microsoft.TeamFoundationServer.ExtendedClient package doesn't have NetStandard support
 
-The [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) currently doesn't support a NetStandard compliant version. This package includes our older SOAP object model, which we replaced by our newer REST object model.  At this point, we're no longer investing in the older SOAP object model, and have no plans to create a NetStandard version of it.
+The [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) doesn't support a NetStandard compliant version. 
+
+> [!IMPORTANT]
+> This package includes our older SOAP object model, which we replaced by our newer REST object model. We're no longer investing in the older SOAP object model, and have no plans to create a NetStandard version of it.

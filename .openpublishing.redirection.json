@@ -434,6 +434,21 @@
       "source_path": "docs/organizations/settings/search-settings.md",
       "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/service-limits.md",
+      "redirect_url": "/azure/devops/integrate/concepts/rate-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/concepts/cross-origin-resource-sharing.md",
+      "redirect_url": "/azure/devops/integrate/how-to/call-rest-api?view=azure-devops#cross-origin-resource-sharing-cors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/rest-api-overview.md",
+      "redirect_url": "/rest/api/azure/devops/?view=azure-devops-rest-7.2&viewFallbackFrom=azure-devops",
+      "redirect_document_id": false
     }
   ]
 }
