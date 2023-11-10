@@ -295,8 +295,8 @@
     href: ./pipelines/integrations/microsoft-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Reference
   items:
-  - name: REST API reference overview
-    href: ./integrate/rest-api-overview.md
+  - name: REST API overview
+    href: /rest/api/azure/devops/?view=azure-devops-rest-7.2&viewFallbackFrom=azure-devops
   - name: Rate limits
     href: ./integrate/concepts/rate-limits.md
   - name: Deprecation of WIT & Test client OM
