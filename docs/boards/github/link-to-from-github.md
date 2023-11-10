@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/03/2023
+ms.date: 11/09/2023
 ---
 
 # Link GitHub commits, pull requests, and issues to work items in Azure Boards
@@ -89,6 +89,10 @@ See the following table of examples.
     :::image type="content" source="media/link/link-from-azb-gh-pull-requests.png" alt-text="Screenshot of work item form, Links tab, Add link dialog, GitHub pull request link type selected.":::  
 
 	Azure Boards completes a check to ensure that you've entered a valid link. The linked-to GitHub repository [must be connected to the Azure Boards project](connect-to-github.md) or the validation fails.
+
+	Here, we add a link to a GitHub issue. 
+
+	:::image type="content" source="media/link/add-link-github-issue-set.png" alt-text="Screenshot of work item form, Links tab, Add link dialog, GitHub issue link type selected.":::
 
 ::: moniker-end
 
