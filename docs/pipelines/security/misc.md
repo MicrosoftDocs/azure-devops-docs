@@ -25,10 +25,6 @@ Azure Pipelines attempts to scrub secrets from logs wherever possible.
 This filtering is on a best-effort basis and can't catch every way that secrets can be leaked.
 Avoid echoing secrets to the console, using them in command line parameters, or logging them to files.
 
-## Use None output format when calling Azure CLI
-
-When using Azure CLI, use the [None output format](/cli/azure/format-output-azure-cli#none-output-format), and if you need to retrieve a secret from an Azure CLI call, [Use none and retrieve security information at a later time](/cli/azure/format-output-azure-cli#use-none-and-retrieve-security-information-at-a-later-time).
-
 ## Lock down containers
 
 Containers have a few system-provided volume mounts mapping in the tasks, the workspace, and external components required to communicate with the host agent.
