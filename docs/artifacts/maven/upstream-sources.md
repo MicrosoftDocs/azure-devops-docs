@@ -29,23 +29,23 @@ If you don't have a feed already, follow the instructions below to create one, a
 
 [!INCLUDE [](../includes/create-feed.md)]
 
-### Add Maven Central upstream
+## Add Maven Central upstream
 
-1. Select the ![gear icon](../../media/icons/gear-icon.png)  in the top right of the page to access your feed's settings.
+If you checked the *upstream sources* checkbox when creating your feed, Maven Central should already be added as an upstream source. If not, you can add it manually using the following steps:
 
-1. Select **Upstream sources**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Add Upstream**.
+1. Select **Artifacts**, and then select the ![gear icon](../../media/icons/gear-icon.png) in the top right corner to navigate to your **Feed Settings**.
 
-1. Select **Public source**, and then select **Maven Central (https://repo.maven.apache.org/maven2/)** from the dropdown menu.
+1. Select **Upstream sources**, and then select **Add Upstream**.
+
+1. Select **Public source**, select **Maven Central (https://repo.maven.apache.org/maven2/)** from the dropdown menu, and then select **Save** when you're done.
 
     :::image type="content" source="../media/maven-add-upstream.png" alt-text="A screenshot showing how to add Maven central upstream source.":::
 
-1. Select **Save** when you are done.
+1. Select **Save** in the top right corner to save your changes.
 
-1. Select **Save** to save your changes.
-
-    :::image type="content" source="../media/save-upstream-source.png" alt-text="A screenshot showing how to save changes in upstream sources":::
+    :::image type="content" source="media/save-upstream-sources.png" alt-text="A screenshot showing how to save upstream sources.":::
 
 ## View saved packages
 
