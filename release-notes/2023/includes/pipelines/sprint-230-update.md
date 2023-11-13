@@ -5,11 +5,25 @@ ms.date: 11/14/2023
 ms.topic: include
 ---
 
-### Upgrade AzDO owned tasks to Node 16
+### Azure Pipelines tasks use Node 16
 
-### Task deprecation warning and retirement date 
+Pipeline tasks use a runner to execute. Most Pipeline tasks use Node as a runner. Azure Pipelines task that use NodeJS as a runner now all use Node 16. As Node 16 is the first runner to support Apple silicon, this also provides full task support for macOS on Apple silicon.
 
-### Azure RmWeb App Deployment
+As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/blog/announcements/nodejs16-eol), we are currently adding the ability to run tasks with Node 20.
+
+### Pipeline tasks that have been deprecated will start showing warning messages
+
+Azure Pipelines has a number of tasks that have been deprecated. Deprecated tasks will be retired early 2024. To help customers identify pipelines that are using deprecated tasks, pipeline will show warnings if such a task is used. We have also updated the [Task Reference](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/?view=azure-pipelines) to more clearly convey deprecation status and retirement date. The Task reference also includes alternatives (e.g. a newer major version) to the task.
+
+The following tasks have been deprecated for a number of years and will emit warnings:  
+AppCenterDistributeV1, AppCenterDistributeV2, AzureMonitorV0, ChefKnifeV1, ChefV1, CondaEnvironmentV1, DeployVisualStudioTestAgentV2, DotNetCoreInstallerV1, DownloadPackageV0, DownloadPipelineArtifactV0, DownloadPipelineArtifactV1, IISWebAppDeployment, NuGetAuthenticateV0, NuGetInstallerV0, NuGetPackagerV0, NuGetPublisherV0, NuGetRestoreV1, NuGetV0, PublishPipelineArtifactV0, QuickPerfTestV1, RunJMeterLoadTestV1, RunLoadTestV1, SqlServerDacpacDeployment, XamarinTestCloudV1.
+
+Please update pipelines using any of the above tasks to use an alternative such as a newer task version.
+
+### The AzureRmWebAppDeploymentV4 task supports Entra ID authentication
+
+The AzureRmWebAppDeploymentV3 and AzureRmWebAppDeploymentV4 tasks have been updated to honor the [App Service setting for basic authentication](https://learn.microsoft.com/azure/app-service/configure-basic-auth-disable?tabs=portal). If basic authentication has been disabled on the App Service, the AzureRmWebAppDeploymentV3/4 tasks will use Entra ID authentication to perform deployments to the App Service Kudu endpoint. This requires a recent version of msdeploy.exe installed on the agent, which is the case on the windows-2022/windows-latest [Hosted agents](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software).
+
 
 ### Improvements to Approvals REST API
 

@@ -5,9 +5,9 @@ ms.date: 11/14/2023
 ms.topic: include
 ---
 
-- [Upgrade AzDO owned tasks to Node 16](#upgrade-azdo-owned-tasks-to-node-16)
+- [Azure Pipelines tasks use Node 16](#azure-pipelines-tasks-use-node-16)
 
-- [task deprecation warning and retirement date ](#task-deprecation-warning-and-retirement-date)
+- [Pipeline tasks that have been deprecated will start showing warning messages](#pipeline-tasks-that-have-been-deprecated-will-start-showing-warning-messages)
 
 - [Azure RmWeb App Deployment](#azure-rmweb-app-deployment)
 
