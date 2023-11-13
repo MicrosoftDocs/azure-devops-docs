@@ -415,7 +415,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks" data-raw-source="[Dashboard Global Parameter](azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks)">Dashboard Global Parameter</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/dashboard-global-parameter" data-raw-source="[Dashboard Global Parameter](azure/devops/release-notes/roadmap/2023/dashboard-global-parameter)">Dashboard Global Parameter</a></td>
          <td>Reporting</td>
          <td>2024 H1</td>
          <td>Future</td>
