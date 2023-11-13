@@ -5,7 +5,7 @@ ms.date: 11/10/2023
 monikerRange: '> azure-devops-2019'
 ---
 
-# Protect secrets securely in Azure Pipelines
+# Protect secrets in Azure Pipelines
 
 This article provides best practices on protecting secrets in Azure Pipelines. 
 
@@ -49,7 +49,7 @@ Structured data can cause secret redaction within logs to fail, because redactio
 
 ## Audit how secrets are handled
 
-Audit how secrets are used, to help ensure they’re being handled as expected. You can do this by reviewing the source code of the repository executing the workflow, and checking any actions used in the workflow. For example, check that they’re not sent to unintended hosts, or explicitly being printed to log output.
+Audit how secrets are used, to help ensure they’re being handled as expected. You can do this by reviewing the source code of the repository hosting the pipeline, and checking any tasks used in the pipeline. For example, check that they’re not sent to unintended hosts, or explicitly being printed to log output.
 
 View the run logs for your pipeline after testing valid/invalid inputs, and check that secrets are properly redacted, or not shown. It's not always obvious how a command or tool you're invoking will emit errors, and secrets might later end up in error logs. Azure Pipelines attempts to scrub secrets from logs wherever possible. This filtering is on a best-effort basis and can't catch every way that secrets can be leaked. As a result, it's good practice to manually review the pipeline logs after testing valid and invalid inputs.
 
