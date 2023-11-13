@@ -11,8 +11,15 @@ This article provides best practices on protecting secrets in Azure Pipelines.
 
 Azure Pipelines doesn't generate secret values. However, you might need to add a secret to a pipeline to store sensitive data like an API key. To learn more about setting secret variables, see [Set secret variables](../process/set-secret-variables.md).
 
-> [!NOTE]
-> The best method to protect a secret, is not to have a secret in the first place. Check to see if your pipeline can use a different method than a secret to perform a task. For example, if you are targeting Azure or another service that uses service connection, you should use the service connection instead of managing secrets in variables. For more information, see [Manage service connections](../library/service-endpoints.md). If you are using the [Azure CLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2), you can use the `addSpnToEnvironment` setting to access service principal details in script.
+## Don't use secrets if another method is available
+
+The best method to protect a secret is not to have a secret in the first place. Check to see if your pipeline can use a different method than using a secret to perform a task. 
+
+* Use service connections. For example, if you are targeting Azure or another service that uses service connection, you should use the service connection instead of managing secrets in variables. For more information, see [Manage service connections](../library/service-endpoints.md).
+* Prefer managed identities instead of using secrets. For example, if you are using the [Azure CLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2), you can use the `addSpnToEnvironment` setting to access service principal details in script.
+  * [Azure services that can use managed identities to access other services](/entra/identity/managed-identities-azure-resources/managed-identities-status)
+  * [https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview](/entra/identity/managed-identities-azure-resources/overview)
+  * [Use service principals & managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md)
 
 ## Use secret variables
 
