@@ -256,7 +256,7 @@ stages:
   jobs:
   - job: B1
     variables:
-      myStageAVar: $[stageDependencies.A.A1.outputs['MyOutputVar.myStageVal']]
+      myStageAVar: $[stageDependencies.A.A1.outputs['A1.MyOutputVar.myStageVal']]
     steps:
       - bash: echo $(myStageAVar)
 ```
@@ -286,7 +286,7 @@ stages:
   jobs:
   - job: B1
     variables:
-      myStageAVar: $[stageDependencies.A.A1.outputs['MyOutputVar.myStageVal']]
+      myStageAVar: $[stageDependencies.A.A1.outputs['A1.MyOutputVar.myStageVal']]
     steps:
     - powershell: Write-Host "$(myStageAVar)"
 ```
