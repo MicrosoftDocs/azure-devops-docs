@@ -76,6 +76,9 @@ In this example, we will save the Kotlin Datetime Library from Maven Central.
     mvn install
     ```
 
+> [!NOTE]
+> You must be a **Collaborator** or higher to save packages from upstream sources. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
+
 ## View saved packages
 
 You can view the packages you saved from upstreams by selecting the **Maven Central** source from the dropdown menu.
