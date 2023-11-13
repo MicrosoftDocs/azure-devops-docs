@@ -18,7 +18,7 @@ The best method to protect a secret is not to have a secret in the first place. 
 * Use service connections. For example, if you are targeting Azure or another service that uses service connection, you should use the service connection instead of managing secrets in variables. For more information, see [Manage service connections](../library/service-endpoints.md).
 * Prefer managed identities instead of using secrets. For example, if you are using the [Azure CLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2), you can use the `addSpnToEnvironment` setting to access service principal details in script.
   * [Azure services that can use managed identities to access other services](/entra/identity/managed-identities-azure-resources/managed-identities-status)
-  * [https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview](/entra/identity/managed-identities-azure-resources/overview)
+  * [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview)
   * [Use service principals & managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md)
 
 ## Use secret variables
