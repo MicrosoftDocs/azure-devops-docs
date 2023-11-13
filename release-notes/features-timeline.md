@@ -276,7 +276,7 @@ These investments include:
 
 ### Pipelines agent Node lifecycle
 
-Azure Pipelines tasks can be authored either in Node or PowerShell, and they use the corresponding runner in the Azure Pipelines agent. Node has a [regular cadence of releases](https://github.com/nodejs/release#release-schedule), with Node 16 being the LTS and Node 18 the Current version as of October, 2022. The original design of the Node task runner did not make Node version upgrades straightforward for task authors, and as a result has not kept up with the latest Node releases. We've heard feedback from customers on this, and are now making a number of changes to enable Azure Pipelines agents to keep installed Node versions in sync with the Node release cadence and support lifecycle while minimizing impacts on task and pipeline authors. 
+Azure Pipelines tasks can be authored either in Node or PowerShell, and they use the corresponding runner in the Azure Pipelines agent. Node has a [regular cadence of releases](https://github.com/nodejs/release#release-schedule), with Node 16 being the LTS and Node 18 the Current version as of October 2022. The original design of the Node task runner did not make Node version upgrades straightforward for task authors, and as a result has not kept up with the latest Node releases. We've heard feedback from customers on this, and are now making a number of changes to enable Azure Pipelines agents to keep installed Node versions in sync with the Node release cadence and support lifecycle while minimizing impacts on task and pipeline authors. 
 
 As a first step, we recently released a new [Node 16 task runner](/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent) for the agent. Over the next few months, we plan to provide improved guidance for task authors to keep up with Node updates. Because not all tasks in the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs) will be continuously updated to run on the latest versions of Node, we will also provide pipeline authors the ability to continue using non-upgraded tasks. Once all these features are available, we'll remove end-of-life versions of Node from Microsoft hosted agents and self-hosted agent images. 
 
@@ -341,9 +341,11 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
     </tbody>
 </table>
 
-### Pipelines checks
+### YAML and release pipelines feature parity
 
-Customers prefer YAML pipelines over classic for builds (CI). However, for releases (CD), many customers have continued to use classic release management pipelines over YAML. The primary reason for this is the lack of parity in various CD features between the two solutions. Over the next year, we will invest in bridging these gaps. As a first step, we will focus on **checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. 
+Customers prefer YAML pipelines over classic for builds (CI). However, for releases (CD), many customers have continued to use classic release management pipelines over YAML. The primary reason for this is the lack of parity in various CD features between the two solutions. Over the next year, we'll invest in bridging these gaps. 
+
+As a first step, we'll focus on **checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. 
 
 <table>
     <thead>
@@ -380,6 +382,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td>Future</td>
       </tr>
       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/bypass-checks" data-raw-source="[Bypass approvals and checks](/azure/devops/release-notes/roadmap/2023/bypass-checks)">Bypass approvals and checks</a></td>
+         <td>Pipelines</td>
+         <td>2023 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/service-connections-in-checks" data-raw-source="[Service connections in checks](/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
          <td>Pipelines</td>
          <td>Future</td>
@@ -389,6 +397,45 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Checks extensibility](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
          <td>Pipelines</td>
          <td>Future</td>
+         <td>Future</td>
+      </tr>
+    </tbody>
+</table>
+
+Next, we'll focus on **deployment functionality**, to make it possible to have deployment strategies in YAML pipelines similar to the ones in classic release pipelines.
+
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Service</th>
+            <th>Server</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/rerun-single-stage" data-raw-source="[Rerun single stage](/azure/devops/release-notes/roadmap/2024/rerun-single-stage)">Rerun single stage</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
          <td>Future</td>
       </tr>
     </tbody>
