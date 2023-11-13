@@ -601,7 +601,7 @@
     - name: Secure access to Azure repositories from pipelines
       displayName: forks, branches, access token
       href: security/secure-access-to-repos.md
-    - name: Using secrets
+    - name: Protecting secrets
       href: security/secrets.md
     - name: Pipeline resources
       displayName: protected resources, repository resources
