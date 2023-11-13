@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/10/2023
+ms.date: 11/13/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -454,7 +454,7 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
     </thead>
     <tbody>       
       <tr>
-        <td rowspan="10"><strong>2023 Q4</strong></td>
+        <td rowspan="12"><strong>2023 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
         <td>General</td>
         <td>Future</td>
@@ -468,6 +468,16 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
         <td><a href="/azure/devops/release-notes/roadmap/2023/boards-bot-better-ab-validation" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/roadmap/2023/boards-bot-better-ab-validation)">Improved AB# validation (preview)</a></td>
         <td>Boards</td>
         <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2022/checks-sequencing" data-raw-source="[Sequencing approvals and other checks](/azure/devops/release-notes/roadmap/2022/checks-sequencing)">Sequencing approvals and other checks</a></td>
+        <td>Pipelines</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/bypass-checks" data-raw-source="[Bypass approvals and checks](/azure/devops/release-notes/roadmap/2023/bypass-checks)">Bypass approvals and checks</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings" data-raw-source="[In-product recommendations for secure settings](/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td>
@@ -505,7 +515,7 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
         <td>Future</td>
       </tr>
       <tr>
-       <td rowspan="8"><strong>2024 Q1</strong></td>
+       <td rowspan="12"><strong>2024 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview" data-raw-source="[Security Overview](/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview)">Security Overview</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -545,7 +555,27 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
         <td>Boards</td>
         <td>Future</td>
       </tr>
-      <td rowspan="24"><strong>Future</strong></td>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/rerun-single-stage" data-raw-source="[Rerun single stage](/azure/devops/release-notes/roadmap/2024/rerun-single-stage)">Rerun single stage</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
+      </tr>
+      <td rowspan="26"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -604,6 +634,16 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
         <td><a href="/azure/devops/release-notes/roadmap/support-pipelines-app" data-raw-source="[Support Pipelines App with GitHub Enterprise](/azure/devops/release-notes/roadmap/support-pipelines-app)">Support Pipelines App with GitHub Enterprise</a></td>
         <td>Pipelines</td>
         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/service-connections-in-checks" data-raw-source="[Service connections in checks](/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Checks extensibility](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/package-promote-task" data-raw-source="[Package promote task in Azure Pipelines](/azure/devops/release-notes/roadmap/package-promote-task)">Package promote task in Azure Pipelines</a></td>
