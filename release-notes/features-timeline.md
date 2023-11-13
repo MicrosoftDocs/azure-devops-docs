@@ -384,6 +384,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td>Pipelines</td>
          <td>Future</td>
          <td>Future</td>
+       
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Checks extensibility](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
@@ -433,7 +434,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-bulk-deletion-recovery" data-raw-source="[Dashboard Bulk Deletion & Recovery](/azure/devops/release-notes/roadmap/2024/dashboard-bulk-deletion-recovery)">Dashboard Bulk Deletion & Recovery</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/bulk-dashboard-deletion" data-raw-source="[Dashboard Bulk Deletion & Recovery](/azure/devops/release-notes/roadmap/2024/bulk-dashboard-deletion)">Dashboard Bulk Deletion & Recovery</a></td>
          <td>Reporting</td>
          <td>Future</td>
          <td>Future</td>
