@@ -23,11 +23,11 @@ You can use different link types to manage the various relationships between wor
 
 ::: moniker range="azure-devops"
 
-- [**Work link type**](#work-link-type): links work items including select test case management work items
-- [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
-- [**External link type**](#external-link-type): connects a work item to an external object, such as a code object, build, or wiki page
-- [**Remote work link type**](#remote-work-link-type): connects work items that are defined in different organizations
-- [**GitHub link type**](#github-link-type): connects a work item to a GitHub repository commit, issue, or pull request.
+- [**Work link type**](#work-link-type): Links work items including select test case management work items
+- [**Hyperlink**](#hyperlink): Connects a work item to any URL or network share
+- [**External link type**](#external-link-type): Connects a work item to an external object, such as a code object, build, or wiki page
+- [**Remote work link type**](#remote-work-link-type): Connects work items that are defined in different organizations
+- [**GitHub link type**](#github-link-type): Connects a work item to a GitHub repository commit, issue, or pull request.
 
 A specific field maintains a count of links for the first four link types, such as *Related Link Count*, *Hyperlink Count*, *External Link Count*, and *Remote Link Count*.  
 
@@ -54,7 +54,7 @@ A specific field maintains a count of links for each of these link types, such a
 
 ::: moniker-end 
 
-Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you want to create.  For more information, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology).
+Link types are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you want to create.  For more information, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology).
 
 ## Work link type
 
