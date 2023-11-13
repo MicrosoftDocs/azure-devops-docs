@@ -409,37 +409,37 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
     </thead>
     <tbody>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section" data-raw-source="[Work Item Chart Filtering](/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section)">Work Item Chart Filtering</a></td>
+         <td><a href="https://devblogs.microsoft.com/devops/introducing-work-item-chart-filtering-in-azure-devops-dashboards/" data-raw-source="[Work Item Chart Filtering](https://devblogs.microsoft.com/devops/introducing-work-item-chart-filtering-in-azure-devops-dashboards/)">Work Item Chart Filtering</a></td>
          <td>Reporting</td>
          <td>2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/dashboard-global-parameter" data-raw-source="[Dashboard Global Parameter](azure/devops/release-notes/roadmap/2023/dashboard-global-parameter)">Dashboard Global Parameter</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-global-parameter" data-raw-source="[Dashboard Global Parameter](azure/devops/release-notes/roadmap/2024/dashboard-global-parameter)">Dashboard Global Parameter</a></td>
          <td>Reporting</td>
          <td>2024 H1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/" data-raw-source="[Dashboard Template](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/)">Dashboard Template</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-template" data-raw-source="[Dashboard Template](/azure/devops/release-notes/roadmap/2024/dashboard-template)">Dashboard Template</a></td>
          <td>Reporting</td>
           <td>2024 H1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-sequencing" data-raw-source="[Private Dashboard](/azure/devops/release-notes/roadmap/2022/checks-sequencing)">Private Dashboard</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/private-dashboard" data-raw-source="[Private Dashboard](/azure/devops/release-notes/roadmap/2024/private-dashboard)">Private Dashboard</a></td>
          <td>Reporting</td>
          <td>2024 H1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/service-connections-in-checks" data-raw-source="[Dashboard Bulk Deletion & Recovery](/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Dashboard Bulk Deletion & Recovery</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-bulk-deletion-recovery" data-raw-source="[Dashboard Bulk Deletion & Recovery](/azure/devops/release-notes/roadmap/2024/dashboard-bulk-deletion-recovery)">Dashboard Bulk Deletion & Recovery</a></td>
          <td>Reporting</td>
          <td>Future</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Dashboard Archive](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Dashboard Archive</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-archive" data-raw-source="[Dashboard Archive](/azure/devops/release-notes/roadmap/2024/dashboard-archive)">Dashboard Archive</a></td>
          <td>Reporting</td>
          <td>Future</td>
          <td>Future</td>
