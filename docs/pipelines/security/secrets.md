@@ -1,11 +1,11 @@
 ---
-title: Protect secrets in Azure Pipelines
+title: Protecting secrets in Azure Pipelines
 description: Learn best practices for protecting secrets in Azure Pipelines.
 ms.date: 11/10/2023
 monikerRange: '> azure-devops-2019'
 ---
 
-# Protect secrets in Azure Pipelines
+# Protecting secrets in Azure Pipelines
 
 This article provides best practices on protecting secrets in Azure Pipelines. 
 
