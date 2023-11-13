@@ -9,10 +9,10 @@ ms.topic: include
 
 - [Pipeline tasks that have been deprecated will start showing warning messages](#pipeline-tasks-that-have-been-deprecated-will-start-showing-warning-messages)
 
-- [Azure RmWeb App Deployment](#azure-rmweb-app-deployment)
+- [The AzureRmWebAppDeploymentV4 task supports Entra ID authentication](#the-azurermwebappdeploymentV4-task-supports-entra-id-authentication)
 
 - [Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
 
-- [Support repository type](#support-repository-type)
+- [Support for GitHub Enterprise Server in Requited template check](#support-for-github-enterprise-server-in-requited-template-check)
 
 - [Rerun Invoke Azure Function checks](#rerun-invoke-azure-function-checks)
