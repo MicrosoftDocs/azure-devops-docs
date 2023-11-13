@@ -15,10 +15,11 @@ Azure Pipelines doesn't generate secret values. However, you might need to add a
 
 The best method to protect a secret is not to have a secret in the first place. Check to see if your pipeline can use a different method than using a secret to perform a task. 
 
-* Use service connections. For example, if you are targeting Azure or another service that uses service connection, you should use the service connection instead of managing secrets in variables. For more information, see [Manage service connections](../library/service-endpoints.md) and [Connect to Microsoft Azure with an ARM service connection](../library/connect-to-azure.md).
-* Prefer managed identities instead of using secrets. For example, if you are using the [Azure CLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2), you can use the `addSpnToEnvironment` setting to access service principal details in script.
+* Use service connections. For example, if you are targeting Azure or another service that uses a service connection, you should use the service connection instead of managing secrets in variables. For more information, see [Manage service connections](../library/service-endpoints.md) and [Connect to Microsoft Azure with an ARM service connection](../library/connect-to-azure.md).
+* Prefer managed identities instead of using secrets.
   * [Azure services that can use managed identities to access other services](/entra/identity/managed-identities-azure-resources/managed-identities-status)
   * [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview)
+  * If you are using the [Azure CLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2), you can use the `addSpnToEnvironment` setting to access service principal details in script.
   * [Use service principals & managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md)
 
 ## Use secret variables
