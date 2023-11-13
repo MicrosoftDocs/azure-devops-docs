@@ -1,15 +1,18 @@
 ---
-title: Use secrets in Azure Pipelines
-description: Learn best practices for using secrets in Azure Pipelines.
+title: Protect secrets in Azure Pipelines
+description: Learn best practices for protecting secrets in Azure Pipelines.
 ms.date: 11/10/2023
 monikerRange: '> azure-devops-2019'
 ---
 
-# Use secrets securely in Azure Pipelines
+# Protect secrets securely in Azure Pipelines
 
-This article provides best practices on using secrets in Azure Pipelines. 
+This article provides best practices on protecting secrets in Azure Pipelines. 
 
-Azure Pipelines doesn't generate secret values. However, you might need to add a secret to a pipeline to store sensitive data like an API key. To learn more about setting secret variables, see [Set secret variables](../process/set-secret-variables.md). 
+Azure Pipelines doesn't generate secret values. However, you might need to add a secret to a pipeline to store sensitive data like an API key. To learn more about setting secret variables, see [Set secret variables](../process/set-secret-variables.md).
+
+> [!NOTE]
+> The best method to protect a secret, is not to have a secret in the first place. Check to see if your pipeline can use a different method than a secret to perform a task. For example, if you are targeting Azure or another service that uses service connection, you should use the service connection instead of managing secrets in variables. For more information, see [Manage service connections](../library/service-endpoints.md). If you are using the [Azure CLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2), you can use the `addSpnToEnvironment` setting to access service principal details in script.
 
 ## Use secret variables
 
@@ -35,7 +38,7 @@ Azure Pipelines attempts to scrub secrets from logs wherever possible. This filt
 
 ## Don't use structured data as secrets
 
-Structured data can cause secret redaction within logs to fail, because redaction largely relies on finding an exact match for the specific secret value. For example, don't use a blob of JSON, XML, or YAML (or similar) to encapsulate a secret value, as this significantly reduces the probability the secrets are properly redacted. Instead, create individual secrets for each sensitive value.
+Structured data can cause secret redaction within logs to fail, because redaction largely relies on finding an exact match for the specific secret value. For example, don't use a blob of JSON, XML, or YAML (or similar) to encapsulate a secret value, including control characters such as carriage return (`\r`) and line feed (`\n`), as this significantly reduces the probability the secrets are properly redacted. Instead, create individual secrets for each sensitive value.
 
 ## Audit how secrets are handled
 
