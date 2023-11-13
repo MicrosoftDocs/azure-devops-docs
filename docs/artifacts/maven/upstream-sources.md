@@ -47,6 +47,35 @@ If you checked the *upstream sources* checkbox when creating your feed, Maven Ce
 
     :::image type="content" source="media/save-upstream-sources.png" alt-text="A screenshot showing how to save upstream sources.":::
 
+## Save package from Maven Central
+
+Before saving packages from Maven Central, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](pom-and-settings.md) to set up your Maven project and connect to your feed.
+
+In this example, we will save the Kotlin Datetime Library from Maven Central.
+
+1. Navigate to Maven Central at `https://mvnrepository.com/`.
+
+1. Search for the Kotlin Datetime Library. Select the **Kotlinx Datetime** package, and then select the version you wish to install.
+
+1. Copy the `<dependency>` snippet from the **Maven** tab. 
+
+    ```xml
+    <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-datetime-jvm</artifactId>
+        <version>0.4.1</version>
+        <scope>runtime</scope>
+    </dependency>
+    ```
+
+1. Open your *pom.xml* file and paste the snippet inside your `<dependencies>` tag, and then save your file.
+
+1. Run the following command from the same path as your *pom.xml* file to install your dependencies:
+
+    ```command
+    mvn install
+    ```
+
 ## View saved packages
 
 You can view the packages you saved from upstreams by selecting the **Maven Central** source from the dropdown menu.
