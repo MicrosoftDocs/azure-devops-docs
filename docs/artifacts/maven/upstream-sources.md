@@ -80,7 +80,15 @@ In this example, we will save the Kotlin Datetime Library from Maven Central.
 
 You can view the packages you saved from upstreams by selecting the **Maven Central** source from the dropdown menu.
 
-:::image type="content" source="media/maven-central-packages.png" alt-text="A screenshot showing how to filter for packages from Maven Central.":::
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Maven Central** from the source dropdown menu to filter for packages from this upstream.
+
+1. The *Kotlinx Datetime* package that we saved in the previous step, is now available in our feed. Azure Artifacts automatically saved a copy to our feed when we executed the mvn install command.
+ 
+:::image type="content" source="media/saved-kotlin-package-from-upstream.png" alt-text="A screenshot showing a package that was saved from Maven Central.":::
 
 > [!TIP]
 > If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project's files:
@@ -88,6 +96,6 @@ You can view the packages you saved from upstreams by selecting the **Maven Cent
 
 ## Related articles
 
-- [Install Maven Artifacts](./install.md)
+- [Search for packages in upstream sources](../how-to/search-upstream.md)
+- [Promote packages and manage feed views](../feeds/views.md)
 - [Configure permissions](../feeds/feed-permissions.md)
-- [Configure upstream behavior](../concepts/upstream-behavior.md)
