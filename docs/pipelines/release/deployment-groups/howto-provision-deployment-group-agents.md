@@ -158,8 +158,7 @@ For a Windows VM, create an ARM template and add a resources element under the
 :::moniker range="= azure-devops-2022"
 
 > [!NOTE]
-> In versions of Azure DevOps Server 2022 
-, the allowable values for `AgentMajorVersion` are `auto|N`. In Azure DevOps Server 2022.1 and higher, the allowable values for `AgentMajorVersion` are `auto|2|3`.
+> In Azure DevOps Server 2022, the allowable values for `AgentMajorVersion` are `auto|N`. In Azure DevOps Server 2022.1 and higher, the allowable values for `AgentMajorVersion` are `auto|2|3`.
 
 :::moniker-end
 
