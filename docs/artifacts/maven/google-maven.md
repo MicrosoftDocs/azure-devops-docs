@@ -48,7 +48,7 @@ If you checked the *upstream sources* checkbox when creating your feed, Google M
 > [!NOTE]
 > Maven snapshots are not supported with Maven upstream sources.
 
-## Save package from Google Maven Repository
+## Save packages from Google Maven Repository
 
 Before saving packages from Google Maven Repository, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](pom-and-settings.md) to set up your Maven project and connect to your feed.
 
