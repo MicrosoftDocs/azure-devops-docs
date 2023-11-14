@@ -27,7 +27,7 @@ With Azure Artifacts, developers can enable upstream sources to consume packages
 
 ## Enable upstream sources
 
-If you don't have a feed already, follow the instructions below to create a new feed, and make sure to check the *upstream sources* checkbox to enable them. If you already have a feed, jump to the [next step](#add-google-maven-repository) to add Google Maven Repository as an upstream source:
+If you don't have a feed already, follow the instructions below to create a new feed, and make sure to check the *upstream sources* checkbox to enable them. If you already have a feed, jump to the [next step](#add-google-maven-repository-upstream) to add Google Maven Repository as an upstream source:
 
 [!INCLUDE [](../includes/create-feed.md)]
 
@@ -75,6 +75,9 @@ In this example, we will save the Zipflinger Library from Google Maven Repositor
     ```command
     mvn install
     ```
+
+> [!NOTE]
+> To save packages from upstream sources, you need to have at least the **Collaborator** role or higher. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
 
 ## View saved packages
 
