@@ -48,6 +48,33 @@ If you checked the *upstream sources* checkbox when creating your feed, Google M
 > [!NOTE]
 > Maven snapshots are not supported with Maven upstream sources.
 
+## Save package from Google Maven Repository
+
+Before saving packages from Google Maven Repository, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](pom-and-settings.md) to set up your Maven project and connect to your feed.
+
+In this example, we will save the Zipflinger Library from Google Maven Repository.
+
+1. Navigate to Google Maven Repository at `https://mvnrepository.com/`.
+
+1. Search for the Zipflinger library. Select the **Zipflinger** package, and then select the version you wish to install.
+
+1. Copy the `<dependency>` snippet from the **Maven** tab. 
+
+    ```xml
+    <dependency>
+        <groupId>com.android</groupId>
+        <artifactId>zipflinger</artifactId>
+        <version>8.3.0-alpha13</version>
+    </dependency>
+    ```
+
+1. Open your *pom.xml* file and paste the snippet inside your `<dependencies>` tag, and then save your file.
+
+1. Run the following command from the same path as your *pom.xml* file to install your dependencies:
+
+    ```command
+    mvn install
+    ```
 
 ## View saved packages
 
