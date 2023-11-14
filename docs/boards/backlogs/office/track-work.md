@@ -27,7 +27,7 @@ To support your work tracking efforts, use Microsoft Excel and Microsoft Project
 
 ::: moniker-end
 
-> [!TIP]  
+> [!TIP]
 > For bulk import or to update work items, use the [web portal](../bulk-modify-work-items.md) or [CSV import](../../queries/import-work-items-from-csv.md).
 
 ## Supported Office clients and Azure DevOps versions
