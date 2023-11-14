@@ -54,7 +54,7 @@ You run **witadmin** commands against Azure DevOps Services or an on-premises Az
 
 Work items are used to track anything you need to track. Each work item is based on a work item type. Each work item type defines the fields available in which to store information. The available work item types depend on the process you used when your project was created (Agile, Scrum, Basic, or CMMI). For more information, see [Track your work items in Azure Boards user stories, issues, bugs, features, and epics](../../boards/work-items/about-work-items.md).
 
-For the Inherited process model, you can add and delete work item types from the web portal. For more information, see [Add and manage work item types(Inheritance process)](../../organizations/settings/work/customize-process-work-item-type.md).
+For the Inherited process model, you can add and delete work item types from the web portal. For more information, see [Add and manage work item types (Inheritance process)](../../organizations/settings/work/customize-process-work-item-type.md).
 
 ---
 :::row:::
@@ -347,7 +347,7 @@ Global lists are pick lists that you can include within one or more fields and w
 ---
 :::row:::
    :::column span="2":::
-   `destroygloballist`*: Delete a global list 
+   `destroygloballist`: Delete a global list 
    :::column-end:::
    :::column span="1":::
       
@@ -438,7 +438,7 @@ With global workflow, you can define and update fields and global lists that app
 
 ## [Process configuration](witadmin-import-export-process-configuration.md)
  
-Process configuration defines the default configuration and functional capabilities that your teams can access using Azure Boards. The configuration determines the work item types that appear on the product backlog, sprint backlogs, Kanban board, and task board. For more information about process configuration and what you can customize, see [ProcessConfiguration](../xml/process-configuration-xml-element.md). 
+Process configuration defines the default configuration and functional capabilities that your teams can access using Azure Boards. The configuration determines the work item types that appear on the product backlog, sprint backlogs, Kanban board, and task board. For more information about process configuration and what you can customize, see [Process Configuration](../xml/process-configuration-xml-element.md). 
 
  
 For the Inherited process model, you can customize backlogs from the web portal. For more information, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md).
