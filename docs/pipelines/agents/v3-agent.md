@@ -1,7 +1,7 @@
 ---
 title: Agent software version 3
 description: Learn how to run pipelines using the version 3 agent software.
-monikerRange: '= azure-devops'
+monikerRange: '>= azure-devops-2022'
 ms.topic: conceptual
 ms.date: 05/01/2023
 ---
@@ -9,6 +9,12 @@ ms.date: 05/01/2023
 # Agent software version 3
 
 The pipelines team is upgrading the agent software from version 2.x (using .NET Core 3.1) to version 3.x (using .NET 6). The new agent version supports new Apple silicon hardware and newer operating systems like Ubuntu 22.04, or Windows on ARM64.
+
+:::moniker range="=azure-devops-2022"
+
+[!INCLUDE [feature-added-2022-1](../../includes/feature-added-2022-1.md)]
+
+:::moniker-end
 
 ## Upgrade to 3.x agent on supported operating systems
 
