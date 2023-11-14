@@ -31,7 +31,7 @@ For ES modules, you can import our modules using the import statement:
  
 If you're using AMD modules, you can continue to import SDK using the `require` function:
 
-require (['azure-devops-extension-sdk'], function(SDK) {
+`require (['azure-devops-extension-sdk'],` `function(SDK)` `{
 
   // Use the module here
 });
