@@ -99,18 +99,18 @@
     - name: Publish artifacts with Gradle
       href: maven/publish-with-gradle.md
       displayName: gradle, publish 
-    - name: Maven Central Repository
+    - name: Use packages from Maven Central
       href: maven/upstream-sources.md
-      displayName: maven packages, maven central, upstream ,upstream sources
-    - name: Google Maven Repository
+      displayName: maven, maven central, upstream
+    - name: Use packages from Google Maven Repository
       href: maven/google-maven.md
-      displayName: google maven, maven packages, upstream ,upstream sources
-    - name: Gradle Plugins
+      displayName: maven, google maven, upstream
+    - name: Use packages from Gradle Plugins
       href: maven/gradle-plugins.md
-      displayName: gradle plugins, packages, upstream ,upstream sources
-    - name: JitPack
+      displayName: maven, gradle plugins, packages, upstream
+    - name: Use packages from JitPack
       href: maven/jitpack-upstream.md
-      displayName: jitpack, upstream ,upstream sources
+      displayName: maven, jitpack, upstream
   - name: Python
     items:
     - name: Python quickstart 
