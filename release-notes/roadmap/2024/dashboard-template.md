@@ -1,6 +1,6 @@
 ---
 title: Dashboard Template
-author: jihyeeom
+author: jeom
 ms.author: jeom
 ms.date: 11/13/2023
 ms.topic: article
