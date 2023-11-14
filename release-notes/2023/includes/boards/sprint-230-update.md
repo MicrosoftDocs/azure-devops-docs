@@ -16,4 +16,4 @@ Today we're opening up a private preview where we have made some improvements to
 
 If you are interested in participating in the private preview, please reach out to us directly [via email](mailto:dahellem@microsoft.com). Be sure to include your organization name (dev.azure.com/{organization})
 
-Be sure to check out the other [Azure Boards + GitHub integration features](azure/devops/release-notes/features-timeline#improved-boards--github-integration) we have planned on the public roadmap.
+Be sure to check out the other [Azure Boards + GitHub integration features](/azure/devops/release-notes/features-timeline#improved-boards--github-integration) we have planned on the public roadmap.
