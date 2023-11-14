@@ -1,18 +1,29 @@
 ---
-title: Google Maven Repository upstream source
-description: How to add Google Maven Repository upstream source
+title: Use packages from Google Maven Repository upstream source
+description: How to consume packages from Google Maven Repository upstream source
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 03/03/2022
+ms.date: 11/14/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Google Maven Repository upstream source
+# Use packages from Google Maven Repository
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, developers can enable upstream sources to store packages from different sources such as Google Maven Repository. Once enabled, Azure Artifacts will save a copy of all the packages installed from Google Maven Repository. Azure Artifacts also support other Maven upstream sources such as Maven Central, Gradle Plugins, and JitPack.
+With Azure Artifacts, developers can enable upstream sources to consume packages from different public registries such as Google Maven Repository. Once enabled, Azure Artifacts will automatically save a copy of any package installed from the upstream. Additionally, Azure Artifacts supports other Maven upstream sources such as Maven Central, Gradle Plugins, and JitPack. In this article, you'll learn how to:
+
+> [!div class="checklist"]    
+> * Add Google Maven Repository as an upstream source 
+> * Consume a package from upstream 
+> * Find saved packages in your feed
+
+## Prerequisites
+
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed.
 
 ## Add Google Maven Repository
 
