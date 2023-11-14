@@ -32,10 +32,9 @@ To support your work tracking efforts, use Microsoft Excel and Microsoft Project
 
 ## Supported Office clients and Azure DevOps versions
 
-The following table indicates the Office clients supported for each Azure DevOps version.
+The following table indicates the Office clients supported for each Azure DevOps version. 
+MacOS isn't supported. Even if you installed Visual Studio for Mac, connection to Azure DevOps from Excel or any other Office client isn't supported.
 
-> [!NOTE]
-> macOS isn't supported. Even if you installed Visual Studio for Mac, connection to Azure DevOps from Excel or any other Office client isn't supported.
 ---
 
 :::row:::
@@ -99,12 +98,8 @@ Connection from an Office client to an Azure Boards project requires the followi
 ::: moniker range="azure-devops"
 
 - To connect Excel to Azure Boards, install Office Excel 2010 or later version, including Office Excel 365.
-
 - All Office integration tasks require an installed version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family).
-
-  > [!NOTE]
-  > The only way to get the Azure DevOps Office Integration plug-in is to install one of the latest editions of Visual Studio or Azure DevOps Office Integration. The plug-in supports connection to Azure DevOps from Excel.
-
+- The only way to get the Azure DevOps Office Integration plug-in is to install one of the latest editions of Visual Studio or Azure DevOps Office Integration. The plug-in supports connection to Azure DevOps from Excel.
 - To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../get-started/sign-up-invite-teammates.md).
 
 ::: moniker-end
@@ -112,12 +107,8 @@ Connection from an Office client to an Azure Boards project requires the followi
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - To connect Excel to Azure Boards, you must install Office Excel 2010 or later version, including Microsoft 365.
-
 - All Office integration tasks require that you install a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family)
-
-  > [!NOTE]
-  > The only way to get the Team Foundation plug-in is to install one of the latest editions of Visual Studio or Azure DevOps Office Integration 2019. The Azure DevOps Office Integration 2019 plug-in supports connection to Azure DevOps from Excel.
-
+- The only way to get the Team Foundation plug-in is to install one of the latest editions of Visual Studio or Azure DevOps Office Integration 2019. The Azure DevOps Office Integration 2019 plug-in supports connection to Azure DevOps from Excel.
 - To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md).
 
 ::: moniker-end
@@ -125,16 +116,10 @@ Connection from an Office client to an Azure Boards project requires the followi
 ::: moniker range="tfs-2018"
 
 - To connect Excel to Azure Boards, you must install Office Excel 2010 or later version, including Microsoft 365.
-
 - To connect Project to Azure Boards, you must install Office Project 2010 or later version, including Microsoft 365.
-
 - To connect PowerPoint to Azure Boards, you must install [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400).  
-
 - Installed Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-
-  > [!NOTE]
-  > The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration plug-in. The plug-in supports connection to TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
-
+- The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration plug-in. The plug-in supports connection to TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
 - To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md).
 
 ::: moniker-end
@@ -363,8 +348,7 @@ To disconnect an Excel document file from the network:
 
 3. Modify or update the work item list as needed.
 
-   > [!NOTE]
-   > You can't create most types of links between work items when the work item document is disconnected from the system. The exceptions are parent-child links in an Excel tree list.
+   You can't create most types of links between work items when the work item document is disconnected from the system. The exceptions are parent-child links in an Excel tree list.
 
 ### Reconnect a file to Azure Boards
 
