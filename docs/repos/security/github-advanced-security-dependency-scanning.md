@@ -24,13 +24,32 @@ Dependency scanning generates an alert for any open-source component, direct or 
 
 ### About dependency scanning detection 
 
-A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task building new code is executed. Dependency scanning generates security alerts for Go, Maven, npm (including Yarn and pnpm), NuGet, Pip, Ruby, and Rust.
+A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task building new code is executed. 
 
 For every vulnerable component detected in use, the component and vulnerability are listed in the build log and displayed as an alert in the Advanced Security tab. Only advisories that reviewed by GitHub and added to the [GitHub Advisory Database](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/browsing-security-advisories-in-the-github-advisory-database) create a dependency scanning alert. The build log includes a link to the individual alert for further investigation. For more information on the alert detail, view Fixing dependency scanning alerts.  
 
 The build log also contains basic information about each detected vulnerability. These details include the severity, the affected component, the title of the vulnerability, and the associated CVE.  
 
-![Screenshot of a dependency scanning build output](./media/dependency-scanning-build-log.png)
+![Screenshot of a dependency scanning build output](./media/dependency-scanning-build-log.png) 
+
+### Supported package ecosystems 
+
+Dependency scanning supports both direct and transitive dependencies for all supported package ecosystems. 
+
+| Package manager  | Languages  | Supported formats |
+|---|---|---|
+|  Cargo | Rust  | `Cargo.toml`, `Cargo.lock`  | 
+|  CocoaPods | Swift  | `Podfile.lock`  | 
+|  Go modules | Go  | `go.mod`, `go.sum`  | 
+|  Gradle | Java  | `*.lockfile`  | 
+|  Maven | Java  | `pom.xml`  | 
+|  npm | JavaScript  | `package-lock.json`, `package.json`, `npm-shrinkwrap.json`, `lerna.json` | 
+|  NuGet | C# | `*.packages.config`,  `*.project.assets (*.csproj)` | 
+|  pip | Python  | `setup.py`, `requirements.txt`  | 
+|  pnpm | JavaScript  | `package.json` | 
+|  RubyGems | Ruby  |  `Gemfile.lock` | 
+|  Yarn | JavaScript  | `package.json`  | 
+
 
 ### About dependency scanning alerts 
 
@@ -466,6 +485,15 @@ This action only dismisses the alert for your selected branch. Other branches th
 ### Dependency scanning task timeout 
 
 The default time that the dependency scanning task runs before timing out is 300 seconds, or 5 minutes. If the task is timing out prior to completion, you can set a pipeline variable `DependencyScanning.Timeout`, which expects an integer representing seconds, such as `DependencyScanning.Timeout: 600`. Anything under the default timeout of 300 seconds has no effect. 
+
+To use this variable, add `DependencyScanning.Timeout` as a pipeline variable: 
+
+>[!div class="tabbedCodeSnippets"]
+```yaml
+- task: AdvancedSecurity-Dependency-Scanning@1
+- env:
+    DependencyScanning.Timeout: 600
+```
 
 ### Break-glass scenario for build task
 
