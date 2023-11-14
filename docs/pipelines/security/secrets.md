@@ -71,6 +71,6 @@ Types of secrets used by pipelines can include:
 
 ## Next steps
 
-<!-- * [Best practices for protecting Azure secrets](/azure/security/fundamentals/secrets-best-practices) -->
+* [Best practices for protecting Azure secrets](/azure/security/fundamentals/secrets-best-practices)
 * [Key and secret management considerations in Azure](/azure/well-architected/security/design-storage-keys)
 * [Azure DevOps security best practices](../../organizations/security/security-best-practices.md)
