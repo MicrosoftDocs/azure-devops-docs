@@ -9,7 +9,7 @@ ms.topic: include
 
 - [Pipeline tasks that have been deprecated will start showing warning messages](#pipeline-tasks-that-have-been-deprecated-will-start-showing-warning-messages)
 
-- [The AzureRmWebAppDeploymentV4 task supports Entra ID authentication](#the-azurermwebappdeploymentV4-task-supports-entra-id-authentication)
+- [The AzureRmWebAppDeploymentV4 task supports Entra ID authentication](#the-azurermwebappdeploymentv4-task-supports-entra-id-authentication)
 
 - [Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
 
