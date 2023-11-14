@@ -31,7 +31,7 @@ If you don't have a feed already, follow the instructions below to create a new 
 
 [!INCLUDE [](../includes/create-feed.md)]
 
-## Add Google Maven Repository
+## Add Google Maven Repository upstream
 
 If you checked the *upstream sources* checkbox when creating your feed, Google Maven Repository should already be added as an upstream source. If not, you can add it manually using the following steps:
 
@@ -78,9 +78,17 @@ In this example, we will save the Zipflinger Library from Google Maven Repositor
 
 ## View saved packages
 
-To view the packages you installed from Google Maven Repository, select the appropriate source from the dropdown menu.
+To view the packages you installed from upstream, select the **Google Maven Repository** source from the dropdown menu.
 
-:::image type="content" source="media/google-maven-source.png" alt-text="A screenshot showing how to filter for packages from Google Maven Repository.":::
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select the **Google Maven Repository** source from the dropdown menu to find packages from this upstream.
+
+1. The *Zipflinger* package that we saved in the previous step is now available in our feed, as Azure Artifacts automatically saved a copy when we executed the mvn install command.
+ 
+    :::image type="content" source="media/saved-packages-from-gooogle-maven-repository.png" alt-text="A screenshot showing packages from Google Maven Repository.":::
 
 > [!TIP]
 > If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project's files:
@@ -88,7 +96,6 @@ To view the packages you installed from Google Maven Repository, select the appr
 
 ## Related articles
 
-- [Maven Central upstream source](./upstream-sources.md)
+- [Use packages from Maven Central](./upstream-sources.md)
+- [Search for packages in upstream sources](../how-to/search-upstream.md)
 - [Configure permissions](../feeds/feed-permissions.md)
-- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
-- [Upstream behavior](../concepts/upstream-behavior.md)
