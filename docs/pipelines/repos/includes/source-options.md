@@ -123,7 +123,7 @@ Use that variable to populate the secret in the above Git command.
 
 :::moniker range="=azure-devops-2022"
 
-[!INCLUDE [feature-added-2022-1](../../includes/feature-added-2022-1.md)]
+[!INCLUDE [feature-added-2022-1](../../../includes/feature-added-2022-1.md)]
 
 :::moniker-end
 
