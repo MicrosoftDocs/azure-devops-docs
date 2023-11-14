@@ -48,6 +48,11 @@ By default, members of the project Contributors group have permissions to contri
 
 [!INCLUDE [temp](../../organizations/security/includes/code-git.md)]
 
+:::moniker range=">= azure-devops-2022"
+
+Starting with [Azure DevOps sprint 224](/azure/devops/release-notes/2023/sprint-224-update) (Azure DevOps Services and Azure DevOps Server 2022.1 and higher), [Edit policies permission is no longer granted automatically to branch creators](/azure/devops/release-notes/2023/sprint-224-update#removing-edit-policies-permission-to-branch-creator). Previously, when you created a new branch, you we're granted permission to edit policies on that branch. With this update, we are changing the default behavior to not grant this permission even if the **Permission management** setting is switched on for the repository. You will need the **Edit policies** permission granted explicitly (either manually or through REST API) by security permission inheritance or through a group membership.
+
+:::moniker-end
 
 <a id="git-repository">  </a>
 
