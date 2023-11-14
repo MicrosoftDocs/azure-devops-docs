@@ -9,9 +9,8 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/13/2023
+ms.date: 11/13/2023
 ---
-
 
 
 # witAdmin: Customize and manage objects for tracking work 
@@ -26,9 +25,7 @@ In addition, for on-premises Azure DevOps Servers, you can manage the resolution
 
 As the following illustration shows, you manage categories and types of and work items for each project. You manage global lists, types of links, and fields in work item for each project collection. You can customize global workflow for a project or a collection.  
   
-![Conceptual image of Work Item Tracking Objects.](media/pnt_wit_objects.png)  
-  
-[!INCLUDE [temp](../../includes/process-editor.md)]
+![Conceptual image of Work Item Tracking Objects.](media/pnt_wit_objects.png)
 
 For most commands, you must be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md). 
 
@@ -51,13 +48,13 @@ For most commands, you must be a member of the Project Administrators or Project
 
 You customize all work tracking objects&mdash;such as, work item types, process configuration, global lists&mdash;by updating their XML definitions. If you're new to work tracking customization, see [Customize your work tracking experience](../customize-work.md).  
 
-You run **witadmin** commands against Azure DevOps Services or an on-premises Azure DevOps Server. As shown in the command lists below, only **witadmin** commands that list or export files are supported for the Azure DevOps Services. 
+You run **witadmin** commands against Azure DevOps Services or an on-premises Azure DevOps Server. As shown in the following command lists, only **witadmin** commands that list or export files are supported for the Azure DevOps Services. 
 
 ## [Work item types](witadmin-import-export-manage-wits.md)
 
-Work items are used to track anything you need to track. Each work item is based on a work item type. Each work item types defines the fields available in which to store information. The available work item types depend on the process you used when your project was created (Agile, Scrum, Basic, or CMMI). To learn more, see [Track your work items in Azure Boards user stories, issues, bugs, features, and epics](../../boards/work-items/about-work-items.md).
+Work items are used to track anything you need to track. Each work item is based on a work item type. Each work item type defines the fields available in which to store information. The available work item types depend on the process you used when your project was created (Agile, Scrum, Basic, or CMMI). For more information, see [Track your work items in Azure Boards user stories, issues, bugs, features, and epics](../../boards/work-items/about-work-items.md).
 
-For the Inherited process model, you can add and delete work item types from the web portal. To learn how, see [Add and manage work item types(Inheritance process)](../../organizations/settings/work/customize-process-work-item-type.md).
+For the Inherited process model, you can add and delete work item types from the web portal. For more information, see [Add and manage work item types (Inheritance process)](../../organizations/settings/work/customize-process-work-item-type.md).
 
 ---
 :::row:::
@@ -133,9 +130,9 @@ For the Inherited process model, you can add and delete work item types from the
 ## [Fields](manage-work-item-fields.md)
 
 Fields are used to track the status and information associated with work items. Fields are defined for an organization or collection. 
-To learn more about fields, see [Work item fields and attributes](../../boards/work-items/work-item-fields.md). To look up the description of a specific field, see [Field descriptions for default and work item fields used in process templates](../../boards/work-items/guidance/work-item-field.md).
+For more information, see [Work item fields and attributes](../../boards/work-items/work-item-fields.md). To look up the description of a specific field, see [Field descriptions for default and work item fields used in process templates](../../boards/work-items/guidance/work-item-field.md).
  
-For the Inherited process model, you can view and delete fields from the web portal. To learn how, see [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md).
+For the Inherited process model, you can view and delete fields from the web portal. For more information, see [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md).
 
 ---
 :::row:::
@@ -213,7 +210,7 @@ For the Inherited process model, you can view and delete fields from the web por
 
 ## [Categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories)
 
-Categories associate one or more work item types as belonging to the same category. Azure Boards relies on default category definitions, many of which specify a single work item type per category. To learn about categories and how they're used, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
+Categories associate one or more work item types as belonging to the same category. Azure Boards relies on default category definitions, many of which specify a single work item type per category. For more information, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
  
  
 ---
@@ -256,7 +253,7 @@ Categories associate one or more work item types as belonging to the same catego
 
 ## [Link types](/previous-versions/azure/devops/reference/witadmin/manage-link-types)
 
-You use different link types to manage the various relationships between work items. For On-premises XML and Hosted XML process models, you can define custom link types. To learn more about default link types, see [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md) and [Reference guide for link types](../../boards/queries/link-type-reference.md).  
+You use different link types to manage the various relationships between work items. For On-premises XML and Hosted XML process models, you can define custom link types. For more information about default link types, see [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md) and [Reference guide for link types](../../boards/queries/link-type-reference.md).  
 
 ---
 :::row:::
@@ -333,7 +330,7 @@ You use different link types to manage the various relationships between work it
 
 ## [Global lists](/previous-versions/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types)
 
-Global lists are pick lists that you can include within one or more fields and work item type definitions. You can share list items among several work item types for a collection of projects by including the list items in one or more **GLOBALLIST** elements. To learn more, see [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
+Global lists are pick lists that you can include within one or more fields and work item type definitions. You can share list items among several work item types for a collection of projects by including the list items in one or more **GLOBALLIST** elements. For more information, see [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
 
 ---
 :::row:::
@@ -350,7 +347,7 @@ Global lists are pick lists that you can include within one or more fields and w
 ---
 :::row:::
    :::column span="2":::
-   `destroygloballist`*: Delete a global list 
+   `destroygloballist`: Delete a global list 
    :::column-end:::
    :::column span="1":::
       
@@ -399,7 +396,7 @@ Global lists are pick lists that you can include within one or more fields and w
 
 ## [Global workflow](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow)
 
-With global workflow, you can define and update fields and global lists that apply to all work item types in a project or collection. To learn more, see [Global workflow XML element reference](../xml/global-workflow-xml-element-reference.md).  
+With global workflow, you can define and update fields and global lists that apply to all work item types in a project or collection. For more information, see [Global workflow XML element reference](../xml/global-workflow-xml-element-reference.md).  
 
 ---
 :::row:::
@@ -441,10 +438,10 @@ With global workflow, you can define and update fields and global lists that app
 
 ## [Process configuration](witadmin-import-export-process-configuration.md)
  
-Process configuration defines the default configuration and functional capabilities that your teams can access using Azure Boards. The configuration determines the work item types that appear on the product backlog, sprint backlogs, Kanban board, and task board. To learn about process configuration and what you can customize, see [ProcessConfiguration](../xml/process-configuration-xml-element.md). 
+Process configuration defines the default configuration and functional capabilities that your teams can access using Azure Boards. The configuration determines the work item types that appear on the product backlog, sprint backlogs, Kanban board, and task board. For more information about process configuration and what you can customize, see [Process Configuration](../xml/process-configuration-xml-element.md). 
 
  
-For the Inherited process model, you can customize backlogs from the web portal. To learn how, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md).
+For the Inherited process model, you can customize backlogs from the web portal. For more information, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md).
  
 ---
 :::row:::
@@ -487,7 +484,7 @@ For the Inherited process model, you can customize backlogs from the web portal.
 
 ## [Work items](/previous-versions/azure/devops/reference/witadmin/remove-work-items-permanently) 
 
-The following **witadmin** command is only available for TFS 2018.1 and earlier versions. It has been deprecated for TFS 2018.2 and later versions. To learn more about how to permanently delete work items for later versions, see [Remove, delete, or restore work items](../../boards/backlogs/remove-delete-work-items.md).
+The following **witadmin** command is only available for TFS 2018.1 and earlier versions. It is deprecated for TFS 2018.2 and later versions. For more information about how to permanently delete work items for later versions, see [Remove, delete, or restore work items](../../boards/backlogs/remove-delete-work-items.md).
 
 - `destroywi`: Permanently delete work items    
 ::: moniker-end
@@ -521,25 +518,19 @@ To customize the resolution types, bug work item type, and failure types used wh
 ::: moniker range="azure-devops"
 
 - [Customize your work tracking experience](../customize-work.md)   
-- [**az boards** command-line tools](../../cli/quick-reference.md#azure-boards) 
 - [On-premises XML process model](../on-premises-xml-process-model.md)  
-- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
 - [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
-- [What is Azure Test Plans?](../../test/overview.md)
  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - [Customize your work tracking experience](../customize-work.md)    
-- [On-premises XML process model](../on-premises-xml-process-model.md)  
-- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md) 
-- [What is Azure Test Plans?](../../test/overview.md)
+- [On-premises XML process model](../on-premises-xml-process-model.md)
  
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 - [Customize your work tracking experience](../customize-work.md)   
 - [On-premises XML process model](../on-premises-xml-process-model.md)  
-- [What is Azure Test Plans?](../../test/overview.md)
 ::: moniker-end
