@@ -10,5 +10,5 @@ ms.topic: include
 - [The AzureRmWebAppDeploymentV4 task supports Microsoft Entra ID authentication](#the-azurermwebappdeploymentv4-task-supports-microsoft-entra-id-authentication)
 - [Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
 - [Support for GitHub Enterprise Server in Required template check](#support-for-github-enterprise-server-in-required-template-check)
-- [Bypass Approvals and Checks](bypass-approvals-and-checks)
+- [Bypass Approvals and Checks](#bypass-approvals-and-checks)
 - [Rerun Invoke Azure Function checks](#rerun-invoke-azure-function-checks)
