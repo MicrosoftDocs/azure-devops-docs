@@ -134,7 +134,9 @@ Picture a scenario that you deploy your system in multiple stages. Before deploy
 
 When reviewing the Approval request, you notice the sanity check ran two days earlier. In this scenario you may be aware of another deployment that affected the result of the sanity check.
 
-Starting with this sprint, you are able to rerun Invoke Azure Function and Invoke REST API check.
+Starting with this sprint, you can rerun Invoke Azure Function and Invoke REST API checks. This functionality is available only for checks that have succeeded and have no retries.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of dynamic check.](../../media/230-pipelines-05.png " Screenshot of dynamic check.")
+
+You can rerun a check only if you are an Administrator of the resource on which the checks were defined.
