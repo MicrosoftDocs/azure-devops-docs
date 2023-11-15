@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Azure Pipelines tasks use Node 16
 
-Pipeline tasks use a runner to execute. Most Pipeline tasks use Node as a runner. Azure Pipelines task that use NodeJS as a runner now all use Node 16. As Node 16 is the first runner to support Apple silicon, this also provides full task support for macOS on Apple silicon.
+Pipeline tasks use a runner to execute. Most Pipeline tasks use Node as a runner. Azure Pipelines task that use Node.js as a runner now all use Node 16. As Node 16 is the first runner to support Apple silicon, this also provides full task support for macOS on Apple silicon.
 
 As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/blog/announcements/nodejs16-eol), we are currently adding the ability to run tasks with Node 20.
 
@@ -27,7 +27,7 @@ The AzureRmWebAppDeploymentV3 and AzureRmWebAppDeploymentV4 tasks have been upda
 
 ### Improvements to Approvals REST API
 
-We improved searching for approvals assigned to a user more by including in the results approvals assigned to groups the user belongs to.
+We improved searching for approvals assigned to a user by including in the results approvals assigned to groups the user belongs to.
 
 Approvals now contain information about the pipeline run they belong to.
 
@@ -86,13 +86,13 @@ For example, the following GET REST API call `https://dev.azure.com/fabrikam/Fab
 
 ### Bypass Approvals and Checks
 
-[Approvals and checks](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass) help protect access to important resources, such as service connections, repos, or agent pools. A common use case is to use Approvals and Checks when deploying to production, and you wish to protect the ARM Prod service connection. 
+[Approvals and checks](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass&preserve-view=true ) help protect access to important resources, such as service connections, repos, or agent pools. A common use case is to use Approvals and Checks when deploying to production, and you wish to protect the ARM Prod service connection. 
 
-Say you added the following checks on the service connection: an Approval, a Business Hours check, and an Invoke Azure Function check (to enforce a delay between different regions).
+If you added the following checks on the service connection: an Approval, a Business Hours check, and an Invoke Azure Function check (to enforce a delay between different regions).
 
-Now, imagine you have to do a hotfix deployment. You start a pipeline run, but it doesn't proceed,it waits for most of the checks to complete. You cannot afford to wait for the approvals and checks to complete.
+Now, consider that you have to make a hotfix deployment. You start a pipeline run, but it doesn't proceed,it waits for most of the checks to complete. 
 
-In this sprint we've added the possibility to bypass running approvals and checks, so you can completed your hotfix. 
+In this sprint we've made it possible to bypass running approvals and checks, so you can completed your hotfix. 
 
 You can bypass running Approvals, Business Hours, Invoke Azure Function, and Invoke REST API checks.
 
@@ -129,9 +129,9 @@ Starting with this sprint, you can specify templates located in GitHub Enterpris
 
 ### Rerun Invoke Azure Function checks
 
-Imagine you deploy your system in multiple stages. Before deploying the second stage, there's an Approval and an Invoke Azure Function check that runs a sanity check on the already-deployed part of the system. 
+Picture a scenario that you deploy your system in multiple stages. Before deploying the second stage, there's an Approval and an Invoke Azure Function check that runs a sanity check on the already-deployed part of the system. 
 
-Say you come to review the Approval request and you notice the sanity check ran 2 days ago. Say you're aware there was another deployment that might have affected the result of the sanity check.
+When reviewing the Approval request you notice the sanity check ran two days earlier.In this scenario you may be aware there was another deployment that might have affected the result of the sanity check.
 
 Starting with this sprint, you'll be able to rerun Invoke Azure Function and Invoke REST API check.
 

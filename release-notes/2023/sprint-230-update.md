@@ -7,7 +7,11 @@ description: TBD
 ---
 # TBD
 
-Head over to the feature list below to learn move about these features.
+With this update, we've included several improvements in Azure Pipelines. We've made it easier to search for approvals and have made it possible for administrators to bypass running approvals and checks to complete a hotfix. 
+
+In addition, we are excited to offer a private preview of the newest improvements in our Azure Boards + GitHub integration. 
+
+Check out the release notes for details.
 
 ### General
 

@@ -6,7 +6,7 @@ ms.topic: include
 ---
 
 
-### Add support for ES modules in Azure DevOps Extension SDK
+### New version of the Azure DevOps Web Extension SDK
 
 With this update we are releasing a new version of the Azure DevOps Web Extension SDK. The client SDK enables web extensions to communicate to the host frame. It can be used to:
 * Notify the host that the extension is loaded or has errors
@@ -31,10 +31,10 @@ For ES modules, you can import our modules using the import statement:
  
 If you're using AMD modules, you can continue to import SDK using the `require` function:
 
-`require (['azure-devops-extension-sdk'],` `function(SDK)` `{
+`require (['azure-devops-extension-sdk'],` `function(SDK) { `
 
-  // Use the module here
-});
+ ` // Use the module here`
+`}); `
 
 
 
