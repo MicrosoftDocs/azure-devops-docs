@@ -91,7 +91,7 @@ To view the packages you installed from upstream, select the **Google Maven Repo
 
 1. The *Zipflinger* package that we saved in the previous step is now available in our feed, as Azure Artifacts automatically saved a copy when we executed the mvn install command.
  
-    :::image type="content" source="media/saved-zipflinger-package-from-google-maven-repository.png" alt-text="A screenshot showing packages from Google Maven Repository.":::
+    :::image type="content" source="media/saved-zipflinger-package-from-google-maven-repository.png" alt-text="A screenshot showing packages from Google Maven Repository." lightbox="media/saved-zipflinger-package-from-google-maven-repository.png":::
 
 > [!TIP]
 > If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project's files:
