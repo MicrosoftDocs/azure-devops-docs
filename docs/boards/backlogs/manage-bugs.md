@@ -421,11 +421,21 @@ To automate select actions, add custom rules to your Bug work item type. For exa
 
 <a id="set-state-pr">  </a>
 
-::: moniker range=">= azure-devops-2020"
 ### Set work item state in pull request
+
+::: moniker range=">= azure-devops-2020"
+
+When you create a pull request, you can set the *state* value of the linked work items in the description. Follow the syntax: ``` {state value}: #ID ```.
+When you merge the pull request, the system reads the description and updates the work item state. In the following example, we set work items #300 and #301 to Resolved, and #323 and #324 to Closed.
+
+:::image type="content" source="/azure/devops/organizations/notifications/media/pr-set-state-of-work-items.png" alt-text="Screenshot of setting work item state within a PR.":::
+ 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/set-work-item-state-pull-request.md)] 
+::: moniker range="azure-devops-2020"
+> [!NOTE]   
+> This feature requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#customize-work-item-state-when-pull-request-is-merged).  
+::: moniker-end
 
 ## Integration across Azure DevOps 
 

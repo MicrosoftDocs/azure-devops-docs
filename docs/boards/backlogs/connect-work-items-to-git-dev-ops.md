@@ -1,5 +1,5 @@
 ---
-title: Drive Git development from user story and requirements  
+title: Drive Git development from work items  
 titleSuffix: Azure Boards 
 description: Learn how to create a branch, commit, or a pull request in Azure Boards. Also, automatically link work items with source control branches, builds, and commits. 
 ms.custom: "boards-backlogs, seodec18"
@@ -18,7 +18,7 @@ ms.date: 07/26/2022
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
-Review this article to learn:  
+In this article, learn how to do the following tasks:  
 
 >[!div class="checklist"]    
 > * How to create a new branch or pull request from a work item   
@@ -27,16 +27,15 @@ Review this article to learn:
 > * Create a branch for several work items  
 > * Link a work item to existing development and build objects    
 
-
 ::: moniker range=">= azure-devops-2019"  
 This article addresses creating new branches, adding links to commits, and adding pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
 ::: moniker-end
 
 > [!TIP]
-> You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. To learn how, see the following resources:   
+> You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. For more information, see the following resources:   
 > - [Cross-service overview](../../cross-service/cross-service-overview.md#azure-boards---azure-repos) 
 > - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
-> - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md).
+> - [Link work items to builds and deployments](add-link.md#link-work-items-to-builds-and-deployments).
 
 ## Development control
 
@@ -56,7 +55,7 @@ The **Development** control records all Git development processes that support c
 
 
 
-From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can start a pull request for a branch you've created or linked to from the work item.  
+From it, you can quickly access branches, pull requests, and commits that are linked to the work item. Also, you can start a pull request for a branch you created or linked to from the work item.  
 
 Keep in mind that the **Development** control only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients don't display several of the features that are available from the web portal. 
 
@@ -98,11 +97,11 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 
 	:::image type="content" source="media/git/actions-menu-new-branch-option.png" alt-text="User story work item form, Action menu, add new branch."::: 
 
-	Name the branch and select the repository on which it's based.   
+	Name the branch and select the the repository.   
 
 	<img src="media/git/git-dev-create-branch.png" alt="Create a branch dialog box" />  
 
-	Branches you create are automatically linked to the work item.  
+	When you create branches, they automatically get linked to the work item.  
 
 	> [!NOTE]  
 	> You can only create a branch once you've added files to the main branch, which we recommend you label ```main``` or other distinctive label. The system automatically adds a README file to the initial repo created with each new project.   
@@ -111,7 +110,7 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 
 	You can edit a file within the web portal. 
 
-	Or, if you have extensive file edits or need to add files, then you'll need to work from Visual Studio or other supported IDE. You'll want to add a new local branch from the branch you created. For more information, see [Update code with fetch and pull, Download changes with fetch](../../repos/git/pulling.md#download-changes-with-fetch). (While any code editing and committing process works, we work best with an edition of Visual Studio.)  
+	Or, if you have extensive file edits or need to add files, work from Visual Studio or other supported IDE. Add a new local branch from the branch you created. For more information, see [Update code with fetch and pull, Download changes with fetch](../../repos/git/pulling.md#download-changes-with-fetch). (While any code editing and committing process works, we work best with an edition of Visual Studio.)  
 
 3. Add or modify files in the branch that you created.   
 
@@ -119,7 +118,7 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 
 	![Commit and push changes](media/git/git-dev-commit-sync.png)  
 
-	If this is the first time pushing changes from a new branch, you'll need to publish the branch before pushing your changes. For more information, see [Share code with push](../../repos/git/pushing.md).   
+	If it's your first time pushing changes from a new branch, publish the branch before you push changes. For more information, see [Share code with push](../../repos/git/pushing.md).   
 
 4. <a id="create-pull-request">  </a> Create a [pull request](../../repos/git/pull-requests.md) from the work item form.  
 
@@ -145,10 +144,9 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 	> [!div class="mx-imgBorder"]
 	> ![Pull request, completed notification](media/git/git-dev-pr-completed.png)
 
-7.	Open the work item form or refresh the form, expand the **Development** section (choose **Maximize Development** :::image type="icon" source="../media/icons/full-screen-icon.png" border="false":::), and you'll see the links that have been added to support the operations you completed.  
+7.	Open the work item form or refresh the form, expand the **Development** section (choose **Maximize Development** :::image type="icon" source="../media/icons/full-screen-icon.png" border="false":::), and you see the links that were added to support the operations you completed.  
 
-	![Work item form, Development section, links added](media/git/git-dev-development-section-completed-links.png)  
-
+	![Screenshot of Work item form, Development section, links added.](media/git/git-dev-development-section-completed-links.png)  
 
 <a id="add-branch-multi-wi">  </a>
 
@@ -199,13 +197,12 @@ Or, you can select it from the **Links** :::image type="icon" source="media/icon
 
 ### Associated work items in build 
 
-With Git commits, any work items that have been linked to a commit are listed under the Associated work items in the build summary page.  
+With Git commits, any work items that were linked to a commit are listed under the Associated work items in the build summary page.  
 
 <img src="media/developer-associated-work-items-build.png" alt="Linked work items listed under Associated work items in the build summary page." />  
 
 <!--- Add info about option to set build linking; link to release notes if needed --> 
  
-
 ### Link types showing in the Development section
 
 Links shown in this section appear because of these actions:   
