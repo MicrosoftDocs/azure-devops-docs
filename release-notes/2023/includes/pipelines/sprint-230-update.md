@@ -13,9 +13,9 @@ As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/b
 
 ### Warning messages will be displayed for deprecated Pipeline tasks
 
-Azure Pipelines has a number of tasks that have been deprecated. Deprecated tasks will be retired early 2024. To help you identify pipelines that are using deprecated tasks, pipeline shows warnings if such a task is used. We have updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date. The Task reference also includes alternatives (for example, a newer major version) to the task.
+Azure Pipelines has many tasks that have been deprecated. Deprecated tasks will be retired early 2024. To help you identify pipelines that are using deprecated tasks, pipeline shows warnings if such a task is used. We have updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date. The Task reference also includes alternatives (for example, a newer major version) to the task.
 
-The following tasks have been deprecated for many years and will emit warnings:  
+The following tasks have been deprecated for several years and will emit warnings:  
 `AppCenterDistributeV1`, `AppCenterDistributeV2`, `AzureMonitorV0`, `ChefKnifeV1`, `ChefV1`, `CondaEnvironmentV1`, `DeployVisualStudioTestAgentV2`, `DotNetCoreInstallerV1`, `DownloadPackageV0`, `DownloadPipelineArtifactV0`, `DownloadPipelineArtifactV1`, `IISWebAppDeployment`, `NuGetAuthenticateV0`, `NuGetInstallerV0`, `NuGetPackagerV0`,` NuGetPublisherV0`, `NuGetRestoreV1`, `NuGetV0`, `PublishPipelineArtifactV0`, `QuickPerfTestV1`, `RunJMeterLoadTestV1`, `RunLoadTestV1, SqlServerDacpacDeployment`,`XamarinTestCloudV1`.
 
 Update pipelines using to use an alternative or newer task version.
