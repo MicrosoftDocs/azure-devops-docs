@@ -13,7 +13,7 @@ As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/b
 
 ### Warning messages will be displayed for deprecated Pipeline tasks
 
-Azure Pipelines has a number of tasks that have been deprecated. Deprecated tasks will be retired early 2024. To help you identify pipelines that are using deprecated tasks, pipeline shows warnings if such a task is used. We have also updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date. The Task reference also includes alternatives (for example, a newer major version) to the task.
+Azure Pipelines has a number of tasks that have been deprecated. Deprecated tasks will be retired early 2024. To help you identify pipelines that are using deprecated tasks, pipeline shows warnings if such a task is used. We have updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date. The Task reference also includes alternatives (for example, a newer major version) to the task.
 
 The following tasks have been deprecated for many years and will emit warnings:  
 `AppCenterDistributeV1`, `AppCenterDistributeV2`, `AzureMonitorV0`, `ChefKnifeV1`, `ChefV1`, `CondaEnvironmentV1`, `DeployVisualStudioTestAgentV2`, `DotNetCoreInstallerV1`, `DownloadPackageV0`, `DownloadPipelineArtifactV0`, `DownloadPipelineArtifactV1`, `IISWebAppDeployment`, `NuGetAuthenticateV0`, `NuGetInstallerV0`, `NuGetPackagerV0`,` NuGetPublisherV0`, `NuGetRestoreV1`, `NuGetV0`, `PublishPipelineArtifactV0`, `QuickPerfTestV1`, `RunJMeterLoadTestV1`, `RunLoadTestV1, SqlServerDacpacDeployment`,`XamarinTestCloudV1`.
@@ -22,12 +22,12 @@ Update pipelines using to use an alternative or newer task version.
 
 ### The AzureRmWebAppDeploymentV4 task supports Microsoft Entra ID authentication
 
-The AzureRmWebAppDeploymentV3 and AzureRmWebAppDeploymentV4 tasks are updated to support the [App Service setting for basic authentication](/azure/app-service/configure-basic-auth-disable?tabs=portal&preserve-view=true). If basic authentication is disabled on the App Service, the AzureRmWebAppDeploymentV3/4 tasks use Entra ID authentication to perform deployments to the App Service Kudu endpoint. This requires a recent version of msdeploy.exe installed on the agent, which is the case on the windows-2022/windows-latest [Hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true).
+The AzureRmWebAppDeploymentV3 and AzureRmWebAppDeploymentV4 tasks are updated to support the [App Service setting for basic authentication](/azure/app-service/configure-basic-auth-disable?tabs=portal&preserve-view=true). If basic authentication is disabled on the App Service, the AzureRmWebAppDeploymentV3/4 tasks use Microsoft Entra ID authentication to perform deployments to the App Service Kudu endpoint. This requires a recent version of msdeploy.exe installed on the agent, which is the case on the windows-2022/windows-latest [Hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true).
 
 
 ### Improvements to Approvals REST API
 
-We improved searching for approvals assigned to a user more by including in the results approvals assigned to groups the user belongs to.
+We improved searching for approvals assigned to a user by including approvals assigned to groups the user belongs to in the results.
 
 Approvals now contain information about the pipeline run they belong to.
 
@@ -134,7 +134,7 @@ Picture a scenario that you deploy your system in multiple stages. Before deploy
 
 When reviewing the Approval request, you notice the sanity check ran two days earlier. In this scenario you may be aware of another deployment that affected the result of the sanity check.
 
-Starting with this sprint, you can rerun Invoke Azure Function and Invoke REST API checks. This functionality is available only for checks that have succeeded and have no retries.
+With this sprint, you can rerun Invoke Azure Function and Invoke REST API checks. This functionality is available only for checks that have succeeded and have no retries.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of dynamic check.](../../media/230-pipelines-05.png " Screenshot of dynamic check.")

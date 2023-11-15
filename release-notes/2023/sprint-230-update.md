@@ -7,9 +7,9 @@ description: Bypass approvals and checks to complete your hotfix.
 ---
 # Bypass approvals and checks to complete your hotfix.
 
-With this update, we've included several improvements in Azure Pipelines. We've made it easier to search for approvals and have made it possible for administrators to bypass running approvals and checks to complete a hotfix. 
+With this update, it is now possible for administrators to bypass running approvals and checks to complete a hotfix in Azure Pipelines. 
 
-In addition, we are excited to offer a private preview of the newest improvements in our Azure Boards + GitHub integration. 
+In addition, we're excited to offer a private preview of the newest improvements in our Azure Boards + GitHub integration. 
 
 Check out the release notes for details.
 
