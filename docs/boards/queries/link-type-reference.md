@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/18/2022
+ms.date: 11/14/2023
 ---
 
 
@@ -59,7 +59,7 @@ A specific field maintains a count of links for each of these link types, such a
 
 ::: moniker-end 
 
-Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you'll want to create.  To learn more about the different topologies, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology).
+Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you want to create.  To learn more about the different topologies, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology).
 
 
 <a id="work-link-types">  </a>
@@ -200,7 +200,7 @@ The following table describes the work item link types you can specify to scope 
    Link category: System-defined  
    :::column-end:::
    :::column span="3":::
-   Use this non-directional link to create links between any set of work items. Use to link work items that are at the same level, such as two user stories that define features that overlap one another. The Related link type creates simple relationships with few restrictions. 
+   Use this nondirectional link to create links between any set of work items. Use to link work items that are at the same level, such as two user stories that define features that overlap one another. The Related link type creates simple relationships with few restrictions. 
    - Relate work items that are at the same level, such as two user stories that define features that overlap one another.
    - Link work items that are defined in different projects and managed by different teams.
    - Find and view work items and their related work items in a two-tiered view.
@@ -330,7 +330,7 @@ The following table describes the external link types you can choose when adding
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"  
-The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true). 
+The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true). 
 ::: moniker-end  
 
 
@@ -514,7 +514,7 @@ The following table describes the external link types you can choose when adding
       Tag
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a tag that&#39;s been defined for a git commit or git repository. For more information, see [Work from the Git command prompt](../../repos/git/command-prompt.md).
+      Used to link a work item to a tag defined for a git commit or git repository. For more information, see [Work from the Git command prompt](../../repos/git/command-prompt.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -651,10 +651,9 @@ The following table describes the GitHub link types you can choose when adding a
 
 ## Remote work link types
 
-Remote work link types are system-defined link types that support linking work items defined in different organizations. Organizations must be managed by the same Microsoft Entra ID as described in [Connect your organization to Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). 
+Remote work link types are system-defined link types that support linking work items defined in different organizations, as long as the same Microsoft Entra ID manages them as described in [Connect your organization to Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). 
 
 A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) corresponds to the sum of all links defined with a remote work link type. 
-
 
 :::row:::
    :::column span="":::
@@ -682,7 +681,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
       Link category: System-defined  
    :::column-end:::
    :::column span="":::
-      Use this directional link to create links between work items that have dependencies and are defined in different organizations. Organizations must be managed by the same Microsoft Entra ID. Typically used to track change requests made to requirements.
+      Use this directional link to create links between work items that have dependencies and are defined in different organizations, as long as the same Microsoft Entra ID manages them. Typically used to track change requests made to requirements.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -696,7 +695,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
       Link category: System-defined  
    :::column-end:::
    :::column span="":::
-      Use this non-directional link to create links between work items defined in different organizations. Organizations must be managed by the same Microsoft Entra ID.
+      Use this nondirectional link to create links between work items defined in different organizations, as long as the same Microsoft Entra ID manage them.
    :::column-end:::
 :::row-end:::
 
@@ -712,8 +711,6 @@ You can create custom link types; export and import definitions of link types; a
 - [Manage link types (`witadmin`)](/previous-versions/azure/devops/reference/witadmin/manage-link-types). 
 
 ::: moniker-end
-
-
 
 ## List link types
 
@@ -732,7 +729,6 @@ az boards work-item relation list-type [--org]
 #### Optional parameters
 
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-
 
 #### Example
 
@@ -909,7 +905,7 @@ The following table provides descriptions for each of the link type attributes r
       Is Active, `enabled`
    :::column-end:::
    :::column span="2":::
-      Indicates whether the link type is active (`true`) or not (`false`). You can only custom link types for on-premises deployments using the [`witadmin` Manage link type](/previous-versions/azure/devops/reference/witadmin/manage-link-types) command-line tool. 
+      Indicates whether the link type is active (`true`) or not (`false`). You can only use custom link types for on-premises deployments using the [`witadmin` Manage link type](/previous-versions/azure/devops/reference/witadmin/manage-link-types) command-line tool. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -971,9 +967,7 @@ The following table provides descriptions for each of the link type attributes r
 
 ## Related articles
 
-- [Link work items to track dependencies](link-work-items-support-traceability.md)    
-- [Add link to multiple work items](../backlogs/add-link.md)  
-- [Query FAQs](query-faqs.yml)
+- [Link work items to objects](../backlogs/add-link.md)  
 - [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
