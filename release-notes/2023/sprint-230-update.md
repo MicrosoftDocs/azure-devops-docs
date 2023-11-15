@@ -66,4 +66,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-Rajesh Ramamurthy
+Silviu Andrica
