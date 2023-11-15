@@ -1,11 +1,11 @@
 ---
-title:  TBD
+title:  Bypass approvals and checks to complete your hotfix.
 author: ckanyika
 ms.author: ckanyika
 ms.date: 11/15/2023
-description: TBD
+description: Bypass approvals and checks to complete your hotfix.
 ---
-# TBD
+# Bypass approvals and checks to complete your hotfix.
 
 With this update, we've included several improvements in Azure Pipelines. We've made it easier to search for approvals and have made it possible for administrators to bypass running approvals and checks to complete a hotfix. 
 

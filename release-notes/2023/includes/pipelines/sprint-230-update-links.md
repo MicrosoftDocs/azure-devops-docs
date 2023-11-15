@@ -7,9 +7,9 @@ ms.topic: include
 
 - [Azure Pipelines tasks use Node 16](#azure-pipelines-tasks-use-node-16)
 
-- [Deprecated Pipeline tasks will display warning messages](#deprecated-pipeline-tasks-will-display-warning-messages)
+- [Warning messages will be displayed for deprecated Pipeline tasks](#warning-messages-will-be-displayed-for-deprecated-pipeline-tasks)
 
-- [The AzureRmWebAppDeploymentV4 task supports Entra ID authentication](#the-azurermwebappdeploymentv4-task-supports-entra-id-authentication)
+- [The AzureRmWebAppDeploymentV4 task supports Microsoft Entra ID authentication](#the-azurermwebappdeploymentv4-task-supports-microsoft-entra-id-authentication)
 
 - [Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
 

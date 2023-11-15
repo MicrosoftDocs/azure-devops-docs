@@ -11,25 +11,26 @@ Pipeline tasks use a runner to execute. Most Pipeline tasks use Node as a runner
 
 As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/blog/announcements/nodejs16-eol), we're currently adding the ability to run tasks with Node 20.
 
-### Deprecated Pipeline tasks will display warning messages
+### Warning messages will be displayed for deprecated Pipeline tasks
 
 Azure Pipelines has a number of tasks that have been deprecated. Deprecated tasks will be retired early 2024. To help you identify pipelines that are using deprecated tasks, pipeline shows warnings if such a task is used. We have also updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date. The Task reference also includes alternatives (for example, a newer major version) to the task.
 
 The following tasks have been deprecated for many years and will emit warnings:  
 `AppCenterDistributeV1`, `AppCenterDistributeV2`, `AzureMonitorV0`, `ChefKnifeV1`, `ChefV1`, `CondaEnvironmentV1`, `DeployVisualStudioTestAgentV2`, `DotNetCoreInstallerV1`, `DownloadPackageV0`, `DownloadPipelineArtifactV0`, `DownloadPipelineArtifactV1`, `IISWebAppDeployment`, `NuGetAuthenticateV0`, `NuGetInstallerV0`, `NuGetPackagerV0`,` NuGetPublisherV0`, `NuGetRestoreV1`, `NuGetV0`, `PublishPipelineArtifactV0`, `QuickPerfTestV1`, `RunJMeterLoadTestV1`, `RunLoadTestV1, SqlServerDacpacDeployment`,`XamarinTestCloudV1`.
 
-Update pipelines using any of the tasks above to use an alternative or newer task version.
+Update pipelines using to use an alternative or newer task version.
 
-### The AzureRmWebAppDeploymentV4 task supports Entra ID authentication
+### The AzureRmWebAppDeploymentV4 task supports Microsoft Entra ID authentication
 
-The AzureRmWebAppDeploymentV3 and AzureRmWebAppDeploymentV4 tasks have been updated to honor the [App Service setting for basic authentication](/azure/app-service/configure-basic-auth-disable?tabs=portal&preserve-view=true). If basic authentication has been disabled on the App Service, the AzureRmWebAppDeploymentV3/4 tasks use Entra ID authentication to perform deployments to the App Service Kudu endpoint. This requires a recent version of msdeploy.exe installed on the agent, which is the case on the windows-2022/windows-latest [Hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true).
+The AzureRmWebAppDeploymentV3 and AzureRmWebAppDeploymentV4 tasks are updated to support the [App Service setting for basic authentication](/azure/app-service/configure-basic-auth-disable?tabs=portal&preserve-view=true). If basic authentication is disabled on the App Service, the AzureRmWebAppDeploymentV3/4 tasks use Entra ID authentication to perform deployments to the App Service Kudu endpoint. This requires a recent version of msdeploy.exe installed on the agent, which is the case on the windows-2022/windows-latest [Hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true).
 
 
 ### Improvements to Approvals REST API
 
-We improved searching for approvals assigned to a user by including in the results approvals assigned to groups the user belongs to.
+We improved searching for approvals assigned to a user more by including in the results approvals assigned to groups the user belongs to.
 
 Approvals now contain information about the pipeline run they belong to.
+
 
 For example, the following GET REST API call `https://dev.azure.com/fabrikam/FabrikamFiber/_apis/pipelines/approvals?api-version=7.2-preview.2&top=1&assignedTo=john@fabrikam.com&state=pending` returns 
 
@@ -86,11 +87,11 @@ For example, the following GET REST API call `https://dev.azure.com/fabrikam/Fab
 
 ### Bypass Approvals and Checks
 
-[Approvals and checks](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass&preserve-view=true ) help protect access to important resources, such as service connections, repos, or agent pools. A common use case is to use Approvals and Checks when deploying to production, and you wish to protect the ARM Prod service connection. 
+[Approvals and checks](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass&preserve-view=true ) help protect access to important resources, such as service connections, repos, or agent pools. A common use case is to use Approvals and Checks when deploying to production, and you wish to protect the ARM service connection. 
 
-If you added the following checks on the service connection: an Approval, a Business Hours check, and an Invoke Azure Function check (to enforce a delay between different regions).
+Say you added the following checks on the service connection: an Approval, a Business Hours check, and an Invoke Azure Function check (to enforce a delay between different regions).
 
-Now, consider that you have to make a hotfix deployment. You start a pipeline run, but it doesn't proceed,it waits for most of the checks to complete. 
+Now, imagine you have to do a hotfix deployment. You start a pipeline run, but it doesn't proceed,it waits for most of the checks to complete. You cannot afford to wait for the approvals and checks to complete.
 
 In this sprint we've made it possible to bypass running approvals and checks, so you can completed your hotfix. 
 
@@ -119,7 +120,7 @@ You can bypass a check only if you're an Administrator of the resource on which 
 
 [Templates](/azure/devops/pipelines/security/templates) are a security mechanism that enables you to control the stages, jobs, and steps of pipelines in your organization.
 
-The [Require template check](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#required-template&preserve-view=true) enables you to enforce that a pipeline extend from a set of approved templates before accessing a protected resource, such as an agent pool or service connection.
+The [Require template check](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#required-template&preserve-view=true) enables you to enforce that a pipeline extends from a set of approved templates before accessing a protected resource, such as an agent pool or service connection.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of required YAML template.](../../media/230-pipelines-06.png " Screenshot of required YAML template.")
@@ -131,9 +132,9 @@ Starting with this sprint, you can specify templates located in GitHub Enterpris
 
 Picture a scenario that you deploy your system in multiple stages. Before deploying the second stage, there's an Approval and an Invoke Azure Function check that runs a sanity check on the already-deployed part of the system. 
 
-When reviewing the Approval request, you notice the sanity check ran two days earlier.In this scenario you may be aware there was another deployment that might have affected the result of the sanity check.
+When reviewing the Approval request, you notice the sanity check ran two days earlier. In this scenario you may be aware of another deployment that affected the result of the sanity check.
 
-Starting with this sprint, you'll be able to rerun Invoke Azure Function and Invoke REST API check.
+Starting with this sprint, you are able to rerun Invoke Azure Function and Invoke REST API check.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of dynamic check.](../../media/230-pipelines-05.png " Screenshot of dynamic check.")
