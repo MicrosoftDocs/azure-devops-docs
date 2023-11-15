@@ -13,6 +13,6 @@ ms.topic: include
 
 - [Improvements to Approvals REST API](#improvements-to-approvals-rest-api)
 
-- [Support for GitHub Enterprise Server in Requited template check](#support-for-github-enterprise-server-in-requited-template-check)
+- [Support for GitHub Enterprise Server in Required template check](#support-for-github-enterprise-server-in-required-template-check)
 
 - [Rerun Invoke Azure Function checks](#rerun-invoke-azure-function-checks)
