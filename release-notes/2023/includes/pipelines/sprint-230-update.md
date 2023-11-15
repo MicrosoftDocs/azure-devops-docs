@@ -1,13 +1,13 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 11/14/2023
+ms.date: 11/15/2023
 ms.topic: include
 ---
 
 ### Azure Pipelines tasks use Node 16
 
-Pipeline tasks use a runner to execute. Most Pipeline tasks use Node as a runner. Azure Pipelines task that use Node.js as a runner now all use Node 16. As Node 16 is the first runner to support Apple silicon, this also provides full task support for macOS on Apple silicon.
+Pipeline tasks use a runner to execute. Most Pipeline tasks use Node as a runner. Azure Pipelines task that use NodeJS as a runner now all use Node 16. As Node 16 is the first runner to support Apple silicon, this also provides full task support for macOS on Apple silicon.
 
 As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/blog/announcements/nodejs16-eol), we are currently adding the ability to run tasks with Node 20.
 

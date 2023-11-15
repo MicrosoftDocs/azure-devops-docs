@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 11/14/2023
+ms.date: 11/15/2023
 ms.topic: include
 ---
 
@@ -15,7 +15,7 @@ With this update we are releasing a new version of the Azure DevOps Web Extensio
 * Obtain an authorization token to use in REST calls back to Azure DevOps
 * Get remote services offered by the host frame
 
-You can find a full API reference in the [azure-devops-extension-sdk package documentation](https://learn.microsoft.com/en-us/javascript/api/azure-devops-extension-sdk/).
+You can find a full API reference in the [azure-devops-extension-sdk package documentation](/javascript/api/azure-devops-extension-sdk/&preserve-view=true).
 This new version provides support for the following modules:
 - **ES Module Support:**
  SDK now supports ES (ECMAScript) modules in addition to the existing AMD (Asynchronous Module Definition) modules. You can now import SDK using the ES module syntax, which provides performance improvements and reduces the application size.
