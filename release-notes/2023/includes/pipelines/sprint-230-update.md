@@ -27,7 +27,7 @@ The AzureRmWebAppDeploymentV3 and AzureRmWebAppDeploymentV4 tasks are updated to
 
 ### Improvements to Approvals REST API
 
-We improved searching for approvals assigned to a user by including approvals assigned to groups the user belongs to in the results.
+We improved locating approvals assigned to a user by including the groups the user belongs to in the search results.
 
 Approvals now contain information about the pipeline run they belong to.
 
@@ -82,7 +82,6 @@ For example, the following GET REST API call `https://dev.azure.com/fabrikam/Fab
     ]
 }
 ```
-
 
 
 ### Bypass Approvals and Checks
