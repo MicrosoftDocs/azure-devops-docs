@@ -391,7 +391,7 @@ As a first step, we'll focus on **checks**. Checks are the primary mechanism in 
          <td><a href="/azure/devops/release-notes/roadmap/2022/service-connections-in-checks" data-raw-source="[Service connections in checks](/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
          <td>Pipelines</td>
          <td>Future</td>
-         <td>Future</td>
+        <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Checks extensibility](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
@@ -441,6 +441,46 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
     </tbody>
 </table>
 
+
+### Streamlined Dashboard Experience 
+Azure DevOps is enhancing the dashboard experience, focusing on simplifying the user flow for both creation and maintenance. We're fine-tuning our approach to improve workflow. Our aim is to streamline the onboarding process, ensuring that users can set up their dashboards quickly and start working without hassle. To boost productivity and enhance decision-making through dashboard insights, we plan to deliver the following features. 
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Service</th>
+            <th>Server</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td><a href="https://devblogs.microsoft.com/devops/introducing-work-item-chart-filtering-in-azure-devops-dashboards/" data-raw-source="[Work Item Chart Filtering](https://devblogs.microsoft.com/devops/introducing-work-item-chart-filtering-in-azure-devops-dashboards/)">Work Item Chart Filtering</a></td>
+         <td>Reporting</td>
+         <td>2023 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-global-parameter" data-raw-source="[Dashboard Global Parameter](azure/devops/release-notes/roadmap/2024/dashboard-global-parameter)">Dashboard Global Parameter</a></td>
+         <td>Reporting</td>
+         <td>2024 H1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-template" data-raw-source="[Dashboard Template](/azure/devops/release-notes/roadmap/2024/dashboard-template)">Dashboard Template</a></td>
+         <td>Reporting</td>
+          <td>2024 H1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/private-dashboard" data-raw-source="[Private Dashboard](/azure/devops/release-notes/roadmap/2024/private-dashboard)">Private Dashboard</a></td>
+         <td>Reporting</td>
+         <td>2024 H1</td>
+         <td>Future</td>
+      </tr>
+    </tbody>
+</table>
+
 ## All features
 
 <table>
@@ -454,7 +494,7 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
     </thead>
     <tbody>       
       <tr>
-        <td rowspan="12"><strong>2023 Q4</strong></td>
+        <td rowspan="11"><strong>2023 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
         <td>General</td>
         <td>Future</td>
@@ -505,15 +545,10 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section" data-raw-source="[Chart click thru to results by section](/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section)">Chart click thru to results by section</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section" data-raw-source="[Chart click thru to results by section](/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section)">Work Item Chart Filtering</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr> 
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
-        <td>Reporting</td>
-        <td>Future</td>
-      </tr>
       <tr>
        <td rowspan="12"><strong>2024 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview" data-raw-source="[Security Overview](/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview)">Security Overview</a></td>
