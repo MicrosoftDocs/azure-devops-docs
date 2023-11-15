@@ -10,7 +10,7 @@
       items:
         - name: "2023"
           items:
-          - name: November 14
+          - name: November 15
             href: 2023/sprint-230-update.md
           - name: October 26
             href: 2023/sprint-229-update.md
@@ -236,7 +236,7 @@
         items:
         - name: "2023"
           items:
-          - name: November 14
+          - name: November 15
             href: 2023/boards/sprint-230-update.md
           - name: October 4
             href: 2023/boards/sprint-228-update.md
@@ -427,7 +427,7 @@
         items:
         - name: "2023"
           items:
-          - name: November 14
+          - name: November 15
             href: 2023/pipelines/sprint-230-update.md
           - name: October 26
             href: 2023/pipelines/sprint-229-update.md
@@ -692,7 +692,7 @@
         items:
         - name: "2023"
           items:
-          - name: November 14
+          - name: November 15
             href: 2023/general/sprint-230-update.md
           - name: October 26
             href: 2023/general/sprint-229-update.md
@@ -796,7 +796,7 @@
         items:
         - name: "2023"
           items:
-          - name: November 14
+          - name: November 15
             href: 2023/reporting/sprint-230-update.md
           - name: October 26
             href: 2023/reporting/sprint-229-update.md
