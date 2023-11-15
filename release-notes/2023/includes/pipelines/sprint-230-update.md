@@ -116,7 +116,7 @@ When a check is bypassed, you can see this in the checks panel.
 
 You can bypass a check only if you're an Administrator of the resource on which the checks were defined.
 
-### Support for GitHub Enterprise Server in Required template check
+### Support for GitHub enterprise server in required template check
 
 [Templates](/azure/devops/pipelines/security/templates) are a security mechanism that enables you to control the stages, jobs, and steps of pipelines in your organization.
 
@@ -128,7 +128,7 @@ The [Require template check](/azure/devops/pipelines/process/approvals?view=azur
 Starting with this sprint, you can specify templates located in GitHub Enterprise Server repos.
 
 
-### Rerun Invoke Azure Function checks
+### Rerun invoke Azure function checks
 
 Picture a scenario that you deploy your system in multiple stages. Before deploying the second stage, there's an Approval and an Invoke Azure Function check that runs a sanity check on the already-deployed part of the system. 
 
