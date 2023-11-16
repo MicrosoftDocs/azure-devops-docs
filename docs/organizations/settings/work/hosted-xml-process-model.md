@@ -121,7 +121,7 @@ You can perform the following tasks with the Hosted XML process model.
 
 ## Add release deployment support to a work item type
 
-The release deployments control shows release information for only those work items that have been associated to a commit that is part of a build being released. To add the release deployments control to a work item type, you need to add the following syntax to a work item type XML definition. To learn more about this control, see [Link work items to deployments](../../../boards/work-items/work-item-deployments-control.md). 
+The release deployments control shows release information for only those work items that have been associated to a commit that is part of a build being released. To add the release deployments control to a work item type, you need to add the following syntax to a work item type XML definition. To learn more about this control, see [Link work items to deployments](../../../boards/backlogs/add-link.md#link-work-items-to-deployments.md). 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML

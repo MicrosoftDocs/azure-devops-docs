@@ -16,7 +16,7 @@ ms.date: 10/27/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and attach files to share information with your team. You can then list work items based on one or more of the following fields:
+You can [link work items to track related work and dependencies](../backlogs/add-link.md) and attach files to share information with your team. You can then list work items based on one or more of the following fields:
 
 ::: moniker range="azure-devops"  
 Attachment File Count | (Discussion) Comment Count | External Link count| Hyperlink Count| Link Comment| Related Link Count|Remote Link Count
@@ -295,7 +295,7 @@ The following table describes fields associated with links and attachments. Most
 ## Related articles
 
 - [Add a link to multiple work items](../backlogs/add-link.md) 
-- [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md) 
+- [Link work items to other objects](../backlogs/add-link.md) 
 - [Query quick reference](query-index-quick-ref.md)
 - [Query editor](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   

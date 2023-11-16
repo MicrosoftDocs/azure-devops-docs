@@ -18,8 +18,7 @@ ms.date: 11/15/2023
 
 Work item links are associations between two work items, or a work item and another object, that describe their relationship. You can use work item links to track dependencies and related work for traceability, share information, manage complex projects that involve multiple teams or products, track code changes, tests, and more.
 
-In this article learn how to do the following tasks:  
-
+::: moniker range=" azure-devops"
 > [!div class="checklist"]    
 >- [Link work items to various objects](#link-work-items-to-various-objects)
 >- [Link work items to other work items](#link-work-items-to-other-work-items)
@@ -39,57 +38,92 @@ In this article learn how to do the following tasks:
 >- [Query for linked work items](#query-for-linked-work-items) 
 >- [Use Azure CLI to add, remove, or show links](#use-azure-cli-to-add-remove-or-show-links)
 >- [Delete work item links](#delete-work-item-links)
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+In this article learn how to do the following tasks:  
+> [!div class="checklist"]    
+>- [Link work items to various objects](#link-work-items-to-various-objects)
+>- [Link work items to other work items](#link-work-items-to-other-work-items)
+>- [Link several work items](#link-several-work-items) 
+>- [Change the link type of an existing link](#change-the-link-type-of-an-existing-link)
+>- [Link work items to new work items](#link-work-items-to-new-work-items)
+>- [Link work items to pull requests](#link-work-items-to-pull-requests)
+>- [Link work items to GitHub objects](#link-work-items-to-github-objects)
+>- [Link several items to new Git branches](#link-several-work-items-to-new-git-branches)
+>- [Link work items to builds](#link-work-items-to-builds)
+>- [Link work items to deployments](#link-work-items-to-deployments)
+>- [Link work items to TFVC code development](#link-work-items-to-tfvc-code-development)
+>- [Link work items to tests](#link-work-items-to-tests)
+>- [Link work items to a Web site, network share, storyboard, or document](#link-work-items-to-a-web-site-network-share-storyboard-or-document) 
+>- [View dependencies and track related work](#view-dependencies-and-track-related-work)
+>- [Query for linked work items](#query-for-linked-work-items) 
+>- [Use Azure CLI to add, remove, or show links](#use-azure-cli-to-add-remove-or-show-links)
+>- [Delete work item links](#delete-work-item-links)
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+In this article learn how to do the following tasks:  
+> [!div class="checklist"]    
+>- [Link work items to various objects](#link-work-items-to-various-objects)
+>- [Link work items to other work items](#link-work-items-to-other-work-items)
+>- [Link several work items](#link-several-work-items) 
+>- [Change the link type of an existing link](#change-the-link-type-of-an-existing-link)
+>- [Link work items to new work items](#link-work-items-to-new-work-items)
+>- [Link work items to pull requests](#link-work-items-to-pull-requests)
+>- [Link work items to builds](#link-work-items-to-builds)
+>- [Link work items to deployments](#link-work-items-to-deployments)
+>- [Link work items to TFVC code development](#link-work-items-to-tfvc-code-development)
+>- [Link work items to tests](#link-work-items-to-tests)
+>- [Link work items to a Web site, network share, storyboard, or document](#link-work-items-to-a-web-site-network-share-storyboard-or-document) 
+>- [View dependencies and track related work](#view-dependencies-and-track-related-work)
+>- [Query for linked work items](#query-for-linked-work-items) 
+>- [Use Azure CLI to add, remove, or show links](#use-azure-cli-to-add-remove-or-show-links)
+>- [Delete work item links](#delete-work-item-links)
+::: moniker-end
 
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-
 |Prerequisite  |Description  |
 |---------|---------|
 |Project Administrator or Contributor member     | You must be [added to a project](../../organizations/security/add-users-team-project.md) as a member of the **Contributors** or **Project Administrators** security group.        |
 |Stakeholder access     | To add or modify work items, you must be granted [**Stakeholder** access or higher](../../organizations/security/stakeholder-access.md). Users with **Stakeholder** access for public projects have full access to backlog and board features, like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).       |
 |Contributor member or Allow perms on     | - To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).</br>- To configure the integration options for a Classic release pipeline, you must have permissions to edit the release.</br>- To link work items to commits and pull requests, you must have your **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission set.</br>- To view work items, you must have your **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item.           |
 |Defined iterations   |To use the **Planning** pane, your team administrator must [define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).         | 
-
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020 < azure-devops"
-
 |Prerequisite  |Description  |
 |---------|---------|
 |Project Administrator or Contributor member     | You must be [added to a project](../../organizations/security/add-users-team-project.md) as a member of the **Contributors** or **Project Administrators** security group.        |
 |Stakeholder access     | To add or modify work items, you must be granted [**Stakeholder** access or higher](../../organizations/security/stakeholder-access.md).        |
 |Contributor member or Allow perms on     | - To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).</br>- To configure the integration options for a Classic release pipeline, you must have permissions to edit the release.</br>- To link work items to commits and pull requests, you must have your **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission set.</br>- To view work items, you must have your **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item.           |
 |Defined iterations   |To use the **Planning** pane, your team administrator must [define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).         |
-
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
-
 |Prerequisite  |Description  |
 |---------|---------|
 |Project Administrator or Contributor member     | You must be [added to a project](../../organizations/security/add-users-team-project.md) as a member of the **Contributors** or **Project Administrators** security group.        |
 |Stakeholder access     | To add or modify work items, you must be granted [**Stakeholder** access or higher](../../organizations/security/stakeholder-access.md).        |
 |Contributor member or Allow perms on     | To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).         |
 |Defined iterations   |To use the **Planning** pane, your team administrator must [define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).         |
-
 ::: moniker-end 
 
-## What types of work item links are there?
+## What types of links are there?
 
-There are the following types of work item links that help you manage the various relationships between work items and other objects.
+The following types of links help you manage the various relationships between work items and other objects.
 
-- **Hyperlink**: Connects a work item to any URL or network share
-- **External link type**: Connects a work item to an external object, such as a code object, build, or wiki page
-- **Remote work link type**: Connects work items that are defined in different organizations
-- **GitHub link type**: Connects a work item to a GitHub repository commit, issue, or pull request.
-- **Work link type**: Links work items including select test case management work items. Use the following work link types:
-  -  **Duplicate**: Use when two work items capture the same information; close one of the work items and keep the other one active
-  -  **Parent/Child**: Use when you want to break down work items into smaller items&mdash;for example, break down features into stories, or stories into tasks
-  -  **Predecessor-Successor**: Use when you want to track tasks that must be completed before others can be started
-  -  **Related**: Use when the work items being linked are at the same level&mdash;such as two user stories that define features that overlap one another&mdash;or to link work items that are defined in different projects or managed by different teams.
+|Link type  |Column2  |
+|---------|---------|
+|**Hyperlink**    | Connects a work item to any URL or network share        |
+|**External link type**   |Connects a work item to an external object, such as a code object, build, or wiki page         |
+|**Remote work link type**   | Connects work items that are defined in different organizations        |
+|**GitHub link type**    | Connects a work item to a GitHub repository commit, issue, or pull request        |
+|**Work link type**    | Links work items including select test case management work items  |
 
-For more information, see the [Link type reference guide](../queries/link-type-reference.md).
+For more information about link types, including parent/child, related, predecessor-successor, and so on, see [Link type reference/Work link types](../queries/link-type-reference.md#work-link-types).
 
 ## Link work items to various objects
 
@@ -101,8 +135,8 @@ To link work items to various objects, do the following steps.
    - [Another work item ID or title](#link-work-items-to-other-work-items)
    - [A remote work item URL](#remote-work-items)
    - [An external Git pull request URL](#link-work-items-to-github-objects)
-   - [A build number or definition name](#link-work-items-to-builds-and-deployments)
-   - [A deployment stage name or environment name](#link-work-items-to-builds-and-deployments)
+   - [A build number or definition name](#link-work-items-to-builds)
+   - [A deployment stage name or environment name](#link-work-items-to-builds)
    - An artifact name or alias
    - [A web page or document URL](#link-work-items-to-a-web-site-network-share-storyboard-or-document)
 2. (Optional) Enter a comment to describe the link.
@@ -230,7 +264,7 @@ For more information, see [Link to work items from pull requests, commits, and c
 <a id="link-github" />
 
 ## Link work items to GitHub objects
-
+::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 When you connect Azure Boards with GitHub repositories, you can link work items to a **GitHub Commit**, **GitHub Issue**, and **GitHub Pull Request**. This way you can use GitHub for software development while you use Azure Boards to plan and track your work. 
 ::: moniker-end
@@ -238,11 +272,9 @@ When you connect Azure Boards with GitHub repositories, you can link work items 
 ::: moniker range="azure-devops-2019"
 When you connect Azure Boards with GitHub repositories, you can link work items to a **GitHub Commit** and **GitHub Pull Request**. This way you can use GitHub for software development while you use Azure Boards to plan and track your work.
 ::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019" 
 > [!IMPORTANT]  
 > You can only link work items to GitHub objects that have repositories connected to Azure Boards. For more information, see [Connect Azure Boards to GitHub](../github/connect-to-github.md), , and [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
-::: moniker-end
 
 For more information, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md) and [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
 
@@ -253,10 +285,10 @@ From a backlog or query results page, [multi-select the work items](bulk-modify-
 :::image type="content" source="media/add-link/link-git-branch.png" alt-text="Screenshot of backlog, context menu, choose Link multiple backlog items to a git branch.":::
 
 ## Link work items to builds
-
+::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 
-You can link work items to existing builds from the **Add link** dialog. These builds can be within your project or to other projects in your organization or collection. 
+Do the following steps to link work items to existing builds. These builds can be within your project or to other projects in your organization or collection. 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
@@ -272,7 +304,7 @@ You can link work items to existing builds from the **Add link** dialog. These b
 
 	If you don't know the build number&mdash;a combination of the pipeline and build name&mdash;you can search for it by choosing the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: icon. 
 
-	:::image type="content" source="../media/add-links/add-link-build.png" alt-text="Add link dialog with Build link type selected. ":::
+	:::image type="content" source="../../media/add-links/add-link-build.png" alt-text="Screenshot of Add link dialog with Build link type selected.":::
  
 3. From the **Link builds** dialog, choose the parameters to filter your search of builds. 
 
@@ -280,12 +312,12 @@ You can link work items to existing builds from the **Add link** dialog. These b
 
 	For example, you can specify a build number, select a build pipeline, a build result&mdash;such as, **All**, **succeeded**, **partially succeeded**, **failed**, or **canceled**.  Or, with **All** selected for **Result**, choose **Find** to list the available builds to link to. 
 
-	:::image type="content" source="../media/add-links/find-builds-dialog-filled-out.png" alt-text="Find builds dialog with project selected and builds listed. ":::
+	:::image type="content" source="../../media/add-links/find-builds-dialog-filled-out.png" alt-text="Screenshot of Find builds dialog with project selected and builds listed.":::
 
 4. Choose the build from the list you want to link to and then select **OK**. 
 5. From the **Add link** dialog, select **OK** to complete the operation.
 
-	:::image type="content" source="../media/add-links/add-link-build-filled-in.png" alt-text="Add link dialog with Build number filled in. ":::
+	:::image type="content" source="../../media/add-links/add-link-build-filled-in.png" alt-text="Screenshot of Add link dialog with Build number completed.":::
 
 ::: moniker-end
 
@@ -339,23 +371,31 @@ For more information, see [LinksControlOptions elements, Development links contr
 > - Use the [git-commit](https://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, apply this comment `#35 Catch null exception` to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35. 
 > - Use the **Development** control, to [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
-- 
+
+As shown in the following image, the Deployment control shows release information for two release stages those work items that have been linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.
+
+:::image type="content" source="../work-items/media/deployments-control/releases-stages-1.png" alt-text="Screenshot of multiple environments that the release is targeting.":::
+
 ### Deployment control
 
-Work item forms provide two controls to show and quickly go to development objects. The **Deployment** control is described in this article, and the **Development** control is described in [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
+Work item forms provide two controls to show and quickly go to development objects. The Deployment control is described in this article, and the Development control is described in [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
-With the **Deployment** control, you can determine at a glance whether a feature or user story is deployed and to what stage. Gain visual insight into the status of a work item as it gets deployed to different release environments and quick navigation to each release stage and run. The Deployment control displays the release information for two stages of the release pipeline that is integrated with Azure Boards. This control only shows the work items that are linked to a Git commit or pull request for this pipeline, as shown in the following image. 
-
-> [!NOTE]
-> The **Deployment** control requires configuration of a Classic release pipeline. It doesn't support linking to release stages defined for a YAML pipeline. 
+The Deployment control appears by default on the work item forms for User Story (Agile), Product Backlog Item (Scrum), Issue (Basic), Requirement (CMMI), Feature, Epic, Bug, Task, and Test Case work item types. It’s also automatically enabled for custom work item types that use the Inherited process. The Deployment control displays the release information for two stages of the release pipeline that's integrated with Azure Boards. This control only shows the work items that are linked to a Git commit or pull request for this pipeline. You can also gain visual insight into the status of a work item as it gets deployed to different release environments and quickly go to each release stage and run.
 
 :::image type="content" source="../work-items/media/deployments-control/deployment-control-intro.png" alt-text="Screenshot of Work item form, Deployment control.":::
 
-Work items associated with commits in the build show the status of the release. But, only work items within the same project get linked to where the release pipeline is defined. 
-  
-:::image type="content" source="../../organizations/notifications/media/types-of-work-item-links.png" alt-text="Conceptual image of Git and integrated link types.":::
- 
+Work items associated with commits in the build show the status of the release. But, only work items within the same project get linked to where the release pipeline is defined.
+
+:::image type="content" source="../work-items/media/deployments-control/release-settings-stages-1.png" alt-text="Screenshot showing multiple environments that the release is targeting.":::
+
+You can see the stages in real time when you open a work item.
+
+:::image type="content" source="../work-items/media/deployments-control/deployments-control-1.png" alt-text="Screenshot of Release Settings Stages.":::
+
 To populate the **Deployment** control, do the following steps: 
+
+> [!NOTE]
+> The **Deployment** control requires configuration of a Classic release pipeline. It doesn't support linking to release stages defined for a YAML pipeline. 
 
 1. Define a Classic release pipeline and set up the release stages as described in [Define your multi-stage continuous deployment (CD) pipeline](../../pipelines/release/define-multistage-release-process.md).  
 2. Configure the pipeline as described in [Configure pipelines to support work tracking, Report deployment status to Boards](../../pipelines/integrations/configure-pipelines-work-tracking.md#classic-report-boards).   
@@ -372,16 +412,6 @@ Other scenarios that aren't supported at this time:
 -  Work items linked to a Git pull request which are stored in a different project aren't linked to the release runs. 
 - Manual versus scheduled triggers
 --> 
-
-By default, the Deployment control appears on the work item forms for User Story (Agile), Product Backlog Item (Scrum), Issue (Basic), Requirement (CMMI), Feature, Epic, Bug, Task, and Test Case work item types. The Deployment control is automatically enabled for custom work item types using the Inherited process.
-
-You can see the status of the releases for the work items that are linked to commits in the build and the release pipelines that report deployment information to Azure Boards by using the work item deployment control. The following example shows multiple environments that the release is targeting which the selected work item is associated with. 
-
-:::image type="content" source="../work-items/media/deployments-control/release-settings-stages-1.png" alt-text="Screenshot showing multiple environments that the release is targeting.":::
-
-You can see the stages in real time when you open a work item.
-
-:::image type="content" source="../work-items/media/deployments-control/deployments-control-1.png" alt-text="Screenshot of Release Settings Stages.":::
 
 ## Link work items to TFVC code development  
 

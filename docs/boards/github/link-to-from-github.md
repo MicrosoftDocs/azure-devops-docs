@@ -135,7 +135,7 @@ With GitHub annotations enabled on the Kanban board, you can quickly open linked
 - [Change GitHub repository access](install-github-app.md#change-repository-access)
 - [Azure Boards-GitHub integration](index.md)
 - [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md)
-- [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
+- [Link work items to objects](../backlogs/add-link.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 
 

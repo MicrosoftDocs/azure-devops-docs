@@ -175,9 +175,6 @@ To link a work item to an existing object, choose the ![Add link](../media/icons
 
 ![Select Add links icon and then choose the link type.](media/add-work-items-link-to-existing-branch.png)
 
-[Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md).   
-
-
 ### Remove a link 
 
 If you want to remove a link, you can do so from the **Development** section by highlighting it first and then choose **Remove link** :::image type="icon" source="../media/icons/delete_icon.png" border="false":::.  

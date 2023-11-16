@@ -338,7 +338,7 @@ Filter your first-tier list of work items by choosing one of these options:
  
 * * *
 
-For more information about each link type, see [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md).
+For more information about each link type, see [Link type reference](../backlogs/add-link.md.md).
 
 ## Use and/or logical expression
 

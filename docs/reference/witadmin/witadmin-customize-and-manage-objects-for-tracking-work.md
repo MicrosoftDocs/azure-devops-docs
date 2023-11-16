@@ -256,7 +256,7 @@ Categories associate one or more work item types as belonging to the same catego
 
 ## [Link types](/previous-versions/azure/devops/reference/witadmin/manage-link-types)
 
-You use different link types to manage the various relationships between work items. For On-premises XML and Hosted XML process models, you can define custom link types. To learn more about default link types, see [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md) and [Reference guide for link types](../../boards/queries/link-type-reference.md).  
+Use different link types to manage the various relationships between work items. For On-premises XML and Hosted XML process models, you can define custom link types. For more information, see [Link work items to other objects](../../boards/backlogs/add-link.md) and [Reference guide for link types](../../boards/queries/link-type-reference.md).  
 
 ---
 :::row:::

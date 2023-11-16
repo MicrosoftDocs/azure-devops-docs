@@ -86,7 +86,7 @@ The only required field for all work item types is **Title**. When you save a wo
 :::row-end:::
 :::row:::
    :::column span="1":::
-   ![Links tab icon](../backlogs/media/icon-links-tab-wi.png) [(Links)](../queries/link-work-items-support-traceability.md)
+   ![Links tab icon](../backlogs/media/icon-links-tab-wi.png) [(Links)](../backlogs/add-link.md)
    :::column-end:::
    :::column span="3":::
    Add all types of links, such as hyperlinks, changesets, source files, and so on.
