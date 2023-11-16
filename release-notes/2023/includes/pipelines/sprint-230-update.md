@@ -7,22 +7,22 @@ ms.topic: include
 
 ### Azure Pipelines tasks use Node 16
 
-Pipeline tasks use a runner to execute. Most Pipeline tasks use Node as a runner. Azure Pipelines task that use NodeJS as a runner now all use Node 16. As Node 16 is the first runner to support Apple silicon, this also provides full task support for macOS on Apple silicon.
+Pipeline tasks use a runner to execute, in most cases Node is used as the runner. Azure Pipelines tasks that use Node as a runner now all use Node 16. As Node 16 is the first Node version to natively support Apple silicon, this also completes full task support for macOS on Apple silicon. Agents running on Apple silicon do not need Rosetta to run.
 
-As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/blog/announcements/nodejs16-eol), we're currently adding the ability to run tasks with Node 20.
+As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/blog/announcements/nodejs16-eol), we have started the work to run tasks with Node 20.
 
 ### Warning messages will be displayed for deprecated Pipeline tasks
 
-Azure Pipelines has many tasks that have been deprecated. Deprecated tasks will be retired early 2024. To help you identify pipelines that are using deprecated tasks, pipeline shows warnings if such a task is used. We updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date. The Task reference also includes alternatives (for example, a newer major version) to the task.
+Azure Pipelines has many tasks that have been deprecated. Deprecated tasks will be retired early 2024. To help you identify pipelines that are using deprecated tasks, pipelines will show warnings if such a task is used. We updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date.
 
-The following tasks have been deprecated for several years and will emit warnings:  
+The following tasks have been deprecated for several years and will start emitting warnings:  
 `AppCenterDistributeV1`, `AppCenterDistributeV2`, `AzureMonitorV0`, `ChefKnifeV1`, `ChefV1`, `CondaEnvironmentV1`, `DeployVisualStudioTestAgentV2`, `DotNetCoreInstallerV1`, `DownloadPackageV0`, `DownloadPipelineArtifactV0`, `DownloadPipelineArtifactV1`, `IISWebAppDeployment`, `NuGetAuthenticateV0`, `NuGetInstallerV0`, `NuGetPackagerV0`,` NuGetPublisherV0`, `NuGetRestoreV1`, `NuGetV0`, `PublishPipelineArtifactV0`, `QuickPerfTestV1`, `RunJMeterLoadTestV1`, `RunLoadTestV1, SqlServerDacpacDeployment`,`XamarinTestCloudV1`.
 
-Update pipelines using to use an alternative or newer task version.
+Please update your pipelines to use a newer task version or an alternative.
 
-### The AzureRmWebAppDeploymentV4 task supports Microsoft Entra ID authentication
+### The AzureRmWebAppDeployment task supports Microsoft Entra ID authentication
 
-The AzureRmWebAppDeploymentV3 and AzureRmWebAppDeploymentV4 tasks are updated to support the [App Service setting for basic authentication](/azure/app-service/configure-basic-auth-disable?tabs=portal&preserve-view=true). If basic authentication is disabled on the App Service, the AzureRmWebAppDeploymentV3/4 tasks use Microsoft Entra ID authentication to perform deployments to the App Service Kudu endpoint. This requires a recent version of msdeploy.exe installed on the agent, which is the case on the windows-2022/windows-latest [Hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true).
+The AzureRmWebAppDeploymentV3 and [AzureRmWebAppDeploymentV4](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4?view=azure-pipelines) tasks have been updated to support App Service with [basic authentication disabled](https://learn.microsoft.com/azure/app-service/configure-basic-auth-disable?tabs=portal&preserve-view=true). If basic authentication is disabled on the App Service, the AzureRmWebAppDeploymentV3/4 tasks use Microsoft Entra ID authentication to perform deployments to the App Service Kudu endpoint. This requires a recent version of msdeploy.exe installed on the agent, which is the case on the windows-2022/windows-latest [Hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true) (see [task reference](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4?view=azure-pipelines#i-cant-web-deploy-to-my-azure-app-service-using-microsoft-entra-id-authentication-from-my-windows-agent)).
 
 
 ### Improvements to Approvals REST API
