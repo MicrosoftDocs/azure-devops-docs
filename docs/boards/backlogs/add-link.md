@@ -159,7 +159,7 @@ Do the following steps to add a link to another user story, epic, feature, bug, 
 5.	In the Work item field, enter the ID of the work item you want to link to, then select **OK**.
    In the following example, we use the **Related** link type to link three items to the bug with ID of *400*. 
 ::: moniker range="azure-devops"
-     :::image type="content" source="media/add-link/add-link-dialog-s136.png" alt-text="Screenshot of Add link dialog, web portal, to an existing work item.":::
+   :::image type="content" source="media/add-link/add-link-dialog-s136.png" alt-text="Screenshot of Add link dialog, web portal, to an existing work item.":::
    
    You can only add links one at a time. You can't enter their IDs separated by commas or spaces.
 ::: moniker-end
