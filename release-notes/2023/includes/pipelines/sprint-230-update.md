@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 11/15/2023
+ms.date: 11/16/2023
 ms.topic: include
 ---
 
@@ -18,11 +18,11 @@ Azure Pipelines has many tasks that have been deprecated. Deprecated tasks will 
 The following tasks have been deprecated for several years and will start emitting warnings:  
 `AppCenterDistributeV1`, `AppCenterDistributeV2`, `AzureMonitorV0`, `ChefKnifeV1`, `ChefV1`, `CondaEnvironmentV1`, `DeployVisualStudioTestAgentV2`, `DotNetCoreInstallerV1`, `DownloadPackageV0`, `IISWebAppDeployment`, `NuGetAuthenticateV0`, `NuGetInstallerV0`, `NuGetPackagerV0`,` NuGetPublisherV0`, `NuGetRestoreV1`, `NuGetV0`, `QuickPerfTestV1`, `RunJMeterLoadTestV1`, `RunLoadTestV1, SqlServerDacpacDeploymentV1`,`XamarinTestCloudV1`.
 
-Please update your pipelines to use a newer task version or an alternative.
+Update your pipelines to use a newer task version or an alternative.
 
 ### The AzureRmWebAppDeployment task supports Microsoft Entra ID authentication
 
-The AzureRmWebAppDeploymentV3 and [AzureRmWebAppDeploymentV4](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4?view=azure-pipelines) tasks have been updated to support App Service with [basic authentication disabled](https://learn.microsoft.com/azure/app-service/configure-basic-auth-disable?tabs=portal&preserve-view=true). If basic authentication is disabled on the App Service, the AzureRmWebAppDeploymentV3/4 tasks use Microsoft Entra ID authentication to perform deployments to the App Service Kudu endpoint. This requires a recent version of msdeploy.exe installed on the agent, which is the case on the windows-2022/windows-latest [Hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true) (see [task reference](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4?view=azure-pipelines#i-cant-web-deploy-to-my-azure-app-service-using-microsoft-entra-id-authentication-from-my-windows-agent)).
+The AzureRmWebAppDeploymentV3 and [AzureRmWebAppDeploymentV4](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4?view=azure-pipelines&preserve-view=true) tasks have been updated to support App Service with [basic authentication disabled](/azure/app-service/configure-basic-auth-disable?tabs=portal&preserve-view=true). If basic authentication is disabled on the App Service, the AzureRmWebAppDeploymentV3/4 tasks use Microsoft Entra ID authentication to perform deployments to the App Service Kudu endpoint. This requires a recent version of msdeploy.exe installed on the agent, which is the case on the windows-2022/windows-latest [Hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true) (see [task reference](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4?view=azure-pipelines#i-cant-web-deploy-to-my-azure-app-service-using-microsoft-entra-id-authentication-from-my-windows-agent&preserve-view=true)).
 
 
 ### Improvements to Approvals REST API
@@ -109,7 +109,7 @@ Bypass Business Hours check.
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Bypass Invoke Azure Function check.](../../media/230-pipelines-03.png " Screenshot of Bypass Invoke Azure Function check.")
 
-When a check is bypassed, you can see this in the checks panel.
+When a check is bypassed, you can see it in the checks panel.
 > [!div class="mx-imgBorder"]
 > ![Screenshot of check bypassed.](../../media/230-pipelines-04.png " Screenshot of check bypassed.")
 

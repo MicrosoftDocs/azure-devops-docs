@@ -2,7 +2,7 @@
 title:  Bypass approvals and checks to complete your hotfix.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 11/15/2023
+ms.date: 11/16/2023
 description: Bypass approvals and checks to complete your hotfix.
 ---
 # Bypass approvals and checks to complete your hotfix.
