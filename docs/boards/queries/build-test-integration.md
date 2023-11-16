@@ -509,5 +509,5 @@ For more information about Actions, see [Automate field assignments based on Sta
 
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 
-- [Link work items to other objects](../backlogs/add-link.md.md)  
+- [Link work items to other objects](../backlogs/add-link.md)  
 - [Link and attachment queries](linking-attachments.md)

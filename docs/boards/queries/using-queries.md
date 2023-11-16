@@ -338,7 +338,7 @@ Filter your first-tier list of work items by choosing one of these options:
  
 * * *
 
-For more information about each link type, see [Link type reference](../backlogs/add-link.md.md).
+For more information about each link type, see [Link type reference](../backlogs/add-link.md).
 
 ## Use and/or logical expression
 
