@@ -13,7 +13,7 @@ As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/b
 
 ### Warning messages will be displayed for deprecated Pipeline tasks
 
-Azure Pipelines has many tasks that have been deprecated. Deprecated tasks will be retired early 2024. To help you identify pipelines that are using deprecated tasks, pipeline shows warnings if such a task is used. We have updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date. The Task reference also includes alternatives (for example, a newer major version) to the task.
+Azure Pipelines has many tasks that have been deprecated. Deprecated tasks will be retired early 2024. To help you identify pipelines that are using deprecated tasks, pipeline shows warnings if such a task is used. We updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date. The Task reference also includes alternatives (for example, a newer major version) to the task.
 
 The following tasks have been deprecated for several years and will emit warnings:  
 `AppCenterDistributeV1`, `AppCenterDistributeV2`, `AzureMonitorV0`, `ChefKnifeV1`, `ChefV1`, `CondaEnvironmentV1`, `DeployVisualStudioTestAgentV2`, `DotNetCoreInstallerV1`, `DownloadPackageV0`, `DownloadPipelineArtifactV0`, `DownloadPipelineArtifactV1`, `IISWebAppDeployment`, `NuGetAuthenticateV0`, `NuGetInstallerV0`, `NuGetPackagerV0`,` NuGetPublisherV0`, `NuGetRestoreV1`, `NuGetV0`, `PublishPipelineArtifactV0`, `QuickPerfTestV1`, `RunJMeterLoadTestV1`, `RunLoadTestV1, SqlServerDacpacDeployment`,`XamarinTestCloudV1`.
@@ -92,7 +92,7 @@ Say you added the following checks on the service connection: an Approval, a Bus
 
 Now, imagine you have to do a hotfix deployment. You start a pipeline run, but it doesn't proceed,it waits for most of the checks to complete. You cannot afford to wait for the approvals and checks to complete.
 
-In this sprint we've made it possible to bypass running approvals and checks, so you can completed your hotfix. 
+In this sprint we've made it possible to bypass running approvals and checks, so you can complete your hotfix. 
 
 You can bypass running Approvals, Business Hours, Invoke Azure Function, and Invoke REST API checks.
 
@@ -131,9 +131,9 @@ Starting with this sprint, you can specify templates located in GitHub Enterpris
 
 Picture a scenario that you deploy your system in multiple stages. Before deploying the second stage, there's an Approval and an Invoke Azure Function check that runs a sanity check on the already-deployed part of the system. 
 
-When reviewing the Approval request, you notice the sanity check ran two days earlier. In this scenario you may be aware of another deployment that affected the result of the sanity check.
+When reviewing the Approval request, you notice the sanity check ran two days earlier. In this scenario, you may be aware of another deployment that affected the result of the sanity check.
 
-With this sprint, you can rerun Invoke Azure Function and Invoke REST API checks. This functionality is available only for checks that have succeeded and have no retries.
+With this sprint, you can rerun Invoke Azure Function and Invoke REST API checks. This functionality is available only for checks that succeeded and have no retries.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of dynamic check.](../../media/230-pipelines-05.png " Screenshot of dynamic check.")
