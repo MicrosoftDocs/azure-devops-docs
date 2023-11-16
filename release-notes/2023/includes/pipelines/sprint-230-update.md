@@ -13,10 +13,10 @@ As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/b
 
 ### Warning messages will be displayed for deprecated Pipeline tasks
 
-Azure Pipelines has many tasks that have been deprecated. Deprecated tasks will be retired early 2024. To help you identify pipelines that are using deprecated tasks, pipelines will show warnings if such a task is used. We updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date.
+Azure Pipelines has many tasks that have been deprecated. Deprecated tasks will be retired January 31st 2024. To help customers identify pipelines that are using deprecated tasks, pipelines will show warnings if such a task is used. We updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date.
 
 The following tasks have been deprecated for several years and will start emitting warnings:  
-`AppCenterDistributeV1`, `AppCenterDistributeV2`, `AzureMonitorV0`, `ChefKnifeV1`, `ChefV1`, `CondaEnvironmentV1`, `DeployVisualStudioTestAgentV2`, `DotNetCoreInstallerV1`, `DownloadPackageV0`, `IISWebAppDeployment`, `NuGetAuthenticateV0`, `NuGetInstallerV0`, `NuGetPackagerV0`,` NuGetPublisherV0`, `NuGetRestoreV1`, `NuGetV0`, `QuickPerfTestV1`, `RunJMeterLoadTestV1`, `RunLoadTestV1, SqlServerDacpacDeploymentV1`,`XamarinTestCloudV1`.
+`AppCenterDistributeV1`, `AppCenterDistributeV2`, `AzureMonitorV0`, `ChefKnifeV1`, `ChefV1`, `CondaEnvironmentV1`, `DeployVisualStudioTestAgentV2`, `DotNetCoreInstallerV1`, `DownloadPackageV0`, `IISWebAppDeployment`, `QuickPerfTestV1`, `RunJMeterLoadTestV1`, `RunLoadTestV1, SqlServerDacpacDeploymentV1`,`XamarinTestCloudV1`.
 
 Update your pipelines to use a newer task version or an alternative.
 
