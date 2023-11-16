@@ -247,7 +247,7 @@ The **Deployment**, **Development** and **Related Work** controls are special co
 :::row-end:::
 
 
-The **Deployment** control provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. For more information, see [Link work items to deployments](add-link.md#link-work-items-to-deployments).
+The **Deployment** control provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. For more information, see [Link work items to deployments](../backlogs/add-link.md#link-work-items-to-deployments).
 
 ::: moniker-end
 
