@@ -13,7 +13,7 @@ As the Node 16 end-of-life date has [moved forward](https://nodejs.org/en/blog/a
 
 ### Announcing retirement of deprecated tasks
 
-Azure Pipelines has a number of tasks that have been deprecated. Deprecated tasks will be retired January 31st 2024. To help customers identify pipelines that are using deprecated tasks, pipelines will show warnings if such a task is used. We updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date.
+Azure Pipelines has many that have been deprecated. Deprecated tasks will be retired January 31, 2024. To help customers identify pipelines that are using deprecated tasks, pipelines will show warnings if such a task is used. We updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date.
 
 The following tasks have been deprecated and will start emitting warnings:  
 * AppCenterDistributeV1, 
@@ -31,7 +31,7 @@ The following tasks have been deprecated and will start emitting warnings:
 * SqlServerDacpacDeploymentV1 
 * XamarinTestCloudV1
 
-Please update your pipelines to use a newer task version or an alternative before January 31st 2024.
+Update your pipelines to use a newer task version or an alternative before January 31, 2024.
 
 ### AzureRmWebAppDeployment task supports Microsoft Entra ID authentication
 
@@ -105,7 +105,7 @@ Say you added the following checks on the service connection: an Approval, a Bus
 
 Now, imagine you have to do a hotfix deployment. You start a pipeline run, but it doesn't proceed,it waits for most of the checks to complete. You cannot afford to wait for the approvals and checks to complete.
 
-With this sprint it is now possible to bypass running approvals and checks, so you can complete your hotfix. 
+In this sprint we've made it possible to bypass running approvals and checks, so you can complete your hotfix. 
 
 You can bypass running Approvals, Business Hours, Invoke Azure Function, and Invoke REST API checks.
 
