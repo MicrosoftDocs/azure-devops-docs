@@ -7,9 +7,9 @@ ms.topic: include
 
 ### Azure Pipelines tasks use Node 16
 
-Pipeline tasks use a runner to execute, in most cases Node is used as the runner. Azure Pipelines tasks that use Node as a runner now all use Node 16. As Node 16 is the first Node version to natively support Apple silicon, this also completes full task support for macOS on Apple silicon. Agents running on Apple silicon do not need Rosetta to run.
+Pipeline tasks use a runner to execute, in most cases Node.js is used as the runner. Azure Pipelines tasks that use Node as a runner now all use Node 16. As Node 16 is the first Node version to natively support Apple silicon, this also completes full task support for macOS on Apple silicon. Agents running on Apple silicon do not need Rosetta to run.
 
-As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/blog/announcements/nodejs16-eol), we have started the work to run tasks with Node 20.
+As the Node 16 end-of-life date has [moved forward](https://nodejs.org/en/blog/announcements/nodejs16-eol), we have started the work to run tasks with Node 20.
 
 ### Announcing retirement of deprecated tasks
 
@@ -31,7 +31,7 @@ The following tasks have been deprecated and will start emitting warnings:
 * SqlServerDacpacDeploymentV1 
 * XamarinTestCloudV1
 
-Please update your pipelines to use a newer task version or an alternative.
+Please update your pipelines to use a newer task version or an alternative before January 31st 2024.
 
 ### AzureRmWebAppDeployment task supports Microsoft Entra ID authentication
 
@@ -105,7 +105,7 @@ Say you added the following checks on the service connection: an Approval, a Bus
 
 Now, imagine you have to do a hotfix deployment. You start a pipeline run, but it doesn't proceed,it waits for most of the checks to complete. You cannot afford to wait for the approvals and checks to complete.
 
-In this sprint we've made it possible to bypass running approvals and checks, so you can complete your hotfix. 
+With this sprint it is now possible to bypass running approvals and checks, so you can complete your hotfix. 
 
 You can bypass running Approvals, Business Hours, Invoke Azure Function, and Invoke REST API checks.
 
