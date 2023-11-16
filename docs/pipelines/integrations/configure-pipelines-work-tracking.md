@@ -271,7 +271,7 @@ By enabling automatic linking, you can track the builds that have incorporated w
 
 ::: moniker range=">= azure-devops-2020"
 
-1. Open **Pipeline settings** as describe in [Open Pipeline settings](#yaml-open-settings).
+1. Open **Pipeline settings** as described in [Open Pipeline settings](#yaml-open-settings).
 
 1. Enable **Automatically link new work in this build**.  
 
@@ -384,7 +384,7 @@ If a build pipeline fails, you can automatically create a work item to track get
 
 3.	Save your pipeline.
 
-To learn the reference name for a field, look it up from the [Work item field index](../../boards/work-items/guidance/work-item-field.md). For custom fields you add through an inherited process, Azure DevOps assigns a reference name based on friendly field name prefixed with *Custom.*. For example, you add a field named **DevOps Triage**, the reference name is Custom.DevOpsTriage. No spaces are allowed within the reference name.
+To learn the reference name for a field, look it up from the [Work item field index](../../boards/work-items/guidance/work-item-field.md). For custom fields you add through an inherited process, Azure DevOps assigns a reference name based on friendly field name prefixed with *Custom.* For example, you add a field named **DevOps Triage**, the reference name is Custom.DevOpsTriage. No spaces are allowed within the reference name.
  
 <a id="enable-status-badge" /> 
 

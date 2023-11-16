@@ -130,7 +130,7 @@ The release deployments control shows release information for only those work it
 </Group>
 ```
 
-This syntax has been been added to the following work item type definitions of the default process templates.
+This syntax is added to the following work item type definitions of the default process templates.
 
 > [!div class="mx-tdBreakAll"]  
 > |Agile|Basic|Scrum|CMMI |  

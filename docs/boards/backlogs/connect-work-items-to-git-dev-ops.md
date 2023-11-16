@@ -97,7 +97,7 @@ Consider creating a new branch when there are no linked code artifacts. If a bra
 
 	:::image type="content" source="media/git/actions-menu-new-branch-option.png" alt-text="User story work item form, Action menu, add new branch."::: 
 
-	Name the branch and select the the repository.   
+	Name the branch and select the repository.   
 
 	<img src="media/git/git-dev-create-branch.png" alt="Create a branch dialog box" />  
 
