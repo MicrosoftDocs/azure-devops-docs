@@ -459,7 +459,7 @@ The **Development** control supports linking to and displaying links made to bui
 
 ### Link work items to releases   
 
-The **Deployment** control supports links to and display of releases that contain the work items. For example, the following image shows several releases that contain links to the current work item. You can expand each release to see details about each stage. You can choose the link for each release and stage to open the corresponding release or stage. For more information, see [Link work items to deployments](../work-items/work-item-deployments-control.md).  
+The **Deployment** control supports links to and display of releases that contain the work items. For example, the following image shows several releases that contain links to the current work item. You can expand each release to see details about each stage. You can choose the link for each release and stage to open the corresponding release or stage. For more information, see [Link work items to deployments](../backlogs/add-link.md#link-work-items-to-deployments).  
 > [!div class="mx-imgBorder"]  
 > ![Deployment control on work item form with sample releases.](media/manage-bugs/deployment-section-with-releases.png)  
 

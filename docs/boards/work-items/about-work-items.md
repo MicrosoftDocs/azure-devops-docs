@@ -247,7 +247,7 @@ The **Deployment**, **Development** and **Related Work** controls are special co
 :::row-end:::
 
 
-The **Deployment** control provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. For more information, see [Link work items to builds and deployments](work-item-deployments-control.md).
+The **Deployment** control provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. For more information, see [Link work items to deployments](add-link.md#link-work-items-to-deployments.md).
 
 ::: moniker-end
 
@@ -300,13 +300,11 @@ From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" bord
 
 :::image type="content" source="media/about-work-items/links-tab.png" alt-text="Screenshot of Work item form, Links tab.":::
 
-To learn more about linking, see the following articles: 
+For more information, see the following articles: 
 
--  [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md)
--  [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md) 
+-  [Link work items to other objects](../backlogs/add-link.md)
 -  [Link type reference](../queries/link-type-reference.md)
  
-
 ### Attachments: Attach files to a work item
 
 From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Attachments** tab, you can add, remove, or view files or images added to the work item. You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. For more information, see [Share information within work items and social tools](../queries/share-plans.md). 
