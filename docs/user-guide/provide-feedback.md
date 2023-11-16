@@ -20,13 +20,12 @@ Share your feedback and ideas with us, or join our communities. We're always wor
 
 |Action |More info  |
 |---------|---------|
+|Find out what's new in Azure DevOps   | Check out the [current Azure DevOps Release Notes](/azure/devops/server/release-notes/azuredevops2020). These notes are updated every three weeks. |
+|Chat with our **support Virtual Agent**   | Get help with common issues, troubleshooting steps, or create a request to change the region your Azure DevOps instance is hosted in using our [Virtual Agent](https://go.microsoft.com/fwlink/?linkid=2160944).        |
 |Get advice  | Visit StackOverflow for [Azure DevOps Services](https://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](https://stackoverflow.com/questions/tagged/tfs).        |
 |Report a bug   | Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [Azure DevOps Server](https://developercommunity.visualstudio.com/spaces/22/index.html).        |
 |Suggest a feature or fix    | Submit your idea or issue through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [Azure DevOps Server](https://developercommunity.visualstudio.com/content/idea/post.html?space=22).        |
-| Contact Support     |  You can contact Support by creating a support ticket. To create a support ticket, visit the [Microsoft Azure Support Ticket page](https://azure.microsoft.com/support/create-ticket/) and follow the instructions to create and manage support requests for Azure DevOps Services.                      |
-| Find out what's new in Azure DevOps   | Check out the [current Azure DevOps Release Notes](/azure/devops/server/release-notes/azuredevops2020). These notes are updated every three weeks.
-        |
-|Chat with our virtual support agent    | Get help with common issues, troubleshooting steps, or create a request to change the region your Azure DevOps instance is hosted in using our [virtual support agent](https://go.microsoft.com/fwlink/?linkid=2160944).        |
+| Contact Support     | Contact Support by creating a support ticket. To create a support ticket, visit the [Microsoft Azure Support Ticket page](https://azure.microsoft.com/support/create-ticket/) and follow the instructions to create and manage support requests for Azure DevOps Services.                      |
 
 ## Documentation feedback
 
