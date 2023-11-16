@@ -166,7 +166,7 @@ Often, organizations look at adding a project for each software development proj
 
 We recommend that you add teams to scale your tools rather than add projects for the following reasons:  
 - **Visibility:**  It's easier to view progress across all teams  
-- **Tracking and auditing:**  It's easier to [link work items and other objects](../queries/link-work-items-support-traceability.md) for tracking and auditing purposes
+- **Tracking and auditing:**  It's easier to [link work items to other objects](../backlogs/add-link.md) for tracking and auditing purposes
 - **Maintainability:**  You minimize the maintenance of security groups and process updates.  
 
 For more information, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).

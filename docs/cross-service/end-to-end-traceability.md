@@ -22,7 +22,7 @@ This article gives you an overview of how Azure DevOps enables and supports trac
 
 ## Traceability and linking 
 
-You can track the code changes, builds, and releases that are [related to a work item](../boards/work-items/work-item-deployments-control.md) throughout the development lifecycle. This way, your team can see the audit trail of how the work was done or how a bug was fixed by looking at the changes in the code base.
+You can track the code changes, builds, and releases that are [linked to a work item](../boards/backlogs/add-link.md#link-work-items-to-builds.md) throughout the development lifecycle. This way, your team can see the audit trail of how the work was done or how a bug was fixed by looking at the changes in the code base.
 
 The link types used for Git repositories&mdash;as illustrated in the following image&mdash;are *Build*, *Found in build*, *Integrated in build*, *Branch*, *Commit*, *Pull Request*, and *Integrated in release stage*.
 
@@ -114,8 +114,7 @@ For information about Test Analytics for builds and releases, tracking the quali
 ## Related articles 
 
 - [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-- [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
-- [Linking, traceability, and managing dependencies](../boards/queries/link-work-items-support-traceability.md)
+- [Link work items to other objects](../boards/backlogs/add-link.md)
 - [Associate automated tests with test cases](../test/associate-automated-test-with-test-case.md)  
 - [Requirements traceability](../pipelines/test/requirements-traceability.md)
 - [Requirements tracking sample report](../report/powerbi/sample-stories-overview.md) 
