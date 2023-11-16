@@ -16,13 +16,26 @@ As the Node 16 end-of-life date has been [moved forward](https://nodejs.org/en/b
 Azure Pipelines has a number of tasks that have been deprecated. Deprecated tasks will be retired January 31st 2024. To help customers identify pipelines that are using deprecated tasks, pipelines will show warnings if such a task is used. We updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date.
 
 The following tasks have been deprecated and will start emitting warnings:  
-`AppCenterDistributeV1`, `AppCenterDistributeV2`, `AzureMonitorV0`, `ChefKnifeV1`, `ChefV1`, `CondaEnvironmentV1`, `DeployVisualStudioTestAgentV2`, `DotNetCoreInstallerV1`, `IISWebAppDeployment`, `QuickPerfTestV1`, `RunJMeterLoadTestV1`, `RunLoadTestV1, SqlServerDacpacDeploymentV1`,`XamarinTestCloudV1`.
+* AppCenterDistributeV1, 
+* AppCenterDistributeV2 
+* AzureMonitorV0 
+* ChefKnifeV1 
+* ChefV1 
+* CondaEnvironmentV1
+* DeployVisualStudioTestAgentV2 
+* DotNetCoreInstallerV1 
+* IISWebAppDeployment 
+* QuickPerfTestV1 
+* RunJMeterLoadTestV1 
+* RunLoadTestV1 
+* SqlServerDacpacDeploymentV1 
+* XamarinTestCloudV1
 
 Please update your pipelines to use a newer task version or an alternative.
 
-### The AzureRmWebAppDeployment task supports Microsoft Entra ID authentication
+### AzureRmWebAppDeployment task supports Microsoft Entra ID authentication
 
-The AzureRmWebAppDeploymentV3 and [AzureRmWebAppDeploymentV4](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4?view=azure-pipelines&preserve-view=true) tasks have been updated to support App Service with [basic authentication disabled](/azure/app-service/configure-basic-auth-disable?tabs=portal&preserve-view=true). If basic authentication is disabled on the App Service, the AzureRmWebAppDeploymentV3/4 tasks use Microsoft Entra ID authentication to perform deployments to the App Service Kudu endpoint. This requires a recent version of msdeploy.exe installed on the agent, which is the case on the windows-2022/windows-latest [Hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true) (see [task reference](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4?view=azure-pipelines#i-cant-web-deploy-to-my-azure-app-service-using-microsoft-entra-id-authentication-from-my-windows-agent&preserve-view=true)).
+The AzureRmWebAppDeploymentV3 and [AzureRmWebAppDeployment@4](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4?view=azure-pipelines&preserve-view=true) tasks have been updated to support App Service with [basic authentication disabled](/azure/app-service/configure-basic-auth-disable?tabs=portal&preserve-view=true). If basic authentication is disabled on the App Service, the AzureRmWebAppDeploymentV3/4 tasks use Microsoft Entra ID authentication to perform deployments to the App Service Kudu endpoint. This requires a recent version of msdeploy.exe installed on the agent, which is the case on the windows-2022/windows-latest [Hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true) (see [task reference](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4?view=azure-pipelines#i-cant-web-deploy-to-my-azure-app-service-using-microsoft-entra-id-authentication-from-my-windows-agent&preserve-view=true)).
 
 
 ### Improvements to Approvals REST API
@@ -121,21 +134,21 @@ You can bypass a check only if you're an Administrator of the resource on which 
 
 The [Require template check](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#required-template&preserve-view=true) enables you to enforce that a pipeline extends from a set of approved templates before accessing a protected resource, such as an agent pool or service connection.
 
+Starting with this sprint, you can specify templates located in GitHub Enterprise Server repos.
+
 > [!div class="mx-imgBorder"]
 > ![Screenshot of required YAML template.](../../media/230-pipelines-06.png " Screenshot of required YAML template.")
 
-Starting with this sprint, you can specify templates located in GitHub Enterprise Server repos.
-
-
 ### Rerun invoke Azure function checks
 
-Picture a scenario that you deploy your system in multiple stages. Before deploying the second stage, there's an Approval and an Invoke Azure Function check that runs a sanity check on the already-deployed part of the system. 
+Imagine that you deploy your system in multiple stages. Before deploying the second stage, there's an Approval and an Invoke Azure Function check that runs a sanity check on the already-deployed part of the system. 
 
 When reviewing the Approval request, you notice the sanity check ran two days earlier. In this scenario, you may be aware of another deployment that affected the result of the sanity check.
 
-With this sprint, you can rerun Invoke Azure Function and Invoke REST API checks. This functionality is available only for checks that succeeded and have no retries.
+With this update, you can rerun Invoke Azure Function and Invoke REST API checks. This functionality is available only for checks that succeeded and have no retries.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of dynamic check.](../../media/230-pipelines-05.png " Screenshot of dynamic check.")
 
-You can rerun a check only if you are an Administrator of the resource on which the checks were defined.
+> [!NOTE]
+> You can rerun a check only if you are an Administrator of the resource on which the checks were defined.

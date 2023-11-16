@@ -14,6 +14,6 @@ Today, we're launching a private preview featuring several enhancements to the A
 > [!div class="mx-imgBorder"]
 > ![Screenshots of Team Settings.](../../media/230-boards-01.png "Screenshots of Team Settings.")
 
-If you're interested in participating in the private preview,reach out to us directly [via email](mailto:dahellem@microsoft.com). Be sure to include your organization name (dev.azure.com/{organization})
+If you're interested in participating in the private preview, reach out to us directly [via email](mailto:dahellem@microsoft.com). Be sure to include your organization name (dev.azure.com/{organization})
 
-Be sure to check out the other [Azure Boards + GitHub integration features](/azure/devops/release-notes/features-timeline#improved-boards--github-integration) we have planned on the public roadmap.
+Check out the public roadmap to learn more about upcoming [Azure Boards + GitHub integration features](/azure/devops/release-notes/features-timeline#improved-boards--github-integration).
