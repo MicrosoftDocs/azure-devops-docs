@@ -159,7 +159,8 @@ Do the following steps to add a link to another user story, epic, feature, bug, 
 5.	In the Work item field, enter the ID of the work item you want to link to, then select **OK**.
    In the following example, we use the **Related** link type to link three items to the bug with ID of *400*. 
 ::: moniker range="azure-devops"
-   :::image type="content" source="media/add-link/add-link-dialog-s136.png" alt-text="Screenshot of Add link dialog, web portal, to an existing work item.":::
+     :::image type="content" source="media/add-link/add-link-dialog-s136.png" alt-text="Screenshot of Add link dialog, web portal, to an existing work item.":::
+   
    You can only add links one at a time. You can't enter their IDs separated by commas or spaces.
 ::: moniker-end
 ::: moniker range="< azure-devops"
@@ -252,7 +253,7 @@ The following example shows two remote links, indicated by the  :::image type="i
 
 2. Enter up to five keywords that match the work item type, ID, or title to narrow the list of suggested work items.
 
-   :::image type="content" source="media/add-link/keyword-pr-link.png" alt-text="Screenshot of entering keyword after # and resulting work item in search":::
+   :::image type="content" source="media/add-link/keyword-pr-link.png" alt-text="Screenshot of entering keyword after # and resulting work item in search.":::
 
 ::: moniker-end
  
@@ -273,7 +274,7 @@ When you connect Azure Boards with GitHub repositories, you can link work items 
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019" 
 > [!IMPORTANT]  
-> You can only link work items to GitHub objects that have repositories connected to Azure Boards. For more information, see [Connect Azure Boards to GitHub](../github/connect-to-github.md), , and [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
+> You can only link work items to GitHub objects that have repositories connected to Azure Boards. For more information, see [Connect Azure Boards to GitHub](../github/connect-to-github.md), and [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
 
 For more information, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md) and [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
 
@@ -364,9 +365,9 @@ For more information, see [LinksControlOptions elements, Development links contr
 ::: moniker-end
 
 > [!TIP]
-> We recommend that you drive development from the work item at the time you create it. You can also add the work item ID when you create branches, commits, and pull requests. Git lets you link work items to commits by using the **Commit** link type. You can do so in the following ways:
-> - Add work item IDs in Visual Studio Team Explorer before you commit your changes  
->   :::image type="content" source="../queries/media/link-git-commit-items.png" alt-text="Screenshot of Add work item ID or drag items before you commit your changes.."::: 
+> We recommend that you drive development from the work item at the time you create it. You can also add the work item ID when you create branches, commits, and pull requests. Git lets you link work items to commits by using the **Commit** link type. You can do so in the following ways.
+> - Add work item IDs in Visual Studio Team Explorer before you commit your changes.  
+>   :::image type="content" source="../queries/media/link-git-commit-items.png" alt-text="Screenshot of Add work item ID or drag items before you commit your changes."::: 
 > - Use the [git-commit](https://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, apply this comment `#35 Catch null exception` to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35. 
 > - Use the **Development** control, to [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
