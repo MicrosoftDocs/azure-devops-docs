@@ -271,7 +271,7 @@ By enabling automatic linking, you can track the builds that have incorporated w
 
 ::: moniker range=">= azure-devops-2020"
 
-1. Open **Pipeline settings** as describe in [Open Pipeline settings](#yaml-open-settings).
+1. Open **Pipeline settings** as described in [Open Pipeline settings](#yaml-open-settings).
 
 1. Enable **Automatically link new work in this build**.  
 
@@ -310,7 +310,7 @@ Prior to choosing your integration options, you should set up the release stages
 
 1. Open **Options>Integrations** for the release pipeline as describe in [Release integration options](#classic-release-options).
 
-1. Check the **Report deployment status to Boards** checkbox. Map the **Deployment type** to each stage, or leave **Unmapped**. Select this option if you want to create links to all work items that represent associated changes to the source, when a release is complete. This option must be enabled in order for the work item form [**Deployment**](../../boards/work-items/work-item-deployments-control.md) control to work.
+1. Check the **Report deployment status to Boards** checkbox. Map the **Deployment type** to each stage, or leave **Unmapped**. Select this option if you want to create links to all work items that represent associated changes to the source, when a release is complete. This option must be enabled in order for the work item form [**Deployment**](../../boards/backlogs/add-link.md#link-work-items-to-deployments) control to work.
 
 	:::image type="content" source="media/pipelines-integration/release-settings-stages-1.png" alt-text="Screenshot of Report deployment status to Boards, Classic release, 5 stages.":::
  
@@ -330,7 +330,7 @@ To verify the integration is working, perform the following steps:
 
 1.  Run the pipeline. 
 
-1. Open one of the linked work items and view the [**Deployment**](../../boards/work-items/work-item-deployments-control.md) control control. As shown in the following image, the  **Deployment** control shows release information for two release stages those work items that have been linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.  
+2. Open one of the linked work items and view the [**Deployment**](../../boards/backlogs/add-link.md#link-work-items-to-deployments) control. As shown in the following image, the  **Deployment** control shows release information for two release stages those work items that have been linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.  
 
 :::image type="content" source="../../boards/work-items/media/deployments-control/deployment-control-intro.png " alt-text="Screenshot of Work item form, Deployment control.":::
  
@@ -384,7 +384,7 @@ If a build pipeline fails, you can automatically create a work item to track get
 
 3.	Save your pipeline.
 
-To learn the reference name for a field, look it up from the [Work item field index](../../boards/work-items/guidance/work-item-field.md). For custom fields you add through an inherited process, Azure DevOps assigns a reference name based on friendly field name prefixed with *Custom.*. For example, you add a field named **DevOps Triage**, the reference name is Custom.DevOpsTriage. No spaces are allowed within the reference name.
+To learn the reference name for a field, look it up from the [Work item field index](../../boards/work-items/guidance/work-item-field.md). For custom fields you add through an inherited process, Azure DevOps assigns a reference name based on friendly field name prefixed with *Custom.* For example, you add a field named **DevOps Triage**, the reference name is Custom.DevOpsTriage. No spaces are allowed within the reference name.
  
 <a id="enable-status-badge" /> 
 
@@ -523,12 +523,11 @@ See [Speed up testing by using Test Impact Analysis (TIA), Enable Test Impact An
 ## Related articles  
 
 - [Define your multi-stage continuous deployment (CD) pipeline](../release/define-multistage-release-process.md)
-- [Link and view work items to builds and deployments](../../boards/work-items/work-item-deployments-control.md) 
+- [Link work items to other objects](../../boards/backlogs/add-link.md) 
 - [Release pipelines (Classic) overview](../release/index.md)  
 - [How to retrieve all work items associated with a release pipeline using Azure DevOps API](https://devblogs.microsoft.com/premier-developer/how-to-retrieve-all-work-items-associated-with-a-release-pipeline-using-azure-devops-api/)
 - [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md) 
-- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
+- [Link to work items to other objects](../../organizations/notifications/add-links-to-work-items.md)
 - [End-to-end traceability](../../cross-service/end-to-end-traceability.md)
-- [Linking, traceability, and managing dependencies](../../boards/queries/link-work-items-support-traceability.md)
 - [Link type reference](../../boards/queries/link-type-reference.md)
  
