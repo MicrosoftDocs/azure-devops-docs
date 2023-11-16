@@ -336,7 +336,7 @@ You can link work items to existing builds from the **Add link** dialog.
 
 	For example, you can specify a build number, select a build pipeline, a build result&mdash;such as, **All**, **succeeded**, **partially succeeded**, **failed**, or **canceled**.  Or, with **All** selected for **Result**, choose **Find** to list the available builds to link to. 
 
-	:::image type="content" source="../media/add-link/find-builds-dialog-2020-and-previous-versions.png" alt-text="Screenshot of Find builds dialog, link to a build within your project.":::  
+	:::image type="content" source="media/add-link/find-builds-dialog-2020-and-previous-versions.png" alt-text="Screenshot of Find builds dialog, link to a build within your project.":::  
 
 4. Choose the build from the list you want to link to and then select **OK**. 
 5. From the **Add link** dialog, choose **OK** to complete the operation.
