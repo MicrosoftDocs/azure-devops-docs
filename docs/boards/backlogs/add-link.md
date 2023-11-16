@@ -1,5 +1,5 @@
 ---
-title: Link work items to objects
+title: Link work items to other objects
 titleSuffix: Azure Boards
 description: Learn how to link one or more work items to user stories, bugs, remote work items, a new git branch, builds, deployments, artifacts, web sites, network shares, storyboards, documents, and more.
 ms.custom: cross-project, devx-track-azurecli, engagement-fy24
@@ -137,7 +137,6 @@ To link work items to various objects, do the following steps.
    - [An external Git pull request URL](#link-work-items-to-github-objects)
    - [A build number or definition name](#link-work-items-to-builds)
    - [A deployment stage name or environment name](#link-work-items-to-builds)
-   - An artifact name or alias
    - [A web page or document URL](#link-work-items-to-a-web-site-network-share-storyboard-or-document)
 2. (Optional) Enter a comment to describe the link.
 3. Select **OK** to create the link.
@@ -317,7 +316,7 @@ Do the following steps to link work items to existing builds. These builds can b
 4. Choose the build from the list you want to link to and then select **OK**. 
 5. From the **Add link** dialog, select **OK** to complete the operation.
 
-	:::image type="content" source="../../media/add-links/add-link-build-filled-in.png" alt-text="Screenshot of Add link dialog with Build number completed.":::
+	:::image type="content" source="../../media/add-links/add-link-build-filled-in.png" alt-text="Screenshot of Add link dialog with Build number entered.":::
 
 ::: moniker-end
 
@@ -331,18 +330,18 @@ You can link work items to existing builds from the **Add link** dialog.
 
 	If you don't know the build number&mdash;a combination of the pipeline and build name&mdash;you can search for it by choosing the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: icon. 
 
-	:::image type="content" source="../media/add-links/add-link-build.png" alt-text="Add link dialog with Build link type selected. ":::
+	:::image type="content" source="../../media/add-links/add-link-build.png" alt-text="Screenshot of Add link dialog with Build link type selected.":::
  
 3. From the **Link builds** dialog, choose the parameters to filter your search of builds. 
 
 	For example, you can specify a build number, select a build pipeline, a build result&mdash;such as, **All**, **succeeded**, **partially succeeded**, **failed**, or **canceled**.  Or, with **All** selected for **Result**, choose **Find** to list the available builds to link to. 
 
-	:::image type="content" source="../boards/backlogs/media/add-link/find-builds-dialog-2020-and-previous-versions.png" alt-text="Find builds dialog, link to a build within your project.":::  
+	:::image type="content" source="../media/add-link/find-builds-dialog-2020-and-previous-versions.png" alt-text="Screenshot of Find builds dialog, link to a build within your project.":::  
 
 4. Choose the build from the list you want to link to and then select **OK**. 
 5. From the **Add link** dialog, choose **OK** to complete the operation.
 
-	:::image type="content" source="../media/add-links/add-link-build-filled-in.png" alt-text="Add link dialog with Build number filled in. ":::
+	:::image type="content" source="../../media/add-links/add-link-build-filled-in.png" alt-text="Screenshot of Add link dialog with Build number entered.":::
 
 ::: moniker-end
 
