@@ -143,7 +143,7 @@ All project members can view identities that were added to a comment, discussion
 
 ## Use a single project
 
-One recommended approach is to use a single project to support your organization or enterprise. A single project can help minimize the maintenance of administrative tasks and supports the most optimized and full-flexibility [cross-link object](../../boards/queries/link-work-items-support-traceability.md) experience.  
+One recommended approach is to use a single project to support your organization or enterprise. A single project can help minimize the maintenance of administrative tasks and supports the most optimized and full-flexibility [cross-link object](../../boards/backlogs/add-link.md) experience.  
 
 Even if you have many teams working on hundreds of different applications and software projects, you can easily manage them within a single project. A project serves to isolate data stored within it and you can't easily move data from one project to another. When you move data from one project to another, you typically lose the history associated with that data.
 

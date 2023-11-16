@@ -106,4 +106,4 @@ To find a changeset from the [command prompt](use-team-foundation-version-contro
 
 - To download the version of a file in a changeset, see [Download (get) files from the server](download-get-files-from-server.md).
 
-- To add a link between a changeset and one or more work items, see [Use links to view dependencies and track related work](../../boards/queries/link-work-items-support-traceability.md).
+- [Link work items to other objects](../../boards/backlogs/add-link.md).

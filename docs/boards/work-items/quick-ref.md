@@ -60,7 +60,7 @@ Use this index to quickly access concepts and tasks related to work items and in
    :::column-end:::
    :::column span="1":::
       - [Link types](../queries/link-type-reference.md)  
-      - [Linking and traceability](../queries/link-work-items-support-traceability.md)  
+      - [Link work items to other objects](../backlogs/add-link.md)  
       - [Mobile browser](../..//project/navigation/mobile-work.md)  
       - [New Boards Hub](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview)  
       - [New work item widget](../../report/dashboards/widget-catalog.md#new-work-item)  
