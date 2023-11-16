@@ -1,15 +1,15 @@
 ---
-title:  Bypass approvals and checks to complete your hotfix.
+title:  GitHub Integration - Improved AB# validation private preview
 author: ckanyika
 ms.author: ckanyika
 ms.date: 11/16/2023
-description: Bypass approvals and checks to complete your hotfix.
+description: GitHub Integration - Improved AB# validation private preview
 ---
-# Bypass approvals and checks to complete your hotfix.
+# GitHub Integration - Improved AB# validation private preview
 
-With this update, it is now possible for administrators to bypass running approvals and checks to complete a hotfix in Azure Pipelines. 
+With this update, we're excited to offer a private preview of the newest improvements in our Azure Boards + GitHub integration! 
 
-In addition, we're excited to offer a private preview of the newest improvements in our Azure Boards + GitHub integration. 
+In addition, it is now possible for administrators to bypass running approvals and checks to complete a hotfix in Azure Pipelines.  
 
 Check out the release notes for details.
 
