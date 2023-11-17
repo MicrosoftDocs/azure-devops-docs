@@ -63,17 +63,12 @@ If you already have an existing Azure Artifacts feed that can be used for Cargo 
 1. Follow the **Project setup** instructions on the **Connect to feed** page.
 
 > [!IMPORTANT]
-> Cargo support in Azure Artifacts is currently in preview and may require the [nightly toolchain](https://go.microsoft.com/fwlink/?linkid=2243883) with the `registry-auth` [unstable-feature](https://go.microsoft.com/fwlink/?linkid=2243884) enabled. To enable registry-auth, add the following to [.cargo/config.toml](https://go.microsoft.com/fwlink/?linkid=2234410).
+> Cargo support in Azure Artifacts is currently in preview and requires rust version [1.74+](https://releases.rs/docs/1.74.0/) which has support for registry-auth feature.
+>
+> To update rust version, you can run the following:
 >
 > ```
-> [unstable]
-> registry-auth = true
-> ```
->
-> To use the nightly toolchain, you can run the following:
->
-> ```
-> rustup default nightly
+> rustup update
 > ```
 
 ## Publish packages
