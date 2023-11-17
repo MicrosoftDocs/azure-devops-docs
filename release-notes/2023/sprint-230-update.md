@@ -1,11 +1,11 @@
 ---
-title:  GitHub Integration - Improved AB# validation private preview
+title:  GitHub Integration - Improved AB# validation
 author: ckanyika
 ms.author: ckanyika
 ms.date: 11/16/2023
-description: GitHub Integration - Improved AB# validation private preview
+description: GitHub Integration - Improved AB# validation
 ---
-# GitHub Integration - Improved AB# validation private preview
+# GitHub Integration - Improved AB# validation
 
 With this update, we're excited to offer a private preview of the newest improvements in our Azure Boards + GitHub integration! 
 
