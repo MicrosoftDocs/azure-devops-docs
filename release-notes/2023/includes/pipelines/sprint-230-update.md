@@ -13,7 +13,7 @@ As the Node 16 end-of-life date has [moved forward](https://nodejs.org/en/blog/a
 
 ### Announcing retirement of deprecated tasks
 
-Azure Pipelines has many that have been deprecated. Deprecated tasks will be retired January 31, 2024. To help customers identify pipelines that are using deprecated tasks, pipelines will show warnings if such a task is used. We updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date.
+Azure Pipelines has many deprecated tasks. Deprecated tasks will be retired January 31, 2024. To help you identify pipelines that are using deprecated tasks, pipelines will show warnings if such a task is used. We updated the [Task Reference](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true) to clearly convey deprecation status and retirement date.
 
 The following tasks have been deprecated and will start emitting warnings:  
 * AppCenterDistributeV1, 
