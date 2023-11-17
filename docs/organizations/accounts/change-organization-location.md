@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-When you [create an organization](create-organization.md) in Azure DevOps, you can choose the region your organization gets hosted in. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers. Your organization's default location is based on the closest [Microsoft Azure geography](https://azure.microsoft.com/regions) where Azure DevOps is available.
+When you [create an organization](create-organization.md) in Azure DevOps, you can choose the geography your organization gets hosted in. You may choose your organization's geography based on locality and network latency, or because you have sovereignty requirements for data centers. Your organization's default location is based on the closest [Microsoft Azure geography](https://azure.microsoft.com/regions) where Azure DevOps is available.
 
 ## Find your organization geography
 
@@ -35,7 +35,7 @@ When you [create an organization](create-organization.md) in Azure DevOps, you c
 ## Change organization geography
 
 > [!IMPORTANT]
-> A region change is only possible in the following geographies across the world:
+> A change is only possible between the following geographies:
 >
 > - Australia
 > - Brazil
@@ -46,11 +46,11 @@ When you [create an organization](create-organization.md) in Azure DevOps, you c
 > - United Kingdom
 > - United States
 >
-> We default your organization to your closest geography. Making a change to another data center within your geography isn't possible, for example, changing from EastUS to CentralUS.
+> We default your organization to your closest geography. Making a change to another data center within your geography isn't possible.
 
-To change your organization region, use [Azure DevOps Virtual Support Agent](https://go.microsoft.com/fwlink/?linkid=2163146).
+To change your organization geography, use [Azure DevOps Virtual Support Agent](https://go.microsoft.com/fwlink/?linkid=2163146).
 
-Currently, we can't provide a specific time frame for your organization's relocation, as the migration process may experience potential delays stemming from various factors, and it's automated in nature. The process could get rescheduled to take place over the weekend until all necessary changes are successfully completed.
+Currently, we can't provide a specific time frame for your organization's relocation, as the migration process may experience potential delays stemming from various factors, and it's automated in nature. The process could be rescheduled to take place over the weekend until all necessary changes are successfully completed.
 
 ## Related articles
 
