@@ -49,3 +49,42 @@ If you selected the upstream sources checkbox during the creation of your feed, 
 
 1. Select **Save** when you're done, and then select **Save** one more time from the top right corner to save your changes.
 
+## Authenticate with your feed
+
+1. Make sure you have downloaded Python, and then run the following command to upgrade your Python package manager:
+
+    ```Command
+    python -m pip install --upgrade pip
+    ```
+
+1. Run the following command to install the Azure Artifacts keyring:
+
+    ```Command
+    pip install keyring artifacts-keyring
+    ```
+
+1. Create a [Personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read** scope to authenticate with Azure DevOps. The first time you connect to Azure DevOps, you'll need to enter your credentials when prompted. Provide your username (any string) and your personal access token in the designated fields. These credentials will be cached locally and automatically used to sign you in the next time you use the service.
+
+1. Navigate to your project folder, and then run the following command to create a new virtual environment:
+
+    ```Command
+    python -m venv <VIRTUAL_ENVIRONMENT_NAME>
+    ```
+
+1. Create a new *pip.ini* file (Windows) or a *pip.conf* file (Mac/Linux) in your virtual environment, and then paste the following snippet into your file. Make sure you replace the placeholders with the appropriate information, and be cautious not to commit this file to a public repository as it contains your personal access token.
+
+    - **Project scoped feed**:
+
+        ```
+        [global]
+        extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/simple/
+        ```
+
+    - **Organization scoped feed**:
+
+        ```
+        [global]
+        extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/pypi/simple/
+        ```
+
+
