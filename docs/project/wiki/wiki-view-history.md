@@ -52,12 +52,6 @@ This article shows you how to view the revision history of a wiki page in Azure 
 
    ::: moniker-end
 
-   ::: moniker range="tfs-2018"
-
-   :::image type="content" source="media/wiki/revision-history.png" alt-text=".":::![](media/wiki/revision-history.png) 
-  
-   ::: moniker-end
-
 4. Similar to any git file revision, the revision details page provides a **Show diff side-by-side** view or the **Show diff inline** view. Choose **Preview** to see the content of the page of the specific revision.
 
    :::image type="content" source="media/wiki/wiki-revision-details-2.png" alt-text="Screenshot of article revisions compared side-by-side. The article is in Markdown.":::
