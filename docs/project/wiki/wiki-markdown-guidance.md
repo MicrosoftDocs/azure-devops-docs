@@ -1,15 +1,15 @@
 ---
 title: Markdown syntax for wikis
 titleSuffix: Azure DevOps
-description: Learn how to share information and add tables & mathematical notation using Markdown within wikis.
+description: Learn how to share information, add tables, diagrams, mathematical notation, and more using Markdown within wikis.
 ms.custom: wiki, devdivchpfy22
 ms.subservice: azure-devops-wiki
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/20/2023  
+ms.date: 11/21/2023  
 ---
 
 # Use Markdown syntax for wikis
@@ -18,7 +18,7 @@ ms.date: 11/20/2023
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-In this article, find Markdown syntax guidance for use in Azure DevOps wikis. In the following table, view which features
+In this article, find Markdown syntax guidance for use in Azure DevOps wikis.
 
 ## Prerequisites
 
@@ -235,7 +235,7 @@ requirementDiagram
 
 <a id="toc-wiki" > </a>
 
-## Table of contents (TOC) for wiki pages
+## Create a table of contents (TOC) for wiki pages
 
 To create a table of contents, add a \[[\_TOC\_]]. The TOC is generated when the tag gets added and there's at least one heading on the page.
 
@@ -343,7 +343,7 @@ When you edit pages directly in code, use the following pattern, `@<{identity-gu
 
 ::: moniker range=">= azure-devops-2020"
 
-## Page visits for wiki pages
+## View page visits for wiki pages
 
 Automatically, you see an aggregated count of page visits for the last 30 days on every page. We define a page visit as a page view by a given user in a 15-minute interval.
 
@@ -366,7 +366,7 @@ Enter the pound sign (`#`), and then enter a work item ID.
 
 <a name="html"></a>
 
-## HTML tag support in wiki pages
+## Use HTML tags in wiki pages
 
 In wiki pages, you can also create rich content using HTML tags.
 
@@ -430,6 +430,6 @@ In wiki pages, you can also create rich content using HTML tags.
 
 ## Related articles
 
-- [Project wiki](add-edit-wiki.md)
+- [Create or edit a project wiki](add-edit-wiki.md)
 - [Wiki file structure](wiki-file-structure.md)
-- [Wiki view history](wiki-view-history.md)
+- [View wiki page history and revert changes](wiki-view-history.md)

@@ -19,11 +19,11 @@ ms.date: 11/20/2023
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-Here you can find some basic Markdown syntax guidance and specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
+In this article, find basic syntax guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
-Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add formatting, tables, images, and more to your project pages, README files, dashboards, pull requests, and so on.
+Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add formatting, tables, images, and more to your project pages, README files, dashboards, pull requests, [wikis](wiki-markdown-guidance.md), and so on.
 
-Not all Markdown syntax is supported across all features in Azure DevOps. The following table links to each syntax section and highlights which features support it.
+Not all Markdown syntax is supported across all features in Azure DevOps. The following table links to each syntax section in this article and highlights which features support it.
 
 |Markdown type |Supported features  |
 |---------|---------|
@@ -52,7 +52,7 @@ For more supported syntax for wiki pages, see [Wiki Markdown guidance](wiki-mark
 
 ## Headers
 
-Structure your comments using headers. Headers segment longer comments, making them easier to read.
+Structure your content using headers. Headers segment longer content, making it easier to read.
 
 Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with more hash characters, for example, `####`. You can use up to six levels of headings.
 
@@ -271,7 +271,7 @@ clear name to description mapping.
 
 - Place each table row on its own line.
 - Separate table cells using the pipe character `|`.
-- To use a pipe character within a table you must escape with a backslash `\|`.
+- To use a pipe character within a table, you must escape with a backslash `\|`.
 - The first two lines of a table set the column headers and the alignment of elements in the table.
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right).
 - To start a new line, use the HTML break tag (`<br/>`) (works within a Wiki but not elsewhere).  
