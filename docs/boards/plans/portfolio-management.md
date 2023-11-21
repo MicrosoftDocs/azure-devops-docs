@@ -160,7 +160,7 @@ If you need more than three backlog levels, you can add more. To learn how, see 
 
 ## Track dependencies across teams 
 
-The simplest way to track dependencies across teams is to link work items using the **Related** link type. If they're dependent in time, then you can use the **Predecessor/Successor** link types.  You can then create queries that find work items containing these relationships. See [Manage dependencies, link work items to support traceability](../queries/link-work-items-support-traceability.md) to learn more. 
+The simplest way to track dependencies across teams is to link work items using the **Related** link type. If they're dependent in time, then you can use the **Predecessor/Successor** link types.  You can then create queries that find work items containing these relationships. For more information, see [Link work items to other objects](../backlogs/add-link.md).
  
 ::: moniker range="azure-devops"
 Using Delivery Plans, you can track dependencies across projects within an organization. For more information, see [Track dependencies using Delivery Plans](../plans/track-dependencies.md). 
