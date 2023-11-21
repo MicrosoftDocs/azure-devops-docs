@@ -2,7 +2,7 @@
 title: Markdown syntax for files, widgets, and wikis
 titleSuffix: Azure DevOps  
 ms.custom: wiki, devdivchpfy22
-description: Discover how to utilize Markdown to incorporate tables, mathematical symbols, and share information effectively in pull requests, README files, dashboards, and wikis.  
+description: Discover how to utilize Markdown to incorporate tables, mathematical symbols, and share information effectively in pull requests, README files, dashboards, and wikis in Azure DevOps.  
 ms.subservice: azure-devops-wiki
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.author: chcomley
@@ -10,10 +10,10 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 02/17/2023
+ms.date: 11/20/2023
 ---
 
-# Syntax guidance for basic Markdown usage
+# Use basic Markdown in Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -21,44 +21,36 @@ ms.date: 02/17/2023
 
 Here you can find some basic Markdown syntax guidance and specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
-Having the right guidance at the right time is critical to success. Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
+Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add formatting, tables, images, and more to your project pages, README files, dashboards, pull requests, and so on.
 
+Not all Markdown syntax is supported across all features in Azure DevOps. The following table links to each syntax section and highlights which features support it.
+
+|Markdown type |Supported features  |
+|---------|---------|
+|[Headers](#headers)   | Definition of Done (Kanban board), Markdown widget, pull request, README, wiki |
+|[Paragraphs and line breaks](#paragraphs-and-line-breaks)| Definition of Done (Kanban board), Markdown widget, pull request, README files, wiki|
+|[Blockquotes](#blockquotes)  | [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
+|[Horizontal rules](#horizontal-rules)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
+|[Emphasis](#emphasis-bold-italics-strikethrough)    | [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
+|[Code highlighting](#code-highlighting)   | [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md        |
+|[Tables](#tables)    | [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md       |
+|[Lists](#lists)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)         |
+|[Links](#links)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)         |
+|[Images](#images)    | [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md        |
+|[Checklist or task list](#checklist-or-task-list)    |  [pull request](../../repos/git/pull-requests.md), [wiki](add-edit-wiki.md)       |
+|[Emoji](#emoji)     | [pull request](../../repos/git/pull-requests.md), [wiki](add-edit-wiki.md)        |
+|[Ignore or escape Markdown syntax](#ignore-or-escape-markdown-syntax-to-enter-specific-or-literal-characters)    |  [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)     |
+| [Attachments](#attachments) |  [pull request](../../repos/git/pull-requests.md), [wiki](add-edit-wiki.md)  |
+| [Mathematical notation and characters](#mathematical-notation-and-characters)| [pull request](../../repos/git/pull-requests.md), [wiki](add-edit-wiki.md)     |
+
+For more information, see [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), and [wiki](add-edit-wiki.md).
 For more supported syntax for wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
-
-You can provide guidance in the following areas using Markdown:
-
-::: moniker range=">= azure-devops-2019"
-
-- [Project wiki](add-edit-wiki.md)
-- [Publish code as wiki](publish-repo-to-wiki.md)
-- [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
-- [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request (PR) comments](../../repos/git/pull-requests.md)  
-- [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done)
-
-::: moniker-end
-
 ::: moniker range="tfs-2018"
-
-- [Project Wiki](add-edit-wiki.md)
-- [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)  
-- [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request (PR) comments](../../repos/git/pull-requests.md)
-- [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done)
-
 > [!NOTE]
 > Rich Markdown rendering in code repositories is supported for TFS 2018.2 and later versions. You can create rich README.md files in the code repositories. The Markdown rendering of the MD files in code repositories supports HTML tags, block quotes, emojis, image resizing, and mathematical formulas. There is parity in Markdown rendering in Wiki and MD files in code.
-
 ::: moniker-end
 
-> [!IMPORTANT]  
-> Not all Markdown syntax is supported across all features. Each section in this article identifies the features and the syntax supported with the **Supported in** line.
-
 ## Headers
-
-#### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
@@ -119,12 +111,7 @@ A space gets added in between paragraphs.
 
 ## Blockquotes
 
-#### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
-
-Quote previous comments or text to set the context for your comment or text.
-
-Quote single lines of text with `>` before the text. Use many `>` characters to nest quoted text.
-Quote blocks of lines of text by using the same level of `>` across many lines.
+Quote previous comments or text to set the context for your comment or text. Quote single lines of text with `>` before the text. Use many `>` characters to nest quoted text. Quote blocks of lines of text by using the same level of `>` across many lines.
 
 **Example:**
 
@@ -137,11 +124,9 @@ Quote blocks of lines of text by using the same level of `>` across many lines.
 
 **Result:**  
 
-![Quoting in Markdown](media/markdown-guidance/markdown_quote2.jpg)
+![Screenshot of Quoting in Markdown.](media/markdown-guidance/markdown_quote2.jpg)
 
 ## Horizontal rules
-
-#### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
 
 To add a horizontal rule, add a line that's a series of dashes `---`. The line above the line containing the `---` must be blank.
 
@@ -198,8 +183,6 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 **~~Bold, strike-through text~~**
 </pre>
 
-<br/>
-
 **Result:**  
 
 Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>  
@@ -208,15 +191,10 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 
 ## Code highlighting
 
-
-#### Supported in: Pull Requests | README files | Wikis
-
 Highlight suggested code segments using code highlight blocks.
 To indicate a span of code, wrap it with three backtick quotes (`&#96;&#96;&#96;`) on a new line at both the start and end of the block. To indicate code inline, wrap it with one backtick quote (`&#96;`).
 
-> [!NOTE] 
-> Code highlighting entered within the Markdown widget renders code as plain preformatted text.
-
+Code highlighting entered within the Markdown widget renders code as plain preformatted text.
 
 **Example:**
 
@@ -238,7 +216,8 @@ sudo npm install vsoagent-installer -g
 **Example:**
 
 <pre>
-To install the Microsoft Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;.
+&#96;&#96;&#96;To install the Microsoft Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;.
+&#96;&#96;&#96; 
 </pre>
 
 <br/>
@@ -251,7 +230,7 @@ To install the Microsoft Cross Platform Build & Release Agent, run the following
 
 Within a Markdown file, text with four spaces at the beginning of the line automatically converts to a code block.  
 
-Set a language identifier for the code block to enable syntax highlighting for any of the supported languages in [highlightjs](https://github.com/highlightjs/highlight.js/tree/9.10.0/src/languages), version v9.10.0.
+Set a language identifier for the code block to enable syntax highlighting for any of the supported languages in [highlightjs](https://github.com/highlightjs/highlight.js/tree/stable-11/src/languages).
 
 <pre>
 ``` language
@@ -287,10 +266,8 @@ Console.WriteLine("Hello, World!");
 
 ## Tables
 
-#### Supported in: Markdown widget | Pull Requests | README files | Wikis 
-
 Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data with a
-clear name to description mapping. You can format tables in pull requests, wiki, and Markdown files such as README files and Markdown widgets.  
+clear name to description mapping.
 
 - Place each table row on its own line.
 - Separate table cells using the pipe character `|`.
@@ -310,7 +287,6 @@ clear name to description mapping. You can format tables in pull requests, wiki,
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 ```
 
-
 **Result:**  
 
 | Heading 1 | Heading 2 | Heading 3 |  
@@ -320,12 +296,9 @@ clear name to description mapping. You can format tables in pull requests, wiki,
 
 ## Lists
 
-#### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
+Use lists to organize related items. You can add ordered lists with numbers or unordered lists with just bullets. Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. 
 
-
-Organize related items with lists. You can add ordered lists with numbers or unordered lists with just bullets.
-
-Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph or enter two line breaks consecutively to begin a new paragraph.
+Begin each list item on a new line. In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph or enter two line breaks consecutively to begin a new paragraph.
 
 ### Ordered or numbered lists
 
@@ -388,12 +361,9 @@ Ordered lists start with a number followed by a period for each list item. Unord
     - Nested item 2
     - Nested item 3
 
-
 <a id="link-work-items" />
 
 ## Links
-
-#### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
 
 In pull request comments and wikis, HTTP and HTTPS URLs automatically format as links. You can link to work items by entering the *#* key and a work item ID and then choosing the work item from the list.
 
@@ -405,7 +375,7 @@ In Markdown files and widgets, you can set text hyperlinks for your URL using th
 [Link Text](Link URL)
 ```
 
-When you're linking to another Markdown page in the same Git or TFVC repository, the link target can be a relative path or an absolute path in the repository.  
+When you link to another Markdown page in the same Git or TFVC repository, the link target can be a relative path or an absolute path in the repository.  
 
 **Supported links for Welcome pages:**
 
@@ -427,9 +397,8 @@ When you're linking to another Markdown page in the same Git or TFVC repository,
 </ul>
 
 > [!NOTE]  
-> Links to documents on file shares using `file://` aren't supported on 2017.1 and later versions. This restriction has been implemented for security purposes.
->
-> For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#source-control-relative-links).
+> - Links to documents on file shares using `file://` aren't supported on 2017.1 and later versions. This restriction has been implemented for security purposes.
+> - For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#source-control-relative-links).
 
 **Example:**  
 
@@ -473,7 +442,6 @@ Within Markdown files, anchor IDs are assigned to all headings when rendered as 
 
 <br/>
 
-
 **Result:**
 
 The syntax for an anchor link to a section...
@@ -501,9 +469,7 @@ In wiki, you can also reference heading in another page:
 
 ## Images
 
-#### Supported in: Markdown widget | Pull Requests | README files | Wikis 
-
-To highlight issues or make things more interesting, you can add images and animated GIFs to the following aspects of your pull requests:
+To highlight issues or make things more interesting, you can add images and animated GIFs to the following aspects of your pull requests.
 
 - Comments
 - Markdown files
@@ -536,21 +502,19 @@ The path to the image file can be a relative path or the absolute path in Git or
 
 ## Checklist or task list
 
-#### Supported in: Pull Requests | Wikis
-
 Lightweight task lists are great ways to track progress on your to-dos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to the selected text.
 
-You can Use `[ ]` or `[x]` to support checklists. Precede the checklist with either `-<space>` or `1.<space>` (any numeral).
+Use `[ ]` or `[x]` to support checklists. Precede the checklist with either `-<space>` or `1.<space>` (any numeral).
 
 **Example - Apply the task list Markdown to a highlighted list**
 
 > [!div class="mx-imgBorder"]  
-> ![Apply Markdown task list format to a highlighted list in a PR](media/markdown-guidance/checklist-pr-apply.png)
+> ![Screenshot of Markdown task list format in a highlighted list in a PR.](media/markdown-guidance/checklist-pr-apply.png)
 
 To mark items as completed by checking the boxes, you need to manually edit the markdown and modify the syntax after adding a task list.
 
 > [!div class="mx-imgBorder"]  
-> ![Check the boxes to mark items as completed.](media/markdown-guidance/checklist-pr-applied-check.png)
+> ![Screenshot of checked boxes to mark items as completed.](media/markdown-guidance/checklist-pr-applied-check.png)
 
 **Example - Format a list as a task list**
 
@@ -574,8 +538,6 @@ To mark items as completed by checking the boxes, you need to manually edit the 
 > A checklist within a table cell isn't supported.
 
 ## Emoji
-
-#### Supported in: Pull Requests | Wikis
 
 In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. We support the [full set of emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
 
@@ -603,8 +565,6 @@ To escape emojis, enclose them using the \` character.
  `:smile:` `:)` `:angry:`
 
 ## Ignore or escape Markdown syntax to enter specific or literal characters
-
-#### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
 
 :::row:::
    :::column span="1":::
@@ -646,13 +606,11 @@ To escape emojis, enclose them using the \` character.
 
 ## Attachments
 
-#### Supported in: Pull Requests | Wikis
-
 In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field, or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or from the format pane in your wiki page.
 
-<img src="media/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" />        
+:::image type="content" source="media/markdown-guidance/attach_files.png" alt-text="Screenshot of Web portal, Pull Request, Attach files via drag and drop.":::   
 
-If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page, and it renders directly into your comment or wiki page.
+If you have an image on your clipboard, you can paste it into the comment box or wiki page, and it renders directly into your comment or wiki page.
 
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
 The attached image files render directly into your comment or wiki pages. Save or update your comment or wiki page with an attachment. Then, you can see the attached image and select links to download the attached files.
@@ -676,8 +634,6 @@ Attachments support the following file formats:
 <a id="mathematical-notation">  </a>
 
 ## Mathematical notation and characters
-
-#### Supported in: Pull Requests | Wikis
 
 We support both inline and block [KaTeX](https://khan.github.io/KaTeX/function-support.html) notation in wiki pages and pull requests. See the following supported elements:
 

@@ -9,51 +9,20 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 08/22/2023  
+ms.date: 11/20/2023  
 ---
 
-# Markdown syntax for wikis
+# Use Markdown syntax for wikis
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-In this article, find some wiki-specific Markdown syntax guidance for use in Azure DevOps.
+In this article, find Markdown syntax guidance for use in Azure DevOps wikis. In the following table, view which features
 
-::: moniker range=">= azure-devops-2019"
+## Prerequisites
 
-<a id="toc-wiki" > </a>
-
-## Table of contents (TOC) for wiki pages
-
-To create a table of contents, add a \[[\_TOC\_]]. The TOC is generated when the tag gets added and there's at least one heading on the page.
-
-> [!div class="mx-imgBorder"]
-> ![Table of contents](media/toc_sample.png)
-
-The \[[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
-Only Markdown headings are considered for TOC (HTML heading tags aren't considered).
-
-All HTML and Markdown tags get stripped from the headings while adding it inside the TOC block.
-See the following example of how the TOC renders when you add bold and italics to a heading.
-
-> [!div class="mx-imgBorder"]
-> ![Tags for TOC](media/toc_tags.png)
-
-Consistency is maintained in the formatting in TOC.
-
-> [!NOTE]
-> The tag \[[\_TOC\_]] is case-sensitive. For example, \[[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
-
-## Add a subpages table
-
-Add a table of content for subpages (TOSP) to your wiki pages. This table has links to all subpages located under the page where the table of subpages is shown.
-
-You can add the table of subpages either by inserting the special tag `[[_TOSP_]]` manually or by selecting from the **More options** menu. Only the first `[[_TOSP_]]` tag is used to create the table of subpages.
-
-:::image type="content" source="media/wiki/wiki-table-content-subpages.png" alt-text="Screenshot showing markdown for child pages of Page 1.":::
-
-::: moniker-end
+By default, all members of the Contributors group can edit wiki pages.
 
 ::: moniker range=">= azure-devops-2022"
 
@@ -64,7 +33,7 @@ Mermaid lets you create diagrams and visualizations using text and code.
 > [!NOTE]
 > - Not all syntax in the following linked content for diagram types works in Azure DevOps. For example, we don't support most HTML tags, Font Awesome, `flowchart` syntax (`graph` used instead), or LongArrow `---->`. 
 > - Mermaid isn't supported in the Internet Explorer browser.
-> - If you experience an "Unsupported diagram type", the functionality may not be yet available in your org due to usual deployment scheme.
+> - If you experience an "Unsupported diagram type," the functionality may not be yet available in your organization due to usual deployment scheme.
 
 Wiki supports the following Mermaid diagram types:
 
@@ -103,7 +72,7 @@ sequenceDiagram
 
 ### Gantt chart example
 
-A Gantt chart records each scheduled task as one continuous bar that extends from the left to the right. The x axis represents time and the y records the different tasks and the order in which they're to be completed.
+A Gantt chart records each scheduled task as one continuous bar that extends from the left to the right. The `x` axis represents time and the `y` records the different tasks and the order in which they're to be completed.
 
 When you exclude a date, day, or collection of dates specific to a task, the Gantt chart accommodates those changes by extending an equal number of days toward the right, not by creating a gap inside the task.
 
@@ -120,7 +89,7 @@ gantt
 :::
 ```
 
-:::image type="content" source="media/wiki/wiki-mermaid-gantt-chart.png" alt-text="image showing the Mermaid Live Editor with code and preview for Gantt chart.":::
+:::image type="content" source="media/wiki/wiki-mermaid-gantt-chart.png" alt-text="Screenshot showing the Mermaid Live Editor with code and preview for Gantt chart.":::
 
 ### Flowchart example
 
@@ -139,7 +108,7 @@ graph LR;
 :::
 ```
 
-:::image type="content" source="media/wiki/wiki-mermaid-flowchart.png" alt-text="image showing the Mermaid Live Editor with code and preview for flowchart.":::
+:::image type="content" source="media/wiki/wiki-mermaid-flowchart.png" alt-text="Screenshot showing the Mermaid Live Editor with code and preview for flowchart.":::
 
 ### Class diagram example
 
@@ -171,7 +140,7 @@ classDiagram
 :::
 ```
 
-:::image type="content" source="media/wiki/wiki-mermaid-class-diagram.png" alt-text="image showing the Mermaid Live Editor with code and preview for Class diagram.":::
+:::image type="content" source="media/wiki/wiki-mermaid-class-diagram.png" alt-text="Screenshot showing the Mermaid Live Editor with code and preview for Class diagram.":::
 
 ### State diagram example
 
@@ -197,7 +166,7 @@ stateDiagram-v2
 :::
 ```
 
-:::image type="content" source="media/wiki/wiki-mermaid-state-diagram.png" alt-text="Screenshot showing the Mermaid Live Editor with code and preview for State diagram." lightbox="media/wiki/wiki-mermaid-state-diagram.png" :::
+:::image type="content" source="media/wiki/wiki-mermaid-state-diagram.png" alt-text="Screenshot showing the Mermaid Live Editor with code and preview for State diagram." lightbox="media/wiki/wiki-mermaid-state-diagram.png":::
 
 ### User journey example
 
@@ -264,6 +233,41 @@ requirementDiagram
 
 ::: moniker range=">= azure-devops-2019"
 
+<a id="toc-wiki" > </a>
+
+## Table of contents (TOC) for wiki pages
+
+To create a table of contents, add a \[[\_TOC\_]]. The TOC is generated when the tag gets added and there's at least one heading on the page.
+
+> [!div class="mx-imgBorder"]
+> ![Table of contents](media/toc_sample.png)
+
+The \[[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
+Only Markdown headings are considered for TOC (HTML heading tags aren't considered).
+
+All HTML and Markdown tags get stripped from the headings while adding it inside the TOC block.
+See the following example of how the TOC renders when you add bold and italics to a heading.
+
+> [!div class="mx-imgBorder"]
+> ![Tags for TOC](media/toc_tags.png)
+
+Consistency is maintained in the formatting of the TOC.
+
+> [!NOTE]
+> The tag \[[\_TOC\_]] is case-sensitive. For example, \[[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
+
+## Add a subpages table
+
+Add a table of content for subpages (TOSP) to your wiki pages. This table has links to all subpages located under the page where the table of subpages is shown.
+
+You can add the table of subpages either by inserting the special tag `[[_TOSP_]]` manually or by selecting from the **More options** menu. Only the first `[[_TOSP_]]` tag is used to create the table of subpages.
+
+:::image type="content" source="media/wiki/wiki-table-content-subpages.png" alt-text="Screenshot showing markdown for child pages of Page 1.":::
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
 ## Add a collapsible section
 
 To add a collapsible section in a wiki page, use the following syntax:
@@ -319,9 +323,7 @@ query-table 6ff7777e-8ca5-4f04-a7f6-9e63737dddf7
 
 You can also use the **toolbar** and the **query selector** to embed the query results in a wiki page.
 
-![Query Results Icon](media/query_selector_icon.png)
-
-![Query Selector Pane](media/query_selector_pane.png)
+![Screenshot of selected Query Results icon.](media/query_selector_icon.png)
 
 For more information about how to copy the query URL, which provides a GUID for the query, see [Email query items or share query URL](../../boards/queries/view-run-query.md#email-query-items-or-share-a-query-url).
 
@@ -329,13 +331,13 @@ For more information about how to copy the query URL, which provides a GUID for 
 
 To @mention users or groups in wiki, key in "@" in the wiki editor. This @mention opens autosuggest from which you can mention users or groups to get notified by email.
 
-> ![Mention Autosuggest](media/mention-autosuggest.png)
+![Screenshot of at Mention Autosuggest.](media/mention-autosuggest.png)
 
 You can also select **@mention** from the edit toolbar.
 
-> ![Mention from edit toolbar](media/mention-toolbar.png)
+![Screenshot of at Mention from edit toolbar.](media/mention-toolbar.png)
 
-When you're editing pages directly in code, use the following pattern, `@<{identity-guid}>`.
+When you edit pages directly in code, use the following pattern, `@<{identity-guid}>`.
 
 ::: moniker-end
 
@@ -343,14 +345,11 @@ When you're editing pages directly in code, use the following pattern, `@<{ident
 
 ## Page visits for wiki pages
 
-Automatically, you see an aggregated page visits count for the last 30 days on every page.
+Automatically, you see an aggregated count of page visits for the last 30 days on every page. We define a page visit as a page view by a given user in a 15-minute interval.
 
 Use the batch API `pagesBatch` to see the daily quantity of visits to all pages in a paginated way. They aren't sorted by number of visits, however. For data over 30 days old, you can get all page visits using the rest API. Sort these pages based on the number of visits to get the top 100. You can store these visits in a dashboard or database.
 
-![Wiki page visits](media/wiki/wiki-page-visits.png)
-
-> [!NOTE]
-> A page visit is defined as a page view by a given user in a 15-minute interval.
+![Screenshot of Wiki page visits.](media/wiki/wiki-page-visits.png)
 
 ::: moniker-end
 
@@ -413,9 +412,9 @@ In wiki pages, you can also create rich content using HTML tags.
 
 **Result:**
 
-![Light theme view](media/wiki/green-red-light-theme.png)
+![Screenshot of Light theme wiki view.](media/wiki/green-red-light-theme.png)
 
-![Dark theme view](media/wiki/green-red-dark-theme.png)
+![Screenshot of Dark theme wiki view.](media/wiki/green-red-dark-theme.png)
 
 <!---
 <p>This text needs to <del>strikethrough</del> <ins>since it is redundant</ins>!</p>
