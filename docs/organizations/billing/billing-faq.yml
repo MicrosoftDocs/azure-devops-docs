@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 11/02/2023
+  ms.date: 11/21/2023
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -87,24 +87,24 @@ sections:
       - question: |
           Q: How do I pay for Azure DevOps Server through Azure?
         answer: |
-          A: A: You can [pay for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/) through Azure on a monthly basis and you can cancel anytime. You need:
+          A: A: You can [pay for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/) through Azure on a monthly basis and you can cancel anytime. You need the following items:
 
-1. At least one Visual Studio subscription, which includes the server license. You can also buy the server license through [classic purchasing](https://azure.microsoft.com/pricing/details/devops/server/). 
-2. A Client Access License (CAL) for each user accessing the server.
-3. Paid access to Test Plans for each user accessing Test Plans.
-
-**Buy Visual Studio subscriptions for users who needs access to Visual Studio**
-Visual Studio Subscriptions include one server license and one user CAL. Visual Studio Enterprise and Visual Studio Test Professional also include access to Test Plans. Test Professional is available as a standard subscription, so it can’t be purchased through Azure.  
- - [Buy Visual Studio Enterprise (cloud subscription, monthly)](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
- - [Buy Visual Studio Professional (cloud subscription, monthly)](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
- - [Buy Visual Studio Test Professional (standard subscription, yearly)](https://visualstudio.microsoft.com/vs/test-professional/)
-
-**Buy Azure DevOps Basic or Basic + Test Plans for anyone else**
-1. [Create an Azure DevOps organization](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization) or select one you already use
-2. [Set up billing](https://learn.microsoft.com/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs) for the organization
-3. [Add users who need access](https://learn.microsoft.com/azure/devops/organizations/billing/buy-basic-access-add-users) to Azure DevOps server, assigning them Basic or Basic + Test Plans.
-
-Each organization includes 5 free Basic users which do not include a CAL. Add 5 users who won’t use the server to ensure you’re paying for everyone who needs a server CAL.
+          - At least one Visual Studio subscription, which includes the server license. You can also buy the server license through [classic purchasing](https://azure.microsoft.com/pricing/details/devops/server/) 
+          - A Client Access License (CAL) for each user accessing the server
+          - Paid access to Test Plans for each user accessing Test Plans
+          
+          **Buy Visual Studio subscriptions for users who needs access to Visual Studio**
+          Visual Studio Subscriptions include one server license and one user CAL. Visual Studio Enterprise and Visual Studio Test Professional also include access to Test Plans. Test Professional is available as a standard subscription, so it can’t be purchased through Azure.  
+           - [Buy Visual Studio Enterprise (cloud subscription, monthly)](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
+           - [Buy Visual Studio Professional (cloud subscription, monthly)](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
+           - [Buy Visual Studio Test Professional (standard subscription, yearly)](https://visualstudio.microsoft.com/vs/test-professional/)
+          
+          **Buy Azure DevOps Basic or Basic + Test Plans for anyone else**
+          1. [Create an Azure DevOps organization](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization) or select one you already use
+          2. [Set up billing](https://learn.microsoft.com/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs) for the organization
+          3. [Add users who need access](https://learn.microsoft.com/azure/devops/organizations/billing/buy-basic-access-add-users) to Azure DevOps server, assigning them Basic or Basic + Test Plans.
+          
+          Each organization includes 5 free Basic users which do not include a CAL. Add 5 users who won’t use the server to ensure you’re paying for everyone who needs a server CAL.
           
       - question: |
           Q: Do I need to pay to add "Package Management" users in Team Foundation Server 2017 and 2018?
