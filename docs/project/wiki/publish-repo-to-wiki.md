@@ -317,6 +317,8 @@ To select a wiki version, choose the version from the branch options from the wi
 
 :::image type="content" source="media/wiki/publish-wiki-select-version.png" alt-text="Screenshot showing a selected wiki version from the wiki dropdown menu.":::
 
+<a id="unpublish-wiki" />
+
 ## Unpublish a code wiki
 
 If you no longer want a repository to be published as a wiki, you can choose to unpublish it.

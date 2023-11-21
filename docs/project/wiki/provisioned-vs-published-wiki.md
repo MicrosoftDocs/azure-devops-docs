@@ -32,15 +32,9 @@ With a *provisioned wiki*, you can add and edit pages directly within the **wiki
 
 With a *publish code as wiki*, you can add, edit, and update content from **Repos** or **Code**.
 
-The unavailable menu options for the wiki pages are shown in the following illustration. Several options aren't supported for the **publish as code wiki** pages.
-
-**Provisioned wiki**
+The following image shows options for a provisioned wiki. Several of these options aren't supported for the **publish as code wiki** pages.
 
 :::image type="content" source="media/wiki/diff-menu-options-provisioned.png" alt-text="Screenshot of Provisioned wiki page menu options.":::
-
-**Publish code as wiki**
-
-:::image type="content" source="media/wiki/diff-menu-options.png" alt-text="Screenshot of Publish code page menu options.":::
 
 For example, the **Edit in Repos** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates that you make to a page in the branch you selected for the wiki get automatically published to the wiki.
 
@@ -70,7 +64,7 @@ The following table summarizes those operations or features that might differ, d
 > |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |✔️ |✔️ |
 > |[Maintain versioned wikis](#versioning) |  | ✔️ |
 > |[Select a wiki version](publish-repo-to-wiki.md#select-a-wiki-version) |  | ✔️ |
-> |[Unpublish a code wiki](publish-repo-to-wiki.md#unpublish-a-code-wiki) |  | ✔️ |
+> |[Unpublish a code wiki](publish-repo-to-wiki.md#unpublish-wiki) |  | ✔️ |
 
 <a id="add-pages"></a>
 
