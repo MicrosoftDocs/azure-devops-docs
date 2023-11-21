@@ -100,8 +100,8 @@ sections:
            - [Buy Visual Studio Test Professional (standard subscription, yearly)](https://visualstudio.microsoft.com/vs/test-professional/)
           
           **Buy Azure DevOps Basic or Basic + Test Plans for anyone else**
-          1. [Create an Azure DevOps organization](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization) or select one you already use
-          2. [Set up billing](https://learn.microsoft.com/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs) for the organization
+          1. [Create an Azure DevOps organization](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization) or select one you already use.
+          2. [Set up billing](https://learn.microsoft.com/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs) for the organization.
           3. [Add users who need access](https://learn.microsoft.com/azure/devops/organizations/billing/buy-basic-access-add-users) to Azure DevOps server, assigning them Basic or Basic + Test Plans.
           
           Each organization includes 5 free Basic users which do not include a CAL. Add 5 users who won’t use the server to ensure you’re paying for everyone who needs a server CAL.
