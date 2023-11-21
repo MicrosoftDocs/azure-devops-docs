@@ -73,18 +73,48 @@ If you selected the upstream sources checkbox during the creation of your feed, 
 
 1. Create a new *pip.ini* file (Windows) or a *pip.conf* file (Mac/Linux) in your virtual environment, and then paste the following snippet into your file. Make sure you replace the placeholders with the appropriate information, and be cautious not to commit this file to a public repository as it contains your personal access token.
 
-    - **Project scoped feed**:
+    - **Project-scoped feed**:
 
         ```
         [global]
         extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/simple/
         ```
 
-    - **Organization scoped feed**:
+    - **Organization-scoped feed**:
 
         ```
         [global]
         extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/pypi/simple/
         ```
 
+## Install packages from PyPI
 
+Now that we've configured our project to authenticate with our feed, we can begin installing packages from the PyPI upstream. In this example, we'll install `Flask`:
+
+1. In a command prompt window, navigate to your project folder and run the following command to activate your virtual environment. Replace the placeholder with the name of the virtual environment you created earlier:
+
+    ```Command
+    <YOUR_VIRTUAL_ENVIRONMENT_NAME>/Scripts/Activate.ps1
+    ```
+
+1. Run the following command to check the packages installed in your virtual environment:
+
+    ```Command
+    pip list
+    ```
+
+1. Run the following command to install *Flask*.
+
+    ```Command
+    pip install -U Flask
+    ```
+
+1. Once your package is installed, Azure Artifacts will save a copy of this package to your feed. Your package should be available in your feed as shown in the screenshot below.
+
+    :::image type="content" source="media/install-package-from-upstream.png" alt-text="A screenshot showing packages installed from PyPI upstream.":::
+
+## Related articles
+
+- [Publish and consume Python packages CLI](../quickstarts/python-cli.md)
+- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
+- [Manage permissions](../feeds/feed-permissions.md)
