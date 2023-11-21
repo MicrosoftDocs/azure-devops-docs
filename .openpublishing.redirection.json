@@ -459,7 +459,7 @@
       "source_path": "docs/boards/work-items/work-item-deployments-control.md",
       "redirect_url": "/azure/devops/boards/backlogs/add-link",
       "redirect_document_id": false
-    }
+    },
     {
       "source_path": "docs/project/wiki/wiki-select-unpublish-versions.md",
       "redirect_url": "/azure/devops/project/wiki/publish-repo-to-wiki#unpublish-a-code-wiki",
