@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/13/2023
+ms.date: 11/15/2023
 ---
 
 
@@ -54,7 +54,7 @@ A specific field maintains a count of links for each of these link types, such a
 
 ::: moniker-end 
 
-Link types are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you want to create.  For more information, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology).
+Link types are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you want to create.  To learn more about the different topologies, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology).
 
 ## Work link type
 
@@ -310,7 +310,7 @@ The following table describes the external link types you can choose when you ad
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"  
-The following table describes the external link types you can choose when you add a link type from a work item or test case. Also, you can specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true). 
+The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true). 
 ::: moniker-end  
 
 :::row:::
@@ -624,9 +624,9 @@ The following table describes the GitHub link types you can choose when adding a
 
 ## Remote work link type
 
-Remote work link types are system-defined and support linking work items defined in different organizations. Organizations must get managed by the same Microsoft Entra ID as described in [Connect your organization to Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). 
+Remote work link types are system-defined link types that support linking work items defined in different organizations, as long as the same Microsoft Entra ID manages them as described in [Connect your organization to Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). 
 
-A work item's *Remote Link Count* corresponds to the sum of all links defined with a remote work link type. 
+A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) corresponds to the sum of all links defined with a remote work link type. 
 
 :::row:::
    :::column span="":::
@@ -654,7 +654,7 @@ A work item's *Remote Link Count* corresponds to the sum of all links defined wi
       Link category: System-defined  
    :::column-end:::
    :::column span="":::
-      Use this directional link to create links between work items that have dependencies and are defined in different organizations. Organizations must get managed by the same Microsoft Entra ID. Typically used to track change requests made to requirements.
+      Use this directional link to create links between work items that have dependencies and are defined in different organizations, as long as the same Microsoft Entra ID manages them. Typically used to track change requests made to requirements.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -668,7 +668,7 @@ A work item's *Remote Link Count* corresponds to the sum of all links defined wi
       Link category: System-defined  
    :::column-end:::
    :::column span="":::
-      Use this nondirectional link to create links between work items defined in different organizations. Organizations must get managed by the same Microsoft Entra ID.
+      Use this nondirectional link to create links between work items defined in different organizations, as long as the same Microsoft Entra ID manage them.
    :::column-end:::
 :::row-end:::
 
@@ -938,7 +938,8 @@ The following table provides descriptions for each of the link type attributes r
 
 ## Related articles
 
-- [Link work items to track dependencies](link-work-items-support-traceability.md)
+- [Link work items to other objects](../backlogs/add-link.md)  
+- [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 - [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list)

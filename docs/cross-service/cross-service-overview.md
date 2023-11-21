@@ -285,7 +285,7 @@ The following table summarizes the integration points between Azure Boards and A
       View and quickly navigate to release stages a work item is linked to.
    :::column-end::: 
    :::column span="2":::
-      The **Deployment** control on the work item form shows the stages that the work item is linked to. You can see the status of some runs and open each stage or run by expanding a stage. For more information, see [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md).  
+      The **Deployment** control on the work item form shows the stages that the work item is linked to. You can see the status of some runs and open each stage or run by expanding a stage. For more information, see [Link and view work items to deployments](../boards/backlogs/add-link.md#link-work-items-to-deployments).  
    :::column-end:::
 :::row-end:::
 ---  

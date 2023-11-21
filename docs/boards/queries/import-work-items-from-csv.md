@@ -62,7 +62,7 @@ All work items that you import get created in a *New* state. This rule means tha
 
    :::image type="content" source="media/import-csv/imported-file.png" alt-text="Screenshot showing Save button for imported work items.":::
 
-	> [!NOTE]  
+	> [!TIP]  
 	> Don't assign IDs to new work items that you're adding, otherwise you will receive an error message. 
    >
    > *TFS401232: Work item 1794 does not exist, or you do not have permissions to read it.*
@@ -73,6 +73,9 @@ All work items that you import get created in a *New* state. This rule means tha
 
 > [!TIP]   
 > You can add parent-child links between work items you import by indenting the title columns as shown in the example later in this article, [Can I import a CSV file that have parent-child links?](#tree-items). However, you can't specify any other link types when importing or updating work items.  
+
+> [!NOTE]  
+> You can import up to 1,000 work items at a time. If you have more than 1,000 work items to import, break them into multiple files and import them separately. 
 
 ## Update existing work items
 
