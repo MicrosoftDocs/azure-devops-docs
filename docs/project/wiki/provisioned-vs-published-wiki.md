@@ -108,7 +108,7 @@ With versioning, you can publish different content versions to distinct wikis, b
 
 1. Clone the wiki repository to take backup of all its content. The **More options** has the clone wiki URL, which can be used to clone the wiki.
 
-2. Get the git repository ID that backs your wiki. You can use the [REST API](/rest/api/azure/devops/wiki/wikis/get?view=azure-devops-rest-7.1&tabs=HTTP) to get all the wikis in the project.
+2. Get the git repository ID that backs your wiki. You can use the [REST API](/rest/api/azure/devops/wiki/wikis/get?view=azure-devops-rest-7.1&tabs=HTTP&preserve-view=true) to get all the wikis in the project.
    
    For example, `GET https://fabrikam.visualstudio.com/sampleProject/_apis/wiki/wikis?api-version=4.1` returns all the wikis in the project, so you can choose which one to delete.
 
