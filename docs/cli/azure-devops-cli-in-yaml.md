@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/22/2021
+ms.date: 11/20/2023
 ---
 
 # Azure DevOps CLI in Azure Pipeline YAML
@@ -97,7 +97,7 @@ If a newer version of Azure CLI is released and the hosted images do not yet hav
     architecture: 'x64'
 
 # Update to latest Azure CLI version
-- bash: pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
+- bash: pip install --pre azure-cli
   displayName: 'Upgrade Azure CLI'
 ```
 
@@ -113,13 +113,15 @@ trigger:
 # Run on multiple Microsoft-hosted agent images
 strategy:
   matrix:
-    linux18:
-      imageName: "ubuntu-18.04"
+    linux22:
+      imageName: "ubuntu-22.04"
     linux20:
       imageName: "ubuntu-20.04"
-    mac1015:
-      imageName: "macos-10.15"
-    macOS11:
+    mac13:
+      imageName: "macos-13"
+    mac12:
+      imageName: "macos-12"
+    mac11:
       imageName: "macos-11"
     windows2019:
       imageName: "windows-2019"
@@ -174,6 +176,7 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
 
 * Install Azure CLI using Python
   * Python must be installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](/azure/devops/pipelines/tasks/reference/use-python-version-v0#how-can-i-configure-a-self-hosted-agent-to-use-this-task) The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
+
   ```yml
   # Specify python version if you have side-by-side versions
   - task: UsePythonVersion@0
@@ -186,7 +189,7 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
     displayName: 'Upgrade pip'
   
   # Update to latest Azure CLI version, min version required for Azure DevOps is 2.10.1
-  - bash: pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
+  - bash: pip install --pre azure-cli
     displayName: 'Upgrade Azure CLI'
   ```
 
@@ -217,7 +220,7 @@ steps:
   displayName: 'Upgrade pip'
 
 # Update to latest Azure CLI version, min version required for Azure DevOps is 2.10.1
-- bash: pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
+- bash: pip install --pre azure-cli
   displayName: 'Upgrade Azure CLI'
 
 # Install Azure DevOps extension
@@ -230,7 +233,7 @@ steps:
 
 ## Assign the results of an Azure DevOps CLI call to a variable
 
-To store the results of an Azure DevOps CLI call to a pipeline variable, use the `task.setvariable` syntax described in [Set variables in scripts](../pipelines/process/variables.md#set-variables-in-scripts). The following example retrieves the ID of a variable group named **Fabrikam-2021** and then uses this value in a subsequent step.
+To store the results of an Azure DevOps CLI call to a pipeline variable, use the `task.setvariable` syntax described in [Set variables in scripts](../pipelines/process/variables.md#set-variables-in-scripts). The following example retrieves the ID of a variable group named **Fabrikam-2023** and then uses this value in a subsequent step.
 
 ```yml
 variables:
@@ -245,15 +248,15 @@ steps:
 - bash: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases true
   displayName: 'Set default Azure DevOps organization and project'
 
-- bash: echo "##vso[task.setvariable variable=variableGroupId]$(az pipelines variable-group list --group-name Fabrikam-2021 --query [].id -o tsv)"
+- bash: echo "##vso[task.setvariable variable=variableGroupId]$(az pipelines variable-group list --group-name Fabrikam-2023 --query [].id -o tsv)"
   env:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
-  displayName: 'Get Fabrikam-2021 variable group id'
+  displayName: 'Get Fabrikam-2023 variable group id'
 
 - bash: az pipelines variable-group variable list --group-id $(variableGroupId)
   env:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
-  displayName: 'List variables in Fabrikam-2021 variable group'
+  displayName: 'List variables in Fabrikam-2023 variable group'
 ```
 
 For more examples of working with variables, including working with variables across jobs and stages, see [Define variables](../pipelines/process/variables.md). For examples of the query syntax used in the previous example, see [How to query Azure CLI command output using a JMESPath query](/cli/azure/query-azure-cli).
