@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
-ms.date: 11/20/2023 
+ms.date: 11/21/2023 
 ---
 
 # View wiki page history and revert changes
@@ -149,5 +149,6 @@ To revert to an earlier committed version of a publish as code wiki page, one th
 - [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
 - [Undo (revert) repo changes](../../repos/git/undo.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
-- [Review history](../../repos/git/review-history.md) 
-- [Clone an existing Git repo](../../repos/git/clone.md)  
+- [Review Git history](../../repos/git/review-history.md) 
+- [Clone an existing Git repo](../../repos/git/clone.md)
+  

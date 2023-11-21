@@ -10,7 +10,7 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/25/2022 
+ms.date: 11/21/2023 
 ---
 
 # Publish a Git repo to a wiki
@@ -19,28 +19,18 @@ ms.date: 10/25/2022
 
 You can publish content that you already maintain in a Git repo to a wiki. For example, this content could be software development kit (SDK) support, product documentation, or a README file. You can also publish multiple wikis within a single team project.
 
-In this quickstart, learn how to do the following tasks:
-
-> [!div class="checklist"]
-> * Open wiki
-> * Publish a Git repo to a wiki
-> * Edit pages of a published wiki
-> * Add pages to a published wiki
-> * Change the page sequence of a published wiki
-> * Make a page the wiki home page
-
 When you publish your Markdown files to a wiki, you gain the following benefits:
 
 - Organize the content into a hierarchical page structure
-- Table of contents that readers can browse and filter
+- Browse and filter the table of contents
 - Publish new versions of the content
 - Manage content in the same way you manage your code base
-- Readers can search the wiki easily using the wiki search feature
+- Search the wiki easily using the wiki search feature
 
-For more information about managing the different wiki types, see [Provisioned vs. published code as wiki](provisioned-vs-published-wiki.md).
+For more information, see [Provisioned vs. published code as wiki](provisioned-vs-published-wiki.md).
 
 > [!TIP]
-> You can add and edit content you've published to a wiki using the steps outlined in this article. You can also work offline and update wiki content in the same way that you collaborate on code through a Git repo. For more information, see [Update wiki pages offline](wiki-update-offline.md).
+> You can add and edit content that you published to a wiki using the steps in this article. You can also work offline and update wiki content in the same way that you collaborate on code through a Git repo. For more information, see [Update wiki pages offline](wiki-update-offline.md).
 
 <a id="prereq">  </a>
 
@@ -85,7 +75,7 @@ Do the following steps when you maintain Markdown files in an existing Git repo 
 	> [!NOTE]
 	> The **Publish code as wiki** option won't appear if your project doesn't have a Git repo defined. [Create a new Git repo](../../repos/git/create-new-repo.md), and then return and refresh this page.
 
-1. If you've already provisioned a team project wiki, select **Publish code wiki**.
+1. If you already provisioned a team project wiki, select **Publish code wiki**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Publish code as wiki menu option.](media/wiki/publish-code-menu-option.png)
@@ -102,7 +92,7 @@ Do the following steps when you maintain Markdown files in an existing Git repo 
 	For example, the following image shows the published repo for the files that are contained in the azure-docs-sdk-node repo that you selected in Step 2.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Published wiki from existing repo Markdown files](media/wiki/published-wiki.png)
+	> ![Screenshot of Published wiki from existing repo Markdown files.](media/wiki/published-wiki.png)
  
 	The wiki table of contents (TOC) contains the following files:
    - Each Markdown file (file type= `.md`) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from the Markdown file name.
@@ -183,7 +173,7 @@ Do the following steps to edit, rename, or delete a wiki page.
     > ![Screenshot of wiki action options, Edit, rename, or delete.](media/wiki/publish-code-edit-rename-file.png)
 
 > [!NOTE]  
-> You can manage your wiki repo in the same way you manage any other Git repo by defining branch policies on the branch that you selected to publish to a wiki. But, without any policies defined, you can make changes and push them directly to the branch from your web portal or from a client.  
+> Manage your wiki repo in the same way you manage any other Git repo by defining branch policies on the branch that you selected to publish to a wiki. But, without any policies defined, you can make changes and push them directly to the branch from your web portal or from a client.  
 
 ### Edit a page
 
@@ -208,7 +198,7 @@ All pages that you want to appear in the TOC must be the file type `.md`.
 
 1. Select **Rename** to rename the file accordingly.
 
-For example, in the following image, we rename *new-home-page.md* to *New-Home-Page.md*. This page appears in the TOC with the label, "New Home Page".
+For example, in the following image, we rename *new-home-page.md* to *New-Home-Page.md*. This page appears in the TOC with the label, "New Home Page."
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of the Rename Commit dialog.](media/wiki/publish-wiki-rename-file-commit-dialog.png)
@@ -217,7 +207,7 @@ Page titles are case-sensitive and must be unique within the folder, and 235 cha
 
 ### Delete a page
 
-You can delete any Markdown files that you don't want to appear in the wiki from the published folder. If you've included the file in an `.order` file, then delete its entry from the `.order` file. For more information, see [Change the page sequence, add, or update an .order file](#page-sequence).
+You can delete any Markdown files that you don't want to appear in the wiki from the published folder. If you included the file in an `.order` file, then delete its entry from the `.order` file. For more information, see [Change the page sequence, add, or update an .order file](#page-sequence).
 
 <a id="add-page" />
 
@@ -302,7 +292,7 @@ By default, the first file that appears at the root within alphabetical order is
 
 1. Change the home page by setting the page sequence within the root `.order` file.
 
-For example, enter the page name into the first line:  
+For example, enter the page name into the first line.  
 
 ```
 New home page name here
@@ -321,14 +311,32 @@ As displayed in the following example, Test has both a folder and an `.md` file,
 
 ![Screenshot showing Promotion of a folder to a page.](media/promote-folder.png)
 
-## Next steps
+## Select a wiki version
 
-> [!div class="nextstepaction"]
-> [Un-publish a wiki or select a version](wiki-select-unpublish-versions.md)
+To select a wiki version, choose the version from the branch options from the wiki page.
+
+:::image type="content" source="media/wiki/publish-wiki-select-version.png" alt-text="Screenshot showing a selected wiki version from the wiki dropdown menu.":::
+
+## Unpublish a code wiki
+
+If you no longer want a repository to be published as a wiki, you can choose to unpublish it.
+
+> [!WARNING]
+> Unpublishing a wiki unpublishes the entire code wiki, which includes all versions of the repository that you have published previously.
+
+1. Select the wiki you want to unpublish, open the context menu, and select **Unpublish wiki**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of Unpublish a wiki confirmation dialog.](media/wiki/unpublish-wiki-code-option.png)
+
+2. Confirm that you want to unpublish the wiki by choosing **Unpublish**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of unpublishing wiki.](media/wiki/unpublish-wiki.png)
 
 ## Related articles
 
 - [Follow a wiki page and get notifications](follow-notifications-wiki-pages.md)
 - [Provisioned vs. published wiki](provisioned-vs-published-wiki.md)
 - [Update wiki offline](wiki-update-offline.md)
-- [Wiki Markdown guidance](wiki-markdown-guidance.md)
+- [Wiki Markdown guidance](markdown-guidance.md#wiki-markdown-guidance)
