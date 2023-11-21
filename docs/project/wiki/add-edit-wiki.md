@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 07/06/2022
+ms.date: 11/21/2023
 ---
 
 # Add and edit wiki pages
@@ -19,22 +19,12 @@ ms.date: 07/06/2022
 
 You can add a title and content to a page, after the [wiki Git repository is provisioned](./wiki-create-repo.md) for your team project. There's a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
-Learn how to do the following tasks:  
-
-> [!div class="checklist"]
-> * Open wiki
-> * Add a wiki page
-> * View revisions for a page
-> * Edit and delete wiki pages
-> * Reorder wiki pages
-> * Make a page the wiki home page
-
-While authoring pages using [Markdown format](./markdown-guidance.md), you can also use the format pane for rich-text formatting and inserting images, attachments, and links.  
+While you author pages using [Markdown format](./markdown-guidance.md), you can also use the format pane for rich-text formatting and inserting images, attachments, and links.  
 
 > [!div class="mx-imgBorder"]  
 > ![Wiki home page](media/wiki/wiki-edit.png)
 
-As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select :::image type="icon" source="../../media/icons/context-menu.png" border="false":::next to **Save**. For more shortcuts, see [Keyboard shortcuts to manage wiki pages](wiki-keyboard-shortcuts.md).
+As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select :::image type="icon" source="../../media/icons/context-menu.png" border="false":::next to **Save**. For more shortcuts, see [Keyboard shortcuts to manage wiki pages](../navigation/keyboard-shortcuts.md#wiki-keyboards-shortcuts.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Save page with a custom message](media/wiki/wiki-save-with-message.png)
@@ -65,7 +55,7 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 ## Prerequisites
 
-* You must have a provisioned wiki. If your wiki hasn't yet been created, [create it now](wiki-create-repo.md).
+* You must have a [provisioned wiki](wiki-create-repo.md).
 * You must be a member of the team project as a contributor to add or update wiki pages.
 * You must have Basic access level to edit the project wiki.
 
@@ -84,9 +74,9 @@ To add another page, choose **New page**. Or, to add a subpage, open the context
 Specify a unique title of 235 characters or less. Page titles are case-sensitive. For other title restrictions, see [Wiki Git repository files and file structure, File naming conventions](wiki-file-structure.md#file-naming-conventions).
 
 > [!div class="mx-imgBorder"]  
-> ![Create wiki and first page](media/wiki/add-new-page.png)
+> ![Screenshot of first wiki page.](media/wiki/add-new-page.png)
 
-You can also use keyboard shortcuts to add a new page by pressing **n** or add a subpage by pressing **c**. For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage wiki pages](wiki-keyboard-shortcuts.md).
+You can also use keyboard shortcuts to add a new page by pressing **n** or add a subpage by pressing **c**. For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage wiki pages](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -161,10 +151,9 @@ To edit an existing wiki page, open the page and select **Edit**, or open the co
 For code wikis, you can edit a page in the side-by-side editor, using the markdown toolbar to create your content. This experience is identical to the process in a project wiki. You can also edit wiki pages in the Repos hub also by using the option, **Edit in Repos**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Edit wiki page.](media/wiki/edit-in-repos.png)
+> ![Screenshot of Edit wiki page.](media/wiki/edit-in-repos.png)
 
-> [!NOTE]  
-> If you have branch policies in your code wiki, use **Edit in Repos** to create a branch and continue editing.
+If you have branch policies in your code wiki, use **Edit in Repos** to create a branch and continue editing.
 
 ::: moniker-end
 
@@ -252,7 +241,7 @@ az devops wiki page delete --path
 
 ### Example
 
-Delete a wiki page with the path 'my wiki' in a wiki named 'myprojectwiki'.
+Delete a wiki page with the path 'my wiki' in a wiki named 'myprojectwiki.'
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -282,7 +271,7 @@ To change the parent-child relationship of a page, open its context menu and sel
 > [!div class="mx-imgBorder"]  
 > ![Move wiki page in the hierarchy](media/wiki/wiki-move-page.png)
 
-For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage wiki pages](wiki-keyboard-shortcuts.md).
+For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage wiki pages](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts).
 
 ## Make a page the wiki home page
 
@@ -292,3 +281,10 @@ By default, the first page you add when you create a wiki is set as the wiki hom
 
 > [!div class="nextstepaction"]
 > [View wiki page history and revert](wiki-view-history.md)
+
+## Related articles
+
+- [Follow a wiki page and get notifications](follow-notifications-wiki-pages.md)
+- [Provisioned vs. published wiki](provisioned-vs-published-wiki.md)
+- [Update wiki offline](wiki-update-offline.md)
+- [Wiki Markdown guidance](markdown-guidance.md#wiki-markdown-guidance)

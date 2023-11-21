@@ -88,7 +88,7 @@ The following table summarizes some of the features that help you work with your
       Wiki
    :::column-end::: 
    :::column span="3":::
-      [Embed Azure Boards query results in Wiki](../project/wiki/wiki-markdown-guidance.md#embed-azure-boards-query-results-in-wiki). 
+      [Embed Azure Boards query results in Wiki](../project/wiki/markdown-guidance.md#embed-azure-boards-query-results-in-wiki). 
    :::column-end:::
 :::row-end:::
 ---  
