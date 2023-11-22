@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/01/2022
+ms.date: 11/21/2023
 ---
 
 # Remove, delete, or restore work items in Azure Boards
@@ -71,7 +71,7 @@ To move a work item from one project to another, or to change the work item type
 ::: moniker range="tfs-2018"
 :::row:::
    :::column span="1":::
-      [Permanently delete or destroy work items from the command line](#witadmin-cli)  
+      [Permanently delete or destroy work items from the command line](#delete-or-destroy-work-items-from-the-command-line)  
    :::column-end:::
    :::column span="2":::
        Be a member of the **Project Administrators** group.
@@ -114,7 +114,10 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 
 You can act on individual work items or bulk modify several work items. 
 
-From the web portal, you can multi-select several work items from a backlog or query results page. You can also do a bulk update using the associated feature. To delete or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md).  
+From the web portal, you can multi-select several work items from a backlog or query results page. You can also do a bulk update using the associated feature. To delete or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md).
+
+You can also delete and/or destroy work items in batch with a REST API. For more information, see [Work Items - Delete](/rest/api/azure/devops/wit/work-items/delete?view=azure-devops-rest-6.0&tabs=HTTP&viewFallbackFrom=azure-devops-rest-7.0&preserve-view=true).
+[!INCLUDE [feature-added-2022-1](../../includes/feature-added-2022-1.md)]
 
 <a id="remove"> </a>  
 
@@ -142,11 +145,12 @@ To cause removed items to not show up in queries, you must add a clause that fil
 Deleted work items don't appear in your backlogs, boards, or queries. When you delete an item, it goes to the **Recycle Bin**. You can restore it from there if you change your mind. To delete a test case, test plan, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
 ::: moniker range=">= azure-devops-2019"
 
-You can delete work items from one of the following ways: 
+You can delete work items in one of the following ways: 
 - The work item form
 - The **Work Items** page :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More Actions** menu
 - The Kanban board card :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: context menu
-- A backlog or query results page  
+- A backlog or query results page
+- [REST API](/rest/api/azure/devops/wit/work-items/delete-work-items?view=azure-devops-rest-7.1&preserve-view=true&tabs=HTTP)
 
 1. Initiate your delete operation:
    - From the work item form, open the work item, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Actions**, and select **Delete**. 
@@ -229,28 +233,6 @@ Restore deleted work items or permanently delete them from the web portal **Recy
 
 ::: moniker-end
 
-<a id="restore-work-items" />
-
-::: moniker range="tfs-2018"  
-
-You restore deleted work items from the web portal **Recycle Bin**. 
-
-1. Choose **Work** > **Backlogs** or **Work** > **Queries** and then choose the **Recycle Bin**.  
- 
-	![Screenshot to Open Recycle bin, TFS 2018 version.](media/move-change-delete/open-recycle-bin.png)
-
-	A new browser tab opens with the query that lists work items added to the **Recycle Bin**. 
-
-2. Select the items you want to restore  and then choose **Restore**.  
-
-   ![[Screenshot of Restore selected items, TFS 2018 version.](media/move-change-delete/restore-from-recycle-bin.png) 
-
-   Optionally, you can choose to permanently delete the items.
-
-3. Confirm your selection. 
-
-::: moniker-end
-
 > [!NOTE]
 > Deleted test artifacts don't appear in the **Recycle Bin** and can't be restored. When you delete a test artifact, all of its associated child items, such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history also get deleted.
 
@@ -289,40 +271,6 @@ The following command permanently deletes the bug with the ID 864 and doesn't pr
 az boards work-item delete --id 864 --destroy --yes
 ```
 
-::: moniker-end
-
-
-::: moniker range="tfs-2018"
-
-<a id="witadmin-cli" />
- 
-### Destroy work items from the command line  
-
-Use the `witadmin destroywi` command to permanently remove work items from the data store. A permanent delete means all information in the work tracking data store is deleted and can't be restored nor reactivated.  
-
-> [!NOTE]   
-> Deleting work items from the `witadmin` command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards cloud service.  
-
-Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the `witadmin.exe` tool has been installed.  
-
-For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (`witadmin destroywi`)](/previous-versions/azure/devops/reference/witadmin/remove-work-items-permanently)).  
-
-`%programfiles(x86)%\Microsoft Visual Studio\2018\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
-
-On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
-
-The `witadmin` command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
-
-- To delete several work items, enter the server name and directory path to the collection. For example:   
-
-	``` CLI
-	witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23
-	```
-- To delete a single work item, enter the ID as shown:  
-
-	``` CLI
-	witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003
-	```    
 ::: moniker-end
 
 ## Delete and restore processes 
