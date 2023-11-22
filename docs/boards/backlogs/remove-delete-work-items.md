@@ -71,7 +71,7 @@ To move a work item from one project to another, or to change the work item type
 ::: moniker range="tfs-2018"
 :::row:::
    :::column span="1":::
-      [Permanently delete or destroy work items from the command line](#witadmin-cli)  
+      [Permanently delete or destroy work items from the command line](#delete-or-destroy-work-items-from-the-command-line)  
    :::column-end:::
    :::column span="2":::
        Be a member of the **Project Administrators** group.
