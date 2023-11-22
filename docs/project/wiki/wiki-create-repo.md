@@ -17,7 +17,7 @@ ms.date: 08/03/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Learn how to open a wiki and provision a Git repo for your wiki.
+In this article, learn how to open a wiki and provision a Git repo for your wiki.
 
 Every team project can have a wiki. Use the wiki to share information with your team to understand and contribute to your project.
 
