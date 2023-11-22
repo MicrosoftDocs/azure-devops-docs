@@ -83,9 +83,11 @@ Add one or more reactions to a comment by choosing a smiley icon at the upper-ri
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 ### Save a comment without saving the work item
+
+[!INCLUDE [feature-added-2022-1](../../includes/feature-added-2022-1.md)]
 
 If you only have permissions to add to the **Discussion** of a work item, then you can do so by saving comments. This permission is controlled by Area Path nodes and the **Edit work item comments in this node** permission. For more information, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
