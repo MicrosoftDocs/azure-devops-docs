@@ -31,7 +31,7 @@ When you add a Markdown-based comment, there's a Markdown editor and preview tab
 
 ![Screenshot of wiki comments in Markdown and preview tabs.](media/wiki/wiki-comments-markdown-preview-tabs.png)
 
-## Edit or delete acomment
+## Edit or delete a comment
 
 Edit or delete any comments that you added to a wiki.
 
