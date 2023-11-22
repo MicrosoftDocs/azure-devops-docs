@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 11/05/2020
+ms.date: 11/22/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -30,7 +30,7 @@ As a first step in resolving connectivity issues with Azure DevOps, complete the
 
 4. Close all browsers and close the Visual Studio IDE.
 
-5. Use a private browser session to retry the connection. If the issue is with the Visual Studio IDE, remove the connection, and then readd it.
+5. Use a private browser session to retry the connection. If the issue is with the Visual Studio IDE, remove the connection, and then readd it in Team Explorer.
 
 ## Troubleshoot signing in
 
@@ -46,9 +46,9 @@ The most common error page is the *401 Not Authorized* error, which occurs when 
 * Your identity isn't a member of the organization.
 * Your identity has an invalid or missing license assignment.
 * Your identity doesn't have enough memberships to access the resource. For example, membership to the Reader/Contributors group.
-* Your identity is a B2B guest in the tenant, and the invitation hasn't been accepted.
+* Your identity is a B2B guest in the tenant, and the invitation isn't accepted.
 
-If you think you're a member of the organization, but are blocked by this error page, [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
+If you think you're a member of the organization, but get this error page, [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ### Scenario 1
 
@@ -59,15 +59,15 @@ Your work or school Microsoft Entra account doesn't have access, but your person
 > [!div class="mx-imgBorder"]
 > ![troubleshoot Azure DevOps connection 401 error 2](media/troubleshoot-connection/401_AAD.png)
 
- A highly specific 401 error case. In this case, both a personal Microsoft account and a work or school account (Microsoft Entra ID) that have the same sign-in address exist. You've signed in with your work or school account, but your personal account is the identity with access to the organization.
+ A highly specific 401 error case. In this case, both a personal Microsoft account and a work or school account (Microsoft Entra ID) that have the same sign-in address exist. You signed in with your work or school account, but your personal account is the identity with access to the organization.
 
 ### Mitigation
 
-In some cases, you might not know you have two identities with the same sign-in address. The work or school Microsoft Entra account might have been created by an administrator when you were added to Office365 or Microsoft Entra ID.
+In some cases, you might not know you have two identities with the same sign-in address. It's possible that an administrator created the work or school Microsoft Entra account when you were added to Office 365 or Microsoft Entra ID.
 
 To sign out of your current work or school Microsoft Entra account, select **Sign in with your personal MSA account**, and then sign in by using your personal Microsoft account. After authentication, you should have access to the organization.
 
-* If you can´t access to the organization, make sure that your Microsoft Entra ID still exists and that your work or school account is in the Microsoft Entra tenant.
+* If you can't access to the organization, make sure that your Microsoft Entra ID still exists and that your work or school account is in the Microsoft Entra tenant.
 
 > [!TIP]
 > To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity, your work or school account, or Microsoft Entra account, uses your sign-in address.
@@ -99,11 +99,11 @@ Here's a list of the most frequently reported connection problems and what to do
 
 2. Verify that your computer is connected to the network and that it can access network resources.
 
-3. Verify that Azure DevOps Server hasn't been taken offline. Talk with your Azure DevOps Server administrator.
+3. Verify that Azure DevOps Server isn't offline. Talk with your Azure DevOps Server administrator.
 
-4. Check whether your project has been moved to another project collection in Azure DevOps Server. If it has been moved, you must create a connection to the new server name.
+4. Check whether your project was moved to another project collection in Azure DevOps Server. If it was moved, you must create a connection to the new server name.
 
-For additional troubleshooting tips, see [TF31002: Unable to connect to this Azure DevOps Server](../organizations/projects/tf31002-unable-connect-tfs.md).
+For more troubleshooting tips, see [TF31002: Unable to connect to this Azure DevOps Server](../organizations/projects/tf31002-unable-connect-tfs.md).
 
 ::: moniker-end
 
