@@ -383,13 +383,6 @@ sections:
         answer: |
           A: Yes, you can use these prepaid funds for all services that Azure DevOps offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your organization](set-up-billing-for-your-organization-vs.md).
           
-          The only exclusion is for extensions offered by partners. These charges appear on your next "overage" invoice. Typically, charges occur monthly, but because of historical rules for some EA customers, an overage invoice might not be issued for several months. Consult a licensing specialist for your EA if you need to know what number of other purchases aren't eligible for Azure Monetary Commitment funds, trigger an overage invoice.
-
-      - question: |
-          Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to pay for Azure DevOps?
-        answer: |
-          A: You can use the [Azure Prepayment](/marketplace/azure-consumption-commitment-benefit) (previously called monetary commitment) funds from your Enterprise Agreement to pay for Azure DevOps services. 
-          
   - name: Other questions
     questions:
       - question: |
