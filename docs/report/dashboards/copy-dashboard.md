@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2022'
-ms.date: 11/02/2023
+ms.date: 11/22/2023
 ---
 
 # Copy a dashboard 
@@ -17,7 +17,9 @@ ms.date: 11/02/2023
 
 You can create a new dashboard by copying the widgets from an existing one and adjusting them for a different team or project. This way, you don’t have to start from scratch when you want to make a similar dashboard. To copy a dashboard, you begin with the source dashboard and then select the destination team and the destination project. The copied dashboard has the same widgets as the source dashboard, but you can configure them according to the team you chose.
 
-To create a dashboard for a team or project, see [Add, rename, and delete dashboards](dashboards.md). To add a team or project, see [Add a team](../../organizations/settings/add-teams.md) or [Create a project](../../organizations/projects/create-project.md) 
+To create a dashboard for a team or project, see [Add, rename, and delete dashboards](dashboards.md). To add a team or project, see [Add a team](../../organizations/settings/add-teams.md) or [Create a project](../../organizations/projects/create-project.md).
+
+[!INCLUDE [feature-added-2022-1](../../includes/feature-added-2022-1.md)]
 
 <a id="permissions">  </a>
 
