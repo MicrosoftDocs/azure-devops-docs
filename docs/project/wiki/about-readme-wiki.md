@@ -1,7 +1,7 @@
 ---
-title: Share information with a project, repo, README, or Wiki
+title: Share information with a project, repo, README, or wiki
 titleSuffix: Azure DevOps
-description: Share information using a project, repo, README, or Wiki in Azure DevOps. 
+description: Share information using a project, repo, README, or wiki in Azure DevOps. 
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
 ms.assetid:  
@@ -13,11 +13,11 @@ ms.date: 07/06/2022
 monikerRange: '<= azure-devops'
 ---
 
-# About Wikis, READMEs, and Markdown
+# About wikis, READMEs, and Markdown
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within a team project Wiki, content you add to a dashboard, your team project README file, or other repository README file.  
+To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within a team project wiki, content you add to a dashboard, your team project README file, or other repository README file.  
 
 ## Wiki
 
@@ -41,43 +41,42 @@ The following features are supported for the team project wiki.
 
 - [Add and edit wiki pages](add-edit-wiki.md)  
 - [View wiki page history and revert](wiki-view-history.md)
-- [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md)
 - [Clone and update wiki content offline](wiki-update-offline.md)
-- [Use Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md)
-- [Filter or print Wiki content](filter-print-wiki.md) <sup>1</sup>  
+- [Use wiki keyboard shortcuts](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts)
+- [Filter or print wiki content](filter-print-wiki.md) <sup>1</sup>  
 
 > [!NOTE]
-> The print feature may not be available from the Firefox web browser.
+> The print feature might not be available from the Firefox web browser.
 
 ### Format wiki content
 
-- [Markdown format](markdown-guidance.md)  
-- [HTML tags](wiki-markdown-guidance.md#html)  
+- [Markdown format](markdown-guidance.md#wiki-markdown-guidance)  
+- [HTML tags](markdown-guidance.md#html)  
 - [Insert and resize images](markdown-guidance.md#images)
-- [Link to work items using #](wiki-markdown-guidance.md#link-work-items)
+- [Link to work items using #](markdown-guidance.md#link-work-items)
 - [Attach files](markdown-guidance.md#attach)  
 - [Mathematical notation and characters](markdown-guidance.md#math-notation)  
-- [Table of contents (TOC) for Wiki pages](wiki-markdown-guidance.md#toc-wiki)  
+- [Table of contents (TOC) for wiki pages](markdown-guidance.md#toc-wiki)  
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-The following features are supported for the team project wiki you create in the indicated TFS version or later versions. To learn more, see [Create a wiki for your team project](wiki-create-repo.md) and [Add and edit wiki pages](add-edit-wiki.md).
+The following features are supported for a team project wiki. For more information, see [Create a wiki for your team project](wiki-create-repo.md) and [Add and edit wiki pages](add-edit-wiki.md).
 
 > [!div class="mx-tdBreakAll"]
 > |Feature | TFS version |  
 > |--------|--------------|  
 > |[Markdown format](markdown-guidance.md) | TFS 2018 |
-> |[HTML tags](wiki-markdown-guidance.md#html) | TFS 2018 |
+> |[HTML tags](markdown-guidance.md#html) | TFS 2018 |
 > |[Insert and resize images](markdown-guidance.md#images) | TFS 2018 |
-> |[Link to work items using #](wiki-markdown-guidance.md#link-work-items) | TFS 2018 |  
+> |[Link to work items using #](markdown-guidance.md#link-work-items) | TFS 2018 |  
 > |[Attach files](markdown-guidance.md#attach) | TFS 2018 |  
-> |[Filter Wiki TOC](filter-print-wiki.md) | TFS 2018 |  
+> |[Filter wiki TOC](filter-print-wiki.md) | TFS 2018 |  
 > |[Mathematical notation and characters](markdown-guidance.md#math-notation) |TFS 2018.2 |
-> |[Preview a Wiki page while editing](add-edit-wiki.md) | TFS 2018.2 |
-> |[Print a Wiki page](filter-print-wiki.md) <sup>1</sup> | TFS 2018.2 |
-> |[Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md) | TFS 2018.2 |
+> |[Preview a wiki page while editing](add-edit-wiki.md) | TFS 2018.2 |
+> |[Print a wiki page](filter-print-wiki.md) <sup>1</sup> | TFS 2018.2 |
+> |[Wiki keyboard shortcuts](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts) | TFS 2018.2 |
 
 ::: moniker-end
 
@@ -100,18 +99,15 @@ There are significant differences between how you manage the content for a wiki 
 
 ## Markdown
 
-Markdown makes it easy to format text and include images. You can also link to documents within your project pages, README files, dashboards, and pull request comments.
-
-You can provide guidance to your team in the following places using Markdown:
+Markdown makes it easy to format text and include images. You can also link to documents within your project pages, README files, dashboards, and pull requests. You can provide guidance to your team in the following places using Markdown:
 
 ::: moniker range=">= azure-devops-2019"
-  
 - [Team project wiki](add-edit-wiki.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)
+- [Pull requests](../../repos/git/pull-requests.md)
 
 ::: moniker-end
 
@@ -121,11 +117,11 @@ You can provide guidance to your team in the following places using Markdown:
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md) 
 - [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)
+- [Pull requests](../../repos/git/pull-requests.md)
 
 ::: moniker-end
 
-For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](markdown-guidance.md).
+For supported syntax, see [Use Markdown in Azure DevOps](markdown-guidance.md).
 
 ## READMEs
 

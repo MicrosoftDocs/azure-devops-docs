@@ -9,7 +9,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/19/2023
+ms.date: 11/21/2023
 ---
 
 # Restore a deleted wiki
@@ -133,11 +133,11 @@ The wiki is restored.
 
 1. Go to the URL for your repo: `https://dev.azure.com/<OrgName>/<ProjectName>/_git/classicreleaseoption.wiki`.
 
-2. Search for the history for the main branch, `wikiMaster`.
+2. Search for the history for the main branch, `wikiMain`.
  
 3. Find and select the commit that has the deleted files.
  
-4. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: more actions, and then **Revert**.
+4. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and then **Revert**.
  
 5. Create and complete a pull request.
 
