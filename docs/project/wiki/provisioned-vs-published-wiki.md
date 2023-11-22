@@ -19,7 +19,7 @@ ms.date: 11/21/2023
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=866310 -->
 
-In Azure DevOps, you hcan maintain your wiki content in a [team project wiki](wiki-create-repo.md) or a [published as code wiki](publish-repo-to-wiki.md). With a published as code wiki, you can maintain several versioned wikis to support your content needs, although it's available only if Azure Repos is enabled.
+In Azure DevOps, you can maintain your wiki content in a [team project wiki](wiki-create-repo.md) or a [published as code wiki](publish-repo-to-wiki.md). With a published as code wiki, you can maintain several versioned wikis to support your content needs, although it's available only if Azure Repos is enabled.
 
 While both options maintain the wiki content in Git repositories, the way you add, update, and manage the wiki content differs.
 
