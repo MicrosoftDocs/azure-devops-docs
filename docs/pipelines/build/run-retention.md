@@ -105,7 +105,7 @@ This is similar to above, only the condition needs to change:
 
 ```yaml
 - task: PowerShell@2
-  condition: and(succeeded(), not(canceled()), startsWith(variables['Build.SourceBranchName'], 'releases/'))
+  condition: and(succeeded(), not(canceled()), startsWith(variables['Build.SourceBranch'], 'releases/'))
   name: RetainReleaseBuildOnSuccess
   displayName: Retain Release Build on Success
   inputs:
