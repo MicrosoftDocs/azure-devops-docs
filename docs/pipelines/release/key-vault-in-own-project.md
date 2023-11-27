@@ -97,7 +97,7 @@ In this step, we will create a new [service principal](/cli/azure/azure-cli-sp-t
 1. Run the following command to create a new service principal:
 
     ```Azure CLI
-    az ad sp create-for-rbac -name YOUR_SERVICE_PRINCIPAL_NAME
+    az ad sp create-for-rbac --name YOUR_SERVICE_PRINCIPAL_NAME
     ```
 
 1. Your output should match the example below. Be sure to copy the output of your command, as you will need it to create the service connection in the upcoming step. 
