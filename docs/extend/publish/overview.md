@@ -249,6 +249,8 @@ The team likely looks at other parameters, such as active uptake of your offerin
 
 Once a publisher is a Top Publisher, then all its future updates and offerings must meet the previously listed requirements.
 
+::: moniker-end
+
 ## Respond to Marketplace extension reviews
 
 You can respond to reviews that customers leave for your extensions in the Visual Studio Marketplace. Find and select **Reply** next to a review if you have one of the following permissions: owner, creator, or contributor.
