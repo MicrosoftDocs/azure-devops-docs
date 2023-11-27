@@ -204,7 +204,7 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>    
        <tr>
-         <td><a href="azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automated team work item rules](azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules (general availability)</a></td>
+         <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules (general availability)</a></td>
          <td>Boards</td>
          <td>2023 Q4</td>
          <td>Future</td>
@@ -500,7 +500,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automate rules for updating work items](azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules (general availability)</a></td>
+        <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules (general availability)</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
