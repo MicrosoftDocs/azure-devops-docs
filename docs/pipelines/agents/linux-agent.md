@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 10/09/2023
+ms.date: 11/27/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -54,6 +54,8 @@ We support the following subset of .NET 6 supported distributions:
   * ARM64
     * Debian 10+
     * Ubuntu 22.04, 20.04, 18.04
+  * Alpine x64
+    * Alpine Linux 3.13 and higher ([requires agent 3.227 or higher](/azure/devops/release-notes/2023/sprint-228-update#azure-pipelines-agent-now-supports-alpine-linux))
 * **Git** - Regardless of your platform, you will need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
 * **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
