@@ -31,28 +31,30 @@ With Azure Artifacts upstream sources, developers are able to consume packages f
 
 - Download and install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
+## Enable upstream sources on your feed
+
+If you don't have a feed, follow these steps to create a new one and make sure to check the upstream sources checkbox to enable them. If you already have a feed, you can jump to the [next step](#add-nuget-gallery-upstream-source) to add the NuGet Gallery as an upstream source.
+
+[!INCLUDE [](../includes/create-feed.md)]
+
 ## Add NuGet Gallery upstream source
+
+If you've checked the upstream sources checkbox when making your feed, NuGet Gallery should have been added automatically. If not, add it manually by following these steps:
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed.
 
-1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) button to navigate to **Feed settings**.
+1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to your **Feed settings**.
 
-1. Select **Upstream Sources**, and then select **Add Upstream**.
+1. Select **Upstream Sources**, and then select **Add Upstream** to add a new upstream source.
 
-    :::image type="content" source="./media/settings-add-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
+1. Select **Public source**, and then select **NuGet Gallery** from the dropdown menu.
 
-1. Select **Public source**.
-
-    :::image type="content" source="../media/add-new-upstream.png" alt-text="Screenshot showing how to add a new upstream source.":::
-
-1. Select **NuGet Gallery** from the dropdown menu. Select **Save** when you are done.
-
-    :::image type="content" source="./media/nuget-gallery-source.png" alt-text="Screenshot showing how to add the nuget.org upstream source.":::
-
-    > [!NOTE]
-    > The service index location for nuget.org is `https://api.nuget.org/v3/index.json`.
-
-1. Select **Save** at the top right corner to save your changes.
+1. Select **Save** when you're done, and then select **Save** one more time at the top right corner to save your changes.
+    
+> [!NOTE]
+> The service index location for nuget.org is `https://api.nuget.org/v3/index.json`.
 
 ## Update nuget.config
 
