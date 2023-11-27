@@ -57,6 +57,12 @@ When you turn them on at organization level, it is on for all projects in that o
 
 :::moniker-end
 
+:::moniker range="> azure-devops-2022"
+
+To improve the security of newly created organizations, starting with [Sprint 226](/azure/devops/release-notes/2023/sprint-225-update#disable-creation-of-classic-pipelines-for-new-organizations-pre-announcement), by default we will disable creating classic build and release pipelines for new organizations.
+
+:::moniker-end
+
 ## Next steps
 
 After you plan your security approach, consider how your [repositories](repos.md) provide protection.
