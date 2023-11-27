@@ -937,6 +937,10 @@ Consistency is maintained in the formatting of the TOC.
 > [!NOTE]
 > The tag \[[\_TOC\_]] is case-sensitive. For example, \[[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
 ## Add a subpages table
 
 Add a table of content for subpages (TOSP) to your wiki pages. This table has links to all subpages located under the page where the table of subpages is shown.
