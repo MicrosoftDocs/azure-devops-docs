@@ -3,7 +3,7 @@ title: Plan an approach to secure your YAML pipelines
 description: Apply security recommendations incrementally in your YAML pipelines. Incremental improvements add up.
 ms.assetid: a506a55a-2379-4d14-a52c-f4c28abae0ec
 ms.reviewer: vijayma
-ms.date: 10/27/2023
+ms.date: 11/27/2023
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -54,6 +54,12 @@ You can disable the creation of classic build pipelines and classic release pipe
 You can disable creation of classic pipelines by turning on two toggles at either organization level or project level. To turn them on, navigate to your *Organization / Project settings*, then under the *Pipelines* section choose *Settings*. In the *General* section, toggle on *Disable creation of classic build pipelines* and *Disable creation of classic release pipelines*.
 
 When you turn them on at organization level, it is on for all projects in that organization. If you leave them off, you can choose for which projects you wish to turn them on.
+
+:::moniker-end
+
+:::moniker range="> azure-devops-2022"
+
+To improve the security of newly created organizations, starting with [Sprint 226](/azure/devops/release-notes/2023/sprint-225-update#disable-creation-of-classic-pipelines-for-new-organizations-pre-announcement), by default we will disable creating classic build and release pipelines for new organizations.
 
 :::moniker-end
 
