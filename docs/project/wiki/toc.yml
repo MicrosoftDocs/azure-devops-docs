@@ -40,10 +40,8 @@
     href: wiki-view-history.md
 - name: Reference
   items:
-  - name: Basic Markdown guidance
+  - name: Markdown guidance
     href: Markdown-guidance.md
-  - name: Wiki Markdown guidance
-    href: markdown-guidance.md#wiki-markdown-guidance
   - name: Keyboard shortcuts to manage wiki pages
     href: ../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts
   - name: Default permissions (Security)
