@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/21/2023
+ms.date: 11/27/2023
 ---
 
 # Use Markdown in Azure DevOps
@@ -19,7 +19,7 @@ ms.date: 11/21/2023
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-In this article, find basic syntax guidance for using Markdown in Azure DevOps features, as well as [wiki-specific Markdown](#use-markdown-in-wikis). You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
+In this article, find basic syntax guidance for using Markdown in Azure DevOps features, as well as [wiki Markdown](#use-markdown-in-wikis). You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
 Use Markdown to add formatting, tables, images, and more to your project pages, README files, dashboards, pull requests, [wikis](#use-markdown-in-wikis), and so on.
 
@@ -718,14 +718,14 @@ Mermaid lets you create diagrams and visualizations using text and code.
 
 Wiki supports the following Mermaid diagram types:
 
-- [Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
-- [Gantt charts](https://mermaid-js.github.io/mermaid/#/gantt)
-- [Flowcharts](http://mermaid-js.github.io/mermaid/#/flowchart)
-- [Class diagram](https://mermaid-js.github.io/mermaid/#/classDiagram)
-- [State diagram](https://mermaid-js.github.io/mermaid/#/stateDiagram)
-- [User journey](https://mermaid-js.github.io/mermaid/#/user-journey)
-- [Pie chart](https://mermaid-js.github.io/mermaid/#/pie)
-- [Requirements diagram](https://mermaid-js.github.io/mermaid/#/requirementDiagram)
+- [Sequence diagrams](https://mermaid.js.org/syntax/sequenceDiagram.html)
+- [Gantt charts](https://mermaid.js.org/syntax/gantt.html)
+- [Flowcharts](https://mermaid.js.org/syntax/flowchart.html)
+- [Class diagram](https://mermaid.js.org/syntax/classDiagram.html)
+- [State diagram](https://mermaid.js.org/syntax/stateDiagram.html)
+- [User Journey](https://mermaid.js.org/syntax/userJourney.html)
+- [Pie chart](https://mermaid.js.org/syntax/pie.html)
+- [Requirements diagram](https://mermaid.js.org/syntax/requirementDiagram.html)
 
 For more information, see the [Mermaid release notes](https://github.com/mermaid-js/mermaid/releases) and [active requests in the Developer Community](https://developercommunity.visualstudio.com/search?space=21&q=mermaid&stateGroup=active).
 
