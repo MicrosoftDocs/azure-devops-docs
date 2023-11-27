@@ -1,19 +1,35 @@
 ---
 title: Use packages from nuget.org
-description: How to use packages from nuget.org with Azure Artifacts
+description: How to consume packages from nuget.org with Azure Artifacts upstream sources
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 02/14/2022
+ms.date: 11/27/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# NuGet.org upstream source
+# Use packages from NuGet Gallery
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Enabling upstream sources on your feed enables developers to consume packages from public registries such as nuget.org and npmjs.com. In this article, you will learn how to add the NuGet Gallery upstream source to consume NuGet packages from the nuget.org public registry.
+With Azure Artifacts upstream sources, developers are able to consume packages from public registries such as nuget.org and npmjs.com. This article will walk you through the process of setting up your project and using the command line to effectively consume NuGet packages from the NuGet Gallery. In this article, you'll learn how to:
+
+> [!div class="checklist"]    
+> * Enable upstream sources for your feed 
+> * Add NuGet Gallery as an upstream source 
+> * Connect to your feed
+> * Install packages from nuget.org
+
+## Prerequisites
+
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed.
+
+- Download [NuGet](https://www.nuget.org/downloads).
+
+- Download and install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
 ## Add NuGet Gallery upstream source
 
