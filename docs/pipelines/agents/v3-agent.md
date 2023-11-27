@@ -37,7 +37,7 @@ The following operating systems are supported by the 3.x agent.
     * Debian 10+
     * Ubuntu 22.04, 20.04, 18.04
   * Alpine x64
-    * Alpine Linux 3.13 and higher ([requires agent 3.227 or higher](/azure/devops/release-notes/2023/sprint-228-update#azure-pipelines-agent-now-supports-alpine-linux))
+    * [Alpine Linux](https://alpinelinux.org/) 3.13 and higher ([requires agent 3.227 or higher](/azure/devops/release-notes/2023/sprint-228-update#azure-pipelines-agent-now-supports-alpine-linux))
 * **macOS**
   * x64
     * macOS 10.15 "Catalina"
