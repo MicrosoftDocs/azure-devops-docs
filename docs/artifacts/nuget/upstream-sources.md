@@ -56,29 +56,39 @@ If you've checked the upstream sources checkbox when making your feed, NuGet Gal
 > [!NOTE]
 > The service index location for nuget.org is `https://api.nuget.org/v3/index.json`.
 
-## Update nuget.config
+## Connect to feed
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed.
 
 1. Select **Connect to feed**, and then select **NuGet.exe**.
 
-    :::image type="content" source="./media/nuget-config.png" alt-text="A screenshot showing how to connect to NuGet feeds.":::
+1. Add a *nuget.config* file in the same folder as your *.csproj* or *.sln* file. Paste the provided XML snippet into your file. If you use the examples below, make sure you replace the placeholders with the appropriate values for your scenario.
 
-1. Copy the XML snippet in the **Project Setup** section.
-
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <configuration>
-      <packageSources>
-        <clear />
-        <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
-      </packageSources>
-    </configuration>
-    ```
-
-1. Create a new *nuget.config* file in the root of your project.
-
-1. Paste the XML snippet in your nuget.config file.
+    - **Organization-scoped feed**:
+    
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<SOURCE_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
+    
+    - **Project-scoped feed**:
+    
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<SOURCE_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
 
 ## View saved packages
 
