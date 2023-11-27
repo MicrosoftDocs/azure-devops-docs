@@ -230,7 +230,8 @@ For more information on adding policies to your offering, see the [extension man
 
     a. Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in the Visual Studio Marketplace.
     b. Select the publisher and complete the **About you** section in the **Details** tab.
-      :::image type="content" source="media/microsoft-about-you-section.png" alt-text="Screenshot of the "About you" section for Microsoft publishers.":::
+   
+   :::image type="content" source="media/microsoft-about-you-section.png" alt-text="Screenshot of the About you section for Microsoft publishers.":::
     c. Save your changes and select **View profile** to see how it appears to consumers. You can use this profile page to evangelize your offering(s).
 
 > [!NOTE]
@@ -247,8 +248,6 @@ If you got an extension from a Top Publisher and aren't satisfied with your expe
 The team likely looks at other parameters, such as active uptake of your offerings, install/get started counts and ratings & reviews across your offerings before granting the badge. <br> Microsoft reserves the right to grant, reject or revoke the Top Publisher badge at any time.
 
 Once a publisher is a Top Publisher, then all its future updates and offerings must meet the previously listed requirements.
-
-::: moniker range="<= azure-devops"
 
 ## Respond to Marketplace extension reviews
 
@@ -272,9 +271,7 @@ resolve the problem, update your reply with the resolution. You can edit your re
 
 ## Request to void a review
 
-As a publisher, you can appeal to void a review if the issue reported is because of the Marketplace or underlying platform. If the issue is valid, Marketplace admins void the rating. You can **Appeal** from ratings and review section on your extension hub page.  
-
-::: moniker-end
+As a publisher, you can appeal to void a review if the issue reported is because of the Marketplace or underlying platform. If the issue is valid, Marketplace admins void the rating. You can **Appeal** from ratings and review section on your extension hub page.
 
 ## Unpublish an extension
 
