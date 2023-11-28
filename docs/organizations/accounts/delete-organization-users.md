@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
 author: chcomley
-ms.date: 11/08/2022
+ms.date: 11/28/2023
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -28,9 +28,11 @@ If users no longer require access to a team, project, or organization, you can r
 
 ## Prerequisites  
 
-- To remove users, you must be a member of the **Project Collection Administrators** group.  See [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
+- To remove users, you must be a member of the **Project Collection Administrators** group.  For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 
 ## Remove users from your organization
+
+[!INCLUDE [image-differences](../../includes/image-differences.md)]
 
 #### [Browser](#tab/browser)
 
@@ -56,8 +58,8 @@ If users no longer require access to a team, project, or organization, you can r
 
 6. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-with-no-access). Then you're not charged in your next Azure billing cycle.
 
-   To reduce or cancel users for the next month, make updates before the last day of the current month.
-   Your bill won't show the changes until the next month because paid users are monthly purchases.
+To reduce or cancel users for the next month, make updates before the last day of the current month.
+Your bill doesn't show the changes until the next month because paid users are monthly purchases.
 
 ::: moniker-end
 
@@ -79,18 +81,16 @@ If users no longer require access to a team, project, or organization, you can r
 
 5. Choose **Remove** in the confirmation dialog.
 
-6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
+6. To confirm that you removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.yml#users-delay)
 
 7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-with-no-access). Then you're not charged in your next Azure billing cycle.
 
-   To reduce or cancel users for the next month, make updates before the last day of the current month.
-   Your bill won't show the changes until the next month because paid users are monthly purchases.
+To reduce or cancel users for the next month, make updates before the last day of the current month.
+Your bill doesn't show the changes until the next month because paid users are monthly purchases.
 
 ::: moniker-end
-
-The **Users** page isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
