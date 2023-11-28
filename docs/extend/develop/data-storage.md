@@ -108,7 +108,7 @@ There's also a single operation that can be performed on a collection: Get all d
 
 ### Get a document by ID
 
-Obtaining a document from a collection using its identifier is straightforward, like the following example code:
+Obtaining a document from a collection using its identifier is straightforward, like the following example:
 
 ```js
     // Acquire data service
