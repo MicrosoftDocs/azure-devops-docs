@@ -91,7 +91,7 @@ You must share your extension with an organization before you can install it in 
 
 1. Close the panel.
 
-   Your extension can now be installed into this organization.
+Your extension can now be installed into this organization.
 
 ## Install your extension
 
@@ -116,9 +116,11 @@ Congratulations! You installed your extension into an organization and you're re
 
 1. Select **Proceed to organization** at the end of the installation wizard to go to the home page of the organization the extension was installed to (`https://dev.azure.com/{organization}`).
 2. Refresh your browser.
-3. Open **Organization settings**, and then select **Extensions**. You should see the new extension on the **Installed** tab.
+3. Open **Organization settings**, and then select **Extensions**.
 
    :::image type="content" source="../get-started/media/organization-settings-extensions.png" alt-text="Screenshot of Organization settings, Extensions page.":::
+
+You should see the new extension on the **Installed** tab.
 
 ## Debug your extension
 
@@ -141,8 +143,6 @@ After you change the manifest, deploy and install this debugging extension only 
 ## Update your extension
 
 [!INCLUDE [Update_extension](../includes/procedures/update.md)]
-
-::: moniker range=">= azure-devops-2019"
 
 ## Make your extension public
 
@@ -189,7 +189,7 @@ For more information on adding policies to your offering, see the [extension man
     a. Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in the Visual Studio Marketplace.
     
     b. Select the publisher and complete the **About you** section in the **Details** tab.
-     :::image type="content" source="media/microsoft-about-you-section.png" alt-text="Screenshot of the About you section for Microsoft publishers.":::
+     :::image type="content" source="media/microsoft-about-you-section.png" alt-text="Screenshot of the section about you for Microsoft publishers.":::
     c. Save your changes and select **View profile** to see how it appears to consumers. You can use this profile page to evangelize your offering(s).
 
 > [!NOTE]
@@ -206,8 +206,6 @@ If you got an extension from a Top Publisher and aren't satisfied with your expe
 The team likely looks at other parameters, such as active uptake of your offerings, install/get started counts and ratings & reviews across your offerings before granting the badge. Microsoft reserves the right to grant, reject or revoke the Top Publisher badge at any time.
 
 Once a publisher is a Top Publisher, then all its future updates and offerings must meet the previously listed requirements.
-
-::: moniker-end
 
 ## Respond to Marketplace extension reviews
 
@@ -249,8 +247,8 @@ Certain criteria must be met for an extension to be unpublished or removed:
 | Unpublish | Only **free extensions** might be unpublished.                  |
 | Remove    | Your extension must have **zero (0)** installs to be removed. |
 
-**Important**: If you must remove your extension because of legal or security problems, contact the [Marketplace team](mailto:vsmarketplace@microsoft.com). We review the request and manually delete the extension. 
-
+> [!IMPORTANT]
+> If you must remove your extension because of legal or security problems, contact the [Marketplace team](mailto:vsmarketplace@microsoft.com). We review the request and manually delete the extension. 
 
 1. Select the extension on your [publisher page](https://aka.ms/vsmarketplace-manage) and choose **Unpublish** on the menu. 
 
@@ -262,4 +260,6 @@ You can also choose to remove your extension completely from the Marketplace if 
 
 ## Related articles
 
+- [Develop a web extension](../get-started/node.md)
+- [Extensibility points](../reference/targets/overview.md)
 
