@@ -97,70 +97,28 @@ You must share your extension with an organization before you can install it in 
 
 To install your shared extension, do the following steps.
 
-::: moniker range=">= azure-devops-2019"
-
 1. In the Marketplace, select your extension to open its overview page.
 
    :::image type="content" source="../get-started/media/details-page2.png" alt-text="Screenshot of the Overview page.":::
-:::moniker-end
 
    > [!NOTE]
    > Because your extension is private, only you and any member of the organization it's shared with can see this page.
 
-1. Select **Get it free** to start the installation process. Select the organization you shared the extension with from the dropdown menu.
+2. Select **Get it free** to start the installation process. Select the organization you shared the extension with from the dropdown menu.
 
    :::image type="content" source="../get-started/media/install-dialog.png" alt-text="Screenshot showing extension installation dialog.":::
 
-2. Select **Install**.
-
-::: moniker-end
-
-::: moniker range=" tfs-2018"
-
-1. From your organization home page, select the Marketplace icon in the top-right corner and choose **Manage extensions**.
-
-   ![Manage Extensions](media/manage-extensions.png)
-
-2. Find the extension under the **Shared with this organization** category.
-
-   ![Shared with me](media/extensions-tab-shared.png)
-
-3. Select the card to open the item in the Marketplace.
-4. From the item's details page, select **Install**.
-5. Choose the organization you shared the extension with and continue through the installation process.
-
-::: moniker-end 
+3. Select **Install**.
 
 Congratulations! You installed your extension into an organization and you're ready to try it.
 
 ## Try your extension
 
 1. Select **Proceed to organization** at the end of the installation wizard to go to the home page of the organization the extension was installed to (`https://dev.azure.com/{organization}`).
-
-:::moniker range=">= azure-devops-2019"
-
-1. Refresh your browser.
-1. Open **Organization settings**, and then select **Extensions**. You should see the new extension on the **Installed** tab.
+2. Refresh your browser.
+3. Open **Organization settings**, and then select **Extensions**. You should see the new extension on the **Installed** tab.
 
    :::image type="content" source="../get-started/media/organization-settings-extensions.png" alt-text="Screenshot of Organization settings, Extensions page.":::
-
-:::moniker-end
-
-:::moniker range="tfs-2018"
-
-1. Open your project.
-
-   :::image type="content" source="../get-started/media/account-home2.png" alt-text="Screenshot of project selection.":::
-
-   If there aren't any projects in your organization, you're prompted to create one.
-
-2. Go to the **Code** area and then to the hub contributed by your extension (**My Hub**).
-
-   ![My hub](../get-started/media/my-hub.png)
-
-You should see your new extension in the hub.
-
-:::moniker-end
 
 ## Debug your extension
 
@@ -229,15 +187,15 @@ For more information on adding policies to your offering, see the [extension man
    Through the publisher profile, you can showcase all of your offerings in one place along with key publisher-related information. To provide the information, which shows up in the profile, do the following steps:
 
     a. Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in the Visual Studio Marketplace.
+    
     b. Select the publisher and complete the **About you** section in the **Details** tab.
-   
-   :::image type="content" source="media/microsoft-about-you-section.png" alt-text="Screenshot of the About you section for Microsoft publishers.":::
+     :::image type="content" source="media/microsoft-about-you-section.png" alt-text="Screenshot of the About you section for Microsoft publishers.":::
     c. Save your changes and select **View profile** to see how it appears to consumers. You can use this profile page to evangelize your offering(s).
 
 > [!NOTE]
 > Through this program, it is the publisher that is being certified. This doesn't cover the software or security of their extensions and integrations. We recommend you be aware of the [safety information](../overview.md#safety-information) when you're evaluating the offerings from a publisher.
 
-If you got an extension from a Top Publisher and aren't satisfied with your experience, consider engaging with the publisher first. Afterward, if you're still unsatisfied, [contact the Marketplace team](/vsts/marketplace/marketplace-billing-qa).
+If you got an extension from a Top Publisher and aren't satisfied with your experience, consider engaging with the publisher first. Afterward, if you're still unsatisfied, [contact the Marketplace team](https://github.com/microsoft/vsmarketplace/issues/new/choose).
 
 ## Apply to be a Top Publisher
 
@@ -245,7 +203,7 @@ If you got an extension from a Top Publisher and aren't satisfied with your expe
 2. Select the publisher and navigate to its **Top Publisher** tab. Note: you need to have one or more global Azure DevOps (Server/Service) extension or integration for the tab to appear.  
 3. If you meet part of the previously listed requirements and are the publisher's owner, you see an option to apply for the program. On application, an email is sent to the Marketplace team to review your case. They respond in under 10 business days with next steps, clarifying questions or with the grant of the badge.
 
-The team likely looks at other parameters, such as active uptake of your offerings, install/get started counts and ratings & reviews across your offerings before granting the badge. <br> Microsoft reserves the right to grant, reject or revoke the Top Publisher badge at any time.
+The team likely looks at other parameters, such as active uptake of your offerings, install/get started counts and ratings & reviews across your offerings before granting the badge. Microsoft reserves the right to grant, reject or revoke the Top Publisher badge at any time.
 
 Once a publisher is a Top Publisher, then all its future updates and offerings must meet the previously listed requirements.
 
