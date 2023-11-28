@@ -163,6 +163,7 @@ Microsoft might also request a demo and to review the content planned for your M
 The Top Publisher program is only available for publishers with Azure DevOps extensions or integrations. It's not applicable for Visual Studio IDE and Visual Studio Code extension publishers.
 
 :::image type="content" source="media/top-publisher.png" alt-text="Screenshot of the Top Publisher badge.":::
+
 The Top Publisher program  recognizes publishers with commitment to their customers and the Marketplace through exemplary policies, quality, reliability, and support. Once you become a Top Publisher, all of your public offerings display the Top Publisher badge.
 
 ### Top Publisher requirements
