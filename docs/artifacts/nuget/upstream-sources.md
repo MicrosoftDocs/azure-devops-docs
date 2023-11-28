@@ -110,22 +110,18 @@ With our project now configured to authenticate with our feed, we can now procee
 
 ## View saved packages
 
-You can view the packages you saved from the NuGet Gallery by selecting your **Source** from the dropdown menu.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-::: moniker range=">= azure-devops-2019"
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-:::image type="content" source="./media/view-saved-packages-nuget.png" alt-text="A screenshot showing how to filter packages by source.":::
+1. Select the **NuGet Gallery** source from the dropdown menu to filter for packages from this upstream.
 
-::: moniker-end
+1. The *Serilog* package, installed in the previous step, is now available in our feed. Azure Artifacts automatically saved a copy to our feed when we executed the install command.
 
-::: moniker range="tfs-2018"
-
-:::image type="content" source="media/view-cached-packages.png" alt-text="A screenshot showing how to filter packages by source in TFS":::
-
-::: moniker-end
+    :::image type="content" source="media/package-saved-from-upstream.png" alt-text="A screenshot showing the package that was saved from upstream.":::
 
 ## Related articles
 
 - [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
 - [Publish packages to NuGet.org](./publish-to-nuget-org.md)
-- [Upstream sources overview](../concepts/upstream-sources.md)
+- [Manage permissions](../feeds/feed-permissions.md)
