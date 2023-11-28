@@ -8,7 +8,7 @@ Once your extension is packaged, you can upload it to the Marketplace under a pu
 
 3. Drag and drop your file or select it to find your VSIX file, which you created in the previous packaging step, and then choose **Upload**.
 
-   ![Upload new extension for Azure DevOps.](../../get-started/media/upload-new-extension2.png)
+   ![Screenshot showing Upload of new extension for Azure DevOps.](../../get-started/media/upload-new-extension2.png)
 
    After quick validation, your extension appears in the list of published extensions. Don't worry, the extension is only visible to you.
 
