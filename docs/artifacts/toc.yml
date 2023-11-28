@@ -45,18 +45,18 @@
     - name: Publish NuGet packages (dotnet)
       href: nuget/dotnet-exe.md
       displayName: dotnet, artifacts, publish packages
-    - name: Publish to NuGet.org
-      href: nuget/publish-to-nuget-org.md
-      displayName: publish package, nuget package, nuget.org
     - name: Publish to a NuGet feed (YAML/Classic)
       href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json
       displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
     - name: Install NuGet packages with Visual Studio
       href: nuget/consume.md
       displayName: install package, nuget, visual studio
-    - name: NuGet.org upstream source
+    - name: Use packages from NuGet.org
       href: nuget/upstream-sources.md
-      displayName: upstream sources, upstreams, artifact feeds 
+      displayName: upstream, nuget, install, package 
+    - name: Publish packages to NuGet.org
+      href: nuget/publish-to-nuget-org.md
+      displayName: publish, nuget, package, upstream
     - name: Publish from GitHub Actions
       href: quickstarts/github-actions.md
     - name: Migrate from MyGet to Azure Artifacts
