@@ -90,6 +90,24 @@ If you've checked the upstream sources checkbox when making your feed, NuGet Gal
         </configuration>
         ```
 
+## Install packages from NuGet Gallery
+
+With our project now configured to authenticate with our feed, we can now proceed to install packages from the NuGet Gallery upstream. In this example, we will install the *Serilog* diagnostic logging library:
+
+1. Navigate to the NuGet Gallery at `https://www.nuget.org/`.
+
+1. Search for the *Serilog* package, and then select it to navigate to the details page.
+
+1. Select the **Package Manager** tab, and copy the command. In our example, the command is as follows: 
+
+    ```Command
+    NuGet\Install-Package Serilog -Version 3.1.2-dev-02097
+    ```
+
+1. Open your project in Visual Studio, and then select **Tools** > **NuGet Package Manager** > **Package Manager Console** to open the console window.
+
+1. Paste your command in the Package Manager Console window, and press Enter to install your package.
+
 ## View saved packages
 
 You can view the packages you saved from the NuGet Gallery by selecting your **Source** from the dropdown menu.
