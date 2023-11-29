@@ -65,7 +65,7 @@ Universal Packages offer developers the capability to store an extensive array o
 
 ## Publish packages
 
-To publish a universal package, run the following command in an elevated command prompt. Package names must be lowercase, start and end with letters or numbers, and contain only letters, numbers, and nonconsecutive dashes, underscores, and periods. Package versions must be lowercase without build metadata (+ suffix). See [SemVer](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
+To publish a universal package, run the following command in an elevated command prompt. Package names must be lowercase, start and end with letters or numbers, and contain only letters, numbers, and nonconsecutive dashes, underscores, and periods. Package versions must be lowercase. See [SemVer](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
 
 - Organization-scoped feed:
 
