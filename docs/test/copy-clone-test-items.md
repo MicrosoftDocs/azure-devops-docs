@@ -713,7 +713,10 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 |**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite cannot be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests that have already been added, the tests that aren't imported are removed from the test suite but not from the test plan itself.  |
 
 [!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
- 
+
+##  Limitations
+
+[!INCLUDE [limitations-import](./includes/limitations-import.md)]
 
 ##  Next step
 
