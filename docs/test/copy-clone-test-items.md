@@ -716,7 +716,7 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 
 ##  Limitations
 
-[!INCLUDE [limitations-import](./includes/limitations-import.md)]
+[!INCLUDE [limitations-import](includes/limitations-import.md)]
 
 ##  Next step
 
