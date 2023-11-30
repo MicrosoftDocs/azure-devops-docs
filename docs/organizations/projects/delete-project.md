@@ -1,49 +1,63 @@
 ---
-title: Delete, remove project
+title: Delete, remove, restore project
 titleSuffix: Azure DevOps
 ms.custom: seodec18, contperf-fy21q3, engagement-fy23
-description: Delete or remove a project from your organization in Azure DevOps.
+description: Delete or remove a project from your organization in Azure DevOps. Restore a recently deleted project.
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
-ms.subservice: azure-devops-organizations
+ms.subservice: azure-devops-projects
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 08/16/2021
+ms.date: 11/29/2023
 ---
 
 # Delete a project
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-If you have a project that's no longer valid, you can delete it from your organization or collection in Azure DevOps. Or, if you are migrating from an on-premises Azure DevOps Server to Azure DevOps Services, you'll need to delete project(s). Deleting projects also helps to simplify navigating to only those projects that are in use. 
-
-::: moniker range=" > tfs-2018"  
+If a project becomes obsolete, you can [delete it](#delete-project) from your organization or collection in Azure DevOps. Likewise, if you're migrating from an on-premises Azure DevOps Server to Azure DevOps Services, it might be necessary to delete the project. The removal of projects can also enhance navigation by restricting it to only those projects that are currently in use.
 
 > [!CAUTION]
-> Deleting projects from the web portal generate a soft-delete where projects get permanently deleted if not restored within 28 days. Projects deleted from the on-premises Azure DevOps Administration Console undergo a hard delete and cannot be restored. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
-
-::: moniker-end    
-::: moniker range="tfs-2018"
-
-> [!Caution]
-> Deleting projects in TFS 2018 is permanent.  All projects deleted from the on-premises TFS 2018 undergo a hard delete and cannot be restored.
+> Projects deleted from the web portal are soft-deleted and permanently removed if not restored within 28 days. However, projects deleted from the on-premises Azure DevOps Administration Console are hard-deleted and can't be restored. For restoration details, see [Restore a project](#restore-a-deleted-project). To access data from a deleted project without restoring it, [save project data](#save-project-data).
 
 ::: moniker-end
 
 ## Prerequisites
 
-::: moniker range="azure-devops" 
+::: moniker range="azure-devops"
 
-- You must be a member of the **Project Administrators** group or have the project-level **Delete team project** permission set to **Allow**. Organization owners are automatically members of this group. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
+* You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
+* You must have the **Delete team project** permission set to **Allow**. For more information, see [View project-level permissions](../security/view-permissions.md#view-project-level-permissions).
+* (Optional) [Save project data](#save-project-data) before you delete a project if you want to access project data without restoring it.
 
 ::: moniker-end
 
-::: moniker range=" < azure-devops"  
+::: moniker range=" < azure-devops"
 
-- You must be a member of the **Project Administrators** group or have the **Delete team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
+* To restore a project, you must have the **Delete team project** permission set to **Allow**. For more information, see [View permissions](../security/view-permissions.md).
+* (Optional) [Save project data](#save-project-data), as deleting a project results in irreversible data loss.
 
 ::: moniker-end  
+
+## Save project data
+
+Use the following procedures to save data that users most care about, such as source code, build data, and work items.
+
+* **Source code and custom build templates:** Download your files as a zip file. Select ![Repository actions](../../media/icons/actions-icon.png) **actions** for the repository, file, or folder and select **Download as Zip**. Or, select :::image type="icon" source="../../boards/media/icons/download-icon.png" border="false"::: **Download** to download either all of the files in the currently selected folder, or the currently selected file.
+
+  > [!div class="mx-imgBorder"]
+  > ![Screenshot of Downloading code.](media/public/download-zip-file.png)
+
+  This process doesn't save any change history or links to other artifacts. If you use Git, [clone your repositories](../../repos/git/gitquickstart.md) to retain the full project history and all the branches.
+
+* **Build data**: To save logs and data in your drop build folders, see [View build results](/previous-versions/ms181733(v=vs.140)).
+
+* **Work item tracking data:** Create a work item query and open it [using Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Save the Excel spreadsheet.
+
+   This process doesn't save any attachments, change history, or links to other artifacts.
+
+For more information, see our [Data Protection Overview](../../organizations/security/data-protection.md).
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -53,7 +67,7 @@ If you have a project that's no longer valid, you can delete it from your organi
 
 #### [Browser](#tab/browser) 
 
-Use your web browser to perform a soft-delete. After 28 days, projects will be  permanently deleted if not restored within that time.
+Use your web browser to perform a soft-delete. After 28 days, projects are  permanently deleted if not restored within that time.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -61,38 +75,21 @@ Use your web browser to perform a soft-delete. After 28 days, projects will be  
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Select Open Organization settings.](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot of selection, Organization settings.](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Projects**, and then check one or more projects to delete. Select **Delete**. 
+3. Select **Projects**, check one or more projects to delete, and then select **Delete**. 
 
-   :::image type="content" source="media/delete-project/delete-multiple-projects.png" alt-text="In Organization settings, select Projects, check each project, delete":::
+   :::image type="content" source="media/delete-project/delete-project-organization-settings.png" alt-text="Screenshot of sequence selected Projects, check each project, and delete.":::
 
 4. Confirm deletion by entering the project name, and then select **Delete** in the popup screen.
 
-    ![popup confirmation delete project screen](media/delete-project/confirm-delete-project.png)
-
-::: moniker-end
-
-
-::: moniker range=" tfs-2018"
-
-1. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open **Collection Settings**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](../../media/settings/open-organization-settings.png)
-
-2. From there, you can choose a page. Settings are organized based on the service they support.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Projects](../../media/settings/open-admin-settings-horizontal.png)
+    ![Screenshot of popup confirmation delete project screen.](media/delete-project/confirm-delete-project.png)
 
 ::: moniker-end
 
 Your project is deleted and can be restored up to 28 days afterward. Your deleted project is removed from your projects list.
 
-
 #### [Administration Console](#tab/admin-console) 
-
 
 <a name="delete-team-proj"></a>
 
@@ -102,26 +99,23 @@ The Administration Console is only supported for on-premises Azure DevOps Server
 ::: moniker-end
 ::: moniker range="< azure-devops"
 
-
 Use the Azure DevOps Administration Console to perform a hard delete. Projects are permanently deleted and not subject to restoration.
 
-Using the administration console, you can delete a project from a project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd) to delete all artifacts.
+Using the administration console, you can delete a project from a project collection. Afterwards, you need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd) to delete all artifacts.
 
 1. If you're not a member of one or more of the following administrator groups, [get permissions now](/azure/devops/server/admin/add-administrator):
 
     - Team Foundation Administrators group (required).
-
     - SQL Server System Administrators group (required).
-
     - Farm Administrators group for SharePoint Products (required when your deployment uses SharePoint Products).
 
 2. Open the administration console and delete the project from its project collection.
 
-    :::image type="content" source="media/delete-project/delete-project-2019-1.png" alt-text="Admin Console, Delete project."::: 
+    :::image type="content" source="media/delete-project/delete-project-2019-1.png" alt-text="Screenshot of Admin Console, Delete project."::: 
 
 3. Choose whether to delete external data associated with the project and then start the delete action.
 
-    :::image type="content" source="media/delete-project/confirm-deletion.png" alt-text="Delete team projects dialog."::: 
+    :::image type="content" source="media/delete-project/confirm-deletion.png" alt-text="Screenshot of Delete team projects dialog."::: 
 
 4. (Optional) To review the status of the delete action, open the **Status** tab.
 
@@ -160,7 +154,6 @@ az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 ***
- 
 
 ::: moniker range="< azure-devops"
 
@@ -168,59 +161,129 @@ az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 
 If your project used SQL Server reporting and you didn't delete external artifacts, you can delete the reports using SQL Server Report Manager. From the project collection page, delete the folder that corresponds to the deleted project.
 
-![context menu with delete command](media/delete-project/ic686857.png)
+![Screenshot of the context menu with delete command.](media/delete-project/ic686857.png)
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+## Restore a deleted project
 
-## Remove the project portal
+If you inadvertently delete a project in Azure DevOps, you can restore it within 28 days of its deletion.
 
-If your project had a project portal, all links to that portal get removed from TWA and Team Explorer. But, the SharePoint site or website that acted as the portal doesn't get deleted. If you want to delete the portal, you must do so manually after the project has been deleted. See [How to: Create, Edit, and Delete Windows SharePoint Services Sites](/previous-versions/visualstudio/visual-studio-2010/ms253110(v%3dvs.100)).
+::: moniker range="azure-devops"
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+
+   ![Screenshot showing the gear icon, Organization settings.](../../media/settings/open-admin-settings-vert.png)
+
+3. Select **Overview**, and then scroll down to "recently deleted projects."
+
+   ![Screenshot that shows recently deleted projects.](../accounts/media/shared/organization-settings-select-overview.png)
+
+4. Highlight the project you want to restore, and then select **Restore**.
+
+   ![Screenshot showing highlighted project, and Restore button.](media/restore-project/recently-deleted-projects.png)
 
 ::: moniker-end
+
+::: moniker range=" > azure-devops-2019 < azure-devops"
+
+1. Sign in to your instance (```http://{ServerName:8080/tfs/}/{CollectionName}```)
+2. Choose ![gear icon](../../media/icons/gear-icon.png) **Admin settings**.
+
+   :::image type="content" source="../../media/settings/open-admin-settings-server.png" alt-text="Screenshot showing Admin settings button surrounded by red box.":::
+
+3. Select **Projects**, and then scroll down to **Recently deleted projects**.
+4. Highlight the project you want to restore, and then select **Restore**.
+
+   ![Screenshot showing how to Highlight the project, and then select Restore for Azure DevOps Server. ](media/restore-project/recently-deleted-projects.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]
+> The UI doesn't support restoring a team project for Azure DevOps Server 2019.  Use the following REST API or PowerShell methods to restore a deleted team project. For more information, see [Projects-Update REST API](/rest/api/azure/devops/core/projects/update)
+
+::: moniker-end
+
+### Restore project with REST API
+
+> [!WARNING]
+> To restore a project with a name that's already taken, you must rename the project before you can restore it. To rename the project, enter the following text in the request body: `"name":"new name"`
+
+1. Open a browser window and enter a URL that uses the following form:  
+
+    'http://ServerName:8080/tfs/DefaultCollection/ProjectName'
+
+   For example, to connect to the server named **FabrikamPrime**, enter: 'http://FabrikamPrime:8080/tfs/'.
+
+   The default Port is 8080. Specify the port number and directory for your server if defaults aren't used.
+
+2. Get a list of deleted projects using the following request:
+
+   ```
+   GET http://ServerName:8080/tfs/DefaultCollection/_apis/projects?stateFilter=
+   deleted&api-version=5.0-preview.3
+   ```
+
+3. Restore a deleted project using the following request:
+
+   ```
+   PATCH http://ServerName:8080/tfs/DefaultCollection/_apis/projects/{projectId}?
+   api-version=5.0-preview.3
+   ```
+   Request body
+
+   ```   
+   {
+    "state" : "wellFormed"
+   }
+   ```
+
+### Restore project with PowerShell
+
+1. Execute the following PowerShell script to get a list of deleted projects and make sure to update `$collectionUrl`.
+
+   ```
+   $collectionUrl = "https://localhost/defaultcollection"
+   (irm -Uri "$collectionUrl/_apis/projects?stateFilter=
+   deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
+   ```
+
+   Something similar to the following screenshot appears:
+   ![Screenshot of PowerShell script return example for deleted projects.](media/restore-project/deleted-projects-powershell-script-2019.png)
+
+2. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
+
+```
+$collectionUrl = "https://localhost/defaultcollection"
+$projectName = 'Project1'
+$project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=
+deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
+ | where {$_.name -eq $projectName}
+irm -Uri ($project.url + "?api-version=5.0-preview.3") 
+-UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}'
+ -ContentType 'application/json'
+```
+
+Your project and associated data are restored.
 
 ## FAQs
 
 See the following frequently asked questions about deleting projects in Azure DevOps.
 
-### Q: After deleting one project, why do work items in a remaining project still have links to the deleted project work items? 
+### Q: After you delete one project, why do work items in a remaining project still have links to the deleted project work items? 
 
 A: Work items get deleted within 24 hours after your project is deleted.
-
-
-::: moniker range=" > tfs-2018"  
 
 ### Q: I deleted a project in Azure DevOps, but in Visual Studio Team Explorer it's still there, what do I do?
 
 A: Wait 28 days before the project is permanently deleted.
 
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-### Q: What if the delete action doesn't finish?
-
-A: Review the status and log files for the delete action. Open the **Status** tab and for **Deleted**, review the additional information in parentheses, and take the indicated action.
-
-- (**Processing**) means that the process has started and is in progress.
-
-- (**Pending**) means that the deletion process has started from a client application. The deletion might be in progress or might have failed. Because the process was started from a client application, the server can't accurately report the status of the deletion.
-
-    If a project deletion remains pending for a long time, try to delete the project again from the administration console.
-
-- (**Failed**) means that the deletion process started but didn't successfully finish. The log file contains specific information about the failure.
-
-    Review the information about the failure, and then try to delete the project again.
-
-    If partial data remains, you can also use the [TFSDeleteProject](/azure/devops/server/command-line/tfsdeleteproject-cmd) command-line tool.
-
-::: moniker-end
-
 ## Related articles
 
 - [Create a project](create-project.md)
-- [Restore a project](restore-project.md)
+- [Restore a project](delete-project.md#restore-a-deleted-project)
 - [Delete a project with REST API](/rest/api/azure/devops/core/projects/delete)
 - [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd)
-

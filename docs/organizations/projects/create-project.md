@@ -367,9 +367,7 @@ You can add Git (distributed) or TFVC (centralized) repositories to your project
 ## Related articles
 
 - [Rename a project](rename-project.md)
-- [Save project data](save-project-data.md)
 - [Delete a project](delete-project.md)
-- [Restore a project](restore-project.md)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Install extensions](../../marketplace/install-extension.md)
 
