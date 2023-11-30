@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 09/08/2023
+ms.date: 11/27/2023
 monikerRange: azure-devops
 ---
 
@@ -485,6 +485,8 @@ You can define centrally how pipelines build PRs from forked GitHub repositories
 - Customize rules for building pull requests from forked repositories
 
 :::image type="content" source="media/centralized-pipeline-control.png" alt-text="Screenshot of centralized control settings for how pipelines build PRs from forked GitHub repositories.":::
+
+Starting with [Sprint 229](/azure/devops/release-notes/2023/sprint-229-update), to improve the security of your pipelines, [Azure Pipelines no longer automatically builds pull requests from forked GitHub repositories](/azure/devops/release-notes/2023/sprint-229-update#building-prs-from-forked-github-repositories). For new projects and organizations, the default value of the **Limit building pull requests from forked GitHub repositories** setting is **Disable building pull requests from forked repositories**.
 
 When you choose the **Securely build pull requests from forked repositories** option, all pipelines, organization or project-wide, *cannot* make secrets available to builds of PRs from forked repositories, *cannot* make these builds have the same permissions as normal builds, and *must* be triggered by a PR comment. Projects can still decide to *not* allow pipelines to build such PRs.
 

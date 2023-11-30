@@ -1,85 +1,130 @@
 ---
 title: Use packages from nuget.org
-description: How to use packages from nuget.org with Azure Artifacts
+description: How to consume packages from nuget.org with Azure Artifacts upstream sources
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 02/14/2022
+ms.date: 11/27/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# NuGet.org upstream source
+# Use packages from NuGet Gallery
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Enabling upstream sources on your feed enables developers to consume packages from public registries such as nuget.org and npmjs.com. In this article, you will learn how to add the NuGet Gallery upstream source to consume NuGet packages from the nuget.org public registry.
+With Azure Artifacts upstream sources, developers are able to consume packages from public registries such as nuget.org and npmjs.com. This article will walk you through the process of setting up your project and using the command line to effectively consume NuGet packages from the NuGet Gallery. In this article, you'll learn how to:
+
+> [!div class="checklist"]    
+> * Enable upstream sources for your feed 
+> * Add NuGet Gallery as an upstream source 
+> * Connect to your feed
+> * Install packages from nuget.org
+
+## Prerequisites
+
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed.
+
+- Download [NuGet](https://www.nuget.org/downloads).
+
+- Download and install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+
+## Enable upstream sources on your feed
+
+If you don't have a feed, follow these steps to create a new one and make sure to check the upstream sources checkbox to enable them. If you already have a feed, you can jump to the [next step](#add-nuget-gallery-upstream-source) to add the NuGet Gallery as an upstream source.
+
+[!INCLUDE [](../includes/create-feed.md)]
 
 ## Add NuGet Gallery upstream source
 
+If you've checked the upstream sources checkbox when making your feed, NuGet Gallery should have been added automatically. If not, add it manually by following these steps:
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
 1. Select **Artifacts**, and then select your feed.
 
-1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) button to navigate to **Feed settings**.
+1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to your **Feed settings**.
 
-1. Select **Upstream Sources**, and then select **Add Upstream**.
+1. Select **Upstream Sources**, and then select **Add Upstream** to add a new upstream source.
 
-    :::image type="content" source="./media/settings-add-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
+1. Select **Public source**, and then select **NuGet Gallery** from the dropdown menu.
 
-1. Select **Public source**.
+1. Select **Save** when you're done, and then select **Save** one more time at the top right corner to save your changes.
+    
+> [!NOTE]
+> The service index location for nuget.org is `https://api.nuget.org/v3/index.json`.
 
-    :::image type="content" source="../media/add-new-upstream.png" alt-text="Screenshot showing how to add a new upstream source.":::
+## Connect to feed
 
-1. Select **NuGet Gallery** from the dropdown menu. Select **Save** when you are done.
-
-    :::image type="content" source="./media/nuget-gallery-source.png" alt-text="Screenshot showing how to add the nuget.org upstream source.":::
-
-    > [!NOTE]
-    > The service index location for nuget.org is `https://api.nuget.org/v3/index.json`.
-
-1. Select **Save** at the top right corner to save your changes.
-
-## Update nuget.config
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed.
 
 1. Select **Connect to feed**, and then select **NuGet.exe**.
 
-    :::image type="content" source="./media/nuget-config.png" alt-text="A screenshot showing how to connect to NuGet feeds.":::
+1. Add a *nuget.config* file in the same folder as your *.csproj* or *.sln* file. Paste the provided XML snippet into your file. If you use the examples below, make sure you replace the placeholders with the appropriate values for your scenario.
 
-1. Copy the XML snippet in the **Project Setup** section.
+    - **Organization-scoped feed**:
+    
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<SOURCE_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
+    
+    - **Project-scoped feed**:
+    
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<SOURCE_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <configuration>
-      <packageSources>
-        <clear />
-        <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
-      </packageSources>
-    </configuration>
+## Install packages from NuGet Gallery
+
+With our project now configured to authenticate with our feed, we can now proceed to install packages from the NuGet Gallery upstream. In this example, we will install the *Serilog* diagnostic logging library:
+
+1. Navigate to the NuGet Gallery at `https://www.nuget.org/`.
+
+1. Search for the *Serilog* package, and then select it to navigate to the details page.
+
+1. Select the **Package Manager** tab, and copy the command. In our example, the command is as follows: 
+
+    ```Command
+    NuGet\Install-Package Serilog -Version 3.1.2-dev-02097
     ```
 
-1. Create a new *nuget.config* file in the root of your project.
+1. Open your project in Visual Studio, and then select **Tools** > **NuGet Package Manager** > **Package Manager Console** to open the console window.
 
-1. Paste the XML snippet in your nuget.config file.
+1. Paste your command in the Package Manager Console window, and press Enter to install your package.
+
+> [!NOTE]
+> You must be a **Collaborator**, a **Contributor**, or an **Owner** to save packages from upstream. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
 
 ## View saved packages
 
-You can view the packages you saved from the NuGet Gallery by selecting your **Source** from the dropdown menu.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-::: moniker range=">= azure-devops-2019"
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-:::image type="content" source="./media/view-saved-packages-nuget.png" alt-text="A screenshot showing how to filter packages by source.":::
+1. Select the **NuGet Gallery** source from the dropdown menu to filter for packages from this upstream.
 
-::: moniker-end
+1. The *Serilog* package, installed in the previous step, is now available in our feed. Azure Artifacts automatically saved a copy to our feed when we executed the install command.
 
-::: moniker range="tfs-2018"
-
-:::image type="content" source="media/view-cached-packages.png" alt-text="A screenshot showing how to filter packages by source in TFS":::
-
-::: moniker-end
+    :::image type="content" source="media/package-saved-from-upstream.png" alt-text="A screenshot showing the package that was saved from upstream.":::
 
 ## Related articles
 
 - [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
 - [Publish packages to NuGet.org](./publish-to-nuget-org.md)
-- [Upstream sources overview](../concepts/upstream-sources.md)
+- [Manage permissions](../feeds/feed-permissions.md)

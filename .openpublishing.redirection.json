@@ -474,6 +474,16 @@
       "source_path": "docs/project/wiki/wiki-keyboard-shortcuts.md",
       "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts#wiki-shortcuts",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/extend/publish/publicize.md",
+      "redirect_url": "/azure/devops/extend/publish/overview#publicize-your-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/extend/publish/manage-ratings-reviews.md",
+      "redirect_url": "/azure/devops/extend/publish/overview#respond-to-marketplace-extension-reviews",
+      "redirect_document_id": false
     }
   ]
 }
