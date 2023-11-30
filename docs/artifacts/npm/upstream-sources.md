@@ -23,33 +23,33 @@ Once you enable upstream sources in your feed, Azure Artifacts automatically sav
 
 - Download [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-## Enable npmjs.com as an upstream
+## Enable upstream sources
 
-You can use npmjs.com as an upstream source with new and existing feeds.
+If you haven't created a feed yet, follow these steps to create a new one and make sure to check the upstream sources checkbox to enable them. If you already have a feed, proceed to the [next step](#add-npmjs-upstream) to add npmjs as an upstream source.
 
-### On a new feed
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-- [Create a new feed](../get-started-npm.md#create-a-feed). Make sure you check the **Include packages from common public sources** checkbox.
+1. Select **Artifacts**, and then select **Create Feed**.
 
-    :::image type="content" source="media/include-upstream-sources.png" alt-text="Screenshot showing how to enable upstream sources":::
+1. Provide a descriptive **Name** for your feed, set its **Visibility** and **Scope**. Check the **Upstream sources** checkbox to include packages from public registries.
 
-### On an existing feed
+1. Select **Create** when you're done.
+
+## Add npmjs upstream
+
+If you checked the upstream sources checkbox during the creation of your feed, npmjs should've been added automatically. If not, you can add it manually as follows:
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed.
 
-1. Navigate to **Feed settings** by selecting the gear icon ![gear icon](../../media/icons/gear-icon.png) button.
+1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
 
 1. Select **Upstream sources**, and then select **Add Upstream**.
 
-    :::image type="content" source="./media/npm-new-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
+1. Select **Public source**, and then select **npmjs (https://registry.npmjs.org/)** from the dropdown menu.
 
-1. Select **Public source**, and then select **npmjs** from the dropdown menu.
-
-1. Select **Save** when you are done.
-
-1. Select **Save** to save your changes.
-
-    :::image type="content" source="../media/save-upstream-source.png" alt-text="A screenshot showing how to save changes in upstream sources":::
+1. Select **Save** when you're done, and then select **Save** at the top right corner to save your changes.
 
 ## Filter to saved packages
 
