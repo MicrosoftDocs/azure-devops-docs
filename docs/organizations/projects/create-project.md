@@ -8,22 +8,18 @@ ms.subservice: azure-devops-projects
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '<= azure-devops'
-ms.date: 11/04/2022
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/29/2023
 ---
 
 
 # Create a project in Azure DevOps
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 Create an Azure DevOps project to establish a repository for source code and to plan and track work. You can manage and structure your project to support your business needs. Each project provides boundaries to isolate data from other projects. For more information, see [About projects and scaling your organization](about-projects.md).
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
-
-If you don't want to create a project in Azure DevOps, you can create [Azure DevOps Projects](/azure/devops-project/).
-
-<!---Projects differ from [software application projects or solutions](/visualstudio/ide/creating-solutions-and-projects). -->  
 
 ::: moniker range="< azure-devops"
 > [!NOTE]
@@ -34,7 +30,7 @@ If you don't want to create a project in Azure DevOps, you can create [Azure Dev
 
 ::: moniker range="azure-devops" 
 
-- You need an organization before you can create a project. If you haven't created an organization yet, create one by following the instructions in [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md), which also creates a project. Or see [Create an organization or project collection](../accounts/create-organization.md).  
+- You need an organization before you can create a project. If you don't have an organization, [create an organization](../accounts/create-organization.md).  
 - You must be a member of the Project Collection Administrators group or have the collection-level "Create new projects" permission set to *Allow*. If you're the Organization owner, you're automatically added to the Project Collection Administrators group. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 ::: moniker-end
 
@@ -144,22 +140,6 @@ There isn't a limit on the number of projects that you can create within a proje
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-1. Select ![Azure DevOps logo.](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. Then, select **New project**.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Screenshot of highlighted New Project button.](media/create-project/projects-hub-horz-new-project.png)  
-
-2. Enter a name for your new project, initial source control type, and work item process.
-
-   Azure DevOps displays the project summary. For more information, see [Share your project, view project activity](project-vision-status.md).
-
-   > [!div class="mx-imgBorder"]  
-   > ![Screenshot of new project created.](media/create-project/new-team-project-tfs-2017.png)
-
-::: moniker-end
-
 #### [Team Explorer](#tab/team-explorer)
 
 > [!NOTE]
@@ -232,7 +212,7 @@ View a list of projects from your web browser.
 
 ::: moniker-end
  
-::: moniker range=">= tfs-2018 <= azure-devops-2019"  
+::: moniker range=" azure-devops-2019"
 
 1. To view the projects defined for a collection, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
@@ -357,7 +337,7 @@ ID                                    Name            Visibility    Process     
 
 ## Add a repository to your project
 
-You can add Git (distributed) or TFVC (centralized) repositories to your project. You can create many Git repositories, but only a single TFVC repository for a project. More steps to address permissions may be required. For more information, see [Use Git and TFVC repos in the same project](../../repos/git/team-projects.md).
+You can add Git (distributed) or TFVC (centralized) repositories to your project. You can create many Git repositories, but only a single TFVC repository for a project. More steps to address permissions might be required. For more information, see [Use Git and TFVC repos in the same project](../../repos/git/team-projects.md).
 
 ## Next steps
 
@@ -385,29 +365,9 @@ A: If you receive an error message that states you don't have permission to crea
           
 ### Q: How do I resolve Error TF30321? 
 
-A: **Error TF30321: The name you entered is already used for another project on the Team Foundation Server** indicates that you should use a different name for your project. The name you entered is either in active use or has undergone partial deletion, but not full deletion.  
+A: **Error TF30321: The name you entered is already used for another project on the Team Foundation Server** indicates that you should use a different name for your project. The name you entered is either in active use or is partially deleted, but not fully deleted.  
           
-Even when you've deleted a project, you may get the same name error. Some components could be created or deleted even though others aren't. In this event, you can't reuse the name associated with the project.
-          
-::: moniker range="tfs-2018"
-
-To verify project deletion or remove remaining components associated with a partially deleted project, use the [Delete project command line tool(TFSDeleteProject)](/azure/devops/server/command-line/tfsdeleteproject-cmd). Then try again to create the project with the same name.
-          
-Even with troubleshooting, you might not be able to use the same name. Some components of the deleted project could be scheduled for deletion but not yet deleted.
-
-### Q: How do I resolve an error message related to a plug-in?
-
-A: The process template used to create the project contains several XML plug-in files. If one of these files contains a format or other error, an error message appears.
-
-Review the project creation log to determine the plug-in that caused the error. After you discover the problem, you can either contact the developer or vendor that provided the plug-in, or attempt to fix the problem yourself. For more information, see [Customize a process template](../../reference/process-templates/customize-process.md).
-
-### Q: How do I resolve a problem connecting to a server?
-
-A: If you receive an error message about a problem connecting to a server, retrieving information from a server, or checking permissions to create projects, an incorrectly configured server in the deployment could have caused it. This problem is especially common after a server move, failover, or other maintenance activity.
-          
-Contact the TFS system administrator and request that they verify the server configuration.
-          
-::: moniker-end
+Even when you deleted a project, you might get the same name error. Some components could be created or deleted even though others aren't. In this event, you can't reuse the name associated with the project.
 
 ::: moniker range="< azure-devops"
 ### Q: How do I add my custom process template to the list?
@@ -419,7 +379,7 @@ A: [Upload your template](../../boards/work-items/guidance/manage-process-templa
 
 A: The log file is stored in $:\\Users\\*user name*\\AppData\\Local\\Temp and labeled vso\_TeamProjectCreation\_*yyyy\_mm\_dd\_hh\_mm\_ss*.log.
           
-The log shows each action taken by the wizard at the time of the failure and may include more details about the error. You can review the log entries to find network or file related issues by searching for **Exception** or **Error**.
+The log shows each action taken by the wizard at the time of the failure and might include more details about the error. You can review the log entries to find network or file related issues by searching for **Exception** or **Error**.
                  
 ### Q: How do I add SQL Server Reporting services?
 

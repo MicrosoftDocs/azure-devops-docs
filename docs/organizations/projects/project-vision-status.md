@@ -194,7 +194,7 @@ From the **Project stats** or **Activity** section, you can view updates made to
 :::image type="content" source="media/summary/project-summary-activity-tfs-2018.png" alt-text="Screenshot of Summary page, Activity section, TFS-2018.":::
 ::: moniker-end
 
-## Email or chat with a project member 
+## Chat with a project member or send an email
 
 From the **Members** section, you can see some of the members that have been added to the project, and connect to them via email or chat with a member. 
 
@@ -214,7 +214,7 @@ To email or initiate a chat session, choose the team member shown and select you
 
 ::: moniker range=">= azure-devops-2019"
 
-## Initiate a project search  
+## Search a project  
 
 From the **Summary** page, you can initiate a search of your code, work items, and wiki. To learn more, see [Get started with search](../../project/search/get-started-search.md). 
 :::image type="content" source="media/summary/project-search.png" alt-text="Screenshot of Summary page, search box.":::
@@ -338,7 +338,6 @@ For projects that selected TFVC for version control, the README.md file needs to
 Any additional Markdown files you have (ones with a *.md extension) in the root of the project folder also appear in the left pane for easy navigation between them so you can provide additional information.  
 
 ::: moniker-end
-
 
 ## Related articles
 

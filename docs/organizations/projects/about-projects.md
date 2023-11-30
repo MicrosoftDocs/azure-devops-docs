@@ -7,17 +7,17 @@ ms.subservice: azure-devops-projects
 ms.author: chcomley
 author: chcomley 
 ms.topic: conceptual
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2019'
 ms.date: 03/23/2023
 --- 
 
 # About projects and scaling your organization
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 A project in Azure DevOps provides a place for users to plan, track progress, and collaborate on building software solutions. A project represents a fundamental container where you can store data and source code.
 
-When you create your project, Azure DevOps automatically creates a team of the same name, which is sufficient for small organizations. For enterprise-level organizations, it may be necessary to scale up and create more teams and projects. You can have up to 1000 projects within an organization in Azure DevOps. 
+When you create your project, Azure DevOps automatically creates a team of the same name, which is sufficient for small organizations. For enterprise-level organizations, it might be necessary to scale up and create more teams and projects. You can have up to 1000 projects within an organization in Azure DevOps. 
 
 The following diagram shows one project and team versus multiple projects and teams in an organization or collection. This structure allows teams to configure the tools in ways that work for them and complete administrative tasks at the appropriate levels. As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
 
@@ -48,7 +48,7 @@ For more information, see [Work tracking, process, and project limits](../settin
 
 ## Manage work across your organization
 
-When you connect to Azure DevOps, you connect to an organization or project collection. Within that container, one or more projects may be defined. At least one project must be created to use the system.
+When you connect to Azure DevOps, you connect to an organization. Within that container, you can define one or more projects. At least one project must be created to use the system.
 
 ::: moniker range="azure-devops"
 You can scale your organization in the following ways:
@@ -75,7 +75,6 @@ You can scale your on-premises Azure DevOps deployment in the following ways:
 
 View the projects defined for your organization by opening the **Projects** page.
 
-::: moniker range=">= azure-devops-2019"
 1. Select :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
@@ -84,20 +83,6 @@ View the projects defined for your organization by opening the **Projects** page
 2. Choose a project from the list of projects. 
 
 For more information, see [Create a project](create-project.md).  
-::: moniker-end
-
-::: moniker range="tfs-2018"
-1. Select :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot of open Projects button, horizontal nav](../../media/settings/open-project-hub-horz.png)
-
-2. Choose a project from the projects list.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Choose a project from the set of projects listed.](media/about-projects/projects-hub-horz.png)
-
-::: moniker-end
 
 <a id="project-scoped-user-group" /> 
 
@@ -117,7 +102,7 @@ The **Limit user visibility and collaboration to specific projects** preview fea
 
 ### Limit access to organization settings 
 
-To limit access to organization settings, [Turn on the **Limit user visibility and collaboration to specific projects** preview feature](../../project/navigation/preview-features.md). Users and groups in the "Project-scoped users group" can't access organization settings. They can only see the **Overview** and **Projects** pages and those projects to which they've been added. 
+To limit access to organization settings, [Turn on the **Limit user visibility and collaboration to specific projects** preview feature](../../project/navigation/preview-features.md). Users and groups in the "Project-scoped users group" can't access organization settings. They can only see the **Overview** and **Projects** pages and those projects to which they're added. 
 
 [!INCLUDE [version-all](../security/includes/hidden-security-groups.md)]
 
@@ -162,7 +147,7 @@ Another feasible approach is to have multiple projects. It can be a recommend ap
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-You may want to add another project in following instances:
+You might want to add another project in following instances:
 - To prohibit or manage access to the information contained within a project
 - To support custom work tracking processes for specific business units within your organization  
 - To support entirely separate business units that have their own administrative policies and administrators
@@ -215,22 +200,11 @@ Use the following elements to structure your project to support your business ne
 
 You can configure and customize most services and applications to support your business needs or the way your teams work. Within each project, you can do the following tasks. For a comprehensive view of which resources can be configured, see [About team, project, and organizational-level settings](../settings/about-settings.md).
 
-::: moniker range=">= azure-devops-2019"
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor progress.
 - **Source control**: For each [Git repository](../../repos/git/index.yml), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For more information, see [Customize an inheritance process](../settings/work/inheritance-process-model.md).
 - **Azure Pipelines**: You can fully customize your build and release pipelines, and define build steps, release environments, and deployment schedule. For more information, see [Build and release](../../pipelines/index.yml).  
 - **Azure Test Plans**: You can define and configure test plans, test suites, test cases, and test environments. You can also add test steps within your build pipelines. For more information, see [Exploratory and manual testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-- **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor progress.
-- **Source control**: For each [Git repository](../../repos/git/index.yml), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
-- **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For more information, see [Customize the on-premises XML process model](../../reference/on-premises-xml-process-model.md).
-- **Build and release**: You can fully customize your build and release pipelines, and define build steps, release environments, and deployment schedule. For more information, see [Build and release](../../pipelines/index.yml).  
-- **Test**: You can define and configure test plans, test suites, test cases, and test environments. You can also add test steps within your build pipelines. For more information, see [Exploratory and manual testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
-::: moniker-end
 
 <a id="add-team" />
 
