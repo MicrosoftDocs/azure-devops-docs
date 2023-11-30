@@ -1,10 +1,10 @@
 ---
 title: Use packages from npmjs.com
-description: Use packages from npmjs.com using scopes or upstream sources
+description: How to consume packages from npmjs.com upstream source
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 02/14/2022
+ms.date: 11/29/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -12,9 +12,16 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The npm client is designed to work with a single primary *registry* (what Azure Artifacts calls a *feed*). It also supports secondary *scoped* registries. Scoped registries can only be used to install packages whose names begin with the scope prefix, so their usage is more restrictive. If you want to use both private packages you've created **and** public packages from npmjs.com, we recommend using upstream sources. 
+The npm client is designed to work with one main registry (known as a feed in Azure Artifacts) at a time. However, it does support additional scoped registries. If you plan to use both private packages and public packages from npmjs.com, it's recommended to use upstream sources.
+Once you enable upstream sources in your feed, Azure Artifacts automatically saves a copy of any installed package to your feed. This offers the greatest flexibility, allowing you to use a mix of scoped and non-scoped packages in your feed, including both scoped and non-scoped packages from npmjs.com.
 
-The npmjs.com upstream source allows you to merge the contents of npmjs.com into your feed such that the npm client can install packages from both locations.  Enabling upstream sources also automatically enables saving of packages you use from the upstream source. **This is the recommended way to use Azure Artifacts with npm.** Upstreams give you the most flexibility to use a combination of scoped- and nonscoped packages in your feed, as well as scoped- and nonscoped packages from npmjs.com.
+## Prerequisites
+
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed.
+
+- Download [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
 ## Enable npmjs.com as an upstream
 
