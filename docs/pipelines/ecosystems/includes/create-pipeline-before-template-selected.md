@@ -10,7 +10,7 @@ ms.custom: devdivchpfy22
 
 1. Sign-in to your Azure DevOps organization and go to your project.
 
-1. Go to **Pipelines**, and then select **New pipeline** or **Create pipline** if this is your first pipeline.
+1. Go to **Pipelines**, and then select **New pipeline**.
 
 1. Do the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
