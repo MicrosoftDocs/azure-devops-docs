@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.author: chcomley
 author: chcomley
-ms.date: 11/09/2023
+ms.date: 11/30/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -63,7 +63,7 @@ We recommend that you at least respond to the `Retry-After` header. If you detec
 If possible, we further recommend that you monitor `X-RateLimit-Remaining` and `X-RateLimit-Limit` headers. Doing so allows you to approximate how quickly you're approaching the delay threshold. Your client can intelligently react and spread out its requests over time.
 
  > [!NOTE]
-   > Identities that are used by tools and applications to integrate with Azure DevOps may need higher rate and usage limits beyond the allowed consumption limit (200 TSTUs within a sliding five-minute window) from time to time. You can get additional rate and usage limits by assigning the [Basic + Test Plans](../../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level to the desired identities used by your application. Once the need for higher rate limits are fulfilled, you can go back to the access level that the identity used to have. You will be charged for the cost of [Basic + Test Plans](../../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level only for the time it is assigned to the identity.
+ > Identities that are used by tools and applications to integrate with Azure DevOps might need higher rate and usage limits beyond the allowed consumption limit (200 TSTUs within a sliding five-minute window) from time to time. You can get additional rate and usage limits by assigning the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level to the desired identities used by your application. Once the need for higher rate limits are fulfilled, you can go back to the access level that the identity used to have. You're charged for the cost of [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level only for the time it's assigned to the identity.
 
 ## Pipelines
 
