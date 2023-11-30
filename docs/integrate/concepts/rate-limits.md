@@ -62,6 +62,9 @@ We recommend that you at least respond to the `Retry-After` header. If you detec
 
 If possible, we further recommend that you monitor `X-RateLimit-Remaining` and `X-RateLimit-Limit` headers. Doing so allows you to approximate how quickly you're approaching the delay threshold. Your client can intelligently react and spread out its requests over time.
 
+ > [!NOTE]
+   > Identities that are used by tools and applications to integrate with Azure DevOps may need higher rate and usage limits beyond the allowed consumption limit (200 TSTUs within a sliding five-minute window) from time to time. You can get additional rate and usage limits by assigning the [Basic + Test Plans](../../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level to the desired identities used by your application. Once the need for higher rate limits are fulfilled, you can go back to the access level that the identity used to have. You will be charged for the cost of [Basic + Test Plans](../../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level only for the time it is assigned to the identity.
+
 ## Pipelines
 
 Rate limiting is similar for Azure Pipelines. Each pipeline gets treated as an individual entity with its own resource consumption tracked. Even if build agents are self-hosted, they generate load in the form of cloning and sending logs.
