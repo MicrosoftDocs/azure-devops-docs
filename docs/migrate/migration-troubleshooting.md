@@ -487,7 +487,7 @@ Data import fails as one or more projects found in this collection are in the so
 
 `VS403379: Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.`
 
-Verify the collection against which you're running the data migration tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which the deleted project can be restored. You can read about how to restore a deleted project in [Restore a project](../organizations/projects/restore-project.md). If you have projects in the soft-deleted stage, remove them completely or restore them back before running data import.
+Verify the collection against which you're running the data migration tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which the deleted project can be restored. You can read about how to restore a deleted project in [Restore a project](../organizations/projects/delete-project.md#restore-a-deleted-project). If you have projects in the soft-deleted stage, remove them completely or restore them back before running data import.
 
 ### Import failures
 
@@ -500,4 +500,3 @@ If the error is more complex, then the email you receive provides instructions o
 - [Validate and import](migration-import.md) 
 - [Post-import](migration-post-import.md)
 - [Delete a project](../organizations/projects/delete-project.md)
-- [Restore a project](../organizations/projects/restore-project.md)

@@ -53,7 +53,7 @@
     href: delete-project.md
     displayname: remove, permission, allow, administrator
   - name: Restore a project
-    href: restore-project.md
+    href: delete-project.md#restore-a-deleted-project
     displayname: deleted, reinstate, settings
   - name: Change service visibility
     href: ../settings/set-services.md
@@ -62,7 +62,7 @@
     href: ../projects/make-project-public.md
     displayname: make, change, vs, repo, repository,
   - name: Save project data
-    href: save-project-data.md
+    href: ../accounts/delete-project.md#save-project-data
     displayname: export, backup, download, source, code, build, work, item
   - name: Resources granted to project members
     href: resources-granted-to-project-members.md

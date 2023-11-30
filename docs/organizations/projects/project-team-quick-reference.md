@@ -157,7 +157,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Rename team](../settings/rename-remove-team.md)  
    :::column-end:::
    :::column span="":::
-- [Restore project](restore-project.md)  
+- [Restore project](delete-project.md#restore-a-deleted-project)  
 - [Change user access levels](../accounts/add-organization-users.md) 
 - [Search across project(s)](../../project/search/get-started-search.md)  
 - [Set area paths](../settings/set-area-paths.md)  
@@ -201,7 +201,7 @@ Several of the following tasks require permissions granted to a member of the Pr
    :::column span="":::
 - [Rename project](create-project.md)  
 - [Rename team](../settings/rename-remove-team.md)  
-- [Restore project](restore-project.md)  
+- [Restore project](delete-project.md#restore-a-deleted-project)  
 - [Search across project(s)](../../project/search/get-started-search.md)  
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set favorites](../../project/navigation/set-favorites.md)  
@@ -240,7 +240,7 @@ Several of the following tasks require permissions granted to a member of the Pr
    :::column span="":::
 - [Rename project](create-project.md)  
 - [Rename team](../settings/rename-remove-team.md)  
-- [Restore project](restore-project.md)  
+- [Restore project](delete-project.md#restore-a-deleted-project)  
 - [Search across project(s)](../../project/search/get-started-search.md)  
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set favorites](../../project/navigation/set-favorites.md)  

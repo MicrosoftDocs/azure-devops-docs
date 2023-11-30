@@ -183,7 +183,6 @@ The reporting and SharePoint server administrator can manually run these jobs to
 ## Related articles
 
 - [Delete a project](delete-project.md)
-- [Restore a project](restore-project.md)
 - [Git and Azure Repos](../../repos/git/index.yml)
 - [Team Foundation version control](../../repos/tfvc/index.yml)
 - [Go to Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
