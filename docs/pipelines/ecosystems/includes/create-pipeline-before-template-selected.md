@@ -4,13 +4,13 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 05/05/2022
+ms.date: 12/01/2023
 ms.custom: devdivchpfy22
 ---
 
 1. Sign-in to your Azure DevOps organization and go to your project.
 
-1. Go to **Pipelines**, and then select **New pipeline**.
+1. Go to **Pipelines**, and then select **New pipeline** or **Create pipeline** if creating your first pipeline.
 
 1. Do the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
