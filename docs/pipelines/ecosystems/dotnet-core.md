@@ -54,6 +54,8 @@ Are you new to Azure Pipelines? If so, then we recommend you try the following s
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
+### Confgure and run the pipeline
+
 1. When the **Configure** tab appears, select **Show more** and select [**ASP.NET Core**](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
 
 1. Examine your new pipeline to see what the YAML does. When you're ready, select **Save and run**.
@@ -75,23 +77,24 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 
 1. Add an `azure-pipelines.yml` file in your repository. Customize the following snippet for your build. 
 
-```yaml
-trigger:
-- main
+    ```yaml
+    trigger:
+    - main
+    
+    pool: Default
+    
+    variables:
+      buildConfiguration: 'Release'
+    
+    # do this before all your .NET Core tasks
+    steps:
+    - task: DotNetCoreInstaller@2
+      inputs:
+        version: '2.2.402' # replace this value with the version that you need for your project
+    - script: dotnet build --configuration $(buildConfiguration)
+      displayName: 'dotnet build $(buildConfiguration)'
+    ```
 
-pool: Default
-
-variables:
-  buildConfiguration: 'Release'
-
-# do this before all your .NET Core tasks
-steps:
-- task: DotNetCoreInstaller@2
-  inputs:
-    version: '2.2.402' # replace this value with the version that you need for your project
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
-```
 1. [Create a pipeline](../create-first-pipeline.md) and select the **YAML** template.
 
 1. Set the **Agent pool** and **YAML file path** for your pipeline. 
@@ -146,7 +149,7 @@ To install 6.0.x SDK for building, add the following snippet:
 steps:
 - task: UseDotNet@2
   inputs:
-    version: '6.x'
+    version: '5.x'
 ```
 
 Windows agents already include a .NET Core runtime. To install a newer SDK, set `performMultiLevelLookup` to `true` in the following snippet: 
@@ -156,7 +159,7 @@ steps:
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
-    version: 6.x
+    version: 5.x
     performMultiLevelLookup: true
     includePreviewVersions: true # Required for preview versions
 ```
@@ -189,7 +192,13 @@ trigger:
 - main
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'windows-latest'steps:
+- task: UseDotNet@2
+  displayName: 'Install .NET Core SDK'
+  inputs:
+    version: 6.x
+    performMultiLevelLookup: true
+    includePreviewVersions: true # Required for preview versions
 
 variables:
   buildConfiguration: 'Release'
