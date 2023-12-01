@@ -50,7 +50,7 @@
     href: rename-project.md
     displayname: update, change, work item, query, version control paths
   - name: Delete a project
-    href: delete-project.md
+    href: ../accounts/delete-project.mddelete-project.md
     displayname: remove, permission, allow, administrator
   - name: Restore a project
     href: delete-project.md#restore-a-deleted-project
