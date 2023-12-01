@@ -290,6 +290,7 @@ Create the new repository in a project that you don't mind making public.
 
 ## Related articles
 
+- [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more)
 - [Delete a project](delete-project.md)
 - [Add external users](../accounts/add-external-user.md)
 - [Add a privacy policy URL](../accounts/add-privacy-policy-url.md)
