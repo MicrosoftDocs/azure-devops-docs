@@ -51,6 +51,26 @@ If you checked the upstream sources checkbox during the creation of your feed, n
 
 1. Select **Save** when you're done, and then select **Save** at the top right corner to save your changes.
 
+## Install packages from npmjs
+
+Before you save packages from npmjs, make sure your project is set up to connect to your feed. If you haven't done this yet, follow the instructions in the [project setup](npmrc.md#project-setup) to configure your npm project and connect to your feed. In this example, we will install the *Axios* library for making HTTP requests:
+
+1. Navigate to npmjs at `https://www.npmjs.com//`.
+
+1. Search for the *Axios* package, and then select it to navigate to the details page.
+
+1. Copy the install command to your clipboard. 
+
+1. In a command prompt window, navigate to your project's directory and run your install command.
+
+    ```Command
+    npm install axios
+    ```
+
+> [!NOTE]
+> To save packages from upstreams, you must be a **Collaborator** or higher. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
+
+
 ## Filter to saved packages
 
 You can view the packages you saved from upstreams by selecting your **Source** from the dropdown menu.
