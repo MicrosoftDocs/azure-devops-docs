@@ -50,7 +50,7 @@
     href: rename-project.md
     displayname: update, change, work item, query, version control paths
   - name: Delete a project
-    href: ../accounts/delete-project.mddelete-project.md
+    href: delete-project.md
     displayname: remove, permission, allow, administrator
   - name: Restore a project
     href: delete-project.md#restore-a-deleted-project
@@ -62,7 +62,7 @@
     href: ../projects/make-project-public.md
     displayname: make, change, vs, repo, repository,
   - name: Save project data
-    href: ../accounts/delete-project.md#save-project-data
+    href: delete-project.md#save-project-data
     displayname: export, backup, download, source, code, build, work, item
   - name: Resources granted to project members
     href: resources-granted-to-project-members.md
