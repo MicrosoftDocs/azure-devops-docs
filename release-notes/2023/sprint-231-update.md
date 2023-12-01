@@ -11,10 +11,6 @@ description: TBD
 
 Check out the release notes for details.
 
-### General
-
-[!INCLUDE [sprint-231-update-links](includes/general/sprint-231-update-links.md)]
-
 ### Azure Boards
 
 [!INCLUDE [sprint-231-update-links](includes/boards/sprint-231-update-links.md)]
@@ -22,14 +18,6 @@ Check out the release notes for details.
 ### Azure Pipelines
 
 [!INCLUDE [sprint-231-update-links](includes/pipelines/sprint-231-update-links.md)]
-
-### Reporting
-
-[!INCLUDE [sprint-231-update-links](includes/reporting/sprint-231-update-links.md)]
-
-## General
-
-[!INCLUDE [sprint-231-update](includes/general/sprint-231-update.md)]
 
 ## Azure Boards
 
@@ -39,9 +27,6 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-231-update](includes/pipelines/sprint-231-update.md)]
 
-## Reporting
-
-[!INCLUDE [sprint-231-update](includes/reporting/sprint-231-update.md)]
 
 ## Next steps
 
