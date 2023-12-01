@@ -16,7 +16,7 @@ ms.date: 11/11/2021
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
-Several tools support copy, clone, or import operations of test items&mdash;such as, test plans, test suites, and test cases. Test cases describe the steps to take to run a test and validate a feature implementation or bug fix. Test suites group test cases, and optionally other test suites, into a particular order. Test plans define a collection of test suites to run for a particular iteration or release.  
+Several tools support copy, clone, or import operations of test items such as test plans, test suites, and test cases. Test cases describe the steps to take to run a test and validate a feature implementation or bug fix. Test suites group test cases, and optionally other test suites, into a particular order. Test plans define a collection of test suites to run for a particular iteration or release.  
  
 Each test case is designed to confirm a specific behavior. Test cases may belong to one or more test suites, however test suites can belong to one and only one test plan.  
 
@@ -204,7 +204,7 @@ TCM supports listing of test plans and test suites. Lists specify the work ID fo
 
 ### List test plans  
 
-Use `tcm plans /list` to determine the **ID** for a test plan.  The **ID** corresponds to the work item ID defined when the test plan was created. 
+Use `tcm plans /list` to determine the **ID** for a test plan. The **ID** corresponds to the work item ID defined when the test plan was created. 
 
 
 ```tcm 
@@ -522,7 +522,7 @@ When you clone a test suite, the following objects are copied from the source te
 
 The following test information is not copied: 
 
-- **Test settings**: The test setting for the source test plan isn't copied. Instead, the test settings for the destination test plan is applied.   
+- **Test settings**: The test setting for the source test plan isn't copied. Instead, the test settings for the destination test plan are applied.   
 - **Test results and test runs**: No test results are copied. Because test runs are applicable only to the source test plan, they are not copied.  
 
 When `/clonerequirements` is specified and Requirements-based test suites are copied: 
