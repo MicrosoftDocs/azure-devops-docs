@@ -21,8 +21,6 @@ If a project becomes obsolete, you can [delete it](#delete-project) from your or
 > [!CAUTION]
 > Projects deleted from the web portal are soft-deleted and permanently removed if not restored within 28 days. However, projects deleted from the on-premises Azure DevOps Administration Console are hard-deleted and can't be restored. For restoration details, see [Restore a project](#restore-a-deleted-project). To access data from a deleted project without restoring it, [save project data](#save-project-data).
 
-::: moniker-end
-
 ## Prerequisites
 
 ::: moniker range="azure-devops"
@@ -42,7 +40,7 @@ If a project becomes obsolete, you can [delete it](#delete-project) from your or
 
 ## Save project data
 
-Use the following procedures to save data that users most care about, such as source code, build data, and work items.
+Use the following procedures to save data that users most care about, such as source code, build data, and work items. This procedure is optional and something you might consider before you delete a project.
 
 * **Source code and custom build templates:** Download your files as a zip file. Select ![Repository actions](../../media/icons/actions-icon.png) **actions** for the repository, file, or folder and select **Download as Zip**. Or, select :::image type="icon" source="../../boards/media/icons/download-icon.png" border="false"::: **Download** to download either all of the files in the currently selected folder, or the currently selected file.
 
@@ -256,16 +254,16 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
 
 2. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
 
-```
-$collectionUrl = "https://localhost/defaultcollection"
-$projectName = 'Project1'
-$project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=
-deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
- | where {$_.name -eq $projectName}
-irm -Uri ($project.url + "?api-version=5.0-preview.3") 
--UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}'
- -ContentType 'application/json'
-```
+    ```
+    $collectionUrl = "https://localhost/defaultcollection"
+    $projectName = 'Project1'
+    $project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=
+    deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
+     | where {$_.name -eq $projectName}
+    irm -Uri ($project.url + "?api-version=5.0-preview.3") 
+    -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}'
+     -ContentType 'application/json'
+    ```
 
 Your project and associated data are restored.
 
