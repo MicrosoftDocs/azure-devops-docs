@@ -1,9 +1,5 @@
 ---
-title: limitations with the import functionality with test
-description: limitations with the import functionality with test
-ms.topic: reference
-ms.date: 11/29/2023
-monikerRange: 'azure-devops'
+ms.topic: include
 ---
 
 * Test case state column should be in Design state, other states are not supported with the import.
