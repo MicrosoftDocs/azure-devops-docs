@@ -4,13 +4,13 @@ description: Use Azure Pipelines to deploy to Kubernetes clusters
 ms.topic: how-to
 ms.assetid: 710a03c9-d8ba-4013-bf8f-e672efc7abe4
 ms.date: 05/11/2023
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2022'
 ms.custom: engagement-fy23
 ---
 
 # Deploy to Kubernetes
 
-[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-gt-eq-2022.md)]
 
 You can use Azure Pipelines to deploy to [Azure Kubernetes Service](/azure/aks/) and Kubernetes clusters offered by other cloud providers. Azure Pipelines has two tasks for working with Kubernetes:
 
