@@ -6,6 +6,7 @@ ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 11/29/2023
 monikerRange: '<= azure-devops'
+"recommendations": "true"
 ---
 
 # Use packages from npmjs.com
@@ -70,30 +71,18 @@ Before you save packages from npmjs, make sure your project is set up to connect
 > [!NOTE]
 > To save packages from upstreams, you must be a **Collaborator** or higher. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
 
+## View saved packages
 
-## Filter to saved packages
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-You can view the packages you saved from upstreams by selecting your **Source** from the dropdown menu.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-::: moniker range=">= azure-devops-2019"  
+1. Select **npmjs** from the source menu. The *Axios* package we installed earlier is now available in our feed. Azure Artifacts automatically saved a copy to our feed upon executing the install command.
 
-:::image type="content" source="media/view-cached-packages-newnav.png" alt-text="Screenshot of the filtered npm packages":::
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-
-:::image type="content" source="media/view-cached-packages.png" alt-text="Screenshot of the filtered npm packages in TFS":::
-
-::: moniker-end
-
-## Scopes
-
-Using scopes instead of upstream sources limits your private package consumption to those with the `@scope` prefix e.g. `@fabrikam/core` but enables you to consume public packages **directly** from npmjs.com, see [npm scopes](scopes.md) for more details.
+    :::image type="content" source="media/saved-package-from-upstream.png" alt-text="A screenshot showing the axios package that was saved from upstream.":::
 
 ## Related articles
 
-- [Publish npm packages (CLI)](./publish.md)
+- [Publish and restore npm packages (CLI)](./publish.md)
 - [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md)
--  [Use npm audit](./npm-audit.md)
+- [Npm scopes](scopes.md)
