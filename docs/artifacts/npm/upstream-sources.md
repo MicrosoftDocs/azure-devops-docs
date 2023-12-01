@@ -38,7 +38,7 @@ If you haven't created a feed yet, follow these steps to create a new one and ma
 
 ## Add npmjs upstream
 
-If you checked the upstream sources checkbox during the creation of your feed, npmjs should've been added automatically. If not, you can add it manually as follows:
+If you checked the upstream sources checkbox during the creation of your feed, npmjs should have been added automatically. If not, you can add it manually as follows:
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -54,7 +54,7 @@ If you checked the upstream sources checkbox during the creation of your feed, n
 
 ## Install packages from npmjs
 
-Before you save packages from npmjs, make sure your project is set up to connect to your feed. If you haven't done this yet, follow the instructions in the [project setup](npmrc.md#project-setup) to configure your npm project and connect to your feed. In this example, we will install the *Axios* library for making HTTP requests:
+Before you save packages from npmjs, make sure your project is set up to connect to your feed. If you haven't done this yet, follow the instructions in the [project setup](npmrc.md#project-setup) to configure your npm project and connect to your feed. In this example, we'll install the *Axios* library for making HTTP requests:
 
 1. Navigate to npmjs at `https://www.npmjs.com//`.
 
