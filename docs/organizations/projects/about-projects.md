@@ -2,13 +2,13 @@
 title: About projects and scaling your organization
 titleSuffix: Azure DevOps
 ms.custom: engagement-fy23  
-description: Understand how to structure your project to support collaboration on building software solutions.
+description: Learn about projects and how to structure them to support collaboration on building software solutions.
 ms.subservice: azure-devops-projects
 ms.author: chcomley
 author: chcomley 
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 03/23/2023
+ms.date: 12/01/2023
 --- 
 
 # About projects and scaling your organization
@@ -17,9 +17,9 @@ ms.date: 03/23/2023
 
 A project in Azure DevOps provides a place for users to plan, track progress, and collaborate on building software solutions. A project represents a fundamental container where you can store data and source code.
 
-When you create your project, Azure DevOps automatically creates a team of the same name, which is sufficient for small organizations. For enterprise-level organizations, it might be necessary to scale up and create more teams and projects. You can have up to 1000 projects within an organization in Azure DevOps. 
+When you create your project, Azure DevOps automatically creates a team of the same name, which is sufficient for small organizations. For enterprise-level organizations, you might need to scale up and create more teams and projects. You can have up to 1000 projects within an organization in Azure DevOps. 
 
-The following diagram shows one project and team versus multiple projects and teams in an organization or collection. This structure allows teams to configure the tools in ways that work for them and complete administrative tasks at the appropriate levels. As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
+The following diagram shows one project and team versus multiple projects and teams in an organization or collection.
 
 ---
 :::row:::
@@ -41,6 +41,8 @@ The following diagram shows one project and team versus multiple projects and te
 :::row-end:::
 ---
 
+This structure allows teams to configure the tools in ways that work for them and complete administrative tasks at the appropriate levels. As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
+
 For more information, see [Work tracking, process, and project limits](../settings/work/object-limits.md) and [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 
 <a id="scale">  </a>
@@ -53,22 +55,22 @@ When you connect to Azure DevOps, you connect to an organization. Within that co
 ::: moniker range="azure-devops"
 You can scale your organization in the following ways:
 
-- To support different business units, you can add projects
-- Within a project, you can add teams
+- Add projects to support different business units
+- Add teams within a project
 - Add repositories and branches
-- To support continuous integration and deployment, you can add agents, agent pools, and deployment pools
-- To manage a large number of users, you can manage access through Microsoft Entra ID
+- Add agents, agent pools, and deployment pools to support continuous integration and deployment
+- Manage access through Microsoft Entra ID to manage a large number of users
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 You can scale your on-premises Azure DevOps deployment in the following ways:
 
-- To increase performance, you can add server instances
-- To support different business units, you can add project collections and projects
-- Within a project, you can add teams
+- Add server instances to increase performance,
+- Add project collections and projects to support different business units
+- Add teams within a project
 - Add repositories and branches
-- To support continuous integration and deployment, you can add agents, agent pools, and deployment pools
-- To manage a large number of users, you can manage access through Active Directory
+- Add agents, agent pools, and deployment pools to support continuous integration and deployment
+- Manage access through Active Directory to manage a large number of users
 ::: moniker-end
 
 ## View projects in your organization 
@@ -88,37 +90,9 @@ For more information, see [Create a project](create-project.md).
 
 ::: moniker range="azure-devops"
 
-## Limit user visibility of projects
+## Limit project visibility
 
-By default, users added to an organization can view all organization and project information and settings.  
-
-[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
-
-The **Limit user visibility and collaboration to specific projects** preview feature for the organization limits user access in the following ways.
-- Restricts views that display a list of users, list of projects, billing details, usage data, and more information accessed through **Organization settings**.
-- Limits the set of users or groups that appear through people-picker search selections and the ability to @mention users. 
-
-[!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
-
-### Limit access to organization settings 
-
-To limit access to organization settings, [Turn on the **Limit user visibility and collaboration to specific projects** preview feature](../../project/navigation/preview-features.md). Users and groups in the "Project-scoped users group" can't access organization settings. They can only see the **Overview** and **Projects** pages and those projects to which they're added. 
-
-[!INCLUDE [version-all](../security/includes/hidden-security-groups.md)]
-
-### Limit user visibility within people pickers
-
-Organizations that are connected to Microsoft Entra ID can use people pickers. People pickers support searching all users and groups added to Microsoft Entra ID, not just those users and groups added to your project. People pickers support the following Azure DevOps functions: 
-- Select a user identity from a work tracking field, such as "Assigned to" 
-- Select a user or group with *@mention* in a work item discussion or field, pull request discussion, commit comments, or changeset or shelveset comments
-- Select a user or group using *@mention* from a wiki page 
-
-As shown in the following image, start to enter a user in the people picker box until you find a match to the user name or security group.
- 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker.](../../organizations/notifications/media/at-mention/identity-selector.png)
-
-Users and groups within the **Project-scoped users** group can only see and select users and groups in the project they're connected to from a people picker. To scope people pickers for all project members, see [Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
+By default, users added to an organization can view all organization and project information and settings. For more information, see [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more) and [Change project visibility to public or private](make-project-public.md). 
 
 ### View historical data
 
@@ -158,21 +132,19 @@ You might want to add another project in following instances:
 
 ## Use private and public projects
 
-You can have both private and public projects. You can also [change the visibility of a project from private to public](make-project-public.md).
+You can have both private and public projects. You can also [change the visibility of a project from either one to the other](make-project-public.md).
 
 **Private projects** require that you add and manage user access. Users must sign in to gain access to a project, even if it's read-only access. All project members have access to the project and organization information. For more information, see [Resources granted to project members](resources-granted-to-project-members.md).
 
 **Public projects** don't require users to sign in to gain read-only access to many of the following services. Public projects provide support to share code with others and to support continuous integration/continuous deployment (CI/CD) of open-source software.
 
-For more information about features and access levels for public projects, see [Make a private project public.](make-project-public.md)
+For more information, see [Change visibility of a project.](make-project-public.md)
 
 ## Version control support
 
 Git repositories can be browsed and cloned, but only via HTTPS.
 SSH and GVFS endpoints are unavailable.
 Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't offer the connected experience linking to work items and other collateral.
-
-<a id="dashboard-widget-support" />
 
 ## Dashboard widget support
 
@@ -181,8 +153,6 @@ The following dashboard widgets don't display any useful information for nonmemb
 [!INCLUDE [temp](includes/unavailable-widgets.md)]
 
 ::: moniker-end
-
-<a id="project-structure">  </a>
 
 ## Structure your project
 
@@ -232,8 +202,167 @@ Aside from connecting via a web browser, you can connect to a project from the f
 - [Test & Feedback extension](../../test/request-stakeholder-feedback.md)
 - [Microsoft Feedback Client](/previous-versions/azure/devops/project/feedback/give-feedback)
 
-
 For more information, see [Compatibility with Azure DevOps Server versions](/azure/devops/server/compatibility).
+
+## Key concepts
+
+Use this index to quickly access concepts and tasks related to managing projects and teams.  
+
+::: moniker range="azure-devops"
+
+:::row:::
+   :::column span="":::
+- [About projects](about-projects.md)  
+- [About teams](../settings/about-teams-and-settings.md)  
+- [Access levels](../security/access-levels.md)  
+- [Area paths](../settings/about-areas-iterations.md)  
+- [Dashboards](../../report/dashboards/overview.md)  
+- [Notifications and subscriptions](../../organizations/notifications/about-notifications.md)  
+- [GitHub connections](../../boards/github/connect-to-github.md)  
+- [Iteration paths](../settings/about-areas-iterations.md)  
+   :::column-end:::
+   :::column span="":::
+- [Permissions](../security/about-permissions.md)  
+- [Process (Inherited)](../settings/work/inheritance-process-model.md)  
+- [Project resources viewable by members](resources-granted-to-project-members.md)  
+- [Project Wiki](../../project/wiki/provisioned-vs-published-wiki.md)  
+- [Project-level permissions](../security/permissions.md#project-level-permissions)  
+- [Project-level security groups](../security/permissions.md#project-level-groups)  
+   :::column-end:::
+   :::column span="":::
+- [Project and process object limits](../settings/work/object-limits.md)  
+- [Projects page](../../project/navigation/work-across-projects.md)  
+- [Public vs private projects](about-projects.md)  
+- [Security groups](../security/about-permissions.md)  
+- [Service hooks](../../service-hooks/overview.md)  
+- [Service visibility](../settings/set-services.md)  
+- [Summary page](project-vision-status.md) 
+   :::column-end:::
+:::row-end:::
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+:::row:::
+   :::column span="":::
+- [About projects](about-projects.md)  
+- [About teams](../settings/about-teams-and-settings.md)  
+- [Access levels](../security/access-levels.md)  
+- [Area paths](../settings/about-areas-iterations.md)  
+- [Dashboards](../../report/dashboards/overview.md)  
+- [Notifications and subscriptions](../../organizations/notifications/about-notifications.md)  
+- [GitHub connections](../../boards/github/connect-to-github.md)  
+- [Iteration paths](../settings/about-areas-iterations.md)  
+   :::column-end:::
+   :::column span="":::
+- [Permissions](../security/about-permissions.md)  
+- [Process (Inherited)](../settings/work/inheritance-process-model.md)  
+- [Process (On-premises XML)](../../reference/on-premises-xml-process-model.md)  
+- [Project and process object limits](../settings/work/object-limits.md)  
+- [Project resources viewable by members](resources-granted-to-project-members.md)  
+- [Project Wiki](../../project/wiki/provisioned-vs-published-wiki.md)  
+   :::column-end:::
+   :::column span="":::
+- [Project-level permissions](../security/permissions.md#project-level-permissions)  
+- [Project-level security groups](../security/permissions.md#project-level-groups)  
+- [Projects page](../../project/navigation/work-across-projects.md)  
+- [Security groups](../security/about-permissions.md)  
+- [Service hooks](../../service-hooks/overview.md)  
+- [Service visibility](../settings/set-services.md)  
+- [Summary page](project-vision-status.md) 
+   :::column-end:::
+:::row-end:::
+
+::: moniker-end
+
+## User and administrative tasks  
+
+Several of the following tasks require permissions granted to a member of the Project Administrators group or a team administrator. 
+
+::: moniker range="azure-devops"
+
+:::row:::
+   :::column span="":::
+- [Add Git repository](../../repos/git/create-new-repo.md)  
+- [Add project administrators](../security/change-project-level-permissions.md)
+- [Add project dashboard](../../report/dashboards/dashboards.md#add-a-dashboard)  
+- [Add project members](../security/add-users-team-project.md)  
+- [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
+- [Add team administrators](../settings/add-team-administrator.md)  
+- [Add team members](../security/add-users-team-project.md)  
+- [Add/manage service hooks](../../service-hooks/overview.md)  
+   :::column-end:::
+   :::column span="":::
+- [Connect to a project](connect-to-projects.md)  
+- [Connect to GitHub](../../boards/github/connect-to-github.md)  
+- [Create project](create-project.md)  
+- [Delete project](delete-project.md)  
+- [Edit project Summary](project-vision-status.md)
+- [Enable/disable project services](../settings/set-services.md)  
+- [Export list of projects](create-project.md#list-and-connect-to-projects)  
+- [Export list of teams](../settings/add-teams.md#list-teams)  
+- [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)  
+- [Manage your project](../../user-guide/project-admin-tutorial.md)  
+- [Navigate the Web portal](../../project/navigation/index.md)  
+- [Remove team](../settings/rename-remove-team.md)  
+- [Rename project](create-project.md)  
+- [Rename team](../settings/rename-remove-team.md)  
+   :::column-end:::
+   :::column span="":::
+- [Restore project](delete-project.md#restore-a-deleted-project)  
+- [Change user access levels](../accounts/add-organization-users.md) 
+- [Search across project(s)](../../project/search/get-started-search.md)  
+- [Set area paths](../settings/set-area-paths.md)  
+- [Set favorites](../../project/navigation/set-favorites.md)  
+- [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
+- [Set project-level permissions](../security/change-project-level-permissions.md) 
+- [Set project visibility](../projects/make-project-public.md)  
+- [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
+   :::column-end:::
+:::row-end:::
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+:::row:::
+   :::column span="":::
+- [Add Git repository](../../repos/git/create-new-repo.md)  
+- [Add project administrators](../security/change-project-level-permissions.md)
+- [Add project members](../security/add-users-team-project.md)  
+- [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
+- [Add team members](../security/add-users-team-project.md)  
+- [Add team administrators](../settings/add-team-administrator.md)  
+- [Add/manage service hooks](../../service-hooks/overview.md)
+- [Change access levels](../security/change-access-levels.md)   
+- [Connect to a project](connect-to-projects.md)  
+- [Connect to GitHub](../../boards/github/connect-to-github.md)  
+   :::column-end:::
+   :::column span="":::
+- [Create project](create-project.md)  
+- [Delete project](delete-project.md)  
+- [Edit project Summary](project-vision-status.md)
+- [Enable/disable project services](../settings/set-services.md)  
+- [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)  
+- [Manage your project](../../user-guide/project-admin-tutorial.md)  
+- [Navigate the Web portal](../../project/navigation/index.md)  
+- [Remove team](../settings/rename-remove-team.md)  
+   :::column-end:::
+   :::column span="":::
+- [Rename project](create-project.md)  
+- [Rename team](../settings/rename-remove-team.md)  
+- [Restore project](delete-project.md#restore-a-deleted-project)  
+- [Search across project(s)](../../project/search/get-started-search.md)  
+- [Set area paths](../settings/set-area-paths.md)  
+- [Set favorites](../../project/navigation/set-favorites.md)  
+- [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
+- [Set project-level permissions](../security/change-project-level-permissions.md)
+- [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
+   :::column-end:::
+:::row-end:::
+
+::: moniker-end
 
 ## Frequently asked questions (FAQs)
 
