@@ -57,7 +57,7 @@ For example, to select Node.JS 16.x:
 **azure-pipelines.yml**
 ``` yaml
 steps:
-- task: NodeTool@1
+- task: UseNode@1
   inputs:
     version: '16.x'
 ```
@@ -113,7 +113,7 @@ build environment targets both Node.JS 16.x and Ruby 3.2 or better:
 **azure-pipelines.yml**
 ``` yaml
 steps:
-- task: NodeTool@1
+- task: UseNode@1
   inputs:
     version: '8.x'
 - task: UseRubyVersion@0
