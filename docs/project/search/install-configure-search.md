@@ -65,15 +65,15 @@ Search has the following dependencies, which get installed automatically as part
   * Search uses a modified version of Elasticsearch. It works only with this modified version.
   * A newer version of Elasticsearch ships with TFS 2018 Update 2 and onward, and Azure DevOps Server. All content is reindexed after installation when you upgrade from an older version of Search results. Depending on the volume of content (code files, work items, and wiki pages), re-indexing can take some time to complete.
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html) 
-* [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/)
-  * The Azul Zulu OpenJDK doesn't automatically install updates.
+* [Microsoft Build of OpenJDK](/java/openjdk/download) Version 11.
+  * The Microsoft Build of OpenJDK doesn't automatically install updates.
 * [Markdowndeep](https://www.toptensoftware.com/markdowndeep/) by Topten Software
 * [Roslyn](https://github.com/dotnet/roslyn) compiler platform
 * [ANTLR](https://www.antlr.org/) language recognition parser
 
 > [!NOTE]
 > - The system or server administrator must ensure that Server JRE is maintained and updated in line with the software provider's recommendations. Also see the [Java installation notes](#java-installation-notes) that follow.
-> - Regularly [check for updates](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk).
+> - Regularly [check for updates](/java/openjdk/download).
 
 #### Java installation notes
 
@@ -84,10 +84,8 @@ Search has the following dependencies, which get installed automatically as part
    > [!NOTE]   
    > We don't advise installing Elasticsearch on a machine where resources are shared, especially on a large enterprise environment with multiple application tiers. Instead, we recommend that you set up Elasticsearch in a separate dedicated machine. In that way, the JAVA environment isn't shared across machines for other purposes.
 
-- If there's a version of a JRE **earlier** than the minimum required by Search, and the **JAVA\_HOME** variable was set to that version, we recommend that you install Search on a [separate server](#install-or-update-search-on-a-separate-server). If you change the value of the **JAVA\_HOME** variable, it may cause other installed software to fail.
-- If there's a version of Server JRE **equal to or later** than the minimum required by Search and it's not recognized by the configuration wizard, set the value of the **JAVA\_HOME** variable to that version. This action's described in the JRE installation guide. Then, rerun the configuration wizard.
-  - [Zulu OpenJDK installation guide](https://docs.azul.com/zulu/zuludocs/index.htm)
-  - [Oracle JRE troubleshooting guide](https://docs.oracle.com/javase/7/docs/webnotes/tsg/) 
+- If there's a version of a JRE **earlier** than the minimum required by Search, and the **JAVA\_HOME** variable was set to that version, we recommend that you install Search on a [separate server](#install-or-update-search-on-a-separate-server). 
+- If there's a version of Server JRE **equal to or later** than the minimum required by Search and it's not recognized by the configuration wizard, ensure **JAVA\_HOME** variable is NOT set. Then, rerun the configuration wizard (`& "C:\Program Files\Azure DevOps Server XXX\Search\ES\vX.XX\bin\elasticsearch-service.bat" manager`) and select the version by setting the path for the *Java Virtual Machine*.
 - If you can't install the version of Java required by Search because of other dependencies, you can do the following tasks:
   - Install Azure DevOps Server with the Search extension on a server that doesn't have Java installed. We don't recommend this action for more than 250 users or CPU utilization greater than 50% or multiple ATs)
   - Install Search and the JRE on a [separate server](#install-or-update-search-on-a-separate-server) from Azure DevOps Server
@@ -97,15 +95,11 @@ Search has the following dependencies, which get installed automatically as part
    > * Search doesn't use or support any of the commercial features of Server JRE 8. Therefore, during Search configuration,the commercial features of the Server JRE are neither activated nor unlocked
    > * If you choose to continue with Oracle JRE, contact Oracle for a [Java SE Subscription](https://www.oracle.com/java/java-se-subscription.html), so that you can continue to receive JRE updates
 
-#### Migrate to Zulu OpenJDK from Oracle Server JRE
+#### Migrate to Microsoft Build of OpenJDK from Oracle Server JRE
 
-Search in Azure DevOps Server supports both Azul Zulu OpenJDK and Oracle JRE, which let you choose between them based on your needs.
-When you select a JRE during installation, Azure DevOps Server defaults to Azul Zulu OpenJDK 8.
+Search in Azure DevOps Server supports both, the Microsoft Build of OpenJDK, and Oracle JRE, which let you choose between them based on your needs.
 
-To change to the Azul Zulu OpenJDK, see [GitHub Code-Search Java Migration](https://github.com/microsoft/Code-Search/tree/master/Java%20Migration).
-
-> [!NOTE]
-> * If you choose to use Azul Zulu OpenJDK, ensure that you [download version 8](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk).
+To change to the Microsoft Build of OpenJDK, ensure **JAVA\_HOME** variable is NOT set. Then, rerun the configuration wizard (`& "C:\Program Files\Azure DevOps Server XXX\Search\ES\vX.XX\bin\elasticsearch-service.bat" manager`) and select the version by setting the path for the *Java Virtual Machine*.
 
 ## Feature availability
 

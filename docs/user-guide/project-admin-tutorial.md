@@ -98,12 +98,12 @@ Azure DevOps supports integration with Azure, GitHub, and many other services. A
 - Microsoft Teams integration:  
 	- [Azure Boards with Microsoft Teams](../boards/integrations/boards-teams.md) 
 	- [Azure Repos with Microsoft Teams](../repos/integrations/repos-teams.md)
-	- [Azure Pipelines with Microsoft Teams](../pipelines/integrations/slack.md)
+	- [Azure Pipelines with Microsoft Teams](../pipelines/integrations/microsoft-teams.md)
 
 - Slack integration:
 - 	- [Azure Boards with Slack](../boards/integrations/boards-slack.md) 
 	- [Azure Repos with Slack](../repos/integrations/repos-slack.md)
-	- [Azure Pipelines with Slack](../pipelines/integrations/microsoft-teams.md)
+	- [Azure Pipelines with Slack](../pipelines/integrations/slack.md)
 
 - [Integrate with service hooks](../service-hooks/overview.md) 
 

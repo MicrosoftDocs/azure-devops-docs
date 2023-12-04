@@ -62,7 +62,7 @@ To learn more about the structure for various policy types, refer to [Policy cre
 
 ## Save the file and run the create policy command
 
-`az repos policy create C:\policyConfiguration.txt`
+`az repos policy create --policy-configuration C:\policyConfiguration.txt`
 
 Note that the path is provided using '\\' backslash.
 
