@@ -48,8 +48,6 @@ For an overview of test objects and terminology, see [Test objects and terms](te
 3. Choose **Confirm** in the **Confirm import** dialog that displays. If you specify test cases that are already defined in the test suite, some elements may get over written during import. 
 
 
-::: moniker-end
- 
 <a id="import-test-cases" />
 
 ## Update existing test cases
@@ -83,8 +81,6 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 |**/minpriority**:`priority`|Optional. Specifies which tests to import based on the minimum priority of the test method. For example, if the parameter is `/minpriority:2`, only tests with a priority attribute for the test method equal or greater than 2 are imported as test cases from the assembly.| 
 |**/category**:`filter`|Optional. Specifies which tests to import based on the category of each test method in the test assembly. You can use this parameter together with `/syncsuite` to import tests with a certain category into a specific test suite.<br/> For more information about test categories, see [Run unit tests with Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer).| 
 |**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite cannot be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests that have already been added, the tests that aren't imported are removed from the test suite but not from the test plan itself.  |
-
-[!INCLUDE [prerequisites-define](./includes/common-tcm-parameters.md)]
 
 ## FAQs
 
@@ -144,5 +140,3 @@ A: Ensure to follow the below limitations:
 - [Create a query based on build and test integration fields](../boards/queries/build-test-integration.md) 
 - [Customize and manage the test experience](/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience) 
 
-::: moniker range=">= azure-devops-2019"
-::: moniker-end 
