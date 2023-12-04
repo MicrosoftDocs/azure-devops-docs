@@ -65,7 +65,7 @@ Search has the following dependencies, which get installed automatically as part
   * Search uses a modified version of Elasticsearch. It works only with this modified version.
   * A newer version of Elasticsearch ships with TFS 2018 Update 2 and onward, and Azure DevOps Server. All content is reindexed after installation when you upgrade from an older version of Search results. Depending on the volume of content (code files, work items, and wiki pages), re-indexing can take some time to complete.
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html) 
-* [Microsoft Build of OpenJDK](https://learn.microsoft.com/en-us/java/openjdk/download) Version 11.
+* [Microsoft Build of OpenJDK](/java/openjdk/download) Version 11.
   * The Microsoft Build of OpenJDK doesn't automatically install updates.
 * [Markdowndeep](https://www.toptensoftware.com/markdowndeep/) by Topten Software
 * [Roslyn](https://github.com/dotnet/roslyn) compiler platform
@@ -73,7 +73,7 @@ Search has the following dependencies, which get installed automatically as part
 
 > [!NOTE]
 > - The system or server administrator must ensure that Server JRE is maintained and updated in line with the software provider's recommendations. Also see the [Java installation notes](#java-installation-notes) that follow.
-> - Regularly [check for updates](https://learn.microsoft.com/en-us/java/openjdk/download).
+> - Regularly [check for updates](/java/openjdk/download).
 
 #### Java installation notes
 
