@@ -56,7 +56,7 @@ Azure Pipelines will detect incorrect YAML conditions defined at pipeline / stag
 
 As mentioned in our [blog post](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/), we're working toward improving our Approvals & Checks's scalability. 
 
-We're kicking off Phase 3. We'll have weekly, day-long brownouts, where all pipeline runs that use non-compliant checks fail. The brownout dates are:
+Advancing into Phase 3, we'll carry out weekly, day-long brownouts, during which all pipeline runs that use non-compliant checks will fail. The brownout dates are:
 * January 9, 2024
 * January 16, 2024
 * January 23, 2024
