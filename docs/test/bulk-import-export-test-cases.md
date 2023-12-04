@@ -84,7 +84,7 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 |**/category**:`filter`|Optional. Specifies which tests to import based on the category of each test method in the test assembly. You can use this parameter together with `/syncsuite` to import tests with a certain category into a specific test suite.<br/> For more information about test categories, see [Run unit tests with Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer).| 
 |**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite cannot be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests that have already been added, the tests that aren't imported are removed from the test suite but not from the test plan itself.  |
 
-[!INCLUDE [prerequisites-define](/includes/common-tcm-parameters.md)]
+[!INCLUDE [prerequisites-define](./includes/common-tcm-parameters.md)]
 
 ## FAQs
 
