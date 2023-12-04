@@ -45,7 +45,7 @@ steps:
     patchVersion: '$(Patch)'
 ```
 
-The `NuGetCommand` task executes only if the value of the `Patch` variable is 0. Again, there is a typo in the condition, and the _Validate_ functionality will show it.
+The `NuGetCommand` task executes only if the value of the `Patch` variable is 0. Again, there's a typo in the condition, and the _Validate_ functionality will display it.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Patch variable.](../../media/231-pipelines-03.png " Screenshot of Patch variable.")
