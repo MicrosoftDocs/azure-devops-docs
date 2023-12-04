@@ -64,6 +64,8 @@ If possible, we further recommend that you monitor `X-RateLimit-Remaining` and `
 
  > [!NOTE]
  > Identities that are used by tools and applications to integrate with Azure DevOps might need higher rate and usage limits beyond the allowed consumption limit from time to time. You can get additional rate and usage limits by assigning the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level to the desired identities used by your application. Once the need for higher rate limits are fulfilled, you can go back to the access level that the identity used to have. You're charged for the cost of [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level only for the time it's assigned to the identity.
+>
+> Identities that are already assigned a Visual Studio Enterprise subscription cannot be assigned [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level till they are removed.
 
 ## Pipelines
 
