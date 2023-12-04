@@ -23,6 +23,9 @@
   - name: Copy/clone test plans, suites, cases
     displayName: copy, clone, import, export, test plans, test suites, test cases
     href: copy-clone-test-items.md
+  - name: Bulk Import and Export Test cases (CSV/XLSX)
+    displayName: copy, clone, import, export, test plans, test suites, test cases
+    href: bulk-import-export-test-cases.md
   - name: Run manual tests
     displayName: manual test, run, test runs
     href: run-manual-tests.md
