@@ -38,6 +38,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="3"><a href="2023/sprint-231-update.md" data-raw-source="[4 December   2023](2023/sprint-231-update.md)"> 4 December  2023</a></td>
+    <td>Switch to Markdown or HTML on Comments</td><td>Boards</td><td>Future</td></tr>
+    <td>Improved YAML Validation</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Checks Scalability Phase 3</td><td>Pipelines</td><td>N/A</td></tr>
+<tr>
+<tr>
     <td rowspan="10"><a href="2023/sprint-230-update.md" data-raw-source="[16 November  2023](2023/sprint-230-update.md)"> 16 November 2023</a></td>
     <td>New version of the Azure DevOps Web Extension SDK </td><td>General</td><td>Future</td></tr>
     <td>GitHub Integration - Improved AB# validation (private preview)</td><td>Boards</td><td>Future</td></tr>
