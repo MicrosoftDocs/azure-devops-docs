@@ -395,7 +395,7 @@ pool:
 
 steps:
 # Node install
-- task: NodeTool@1
+- task: UseNode@1
   displayName: Node install
   inputs:
     version: '16.x' # The version we're installing
