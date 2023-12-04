@@ -1,13 +1,13 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 12/4/2023
+ms.date: 12/5/2023
 ms.topic: include
 ---
 
 ### Switch to Markdown or HTML on Comments
 
-A few months ago, we [introduced a private preview](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1) to enable Markdown for comments on work items, aiming to replace the existing HTML editor entirely. We received your feedback, expressing a preference for the existing editor and reservations adopting Markdown, we adjusted our approach. Users now have the flexibility to switch between the HTML and Markdown editor at the comment level.
+A few months ago, we [introduced a private preview](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1) to enable Markdown for comments on work items, aiming to replace the existing HTML editor entirely. We've received your feedback, expressing a preference for the existing editor and reservations adopting Markdown, we adjusted our approach. Users now have the flexibility to switch between the HTML and Markdown editor at the comment level.
 
 
 > [!div class="mx-imgBorder"]
