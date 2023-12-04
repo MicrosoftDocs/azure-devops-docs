@@ -1,13 +1,13 @@
 ---
-title:  Switch to markdown or HTML in Azure Boards comments
+title:  Switch between HTML and Markdown editor in Azure Boards comments
 author: ckanyika
 ms.author: ckanyika
 ms.date: 12/5/2023
-description: Switch to markdown or HTML in Azure Boards comments
+description: Switch between HTML and Markdown editor in Azure Boards comments
 ---
-# Switch to markdown or HTML in Azure Boards comments
+# Switch between HTML and Markdown editor in Azure Boards comments
 
-With this update, Azure Boards enables you to switch between HTML and markdown editors at the comment level. 
+With this update, Azure Boards enables you to switch between HTML and Markdown editor at the comment level. 
 
 In Pipelines, we've made improvements to the YAML validation function. 
 
