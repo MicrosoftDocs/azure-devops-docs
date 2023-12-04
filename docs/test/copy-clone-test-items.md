@@ -237,7 +237,7 @@ Id        Name
 ```
 
 
-<a id="list-test-suites"</a> 
+<a id="list-test-suites"></a> 
 
 ### List test suites  
 
@@ -281,8 +281,8 @@ Id        Name
 
 *** 
 
-<a id="clone-test-plan"</a> 
-<a id="copy-test-plans-portal"</a>
+<a id="clone-test-plan"></a> 
+<a id="copy-test-plans-portal"></a>
 
 
 ## Copy or clone test plans  
@@ -384,7 +384,7 @@ Clone operation is complete.
 ```
  
 
-<a id="track-test-plan-clone-status"</a> 
+<a id="track-test-plan-clone-status"></a> 
 
 ### Track the status of the test plan clone operation  
 
@@ -407,8 +407,8 @@ tcm plans /clone
 
 *** 
 
-<a id="import-test-suites-portal"</a>
-<a id="clone-test-suite"</a> 
+<a id="import-test-suites-portal"></a>
+<a id="clone-test-suite"></a> 
 
 ## Import or clone test suites 
 
@@ -552,7 +552,7 @@ Warning: You have cloned the following query based suites as part of this clone 
  
 
 
-<a id="track-test-suite-clone-status"</a> 
+<a id="track-test-suite-clone-status"></a> 
 
 ### Track the status of the test suite clone operation  
 
@@ -593,7 +593,7 @@ Completed on:         10-Nov-21 5:00:30 PM
 
 ::: moniker range=">= azure-devops-2020"
 
-<a id="copy-test-case"</a> 
+<a id="copy-test-case"></a> 
 
 ## Copy test case(s)
 
@@ -622,7 +622,7 @@ You can copy test cases from within a project or another project in the organiza
 
 ::: moniker-end
 
-<a id="copy-paste"</a> 
+<a id="copy-paste"></a> 
 
 ## Copy and paste test case(s) (Grid view)
 
@@ -648,7 +648,7 @@ From the Internet Explorer, Edge, or Chrome browsers, you can copy test cases fr
 	:::image type="content" source="media/copy-clone/copy-paste-test-cases-saved.png" alt-text="Saved test cases pasted into Grid view.":::
 
  
-<a id="bulk-import-export"</a> 
+<a id="bulk-import-export"></a> 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -687,7 +687,7 @@ From the web portal, you can perform a bulk import or export of test cases from/
 
 ::: moniker-end
  
-<a id="import-test-cases"</a>
+<a id="import-test-cases"></a>
 
 ## Import automated test cases (TCM) 
 
