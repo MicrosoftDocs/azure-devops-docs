@@ -12,7 +12,7 @@ To verify your YAML syntax is correct, you can use the Azure Pipelines web edito
 > [!div class="mx-imgBorder"]
 > ![Screenshot of YAML validation.](../../media/231-pipelines-01.png " Screenshot of YAML validation.")
 
-Starting with this sprint, YAML validation is more thorough when it comes to expressions.
+With this sprint, YAML validation is more thorough when it comes to expressions.
 
 When writing YAML pipelines, you can use [functions](/azure/devops/pipelines/process/expressions#functions) to define variable values.
 
@@ -24,14 +24,14 @@ variables:
   Patch: $[counter(fromat('{0}.{1}', variables.Major, variables.Minor ), 0)]
 ```
 
-The `Patch` variable is defined using the `counter` function and the other two variables. Alas, there is a typo: the `format` function is misspelt. Previously, this error went undetected. Now, _Validate_ surfaces it.
+The `Patch` variable is defined using the `counter` function and the other two variables. Alas, there's a typo: the `format` function is misspelt. Previously, this error went undetected. Now, _Validate_ surfaces it.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of incorrect variable definitions detected .](../../media/231-pipelines-02.png " Screenshot of incorrect variable definitions detected .")
 
 Azure Pipelines will detect incorrect variable definitions at pipeline / stage / job level.
 
-In YAML pipelines, you can skip the execution of stage using [conditions](azure/devops/pipelines/process/conditions). Typos can show up here as well, like in the following example.
+In YAML pipelines, you can skip the execution of stage using [conditions](/azure/devops/pipelines/process/conditions). Typos can show up here as well, like in the following example.
 
 ```yml
 steps:
@@ -54,10 +54,10 @@ Azure Pipelines will detect incorrect YAML conditions defined at pipeline / stag
 
 ### Checks Scalability Phase 3
 
-As mentioned in our [blog post](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/), we are working toward improving our Approvals & Checks's scalability. 
+As mentioned in our [blog post](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/), we're working toward improving our Approvals & Checks's scalability. 
 
-We are kicking off Phase 3. We will have weekly, day-long brownouts, where all pipeline runs that use non-compliant checks fail. The brownout dates are:
-* Jan 9, 2024
-* Jan 16, 2024
-* Jan 23, 2024
-* Jan 30, 2024
+We're kicking off Phase 3. We'll have weekly, day-long brownouts, where all pipeline runs that use non-compliant checks fail. The brownout dates are:
+* January 9, 2024
+* January 16, 2024
+* January 23, 2024
+* January 30, 2024
