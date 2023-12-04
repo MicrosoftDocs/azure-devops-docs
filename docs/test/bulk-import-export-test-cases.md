@@ -107,7 +107,7 @@ Azure Boards has a separate bulk import functionality using CSV files. For more 
 
 A: Ensure every import file has the following headers (with the exact spelling): 
 1. **ID**: This is the ID of the work item you're trying to import. For new test case creation, leave this field blank.
-2. **Work Item Type:** Test case import method only supports 'Test case' and 'Shared Steps'. Use this exact keywords when providing work item type information.
+2. **Work Item Type:** Test case import method only supports 'Test case' and 'Shared Steps'. Use these exact keywords when providing work item type information.
 3. **Title:** The title of the test case you want to create or update. This can be an alpha-numeric value.
 4. **Test Step:** Steps defined in a test case are in an ordered list. You need to provide the order number of each test step.
 5. **Step Action:** This defines the actions a manual tester needs to undertake while executing the test step.
