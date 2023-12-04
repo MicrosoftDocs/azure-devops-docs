@@ -5,4 +5,4 @@ ms.date: 12/5/2023
 ms.topic: include
 ---
 
-- [Switch to markdown or HTML on comments](#switch-to-markdown-or-html-on-comments)
+- [Switch between HTML or Markdown on comments](#switch-between-html-or-markdown-on-comments)
