@@ -128,6 +128,9 @@ Service principals can be used to call Azure DevOps REST APIs and do most action
 * Service principals can't create tokens, like [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH Keys](../../../repos/git/use-ssh-keys-to-authenticate.md). They can generate their own Microsoft Entra ID tokens and these tokens can be used to call Azure DevOps REST APIs.
 * We don't support [Azure DevOps OAuth](./oauth.md) for service principals.
 
+> [!NOTE]
+> One can only use Application ID and not the Resource URIs associated with Azure DevOps for generting token.
+
 ## FAQs
 
 ### General
