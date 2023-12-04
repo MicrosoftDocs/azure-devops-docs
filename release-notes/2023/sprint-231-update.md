@@ -51,4 +51,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-Silviu Andrica
+Dan Hellem

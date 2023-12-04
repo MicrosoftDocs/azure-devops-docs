@@ -5,7 +5,7 @@ ms.date: 12/5/2023
 ms.topic: include
 ---
 
-### Improved YAML Validation
+### Improved YAML validation
 
 To verify your YAML syntax is correct, you can use the Azure Pipelines web editor's _Validate_ functionality. Thus, it's important that this functionality catch as many YAML issues as possible.
 
@@ -52,7 +52,7 @@ The `NuGetCommand` task executes only if the value of the `Patch` variable is 0.
 
 Azure Pipelines will detect incorrect YAML conditions defined at pipeline / stage / job level.
 
-### Checks Scalability Phase 3
+### Checks scalability Phase 3
 
 As mentioned in our [blog post](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/), we're working toward improving our Approvals & Checks's scalability. 
 
