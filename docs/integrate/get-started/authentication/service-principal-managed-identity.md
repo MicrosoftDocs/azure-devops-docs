@@ -129,7 +129,7 @@ Service principals can be used to call Azure DevOps REST APIs and do most action
 * We don't support [Azure DevOps OAuth](./oauth.md) for service principals.
 
 > [!NOTE]
-> One can only use Application ID and not the Resource URIs associated with Azure DevOps for generting token.
+> You can only use Application ID and not the Resource URIs associated with Azure DevOps for generating tokens.
 
 ## FAQs
 
