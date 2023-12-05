@@ -10,6 +10,8 @@
       items:
         - name: "2023"
           items:
+          - name: December 5
+            href: 2023/sprint-231-update.md
           - name: November 16
             href: 2023/sprint-230-update.md
           - name: October 26
@@ -236,6 +238,8 @@
         items:
         - name: "2023"
           items:
+          - name: December 5
+            href: 2023/boards/sprint-231-update.md
           - name: November 16
             href: 2023/boards/sprint-230-update.md
           - name: October 4
@@ -427,6 +431,8 @@
         items:
         - name: "2023"
           items:
+          - name: December 5
+            href: 2023/pipelines/sprint-231-update.md
           - name: November 16
             href: 2023/pipelines/sprint-230-update.md
           - name: October 26
