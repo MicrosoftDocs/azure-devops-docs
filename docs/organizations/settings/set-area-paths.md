@@ -40,7 +40,7 @@ To understand how the system uses area paths, see [About area and iteration path
 
 For naming restrictions on area paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
-<a id="guidance" />
+<a id="guidance"></a>
 
 ## Get started
 
@@ -70,9 +70,9 @@ As needed, you can do the following actions at any time:
 - Rename a team
 - Change the area path assignments made to a team
 
-<a id="open-project-settings" />
-<a id="open-admin-context" />
-<a id="admin-intro-team-services" />
+<a id="open-project-settings"></a>
+<a id="open-admin-context"></a>
+<a id="admin-intro-team-services"></a>
 
 
 [!INCLUDE [temp](../../includes/version-selector.md)]
@@ -103,7 +103,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 ::: moniker-end
 
 
-<a id="admin-intro-team-services" /> 
+<a id="admin-intro-team-services"></a> 
 
 ::: moniker range="tfs-2018"
 
@@ -128,7 +128,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 
 [List project area paths](#list-areas) | [Add a project area path](#add-area) | [List team areas paths](#list-team-area-paths) | [Set team area paths](#set-team-area-paths) | [Rename or move a project area path](#rename-move-project-area-path) | [Remove area path from a team](#remove-area-path-from-team)
 
-<a id="list-areas" /> 
+<a id="list-areas"></a> 
 
 You can list the area paths defined for a project using [az boards area project list](/cli/azure/boards/area/project#az-boards-area-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -173,9 +173,9 @@ ID     Identifier                            Name                Path           
 
 * * *
 
-<a id="add-areas" /><br/>
-<a id="add-areas-team-services" />
-<a id="tfs-15-area-paths" />
+<a id="add-areas"></a><br/>
+<a id="add-areas-team-services"></a>
+<a id="tfs-15-area-paths"></a>
 
 ## Add an area path 
 
@@ -196,7 +196,7 @@ Only one area is defined, by default. Add area paths under the root area path fo
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="add-area" /> 
+<a id="add-area"></a> 
 
 ::: moniker range="azure-devops"  
 
@@ -255,7 +255,7 @@ ID     Identifier                            Name    Path                       
 
 
 
-<a id="open-team-settings" />
+<a id="open-team-settings"></a>
 
 ## Open team settings, list team area paths  
 
@@ -290,7 +290,7 @@ You open team settings from the upper navigation bar. Select the team you want a
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="list-team-area-paths" /> 
+<a id="list-team-area-paths"></a> 
 
 ::: moniker range="azure-devops"
 
@@ -422,7 +422,7 @@ The default area path determines the default area path assigned to work items th
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="set-team-area-paths" /> 
+<a id="set-team-area-paths"></a> 
 
 ::: moniker range="azure-devops"
 
@@ -463,7 +463,7 @@ Fabrikam Fiber\Voice                   True                 True
 * * *
 
 <a name="rename-delete"></a>
-<a id="rename-move-project-area-path" />   
+<a id="rename-move-project-area-path"></a>   
 
 ## Rename or move an Area Path
 
@@ -520,7 +520,7 @@ ID     Identifier                            Name           Path                
 55412  b00f86a2-3d49-4ad2-af01-da2537947baa  Voice and Web  \Fabrikam Fiber\Area\Voice and Web  False
 ```
 
-<a id="remove-area-path-from-team" /> 
+<a id="remove-area-path-from-team"></a> 
 
 ### Remove an area path from a team 
 

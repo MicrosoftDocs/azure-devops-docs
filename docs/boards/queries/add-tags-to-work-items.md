@@ -98,7 +98,7 @@ For example, here we query for all work items that are tagged either ```Web``` o
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
-<a id="no-tags" />
+<a id="no-tags"></a>
 
 > [!NOTE]
 > The ability to query for work items that don't have any tags attached to them is not a supported feature. If you'd like to up vote the request to support this feature, you can do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 

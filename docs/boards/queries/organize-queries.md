@@ -31,7 +31,7 @@ Organize your personal or shared queries by adding a query folder. You can then 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
 <a id="flat-list-query"/>
-<a id="save" />
+<a id="save"></a>
 
 ## Run, edit, and save a query  
 
@@ -109,7 +109,7 @@ To save the query as a `.wiq` file, choose the **File** radio button and specify
 
 * * * 
 
-<a id="view-rename-delete" />
+<a id="view-rename-delete"></a>
 
 ## Rename or delete a query
 

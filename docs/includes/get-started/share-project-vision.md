@@ -6,7 +6,7 @@ ms.topic: include
 ms.date: 04/04/2022
 ---
 
-<a id="share-vision" />
+<a id="share-vision"></a>
 
 
 ## Share your project vision, set up a project wiki 

@@ -143,7 +143,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 	- [Navigate to team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
 	- [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
-	<a id="add-team-members" />
+	<a id="add-team-members"></a>
 
 1. To add team members, choose **Add**. 
 
@@ -171,7 +171,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
  
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="add-team-cli" /> 
+<a id="add-team-cli"></a> 
 
 ::: moniker range="azure-devops"
 
@@ -324,7 +324,7 @@ There isn't an Azure CLI command to set the default team project.
 * * *
   
 
-<a id="list-teams" /> 
+<a id="list-teams"></a> 
 
 ::: moniker range="azure-devops" 
 

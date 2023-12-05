@@ -42,7 +42,7 @@ Clauses that specify an integer field can use the following operators.
 `In, Not In,`   
 `Was Ever`  
 
-<a id="tree" />
+<a id="tree"></a>
 
 ## List hierarchical items in a tree view  
 
@@ -110,7 +110,7 @@ Change the filter options for linked work items and add query clauses via the fo
    :::column-end:::
 :::row-end:::
 
-<a id="dependents" />
+<a id="dependents"></a>
 
 ## List items based on linked dependents  
 
@@ -144,7 +144,7 @@ The following image shows the query results.
 ![Screenshot of Direct links query results.](media/example-work-item-queries/IC588291.png)  
 
 ***
-<a id="orphan-stories" />
+<a id="orphan-stories"></a>
 
 ## List orphan user stories 
 
@@ -159,7 +159,7 @@ Or, you can find unparented backlog items using a **Work items and direct links*
 
 :::image type="content" source="media/link-attachments/unparented-work-items.png" alt-text="Screenshot of Query Editor, Work items, and direct links, Web portal, unparented user stories.":::
 <a id="table-field"/>
-<a id="fields" />
+<a id="fields"></a>
 
 ## Fields associated with links and attachments
 

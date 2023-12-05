@@ -61,7 +61,7 @@ Enter a name for the view and provide a description. To allow others to view and
 > [!div class="mx-imgBorder"]
 > ![Analytics views General](media/editable-views/general.png)
 
-<a id="specify-wi-filters" />
+<a id="specify-wi-filters"></a>
 
 ### 2. Specify work item filters
 
@@ -102,7 +102,7 @@ Specify filters to reduce the number of results returned by your view. In the wo
    > [!NOTE]   
    > It is important to understand how filters are applied to historical data. For more information, see [Filters applied to historical data](analytics-historical-filtering.md).
 
-<a id="select-fields" />
+<a id="select-fields"></a>
 
 ### 3. Select the fields to appear in the report
 
@@ -116,7 +116,7 @@ You can add any custom fields you've added through an inherited process.
 > [!NOTE]
 >  You can't add fields with a data type of Plain Text (long text) or HTML (rich-text). These fields aren't available from Analytics for the purposes of reporting. 
 
-<a id="select-trend-data" />
+<a id="select-trend-data"></a>
 
 ### 4. Select trend data options 
 
@@ -160,7 +160,7 @@ You can choose to get a snapshot of every work item for each day, week, or month
 > - Preview rows is a calculated value based on history and granularity and may not match with Power BI.
 > - It is important to understand how filters are applied to historical data. Read [Filters applied to historical data](analytics-historical-filtering.md) for more information.
 
-<a id="verify-and-save" />
+<a id="verify-and-save"></a>
 
 ### 5. Verify and save the view
 

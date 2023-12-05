@@ -126,7 +126,7 @@ With Azure Boards, you gain the advantage of full integration with the Azure Dev
 
 For more information, see [End-to-end traceability](../../cross-service/end-to-end-traceability.md) and [Cross-service integration and collaboration overview](../../cross-service/cross-service-overview.md).
 
-<a id="scale" />
+<a id="scale"></a>
 
 ## Support independent, autonomous teams 
 

@@ -216,7 +216,7 @@ From the **Transform** menu change the data type for the following columns to `D
 	- `TaskDuration80thPercentileInSeconds`
 	- `TaskDuration95thPercentileInSeconds`.
  
-<a id="rename" />
+<a id="rename"></a>
 
 ## (Optional) Rename column fields
 

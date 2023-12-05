@@ -83,7 +83,7 @@ Here's another example that uses the **Node Name** and the **In** operator.
 
 
 ::: moniker range=">= azure-devops-2019"
-<a id="team-area-path" /> 
+<a id="team-area-path"></a> 
 
 ## Team area path queries  
 
@@ -95,7 +95,7 @@ Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the 
 ::: moniker-end
 
 <a name="field-reference"></a>
-<a id="fields" />
+<a id="fields"></a>
 
 ## Classification field reference 
 

@@ -210,7 +210,7 @@ When a chart contains more than seven items within the data series, values in th
 
 Charts automatically update when you edit the query or refresh the query results.  
 
-<a id="pie-chart" /> 
+<a id="pie-chart"></a> 
 
 ## Add a Pie chart
 

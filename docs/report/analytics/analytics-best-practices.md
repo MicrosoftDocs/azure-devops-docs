@@ -34,7 +34,7 @@ To query the minimum data set you need to create your report, follow these pract
 - [Create preview queries](#preview)
 - [Limit queries to projects you have access to](#limit-projects)
 
-<a id="entityset" />
+<a id="entityset"></a>
 
 ### Choose the entity set to support your report
 
@@ -53,7 +53,7 @@ Here's a quick reference for the EntityTypes to specify to support reports. For 
 |Azure Pipelines and Tests | `TestResultsDaily` |  `TestRuns`        | 
 |Azure Test Plans | `Tests`<br/>`TestConfiguration`<br/>`TestPoints`<br/>`WorkItems` | `TestResultsDaily`<br/>`TestPointHistorySnapshot` |  | 
 
-<a id="order" />
+<a id="order"></a>
 
 ### Specify query parts in the order they're executed 
 
@@ -69,7 +69,7 @@ The recommended order for the various query parts is to specify them in the foll
 
 All queries must contain an `$apply` or `$select` clause, otherwise you might receive a warning message. 
 
-<a id="limit-columns" />
+<a id="limit-columns"></a>
 
 ### Limit the columns you request in your query 
 
@@ -83,7 +83,7 @@ To look up the list of properties and their corresponding field names, see [Enti
 Analytics is built on top of a Columnstore Index technology. That means that data is both storage and query processing is column-based. So, the more properties that a query references, the more expensive it's to process. 
 -->
 
-<a id="preview" />
+<a id="preview"></a>
 
 ### Create preview queries
 
@@ -111,7 +111,7 @@ The response returns a total of 1415 work items.
 }
 ```
 
-<a id="limit-projects" />
+<a id="limit-projects"></a>
 
 ### Limit queries to projects you have access to 
 

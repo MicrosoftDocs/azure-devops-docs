@@ -226,7 +226,7 @@ Each board supports the following tasks:
 - Assign values or update fields displayed on cards 
 - Filter based on keywords and key fields
 
-<a id="portfolio-team-board" />
+<a id="portfolio-team-board"></a>
 
 ### Portfolio Kanban board  
 
@@ -235,14 +235,14 @@ Child items of Epics are listed within each card. You can expand and collapse th
 > [!div class="mx-imgBorder"]
 > ![Epics Kanban board](media/safe-plan-track/epics-kanban-board.png)
  
-<a id="program-team-board" />
+<a id="program-team-board"></a>
 
 ### Program team Kanban board 
 
 > [!div class="mx-imgBorder"]
 > ![Fiber Suite Kanban board](media/safe-plan-track/features-kanban-board.png)
 
-<a id="agile-team-board" />
+<a id="agile-team-board"></a>
 
 ### Agile team Kanban board 
 
@@ -272,7 +272,7 @@ Here we show the Fiber Suite program team plan the releases for their features.
 
 
 
-<a id="work-item-tips" />
+<a id="work-item-tips"></a>
 
 ## Tips for working with work items  
 
@@ -282,7 +282,7 @@ When creating and updating work items, understand what you can and can't do.
 - The quickest way to add backlog work items is from the backlog or Kanban board 
 - You can use [work item templates](../backlogs/work-item-template.md) to quickly fill in work item fields
 
-<a id="bulk-update" />
+<a id="bulk-update"></a>
 
 ## Bulk add or update work items 
 

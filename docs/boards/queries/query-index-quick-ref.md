@@ -18,7 +18,7 @@ ms.date: 10/05/2022
 Use this index to quickly access example queries and information on opening, defining, and working with queries. To learn how to use the Query Editor, see [Define a query](using-queries.md). If you find that your queries take too long to return results, see [Define a query/Best practices](using-queries.md#best-practices).  
 
 
-<a id="examples" />  
+<a id="examples"></a>  
 
 ## Example queries   
 
@@ -129,7 +129,7 @@ You can list work items based on the following criteria...
 :::row-end:::
 ---
 
-<a id="tasks" />
+<a id="tasks"></a>
 
 
 ## Query tasks 
@@ -197,7 +197,7 @@ You can list work items based on the following criteria...
 :::row-end:::
 ---
 
-<a id="fields-operators-macros" />
+<a id="fields-operators-macros"></a>
 
 ## Operators and macros supported for each data type
 
@@ -379,7 +379,7 @@ The following table indicates the operators and macros available for the differe
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
-<a id="samples" />
+<a id="samples"></a>
 
 ## Example queries for select fields 
 

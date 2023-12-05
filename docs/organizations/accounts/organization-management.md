@@ -40,7 +40,7 @@ Once you've created your organization, you can [connect to your projects](../../
 
 Some clients, like Xcode, Git, and NuGet, require basic credentials (a username and password) to access Azure DevOps. To connect these clients to Azure DevOps, create personal access tokens (PATs) to authenticate your identity. Then, you can use a credential manager to create, store, and secure your tokens. This way, you don't have to reenter them every time you make updates. Or, if you don't want to use a credential manager, you can [create PATs manually](use-personal-access-tokens-to-authenticate.md).
 
-<a id="add-users" />
+<a id="add-users"></a>
 
 ##  Manage access to your organization
 
@@ -58,7 +58,7 @@ Understand the following three key definitions when you manage your user base:
 
 For an overview of default assignments, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
 
-<a id="add-users-direct" />
+<a id="add-users-direct"></a>
 
 ### Direct assignment
 
@@ -86,7 +86,7 @@ For more information about adding users to your organization, see the following 
 
 
 
-<a id="access-azure-ad" />
+<a id="access-azure-ad"></a>
 
 <a name='azure-ad'></a>
 
@@ -102,7 +102,7 @@ Do the following tasks, to add users through Microsoft Entra ID:
 4. [Add a Microsoft Entra group to an Azure DevOps group](manage-azure-active-directory-groups.md).  
 5. [Create bulk assignments of access levels for users](add-organization-users.md), or [define group rules and assign access levels](assign-access-levels-by-group-membership.md).
 
-<a id="add-users-notes" />
+<a id="add-users-notes"></a>
 
 ### Group rules
 

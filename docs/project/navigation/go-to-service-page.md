@@ -66,7 +66,7 @@ For example, here we select **Work>Work Items**.
 
 ::: moniker-end
 
-<a id="team-settings" /> 
+<a id="team-settings"></a> 
 
 ## Open team settings
 
@@ -109,7 +109,7 @@ You open team settings from the top navigation bar. Select the team you want and
    ::: moniker-end
 
 
-<a id="project-admin-context" /> 
+<a id="project-admin-context"></a> 
 
 ## Open project settings
 
@@ -137,8 +137,8 @@ From a user context, open **Project settings** by choosing the :::image type="ic
 
 ::: moniker range="tfs-2018"
 
-<a id="admin-intro" />
-<a id="admin-intro-team-services" /> 
+<a id="admin-intro"></a>
+<a id="admin-intro-team-services"></a> 
  
 Open any admin page by choosing it's name. Choose or hover over the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
 
@@ -147,7 +147,7 @@ Open any admin page by choosing it's name. Choose or hover over the :::image typ
 ::: moniker-end
 
 
-<a id="collection-admin-context" /> 
+<a id="collection-admin-context"></a> 
 
 ::: moniker range="azure-devops"
 

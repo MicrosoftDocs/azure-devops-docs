@@ -187,7 +187,7 @@ ID    Created     Creator              Title                                    
 
 ***
 
-<a id="define-custom-pr-view" />
+<a id="define-custom-pr-view"></a>
 
 ## Define a custom pull request view
 
@@ -268,7 +268,7 @@ az repos pr list --creator "My Name" --status all --top 1
 
 ***
 
-<a id="open-pr" />
+<a id="open-pr"></a>
 
 ## Open a pull request
 

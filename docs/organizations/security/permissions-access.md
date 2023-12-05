@@ -35,7 +35,7 @@ In the tables provided in this article, a ✔️ (checkmark) indicates that the 
 
 To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](request-changes-permissions.md), you can do so.
 
-<a id="agile-tools-and-work-tracking" />
+<a id="agile-tools-and-work-tracking"></a>
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -143,7 +143,7 @@ You can use [Git repositories](../../repos/git/index.yml) to host and collaborat
 
 [!INCLUDE [temp](includes/code-tfvc.md)]
 
-<a id="pipelines" />
+<a id="pipelines"></a>
 
 ::: moniker range=">= azure-devops-2019"
 

@@ -80,7 +80,7 @@ To give other users access to your organization, add their email addresses.
 
 [Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
-<a id="add-user" />
+<a id="add-user"></a>
 
 ### Add a user
 
@@ -183,7 +183,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
-<a id="update-user" />
+<a id="update-user"></a>
 
 ### Update a user
 
@@ -213,7 +213,7 @@ ID                                    Display Name         Email                
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     pending
 ```
 
-<a id="show-users" /> 
+<a id="show-users"></a> 
 
 ### Show users
 

@@ -130,7 +130,7 @@ You can drag a task within a work item to reorder it. Or, you can drag the task 
 
 Tasks or other child items you add as checklists are automatically assigned to the **Iteration Path** of their parent work item. To reassign a checklist item to a different sprint, you must open the item and change its **Iteration Path**. Or, open the sprint backlogs where it's currently defined and  drag it to the new sprint using the Planning pane. For more information, see [Assign backlog items to a sprint](../sprints/assign-work-sprint.md).  
 
-<a id="checklist-actions" /> 
+<a id="checklist-actions"></a> 
 
 ::: moniker range="azure-devops"
 

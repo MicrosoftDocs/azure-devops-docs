@@ -79,7 +79,7 @@ Sprint backlogs and Taskboards provide a filtered view of work items a team has 
  
 Each sprint that you select for your team provides access to a sprint backlog, taskboard, and other Agile tools for planning and tracking work. 
 
-<a id="ts-sprints" /> 
+<a id="ts-sprints"></a> 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -203,7 +203,7 @@ After several sprints, use the [Velocity chart](../../report/dashboards/team-vel
 :::row-end:::
 ---
 
-<a id="sprint-scope-change" />
+<a id="sprint-scope-change"></a>
 
 ## Query sprint scope changes  
 

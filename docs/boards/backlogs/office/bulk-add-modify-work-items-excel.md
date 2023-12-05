@@ -212,7 +212,7 @@ You can and can't do the following tasks from an Excel worksheet:
 
     :::image type="content" source="media/excel/2019-input-list-dialog.png" alt-text="Screenshot of Select input list.":::
 
-5.  <a id="step-5" />Your worksheet is now bound to your project as an input list (Query[None]), flat list.  
+5.  <a id="step-5"></a>Your worksheet is now bound to your project as an input list (Query[None]), flat list.  
 
 	:::image type="content" source="media/excel/2019-input-list.png" alt-text="Screenshot of Empty flat list connected to a project."::: 
 
@@ -300,7 +300,7 @@ You can add a hierarchy of work items linked using parent-child links or other t
 
     You can use the ![indent item in tree](media/bulk-modify-excel-indent-inline.png) or ![Outdent item in tree](media/bulk-modify-excel-outdent-inline.png) indent/outdent icons to demote or promote a work item within the tree hierarchy. The header at the top of the column should read **Title n**, if it doesn't, add a tree level.
 
-<a id="remove-tree-level" />
+<a id="remove-tree-level"></a>
 
 ### Remove a tree level
 
@@ -395,7 +395,7 @@ To convert your query list to an input list, follow these steps.
 
 	:::image type="content" source="media/excel/configure-list-properties-dialog-refresh-query.png" alt-text="Screenshot of Configure List properties dialog, Query.":::
 
-<a id="get-work-items" />
+<a id="get-work-items"></a>
 
 ## Add existing work items to your worksheet 
 

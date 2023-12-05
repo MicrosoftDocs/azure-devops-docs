@@ -375,7 +375,7 @@ To learn more, see the following articles:
 
 ::: moniker-end
 
-<a id="work-tracking-analytics" />
+<a id="work-tracking-analytics"></a>
 
 ## In-context reports: Work tracking 
 
@@ -455,7 +455,7 @@ To learn more about these reports, see one of the following articles:
 
 
 
-<a id="incontext-reports" />  
+<a id="incontext-reports"></a>  
 
 ::: moniker range=">= azure-devops-2020"
 

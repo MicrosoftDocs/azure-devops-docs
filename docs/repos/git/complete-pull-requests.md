@@ -282,7 +282,7 @@ For example, to complete PR #21, use:
 az repos pr update --id 21 --status completed
 ```
 
-<a id="set-completion-options" /> 
+<a id="set-completion-options"></a> 
 
 ### Set completion options
 
