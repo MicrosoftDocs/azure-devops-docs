@@ -97,7 +97,7 @@ When you're done, you have a working YAML file *azure-pipelines.yml* in your rep
       vmImage: 'ubuntu-latest'
     
     steps:
-    - task: NodeTool@1
+    - task: UseNode@1
       inputs:
         version: '16.x'
       displayName: 'Install Node.js'

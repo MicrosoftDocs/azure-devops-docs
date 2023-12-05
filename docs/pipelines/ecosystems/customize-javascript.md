@@ -26,7 +26,7 @@ If you need a version of Node.js and npm that isn't already installed on the Mic
 > The hosted agents are regularly updated, and setting up this task results in spending significant time updating to a newer minor version every time the pipeline is run. Use this task only when you need a specific Node version in your pipeline.
 
 ```yaml
-- task: NodeTool@1
+- task: UseNode@1
   inputs:
     version: '16.x' # replace this value with the version that you need for your project
 ```
@@ -64,7 +64,7 @@ strategy:
       node_version: 18.x
 
 steps:
-- task: NodeTool@1
+- task: UseNode@1
   inputs:
     version: $(node_version)
 
@@ -415,7 +415,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: NodeTool@1
+- task: UseNode@1
   inputs:
     version: '16.x'
   displayName: 'Install Node.js'
@@ -732,7 +732,7 @@ steps: # Checking out connected repo
     workingFile: .npmrc
     customEndpoint: 'my-npm-connection'
     
-- task: NodeTool@1
+- task: UseNode@1
   inputs:
     version: '16.x'
   displayName: 'Install Node.js'
