@@ -201,9 +201,9 @@ The menu options available to you change depending on the platform you work from
 
 ::: moniker-end
 
-### Select multiple items and open the context menu 
+### Select multiple items and open the context menu
 
-To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint. 
+To select several items in a sequence, click on the first item of the sequence, hold down the shift key and click on the last item of the sequence. To select several non-sequential items, hold down the `Ctrl` key and click on the items to be selected one after the other. Then, you can either drag the selected items to a new position within the backlog or to a different sprint if the `Planning` side pane is enabled. 
 
 To open the context menu, select (  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: ) or (![context icon](../media/icons/context_menu.png)), and then choose the option from the menu. 
 
