@@ -42,7 +42,7 @@ If you don't see pending changes for an item you want to check in, make sure tha
 
 When you check in changes, you should associate work items with the changes. This practice offers the following benefits:
 
-- A team member who looks at the work item can [link directly to the changeset](../../boards/queries/link-work-items-support-traceability.md) to see the work that you did.
+- A team member who looks at the work item can [link directly to the changeset](../../boards/backlogs/add-link.md) to see the work that you did.
 - A team member who [reviews the history of a file](view-manage-past-versions.md) you changed can view the changeset and see the work items that were the justification for the change.
 - You might build your changes in your automated build system, for example with a [CI Build](../../pipelines/build/triggers.md), or a [Gated Check-in Build](../../pipelines/repos/index.md). Your team members can see in which completed build the task was completed or the bug was fixed.
 
@@ -109,7 +109,7 @@ If you want to be notified when someone checks in code in your TFVC project, you
 
 - Changes are checked in atomically. The operation either succeeds completely or fails completely. If any one of the changes can't be submitted, none of the changes are committed and a changeset isn't created. For example, if you lose network connectivity in the middle of a check-in operation, the whole operation fails.
 
-  There is one exception, which is the association of work items with the changeset. If work item association fails but all other aspects of the check-in operation succeed, then the changeset is created. You can manually associate a work item with a changeset. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).
+  There is one exception, which is the association of work items with the changeset. If work item association fails but all other aspects of the check-in operation succeed, then the changeset is created. You can [manually associate a work item with a changeset](../../boards/backlogs/add-link.md).
 
 ## Next steps
 

@@ -400,12 +400,10 @@ Query **WorkItemLinks** to report on parent/child, related, predecessor/successo
 Navigation properties for the **WorkItemLink** entity type include `Projects`, `SourceWorkItem`, and `TargetWorkItem`.
 
 To learn more about links and link types, see the following articles:  
-- [Use links to view dependencies and track related work](../../boards/queries/link-work-items-support-traceability.md)
-- [Link user stories, issues, bugs, and other work items in Azure Boards](../../boards/backlogs/add-link.md)
+- [Use links to view dependencies and track related work](../../boards/backlogs/add-link.md)
 - [Reference guide for link types used in Azure DevOps](../../boards/queries/link-type-reference.md)
 
 <a id="work-item-type-field-properties" /> 
-
 
 ## WorkItemTypeFields
  

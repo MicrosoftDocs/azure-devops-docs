@@ -258,9 +258,6 @@ Once you've [created your service connection](#create-a-service-connection), com
 
 You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
-> [!NOTE]
-> Service connections can't be specified by variables.
-
 ## Common service connection types
 
 Azure Pipelines supports the following service connection types by default:

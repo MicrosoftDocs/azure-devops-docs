@@ -60,7 +60,7 @@ landingContent:
           - text: Syntax guidance for basic Markdown usage
             url: ./wiki/markdown-guidance.md
           - text: Syntax guidance for Markdown usage in Wiki
-            url: ./wiki/wiki-markdown-guidance.md
+            url: ./wiki/markdown-guidance.md#wiki-markdown-guidance
   - title: Search
     linkLists:
       - linkListType: overview

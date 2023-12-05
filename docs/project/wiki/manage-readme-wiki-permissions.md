@@ -9,7 +9,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-ms.date: 06/21/2022
+ms.date: 11/21/2023
 monikerRange: '>= tfs-2018'
 ---
 
@@ -23,31 +23,26 @@ Learn about managing permissions for your wiki. By default, all members of the C
 
 ## Manage wiki permissions
 
-By default, all project contributors have read and edit access of the wiki repository. You can grant or restrict access to who can read and edit wiki pages by managing the wiki repository permissions. For more information about permissions in Azure DevOps, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
+All contributors to a project have access to "read" and “edit” the wiki repository by default. You can manage the wiki repository permissions to grant or restrict access for reading and editing wiki pages. For more information, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
 
-::: moniker range="tfs-2018"
-> [!NOTE]  
-> **Feature availability**: The built-in wiki is available with TFS 2018 and later versions.
-::: moniker-end
-
-To open the Security dialog, choose **More actions** > **Wiki security**.
+To open the Security dialog, select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** > **Wiki security**.
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki, Choose More, select security](media/wiki/wiki-open-security.png)
+> ![Screenshot of Wiki, Choose More, select security.](media/wiki/wiki-open-security.png)
 
 For definitions of each repository permission, see [Git repository permissions](../../organizations/security/permissions.md#git-repository).
 
-:::image type="content" source="media/wiki/security-dialog.png" alt-text="Wiki security dialog/":::
+:::image type="content" source="media/wiki/security-dialog.png" alt-text="Screenshot of Wiki security dialog.":::
 
 ## Don't have access to create a page?
 
-If you don't have access to create a wiki page, you need to contact an administrator to grant you adequate permission on the underlying Git repository of the wiki.
+If you don't have access to create a wiki page, contact an administrator, who can grant you adequate permission on the underlying Git repository of the wiki.
 
 ## Stakeholder wiki access
 
 ### Private projects
 
-Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read [**provisioned**](provisioned-vs-published-wiki.md) wiki pages and view revisions, however they can't do any edit operations. For example, Stakeholders can't create, edit, reorder, or revert changes to project wiki pages. These permissions can't be changed.
+Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read [**provisioned**](provisioned-vs-published-wiki.md) wiki pages and view revisions, but they can't edit. For example, Stakeholders can't create, edit, reorder, or revert changes to project wiki pages. These permissions can't be changed.
 
 Stakeholders have zero access to read or edit [**published code**](provisioned-vs-published-wiki.md) wiki pages in private projects. For more information, see the [Stakeholder access quick reference for project and code wikis](../../organizations/security/stakeholder-access.md#public-versus-private-feature-access).
 
@@ -67,3 +62,4 @@ For more information about Stakeholder access, see [About access levels, Stakeho
 
 - [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md)
 - [Get Started with Git](../../repos/git/gitquickstart.md)
+- [Azure DevOps security](../../organizations/security/about-security-identity.md)

@@ -45,18 +45,18 @@
     - name: Publish NuGet packages (dotnet)
       href: nuget/dotnet-exe.md
       displayName: dotnet, artifacts, publish packages
-    - name: Publish to NuGet.org
-      href: nuget/publish-to-nuget-org.md
-      displayName: publish package, nuget package, nuget.org
     - name: Publish to a NuGet feed (YAML/Classic)
       href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json
       displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
     - name: Install NuGet packages with Visual Studio
       href: nuget/consume.md
       displayName: install package, nuget, visual studio
-    - name: NuGet.org upstream source
+    - name: Use packages from NuGet.org
       href: nuget/upstream-sources.md
-      displayName: upstream sources, upstreams, artifact feeds 
+      displayName: upstream, nuget, install, package 
+    - name: Publish packages to NuGet.org
+      href: nuget/publish-to-nuget-org.md
+      displayName: publish, nuget, package, upstream
     - name: Publish from GitHub Actions
       href: quickstarts/github-actions.md
     - name: Migrate from MyGet to Azure Artifacts
@@ -67,18 +67,18 @@
     - name: npm quickstart
       href: get-started-npm.md
       displayName: npm, npm introduction
+    - name: Publish and restore npm packages (CLI)
+      href: npm/publish.md
+      displayName: npm, publish, restore, cli
     - name: Publish npm packages (YAML/Classic)
       href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json
-      displayName: publish npm, npm packages, npm feed 
-    - name: Publish npm packages (CLI)
-      href: npm/publish.md
-      displayName: npm package, cli, publish packages 
+      displayName: npm, publish, yaml, classic
     - name: Set up your project's npmrc
       href: npm/npmrc.md
       displayName: npmrc, project setup, npm feed 
     - name: Use packages from npmjs.com
       href: npm/upstream-sources.md
-      displayName: npmjs, npm packages, npm feed 
+      displayName: upstream, npmjs, npm, install 
     - name: Npm scopes
       href: npm/scopes.md
       displayName: npm scope, npm artifacts, npm packages 
@@ -122,6 +122,9 @@
     - name: Publish Python packages to a feed (Classic/YAML)
       href: ../pipelines/artifacts/pypi.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
       displayName: python, publish, pipeline, yaml, classic
+    - name: Use packages from PyPi
+      href: python/use-packages-from-pypi.md
+      displayName: python, PyPi, upstream
   - name: Universal Packages
     items:
     - name: Quickstart

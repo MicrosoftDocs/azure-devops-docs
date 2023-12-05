@@ -298,7 +298,7 @@ additionalContent:
             - text: Create a wiki for your project
               url: ./project/wiki/wiki-create-repo.md
             - text: Syntax guidance for Markdown usage in Wiki
-              url: ./project/wiki/wiki-markdown-guidance.md
+              url: ./project/wiki/markdown-guidance.md#wiki-markdown-guidance
             - text: Search
               url: ./project/search/get-started-search.md
             - text: Web portal navigation

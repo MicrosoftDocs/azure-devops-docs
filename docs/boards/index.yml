@@ -112,8 +112,8 @@ landingContent:
             url: ./github/link-to-from-github.md
       - linkListType: concept
         links:
-          - text: Link work items to support traceability
-            url: ./queries/link-work-items-support-traceability.md
+          - text: Link work items to other objects
+            url: ./backlogs/add-link.md
       - linkListType: tutorial
         links:
           - text: Use work item templates
