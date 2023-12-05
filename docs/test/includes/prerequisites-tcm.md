@@ -7,7 +7,7 @@ ms.topic: include
 ms.date: 11/09/2021
 ---
 
-<a id="work-tcm-cli" />
+<a id="work-tcm-cli"></a>
 
 ## Work with the TCM command-line tool 
 
@@ -22,7 +22,7 @@ To exercise the TCM command-line tool, you must have the following in place:
 
 	| Parameter | Description |  
 	|----------|------------|  
-	|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
+	|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection. The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
 	|**/teamproject**:`project`|Required. The name of the project that contains the test objects you want to clone or import automated tests into.|
 	|**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if your Windows credentials don't have the appropriate permissions, or you're using basic authentication, or you're not connected to a domain.|
 
