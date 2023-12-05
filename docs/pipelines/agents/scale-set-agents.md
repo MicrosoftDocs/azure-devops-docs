@@ -76,14 +76,14 @@ In the following example, a new resource group and Virtual Machine Scale Set are
     --name vmssagents
     ```
 
-4. Create a Virtual Machine Scale Set in your resource group. In this example, the UbuntuLTS VM image is specified. 
+4. Create a Virtual Machine Scale Set in your resource group. In this example, the Ubuntu2204 VM image is specified. 
 
     ```azurecli
     az vmss create \
     --name vmssagentspool \
     --resource-group vmssagents \
-    --image UbuntuLTS \
-    --vm-sku Standard_D2_v3 \
+    --image Ubuntu2204 \
+    --vm-sku Standard_D2_v4 \
     --storage-sku StandardSSD_LRS \
     --authentication-type SSH \
     --generate-ssh-keys \
