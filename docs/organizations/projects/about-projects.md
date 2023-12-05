@@ -65,7 +65,7 @@ You can scale your organization in the following ways:
 ::: moniker range="< azure-devops"
 You can scale your on-premises Azure DevOps deployment in the following ways:
 
-- Add server instances to increase performanc
+- Add server instances to increase performance
 - Add project collections and projects to support different business units
 - Add teams within a project
 - Add repositories and branches
@@ -86,7 +86,7 @@ View the projects defined for your organization by opening the **Projects** page
 
 For more information, see [Create a project](create-project.md).  
 
-<a id="project-scoped-user-group" /> 
+<a id="project-scoped-user-group"></a>
 
 ::: moniker range="azure-devops"
 

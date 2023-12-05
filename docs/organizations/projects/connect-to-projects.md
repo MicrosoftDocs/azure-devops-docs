@@ -108,7 +108,7 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
 ### Visual Studio 2017
 
-<a id="vs-2017-connect-dialog" />
+<a id="vs-2017-connect-dialog"></a>
 
 1. Select the **Manage Connections** button in Team Explorer to open the **Connect** page. Choose the **Connect to Team Project** link to select a project to connect to.
 
@@ -128,8 +128,8 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
 ### Visual Studio 2015
 
-<a id="connect-dialog" /> 
-<a id="vs-2015-connect-dialog" /> 
+<a id="connect-dialog"></a>
+<a id="vs-2015-connect-dialog"></a> 
 
 1. Select the **Manage Connections** button in Team Explorer to open the **Connect** page. Choose **Connect to Team Project** to select a different organization or project to connect to.
 
@@ -150,9 +150,9 @@ Team Explorer displays the **Home** page for that project. The pages that appear
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git  |Home page with TFVC  |
 > |-------------|----------|
-> |<img src="media/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" />|<img src="media/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" />|
+> |:::image type="content" source="media/te-home-page-git-repo.png" alt-text="Screenshot of Team Explorer Home page with Git as source control.":::|:::image type="content" source="media/te-home-page-tfvc-repo.png" alt-text="Screenshot of Team Explorer Home page w/ TFVC as source control.":::|
 
-To learn more about each page and the tasks you can do, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
+For more information, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
 
 Your client remembers the set of connections you configure. You can switch from one project to another from the **Connect** page.
 
@@ -192,8 +192,8 @@ Your client remembers the set of connections you configure. You can switch from 
 
 ### Visual Studio 2017
 
-<a id="connect-account-dialog" /> 
-<a id="vs-2015-connect-account-dialog" />
+<a id="connect-account-dialog"></a>
+<a id="vs-2015-connect-account-dialog"></a>
 
 1. From **Connect**, choose **Connect to Team Project** to sign in with different credentials.
 
