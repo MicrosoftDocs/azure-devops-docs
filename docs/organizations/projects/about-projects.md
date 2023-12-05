@@ -113,8 +113,12 @@ For more information, see [How many projects do you need?](../../user-guide/plan
 ## Add another project
 
 ::: moniker range="azure-devops"
+<<<<<<< HEAD
 
 Another feasible approach is to have multiple projects. It can be a recommend approach if your organization is looking to accommodate the following scenarios:
+=======
+Another feasible approach is to have multiple projects. It can be a recommended approach if your organization is looking to accommodate the following scenarios:
+>>>>>>> 44134e6389d4b72657ce581eb52b110ae0abb359
 
 - To prohibit or manage access to the information contained within a project to select groups
 - To support custom work tracking processes for specific business units within your organization  

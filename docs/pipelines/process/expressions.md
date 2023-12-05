@@ -421,7 +421,7 @@ steps:
 * Example: `replace('https://www.tinfoilsecurity.com/saml/consume','https://www.tinfoilsecurity.com','http://server')` (returns `http://server/saml/consume`)
 ::: moniker-end
 
-::: moniker range=">= azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 ### split
 * Splits a string into substrings based on the specified delimiting characters 

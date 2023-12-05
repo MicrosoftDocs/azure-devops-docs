@@ -7,13 +7,13 @@ ms.date: 04/10/2023
 ms.author: rabououn
 ms.custom: engagement-fy23
 author: ramiMSFT
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
 # Artifacts storage consumption
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-azure-devops-2019](../includes/version-gt-eq-2019.md)]
 
 Azure Artifacts adopts a consumption-based billing model for all the package types it supports, such as NuGet, npm, Python, Maven, and Universal packages. The free-tier plan provides a storage capacity of two Gibibytes (GiB) to store various package types. If you exceed the storage limit, you can either upgrade to a paid subscription or remove some of your existing artifacts.
 
