@@ -257,7 +257,7 @@ The following table indicates those features available for each supported access
       Includes defining [release pipelines](../../pipelines/release/index.md), [multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md), and [using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md).
    :::column-end:::
    :::column span="1":::
-       
+      ✔️ 
    :::column-end:::
    :::column span="1":::
       ✔️
