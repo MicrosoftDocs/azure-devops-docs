@@ -79,7 +79,7 @@ If you specify this build number format:
 $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 ```
 
-Then the second run on this day would be named: **Fabrikam\_CIBuild_master\_20190505.2**
+Then the second run on this day would be named: **Fabrikam\_CIBuild_main\_20190505.2**
 
 
 ## Tokens
