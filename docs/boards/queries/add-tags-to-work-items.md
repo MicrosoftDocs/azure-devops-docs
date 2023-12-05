@@ -33,6 +33,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 ::: moniker range="azure-devops"
 > [!NOTE]   
 > Users with **Stakeholder** access for public projects are allowed to add new tags. 
+
 ::: moniker-end
 
 
@@ -62,6 +63,7 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 > new tags. To grant or restrict permissions to create new tags, you set 
 > the permission **Create tag definition** at the project-level. To learn
 > more, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
+
 ::: moniker-end	
 
 
@@ -131,14 +133,12 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 
 ## Delete, remove, or manage tags 
 
-You can't delete a tag itself. However, if you delete a tag from all work items to which it's currently assigned, the system deletes the tag. The system automatically deletes unassigned tags after three days of disuse.  
+You can't delete tags using the Azure DevOps Web UI. 
 
-If you misspell a tag, don't assign the misspelled tag to any work item and the system  automatically deletes it within three days.  
+If you need to remove a tag, you can create a script or application capable of a delete using the [Azure DevOps REST API](/rest/api/azure/devops/wit/tags?view=azure-devops-rest-7.2) or the [.NET client libraries](/azure/devops/integrate/concepts/dotnet-client-libraries?view=azure-devops). For more examples, see [Azure-DevOps-Admin-CLI](https://github.com/danhellem/azure-devops-admin-cli).
 
-Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2), which adds a **Tags** page under **Boards** or **Work** to manage tags. 
+Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2), which adds a **Tags** page under **Boards** or **Work** to manage tags, including deletes. 
 
-
-  
 ## Color-code tags on boards
 
 You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. They don't appear on backlogs or Taskboards. For more information, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
@@ -186,6 +186,9 @@ Save the work item with the tags (100 or less) that you've added, and then you c
 Limit queries to fewer than 25 tags. More than that amount and the query likely times out.  
 
 
+
+
+
 ::: moniker range="< azure-devops"
 
 ### Add tags to the default column view on the product backlog 
@@ -193,3 +196,4 @@ Limit queries to fewer than 25 tags. More than that amount and the query likely 
 To add the **Tags** field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```.  To learn how, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 
 ::: moniker-end
+

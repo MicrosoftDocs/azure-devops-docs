@@ -449,6 +449,41 @@
       "source_path": "docs/boards/boards/kanban-enable-live-updates.md",
       "redirect_url": "/azure/devops/boards/boards/kanban-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/link-work-items-support-traceability.md",
+      "redirect_url": "/azure/devops/boards/backlogs/add-link",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/work-item-deployments-control.md",
+      "redirect_url": "/azure/devops/boards/backlogs/add-link",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/wiki/wiki-select-unpublish-versions.md",
+      "redirect_url": "/azure/devops/project/wiki/publish-repo-to-wiki#unpublish-a-code-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/wiki/wiki-markdown-guidance.md",
+      "redirect_url": "/azure/devops/project/wiki/markdown-guidance#wiki-markdown-guidance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/wiki/wiki-keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts#wiki-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/extend/publish/publicize.md",
+      "redirect_url": "/azure/devops/extend/publish/overview#publicize-your-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/extend/publish/manage-ratings-reviews.md",
+      "redirect_url": "/azure/devops/extend/publish/overview#respond-to-marketplace-extension-reviews",
+      "redirect_document_id": false
     }
   ]
 }

@@ -3,13 +3,13 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 07/14/2020
+ms.date: 11/22/2023
 ---
 
 
 ::: moniker range=">= azure-devops-2019"  
 
 > [!NOTE]  
-> If **Boards** is disabled, then **Analytics views** will also be disabled and all widgets associated with work item tracking won't appear in the widget catalog and will become disabled. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).  
+> If **Boards** is disabled, then **Analytics views** is also disabled. All widgets associated with work item tracking are also disabled in the widget catalog. To re-enable a service, see [Turn on or off an Azure DevOps service](../../organizations/settings/set-services.md).  
 
 ::: moniker-end

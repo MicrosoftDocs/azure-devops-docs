@@ -5,12 +5,12 @@ ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
 ms.date: 01/24/2023
 ms.custom: fasttrack-edit
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2022'
 ---
 
 # Tutorial: Use a canary deployment strategy for Kubernetes deployments
 
-[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-gt-eq-2022.md)]
 
 A *canary* deployment strategy means deploying new versions of an application next to stable, production versions. You can then see how the canary version compares to the baseline, before promoting or rejecting the deployment.
 

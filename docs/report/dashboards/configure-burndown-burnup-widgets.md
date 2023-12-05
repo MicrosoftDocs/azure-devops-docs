@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'  
-ms.date: 11/02/2023
+ms.date: 11/22/2023
 ---
 
 # Configure a burndown or burnup widget 
@@ -52,7 +52,13 @@ Do the following steps to configure both widget types. The only difference betwe
 1. On the widget, select :::image type="icon" source="../../boards/media/icons/gear_icon.png" border="false"::: **Configure**.
 2. Complete configuration information, described in the following table, and then select **Save**.
 
-::: moniker range="= azure-devops"
+:::moniker range="=azure-devops-2022"
+
+[!INCLUDE [feature-added-2022-1](../../includes/feature-added-2022-1.md)]
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2022"
 
 |Configuration category |Guidance|
 |-----------|-----------| 
@@ -66,8 +72,7 @@ Do the following steps to configure both widget types. The only difference betwe
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
-
+::: moniker range="< azure-devops-2022"
 
 |Configuration category |Guidance|
 |:----------------------|:-------| 

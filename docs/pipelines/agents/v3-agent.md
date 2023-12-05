@@ -3,7 +3,7 @@ title: Agent software version 3
 description: Learn how to run pipelines using the version 3 agent software.
 monikerRange: '>= azure-devops-2022'
 ms.topic: conceptual
-ms.date: 05/01/2023
+ms.date: 11/27/2023
 ---
 
 # Agent software version 3
@@ -36,6 +36,8 @@ The following operating systems are supported by the 3.x agent.
   * ARM64
     * Debian 10+
     * Ubuntu 22.04, 20.04, 18.04
+  * Alpine x64
+    * [Alpine Linux](https://alpinelinux.org/) 3.13 and higher ([requires agent 3.227 or higher](/azure/devops/release-notes/2023/sprint-228-update#azure-pipelines-agent-now-supports-alpine-linux))
 * **macOS**
   * x64
     * macOS 10.15 "Catalina"

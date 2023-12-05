@@ -212,7 +212,7 @@ Azure Boards provides many ways to share information.
 - The Project wiki provides a central repository with versioning control built-in to share information with all project members. Other wikis can be created as needed. For more information, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md). 
 
 For details on supported Markdown features, see the following articles.  
-- [Syntax guidance for Markdown usage in Wiki](../../project/wiki/wiki-markdown-guidance.md)
+- [Syntax guidance for Markdown usage in Wiki](../../project/wiki/markdown-guidance.md#wiki-markdown-guidance)
 - [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md)
 
 ## Next steps

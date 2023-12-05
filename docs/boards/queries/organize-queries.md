@@ -30,8 +30,6 @@ Organize your personal or shared queries by adding a query folder. You can then 
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
-
-
 <a id="flat-list-query"/>
 <a id="save" />
 
@@ -40,7 +38,6 @@ Organize your personal or shared queries by adding a query folder. You can then 
 The easiest way to define a query is to start with an existing shared query. 
 The following example shows how to find all closed bugs by modifying the 
 *Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
-
 
 #### [Browser](#tab/browser/)
 
@@ -94,6 +91,9 @@ The following example shows how to find all closed bugs by modifying the
 
 #### [Visual Studio](#tab/visual-studio/)
 
+> [!IMPORTANT]
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+
 To save a query as a new query, open the query results and then from the toolbar choose <strong>File>Save *QueryName* As...</strong>.
 
 :::image type="content" source="media/organize-queries/visual-studio-save-query-as.png" alt-text="Screenshot, Visual Studio, File menu, save query as.":::
@@ -107,16 +107,11 @@ To save the query as a `.wiq` file, choose the **File** radio button and specify
 
 :::image type="content" source="media/organize-queries/visual-studio-save-query-as-wiq-file.png" alt-text="Screenshot, Visual Studio, Save Query As a WIQ file dialog.":::
 
-
-
 * * * 
-
 
 <a id="view-rename-delete" />
 
 ## Rename or delete a query
-
-
 
 #### [Browser](#tab/browser/)
 
@@ -141,9 +136,10 @@ Choose the :::image type="icon" source="../media/icons/context_menu.png" border=
 
 ::: moniker-end
 
-
 #### [Visual Studio](#tab/visual-studio/)
 
+> [!IMPORTANT]
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 From the **Work Items** page, open the context menu for the query you want to run, edit, rename, or delete and choose the corresponding option. 
 
@@ -156,7 +152,6 @@ From the **Work Items** page, open the context menu for the query you want to ru
 
 > [!TIP]   
 > You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. To view or set permissions, see [Set permissions on queries and query folders](set-query-permissions.md).
-
 
 
 #### [Browser](#tab/browser/)
@@ -206,8 +201,8 @@ You add query folders from the **Boards>Queries** page.
 
 #### [Visual Studio](#tab/visual-studio/)
 
-> [!NOTE]  
-> To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
+> [!IMPORTANT]
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 All changes you make to your query folder structure in Visual Studio appear in the web portal by refreshing your browser. 
 
