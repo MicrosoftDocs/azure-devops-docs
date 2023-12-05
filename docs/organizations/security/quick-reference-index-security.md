@@ -115,7 +115,6 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        **Access levels**  
        ::: moniker range="azure-devops"
        - [Change a user's access level](../accounts/add-organization-users.md)  
-       - [Provide Stakeholders access to edit pipelines](provide-stakeholder-pipeline-access.md) 
        ::: moniker-end
        ::: moniker range="< azure-devops"
        - [Change access levels](change-access-levels.md)  
