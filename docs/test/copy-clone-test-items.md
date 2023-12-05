@@ -16,7 +16,7 @@ ms.date: 11/11/2021
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
-Several tools support copy, clone, or import operations of test items&mdash;such as, test plans, test suites, and test cases. Test cases describe the steps to take to run a test and validate a feature implementation or bug fix. Test suites group test cases, and optionally other test suites, into a particular order. Test plans define a collection of test suites to run for a particular iteration or release.  
+Several tools support copy, clone, or import operations of test items such as test plans, test suites, and test cases. Test cases describe the steps to take to run a test and validate a feature implementation or bug fix. Test suites group test cases, and optionally other test suites, into a particular order. Test plans define a collection of test suites to run for a particular iteration or release.  
  
 Each test case is designed to confirm a specific behavior. Test cases may belong to one or more test suites, however test suites can belong to one and only one test plan.  
 
@@ -182,7 +182,7 @@ You often need to know the ID assigned to a test plan or test suite to support c
 
 # [Browser](#tab/browser)
 
-<a id="query" /> 
+<a id="query"></a>
 
 You can generate a list of test plans, test suites, or other test objects from the **Boards>Queries** page. For example, by setting the **Work Item Type=Test Plan**, you can list all test plans defined for the team project. If you choose the **Query across all projects** checkbox, the query will list all test plans defined for all projects. To learn more about defining queries, see [Define a work item query](../boards/queries/using-queries.md). 
 
@@ -200,11 +200,11 @@ TCM supports listing of test plans and test suites. Lists specify the work ID fo
 [List test plans](#list-test-plans) | [List test suites](#list-test-suites) 
 
 
-<a id="list-test-plans" /> 
+<a id="list-test-plans"></a> 
 
 ### List test plans  
 
-Use `tcm plans /list` to determine the **ID** for a test plan.  The **ID** corresponds to the work item ID defined when the test plan was created. 
+Use `tcm plans /list` to determine the **ID** for a test plan. The **ID** corresponds to the work item ID defined when the test plan was created. 
 
 
 ```tcm 
@@ -237,7 +237,7 @@ Id        Name
 ```
 
 
-<a id="list-test-suites" /> 
+<a id="list-test-suites"></a> 
 
 ### List test suites  
 
@@ -281,8 +281,8 @@ Id        Name
 
 *** 
 
-<a id="clone-test-plan" /> 
-<a id="copy-test-plans-portal" />
+<a id="clone-test-plan"></a> 
+<a id="copy-test-plans-portal"></a>
 
 
 ## Copy or clone test plans  
@@ -384,7 +384,7 @@ Clone operation is complete.
 ```
  
 
-<a id="track-test-plan-clone-status" /> 
+<a id="track-test-plan-clone-status"></a> 
 
 ### Track the status of the test plan clone operation  
 
@@ -407,8 +407,8 @@ tcm plans /clone
 
 *** 
 
-<a id="import-test-suites-portal" />
-<a id="clone-test-suite" /> 
+<a id="import-test-suites-portal"></a>
+<a id="clone-test-suite"></a> 
 
 ## Import or clone test suites 
 
@@ -515,14 +515,14 @@ When you clone a test suite, the following objects are copied from the source te
 |----------------------|------------|
 |Test case| Each new test case retains its shared steps. A link is defined between the source and new test cases. The new test cases do not have test runs, bugs, test results, or build information.|  
 |Shared steps | Shared steps referenced by cloned test cases are copied. |  
-|Test suite| Test suites that are copied retain the following data: <br /><br />- Names and hierarchical structure of the test suites<br />- Order of the test cases<br />- Assigned testers<br />- Configurations|  
+|Test suite| Test suites that are copied retain the following data: <br</a><br</a>- Names and hierarchical structure of the test suites<br</a>- Order of the test cases<br</a>- Assigned testers<br</a>- Configurations|  
 |Recordings | Action recordings linked from a cloned test case are copied. 
 |Links and Attachments|All links and attachments are copied for all copied test items.  
 |Test configuration|The test configuration defined for the source test plan is copied over and applied to the destination test plan.|  
 
 The following test information is not copied: 
 
-- **Test settings**: The test setting for the source test plan isn't copied. Instead, the test settings for the destination test plan is applied.   
+- **Test settings**: The test setting for the source test plan isn't copied. Instead, the test settings for the destination test plan are applied.   
 - **Test results and test runs**: No test results are copied. Because test runs are applicable only to the source test plan, they are not copied.  
 
 When `/clonerequirements` is specified and Requirements-based test suites are copied: 
@@ -552,7 +552,7 @@ Warning: You have cloned the following query based suites as part of this clone 
  
 
 
-<a id="track-test-suite-clone-status" /> 
+<a id="track-test-suite-clone-status"></a> 
 
 ### Track the status of the test suite clone operation  
 
@@ -593,7 +593,7 @@ Completed on:         10-Nov-21 5:00:30 PM
 
 ::: moniker range=">= azure-devops-2020"
 
-<a id="copy-test-case" /> 
+<a id="copy-test-case"></a> 
 
 ## Copy test case(s)
 
@@ -622,7 +622,7 @@ You can copy test cases from within a project or another project in the organiza
 
 ::: moniker-end
 
-<a id="copy-paste" /> 
+<a id="copy-paste"></a> 
 
 ## Copy and paste test case(s) (Grid view)
 
@@ -648,7 +648,7 @@ From the Internet Explorer, Edge, or Chrome browsers, you can copy test cases fr
 	:::image type="content" source="media/copy-clone/copy-paste-test-cases-saved.png" alt-text="Saved test cases pasted into Grid view.":::
 
  
-<a id="bulk-import-export" /> 
+<a id="bulk-import-export"></a> 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -687,7 +687,7 @@ From the web portal, you can perform a bulk import or export of test cases from/
 
 ::: moniker-end
  
-<a id="import-test-cases" />
+<a id="import-test-cases"></a>
 
 ## Import automated test cases (TCM) 
 
@@ -713,7 +713,10 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 |**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite cannot be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests that have already been added, the tests that aren't imported are removed from the test suite but not from the test plan itself.  |
 
 [!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
- 
+
+
+
+[!INCLUDE [limitations-import](includes/limitations-import.md)]
 
 ##  Next step
 
