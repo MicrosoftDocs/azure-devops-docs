@@ -40,7 +40,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
     <td rowspan="3"><a href="2023/sprint-231-update.md" data-raw-source="[5 December   2023](2023/sprint-231-update.md)"> 5 December  2023</a></td>
     <td>Switch between HTML or Markdown on comments</td><td>Boards</td><td>Future</td></tr>
-    <td>Improved YAML Validation</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Improved YAML validation</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Checks scalability Phase 3</td><td>Pipelines</td><td>N/A</td></tr>
 <tr>
 <tr>

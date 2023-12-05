@@ -24,7 +24,7 @@ variables:
   Patch: $[counter(fromat('{0}.{1}', variables.Major, variables.Minor ), 0)]
 ```
 
-The `Patch` variable is defined using the `counter` function and the other two variables. Alas, there's a typo: the `format` function is misspelt. Previously, this error went undetected. Now, _Validate_ surfaces it.
+The `Patch` variable is defined using the `counter` function and the other two variables. In the YAML code above, the word format is misspelt. Previously, this error went undetected. Now, the Validate functionality will detect this and surface and error message. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of incorrect variable definitions detected .](../../media/231-pipelines-02.png " Screenshot of incorrect variable definitions detected .")
@@ -54,7 +54,7 @@ Azure Pipelines will detect incorrect YAML conditions defined at pipeline / stag
 
 ### Checks scalability Phase 3
 
-As mentioned in our [blog post](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/), we're working toward improving our Approvals & Checks's scalability. 
+As mentioned in our [Updates to Approvals and Checks blog post](https://devblogs.microsoft.com/devops/updates-to-approvals-and-checks/), we're working toward improving our Approvals & Checks's scalability. 
 
 Advancing into Phase 3, we'll carry out weekly, day-long brownouts, during which all pipeline runs that use non-compliant checks will fail. 
 
