@@ -138,11 +138,11 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
 - [Add team administrators](../settings/add-team-administrator.md)  
 - [Add team members](../security/add-users-team-project.md)  
-- [Add/manage service hooks](../../service-hooks/overview.md)  
+- [Add/manage service hooks](../../service-hooks/overview.md) 
+- [Connect to a project](connect-to-projects.md)  
+- [Connect to GitHub](../../boards/github/connect-to-github.md)   
    :::column-end:::
    :::column span="":::
-- [Connect to a project](connect-to-projects.md)  
-- [Connect to GitHub](../../boards/github/connect-to-github.md)  
 - [Create project](create-project.md)  
 - [Delete project](delete-project.md)  
 - [Edit project Summary](project-vision-status.md)
@@ -153,10 +153,10 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
-- [Rename project](create-project.md)  
-- [Rename team](../settings/rename-remove-team.md)  
    :::column-end:::
    :::column span="":::
+- [Rename project](create-project.md)  
+- [Rename team](../settings/rename-remove-team.md)  
 - [Restore project](delete-project.md#restore-a-deleted-project)  
 - [Change user access levels](../accounts/add-organization-users.md) 
 - [Search across project(s)](../../project/search/get-started-search.md)  
@@ -171,9 +171,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 
 ::: moniker-end
 
-
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 :::row:::
    :::column span="":::
@@ -207,45 +205,6 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
 - [Set project-level permissions](../security/change-project-level-permissions.md)
-- [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
-   :::column-end:::
-:::row-end:::
-
-::: moniker-end
-
-
-::: moniker range="tfs-2018"
-
-:::row:::
-   :::column span="":::
-- [Add Git repository](../../repos/git/create-new-repo.md)  
-- [Add project administrators](../security/change-project-level-permissions.md) 
-- [Add project members](../security/add-users-team-project.md)  
-- [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
-- [Add team administrators](../settings/add-team-administrator.md)  
-- [Add team members](../security/add-users-team-project.md)  
-- [Add/manage service hooks](../../service-hooks/overview.md)
-   :::column-end:::
-   :::column span="":::
-- [Change access levels](../security/change-access-levels.md)   
-- [Connect to a project](connect-to-projects.md)  
-- [Create project](create-project.md)  
-- [Delete project](delete-project.md)  
-- [Edit project Summary](project-vision-status.md)
-- [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)  
-- [Manage your project](../../user-guide/project-admin-tutorial.md)  
-- [Navigate the Web portal](../../project/navigation/index.md)  
-- [Remove team](../settings/rename-remove-team.md)  
-   :::column-end:::
-   :::column span="":::
-- [Rename project](create-project.md)  
-- [Rename team](../settings/rename-remove-team.md)  
-- [Restore project](delete-project.md#restore-a-deleted-project)  
-- [Search across project(s)](../../project/search/get-started-search.md)  
-- [Set area paths](../settings/set-area-paths.md)  
-- [Set favorites](../../project/navigation/set-favorites.md)  
-- [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
-- [Set project-level permissions](../security/change-project-level-permissions.md) 
 - [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
    :::column-end:::
 :::row-end:::

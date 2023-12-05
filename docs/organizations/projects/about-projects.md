@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley 
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/01/2023
+ms.date: 12/05/2023
 --- 
 
 # About projects and scaling your organization
@@ -65,7 +65,7 @@ You can scale your organization in the following ways:
 ::: moniker range="< azure-devops"
 You can scale your on-premises Azure DevOps deployment in the following ways:
 
-- Add server instances to increase performance,
+- Add server instances to increase performanc
 - Add project collections and projects to support different business units
 - Add teams within a project
 - Add repositories and branches
@@ -92,7 +92,9 @@ For more information, see [Create a project](create-project.md).
 
 ## Limit project visibility
 
-By default, users added to an organization can view all organization and project information and settings. For more information, see [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more) and [Change project visibility to public or private](make-project-public.md). 
+By default, users added to an organization can view all organization and project information and settings. 
+
+For more information, see [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more) and [Change project visibility to public or private](make-project-public.md). 
 
 ### View historical data
 
@@ -108,9 +110,10 @@ Even if you have many teams working on hundreds of different applications and so
 
 For more information, see [How many projects do you need?](../../user-guide/plan-your-azure-devops-org-structure.md#how-many-projects-do-you-need).
 
-### Add another project
+## Add another project
 
 ::: moniker range="azure-devops"
+
 Another feasible approach is to have multiple projects. It can be a recommend approach if your organization is looking to accommodate the following scenarios:
 
 - To prohibit or manage access to the information contained within a project to select groups
@@ -126,6 +129,7 @@ You might want to add another project in following instances:
 - To support custom work tracking processes for specific business units within your organization  
 - To support entirely separate business units that have their own administrative policies and administrators
 - To support testing customization activities or adding extensions before rolling out changes to the working project
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -204,7 +208,7 @@ For more information, see [Compatibility with Azure DevOps Server versions](/azu
 
 ## Key concepts
 
-Use this index to quickly access concepts and tasks related to managing projects and teams.  
+Use the following index to quickly access concepts and tasks related to managing projects and teams.  
 
 ::: moniker range="azure-devops"
 
@@ -240,7 +244,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 :::row:::
    :::column span="":::
@@ -289,11 +293,11 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
 - [Add team administrators](../settings/add-team-administrator.md)  
 - [Add team members](../security/add-users-team-project.md)  
-- [Add/manage service hooks](../../service-hooks/overview.md)  
+- [Add/manage service hooks](../../service-hooks/overview.md)
+- [Connect to a project](connect-to-projects.md)  
+- [Connect to GitHub](../../boards/github/connect-to-github.md)    
    :::column-end:::
    :::column span="":::
-- [Connect to a project](connect-to-projects.md)  
-- [Connect to GitHub](../../boards/github/connect-to-github.md)  
 - [Create project](create-project.md)  
 - [Delete project](delete-project.md)  
 - [Edit project Summary](project-vision-status.md)
@@ -304,10 +308,10 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
-- [Rename project](create-project.md)  
-- [Rename team](../settings/rename-remove-team.md)  
    :::column-end:::
    :::column span="":::
+- [Rename project](create-project.md)  
+- [Rename team](../settings/rename-remove-team.md)  
 - [Restore project](delete-project.md#restore-a-deleted-project)  
 - [Change user access levels](../accounts/add-organization-users.md) 
 - [Search across project(s)](../../project/search/get-started-search.md)  
@@ -322,7 +326,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 :::row:::
    :::column span="":::

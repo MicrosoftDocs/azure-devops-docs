@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/29/2023
+ms.date: 12/05/2023
 ---
 
 # Delete a project
@@ -42,7 +42,7 @@ If a project becomes obsolete, you can [delete it](#delete-project) from your or
 
 Use the following procedures to save data that users most care about, such as source code, build data, and work items. This procedure is optional and something you might consider before you delete a project.
 
-* **Source code and custom build templates:** Download your files as a zip file. Select ![Repository actions](../../media/icons/actions-icon.png) **actions** for the repository, file, or folder and select **Download as Zip**. Or, select :::image type="icon" source="../../boards/media/icons/download-icon.png" border="false"::: **Download** to download either all of the files in the currently selected folder, or the currently selected file.
+* **Source code and custom build templates:** Download your files as a zip file. Select ![Repository actions](../../media/icons/actions-icon.png) for the repository, file, or folder and select **Download as Zip**. Or, select :::image type="icon" source="../../boards/media/icons/download-icon.png" border="false"::: **Download** to download either all of the files in the currently selected folder, or the currently selected file.
 
   > [!div class="mx-imgBorder"]
   > ![Screenshot of Downloading code.](media/public/download-zip-file.png)
@@ -186,7 +186,7 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
 
 ::: moniker range=" > azure-devops-2019 < azure-devops"
 
-1. Sign in to your instance (```http://{ServerName:8080/tfs/}/{CollectionName}```)
+1. Sign in to your instance (```http://{ServerName:8080/tfs/}/{CollectionName}```).
 2. Choose ![gear icon](../../media/icons/gear-icon.png) **Admin settings**.
 
    :::image type="content" source="../../media/settings/open-admin-settings-server.png" alt-text="Screenshot showing Admin settings button surrounded by red box.":::
@@ -201,7 +201,7 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
 ::: moniker range="azure-devops-2019"
 
 > [!NOTE]
-> The UI doesn't support restoring a team project for Azure DevOps Server 2019.  Use the following REST API or PowerShell methods to restore a deleted team project. For more information, see [Projects-Update REST API](/rest/api/azure/devops/core/projects/update)
+> The UI doesn't support restoring a team project for Azure DevOps Server 2019.  Use the following REST API or PowerShell methods to restore a deleted team project. For more information, see [Projects-Update REST API](/rest/api/azure/devops/core/projects/update).
 
 ::: moniker-end
 
