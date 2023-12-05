@@ -73,7 +73,7 @@ Workflow states are associated with state categories to support the workflow on 
 These rules are technically a lot simpler than Closed By/Closed Date rules because they are not dependent on any particular state. For any work item type, the same rules will always work. They need to be auto-generated because some OOB work item types do not contain the State Change Date field, so when the user adds this field to a custom work item type, these rules need to be auto-generated as well. The same principles for Closed By/Closed Date rules apply here as well.
  
 
-<a id="custom-rules" /> 
+<a id="custom-rules"></a> 
 
 ## Custom rules
 
@@ -92,7 +92,7 @@ Note the following:
 
 ### Rule composition
 
-<a id="ip-rule-composition" /> 
+<a id="ip-rule-composition"></a> 
 
 # [Inheritance process](#tab/inheritance)
 
@@ -273,7 +273,7 @@ The rule engine restricts setting conditions or actions to system fields except 
 If you don't see a field listed in the drop-down menu of the rule user interface for the Inheritance process, this is why. For example, if you try to make **Area Path** (System.AreaPath) read-only based on a condition, the Area Path field isn't available for selection. Even if you're able to specify a system field, the rule engine may restrict you from saving the rule. 
  
 
-<a id="clear" /> 
+<a id="clear"></a> 
 
 ## Default and copy rules 
 
@@ -405,7 +405,7 @@ These rules support setting defaults, copying values from one field to another, 
 ---  
 
 
-<a id="require" /> 
+<a id="require"></a> 
 
 ## Constraint rules
 
@@ -588,7 +588,7 @@ Most of these rule actions can be applied with the selection of any condition.
 ---  
 
 
-<a id="pick-list" /> 
+<a id="pick-list"></a> 
 
 ## Pick lists 
 
@@ -695,7 +695,7 @@ To avoid validation errors that would otherwise occur when members leave the tea
 
 
 
-<a id="conditional-rules" />
+<a id="conditional-rules"></a>
 
 ## Conditional field values or changes 
 
@@ -827,9 +827,9 @@ For syntax structure and examples, see [Assign conditional-based values and rule
 ---  
 
 
-<a id="apply-ignore" /> 
-<a id="membership" /> 
-<a id="apply-or-ignore-rules-based-on-user-or-group" /> 
+<a id="apply-ignore"></a> 
+<a id="membership"></a> 
+<a id="apply-or-ignore-rules-based-on-user-or-group"></a> 
 
 ## User or group membership rule restrictions   
 
@@ -936,7 +936,7 @@ To restrict a rule based on the current user's membership, you specify either th
 
 
 
-<a id="tokens" /> 
+<a id="tokens"></a> 
 
 ### Use tokens to reference users or groups
 

@@ -169,7 +169,7 @@ There isn't a limit on the number of projects that you can create within a proje
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="create-project" /> 
+<a id="create-project"></a> 
 
 ::: moniker range="azure-devops" 
 
@@ -272,7 +272,7 @@ From Team Explorer, you can view a list of projects by connecting to an organiza
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="list-projects" /> 
+<a id="list-projects"></a> 
 
 ::: moniker range="azure-devops" 
 
@@ -315,7 +315,7 @@ aba0ed07-3174-4793-9f2c-d2c5fa6b44d7  MyPublicProject     Public
 
 ```
 
-<a id="show-project" /> 
+<a id="show-project"></a> 
 
 ### Show project information in the web portal
 
@@ -352,8 +352,8 @@ ID                                    Name            Visibility    Process     
 
 * * *
 
-<a id="add-a-repository" />
-<a id="add-a-repository-to-your-project" />
+<a id="add-a-repository"></a>
+<a id="add-a-repository-to-your-project"></a>
 
 ## Add a repository to your project
 

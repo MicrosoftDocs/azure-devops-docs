@@ -35,7 +35,7 @@ For users, if you want to create or revoke your own PATs, see [Create or revoke 
 
 3. After you've successfully revoked the affected PATs, let your users know. They can recreate their tokens, as needed.
 
-<a id="token-expiration" />
+<a id="token-expiration"></a>
 
 ## FedAuth token expiration
 

@@ -279,7 +279,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-<a id="weekly-snapshots" />
+<a id="weekly-snapshots"></a>
 
 ### Bug trend with a snapshot on the first of every month
 

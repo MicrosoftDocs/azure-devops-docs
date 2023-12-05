@@ -361,7 +361,7 @@ Begin each list item on a new line. In a Markdown file or widget, enter two spac
     - Nested item 2
     - Nested item 3
 
-<a id="link-work-items" />
+<a id="link-work-items"></a>
 
 ## Links
 

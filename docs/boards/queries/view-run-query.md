@@ -69,7 +69,7 @@ You can also run a query by using the [Azure DevOps command line interface](#cli
 
 * * * 
 
-<a id="cli" />
+<a id="cli"></a>
 
 ::: moniker range="azure-devops"  
 
@@ -184,7 +184,7 @@ For more information, see [Query FAQs, Navigate, and Folders](query-faqs.yml).
 
 
 
-<a id="favorites" />
+<a id="favorites"></a>
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -223,7 +223,7 @@ For more information, see [Query FAQs, Navigate, and Folders](query-faqs.yml).
  
  
 
-<a id="email-query" />
+<a id="email-query"></a>
 
 ## Email query items or share a query URL 
 

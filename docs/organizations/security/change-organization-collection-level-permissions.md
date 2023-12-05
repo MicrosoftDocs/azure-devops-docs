@@ -68,7 +68,7 @@ See the following articles for related information:
 ::: moniker-end  
 
 
-<a id="add-user-group" />
+<a id="add-user-group"></a>
 
 ## Add members to the Project Collection Administrators group 
 

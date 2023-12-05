@@ -27,7 +27,7 @@ For more information, see [Kanban overview](kanban-overview.md).
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
-<a id="Initial WIP" />
+<a id="Initial WIP"></a>
 
 ## Determine initial WIP limits
 
@@ -37,7 +37,7 @@ Have your team determine the initial WIP limits to set and how to use and monito
 * Set limits that don't exceed two or three items per team member that works within a stage. For example, if you have three team members and each team member can work on no more than two tasks at a time, the resulting WIP limit is 6 (= 3 developers X 2 tasks/developer).
 * Start with low limits to help your team discover bottlenecks more quickly and identify process issues to address.
 
-<a id="Keep within WIP" />
+<a id="Keep within WIP"></a>
 
 ## Keep within WIP limits
 
@@ -51,7 +51,7 @@ Although simple in theory, keeping within WIP limits can force individuals, team
 
 To gain the advantages of constraining work-in-progress, have your team meet frequently to discuss the process changes taking place.
 
-<a id="Keep within WIP" />
+<a id="Keep within WIP"></a>
 
 ## Identify bottlenecks
 
@@ -70,7 +70,7 @@ Such snapshots can show your team the following information:
 * How many and which items remained in a workflow stage/column for long periods of time  
 * How many items did the team complete at the end of a one, two, or three week period 
 
-<a id="Eliminate waste" />
+<a id="Eliminate waste"></a>
 
 ## Eliminate waste
 
@@ -87,7 +87,7 @@ Common wastes in software development include:
 
 Eliminating waste calls for team discussions to identify causes and solutions acceptable to the team.
 
-<a id="Set" />
+<a id="Set"></a>
 
 ## Set WIP limits
 

@@ -296,7 +296,7 @@ Using the Azure DevOps CLI, you can create and update variables for the pipeline
 - Sign into Azure DevOps using `az login`.
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
-<a id="create-variable" />
+<a id="create-variable"></a>
 
 ### Create a variable
 
@@ -336,7 +336,7 @@ Name        Allow Override    Is Secret    Value
 Configuration  False             False        platform
 ```
 
-<a id="update-variable" />
+<a id="update-variable"></a>
 
 ### Update a variable
 
@@ -380,7 +380,7 @@ Name           Allow Override    Is Secret    Value
 Configuration  False             False        config.debug
 ```
 
-<a id="delete-variable" />
+<a id="delete-variable"></a>
 
 ### Delete a variable
 

@@ -149,7 +149,7 @@ Individual contributors can set their user preferences, enable features that are
 :::row-end:::
 ---
 
-<a id="team" />
+<a id="team"></a>
 
 ## Team administrator role and managing teams
 
@@ -225,7 +225,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 ---
 
 
-<a id="project" />
+<a id="project"></a>
 
 ## Project Administrator role and managing projects
 
@@ -517,7 +517,7 @@ From the administrative **Project settings** page, you can configure settings av
 :::row-end:::
 ---
 
-<a id="admin" />
+<a id="admin"></a>
 
 ## Project Collection Administrator (PCA) role and managing collections of projects 
 
@@ -825,7 +825,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 
 ::: moniker range="< azure-devops"
 
-<a id="admin" />
+<a id="admin"></a>
 
 ## Server Administrator role 
 

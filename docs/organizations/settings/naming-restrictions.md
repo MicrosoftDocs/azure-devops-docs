@@ -31,7 +31,7 @@ The length restrictions in this article get measured by the number of Unicode ch
 
 As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](/windows/win32/fileio/naming-a-file).
 
-<a id="reserved" />
+<a id="reserved"></a>
 
 ### System reserved names 
 
@@ -95,7 +95,7 @@ Files attached to work items must conform to the following restrictions.
 |File size   | Must not exceed the maximum size:<br>- Default maximum size: 4,096 kilobytes.<br>- Absolute maximum size: 2 gigabytes. For more information, see [Change the maximum attachment size for work items](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).   |
 ::: moniker-end
 
-<a id="Kanban" />
+<a id="Kanban"></a>
 
 ### Board column and swimlane names 
 

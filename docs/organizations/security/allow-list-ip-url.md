@@ -24,7 +24,7 @@ If your organization's secured with a firewall or proxy server, you must add cer
 > [!TIP]
 > So that Visual Studio and Azure Services work well with no network issues, you should open select ports and protocols. For more information, see [Install and use Visual Studio behind a firewall or proxy server, Use Visual Studio and Azure Services](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#use-visual-studio-and-azure-services).
 
-<a id="range-restrictions" />
+<a id="range-restrictions"></a>
 
 ## IP addresses and range restrictions
 

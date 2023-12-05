@@ -99,7 +99,7 @@ For more information, see [Create a project](create-project.md).
 
 ::: moniker-end
 
-<a id="project-scoped-user-group" /> 
+<a id="project-scoped-user-group"></a> 
 
 ::: moniker range="azure-devops"
 
@@ -187,7 +187,7 @@ Git repositories can be browsed and cloned, but only via HTTPS.
 SSH and GVFS endpoints are unavailable.
 Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't offer the connected experience linking to work items and other collateral.
 
-<a id="dashboard-widget-support" />
+<a id="dashboard-widget-support"></a>
 
 ## Dashboard widget support
 
@@ -232,7 +232,7 @@ You can configure and customize most services and applications to support your b
 - **Test**: You can define and configure test plans, test suites, test cases, and test environments. You can also add test steps within your build pipelines. For more information, see [Exploratory and manual testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
 ::: moniker-end
 
-<a id="add-team" />
+<a id="add-team"></a>
 
 ## Add a team
 

@@ -34,7 +34,7 @@ Have the following permissions to change your organization's billing subscriptio
 - [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 - [Owner or Contributor permission for the Azure subscription](add-backup-billing-managers.md), which you can use to purchase.
 
-<a id="change-subscription" />
+<a id="change-subscription"></a>
 
 ## Change your billing subscription
 

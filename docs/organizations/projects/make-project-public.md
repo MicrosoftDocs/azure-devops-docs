@@ -266,7 +266,7 @@ Also, non-members can't do the following tasks:
 Organizations containing sensitive material shouldn't enable the public projects policy.
 In that case, we recommend that you create an entirely separate organization to host your public projects.
 
-<a id="move-work-items" />
+<a id="move-work-items"></a>
 
 ### Move work items to a private project
 

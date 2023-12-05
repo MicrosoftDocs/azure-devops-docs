@@ -17,7 +17,7 @@ ms.date: 01/17/2023
 
 Use this index to quickly access concepts and tasks related to configuring and customizing Azure Boards. If you're new to the Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md). 
 
-<a id="concepts" />
+<a id="concepts"></a>
 
 ## Get started  
 
