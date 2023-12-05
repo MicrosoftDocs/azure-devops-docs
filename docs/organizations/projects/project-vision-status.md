@@ -52,7 +52,7 @@ Each project provides a **Summary** or home page to share information and showca
 :::image type="content" source="media/summary/project-summary-page-intro.png" alt-text="Screenshot of summary page.":::
 
 > [!NOTE]   
-> If you want to use a project wiki for your project Summary information, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#update).
+> If you want to use a project wiki for your project Summary information, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). Then, you can change the project summary page to point to the wiki.
 
 ## Prerequisites
 
