@@ -23,7 +23,7 @@ Azure Artifacts enables developers to manage their dependencies from a single fe
 
 - An Azure DevOps project. [Create a new project](../../organizations/projects/create-project.md) if you don't have one already.
 
-- Set your project visibility to [public](../../organizations/projects/make-project-public.md#2-make-a-private-project-public).
+- Set your project visibility to [public](../../organizations/projects/make-project-public.md).
 
 > [!IMPORTANT]
 > Package lock files assist with reproducible builds and minimizing the scenarios where an anonymous user will be prompted for credentials when using public feeds.
