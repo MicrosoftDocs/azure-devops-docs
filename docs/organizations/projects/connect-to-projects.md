@@ -1,21 +1,21 @@
 ---
 title: Connect to project from browser/supported client
 titleSuffix: Azure DevOps
-description: Learn how to connect a client to the cloud service Azure DevOps or on-premises
+description: Learn how to connect a browser or client, like Visual Studio, to a project in Azure DevOps.
 ms.subservice: azure-devops-projects
 ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.author: sdanie
 author: steved0x 
-monikerRange: '<= azure-devops'
-ms.date: 09/25/2023
+monikerRange: '>= azure-devops-2019'
+ms.date: 12/05/2023
 ---
 
-# Connect to a project in Azure DevOps
+# Connect to a project
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-Learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
+Learn how to connect to a project, from a client, to share code, build apps, track work, and collaborate with team members. You can connect to a project from any of the following clients:
   
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)   
@@ -23,65 +23,25 @@ Learn how to connect to a project to share code, build apps, track work, and col
 - [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in) 
 - [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)
 
-A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. One or more projects may be defined within a collection. There must be at least one project. For more information, see [About projects and scaling your organization](about-projects.md).
+A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. For more information, see [About projects and scaling your organization](about-projects.md).
 
 ## Prerequisites
 
 - You must [have a project](create-project.md) in your organization. If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md).
-
-- From each of these clients, you can switch context to a different project and connect as a different user. If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy).
-
+- From each client, you can switch context to a different project and connect as a different user. If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy).
 - To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/index.yml).
 
 <a id="web-portal">  </a>
 
 ## Connect from the web portal
 
-1. If you're not a member of a security group, ask your Project Administrator to add you.  
+::: moniker range="azure-devops"
+- Sign in to your project (```https://dev.azure.com/{yourorganization}/{yourproject}```).
+::: moniker-end
 
-1. Open a browser and enter a URL that uses the following form:  
-
-   ::: moniker range="azure-devops"
-   <pre>`https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> `</pre>
-   ::: moniker-end
-
-   ::: moniker range=">= azure-devops-2019 < azure-devops" 
-   <pre>`http://<i>ServerName</i>/DefaultCollection/<i>ProjectName</i>`</pre> 
-
-   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime/DefaultCollection**.
-   ::: moniker-end
-   ::: moniker range="< azure-devops-2019"  
-   <pre>`http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i>`</pre> 
-
-   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/DefaultCollection**.
-
-   The default Port is 8080. If you don't use default values, specify the port number and directory for your server.
-   ::: moniker-end
-
-1. When you access the server for the first time, a Windows Identity dialog box appears. Enter your credentials and choose **OK**.
-
-   > [!TIP]
-   > If you select **Remember me**, you won't have to enter your credentials the next time you connect.
-
-1. Choose your project, team, or page of interest.
-
-    ::: moniker range=">= azure-devops-2019"
-
-    From the project summary page, hover over a service and then choose the page you want. To choose another project, choose **Azure DevOps**. ![Azure DevOps logo](../../media/icons/project-icon.png)
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose a service page, horizontal nav](media/connect-projects/project-summary-page-choose-app-vert.png)  
-
-    ::: moniker-end
- 
-    ::: moniker range="tfs-2018"
-
-    From the project summary page, hover over a service and then choose the page you want. To choose another project, choose the ![Azure DevOps logo](../../media/icons/project-icon.png) Azure DevOps logo.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose a service page, horizontal nav](media/connect-projects/project-summary-page-choose-app-horz.png)  
-
-    ::: moniker-end
+::: moniker range=" < azure-devops" 
+- Sign in to your project (```http://ServerName/{DefaultCollection}/{ProjectName}```). 
+::: moniker-end
 
 For more information, see [Web portal navigation](../../project/navigation/index.md).
 
@@ -89,10 +49,10 @@ For more information, see [Web portal navigation](../../project/navigation/index
 
 ### Sign in with different credentials
 
-1. Open your profile menu and choose **Sign out**.
+1. Open your profile menu and select **Sign in with a different account**.
 
-    > [!div class="mx-imgBorder"]  
-	> ![Sign out](media/sign-out.png)
+   > [!div class="mx-imgBorder"]  
+	> ![Screenshot of Sign in with a different account button selected.](media/sign-out.png)
 
 1. Choose **Sign in** and enter your credentials.
 
@@ -126,7 +86,6 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
 3. Select a project from the list and then select **Connect**.
 
-
 # [Visual Studio 2019](#tab/visual-studio-2019)
 
 ### Visual Studio 2019
@@ -149,7 +108,7 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
 ### Visual Studio 2017
 
-<a id="vs-2017-connect-dialog" />
+<a id="vs-2017-connect-dialog"></a>
 
 1. Select the **Manage Connections** button in Team Explorer to open the **Connect** page. Choose the **Connect to Team Project** link to select a project to connect to.
 
@@ -159,7 +118,7 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
    ![Screenshot of Connect to Project dialog box.](media/connect-projects-tfs/vs2017_connect_dialog.png)
 
-2. Select **Add Server** to connect to a project in Team Foundation Server. Enter the URL to your TFS server and select **Add**.
+2. Select **Add Server** to connect to a project. Enter the URL to your server and select **Add**.
 
    ![Screenshot of Enter server URL window.](media/connect-projects-tfs/vs2017_add_tfs_server.png)
 
@@ -169,18 +128,18 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
 ### Visual Studio 2015
 
-<a id="connect-dialog" /> 
-<a id="vs-2015-connect-dialog" /> 
+<a id="connect-dialog"></a>
+<a id="vs-2015-connect-dialog"></a> 
 
-1. Select the **Manage Connections** button in Team Explorer to open the **Connect** page. Choose **Connect to Team Project** to select a different organization, TFS, or project to connect to.
+1. Select the **Manage Connections** button in Team Explorer to open the **Connect** page. Choose **Connect to Team Project** to select a different organization or project to connect to.
 
    ![Screenshot of icon and selection to Connect to projects.](media/te-connect-page-connect-to-team-project.png)
 
-1. Select the projects to work on.
+2. Select the projects to work on.
 
    ![Screenshot showing selection of projects to work on.](media/connect-projects-tfs/IC671574.png)
 
-   If it's your first time connecting, add TFS to the list of recognized servers.
+   If it's your first time connecting, add Azure DevOps to the list of recognized servers.
 
    ![Screenshot of URL entry field for server.](media/connect-projects-tfs/IC658167.png)
 
@@ -191,11 +150,11 @@ Team Explorer displays the **Home** page for that project. The pages that appear
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git  |Home page with TFVC  |
 > |-------------|----------|
-> |<img src="media/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" />|<img src="media/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" />|
+> |:::image type="content" source="media/te-home-page-git-repo.png" alt-text="Screenshot of Team Explorer Home page with Git as source control.":::|:::image type="content" source="media/te-home-page-tfvc-repo.png" alt-text="Screenshot of Team Explorer Home page w/ TFVC as source control.":::|
 
-To learn more about each page and the tasks you can do, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
+For more information, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
 
-Your client remembers the set of connections you've configured. You can switch from one project to another from the **Connect** page.
+Your client remembers the set of connections you configure. You can switch from one project to another from the **Connect** page.
 
 ---
 
@@ -213,7 +172,7 @@ Your client remembers the set of connections you've configured. You can switch f
 
    ![Screenshot of Connect with VS using different credentials to sign in.](media/connect-projects-tfs/choose-different-user-vs2017.png) 
 
-3. Sign in with a Microsoft or GitHub account that's associated with an Azure DevOps project.
+3. Sign in with a Microsoft or GitHub account associated with an Azure DevOps project.
 
 # [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -233,8 +192,8 @@ Your client remembers the set of connections you've configured. You can switch f
 
 ### Visual Studio 2017
 
-<a id="connect-account-dialog" /> 
-<a id="vs-2015-connect-account-dialog" />
+<a id="connect-account-dialog"></a>
+<a id="vs-2015-connect-account-dialog"></a>
 
 1. From **Connect**, choose **Connect to Team Project** to sign in with different credentials.
 
@@ -244,7 +203,7 @@ Your client remembers the set of connections you've configured. You can switch f
 
    ![Screenshot of Connect with VS 2017 using different credentials to sign in.](media/connect-projects-tfs/choose-different-user-vs2017.png)
 
-1. Sign in using a valid Microsoft account that is associated with an Azure DevOps Services or TFS project.
+2. Sign in using a valid Microsoft account associated with an Azure DevOps project.
 
 # [Visual Studio 2015](#tab/visual-studio-2015)
 
@@ -254,11 +213,11 @@ Your client remembers the set of connections you've configured. You can switch f
 
    ![Screenshot of Sign in with different credentials window.](media/te-connect-page-connect-to-team-project.png)  
 
-   The **Switch User** link appears only when you're actively connected to a project on Azure DevOps Services.  
+   The **Switch User** link appears only when you're actively connected to a project on Azure DevOps.  
 
    ![Screenshot of the Connect to Team Foundation Server dialog box.](media/connect-projects-tfs/IC719958.png)
 
-1. Sign in using a valid Microsoft account that is associated with Azure DevOps Services or a TFS project.
+2. Sign in using a valid Microsoft account associated with Azure DevOps.
 
 ---
 
@@ -272,19 +231,13 @@ Select Shift and right-click *devenv.exe*, then select **Run as different user**
 
 ### User accounts and licensing for Visual Studio
 
-To connect to a project, you need your user account added to the project. The **Organization owner** for Azure DevOps Services or a member of the **Project Administrators** group usually adds user accounts. To learn more, see [Add organization users and manage access](../accounts/add-organization-users.md) or [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md). 
+To connect to a project, you need your user account added to the project. The **Organization owner** for Azure DevOps or a member of the **Project Administrators** group usually adds user accounts. For more information, see [Add organization users and manage access](../accounts/add-organization-users.md) or [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md). 
 
 ::: moniker range="azure-devops"
 Azure DevOps Services provides access to the first five account users free. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Azure DevOps Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
-
-::: moniker-end
-
-You can also provide access to Stakeholders in your organization who have limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md).
+You can also provide access to Stakeholders in your organization with limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md).
 
 <a name="proxy"></a>
 
@@ -292,24 +245,24 @@ You can also provide access to Stakeholders in your organization who have limite
 
 If your remote team uses an [Azure DevOps Proxy Server](/azure/devops/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
 
-1. Make sure you're connected to Azure DevOps Server, as described [in the previous section](#visual-studio).
+1. Make sure you're connected to Azure DevOps, as described [in the previous section](#visual-studio).
 
-1. From the Visual Studio **Tools** menu, select **Options**, and then select **Source Control** > **Plug-in Selection**. Select **Visual Studio Team Foundation Server**.
+2. From the Visual Studio **Tools** menu, select **Options**, and then select **Source Control** > **Plug-in Selection**. Select **Visual Studio Team Foundation Server**.
 
     ![Screenshot of Plug-in Selection page, Options dialog box.](media/connect-projects-tfs/plug-in-selection-for-visual-studio.png)
 
-1. For **Visual Studio Team Foundation Server**, enter the name and port number for the Azure DevOps Proxy Server. Select **Use SSL encryption (https) to connect**.
+3. For **Visual Studio Team Foundation Server**, enter the name and port number for the Azure DevOps Proxy Server. Select **Use SSL encryption (https) to connect**.
 
     ![Screenshot of VS TFVC proxy configuration page, Options dialog.](media/connect-projects-tfs/visual-studio-proxy-server-options.png)
 
-    Make sure you specify the port number that your administrator assigned to TFS Proxy.
+    Make sure you specify the port number that your administrator assigned to Azure DevOps Proxy.
 
 To associate a file type with a compare or merge tool, see [Associate a file type with a file-comparison tool](../../repos/tfvc/associate-file-type-file-comparison-tool.md) or [Associate a file type with a merge tool](../../repos/tfvc/associate-file-type-merge-tool.md).
  
 
 ### Requirements and client compatibility
 
-Some tasks or features aren't available when you connect to a later version of Azure DevOps Server than your client supports. For more information, see [client compatibility](/azure/devops/server/compatibility).
+Some tasks or features aren't available when you connect to a later version of Azure DevOps than your client supports. For more information, see [client compatibility](/azure/devops/server/compatibility).
 
 ### Determine your platform version
 
@@ -317,9 +270,8 @@ See [Look up your Azure DevOps platform and version](../../user-guide/lookup-pla
 
 ## Next steps
 
-If all you need is a code repository and bug tracking solution, then start with the [Get Started with Azure Repos](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  
-
-To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md).
+> [!div class="nextstepaction"]
+> [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md).
 
 ## Related articles
 
