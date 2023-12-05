@@ -165,8 +165,7 @@ Before you can change a private project to a public project, you must enable ano
 
 3. Select **Policies**, and then turn **On** the **Allow public projects** security policy.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing Organization settings, Policy page, Security policies flow.](media/public/org-policies-change-anon.png)
+   :::image type="content" source="media/rename-project/org-policies-change-anon.png" alt-text="Screenshot showing Organization settings, Policy page, Security policies flow.":::
 
 ## 2. Set project visibility
 
