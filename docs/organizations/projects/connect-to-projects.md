@@ -1,14 +1,14 @@
 ---
 title: Connect to project from browser/supported client
 titleSuffix: Azure DevOps
-description: Learn how to connect a browser or client, like Visaul Stuido, to a project in Azure DevOps.
+description: Learn how to connect a browser or client, like Visual Studio, to a project in Azure DevOps.
 ms.subservice: azure-devops-projects
 ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.author: sdanie
 author: steved0x 
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/29/2023
+ms.date: 12/05/2023
 ---
 
 # Connect to a project
@@ -36,11 +36,11 @@ A project defines a process and data storage in which you manage your software p
 ## Connect from the web portal
 
 ::: moniker range="azure-devops"
-1. Sign in to your project (```https://dev.azure.com/{yourorganization}/{yourproject}```).
+- Sign in to your project (```https://dev.azure.com/{yourorganization}/{yourproject}```).
 ::: moniker-end
 
 ::: moniker range=" < azure-devops" 
-1. Sign in to your project (```http://ServerName/{DefaultCollection}/{ProjectName}```<pre>`http://<i>ServerName</i>/DefaultCollection/<i>ProjectName</i>`</pre> 
+- Sign in to your project (```http://ServerName/{DefaultCollection}/{ProjectName}```). 
 ::: moniker-end
 
 For more information, see [Web portal navigation](../../project/navigation/index.md).

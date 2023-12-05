@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/29/2023
+ms.date: 12/05/2023
 ---
 
 
@@ -223,7 +223,7 @@ View a list of projects from your web browser.
 
 Or
 
-1. Select **Admin settings** and then choose **Projects** to list all projects.
+- Select **Admin settings** and then choose **Projects** to list all projects.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of selected Admin settings and Projects.](media/create-project/list-projects-admin-settings-2019.png)  
@@ -251,8 +251,6 @@ From Team Explorer, you can view a list of projects by connecting to an organiza
 > ![Screenshot of connect to a project dialog 2015.](media/create-project/connect-to-a-project-vs-2015.png)  
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-<a id="list-projects" /> 
 
 ::: moniker range="azure-devops" 
 
@@ -331,9 +329,6 @@ ID                                    Name            Visibility    Process     
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
-
-<a id="add-a-repository" />
-<a id="add-a-repository-to-your-project" />
 
 ## Add a repository to your project
 
