@@ -36,16 +36,16 @@ Artifacts can be published at any stage of your pipeline. You can use YAML or th
     artifactName: drop
 ```
 
-* **pathToPublish**: the path of your artifact. This can be an absolute or a relative path. Wildcards are not supported.
+* **pathToPublish**: the path of your artifact. This can be an absolute or a relative path. Wildcards aren't supported.
 * **artifactName**: the name of your artifact.
 
 > [!NOTE]
-> Make sure you are not using one of the reserved folder names when publishing your artifact. See [Application Folders](/previous-versions/ex526337(v=vs.140)#application-folders) for more details.
+> Make sure you aren't using one of the reserved folder names when publishing your artifact. See [Application Folders](/previous-versions/ex526337(v=vs.140)#application-folders) for more details.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -73,13 +73,13 @@ Add the **Publish Build Artifacts** task to your pipeline and fill out the requi
     artifactName: drop2
 ```
 
-* **pathToPublish**: the path of your artifact. This can be an absolute or a relative path. Wildcards are not supported.
+* **pathToPublish**: the path of your artifact. This can be an absolute or a relative path. Wildcards aren't supported.
 * **artifactName**: the name of your artifact.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -110,7 +110,7 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 * **sourceFolder**: the folder that contains the files you want to copy. If you leave this empty, copying will be done from **$(Build.SourcesDirectory)**.
 * **contents**: File paths to include as part of the copy.
 * **targetFolder**: destination folder.
-* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path. Wildcards are not supported.
+* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path. Wildcards aren't supported.
 * **artifactName**: the name of the artifact that you want to create.
 
 > [!NOTE]
@@ -119,7 +119,7 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -162,7 +162,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -180,7 +180,7 @@ YAML is not supported in TFS.
 * * *
 
 > [!NOTE]
-> If you are using a deployment task, you can reference your build artifacts using **$(Agent.BuildDirectory)**. See [Agent variables](../build/variables.md#agent-variables) for more details.
+> If you're using a deployment task, you can reference your build artifacts using **$(Agent.BuildDirectory)**. See [Agent variables](../build/variables.md#agent-variables) for more details.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -221,7 +221,7 @@ If you use a file share, specify the UNC file path to the folder. You can contro
 
 ## Tips
 
-- Disable IIS Basic Authentication if you are using Azure DevOps Server to allow authentication with your Personal Access Token. See [IIS Basic Authentication and PATs](../../integrate/get-started/authentication/iis-basic-auth.md) for more details.
+- Disable IIS Basic Authentication if you're using Azure DevOps Server to allow authentication with your Personal Access Token. See [IIS Basic Authentication and PATs](../../integrate/get-started/authentication/iis-basic-auth.md) for more details.
 
 - Use forward slashes in file path arguments. Backslashes don't work in macOS/Linux agents.
 
@@ -233,7 +233,7 @@ If you use a file share, specify the UNC file path to the folder. You can contro
 
 - Deleting a build associated with packages published to a file share will result in the deletion of all Artifacts in that UNC path.  
 
-- If you are publishing your packages to a file share, make sure you provide access to the build agent.
+- If you're publishing your packages to a file share, make sure you provide access to the build agent.
 
 - Make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts) if your organization is using a firewall.
 
