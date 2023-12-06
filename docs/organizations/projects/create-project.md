@@ -149,7 +149,7 @@ There isn't a limit on the number of projects that you can create within a proje
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="create-project" /> 
+<a id="create-project"></a> 
 
 ::: moniker range="azure-devops" 
 
@@ -172,7 +172,7 @@ az devops project create --name
 - **description**: Optional. Short description of the project, enclosed in quotes.  
 - **open**: Optional. Once the command creates a project, it opens in the default web browser.
 - **org**: Optional. Azure DevOps organization URL. Required if not configured as default or picked up by using `git config`. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **process**: Optional. The process model to use, such as *Agile*, *Basic*, *Scrum*, *CMMI*, or other custom process model. Agile is the default. To learn more, see [About process customization and inherited processes](../settings/work/inheritance-process-model.md).
+- **process**: Optional. The process model to use, such as *Agile*, *Basic*, *Scrum*, *CMMI*, or other custom process model. Agile is the default. For more information, see [About process customization and inherited processes](../settings/work/inheritance-process-model.md).
 - **source-control**: Optional. Type of source control repository to create for the project: *git* (default) or *tfvc*. If not, name or ID of the project. Example: `--project "Fabrikam Fiber"`.
 - **visibility**: Optional. Project visibility. Accepted values: *private* (default), *public*.
 
@@ -293,7 +293,7 @@ aba0ed07-3174-4793-9f2c-d2c5fa6b44d7  MyPublicProject     Public
 
 ```
 
-<a id="show-project" /> 
+<a id="show-project"></a>
 
 ### Show project information in the web portal
 

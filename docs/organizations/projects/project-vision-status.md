@@ -46,7 +46,7 @@ Each project provides a **Summary** or home page to share information and showca
 
 ::: moniker range="azure-devops" 
 > [!NOTE]   
-> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. To learn more about public projects, see [What is a public project?](../projects/about-projects.md)
+> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. For more information, see [What is a public project?](../projects/about-projects.md)
 ::: moniker-end
 
 :::image type="content" source="media/summary/project-summary-page-intro.png" alt-text="Screenshot of summary page.":::
@@ -133,7 +133,7 @@ The **Summary** page displays either the **README** file defined in a project re
 
 ## Invite people to contribute to your project 
 
-You can send an email to invite users to contribute to your project by choosing **Invite**. To learn more, see [Add users or groups to a team or project, Invite users from the Summary page](../security/add-users-team-project.md#invite-users-from-the-summary-page).
+You can send an email to invite users to contribute to your project by choosing **Invite**. For more information, see [Add users or groups to a team or project, Invite users from the Summary page](../security/add-users-team-project.md#invite-users-from-the-summary-page).
 
 :::image type="content" source="../security/media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
 
@@ -168,7 +168,8 @@ To email or initiate a chat session, choose the team member shown and select you
 
 ## Search a project  
 
-From the **Summary** page, you can initiate a search of your code, work items, and wiki. To learn more, see [Get started with search](../../project/search/get-started-search.md). 
+From the **Summary** page, you can initiate a search of your code, work items, and wiki. For more information, see [Get started with search](../../project/search/get-started-search.md).
+
 :::image type="content" source="media/summary/project-search.png" alt-text="Screenshot of Summary page, search box.":::
 
 ## Initialize a README file for a Git repo
@@ -199,7 +200,7 @@ You can share your project and objective, and ways for team members to contribut
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Edit the README file.](media/share-project/edit-readme-file.png)  
 
-   You're directed to the **Repos>Files** page for the README file. You can edit and modify the README Markdown file like you would any other file in a Git repository. You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md).
+   You're directed to the **Repos>Files** page for the README file. You can edit and modify the README Markdown file like you would any other file in a Git repository. You can use Markdown language to format the README file and add images. For more information, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md).
 
 <a id="initialize-tfvc"> </a>
 
