@@ -86,7 +86,7 @@ View the projects defined for your organization by opening the **Projects** page
 
 For more information, see [Create a project](create-project.md).  
 
-<a id="project-scoped-user-group"></a>
+<a id="project-scoped-user-group"></a> 
 
 ::: moniker range="azure-devops"
 
@@ -150,6 +150,8 @@ Git repositories can be browsed and cloned, but only via HTTPS.
 SSH and GVFS endpoints are unavailable.
 Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't offer the connected experience linking to work items and other collateral.
 
+<a id="dashboard-widget-support"></a>
+
 ## Dashboard widget support
 
 The following dashboard widgets don't display any useful information for nonmembers.
@@ -179,7 +181,7 @@ You can configure and customize most services and applications to support your b
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For more information, see [Customize an inheritance process](../settings/work/inheritance-process-model.md).
 - **Azure Pipelines**: You can fully customize your build and release pipelines, and define build steps, release environments, and deployment schedule. For more information, see [Build and release](../../pipelines/index.yml).  
 - **Azure Test Plans**: You can define and configure test plans, test suites, test cases, and test environments. You can also add test steps within your build pipelines. For more information, see [Exploratory and manual testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
- 
+
 ## Add a team
 
 As your organization grows, you can add teams equipped with configurable Agile tools to meet each team's workflow. For more information, see the following articles.  

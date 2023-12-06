@@ -60,7 +60,7 @@ While the above may sound complicated, it actually takes little configuration to
 To go from one project with one default team, first define each team while automatically creating a default area path for that team. Then reconfigure the flat set of area paths to a hierarchical structure. Next, define the iteration paths to support the release structure you want and the program and Agile teams to use. Lastly, configure each team and populate the membership of teams.  
 
 
-<a id="define-teams" />
+<a id="define-teams"></a>
 
 ## Define your teams 
 
@@ -99,7 +99,7 @@ Add each team, one by one.
 
 1. Optional. If you have two or more Portfolio teams, create a team for each of them.   
 
-<a id="configure-area-paths" /> 
+<a id="configure-area-paths"></a> 
 
 ## Configure Area Paths 
 
@@ -164,7 +164,7 @@ If you already have iterations for your default team, you can rename them. You'l
 	> [!TIP]
 	> You can drag and drop Iteration Paths to structure your iterations, similar to as shown in Step 2 under Configure Area Paths. Azure Boards always lists the iteration paths in order of their dates under each parent node. 
 
-<a id="configure-your-teams" /> 
+<a id="configure-your-teams"></a> 
 
 ## Configure your teams 
 
@@ -377,8 +377,8 @@ For teams that support several other teams, such as a UX Design team, configure 
     Work items that appear on shared area paths appear on the backlogs and boards of the associated teams. 
 
 
-<a id="programmatic-tools" /> 
-<a id="command-line-and-programmatic-tools" /> 
+<a id="programmatic-tools"></a> 
+<a id="command-line-and-programmatic-tools"></a> 
 
 ::: moniker range=">= azure-devops-2020"
 

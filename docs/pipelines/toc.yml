@@ -448,13 +448,13 @@
   - name: Publish & download pipeline artifacts
     displayName: download artifacts, publish artifacts, packages
     href: artifacts/pipeline-artifacts.md
-  - name: Build artifacts
+  - name: Publish & download build artifacts
     displayName: build, artifacts
     href: artifacts/build-artifacts.md
   - name: Release pipelines
     displayName: release artifacts, deployment artifacts
     href: release/releases.md
-  - name: Release artifacts and artifact sources
+  - name: Artifact sources
     displayName: artifacts, source, release artifacts
     href: release/artifacts.md
   - name: NuGet

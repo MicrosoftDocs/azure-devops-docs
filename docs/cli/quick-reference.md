@@ -246,7 +246,7 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 - [Show permissions for specified token, namespace and user or group](../organizations/security/manage-tokens-namespaces.md)
 - [Update a security group](../organizations/security/add-manage-security-groups.md) 
 
-<a id="service-endpoints" />
+<a id="service-endpoints"></a>
 
 ## Service endpoints or service connections
 

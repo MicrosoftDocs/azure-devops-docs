@@ -21,7 +21,7 @@ Here you'll find detailed descriptions of each field data type, query operators,
 
 For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md). See also [Create a query/Best practices](using-queries.md#best-practices).
 
-<a id="field-values" /> 
+<a id="field-values"></a> 
 
 ## Query field data types and values
 
@@ -161,7 +161,7 @@ The value you specify for a field must conform to the data type for that field. 
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
-<a id="operators" /> 
+<a id="operators"></a> 
 
 ## Query operators
 
@@ -553,8 +553,8 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 > [!TIP] 
 > It's possible to contsruct a query using WIQL syntax that uses an operator, such as **Was Ever**, for other data type fields than those listed. For example, you can use **Was Ever** within a clause using the **Iteration Path**. For an example, see [Query by date or current iteration, List work items moved out of a sprint](query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
 
-<a id="variables" /> 
-<a id="macros" /> 
+<a id="variables"></a> 
+<a id="macros"></a> 
 
 ## Query macros or variables
 
@@ -719,7 +719,7 @@ You can use the macros described in the following table to filter your queries b
 
 
 
-<a id="full-text" /> 
+<a id="full-text"></a> 
 
 ## Full-text and partial word searches
 

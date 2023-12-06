@@ -98,7 +98,7 @@ For example, here we query for all work items that are tagged either ```Web``` o
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
-<a id="no-tags" />
+<a id="no-tags"></a>
 
 > [!NOTE]
 > The ability to query for work items that don't have any tags attached to them is not a supported feature. If you'd like to up vote the request to support this feature, you can do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 
@@ -135,7 +135,7 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 
 You can't delete tags using the Azure DevOps Web UI. 
 
-If you need to remove a tag, you can create a script or application capable of a delete using the [Azure DevOps REST API](/rest/api/azure/devops/wit/tags?view=azure-devops-rest-7.2) or the [.NET client libraries](/azure/devops/integrate/concepts/dotnet-client-libraries?view=azure-devops). For more examples, see [Azure-DevOps-Admin-CLI](https://github.com/danhellem/azure-devops-admin-cli).
+If you need to remove a tag, you can create a script or application capable of a delete using the [Azure DevOps REST API](/rest/api/azure/devops/wit/tags?view=azure-devops-rest-7.2&preserve-view=true) or the [.NET client libraries](/azure/devops/integrate/concepts/dotnet-client-libraries?view=azure-devops&preserve-view=true). For more examples, see [Azure-DevOps-Admin-CLI](https://github.com/danhellem/azure-devops-admin-cli).
 
 Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2), which adds a **Tags** page under **Boards** or **Work** to manage tags, including deletes. 
 

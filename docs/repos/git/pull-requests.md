@@ -170,7 +170,7 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="create-pr" />
+<a id="create-pr"></a>
 
 ::: moniker range="azure-devops"
 To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az-repos-pr-create). To open the PR in your browser after creation, use the `--open` parameter.
@@ -392,7 +392,7 @@ To edit the title, description, or any other details in an existing PR, open the
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops"
-<a id="add-details-pr" /> 
+<a id="add-details-pr"></a> 
 
 You can add details during PR creation with [az repos pr create](/cli/azure/repos/pr#az-repos-pr-create), or update details in existing PRs with [az repos pr update](/cli/azure/repos/pr#az-repos-pr-update).
 
@@ -615,7 +615,7 @@ To link work items, open the PR in your browser, and then make your updates on t
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops"
-<a id="link-work-items-pr" /> 
+<a id="link-work-items-pr"></a> 
 
 You can link Azure Boards work items to PRs at PR creation with `az repos pr create --work-items <Id1> <Id2>`, where \<Id> is the work item's ID.
 

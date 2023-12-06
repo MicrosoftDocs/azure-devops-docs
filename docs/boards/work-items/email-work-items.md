@@ -31,7 +31,7 @@ Emailing lists of work items is a common way to share work tracking information.
 > * If you're set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).   
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of the legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](view-add-work-items.md?view=azure-devops&preserve-view=true&tabs=visual-studio#open-work-items) instead of the legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 ---
 :::row:::
@@ -134,7 +134,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 > [!IMPORTANT]     
 > If you use the built-in email feature, you can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
 
-<a id="team-services-email" />  
+<a id="team-services-email"></a>  
 
 #### [Web portal](#tab/browser/)
 
@@ -146,10 +146,10 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 #### [Visual Studio](#tab/visual-studio/)
 
-<a id="team-explorer-email" />
+<a id="team-explorer-email"></a>
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](view-add-work-items.md?view=azure-devops&preserve-view=true&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 From Visual Studio or Team Explorer, choose ![Send work item to Microsoft Outlook](../queries/media/IC764665.png). This option requires that you configure Office Outlook on your client computer.
 
@@ -167,7 +167,7 @@ From Visual Studio or Team Explorer, choose ![Send work item to Microsoft Outloo
 
 
 <a id="email-summary-lists"></a>
-<a id="team-services-email-list" /> 
+<a id="team-services-email-list"></a> 
 <a id="email-list-web-portal" >  </a> 
 
 
@@ -193,10 +193,10 @@ If you want to mail a list of all items in the backlog or query, choose the  :::
 
 #### [Visual Studio](#tab/visual-studio/)
 
-<a id="team-explorer-email-list" />
+<a id="team-explorer-email-list"></a>
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](view-add-work-items.md?view=azure-devops&preserve-view=true&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 **To email items from Visual Studio**: Open a query, highlight the items from the list, choose the context menu, and select **Send selection to Microsoft Outlook** from the menu. This option requires that you configure Office Outlook on your client computer.  
 
@@ -229,7 +229,7 @@ With this option, you can copy an HTML formatted table of selected items. You ca
 Open a query in Visual Studio that contains a work item that you want to print, select or highlight those items, and then select the **Print** option from the context menu.   
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](view-add-work-items.md?view=azure-devops&preserve-view=true&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 ![Print work items from Team Explorer](../queries/media/share-plans-print-work-item-details.png)   
 
@@ -241,7 +241,7 @@ Open a query in Visual Studio that contains a work item that you want to print, 
 Some teams want to work with physical cards when planning or updating their physical Kanban or Scrum task boards. There's no native support for printing work items as cards. However, you may find a solution from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/search?term=card&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance).   
 
 <a id="copy-url">  </a>
-<a id="team-explorer-copy-url" />
+<a id="team-explorer-copy-url"></a>
 
 ## Copy the URL to a single work item  
 
@@ -250,7 +250,7 @@ Some teams want to work with physical cards when planning or updating their phys
 
 #### [Web portal](#tab/browser/)
 
-<a id="team-services-copy-url" />
+<a id="team-services-copy-url"></a>
 
 **From the web portal**, copy the URL from the web browser address or hover over the title and then select the ![Copy to clipboard icon](../backlogs/media/icon-copy-to-clipboard.png) copy-to-clipboard icon.
 
@@ -260,7 +260,7 @@ Some teams want to work with physical cards when planning or updating their phys
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](view-add-work-items.md?view=azure-devops&preserve-view=true&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 **From Visual Studio**, right-click the work item tab to copy the URL. The URL opens the work item in the web portal. 
 
@@ -269,7 +269,7 @@ Some teams want to work with physical cards when planning or updating their phys
 * * *
 
 
-<a id="export" /> 
+<a id="export"></a> 
 
 ::: moniker range=">= azure-devops-2019"
 

@@ -24,7 +24,7 @@ Along with the WITs, teams have access to a set of work item queries to track in
 
 [!INCLUDE [temp](../../includes/process-customize.md)] 
 
-<a id="start-using-scrum" />
+<a id="start-using-scrum"></a>
 
 ## Plan and track work with Scrum processes
 
@@ -91,7 +91,7 @@ As updates get made to the Scrum process template, the version number gets updat
 
 For a summary of updates made to process templates, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
-<a id="predefined-queries" />
+<a id="predefined-queries"></a>
 
 ::: moniker range="tfs-2018"
 

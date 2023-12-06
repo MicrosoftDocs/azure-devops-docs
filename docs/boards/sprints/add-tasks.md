@@ -122,7 +122,7 @@ Unparented tasks assigned to the selected sprint appear at the top of the backlo
 > ![Sprint backlog page, parent a task](media/add-tasks/reparent-task.png)
 
 
-<a id="define-tasks" />
+<a id="define-tasks"></a>
 
 ## Add tasks to backlog items
 
@@ -191,7 +191,7 @@ Name the task and enter an estimate for *Remaining Work*. Also, if you know who'
 ::: moniker-end 
 
 ::: moniker range="tfs-2018"
-<a id="task-form-team-services" /> 
+<a id="task-form-team-services"></a> 
 <!--- Task form, new form -->
 ![New task form](media/sp-scrum-task-form.png)  
 ::: moniker-end

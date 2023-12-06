@@ -160,7 +160,7 @@ Use `=` to find current assignments, `Was Ever` to list items based on past assi
 ---
  
 
-<a id="group" /> 
+<a id="group"></a> 
 
 ## Team or group membership queries  
 
@@ -278,9 +278,9 @@ To list work items that have changed state within a specific date range, you can
 > ![Screenshot of Query Editor, filter State Change Date and State fields.](media/workflow/query-state-change-date.png)
 
 
-<a id="query-changes-to-a-kanban-board" />
-<a id="kanban-query-fields" />
-<a id="kanban_query_fields" />
+<a id="query-changes-to-a-kanban-board"></a>
+<a id="kanban-query-fields"></a>
+<a id="kanban_query_fields"></a>
 
 ## Query changes to a Kanban board 
 
@@ -347,7 +347,7 @@ You can list items based on the team area path, and if they are in a specific cu
  
 
 <a id="workflow-fields">  </a>
-<a id="fields" />
+<a id="fields"></a>
 
 ## Workflow and Kanban board fields
 
@@ -734,7 +734,7 @@ To limit the scope of identities available for selection to just those users add
 ::: moniker-end
 
 
-<a id="date-identity" />
+<a id="date-identity"></a>
 
 ### Date and identity fields 
 

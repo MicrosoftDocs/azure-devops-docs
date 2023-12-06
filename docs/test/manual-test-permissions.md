@@ -50,7 +50,7 @@ The following table summarizes the license requirements required to exercise sel
 | Prepare for execution such as assigning configurations or testers | Basic + Test Plans  | 
 | Prepare User Acceptance Testing | Basic + Test Plans  |
 
-<a id="access-by-user-role" /> 
+<a id="access-by-user-role"></a>
 
 ## Permissions
 

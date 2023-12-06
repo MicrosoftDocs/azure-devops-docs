@@ -153,7 +153,7 @@ Access to Azure DevOps web portal features are managed through access levels ass
 
 
 
-<a id="manual" /> 
+<a id="manual"></a>
 
 
 ## Manual and exploratory testing
@@ -170,7 +170,7 @@ The work item types&mdash;**Test Plans**, **Test Suites**, **Test Cases**, **Sha
 > With Azure DevOps Server 2020 and later versions, you can perform automated tests by adding test tasks to pipelines. Defining test plans, test cases, and test suites isn't required when test tasks are used.  
  
 
-<a id="test-plans" />
+<a id="test-plans"></a>
 
 ### Define test plans and test suites 
 
@@ -192,7 +192,7 @@ Within each test case, you specify a set of test steps with their expected outco
 :::image type="content" source="media/overview/test-case-form.png" alt-text="Screenshot of test case work item form.":::
 
 
-<a id="parameters" />
+<a id="parameters"></a>
 
 ### Manage shared parameters  
 
@@ -200,7 +200,7 @@ Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define an
  
 :::image type="content" source="media/overview/parameters.png" alt-text="Screenshot of Azure Test Plans, Parameters hub":::
 
-<a id="configurations" />
+<a id="configurations"></a>
 
 ### Manage test configurations and variables
 
@@ -208,7 +208,7 @@ With the [Configurations](test-different-configurations.md) hub, teams can defin
 
 :::image type="content" source="media/overview/configurations.png" alt-text="Screenshot of Azure Test Plans, Configurations hub":::
  
-<a id="test-tools" />
+<a id="test-tools"></a> 
 
 ## Test execution and test tools 
  
@@ -289,7 +289,7 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 ![Requesting and providing stakeholder feedback](media/manual-testing/stakeholder-feedback-01.png)
 
 
-<a id="automated" /> 
+<a id="automated"></a>
 
 ## Automated testing 
 
@@ -307,7 +307,7 @@ Azure Test Plans supports automated testing in the following ways:
 - Provide built-in reports and configurable dashboard widgets to display results of pipeline testing. 
 - Collect test results and associated test data into the Analytics service. 
 
-<a id="traceability" /> 
+<a id="traceability"></a> 
 
 ## Traceability 
 
@@ -319,7 +319,7 @@ Azure Test Plans supports linking bugs and requirements to test cases and test s
 
 
  
-<a id="review-linking" /> 
+<a id="review-linking"></a> 
 
 ### View items linked to a test case
 
@@ -335,7 +335,7 @@ From the **Test plans** hub, you can view and open the test suites, requirements
 :::row-end:::
  
 
-<a id="kanban" /> 
+<a id="kanban"></a>
 
 ### Add and run tests from the Kanban board
 
@@ -343,7 +343,7 @@ From the Azure Boards Kanban boards, you can add tests from a user story or feat
 
 :::image type="content" source="media/overview/kanban-board-inline-testing.png" alt-text="Screenshot of Kanban board showing inline tests added to work items.":::
  
-<a id="requirements-quality" /> 
+<a id="requirements-quality"></a> 
 
 ### Requirements quality widget 
 
@@ -351,7 +351,7 @@ The Requirements quality widget displays a list of all the requirements in scope
 
 :::image type="content" source="../pipelines/test/media/requirements-traceability/requirements-quality-widget.png" alt-text="Screenshot of Requirements traceability widget added to dashboard.":::
 
-<a id="reporting" /> 
+<a id="reporting"></a>
 
 ## Reporting and analysis  
 
@@ -363,7 +363,7 @@ To support reporting and analysis, Azure Test Plans supports test tracking chart
 - Dashboard widgets: Configurable widgets that display test results based on selected builds or releases. Widgets include the [Deployment status](#deployment-status) widget and the [Test Results Trend (Advanced)](#test-results-trend) widget. 
 - [Test Analytics](#test-analytics-service): Gain detailed insights from built-in pipeline reports or create custom reports by querying the Analytics service.
 
-<a id="configurable-charts" />
+<a id="configurable-charts"></a>
 
 ### Configurable test charts  
 
@@ -375,7 +375,7 @@ See more at [Track test status](track-test-status.md).
 
 ![Test status tracking](media/manual-testing/track-test-status-01.png)
 
-<a id="progress-report" />
+<a id="progress-report"></a>
 
 ### Progress reports 
 
@@ -390,7 +390,7 @@ With the [Progress report](progress-report.md) hub, teams can track progress of 
 :::image type="content" source="media/overview/progress-report.png" alt-text="Screenshot of Azure Test Plans, Progress Report hub":::
 
 
-<a id="runs" />
+<a id="runs"></a>
 
 ### Test runs 
 
@@ -407,7 +407,7 @@ Choose any specific run to view a summary of the test run.
 
 
 
-<a id="deployment-status" />
+<a id="deployment-status"></a>
 
 #### Deployment status 
 
@@ -421,7 +421,7 @@ Hover over any build summary, and you can view more details, specifically the nu
 
 
 
-<a id="test-results-trend" />
+<a id="test-results-trend"></a>
 
 ### Test results trend (Advanced)
 
@@ -430,7 +430,7 @@ The Test Results Trend (Advanced) widget provides near real-time visibility into
 :::image type="content" source="../report/dashboards/media/test-results-trend-widget/passed-bypriority-pass.png" alt-text="Screenshot of Test results trend widget, Advanced version based on Analytics service."::: 
   
 
-<a id="test-analytics-service" />
+<a id="test-analytics-service"></a>
 
 ### Test Analytics
 

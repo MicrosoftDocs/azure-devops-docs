@@ -21,7 +21,7 @@ ms.date: 10/19/2022
 ---
 :::row:::
    :::column span="2":::
-  <a id="administer-build-resource-permissions-permission" />Administer build resource permissions  
+  <a id="administer-build-resource-permissions-permission"></a>Administer build resource permissions  
   `BuildAdministration, AdministerBuildResourcePermissions`
    :::column-end:::
    :::column span="2":::
@@ -36,7 +36,7 @@ ms.date: 10/19/2022
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="2":::
-  <a id="administer-process-permissions-permission" />Administer process permissions  
+  <a id="administer-process-permissions-permission"></a>Administer process permissions  
   `Process, AdministerProcessPermissions`
    :::column-end:::
    :::column span="2":::
@@ -49,7 +49,7 @@ ms.date: 10/19/2022
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="2":::
-  <a id="administer-shelved-changes-permission" />Administer shelved changes  
+  <a id="administer-shelved-changes-permission"></a>Administer shelved changes  
   `VersionControlPrivileges, AdminWorkspaces`
    :::column-end:::
    :::column span="2":::
@@ -58,7 +58,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-  <a id="administer-workspaces-permission" />Administer workspaces  
+  <a id="administer-workspaces-permission"></a>Administer workspaces  
   `Workspaces, Administer`
    :::column-end:::
    :::column span="2":::
@@ -67,7 +67,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-  <a id="alter-trace-settings-permission" />Alter trace settings  
+  <a id="alter-trace-settings-permission"></a>Alter trace settings  
   `Collection, DIAGNOSTIC_TRACE`
    :::column-end:::
    :::column span="2":::
@@ -76,7 +76,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-  <a id="create-a-workspace-permission" />Create a workspace  
+  <a id="create-a-workspace-permission"></a>Create a workspace  
   `VersionControlPrivileges, CreateWorkspace`
    :::column-end:::
    :::column span="2":::
@@ -85,7 +85,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="create-new-team-projects-permission" />Create new projects  
+   <a id="create-new-team-projects-permission"></a>Create new projects  
    (formerly Create new team projects)  
   `Collection, CREATE_PROJECTS`
    :::column-end:::
@@ -97,7 +97,7 @@ ms.date: 10/19/2022
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="2":::
-  <a id="create-process-permission" />Create process  
+  <a id="create-process-permission"></a>Create process  
   `Process, Create`
    :::column-end:::
    :::column span="2":::
@@ -106,7 +106,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="delete-field-permission" />Delete field from organization  
+   <a id="delete-field-permission"></a>Delete field from organization  
    (formerly Delete field from account)  
   `Collection, DELETE_FIELD`
    :::column-end:::
@@ -128,7 +128,7 @@ ms.date: 10/19/2022
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="2":::
-  <a id="delete-team-project-permission" /> Delete team project   
+  <a id="delete-team-project-permission"></a> Delete team project   
   `Project, DELETE`
    :::column-end:::
    :::column span="2":::
@@ -161,7 +161,7 @@ ms.date: 10/19/2022
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="2":::
-  <a id="edit-process-permission" />Edit process  
+  <a id="edit-process-permission"></a>Edit process  
   `Process, Edit`
    :::column-end:::
    :::column span="2":::
@@ -172,7 +172,7 @@ ms.date: 10/19/2022
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="2":::
-  <a id="make-requests-on-behalf-of-others-permission" />Make requests on behalf of others  
+  <a id="make-requests-on-behalf-of-others-permission"></a>Make requests on behalf of others  
   `Server, Impersonate`    
    :::column-end:::
    :::column span="2":::
@@ -182,7 +182,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-  <a id="manage-build-resources-permission" />Manage build resources  
+  <a id="manage-build-resources-permission"></a>Manage build resources  
   `BuildAdministration, ManageBuildResources`
    :::column-end:::
    :::column span="2":::
@@ -206,7 +206,7 @@ ms.date: 10/19/2022
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="2":::
-  <a id="manage-process-template-permission" />Manage process template  
+  <a id="manage-process-template-permission"></a>Manage process template  
   `Collection, MANAGE_TEMPLATE`
    :::column-end:::
    :::column span="2":::
@@ -215,7 +215,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-  <a id="manage-test-controllers-permission" />Manage test controllers  
+  <a id="manage-test-controllers-permission"></a>Manage test controllers  
   `Collection, MANAGE_TEST_CONTROLLERS`
    :::column-end:::
    :::column span="2":::
@@ -224,7 +224,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-  <a id="trigger-events-permission" />Trigger events  
+  <a id="trigger-events-permission"></a>Trigger events  
   `Collection, TRIGGER_EVENT`
   `Server, TRIGGER_EVENT`
    :::column-end:::
@@ -234,7 +234,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-  <a id="use-build-resources-permission" />Use build resources  
+  <a id="use-build-resources-permission"></a>Use build resources  
   `BuildAdministration, UseBuildResources`
    :::column-end:::
    :::column span="2":::
@@ -243,7 +243,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-  <a id="view-build-resources-permission" />View build resources  
+  <a id="view-build-resources-permission"></a>View build resources  
   `BuildAdministration, ViewBuildResources`
    :::column-end:::
    :::column span="2":::
@@ -252,7 +252,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-  <a id="view-collection-level-information-permission" />View instance-level information    
+  <a id="view-collection-level-information-permission"></a>View instance-level information    
   or View collection-level information  
   `Collection, GENERIC_READ`
    :::column-end:::
@@ -262,7 +262,7 @@ ms.date: 10/19/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-  <a id="view-system-synchronization-information-permission" />View system synchronization information  
+  <a id="view-system-synchronization-information-permission"></a>View system synchronization information  
   `Collection, SYNCHRONIZE_READ`  
    :::column-end:::
    :::column span="2":::

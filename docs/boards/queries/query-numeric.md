@@ -223,7 +223,7 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 For information on system-defined sprint burndown charts, see [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md).
 
 
-<a id="fields" />
+<a id="fields"></a>
 
 ## Fields used to estimate and track work
 
@@ -283,7 +283,7 @@ The following table describes the activity-based and numeric fields that you can
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="completed-work" />Completed Work
+   <a id="completed-work"></a>Completed Work
 
    :::column-end:::
    :::column span="2":::
@@ -385,7 +385,7 @@ The following table describes the activity-based and numeric fields that you can
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="remaining-work" />Remaining Work
+   <a id="remaining-work"></a>Remaining Work
    :::column-end:::
    :::column span="2":::
    The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.

@@ -138,7 +138,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 ::: moniker-end
 
 <a id="delete"> </a> 
-<a id="delete-work-items" />
+<a id="delete-work-items"></a>
 
 ### Delete work items   
 
@@ -203,8 +203,8 @@ You can delete work items in one of the following ways:
 	> The Delete work items confirmation dialog for on-premises Azure DevOps may indicate there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
 ::: moniker-end
 
-<a id="restore" />
-<a id="restore-or-permanently-delete-work-items" />
+<a id="restore"></a>
+<a id="restore-or-permanently-delete-work-items"></a>
 
 ## Restore or destroy work items  
 
@@ -236,7 +236,7 @@ Restore deleted work items or permanently delete them from the web portal **Recy
 > [!NOTE]
 > Deleted test artifacts don't appear in the **Recycle Bin** and can't be restored. When you delete a test artifact, all of its associated child items, such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history also get deleted.
 
-<a id="az-boards-cli" />
+<a id="az-boards-cli"></a>
 
 ::: moniker range="azure-devops" 
  

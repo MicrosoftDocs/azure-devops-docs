@@ -293,6 +293,7 @@ aba0ed07-3174-4793-9f2c-d2c5fa6b44d7  MyPublicProject     Public
 
 ```
 
+
 <a id="show-project"></a>
 
 ### Show project information in the web portal
@@ -329,6 +330,7 @@ ID                                    Name            Visibility    Process     
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
+
 
 ## Add a repository to your project
 
