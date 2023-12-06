@@ -76,23 +76,23 @@ Azure Artifacts allow developers to publish and consume various types of package
 
 ## Publish artifacts
 
-#### [NuGet](#tab/nuget/)
+#### [NuGet](#tab/nugetserver/)
 
 [Publish NuGet packages with Azure Pipelines (YAML/Classic)](nuget.md)
 
-#### [Npm](#tab/npm/)
+#### [Npm](#tab/npmserver/)
 
 [Publish npm packages (YAML/Classic)](../tasks/package/npm.md#publish-npm-packages)
 
-#### [Maven](#tab/maven/)
+#### [Maven](#tab/mavenserver/)
 
 [Publish Maven artifacts with Azure Pipelines](publish-maven-artifacts.md)
 
-#### [Gradle](#tab/gradle/)
+#### [Gradle](#tab/gradleserver/)
 
 [Build and publish artifacts with Gradle and Azure Pipelines](pull-package-gradle.md)
 
-#### [Python](#tab/python/)
+#### [Python](#tab/pythonserver/)
 
 [Publish Python packages with Azure Pipelines](pypi.md)
 
@@ -114,19 +114,19 @@ Azure Artifacts allow developers to publish and consume various types of package
 
 ## Publish artifacts
 
-#### [NuGet](#tab/nuget/)
+#### [NuGet](#tab/nugettfs/)
 
 [Publish NuGet packages with Azure Pipelines (YAML/Classic)](nuget.md)
 
-#### [Npm](#tab/npm/)
+#### [Npm](#tab/npmtfs/)
 
 [Publish npm packages (YAML/Classic)](../tasks/package/npm.md#publish-npm-packages)
 
-#### [Maven](#tab/maven/)
+#### [Maven](#tab/maventfs/)
 
 [Publish Maven artifacts with Azure Pipelines](publish-maven-artifacts.md)
 
-#### [Gradle](#tab/gradle/)
+#### [Gradle](#tab/gradletfs/)
 
 [Build and publish artifacts with Gradle and Azure Pipelines](pull-package-gradle.md)
 
