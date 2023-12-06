@@ -188,7 +188,7 @@ Azure DevOps Services and Azure DevOps Server offer the following tools that giv
 - [Dashboards](../report/dashboards/dashboards.md) and lightweight [charts](../report/dashboards/charts.md) that are available in both the cloud and on-premises platforms. These tools are easy to set up and use.
 - [SQL Server Reporting Services (SSRS) reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports) are available when Azure DevOps Server is configured with SQL Server Analysis Services.   
 
-<a id="vsts" />
+<a id="vsts"></a>
 
 ## Visual Studio Team Services is now Azure DevOps Services
 

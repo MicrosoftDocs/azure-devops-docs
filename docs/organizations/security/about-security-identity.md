@@ -106,7 +106,7 @@ Both our cloud service, Azure DevOps Services, and on-premises server, Azure Dev
 For more information about the steps Microsoft takes to keep your projects in Azure DevOps Services safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../organizations/security/data-protection.md).
 ::: moniker-end
 
-<a id="accounts" /> 
+<a id="accounts"></a> 
 
 ## Accounts 
 
@@ -137,7 +137,7 @@ The most effective means for managing accounts is by [adding them to security gr
 > [!NOTE]  
 > The organization owner and members of the Project Collection Administrators group are granted full access to most all features and functions. 
  
-<a id="authentication" /> 
+<a id="authentication"></a> 
 
 ## Authentication
 
@@ -185,7 +185,7 @@ For more information about how we store your credentials, see [Credential storag
 
 For more information about how to choose the right authentication mechanism, see [Guidance for authentication](../../integrate/get-started/authentication/authentication-guidance.md).
 
-<a id="authorization" /> 
+<a id="authorization"></a> 
 
 ## Authorization
 
@@ -193,7 +193,7 @@ Authorization verifies that the identity that is attempting to connect has the n
 
 Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also grant or restrict access to a feature. For more information about these authorization methods, see [Get started with permissions, access, and security groups](../security/about-permissions.md). 
 
-<a id="namespaces" /> 
+<a id="namespaces"></a> 
 
 ## Security namespaces and permissions 
 
@@ -201,7 +201,7 @@ Security namespaces store data that determines the level of access that Azure De
 
 For more information, see [Security namespaces and permission reference](namespace-reference.md).  
 
-<a id="security-policies" /> 
+<a id="security-policies"></a> 
 
 ## Security policies
 
@@ -230,7 +230,7 @@ The following policies determine the access you want to give users and applicati
 - **Request access**: Only valid when the organization is connected to Microsoft Entra ID. When enabled, users can request access to a resource. A request results in an email notification to the administrators asking for review and access, as needed. For more information, see [Add external users to your organization](../accounts/add-external-user.md).  
 - **Invite GitHub users**: Only valid when the organization isn't connected to Microsoft Entra ID. When enabled, administrators can add users based on their GitHub user accounts from the **Users** page.  For more information, see [Authenticating & inviting GitHub users FAQs](faq-github-authentication.yml#github-users). 
 
-<a id="project-scoped-user-group" /> 
+<a id="project-scoped-user-group"></a> 
 
 ### Project-Scoped Users group 
 

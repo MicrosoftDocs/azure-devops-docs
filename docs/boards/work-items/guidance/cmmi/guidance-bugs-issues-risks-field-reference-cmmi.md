@@ -17,7 +17,7 @@ ms.date: 01/20/2017
 
 The following fields track information about bugs, issues, and risks. These work item types are defined within the process template for the [CMMI process](../cmmi-process.md).  
   
-<a id="fields" />
+<a id="fields"></a>
 <a name="bugs"></a> 
 
 ## Bug tracking fields  

@@ -97,7 +97,7 @@ You can add fields and specify the group and page where they should appear. Also
 
 
 <a id="pick-list">  </a>
-<a id="edit-picklist-inherited" />
+<a id="edit-picklist-inherited"></a>
 
 ### Add a picklist  
 
@@ -212,7 +212,7 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 ![Layout tab, Relabel a field](media/process/cpfield-relabel-customer-ticket.png) 
 
 
-<a id="modify-description" />
+<a id="modify-description"></a>
 
 ## Modify Description help text  
 

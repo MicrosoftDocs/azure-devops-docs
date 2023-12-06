@@ -261,7 +261,7 @@ For more information, see [Link to work items from pull requests, commits, and c
 
 ::: moniker range=">= azure-devops-2019" 
 
-<a id="link-github" />
+<a id="link-github"></a>
 
 ## Link work items to GitHub objects
 ::: moniker-end
@@ -508,7 +508,7 @@ From the **Add link** dialog, you can open a secondary dialog to help you choose
     - From Visual Studio: Select each work item that should link to the current work item. You can also press the SHIFT key while clicking to select a range of work items, or press the CTRL key while clicking to select multiple work items.  
 ::: moniker-end
 
-<a id="azure-cli" />
+<a id="azure-cli"></a>
 
 ::: moniker range="azure-devops" 
 

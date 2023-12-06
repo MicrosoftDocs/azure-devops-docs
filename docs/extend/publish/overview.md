@@ -28,7 +28,7 @@ Once you [develop your extension](../get-started/node.md), you can package and p
 
 [!INCLUDE [](./includes/create-publisher.md)]
 
-<a id="package" />
+<a id="package"></a>
 
 ## Package your extension
 

@@ -101,7 +101,7 @@ Your bill doesn't show the changes until the next month because paid users are m
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
-<a id="remove-user" /> 
+<a id="remove-user"></a> 
 
 ### Remove a user 
 

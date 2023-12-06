@@ -6,8 +6,8 @@ ms.topic: include
 ms.date: 06/07/2023
 ---
 
-<a id="discussion" />
-<a id="capture-comments-in-the-discussion-section" />
+<a id="discussion"></a>
+<a id="capture-comments-in-the-discussion-section"></a>
 
 ## Capture comments in the Discussion section 
 

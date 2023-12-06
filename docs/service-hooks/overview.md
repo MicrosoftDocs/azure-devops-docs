@@ -140,7 +140,7 @@ check out the information on the service that you're interested in.
 
 ## FAQs
 
-<a id="subscription-permissions" /> 
+<a id="subscription-permissions"></a>
 
 ### Q: What permissions do I need to set up a subscription?
 

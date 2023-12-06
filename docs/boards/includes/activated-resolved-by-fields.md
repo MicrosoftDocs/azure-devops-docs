@@ -6,7 +6,7 @@ ms.topic: include
 ms.date: 04/04/2023
 ---
 
-<a id="activated-resolved-fields" />
+<a id="activated-resolved-fields"></a>
 
 ::: moniker range=">= azure-devops-2020"
 

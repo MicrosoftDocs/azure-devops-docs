@@ -42,7 +42,7 @@ The following image illustrates how you can configure Azure Boards to support a 
 
 Examples provided below illustrate how a three-level team hierarchy is configured using hierarchical area paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, you can apply these changes to any project hosted on Azure Boards.
 
-<a id="teams" />    
+<a id="teams"></a>    
 
 
 ## Agile feature, program, and portfolio teams 
@@ -55,7 +55,7 @@ To support SAFe® teams, you reconfigure the default team as the Portfolio team 
 
 
 
-<a id="work-items" />
+<a id="work-items"></a>
 
 ## Stories, Features, Epics, Enablers, and Capabilities  
 
@@ -78,7 +78,7 @@ Work items provide support for the following tasks:
 
 Product and portfolio backlogs enable teams to quickly add and prioritize their User Stories, Features, and Epics. For more information about work items and work item types, see [Track work with user stories, issues, bugs, features, and epics](../work-items/about-work-items.md).  
 
-<a id="backlogs-boards" />
+<a id="backlogs-boards"></a>
 
 ## Team backlogs and boards
 
@@ -94,7 +94,7 @@ The Kanban board view of each backlog is configurable by each team.
 
 
 
-<a id="iterations" />
+<a id="iterations"></a>
 
 ## Program Increments, releases, and sprints  
 
@@ -107,7 +107,7 @@ Because epics can span several release trains, the Portfolio team isn't associat
 ![Teams track deliverables using iterations](media/safe/program-iterations.png) 
 
 
-<a id="misc-artifacts" />
+<a id="misc-artifacts"></a>
 
 ## Iteration goals and objectives 
 
@@ -116,7 +116,7 @@ SAFe® practices include Agile release teams defining their iteration goals and 
 For more information, see [Share information](#share-information) later in this article. 
 
 
-<a id="tags" />
+<a id="tags"></a>
 
 ## Value streams and budgets 
  
@@ -141,7 +141,7 @@ With rollup, you can get Budget Estimates for Epics from a rollup of the estimat
 
 To add custom fields, see [Customize Azure Boards, Add a custom field](safe-customize.md#add-custom-field). 
 
-<a id="wiki" />
+<a id="wiki"></a>
 
 ## Use the project wiki to support your portfolio vision and strategic themes
 
@@ -159,7 +159,7 @@ Use your project wiki to support sharing the following SAFe® artifacts:
 To learn more about the project wiki, see [Share information](#share-information) later in this article. 
 
 
-<a id="milestones" />
+<a id="milestones"></a>
 
 ## Milestones and key events  
 
@@ -174,7 +174,7 @@ In Azure Boards, you can track other types of milestones or key events in the fo
 
 With custom fields and tags, you can quickly filter backlogs, boards, and queries based on a specific milestone. 
 
-<a id="shared-services" />
+<a id="shared-services"></a>
 
 ## Shared services team structure
 
@@ -186,7 +186,7 @@ Here we show how area paths are assigned to the UX Design team, and then selecti
 > ![Shared services area path and team structure](media/safe/shared-services-team-structure.png)
 
 
-<a id="retrospectives" />
+<a id="retrospectives"></a>
 
 ## Retrospectives and reviews
 
@@ -201,7 +201,7 @@ This extension allows teams to create their own retrospective boards and capture
 - Organize and prioritize that feedback
 - Create and track actionable tasks to help each team in their improvement processes.
  
-<a id="share-information" />
+<a id="share-information"></a>
 
 ## Share information   
 
@@ -220,7 +220,7 @@ For details on supported Markdown features, see the following articles.
 > [!div class="nextstepaction"]
 > [Configure Azure Boards to support SAFe®](safe-configure-boards.md)
 
-<a id="related-articles" /> 
+<a id="related-articles"></a> 
 
 
 ## Related articles

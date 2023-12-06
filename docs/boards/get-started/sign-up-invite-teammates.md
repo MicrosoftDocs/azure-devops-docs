@@ -50,7 +50,7 @@ You must have the latest version of one of the following web browsers: Microsoft
    
    Sign in to your organization at any time (```https://dev.azure.com/{yourorganization}```).
 
-<a id="change-settings" />
+<a id="change-settings"></a>
 
 ### Optional: Change your organization or project settings
 
@@ -167,7 +167,7 @@ If you have a Microsoft account or Microsoft Entra organizational account, follo
 	
 1. To complete your sign-up process, go to [create a project](#create-project). 
 
-<a id="github-account" /> 
+<a id="github-account"></a> 
 
 
 ## Sign up with a GitHub account
@@ -206,7 +206,7 @@ If you have a GitHub account, follow these steps to sign up for Azure Boards.
 	
 1. To complete your sign-up process, go to [create a project](#create-project).  
  
-<a id="create-project" />
+<a id="create-project"></a>
 
 ## Create a project 
 
@@ -250,7 +250,7 @@ Your first project is automatically created using the Basic process and a Git re
 3. Choose **Create** to complete the action.
 
 
-<a id="invite-others" />
+<a id="invite-others"></a>
 
 ## Invite team members to your project
 

@@ -151,7 +151,7 @@ You can look up the data type through the [Work item field index](guidance/work-
 
 ::: moniker-end
 
-<a id="review-fields" />
+<a id="review-fields"></a>
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -188,7 +188,7 @@ To review the list of fields defined for an organization or collection, open **O
 ::: moniker-end
 
 
-<a id="wi-explorer" />
+<a id="wi-explorer"></a>
 
 ## Work Item Field Explorer 
 
@@ -202,7 +202,7 @@ To access the Work Item Field Explorer, you must install the Process Editor Tool
 [!INCLUDE [temp](../../includes/process-editor-tool.md)]
 
  
-<a id="field-attributes" />
+<a id="field-attributes"></a>
 
 ## Field attributes
 
@@ -633,7 +633,7 @@ For a list of fields that have reportable attributes defined by default, see [Re
 
 ::: moniker-end
 
-<a id="index-fields" />
+<a id="index-fields"></a>
 
 ::: moniker range="< azure-devops-2022"
 
@@ -646,7 +646,7 @@ If you add a custom field that you use in many of your work item queries, you ma
 ::: moniker-end
 
 
-<a id="list-attributes" />
+<a id="list-attributes"></a>
 
 
 ## List field attributes 

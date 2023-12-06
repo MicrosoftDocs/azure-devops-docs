@@ -41,7 +41,7 @@ Reasons you might want to change your process from Agile to Scrum:
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts-plus-2020.md)]
 
-<a id="create-customize-process" />
+<a id="create-customize-process"></a>
 
 ## Create and customize a Scrum inherited process
 
