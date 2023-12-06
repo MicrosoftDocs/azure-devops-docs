@@ -24,7 +24,7 @@ variables:
   Patch: $[counter(fromat('{0}.{1}', variables.Major, variables.Minor ), 0)]
 ```
 
-The `Patch` variable is defined using the `counter` function and the other two variables. In the YAML code above, the word format is misspelt. Previously, this error went undetected. Now, the Validate functionality will detect this and surface and error message. 
+The `Patch` variable is defined using the `counter` function and the other two variables. In the YAML code above, the word `format` is misspelt. Previously, this error went undetected. Now, the _Validate_ functionality will detect this and surface an error message. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of incorrect variable definitions detected .](../../media/231-pipelines-02.png " Screenshot of incorrect variable definitions detected .")
@@ -59,7 +59,7 @@ As mentioned in our [Updates to Approvals and Checks blog post](https://devblogs
 Advancing into Phase 3, we'll carry out weekly, day-long brownouts, during which all pipeline runs that use non-compliant checks will fail. 
 
 The scheduled brownout dates are:
-* January 9, 2024
-* January 16, 2024
-* January 23, 2024
-* January 30, 2024
+* January 9, 2024, 08:00 UTC to January 10, 2024, 08:00 UTC
+* January 16, 2024, 08:00 UTC to January 17, 2024, 08:00 UTC
+* January 23, 2024, 08:00 UTC to January 24, 2024, 08:00 UTC
+* January 30, 2024, 08:00 UTC to January 31, 2024, 08:00 UTC
