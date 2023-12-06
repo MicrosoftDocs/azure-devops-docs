@@ -59,7 +59,7 @@ As mentioned in our [Updates to Approvals and Checks blog post](https://devblogs
 Advancing into Phase 3, we'll carry out weekly, day-long brownouts, during which all pipeline runs that use non-compliant checks will fail. 
 
 The scheduled brownout dates are:
-* January 9, 2024
-* January 16, 2024
-* January 23, 2024
-* January 30, 2024
+* January 9, 2024, 08:00 UTC to January 10, 2024, 08:00 UTC
+* January 16, 2024, 08:00 UTC to January 17, 2024, 08:00 UTC
+* January 23, 2024, 08:00 UTC to January 24, 2024, 08:00 UTC
+* January 30, 2024, 08:00 UTC to January 31, 2024, 08:00 UTC
