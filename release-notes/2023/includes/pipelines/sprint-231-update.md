@@ -24,7 +24,7 @@ variables:
   Patch: $[counter(fromat('{0}.{1}', variables.Major, variables.Minor ), 0)]
 ```
 
-The `Patch` variable is defined using the `counter` function and the other two variables. In the YAML code above, the word format is misspelt. Previously, this error went undetected. Now, the Validate functionality will detect this and surface and error message. 
+The `Patch` variable is defined using the `counter` function and the other two variables. In the YAML code above, the word format is misspelt. Previously, this error went undetected. Now, the _Validate_ functionality will detect this and surface an error message. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of incorrect variable definitions detected .](../../media/231-pipelines-02.png " Screenshot of incorrect variable definitions detected .")
