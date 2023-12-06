@@ -80,7 +80,7 @@ The following table describes the namespaces that manage object-level permission
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      <a id="analytic-views-namespace" />  AnalyticsViews
+      <a id="analytic-views-namespace"></a>  AnalyticsViews
    :::column-end:::
    :::column span="1":::
       `Read`                
@@ -156,7 +156,7 @@ The following table describes the namespaces that manage object-level permission
 ---
 :::row:::
    :::column span="1":::
-      <a id="dashboard-previleges-namespace" />  DashboardsPrivileges  
+      <a id="dashboard-previleges-namespace"></a>  DashboardsPrivileges  
    :::column-end:::
    :::column span="1":::
       `Read`              
@@ -175,7 +175,7 @@ The following table describes the namespaces that manage object-level permission
 ---
 :::row:::
    :::column span="1":::
-      GitRepositories <a id="git-repositories" />    
+      GitRepositories <a id="git-repositories"></a>    
    :::column-end:::
    :::column span="1":::
       `Administer`                
@@ -406,7 +406,7 @@ The following table describes the namespaces that manage project-level permissio
 ---
 :::row:::
    :::column span="1":::
-      <a id="tagging" />Tagging
+      <a id="tagging"></a>Tagging
    :::column-end:::
    :::column span="1":::
       `Enumerate`   
@@ -467,7 +467,7 @@ The following table describes the namespaces that manage organization-level perm
 
 ::: moniker-end
 
-<a id="process" />
+<a id="process"></a>
 
 ---
 :::row:::
@@ -799,7 +799,7 @@ The following table describes the security namespaces and permissions used to ma
 :::row-end:::
 ---
 
-<a id="internal" /> 
+<a id="internal"></a> 
 
 ## Internal namespaces and permissions
 
@@ -1215,7 +1215,7 @@ The following table describes the security namespaces and permissions that aren'
 ---
 
 
-<a id="deprecated-namespaces" /> 
+<a id="deprecated-namespaces"></a> 
 
 ## Deprecated and read-only namespaces
 

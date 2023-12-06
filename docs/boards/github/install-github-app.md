@@ -46,7 +46,7 @@ Do the following steps to grant organization access.
 
    :::image type="content" source="media/troubleshoot/organization-access-issues.png" alt-text="Screenshot of Organization access with organizations without access.":::	
 
-<a id="install" />
+<a id="install"></a>
 
 ## Install and configure the Azure Boards app 
 
@@ -80,7 +80,7 @@ Do the following steps to grant organization access.
 
    :::image type="content" source="media/github-app/confirm-github-repos.png" alt-text="Screenshot of Confirm your GitHub repositories dialog.":::
 
-<a id="get-started" />
+<a id="get-started"></a>
 
 ## Use the connection 
 
@@ -122,13 +122,13 @@ At this point, your Azure Boards-GitHub integration is complete. You can skip th
 
 	For more information, see [Configure status badges to add to GitHub README files](configure-status-badges.md).
 
-<a id="configure" />
+<a id="configure"></a>
 
 ## Configure other projects or repositories
 
 You can configure other Azure Boards/Azure DevOps Projects, GitHub.com repositories, or change the current configuration from the Azure Boards app page. For more information, see [Change GitHub repository access, or suspend or uninstall the integration](install-github-app.md#add-remove-repos).
 
-<a id="add-remove-repos" />
+<a id="add-remove-repos"></a>
 
 ## Add or remove repositories, or remove a connection from Azure Boards
 

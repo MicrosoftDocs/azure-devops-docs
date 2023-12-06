@@ -77,8 +77,8 @@ To use the **In** and **Not In** operators, enter the names or labels of items t
 :::row-end:::  
 ---
 
-<a id="fields-table" />
-<a id="fields" />
+<a id="fields-table"></a>
+<a id="fields"></a>
 
 ## Fields used to plan and prioritize work  
 
@@ -153,7 +153,7 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="priority" />**Priority** <sup>1</sup>
+   <a id="priority"></a>**Priority** <sup>1</sup>
    :::column-end:::
    :::column span="2":::
    A subjective rating of the bug, issue, task, or test case as it relates to the business. You can specify the following values:  
@@ -169,7 +169,7 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="risk" />**Risk**
+   <a id="risk"></a>**Risk**
    :::column-end:::
    :::column span="2":::
    A subjective rating of the relative uncertainty around the successful completion of a user story.

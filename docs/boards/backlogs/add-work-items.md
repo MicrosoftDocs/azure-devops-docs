@@ -177,7 +177,7 @@ There's no way to use Visual Studio 2019 to update a work item at this time.
 
 [Update work item](#update-work-item) | [Show work item details](#show-work-item) 
 
-<a id="update-work-item" />  
+<a id="update-work-item"></a>  
 
 ### Update a work item
 
@@ -228,7 +228,7 @@ ID    Type    Title                Assigned To          State
 864   Bug     Fix security issues  contoso@contoso.com  New
 ```
 
-<a id="show-work-item" />  
+<a id="show-work-item"></a>  
 
 #### Add comments to a discussion
 

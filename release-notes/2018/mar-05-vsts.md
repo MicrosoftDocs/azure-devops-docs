@@ -57,7 +57,7 @@ Any project pivot can now be sorted based on a variety of options, including tit
 > ![Work Items sorting options](media/131_02.png)
 
 
-<a id="query-work" />
+<a id="query-work"></a>
 
 ### Query work across the iteration schedule with +/- @CurrentIteration
 

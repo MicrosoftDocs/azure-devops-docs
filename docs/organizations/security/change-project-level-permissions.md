@@ -50,7 +50,7 @@ By default, members of the **Contributors** group are assigned the **Create tag 
 > Users granted **Stakeholder** access, aren't able to access select features even if granted permissions to those features. To learn more, see [Stakeholder access quick reference](stakeholder-access.md).
  
 
-<a id="add-user-group" />
+<a id="add-user-group"></a>
 
 ## Add members to the Project Administrators group 
 

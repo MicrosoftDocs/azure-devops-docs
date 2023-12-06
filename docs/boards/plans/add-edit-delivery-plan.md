@@ -50,7 +50,7 @@ To add and configure a Delivery Plan, the following elements must be configured:
 > [!TIP]  
 > If you edit a plan and don't see the changes you made appear in the plan, refresh your browser. A browser refresh is needed some times to trigger the updates.   
 
-<a id="customization-options" />
+<a id="customization-options"></a>
 
 ## Plan customization options
  
@@ -68,7 +68,7 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
 |**[Tag colors](#tag-colors)**|Add tags and specify a tag color. Optionally enable or disable a tag color. |
  
  
-<a id="teams" />
+<a id="teams"></a>
 
 ## Add a plan  
 
@@ -97,7 +97,7 @@ When defining a plan, note the following information:
 - You can reorder the team backlogs by dragging and dropping them into the sequence you want 
 -  To filter for specific work items, specify the field criteria. For example, to exclude bugs from the view, add the following criteria: `Work Item Type <> Bug`. 
 
-<a id="field-criteria" />
+<a id="field-criteria"></a>
 
 ## Edit a plan 
 
@@ -136,7 +136,7 @@ Show those fields that are useful for your review purposes or if they contain ke
 
 1. When you're done with your changes, choose **Save**.
 
-<a id="markers" />
+<a id="markers"></a>
 
 ## Add milestone markers
 
@@ -155,7 +155,7 @@ Show those fields that are useful for your review purposes or if they contain ke
 1. When you're done with your changes, choose **Save**.
 
 
-<a id="styles" />
+<a id="styles"></a>
 
 ## Change card color 
 
@@ -187,7 +187,7 @@ You can highlight work items for a team's current **Iteration Path** by specifyi
 
 ::: moniker-end
 
-<a id="tag-colors" />
+<a id="tag-colors"></a>
 
 ## Set tag colors
 

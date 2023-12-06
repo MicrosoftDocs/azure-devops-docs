@@ -87,7 +87,7 @@ If you need to switch to a different project, select the :::image type="icon" so
 
 
 
-<a id="choose-dashboard" />
+<a id="choose-dashboard"></a>
 
 ## Select a dashboard 
 

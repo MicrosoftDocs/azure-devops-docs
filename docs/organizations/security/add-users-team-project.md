@@ -271,7 +271,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 
 <a id="teams-page"> </a>
 <a id="add-team-members"> </a>
-<a id="add-team-members-team-services" />
+<a id="add-team-members-team-services"></a>
 <a id="add-users-to-a-team"> </a>
 
 ## Add users or groups to a team 
@@ -549,7 +549,7 @@ As a member of the **Project Administrators** group, you can add users or groups
 > To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 ::: moniker-end 
 
-<a id="project-permissions" />
+<a id="project-permissions"></a>
 
 #### [Preview UI](#tab/preview-page)
 
@@ -705,7 +705,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 ::: moniker range="azure-devops"
 
-<a id="manage-users" /> 
+<a id="manage-users"></a> 
 
 ##  Manage users or resend invitations 
 
@@ -734,7 +734,7 @@ From the Azure DevOps CLI command, you can see details about a team or list the 
 > [!NOTE]   
 > You can use the [`az devops user`](../accounts/add-organization-users.md#add-users-to-your-organization) command to add users to an organization. There is no comparable command for adding users to a team or project. 
 
-<a id="list-members" /> 
+<a id="list-members"></a> 
 
 ### List team members
 
@@ -772,7 +772,7 @@ d291b0c4-a05c-4ea6-8df1-4b41d5f39eff  Jamal Hartnett     fabrikamfiber4@hotmail.
 bd30c189-db0f-4dd6-9418-5d8b41dc1754  Raisa Pokrovskaya  fabrikamfiber5@hotmail.com
 ``` 
 
-<a id="show-details" /> 
+<a id="show-details"></a> 
 
 ### Show team details
 

@@ -44,7 +44,7 @@ The areas and iterations you see depend on the process you used to create your p
 
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
-<a id="area-path-guidance" />
+<a id="area-path-guidance"></a>
 
 ## Define and assign area paths
 
@@ -87,7 +87,7 @@ Each team can create a hierarchy of areas under which the team can organize thei
 Avoid creating an area structure that is too complex. You can create areas to partition permissions on work items, but complex trees require significant overhead for permission management. You might find that it's too much work to duplicate the structure and permissions in other projects. 
 
 
-<a id="iteration-path-guidance" />
+<a id="iteration-path-guidance"></a>
 
 ## Define and assign iteration paths
 

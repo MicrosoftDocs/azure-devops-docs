@@ -375,7 +375,7 @@ The following table summarizes the differences between the three supported proce
 4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 and later versions, including Azure DevOps Services. Starting with Visual Studio 2019, the Azure DevOps plug-in for Office no longer supports Office Project.
 5. You can use the REST API to [import and export process templates](/rest/api/azure/devops/processadmin/processes/import%20process%20template).
 
-<a id="choose-process-model" />
+<a id="choose-process-model"></a>
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 

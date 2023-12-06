@@ -129,6 +129,7 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 ### Visual Studio 2015
 
 <a id="connect-dialog"></a>
+
 <a id="vs-2015-connect-dialog"></a> 
 
 1. Select the **Manage Connections** button in Team Explorer to open the **Connect** page. Choose **Connect to Team Project** to select a different organization or project to connect to.
@@ -192,7 +193,9 @@ Your client remembers the set of connections you configure. You can switch from 
 
 ### Visual Studio 2017
 
+
 <a id="connect-account-dialog"></a>
+
 <a id="vs-2015-connect-account-dialog"></a>
 
 1. From **Connect**, choose **Connect to Team Project** to sign in with different credentials.

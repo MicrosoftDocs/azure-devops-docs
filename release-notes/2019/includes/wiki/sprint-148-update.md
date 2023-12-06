@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-<a id="mention-users-groups" />
+<a id="mention-users-groups"></a>
 
 ### @mention users and groups
 

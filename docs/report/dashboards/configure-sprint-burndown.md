@@ -292,7 +292,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 
 ::: moniker-end
 
-<a id="view-context-report" />
+<a id="view-context-report"></a>
 
 ## View the in-context Burndown Trend report   
 

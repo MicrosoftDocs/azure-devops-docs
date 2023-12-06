@@ -120,7 +120,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 [Add a user](../accounts/add-organization-users.md#add-user) | [List users](#list-users) | [Remove a user](../accounts/delete-organization-users.md#remove-user) | [Update a user](../accounts/add-organization-users.md#update-user) | [Show users](../accounts/add-organization-users.md#show-users)
 
-<a id="list-users" /> 
+<a id="list-users"></a> 
 
 ### List users
 

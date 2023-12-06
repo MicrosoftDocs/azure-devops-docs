@@ -43,7 +43,7 @@ To learn more about what you can customize, see [About process customization and
 
 [!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
 
-<a id="add-oob-to-backlog" /> 
+<a id="add-oob-to-backlog"></a> 
 
 ::: moniker range=">= azure-devops-2020"
 

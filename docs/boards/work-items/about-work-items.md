@@ -23,7 +23,7 @@ Each work item represents an object stored in the work item data store, and is a
 If you're just getting started, read this article. To jump right in and start tracking work on a Kanban board, see [Plan and track work](../get-started/plan-track-work.md). For a quick reference to various work item tasks and key concepts, see [Work item quick reference](quick-ref.md).
 
 
-<a id="wit" />
+<a id="wit"></a>
 
 ## Track work with different work item types
 
@@ -55,7 +55,7 @@ Your team can choose how to track bugs. They can track them along with requireme
 To configure the team bug tracking option, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). For an overview of all team settings, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
  
 
-<a id="customize" />
+<a id="customize"></a>
 
 ### Customize a work item type 
  
@@ -72,7 +72,7 @@ You can include or revise fields within a work item type. You can also introduce
 - [On-premises XML process customization](../../reference/on-premises-xml-process-model.md).
 ::: moniker-end
  
-<a id="form" />
+<a id="form"></a>
 
 ## Work item form and Details tab
 
@@ -128,7 +128,7 @@ You can storyboard your ideas using PowerPoint to bring your ideas to life with 
 ::: moniker-end
 
 <a id="assign-to-sprint"></a>
-<a id="common-fields" />
+<a id="common-fields"></a>
 
 ### Common work tracking fields  
 
@@ -166,7 +166,7 @@ The four main states that are defined for the User Story (Agile process) describ
 > - The *Removed* state supports removing a work item from appearing on the backlog. For more information, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove). 
 > - You can query work items by **State** and other fields to list work in progress, resolved, or completed. For more information, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md).
 
-<a id="assign" />
+<a id="assign"></a>
 <a id="assign-work-items"></a>
 
 ### Assign work 
@@ -186,7 +186,7 @@ When configured with Microsoft Entra ID or Active Directory, Azure DevOps synchr
 
 You can grant access to a project by adding security groups that you created in Microsoft Entra ID or Active Directory by adding accounts to existing or custom groups defined from the collection setting **Security** pages. For more information, see [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory) or [Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups). 
 
-<a id="templates" />
+<a id="templates"></a>
 
 ### Use work item templates to quickly complete forms
 
@@ -319,7 +319,7 @@ You can add and update work items from the web portal. For an overview of all cl
 [!INCLUDE [temp](../includes/page-work-item-tasks.md)] 
 
 
-<a id="wit-other" />
+<a id="wit-other"></a>
 
 ## Work item types to track testing, reviews, and feedback 
  
@@ -338,7 +338,7 @@ Along with the work items types that appear on backlogs and boards, there are wo
 |Test Suite|Test suites group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. See [Create test plans and test suites](../../test/create-a-test-plan.md). |
  
 
-<a id="permissions-access" />
+<a id="permissions-access"></a>
 
 ## Required permissions and access 
 

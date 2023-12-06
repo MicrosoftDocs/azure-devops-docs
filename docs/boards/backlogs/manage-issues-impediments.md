@@ -129,7 +129,7 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 
 ::: moniker-end
  
-<a id="add-to-backlog" /> 
+<a id="add-to-backlog"></a> 
 
 ## Add issues or impediments to your product backlog  
 

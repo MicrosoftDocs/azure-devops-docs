@@ -465,7 +465,7 @@ So the full name of the administrator group for the default collection is
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-   Project-Scoped Users <a id="project-scoped-user-group" />
+   Project-Scoped Users <a id="project-scoped-user-group"></a>
    :::column-end:::
    :::column span="1":::
    Has limited access to view organization settings and projects other than those projects they are specifically added to. Also, people picker options are limited to those users and groups that have been explicitly added to the project the user is connected to.
@@ -500,7 +500,7 @@ So the full name of the administrator group for the default collection is
 [team name]
 -->
 
-   <a id="project-level-groups" />
+   <a id="project-level-groups"></a>
 
 ## Project-level groups
 
@@ -585,7 +585,7 @@ For each project that you create, the system creates the followings project-leve
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Project Administrators<a id="project-administrator-group" />
+   Project Administrators<a id="project-administrator-group"></a>
    :::column-end:::
    :::column span="1":::
    Has permissions to administer all aspects of teams and project, although they can't create team projects.
@@ -627,7 +627,7 @@ For each project that you create, the system creates the followings project-leve
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *TeamName* <a id="team-group" /> 
+   *TeamName* <a id="team-group"></a> 
    :::column-end:::
    :::column span="1":::
    Has permissions to contribute fully to the project code base and work item tracking.  
@@ -990,7 +990,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="administer-shelved-changes" />Administer shelved changes  
+   <a id="administer-shelved-changes"></a>Administer shelved changes  
   `VersionControlPrivileges, AdminWorkspaces`
    :::column-end:::
    :::column span="2":::
@@ -1696,7 +1696,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="rename-team-project-permission" />  
+   <a id="rename-team-project-permission"></a>  
    Rename project 
    `Project, RENAME`
    :::column-end:::
@@ -1718,7 +1718,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="update-project-visibility" />  
+   <a id="update-project-visibility"></a>  
    Update project visibility  
    `Project, UPDATE_VISIBILITY`
    :::column-end:::
@@ -1728,7 +1728,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="view-analytics-permission" />  
+   <a id="view-analytics-permission"></a>  
    View analytics  
    `AnalyticsViews, Read` 
    :::column-end:::

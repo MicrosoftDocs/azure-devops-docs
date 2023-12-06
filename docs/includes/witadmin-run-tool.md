@@ -5,7 +5,7 @@ ms.date: 12/01/2022
 ---
 
 
-<a id="run-witadmin-tool" />
+<a id="run-witadmin-tool"></a>
 
 ## Run the `witadmin` command-line tool  
 

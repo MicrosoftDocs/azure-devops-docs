@@ -118,7 +118,7 @@ To learn more about adding other pipeline related artifacts, see the following a
 
 Agile tools and dashboards are typically associated with teams. You add teams to a project. To learn more about teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). To add a team, see [Add a team and team members](../../organizations/settings/add-teams.md). 
 
-<a id="view-teams" />
+<a id="view-teams"></a>
 
 ## View teams already defined 
 

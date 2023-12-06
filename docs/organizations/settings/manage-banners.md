@@ -156,7 +156,7 @@ az devops admin banner add --message "INFORMATION: Network domain updates will o
   }
 }
 ```
-<a id="list-banners" /> 
+<a id="list-banners"></a> 
 
 ## List banners
 

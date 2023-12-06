@@ -55,7 +55,7 @@ If you're already using `Web.Contents` to access work tracking data from Analyti
 > |`Timeout`|Specify this value as a duration will change the timeout for an HTTP request. The default value is 600 seconds.|
 > |`Version`|Version of the data model. This option is primary for diagnostics.|
 
-<a id="supported-subdomains" /> 
+<a id="supported-subdomains"></a> 
 
 ## Supported Subdomains for VSTS.AccountContents 
 

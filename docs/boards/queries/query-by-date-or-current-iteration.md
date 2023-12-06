@@ -383,7 +383,7 @@ The Query Editor view of the syntax appears as shown.
 :::image type="content" source="media/example-work-item-queries/query-work-items-moved-out-of-sprint.png" alt-text="Screenshot of Query Editor, Work Items moved out of a sprint.":::
 
 
-<a id="list-work-items-added-to-a-sprint" />
+<a id="list-work-items-added-to-a-sprint"></a>
 
 ## List work items added to a sprint after the start date 
 
@@ -394,7 +394,7 @@ To list newly created work items added to a sprint after its start date, use a q
 For other options for querying changes to sprint scope, see [About Sprints, Scrum and project management, Sprint scope change](../sprints/scrum-overview.md#sprint-scope-change).
 
 <a id="date_fields">  </a>
-<a id="fields" />
+<a id="fields"></a>
 
 ## Date and Iteration Path fields
 

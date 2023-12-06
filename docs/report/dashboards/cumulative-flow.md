@@ -277,7 +277,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 ::: moniker range=">= azure-devops-2019" 
 
-<a id="cfd-widget" />
+<a id="cfd-widget"></a>
 
 ## Add the Cumulative Flow Diagram widget to your dashboard   
 
@@ -317,8 +317,8 @@ Each team can set their preferences for the in-context cumulative flow charts.
     :::image type="content" source="media/cfd-configure.png" alt-text="Configure CFD chart":::
 ::: moniker-end
 
-<a id="configure-widget" /> 
-<a id="configure" /> 
+<a id="configure-widget"></a> 
+<a id="configure"></a> 
 
 ::: moniker range=">= azure-devops-2019"
 

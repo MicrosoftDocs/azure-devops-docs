@@ -569,7 +569,7 @@ To automate State transitions of parent work items based on the State assignment
 > The [Automate State Transitions](https://github.com/microsoft/azure-boards-automate-state-transitions) GitHub project is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, raise them in the GitHub project page.   
 
 
-<a id="reassign" />
+<a id="reassign"></a>
 
 ::: moniker range=">= azure-devops-2020"
 

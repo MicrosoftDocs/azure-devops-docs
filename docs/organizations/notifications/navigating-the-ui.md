@@ -41,7 +41,7 @@ You can set notifications at the following levels:
 
 For more permission settings regarding notifications, see [Permissions and groups, Notifications or alerts](../../organizations/security/permissions.md#notifications-or-alerts).
 
-<a id="open-person-level" />
+<a id="open-person-level"></a>
 
 ## Open your personal notifications 
 
@@ -69,7 +69,7 @@ Open your profile menu and choose **Notification settings**.
 
 For more information, see [Manage your notifications](manage-your-personal-notifications.md)
 
-<a id="project" />
+<a id="project"></a>
 
 ## Open team or project level notifications
 
@@ -84,7 +84,7 @@ https://dev.azure.com/{organization}/{project}/_settings/notifications
 
 For more information, see [Manage notifications for a team or group](manage-team-group-global-organization-notifications.md)
 
-<a id="open-org-level" />
+<a id="open-org-level"></a>
 
 ## Open Global notifications
 
