@@ -92,7 +92,7 @@ Use the following URL to sign in to your organization at any time: `https://dev.
 
 You're now prompted to create a project.
 
-<a id="create-project" /></a>
+<a id="create-project"></a></a>
 
 ## Create a project
 
@@ -109,7 +109,7 @@ You can create public or private projects. To learn more about public projects, 
 
 You're now set to [create your first pipeline](../create-first-pipeline.md), or [invite other users](#invite-others) to collaborate with your project.
 
-<a id="invite-others" /></a>
+<a id="invite-others"></a></a>
 
 ## Invite team members - optional
 

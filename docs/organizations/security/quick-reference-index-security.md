@@ -17,7 +17,7 @@ ms.date: 01/13/2022
 
 Use this index to quickly access concepts and tasks related to securing Azure DevOps. If you're new to Azure DevOps, see [What is Azure DevOps?](../../user-guide/what-is-azure-devops.md)   
 
-<a id="concepts" />
+<a id="concepts"></a>
 
 ## Get started  
 

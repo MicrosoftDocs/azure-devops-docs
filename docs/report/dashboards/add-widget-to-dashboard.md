@@ -93,7 +93,7 @@ The [widget catalog](widget-catalog.md) describes all available widgets, many of
 
 Or, you can drag and drop a widget from the catalog onto the dashboard.
 
-<a id="add-analytics-widget" />
+<a id="add-analytics-widget"></a>
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -113,7 +113,7 @@ This example shows how to add the Velocity widget available from Analytics to a 
 
 ::: moniker-end
 
-<a id="configure" />
+<a id="configure"></a>
 
 ## Configure a widget  
 
@@ -144,7 +144,7 @@ For more information about configuring widgets, see the following articles:
 
 ::: moniker-end
 
-<a id="move-delete" />
+<a id="move-delete"></a>
 
 ## Move or delete a widget 
 
@@ -177,7 +177,7 @@ When you're finished with your changes, select ![Exit edit-dashboard-mode icon](
 
 ::: moniker-end
 
-<a id="copy" />
+<a id="copy"></a>
 
 ## Copy a widget
 

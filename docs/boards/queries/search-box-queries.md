@@ -173,7 +173,7 @@ Free text search easily searches across all work item fields, including custom f
 
 ::: moniker-end
 
-<a id="start-an-improvised-search-and-use-shortcut-filters" />
+<a id="start-an-improvised-search-and-use-shortcut-filters"></a>
  
 ### From the web portal 
 
@@ -206,7 +206,7 @@ You can combine shortcuts and use search operators within the search box.
 Use the ![Search box clear icon (Team Explorer)](media/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, enter **Ctrl+'**.
 
 
-<a id="keywords" /> 
+<a id="keywords"></a> 
 
 ## Find items based on keywords or phrases
 

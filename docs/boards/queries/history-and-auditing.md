@@ -28,20 +28,20 @@ Query clauses that specify the **History** field can use the **Contains Words** 
 
 The **History** field is automatically indexed for full-text search when full-text search is available. See Full-Text and partial word searches 
 
-<a id="query-history" />
+<a id="query-history"></a>
 
 ## Query a work item's history 
 
 You can use either the web portal or Team Explorer to view the history of a work item or find work items based on the contents of the **History** field. When you run a search on the contents of the **History**  field, it returns only work items that have changes recorded in that field. That is, it doesn't register changes that were made to text in other fields.  
 
 #### [Browser](#tab/browser/)
-<a id="team-services" /> 
+<a id="team-services"></a> 
 
 :::image type="content" source="media/hist-audit-query-ts-bt.png" alt-text="Screenshot of Query Editor to Search for items based on words contained in the History field.":::
 
 #### [Visual Studio](#tab/visual-studio/)
-<a id="tee-query-history" />
-<a id="team-explorer" />
+<a id="tee-query-history"></a>
+<a id="team-explorer"></a>
 
 
 The **Query Editor** isn't available when you're connected to GitHub or third-party Git repository. Also, it isn't available from Visual Studio 2019 under the following conditions:   
@@ -125,19 +125,19 @@ You can filter for work items by the date on which they were changed or for a sp
  
 
 
-<a id="view-history" />
+<a id="view-history"></a>
 
 ## View the history of work items  
 
 An entry is made to the **History** field each time a work item is saved. To view the history of changes, open an existing work item, and then choose the ![history tab icon](../media/icons/icon-history-tab-wi.png) or **History** tab, or for some work item types, choose the **Details** tab. 
 
-<a id="web-portal-explorer-tab" /> 
+<a id="web-portal-explorer-tab"></a> 
 The history details shown depend on the platform, version, and client. 
 
 #### [Browser](#tab/browser/)
 
-<a id="team-services-tab" /> 
-<a id="team-services-view" /> 
+<a id="team-services-tab"></a> 
+<a id="team-services-view"></a> 
 
 :::image type="content" source="media/hist-audit-wi-form-vsts-tab.png" alt-text="Screenshot of Work item form, Web portal, Choose History tab.":::
 
@@ -157,7 +157,7 @@ To view only the comments that were added to the log, choose the **Discussion On
 
 * * *
 
-<a id="filter-history" /> 
+<a id="filter-history"></a> 
 
 
 ::: moniker range="azure-devops"
@@ -184,7 +184,7 @@ To review updates made to one or more fields, select the fields from the **Field
 ::: moniker-end
 
 
-<a id="fields" />
+<a id="fields"></a>
 
 ## Fields that support history, auditing, and revision tracking 
 

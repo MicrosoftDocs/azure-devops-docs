@@ -72,7 +72,7 @@ If you want all the dates since the `{startDate}` inclusive, add the following f
 
 You use the `WorkItemRevisions` entity set to load all the revisions for a given work item. The query returns all historic work item revisions, including the current revision, for the work items you filter on. It doesn't include deleted work items. 
 
-<a id="property-names-fields" /> 
+<a id="property-names-fields"></a> 
 
 ## Shared properties across several entity types 
 
@@ -221,7 +221,7 @@ The following two functions are supported for the **WorkItem** entity. These fun
 - `Predict`
  
 
-<a id="kanban-board-properties-fields" /> 
+<a id="kanban-board-properties-fields"></a> 
 
 
 ## BoardLocation and WorkItemBoardSnapshot    
@@ -403,7 +403,7 @@ To learn more about links and link types, see the following articles:
 - [Use links to view dependencies and track related work](../../boards/backlogs/add-link.md)
 - [Reference guide for link types used in Azure DevOps](../../boards/queries/link-type-reference.md)
 
-<a id="work-item-type-field-properties" /> 
+<a id="work-item-type-field-properties"></a> 
 
 ## WorkItemTypeFields
  

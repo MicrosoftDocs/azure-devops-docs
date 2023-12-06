@@ -207,7 +207,7 @@ To delegate tasks to other members within your organization, consider creating a
    :::column-end:::
 :::row-end:::
 
-<a id="restrict-access-project-scoped-user-group" />
+<a id="restrict-access-project-scoped-user-group"></a>
 
 ::: moniker range="azure-devops" 
 
@@ -292,7 +292,7 @@ Azure DevOps is designed to enable all valid users to view all objects defined i
    :::column-end:::
 :::row-end:::
 
-<a id="restrict-modifications-wits" /> 
+<a id="restrict-modifications-wits"></a> 
 
 ## Restrict modification of work items or select fields 
 

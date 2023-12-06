@@ -30,7 +30,7 @@ Use this index to quickly access concepts and tasks related to work items and in
 ::: moniker-end
 
 
-<a id="concepts" />
+<a id="concepts"></a>
 
 ## Key concepts
 

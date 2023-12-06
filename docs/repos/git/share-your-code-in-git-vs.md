@@ -229,7 +229,7 @@ To show a diff view of the last commit in your current branch, run the following
 
 ---
 
-<a id="link-work-items" />
+<a id="link-work-items"></a>
 
 ## Link work items to your commits
 

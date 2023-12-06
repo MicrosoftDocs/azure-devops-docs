@@ -16,7 +16,7 @@ ms.date: 07/08/2022
 
 [!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
-<a id="inherited" /> 
+<a id="inherited"></a> 
 
 To customize the work tracking system, you *customize* an inherited process through the administrative user interface for the organization. All projects that use an inherited process get the customizations made to that process. On the other hand, you *configure* your Agile tools&mdash;[Backlogs, Sprints, Kanban boards, and Taskboard](../about-teams-and-settings.md)&mdash;for each team. 
 
@@ -112,7 +112,7 @@ Each inherited process you create inherits the WITs defined in the system proces
 You can add fields and modify the workflow and work item form for all inherited WITs that display on the **Work Item Types** page. If you don't want users to create a WIT, you can disable it. In addition, you can add custom WITs. 
 
 
-<a id="field-customizations" />
+<a id="field-customizations"></a>
 
 ## Field customizations 
 
@@ -229,7 +229,7 @@ Picklists associated with person-name fields, such as Assigned To and Changed By
 
 Renaming a field or changing the data type aren't supported actions. However, you can change the label that appears for a field on the work item form from the Layout tab. When selecting the field in a query you need to select the field name and not the field label. 
 
-<a id="delete-restore" />
+<a id="delete-restore"></a>
 
 ### Can I delete or restore a deleted field? 
 

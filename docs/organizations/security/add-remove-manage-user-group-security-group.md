@@ -53,7 +53,7 @@ Azure DevOps uses security groups for the following purposes:
 > Users added to the **Project-Scoped Users** group can't access most **Organization Settings** pages, including Permissions. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 ::: moniker-end
 
-<a id="create-custom-group" /> 
+<a id="create-custom-group"></a> 
 
 ## Create a custom security group 
 
@@ -220,7 +220,7 @@ Create a project-level group when you want to manage permissions at the project-
 
 ::: moniker-end
 
-<a id="project-level" />
+<a id="project-level"></a>
 
 ## Add users or groups to a security group
 

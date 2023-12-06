@@ -66,7 +66,7 @@ Assign users or groups of users to one of the following access levels:
 
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise. 
 
-<a id="access-level-settings" />
+<a id="access-level-settings"></a>
 
 ---
 ::: moniker range="azure-devops"
@@ -510,7 +510,7 @@ The following table indicates those features available for each supported access
 ---
 
 
-<a id="basic" />
+<a id="basic"></a>
 
 ::: moniker range="azure-devops"
 
@@ -548,7 +548,7 @@ Advanced access gives users all the Basic features, plus [web-based test case ma
 ::: moniker-end
 
 
-<a id="mapping" /> 
+<a id="mapping"></a> 
 
 
 ## Programmatic mapping of access levels

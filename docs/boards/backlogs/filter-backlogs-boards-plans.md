@@ -725,7 +725,7 @@ To learn more about these other functions, see the following articles:
 ::: moniker-end 
 
 
-<a id="parent-filter" /> 
+<a id="parent-filter"></a> 
 
 ### Parent Work Item filter and Parent field
 
@@ -839,7 +839,7 @@ Filters remain in place until you explicitly clear them.  When you refresh your 
 
 Once the board is filtered, you can choose the filter icon to hide the drop downs and view the applied filters on the board. The filter icon turns opaque to signify a filtered board.
 
-<a id="keep hierarchy" /> 
+<a id="keep hierarchy"></a> 
 
 ::: moniker range="azure-devops"
 
@@ -864,7 +864,7 @@ The keyword filter function filters lists or cards based on the fields displayed
 
 Filtering is case-insensitive. 
 
-<a id="characters-ignore" />  
+<a id="characters-ignore"></a>  
 
 ### Ignore characters by keyword filter criteria
 
@@ -905,7 +905,7 @@ Here we filter the Backlog with **Show Parents** enabled, to only show work item
 The filtered set is always a flat list, even if you've selected to show parents. 
 
 
-<a id="field-filter" />
+<a id="field-filter"></a>
 
 ## Filter based on a field  
 
@@ -992,7 +992,7 @@ Here, we choose two features on which to filter the board.
 
 The final board displays just those stories linked as child work items to the selected features.
 
-<a id="tags" />
+<a id="tags"></a>
 
 ## Filter based on tags
 

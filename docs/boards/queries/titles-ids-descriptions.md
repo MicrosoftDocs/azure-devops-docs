@@ -151,7 +151,7 @@ For example, the following query filters list all work items where some entries 
 
 ::: moniker-end
 
-<a id="no-tags" />
+<a id="no-tags"></a>
 
 > [!NOTE]
 > The ability to query for work items that don't have any tags attached to them is not a supported feature. If you'd like to up vote the request to support this feature, you can do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 
@@ -180,7 +180,7 @@ The default assignments of work item types to each category are listed below for
 
 Each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). You can add custom work item types to a backlog. For more information, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
 
-<a id="following" />
+<a id="following"></a>
 
 ## Query for work items that you're following
 
@@ -192,7 +192,7 @@ For example, the following query shows how to query across all projects for acti
 :::image type="content" source="../work-items/media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
 
 
-<a id="recent-macros" />
+<a id="recent-macros"></a>
 
 
 ## Query for recent work item activity
@@ -210,7 +210,7 @@ For example, the following query shows how to query for work items that you've r
 :::image type="content" source="media/titles-ids/my-recent-activity-macro-query.png" alt-text="Query Editor, with ID In @MyRecentActivity query clause":::
 
 
-<a id="fields" />
+<a id="fields"></a>
 
 ## Common fields for most work item types 
 

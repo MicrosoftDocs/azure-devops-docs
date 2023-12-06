@@ -117,7 +117,7 @@ You can perform the following tasks with the Hosted XML process model.
    :::column-end:::
 :::row-end:::
 
-<a id="add-support-wit" />
+<a id="add-support-wit"></a>
 
 ## Add release deployment support to a work item type
 

@@ -28,7 +28,7 @@ Before generating these reports, you must first [connect to Analytics using the 
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
-<a id="number-of-work-items" />
+<a id="number-of-work-items"></a>
 
 ## Show card with total count of work items
 

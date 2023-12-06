@@ -395,7 +395,7 @@ You can run tests that are part of a test plan using the TCM command-line tool. 
 
 [List test runs](#list-test-runs) | [Create test runs](#create-test-runs) | [Execute test runs](#execute-test-runs) | [Abort test runs](#abort-test-runs) | [Delete test runs](#delete-test-runs) | [Export test runs](#export-test-runs) | [Publish test runs](#publish-test-runs) 
 
-<a id="list-test-runs" /> 
+<a id="list-test-runs"></a> 
 
 ### List test runs  
 
@@ -435,7 +435,7 @@ Id        Title                              Owner               Date Completed
 1000060   Game Shopping (Manual)             Bukhosi Bhengu      12/6/2021
 ```
 
-<a id="create-test-runs" /> 
+<a id="create-test-runs"></a> 
 
 ### Create test runs  
 
@@ -477,7 +477,7 @@ Run created with ID: 1000082.
 
 ```
 
-<a id="execute-test-runs" /> 
+<a id="execute-test-runs"></a>
 
 ### Execute test runs  
 
@@ -510,7 +510,7 @@ Failed:                  1
 Inconclusive:            0
 ```
 
-<a id="abort-test-runs" /> 
+<a id="abort-test-runs"></a>
 
 ### Abort test runs  
 
@@ -537,7 +537,7 @@ tcm run /abort /id:1000082 /collection:https://fabrikamprime.visualstudio.com /t
 Run with ID [1000082] and title [MyTestRun] has been aborted.
 ```
 
-<a id="delete-test-runs" /> 
+<a id="delete-test-runs"></a>
 
 ### Delete test runs  
 
@@ -566,7 +566,7 @@ Are you sure you want to delete run [MyTestRun]? (Yes/No) y
 Run [MyTestRun] has been deleted.
 ```
 
-<a id="export-test-runs" /> 
+<a id="export-test-runs"></a> 
 
 ### Export test runs  
 
@@ -591,7 +591,7 @@ The following command specifies that the test run with the **ID** *1000082* for 
 tcm run /export /id:1000082 /resultsfile:"c:\temp\ResultsForDeveloper.trx" /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
 ```
 
-<a id="publish-test-runs" /> 
+<a id="publish-test-runs"></a>
 
 ### Publish test runs  
 

@@ -37,7 +37,7 @@ Azure Boards provides a graphical user interface to support customization of you
 For an overview of all the customizations you can make to an  inherited process, see [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md). 
  
 
-<a id="customize-wits" />
+<a id="customize-wits"></a>
 
 ## Customize work item types 
 
@@ -52,7 +52,7 @@ Each work item type defines the fields that capture and store information. You c
 
 For more information on customizing a work item type, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
 
-<a id="add-custom-field" /> 
+<a id="add-custom-field"></a> 
 
 ## Add a custom field 
 
@@ -128,7 +128,7 @@ You can capture a value stream using a field or tags. Tags represent a more info
 
 <!--- pros/cons of using picklists versus tags  --> 
 
-<a id="customize-fields" /> 
+<a id="customize-fields"></a> 
 
 ## Customize existing fields  
 
@@ -143,7 +143,7 @@ You customize existing fields to support one or more of the following actions:
 For an index of existing fields, see [Work item field index](../work-items/guidance/work-item-field.md). For more information on customizing a field, see [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md).  
  
 
-<a id="custom-rules" /> 
+<a id="custom-rules"></a> 
 
 ## Add rules to a field  
 
@@ -180,7 +180,7 @@ The following images show the supported conditions and actions you can select fr
 
 For more information on setting field rules, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
 
-<a id="custom-workflow" /> 
+<a id="custom-workflow"></a> 
 
 ## Customize the workflow
 
@@ -198,7 +198,7 @@ Discuss with your team which workflow states best support their Agile practices.
 - [Add columns to your Kanban board](../boards/add-columns.md)  
 - [Definition of Done](../boards/add-columns.md#definition-of-done)  
 
-<a id="custom-control" /> 
+<a id="custom-control"></a> 
 
 ## Custom controls 
 
@@ -208,7 +208,7 @@ You can add controls from the Marketplace or create your own.
 
 [WorkBoard OKRs](https://marketplace.visualstudio.com/items?itemName=wobo-okrs.workboard-ado-extension) integration helps organizations align, localize, and measure Objectives and Key Results (OKRs) across the business. With this integration, teams can view and update their OKRs from within Azure DevOps. 
 
-<a id="custom-wit" />
+<a id="custom-wit"></a>
 
 ## Add custom work item types 
 
@@ -221,8 +221,8 @@ When you define a new work item type, think through the following items:
 
 To keep things simple, however, it's always best to minimize the amount of customizations you make. So, if you can get by with existing work item types, you might consider adding custom field(s) as needed to track specific information.  
 
-<a id="custom-backlog" />
-<a id="add-custom-backlog" />
+<a id="custom-backlog"></a>
+<a id="add-custom-backlog"></a>
 
 ## Customize your backlogs  
 

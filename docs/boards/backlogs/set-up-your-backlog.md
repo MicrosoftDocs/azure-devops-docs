@@ -70,7 +70,7 @@ As shown in the following image, (1) choose the team, (2) **Work**, (3) **Backlo
 Look up your team's Area Path(s) and Iteration Paths. For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and 
 [Define sprint paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 
-<a id="sprint" />
+<a id="sprint"></a>
 
 ## Default sprint backlog and Taskboard work items
 
@@ -180,7 +180,7 @@ To learn more about checklists, see the following articles:
 ::: moniker-end
 
 
-<a id="customize-checklist-2019" />
+<a id="customize-checklist-2019"></a>
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -205,7 +205,7 @@ Your team can also choose to hide or show one or more backlog levels. Feature te
 
 For more information, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md). 
 
-<a id="add-custom-types" />
+<a id="add-custom-types"></a>
 
 ## Add custom work item types to your backlogs and portfolio backlog levels  
 
@@ -251,7 +251,7 @@ For more information, see the following resources:
 
 ::: moniker-end
 
-<a id="taskboard-types" /> 
+<a id="taskboard-types"></a> 
 
 ## Add custom work item types to your Taskboard
 
