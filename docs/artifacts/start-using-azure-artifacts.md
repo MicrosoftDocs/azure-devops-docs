@@ -5,7 +5,7 @@ ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
-author: rabououn
+author: ramiMSFT
 ms.date: 12/07/2023
 monikerRange: '<= azure-devops'
 ---
@@ -97,15 +97,17 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 
 ## Install Azure Artifacts
 
-Azure Artifacts comes pre-installed in TFS 2018. If the extension is removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+Azure Artifacts is pre-installed in TFS 2018. If the extension is removed, you can reinstall it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
-## Assign licenses in TFS
+## Assign licenses
 
-1. From any collection in TFS, hover over the settings menu and select the **Users** page. Then, select **Azure Artifacts**.
+1. Navigate to your collection `http://ServerName:8080/tfs/DefaultCollection`.
 
-    :::image type="content" source="media/users-hub-tfs.png" alt-text="Assign user licenses in TFS":::
+1. Hover over the **Settings** icon, and then select **Users**.
 
-2. Select **Assign**, enter the user to assign licenses, and then select **Ok**
+    :::image type="content" source="media/users-hub-tfs.png" alt-text="A screenshot showing the package management view in TFS.":::
+
+1. Select **Assign**, enter the user to assign licenses, and then select **Ok**.
 
    * Users with Visual Studio Enterprise subscriptions get Azure Artifacts automatically.  
    * Ensure that your Visual Studio Enterprise subscribers are assigned [VS Enterprise Access level](../organizations/security/change-access-levels.md).
@@ -174,38 +176,38 @@ Follow the steps outlined below to view your billing settings for your organizat
 
 ## FAQs
 
-##### Q: Which artifacts count toward my total billed storage?
+##### Q: Which artifacts contribute to my total billed storage?
 
-A: You get billed for all package types (npm, NuGet, Python, Maven, Cargo, and Universal Packages) including packages stored from upstream sources. However, you don't get billed for Pipeline Artifacts, and Pipeline Caching.
+A: You will be charged for all package types (npm, NuGet, Python, Maven, Cargo, and Universal Packages), including packages stored from upstream sources. However, there will be no charges for Pipeline Artifacts and Pipeline Caching
 
 > [!NOTE]
-> Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, navigate to your recycle bin and delete them manually.
+> Packages in the recycle bin contribute to your overall storage consumption. These packages are permanently deleted after 30 days. If you wish to remove them before that, you can navigate to your recycle bin and delete them manually.
 
-##### Q: How can I control how many days Artifacts are kept?
+##### Q: How can I manage the retention duration for Artifacts?
 
-A: You can set up the retention policies to delete packages automatically. For more information, see [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies).
+A: You can set up the retention policies to automatically delete packages. For more information, see [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies).
 
-##### Q: How can I delete specific packages?
+##### Q: How do I delete specific packages?
 
 A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for more details.
 
 ::: moniker range="azure-devops"
 
-##### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
+##### Q: What are the implications if I remove my Azure Subscription from my Azure DevOps organization?
 
-A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you lower your storage below 2 GiB. Or, you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
+A: When you remove your Azure Subscription from your Azure DevOps organization, your access is limited to the free tier. If your storage usage exceeds 2 GiB, you retain read-only access to packages. To publish new packages, you must reduce your storage usage below 2 GiB. Alternatively, you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
 
-##### Q: I'm storing Artifacts but my storage consumption shows 0 GiB?
+##### Q: Why does my storage consumption display as 0 GiB even though I am storing Artifacts?
 
-A: 1 GiB is currently our lowest granularity, so you most likely haven't reached 1 GiB yet.
+A: Currently, our smallest unit of measurement is 1 GiB, so it's probable that you haven't surpassed the 1 GiB threshold yet.
 
-##### Q: How long does it take for deleted Artifacts to reflect in the amount of billed storage?
+##### Q: How much time does it typically take for the removal of Artifacts to be reflected in the billed storage amount?
 
-A: Deletion of artifacts doesn't register immediately. Storage consumption should be updated within 24 hours, but in some cases it might take up to 48 hours. If you're blocked from uploading Artifacts, as a workaround you can temporarily increase your usage level, then reduce the level back once the storage metrics are updated.
+A: Deletion of artifacts may not be immediately reflected in the system. Storage consumption updates are typically completed within 24 hours, but in some instances, it may take up to 48 hours. If you encounter obstacles in uploading artifacts, a temporary workaround is to increase your usage level then reduce it once storage metrics are updated.
 
-The **used** column on the Billing page of your Organization gets updated once a day. When you delete an Artifact, it might not be reflected immediately on your billing page. The Artifact Storage page however gets updated more frequently, so you might see a small discrepancy between the two pages.  
+The **Used** column on the Billing page of your Organization is updated once a day. When you delete an Artifact, it might not be reflected immediately on your billing page. However, the Artifact Storage page is updated more frequently, so you might see a small discrepancy between the two pages.  
 
-:::image type="content" source="media/settings-vs-storage.png" alt-text="Artifacts billing settings vs Artifacts storage data":::
+:::image type="content" source="media/settings-vs-storage.png" alt-text="A screenshot showing Artifacts storage consumption.":::
 
 ::: moniker-end
 
