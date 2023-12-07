@@ -28,22 +28,24 @@ For an overview of test objects and terminology, see [Test objects and terms](te
 
 3. To export all test cases for the test suite, choose from **Export test cases to CSV** or **Export test cases to XLSX**. 
 
- ![Screenshot of Export test cases from the selected test suite.](media/bulk-import-test-case/export-test-cases-test-suite.png)
+   :::image type="content" source="media/bulk-import-test-case/export-test-cases-test-suite.png" alt-text="Screenshot of Export test cases from the selected test suite.":::
 
-4. To export a subset of test cases for the test suite, select the test cases to export, choose ![ellipsis icon](../media/icons/more-actions.png) **More options**, and select **Export test case(s) to CSV** or **Export test case(s) to XLSX**. 
+4. To export a subset of test cases for the test suite, select the test cases to export, choose :::image type="icon" source="../media/icons/more-actions.png"::: **More options**, and select **Export test case(s) to CSV** or **Export test case(s) to XLSX**. 
 
- ![Screenshot of selected test cases, Export test cases to CSV.](media/bulk-import-test-case/export-select-test-cases-test-suite.png)
+   :::image type="content" source="media/bulk-import-test-case/export-select-test-cases-test-suite.png" alt-text="Screenshot of selected test cases, export test cases to CSV.":::
 
 5. The exported CSV file appears in your **Downloads** folder. 
 
 ## Import test cases 
 
 1. From **Test Plans>Test plans** page, choose the test plan with the test suite into which you want to import test cases. 
-![Screenshot of Import test cases to the selected test suite.](media/bulk-import-test-case/choose-import-test-cases.png)
+
+   :::image type="content" source="media/bulk-import-test-case/choose-import-test-cases.png" alt-text="Screenshot of Import test cases to the selected test suite.":::
 
 
 2. Choose the file to import from the dialog that opens, and then choose **Import**.
-![Screenshot of Import Test Cases dialog.](media/bulk-import-test-case/import-test-cases-dialog.png)
+
+   :::image type="content" source="media/bulk-import-test-case/import-test-cases-dialog.png" alt-text="Screenshot of Import Test Cases dialog.":::
 
 3. Choose **Confirm** in the **Confirm import** dialog that displays. If you specify test cases that are already defined in the test suite, some elements may get over written during import. 
 
@@ -53,7 +55,8 @@ For an overview of test objects and terminology, see [Test objects and terms](te
 ## Update existing test cases
 
 1. To update work items, create a column view that contains all the columns you want to export and possibly edit. Post applying relevant columns to your view, it's time to export the test cases into a CSV or XLSX file. Select **Export to CSV**  or **Export to XLSX** to save the file to your local machine.
-![Screenshot of Export test cases from the selected test suite.](media/bulk-import-test-case/export-test-cases-test-suite.png)
+
+   :::image type="content" source="media/bulk-import-test-case/export-test-cases-test-suite.png" alt-text="Screenshot of Export test cases from the selected test suite.":::
 
 2. Make the edits to your test cases. You must not change the **ID** and **Work Item Type** fields. Any other fields you want to include are optional.
 
@@ -92,7 +95,7 @@ A: Absolutely! Leave the Test case ID field empty for any new work items. For ex
 
 A: Any problems with the formatting of your CSV/XLSX file appear in the import view in the web-portal. You can't import the work items until the formatting and syntax is correct.
 
-![Screenshot of Import Test Cases error dialog.](media/bulk-import-test-case/import-errors.png)
+:::image type="content" source="media/bulk-import-test-case/import-errors.png" alt-text="Screenshot of Import Test Cases error dialog.":::
 
 ### Q: Does import operation support all work item types?
 
