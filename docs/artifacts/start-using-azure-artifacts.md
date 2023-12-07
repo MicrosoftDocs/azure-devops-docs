@@ -10,7 +10,7 @@ ms.date: 12/07/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Get started with Azure Artifacts
+# Azure Artifacts overview
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
@@ -24,6 +24,74 @@ Azure Artifacts enables developers to efficiently manage all their dependencies 
 
 > [!NOTE]
 > If you expect to exceed the allocated 2-GiB storage, it is recommended to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
+
+::: moniker range="azure-devops"
+
+## Get started with Azure Artifacts
+
+With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
+
+# [NuGet](#tab/nuget)
+
+- [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
+
+# [Npm](#tab/npm)
+
+- [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
+
+# [Maven](#tab/maven)
+
+- [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
+
+# [Gradle](#tab/gradle)
+
+- [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
+
+# [Python](#tab/python)
+
+- [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
+
+# [Cargo](#tab/cargo)
+
+- [Get started with Cargo packages in Azure Artifacts](./get-started-cargo.md)
+
+# [Universal Packages](#tab/universalpackages)
+
+- [Get started with Universal Packages in Azure Artifacts](./quickstarts/universal-packages.md)
+
+---
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019 || azure-devops-2020 || azure-devops-2022"
+
+## Get started with Azure Artifacts
+
+With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
+
+# [NuGet](#tab/nuget)
+
+- [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
+
+# [Npm](#tab/npm)
+
+- [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
+
+# [Maven](#tab/maven)
+
+- [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
+
+# [Gradle](#tab/gradle)
+
+- [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
+
+# [Python](#tab/python)
+
+- [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
+
+---
+
+::: moniker-end
 
 ::: moniker range="tfs-2018"
 
@@ -44,7 +112,7 @@ Azure Artifacts comes pre-installed in TFS 2018. If the extension is removed, yo
 
 ## Get started with Azure Artifacts
 
-Using Azure Artifacts, you have the capability to both publish and consume various package types. Select your preferred package type to get started:
+With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
 
 # [NuGet](#tab/nugettfs)
 
@@ -60,9 +128,11 @@ Using Azure Artifacts, you have the capability to both publish and consume vario
 
 # [Gradle](#tab/gradletfs)
 
-- [Publish artifacts with Gradle](./maven/publish-with-gradle.md)
+- [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
 
 ---
+
+::: moniker-end
 
 ## Feature availability
 
@@ -75,6 +145,8 @@ Using Azure Artifacts, you have the capability to both publish and consume vario
 | **Cargo packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                         |
 | **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
 | **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
+
+::: moniker range="tfs-2018"
 
 ## FAQs
 
