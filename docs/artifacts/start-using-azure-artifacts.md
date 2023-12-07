@@ -1,20 +1,20 @@
 ---
 title: Azure Artifacts overview
-description: Learn about Azure Artifacts offering
+description: Learn how to get started with Azure Artifacts
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
-author: chcomley
-ms.date: 09/20/2022
+author: rabououn
+ms.date: 12/07/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Azure Artifacts overview
+# Get started with Azure Artifacts
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to share their code efficiently and manage all their packages from one place. With Azure Artifacts, developers can publish packages to their feeds and share it within the same team, across organizations, and even publicly. Developers can also consume packages from different feeds and public registries such as NuGet.org or npmjs.com. Azure Artifacts supports multiple package types such as NuGet, npm, Python, Maven, Cargo, and Universal Packages.
+Azure Artifacts enables developers to efficiently manage all their dependencies from one place. With Azure Artifacts, developers can publish packages to their feeds and share them within their team, across organizations, and even publicly across the internet. Azure Artifacts also allows developers to consume packages from different feeds and public registries such as NuGet.org or npmjs.com. Azure Artifacts supports the following package types: NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Azure Artifacts enables developers to share their code efficiently and manage al
 - [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
 
 > [!NOTE]
-> If you anticipate using more than the provided 2-GiB storage, it is recommended to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
+> If you expect to exceed the allocated 2-GiB storage, it is recommended to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
 ::: moniker range="tfs-2018"
 
@@ -139,8 +139,8 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 | **npm packages**                  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
 | **Maven packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
 | **Gradle packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
-| **Cargo packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                        |
 | **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
+| **Cargo packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                        |
 | **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
 
 ## Artifacts free tier and upgrade
