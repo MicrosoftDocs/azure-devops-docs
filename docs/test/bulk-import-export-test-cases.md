@@ -1,5 +1,5 @@
 ---
-title: Bulk Import or Export of Test cases 
+title: Bulk import or export of test cases 
 titleSuffix: Azure Test Plans  
 description: Learn how to bulk import or export test cases in Azure Test Plans.  
 ms.service: azure-devops-test-plans
@@ -12,7 +12,7 @@ ms.date: 12/04/2023
 ---
 
 
-# Bulk Import or Export of Test cases 
+# Bulk import or export of test cases 
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
@@ -24,7 +24,7 @@ For an overview of test objects and terminology, see [Test objects and terms](te
 
 1. From the **Test Plans>Test plans** page, choose the test plan with the test suite containing the test cases you want to export. 
  
-2. Optional. Choose ![Column options screenshot](media/icons/column-options.png) **Column options** to add fields to include in the download file. 
+2. Optional. Choose :::image type="icon" source="media/icons/column-options.png"::: **Column options** to add fields to include in the download file. 
 
 3. To export all test cases for the test suite, choose from **Export test cases to CSV** or **Export test cases to XLSX**. 
 
@@ -43,12 +43,12 @@ For an overview of test objects and terminology, see [Test objects and terms](te
 
 
 2. Choose the file to import from the dialog that opens, and then choose **Import**.
-![Import Test Cases dialog.](media/bulk-import-test-case/import-test-cases-dialog.png)
+![Screenshot of Import Test Cases dialog.](media/bulk-import-test-case/import-test-cases-dialog.png)
 
 3. Choose **Confirm** in the **Confirm import** dialog that displays. If you specify test cases that are already defined in the test suite, some elements may get over written during import. 
 
 
-<a id="import-test-cases" />
+<a id="import-test-cases"></a>
 
 ## Update existing test cases
 
@@ -92,7 +92,7 @@ A: Absolutely! Leave the Test case ID field empty for any new work items. For ex
 
 A: Any problems with the formatting of your CSV/XLSX file appear in the import view in the web-portal. You can't import the work items until the formatting and syntax is correct.
 
-![Import Test Cases error dialog.](media/bulk-import-test-case/import-errors.png)
+![Screenshot of Import Test Cases error dialog.](media/bulk-import-test-case/import-errors.png)
 
 ### Q: Does import operation support all work item types?
 
@@ -106,22 +106,22 @@ Azure Boards has a separate bulk import functionality using CSV files. For more 
 ### Q: What are the mandatory headers to include in Import CSV/XLSX file?
 
 A: Ensure every import file has the following headers (with the exact spelling): 
-1. **ID**: This is the ID of the work item you're trying to import. For new test case creation, leave this field blank.
-2. **Work Item Type:** Test case import method only supports 'Test case' and 'Shared Steps'. Use these exact keywords when providing work item type information.
-3. **Title:** The title of the test case you want to create or update. This can be an alpha-numeric value.
-4. **Test Step:** Steps defined in a test case are in an ordered list. You need to provide the order number of each test step.
-5. **Step Action:** This defines the actions a manual tester needs to undertake while executing the test step.
-6. **Step Expected:** The expected outcome of a given action. 
+* **ID**: This is the ID of the work item you're trying to import. For new test case creation, leave this field blank.
+* **Work Item Type:** Test case import method only supports 'Test case' and 'Shared Steps'. Use these exact keywords when providing work item type information.
+* **Title:** The title of the test case you want to create or update. This can be an alpha-numeric value.
+* **Test Step:** Steps defined in a test case are in an ordered list. You need to provide the order number of each test step.
+* **Step Action:** This defines the actions a manual tester needs to undertake while executing the test step.
+* **Step Expected:** The expected outcome of a given action. 
 
 
 ### Q: What are the limitations to import or export operations?
 
 A: Ensure to follow the below limitations:
-1. The test case state column must be in Design state.
-2. The test case title length must not exceed 128 characters.
-3. There's a limit of 20 MB on JSON objects created during import and export. If the import fails, try the operation with small subset of the test cases.
-4. The user performing the import must have permissions on the area and iteration paths for test plan and test suite they're planning to import or export.
-5. Copy and Import operations fail if the related link count exceeds 1000 for the test case.
+* The test case state column must be in Design state.
+* The test case title length must not exceed 128 characters.
+* There's a limit of 20 MB on JSON objects created during import and export. If the import fails, try the operation with small subset of the test cases.
+* The user performing the import must have permissions on the area and iteration paths for test plan and test suite they're planning to import or export.
+* Copy and Import operations fail if the related link count exceeds 1000 for the test case.
 
 ##  Next step
 
