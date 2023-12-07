@@ -69,23 +69,23 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 
 With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
 
-# [NuGet](#tab/nuget)
+# [NuGet](#tab/nugetserver)
 
 - [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
 
-# [Npm](#tab/npm)
+# [Npm](#tab/npmserver)
 
 - [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
 
-# [Maven](#tab/maven)
+# [Maven](#tab/mavenserver)
 
 - [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
 
-# [Gradle](#tab/gradle)
+# [Gradle](#tab/gradleserver)
 
 - [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
 
-# [Python](#tab/python)
+# [Python](#tab/pythonserver)
 
 - [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
 
@@ -148,15 +148,15 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 | **Cargo packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                        |
 | **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
 
+::: moniker range="azure-devops"
+
 ## Artifacts free tier and upgrade
 
-Azure Artifacts is free for every organization up to 2 GiB of storage. Once you reach the maximum storage limit, you can no longer upload new artifacts and need to delete some of your existing artifacts or [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to increase your storage limit. See the [Pricing Calculator](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) to learn more about Azure DevOps billing.
-
-::: moniker range="azure-devops"
+Azure Artifacts is provided at no cost for every organization with up to 2 GiB of storage. Upon reaching the maximum storage limit, you won't be able to publish new artifacts. To continue, you'll need to either delete some of your existing artifacts or [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to increase your storage limit. Explore the [Pricing Calculator](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) for further insights into Azure DevOps billing.
 
 ## View organization billing
 
-Follow the steps outlined below to view your billing settings for your organization:
+Follow the steps below to access your organization's billing settings:
 
 1. Sign in to your Azure DevOps organization.
 
@@ -176,13 +176,6 @@ Follow the steps outlined below to view your billing settings for your organizat
 
 ## FAQs
 
-##### Q: Which artifacts contribute to my total billed storage?
-
-A: You will be charged for all package types (npm, NuGet, Python, Maven, Cargo, and Universal Packages), including packages stored from upstream sources. However, there will be no charges for Pipeline Artifacts and Pipeline Caching
-
-> [!NOTE]
-> Packages in the recycle bin contribute to your overall storage consumption. These packages are permanently deleted after 30 days. If you wish to remove them before that, you can navigate to your recycle bin and delete them manually.
-
 ##### Q: How can I manage the retention duration for Artifacts?
 
 A: You can set up the retention policies to automatically delete packages. For more information, see [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies).
@@ -192,6 +185,13 @@ A: You can set up the retention policies to automatically delete packages. For m
 A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for more details.
 
 ::: moniker range="azure-devops"
+
+##### Q: Which artifacts contribute to my total billed storage?
+
+A: You will be charged for all package types (npm, NuGet, Python, Maven, Cargo, and Universal Packages), including packages stored from upstream sources. However, there will be no charges for Pipeline Artifacts and Pipeline Caching
+
+> [!NOTE]
+> Packages in the recycle bin contribute to your overall storage consumption. These packages are permanently deleted after 30 days. If you wish to remove them before that, you can navigate to your recycle bin and delete them manually.
 
 ##### Q: What are the implications if I remove my Azure Subscription from my Azure DevOps organization?
 
@@ -213,6 +213,6 @@ The **Used** column on the Billing page of your Organization is updated once a d
 
 ## Related articles
 
-- [Package sizes and count limits](./reference/limits)
+- [Package sizes and count limits](./reference/limits.md)
 - [Manage permissions](./feeds/feed-permissions.md)
 - [Set up upstream sources](./how-to/set-up-upstream-sources.md)
