@@ -142,75 +142,6 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 | **npm packages**                  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
 | **Maven packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
 | **Gradle packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
-| **Cargo packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                         |
-| **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
-| **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
-
-::: moniker range="tfs-2018"
-
-## FAQs
-
-##### Q: Which artifacts count toward my total billed storage?
-
-A: You get billed for all package types (npm, NuGet, Python, Maven, Cargo, and Universal Packages) including packages stored from upstream sources. However, you don't get billed for Pipeline Artifacts, and Pipeline Caching.
-
-> [!NOTE]
-> Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, navigate to your recycle bin and delete them manually.
-
-##### Q: How can I control how many days Artifacts are kept?
-
-A: You can set up the retention policies to delete packages automatically. For more information, see [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies).
-
-##### Q: How can I delete specific packages?
-
-A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for details.
-
-::: moniker-end
-
-::: moniker range=">=azure-devops-2019"
-
-## Get started with Azure Artifacts
-
-With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
-
-# [NuGet](#tab/nuget)
-
-- [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
-
-# [Npm](#tab/npm)
-
-- [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
-
-# [Maven](#tab/maven)
-
-- [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
-
-# [Gradle](#tab/gradle)
-
-- [Publish artifacts with Gradle](./maven/publish-with-gradle.md)
-
-# [Python](#tab/python)
-
-- [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
-
-# [Cargo](#tab/cargo)
-
-- [Get started with Cargo packages in Azure Artifacts](./get-started-cargo.md)
-
-# [Universal Packages](#tab/universalpackages)
-
-- [Universal Packages quickstart](./quickstarts/universal-packages.md)
-
----
-
-## Feature availability
-
-| Package type                      | Azure DevOps Services  |          Azure DevOps Server                 |                    TFS-2018                  |
-|-----------------------------------|------------------------|----------------------------------------------|----------------------------------------------|
-| **NuGet packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
-| **npm packages**                  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
-| **Maven packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
-| **Gradle packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
 | **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
 | **Cargo packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                        |
 | **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
@@ -218,6 +149,8 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 ## Artifacts free tier and upgrade
 
 Azure Artifacts is free for every organization up to 2 GiB of storage. Once you reach the maximum storage limit, you can no longer upload new artifacts and need to delete some of your existing artifacts or [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to increase your storage limit. See the [Pricing Calculator](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) to learn more about Azure DevOps billing.
+
+::: moniker range="azure-devops"
 
 ## View organization billing
 
@@ -233,15 +166,11 @@ Follow the steps outlined below to view your billing settings for your organizat
 
 ## View Artifacts storage consumption
 
-### [Organization-level storage](#tab/orgstorage)
+- [Project-level storage](./artifact-storage.md#project-level-storage)
 
-- [Artifacts Storage - Organization-level](./artifact-storage.md#organization-level-storage)
+- [Organization-level storage](./artifact-storage.md#organization-level-storage)
 
-### [Project-level storage](#tab/projstorage)
-
-- [Artifacts Storage - Project-level](./artifact-storage.md#project-level-storage)
-
----
+::: moniker-end
 
 ## FAQs
 
@@ -252,17 +181,23 @@ A: You get billed for all package types (npm, NuGet, Python, Maven, Cargo, and U
 > [!NOTE]
 > Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, navigate to your recycle bin and delete them manually.
 
-##### Q: I'm storing Artifacts but my storage consumption shows 0 GiB?
-
-A: 1 GiB is currently our lowest granularity, so you most likely haven't reached 1 GiB yet.
-
 ##### Q: How can I control how many days Artifacts are kept?
 
 A: You can set up the retention policies to delete packages automatically. For more information, see [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies).
 
 ##### Q: How can I delete specific packages?
 
-A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for details.
+A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for more details.
+
+::: moniker range="azure-devops"
+
+##### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
+
+A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you lower your storage below 2 GiB. Or, you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
+
+##### Q: I'm storing Artifacts but my storage consumption shows 0 GiB?
+
+A: 1 GiB is currently our lowest granularity, so you most likely haven't reached 1 GiB yet.
 
 ##### Q: How long does it take for deleted Artifacts to reflect in the amount of billed storage?
 
@@ -272,15 +207,10 @@ The **used** column on the Billing page of your Organization gets updated once a
 
 :::image type="content" source="media/settings-vs-storage.png" alt-text="Artifacts billing settings vs Artifacts storage data":::
 
-##### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
-
-A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you lower your storage below 2 GiB. Or, you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
-
 ::: moniker-end
 
 ## Related articles
 
-- [View storage usage](./artifact-storage.md)
-- [Feeds overview](./concepts/feeds.md)
+- [Package sizes and count limits](./reference/limits)
 - [Manage permissions](./feeds/feed-permissions.md)
-- [Feed views](./concepts/views.md)
+- [Set up upstream sources](./how-to/set-up-upstream-sources.md)
