@@ -7,22 +7,20 @@ toc: show
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
-monikerRange: '<= azure-devops'
-ms.date: 08/03/2022
+monikerRange: '>= azure-devops-2019'
+ms.date: 12/05/2023
 --- 
 
 # Stakeholder access quick reference
 
-
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders.  In general, **Stakeholder** access users gain limited access to Azure Boards, Azure Pipelines, and collaboration tools. They have no access to code repositories. 
 
 **Stakeholder** access users  can create and modify work items and create and save queries. They can also view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. If they need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
 
-If you've been assigned **Stakeholder** access and want to start using Azure Boards to track work, see [Get started as a Stakeholder](get-started-stakeholder.md). If you've been tasked to support administrative tasks, see [Manage your project](../../user-guide/project-admin-tutorial.md).
+If you're assigned **Stakeholder** access and want to start using Azure Boards to track work, see [Get started as a Stakeholder](get-started-stakeholder.md). If you're tasked to support administrative tasks, see [Manage your project](../../user-guide/project-admin-tutorial.md).
  
-
 ## Assign Stakeholder access users to a security group 
 
 In general, use the following guidance when assigning **Stakeholder** access users to a security group: 
@@ -31,20 +29,16 @@ In general, use the following guidance when assigning **Stakeholder** access use
 - Add to the **Project Administrators** security group users tasked with managing project resources. 
 - Add to the **Project Collection Administrators** security group users tasked with managing organization or collection resources. 
 
-
-
-
 <a id="stakeholder-access">  </a>
 <a id="feature-access">  </a>
 
-
 ::: moniker range="azure-devops"
 
-<a id="public-versus-private-feature-access"/>
+<a id="public-versus-private-feature-access"></a>
 
 ## Public versus private feature access
 
-Users granted **Stakeholder** access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../projects/about-projects.md).  
+Users with **Stakeholder** access privileges can access features based on whether the project is private or public. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../projects/about-projects.md).  
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -65,15 +59,9 @@ Users granted **Stakeholder** access are granted different access to features de
 
 ::: moniker-end
  
-::: moniker range=">= azure-devops-2019" 
 ## Azure Boards 
-::: moniker-end
 
-::: moniker range="< azure-devops-2019" 
-## Work tracking 
-::: moniker-end
-
-The following table summarizes the features Stakeholder access users have access to from Azure Boards. Stakeholders access users can view and edit all work items for which they have Area Path permissions, which by default is set to Allow for all user security groups. To learn more, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md#set-permissions-area-path).
+The following table summarizes the features Stakeholders have access to from Azure Boards. Stakeholders can view and edit all work items for which they have Area Path permissions, which by default is set to Allow for all user security groups. For more information, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 For an overview of work tracking features, see [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md) 
 
@@ -93,7 +81,6 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
       **Features can't use**
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2019" 
 :::row:::
    :::column span="1":::
       **Work Items** 
@@ -112,25 +99,6 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
       - Move work items to another project
    :::column-end:::
 :::row-end:::
-::: moniker-end 
-::: moniker range="< azure-devops-2019" 
-:::row:::
-   :::column span="1":::
-      **Work Items** 
-   :::column-end:::
-   :::column span="2":::
-      - View, add, and edit work items   
-      - Assign existing tags to work items  
-      - Email work items 
-      - Apply a work item template
-   :::column-end:::
-   :::column span="2":::
-      - Add new work item tags
-      - Delete work items
-      - Move work items to another project
-   :::column-end:::
-:::row-end:::
-::: moniker-end 
 ::: moniker range=">= azure-devops-2022" 
 :::row:::
    :::column span="1":::
@@ -268,74 +236,12 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
 1. Controllable through project-level permission.
 2. Requires assignment as a team administrator or member of the Project Administrators Group.
 
-
-::: moniker range=">= azure-devops-2019" 
-
-## Azure Pipelines 
-
-::: moniker-end
-
-
-::: moniker range="azure-devops" 
-The following table summarizes the features available to **Stakeholder** access users for Private and Public projects. When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all features listed under **Public project**.  Without this feature enabled, **Stakeholder** access users can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
-
-For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md).
-
-:::row:::
-   :::column span="2":::
-      **Private project**
-   :::column-end:::
-   :::column span="2":::
-      **Public project** 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      - View and approve releases
-      - View build pipelines
-   :::column-end:::
-   :::column span="2":::
-      - View release pipelines  
-      - Define builds with continuous integration  
-      - Define releases and manage deployments  
-      - Approve releases  
-      - Azure Artifacts (5 users free)  
-      - Queue builds, edit build quality  
-      - Manage build queues and build qualities  
-      - Manage build retention policies, delete and destroy builds  
-      - Administer build permissions   
-      - Manage release permissions  
-      - Create and edit task groups   
-      - Manage task group permissions  
-      - Can view library items such as variable groups   
-      - Use and manage library items such as variable groups   
-   :::column-end:::
-:::row-end:::
-
-::: moniker-end
-
-
-::: moniker range=">= azure-devops-2019 < azure-devops" 
-
-Users granted **Stakeholder** access can perform the following build and release tasks. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md).
-- View and approve releases
-- View build pipelines
-::: moniker-end
-
-
-::: moniker range=">= azure-devops-2019" 
 ## Azure Test Plans 
-::: moniker-end
-
-::: moniker range="< azure-devops-2019" 
-## Test 
-::: moniker-end
 
 Users granted **Stakeholder** access can perform the following tasks related to testing. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml).  
 
 - Provide feedback using the Test & Feedback extension
 - Apply a work item template to a test case  
-
 
 ## Dashboards, notifications, READMEs, and wikis 
 
