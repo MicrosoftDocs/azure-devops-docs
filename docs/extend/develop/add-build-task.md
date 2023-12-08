@@ -115,7 +115,7 @@ Do every part of the steps withing this procedure in the `buildandreleasetask` f
 8. Create `tsconfig.json` compiler options. This file ensures that your TypeScript files are compiled to JavaScript files.
 
    ```
-   tsc --init --target es2023
+   tsc --init --target es2022
    ```
 
 ### Create custom task
