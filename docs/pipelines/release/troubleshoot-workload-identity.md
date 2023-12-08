@@ -34,7 +34,7 @@ Not all pipelines tasks support workload identity. During the preview, no Azure 
 
 ### Verify workload identity federation is active
 
-If you see error message `AADSTS700223` or `AADSTS700238`, workload identity federation was disabled in the Azure portal for your Microsoft Entra tenant. 
+If you see error message `AADSTS700223` or `AADSTS700238`, workload identity federation was disabled in your Microsoft Entra tenant. 
 
 Sign in to the Entra portal and verify that there are no policies in place that block federated credentials. 
 
