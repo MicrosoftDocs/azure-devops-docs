@@ -1,137 +1,140 @@
 ---
-title: "Azure DevOps docs: What's new for October 1, 2023 - October 31, 2023"
-description: "What's new in the Azure DevOps docs for October 1, 2023 - October 31, 2023."
-ms.date: 11/06/2023
+title: "Azure DevOps docs: What's new for November 1, 2023 - November 30, 2023"
+description: "What's new in the Azure DevOps docs for November 1, 2023 - November 30, 2023."
+ms.date: 12/08/2023
 ---
 
-# Azure DevOps docs: What's new for October 1, 2023 - October 31, 2023
+# Azure DevOps docs: What's new for November 1, 2023 - November 30, 2023
 
-Welcome to what's new in the Azure DevOps docs from October 1, 2023 through October 31, 2023. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from November 1, 2023 through November 30, 2023. This article lists some of the major changes to docs during this period.
 
 ## Administration
 
 ### Updated articles
 
-- [Use security groups to manage users and groups](/azure/devops/organizations/security/add-remove-manage-user-group-security-group)
-- [About access levels](/azure/devops/organizations/security/access-levels)
-- [User and permissions management FAQs](/azure/devops/organizations/accounts/faq-user-and-permissions-management)
-- [Default permissions quick reference](/azure/devops/organizations/security/permissions-access)
-- [Remove user accounts from Microsoft Entra ID or Active Directory](/azure/devops/organizations/security/remove-users-prohibit-access)
-- [Security best practices](/azure/devops/organizations/security/security-best-practices)
-- [Get started with permissions and access](/azure/devops/organizations/security/about-permissions)
-- [About security, authentication, and authorization](/azure/devops/organizations/security/about-security-identity)
+- [Billing FAQs](/azure/devops/organizations/billing/billing-faq)
+- [Data locations for Azure DevOps](/azure/devops/organizations/security/data-location)
 - [Data protection overview](/azure/devops/organizations/security/data-protection)
-- [Security quick reference index](/azure/devops/organizations/security/quick-reference-index-security)
-- [About accessing your organization via Microsoft Entra ID](/azure/devops/organizations/accounts/access-with-azure-ad)
-- [Restrict organization creation via Microsoft Entra tenant policy](/azure/devops/organizations/accounts/azure-ad-tenant-policy-restrict-org-creation)
-- [Change your organization connection to a different Microsoft Entra ID](/azure/devops/organizations/accounts/change-azure-ad-connection)
-- [Connect your organization to Microsoft Entra ID](/azure/devops/organizations/accounts/connect-organization-to-azure-ad)
-- [Disconnect your organization from Microsoft Entra ID](/azure/devops/organizations/accounts/disconnect-organization-from-azure-ad)
-- [Access via Microsoft Entra FAQs](/azure/devops/organizations/accounts/faq-azure-access)
-- [Get list of organizations backed by Microsoft Entra ID](/azure/devops/organizations/accounts/get-list-of-organizations-connected-to-azure-active-directory)
-- [Access with Microsoft Entra groups](/azure/devops/organizations/accounts/manage-azure-active-directory-groups)
-- [Use policies to manage personal access tokens for users](/azure/devops/organizations/accounts/manage-pats-with-policies-for-administrators)
-- [Manage personal access tokens (PATs) using REST API](/azure/devops/organizations/accounts/manage-personal-access-tokens-via-api)
-- [Organization management overview](/azure/devops/organizations/accounts/organization-management)
-- [Assign an owner to an orphaned organization](/azure/devops/organizations/accounts/resolve-orphaned-organization)
-- [Change application connection & security policies for your organization](/azure/devops/organizations/accounts/change-application-access-policies)
 
 ## Artifacts
 
 ### New articles
 
-- [PowerShell Gallery upstream source](/azure/devops/artifacts/tutorials/powershell-upstream-source)
+- [Use packages from Python package index (PyPI)](/azure/devops/artifacts/python/use-packages-from-pypi)
 
 ### Updated articles
 
-- [Connect to Azure Artifacts feeds (NuGet.exe)](/azure/devops/artifacts/nuget/nuget-exe)
-- [Get started with npm packages in Azure Artifacts](/azure/devops/artifacts/get-started-npm)
-- [Azure Artifacts overview](/azure/devops/artifacts/start-using-azure-artifacts)
-- [Delete and recover packages](/azure/devops/artifacts/how-to/delete-and-recover-packages)
+- [Use packages from NuGet Gallery](/azure/devops/artifacts/nuget/upstream-sources)
+- [Use packages from Google Maven Repository](/azure/devops/artifacts/maven/google-maven)
+- [Use packages from Maven Central](/azure/devops/artifacts/maven/upstream-sources)
+- [Azure Artifacts Upstream Sources](/azure/devops/artifacts/concepts/upstream-sources)
 
 ## Azure Boards
 
 ### Updated articles
 
-- [Add or modify work items in bulk with Microsoft Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)
-- [Query work items by link or attachment count](/azure/devops/boards/queries/linking-attachments)
-- [Remove, delete, or restore work items in Azure Boards](/azure/devops/boards/backlogs/remove-delete-work-items)
-- [Use work item templates](/azure/devops/boards/backlogs/work-item-template)
-- [Fix backlog reorder, nest, and display issues](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues)
+- [Link work items to objects](/azure/devops/boards/backlogs/add-link)
+- [Drive Git development from a work item in Azure Boards](/azure/devops/boards/backlogs/connect-work-items-to-git-dev-ops)
+- [Define, capture, triage, and manage software bugs in Azure Boards](/azure/devops/boards/backlogs/manage-bugs)
+- [Resolve Azure DevOps Office integration issues](/azure/devops/boards/backlogs/office/tfs-office-integration-issues)
+- [Connect Azure Boards to an Office client](/azure/devops/boards/backlogs/office/track-work)
+- [Reference guide for link types](/azure/devops/boards/queries/link-type-reference)
+- [Create your backlog in Azure Boards](/azure/devops/boards/backlogs/create-your-backlog)
+
+## Azure DevOps Reporting and Analytics service
+
+### Updated articles
+
+- [Add widgets to a dashboard](/azure/devops/report/dashboards/add-widget-to-dashboard)
+- [Copy a dashboard](/azure/devops/report/dashboards/copy-dashboard)
 
 ## Azure Pipelines
 
 ### New articles
 
-- [Troubleshoot pipeline failure to start](/azure/devops/pipelines/troubleshooting/troubleshoot-start)
-- [Troubleshoot pipeline triggers](/azure/devops/pipelines/troubleshooting/troubleshoot-triggers)
-- [Self-hosted agent authentication options](/azure/devops/pipelines/agents/agent-authentication-options)
-- [Register an agent using device code flow](/azure/devops/pipelines/agents/device-code-flow-agent-registration)
-- [Register an agent using a personal access token (PAT)](/azure/devops/pipelines/agents/personal-access-token-agent-registration)
-- [Register an agent using a service principal](/azure/devops/pipelines/agents/service-principal-agent-registration)
-- [AdvancedSecurity-Codeql-Autobuild@1 - Advanced Security AutoBuild v1 task](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-autobuild-v1)
-- [AdvancedSecurity-Dependency-Scanning@1 - Advanced Security Dependency Scanning v1 task](/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1)
-- [AdvancedSecurity-Codeql-Init@1 - Advanced Security Initialize CodeQL v1 task](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1)
-- [AdvancedSecurity-Codeql-Analyze@1 - Advanced Security Perform CodeQL analysis v1 task](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1)
+- [Protecting secrets in Azure Pipelines](/azure/devops/pipelines/security/secrets)
 
 ### Updated articles
 
-- [Use Azure Key Vault secrets in your Pipeline](/azure/devops/pipelines/release/key-vault-in-own-project)
-- [Plan how to secure your YAML pipelines](/azure/devops/pipelines/security/approach)
-- [Build on-premises Bitbucket repositories](/azure/devops/pipelines/repos/on-premises-bitbucket)
-- [Run a self-hosted agent in Docker](/azure/devops/pipelines/agents/docker)
-- [Troubleshoot ARM service connections](/azure/devops/pipelines/release/azure-rm-endpoint)
-- [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted)
-- [Troubleshoot pipeline runs](/azure/devops/pipelines/troubleshooting/troubleshooting)
-- [Azure Pipelines agents](/azure/devops/pipelines/agents/agents)
-- [Configure schedules for pipelines](/azure/devops/pipelines/process/scheduled-triggers)
-- [Self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent)
-- [Define resources in YAML](/azure/devops/pipelines/process/resources)
+- [Provision agents for deployment groups](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents)
+- [Deploy a custom container to Azure App Service with Azure Pipelines](/azure/devops/pipelines/apps/cd/deploy-docker-webapp)
+- [Publish Python packages with Azure Pipelines](/azure/devops/pipelines/artifacts/pypi)
+- [Environment - Kubernetes resource](/azure/devops/pipelines/process/environments-kubernetes)
+- [Define approvals and checks](/azure/devops/pipelines/process/approvals)
+- [Trigger one pipeline after another](/azure/devops/pipelines/process/pipeline-triggers)
+- [Specify jobs in your pipeline](/azure/devops/pipelines/process/phases)
 - [Template usage reference](/azure/devops/pipelines/process/templates)
 
 ## Azure Repos
 
 ### Updated articles
 
-- [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features)
+- [Go get command support in Azure Repos Git](/azure/devops/repos/git/go-get)
+- [Dependency scanning](/azure/devops/repos/security/github-advanced-security-dependency-scanning)
+- [Workspace command (Team Foundation Version Control)](/azure/devops/repos/tfvc/workspace-command)
 
 ## Extend
 
 ### Updated articles
 
-- [Develop a web extension](/azure/devops/extend/get-started/node)
+- [Data storage](/azure/devops/extend/develop/data-storage)
+- [Extensions overview](/azure/devops/extend/overview)
+- [Package and publish extensions](/azure/devops/extend/publish/overview)
+- [Add a custom pipelines task extension](/azure/devops/extend/develop/add-build-task)
 
 ## Integrate
 
 ### Updated articles
 
-- [Authorize access to REST APIs with OAuth 2.0](/azure/devops/integrate/get-started/authentication/oauth)
+- [Best integration practices](/azure/devops/integrate/concepts/integration-bestpractices)
+- [Rate and usage limits](/azure/devops/integrate/concepts/rate-limits)
+- [Use the Cross-platform CLI for Azure DevOps using personal access tokens](/azure/devops/integrate/get-started/auth/tfs-basic-auth)
 - [Use service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)
+- [C# client library samples](/azure/devops/integrate/get-started/client-libraries/samples)
+- [C# client library samples for SOAP clients and services](/azure/devops/integrate/get-started/client-libraries/soapsamples)
+- [REST API samples for Azure DevOps](/azure/devops/integrate/get-started/rest/samples)
+- [Get started with the REST APIs](/azure/devops/integrate/how-to/call-rest-api)
 
-## Migrate
+## Marketplace
 
 ### Updated articles
 
-- [Troubleshoot import and migration errors](/azure/devops/migrate/migration-troubleshooting)
-- [Validation and import processes](/azure/devops/migrate/migration-import)
+- [Install extensions](/azure/devops/marketplace/install-extension)
 
 ## Project
 
 ### Updated articles
 
-- [Manage preview features](/azure/devops/project/navigation/preview-features)
+- [Use Markdown in Azure DevOps](/azure/devops/project/wiki/markdown-guidance)
+- [Keyboard shortcuts for Azure DevOps and Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts)
+- [About wikis, READMEs, and Markdown](/azure/devops/project/wiki/about-readme-wiki)
+- [Add comments to wiki pages](/azure/devops/project/wiki/add-comments-wiki)
+- [Add and edit wiki pages](/azure/devops/project/wiki/add-edit-wiki)
+- [Create and embed a work item from wiki](/azure/devops/project/wiki/create-embed-wit-from-wiki)
+- [Filter the contents of a wiki or print a page](/azure/devops/project/wiki/filter-print-wiki)
+- [Provisioned wikis vs. published code as a wiki](/azure/devops/project/wiki/provisioned-vs-published-wiki)
+- [Publish a Git repo to a wiki](/azure/devops/project/wiki/publish-repo-to-wiki)
+- [View wiki page history and revert changes](/azure/devops/project/wiki/wiki-view-history)
+
+## Reference
+
+### Updated articles
+
+- [witAdmin: Customize and manage objects for tracking work](/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work)
+
+## Service-hooks
+
+### Updated articles
+
+- [Create a service hook for Azure DevOps with Slack](/azure/devops/service-hooks/services/slack)
 
 ## User guide
 
 ### Updated articles
 
-- [Share your code with Git](/azure/devops/user-guide/code-with-git)
-- [Sign up for Azure DevOps](/azure/devops/user-guide/sign-up-invite-teammates)
-- [Manage your organization or collection](/azure/devops/user-guide/manage-organization-collection)
-- [Plan your organizational structure](/azure/devops/user-guide/plan-your-azure-devops-org-structure)
-
-
+- [Troubleshoot connecting to a project](/azure/devops/user-guide/troubleshoot-connection)
+- [Get support and provide feedback](/azure/devops/user-guide/provide-feedback)
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-10-01..2023-10-31).
+Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-11-01..2023-11-30).
