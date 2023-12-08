@@ -34,7 +34,7 @@ In general, use the following guidance when assigning **Stakeholder** access use
 
 ::: moniker range="azure-devops"
 
-<a id="public-versus-private-feature-access"/>
+<a id="public-versus-private-feature-access"></a>
 
 ## Public versus private feature access
 
