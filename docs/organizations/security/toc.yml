@@ -33,9 +33,6 @@
     displayName: public, private
   - name: Change access levels 
     href: change-access-levels.md
-    displayName: update, security, permission, project, collection
-  - name: Provide Stakeholders access to edit pipelines
-    href: provide-stakeholder-pipeline-access.md 
 - name: Manage user access (cloud)
   items:
   - name: Add users & manage access 
