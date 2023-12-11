@@ -81,7 +81,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker range="tfs-2018"
 
-<a id="add-team-team-services" /> 
+<a id="add-team-team-services"></a> 
 
 1. From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.  
 
@@ -99,7 +99,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-<a id="update-team" /> 
+<a id="update-team"></a> 
 
 ::: moniker range="azure-devops"
 
@@ -285,7 +285,7 @@ You can delete any team except the default team. At least one team must be defin
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="delete-team" /> 
+<a id="delete-team"></a> 
 
 ::: moniker range="azure-devops"
 

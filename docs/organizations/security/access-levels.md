@@ -66,7 +66,7 @@ Assign users or groups of users to one of the following access levels:
 
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise. 
 
-<a id="access-level-settings" />
+<a id="access-level-settings"></a>
 
 ---
 ::: moniker range="azure-devops"
@@ -254,10 +254,10 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Author Release Pipelines and Manage Releases**  
-      Includes defining [release pipelines](../../pipelines/release/index.md), [multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md), and [using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md); when the [**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md), Stakeholders gain access to all Azure Pipelines features.
+      Includes defining [release pipelines](../../pipelines/release/index.md), [multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md), and [using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md).
    :::column-end:::
    :::column span="1":::
-       
+      ✔️ 
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -495,7 +495,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **View Releases and Manage Approvals**  
-      Includes [viewing releases](../../pipelines/release/approvals/index.md) and [approving releases](../../pipelines/release/approvals/index.md); when the [**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md) feature is enabled, Stakeholders gain access to all Azure Pipelines features. 
+      Includes [viewing releases](../../pipelines/release/approvals/index.md) and [approving releases](../../pipelines/release/approvals/index.md). 
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -510,7 +510,7 @@ The following table indicates those features available for each supported access
 ---
 
 
-<a id="basic" />
+<a id="basic"></a>
 
 ::: moniker range="azure-devops"
 
@@ -548,7 +548,7 @@ Advanced access gives users all the Basic features, plus [web-based test case ma
 ::: moniker-end
 
 
-<a id="mapping" /> 
+<a id="mapping"></a> 
 
 
 ## Programmatic mapping of access levels
@@ -620,7 +620,6 @@ Service accounts don't require a CAL or other purchase.
 ::: moniker range="azure-devops"
 
 - [Stakeholder access quick reference](stakeholder-access.md)
-- [Free access to Pipelines Preview](provide-stakeholder-pipeline-access.md)
 - [Get started as a Stakeholder](get-started-stakeholder.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)

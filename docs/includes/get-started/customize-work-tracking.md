@@ -7,7 +7,7 @@ ms.date: 04/04/2022
 ---
 
 
-<a id="customize" />
+<a id="customize"></a>
 
 ### Customize work-tracking processes
 

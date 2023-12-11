@@ -203,7 +203,7 @@ az repos import create --git-source-url https://github.com/fabrikamprime/fabrika
 
 ::: moniker-end
 
-<a id="manual-import-git-cli" /> 
+<a id="manual-import-git-cli"></a> 
 
 ## Manually import a repo using git CLI
 
@@ -258,7 +258,7 @@ Although most of the time the import is successful, the following conditions can
 The import service uses REST APIs to validate and trigger import and cannot work directly with repositories that require two-factor authentication.
 Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [Azure DevOps Services](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
 
-<a id="multiack" />
+<a id="multiack"></a>
 
 ### What if my source repository does not support multi_ack?
 

@@ -63,7 +63,7 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 [!INCLUDE  [temp](includes/open-wiki-hub.md)]
 
-<a id="add-page" />
+<a id="add-page"></a>
 
 ## Add a wiki page
 

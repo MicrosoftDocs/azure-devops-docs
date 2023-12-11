@@ -83,7 +83,7 @@ Settings include making the following associations for each team:
 For more information, see [Define area paths and assign to a team](set-area-paths.md) and 
 [Define iteration paths and configure team iterations](set-iteration-paths-sprints.md). 
 
-<a id="configure-team-backlogs" />
+<a id="configure-team-backlogs"></a>
 
 ## Configure team backlogs, boards, and general settings 
 
@@ -218,7 +218,7 @@ Similar to Kanban boards, each sprint taskboard can be customized to support inf
 
 :::image type="content" source="media/configure-sprint-taskboard.png" alt-text="Screenshot of taskboard selection.":::
 
-<a id="add-and-manage-team-dashboards" /> 
+<a id="add-and-manage-team-dashboards"></a> 
 
 ## Add and manage team dashboards   
 
@@ -232,7 +232,7 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 :::image type="content" source="media/manage-team-dashboards.png" alt-text="Screenshot of dashboard button surrounded by red square.":::
 
-<a id="team-description" />
+<a id="team-description"></a>
 
 ## Update team name, description, and image
 

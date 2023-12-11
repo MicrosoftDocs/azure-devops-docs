@@ -128,7 +128,7 @@ To select another team, open the project and team selector. Select a different t
 
 Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks completed in support of a requirement, so that bugs appear on their [Taskboard](../sprints/task-board.md). Before you determine how to manage bugs, see [Configure and customize, Treat bugs as requirements or tasks](../configure-customize.md#show-bugs) and [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
-<a id="convert-ideas" />
+<a id="convert-ideas"></a>
 
 ## Convert ideas into backlog items 
 
@@ -294,7 +294,7 @@ To plan a sprint, at a minimum, estimate the effort involved to implement each b
    :::column-end:::
 :::row-end:::
 
-<a id="show-hide-in-progress" />  
+<a id="show-hide-in-progress"></a>  
 
 ## Show or hide In Progress Items
 
@@ -324,7 +324,7 @@ Choose **In progress items** show or hide **In Progress** backlog items. If you 
 
 You'd likely choose to hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
 
-<a id="show-hide-completed" />  
+<a id="show-hide-completed"></a>  
 
 ::: moniker range=">= azure-devops-2020"
 

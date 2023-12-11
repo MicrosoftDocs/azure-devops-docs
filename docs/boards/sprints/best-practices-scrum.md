@@ -42,7 +42,7 @@ You can learn more from these resources:
 ## Set sprint goals
  
 Scrum teams use sprint goals to focus their sprint activities. They often set this goal during their sprint planning meeting. The goal summarizes what the team wants to accomplish by the end of the sprint. By explicitly stating the goal, you create shared understanding within the team of the core purpose. The sprint goal can also help guide the team when conflicts arise around priorities. 
-<a id="tips-from-trenches" />
+<a id="tips-from-trenches"></a>
 
 ## Tips from the trenches: Define sprint goals
  

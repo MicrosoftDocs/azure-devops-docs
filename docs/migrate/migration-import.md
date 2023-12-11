@@ -314,7 +314,7 @@ If you're doing a dry run (test) import, we recommend that you reattach your col
 
 It's important to weigh the cost of choosing to incur zero downtime for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
 
-<a id="dacpac-file" /> 
+<a id="dacpac-file"></a> 
 
 ### Step 2: Generate a DACPAC file
 

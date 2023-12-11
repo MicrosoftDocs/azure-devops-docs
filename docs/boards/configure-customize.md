@@ -293,7 +293,7 @@ The following table shows the areas you can configure and customize and the tool
    :::column-end:::
 :::row-end:::
 
-<a id="area-path" />
+<a id="area-path"></a>
 
 ## Area paths, product teams, and portfolio management  
 
@@ -341,7 +341,7 @@ For more information, see the following articles:
 
 Most Azure Boards tools support a filtered view of work items based on area path or iteration path. You can also apply more filters based on keyword, assignment, WIT, and more. 
 
-<a id="show-bugs" />
+<a id="show-bugs"></a>
 
 ## Bugs as requirements or tasks
 
@@ -362,8 +362,8 @@ To track issues or impediments along with your requirements or in a portfolio ba
 
 ::: moniker-end
 
-<a id="hierarchy" />
-<a id="rollup" />
+<a id="hierarchy"></a>
+<a id="rollup"></a>
 
 ## Rollup, hierarchy, and portfolio management  
 
@@ -385,7 +385,7 @@ Here we show **Progress by all Work Items**, which displays progress bars for as
 Consider how your selection impacts rollup if your development team uses tasks 
 --> 
 
-<a id="iteration-path" />
+<a id="iteration-path"></a>
 
 ## Iteration paths sprints releases & versioning
 

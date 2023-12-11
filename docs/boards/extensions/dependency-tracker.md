@@ -105,7 +105,7 @@ Also, the following configuration or customization tasks should be performed:
 
     You can only filter on those Area paths defined for the project. 
 
-<a id="filter" /> 
+<a id="filter"></a> 
 
 ## Filter options 
 
@@ -132,7 +132,7 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 Ability to drop dependencies within the selected area (used for excluding dependencies inside my team)
 
 
-<a id="drill-down" /> 
+<a id="drill-down"></a> 
 
 ## View drill-down options 
 
@@ -142,7 +142,7 @@ Several views provide interactive visualizations through drill-downs. These feat
 > ![Screenshot showing Consuming dependencies, drill-down into completed work in an area.](media/tracker/drill-down-completed-consuming.png) 
 
 
-<a id="create" /> 
+<a id="create"></a> 
 
 ## Create a dependency 
 
@@ -222,7 +222,7 @@ You can also create a custom query by selecting the Work items and direct links 
 
 Choose **Copy to HTML** to copy the selected work items to the clipboard as a formatted table. 
 
-<a id="consume" />
+<a id="consume"></a>
 
 ## Consuming Dependencies view
 
@@ -245,7 +245,7 @@ Within the table, you can complete the following actions.
 - Switch the sequence of work items by choosing the Display: **Consumer on top** or **Producer on top**
 
 
-<a id="produce" />
+<a id="produce"></a>
 
 ## Producing Dependencies view
 
@@ -263,7 +263,7 @@ Each column on the bar chart represents another area path that is consuming depe
 Within the table, you can complete the same actions as in the Consuming Dependencies view. 
  
  
-<a id="timeline" />
+<a id="timeline"></a>
 
 ## Timeline tab
 
@@ -292,7 +292,7 @@ The Incorrect Flow  view shows those dependencies that are out of order. At leas
 > ![Screenshot of Timeline view, incorrect flow.](media/tracker/timeline-oc-word-2019-incorrect-flow.png)
 
 
-<a id="risk-graph" />
+<a id="risk-graph"></a>
 
 ## Risk Graph
 
@@ -322,7 +322,7 @@ You can drill down into specifics by choosing one of the dependencies.
 > ![Screenshot of Dependency Tracker Risk Graph, Producing For, Filtered on a dependency.](media/tracker/risk-graph-ff-producing-for-filtered.png)
 
 
-<a id="configuration" /> 
+<a id="configuration"></a> 
 
 ## Configure the Dependency Tracker
 
@@ -376,7 +376,7 @@ To disable, set the following syntax in the JSON configuration to `false`.
 
 Cross account linking requires the use of a special link type and should only be used in coordination with the **New Dependency** option.
 
-<a id="table" />
+<a id="table"></a>
 
 ### Property descriptions 
 

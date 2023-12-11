@@ -1,4 +1,4 @@
-<a id="core" />
+<a id="core"></a>
 These properties are required:
 
 | Property | Description | Notes |

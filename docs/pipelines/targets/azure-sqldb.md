@@ -180,7 +180,7 @@ steps:
 - task: CmdLine@2
   displayName: Run Sqlcmd
   inputs:
-    filename: Sqlcmd
+    filename: sqlcmd
     arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
 
 - task: AzurePowerShell@5

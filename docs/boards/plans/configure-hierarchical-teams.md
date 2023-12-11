@@ -60,7 +60,7 @@ The first step is to add a team for each feature team and management area. You c
 
 ::: moniker range="tfs-2018"
 
-<a id="add-team-team-services" /> 
+<a id="add-team-team-services"></a> 
 
 1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open the **Project settings** page for the project.  
 
@@ -231,7 +231,7 @@ From **Project Settings>Work>Areas**, you can review which **Area Paths** have b
 > ![Area Paths and Teams](media/config-teams/review-area-paths-teams.png)   
 ::: moniker-end
 
-<a id="op-issues" />
+<a id="op-issues"></a>
 
 ## Exercising select features with shared area paths 
 

@@ -114,7 +114,7 @@ You build your project plan by creating a backlog of work items. These items rep
 
 [![Define stories conceptual image of tasks.](media/overview/gs-planning-define-stories.png)](create-your-backlog.md)[![Organize backlog conceptual image of tasks.](media/overview/gs-planning-organize-backlog.png)](organize-backlog.md)[![Manage bugs conceptual image of tasks.](media/overview/gs-planning-manage-bugs.png)](manage-bugs.md)[![Manage issues conceptual image of tasks.](media/overview/gs-planning-manage-issues.png)](manage-issues-impediments.md)
 
-<a id="stack-rank" />
+<a id="stack-rank"></a>
 
 ## Backlog priority or stack rank order
 
@@ -260,7 +260,7 @@ You can only use dragging to reorder or reparent work items assigned to area pat
  
 :::image type="content" source="../plans/media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
 
-<a id="leaf-node" />
+<a id="leaf-node"></a>
 
 ## Display leaf node work items  
 

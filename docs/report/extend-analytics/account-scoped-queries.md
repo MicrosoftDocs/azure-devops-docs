@@ -26,7 +26,7 @@ Project-scope queries help answer questions about a single project whereas organ
 > If you don't have access to all projects in an organization, it is recommended that you apply a project filter to all of your queries. When pulling data into client tools such as Power BI or Excel, using the project path syntax is the best way to ensure that all your data is constrained by the given project. We recommend you use organization-scoped or collection-scoped queries only when you need to report on two or more projects.
 
 
-<a id="project-scope" />
+<a id="project-scope"></a>
 
 ## Project-scoped queries
 
@@ -60,7 +60,7 @@ In the examples provided, make the following replacements:
 > The remaining examples provided in this article are based on a Azure DevOps Services URL. You will need to substitute in your Azure DevOps Server URL to exercise the examples.  
 
 
-<a id="work-item-count" />
+<a id="work-item-count"></a>
 
 ### Return a count of work items 
 
@@ -125,7 +125,7 @@ AreaLevel14	null
 Depth	1
 ``` 
 
-<a id="expand-option" />
+<a id="expand-option"></a>
 
 ### Use of the $expand option 
 
@@ -146,7 +146,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   &$expand=Parent($filter=ProjectName eq '{ProjectName}')
 ```
 
-<a id="org-scope" />
+<a id="org-scope"></a>
 
 ##  Organization-scoped queries  
 
@@ -184,7 +184,7 @@ https://analytics.dev.azure.com/msft-skilling/_odata/v1.0/WorkItems?
 
 -->
 
-<a id="parent-work-items" />
+<a id="parent-work-items"></a>
 
 ### Return the parent of all work items
 
@@ -206,7 +206,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
 
 Without the other filter, the request will fail if the parent of any work item references work items in a project that you don't have read access to.
 
-<a id="project-level-security" />
+<a id="project-level-security"></a>
 
 ## Project-level security restrictions
 

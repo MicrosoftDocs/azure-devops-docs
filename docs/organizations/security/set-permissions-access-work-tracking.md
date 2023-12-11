@@ -33,7 +33,7 @@ To manage work tracking effectively, you can grant or restrict access to differe
 - To set process permissions, you must be a member of the [**Project Collection Administrators** group](change-organization-collection-level-permissions.md) or have explicit permissions to edit a collection process.  
 ::: moniker-end
 
-<a id="business-workflows" /> 
+<a id="business-workflows"></a> 
 
 ## Understand roles and permission levels for work tracking
 
@@ -259,7 +259,7 @@ For more information, see [Create managed queries to list, update, or chart work
 
 [Adhoc searches](../../boards/queries/search-box-queries.md) are powered by a semantic search engine. 
 
-<a id="tags" /> 
+<a id="tags"></a> 
 
 ## Set permissions for work item tags 
 
@@ -394,7 +394,7 @@ The **Manage test plans** permission enables users to do the following tasks:
 - Add or remove test suites to or from test plans 
 - Change test plan properties such as build and test settings 
 
-<a id="process-permissions" />
+<a id="process-permissions"></a>
 
 ::: moniker range=">= azure-devops-2019"  
 

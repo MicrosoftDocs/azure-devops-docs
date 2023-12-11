@@ -105,7 +105,7 @@ Access views that you have favorited by choosing the :::image type="icon" source
 
 ::: moniker range=">= azure-devops-2019"
 
-<a id="team-artifact" />
+<a id="team-artifact"></a>
 
 ## Favorite a project or team  
 

@@ -42,7 +42,7 @@ View work items that you created or are assigned to you. The **Work Items** page
 
 You can start viewing and adding work items once you connect to a project. 
 
-<a id="browser" /> 
+<a id="browser"></a> 
 
 # [Web portal](#tab/browser)
 
@@ -185,7 +185,7 @@ ID    Type    Title      Assigned To          State
 
 ***
 
-<a id="add-work-item" />
+<a id="add-work-item"></a>
 
 ## Add a work item
 
@@ -239,7 +239,7 @@ Enter a title and then save the work item. Before you can change the State from 
 You can [add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists. Users with **Basic** access can create new tags by default, users with **Stakeholder** access can only add existing tags. 
 
 
-<a id="filter" />
+<a id="filter"></a>
 
 ## Filter to create personal views
 
@@ -263,7 +263,7 @@ There's no [**az boards**](/cli/azure//boards) command that applies to filtering
 ***
 
 
-<a id="sort" />
+<a id="sort"></a>
 
 ## Add columns and sort by a column 
 

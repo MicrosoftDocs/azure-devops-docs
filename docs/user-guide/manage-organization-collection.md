@@ -103,7 +103,7 @@ The person who creates a project collection is automatically added as a member t
 
 It's always a good idea to have more than one person who has administrative privileges. To add a user to this group, see [Change permissions at the organization level,Add members to the Project Collection Administrators group](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-collection-administrators-group).
 
-<a id="project-scoped-user-group" /> 
+<a id="project-scoped-user-group"></a> 
 
 ::: moniker range="azure-devops"
 
@@ -128,7 +128,7 @@ All security groups are organization-level entities, even those groups that only
 
 ::: moniker range="azure-devops"
  
-<a id="limit-identity-selection" /> 
+<a id="limit-identity-selection"></a> 
 
 ### Limit identity search and selection  
 

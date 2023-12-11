@@ -128,7 +128,7 @@ You use different WITs to plan and track different types of work. The main reaso
 	- [Add/move/delete custom pages](customize-process-form.md#pages)  
 
 
-<a id="workflow" />
+<a id="workflow"></a>
 
 ## Modify the workflow of a work item type 
 
@@ -145,7 +145,7 @@ Workflow states allow you to track the status of a work item as it moves from ne
 	- [Edit a state (change color or category)](customize-process-workflow.md#edit-state)  
 	- [Remove a state](customize-process-workflow.md#remove-state)     
  
-<a id="custom-control" />
+<a id="custom-control"></a>
 
 ## Add a custom control    
 
@@ -159,7 +159,7 @@ Custom controls provide additional functionality to a work item form.
 To learn more, see [Add extensions and custom controls to a work item type](custom-controls-process.md).
 
 
-<a id="extension" /> 
+<a id="extension"></a> 
 
 ## Add an extension to a work item type
 
@@ -217,7 +217,7 @@ We recommend that you create a test project and apply your customized inherited 
 - [Create a test project and copy of your customized process](#test-project-copy-process)
 - [Create a test organization and import/export your process](#test-import-export-process)
 
-<a id="test-project-copy-process" />
+<a id="test-project-copy-process"></a>
 
 ### Create a test project and copy of your customized process
 
@@ -250,7 +250,7 @@ We recommend that you create a test project and apply your customized inherited 
 
 3. Verify that the field(s) you added appear on the form. Note that the :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: (exclamation mark) icon indicates the field is required.  
 
-<a id="test-import-export-process" />
+<a id="test-import-export-process"></a>
 
 ### Create a test organization and import/export your process
 
