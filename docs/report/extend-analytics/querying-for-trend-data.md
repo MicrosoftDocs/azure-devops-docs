@@ -45,7 +45,7 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 
 
 
-<a id="trend-data" />
+<a id="trend-data"></a>
 
 ## Construct a basic query for trend data   
  

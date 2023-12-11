@@ -161,7 +161,7 @@ For more information, see [Add or modify a field to track work](../../reference/
 
 ::: moniker-end 
 
-<a id="where-clause" />
+<a id="where-clause"></a>
 
 ## Specify filter clauses (`WHERE`)
 
@@ -207,7 +207,7 @@ Each filter condition is composed of three parts, each of which must conform to 
 For a description and reference names of all system-defined fields, see [Work item field index](../work-items/guidance/work-item-field.md).
 
 
-<a id="operators" />
+<a id="operators"></a>
 
 ### Operators 
 
@@ -361,7 +361,7 @@ WHERE
 ```
 
 
-<a id="macros" />
+<a id="macros"></a>
 
 ## Macros or variables
 
@@ -435,7 +435,7 @@ WHERE
 ```
 
 
-<a id="start-of" />
+<a id="start-of"></a>
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -561,7 +561,7 @@ ORDER BY [Microsoft.VSTS.Common.Priority],
 
 
 
-<a id="linked-work-items" />
+<a id="linked-work-items"></a>
 
 ## Query for links between work items
 

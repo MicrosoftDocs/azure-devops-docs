@@ -447,7 +447,7 @@ One of the methods used by Azure DevOps to support integration is to link object
 You can add a link from the work item or from the build and release objects. 
 
 
-<a id="development-control" />
+<a id="development-control"></a>
 
 ### Link work items to development 
 
@@ -455,7 +455,7 @@ The **Development** control supports linking to and displaying links made to bui
 > [!div class="mx-imgBorder"]  
 > ![Development control on work item form with sample links to build, pull requests, and commits.](media/manage-bugs/development-links.png)  
 
-<a id="deployment-control" />
+<a id="deployment-control"></a>
 
 ### Link work items to releases   
 

@@ -62,7 +62,7 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
 
 Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) that we provide out of the box for you and some guidance on widget structure.
 
-<a id="part-1" />
+<a id="part-1"></a>
 
 ## Part 1: Hello World
 
@@ -165,7 +165,7 @@ We use the `WidgetStatusHelper` from WidgetHelpers to return the `WidgetStatus` 
 
 The `vss-extension.json` should always be at the root of the folder (in this guide, `HelloWorld`). For all the other files, you can place them in whatever structure you want inside the folder, just make sure to update the references appropriately in the HTML files and in the `vss-extension.json` manifest. 
 
-<a id="image" />
+<a id="image"></a>
 
 ### Step 4: Your extension&#39;s logo: `logo.png`
 
@@ -276,7 +276,7 @@ Set `addressable` to `true` unless you include other files that don't need to be
 > [!NOTE]
 > For more information about the **extension manifest file**, such as its properties and what they do, check out the [extension manifest reference](./manifest.md).
 
-<a id="package-publish-share" />
+<a id="package-publish-share"></a>
 
 ### Step 6: Package, publish, and share
 
@@ -339,7 +339,7 @@ You'll need a personal access token, too.
 tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
 ```
 
-<a id="add-from-catalog" />
+<a id="add-from-catalog"></a>
 
 ### Step 7: Add widget from the catalog
 
@@ -350,7 +350,7 @@ tfx extension publish --manifest-globs your-manifest.json --share-with yourOrgan
    
    The widget appears on your dashboard.
 
-<a id="part-2" />
+<a id="part-2"></a>
 
 ## Part 2: Hello World with Azure DevOps REST API
 
@@ -360,7 +360,7 @@ below the "Hello World" text.
 
 ![Overview dashboard with a sample widget using the REST API for WorkItemTracking.](../media/add-dashboard-widget/sample2.png)
 
-<a id="step-1-files" />
+<a id="step-1-files"></a>
 
 ### Step 1: HTML 
 
@@ -578,7 +578,7 @@ Your final `hello-world2.html` is as follows:
 </html>
 ```
 
-<a id="widget-extension-manifest" />
+<a id="widget-extension-manifest"></a>
 
 ### Step 5: Extension Manifest Updates
 
@@ -645,7 +645,7 @@ Now, go to your team dashboard at `https:\//dev.azure.com/{yourOrganization}/{yo
 Hover on the Edit button in the bottom right, and select the Add button. The widget catalog opens where you find the widget you installed. 
 Choose your widget and select the 'Add' button to add it to your dashboard.
 
-<a id="part-3" />
+<a id="part-3"></a>
 
 ## Part 3: Hello World with Configuration
 
@@ -845,7 +845,7 @@ At the end, your `configuration.html` looks like this:
     </html>
 ```
 
-<a id="reload-widget" />
+<a id="reload-widget"></a>
 
 ### Step 4: JavaScript - Implement reload in the widget
 

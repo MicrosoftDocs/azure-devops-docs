@@ -120,7 +120,7 @@ You can also [interactively filter a query](../backlogs/filter-backlogs-boards-p
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
-<a id="flat-list" />
+<a id="flat-list"></a>
 
 ## Define a flat-list query
 
@@ -386,7 +386,7 @@ If your query results don't return expected results, do the following steps:
 - Review the options available to specify [fields, operators, and values](query-operators-variables.md).
 - See [best practices](#limit-or-operators), later in this article.  
 
-<a id="ungroup-clause" />
+<a id="ungroup-clause"></a>
 
 ### Ungroup a clause
 

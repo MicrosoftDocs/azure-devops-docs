@@ -169,7 +169,7 @@ Depending on the platform, version, and client you use, you might need to follow
 
 ### [Web portal](#tab/browser/)
 
-<a id="team-services-capture" /> 
+<a id="team-services-capture"></a> 
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -219,11 +219,11 @@ Templates captured through the web portal are assigned a GUID.
 
 ::: moniker-end  
 
-<a id="tfs-portal-capture" /> 
+<a id="tfs-portal-capture"></a> 
 
 ### [Visual Studio 2015](#tab/visual-studio/)
 
-<a id="team-explorer-capture" />
+<a id="team-explorer-capture"></a>
 
 To create work items from templates in Visual Studio or Team Explorer, you can use work item template files (.wt extension). These files are accessible from the Work Items page.
  
@@ -253,7 +253,7 @@ For each work item type, you can see and manage the templates that your team has
 
 ::: moniker range=">= azure-devops-2019"
 
-<a id="team-services-manage" /> 
+<a id="team-services-manage"></a> 
 
 1. From the web portal, open **Project settings**.
 
@@ -267,7 +267,7 @@ For each work item type, you can see and manage the templates that your team has
 
 ::: moniker-end
 
-<a id="team-services-manage" /> 
+<a id="team-services-manage"></a> 
 
 ::: moniker range="tfs-2018"
 
@@ -311,7 +311,7 @@ For example, choose **User Story** to view templates defined for capturing user 
 
 ::: moniker-end
 
-<a id="define-template" />
+<a id="define-template"></a>
 
 ### Create a work item template 
 
@@ -336,7 +336,7 @@ From the work item type page, choose  :::image type="icon" source="../media/icon
 
 ### [Visual Studio 2015](#tab/visual-studio/)
 
-<a id="team-explorer-manage" />
+<a id="team-explorer-manage"></a>
 
 You can use Visual Studio with power tools to manage your own work item templates. For each work item type, you can see your defined templates and perform various actions on them. You can add, edit, delete, copy, and copy templates. You can share your templates with others by sending them the template URL or saving the template as a .wt file.
 
@@ -386,7 +386,7 @@ The main method used to add a work item using a template is to open the template
 
 You can apply a template to a single work item or do a bulk update of several work items.  
 
-<a id="team-services-apply" />
+<a id="team-services-apply"></a>
 
 ### [Web portal](#tab/browser/)
 
@@ -452,7 +452,7 @@ You can apply a template to a single work item or do a bulk update of several wo
 
 ### [Visual Studio 2015](#tab/visual-studio/)
 
-<a id="team-explorer-apply" />
+<a id="team-explorer-apply"></a>
 
 1. Open or run a query that lists the work item(s) whose fields you want to capture.  
 

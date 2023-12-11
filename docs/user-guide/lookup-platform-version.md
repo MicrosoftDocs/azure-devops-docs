@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-<a id="platform-version" />
+<a id="platform-version"></a>
 
 You can tell what platform you use by opening the **About** page for Azure DevOps Services or Azure DevOps Server. 
  

@@ -484,6 +484,21 @@
       "source_path": "docs/extend/publish/manage-ratings-reviews.md",
       "redirect_url": "/azure/devops/extend/publish/overview#respond-to-marketplace-extension-reviews",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/projects/restore-project.md",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-project#restore-a-deleted-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/projects/save-project-data.md",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-project#save-project-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/provide-stakeholder-pipeline-access.md",
+      "redirect_url": "/azure/devops/organizations/security/stakeholder-access",
+      "redirect_document_id": false
     }
   ]
 }

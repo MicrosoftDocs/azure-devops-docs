@@ -321,7 +321,7 @@ az repos policy approver-count update --id
 ***
 
 
-<a id="check-linked-wi" />
+<a id="check-linked-wi"></a>
 
 ## Check for linked work items
 
@@ -350,7 +350,7 @@ To set the policy, under **Branch Policies**, set **Check for linked work items*
 
 You can use Azure CLI [az repos policy work-item-linking](/cli/azure/repos/policy/work-item-linking#az-repos-policy-work-item-linking) to create and update work item linking policies for a branch or repository.
 
-<a id="create-wi-policy" /> 
+<a id="create-wi-policy"></a> 
 
 ### Create work item linking policy
 
@@ -382,7 +382,7 @@ az repos policy work-item-linking create --blocking {false, true}
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
-<a id="update-wi-policy" /> 
+<a id="update-wi-policy"></a> 
 
 ### Update work item linking policy
 

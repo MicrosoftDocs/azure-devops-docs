@@ -373,7 +373,7 @@ To approve releases, a TFS CAL isn't necessary; any user with [stakeholder acces
 
 No, on TFS you don't need parallel jobs to run builds. You can run as many builds as you want at the same time for no additional charge.
 
-<a id="tfs_before_2017" />
+<a id="tfs_before_2017"></a>
 
 ### Do I need parallel jobs to manage releases in versions before TFS 2017?</h3>
 

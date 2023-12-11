@@ -72,7 +72,7 @@ steps:
 
 When you reference windows-latest pool in your YAML pipelines, it will still mean windows-2019 and not windows-2022, while the latter is in preview.
 
-The Windows Server 2022 pipeline image has different tools and tool versions when compared to Windows Server 2019. You can see the details in the software [announcement issue](https://github.com/actions/virtual-environments/issues/3949) and in the documentation [virtual-environments repository](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md).
+The Windows Server 2022 pipeline image has different tools and tool versions when compared to Windows Server 2019. You can see the details in the software [announcement issue](https://github.com/actions/virtual-environments/issues/3949) and in the documentation [virtual-environments repository](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md).
 
 ### General availability of macOS 11 on Microsoft-hosted agents
 

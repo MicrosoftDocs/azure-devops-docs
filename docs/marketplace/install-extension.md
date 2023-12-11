@@ -367,7 +367,7 @@ The following command uninstalls the "Timetracker" extension without prompts for
 ```azurecli
 az devops extension uninstall --extension-name Timetracker --publisher-name 7pace --yes
 ```
-<a id="disable-extension" /> 
+<a id="disable-extension"></a> 
 
 ### Disable an extension
 

@@ -180,7 +180,7 @@ If you haven't upgraded to Azure DevOps Server 2019.1, you can install the Analy
 
     Optionally, if you want to install the Analytics extension on other project collections, select the browser back button. 
 
-<a id="disable-analytics-extension" />
+<a id="disable-analytics-extension"></a>
 
 ## Disable or uninstall the Analytics extension
 

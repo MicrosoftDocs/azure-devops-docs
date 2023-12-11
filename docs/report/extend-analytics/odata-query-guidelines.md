@@ -59,7 +59,7 @@ Queries that violate an OData error rule results in a failed response with a 400
 > }
 > ```
 
-<a id="restrictions" />
+<a id="restrictions"></a>
 
 ## Restrictions 
 
@@ -422,7 +422,7 @@ An alternative approach is to use date surrogate key properties as they don't ke
 >   &$select=WorkItemId, Title, State
 > ```
 
-<a id="performance-guidance" />
+<a id="performance-guidance"></a>
 
 ## Performance guidelines
 

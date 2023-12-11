@@ -65,7 +65,7 @@ For more information, see [Adjust work to fit sprint capacity](adjust-work.md).
 Daily Scrum meetings help teams stay focused on what they need to do to maximize their ability to meet their sprint commitments. The team's Scrum Master should enforce the structure of the meeting and ensure that it starts on time and finishes in 15 minutes or less. Learn more: [Scrum best practices, Daily scrum meeting](best-practices-scrum.md#daily-scrum-meetings).   
 
 
-<a id="forecast" />
+<a id="forecast"></a>
 
 ## Forecast
 
@@ -94,7 +94,7 @@ Scrum Masters help build and maintain healthy teams by employing Scrum processes
 
 [!INCLUDE [temp](../../includes/glossary-terms/sprint-backlogs.md)]  
 
-<a id="sbc" />
+<a id="sbc"></a>
 
 ## Sprint burndown chart
 
@@ -125,7 +125,7 @@ The Sprint review or retrospective meeting occurs at the end of a sprint. This m
 
 A task is a type of work item used to track estimated and remaining work. In Scrum, a task is defined to range between four and twelve hours. Defining tasks are essential for monitoring sprint burndown, working with team capacity, and using the [Taskboard](#taskboard). Tasks are linked to their parent product backlog items or user stories. Learn more: [Add tasks to backlog items](add-tasks.md). 
 
-<a id="taskboard" />
+<a id="taskboard"></a>
 
 ## Taskboard 
 

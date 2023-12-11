@@ -346,7 +346,7 @@ For more information, see the following articles:
 - [Display rollup progress or totals](backlogs/display-rollup.md)
 - [Review team Delivery Plans](plans/review-team-plans.md)
 
-<a id="process-improvement" /> 
+<a id="process-improvement"></a>
 
 ## Process improvement  
 

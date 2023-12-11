@@ -48,7 +48,7 @@ The following sections provide an overview of the functions supported to define 
 
 [!INCLUDE [temp](../includes/feature-matrix-filter-queries.md)]
 
-<a id="macros" /> 
+<a id="macros"></a> 
 
 [!INCLUDE [temp](../includes/feature-matrix-query-macros.md)]
 

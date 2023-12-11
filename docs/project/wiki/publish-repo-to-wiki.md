@@ -209,7 +209,7 @@ Page titles are case-sensitive and must be unique within the folder, and 235 cha
 
 You can delete any Markdown files that you don't want to appear in the wiki from the published folder. If you included the file in an `.order` file, then delete its entry from the `.order` file. For more information, see [Change the page sequence, add, or update an .order file](#page-sequence).
 
-<a id="add-page" />
+<a id="add-page"></a>
 
 ## Add a page or pages  
 
@@ -266,7 +266,7 @@ To add a parent page, first add a Markdown file at the root folder level and the
 
 The last step when you're adding files or folders to the wiki repo is to add or update the `.order` file of the updated folders. This action reflects the sequence of pages you want to show in the TOC. For details, see [Change the page sequence, add, or update a .order file](#page-sequence). Any files that aren't listed in the `.order` file get added to the end of the alphabetical list, as their order is set to `int.MaxValue`.
 
-<a id="page-sequence" />
+<a id="page-sequence"></a>
 
 ## Change the page sequence, add, or update an .order file
 
@@ -317,7 +317,7 @@ To select a wiki version, choose the version from the branch options from the wi
 
 :::image type="content" source="media/wiki/publish-wiki-select-version.png" alt-text="Screenshot showing a selected wiki version from the wiki dropdown menu.":::
 
-<a id="unpublish-wiki" />
+<a id="unpublish-wiki"></a>
 
 ## Unpublish a code wiki
 

@@ -44,7 +44,7 @@ Administrators should be added to the Project Collection Administrators or Proje
 
 For an overview of default permissions, see [Default permissions quick reference](permissions-access.md).  
 
-<a id="security-group-membership" /> 
+<a id="security-group-membership"></a> 
 
 ## Security groups and membership  
 
@@ -114,7 +114,7 @@ You can create [local groups or Active Directory (AD) groups to manage your user
 ::: moniker-end
  
 
-<a id="aad" /> 
+<a id="aad"></a> 
 
 <a name='active-directory-and-azure-active-directory-security-groups'></a>
 
@@ -182,11 +182,11 @@ If you need to restrict view access, then you can [set restrictions through the 
 
 If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,
 no members of the group are able to access the project, collection, or deployment, depending on the group you set.
-<a id="grant-permissions" />  
-<a id="access-levels" />
+<a id="grant-permissions"></a>  
+<a id="access-levels"></a>
 
 
-<a id="project-scoped-user-group" /> 
+<a id="project-scoped-user-group"></a> 
 
 ::: moniker range="azure-devops"
 
@@ -346,7 +346,7 @@ A new window opens that shows the inheritance information for that permission.
 - Don't change the default assignments made to the Valid Users groups. If you remove or set the **View instance-level information** permission to **Deny** for one of the Valid Users groups, no users in the group are able to access the project, collection, or deployment, depending on the group you set.  
 - Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
-<a id="security-roles" />
+<a id="security-roles"></a>
 
 ## Role-based permissions   
 

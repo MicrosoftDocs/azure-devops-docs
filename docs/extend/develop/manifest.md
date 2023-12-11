@@ -26,7 +26,7 @@ See the following example of a typical manifest:
 
 ## Required attributes
 
-<a id="core-properties" />
+<a id="core-properties"></a>
 
 [!INCLUDE [](../includes/manifest-core.md)]
 
@@ -47,7 +47,7 @@ See the following example of a typical manifest:
 
 [!INCLUDE [](../includes/manifest-discovery.md)]
 
-<a id="public-flag" />
+<a id="public-flag"></a>
 
 #### Mark an extension public
 

@@ -421,7 +421,7 @@ steps:
 * Example: `replace('https://www.tinfoilsecurity.com/saml/consume','https://www.tinfoilsecurity.com','http://server')` (returns `http://server/saml/consume`)
 ::: moniker-end
 
-::: moniker range=">= azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 ### split
 * Splits a string into substrings based on the specified delimiting characters 
@@ -750,7 +750,7 @@ stages:
 ```
 
 Stages can also use output variables from another stage.
-In this example, there are also two stages. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs. Note that `stageDependencies` is used in the condition because you are referring to an output variable in a different stage. 
+In this example, there are also two stages. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs.
 
 
 ```yaml
@@ -765,7 +765,7 @@ stages:
        name: printvar
 
 - stage: B
-  condition: and(succeeded(), eq(stageDependencies.A.outputs['A1.printvar.shouldrun'], 'true'))
+  condition: and(succeeded(), eq(dependencies.A.outputs['A1.printvar.shouldrun'], 'true'))
   dependsOn: A
   jobs:
   - job: B1

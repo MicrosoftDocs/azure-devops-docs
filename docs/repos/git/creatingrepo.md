@@ -247,16 +247,13 @@ You can share your code with others by connecting your local Git repo to an **Az
 
     :::image type="content" source="media/creatingrepo/visual-studio-2019/common/azure-clone-repo-popup.png" border="true" alt-text="Screenshot of the 'Clone Repository' popup from the Azure DevOps project site.":::
 
-1. To publish your local commit to **Azure repos**, run the following commands at the command prompt in your local git repo folder, using the clone URL from the previous step.
+1. To publish your existing local git repository to **Azure repos**, run the following commands in the folder containing the local git repository using the clone URL from the previous step. If you don't have a local git repository yet, create one using the previous steps in this article.
 
     > [!div class="tabbedCodeSnippets"]
     ```console
-    > git init 
-    > git remote add origin <clone URL> 
-    > git add .
-    > git status   
-    > git commit -m "initial commit"  
-    > git push -u origin main 
+    > git remote add origin <clone URL>
+    > git status
+    > git push -u origin main
     ```
 
    Your code is now published to the `main` branch of then **Azure Repos** Git repo.

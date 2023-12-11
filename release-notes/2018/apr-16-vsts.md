@@ -71,7 +71,7 @@ However, with this Update, the full phrase is returned and highlighted.
 
 ## Work
 
-<a id="query-macro" />
+<a id="query-macro" ></a>
 
 ### Query work in the Area Paths of a Team with the new @TeamAreas macro
 
