@@ -99,7 +99,7 @@ Most build and test integration fields have a data type of String, PlainText, or
 :::row-end:::
   
 
-<a id="linked-bugs" />
+<a id="linked-bugs"></a>
 
 ## List bugs and the test cases that test them
 
@@ -110,7 +110,7 @@ Open a new query, set the query type to Work items and direct links. Filter for 
 > [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the **Test>Test Plans** page](../../test/create-a-test-plan.md). 
 
-<a id="fields" />
+<a id="fields"></a>
 
 ## Build and test data fields  
 
@@ -417,11 +417,11 @@ The following fields don't appear on work item forms, but these fields are track
 
 
 
-<a id="tf-build" /> 
+<a id="tf-build"></a> 
 
 ### Fields that integrate with Team Foundation Build
 
-Team Foundation Build is the on-premise build system you can use with Azure DevOps Server and TFS. You can configure your build process by using Team Foundation Build, and Team Foundation Build can generate work items when a build fails. It can also add build information to work items that were resolved in a particular build. For this to work, Team Foundation Build requires that the following two fields be added to the work item type definition: **Found In** and **Integration Build**.
+Team Foundation Build is the on-premises build system you can use with Azure DevOps Server and TFS. You can configure your build process by using Team Foundation Build, and Team Foundation Build can generate work items when a build fails. It can also add build information to work items that were resolved in a particular build. For this to work, Team Foundation Build requires that the following two fields be added to the work item type definition: **Found In** and **Integration Build**.
 
 **Found In** and **Integrated in Build** fields are defined for Bugs in the default processes. These fields associate bugs with the builds where they were found or fixed. 
 
@@ -449,7 +449,7 @@ When the **Found In** field is present in a WIT definition, Team Foundation Buil
 When the **Integration Build** field is present in the WIT definition, Team Foundation Build identifies work items that were resolved with each build and then updates those work items to set the build number in which they were resolved in the **Integration Build** field. If the **Integration Build** field is missing, Team Foundation Build doesn't store the build number in the work items, and everything else works as expected.
 
 
-<a id="global-list" /> 
+<a id="global-list"></a> 
 
 ### Builds and global list autopopulation
 
@@ -475,7 +475,7 @@ By adding a **GLOBALLIST** element to the **FIELD** definition, you can provide 
 ::: moniker-end
 
 
-<a id="tf-build" /> 
+<a id="tf-build"></a> 
 
 ### Fields that Integrate with Test Plans
 
@@ -509,5 +509,5 @@ For more information about Actions, see [Automate field assignments based on Sta
 
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 
-- [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md)  
+- [Link work items to other objects](../backlogs/add-link.md)  
 - [Link and attachment queries](linking-attachments.md)

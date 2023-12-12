@@ -21,7 +21,7 @@ monikerRange: 'azure-devops'
 [!INCLUDE [sign-in-github-account](../../includes/sign-in-github-account.md)]
 
 
-<a id="create-project" />
+<a id="create-project"></a>
 
 ## Create a project 
 

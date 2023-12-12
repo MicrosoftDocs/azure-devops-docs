@@ -142,7 +142,7 @@ From your web browser, open your product backlog.
 ::: moniker-end  
 
 
-<a id="drag-drop" />
+<a id="drag-drop"></a>
 
 ## Assign work from your backlog to a sprint 
    

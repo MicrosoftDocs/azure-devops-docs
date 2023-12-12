@@ -7,24 +7,22 @@ ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 06/27/2022
+ms.date: 11/13/2023
 ---
-
 
 # Resolve Azure DevOps Office integration issues
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads). These software installs the Azure DevOps Office Integration Add-in or Team Foundation Office Integration Add-in  For a list of prerequisites, see [Azure Boards and Office integration](track-work.md). 
+All Office integration tasks require an installed version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads). The software installs the Azure DevOps Office Integration Add-in or Team Foundation Office Integration Add-in.  For a list of prerequisites, see [Azure Boards and Office integration](track-work.md). 
 
-If you don't see the **Team** ribbon in Microsoft Excel, as shown in the image below, you may want to resolve the issue with the procedures provided in this article. 
+If you don't see the **Team** ribbon in Microsoft Excel, as shown in the following image, you might want to resolve the issue with the procedures provided in this article. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Excel TFS-Office integration Team ribbon.](media/excel-team-ribbon.png)
 
 [!INCLUDE [temp](../../includes/deprecate-project.md)]
  
-
 ## Enable the Azure DevOps add-in 
 
 1.	From the Excel **File** menu, choose **Options**.  
@@ -40,7 +38,7 @@ If you don't see the **Team** ribbon in Microsoft Excel, as shown in the image b
 
 4.	Restart Excel. You should now see the **Team** ribbon. 
 
-If the **Team** ribbon doesn't appear at next launch, the load behavior of the add-in may have changed and you'll need to complete the following steps: 
+If the **Team** ribbon doesn't appear at next launch, the load behavior of the add-in might be changed, so complete the following steps: 
 
 ### Update the registry 
 
@@ -49,27 +47,29 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Run regedit command.](media/tfs-office-issues-run-regedit.png) 
 
-2.	Go to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
-	
-	> [!NOTE]  
-	> If there are multiple folders with the same name, select the one with the highest version number. 
+1. Go to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 
-	- `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins` (if this key doesn't exist, try one of the options below)
-	- `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Addins`
-	- `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins`
+> [!NOTE]
+> If there are multiple folders with the same name, select the one with the highest version number. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of LoadBehavior entry.](media/tfs-office-issues-regedit-loadbehavior-key.png) 
+- `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins` (if this key doesn't exist, try one of the following options)
 
-3.	Double-click to open **LoadBehavior** and set the value data field to **3** (if the value is **0**, the **Team** ribbon won't load).
+- `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Addins`
+
+- `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins`
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of LoadBehavior entry.](media/tfs-office-issues-regedit-loadbehavior-key.png) 
+
+3.	Double-click to open **LoadBehavior** and set the value data field to **3** (if the value is **0**, the **Team** ribbon doesn't load).
  
-4.	Press **OK** and restart Excel. 
+4.	Select **OK** and restart Excel. 
 
 	To learn more about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins#LoadBehavior).  
 
 ## Office add-in doesn't load or open in Excel when Visual Studio fails
 
-To connect to Azure Boards, go to the **Team** ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, then you may need to repair Visual Studio. 
+To connect to Azure Boards, go to the **Team** ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, then you might need to repair Visual Studio. 
  
 > [!div class="mx-imgBorder"]
 > ![TF86001 error message, Team Foundation was unable to load the Office Add-in.](media/tfs-office-issues-tf86001.png) 
@@ -131,6 +131,33 @@ If the above steps are unsuccessful, try the following steps:
 
 3.	Contact the Microsoft support team.  
 
+## User can't sign in to Azure DevOps from Excel after password change
+
+If a user changed their network password and begins receiving authentication errors with the new account info, they might be experiencing a known issue. The token stored within Visual Studio is no longer valid, but the system doesn't recognize that it needs to be refreshed.  The user doesn't have to take any action, the token expires after some time and authentication begins working again, but there's no way to estimate the delay. Use the following workaround to manually remove the token.
+
+#### Remove the token from the registry
+
+1. Close all open instances of Excel.
+1. Save and then clear the registry path, these commands can be run from Command Prompt opened with the "run as administrator" option:
+   ```CommandPrompt
+   reg export HKEY_CURRENT_USER\SOFTWARE\Microsoft\VSCommon\14.0\ClientServices\TokenStorage\VisualStudio\VssApp %TEMP%\oicreds.reg
+   ```
+
+   ```CommandPrompt
+   reg delete HKEY_CURRENT_USER\SOFTWARE\Microsoft\VSCommon\14.0\ClientServices\TokenStorage\VisualStudio\VssApp
+   ```
+
+1. Open Excel and it prompts for sign-in when it connects to Azure DevOps.
+
+Wait until the token expires or delete this reg key every time a password changes, if it's configured in a way that causes this issue.  
+
+## Intermittent issues doing refresh and publish
+
+If a user has errors when doing a refresh or publish, it might be due to a Conditional Access Policy in Microsoft Entra ID. To resolve this issue, try clearing the contents of the folder ```%LOCALAPPDATA%\.IdentityService```. 
+
+## Unable to cast COM object of type Microsoft.Office.Interop.Excel.ApplicationClass...
+
+You might receive an error message when you try to open a TFS work item list in Excel, triggered from Team Explorer. For more information, see [How to solve “Unable to cast COM object of type Microsoft.Office.Interop.Excel.ApplicationClass' to interface type 'Microsoft.Office.Interop.Excel._Application'.”](/archive/blogs/dau-blog/how-to-solve-unable-to-cast-com-object-of-type-microsoft-office-interop-excel-applicationclass-to-interface-type-microsoft-office-interop-excel-_application) 
 
 ## Related articles
 - [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  

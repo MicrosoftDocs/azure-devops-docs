@@ -241,7 +241,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column-end:::
    :::column span="1":::
       <br/>
-      <a id="chart-wit-widget" />   
+      <a id="chart-wit-widget"></a>   
       Adds a tile to display a progress or trend chart that builds off a shared work item query.   
         
       From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).      
@@ -605,7 +605,7 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      <a id="test-results-trend-advanced" />
+      <a id="test-results-trend-advanced"></a>
       ### Test Results Trend (Advanced)
    :::column span="1":::
       > [!div class="mx-imgBorder"]  
@@ -737,7 +737,7 @@ Add one or more of the following widgets to support adding:
    :::column-end:::
 :::row-end:::
 
-<a id="marketplace" />
+<a id="marketplace"></a>
 
 ## Marketplace widgets
 

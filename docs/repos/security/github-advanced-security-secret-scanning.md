@@ -6,10 +6,10 @@ ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
 ms.custom: cross-service
-ms.author: jukullam
-author: juliakm 
+ms.author: laurajiang
+author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 05/09/2023
+ms.date: 09/20/2023
 ---
 
 # Secret scanning 
@@ -233,7 +233,7 @@ This table lists the secrets supported by secret scanning. You can see the types
 | Microsoft                 | Office/Teams Inbound Webhook                                                                      | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
 | Microsoft                 | Azure Storage Key Identifiable                                                                    | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
 | Microsoft                 | Azure Cache for Redis Access Key                                                                  | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Azure Active Directory Application Secret                                                         | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
+| Microsoft                 | Microsoft Entra Application Secret                                                         | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
 | Microsoft                 | Azure Functions V4+ KEY                                                                           | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
 | Microsoft                 | Azure Cosmos DB Key Identifiable                                                                  | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
 | Microsoft                 | Azure Batch Key Identifiable                                                                      | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |

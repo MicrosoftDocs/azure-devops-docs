@@ -5,7 +5,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 01/30/2023
+ms.date: 11/27/2023
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -45,6 +45,12 @@ In addition to viewing logs in the pipeline build summary, you can download comp
     system.debug: true
   ```
   
+::: moniker-end
+
+::: moniker range="> azure-devops-2022"
+
+Azure pipeline logs can now capture resource utilization metrics such as memory, CPU usage and available disk space. The logs also include resources used by the pipeline agent and child processes including tasks run in a job. If you suspect your pipeline job may run into resource constraints, enable verbose logs to have resource utilization information injected into pipeline logs. This works on any agent, independent from hosting model.
+
 ::: moniker-end
 
 

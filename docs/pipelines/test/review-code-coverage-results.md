@@ -4,8 +4,8 @@ description: Review code coverage results in Azure Pipelines or Team Foundation 
 ms.assetid: 86D94FB7-D730-4ECE-8300-5E76934090A5
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18, cross-service"
-ms.author: vinojos
-author: vinodjo
+ms.author: ravikum
+author: raviLiftr
 ms.date: 06/23/2020
 monikerRange: '<= azure-devops'
 ---
@@ -35,7 +35,7 @@ over time by reducing the test debt.
 
 To view an example of publishing code coverage results for your choice of language,
 see the **Ecosystems** section of the Pipelines topics. For example, collect and publish
-code coverage for [JavaScript](../ecosystems/javascript.md) using Istanbul.
+code coverage for [JavaScript](../ecosystems/customize-javascript.md) using Istanbul.
 
 ## View results 
 

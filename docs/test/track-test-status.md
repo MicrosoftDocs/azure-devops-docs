@@ -5,8 +5,8 @@ description: Learn how to view the status of your planned testing using an out-o
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: sdanie
-author: steved0x
+ms.author: ravikum
+author: raviliftr
 monikerRange: '<= azure-devops'
 ms.date: 12/08/2021
 ---
@@ -21,7 +21,7 @@ View the status of planned tests or monitor testing progress by defining test ca
 To track the progress of more than one test plan or test suite, open the [Progress Report](progress-report.md).
 ::: moniker-end
 
-<a id="charts" /> 
+<a id="charts"></a> 
 
 ## Track testing progress
 

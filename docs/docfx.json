@@ -10,7 +10,8 @@
                     "**/**.yml"],
         "exclude": [
           "artifacts/nuget/bootstrap-nuget.md",
-          "**/obj/**",
+          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
+           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
           "**/_shared/**",
@@ -23,8 +24,8 @@
       },
       {
         "files": [
-          "artifacts/nuget/bootstrap-nuget.md"
-        ],
+          "artifacts/nuget/bootstrap-nuget.md",
+          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md"        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -134,11 +135,12 @@
         "pipelines/security/**": "jukullam",
         "pipelines/targets/**": "rabououn",
         "pipelines/tasks/**": "sdanie",
-        "pipelines/test/**": "sdanie",
+        "pipelines/test/**": "ravikum",
         "service-hooks/**": "aaronha",
         "repos/tfvc/**": "vijayma",
         "repos/get-started/**": "vijayma",
-        "repos/git/**": "vijayma"
+        "repos/git/**": "vijayma",
+        "test/**": "ravikum"
       },
       "author": {
         "artifacts/**": "ramiMSFT",
@@ -165,11 +167,12 @@
         "pipelines/security/**": "juliakm",
         "pipelines/targets/**": "ramiMSFT",
         "pipelines/tasks/**": "steved0x",
-        "pipelines/test/**": "steved0x",
+        "pipelines/test/**": "raviLiftr",
         "service-hooks/**": "aaronhallberg",
         "repos/tfvc/**": "MaximMalygin",
         "repos/get-started/**": "vijayma",
-        "repos/git/**": "vijayma"
+        "repos/git/**": "vijayma",
+        "test/**": "raviLiftr"
       },
       "ms.service": {
         "pipelines/**": "azure-devops-pipelines",

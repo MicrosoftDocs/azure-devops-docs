@@ -85,9 +85,9 @@ To verify the permissions for your project's contributors, make sure you are a m
 
 1. Select **Save changes** when you are done.
 
-<a id="deployment-group" />
-<a id="variable-group" />
-<a id="library" />
+<a id="deployment-group"></a>
+<a id="variable-group"></a>
+<a id="library"></a>
 
 ::: moniker-end
 
@@ -117,7 +117,7 @@ In the following example, we will configure permissions for variable groups.
 
 ::: moniker range="tfs-2018"
 
-<a id="task-group" />
+<a id="task-group"></a>
 
 ## Manage task group permissions
 
@@ -139,7 +139,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ::: moniker range="tfs-2018"
 
-<a id="collection-level" /> 
+<a id="collection-level"></a> 
 
 ## Manage permissions for build administrators group
  

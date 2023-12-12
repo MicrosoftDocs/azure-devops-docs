@@ -42,7 +42,7 @@ Use [templates](templates.md) to define variables in one file that are used in m
 
 Azure DevOps supports multi-line variables but there are a few limitations.
 
-Downstream components such as pipeline tasks may not handle the variable values correctly. 
+Downstream components such as pipeline tasks might not handle the variable values correctly. 
 
 Azure DevOps won't alter user-defined variable values. Variable values need to be formatted correctly before being passed as multi-line variables. When formatting your variable, avoid special characters, don't use restricted names, and make sure you use a line ending format that works for the operating system of your agent. 
 
@@ -296,7 +296,7 @@ Using the Azure DevOps CLI, you can create and update variables for the pipeline
 - Sign into Azure DevOps using `az login`.
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
-<a id="create-variable" />
+<a id="create-variable"></a>
 
 ### Create a variable
 
@@ -336,7 +336,7 @@ Name        Allow Override    Is Secret    Value
 Configuration  False             False        platform
 ```
 
-<a id="update-variable" />
+<a id="update-variable"></a>
 
 ### Update a variable
 
@@ -380,7 +380,7 @@ Name           Allow Override    Is Secret    Value
 Configuration  False             False        config.debug
 ```
 
-<a id="delete-variable" />
+<a id="delete-variable"></a>
 
 ### Delete a variable
 
@@ -424,6 +424,8 @@ Deleted variable 'Configuration' successfully.
 ::: moniker range=">= azure-devops-2019"
 
 Don't set secret variables in your YAML file. Operating systems often log commands for the processes that they run, and you wouldn't want the log to include a secret that you passed in as an input. Use the script's environment or map the variable within the `variables` block to pass secrets to your pipeline.
+
+[!INCLUDE [secrests masked](./includes/masked-secrets.md)]
 
 You need to set secret variables in the pipeline settings UI for your pipeline. These variables are scoped to the pipeline where they are set. You can also set [secret variables in variable groups](#reference-secret-variables-in-variable-groups). 
 
@@ -861,7 +863,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]  # map in the variable
                                                                           # remember, expressions require single quotes
@@ -920,7 +922,7 @@ jobs:
 # Set an output variable from a job with a matrix
 - job: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   strategy:
     maxParallel: 2
     matrix:
@@ -940,7 +942,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromJobADebug: $[ dependencies.A.outputs['debugJob.setvarStep.myOutputVar'] ]
   steps:
@@ -954,7 +956,7 @@ jobs:
 # Set an output variable from a job with slicing
 - job: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
     parallel: 2 # Two slices
   steps:
   - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
@@ -966,7 +968,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
   steps:
@@ -982,7 +984,7 @@ jobs:
 # Set an output variable from a deployment
 - deployment: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   environment: staging
   strategy:
     runOnce:
@@ -997,7 +999,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
   steps:
@@ -1133,7 +1135,7 @@ steps:
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-If a variable appears in the `variables` block of a YAML file, its value is fixed and can't be overridden at queue time. Best practice is to define your variables in a YAML file but there are times when this doesn't make sense. For example, you may want to define a secret variable and not have the variable exposed in your YAML. Or, you may need to manually set a variable value during the pipeline run.
+If a variable appears in the `variables` block of a YAML file, its value is fixed and can't be overridden at queue time. Best practice is to define your variables in a YAML file but there are times when this doesn't make sense. For example, you might want to define a secret variable and not have the variable exposed in your YAML. Or, you might need to manually set a variable value during the pipeline run.
 
 You have two options for defining queue-time values. You can define a variable in the UI and select the option to **Let users override this value when running this pipeline** or you can use [runtime parameters](runtime-parameters.md) instead. If your variable is not a secret, the best practice is to use [runtime parameters](runtime-parameters.md).
 
@@ -1321,3 +1323,12 @@ There is no [**az pipelines**](/cli/azure/pipelines) command that applies to the
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
+---
+
+## Related articles
+
+* [Set variables in scripts](set-variables-scripts.md)
+* [Use predefined variables](../build/variables.md)
+* [Expressions](expressions.md)
+* [Variable group](../library/variable-groups.md)

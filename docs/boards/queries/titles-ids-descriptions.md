@@ -16,13 +16,11 @@ ms.date: 10/06/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
+When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, see [Create a query/Best practices](using-queries.md#best-practices).  
 
 ## Supported operators and macros 
 
 Query clauses that specify a text or rich-text field can use the operators and macros listed in the following table.
-
-
 
 ---
 :::row:::
@@ -88,6 +86,15 @@ When you want to filter on a string match, try using the `Contains Words` operat
 
 While the `Contains` operator runs a table scan, which isn't only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
 
+> [!NOTE]
+> The `Contains Words` operator makes use of SQL's [full-text search indexing](./query-operators-variables.md#full-text). When a new value is saved to a long-text field, SQL Server will:
+>
+> - Split the phrase into individual words
+> - Remove any common words that don't really add value to a search (like "a" or "is" in English)
+> - Convert words to their common stem (e.g. running, ran, and runner would get converted into "run", as they are all variations on that word)
+> - Store these unique keywords in an index.
+>
+> When a user then runs a query on this field using the `Contains Words` operator, the search will be run against the unique keywords stored in the index. For long-text fields, this makes searching much more efficient and quicker than doing a substring search. By default, SQL defines a "word" as a set of characters between punctuation. For example, periods signify the end of a word, but the period is not considered to be part of the word. Because the full-text search index contains keywords instead of exact phrases, you'll end up getting all the results that contain the same keywords, as determined by the indexing.
 
 <a id="keyword"/>
 
@@ -144,7 +151,7 @@ For example, the following query filters list all work items where some entries 
 
 ::: moniker-end
 
-<a id="no-tags" />
+<a id="no-tags"></a>
 
 > [!NOTE]
 > The ability to query for work items that don't have any tags attached to them is not a supported feature. If you'd like to up vote the request to support this feature, you can do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 
@@ -173,7 +180,7 @@ The default assignments of work item types to each category are listed below for
 
 Each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). You can add custom work item types to a backlog. For more information, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
 
-<a id="following" />
+<a id="following"></a>
 
 ## Query for work items that you're following
 
@@ -185,7 +192,7 @@ For example, the following query shows how to query across all projects for acti
 :::image type="content" source="../work-items/media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
 
 
-<a id="recent-macros" />
+<a id="recent-macros"></a>
 
 
 ## Query for recent work item activity
@@ -203,7 +210,7 @@ For example, the following query shows how to query for work items that you've r
 :::image type="content" source="media/titles-ids/my-recent-activity-macro-query.png" alt-text="Query Editor, with ID In @MyRecentActivity query clause":::
 
 
-<a id="fields" />
+<a id="fields"></a>
 
 ## Common fields for most work item types 
 
@@ -349,8 +356,7 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 
 > [!NOTE]  
-> 1. To learn more about working with rich-text fields, see [Share information within work items](share-plans.md#rich-text).   
-> 2. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
+> Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
 
 
 ## Related articles

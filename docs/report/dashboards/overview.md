@@ -20,7 +20,7 @@ Gain visibility into your team's progress by adding one or more widgets or chart
 
 If you're just starting out, read [Add, rename, and delete dashboards](dashboards.md). Looking for instructions on a specific task, in context chart, widget, or report? See [Dashboards and widgets quick reference](quick-ref.md). To learn about our reporting solutions, read [Reporting Roadmap](../powerbi/reporting-roadmap.md).
 
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+[!INCLUDE [temp](../../includes/version-selector.md)]
 
 
 ## Supported capabilities, permissions, and access
@@ -375,7 +375,7 @@ To learn more, see the following articles:
 
 ::: moniker-end
 
-<a id="work-tracking-analytics" />
+<a id="work-tracking-analytics"></a>
 
 ## In-context reports: Work tracking 
 
@@ -455,7 +455,7 @@ To learn more about these reports, see one of the following articles:
 
 
 
-<a id="incontext-reports" />  
+<a id="incontext-reports"></a>  
 
 ::: moniker range=">= azure-devops-2020"
 

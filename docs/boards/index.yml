@@ -112,8 +112,8 @@ landingContent:
             url: ./github/link-to-from-github.md
       - linkListType: concept
         links:
-          - text: Link work items to support traceability
-            url: ./queries/link-work-items-support-traceability.md
+          - text: Link work items to other objects
+            url: ./backlogs/add-link.md
       - linkListType: tutorial
         links:
           - text: Use work item templates
@@ -172,8 +172,6 @@ landingContent:
             url: ./queries/query-index-quick-ref.md
           - text: Work item field index
             url: ./work-items/guidance/work-item-field.md
-          - text: Default work tracking permissions
-            url: ../organizations/security/permissions-access-work-tracking.md
   - title: Developer resources
     linkLists:
       - linkListType: reference

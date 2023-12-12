@@ -154,7 +154,7 @@ Use these options when you want to show work items assigned to one or more team 
 
 ## Define backlog items
 
-It's useful to be able to add work items quickly and refine details later when more information becomes available. Often you use a query to help [triage work](../queries/triage-work-items.md) added to the backlog to review, refine, and add details to work items that you entered through your backlog. 
+It's useful to be able to add work items quickly and refine details later when more information becomes available. Use queries on your backlog to triage, review, refine, and add details to work items that you entered through your backlog. 
 
 To quickly define many items to a backlog, perform the following steps. 
 

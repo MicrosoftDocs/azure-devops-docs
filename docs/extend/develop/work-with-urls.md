@@ -49,7 +49,7 @@ Write-Host $orgUrl
 
 If this task is executed on an organization where the primary URL is the new URL form, the output is `https://dev.azure.com/{organization}`. The same task executed on an organization where the primary URL is the legacy URL form outputs `https://{organization}.visualstudio.com`.
 
-It's therefore important that Azure Pipeline tasks and services that receive events from service hooks handle both URL forms.
+It's therefore important that Azure Pipelines tasks and services that receive events from service hooks handle both URL forms.
 
 ## URLs returned in REST APIs
 

@@ -76,8 +76,8 @@ The following sections describe arguments and options of the `workspace` command
 |`/newname`|Renames an existing workspace.|
 |`/noprompt`|Performs the specified workspace command without displaying a dialog box.|
 |`/collection`|Specifies the project collection.|
-|`/permission`|Specifies the options for workspace permissions:</p><ul><li><p>`Private`: Only the owners can use, check in files to, or administer the workspace.</p></li><li><p>`Public Limited`: Any valid user can use the workspace. But only the owners can check in files to or administer the workspace.</p></li><li><p>`Public`: Any valid user can use, check in files to, or administer the workspace.</p></li></ul>|
-|`/location`|Specifies where the workspace is created:</p><ul><li><p>`local`: On the client machine. This value is the default.</p></li><li><p>`server`: On the Azure DevOps server.</p></li></ul>|
+|`/permission`|Specifies the options for workspace permissions:</p><ul>- `Private`: Only the owners can use, check in files to, or administer the workspace.</p></br>- `Public Limited`: Any valid user can use the workspace. But only the owners can check in files to or administer the workspace.</p></br>- `Public`: Any valid user can use, check in files to, or administer the workspace.</p></br></ul>|
+|`/location`|Specifies where the workspace is created:</p><ul>- `local`: On the client machine. This value is the default.</p></br>- `server`: On the Azure DevOps server.</p></br></ul>|
 |`/login`|Specifies the username and password to authenticate the user with Azure DevOps.|
 |`/newowner`|Specifies the username for the new owner of the workspace.|
 
@@ -113,6 +113,29 @@ If you delete a workspace that contains pending changes, TFVC cancels the pendin
 
 > [!NOTE]
 > Commands that run manually require the `/noprompt` option to bypass user acknowledgement. Be careful if you use the PowerShell `Start()` method to run commands. The `/noprompt` option can be automatically set in PowerShell.
+
+
+When deleting a workspace you need to provide the `<workspace-owner>` and `<workspace-name>`
+
+You can use the `workspace` command to retrieve those values. For more information, see [workspaces command](/azure/devops/repos/tfvc/workspaces-command?view=azure-devops).
+To find the `<workspace-owner>` value, run the following command:
+
+```
+c:\projects>tf workspaces /computer:* /owner:* /collection:`<team-project-collection-url>` /format:xml
+```
+
+To find the `<workspace-name>` value, use the `<OwnerId>` value from the previous command's output as the `<workspace-owner>` value. That value has the format of an Azure Active Directory (Azure AD) object ID followed by a backslash and a user principal name. Use the entire value. Then run the following command:
+
+```
+c:\projects>tf workspaces /owner:<workspace-owner> /computer:* /collection:`<team-project-collection-url>`
+```
+
+To delete the workspace, run the following command:
+
+```
+c:\projects>tf workspace /delete <workspace-name>;<workspace-owner> /collection:<team-project-collection-url>`
+```
+
 
 ### Edit a workspace
 

@@ -120,11 +120,11 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 [Add a user](../accounts/add-organization-users.md#add-user) | [List users](#list-users) | [Remove a user](../accounts/delete-organization-users.md#remove-user) | [Update a user](../accounts/add-organization-users.md#update-user) | [Show users](../accounts/add-organization-users.md#show-users)
 
-<a id="list-users" /> 
+<a id="list-users"></a> 
 
 ### List users
 
-You can list the users in an organization with the [az devops user list](/cli/azure/devops/user#az-devops-user-list) command, which doesn't apply to users added via Azure Active Directory groups. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can list the users in an organization with the [az devops user list](/cli/azure/devops/user#az-devops-user-list) command, which doesn't apply to users added via Microsoft Entra groups. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user list [--org] [--skip] [--top]
@@ -166,8 +166,7 @@ f14a4f19-9910-6116-9836-cccd6dd1b7b7  contoso2@contoso.com    contoso2@contoso.c
 
 - [About access levels](access-levels.md)
 - [Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
-- [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs)
-- [Default permissions and access](permissions-access.md). 
+- [Default permissions and access](permissions-access.md)
 
 ::: moniker-end
 
@@ -175,7 +174,6 @@ f14a4f19-9910-6116-9836-cccd6dd1b7b7  contoso2@contoso.com    contoso2@contoso.c
 
 - [About access levels](access-levels.md)
 - [Change access levels](change-access-levels.md)
-- [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs)
-- [Default permissions and access](permissions-access.md). 
+- [Default permissions and access](permissions-access.md)
 
 ::: moniker-end

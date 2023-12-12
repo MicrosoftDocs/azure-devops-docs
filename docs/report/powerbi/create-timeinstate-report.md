@@ -122,7 +122,7 @@ By default, Power BI shows states sorted alphabetically in a visualization. It c
 
 	:::image type="content" source="media/measure/column-sort-order-select.png" alt-text="Screenshot of Power BI Column tools tab, Sort by column selection.":::
 
-<a id="date-previous" />
+<a id="date-previous"></a>
 
 ## Add Date Previous
 
@@ -158,7 +158,7 @@ The **Date Previous** calculated column uses three DAX functions, [`MAX`](/dax/m
 > [!TIP] 
 > From the context menu for the *Date* and *Previous Date* fields, choose **Date** (instead of **Date Hierarchy**) to see a single date for these fields.   
 
-<a id="date-diff-in-days" />
+<a id="date-diff-in-days"></a>
 
 ## Add Date Diff in Days 
 
@@ -331,8 +331,8 @@ The next parameter, `'View Name'[Work Item Id], 'View Name'[Work Item Id]`, spec
 
 And, the last parameter, `'View Name'[Date], 'View Name'[Date Previous]`, specifies that the date of the row being returned must have a [Date] that matches the [Previous Date] of the current row. In a snapshot, only one row can meet this criteria.
 
-<a id="state-changed" />
-<a id="state-previous" />
+<a id="state-changed"></a>
+<a id="state-previous"></a>
 
 ## Add State Changed
 
@@ -358,7 +358,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 The calculated column is a boolean value that identifies whether the row is a state transition. By using the `Not Equal To` operator, you correctly catch rows where the previous state doesn't match the current state, which means the comparison returns True as expected.  
 
 
-<a id="state-flow" />
+<a id="state-flow"></a>
 
 ## Add State Flow
 
@@ -460,8 +460,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > [!NOTE]
 > You may need to revise the above definition based on the workflow states used by your project. For example, if your project uses *Done* in place of *Closed*. 
 
-
-<a id="dax-functions" />
+<a id="dax-functions"></a>
 
 ## DAX functions
 

@@ -383,8 +383,8 @@ The options you can choose for a queuing policy are:
     stage are sent out in sequence.
 
   - **Deploy latest and cancel the others**:
-    Use this option if you're producing releases faster
-    than builds, and you only want to deploy the latest build.
+    Use this option if you're producing builds faster
+    than releases, and you only want to deploy the latest build.
 
 To understand how these options work, consider a scenario
 where releases **R1**, **R2**, **...**, **R5** of a

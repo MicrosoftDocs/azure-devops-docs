@@ -7,17 +7,7 @@ ms.category:
     - devops
     - web
     - featured
-ms.custom:
-    - acom-architecture
-    - devops
-    - continuous integration
-    - continuous delivery
-    - CI/CD
-    - continuous deployment
-    - interactive-diagram
-    - pricing-calculator
-    - is-deployable
-    - "https://azure.microsoft.com/solutions/architecture/azure-devops-continuous-integration-and-continuous-deployment-for-azure-web-apps"
+ms.custom: acom-architecture, devops, continuous integration, continuous delivery, CI/CD, continuous deployment, interactive-diagram, pricing-calculator, is-deployable, 'https://azure.microsoft.com/solutions/architecture/azure-devops-continuous-integration-and-continuous-deployment-for-azure-web-apps', devx-track-extended-java
 name: CI/CD for Azure Web Apps with Azure Pipelines
 azureCategories:
   - devops

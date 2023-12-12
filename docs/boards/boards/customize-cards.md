@@ -427,7 +427,6 @@ If you want to preserve the backlog priority when you move a card to a new colum
 - [Configure status badges](../github/configure-status-badges.md) 
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)  
-- [Set working days](../../organizations/settings/set-working-days.md) 
 - [Set up swimlanes](expedite-work.md)
 ::: moniker-end
 
@@ -436,5 +435,4 @@ If you want to preserve the backlog priority when you move a card to a new colum
 - [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)  
-- [Set working days](../../organizations/settings/set-working-days.md) 
 ::: moniker-end

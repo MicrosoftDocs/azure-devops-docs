@@ -22,3 +22,8 @@ We now have the following lightweight, auth-only tasks in GA that we recommend c
 2. NuGet Authenticate
 3. Python Pip Authenticate
 4. Python Twine Upload Authenticate
+
+> [!Important]
+> Migration Notice:
+> For those using the NuGetRestoreV1 and NuGetInstallerV0 pipeline tasks, it's imperative to transition to the NuGetCommand@2 pipeline task as soon as possible. Warnings will be issued in your pipelines soon. If no action is taken, starting November 27th, 2023, your builds will fail.
+

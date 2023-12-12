@@ -48,14 +48,14 @@ You can create a subscription for the following categories and select from the f
 
 |Category  |Template options  |
 |---------|---------|
-|Build | <ul><li>a build completes</li><li>a build fails</li><li>a legacy XAML build controller or agent's status changes</li><li>a legacy XAML build's quality changes</li></ul>   |
-|Code (Git)  |  <ul><li>a commit is pushed</li><li>a pull request is created or updated</li><li>a pull request my team is a reviewer on is updated</li><li>a comment is made on a pull request</li></ul>  |
-|Code (TFVC)    | <ul><li>code is checked in</li><li>code is checked in with a policy override</li><li>a file with a specific extension is checked in</li><li>a file under a specific path is checked in</li><li>any code review changes</li></ul>  |
-|Pipelines | <ul><li>run stage waiting for approval</li><li>run stage waiting for Manual validation</li></ul>
-|Work   | <ul><li>a work item is created</li><li>a work item is changed</li><li>a work item is deleted</li><li>a work item is restored</li><li>a work item is moved from this team project</li></ul>    |
-|Artifacts    | <ul><li>a package is changed</li></ul>       |
-|Extension management | <ul><li>an extension is modified</li></ul>   |
-|Release | <ul><li>an approval for a deployment is pending</li><li>a deployment is completed</li><li>a request for release creation failed</li><li>a manual intervention for a deployment is pending</li></ul> |
+|Build | <ul>- a build completes</br>- a build fails</br>- a legacy XAML build controller or agent's status changes</br>- a legacy XAML build's quality changes</br></ul>   |
+|Code (Git)  |  <ul>- a commit is pushed</br>- a pull request is created or updated</br>- a pull request my team is a reviewer on is updated</br>- a comment is made on a pull request</br></ul>  |
+|Code (TFVC)    | <ul>- code is checked in</br>- code is checked in with a policy override</br>- a file with a specific extension is checked in</br>- a file under a specific path is checked in</br>- any code review changes</br></ul>  |
+|Pipelines | <ul>- run stage waiting for approval</br>- run stage waiting for Manual validation</br></ul>
+|Work   | <ul>- a work item is created</br>- a work item is changed</br>- a work item is deleted</br>- a work item is restored</br>- a work item is moved from this team project</br></ul>    |
+|Artifacts    | <ul>- a package is changed</br></ul>       |
+|Extension management | <ul>- an extension is modified</br></ul>   |
+|Release | <ul>- an approval for a deployment is pending</br>- a deployment is completed</br>- a request for release creation failed</br>- a manual intervention for a deployment is pending</br></ul> |
 
 :::moniker range=">= azure-devops-2020"
 

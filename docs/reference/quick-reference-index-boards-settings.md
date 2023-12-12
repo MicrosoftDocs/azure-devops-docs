@@ -17,7 +17,7 @@ ms.date: 01/17/2023
 
 Use this index to quickly access concepts and tasks related to configuring and customizing Azure Boards. If you're new to the Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md). 
 
-<a id="concepts" />
+<a id="concepts"></a>
 
 ## Get started  
 
@@ -58,8 +58,7 @@ Each team administrator can configure the following elements for their team, bac
       - [Define Area Paths for a team](../organizations/settings/set-area-paths.md)  
       - [Define Iteration Paths for a team](../organizations/settings/set-iteration-paths-sprints.md)  
       - [Define work item templates](../boards/backlogs/work-item-template.md)  
-      - [Backlogs](../organizations/settings/select-backlog-navigation-levels.md)  
-      - [Working days](../organizations/settings/set-working-days.md)  
+      - [Backlogs](../organizations/settings/select-backlog-navigation-levels.md)   
       - [Working with bugs](../organizations/settings/show-bugs-on-backlog.md)  
    :::column-end:::
    :::column span="1":::

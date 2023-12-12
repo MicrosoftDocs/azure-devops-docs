@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If your personal access token (PAT) is compromised, take immediate action. Learn how an administrator can revoke a user's PAT, as a precaution to protect your organization. You can also disable a user, which revokes their PAT. There's latency (up to an hour) before the PAT stops working however, once the disable or delete function completes in Azure Active Directory (Azure AD). 
+If your personal access token (PAT) is compromised, take immediate action. Learn how an administrator can revoke a user's PAT, as a precaution to protect your organization. You can also disable a user, which revokes their PAT. There's latency (up to an hour) before the PAT stops working however, once the disable or delete function completes in Microsoft Entra ID. 
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ For users, if you want to create or revoke your own PATs, see [Create or revoke 
 
 3. After you've successfully revoked the affected PATs, let your users know. They can recreate their tokens, as needed.
 
-<a id="token-expiration" />
+<a id="token-expiration"></a>
 
 ## FedAuth token expiration
 
@@ -49,7 +49,7 @@ Users can choose an expiry date for their personal access token, not to exceed o
 
 ### Q: What if a user leaves my company?
 
-A: Once a user's removed from Azure AD, the PATs and FedAuth tokens invalidate within an hour, since the refresh token is valid only for one hour.
+A: Once a user's removed from Microsoft Entra ID, the PATs and FedAuth tokens invalidate within an hour, since the refresh token is valid only for one hour.
 
 ### Q: What about JSON web tokens (JWTs)?
 

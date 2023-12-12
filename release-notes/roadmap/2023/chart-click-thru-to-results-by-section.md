@@ -1,16 +1,16 @@
 ---
-title: Chart click thru to results by section
+title: Work Item Chart Filtering
 author: danhellem
 ms.author: dahellem
-ms.date: 04/13/2023
+ms.date: 11/13/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Chart click thru to results by section
+description: Work Item Chart Filtering
 hide_comments: true
 ---
 
-# Chart click thru to results by section
+# Work Item Chart Filtering
 
 As a user, when I click on a section of a work item chart, I want to see the query results just for that section. For example: When looking at the **Bugs by State** chart, when I click on the New section, that would load a query to display just the New work items.
 

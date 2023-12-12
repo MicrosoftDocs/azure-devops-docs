@@ -224,6 +224,9 @@ In order to access our Azure Key Vault, we must first set up a service principal
 
 1. Select **Add** to create the access policy, then select **Save** when you are done.
 
+> [!NOTE]
+> Azure Key Vaults that use Azure role-based access control (Azure RBAC) are not supported.
+
 ## Run and review the pipeline
 
 1. Return to the previous tab where we left off.

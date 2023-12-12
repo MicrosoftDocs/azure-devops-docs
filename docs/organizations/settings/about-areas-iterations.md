@@ -44,7 +44,7 @@ The areas and iterations you see depend on the process you used to create your p
 
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
-<a id="area-path-guidance" />
+<a id="area-path-guidance"></a>
 
 ## Define and assign area paths
 
@@ -58,7 +58,7 @@ If you're new to managing projects and teams, the most straight forward sequence
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
  
 > [!NOTE]  
-> Organizations are limited to defining a maximum of 10,000 **Area Paths**, and assigning a maximum of 300 **Area Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
+> Projects are limited to defining a maximum of 10,000 **Area Paths**, and assigning a maximum of 300 **Area Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
 > 
 > Also, while you can assign the same **Area Path** to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).  
 
@@ -87,7 +87,7 @@ Each team can create a hierarchy of areas under which the team can organize thei
 Avoid creating an area structure that is too complex. You can create areas to partition permissions on work items, but complex trees require significant overhead for permission management. You might find that it's too much work to duplicate the structure and permissions in other projects. 
 
 
-<a id="iteration-path-guidance" />
+<a id="iteration-path-guidance"></a>
 
 ## Define and assign iteration paths
 
@@ -101,7 +101,7 @@ Use the following guidance to configure **Iteration Paths** for your project and
 5. Each team should assign an iteration path to their work items that falls under the **Backlog iteration** path. Those work items will then show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
 
 > [!NOTE]  
-> Organizations are limited to defining a maximum of 10,000 **Iteration Paths**, and assigning a maximum of 300 **Iteration Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
+> Projects are limited to defining a maximum of 10,000 **Iteration Paths**, and assigning a maximum of 300 **Iteration Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
 
 
 As needed, you can do the following actions at any time: 

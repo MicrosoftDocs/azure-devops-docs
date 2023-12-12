@@ -2,6 +2,7 @@
 title: 'Tutorial: Automate Node.js deployments with Azure Pipelines'
 description: Tutorial that shows how to create an Azure Pipeline that builds and deploys a basic Node.js application to Azure App Service.
 ms.topic: tutorial 
+ms.custom: devx-track-js
 ms.date: 07/12/2023
 ---
 

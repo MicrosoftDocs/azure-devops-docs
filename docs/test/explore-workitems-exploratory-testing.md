@@ -5,8 +5,8 @@ ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: sdanie
-author: steved0x 
+ms.author: ravikum
+author: raviliftr 
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
 ---

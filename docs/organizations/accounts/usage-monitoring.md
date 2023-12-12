@@ -36,7 +36,7 @@ To avoid issues, you may need to rewrite tools or update build processes. This a
 - The Count column gives the number of commands in the window.
 - Other columns highlight total TSTUs and delay time.
 
-For information on rate limits, see [Current rate limits](../../integrate/concepts/rate-limits.md#current-rate-limits).
+For more information, see [Rate and usage limits](../../integrate/concepts/rate-limits.md).
 
 ## View usage
 
@@ -85,4 +85,4 @@ For information on rate limits, see [Current rate limits](../../integrate/concep
 - [Work tracking, process, and project limits](../settings/work/object-limits.md)
 - [Access, export, and filter Azure DevOps audit logs](../audit/azure-devops-auditing.md)
 - [About Settings at the user, team, project, and organizational level](../settings/about-settings.md)
-- [Get list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+- [Get list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)

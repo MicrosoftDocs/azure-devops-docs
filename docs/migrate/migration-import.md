@@ -27,13 +27,13 @@ We recommend that you use the [Step-by-step migration guide](https://aka.ms/Azur
 
 ## Prerequisites 
 
-- You must set up an Azure Active Directory tenant as described [Azure AD Connect sync: Make a change to the default configuration](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration). 
-  The data migration tool sets up a link to your Azure Active Directory tenant when your Azure DevOps Services organization is created as part of the beginning of the import process. 
+- You must set up a Microsoft Entra tenant as described [Microsoft Entra Connect Sync: Make a change to the default configuration](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration). 
+  The data migration tool sets up a link to your Microsoft Entra tenant when your Azure DevOps Services organization is created as part of the beginning of the import process. 
 
-	By synchronizing your on-premises Active Directory with Azure Active Directory, your team
+	By synchronizing your on-premises Active Directory with Microsoft Entra ID, your team
 	members will be able to use the same credentials to authenticate and your Azure DevOps
 	Services administrators will be able to leverage your Active Directory groups for setting
-	permissions within your Azure DevOps Services organization. To setup the synchronization, you will want to use the Azure AD Connect technology.  
+	permissions within your Azure DevOps Services organization. To setup the synchronization, you will want to use the Microsoft Entra Connect technology.  
 
 <a id="validate-collection"></a>
 
@@ -62,19 +62,19 @@ You run the validation by using the data migration tool. To start, [download the
 1. Because this is your first time validating a collection, let's keep it simple. Your command should have the following structure:
 
 	```cmdline
-	Migrator validate /collection:{collection URL} /tenantDomainName:{name}
+	Migrator validate /collection:{collection URL} /tenantDomainName:{name} /region:{region}
 	```
 
-	Where `{name}` provides the name of your Azure Active Directory tenant. For example, to run against the *DefaultCollection* and the *fabrikam* tenant, the command would look like:
+	Where `{name}` provides the name of your Microsoft Entra tenant. For example, to run against the *DefaultCollection* and the *fabrikam* tenant, the command would look like:
 
 	```cmdline
-	Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com
+	Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region}
 	```
 
 1. To run the tool from a machine other than the Azure DevOps Server, you need the **/connectionString** parameter. The connection string parameter points to your Azure DevOps Server configuration database. As an example, if the validate command is being run by the Fabrikam corporation, the command would look like:
 
 	```cmdline
-	Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
+	Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region} /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
 	```
 
 	> [!Important]
@@ -104,16 +104,16 @@ You should review the *TryMatchOobProcesses.log* file only if you're trying to i
 
 By now, you've run the data migration tool validation against the collection, and it's returning a result of "All collection validations passed." Before you take a collection offline to migrate it, you need to generate the import files. When you run the `prepare` command, you generate two import files: 
 
-- *IdentityMapLog.csv*: Outlines your identity map between Active Directory and Azure Active Directory (Azure AD).
+- *IdentityMapLog.csv*: Outlines your identity map between Active Directory and Microsoft Entra ID.
 - *import.json*: Requires you to fill out the import specification you want to use to kick off your migration. 
 
 ### The prepare command
 
-The `prepare` command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, *IdentityMapLog.csv*, and then tries to connect to Azure AD to find each identity's match. To do this, your company needs to use the [Azure Active Directory Connect tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or DirSync.exe tool). 
+The `prepare` command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, *IdentityMapLog.csv*, and then tries to connect to Microsoft Entra ID to find each identity's match. To do this, your company needs to use the [Microsoft Entra Connect tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or DirSync.exe tool). 
 
 If directory synchronization is set up, the data migration tool should be able to find the matching identities and mark them as *Active*. If it doesn't find a match, the identity is marked as *Historical* in the identity map log, and you'll need to investigate why the user isn't included in your directory sync. The import specification file, *import.json*, should be filled out prior to the import. 
 
-Unlike the `validate` command, `prepare` *does* require an internet connection, because it needs to connect to Azure AD to populate the identity map log file. If your Azure DevOps Server instance doesn't have internet access, you need to run the tool from a machine that does. As long as you can find a machine with an intranet connection to your Azure DevOps Server instance and an internet connection, you can run this command. For help with the `prepare` command, run the following command:
+Unlike the `validate` command, `prepare` *does* require an internet connection, because it needs to connect to Microsoft Entra ID to populate the identity map log file. If your Azure DevOps Server instance doesn't have internet access, you need to run the tool from a machine that does. As long as you can find a machine with an intranet connection to your Azure DevOps Server instance and an internet connection, you can run this command. For help with the `prepare` command, run the following command:
 
 ```cmdline
 Migrator prepare /help
@@ -138,17 +138,17 @@ Migrator prepare /collection:http://fabrikam:8080/DefaultCollection /tenantDomai
 
 When the data migration tool runs the `prepare` command, it runs a complete validation to ensure that nothing has changed with your collection since the last full validation. If any new issues are detected, no import files are generated. 
 
-Shortly after the command has started running, an Azure AD sign-in window is displayed. You need to sign in with an identity that belongs to the tenant domain that's specified in the command. Make sure that the specified Azure AD tenant is the one you want your future organization to be backed with. In our Fabrikam example, a user would enter credentials that are similar to what's shown in the following screenshot.
+Shortly after the command has started running, a Microsoft Entra sign-in window is displayed. You need to sign in with an identity that belongs to the tenant domain that's specified in the command. Make sure that the specified Microsoft Entra tenant is the one you want your future organization to be backed with. In our Fabrikam example, a user would enter credentials that are similar to what's shown in the following screenshot.
 
 > [!IMPORTANT] 
-> Do *not* use a test Azure AD tenant for a test import and your production Azure AD tenant for the production run. Using a test Azure AD tenant can result in identity import issues when you begin your production run with your organization's production Azure AD tenant.
+> Do *not* use a test Microsoft Entra tenant for a test import and your production Microsoft Entra tenant for the production run. Using a test Microsoft Entra tenant can result in identity import issues when you begin your production run with your organization's production Microsoft Entra tenant.
 
-![Screenshot of the Azure AD sign-in window.](media/migration-import/aadLogin.png)
+![Screenshot of the Microsoft Entra sign-in window.](media/migration-import/aadLogin.png)
 
 When you run the `prepare` command successfully in the data migration tool, the results window displays a set of logs and two import files. In the log directory, you'll find a logs folder and two files: 
 
 * *import.json* is the import specification file. We recommend that you take time to fill it out.
-* *IdentityMapLog.csv* contains the generated mapping of Active Directory to Azure AD identities. Review it for completeness before you kick off an import.
+* *IdentityMapLog.csv* contains the generated mapping of Active Directory to Microsoft Entra identities. Review it for completeness before you kick off an import.
 
 The two files are described in greater detail in the next sections.
 
@@ -236,14 +236,14 @@ The identity map log file is similar to the example shown here:
 The columns in the identity map log file are described in the following table: 
 
 > [!NOTE] 
-> You and your Azure AD admin will need to investigate users that are marked as *No Match Found (Check Azure AD Sync)* to understand why they aren't part of your Azure AD Connect sync. 
+> You and your Microsoft Entra admin will need to investigate users that are marked as *No Match Found (Check Azure AD Sync)* to understand why they aren't part of your Microsoft Entra Connect Sync. 
 
 | Column | Description |
 | --- | --- |
 | Active Directory: User (Azure DevOps Server) | The friendly display name used by the identity in Azure DevOps Server. This name makes it easier to identify which user the line in the map is referencing. |
 | Active Directory: Security Identifier | The unique identifier for the on-premises Active Directory identity in Azure DevOps Server. This column is used to identify users in the collection. |
-| Azure Active Directory: Expected Import User (Azure DevOps Services) | Either the expected sign-in address of the matched soon-to-be-active user or *No Match Found (Check Azure AD Sync)*, indicating that the identity wasn't found during the Azure Active Directory sync and it will be imported as historical. |
-| Expected Import Status | The expected user import status: either *Active* if there's a match between your Active Directory and Azure Active Directory, or *Historical* if there isn't a match. |
+| Microsoft Entra ID: Expected Import User (Azure DevOps Services) | Either the expected sign-in address of the matched soon-to-be-active user or *No Match Found (Check Azure AD Sync)*, indicating that the identity wasn't found during the Azure Active Directory Sync and it will be imported as historical. |
+| Expected Import Status | The expected user import status: either *Active* if there's a match between your Active Directory and Microsoft Entra ID, or *Historical* if there isn't a match. |
 | Validation Date | The last time the identity map log was validated. |
 
 <br> 
@@ -251,20 +251,20 @@ The columns in the identity map log file are described in the following table:
 As you read through the file, notice whether the value in the **Expected Import Status** column is *Active* or *Historical*. *Active* indicates that it's expected that the identity on this row will map correctly on import and will become active. *Historical* means that the identities will become historical on import. It's important to review the generated mapping file for completeness and correctness.
 
 > [!IMPORTANT]  
-> Your import will fail if major changes occur to your Azure AD Connect security ID sync between import attempts. You can add new users between dry runs, and you can make corrections to ensure that previously imported historical identities become active. However, changing an existing user that was previously imported as active isn't supported at this time. Doing so will cause your import to fail. An example of a change might be completing a dry-run import, deleting an identity from your Azure AD that was imported actively, re-creating a new user in Azure AD for that same identity, and then attempting another import. In this case, an active identity import will be attempted between the Active Directory and newly created Azure AD identity, but it will cause an import failure. 
+> Your import will fail if major changes occur to your Microsoft Entra Connect security ID sync between import attempts. You can add new users between dry runs, and you can make corrections to ensure that previously imported historical identities become active. However, changing an existing user that was previously imported as active isn't supported at this time. Doing so will cause your import to fail. An example of a change might be completing a dry-run import, deleting an identity from your Microsoft Entra ID that was imported actively, re-creating a new user in Microsoft Entra ID for that same identity, and then attempting another import. In this case, an active identity import will be attempted between the Active Directory and newly created Microsoft Entra identity, but it will cause an import failure. 
 
-1. Start by reviewing the correctly matched identities. Are all the expected identities present? Are the users mapped to the correct Azure AD identity? 
+1. Start by reviewing the correctly matched identities. Are all the expected identities present? Are the users mapped to the correct Microsoft Entra identity? 
 
-   If any values are incorrectly mapped or need to be changed, contact your Azure AD administrator to verify that the on-premises Active Directory identity is part of the sync to Azure AD and has been set up correctly. For more information, see [Integrate your on-premises identities with Azure Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity). 
+   If any values are incorrectly mapped or need to be changed, contact your Microsoft Entra administrator to verify that the on-premises Active Directory identity is part of the sync to Microsoft Entra ID and has been set up correctly. For more information, see [Integrate your on-premises identities with Microsoft Entra ID](/azure/active-directory/hybrid/whatis-hybrid-identity). 
 
-1. Next, review the identities that are labeled as *historical*. This labeling implies that a matching Azure AD identity couldn't be found, for any of the following reasons:
+1. Next, review the identities that are labeled as *historical*. This labeling implies that a matching Microsoft Entra identity couldn't be found, for any of the following reasons:
 
-    * The identity hasn't been set up for sync between on-premises Active Directory and Azure AD. 
-    * The identity hasn't been populated in your Azure AD yet (for example, there's a new employee). 
-    * The identity doesn't exist in your Azure AD instance.
+    * The identity hasn't been set up for sync between on-premises Active Directory and Microsoft Entra ID. 
+    * The identity hasn't been populated in your Microsoft Entra ID yet (for example, there's a new employee). 
+    * The identity doesn't exist in your Microsoft Entra instance.
     * The user who owns that identity no longer works at the company.
 
-To address the first three reasons, you need to set up the intended on-premises Active Directory identity to sync with Azure AD. For more information, see [Integrate your on-premises identities with Azure Active Directory](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration). You must set up and run Azure AD Connect for identities to be imported as *active* in Azure DevOps Services. 
+To address the first three reasons, you need to set up the intended on-premises Active Directory identity to sync with Microsoft Entra ID. For more information, see [Integrate your on-premises identities with Microsoft Entra ID](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration). You must set up and run Microsoft Entra Connect for identities to be imported as *active* in Azure DevOps Services. 
 
 You can ignore the fourth reason, because employees who are no longer at the company should be imported  as *historical*. 
 
@@ -273,11 +273,11 @@ You can ignore the fourth reason, because employees who are no longer at the com
 > [!NOTE]
 > The identity import strategy proposed in this section should be considered by small teams only. 
 
-If Azure AD Connect hasn't been configured, you'll notice that all users in the identity map log file are marked as *historical*. Running an import this way results in all users being imported as [*historical*](#historical-identities). We strongly recommended that you configure [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration) to ensure that your users are imported as *active*. 
+If Microsoft Entra Connect hasn't been configured, you'll notice that all users in the identity map log file are marked as *historical*. Running an import this way results in all users being imported as [*historical*](#historical-identities). We strongly recommended that you configure [Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration) to ensure that your users are imported as *active*. 
 
-Running an import with all historical identities has consequences that need to be considered carefully. It should be considered only by teams with a small number of users and for which the cost of setting up Azure AD Connect is deemed too high. 
+Running an import with all historical identities has consequences that need to be considered carefully. It should be considered only by teams with a small number of users and for which the cost of setting up Microsoft Entra Connect is deemed too high. 
 
-To import all identities as historical, follow the steps outlined in later sections. When you queue an import, the identity that's used to queue the import is bootstrapped into the organization as the organization owner. All other users are imported as historical. Organization owners can then [add the users back in](../organizations/accounts/add-organization-users.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) by using their Azure AD identity. The added users are treated as new users. They do *not* own any of their history, and there's no way to re-parent this history to the Azure AD identity. However, users can still look up their pre-import history by searching for their \<domain>\<Active Directory username>.
+To import all identities as historical, follow the steps outlined in later sections. When you queue an import, the identity that's used to queue the import is bootstrapped into the organization as the organization owner. All other users are imported as historical. Organization owners can then [add the users back in](../organizations/accounts/add-organization-users.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) by using their Microsoft Entra identity. The added users are treated as new users. They do *not* own any of their history, and there's no way to re-parent this history to the Microsoft Entra identity. However, users can still look up their pre-import history by searching for their \<domain>\<Active Directory username>.
 
 The data migration tool displays a warning if it detects the complete historical identities scenario. If you decide to go down this migration path, you'll need to consent in the tool to the limitations. 
 
@@ -294,9 +294,6 @@ You don't need to repeat a dry-run import if users' Visual Studio subscriptions 
 By now, you have everything ready to execute on your import. You need to schedule downtime with your team to take the collection offline for the migration. When you've agreed upon a time to run the import, you need to upload to Azure both the required assets you've generated and a copy of the database. This process has five steps:
 
 Step 1: [Take the collection offline and detach it](#step-1-detach-your-collection).  
-
-> [!NOTE] 
-> DACPAC imports are not currently supported for SQL Server 2022. Imports from SQL Server 2022 databases must use the SQL Azure virtual machine (VM) method. If you are using SQL Server 2022, skip steps 2 to 5. Then follow the instructions provided in [Import large collections](migration-import-large-collections.md) and continue to section [determine the import type](#determine-the-import-type).
 
 > [!NOTE] 
 > The collection size limit for the DACPAC method is 150 GB. If the data migration tool displays a warning that you can't use the DACPAC method, you have to perform the import by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions provided in [Import large collections](migration-import-large-collections.md) and then continue to section [determine the import type](#determine-the-import-type).
@@ -317,7 +314,7 @@ If you're doing a dry run (test) import, we recommend that you reattach your col
 
 It's important to weigh the cost of choosing to incur zero downtime for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
 
-<a id="dacpac-file" /> 
+<a id="dacpac-file"></a> 
 
 ### Step 2: Generate a DACPAC file
 
@@ -329,19 +326,14 @@ DACPACs offer a fast and relatively easy method for moving collections into Azur
 > If the data migration tool doesn't display a warning, use the DACPAC method described in this step.  
 
 
-[DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications) is a feature of SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. A DACPAC file can also be restored directly to Azure DevOps Services, so you can use it as the packaging method for getting your collection's data in the cloud. You use the SqlPackage.exe tool to generate the DACPAC file. The tool is included as part of [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt). 
+[DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications) is a feature of SQL Server that allows databases to be packaged into a single file and deployed to other instances of SQL Server. A DACPAC file can also be restored directly to Azure DevOps Services, so you can use it as the packaging method for getting your collection's data in the cloud.
 
-Multiple versions of the SqlPackage.exe tool are installed with SSDT. The versions are stored in folders with names such as 120, 130, and 140. When you use SqlPackage.exe, it's important to use the right version to prepare the DACPAC.
+> [!IMPORTANT]
+> When you use SqlPackage.exe, you must use the .NET Framework version of SqlPackage.exe to prepare the DACPAC. The MSI Installer must be used to install the .NET Framework version of SqlPackage.exe. Do not use the dotnet CLI or .zip (Windows .NET 6) versions of SqlPackage.exe because those versions may generate DACPACs that are incompatible with Azure DevOps Services.
 
-* TFS 2018 imports need to use the SqlPackage.exe version from the 140 folder or higher.
+Download and install SqlPackage.exe using the latest MSI Installer from the [SqlPackage release notes](/sql/tools/sqlpackage/release-notes-sqlpackage).
 
-If you installed SSDT for Visual Studio, you'll find your SqlPackage.exe version in one of the following folder paths:
-
-* If you installed SSDT and integrated it with an existing installation of Visual Studio, your SqlPackage.exe folder path is similar to `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\`.
-* If you installed SSDT as a standalone installation, your SqlPackage.exe folder path is similar to `C:\Program Files (x86)\Microsoft Visual. Studio\2017\SQL\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\`.
-* If you already have an installation of SQL Server, SqlPackage.exe might already be present, and your folder path is similar to `%PROGRAMFILES%\Microsoft SQL Server\130\DAC\bin\`.
-
-Both versions of SSDT that you can download from [SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) include both the 130 and 140 folders and their SqlPackage.exe versions.
+After using the MSI Installer, SqlPackage.exe will be installed in a path similar to `%PROGRAMFILES%\Microsoft SQL Server\160\DAC\bin\`.
 
 When you generate a DACPAC, keep two considerations in mind: the disk that the DACPAC will be saved on and the disk space on the machine that's generating the DACPAC. You want to ensure that you have enough disk space to complete the operation. 
 
@@ -492,11 +484,11 @@ After the import has finished, you can delete the blob container and accompanyin
 
 A [shared access signature (SAS) token](/azure/storage/common/storage-sas-overview) provides delegated access to resources in a storage account. The token allows you to give Microsoft the lowest level of privilege that's required to access your data for executing the import. 
 
-SAS tokens can be [generated using the Azure Portal](/azure/storage/blobs/blob-containers-portal#generate-a-shared-access-signature). From a security point-of-view, we recommend:
+SAS tokens can be [generated using the Azure portal](/azure/storage/blobs/blob-containers-portal#generate-a-shared-access-signature). From a security point-of-view, we recommend:
 
 1. Selecting only **Read** and **List** as permissions for your SAS token. No other permissions are required.
 2. Setting an expiry time no further than seven days into the future.
-3. [Restricting IP addresses to only those used by the import process](migration-import-large-collections.md#optional-restrict-access-to-azure-devops-services-ips-only).
+3. [Restrict access to Azure DevOps Services IPs only](migration-restricting-access-to-azure-devops-services.md).
 4. Placing the SAS token in a secure location.
 
 ### Step 5: Complete the import specification
@@ -517,7 +509,15 @@ Using the Fabrikam example, the final import specification file should look like
 
 ### Restrict access to Azure DevOps Services IPs only
 
-We highly recommend that you restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You do this by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your storage account depend on the region you're importing into. Use the IpList option to get the list of IPs that need to be granted access.
+See the [Restrict access to Azure DevOps Services IPs only](migration-restricting-access-to-azure-devops-services.md) page for more details.
+
+#### Option 1: Using Service Tags
+
+You can easily allow connections from all Azure DevOps Services regions by adding the `azuredevops` [Service Tag](/azure/virtual-network/service-tags-overview) to your network security groups or firewalls either through the portal or programmatically.
+
+#### Option 2: Using IpList
+
+Use the `IpList` command to get the list of IPs that need to be granted access to allow connections from a specific Azure DevOps Services region.
 
 Included in the help documentation are instructions and examples for running Migrator from the Azure DevOps Server instance itself and a remote machine. If you're running the command from one of the Azure DevOps Server instance's application tiers, your command should have the following structure:
 
@@ -525,8 +525,7 @@ Included in the help documentation are instructions and examples for running Mig
 Migrator IpList /collection:{CollectionURI} /tenantDomainName:{name} /region:{region}
 ```
 
-> [!NOTE] 
-> Alternatively, you can also use [Service Tags](/azure/virtual-network/service-tags-overview) in place of explicit IP ranges. Azure Service Tags are a convenient way for customers to manage their networking configuration to allow traffic from specific Azure services. Customers can easily allow access by adding the tag name azuredevops to their network security groups or firewalls either through the portal or programmatically. 
+You can add the list of IPs to your network security groups or firewalls either through the portal or programatically.
 
 ### Determine the import type
 
@@ -560,7 +559,7 @@ Your team is now ready to begin the process of running an import. We recommend t
 > If you need to repeat a completed production-run import for a collection, as in the event of a rollback, contact Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before you queue up another import.
 
 > [!NOTE]
-> Azure administrators can prevent users from creating new Azure DevOps organizations. If the Azure AD tenant policy is turned on, your import will fail to finish. Before you begin, verify that the policy isn't set or that there is an exception for the user that is performing the migration. For more information, see [Restrict organization creation via Azure AD tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+> Azure administrators can prevent users from creating new Azure DevOps organizations. If the Microsoft Entra tenant policy is turned on, your import will fail to finish. Before you begin, verify that the policy isn't set or that there is an exception for the user that is performing the migration. For more information, see [Restrict organization creation via Microsoft Entra tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md).
 
 > [!NOTE]
 > Azure DevOps Services does not support per-pipeline retention policies, and they will not be carried over to the hosted version.
@@ -596,10 +595,10 @@ Here is an example of a completed import command:
 Migrator import /importFile:C:\DataMigrationToolFiles\import.json
 ```
 
-After the validation passes, you'll be asked to sign in to Azure AD. It's important to sign in with an identity that's a member of the same Azure AD tenant as the identity map log file was built against. The user that signs in becomes the owner of the imported organization. 
+After the validation passes, you'll be asked to sign in to Microsoft Entra ID. It's important to sign in with an identity that's a member of the same Microsoft Entra tenant as the identity map log file was built against. The user that signs in becomes the owner of the imported organization. 
 
 > [!NOTE]
-> Each Azure AD tenant is limited to five imports per 24-hour period. Only imports that are queued count against this cap.
+> Each Microsoft Entra tenant is limited to five imports per 24-hour period. Only imports that are queued count against this cap.
 
 When your team initiates an import, an email notification is sent to the user that queued the import. About 5 to 10 minutes after it queues the import, your team can go to the organization to check on the status. After the import finishes, your team is directed to sign in, and an email notification is sent to the organization owner. 
 

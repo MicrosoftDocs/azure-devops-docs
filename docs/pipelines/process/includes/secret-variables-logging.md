@@ -7,7 +7,9 @@ author: juliakm
 ms.date: 05/31/2022
 ---
 
-When `issecret` is set to true, the value of the variable will be saved as secret and masked out from log.
+When `issecret` is set to true, the value of the variable will be saved as secret and masked out from logs.
+
+[!INCLUDE [secrests masked](./masked-secrets.md)]
 
 # [Bash](#tab/bash)
 

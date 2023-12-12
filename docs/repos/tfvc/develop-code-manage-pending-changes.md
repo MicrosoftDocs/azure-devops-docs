@@ -50,7 +50,7 @@ You can open the **My Work** page in **Team Explorer** or press Ctrl+0, M to man
 
 You can use **My Work** to: 
 - Assign work to yourself.
-- Track your work against [work items](../../boards/queries/link-work-items-support-traceability.md).
+- Track your work against [work items](../../boards/backlogs/add-link.md).
 - Suspend and later resume your work, including file changes, associated work items, and Visual Studio state such as window positions and breakpoints.
 - Request a code review.
 
@@ -102,7 +102,7 @@ To exclude changes, see [Choose the files you want to check in](check-your-work-
 
 ### Associate work items
 
-It's a best practice to associate [work items](../../boards/queries/link-work-items-support-traceability.md), such as tasks or bugs, with your changes. Under **Related Work Items**, drag work items from a [query](../../boards/queries/using-queries.md) or add a work item by ID.
+It's a best practice to associate [work items](../../boards/backlogs/add-link.md), such as tasks or bugs, with your changes. Under **Related Work Items**, drag work items from a [query](../../boards/queries/using-queries.md) or add a work item by ID.
 
 ## See what you changed
 

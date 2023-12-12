@@ -18,7 +18,7 @@ ms.date: 07/14/2020
 
 ::: moniker range="azure-devops"
 
-When connecting from Power BI or Excel to Analytics using the OData feed, choose Azure Active Directory (**Azure AD**) for the most secure option. The next secure option is the use of Personal Access Tokens (**PATs**).
+When connecting from Power BI or Excel to Analytics using the OData feed, choose Microsoft Entra ID (**Microsoft Entra ID**) for the most secure option. The next secure option is the use of Personal Access Tokens (**PATs**).
 
 ::: moniker-end
 
@@ -40,17 +40,19 @@ For these three reasons:
 
 ::: moniker range="azure-devops"
 
-## Azure Active Directory (Azure AD) 
+<a name='azure-active-directory-azure-ad'></a>
 
-Azure Active Directory is also known as "Organizational Credential" in Power BI Desktop. You can use it in  [Power BI](https://powerbi.microsoft.com) through OAuth selection when configuring data refresh.
+## Microsoft Entra ID 
+
+Microsoft Entra ID is also known as "Organizational Credential" in Power BI Desktop. You can use it in  [Power BI](https://powerbi.microsoft.com) through OAuth selection when configuring data refresh.
 
 1. When connecting with Power BI Desktop, you'll be prompted to enter your credentials for the data source. Select Organizational account as shown here:
 
 	![Organizational account prompt](media/power-bi-organizational.png) 
 
-2. Choose <strong>Sign in</strong> and enter your Azure AD credentials. After that, you're done.
+2. Choose <strong>Sign in</strong> and enter your Microsoft Entra credentials. After that, you're done.
 
-To change an existing URL to use Azure AD instead of a PAT or AAC, see [Change authentication credentials](#update-credentials) later in this article.
+To change an existing URL to use Microsoft Entra ID instead of a PAT or AAC, see [Change authentication credentials](#update-credentials) later in this article.
 
 ::: moniker-end
 
@@ -219,7 +221,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 ## Publish to Power BI
 
-After you've created a model and loaded it with data, you can [publish it to Power BI](publish-power-bi-desktop-to-power-bi.md). When using Azure AD or Windows, make sure to select
+After you've created a model and loaded it with data, you can [publish it to Power BI](publish-power-bi-desktop-to-power-bi.md). When using Microsoft Entra ID or Windows, make sure to select
 the **oAuth2** option. 
 
 ## Related articles

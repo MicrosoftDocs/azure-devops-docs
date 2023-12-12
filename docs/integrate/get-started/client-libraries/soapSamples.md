@@ -1,6 +1,6 @@
 ---
-title: .NET Client Library Samples for Azure DevOps Services - Legacy SOAP
-description: C# samples showing how to integrate with Azure DevOps Services and Team Foundation Server from apps and services on Windows using the legacy SOAP clients.
+title: .NET Client Library Samples - Legacy SOAP
+description: C# samples showing how to integrate with Azure DevOps Services and Azure DevOps Server from apps and services on Windows using the legacy SOAP clients.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.subservice: azure-devops-ecosystem
 ms.custom: devx-track-dotnet
@@ -8,14 +8,19 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/26/2019
+ms.date: 11/10/2023
 ---
 
 # C# client library samples for SOAP clients and services
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Samples showing how to extend and integrate with Team Foundation Server and Azure DevOps Services using the legacy SOAP clients. These clients are only available in the .NET Framework version of the clients. For new development, prefer the JSON-based clients described in [.NET client libraries](../../concepts/dotnet-client-libraries.md).
+This article contains samples that show you how to extend and integrate with Azure DevOps Server and Azure DevOps Services using the legacy SOAP clients. These clients are only available in the .NET Framework version of the clients. 
+
+> [!IMPORTANT]
+> For new development, see the JSON-based clients described in [.NET client libraries](../../concepts/dotnet-client-libraries.md).
+
+## Prerequisites
 
 Examples on this page require the following NuGet packages:
 
@@ -72,11 +77,12 @@ public static void SampleSOAP()
 }
 ```
 
-## Authenticating
+## Authentication
 
-To change the method of authentication to Azure DevOps Services or Azure DevOps Server, change the VssCredential type passed to VssConnection when creating it.
+To change the method of authentication to Azure DevOps, change the VssCredential type passed to VssConnection when you create it.
 
-### Personal Access Token authentication for SOAP services
+### Personal access token authentication for SOAP services
+
 ```cs
 public static void PersonalAccessTokenSoapSample()
 {
@@ -90,7 +96,10 @@ public static void PersonalAccessTokenSoapSample()
 }
 ```
 
-### Azure Active Directory authentication for SOAP services
+<a name='azure-active-directory-authentication-for-soap-services'></a>
+
+### Microsoft Entra authentication for SOAP services
+
 ```cs
 public static void AADSoapSample()
 {
@@ -103,7 +112,10 @@ public static void AADSoapSample()
 }
 ```
 
-### Visual Studio sign-in prompt (Microsoft Account or Azure Active Directory backed) for SOAP services
+<a name='visual-studio-sign-in-prompt-microsoft-account-or-azure-active-directory-backed-for-soap-services'></a>
+
+### Visual Studio sign-in prompt (Microsoft Account or Microsoft Entra backed) for SOAP services
+
 ```cs
 public static void MicrosoftAccountSample()
 {

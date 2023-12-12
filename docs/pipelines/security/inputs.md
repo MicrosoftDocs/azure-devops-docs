@@ -105,6 +105,30 @@ Unlike variables, pipeline parameters can't be changed by a pipeline while it's 
 Parameters have data types such as `number` and `string`, and they can be restricted to a subset of values.
 Restricting the parameters is useful when a user-configurable part of the pipeline should take a value only from a constrained list. The setup ensures that the pipeline won't take arbitrary data. 
 
+<a name="shellTasksValidation"></a> 
+
+### Enable shell tasks arguments parameter validation
+
+Pipelines can reference tasks that are executed in the pipeline. Several tasks included in Azure DevOps have an arguments parameter that lets you specify more options for the task.
+
+When the setting *Enable shell tasks arguments parameter validation* is enabled, the arguments parameter is reviewed for any characters that may not be executed correctly by the shell. Example characters include semi-colons, quotes, and parentheses.
+
+Similar to the *Limit variables that can be set at queue time* option,  *Enable shell tasks arguments parameter validation* may be configured at the organization-level at **Settings** > **Pipelines** > **Settings** or at the project-level at **Settings** > **Pipelines** > **Settings**.
+
+When enabled, there's a detected validation issue, an error message like the following is logged: ``
+Detected characters in arguments that may not be executed correctly by the shell. Please escape special characters using backtick (`).``
+
+To resolve the issue, adjust the arguments by escaping special characters as indicated in the error message.
+
+When *Enable shell tasks arguments parameter validation* is enabled, validation is applied to the arguments parameter in the following tasks.
+
+- PowerShell 
+- BatchScript
+- Bash 
+- Ssh
+- AzureFileCopy
+- WindowsMachineFileCopy
+
 ## Next steps
 
 After you secure your inputs, you also need to secure your [shared infrastructure](infrastructure.md).

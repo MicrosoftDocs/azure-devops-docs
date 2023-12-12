@@ -4,13 +4,13 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 06/20/2023
+ms.date: 11/16/2023
 monikerRange: '<= azure-devops'
 ---
 
 # Microsoft-hosted agents
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 ::: moniker range="< azure-devops"
 
@@ -30,30 +30,30 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md) |
-| Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://github.com/actions/runner-images/blob/main/images/win/Windows2019-Readme.md) |
-| Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-latest` OR `ubuntu-22.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md)
-| Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md)
-| macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-13-Readme.md) |
-| macOS 12 Monterey | *macOS-12* | `macOS-latest` OR `macOS-12` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md) |
-| macOS 11 Big Sur | *macOS-11* | `macOS-11` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md) |
+| Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
+| Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
+| Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-latest` OR `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme)
+| Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://aka.ms/ubuntu-20.04-readme)
+| macOS 13 Ventura (preview) | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
+| macOS 12 Monterey | *macOS-12* | `macOS-latest` OR `macOS-12` | [Link](https://aka.ms/macOS-12-readme) |
+| macOS 11 Big Sur | *macOS-11* | `macOS-11` | [Link](https://aka.ms/macOS-11-readme) |
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
-You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
 
 
 ### Recent updates
 
-* The macOS 13 image is available
+* The macOS 13 image is available in preview
 * The macOS 10.15 image is fully unsupported as of 4/24/2023
 * Ubuntu 18.04 has been retired
-* [`ubuntu-latest` images will use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
+* [`ubuntu-latest` images use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
 * [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
 * [The Ubuntu 18.04 image will begin deprecation on 8/8/22 and will be fully unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/6002).
 * [The macOS 10.15 image will begin deprecation on 5/31/22 and will be fully unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583).
-* [`windows-latest` images will use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
-* [`macOS-latest` images will use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
+* [`windows-latest` images use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
+* [`macOS-latest` images use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
 * [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/runner-images/issues/3287).
 * The Windows Server 2016 with Visual Studio 2017 image has been deprecated and will be retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
 * In December 2021, we removed the following Azure Pipelines hosted image:
@@ -89,7 +89,7 @@ You can also query job history for deprecated images across projects using the s
 
 # [YAML](#tab/yaml)
 
-In YAML pipelines, if you do not specify a pool, pipelines will default to the Azure Pipelines agent pool. You simply need to specify which virtual machine image you want to use.
+In YAML pipelines, if you do not specify a pool, pipelines default to the Azure Pipelines agent pool. You simply need to specify which virtual machine image you want to use.
 
 ```yaml
 jobs:
@@ -145,7 +145,7 @@ All of these machines have at least 10 GB of free disk space available for your 
 
 ## Networking
 
-In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is updated weekly with new planned IP ranges. The new IP ranges become effective the following week. We recommend that you check back frequently (at least once every week) to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in the weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
+In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. Microsoft publishes a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is updated weekly with new planned IP ranges. Only the latest version of the file is available for download. If you need previous versions, you must download and archive them each week as they become available. The new IP ranges become effective the following week. We recommend that you check back frequently (at least once every week) to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in the weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
 
 Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions. While your agent may run in the same region as your organization, it is not guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
 
@@ -188,24 +188,26 @@ namespace WeeklyFileIPRanges
     class Program
     {
         // Path to the locally saved weekly file
-        const string weeklyFilePath = @"C:\MyPath\ServiceTags_Public_20210823.json";
+        const string weeklyFilePath = @"C:\MyPath\ServiceTags_Public_20230904.json";
 
         static void Main(string[] args)
         {
             // United States geography has the following regions:
-            // Central US, East US, East US 2, North Central US, 
-            // South Central US, West Central US, West US, West US 2
-            // This list is accurate as of 8/26/2021
+            // Central US, East US, East US 2, East US 3, North Central US, 
+            // South Central US, West Central US, West US, West US 2, West US 3
+            // This list is accurate as of 9/8/2023
             List<string> USGeographyRegions = new List<string>
             {
                 "centralus",
                 "eastus",
                 "eastus2",
+                "eastus3",
                 "northcentralus",
                 "southcentralus",
                 "westcentralus",
                 "westus",
-                "westus2"
+                "westus2",
+                "westus3"
             };
 
             // Load the weekly file
@@ -214,12 +216,12 @@ namespace WeeklyFileIPRanges
 
             foreach (string region in USGeographyRegions)
             {
-                string azureCloudRegion = $"AzureCloud.{region}";
-                Console.WriteLine(azureCloudRegion);
+                string tag = $"AzureCloud.{region}";
+                Console.WriteLine(tag);
 
                 var ipList =
                     from v in values
-                    where (string)v["name"] == azureCloudRegion
+                    where tag.Equals((string)v["name"], StringComparison.OrdinalIgnoreCase)
                     select v["properties"]["addressPrefixes"];
 
                 foreach (var ip in ipList.Children())
@@ -257,9 +259,10 @@ Microsoft-hosted agents:
   * Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month. [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
   * Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
   * When you create a new Azure DevOps organization, you are not given these free grants by default. To request the free grant for public or private projects, submit [a request](https://aka.ms/azpipelines-parallelism-request).
-* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series)
-* Run as an administrator on Windows and a passwordless sudo user on Linux
-* (Linux only) Run steps in a `cgroup` that offers 6 GB of physical memory and 13 GB of total memory
+* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series).
+* Run as an administrator on Windows and a passwordless sudo user on Linux.
+* (Linux only) Run steps in a `cgroup` that offers 6 GB of physical memory and 13 GB of total memory.
+* Use VM images that are regularly updated (every 3 weeks).
 
 Microsoft-hosted agents do not offer:
 
@@ -270,6 +273,7 @@ Microsoft-hosted agents do not offer:
 * The ability to pre-load custom software. You can install software during a pipeline run, such as through [tool installer tasks](../process/tasks.md#tool-installers) or in a script.
 * Potential performance advantages that you might get by using self-hosted agents that might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
 * The ability to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
+* The ability to roll back to a previous VM image version. You always use the latest version.
 
 If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install) or use [scale set agents](scale-set-agents.md).
 
@@ -320,7 +324,7 @@ All Azure DevOps organizations are provided with several free parallel jobs for 
 
 Your self-hosted agent probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your self-hosted agent. In some cases, Microsoft-hosted agents may have the tools that you need (for example, Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
 
-- You can create a new issue on the [repository](https://github.com/actions/runner-images), where we track requests for additional software. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
+- You can create a new issue on the [repository](https://github.com/actions/runner-images), where we track requests for additional software. Contacting support can't help you set up new software on Microsoft-hosted agents.
 
 - You can use [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md). With these agents, you are fully in control of the images that are used to run your pipelines.
 

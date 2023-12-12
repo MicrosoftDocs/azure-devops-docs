@@ -73,7 +73,7 @@ Workflow states are associated with state categories to support the workflow on 
 These rules are technically a lot simpler than Closed By/Closed Date rules because they are not dependent on any particular state. For any work item type, the same rules will always work. They need to be auto-generated because some OOB work item types do not contain the State Change Date field, so when the user adds this field to a custom work item type, these rules need to be auto-generated as well. The same principles for Closed By/Closed Date rules apply here as well.
  
 
-<a id="custom-rules" /> 
+<a id="custom-rules"></a> 
 
 ## Custom rules
 
@@ -92,7 +92,7 @@ Note the following:
 
 ### Rule composition
 
-<a id="ip-rule-composition" /> 
+<a id="ip-rule-composition"></a> 
 
 # [Inheritance process](#tab/inheritance)
 
@@ -273,7 +273,7 @@ The rule engine restricts setting conditions or actions to system fields except 
 If you don't see a field listed in the drop-down menu of the rule user interface for the Inheritance process, this is why. For example, if you try to make **Area Path** (System.AreaPath) read-only based on a condition, the Area Path field isn't available for selection. Even if you're able to specify a system field, the rule engine may restrict you from saving the rule. 
  
 
-<a id="clear" /> 
+<a id="clear"></a> 
 
 ## Default and copy rules 
 
@@ -405,7 +405,7 @@ These rules support setting defaults, copying values from one field to another, 
 ---  
 
 
-<a id="require" /> 
+<a id="require"></a> 
 
 ## Constraint rules
 
@@ -588,7 +588,7 @@ Most of these rule actions can be applied with the selection of any condition.
 ---  
 
 
-<a id="pick-list" /> 
+<a id="pick-list"></a> 
 
 ## Pick lists 
 
@@ -695,7 +695,7 @@ To avoid validation errors that would otherwise occur when members leave the tea
 
 
 
-<a id="conditional-rules" />
+<a id="conditional-rules"></a>
 
 ## Conditional field values or changes 
 
@@ -827,9 +827,9 @@ For syntax structure and examples, see [Assign conditional-based values and rule
 ---  
 
 
-<a id="apply-ignore" /> 
-<a id="membership" /> 
-<a id="apply-or-ignore-rules-based-on-user-or-group" /> 
+<a id="apply-ignore"></a> 
+<a id="membership"></a> 
+<a id="apply-or-ignore-rules-based-on-user-or-group"></a> 
 
 ## User or group membership rule restrictions   
 
@@ -840,7 +840,7 @@ You can restrict application of a rule based on the current user's membership. W
 
 
 > [!TIP]    
-> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Azure Active Directory or Active Directory security groups. To learn more, see [Default rules and the rule engine](rule-reference.md). 
+> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. To learn more, see [Default rules and the rule engine](rule-reference.md). 
 
 # [Inheritance process](#tab/inheritance)
 
@@ -936,7 +936,7 @@ To restrict a rule based on the current user's membership, you specify either th
 
 
 
-<a id="tokens" /> 
+<a id="tokens"></a> 
 
 ### Use tokens to reference users or groups
 
@@ -1008,7 +1008,7 @@ To learn more about default security groups, see [Permissions and groups](../../
 
 Rules that specify a condition based on the user or group membership of the user modifying a work item are evaluated in one of two ways. When the rule is evaluated, the application needs to determine whether the rule applies to the current user by checking if that user is or isn't a member of the specified group. 
  
-- When modifying the work item from the web portal, REST API, or **azure boards** command, a request to the Azure Active Directory or Active Directory is made. No problems occur for this operation.  
+- When modifying the work item from the web portal, REST API, or **azure boards** command, a request to the Microsoft Entra ID or Active Directory is made. No problems occur for this operation.  
 - When modifying the work item from Visual Studio, Excel or other custom tool using the WIT Client Object Model, the request to evaluate membership is based on a client cache. The client cache is not aware of Active Directory groups. 
 
 > [!NOTE] 

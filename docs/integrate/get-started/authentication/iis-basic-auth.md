@@ -7,16 +7,17 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops-2020'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/30/2021
+ms.date: 11/10/2023
 ---
 
-# Enabling IIS Basic Authentication invalidates using Personal Access Tokens
+# IIS Basic Authentication invalidates personal access tokens
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-We recommend you keep [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) turned off always when using Azure DevOps Server.  Only if necessary should you enable IIS Basic Authentication. When IIS Basic Authentication is enabled on your windows machine, it prevents you from using personal access tokens (PATs) as an authentication mechanism.
+> [!CAUTION]
+> We recommend that you keep [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) turned **off** always. Only if necessary should you enable IIS Basic Authentication. When IIS Basic Authentication is enabled on your windows machine, it prevents you from using personal access tokens (PATs) as an authentication mechanism.
 
-For example, if you use a PAT to allow a third-party app to retrieve bug information, and then email that info to the bug assignee with IIS Basic Authentication enabled, then that app fails authentication. The app can't retrieve bug info.
+For example, if you use a PAT to allow a third-party app to retrieve bug information, and then send an email with the info to the bug assignee (with IIS Basic Authentication enabled), the app fails authentication. The app can't retrieve bug info.
 
 ## Git with IIS Basic Authentication enabled
 
@@ -25,7 +26,7 @@ For example, if you use a PAT to allow a third-party app to retrieve bug informa
 >
 > The extra header must be used for all Azure DevOps Server installations, as Windows Auth also prevents using PATs.
 
-The extra header must include a base 64 encoding of "user:PAT". See the following format and example.
+The extra header must include a base 64 encoding of "user:PAT." See the following format and example.
 
 ### Format
 

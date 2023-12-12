@@ -152,49 +152,9 @@ In this example, we grant members assigned to the Test Admin group permissions t
 
 ::: moniker-end    
 
-<a id="test-controllers" /> 
-
-## Set permissions to manage test controllers
-
-Test controllers are used to perform load testing. To learn more, see [Overview of test agents and test controllers for running load tests](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests).
-
-To set permissions for managing test controllers, open **Organization** settings and choose **Security** or **Permissions**. Choose the group you want to grant permissions. To learn how to access organization or collection-level **Security**, see [Change project collection-level permissions](change-organization-collection-level-permissions.md).
-
-In this example, we grant members assigned to the Team Collection Admin group permissions to manage test controllers.  
-
-::: moniker range="azure-devops"
-
-> [!NOTE]   
-> To enable the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
- 
-
-#### [Preview page](#tab/preview-page) 
-
-> [!div class="mx-imgBorder"]  
-> ![Set collection-level test permissions for a custom group, Team Admin](media/test-permissions/set-collection-level-test-permissions-new-ui.png)  
-
-
-#### [Current page](#tab/current-page) 
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of set project-level test permissions for a custom group, Team Admin.](media/test-permissions/set-collection-level-test-permissions-old-ui.png)  
-
-* * *
-
-::: moniker-end    
-
-::: moniker range="< azure-devops"
-
-> [!div class="mx-imgBorder"]  
-> ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-collection-level-test-permissions-old-ui.png)  
-
-::: moniker-end    
-
-
 ## Related articles 
 
 - [Grant or restrict access](restrict-access.md)   
-- [Permissions and access for work tracking](permissions-access-work-tracking.md) 
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
 - [Permissions and groups reference](permissions.md) 
 - [Troubleshoot permissions](troubleshoot-permissions.md)

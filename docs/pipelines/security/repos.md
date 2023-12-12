@@ -3,7 +3,7 @@ title: Secure repositories
 description: Securing repos and forks
 ms.assetid: c1cfe88b-96aa-4804-998c-027a287e5696
 ms.reviewer: vijayma
-ms.date: 07/13/2022
+ms.date: 11/27/2023
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -60,7 +60,7 @@ Don't turn off this latter protection.
 
 ### Consider manually triggering fork builds
 
-You can turn off automatic fork builds and instead use pull request comments as a way to manually building these contributions.
+[You can turn off automatic fork builds](../repos/github.md#contributions-from-forks) and instead use pull request comments as a way to manually building these contributions.
 This setting will give you an opportunity to review the code before triggering a build.
 
 ### Use Microsoft-hosted agents for fork builds

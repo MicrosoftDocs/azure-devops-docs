@@ -17,7 +17,7 @@ ms.date: 06/22/2023
 You can authorize other services to access Azure DevOps. The OAuth 2.0 framework provides safe, secure access to your resources. Some of these resources include work items, source code, and build results.
 
 - A service uses the authorization, bound to your credentials, to access resources in any organization that you have access to.
-- Use your Microsoft account, like ```me@live.com```, or your work account, your account in Azure AD - like ```me@my-workplace.com```, to authorize the service.
+- Use your Microsoft account, like ```me@live.com```, or your work account, your account in Microsoft Entra ID - like ```me@my-workplace.com```, to authorize the service.
 - The service that you authorize never has access to your Azure DevOps credentials.
 - Revoke any authorizations that you've granted to other services.
 

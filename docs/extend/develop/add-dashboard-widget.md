@@ -62,7 +62,7 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
 
 Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) that we provide out of the box for you and some guidance on widget structure.
 
-<a id="part-1" />
+<a id="part-1"></a>
 
 ## Part 1: Hello World
 
@@ -111,9 +111,9 @@ Add the below HTML in `hello-world.html`. We add the mandatory reference to `VSS
 
 ### Step 3: Your JavaScript
 
-We use JavaScript to render content in the widget. In this article, we wrap all of our JavaScript code inside a <code>&lt;script&gt;</code> element in the HTML file. You can choose to have this code in a separate JavaScript file and refer it in the HTML file.
+We use JavaScript to render content in the widget. In this article, we wrap all of our JavaScript code inside a `&lt;script&gt;` element in the HTML file. You can choose to have this code in a separate JavaScript file and refer it in the HTML file.
 The code renders the content. This JavaScript code also initializes the VSS SDK, maps the code for your widget to your widget name, and notifies the extension framework of widget successes or failures.
-In our case, below is the code that would print &quot;Hello World&quot; in the widget. Add this <code>script</code> element in the <code>head</code> of the HTML.
+In our case, below is the code that would print &quot;Hello World&quot; in the widget. Add this `script` element in the `head` of the HTML.
 
 ```html    
     <script type="text/javascript">
@@ -165,9 +165,9 @@ We use the `WidgetStatusHelper` from WidgetHelpers to return the `WidgetStatus` 
 
 The `vss-extension.json` should always be at the root of the folder (in this guide, `HelloWorld`). For all the other files, you can place them in whatever structure you want inside the folder, just make sure to update the references appropriately in the HTML files and in the `vss-extension.json` manifest. 
 
-<a id="image" />
+<a id="image"></a>
 
-### Step 4: Your extension&#39;s logo: <code>logo.png</code>
+### Step 4: Your extension&#39;s logo: `logo.png`
 
 Your logo is displayed in the Marketplace, and in the widget catalog once a user installs your extension.
 
@@ -177,7 +177,7 @@ To support TFS 2015 Update 3, you need an additional image that is 330 px x 160 
 
 You can name these images however you want as long as the extension manifest in the next step is updated with the names you use.
 
-### Step 5: Your extension&#39;s manifest: <code>vss-extension.json</code>
+### Step 5: Your extension&#39;s manifest: `vss-extension.json`
 
 * ***Every*** extension must have an extension manifest file
 * Read the [extension manifest reference](./manifest.md)
@@ -276,7 +276,7 @@ Set `addressable` to `true` unless you include other files that don't need to be
 > [!NOTE]
 > For more information about the **extension manifest file**, such as its properties and what they do, check out the [extension manifest reference](./manifest.md).
 
-<a id="package-publish-share" />
+<a id="package-publish-share"></a>
 
 ### Step 6: Package, publish, and share
 
@@ -339,7 +339,7 @@ You'll need a personal access token, too.
 tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
 ```
 
-<a id="add-from-catalog" />
+<a id="add-from-catalog"></a>
 
 ### Step 7: Add widget from the catalog
 
@@ -350,7 +350,7 @@ tfx extension publish --manifest-globs your-manifest.json --share-with yourOrgan
    
    The widget appears on your dashboard.
 
-<a id="part-2" />
+<a id="part-2"></a>
 
 ## Part 2: Hello World with Azure DevOps REST API
 
@@ -360,7 +360,7 @@ below the "Hello World" text.
 
 ![Overview dashboard with a sample widget using the REST API for WorkItemTracking.](../media/add-dashboard-widget/sample2.png)
 
-<a id="step-1-files" />
+<a id="step-1-files"></a>
 
 ### Step 1: HTML 
 
@@ -381,8 +381,8 @@ Copy the file `hello-world.html` from the previous example, and rename the copy 
 ```
 
 <br>
-Add a new <code>div</code> element right below the <code>h2</code> to hold the query information.
-Update the name of the widget from <code>HelloWorldWidget</code> to <code>HelloWorldWidget2</code> in the line where you call <code>VSS.register</code>.
+Add a new `div` element right below the `h2` to hold the query information.
+Update the name of the widget from `HelloWorldWidget` to `HelloWorldWidget2` in the line where you call `VSS.register`.
 This allows the framework to uniquely identify the widget within the extension.
 
 ```html
@@ -502,9 +502,9 @@ Replace the `// Do something with the query` comment with the below:
 ```JavaScript
     // Create a list with query details                                
     var $list = $('<ul>');                                
-    $list.append($('<li>').text("Query Id: " + query.id));
-    $list.append($('<li>').text("Query Name: " + query.name));
-    $list.append($('<li>').text("Created By: " + ( query.createdBy? query.createdBy.displayName: "<unknown>" ) ) );                                                            
+    $list.append($('- ').text("Query Id: " + query.id));
+    $list.append($('- ').text("Query Name: " + query.name));
+    $list.append($('- ').text("Created By: " + ( query.createdBy? query.createdBy.displayName: "<unknown>" ) ) );                                                            
 
     // Append the list to the query-info-container
     var $container = $('#query-info-container');
@@ -537,9 +537,9 @@ Your final `hello-world2.html` is as follows:
                             .then(function (query) {
                                 // Create a list with query details                                
                                 var $list = $('<ul>');
-                                $list.append($('<li>').text("Query ID: " + query.id));
-                                $list.append($('<li>').text("Query Name: " + query.name));
-                                $list.append($('<li>').text("Created By: " + (query.createdBy ? query.createdBy.displayName: "<unknown>") ));
+                                $list.append($('- ').text("Query ID: " + query.id));
+                                $list.append($('- ').text("Query Name: " + query.name));
+                                $list.append($('- ').text("Created By: " + (query.createdBy ? query.createdBy.displayName: "<unknown>") ));
 
                                 // Append the list to the query-info-container
                                 var $container = $('#query-info-container');
@@ -578,7 +578,7 @@ Your final `hello-world2.html` is as follows:
 </html>
 ```
 
-<a id="widget-extension-manifest" />
+<a id="widget-extension-manifest"></a>
 
 ### Step 5: Extension Manifest Updates
 
@@ -645,7 +645,7 @@ Now, go to your team dashboard at `https:\//dev.azure.com/{yourOrganization}/{yo
 Hover on the Edit button in the bottom right, and select the Add button. The widget catalog opens where you find the widget you installed. 
 Choose your widget and select the 'Add' button to add it to your dashboard.
 
-<a id="part-3" />
+<a id="part-3"></a>
 
 ## Part 3: Hello World with Configuration
 
@@ -679,7 +679,7 @@ Your folder now looks like the following example:
 ```
 
 <br>
-Add the below HTML in <code>configuration.html</code>. We basically add the mandatory reference to the <code>VSS.SDK.min.js</code> file and a <code>select</code> element for the dropdown to select a query from a preset list.
+Add the below HTML in `configuration.html`. We basically add the mandatory reference to the `VSS.SDK.min.js` file and a `select` element for the dropdown to select a query from a preset list.
 
 ```html
     <!DOCTYPE html>
@@ -845,7 +845,7 @@ At the end, your `configuration.html` looks like this:
     </html>
 ```
 
-<a id="reload-widget" />
+<a id="reload-widget"></a>
 
 ### Step 4: JavaScript - Implement reload in the widget
 
@@ -876,8 +876,8 @@ return {
 ```
 
 <br>
-The hard-coded query path in <code>getQueryInfo</code> should be replaced with the configured query path, which can be extracted from the parameter <code>widgetSettings</code> that is passed to the method.
-Add the below in the very beginning of the <code>getQueryInfo</code> method and replace the hard-coded querypath with <code>settings.queryPath</code>.
+The hard-coded query path in `getQueryInfo` should be replaced with the configured query path, which can be extracted from the parameter `widgetSettings` that is passed to the method.
+Add the below in the very beginning of the `getQueryInfo` method and replace the hard-coded querypath with `settings.queryPath`.
 
 ```JavaScript
 var settings = JSON.parse(widgetSettings.customSettings.data);

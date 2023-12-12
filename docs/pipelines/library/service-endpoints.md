@@ -258,14 +258,11 @@ Once you've [created your service connection](#create-a-service-connection), com
 
 You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
-> [!NOTE]
-> Service connections can't be specified by variables.
-
 ## Common service connection types
 
 Azure Pipelines supports the following service connection types by default:
 
-[Azure Classic](#azure-classic-service-connection) | [Azure Repos/TFS](#azure-repos) | [Azure Resource Manager](#azure-resource-manager-service-connection) | [Azure Service Bus](#azure-service-bus-service-connection) | [Bitbucket](#bitbucket-cloud-service-connection) | [Chef](#chef-service-connection) | [Docker hub or others](#docker-hub-or-others) | [Other Git](#other-git-service-connection) | [Generic](#generic-service-connection) | [GitHub](#github-service-connection) | [GitHub Enterprise Server](#github-enterprise-server-service-connection) | [Jenkins](#jenkins-service-connection) | [Kubernetes](#kubernetes-service-connection) | [Maven](#maven-service-connection) | [npm](#npm-service-connection) | [NuGet](#nuget-service-connection) | [Python package download](#python-package-download-service-connection) | [Python package upload](#python-package-upload-service-connection) | [Service Fabric](#service-fabric-service-connection) | [SSH](#ssh-service-connection) | [Subversion](#subversion-service-connection) | [Visual Studio App Center](#visual-studio-app-center-service-connection) |
+[Azure Classic](#azure-classic-service-connection) | [Azure Repos/TFS](#azure-repos) | [Azure Resource Manager](#azure-resource-manager-service-connection) | [Azure Service Bus](#azure-service-bus-service-connection) | [Bitbucket](#bitbucket-cloud-service-connection) | [Cargo](#cargo-service-connection) | [Chef](#chef-service-connection) | [Docker hub or others](#docker-hub-or-others) | [Other Git](#other-git-service-connection) | [Generic](#generic-service-connection) | [GitHub](#github-service-connection) | [GitHub Enterprise Server](#github-enterprise-server-service-connection) | [Jenkins](#jenkins-service-connection) | [Kubernetes](#kubernetes-service-connection) | [Maven](#maven-service-connection) | [npm](#npm-service-connection) | [NuGet](#nuget-service-connection) | [Python package download](#python-package-download-service-connection) | [Python package upload](#python-package-upload-service-connection) | [Service Fabric](#service-fabric-service-connection) | [SSH](#ssh-service-connection) | [Subversion](#subversion-service-connection) | [Visual Studio App Center](#visual-studio-app-center-service-connection) |
 
 ### Azure Classic service connection
 
@@ -342,11 +339,11 @@ Defines and secures a connection to a Microsoft Azure Service Fabric cluster.
 
 | Parameter | Description |
 | --------- | ----------- |
-| \[authentication type\] | Required. Select **No authentication**, **Azure Active Directory credentials**, or **Certificate based**. |
+| \[authentication type\] | Required. Select **No authentication**, **Microsoft Entra credentials**, or **Certificate based**. |
 | Connection name | Required. The name you will use to refer to this connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Cluster connection | Required. The client connection of the remote cluster to connect to. Prefix with **tcp://**. |
-| Username | Required for Azure Active Directory authentication. The username to use when connecting to the remote cluster. |
-| Password | Required for Azure Active Directory authentication. The password for the specified username. |
+| Username | Required for Microsoft Entra authentication. The username to use when connecting to the remote cluster. |
+| Password | Required for Microsoft Entra authentication. The password for the specified username. |
 | Client certificate | Required for certificate based authentication. The Base64-encoded contents of the client certificate. |
 | Password | The password for the certificate when using certificate based authentication. |
 <p />
@@ -376,6 +373,19 @@ Use OAuth with **Grant authorization** or a username and password with **Basic A
 | Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | User name | Required. The username to connect to the service. |
 | Password | Required. The password for the specified username. |
+
+### Cargo service connection
+
+Use the following parameters to define and secure a connection to a [Cargo](../../artifacts/get-started-cargo.md) artifact repository.
+
+| Parameter | Description |
+| --------- | ----------- |
+| Authentication method | Choose the authentication method to the artifacts repository: **Basic username/password (including Azure DevOps PATs)** or **Authorization value (including crates.io tokens)**. |
+| Repository URL | URL for the repository. For crates.io, use `https://crates.io` |
+| Username | Username for connecting to the endpoint. The value can be arbitrary if using personal access tokens or the Authorization value authentication method. |
+| Password | Password for connecting to the endpoint. Personal access tokens are applicable for Azure DevOps Services organizations. |
+| Service connection name | Name for the service connection |
+| Description | Optional description of the service connection |
 
 ### Chef service connection
 
@@ -538,7 +548,7 @@ For an Azure RBAC enabled cluster, a ServiceAccount gets created in the chosen n
 For an Azure RBAC disabled cluster, a ServiceAccount gets created in the chosen namespace, but, the created ServiceAccount has cluster-wide privileges (across namespaces).
 
 > [!NOTE]
-> This option lists all the subscriptions the service connection creator has access to *across different Azure tenants*. If you can't see subscriptions from other Azure tenants, check your Azure AD permissions in those tenants.
+> This option lists all the subscriptions the service connection creator has access to *across different Azure tenants*. If you can't see subscriptions from other Azure tenants, check your Microsoft Entra permissions in those tenants.
 
 #### Service account option
 
@@ -652,11 +662,11 @@ Use the following parameters when you define and secure a connection to a Servic
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  Connection name  | Required. The name used to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Cluster Endpoint  | Required. The TCP endpoint of the cluster. |
-| Server Certificate Thumbprint | Required when connection type is **Certificate based** or **Azure Active Directory**. |
+| Server Certificate Thumbprint | Required when connection type is **Certificate based** or **Microsoft Entra ID**. |
 |Client Certificate | Required when connection type is **Certificate based**. |
 |  Password|  Required when connection type is **Certificate based**. The certificate password.|
-|  Username|  Required when connection type is **Azure Active Directory**. The username for authentication.|
-|  Password| Required when connection type is **Azure Active Directory**. The password for the username. |
+|  Username|  Required when connection type is **Microsoft Entra ID**. The username for authentication.|
+|  Password| Required when connection type is **Microsoft Entra ID**. The password for the username. |
 |  Use Windows security| Required when connection type is **Others**.|
 | Cluster SPN | Required when connection type is **Others** and using Windows security. |
 

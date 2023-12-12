@@ -19,9 +19,9 @@ ms.date: 06/29/2022
 
 Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps version. 
 
-For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md). See also [Guidance to create high-performing queries](high-performing-queries.md) for tips on constructing high-performing queries.
+For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md). See also [Create a query/Best practices](using-queries.md#best-practices).
 
-<a id="field-values" /> 
+<a id="field-values"></a> 
 
 ## Query field data types and values
 
@@ -161,7 +161,7 @@ The value you specify for a field must conform to the data type for that field. 
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
-<a id="operators" /> 
+<a id="operators"></a> 
 
 ## Query operators
 
@@ -480,7 +480,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    
    > [!NOTE]
-   > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure Active Directory (Azure AD) when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.  
+   > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Microsoft Entra ID when your Azure Boards account is backed by Microsoft Entra ID, or Active Directory when your on-premises server instance is backed by Active Directory.  
 
    For information about category groups, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types).
 
@@ -499,7 +499,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
     **String**  that matches the name of a user group in Team Foundation Server or a category group defined for a project.
 
    > [!NOTE]
-   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure AD when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.     
+   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Microsoft Entra ID when your Azure Boards account is backed by Microsoft Entra ID, or Active Directory when your on-premises server instance is backed by Active Directory.     
 
    :::column-end:::
 :::row-end:::
@@ -543,15 +543,18 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
    :::column span="3":::
    **String** , **DateTime**
 
+   > [!NOTE]
+   > **Was Ever** on date fields is not currently supported when using the Query Editor. They are only supported when doing a direct WIQL.
+
    :::column-end:::
 :::row-end:::
 
 
 > [!TIP] 
-> It's possible to contruct a query using WIQL syntax that uses an operator, such as **Was Ever**, for other data type fields than those listed. For example, you can use **Was Ever** within a clause using the **Iteration Path**. For an example, see [Query by date or current iteration, List work items moved out of a sprint](query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
+> It's possible to contsruct a query using WIQL syntax that uses an operator, such as **Was Ever**, for other data type fields than those listed. For example, you can use **Was Ever** within a clause using the **Iteration Path**. For an example, see [Query by date or current iteration, List work items moved out of a sprint](query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
 
-<a id="variables" /> 
-<a id="macros" /> 
+<a id="variables"></a> 
+<a id="macros"></a> 
 
 ## Query macros or variables
 
@@ -574,7 +577,7 @@ You can use the macros described in the following table to filter your queries b
       **[Any]** 
    :::column-end:::
    :::column span="3":::
-      Use with the **Work Item Type** or **State** fields to search across all work item types or across all states. For example, <code>Work Item Type=[Any]</code> won't place any filters based on the work item type.
+      Use with the **Work Item Type** or **State** fields to search across all work item types or across all states. For example, `Work Item Type=[Any]` won't place any filters based on the work item type.
    :::column-end:::
 :::row-end:::
 ---
@@ -613,7 +616,7 @@ You can use the macros described in the following table to filter your queries b
       **@Me** 
    :::column-end:::
    :::column span="3":::
-      Use with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause <code>Created By=@Me</code>. For more examples, see [Query by assignment, workflow, or Kanban board changes](query-by-workflow-changes.md).
+      Use with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause `Created By=@Me`. For more examples, see [Query by assignment, workflow, or Kanban board changes](query-by-workflow-changes.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -631,7 +634,7 @@ You can use the macros described in the following table to filter your queries b
       **@Project** 
    :::column-end:::
    :::column span="3":::
-      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>. The system automatically defaults to filtering based on the current project. For more information, see [Define a query, Query across projects](using-queries.md#across-projects). 
+      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause `Team Project=@Project`. The system automatically defaults to filtering based on the current project. For more information, see [Define a query, Query across projects](using-queries.md#across-projects). 
    :::column-end:::
 :::row-end:::
 ---
@@ -658,7 +661,7 @@ You can use the macros described in the following table to filter your queries b
       **@StartOfDay** <sup>2</sup> 
    :::column-end:::
    :::column span="3":::
-      Use with a <code>DateTime</code> field to filter for work items that relate to the current date or with a plus/minus offset. For example, you can find all items closed in the last week with the clause <code>Closed Date&gt;=@StartOfDay-7</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with a `DateTime` field to filter for work items that relate to the current date or with a plus/minus offset. For example, you can find all items closed in the last week with the clause `Closed Date&gt;=@StartOfDay-7`. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -667,7 +670,7 @@ You can use the macros described in the following table to filter your queries b
       **@StartOfMonth** <sup>2</sup> 
    :::column-end:::
    :::column span="3":::
-      Use with a <code>DateTime</code> field to filter for work items that relate to the current month or with a plus/minus offset. For example, you can find all items created in the last three months with the clause <code>Created Date&gt;=@StartOfMonth-3</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with a `DateTime` field to filter for work items that relate to the current month or with a plus/minus offset. For example, you can find all items created in the last three months with the clause `Created Date&gt;=@StartOfMonth-3`. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -676,7 +679,7 @@ You can use the macros described in the following table to filter your queries b
       **@StartOfWeek** <sup>2</sup> 
    :::column-end:::
    :::column span="3":::
-      Use with a <code>DateTime</code> field to filter for work items that relate to the current week or with a plus/minus offset. For example, you can find all items changed in the last two weeks with the clause <code>Changed Date&gt;=@StartOfWeek-2</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with a `DateTime` field to filter for work items that relate to the current week or with a plus/minus offset. For example, you can find all items changed in the last two weeks with the clause `Changed Date&gt;=@StartOfWeek-2`. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -685,7 +688,7 @@ You can use the macros described in the following table to filter your queries b
       **@StartOfYear** <sup>2</sup> 
    :::column-end:::
    :::column span="3":::
-      Use with a <code>DateTime</code> field to filter for work items that relate to the current year or with a plus/minus offset. For example, you can find all features that have a Target Date scheduled within the current year with the clause <code>Target Date&gt;=@StartOfYear</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with a `DateTime` field to filter for work items that relate to the current year or with a plus/minus offset. For example, you can find all features that have a Target Date scheduled within the current year with the clause `Target Date&gt;=@StartOfYear`. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -694,7 +697,7 @@ You can use the macros described in the following table to filter your queries b
       **@TeamAreas**  
    :::column-end:::
    :::column span="3":::
-      Only use with the **Area Path** field to filter for work items whose area path corresponds to one assigned to a specific team. Requires you use the **=** operator. For example, you can find all items assigned to the area paths assigned to the Web team with the clause <code>Area Path=@TeamAreas [Fabrikam Fiber]\Web</code>. For more examples, see [Query by area or iteration path](query-by-area-iteration-path.md).  
+      Only use with the **Area Path** field to filter for work items whose area path corresponds to one assigned to a specific team. Requires you use the **=** operator. For example, you can find all items assigned to the area paths assigned to the Web team with the clause `Area Path=@TeamAreas [Fabrikam Fiber]\Web`. For more examples, see [Query by area or iteration path](query-by-area-iteration-path.md).  
       The **@TeamAreas** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal.
    :::column-end:::
 :::row-end:::
@@ -704,7 +707,7 @@ You can use the macros described in the following table to filter your queries b
       **@Today**
    :::column-end:::
    :::column span="3":::
-      Use with a <code>DateTime</code> field to filter for work items that relate to the current date or to an earlier date. You can also modify the **@Today** macro by subtracting days. For example, you can find all items created in the last week with the clause <code>Created Date&gt;=@Today-7</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with a `DateTime` field to filter for work items that relate to the current date or to an earlier date. You can also modify the **@Today** macro by subtracting days. For example, you can find all items created in the last week with the clause `Created Date&gt;=@Today-7`. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -716,7 +719,7 @@ You can use the macros described in the following table to filter your queries b
 
 
 
-<a id="full-text" /> 
+<a id="full-text"></a> 
 
 ## Full-text and partial word searches
 

@@ -1,5 +1,5 @@
 ---
-title: .NET Client Libraries
+title: .NET client libraries
 description: Easily integrate with Azure DevOps from apps and services on Windows.
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
 ms.subservice: azure-devops-ecosystem
@@ -8,7 +8,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/28/2022
+ms.date: 11/10/2023
 ---
 
 # .NET client libraries
@@ -18,7 +18,7 @@ ms.date: 07/28/2022
 Client libraries are available for .NET developers who build Windows apps and services that integrate with Azure DevOps. Client libraries integrate with work item tracking, version control, build, and other services. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service.
 
 > [!TIP]
-> For more information, see the [Azure DevOps REST API Reference](/rest/api/azure/devops).
+> Find the corresponding .NET client class and API method, using [.NET Client Library Samples](../get-started/client-libraries/samples.md) and [Azure DevOps API Reference](/rest/api/azure/devops).
 
 ## Dependency diagram
 
@@ -26,20 +26,21 @@ Client libraries are available for .NET developers who build Windows apps and se
 
 ## Features
 
-* Downloadable from [nuget.org](https://www.nuget.org/) and easily importable into your Visual Studio projects
+* Downloadable from [NuGet.org](https://www.nuget.org/) and easily importable into your Visual Studio projects
 * Libraries are licensed for redistribution in your apps and services ([view the license](https://go.microsoft.com/fwlink/?LinkId=329770))
-* Access both traditional client object model APIs and [new REST APIs](../rest-api-overview.md)
+* Access both traditional client object model APIs and [REST APIs](/rest/api/azure/devops/?view-azure-devops-rest-7.2&preserve-view=true)
 
 > [!NOTE]
 > REST-based clients only work with Azure DevOps and TFS 2015 or later.
 > For more information about extending and integrating with Azure DevOps using the client libraries,
 > see [Extending Team Foundation](/previous-versions/visualstudio/visual-studio-2013/bb130146(v=vs.120)).
 
-## Package and Azure DevOps Server version-mapping table
+## Package and Azure DevOps version-mapping table
 
-|Package version|Azure DevOps Server version|
+|Package version|Azure DevOps version|
 |---------------|-----------|
-|16.170.0| `versions >= Azure DevOps Server 2020`|
+|16.205.x| `versions >= Azure DevOps Server 2022` |
+|16.170.x| `versions >= Azure DevOps Server 2020`|
 |16.153.x| `versions >= Azure DevOps Server 2019 Update 1`|
 |16.143.x| `versions >= Azure DevOps Server 2019`|
 |15.131.x| `versions >= TFS 2018 Update 1`|
@@ -83,15 +84,15 @@ For the latest preview versions, see the [NuGet packages gallery](https://www.nu
 
 ## Install
 
-From a NuGet package manager command prompt:
+Install from a NuGet package manager command prompt:
 
 ```powershell
 PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
 ```
 
-## Pattern for use
+## Connect
 
-Create an authenticated connection to Azure DevOps, get an HttpClient for the service you want to work with, and then call methods against that service.
+To create an authenticated connection to Azure DevOps, get an HttpClient for the service you want to work with, and then call methods against that service.
 
 See the following examples:
 
@@ -104,6 +105,8 @@ using Microsoft.VisualStudio.Services.WebApi;
 const String c_collectionUri = "https://dev.azure.com/fabrikam";
 const String c_projectName = "MyGreatProject";
 const String c_repoName = "MyRepo";
+
+Uri orgUrl = new Uri(c_collectionUri);
 
 // Connect to Azure DevOps Services
 VssConnection connection = new VssConnection(orgUrl, new VssBasicCredential(string.Empty, personalAccessToken));
@@ -151,7 +154,7 @@ namespace ConsoleApp1
 
 ```
 
-Further authentication samples can be found on our [.NET Samples page](../get-started/client-libraries/samples.md).
+For more authentication samples, see [.NET Samples](../get-started/client-libraries/samples.md).
 
 ## Reference
 
@@ -196,4 +199,7 @@ For version 16.143.1 of our NuGet packages, we support NetStandard 2.0. These pa
 
 ### Microsoft.TeamFoundationServer.ExtendedClient package doesn't have NetStandard support
 
-The [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) currently doesn't support a NetStandard compliant version. This package includes our older SOAP object model, which has been replaced by our newer REST object model.  At this point, we're no longer investing in the older SOAP object model, and have no plans to create a NetStandard version of it.
+The [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) doesn't support a NetStandard compliant version. 
+
+> [!IMPORTANT]
+> This package includes our older SOAP object model, which we replaced by our newer REST object model. We're no longer investing in the older SOAP object model, and have no plans to create a NetStandard version of it.

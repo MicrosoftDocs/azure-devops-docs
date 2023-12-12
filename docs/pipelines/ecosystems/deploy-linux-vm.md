@@ -16,9 +16,6 @@ Learn how to set up an Azure DevOps pipeline for multi-virtual machine deploymen
 
 Use the instructions in this article for any app that publishes a web deployment package.
 
-> [!NOTE]
-> If you want to deploy your application to a Linux virtual machine using the classic editor, see [Deploy web apps to Linux virtual machines (VMs)](../apps/cd/deploy-linuxvm-deploygroups.md).
-
 ## Prerequisites
 
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
@@ -151,9 +148,9 @@ You need a CI build pipeline that publishes your web app. You also need a deploy
       - job: Build
         displayName: Build
         steps:
-        - task: NodeTool@0
+        - task: UseNode@1
           inputs:
-            versionSpec: '16.x'
+            version: '16.x'
           displayName: 'Install Node.js'
         - script: |
             npm install

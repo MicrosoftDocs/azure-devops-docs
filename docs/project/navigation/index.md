@@ -19,7 +19,7 @@ ms.date: 04/04/2022
 
 The web portal for Azure DevOps is organized around a set of services as well as administrative pages and several task specific features such as the search box. The service labels differ depending on whether you work from Azure DevOps Services or Azure DevOps on premises and its version. 
 
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
+[!INCLUDE [temp](../../includes/version-selector.md)] 
 
 Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact.
 

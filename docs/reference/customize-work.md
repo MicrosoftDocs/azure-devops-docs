@@ -69,7 +69,7 @@ The **Assigned To** and other Identity fields are supported by the people picker
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of people picker Assigned To field.](../organizations/notifications/media/at-mention/identity-selector.png)  
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD) or Active Directory, people pickers provide support for searching all users and groups added to the AD, not just those added to the project. To learn more, see [Add AD/Azure AD users or groups to a built-in security group](../organizations/security/add-ad-aad-built-in-security-groups.md). 
+For organizations that manage their users and groups using Microsoft Entra ID or Active Directory, people pickers provide support for searching all users and groups added to the AD, not just those added to the project. To learn more, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](../organizations/security/add-ad-aad-built-in-security-groups.md). 
 
 ::: moniker range="azure-devops"
 
@@ -375,7 +375,7 @@ The following table summarizes the differences between the three supported proce
 4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 and later versions, including Azure DevOps Services. Starting with Visual Studio 2019, the Azure DevOps plug-in for Office no longer supports Office Project.
 5. You can use the REST API to [import and export process templates](/rest/api/azure/devops/processadmin/processes/import%20process%20template).
 
-<a id="choose-process-model" />
+<a id="choose-process-model"></a>
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 

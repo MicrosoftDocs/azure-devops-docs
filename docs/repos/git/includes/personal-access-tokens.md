@@ -26,7 +26,7 @@ ms.topic: include
    :::image type="content" source="../media/select-pat-scopes-preview.png" alt-text="Screenshot showing selected scopes for a PAT.":::
 
    > [!NOTE]
-   > You may be restricted from creating full-scoped PATs. If so, your Azure DevOps Administrator in Azure AD has enabled a policy which limits you to a specific custom defined set of scopes. For more information, see [Manage PATs with policies/Restrict creation of full-scoped PATs](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats).
+   > You may be restricted from creating full-scoped PATs. If so, your Azure DevOps Administrator in Microsoft Entra ID has enabled a policy which limits you to a specific custom defined set of scopes. For more information, see [Manage PATs with policies/Restrict creation of full-scoped PATs](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats).
    > For a custom defined PAT, the required scope for accessing the Component Governance API, `vso.governance`, isn't selectable in the UI.
 
 6. When you're done, copy the token and store it in a secure location. For your security, it doesn't display again.
@@ -68,7 +68,7 @@ ms.topic: include
 Use your PAT anywhere your user credentials are required for authentication in Azure DevOps.
 
 > [!IMPORTANT]
-> For organizations backed by Azure Active Directory, you have 90 days to sign in with your new PAT, otherwise it's considered inactive. For more information, see [User sign-in frequency for Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime).
+> For organizations backed by Microsoft Entra ID, you have 90 days to sign in with your new PAT, otherwise it's considered inactive. For more information, see [User sign-in frequency for Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime).
 
 ### Notifications
 
@@ -98,7 +98,7 @@ If you receive an unexpected PAT notification, an administrator or tool might ha
 - When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration."
 
 > [!WARNING]
-> If you believe that a PAT exists in error, we suggest you [revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As an Azure AD user, check with your administrator to see if your organization was used from an unknown source or location. See also the FAQ about [accidentally checking in a PAT to a public GitHub repository](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
+> If you believe that a PAT exists in error, we suggest you [revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As a Microsoft Entra user, check with your administrator to see if your organization was used from an unknown source or location. See also the FAQ about [accidentally checking in a PAT to a public GitHub repository](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
 
 ## Use a PAT
 

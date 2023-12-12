@@ -63,11 +63,6 @@ The work item form renders this example as shown.
 > [!div class="mx-imgBorder"]  
 > ![Rendered syntax in work item form.](media/template/repo-steps-rendered.png) 
 
-
-For more information about rich-text fields, see [Share information within work items and social tools](../queries/share-plans.md). 
-
-
-
 <a id="add-tags"> </a> 
 
 ## Add work item tags 

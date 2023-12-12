@@ -14,9 +14,7 @@ ms.date: 05/09/2022
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-<a>  </a>
-
-Rollup columns allow you to view progress bars or totals of numeric fields for descendant items within a hierarchy. Descendant items correspond to all child items within a hierarchy. You can add one or more rollup columns to a product or portfolio backlog. Support for sprint backlogs isn't supported. For information on linking work items in a hierarchy, see [Linking, traceability, and managing dependencies, Parent-child work item links](../queries/link-work-items-support-traceability.md#parent-child-work-item-links).
+Rollup columns allow you to view progress bars or totals of numeric fields for descendant items within a hierarchy. Descendant items correspond to all child items within a hierarchy. You can add one or more rollup columns to a product or portfolio backlog, but sprint backlogs aren't supported. For more information, on linking work items in a hierarchy, see [Link type reference/Work link types](../queries/link-type-reference.md#work-link-types).
 
 For example, here we show **Progress by Work Items** which displays progress bars for ascendant work items based on the percentage of descendant items that have been closed. Descendant items for Epics include all child Features and their child or grand-child work items. Descendant items for Features include all child User Stories and their child work items.
 
@@ -165,5 +163,4 @@ You can change the column order, column size, or sort options by using the follo
 
 - [Change column options](set-column-options.md)
 - [Work item field index](../work-items/guidance/work-item-field.md)
-- [Product backlog controls](product-backlog-controls.md)
 - [Create managed queries](../queries/using-queries.md)

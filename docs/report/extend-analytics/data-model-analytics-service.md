@@ -26,7 +26,7 @@ The Analytics data model is based on two schema namespaces:
 - `Microsoft.VisualStudio.Services.Analytics.Model` 
 - `Microsoft.VisualStudio.Services.Analytics`. 
  
-<a id="entities" />
+<a id="entities"></a>
 
 ## Entity sets and entity types  
 

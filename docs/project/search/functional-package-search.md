@@ -8,14 +8,14 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 11/28/2022
+ms.date: 09/28/2023
 ---
 
 # Search packages across your feeds
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Package Search is available to all users of Azure DevOps. For information on main search functions, see [Get started with search](get-started-search.md).
+Finding the right package for your project can be challenging, especially when there are many versions and dependencies involved. In this article, learn how to use Code Search to perform functional package search in Azure DevOps, which allows you to search for packages based on their functionality, metadata, and code snippets.
 
 ## Prerequisites
 
@@ -23,22 +23,24 @@ Package Search is available to all users of Azure DevOps. For information on mai
 
 - An Azure Artifacts feed. [Create a feed](../../artifacts/get-started-nuget.md#create-a-feed), if you don't have one already.
 
-## Apply supported functions to package search
+## Search packages
 
-1. Select the filter icon to show the filter panel.
+1. Sign in to your project (```https://dev.azure.com/{your_organization}/{your_project}```).
+2. **Enter** "package" in the search box.
 
-	:::image type="content" source="media/shared/pkgsrch-results-filtericon.png" alt-text="Screenshot Showing the filter lists":::
+3. Select from the dropdown menus to search by feeds, views, or package types.
 
-1. Select from the dropdown menus to search by feeds, views, or package types.
+	:::image type="content" source="media/shared/package-search-results-filters.png" alt-text="Screenshot showing the filter panel options.":::
 
-	:::image type="content" source="media/shared/pkgsrch-results-filters.png" alt-text="Screenshot showing the filter panel options":::
+You can search within all feeds of the organization by default, regardless of the project you’re in.
 
-By default, you search within all feeds of the organization, no matter which project you're in. The **Views** filter only appears if a single feed gets selected from the **Feeds** filter. Use this filter to show packages from a specific view.
-Using the **Type** filter, you can select the type of package you want to search for (such as NuGet packages).
+The **Views** filter shows up only when you select a single feed from the **Feeds** filter. This filter lets you display packages from a particular view.
 
-## Search using the REST API
+You can use the **Type** filter to choose the package type you want to search for (for example, NuGet packages).
 
-You can use the Azure DevOps REST API to search for packages in a specific organization. See [Fetch Package Search Results](/rest/api/azure/devops/search/package-search-results/fetch-package-search-results) for more details.
+## Search with the REST API
+
+You can use the Azure DevOps REST API to search for packages in a specific organization. For more information, see [Fetch package search results](/rest/api/azure/devops/search/package-search-results/fetch-package-search-results).
 
 #### Example
 
@@ -58,12 +60,12 @@ POST https://almsearch.dev.azure.com/ORGANIZATION_NAME/_apis/search/packagesearc
 }
 ```
 
-## Search in upstream sources
+## Search upstream sources
 
-Using upstream sources, you can consume packages from public registries and Azure Artifacts feeds. See [Search upstreams](../../artifacts/how-to/search-upstream.md) to lean how to search for packages in upstream sources and save them to your feed.
+Using upstream sources, you can consume packages from public registries and other Azure Artifacts feeds. For more information, see [Search upstream](../../artifacts/how-to/search-upstream.md).
 
 > [!NOTE]
-> Searching for packages in upstreams using the NuGet Package Explorer is not supported. See [Download NuGet packages](../../artifacts/get-started-nuget.md#download-nuget-packages) for more details.
+> You can only search for packages in upstream sources from your feed in Azure DevOps Services. NuGet Package Explorer doesn't support searching for upstream packages. For more information, see [Download NuGet packages](../../artifacts/get-started-nuget.md#download-packages).
 
 ## Next steps
 
@@ -74,7 +76,5 @@ Using upstream sources, you can consume packages from public registries and Azur
 
 ## Related articles
 
-- [Get started with Search](get-started-search.md)
 - [Search code](functional-code-search.md)
 - [Search work items](functional-work-item-search.md)
-- [Search FAQs](faq-search.yml)

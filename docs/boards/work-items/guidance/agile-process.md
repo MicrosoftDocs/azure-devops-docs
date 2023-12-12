@@ -24,7 +24,7 @@ Along with the WITs, teams have access to a set of work item queries to track in
 
 [!INCLUDE [temp](../../includes/process-customize.md)] 
 
-<a id="start-using" />
+<a id="start-using"></a>
 
 ## Plan and track work with Agile
  
@@ -84,7 +84,7 @@ As updates are made to the Agile process template, the version number is updated
 
 For a summary of updates made to process templates, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
-<a id="predefined-queries" />
+<a id="predefined-queries"></a>
 
 ::: moniker range="tfs-2018"
 

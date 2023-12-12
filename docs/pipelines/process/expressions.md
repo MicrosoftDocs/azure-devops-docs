@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 05/23/2023
+ms.date: 10/10/2023
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -14,8 +14,9 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
-The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run.
+Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline. When an expression returns an array, normal indexing rules apply and the index starts with `0`. 
+
+The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
 
 ::: moniker range=">= azure-devops-2019"
 ```yaml
@@ -141,7 +142,8 @@ The following built-in functions can be used in expressions.
 ::: moniker range=">= azure-devops-2019"
 
 ### coalesce
-* Evaluates the parameters in order, and returns the value that does not equal null or empty-string.
+* Evaluates the parameters in order (left to right), and returns the first value that does not equal null or empty-string.
+* No value is returned if the parameter values all are null or empty strings.
 * Min parameters: 2. Max parameters: N
 * Example: `coalesce(variables.couldBeNull, variables.couldAlsoBeNull, 'literal so it always works')`
 
@@ -419,7 +421,7 @@ steps:
 * Example: `replace('https://www.tinfoilsecurity.com/saml/consume','https://www.tinfoilsecurity.com','http://server')` (returns `http://server/saml/consume`)
 ::: moniker-end
 
-::: moniker range=">= azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 ### split
 * Splits a string into substrings based on the specified delimiting characters 
@@ -490,7 +492,7 @@ You can use the following status check functions as expressions in conditions, b
 
 <h3 id="always">always</h3>
 
-* Always evaluates to <code>True</code> (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
+* Always evaluates to `True` (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
 
 ### canceled
 * Evaluates to `True` if the pipeline was canceled.
@@ -527,7 +529,7 @@ You can use `if`, `elseif`, and `else` clauses to conditionally assign variable 
 ::: moniker range="< azure-devops-2022"
 You can use `if`  to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
 
-The `elseif` and `else` clauses are are available starting with Azure DevOps 2022 and are not available for Azure DevOps Server 2020 and earlier versions of Azure DevOps.
+The `elseif` and `else` clauses are available starting with Azure DevOps 2022 and are not available for Azure DevOps Server 2020 and earlier versions of Azure DevOps.
 
 ::: moniker-end
 
@@ -748,7 +750,7 @@ stages:
 ```
 
 Stages can also use output variables from another stage.
-In this example, there are also two stages. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs. Note that `stageDependencies` is used in the condition because you are referring to an output variable in a different stage. 
+In this example, there are also two stages. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs.
 
 
 ```yaml
@@ -763,7 +765,7 @@ stages:
        name: printvar
 
 - stage: B
-  condition: and(succeeded(), eq(stageDependencies.A.outputs['A1.printvar.shouldrun'], 'true'))
+  condition: and(succeeded(), eq(dependencies.A.outputs['A1.printvar.shouldrun'], 'true'))
   dependsOn: A
   jobs:
   - job: B1

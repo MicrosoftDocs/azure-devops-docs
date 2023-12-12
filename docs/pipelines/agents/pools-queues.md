@@ -1,7 +1,7 @@
 ---
 title: Create and manage agent pools
 ms.topic: conceptual
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.date: 06/20/2023
@@ -36,7 +36,7 @@ To share an agent pool with multiple projects, in each of those projects, you cr
 
 ::: moniker range="= azure-devops"
 
-An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into agent pools. When you configure an agent, it is registered with a single pool, and when you create a pipeline, you specify the pool in which the pipeline runs. When you run the pipeline, it runs on an agent from that pool that meets the [demands](../process/demands.md) of the pipeline.
+An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into agent pools. When you configure an agent, it is registered with a single pool, and when you create a pipeline, you specify the pool in which the pipeline runs. When you run the pipeline, it runs on an agent from that pool that meets the [demands](/azure/devops/pipelines/yaml-schema/pool-demands) of the pipeline.
 
 ::: moniker-end
 

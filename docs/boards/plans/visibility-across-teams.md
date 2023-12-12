@@ -43,7 +43,7 @@ When you configure a Delivery Plan, you select the teams and backlog levels of i
 
 ::: moniker range="< azure-devops"  
 
-When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Delivery Plans](../extensions/delivery-plans.md).
+When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Delivery Plans](../plans/review-team-plans.md).
 
 <img src="../extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" />
 ::: moniker-end 

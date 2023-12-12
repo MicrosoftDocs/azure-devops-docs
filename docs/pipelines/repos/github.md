@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 01/25/2023
+ms.date: 11/27/2023
 monikerRange: azure-devops
 ---
 
@@ -479,6 +479,21 @@ To bypass this precaution on GitHub pipelines, enable the **Make secrets availab
 
 For more information, see [Repository protection - Forks](../security/repos.md#forks).
 
+You can define centrally how pipelines build PRs from forked GitHub repositories using the **Limit building pull requests from forked GitHub repositories** control. It's available at organization and project level. You can choose to:
+- Disable building pull requests from forked repositories
+- Securely build pull requests from forked repositories
+- Customize rules for building pull requests from forked repositories
+
+:::image type="content" source="media/centralized-pipeline-control.png" alt-text="Screenshot of centralized control settings for how pipelines build PRs from forked GitHub repositories.":::
+
+Starting with [Sprint 229](/azure/devops/release-notes/2023/sprint-229-update), to improve the security of your pipelines, [Azure Pipelines no longer automatically builds pull requests from forked GitHub repositories](/azure/devops/release-notes/2023/sprint-229-update#building-prs-from-forked-github-repositories). For new projects and organizations, the default value of the **Limit building pull requests from forked GitHub repositories** setting is **Disable building pull requests from forked repositories**.
+
+When you choose the **Securely build pull requests from forked repositories** option, all pipelines, organization or project-wide, *cannot* make secrets available to builds of PRs from forked repositories, *cannot* make these builds have the same permissions as normal builds, and *must* be triggered by a PR comment. Projects can still decide to *not* allow pipelines to build such PRs.
+
+When you choose the **Customize** option, you can define how to restrict pipeline settings. For example, you can ensure that all pipelines require a comment in order to build a PR from a forked GitHub repo, when the PR belongs to non-team members and non-contributors. But, you can choose to allow them to make secrets available to such builds. Projects can decide to *not* allow pipelines to build such PRs, or to build them securely, or have even more restrictive settings than what is specified at the organization level.
+
+The control is off for existing organizations. [Starting September 2023, new organizations have **Securely build pull requests from forked repositories** turned on by default](/azure/devops/release-notes/2023/pipelines/sprint-227-update#build-github-repositories-securely-by-default).
+
 #### Important security considerations
 
 A GitHub user can fork your repository, change it, and create a pull request to propose changes to your repository. This pull request could contain malicious code to run as part of your triggered build. Such code can cause harm in the following ways:
@@ -569,6 +584,10 @@ GitHub allows three options when one or more Check Runs fail for a PR/commit. Yo
 
 Clicking on the "Rerun" link next to the Check Run name will result in Azure Pipelines retrying the run that generated the Check Run. The resultant run will have the same run number and will use the same version of the source code, configuration, and YAML file as the initial build. Only those jobs that failed in the initial run and any dependent downstream jobs will be run again. Clicking on the "Rerun all failing checks" link will have the same effect. This is the same behavior as clicking "Retry run" in the Azure Pipelines UI. Clicking on "Rerun all checks" will result in a new run, with a new run number and will pick up changes in the configuration or YAML file.
 
+## Limitations
+
+[!INCLUDE [limitations](includes/limitations-gh.md)]
+
 ## FAQ
 
 Problems related to GitHub integration fall into the following categories:
@@ -646,7 +665,7 @@ This means that your repository is already associated with a pipeline in a diffe
 
 [!INCLUDE [qa](includes/qa2-1.md)]
 
-[!INCLUDE [qa](includes/qa3.md)]
+[!INCLUDE [qa](includes/qa3-gh.md)]
 
 [!INCLUDE [qa](includes/qa4.md)]
 

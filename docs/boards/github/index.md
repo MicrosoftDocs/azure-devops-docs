@@ -78,6 +78,5 @@ If you connect the same GitHub repo to projects defined in two or more Azure Dev
 
 - [Build GitHub repositories](../../pipelines/repos/github.md) 
 - [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)
-- [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)  
 - [What's Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
 - [About work items](../work-items/about-work-items.md)

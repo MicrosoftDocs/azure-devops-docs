@@ -59,7 +59,7 @@ The following suggestions walk through the main end-of-sprint activities teams s
 - **Determine how to handle Remaining Work for completed tasks.** If tasks are complete, then having a non-zero value for **Remaining Work** doesn't make a lot of sense. Teams should decide how they want to handle these cases and consider setting the value of **Remaining Work** to zero for completed tasks.  
 
 
-<a id="review-sprint-backlog" /> 
+<a id="review-sprint-backlog"></a> 
 
 ### Review sprint backlog for incomplete work
 
@@ -67,7 +67,7 @@ To determine incomplete work, review the Sprint backlog for work that is still i
 :::image type="content" source="media/end-sprint/review-sprint-backlog.png" alt-text="Screenshot of Sprint Backlog at end of sprint.":::
 
 
-<a id="reassign" /> 
+<a id="reassign"></a> 
 
 ### Reassign incomplete user stories and tasks to future sprint 
 

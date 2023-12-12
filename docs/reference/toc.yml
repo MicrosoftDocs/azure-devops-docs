@@ -29,8 +29,6 @@
     href: ../organizations/settings/select-backlog-navigation-levels.md?toc=/azure/devops/reference/toc.json
   - name: Show bugs on backlogs & boards
     href: ../organizations/settings/show-bugs-on-backlog.md?toc=/azure/devops/reference/toc.json
-  - name: Set working days
-    href: ../organizations/settings/set-working-days.md?toc=/azure/devops/reference/toc.json
 - name: Customize an Inherited process
   href: ../organizations/settings/work/toc.yml
 - name: Customize an On-premises XML process

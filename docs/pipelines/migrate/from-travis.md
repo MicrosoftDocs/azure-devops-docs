@@ -31,7 +31,7 @@ There are many differences between Travis and Azure Pipelines, including:
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
   If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use.
-* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can [request a free tier](../troubleshooting/troubleshooting.md#check-for-available-parallel-jobs).
+* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can [request a free tier](../troubleshooting/troubleshoot-start.md#check-for-available-parallel-jobs).
 * Basic knowledge of Azure Pipelines. If you're new to Azure Pipelines, see the following to learn more about Azure Pipelines and how it works prior to starting your migration:
     * [Create your first pipeline](../create-first-pipeline.md)
     * [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)
@@ -57,9 +57,9 @@ For example, to select Node.JS 16.x:
 **azure-pipelines.yml**
 ``` yaml
 steps:
-- task: NodeTool@0
+- task: UseNode@1
   inputs:
-    versionSpec: '16.x'
+    version: '16.x'
 ```
 
 ### Language mappings
@@ -101,7 +101,7 @@ dependency installation step or execution inside a docker container:
 | `nix`         | `docker run -v $(pwd):/src -w /src nixos/nix nix-build`
 | `perl6`       | `sudo apt-get install rakudo`<br>`PERL6LIB=lib prove -v -r --exec=perl6 t/`
 | `rust`        | `curl -sSf https://sh.rustup.rs | sh -s -- -y`<br>`cargo build --verbose`<br>`cargo test --verbose` |
-| `scala`       | <code>echo "deb `https://repo.scala-sbt.org/scalasbt/debian` /" &#124; /etc/apt/sources.list.d/sbt.list</code><br>`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823`<br>`sudo apt-get update`<br>`sudo apt-get install sbt`<br>`sbt ++2.11.6 test` |
+| `scala`       | `echo "deb `https://repo.scala-sbt.org/scalasbt/debian` /" &#124; /etc/apt/sources.list.d/sbt.list`<br>`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823`<br>`sudo apt-get update`<br>`sudo apt-get install sbt`<br>`sbt ++2.11.6 test` |
 | `smalltalk`   | `docker run -v $(pwd):/src -w /src hpiswa/smalltalkci smalltalkci` |
 
 ### Multiple language selections
@@ -113,9 +113,9 @@ build environment targets both Node.JS 16.x and Ruby 3.2 or better:
 **azure-pipelines.yml**
 ``` yaml
 steps:
-- task: NodeTool@0
+- task: UseNode@1
   inputs:
-    versionSpec: '8.x'
+    version: '8.x'
 - task: UseRubyVersion@0
   inputs:
     versionSpec: '>= 3.2'
