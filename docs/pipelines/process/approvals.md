@@ -94,7 +94,7 @@ If your check doesn't succeed within the configured **Timeout**, the associated 
 > [!NOTE]
 > User defined pipeline variables are accessible to the check starting with [Sprint 215](/azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks).
 
-[Read more about the recommended way to use Invoke Azure Function checks](invoke-checks.md). Checks [need to follow specific rules](invoke-checks.md#check-compliance) depending on their mode and the number of retries to be compliant. 
+[Read more about the recommended way to use invoke Azure function checks](invoke-checks.md). Checks [need to follow specific rules](invoke-checks.md#check-compliance) depending on their mode and the number of retries to be compliant. 
 
 ## Invoke REST API
 
@@ -105,7 +105,7 @@ The evaluation can be repeated periodically using the **Time between evaluations
 > [!NOTE]
 > User defined pipeline variables are accessible to the check starting with [Sprint 215](/azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks).
 
-[Read more about the recommended way to use Invoke REST API checks](invoke-checks.md).
+[Read more about the recommended way to use invoke REST API checks](invoke-checks.md).
 
 ## Query Azure Monitor Alerts
 Azure Monitor offers visualization, query, routing, alerting, autoscale, and automation on data from the Azure infrastructure and each individual Azure resource. Alerts are a standard means to detect issues with the health of infrastructure or application, and take corrective actions. 
@@ -279,13 +279,13 @@ More details are available [here](../release/approvals/servicenow.md).
 
 A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed.
 
-A single final negative decision causes the pipeline to be denied access and the stage to fail. The decisions of all Approvals and Checks except for Invoke Azure Function / REST API and [Exclusive lock](#exclusive-lock) are final.
+A single final negative decision causes the pipeline to be denied access and the stage to fail. The decisions of all approvals and checks except for invoke Azure function / REST API and [Exclusive lock](#exclusive-lock) are final. You can rerun successful invoke Azure function / REST API checks. 
 
-When using Invoke Azure Function / REST API checks in the [recommended way](invoke-checks.md), their access decisions are also final. 
+When using invoke Azure function / REST API checks in the [recommended way](invoke-checks.md), their access decisions are also final. 
 
-When you specify _Time between evaluations_ for an Invoke Azure Function / REST API check to be non-zero, the check's decision is non-final. This scenario is worth exploring. 
+When you specify _Time between evaluations_ for an invoke Azure function / REST API check to be non-zero, the check's decision is non-final. This scenario is worth exploring. 
 
-Let us look at an example. Imagine your YAML pipeline has a stage that uses a Service Connection. This Service Connection has two checks configured for it:
+Let us look at an example. Imagine your YAML pipeline has a stage that uses a service connection. This service connection has two checks configured for it:
 1. An asynchronous check, named _External Approval Granted_, that verifies that [an external approval is given](invoke-checks.md#external-approval-must-be-granted) and is configured in the recommended way.
 1. A synchronous check, named _Deployment Reason Valid_, that verifies that [the deployment reason is valid](invoke-checks.md#deployment-reason-must-be-valid) and for which you set the _Time between evaluations_ to 7 minutes.
 
@@ -297,7 +297,7 @@ In this execution:
 - At minute 7, _Deployment Reason Valid_ is retried and this time it passes. 
 - At minute 15, _External Approval Granted_ calls back into Azure Pipelines with a successful decision. Now, both checks pass, so the pipeline is allowed to continue to deploy the stage.
 
-Let us look at another example, involving two synchronous checks. Assume your YAML pipeline has a stage that uses a Service Connection. This Service Connection has two checks configured for it:
+Let us look at another example, involving two synchronous checks. Assume your YAML pipeline has a stage that uses a service connection. This service connection has two checks configured for it:
 1. A synchronous check, named _Sync Check 1_, for which you set the _Time between evaluations_ to 5 minutes.
 1. A synchronous check, named _Sync Check 2_, for which you set the _Time between evaluations_ to 7 minutes.
 
@@ -312,7 +312,7 @@ In this execution:
 - At minute 14, _Sync Check 2_ is retried and succeeds. The pass decision is valid for 7 minutes. If _Sync Check 1_ doesn't pass in this time interval, _Sync Check 2_ will be retried.
 - At minute 15, _Sync Check 1_ is retried and succeeds. Now, both checks pass, so the pipeline is allowed to continue to deploy the stage.
 
-Let us look at an example that involves an Approval and a synchronous check. Imagine you configured a synchronous check and an Approval for a Service Connection with a _Time between evaluations_ of 5 minutes. Until the approval is given, your check will run every 5 minutes, regardless of decision.
+Let us look at an example that involves an approval and a synchronous check. Imagine you configured a synchronous check and an approval for a service connection with a _Time between evaluations_ of 5 minutes. Until the approval is given, your check will run every 5 minutes, regardless of decision.
 
 ## FAQ
 
