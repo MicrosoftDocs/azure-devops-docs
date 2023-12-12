@@ -134,7 +134,7 @@ To define a required template approval:
     * **Path to required template**: The name of your template. 
 
 
-You can have multiple required templates for the same service connection. In this example, the required template is `required.yml`.
+You can have multiple required templates for the same service connection. In this example, the required template is `production_template.yaml`.
 
 :::image type="content" source="media/checks/required-template.png" alt-text="Configuring required template check.":::
 
