@@ -159,11 +159,11 @@ In some circumstances such as a hotflix deployment, you may need to bypass a che
 
 To bypass an approval, business hours, invoke Azure function, or invoke REST API check, select **Bypass check** when the resource is waiting for review. Here's an example of bypassing the business hours check. 
 
-    :::image type="content" source="media/bypass-business-hours-check.png" alt-text="Screenshot of bypass business hours check option. ":::
+:::image type="content" source="media/bypass-business-hours-check.png" alt-text="Screenshot of bypass business hours check option. ":::
 
 When you bypass a check, you'll see who bypassed the check in the checks panel. 
 
-    :::image type="content" source="media/check-bypass-example.png" alt-text="Screenshot of log of bypassed check. ":::
+:::image type="content" source="media/check-bypass-example.png" alt-text="Screenshot of log of bypassed check. ":::
 
 ::: moniker-end
 
