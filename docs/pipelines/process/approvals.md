@@ -152,6 +152,19 @@ When debugging a check, you might want to temporarily disable and then enable it
 
     :::image type="content" source="media/checks/disable-check-approvals.png" alt-text="Screenshot of disable a check option.":::
 
+
+## Bypass a check
+
+In some circumstances such as a hotflix deployment, you may need to bypass a check. You can only bypass a check only if you have the administrator permission for the resource where the check is defined. 
+
+To bypass an approval, business hours, invoke Azure function, or invoke REST API check, select **Bypass check** when the resource is waiting for review. Here's an example of bypassing the business hours check. 
+
+    :::image type="content" source="media/bypass-business-hours-check.png" alt-text="Screenshot of bypass business hours check option. ":::
+
+When you bypass a check, you'll see who bypassed the check in the checks panel. 
+
+    :::image type="content" source="media/check-bypass-example.png" alt-text="Screenshot of log of bypassed check. ":::
+
 ::: moniker-end
 
 ## Evaluate artifact
