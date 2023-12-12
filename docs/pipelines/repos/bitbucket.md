@@ -4,7 +4,7 @@ description: Using a Bitbucket Cloud repository with Azure Pipelines
 ms.topic: reference
 ms.author: vijayma
 author: vijayma
-ms.date: 01/25/2023
+ms.date: 10/27/2023
 monikerRange: azure-devops
 ---
 
@@ -202,7 +202,7 @@ pr: none
 For more information, see [PR trigger](/azure/devops/pipelines/yaml-schema/pr) in the [YAML schema](/azure/devops/pipelines/yaml-schema).
 
 > [!NOTE]
-> If your `pr` trigger isn't firing, ensure that you have not [overridden YAML PR triggers in the UI](../troubleshooting/troubleshooting.md#overridden-yaml-trigger-setting).
+> If your `pr` trigger isn't firing, ensure that you have not [overridden YAML PR triggers in the UI](../troubleshooting/troubleshoot-triggers.md#overridden-yaml-trigger-setting).
 
 # [Classic](#tab/classic/)
 
@@ -218,6 +218,10 @@ For included branches, a build will be triggered on each push to a pull request 
 [!INCLUDE [informational-runs](../includes/information-run-include.md)]
 
 Learn more about [informational runs](../process/information-run.md).
+
+## Limitations
+
+[!INCLUDE [bb-limitations](./includes/bb-limitations.md)]
 
 ## FAQ
 

@@ -42,5 +42,5 @@ Your organization's image is updated.
 
 - [Change your organization's owner](change-organization-ownership.md)
 - [Change your organization's location](change-organization-location.md)
-- [Change your organization's Azure AD connection](change-azure-ad-connection.md)
+- [Change your organization's Microsoft Entra connection](change-azure-ad-connection.md)
 - [Rename your organization](rename-organization.md)

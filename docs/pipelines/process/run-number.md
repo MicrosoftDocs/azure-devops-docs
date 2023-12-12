@@ -27,7 +27,11 @@ If your build number format is `1.0.$(Rev:r)`, then the build number resets to `
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
 
-In YAML, this property is called `name` and must be at the root level of a pipeline. 
+In YAML, this property is called `name` and must be at the root level of a pipeline.
+
+> [!NOTE]
+> Items specified at the root level of a YAML file are [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) properties.
+
 If not specified, your run is given a unique integer as its name.
 You can give runs much more useful names that are meaningful to your team.
 You can use a combination of tokens, variables, and underscore characters.
@@ -75,7 +79,7 @@ If you specify this build number format:
 $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 ```
 
-Then the second run on this day would be named: **Fabrikam\_CIBuild_master\_20190505.2**
+Then the second run on this day would be named: **Fabrikam\_CIBuild_main\_20190505.2**
 
 
 ## Tokens
@@ -160,14 +164,15 @@ You can use variables as part of your run number. In this example, the variable 
 
 ```yaml
 variables:
-  ${{ if eq(variables['Build.Reason'], 'PullRequest') }}:
-    why: pr
-  ${{ elseif eq(variables['Build.Reason'], 'Manual' ) }}:
-    why: manual
-  ${{ elseif eq(variables['Build.Reason'], 'IndividualCI' ) }}:
-    why: indivci 
-  ${{ else }}:
-    why: other
+  - name: why
+    ${{ if eq(variables['Build.Reason'], 'PullRequest') }}:
+      value: pr
+    ${{ elseif eq(variables['Build.Reason'], 'Manual' ) }}:
+      value: manual
+    ${{ elseif eq(variables['Build.Reason'], 'IndividualCI' ) }}:
+      value: indivci
+    ${{ else }}:
+      value: other
 
 name: $(TeamProject)_$(SourceBranchName)_$(why)_$(Date:yyyyMMdd)$(Rev:.r)
 

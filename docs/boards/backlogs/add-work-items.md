@@ -21,8 +21,6 @@ You add work items to plan and manage your project. Different types of work item
 
 > [!NOTE]  
 > This article shows how to add any type of work item. However, the recommended tool for adding backlog or portfolio items&mdash;such as, user stories, product backlog items, features, or epics&mdash; is to use the backlog or Kanban board to add new items. For more information, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md) and [Start using your Kanban board](../boards/kanban-quickstart.md). To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
- 
-For other clients that you can use to add and update work items, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
@@ -179,7 +177,7 @@ There's no way to use Visual Studio 2019 to update a work item at this time.
 
 [Update work item](#update-work-item) | [Show work item details](#show-work-item) 
 
-<a id="update-work-item" />  
+<a id="update-work-item"></a>  
 
 ### Update a work item
 
@@ -230,7 +228,7 @@ ID    Type    Title                Assigned To          State
 864   Bug     Fix security issues  contoso@contoso.com  New
 ```
 
-<a id="show-work-item" />  
+<a id="show-work-item"></a>  
 
 #### Add comments to a discussion
 
@@ -296,13 +294,12 @@ To stop following changes, choose the  :::image type="icon" source="../media/ico
 
 ## Next steps  
 
-To quickly add backlog items, such as user stories, requirements, or bugs, see these articles:  
 > [!div class="nextstepaction"]
-> [Create your backlog](create-your-backlog.md)
+> [Create your backlog](create-your-backlog.md) or 
 > [Kanban quickstart](../boards/kanban-quickstart.md) 
 
 
-For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/azure/devops/boards/work-items/toc.json ).  
+For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json ) and [Work item form controls](../work-items/about-work-items.md#work-item-form-controls).  
 
 
 Once you've added several work items, you can use additional features to get [notified of changes](../../organizations/notifications/manage-your-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  

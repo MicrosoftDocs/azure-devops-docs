@@ -10,6 +10,7 @@ author: vijayma
 ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: devx-track-azurecli
 ---
 
 # View, filter, and open pull requests
@@ -186,7 +187,7 @@ ID    Created     Creator              Title                                    
 
 ***
 
-<a id="define-custom-pr-view" />
+<a id="define-custom-pr-view"></a>
 
 ## Define a custom pull request view
 
@@ -267,7 +268,7 @@ az repos pr list --creator "My Name" --status all --top 1
 
 ***
 
-<a id="open-pr" />
+<a id="open-pr"></a>
 
 ## Open a pull request
 

@@ -18,7 +18,7 @@ ms.date: 07/27/2022
 
 You configure resources either for yourself or for your team, project, or organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role that you belong to. 
 
-If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md). To quickly find a setting or related settings, see [Search organization settings](search-settings.md).
+If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
 > [!NOTE]  
 > You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md). For more information about Stakeholder access, see [Stakeholder access quick reference](../security/stakeholder-access.md). 
@@ -149,7 +149,7 @@ Individual contributors can set their user preferences, enable features that are
 :::row-end:::
 ---
 
-<a id="team" />
+<a id="team"></a>
 
 ## Team administrator role and managing teams
 
@@ -189,7 +189,6 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column span="2":::
       - [Backlog levels](select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Show bugs on backlogs & boards](show-bugs-on-backlog.md)
-      - [Set working days](set-working-days.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Configure area paths](set-area-paths.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Select active iteration paths (sprints)](set-iteration-paths-sprints.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Define work item templates](../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
@@ -226,7 +225,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 ---
 
 
-<a id="project" />
+<a id="project"></a>
 
 ## Project Administrator role and managing projects
 
@@ -518,7 +517,7 @@ From the administrative **Project settings** page, you can configure settings av
 :::row-end:::
 ---
 
-<a id="admin" />
+<a id="admin"></a>
 
 ## Project Collection Administrator (PCA) role and managing collections of projects 
 
@@ -643,7 +642,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Remove users](../accounts/delete-organization-users.md)
    :::column-end:::
    :::column span="2":::
-      For large organizations with a sizable number of users, we recommend that you [manage user access through Azure Active Directory](../accounts/access-with-azure-ad.md). For a small number of users, you can manage user access by adding their Microsoft Service Account (MSA) email. From the account-level Users page, you can also [export the set of users and their access levels](../security/export-users-audit-log.md).
+      For large organizations with a sizable number of users, we recommend that you [manage user access through Microsoft Entra ID](../accounts/access-with-azure-ad.md). For a small number of users, you can manage user access by adding their Microsoft Service Account (MSA) email. From the account-level Users page, you can also [export the set of users and their access levels](../security/export-users-audit-log.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -731,7 +730,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Manage application access policies](../accounts/change-application-access-policies.md)
       - [Add external users](../accounts/add-external-user.md)   
       - [Disable Request Access policy](../accounts/disable-request-access-policy.md)
-      - [Restrict users from creating new organizations with Azure Active Directory policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
+      - [Restrict users from creating new organizations with Microsoft Entra policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
       - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
       - [Enable Conditional Access or Multi-Factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
    :::column-end:::
@@ -750,8 +749,8 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Look up the organization owner](../security/look-up-organization-owner.md)
       - [Look up a project collection administrator ](../security/look-up-project-collection-administrators.md)
       - [Add administrators, set organization-level permissions](../security/change-organization-collection-level-permissions.md)
-      - [Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)
-      - [Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
+      - [Add Microsoft Entra groups](../accounts/manage-azure-active-directory-groups.md)
+      - [Connect to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md)
       - [Set permissions to manage extensions](../../marketplace/grant-permissions.md)
       - [Manage conditional access](../accounts/change-application-access-policies.md)
    :::column-end:::
@@ -826,7 +825,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 
 ::: moniker range="< azure-devops"
 
-<a id="admin" />
+<a id="admin"></a>
 
 ## Server Administrator role 
 

@@ -48,15 +48,18 @@ sections:
         answer: |
           Sign in with a [personal Microsoft account](https://www.microsoft.com/account) 
           or a [work or school account](/azure/active-directory/fundamentals/sign-up-organization) 
-          that's managed by Azure Active Directory.
+          that's managed by Microsoft Entra ID.
           
           <a name="vs-versions"></a>
           
       - question: |
           Which versions of Visual Studio can I use with Azure DevOps?
         answer: |
+          > [!IMPORTANT]  
+          > While previous versions of Visual Studio are compatible with Azure DevOps, it's a best practice to make sure you are on the latest update of that version and to use [supported versions](/visualstudio/productinfo/vs-servicing#older-versions-of-visual-studio) of Visual Studio whenever possible.
+        
           You can use the following versions:
-          
+                  
           * Visual Studio 2019
           * Visual Studio 2017
           * Visual Studio 2015
@@ -116,6 +119,6 @@ sections:
       - question: |
           Related articles 
         answer: |
-          - [Access with Azure AD FAQs](faq-azure-access.yml)
-          - [Configure and customize organization FAQs](faq-configure-customize-organization.yml)
-          - [User and permissions management FAQs](faq-user-and-permissions-management.yml)
+          - [Access with Microsoft Entra FAQ](faq-azure-access.yml)
+          - [Configure and customize organization FAQ](faq-configure-customize-organization.yml)
+          - [User and permissions management FAQ](faq-user-and-permissions-management.yml)

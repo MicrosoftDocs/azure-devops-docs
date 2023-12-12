@@ -18,7 +18,7 @@ The Ubuntu 22.04 image is now available in preview for Azure Pipelines hosted ag
       echo Hello from Ubuntu 22.04 Preview
       lsb_release -d
 ```
-The ubuntu-latest image label will continue to point to ubuntu-20.04 until ubuntu-22.04 comes out of preview later this year. While the Ubuntu 22.04 image is in preview, it currently doesn't support all of the tooling available in ubuntu-20.04 and you may experience longer queue times than other images. For more information, check the [virtual-environments repository](https://github.com/actions/virtual-environments) and [Ubuntu image configurations](https://github.com/actions/virtual-environments/tree/main/images/linux).
+The ubuntu-latest image label will continue to point to ubuntu-20.04 until ubuntu-22.04 comes out of preview later this year. While the Ubuntu 22.04 image is in preview, it currently doesn't support all of the tooling available in ubuntu-20.04 and you may experience longer queue times than other images. For more information, check the [virtual-environments repository](https://github.com/actions/virtual-environments) and [Ubuntu image configurations](https://github.com/actions/runner-images/tree/main/images/ubuntu).
 
 ### Preview of macOS 12 Monterey for Azure Pipeline hosted pools
 

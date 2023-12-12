@@ -5,8 +5,8 @@ ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: reference
-ms.author: sdanie
-author: steved0x
+ms.author: ravikum
+author: raviliftr
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
 ---
@@ -50,7 +50,7 @@ The following table summarizes the license requirements required to exercise sel
 | Prepare for execution such as assigning configurations or testers | Basic + Test Plans  | 
 | Prepare User Acceptance Testing | Basic + Test Plans  |
 
-<a id="access-by-user-role" /> 
+<a id="access-by-user-role"></a>
 
 ## Permissions
 

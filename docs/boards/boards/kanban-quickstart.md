@@ -8,7 +8,7 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/01/2023
+ms.date: 11/10/2023
 ---
 
 # Use your Kanban board
@@ -28,7 +28,6 @@ In this article, learn how to:
 > * Update card fields
 > * Filter your board
 > * Invite others to work on your board
-> * Enable live updates
 > * Monitor metrics
 
 > [!NOTE]  
@@ -157,32 +156,11 @@ All members of a project can view and contribute to your Kanban board. To invite
 :::image type="content" source="media/kanban-basics-url.png" alt-text="Screenshot showing highlighted URL for the Kanban board.":::
 ::: moniker-end
 
-To add users to your project, see [Add users to a project](../../organizations/security/add-users-team-project.md).   
-
-## Enable live updates 
-
-Enable live updates to automatically refresh your Kanban board when changes occur. With live updates enabled, you no longer have to select **F5** to see the latest changes. To view or modify work items, **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**. By default, the Contributors group has this permission set. Users with Stakeholder access for a private project can add work items and update status through drag-and-drop, but can't update fields displayed on cards. They can add tasks and change task status.
-
-::: moniker range=">= azure-devops-2019"
-Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and move the slider for **Live updates** to On.  
-
-:::image type="content" source="media/turn-live-updates-on-agile.png" alt-text="Screenshot showing moving the slider for Live updates to On.":::
-::: moniker-end
-
-::: moniker range="tfs-2018"
-Choose the :::image type="icon" source="../media/icons/live-updates-icon.png" border="false"::: **Live updates** icon.  
-
-:::image type="content" source="media/turn-live-updates-on-agile.png" alt-text="Screenshot showing Kanban board, live updates icon.":::
-
-As one team member updates the status of a work item, other team members see those updates in real time as they occur.  
-
-![GIF showing live update flow.](../boards/media/kanban-live-updates.gif)  
-
-::: moniker-end
+To add users to your project, see [Add users to a project](../../organizations/security/add-users-team-project.md).
 
 ## Monitor metrics
 
-As with most Agile practices, Kanban encourages monitoring key metrics to fine tune your processes. After your team has used the Kanban board for several weeks, check out your Cumulative Flow Diagram (CFD).
+As with most Agile practices, Kanban encourages monitoring key metrics to fine tune your processes. After your team uses the Kanban board for several weeks, check out your Cumulative Flow Diagram (CFD).
 
 ::: moniker range=">= azure-devops-2020"
 Choose the **Analytics** tab, and then choose **View full report** for the CFD as shown in the following image. 

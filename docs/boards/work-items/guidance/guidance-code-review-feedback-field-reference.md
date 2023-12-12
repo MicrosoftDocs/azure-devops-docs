@@ -25,7 +25,7 @@ You can use the code review and feedback fields to create queries and reports th
 ::: moniker-end
 
 <a name="codereviews"></a> 
-<a id="fields" />
+<a id="fields"></a>
 
 ## Fields used to track code reviews  
 

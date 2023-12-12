@@ -39,6 +39,8 @@ In this article, we break down the permissions to the following levels of permis
 
 For more information, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md), [Securing Azure Pipelines](../security/overview.md), and [Verify permissions for contributors](set-permissions.md#verify-permissions-for-contributors). 
 
+For information about setting permissions with Azure CLI, see the [Azure CLI reference](/cli/azure/devops). 
+
 ## Prerequisites
 
 * To manage permissions and [add users to Azure Pipelines](set-permissions.md) for project-level groups, you must be a **Project Administrator**. For more information, see [Project-level group permissions](../../organizations/security/permissions.md#project-level-groups).
@@ -395,9 +397,6 @@ Select **Security** from **More actions** :::image type="icon" source="../../med
 3. Set permissions, and then **Save** your changes.
 
 ### Environment permissions reference
-
-> [!IMPORTANT]
-> When you create an environment in a YAML, contributors and project administrators have the administrator role. When you create an environment through the UI, only the creator has the administrator role. 
 
 [!INCLUDE [temp](../../organizations/security/includes/environment-roles.md)]
 

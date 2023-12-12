@@ -36,7 +36,12 @@ This scenario also applies when the server doesn't have access to the internet.
 
 1. From a computer with Internet access, download the latest version of the agent package files (in .zip or .tar.gz form) from the [Azure Pipelines Agent GitHub Releases page](https://github.com/Microsoft/azure-pipelines-agent/releases).
 
-2. Transfer the downloaded package files to each Azure DevOps Server Application Tier by using a method of your choice (such as USB drive, Network transfer, and so on). Place the agent files under the `%ProgramData%\Microsoft\Azure DevOps\Agents` folder. Create the **Agents** folder if it is not present.
+2. Transfer the downloaded package files to each Azure DevOps Server Application Tier by using a method of your choice (such as USB drive, Network transfer, and so on). Place the agent files under the following folder:
+  * Windows: `%ProgramData%\Microsoft\Azure DevOps\Agents` 
+  * Linux: `usr/share/Microsoft/Azure DevOps/Agents`
+  * macOS: `usr/share/Microsoft/Azure DevOps/Agents`
+
+  Create the **Agents** folder if it is not present.
 
 3. You're all set! Your Azure DevOps Server will now use the local files whenever the agents are updated. Each agent automatically updates itself when it runs a task that requires a newer version of the agent. But if you want to manually update some agents, right-click the pool, and then choose **Update all agents**.
 

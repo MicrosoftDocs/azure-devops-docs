@@ -160,7 +160,7 @@ Use `=` to find current assignments, `Was Ever` to list items based on past assi
 ---
  
 
-<a id="group" /> 
+<a id="group"></a> 
 
 ## Team or group membership queries  
 
@@ -171,7 +171,7 @@ To filter on items assigned to someone who belongs to a team or security group, 
 You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that aren't members of a group. Examples of groups you can specify include the following items: 
 - Teams
 - Built-in and custom security groups
-- Azure Active Directory and Active Directory security groups
+- Microsoft Entra ID and Active Directory security groups
 - Work item categories
 
 <a id="workflow-change"/> 
@@ -278,9 +278,9 @@ To list work items that have changed state within a specific date range, you can
 > ![Screenshot of Query Editor, filter State Change Date and State fields.](media/workflow/query-state-change-date.png)
 
 
-<a id="query-changes-to-a-kanban-board" />
-<a id="kanban-query-fields" />
-<a id="kanban_query_fields" />
+<a id="query-changes-to-a-kanban-board"></a>
+<a id="kanban-query-fields"></a>
+<a id="kanban_query_fields"></a>
 
 ## Query changes to a Kanban board 
 
@@ -347,7 +347,7 @@ You can list items based on the team area path, and if they are in a specific cu
  
 
 <a id="workflow-fields">  </a>
-<a id="fields" />
+<a id="fields"></a>
 
 ## Workflow and Kanban board fields
 
@@ -690,7 +690,7 @@ For more information about field attributes, see [Work item fields and attribute
 ::: moniker range="azure-devops"
 > [!NOTE]  
 > 1. See [Date and Identity fields](#date-identity).  
-> 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad). 
+> 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Microsoft Entra ID. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in Active Directory or Microsoft Entra ID or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Microsoft Entra ID](../../organizations/security/about-permissions.md#aad). 
 > 3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   
 > 4. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types).  
 
@@ -704,7 +704,7 @@ For more information about field attributes, see [Work item fields and attribute
 
 1. See [Date and Identity fields](#date-identity).
 
-2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad).
+2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Microsoft Entra ID. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in Active Directory or Microsoft Entra ID or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Microsoft Entra ID](../../organizations/security/about-permissions.md#aad).
 
     For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](/previous-versions/azure/devops/reference/xml/field-definition-element-reference).  
 3.  Reportable field with attribute set to Dimension. Only valid when the collection is configured to support the On-premises XML model. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
@@ -724,7 +724,7 @@ The **Assigned To** field is supported by the people picker feature. For example
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of the @mention tool in Discussion showing people picker.](../../organizations/notifications/media/at-mention/identity-selector.png)  
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD) or Active Directory, people pickers provide support for searching all users and groups added to the AD, not just those users and groups added to the project. 
+For organizations that manage their users and groups using Microsoft Entra ID or Active Directory, people pickers provide support for searching all users and groups added to the AD, not just those users and groups added to the project. 
 
 ::: moniker range="azure-devops"
 
@@ -734,7 +734,7 @@ To limit the scope of identities available for selection to just those users add
 ::: moniker-end
 
 
-<a id="date-identity" />
+<a id="date-identity"></a>
 
 ### Date and identity fields 
 
@@ -876,4 +876,3 @@ Then the Activated By and Activated Date fields are set to `READONLY`.
 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
-

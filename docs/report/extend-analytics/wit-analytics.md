@@ -45,7 +45,7 @@ In this article you'll learn how to define queries that return the following dat
 > In this article, the OData query URL is defined for Azure DevOps Services. To construct a similar query for an on-premises server, see the guidance provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md). We encourage you to adjust the queries provided for your organization and project to get familiar with querying OData using your browser. 
 
 
-<a id="return-count-items" />
+<a id="return-count-items"></a>
 
 ## Return a count of items (no other data)  
 
@@ -106,7 +106,7 @@ To learn about the number of items or entities defined in an organization or pro
 > ```
 
 
-<a id="return-count-items-with-data" />
+<a id="return-count-items-with-data"></a>
 
 ## Return a count of items and data 
 
@@ -127,7 +127,7 @@ To return a count of items along with select data for the items, specify the `$c
 
 To look up the `AreaSK` or `IterationSK`, or other property of an **Area Path** or **Iteration Path**, use the following queries. 
 
-<a id="areask" />
+<a id="areask"></a>
 
 ### Return the AreaSK for a specific Area Path 
 
@@ -152,7 +152,7 @@ The query returns the following data.
 > }
 > ```
 
-<a id="iterationsk" />
+<a id="iterationsk"></a>
 
 ### Return the IterationSK for a specific Iteration Path 
 
@@ -177,7 +177,7 @@ The query returns the following data.
 > }
 > ```
  
-<a id="select-columns" />
+<a id="select-columns"></a>
 
 ## Return specific properties or fields 
 
@@ -219,7 +219,7 @@ Analytics returns the following data.
 > ```
 .  
 
-<a id="filter-data" />
+<a id="filter-data"></a>
 
 ## Filter your data 
 
@@ -273,7 +273,7 @@ For example, the following query specifies to return work items of type *User St
 Additionally, you can apply various functions such as `contains`, `startswith`, `endswith` and more. See the [Supported OData features and clauses, Supported functions](odata-supported-features.md#supported-functions). 
 
 
-<a id="filter-navigation-field" />
+<a id="filter-navigation-field"></a>
 
 ## Return data for Identity, Area Path, and Iteration Path fields
  
@@ -285,7 +285,7 @@ The following table provides examples of how to expand several of these properti
 |-------------|-------------------|-------------------|
 | DateTime  | `DateSK`      | `$expand=CreatedDate($select=Date)` or<br/>`$expand=CreatedDate($select=WeekStartingDate)`  | 
 | Identity  | `UserSK`      | `$expand=AssignedTo($select=UserName)` or<br/>`$expand=AssignedTo($select=UserEmail)` | 
-| Area      | `AreaSK`      | `$expand=AssignedTo($select=AreaName)` or<br/>`$expand=AssignedTo($select=AreaPath)` | 
+| Area      | `AreaSK`      | `$expand=Area($select=AreaName)` or<br/>`$expand=Area($select=AreaPath)` | 
 | Iteration | `IterationSK` | `$expand=Iteration($select=IterationName)` or<br/>`$expand=Iteration($select=IterationPath)` or<br/>`$expand=Iteration($select=StartDate)`| 
 | Project	| `ProjectSK`   | `$expand=Project($select=ProjectName)` | 
 | Team 	    | `TeamSK`      | `$expand=Teams($select=TeamName)` | 
@@ -296,7 +296,7 @@ To specify several properties that need to be expanded, you specify them in a si
 
 
 
-<a id="filter-navigation" />
+<a id="filter-navigation"></a>
 
 ## Filter by a navigation property
 
@@ -350,7 +350,7 @@ Here's another example that requests the top five work items under the *Fabrikam
 >      State        "To Do"
 >```
 
-<a id="return-related" />
+<a id="return-related"></a>
 
 
 > [!TIP]  
@@ -430,7 +430,7 @@ It then returns the following data.
 
 
 
-<a id="date-range-queries" /> 
+<a id="date-range-queries"></a> 
 
 ## Query a date range
 
@@ -539,7 +539,7 @@ It returns the following JSON:
 
 Notice that the result here shows only the IterationId and IterationPath and that the Project is a nested object within the JSON result. Another key item to note is the URL itself. When using a `$select` statement and an `$expand` clause, you must use a semi-colon (;) before the `$expand`. Anything else will result in an error.
 
-<a id="sort-results" />
+<a id="sort-results"></a>
 
 ## Sort results, `orderby` option
 
@@ -572,7 +572,7 @@ Specify the `$orderby` option to sort your results or specify the sequence in wh
 
 
 <!--- 
-<a id="basic-query" />
+<a id="basic-query"></a>
 
 ## Construct a basic query 
 
@@ -592,7 +592,7 @@ You construct a basic query by entering the OData URL into a [supported web brow
 ::: moniker-end
 
 
-<a id="single-entity" />
+<a id="single-entity"></a>
 
 ## Query a single entity set
 

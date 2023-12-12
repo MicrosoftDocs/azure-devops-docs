@@ -184,6 +184,6 @@ To keep anyone else from modifying a shared query that you create, you may want 
 With queries, you cannot only list work items, you can create status and trend charts and add them to dashboards. You can learn more about permissions and working with queries from these resources: 
 
 - [Manage queries and query folders](organize-queries.md)  
-- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md)  
+- [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  
 - [Add a chart to a dashboard](../../report/dashboards/add-charts-to-dashboard.md)
 - [Dashboards](../../report/dashboards/dashboards.md) 

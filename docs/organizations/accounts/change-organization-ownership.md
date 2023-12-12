@@ -28,7 +28,7 @@ As roles and responsibilities change, you can change the owner for your organiza
   - Access the organization at least once after creating your initial profile.
 
 > [!TIP]
-> For organizations connected to Azure Active Directory (Azure AD),  if your organization owner and any other Project Collection Administrators are no longer active, you can [transfer ownership to another user](resolve-orphaned-organization.md).  
+> For organizations connected to Microsoft Entra ID,  if your organization owner and any other Project Collection Administrators are no longer active, you can [transfer ownership to another user](resolve-orphaned-organization.md).  
 
 ## Change organization owner
 
@@ -53,4 +53,4 @@ Your organization has a new owner.
 - [Resolve inactive organization owner](resolve-orphaned-organization.md)
 - [Change organization location](change-organization-location.md)
 - [Rename your organization](rename-organization.md)
-- [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
+- [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)

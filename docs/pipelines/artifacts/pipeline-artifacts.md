@@ -1,7 +1,7 @@
 ---
-title: Publish and download artifacts in your pipeline
+title: Publish and download pipeline artifacts
+description: How to publish and download pipeline artifacts
 ms.custom: seodec18
-description: How to publish and consume pipeline artifacts
 ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
 ms.date: 08/30/2021
@@ -9,7 +9,7 @@ monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
 
-# Publish and download pipeline Artifacts
+# Publish and download pipeline artifacts
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -128,7 +128,7 @@ steps:
 > You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
 
 > [!NOTE]
-> The `download` keyword is a shortcut for the [Download Pipeline Artifact](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) task.
+> The `download` keyword downloads artifacts. For more information, see [steps.download](/azure/devops/pipelines/yaml-schema/steps-download).
 
 # [YAML (task)](#tab/yaml-task)
 
@@ -162,6 +162,7 @@ steps:
 
 ---
 
+To download a pipeline artifact from a different project within your organization, make sure that you have the appropriate [permissions](../../artifacts/feeds/project-scoped-feeds.md#q-i-want-to-download-a-pipeline-artifact-from-another-project-but-my-pipeline-is-failing) configured for both your downstream project and downstream pipeline.
 By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded. See [File matching patterns](../tasks/file-matching-patterns.md) for more details.
 
 ```yml
@@ -351,21 +352,21 @@ When migrating from build artifacts to pipeline artifacts:
 
 ```yaml
 - task: PublishPipelineArtifact@1
-  displayName: 'Publish'
+  displayName: 'Publish pipeline artifact'
   inputs:
-    targetPath: $(Build.ArtifactStagingDirectory)/**
+    targetPath: '$(Pipeline.Workspace)'
     ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
-        artifactName: 'prod'
+        artifact: 'prod'
     ${{ else }}:
-        artifactName: 'dev'
-    artifactType: 'pipeline'
+        artifact: 'dev'
+    publishLocation: 'pipeline'
 ```
 
-- **targetPath**: The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include variables, but wildcards are not supported.
+- **targetPath**: (Required) The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](../build/variables.md), but wildcards are not supported. Default: $(Pipeline.Workspace).
 
-- **artifactName**: Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.
+- **publishLocation**: (Required) Artifacts publish location. Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. Options: `pipeline`, `filepath`. Default: pipeline.
 
-- **artifactType**: Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. Options: `pipeline`, `filepath`.
+- **artifact**: (Optional) Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.
 
 ## FAQ
 

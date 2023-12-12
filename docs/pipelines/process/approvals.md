@@ -3,10 +3,9 @@ title: Pipeline deployment approvals
 description: Use approvals to determine when a deployment stage can run
 ms.topic: conceptual
 ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
-ms.manager: shashban
-ms.author: shashban
-author: shashban
-ms.date: 07/13/2022
+ms.author: sandrica
+author: silviuandrica
+ms.date: 07/18/2023
 monikerRange: ">= azure-devops-2020"
 ---
 
@@ -18,8 +17,8 @@ A pipeline is made up of stages. A pipeline author can control whether a stage s
 
  Pipelines rely on resources such as environments, service connections, agent pools, variable groups, and secure files. Checks enable the _resource owner_ to control if and when a stage in any pipeline can consume a resource. As an owner of a resource, you can define checks that must be satisfied before a stage consuming that resource can start. For example, a _manual approval check_ on an [environment](environments.md) would ensure that deployment to that environment only happens after the designated user(s) has reviewed the changes being deployed. 
 
-A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. Checks are reevaluated based on the retry interval specified in each check. If all checks aren't successful until the **timeout** specified, then that stage is not executed.
-If any of the checks terminally fails (for example, if you reject an approval on one of the resources), then that stage is not executed. 
+A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. Checks are reevaluated based on the retry interval specified in each check. If all checks aren't successful until the **timeout** specified, then that stage isn't executed.
+If any of the checks terminally fails (for example, if you reject an approval on one of the resources), then that stage isn't executed. However, you can retry a stage when approvals and checks time out.
 
 Approvals and other checks aren't defined in the yaml file. Users modifying the pipeline yaml file can't modify the checks performed before start of a stage. Administrators of resources manage checks using the web interface of Azure Pipelines.
 
@@ -30,23 +29,30 @@ Approvals and other checks aren't defined in the yaml file. Users modifying the 
 
 ## Approvals
 
-You can manually control when a stage should run using approval checks. This check is commonly used to control deployments to production environments.
+You can manually control when a stage should run using approval and checks. This check is commonly used to control deployments to production environments.
 
-1. In your Azure DevOps project, go to the resource (for example, environment) that needs to be protected. 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-2. Navigate to **Approvals and Checks** for the resource.
+1. Select **Pipelines** > **Environments**, and then select your environment. 
 
-:::image type="content" source="media/checks/approvals-and-checks.png" alt-text="Approvals and Checks on environment.":::
-   
-3. Select **Create**, provide the approvers and an optional message, and select **Create** again to complete the addition of the manual approval check.
+1. Select the **Approvals and checks** tab, and then select the **+** sign to add a new check.
 
-You can add multiple approvers to an environment. These approvers can be individual users or groups of users. When a group is specified as an approver, only one of the users in that group needs to approve for the run to move forward.
+    :::image type="content" source="media/add-approvals-and-checks.png" alt-text="A screenshot showing how to add approvals and checks in Azure Pipelines.":::
 
-Using the advanced options, you can configure minimum number of approvers to complete the approval. A group is considered as one approver. 
+1. Select **Approvals**, and then select **Next**.
 
-You can also restrict the user who requested (initiated or created) the run from completing the approval. This option is commonly used for segregation of roles amongst the users.
+1. Add users or groups as your designated **Approvers**, and, if desired, provide **instructions for the approvers**. Specify if you want to permit or restrict approvers from approving their own runs, and specify your desired **Timeout**. If approvals aren't completed within the specified Timeout, the stage is marked as skipped.
 
-When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. Users configured as approvers must review and approve or reject the deployment. If you have multiple runs executing simultaneously, you must approve or reject each of them independently. If all required approvals aren't completed within the **Timeout** specified for the approval and all other checks succeed, the stage is marked as skipped.
+1. Select **Create** when you're done.
+
+    :::image type="content" source="media/create-new-approval.png" alt-text="A screenshot showing how to create a new approval.":::
+
+1. Once the approval check is triggered, a prompt window, as shown in the example below, is presented in the user interface. This window provides the option for approvers to either reject or approve the run, along with any accompanying instructions.
+
+    :::image type="content" source="media/approval-prompt.png" alt-text="A screenshot showing the approval prompt window.":::
+
+> [!NOTE]
+> If a group is designated as an approver, only one user within the group needs to approve for the run to proceed.
 
 ## Branch control
 
@@ -60,7 +66,7 @@ To define the branch control check:
 
 3. Choose the **Branch control** check and provide a comma-separated list of allowed branches. You can mandate that the branch should have protection enabled. You can also define the behavior of the check in case protection status for one of the branches isn't known.
 
-:::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
+    :::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
 
 At run time, the check would validate branches for all linked resources in the run against the allowed list. If any of the branches doesn't match the criteria, the check fails and the stage is marked failed. 
 
@@ -83,21 +89,21 @@ Given the high flexibility, Azure functions provide a great way to author your o
 
 :::image type="content" source="media/checks/azure-function-check.png" alt-text="Configuring Azure function check.":::
 
-The checks fail if the stage has not started execution within the specified **Timeout** period. See [Azure Function App task](/azure/devops/pipelines/tasks/reference/azure-function-app-v1) for more details.
+If your check doesn't succeed within the configured **Timeout**, the associated stage is skipped. Stages depending on it are skipped as well. For more information, see the [Azure Function App task](/azure/devops/pipelines/tasks/reference/azure-function-app-v1).
 
 > [!NOTE]
-> User defined pipeline variables are not accessible to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
+> User defined pipeline variables are accessible to the check starting with [Sprint 215](/azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks).
 
-[Read more about the recommended way to use Invoke Azure Function checks](invoke-checks.md).
+[Read more about the recommended way to use Invoke Azure Function checks](invoke-checks.md). Checks [need to follow specific rules](invoke-checks.md#check-compliance) depending on their mode and the number of retries to be compliant. 
 
 ## Invoke REST API
 
 Invoke REST API check enables you to integrate with any of your existing services. Periodically, make a call to a REST API and continue if it returns a successful response. [Learn More](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1)
 
-The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fail if the stage has not started execution within the specified **Timeout** period. See [Invoke REST API task](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1) for more details.
+The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. If your check doesn't succeed within the configured **Timeout**, the associated stage is skipped. Stages depending on it are skipped as well. For more information, see [Invoke REST API task](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1).
 
 > [!NOTE]
-> User defined pipeline variables are not accessible to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
+> User defined pipeline variables are accessible to the check starting with [Sprint 215](/azure/devops/release-notes/2023/sprint-215-update#variables-as-inputs-in-checks).
 
 [Read more about the recommended way to use Invoke REST API checks](invoke-checks.md).
 
@@ -111,7 +117,7 @@ The evaluation is repeated after **Time between evaluations** setting in control
 
 ## Required template
 
-With the required template check, you can enforce pipelines to use a specific YAML template. When this check is in place, a pipeline will fail if it doesn't extend from the referenced template. 
+With the required template check, you can enforce pipelines to use a specific YAML template. When this check is in place, a pipeline fails if it doesn't extend from the referenced template. 
 
 To define a required template approval:
 
@@ -132,6 +138,22 @@ You can have multiple required templates for the same service connection. In thi
 
 :::image type="content" source="media/checks/required-template.png" alt-text="Configuring required template check.":::
 
+::: moniker range="azure-devops"
+
+## Disable a check
+
+When debugging a check, you might want to temporarily disable and then enable it again. To disable or enable a check:
+
+1. In your Azure DevOps project, go to the resource with a check.  
+
+2. Open the **Approvals and Checks** tab. 
+
+3. In the contextual menu, select **Disable** or **Enable**. 
+
+    :::image type="content" source="media/checks/disable-check-approvals.png" alt-text="Screenshot of disable a check option.":::
+
+::: moniker-end
+
 ## Evaluate artifact
 
 You can evaluate artifact(s) to be deployed to an environment against custom policies.
@@ -143,20 +165,20 @@ To define a custom policy evaluation over the artifact(s), follow the below step
 
 1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. Learn more about [creating an environment](environments.md).
 
-:::image type="content" source="media/checks/environments.png" alt-text="View environment.":::
+    :::image type="content" source="media/checks/environments.png" alt-text="View environment.":::
 
 
 2. Navigate to **Approvals and checks** for the environment.
 
-:::image type="content" source="media/checks/approvals-and-checks.png" alt-text="Add checks to environment.":::
+    :::image type="content" source="media/checks/approvals-and-checks.png" alt-text="Add checks to environment.":::
 
 3. Select **Evaluate artifact**.
     
-:::image type="content" source="media/checks/evaluate-artifact.png" alt-text="Add evaluate artifact check.":::
+    :::image type="content" source="media/checks/evaluate-artifact.png" alt-text="Add evaluate artifact check.":::
    
 4. Paste the policy definition and click **Save**. [See more](artifact-policy.md) about writing policy definitions.
 
-:::image type="content" source="media/checks/policy-definition.png" alt-text="Add policy definition.":::
+    :::image type="content" source="media/checks/policy-definition.png" alt-text="Add policy definition.":::
  
 When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. The specified policy is evaluated against the available image metadata. The check passes when the policy is successful and fails otherwise. The stage is marked failed if the check fails.
 
@@ -255,7 +277,7 @@ Let us look at an example. Imagine your YAML pipeline has a stage that uses a Se
 1. A synchronous check, named _Deployment Reason Valid_, that verifies that [the deployment reason is valid](invoke-checks.md#deployment-reason-must-be-valid) and for which you set the _Time between evaluations_ to 7 minutes.
 
 A possible checks execution is shown in the following diagram.
-:::image type="content" source="media/checks/checks-timeline.png" alt-text="Diagram that shows the timeline of an asynchronous and a synchronous checks' executions.":::
+:::image type="content" source="media/checks/checks-timeline.png" alt-text="Diagram that shows the timeline of an asynchronous and a synchronous check's executions.":::
 
 In this execution:
 - Both checks, _External Approval Granted_ and _Deployment Reason Valid_, are invoked at the same time. _Deployment Reason Valid_ fails immediately, but because _External Approval Granted_ is pending, it will be retried. 
@@ -301,3 +323,7 @@ Using the Invoke REST API check, you can add a check to wait on the API in the s
 By default, only predefined variables are available to checks. You can use a linked variable group to access other variables. The output variable from the previous stage can be written to the variable group and accessed in the check.
 
 
+## Learn more
+- [Invoke Azure Function / REST API checks](invoke-checks.md)
+- [Approvals and Checks REST API](/rest/api/azure/devops/approvalsandchecks/)
+- [Approvals Query REST API](/rest/api/azure/devops/approvalsandchecks/approvals/query)

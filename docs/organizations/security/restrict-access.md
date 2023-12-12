@@ -207,7 +207,7 @@ To delegate tasks to other members within your organization, consider creating a
    :::column-end:::
 :::row-end:::
 
-<a id="restrict-access-project-scoped-user-group" />
+<a id="restrict-access-project-scoped-user-group"></a>
 
 ::: moniker range="azure-devops" 
 
@@ -215,7 +215,7 @@ To delegate tasks to other members within your organization, consider creating a
 
 [!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
 
-By default, users added to an organization can view all organization and project information and settings. To restrict access to only those projects that you add users to, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+By default, users added to an organization can view all organization and project information and settings. To restrict access to only those projects that you add users to, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. For more information, see [Manage preview features](../../project/navigation/preview-features.md). 
 
 With this feature enabled, users added to the **Project-Scoped Users** group can't view most **Organization settings** and can only connect to those projects to which they've been added. 
 
@@ -227,7 +227,7 @@ With this feature enabled, users added to the **Project-Scoped Users** group can
 
 ## Limit people picker to project users and groups
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers support searching all users and groups added to Azure AD, not just those users or groups added to a project. People pickers support the following Azure DevOps functions: 
+For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups added to Microsoft Entra ID, not just those users or groups added to a project. People pickers support the following Azure DevOps functions: 
 
 - Selection of a user identity from a work tracking identity field such as **Assigned To**  
 - Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
@@ -292,7 +292,7 @@ Azure DevOps is designed to enable all valid users to view all objects defined i
    :::column-end:::
 :::row-end:::
 
-<a id="restrict-modifications-wits" /> 
+<a id="restrict-modifications-wits"></a> 
 
 ## Restrict modification of work items or select fields 
 

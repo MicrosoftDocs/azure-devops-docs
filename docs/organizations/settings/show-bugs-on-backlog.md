@@ -91,7 +91,7 @@ When you manage bugs with requirements or tasks, they appear on one or more of y
 > [!TIP]  
 > If, after refreshing a backlog or board, you don't see bugs where you expect to see them, review [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items appear on the Kanban or task boards.  
 > 
-<a id="add-other-wits" /> 
+<a id="add-other-wits"></a> 
 
 ## Add other work item types to your backlogs or boards
 
@@ -131,5 +131,4 @@ You can review bugs defined for your project by creating a query and specifying 
 - [Enable backlog levels of interest to your team](select-backlog-navigation-levels.md) 
 - [Manage teams and configure team tools](manage-teams.md)
 - [View, run, or email a work item query](../../boards/queries/view-run-query.md)
-- [Triage work items](../../boards/queries/triage-work-items.md)
 - [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)

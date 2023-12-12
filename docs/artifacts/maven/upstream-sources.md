@@ -1,9 +1,9 @@
 ---
 title: Use packages from Maven Central
-description: How to use packages from Maven upstream
+description: How to use packages from Maven Central upstream source
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 02/15/2022
+ms.date: 11/10/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -12,40 +12,86 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With upstream sources, you can use both private packages you've created and public packages from Maven Central. When you enable upstream sources in your feed, Azure Artifacts will save a copy of any packages you install from Maven central. Azure Artifacts also support other Maven upstream sources such as Google Maven Repository, Gradle Plugins, and JitPack.
+Using Azure Artifacts upstream sources allows you to use a single feed for hosting both the packages you produce and those from public registries such as Maven Central. By enabling upstream sources in your feed, Azure Artifacts will automatically save a copy of any package installed from upstream. This ensures continued accessibility for your development, even in the event of a public registry outage. Additionally, Azure Artifacts supports various other Maven upstream sources, including the Google Maven Repository, Gradle Plugins, and JitPack.
+
+## Prerequisites
+
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed.
 
 > [!NOTE]
 > Maven snapshots are not supported with Maven upstream sources.
 
 ## Enable upstream sources
 
-Follow the instructions below to create a new feed and enable upstream sources:
+If you don't have a feed already, follow the instructions below to create one, and make sure that you check the *upstream sources* checkbox to enable them. If you already have a feed, move to the [next step](#add-maven-central-upstream) to add Maven Central as an upstream source.
 
 [!INCLUDE [](../includes/create-feed.md)]
 
-### Add Maven Central upstream
+## Add Maven Central upstream
 
-1. Select the ![gear icon](../../media/icons/gear-icon.png)  in the top right of the page to access your feed's settings.
+If you checked the *upstream sources* checkbox when creating your feed, Maven Central should already be added as an upstream source. If not, you can add it manually using the following steps:
 
-1. Select **Upstream sources**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Add Upstream**.
+1. Select **Artifacts**, and then select the ![gear icon](../../media/icons/gear-icon.png) in the top right corner to navigate to your **Feed Settings**.
 
-1. Select **Public source**, and then select **Maven Central (https://repo.maven.apache.org/maven2/)** from the dropdown menu.
+1. Select **Upstream sources**, and then select **Add Upstream**.
+
+1. Select **Public source**, select **Maven Central (https://repo.maven.apache.org/maven2/)** from the dropdown menu, and then select **Save** when you're done.
 
     :::image type="content" source="../media/maven-add-upstream.png" alt-text="A screenshot showing how to add Maven central upstream source.":::
 
-1. Select **Save** when you are done.
+1. Select **Save** in the top right corner to save your changes.
 
-1. Select **Save** to save your changes.
+    :::image type="content" source="media/save-upstream-sources.png" alt-text="A screenshot showing how to save upstream sources.":::
 
-    :::image type="content" source="../media/save-upstream-source.png" alt-text="A screenshot showing how to save changes in upstream sources":::
+## Save package from Maven Central
+
+Before saving packages from Maven Central, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](pom-and-settings.md) to set up your Maven project and connect to your feed.
+
+In this example, we will save the Kotlin Datetime Library from Maven Central.
+
+1. Navigate to Maven Central at `https://mvnrepository.com/`.
+
+1. Search for the Kotlin Datetime Library. Select the **Kotlinx Datetime** package, and then select the version you wish to install.
+
+1. Copy the `<dependency>` snippet from the **Maven** tab. 
+
+    ```xml
+    <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-datetime-jvm</artifactId>
+        <version>0.4.1</version>
+        <scope>runtime</scope>
+    </dependency>
+    ```
+
+1. Open your *pom.xml* file and paste the snippet inside your `<dependencies>` tag, and then save your file.
+
+1. Run the following command from the same path as your *pom.xml* file to install your dependencies:
+
+    ```command
+    mvn install
+    ```
+
+> [!NOTE]
+> You must be a **Collaborator** or higher to save packages from upstream sources. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
 
 ## View saved packages
 
 You can view the packages you saved from upstreams by selecting the **Maven Central** source from the dropdown menu.
 
-:::image type="content" source="media/maven-central-packages.png" alt-text="A screenshot showing how to filter for packages from Maven Central.":::
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Maven Central** from the source dropdown menu to filter for packages from this upstream.
+
+1. The *Kotlinx Datetime* package that we saved in the previous step, is now available in our feed. Azure Artifacts automatically saved a copy to our feed when we executed the mvn install command.
+ 
+:::image type="content" source="media/saved-kotlin-package-from-upstream.png" alt-text="A screenshot showing a package that was saved from Maven Central.":::
 
 > [!TIP]
 > If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project's files:
@@ -53,6 +99,6 @@ You can view the packages you saved from upstreams by selecting the **Maven Cent
 
 ## Related articles
 
-- [Install Maven Artifacts](./install.md)
+- [Search for packages in upstream sources](../how-to/search-upstream.md)
+- [Promote packages and manage feed views](../feeds/views.md)
 - [Configure permissions](../feeds/feed-permissions.md)
-- [Configure upstream behavior](../concepts/upstream-behavior.md)

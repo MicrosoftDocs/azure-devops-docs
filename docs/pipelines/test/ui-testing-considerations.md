@@ -4,8 +4,8 @@ description: Continuous testing. Things to consider when running UI tests and FA
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.author: shashban
-author: shashban
+ms.author: ravikum
+author: raviLiftr
 ms.date: 12/07/2018
 monikerRange: '<= azure-devops'
 ---
@@ -77,7 +77,7 @@ A special configuration is required for agents to run UI tests in visible UI mod
 
 Microsoft-hosted agents are pre-configured for UI testing and UI tests for both
 web apps and desktop apps. Microsoft-hosted agents are also
-pre-configured with [popular browsers and matching web-driver versions](https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md)
+pre-configured with [popular browsers and matching web-driver versions](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md)
 that can be used for running Selenium tests.
 The browsers and corresponding web-drivers are updated on a periodic basis.
 To learn more about running Selenium tests, see [UI test with Selenium](continuous-test-selenium.md)

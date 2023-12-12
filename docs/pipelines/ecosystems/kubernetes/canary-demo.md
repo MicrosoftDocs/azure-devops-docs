@@ -5,12 +5,12 @@ ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
 ms.date: 01/24/2023
 ms.custom: fasttrack-edit
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2022'
 ---
 
 # Tutorial: Use a canary deployment strategy for Kubernetes deployments
 
-[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-gt-eq-2022.md)]
 
 A *canary* deployment strategy means deploying new versions of an application next to stable, production versions. You can then see how the canary version compares to the baseline, before promoting or rejecting the deployment.
 
@@ -50,8 +50,13 @@ Here's a brief overview of the files in the repository that are used during this
 ## Install prometheus-operator
 
 To install Prometheus on your cluster, use the following command from your development machine. You must have kubectl and Helm installed, and you must set the context to the cluster you want to deploy against. [Grafana](https://grafana.com), which you use later to visualize the baseline and canary metrics on dashboards, is installed as part of this Helm chart.
+
+You'll first add the [Prometheus Community Kubernetes Helm Charts repository](https://prometheus-community.github.io/helm-charts/) to your Helm installation.  Then you'll install the [kube-prometheus stack](https://github.com/prometheus-operator/kube-prometheus), a collection of Kubernetes manifests, Grafana dashboards, and Prometheus rules.
+
 ```
-helm install --name sampleapp stable/prometheus-operator
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update # update local cache
+helm install --name sampleapp  prometheus-community/kube-prometheus-stack
 ```
 
 ## Create service connections

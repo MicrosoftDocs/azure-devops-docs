@@ -1,7 +1,7 @@
 ---
 title: Add users to organizations and manage access
 titleSuffix: Azure DevOps
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Learn how to add users to an organization and manage users' access levels (like Stakeholder), direct assignments, invitations, and more.
 ms.topic: how-to
 ms.subservice: azure-devops-organizations
@@ -42,7 +42,7 @@ Administrators can add users to an organization, grant access to appropriate too
 and add users to groups - all in one view.
 
 > [!NOTE]
-> If you have an Azure Active Directory (Azure AD)-backed organization, and you need to add users who are external to Azure AD, first [add external users](add-external-user.md). On the **Tell us about this user page**, under **Type of user**, be sure to choose **User with an existing Microsoft account**. After you complete those steps, use the following steps to add the Azure AD
+> If you have a Microsoft Entra ID-backed organization, and you need to add users who are external to Microsoft Entra ID, first [add external users](add-external-user.md). On the **Tell us about this user page**, under **Type of user**, be sure to choose **User with an existing Microsoft account**. After you complete those steps, use the following steps to add the Microsoft Entra ID
  > user to Azure DevOps.
 
 You can add up to 50 users in a single transaction. When you add users, each user receives a notification email with a
@@ -73,14 +73,14 @@ To give other users access to your organization, add their email addresses.
    * **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).  
 
    > [!NOTE]  
-   > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
+   > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
 5. Select **Add** to complete your invitation.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 [Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
-<a id="add-user" />
+<a id="add-user"></a>
 
 ### Add a user
 
@@ -151,7 +151,7 @@ The Users view shows key information per user in a table. In this view, you can 
 * See and modify assigned service extensions and access levels.
 * Multi-select users and bulk edit their extensions and access.
 * Filter by searching for partial user names, access level, or extension names.
-* See the last access date for each user. This information can help you choose users to remove access from or lower access to stay within your license limits. For more information, see Manage access with Azure AD.
+* See the last access date for each user. This information can help you choose users to remove access from or lower access to stay within your license limits. For more information, see Manage access with Microsoft Entra ID.
 
 #### [Browser](#tab/browser)
 
@@ -183,7 +183,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
-<a id="update-user" />
+<a id="update-user"></a>
 
 ### Update a user
 
@@ -213,7 +213,7 @@ ID                                    Display Name         Email                
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     pending
 ```
 
-<a id="show-users" /> 
+<a id="show-users"></a> 
 
 ### Show users
 
@@ -257,7 +257,7 @@ Complete the following steps to add users to the new **Project-Scoped Users** gr
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md#account-level).
+2. Turn on the **Limit user visibility and collaboration to specific projects** preview feature for the organization. For more information, see [Manage preview features](../../project/navigation/preview-features.md).
 
    > [!TIP]  
    > The **Project-Scoped Users** group only appears under **Permissions** > **Groups** once **Limit user visibility and collaboration to specific projects** preview feature is enabled.
@@ -282,9 +282,9 @@ For more information, see [Add or remove users or groups, manage security groups
 
 **A:**
 
-* If your organization is connected to Azure Active Directory, you can add only email addresses that are internal to the directory.
+* If your organization is connected to Microsoft Entra ID, you can add only email addresses that are internal to the directory.
 
-* Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-azure-access.yml) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
+* Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-azure-access.yml) to authenticate users and control access through [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis).
 
 * If your organization is connected to your directory, all users must be directory members. They must sign in to Azure DevOps with work or school accounts managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
 
@@ -296,7 +296,7 @@ After you add members to your project, each member gets an invitation email that
 
 **A:**
 
-- For **Organizations connected to Azure AD**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you can't assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
+- For **Organizations connected to Microsoft Entra ID**: If you're [inviting users from outside your Microsoft Entra ID](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Microsoft Entra tenant. After they're removed from Microsoft Entra ID, you can't assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
 
 - For **Organizations with Microsoft accounts**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
 

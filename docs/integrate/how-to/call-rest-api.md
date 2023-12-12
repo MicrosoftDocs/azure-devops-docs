@@ -15,21 +15,21 @@ ms.date: 09/13/2021
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Integrate your app with Azure DevOps using these REST APIs.
+Integrate your app with Azure DevOps using the REST APIs provided in this article.
 
-These APIs follow a common pattern:
+The APIs follow a common pattern, like the following example:
 
 ```no-highlight
 VERB https://{instance}/{collection}/{team-project}/_apis/{area}/{resource}?api-version={version}
 ```
 
 > [!TIP]
-> To avoid having your app or service broken as APIs evolve, specify an [API version](#versions) on every request.
+> As APIs evolve, we recommend that you include an API version in every request. This practice can help you avoid unexpected changes in the API that could break.
 
 ## Azure DevOps Services
 
 For Azure DevOps Services, `instance` is `dev.azure.com/{organization}` and `collection` is `DefaultCollection`,
-so the pattern looks like this:
+so the pattern looks like the following example:
 
 ```no-highlight
 VERB https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version={version}
@@ -41,7 +41,7 @@ For example, here's how to get a list of projects in an organization.
 curl -u {username}:{personalaccesstoken} https://dev.azure.com/{organization}/_apis/projects?api-version=2.0
 ```
 
-If you wish to provide the personal access token through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
+If you wish to provide the personal access token (PAT) through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
 
 ```
 Authorization: Basic BASE64PATSTRING
@@ -84,7 +84,7 @@ public static async void GetProjects()
 <br />
 If you don't have an organization, you can <a href="https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/" data-raw-source="[set one up for free](https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/)">set one up for free</a>.
 
-Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are various authentication mechanisms available for Azure DevOps Services including Microsoft Authentication Library (MSAL), OAuth, and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
+Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are various authentication mechanisms available for Azure DevOps Services including Microsoft Authentication Library (MSAL), OAuth, and Session Tokens.  For more information, see [Authentication guidance](../get-started/authentication/authentication-guidance.md), to help you determine which one is best suited for your scenario.
 
 ## Azure DevOps Server
 
@@ -104,7 +104,7 @@ To get the same list across a non-SSL connection:
 curl -u {username}:{personalaccesstoken} http://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-These examples use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+These examples use PATs, which require that you [create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Responses
 
@@ -152,10 +152,8 @@ You should get a response like this.
 }
 ```
 
-The response is [JSON](https://json.org/).
-That's generally what you'll get back from the REST APIs,
-although there are a few exceptions,
-like [Git blobs](/rest/api/azure/devops/git/blobs).
+The response is [JSON](https://json.org/), which is generally what you get back from the REST APIs,
+although there are a few exceptions, like [Git blobs](/rest/api/azure/devops/git/blobs).
 
 Now, you can look around the specific [API areas](/rest/api/azure/devops/git/) like [work item tracking](/rest/api/azure/devops/wit/)
 or [Git](/rest/api/azure/devops/git/) and get to the resources that you need.
@@ -195,9 +193,9 @@ Content-Type: application/json
 
 ### HTTP method override
 
-Some web proxies may only support the HTTP verbs GET and POST, but not more modern HTTP verbs like PATCH and DELETE.
-If your calls may pass through one of these proxies, you can send the actual verb using a POST method, with a header to override the method.
-For example, you may want to [update a work item](/rest/api/azure/devops/wit/work-items/update) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
+Some web proxies might only support the HTTP verbs GET and POST, but not more modern HTTP verbs like PATCH and DELETE.
+If your calls might pass through one of these proxies, you can send the actual verb using a POST method, with a header to override the method.
+For example, you might want to [update a work item](/rest/api/azure/devops/wit/work-items/update) (`PATCH _apis/wit/workitems/3`), but you might have to go through a proxy that only allows GET or POST.
 You can pass the proper verb (PATCH in this case) as an HTTP request header parameter and use POST as the actual HTTP method.
 
 ```no-highlight
@@ -222,14 +220,14 @@ Response | Notes
 201      | Success, when creating resources. Some APIs return 200 when successfully creating a resource. Look at the docs for the API you're using to be sure.
 204      | Success, and there's no response body. For example, you get this response when you delete a resource.
 400      | The parameters in the URL or in the request body aren't valid.
-401      | Authentication has failed.  Often, this response is because of a missing or malformed Authorization header.
+401      | Authentication failed.  Often, this response is because of a missing or malformed Authorization header.
 403      | The authenticated user doesn't have permission to do the operation.
 404      | The resource doesn't exist, or the authenticated user doesn't have permission to see that it exists.
 409      | There's a conflict between the request and the state of the data on the server. For example, if you attempt to submit a pull request and there's already a pull request for the commits, the response code is 409.
 
 ## Cross-origin resource sharing (CORS)
 
-Azure DevOps Services supports CORS, which enables JavaScript code served from a domain other than `dev.azure.com/*` to make Ajax requests to Azure DevOps Services REST APIs. Each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
+Azure DevOps Services supports CORS, which enables JavaScript code served from a domain other than `dev.azure.com/*` to make Ajax requests to Azure DevOps Services REST APIs. Each request must provide credentials (PATs and OAuth access tokens are both supported options). Example:
 
 ```js
     $( document ).ready(function() {
@@ -259,7 +257,7 @@ Azure DevOps REST APIs are versioned to ensure applications and services continu
 * API versions are in the format {major}.{minor}-{stage}.{resource-version} - For example, ```1.0```, ```1.1```, ```1.2-preview```, ```2.0```.
 * While an API is in preview, you can specify a precise version of a particular revision of the API when needed (for example, ```1.0-preview.1```, ```1.0-preview.2```)
 * Once an API is released (1.0, for example), its preview version (1.0-preview) is deprecated and can be deactivated after 12 weeks.
-* Now, you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify ```-preview``` version gets rejected.
+* Now, you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify ```-preview``` version get rejected.
 
 ### Usage
 

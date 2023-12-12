@@ -57,7 +57,7 @@ Start with one organization in Azure DevOps. Then, you can add more organization
 Take some time to review your work structure and the different business groups and participants to be managed. For more information, see [Map your projects to business units](#mapping-guidance-table) and [Structure considerations](#more-about-organizational-structure).
 
 > [!TIP]
-> For company-owned Azure AD organizations, consider restricting users from creating new organizations as a way to protect your IP. For more information, see [Restrict organization creation via Azure AD tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md). Users can create organizations using their MSA or GitHub accounts with no restrictions.
+> For company-owned Microsoft Entra organizations, consider restricting users from creating new organizations as a way to protect your IP. For more information, see [Restrict organization creation via Microsoft Entra tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md). Users can create organizations using their MSA or GitHub accounts with no restrictions.
 
 ## What's a team?
 
@@ -89,7 +89,7 @@ Within an organization, you can do either of the following approaches:
 * Create a single project that contains many repos and teams
 * Create many projects, each with its own set of teams, repos, builds, work items, and other elements
 
-Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single project in Azure DevOps. However, if you want to manage more granular security between your software projects and their teams, consider using many projects. At the highest level of isolation is an organization, where each organization is connected to a single Azure AD tenant. A single Azure AD tenant, however, can be connected to many Azure DevOps organizations.
+Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single project in Azure DevOps. However, if you want to manage more granular security between your software projects and their teams, consider using many projects. At the highest level of isolation is an organization, where each organization is connected to a single Microsoft Entra tenant. A single Microsoft Entra tenant, however, can be connected to many Azure DevOps organizations.
 
 ::: moniker range="azure-devops"  
 
@@ -197,31 +197,33 @@ The following image displays a sample of how "your company" could structure its 
 
 ### Choose your organization administrator account type
 
-When you create an organization, the credentials that you sign in with define which identity provider your organization uses. Create your organization with a Microsoft account or Azure AD instance. Use those credentials to sign in as an administrator to your new organization at `https://dev.azure.com/{YourOrganization}`.
+When you create an organization, the credentials that you sign in with define which identity provider your organization uses. Create your organization with a Microsoft account or Microsoft Entra instance. Use those credentials to sign in as an administrator to your new organization at `https://dev.azure.com/{YourOrganization}`.
 
 #### Use your Microsoft account
 
-Use your Microsoft account if you don't need to authenticate users for an organization with Azure AD. All users must sign in to your organization with a Microsoft account. If you don't have one, [create a Microsoft account](https://login.live.com/login.srf?lw=1).
+Use your Microsoft account if you don't need to authenticate users for an organization with Microsoft Entra ID. All users must sign in to your organization with a Microsoft account. If you don't have one, [create a Microsoft account](https://login.live.com/login.srf?lw=1).
 
    ![Enter your password and sign in](../media/enter-password-sign-in.png)
 
-If you don't have an Azure AD instance, create one for free from the [Azure portal](https://ms.portal.azure.com/) or use your Microsoft account to create an organization. Then, you can [connect your organization to Azure AD](../organizations/accounts/connect-organization-to-azure-ad.md).
+If you don't have a Microsoft Entra instance, create one for free from the [Azure portal](https://ms.portal.azure.com/) or use your Microsoft account to create an organization. Then, you can [connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md).
 
-#### Use your Azure AD account
+<a name='use-your-azure-ad-account'></a>
 
-You might have an Azure AD account already if you use Azure or Microsoft 365. If you work for a company that uses Azure AD to manage user permissions, you probably have an Azure AD account.
+#### Use your Microsoft Entra account
 
-If you don't have an Azure AD account, [sign up for Azure AD](https://ms.portal.azure.com/) to automatically connect your organization to your Azure AD. All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration](/azure/active-directory/b2b/add-users-administrator).
+You might have a Microsoft Entra account already if you use Azure or Microsoft 365. If you work for a company that uses Microsoft Entra ID to manage user permissions, you probably have a Microsoft Entra account.
 
-Azure DevOps authenticates users through your Azure AD, so that only users who are members in that directory have access to your organization. When you remove users from that directory, they can no longer access your organization. Only specific [Azure AD administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) manage users in your directory, so administrators control who accesses your organization.
+If you don't have a Microsoft Entra account, [sign up for Microsoft Entra ID](https://ms.portal.azure.com/) to automatically connect your organization to your Microsoft Entra ID. All users must be members in that directory to access your organization. To add users from other organizations, use [Microsoft Entra B2B collaboration](/azure/active-directory/b2b/add-users-administrator).
+
+Azure DevOps authenticates users through your Microsoft Entra ID, so that only users who are members in that directory have access to your organization. When you remove users from that directory, they can no longer access your organization. Only specific [Microsoft Entra administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) manage users in your directory, so administrators control who accesses your organization.
 
 For more information on managing users, see [Manage users](../organizations/accounts/add-organization-users.md).
 
 ### Map organizations to business units
 
-Each business unit within your company gets its own organization in Azure DevOps, along with its own Azure AD tenant. You can [set up projects](#whats-a-project) within those individual organizations, as required, based on teams or ongoing work.
+Each business unit within your company gets its own organization in Azure DevOps, along with its own Microsoft Entra tenant. You can [set up projects](#whats-a-project) within those individual organizations, as required, based on teams or ongoing work.
 
-For a larger company, you can create multiple organizations using different user accounts (most likely Azure AD accounts). Consider what groups and users share strategies and work, and group them into specific organizations. 
+For a larger company, you can create multiple organizations using different user accounts (most likely Microsoft Entra accounts). Consider what groups and users share strategies and work, and group them into specific organizations. 
 
 For example, the fictional Fabrikam company created the following three organizations: 
 
@@ -244,6 +246,6 @@ The organizations are for the same company, but are mostly isolated from each ot
 
 - [Create an organization](../organizations/accounts/create-organization.md)
 - [Create a project](../organizations/projects/create-project.md)
-- [Connect your organization to Azure AD](../organizations/accounts/connect-organization-to-azure-ad.md)
+- [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md)
 - [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md)
 - [Set user preferences](../organizations/settings/set-your-preferences.md)

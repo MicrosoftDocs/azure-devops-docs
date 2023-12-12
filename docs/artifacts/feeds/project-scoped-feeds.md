@@ -102,6 +102,14 @@ In order for a pipeline to access a project-scoped feed in a different project, 
 
 - Feed setup: Navigate to the feed you want to access, select  **Settings** > **Feed permissions** and then add your *project build service* as a **Collaborator**. Your *Project build service* identity is displayed in the following format: `[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
 
+#### Q: I want to download a pipeline artifact from another project but my pipeline is failing?
+
+A: If you want to download a pipeline artifact from another project within the same organization, make sure that the following permissions are set for both your downstream project and the pipeline generating the artifact:
+
+On the pipeline generating the artifact (downstream project): select the ellipsis for more options > **Manage security** > search for your upstream project's build service and allow the following: **Update build information**, **View build pipeline**, and **View builds**.
+
+On the downstream project: **Project Settings** > **Permissions** > **Users** > search for your upstream project's name and then select **Expand search** > select your upstream project's build service and allow the following: **View project-level information**.
+
 ## Related articles
 
 - [Configure permissions](./feed-permissions.md)

@@ -83,7 +83,7 @@ Settings include making the following associations for each team:
 For more information, see [Define area paths and assign to a team](set-area-paths.md) and 
 [Define iteration paths and configure team iterations](set-iteration-paths-sprints.md). 
 
-<a id="configure-team-backlogs" />
+<a id="configure-team-backlogs"></a>
 
 ## Configure team backlogs, boards, and general settings 
 
@@ -169,7 +169,6 @@ For detailed information on each configuration option, you can explore the follo
    :::column span="1":::
       **General**
       - [Backlogs](select-backlog-navigation-levels.md)
-      - [Working days](set-working-days.md)
       - [Working with bugs](show-bugs-on-backlog.md)            
       **Cards**
       - [Add fields](../../boards/boards/customize-cards.md)
@@ -219,7 +218,7 @@ Similar to Kanban boards, each sprint taskboard can be customized to support inf
 
 :::image type="content" source="media/configure-sprint-taskboard.png" alt-text="Screenshot of taskboard selection.":::
 
-<a id="add-and-manage-team-dashboards" /> 
+<a id="add-and-manage-team-dashboards"></a> 
 
 ## Add and manage team dashboards   
 
@@ -233,13 +232,13 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 :::image type="content" source="media/manage-team-dashboards.png" alt-text="Screenshot of dashboard button surrounded by red square.":::
 
-<a id="team-description" />
+<a id="team-description"></a>
 
 ## Update team name, description, and image
 
 ::: moniker range=">= azure-devops-2020"
 
-Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB.
+Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB and 2560 x 1024 px, and then we resize to 200 x 200.
 
 
 ![Screenshot to Update team profile picture.](media/team-defaults/update-team-profile-pic-preview.png)

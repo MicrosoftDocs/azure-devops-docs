@@ -84,7 +84,7 @@ For more information about each tool and the configuration settings for each too
 
 Many of these tools are built from system queries that reference the team area path. For instance, a team's default area path filters the work items that appear on a team's backlog. Work items created using an Agile tool auto-assign the areas and iterations based on team defaults.  
 
-<a id="team-defaults" />
+<a id="team-defaults"></a>
 
 ## Team defaults referenced by backlogs and boards
 
@@ -236,7 +236,7 @@ By default, team members inherit the permissions afforded to members of the proj
 
 ![Default permissions assigned to team contributors](media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
-Limit access to select features by making a user a [Stakeholder](../security/get-started-stakeholder.md) or limiting their access to read-only. For more information, see [Permissions and access for work tracking](../security/permissions-access-work-tracking.md). 
+Limit access to select features by making a user a [Stakeholder](../security/get-started-stakeholder.md) or limiting their access to read-only. For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md). 
 
 ## Summary 
 

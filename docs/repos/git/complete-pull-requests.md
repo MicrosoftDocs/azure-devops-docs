@@ -10,6 +10,7 @@ author: vijayma
 ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: devx-track-azurecli
 ---
 
 # Complete, abandon, or revert pull requests
@@ -281,7 +282,7 @@ For example, to complete PR #21, use:
 az repos pr update --id 21 --status completed
 ```
 
-<a id="set-completion-options" /> 
+<a id="set-completion-options"></a> 
 
 ### Set completion options
 

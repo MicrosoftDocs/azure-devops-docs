@@ -1,6 +1,6 @@
 ---
-title: Use feed views to share packages
-description: How to use feed views to share your packages
+title: Promote packages in Azure Artifacts
+description: How to promote a package to a view in Azure Artifacts
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 08/25/2022
 monikerRange: '<= azure-devops'
 ---
  
-# Use feed views to share packages
+# Promote packages and manage feed views in Azure Artifacts
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -17,7 +17,7 @@ Feed views are a way to enable users to share some packages while keeping other 
 By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. @local is the default view that contains all the published packages and all the packages saved from upstream sources. All views support NuGet, npm, Maven, Python, and Universal packages.
 
 > [!Note]
-> Publishing and restoring packages directly to/from a view is not supported in Azure Artifacts.
+> Azure Artifacts only supports publishing and restoring packages from and to the default view - *@Local*.
 
 ## Promote packages
 

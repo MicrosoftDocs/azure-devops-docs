@@ -6,10 +6,10 @@ ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
 ms.custom: cross-service
-ms.author: jukullam
-author: juliakm 
+ms.author: laurajiang
+author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 05/09/2023
+ms.date: 09/20/2023
 ---
 
 #  Advanced Security permissions
@@ -28,11 +28,12 @@ ms.date: 05/09/2023
 | Project collection administrator | Advanced Security: read alerts, manage and dismiss alerts, manage settings |
 
 ## Manage Advanced Security permissions
+If you're a project collection admin for your organization or otherwise have the **Advanced Security: manage settings** permission, you can manage all other Advanced Security permissions.
 
 If you're running into an error when viewing Advanced Security alerts, you can adjust individual permissions for your repository.
 
 If the dropdowns are disabled, contact your administrator for the necessary permissions. 
-
+ 
 To adjust permissions for a specific repository:
 
 1. Go to **Project Settings** > **Repositories**.

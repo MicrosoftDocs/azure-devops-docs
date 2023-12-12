@@ -28,8 +28,8 @@ You can specify conditions under which a step, job, or stage will run.
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * Custom conditions
 
-By default, steps, jobs, and stages run if all previous steps/jobs have succeeded.
-It's as if you specified "condition: succeeded()" (see [Job status functions](expressions.md#job-status-functions)).
+By default, steps, jobs, and stages run if all direct and indirect dependencies have succeeded.
+It's as if you specified "condition: succeeded()" (see [succeeded status function](expressions.md#succeeded)).
 
 ```yaml
 jobs:
@@ -126,7 +126,7 @@ stages:
 
 If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` will still run, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
-In this pipeline, `stage1` depends on `stage2`. Job `B` has a `condition` set for it.
+In this pipeline, `stage2` depends on `stage1`. Job `B` has a `condition` set for it.
 
 ```yml
 stages:
@@ -143,7 +143,7 @@ stages:
       - script: echo 2
 ```
 
-If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` *won't* run, even though it contains a job `A` whose condition evaluates to `true`. The reason is because `stage2` has the default `condition: succeeded()`, which evaluates to `false` when `stage1` is canceled. Therefore, `stage2` is skipped, and none of its jobs run.
+If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` *won't* run, even though it contains a job `B` whose condition evaluates to `true`. The reason is because `stage2` has the default `condition: succeeded()`, which evaluates to `false` when `stage1` is canceled. Therefore, `stage2` is skipped, and none of its jobs run.
 
 Say you have the following YAML pipeline. Notice that, by default, `stage2` depends on `stage1` and that `script: echo 2` has a `condition` set for it.
 ```yaml

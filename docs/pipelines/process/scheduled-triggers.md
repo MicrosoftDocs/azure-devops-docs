@@ -4,7 +4,7 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 01/17/2023
+ms.date: 10/10/2023
 ms.custom: contperf-fy21q3
 monikerRange: '<= azure-devops'
 ---
@@ -40,9 +40,13 @@ You can combine scheduled and event-based triggers in your pipelines, for exampl
 > Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
 > scheduled triggers to start being evaluated.
 >
-> To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshooting.md#ui-settings-override-yaml-scheduled-triggers).
+> To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-scheduled-triggers).
 
 Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#cron-syntax).
+
+::: moniker-end
+
+::: moniker range=">azure-devops-2019 < azure-devops-2022"
 
 ```yaml
 schedules:
@@ -53,6 +57,26 @@ schedules:
     exclude: [ string ] # which branches to exclude from the schedule
   always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2022"
+
+```yaml
+schedules:
+- cron: string # cron syntax defining a schedule
+  displayName: string # friendly name given to a specific schedule
+  branches:
+    include: [ string ] # which branches the schedule applies to
+    exclude: [ string ] # which branches to exclude from the schedule
+  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
+  batch: boolean # Whether to run the pipeline if the previously scheduled run is in-progress; the default is false.
+  # batch is available in Azure DevOps Server 2022.1 and higher
+```
+
+::: moniker-end
+
+::: moniker range=">azure-devops-2019"
 
 Scheduled pipelines in YAML have the following constraints.
 
@@ -125,6 +149,63 @@ schedules:
 ```
 
 Because `release` was added to the branch filters in the `main` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `release` branch is added to the branch filters in the YAML file **in the release branch** will the scheduled build be added to the scheduler.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2022"
+
+### Batch considerations for scheduled triggers
+
+::: moniker-end
+
+::: moniker range="=azure-devops-2022"
+
+> [!NOTE]
+> The `batch` property is available on Azure DevOps Server 2022.1 and higher.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2022"
+
+The `batch` property configures whether to run the pipeline if the previously scheduled run is in-progress; the default is `false`. This is regardless of the version of the pipeline repository.
+
+The following table describes how `always` and `batch` interact.
+
+| Always | Batch | Behavior |
+|--------|-------|----------|
+| `false` | `false` | Pipeline runs only if there's a change with respect to the last successful scheduled pipeline run. |
+| `false` | `true` | Pipeline runs only if there's a change with respect to the last successful scheduled pipeline run, and there's no in-progress scheduled pipeline run. |
+| `true` | `false` | Pipeline runs according to the cron schedule. |
+| `true` | `true` | Pipeline runs according to the cron schedule. |
+
+> [!IMPORTANT]
+> When `always` is `true`, the pipeline runs according to the cron schedule, even when `batch` is `true`.
+
+### Build.CronSchedule.DisplayName variable
+
+::: moniker-end
+
+::: moniker range="=azure-devops-2022"
+
+> [!NOTE]
+> The `Build.CronSchedule.DisplayName` variable is available on Azure DevOps Server 2022.1 and higher.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2022"
+
+When a pipeline is running due to a cron scheduled trigger, the pre-defined `Build.CronSchedule.DisplayName` variable contains the `displayName` of the cron schedule that triggered the pipeline run.
+
+Your YAML pipeline may contain multiple cron schedules, and you may want your pipeline to run different stages or jobs based on which cron schedule runs. For example, you have a nightly build and a weekly build, and you want to run a certain stage only during the nightly build. You can use the `Build.CronSchedule.DisplayName` variable in a job or stage condition to determine whether to run that job or stage.
+
+```yml
+- stage: stage1
+  # Run this stage only when the pipeline is triggered by the 
+  # "Daily midnight build" cron schedule
+  condition: eq(variables['Build.CronSchedule.DisplayName'], 'Daily midnight build')
+```
+
+For more examples, see [schedules.cron examples](/azure/devops/pipelines/yaml-schema/schedules-cron#examples).
 
 ::: moniker-end
 
@@ -336,7 +417,10 @@ Classic schedules are defined using a graphical editor instead of cron syntax. F
 
 ::: moniker range=">azure-devops-2019"
 
-You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline. 
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline.
+
+> [!IMPORTANT]
+> The scheduled runs view only shows pipelines scheduled to run within seven days from the current date. If your cron schedule has an interval longer than 7 days and the next run is scheduled to start after seven days from the current date, it won't be displayed in the scheduled runs view.
 
 ![Scheduled runs menu](media/triggers/scheduled-runs-menu.png)
 
@@ -586,11 +670,25 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 ## FAQ
 
+* [I want my pipeline to run only on the schedule and not when someone pushes a change to a branch](#i-want-my-pipeline-to-run-only-on-the-schedule-and-not-when-someone-pushes-a-change-to-a-branch)
 * [I defined a schedule in the YAML file. But it didn't run. What happened?](#i-defined-a-schedule-in-the-yaml-file-but-it-didnt-run-what-happened)
 * [My YAML schedules were working fine. But, they stopped working now. How do I debug this?](#my-yaml-schedules-were-working-fine-but-they-stopped-working-now-how-do-i-debug-this)
 * [My code hasn't changed, yet a scheduled build is triggered. Why?](#my-code-hasnt-changed-yet-a-scheduled-build-is-triggered-why)
 * [I see the planned run in the Scheduled runs panel. However, it doesn't run at that time. Why?](#i-see-the-planned-run-in-the-scheduled-runs-panel-however-it-doesnt-run-at-that-time-why)
 * [Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?](#schedules-defined-in-yaml-pipeline-work-for-one-branch-but-not-the-other-how-do-i-fix-this)
+
+### I want my pipeline to run only on the schedule and not when someone pushes a change to a branch
+
+If you want your pipeline to run only on the schedule, and not when someone pushes a change to a branch or merges a change to the main branch, you must explicitly disabled the default CI and PR triggers on the pipeline.
+
+To disable the default CI and PR triggers, add the following statements to your YAML pipeline, and [verify that you haven't overridden the YAML pipeline triggers with UI triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting).
+
+```yaml
+trigger: none
+pr: none
+```
+
+For more information, see [pr definition](/azure/devops/pipelines/yaml-schema/pr) and [trigger definition](/azure/devops/pipelines/yaml-schema/trigger).
 
 ### I defined a schedule in the YAML file. But it didn't run. What happened?
 

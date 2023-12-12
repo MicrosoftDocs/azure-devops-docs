@@ -15,10 +15,10 @@ ms.date: 10/05/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Use this index to quickly access example queries and information on opening, defining, and working with queries. To learn how to use the Query Editor, see [Define a query](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
+Use this index to quickly access example queries and information on opening, defining, and working with queries. To learn how to use the Query Editor, see [Define a query](using-queries.md). If you find that your queries take too long to return results, see [Define a query/Best practices](using-queries.md#best-practices).  
 
 
-<a id="examples" />  
+<a id="examples"></a>  
 
 ## Example queries   
 
@@ -129,7 +129,7 @@ You can list work items based on the following criteria...
 :::row-end:::
 ---
 
-<a id="tasks" />
+<a id="tasks"></a>
 
 
 ## Query tasks 
@@ -175,7 +175,6 @@ You can list work items based on the following criteria...
       - [Save a query](organize-queries.md#save) 
       - [Set query permissions](set-query-permissions.md) 
       - [Tree query](using-queries.md#tree-query) 
-      - [Triage query results](triage-work-items.md) 
       - [View a query](view-run-query.md) 
       - [View query results with Parent field](using-queries.md#query-results-widget-parent-titles) 
       - [Understand link types](link-type-reference.md) 
@@ -189,7 +188,6 @@ You can list work items based on the following criteria...
       - [Save a query as a team favorite](organize-queries.md#favorite-query)  
       - [Set query permissions](set-query-permissions.md) 
       - [Tree query](using-queries.md#tree-query) 
-      - [Triage query items](triage-work-items.md) 
       - [View a query](view-run-query.md) 
       - [Understand link types](link-type-reference.md) 
       - [Ungroup a clause](using-queries.md#ungroup-clause) 
@@ -199,7 +197,7 @@ You can list work items based on the following criteria...
 :::row-end:::
 ---
 
-<a id="fields-operators-macros" />
+<a id="fields-operators-macros"></a>
 
 ## Operators and macros supported for each data type
 
@@ -381,7 +379,7 @@ The following table indicates the operators and macros available for the differe
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
-<a id="samples" />
+<a id="samples"></a>
 
 ## Example queries for select fields 
 
@@ -482,8 +480,7 @@ The following table lists common query fields and their data type for which samp
 
 ## Related articles
 
-- [Query by field value comparisons](query-field-value.md) 
-- [Guidance to create high-performing queries](high-performing-queries.md)
+- [Query by field value comparisons](query-field-value.md)
 - [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)  
 - [Define a managed query](using-queries.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 

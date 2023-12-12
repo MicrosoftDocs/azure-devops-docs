@@ -5,8 +5,8 @@ ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: overview
-ms.author: chcomley
-author: chcomley
+ms.author: ravikum
+author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 12/13/2021
 ---
@@ -59,7 +59,7 @@ Azure Test Plans provides software development teams the following benefits.
 
 - **Rich diagnostic data collection**: Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your manual tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
-- **End to End traceability**: Azure DevOps provides [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
+- **End to End traceability**: Azure DevOps provides end-to-end traceability of your requirements, builds, tests and bugs with [linking work items to other objects](../boards/backlogs/add-link.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
 - **Integrated analytics**: The Analytics service provides data that feeds into built-in reports, configurable dashboard widgets, and customizable reports using Power BI. Data tracks test plan progress and trends for both manual and automated tests. Test analytics provides near real-time visibility into test data for builds and releases. Teams can act on this data to improve test collateral to help maintain healthy pipelines. 
 
@@ -153,7 +153,7 @@ Access to Azure DevOps web portal features are managed through access levels ass
 
 
 
-<a id="manual" /> 
+<a id="manual"></a>
 
 
 ## Manual and exploratory testing
@@ -170,7 +170,7 @@ The work item types&mdash;**Test Plans**, **Test Suites**, **Test Cases**, **Sha
 > With Azure DevOps Server 2020 and later versions, you can perform automated tests by adding test tasks to pipelines. Defining test plans, test cases, and test suites isn't required when test tasks are used.  
  
 
-<a id="test-plans" />
+<a id="test-plans"></a>
 
 ### Define test plans and test suites 
 
@@ -192,7 +192,7 @@ Within each test case, you specify a set of test steps with their expected outco
 :::image type="content" source="media/overview/test-case-form.png" alt-text="Screenshot of test case work item form.":::
 
 
-<a id="parameters" />
+<a id="parameters"></a>
 
 ### Manage shared parameters  
 
@@ -200,7 +200,7 @@ Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define an
  
 :::image type="content" source="media/overview/parameters.png" alt-text="Screenshot of Azure Test Plans, Parameters hub":::
 
-<a id="configurations" />
+<a id="configurations"></a>
 
 ### Manage test configurations and variables
 
@@ -208,7 +208,7 @@ With the [Configurations](test-different-configurations.md) hub, teams can defin
 
 :::image type="content" source="media/overview/configurations.png" alt-text="Screenshot of Azure Test Plans, Configurations hub":::
  
-<a id="test-tools" />
+<a id="test-tools"></a> 
 
 ## Test execution and test tools 
  
@@ -256,7 +256,7 @@ to help your developers reproduce the issues. To learn more, see [Run tests for 
 
 ### User acceptance testing 
 
-User acceptance testing (UAT) helps ensure teams deliver the the value requested by customers. You can create UAT test plans and suites, invite several testers to execute these tests, and monitor test progress and results using lightweight charts. To learn how, see [User acceptance testing](user-acceptance-testing.md).
+User acceptance testing (UAT) helps ensure teams deliver the value requested by customers. You can create UAT test plans and suites, invite several testers to execute these tests, and monitor test progress and results using lightweight charts. To learn how, see [User acceptance testing](user-acceptance-testing.md).
 
 ![Assigning testers to run all tests](media/overview/assign-testers.png)
 
@@ -289,7 +289,7 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 ![Requesting and providing stakeholder feedback](media/manual-testing/stakeholder-feedback-01.png)
 
 
-<a id="automated" /> 
+<a id="automated"></a>
 
 ## Automated testing 
 
@@ -307,7 +307,7 @@ Azure Test Plans supports automated testing in the following ways:
 - Provide built-in reports and configurable dashboard widgets to display results of pipeline testing. 
 - Collect test results and associated test data into the Analytics service. 
 
-<a id="traceability" /> 
+<a id="traceability"></a> 
 
 ## Traceability 
 
@@ -319,7 +319,7 @@ Azure Test Plans supports linking bugs and requirements to test cases and test s
 
 
  
-<a id="review-linking" /> 
+<a id="review-linking"></a> 
 
 ### View items linked to a test case
 
@@ -335,7 +335,7 @@ From the **Test plans** hub, you can view and open the test suites, requirements
 :::row-end:::
  
 
-<a id="kanban" /> 
+<a id="kanban"></a>
 
 ### Add and run tests from the Kanban board
 
@@ -343,7 +343,7 @@ From the Azure Boards Kanban boards, you can add tests from a user story or feat
 
 :::image type="content" source="media/overview/kanban-board-inline-testing.png" alt-text="Screenshot of Kanban board showing inline tests added to work items.":::
  
-<a id="requirements-quality" /> 
+<a id="requirements-quality"></a> 
 
 ### Requirements quality widget 
 
@@ -351,7 +351,7 @@ The Requirements quality widget displays a list of all the requirements in scope
 
 :::image type="content" source="../pipelines/test/media/requirements-traceability/requirements-quality-widget.png" alt-text="Screenshot of Requirements traceability widget added to dashboard.":::
 
-<a id="reporting" /> 
+<a id="reporting"></a>
 
 ## Reporting and analysis  
 
@@ -363,7 +363,7 @@ To support reporting and analysis, Azure Test Plans supports test tracking chart
 - Dashboard widgets: Configurable widgets that display test results based on selected builds or releases. Widgets include the [Deployment status](#deployment-status) widget and the [Test Results Trend (Advanced)](#test-results-trend) widget. 
 - [Test Analytics](#test-analytics-service): Gain detailed insights from built-in pipeline reports or create custom reports by querying the Analytics service.
 
-<a id="configurable-charts" />
+<a id="configurable-charts"></a>
 
 ### Configurable test charts  
 
@@ -375,7 +375,7 @@ See more at [Track test status](track-test-status.md).
 
 ![Test status tracking](media/manual-testing/track-test-status-01.png)
 
-<a id="progress-report" />
+<a id="progress-report"></a>
 
 ### Progress reports 
 
@@ -390,7 +390,7 @@ With the [Progress report](progress-report.md) hub, teams can track progress of 
 :::image type="content" source="media/overview/progress-report.png" alt-text="Screenshot of Azure Test Plans, Progress Report hub":::
 
 
-<a id="runs" />
+<a id="runs"></a>
 
 ### Test runs 
 
@@ -407,7 +407,7 @@ Choose any specific run to view a summary of the test run.
 
 
 
-<a id="deployment-status" />
+<a id="deployment-status"></a>
 
 #### Deployment status 
 
@@ -421,7 +421,7 @@ Hover over any build summary, and you can view more details, specifically the nu
 
 
 
-<a id="test-results-trend" />
+<a id="test-results-trend"></a>
 
 ### Test results trend (Advanced)
 
@@ -430,7 +430,7 @@ The Test Results Trend (Advanced) widget provides near real-time visibility into
 :::image type="content" source="../report/dashboards/media/test-results-trend-widget/passed-bypriority-pass.png" alt-text="Screenshot of Test results trend widget, Advanced version based on Analytics service."::: 
   
 
-<a id="test-analytics-service" />
+<a id="test-analytics-service"></a>
 
 ### Test Analytics
 
@@ -592,7 +592,6 @@ tcm run /execute
 - [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 - [About requesting and providing feedback](../project/feedback/index.md)
 - [Cross-service integration and collaboration overview](../cross-service/cross-service-overview.md)
-- [Manage a virtual machine in Azure DevTest Labs](../pipelines/apps/cd/azure/deploy-provision-devtest-lab.md) 
 - [About pipeline tests](../pipelines/test/test-glossary.md)
 
 ## Additional resources

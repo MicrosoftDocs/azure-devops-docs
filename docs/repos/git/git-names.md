@@ -25,7 +25,7 @@ Have you searched your name in the [History](commit-history.md) page and been su
 You were probably left wondering how this happened and what you can do about it.
 The answer is simple: in different commits, your name was recorded differently.
 Maybe you have two different computers, one configured with your full name (e.g. Frances) and the other with the nickname you go by (e.g. Frank).
-Or maybe you have a home computer connected to your Microsoft Account (e.g. frances@outlook.com) and a work computer connected to your employer's Azure Active Directory (e.g. frances_t@fabrikam.com).
+Or maybe you have a home computer connected to your Microsoft Account (e.g. frances@outlook.com) and a work computer connected to your employer's Microsoft Entra ID (e.g. frances_t@fabrikam.com).
 It's even possible you changed your settings over time, so older commits have one name and newer commits have another.
 
 ## Where does Git get your name and email?
@@ -42,7 +42,7 @@ This is a frequent source of one author having multiple names.
 ## Where does Azure DevOps Services get your name and email?
 
 Your details in Azure DevOps Services come from your [profile](https://app.vssps.visualstudio.com/profile/view).
-Your profile was originally populated from details in your Microsoft Account or Azure Active Directory account, but you may change these details yourself.
+Your profile was originally populated from details in your Microsoft Account or Microsoft Entra account, but you may change these details yourself.
 When you edit a file in the web or complete a PR, Azure Repos supplies your profile details as the author of the commit.
 This is another opportunity for your name or email address to be specified differently.
 

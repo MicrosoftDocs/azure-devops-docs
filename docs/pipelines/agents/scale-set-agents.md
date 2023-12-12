@@ -76,14 +76,14 @@ In the following example, a new resource group and Virtual Machine Scale Set are
     --name vmssagents
     ```
 
-4. Create a Virtual Machine Scale Set in your resource group. In this example, the UbuntuLTS VM image is specified. 
+4. Create a Virtual Machine Scale Set in your resource group. In this example, the Ubuntu2204 VM image is specified. 
 
     ```azurecli
     az vmss create \
     --name vmssagentspool \
     --resource-group vmssagents \
-    --image UbuntuLTS \
-    --vm-sku Standard_D2_v3 \
+    --image Ubuntu2204 \
+    --vm-sku Standard_D2_v4 \
     --storage-sku StandardSSD_LRS \
     --authentication-type SSH \
     --generate-ssh-keys \
@@ -92,7 +92,8 @@ In the following example, a new resource group and Virtual Machine Scale Set are
     --upgrade-policy-mode manual \
     --single-placement-group false \
     --platform-fault-domain-count 1 \
-    --load-balancer ""
+    --load-balancer "" \
+    --orchestration-mode Uniform
     ```
 
     > [!NOTE]
@@ -145,6 +146,11 @@ In the following example, a new resource group and Virtual Machine Scale Set are
 
 > [!IMPORTANT]
 > Azure Pipelines does not support [instance protection](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-protection). Make sure you have the *scale-in* and *scale set actions* instance protections disabled.
+
+### Orchestration modes
+Azure virtual machine scale sets can be configured with two [orchestration modes](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes): Uniform and Flexible. Azure Pipelines support for the Uniform orchestration mode is generally available, to all customers.
+
+The Flexible orchestration mode enables Azure Pipelines to queue multiple scale set operations in parallel. Azure Pipelines support for Flexible orchestration is available upon request and is subject to evaluation. Customers' usage patterns need to indicate a significant benefit from it. Such customers have large scale sets, do not reuse agents for multiple jobs, run multiple, short-lived jobs in parallel, and exclusively use ephemeral disks in their VMs. If you would like to use this feature, reach out to our [support team](https://azure.microsoft.com/support/devops/).
 
 ## Create the scale set agent pool
 
@@ -294,8 +300,8 @@ Here's the flow of operations for an Azure Pipelines Virtual Machine Scale Set A
 1. If the Custom Script Extension is installed, it's executed before the Azure Pipelines Agent extension. If the Custom Script Extension returns a non-zero exit code, the VM creation process is aborted and will be deleted.
 
 1. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with the latest version of configuration script. The configuration scripts can be found at URLs with the following formats:
-   - Linux: `https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/<script_version>/enableagent.sh`, for example, [version 14](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/14/enableagent.sh)
-   - Windows: `https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/<script_version>/enableagent.ps1`, for example, [version 16](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/16/enableagent.ps1)
+   - Linux: `https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/<script_version>/enableagent.sh`, for example, [version 15](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/15/enableagent.sh)
+   - Windows: `https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/<script_version>/enableagent.ps1`, for example, [version 17](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/17/enableagent.ps1)
 
 1. The configuration script creates a local user named `AzDevOps` if the operating system is Windows Server or Linux. For Windows 10 Client OS, the agent runs as LocalSystem. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
 

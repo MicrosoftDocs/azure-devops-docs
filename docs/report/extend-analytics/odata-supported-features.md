@@ -21,7 +21,7 @@ This article covers how Analytics supports several OData functions. Unsupported 
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
-<a id="clauses" />
+<a id="clauses"></a>
 
 ## Supported clauses
 
@@ -44,7 +44,7 @@ WorkItems?$filter=Count ge 100&$apply=groupby((WorkItemType), aggregate($count a
 ```
 
 
-<a id="aggregation-extensions" />
+<a id="aggregation-extensions"></a>
 
 ### Aggregation extensions support
 
@@ -108,7 +108,7 @@ However, you can't enter the following string:
 /WorkItems?$select=WorkItemId,State,toupper(Title)
 ```  
 
-<a id="unsupported" />
+<a id="unsupported"></a>
 
 ## Unsupported features
 

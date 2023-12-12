@@ -115,9 +115,10 @@ Use that variable to populate the secret in the above Git command.
 > **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a Git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This isn't desirable during automated builds when user interaction isn't possible.
 
 
-:::moniker range="azure-devops"
-
 ### Sync tags
+
+> [!IMPORTANT]
+> The sync tags feature is supported in Azure Repos Git with Azure DevOps Server 2022.1 and higher.
 
 The checkout step uses the `--tags` option when fetching the contents of a Git repository. This causes the server to fetch all tags as well as all objects that are pointed to by those tags. This increases the time to run the task in a pipeline, particularly if you have a large repository with a number of tags. Furthermore, the checkout step syncs tags even when you enable the shallow fetch option, thereby possibly defeating its purpose. To reduce the amount of data fetched or pulled from a Git repository, Microsoft has added a new option to checkout to control the behavior of syncing tags. This option is available both in classic and YAML pipelines.
 
@@ -167,8 +168,6 @@ You can configure the **Sync tags** setting from the properties of the **Get sou
 
 > [!NOTE]
 > If you explicitly set `fetchTags` in your `checkout` step, that setting takes priority over the setting configured in the pipeline settings UI.
-
-:::moniker-end
 
 ### Shallow fetch
 

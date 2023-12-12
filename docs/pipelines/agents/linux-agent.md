@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 05/05/2023
+ms.date: 11/27/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -54,6 +54,8 @@ We support the following subset of .NET 6 supported distributions:
   * ARM64
     * Debian 10+
     * Ubuntu 22.04, 20.04, 18.04
+  * Alpine x64
+    * [Alpine Linux](https://alpinelinux.org/) 3.13 and higher ([requires agent 3.227 or higher](/azure/devops/release-notes/2023/sprint-228-update#azure-pipelines-agent-now-supports-alpine-linux))
 * **Git** - Regardless of your platform, you will need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
 * **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
@@ -100,7 +102,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. On the right pane, click the **Download** button.
 
-1. Follow the instructions on the page.</li>
+1. Follow the instructions on the page.</br>
 
 1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.
 
@@ -117,7 +119,9 @@ Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ### Authentication type
 
-[!INCLUDE [include](includes/v3/unix-authentication-types.md)]
+When you register an agent, choose from the following authentication types, and agent setup prompts you for the specific additional information required for each authentication type.  For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
+
+[!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
 ## Run interactively
 

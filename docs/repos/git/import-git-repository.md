@@ -53,6 +53,10 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 - To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo using git CLI](#manual-import-git-cli).
 ::: moniker-end
 
+> [!NOTE]
+> When the import of the repository is completed, Azure DevOps sets the **Default** branch for that imported repository. If the imported repository contains a branch named `master`, it is set as the default branch, otherwise the first branch (in alphabetical order) of the imported repository is set as **Default**.
+
+
 ## Import into a new repo  
  
 
@@ -199,7 +203,7 @@ az repos import create --git-source-url https://github.com/fabrikamprime/fabrika
 
 ::: moniker-end
 
-<a id="manual-import-git-cli" /> 
+<a id="manual-import-git-cli"></a> 
 
 ## Manually import a repo using git CLI
 
@@ -254,7 +258,7 @@ Although most of the time the import is successful, the following conditions can
 The import service uses REST APIs to validate and trigger import and cannot work directly with repositories that require two-factor authentication.
 Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [Azure DevOps Services](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
 
-<a id="multiack" />
+<a id="multiack"></a>
 
 ### What if my source repository does not support multi_ack?
 
@@ -303,14 +307,14 @@ To move over the LFS files (you will need both Git.exe and LFS client in the sam
 
 ### Can I import updates if the source changes later?
 
-The import service is for initially importing a entire repository.
+The import service is for initially importing an entire repository.
 To mirror later changes, you'll need a local clone of the repository with remotes set to both source and destination.
 
 You can sync changes using the following commands.
 We'll treat the Azure Repos import as `origin` and the original repo as `upstream`.
 
 ```shell
-git clone --bare <Azure-Repos-clone-URL>
+git clone --bare <Azure-Repos-clone-URL>.git
 cd <name-of-repo>
 git remote add --mirror=fetch upstream <original-repo-URL>
 git fetch upstream --tags

@@ -700,7 +700,7 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
 
 ## Set non-working days 
 
-Non-working days are removed from calculations made by the [capacity planning tool](../../boards/sprints//set-capacity.md) and [burndown charts](../../report/dashboards/configure-sprint-burndown.md). Default processes&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a project, [each team can set their specific non-working days](../../organizations/settings/set-working-days.md).
+Non-working days get removed from calculations made by the [capacity planning tool](../../boards/sprints/set-capacity.md) and [burndown charts](../../report/dashboards/configure-sprint-burndown.md). Default processes&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML

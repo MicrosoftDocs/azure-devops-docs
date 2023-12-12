@@ -60,7 +60,7 @@ Using the Azure DevOps Command Line Interface (CLI), you can create and update v
 
 [Create a variable group](#create-variable-group) | [Update a variable group](#update-variable-group)
 
-<a id="create-variable-group" />  
+<a id="create-variable-group"></a>  
 
 ## Create a variable group with CLI
 
@@ -106,7 +106,7 @@ variables:
     value: Fabrikam
 ```
 
-<a id="update-variable-group" />  
+<a id="update-variable-group"></a>  
 
 ## Update a variable group
 
@@ -312,7 +312,7 @@ ID    Name               Type    Number of Variables
 3     new-app-variables  Vsts    3
 ```
 
-<a id="show-variable-group" />  
+<a id="show-variable-group"></a>  
 
 ## Show details for a variable group
 
@@ -352,7 +352,7 @@ variables:
     value: Fabrikam
 ```
 
-<a id="delete-variable-group" />  
+<a id="delete-variable-group"></a>  
 
 ## Delete a variable group
 
@@ -416,7 +416,7 @@ Name            Is Secret    Value
 requires-login  False        True
 ```
 
-<a id="list-variables-group" />  
+<a id="list-variables-group"></a>  
 
 ## List variables in a variable group
 
@@ -448,7 +448,7 @@ app-name        False        Fabrikam
 requires-login  False        True
 ```
 
-<a id="update-variables-group" />  
+<a id="update-variables-group"></a>  
 
 ## Update variables in a variable group
 
@@ -488,7 +488,7 @@ requires-login:
   value: null
 ```
 
-<a id="delete-variables-group" />  
+<a id="delete-variables-group"></a>  
 
 ## Delete variables from a variable group
 
@@ -524,6 +524,9 @@ Deleted variable 'requires-login' successfully.
 ::: moniker-end
 
 ## Link secrets from an Azure key vault
+
+> [!NOTE]
+> Key Vaults using Azure role-based access control (Azure RBAC) are not supported.
 
 [!INCLUDE [set secret variable in UI](../process/includes/variable-groups-link-secrets.md)]
 

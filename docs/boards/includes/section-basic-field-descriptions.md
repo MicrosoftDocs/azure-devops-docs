@@ -89,7 +89,7 @@ ms.date: 09/21/2020
    :::column-end:::
    :::column span="3":::
       Provide the criteria to be met before the work item can be closed. Define what "Done" means by describing the criteria for the team to use to verify whether the backlog item or bug fix is fully implemented. 
-      Before work begins, describe the [criteria for customer acceptance](../backlogs/best-practices-product-backlog.md#acceptance) as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers' expectations. Also, this information provides the basis for acceptance testing.
+      Before work begins, describe the criteria for customer acceptance as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers' expectations. Also, this information provides the basis for acceptance testing.
    :::column-end:::
 :::row-end:::
 ---

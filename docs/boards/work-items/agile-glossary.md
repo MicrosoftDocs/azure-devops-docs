@@ -162,5 +162,4 @@ A workflow is an integral aspect of a work item. It's defined by its correspondi
 
 ## Related articles 
 
-- [Refine your backlog](../backlogs/best-practices-product-backlog.md) 
 - [Scrum best practices](../sprints/best-practices-scrum.md)

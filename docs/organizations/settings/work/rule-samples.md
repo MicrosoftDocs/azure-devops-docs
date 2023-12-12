@@ -298,7 +298,7 @@ For inherited processes, any-to-any state transitions are automatically defined.
 Before defining state transition rules, review [Rules and rule evaluation, Auto-generated rules](rule-reference.md#auto-generated-rules) and [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md).
 
  
-<a id="restrict-modification-closed-wi" />
+<a id="restrict-modification-closed-wi"></a>
 
 ## Restrict modification of closed work items
 
@@ -360,7 +360,7 @@ For example, the following condition indicates that the Justification field is h
 ::: moniker-end
 
 
-<a id="restrict-modifications-wits" /> 
+<a id="restrict-modifications-wits"></a> 
 
 ## Restrict modification of select fields based on a user or group 
 
@@ -381,7 +381,7 @@ Using one of the following two conditions, you can make select fields required f
 - `current user is not a member of a group...`
 
 > [!TIP]    
-> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Azure Active Directory or Active Directory security groups. To learn more, see [Default rules and the rule engine](rule-reference.md).
+> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. To learn more, see [Default rules and the rule engine](rule-reference.md).
 
 For example, you can make the **Title** or the **State** fields **Read-only** for select users or groups. 
 

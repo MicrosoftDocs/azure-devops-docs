@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.date: 05/05/2023
+ms.date: 10/09/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -19,7 +19,7 @@ monikerRange: '<= azure-devops'
 
 :::moniker-end
 
-To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
+To build and deploy Xcode apps or Xamarin.iOS projects, you need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
 > [!NOTE]
 > This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you're using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted macOS agent.
@@ -38,8 +38,8 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
     * macOS 11.0 "Big Sur"
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
-    * Note: Not all Azure Pipeline tasks have been updated to support ARM64 yet
-- **Git** - Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
+    * Note: Not all Azure Pipelines tasks have been updated to support ARM64 yet
+- **Git** - Git 2.9.0 or higher (latest version recommended - you can easily install with [Homebrew](https://brew.sh/))
 * **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
 * **TFVC** - If you're building from a TFVC repo, see [TFVC prerequisites](#tfvc-prerequisites).
 
@@ -59,7 +59,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### Azure Pipelines
 
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
+1. Log on to the machine using the account for which you've prepared permissions as explained in the previous section.
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
@@ -95,7 +95,9 @@ Azure DevOps Server: `https://{your_server}/tfs`
 
 ### Authentication type
 
-[!INCLUDE [include](includes/v3/unix-authentication-types.md)]
+When you register an agent, choose from the following authentication types, and agent setup prompts you for the specific additional information required for each authentication type. For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
+
+[!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
 ## Run interactively
 
@@ -124,7 +126,7 @@ For agents configured to run interactively, you can choose to have the agent acc
 ./run.sh --once
 ```
 
-Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
+Agents in this mode accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
 
 ## Run as a launchd service
 
@@ -245,7 +247,7 @@ Command:
 Normally, the agent service runs only after the user logs in. If you want the agent service to automatically start when the machine restarts, you can configure the machine to automatically login and lock on startup. See [Set your Mac to automatically login during startup - Apple Support](https://support.apple.com/HT201476).
 
 > [!NOTE]
-> For more information, see the [Terminally Geeky: use automatic login more securely](https://www.engadget.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/) blog. The .plist file mentioned in that blog may no longer be available at the source, but a copy can be found here: [Lifehacker - Make OS X load your desktop before you log in](https://lifehacker.com/5779922/make-os-x-load-your-desktop-before-you-log-in).
+> For more information, see the [Terminally Geeky: use automatic login more securely](https://www.engadget.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/) blog. The .plist file mentioned in that blog may no longer be available at the source, but a copy can be found here: [Lifehacker - Make OS X load your desktop before you log in](https://lifehacker.com/make-os-x-load-your-desktop-before-you-log-in-5779922).
 
 <h3 id="service-update-environment-variables">Update environment variables</h3>
 
@@ -289,7 +291,7 @@ For example:
 ~/Library/LaunchAgents/vsts.agent.fabrikam.our-osx-agent.plist
 ```
 
-`sudo ./svc.sh install` generates this file from this template: `./bin/vsts.agent.plist.template`
+`./svc.sh install` generates this file from this template: `./bin/vsts.agent.plist.template`
 
 #### .service file
 

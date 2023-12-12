@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/03/2023
+ms.date: 11/09/2023
 ---
 
 # Link GitHub commits, pull requests, and issues to work items in Azure Boards
@@ -90,6 +90,17 @@ See the following table of examples.
 
 	Azure Boards completes a check to ensure that you've entered a valid link. The linked-to GitHub repository [must be connected to the Azure Boards project](connect-to-github.md) or the validation fails.
 
+	Here, we add a link to a GitHub issue. 
+
+	:::image type="content" source="media/link/add-link-github-issue-set.png" alt-text="Screenshot of work item form, Links tab, Add link dialog, GitHub issue link type selected.":::
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2022"
+
+> [!NOTE]   
+> There is a delay when completing the AB# links if you are using Azure DevOps Sever and GitHub Enterprise Server. We have a 'push-and-pull' design to pull from the GitHub events every hour on the incremental changes on Commit, PR, and Issue.
+> 
 ::: moniker-end
 
 ## View or open links from the Development section
@@ -124,7 +135,7 @@ With GitHub annotations enabled on the Kanban board, you can quickly open linked
 - [Change GitHub repository access](install-github-app.md#change-repository-access)
 - [Azure Boards-GitHub integration](index.md)
 - [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md)
-- [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
+- [Link work items to objects](../backlogs/add-link.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 
 

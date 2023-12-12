@@ -39,8 +39,8 @@ If you don't have a service connection, you can create one as follows:
 
 When you save your new ARM service connection, Azure DevOps then:
 
-1. Connects to the Azure Active Directory (Azure AD) tenant for to the selected subscription.
-1. Creates an application in Azure AD on behalf of the user.
+1. Connects to the Microsoft Entra tenant for to the selected subscription.
+1. Creates an application in Microsoft Entra ID on behalf of the user.
 1. After the application has been successfully created, assign the application as a contributor to the selected subscription.
 1. Creates an Azure Resource Manager service connection using this application's details.
 
@@ -67,7 +67,7 @@ Below are some of the issues that may occur when creating service connections:
 
 ### Insufficient privileges to complete the operation
 
-This typically occurs when the system attempts to create an application in Azure AD on your behalf.
+This typically occurs when the system attempts to create an application in Microsoft Entra ID on your behalf.
 
 This is a permission issue that may be due to the following causes:
 
@@ -82,7 +82,7 @@ The best approach to resolve this issue, while granting only the minimum additio
 
 1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner), [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator--company-administrator), or [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
 
-1. Select **Azure Active Directory** in the left navigation bar.
+1. Select **Microsoft Entra ID** in the left navigation bar.
 
 1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
@@ -97,11 +97,11 @@ The best approach to resolve this issue, while granting only the minimum additio
 Alternatively, if you are prepared to give the user additional permissions (administrator-level), you can make the user a member of the **Global administrator** role. To do so follow the steps below:
 
 > [!WARNING]
-> Users who are assigned to the Global administrator role can read and modify every administrative setting in your Azure AD organization. As a best practice, we recommend that you assign this role to fewer than five people in your organization. 
+> Users who are assigned to the Global administrator role can read and modify every administrative setting in your Microsoft Entra organization. As a best practice, we recommend that you assign this role to fewer than five people in your organization. 
 
 1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner), [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator--company-administrator), or [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
 
-1. Select **Azure Active Directory** from the left navigation pane.
+1. Select **Microsoft Entra ID** from the left navigation pane.
 
 1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
@@ -119,7 +119,7 @@ It typically takes 15 to 20 minutes to apply the changes globally. The user then
 
 You must have permissions to add integrated applications in the directory. The directory administrator has permissions to change this setting.
 
-1. Select **Azure Active Directory** in the left navigation pane.
+1. Select **Microsoft Entra ID** in the left navigation pane.
 
 1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
@@ -127,7 +127,7 @@ You must have permissions to add integrated applications in the directory. The d
 
 1. Under **App registrations**, and then change the **Users can register applications** option to **Yes**.
 
-You can also create the service principal with an existing user who already has the required permissions in Azure Active Directory. See [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal) for more information.
+You can also create the service principal with an existing user who already has the required permissions in Microsoft Entra ID. See [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal) for more information.
 
 <a name="sessionexpired"></a>
 
@@ -147,7 +147,7 @@ These errors typically occur when your session has expired. To resolve these iss
 
 This error typically occurs when you do not have **Write** permission for the selected Azure subscription.
 
-To resolve this issue, ask the subscription administrator to [assign you the appropriate role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) in Azure Active Directory.
+To resolve this issue, ask the subscription administrator to [assign you the appropriate role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) in Microsoft Entra ID.
 
 <a name="subscription-isnt-listed-service-connection"></a>
 
@@ -155,11 +155,11 @@ To resolve this issue, ask the subscription administrator to [assign you the app
 
 A maximum of 50 Azure subscriptions are listed in the various Azure subscription drop-down menus (billing, service connection, etc.). If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions won't be listed. In this scenario, complete the following steps:
 
-1. Create a new, native Azure AD user in the Azure AD instance of your Azure subscription. 
+1. Create a new, native Microsoft Entra user in the Microsoft Entra instance of your Azure subscription. 
 
-1. Set up the Azure AD user so that it has the proper permissions to set up billing or create service connections. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
+1. Set up the Microsoft Entra user so that it has the proper permissions to set up billing or create service connections. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
  
-1. Add the Azure AD user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
+1. Add the Microsoft Entra user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
 
 1. Log in to Azure DevOps with the new user credentials, and set up a billing. You'll only see one Azure subscription in the list.
 
@@ -175,7 +175,7 @@ This issue can be fixed by changing the **supported account types** settings and
 
     :::image type="content" source="media/directory-and-subscriptions.png" alt-text="Screenshot showing the directory and subscriptions icon in Azure Portal.":::
 
-1. Select **Azure Active Directory** from the left pane.
+1. Select **Microsoft Entra ID** from the left pane.
 
 1. Select **App registrations**.
 
@@ -204,6 +204,9 @@ To renew the access token for an automatically created service principal:
 1. Select **Save**.
 
 Your service principal's token has now been renewed for two more years.
+
+   > [!NOTE]
+   > This operation is available even if the service principal's token has not expired.
 
 <a name="failedToObtainJWT"></a>
 
@@ -238,7 +241,7 @@ To resolve the issue, ensure that the values are defined within the variables se
 
 ### What authentication mechanisms are supported? How do managed identities work?
 
-An Azure Resource Manager service connection can connect to an Azure subscription by using a Service Principal Authentication (SPA) or managed identity authentication. Managed identities for Azure resources provide Azure services with an automatically managed identity in Azure Active Directory (Azure AD). You can use this identity to authenticate to any service that supports Azure AD authentication without persisting credentials in code or in the service connection.
+An Azure Resource Manager service connection can connect to an Azure subscription by using a Service Principal Authentication (SPA) or managed identity authentication. Managed identities for Azure resources provide Azure services with an automatically managed identity in Microsoft Entra ID. You can use this identity to authenticate to any service that supports Microsoft Entra authentication without persisting credentials in code or in the service connection.
 
 To learn about managed identities for virtual machines, see [Assigning roles](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm).  
 

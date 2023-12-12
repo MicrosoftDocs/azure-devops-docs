@@ -18,7 +18,7 @@ ms.date: 12/27/2022
 
 ::: moniker range="azure-devops"
 
-You add users to a team or project so they can contribute to the team and project. For enterprise organizations with large user bases, we recommend you use Azure Active Directory to add and manage new users through security groups. However, to enable flexibility for all size organizations, the following operations are supported: 
+You add users to a team or project so they can contribute to the team and project. For enterprise organizations with large user bases, we recommend you use Microsoft Entra ID to add and manage new users through security groups. However, to enable flexibility for all size organizations, the following operations are supported: 
  
 - Team and project administrators can add new users to their team or project, unless the policy [Allow team and project administrators to invite new users](restrict-invitations.md) is disabled. New users are ones that haven't been added to the organization. 
 - When you add new users through the team and project user interfaces, the system automatically assigns an access level to the user. 
@@ -42,7 +42,7 @@ You add projects to an organization or project collection and you add teams to p
 - [Create a project](../projects/create-project.md) 
 - [Add team, go from one default team to others](../settings/add-teams.md)
 
-[!INCLUDE [version-all](../../includes/version-selector-minimize.md)]
+[!INCLUDE [version-all](../../includes/version-selector.md)]
 
 
 ## Supported options for adding users 
@@ -144,13 +144,13 @@ Team and project administrators can add existing users to their team or project.
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      Azure Active Directory Administrators
+      Microsoft Entra Administrators
    :::column-end:::
    :::column span="2":::
-      Azure Active Directory
+      Microsoft Entra ID
    :::column-end:::
    :::column span="2":::
-      Users you add to Azure Active Directory connected to Azure DevOps Services are added to the Project Collection Valid Users group. For more information, see [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md). 
+      Users you add to Microsoft Entra connected to Azure DevOps Services are added to the Project Collection Valid Users group. For more information, see [Connect your organization to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md). 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -271,7 +271,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 
 <a id="teams-page"> </a>
 <a id="add-team-members"> </a>
-<a id="add-team-members-team-services" />
+<a id="add-team-members-team-services"></a>
 <a id="add-users-to-a-team"> </a>
 
 ## Add users or groups to a team 
@@ -286,7 +286,7 @@ Add existing users or security groups to a team from the **Project settings> Tea
 
 ::: moniker range="azure-devops"
 
-You can toggle between direct or expanded membership views. The **Direct Members** view displays users and groups that have been added to the team. The **Expanded Members** view replaces any Azure DevOps groups with the members that belong to those groups. Azure Active Directory or Active Directory groups aren't expanded.  
+You can toggle between direct or expanded membership views. The **Direct Members** view displays users and groups that have been added to the team. The **Expanded Members** view replaces any Azure DevOps groups with the members that belong to those groups. Microsoft Entra ID or Active Directory groups aren't expanded.  
 
 1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
 
@@ -304,7 +304,7 @@ You can toggle between direct or expanded membership views. The **Direct Members
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Team Profile, choose Add, preview page.](media/add-users/new-teams-page-add-member.png)   
 
-4. Enter the sign-in addresses or display name for each account you want to add. You can also add a project security group&mdash;such as another team group, custom group, or Azure Active Directory group when used by the organization. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
+4. Enter the sign-in addresses or display name for each account you want to add. You can also add a project security group&mdash;such as another team group, custom group, or Microsoft Entra group when used by the organization. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
 	:::image type="content" source="media/add-users/change-team-context.png" alt-text="Screenshot of Invite members to team dialog, choose user account.":::
 
@@ -325,7 +325,7 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 
 ::: moniker range=">= azure-devops-2019"
 
-You can toggle between direct or expanded membership views. The **direct** view displays users and groups that have been added to the team. The **expanded** view replaces any Azure DevOps groups with the members that belong to those groups. Azure Active Directory or Active Directory groups aren't expanded.   
+You can toggle between direct or expanded membership views. The **direct** view displays users and groups that have been added to the team. The **expanded** view replaces any Azure DevOps groups with the members that belong to those groups. Microsoft Entra ID or Active Directory groups aren't expanded.   
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
@@ -549,7 +549,7 @@ As a member of the **Project Administrators** group, you can add users or groups
 > To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 ::: moniker-end 
 
-<a id="project-permissions" />
+<a id="project-permissions"></a>
 
 #### [Preview UI](#tab/preview-page)
 
@@ -705,7 +705,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 ::: moniker range="azure-devops"
 
-<a id="manage-users" /> 
+<a id="manage-users"></a> 
 
 ##  Manage users or resend invitations 
 
@@ -734,7 +734,7 @@ From the Azure DevOps CLI command, you can see details about a team or list the 
 > [!NOTE]   
 > You can use the [`az devops user`](../accounts/add-organization-users.md#add-users-to-your-organization) command to add users to an organization. There is no comparable command for adding users to a team or project. 
 
-<a id="list-members" /> 
+<a id="list-members"></a> 
 
 ### List team members
 
@@ -772,7 +772,7 @@ d291b0c4-a05c-4ea6-8df1-4b41d5f39eff  Jamal Hartnett     fabrikamfiber4@hotmail.
 bd30c189-db0f-4dd6-9418-5d8b41dc1754  Raisa Pokrovskaya  fabrikamfiber5@hotmail.com
 ``` 
 
-<a id="show-details" /> 
+<a id="show-details"></a> 
 
 ### Show team details
 

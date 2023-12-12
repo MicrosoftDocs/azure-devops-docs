@@ -1,72 +1,88 @@
 ---
 title: Use packages from npmjs.com
-description: Use packages from npmjs.com using scopes or upstream sources
+description: How to consume packages from npmjs.com upstream source
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 02/14/2022
+ms.date: 11/29/2023
 monikerRange: '<= azure-devops'
+"recommendations": "true"
 ---
 
 # Use packages from npmjs.com
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The npm client is designed to work with a single primary *registry* (what Azure Artifacts calls a *feed*). It also supports secondary *scoped* registries. Scoped registries can only be used to install packages whose names begin with the scope prefix, so their usage is more restrictive. If you want to use both private packages you've created **and** public packages from npmjs.com, we recommend using upstream sources. 
+The npm client is designed to work with one main registry (known as a feed in Azure Artifacts) at a time. However, it does support additional scoped registries. If you plan to use both private packages and public packages from npmjs.com, it's recommended to use upstream sources.
+Once you enable upstream sources in your feed, Azure Artifacts automatically saves a copy of any installed package to your feed. This offers the greatest flexibility, allowing you to use a mix of scoped and non-scoped packages in your feed, including both scoped and non-scoped packages from npmjs.com.
 
-The npmjs.com upstream source allows you to merge the contents of npmjs.com into your feed such that the npm client can install packages from both locations.  Enabling upstream sources also automatically enables saving of packages you use from the upstream source. **This is the recommended way to use Azure Artifacts with npm.** Upstreams give you the most flexibility to use a combination of scoped- and nonscoped packages in your feed, as well as scoped- and nonscoped packages from npmjs.com.
+## Prerequisites
 
-## Enable npmjs.com as an upstream
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-You can use npmjs.com as an upstream source with new and existing feeds.
+- An Azure Artifacts feed.
 
-### On a new feed
+- Download [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-- [Create a new feed](../get-started-npm.md#create-a-feed). Make sure you check the **Include packages from common public sources** checkbox.
+## Enable upstream sources
 
-    :::image type="content" source="media/include-upstream-sources.png" alt-text="Screenshot showing how to enable upstream sources":::
+If you haven't created a feed yet, follow these steps to create a new one and make sure to check the upstream sources checkbox to enable them. If you already have a feed, proceed to the [next step](#add-npmjs-upstream) to add npmjs as an upstream source.
 
-### On an existing feed
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Create Feed**.
+
+1. Provide a descriptive **Name** for your feed, set its **Visibility** and **Scope**. Check the **Upstream sources** checkbox to include packages from public registries.
+
+1. Select **Create** when you're done.
+
+## Add npmjs upstream
+
+If you checked the upstream sources checkbox during the creation of your feed, npmjs should have been added automatically. If not, you can add it manually as follows:
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed.
 
-1. Navigate to **Feed settings** by selecting the gear icon ![gear icon](../../media/icons/gear-icon.png) button.
+1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
 
 1. Select **Upstream sources**, and then select **Add Upstream**.
 
-    :::image type="content" source="./media/npm-new-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
+1. Select **Public source**, and then select **npmjs (https://registry.npmjs.org/)** from the dropdown menu.
 
-1. Select **Public source**, and then select **npmjs** from the dropdown menu.
+1. Select **Save** when you're done, and then select **Save** at the top right corner to save your changes.
 
-1. Select **Save** when you are done.
+## Install packages from npmjs
 
-1. Select **Save** to save your changes.
+Before you save packages from npmjs, make sure your project is set up to connect to your feed. If you haven't done this yet, follow the instructions in the [project setup](npmrc.md#project-setup) to configure your npm project and connect to your feed. In this example, we'll install the *Axios* library for making HTTP requests:
 
-    :::image type="content" source="../media/save-upstream-source.png" alt-text="A screenshot showing how to save changes in upstream sources":::
+1. Navigate to npmjs at `https://www.npmjs.com//`.
 
-## Filter to saved packages
+1. Search for the *Axios* package, and then select it to navigate to the details page.
 
-You can view the packages you saved from upstreams by selecting your **Source** from the dropdown menu.
+1. Copy the install command to your clipboard. 
 
-::: moniker range=">= azure-devops-2019"  
+1. In a command prompt window, navigate to your project's directory and run your install command.
 
-:::image type="content" source="media/view-cached-packages-newnav.png" alt-text="Screenshot of the filtered npm packages":::
+    ```Command
+    npm install axios
+    ```
 
-::: moniker-end
+> [!NOTE]
+> To save packages from upstreams, you must be a **Collaborator** or higher. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
 
-::: moniker range="tfs-2018"
+## View saved packages
 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-:::image type="content" source="media/view-cached-packages.png" alt-text="Screenshot of the filtered npm packages in TFS":::
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-::: moniker-end
+1. Select **npmjs** from the source menu. The *Axios* package we installed earlier is now available in our feed. Azure Artifacts automatically saved a copy to our feed upon executing the install command.
 
-## Scopes
-
-Using scopes instead of upstream sources limits your private package consumption to those with the `@scope` prefix e.g. `@fabrikam/core` but enables you to consume public packages **directly** from npmjs.com, see [npm scopes](scopes.md) for more details.
+    :::image type="content" source="media/saved-package-from-upstream.png" alt-text="A screenshot showing the axios package that was saved from upstream.":::
 
 ## Related articles
 
-- [Publish npm packages (CLI)](./publish.md)
+- [Publish and restore npm packages (CLI)](./publish.md)
 - [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md)
--  [Use npm audit](./npm-audit.md)
+- [Npm scopes](scopes.md)

@@ -62,7 +62,7 @@ All work items that you import get created in a *New* state. This rule means tha
 
    :::image type="content" source="media/import-csv/imported-file.png" alt-text="Screenshot showing Save button for imported work items.":::
 
-	> [!NOTE]  
+	> [!TIP]  
 	> Don't assign IDs to new work items that you're adding, otherwise you will receive an error message. 
    >
    > *TFS401232: Work item 1794 does not exist, or you do not have permissions to read it.*
@@ -73,6 +73,9 @@ All work items that you import get created in a *New* state. This rule means tha
 
 > [!TIP]   
 > You can add parent-child links between work items you import by indenting the title columns as shown in the example later in this article, [Can I import a CSV file that have parent-child links?](#tree-items). However, you can't specify any other link types when importing or updating work items.  
+
+> [!NOTE]  
+> You can import up to 1,000 work items at a time. If you have more than 1,000 work items to import, break them into multiple files and import them separately. 
 
 ## Update existing work items
 
@@ -178,7 +181,7 @@ ID,Work Item Type,Title,Assigned To,State,Priority,Tags
 
 A: You can add multiple tags separated by a semicolon. For more information, see [Tasks you can and can't do with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
-<a id="tree-items" /> 
+<a id="tree-items"></a> 
 
 ### Q: Can I import a CSV file that has parent-child links?
 
@@ -207,7 +210,7 @@ The work item results always list the data errors found for individual work item
 
 ### Q: Why am I getting errors for some identity values?
 
-A: When you use the Web UI, the identity picker goes through extra steps to validate the user. First it checks to see if the person is a valid user in the org. If not, it searches on the identity in Azure Active Directory (Azure AD). If the user's in Azure AD but not in the org, that user gets added to the valid identities. When you import via CSV, for performance reasons, the identity picker doesn't go through these extra steps. It only checks to see if there's a matching UPN already in the org. If it doesn't find a matching UPN, it reports that the identity is unknown.
+A: When you use the Web UI, the identity picker goes through extra steps to validate the user. First it checks to see if the person is a valid user in the org. If not, it searches on the identity in Microsoft Entra ID. If the user's in Microsoft Entra ID but not in the org, that user gets added to the valid identities. When you import via CSV, for performance reasons, the identity picker doesn't go through these extra steps. It only checks to see if there's a matching UPN already in the org. If it doesn't find a matching UPN, it reports that the identity is unknown.
 
 ### Q: Does CSV import support all work item types?
 

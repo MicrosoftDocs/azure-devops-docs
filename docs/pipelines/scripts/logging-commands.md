@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 04/21/2023
+ms.date: 10/12/2023
 ms.custom: contperf-fy21q3
 monikerRange: '<= azure-devops'
 ---
@@ -15,11 +15,19 @@ monikerRange: '<= azure-devops'
 Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
 They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md). Logging commands are useful when you're troubleshooting a pipeline. 
 
-
+> [!IMPORTANT]
+> We make an effort to mask secrets from appearing in Azure Pipelines output, but you still need to take precautions. Never echo secrets as output.
+> Some operating systems log command line arguments. Never pass secrets on the command line.
+> Instead, we suggest that you map your secrets into environment variables.
+> 
+> We never mask substrings of secrets. If, for example, "abc123" is set as a secret, "abc" isn't masked from the logs.
+> This is to avoid masking secrets at too granular of a level, making the logs unreadable.
+> For this reason, secrets should not contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
+> "bar" isn't masked from the logs.
 
 |Type  |Commands  |
 |---------|---------|
-|Task commands     |    [AddAttachment](#addattachment-attach-a-file-to-the-build), [Complete](#complete-finish-timeline), [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [LogIssue](#logissue-log-an-error-or-warning), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [SetProgress](#setprogress-show-percentage-completed), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary) |
+|Task commands     |    [AddAttachment](#addattachment-attach-a-file-to-the-build), [Complete](#complete-finish-timeline), [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [LogIssue](#logissue-log-an-error-or-warning), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [SetProgress](#setprogress-show-percentage-completed), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [SetSecret](#setsecret-register-a-value-as-a-secret), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary) |
 |Artifact commands     |   [Associate](#associate-initialize-an-artifact), [Upload](#upload-upload-an-artifact)      |
 |Build commands     |  [AddBuildTag](#addbuildtag-add-a-tag-to-the-build), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [UploadLog](#uploadlog-upload-a-log) |
 |Release commands     |    [UpdateReleaseName](#updatereleasename-rename-current-release)     |
@@ -436,6 +444,70 @@ You can use macro replacement to get secrets, and they'll be masked in the log: 
 ```
 ::: moniker-end
 
+### SetSecret: Register a value as a secret
+
+`##vso[task.setsecret]value`
+
+#### Usage
+
+The value is registered as a secret for the duration of the job. The value will be masked out from the logs from this point forward. This command is useful when a secret is transformed (e.g. base64 encoded) or derived.
+
+Note: Previous occurrences of the secret value will not be masked. 
+
+#### Examples
+
+# [Bash](#tab/bash)
+
+Set the variables:
+
+```yaml
+- bash: |
+    NEWSECRET=$(echo $OLDSECRET|base64)
+    echo "##vso[task.setsecret]$NEWSECRET"
+  name: SetSecret
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+Read the variables:
+
+```yaml
+- bash: |
+    echo "Transformed and derived secrets will be masked: $(echo $OLDSECRET|base64)"
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+# [PowerShell](#tab/powershell)
+
+Set the variables:
+
+```yaml
+- pwsh: |
+    $NewSecret = [convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($env:OLDSECRET))
+    Write-Host "##vso[task.setsecret]$NewSecret"
+  name: SetSecret
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+Read the variables:
+
+```yaml
+- pwsh: |
+    Write-Host "Transformed and derived secrets will be masked: $([convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($env:OLDSECRET)))"
+  env:
+    OLDSECRET: "SeCrEtVaLuE"
+```
+
+---
+
+Console output:
+
+```
+Transformed and derived secrets will be masked: ***
+```
+
 ### SetEndpoint: Modify a service connection field
 
 `##vso[task.setendpoint]value`
@@ -484,12 +556,13 @@ Upload and attach attachment to current timeline record. These files aren't avai
 
 #### Usage
 
-Upload and attach summary Markdown to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary will appear on an Extensions tab.   
+Upload and attach summary Markdown from a .md file in the repository to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary will appear on the **Extensions** tab of your pipeline run. Markdown rendering on the Extensions tab is different from Azure DevOps wiki rendering.
+
 
 #### Examples
 
 ```
-##vso[task.uploadsummary]c:\testsummary.md
+##vso[task.uploadsummary]$(System.DefaultWorkingDirectory)/testsummary.md
 ```
 
 It's a short hand form for the command

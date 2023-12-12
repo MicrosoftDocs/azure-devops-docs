@@ -4,8 +4,8 @@ description: Review continuous test results with a build or release pipeline in 
 ms.assetid: EA5D7524-3683-4660-B3B6-3F29AD3587AC
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18, cross-service"
-ms.author: vinojos
-author: vinodjo
+ms.author: ravikum
+author: raviLiftr
 ms.date: 10/06/2021
 monikerRange: '<= azure-devops'
 ---

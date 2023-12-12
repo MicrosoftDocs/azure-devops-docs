@@ -2,15 +2,16 @@
 metadata:
   title: User and permissions management FAQs
   titleSuffix: Azure DevOps
-  ms.custom: seodec18
+  ms.custom: seodec18, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
   description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, manage Visual Studio subscriptions, and more.
   ms.subservice: azure-devops-organizations
   ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 07/24/2020
+  ms.date: 10/16/2023
   monikerRange: '<= azure-devops'
+
 title: User and permissions management FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -33,7 +34,7 @@ sections:
       - question: |
           Q: What happens if I forget my password?
         answer: |
-          A: You can [recover your Microsoft account password](https://account.live.com/ResetPassword.aspx) or [recover your work or school account password](https://passwordreset.microsoftonline.com) if your organization turned on this feature. Otherwise, contact your Azure Active Directory administrator to recover your work or school account.
+          A: You can [recover your Microsoft account password](https://account.live.com/ResetPassword.aspx) or [recover your work or school account password](https://passwordreset.microsoftonline.com) if your organization turned on this feature. Otherwise, contact your Microsoft Entra administrator to recover your work or school account.
           
       - question: |
           Q: Why can't I manage users?
@@ -134,13 +135,13 @@ sections:
       - question: |
           Q: Why can't users access some features?
         answer: |
-          A: Make sure that users have the correct [access level](https://visualstudio.microsoft.com/team-services/compare-features/) assigned to them.  
+          A: Make sure that users have the correct access level assigned to them.  
           
           * Learn [how to manage users and access levels for Azure DevOps](./add-organization-users.md).
           
           * Learn [how to change access levels for Azure DevOps Server](../security/change-access-levels.md).
           
-          Some features are available only as [extensions](https://visualstudio.microsoft.com/team-services/compare-features/). You need to install these extensions. Most extensions require you to have at least Basic access, not Stakeholder access. Check the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
+          Some features are available only as extensions. You need to install these extensions. Most extensions require you to have at least Basic access, not Stakeholder access. Check the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
           
           For example, to search your code, you can install the free [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), but you need at least Basic access to use the extension.
           
@@ -172,9 +173,9 @@ sections:
           <a name="inherit-permissions-from-other-azure-ad-groups"></a>
           
       - question: |
-          Q: How does my user account inherit permissions from other Azure AD groups?
+          Q: How does my user account inherit permissions from other Microsoft Entra groups?
         answer: |
-          A: If a user is in more than one Azure AD group, a **DENY** permission set in one group applies to the user in all groups the user is in. Because the permission is set to **DENY** for the user at the lowest possible level, the user's usage of the resource is affected in all groups they are in because denial always takes precedence. 
+          A: If a user is in more than one Microsoft Entra group, a **DENY** permission set in one group applies to the user in all groups the user is in. Because the permission is set to **DENY** for the user at the lowest possible level, the user's usage of the resource is affected in all groups they are in because denial always takes precedence. 
           
           For example, if a user is in the Contributor group and in the Project Administrator group and **DENY** is set for a specific permission in the Contributor group, that permission is denied for the user in the Project Administrator group, too. In this scenario, you can use the **Not set** option.
           
@@ -230,14 +231,14 @@ sections:
           > ![remove-test-group-group-rule-managing_group-based-licensing](media/faq/remove-test-group-rule.png)
           
       - question: |
-          Q: Will my Azure DevOps or Azure AD group be deleted if I remove its group rule?
+          Q: Will my Azure DevOps or Microsoft Entra group be deleted if I remove its group rule?
         answer: |
           A: No. Your groups won't be deleted.
           
       - question: |
           Q: What does the option "Remove <group> from all project level groups" do?
         answer: |
-          A: This option removes the Azure DevOps or Azure AD group from any project-level default groups, such as **Project Readers** or **Project Contributors**.
+          A: This option removes the Azure DevOps or Microsoft Entra group from any project-level default groups, such as **Project Readers** or **Project Contributors**.
           
       - question: |
           Q: What determines the final access level if a user is in more than one group?
@@ -255,7 +256,7 @@ sections:
           
           **Example 2**: group rule gives me the same access
           
-          I have a Visual Studio Test Pro subscription and I'm in a group rule that gives me Basic + Test Plans – what happens?
+          I have a Visual Studio Test Pro subscription and I'm in a group rule that gives me Basic + Test Plans what happens?
           
           Expected: I get detected as a Visual Studio Test Pro subscriber, because the access is the same as the group rule, and I'm already paying for the Visual Studio Test Pro, so I wouldn't want to pay again.
           
@@ -277,9 +278,9 @@ sections:
       - question: |
           Q: Why can't some users sign in?
         answer: |
-          A: This problem might happen because users must sign in with Microsoft accounts unless your organization controls access with Azure Active Directory (Azure AD). If your organization is connected to Azure AD, users must be directory members to get access.
+          A: This problem might happen because users must sign in with Microsoft accounts unless your organization controls access with Microsoft Entra ID. If your organization is connected to Microsoft Entra ID, users must be directory members to get access.
           
-          If you're an Azure AD Administrator, you can add users to the directory. If you're not an Azure AD Administrator, work with the directory administrator to add them. Learn [about controlling organization access with Azure AD](access-with-azure-ad.md).
+          If you're a Microsoft Entra Administrator, you can add users to the directory. If you're not a Microsoft Entra Administrator, work with the directory administrator to add them. Learn [about controlling organization access with Microsoft Entra ID](access-with-azure-ad.md).
           
       - question: |
           Q: Why did some users lose access to certain features?
@@ -294,51 +295,51 @@ sections:
           A: Learn [how to delete users](delete-organization-users.md) across all projects in your organization. If you paid for more users but don't need their organization access anymore, you must reduce your paid users to avoid charges.
           
       - question: |
-          Q: Why can't I find members from my connected Azure AD, even though I'm the Azure AD global admin?
+          Q: Why can't I find members from my connected Microsoft Entra ID, even though I'm the global admin?
         answer: |
-          A: You're probably a guest in the Azure AD instance that backs Azure DevOps. By default, Azure AD guests can't search in Azure AD. That's why you aren't finding users in your connected Azure AD to add to your organization.
+          A: You're probably a guest in the Microsoft Entra instance that backs Azure DevOps. By default, Microsoft Entra guests can't search in Microsoft Entra ID. That's why you aren't finding users in your connected Microsoft Entra ID to add to your organization.
           
-          First, check to see if you're an Azure AD guest:
+          First, check to see if you're a Microsoft Entra guest:
           
-          1. Go to the **Settings** section of your organization. Look at the lower **Azure Active Directory** section. Make a note of the tenant that backs your organization.
+          1. Go to the **Settings** section of your organization. Look at the lower **Microsoft Entra ID** section. Make a note of the tenant that backs your organization.
           2. Sign in to the new Azure portal, portal.azure.com. Check your user profile in the tenant from step 1. Check the **User type** value shown as follows: 
           
               ![Check user type in the Azure portal](media/faq/check-user-type-in-Azure-portal.png)
           
-          If you're an Azure AD guest, do one of the following steps:
+          If you're a Microsoft Entra guest, do one of the following steps:
           
-          * Have another Azure DevOps admin, who isn't an Azure AD guest, manage the users in Azure DevOps for you. Members of the Project Collection Administrators group inside Azure DevOps can administer users.
-          * Have the Azure AD admin remove you from the connected Azure AD and readd you. The admin needs to make you an Azure AD member rather than a guest. See [Can Azure AD B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
-          * Change the **User Type** of the Azure AD guest by using Azure AD PowerShell. We don't advise using the following process, but it works and allows the user to query Azure AD from Azure DevOps  thereafter.
+          * Have another Azure DevOps admin, who isn't a Microsoft Entra guest, manage the users in Azure DevOps for you. Members of the Project Collection Administrators group inside Azure DevOps can administer users.
+          * Have the Microsoft Entra admin remove your account from the connected directory and re-add it. The admin needs to make you a Microsoft Entra member rather than a guest. See [Can Microsoft Entra B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
+          * Change the **User Type** of the Microsoft Entra guest by using Microsoft Graph PowerShell. We don't advise using the following process, but it works and allows the user to query Microsoft Entra ID from Azure DevOps  thereafter.
           
-          1. [Download and install Azure AD PowerShell module](/powershell/module/azuread/?view=azureadps-2.0&preserve-view=true).
+          1. [Download and install Microsoft Graph PowerShell](/powershell/microsoftgraph/installation).
               ```
-              PS Install-Module -Name AzureAD
+              PS Install-Module -Name Microsoft Graph
               ```
           2. Open PowerShell and run the following cmdlets.
           
-              a. Connect to Azure AD:
+              a. Connect to Microsoft Entra ID:
           
               ```
-              PS Connect-AzureAD
+              PS Connect-MgGraph -Scopes 'User.Read.All'
               ```
           
               b. Find the **objectId** of the user:
           
               ```
-              PS Get-AzureADuser -SearchString "YourUPN"
+              PS Get-MgUser -Filter "UserPrincipalName eq '<YourUPN>'"
               ```
           
               c. Check the **usertype** attribute for this user to see if they're a guest or member:
           
               ```
-              PS Get-AzureADUser -objectId This is the result of the previous command
+              PS Get-MgUser -UserId <Id> -Property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType 
               ```
           
               d. Change the **usertype** from **member** to **guest**:
           
               ```
-              PS Set-AzureADUser -objectId <replacethe object ID for the result of the command to search> -UserType Member
+              PS Update-MgUser -UserID <replace the  ID for the result of the command to search> -UserType Member
               ```
           
           <a name="users-delay"></a>
@@ -365,6 +366,6 @@ additionalContent: |
 
   ## Related articles
   
-  - [Access with Azure AD FAQs](faq-azure-access.yml)
-  - [Configure and customize organization FAQs](faq-configure-customize-organization.yml)
-  - [Set up Visual Studio FAQs](faq-set-up-vs.yml)
+  - [Access with Microsoft Entra ID FAQ](faq-azure-access.yml)
+  - [Configure and customize organization FAQ](faq-configure-customize-organization.yml)
+  - [Set up Visual Studio FAQ](faq-set-up-vs.yml)

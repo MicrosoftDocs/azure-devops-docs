@@ -44,19 +44,19 @@ By default, members of the **Contributors** group are assigned the **Create tag 
 ## Prerequisites
 
 - To manage permissions or groups at the project level, you must be a member of the **Project Administrators** security group. If you created the project, you are automatically added as a member of this group. To get added to this group, you need to request permissions from a member of the **Project Administrators** group. See [Look up a project administrator](look-up-project-administrators.md).
-- If want to add security groups defined in Azure Active Directory or Active Directory, make sure those are first defined. To learn more, see [Add AD/Azure AD users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
+- If want to add security groups defined in Microsoft Entra ID or Active Directory, make sure those are first defined. To learn more, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
 
 > [!NOTE]   
 > Users granted **Stakeholder** access, aren't able to access select features even if granted permissions to those features. To learn more, see [Stakeholder access quick reference](stakeholder-access.md).
  
 
-<a id="add-user-group" />
+<a id="add-user-group"></a>
 
 ## Add members to the Project Administrators group 
 
 You can add users who've been added to a project, organization, or collection to the Project Administrators group. To add a custom security group, first create the group as described in [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md).
 
-Here we show how to add a user to the built-in **Project Administrators** group. The method is similar to adding an Azure Active Directory or Active Directory group. 
+Here we show how to add a user to the built-in **Project Administrators** group. The method is similar to adding a Microsoft Entra ID or Active Directory group. 
 
 ::: moniker range="azure-devops"
 
@@ -311,4 +311,3 @@ You can change the project-level permissions for a specific user. To understand 
 - [Permissions lookup reference](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
-

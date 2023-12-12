@@ -58,9 +58,9 @@ The following authentication options are supported.
 - [Username and password](#server-github-ent-username)
 ::: moniker-end
 
-<a id="github-oauth" />
-<a id="github-pat" />
-<a id="server-github-ent-oauth-register" />
+<a id="github-oauth"></a>
+<a id="github-pat"></a>
+<a id="server-github-ent-oauth-register"></a>
 
 ::: moniker range="azure-devops-2019"
 
@@ -68,8 +68,8 @@ The following authentication options are supported.
 
 If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterprise Server, you first need to register the application as an OAuth App. For more information, see [Create an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
 
-<a id="register-services-oauth" />
-<a id="register-server-oauth" />
+<a id="register-services-oauth"></a>
+<a id="register-server-oauth"></a>
 
 ###  Register Azure DevOps Server 
 
@@ -105,7 +105,7 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 
    :::image type="content" source="media/github-ent/ghe-register-app-success.png" alt-text="Screenshot of Client ID and Client Secret for your registered OAuth application.":::
 
-<a id="register-server-github-ent-oauth" />
+<a id="register-server-github-ent-oauth"></a>
 
 ### Register your OAuth configuration in Azure DevOps Server
 
@@ -121,8 +121,8 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 
    :::image type="content" source="media/github-ent/add-oauth-configuration.png" alt-text="Screenshot of OAuth configuration dialog.":::
 
-<a id="github-ent-oauth-services" />
-<a id="github-ent-oauth-server" />
+<a id="github-ent-oauth-services"></a>
+<a id="github-ent-oauth-server"></a>
  
 ::: moniker-end
 
@@ -179,8 +179,8 @@ Choose the configuration that you set up in [Step 4 of Register your OAuth confi
 
 ::: moniker-end
 
-<a id="server-github-ent-pat" /> 
-<a id="github-ent-pat" /> 
+<a id="server-github-ent-pat"></a> 
+<a id="github-ent-pat"></a> 
 
 #### Connect with a Personal Access Token  
 
@@ -193,7 +193,7 @@ Choose the configuration that you set up in [Step 4 of Register your OAuth confi
 
    :::image type="content" source="media/github-ent/ads-add-ghe-pat.png" alt-text="Screenshot of sign in with PAT.":::
 
-<a id="server-github-ent-username" />
+<a id="server-github-ent-username"></a>
 
 #### Connect with a username and password   
 
@@ -300,7 +300,7 @@ Consider the following resolutions:
 
 	Recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`.
 
-<a id="update-wits" />
+<a id="update-wits"></a>
 
 #### Update XML definitions for select work item types 
 
@@ -352,4 +352,3 @@ When it updates, the section should appear as follows.
 - [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 - [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)
-- [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)

@@ -14,7 +14,7 @@ ms.date: 10/11/2021
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-<a id="security-roles" />
+<a id="security-roles"></a>
 
 While the majority of features and functional tasks are managed by [individual permissions](about-permissions.md), there are several artifacts and features that the system manages through role-based permissions. You can add users or groups to a role. Each role determines the set of operations that the user can perform as described in the following sections.  
 
@@ -25,7 +25,7 @@ Many role-based permissions can be set for all artifacts of a specific type in a
 
 By default, all contributors in a project are members of the User role on each hosted queue.  This allows every contributor in a project to author and run build and release pipelines using hosted queues.
 
-<a id="agent-queue-security-roles" />
+<a id="agent-queue-security-roles"></a>
 
 ## Agent pool security roles, project-level
 
@@ -33,7 +33,7 @@ You [add users to the following security roles](../../pipelines/policies/set-per
 
 [!INCLUDE [temp](includes/agent-queue-roles.md)]
 
-<a id="agent-pool-security-roles" />
+<a id="agent-pool-security-roles"></a>
 
 ## Agent pool security roles, organization or collection-level
 
@@ -53,7 +53,7 @@ You [add users to the following roles](../../pipelines/policies/set-permissions.
 
 [!INCLUDE [temp](includes/deployment-pool-roles.md)]
 
-<a id="library-roles" /> 
+<a id="library-roles"></a> 
 
 ## Library asset security roles: Variable groups and secure files
 
@@ -61,7 +61,7 @@ You [add users to a library role](../../pipelines/policies/set-permissions.md) f
 
 [!INCLUDE [temp](includes/library-roles.md)]
 
-<a id="service-endpoint-roles" /> 
+<a id="service-endpoint-roles"></a> 
 
 ## Service connection security roles
 
@@ -73,5 +73,5 @@ You [add users to the following roles](../../pipelines/policies/set-permissions.
 
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
-- [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
+- [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory)
  

@@ -3,8 +3,8 @@ title: Push an image
 description: Push container images
 ms.topic: conceptual
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
-ms.author: atulmal
-author: azooinmyluggage
+ms.author: ericvan
+author: geekzter
 ms.date: 10/31/2022
 monikerRange: 'azure-devops'
 ---
@@ -33,7 +33,7 @@ You'll need to follow a different process to create a service connection for Azu
 
 #### [Azure Container Registry](#tab/azure)
 
-With the Azure Container Registry option, the subscription (associated with the Azure Active Directory identity of the user signed into Azure DevOps) and container registry within the subscription are used to create the service connection. 
+With the Azure Container Registry option, the subscription (associated with the Microsoft Entra identity of the user signed into Azure DevOps) and container registry within the subscription are used to create the service connection. 
 
 When you create a new pipeline for a repository that contains a Dockerfile, Azure Pipelines will detect Dockerfile in the repository. To start this process, create a new pipeline and select the repository with your Dockerfile. 
 

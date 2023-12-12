@@ -7,7 +7,7 @@ ms.date: 06/07/2023
 ---
 
 
-<a id="customize-work-tracking" />
+<a id="customize-work-tracking"></a>
 
 ::: moniker range="azure-devops"
 

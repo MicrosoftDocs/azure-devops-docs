@@ -3,7 +3,7 @@ title: About pipeline resources
 ms.custom: seodec18, contperf-fy21q4, pipelinesresourcesrefresh
 description: What are resources?
 ms.topic: conceptual
-ms.date: 07/27/2022
+ms.date: 11/06/2023
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -34,7 +34,7 @@ How a resource gets used in a pipeline depends on the type of pipeline and type 
 
 For YAML pipelines:
 
-* Service connections and secure files are directly used as inputs to tasks and don't need to be pre-declared.
+* Service connections and secure files are directly used as inputs to tasks and don't need to be predeclared.
 * Variable groups use the `group` syntax.
 * Pipelines and repositories use the `resources` syntax.
 

@@ -32,7 +32,7 @@ For information about agents and pipelines, see:
 
 * [Parallel jobs in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
 * [Parallel jobs in Azure Pipelines](../../licensing/concurrent-jobs.md).
-* [Pricing for Azure Pipelines features](https://visualstudio.microsoft.com/team-services/pricing/)
+* [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
 <a name="runscript"></a>
 
@@ -119,6 +119,51 @@ In a single template, you can deploy multiple services along with their dependen
 For a Windows VM, create an ARM template and add a resources element under the
 `Microsoft.Compute/virtualMachine` resource as shown here:
 
+:::moniker range=">= azure-devops-2022"
+
+```ARMTemplate
+"resources": [
+  {
+    "name": "[concat(parameters('vmNamePrefix'),copyIndex(),'/TeamServicesAgent')]",
+    "type": "Microsoft.Compute/virtualMachines/extensions",
+    "location": "[parameters('location')]",
+    "apiVersion": "2015-06-15",
+    "dependsOn": [
+        "[resourceId('Microsoft.Compute/virtualMachines/',
+                      concat(parameters('vmNamePrefix'),copyindex()))]"
+    ],
+    "properties": {
+      "publisher": "Microsoft.VisualStudio.Services",
+      "type": "TeamServicesAgent",
+      "typeHandlerVersion": "1.0",
+      "autoUpgradeMinorVersion": true,
+      "settings": {
+        "VSTSAccountName": "[parameters('VSTSAccountName')]",
+        "TeamProject": "[parameters('TeamProject')]",
+        "DeploymentGroup": "[parameters('DeploymentGroup')]",
+        "AgentName": "[parameters('AgentName')]",
+        "AgentMajorVersion": "auto|2|3",
+        "Tags": "[parameters('Tags')]"
+      },
+      "protectedSettings": {
+      "PATToken": "[parameters('PATToken')]"
+     }
+   }
+  }
+]
+```
+
+:::moniker-end
+
+:::moniker range="= azure-devops-2022"
+
+> [!NOTE]
+> In Azure DevOps Server 2022, the allowable values for `AgentMajorVersion` are `auto|N`. In Azure DevOps Server 2022.1 and higher, the allowable values for `AgentMajorVersion` are `auto|2|3`.
+
+:::moniker-end
+
+:::moniker range="< azure-devops-2022"
+
 ```ARMTemplate
 "resources": [
   {
@@ -150,6 +195,10 @@ For a Windows VM, create an ARM template and add a resources element under the
   }
 ]
 ```
+
+:::moniker-end
+
+
 
 where:
 

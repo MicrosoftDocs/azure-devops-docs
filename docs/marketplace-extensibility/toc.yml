@@ -124,13 +124,13 @@
       href: ../extend/publish/integration.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Make listing public and Top Publisher program
       displayName: Marketplace, extension, requirements, qualifications
-      href: ../extend/publish/publicize.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      href: ../extend/publish/overview.md#top-publisher?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Publish via command line
       displayName: CLI, Marketplace, share
       href: ../extend/publish/command-line.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Respond to Marketplace reviews
       displayName: owner, creator, contributor, reply, appeal
-      href: ../extend/publish/manage-ratings-reviews.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      href: ../extend/publish/overview.md#Respond-to-Marketplace-extension-reviews?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Reference
     items:
     - name: Manifest reference
@@ -269,8 +269,8 @@
     href: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Reference
   items:
-  - name: REST API reference overview
-    href: ../integrate/rest-api-overview.md
+  - name: REST API overview
+    href: /rest/api/azure/devops/?view=azure-devops-rest-7.2&preserve-view=true
   - name: Rate limits
     href: ../integrate/concepts/rate-limits.md
   - name: Deprecation of WIT & Test client OM
