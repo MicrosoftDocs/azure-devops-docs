@@ -21,6 +21,8 @@ Renaming a project in Azure DevOps updates the project name in version control p
 
 > [!WARNING]
 > GitHub Copilot: Upon renaming a project, Azure DevOps notifies all project members via email if the user count is less than 1,000. For projects with more than 1,000 users, only Project Collection Administrators receive these notifications.
+>
+>Azure Resource Manager service connections with workload identity federation: Renaming a project will break workload identity federation subjects. 
 
 ## Prerequisites
 
