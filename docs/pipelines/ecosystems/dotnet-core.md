@@ -192,7 +192,9 @@ trigger:
 - main
 
 pool:
-  vmImage: 'windows-latest'steps:
+  vmImage: 'windows-latest'
+
+steps:
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
