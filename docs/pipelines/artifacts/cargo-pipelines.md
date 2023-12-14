@@ -108,7 +108,7 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
     :::image type="content" source="media/cargo-pat-variable.png" alt-text="A screenshot showing how to create the cargo token variable in variable groups.":::
 
-## Publish Crate to your feed
+## Publish crates to your feed
 
 # [Classic](#tab/classic)
 
@@ -122,7 +122,7 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
     cargo publish --token $env:MAPPED_VAR --allow-dirty
     ```
 
-:::image type="content" source="media/publish-crate-cl-pipeline.png" alt-text="A screenshot showing how to publish crates to and Azure Artifacts feed using a class pipeline.":::
+:::image type="content" source="media/publish-crate-cl-pipeline.png" alt-text="A screenshot showing how to publish crates to and Azure Artifacts feed using a classic pipeline.":::
 
 # [YAML](#tab/yaml)
 
@@ -135,3 +135,56 @@ To use a secret variable in your YAML pipeline, you must explicitly map it. In t
   env:
     MAPPED_VAR: $(CARGO_REGISTRIES_CARGOINTERNALFEED_TOKEN)    ## Replace the placeholder with your feed name in all capitals $(CARGO_REGISTRIES_<FEED_NAME>_TOKEN) variable
 ```
+
+## Example
+
+In this example, we will install rustup on the agent, set up the PATH environment variable, build our project, authenticate with CargoAuthenticate, and finally publish our crate to our Azure Artifacts feed:
+
+```yaml
+trigger:
+- main
+
+variables: 
+- group: 'my-variable-group'
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- powershell: |
+   Invoke-WebRequest -Uri https://sh.rustup.rs -OutFile rustup-init.sh
+   bash .\rustup-init.sh -y
+   $env:PATH += ";$env:USERPROFILE\.cargo\bin"
+   Write-Host "##vso[task.setvariable variable=PATH]$env:PATH"
+  displayName: Install
+
+- powershell: |
+   rustup default nightly
+  displayName: Toolchain
+
+- powershell: |
+   cargo build --all
+   
+  displayName: Build
+
+- task: CargoAuthenticate@0
+  displayName: 'cargo Authenticate'
+  inputs:
+    configFile: '.cargo/config.toml'
+
+- powershell: |
+   cargo publish --token $env:MAPPED_VAR --allow-dirty
+  displayName: Publish
+  env:
+    MAPPED_VAR: $(CARGO_REGISTRIES_CARGOINTERNALFEED_TOKEN)
+```
+
+After your pipeline run is completed, your crate should be available in your feed, as shown below:
+
+:::image type="content" source="media/published-crate-to-feed.png" alt-text="A screenshot showing the hello-world-cargo crate published to the feed.":::
+
+## Related articles
+
+- [Delete/Yank Cargo packages](../../artifacts/how-to/delete-and-recover-packages.md?tabs=cargo)
+- [Promote a package to a view](../../artifacts/feeds/views.md)
+- [Feed permissions](../../artifacts/feeds/feed-permissions.md)
