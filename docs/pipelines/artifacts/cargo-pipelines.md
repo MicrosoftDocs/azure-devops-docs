@@ -51,48 +51,48 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
     - Project-scoped feed:
     
-    ```
-    [registries]
-    <FEED_NAME> = { index = "sparse+https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/Cargo/index/" }
-    
-    [source.crates-io]
-    replace-with = "<FEED_NAME>"
-    ```
+        ```
+        [registries]
+        <FEED_NAME> = { index = "sparse+https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/Cargo/index/" }
+        
+        [source.crates-io]
+        replace-with = "<FEED_NAME>"
+        ```
 
     - Organization-scoped feed:
     
-    ```
-    [registries]
-    <FEED_NAME> = { index = "sparse+https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/Cargo/index/" }
-    
-    [source.crates-io]
-    replace-with = "<FEED_NAME>"
-    ```
+        ```
+        [registries]
+        <FEED_NAME> = { index = "sparse+https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/Cargo/index/" }
+        
+        [source.crates-io]
+        replace-with = "<FEED_NAME>"
+        ```
 
 1. Use the [CargoAuthenticate](/azure/devops/pipelines/tasks/reference/cargo-authenticate-v0) task to authenticate from your pipeline:
 
-# [Classic](#tab/classic)
-
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Pipelines**, select your pipeline definition, and then select **Edit**.
-
-1. Select the `+` sign to add a new task. Search for the **Cargo Authenticate** task, and then select **Add** to add it to your pipeline.
-
-1. Select the ellipsis icon to open a new window displaying your repository contents, and then choose your *config.toml* file.
-
-    :::image type="content" source="media/cargo-authenticate-classic.png" alt-text="A screenshot showing the Cargo authenticate task in Azure Pipelines.":::
-
-# [YAML](#tab/yaml)
-
-```yaml
-- task: CargoAuthenticate@0
-  displayName: 'Cargo Authenticate'
-  inputs:
-    configFile: 'hello-rust/.cargo/config.toml'    ## Path to the config.toml file that specifies the registries you want to work with. Select the file, not the folder e.g. "/.cargo/config.toml"
-```
-
-* * *
+    # [Classic](#tab/classic)
+    
+    1. Sign in to your Azure DevOps organization, and then navigate to your project.
+    
+    1. Select **Pipelines**, select your pipeline definition, and then select **Edit**.
+    
+    1. Select the `+` sign to add a new task. Search for the **Cargo Authenticate** task, and then select **Add** to add it to your pipeline.
+    
+    1. Select the ellipsis icon to open a new window displaying your repository contents, and then choose your *config.toml* file.
+    
+        :::image type="content" source="media/cargo-authenticate-classic.png" alt-text="A screenshot showing the Cargo authenticate task in Azure Pipelines.":::
+    
+    # [YAML](#tab/yaml)
+    
+    ```yaml
+    - task: CargoAuthenticate@0
+      displayName: 'Cargo Authenticate'
+      inputs:
+        configFile: 'hello-rust/.cargo/config.toml'    ## Path to the config.toml file that specifies the registries you want to work with. Select the file, not the folder e.g. "/.cargo/config.toml"
+    ```
+    
+    * * *
 
 ## Create a publish token
 
@@ -133,8 +133,10 @@ To use a secret variable in your YAML pipeline, you must explicitly map it. In t
    cargo publish --token $env:MAPPED_VAR --allow-dirty
   displayName: Publish artifact
   env:
-    MAPPED_VAR: $(CARGO_REGISTRIES_CARGOINTERNALFEED_TOKEN)    ## Replace the placeholder with your feed name in all capitals $(CARGO_REGISTRIES_<FEED_NAME>_TOKEN) variable
+    MAPPED_VAR: $(CARGO_REGISTRIES_CARGOINTERNALFEED_TOKEN)    ## Replace the placeholder with your feed name in all capitalized letters $(CARGO_REGISTRIES_<FEED_NAME>_TOKEN) variable
 ```
+
+* * *
 
 ## Example
 
