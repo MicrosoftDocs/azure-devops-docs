@@ -40,10 +40,10 @@ Learn more about the Azure services that support continuous integration (CI) and
 -  [Deploy an app in Azure Government with Azure Pipelines](/azure/azure-government/connect-with-azure-pipelines)
 
 **Azure IoT Edge**
-[Continuous integration and continuous deployment to Azure IoT Edge devices](/azure/iot-edge/how-to-continuous-integration-continuous-deployment)
+- [Continuous integration and continuous deployment to Azure IoT Edge devices](/azure/iot-edge/how-to-continuous-integration-continuous-deployment)
 
 **Azure Kubernetes Service**
-[Build and deploy to Azure Kubernetes Service](ecosystems/kubernetes/aks-template.md)
+- [Build and deploy to Azure Kubernetes Service](ecosystems/kubernetes/aks-template.md)
 
 **Azure Monitor**
 - [Define approvals and checks, Query Azure Monitor Alerts](process/approvals.md#query-azure-monitor-alerts)
@@ -55,7 +55,7 @@ Learn more about the Azure services that support continuous integration (CI) and
 - [Tutorial: Deploy an application with CI/CD to a Service Fabric cluster](/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts)
 
 **Azure Static Web Apps**
-[Tutorial: Publish Azure Static Web Apps with Azure DevOps](/azure/static-web-apps/publish-devops)
+- [Tutorial: Publish Azure Static Web Apps with Azure DevOps](/azure/static-web-apps/publish-devops)
 
 **Azure SQL Database**
 - [Deploy to Azure SQL Database](targets/azure-sqldb.md)
