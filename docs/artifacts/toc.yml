@@ -141,6 +141,9 @@
     - name: Cargo quickstart
       href: get-started-cargo.md
       displayName: cargo
+    - name: Publish Cargo packages to a feed (Classic/YAML)
+      href: ../pipelines/artifacts/cargo-pipelines.md?toc=/azure/devops/artifacts/toc.json
+      displayName: cargo, publish, crate, yaml, classic
 - name: Feeds, views, and upstream sources
   items:
   - name: Feeds
