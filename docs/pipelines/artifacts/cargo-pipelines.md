@@ -1,7 +1,7 @@
 ---
 title: Publish Cargo packages with Azure Pipelines
 description: How to publish Cargo packages to an Azure Artifacts feed using Azure Pipelines
-ms.service: azure-devops-artifacts
+ms.subservice: azure-devops-pipelines-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.topic: quickstart
