@@ -4,14 +4,14 @@ description: Quickly start hosting python packages with Azure Artifacts
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.date: 01/19/2023
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2019'
 ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 "recommendations": "true"
 ---
 
 # Get started with Python packages in Azure Artifacts
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-azure-devops-2019](../includes/version-gt-eq-2019.md)]
 
 This guide will walk you through using Azure Artifacts to publish and consume Python packages to and from your feed.
 

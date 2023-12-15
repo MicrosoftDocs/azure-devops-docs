@@ -5,13 +5,13 @@ description: How to publish Python packages to an Azure Artifacts feed using Azu
 services: vsts
 ms.topic: conceptual
 ms.date: 11/07/2023
-monikerRange: azure-devops
+monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
 # Publish Python packages with Azure Pipelines
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-azure-devops-2019](../includes/version-gt-eq-2019.md)]
 
 Using Azure Pipelines, developers can publish Python packages to Azure Artifacts feeds, public registries, or store them as pipeline artifacts. This article will guide you through how to: 
 

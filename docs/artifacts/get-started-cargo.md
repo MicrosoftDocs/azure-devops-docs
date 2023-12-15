@@ -4,11 +4,13 @@ description: How to use Azure Artifacts to publish and download Cargo packages
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.date: 07/11/2023
-monikerRange: '<= azure-devops'
+monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
 
 # Get started with Cargo packages in Azure Artifacts
+
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 Using Azure Artifacts, you can publish and download Cargo packages to feeds and public registries. This article will guide you through setting up your project and publishing your Cargo packages to your Azure Artifacts feed.
 
