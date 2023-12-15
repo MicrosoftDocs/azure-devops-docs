@@ -68,6 +68,7 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
         [source.crates-io]
         replace-with = "<FEED_NAME>"
         ```
+1. Create a [Personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes to authenticate with your feed.
 
 1. Use the [CargoAuthenticate](/azure/devops/pipelines/tasks/reference/cargo-authenticate-v0) task to authenticate from your pipeline:
 
@@ -89,24 +90,10 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
     - task: CargoAuthenticate@0
       displayName: 'Cargo Authenticate'
       inputs:
-        configFile: 'hello-rust/.cargo/config.toml'    ## Path to the config.toml file that specifies the registries you want to work with. Select the file, not the folder e.g. "/.cargo/config.toml"
+        configFile: '.cargo/config.toml'    ## Path to the config.toml file that specifies the registries you want to work with. Select the file, not the folder e.g. "/.cargo/config.toml"
     ```
     
     * * *
-
-## Create a publish token
-
-1. Create a [Personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes to authenticate with Azure DevOps.
-
-1. From your Azure DevOps project, select **Pipelines** > **Library** and then select the **Variable groups** tab. Select **+ Variable group** to add a new variable group.
-
-1. Enter a name for your variable group and a **Description** (optional), and then select **Add** to add a new variable.
-
-1. Enter `CARGO_REGISTRIES_<FEED_NAME>_TOKEN` for your variable name, replacing the placeholder with your feed name in all capitals. Paste your personal access token in the value field, and then select the lock icon on the right to treat this as a secret variable.
-
-1. Select **Save** when you're done.
-
-    :::image type="content" source="media/cargo-pat-variable.png" alt-text="A screenshot showing how to create the cargo token variable in variable groups.":::
 
 ## Publish crates to your feed
 
@@ -116,24 +103,20 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
 1. Select the `+` sign on your agent job to add a new task. Find the **PowerShell** task through the search function, and then select **Add** to add it to your pipeline.
 
-1. Give your task a name, e.g., Publish, and then select Inline as the type. Paste your publish command inline. To use a secret variable, you must explicitly map it. Inside your PowerShell task, select Environment Variables, enter a name for your variable, and add the following in the value field: *$(CARGO_REGISTRIES_<FEED_NAME>_TOKEN)*. Remember to replace the feed name with your actual feed name in all caps. To reference it in your script, use the syntax: *$env:MAPPED_VARIABLE*.
+1. Give your task a name, e.g., Publish, and then select **Inline** as the type. Paste your publish command inline, replacing the placeholder with your feed name:
 
     ```PowerShell
-    cargo publish --token $env:MAPPED_VAR --allow-dirty
+    cargo publish --registry <FEED_NAME>
     ```
 
 :::image type="content" source="media/publish-crate-cl-pipeline.png" alt-text="A screenshot showing how to publish crates to and Azure Artifacts feed using a classic pipeline.":::
 
 # [YAML](#tab/yaml)
 
-To use a secret variable in your YAML pipeline, you must explicitly map it. In this example, we will map it to the *$(CARGO_REGISTRIES_<FEED_NAME>_TOKEN)* variable. Make sure to replace the placeholder with your feed name in all capital letters.
-
 ```yaml
 - powershell: |
-   cargo publish --token $env:MAPPED_VAR --allow-dirty
-  displayName: Publish artifact
-  env:
-    MAPPED_VAR: $(CARGO_REGISTRIES_CARGOINTERNALFEED_TOKEN)    ## Replace the placeholder with your feed name in all capitalized letters $(CARGO_REGISTRIES_<FEED_NAME>_TOKEN) variable
+   cargo publish --registry <FEED_NAME>        ## Replace the placeholder with your feed name
+  displayName: Publish
 ```
 
 * * *
