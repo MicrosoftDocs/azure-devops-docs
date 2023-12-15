@@ -142,6 +142,8 @@ To use a secret variable in your YAML pipeline, you must explicitly map it. In t
 
 In this example, we will install rustup on the agent, set up the PATH environment variable, build our project, authenticate with CargoAuthenticate, and finally publish our crate to our Azure Artifacts feed:
 
+# [Windows](#tab/windows)
+
 ```yaml
 trigger:
 - main
@@ -180,6 +182,47 @@ steps:
   env:
     MAPPED_VAR: $(CARGO_REGISTRIES_CARGOINTERNALFEED_TOKEN)
 ```
+
+# [Linux](#tab/linux)
+
+```yaml
+trigger:
+- main
+
+variables: 
+- group: 'my-variable-group'
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: |
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+   export PATH=$PATH:$HOME/.cargo/bin
+   echo "##vso[task.setvariable variable=PATH;]$PATH:$HOME/.cargo/bin"
+  displayName: Install
+
+- script: |
+   rustup default nightly
+  displayName: Toolchain
+
+- script: |
+   cargo build --all
+  displayName: Build
+
+- task: CargoAuthenticate@0
+  displayName: 'cargo Authenticate'
+  inputs:
+    configFile: '.cargo/config.toml'
+
+- powershell: |
+   cargo publish --token $env:MAPPED_VAR --allow-dirty
+  displayName: Publish
+  env:
+    MAPPED_VAR: $(CARGO_REGISTRIES_CARGOINTERNALFEED_TOKEN)
+```
+
+* * *
 
 After your pipeline run is completed, your crate should be available in your feed, as shown below:
 
