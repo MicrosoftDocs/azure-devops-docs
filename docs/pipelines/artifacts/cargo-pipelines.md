@@ -148,9 +148,6 @@ In this example, we will install rustup on the agent, set up the PATH environmen
 trigger:
 - main
 
-variables: 
-- group: 'my-variable-group'
-
 pool:
   vmImage: windows-latest
 
@@ -158,29 +155,21 @@ steps:
 - powershell: |
    Invoke-WebRequest -Uri https://sh.rustup.rs -OutFile rustup-init.sh
    bash .\rustup-init.sh -y
-   $env:PATH += ";$env:USERPROFILE\.cargo\bin"
-   Write-Host "##vso[task.setvariable variable=PATH]$env:PATH"
+   echo "##vso[task.prependpath]$env:USERPROFILE\.cargo\bin"
   displayName: Install
-
-- powershell: |
-   rustup default nightly
-  displayName: Toolchain
-
-- powershell: |
-   cargo build --all
-   
-  displayName: Build
 
 - task: CargoAuthenticate@0
   displayName: 'cargo Authenticate'
   inputs:
     configFile: '.cargo/config.toml'
 
+- script: |
+   cargo build --all
+  displayName: Build
+
 - powershell: |
-   cargo publish --token $env:MAPPED_VAR --allow-dirty
+   cargo publish --registry CargoInternalFeed
   displayName: Publish
-  env:
-    MAPPED_VAR: $(CARGO_REGISTRIES_CARGOINTERNALFEED_TOKEN)
 ```
 
 # [Linux](#tab/linux)
@@ -189,37 +178,27 @@ steps:
 trigger:
 - main
 
-variables: 
-- group: 'my-variable-group'
-
 pool:
   vmImage: ubuntu-latest
 
 steps:
 - script: |
    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-   export PATH=$PATH:$HOME/.cargo/bin
-   echo "##vso[task.setvariable variable=PATH;]$PATH:$HOME/.cargo/bin"
+   echo "##vso[task.prependpath]$HOME/.cargo/bin"
   displayName: Install
-
-- script: |
-   rustup default nightly
-  displayName: Toolchain
-
-- script: |
-   cargo build --all
-  displayName: Build
 
 - task: CargoAuthenticate@0
   displayName: 'cargo Authenticate'
   inputs:
     configFile: '.cargo/config.toml'
 
+- script: |
+   cargo build --all
+  displayName: Build
+
 - powershell: |
-   cargo publish --token $env:MAPPED_VAR --allow-dirty
+   cargo publish --registry CargoInternalFeed
   displayName: Publish
-  env:
-    MAPPED_VAR: $(CARGO_REGISTRIES_CARGOINTERNALFEED_TOKEN)
 ```
 
 * * *
