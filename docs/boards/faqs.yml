@@ -140,7 +140,7 @@ sections:
         answer: | 
           See [Bulk modify work items, Bulk modify rich-text fields](backlogs/bulk-modify-work-items.md#rich-text).
 
-  - name: Backlogs and Boards 
+  - name: Backlogs and boards 
 
     questions: 
       - question: What's the difference between a backlog and a board?  
