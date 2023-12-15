@@ -163,14 +163,6 @@ Authorization: Bearer {access_token}
 
 If a user's access token expires, you can use the refresh token that they acquired in the authorization flow to get a new access token. It's like the original process for exchanging the authorization code for an access and refresh token.
 
-## Regenerate client secret
-
-Every 5 years, your application secret will expire. You are expected to regenerate your app secret to continue to be able to create and use access tokens and refresh tokens. To do so, you can click the "Regenerate secret" button, which will pop up a dialog to confirm you want to complete this action.
-
-:::image type="content" source="media/secret-regeneration-modal.png" alt-text="Screenshot confirming secret regeneration.":::
-
-When you confirm that you want to regenerate, the previous app secret will no longer work and all previous tokens minted with this secret will also stop working. Make sure to time this client secret rotation well to minimize any customer downtime.
-
 #### URL - refresh token
 
 ```no-highlight
@@ -217,6 +209,16 @@ Replace the placeholder values in the previous sample request body:
 > A new refresh token gets issued for the user. Persist this new token and use it the next time you need to acquire a new access token for the user.
 
 <a name="scopes"></a>
+
+
+## Regenerate client secret
+
+Every 5 years, your application secret will expire. You are expected to regenerate your app secret to continue to be able to create and use access tokens and refresh tokens. To do so, you can click the "Regenerate secret" button, which will pop up a dialog to confirm you want to complete this action.
+
+:::image type="content" source="media/secret-regeneration-modal.png" alt-text="Screenshot confirming secret regeneration.":::
+
+When you confirm that you want to regenerate, the previous app secret will no longer work and all previous tokens minted with this secret will also stop working. Make sure to time this client secret rotation well to minimize any customer downtime.
+
 
 ### Samples
 
