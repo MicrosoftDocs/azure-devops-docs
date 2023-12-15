@@ -625,10 +625,7 @@ jobs:
 
 ### Use outputs in a different stage
 
-To use the output from a different stage, you must use the syntax depending on whether you're at the stage or job level:
-
- - At the stage level, the format for referencing variables from a different stage is `dependencies.STAGE.outputs['JOB.TASK.VARIABLE']`. You can use these variables in conditions. 
- - At the job level, the format for referencing variables from a different stage is `stageDependencies.STAGE.JOB.outputs['TASK.VARIABLE']`
+To use the output from a different stage, the format for referencing variables is `stageDependencies.STAGE.JOB.outputs['TASK.VARIABLE']`. At the stage level, but not the job level, you can use these variables in conditions. 
  
 Output variables are only available in the next downstream stage. If multiple stages consume the same output variable, use the `dependsOn` condition. 
 
