@@ -496,7 +496,7 @@ variables:
   id: $[ resources.repositories.common.id ]
   type: $[ resources.repositories.common.type ]
   url: $[ resources.repositories.common.url ]
-  url: $[ resources.repositories.common.version ]
+  version: $[ resources.repositories.common.version ]
 
 steps:
 - bash: |
