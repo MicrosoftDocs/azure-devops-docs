@@ -39,6 +39,8 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
 1. Select **Create** when you're done.
 
+    :::image type="content" source="media/cargo-private-feed.png" alt-text="A screenshot showing how to create a cargo feed for internal packages.":::
+
 ## Authenticate with Azure Artifacts
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
@@ -82,7 +84,7 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
     
     1. Select the ellipsis icon to open a new window displaying your repository contents, and then choose your *config.toml* file.
     
-        :::image type="content" source="media/cargo-authenticate-classic.png" alt-text="A screenshot showing the Cargo authenticate task in Azure Pipelines.":::
+        :::image type="content" source="media/cargo-authenticate-classic.png" alt-text="A screenshot showing the Cargo authenticate task in a classic pipeline.":::
     
     # [YAML](#tab/yaml)
     
