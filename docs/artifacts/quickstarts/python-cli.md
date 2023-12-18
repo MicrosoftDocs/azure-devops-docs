@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Publish and consume Python packages using the command line
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
 Azure Artifacts enables developers publishing and consuming packages from Azure Artifacts feeds and public registries like pypi.org. By following this quickstart guide, you can learn how to use the command line to publish and consume Python packages.
 
