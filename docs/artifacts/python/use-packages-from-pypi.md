@@ -33,7 +33,15 @@ In this article, you'll learn how to:
 
 If you haven't created a feed yet, follow the steps below to create a new one. Make sure to check the box for *upstream sources* to enable upstream sources. If you already have a feed, skip to the [next step](#add-pypi-upstream) to add PyPI as an upstream source.
 
-[!INCLUDE [](../includes/create-feed.md)]
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
+
+1. Enter a descriptive **Name** for your feed and define its **Visibility** (indicating who can view packages within the feed). Specify the **Scope** of your feed, and then check the **Upstream sources** checkbox to include packages from public registries.
+
+1. Select **Create** when you're done.
+
+    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
 
 ## Add PyPI upstream
 
