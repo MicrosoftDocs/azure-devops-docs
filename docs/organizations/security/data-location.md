@@ -7,7 +7,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 03/28/2023
+ms.date: 12/15/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -25,10 +25,10 @@ Azure DevOps data is available in the following geographical locations:
 - Brazil
 - Canada
 - Asia Pacific
-- North Europe (EU)
+- Europe (EU)
 - India
-- United Kingdom
-- United States
+- United Kingdom (UK)
+- United States (US)
 
 By default, your organization uses the closest location. However, you can choose a different location when you create your organization. If you change your mind later, you can [migrate your organization to a different location](../accounts/change-organization-location.md).
 
@@ -58,7 +58,7 @@ Azure DevOps stores token data, such as personal access tokens and Secure Shell 
 
 ## Allowlist data for tenant policies
 
-We recommend using groups with your tenant policy allowlists. If you use a named user, be aware that a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
+We recommend using groups with your tenant policy allowlists. If you use a named user, be aware that a reference to the named user's identity resides in the US, EU, and Southeast Asia (Singapore).
 
 ## Transferring your data
 
