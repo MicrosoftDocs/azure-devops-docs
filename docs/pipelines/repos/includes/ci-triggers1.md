@@ -7,7 +7,7 @@ author: vijayma
 ms.date: 12/18/2023
 ---
 
-::: moniker range=">= azure-devops-2019 <= azure-devops-2022"
+::: moniker range=">= azure-devops-2019"
 
 YAML pipelines are configured by default with a CI trigger on all branches.
 
