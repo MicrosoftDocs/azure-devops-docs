@@ -78,3 +78,36 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
     [source.crates-io]
     replace-with = "<FEED_NAME>"
     ```
+
+## Configure a credential provider
+
+To use Cargo with Azure Artifacts, you need to set up a credential provider. The provided settings will configure a default credential helper for the current user:
+
+#### [Windows](#tab/Windows/)
+
+Paste the following snippet in your in your %USERPROFILE%\.cargo\config.toml:
+
+```
+[registry]
+global-credential-providers = ["cargo:token", "cargo:wincred"]
+```
+
+#### [Linux](#tab/Linux/)
+
+Paste the following snippet in your in your ~/.cargo/config.toml:
+
+```
+[registry]
+global-credential-providers = ["cargo:token", "cargo:libsecret"]
+```
+
+#### [MacOS](#tab/MacOS/)
+
+Paste the following snippet in your in your ~/.cargo/config.toml:
+
+```
+[registry]
+global-credential-providers = ["cargo:token", "cargo:macos-keychain"]
+```
+
+* * *
