@@ -1,6 +1,6 @@
 ---
 title: Enhance Project Security with npm audit
-description: Use npm audit to scan for security vulnerabilities
+description: Use npm audit to scan and fix package vulnerabilities
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 09/18/2023
@@ -8,46 +8,19 @@ monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
 
-# Use npm audit to detect package vulnerabilities
+# Use npm audit to detect and fix package vulnerabilities
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-The npm audit command conducts a comprehensive scan of your project to detect potential security vulnerabilities. It then generates a detailed report highlighting any identified issues. Performing security audits is a crucial step in identifying and addressing vulnerabilities within the project's dependencies. Addressing these vulnerabilities can help prevent issues such as data loss, service disruptions, and unauthorized access to sensitive information.
-
-Azure Pipelines does not support npm audit, if you attempt to use the regular npm audit command in your pipeline, it will fail with the following message: *Unexpected end of JSON input while parsing...*. As a workaround, you can run npm audit with the registry argument `--registry=https://registry.npmjs.org/`. This routes it straight to the public registry.
+The *npm audit* command performs a thorough scan of your project, identifying potential security vulnerabilities and generating a detailed report that highlights any issues found. Conducting security audits is a vital step in recognizing and resolving vulnerabilities within the project's dependencies. The *npm audit fix* command automatically addresses the detected vulnerabilities, updating insecure package versions to the latest secure releases.
+Addressing these vulnerabilities is crucial for preventing potential problems like data loss, service disruptions, and unauthorized access to sensitive information.
 
 >[!WARNING]
-> Running npm audit will send the names of all packages listed in your *package.json* to the public registry.
+> Executing *npm audit* will transmit the names of all packages specified in your *package.json* to the public registry.
 
 ## Run npm audit from your pipeline
 
-# [YAML](#tab/yaml)
-
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline.
-
-1. Add the following task to your yaml pipeline to run npm audit and scan for security vulnerabilities.
-
-    ```yaml
-    steps:
-    - task: Npm@1
-      displayName: 'npm audit'
-      inputs:
-        command: custom
-        customCommand: 'audit --registry=https://registry.npmjs.org/'
-    ```
-
-1. You can also simultaneously scan and upgrade to non-vulnerable package versions, as follows:
-
-    ```yaml
-    steps:
-    - task: Npm@1
-      displayName: 'npm audit & fix'
-      inputs:
-        command: custom
-        customCommand: 'audit fix --registry=https://registry.npmjs.org/ --package-lock-only'
-    ```
+Azure Pipelines does not currently offer support for npm audit. If you try to use the standard *npm audit* command in your pipeline, it will result in failure and display the message: *Unexpected end of JSON input while parsing....* You must execute the *npm audit* with the --registry argument, and pass your feed's source URL.
 
 # [Classic](#tab/classic)
 
@@ -55,29 +28,56 @@ Azure Pipelines does not support npm audit, if you attempt to use the regular np
 
 1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline.
 
-1. From your pipeline definition, select the `+` sign to add a task to your agent job.
+1. From your pipeline definition, select the `+` sign to add a new task.
 
-1. Search for the **npm** task, and then select **Add** to add it to your agent job.
+1. Search for the **npm** task, and then select **Add** to add it to your pipeline.
 
-1. Provide a **Display name** for your task, and select **custom** from the **Command** dropdown menu.
+1. Enter a **Display name** for your task and choose **Custom** from the **Command** dropdown menu.
 
 1. Paste your custom command into the **Command and arguments** text box:
 
-    1. Use the following command to solely scan for security vulnerabilities:
+    1. Use the following command exclusively for scanning package vulnerabilities:
     
        ```Command
-       audit --registry=https://registry.npmjs.org/
+       audit --registry=<FEED_SOURCE_URL>
        ```
 
-    1. If you wish to both scan and attempt to upgrade to non-vulnerable package versions, use the following command:
+    1. To both scan and attempt to upgrade to non-vulnerable package versions, use the following command::
     
     ```Command
-    audit fix --registry=https://registry.npmjs.org/ --package-lock-only
+    audit fix --registry=<FEED_SOURCE_URL> --package-lock-only
     ```
 
-:::image type="content" source="./media/npm-audit-classic-pipeline.png" alt-text="A screenshot showing the npm audit task in a classic pipeline.":::
+    :::image type="content" source="./media/npm-audit-classic-pipeline.png" alt-text="A screenshot showing the npm audit task in a classic pipeline.":::
 
----
+# [YAML](#tab/yaml)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline.
+
+1. Add the following task to your yaml pipeline to scan for package vulnerabilities:
+
+    ```yaml
+    steps:
+    - task: Npm@1
+      displayName: 'npm audit'
+      inputs:
+        command: custom
+        customCommand: 'audit --registry=<FEED_SOURCE_URL>'
+    ```
+
+1. You can also scan and simultaneously upgrade to non-vulnerable package versions as follows
+    ```yaml
+    steps:
+    - task: Npm@1
+      displayName: 'npm audit & fix'
+      inputs:
+        command: custom
+        customCommand: 'audit fix --registry=<FEED_SOURCE_URL> --package-lock-only'
+    ```
+
+* * *
 
 ## Run npm audit on your development environment 
 
