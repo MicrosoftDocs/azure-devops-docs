@@ -144,7 +144,7 @@ global-credential-providers = ["cargo:token", "cargo:macos-keychain"]
 
 Now that we have set up our project, configured a credential provider, and logged into our feed, we can begin consuming packages from upstream. Azure Artifacts saves a copy of any package you install from upstream to your feed.
 
-In this example, we'll consume the `serde` crate, a serialization/deserialization framework:
+In this example, we consume the `serde` crate, a serialization/deserialization framework:
 
 1. Run the following command in your project directory to add the crate to your *cargo.toml*:
 
