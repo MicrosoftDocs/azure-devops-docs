@@ -111,3 +111,30 @@ global-credential-providers = ["cargo:token", "cargo:macos-keychain"]
 ```
 
 * * *
+
+## Log in to your registry
+
+1. Create a [Personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes to authenticate with your feed.
+
+1. Run the following command to log in to your registry. Replace the placeholder with your feed's name, and paste the personal access token you created in the previous step when prompted:
+
+    #### [PowerShell ](#tab/PowerShell/)
+    
+    ```
+    "Basic " + [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("PAT:" + (Read-Host -MaskInput "Enter PAT"))) | cargo login --registry <FEED_NAME>
+    ```
+    
+    #### [Bash ](#tab/Bash/)
+    
+    ```
+    read -p "Enter PAT: " PAT; echo Basic $(echo -n PAT:$PAT | base64) | cargo login --registry <FEED_NAME>
+    ```
+    
+    #### [Azure CLI](#tab/AzureCLI/)
+
+    ```
+    az login
+    az account get-access-token --query "join(' ', ['Bearer', accessToken])" --output tsv | cargo login --registry <FEED_NAME>
+    ```
+    
+    * * *
