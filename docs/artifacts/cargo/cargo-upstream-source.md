@@ -159,7 +159,7 @@ In this example, we will consume the `serde` crate, a serialization/deserializat
 
 Once your package is installed, a copy will be saved to your feed. Navigate to your feed to verify its presence. Your package should be available in your feed, as shown below:
 
-    :::image type="content" source="media/crate-from-upstream.png" alt-text="A screenshot showing the serde crate consumed from upstream.":::
+:::image type="content" source="media/crate-from-upstream.png" alt-text="A screenshot showing the *serde* crate consumed from upstream.":::
 
 ## Related articles
 
