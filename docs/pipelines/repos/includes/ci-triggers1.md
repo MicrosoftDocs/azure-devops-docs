@@ -11,15 +11,7 @@ ms.date: 12/18/2023
 
 YAML pipelines are configured by default with a CI trigger on all branches.
 
-::: moniker-end
-
-::: moniker range="> azure-devops-2022"
-
-YAML pipelines are configured by default with a CI trigger on all branches, unless the [Disable implied YAML CI trigger](/azure/devops/release-notes/2023/sprint-227-update#prevent-unintended-pipeline-runs) setting is enabled. The **Disable implied YAML CI trigger** setting can be configured at the organization level or at the project level. When the **Disable implied YAML CI trigger** setting is enabled, CI triggers for YAML pipelines are not enabled if the YAML pipeline doesn't have a `trigger` section.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+YAML pipelines are configured by default with a CI trigger on all branches, unless the [Disable implied YAML CI trigger](/azure/devops/release-notes/2023/sprint-227-update#prevent-unintended-pipeline-runs) setting, introduced in [Azure DevOps sprint 227](/azure/devops/release-notes/2023/sprint-227-update), is enabled. The **Disable implied YAML CI trigger** setting can be configured at the organization level or at the project level. When the **Disable implied YAML CI trigger** setting is enabled, CI triggers for YAML pipelines are not enabled if the YAML pipeline doesn't have a `trigger` section.
 
 ### Branches
 
