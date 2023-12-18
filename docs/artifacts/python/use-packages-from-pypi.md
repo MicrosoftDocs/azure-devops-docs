@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Use packages from Python package index (PyPI)
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
 Using Azure Artifacts, developers can publish and consume packages from Azure Artifacts feeds and external registries such as pypi.org. This article will guide you through setting up your project and using the command line to efficiently consume Python packages from PyPI. 
 

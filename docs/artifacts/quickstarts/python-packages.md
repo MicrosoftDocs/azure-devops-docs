@@ -11,7 +11,7 @@ ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 
 # Get started with Python packages in Azure Artifacts
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
 This guide will walk you through using Azure Artifacts to publish and consume Python packages to and from your feed.
 

@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Publish Python packages with Azure Pipelines
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
 Using Azure Pipelines, developers can publish Python packages to Azure Artifacts feeds, public registries, or store them as pipeline artifacts. This article will guide you through how to: 
 
