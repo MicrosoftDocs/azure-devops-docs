@@ -472,6 +472,9 @@
   - name: Python
     displayName: python, package
     href: artifacts/pypi.md
+  - name: Cargo
+    displayName: cargo, crate
+    href: artifacts/cargo-pipelines.md
   - name: Universal Packages
     displayName: package, universal
     href: artifacts/universal-packages.md
