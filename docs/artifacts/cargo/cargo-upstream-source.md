@@ -138,3 +138,31 @@ global-credential-providers = ["cargo:token", "cargo:macos-keychain"]
     ```
     
     * * *
+
+## Save packages from Crates.io
+
+Now that we have set up our project, configured a credential provider, and logged into our feed, we can begin consuming packages from upstream. Azure Artifacts saves a copy of any package you install from upstream to your feed.
+
+In this example, we will consume the `serde` crate, a serialization/deserialization framework:
+
+1. Run the following command in your project directory to add the crate to your *cargo.toml*:
+
+    ```
+    cargo add serde
+    ``` 
+
+1. Run the following command to build your project and consume your crate:
+
+    ```
+    cargo build
+    ```
+
+Once your package is installed, a copy will be saved to your feed. Navigate to your feed to verify its presence. Your package should be available in your feed, as shown below:
+
+    :::image type="content" source="media/crate-from-upstream.png" alt-text="A screenshot showing the serde crate consumed from upstream.":::
+
+## Related articles
+
+- [Publish Cargo packages with Azure Pipelines](../../pipelines/artifacts/cargo-pipelines.md)
+- [Delete and recover packages](../how-to/delete-and-recover-packages.md)
+- [Configure permissions](../feeds/feed-permissions.md)
