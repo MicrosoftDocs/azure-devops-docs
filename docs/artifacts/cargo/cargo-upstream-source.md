@@ -139,6 +139,9 @@ global-credential-providers = ["cargo:token", "cargo:macos-keychain"]
 
 ## Save packages from Crates.io
 
+> [!NOTE]
+> To save packages from upstream sources, you need to have a **Collaborator** or higher role. See [Feed permissions](../feeds/feed-permissions.md) for more details.
+
 Now that we have set up our project, configured a credential provider, and logged into our feed, we can begin consuming packages from upstream. Azure Artifacts saves a copy of any package you install from upstream to your feed.
 
 In this example, we'll consume the `serde` crate, a serialization/deserialization framework:
