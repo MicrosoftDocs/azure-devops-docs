@@ -29,9 +29,7 @@ This article will guide you through how to:
 
 - An Azure DevOps project. [Create a project](../../organizations/projects/create-project.md#create-a-project) if you don't have one.
 
-- Download and install [rustup](https://rustup.rs/). 
-
-- Install the **nightly toolchain**: `rustup toolchain install nightly`.
+- Download and install [rustup](https://rustup.rs/).
 
 ## Create a feed
 
@@ -55,7 +53,7 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
 1. Select **Connect to feed**, and then select **Cargo** from the left navigation pane.
 
-1. If this is the first time using Cargo with Azure Artifacts, make sure you have installed [rustup](https://rustup.rs/) and the **nightly toolchain**: `rustup toolchain install nightly`.
+1. If this is the first time using Cargo with Azure Artifacts, make sure you have installed [rustup](https://rustup.rs/).
 
 1. Add the provided snippet in the **Project setup** section to your *.cargo/config.toml* file in your source repository:
 
@@ -85,7 +83,7 @@ To use Cargo with Azure Artifacts, you need to set up a credential provider. The
 
 #### [Windows](#tab/Windows/)
 
-Paste the following snippet in your in your %USERPROFILE%\.cargo\config.toml:
+Paste the following snippet in your %USERPROFILE%\.cargo\config.toml:
 
 ```
 [registry]
@@ -94,16 +92,16 @@ global-credential-providers = ["cargo:token", "cargo:wincred"]
 
 #### [Linux](#tab/Linux/)
 
-Paste the following snippet in your in your ~/.cargo/config.toml:
+Paste the following snippet in your ~/.cargo/config.toml:
 
 ```
 [registry]
 global-credential-providers = ["cargo:token", "cargo:libsecret"]
 ```
 
-#### [MacOS](#tab/MacOS/)
+#### [macOS](#tab/macOS/)
 
-Paste the following snippet in your in your ~/.cargo/config.toml:
+Paste the following snippet in your ~/.cargo/config.toml:
 
 ```
 [registry]
@@ -143,7 +141,7 @@ global-credential-providers = ["cargo:token", "cargo:macos-keychain"]
 
 Now that we have set up our project, configured a credential provider, and logged into our feed, we can begin consuming packages from upstream. Azure Artifacts saves a copy of any package you install from upstream to your feed.
 
-In this example, we will consume the `serde` crate, a serialization/deserialization framework:
+In this example, we'll consume the `serde` crate, a serialization/deserialization framework:
 
 1. Run the following command in your project directory to add the crate to your *cargo.toml*:
 
