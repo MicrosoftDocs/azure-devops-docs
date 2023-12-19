@@ -1,9 +1,9 @@
 ---
-title: Enhance Project Security with npm audit
+title: Enhance project security with npm audit
 description: Use npm audit to scan and fix package vulnerabilities
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 09/18/2023
+ms.date: 12/18/2023
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
@@ -79,36 +79,37 @@ Azure Pipelines does not currently offer support for npm audit. If you try to us
 
 * * *
 
-## Run npm audit on your development environment 
+## Run npm audit locally 
 
-To perform an npm audit locally on your development environment and optionally attempt to upgrade to non-vulnerable package versions, follow these steps:
+`npm audit` can be executed locally without needing to authenticate with your feed. This allows you to scan your project for vulnerabilities and receive a detailed report on the detected security issues and their severity.
 
-1. Open a command prompt window, and navigate to the root directory of your project where your *package.json* file is located.
+If you want to fix the detected vulnerabilities, you can run `npm audit fix`, but you must be authenticated with your feed in order to do so. This command will update insecure package versions to the latest secure releases available.
 
-1. Run the following command to generate the *package-lock.json* file. This command analyzes your *package.json* file, installs the required dependencies, and generates the *package-lock.json* file.
+When npm audit fix is executed, not only will it update the local project’s package.json and package-lock.json, but it will also synchronize these changes with the associated Azure Artifacts feed. The updated, secure versions of the packages will be reflected in your Azure Artifacts feed automatically.
 
-    ```Command
-    npm i --package-lock-only
-    ```
+When you run npm audit fix, it not only updates the local project's *package.json* and *package-lock.json* but also syncs these changes with the associated Azure Artifacts feed. The newly secured versions of the packages will be automatically available in your feed.
 
-1. Run the `npm audit` command to scan your project for security vulnerabilities and provide a report.
+This synchronization ensures that other projects sharing the same feed will also benefit from these updates. It helps maintain a consistent and secure set of package versions across all projects.
 
-    ```Command
-    npm audit --registry=https://registry.npmjs.org/
-    ```
-
-1. If you also want to attempt to upgrade to non-vulnerable package versions, use the following command instead:
+1. Run the following command in your project directory to perform an npm audit:
 
     ```Command
-    audit fix --registry=https://registry.npmjs.org/ --package-lock-only
+    npm audit
     ```
 
-Here's an example of the output you might see in your command prompt window after running the npm audit command:
+1. If you want to attempt to upgrade to non-vulnerable package versions, make sure you are [connected to your feed](./npmrc.md#project-setup) first, then run the following command in your project directory:
 
-:::image type="content" source="./media/npm-audit-report.png" alt-text="A screenshot of a local npm audit security report.":::
+    ```Command
+    npm audit fix
+    ```
+
+After running *npm audit fix*, make sure to conduct a thorough testing on your application to confirm that the updates didn't introduce any breaking changes. If a fix requires a major version update, it's recommended to review the package's release notes for any potential breaking changes. Please keep in mind that while a private package with public vulnerable dependencies will receive vulnerability alerts, it won't receive fixes through *npm audit fix*.
+
+> [!NOTE]
+> *npm audit* automatically runs with each execution of *npm install*, but it only works for public packages. 
 
 ## Related articles
 
-- [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md).
-- [Use Npm scopes in Azure Artifacts](./scopes.md).
-- [Delete and recover packages](../how-to/delete-and-recover-packages.md).
+- [Use packages from npmjs.com](./upstream-sources.md)
+- [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md)
+- [Use Npm scopes in Azure Artifacts](./scopes.md)
