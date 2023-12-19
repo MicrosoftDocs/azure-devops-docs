@@ -55,26 +55,26 @@ Azure Pipelines doesn't currently support *npm audit*. If you try using the regu
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline.
+1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify it.
 
 1. From your pipeline definition, select the `+` sign to add a new task.
 
 1. Search for the **npm** task, and then select **Add** to add it to your pipeline.
 
-1. Enter a **Display name** for your task and choose **Custom** from the **Command** dropdown menu.
+1. Enter a **Display name** for your task, and select **custom** from the **Command** dropdown menu.
 
 1. Paste your custom command into the **Command and arguments** text box:
 
-    1. Use the following command exclusively for scanning package vulnerabilities:
+    1. Use the following command to perform an npm audit and scan for package vulnerabilities. Replace the placeholder with your feed's source URL:
     
        ```Command
        audit --registry=<FEED_SOURCE_URL>
        ```
 
-    1. To both scan and attempt to upgrade to non-vulnerable package versions, use the following command::
+    1. If you want to attempt to upgrade to non-vulnerable package versions, use the following command. Replace the placeholder with your feed's source URL:
     
     ```Command
-    audit fix --registry=<FEED_SOURCE_URL> --package-lock-only
+    audit fix --registry=<FEED_SOURCE_URL>
     ```
 
     :::image type="content" source="./media/npm-audit-classic-pipeline.png" alt-text="A screenshot showing the npm audit task in a classic pipeline.":::
@@ -83,9 +83,9 @@ Azure Pipelines doesn't currently support *npm audit*. If you try using the regu
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify your pipeline.
+1. Select **Pipelines**, select your pipeline, and then select **Edit** to modify it.
 
-1. Add the following task to your yaml pipeline to scan for package vulnerabilities:
+1. Add the following task to your yaml pipeline to perform an npm audit and scan for package vulnerabilities:
 
     ```yaml
     steps:
@@ -96,14 +96,15 @@ Azure Pipelines doesn't currently support *npm audit*. If you try using the regu
         customCommand: 'audit --registry=<FEED_SOURCE_URL>'
     ```
 
-1. You can also scan and simultaneously upgrade to non-vulnerable package versions as follows
+1. If you want to upgrade to non-vulnerable package versions, add the following task to your yaml pipeline:
+
     ```yaml
     steps:
     - task: Npm@1
       displayName: 'npm audit & fix'
       inputs:
         command: custom
-        customCommand: 'audit fix --registry=<FEED_SOURCE_URL> --package-lock-only'
+        customCommand: 'audit fix --registry=<FEED_SOURCE_URL>'
     ```
 
 * * *
