@@ -27,7 +27,7 @@
   - name: Expedite work (swimlanes)
     href: expedite-work.md
   - name: Automate work item state transitions
-    href: automate-work-item-state-transitions.md
+    href: ../work-items/automate-work-item-state-transitions.md
   - name: Show bugs on backlogs & boards
     href: ../../organizations/settings/show-bugs-on-backlog.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
     displayname: nested, hierarchical
