@@ -21,7 +21,7 @@ Using Azure Artifacts, you can publish and download Cargo packages to feeds and 
 
 - An Azure DevOps organization and a project. Create an [organization](../organizations/accounts/create-organization.md) or a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Download and install [rustup](https://rustup.rs/). Make sure to install the **nightly toolchain** by running this command: `rustup toolchain install nightly`.
+- Download and install [rustup](https://rustup.rs/).
 
 ## Create a feed
 
@@ -49,18 +49,8 @@ If you already have an existing Azure Artifacts feed that can be used for Cargo 
 1. Follow the **Project setup** instructions on the **Connect to feed** page.
 
 > [!IMPORTANT]
-> Cargo support in Azure Artifacts is currently in preview and may require the [nightly toolchain](https://go.microsoft.com/fwlink/?linkid=2243883) with the `registry-auth` [unstable-feature](https://go.microsoft.com/fwlink/?linkid=2243884) enabled. To enable registry-auth, add the following to [.cargo/config.toml](https://go.microsoft.com/fwlink/?linkid=2234410).
->
-> ```
-> [unstable]
-> registry-auth = true
-> ```
->
-> To use the nightly toolchain, you can run the following:
->
-> ```
-> rustup default nightly
-> ```
+> Cargo support in Azure Artifacts requires rust version [1.74](https://rustup.rs/) or newer which includes support for the 'registry-auth' feature.
+> To update your rust version, run `rustup update`
 
 ## Publish packages
 
