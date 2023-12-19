@@ -18,6 +18,35 @@ Addressing these vulnerabilities is crucial for preventing potential problems li
 >[!WARNING]
 > Executing *npm audit* will transmit the names of all packages specified in your *package.json* to the public registry.
 
+## Run npm audit locally 
+
+`npm audit` can be executed locally without needing to authenticate with your feed. This allows you to scan your project for vulnerabilities and receive a detailed report on the detected security issues and their severity.
+
+If you want to fix the detected vulnerabilities, you can run `npm audit fix`, but you must be authenticated with your feed in order to do so. This command will update insecure package versions to the latest secure releases available.
+
+When npm audit fix is executed, not only will it update the local project’s package.json and package-lock.json, but it will also synchronize these changes with the associated Azure Artifacts feed. The updated, secure versions of the packages will be reflected in your Azure Artifacts feed automatically.
+
+When you run npm audit fix, it not only updates the local project's *package.json* and *package-lock.json* but also syncs these changes with the associated Azure Artifacts feed. The newly secured versions of the packages will be automatically available in your feed.
+
+This synchronization ensures that other projects sharing the same feed will also benefit from these updates. It helps maintain a consistent and secure set of package versions across all projects.
+
+1. Run the following command in your project directory to perform an npm audit:
+
+    ```Command
+    npm audit
+    ```
+
+1. If you want to attempt to upgrade to non-vulnerable package versions, make sure you are [connected to your feed](./npmrc.md#project-setup) first, then run the following command in your project directory:
+
+    ```Command
+    npm audit fix
+    ```
+
+After running *npm audit fix*, make sure to conduct a thorough testing on your application to confirm that the updates didn't introduce any breaking changes. If a fix requires a major version update, it's recommended to review the package's release notes for any potential breaking changes. Please keep in mind that while a private package with public vulnerable dependencies will receive vulnerability alerts, it won't receive fixes through *npm audit fix*.
+
+> [!NOTE]
+> *npm audit* automatically runs with each execution of *npm install*, but it only works for public packages. 
+
 ## Run npm audit from your pipeline
 
 Azure Pipelines does not currently offer support for npm audit. If you try to use the standard *npm audit* command in your pipeline, it will result in failure and display the message: *Unexpected end of JSON input while parsing....* You must execute the *npm audit* with the --registry argument, and pass your feed's source URL.
@@ -78,35 +107,6 @@ Azure Pipelines does not currently offer support for npm audit. If you try to us
     ```
 
 * * *
-
-## Run npm audit locally 
-
-`npm audit` can be executed locally without needing to authenticate with your feed. This allows you to scan your project for vulnerabilities and receive a detailed report on the detected security issues and their severity.
-
-If you want to fix the detected vulnerabilities, you can run `npm audit fix`, but you must be authenticated with your feed in order to do so. This command will update insecure package versions to the latest secure releases available.
-
-When npm audit fix is executed, not only will it update the local project’s package.json and package-lock.json, but it will also synchronize these changes with the associated Azure Artifacts feed. The updated, secure versions of the packages will be reflected in your Azure Artifacts feed automatically.
-
-When you run npm audit fix, it not only updates the local project's *package.json* and *package-lock.json* but also syncs these changes with the associated Azure Artifacts feed. The newly secured versions of the packages will be automatically available in your feed.
-
-This synchronization ensures that other projects sharing the same feed will also benefit from these updates. It helps maintain a consistent and secure set of package versions across all projects.
-
-1. Run the following command in your project directory to perform an npm audit:
-
-    ```Command
-    npm audit
-    ```
-
-1. If you want to attempt to upgrade to non-vulnerable package versions, make sure you are [connected to your feed](./npmrc.md#project-setup) first, then run the following command in your project directory:
-
-    ```Command
-    npm audit fix
-    ```
-
-After running *npm audit fix*, make sure to conduct a thorough testing on your application to confirm that the updates didn't introduce any breaking changes. If a fix requires a major version update, it's recommended to review the package's release notes for any potential breaking changes. Please keep in mind that while a private package with public vulnerable dependencies will receive vulnerability alerts, it won't receive fixes through *npm audit fix*.
-
-> [!NOTE]
-> *npm audit* automatically runs with each execution of *npm install*, but it only works for public packages. 
 
 ## Related articles
 
