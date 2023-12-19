@@ -361,4 +361,5 @@ The following settings can influence the type and number of work items that appe
 - [Create your backlog](create-your-backlog.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)
-- [Workflow states & state categories](../work-items/workflow-and-state-categories.md)  
+- [Workflow states & state categories](../work-items/workflow-and-state-categories.md) 
+- [Automate work item state transitions](../work-items/automate-work-item-state-transitions.md)
