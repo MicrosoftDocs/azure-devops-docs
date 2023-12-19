@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   monikerRange: '<= azure-devops'
   "recommendations": "true"
-  ms.date: 07/31/2023
+  ms.date: 01/05/2024
 
 
 title: Azure Boards FAQs  
@@ -18,7 +18,7 @@ title: Azure Boards FAQs
 summary: | 
   [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-  Find answers to frequently asked questions when using Azure Boards. For FAQs specific to queries or Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [Query FAQs](queries/query-faqs.yml) and [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.yml). 
+  Find answers to frequently asked questions about using Azure Boards. For FAQs specific to queries or Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [Query FAQs](queries/query-faqs.yml) and [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.yml). 
 
   You can view a list of features that are on our roadmap for Azure Boards from the [Features Timeline](/azure/devops/release-notes/features-timeline). To request a feature or up-vote a feature, go to our [Developer Community page](https://developercommunity.visualstudio.com/spaces/21/visual-studio-team-services.html?type=idea). 
 
@@ -49,10 +49,10 @@ sections:
           - [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json)
           - [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json) 
 
-      - question: Can caching impact rules applied to work items?  
+      - question: Can caching affect rules applied to work items?  
         answer: | 
 
-          **Yes**. Conditional rules based on user or group membership get cached for your web browser. If you find yourself restricted to update a work item, you might have encountered one of these rules. For more information about conditional rules, see [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).
+          **Yes**. Conditional rules based on user or group membership get cached for your web browser. If you find yourself restricted to update a work item, you probably encountered one of these rules. For more information about conditional rules, see [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).
           If your cache stores outdated rules, you can wait for the client cache to expire within three days, or you can clear the cache.    
           To clear the cache, run the following command in the browser command window and then refresh the browser: window.indexedDB.deleteDatabase("wit")
 
@@ -129,16 +129,38 @@ sections:
           The easiest way to accomplish the task of copying many work items with child items is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-as-a-tree-list).
 
           Other solutions include employing one of the following Marketplace extensions:  
-          - [Work item form one select actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
+          - [Work item form one-click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
           - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
           - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
           ::: moniker-end
-
 
       - question: How do I bulk modify a rich-text field? 
 
         answer: | 
           See [Bulk modify work items, Bulk modify rich-text fields](backlogs/bulk-modify-work-items.md#rich-text).
+
+  - name: Automation rules
+
+    questions: 
+      - question: Is there way to make the parent active when a child is active?
+        answer: | 
+          Yes, you can set your backlog level to include two different rules. The first rule it to set the parent as active when any of its children are set to active. The second rule is to set parent to resolved or closed when all the children are closed. These rules can be configured for backlog level. For more information, see [Automate work item state transitions](work-items/automate-work-item-state-transitions.md)
+
+      - question: Why are my work items automatically changing state?  
+        answer: | 
+          Work items automatically change state after your team administrator set up automation rules on the backlog. Create rules to automatically set the state to active or closed depending on the state change of its children. For more information, see [Automate work item state transitions](work-items/automate-work-item-state-transitions.md).
+
+      - question: Can I set automation rules per work item type or state?  
+        answer: | 
+          No, the rules are applied to all work item types in that backlog level. We use state categories instead of states because state categories are consistent across all work item types.
+
+      - question: Can I set up automation rules for user stories but not for features or epics?
+        answer: | 
+          Yes, rules are configured per backlog level. Automation rules on the user stories backlog don't affect features or epics. But, you can also set up rules separately for features and epics. For more information, see [Automate work item state transitions](work-items/automate-work-item-state-transitions.md).
+
+      - question: Why are automation rules not working if the child or parent items belongs to a different team or project?
+        answer: | 
+          Rules only trigger if both the parent and children belong to the same team. We don’t want rules automatically triggered for items that belong to other teams. For more information, see [Automate work item state transitions](work-items/automate-work-item-state-transitions.md).
 
   - name: Backlogs and boards 
 
@@ -237,7 +259,7 @@ sections:
       - question: What if I get the error message, "The column configurations aren't valid"?
 
         answer: |
-            If you get the following error when you open your Kanban board, you need to correct the configuration. The main reason for this error is that the workflow states of work item types that have been added to the **Requirement** category aren't mapped to the column. 
+            If you get the following error when you open your Kanban board, you need to correct the configuration. The main reason for this error is that the workflow states of work item types added to the **Requirement** category aren't mapped to the column. 
 
             > [!div class="mx-imgBorder"]
             > ![Screenshot that shows a configuration error message on a Kanban board.](./backlogs/media/setup-backlog/column-config-error.png)
@@ -280,7 +302,7 @@ sections:
 
           ::: moniker range=">= azure-devops-2019"
           Alternatively, you might find a solution for creating child work items by installing one of the following Marketplace extensions:  
-          - [Work item form one select actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
+          - [Work item form one-click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
           - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
           - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks) 
           ::: moniker-end
