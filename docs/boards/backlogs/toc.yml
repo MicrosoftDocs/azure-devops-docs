@@ -14,7 +14,7 @@
   href: filter-backlogs-boards-plans.md
   displayname: sort, reorder, rollup, group, parent, tags
 - name: Automate work item state transistions
-  href: automate-work-item-state-transitions.md
+  href: ../work-items/automate-work-item-state-transitions.md
 - name: Forecast
   href: ../sprints/forecast.md
   displayname: velocity, sprints, iterations

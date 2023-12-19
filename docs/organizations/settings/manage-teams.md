@@ -7,13 +7,13 @@ ms.custom: teams
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
-monikerRange: '<= azure-devops'
-ms.date: 02/28/2023
+monikerRange: '>= azure-devops-2019'
+ms.date: 01/05/2024
 ---
 
 # Manage and configure team tools
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 If you're a team administrator, you have the flexibility to tailor your backlogs and boards to align with your team's workflow. In case you require a new team, you can ask a Project Administrator group member to create one for you, which takes only a minute. Team administrators have the ability to set up and oversee all team tools.
 
@@ -91,7 +91,7 @@ As a team administrator, you have the flexibility to customize your team's workf
 
 Another way to customize your team's workflow is by selecting non-working days for the team. By doing so, sprint planning and tracking tools can automatically take these days off into account when calculating capacity and sprint burndown.
 
-Most of these team settings can be easily configured from the common configuration dialog, providing a convenient way to manage your team's workflow in one central location.
+Most of these team settings can be easily configured from the common configuration dialog, providing a convenient way to manage your team's workflow in one central location. Also, [set team automation rules to update work items when child item states change](../../boards/work-items/automate-work-item-state-transitions.md).
 
 [!INCLUDE [temp](../../boards/includes/setup-backlogs-boards.md)]
 
@@ -135,31 +135,6 @@ Most of these team settings can be easily configured from the common configurati
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"
-
-1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose **Azure DevOps** :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
-
-	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
-
-2. Open **Work** > **Backlogs** > **Board**. 
-
-	> [!div class="mx-imgBorder"]
-	>![Open Kanban board, versions TFS 2017-2018.](../../boards/boards/media/kanban-basics-intro.png)  
-
-3. Choose the board you want to configure and then choose **Team settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to configure the board and set general team settings.  
- 
-	For example, from the Kanban board ...  
-
-	> [!div class="mx-imgBorder"]
-	> ![Kanban board, open common configuration settings, versions TFS 2017-2018.](media/configure-team/open-settings-vsts-horz.png)
-
-4. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Common configuration dialog team settings]../.../boards/boards/media/customize-cards/common-config-141.png)
-
-::: moniker-end  
-
 Team administrators have complete control over customizing their team's Kanban boards for both the product and portfolio backlogs. To set up a Kanban board, you can define the columns and work-in-progress (WIP) limits through the common configuration dialog. For more information, see [Kanban overview](../../boards/boards/kanban-overview.md) and [Kanban quickstart](../../boards/boards/kanban-quickstart.md).
 
 For detailed information on each configuration option, you can explore the following articles:
@@ -187,14 +162,6 @@ For detailed information on each configuration option, you can explore the follo
       - [Add swimlanes](../../boards/boards/expedite-work.md)
       - [Card reordering](../../boards/boards/customize-cards.md#reorder-cards)
       - [Configure status badges](../../boards/github/configure-status-badges.md)
-      ::: moniker-end
-      ::: moniker range="tfs-2018"
-      - [Add columns](../../boards/boards/add-columns.md)
-      - [Split columns](../../boards/boards/split-columns.md)    
-      - [WIP limits](../../boards/boards/wip-limits.md)    
-      - [Definition of Done](../../boards/boards/add-columns.md#definition-of-done)  
-      - [Add swimlanes](../../boards/boards/expedite-work.md)
-      - [Reorder cards](../../boards/boards/customize-cards.md#reorder-cards)
       ::: moniker-end
       **Chart**
       - [Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md)
@@ -224,10 +191,6 @@ Similar to Kanban boards, each sprint taskboard can be customized to support inf
 
 ::: moniker range=">= azure-devops-2019"
 By default, all team members can add and edit team dashboards. In addition, team administrators can manage permissions for team dashboards. For more information, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).  
-::: moniker-end  
-
-::: moniker range="tfs-2018"  
-Team administrators can add, configure, and manage permissions for team dashboards. For more information, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).   
 ::: moniker-end
 
 :::image type="content" source="media/manage-team-dashboards.png" alt-text="Screenshot of dashboard button surrounded by red square.":::
@@ -263,3 +226,4 @@ Team administrators have the ability to add and edit alerts, allowing the team t
 - [About teams and Agile tools](about-teams-and-settings.md)  
 - [Add teams](add-teams.md) 
 - [Add a team administrator](add-team-administrator.md)
+- [Automate work item state transitions](../../boards/work-items/automate-work-item-state-transitions.md)
