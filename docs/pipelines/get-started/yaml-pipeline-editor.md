@@ -125,6 +125,16 @@ Validate your changes to catch syntax errors in your pipeline that prevent it fr
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate.png" alt-text="Validate and Download full YAML.":::
 
+:::moniker-end
+
+:::moniker range="azure-devops"
+
+Azure Pipelines detects incorrect variable definitions at pipeline, stage, and job level. Azure Pipelines detects incorrect YAML conditions defined at pipeline, stage, and job level.
+
+:::moniker-end
+
+:::moniker range=">= azure-devops-2020"
+
 ## Download full YAML
 
 You can [preview the fully parsed YAML document](/azure/devops/release-notes/2020/sprint-165-update#preview-fully-parsed-yaml-document-without-committing-or-running-the-pipeline) without committing or running the pipeline. Choose **More actions** > **Download full YAML**.
