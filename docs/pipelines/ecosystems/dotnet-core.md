@@ -54,7 +54,7 @@ Are you new to Azure Pipelines? If so, then we recommend you try the following s
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-### Confgure and run the pipeline
+### Configure and run the pipeline
 
 1. When the **Configure** tab appears, select **Show more** and select [**ASP.NET Core**](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
 
