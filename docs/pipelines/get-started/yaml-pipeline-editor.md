@@ -129,7 +129,7 @@ Validate your changes to catch syntax errors in your pipeline that prevent it fr
 
 :::moniker range="azure-devops"
 
-Azure Pipelines detects incorrect variable definitions at pipeline, stage, and job level. Azure Pipelines detects incorrect YAML conditions defined at pipeline, stage, and job level.
+Azure Pipelines detects incorrect variable definitions at the pipeline, stage, and job level and detects incorrect YAML conditions defined at the pipeline, stage, and job level.
 
 :::moniker-end
 
