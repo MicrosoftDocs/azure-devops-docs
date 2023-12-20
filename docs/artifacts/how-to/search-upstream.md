@@ -4,10 +4,12 @@ description: How to search for packages in upstream sources
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 09/29/2022
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2022'
 ---
 
 # Search for packages in upstream sources
+
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
 Using upstream sources enable developers to consume packages from different feeds and public registries. This tutorial will walk you through how to enable upstream sources in your feed and search for packages in upstreams.
 
