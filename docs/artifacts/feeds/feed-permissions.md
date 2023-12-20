@@ -68,8 +68,19 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
 > [!NOTE]
 > By default, the *Project Collection Build Service* (org-scoped) and the project-level *Build Service* (project-scoped) are assigned the **Collaborator** role.
+
+::: moniker-end
+
+:::moniker range=">= azure-devops-2022"
+
+> [!NOTE]
+> By default, the *Project Collection Build Service* is automatically assigned the **Collaborator** role for newly created collection-scoped feeds.
+
+::: moniker-end
 
 ## Permissions table
 
@@ -115,9 +126,11 @@ If you want to completely hide your packages, you must restrict access to both f
 > [!IMPORTANT]
 > Views inherit permissions from the parent feed. If you set a view's visibility to *Specific people* without specifying any users or groups, the view's permissions will default back to the permissions of its parent feed.
 
+:::moniker range=">= azure-devops-2022"
+
 ## Pipelines permissions
 
-To access your feed from your pipeline, the corresponding build identity must have the necessary permissions. By default, feeds have the *Project Collection Build Service* role set to *Collaborator*. However, if you have configured your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a *Reader* or *Contributor*. The project-level build identity is named as follows: `[Project name] Build Service ([Organization name])`. Example: FabrikamFiber Build Service (codesharing-demo).
+To access your feed from your pipeline, the corresponding build identity must have the necessary permissions. By default, feeds have the *Project Collection Build Service* role set to *Collaborator*. However, if you have configured your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a *Reader* or *Contributor*. Example: FabrikamFiber Build Service (codesharing-demo).
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -126,6 +139,22 @@ To access your feed from your pipeline, the corresponding build identity must ha
 1. Select **Permissions**, and then select **Add users/groups**.  Add your build identity and set its role to a **Contributor**.
 
     :::image type="content" source="media/feed-pipelines-permissions.png" alt-text="A screenshot showing the build identity permission.":::
+
+::: moniker-end
+
+:::moniker range="azure-devops-2019 || azure-devops-2020"
+
+## Pipelines permissions
+
+To access your feed from your pipeline, the corresponding build identity must have the necessary permissions. if you have configured your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a *Reader* or *Contributor*. Example: FabrikamFiber Build Service (codesharing-demo).
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
+
+1. Select **Permissions**, and then select **Add users/groups**.  Add your build identity and set its role to a **Contributor**.
+
+::: moniker-end
 
 > [!NOTE]
 > If you want to access a feed in a different project from your pipeline, you must configure the other project to provide read/write access to the build service.
