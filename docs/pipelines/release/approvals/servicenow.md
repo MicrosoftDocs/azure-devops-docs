@@ -157,6 +157,12 @@ This tutorial assumes you have a yaml pipeline with a single stage that deploys 
 
 ::: moniker-end
 
+:::moniker range=">= azure-devops-2022"
+
+**A**: We support the following versions: San Diego, Tokyo, and Utah releases.
+
+::: moniker-end
+
 ### Q: What types of change request are supported?
 
 **A**: Normal, standard and emergency change requests are supported with this integration.
