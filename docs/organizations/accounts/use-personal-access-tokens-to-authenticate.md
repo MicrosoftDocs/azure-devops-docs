@@ -1,7 +1,8 @@
 ---
 title: Use personal access tokens
 titleSuffix: Azure DevOps
-ms.custom: contperf-fy20q4, contperf-fy22q3
+ms.custom: contperf-fy20q4, contperf-fy22q3, ai-video-demo
+ai-usage: ai-assisted
 description: Learn how to create and manage personal access tokens (PATs) as alternate passwords to authenticate to Azure DevOps.
 ms.subservice: azure-devops-security
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
@@ -17,6 +18,9 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can use a personal access token (PAT) as an alternate password to authenticate into Azure DevOps. In this article, we show you how to create, use, modify, and revoke PATs for Azure DevOps.
+
+This video shows you how to create and use a PAT.
+> [!VIDEO 5a2c1619-4af3-4188-8016-aafd49db0d8f]
 
 ## About PATs
 
