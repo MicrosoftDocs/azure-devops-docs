@@ -394,6 +394,12 @@ All YAML pipelines in Azure DevOps Server 2019 run under **collection** job auth
 
 :::moniker-end
 
+:::moniker range=">= azure-devops-2022"
+
+When creating a new classic pipeline, the *job authorization scope* is set to **current project** and the *build job authorization scope* is set to **project** by default.
+
+:::moniker-end
+
 ### How do I determine the job authorization scope of my classic release pipeline?
 
 :::moniker range="<=azure-devops-2020"
