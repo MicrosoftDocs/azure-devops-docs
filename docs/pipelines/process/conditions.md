@@ -303,7 +303,7 @@ parameters:
 
 steps:
 - script: echo I did a thing
-  condition: and(succeeded(), eq(parameters.doThing, true))
+  condition: ${{ eq(parameters.doThing, true) }}
 ```
 
 
