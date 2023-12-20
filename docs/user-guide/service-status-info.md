@@ -8,81 +8,51 @@ ms.assetid: 3F3BD90B-1D08-4C8F-9CDC-D4B806F65448
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/02/2022
+ms.date: 12/19/2023
 ---
 
 # Azure DevOps Services status
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-We have a team of engineers around the world who look after the 
-health of Azure DevOps 24 hours a day. Their primary goal is to ensure 
-that our customers are always productive and successful with our service. 
-From time to time, like any online service, our service experiences performance 
-slowdowns and stability issues. In these cases, we aim to respond quickly to 
-restore the service. It's our top priority to communicate the incident 
-status and our next steps to mitigate the issue. We do so through the
-[Azure DevOps Services status portal](https://status.dev.azure.com).
+Our team of engineers around the world work 24/7 to ensure that our customers are always productive and successful with our service. We respond quickly during performance slowdowns and stability issues. Our top priority is to communicate the incident status and our next steps to mitigate the issue. Check the status of our services through the [Azure DevOps Services status portal](https://status.dev.azure.com).
 
-If you're experiencing a problem with any of our Azure DevOps Services, you can check the 
-service health to determine if we're already working on the issue. Many of the events we post are based on our 
-Customer Impact Assessment (CIA). The CIA is modeled after our availability model 
-that measures real customer experiences representing both reliability and performance.
+Our Customer Impact Assessment (CIA) is modeled after our availability model, which measures real customer experiences representing both reliability and performance. Many of the events we post are based on the CIA.
 
-## Services within the product suite
+## Services health matrix
 
-[Azure DevOps](https://azure.microsoft.com/services/devops/) is a product suite of service offerings. The [geographic region](https://azure.microsoft.com/global-infrastructure/geographies/) indicates where an organization is hosted in the cloud. The data residency, sovereignty, compliance,
-and resilience requirements are honored within the geographical boundaries. 
+[Azure DevOps](https://azure.microsoft.com/services/devops/) is a product suite of service offerings. The [geography](https://azure.microsoft.com/global-infrastructure/geographies/) indicates where an organization is hosted in the cloud. The data residency, sovereignty, compliance,
+and resilience requirements are honored within the geographical boundaries. To help clarify which specific aspects of the service are affected, we communicate impact of each of these services by geography in the service matrix. 
 
-In addition to the specific Azure DevOps Services, the matrix also displays two other 
-categories: **Core** and **Other**. The **Core** category encompasses the set of features that are fundamental to all five services, such as authentication or the web portal. The **Other** category corresponds to features that complement the suite, such as extensions.  
-
-For more information about pricing and acquisition, see the [pricing and acquisition page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
-
-## Service health matrix
-
-The service status portal provides a two-dimensional matrix view of active events mapped to a 
-given service and geography. To help clarify which specific aspects of the service are affected, 
-we communicate impact of each of these services by geographic region in the service matrix.
+The [status portal](https://status.dev.azure.com) provides a two-dimensional matrix view of active events mapped to a given service and geography. In addition to the suite of **Azure DevOps Services**, it displays the following items:
+- **Core services**: Encompass the set of features that are fundamental to all five services, such as authentication or the web portal
+- **Other services**: Correspond to features that complement the suite, such as extensions
 
 ## Service health indicators 
 
-The Azure DevOps Services status portal indicates the status of Azure DevOps Services according to the following indicators. These indicators reflect the severity of a service health event based on the number of customers affected by the issue. Typically, the highest severity events impact a large percentage of our customers and render some parts of the product unusable. 
+The Azure DevOps Services status portal displays indicators that reflect the severity of a service health event, based on the number of customers affected by the issue. The highest severity events affect a large percentage of our customers and render some parts of the product unusable.
  
 :::image type="content" source="media/services-status/status-indicators.png" alt-text="Service status indicators"::: 
 
-- **Healthy**: Indicates the service is broadly available. 
-- **Degraded**: Indicates a lower-severity event that affects the performance of a service feature, but doesn't impact broad service availability. 
-- **Unhealthy**: Indicates a high-severity event that affects the performance of a service and its broad availability. 
-- **Advisory**: Indicates that a service is under investigation to determine the  performance and availability impact. 
-
+The Azure DevOps Services status portal displays four indicators that reflect the severity of a service health event: Healthy, Degraded, Unhealthy, and Advisory. The highest severity events affect a large percentage of our customers and render some parts of the product unusable.
 
 ## Service status and event logs
 
-You can access more information on active events from the [Status history page](https://status.dev.azure.com/_history). This page provides a view into current active events and past events. Eave event under investigation or previously investigate is logged in the form of an event log. Each log has other associated information such as the impacted service,  
-geography, and event duration. Choose the provided hyperlink to view the event log, which provides detailed information on the event under investigation.
-
-You can also filter the logs to adjust the scope of your search into past events. 
-In addition, you can use the REST API build automated alerting solutions to help you stay on top of events.
+Access detailed information on active and past events from the [Status history page](https://status.dev.azure.com/_history). Each event log contains associated information such as the impacted service, geography, and event duration. You can filter the logs to adjust the scope of your search into past events. Additionally, you can use the REST API to build automated alerting solutions to stay on top of events.
 
 ## When and how to report availability issues 
 
-If you're experiencing an issue with Azure DevOps and see a corresponding event that's communicated on the service health portal, we're already working to restore normal operations of the service. You don't need to do anything else to notify us. 
-
-However, if you don't see your issue reported on the Azure DevOps Services health page, you can ask a question through the [Azure DevOps Services virtual support agent](https://azure.microsoft.com/support/devops/). 
-
-For issues not related to availability, refer to our [Developer Community portal](https://developercommunity.visualstudio.com/report?space=21&entry=problem). 
+If you see an issue reported on the Azure DevOps Services health page, we’re already working to restore normal operations. If your issue isn't reported, you can ask a question through the [Azure DevOps Services virtual support agent](https://azure.microsoft.com/support/devops/). For issues not related to availability, refer to our [Developer Community portal](https://developercommunity.visualstudio.com/report?space=21&entry=problem).
 
 ## RSS feed
 
-You can use [the RSS feed](https://status.dev.azure.com/_rss) to subscribe and receive information in your feed reader. 
+Subscribe to [the RSS feed](https://status.dev.azure.com/_rss) to receive updates in your feed reader. 
 
 ## Use REST APIs to build automated solutions
 
 The [Azure Resource health REST API](/rest/api/resourcehealth/) can retrieve the current health status of each of the Azure DevOps Services. You can use it to build an automated solution to [monitor the infrastructure incidents](/azure/service-health/service-health-overview).  
 
 [!INCLUDE [rest-api-docs-rollout](../includes/rest-api-docs-rollout.md)] 
-
 
 ## Related articles
 
