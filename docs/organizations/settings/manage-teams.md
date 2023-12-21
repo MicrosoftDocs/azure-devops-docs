@@ -91,7 +91,7 @@ As a team administrator, you have the flexibility to customize your team's workf
 
 Another way to customize your team's workflow is by selecting non-working days for the team. By doing so, sprint planning and tracking tools can automatically take these days off into account when calculating capacity and sprint burndown.
 
-Most of these team settings can be easily configured from the common configuration dialog, providing a convenient way to manage your team's workflow in one central location. Also, [set team automation rules to update work items when child item states change](../../boards/work-items/automate-work-item-state-transitions.md).
+Most of these team settings can be easily configured from the common configuration dialog, providing a convenient way to manage your team's workflow in one central location. You can also [set team automation rules to update work items when child item states change](../../boards/work-items/automate-work-item-state-transitions.md).
 
 [!INCLUDE [temp](../../boards/includes/setup-backlogs-boards.md)]
 

@@ -1,7 +1,7 @@
 ---
-title: Automate work item state transitions
+title: Set work item automation rules for your team
 titleSuffix: Azure Boards   
-description: Learn how to set rules to update the state of your work items automatically, according to the state of the child tasks.  
+description: Learn how to set rules to update the state of your team's work items automatically, according to the state of the child tasks.  
 ms.service: azure-devops-boards
 ms.custom: cross-service
 ms.author: chcomley
@@ -11,7 +11,7 @@ ms.date: 01/05/2024
 ---
 
 
-# Set work item automation rules for your team
+# Automate work item state transitions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -20,7 +20,8 @@ Automatically update the state of a work item according to the state of its chil
 Rules are established at the team backlog level and are applicable to all work items at that specific level. This means that your features backlog can have distinct rules from the user stories backlog.
 
 > [!IMPORTANT]
-> Work item automation rules exclusively pertain to your team’s workflow on the backlog and boards. Other teams within your project can customize their own rules to align with their specific work processes.
+> - Work item automation rules exclusively pertain to your team’s workflow on the backlog and boards. Other teams within your project can customize their own rules to align with their specific work processes.
+
 ## Prerequisites
 
 ::: moniker range="azure-devops"
@@ -44,18 +45,19 @@ Establish these rules independently for each backlog level, including user stori
 
 1. Sign in to your project (```https://dev.azure.com/{yourorganization}/{yourproject}```).
 
-2. Select 
+2. Select **Boards** > **Backlogs** > :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: **Configure team settings**.
 
-3. 
+   :::image type="content" source="media/backlog-settings.png" alt-text="Screenshot of selection process, Boards, Backlogs, and then Configure team settings.":::
 
-   :::image type="content" source="media/team-settings-work-item-automation.png" alt-text="Screenshot of team settings and selected work item automation rules.":::
+3. Check the applicable box(es), which will trigger only the parent work items on this backlog level, and then select **Save**.
 
-There are two sets of rules that can be configured by your team on the team backlog settings panel.
+   :::image type="content" source="media/set-team-automation-rules.png" alt-text="Screenshot of team automation rules settings page.":::
+
+   Work item states are set to automatically transition when child items get updated on your backlog.
 
 
 
-Here is an example of the rules being applied to the User Stories backlog level.
-
+See the following example of the rules being applied to the user stories backlog level.
 
 //Image of demo of automation rules for simple workflow, image
 
@@ -67,13 +69,13 @@ These rules operate seamlessly, regardless of where you make updates to the chil
 
 //Image sprint board and team automation rules, image
 
-
 ## Limitations
 
-- Work items must belong to the same team; closing a task in a different team or project doesn't trigger the closure of the parent item.
 - Instead of states, we utilize State Categories due to the intricate nature of various work item types and their state models. Categories provide consistency across types making it easier to understand and configure.
 - The automation rules default to the first state within the assigned category.
 - Updates via REST APIs will not activate automation rules. You can automate the updating of parent items by implementing additional patch updates.
 
 ## Related articles
 
+- [Manage and configure team tools](../../organizations/settings/manage-teams.md)
+- [Configure team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
