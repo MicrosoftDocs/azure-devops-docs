@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/25/2022
+ms.date: 12/22/2023
 ---
 
 # Add and manage information banners in Azure Devops
@@ -23,7 +23,7 @@ The following image shows how an information message is displayed. Users can can
 
 :::image type="content" source="media/banners/show-banner-info.png" alt-text="Information banner"::: 
 
-Banners are restricted to a length of thirty words.  Banners are prioritized by level. For example, if you have posted a warning message and an info message, the info message will only be shown after a user closes the warning message, or you delete the warning message. 
+Banners are restricted to a length of thirty words.  Banners are prioritized by level. For example, if you posted a warning message and an info message, the info message only shows after a user closes the warning message, or you delete the warning message. 
 
 
 ## Prerequisites 
@@ -89,7 +89,7 @@ Admin settings configure resources for all projects in a project collection. For
  
 ### Add and manage banners 
 
-1. If no banners have been defined, choose **Create a new banner**. 
+1. If no banners are defined, choose **Create a new banner**. 
 
 	::: moniker range="azure-devops"
 	:::image type="content" source="media/banners/open-banner-extension-cloud.png" alt-text="Create first banner, on-premises"::: 
@@ -138,7 +138,7 @@ az devops admin banner add --message
 
 - **message**: Required. Text string that specifies the banner message to display. Text strings are limited to a maximum of thirty words.
 
-  The message may contain links in HTML format (`<a href='https://example.org'>Link text</a>`). Any ampersand in the url, for example in the query string, must be escaped in the xml entity format (`&amp;`).
+  The message might contain links in HTML format (`<a href='https://example.org'>Link text</a>`). Any ampersand in the url, for example in the query string, must be escaped in the xml entity format (`&amp;`).
  
 - **expiration**: Optional. Date/time when the banner should no longer be displayed to users. For example, "2019-06-10 17:21:00 UTC", "2019-06-10".
 - **ID**: Optional. ID of the banner to update. This identifier is needed to change or remove the message later. A unique identifier is automatically created if one isn't specified.
@@ -174,7 +174,7 @@ az devops admin banner list
 
 If you don't specify the output, the list displays in json format. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
 
-For example, the following command indicates that two banners have been defined. 
+For example, the following command indicates that two banners are defined. 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
