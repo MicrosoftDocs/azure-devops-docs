@@ -137,6 +137,9 @@ az devops admin banner add --message
 ### Parameters 
 
 - **message**: Required. Text string that specifies the banner message to display. Text strings are limited to a maximum of thirty words.
+
+  The message may contain links in HTML format (`<a href='https://example.org'>Link text</a>`). Any ampersand in the url, for example in the query string, must be escaped in the xml entity format (`&amp;`).
+ 
 - **expiration**: Optional. Date/time when the banner should no longer be displayed to users. For example, "2019-06-10 17:21:00 UTC", "2019-06-10".
 - **ID**: Optional. ID of the banner to update. This identifier is needed to change or remove the message later. A unique identifier is automatically created if one isn't specified.
 - **type**: Optional. Type of banner to display. Valid values: **error**, **info**, **warning**. Default is **info**.
@@ -147,7 +150,7 @@ For example, the following command adds an information banner, which expires on 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-az devops admin banner add --message "INFORMATION: Network domain updates will occur on September 3" --expiration  2019-09-04 --type  info
+az devops admin banner add --message "INFORMATION: Network domain updates will occur on September 3. <a href='https://example.org?page=network-updates&amp;anchor=september-3-2019'>More information</a>" --expiration  2019-09-04 --type  info
 {
   "3d584103-6a94-4f46-8696-f424278da072": {
     "expirationDate": "2019-09-04T00:00:00-07:00",
