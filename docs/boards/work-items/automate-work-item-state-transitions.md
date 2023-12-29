@@ -53,27 +53,26 @@ Do the following steps to set team rules for each backlog level.
 
    :::image type="content" source="media/set-team-automation-rules.png" alt-text="Screenshot of team automation rules settings page.":::
 
-   - Work item states are set to automatically transition when child items get updated on your backlog.
-   - The automation rules default to the first state within the assigned category.
-   - You can't activate automation rules via REST APIs. You can automate the updating of parent items by implementing patch updates.
-<!--These rules operate seamlessly, regardless of where you make updates to the child items, such as on the sprint board, for example.
+   Work item states are set to automatically transition when child items get updated on your backlog.
 
-   //Image sprint board and team automation rules, image
+**Rules applied to sprint board**
+
+These rules operate seamlessly, regardless of where you make updates to the child items, such as on the sprint board, for example.
+
+//Image sprint board and team automation rules, GIF
 
 
-### Apply rules to the user stories backlog level
+**Rules applied to the user stories backlog level**
 
 The following example shows the rules applied to the user stories backlog level.
 
-//Image of demo of automation rules for simple workflow, image
+:::image type="content" source="media/backlog-child-closes-parent.gif" alt-text="Gif of demo of automation rules for simple workflow, closing a child task closes the parent user story on the backlog.":::
 
-### Apply rules to several backlog levels in sync
+**Rules applied to several backlog levels in sync**
 
 The following example shows the rules applied to several backlog levels in sync.
 
-//Image team automation rules for several backlog levels, image
-
--->
+//Image team automation rules for several backlog levels, GIF
 
 ## Related articles
 
