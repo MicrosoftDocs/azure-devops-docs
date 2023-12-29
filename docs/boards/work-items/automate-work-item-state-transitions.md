@@ -15,12 +15,12 @@ ms.date: 01/05/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Automatically update the state of a work item according to the state of its child tasks. For example, if one task is changed to `Doing`, then the user story gets set to `Doing`. And if all tasks are in `Closed` state, then the user story gets `Closed`.
+Automatically update the state of a work item according to the state of its child tasks. For example, if one task is changed to `Doing`, then the parent gets set to `Doing`. And if all tasks are in `Closed` state, then the parent gets `Closed`.
 
-Rules are established at the team backlog level and are applicable to all work items at that specific level. This means that your features backlog can have distinct rules from the user stories backlog.
+Rules are established at the team backlog level and are applicable to all work items at that specific level. You have the flexibility to establish these rules independently for each backlog level, including stories, features, and epics. For example, you can automate the closure of user stories, but keep features and epics open.
 
 > [!IMPORTANT]
-> - Work item automation rules exclusively pertain to your team’s workflow on the backlog and boards. Other teams within your project can customize their own rules to align with their specific work processes.
+> Work item automation rules exclusively pertain to your team’s workflow on the backlog and boards. Other teams within your project can customize their own rules to align with their specific work processes.
 
 ## Prerequisites
 
@@ -38,10 +38,10 @@ Rules are established at the team backlog level and are applicable to all work i
 
 ## Set rules
 
-Establish these rules independently for each backlog level, including user stories, features, and epics. This way you can automate the closing of user stories, but leave features and epics untouched, for example. Do the following steps to set team rules for work item automation. 
+Do the following steps to set team rules for each backlog level. 
 
 > [!NOTE]
-> Work items must belong to the same team; closing a task in a different team or project doesn't trigger the closure of the parent item.
+> Work items must belong to the same team; when you close a task in a different team or project, it doesn't trigger the closure of the parent item.
 
 1. Sign in to your project (```https://dev.azure.com/{yourorganization}/{yourproject}```).
 
@@ -49,31 +49,31 @@ Establish these rules independently for each backlog level, including user stori
 
    :::image type="content" source="media/backlog-settings.png" alt-text="Screenshot of selection process, Boards, Backlogs, and then Configure team settings.":::
 
-3. Check the applicable box(es), which will trigger only the parent work items on this backlog level, and then select **Save**.
+3. Check the applicable box(es), which triggers the parent work items on this backlog level, and then select **Save**.
 
    :::image type="content" source="media/set-team-automation-rules.png" alt-text="Screenshot of team automation rules settings page.":::
 
-   Work item states are set to automatically transition when child items get updated on your backlog.
+   - Work item states are set to automatically transition when child items get updated on your backlog.
+   - The automation rules default to the first state within the assigned category.
+   - You can't activate automation rules via REST APIs. You can automate the updating of parent items by implementing patch updates.
+<!--These rules operate seamlessly, regardless of where you make updates to the child items, such as on the sprint board, for example.
+
+   //Image sprint board and team automation rules, image
 
 
+### Apply rules to the user stories backlog level
 
-See the following example of the rules being applied to the user stories backlog level.
+The following example shows the rules applied to the user stories backlog level.
 
 //Image of demo of automation rules for simple workflow, image
 
-Example of rules be applied to several backlog levels in sync.
+### Apply rules to several backlog levels in sync
 
-//Image tam automation rules for several backlog levels, image
+The following example shows the rules applied to several backlog levels in sync.
 
-These rules operate seamlessly, regardless of where you make updates to the child items, such as on the sprint board, for instance.
+//Image team automation rules for several backlog levels, image
 
-//Image sprint board and team automation rules, image
-
-## Limitations
-
-- Instead of states, we utilize State Categories due to the intricate nature of various work item types and their state models. Categories provide consistency across types making it easier to understand and configure.
-- The automation rules default to the first state within the assigned category.
-- Updates via REST APIs will not activate automation rules. You can automate the updating of parent items by implementing additional patch updates.
+-->
 
 ## Related articles
 
