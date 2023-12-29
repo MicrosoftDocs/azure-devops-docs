@@ -59,8 +59,7 @@ Do the following steps to set team rules for each backlog level.
 
 These rules operate seamlessly, regardless of where you make updates to the child items, such as on the sprint board, for example.
 
-//Image sprint board and team automation rules, GIF
-
+:::image type="content" source="media/sprintboard-drag-and-drop-update-parent.gif" alt-text="Gif of demo of automation rules for sprintboard, drag and drop child task activates, and then closes the parent user story on the board.":::
 
 **Rules applied to the user stories backlog level**
 
@@ -72,7 +71,16 @@ The following example shows the rules applied to the user stories backlog level.
 
 The following example shows the rules applied to several backlog levels in sync.
 
-//Image team automation rules for several backlog levels, GIF
+:::image type="content" source="media/rules-applied-several-backlog-levels.gif" alt-text="Gif of demo of automation rules applied to several backlog levels in sync, when you close all tasks, the parent user story closes, and when you close all user stories, their parent feature closes.":::
+
+## FAQs
+
+For answers to the following frequently asked questions, see the [FAQs](../faqs.yml#automation-rules):
+- Is there way to make the parent active when a child is active?
+- Why are my work items automatically changing state?
+- Can I set automation rules per work item type or state?
+- Can I set up automation rules for user stories but not for features or epics?
+- Why are automation rules not working if the child or parent items belongs to a different team or project?
 
 ## Related articles
 
