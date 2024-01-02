@@ -1,47 +1,51 @@
 ---
-title: Sign up and invite teammates
+title: Sign up for Azure Repos
 titleSuffix: Azure DevOps   
-description: Quickstart guide to signing up and inviting others to join a team project in Azure DevOps Services 
+description: How to sign up for Azure Repos. 
 ms.subservice: azure-devops-new-user
-ms.topic: quickstart
-ms.date: 03/18/2021
+ms.topic: how-to
+ms.date: 01/02/2024
 monikerRange: 'azure-devops'
 ---
 
-# Sign up for free and invite others to collaborate on your project
+# Sign up for free for Azure Repos
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-<a name="MicrosoftAccount"></a>
+Sign up for Azure Repos. For more information, see [What is Azure Repos?](what-is-repos.md)
 
-[!INCLUDE [sign-up-msft-account](../../includes/sign-up-msft-account.md)]
+## Sign up
 
-<a name="GitHubAccount"></a>
+Sign up for Azure Repos with either a Microsoft account or GitHub account.
 
-[!INCLUDE [sign-in-github-account](../../includes/sign-in-github-account.md)]
+# [Microsoft account](#tab/microsoft-account)
 
+1. If you don't have one, [create a Microsoft account](https://azure.microsoft.com/services/devops/).
+2. Go to [Azure Repos](https://azure.microsoft.com/products/devops/repos/) and select **Start free**.
+3. Enter your account credentials and go through the sign-up process.
 
-<a id="create-project"></a>
+   Azure DevOps creates an organization.
+-  Azure DevOps creates a project named after your *newly created* Microsoft account.
+-  If you signed up with an existing Microsoft account, you need to [create a project](../organizations/projects/create-project.md) next.
 
-## Create a project 
+Sign in to your organization at any time `https://dev.azure.com/{Your_Organization}`.
 
-If you signed up for Azure DevOps with an existing MSA or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/projects/about-projects.md). 
+# [GitHub account](#tab/github-account)
 
-1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**. 
+> [!NOTE]
+> If your GitHub email address is already associated with an organization in Azure DevOps that's [connected to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md), you can't sign in with your GitHub account. You must sign in with your Microsoft Entra account.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Create a project.](../../boards/get-started/media/sign-up/nf-create-project.png)
+1. If you don't have one, [create a GitHub account](https://github.com/join).
+2. Go to [Azure Repos](https://azure.microsoft.com/products/devops/repos/) and select **Start free with GitHub**.
+3. Enter your account credentials and go through the sign-up process. You're asked to **Authorize Microsoft-corp**.
 
-    The name can't contain special characters (such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less.
+   Azure DevOps creates an organization. Sign in to your organization at any time `https://dev.azure.com/{Your_Organization}`.
+   
+   Azure DevOps turns on the *Invite GitHub users* policy by default. 
+   ![Screenshot of the Invite GitHub users policy.](../../media/invite-github-users-policy.png)
+---
 
-    Any one can view public projects. With private projects, only people who you give access to the project can view it.
-
-
-<a name="invite-others"></a>
-
-[!INCLUDE [invite-teammates](../../includes/invite-teammates.md)]
-
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
-> [Code with Git](../../user-guide/code-with-git.md?view=azure-devops&preserve-view=true) or [Develop and share your code in TFVC](../tfvc/share-your-code-in-tfvc-vs.md)
+> [Code with Git](../../user-guide/code-with-git.md?view=azure-devops&preserve-view=true)
