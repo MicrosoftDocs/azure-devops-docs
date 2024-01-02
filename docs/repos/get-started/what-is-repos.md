@@ -3,7 +3,7 @@ title: Collaborate on code
 titleSuffix: Azure Repos
 description: What do you get with Azure Repos  
 ms.subservice: azure-devops-new-user
-ms.date: 06/01/2020
+ms.date: 01/02/2024
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ---
@@ -15,9 +15,9 @@ monikerRange: '<= azure-devops'
 
 Azure Repos is a set of version control tools that you can use to manage your code. Whether your software project is large or small, using version control as soon as possible is a good idea. 
 
-Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. The version control system saves that snapshot permanently so you can recall it later if you need it. Use version control to save your work and coordinate code changes across your team. 
+Version control systems are software that helps you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. The version control system saves that snapshot permanently so you can recall it later if you need it. Use version control to save your work and coordinate code changes across your team. 
 
-Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even roll back to any version of your code with ease.
+Even if you're a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even roll back to any version of your code with ease.
 
 Azure Repos provides two types of version control:
 
@@ -26,7 +26,7 @@ Azure Repos provides two types of version control:
 
 ## Git
 
-Git is the most commonly used version control system today and is quickly becoming the standard for version control. Git is a distributed version control system, meaning that your local copy of code is a complete version control repository. These fully functional local repositories make it is easy to work offline or remotely. You commit your work locally, and then sync your copy of the repository with the copy on the server.
+Git is the most commonly used version control system today and is quickly becoming the standard for version control. Git is a distributed version control system, meaning that your local copy of code is a complete version control repository. These fully functional local repositories make it easy to work offline or remotely. You commit your work locally, and then sync your copy of the repository with the copy on the server.
 
 Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, partners' Git services, and tools such as Visual Studio and Visual Studio Code.
 
@@ -49,7 +49,7 @@ Connect your favorite development environment to Azure Repos to access your repo
 
 ### Review code with pull requests
 
-Review code with your team and make sure that changes build and pass tests before it's merged.
+Review code with your team and make sure that changes build and pass tests before it gets merged.
 
 - [Create a pull request](../git/pull-requests.md)
 - [Link work items to pull requests](../git/pull-requests.md#link-work-items)
@@ -63,7 +63,7 @@ Review code with your team and make sure that changes build and pass tests befor
 
 There are a few critical branches in your repo that the team relies on to always be in good shape, such as your `master` branch.
 [Require pull requests](../git/branch-policies.md) to make any changes on these branches.
-Developers who push changes directly to the protected branches will have their pushes rejected.
+Developers who push changes directly to the protected branches have their pushes rejected.
 
 Add conditions to your pull requests to enforce a higher level of code quality in your key branches.
 A clean build of the merged code and approval from multiple reviewers are extra requirements that you can set to help protect your key branches.
@@ -74,7 +74,7 @@ A clean build of the merged code and approval from multiple reviewers are extra 
 
 ### Extend pull request workflows with pull request status
 
-Pull requests and branch policies enable teams to enforce many best practices related to reviewing code and running automated builds. But many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, Azure Repos offers pull request statuses. 
+Pull requests and branch policies enable teams to enforce many best practices related to reviewing code and running automated builds. But many teams have other requirements and validations to perform on code. To cover these individual and custom needs, Azure Repos offers pull request statuses. 
 
 Pull request statuses integrate into the PR workflow. They allow external services to programmatically sign off on a code change by associating simple success/failure information with a pull request. 
 
@@ -87,7 +87,7 @@ Pull request statuses integrate into the PR workflow. They allow external servic
 
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository and then pushed to a new, empty repository.
 
-After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. After you're ready to share those changes, it's easy to use [pull requests](../git/pull-requests.md) to push the changes back to the original repository.
+After a fork gets created, new files, folders, and branches aren't shared between the repositories unless a pull request carries them along. After you're ready to share those changes, it's easy to use [pull requests](../git/pull-requests.md) to push the changes back to the original repository.
 
 - [Learn more about forks](../git/forks.md)
 

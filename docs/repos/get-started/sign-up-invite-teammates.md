@@ -26,14 +26,14 @@ Sign up for Azure Repos with either a Microsoft account or GitHub account.
 
    Azure DevOps creates an organization.
 -  Azure DevOps creates a project named after your *newly created* Microsoft account.
--  If you signed up with an existing Microsoft account, you need to [create a project](../organizations/projects/create-project.md) next.
+-  If you signed up with an existing Microsoft account, [create a project](../../organizations/projects/create-project.md).
 
 Sign in to your organization at any time `https://dev.azure.com/{Your_Organization}`.
 
 # [GitHub account](#tab/github-account)
 
 > [!NOTE]
-> If your GitHub email address is already associated with an organization in Azure DevOps that's [connected to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md), you can't sign in with your GitHub account. You must sign in with your Microsoft Entra account.
+> If your GitHub email address is already associated with an organization in Azure DevOps that's [connected to Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md), you can't sign in with your GitHub account. You must sign in with your Microsoft Entra account.
 
 1. If you don't have one, [create a GitHub account](https://github.com/join).
 2. Go to [Azure Repos](https://azure.microsoft.com/products/devops/repos/) and select **Start free with GitHub**.
