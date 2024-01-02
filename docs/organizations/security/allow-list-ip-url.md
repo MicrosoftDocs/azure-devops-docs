@@ -9,7 +9,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/27/2023
+ms.date: 01/02/2024
 ---
 
 # Allowed IP addresses and domain URLs
@@ -88,8 +88,6 @@ Ensure the following IP addresses are allowed for inbound connections, so your o
 > |  | Central India | 20.204.197.192/26 |  
 > | United States | Central United States | 20.37.158.0/23 |  
 > |  | West Central United States | 52.150.138.0/24 |
-> |  | North Central United States | 40.80.187.0/24 |
-> |  | South Central United States | 40.119.10.0/24 |
 > |  | East United States   | 20.42.5.0/24 |  
 > |  | East 2 United States  | 20.41.6.0/23 |
 > |  | North United States  | 40.80.187.0/24 |  
