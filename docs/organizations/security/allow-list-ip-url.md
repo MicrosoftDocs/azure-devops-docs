@@ -16,7 +16,7 @@ ms.date: 03/27/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If your organization's secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these IPs and URLs to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
+If your organization is secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these IPs and URLs to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
 
 - [Allowed domain URLs](#allowed-domain-urls)
 - [IP addresses and range restrictions](#ip-addresses-and-range-restrictions)
@@ -30,13 +30,13 @@ If your organization's secured with a firewall or proxy server, you must add cer
 
 ### Outbound connections
 
-_Outbound connections_ originate from inside your organization and that target Azure DevOps or other dependent sites. Examples of such connections include:
+_Outbound connections_ target other dependent sites. Examples of such connections include:
 
 - Browsers connecting to Azure DevOps website as users go to and use features of Azure DevOps
 - Azure Pipelines agents installed on your organization's network connecting to Azure DevOps to poll for pending jobs
-- CI events sent from a source code repository that's hosted within your organization's network to Azure DevOps
+- CI events sent from a source code repository hosted within your organization's network to Azure DevOps
 
-Ensure the following IP addresses are allowed for outbound connection, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from a machine in your organization to Azure DevOps Services.
+Ensure the following IP addresses are allowed for outbound connections, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from a machine in your organization to Azure DevOps Services.
 
 #### [IP V4 ranges](#tab/IP-V4)
 
@@ -63,7 +63,7 @@ Ensure the following IP addresses are allowed for outbound connection, so your o
 If you're currently allowing the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
 
 > [!NOTE]
-> [Azure Service Tags](/azure/virtual-network/service-tags-overview) aren't supported for *outbound* connection.
+> [Azure Service Tags](/azure/virtual-network/service-tags-overview) aren't supported for *outbound* connections.
 
 ### Inbound connections
 
@@ -74,7 +74,7 @@ _Inbound connections_ originate from Azure DevOps and target resources within yo
 - Azure Pipelines connecting to on-premises source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [Bitbucket Server](../../pipelines/repos/on-premises-bitbucket.md)  
 - Azure DevOps Services [Audit Streaming](../audit/auditing-streaming.md) connecting to on-premises or cloud-based Splunk
 
-Ensure the following IP addresses are allowed for inbound connection, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from Azure DevOps Services to your on-premises or other cloud services.
+Ensure the following IP addresses are allowed for inbound connections, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from Azure DevOps Services to your on-premises or other cloud services.
 
 > [!div class="mx-tdCol2BreakAll"]  
 > |  Geography | Region  | IP V4 ranges |  
@@ -101,7 +101,7 @@ Ensure the following IP addresses are allowed for inbound connection, so your or
 > |  | North Europe | 20.166.41.0/24 |
 > | United Kingdom | United Kingdom South | 51.104.26.0/24 |  
 
-Azure Service Tags are supported for *inbound* connection. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
+Azure Service Tags are supported only for *inbound* connections. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
 
 > [!NOTE]
 > The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted agents. Customers are still required to allow the [entire geography for the Microsoft Hosted agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md). The Scale Set agents are a form of self-hosted agents that can be auto-scaled to meet your demands.  
@@ -219,8 +219,8 @@ https://azurecomcdn.azureedge.net
 ```
 
 The following endpoints are used to authenticate Azure DevOps organizations using a Microsoft Account (MSA). 
-These are only needed for Azure DevOps organizations backed by Microsoft Accounts (MSA). 
-Azure DevOps organizations backed a Microsoft Entra tenant does not need the following URLs.
+These endpoints are only needed for Azure DevOps organizations backed by Microsoft Accounts (MSA). 
+Azure DevOps organizations backed a Microsoft Entra tenant doesn't need the following URLs.
 
 ```
 https://live.com 
