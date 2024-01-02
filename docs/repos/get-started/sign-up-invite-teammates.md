@@ -28,8 +28,6 @@ Sign up for Azure Repos with either a Microsoft account or GitHub account.
 -  Azure DevOps creates a project named after your *newly created* Microsoft account.
 -  If you signed up with an existing Microsoft account, [create a project](../../organizations/projects/create-project.md).
 
-Sign in to your organization at any time `https://dev.azure.com/{Your_Organization}`.
-
 # [GitHub account](#tab/github-account)
 
 > [!NOTE]
@@ -44,6 +42,8 @@ Sign in to your organization at any time `https://dev.azure.com/{Your_Organizati
    Azure DevOps turns on the *Invite GitHub users* policy by default. 
    ![Screenshot of the Invite GitHub users policy.](../../media/invite-github-users-policy.png)
 ---
+
+Sign in to your organization at any time `https://dev.azure.com/{Your_Organization}`.
 
 ## Next steps
 
