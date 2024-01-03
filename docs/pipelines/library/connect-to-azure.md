@@ -147,7 +147,7 @@ We recommend this simple approach if:
 >
 > To refresh a service connection, in the Azure DevOps portal, edit the connection and select **Verify**. After you save the edit, the service connection is valid for another 3 months.
 >
-> To remove the need to rotate secrets, go to the service connection details page and select **Convert**. This will convert the service connection to use Workload identity federation instead of using a secret.
+> It is recommended to use workload identity federation instead of creating a secret. This removes the need to rotate secrets and constrains the app registration to its intended purpose. To start using workload identity federation, go to the service connection details page and select **Convert**. This will convert the service connection to use Workload identity federation instead of using a secret. See [Convert an existing ARM service connection to use workload identity federation](#convert-an-existing-arm-service-connection-to-use-workload-identity-federation).
 > 
 
 See also: [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
