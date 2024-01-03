@@ -127,7 +127,7 @@ To publish packages to an Azure Artifacts feed from your pipeline, you must set 
 
 ```yaml
 steps:
-- task: NuGetAuthenticate@0
+- task: NuGetAuthenticate@1
   displayName: 'NuGet Authenticate'
 - task: NuGetCommand@2
   displayName: 'NuGet push'
@@ -137,7 +137,10 @@ steps:
     allowPackageConflicts: true
 ```
 
-To publish a package to an external NuGet feed, you must first create a service connection to connect to that feed. You can do this by going to **Project settings** > **Service connections** > **New service connection**. Select **NuGet**, and then select **Next**. Fill out the form and then select **Save** when you're done. See [Manage service connections](../library/service-endpoints.md) for more details.
+To publish a package to an external NuGet feed, you must first create a service connection to connect to that feed. You can do this by going to **Project settings** > **Service connections** > **New service connection**. Select **NuGet**, and then select **Next**. Fill out the form and then select **Save** when you're done. See [Manage service connections](../library/service-endpoints.md) for more details.  
+
+> [!NOTE]
+> The **NuGetAuthenticate@1** task supports a service connection using basic authenication.  The task doesn't support NuGet API key authentication. If your service connection uses **ApiKey**, you must use the **NuGetCommand@2** task and specify the NuGet API key in the **arguments** field. See [NuGet task](/azure/devops/pipelines/tasks/reference/nuget-command-v2) for more details.
 
 To publish a package to an external NuGet feed, add the following snippet to your YAML pipeline.
 
