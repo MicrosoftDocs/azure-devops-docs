@@ -4,20 +4,28 @@ description: Quickly start hosting python packages with Azure Artifacts
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.date: 01/19/2023
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2019'
 ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 "recommendations": "true"
 ---
 
 # Get started with Python packages in Azure Artifacts
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
 This guide will walk you through using Azure Artifacts to publish and consume Python packages to and from your feed.
 
 ## Create a feed
 
-[!INCLUDE [](../includes/create-feed.md)]
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
+
+1. Enter a descriptive **Name** for your feed and define its **Visibility** (indicating who can view packages within the feed). Specify the **Scope** of your feed, and if you wish to include packages from public sources, mark the **Upstream sources** checkbox.
+
+1. Select **Create** when you're done.
+
+    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
      
 ## Connect to feed
 

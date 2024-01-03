@@ -17,11 +17,26 @@ author: steved0x
 
 If a pipeline doesn't start at all, check the following common trigger related issues. 
 
+::: moniker range=">azure-devops-2022"
+
+* [UI settings override YAML trigger setting](#ui-settings-override-yaml-trigger-setting)
+* [Disable implied YAML CI trigger setting is enabled](#disable-implied-yaml-ci-trigger-setting-is-enabled)
+* [Pull request triggers not supported with Azure Repos](#pull-request-triggers-not-supported-with-azure-repos)
+* [Branch filters misconfigured in CI and PR triggers](#branch-filters-misconfigured-in-ci-and-pr-triggers)
+* [Scheduled trigger time zone conversions](#scheduled-trigger-time-zone-conversions)
+* [UI settings override YAML scheduled triggers](#ui-settings-override-yaml-scheduled-triggers)
+
+::: moniker-end
+
+::: moniker range="<=azure-devops-2022"
+
 * [UI settings override YAML trigger setting](#ui-settings-override-yaml-trigger-setting)
 * [Pull request triggers not supported with Azure Repos](#pull-request-triggers-not-supported-with-azure-repos)
 * [Branch filters misconfigured in CI and PR triggers](#branch-filters-misconfigured-in-ci-and-pr-triggers)
 * [Scheduled trigger time zone conversions](#scheduled-trigger-time-zone-conversions)
 * [UI settings override YAML scheduled triggers](#ui-settings-override-yaml-scheduled-triggers)
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -32,7 +47,7 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 ::: moniker-end
 
-<a name="overridden-yaml-trigger-setting" />
+<a name="overridden-yaml-trigger-setting"></a>
 
 ## UI settings override YAML trigger setting
 
@@ -44,13 +59,23 @@ Check the **Override the YAML trigger from here** setting for the types of trigg
 
 ![Override YAML trigger from here.](../repos/media/pipelines-options-for-git/yaml-pipeline-override-trigger.png)
 
-<a name="using-pull-request-triggers-with-azure-repos" />
+<a name="using-pull-request-triggers-with-azure-repos"></a>
 
 ## Pull request triggers not supported with Azure Repos
 
 If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. In Azure Repos Git, branch policies are used to implement pull request build validation. For more information, see [Branch policy for pull request validation](../repos/azure-repos-git.md#pr-triggers).
 
-<a name="branch-filters-in-ci-and-pr-triggers" />
+:::moniker range=">azure-devops-2022"
+
+## Disable implied YAML CI trigger setting is enabled
+
+YAML pipelines are configured by default with a CI trigger on all branches, unless the [Disable implied YAML CI trigger](/azure/devops/release-notes/2023/sprint-227-update#prevent-unintended-pipeline-runs) setting, introduced in [Azure DevOps sprint 227](/azure/devops/release-notes/2023/sprint-227-update), is enabled. The **Disable implied YAML CI trigger** setting can be configured at the organization level or at the project level, and by default, the setting is not enabled.
+
+If your pipelines use the default implicit CI trigger, and they stop working, check this setting. When the **Disable implied YAML CI trigger** setting is enabled, CI triggers for YAML pipelines are not enabled if the YAML pipeline doesn't have a `trigger` section.
+
+:::moniker-end
+
+<a name="branch-filters-in-ci-and-pr-triggers"></a>
 
 ## Branch filters misconfigured in CI and PR triggers
 
@@ -72,7 +97,7 @@ When you define a YAML PR or CI trigger, you can specify both `include` and `exc
 
 ::: moniker-end
 
-<a name="#scheduled-triggers" />
+<a name="#scheduled-triggers"></a>
 
 ## Scheduled trigger time zone conversions
 

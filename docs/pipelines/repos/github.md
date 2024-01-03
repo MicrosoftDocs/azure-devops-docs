@@ -393,9 +393,6 @@ For more information, see [PR trigger](/azure/devops/pipelines/yaml-schema/pr) i
 > [!NOTE]
 > If your `pr` trigger isn't firing, follow the troubleshooting steps in the [FAQ](#failing-triggers).
 
->[!NOTE]
->[Draft pull requests](https://docs.github.com/github/collaborating-with-issues-and-pull-requests/about-pull-requests#draft-pull-requests) do not trigger a pipeline.
-
 # [Classic](#tab/classic/)
 
 Select the **Pull request validation** trigger and check the **Enable pull request validation** check box to enable builds on pull requests.

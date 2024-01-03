@@ -86,26 +86,9 @@ Management of service principals differs from user accounts in the following key
 * You can't modify a service principal’s display name or avatar on Azure DevOps.
 * A service principal counts as a license for each organization it gets added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
 
-<a name='3-access-azure-devops-resources-with-an-entra-id-token'></a>
-
-### 3. Access Azure DevOps resources with a Microsoft Entra token
-
-<a name='get-an-entra-id-token'></a>
-
-#### Get a Microsoft Entra token
-Acquiring an access token for a managed identity can be done by following along with the Microsoft Entra documentation. For more information, see the examples for [service principals](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token). 
-
-The returned access token is a JWT with the defined roles, which can be used to access organization resources using the token as *Bearer*.
-
-<a name='use-the-entra-id-token-to-authenticate-to-azure-devops-resources'></a>
-
-#### Use the Microsoft Entra token to authenticate to Azure DevOps resources
-* While service principals can be added to Microsoft Entra ID groups (in the Azure portal), we have a current technical limitation preventing us from being able to display them in a list of Microsoft Entra ID group members. This limitation isn't true for Azure DevOps groups. That being said, a service principal still inherits any group permissions set on top of a Microsoft Entra ID group they belong to. 
-* Not all users in a Microsoft Entra ID group are immediately part of an Azure DevOps organization just because an admin creates a group and adds a Microsoft Entra ID group to it. We have a process called "materialization" that happens once a user from a Microsoft Entra ID group signs in to the organization for the first time. A user signing into an organization allows us to determine which users should be granted a license. Since sign-in isn't possible for service principals, an admin must explicitly add it to an organization as described earlier. 
-* You can't modify a service principal’s display name or avatar on Azure DevOps.
-* A service principal counts as a license for each organization it gets added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
-
 ### 3. Access Azure DevOps resources with a Microsoft Entra ID token
+
+<a name='get-a-microsoft-entra-id-token'></a>
 
 #### Get a Microsoft Entra ID token
 Acquiring an access token for a managed identity can be done by following along with the Microsoft Entra ID documentation. For more information, see the examples for [service principals](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token). 
@@ -117,6 +100,11 @@ In the following video example, we move from authenticating with a PAT to using 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWNVM]
 
+* While service principals can be added to Microsoft Entra ID groups (in the Azure portal), we have a current technical limitation preventing us from being able to display them in a list of Microsoft Entra ID group members. This limitation isn't true for Azure DevOps groups. That being said, a service principal still inherits any group permissions set on top of a Microsoft Entra ID group they belong to. 
+* Not all users in a Microsoft Entra ID group are immediately part of an Azure DevOps organization just because an admin creates a group and adds a Microsoft Entra ID group to it. We have a process called "materialization" that happens once a user from a Microsoft Entra ID group signs in to the organization for the first time. A user signing into an organization allows us to determine which users should be granted a license. Since sign-in isn't possible for service principals, an admin must explicitly add it to an organization as described earlier. 
+* You can't modify a service principal’s display name or avatar on Azure DevOps.
+* A service principal counts as a license for each organization it gets added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
+
 Another example demonstrates how to connect to Azure DevOps using a User Assigned Managed Identity within an Azure Function.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8L]
@@ -127,6 +115,9 @@ Service principals can be used to call Azure DevOps REST APIs and do most action
 * Service principals can't be organization owners or create organizations.
 * Service principals can't create tokens, like [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH Keys](../../../repos/git/use-ssh-keys-to-authenticate.md). They can generate their own Microsoft Entra ID tokens and these tokens can be used to call Azure DevOps REST APIs.
 * We don't support [Azure DevOps OAuth](./oauth.md) for service principals.
+
+> [!NOTE]
+> You can only use Application ID and not the Resource URIs associated with Azure DevOps for generating tokens.
 
 ## FAQs
 
@@ -148,7 +139,7 @@ A: Service principals and managed identities are priced similarly as users, base
 
 #### Q: Can I use a service principal or managed identity with Azure CLI?
 
-A: Yes! Anywhere that asks for PATs in the [Azure CLI](/cli/azure/authenticate-azure-cli) can also accept [Microsoft Entra access tokens](#get-an-entra-id-token). See these examples for how you might pass a Microsoft Entra token in to authenticate with CLI.
+A: Yes! Anywhere that asks for PATs in the [Azure CLI](/cli/azure/authenticate-azure-cli) can also accept [Microsoft Entra ID access tokens](#get-a-microsoft-entra-id-token). See these examples for how you might pass a Microsoft Entra token in to authenticate with CLI.
 
 ```powershell
 # To authenticate with a command: After typing this command, the az devops login will prompt you to enter a token. You can add an Entra ID token too! Not just a PAT.
@@ -335,7 +326,7 @@ Azure supports workload identity federation using the OpenID Connect protocol, w
 ### Repos
 #### Q: Can I use a service principal to do git operations, like clone a repo?
 
-A: See the following example of how we passed a [Microsoft Entra token](#get-an-entra-id-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
+A: See the following example of how we passed a [Microsoft Entra ID token](#get-a-microsoft-entra-id-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
 
 ```powershell
 $ServicePrincipalAadAccessToken = 'Entra ID access token of a service principal'
