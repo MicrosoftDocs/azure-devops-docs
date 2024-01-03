@@ -8,21 +8,17 @@ ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: tutorial
 ms.author: chcomley
 author: chcomley
-monikerRange: '<= azure-devops' 
-ms.date: 07/18/2023
+monikerRange: '>= azure-devops-2019' 
+ms.date: 01/03/2024
 ---
 
 # View and configure team velocity
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Velocity metrics provide useful information, so teams can plan and [forecast](../../boards/sprints/forecast.md) sprints and determine how well they estimate and meet planned commitments. You can get an indication of how much work a team can complete during a sprint based on either **a count of work items completed** or **the sum of estimates made** for effort (product backlog items), story points (user stories), or size (requirements). Use velocity as an aid to determine team capacity and don't confuse it with key performance indicators.
 
-::: moniker range=">= azure-devops-2019"
-
 ## Prerequisites  
-
-::: moniker-end
 
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 - Be aware of the [required and recommended tasks](#required-and-recommended-tasks), listed later in this article.
@@ -30,11 +26,7 @@ Velocity metrics provide useful information, so teams can plan and [forecast](..
 > [!TIP]
 > The images you see from your web portal may differ from the images you see in this article. These differences result from updates made to your web app, options that you or your admin have enabled, and which process was chosen when creating your project—Agile, Basic, Scrum, or CMMI. The Basic process is available with Azure DevOps Server 2019 Update 1 and later versions.
 
-::: moniker range=">= azure-devops-2019"
-
 ## Velocity chart types
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -46,7 +38,7 @@ Items assigned to a *Proposed* or *Resolved* aren't included in any of the calcu
 
 |Workflow state  |Description |
 |---------|---------|
-|Planned    | Calculated based on the number of work items assigned to the sprint before the start of the sprint. If a work item gets assigned to the sprint before it begins, but gets assigned to another sprint after the start of the original sprint, it shows as Planned in the original sprint. Then, the work item shows as Late or Incomplete in the new sprint that it's assigned to.     |
+|Planned    | Calculated based on the number of work items assigned to the sprint before the start of the sprint. If a work item is assigned to the sprint before it begins, but gets assigned to another sprint after the start of the original sprint, it shows as Planned in the original sprint. Then, the work item shows as Late or Incomplete in the new sprint that it is assigned to.     |
 |Completed  | Calculated based on the number of work items assigned to the sprint before or after the start of the sprint and completed before the end of the sprint.        |
 |Completed Late     |Calculated based on the number of work items assigned to the sprint before or after the start of the sprint but completed after the end of the sprint.          |
 |Incomplete    | Calculated based on the number of work items assigned to the sprint before or after the start of the sprint and not yet completed.        |  
@@ -98,12 +90,6 @@ Both of these charts support visualizing team velocity for several sprints. The 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-The in-context Velocity charts are based on the sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) assigned to backlog items. These charts are similar to the one shown in the following image. 
-
-::: moniker-end
-
 <a id="velocity-chart"></a>
 
 ## View the Velocity in-context report   
@@ -121,7 +107,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 4. Use the interactive controls to select the count or sum field and number of iterations. Select **Custom iterations** to specify any number of iterations between 1 and 15. 
    
-   If your team hasn't completed a sprint or if you're working on items before a sprint start date, there's no data to analyze and forecast. You might see this message: *Set iteration dates to use this widget*. To resolve this situation, set an iteration date range to include present date or wait for the sprint to start. 
+   If your team doesn't complete a sprint or if you're working on items before a sprint start date, there's no data to analyze and forecast. You might see this message: *Set iteration dates to use this widget*. To resolve this situation, set an iteration date range to include present date or wait for the sprint to start. 
 
 	Hover over a column area to show a summary of planned and completed work items. For example, for the 07_2019 sprint, 131 items are planned.
 
@@ -143,7 +129,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 1. From the web portal, open your product backlog.  
 
-1. (1) Check that you've selected the right project, (2) select **Boards** > **Backlogs**, and then (3) select the correct team from the team selector menu. 
+2. Check that you selected the right project, select **Boards** > **Backlogs**, and then select the correct team from the team selector menu. 
 
    :::image type="content" source="../../boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png" alt-text="Screenshot to Open Boards, Backlogs, for a team, Azure DevOps Server 2019.":::
 
@@ -154,11 +140,11 @@ Velocity reports are available for each backlog level, both product and portfoli
 	> [!TIP]    
 	> Select the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
-2. Check that you selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
+3. Select **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
    :::image type="content" source="../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text="Screenshot to select product backlog level, Backlog items, Stories, or Requirements in Azure DevOps Server 2019.":::
 
-3. Open the Velocity chart.  
+4. Open the Velocity chart.  
 
    :::image type="content" source="media/velocity/velocity-forecast-open-chart-vert.png" alt-text="Screenshot to select product backlog level, Backlog items, Stories, or Requirements, Azure DevOps Server 2019.":::
 
@@ -167,7 +153,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 	- Assign backlog items to sprints.   
 	- Estimate backlog items by defining the Effort, Story Points, or Size.
  
-4. The chart tracks your estimated backlog work (sum of Effort, Story Points, or Size) that's completed (green) in the previous sprints or is in progress (blue).  
+5. The chart tracks your estimated backlog work (sum of Effort, Story Points, or Size) that is completed (green) in the previous sprints or is in progress (blue).  
 
    As the following chart shows, velocity tends to fluctuate from sprint-to-sprint for different kinds of reasons. However, you can quickly determine the average velocity by averaging the values shown in green for each sprint. You can then plug the average into the Forecast tool.
 
@@ -175,29 +161,6 @@ Velocity reports are available for each backlog level, both product and portfoli
 
    Work items based on the [Scrum process](../../boards/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../boards/work-items/workflow-and-state-categories.md).
 ::: moniker-end
-
-::: moniker range="tfs-2018"
-
-1. From the web portal, open the product backlog and then select the Velocity chart.  
-
-   :::image type="content" source="media/velocity/velocity-forecast-open-chart.png" alt-text="Screenshot to select the Velocity chart in the upper right area of the page.":::
-
-   For charts to appear, your team must carry out these activities: 
-   - Select sprints for your team.
-   - Assign backlog items to sprints.
-   - Estimate backlog items by defining the Effort, Story Points, or Size.
- 
-2. The report tracks your estimated backlog work (sum of Effort, Story Points, or Size) that's completed (green) in the previous sprints or is in progress (blue).  
-
-	As this chart shows, velocity fluctuates from sprint-to-sprint for different kinds of reasons. However, you can quickly determine the average velocity by averaging the values shown in green for each sprint. You can then plug the average into the Forecast tool.
-
-   :::image type="content" source="media/team-velocity-chart-web-7-iterations.png" alt-text="Screenshot of Velocity chart showing seven sprints of in progress and completed work.":::
-
-   Work items based on the [Scrum process](../../boards/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../boards/work-items/workflow-and-state-categories.md).
-	
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
 
 ## Configure the Velocity widget    
 
@@ -220,7 +183,7 @@ Complete the following steps to configure the Velocity widget.
 3. (Optional) Select the check boxes to show additional information for work completed later than planned for each sprint. 
 
 	- **Display planned work for iterations:** Check this box to display the amount of work planned for an iteration at the start of the iteration, which is useful for comparing your planned work to actual deliverables. By default, the count of planned work begins on the start date of the iteration.
-	- **Days past start date of iteration when planned work is final**: Specify the number of days past the start date to count planned work. For example, if the first two days of an iteration are for planning, then you can enter `3`, and planned work gets counted on the third day. For example, if the iteration starts on `01/01/2018`, and three backlog items are assigned to the iteration on `01/01/2018` end-of-day, then those three backlog items are considered as Planned. If your team doesn't complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final.  
+	- **Days past start date of iteration when planned work is final**: Specify the number of days past the start date to count planned work. For example, if the first two days of an iteration are for planning, then you can enter `3`, and planned work gets counted on the third day. For example, if the iteration starts on `01/01/2024`, and three backlog items are assigned to the iteration on `01/01/2024` end-of-day, then those three backlog items are considered as Planned. If your team doesn't complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final.  
 
      > [!NOTE]
      > Work is considered Planned if it's assigned to the iteration as of the Iteration Start Date.
@@ -237,8 +200,6 @@ Complete the following steps to configure the Velocity widget.
 
 For more information about **Planned**, **Completed**, **Completed Late**, and **Incomplete** states, see the [State descriptions](#state-descriptions-table) mentioned earlier in this article.
 
-::: moniker-end
-
 ## Required and recommended tasks  
  
 For your team to gain the greatest utility from the Velocity charts, follow these required and recommended tasks.  
@@ -253,7 +214,7 @@ For your team to gain the greatest utility from the Velocity charts, follow thes
 *	Determine how your team wants to [treat bugs](../../organizations/settings/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs show up on the backlog and be counted within the Velocity chart and forecasting. 
 *	[Set your team's area path](../../organizations/settings/set-area-paths.md). The forecast tool forecasts those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
 *	Don't  create a hierarchy of backlog items and bugs. The Kanban and task boards and sprint backlog only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list-only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../../boards/backlogs/organize-backlog.md). You can quickly map stories to features, which create parent-child links in the background.  
-*	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.
+*	Update the status of those backlog items that the team completed at the end of the sprint. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.
 * Minimize the size variability of your backlog items to help strengthen the team's ability to create truer estimates. Variability increases uncertainty, but minimizing the variability of your estimates, increases the likelihood of more reliable velocity metrics and forecast results. Estimates, by their nature, don't reflect reality. They represent a best guess by the team as to the effort required to complete an item, as it relates to the effort to complete other items on the backlog.  
 
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
