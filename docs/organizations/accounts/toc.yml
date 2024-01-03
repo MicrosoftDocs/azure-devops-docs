@@ -28,7 +28,7 @@
   - name: Change organization owner
     displayName: update, reassign, Project Collection Administrator, owner
     href: change-organization-ownership.md
-  - name: Change organization region
+  - name: Change organization geography
     displayName: update, reassign, region, geography, location, Virtual Support Agent
     href: change-organization-location.md
   - name: Change time zone

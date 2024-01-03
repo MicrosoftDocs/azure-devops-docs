@@ -36,6 +36,7 @@ The burndown and burnup widgets give you flexibility to create charts for any ty
 3. Select a widget, and then **Add**.
    
    :::image type="content" source="media/burndown-widget/add-widget.png" alt-text="Screenshot showing widget selection pane and blue Add button.":::
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -43,6 +44,7 @@ The burndown and burnup widgets give you flexibility to create charts for any ty
 1. [Enable or install Analytics](analytics-extension.md).    
 2. [Add the widget to your dashboard](./add-widget-to-dashboard.md).  
 3. Select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions**  and **Configure**.   
+
 ::: moniker-end
 
 ## Configure burndown or burnup widget
