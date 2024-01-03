@@ -243,14 +243,11 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 1. Use the interactive controls to select from the following options:  
 
    1. The **Start Date** and **End Date** of the sprint. These dates will default to the team's current iteration sprint dates.   
-
    1. The **Backlogs/Work Items** to burn down on, either the product backlog&mdash;Stories, Issues, Product Backlog Items, or Requirements&mdash;or Tasks backlog to use. Your selection impacts the options available for the **Burndown on** menu.  
-
    1. The **Burndown on** field to use to calculate burndown, either a Count of Work Items or a sum of a field, such as Story Points, Effort, or Size.  
-
    1. Check or uncheck **Show non-working days**. Non-working days appear as gray bars in the background when enabled. Default non-working days are set for a team and for a team's sprint through the capacity page. For more information, see [Set sprint capacity](../../boards/sprints/set-capacity.md).  
 
-      Select **Reset** to reset the controls to the default options. By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
+    Select **Reset** to reset the controls to the default options. By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
 
 1. If you don't track Remaining Work in tasks, you can view burndown based on a count of work items/tasks. Hover over any point on the chart to show a summary of the data for a specific day.
 
@@ -350,10 +347,9 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 	> [!div class="mx-imgBorder"] 
 	> ![Sprint Burndown Widget - Configuration](media/sprint-burndown/sprint-burndown-config.png)  
 
-1. Modify the **Title** of the widget and select your preferred **Size**. The Sprint Burndown widget can scale up to 10x10.    
+2. Modify the **Title** of the widget and select your preferred **Size**. The Sprint Burndown widget can scale up to 10x10.    
 
-
-2. Make the following selections: 
+3. Make the following selections: 
 	- **Team** - Select the **Team** you want to track.   
 	- **Backlogs and work items** - Select the work items to include in your burndown. You can select to any backlog or a specific work item type.  
 	- **Burndown on** - Choose how you want to burndown. You may burndown by count of work items or a sum based on a selected field.  
@@ -371,12 +367,12 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 ## Configure the Sprint Burndown (Legacy) widget 
 
-1. To configure the widget, select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option. 
+To configure the widget, select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option. 
 
-	> [!div class="mx-imgBorder"] 
-	> ![Sprint Burndown Legacy Widget - Configuration - Legacy Version](media/sprint-burndown/sprint-burndown-legacy-config.png)  
+> [!div class="mx-imgBorder"] 
+> ![Sprint Burndown Legacy Widget - Configuration - Legacy Version](media/sprint-burndown/sprint-burndown-legacy-config.png)  
 
-	If your dashboard already has a legacy version available, you can easily upgrade the widget by editing the widget's configuration, and checking **Try the new version now**. You can always go back to the legacy version by unchecking the box.
+If your dashboard already has a legacy version available, you can easily upgrade the widget by editing the widget's configuration, and checking **Try the new version now**. You can always go back to the legacy version by unchecking the box.
 
 ::: moniker-end
 
@@ -428,13 +424,9 @@ Teams may find it useful to review these reports periodically during their sprin
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Burndown and burnup guidance](burndown-guidance.md) 
-
-In addition to the sprint burndown chart, teams can review the [velocity](team-velocity.md) at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint. You can use your team velocity as input into the [forecast](../../boards/sprints/forecast.md) tool to help plan your sprints.   
+> [Burndown and burnup guidance](burndown-guidance.md)
 
 ## Related articles
-
-You can learn more about defining, planning, and executing your sprints from these articles: 
 
 - [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 - [Sprint planning](../../boards/sprints/assign-work-sprint.md)  
