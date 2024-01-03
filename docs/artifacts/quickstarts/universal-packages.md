@@ -12,6 +12,8 @@ monikerRange: 'azure-devops'
 
 # Publish and download universal packages in Azure Artifacts
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 Universal Packages offer developers the capability to store an extensive array of package types that extend beyond the conventional ones, such as NuGet, npm, Maven, or Python packages. Using Azure CLI, you can conveniently publish and download universal packages directly from the command line. The size of published packages can vary, reaching up to 4 TB, but must always maintain the essential requirement of including a name and version number. This article will walk you through the steps to publish and download your universal packages to your Azure Artifacts feed.
 
 ## Prerequisites

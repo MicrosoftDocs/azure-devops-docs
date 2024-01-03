@@ -5,10 +5,12 @@ ms.topic: tutorial
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 06/14/2023
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2022'
 ---
 
 # Build and publish Docker images to Azure Container Registry
+
+[!INCLUDE [version-gt-eq-2022](../../../includes/version-gt-eq-2022.md)] 
 
 Using Azure Pipelines, you can set up a pipeline workflow to build and publish your Docker images to Azure Container Registry. In this article, you will learn how to:
 
@@ -27,8 +29,8 @@ Using Azure Pipelines, you can set up a pipeline workflow to build and publish y
 - [An Azure DevOps organization](../../../organizations/accounts/create-organization.md).
 
 - [An Azure DevOps project](../../..//organizations/projects/create-project.md).
-    -  The [**Administrator** role for service connections](../../library/add-resource-protection.md) in your Azure DevOps project. 
 
+- The [**Administrator** role for service connections](../../library/add-resource-protection.md) in your Azure DevOps project. 
 
 - An Azure account with an active subscription. [Sign up for free](https://azure.microsoft.com/free/) if you don't have one already.
 

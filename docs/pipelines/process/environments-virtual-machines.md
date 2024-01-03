@@ -57,7 +57,7 @@ The first step in adding a VM resource is to define an environment.
    :::image type="content" source="media/vm-creation.png" alt-text="Add a virtual machine.":::    
 
 1. Run the copied script on each of the target virtual machines that you want to register with this environment. 
-   - If you're installing on Windows, you'll need to run the script an PowerShell administrator.
+   - If you're installing on Windows, you'll need to run the script as a PowerShell administrator.
    - If you're installing on Linux, you'll need to have permission to download and run executable scripts. 
 
    > [!NOTE]

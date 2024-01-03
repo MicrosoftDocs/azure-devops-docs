@@ -140,7 +140,13 @@
     items:
     - name: Cargo quickstart
       href: get-started-cargo.md
-      displayName: cargo
+      displayName: cargo, crate
+    - name: Use packages from Crates.io
+      href: cargo/cargo-upstream-source.md
+      displayName: cargo, upstream, crate
+    - name: Publish Cargo packages to a feed (Classic/YAML)
+      href: ../pipelines/artifacts/cargo-pipelines.md?toc=/azure/devops/artifacts/toc.json
+      displayName: cargo, publish, crate, yaml, classic
 - name: Feeds, views, and upstream sources
   items:
   - name: Feeds
