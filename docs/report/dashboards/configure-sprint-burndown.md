@@ -31,12 +31,6 @@ Throughout your sprint, you can monitor the sprint burndown report to determine 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-
-Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](../../boards/sprints/assign-work-sprint.md). Both the in-context sprint burndown report and the Sprint Burndown widget support tracking burndown based on Remaining Work assigned to sprint tasks. 
-
-::: moniker-end
-
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 Use this article to learn about: 
