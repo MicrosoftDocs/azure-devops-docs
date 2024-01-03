@@ -499,6 +499,11 @@
       "source_path": "docs/organizations/security/provide-stakeholder-pipeline-access.md",
       "redirect_url": "/azure/devops/organizations/security/stakeholder-access",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/get-started/key-concepts-repos.md",
+      "redirect_url": "/azure/devops/repos/get-started/index",
+      "redirect_document_id": false
     }
   ]
 }

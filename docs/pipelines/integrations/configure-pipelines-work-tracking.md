@@ -170,7 +170,6 @@ This setting isn't available for Azure DevOps Server 2019 or earlier versions.
 
 <a id="classic-build-properties"></a>
 
-
 **Build properties**
 
 Open the build pipeline, choose to edit the pipeline, and then choose the **Options** tab. 
@@ -287,7 +286,7 @@ This feature isn't supported for YAML pipelines in Azure DevOps Server 2019.
 
 # [Classic Build](#tab/classic-build)
 
-1. Open pipeline **Build properties** as describe in [Build properties](#classic-build-properties).
+1. Open pipeline **Build properties** as described in [Build properties](#classic-build-properties).
 
 1. Enable **Automatically link work items included in this run**. Add the branches to include or exclude.   
 	:::image type="content" source="media/pipelines-integration/auto-link-work-items-classic-build-pipeline.png" alt-text="Screenshot of Automatically link work items in this build property settings.":::
@@ -374,7 +373,7 @@ If a build pipeline fails, you can automatically create a work item to track get
 
 <a id="classic-options-integrations"></a> 
 
-1. Open pipeline build options as describe in [Build properties](#classic-build-properties).
+1. Open pipeline build options as described in [Build properties](#classic-build-properties).
 
 2. Enable **Create work item on failure** and choose the type of work item to create. Optionally check the  **Assign to requestor** checkbox to set the **Assign To** field and add fields to set within the work item to create. 
 
@@ -405,7 +404,7 @@ To learn the reference name for a field, look it up from the [Work item field in
 
 # [Classic Build](#tab/classic-build)
 
-1. Open pipeline **Build properties** as describe in [Build properties](#classic-build-properties).
+1. Open pipeline **Build properties** as described in [Build properties](#classic-build-properties).
 
 1. Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
 
