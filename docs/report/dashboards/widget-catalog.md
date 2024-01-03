@@ -614,6 +614,7 @@ Add one or more of the following widgets to support adding:
 You might find more widgets of interest in the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
 
 If your organization owner or project collection administrator disables a marketplace widget, you see the following image: 
+
 :::image type="content" source="media/widget-catalog-disabled-widget.png" alt-text="Screenshot of Disabled widget extension notification.":::
 
 To regain access to it, request your admin to reinstate or reinstall the widget. 
