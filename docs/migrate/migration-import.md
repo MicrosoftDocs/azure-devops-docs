@@ -19,7 +19,7 @@ This article walks you through the preparation required to get an import to Azur
 
 ## Prerequisites 
 
-- You must set up a Microsoft Entra tenant as described [Microsoft Entra Connect Sync: Make a change to the default configuration](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration). The data migration tool sets up a link to your Microsoft Entra tenant when your Azure DevOps Services organization is created as part of the beginning of the import process. 
+- You must set up a Microsoft Entra tenant as described in [Microsoft Entra Connect Sync: Make a change to the default configuration](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration). The data migration tool sets up a link to your Microsoft Entra tenant when your Azure DevOps Services organization is created as part of the beginning of the import process. 
    When you synchronize your on-premises Active Directory with Microsoft Entra ID, your team members can use the same credentials to authenticate and your Azure DevOps Services administrators can use your Active Directory groups for setting permissions within your Azure DevOps Services organization. To set up the synchronization, use the Microsoft Entra Connect technology.  
 - Before you begin the import tasks, check to ensure that you're running a [supported version of Azure DevOps Server](migration-overview.md#supported-azure-devops-server-versions-for-import). 
 - We recommend that you use the [Step-by-step migration guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to technical documentation, tools, and best practices.
@@ -85,11 +85,11 @@ The main log file is named *DataMigrationTool.log*. It contains details about ev
 
 For example, if TfsMigrator reports an error in the "Validating Project Processes" step, you can open the *ProjectProcessMap.log* file to view everything that was run for that step instead of having to scroll through the entire log. 
 
-You should review the *TryMatchOobProcesses.log* file only if you're trying to import your project processes to use the [inherited model](migration-processtemplates.md). If you don't want to use the inherited model, you can ignore these errors, because they don't prevent you from importing to Azure DevOps Services. 
+Review the *TryMatchOobProcesses.log* file only if you're trying to import your project processes to use the [inherited model](migration-processtemplates.md). If you don't want to use the inherited model, you can ignore these errors, because they don't prevent you from importing to Azure DevOps Services. 
 
 ## Generate import files
 
-By now, you ran the data migration tool validation against the collection, and it's returning a result of "All collection validations passed." Before you take a collection offline to migrate it, generate the import files. When you run the `prepare` command, you generate two import files: 
+The data migration tool validated the collection and it's returning a result of "All collection validations passed." Before you take a collection offline to migrate it, generate the import files. When you run the `prepare` command, you generate two import files: 
 
 - *IdentityMapLog.csv*: Outlines your identity map between Active Directory and Microsoft Entra ID.
 - *import.json*: Requires you to fill out the import specification you want to use to kick off your migration. 
@@ -127,7 +127,7 @@ When the data migration tool runs the `prepare` command, it runs a complete vali
 Shortly after the command starts running, a Microsoft Entra sign-in window displays. Sign in with an identity that belongs to the tenant domain, which is specified in the command. Make sure that the specified Microsoft Entra tenant is the one you want your future organization to be backed with. In our Fabrikam example, a user enters credentials that are similar to the following example screenshot.
 
 > [!IMPORTANT] 
-> Do *not* use a test Microsoft Entra tenant for a test import and your production Microsoft Entra tenant for the production run. Using a test Microsoft Entra tenant can result in identity import issues when you begin your production run with your organization's production Microsoft Entra tenant.
+> Don't use a test Microsoft Entra tenant for a test import and your production Microsoft Entra tenant for the production run. Using a test Microsoft Entra tenant can result in identity import issues when you begin your production run with your organization's production Microsoft Entra tenant.
 
 When you run the `prepare` command successfully in the data migration tool, the results window displays a set of logs and two import files. In the log directory, find a logs folder and two files: 
 
@@ -153,7 +153,7 @@ The *import.json* file's displayed fields and required actions are described in 
 | Target | Properties of the new organization to import into. | No action required. Review information for the subfield actions to follow. |
 | Name | The name of the organization to be created during the import. | Provide a name. The name can be quickly changed later after the import completed.<br>**NOTE**: Don't* create an organization with this name before you run the import. The organization is created as part of the import process. |
 | ImportType | The type of import that you want to run. | No action required. In a later step, select the type of import to run. |
-| Validation Data | Information needed to help drive your import experience. | The data migration tool generates the "ValidationData" section. It contains information to help drive your import experience. Do *not* edit the values in this section, or your import could fail to start. |
+| Validation Data | Information needed to help drive your import experience. | The data migration tool generates the "ValidationData" section. It contains information to help drive your import experience. Don't* edit the values in this section, or your import could fail to start. |
 
 After you complete the preceding process, you should have a file that looks like the following example. 
 
@@ -264,7 +264,7 @@ You don't need to repeat a dry-run import if users' Visual Studio subscriptions 
 
 ## Prepare for import
 
-By now, you have everything ready to execute on your import. You need to schedule downtime with your team to take the collection offline for the migration. When you agree upon a time to run the import, upload the required assets you generated and a copy of the database to Azure. This process has the following five steps.
+Now you have everything ready to execute on your import. Schedule downtime with your team to take the collection offline for the migration. When you agree upon a time to run the import, upload the required assets you generated and a copy of the database to Azure. Preparing for import consists of the following five steps.
 
 Step 1: [Take the collection offline and detach it](#step-1-detach-your-collection).  
 
