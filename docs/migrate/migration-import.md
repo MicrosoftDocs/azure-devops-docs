@@ -151,7 +151,7 @@ The *import.json* file's displayed fields and required actions are described in 
 | Files | The names of the files containing import data. | No action required. Review information for the subfield actions to follow. |
 | DACPAC | A DACPAC file that packages the collection database to be used to bring in the data during the import. | No action required. In a later step, you create this file by using your collection and then upload it to an Azure storage account. Update the file based on the name you use when you generate it later in this process. |
 | Target | Properties of the new organization to import into. | No action required. Review information for the subfield actions to follow. |
-| Name | The name of the organization to be created during the import. | Provide a name. The name can be quickly changed later after the import completed.<br>**NOTE**: Don't* create an organization with this name before you run the import. The organization is created as part of the import process. |
+| Name | The name of the organization to be created during the import. | Provide a name. The name can be quickly changed later after the import completed.<br>**NOTE**: *Don't* create an organization with this name before you run the import. The organization is created as part of the import process. |
 | ImportType | The type of import that you want to run. | No action required. In a later step, select the type of import to run. |
 | Validation Data | Information needed to help drive your import experience. | The data migration tool generates the "ValidationData" section. It contains information to help drive your import experience. Don't* edit the values in this section, or your import could fail to start. |
 
