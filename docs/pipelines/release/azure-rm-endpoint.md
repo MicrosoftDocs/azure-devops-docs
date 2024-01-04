@@ -53,15 +53,21 @@ When you save your new ARM service connection, Azure DevOps then:
 
 Below are some of the issues that may occur when creating service connections:
 
-- [Insufficient privileges to complete the operation](#privileges)
-- [Failed to obtain an access token](#sessionexpired)
-- [A valid refresh token was not found](#sessionexpired)
-- [Failed to assign contributor role](#contributorrole)
-- [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-service-connection)
-- [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
-- [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
-- [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
-- [Azure subscription is not passed from the previous task output](#azure-subscription-is-not-passed-from-the-previous-task-output)
+- [Troubleshoot ARM service connections](#troubleshoot-arm-service-connections)
+  - [What happens when you create an ARM service connection?](#what-happens-when-you-create-an-arm-service-connection)
+  - [Troubleshooting scenarios](#troubleshooting-scenarios)
+    - [Insufficient privileges to complete the operation](#insufficient-privileges-to-complete-the-operation)
+      - [The user has only guest permission in the directory](#the-user-has-only-guest-permission-in-the-directory)
+      - [The user is not authorized to add applications in the directory](#the-user-is-not-authorized-to-add-applications-in-the-directory)
+    - [Failed to obtain an access token or a valid refresh token was not found](#failed-to-obtain-an-access-token-or-a-valid-refresh-token-was-not-found)
+    - [Failed to assign Contributor role](#failed-to-assign-contributor-role)
+    - [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-when-creating-a-service-connection)
+    - [Some subscriptions are missing from the list of subscriptions](#some-subscriptions-are-missing-from-the-list-of-subscriptions)
+    - [Service principal's token expired](#service-principals-token-expired)
+    - [Failed to obtain the JWT by using the service principal client ID](#failed-to-obtain-the-jwt-by-using-the-service-principal-client-id)
+    - [Azure subscription is not passed from the previous task output](#azure-subscription-is-not-passed-from-the-previous-task-output)
+    - [What authentication mechanisms are supported? How do managed identities work?](#what-authentication-mechanisms-are-supported-how-do-managed-identities-work)
+  - [Related articles](#related-articles)
 
 <a name="privileges"></a>
 
@@ -203,7 +209,7 @@ To renew the access token for an automatically created service principal:
 
 1. Select **Save**.
 
-Your service principal's token has now been renewed for two more years.
+Your service principal's token has now been renewed for 3 more months.
 
    > [!NOTE]
    > This operation is available even if the service principal's token has not expired.
