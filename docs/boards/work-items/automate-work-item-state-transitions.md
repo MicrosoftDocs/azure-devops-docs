@@ -15,6 +15,9 @@ ms.date: 01/05/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+> [!NOTE]
+> Team Work Item Automation Rules is currently in Private Preview.
+
 Automatically update the state of a work item according to the state of its child tasks. For example, if one task is changed to `Doing`, then the parent gets set to `Doing`. And if all tasks are in `Closed` state, then the parent gets `Closed`.
 
 Rules are established at the team backlog level and are applicable to all work items at that specific level. You have the flexibility to establish these rules independently for each backlog level, including stories, features, and epics. For example, you can automate the closure of user stories, but keep features and epics open.
