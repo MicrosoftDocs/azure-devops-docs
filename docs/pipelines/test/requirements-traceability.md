@@ -4,7 +4,7 @@ description: Link requirements, tests, and bugs to enable requirements traceabil
 ms.assetid: 41F15A66-D8C2-43AA-9E38-BCED9A8D3F55
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18, cross-service"
-ms.author: ravikum
+ms.author: rbatra
 author: raviLiftr
 ms.date: 07/01/2020
 monikerRange: '<= azure-devops'
