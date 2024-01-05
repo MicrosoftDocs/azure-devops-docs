@@ -62,19 +62,19 @@ Do the following steps to set team rules for each backlog level.
 
 These rules operate seamlessly, regardless of where you make updates to the child items, such as on the sprint board, for example.
 
-:::image type="content" source="media/sprintboard-drag-and-drop-update-parent.gif" alt-text="Gif of demo of automation rules for sprintboard, drag and drop child task activates, and then closes the parent user story on the board.":::
+:::image type="content" source="media/sprintboard-drag-and-drop-update-parent.gif" alt-text="Animation of demo of automation rules for sprintboard, drag and drop child task activates, and then closes the parent user story on the board.":::
 
 **Rules applied to the user stories backlog level**
 
 The following example shows the rules applied to the user stories backlog level.
 
-:::image type="content" source="media/backlog-child-closes-parent.gif" alt-text="Gif of demo of automation rules for simple workflow, closing a child task closes the parent user story on the backlog.":::
+:::image type="content" source="media/backlog-child-closes-parent.gif" alt-text="Animation of demo of automation rules for simple workflow, closing a child task closes the parent user story on the backlog.":::
 
 **Rules applied to several backlog levels in sync**
 
 The following example shows the rules applied to several backlog levels in sync.
 
-:::image type="content" source="media/rules-applied-several-backlog-levels.gif" alt-text="Gif of demo of automation rules applied to several backlog levels in sync, when you close all tasks, the parent user story closes, and when you close all user stories, their parent feature closes.":::
+:::image type="content" source="media/rules-applied-several-backlog-levels.gif" alt-text="Animation of demo of automation rules applied to several backlog levels in sync, when you close all tasks, the parent user story closes, and when you close all user stories, their parent feature closes.":::
 
 ## FAQs
 
