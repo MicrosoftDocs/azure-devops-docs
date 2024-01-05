@@ -9,16 +9,16 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2023
+ms.date: 01/04/2024
 ---
 
 # About work items and work item types
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You use work items to track features and requirements you're developing, code defects or bugs, and issues or risks to your project. Each work item is based on a work item type that determines the work item fields available for tracking information. The work item types available to you differ depending on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md): **Agile**, **Basic**, **Scrum**, or **CMMI**.
+Use work items to track features and requirements you're developing, code defects or bugs, and issues or risks to your project. Each work item is based on a work item type that determines the work item fields available for tracking information. The work item types available to you differ depending on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md): **Agile**, **Basic**, **Scrum**, or **CMMI**.
 
-Each work item represents an object stored in the work item data store, and is assigned a unique identifier within an organization or project collection. The available work item types depend on the [process you used when creating your project](guidance/choose-process.md).  
+Each work item represents an object stored in the work item data store, and is assigned a unique identifier within an organization or project collection. The available work item types depend on the [process you used when you created your project](guidance/choose-process.md).  
 
 If you're just getting started, read this article. To jump right in and start tracking work on a Kanban board, see [Plan and track work](../get-started/plan-track-work.md). For a quick reference to various work item tasks and key concepts, see [Work item quick reference](quick-ref.md).
 
@@ -76,7 +76,7 @@ You can include or revise fields within a work item type. You can also introduce
 
 ## Work item form and Details tab
 
-The work item form displays the fields used to track information associated with each individual work item. You can define and update a work item through its respective work item form, in addition to other methods like bulk importing, exporting, updating, and modifying work items.
+The work item form displays the fields used to track information associated with each individual work item. Define and update a work item through its respective work item form, in addition to other methods like bulk import, export, update, and modify work items.
 
 Each work item form contains several tabs. The **Details** tab contains the common fields, other fields defined for the work item type, and the **Discussion** control. Common fields defined for all work item types display at the top of the work item form. As shown in the following image, these fields include the following fields: **Title**, **Assigned To**, **State**, **Reason**, **Area**, and **Iteration**.  You can update these fields at any time. 
 
@@ -96,7 +96,7 @@ Each work item form contains several tabs. The **Details** tab contains the comm
 | ![Attachment tab icon](../backlogs/media/icon-attachments-tab-wi.png) | Open Attachments tab   |
 | ![full screen icon](../media/icons/fullscreen_icon.png) / ![exit full screen icon](../media/icons/exitfullscreen_icon.png)     | Enter or exit full display mode of a section within the form   |
 |![Collapse section icon](../media/icons/collapse-wi-section.png)/![Expand section icon](../media/icons/expand-wi-section.png) | Collapse or expand a section within the form   |  
-| ![New linked work item icon](../media/icons/new-linked-work-item.png) | Add new work item and link to existing work item (May appear under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
+| ![New linked work item icon](../media/icons/new-linked-work-item.png) | Add new work item and link to existing work item (might appear under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
 | ![Change work item type icon](../media/icons/change-type-icon.png) | [Change work item type](../backlogs/remove-delete-work-items.md) (Appears under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
 | ![Change project icon](../media/icons/change-team-project-icon.png) | [Move work item to a different project](../backlogs/remove-delete-work-items.md) (Appears under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
 | ![Clone icon](../media/icons/clone-icon.png) | [Copy work item and optionally change work item type](../backlogs/copy-clone-work-items.md#copy-clone) (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
@@ -171,7 +171,7 @@ The four main states that are defined for the User Story (Agile process) describ
 
 ### Assign work 
 
-You can only assign a work item to one person at a time. The **Assigned To** field is an identity field designed to hold a user identity that has been added to the project. Within the work item form, choose the **Assigned To** field to select a project member. Or, you can begin entering the name of a project member to quickly focus your search to a select few.  
+You can only assign a work item to one person at a time. The **Assigned To** field is an identity field designed to hold a user identity added to the project. Within the work item form, choose the **Assigned To** field to select a project member. Or, you can begin entering the name of a project member to quickly focus your search to a select few.  
  
 :::image type="content" source="media/about-work-items/assigned-to-field.png" alt-text="Screenshot of Assigned To field in the work item form."::: 
 
@@ -190,7 +190,7 @@ You can grant access to a project by adding security groups that you created in 
 
 ### Use work item templates to quickly complete forms
 
-With work item templates, you can quickly create work items that have prepopulated values for your team's commonly used fields. For example, create a task template that sets the area path, iteration path, and discipline or activity whenever you use it to create a task. For more information, see [Use templates to add and update work items](../backlogs/work-item-template.md). 
+With work item templates, you can quickly create work items that with prepopulated values for commonly used fields. For example, create a task template that sets the area path, iteration path, and discipline or activity whenever you use it to create a task. For more information, see [Use templates to add and update work items](../backlogs/work-item-template.md). 
 
 ## Follow, Refresh, Revert, and Actions menu
 
@@ -202,7 +202,7 @@ The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls a
    :::column-end:::
    :::column span="1":::
       - Choose **Follow** to get updates when changes are made to the work item. For more information, see [Follow changes made to a user story, bug, or other work item or pull request](follow-work-items.md). 
-      - Choose :::image type="icon" source="../media/icons/icon-refresh-wi.png" border="false"::: **Refresh**  to update the work item form with the latest changes that someone else may have made while you had the work item open. 
+      - Choose :::image type="icon" source="../media/icons/icon-refresh-wi.png" border="false"::: **Refresh** to update the work item form with the latest changes that someone else made while you had the work item open. 
       - Choose  :::image type="icon" source="../media/icons/icon-undo-changes-wi.png" border="false"::: **Revert changes** to undo any changes you made to the work item form. 
       - To exercise a task available from the **Actions** menu, see the following articles: 
         - [New linked work item](../backlogs/add-link.md)
@@ -218,8 +218,7 @@ The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls a
 :::row-end:::
 
 > [!NOTE]   
-> Some menu options may not appear depending on your permission assignments. Also, additional options may appear based on Marketplace extensions added to your organization or other customizations made to the work item type. 
-
+> Some menu options might not appear depending on your permission assignments. Also, additional options might appear based on Marketplace extensions added to your organization or other customizations made to the work item type. 
 
 ## Discussion control  
 
@@ -246,11 +245,9 @@ The **Deployment**, **Development** and **Related Work** controls are special co
    :::column-end:::
 :::row-end:::
 
-
-The **Deployment** control provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. For more information, see [Link work items to deployments](../backlogs/add-link.md#link-work-items-to-deployments).
+The **Deployment** control provides a quick view of whether a feature or user story is deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. For more information, see [Link work items to deployments](../backlogs/add-link.md#link-work-items-to-deployments).
 
 ::: moniker-end
-
 
 ::: moniker range="tfs-2018"
 
@@ -291,7 +288,6 @@ Choose an entry in the left pane to view the details of changes made. For more i
 
 :::image type="content" source="../queries/media/hist-audit-wi-form.png" alt-text="Screenshot of Work item form, History tab, Web portal, Details.":::
 
-
 <a id="link"> </a>
 
 ### Links: Link work items to other work items or objects
@@ -309,7 +305,6 @@ For more information, see the following articles:
 
 From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Attachments** tab, you can add, remove, or view files or images added to the work item. You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. For more information, see [Share information within work items and social tools](../queries/share-plans.md). 
  
-
 <a id="portal-clients"></a>  
 
 ## Track work in the web portal 
@@ -317,7 +312,6 @@ From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" bord
 You can add and update work items from the web portal. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps](../../user-guide/tools.md). Use the web portal to accomplish the following tasks. 
 
 [!INCLUDE [temp](../includes/page-work-item-tasks.md)] 
-
 
 <a id="wit-other"></a>
 
@@ -328,7 +322,7 @@ Along with the work items types that appear on backlogs and boards, there are wo
 | Category and Work item type | Used to track specified types of work| 
 |-----------------------------|--------------------------------------|
 |Code Review Request|Tracks a code review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). For more information, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). |
-|Code Review Response|A code review response is created for each person who's requested to provide review comments.|
+|Code Review Response|A code review response is created for each person who requested to provide review comments.|
 |Feedback Request|Feedback requests track requests for feedback generated through the feedback request form. See [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback).|
 |Feedback Response|A feedback response is created for each person and for each item for which feedback is provided through the Microsoft Feedback Client. See [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback).|
 |Shared Step|Shared steps are used to [repeat tests with different data](../../test/repeat-test-with-different-data.md).|
@@ -337,14 +331,13 @@ Along with the work items types that appear on backlogs and boards, there are wo
 |Test Plan|Test plan group test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites.For more information, see [Create test plans and test suites](../../test/create-a-test-plan.md). |
 |Test Suite|Test suites group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. See [Create test plans and test suites](../../test/create-a-test-plan.md). |
  
-
 <a id="permissions-access"></a>
 
 ## Required permissions and access 
 
 Members added to the Contributors group of a project can use most features provided under the **Boards** hub. To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
-The following table summarizes the permissions that impact project member's ability to view and edit work items. 
+The following table summarizes the permissions that affect a project member's ability to view and edit work items. 
 
 | Level |  Permission | 
 |-----|--------| 
@@ -362,7 +355,6 @@ Users with Basic access have full access to all features. Users with Stakeholder
 
 > [!div class="nextstepaction"]
 > [Add a work item](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json)
-
 
 ## Related articles 
 
