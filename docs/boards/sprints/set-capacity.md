@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 01/04/2024
 ---
 
 
@@ -21,9 +21,10 @@ ms.date: 04/01/2022
 
 <a id="set-capacity">  </a>
 
-As a next step, you'll want to determine your team's actual capacity. While velocity correlates to how your team estimates requirements, capacity correlates to actual task time. Time is calculated in either hours or days. Capacity takes into consideration the variation in work hours by team members. It also considers holidays, vacation days, and non-working days. 
+While velocity correlates to how your team estimates requirements, capacity correlates to actual task time. Time is calculated in either hours or days. Capacity takes into consideration the variation in work hours by team members. It also considers holidays, vacation days, and nonworking days. 
 
-Because days off and time available for each team member may vary from sprint to sprint, set capacity for each sprint. The capacity tool helps you make sure your team isn't over or undercommitted for the sprint. Also, as you work day-to-day, you'll see if your team is on track.
+Because days off and time available for each team member might vary from sprint to sprint, set capacity for each sprint. The capacity tool helps you make sure your team isn't over or undercommitted for the sprint. Also, as you work day-to-day, you see if your team is on track.
+In this article, learn how to do the following tasks.
 
 > [!div class="checklist"]   
 > * Set team capacity for a sprint
@@ -32,7 +33,7 @@ Because days off and time available for each team member may vary from sprint to
 > * Add or remove user accounts from capacity planning for a sprint  
 > * Track capacity when working on more than one team  
 
-If you haven't set up sprints yet for your team, see the [Manage sprint timelines while working in Scrum](define-sprints.md) article.
+To set up sprints yet for your team, see the [Manage sprint timelines while working in Scrum](define-sprints.md) article.
 
 ## Prerequisites
 
@@ -55,7 +56,7 @@ To change the **Activity** or **Discipline** menu selections, see [Add and manag
 
 ::: moniker range="< azure-devops"
 
-The values displayed for **Activity** (Agile, Basic, or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the [Activity or Discipline](../queries/query-numeric.md#fields-used-to-estimate-and-track-work) fields in all projects within the project collection. Or, if your project has been customized, with the field assigned to [`type="Activity" within the ProcessConfiguration file`](../../reference/xml/process-configuration-xml-element.md#assign-agile-tool-fields). 
+The values displayed for **Activity** (Agile, Basic, or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the [Activity or Discipline](../queries/query-numeric.md#fields-used-to-estimate-and-track-work) fields in all projects within the project collection. Or, if your project is customized, with the field assigned to [`type="Activity" within the ProcessConfiguration file`](../../reference/xml/process-configuration-xml-element.md#assign-agile-tool-fields). 
 
 To change the **Activity** or **Discipline** menu selections, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md). 
 
@@ -63,13 +64,13 @@ To change the **Activity** or **Discipline** menu selections, see [Add or modify
 
 ## Capacity per day entries 
  
-Most teams specify capacity in hours. You can also specify it in days or any other units your team chooses. For example, 0.5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit your team uses to estimate and track their time. For example, the entries they'll make to the [Original Estimate or Remaining Work](../queries/query-numeric.md#fields-used-to-estimate-and-track-work) fields.  
+Most teams specify capacity in hours. You can also specify it in days or any other units your team chooses. For example, 0.5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit your team uses to estimate and track their time. For example, the entries they make to the [Original Estimate or Remaining Work](../queries/query-numeric.md#fields-used-to-estimate-and-track-work) fields.  
 
 ## Open a sprint backlog for a team 
 
 ::: moniker range=">= azure-devops-2019"
 
-1. From your web browser, open your product backlog. (1) Check that you've selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Capacity**. 
+1. From your web browser, open your product backlog. Check that you selected the right project (1), select **Boards** (2) > **Sprints** (3), select the correct team from the team selector menu, and choose **Capacity** (4). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Open Sprints for a team.](media/capacity/open-capacity-agile.png)
@@ -79,16 +80,15 @@ Most teams specify capacity in hours. You can also specify it in days or any oth
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Choose another team.](media/add-tasks/team-selector-sprints-agile.png) 
 
-1. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Choose another sprint.](media/add-tasks/select-specific-sprint-agile.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
+	The system lists only those sprints that are selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
-
 
 ::: moniker range="tfs-2018"
 
@@ -109,7 +109,7 @@ Most teams specify capacity in hours. You can also specify it in days or any oth
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Choose another sprint, earlier versions](media/add-tasks/choose-sprint-standard.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
+	The system lists only those sprints that are selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 
@@ -121,27 +121,26 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ::: moniker range=">= azure-devops-2019"
 
-1. If you don't see your team members listed, add them. Choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+1. If you don't see your team members listed, add them. Choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action icon and select **Add all team members**. For this feature to work, [team members must be added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Capacity page, Add team members.](media/capacity/add-team-members.png) 
 
-	> [!NOTE]  
-	> The **Add all team members** action retrieved a maximum of 100 team members. If you have more team members to add, then you can add them one by one by choosing **Add user**.
+	The **Add all team members** action retrieved a maximum of 100 team members. If you have more team members to add, then you can add them one-by-one by choosing **Add user**.
 
-1. If you need to add other contributors to your project, choose the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: **Add user**.  
+2. If you need to add other contributors to your project, choose the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: **Add user**.  
 
-2. Next, set any time off that a team member will take. For the entire team days off, choose the **0 days** link as shown.  
+3. Set team member time off. For the entire team days off, choose the **0 days** link as shown.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of setting time off](media/capacity/team-members-added-set-team-days-off.png) 
 
-	In the **Days off for** dialog, select the start and end days during the sprint that the team member or team will take off. 
+	In the **Days off for** dialog, select the start and end days during the sprint for the team member or team days off. 
 
-	> [!NOTE]
+	> [!TIP]
 	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only have to indicate planned days off for the team. For more information, see [Set capacity for the team and team members](../../boards/sprints/set-capacity.md#set-capacity-for-the-team-and-team-members). 
 
-3. Now, set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned. 
+4. Now, set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned. 
 
 	For example, Christie Church's capacity is 6 hours/day for design work. 
 
@@ -152,19 +151,19 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ::: moniker range="tfs-2018"
 
-1. If you don't see your team members listed, add them. Choose the :::image type="icon" source="media/capacity/capacity-add-users.png" border="false"::: **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+1. If you don't see your team members listed, add them. Choose the :::image type="icon" source="media/capacity/capacity-add-users.png" border="false"::: **Add missing team members** icon. For this feature to work, [team members must be added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Add team members, earlier versions](media/capacity/add-team-members-standard.png)  
 
 2. If you need to add other contributors to your project, choose the :::image type="icon" source="../media/icons/add-light-icon.png" border="false"::: **Add user** icon.  
 
-3. Next, set any time off that a team member will take. For the entire team days off, choose the **0 days** link as shown.  
+3. Set team member time off. For the entire team days off, choose the **0 days** link as shown.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Set team days off, earlier versions.](media/capacity/set-team-days-off-standard.png) 
 
-	In the Days off for the entire team dialog, select the start and end days during the sprint that the team will take off. 
+	In the Days off for the entire team dialog, select the start and end days during the sprint for team days off. 
 
 	> [!NOTE]
 	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's settings.
@@ -178,14 +177,13 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ::: moniker-end  
 
-
 <a id="copy-capacity">  </a>
 
 ## Copy capacity planning from the previous sprint 
 
 By copying the capacity from the previous sprint, you save time. With the basics defined, all you have to do is adjust the capacity based on individual and team days off and capacity allocation per activity.  
 
-Notice that only the capacity-per-day value and activity value are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you've made changes to the previous sprint that you want to copy to the latest sprint. 
+Notice that only the capacity-per-day value and activity value are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you made changes to the previous sprint that you want to copy to the latest sprint. 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -201,12 +199,11 @@ For example, here we choose Sprint 2 and copy the capacity set for Sprint 1.
 
 ::: moniker-end
 
-
 <a id="add-remove-users">  </a>
 
 ## Remove a user from capacity 
 
-To remove a user, choose the option from the users  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action menu. This action won't remove the user from the team.
+To remove a user, choose the option from the users  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action menu. This action doesn't remove the user from the team.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -220,12 +217,11 @@ To remove a user, choose the option from the users  :::image type="icon" source=
 
 ::: moniker-end
 
-
 ## Review capacity charts 
 
-As you define tasks and estimate the work, you'll see capacity charts start to fill in for each team member. Capacity bars track the remaining work against the capacity for each team member and the entire team.  
+As you define tasks and estimate the work, you see capacity charts start to fill in for each team member. Capacity bars track the remaining work against the capacity for each team member and the entire team.  
 
-You'll also see a roll-up of the remaining work required to complete each requirement or bug.  
+You also see a roll-up of the remaining work required to complete each requirement or bug.  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -275,7 +271,7 @@ Here, Jamal divides time between Deployment and Development.
 
 ## Track capacity when working on more than one team
 
-If you work on more than one team, you'll want to specify your sprint capacity for each team. For example, both Christie and Raisa split their time between the Web and Phone teams. As such, give 3 hours a day to the Web team, and 3 hours a day to the Phone team.  
+If you work on more than one team, specify your sprint capacity for each team. For example, both Christie and Raisa split their time between the Web and Phone teams. As such, give 3 hours a day to the Web team, and 3 hours a day to the Phone team.  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Allocate capacity for team Web.](media/capacity/set-capacity-web-team.png)
@@ -285,17 +281,14 @@ If you work on more than one team, you'll want to specify your sprint capacity f
  
 If your name isn't listed in the capacity view, you need to be added as a team member. 
 
-
 ## Next step
 
 > [!div class="nextstepaction"]
 > [4. Adjust work](adjust-work.md) 
 
-
 ## Related articles
 
-Setting capacity and [estimating remaining work for each task](assign-work-sprint.md) provides you with the tools you need to track the amount of work and resources you have given sprint over sprint.  
-
+- [Estimate remaining work for each task](assign-work-sprint.md)  
 - [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md)
 - [Velocity](../../report/dashboards/team-velocity.md)  
 - [Forecasting](../sprints/forecast.md)    
