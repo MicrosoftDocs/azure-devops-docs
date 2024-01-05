@@ -334,6 +334,10 @@ Adding custom states to support workflow states that multiple teams want to trac
 
 When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR. For more information, see [Auto complete work items with pull requests](auto-complete-work-items-pull-requests.md).
 
+## Automate work item state transitions
+
+You can automatically update the state of a work item according to the state of its child tasks. For more information, see [Automate work item state transitions](automate-work-item-state-transitions.md).
+
 ## Related articles
 
 ::: moniker range=">= azure-devops-2019"
