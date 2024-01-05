@@ -2,7 +2,7 @@
 title:  Switch between HTML and Markdown editor in Azure Boards comments private preview
 author: ckanyika
 ms.author: ckanyika
-ms.date: 12/5/2023
+ms.date: 1/10/2024
 description: Switch between HTML and Markdown editor in Azure Boards comments private preview
 ---
 # Switch between HTML and Markdown editor in Azure Boards comments private preview
@@ -13,19 +13,19 @@ Check out the release notes to learn more about enrolling in the private preview
 
 ### Azure Boards
 
-[!INCLUDE [sprint-231-update-links](includes/boards/sprint-231-update-links.md)]
+[!INCLUDE [sprint-232-update-links](includes/boards/sprint-232-update-links.md)]
 
 ### Azure Pipelines
 
-[!INCLUDE [sprint-231-update-links](includes/pipelines/sprint-231-update-links.md)]
+[!INCLUDE [sprint-232-update-links](includes/pipelines/sprint-232-update-links.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-231-update](includes/boards/sprint-231-update.md)]
+[!INCLUDE [sprint-232-update](includes/boards/sprint-232-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-231-update](includes/pipelines/sprint-231-update.md)]
+[!INCLUDE [sprint-232-update](includes/pipelines/sprint-232-update.md)]
 
 
 ## Next steps
