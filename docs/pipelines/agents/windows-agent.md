@@ -161,7 +161,7 @@ Agents in this mode will accept only one job and then spin down gracefully (usef
 
 ### Run as a service
 
-If you configured the agent to run as a service, it starts automatically. You can view and control the agent from the services snap-in. Run `services.msc` and look for one of:
+If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for one of:
 - "Azure Pipelines Agent (*name of your agent*)"
 - "VSTS Agent (*name of your agent*)"
 - "vstsagent.(*organization name*).(*name of your agent*)"
