@@ -18,7 +18,8 @@ Use a pipeline to automatically build, test, and deploy your .NET Core projects.
 * Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
 * Restore dependencies, build your project, and test with the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
 * Use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) to publish code coverage results.
-* Package and deliver your code with the [.NET Core CLI task](/tasks/reference/dotnet-core-cli-v2) and the [publish build artifacts task](/azure/devops/pipelines/tasks/reference/publish-buil/azure/devops/pipelinesd-artifacts-v1).
+* Package and deliver your code with the [.NET Core CLI task](/tasks/reference/dotnet-core-cli-v2).
+* Publish your build artifacts to your pipeline.
 * Publish to a [NuGet feed](../artifacts/nuget.md).
 * Deploy your [web app to Azure](../targets/webapp.md).
 
@@ -43,7 +44,7 @@ Are you new to Azure Pipelines? If so, then we recommend you try the following s
 
 ::: moniker-end
 
-:::moniker range="< azure-devops"
+::: moniker range="< azure-devops"
 
 1. In a browser window sign in to your Azure DevOps Server and, select your collection.
 1. Select **New project**.
@@ -51,7 +52,7 @@ Are you new to Azure Pipelines? If so, then we recommend you try the following s
 1. Optionally, enter a description.
 1. Select **Create**.
 
-:::moniker-end
+::: moniker-end
 
 ### Set up your build environment
 
@@ -145,7 +146,7 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 
 ::: moniker-end
 
-:::moniker range="=azure-devops-2020 =azure-devops-2022"
+::: moniker range="=azure-devops-2020 =azure-devops-2022"
 
 1. When the **Configure** tab appears, select **Show more** and select [**ASP.NET Core**](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
 
@@ -162,7 +163,7 @@ If you want to watch your pipeline in action, select the job in the **Jobs** sec
 
 You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!  When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file. Read further to learn some of the more common ways to customize your pipeline.
 
-:::moniker-end
+::: moniker-end
 
 ::: moniker range="<=azure-devops-2022"
 
@@ -185,7 +186,7 @@ Use these steps to create you pipeline using the classic editor.
 
 You now have a working pipeline that's ready for you to customize! When you're ready to make changes to your pipeline, **Edit** it.  Read further to learn some of the more common ways to customize your pipeline.
 
-:::moniker-end
+::: moniker-end
 
 ::: moniker range=">=azure-devops"
 
@@ -218,7 +219,7 @@ You can build your .NET Core projects by using the .NET Core SDK and runtime on 
 
 ::: moniker-end
 
-:::moniker range="<=azure-devops-2022"
+::: moniker range="<=azure-devops-2022"
 
 Your build pipelines are run on [self-hosted agents](../agents/agents.md?view=azure-devops-2022).  You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, macOS and Docker.
 
@@ -288,7 +289,7 @@ steps:
 
 
 
-:::moniker range=">=azure-devops"
+::: moniker range=">=azure-devops"
 
 
 ## Restore dependencies
@@ -505,7 +506,7 @@ steps:
     arguments: '--configuration $(buildConfiguration)'
 ```
 
-An alternative is to run the `dotnet test` command with a specific logger and then use the **Publish Test Results** task:
+Alternatively, you can run the `dotnet test` command with a specific logger and then use  the **Publish Test Results** task:
 
 ```yaml
 steps:
@@ -677,7 +678,7 @@ To copy more files to Build directory before publishing, use [Utility: copy file
 
 ::: moniker-end
 
-:::moniker range="< azure-devops"
+::: moniker range="< azure-devops"
 
 To publish the output of your .NET **build**, do the following tasks: 
 
@@ -706,9 +707,9 @@ steps:
 
 For more information, see [Publish and download build artifacts](../artifacts/build-artifacts.md?view=azure-devops-2022).
 
-:::moniker-end
+::: moniker-end
 
-:::moniker range=">=azure-devops-2019"
+::: moniker range=">=azure-devops-2019"
 
 ### Publish to a NuGet feed
 
