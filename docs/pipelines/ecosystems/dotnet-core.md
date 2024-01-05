@@ -106,6 +106,8 @@ Alternatively, you can use a [self-hosted agent](../agents/agents.md) to save ti
 
 You can create a pipeline by using the YAML pipeline editor or the classic editor.
 
+::: moniker-end
+
 ::: moniker range="<=azure-devops-2022"
 
 1. Go to your project and select **Pipelines**.
@@ -146,7 +148,7 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020 =azure-devops-2022"
+::: moniker range=">= azure-devops-2020 <=a zure-devops-2022"
 
 1. When the **Configure** tab appears, select **Show more** and select [**ASP.NET Core**](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
 
@@ -287,11 +289,6 @@ steps:
 
 ::: moniker-end
 
-
-
-::: moniker range=">=azure-devops"
-
-
 ## Restore dependencies
 
 NuGet is a popular way to depend on code that you don't build. You can download NuGet packages and project-specific tools that are specified in the project file by running the `dotnet restore` command either through the [.NET Core](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task or directly in a script in your pipeline.
@@ -354,16 +351,12 @@ If you also have a Microsoft .NET Framework project in your solution or use `pac
     feedsToUse: 'select'
 ```
 
-::: moniker range=">= tfs-2018"
-
 In .NET Core SDK version 2.0 and newer, packages get restored automatically when running other commands such as `dotnet build`. However, you might still need to use the **.NET Core** task to restore packages if you use an authenticated feed.
 
 Your builds might sometimes fail because of connection issues when you restore packages from NuGet.org. You can use Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md) to cache the packages. The credentials of the pipeline are automatically used when it connects to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service** account.
 
 If you want to specify a NuGet repository, put the URL in a `NuGet.config` file in your repository. 
 If your feed is authenticated, manage its credentials by creating a NuGet service connection in the **Services** tab under **Project Settings**.
-
-::: moniker-end
 
 ::: moniker range=">=azure-devops"
 
@@ -797,7 +790,7 @@ If you can build your project on your development machine, but you're having tro
 
 ::: moniker-end
 
-* Check the .NET Core SDK versions and runtime on your development machine and make sure they match the agent. You can include a command-line script `dotnet --version` in your pipeline to print the version of the .NET Core SDK. Either use the [**.NET Core Tool Installer**](#yaml) to deploy the same version on the agent, or update your projects and development machine to the newer version of the .NET Core SDK.
+* Check the .NET Core SDK versions and runtime on your development machine and make sure they match the agent. You can include a command-line script `dotnet --version` in your pipeline to print the version of the .NET Core SDK. Either use the [**.NET Core Tool Installer**](#build-environment) to deploy the same version on the agent, or update your projects and development machine to the newer version of the .NET Core SDK.
 
 * You might be using some logic in the Visual Studio IDE that isn't encoded in your pipeline. 
 Azure Pipelines runs each of the commands you specify in the tasks one after the other in a new process. 
