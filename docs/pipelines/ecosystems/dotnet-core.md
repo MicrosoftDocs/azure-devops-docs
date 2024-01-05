@@ -9,7 +9,7 @@ ms.custom: contperf-fy20q4, freshness-fy22q2, content-freshness, devx-track-dotn
 monikerRange: '<= azure-devops'
 ---
 
-## Build, test, and deploy .NET Core apps
+# Build, test, and deploy .NET Core apps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -76,17 +76,13 @@ steps:
 
 Your build is run on [Microsoft-hosted agents](../agents/hosted.md).  You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, macOS and Docker.
 
-Alternatively, you can use a [self-hosted agent](../agents/agents.md?view=azure-devops) to save time if you have a large repository or you run incremental builds. A self-hosted agent can also help you in using the preview or private SDKs not officially supported by Azure DevOps Services.
+Alternatively, you can use a [self-hosted agent](../agents/agents.md) to save time if you have a large repository or you run incremental builds. A self-hosted agent can also help you in using the preview or private SDKs not officially supported by Azure DevOps Services.
 
 ### Create the pipeline
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-<<<<<<< HEAD
-### Configure the pipeline
-=======
 ### Configure and run the pipeline
->>>>>>> 8b46b8ae097fa6fcdf9c9b8be916c5ce3b1d863e
 
 1. When the **Configure** tab appears, select **Show more** and select [**ASP.NET Core**](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
 
@@ -107,9 +103,9 @@ Alternatively, you can use a [self-hosted agent](../agents/agents.md?view=azure-
 
 ### Create and run the pipeline
 
-You can create a pipeline by using the  YAML pipeline editor or the classic editor.
+You can create a pipeline by using the YAML pipeline editor or the classic editor.
 
-::: moniker range="> tfs-2018 <=azure-devops-2022"
+::: moniker range="<=azure-devops-2022"
 
 1. Go to your project and select **Pipelines**.
 1. Select **Create pipeline** or if you're not create the first pipeline for this project,  **New pipeline**.
@@ -149,7 +145,7 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 
 ::: moniker-end
 
-:::moniker range="azure-devops-2020 azure-devops-2022"
+:::moniker range="=azure-devops-2020 =azure-devops-2022"
 
 1. When the **Configure** tab appears, select **Show more** and select [**ASP.NET Core**](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
 
@@ -168,7 +164,7 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 
 :::moniker-end
 
-::: moniker range="<=azure-devops-2022>"
+::: moniker range="<=azure-devops-2022"
 
 #### Create pipeline with the classic editor
 
@@ -292,7 +288,7 @@ steps:
 
 
 
-:::moniker range=">azure-devops"
+:::moniker range=">=azure-devops"
 
 
 ## Restore dependencies
@@ -536,7 +532,7 @@ Use the **.NET Core** task with **Command** set to **test**.
 ## Collect code coverage 
 
 If you're building on the Windows platform, code coverage metrics can be collected by using the built-in coverage data collector. The test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher. 
-If you use the **.NET Core** task to run tests, coverage data is automatically published to the server. The **.coverage** file can be downloaded from the build summary for viewing in Visual Studio.
+If you use the **.NET Core** task to run tests, coverage data is automatically published to the server. The *.coverage* file can be downloaded from the build summary for viewing in Visual Studio.
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -641,14 +637,13 @@ To run tests and publish code coverage with Coverlet, do the following tasks:
 
 ---
 
- 
 ## Package and deliver your code
 
 Upload the build output to Azure Pipelines. You can create and publish a NuGet package, or package the build output into a .zip file to deploy to a web application.
 
 ### Publish artifacts to Azure Pipelines
 
-::: moniker range=">= devops"
+::: moniker range=">=azure-devops"
 
 To publish the output of your .NET **build**, do the following tasks: 
 
@@ -762,11 +757,7 @@ To publish this archive to a web app, see [Azure Web Apps deployment](../targets
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
-
 ### Publish artifacts to Azure Pipelines
-
-::: moniker range=">= azure-devops"
 
 Use the **Publish build artifacts** task to publish the output of your build to Azure Pipelines or to a file share.  You can use this task to publish the output of your .NET Core build to Azure Pipelines on-premises or to a file share.
 
@@ -788,7 +779,6 @@ If you want to publish your code to a NuGet feed, take the following steps:
 
 1. To publish this archive to a web app, see [Azure Web Apps deployment](../targets/webapp.md).
 
-::: moniker-end
 
 ## Build an image and push to container registry
 
