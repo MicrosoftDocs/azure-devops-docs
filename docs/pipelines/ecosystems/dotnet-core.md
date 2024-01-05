@@ -148,7 +148,7 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 <=a zure-devops-2022"
+::: moniker range=">= azure-devops-2020 <= azure-devops-2022"
 
 1. When the **Configure** tab appears, select **Show more** and select [**ASP.NET Core**](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
 
