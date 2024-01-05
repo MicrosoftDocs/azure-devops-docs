@@ -5,8 +5,8 @@ ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: ravikum
-author: raviliftr
+ms.author: rbatra
+author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 01/11/2022
 ---
