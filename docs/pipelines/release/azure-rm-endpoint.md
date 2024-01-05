@@ -209,7 +209,7 @@ To renew the access token for an automatically created service principal:
 
 1. Select **Save**.
 
-Your service principal's token has now been renewed for 3 more months.
+Your service principal's token has now been renewed for three more months.
 
    > [!NOTE]
    > This operation is available even if the service principal's token has not expired.
