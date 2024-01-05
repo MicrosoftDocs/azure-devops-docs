@@ -4,7 +4,7 @@ titleSuffix: Azure Test Plans
 description: Learn how to bulk import or export test cases in Azure Test Plans.  
 ms.service: azure-devops-test-plans
 ms.custom: cross-project, UpdateFrequency3
-ms.author: ravikum
+ms.author: rbatra
 author: raviLiftr
 ms.topic: tutorial
 monikerRange: '= azure-devops'

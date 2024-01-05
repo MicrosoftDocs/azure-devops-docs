@@ -1,7 +1,7 @@
 ---
 ms.topic: include
 ms.service: azure-devops-pipelines
-ms.author: ravikum
+ms.author: rbatra
 author: raviLiftr
 ms.date: 02/19/2020
 ---
