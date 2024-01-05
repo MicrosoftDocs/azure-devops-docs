@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 11/21/2023
+ms.date: 01/05/2024
 ---
 
 # Add and edit wiki pages
@@ -36,7 +36,7 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 | Commands | Description |
 |---------|---------|
 | [az devops wiki show](#open-wiki) | Open a wiki |
-| [az devops wiki page show](#view-a-wiki-page) | Get the content of a page or open a page |
+| [az devops wiki page show](/cli/azure/devops/wiki/page#az-devops-wiki-page-show)| Get the content of a page or open a page |
 | [az devops wiki page create](#add-a-wiki-page) | Add a new page |
 | [az devops wiki page update](#edit-wiki-page) | Edit a page |
 | [az devops wiki page delete](#delete-wiki-page) | Delete a page |
@@ -49,7 +49,6 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 > To add or edit pages to a wiki that you've published from a Git repository, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md). This article addresses how to add and edit pages of a wiki that you've provisioned for a team project.
 
 ::: moniker-end
-
 
 <a id="prereq">  </a>
 
@@ -101,11 +100,11 @@ az devops wiki page create --path
 - **--path**: Required. Path of the wiki page.  
 - **--wiki**: Required. Name or ID of the wiki.
 -  **--comment**: Optional. Comment in the commit message of the file add operation. Default value: Added a new page using Azure DevOps CLI.
--  **--content**: Optional. Content of the wiki page. Ignored if --file-path is specified. 
--  **--encoding**: Optional. Encoding of the file. Used with --file-path parameter.
-accepted values: ascii, utf-16be, utf-16le, utf-8
+-  **--content**: Optional. Content of the wiki page. Ignored if `--file-path` is specified. 
+-  **--encoding**: Optional. Encoding of the file. Used with `--file-path` parameter.
+accepted values: `ascii`, `utf-16be`, `utf-16le`, `utf-8`
 -  **--file-path**: Optional. Path of the file input if the content is specified in the file.    
--  **--project -p**: Required if not configured as default or picked up via git config. Name or ID of the project. You can configure the default project using the az devops configure -d project=NAME_OR_ID. 
+-  **--project -p**: Required if not configured as default or picked up via git config. Name or ID of the project. You can configure the default project using the az devops configure `-d project=NAME_OR_ID`. 
 
 ::: moniker-end
 [!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
@@ -130,7 +129,6 @@ az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.t
 ::: moniker-end
 
 [!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
-
 
 * * *
 
@@ -160,7 +158,7 @@ If you have branch policies in your code wiki, use **Edit in Repos** to create a
 To delete a page, open the context menu from the tree or the one inside the page and select **Delete**. Confirm the delete in the dialog that opens.
 
 > [!NOTE]  
-> Deleting a page deletes the page along with all the metadata and all its subpages (if any) in the hierarchy.
+> When you delete a page, you also delete all the metadata and all its subpages (if any) in the hierarchy.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
