@@ -1,40 +1,23 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 11/16/2023
+ms.date: 1/10/2024
 ms.topic: include
 ---
 
 
-### New version of the Azure DevOps Web Extension SDK
+### Select a geography when creating an organization
 
-With this update we are releasing a new version of the Azure DevOps Web Extension SDK. The client SDK enables web extensions to communicate to the host frame. It can be used to:
-* Notify the host that the extension is loaded or has errors
-* Get basic contextual information about the current page (current user, host and extension information)
-* Get theme information
-* Obtain an authorization token to use in REST calls back to Azure DevOps
-* Get remote services offered by the host frame
+Select a geography, instead of a region, when creating a new Azure DevOps organization. Your closest geography is selected automatically, but you can choose a different one, based on where your team is located or because you have sovereignty requirements for your data. You can also view your geography in the overview section of organization settings.
 
-You can find a full API reference in the [azure-devops-extension-sdk package documentation](https://learn.microsoft.com/javascript/api/azure-devops-extension-sdk/).
-This new version provides support for the following modules:
-- **ES Module Support:**
- SDK now supports ES (ECMAScript) modules in addition to the existing AMD (Asynchronous Module Definition) modules. You can now import SDK using the ES module syntax, which provides performance improvements and reduces the application size.
+> [!div class="mx-imgBorder"]
+> ![Screenshot of advanced security section.](../../media/232-general-01.png "Screenshot of advanced security section")
 
-- **Backward Compatibility for AMD Modules:** Existing support for AMD modules remains intact. If your project is using AMD modules, you can continue to use them as before without any changes.
+###  OAuth self-service secret rotation
 
-**How to use:**
+Our Azure DevOps OAuth model has now been made a little more self-sufficient. Every 5 years, you are required to refresh your Azure DevOps OAuth app client secret to ensure you can continue creating access and refresh tokens needed to utilize Azure DevOps APIs. When your client secret is due to expire, you can now generate your own secret instead of relying on reaching out to customer support to generate a new one. This offers your team more flexibility to schedule secret rotation on your time and aid in reducing any potential outage time for your customers due to waiting on a replacement for an expired secret. 
 
-For ES modules, you can import our modules using the import statement:
+> [!div class="mx-imgBorder"]
+> ![Screenshot of advanced security section.](../../media/232-general-02.png "Screenshot of advanced security section")
 
-```
-import * as SDK from 'azure-devops-extension-sdk';
-// Use the module here
-```
- 
-If you're using AMD modules, you can continue to import SDK using the `require` function:
-```
-require(['azure-devops-extension-sdk'], function(SDK) {
-
-  // Use the module here
-});
-```
+Look for this new functionality in each of your Azure DevOps app pages that can be accessible through [your profile here](https://aex.dev.azure.com/me?mkt=en-US). Learn more about this new step in our [Azure DevOps OAuth guide](https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/azure-devops-oauth?view=azure-devops).
