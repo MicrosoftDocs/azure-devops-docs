@@ -2,6 +2,7 @@
 title: Use packages from PyPI
 description: How to consume packages from Python package index with Azure Artifacts
 ms.service: azure-devops-artifacts
+ms.custom: devx-track-python
 ms.date: 11/17/2023
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
