@@ -11,21 +11,21 @@ With this update, you can now switch between HTML and Markdown editor in Azure B
 
 Check out the release notes to learn more about enrolling in the private preview for this feature. 
 
-### Azure Boards
+### General
 
-[!INCLUDE [sprint-232-update-links](includes/boards/sprint-232-update-links.md)]
+[!INCLUDE [sprint-232-update-links](includes/general/sprint-232-update-links.md)]
 
-### Azure Pipelines
+### Reporting
 
-[!INCLUDE [sprint-232-update-links](includes/pipelines/sprint-232-update-links.md)]
+[!INCLUDE [sprint-232-update-links](includes/reporting/sprint-232-update-links.md)]
 
-## Azure Boards
+## General
 
-[!INCLUDE [sprint-232-update](includes/boards/sprint-232-update.md)]
+[!INCLUDE [sprint-232-update](includes/general/sprint-232-update.md)]
 
-## Azure Pipelines
+## Reporting
 
-[!INCLUDE [sprint-232-update](includes/pipelines/sprint-232-update.md)]
+[!INCLUDE [sprint-232-update](includes/reporting/sprint-232-update.md)]
 
 
 ## Next steps
