@@ -147,7 +147,5 @@ The following members are defined for the `UserType` enumerated type.
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 - [Entities and properties reference for Azure Boards](entity-reference-boards.md)   
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)  
-- [Project and team quick reference](../../organizations/projects/project-team-quick-reference.md)
-
-
+- [About projects](../../organizations/projects/about-projects.md)
   
