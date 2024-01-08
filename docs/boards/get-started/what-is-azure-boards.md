@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 06/27/2023
+ms.date: 01/08/2024
 ---
 
 # What is Azure Boards?
@@ -18,7 +18,7 @@ ms.date: 06/27/2023
 
 Azure Boards is a web-based service that enables teams to plan, track, and discuss work across the entire development process, while it supports agile methodologies, including [Scrum and Kanban](#implement-agile-scrum-and-kanban-processes). Azure Boards provides a customizable platform for managing work items, allowing teams to [collaborate](../../cross-service/cross-service-overview.md) effectively and streamline their workflow. [Sign up](sign-up-invite-teammates.md), [customize](../configure-customize.md), and experience the [benefits of using Azure Boards](#benefits-of-using-azure-boards).
  
-## Use Azure Boards hubs
+## Azure Boards hubs
 
 You can track and manage work and access various functions within each of the following hubs.
 
@@ -47,7 +47,7 @@ The following table lists some of the benefits of using Azure Boards.
 |Customize easily   |Easily [configure and customize](../configure-customize.md) Kanban boards, Taskboards, and delivery plans through the user interface, as well as add [custom fields, work item types, and portfolio backlogs](../../organizations/settings/work/inheritance-process-model.md).         |
 |Use built-in social tools and communication   |  [Work item forms](../work-items/about-work-items.md#work-item-form-controls) provide built-in discussion that you can use to capture questions, notes, and communication as they occur. You can maintain a history of what a team decides on any particular work item. You can also quickly bring a team member or an entire team into the conversation [by using @mentions](../../organizations/notifications/at-mentions.md).        |
 |Capture information, generous cloud storage   | Work items are designed to track all the information you need. You can edit in rich text, drag and drop inline images, and add larger attachments - up to 60 MB and as many as 100. Also, you can [link work items](../backlogs/add-link.md) within a hierarchy or by simple related links. Each work item form maintains a history of changes, so you can review what changed, who made the change, and when.        |
-|Find what you need quickly and get notified of changes   | Azure Boards provides easy-to-use tools to help you quickly find specific work items as your project grows. You can [follow work items](../work-items/follow-work-items.md) to monitor updates and changes, use pivot views to show work items assigned to you, use the [query engine](../queries/query-field-value.md) to filter work items based on any field, and use ad-hoc search with quick inline filters. You can also personalize your alerts for work items that are assigned to you or have been changed.        |
+|Find what you need quickly and get notified of changes   | Azure Boards provides easy-to-use tools to help you quickly find specific work items as your project grows. You can [follow work items](../work-items/follow-work-items.md) to monitor updates and changes, use pivot views to show work items assigned to you, use the [query engine](../queries/query-field-value.md) to filter work items based on any field, and use ad-hoc search with quick inline filters. You can also personalize your alerts for work items that are changed or assigned to you.        |
 |Monitor status and progress with built-in dashboards and analytics     | With Azure Boards, you gain access to many tools to generate reports to support tracking status and trends. By using [configurable dashboards](../../report/dashboards/dashboards.md), you can add one or more widgets. You configure widgets to display the information and data you want, such as the following bug [burndown widget](../../report/dashboards/configure-burndown-burnup-widgets.md). Along with dashboards, you have access to the [Analytics service](../../report/powerbi/what-is-analytics.md). This service is optimized for fast read-access and server-based aggregations. By using [Analytics views](../../report/powerbi/what-are-analytics-views.md) and [Power BI](../../report/powerbi/what-are-analytics-views.md), you can create highly sophisticated reports on the project data of interest.          |
 |Integrate with Office  | Project managers who want to use familiar tools can import and export work item queries to and from Microsoft Office Excel or import and export work items using .csv files. For more information, see [Bulk import or update work items using CSV files](../queries/import-work-items-from-csv.md) or [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)|
 |Extend functionality    |  You can gain even greater functionality by adding Marketplace extensions, many of which are free. An extension is an installable unit that adds capabilities to Visual Studio, Azure DevOps Services, or Visual Studio Code. You can find extensions within these products or in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab. Also, by using the [REST API](/rest/api/azure/devops/index), you can create your own extensions or tools to integrate with Azure DevOps Services.|
@@ -60,49 +60,7 @@ For more information, see our Training module, [What is Azure Boards?](/training
 
 You can connect Azure Boards with GitHub repositories to link GitHub commits, pull requests, and issues to work items. Use GitHub for software development and Azure Boards to plan and track work. Quickly open linked GitHub commits, pull requests, or issues from the Kanban board. For more information, see [GitHub & Azure Boards](../github/index.md).   
 
-## Implement Agile, Scrum, and Kanban processes  
-
-Azure Boards supports software development processes with default process models. Each process includes a set of work item types with a natural hierarchy.
- 
-:::row:::
-   :::column span="2":::
-   [**Basic**](../get-started/plan-track-work.md) provides the simplest model that tracks work through Issues, Tasks, and Epics. 
-   :::column-end:::
-   :::column span="2":::
-   :::image type="content" source="../get-started/media/about-boards/basic-process-epics-issues-tasks-2.png" alt-text="Conceptual image of Basic work item types":::  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-   [**Agile**](../work-items/guidance/agile-process.md) supports Agile planning methods (learn more about Agile methodologies at the
-   [Agile Alliance](https://www.agilealliance.org/)), including Scrum,
-   and tracks development and test activities separately. This process works great if you want to track user stories and
-   (optionally) bugs on the Kanban board, or track bugs and tasks on the Taskboard.  
-   :::column-end:::
-   :::column span="2":::
-   :::image type="content" source="../work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png" alt-text="Agile work item types":::  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-   [**Scrum**](../work-items/guidance/scrum-process.md) tracks work using product backlog items (PBIs) and
-   bugs on the Kanban board or viewed on a sprint Taskboard.
-   
-   This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/)
-   :::column-end:::
-   :::column span="2":::
-   :::image type="content" source="../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png" alt-text="Scrum work item types":::  
-   :::column-end:::
-:::row-end:::
-:::row::: 
-   :::column span="2":::
-   [**Capability Maturity Model Integration** (CMMI)](../work-items/guidance/cmmi-process.md) supports a framework for process improvement and an auditable record of decisions. With this process, you can track requirements, change requests, risks, and reviews.
-   This process supports [formal change management activities](../work-items/guidance/cmmi/guidance-background-to-cmmi.md). 
-   :::column-end:::
-   :::column span="2":::
-   :::image type="content" source="../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png" alt-text="CMMI work item types":::  
-   :::column-end:::
-  :::row-end:::
+For more information, see [About default processes and process templates](../work-items/guidance/choose-process.md).
 
 ## Configure dashboards and Power BI reports 
 
@@ -141,5 +99,4 @@ Azure Boards integrates with popular chat tools such as [Microsoft Teams](../int
 - [Configure and customize Azure Boards](../configure-customize.md)
 - [The DevOps journey at Microsoft](https://azure.microsoft.com/solutions/devops/devops-at-microsoft/)
 - [Agile culture](../plans/agile-culture.md)  
-- [Practices that scale](../plans/practices-that-scale.md)  
 - [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)

@@ -64,9 +64,6 @@
   - name: Save project data
     href: delete-project.md#save-project-data
     displayname: export, backup, download, source, code, build, work, item
-  - name: Resources granted to project members
-    href: resources-granted-to-project-members.md
-    displayname: scope, group, organization, project, collection
 - name: Public projects
   items:
   - name: About public projects
