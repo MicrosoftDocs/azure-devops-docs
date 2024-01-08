@@ -1,8 +1,8 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 11/16/2023
+ms.date: 1/10/2024
 ms.topic: include
 ---
 
-- [Work item filtering](#work-item-filtering) 
+- [Code Coverage results for folders](#code-coverage-results-for-folders) 
