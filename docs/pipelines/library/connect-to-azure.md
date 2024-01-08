@@ -70,6 +70,11 @@ We recommend this approach if:
 
 ### Convert an existing ARM service connection to use workload identity federation
 
+Quickly convert an existing ARM service connection to use workload identity federation for authentication instead of a service principal. You can use the service connection conversion tool within Azure DevOps if your service connection meets these requirements. 
+
+- Azure DevOps originally created the service connection. If you created your service connection manually, you cannot convert the service connection using the tool because Azure DevOps does not have permission to modify its credentials.
+- Only one project uses the service connection. You can't convert [cross-project service connections](service-endpoints.md#project-permissions---cross-project-sharing-of-service-connections). 
+
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
 
 1. Go to **Pipelines** > **Service connections** and open an existing service connection. 
