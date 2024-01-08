@@ -267,7 +267,7 @@ To learn about scaling your organization, see the following articles.
 
 ::: moniker range="azure-devops"  
 
-- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
+- [About projects](../organizations/projects/about-projects.md)  
 - [FAQs about signing up and getting started](user-guide-faqs.yml)
 - [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
@@ -276,7 +276,7 @@ To learn about scaling your organization, see the following articles.
 
 ::: moniker range="< azure-devops"  
 
-- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
+- [About projects](../organizations/projects/project-team-quick-reference.md)  
 - [Security & identity](../organizations/security/about-security-identity.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 - [Azure DevOps Server administration](/azure/devops/server/index)
