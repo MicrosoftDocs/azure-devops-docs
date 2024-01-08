@@ -16,7 +16,7 @@ ms.date: 01/08/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Boards is a web-based service that enables teams to plan, track, and discuss work across the entire development process, while it supports agile methodologies, including [Scrum and Kanban](#implement-agile-scrum-and-kanban-processes). Azure Boards provides a customizable platform for managing work items, allowing teams to [collaborate](../../cross-service/cross-service-overview.md) effectively and streamline their workflow. [Sign up](sign-up-invite-teammates.md), [customize](../configure-customize.md), and experience the [benefits of using Azure Boards](#benefits-of-using-azure-boards).
+Azure Boards is a web-based service that enables teams to plan, track, and discuss work across the entire development process, while it supports [agile methodologies](../work-items/guidance/agile-process.md). Azure Boards provides a customizable platform for managing work items, allowing teams to [collaborate](../../cross-service/cross-service-overview.md) effectively and streamline their workflow. [Sign up](sign-up-invite-teammates.md), [customize](../configure-customize.md), and experience the [benefits of using Azure Boards](#benefits-of-using-azure-boards).
  
 ## Azure Boards hubs
 

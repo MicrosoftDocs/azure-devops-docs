@@ -55,7 +55,7 @@ Access Azure DevOps through the top navigational bar, as shown in the following 
 - [Wiki](../project/wiki/about-readme-wiki.md)
 ::: moniker-end
 
-Many of our services are either free for small teams or available through a subscription model or per-use model. You can do a hybrid approach where you use an on-premises deployment to manage your code and work. Then, purchase cloud build or testing services on an as-needed basis.  
+Many of our services are either free for small teams or available through a subscription model or per use model. You can do a hybrid approach where you use an on-premises deployment to manage your code and work. Then, purchase cloud build or testing services on an as-needed basis.  
 
 For more information about client tools, see [Tools and clients that connect to Azure DevOps](tools.md).
 ## Dashboards
@@ -117,13 +117,13 @@ From **Code**, you gain access to your source control Git-based or TFVC reposito
 From Azure Repos for Git, you can do the following tasks:
 
 - Review, download, and edit files, and review the change history for a file  
-- Review and manage commits that have been pushed
+- Review and manage pushed commits
 - Review, create, approve, comment on, and complete pull requests  
 - Add and manage Git tags
 
 ## Boards
 
-Software development projects require ways to easily share information and track the status of work, tasks, issues, or code defects. In the past, you might have used Microsoft Excel, Microsoft Project, a bug tracking system, or a combination of tools. Now, many teams have adopted Agile methods and practices to support planning and development.
+Software development projects require ways to easily share information and track the status of work, tasks, issues, or code defects. In the past, you perhaps used Microsoft Excel, Microsoft Project, a bug tracking system, or a combination of tools. Many teams adopted Agile methods and practices to support planning and development.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -150,7 +150,7 @@ You can do the following tasks with boards.
 - Review sprint tasks and update tasks through the task boards
 - Visualize the workflow and update the status by using Kanban boards
 - Manage portfolios by grouping stories under features and grouping features under epics
-- Use task boards during daily Scrum meetings to review work that's completed, remaining, or blocked
+- Use task boards during daily Scrum meetings to review completed, remaining, or blocked work
 
 Our systems provide several types of work items that you use to track features, requirements, user stories, tasks, bugs, and issues. Each work item is associated with a work item type and a set of fields that can be updated, as progress is made.
 
@@ -187,7 +187,7 @@ Use pipelines to implement continuous integration and continuous delivery.
 - **Release management**: Manage simultaneous releases. You can also do the following tasks:
     - Configure release pipelines that represent your environments from development to production
     - Run automation to deploy your app to each environment
-    - Add approvers to confirm that the app has been successfully deployed in an environment
+    - Add approvers to confirm that the app successfully deployed in an environment
     - Create your release manually or automatically from a build
     - Track your releases as they're deployed to various environments
 
