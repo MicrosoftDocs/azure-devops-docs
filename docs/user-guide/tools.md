@@ -47,7 +47,7 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 
 **Visual Studio Git experience**  
 
-Visual Studio 2019 and later versions provide a new Git experience through the **Git** menu as shown below. To learn more, see [Git experience in Visual Studio](/visualstudio/version-control/git-with-visual-studio) and [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison).  
+Visual Studio 2019 and later versions provide a new Git experience through the **Git** menu as shown in the following image. For more information, see [Git experience in Visual Studio](/visualstudio/version-control/git-with-visual-studio) and [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison).  
 
 :::image type="content" source="media/tools/visual-studio-git-menu.png" alt-text="Screenshot of Visual Studio 2019 Git menu.":::
 
@@ -178,13 +178,13 @@ Extensions are simple add-ons that you can use to customize and extend your DevO
 
 You build extensions by using our RESTful API library. Publish your extensions to the Azure DevOps Marketplace. You can privately maintain or share them with millions of developers who use Visual Studio and Azure DevOps.
 
-To learn more, visit the [Azure DevOps Marketplace](https://marketplace.visualstudio.com) and see [Overview of extensions](../extend/overview.md).
+For more information,see the [Azure DevOps Marketplace](https://marketplace.visualstudio.com) and [Overview of extensions](../extend/overview.md).
 
 ## REST APIs  
  
 The Azure DevOps APIs are based on REST, OAuth, JSON, and service hooks&mdash;all standard web technologies broadly supported in the industry.
 
-REST APIs are provided to support building extensions to Azure DevOps. To learn more, see [REST API overview](/rest/api/azure/devops).
+REST APIs are provided to support building extensions to Azure DevOps. For more information, see [REST API overview](/rest/api/azure/devops).
 
 ## Related articles
 
