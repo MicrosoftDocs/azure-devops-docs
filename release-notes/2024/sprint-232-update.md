@@ -1,11 +1,11 @@
 ---
-title:  Switch between HTML and Markdown editor in Azure Boards comments private preview
+title:  TBD
 author: ckanyika
 ms.author: ckanyika
 ms.date: 1/10/2024
-description: Switch between HTML and Markdown editor in Azure Boards comments private preview
+description: TBD
 ---
-# Switch between HTML and Markdown editor in Azure Boards comments private preview
+# TBD
 
 With this update, you can now switch between HTML and Markdown editor in Azure Boards comments. 
 

@@ -1,15 +1,15 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 11/16/2023
+ms.date: 1/10/2024
 ms.topic: include
 ---
 
-### Work item filtering
+### Code Coverage results for folders
 
-We are happy to announce **work item chart filtering.** This feature will let you hover over your work item chart for a quick overview and drill down into specific chart segments for detailed insights. You no longer need to create custom queries to access the exact piece of data you need. You can now dive into your work items in work item charts in a few clicks.
+We've enhanced the tasks publishing the code coverage results. The results for the code coverage are now available for every individual file and folder rather than only as a top-level number. The code coverage view is by default in the Folder view mode. In that mode you can drill down and see the code coverage for that selected subtree. The below image shows how that is displayed.
 
- > [!div class="mx-imgBorder"]
-> ![Gif to demo work item filtering.](../../media/230-reporting-01.gif "gif to demo work item filtering")
+Picture below shows the Folder / File level details of code coverage. As shown in the picture you can use the toggle button to switch between new and old views
+
+> ![Multiple repository widget to GA](../../media/232-reporting-01.png)
  
-Your feedback is invaluable in shaping the future of this feature. Try it now and let us know what you think in our [Azure DevOps community](https://developercommunity.visualstudio.com/AzureDevOps).  
