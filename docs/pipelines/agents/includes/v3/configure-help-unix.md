@@ -14,7 +14,7 @@ You must pass `--unattended` and the answers to all questions.
 
 ::: moniker range="> tfs-2018"
 
-[!INCLUDE [unattend](./unattended-config.md)]
+[!INCLUDE [unattend](./unattended-config-unix.md)]
 
 ::: moniker-end
 
