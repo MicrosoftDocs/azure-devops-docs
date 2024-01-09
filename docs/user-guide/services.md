@@ -43,16 +43,10 @@ For more information, see the following associated articles.
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-Access Azure DevOps through the top navigational bar, as shown in the following image. See the associated articles to jump to information for each major service.
+Access Azure DevOps through the top navigational bar, as shown in the following image.
 
 ![Azure DevOps Services, main](../media/services-hubs.png) 
 
-- [Dashboards](../report/dashboards/overview.md) 
-- [Repos](../repos/get-started/what-is-repos.md)
-- [Boards](../boards/get-started/what-is-azure-boards.md)
-- [Pipelines](../pipelines/get-started/pipelines-get-started.md)
-- [Test Plans](../test/overview.md)
-- [Wiki](../project/wiki/about-readme-wiki.md)
 ::: moniker-end
 
 Many of our services are either free for small teams or available through a subscription model or per use model. You can do a hybrid approach where you use an on-premises deployment to manage your code and work. Then, purchase cloud build or testing services on an as-needed basis.  
