@@ -647,7 +647,7 @@
         items:
         - name: "2024"
           items:
-          - name: 
+          - name:
             href: 
           expanded: false
         - name: "2023"
