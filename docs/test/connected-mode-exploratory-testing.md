@@ -11,22 +11,16 @@ monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
 ---
 
-# Exploratory testing with the Test &amp; Feedback extension in Connected mode
+# Exploratory testing with the Test & Feedback extension in Connected mode
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
-To use the Test & Feedback extension in Connected mode, connect to an Azure DevOps project, which automatically configures the extension based on your access level: 
+To use the Test & Feedback extension in Connected mode, connect to an Azure DevOps project, which automatically configures the extension based on your access level. 
 
 * Users with **Basic** access can use the extension to perform exploratory
   testing, as described in this article.
-
-* Users with **Stakeholder** access can use the extension to respond to 
-  feedback requests or to provide feedback voluntarily.
-  [More details](provide-stakeholder-feedback.md#direct).
- 
-* Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent 
-  by the team by choosing the **Provide feedback** link in the email.
-  [More details](provide-stakeholder-feedback.md#email).
+* Users with **Stakeholder** access can use the extension to respond to feedback requests or to [provide feedback](provide-stakeholder-feedback.md#direct) voluntarily.
+* Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent by the team by choosing the **Provide feedback** link in the email. for more information, see [Provide stakeholder feedback](provide-stakeholder-feedback.md#email).
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
 
@@ -34,38 +28,36 @@ To use the Test & Feedback extension in Connected mode, connect to an Azure DevO
 
 ## Connect to Azure DevOps 
 
-1. If you haven't already, [sign up for a subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs). Make sure you create a project when you create your subscription.
+1. If you don't have a subscription, [sign up for a subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs). Make sure you create a project when you create your subscription.
 
-2. If you haven't already, [install the Test &amp; Feedback extension](perform-exploratory-tests.md).
+2. [Install the Test & Feedback extension](perform-exploratory-tests.md).
 
 3. Open the extension in your web browser and select **Connected** mode.
 
-   ![Start the extension in Connected mode](media/shared/connectedmode-01.png)
+   ![Screenshot showing starting the extension in Connected mode.](media/shared/connectedmode-01.png)
  
-4. Enter the Azure DevOps URL you want to connect to and choose **Next**.
+4. Enter the Azure DevOps URL you want to connect to and select **Next**.
 
-   ![Enter the Azure DevOps URL you want to connect to](media/shared/connectedmode-02.png)
+   ![Screenshot showing entering the Azure DevOps URL you want to connect to.](media/shared/connectedmode-02.png)
 
    If you're connecting for the first time, you might be prompted to sign in. 
  
-5. After you connect to the server, the extension shows 
-   all the collections, projects and teams in that server. Select the
-   project or team you want to connect to and choose **Save**.
+   After you connect to the server, the extension shows all the collections, projects and teams in that server. 
+5. Select the project or team you want to connect to and select **Save**.
 
-   ![Select your project or team](media/connected-mode-exploratory-testing/connectedmode-03.png)
+   ![Screenshot showing project or team selection.](media/connected-mode-exploratory-testing/connected-mode-03.png)
 
-   If there are many projects or teams, use the search textbox
-   to find the one you need. 
+   If there are many projects or teams, use the search textbox to find the one you need. 
  
 The extension is now ready to be used in **Connected** mode. 
 Depending on your access level (Basic or Stakeholder), you see the appropriate UI for either [exploratory testing](#create-bugs) or [providing feedback](provide-stakeholder-feedback.md#provide).
-The extension remembers your selection and remains connected until
-the session cookies expire or you explicitly disconnect from the server.
+The extension remembers your selection and remains connected until the session cookies expire or you explicitly disconnect from the server.
 
 <a name="create-bugs"></a>
+
 ## Create bugs or tasks
 
-After you connect, you're ready to begin testing your app.
+Do the following steps to start your exploratory testing session and create bugs or tasks.
 
 1. Start your exploratory testing session. 
 
