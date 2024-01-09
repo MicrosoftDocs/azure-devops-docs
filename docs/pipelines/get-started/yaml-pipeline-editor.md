@@ -213,6 +213,16 @@ Some YAML pipeline settings are configured using the pipeline settings UI instea
 
 ## View and edit templates
 
+:::moniker-end
+
+:::moniker range="=azure-devops-2022"
+
+[!INCLUDE [feature-added-2022-1](../../includes/feature-added-2022-1.md)]
+
+:::moniker-end
+
+:::moniker range=">= azure-devops-2022"
+
 [Templates](../process/templates.md) are a commonly used feature in YAML pipelines. They're an easy way to share pipeline snippets and are a powerful mechanism for verifying and enforcing [security and governance](../security/templates.md) in your pipeline.
 Previously, the editor didn't support templates, so authors of YAML pipelines couldn't get intellisense assistance. Now Azure Pipelines supports a YAML editor, for which we're previewing support. To enable this preview, [go to preview features](../../project/navigation/preview-features.md) in your Azure DevOps organization, and enable **YAML templates editor**.
 
