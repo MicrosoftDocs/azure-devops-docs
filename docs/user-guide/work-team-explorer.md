@@ -180,7 +180,7 @@ For more information about each page, see the following articles.
 
 The **Reports** page opens the [Reporting Services report site](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports). This page appears only when your project is configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting is configured for the project.
 
-If your project is missing one or more pages, you might be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/admin-quick-ref).
+If your project is missing one or more pages, try to [add functionality to your on-premises TFS deployment](/azure/devops/server/admin/admin-quick-ref).
 
 ::: moniker-end
 

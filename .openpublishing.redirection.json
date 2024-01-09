@@ -524,6 +524,16 @@
       "source_path": "docs/project/navigation/use-breadcrumbs-selectors.md",
       "redirect_url": "/azure/devops/project/navigation/go-to-project-repo",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/projects/resources-granted-to-project-members.md",
+      "redirect_url": "/azure/devops/user-guide/project-admin-tutorial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/user-guide-faqs.yml",
+      "redirect_url": "/azure/devops/user-guide/provide-feedback",
+      "redirect_document_id": false
     }
   ]
 }
