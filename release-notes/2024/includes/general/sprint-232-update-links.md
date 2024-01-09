@@ -5,5 +5,5 @@ ms.date: 1/10/2024
 ms.topic: include
 ---
 
-- [Select a geography when creating an organization ](#select-a-geography-when-creating-an-organization)
 - [OAuth self-service secret rotation ](#oauth-self-service-secret-rotation)
+- [Select a geography when creating an organization ](#select-a-geography-when-creating-an-organization)
