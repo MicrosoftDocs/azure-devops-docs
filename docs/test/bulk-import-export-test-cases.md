@@ -47,7 +47,7 @@ For an overview of test objects and terminology, see [Test objects and terms](te
 
    :::image type="content" source="media/bulk-import-test-case/import-test-cases-dialog.png" alt-text="Screenshot of Import Test Cases dialog.":::
 
-3. Choose **Confirm** in the **Confirm import** dialog that displays. If you specify test cases that are already defined in the test suite, some elements may get over written during import. 
+3. Choose **Confirm** in the **Confirm import** dialog that displays. If you specify test cases that are already defined in the test suite, some elements might get over written during import. 
 
 
 <a id="import-test-cases"></a>
@@ -83,7 +83,7 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 |**/maxpriority**:`priority`|Optional. Specifies which tests to import based on the maximum priority of the test method. For example, if the parameter is `/maxpriority:1`, only tests with a priority attribute for the test method less than or equal to 1 are imported as test cases from the assembly.| 
 |**/minpriority**:`priority`|Optional. Specifies which tests to import based on the minimum priority of the test method. For example, if the parameter is `/minpriority:2`, only tests with a priority attribute for the test method equal or greater than 2 are imported as test cases from the assembly.| 
 |**/category**:`filter`|Optional. Specifies which tests to import based on the category of each test method in the test assembly. You can use this parameter together with `/syncsuite` to import tests with a certain category into a specific test suite.<br/> For more information about test categories, see [Run unit tests with Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer).| 
-|**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite cannot be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests that have already been added, the tests that aren't imported are removed from the test suite but not from the test plan itself.  |
+|**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite can't be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests, the unsupported tests get removed from the test suite but not from the test plan itself.  |
 
 ## FAQs
 
@@ -99,7 +99,7 @@ A: Any problems with the formatting of your CSV/XLSX file appear in the import v
 
 ### Q: Does import operation support all work item types?
 
-A: No, all work items are not supported. The Test case import only supports the following work item types:
+A: No, all work items aren't supported. The Test case import only supports the following work item types:
 
 - Test Case
 - Shared Steps
@@ -109,11 +109,11 @@ Azure Boards has a separate bulk import functionality using CSV files. For more 
 ### Q: What are the mandatory headers to include in Import CSV/XLSX file?
 
 A: Ensure every import file has the following headers (with the exact spelling): 
-* **ID**: This is the ID of the work item you're trying to import. For new test case creation, leave this field blank.
-* **Work Item Type:** Test case import method only supports 'Test case' and 'Shared Steps'. Use these exact keywords when providing work item type information.
-* **Title:** The title of the test case you want to create or update. This can be an alpha-numeric value.
+* **ID**: The ID of the work item you're trying to import. For new test case creation, leave this field blank.
+* **Work Item Type:** Test case import method only supports 'Test case' and 'Shared Steps.' Use these exact keywords when providing work item type information.
+* **Title:** The title of the test case you want to create or update, which can be an alpha-numeric value.
 * **Test Step:** Steps defined in a test case are in an ordered list. You need to provide the order number of each test step.
-* **Step Action:** This defines the actions a manual tester needs to undertake while executing the test step.
+* **Step Action:** Defines the actions a manual tester needs to undertake while executing the test step.
 * **Step Expected:** The expected outcome of a given action. 
 
 

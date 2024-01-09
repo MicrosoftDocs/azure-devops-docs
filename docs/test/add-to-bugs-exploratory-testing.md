@@ -1,6 +1,6 @@
 ---
 title: Add findings to existing bugs
-description: Manual and exploratory testing - add findings to  existing bugs existing bugs when using the Test &amp; Feedback extension
+description: Manual and exploratory testing - add findings to  existing bugs when using the Test &amp; Feedback extension
 ms.assetid: 0C61F157-452E-4DE5-8998-8DDBD9D44969
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
@@ -23,16 +23,16 @@ your findings to an existing bug.
 [!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
 
 1. As you type the title for a new bug, in the background the extension 
-   searches for similar bugs that might be related to the issue you've found
+   searches for similar bugs that might be related to the issue you found
    and displays a link to the results. Choose this link to see the results that have 
    similar title keywords.
 
    ![The link to view similar bugs](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-01.png)
  
-   The form displays **0 Similar** if it does not find any matching bugs.
+   The form displays **0 Similar** if it doesn't find any matching bugs.
    In this case, or if you don't see a "similar" link, you can create a
    new bug containing your screenshots, notes, and videos
-   as described in [this topic](connected-mode-exploratory-testing.md).
+   as described in [this article](connected-mode-exploratory-testing.md).
  
 1. If you see a bug you want to update, instead of creating a new one:
 
@@ -54,13 +54,13 @@ your findings to an existing bug.
      ![Returning to the bug details form](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-04.png)
 
    - Enter the details for the new bug and save it
-     as described in [this topic](connected-mode-exploratory-testing.md).<p />
+     as described in [this article](connected-mode-exploratory-testing.md).<p />
    
 1. Continue exploring your app, filing bugs and tasks, and creating test cases. 
 
 ## See your exploratory session results 
 
-After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans.
+After you file bugs, create tasks, or create test cases, they show up in the "Recent exploratory sessions" page in Azure Test Plans.
 
 * See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
