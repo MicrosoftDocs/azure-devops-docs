@@ -16,7 +16,7 @@ ms.date: 12/06/2021
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Collect diagnostic data while testing your apps.
-This data will be included in the bugs you file 
+This data is included in the bugs you file 
 during the test. You can collect diagnostic data from
 web apps and from desktop apps,
 and view it in Azure Test Plans.
@@ -52,7 +52,7 @@ Capture annotated screenshots from your app:
 
    ![Selecting the area of the screen to capture](media/collect-diagnostic-data/collect-diagnostic-data-03.png) 
 
-1. If required, edit the title of the screenshot and add 
+1. If necessary, edit the title of the screenshot and add 
    annotations and text to it using the icons in the toolbar.
 
    ![Annotating the screenshot](media/collect-diagnostic-data/collect-diagnostic-data-04.png) 
@@ -71,21 +71,21 @@ Capture your interactions with the web or desktop app as an image action log tha
 
    ![Capturing an image action log from the app](media/shared/collect-diagnostic-data-06.png) 
 
-1. The Test Runner will now record all the actions you take
+2. The Test Runner records all the actions you take
    on the app's browser tab or in the desktop app.
  
    ![Recording in progress for a web app](media/collect-diagnostic-data/collect-diagnostic-data-08.png) 
 
    If you create a bug while recording your actions, all the 
-   data collected up to that point will be included in the bug. 
+   data collected up to that point is included in the bug. 
 
-1. Finish capturing your actions by choosing
+3. Finish capturing your actions by choosing
    the **Stop** button. The action log is added to the test results 
    as an attachment.
 
    ![Stopping a recording for a web app](media/collect-diagnostic-data/collect-diagnostic-data-08a.png) 
 
-1. Choose the **ActionLog...** link at the bottom of the window
+4. Choose the **ActionLog...** link at the bottom of the window
    to view the data captured in the action log.
 
    ![Opening the image action log](media/collect-diagnostic-data/collect-diagnostic-data-09.png) 
@@ -121,9 +121,9 @@ Capture screen recordings from your apps:
 
    ![Stopping a screen recording](media/collect-diagnostic-data/collect-diagnostic-data-13.png) 
 
-   If you do not stop the recording after 10 minutes, it stops
+   If you don't stop the recording after 10 minutes, it stops
    automatically and is saved as an attachment to your test results.
-   Restart the recording the **Record screen** icon if required. 
+   Restart the recording the **Record screen** icon if necessary. 
 
 1. Choose the **ScreenRecording...** link at the bottom of the window
    to view the captured recording.
@@ -135,7 +135,7 @@ Capture screen recordings from your apps:
 ## View the diagnostic data
 
 When you create a bug while capturing diagnostic data, all the data captured 
-up to that point is included in the bug that is created. You can
+up to that point gets included in the bug that you create. You can
 view it before you save the bug.
 
 ![Viewing the diagnostic data in the bug you are creating](media/collect-diagnostic-data/collect-diagnostic-data-15.png) 
@@ -143,7 +143,7 @@ view it before you save the bug.
 [How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
 
 If you want to collect advanced diagnostic data such as code coverage, 
-IntelliTrace, and Test Impact data in addition to the data items listed above,
+IntelliTrace, and Test Impact data (in addition to the previously listed data items),
 you must [configure the data collectors](/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)
 and other run settings in Microsoft Test Manager and run your 
 tests using Microsoft Test Manager. For more information, see 

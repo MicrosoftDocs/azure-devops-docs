@@ -1,6 +1,6 @@
 ---
 title: Create test plans and suites
-description: Learn about Test tools. Create test plans in Azure Test Plans and Azure DevOps Server to make sure each of the deliverables meets your needs.
+description: Learn about Test tools and how to create test plans in Azure DevOps.
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
@@ -32,10 +32,10 @@ Testers continue testing until the product meets exit criteria.
 For the next development cycle and release, you can create a new test plan and reuse the same test cases.
 You repeat this development-test-release cycle by importing the same test cases into each new test plan.
 
-The great thing is that, because test plans refer to test cases, updates to a test case automatically reflect in all the test plans and test suites that use it.
+Because test plans refer to test cases, updates to a test case automatically reflect in all the test plans and test suites that use it.
 
 In the next version of the product, you can reuse the existing test cases.
-However, a better option may be to [copy or clone the test cases](reference-qa.yml#create-manual-test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
+However, a better option might be to [copy or clone the test cases](reference-qa.yml#create-manual-test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
 
 > [!TIP]
 > For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.yml#testplans).
@@ -51,18 +51,18 @@ However, a better option may be to [copy or clone the test cases](reference-qa.y
 ## Create a test plan
 
 ::: moniker range=">=azure-devops-2020"
-In general, you create test plans to test requirements. Before creating a test plan, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md).
+In general, you create test plans to test requirements. Before you create a test plan, [define your backlog of requirements](../boards/backlogs/create-your-backlog.md).
 
 1. From the web portal, open your project and go to **Test Plans**.
    If you already have a test plan, select **Test Plans** to go to the page that lists all test plans.
 
    ![Screenshot of opening the list of test plans page for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/open-test-plans.png)
 
-1. In the **Test Plans** page, select **New Test Plan** to create a test plan for your current sprint.
+2. In the **Test Plans** page, select **New Test Plan** to create a test plan for your current sprint.
 
    ![Screenshot of creating a new test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/new-test-plan.png)
 
-1. In **New Test Plan**, enter a name for the test plan.
+3. In **New Test Plan**, enter a name for the test plan.
    Verify that the area path and iteration are set correctly, then select **Create**.
 
    ![Screenshot of adding test plan details for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/test-plan-name-path-iteration.png)
@@ -89,25 +89,25 @@ To delete a test plan, use this procedure:
 
 1. Next to the test plan name, select **More Actions** > **Delete**.
 
-1. The **Permanently delete test artifacts** dialog box explains exactly what will be deleted. Type the test plan ID to confirm that you want to delete, and then select **Permanently delete**.
+1. The **Permanently delete test artifacts** dialog box explains exactly what gets deleted. Enter the test plan ID to confirm that you want to delete, and then select **Permanently delete**.
 
    ![Screenshot shows Permanently delete test artifacts dialog box.](media/create-a-test-plan/permanently-delete-test-artifacts.png)
 
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
-In general, you create test plans to test requirements. Prior to creating a test plan, therefore, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
+In general, you create test plans to test requirements. Before you create a test plan, [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
 
 1. From the web portal, open your project and go to **Test Plans**.
    If you already have a test plan, choose **Test Plans** to go to the page that lists all test plans.
 
    ![Opening the list of test plans page](media/create-a-test-plan/goto-test-plans-page.png)
 
-1. In the **Test Plans** page, choose **New Test Plan** to create a test plan for your current sprint.
+2. In the **Test Plans** page, choose **New Test Plan** to create a test plan for your current sprint.
  
    ![Creating a new test plan](media/create-a-test-plan/CreateATestPlan1a.png)
 
-1. In **New Test Plan**, enter a name for the test plan.
+3. In **New Test Plan**, enter a name for the test plan.
    Verify that the area path and iteration are set correctly, then choose **Create**.
 
    ![Adding test plan details](media/create-a-test-plan/CreateATestPlan2.png) 
