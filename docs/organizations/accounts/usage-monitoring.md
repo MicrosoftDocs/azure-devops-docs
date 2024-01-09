@@ -6,7 +6,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/09/2021
+ms.date: 01/09/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -39,7 +39,8 @@ To avoid issues, you may need to rewrite tools or update build processes. This a
 For more information, see [Rate and usage limits](../../integrate/concepts/rate-limits.md).
 
 > [!NOTE]
-> If you want to see usage from an audit perspective, please see [Access, export, and filter audit logs](../../organizations/audit/azure-devops-auditing.md).  This view does not include TSTUs but does have 90s of retention.
+> To view usage from an audit perspective, see [Access, export, and filter audit logs](../../organizations/audit/azure-devops-auditing.md). This view does't include TSTUs, but does have 90s of retention.
+
 ## View usage
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
