@@ -51,13 +51,11 @@ Let Azure Pipelines manage access to secrets and environments.
 
 ## Minimize the scope of service connections
 
-Service connections must be able to access only the resources that they require.
-For instance, an [Azure service connection](../library/service-endpoints.md) should use Azure Resource Manager and service principals that are scoped to the resources that they need to access.
-They shouldn't have broad contributor rights for the entire Azure subscription.
+Service connections must be able to access only the resources that they require. If possible, use [workload identity federation](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-workload-identity-federation) instead of a service principal for your [Azure service connection](../library/service-endpoints.md). Workload identity federation uses an industry-standard technology, Open ID Connect (OIDC), to facilitate authentication between Azure and Azure DevOps and does not use secrets. 
 
-When you create a new [Azure Resource Manager service connection](../library/connect-to-azure.md), always select a resource group.
-Ensure that your resource group contains only the VMs or resources that the build requires.
-Similarly, when you configure the GitHub app, grant access only to the repositories that you want to build by using Azure Pipelines.
+Your [Azure service connection](../library/service-endpoints.md) should be scoped to the resources that your the service connection needs to access. Users shouldn't have broad contributor rights for the entire Azure subscription.
+
+When you create a new [Azure Resource Manager service connection](../library/connect-to-azure.md), always select a resource group. Ensure that your resource group contains only the VMs or resources that the build requires. Similarly, when you configure the GitHub app, grant access only to the repositories that you want to build by using Azure Pipelines.
 
 ## Next steps
 
