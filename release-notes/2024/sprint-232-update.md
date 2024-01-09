@@ -1,13 +1,13 @@
 ---
-title:  TBD
+title:  OAuth self-service secret rotation
 author: ckanyika
 ms.author: ckanyika
 ms.date: 1/10/2024
-description: TBD
+description: OAuth self-service secret rotation
 ---
-# TBD
+# OAuth self-service secret rotation
 
-With this update, you can now switch between HTML and Markdown editor in Azure Boards comments. 
+With this update, you can generate your own client secret in the Azure DevOps OAuth app when the existing one is due to expire. 
 
 Check out the release notes to learn more about enrolling in the private preview for this feature. 
 
@@ -49,4 +49,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-Dan Hellem
+Rajesh Ramamurthy
