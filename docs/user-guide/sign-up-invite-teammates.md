@@ -47,8 +47,6 @@ Sign in to your organization at any time `https://dev.azure.com/{Your_Organizati
    ![Screenshot of the Invite GitHub users policy.](../media/invite-github-users-policy.png)
 ---
 
-
-
 ## Next steps  
  
 > [!div class="nextstepaction"]

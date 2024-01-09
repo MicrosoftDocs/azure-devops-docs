@@ -38,7 +38,7 @@ If you don't need Visual Studio, but want to connect to a project in Azure DevOp
 
 ## Connect to a project or repository
 
-Team Explorer connects Visual Studio to projects in Azure DevOps. You can manage source code, work items, and builds. The operations available to you depend on which source control option&mdash;Git or Team Foundation version control (TFVC) &mdash;was selected to manage source code when the project was created.
+Team Explorer connects Visual Studio to projects in Azure DevOps. You can manage source code, work items, and builds. The operations available to you depend on which source control option&mdash;Git or Team Foundation version control (TFVC)—was selected to manage source code when the project was created.
 
 > [!TIP]  
 > If you open Visual Studio and the Team Explorer pane doesn't appear, choose the **View>Team Explorer** menu option from the tool bar.
@@ -58,7 +58,7 @@ The following image shows the pages available when you connect to a Git reposito
 
 ![Screenshot of Visual studio 2019, Team Explorer Home page with Git as source control.](media/vs-2019-te/te-git-full.png) 
 
-To learn more about each page, see the following articles. 
+For more information about each page, see the following articles. 
 
 
 :::row:::
@@ -118,7 +118,7 @@ The following image shows the pages available when you connect to a TFVC reposit
 
 ![Screenshot of Visual Studio 2019, Team Explorer Home page with TFVC as source control.](media/vs-2019-te/te-tfvc.png)  
 
-To learn more about each page, see the following articles. 
+For more information about each page, see the following articles. 
 
 
 :::row:::
@@ -178,15 +178,15 @@ To learn more about each page, see the following articles.
 > [!NOTE]  
 > Some pages, such as **Reports**, only appear when an on-premises TFS is configured with the required resources, such as SQL Server Reporting Services.
 
-The **Reports** page opens the [Reporting Services report site](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports). This page appears only when your project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the project.
+The **Reports** page opens the [Reporting Services report site](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports). This page appears only when your project is configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting is configured for the project.
 
-If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/admin-quick-ref).
+If your project is missing one or more pages, try to [add functionality to your on-premises TFS deployment](/azure/devops/server/admin/admin-quick-ref).
 
 ::: moniker-end
 
 ## Settings  
 
-From the **Settings** page, you can configure administrative features for either a project or project collection. To learn more about each page, see the following articles. Most of the links open to a web portal administration page. Not all settings are available from the Team Explorer plug-in for Eclipse. 
+From the **Settings** page, you can configure administrative features for either a project or project collection. For more information about each page, see the following articles. Most of the links open to a web portal administration page. Not all settings are available from the Team Explorer plug-in for Eclipse. 
 
 :::row:::
    :::column span="":::
@@ -212,16 +212,16 @@ From the **Settings** page, you can configure administrative features for either
 :::row-end:::
 
 
-To learn more about settings, see [About team, project, and organizational-level settings](../organizations/settings/about-settings.md).
+For more information, see [About team, project, and organizational-level settings](../organizations/settings/about-settings.md).
 
 
 ## Refresh Team Explorer  
 
 If data doesn't appear as expected, the first thing to try is to refresh your client. Refreshing your client updates the local cache with changes that were made in another client or in Azure DevOps. To refresh Team Explorer, do one of the following actions:
 
-- To refresh a page that you are currently viewing, choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** in the menu bar (or choose **F5**).
-- To refresh the project you currently have selected, choose :::image type="icon" source="media/work-team-explorer/IC547418.png" border="false"::: **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** (or choose **F5**).
-- To refresh the set of teams defined for the project that you currently have selected, choose **Connect**, and then choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** (or enter **F5**).
+- To refresh a page that you're currently viewing, choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** in the menu bar (or choose **F5**).
+- To refresh the project you selected, choose :::image type="icon" source="media/work-team-explorer/IC547418.png" border="false"::: **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** (or choose **F5**).
+- To refresh the set of teams defined for the project that you selected, choose **Connect**, and then choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** (or enter **F5**).
 
 [!INCLUDE [temp](includes/when-to-refresh-client.md)]
 

@@ -17,7 +17,7 @@ ms.date: 10/07/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-The **cloud offering**, Azure DevOps Services, provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24/7 operations team, and available in local data centers around the world.
+The **cloud offering**, Azure DevOps Services, provides a scalable, reliable, and globally available hosted service. The cloud offering is backed by a 99.9% SLA, monitored by our 24/7 operations team, and available in local data centers around the world.
 
 The **on-premises offering**, Azure DevOps Server, is built on a SQL Server back end. Customers usually choose the on-premises version when they need their data to stay within their network. Or, when they want access to SQL Server reporting services that integrate with Azure DevOps Server data and tools.  
 
@@ -53,7 +53,7 @@ If you're using Azure DevOps Server and considering a move to Azure DevOps Servi
 
 ## Scope and scale data 
 
-As your business grows, you may need to scale up your Azure DevOps instance. 
+As your business grows, you might need to scale up your Azure DevOps instance. 
 
 **Azure DevOps Services**
 
@@ -155,7 +155,7 @@ Azure DevOps Services uses the **Inheritance** process model, which supports WYS
 **Azure DevOps Server**
 
 With Azure DevOps Server, you can choose the **Inheritance** process model or the **On-premises XML** process model, which supports customization through import or export of XML definition files for work-tracking objects.
-Azure DevOps Server 2018 and earlier versions only has access to the **On-premises XML** process model.
+Azure DevOps Server 2018 and earlier versions only have access to the **On-premises XML** process model.
 Although the **On-premises XML** process model option is powerful, it can cause various issues. The main issue is that processes for existing projects aren't automatically updated.
 <!--
 commenting out, since we no longer address versions before 2018
@@ -164,7 +164,7 @@ changes. When you upgrade from 2012 to 2013, each project collection gets new ve
 "in the box" process templates that include these changes. However, these changes aren't automatically incorporated into existing projects. Instead, after you finish upgrading, you have to include the changes in each project by using the [Configure features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)
 wizard or a more manual process.-->
 
-To help you avoid these issues in Azure DevOps Services, custom process templates and the **witadmin.exe** tool have always been disabled. This approach has enabled us to automatically update all projects with each Azure DevOps Services upgrade. Meanwhile, the product team is working hard to make customizing processes possible in ways that we can support easily and continuously. We recently introduced the first of these changes and more changes are on the way.
+To help you avoid these issues, custom process templates and the **witadmin.exe** tool are always disabled. This approach automatically updates all projects with each Azure DevOps Services upgrade. Meanwhile, the product team is working hard to make customizing processes possible in ways that we can support easily and continuously. We recently introduced the first of these changes and more changes are on the way.
 
 With the new process-customization capability, you can make changes directly within the web user interface (UI). If you want to customize your processes programmatically, you can do so through REST endpoints. When you customize projects this way, they're automatically updated when we release new versions of their base processes with Azure DevOps Services upgrades.
 
@@ -207,7 +207,7 @@ Azure DevOps Services and Azure DevOps Server 2019 and up use the new navigation
 > [!NOTE]
 > You can disable select services from the user interface. For more information, see [Turn a service on or off](../organizations/settings/set-services.md).
 
-You can still use `visualstudio.com` to access Azure DevOps Services. We've moved to the new `dev.azure.com` domain name as the primary URL for new organizations. That URL is `https://dev.azure.com/{your organization}/{your project}`. If you want to change your URL to be based on `dev.azure.com` as the primary, an organization administrator can do so from the organization settings page.
+You can still use `visualstudio.com` to access Azure DevOps Services. We moved to the new `dev.azure.com` domain name as the primary URL for new organizations. That URL is `https://dev.azure.com/{your organization}/{your project}`. If you want to change your URL to be based on `dev.azure.com` as the primary, an organization administrator can do so from the organization settings page.
 
 ## Related articles
 
