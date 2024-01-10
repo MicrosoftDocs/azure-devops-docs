@@ -22,7 +22,7 @@
     href: configure-your-backlog-view.md
     displayname: backlog level, view options, rollup, parents, forecasting, mapping, completed, expand, collapse, filter
   - name: Automate work item state transitions
-    href: ../work-items/automate-work-item-state-transitions.md
+    href: automate-work-item-state-transitions.md
   - name: Set up your backlogs & boards
     href: set-up-your-backlog.md
   - name: Change column options

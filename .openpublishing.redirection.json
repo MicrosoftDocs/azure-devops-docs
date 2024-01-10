@@ -534,6 +534,11 @@
       "source_path": "docs/user-guide/user-guide-faqs.yml",
       "redirect_url": "/azure/devops/user-guide/provide-feedback",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/automate-work-item-state-transitions.md",
+      "redirect_url": "/azure/devops/boards/backlogs/automate-work-item-state-transitions",
+      "redirect_document_id": false
     }
   ]
 }
