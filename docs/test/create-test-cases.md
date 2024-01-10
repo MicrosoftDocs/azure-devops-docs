@@ -60,13 +60,13 @@ Organize your test cases by adding them to test plans and test suites, and then 
 
 You can specify configurations, such as different operating systems, web browsers, and other variations for your tests.
 
-1. Select the test suite > **More options** > **Assign configurations**, and in the dialog box, select your configurations.
+- Select the test suite > **More options** > **Assign configurations**, and in the dialog box, select your configurations.
 
 ![Screenshot showing the Assign configurations to test suite dialog box with some options selected.](media/create-test-cases/assign-configurations-test-suite.png)
 
    You can also assign configurations to individual test cases. Select one or more test cases, select **More options** > **Assign configuration**.
    
-1. Make your changes and then **Save**.
+- Make your changes and then **Save**.
 
 For more information, see [Test different configurations](test-different-configurations.md).
 
@@ -277,7 +277,7 @@ You can open a test case to view it or edit it.
 1. To open a test case in a test suite, in the **Define** tab, double-select the name of the test case to open.
 2. In the **Execute** tab, select a test case, open its context menu, and select **Edit test case**.
 
-![Screenshot showing the Edit test case option for a test case in the context menu](media/create-test-cases/open-test-case-edit.png)
+![Screenshot showing the Edit test case option for a test case in the context menu.](media/create-test-cases/open-test-case-edit.png)
 
 A test case can be linked to test suites, requirements, and bugs.
 To see linked items, in the **Define** tab, open the context menu for a test case, and select **View Linked Items**.
