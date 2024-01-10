@@ -3,7 +3,7 @@ title: Build container images to deploy apps
 description: Build Linux or Windows container images for app deployment using Azure Pipelines.
 ms.topic: quickstart
 ms.assetid: 4fd7bae1-7484-4bb2-9bb9-a95ef17cb8fb
-ms.date: 09/22/2022
+ms.date: 01/12/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -26,7 +26,7 @@ This quickstart shows how to build a container image for app deployment using Az
 ## Build a Linux or Windows image
 
 1. Sign in to your Azure DevOps organization, and go to your project.
-1. Go to **Pipelines**, and select **New Pipeline**.
+1. Go to **Pipelines**, and select **New Pipeline** or **Create Pipeline** if creating the first pipeline in the project.
 1. Select **GitHub** as the location for your source code.
 1. Select your repository, and then select **Starter pipeline**.
 
@@ -56,9 +56,12 @@ This quickstart shows how to build a container image for app deployment using Az
 
 1. When you're done, select **Save and run**.
 
-   When you add the **azure-pipelines.yml** file to your repository, you're prompted to add a commit message.
+1. When you add the **azure-pipelines.yml** file to your repository, you're prompted to add a commit message. Enter a message, and then select **Save and run**.
 
-For more information, see the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) used by this sample application. You can also directly invoke Docker commands using a [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2).
+For more information about building Docker images, see the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) used by this sample application. You can also directly invoke Docker commands using a [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2).
+
+The container images are built and stored on the agent.  You can push your image to Coogle Container Registry, Docker Hub, or Azure Container Registry.  For more information, see [Push an image to Docker Hub or Google Container Registry](push-image.md) or [Push an image to Azure Container Registry](acr-template.md).
+
 
 ## Clean up resources
 
@@ -72,13 +75,13 @@ If you don't plan to continue using this application, delete your pipeline and c
 
 - You can build Windows container images using Microsoft-hosted Windows agents or Windows platform based self-hosted agents. All Microsoft-hosted Windows platform-based agents are shipped with the Moby engine and client needed for Docker builds.
 
-- You currently can't use Microsoft-hosted macOS agents to build container images because the Moby engine needed for building the images isn't pre-installed on these agents.
+- You currently can't use Microsoft-hosted macOS agents to build container images because the Moby engine needed for building the images isn't preinstalled on these agents.
 
 For more information, see the [Windows and Linux agent options available with Microsoft-hosted agents](../../agents/hosted.md).
 
-### What pre-cached images are available on hosted agents?
+### What precached Docker images are available on hosted agents?
 
-To avoid spending long intervals pulling these images for every job from the container registry, some commonly used images are pre-cached on Microsoft-hosted agents. For the list of available pre-cached images, see the release notes in the [**azure-pipelines-image-generation** repository](https://github.com/actions/runner-images/releases).
+To avoid spending long intervals pulling Docker images for every job from the container registry, some commonly used images are precached on Microsoft-hosted agents. For the list of available precached images, see the **Included Software** for the available VM images in the [**azure-pipelines-image-generation** repository](https://github.com/actions/runner-images).
 
 ### How do I set the BuildKit variable for my Docker builds?
 
@@ -125,7 +128,7 @@ This command creates an image equivalent to one built with the Docker task. Inte
 
 ### Can I reuse layer caching during builds on Azure Pipelines?
 
-If you're using Microsoft-hosted agents, every job is dispatched to a newly provisioned virtual machine, based on the image generated from [azure-pipelines-image-generation](https://github.com/microsoft/azure-pipelines-image-generation) repository templates. These virtual machines are cleaned up after the job completes. This ephemeral lifespan prevents reusing these virtual machines for subsequent jobs and the reuse of cached Docker layers. As a workaround, you can set up a multi-stage build that produces two images and pushes them to an image registry at an early stage. You can then tell Docker to use these images as a cache source with the `--cache-from` argument. 
+If you're using Microsoft-hosted agents, every job is dispatched to a newly provisioned virtual machine, based on the image generated from [**azure-pipelines-image-generation** repository](https://github.com/actions/runner-image) templates. These virtual machines are cleaned up after the job completes. This ephemeral lifespan prevents reusing these virtual machines for subsequent jobs and the reuse of cached Docker layers. As a workaround, you can set up a multi-stage build that produces two images and pushes them to an image registry at an early stage. You can then tell Docker to use these images as a cache source with the `--cache-from` argument. 
 
 If you're using self-hosted agents, you can cache Docker layers without any workarounds because the ephemeral lifespan problem doesn't apply to these agents. 
 
