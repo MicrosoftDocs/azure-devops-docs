@@ -1,11 +1,11 @@
 ---
-title:  Select a geography when creating an organization
+title:  Select a geography when creating a new Azure DevOps organization
 author: ckanyika
 ms.author: ckanyika
 ms.date: 1/10/2024
-description: Select a geography when creating an organization
+description: Select a geography when creating a new Azure DevOps organization
 ---
-# Select a geography when creating an organization
+# Select a geography when creating a new Azure DevOps organization
 
 With this update, you can select a geography instead of a region, when creating a new Azure DevOps organization. 
 
