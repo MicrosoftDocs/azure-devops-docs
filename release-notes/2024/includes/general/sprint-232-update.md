@@ -13,4 +13,4 @@ When creating a new organization in Azure DevOps, you can now  select a geograph
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Select a geography.](../../media/232-general-01.png "Screenshot of Select a geography")
 
-For more information, see [Find or change your organization geography](/azure/devops/organizations/accounts/change-organization-location?view=azure-devops).
+For more information, see [Find or change your organization geography](/azure/devops/organizations/accounts/change-organization-location?view=azure-devops&preserve-view=true).
