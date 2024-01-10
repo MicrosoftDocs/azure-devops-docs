@@ -23,7 +23,7 @@ Learn about the key concepts and components that make up a pipeline. Understandi
 - A [trigger](#trigger) tells a Pipeline to run. 
 - A [pipeline](#pipeline) is made up of one or more [stages](#stage). A pipeline can deploy to one or more [environments](#environment).
 - A [stage](#stage) is a way of organizing [jobs](#job) in a pipeline and each stage can have one or more jobs.
-- Each [job](#job) runs on one [agent](#agent). A job can also be agentless. 
+- Each [job](#job) runs on one [agent](#agent). A job can also be agentless.  
 - Each [agent](#agent) runs a job that contains one or more [steps](#step).
 - A [step](#step) can be a [task](#task) or [script](#script) and is the smallest building block of a pipeline. 
 - A [task](#task) is a pre-packaged script that performs an action, such as invoking a REST API or publishing a build artifact.
@@ -70,6 +70,8 @@ An [environment](../process/environments.md) is a collection of resources, where
 ## Job
 
 A stage contains one or more [jobs](../process/phases.md). Each job runs on an agent. A job represents an execution boundary of a set of steps. All of the steps run together on the same agent. Jobs are most useful when you want to run a series of steps in different environments. For example, you might want to build two configurations - x86 and x64. In this case, you have one stage and two jobs. One job would be for x86 and the other job would be for x64.
+
+Agentless jobs run in Azure DevOps or Azure DevOps Server without using an agent. A [limited number of tasks](../process/phases.md#agentless-tasks) support agentless jobs.
 
 ## Pipeline
 

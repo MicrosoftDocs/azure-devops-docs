@@ -18,9 +18,9 @@ monikerRange: '<= azure-devops'
 
 Collaboration tools encompass READMEs, team project wikis, notifications, feedback, and search.  
 
-Most of these tools are available to you if you're added as a team member or a member of the Contributors group for a team project. The most common built-in groups include Readers, Contributors, and Project Administrators. For a simplified view of all default permissions assigned to built-in groups, see [Default permissions and access](../../organizations/security/permissions-access.md).  
+Most of the collaboration tools are available to you if you're a team member or a member of the Contributors group for a team project. The most common built-in groups include Readers, Contributors, and Project Administrators. For a simplified view of all default permissions assigned to built-in groups, see [Default permissions and access](../../organizations/security/permissions-access.md).  
 
-Stakeholders have limited access to view the charts and dashboards. To learn more, see [About access levels](../../organizations/security/access-levels.md).
+Stakeholders are allowed limited access to view the charts and dashboards. For mroe information, see [About access levels](../../organizations/security/access-levels.md).
 
 [!INCLUDE [temp](../../organizations/security/includes/wiki.md)]
 

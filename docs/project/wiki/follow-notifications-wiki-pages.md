@@ -24,20 +24,20 @@ Get immediate notifications for rename and delete. For edit notifications, you g
    ![Screenshot the follow button.](media/wiki/follow-wiki-page.png)
 
 When you create a page, you become a default follower of the page. 
-You can unfollow the page in the following two ways:
+You can unfollow the page in the following ways:
 
-* From the UI
+* UI
 
    ![Select unfollow](media/wiki/unfollow-button.png)
 
-* From the footer of your email notification
+* Footer of your email notification
 
    ![Unfollow wiki page from your email notification](media/wiki/unfollow-wiki-page.png)
 
-To reduce noise, you don’t get notified for pages that you follow when the action is performed by you.
+To reduce noise, you don’t get notified for pages when you follow them.
 
 > [!NOTE]
-> When a page gets deleted, all followers are removed.
+> When a user deletes a page, all followers are removed.
 
 ## Related articles
 
