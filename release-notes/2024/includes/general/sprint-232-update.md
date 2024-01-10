@@ -6,18 +6,11 @@ ms.topic: include
 ---
 
 
-### Azure DevOps OAuth self-service secret rotation
-
-Every five years, you are required to refresh your Azure DevOps OAuth app client secret to ensure the continuous creation of access and refresh tokens needed to utilize Azure DevOps APIs. When your client secret is due to expire, you can now generate your own removing the need to reach out to customer support to generate a new one. This enables your team the flexibility to schedule secret rotation at your convenience, reducing any potential downtime as you await a replacement for an expired secret. 
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of self-service secret rotation.](../../media/232-general-02.png "Screenshot of self-service secret rotation")
-
-Find this new functionality on each of your Azure DevOps app pages, accessible through [your profile here](https://aex.dev.azure.com/me?mkt=en-US). Refer to our [Azure DevOps OAuth guide](/azure/devops/integrate/get-started/authentication/azure-devops-oauth?view=azure-devops&preserve-view=true) for additional insights.
-
 ### Select a geography when creating an organization
 
-Select a geography, instead of a region, when creating a new Azure DevOps organization. Your closest geography is selected automatically, but you can choose a different one, based on where your team is located or because you have sovereignty requirements for your data. You can also view your geography in the overview section of organization settings.
+When creating a new organization in Azure DevOps, you can now  select a geography, instead of a region. By default, the system selects your nearest geography, but you can opt for a different one based on your team's location or due to specific data sovereignty requirements. You can view your geography in the overview section of organization settings.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Select a geography.](../../media/232-general-01.png "Screenshot of Select a geography")
+
+For more information, see [Find or change your organization geography](/azure/devops/organizations/accounts/change-organization-location?view=azure-devops).
