@@ -228,8 +228,7 @@ test runs in parallel if:
 
 * Testers don't run the same tests in parallel. Doing so might cause results to be overwritten depending on the order of execution.
 
-To enable multiple different test runs to execute in parallel, set the Azure Pipelines stage trigger option for [behavior when multiple releases are waiting to be deployed](../pipelines/release/triggers.md#env-triggers)
-as follows:
+To enable multiple different test runs to execute in parallel, set the Azure Pipelines stage trigger option for [behavior when multiple releases are waiting to be deployed](../pipelines/release/triggers.md) as follows:
 
 * If your application supports tests running in parallel from different sources, set this option to **Allow multiple releases to be deployed at the same time**.
 
