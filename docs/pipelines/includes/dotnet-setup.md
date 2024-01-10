@@ -9,8 +9,7 @@ ms.date: 12/01/2023
 
 ### Create a .NET project
 
-If you don't have a .NET project to work with create a new one on your local system.  Start by installing <a href="https://dotnet.microsoft.com/download/dotnet/6.0" target="_blank"> the latest .NET 6.0 SDK. </a>
-
+If you don't have a .NET project to work with create a new one on your local system.  Start by installing <a href="https://dotnet.microsoft.com/download/dotnet/6.0" target="_blank"> the latest .NET 6.0 SDK </a>.
 
 1. Open a terminal window
 1. Create a project directory and navigate into it.

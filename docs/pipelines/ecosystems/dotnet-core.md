@@ -116,6 +116,10 @@ You can create a pipeline by using the YAML pipeline editor or the classic edito
 
 At this point, you can continue creating your pipeline with the YAML editor or the classic editor.  To use the classic editor, select [Use the classic editor](#create-pipeline-with-the-classic-editor).
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
 #### Create a pipeline with the YAML pipeline editor
 
 Use these steps to continue creating your YAML pipeline.
@@ -127,13 +131,7 @@ Use these steps to continue creating your YAML pipeline.
 1. Enter a Service connection name.  For example, `my-github`.
 1. Select **Create**.
 1. Select your GitHub repository.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
 1. When the **Configure** tab appears, select **Show more** and select [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
-
 1. Examine your new pipeline to see what the YAML does. 
 1. You can customize the YAML file for your requirements.  For example, you can add tasks to test and publish your project.
 1. Add a task to install 
@@ -152,6 +150,17 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 
 ::: moniker range=">= azure-devops-2020 <= azure-devops-2022"
 
+#### Create a pipeline with the YAML pipeline editor
+
+Use these steps to continue creating your YAML pipeline.
+
+1. Select your source repository.  For this example, use **GitHub Enterprise Server**.
+1. Select **Connect to GitHub Enterprise Server**.
+1. Enter the URL for your GitHub account.  For example, `https://github.com/<username>`.
+1. Enter your personal access token for your GitHub account.
+1. Enter a Service connection name.  For example, `my-github`.
+1. Select **Create**.
+1. Select your GitHub repository.
 1. When the **Configure** tab appears, select **Show more** and select [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
 
 1. Examine your new pipeline to see what the YAML does. 
@@ -169,7 +178,7 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2022"
+::: moniker range="azure-devops-2022"
 
 #### Create pipeline with the classic editor
 
@@ -188,11 +197,6 @@ Use these steps to create you pipeline using the classic editor.
 1. Select **Save and queue** in the **Save build pipeline and queue** commit page.
 1. Select **Run** to run your pipeline.
 1. Select **Save & queue** from the **Save & queue** drop-down list.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2022"
-
 1. Select the job from the **Jobs** section to see your pipeline in action.
 
 
@@ -202,6 +206,24 @@ You now have a working pipeline that's ready for you to customize! When you're r
 
 ::: moniker range="< azure-devops-2022"
 
+#### Create pipeline with the classic editor
+
+Use these steps to create you pipeline using the classic editor.
+
+1. Go to your project and select **Pipelines**.
+1. Select **Create pipeline** or if you're not creating the first pipeline for this project, select **New pipeline**.
+1. Select **Use the classic editor**.
+1. Select your source.  For this example, select **GitHub Enterprise Server**.
+1. Enter your GitHub URL and credentials.  For example, *https::/github.com/\<username\>*.
+1. Select your repository and select **Continue**.
+1. In the task catalog, find and add the **ASP.NET Core** task and select **Apply**. the task runs `dotnet build` to build the code in the sample repository.
+1. From the **Agent pool** list, select **Default**. 
+1. You can add other tasks to the Agent job by selecting the **+** on the agent job and selecting another task from the catalog.  For example, you might want to add the **.NET Core SDK/runtime installer** to install the necessary version of the .NET SDK.
+1. Select **Save and queue** from the **Save & queue** drop-down list at the top of the page.
+1. Select **Save and queue** in the **Save build pipeline and queue** commit page.
+1. Select **Run** to run your pipeline.
+1. Select **Save & queue** from the **Save & queue** drop-down list.
+1. Select the job from the **Jobs** section to see your pipeline in action.
 1. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
 You now have a working pipeline that's ready for you to customize! When you're ready to make changes to your pipeline, **Edit** it.  Read further to learn some of the more common ways to customize your pipeline.
@@ -799,7 +821,7 @@ If you want to publish your code to a NuGet feed, take the following steps:
 
 1. To publish this archive to a web app, see [Azure Web Apps deployment](../targets/webapp.md).
 
-::: moniker end
+::: moniker-end
 
 ## Build an image and push to container registry
 
