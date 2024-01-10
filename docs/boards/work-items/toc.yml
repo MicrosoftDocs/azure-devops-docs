@@ -58,8 +58,6 @@
   - name: Change work item type, move work items
     href: ../backlogs/move-change-type.md
     displayname: project
-  - name: Automate work item state transitions
-    href: automate-work-item-state-transitions.md
   - name: Remove, delete, or restore
     href: ../backlogs/remove-delete-work-items.md
     displayname: restore, recycle, bulk delete
