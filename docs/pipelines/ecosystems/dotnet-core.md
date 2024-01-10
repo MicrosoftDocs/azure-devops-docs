@@ -149,7 +149,7 @@ To install 6.0.x SDK for building, add the following snippet:
 steps:
 - task: UseDotNet@2
   inputs:
-    version: '5.x'
+    version: '6.x'
 ```
 
 Windows agents already include a .NET Core runtime. To install a newer SDK, set `performMultiLevelLookup` to `true` in the following snippet: 
@@ -159,7 +159,7 @@ steps:
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
-    version: 5.x
+    version: 6.x
     performMultiLevelLookup: true
     includePreviewVersions: true # Required for preview versions
 ```

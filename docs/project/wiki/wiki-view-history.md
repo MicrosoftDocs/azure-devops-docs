@@ -83,7 +83,7 @@ Select **Revert** on the revision details page to revert a change on a wiki page
 
 ## Revert a commit to a *publish as code wiki* page
 
-If you need to revert to an earlier revision for a page that you published as code, do one of the following actions:
+To revert to an earlier revision for a page that you published as code, do one of the following actions:
 
 - If the commit is the most recent revision to a page, you can revert from the web portal.
 - If the commit is an earlier revision, with more commits having occurred in between, create a separate branch and revert the changes in that branch.

@@ -72,8 +72,6 @@
   items:
   - name: Navigate in Team Explorer
     href: work-team-explorer.md?toc=/azure/devops/get-started/toc.json
-  - name: FAQs
-    href: user-guide-faqs.yml?toc=/azure/devops/get-started/toc.json
   - name: Service limits
     href: ../integrate/concepts/rate-limits.md?toc=/azure/devops/get-started/toc.json
 - name: Resources

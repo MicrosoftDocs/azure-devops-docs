@@ -1,23 +1,22 @@
 ﻿---
 title: Filter a wiki TOC or print a wiki page
 titleSuffix: Azure DevOps 
-description: Filter the contents of a wiki TOC or print a wiki page in Azure DevOps 
+description: Filter the contents of a wiki table of content or print a wiki page.
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
-ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
-ms.date: 11/21/2023 
+ms.date: 01/05/2024 
 ---
 
-# Filter the contents of a wiki or print a page
+# Filter a wiki or print a page
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-To focus on a single page or several pages, use the *Filter pages* feature in the table of contents (TOC). Or, to find pages containing a phrase or keyword, you can use the [search function](../search/get-started-search.md).
+Use the *Filter pages* feature in the table of contents (TOC) to focus on a single page or several pages. Or, [search](../search/get-started-search.md) to find pages containing a phrase or keyword.
 
 ## Filter wiki pages
 
@@ -30,13 +29,12 @@ Enter a title, keyword, or character string into the **Filter pages by title** b
 
 ## Print a wiki page
 
-The **Print page** menu option allows you to use your browser print function to send a page to a printer or save as a PDF. Currently, you can only print a single page at a time.
+The **Print page** menu option allows you to use your browser print function to send a page to a printer or save as a PDF. You can only print a single page at a time.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Printing a page action.](media/wiki/print-page.png)
 
-> [!NOTE]  
-> The print feature might not be available from the Firefox web browser.  
+The print feature might not be available from the Firefox web browser.  
 
 ## Related articles
 

@@ -113,9 +113,9 @@ By default, users added to an organization can view all organization and project
 
 [!INCLUDE [project-scoped-users-important-note](../includes/project-scoped-users-important-note.md)]
 
-To restrict select users, such as Stakeholders, Microsoft Entra guest users, or members of a particular security group, you can turn on the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once it's turned on, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
+To restrict select users, such as Stakeholders, Microsoft Entra guest users, or members of a particular security group, you can turn on the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once turned on, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
 
-- Restricted users to only access those projects to which they've been explicitly added. 
+- Restricted users to only access those projects to which they're added. 
 - Restricts views that display list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**.
 - Limits the set of people or groups that appear through people-picker search selections and the ability to **@mention** people. 
 
@@ -147,7 +147,8 @@ To limit the identity selection to only users and groups added to a project, per
 
 1. Turn on the **Limit user visibility and collaboration to specific projects** preview feature for the organization. For more information, see [Manage preview features](../project/navigation/preview-features.md).  
 2. Add the users to your project(s) as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
-3. Open **Organizations Settings>Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to. For more information, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
+3. Open **Organizations settings** > **Security** > **Permissions** and choose **Project-Scoped Users**. Select the **Members** tab. 
+4. Add all users and groups that you want to scope to the project(s) they're added to. For more information, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
 	The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility and collaboration to specific projects** preview feature is turned on. 
 
 ::: moniker-end  
@@ -267,7 +268,7 @@ To learn about scaling your organization, see the following articles.
 
 ::: moniker range="azure-devops"  
 
-- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
+- [About projects](../organizations/projects/about-projects.md)  
 - [FAQs about signing up and getting started](user-guide-faqs.yml)
 - [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
@@ -276,7 +277,7 @@ To learn about scaling your organization, see the following articles.
 
 ::: moniker range="< azure-devops"  
 
-- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
+- [About projects](../organizations/projects/project-team-quick-reference.md)  
 - [Security & identity](../organizations/security/about-security-identity.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 - [Azure DevOps Server administration](/azure/devops/server/index)
