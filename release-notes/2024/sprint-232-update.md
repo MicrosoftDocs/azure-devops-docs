@@ -1,15 +1,15 @@
 ---
-title:  Azure DevOps OAuth self-service secret rotation
+title:  Select a geography when creating an organization
 author: ckanyika
 ms.author: ckanyika
 ms.date: 1/10/2024
-description: Azure DevOps OAuth self-service secret rotation
+description: Select a geography when creating an organization
 ---
-# Azure DevOps OAuth self-service secret rotation
+# Select a geography when creating an organization
 
-With this update, you can generate your own client secret in the Azure DevOps OAuth app when the existing one is due to expire. 
+With this update, you can select a geography instead of a region, when creating a new Azure DevOps organization. 
 
-Check out the release notes to learn more about enrolling in the private preview for this feature. 
+Check out the release notes for details. 
 
 ### General
 
