@@ -4,8 +4,6 @@
   href: go-to-service-page.md
 - name: Add an artifact or team artifacts
   href: add-artifact-team.md
-- name: Use breadcrumbs, selectors, and directories
-  href: use-breadcrumbs-selectors.md
 - name: Open another project or repo
   href: go-to-project-repo.md
 - name: Work with favorites

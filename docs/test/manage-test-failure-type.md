@@ -5,7 +5,7 @@ ms.assetid:
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: ravikum
+ms.author: rbatra
 author: raviLiftr
 monikerRange: 'azure-devops'
 ms.date: 08/25/2023

@@ -2,35 +2,35 @@
 title: Define features and epics, organize backlog items
 titleSuffix: Azure Boards
 description: Define features and epics to organize your product and portfolio backlogs.  
-ms.custom: "boards-backlogs, seodec18" 
+ms.custom: "boards-backlogs, seodec18, " 
 ms.service: azure-devops-boards
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 05/24/2022
+ms.date: 01/04/2024
 ---
 
 # Define features and epics, organize your backlog
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-While many teams can work with a flat list of work items, sometimes it helps to group related items into a hierarchical structure. You can start with several major features or scenarios and break them down into smaller deliverables. Or, if you have an existing backlog, you can begin to organize it with features and epics.   
+When you have a list of work items, it can be helpful to group related items into a hierarchical structure. Do so by breaking down major features or scenarios into smaller deliverables. Alternatively, if you have an existing backlog, you can organize it with features and epics. For more information, see [Organize your backlog (map or reparent)](organize-backlog.md).
 
 ## Portfolio backlogs
 
-The following image shows a **features** portfolio backlog that consists of a flat list of feature work items. 
-
-:::image type="content" source="media/features-epics/intro-image.png" alt-text="Screenshot of the features portfolio Backlog.":::
-
-You can use portfolio backlogs to do the following tasks:
+Use portfolio backlogs to do the following tasks:
 - Bring more order to your backlog 
 - Manage a portfolio of features that different development and management teams support  
 - Group items into a release train  
 - Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items 
 
 Portfolio backlogs let you quickly add and group items into a hierarchy. You can also drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For more information, see [Visibility across teams](../plans/visibility-across-teams.md).    
+
+The following image shows a **features** portfolio backlog that consists of a flat list of feature work items. 
+
+:::image type="content" source="media/features-epics/intro-image.png" alt-text="Screenshot of the features portfolio Backlog.":::
 
 [!INCLUDE [temp](../includes/work-item-types.md)] 
 
@@ -40,7 +40,7 @@ Portfolio backlogs let you quickly add and group items into a hierarchy. You can
 
 Epics and features are higher level containers. Typically user stories or backlog items roll up into features, and features roll up into epics, so keep this information in mind when you name your features and epics.
 
-As you define your features and epics, consider the time required to complete them. In general, you should complete backlog items, such as user stories or tasks, within a sprint. Features and epics may take one or more sprints to complete.
+As you define your features and epics, consider the time required to complete them. In general, you should complete backlog items, such as user stories or tasks, within a sprint. Features and epics might take one or more sprints to complete.
 
 ## View a backlog
 
@@ -48,7 +48,7 @@ To focus on one level of a backlog at a time, select the name of the backlog. If
 
 ::: moniker range=">= azure-devops-2020"
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and go to your project.
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization/Your_Project}```).
 2. Select **Boards** > **Backlogs**. 
 
    :::image type="content" source="media/open-boards-backlogs.png" alt-text="Screenshot of highlighted Boards and Backlogs selections.":::
@@ -60,11 +60,11 @@ To focus on one level of a backlog at a time, select the name of the backlog. If
 	> [!TIP]    
 	> Select the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
-3. Select either **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
+3. Select your backlog level. 
 
    :::image type="content" source="../sprints/media/assign-items-sprint/select-product-backlog-agile-s155.png" alt-text="Screenshot of product backlog level selections.":::
 
-4. (Optional) Choose which columns should display and in what order: select the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**.
+4. (Optional) Choose which columns should display and in which order: select the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**.
 
    :::image type="content" source="../sprints/media/assign-items-sprint/open-column-options-s155.png" alt-text="Screenshot showing how to Open Column Options from More commands menu.":::
 
@@ -86,7 +86,7 @@ To focus on one level of a backlog at a time, select the name of the backlog. If
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of Choose product backlog level, Backlog items, Stories, or Requirements.](media/features-epics/choose-features-epics-agile.png) 
 
-4. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. For more information, see [Change column options](../backlogs/set-column-options.md). 
+4. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. You might want to add the Iteration Path to the set of columns that appear on your backlog. For more information, see [Change column options](../backlogs/set-column-options.md). 
 
    :::image type="content" source="../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png" alt-text="Screenshot showing how to Open Column Options from More commands menu, Azure DevOps Server 2019.":::
 
@@ -108,8 +108,7 @@ To focus on one level of a backlog at a time, select the name of the backlog. If
 
 ::: moniker-end
 
-> [!TIP]  
-> For more information, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).  
+For more information, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).  
 
 ## Add features and epics to your backlog
 
@@ -137,7 +136,7 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
    :::image type="content" source="media/features-epics/add-feature-standard.png" alt-text="Screenshot showing how to add a feature, TFS 2018.":::
 
-2. Repeat this step until you've captured all your main ideas.
+2. Repeat this step until you captured all your main ideas.
 
    :::image type="content" source="media/org-backlog-features-ts-new-nav.png" alt-text="Screenshot of the Features backlog, TFS 2018.":::
 

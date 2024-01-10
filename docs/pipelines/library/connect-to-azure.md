@@ -70,6 +70,11 @@ We recommend this approach if:
 
 ### Convert an existing ARM service connection to use workload identity federation
 
+Quickly convert an existing ARM service connection to use workload identity federation for authentication instead of a service principal. You can use the service connection conversion tool within Azure DevOps if your service connection meets these requirements. 
+
+- Azure DevOps originally created the service connection. If you created your service connection manually, you cannot convert the service connection using the tool because Azure DevOps does not have permission to modify its credentials.
+- Only one project uses the service connection. You can't convert [cross-project service connections](service-endpoints.md#project-permissions---cross-project-sharing-of-service-connections). 
+
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
 
 1. Go to **Pipelines** > **Service connections** and open an existing service connection. 
@@ -143,9 +148,11 @@ We recommend this simple approach if:
 
 > [!NOTE]
 > 
-> When you follow this approach, Azure DevOps *connects with Microsoft Entra ID and creates an app registration with a secret that's valid for two years*. When the service connection is close to two years old, Microsoft Entra ID displays this prompt: **A certificate or secret is expiring soon. Create a new one**. In this scenario, you must refresh the service connection.
+> When you follow this approach, Azure DevOps *connects with Microsoft Entra ID and creates an app registration with a secret that's valid for three months*. When the service connection is about to expire, Microsoft Entra ID displays this prompt: **A certificate or secret is expiring soon. Create a new one**. In this scenario, you must refresh the service connection.
 >
-> To refresh a service connection, in the Azure DevOps portal, edit the connection and select **Verify**. After you save the edit, the service connection is valid for another two years.
+> To refresh a service connection, in the Azure DevOps portal, edit the connection and select **Verify**. After you save the edit, the service connection is valid for another 3 months.
+>
+> It is recommended to use workload identity federation instead of creating a secret. This removes the need to rotate secrets and constrains the app registration to its intended purpose. To start using workload identity federation, go to the service connection details page and select **Convert**. This will convert the service connection to use Workload identity federation instead of using a secret. See [Convert an existing ARM service connection to use workload identity federation](#convert-an-existing-arm-service-connection-to-use-workload-identity-federation).
 > 
 
 See also: [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
