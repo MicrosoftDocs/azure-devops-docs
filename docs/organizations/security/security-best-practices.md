@@ -191,7 +191,7 @@ If possible, we recommended to always use identity services for authentication i
 
 ## Secure Azure Artifacts 
 
-- Make sure you understand the difference between feeds, project, and project collection administrators. For more information, see [Configure Azure Artifacts settings](../../artifacts/feeds/feed-permissions.md#configure-azure-artifacts-settings).
+- Make sure you understand the difference between feeds, project, and project collection administrators. For more information, see [Configure Azure Artifacts settings](../../artifacts/feeds/feed-permissions.md).
 - For more information, see [Set feed permissions](../../artifacts/feeds/feed-permissions.md).
 
 ## Secure Azure Boards 
