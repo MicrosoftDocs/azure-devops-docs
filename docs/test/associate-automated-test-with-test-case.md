@@ -45,7 +45,7 @@ Do the following steps to create a test project and build pipeline.
    locate the test case in **Azure Test Plans** , or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
 3. When you know the identifier of the work item for the test case:
 
-   **If you are using Visual Studio 2017 or later version**, do the following steps to associate your tests.
+   **If you're using Visual Studio 2017 or later version**, do the following steps to associate your tests.
 
    - If the **Test Explorer** window isn't displayed, open it from the **Test | Windows** menu.
    - If your tests aren't displayed in **Test Explorer**, build the solution.
@@ -87,7 +87,7 @@ See the following frequently asked questions (FAQs).
 * Tests that use the .NET core framework **can** be associated with a test case
   work item when using Visual Studio 15.9 Preview 2 or later.
   Run the .NET core tests. The appropriate target framework must be specified
-  in a [runsettings file](/visualstudio/test-configure-unit-tests-by-using-a-dot-runsettings-file).
+  in a [.runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2022).
   However, these tests can't be run using Microsoft Test Manager and XAML builds.
 * Tests that use other test frameworks such as Chutzpah (for JavaScript tests
   such as Mocha or QUnit), or Jest **cannot** be associated with a test case.

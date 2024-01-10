@@ -92,16 +92,15 @@ To delete a test plan, do the following steps.
 In general, you create test plans to test requirements. Before you create a test plan, [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
 
 1. From the web portal, open your project and go to **Test Plans**.
-   If you already have a test plan, choose **Test Plans** to go to the page that lists all test plans.
+   If you already have a test plan, select **Test Plans** to go to the page that lists all test plans.
 
    ![Screenshot showing opening the list of test plans page.](media/create-a-test-plan/goto-test-plans-page.png)
 
-2. In the **Test Plans** page, choose **New Test Plan** to create a test plan for your current sprint.
+2. Select **New Test Plan**.
  
    ![Screenshot showing creating a new test plan.](media/create-a-test-plan/CreateATestPlan1a.png)
 
-3. In **New Test Plan**, enter a name for the test plan.
-   Verify that the area path and iteration are set correctly, then choose **Create**.
+3. Enter a name for the test plan, verify that the area path and iteration are set correctly, and then select **Create**.
 
    ![Screenshot showing adding test plan details.](media/create-a-test-plan/CreateATestPlan2.png) 
 
@@ -109,7 +108,7 @@ In general, you create test plans to test requirements. Before you create a test
 
 To rename a test plan, open it from the shortcut menu and rename it.
 
-![Screenshot showing rename a test plan.](media/create-a-test-plan/rename-test-plan.png)
+![Screenshot showing renaming a test plan.](media/create-a-test-plan/rename-test-plan.png)
 
 ### Delete a test plan
 
@@ -190,7 +189,7 @@ You can track changes to test plans and test suites. Open the work item for the 
 
 For test suites, other actions are tracked in the **Test Suite Audit** field. For example, adding and removing test cases from a test suite are tracked in this field.
 
-You can export test plans, test suites, and test cases.
+Export test plans, test suites, and test cases.
 
 ::: moniker range=">=azure-devops-2020"
 Select **Export test cases to CSV**.

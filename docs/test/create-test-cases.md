@@ -21,9 +21,7 @@ ms.date: 11/04/2021
 
 Create manual test cases to check that each deliverable meets your users' needs. Manual test cases define individual steps testers perform, including steps that are shared across test cases. To test different data, you specify parameters for the test steps. For more information, see [Share steps between test cases](share-steps-between-test-cases.md) and [Repeat a test with different data](repeat-test-with-different-data.md). For an overview of test artifacts, see [Test objects and terms](test-objects-overview.md).
 
-Organize your test cases by adding them to test plans and test suites. Then assign testers to run the tests.
-
-For an overview of test artifacts, see [Test objects and terms](test-objects-overview.md).
+Organize your test cases by adding them to test plans and test suites, and then assign testers to run the tests. For more information, see [Test objects and terms](test-objects-overview.md).
 
 > [!NOTE]
 > Test iterations are designed to support data-driven scenarios, not workflow-driven scenarios.
@@ -37,74 +35,62 @@ For an overview of test artifacts, see [Test objects and terms](test-objects-ove
 <a name="createcase"></a>
 
 ## Create test cases
+
 ::: moniker range=">=azure-devops-2020"
 1. If you haven't already, [create a test plan and requirement-based test suites](create-a-test-plan.md).
 
-1. Select a requirement-based test suite.
-   To the right, select the **New Test Case** button.
+2. Select a requirement-based test suite and select **New Test Case**.
 		
    ![Screenshot showing test cases with New Test Case button highlighted.](media/create-test-cases/new-test-case-button.png)
 
-   If you have no existing test cases, the button appears in the lower right.
-
    > [!NOTE]
-   > The [test suite](create-a-test-plan.md) shown here was created from a User Story work item in the team's backlog board.
-   > When you add a test case to this kind of suite, the test case is automatically linked to the backlog item.
-   > To create test cases this way, open the context menu for the work item and choose **Add test**.
+   > The [test suite](create-a-test-plan.md) shown here was created from a User Story work item in the team's backlog board. When you add a test case to this kind of suite, the test case automatically links to the backlog item. To create test cases this way, open the context menu for the work item and choose **Add test**.
 
-1. In the new work item, enter a title. Select the **Click or type here to add a step** option.
+3. In the new work item, enter a title and select **Click or type here to add a step**.
 
    ![Screenshot showing the steps entered for a test case.](media/create-test-cases/test-case-steps.png)
 
-   Add test steps with a description of the action required to carry out the test and the expected results so that any team member can run the test.
-   You can add attachments to a step if you want.
-   Repeat until you add all the steps for the test.
-
-   > [!NOTE]
-   > You can share steps between test cases. For more information, see [Share steps](share-steps-between-test-cases.md).
+4. Add test steps with a description of the action required to carry out the test and the expected results so that any team member can run the test. You can add attachments to a step if you want. Repeat until you add all the steps for the test.
 
    A test case that you can run gets created.
-
-You can also copy test cases. For more information, see [Copy or clone stories, issues and other work items](../boards/backlogs/copy-clone-work-items.md).
+   
+   For more information, see [Share steps](share-steps-between-test-cases.md) and [Copy or clone stories, issues and other work items](../boards/backlogs/copy-clone-work-items.md).
 
 ## Assign configurations to test cases
 
 You can specify configurations, such as different operating systems, web browsers, and other variations for your tests.
 
-To assign test configurations to all test cases in a test suite, select the test suite, select **More options** or right-click to open the context menu, and then select **Assign configurations**.
-
-In the **Assign configurations to test suite** dialog box, select the configurations you want.
+1. Select the test suite > **More options** > **Assign configurations**, and in the dialog box, select your configurations.
 
 ![Screenshot showing the Assign configurations to test suite dialog box with some options selected.](media/create-test-cases/assign-configurations-test-suite.png)
 
-You can also assign configurations to individual test cases. Select one or more test cases, select **More options** or right-click to open the context menu, and then select **Assign configuration**.
+   You can also assign configurations to individual test cases. Select one or more test cases, select **More options** > **Assign configuration**.
+   
+1. Make your changes and then **Save**.
 
-The **Assign configurations to selected test cases** dialog box opens. Make and save your changes.
-
-For more information about configurations, see [Test different configurations](test-different-configurations.md).
+For more information, see [Test different configurations](test-different-configurations.md).
 
 ## Reorder test cases
 
 You can reorder manual test cases in static suites, requirement-based suites, and query-based suites.
-Open a test case, then use the up and down arrows to change the order.
+
+Open a test case, and then use the up and down arrows to change the order.
 
 ![Screenshot showing the arrows used to move test steps up or down.](media/create-test-cases/change-step-order.png)
 
-There are also options to change order in the step context menu.
-
 ## Add existing test cases to a test suite
 
-You can add existing test cases to a test suite.
+Add existing test cases to a test suite with the following actions.
 
-1. Select a test suite. From the **New Test Case** menu, select **Add existing test case**.
+1. Select a test suite. From the **New Test Case** menu, select **Add existing test cases**.
 
    ![Screenshot showing the Add existing test cases option to select.](media/create-test-cases/add-existing-test-cases.png)
 
-1. In the **Add test cases to suite** dialog box, add search clauses, as needed, and then select **Run query**.
+1. Add search clauses, as needed, and then select **Run query**.
 
    ![Screenshot showing the Add test cases to suite dialog box with the Run query button highlighted.](media/create-test-cases/add-test-case-suite.png)
 
-1. After you find the test cases you want, select **Add test cases**.
+2. When you find the test cases you want, highlight them and select **Add test cases**.
 
 ::: moniker-end
 
@@ -141,36 +127,33 @@ After reordering the tests, you can sort them by the **Order** field and then ru
 ::: moniker-end
 
 > [!TIP]
-> You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the Kanban board. For more information, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md). 
-> 
+> You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the Kanban board. For more information, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md).
 
 ## Use the Grid view to edit test cases
 ::: moniker range=">=azure-devops-2020"
 
-You can copy and paste test cases into the **Grid** view.
+Do the following steps to copy and paste test cases into the **Grid** view.
 
-To open the **Grid** view, select the **Grid View** icon at the right.
+1. Select the **Grid View** icon.
 
-![Screenshot showing the Grid View button used to open the Grid view.](media/create-test-cases/grid-view-button.png)
+   ![Screenshot showing the Grid View button used to open the Grid view.](media/create-test-cases/grid-view-button.png)
 
-Instead, you can select several test cases and open them for editing in the **Grid** view. In the context menu, select **Edit test case(s) in grid**.
+2. Select one to several test cases, and then select **Edit test case(s) in grid**.
 
-![Screenshot showing several test cases selected with the context menu open and Edit test case(s) in grid selected.](media/create-test-cases/edit-multiple-test-cases-grid.png)
+   ![Screenshot showing several test cases selected with the context menu open and Edit test case(s) in grid selected.](media/create-test-cases/edit-multiple-test-cases-grid.png)
 
-On the **Grid** context menu, you can add, delete, or clear rows.
+3. Add, delete, or clear rows.
 
-![Screenshot showing the Grid context menu to insert, delete, or clear rows.](media/create-test-cases/grid-context-menu.png)
+   ![Screenshot showing the Grid context menu to insert, delete, or clear rows.](media/create-test-cases/grid-context-menu.png)
 
-You can use the **Grid** view when you add multiple test cases to the test suite:
+4. Optional. To add multiple test cases to the test suite, select **Add test cases using grid**.
 
-![Screenshot showing option to add test cases using the Grid view.](media/create-test-cases/add-test-cases-grid.png)
+   ![Screenshot showing option to add test cases using the Grid view.](media/create-test-cases/add-test-cases-grid.png)
+   - In the **List** view, use the column options to select the fields in the test case work item.
 
-You can edit other fields in the **Grid** view.
-In the **List** view, use the column options to select the fields in the test case work item.
+   ![Screenshot showing the Column Options button.](media/create-test-cases/column-options.png)
 
-![Screenshot showing the Column Options button.](media/create-test-cases/column-options.png)
-
-You can then view and edit these fields when you switch to the **Grid** view.
+   View and edit these fields when you switch to the **Grid** view.
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
@@ -188,7 +171,7 @@ You can use the **Grid View** when you add multiple test cases to the test suite
 > [!NOTE]
 > Do not use the Teams plugin for Excel to add or update test case work items.
 > Excel cannot parse the format used to store test steps, and in some cases 
-> this may affect the formatting of the test case work items. 
+> this might affect the formatting of the test case work items. 
 
 You can edit other fields in the **Grid** view.
 In the **List** view, use the column options to select the fields in the test case work item.
@@ -198,7 +181,7 @@ In the **List** view, use the column options to select the fields in the test ca
 You can then view and edit these fields when you switch to the Grid view.
 ::: moniker-end
 
-### Use Excel to copy test case information into a Grid view
+### Use Excel to copy information into a Grid view
 ::: moniker range=">=azure-devops-2020"
 You can copy test cases and test steps from an existing Excel worksheet.
 Copy the columns from Excel that you want to use for the title, action, and expected results fields.
@@ -211,8 +194,8 @@ You can copy the data from the **Grid** view and paste it into your Excel worksh
 Copying doesn't copy test step formatting, other than multiline, into the worksheet.
 
 > [!NOTE]
-> Do not use the Teams plugin for Excel to add or update test case work items.
-> Excel cannot parse the format used to store test steps, and in some cases this may affect the formatting of the test case work items.
+> Don't use the Teams plugin for Excel to add or update test case work items.
+> Excel can't parse the format used to store test steps, and in some cases this may affect the formatting of the test case work items.
 
 ::: moniker-end
 
@@ -290,10 +273,11 @@ You can assign an individual test case to a tester.
 ::: moniker range=">=azure-devops-2020"
 
 You can open a test case to view it or edit it.
-To open a test case in a test suite, in the **Define** tab, double-select the name of the test case to open.
-In the **Execute** tab, select a test case, open its context menu, and select **Edit test case**.
 
-![Screenshot show the Edit test case option for a test case in the context menu](media/create-test-cases/open-test-case-edit.png)
+1. To open a test case in a test suite, in the **Define** tab, double-select the name of the test case to open.
+2. In the **Execute** tab, select a test case, open its context menu, and select **Edit test case**.
+
+![Screenshot showing the Edit test case option for a test case in the context menu](media/create-test-cases/open-test-case-edit.png)
 
 A test case can be linked to test suites, requirements, and bugs.
 To see linked items, in the **Define** tab, open the context menu for a test case, and select **View Linked Items**.
@@ -370,7 +354,7 @@ To manage or delete test artifacts, you must also have your access level set to 
 To delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
 ::: moniker-end
 
-## Next step
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Run manual tests](run-manual-tests.md)

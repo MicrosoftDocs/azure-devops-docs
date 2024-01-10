@@ -15,34 +15,30 @@ ms.date: 09/14/2021
 
 [!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
 
-Learn how to navigate Test Plans to support your test goals and operations. Use the following sections of the Test Plans page to accomplish the corresponding tasks. 
- 
+Learn how to navigate Test Plans to support your test goals and operations. Use the following sections of the Test Plans page to accomplish the corresponding tasks.
 - **Mine**: View list of test plans that you created or are of interest to you. 
-- **All**: View a list of all test plans defined for the project. 
+- **All**: View a list of all the test plans defined for the project. 
 - **Test plan header**: Locate, favorite, edit, copy or clone a test plan.
-- **Test suites tree**: Add, manage, export, or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
+- **Test suites tree**: Add, manage, export, or order test suites. Also use to assign configurations and perform user acceptance testing.
 - **Define tab**: Collate, add, and manage test cases in a test suite of choice via this tab. This tab doesn't appear for users with **Basic** access. 
 - **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
 - **Chart tab**: Track test execution and status via charts, which can also be copied to dashboards.
 
 :::image type="content" source="media/navigate/test-plan-overview-2.png" alt-text="Test plans page, navigation elements.":::
 
-To learn about specific test artifacts, see the following articles: 
+For more information, see the following articles: 
 - [Create test plans and test suites](create-a-test-plan.md)
 - [Create manual test cases](create-test-cases.md)
 - [Test settings](./test-different-configurations.md)
-
 
 [!INCLUDE [prerequisites](includes/prerequisites.md)] 
 
 > [!NOTE] 
 > Most operations under the **Define** tab are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Most operations under the **Execute** tab can be exercised by users granted a **Basic** access level. 
 
-
 ## The "Mine" page
 
-The **Mine** page shows a list of test plans that are of interest to you.
-This includes plans for teams you are a member of, and test plans you have marked as favorites.
+The **Mine** page shows a list of test plans that are of interest to you, which includes plans for teams you're a member of and test plans marked as favorites.
 You can expand and hide the plans for each team to make it easier to locate or review specific team plans. Use the shortcut menu to edit or delete the selected plan.
 
 :::image type="content" source="media/navigate/mine-page-more-options-menu.png" alt-text="Mine page, menu options to edit or delete a test plan.":::
@@ -59,11 +55,10 @@ Filter test plans, and edit and delete plans using the shortcut menu, in the sam
 
 :::image type="content" source="media/navigate/all-page-favorite-test-plan.png" alt-text="The All list of test plans, favorite a test plan."::: 
 
-You can also add a plan to your favorites list while you are viewing it.
+You can also add a plan to your favorites list while you view it.
 
 :::image type="content" source="media/navigate/test-plan-favorite.png" alt-text="Add a plan to your favorites list."::: 
  
-
 <a name="testplanheader"></a>
 
 ## Test plan header
@@ -129,24 +124,20 @@ Choose the :::image type="icon" source="../media/icons/more-actions.png" border=
 	- Choose **Requirement-based suite** to directly link to the requirements/user stories for seamless traceability.
 	- Choose **Query-based suite** to dynamically organize test cases that meet a query criteria.
 - **Assign configurations**: Assign configurations for the suite. For example, assign *Chrome*, *Firefox*, *EdgeChromium*, which then become applicable to all existing or new test cases that you add later to the suite. 
-- **Export**: Export the test plan properties, test suite properties along with details of the test cases and test points as either an email or print to pdf.  
+- **Export**: Export the test plan and test suite properties and details as either an email or print to pdf.  
 - **Open test suite work item**: This option allows you to edit the Test suite work item form to manage the work item fields.
-- **Assign testers to run all tests**: This option is very useful for User Acceptance testing (UAT) scenarios where the same test needs to be run/executed by multiple testers, generally belonging to different departments. 
+- **Assign testers to run all tests**: This option is useful for User Acceptance testing (UAT) scenarios where the same test gets executed by multiple testers, generally belonging to different departments. 
 - **Rename/Delete**: These options allow you to manage the suite name or remove the suite and its content from the test plan.
-- **Import test suites**: Use this option to import test cases present in other suites from other test plans in the same project or even across projects. More details below.
-
+- **Import test suites**: Use this option to import test cases present in other suites from other test plans in the same project or even across projects.
 
 **Export test suite dialog**  
 :::image type="content" source="media/navigate/export-dialog.png" alt-text="Define tab, Export test suite dialog.":::
 
 **Import test suites**
 
-Reuse the suites you have created and import them into the current suite/plan. You can select the **Project**, **Test Plan**, and **Test Suite** from which you want to import the tests. Depending upon the suite you select, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone or copy. Also note that we cannot import test suites from the same test plan. 
+Reuse the suites you created and import them into the current suite/plan. You can select the **Project**, **Test Plan**, and **Test Suite** from which you want to import the tests. Depending upon the suite you select, the entire hierarchy of that suite and corresponding test cases is imported into the current plan. The test cases are added as a reference and not a clone or copy. Also note that we can't import test suites from the same test plan. 
 
 :::image type="content" source="media/navigate/import-test-suites-dialog.png" alt-text="Test suites tree import overview.":::
-
-
-
 
 <a name="definetab"></a>
 
@@ -159,7 +150,7 @@ From the **Define** tab, you can collate, add, and manage test cases for a test 
 
 ### Define test case tasks 
 
-From the **Define** tab you can exercise the following tasks:
+From the **Define** tab, you can do the following tasks.
 
 - **New Test Case**:
 	- **Add Test Case**: Create a new test case using the work item form and automatically add it to the suite.
@@ -196,10 +187,10 @@ From the **Define** tab, toolbar, you can exercise the following options:
 The context menu on the Test case node within the **Define** tab provides the following options:
 
 - **Open/edit test case work item form**: This option allows you to edit a Test case using the work item form wherein you edit the work item fields including test steps.
-- **Edit test cases**: This option allows you to bulk edit Test case work item fields. However, you cannot use this option to bulk edit test steps. 
+- **Edit test cases**: This option allows you to bulk edit Test case work item fields. However, you can't use this option to bulk edit test steps. 
 - **Edit test cases in grid**: This option allows you to bulk edit the selected test cases including test steps using the grid view.
 - **Assign configurations**: This option allows you to override the suite level configurations with test case level configurations. 
-- **Remove test cases**: This option allows you to remove the test cases from the given suite. It does not change the underlying test case work item though. 
+- **Remove test cases**: This option allows you to remove the test cases from the given suite. It doesn't change the underlying test case work item though. 
 - **Create a copy/clone of test cases**: Create a copy or clone selected test cases.  
 - **View linked items**: Review items linked to a test case.  
 
@@ -215,10 +206,9 @@ Choose **Copy test case** to copy or clone a test case. Specify the destination 
 Use **View linked items** option, to review objects linked to the test case. Choose each tab to view the links listed under the linked object type: 
 - **Test Suites**
 - **Requirements**: Includes any work item that belongs to the Requirements Category, such as User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI), or a custom work item type.
-- **Bugs**: Includes bugs that have been filed as part of test execution and any work items that belong to the Bug Category that have been linked to the test case.
+- **Bugs**: Includes bugs filed as part of test execution and any work items that belong to the bug Category that links to the test case.
  
 :::image type="content" source="media/navigate/view-linked-items.png" alt-text="Define tab, View linked items dialog.":::
-  
 
 ### Bulk update using the Grid view
 
@@ -226,7 +216,7 @@ Choose the :::image type="icon" source="media/navigate/grid-icon.png" border="fa
 
 :::image type="content" source="media/navigate/grid-view.png" alt-text="Define tab, grid view.":::
 
-Click within a cell to edit the text in that cell. Right-click within a cell to choose an option to **Insert row**, **Delete row**, or **Clear row**.  Choose :::image type="icon" source="media/navigate/bulk-save-icon.png" border="false"::: **Save test cases** to perform a bulk save of your changes. Or, choose :::image type="icon" source="media/navigate/grid-refresh.png" border="false"::: **Refresh** to clear your changes. When complete, choose **Close Grid**. 
+Select within a cell to edit the text in that cell. Right-click within a cell to choose an option to **Insert row**, **Delete row**, or **Clear row**.  Choose :::image type="icon" source="media/navigate/bulk-save-icon.png" border="false"::: **Save test cases** to perform a bulk save of your changes. Or, choose :::image type="icon" source="media/navigate/grid-refresh.png" border="false"::: **Refresh** to clear your changes. When complete, choose **Close Grid**. 
 
 :::image type="content" source="media/navigate/grid-view-cell-options.png" alt-text="Define tab, grid view, cell options.":::
 
@@ -238,18 +228,18 @@ Use the **Execute** tab to assign test points or run tests.
 
 :::image type="content" source="media/navigate/execute-tab-test-points-overview.png" alt-text="Execute tab overview.":::
 
-**What is a test point?** Test cases by themselves are not executable. When you add a test case to a test suite then test point(s) are generated. A test point is a unique combination of test case, test suite, configuration, and tester.  
-For example, if you have a test case named *Test login functionality* and you add two configurations for the Edge and Chrome browsers, you have two test points. You can execute or run each of these test points. On execution, test results are generated. Through the test results view, or execution history, you can see all executions of a test point. The latest execution for the test point is what you see in the **Execute** tab.  
+**What is a test point?** Test cases by themselves aren't executable. Add a test case to a test suite, and then test point(s) generate. A test point is a unique combination of test case, test suite, configuration, and tester.  
+For example, if you have a test case named *Test sign in functionality* and you add two configurations for the Microsoft Edge and Google Chrome browsers, you have two test points. You can execute or run each of these test points. On execution, test results are generated. Through the test results view, or execution history, you can see all executions of a test point. The latest execution for the test point is what you see in the **Execute** tab.  
 
 Test cases are reusable entities. By including them in a test plan or suite, test points are generated. By executing test points, you determine the quality of the product or service under development.
 
 
 ### Execute tasks 
 
-From the **Execute** tab you can do one of the following tasks:
+From the **Execute** tab, you can do the following tasks.
 
 - **Bulk mark test points**: Quickly mark the outcome of or more test points&mdash;**Passed**, **Failed**, **Blocked** or **Not Applicable**&mdash;without having to run the test case via the Test runner.  
-- **Run test points**:Run the test cases by individually going through each test step and marking them pass/fail using a Test runner. Depending upon the application you are testing, you can use the **Web Runner** for testing a "web application" or the **Desktop Runner** for testing desktop or web applications. Invoke **Run with options** to specify a **Build** against which the testing you want to perform. 
+- **Run test points**:Run the test cases by individually going through each test step and marking them pass/fail using a Test runner. Depending upon the application you're testing, you can use the **Web Runner** for testing a "web application" or the **Desktop Runner** for testing desktop or web applications. Invoke **Run with options** to specify a **Build** against which the testing you want to perform. 
 - **Column options**: Add or remove columns. The list of columns available for selection are associated with test points, such as Run by, Assigned Tester, Configuration, etc. 
 - **Toggle Full screen view**: View the contents of the page in a full screen mode. 
 - **Filter**: Filter the list of test points using the fields of a test case **Title**, **ID**, **Outcome**, **Tester**, **Configuration**, **Assigned To**, or **State**.   You can also sort the list by choosing a column header.
@@ -280,14 +270,13 @@ To learn more about executing tests, see [Run manual tests](run-manual-tests.md)
 
 ## Chart test cases and test results 
 
-From the chart tab you can create various test case or test result charts. To learn how, see [Track test status, Charts](track-test-status.md). 
+From the **Chart** tab, you can create various test case or test result charts. For more information, see [Track test status, Charts](track-test-status.md). 
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Create test plans and test suites](create-a-test-plan.md)
  
-
 ## Related articles
 
 - [Run manual tests](run-manual-tests.md) 
@@ -297,7 +286,6 @@ From the chart tab you can create various test case or test result charts. To le
 - [What are extensions?](../extend/overview.md) 
 - [Test Planning and Management Guide](/archive/blogs/visualstudioalmrangers/test-planning-and-management-guide-updated).
  
-
 ### REST APIs 
 
 - [Test Management REST API](/rest/api/azure/devops/test)

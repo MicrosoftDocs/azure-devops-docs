@@ -39,15 +39,15 @@ Explore the following items:
 
    ![Screenshot showing the banner with the work item for your session.](media/explore-workitems-exploratory-testing/explore-workitems-02.png)
 
-1. Launch the Test &amp; Feedback extension. 
-   Any acceptance criteria for the work item is shown.
+2. Launch the Test & Feedback extension. 
+   Any acceptance criteria for the work item are shown.
 
    ![Screenshot showing launching the Test - Feedback extension.](media/explore-workitems-exploratory-testing/explore-workitems-03.png)
  
    If you didn't already start a session, start one now. 
-   The work item is automatically associated with the current or new session. 
+   The work item automatically associates with the current or new session. 
 
-1. All bugs, tasks, and test cases you create automatically link to the current work item.
+3. All bugs, tasks, and test cases you create automatically link to the current work item.
 
    ![Screenshot showing view of the current work item.](media/explore-workitems-exploratory-testing/explore-workitems-04.png)
 
