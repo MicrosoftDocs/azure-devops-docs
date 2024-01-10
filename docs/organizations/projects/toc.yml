@@ -1,9 +1,6 @@
 - name: About projects
   href: about-projects.md
   displayname: private, public, customize, configure, Agile, connect
-- name: Project & team quick reference
-  href: project-team-quick-reference.md
-  displayname: administrator, users, actions, manage, concepts
 - name: Project summary
   href: project-vision-status.md
   displayname: readme, wiki, objective, administrator, summary, view, activity, members
@@ -64,9 +61,6 @@
   - name: Save project data
     href: delete-project.md#save-project-data
     displayname: export, backup, download, source, code, build, work, item
-  - name: Resources granted to project members
-    href: resources-granted-to-project-members.md
-    displayname: scope, group, organization, project, collection
 - name: Public projects
   items:
   - name: About public projects

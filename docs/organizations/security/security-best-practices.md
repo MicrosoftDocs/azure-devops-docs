@@ -146,6 +146,7 @@ You can change the configuration of your organization or project if you have [Pr
 ## Scope service connections
 
 - Scope [Azure Resource Manager](/azure/azure-resource-manager/management/overview), and [other service connections](../../pipelines/library/service-endpoints.md), only to the resources and groups to which they need access. Service connections shouldn't have broad contributor rights on the entire Azure subscription.  
+- Use [workload identity federation for your Azure Resource Manager (ARM) service connections](../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-workload-identity-federation). Workload identity federation allows you to create secret-free service connections in Azure Pipelines to Azure.
 - Don’t give users generic or broad contributor rights on the Azure subscription. 
 - Don’t use Azure Classic service connections, as there’s no way to scope the permissions. 
 - Make sure the resource group only contains Virtual Machines (VMs) or resources that the build needs access to.
@@ -190,7 +191,7 @@ If possible, we recommended to always use identity services for authentication i
 
 ## Secure Azure Artifacts 
 
-- Make sure you understand the difference between feeds, project, and project collection administrators. For more information, see [Configure Azure Artifacts settings](../../artifacts/feeds/feed-permissions.md#configure-azure-artifacts-settings).
+- Make sure you understand the difference between feeds, project, and project collection administrators. For more information, see [Configure Azure Artifacts settings](../../artifacts/feeds/feed-permissions.md).
 - For more information, see [Set feed permissions](../../artifacts/feeds/feed-permissions.md).
 
 ## Secure Azure Boards 

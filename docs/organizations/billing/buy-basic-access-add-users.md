@@ -8,7 +8,7 @@ ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 01/05/2023
+ms.date: 01/04/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -110,13 +110,13 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
    :::image type="content" source="media/shared/last-access.png" alt-text="Screenshot showing select Users and then sort by Last Access.":::
  
-4. If there are users who have never signed in, you can find out how recently they were added by exporting the list of users and checking the **Date Created** column. 
+4. If there are users who haven't signed in, you can find out how recently they were added by exporting the list of users and checking the **Date Created** column. 
 
    :::image type="content" source="media/shared/export-users.png" alt-text="Screenshot showing Export users.":::
 
 ## Pay for a user once across multiple organizations
 
-If you're a member of more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** human user once, for all organizations under the same billing Azure subscription. This does not apply to [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md), which you must pay for each organization the service principal has been added to where the service principal has **Basic** or **Basic + Test Plans**.
+If you're a member of more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** human user once, for all organizations under the same billing Azure subscription. Multi-organization billing doesn't apply to [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md), which you must pay for each organization the service principal was added to where the service principal has **Basic** or **Basic + Test Plans**.
 
 For more information, see [multi-organization billing FAQs](./billing-faq.yml). Complete the following steps.
 

@@ -504,6 +504,41 @@
       "source_path": "docs/repos/get-started/key-concepts-repos.md",
       "redirect_url": "/azure/devops/repos/get-started/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/projects/project-team-quick-reference.md",
+      "redirect_url": "/azure/devops/organizations/projects/about-projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/configure-or-add-a-project-portal.md",
+      "redirect_url": "/azure/devops/project/wiki/about-readme-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/projects/tf31002-unable-connect-tfs.md",
+      "redirect_url": "/azure/devops/user-guide/troubleshoot-connection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/navigation/use-breadcrumbs-selectors.md",
+      "redirect_url": "/azure/devops/project/navigation/go-to-project-repo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/projects/resources-granted-to-project-members.md",
+      "redirect_url": "/azure/devops/user-guide/project-admin-tutorial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/user-guide-faqs.yml",
+      "redirect_url": "/azure/devops/user-guide/provide-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/automate-work-item-state-transitions.md",
+      "redirect_url": "/azure/devops/boards/backlogs/automate-work-item-state-transitions",
+      "redirect_document_id": false
     }
   ]
 }

@@ -5,8 +5,8 @@ ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: ravikum
-author: raviliftr
+ms.author: rbatra
+author: rohit-batra
 ms.date: 11/30/2021
 monikerRange: '<= azure-devops'
 ---
@@ -15,8 +15,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-All feedback is captured in a *Feedback Response* work item.
-You can track feedback, whether captured by the [Test & Feedback extension](provide-stakeholder-feedback.md) or the [Microsoft Feedback client](/previous-versions/azure/devops/project/feedback/give-feedback), through a work item query.
+All feedback gets captured in a *Feedback Response* work item. You can track feedback, whether captured by the [Test & Feedback extension](provide-stakeholder-feedback.md) or the [Microsoft Feedback client](/previous-versions/azure/devops/project/feedback/give-feedback), through a work item query.
 
 [!INCLUDE [prerequisites-queries](../boards/includes/prerequisites-queries.md)]
 
@@ -25,17 +24,18 @@ You can track feedback, whether captured by the [Test & Feedback extension](prov
 ## Track feedback requests
 ::: moniker range=">=azure-devops-2019"
 
-To view feedback, use the **Feedback** shared query.
-Select your project and open **Boards** > **Queries**.
-Under **Queries**, select **All**.
-In the Shared Queries, select **Feedback**.
+1. To view feedback, use the **Feedback** shared query.
+2. Select your project and open **Boards** > **Queries**.
+3. Under **Queries**, select **All**.
+4. In the Shared Queries, select **Feedback**.
 
-![Screenshot shows Boards with Queries selected and the Feedback query selected.](media/track-stakeholder-feedback/open-feedback-query.png)
+   ![Screenshot shows Boards with Queries selected and the Feedback query selected.](media/track-stakeholder-feedback/open-feedback-query.png)
 
-This query displays a list of all the feedback responses received.
-To learn more, see [Web portal navigation](../project/navigation/index.md).
+The query displays a list of all the feedback responses received. For more information, see [Web portal navigation](../project/navigation/index.md).
 
-To create a feedback query, follow these steps:
+## Create a feedback query
+
+To create a feedback query, do the following steps.
 
 1. Select **Boards** > **Queries** and then select **New query**.
 
@@ -43,27 +43,27 @@ To create a feedback query, follow these steps:
 
    ![Screenshot shows editor with values entered.](media/track-stakeholder-feedback/editor-feedback-values.png)
 
-   - Team Project = @Project
-   - Work Item Type In Group Microsoft.FeedbackRequestCategory
-   - State = Active
+   - `Team Project` `=` `@Project`
+   - `Work Item Type` `In Group` `Microsoft.FeedbackRequestCategory`
+   - `State` `=` `Active`
 
 1. Select **Save query** and enter a name.
 
 1. Select **Run query** to see a list of active feedback responses for your team project.
 
-   ![Screenshot shows Results view of Feedback request work items.](media/track-stakeholder-feedback/feedback-request-work-items.png)  
+   ![Screenshot shows results view of Feedback request work items.](media/track-stakeholder-feedback/feedback-request-work-items.png)  
 
 1. Select a response work item to see the details of the feedback.
 
 ::: moniker-end
 
 ::: moniker range="<azure-devops-2019"
-1. Select your project and open **Boards>Queries** or **Work>Queries**. To learn how, see [Web portal navigation](../project/navigation/index.md).
+1. Select your project and open **Boards>Queries** or **Work>Queries**. For more information, see [Web portal navigation](../project/navigation/index.md).
 
 1. In the list of shared queries, select **Feedback**. 
    This query displays a list of all the feedback responses received.
 
-   ![Viewing the feedback responses](media/track-stakeholder-feedback/track-stakeholder-feedback-31.png)
+   ![Screenshot shows view of feedback responses.](media/track-stakeholder-feedback/track-stakeholder-feedback-31.png)
 
 	Or, create a feedback query with the parameters, as shown.
 
