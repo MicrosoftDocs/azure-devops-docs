@@ -1,11 +1,11 @@
 ---
-title:  OAuth self-service secret rotation
+title:  Azure DevOps OAuth self-service secret rotation
 author: ckanyika
 ms.author: ckanyika
 ms.date: 1/10/2024
-description: OAuth self-service secret rotation
+description: Azure DevOps OAuth self-service secret rotation
 ---
-# OAuth self-service secret rotation
+# Azure DevOps OAuth self-service secret rotation
 
 With this update, you can generate your own client secret in the Azure DevOps OAuth app when the existing one is due to expire. 
 
