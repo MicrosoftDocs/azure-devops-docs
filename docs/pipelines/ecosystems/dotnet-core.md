@@ -34,7 +34,7 @@ Are you new to Azure Pipelines? If so, then we recommend you try the following s
 
 [!INCLUDE [include](../includes/dotnet-setup.md)]
 
-### Create a project
+### Create a DevOps project
 
 ::: moniker range=">=azure-devops"
 
@@ -84,6 +84,8 @@ Alternatively, you can use a [self-hosted agent](../agents/agents.md) to save ti
 You can create your pipeline using either the YAML pipeline editor or the classic pipeline editor.
 
 #### Create your pipeline using the YAML editor
+
+##### Create a new pipeline and select your source
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
@@ -184,11 +186,12 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 
 ::: moniker-end 
 
+
 #### Create pipeline with the classic editor
 
 Use these steps to create your pipeline using the classic editor.
 
-##### Create Pipeline
+##### Create pipeline
 
 1. Go to your project and select **Pipelines**.
 
@@ -421,7 +424,7 @@ For more information about NuGet service connections, see [publish to NuGet feed
 
 Use these steps to add a task using the classic editor:
 
-1. Select **Tasks** in your pipeline, and select the job that runs your build tasks. 
+1. Select **Tasks** in your pipeline and select the job that runs your build tasks. 
 
 1. Select **+** to add a new task to that job.
 1. In the task catalog, find and select **.NET Core** task and select **Add**.
@@ -467,8 +470,6 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
-
 ### Add a build task in the YAML pipeline editor
 
 To add a build task using the YAML pipeline editor, do the following steps:
@@ -477,10 +478,9 @@ To add a build task using the YAML pipeline editor, do the following steps:
 
 1. Select **.NET Core** from the task catalog.
 1. Select the command you want to run.  
-1. Specify the option you need for this task.
+1. Configure any options needed.
 1. Select **Add**.
 1. Select **Save** to commit the change.
-
 
 ### Add a build task in the classic editor
 
@@ -492,7 +492,7 @@ To add a build task using  the classic editor, do the following steps:
 1. Select **+** to add a new task to that job.
 1. In the task catalog, find and add the **.NET Core** task.
 1. Select the task and select the **Command** that you want to run.
-1. Specify any other options you need for this task.
+1. Configure any options needed.
 1. Drag the task to position it in the correct task sequence in the pipeline.
 1. From the **Save and queue** dropdown list, select an option to save your changes.
 
@@ -507,8 +507,6 @@ To install a .NET Core global tool like [dotnetsay](https://www.nuget.org/packag
    * **Arguments**: `install -g dotnetsay`.
 1. To run the tool, add a **Command Line** task and set the following properties:
    * **Script:** `dotnetsay`.
-
-::: moniker-end
 
 ## Run your tests
 
