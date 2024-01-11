@@ -10,7 +10,7 @@
       items:
         - name: "2024"
           items:
-          - name: January 10
+          - name: January 11
             href: 2024/sprint-232-update.md
           expanded: true
         - name: "2023"
@@ -716,7 +716,7 @@
         items:
         - name: "2024"
           items:
-          - name: January 10
+          - name: January 11
             href: 2024/general/sprint-232-update.md
           expanded: true  
         - name: "2023"
@@ -825,7 +825,7 @@
         items:
         - name: "2024"
           items:
-          - name: January 10
+          - name: January 11
             href: 2024/reporting/sprint-232-update.md
           expanded: true 
         - name: "2023"
