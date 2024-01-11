@@ -18,7 +18,7 @@ Use a pipeline to automatically build, test, and deploy your .NET Core projects.
 * Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
 * Restore dependencies, build your project, and test with the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
 * Use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) to publish code coverage results.
-* Package and deliver your code with the [.NET Core CLI task](azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
+* Package and deliver your code with the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
 * Publish your build artifacts to your pipeline.
 * Publish to a [NuGet feed](../artifacts/nuget.md).
 * Deploy your [web app to Azure](../targets/webapp.md).
@@ -58,7 +58,7 @@ Are you new to Azure Pipelines? If so, then we recommend you try the following s
 
 ::: moniker range="<=azure-devops-2022"
 
-Your builds run on a [self-hosted agents](../agents/agents.md#install). Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agent. You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, or macOS. 
+Your builds run on a [self-hosted agents](../agents/agents.md#install). Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agent. You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, macOS and [Docker](../agents/docker.md). 
 
 You can install a specific version of .NET SDK by adding the UseDotNet@2 task in your pipeline YAML file or add the task to your pipeline using the classic editor.
 
@@ -75,7 +75,7 @@ steps:
 
 ::: moniker range=">=azure-devops"
 
-Your build is run on [Microsoft-hosted agents](../agents/hosted.md).  You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, macOS and Docker.
+Your builds run on [Microsoft-hosted agents](../agents/hosted.md).  You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, and macOS.
 
 Alternatively, you can use a [self-hosted agent](../agents/agents.md) to save time if you have a large repository or you run incremental builds. With a self-hosted agent, you can use preview or private SDKs not officially supported by Azure DevOps Services.
 
@@ -155,6 +155,7 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 Use these steps to continue creating your YAML pipeline.
 
 1. Select your source repository.  For this example, use **GitHub Enterprise Server**.
+
 1. Select **Connect to GitHub Enterprise Server**.
 1. Enter the URL for your GitHub account.  For example, `https://github.com/<username>`.
 1. Enter your personal access token for your GitHub account.
@@ -185,6 +186,7 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 Use these steps to create you pipeline using the classic editor.
 
 1. Go to your project and select **Pipelines**.
+
 1. Select **Create pipeline** or if you're not creating the first pipeline for this project, select **New pipeline**.
 1. Select **Use the classic editor**.
 1. Select your source.  For this example, select **GitHub Enterprise Server**.
@@ -211,6 +213,7 @@ You now have a working pipeline that's ready for you to customize! When you're r
 Use these steps to create you pipeline using the classic editor.
 
 1. Go to your project and select **Pipelines**.
+
 1. Select **Create pipeline** or if you're not creating the first pipeline for this project, select **New pipeline**.
 1. Select **Use the classic editor**.
 1. Select your source.  For this example, select **GitHub Enterprise Server**.
@@ -235,6 +238,7 @@ You now have a working pipeline that's ready for you to customize! When you're r
 Use these steps to create your pipeline using the classic editor.
 
 1. Go to your project and select **Pipelines**.
+
 1. Select **Create pipeline** or if you're not creating the first pipeline for this project, select **New pipeline**.
 1. Select **Use the classic editor**.
 1. Select your source.  For this example, select **GitHub Enterprise Server**.
@@ -432,6 +436,7 @@ For more information about NuGet service connections, see [publish to NuGet feed
 Use these steps to add the task using the classic editor:
 
 1. Edit your pipeline.
+
 1. Select **Tasks** in the pipeline. 
 1. Select the job that runs your build tasks. 
 1. Select **+** to add a new task to that job.
@@ -487,6 +492,7 @@ steps:
 To add a build task using the YAML pipeline editor, do the following steps:
 
 1. Edit the pipeline.
+
 1. Go the position in the YAML file where you want to insert the task.
 1. Select **.NET Core** from the task catalog.
 1. Select the command you want to run.  
@@ -501,6 +507,7 @@ To add a build task using the YAML pipeline editor, do the following steps:
 To add a build task using  the classic editor, do the following steps:
 
 1. Select **Tasks** in the pipeline. 
+
 1. Select the job that runs your build tasks. 
 1. Select **+** to add a new task to that job.
 1. In the task catalog, find and add the **.NET Core** task.
