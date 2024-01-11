@@ -3,7 +3,7 @@ title: Azure DevOps Release Notes - Reporting Sprint 232 Update
 description: See the Sprint 232 feature updates for Reporting, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 1/10/2024
+ms.date: 1/11/2024
 ---
 
 # Reporting - Sprint 232 Update
