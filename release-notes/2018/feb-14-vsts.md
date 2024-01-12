@@ -1,7 +1,5 @@
 ---
 title: Package upstream sources and symbol server generally available – VSTS Sprint 130 Update
-author: alexcnichols
-ms.author: alexn
 ms.date: 2/14/2018
 ms.topic: article
 ms.manager: jillfra
