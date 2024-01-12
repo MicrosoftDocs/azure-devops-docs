@@ -92,13 +92,13 @@ Alternatively, you can use a [self-hosted agent](../agents/agents.md) to save ti
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops"
-
 ### Create your pipeline
 
-You can create your pipeline using either the YAML pipeline editor or the classic pipeline editor.
+You can use the Yaml pipeline editor or the classic editor to create your pipeline.  To use the classic editor, select [Use the classic editor](#create-pipeline-with-the-classic-editor).
 
-#### Create your pipeline using the YAML editor
+#### [Yaml Pipeline Editor](#tab/yaml-editor)
+
+::: moniker range=">=azure-devops"
 
 ##### Create a new pipeline and select your source
 
@@ -124,7 +124,7 @@ You can customize the YAML file for your requirements.  For example, you can spe
 
 ::: moniker-end
 
-::: moniker range="> tfs-2018 < azure-devops"
+::: moniker range="< azure-devops"
 
 ### Create and run your pipeline
 
@@ -188,28 +188,8 @@ To watch your pipeline in action, select the job in the **Jobs** section.
 
 ::: moniker-end
 
-::: moniker range="> tfs-2018 <=azure-devops-2022"
 
-You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!  When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file. Read further to learn some of the more common ways to customize your pipeline.
-
-::: moniker-end 
-
-
-#### Create pipeline with the classic editor
-
-::: moniker range="=tfs-2018"
-
-1. Go to your project home page and select **Set up Build**.
-1. Select your source repository.  For this example, use **External Git**.
-1. Enter your repository URL and your credentials then select **OK**.
-1. Select **ASP.NET Core** from the list of templates and select **Apply**.
-1. Select the **Agent queue**.  For this example, use `Default`.
-1. From the **Save & queue** dropdown list, select **Save & queue**.
-1. Enter a **Save comment** and select **Save & queue**.
-
-When the **Build #nnnnnnnn.n has been queued** message appears, select the link to see your pipeline in action.
-
-::: moniker-end
+#### Create pipeline with the classic editor(#tab/classic-editor)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -289,42 +269,12 @@ You can see your pipeline in action by selecting the job from the **Jobs** secti
 
 ::: moniker-end
 
-You now have a working pipeline that's ready for you to customize! When you're ready to make changes to your pipeline, **Edit** it.  Read further to learn some of the more common ways to customize your pipeline.
+---
+
+You now have a working pipeline that's ready for you to customize! Read further to learn some of the more common ways to customize your pipeline.
+
 
 ## Build environment
-
-::: moniker range="tfs-2018"
-
-You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, or macOS. Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agent.
-
-::: moniker-end
-
-::: moniker range="<=azure-devops-2022"
-
-Your build pipelines are run on [self-hosted agents](../agents/agents.md?view=azure-devops-2022).  You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, macOS and Docker.
-
-
-Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agent.
-
-You can install a specific version of .NET SDK by adding the [UseDotNet@2](/azure/devops/pipelines/tasks/reference/use-dotnet-v2)task in your pipeline YAML file:
-
-```yaml
-steps:
-- task: UseDotNet@2
-  inputs:
-    version: '8.x'
-```
-
-For more information about setting up self-hosted agents, see [Azure Pipelines agents](../agents/agents.md?view=azure-devops-2022).
-
-Agents are assigned to [agent pools](../agents/pools-queues.md?view=azure-devops-2022).  To select an agent pool for your pipeline, you can specify a pool name.  If no agent pool is specified, the default pool for your collection is used.
-
-```yaml
-pool:
-  name: <pool name>
-```
-
-::: moniker-end
 
 ::: moniker range=">=azure-devops"
 
@@ -372,7 +322,7 @@ steps:
 
 NuGet is a popular way to depend on code that you don't build. You can download NuGet packages and project-specific tools that are specified in the project file by running the `dotnet restore` command either through the **.NET Core CLI** task or directly in a script in your pipeline.  For more information, see [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2019"
 
 You can download NuGet packages from Azure Artifacts, NuGet.org, or some other external or internal NuGet repository. The **.NET Core** task is especially useful to restore packages from authenticated NuGet feeds. If your feed is in the same project as your pipeline, you don't need to authenticate. 
 
@@ -412,11 +362,6 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-You can download NuGet packages from NuGet.org.
-
-::: moniker-end
 
 The `dotnet restore` command uses the `NuGet.exe` packaged with the .NET Core SDK and can only restore packages specified in the .NET Core project `.csproj` files. 
 
@@ -516,7 +461,7 @@ steps:
 
 ::: moniker range=">= azure-devops-2019"
 
-### Add a build task in the YAML pipeline editor
+### Add a build task in the YAML pipeline editor(#tab/yaml-editor)
 
 To add a build task using the YAML pipeline editor, do the following steps:
 
@@ -530,7 +475,7 @@ To add a build task using the YAML pipeline editor, do the following steps:
 
 ::: moniker-end
 
-### Add a build task in the classic editor
+### Add a build task in the classic editor(#tab/classic-editor)
 
 To add a build task using  the classic editor, do the following steps:
 
@@ -543,6 +488,8 @@ To add a build task using  the classic editor, do the following steps:
 1. Configure any options needed.
 1. Drag the task to position it in the correct task sequence in the pipeline.
 1. From the **Save and queue** dropdown list, select an option to save your changes.
+
+---
 
 ### Install a tool
 
@@ -751,7 +698,7 @@ To copy more files to the build directory before publishing, use [CopyFile@2](/a
 
 ::: moniker-end
 
-::: moniker range="> tfs-2018 < azure-devops"
+::: moniker range="> tfs-2019 < azure-devops"
 
 To publish the output of your .NET **build** to your pipeline, do the following tasks: 
 
@@ -831,31 +778,7 @@ To publish this archive to a web app, see [Azure Web Apps deployment](../targets
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-Use the **Publish build artifacts** task to publish the output of your build to Azure Pipelines or to a file share.  You can use this task to publish the output of your .NET Core build to Azure Pipelines on-premises or to a file share.
-
-Use the **Publish Artifacts** task to publish the output of your build to Azure Pipelines.
-
-### Publish to a NuGet feed
-
-If you want to publish your code to a NuGet feed, take the following steps:
-
-1. Use a .NET Core task with **Command** set to pack.
-
-1. [Publish your package to a NuGet feed](../artifacts/nuget.md).
-
-### Deploy a web app
-
-1. Use a .NET Core task with **Command** set to publish.
-
-1. Make sure you select the option to create a .zip file archive.
-
-1. To publish this archive to a web app, see [Azure Web Apps deployment](../targets/webapp.md).
-
-::: moniker-end
-
-## Build an image and push to container registry
+### Build an image and push to container registry
 
 You can also [build an image](containers/build-image.md) for your app and [push it to a container registry](containers/push-image.md).
 
