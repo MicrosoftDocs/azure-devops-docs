@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-This article provides a guide for comparing files when using Team Foundation Version Control (TFVC). If you're using Git for version control, see [Compare files](../../repos/git/review-history.md#compare-files).
+This article provides a guide for comparing files when using Team Foundation Version Control (TFVC). If you're using Git for version control, see [Compare files](../../repos/git/review-history.md#compare-file-versions).
 
 You can compare server folders and local folders to each other, and view the differences between the contents of each folder. You can compare two server files, two local files, or a server file against a local file, and view the differences between the files.
 

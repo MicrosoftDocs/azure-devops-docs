@@ -52,7 +52,7 @@ As part of every deployment, Azure Pipelines executes the following steps:
 
 ## Deployment model
 
-Azure release pipelines support a wide range of [artifact sources](artifacts.md#sources) including Jenkins, Azure Artifacts, and Team City. The following example illustrates a deployment model using Azure release pipelines:
+Azure release pipelines support a wide range of [artifact sources](artifacts.md#artifact-sources) including Jenkins, Azure Artifacts, and Team City. The following example illustrates a deployment model using Azure release pipelines:
 
 In the following example, the pipeline consists of two build artifacts originating from separate build pipelines. The application is initially deployed to the *Dev* stage and then to two separate *QA* stages. If the deployment is successful in both QA stages, the application will be deployed to *Prod ring 1* and then to *Prod ring 2*. Each production ring represents multiple instances of the same web app, deployed to different locations across the world.
 
@@ -93,10 +93,10 @@ When specifying the format mask, you can use the following predefined variables.
 | **System.TeamProject** | The name of the project to which this build belongs. |
 | **Release.ReleaseId** | The ID of the release, which is unique across all releases in the project. |
 | **Release.DefinitionName** | The name of the release pipeline to which the current release belongs. |
-| **Build.BuildNumber** | The number of the build contained in the release. If a release has multiple builds, it's the number of the [primary build](artifacts.md#primary-source). |
-| **Build.DefinitionName** | The pipeline name of the build contained in the release. If a release has multiple builds, it's the pipeline name of the [primary build](artifacts.md#primary-source). |
+| **Build.BuildNumber** | The number of the build contained in the release. If a release has multiple builds, it's the number of the [primary build](artifacts.md). |
+| **Build.DefinitionName** | The pipeline name of the build contained in the release. If a release has multiple builds, it's the pipeline name of the [primary build](artifacts.md). |
 | **Artifact.ArtifactType** | The type of the artifact source linked with the release. For example, this can be **Azure Pipelines** or **Jenkins**. |
-| **Build.SourceBranch** | The branch of the [primary artifact source](artifacts.md#primary-source). For Git, this is of the form **main** if the branch is **refs/heads/main**. For Team Foundation Version Control, this is of the form **branch** if the root server path for the workspace is **$/teamproject/branch**. This variable is not set for Jenkins or other artifact sources. |
+| **Build.SourceBranch** | The branch of the [primary artifact source](artifacts.md). For Git, this is of the form **main** if the branch is **refs/heads/main**. For Team Foundation Version Control, this is of the form **branch** if the root server path for the workspace is **$/teamproject/branch**. This variable is not set for Jenkins or other artifact sources. |
 | **Custom variable** | The value of a global configuration property defined in the release pipeline. You can update the release name with custom variables using the [Release logging commands](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/authoring/commands.md#release-logging-commands) |
 
 #### Q: How can I define the retention period for my releases?
