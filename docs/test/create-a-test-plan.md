@@ -1,6 +1,6 @@
 ---
 title: Create test plans and suites
-description: Learn about Test tools. Create test plans in Azure Test Plans and Azure DevOps Server to make sure each of the deliverables meets your needs.
+description: Learn about Test tools and how to create test plans in Azure DevOps.
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
@@ -21,26 +21,21 @@ For more information about manual testing, see [What is Azure Test Plans?](overv
 
 ## Share work items across your test experience
 
-For example, you're building version 1.* of your product and you might create several test cases for that version.
-Each of these test cases can be updated, and more added, at any time.
-For each development cycle and release of your product, you create a test plan and import the existing test cases into that plan.
-You can also, if you wish, divide the test cases into separate test suites within the plan to enable easier management and monitoring of these separate sets of test cases.
+For example, you're building version 1.* of your product and you might create several test cases for that version. Each of these test cases can be updated, and more added, at any time.
+For each development cycle and release of your product, you create a test plan and import the existing test cases into that plan. You can also, if you wish, divide the test cases into separate test suites within the plan to enable easier management and monitoring of these separate sets of test cases.
 
 After you create your test plan, you [assign test configurations](test-different-configurations.md) and [assign testers](create-test-cases.md#assign-testers) to cover the required test matrix.
 These testers [run the tests](run-manual-tests.md) and gauge the quality of the product.
 Testers continue testing until the product meets exit criteria.
 For the next development cycle and release, you can create a new test plan and reuse the same test cases.
-You repeat this development-test-release cycle by importing the same test cases into each new test plan.
+Repeat this development-test-release cycle by importing the same test cases into each new test plan.
 
-The great thing is that, because test plans refer to test cases, updates to a test case automatically reflect in all the test plans and test suites that use it.
+Because test plans refer to test cases, updates to a test case automatically reflect in all the test plans and test suites that use it.
 
-In the next version of the product, you can reuse the existing test cases.
-However, a better option may be to [copy or clone the test cases](reference-qa.yml#create-manual-test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
+In the next version of the product, you can reuse the existing test cases. However, a better option might be to [copy or clone the test cases](reference-qa.yml#create-manual-test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
 
 > [!TIP]
 > For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.yml#testplans).
-
-
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
@@ -51,78 +46,75 @@ However, a better option may be to [copy or clone the test cases](reference-qa.y
 ## Create a test plan
 
 ::: moniker range=">=azure-devops-2020"
-In general, you create test plans to test requirements. Before creating a test plan, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md).
+In general, you create test plans to test requirements. Before you create a test plan, [define your backlog of requirements](../boards/backlogs/create-your-backlog.md).
 
-1. From the web portal, open your project and go to **Test Plans**.
-   If you already have a test plan, select **Test Plans** to go to the page that lists all test plans.
+1. Sign in to your Azure DevOps project and select **Test Plans** > **Test Plans**.
 
    ![Screenshot of opening the list of test plans page for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/open-test-plans.png)
 
-1. In the **Test Plans** page, select **New Test Plan** to create a test plan for your current sprint.
+2. Select **+ New Test Plan**.
 
    ![Screenshot of creating a new test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/new-test-plan.png)
 
-1. In **New Test Plan**, enter a name for the test plan.
-   Verify that the area path and iteration are set correctly, then select **Create**.
+3. Enter a name for the test plan, verify that the area path and iteration are set correctly, and then select **Create**.
 
    ![Screenshot of adding test plan details for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/test-plan-name-path-iteration.png)
 
 ### Rename a test plan
 
-To rename a test plan, use this procedure:
+To rename a test plan, do the following steps.
 
-1. Select **Test Plans** to view test plans.
+1. Select **Test Plans**.
 
-1. Next to the test plan name, select **More Actions** > **Edit**.
+2. Next to the test plan name, select **More Actions** > **Edit**.
 
    ![Screenshot shows option to edit a test plan.](media/create-a-test-plan/rename-edit-test-plan.png)
 
-1. Change the name and then select **Save & Close**.
+3. Change the name and then select **Save & Close**.
 
 You can make other changes to the test plan here.
 
 ### Delete a test plan
 
-To delete a test plan, use this procedure:
+To delete a test plan, do the following steps.
 
-1. Select **Test Plans** to view test plans.
+1. Select **Test Plans**.
 
-1. Next to the test plan name, select **More Actions** > **Delete**.
+2. Next to the test plan name, select **More Actions** > **Delete**.
 
-1. The **Permanently delete test artifacts** dialog box explains exactly what will be deleted. Type the test plan ID to confirm that you want to delete, and then select **Permanently delete**.
+3. The **Permanently delete test artifacts** dialog box explains exactly what gets deleted. Enter the test plan ID to confirm that you want to delete, and then select **Permanently delete**.
 
-   ![Screenshot shows Permanently delete test artifacts dialog box.](media/create-a-test-plan/permanently-delete-test-artifacts.png)
+   ![Screenshot shows permanently delete test artifacts dialog box.](media/create-a-test-plan/permanently-delete-test-artifacts.png)
 
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
-In general, you create test plans to test requirements. Prior to creating a test plan, therefore, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
+In general, you create test plans to test requirements. Before you create a test plan, [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
 
 1. From the web portal, open your project and go to **Test Plans**.
-   If you already have a test plan, choose **Test Plans** to go to the page that lists all test plans.
+   If you already have a test plan, select **Test Plans** to go to the page that lists all test plans.
 
-   ![Opening the list of test plans page](media/create-a-test-plan/goto-test-plans-page.png)
+   ![Screenshot showing opening the list of test plans page.](media/create-a-test-plan/goto-test-plans-page.png)
 
-1. In the **Test Plans** page, choose **New Test Plan** to create a test plan for your current sprint.
+2. Select **New Test Plan**.
  
-   ![Creating a new test plan](media/create-a-test-plan/CreateATestPlan1a.png)
+   ![Screenshot showing creating a new test plan.](media/create-a-test-plan/CreateATestPlan1a.png)
 
-1. In **New Test Plan**, enter a name for the test plan.
-   Verify that the area path and iteration are set correctly, then choose **Create**.
+3. Enter a name for the test plan, verify that the area path and iteration are set correctly, and then select **Create**.
 
-   ![Adding test plan details](media/create-a-test-plan/CreateATestPlan2.png) 
+   ![Screenshot showing adding test plan details.](media/create-a-test-plan/CreateATestPlan2.png) 
 
 ### Rename a test plan
 
 To rename a test plan, open it from the shortcut menu and rename it.
 
-![Rename a test plan](media/create-a-test-plan/rename-test-plan.png)
+![Screenshot showing renaming a test plan.](media/create-a-test-plan/rename-test-plan.png)
 
 ### Delete a test plan
 
 To delete a test plan, use the shortcut menu for the test plan.
 
-![Delete a test plan](media/create-a-test-plan/delete-test-plan.png)
+![Screenshot showing delete a test plan.](media/create-a-test-plan/delete-test-plan.png)
 
 ::: moniker-end
 
@@ -162,23 +154,21 @@ Now add test suites for the backlog items that need manual tests. These tests co
 > [!NOTE] 
 > Requirement tracking is supported only for test cases linked through a **Requirement-based test suite**. The association between a requirement work item&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md)) and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
 
-1. To add a suite to a test plan, select the **+** new drop-down list and choose a type of test suite.
+1. To add a suite to a test plan, select **+** new drop-down list and choose a type of test suite.
 
-   ![Creating a requirement-based test suite](media/create-a-test-plan/AddRequirementSuitesToTestPlan.png) 
+   ![Screenshot showing creating a requirement-based test suite.](media/create-a-test-plan/AddRequirementSuitesToTestPlan.png) 
 
-   You use requirement-based suites to group your test cases together.
-   That way, you can track the testing status of a backlog item.
-   Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.
+   Use requirement-based suites to group your test cases together, so you can track the testing status of a backlog item. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.
 
-1. In **Create requirement-based suites**, add one or more clauses to filter your work items by the iteration path for the sprint.
+2. In **Create requirement-based suites**, add one or more clauses to filter your work items by the iteration path for the sprint.
    Run the query to view the matching backlog items.
 
-   ![Adding clauses to filter by iteration and running the query to view results](media/create-a-test-plan/AddRequirementSuitesToTestPlan2.png)
+   ![Screenshot showing adding clauses to filter by iteration and running the query to view results.](media/create-a-test-plan/AddRequirementSuitesToTestPlan2.png)
 
-1. In the list of work items returned by the query, select the backlog items you want to test in this sprint.
+3. In the list of work items returned by the query, select the backlog items you want to test in this sprint.
    Choose **Create suites** to create a requirement-based suite for each one.
 
-   ![Adding requirement-based suites for your backlog items](media/create-a-test-plan/AddRequirementSuitesToTestPlan3.png)
+   ![Screenshot showing adding requirement-based suites for your backlog items.](media/create-a-test-plan/AddRequirementSuitesToTestPlan3.png)
 
 ::: moniker-end
 
@@ -199,7 +189,7 @@ You can track changes to test plans and test suites. Open the work item for the 
 
 For test suites, other actions are tracked in the **Test Suite Audit** field. For example, adding and removing test cases from a test suite are tracked in this field.
 
-You can export test plans, test suites, and test cases.
+Export test plans, test suites, and test cases.
 
 ::: moniker range=">=azure-devops-2020"
 Select **Export test cases to CSV**.
@@ -210,13 +200,13 @@ Select **Export test cases to CSV**.
 Select the details that you want in the report.
 Then email or print this report for review.
 
-![Right-click a test suite, and choose Export.](media/create-a-test-plan/ExportTestPlanHTML.png)
+![Screenshot showing right-clicked test suite, and Export button.](media/create-a-test-plan/ExportTestPlanHTML.png)
 ::: moniker-end
 
 Change the test case fields in the report by adding or removing columns from the list view of the test suite.
 
 > [!IMPORTANT]
-> You cannot export more than 75 Test Suites in a single operation.
+> You can't' export more than 75 Test Suites in a single operation.
 > The email supports up to 1MB of data.
 
 <a name="findplan"></a>
@@ -234,11 +224,9 @@ In **Test Plans** for your test plan, use the :::image type="icon" source="media
 In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
 Or filter the list of tests using **Outcome**, **Tester**, and **Configuration** (**3**).
 
-  ![Finding a test plan](media/create-a-test-plan/select-test-plan.png)
+  ![Screenshot showing Finding a test plan.](media/create-a-test-plan/select-test-plan.png)
   
 ::: moniker-end
-
-
 
 ## Next steps
 
