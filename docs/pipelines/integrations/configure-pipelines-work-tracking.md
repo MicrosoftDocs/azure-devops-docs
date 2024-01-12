@@ -221,10 +221,10 @@ For Classic release pipelines, open **Pipelines>Releases**, choose to edit your 
 
 
 For details on each setting, use one of the following links: 
-- [Report deployment status to the repository host](../release/index.md#reportstatus)
+- [Report deployment status to the repository host](#report-deployment-status-to-the-repository-host-classic)
 - [Report deployment status to Work](#auto-link-work-items-builds)
 - [Report deployment status to Boards](#classic-report-boards)
-- [Report deployment status to Jira](../release/index.md#reportstatus)
+- [Report deployment status to Jira](#report-deployment-status-to-jira-classic)
 - [Enable the deployment status badge](#enable-status-badge)
 ::: moniker-end 
 
@@ -233,7 +233,7 @@ For details on each setting, use one of the following links:
 > ![Screenshot of Integrations options for Classic pipelines, Azure DevOps 2019 and earlier versions](../release/media/what-is-release-management/report-options.png)
 
 For details on each setting, use one of the following links: 
-- [Report deployment status to the repository host](../release/index.md#reportstatus)
+- [Report deployment status to the repository host](#report-deployment-status-to-the-repository-host-classic)
 - [Report deployment status to Work](#auto-link-work-items-builds)
 - [Enable the deployment status badge](#status-badge)
 ::: moniker-end 
@@ -428,8 +428,6 @@ Select this option if you want to display the latest outcome of a stage deployme
 
 ***
 
-<!---
-
 <a id="report-release-status"></a>
 <a id="classic-report-git"></a>
 
@@ -468,8 +466,6 @@ To support integration with Jira issue tracking, install [Azure Pipelines integr
 
 ::: moniker-end
  
--->
-
 <!--- 
  
 ## Configure GitHub comment triggers 
