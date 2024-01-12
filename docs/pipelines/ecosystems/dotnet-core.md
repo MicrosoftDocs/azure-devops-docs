@@ -245,6 +245,8 @@ Use these steps to create your pipeline using the classic editor.
 
 ::: moniker-end
 
+::: moniker range">= azure-devops-2019"
+
 ##### Configure your pipeline
 
 1. From **Select a template**, find and select **ASP.NET Core**.
@@ -257,6 +259,8 @@ Use these steps to create your pipeline using the classic editor.
     You can add other tasks to the Agent job by selecting the **+** on the agent job and selecting another task from the catalog.  For example, you might want to add the **Use .NET Core** task as the first task to install the necessary version of the .NET SDK.
 
 ##### Save and run your pipeline
+
+::: moniker-end
 
 ::: moniker range=">=azure-devops"
 
@@ -510,6 +514,8 @@ steps:
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
+
 ### Add a build task in the YAML pipeline editor
 
 To add a build task using the YAML pipeline editor, do the following steps:
@@ -521,6 +527,8 @@ To add a build task using the YAML pipeline editor, do the following steps:
 1. Configure any options needed.
 1. Select **Add**.
 1. Select **Save** to commit the change.
+
+::: moniker-end
 
 ### Add a build task in the classic editor
 
