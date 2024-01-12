@@ -182,7 +182,7 @@ The following table provides information about setting permissions at the object
 :::row-end:::
 :::row:::
    :::column span="1":::
-   [Delivery Plans](set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans)
+   [Delivery Plans](set-permissions-access-work-tracking.md)
    :::column-end:::
    :::column span="1":::
    [Project Administrator](../../organizations/security/permissions.md#project-level-groups) or creator of the Delivery Plan.

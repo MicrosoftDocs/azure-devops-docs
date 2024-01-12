@@ -636,7 +636,7 @@ You need another preview image for the second widget. Name this `preview2.png` a
 ### Step 6: Package, Publish, and Share
 
 [Package, publish, and share your extension](#package-publish-share). 
-If you've already published the extension, you can repackage the extension, as described [here](#package-the-extension), and directly [update it](../publish/overview.md#update-an-extension) to the Marketplace.
+If you've already published the extension, you can repackage the extension and directly update it to the Marketplace.
 
 
 ### Step 7: Add Widget From the Catalog
@@ -982,7 +982,7 @@ At the end of this part, the manifest file should contain three widgets and one 
 ### Step 6: Package, Publish, and Share
 
 If you have not published your extension yet, then read [this section](#package-publish-share) to package, publish, and share your extension. 
-If you have already published the extension before this point, you can repackage the extension as described [here](#package-the-extension) and directly [update it](../publish/overview.md#update-an-extension) to the Marketplace.
+If you have already published the extension before this point, you can repackage the extension and directly update it to the Marketplace.
 
 ### Step 7: Add Widget From the Catalog
 Now, go to your team dashboard at https:\//dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, refresh it. 

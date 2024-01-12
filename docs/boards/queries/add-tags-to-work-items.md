@@ -21,7 +21,7 @@ Tagging work items helps you quickly filter the product backlog or a work
 item query by categories that you define. 
 A tag corresponds to a one or two keyword phrase that you define and that supports your needs to filter a backlog or query, or define a query. 
 
-Tags are a better choice to filter work items than using text strings as described in [Define a query/Best practices](using-queries.md#best-practices-for-creating-queries.md).
+Tags are a better choice to filter work items than using text strings as described in [Define a query/Best practices](using-queries.md).
 
 You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to modify tags in bulk.  
 
@@ -141,7 +141,7 @@ Another option is to install the [Marketplace Tags Manager](https://marketplace.
 
 ## Color-code tags on boards
 
-You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. They don't appear on backlogs or Taskboards. For more information, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
+You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. They don't appear on backlogs or Taskboards. For more information, see [Customize cards, color-code tags](../boards/customize-cards.md). 
 
 > [!div class="mx-imgBorder"]
 > ![Boards>Settings>Tag colors dialog](media/add-tags/color-code-tags.png)

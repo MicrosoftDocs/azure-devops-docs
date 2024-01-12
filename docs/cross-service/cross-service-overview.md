@@ -78,7 +78,7 @@ The following table summarizes some of the features that help you work with your
    :::column span="3":::
        - [Email a list of work items](../boards/backlogs/bulk-modify-work-items.md)
        - [Email query items](../boards/queries/view-run-query.md)
-       - [Send release summaries by email](../pipelines/release/index.md#how-do-i-send-release-summaries-by-email)
+       - [Send release summaries by email](../pipelines/release/index.md)
    :::column-end:::
 :::row-end:::
 ---  
@@ -234,7 +234,7 @@ The following table summarizes the integration points between Azure Boards and A
       Set integration option to automatically create *Integrated in release stage* links to work items linked to a branch, commit, or pull request associated with a release.
    :::column-end::: 
    :::column span="2":::
-      Required to populate **Deployment** control in work item form with **Integrated in release stage** links. For more information, see [Release pipelines, How do I integrate and report release status?](../pipelines/release/index.md#reportstatus). 
+      Required to populate **Deployment** control in work item form with **Integrated in release stage** links. For more information, see [Release pipelines, How do I integrate and report release status?](../pipelines/release/index.md). 
    :::column-end:::
 :::row-end:::
 --- 
@@ -350,7 +350,7 @@ The following table summarizes the integration features between Azure Repos and 
       Report deployment status
    :::column-end::: 
    :::column span="2":::
-       Indicates the status of a deployment on the **Files**, **Commits**, and **Branches** pages for Git repositories. This feature improves the traceability from code commit to deployment. You can [configure the release environments to report deployment status](../pipelines/release/index.md#reportstatus).
+       Indicates the status of a deployment on the **Files**, **Commits**, and **Branches** pages for Git repositories. This feature improves the traceability from code commit to deployment. You can [configure the release environments to report deployment status](../pipelines/release/index.md).
    :::column-end:::
 :::row-end:::
 --- 

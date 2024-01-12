@@ -19,7 +19,7 @@ If you've reviewed the troubleshooting sections and can't resolve your issue, [c
 
 When you're contacting support for notification issues, it's good to have answers to the following questions:
 
-1. What version or platform are you working from. If you don't know, review this section: [What platform or version am I using?](../../user-guide/provide-feedback.md#what-platformversion-am-i-using).
+1. What version or platform are you working from. If you don't know, review this section: [What platform or version am I using?](../../user-guide/provide-feedback.md).
 2. When did you start noticing the problem?
 3. What emails are you not getting that you expect?
 4. Are you getting other types of emails?

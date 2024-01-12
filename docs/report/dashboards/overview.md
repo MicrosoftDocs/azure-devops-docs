@@ -257,7 +257,7 @@ For details, see:
 
 <em>Select a box below to open the corresponding article.</em> 
 
-[![Edit query](media/gs-chart-query.png)](../../boards/queries/using-queries.md)[![Create chart](media/gs-chart-create.png)](charts.md)[![Add chart to dashboard](media/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)   
+[![Edit query](media/gs-chart-query.png)](../../boards/queries/using-queries.md)[![Create chart](media/gs-chart-create.png)](charts.md)[![Add chart to dashboard](media/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md)   
 
 
 
@@ -303,9 +303,9 @@ You add widgets to a dashboard to display a chart, information, or set of links.
       ---
       **Information and links**  
       - [Markdown](widget-catalog.md#markdown-widget)  
-      - [Other links](widget-catalog.md#other-links-widget-2018)  
+      - [Other links](widget-catalog.md)  
       - [Team members](widget-catalog.md#team-members-widget) 
-      - [Team room](widget-catalog.md#team-room-widget)  
+      - [Team room](widget-catalog.md)  
       - [Visual Studio Shortcuts](widget-catalog.md#visual-studio-widget) 
       - [Welcome](widget-catalog.md#how-to-widget) 
    :::column-end:::

@@ -27,7 +27,7 @@ sections:
 
       - question: What's the difference between a query and a semantic search? 
         answer: |
-          While both query and semantic searches find and list work items, the filter features and results presentation are different. For more information, see [Functional work item search, Semantic search vs. managed work item queries](../../project/search/functional-work-item-search.md#search-vs-managed-work-item-queries).  
+          While both query and semantic searches find and list work items, the filter features and results presentation are different. For more information, see [Functional work item search, Semantic search vs. managed work item queries](../../project/search/functional-work-item-search.md).  
 
       - question: Can I export a query and import to another project?  
         answer: |
@@ -57,7 +57,7 @@ sections:
                 - [Compare fields](./query-field-value.md) 
                 - [Key words](./titles-ids-descriptions.md)  
                 - [Linked work items](./linking-attachments.md)  
-                - [Logical groupings](./using-queries.md#logical-groupings)  
+                - [Logical groupings](./using-queries.md)  
                 - [Query macros](about-managed-queries.md#macros)  
                 - [Tags](./add-tags-to-work-items.md#query)  
                 - [Was Ever](./query-by-workflow-changes.md)  
@@ -67,7 +67,7 @@ sections:
                 - [Compare fields](./query-field-value.md) 
                 - [Key words](./titles-ids-descriptions.md)  
                 - [Linked work items](./linking-attachments.md)  
-                - [Logical groupings](./using-queries.md#logical-groupings)  
+                - [Logical groupings](./using-queries.md)  
                 - [Query macros](about-managed-queries.md#macros)  
                 - [Tags](./add-tags-to-work-items.md#query)  
                 - [Was Ever](./query-by-workflow-changes.md)  
@@ -81,13 +81,13 @@ sections:
                 - [History and Discussion](./history-and-auditing.md) 
                 - [Kanban board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
-                - [Search across projects](./using-queries.md#across-projects)
+                - [Search across projects](./using-queries.md)
                 ::: moniker-end
                 ::: moniker range="tfs-2018"
                 - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
                 - [History and Discussion](./history-and-auditing.md) 
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
-                - [Search across projects](./using-queries.md#across-projects)
+                - [Search across projects](./using-queries.md)
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
                 ::: moniker-end
              :::column-end:::
@@ -177,7 +177,7 @@ sections:
       - question: Can I link work items across organizations or collections?
         answer: |
           ::: moniker range="azure-devops"
-          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../backlogs/add-link.md#link-to-a-remote-work-item). However, you can't run a search for work items linked from other projects than the current project you're connected to. 
+          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../backlogs/add-link.md). However, you can't run a search for work items linked from other projects than the current project you're connected to. 
           ::: moniker-end
           ::: moniker range="< azure-devops"
           **No** across collections. This feature isn't supported. 

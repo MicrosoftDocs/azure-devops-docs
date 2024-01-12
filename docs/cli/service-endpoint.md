@@ -224,7 +224,7 @@ openssl pkcs12 -in file.pfx -out file.pem -nodes -password pass:<password_here>
 ## Related articles
 
 - [Manage service connections](../pipelines/library/service-endpoints.md)
-- [Create an Azure Resource Manager service connection using automated security](../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-automated-security)
+- [Create an Azure Resource Manager service connection using automated security](../pipelines/library/connect-to-azure.md)
 - [`az devops service-endpoint`](/cli/azure/devops/service-endpoint)
 - [Endpoints REST API](/rest/api/azure/devops/serviceendpoint/endpoints) 
 
