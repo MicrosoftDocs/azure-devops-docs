@@ -69,4 +69,4 @@ YAML pipelines can have different versions of the pipeline in different branches
 
 [Pull request release triggers](../release/triggers.md) are used to deploy a pull request directly using classic releases.
 
-[Stage triggers in classic release](../release/triggers.md#env-triggers) are used to configure how each stage in a classic release is triggered.
+[Stage triggers in classic release](../release/triggers.md#stage-triggers) are used to configure how each stage in a classic release is triggered.
