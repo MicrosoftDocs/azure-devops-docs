@@ -31,4 +31,4 @@ If you don't have a .NET project to work with create a new one.  Start by instal
 ### Connect git repo to GitHub
 
 1. From the project directory, [create a local git repository and commit the application code to the main branch](../../repos/git/creatingrepo.md#create-a-local-git-repo-from-an-existing-solution).
-1. [Connect your local Git repo to a GitHub repo](../../repos/git/creatingrepo.md#connect-a-local-git-repo).
+1. [Connect your local Git repo to a GitHub repo](../../repos/git/creatingrepo.md).
