@@ -312,7 +312,7 @@ jobs:
 ```
 
 > [!NOTE] 
-> Azure Boards allows you to configure your work item tracking using several different processes, such as Agile or Basic. Each process has different work item types, and not every work item type is available in each process. For a list of work item types supported by each process, see [Work item types (WITs)](../boards/work-items/about-work-items.md#work-item-types-wits).
+> Azure Boards allows you to configure your work item tracking using several different processes, such as Agile or Basic. Each process has different work item types, and not every work item type is available in each process. For a list of work item types supported by each process, see [Work item types (WITs)](../boards/work-items/about-work-items.md#track-work-with-different-work-item-types).
 
 The previous example uses [Runtime parameters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The second `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
 

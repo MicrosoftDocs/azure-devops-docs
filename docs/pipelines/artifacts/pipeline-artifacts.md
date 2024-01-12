@@ -85,7 +85,7 @@ Packages in Azure Artifacts are immutable. Once you publish a package, its versi
 ``` 
 
 > [!NOTE]
-> You will not be billed for storing Pipeline Artifacts. Pipeline Caching is also exempt from storage billing. See [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-count-toward-my-total-billed-storage).
+> You will not be billed for storing Pipeline Artifacts. Pipeline Caching is also exempt from storage billing. See [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-contribute-to-my-total-billed-storage).
 
 > [!CAUTION]
 > Deleting a pipeline run will result in the deletion of all Artifacts associated with that run.
