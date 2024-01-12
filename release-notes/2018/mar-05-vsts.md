@@ -1,7 +1,5 @@
 ---
 title: Work Items hub and VM-based Azure DevOps Project – VSTS Sprint 131 Update
-author: alexcnichols
-ms.author: alexn
 ms.date: 3/5/2018
 ms.topic: article
 ms.manager: jillfra

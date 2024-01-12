@@ -1,7 +1,5 @@
 ---
 title: Pipeline container jobs - Sprint 140 Update
-author: alexcnichols
-ms.author: alexn
 ms.date: 9/20/2018
 description: In the Sprint 140 Update of Azure DevOps Services, you'll find a new way to customize build dependencies to your specific requirements with the introduction of container jobs in Azure Pipelines.
 ---
