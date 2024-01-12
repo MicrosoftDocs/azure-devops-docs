@@ -10,6 +10,8 @@
       items:
         - name: "2024"
           items:
+          - name: January 16
+            href: 2024/sprint-233-update.md
           - name: January 11
             href: 2024/sprint-232-update.md
           expanded: true
@@ -243,6 +245,8 @@
         items:
         - name: "2024"
           items:
+          - name: January 16
+            href: 2024/boards/sprint-233-update.md
           expanded: true
         - name: "2023"
           items:
@@ -374,6 +378,8 @@
         items:
         - name: "2024"
           items:
+          - name: January 16
+            href: 2024/repos/sprint-233-update.md
           expanded: false  
         - name: "2023"
           items:
@@ -443,6 +449,8 @@
         items:
         - name: "2024"
           items:
+          - name: January 16
+            href: 2024/pipelines/sprint-233-update.md
           expanded: false
         - name: "2023"
           items:
@@ -716,6 +724,8 @@
         items:
         - name: "2024"
           items:
+          - name: January 16
+            href: 2024/general/sprint-233-update.md
           - name: January 11
             href: 2024/general/sprint-232-update.md
           expanded: true  
