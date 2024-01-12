@@ -9,14 +9,14 @@ ms.date: 12/01/2023
 
 ### Create a .NET project
 
-If you don't have a .NET project to work with create a new one on your local system.  Start by installing <a href="https://dotnet.microsoft.com/download/dotnet/6.0" target="_blank"> the latest .NET 6.0 SDK </a>.
+If you don't have a .NET project to work with, create a new one on your local system.  Start by installing <a href="https://dotnet.microsoft.com/download/dotnet/8.0" target="_blank"> the latest .NET 8.0 SDK </a>.
 
 1. Open a terminal window
-1. Create a project directory and navigate into it.
-1. Create a new .NET 6 webapp. 
+1. Create a project directory and navigate to it.
+1. Create a new .NET 8 webapp. 
 
     ```dotnetcli
-    dotnet new webapp -f net6.0
+    dotnet new webapp -f net8.0
     ```
 
 1. From the same terminal session, run the application locally using the [`dotnet run`](/dotnet/core/tools/dotnet-run) command from your project directory.
@@ -25,7 +25,7 @@ If you don't have a .NET project to work with create a new one on your local sys
     dotnet run
     ```
 
-1. Once the application has start press Ctrl-C to shut it down.
+1. Once the application has started, press Ctrl-C to shut it down.
 
 ### Create a git repo and connect it to GitHub
 
