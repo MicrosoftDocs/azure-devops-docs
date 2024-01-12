@@ -137,7 +137,7 @@ Choose **Correct this now** to open the Settings dialog. To map the workflow sta
 
 ## Customize your Kanban board checklist items
 
-Checklists are a great way to create work items that are automatically linked with a parent-child link to another work item on a Kanban board. You can customize the work item types that you can add as a checklist by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For more information, see [Customize cards](../boards/customize-cards.md#annotations).
+Checklists are a great way to create work items that are automatically linked with a parent-child link to another work item on a Kanban board. You can customize the work item types that you can add as a checklist by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For more information, see [Customize cards](../boards/customize-cards.md).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -325,7 +325,7 @@ The following settings can influence the type and number of work items that appe
 	> [!div class="mx-imgBorder"]  
 	> ![Boards, Show more items](media/setup-backlog/show-more-items.png) 
 
-- If you have nested work items that belong to the same category, only leaf nodes may appear on the Kanban board (for TFS 2018.1 and earlier versions). For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. For more information, see [Fix reordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes).
+- If you have nested work items that belong to the same category, only leaf nodes may appear on the Kanban board (for TFS 2018.1 and earlier versions). For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. For more information, see [Fix reordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md).
 
 - If you've turned off the **In Progress** view, then those work items where work has started won't appear in the backlog list.  
 

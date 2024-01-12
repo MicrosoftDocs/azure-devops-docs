@@ -1046,7 +1046,7 @@ The extension manifest for the third sample in this guide would look like the be
 }
 ```
 
-With the previous change, [repackage](#package-the-extension) and [update](../publish/overview.md#update-an-extension) your extension. Refresh the dashboard that has this widget (Hello World Widget 3 (with config)). 
+With the previous change, [repackage](#package-the-extension) and [update](../publish/overview.md) your extension. Refresh the dashboard that has this widget (Hello World Widget 3 (with config)). 
 Open the configuration mode for your widget, you should now be able to see the option to change the widget name and size.
 
 ![Widget where name and size can be configured](../media/add-dashboard-widget/sampleConfigureNameAndSize.png)
@@ -1083,5 +1083,5 @@ return {
 }
 ```
 
-[Repackage](#package-the-extension) and [update](../publish/overview.md#update-an-extension) your extension again. Refresh the dashboard that has this widget. Any changes to the widget name, in the configuration mode, update the widget title now.
+[Repackage](#package-the-extension) and [update](../publish/overview.md) your extension again. Refresh the dashboard that has this widget. Any changes to the widget name, in the configuration mode, update the widget title now.
 
