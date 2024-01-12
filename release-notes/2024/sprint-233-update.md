@@ -1,5 +1,5 @@
 ---
-title:  TBD
+title: TBD 
 author: ckanyika
 ms.author: ckanyika
 ms.date: 1/16/2024
@@ -7,15 +7,33 @@ description: TBD
 ---
 # TBD
 
+With this update, we have included extension updates and performance improvements. With an existing ServiceNow integration, we've updated the app to support the Tokyo version of ServiceNow. 
+We've also made improvements to extension settings to help you manage your installed extensions.
+
+Check out the release notes for details.
+
+### General
+
+[!INCLUDE [sprint-233-update-links](includes/general/sprint-233-update-links.md)]
 
 ### Azure Boards
 
 [!INCLUDE [sprint-233-update-links](includes/boards/sprint-233-update-links.md)]
 
+### Azure Pipelines
+
+[!INCLUDE [sprint-233-update-links](includes/pipelines/sprint-233-update-links.md)]
+
+## General
+
+[!INCLUDE [sprint-233-update](includes/general/sprint-233-update.md)]
 ## Azure Boards
 
 [!INCLUDE [sprint-233-update](includes/boards/sprint-233-update.md)]
 
+## Azure Pipelines
+
+[!INCLUDE [sprint-233-update](includes/pipelines/sprint-233-update.md)]
 
 ## Next steps
 
@@ -32,7 +50,7 @@ Head over to Azure DevOps and take a look.
 We would love to hear what you think about these features. Use the help menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"] 
-> ![Screenshot Make a suggestion.](../media/make-a-suggestion.png)
+> ![Make a suggestion](../media/make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
 
