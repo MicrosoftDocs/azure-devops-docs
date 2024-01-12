@@ -926,13 +926,13 @@ YAML isn't supported in TFS.
 
 #### [Classic](#tab/classic/)
 In a release pipeline, you may choose to skip the
-  [download of artifacts](../release/artifacts.md#download)
+  [download of artifacts](../release/artifacts.md)
   during the job execution. Use this option if you want to implement
   your own custom logic for downloading artifacts by using tasks, or if the tasks in a particular job don't rely on the artifacts.
 
 ::: moniker range=">=tfs-2018"
 
-Alternatively, you can choose to download specific [artifacts](../release/artifacts.md#download) during the job execution in a release. Use this option if the tasks in a particular job rely on only specific artifacts.
+Alternatively, you can choose to download specific [artifacts](../release/artifacts.md) during the job execution in a release. Use this option if the tasks in a particular job rely on only specific artifacts.
 
 ::: moniker-end
 
