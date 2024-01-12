@@ -161,7 +161,7 @@ sections:
       - question: How do I view data from several projects in one dashboard? 
         answer: | 
           There are a few ways to view data from several projects in a single dashboard. 
-          - **Query-based widgets**: Queries can be defined in any project that target all or select projects. Charts based on these queries can be added to any dashboard. To learn more, see [Define a work item query, Query across or within projects](../../boards/queries/using-queries.md#query-across-projects).   
+          - **Query-based widgets**: Queries can be defined in any project that target all or select projects. Charts based on these queries can be added to any dashboard. To learn more, see [Define a work item query, Query across or within projects](../../boards/queries/using-queries.md).   
           - **Burndown and Burnup charts**: The [Burndown and Burnup charts](configure-burndown-burnup-widgets.md) can be configured for any project and team. Therefore, you can add several of these charts to a single chart and configure them to gain a view of progress across several teams and projects.
  
 

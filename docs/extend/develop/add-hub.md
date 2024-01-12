@@ -143,7 +143,7 @@ The **contributions** stanza adds your contribution - the Hello hub - to your ex
 For each contribution in your extension, the manifest defines the following:
 
 - type of contribution, hub
-- contribution target, the work hub group (check out all of the [targetable hub groups](../reference/targets/overview.md#targetable-hub-groups)),
+- contribution target, the work hub group (check out all of the [targetable hub groups](../reference/targets/overview.md),
 - the properties specific to each type of contribution. A hub has the following properties.
 
 | Property | Description                                                                 |
