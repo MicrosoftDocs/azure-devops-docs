@@ -245,7 +245,7 @@ Use these steps to create your pipeline using the classic editor.
 
 ::: moniker-end
 
-::: moniker range">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019"
 
 ##### Configure your pipeline
 
