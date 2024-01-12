@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/13/2023
+ms.date: 01/18/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -620,6 +620,9 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td>Pipelines</td>
          <td>Future</td>
       </tr>
+      <tr>
+        <td rowspan="1"><strong>2024 Q2</strong></td>
+      </tr>  
       <td rowspan="31"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
