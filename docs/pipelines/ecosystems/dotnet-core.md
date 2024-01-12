@@ -142,6 +142,7 @@ Use these steps to continue creating your YAML pipeline.
 ##### Select your source
 
 1. Select your source repository.  For this example, use **GitHub Enterprise Server**.
+
    1. Enter the URL for your GitHub account.  For example, `https://github.com/<username>`.
    1. Enter your personal access token for your GitHub account.
    1. Enter a Service connection name.  For example, `my-github`.
@@ -183,12 +184,11 @@ To see the build logs as your pipeline runs, select the build number at the top 
 
 1. To commit the new *azure-pipelines.yml* file to your repository, edit the commit message as needed and select **Save and run**.
 
+To watch your pipeline in action, select the job in the **Jobs** section.
+
 ::: moniker-end
 
 ::: moniker range="> tfs-2018 <=azure-devops-2022"
-
-
-To watch your pipeline in action, select the job in the **Jobs** section.
 
 You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!  When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file. Read further to learn some of the more common ways to customize your pipeline.
 
