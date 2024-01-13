@@ -42,4 +42,4 @@ Edit or delete any comments that you added to a wiki.
 - [Follow wiki pages, get notifications](follow-notifications-wiki-pages.md)
 - [Create and embed a work item from wiki content](create-embed-wit-from-wiki.md)
 - [Markdown guidance](markdown-guidance.md)
-- [Wiki Markdown guidance](markdown-guidance.md#wiki-markdown-guidance)
+- [Wiki Markdown guidance](markdown-guidance.md)

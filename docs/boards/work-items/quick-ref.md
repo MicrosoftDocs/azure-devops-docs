@@ -22,7 +22,7 @@ Use this index to quickly access concepts and tasks related to work items and in
 
 > [!NOTE]   
 > The following features require that you enable the **New Boards Hub** preview feature. These features are only available for Azure DevOps Services at this time. To enable the **New Boards Hub**, see [Manage or enable features](../../project/navigation/preview-features.md).
-> - [Change the link type of an existing link](../backlogs/add-link.md#change-link-type)
+> - [Change the link type of an existing link](quick-ref.md#work-item-user-tasks)
 > - [Filter the history tab](../queries/history-and-auditing.md#filter-history) 
 > - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
 > - [Move a card to a specific column position](../boards/customize-cards.md#reorder-cards)
@@ -72,7 +72,7 @@ Use this index to quickly access concepts and tasks related to work items and in
       ::: moniker range="azure-devops"
       - [Queries](../queries/about-managed-queries.md)  
       - [Recycle bin](../backlogs/remove-delete-work-items.md#restore)  
-      - [Remote linking](../backlogs/add-link.md#remote-link)  
+      - [Remote linking](../backlogs/add-link.md)
       - [Rollup](../backlogs/display-rollup.md)  
       - [Scrum process](guidance/scrum-process.md)  
       - [State categories](workflow-and-state-categories.md)  
@@ -101,10 +101,10 @@ Use this index to quickly access concepts and tasks related to work items and in
       - [Visual Studio work item experience](set-work-item-experience-vs.md)  
       <br/> 
       - [Work item fields](guidance/work-item-field.md)  
-      - [Work item form](about-work-items.md#work-item-form)  
+      - [Work item form](about-work-items.md)  
       - [Work item form controls](about-work-items.md#work-item-form-controls)  
       - [Work item templates](about-work-items.md#templates)  
-      - [Work item types](about-work-items.md#work-item-types-wits)
+      - [Work item types](about-work-items.md)
       - [Work tracking limits](../../organizations/settings/work/object-limits.md)
       - [Workflow](workflow-and-state-categories.md)
    :::column-end:::
@@ -135,7 +135,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Bulk modify work items (Web)](../backlogs/bulk-modify-work-items.md)  
       <br/>
       - [Capture work item as a template](../backlogs/work-item-template.md#capture-a-work-item-as-a-template)  
-      - [Change the link type](../backlogs/add-link.md#change-link-type)
+      - [Change the link type](../backlogs/add-link.md#change-the-link-type-of-an-existing-link)
       - [Change work item type](../backlogs/move-change-type.md#change-the-work-item-type)  
       - [Copy or clone a work item](../backlogs/copy-clone-work-items.md)  
       - [Copy work item URL](about-work-items.md#copy-the-url)       

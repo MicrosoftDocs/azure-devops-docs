@@ -24,7 +24,7 @@ While you author pages using [Markdown format](./markdown-guidance.md), you can 
 > [!div class="mx-imgBorder"]  
 > ![Wiki home page](media/wiki/wiki-edit.png)
 
-As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select :::image type="icon" source="../../media/icons/context-menu.png" border="false":::next to **Save**. For more shortcuts, see [Keyboard shortcuts to manage wiki pages](../navigation/keyboard-shortcuts.md#wiki-keyboards-shortcuts.md).
+As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select :::image type="icon" source="../../media/icons/context-menu.png" border="false":::next to **Save**. For more shortcuts, see [Keyboard shortcuts to manage wiki pages](../navigation/keyboard-shortcuts.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Save page with a custom message](media/wiki/wiki-save-with-message.png)
@@ -285,4 +285,4 @@ By default, the first page you add when you create a wiki is set as the wiki hom
 - [Follow a wiki page and get notifications](follow-notifications-wiki-pages.md)
 - [Provisioned vs. published wiki](provisioned-vs-published-wiki.md)
 - [Update wiki offline](wiki-update-offline.md)
-- [Wiki Markdown guidance](markdown-guidance.md#wiki-markdown-guidance)
+- [Wiki Markdown guidance](markdown-guidance.md)

@@ -25,7 +25,7 @@ ms.date: 02/24/2022
      ]
     ```
 
-	Look at the contribution targets reference to see the [available hub groups that can be contributed to](../../reference/targets/overview.md#targets).
+	Look at the contribution targets reference to see the [available hub groups that can be contributed to](../../reference/targets/overview.md).
 
 2. Change the hub contribution so that it's in the samples hub group that you just created. Just update the targets to the relative contribution ID of the hub group you just added.
 
@@ -45,7 +45,7 @@ ms.date: 02/24/2022
         }
     ```
 
-4. [Install](../../develop/install.md) your extension.
+3. [Install](../../develop/install.md) your extension.
 
    Now your hub appears under your Samples hub group.
 

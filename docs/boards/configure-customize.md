@@ -352,7 +352,7 @@ If you use the Scrum process, your default setup is to track bugs along with pro
 Determine with your team how you want to manage bugs. Then, [change your team settings](../organizations/settings/show-bugs-on-backlog.md) accordingly.
 
 > [!TIP]  
-> After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlogs/resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint Taskboards.
+> After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items appear on sprint Taskboards.
 
 ::: moniker range="azure-devops"
 

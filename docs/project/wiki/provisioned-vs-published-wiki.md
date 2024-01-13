@@ -43,7 +43,7 @@ For example, the **Edit in Repos** option for the publish code as wiki takes you
 Both types of wiki support the following features:
 
 - [Markdown format](markdown-guidance.md)
-- [HTML tags](markdown-guidance.md#html-tag-support-in-wiki-pages)
+- [HTML tags](markdown-guidance.md#use-html-tags-in-wiki-pages)
 - [Insert and resize images](markdown-guidance.md#images)
 - [Mathematical notation and characters](markdown-guidance.md#mathematical-notation)
 - [Link to work items using #](markdown-guidance.md#link-to-work-items-from-a-wiki-page)

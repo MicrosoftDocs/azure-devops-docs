@@ -49,10 +49,10 @@ sections:
       - question: Can I create a dashboard with information that spans two or more projects? 
         answer: | 
           ::: moniker range=">= azure-devops-2020"
-          There's limited support for widgets that you add to a dashboard from different projects. Specifically, you can add [Burndown and Burnup charts](../report/dashboards/configure-burndown-burnup-widgets.md) from different projects to a dashboard. Query-based widgets reference queries that you define, which can [reference other projects](../boards/queries/using-queries.md#query-across-projects). You can also use an [Embedded Webpage widget](../report/dashboards/widget-catalog.md#embedded-webpage-widget) to display data from a URL, such as a backlog, board, or an **Analytics** chart from for a team. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
+          There's limited support for widgets that you add to a dashboard from different projects. Specifically, you can add [Burndown and Burnup charts](../report/dashboards/configure-burndown-burnup-widgets.md) from different projects to a dashboard. Query-based widgets reference queries that you define, which can [reference other projects](../boards/queries/using-queries.md). You can also use an [Embedded Webpage widget](../report/dashboards/widget-catalog.md#embedded-webpage-widget) to display data from a URL, such as a backlog, board, or an **Analytics** chart from for a team. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
           ::: moniker-end
           ::: moniker range="< azure-devops-2020"
-          The only way to view data from different projects is to use [Query-based widgets](../report/dashboards/widget-catalog.md#work-widgets) or [Embedded Webpage widgets](../report/dashboards/widget-catalog.md#embedded-webpage-widget). Query-based widgets reference queries that you define, which can [reference other projects](../boards/queries/using-queries.md#query-across-projects). Embedded Webpage widgets display data from a URL, such as a backlog, board, or chart for a team in different projects. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
+          The only way to view data from different projects is to use [Query-based widgets](../report/dashboards/widget-catalog.md) or [Embedded Webpage widgets](../report/dashboards/widget-catalog.md#embedded-webpage-widget). Query-based widgets reference queries that you define, which can [reference other projects](../boards/queries/using-queries.md). Embedded Webpage widgets display data from a URL, such as a backlog, board, or chart for a team in different projects. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
           ::: moniker-end
           > [!NOTE]  
           > There's a [suggested feature, Single Dashboard for Multiple Projects](https://developercommunity.visualstudio.com/t/single-dashboard-for-multiple-projects/365500) that you can review and up vote.  
@@ -70,7 +70,7 @@ sections:
       - question: Can I query across projects? 
         answer: |
           **Yes**. You can create work item queries that span all projects within an organization or filter for specific projects. Also, you can use the search tool to perform work item searches across all projects in an organization. For more information, see one of the following articles.
-          - [Define a query, Query across projects](../boards/queries/using-queries.md#across-projects) 
+          - [Define a query, Query across projects](../boards/queries/using-queries.md) 
           - [Search for work items](search/functional-work-item-search.md)
 
       - question: Can I view a Kanban board of work items defined in different projects? 
@@ -98,7 +98,7 @@ sections:
       - question: Can I link work items across organizations or collections?
         answer: |
           ::: moniker range="azure-devops"
-          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../boards/backlogs/add-link.md#link-to-a-remote-work-item). 
+          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../boards/backlogs/add-link.md). 
           ::: moniker-end
           ::: moniker range="< azure-devops"
           **No** across collections, as it isn't a supported feature.

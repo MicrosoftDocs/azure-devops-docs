@@ -192,7 +192,7 @@ An administrator can customize the **Taskboard** for all teams in the following 
 |-----------------------|---------------------------------------------|
 | Backlog               | [Switch to sprint backlog view](assign-work-sprint.md)                         |
 | Board                 | Switch to taskboard view                   |
-| Capacity              | [Switch to Capacity planning](assign-work-sprint.md#set-capacity)   |
+| Capacity              | [Switch to Capacity planning](assign-work-sprint.md)   |
 | Group by Stories/People   | Switch grouping of cards based on backlog items or team members                        |
 | Person                    | Filter tasks to show items assigned to All or a selected team member            |
 | ![Settings icon](../media/icons/team-settings-gear-icon.png)    | [Open board settings](../../boards/boards/customize-cards.md)    |

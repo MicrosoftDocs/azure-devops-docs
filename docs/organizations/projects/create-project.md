@@ -339,7 +339,7 @@ You can add Git (distributed) or TFVC (centralized) repositories to your project
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Structure your project](about-projects.md#project-structure)
+> [Structure your project](about-projects.md#structure-your-project)
 
 ## Related articles
 

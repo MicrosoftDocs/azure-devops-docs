@@ -304,7 +304,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Delete project](delete-project.md)  
 - [Edit project Summary](project-vision-status.md)
 - [Enable/disable project services](../settings/set-services.md)  
-- [Export list of projects](create-project.md#list-and-connect-to-projects)  
+- [Export list of projects](create-project.md)  
 - [Export list of teams](../settings/add-teams.md#list-teams)  
 - [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
