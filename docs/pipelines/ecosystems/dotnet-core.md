@@ -599,10 +599,8 @@ You can publish code coverage results to the server with the [Publish Code Cover
 
 To run tests and publish code coverage with Coverlet, do the following tasks:
 
-* Add a reference to the `coverlet.msbuild` NuGet package in your test project(s) for .NET projects before .NET 5. For .NET 5 or greater, add a reference to the  `coverlet.collector` NuGet package.
+* Add a reference to the  `coverlet.collector` NuGet package.
 * Add the following snippet to your `azure-pipelines.yml` file:
-
-# [.NET >= 5](#tab/dotnetfive)
 
   ```yaml
   - task: UseDotNet@2
@@ -630,26 +628,6 @@ To run tests and publish code coverage with Coverlet, do the following tasks:
       codeCoverageTool: 'Cobertura'
       summaryFileLocation: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
   ```
-
-# [.NET < 5](#tab/netearlierversions)
-
-  ```yaml
-  - task: DotNetCoreCLI@2
-    displayName: 'dotnet test'
-    inputs:
-      command: 'test'
-      arguments: '--configuration $(buildConfiguration) --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura'
-      publishTestResults: true
-      projects: '**/test-library/*.csproj' # update with your test project directory
-
-  - task: PublishCodeCoverageResults@1
-    displayName: 'Publish code coverage report'
-    inputs:
-      codeCoverageTool: 'Cobertura'
-      summaryFileLocation: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
-  ```
-
----
 
 ## Package and deliver your code
 
