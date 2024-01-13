@@ -5,5 +5,4 @@ ms.date: 1/16/2024
 ms.topic: include
 ---
 
-- [Improved YAML validation](#improved-yaml-validation)
-- [Checks scalability Phase 3](#checks-scalability-phase-3)
+- [Decrease secret expiration on newly created ARM service connections that use a secret](#decrease-secret-expiration-on-newly-created-arm-service-connections-that-use-a-secret)
