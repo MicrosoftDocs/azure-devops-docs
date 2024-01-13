@@ -188,8 +188,7 @@ To watch your pipeline in action, select the job in the **Jobs** section.
 
 ::: moniker-end
 
-
-#### Create pipeline with the classic editor(#tab/classic-editor)
+#### [Classic pipeline Editor](#tab/classic-editor)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -457,7 +456,9 @@ steps:
 
 ::: moniker range=">= azure-devops-2019"
 
-### Add a build task in the YAML pipeline editor(#tab/yaml-editor)
+### Add a build task in the YAML pipeline editor
+
+#### [YAML pipeline editor](#tab/yaml-editor)
 
 To add a build task using the YAML pipeline editor, do the following steps:
 
@@ -471,7 +472,7 @@ To add a build task using the YAML pipeline editor, do the following steps:
 
 ::: moniker-end
 
-### Add a build task in the classic editor(#tab/classic-editor)
+#### [Classic pipeline editor](#tab/classic-editor)
 
 To add a build task using  the classic editor, do the following steps:
 
