@@ -37,8 +37,6 @@ Use a pipeline to automatically build, test, and deploy your .NET Core projects.
 > [!NOTE]
 > For help with .NET Framework projects, see [Build ASP.NET apps with .NET Framework](../apps/aspnet/build-aspnet-4.md).
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 ## Create your first pipeline
 
 Are you new to Azure Pipelines? If so, then we recommend you try the following section first.
