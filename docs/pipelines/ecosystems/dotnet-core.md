@@ -94,7 +94,7 @@ Alternatively, you can use a [self-hosted agent](../agents/agents.md) to save ti
 
 You can use the Yaml pipeline editor or the classic editor to create your pipeline.  To use the classic editor, select **Use the classic editor**.
 
-# [Yaml Pipeline Editor](#tab/yaml-editor)
+# [YAML pipeline editor](#tab/yaml-editor)
 
 ::: moniker range=">=azure-devops"
 
@@ -180,7 +180,7 @@ To watch your pipeline in action, select the job in the **Jobs** section.
 
 ::: moniker-end
 
-# [Classic pipeline Editor](#tab/classic-editor)
+# [Classic pipeline editor](#tab/classic-editor)
 
 ::: moniker range=">= azure-devops-2019"
 
