@@ -68,7 +68,7 @@ ms.date: 06/29/2023
 
 | Variable | Description |
 |:---------|:------------|
-| System.AccessToken | [Use the OAuth token to access the REST API](../../scripts/powershell.md#use-the-oauth-token-to-access-the-rest-api). <br><br>This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. |
+| System.AccessToken | [Use the OAuth token to access the REST API](../../scripts/powershell.md#example-powershell-script-access-rest-api). <br><br>This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. |
 | System.CollectionId | The GUID of the TFS collection or Azure DevOps organization |
 | System.DefaultWorkingDirectory | [!INCLUDE [include](../includes/variables-build-sources-directory.md)] |
 | System.DefinitionId | The ID of the build pipeline. |

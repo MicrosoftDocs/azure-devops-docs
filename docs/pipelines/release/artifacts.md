@@ -24,7 +24,7 @@ When creating a release, you can specify the version of your artifact source. By
 
 :::image type="content" source="media/artifacts-02.png" alt-text="Screenshot showing how to add an artifact to a classic release pipeline.":::
 
-If you link more than one artifact, you can specify which one is the primary source (default). The primary artifact source is used to set a number of predefined [variables](variables.md#artifact-variables). It can also be used in [naming releases](index.md#numbering).
+If you link more than one artifact, you can specify which one is the primary source (default). The primary artifact source is used to set a number of predefined [variables](variables.md#artifact-variables). It can also be used in [naming releases](index.md#q-how-do-i-manage-the-naming-of-new-releases).
 
 
 :::image type="content" source="media/artifacts-02a.png" alt-text="Screenshot showing how to set a primary source artifact.":::
