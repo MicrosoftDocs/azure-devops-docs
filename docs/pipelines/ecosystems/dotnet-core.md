@@ -349,7 +349,6 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 ```
 
-
 The `dotnet restore` command uses the `NuGet.exe` packaged with the .NET Core SDK and can only restore packages specified in the .NET Core project `.csproj` files. 
 
 If you also have a Microsoft .NET Framework project in your solution or use `package.json` to specify your dependencies, use the **NuGet** task to restore those dependencies.
@@ -446,8 +445,6 @@ steps:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
-
 ### Add a build task in the YAML pipeline editor
 
 # [YAML pipeline editor](#tab/yaml-editor)
@@ -461,8 +458,6 @@ To add a build task using the YAML pipeline editor, do the following steps:
 1. Configure any options needed.
 1. Select **Add**.
 1. Select **Save** to commit the change.
-
-::: moniker-end
 
 # [Classic pipeline editor](#tab/classic-editor)
 
