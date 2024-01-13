@@ -4,14 +4,14 @@ description: Use .NET Core to build apps with Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
-ms.date: 01/12/2024
+ms.date: 01/14/2024
 ms.custom: contperf-fy20q4, freshness-fy22q2, content-freshness, devx-track-dotnet
-monikerRange: '<= azure-devops'
+monikerRange: '> tfs-2018 <= azure-devops'
 ---
 
 # Build, test, and deploy .NET Core apps
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+**Azure DevOps Services | Azure DevOps Server 2022 - Azure DevOps Server 2019**
 
 Use a pipeline to automatically build, test, and deploy your .NET Core projects. Learn how to do the following tasks:
 
@@ -94,7 +94,7 @@ Alternatively, you can use a [self-hosted agent](../agents/agents.md) to save ti
 
 ### Create your pipeline
 
-You can use the Yaml pipeline editor or the classic editor to create your pipeline.  To use the classic editor, select [Use the classic editor](#create-pipeline-with-the-classic-editor).
+You can use the Yaml pipeline editor or the classic editor to create your pipeline.  To use the classic editor, select **Use the classic editor**.
 
 #### [Yaml Pipeline Editor](#tab/yaml-editor)
 
@@ -133,7 +133,7 @@ You can create a pipeline by using the YAML pipeline editor or the classic edito
 1. Go to your project and select **Pipelines**.
 1. Select **Create pipeline** or **New pipeline** if creating the first pipeline for this project.
 
-At this point, you can continue creating your pipeline with the YAML editor or the classic editor.  To use the classic editor, select [Use the classic editor](#create-pipeline-with-the-classic-editor).
+At this point, you can continue creating your pipeline with the YAML editor or the classic editor.  To use the classic editor, select **Use the classic editor**.
 
 #### Create a pipeline with the YAML pipeline editor
 
@@ -322,8 +322,6 @@ steps:
 
 NuGet is a popular way to depend on code that you don't build. You can download NuGet packages and project-specific tools that are specified in the project file by running the `dotnet restore` command either through the **.NET Core CLI** task or directly in a script in your pipeline.  For more information, see [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
 
-::: moniker range=">= tfs-2019"
-
 You can download NuGet packages from Azure Artifacts, NuGet.org, or some other external or internal NuGet repository. The **.NET Core** task is especially useful to restore packages from authenticated NuGet feeds. If your feed is in the same project as your pipeline, you don't need to authenticate. 
 
 This pipeline uses an Azure Artifact feed for `dotnet restore` in the **NET Core CLI** task. 
@@ -359,8 +357,6 @@ steps:
     arguments: '--configuration $(buildConfiguration)'
   displayName: 'dotnet build $(buildConfiguration)'
 ```
-
-::: moniker-end
 
 
 The `dotnet restore` command uses the `NuGet.exe` packaged with the .NET Core SDK and can only restore packages specified in the .NET Core project `.csproj` files. 
@@ -698,7 +694,7 @@ To copy more files to the build directory before publishing, use [CopyFile@2](/a
 
 ::: moniker-end
 
-::: moniker range="> tfs-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 To publish the output of your .NET **build** to your pipeline, do the following tasks: 
 
