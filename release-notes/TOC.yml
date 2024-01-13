@@ -378,8 +378,6 @@
         items:
         - name: "2024"
           items:
-          - name: January 16
-            href: 2024/repos/sprint-233-update.md
           expanded: false  
         - name: "2023"
           items:
