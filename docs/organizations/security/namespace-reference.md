@@ -274,7 +274,7 @@ The following table describes the namespaces that manage object-level permission
       `Manage`   
    :::column-end:::
    :::column span="2":::
-      [Manages permissions for Delivery Plans](permissions.md#plan-permissions) to view, edit, delete, and manage delivery plans. You can manage these permissions through the [web portal for each plan](set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans).      
+      [Manages permissions for Delivery Plans](permissions.md) to view, edit, delete, and manage delivery plans. You can manage these permissions through the [web portal for each plan](set-permissions-access-work-tracking.md).      
       <br/>
       **ID:** `bed337f8-e5f3-4fb9-80da-81e17d06e7a8`
    :::column-end:::

@@ -253,7 +253,7 @@ For more information and examples of how to use PATs, see the following articles
 
 - [Git credential managers](../set-up-credential-managers.md)
 - [REST APIs](/rest/api/azure/devops)
-- [NuGet on a Mac](../../../artifacts/nuget/consume.md#mac-os)
+- [NuGet on a Mac](../../../artifacts/nuget/consume.md)
 - [Reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
 - [Get started with Azure DevOps CLI](../../../cli/index.md).
 

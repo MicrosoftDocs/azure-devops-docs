@@ -170,7 +170,7 @@ The following table provides a summary of how TFVC and Git support the main capa
    Scale
    :::column-end:::
    :::column span="2":::
-   You can work on small or very large scale projects using [local workspaces](decide-between-using-local-server-workspace.md#local). Support massive scale (millions of files per branch and large binary files) projects using [server workspaces](decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace).
+   You can work on small or very large scale projects using [local workspaces](decide-between-using-local-server-workspace.md#use-a-local-workspace). Support massive scale (millions of files per branch and large binary files) projects using [server workspaces](decide-between-using-local-server-workspace.md#use-a-server-workspace).
    :::column-end:::
    :::column span="2":::
    You can quickly begin small projects. You can scale up to very large projects, but you have to plan ahead to modularize your codebase. You can create multiple repositories in a project.
@@ -323,7 +323,7 @@ The following table summarizes the client supported features available depending
    Manage work on your dev machine
    :::column-end:::
    :::column span="2":::
-   [Pending Changes](develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work) and [My Work](develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work) pages in Visual Studio **Team Explorer**.
+   [Pending Changes](develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-work) and [My Work](develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-work) pages in Visual Studio **Team Explorer**.
    :::column-end:::
    :::column span="2":::
    Changes, commits, and branches pages.

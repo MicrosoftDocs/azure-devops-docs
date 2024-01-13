@@ -24,7 +24,7 @@ For more information about extensions, see the [developing](../extend/overview.m
 ::: moniker range="azure-devops"
 
 - To install extensions, you must be a member of the Project Collection Administrators group. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead or [look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
-- Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
+- Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md) for information on how to share private extensions.
 
 ::: moniker-end
 

@@ -193,9 +193,5 @@ To view feature progress based on linked requirements, you can view the Feature 
 - [Kanban quickstart](../boards/kanban-quickstart.md)
 - [Assign work to sprints](../sprints/assign-work-sprint.md)
 - [Organize your backlog](../backlogs/organize-backlog.md)
-- [Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)
-
-
-
-
+- [Limitations of multi-team Kanban board views](../boards/kanban-overview.md)
  

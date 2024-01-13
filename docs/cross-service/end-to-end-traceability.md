@@ -22,7 +22,7 @@ This article gives you an overview of how Azure DevOps enables and supports trac
 
 ## Traceability and linking 
 
-You can track the code changes, builds, and releases that are [linked to a work item](../boards/backlogs/add-link.md#link-work-items-to-builds.md) throughout the development lifecycle. This way, your team can see the audit trail of how the work was done or how a bug was fixed by looking at the changes in the code base.
+You can track the code changes, builds, and releases that are [linked to a work item](../boards/backlogs/add-link.md) throughout the development lifecycle. This way, your team can see the audit trail of how the work was done or how a bug was fixed by looking at the changes in the code base.
 
 The link types used for Git repositories&mdash;as illustrated in the following image&mdash;are *Build*, *Found in build*, *Integrated in build*, *Branch*, *Commit*, *Pull Request*, and *Integrated in release stage*.
 

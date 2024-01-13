@@ -45,13 +45,13 @@ Checklists are a feature of all Kanban boards, both product and portfolio backlo
 	- When **Bugs are managed with tasks**, they're available to add and track within a checklist. 
 	- When **Bugs are managed with requirements**, you can add tasks to bugs that are tracked on the board. Teams make this choice via Board settings, [**Working with bugs**](../../organizations/settings/show-bugs-on-backlog.md).
 - Marking any checklist item as "done" moves the work item **State** to done, closed, or completed.  
-- Teams can remove select checklist features by disabling them on the [**Annotations** tab of the Board settings](customize-cards.md#annotations).
+- Teams can remove select checklist features by disabling them on the [**Annotations** tab of the Board settings](customize-cards.md).
 - Tasks or other child items that you create from the Kanban board are automatically assigned to the sprint/iteration path of the parent work item under which you define them. 
 - Any work item type added to the backlog hierarchy is available to add using the checklist feature.  
 	To add work item types to track as checklists, add them to the next-lower hierarchical backlog. To learn how, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md) or [Process configuration XML element reference (On-premises XML process)](../../reference/xml/process-configuration-xml-element.md). 
 
 > [!TIP]    
-> If you find that you don't use this feature, you can disable it from the [common configurations dialog](customize-cards.md#annotations).  
+> If you find that you don't use this feature, you can disable it from the [common configurations dialog](customize-cards.md).  
 
 
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
@@ -157,7 +157,7 @@ To configure or change the layout of the Kanban board, see [Customize your board
 - [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Add, run, update manual tests](add-run-update-tests.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
-- [Use Kanban board controls](kanban-overview.md#use-kanban-board-controls.md)
+- [Use Kanban board controls](kanban-overview.md#use-kanban-board-controls)
 
 ### REST API resources
 To programmatically create work items, see the [REST API, Work Items reference](/rest/api/azure/devops/wit/work-items/create).
