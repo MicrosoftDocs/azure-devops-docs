@@ -94,7 +94,7 @@ Alternatively, you can use a [self-hosted agent](../agents/agents.md) to save ti
 
 You can use the Yaml pipeline editor or the classic editor to create your pipeline.  To use the classic editor, select **Use the classic editor**.
 
-#### [Yaml Pipeline Editor](#tab/yaml-editor)
+# [Yaml Pipeline Editor](#tab/yaml-editor)
 
 ::: moniker range=">=azure-devops"
 
@@ -130,12 +130,6 @@ You can create a pipeline by using the YAML pipeline editor or the classic edito
 
 1. Go to your project and select **Pipelines**.
 1. Select **Create pipeline** or **New pipeline** if creating the first pipeline for this project.
-
-At this point, you can continue creating your pipeline with the YAML editor or the classic editor.  To use the classic editor, select **Use the classic editor**.
-
-#### Create a pipeline with the YAML pipeline editor
-
-Use these steps to continue creating your YAML pipeline.
 
 ##### Select your source
 
@@ -186,7 +180,7 @@ To watch your pipeline in action, select the job in the **Jobs** section.
 
 ::: moniker-end
 
-#### [Classic pipeline Editor](#tab/classic-editor)
+# [Classic pipeline Editor](#tab/classic-editor)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -456,7 +450,7 @@ steps:
 
 ### Add a build task in the YAML pipeline editor
 
-#### [YAML pipeline editor](#tab/yaml-editor)
+# [YAML pipeline editor](#tab/yaml-editor)
 
 To add a build task using the YAML pipeline editor, do the following steps:
 
@@ -470,7 +464,7 @@ To add a build task using the YAML pipeline editor, do the following steps:
 
 ::: moniker-end
 
-#### [Classic pipeline editor](#tab/classic-editor)
+# [Classic pipeline editor](#tab/classic-editor)
 
 To add a build task using  the classic editor, do the following steps:
 
