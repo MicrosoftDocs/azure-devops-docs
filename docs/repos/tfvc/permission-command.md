@@ -240,7 +240,7 @@ The following example allows the `testers` group to change their local copies of
 c:\projects>tf permission /allow:PendChange /group:testers$/testproject
 ```
 
-The following example allows user `somealias` to make pending changes to their local copy of *$/testtproject/314.cs* in their workspace:
+The following example allows user `somealias` to make pending changes to their local copy of *$/testproject/314.cs* in their workspace:
 
 ```
 c:\projects>tf permission /allow:PendChange /user:somealias $/testproject/314.cs.
