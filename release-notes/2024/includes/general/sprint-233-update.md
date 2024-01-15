@@ -10,7 +10,7 @@ ms.topic: include
 
 We are thrilled to announce the introduction of support for custom CodeQL queries in Code scanning! This empowers developers to craft their own queries tailored to identify issues specific to their codebase. With this enhancement, you can create and publish packs containing custom queries, execute these queries in your pipelines, and thereby customize the detection of vulnerabilities that are pertinent to your organization.
 
-For more details on utilizing custom queries for code scanning in GHAzDO, refer to [Code scanning alerts for GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops)
+For more details on utilizing custom queries for code scanning in GHAzDO, refer to [Code scanning alerts for GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops&preserve-view=true)
 
 We value your input. If you have any questions or feedback, we encourage you to engage with our community at [Developer Community](https://developercommunity.visualstudio.com/home). 
 
@@ -22,4 +22,4 @@ Our Azure DevOps OAuth model has now been made a little more self-sufficient. Ev
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Select a geography.](../../media/233-general-01.png "Screenshot of Select a geography")
 
-Look for this new functionality in each of your Azure DevOps app pages that can be accessible through your [profile here](https://aex.dev.azure.com/me?mkt=en-US). Learn more about this new step in our [Azure DevOps OAuth guide](/azure/devops/integrate/get-started/authentication/azure-devops-oauth?view=azure-devops).
+Look for this new functionality in each of your Azure DevOps app pages that can be accessible through your [profile here](https://aex.dev.azure.com/me?mkt=en-US). Learn more about this new step in our [Azure DevOps OAuth guide](/azure/devops/integrate/get-started/authentication/azure-devops-oauth?view=azure-devops&preserve-view=true).
