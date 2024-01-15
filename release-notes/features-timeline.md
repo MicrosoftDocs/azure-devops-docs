@@ -382,9 +382,9 @@ As a first step, we'll focus on **checks**. Checks are the primary mechanism in 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/bypass-checks" data-raw-source="[Bypass approvals and checks](/azure/devops/release-notes/roadmap/2023/bypass-checks)">Bypass approvals and checks</a></td>
+         <td><a href="/azure/devops/release-notes/2023/sprint-230-update#bypass-approvals-and-checks" data-raw-source="[Bypass approvals and checks](/azure/devops/release-notes/2023/sprint-230-update#bypass-approvals-and-checks)">Bypass approvals and checks</a></td>
          <td>Pipelines</td>
-         <td>2023 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
