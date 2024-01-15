@@ -1,16 +1,16 @@
 ---
-title: Rerun single stage
+title: Deferred approvals
 author: silviuandrica
 ms.author: sandrica
 ms.date: 11/8/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Rerun single stage
+description: Deferred approvals
 hide_comments: true 
 ---
 
-# Rerun single stage
+# Deferred approvals
 
 In YAML pipelines, you can rerun a successful stage, but it triggers all stages that depend on it to rerun as well.
 One use case for rerunning a stage is to roll back to a previous version of your system.
