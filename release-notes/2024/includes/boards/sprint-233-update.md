@@ -38,6 +38,6 @@ For example, when any child Task is set to Active, make the parent User Story ac
 > [!div class="mx-imgBorder"]
 > ![Gif to demo closing user story.](../../media/233-boards-01.gif "gif to demo closing user story")
 
-You can learn more about this feature by reviewing [the documentation](/azure/devops/boards/backlogs/automate-work-item-state-transitions?view=azure-devops) and [this blog post](https://devblogs.microsoft.com/devops/team-backlog-automation-rules-private-preview/).
+You can learn more about this feature by reviewing [the documentation](/azure/devops/boards/backlogs/automate-work-item-state-transitions?view=azure-devops&preserve-view=true) and [this blog post](https://devblogs.microsoft.com/devops/team-backlog-automation-rules-private-preview/).
 
 The features was prioritized based on [this Developer Community suggestion ticket](https://developercommunity.visualstudio.com/t/update-automatically-user-story-state-according-to/376465).
