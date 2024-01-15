@@ -2,7 +2,7 @@
 title: Deferred approvals
 author: silviuandrica
 ms.author: sandrica
-ms.date: 11/8/2023
+ms.date: 01/15/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
