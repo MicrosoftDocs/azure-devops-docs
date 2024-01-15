@@ -375,16 +375,22 @@ As a first step, we'll focus on **checks**. Checks are the primary mechanism in 
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q2</td>
          <td>Future</td>
       </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-sequencing" data-raw-source="[Sequencing approvals and other checks](/azure/devops/release-notes/roadmap/2022/checks-sequencing)">Sequencing approvals and other checks</a></td>
-         <td>Pipelines</td>
-         <td>2023 Q4</td>
-         <td>Future</td>
-      </tr>
-      <tr>
+     <tr>
          <td><a href="/azure/devops/release-notes/2023/sprint-230-update#bypass-approvals-and-checks" data-raw-source="[Bypass approvals and checks](/azure/devops/release-notes/2023/sprint-230-update#bypass-approvals-and-checks)">Bypass approvals and checks</a></td>
          <td>Pipelines</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-sequencing" data-raw-source="[Sequencing approvals and other checks](/azure/devops/release-notes/roadmap/2022/checks-sequencing)">Sequencing approvals and other checks</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/deferred-approvals" data-raw-source="[Deferred approvals](/azure/devops/release-notes/roadmap/2024/deferred-approvals)">Deferred approvals</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
