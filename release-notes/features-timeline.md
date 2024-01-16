@@ -494,7 +494,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
     </thead>
     <tbody>       
       <tr>
-        <td rowspan="22"><strong>2024 Q1</strong></td>
+        <td rowspan="20"><strong>2024 Q1</strong></td>
          <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview" data-raw-source="[Security Overview](/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview)">Security Overview</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -590,16 +590,17 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/generate-code-coverage-results" data-raw-source="[Generate code coverage results in source /folder level view](/azure/devops/release-notes/roadmap/2023/generate-code-coverage-results)">Generate code coverage results in source /folder level view</a></td>
+      <td rowspan="2"><strong>2024 Q2</strong></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/reduce-time-to-filter" data-raw-source="[Reduce time to filter test plans and test suites in copy and import operations](/azure/devops/release-notes/roadmap/2022/reduce-time-to-filter)">Reduce time to filter test plans and test suites in copy and import operations</a></td>
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/improvements-to-code-coverage" data-raw-source="[Improvements to code coverage user experience in Pipeline results page](/azure/devops/release-notes/roadmap/2023/improvements-to-code-coverage)">Improvements to code coverage user experience in Pipeline results page</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/code-coverage-policy" data-raw-source="[Code coverage policy at a folder level](/azure/devops/release-notes/roadmap/2022/code-coverage-policy)">Code coverage policy at a folder level</a></td>
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
-      <td rowspan="31"><strong>Future</strong></td>
+      <td rowspan="29"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -720,17 +721,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/code-coverage-policy" data-raw-source="[Code coverage policy at a folder level](/azure/devops/release-notes/roadmap/2022/code-coverage-policy)">Code coverage policy at a folder level</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/improved-visibility" data-raw-source="[Improved co-relation between test run and test case versions](/azure/devops/release-notes/roadmap/2022/improved-visibility)">Improved co-relation between test run and test case versions</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/reduce-time-to-filter" data-raw-source="[Reduce time to filter test plans and test suites in copy and import operations](/azure/devops/release-notes/roadmap/2022/reduce-time-to-filter)">Reduce time to filter test plans and test suites in copy and import operations</a></td>
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
@@ -745,11 +736,6 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/export-test-plan" data-raw-source="[Export Test Plan in XLSX format](/azure/devops/release-notes/roadmap/2022/export-test-plan)">Export Test Plan in XLSX format</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/alphabetical-sort" data-raw-source="[Sort test suites in alphabetical order](/azure/devops/release-notes/roadmap/2022/alphabetical-sort)">Sort test suites in alphabetical order</a></td>
         <td>Test Plans</td>
         <td>Future</td>
