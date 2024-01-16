@@ -6,7 +6,7 @@ ms.custom: devx-track-azurecli
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 01/10/2023
+ms.date: 01/16/2024
 monikerRange: azure-devops
 ---
 
@@ -302,6 +302,9 @@ Here's the flow of operations for an Azure Pipelines Virtual Machine Scale Set A
 1. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with the latest version of configuration script. The configuration scripts can be found at URLs with the following formats:
    - Linux: `https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/<script_version>/enableagent.sh`, for example, [version 15](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/15/enableagent.sh)
    - Windows: `https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/<script_version>/enableagent.ps1`, for example, [version 17](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/17/enableagent.ps1)
+
+   >[!NOTE]
+   > To improve performance, by default the configuration scripts call [Add-MpPreference](/powershell/module/defender/add-mppreference) with an `ExclusionPath` containing `C:\` and `D:\`, which disables Windows Defender scheduled and real-time scanning for files in these folders. To change the default behavior, set an environment variable named `ELASTIC_POOLS_SKIP_DEFENDER_EXCLUSION` to `true`.
 
 1. The configuration script creates a local user named `AzDevOps` if the operating system is Windows Server or Linux. For Windows 10 Client OS, the agent runs as LocalSystem. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
 
