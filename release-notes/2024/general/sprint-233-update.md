@@ -3,7 +3,7 @@ title: Azure DevOps release notes - Azure DevOps Sprint 233 update
 description: See the Sprint 233 feature updates for Azure DevOps, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 1/16/2024
+ms.date: 1/17/2024
 ---
 
 # Azure DevOps - Sprint 233 Update
