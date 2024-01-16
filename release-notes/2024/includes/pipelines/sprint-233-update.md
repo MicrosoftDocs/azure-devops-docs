@@ -20,20 +20,20 @@ See earlier announcements related to deprecated tasks:
 
 ### Microsoft hosted agents use PowerShell 7.4
 
-All [Microsoft hosted images](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software) will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS from January 28. See [What's New in PowerShell 7.4](https://learn.microsoft.com/powershell/scripting/whats-new/what-s-new-in-powershell-74?view=powershell-7.4) and [PowerShell 7.4 General Availability](https://devblogs.microsoft.com/powershell/powershell-7-4-general-availability/).
+All [Microsoft hosted images](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true) will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS from January 28. See [What's New in PowerShell 7.4](/powershell/scripting/whats-new/what-s-new-in-powershell-74?view=powershell-7.4&preserve-view=true) and [PowerShell 7.4 General Availability](https://devblogs.microsoft.com/powershell/powershell-7-4-general-availability/).
 
 Please take note of breaking changes and update your scripts accordingly:
 
-- [Breaking changes](https://learn.microsoft.com/powershell/scripting/whats-new/what-s-new-in-powershell-74?view=powershell-7.4#breaking-changes) between PowerShell 7.3 & 7.4
-- [Breaking changes](https://learn.microsoft.com/powershell/scripting/whats-new/what-s-new-in-powershell-73?view=powershell-7.4#breaking-changes-and-improvements) between PowerShell 7.2 & 7.3
+- [Breaking changes](/powershell/scripting/whats-new/what-s-new-in-powershell-74?view=powershell-7.4#breaking-changes&preserve-view=true) between PowerShell 7.3 & 7.4
+- [Breaking changes](/powershell/scripting/whats-new/what-s-new-in-powershell-73?view=powershell-7.4#breaking-changes-and-improvements&preserve-view=true) between PowerShell 7.2 & 7.3
 - Updated argument parsing behavior controlled via
-[`$PSNativeCommandArgumentPassing`](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_preference_variables?view=powershell-7.4#psnativecommandargumentpassing)
+[`$PSNativeCommandArgumentPassing`](/powershell/module/microsoft.powershell.core/about/about_preference_variables?view=powershell-7.4#psnativecommandargumentpassing&preserve-view=true)
 
 ### New Azure Service Connections that use a secret have updated expiration dates
 
-Azure Service Connections where Azure DevOps creates the [secret](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-a-service-principal-secret) will have a secret expiration of 3 months instead of 2 years.
+Azure Service Connections where Azure DevOps creates the [secret](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-a-service-principal-secret&preserve-view=true) will have a secret expiration of 3 months instead of 2 years.
 
-To eliminate the need to rotate secrets, [convert](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#convert-an-existing-arm-service-connection-to-use-workload-identity-federation) your service connection to use [Workload identity federation](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-workload-identity-federation) instead.
+To eliminate the need to rotate secrets, [convert](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#convert-an-existing-arm-service-connection-to-use-workload-identity-federation&preserve-view=true) your service connection to use [Workload identity federation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-workload-identity-federation&preserve-view=true) instead.
 
 Customers that create many Azure Service Connections can use the below script to batch convert Azure Service Connections to Workload identity federation:
 
