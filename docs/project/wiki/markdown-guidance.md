@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 01/05/2024
+ms.date: 01/16/2024
 ---
 
 # Use Markdown in Azure DevOps
@@ -33,6 +33,7 @@ Not all Markdown syntax is supported across all features in Azure DevOps. The fo
 |[Horizontal rules](#horizontal-rules)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
 |[Emphasis](#emphasis-bold-italics-strikethrough)    | [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
 |[Code highlighting](#code-highlighting)   | [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)        |
+|[Suggest change](#suggest-change)   | [pull request](../../repos/git/pull-requests.md)        |
 |[Tables](#tables)    | [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)       |
 |[Lists](#lists)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)         |
 |[Links](#links)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)         |
@@ -263,6 +264,25 @@ Console.WriteLine("Hello, World!");
 ``` csharp
 Console.WriteLine("Hello, World!");
 ```
+
+## Suggest change
+
+In pull requests, you can use comments to suggest replacement text for one or more lines in a file. 
+Users can easily apply the suggested change by selecting **Apply Change**. This action results in committing the change to the pull request.
+
+Code highlighting entered within the Markdown widget renders code in diff format with line prefixed by '-' and '+'.
+
+**Example:**
+
+<pre>
+```suggestion
+  for i in range(A, B+100, C):
+```
+</pre>
+
+:::image type="content" source="media/markdown-guidance/suggestion-snapshot.png" alt-text="Screenshot showing example of suggested changed in a pull request."::: 
+
+For more information, see [Suggest changes in comments](../../repos/git/review-pull-requests.md?tabs=browser#suggest-changes-in-comments).
 
 ## Tables
 
