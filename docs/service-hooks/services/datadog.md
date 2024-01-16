@@ -64,6 +64,8 @@ A: Yes. For more information, see [Create a service hooks subscription programma
 - **US:** `https://app.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
 - **EU:** `https://app.datadoghq.eu/intake/webhook/azuredevops?api_key=<API_KEY>`
 - **US3:** `https://us3.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
+- **US5:** `https://us5.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
+- **AP1:** `https://ap1.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
 - **Gov:** `https://app.ddog-gov.com/intake/webhook/azuredevops?api_key=<API_KEY>`
 
 ### Q: How can I use these events in Datadog?
