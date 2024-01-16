@@ -5,7 +5,7 @@ ms.date: 1/16/2024
 ms.topic: include
 ---
 
-### Improved AB# validation (GA)
+### GitHub Integration - Improved AB# validation is generally available
 
 A few sprints ago we announced the preview for [improved AB# validation](/azure/devops/release-notes/2023/sprint-230-update#github-integration---improved-ab-validation-private-preview&preserve-view=true) by the Azure Boards App in GitHub. Where we've enhanced the app to better notify users about the validity of work item links, helping them spot and fix any issues before merging a Pull Request.
 
@@ -18,7 +18,7 @@ After several weeks of testing and feedback, this feature is now available to al
 This is the first feature of several that we are making to improve the current Azure Boards + GitHub integration. Be sure to check out the other [Azure Boards + GitHub integration features](/azure/devops/release-notes/features-timeline#improved-boards--github-integration&preserve-view=true)  we have planned on the public roadmap.
 
 
-### Team Automation Rules (GA)
+### Team Automation Rules is generally available
 
 We are happy to announce the release of this feature to all customers of Azure DevOps Service. The feature will be rolled out over > > several weeks and should reach all organizations by the end of January.
 
