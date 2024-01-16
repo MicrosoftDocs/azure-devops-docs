@@ -304,7 +304,7 @@ Here's the flow of operations for an Azure Pipelines Virtual Machine Scale Set A
    - Windows: `https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/<script_version>/enableagent.ps1`, for example, [version 17](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/17/enableagent.ps1)
 
    >[!NOTE]
-   > To improve performance, by default the configuration scripts call [Add-MpPreference](/powershell/module/defender/add-mppreference) with an `ExclusionPath` containing `C:\` and `D:\`, which disables Windows Defender scheduled and real-time scanning for files in these folders. To change the default behavior, set an environment variable named `ELASTIC_POOLS_SKIP_DEFENDER_EXCLUSION` to `true`.
+   > To improve performance, the configuration scripts call [Add-MpPreference](/powershell/module/defender/add-mppreference) with an `ExclusionPath` containing `C:\` and `D:\`, which disables Windows Defender scheduled and real-time scanning for files in these folders. To change the default behavior, set an environment variable named `ELASTIC_POOLS_SKIP_DEFENDER_EXCLUSION` to `true`.
 
 1. The configuration script creates a local user named `AzDevOps` if the operating system is Windows Server or Linux. For Windows 10 Client OS, the agent runs as LocalSystem. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
 
