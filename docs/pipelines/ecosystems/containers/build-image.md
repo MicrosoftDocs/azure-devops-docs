@@ -60,7 +60,7 @@ This quickstart shows how to build a container image for app deployment using Az
 
 For more information about building Docker images, see the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) used by this sample application. You can also directly invoke Docker commands using a [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2).
 
-The container images are built and stored on the agent.  You can push your image to Coogle Container Registry, Docker Hub, or Azure Container Registry.  For more information, see [Push an image to Docker Hub or Google Container Registry](push-image.md) or [Push an image to Azure Container Registry](acr-template.md).
+The container images are built and stored on the agent.  You can push your image to Google Container Registry, Docker Hub, or Azure Container Registry.  For more information, see [Push an image to Docker Hub or Google Container Registry](push-image.md) or [Push an image to Azure Container Registry](acr-template.md).
 
 
 ## Clean up resources
