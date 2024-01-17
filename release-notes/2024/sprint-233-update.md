@@ -2,14 +2,12 @@
 title: General availability of Team automation rules and improved AB#ID validation
 author: ckanyika
 ms.author: ckanyika
-ms.date: 1/17/2024
+ms.date: 1/18/2024
 description: General availability of Team automation rules and improved AB# validation
 ---
 # General availability of Team automation rules and improved AB# validation
 
 We're excited to announce that improved AB# validation by the Azure Boards App in GitHub and Team Automation rules are generally available! We improved AB# validation so that you can get notified when a link to a work item is not valid. In Team Automation Rules, you can now configure each backlog level to automate the opening and closing/resolving of work items based on the state(s) of the child item.
-
-With this update, we also introduce support for custom CodeQL queries in Code scanning! This will let you craft your own queries tailored to identify issues specific to your codebase.
 
 Check out the release notes for details.
 
