@@ -5,19 +5,17 @@ ms.date: 1/17/2024
 ms.topic: include
 ---
 
-### Deprecated task warnings include replacement suggestions
+### Update deprecated tasks before January 31
 
-Deprecated tasks show warnings that include a suggested alternative:
+We are retiring deprecated tasks on January 31, 2024. To help you identify the pipelines that are using these tasks, we have included a warning message with a suggested alternative. We encourage you to update your pipelines to use a newer task version or an alternative before January 31, 2024.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of task-specific deprecation warnings.](../../media/233-pipelines-01.png "Screenshot of task-specific deprecation warnings")
 
-Update your pipelines to use a newer task version or an alternative before January 31, 2024.
-
 See earlier announcements related to deprecated tasks:
 
-- [Announcing retirement of deprecated tasks](/azure/devops/release-notes/2023/pipelines/sprint-230-update#announcing-retirement-of-deprecated-tasks&preserve-view=true)
-- [Announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks](/azure/devops/release-notes/2023/artifacts/sprint-229-update#deprecation-announcement-for-nuget-restore-v1-and-nuget-installer-v0-pipeline-tasks&preserve-view=true)
+- [Announcing retirement of deprecated tasks](/azure/devops/release-notes/2023/pipelines/sprint-230-update?branch=pr-en-us-6451#announcing-retirement-of-deprecated-tasks)
+- [Announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks](/azure/devops/release-notes/2023/artifacts/sprint-229-update?branch=pr-en-us-6451#deprecation-announcement-for-nuget-restore-v1-and-nuget-installer-v0-pipeline-tasks)
 
 ### Microsoft hosted agents use PowerShell 7.4
 
