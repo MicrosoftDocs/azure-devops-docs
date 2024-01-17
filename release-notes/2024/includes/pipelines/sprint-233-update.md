@@ -25,34 +25,33 @@ All [Microsoft hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-d
 
 Take note of breaking changes and update your scripts accordingly:
 
-- [Breaking changes](/powershell/scripting/whats-new/what-s-new-in-powershell-74?view=powershell-7.4#breaking-changes&preserve-view=true) between PowerShell 7.3 & 7.4
-- [Breaking changes](/powershell/scripting/whats-new/what-s-new-in-powershell-73?view=powershell-7.4#breaking-changes-and-improvements&preserve-view=true) between PowerShell 7.2 & 7.3
+- [Breaking changes](/powershell/scripting/whats-new/what-s-new-in-powershell-74?view=powershell-7.4#breaking-changes&preserve-view=true) between PowerShell 7.3 & 7.4 LTS
+- [Breaking changes](/powershell/scripting/whats-new/what-s-new-in-powershell-73?view=powershell-7.4#breaking-changes-and-improvements&preserve-view=true) between PowerShell 7.2 LTS & 7.3
 - Updated argument parsing behavior controlled via
 [`$PSNativeCommandArgumentPassing`](/powershell/module/microsoft.powershell.core/about/about_preference_variables?view=powershell-7.4#psnativecommandargumentpassing&preserve-view=true)
 
-### New Azure Service Connections that use a secret have updated expiration dates
+### New Azure service connection secrets expire in 3 months
 
-Azure Service Connections where Azure DevOps creates the [secret](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-a-service-principal-secret) will have a secret expiration of three months instead of two years.
+Azure Service Connections where Azure DevOps creates the [secret](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-a-service-principal-secret&preserve-view=true) will have a secret expiration of three months instead of two years.
 
-To eliminate the need to rotate secrets, [convert](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#convert-an-existing-arm-service-connection-to-use-workload-identity-federation&preserve-view=true) your service connection to use [Workload identity federation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-workload-identity-federation&preserve-view=true) instead.
+#### Remove the need to rotate secrets by converting service connections to use Workload identity federation
+To eliminate the need to rotate secrets, [convert](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#convert-an-existing-arm-service-connection-to-use-workload-identity-federation&preserve-view=true) your service connection to use [Workload identity federation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-workload-identity-federation&preserve-view=true) instead. You can use the below sample script to quickly convert multiple Azure service connections to Workload identity federation:
 
-Use the below script to batch convert Azure Service Connections to Workload identity federation:
-
-```pwsh
+```powershell
 #!/usr/bin/env pwsh
-<#
-.SYNOPSIS
-    Convert a multiple Azure Resource Manager service connection(s) to use Workload identity federation
+<# 
+.SYNOPSIS 
+    Convert multiple Azure Resource Manager service connection(s) to use Workload identity federation
 
 .LINK
     https://aka.ms/azdo-rm-workload-identity-conversion
 
 .EXAMPLE
     ./convert_azurerm_service_connection_to_oidc_simple.ps1 -Project <project> -OrganizationUrl https://dev.azure.com/<organization>
-#>
+#> 
 #Requires -Version 7.3
 
-param (
+param ( 
     [parameter(Mandatory=$true,HelpMessage="Name of the Azure DevOps Project")]
     [string]
     [ValidateNotNullOrEmpty()]
@@ -62,8 +61,7 @@ param (
     [uri]
     [ValidateNotNullOrEmpty()]
     $OrganizationUrl
-)
-. (Join-Path $PSScriptRoot .. functions.ps1)
+) 
 $apiVersion = "7.1"
 
 #-----------------------------------------------------------
@@ -98,10 +96,10 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
         Write-Host "$($choices[$decision].HelpMessage)"
     } elseif ($decision -eq 1) {
         Write-Host "$($PSStyle.Formatting.Warning)$($choices[$decision].HelpMessage)$($PSStyle.Reset)"
-        continue
+        continue 
     } elseif ($decision -ge 2) {
         Write-Host "$($PSStyle.Formatting.Warning)$($choices[$decision].HelpMessage)$($PSStyle.Reset)"
-        exit
+        exit 
     }
 
     # Prepare request body
@@ -113,7 +111,7 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
     # Convert service connection
     az rest -u $putApiUrl -m PUT -b $serviceEndpointRequest --headers content-type=application/json --resource 499b84ac-1321-427f-aa17-267ca6975798 -o json `
             | ConvertFrom-Json | Set-Variable updatedServiceEndpoint
-   
+    
     $updatedServiceEndpoint | ConvertTo-Json -Depth 4 | Write-Debug
     if (!$updatedServiceEndpoint) {
         Write-Debug "Empty response"
@@ -122,4 +120,12 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
     }
     Write-Host "Successfully converted service connection '$($serviceEndpoint.name)'"
 }
+```
+
+This script will list service connections in a given project that use a secret, and prompt to convert:
+
+```powershell
+./convert_azurerm_service_connection_to_oidc_simple.ps1 -Project PipelineSamples -OrganizationUrl https://dev.azure.com/contoso  
+Convert service connection 'created-with-secret'?
+[C] Convert  [S] Skip  [E] Exit  [?] Help (default is "C"):
 ```
