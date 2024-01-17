@@ -1,18 +1,15 @@
 ---
-title: GitHub Integration - Improved AB# validation is generally available 
+title: General availability of Team automation rules and improved AB#ID validation
 author: ckanyika
 ms.author: ckanyika
 ms.date: 1/17/2024
-description: GitHub Integration - Improved AB# validation is generally available
+description: General availability of Team automation rules and improved AB#ID validation
 ---
-# GitHub Integration - Improved AB# validation is generally available
+# General availability of Team automation rules and improved AB#ID validation
 
-We are excited to announce that improved AB# validation by the Azure Boards App in GithHub and Team Automation rules are both generally available! 
+We're excited to announce that improved AB# validation by the Azure Boards App in GitHub and Team Automation rules are generally available! We improved AB# validation so that you can get notified when a link to a work item is not valid. In Team Automation Rules, you can now configure each backlog level to automate the opening and closing/resolving of work items based on the state(s) of the child item.
 
-In Pipelines, we highlight the upcoming retirement of deprecated tasks. Update your pipelines to use a newer task version or an alternative before January 31, 2024. 
-
-With this update, we also introduce support for custom CodeQL queries in Code scanning! This enables you to craft your own queries tailored to identify issues specific to your codebase.
-
+With this update, we also introduce support for custom CodeQL queries in Code scanning! This will let you craft your own queries tailored to identify issues specific to your codebase.
 
 Check out the release notes for details.
 
