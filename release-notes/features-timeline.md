@@ -43,13 +43,13 @@ New capabilities we expect to deliver in the upcoming semester include:
  
 ### Minimizing the risks associated with credential theft
 
-Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. These mechanisms are not created equally from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure. To minimize the risks of credential theft, we will focus our efforts in the upcoming quarters in the following areas: 
+Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Microsoft Entra ID (formerly Azure Active Directory) access tokens. These mechanisms are not created equally from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure. To minimize the risks of credential theft, we will focus our efforts in the upcoming quarters in the following areas: 
 
 * Enable administrators to improve authentication security through control plane policies. 
 
 * Reducing the need for PATs and other stealable secrets by adding support for more secure alternatives. 
 
-* Deepening Azure DevOps' integration with Azure Active Directory to better support its various security features. 
+* Deepening Azure DevOps' integration with Microsoft Entra ID to better support its various security features. 
 
 * Avoiding the need to store production secrets in Azure Pipelines service connections. 
 
