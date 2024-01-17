@@ -1,14 +1,18 @@
 ---
-title: TBD 
+title: GitHub Integration - Improved AB# validation is generally available 
 author: ckanyika
 ms.author: ckanyika
 ms.date: 1/17/2024
-description: TBD
+description: GitHub Integration - Improved AB# validation is generally available
 ---
-# TBD
+# GitHub Integration - Improved AB# validation is generally available
 
-With this update, we have included extension updates and performance improvements. With an existing ServiceNow integration, we've updated the app to support the Tokyo version of ServiceNow. 
-We've also made improvements to extension settings to help you manage your installed extensions.
+We are excited to announce that improved AB# validation by the Azure Boards App in GithHub and Team Automation rules are both generally available! 
+
+In Pipelines, we highlight the upcoming retirement of deprecated tasks. Update your pipelines to use a newer task version or an alternative before January 31, 2024. 
+
+With this update, we also introduce support for custom CodeQL queries in Code scanning! This enables you to craft your own queries tailored to identify issues specific to your codebase.
+
 
 Check out the release notes for details.
 
