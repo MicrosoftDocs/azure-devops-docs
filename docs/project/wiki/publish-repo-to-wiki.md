@@ -341,4 +341,4 @@ If you no longer want a repository to be published as a wiki, you can choose to 
 - [Follow a wiki page and get notifications](follow-notifications-wiki-pages.md)
 - [Provisioned vs. published wiki](provisioned-vs-published-wiki.md)
 - [Update wiki offline](wiki-update-offline.md)
-- [Wiki Markdown guidance](markdown-guidance.md#wiki-markdown-guidance)
+- [Wiki Markdown guidance](markdown-guidance.md)

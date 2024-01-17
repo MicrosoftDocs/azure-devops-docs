@@ -5,11 +5,10 @@ description: Learn how to set permissions to grant or secure access to README fi
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-ms.date: 11/21/2023
+ms.date: 01/05/2024
 monikerRange: '>= tfs-2018'
 ---
 
@@ -18,8 +17,6 @@ monikerRange: '>= tfs-2018'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn about managing permissions for your wiki. By default, all members of the Contributors group can edit Wiki pages.
-
-<a id="manage-wiki-permissions"></a>
 
 ## Manage wiki permissions
 
@@ -34,29 +31,24 @@ For definitions of each repository permission, see [Git repository permissions](
 
 :::image type="content" source="media/wiki/security-dialog.png" alt-text="Screenshot of Wiki security dialog.":::
 
-## Don't have access to create a page?
-
-If you don't have access to create a wiki page, contact an administrator, who can grant you adequate permission on the underlying Git repository of the wiki.
+If you don't have access to create a wiki page, contact an Administrator, who can grant you adequate permission on the underlying Git repository of the wiki.
 
 ## Stakeholder wiki access
 
-### Private projects
+**Private projects**
 
 Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read [**provisioned**](provisioned-vs-published-wiki.md) wiki pages and view revisions, but they can't edit. For example, Stakeholders can't create, edit, reorder, or revert changes to project wiki pages. These permissions can't be changed.
 
 Stakeholders have zero access to read or edit [**published code**](provisioned-vs-published-wiki.md) wiki pages in private projects. For more information, see the [Stakeholder access quick reference for project and code wikis](../../organizations/security/stakeholder-access.md#public-versus-private-feature-access).
 
-### Public projects
+**Public projects**
 
 Stakeholders have full access to wikis in public projects.
 
 For more information about Stakeholder access, see [About access levels, Stakeholder access, Public versus private feature access](../../organizations/security/stakeholder-access.md#public-versus-private-feature-access).
 
-## FAQ
-
-### Q: Is it possible to grant permissions on a per-page basis?
-
-**A:** No, permissions to access the wiki are made for all pages and not individual pages.
+> [!NOTE]
+> You can only set permissions to access all wiki pages, not on a per-page basis.
 
 ## Related articles
 

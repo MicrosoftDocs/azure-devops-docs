@@ -137,7 +137,7 @@ Choose **Correct this now** to open the Settings dialog. To map the workflow sta
 
 ## Customize your Kanban board checklist items
 
-Checklists are a great way to create work items that are automatically linked with a parent-child link to another work item on a Kanban board. You can customize the work item types that you can add as a checklist by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For more information, see [Customize cards](../boards/customize-cards.md#annotations).
+Checklists are a great way to create work items that are automatically linked with a parent-child link to another work item on a Kanban board. You can customize the work item types that you can add as a checklist by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For more information, see [Customize cards](../boards/customize-cards.md).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -186,7 +186,7 @@ To learn more about checklists, see the following articles:
 
 ## Add other work item types to your Kanban board checklist
 
-If you added work item types to the Task Category as described in [Add custom work item types to your Taskboard](#taskboard-types) later in this article, you can choose if these types appear within a checklist on your product Kanban board. You make this choice by opening **Board Settings**, choose **Annotations**, and enable the work item types you want to appear on the board. You can enable up to five annotations. For details see [Customize cards](../boards/customize-cards.md#annotations). 
+If you added work item types to the Task Category as described in [Add custom work item types to your Taskboard](#taskboard-types) later in this article, you can choose if these types appear within a checklist on your product Kanban board. You make this choice by opening **Board Settings**, choose **Annotations**, and enable the work item types you want to appear on the board. You can enable up to five annotations. For more information, see [Customize cards](../boards/customize-cards.md). 
 
 For example, here  we've chosen to track bugs along with tasks, and we enable Issue and Ticket and Task and Bug. To learn more about checklists, see [Add tasks or child items as checklists](../boards/add-task-checklists.md) and [Add, run, and update inline tests](../boards/add-run-update-tests.md). 
 
@@ -325,7 +325,7 @@ The following settings can influence the type and number of work items that appe
 	> [!div class="mx-imgBorder"]  
 	> ![Boards, Show more items](media/setup-backlog/show-more-items.png) 
 
-- If you have nested work items that belong to the same category, only leaf nodes may appear on the Kanban board (for TFS 2018.1 and earlier versions). For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. For more information, see [Fix reordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes).
+- If you have nested work items that belong to the same category, only leaf nodes may appear on the Kanban board (for TFS 2018.1 and earlier versions). For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. For more information, see [Fix reordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md).
 
 - If you've turned off the **In Progress** view, then those work items where work has started won't appear in the backlog list.  
 
@@ -361,4 +361,5 @@ The following settings can influence the type and number of work items that appe
 - [Create your backlog](create-your-backlog.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)
-- [Workflow states & state categories](../work-items/workflow-and-state-categories.md)  
+- [Workflow states & state categories](../work-items/workflow-and-state-categories.md) 
+- [Automate work item state transitions](../work-items/automate-work-item-state-transitions.md)

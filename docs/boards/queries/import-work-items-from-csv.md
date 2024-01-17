@@ -225,7 +225,7 @@ A: No, the CSV import doesn't support the following work item types:
 - Test Suite
 - Shared Parameter
 
-For more information, see [Bulk import or export test cases](../../test/copy-clone-test-items.md#bulk-import-or-export-test-case).
+For more information, see [Bulk import or export test cases](../../test/copy-clone-test-items.md).
 
 ::: moniker-end 
 

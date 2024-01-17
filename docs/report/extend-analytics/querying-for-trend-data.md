@@ -33,7 +33,7 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]
-> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+> The examples shown in this document are based on an Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
 
 
 > [!div class="tabbedCodeSnippets"]

@@ -5,7 +5,7 @@ metadata:
   titleSuffix: Azure Test Plans
   ms.service: azure-devops-test-plans
   ms.custom: UpdateFrequency3
-  ms.author: ravikum
+  ms.author: rbatra
   author: raviLiftr
   ms.topic: FAQ
   monikerRange: '<= azure-devops'
@@ -36,13 +36,13 @@ sections:
       - question: What are query-based test suites?
         answer: |
             <a name="query-based-suites"></a> 
-            Query-based test suites use a query to group together test cases that have a particular characteristic, for example, all tests that have Priority=1. The test suite automatically includes every test case that is returned by the query.
+            Query-based test suites use a query to group together test cases that have a particular characteristic, for example, all tests that have Priority=1. The test suite automatically includes every test case returned by the query.
 
             <a name="copyclonetce"></a>
 
       - question: Can I copy or clone test plans and test suites?
         answer: |
-            **Yes**. Depending on the action you want to take, you can copy or clone test plans and import or clone test suites. To learn how, see [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).  
+            **Yes**. Depending on your desired action, you can copy or clone test plans and import or clone test suites. To learn how, see [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).  
 
             > [!NOTE]
             > - You can export a maximum of 75 test suites in a single operation. The email supports up to 1 MB of data.
@@ -50,7 +50,7 @@ sections:
 
       - question: Can I just view test plan data I export, or copy it to a Word document?
         answer: |
-            *Yes** Choose **Print** in the **Export** dialog box, then choose **Cancel** in the **Print** dialog box.
+            **Yes**. Select **Print** in the **Export** dialog box, then choose **Cancel** in the **Print** dialog box.
             This option displays the data in the report.
             Select all the text, then copy and paste it into a Word document, if you want.
             All the formatting in the report is retained.
@@ -76,7 +76,7 @@ sections:
 
       - question: Can I copy test cases from one project to another?
         answer: |
-            **Yes**. See [Copy test cases](copy-clone-test-items.md#copy-test-cases). For Azure DevOps Server 2020 and later versions, you can copy test cases from within a project or another project to a test suite, or you can use the [Grid view to copy and paste test cases](copy-clone-test-items.md#copy-paste) from one suite to another. Optionally, you can [bulk import and export test cases](copy-clone-test-items.md#bulk-import-export).
+            **Yes**. See [Copy test cases](copy-clone-test-items.md#copy-test-cases). For Azure DevOps Server 2020 and later versions, you can copy test cases from a project to a test suite, or you can use the [Grid view to copy and paste test cases](copy-clone-test-items.md#copy-paste) from one suite to another. Optionally, you can [bulk import and export test cases](copy-clone-test-items.md#bulk-import-export).
 
       - question: Can I add an extra line to a test step?
         answer: |
@@ -124,7 +124,7 @@ sections:
 
       - question: How is data shown in the charts for test cases that are in multiple test suites?
         answer: |
-            For test case charts, if a test case has been added to multiple test suites in a plan then it's only counted once. 
+            For test case charts, if a test case gets added to multiple test suites in a plan, then the test only gets counted once. 
             For test result charts, each instance of a test that is run is counted for each of the test suites separately.
 
       - question: Who can create charts?
@@ -191,7 +191,7 @@ sections:
 
       - question: How do I play the video recordings I created with the extension?
         answer: |
-            YOu can view the video recordings created by the Test & Feedback extension in [Google Chrome](https://www.google.com/chrome/) browser and in the [VLC Video Player](https://www.videolan.org/vlc/download-windows.html).
+            You can view the video recordings created by the Test & Feedback extension in [Google Chrome](https://www.google.com/chrome/) browser and in the [VLC Video Player](https://www.videolan.org/vlc/download-windows.html).
 
       - question: Does the extension support Team Foundation Server?
         answer: |
@@ -203,15 +203,15 @@ sections:
 
       - question: Can I edit an existing bug instead of creating a new bug when using the Test & Feedback extension?
         answer: |
-            Yes, the extension automatically shows bugs that may be related to the one you're creating
+            Yes, the extension automatically shows bugs that might be related to the one you're creating
             and allows you to add your screenshots, notes, and videos to this existing bug.
             For more information, see [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md).
 
       - question: On Google Chrome, the mouse offset towards the left makes it difficult to use. Do you have a workaround?
         answer: |
-            Follow this procedure:  
+            Do the following steps as a workaround.  
             1. Navigate to **chrome://flags/#enable-use-zoom-for-dsf**.
-            1. Search for 'Use Blink's zoom for device scale factor'.
+            1. Search for 'Use Blink's zoom for device scale factor.'
             1. Change it to **Disabled**.
 
 additionalContent: | 

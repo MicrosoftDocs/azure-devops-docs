@@ -57,7 +57,7 @@ In the examples provided, make the following replacements:
 
 
 > [!NOTE]
-> The remaining examples provided in this article are based on a Azure DevOps Services URL. You will need to substitute in your Azure DevOps Server URL to exercise the examples.  
+> The remaining examples provided in this article are based on an Azure DevOps Services URL. You will need to substitute in your Azure DevOps Server URL to exercise the examples.  
 
 
 <a id="work-item-count"></a>

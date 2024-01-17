@@ -127,7 +127,7 @@ Widgets are annotated as follows:
       **Information and links**
       - [Embedded web page](../dashboards/widget-catalog.md#embedded-webpage-widget)  
       - [Markdown](../dashboards/widget-catalog.md#markdown-widget)  
-      - [Other links](../dashboards/widget-catalog.md#other-links-widget-2018)  
+      - [Other links](../dashboards/widget-catalog.md)  
       - [Team members](../dashboards/widget-catalog.md#team-members-widget) (Team) 
       - [Visual Studio Shortcuts](../dashboards/widget-catalog.md#visual-studio-widget) 
       - [Welcome](../dashboards/widget-catalog.md#how-to-widget) 
