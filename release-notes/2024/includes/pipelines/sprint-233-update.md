@@ -32,7 +32,7 @@ Take note of breaking changes and update your scripts accordingly:
 
 ### New Azure service connection secrets expire in three months
 
-Azure Service Connections where Azure DevOps creates the [secret](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-a-service-principal-secret&preserve-view=true) will have a secret expiration of three months instead of two years.
+Azure Service Connections where Azure DevOps creates the [secret](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-a-service-principal-secret&preserve-view=true), will have a secret expiration of three months instead of two years.
 
 To eliminate the need to rotate secrets, [convert](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#convert-an-existing-arm-service-connection-to-use-workload-identity-federation&preserve-view=true) your service connection to use [Workload identity federation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-workload-identity-federation&preserve-view=true) instead. You can use the below sample script to quickly convert multiple Azure service connections to Workload identity federation:
 
