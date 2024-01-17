@@ -606,7 +606,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
-      <td rowspan="29"><strong>Future</strong></td>
+      <td rowspan="28"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -703,11 +703,6 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-template" data-raw-source="[Dashboard Template](/azure/devops/release-notes/roadmap/2024/dashboard-template)">Dashboard Template</a></td>
-         <td>Reporting</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/private-dashboard" data-raw-source="[Private Dashboard](/azure/devops/release-notes/roadmap/2024/private-dashboard)">Private Dashboard</a></td>
          <td>Reporting</td>
          <td>Future</td>
       </tr>
