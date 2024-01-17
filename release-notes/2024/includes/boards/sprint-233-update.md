@@ -23,7 +23,7 @@ We're happy to announce the release of this feature to all customers of Azure De
 > [!NOTE]
 > This feature will roll out over the next two to three weeks. It may not be available to your organization untill early February 2024.
 
-You can now configure each backlog level to automate the opening and closing/resolving of work items based on the state(s) of the child item. There are two main scenarios we're attempting to solve.
+You can now configure each backlog level to automate the opening and closing (or resolving) of work items based on the state of the child items. There are two main scenarios we're attempting to solve.
 
 - When a single child item is activated, then activate the parent.
 - When all child items are closed, then close the parent (or resolve it).
