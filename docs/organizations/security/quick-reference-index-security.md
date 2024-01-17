@@ -225,20 +225,18 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [Create tag definition](change-project-level-permissions.md)
        - [Delete and restore work items](set-permissions-access-work-tracking.md#move-delete-permissions)  
        - [Delete field from organization](change-organization-collection-level-permissions.md)
-       - [Delivery plans](set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans)
+       - [Delivery plans](set-permissions-access-work-tracking.md)
        - [Move work items out of a project](set-permissions-access-work-tracking.md#move-delete-permissions)  
        - [Manage area and iteration paths](set-permissions-access-work-tracking.md#set-permissions-area-path)
        - [Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path) 
        - [Permanently delete work items](change-project-level-permissions.md)       
        - [Process permissions](set-permissions-access-work-tracking.md#process-permissions)
-       - [Queries and query folders](../../boards/queries/set-query-permissions.md)       
-       
-       
+       - [Queries and query folders](../../boards/queries/set-query-permissions.md)             
       **Set test permissions**
-       - [Create, delete, and view test runs](set-permissions-access-test.md#delete-test-artifacts)  
+       - [Create, delete, and view test runs](set-permissions-access-test.md)  
        - [Manage test configurations](change-project-level-permissions.md)  
        - [Manage test environments](change-project-level-permissions.md)  
-       - [Manage test controllers](set-permissions-access-test.md#test-controllers)
+       - [Manage test controllers](set-permissions-access-test.md)
        - [Manage test plans and test suites under an area path](set-permissions-access-test.md#manage-test-artifacts)
        - [Set access, license requirements](../../test/manual-test-permissions.md)
    :::column-end:::

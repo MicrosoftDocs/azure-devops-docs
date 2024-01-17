@@ -77,7 +77,7 @@ Query clauses that specify a text or rich-text field can use the operators and m
 
 > [!NOTE]  
 > 1. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2019 RC2 and later versions
-> 2. The system automatically defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md#across-projects). 
+> 2. The system automatically defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md#query-across-or-within-projects).
 
 
 ## Use `Contains words` for string matches
@@ -318,7 +318,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Team Project
    :::column-end:::
    :::column span="2":::
-   The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. For more information, see [Example queries, query across projects](using-queries.md#across-projects).   
+   The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. For more information, see [Example queries, query across projects](using-queries.md#query-across-or-within-projects).   
 
    Reference name=System.TeamProject, Data type=String
    :::column-end:::

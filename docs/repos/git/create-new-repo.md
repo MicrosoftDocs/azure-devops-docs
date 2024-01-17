@@ -37,7 +37,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
    ![Screenshot of repository menu, select New repository.](media/repo-mgmt/new-repository.png)
 
-3. In the **Create a new repository** dialog, verify that Git is the repository type and enter a name for your new repository. For naming restrictions, see [Naming restrictions, Azure Repos (git)](../../organizations/settings/naming-restrictions.md#repos-git). 
+3. In the **Create a new repository** dialog, verify that Git is the repository type and enter a name for your new repository. For naming restrictions, see [Naming restrictions, Azure Repos (git)](../../organizations/settings/naming-restrictions.md). 
 
    ![Screenshot of Create a new repository dialog.](media/repo-mgmt/create-a-new-repository.png)
 
@@ -62,7 +62,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
    ![Screenshot of Code page, Repository menu selection, Choose new repository, TFS 2018 version.](media/repo-mgmt/create-vsts-repo.png)
 
-3. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. For naming restrictions, see [Naming restrictions, Azure Repos (git)](../../organizations/settings/naming-restrictions.md#repos-git). 
+3. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. For naming restrictions, see [Naming restrictions, Azure Repos (git)](../../organizations/settings/naming-restrictions.md). 
 
    ![Screenshot of  Create a new repoistory dialog, TFS 2018 version.](media/repo-mgmt/create-a-new-repository.png)
 

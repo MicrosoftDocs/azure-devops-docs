@@ -70,7 +70,7 @@ The following table summarizes the different permissions you can set at the obje
       - [Modify work items under an area path](#set-permissions-area-path) 
       - [Create and edit nodes under an area path or iteration path](#set-permissions-area-path) 
       - [Define and edit queries or query folders](#work-item-queries) 
-      - [Define and edit Delivery Plans](set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans)
+      - [Define and edit Delivery Plans](set-permissions-access-work-tracking.md)
 
    :::column-end:::
 :::row-end:::

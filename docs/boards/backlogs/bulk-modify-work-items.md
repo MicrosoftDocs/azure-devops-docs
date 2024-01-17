@@ -63,8 +63,8 @@ All of the following actions can be completed by team members that belong to the
    Link work items 
    :::column-end:::
    :::column span="1":::
-   - [Link to a new item](add-link.md#link)
-   - [Link to an existing item](add-link.md#link)
+   - [Link to a new item](add-link.md)
+   - [Link to an existing item](add-link.md)
    - [New branch](connect-work-items-to-git-dev-ops.md)<sup>1</sup>
    :::column-end:::
 :::row-end:::
@@ -90,7 +90,7 @@ All of the following actions can be completed by team members that belong to the
    :::column-end:::
    :::column span="1":::
    - [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup>
-   - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)
+   - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md)
    - [Send email with selected item(s)](../work-items/email-work-items.md)
    - [Change work item type](move-change-type.md#change-type)<sup>1</sup>
    - [Move items to another project](move-change-type.md#move)<sup>1, 3</sup>
@@ -132,8 +132,8 @@ All of the following actions can be completed by team members that belong to the
    Link work items 
    :::column-end:::
    :::column span="1":::
-   - [Link to a new item](add-link.md#link)
-   - [Link to an existing item](add-link.md#link)
+   - [Link to a new item](add-link.md)
+   - [Link to an existing item](add-link.md)
    - [New branch](connect-work-items-to-git-dev-ops.md)<sup>1</sup>
    :::column-end:::
 :::row-end:::
@@ -158,7 +158,7 @@ All of the following actions can be completed by team members that belong to the
    :::column-end:::
    :::column span="1":::
    - [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup>
-   - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)
+   - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md)
    - [Send email with selected item(s)](../work-items/email-work-items.md)
    
    :::column-end:::
@@ -277,7 +277,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 ## Modify rich-text fields in bulk
 
-Rich-text fields support entry of HTML syntax tags to support formatting. Rich-text fields correspond to the **Description**, **Acceptance Criteria**, **Repos Steps**, and others listed in [Query samples for select fields](../queries/query-index-quick-ref.md#sample-queries-for-select-fields). 
+Rich-text fields support entry of HTML syntax tags to support formatting. Rich-text fields correspond to the **Description**, **Acceptance Criteria**, **Repos Steps**, and others listed in [Query samples for select fields](../queries/query-index-quick-ref.md#example-queries-for-select-fields). 
 
 You can bulk update a rich-text field by using the bulk modify tool, selecting the field, and entering the text with syntax in the **Value** field. Or, you can create a work item template with the text you want to use and complete a bulk update by applying the template to the selected work items. For details on using work item templates, see [Use templates to add and update work items](work-item-template.md) 
 

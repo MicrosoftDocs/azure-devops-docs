@@ -167,7 +167,7 @@ The value you specify for a field must conform to the data type for that field. 
 
 You can use query operators in the following table to specify how each value in a clause must relate to the corresponding value in a work item. For information about the data type that is assigned to work item fields, see [Work item field reference](../work-items/guidance/work-item-field.md). 
 
-To learn about adding clauses and use of the And/Or operators, see [Define a query, And/Or logical expression](using-queries.md#andor-logical-expression).
+To learn about adding clauses and use of the And/Or operators, see [Define a query](using-queries.md).
 
 :::row:::
    :::column span="1":::
@@ -634,7 +634,7 @@ You can use the macros described in the following table to filter your queries b
       **@Project** 
    :::column-end:::
    :::column span="3":::
-      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause `Team Project=@Project`. The system automatically defaults to filtering based on the current project. For more information, see [Define a query, Query across projects](using-queries.md#across-projects). 
+      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause `Team Project=@Project`. The system automatically defaults to filtering based on the current project. For more information, see [Define a query, Query across projects](using-queries.md#query-across-or-within-projects). 
    :::column-end:::
 :::row-end:::
 ---
