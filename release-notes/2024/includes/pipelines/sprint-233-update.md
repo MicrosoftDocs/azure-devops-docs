@@ -45,19 +45,19 @@ Convert service connection 'created-with-secret'?
 
 ```powershell
 #!/usr/bin/env pwsh
-<#
-.SYNOPSIS
-    Convert a multiple Azure Resource Manager service connection(s) to use Workload identity federation
+<# 
+.SYNOPSIS 
+    Convert multiple Azure Resource Manager service connection(s) to use Workload identity federation
 
 .LINK
     https://aka.ms/azdo-rm-workload-identity-conversion
 
 .EXAMPLE
     ./convert_azurerm_service_connection_to_oidc_simple.ps1 -Project <project> -OrganizationUrl https://dev.azure.com/<organization>
-#>
+#> 
 #Requires -Version 7.3
 
-param (
+param ( 
     [parameter(Mandatory=$true,HelpMessage="Name of the Azure DevOps Project")]
     [string]
     [ValidateNotNullOrEmpty()]
@@ -67,8 +67,7 @@ param (
     [uri]
     [ValidateNotNullOrEmpty()]
     $OrganizationUrl
-)
-. (Join-Path $PSScriptRoot .. functions.ps1)
+) 
 $apiVersion = "7.1"
 
 #-----------------------------------------------------------
@@ -103,10 +102,10 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
         Write-Host "$($choices[$decision].HelpMessage)"
     } elseif ($decision -eq 1) {
         Write-Host "$($PSStyle.Formatting.Warning)$($choices[$decision].HelpMessage)$($PSStyle.Reset)"
-        continue
+        continue 
     } elseif ($decision -ge 2) {
         Write-Host "$($PSStyle.Formatting.Warning)$($choices[$decision].HelpMessage)$($PSStyle.Reset)"
-        exit
+        exit 
     }
 
     # Prepare request body
@@ -118,7 +117,7 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
     # Convert service connection
     az rest -u $putApiUrl -m PUT -b $serviceEndpointRequest --headers content-type=application/json --resource 499b84ac-1321-427f-aa17-267ca6975798 -o json `
             | ConvertFrom-Json | Set-Variable updatedServiceEndpoint
-   
+    
     $updatedServiceEndpoint | ConvertTo-Json -Depth 4 | Write-Debug
     if (!$updatedServiceEndpoint) {
         Write-Debug "Empty response"
