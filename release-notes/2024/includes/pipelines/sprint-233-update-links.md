@@ -7,4 +7,4 @@ ms.topic: include
 
 - [Deprecated task warnings include replacement suggestions](#deprecated-task-warnings-include-replacement-suggestions)
 - [Microsoft hosted agents use PowerShell 7.4](#microsoft-hosted-agents-use-powershell-74)
-- [New Azure Service Connections that use a secret have updated expiration dates](#new-azure-service-connections-that-use-a-secret-have-updated-expiration-dates)
+- [New Azure service connection secrets expire in 3 months](#new-azure-service-connection-secrets-expire-in-3-months)
