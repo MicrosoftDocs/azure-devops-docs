@@ -20,15 +20,15 @@ This is the first feature of several that we are making to improve the current A
 
 ### Team Automation Rules is generally available
 
-We are happy to announce the release of this feature to all customers of Azure DevOps Service. The feature will be rolled out over > > several weeks and should reach all organizations by the end of January.
+We are happy to announce the release of this feature to all customers of Azure DevOps Service. The feature will be rolled out over several weeks and should reach all organizations by the end of January.
 
-You can now configure each backlog level to automate the opening and closing/resolving of work items based on the state(s) of their children. There are two main scenarios we are attempting to solve.
+You can now configure each backlog level to automate the opening and closing/resolving of work items based on the state(s) of the child item. There are two main scenarios we are attempting to solve.
 
 When a single child item is activated, then activate the parent.
 
 When all child items are closed, then close the parent (or resolve it).
 
-To enable these settings, you click on the backlog level configuration for your team. Then go to the Automation > Rules tab to see the two different rules you can apply to your backlog. Each backlog level (requirements, features, epics) can be configured for how your team wants to work.
+To enable these settings, you click on the backlog level configuration for your team. Then go to the **Automation > Rules tab** to see the two different rules you can apply to your backlog. Each backlog level (requirements, features, epics) can be configured for how your team wants to work.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshots of team settings.](../../media/233-boards-02.png "Screenshots of team settings.")

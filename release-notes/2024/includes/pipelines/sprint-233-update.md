@@ -12,6 +12,7 @@ Deprecated tasks will show warnings that include a suggested alternative:
 > [!div class="mx-imgBorder"]
 > ![Screenshot of task-specific deprecation warnings.](../../media/233-pipelines-01.png "Screenshot of task-specific deprecation warnings")
 
+Update your pipelines to use a newer task version or an alternative before January 31, 2024.
 
 See earlier announcements related to deprecated tasks:
 
@@ -20,7 +21,7 @@ See earlier announcements related to deprecated tasks:
 
 ### Microsoft hosted agents use PowerShell 7.4
 
-All [Microsoft hosted images](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true) will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS from January 28. See [What's New in PowerShell 7.4](/powershell/scripting/whats-new/what-s-new-in-powershell-74?view=powershell-7.4&preserve-view=true) and [PowerShell 7.4 General Availability](https://devblogs.microsoft.com/powershell/powershell-7-4-general-availability/).
+All [Microsoft hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true) will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS from January 28. See [What's New in PowerShell 7.4](/powershell/scripting/whats-new/what-s-new-in-powershell-74?view=powershell-7.4&preserve-view=true) and [PowerShell 7.4 General Availability](https://devblogs.microsoft.com/powershell/powershell-7-4-general-availability/).
 
 Please take note of breaking changes and update your scripts accordingly:
 
@@ -35,7 +36,7 @@ Azure Service Connections where Azure DevOps creates the [secret](/azure/devops/
 
 To eliminate the need to rotate secrets, [convert](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#convert-an-existing-arm-service-connection-to-use-workload-identity-federation&preserve-view=true) your service connection to use [Workload identity federation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-workload-identity-federation&preserve-view=true) instead.
 
-Customers that create many Azure Service Connections can use the below script to batch convert Azure Service Connections to Workload identity federation:
+Use the below script to batch convert Azure Service Connections to Workload identity federation:
 
 ```pwsh
 #!/usr/bin/env pwsh
