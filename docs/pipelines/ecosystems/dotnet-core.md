@@ -411,7 +411,7 @@ Do the following to restore packages from an external feed.
 
 # [YAML pipeline editor](#tab/yaml-editor)
 
-You can add the restore command to your pipeline using the YAML pipeline editor by directly inserting the following snippet into your `azure-pipelines.yml` file or using the task assistant to that the **.NET Core** task.
+You can add the restore command to your pipeline using the YAML pipeline editor by directly inserting the following snippet into your `azure-pipelines.yml` file or using the task assistant to add the **.NET Core** task.
 
 ```yaml
 # do this before your build tasks
@@ -513,12 +513,11 @@ YAML example to build using `dotnet build` as a script:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-- 
 ```
 
 # [YAML pipeline editor](#tab/yaml-editor)
 
-You can add a build task using the YAML pipeline editor by directly editing the file or adding the [Command Line](azure/devops/pipelines/tasks/reference/cmd-line-v2) task.
+You can add a build task using the YAML pipeline editor by directly editing the file or adding the [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task.
 
 Use the following steps to add the **Command Line** task:
 
@@ -568,7 +567,7 @@ To add a .NET Core CLI command using the YAML pipeline editor, do the following 
 
 # [Classic pipeline editor](#tab/classic-editor)
 
-To add a build task using  the classic editor, do the following steps:
+To add .NET Core task using  the classic editor, do the following steps:
 
 1. Select **Tasks** in your pipeline. 
 
