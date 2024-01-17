@@ -411,7 +411,7 @@ Do the following to restore packages from an external feed.
 
 # [YAML pipeline editor](#tab/yaml-editor)
 
-Add the following snippet to your `azure-pipelines.yml` file:
+You can add the restore command to your pipeline using the YAML pipeline editor by directly inserting the following snippet into your `azure-pipelines.yml` file or using the task assistant to that the **.NET Core** task.
 
 ```yaml
 # do this before your build tasks
@@ -424,11 +424,22 @@ steps:
     feedsToUse: config
     nugetConfigPath: NuGet.config    # Relative to root of the repository
     externalFeedCredentials: <Name of the NuGet service connection>
-# ...
 ```
+ Replace the \<placeholder\> with your service connection name.
+
+To use the task assistant:
+
+To add a build task using the task assistant, do the following steps:
+
+1. Go to the position in the YAML file where you want to insert the task.
+
+1. Select the **.NET Core** from the task catalog.
+1. Select the **restore** command from the **Command** dropdown list.  
+1. In the **Path to project(s)** field, enter the path to your `.csproj` files.
+1. Select **Add**.
+1. Select **Save** to commit the change.
 
 # [Classic pipeline editor](#tab/classic-editor)
-
 
 Use these steps to add a restore task using the classic editor:
 
@@ -446,6 +457,97 @@ Use these steps to add a restore task using the classic editor:
 > [!NOTE]
 > Make sure the custom feed is specified in your `NuGet.config` file and that credentials are specified in the NuGet service connection.
 
+## Build your project
+
+Build your .NET Core projects by running the `dotnet build` command.  You can add the command to your pipeline as a command line script or by using the .NET Core task.
+
+### .NET Core build using the .NET Core task
+
+YAML example to build using the DotNetCoreCLI@2 task:
+
+```yaml
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    command: build
+    projects: '**/*.csproj'
+    arguments: '--configuration $(buildConfiguration)' # Update this to match your needs
+```
+
+# [YAML pipeline editor](#tab/yaml-editor)
+
+You can add a build task using the YAML pipeline editor by directly editing the file or adding the **.NET Core** task using the task assistant.
+
+To add a build task using the task assistant, do the following steps:
+
+1. Go to the position in the YAML file where you want to insert the task.
+
+1. Select the **.NET Core** from the task catalog.
+1. Select the **build** command from the **Command** dropdown list.  
+1. In the **Path to project(s)** field, enter the path to your `.csproj` files.
+1. Select **Add**.
+1. Select **Save** to commit the change.
+
+# [Classic pipeline editor](#tab/classic-editor)
+
+To add a build task using  the classic editor, do the following steps:
+
+1. Select **Tasks** in your pipeline. 
+
+1. Select the job that runs your build tasks. 
+1. Select **+** to add a new task to that job.
+1. In the task catalog, find and add the **.NET Core** task.
+1. Select the task and select **build** from the **Command** dropdown list.
+1. In the **Path to project(s)** field, enter the path to your `.csproj` files.
+1. Drag the task to position it in the correct task sequence in the pipeline.
+1. Select the **Save and queue** dropdown list and select an option to save your changes.
+
+---
+
+### .NET Core build using command line script
+
+YAML example to build using `dotnet build` as a script:
+
+```yml
+steps:
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
+- 
+```
+
+# [YAML pipeline editor](#tab/yaml-editor)
+
+You can add a build task using the YAML pipeline editor by directly editing the file or adding the [Command Line](azure/devops/pipelines/tasks/reference/cmd-line-v2) task.
+
+Use the following steps to add the **Command Line** task:
+
+1. Go to the position in the YAML file where you want to insert the task.
+
+1. Select the  **Command Line** from the task catalog.
+1. Optionally, add a **Display name**.
+1. Enter the `dotnet build` command with parameters.  For example, `dotnet build --configuration $(buildConfiguration)`.
+1. Enter the path to the `.csproj` file as the working directory.
+1. Select **Add**.
+1. Select **Save** to commit the change.
+
+# [Classic pipeline editor](#tab/classic-editor)
+
+To add a build task using  the classic editor, do the following steps:
+
+1. Select **Tasks** in your pipeline. 
+
+1. Select the job that runs your build tasks. 
+1. Select **+** to add a new task to that job.
+1. In the task catalog, find and **Add** the **Command Line** task.
+1. Optionally, add a **Display name**.
+1. Enter the `dotnet build` command with parameters.  For example, `dotnet build --configuration $(buildConfiguration)`.
+1. Enter the path to the `.csproj` file as the working directory.
+1. Drag the task to position it in the correct task sequence in the pipeline.
+1. Select the **Save and queue** dropdown list and select an option to save your changes.
+
+---
+
 ## Add .NET SDK commands to your pipeline
 
 You can add .NET SDK commands to your project as a script or using the .NET Core task.  The [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task allows you to easily add dotnet CLI commands to your pipeline.  You can add **.NET Core** tasks by editing your YAML file or using the classic editor.
@@ -454,7 +556,7 @@ You can add .NET SDK commands to your project as a script or using the .NET Core
 
 # [YAML pipeline editor](#tab/yaml-editor)
 
-To add a build task using the YAML pipeline editor, do the following steps:
+To add a .NET Core CLI command using the YAML pipeline editor, do the following steps:
 
 1. Go to the position in the YAML file where you want to insert the task.
 
@@ -480,18 +582,18 @@ To add a build task using  the classic editor, do the following steps:
 
 ---
 
-### Add a .NET Core CLI command using a scriptt
+### Add a .NET Core CLI command using a script
 
 You can add .NET Core CLI commands as a `script` in your `azure-pipelines.yml` file.
+
+Example:
 
 ```yml
 
 steps:
 # ...
-# do this after your tests have run
 - script: dotnet test <test-project> 
 ```
-
 
 ### Install a tool
 
@@ -695,7 +797,6 @@ For more information, see [Publish and download build artifacts](../artifacts/bu
 
 ::: moniker-end
 
-
 ### Publish to a NuGet feed
 
 To create a NuGet package and publish it to your NuGet feed, add the following snippet:
@@ -716,7 +817,6 @@ steps:
     versioningScheme: byEnvVar
     versionEnvVar: version
 ```
-
 
 > [!NOTE]
 > The NuGetAuthenticate@1 task doesn't support NuGet API key authentication. If you're using a NuGet API key, use the NuGetCommand@2 task with the `command` input set to `push` with the *--api-key* argument. For example, `dotnet nuget push --api-key $(NuGetApiKey)`.
