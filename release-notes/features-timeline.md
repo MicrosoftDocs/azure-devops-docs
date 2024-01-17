@@ -463,7 +463,13 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
       <tr>
          <td><a href="https://devblogs.microsoft.com/devops/introducing-work-item-chart-filtering-in-azure-devops-dashboards/" data-raw-source="[Work Item Chart Filtering](https://devblogs.microsoft.com/devops/introducing-work-item-chart-filtering-in-azure-devops-dashboards/)">Work Item Chart Filtering</a></td>
          <td>Reporting</td>
-         <td>2023 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="https://learn.microsoft.com/en-us/azure/devops/release-notes/2023/reporting/sprint-229-update#new-dashboard-directory-experience" data-raw-source="[New Dashboard directory experience](https://learn.microsoft.com/en-us/azure/devops/release-notes/2023/reporting/sprint-229-update#new-dashboard-directory-experience)">New Dashboard directory experience</a></td>
+         <td>Reporting</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -476,12 +482,6 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-template" data-raw-source="[Dashboard Template](/azure/devops/release-notes/roadmap/2024/dashboard-template)">Dashboard Template</a></td>
          <td>Reporting</td>
           <td>2024 H1</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/private-dashboard" data-raw-source="[Private Dashboard](/azure/devops/release-notes/roadmap/2024/private-dashboard)">Private Dashboard</a></td>
-         <td>Reporting</td>
-         <td>2024 H1</td>
          <td>Future</td>
       </tr>
     </tbody>
