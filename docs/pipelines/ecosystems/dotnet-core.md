@@ -725,7 +725,7 @@ For more information about versioning and publishing NuGet packages, see [publis
 
 ### Publish a NuGet package to Azure Artifacts
 
-You can publish your NuGet packages to your Azure Artifacts feed by using the [NuGetCommand@2](/azure/devops/pipelines/tasks/build/nuget.md) to push to your Azure Artifact feed.  For example, see [Publish NuGet packages with Azure Pipelines](../artifacts/nuget.md).
+You can publish your NuGet packages to your Azure Artifacts feed by using the [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) to push to your Azure Artifact feed.  For example, see [Publish NuGet packages with Azure Pipelines](../artifacts/nuget.md).
 
 ### Deploy a web app
 
