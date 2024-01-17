@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Deprecated task warnings include replacement suggestions
 
-Deprecated tasks will show warnings that include a suggested alternative:
+Deprecated tasks show warnings that include a suggested alternative:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of task-specific deprecation warnings.](../../media/233-pipelines-01.png "Screenshot of task-specific deprecation warnings")
@@ -23,7 +23,7 @@ See earlier announcements related to deprecated tasks:
 
 All [Microsoft hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software&preserve-view=true) will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS from January 28. See [What's New in PowerShell 7.4](/powershell/scripting/whats-new/what-s-new-in-powershell-74?view=powershell-7.4&preserve-view=true) and [PowerShell 7.4 General Availability](https://devblogs.microsoft.com/powershell/powershell-7-4-general-availability/).
 
-Please take note of breaking changes and update your scripts accordingly:
+Take note of breaking changes and update your scripts accordingly:
 
 - [Breaking changes](/powershell/scripting/whats-new/what-s-new-in-powershell-74?view=powershell-7.4#breaking-changes&preserve-view=true) between PowerShell 7.3 & 7.4
 - [Breaking changes](/powershell/scripting/whats-new/what-s-new-in-powershell-73?view=powershell-7.4#breaking-changes-and-improvements&preserve-view=true) between PowerShell 7.2 & 7.3
@@ -32,7 +32,7 @@ Please take note of breaking changes and update your scripts accordingly:
 
 ### New Azure Service Connections that use a secret have updated expiration dates
 
-Azure Service Connections where Azure DevOps creates the [secret](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-a-service-principal-secret&preserve-view=true) will have a secret expiration of 3 months instead of 2 years.
+Azure Service Connections where Azure DevOps creates the [secret](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-a-service-principal-secret&preserve-view=true) will have a secret expiration of three months instead of two years.
 
 To eliminate the need to rotate secrets, [convert](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#convert-an-existing-arm-service-connection-to-use-workload-identity-federation&preserve-view=true) your service connection to use [Workload identity federation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-workload-identity-federation&preserve-view=true) instead.
 

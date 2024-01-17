@@ -7,7 +7,7 @@ ms.topic: include
 
 ### GitHub Integration - Improved AB# validation is generally available
 
-A few sprints ago we announced the preview for [improved AB# validation](/azure/devops/release-notes/2023/sprint-230-update#github-integration---improved-ab-validation-private-preview&preserve-view=true) by the Azure Boards App in GitHub. Where we've enhanced the app to better notify users about the validity of work item links, helping them spot and fix any issues before merging a Pull Request.
+A few sprints ago we announced the preview for [improved AB# validation](/azure/devops/release-notes/2023/sprint-230-update#github-integration---improved-ab-validation-private-preview&preserve-view=true) by the Azure Boards App in GitHub. We've enhanced the app to better notify users about the validity of work item links, helping them spot and fix any issues before merging a Pull Request.
 
 After several weeks of testing and feedback, this feature is now available to all users using the GitHub + Azure Boards integration.
 
@@ -15,14 +15,14 @@ After several weeks of testing and feedback, this feature is now available to al
 > [!div class="mx-imgBorder"]
 > ![Screenshots of improved validation.](../../media/233-boards-01.png "Screenshots of improved validation.")
 
-This is the first feature of several that we are making to improve the current Azure Boards + GitHub integration. Be sure to check out the other [Azure Boards + GitHub integration features](/azure/devops/release-notes/features-timeline#improved-boards--github-integration&preserve-view=true)  we have planned on the public roadmap.
+This is the first of several features we're making to improve the current Azure Boards + GitHub integration. Be sure to check out the other [Azure Boards + GitHub integration features](/azure/devops/release-notes/features-timeline#improved-boards--github-integration&preserve-view=true)  we have planned on the public roadmap.
 
 
 ### Team Automation Rules is generally available
 
-We are happy to announce the release of this feature to all customers of Azure DevOps Service. The feature will be rolled out over several weeks and should reach all organizations by the end of January.
+We're happy to announce the release of this feature to all customers of Azure DevOps Service. The feature is rolled out over several weeks and should reach all organizations by the end of January.
 
-You can now configure each backlog level to automate the opening and closing/resolving of work items based on the state(s) of the child item. There are two main scenarios we are attempting to solve.
+You can now configure each backlog level to automate the opening and closing/resolving of work items based on the state(s) of the child item. There are two main scenarios we're attempting to solve.
 
 When a single child item is activated, then activate the parent.
 
