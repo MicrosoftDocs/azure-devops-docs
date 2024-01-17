@@ -38,12 +38,6 @@ Newly created automatic Azure service connections where Azure DevOps creates the
 To eliminate the need to rotate secrets, [convert](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#convert-an-existing-arm-service-connection-to-use-workload-identity-federation&preserve-view=true) your service connection to use [Workload identity federation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-workload-identity-federation&preserve-view=true) instead. You can use the below sample script to quickly convert multiple Azure service connections to Workload identity federation:
 
 ```powershell
-./convert_azurerm_service_connection_to_oidc_simple.ps1 -Project PipelineSamples -OrganizationUrl https://dev.azure.com/contoso  
-Convert service connection 'created-with-secret'?
-[C] Convert  [S] Skip  [E] Exit  [?] Help (default is "C"):
-```
-
-```powershell
 #!/usr/bin/env pwsh
 <# 
 .SYNOPSIS 
@@ -126,4 +120,12 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
     }
     Write-Host "Successfully converted service connection '$($serviceEndpoint.name)'"
 }
+```
+
+This script will list service connections in a given project that use a secret, and prompt to convert:
+
+```powershell
+./convert_azurerm_service_connection_to_oidc_simple.ps1 -Project PipelineSamples -OrganizationUrl https://dev.azure.com/contoso  
+Convert service connection 'created-with-secret'?
+[C] Convert  [S] Skip  [E] Exit  [?] Help (default is "C"):
 ```
