@@ -124,13 +124,13 @@
       href: ../extend/publish/integration.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Make listing public and Top Publisher program
       displayName: Marketplace, extension, requirements, qualifications
-      href: ../extend/publish/overview.md#top-publisher?toc=/azure/devops/marketplace-extensibility/toc.json
+      href: ../extend/publish/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Publish via command line
       displayName: CLI, Marketplace, share
       href: ../extend/publish/command-line.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Respond to Marketplace reviews
       displayName: owner, creator, contributor, reply, appeal
-      href: ../extend/publish/overview.md#Respond-to-Marketplace-extension-reviews?toc=/azure/devops/marketplace-extensibility/toc.json
+      href: ../extend/publish/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Reference
     items:
     - name: Manifest reference

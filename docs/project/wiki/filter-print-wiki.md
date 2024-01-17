@@ -41,5 +41,5 @@ The print feature might not be available from the Firefox web browser.
 - [Follow a wiki page and get notifications](follow-notifications-wiki-pages.md)
 - [Provisioned vs. published wiki](provisioned-vs-published-wiki.md)
 - [Update wiki offline](wiki-update-offline.md)
-- [Wiki Markdown guidance](markdown-guidance.md#wiki-markdown-guidance)
+- [Wiki Markdown guidance](markdown-guidance.md)
 - [Add or edit a wiki](add-edit-wiki.md)

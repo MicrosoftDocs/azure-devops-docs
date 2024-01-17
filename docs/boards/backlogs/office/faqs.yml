@@ -77,15 +77,15 @@ sections:
 
       - question: How do I connect an existing Excel workbook to Azure DevOps?  
         answer: |
-          See [Connect Azure Boards to an Office client](track-work.md#excel-project). 
+          See [Connect Azure Boards to an Office client](track-work.md). 
 
       - question: How do I share an Excel workbook with others? 
         answer: |
-          If you want to share an Excel workbook that has work items listed within it, you may want to disconnect the connection to Azure DevOps to prevent accidental publishing of changes by others. You can disconnect the workbook, share it or work offline, and later reconnect the workbook. For more information, see [Connect Azure Boards to an Office client, Disconnect a document file from the network](track-work.md#WorkingOffline).
+          If you want to share an Excel workbook that has work items listed within it, you may want to disconnect the connection to Azure DevOps to prevent accidental publishing of changes by others. You can disconnect the workbook, share it or work offline, and later reconnect the workbook. For more information, see [Connect Azure Boards to an Office client, Disconnect a document file from the network](track-work.md).
 
       - question:  How do I connect when special protocols are in use on my network?   
         answer: |
-          If your network uses TLS 1.1 or TLS 1.2 security protocol, then you may have network connection issues. To resolve these issues, see [Allowed address lists and network connections, Domain URLs to allow](../../../organizations/security/allow-list-ip-url.md#domain-urls-to-allow).
+          If your network uses TLS 1.1 or TLS 1.2 security protocol, then you may have network connection issues. To resolve these issues, see [Allowed address lists and network connections, Domain URLs to allow](../../../organizations/security/allow-list-ip-url.md).
 
       - question: How do I disable the Team menu?   
         answer: |

@@ -25,7 +25,7 @@ The data available to you from Analytics depends on the Azure DevOps platform an
 
 ## Data available by platform version
  
-Refer to the following table to determine the data you have access to. To determine the platform  and version you're using, see [Get support and provide feedback, What platform am I using?](../../user-guide/provide-feedback.md#what-platformversion-am-i-using) 
+Refer to the following table to determine the data you have access to. To determine the platform  and version you're using, see [Get support and provide feedback, What platform am I using?](../../user-guide/provide-feedback.md) 
 
 > [!NOTE]   
 > The following table was last updated on August 2022.  

@@ -453,7 +453,7 @@ Configure a comment resolution policy for your branch by setting **Check for com
 
 :::image type="content" source="media/branch-policies/check-comment-resolution-2020.png" alt-text="Check for comment resolution":::
 
-For more information on working with pull request comments, see [Review pull requests](review-pull-requests.md#make-comments).
+For more information on working with pull request comments, see [Review pull requests](review-pull-requests.md).
 
 ::: moniker-end
 
@@ -463,7 +463,7 @@ Configure a comment resolution policy for your branch by selecting **Check for c
 
 ![Check for comment resolution](media/branch-policies/comment-resolution-2018.png)
 
-For more information on working with pull request comments, see [Review pull requests](review-pull-requests.md#make-comments).
+For more information on working with pull request comments, see [Review pull requests](review-pull-requests.md).
 
 ::: moniker-end
 

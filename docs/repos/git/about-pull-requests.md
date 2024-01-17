@@ -83,15 +83,14 @@ PR owners should:
 - Reply to comments, accepting the suggestion or explaining why the suggested change isn't ideal.
 - For good suggestions outside the scope of the PR, create new work items, branches, and PRs to make those changes.
 
-Reviewers should:
+Reviewers should do the following tasks.
 
-- Provide feedback on changes they don't agree with.
-- Identify issues and give specific suggestions on what to do differently.
-- Make sure the feedback has clear intent and is easy to understand.
-- [Leave comments](review-pull-requests.md#make-comments).
-- [Vote on the changes](review-pull-requests.md#vote-on-changes).
+- Provide feedback on changes they don't agree with
+- Identify issues and give specific suggestions on what to do differently
+- Make sure the feedback has clear intent and is easy to understand
+- [Leave comments or vote on changes](review-pull-requests.md)
 
-Learn more about how to [get feedback with Git pull requests](/devops/develop/git/git-pull-requests).
+For more information, see [Get feedback with Git pull requests](/devops/develop/git/git-pull-requests).
 
 ## Branch policies and pull requests
 

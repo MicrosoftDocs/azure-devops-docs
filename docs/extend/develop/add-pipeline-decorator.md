@@ -170,7 +170,7 @@ steps:
 
 ## 5. Specify a target task
 
-You can specify target [task ID](add-build-task.md#taskjson), and inject tasks before or after this target task.
+You can specify target [task ID](add-build-task.md), and inject tasks before or after this target task.
 To specify target task, you can modify vss-extension.json manifest file like the following example.
 
 #### vss-extension.json
@@ -201,11 +201,11 @@ Tasks will be injected before/after all instances of specified target task.
 ### Specify target task's inputs injection
 You can specify a list of inputs of the target task that you want to inject as inputs to the injected task.
 
-This feature is designed to work with [custom pipeline tasks](add-build-task.md#step-1-create-a-custom-task). It isn't intended to provide access to target pipeline task inputs via pipeline variables.
+This feature is designed to work with [custom pipeline tasks](add-build-task.md). It isn't intended to provide access to target pipeline task inputs via pipeline variables.
 
 To get access to the target pipeline task inputs (inputs with the `target_` prefix), the injected pipeline task should use methods from the [azure-pipelines-tasks-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib), and not the pipeline variables, for example `const inputString = tl.getInput('target_targetInput')`). 
 
-To do so, you can create your own custom pipeline [task](add-build-task.md#task-implementation) and use the target inputs there. If you need the functionality of one of the out-of-box tasks, like `CmdLine@2`, you can create a copy of the [CmdLine@2 task](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/CmdLineV2) and publish it with your decorator extension.
+To do so, you can create your own custom pipeline [task](add-build-task.md) and use the target inputs there. If you need the functionality of one of the out-of-box tasks, like `CmdLine@2`, you can create a copy of the [CmdLine@2 task](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/CmdLineV2) and publish it with your decorator extension.
 
 > [!NOTE]
 > This functionality is only available for tasks that are injected before or after the target task.
