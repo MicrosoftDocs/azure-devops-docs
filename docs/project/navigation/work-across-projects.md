@@ -5,11 +5,11 @@ description: How to access work items, pull requests, team projects, and more us
 ms.custom: navigation, cross-project
 ms.subservice: azure-devops-projects
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
-ms.topic: quickstart
+ms.topic: how-to
 ms.author: chcomley   
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 01/08/2024
 --- 
 
 
@@ -17,33 +17,28 @@ ms.date: 04/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-When you work on several projects, you can use select pages to support your cross-project work. These pages provide quick access and filter functions to support your work within a single project or work you're doing across several projects.  
+When you work on several projects, you can use select pages to support your cross-project work. These pages provide quick access and filter functions to support your work within a single project or work you're doing across several projects.
+
+For more information, see [Switch project, repository, or team](go-to-project-repo.md) or [Work across projects FAQs](../work-across-projects-faqs.yml). 
 
 For example, you can quickly access and navigate to the following artifacts defined across projects.  
 
 ::: moniker range=">= azure-devops-2019"
 - **Projects**: Projects defined for an organization in Azure DevOps
 - **Work items**: Work items assigned to you
-- **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
-- **Favorites**: Artifacts&mdash;such as projects, teams, repositories, shared queries, and more &mdash;that you've favorited
-
+- **Pull requests**: Pull requests you initiated or that are relevant to you across all team projects you work in
+- **Favorites**: Artifacts&mdash;such as projects, teams, repositories, shared queries, and more—that you favorited
 ::: moniker-end  
-
 
 ::: moniker range="tfs-2018"
 - **Projects**: Team projects and teams within the projects that you work in  
-- **Favorites**: Items&mdash;such as build definitions, repositories, shared queries, and more &mdash;that you've favorited  
-- **Work items**: Work items assigned to you, that you're following, or that you've recently viewed or updated  
-- **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in   
-
-::: moniker-end
+- **Favorites**: Items&mdash;such as build definitions, repositories, shared queries, and more—that you favorited  
+- **Work items**: Work items assigned to you, that you're following, or that you recently viewed or updated  
+- **Pull requests**: Pull requests you initiated or that are relevant to you across all team projects you work in   
 
 > [!NOTE]
 > This feature only retrieves artifacts defined in projects for a single collection or organization. Retrieval of artifacts in projects across organizations isn't supported. 
-
-To switch to another project, see [Switch project, repository, or team](go-to-project-repo.md). 
-
-For additional notes on working across projects, see [Work across projects FAQs](../work-across-projects-faqs.yml). 
+::: moniker-end
 
 ## Prerequisites 
  
@@ -51,7 +46,7 @@ For additional notes on working across projects, see [Work across projects FAQs]
  
 ::: moniker range="azure-devops"  
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
   ::: moniker-end  
 
 ## View and open work items
@@ -88,7 +83,7 @@ The **Assigned to me** page lists all work items assigned to you in the order th
 
 ### Work you're following
 
-Choose **Following** to open the page that lists all the work items [you've marked to follow](../../boards/work-items/follow-work-items.md). To stop following an item and remove it from your list, choose the ![followed icon](../../media/icons/icon-followed.png) following icon.
+Choose **Following** to open the page that lists all the work items [you marked to follow](../../boards/work-items/follow-work-items.md). To stop following an item and remove it from your list, choose the ![followed icon](../../media/icons/icon-followed.png) following icon.
 
 ::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
@@ -103,7 +98,7 @@ Choose **Following** to open the page that lists all the work items [you've mark
 ::: moniker range=">= azure-devops-2019"
 ### My activity
 
-Choose **My activity** to open the page that lists all work items that you have recently viewed or updated.  
+Choose **My activity** to open the page that lists all work items that you recently viewed or updated.  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Inbox > Work items pane > My activity.](media/projects-page/account-work-my-activity.png) 
@@ -112,7 +107,7 @@ Choose **My activity** to open the page that lists all work items that you have 
 
 ### Filter the list of work items
 
-Similar to the Favorites page, you can filter the work pages by typing a keyword in the *Filter your work items...* box. The list will filter based on keyword matches to the work item ID, title, state, or team project name.
+Similar to the Favorites page, you can filter the work pages by typing a keyword in the *Filter your work items...* box. The list filters based on keyword matches to the work item ID, title, state, or team project name.
 
 ## View and open pull requests
 
@@ -127,11 +122,11 @@ To view pull requests you created  or that are assigned to you across projects, 
 
 ::: moniker range="tfs-2018"
 
-Open the **Projects>Pull requests** page to access any pull request that's relevant to you across all projects you work in. Choose **Active** or **Completed** to pivot between the active or completed set of pull requests. To initiate a pull request, choose **New pull request**.
+Open the **Projects** > **Pull requests** page to access any pull request that's relevant to you across all projects you work in. Choose **Active** or **Completed** to pivot between the active or completed set of pull requests. To initiate a pull request, choose **New pull request**.
 
 ![Screenshot of pull requests assigned to you across projects, TFS-2017 and TFS-2018 versions.](media/org-hub-tfs/account-home-pull-requests.png) 
 
-From each page, you're one choice away from navigating to the branch or repository for a pull request. This mirrors capabilities on the  project **Code>Pull Requests** page.
+From each page, you're one choice away from navigating to the branch or repository for a pull request. This mirrors capability on the  project **Code** > **Pull Requests** page.
 
 ### Filter the list of pull requests
 
@@ -142,7 +137,7 @@ Similar to the Favorites page, you can filter the list by typing a keyword in th
 
 ## View and open favorites 
 
-You can view favorites you've set across projects. To learn more about working with favorites, see [Set personal or team favorites](set-favorites.md).
+You can view favorites you set across projects. For more information about working with favorites, see [Set personal or team favorites](set-favorites.md).
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -155,12 +150,12 @@ Choose the :::image type="icon" source="../../media/icons/inbox.png" border="fal
 
 
 ::: moniker range="tfs-2018"
-Open the **Favorites** page to quickly access any object or item that you've marked as a favorite.
+Open the **Favorites** page to quickly access any object or item that you marked as a favorite.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of items you've favorited across projects, TFS-2017 and TFS-2018 versions.](media/projects-page/account-home-favorites.png)
 
-To learn more about working with favorites, see [Set personal and team favorites](set-favorites.md). 
+For more information about working with favorites, see [Set personal and team favorites](set-favorites.md). 
 
 ### Favorite and unfavorite an item
 
@@ -172,7 +167,7 @@ To remove an item from your favorites list, choose the favorited icon.
 
 ### Filter the list of favorites
 
-To filter the list, type a keyword in the *Filter favorites* box. The list will filter based on keyword matches to the title or team project name associated with the favorited item.
+To filter the list, type a keyword in the *Filter favorites* box. The list filters based on keyword matches to the title or team project name associated with the favorited item.
 
 ::: moniker-end
 

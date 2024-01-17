@@ -107,7 +107,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
       **Value Area** field
       > [!div class="tabbedCodeSnippets"]
       ```XML
-      <FIELD name="Value Area" refname="Microsoft.VSTS.Common.ValueArea" type="String"&gt; 
+      <FIELD name="Value Area" refname="Microsoft.VSTS.Common.ValueArea" type="String"> 
       <REQUIRED />   
       <ALLOWEDVALUES>    
          <LISTITEM value="Architectural" />   

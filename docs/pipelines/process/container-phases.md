@@ -178,7 +178,7 @@ steps:
 - script: echo hello
 ```
 
-Running `docker create --help` will give you the list of supported options. You can use any option available with the [`docker create` command](https://docs.docker.com/engine/reference/commandline/create/).
+Running `docker create --help` will give you the list of options that can be passed to Docker invocation. Not all of these options are guarenteed to work with Azure DevOps. Check first to see if you can use a container property to accomplish the same goal. For more information, see `resources.containers.container` in the [YAML schema](/azure/devops/pipelines/yaml-schema/resources-containers-container) and the [`docker create` command](https://docs.docker.com/engine/reference/commandline/create/) reference.
 
 ## Reusable container definition
 

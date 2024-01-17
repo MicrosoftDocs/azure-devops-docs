@@ -275,7 +275,7 @@ The following table describes fields associated with links and attachments. Most
 
    :::column-end:::
    :::column span="3":::
-   The number of links defined for a work item that use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types).  
+   The number of links defined for a work item that use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md).  
    Reference Name=System.RelatedLinkCount, Data type=Integer
    :::column-end:::
 :::row-end:::

@@ -179,6 +179,8 @@ Marketplace assigns the badge to a publisher after carefully reviewing the publi
 - Q & A responsiveness
 - Ratings & review for their offerings
 - Active uptake and the install count for their offerings
+- Manage at least one public Azure DevOps extension from the publisher.
+- The public extension should have more than 5000 installs, with an active install count exceeding 1000.
 
 You can expect timely support and a good overall experience when you get an extension from a Top Publisher. Check out the offerings from the Top Publishers.
 

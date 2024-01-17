@@ -100,7 +100,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
 2. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 > [!TIP]    
-> The `WasEver` operator can be used with the **Iteration Path** field but only when defined through the WIQL syntax. For an example, see [Work Item Query Language (WIQL) syntax reference](wiql-syntax.md#asof-historical-queries).
+> The `WasEver` operator can be used with the **Iteration Path** field but only when defined through the WIQL syntax. For an example, see [Work Item Query Language (WIQL) syntax reference](wiql-syntax.md).
  
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]

@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/27/2023
+ms.date: 01/16/2024
 ---
 
 # Use Markdown in Azure DevOps
@@ -19,7 +19,7 @@ ms.date: 11/27/2023
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-In this article, find basic syntax guidance for using Markdown in Azure DevOps features, as well as [wiki Markdown](#use-markdown-in-wikis). You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
+In this article, find basic syntax guidance for using Markdown in Azure DevOps features and [wiki Markdown](#use-markdown-in-wikis). You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
 Use Markdown to add formatting, tables, images, and more to your project pages, README files, dashboards, pull requests, [wikis](#use-markdown-in-wikis), and so on.
 
@@ -33,6 +33,7 @@ Not all Markdown syntax is supported across all features in Azure DevOps. The fo
 |[Horizontal rules](#horizontal-rules)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
 |[Emphasis](#emphasis-bold-italics-strikethrough)    | [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md) |
 |[Code highlighting](#code-highlighting)   | [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)        |
+|[Suggest change](#suggest-change)   | [pull request](../../repos/git/pull-requests.md)        |
 |[Tables](#tables)    | [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)       |
 |[Lists](#lists)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)         |
 |[Links](#links)    |[Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), [wiki](add-edit-wiki.md)         |
@@ -264,6 +265,25 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine("Hello, World!");
 ```
 
+## Suggest change
+
+In pull requests, you can use comments to suggest replacement text for one or more lines in a file. 
+Users can easily apply the suggested change by selecting **Apply Change**. This action results in committing the change to the pull request.
+
+Code highlighting entered within the Markdown widget renders code in diff format with line prefixed by '-' and '+'.
+
+**Example:**
+
+<pre>
+```suggestion
+  for i in range(A, B+100, C):
+```
+</pre>
+
+:::image type="content" source="media/markdown-guidance/suggestion-snapshot.png" alt-text="Screenshot showing example of suggested changed in a pull request."::: 
+
+For more information, see [Suggest changes in comments](../../repos/git/review-pull-requests.md?tabs=browser#suggest-changes-in-comments).
+
 ## Tables
 
 Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data with a
@@ -365,9 +385,9 @@ Begin each list item on a new line. In a Markdown file or widget, enter two spac
 
 ## Links
 
-In pull request comments and wikis, HTTP and HTTPS URLs automatically format as links. You can link to work items by entering the *#* key and a work item ID and then choosing the work item from the list.
+In pull request comments and wikis, HTTP and HTTPS URLs automatically format as links. You can link to work items by entering the `#` key and a work item ID and then choosing the work item from the list.
 
-Avoid auto suggestions for work items by prefixing *#* with a backslash (`\`). This action can be useful if you want to use *#* for color hex codes.
+Avoid auto suggestions for work items by prefixing `#` with a backslash (`\`). This action can be useful if you want to use `#` for color hex codes.
 
 In Markdown files and widgets, you can set text hyperlinks for your URL using the standard Markdown link syntax:
 
@@ -416,8 +436,8 @@ When you link to another Markdown page in the same Git or TFVC repository, the l
 
 Links to source control files get interpreted differently depending on whether you specify them in a Welcome page or a Markdown widget. The system interprets relative links as follows:
 
-- **Welcome page:** relative to the root of the source control repository in which the welcome page exists
-- **Markdown widget:**  relative to the team project collection URL base
+- **Welcome page:** Relative to the root of the source control repository in which the welcome page exists
+- **Markdown widget:** Relative to the team project collection URL base
 
 For example:
 
@@ -539,7 +559,7 @@ To mark items as completed by checking the boxes, you need to manually edit the 
 
 ## Emoji
 
-In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. We support the [full set of emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
+In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. We support [most emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
 
 **Example:**
 
@@ -612,7 +632,7 @@ In pull request comments and wiki pages, you can attach files to illustrate your
 
 If you have an image on your clipboard, you can paste it into the comment box or wiki page, and it renders directly into your comment or wiki page.
 
-Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
+Attaching nonimage files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
 The attached image files render directly into your comment or wiki pages. Save or update your comment or wiki page with an attachment. Then, you can see the attached image and select links to download the attached files.
 
 Attachments support the following file formats:

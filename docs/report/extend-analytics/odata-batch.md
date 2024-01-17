@@ -44,7 +44,7 @@ The $batch endpoint is located at:
 > ```
 > 
 > [!NOTE]
-> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+> The examples shown in this document are based on an Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
 > The $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.
 
 ::: moniker-end

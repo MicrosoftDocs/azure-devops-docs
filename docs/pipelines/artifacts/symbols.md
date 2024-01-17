@@ -190,7 +190,7 @@ To publish your portable PDBs to Azure Artifacts symbol server add the following
 ---
 
 > [!IMPORTANT]
-> To delete symbols published via the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
+> To delete symbols published via the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../policies/retention.md) or by manually [deleting the run](../policies/retention.md#delete-a-run).
 
 ## Set up Visual Studio
 

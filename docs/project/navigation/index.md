@@ -8,35 +8,35 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 01/08/2024
 ---
 
-# Web portal navigation in Azure DevOps  
+# Navigate the web portal in Azure DevOps  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 ::: moniker range="azure-devops"
 
-The web portal for Azure DevOps is organized around a set of services as well as administrative pages and several task specific features such as the search box. The service labels differ depending on whether you work from Azure DevOps Services or Azure DevOps on premises and its version. 
+The web portal for Azure DevOps is organized around a set of services and administrative pages and several task specific features, such as the search box. The service labels differ depending on whether you work from Azure DevOps Services or Azure DevOps on premises and its version. 
 
 [!INCLUDE [temp](../../includes/version-selector.md)] 
 
-Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact.
+Each service provides you with one or more pages, which support many features and functional tasks. Within a page, you might then have a choice of options to select a specific artifact or add an artifact.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-The web portal for Azure DevOps Server is organized around a set of services&mdash;such as, **Overview**, **Boards**, **Repos**, **Pipelines**, **Test Plans**, and **Artifacts**&mdash; as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact. 
+The web portal for Azure DevOps Server is organized around a set of services&mdash;such as, **Overview**, **Boards**, **Repos**, **Pipelines**, **Test Plans**, and **Artifacts—as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages that support many features and functional tasks. Within a page, you might then have a choice of options to select a specific artifact or add an artifact. 
 
-Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact.
+Each service provides you with one or more pages that support many features and functional tasks. Within a page, you might then have a choice of options to select a specific artifact or add an artifact.
 
 ::: moniker-end
 
 
 ::: moniker range="tfs-2018"
 
-The web portal for Team Foundation Server is organized around a set of applications&mdash;such as, **Dashboards**, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact. 
+The web portal for Team Foundation Server is organized around a set of applications&mdash;such as, **Dashboards**, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages that support many features and functional tasks. Within a page, you might then have a choice of options to select a specific artifact or add an artifact. 
 ::: moniker-end
 
 Here's what you need to know to get up and running using the web portal.  
@@ -44,7 +44,7 @@ Here's what you need to know to get up and running using the web portal.
 ::: moniker range=">= azure-devops-2019"
 - [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different [service or functional area](../../user-guide/services.md) 
 - [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
-- [**Open another project or repo**](work-across-projects.md): use to switch to a different project or access work items and pull requests defined in different projects, or items you've favorited 
+- [**Open another project or repo**](work-across-projects.md): use to switch to a different project or access work items and pull requests defined in different projects, or your favorite items
 - [**Open team artifacts, use breadcrumbs, selectors and directories**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts, or return to a root function
 - [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation  
 - [**Search box**](../search/get-started-search.md): use to find code, work items, or wiki content  
@@ -58,7 +58,7 @@ Here's what you need to know to get up and running using the web portal.
 - [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different service or functional area
 - [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
 - [**Open another project or repo, or switch to a different team**](work-across-projects.md): use to switch to a different project or browse teams 
-- [**Work across projects**](work-across-projects.md): use to quickly open work assigned to you, your active pull requests, or items you've favorited 
+- [**Work across projects**](work-across-projects.md): use to quickly open work assigned to you, your active pull requests, or your favorite items 
 - [**Open team artifacts, use breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
 - [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation   
 - [**Search box**](../search/get-started-search.md): use to find code, work items, or wiki content 
@@ -74,7 +74,7 @@ Here's what you need to know to get up and running using the web portal.
 
 
 ::: moniker range=">= azure-devops-2019"  
-You select services &mdash;such as **Boards**, **Repos**, and **Pipelines**&mdash; from the sidebar and pages within those services. 
+You select services—such as **Boards**, **Repos**, and **Pipelines—from the sidebar and pages within those services. 
 
 ![Vertical sidebar](media/gif-images/vertical-nav.gif)
 
@@ -89,7 +89,7 @@ You select a service&mdash;such as **Code**, **Work**, and **Build and Release**
 ::: moniker-end
 
 
-Now that you have an understanding of how the user interface is structured, it's time to get started using it. As you can see, there are a lot of features and functionality.  
+Now that you have an understanding of how the user interface is structured, it's time to get started using it. As you can see, there are numerous features and functionality.  
 
 If all you need is a code repository and bug tracking solution, then start with [Get started with Git](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  
 
@@ -99,7 +99,7 @@ To start planning and tracking work, see [About Agile tools](../../boards/get-st
 
 ::: moniker range="azure-devops"
 
-You connect to the web portal through a supported web browser &mdash;such as the latest versions of Edge, Chrome, Safari, or Firefox. Only users who have been [added to a project](../../organizations/accounts/add-organization-users.md) can connect. This is typically done by the organization owner. 
+You connect to the web portal through a supported web browser—such as the latest versions of Microsoft Edge, Chrome, Safari, or Firefox. Only users [added to a project](../../organizations/accounts/add-organization-users.md) can connect, which is typically done by the organization owner. 
 
 Five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../../organizations/billing/buy-basic-access-add-users.md). Find out more about licensing from [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
@@ -109,9 +109,9 @@ Limited access is available to an unlimited number of stakeholders for free. For
 
 ::: moniker range="<= azure-devops-2019"
 
-You connect to the web portal through a supported web browser&mdash;such as the latest versions of Edge, Chrome, Safari, or Firefox. Only users who have been [added to a project](../../organizations/security/add-users-team-project.md) can connect. This is typically done by a member of the Project Administrators group.
+You connect to the web portal through a supported web browser&mdash;such as the latest versions of Microsoft Edge, Chrome, Safari, or Firefox. Only users who [added to a project](../../organizations/security/add-users-team-project.md) can connect, which is typically done by a member of the Project Administrators group.
 
-Limited access is available to an unlimited number of stakeholders for free. For details, see [Work as a Stakeholder](../../organizations/security/get-started-stakeholder.md). Most regular contributors must have a TFS client access license (CAL). All Visual Studio subscriptions include a TFS CAL. Find out more about licensing from [TFS pricing](https://www.visualstudio.com/team-services/tfs-pricing).
+Limited access is available to an unlimited number of stakeholders for free. For details, see [Work as a Stakeholder](../../organizations/security/get-started-stakeholder.md). Most regular contributors must have a TFS client access license (CAL). All Visual Studio subscriptions include a TFS CAL.
 
 ::: moniker-end
 
@@ -149,17 +149,16 @@ Although you can access source code, work items, and builds from both clients, s
    :::column-end:::
    :::column span="2":::
       - Git: [Changes](../../repos/git/commits.md#stage-your-changes-and-commit), [Branches](../../repos/git/create-branch.md), [Pull Requests](../../repos/git/pull-requests.md), [Sync](../../repos/git/pulling.md), [Work Items](../../boards/backlogs/add-work-items.md), [Builds](/previous-versions/ms181721(v=vs.140)) 
-       - TFVC: [My Work](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work), [Pending Changes](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work) | [Source Control Explorer](../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed), [Work Items](../../boards/backlogs/add-work-items.md) | [Builds](/previous-versions/ms181721(v=vs.140)) 
+       - TFVC: [My Work](../../repos/tfvc/develop-code-manage-pending-changes.md), [Pending Changes](../../repos/tfvc/develop-code-manage-pending-changes.md) | [Source Control Explorer](../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed), [Work Items](../../boards/backlogs/add-work-items.md) | [Builds](/previous-versions/ms181721(v=vs.140)) 
        - Greater integration with work items and Office integration clients. You can open a work item or query result in an office supported client. 
    :::column-end:::
 :::row-end:::
 ---
  
-
 [!INCLUDE [temp](../../repos/git/includes/note-new-git-tool.md)]
 
 ## Resources  
 
 - [Manage projects](../../organizations/projects/about-projects.md) 
-- [Project & Organizational Settings](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects) 
+- [Project & organization settings](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects) 
 

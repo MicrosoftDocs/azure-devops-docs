@@ -50,7 +50,7 @@ The following features are supported for the team project wiki.
 
 ### Format wiki content
 
-- [Markdown format](markdown-guidance.md#wiki-markdown-guidance)  
+- [Markdown format](markdown-guidance.md)  
 - [HTML tags](markdown-guidance.md#html)  
 - [Insert and resize images](markdown-guidance.md#images)
 - [Link to work items using #](markdown-guidance.md#link-work-items)

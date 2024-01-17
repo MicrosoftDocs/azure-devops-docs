@@ -35,7 +35,7 @@ This article addresses creating new branches, adding links to commits, and addin
 > You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. For more information, see the following resources:   
 > - [Cross-service overview](../../cross-service/cross-service-overview.md#azure-boards---azure-repos) 
 > - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
-> - [Link work items to builds and deployments](add-link.md#link-work-items-to-builds-and-deployments).
+> - [Link work items to builds and deployments](add-link.md#link-work-items-to-deployments).
 
 ## Development control
 
