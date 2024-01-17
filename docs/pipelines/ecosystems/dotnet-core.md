@@ -18,7 +18,7 @@ Can you see an Azure Pipeline to automatically build, test, and deploy your .NET
 ::: moniker range="<=azure-devops-2022"
 
 * Set up your build environment with [self-hosted](../agents/agents.md) agents.
-* Restore dependencies, build your project, and test with the [.NET Core CLI task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
+* Restore dependencies, build your project, and test with the [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
 * Test your code and use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) to publish code coverage results.
 * Package and deliver your build output to:
    * your pipeline.
@@ -29,7 +29,7 @@ Can you see an Azure Pipeline to automatically build, test, and deploy your .NET
 ::: moniker range=">= azure-devops"
 
 * Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
-* Restore dependencies, build your project, and test with the  [.NET Core CLI task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
+* Restore dependencies, build your project, and test with the  [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
 * Test your code and use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) to publish code coverage results.
 * Package and deliver your build output to:
    * your pipeline.
@@ -343,7 +343,7 @@ steps:
 
 ## Restore dependencies
 
-NuGet is a popular way to depend on code that you don't build. You can download NuGet packages and project-specific tools that are specified in the project file by running the `dotnet restore` command either through the **.NET Core** task or directly in a script in your pipeline.  For more information, see  [.NET Core CLI task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
+NuGet is a popular way to depend on code that you don't build. You can download NuGet packages and project-specific tools that are specified in the project file by running the `dotnet restore` command either through the **.NET Core** task or directly in a script in your pipeline.  For more information, see  [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
 
 You can download NuGet packages from Azure Artifacts, NuGet.org, or some other external or internal NuGet repository. The **.NET Core** task is especially useful to restore packages from authenticated NuGet feeds. If your feed is in the same project as your pipeline, you don't need to authenticate. 
 
@@ -405,9 +405,13 @@ When you use Microsoft-hosted agents, you get a new machine every time you run a
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+For more information about NuGet service connections, see [publish to NuGet feeds](../artifacts/nuget.md).
 
-To restore packages from an external custom feed, use the following **.NET Core** task:
+Do the following to restore packages from an external feed.
+
+# [YAML pipeline editor](#tab/yaml-editor)
+
+Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 # do this before your build tasks
@@ -423,13 +427,10 @@ steps:
 # ...
 ```
 
-For more information about NuGet service connections, see [publish to NuGet feeds](../artifacts/nuget.md).
+# [Classic pipeline editor](#tab/classic-editor)
 
-::: moniker-end
 
-::: moniker range="< azure-devops"
-
-Use these steps to add a task using the classic editor:
+Use these steps to add a restore task using the classic editor:
 
 1. Select **Tasks** in your pipeline and select the job that runs your build tasks. 
 
@@ -440,44 +441,16 @@ Use these steps to add a task using the classic editor:
 1. In the task list, drag the task to position it before the build task.
 1. From the **Save & queue** dropdown list, select an option to save the change.
 
+---
+
 > [!NOTE]
 > Make sure the custom feed is specified in your `NuGet.config` file and that credentials are specified in the NuGet service connection.
 
-::: moniker-end
-
 ## Add .NET SDK commands to your pipeline
 
-You can add .NET SDK commands to your project as a script or using the .NET Core task.  The .NET Core task allows you to easily add dotnet commands to your pipeline.  You can add **.NET Core** tasks by editing your YAML file or using the classic editor.
+You can add .NET SDK commands to your project as a script or using the .NET Core task.  The [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task allows you to easily add dotnet CLI commands to your pipeline.  You can add **.NET Core** tasks by editing your YAML file or using the classic editor.
 
-::: moniker range=">=azure-devops-2020"
-
-For example, you can build your .NET Core project either by running the `dotnet build` command in your pipeline or by using the **DotNetCoreCLI@2** task.
-
-```yaml
-steps:
-- task: DotNetCoreCLI@2
-  displayName: Build
-  inputs:
-    command: build
-    projects: '**/*.csproj'
-    arguments: '--configuration $(buildConfiguration)' # Update this to match your need
-```
-
-You can run any custom dotnet command in your pipeline. The following YAML example shows how to install and use a .NET global tool, [dotnetsay](https://www.nuget.org/packages/dotnetsay/):
-
-```yaml
-steps:
-- task: DotNetCoreCLI@2
-  displayName: 'Install dotnetsay'
-  inputs:
-    command: custom
-    custom: tool
-    arguments: 'install -g dotnetsay'
-```
-
-::: moniker-end
-
-### Add a build task in the YAML pipeline editor
+### Add a .NET CLI command using the .NET Core task
 
 # [YAML pipeline editor](#tab/yaml-editor)
 
@@ -506,6 +479,19 @@ To add a build task using  the classic editor, do the following steps:
 1. From the **Save and queue** dropdown list, select an option to save your changes.
 
 ---
+
+### Add a .NET Core CLI command using a scriptt
+
+You can add .NET Core CLI commands as a `script` in your `azure-pipelines.yml` file.
+
+```yml
+
+steps:
+# ...
+# do this after your tests have run
+- script: dotnet test <test-project> 
+```
+
 
 ### Install a tool
 
