@@ -30,9 +30,9 @@ Take note of breaking changes and update your scripts accordingly:
 - Updated argument parsing behavior controlled via
 [`$PSNativeCommandArgumentPassing`](/powershell/module/microsoft.powershell.core/about/about_preference_variables?view=powershell-7.4#psnativecommandargumentpassing&preserve-view=true)
 
-### New Azure Service Connection secrets expire in 3 months
+### New Azure service connection secrets expire in 3 months
 
-Newly created automatic Azure Service Connections where Azure DevOps creates the [secret](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-a-service-principal-secret) will have a secret expiration of three months. This addresses concerns customers have with secrets that are valid for two years.
+Newly created automatic Azure service connections where Azure DevOps creates the [secret](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-a-service-principal-secret) will have a secret expiration of three months. This addresses concerns customers have with secrets that are valid for two years.
 
 #### Remove the need to rotate secrets by converting Service Connections to use Workload identity federation
 To eliminate the need to rotate secrets, [convert](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#convert-an-existing-arm-service-connection-to-use-workload-identity-federation&preserve-view=true) your service connection to use [Workload identity federation](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-using-workload-identity-federation&preserve-view=true) instead. You can use the below sample script to quickly convert multiple Azure Service Connections to Workload identity federation:
