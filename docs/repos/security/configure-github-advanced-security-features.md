@@ -139,12 +139,8 @@ trigger:
   - main
 
 pool:
+  # Additional hosted image options are available: https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted#software
   vmImage: ubuntu-latest
-
-variables:
-  advancedsecurity.codeql.querysuite: security-extended
-  advancedsecurity.submittoadvancedsecurity: true
-  CODEQL_EXTRACTOR_JAVA_RUN_ANNOTATION_PROCESSORS: true
 
 steps:
 
@@ -156,13 +152,18 @@ steps:
 
   - task: AdvancedSecurity-Codeql-Autobuild@1    
 
-# It's possible that the the autobuild step does not execute, specifically if you are scanning a language like cpp, java, csharp, or swift.
-# If the above does not execute correctly, you can replace the Autobuild task with your customized build. E.g.:
+# It's possible that the the autobuild step does not execute successfully, specifically if you are scanning a language like cpp, java, csharp, or swift.
+# If the above does not execute correctly, you can usually resolve by providing credentials to package managers or configuring the build environment/dependencies as needed before the autobuild.
+# Otherwise, remove the Autobuild task and replace with your customized build commands.
+# - Ensure that all code to be scanned is compiled (often using a `clean` command to ensure you are building from a clean state).
+# - Disable the use of any build caching mechanisms as this can interfere with CodeQL's ability to capture all the necessary data during the build.
+# - Disable the use of any distributed/multithreaded/incremental builds as CodeQL needs to monitor executions of the compiler to construct an accurate representation of the application. 
 
 # If you had a Maven app:
 #   - task: Maven@4
 #     inputs:
 #       mavenPomFile: 'pom.xml'
+#       goals: 'clean package'
 #       publishJUnitResults: true
 #       testResultsFiles: '**/TEST-*.xml'
 #       javaHomeOption: 'JDKVersion'
@@ -181,7 +182,7 @@ steps:
 ```
 
 > [!TIP]
-> CodeQL analysis for Kotlin is currently in beta. During the beta, analysis of Kotlin will be less comprehensive than CodeQL analysis of other languages.
+> CodeQL analysis for Kotlin/Swift are currently in beta. During the beta, analysis of these languages will be less comprehensive than CodeQL analysis of others.
 > Use `java` to analyze code written in Java, Kotlin or both.
 > Use `javascript` to analyze code written in JavaScript, TypeScript, or both. 
 
