@@ -247,7 +247,7 @@ From the **Pipeline settings** pane you can configure the following settings.
 * **Processing of new run requests** - Sometimes you'll want to prevent new runs from starting on your pipeline. 
   * By default, the processing of new run requests is **Enabled**. This setting allows standard processing of all trigger types, including manual runs.
   * **Paused** pipelines allow run requests to be processed, but those requests are queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
-  * **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. 
+  * **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. All build policies using a disabled pipeline will show "Unable to queue Build" message next to the build policy in the PR overview window and the status of the build policy will be broken. 
 * **YAML file path** - If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
 * **Automatically link work items included in this run** - The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When **Automatically link work items included in this run** is selected, you must specify either a specific branch, or `*` for all branches, which is the default. If you specify a branch, work items are only associated with runs of that branch. If you specify `*`, work items are associated for all runs. 
 
