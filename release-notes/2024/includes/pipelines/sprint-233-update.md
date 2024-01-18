@@ -26,7 +26,7 @@ Take note of breaking changes and update your scripts accordingly:
 - [Breaking changes](/powershell/scripting/whats-new/what-s-new-in-powershell-74?view=powershell-7.4#breaking-changes&preserve-view=true) between PowerShell 7.3 & 7.4 LTS
 - [Breaking changes](/powershell/scripting/whats-new/what-s-new-in-powershell-73?view=powershell-7.4#breaking-changes-and-improvements&preserve-view=true) between PowerShell 7.2 LTS & 7.3
 - Updated argument parsing behavior controlled via
-[`$PSNativeCommandArgumentPassing`](/powershell/module/microsoft.powershell.core/about/about_preference_variables?view=powershell-7.4#psnativecommandargumentpassing&preserve-view=true)
+[`$PSNativeCommandArgumentPassing`](/powershell/module/microsoft.powershell.core/about/about_preference_variables?view=powershell-7.4#psnativecommandargumentpassing&preserve-view=true). For an example, see the sample script [below](#new-azure-service-connection-secrets-expire-in-three-months).
 
 ### New Azure service connection secrets expire in three months
 
