@@ -60,19 +60,18 @@ param (
     $OrganizationUrl
 ) 
 $apiVersion = "7.1"
+$PSNativeCommandArgumentPassing = "Standard" 
 
 #-----------------------------------------------------------
 # Log in to Azure
-az account show -o json 2>$null | ConvertFrom-Json | Set-Variable account
-if (!$account) {
-    az login --allow-no-subscriptions -o json | ConvertFrom-Json | Set-Variable account
-}
+$azdoResource = "499b84ac-1321-427f-aa17-267ca6975798"
+az login --allow-no-subscriptions --scope ${azdoResource}/.default
 $OrganizationUrl = $OrganizationUrl.ToString().Trim('/')
 
 #-----------------------------------------------------------
 # Retrieve the service connection
 $getApiUrl = "${OrganizationUrl}/${Project}/_apis/serviceendpoint/endpoints?authSchemes=ServicePrincipal&type=azurerm&includeFailed=false&includeDetails=true&api-version=${apiVersion}"
-az rest -u $getApiUrl -m GET --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "sort_by(value[?authorization.scheme=='ServicePrincipal' && data.creationMode=='Automatic' && !(isShared && serviceEndpointProjectReferences[0].projectReference.name!='${Project}')],&name)" -o json `
+az rest --resource $azdoResource -u "${getApiUrl} " -m GET --query "sort_by(value[?authorization.scheme=='ServicePrincipal' && data.creationMode=='Automatic' && !(isShared && serviceEndpointProjectReferences[0].projectReference.name!='${Project}')],&name)" -o json `
         | Tee-Object -Variable rawResponse | ConvertFrom-Json | Tee-Object -Variable serviceEndpoints | Format-List | Out-String | Write-Debug
 if (!$serviceEndpoints -or ($serviceEndpoints.count-eq 0)) {
     Write-Warning "No convertible service connections found"
@@ -90,6 +89,7 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
     $decision = $Host.UI.PromptForChoice([string]::Empty, $prompt, $choices, $serviceEndpoint.isShared ? 1 : 0)
 
     if ($decision -eq 0) {
+
         Write-Host "$($choices[$decision].HelpMessage)"
     } elseif ($decision -eq 1) {
         Write-Host "$($PSStyle.Formatting.Warning)$($choices[$decision].HelpMessage)$($PSStyle.Reset)"
@@ -102,11 +102,11 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
     # Prepare request body
     $serviceEndpoint.authorization.scheme = "WorkloadIdentityFederation"
     $serviceEndpoint.data.PSObject.Properties.Remove('revertSchemeDeadline')
+    $serviceEndpoint | ConvertTo-Json -Depth 4 | Write-Debug
     $serviceEndpoint | ConvertTo-Json -Depth 4 -Compress | Set-Variable serviceEndpointRequest
     $putApiUrl = "${OrganizationUrl}/${Project}/_apis/serviceendpoint/endpoints/$($serviceEndpoint.id)?operation=ConvertAuthenticationScheme&api-version=${apiVersion}"
-
     # Convert service connection
-    az rest -u $putApiUrl -m PUT -b $serviceEndpointRequest --headers content-type=application/json --resource 499b84ac-1321-427f-aa17-267ca6975798 -o json `
+    az rest -u "${putApiUrl} " -m PUT -b $serviceEndpointRequest --headers content-type=application/json --resource $azdoResource -o json `
             | ConvertFrom-Json | Set-Variable updatedServiceEndpoint
     
     $updatedServiceEndpoint | ConvertTo-Json -Depth 4 | Write-Debug
@@ -117,12 +117,4 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
     }
     Write-Host "Successfully converted service connection '$($serviceEndpoint.name)'"
 }
-```
-
-This script will list service connections in a given project that use a secret, and prompt to convert:
-
-```powershell
-./convert_azurerm_service_connection_to_oidc_simple.ps1 -Project PipelineSamples -OrganizationUrl https://dev.azure.com/contoso  
-Convert service connection 'created-with-secret'?
-[C] Convert  [S] Skip  [E] Exit  [?] Help (default is "C"):
 ```
