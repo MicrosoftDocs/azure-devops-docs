@@ -68,7 +68,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td><a href="/azure/devops/release-notes/2021/sprint-186-update#pat-lifecycle-management-api-general-availability" data-raw-source="[PAT lifecycle APIs](/azure/devops/release-notes/2021/sprint-186-update#pat-lifecycle-management-api-general-availability)">PAT lifecycle APIs</a></td>
          <td>General</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
-         <td>2022.1</td>
+         <td>N/A</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes" data-raw-source="[Control plane for personal access tokens (PAT)](/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)">Control plane for personal access tokens (PAT)</a></td>
@@ -100,20 +100,20 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q3</td>
          <td>N/A</td>
       </tr>
-       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
-         <td>General</td>
-         <td>2023 H2</td>
-         <td>N/A</td>
-      </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Workload Identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Workload Identity federation for Azure Deployments (GA)</a></td>
          <td>Pipelines</td>
          <td>2023 H2</td>
          <td>N/A</td>
       </tr>
+       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
+         <td>General</td>
+         <td>2024 Q1</td>
+         <td>N/A</td>
+      </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable alternate authentication credentials](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
          <td>General</td>
          <td>Future</td>
          <td>N/A</td>
@@ -500,11 +500,16 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
     </thead>
     <tbody>       
       <tr>
-        <td rowspan="20"><strong>2024 Q1</strong></td>
+        <td rowspan="21"><strong>2024 Q1</strong></td>
          <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview" data-raw-source="[Security Overview](/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview)">Security Overview</a></td>
         <td>General</td>
         <td>N/A</td>
       <tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
+         <td>General</td>
+         <td>N/A</td>
+      </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-3p-sarif" data-raw-source="[Third-party SARIF support](/azure/devops/release-notes/roadmap/2024/ghazdo-3p-sarif)">Third-party SARIF support</a></td>
         <td>General</td>
@@ -612,7 +617,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable alternate authentication credentials](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
         <td>General</td>
         <td>N/A</td>
       </tr>
