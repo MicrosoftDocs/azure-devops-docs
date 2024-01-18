@@ -119,9 +119,9 @@ An extension is composed of a set of files that includes a required manifest fil
                 if (typeof SDK !== 'undefined') {
                     console.log("SDK is defined. Trying to initialize...");
                     SDK.init();
-                    SDK.ready(function() {
+                    SDK.ready().then(() => {
                         console.log("SDK is ready");
-                        document.getElementById("name").innerText = SDK.getUser().name;
+                        document.getElementById("name").innerText = SDK.getUser().displayName;
                     });
                 } else {
                     console.log('SDK is not defined');
