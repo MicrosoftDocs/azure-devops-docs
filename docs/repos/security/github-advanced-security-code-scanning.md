@@ -56,7 +56,9 @@ To use code scanning, you need to first configure [GitHub Advanced Security for 
 The Advanced Security tab under Repos in Azure DevOps is the hub to view your code scanning alerts. 
 Select the **Code scanning** tab to view scanning alerts. You can filter by branch, state, pipeline, rule type, and severity. 
 
-There's no effect to results if pipelines or branches are renamed - it may take up to 24 hours before the new name is displayed.
+There's no effect to results if pipelines or branches are renamed - it may take up to 24 hours before the new name is displayed. 
+
+If you choose to run custom CodeQL queries, there is not by default a separate filter for alerts generated from different query packs. You can filter by rule, which is distinct for each query. 
 
 ![Screenshot of code scanning alerts for a repository](./media/code-scanning-alerts.png) 
 
@@ -103,10 +105,26 @@ To dismiss an alert:
 1. Select **Close** to submit and close the alert.
 1. The alert state changes from **Open** to **Closed** and your dismissal reason displays.
 
-
 ![Screenshot of how to dismiss a code scanning alert](./media/code-scanning-dismiss-alert.png)
 
 This only dismisses the alert for your selected branch. Other branches that contain the same vulnerability stay active until dismissed. Any alert that has been previously dismissed can be manually reopened. 
+
+## Using custom queries with CodeQL
+By default, CodeQL will run the [`security-extended`](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/codeql-query-suites#security-extended-query-suite) query pack to analyze your code. You can utilize custom CodeQL queries to write your own queries to find specific vulnerabilities and errors. 
+
+To find existing custom queries or to contribute your own custom query, see [Contributing to CodeQL](https://github.com/github/codeql/blob/main/CONTRIBUTING.md).
+
+### Analysis with custom queries
+
+To get started with custom queries, you need to write a valid query and save it in your local Azure DevOps repository. ?After writing a valid custom query, customize the [query pack]( https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/publishing-and-using-codeql-packs) and config file. For more information on config-file, [here](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#working-with-custom-configuration-files).? (what is the config file?) You can then use it in the query filters or create a pack. To learn more about how to write custom queries, see [DOC LINK](). You can customize the details of a custom query according to your need, but it must have at least a name and a rule id.
+
+?- `configfilepath` must be absolute relative to the repository root. For more information on `config-file`, [here](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#working-with-custom-configuration-files).
+- When providing a config file, be aware that `includepaths`, `ignorepaths`, or `querysuite` specified via input task or pipeline variable will be overwritten.
+  - `includepaths` / `ignorepaths` will be overwritten with values from `paths`/`paths-ignore`. if paths/paths-ignore are not defined in config file then we are still overwriting by not considering the values defined in includepaths/ignorepaths.
+   - `querysuite` will be overwritten with values from queries/packs. Be aware if you don't specify disable-default-query = true then codeql will run the queries from code-scanning query suite. 
+- `queries` filter from the config file doesn't support downloading queries from external repo (repos hosted in GitHub).
+- `packs` filter from the config file support downloading packs from external repo.
+   - Be ware if the pack is private in GitHub then users need to provide a GitHub access token via the init task as env and labeled as `GITHUB_TOKEN` (the scope of the token should be `read:packages`)'?
 
 ## Troubleshooting code scanning 
 
