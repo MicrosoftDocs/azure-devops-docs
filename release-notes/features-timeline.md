@@ -83,7 +83,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-azurerm-deployments" data-raw-source="[Workload Identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload Identity federation for Azure service connection (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-azurerm-deployments" data-raw-source="[Workload identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload identity federation for Azure service connection (preview)</a></td>
          <td>Pipelines</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q3</td>
          <td>N/A</td>
@@ -101,15 +101,15 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-azurerm-deployments" data-raw-source="[Workload Identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload Identity federation for Azure service connection (GA)</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-azurerm-deployments" data-raw-source="[Workload identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload identity federation for Azure service connection (GA)</a></td>
          <td>Pipelines</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2024 Q1</td>
+         <td>2024 Q1</td>
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-acr-deployments" data-raw-source="[Workload Identity federation for Docker service connection](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload Identity federation for Docker service connection</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-acr-deployments" data-raw-source="[Workload identity federation for Docker service connection](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload identity federation for Docker service connection</a></td>
          <td>Pipelines</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2024 H1</td>
+         <td>2024 H1</td>
          <td>N/A</td>
       </tr>
        <tr>
