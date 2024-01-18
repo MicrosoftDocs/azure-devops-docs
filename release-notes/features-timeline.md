@@ -291,7 +291,7 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
     </thead>
     <tbody>
       <tr>
-         <td><a href="/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent" data-raw-source="[Node 16 runner along with other runners](/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent)">Node 16 runner along with other runners</a></td>
+         <td><a href="/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent" data-raw-source="[Node 16 runner along with other runners](/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent)">Node 16 task runner in pipeline agent</a></td>
          <td>Pipelines</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q3</td>
          <td>2022.1</td>
@@ -324,7 +324,7 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
          <td><a href="/azure/devops/release-notes/roadmap/2023/install-old-runner" data-raw-source="[Ability to download and install old runners on self-hosted agents](/azure/devops/release-notes/roadmap/2023/install-old-runner)">Ability to download and install old runners on self-hosted agents</a></td>
          <td>Pipelines</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
-         <td>N/A</td>
+         <td>2022.1</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/remove-node-6" data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
@@ -333,9 +333,9 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/node-16-agent" data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/node-16-agent" data-raw-source="[Ship a Node 16+ only agent in addition to the one that has all versions](/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16+ only agent in addition to the one that has all versions</a></td>
          <td>Pipelines</td>
-         <td>Future</td>
+         <td>2024 Q1</td>
          <td>Future</td>
       </tr>
     </tbody>
