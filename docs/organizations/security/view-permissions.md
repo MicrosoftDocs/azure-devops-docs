@@ -1,26 +1,28 @@
 ---
 title: View permissions for yourself or others
 titleSuffix: Azure DevOps
-description: How to find what permissions you or a team member have, including project-level, collection-level, and object-level permissions 
+description: How you can view the permissions assigned to you or your team members, including project-level, collection-level, and object-level permissions. 
 ms.assetid:  
 ms.subservice: azure-devops-security
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 01/19/2024
 --- 
 
 # View permissions for yourself or others
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
+In this article, learn how to view your permissions or the permissions for other users in Azure DevOps. If you don't have permission to access a feature or function, you can request it from the right resource.
 
-Permissions are set at the collection, project, and object level as described in [Get started with permissions, access, and security groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
-
-> [!NOTE]
-> This article shows how to view permissions assigned to a user at the project-level or collection-level. However, the steps are similar when you work from the Security dialog of an object.
+You can set and view permissions at the following three levels:
+- [Project-level](#view-project-level-permissions)
+- [Organization or Collection-level](#view-organization-or-collection-level-permissions)
+- [Object-level](#view-object-level-permissions)
+ 
+For more information, see [Get started with permissions, access, and security groups](about-permissions.md).
 
 ## Prerequisites
 
@@ -29,6 +31,8 @@ Permissions are set at the collection, project, and object level as described in
 
 ## View project-level permissions
 
+Do the following steps to view project-level permissions for you or other users.
+
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
@@ -36,51 +40,47 @@ Permissions are set at the collection, project, and object level as described in
 
 #### [Preview page](#tab/preview-page) 
 
-1. Choose **Project Settings** and then **Permissions**.
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization/Your_Project}```).
+2. Select **Project settings** > **Permissions**.
 
-	![Open Project settings > Permissions](../settings/media/shared/open-project-settings-permissions-preview.png) 
+	:::image type="content" source="../settings/media/shared/open-project-settings-permissions-preview.png" alt-text="Screenshot shows Project settings and Permissions buttons.":::
 
-2. Choose **Users**. To filter the list, enter a name into the *Search groups or users* box.
+3. Select **Users**. To filter the list, enter a name into the *Search users* box.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of find a user or group name, preview page.](media/view-permissions/search-user-name-s154.png) 
+	:::image type="content" source="media/view-permissions/search-user-name-s154.png" alt-text="Screenshot shows finding a user, preview page.":::
 
-3. Choose the name you want. The project-level permissions for that user displays. These permissions are based on the groups the user belongs to or the permissions set specifically for the user's account.    
-	> [!div class="mx-imgBorder"]  
-	> ![Permissions set for a user account](media/view-permissions/user-permissions-s154.png) 
+   If your project administration is done using groups, **Expand search** after you begin to enter the user name.
 
-4. Choose **Member of** to see which security groups and teams that the user belongs to.  
+4. Choose the user you want. The project-level permissions for that user display. These permissions are based on the groups the user belongs to or the permissions set specifically for the user's account.    
+	
+    :::image type="content" source="media/view-permissions/user-permissions-s154.png" alt-text="Screenshot shows Permissions set for a user.":::
 
-    Here we see that *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group for several projects. 
+5. Select **Member of** to see which security groups and teams that the user belongs to.  
 
-    > [!div class="mx-imgBorder"]
-    > ![Permissions tab, User name, Members tab](media/view-permissions/member-of-view-s154.png)  
+    In the following example, *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group for several projects. 
+
+    :::image type="content" source="media/view-permissions/member-of-view-s154.png" alt-text="Screenshot shows Permissions, Member of tab.":::
 
 #### [Current page](#tab/current-page) 
 
-1. Choose **Project Settings** and then **Security**.
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization/Your_Project}```).
+1. Select **Project settings** > **Security**.
 
-    *To see the full image, click to expand*.
+   :::image type="content" source="media/view-permissions/open-security-project-level-vert.png" alt-text="Screenshot shows the Project settings and Security buttons.":::
 
-    > [!div class="mx-imgBorder"]  
-    > [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+1. Enter the user name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
 
-2. Begin entering the name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
+   :::image type="content" source="media/view-permissions/search-user-name-vert-nav.png" alt-text="Screenshot of find a user or group name, current page.":::
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of find a user or group name, current page.](media/view-permissions/search-user-name-vert-nav.png)  
+2. Choose the user name you want. The project-level permissions are based on the groups the user belongs to or the permissions set for the user.      
 
-3. Choose the name you want. The project-level permissions you have set are based on the groups you belong to or the permissions set for your account.      
+    :::image type="content" source="media/view-permissions/project-level-user-permissions-vsts.png" alt-text="Screenshot shows Project Administrators Group, Members tab.":::
 
-    > [!div class="mx-imgBorder"]
-    > ![Project Administrators Group, Members tab](media/view-permissions/project-level-user-permissions-vsts.png)  
+3. Select **Member of** to see which security groups the user belongs to.  
 
-4. Choose **Member of** to see which security groups the user belongs to.  
+    In the following example, *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group. 
 
-    Here we see that *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group. 
-
-    > [!div class="mx-imgBorder"]
-    > ![Security tab, User name, Members tab](media/view-permissions/project-level-member-of-permissions-vsts.png)  
+    :::image type="content" source="media/view-permissions/project-level-member-of-permissions-vsts.png" alt-text="Screenshot shows Security tab, User name, Members tab.":::
 
 * * * 
 
@@ -88,88 +88,83 @@ Permissions are set at the collection, project, and object level as described in
 
 ::: moniker range="< azure-devops"
 
-1. Open **Project Settings**. Choose the ![gear icon](media/icons/gear_icon.png) gear settings icon, and choose **Security**. 
+1. Open **Project settings**. Choose the ![gear icon](media/icons/gear_icon.png) gear settings icon, and select **Security**. 
 
-    > [!div class="mx-imgBorder"]
-    > ![Open Project Settings>Security, previous nav](media/view-permissions/open-project-level-security-horz.png)
+    :::image type="content" source="media/view-permissions/open-project-level-security-horz.png" alt-text="Screenshot shows Open Project Settings, Security, previous nav.":::
 
-2. Begin entering the name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
+2. Enter the user name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
 
-    ![Find a user account name](media/view-permissions/search-user-name.png)
+    :::image type="content" source="media/view-permissions/search-user-name.png" alt-text="Screenshot shows searching for user name.":::
 
-3. Choose the name you want. The project-level permissions you have set are based on the groups you belong to or the permissions set for your account.      
+3. Choose the user name you want. The project-level permissions are based on the groups the user belongs to or the permissions set for the user.      
 
-    > [!div class="mx-imgBorder"]
-    > ![Project level permissions for a user, TFS](media/view-permissions/project-level-user-permissions-tfs.png)  
+    :::image type="content" source="media/view-permissions/project-level-user-permissions-tfs.png" alt-text="Screenshot shows Project level permissions for a user.":::
 
-    For a description of each permission, see [Permissions and groups reference](permissions.md#project-level). 
+4. Select **Member of** to see which security groups the user belongs to.  
 
-4. Choose **Member of** to see which security groups the user belongs to.  
+    In the following example, *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group. 
 
-    Here we see that *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group. 
+    :::image type="content" source="media/view-permissions/view-permissions-member-of.png" alt-text="Screenshot shows Web portal, Security tab, User name, Members of.":::
 
-    ![Web portal, Security tab, User name, Members of](media/view-permissions/view-permissions-member-of.png)    
-
-    For a description of each group, see [Permissions and groups reference](permissions.md#project-level-groups). 
+For more information, see [Permissions and groups reference](permissions.md#project-level-groups). 
 
 ::: moniker-end
 
 ## View organization or collection-level permissions 
 
-Open admin settings for the organization or a project collection. 
+Do the following steps to view organization or collection-level permissions for you or other users.
 
 ::: moniker range="azure-devops"
 
-1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Select **Organization settings**. 
 
-    > [!div class="mx-imgBorder"]  
-    > ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
+    :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot shows Organization settings button."::: 
 
-2. Choose **Permissions**, the **Project Collection Administrators** group, and then **Members**. 
+2. Select **Permissions** > **Project Collection Administrators** > **Members**. 
 
-    > [!div class="mx-imgBorder"]  
-    > ![Permissions, Project Collection Administrators group, Members tab](media/view-permissions/project-collection-admin-users-s154.png)  
+    :::image type="content" source="media/view-permissions/project-collection-admin-users-s154.png" alt-text="Screenshot shows Members tab in Permissions for Project Collection Administrators group.":::
 
-3. Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
+3. View the user's permissions and group membership. For more information, see the previous steps in [View project-level permissions](#view-project-level-permissions).
 
 ::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
+2. Select **Admin settings**. 
 
-    > [!div class="mx-imgBorder"]  
-    > ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
+    :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot shows the Admin settings button.":::
 
-1. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
+3. Select **Security** > **Project Collection Administrators** > **Members**. 
 
-    > [!div class="mx-imgBorder"]  
-    > ![Security, Project Collection Administrators group, Members tab](media/view-permissions/collection-admins-vert.png)  
+    :::image type="content" source="media/view-permissions/collection-admins-vert.png" alt-text="Screenshot shows Security, Project Collection Administrators group, Members tab.":::
 
-2. Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
+4. View the user's permissions and group membership. For more information, see the previous steps in [View project-level permissions](#view-project-level-permissions).
 
 ::: moniker-end    
 
 ::: moniker range="tfs-2018"
 
-1. Choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: settings icon and select **Organization settings** or **Collection settings**.  
+1. Choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: settings icon and select **Collection settings**.  
 
-    > [!div class="mx-imgBorder"]  
-    > ![Open Organization Settings](../../media/settings/open-account-settings.png)  
+    :::image type="content" source="../../media/settings/open-account-settings.png" alt-text="Screenshot shows opening collection settings."::: 
 
-1. Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
+2. Select **Security** > **Project Collection Administrators** > **Members**. 
 
-   ![Security, Project Collection Administrators group, Members tab](media/view-permissions/collection-admins.png)
+   :::image type="content" source="media/view-permissions/collection-admins.png" alt-text="Screenshot shows Security, Project Collection Administrators group, Members tab.":::
 
-2. Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
+3. View the user's permissions and group membership. For more information, see the previous steps in [View project-level permissions](#view-project-level-permissions).
 
 ::: moniker-end
 
 ## View object-level permissions 
 
-You can define the security or permissions for a number of objects. You access them from the context menu of the object. 
+Do the following steps to view object-level permissions for you or other users.
 
-From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see the following articles: 
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Go to the object and open the Security dialog for the object.
+   For specific instructions, see the following articles: 
 
 :::row:::
    :::column span="1":::
@@ -181,10 +176,10 @@ From the web portal, open the Security dialog for the object whose permissions y
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Wiki &amp; Dashboard permissions
+   Wiki & dashboard permissions
    :::column-end:::
    :::column span="1":::   
-   - [README &amp; Wiki](../../project/wiki/manage-readme-wiki-permissions.md)
+   - [README & wiki](../../project/wiki/manage-readme-wiki-permissions.md)
    - [Dashboards](../../report/dashboards/dashboard-permissions.md)
    :::column-end:::
 :::row-end:::
@@ -203,7 +198,7 @@ From the web portal, open the Security dialog for the object whose permissions y
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Azure Boards/Work tracking permissions
+   Azure Boards & work tracking permissions
    :::column-end:::
    :::column span="1":::
    - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)
@@ -216,7 +211,6 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 > [!div class="nextstepaction"]
 > [Look up a member of the Project Administrators group](look-up-project-administrators.md) 
-
 
 ## Related articles
 

@@ -7,7 +7,7 @@ monikerRange: '> azure-devops-2019'
 
 # Protecting secrets in Azure Pipelines
 
-This article provides best practices on protecting secrets in Azure Pipelines. 
+This article provides best practices on protecting secrets in Azure Pipelines. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic keys.
 
 Azure Pipelines doesn't generate secret values. However, you might need to add a secret to a pipeline to store sensitive data like an API key. To learn more about setting secret variables, see [Set secret variables](../process/set-secret-variables.md).
 
