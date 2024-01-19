@@ -9,6 +9,6 @@ ms.topic: include
 
 We're thrilled to announce the introduction of support for custom CodeQL queries in Code scanning! This enables you to craft your own queries tailored to identify issues specific to your codebase. Now, you can create and publish packs containing custom queries, execute these queries in your pipelines, and customize the detection of vulnerabilities that are pertinent to your organization.
 
-For more information on utilizing custom queries for code scanning in GitHub Advanced Security for Azure DevOps, see to [Code scanning alerts for GitHub Advanced Security for Azure DevOps](https://review.learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops&preserve-view=true).
+For more information on utilizing custom queries for code scanning in GitHub Advanced Security for Azure DevOps, see to [Code scanning alerts for GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops#code-scanning-alerts).
 
 We value your input. If you have any questions or feedback, we encourage you to engage with our community at [Developer Community](https://developercommunity.visualstudio.com/home).
