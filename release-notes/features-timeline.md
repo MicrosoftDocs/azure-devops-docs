@@ -210,9 +210,9 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>    
        <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules (general availability)</a></td>
+         <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules</a></td>
          <td>Boards</td>
-         <td>2024 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
          <td>Future</td>
       </tr>  
        <tr>
@@ -250,7 +250,7 @@ These investments include:
       <tr>
          <td><a href="/azure/devops/release-notes/2023/sprint-230-update#github-integration---improved-ab-validation-private-preview" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/2023/sprint-230-update#github-integration---improved-ab-validation-private-preview)">Improved AB#{ID} validation</a></td>
          <td>Boards</td>
-         <td>2023 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -262,19 +262,19 @@ These investments include:
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item)">Show more details about a GitHub Pull Request</a></td>
          <td>Boards</td>
-         <td>2024 H1</td>
+         <td>2024 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
          <td>Boards</td>
-         <td>2024 H1</td>
+         <td>2024 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability when searching and linking GitHub repos to an Azure DevOps project</a></td>
          <td>Boards</td>
-         <td>Future</td>
+         <td>2024 Q2</td>
          <td>Future</td>
       </tr>
     </tbody>
@@ -506,7 +506,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
     </thead>
     <tbody>       
       <tr>
-        <td rowspan="21"><strong>2024 Q1</strong></td>
+        <td rowspan="20"><strong>2024 Q1</strong></td>
          <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview" data-raw-source="[Security Overview](/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview)">Security Overview</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -532,7 +532,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules (general availability)</a></td>
+        <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
@@ -540,12 +540,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td><a href="/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item)">Add link to GitHub Commit or Pull Request from work item</a></td>
         <td>Boards</td>         
         <td>Future</td>
-      </tr>      
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item)">Show more details about a GitHub Pull Request</a></td>
-         <td>Boards</td>      
-         <td>Future</td>
-      </tr>
+      </tr>        
       <tr>
         <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (general availability)</a></td>
         <td>Boards</td>
@@ -607,7 +602,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td>Future</td>
       </tr>
       <tr>
-      <td rowspan="2"><strong>2024 Q2</strong></td>
+      <td rowspan="5"><strong>2024 Q2</strong></td>
          <td><a href="/azure/devops/release-notes/roadmap/2023/reduce-time-to-filter" data-raw-source="[Reduce time to filter test plans and test suites in copy and import operations](/azure/devops/release-notes/roadmap/2022/reduce-time-to-filter)">Reduce time to filter test plans and test suites in copy and import operations</a></td>
         <td>Test Plans</td>
         <td>Future</td>
@@ -617,7 +612,22 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
-      <td rowspan="28"><strong>Future</strong></td>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item)">Show more details about a GitHub Pull Request</a></td>
+         <td>Boards</td>      
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
+         <td>Boards</td>        
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability to link more than 500 GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability to link more than 500 GitHub repos to an Azure DevOps project</a></td>
+         <td>Boards</td>         
+         <td>Future</td>
+      </tr> 
+      <td rowspan="27"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -641,17 +651,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
         <td>Future</td>
-      </tr>
-       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
-         <td>Boards</td>        
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability to link more than 500 GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability to link more than 500 GitHub repos to an Azure DevOps project</a></td>
-         <td>Boards</td>         
-         <td>Future</td>
-      </tr>  
+      </tr>      
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>
