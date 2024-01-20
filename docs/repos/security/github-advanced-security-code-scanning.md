@@ -110,13 +110,23 @@ To dismiss an alert:
 This only dismisses the alert for your selected branch. Other branches that contain the same vulnerability stay active until dismissed. Any alert that has been previously dismissed can be manually reopened. 
 
 ## Using custom queries with CodeQL
-By default, CodeQL will run the [`security-extended`](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/codeql-query-suites#security-extended-query-suite) query pack to analyze your code. You can utilize custom CodeQL queries to write your own queries to find specific vulnerabilities and errors. 
+By default, if you do not have a custom configuration file specified in your pipeline setup, CodeQL will run the [`security-extended`](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/codeql-query-suites#security-extended-query-suite) query pack to analyze your code. You can utilize custom CodeQL queries to write your own queries to find specific vulnerabilities and errors. You will also need to create a custom configuration file to modify CodeQL's default analysis.
 
 To find existing custom queries or to contribute your own custom query, see [Contributing to CodeQL](https://github.com/github/codeql/blob/main/CONTRIBUTING.md).
 
 ### Analysis with custom queries
 
-To get started with custom queries, you need to write a valid query and save it in your local Azure DevOps repository. ?After writing a valid custom query, customize the [query pack]( https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/publishing-and-using-codeql-packs) and config file. For more information on config-file, [here](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#working-with-custom-configuration-files).? (what is the config file?) You can then use it in the query filters or create a pack. To learn more about how to write custom queries, see [DOC LINK](). You can customize the details of a custom query according to your need, but it must have at least a name and a rule id.
+The quickest way to start with a custom query is to write a query and save it in your local Azure DevOps repository. You can customize the details of a custom query according to your need, but it must have at least a name and a rule ID. To learn more about how to write your own CodeQL query, see [Wriiting CodeQL queries](https://codeql.github.com/docs/writing-codeql-queries/). You can also bundle multiple queries together into a query pack, or utilize packs published by other people. To learn more, see [Publishing and using CodeQL packs](https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/publishing-and-using-codeql-packs). 
+
+### Using a custom configuration file
+
+A custom configuration file is a way to manage what queries are run during CodeQL's analysis against your code. You can specify additional queries or query packs to be run, and change or disable the default CodeQL queries.  
+
+To include a specific query you want to include, specify the query with a name and path to the location of the query file (.ql) in your repository. 
+
+To include a specific pack you want to include, specify the path to the query path. You can specify any number of CodeQL query packs to run in your configuration file. 
+
+
 
 ?- `configfilepath` must be absolute relative to the repository root. For more information on `config-file`, [here](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#working-with-custom-configuration-files).
 - When providing a config file, be aware that `includepaths`, `ignorepaths`, or `querysuite` specified via input task or pipeline variable will be overwritten.
