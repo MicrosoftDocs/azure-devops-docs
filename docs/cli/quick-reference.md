@@ -100,7 +100,7 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       #### Teams
       - [Add a team](../organizations/settings/add-teams.md#add-team)
       - [Delete a team](../organizations/settings/rename-remove-team.md#delete-team)
-      - [List team members](../organizations/security/add-users-team-project.md#list-members)
+      - [List team members](../organizations/security/add-users-team-project.md#list-team-members)
       - [List teams](../organizations/settings/add-teams.md#list-teams) 
       - [Show team details](../organizations/security/add-users-team-project.md#show-details)
       - [Update a team](../organizations/settings/rename-remove-team.md#update-team) 
