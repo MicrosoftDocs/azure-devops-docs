@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 01/19/2024
+ms.date: 01/18/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -202,15 +202,9 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q2</td>
          <td>Future</td>
-      </tr>                  
+      </tr>     
       <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automated team work item rules](azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules (preview)</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q3</td>
-         <td>Future</td>
-      </tr>    
-       <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available)">Automated team work item rules</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
          <td>Future</td>
@@ -248,7 +242,7 @@ These investments include:
     </thead>
     <tbody>
       <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-230-update#github-integration---improved-ab-validation-private-preview" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/2023/sprint-230-update#github-integration---improved-ab-validation-private-preview)">Improved AB#{ID} validation</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-233-update#github-integration---improved-ab-validation-is-generally-available" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/2024/sprint-233-update#github-integration---improved-ab-validation-is-generally-available)">Improved AB#{ID} validation</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q4</td>
          <td>Future</td>
@@ -506,7 +500,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
     </thead>
     <tbody>       
       <tr>
-        <td rowspan="20"><strong>2024 Q1</strong></td>
+        <td rowspan="21"><strong>2024 Q1</strong></td>
          <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview" data-raw-source="[Security Overview](/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview)">Security Overview</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -532,7 +526,12 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules</a></td>
+        <td><a href="/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available)">Automated team work item rules</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/2024/sprint-233-update#github-integration---improved-ab-validation-is-generally-available" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/2024/sprint-233-update#github-integration---improved-ab-validation-is-generally-available)">Improved GitHub app and AB#{ID} validation</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
