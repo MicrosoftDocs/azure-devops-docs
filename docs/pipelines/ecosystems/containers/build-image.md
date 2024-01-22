@@ -86,11 +86,7 @@ This quickstart shows how to build a container image for app deployment using Az
 
 1. When you add the **azure-pipelines.yml** file to your repository, you're prompted to add a commit message. Enter a message, and then select **Save and run**.
 
-For more information about building Docker images, see the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) used by this sample application. You can also directly invoke Docker commands using a [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2).
-
-The container images are built and stored on the agent.  You can push your image to Google Container Registry, Docker Hub, or Azure Container Registry.  For more information, see [Push an image to Docker Hub or Google Container Registry](push-image.md) or [Push an image to Azure Container Registry](acr-template.md).
-
-When using self-hosted agents, be sure that Docker is installed on the agent's host and the Docker engine/daemon is running.  
+When using self-hosted agents, be sure that Docker is installed on the agent's host and the Docker engine/daemon is running with elevated privileges.  
 
 ::: moniker-end
 
@@ -138,12 +134,11 @@ steps:
 1. Select **Save and run**.
 1. On the **Save and run** page, select **Save and run** again.
 
+::: moniker-end
+
 For more information about building Docker images, see the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) used by this sample application. You can also directly invoke Docker commands using a [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2).
 
 The container images are built and stored on the agent.  You can push your image to Google Container Registry, Docker Hub, or Azure Container Registry.  For more information, see [Push an image to Docker Hub or Google Container Registry](push-image.md) or [Push an image to Azure Container Registry](acr-template.md).
-
-::: moniker-end
-
 ## Clean up resources
 
 If you don't plan to continue using this application, delete your pipeline and code repository.
