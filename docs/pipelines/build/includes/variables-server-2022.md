@@ -118,7 +118,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 
 | Variable | Description | Available in [templates](../../process/templates.md)? |
 |:---------|:------------|:------------------------------------------------------|
-| System.AccessToken | [Use the OAuth token to access the REST API](../../scripts/powershell.md#use-the-oauth-token-to-access-the-rest-api). <br><br>[Use System.AccessToken from YAML scripts](../variables.md#systemaccesstoken). <br><br>This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. | Yes |
+| System.AccessToken | [Use the OAuth token to access the REST API](../../scripts/powershell.md#example-powershell-script-access-rest-api). <br><br>[Use System.AccessToken from YAML scripts](../variables.md#systemaccesstoken). <br><br>This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. | Yes |
 | System.CollectionId | The GUID of the TFS collection or Azure DevOps organization. | Yes |
 | System.CollectionUri | The URI of the TFS collection or Azure DevOps organization. For example: `https://dev.azure.com/fabrikamfiber/`. | Yes |
 | System.DefaultWorkingDirectory | [!INCLUDE [include](../includes/variables-build-sources-directory.md)] | Yes |

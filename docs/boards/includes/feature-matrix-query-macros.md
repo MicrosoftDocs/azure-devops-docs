@@ -68,7 +68,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      [@Project](../queries/using-queries.md#across-projects)  
+      [@Project](../queries/using-queries.md)  
    :::column-end:::
    :::column span="1":::
       Find work defined in one or more projects. 

@@ -55,7 +55,7 @@ Most build and test integration fields have a data type of String, PlainText, or
    :::column-end:::
    :::column span="3":::
    `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]`, `Contains`, `Does Not Contain`, `In`, `Not In`, `In Group`, `Not In Group`, `Was Ever`  
-   **Macros**: `[Any]`, valid with the **Work Item Type** field; and `@Project`, valid with the **Team Project** field. The system automatically defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md#across-projects). 
+   **Macros**: `[Any]`, valid with the **Work Item Type** field; and `@Project`, valid with the **Team Project** field. The system automatically defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md). 
    :::column-end:::
 :::row-end:::
  

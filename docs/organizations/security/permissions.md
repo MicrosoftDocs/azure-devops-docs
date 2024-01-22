@@ -59,7 +59,7 @@ To learn how to add users to a group or set a specific permission that you can m
   **Work tracking**  
      - [Area and iteration paths](set-permissions-access-work-tracking.md)  
      - [Queries and folders](../../boards/queries/set-query-permissions.md)  
-     - [Plan permissions](set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans)  
+     - [Plan permissions](set-permissions-access-work-tracking.md)  
      - [Customize process](set-permissions-access-work-tracking.md#process-permissions)  
   ---
   **Reporting**
