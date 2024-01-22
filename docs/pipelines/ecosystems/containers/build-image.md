@@ -3,7 +3,7 @@ title: Build container images to deploy apps
 description: Build Linux or Windows container images for app deployment using Azure Pipelines.
 ms.topic: quickstart
 ms.assetid: 4fd7bae1-7484-4bb2-9bb9-a95ef17cb8fb
-ms.date: 01/12/2024
+ms.date: 01/23/2024
 monikerRange: '>=azure-devops-2020'
 ---
 
@@ -24,17 +24,19 @@ This quickstart shows how to build a container image for app deployment using Az
   https://github.com/MicrosoftDocs/pipelines-javascript-docker
   ```
 - A Azure pipeline Windows or Linux agent with Docker installed.
-- 
+
 - ::: moniker-end
-- 
+
 ::: moniker range="< azure-devops"
 
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - A GitHub account. If you don't have one, [sign up for free](https://github.com/join). 
 - A GitHub repository with a Dockerfile. If you don't have a repository to use, fork the following repository, which contains a sample application and a Dockerfile:
+
   ```text
   https://github.com/MicrosoftDocs/pipelines-javascript-docker
   ```
+
 - An agent with Docker installed.
 
 ::: moniker-end
@@ -88,53 +90,57 @@ For more information about building Docker images, see the [Docker task](/azure/
 
 The container images are built and stored on the agent.  You can push your image to Coogle Container Registry, Docker Hub, or Azure Container Registry.  For more information, see [Push an image to Docker Hub or Google Container Registry](push-image.md) or [Push an image to Azure Container Registry](acr-template.md).
 
+When using self-hosted agents, be sure that Docker is installed on the agent's host and the Docker engine/daemon is running.  
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-1. Go to your your project in your collection and create a project.
+To build the image, Docker must be installed on the agent's host and the Docker engine/daemon must be running with elevated privileges.  Use the following stepe to create your pipeline using the YAML pipeline editor.
+
+1. Go to your collection and create a project.
 1. In your project, select **Pipelines**.
-1. Gelect **Create Pipeline**.
+1. Select **Create Pipeline**.
 1. Select **GitHub Enterprise Server** as the location for your source code.
 1. If you haven't already, authorize Azure Pipelines to connect to your GitHub Enterprise Server account.
     1. Select **Connect to GitHub Enterprise Server**.
     1. Enter your account details, and then select **Verify and save**.
-1. Select your repository, and then select **Starter pipeline**.
+1. Select your repository.
    - If you're redirected to GitHub to install the Azure Pipelines app, select **Approve and install**.
 1. To configure your pipelne, select the **Build a Docker image** template.
-1. Select **Validate and configure**.
+1. Replace the contents of the YAML file with the following code. Replace the pool name with the name of the pool that contains your self-hosted agent. 
+
+```yml
+# Docker
+# Build a Docker image
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- main
+
+pool:
+  name: default
+  demand: docker
+
+variables:
+  imageName: 'pipelines-javascript-docker'
+
+steps:
+ - task: Docker@2
+   displayName: Build an image
+   inputs:
+     repository: $(imageName)
+     command: build
+     Dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'
+
+```
+
 1. Select **Save and run**.
 1. On the **Save and run** page, select **Save and run** again.
-1. 
-
-1. Replace the contents of **azure-pipelines.yml** with the following code. Based on whether you're deploying a Linux or Windows app, make sure to respectively set `vmImage` to either `ubuntu-latest` or `windows-latest`.
-
-   ```yaml
-    trigger:
-    - main
-    
-    pool:
-      vmImage: 'ubuntu-latest' 
-    
-    variables:
-      imageName: 'pipelines-javascript-docker'
-    
-    steps:
-    - task: Docker@2
-      displayName: Build an image
-      inputs:
-        repository: $(imageName)
-        command: build
-        Dockerfile: app/Dockerfile
-    ```
-
-1. When you're done, select **Save and run**.
-
-1. When you add the **azure-pipelines.yml** file to your repository, you're prompted to add a commit message. Enter a message, and then select **Save and run**.
 
 For more information about building Docker images, see the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) used by this sample application. You can also directly invoke Docker commands using a [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2).
 
-The container images are built and stored on the agent.  You can push your image to Coogle Container Registry, Docker Hub, or Azure Container Registry.  For more information, see [Push an image to Docker Hub or Google Container Registry](push-image.md) or [Push an image to Azure Container Registry](acr-template.md).
+The container images are built and stored on the agent.  You can push your image to Google Container Registry, Docker Hub, or Azure Container Registry.  For more information, see [Push an image to Docker Hub or Google Container Registry](push-image.md) or [Push an image to Azure Container Registry](acr-template.md).
 
 ::: moniker-end
 
