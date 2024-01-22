@@ -38,6 +38,20 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="6"><a href="2024/sprint-233-update.md" data-raw-source="[19 January   2024](2024/sprint-233-update.md)"> 19 January  2024</a></td>
+    <td>Custom CodeQL queries now supported in GitHub Advanced Security for Azure DevOps</td><td>General</td><td>Future</td></tr>
+    <td>GitHub Integration - Improved AB# validation is generally available</td><td>Boards</td><td>Future</td></tr>
+    <td>Team Automation Rules is generally available</td><td>Boards</td><td>Future</td></tr>
+    <td>Update deprecated tasks before January 31</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Microsoft hosted agents use PowerShell 7.4</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New Azure service connection secrets expire in three months</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="2"><a href="2024/sprint-232-update.md" data-raw-source="[11 January   2024](2024/sprint-232-update.md)"> 11 January  2024</a></td>
+    <td>Select a geography when creating a new Azure DevOps organization</td><td>General</td><td>Future</td></tr>
+    <td>Code Coverage results for folders</td><td>Reporting</td><td>Future</td></tr>
+<tr>
+<tr>
     <td rowspan="3"><a href="2023/sprint-231-update.md" data-raw-source="[5 December   2023](2023/sprint-231-update.md)"> 5 December  2023</a></td>
     <td>Switch between HTML or Markdown on comments</td><td>Boards</td><td>Future</td></tr>
     <td>Improved YAML validation</td><td>Pipelines</td><td>N/A</td></tr>

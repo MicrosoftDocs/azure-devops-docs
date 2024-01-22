@@ -8,6 +8,13 @@
     items:
     - name: By release date 
       items:
+        - name: "2024"
+          items:
+          - name: January 18
+            href: 2024/sprint-233-update.md
+          - name: January 11
+            href: 2024/sprint-232-update.md
+          expanded: true
         - name: "2023"
           items:
           - name: December 5
@@ -46,7 +53,7 @@
             href: 2023/sprint-215-update.md
           - name: January 12
             href: 2023/sprint-214-update.md
-          expanded: true
+          expanded: false
         - name: "2022"
           items:
           - name: December 8
@@ -236,6 +243,11 @@
       items:
       - name: Azure Boards
         items:
+        - name: "2024"
+          items:
+          - name: January 18
+            href: 2024/boards/sprint-233-update.md
+          expanded: true
         - name: "2023"
           items:
           - name: December 5
@@ -266,7 +278,7 @@
             href: 2023/boards/sprint-215-update.md
           - name: January 12
             href: 2023/boards/sprint-214-update.md
-          expanded: true
+          expanded: false
         - name: "2022"
           items:
           - name: December 8
@@ -364,6 +376,9 @@
             href: 2019/boards/sprint-146-update.md
       - name: Azure Repos
         items:
+        - name: "2024"
+          items:
+          expanded: false  
         - name: "2023"
           items:
           - name: September 14
@@ -372,6 +387,7 @@
             href: 2023/repos/sprint-226-update.md
           - name: July 11
             href: 2023/repos/sprint-224-update.md
+          expanded: false
         - name: "2021"
           items:
             - name: September 8
@@ -429,6 +445,11 @@
           expanded: false
       - name: Azure Pipelines
         items:
+        - name: "2024"
+          items:
+          - name: January 18
+            href: 2024/pipelines/sprint-233-update.md
+          expanded: false
         - name: "2023"
           items:
           - name: December 5
@@ -630,6 +651,9 @@
         expanded: false
       - name: Azure Artifacts
         items:
+        - name: "2024"
+          items:
+          expanded: false
         - name: "2023"
           items:
           - name: October 26
@@ -696,6 +720,13 @@
         expanded: false
       - name: General
         items:
+        - name: "2024"
+          items:
+          - name: January 18
+            href: 2024/general/sprint-233-update.md
+          - name: January 11
+            href: 2024/general/sprint-232-update.md
+          expanded: true  
         - name: "2023"
           items:
           - name: November 16
@@ -718,7 +749,7 @@
             href: 2023/general/sprint-217-update.md
           - name: January 12
             href: 2023/general/sprint-214-update.md
-          expanded: true  
+          expanded: false  
         - name: "2022"
           items:
           - name: October 11
@@ -800,6 +831,11 @@
         expanded: false
       - name: Reporting
         items:
+        - name: "2024"
+          items:
+          - name: January 11
+            href: 2024/reporting/sprint-232-update.md
+          expanded: true 
         - name: "2023"
           items:
           - name: November 16
@@ -818,7 +854,7 @@
             href: 2023/reporting/sprint-217-update.md
           - name: February 7
             href: 2023/reporting/sprint-216-update.md
-          expanded: true   
+          expanded: false   
         - name: "2022"
           items:
           - name: October 11

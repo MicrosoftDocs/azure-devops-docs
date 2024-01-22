@@ -28,8 +28,8 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 
 - [Universal Packages - download specific files](../artifacts/quickstarts/universal-packages.md#download-specific-files)
 - [Create a feed](../artifacts/quickstarts/universal-packages.md) 
-- [Download a universal package](../artifacts/quickstarts/universal-packages.md#download-universal-packages) 
-- [Publish a universal package](../artifacts/quickstarts/universal-packages.md#publish-universal-packages) 
+- [Download a universal package](../artifacts/quickstarts/universal-packages.md) 
+- [Publish a universal package](../artifacts/quickstarts/universal-packages.md) 
  
 ## Azure Boards
 
@@ -210,7 +210,7 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Define a custom pull request view](../repos/git/view-pull-requests.md#define-custom-pr-view)
       - [Show pull request details](../repos/git/view-pull-requests.md#open-pr)
       - [Set vote on a pull request](../repos/git/review-pull-requests.md#set-vote)
-      - [Reset vote on a pull request](../repos/git/review-pull-requests.md#reset-vote)
+      - [Reset vote on a pull request](../repos/git/review-pull-requests.md)
       - [Complete or update a pull request](../repos/git/complete-pull-requests.md#complete-the-pull-request)
       - [Set pull request completion options](../repos/git/complete-pull-requests.md#set-completion-options)
       - [Set pull request to autocomplete](../repos/git/complete-pull-requests.md#complete-automatically)

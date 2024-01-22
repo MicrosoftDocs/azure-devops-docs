@@ -123,7 +123,7 @@ The following types of links help you manage the various relationships between w
 |**GitHub link type**    | Connects a work item to a GitHub repository commit, issue, or pull request        |
 |**Work link type**    | Links work items including select test case management work items  |
 
-For more information about link types, including parent/child, related, predecessor-successor, and so on, see [Link type reference/Work link types](../queries/link-type-reference.md#work-link-types).
+For more information about link types, including parent/child, related, predecessor-successor, and so on, see [Link type reference/Work link types](../queries/link-type-reference.md#work-link-type).
 
 ## Link work items to various objects
 
@@ -145,7 +145,7 @@ To link work items to various objects, do the following steps.
 > There are other features that you can use to quickly link or change links that use the **Parent/Child** link type (some features are version-dependent, see the linked articles for details).
 > - To link backlog items to portfolio backlog items or to change the link structure among these items, [use the mapping pane to organize your backlog](../backlogs/organize-backlog.md). Or, you can choose to **Show Parents** and [drag-and-drop items within the tree hierarchy](organize-backlog.md).
 > -  To create and link tasks to backlog items, [use the sprint backlog page](../sprints/assign-work-sprint.md); from the web portal you can also drag-and-drop items to change the link structure. 
-> -  To indent (![Indent](../queries/media/IC588323.png)), outdent (![Outdent](../queries/media/IC588324.png)), and change the link structure of a tree hierarchy, [reparent and reorder items from a backlog in the web portal](../backlogs/organize-backlog.md), or use a [tree query in Team Explorer](../queries/using-queries.md#tree-query).
+> -  To indent (![Indent](../queries/media/IC588323.png)), outdent (![Outdent](../queries/media/IC588324.png)), and change the link structure of a tree hierarchy, [reparent and reorder items from a backlog in the web portal](../backlogs/organize-backlog.md), or use a [tree query in Team Explorer](../queries/using-queries.md).
 > - To add or delete work items or change the link structure, you can use Excel. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
 ## Link work items to other work items

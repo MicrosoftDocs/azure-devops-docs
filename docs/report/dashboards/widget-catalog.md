@@ -174,7 +174,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       <a id="chart-wit-widget"></a>   
       Adds a tile to display a progress or trend chart that builds off a shared work item query.   
         
-      From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).      
+      From the configuration dialog, select a shared query and [specify the chart type and values](charts.md).      
    :::column-end:::
 :::row-end:::
 :::row:::

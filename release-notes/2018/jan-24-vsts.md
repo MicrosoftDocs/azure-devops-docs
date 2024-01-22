@@ -1,7 +1,5 @@
 ---
 title: Improved GitHub builds and suggested work item paths – VSTS Sprint 129 Update
-author: alexcnichols
-ms.author: alexn
 ms.date: 1/24/2018
 ms.topic: article
 ms.manager: jillfra

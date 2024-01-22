@@ -114,9 +114,9 @@ Your Kanban board is highly configurable to support your team's workflow. Each t
    :::column span="2":::
    - [Add or remove fields from cards](customize-cards.md)
    - [Define card styles](customize-cards.md#style-rule)
-   - [Apply tag colors](customize-cards.md#color-tags)
-   - [Enable/disable annotations](customize-cards.md#annotations)
-   - [Define inline test behavior on cards](customize-cards.md#tests) 
+   - [Apply tag colors](customize-cards.md)
+   - [Enable/disable annotations](customize-cards.md)
+   - [Define inline test behavior on cards](customize-cards.md) 
    - [Add details and estimates](../backlogs/create-your-backlog.md#estimates) to your backlog items
    - [Define tasks or child items for backlog items](add-task-checklists.md) 
    - [Add, run, and update inline tests](add-run-update-tests.md) 

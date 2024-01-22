@@ -26,7 +26,7 @@ ms.date: 11/10/2023
 
 ::: moniker range="tfs-2018"
 
-Azure Artifacts comes pre-installed in TFS 2018. If this is your first time using your feed, you might be prompted to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses-in-tfs).
+Azure Artifacts comes pre-installed in TFS 2018. If this is your first time using your feed, you might be prompted to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses).
 
 1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 

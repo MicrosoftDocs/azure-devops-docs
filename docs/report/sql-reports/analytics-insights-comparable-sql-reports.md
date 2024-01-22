@@ -86,7 +86,7 @@ The following table summarizes Analytics reports, widgets, and other tools that 
       Displays an area chart showing remaining and completed hours of work for a team sprint.  
    :::column-end:::
    :::column span="1":::
-      - Configure the [Sprint burndown widget](../dashboards/team-velocity.md#add-the-velocity-widget-to-your-dashboard) on a team dashboard, choosing the **Task backlog** and **Remaining Work**.  
+      - Configure the [Sprint burndown widget](../dashboards/team-velocity.md) on a team dashboard, choosing the **Task backlog** and **Remaining Work**.  
    :::column-end:::
 :::row-end:::
 ---
@@ -118,8 +118,8 @@ The following table summarizes Analytics reports, widgets, and other tools that 
       Displays an area trend chart for planned work and work added after the start of the sprint.  
    :::column-end:::
    :::column span="1":::
-      - Configure the [Sprint burndown widget](../dashboards/team-velocity.md#add-the-velocity-widget-to-your-dashboard) on a team dashboard, the widget will show total scope increase. 
-      - Configure a query at the start of a sprint to track work moved in or moved out of a sprint. To learn how, see [Scrum overview, List work items added after the start of the sprint](../../boards/sprints/scrum-overview.md#list-work-items-added-after-the-start-of-the-sprint) and [List work items moved out of the sprint](../../boards/sprints/scrum-overview.md#ist-work-items-moved-out-of-the-sprint). 
+      - Configure the [Sprint burndown widget](../dashboards/team-velocity.md) on a team dashboard, the widget will show total scope increase. 
+      - Configure a query at the start of a sprint to track work moved in or moved out of a sprint. To learn how, see [Scrum overview, List work items added after the start of the sprint](../../boards/sprints/scrum-overview.md#list-work-items-added-after-the-start-of-the-sprint) and [List work items moved out of the sprint](../../boards/sprints/scrum-overview.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -129,7 +129,7 @@ The following table summarizes Analytics reports, widgets, and other tools that 
       Displays a column chart showing the level of Effort completed by the team for each sprint within the selected time period.  
    :::column-end:::
    :::column span="1":::
-      - Configure the [Velocity widget](../dashboards/team-velocity.md#add-the-velocity-widget-to-your-dashboard) on a team dashboard.
+      - Configure the [Velocity widget](../dashboards/team-velocity.md) on a team dashboard.
       - View the [Built-in velocity report](../dashboards/team-velocity.md#view-the-velocity-in-context-report). 
    :::column-end:::
 :::row-end:::
@@ -158,7 +158,7 @@ The following table summarizes Analytics reports, widgets, and query charts that
       Presents a stacked area chart of bug status, pie chart for bug priority, and assignment of bugs.   
    :::column-end:::
    :::column span="1":::
-      - Define a team dashboard and use three [Chart work items](../dashboards/charts.md#add-chart-widget) widgets to recreate similar information.  
+      - Define a team dashboard and use three [Chart work items](../dashboards/charts.md) widgets to recreate similar information.  
       - Use Power BI to generate a [Bug trends report](../powerbi/sample-boards-bugtrend.md) and define three different charts based on the data.  
    :::column-end:::
 :::row-end:::

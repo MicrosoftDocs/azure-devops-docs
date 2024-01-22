@@ -148,8 +148,8 @@ For detailed information on each configuration option, you can explore the follo
       **Cards**
       - [Add fields](../../boards/boards/customize-cards.md)
       - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
-      - [Add tag colors](../../boards/boards/customize-cards.md#assign-a-color-to-a-tag)
-      - [Enable annotations](../../boards/boards/customize-cards.md#enable-annotations)
+      - [Add tag colors](../../boards/boards/customize-cards.md)
+      - [Enable annotations](../../boards/boards/customize-cards.md)
       - [Configure inline tests](../../boards/boards/customize-cards.md#configure-inline-tests)
    :::column-end:::
    :::column span="1":::

@@ -66,7 +66,7 @@ You can add, modify, publish, and refresh work items using any query type and li
 
 [Use a flat list](../../queries/using-queries.md#flat-list) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. 
 
-[Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their tree-topology links. Do the following best practices:
+[Use a tree list](../../queries/using-queries.md) to bulk add or modify work items and their tree-topology links. Do the following best practices:
 
 ::: moniker range="azure-devops" 
 - Use an **input list, flat list**: To import a list of work items or create new work items, no hierarchy   
@@ -163,7 +163,7 @@ You can and can't do the following tasks from an Excel worksheet:
 
 - Add tags and bulk update work items with tags as described in [Add work item tags to categorize and filter lists and boards](../../queries/add-tags-to-work-items.md). Add the **Tags** field to your worksheet. Add multiple tags separated by a semicolon (;). 
 - Add simple text to a rich-text field, but if you're updating several work items in bulk, you might lose formatting in existing work items. 
-- Work offline and then reconnect and publish your changes. For more information, see [Connect Azure Boards to an Office client, Work offline, and reconnect](track-work.md#work-offline).
+- Work offline and then reconnect and publish your changes. For more information, see [Connect Azure Boards to an Office client, Work offline, and reconnect](track-work.md).
 
 **Can't do:**
 
@@ -197,7 +197,7 @@ You can and can't do the following tasks from an Excel worksheet:
 
 ## Import work items as a flat list 
 
-1. Open Excel and connect to your Azure Boards project. Use one of the four methods provided in [Connect Azure DevOps project to Excel](track-work.md#excel).
+1. Open Excel and connect to your Azure Boards project. Use one of the four methods provided in [Connect Azure DevOps project to Excel](track-work.md).
 
 	> [!NOTE]   
 	> When you connect to Azure Boards in the cloud, the **Team Project Collection** is automatically selected as there is only one collection associated with your Azure DevOps Services organization. When you connect to Azure Boards in an on-premises server, you choose the **Team Project Collection** prior to choosing the project.  
@@ -337,7 +337,7 @@ The easiest way to bulk update many work items is to create a query with the wor
 
 1. From the web portal or Visual Studio, create the work item query that contains the work items you want to update. For more information, see [Create and save managed queries with the query editor](../../queries/using-queries.md). 
 
-2. Open Excel and connect to your Azure Boards project. Use one of the four methods provided in [Connect Azure DevOps project to Excel](track-work.md#excel).
+2. Open Excel and connect to your Azure Boards project. Use one of the four methods provided in [Connect Azure DevOps project to Excel](track-work.md).
 
 3. If you opened your query from the web portal or Visual Studio, you're done. Make any changes you want. Open [**Choose Columns**](#choose-columns), add fields, make assignments, and publish your changes.  
 
