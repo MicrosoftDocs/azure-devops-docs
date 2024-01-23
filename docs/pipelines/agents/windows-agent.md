@@ -140,7 +140,7 @@ If you choose to run as a service (which we recommend), the username you run as 
 
 ### Run interactively
 
-If you configured the agent to run interactively, execute the command:
+If you configured the agent to run interactively, run the following the command to start the agent.
 
  ```ps
  .\run.cmd
@@ -151,7 +151,7 @@ To restart the agent, press Ctrl+C to stop the agent, and then run `run.cmd` to 
 #### Run once
 
 You can also choose to have the agent accept only one job and then exit.
-To run in this configuration, execute the command:
+To run in this configuration, run the following command.
 
  ```ps
  .\run.cmd --once
