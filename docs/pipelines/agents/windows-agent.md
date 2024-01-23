@@ -151,7 +151,7 @@ To restart the agent, press Ctrl+C to stop the agent, and then run `run.cmd` to 
 #### Run once
 
 You can also choose to have the agent accept only one job and then exit.
-To run in this configuration, run the following command.
+To run in this configuration, use the following command.
 
  ```ps
  .\run.cmd --once
