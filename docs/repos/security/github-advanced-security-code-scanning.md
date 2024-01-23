@@ -167,7 +167,7 @@ query-filters:
  - exclude:
     id:
       - js/angular/disabling-sce
-      - js/angular/insecure-url-whitelist
+      - js/angular/insecure-url-allowlist
 
 ```
 
