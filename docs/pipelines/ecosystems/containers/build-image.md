@@ -19,12 +19,6 @@ This quickstart shows how to build a container image for app deployment using Az
 
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - A GitHub account. If you don't have one, [sign up for free](https://github.com/join). 
-- A GitHub repository with a Dockerfile. If you don't have a repository to use, fork the following repository, which contains a sample application and a Dockerfile:
-
-  ```text
-  https://github.com/MicrosoftDocs/pipelines-javascript-docker
-  ```
-
 - An Azure pipeline Windows or Linux agent with Docker installed.
 
 ::: moniker-end
@@ -33,15 +27,16 @@ This quickstart shows how to build a container image for app deployment using Az
 
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - A GitHub account. If you don't have one, [sign up for free](https://github.com/join). 
-- A GitHub repository with a Dockerfile. If you don't have a repository to use, fork the following repository, which contains a sample application and a Dockerfile:
+
+::: moniker-end
+
+## Fork the sample repository
+
+In your browser, go the following sample repository and fork it to your Go to your GitHub account.
 
   ```text
   https://github.com/MicrosoftDocs/pipelines-javascript-docker
   ```
-
-- An agent with Docker installed.
-
-::: moniker-end
 
 ## Build a Linux or Windows image
 
