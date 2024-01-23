@@ -1,6 +1,6 @@
 ---
 title: Service connections in Azure Pipelines
-ms.custom: seodec18, pipelinesresourcesrefresh
+ms.custom: seodec18, pipelinesresourcesrefresh, arm2024
 description: Service connections in Azure Pipelines
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
