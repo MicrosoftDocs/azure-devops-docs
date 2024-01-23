@@ -177,9 +177,8 @@ steps:
 
 ### How can I use a self-hosted agent?
 
-1. Before you create your container image, make sure to install Docker on your self-hosted machine.
+Docker must be installed and the engine/daemon running on the agent's host.   If Docker isn't installed on the agent's host, you can add the [Docker installer task](/azure/devops/pipelines/tasks/reference/docker-installer-v0) to your pipeline.  You must add the  **Docker Installer Task** before the **Docker Task**.
 
-1. In your pipeline, *prior* to the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) that builds your image, add the [Docker installer task](/azure/devops/pipelines/tasks/reference/docker-installer-v0).
 
 ### How can I create a script-based Docker build instead of using the Docker task?
 
