@@ -4,6 +4,7 @@ description: Learn how to register a self-hosted agent using a Service Principal
 ms.topic: conceptual
 ms.date: 10/09/2023
 monikerRange: 'azure-devops'
+ms.custom: arm2024
 ---
 
 # Register an agent using a service principal

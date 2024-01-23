@@ -4,7 +4,8 @@ titleSuffix: Azure DevOps
 description: Guidance for authentication with Azure DevOps  
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.subservice: azure-devops-security
-ms.topic: conceptual 
+ms.topic: conceptual
+ms.custom: arm2024
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
