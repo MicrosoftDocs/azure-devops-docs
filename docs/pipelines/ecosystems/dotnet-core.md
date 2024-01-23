@@ -204,7 +204,7 @@ To watch your pipeline in action, select the job in the **Jobs** section.
 
 ::: moniker-end
 
-# [Classic pipeline editor](#tab/classic-editor)
+# [Classic](#tab/classic-editor)
 
 Use these steps to create your pipeline using the classic editor.
 
