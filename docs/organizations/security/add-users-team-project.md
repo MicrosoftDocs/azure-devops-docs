@@ -184,7 +184,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 4. Enter email addresses for new users. For existing users, enter their name until it resolves as a known name to the system. Separate multiple entries with a semicolon (;). Select **Add**.
 
 	When the user's unknown, a notification advises that an access level must be assigned. To complete the invitation, select **Add**.    
-	:::image type="content" source="media/add-users/invite-members-dialog-add-info.png" alt-text="Invite members to a team dialog, Add new user account. ":::
+	:::image type="content" source="media/add-users/invite-members-dialog-add-info.png" alt-text="Screenshot of the Invite members to a team dialog, Add new user account.":::
 
 	When you add a new user, the system assigns Stakeholder as the access level when all free five Basic access levels are already assigned. Active contributors to a project need to have Basic access as a minimum. A Project Collection Administrator can change the access level and resend invitations from the [**Organization Settings** > **Users** page](#manage-users).  
 
@@ -568,10 +568,10 @@ As a member of the Project Administrators group, you can add members to a projec
 	:::row-end:::
 	:::row:::
 	   :::column span="":::
-	      :::image type="content" source="media/add-users/summary-page-invite-dialog-new-unknown-user.png" alt-text="Invite members to a project dialog, unknown user.":::
+	      :::image type="content" source="media/add-users/summary-page-invite-dialog-new-unknown-user.png" alt-text="Screenshot of the Invite members to a project dialog, showing unknown user.":::
 	   :::column-end:::
 	   :::column span="":::
-	      :::image type="content" source="media/add-users/summary-invite-known-user.png" alt-text="Invite members to a project dialog, enter a known user account.":::
+	      :::image type="content" source="media/add-users/summary-invite-known-user.png" alt-text="Screenshot of the Invite members to a project dialog, entering a known user account.":::
 	   :::column-end:::
 	:::row-end:::
 
@@ -590,10 +590,10 @@ As a member of the Project Administrators group, you can add members to a projec
 	:::row-end:::
 	:::row:::
 	   :::column span="":::
-	      :::image type="content" source="media/add-users/summary-invite-dialog-new-user-selected-team.png" alt-text="Invite members to a project dialog, unknown user, select teams to add.":::
+	      :::image type="content" source="media/add-users/summary-invite-dialog-new-user-selected-team.png" alt-text="Screenshot of the Invite members to a project dialog, unknown user, selecting teams to add.":::
 	   :::column-end:::
 	   :::column span="":::
-	      :::image type="content" source="media/add-users/summary-page-invite-project-members.png" alt-text="Invite members to a project dialog, known user, select teams to add.":::
+	      :::image type="content" source="media/add-users/summary-page-invite-project-members.png" alt-text="Screenshot of the Invite members to a project dialog, known user, selecting teams to add.":::
 	   :::column-end:::
 	:::row-end:::
 
@@ -622,10 +622,10 @@ As a member of the Project Administrators group, you can add members to a projec
 	:::row-end:::
 	:::row:::
 	   :::column span="":::
-	      :::image type="content" source="media/add-users/summary-invite-notifications-success.png" alt-text="Notification dialog of Success. "::: ":::  
+	      :::image type="content" source="media/add-users/summary-invite-notifications-success.png" alt-text="Screenshot of the Notification dialog of Success."::: ":::  
 	   :::column-end:::
 	   :::column span="":::
-	      :::image type="content" source="media/add-users/notification-failure-outside-directory.png" alt-text="Notification dialog of failure. ":::
+	      :::image type="content" source="media/add-users/notification-failure-outside-directory.png" alt-text="Screenshot of the Notification dialog of failure.":::
 	   :::column-end:::
 	:::row-end:::
  
