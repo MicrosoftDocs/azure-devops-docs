@@ -2,10 +2,9 @@
 title: Azure Virtual Machine Scale Set agents
 description: Use Azure Virtual Machine Scale Sets to create agents
 ms.topic: reference
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, arm2024
 ms.manager: mijacobs
 ms.author: sdanie
-ms.custom: arm2024
 author: steved0x
 ms.date: 01/10/2023
 monikerRange: azure-devops

@@ -1,7 +1,6 @@
 ---
 title: Use service principals & managed identities
 titleSuffix: Azure DevOps
-ms.custom: 
 description: Learn how to add and manage service principals and managed identities in your Azure DevOps organizations.
 ms.subservice: azure-devops-security
 ms.assetid: 
