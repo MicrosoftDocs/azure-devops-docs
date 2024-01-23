@@ -25,7 +25,7 @@ This quickstart shows how to build a container image for app deployment using Az
   https://github.com/MicrosoftDocs/pipelines-javascript-docker
   ```
 
-- A Azure pipeline Windows or Linux agent with Docker installed.
+- An Azure pipeline Windows or Linux agent with Docker installed.
 
 ::: moniker-end
 
@@ -80,13 +80,13 @@ This quickstart shows how to build a container image for app deployment using Az
 
 1. When you add the **azure-pipelines.yml** file to your repository, you're prompted to add a commit message. Enter a message, and then select **Save and run**.
 
-When using self-hosted agents, be sure that Docker is installed on the agent's host and the Docker engine/daemon is running with elevated privileges.  
+When using self-hosted agents, be sure that Docker is installed on the agent's host, and the Docker engine/daemon is running with elevated privileges.  
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-To build the image, Docker must be installed on the agent's host and the Docker engine/daemon must be running with elevated privileges.  Use the following stepe to create your pipeline using the YAML pipeline editor.
+To build the image, Docker must be installed on the agent's host and the Docker engine/daemon must be running with elevated privileges.  Use the following steps to create your pipeline using the YAML pipeline editor.
 
 1. Go to your collection and create a project.
 1. In your project, select **Pipelines**.
@@ -96,9 +96,9 @@ To build the image, Docker must be installed on the agent's host and the Docker 
     1. Select **Connect to GitHub Enterprise Server**.
     1. Enter your account details, and then select **Verify and save**.
 1. Select your repository.
-   - If you're redirected to GitHub to install the Azure Pipelines app, select **Approve and install**.
-1. To configure your pipelne, select the **Build a Docker image** template.
-1. Replace the contents of the YAML file with the following code. Replace the pool name with the name of the pool that contains your self-hosted agent. 
+   If you're redirected to GitHub to install the Azure Pipelines app, select **Approve and install**.
+1. To configure your pipeline, select the **Build a Docker image** template.
+1. In the YAML pipeline editor, replace the contents of the YAML file with the following code. Replace the pool name with the name of the pool that contains your self-hosted agent with Docker capability.
 
 ```yml
 # Docker
@@ -110,7 +110,7 @@ trigger:
 
 pool:
   name: default
-  demand: docker
+  demands: docker
 
 variables:
   imageName: 'pipelines-javascript-docker'
