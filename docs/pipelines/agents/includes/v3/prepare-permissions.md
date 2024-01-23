@@ -11,7 +11,7 @@ ms.date: 09/22/2023
 
 The user configuring the agent needs pool admin permissions, but the user running the agent does not.
 
-The folders controlled by the agent should be restricted to as few users as possible as they contain secrets that could be decrypted or exfiltrated.
+The folders controlled by the agent should be restricted to as few users as possible because they contain secrets that could be decrypted or exfiltrated.
 
 The Azure Pipelines agent is a software product designed to execute code it downloads from external sources. It inherently could be a target for Remote Code Execution (RCE) attacks.
 
