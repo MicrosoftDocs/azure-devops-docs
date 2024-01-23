@@ -330,7 +330,7 @@ There isn't an Azure CLI command to set the default team project.
 
 ## List teams with Azure CLI
 
-You can list teams using [Azure DevOps team list](/cli/azure/devops/team#az-devops-team-list). To learn how to list team members, see [Add users to a team or project, List team members](../security/add-users-team-project.md#list-members).
+You can list teams using [Azure DevOps team list](/cli/azure/devops/team#az-devops-team-list). To learn how to list team members, see [Add users to a team or project, List team members](../security/add-users-team-project.md#list-team-members).
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
