@@ -46,9 +46,9 @@ If your organization uses self-hosted agents, there are more requirements:
 * Run a compatible version of the .NET runtime (currently .NET 6.0.x). If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://visualstudio.microsoft.com/downloads/). 
 
 * Install the CodeQL bundle to the agent tool cache: 
-    1.	Pick the latest CodeQL release bundle from [GitHub](https://github.com/github/codeql-action/releases).
-    2.	Download and unzip the bundle to the following directory inside the agent tool directory, typically located under `_work/_tool`: `./CodeQL/0.0.0-[codeql-release-bundle-tag (i.e. codeql-bundle-v2.14.2)]/x64/`. Learn more about the [agent tool directory](https://github.com/microsoft/azure-pipelines-tool-lib/blob/master/docs/overview.md#tool-cache). 
-    3.	Create an empty file at `./CodeQL/0.0.0-[codeql-release-bundle-tag (i.e. codeql-bundle-20221105)]/x64.complete`
+    1.	Pick the latest CodeQL release bundle from [GitHub](https://github.com/github/codeql-action/releases). 
+    2.	Download and unzip the bundle to the following directory inside the agent tool directory, typically located under `_work/_tool`: `./CodeQL/0.0.0-[codeql-release-bundle-tag]/x64/`. Using the current release of `v2.16.0`, the folder name would be titled `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64/`. Learn more about the [agent tool directory](https://github.com/microsoft/azure-pipelines-tool-lib/blob/master/docs/overview.md#tool-cache). 
+    3.	Create an empty file titled `x64.complete` within the `./CodeQL/0.0.0-[codeql-release-bundle-tag]` folder. Using the previous example, the end file path to your `x64.complete` file should be `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64.complete`. 
 
 ## Enable GitHub Advanced Security
 
