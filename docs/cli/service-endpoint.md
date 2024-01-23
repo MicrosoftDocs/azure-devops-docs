@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to use Azure DevOps CLI to create a service endpoint
 ms.topic: how-to
 ms.subservice: azure-devops-reference
-ms.custom: devx-track-arm-template, devx-track-azurecli
+ms.custom: devx-track-arm-template, devx-track-azurecli, arm2024
 ms.manager: mijacobs 
 ms.author: chcomley
 author: chcomley

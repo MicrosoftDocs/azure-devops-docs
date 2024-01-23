@@ -7,7 +7,8 @@ ms.author: jukullam
 author: juliakm
 ms.date: 01/19/2023
 monikerRange: 'azure-devops'
-ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2
+ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2, arm2024
+
 ---
 
 # Use CI/CD to deploy a Python web app to Azure App Service on Linux

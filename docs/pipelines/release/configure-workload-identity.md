@@ -1,6 +1,6 @@
 ---
 title: 'Manually configure Azure Resource Manager workload identity service connections'
-ms.custom: seodec18, devx-track-arm-template
+ms.custom: seodec18, devx-track-arm-template, arm2024
 description: How to manually configure workload identity service connections in Azure Pipelines
 ms.topic: conceptual
 ms.author: jukullam
