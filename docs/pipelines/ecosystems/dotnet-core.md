@@ -13,7 +13,7 @@ monikerRange: '> tfs-2018 <= azure-devops'
 
 **Azure DevOps Services | Azure DevOps Server 2022 - Azure DevOps Server 2019**
 
-Can you see an Azure Pipeline to automatically build, test, and deploy your .NET Core projects. This article shows you how to do the following tasks:
+Use an Azure Pipeline to automatically build, test, and deploy your .NET Core projects. This article shows you how to do the following tasks:
 
 ::: moniker range="<=azure-devops-2022"
 
