@@ -142,7 +142,7 @@ disable-default-queries: true
  
 # To reference local queries saved to your repository,
 # the path must start with `./` followed by the path to the custom query or queries.
-# Names for each query or query pack referenced is optional.
+# Names for each query referenced is optional.
 queries:
   - name: Use security-extended query suite
     uses: security-extended
