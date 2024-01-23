@@ -41,6 +41,25 @@ Can you see an Azure Pipeline to automatically build, test, and deploy your .NET
 > [!NOTE]
 > For help with .NET Framework projects, see [Build ASP.NET apps with .NET Framework](../apps/aspnet/build-aspnet-4.md).
 
+
+## Prerequisites
+
+::: moniker range=">=azure-devops"
+
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
+* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
+
+::: moniker-end
+
+::: moniker-range="< azure-devops"
+
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* An Azure DevOps collection. 
+* An ability to run pipelines on a self-hosted agent with Docker installed and running on the agent's host. 
+
+::: moniker-end
+
 ## Create your first pipeline
 
 Are you new to Azure Pipelines? If so, then we recommend you try the following section first.
