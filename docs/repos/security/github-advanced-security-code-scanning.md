@@ -116,7 +116,7 @@ To find existing custom queries or to contribute your own custom query, see [Con
 
 ### Analysis with custom queries
 
-The quickest way to start with a custom query is to write a query and save it in your local Azure DevOps repository. You can customize the details of a custom query according to your need, but it must have at least a name and a rule ID. To learn more about how to write your own CodeQL query, see [Writing CodeQL queries](https://codeql.github.com/docs/writing-codeql-queries/). You can also bundle multiple queries together into a query pack, or utilize packs published by other people. To learn more, see [Publishing and using CodeQL packs](https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/publishing-and-using-codeql-packs). 
+The quickest way to start with a custom query is to write a query and save it in your local Azure DevOps repository. You can customize the details of a custom query according to your need, but it must have at least a rule ID. To learn more about how to write your own CodeQL query, see [Writing CodeQL queries](https://codeql.github.com/docs/writing-codeql-queries/). You can also bundle multiple queries together into a query suite, or utilize packs published by other people. To learn more, see [Publishing and using CodeQL packs](https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/publishing-and-using-codeql-packs). 
 
 ### Using a custom configuration file
 
@@ -124,7 +124,7 @@ A custom configuration file is a way to manage what queries are run during CodeQ
 
 To include a specific query you want to include, specify the query with a name and path to the location of the query file (.ql) in your repository. 
 
-To include a specific pack you want to include, specify the path to the query path. You can specify any number of CodeQL query packs to run in your configuration file.  
+To include a specific pack you want to include, specify the pack name. You can specify any number of CodeQL query packs to run in your configuration file.  
 
 > [!TIP]
 > The `packs` filter from the configuration file support downloading packs from repositories hosted in GitHub, although the `queries` filter does not.
@@ -134,15 +134,15 @@ Here is an example configuration file:
 
 >[!div class="tabbedCodeSnippets"]
 ```yaml
-
 name: "Run custom queries"
 
 # When using a configuration file, if you do not disable default queries,
-# then the default CodeQL queries in the `security` pack will also execute upon analysis.
+# then the default CodeQL queries in the `code-scanning` query suite will also execute upon analysis.
 disable-default-queries: true
  
 # To reference local queries saved to your repository,
-# the path must start with `./` followed by the path to the custom query or queries
+# the path must start with `./` followed by the path to the custom query or queries.
+# Names for each query referenced is optional.
 queries:
   - name: Use security-extended query suite
     uses: security-extended
@@ -189,13 +189,9 @@ trigger: none
  
 pool:
   vmImage: windows-latest
-  name: Default
 
 # You can either specify your CodeQL variables in a variable block... 
 variables:
-  advancedsecurity.codeql.language: python
-  advancedsecurity.codeql.logLevel: 4
-  advancedsecurity.codeql.debug: true
 # `configfilepath` must be an absolute file path relative to the repository root
   advancedsecurity.codeql.configfilepath: '$(build.sourcesDirectory)/.pipelines/steps/configfile.yml' 
 
@@ -217,11 +213,7 @@ steps:
  
 - task: AdvancedSecurity-Codeql-Analyze@1
   displayName: Perform CodeQL Analysis
- 
-- task: AdvancedSecurity-Publish@1
-  displayName: Publish code scanning results
-
-```
+ ```
 
 ## Troubleshooting code scanning 
 
