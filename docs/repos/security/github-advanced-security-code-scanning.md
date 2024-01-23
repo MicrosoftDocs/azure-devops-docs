@@ -212,13 +212,13 @@ steps:
   env:
     GITHUB_TOKEN: $(githubtoken)
  
-- task: AdvancedSecurity-Codeql-Autobuild-Local@1
+- task: AdvancedSecurity-Codeql-Autobuild@1
   displayName: AutoBuild
  
-- task: AdvancedSecurity-Codeql-Analyze-Local@1
+- task: AdvancedSecurity-Codeql-Analyze@1
   displayName: Perform CodeQL Analysis
  
-- task: AdvancedSecurity-Publish-Local@1
+- task: AdvancedSecurity-Publish@1
   displayName: Publish code scanning results
 
 ```
