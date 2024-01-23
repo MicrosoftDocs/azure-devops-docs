@@ -115,9 +115,9 @@ Alternatively, you can use a [self-hosted agent](../agents/agents.md). With a se
 
 ### Create your pipeline
 
-You can use the Yaml pipeline editor or the classic editor to create your pipeline.  To use the classic editor, select **Use the classic editor**.
+You can use the YAML pipeline editor or the classic editor to create your pipeline.  To use the classic editor, select **Use the classic editor**.
 
-# [YAML pipeline editor](#tab/yaml-editor)
+# [YAML](#tab/yaml-editor)
 
 ::: moniker range=">=azure-devops"
 
@@ -426,9 +426,11 @@ When you use Microsoft-hosted agents, you get a new machine every time you run a
 
 For more information about NuGet service connections, see [publish to NuGet feeds](../artifacts/nuget.md).
 
+### Restore packages from an external feed
+
 Do the following to restore packages from an external feed.
 
-# [YAML pipeline editor](#tab/yaml-editor)
+# [YAML](#tab/yaml-editor)
 
 You can add the restore command to your pipeline using the YAML pipeline editor by directly inserting the following snippet into your `azure-pipelines.yml` file or using the task assistant to add the **.NET Core** task.
 
@@ -458,7 +460,7 @@ To add a build task using the task assistant, do the following steps:
 1. Select **Add**.
 1. Select **Save** to commit the change.
 
-# [Classic pipeline editor](#tab/classic-editor)
+# [Classic](#tab/classic-editor)
 
 Use these steps to add a restore task using the classic editor:
 
@@ -494,7 +496,7 @@ steps:
     arguments: '--configuration $(buildConfiguration)' # Update this to match your needs
 ```
 
-# [YAML pipeline editor](#tab/yaml-editor)
+# [YAML](#tab/yaml-editor)
 
 You can add a build task using the YAML pipeline editor by directly editing the file or adding the **.NET Core** task using the task assistant.
 
@@ -508,7 +510,7 @@ To add a build task using the task assistant, do the following steps:
 1. Select **Add**.
 1. Select **Save** to commit the change.
 
-# [Classic pipeline editor](#tab/classic-editor)
+# [Classic](#tab/classic-editor)
 
 To add a build task using  the classic editor, do the following steps:
 
@@ -534,7 +536,7 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 ```
 
-# [YAML pipeline editor](#tab/yaml-editor)
+# [YAML](#tab/yaml-editor)
 
 You can add a build task using the YAML pipeline editor by directly editing the file or adding the [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task.
 
@@ -549,7 +551,7 @@ Use the following steps to add the **Command Line** task:
 1. Select **Add**.
 1. Select **Save** to commit the change.
 
-# [Classic pipeline editor](#tab/classic-editor)
+# [Classic](#tab/classic-editor)
 
 To add a build task using  the classic editor, do the following steps:
 
@@ -572,7 +574,7 @@ You can add .NET SDK commands to your project as a script or using the .NET Core
 
 ### Add a .NET CLI command using the .NET Core task
 
-# [YAML pipeline editor](#tab/yaml-editor)
+# [YAML](#tab/yaml-editor)
 
 To add a .NET Core CLI command using the YAML pipeline editor, do the following steps:
 
@@ -584,7 +586,7 @@ To add a .NET Core CLI command using the YAML pipeline editor, do the following 
 1. Select **Add**.
 1. Select **Save** to commit the change.
 
-# [Classic pipeline editor](#tab/classic-editor)
+# [Classic](#tab/classic-editor)
 
 To add .NET Core task using  the classic editor, do the following steps:
 
@@ -811,7 +813,7 @@ steps:
 
 ```
 
-For more information, see [Publish and download build artifacts](../artifacts/build-artifacts.md?view=azure-devops-2022).
+For more information, see [Publish and download build artifacts](../artifacts/build-artifacts.md).
 
 ::: moniker-end
 
