@@ -137,10 +137,12 @@ Here is an example configuration file:
 
 name: "Run custom queries"
 
-# When using a configuration file, if you do not disable default queries, then the `security` queries will also execute upon analysis.
+# When using a configuration file, if you do not disable default queries,
+# then the default CodeQL queries in the `security` pack will also execute upon analysis.
 disable-default-queries: true
  
-# To reference local queries saved to your repository, the path must start with `./` followed by the path to the custom query or queries
+# To reference local queries saved to your repository,
+# the path must start with `./` followed by the path to the custom query or queries
 queries:
   - name: Use security-extended query suite
     uses: security-extended
@@ -205,7 +207,8 @@ steps:
     languages: 'javascript'
     loglevel: '2'
     configfilepath: '$(build.sourcesDirectory)/.pipelines/steps/configfile.yml'
-# If downloading a pack from GitHub, you must include a GitHub access token with the scope of `read:packages`.
+# If downloading a pack from GitHub,
+# you must include a GitHub access token with the scope of `read:packages`.
   env:
     GITHUB_TOKEN: $(githubtoken)
  
