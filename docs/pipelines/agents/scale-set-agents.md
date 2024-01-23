@@ -5,6 +5,7 @@ ms.topic: reference
 ms.custom: devx-track-azurecli
 ms.manager: mijacobs
 ms.author: sdanie
+ms.custom: arm2024
 author: steved0x
 ms.date: 01/10/2023
 monikerRange: azure-devops
