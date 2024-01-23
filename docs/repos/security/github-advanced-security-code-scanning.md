@@ -128,7 +128,7 @@ To include a specific pack you want to include, specify the path to the query pa
 
 > [!TIP]
 > The `packs` filter from the configuration file support downloading packs from repositories hosted in GitHub, although the `queries` filter does not.
-> If the pack is private in GitHub, then you need to provide a GitHub access token via the `AdvancedSecurity-Codeql-Init@1` task as an environment variable and labeled as `GITHUB_TOKEN` (the scope of the token should be `read:packages`)'.
+> If the pack is private in GitHub, then you need to provide a GitHub access token via the `AdvancedSecurity-Codeql-Init@1` task as an environment variable and variable name as `GITHUB_TOKEN`, with the scope of the token being `read:packages`.
 
 Here is an example configuration file: 
 
