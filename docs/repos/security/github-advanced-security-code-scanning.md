@@ -124,17 +124,99 @@ A custom configuration file is a way to manage what queries are run during CodeQ
 
 To include a specific query you want to include, specify the query with a name and path to the location of the query file (.ql) in your repository. 
 
-To include a specific pack you want to include, specify the path to the query path. You can specify any number of CodeQL query packs to run in your configuration file. 
+To include a specific pack you want to include, specify the path to the query path. You can specify any number of CodeQL query packs to run in your configuration file. Here is an example configuration file: 
+
+>[!div class="tabbedCodeSnippets"]
+```yaml
+
+name: "Run custom queries"
+
+# When using a configuration file, if you do not disable default queries, then the `security` queries will also execute upon analysis.
+disable-default-queries: true
+ 
+# To reference local queries saved to your repository, the path must start with `./` followed by the path to the custom query or queries
+queries:
+  - name: Use security-extended query suite
+    uses: security-extended
+  - name: Use local custom query (single query)
+    uses: ./customQueries/javascript/FindTestFunctions.ql
+  - name: Use local custom query (directory of queries)
+    uses: ./customQueries/javascript/MemoryLeakQueries  
+ 
+packs:
+ - mygithuborg/mypackname
+ 
+paths:
+ - src
+ 
+paths-ignore:
+  - src/node_modules
+  - '**/*.test.js'
+ 
+query-filters:
+ - include:
+    kind: problem
+ - include:
+     precision: medium
+ - exclude:
+    id:
+      - js/angular/disabling-sce
+      - js/angular/insecure-url-whitelist
+
+```
+
+> [!TIP]
+> Configuration file specifications take precedence over pipeline-level configurations for the `AdvancedSecurity-Codeql-Init@1` task.
+> `includepaths` / `ignorepaths` will be overwritten with values from `paths`/`paths-ignore`. if paths/paths-ignore are not defined in config file then we are still overwriting by not considering the values defined in includepaths/ignorepaths.
+> `querysuite` will be overwritten with values from queries/packs.
+
+> [!TIP]
+> `queries` filter from the config file doesn't support downloading queries from external repo (repos hosted in GitHub).
+> `packs` filter from the config file support downloading packs from external repo.
+> Be aware if the pack is private in GitHub then users need to provide a GitHub access token via the init task as env and labeled as `GITHUB_TOKEN` (the scope of the token should be `read:packages`)'?
+
+For more specific advice and configuration options with your configuration file, see [Customizing your advanced setup for code scanning](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#specifying-codeql-query-packs).
 
 
+Once you have your configuration file, you then need to customize your pipeline running CodeQL analysis to utilize your new file. Here is a sample pipeline pointing to a configuration file:
 
-?- `configfilepath` must be absolute relative to the repository root. For more information on `config-file`, [here](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#working-with-custom-configuration-files).
-- When providing a config file, be aware that `includepaths`, `ignorepaths`, or `querysuite` specified via input task or pipeline variable will be overwritten.
-  - `includepaths` / `ignorepaths` will be overwritten with values from `paths`/`paths-ignore`. if paths/paths-ignore are not defined in config file then we are still overwriting by not considering the values defined in includepaths/ignorepaths.
-   - `querysuite` will be overwritten with values from queries/packs. Be aware if you don't specify disable-default-query = true then codeql will run the queries from code-scanning query suite. 
-- `queries` filter from the config file doesn't support downloading queries from external repo (repos hosted in GitHub).
-- `packs` filter from the config file support downloading packs from external repo.
-   - Be ware if the pack is private in GitHub then users need to provide a GitHub access token via the init task as env and labeled as `GITHUB_TOKEN` (the scope of the token should be `read:packages`)'?
+>[!div class="tabbedCodeSnippets"]
+```yaml
+trigger: none
+ 
+pool:
+  vmImage: windows-latest
+  name: Default
+
+# You can either specify your CodeQL variables in a variable block... 
+variables:
+  advancedsecurity.codeql.language: python
+  advancedsecurity.codeql.logLevel: 4
+  advancedsecurity.codeql.debug: true
+# `configfilepath` must be an absolute file path relative to the repository root
+  advancedsecurity.codeql.configfilepath: '$(build.sourcesDirectory)/.pipelines/steps/configfile.yml' 
+
+# Or you can specify variables as variables for the task. You do not need both definitions. 
+steps:
+- task: AdvancedSecurity-Codeql-Init@1
+  displayName: Initialize CodeQL
+  inputs:
+    languages: 'javascript'
+    loglevel: '2'
+    configfilepath: '$(build.sourcesDirectory)/.pipelines/steps/configfile.yml'
+  env:
+    GITHUB_TOKEN: $(githubtoken)
+ 
+- task: AdvancedSecurity-Codeql-Autobuild-Local@1
+  displayName: AutoBuild
+ 
+- task: AdvancedSecurity-Codeql-Analyze-Local@1
+  displayName: Perform CodeQL Analysis
+ 
+- task: AdvancedSecurity-Publish-Local@1
+  displayName: Publish code scanning results
+
+```
 
 ## Troubleshooting code scanning 
 
