@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18, devx-track-azurecli
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
-ms.date: 06/20/2023
+ms.date: 01/09/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -443,7 +443,7 @@ If no window is scheduled, then the agents in that pool will not run the mainten
 
 ### What is a maintenance job?
 
-You can configure agent pools to periodically clean stale working directories and repositories. This should reduce the potential for the agents to run out of disk space. Maintenance jobs are configured at the project collection or organization level in agent pool settings.
+You can configure agent pools to periodically clean stale working directories and repositories. This should reduce the potential for the agents to run out of disk space. Maintenance jobs are configured at the organization level in agent pool settings.
 
 To configure maintenance job settings:
 
