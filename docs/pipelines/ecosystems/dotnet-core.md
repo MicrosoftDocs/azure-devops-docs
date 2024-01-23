@@ -109,7 +109,7 @@ steps:
 
 Your builds run on [Microsoft-hosted agents](../agents/hosted.md).  You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, and macOS.
 
-Alternatively, you can use a [self-hosted agent](../agents/agents.md) to save time if you have a large repository or you run incremental builds. With a self-hosted agent, you can use preview or private SDKs not officially supported by Azure DevOps Services.
+Alternatively, you can use a [self-hosted agent](../agents/agents.md). With a self-hosted agent, you can use preview or private SDKs not officially supported by Azure DevOps Services and run incremental builds.
 
 ::: moniker-end
 
