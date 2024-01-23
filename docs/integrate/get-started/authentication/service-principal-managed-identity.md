@@ -6,6 +6,7 @@ description: Learn how to add and manage service principals and managed identiti
 ms.subservice: azure-devops-security
 ms.assetid: 
 ms.topic: how-to
+ms.custom: arm2024
 ms.author: wonga
 author: wonga
 ms.date: 11/10/2023
