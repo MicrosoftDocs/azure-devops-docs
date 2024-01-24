@@ -160,7 +160,7 @@ $accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-26
 
 Write-Host "Use access token with Azure DevOps REST API to list projects in the organization..."
 $apiVersion = "7.1-preview.1"
-$uri = "https://dev.azure.com/${yourUsername}/_apis/projects?api-version=${apiVersion}"
+$uri = "https://dev.azure.com/${yourOrgname}/_apis/projects?api-version=${apiVersion}"
 $headers = @{
     Accept = "application/json"
     Authorization = "Bearer $accessToken"
