@@ -11,7 +11,6 @@ ms.reviewer: jominana
 ms.date: 11/06/2023
 monikerRange: 'azure-devops'
 ---
-
 # Data protection overview
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
@@ -271,7 +270,7 @@ evaluation of our procedures for data security. Azure DevOps has achieved the fo
 
 The SOC audit for Azure DevOps covers controls for data security, availability, processing integrity, and confidentiality. The SOC reports for Azure DevOps are available through the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports).
 
-The Consensus Assessment Initiative Questionnaire (CAIQ) helps organizations assess and evaluate the security practices and capabilities of cloud service providers. In alignment with our commitment to security and transparency, we recently completed the CAIQ assessment for Azure DevOps. We invite you to review the full report on the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/PrivacyDataProtection).
+The Consensus Assessment Initiative Questionnaire (CAIQ) helps organizations assess and evaluate the security practices and capabilities of cloud service providers. In alignment with our commitment to security and transparency, we recently completed the CAIQ assessment for Azure DevOps. We invite you to review the full report on the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports).
 
 ## Steps you can take
 
