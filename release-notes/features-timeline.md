@@ -467,7 +467,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="https://learn.microsoft.com/en-us/azure/devops/release-notes/2023/reporting/sprint-229-update#new-dashboard-directory-experience" data-raw-source="[New Dashboard directory experience](https://learn.microsoft.com/en-us/azure/devops/release-notes/2023/reporting/sprint-229-update#new-dashboard-directory-experience)">New Dashboard directory experience</a></td>
+         <td><a href=/azure/devops/release-notes/2023/reporting/sprint-229-update#new-dashboard-directory-experience" data-raw-source="[New Dashboard directory experience](https://learn.microsoft.com/en-us/azure/devops/release-notes/2023/reporting/sprint-229-update#new-dashboard-directory-experience)">New Dashboard directory experience</a></td>
          <td>Reporting</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
          <td>Future</td>
