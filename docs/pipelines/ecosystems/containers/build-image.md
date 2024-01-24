@@ -32,7 +32,7 @@ This quickstart shows how to build a container image for app deployment using Az
 
 ## Fork the sample repository
 
-In your browser, go the following sample repository and fork it to your Go to your GitHub account.
+In your browser, go the following sample repository and fork it to your GitHub account.
 
   ```text
   https://github.com/MicrosoftDocs/pipelines-javascript-docker
