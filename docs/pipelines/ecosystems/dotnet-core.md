@@ -11,7 +11,7 @@ monikerRange: '> tfs-2018 <= azure-devops'
 
 # Build, test, and deploy .NET Core apps
 
-**Azure DevOps Services | Azure DevOps Server 2022 - Azure DevOps Server 2019**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use an Azure Pipeline to automatically build, test, and deploy your .NET Core projects. This article shows you how to do the following tasks:
 
@@ -52,7 +52,7 @@ Use an Azure Pipeline to automatically build, test, and deploy your .NET Core pr
 
 ::: moniker-end
 
-::: moniker-range="< azure-devops"
+::: moniker range="< azure-devops"
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An Azure DevOps collection. 
