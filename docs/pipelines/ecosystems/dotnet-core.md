@@ -182,7 +182,7 @@ You can customize the YAML file for your requirements.  For example, you can add
 1. Select **Save**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+   > ![Screenshot showing the Save and run button in a new YAML pipeline.](media/save-and-run-button-new-yaml-pipeline.png)
 
 1. To commit the pipeline YAML file to your repository, edit the commit message as needed and select **Save**.
 1. Select **Run** to run your pipeline.
@@ -196,7 +196,7 @@ To see the build logs as your pipeline runs, select the build number at the top 
 1. Select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+   > ![Screenshot showing the Save and run button in a new YAML pipeline.](media/save-and-run-button-new-yaml-pipeline.png)
 
 1. To commit the new *azure-pipelines.yml* file to your repository, edit the commit message as needed and select **Save and run**.
 
