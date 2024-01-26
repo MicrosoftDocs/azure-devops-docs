@@ -4,7 +4,7 @@ description: Use .NET Core to build apps with Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
-ms.date: 01/14/2024
+ms.date: 01/26/2024
 ms.custom: contperf-fy20q4, freshness-fy22q2, content-freshness, devx-track-dotnet
 monikerRange: '> tfs-2018 <= azure-devops'
 ---
