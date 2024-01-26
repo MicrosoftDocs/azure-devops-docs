@@ -81,8 +81,6 @@ https://github.com/adventworks/cpp-gpp-sample
 
 5. Click the **+** icon on **Job 1** of the build and then:
 
-::: moniker range=">= tfs-2018"
-
   ### Azure Pipelines and TFS 2018
 
   1. Search for the **Shell Script** task and click **Add** to add it to your build.
@@ -94,8 +92,6 @@ https://github.com/adventworks/cpp-gpp-sample
       Version | `3.*` or later
       Type    | `Inline`
       Script  | `make`
-
-::: moniker-end
 
   ### Finish
 
