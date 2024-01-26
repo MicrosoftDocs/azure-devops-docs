@@ -5,17 +5,11 @@ description: Learn how you can use continuous integration in Azure Pipelines to 
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
 ms.date: 04/04/2022
 ms.topic: quickstart
-monikerRange: '<= azure-devops'
 ---
 
 # Build your GCC C/C++ app
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
-
-
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
 
 Azure Pipelines provides a highly customizable continuous integration (CI) pipeline to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline for a C/C++ application compiled with GCC/g++.
 
