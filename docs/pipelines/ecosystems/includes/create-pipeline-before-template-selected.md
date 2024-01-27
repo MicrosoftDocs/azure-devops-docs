@@ -8,7 +8,7 @@ ms.date: 12/01/2023
 ms.custom: devdivchpfy22
 ---
 
-1. Sign-in to your Azure DevOps organization and go to your project.
+1. Sign in to your Azure DevOps organization and go to your project.
 
 1. Go to **Pipelines**, and then select **New pipeline** or **Create pipeline** if creating your first pipeline.
 
