@@ -22,7 +22,7 @@ There are various ways to create your NuGet packages such as using Visual Studio
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-To create a NuGet package, add the following snippet to your pipeline YAML file. See [NuGet task](/azure/devops/pipelines/tasks/reference/nuget-command-v2) for more details.
+To create a NuGet package, add the following snippet to your pipeline YAML file. For more information, see [NuGet task](/azure/devops/pipelines/tasks/reference/nuget-command-v2).
 
 ```yaml
 - task: NuGetCommand@2
@@ -33,22 +33,22 @@ To create a NuGet package, add the following snippet to your pipeline YAML file.
 ```
 
 - **packagesToPack**: pattern to search for csproj directories to pack
-- **packDestination**: directory where packages will be created
+- **packDestination**: directory where packages are created
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
 
 From your pipeline definition, add the **NuGet task** to your pipeline to create a NuGet package. Make sure to add this task below the one building your application and above any tasks that require your NuGet package.
 
-- **Command:** the NuGet command to run.
+- **Command:**: the NuGet command to run.
 - **Path to csproj or nuspec file(s) to pack**: pattern to search for csproj directories to pack.
-- **Configuration to package**: when using a csproj file this specifies the configuration to package.
-- **Package folder**: directory where packages will be created.
+- **Configuration to package**: specifies the configuration to package when using a `.csproj file.
+- **Package folder**: directory where packages are created.
 
 :::image type="content" source="media/nuget/create-packages-in-team-build.png" alt-text="Screenshot showing the NuGet pack task in Azure Pipelines.":::
 
@@ -58,17 +58,17 @@ From your pipeline definition, add the **NuGet task** to your pipeline to create
 
 NuGet packages are distinguished by their names and version numbers. Employing Semantic Versioning is a recommended strategy for effectively managing package versions. Semantic versions consist of three numeric components: Major, Minor, and Patch. 
 
-The *Patch* is usually incremented after fixing a bug. When you release a new backward-compatible feature, you increment the *Minor* version and reset the *Patch* version to 0, and when you make a backward-incompatible change, you increment the *Major* version and reset the *Minor* and *Patch* versions to 0.
+The *Patch* is incremented after fixing a bug. When you release a new backward-compatible feature, you increment the *Minor* version and reset the *Patch* version to 0. When you make a backward-incompatible change, you increment the *Major* version and reset the *Minor* and *Patch* versions to 0.
 
 With Semantic Versioning, you can also use prerelease labels to tag your packages. To do so, enter a hyphen followed by your prerelease tag: E.g.**1.0.0-beta**. Semantic Versioning is supported in Azure Pipelines and can be configured in your NuGet task as follows:
 
-- **Use the date and time** (Classic): **byPrereleaseNumber** (YAML). Your package version will be in the format: *Major.Minor.Patch-ci-datetime* where you have the flexibility to choose the values of your Major, Minor, and Patch.
+- **Use the date and time** (Classic): **byPrereleaseNumber** (YAML). Your package version is in the format: *Major.Minor.Patch-ci-datetime* where you have the flexibility to choose the values of your Major, Minor, and Patch.
 
-- **Use an environment variable** (Classic): **byEnvVar** (YAML). Your package version will be set to the value of the environment variable you specify. 
+- **Use an environment variable** (Classic): **byEnvVar** (YAML). Your package version is set to the value of the environment variable you specify. 
 
-- **Use the build number** (Classic): **byBuildNumber** (YAML). Your package version will be set to the build number. Make sure you set your build number format under your pipeline **Options** to `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`. To do this in YAML, add a property `name:` at the root of your pipeline and add your format. 
+- **Use the build number** (Classic): **byBuildNumber** (YAML). Your package version is set to the build number. Make sure you set your build number format under your pipeline **Options** to `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`. To do set the format in YAML, add a property `name:` at the root of your pipeline and add your format. 
 
-The following example shows how to use the date and time versioning option. This will generate a SemVer compliant version formatted as: `Major.Minor.Patch-ci-datetime`.
+The following example shows how to use the date and time versioning option to generate a SemVer compliant version formatted as: `Major.Minor.Patch-ci-datetime`.
 
 #### [YAML](#tab/yaml/)
 
@@ -92,7 +92,7 @@ steps:
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -104,7 +104,7 @@ YAML is not supported in TFS.
 - - -
 
 > [!NOTE]
-> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. See the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) for more details.
+> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. For more information, see, the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
 
 
 ```yaml
@@ -119,7 +119,7 @@ inputs:
 
 ## Publish NuGet packages
 
-To publish packages to an Azure Artifacts feed from your pipeline, you must set the **Project Collection Build Service** identity to be a **Contributor** on your feed. See [Configure feed settings](../../artifacts/feeds/feed-permissions.md#feed-settings) for more details. 
+To publish packages to an Azure Artifacts feed from your pipeline, you must set the **Project Collection Build Service** identity to be a **Contributor** on your feed. For more information, see [Configure feed settings](../../artifacts/feeds/feed-permissions.md#feed-settings). 
 
 #### [YAML](#tab/yaml/)
 
@@ -127,7 +127,7 @@ To publish packages to an Azure Artifacts feed from your pipeline, you must set 
 
 ```yaml
 steps:
-- task: NuGetAuthenticate@0
+- task: NuGetAuthenticate@1
   displayName: 'NuGet Authenticate'
 - task: NuGetCommand@2
   displayName: 'NuGet push'
@@ -137,7 +137,16 @@ steps:
     allowPackageConflicts: true
 ```
 
-To publish a package to an external NuGet feed, you must first create a service connection to connect to that feed. You can do this by going to **Project settings** > **Service connections** > **New service connection**. Select **NuGet**, and then select **Next**. Fill out the form and then select **Save** when you're done. See [Manage service connections](../library/service-endpoints.md) for more details.
+To publish a package to an external NuGet feed, you must first create a service connection to connect to that feed.  To create a service connection:
+
+1. Go to **Project settings** > **Service connections** > **New service connection**. 
+1. Select **NuGet**, and then select **Next**. 
+1. Fill out the form and then select **Save** when you're done. 
+
+For more information, see [Manage service connections](../library/service-endpoints.md).  
+
+> [!NOTE]
+> The **NuGetAuthenticate@1** task supports a service connection using basic authenication.  The task doesn't support NuGet API key authentication. If your service connection uses **ApiKey**, you must use the **NuGetCommand@2** task and specify the NuGet API key in the **arguments** field. For more information, see [NuGet task](/azure/devops/pipelines/tasks/reference/nuget-command-v2).
 
 To publish a package to an external NuGet feed, add the following snippet to your YAML pipeline.
 
@@ -173,7 +182,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -210,7 +219,7 @@ To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your p
 
 1. Enter the **ApiKey** you generated earlier, and then enter a **Service connection name**. 
 
-1. Select **Grant access permission to all pipelines**, and then select **Save** when you're done. To select this option, you'll need the [service connection **Administrator** role](../library/add-resource-protection.md). 
+1. Select **Grant access permission to all pipelines**, and then select **Save** when you're done. To select this option, you need the [service connection **Administrator** role](../library/add-resource-protection.md). 
 
 
 #### [YAML](#tab/yaml/)
