@@ -89,7 +89,7 @@ Quickly convert an existing ARM service connection to use workload identity fede
 
 ### Revert an existing ARM service connection to use a service principal secret
 
-You can revert a converted service connection with its secret for seven days. After seven days, you'll need to manually create a new secret.
+You can revert a converted automatic service connection with its secret for seven days. After seven days, you'll need to manually create a new secret. If you created and converted your service connection manually, you cannot revert the service connection using the tool because Azure DevOps does not have permission to modify its credentials.
 
 To revert a connection:
 
