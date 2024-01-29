@@ -156,4 +156,4 @@ For existing pipelines, add the **NuGet Tool Installer** to your pipeline and se
 
 - [Publish to NuGet feeds (YAML/Classic)](../artifacts/nuget.md)
 - [Publish and consume build artifacts](../artifacts/build-artifacts.md)
-- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
+- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/en-us/)
