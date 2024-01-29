@@ -51,7 +51,7 @@ The `FabrikamFiber` project's repository structures look like in the following s
 
 :::image type="content" source="media/fabrikam-repository-structure.png" alt-text="Screenshot of the FabrikamFiber repository structure.":::
 
-Image your project isn't set up to use a project-based build identity or to protect access to repositories in YAML pipelines. Also, assume you've already successfully ran your pipeline.
+Imagine your project isn't set up to use a project-based build identity or to protect access to repositories in YAML pipelines. Also, assume you've already successfully run your pipeline.
 
 ### Use a Project-based build identity for build pipelines
 
