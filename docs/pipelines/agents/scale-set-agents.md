@@ -473,6 +473,7 @@ To delete the saved agent when you're done with your investigation, navigate to 
   * [VMSS maintenance job isn't running on agents or getting logs](#vmss-maintenance-job-isnt-running-on-agents-or-getting-logs)
   * [If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances)
   * [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
+  * [Why does my scale set agent configuration script call Add-MpPreference and configure Windws Defender on the agent?](#why-does-my-scale-set-agent-configuration-script-call-add-mppreference-and-configure-windws-defender-on-the-agent)
   * [I want to increase my pool size. What should I take into consideration?](#i-want-to-increase-my-pool-size-what-should-i-take-into-consideration)
 
 ### Where can I find the images used for Microsoft-hosted agents?
@@ -556,9 +557,9 @@ This issue occurs because agent extension scripts attempt to create the user `Az
 
 The extension needs to be able to download the build agent files from `https://vstsagentpackage.azureedge.net/agent`, and the build agent needs to be able to register with Azure DevOps Services. Make sure that this URL and Azure DevOps Services-related IPs and URLs are open on the instance. For IPs and URLs that need to be unblocked on your firewall, see [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url).
 
-#### Why does my scale set agent configuration scrit call Add-MpPreference and configure Windws Defender on the agent?
+#### Why does my scale set agent configuration script call Add-MpPreference and configure Windws Defender on the agent?
 
-To improve performance (and prevent accidental shutdown of the agent software by Windows Defender), the configuration scripts call [Add-MpPreference](/powershell/module/defender/add-mppreference) with an `ExclusionPath` containing `C:\` and `D:\`, which disables Windows Defender scheduled and real-time scanning for files in these folders. To change the default behavior, set an environment variable named `ELASTIC_POOLS_SKIP_DEFENDER_EXCLUSION` to `true`.
+To improve performance and reliability, the configuration scripts call [Add-MpPreference](/powershell/module/defender/add-mppreference) with an `ExclusionPath` containing `C:\` and `D:\`, which disables Windows Defender scheduled and real-time scanning for files in these folders on the agent. To change the default behavior, set an environment variable named `ELASTIC_POOLS_SKIP_DEFENDER_EXCLUSION` to `true`.
 
 #### I want to increase my pool size. What should I take into consideration?
 
