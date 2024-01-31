@@ -303,9 +303,6 @@ Here's the flow of operations for an Azure Pipelines Virtual Machine Scale Set A
    - Linux: `https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/<script_version>/enableagent.sh`, for example, [version 15](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/15/enableagent.sh)
    - Windows: `https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/<script_version>/enableagent.ps1`, for example, [version 17](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/17/enableagent.ps1)
 
-   >[!NOTE]
-   > To improve performance, the configuration scripts call [Add-MpPreference](/powershell/module/defender/add-mppreference) with an `ExclusionPath` containing `C:\` and `D:\`, which disables Windows Defender scheduled and real-time scanning for files in these folders. To change the default behavior, set an environment variable named `ELASTIC_POOLS_SKIP_DEFENDER_EXCLUSION` to `true`.
-
 1. The configuration script creates a local user named `AzDevOps` if the operating system is Windows Server or Linux. For Windows 10 Client OS, the agent runs as LocalSystem. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
 
 1. For most scenarios, the configuration script then immediately starts the agent to run as the local user `AzDevOps`. The agent goes Online and is ready to run pipeline jobs.
@@ -557,7 +554,11 @@ This issue occurs because agent extension scripts attempt to create the user `Az
 
 #### Agent extension installation fails on scale set instances due to network security and firewall configurations
 
-The extension needs to be able to download the build agent files from `https://vstsagentpackage.azureedge.net/agent`, and the build agent needs to be able to register with Azure DevOps Services. Make sure that this URL and Azure DevOps Services-related IPs and URLs are open on the instance. For IPs and URLs that need to be unblocked on your firewall, see [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url). 
+The extension needs to be able to download the build agent files from `https://vstsagentpackage.azureedge.net/agent`, and the build agent needs to be able to register with Azure DevOps Services. Make sure that this URL and Azure DevOps Services-related IPs and URLs are open on the instance. For IPs and URLs that need to be unblocked on your firewall, see [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url).
+
+#### Why does my scale set agent configuration scrit call Add-MpPreference and configure Windws Defender on the agent?
+
+To improve performance (and prevent accidental shutdown of the agent software by Windows Defender), the configuration scripts call [Add-MpPreference](/powershell/module/defender/add-mppreference) with an `ExclusionPath` containing `C:\` and `D:\`, which disables Windows Defender scheduled and real-time scanning for files in these folders. To change the default behavior, set an environment variable named `ELASTIC_POOLS_SKIP_DEFENDER_EXCLUSION` to `true`.
 
 #### I want to increase my pool size. What should I take into consideration?
 
