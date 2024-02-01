@@ -1,6 +1,6 @@
 ---
 title: Publishing npm packages using Azure Pipelines
-ms.custom: seodec18, devx-track-js
+ms.custom: devx-track-js
 description: How to publish your npm packages with Azure Pipelines
 services: vsts
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A

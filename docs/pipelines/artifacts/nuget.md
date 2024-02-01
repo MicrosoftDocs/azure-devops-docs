@@ -1,6 +1,5 @@
 ---
-title: Publish NuGet packages with Pipeline tasks or the classic editor 
-ms.custom: seodec18
+title: Publish NuGet packages with Pipeline tasks or the classic editor
 description: How to publish NuGet packages with Azure Pipelines using YAML and the classic editor
 services: vsts
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2

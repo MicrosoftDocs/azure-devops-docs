@@ -1,6 +1,5 @@
 ---
 title: Build your GCC C/C++ app
-ms.custom: seodec18
 description: Learn how you can use continuous integration in Azure Pipelines to automatically build your GCC C/C++ app.
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
 ms.date: 04/04/2022

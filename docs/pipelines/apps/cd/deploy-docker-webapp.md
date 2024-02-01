@@ -3,7 +3,6 @@ title: Deploy a container to Azure App Service with Azure Pipelines
 description: How to deploy containerized web apps to Azure App Service with Azure Pipelines
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
-ms.custom: seodec18
 ms.date: 11/08/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
