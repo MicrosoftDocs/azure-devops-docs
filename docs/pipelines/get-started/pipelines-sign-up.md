@@ -1,6 +1,5 @@
 ---
 title: Sign up for Azure Pipelines
-ms.custom: seodec18
 description: Walk through signing up for Azure Pipelines to begin managing CI/CD to deploy your code.
 ms.topic: overview
 ms.author: chcomley

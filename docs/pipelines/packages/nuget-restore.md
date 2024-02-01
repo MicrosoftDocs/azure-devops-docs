@@ -5,7 +5,6 @@ ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.author: rabououn
 ms.reviewer: rabououn
 author: ramiMSFT
-ms.custom: "seodec18, contperf-fy21q1"
 ms.topic: conceptual
 ms.date: 10/10/2022
 monikerRange: '<= azure-devops'

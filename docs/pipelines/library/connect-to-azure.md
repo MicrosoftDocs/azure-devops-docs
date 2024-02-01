@@ -1,6 +1,6 @@
 ---
 title: Connect to Microsoft Azure with an ARM service connection
-ms.custom: seodec18, devx-track-arm-template, arm2024
+ms.custom: devx-track-arm-template, arm2024
 description: Use an ARM service connection to connect Azure Pipelines or TFS to Microsoft Azure
 ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
 ms.topic: conceptual

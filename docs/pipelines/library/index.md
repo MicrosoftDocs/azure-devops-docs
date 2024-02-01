@@ -1,6 +1,6 @@
 ---
 title: Library for Azure Pipelines
-ms.custom: seodec18, pipelinesresourcesrefresh
+ms.custom: pipelinesresourcesrefresh
 description: Understand the build and release assets for a project in Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: 45C5042C-9E31-41F8-B63B-6D5C241EEC21
 ms.topic: conceptual
