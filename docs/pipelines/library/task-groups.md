@@ -1,6 +1,5 @@
 ---
 title: Task groups in Azure Pipelines and TFS (classic)
-ms.custom: seodec18
 description: Understand Task Groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0FEAE814-2AF8-441B-A099-E77B1008D2F0
 ms.topic: conceptual

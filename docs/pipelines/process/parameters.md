@@ -1,6 +1,5 @@
 ---
 title: Process parameters
-ms.custom: seodec18
 description: You can link all important fields for tasks used across the build definition as process parameters
 ms.topic: conceptual
 ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
@@ -136,6 +135,3 @@ You can define a new process parameter using the `json` definition for your pipe
 1. Within your imported pipeline, you now have the option to link to your new process parameter. You may need to unlink and then link again for the process parameter to appear. 
 
 ::: moniker-end
-
-
-
