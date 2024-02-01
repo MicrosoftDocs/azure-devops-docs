@@ -1,9 +1,8 @@
 ---
 title: Code with Git
 titleSuffix: Azure DevOps
-ms.custom: seodec18, engagement-fy23
+ms.custom: engagement-fy23
 description: Follow these steps to share code within a Git repo and project in Azure DevOps.
-ms.assetid: 
 ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley

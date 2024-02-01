@@ -1,10 +1,8 @@
 ---
 title: Add, run, update inline tests
 titleSuffix: Azure DevOps
-ms.custom: seodec18
 description: Learn how to add, run, and quickly update manual test cases
 ms.subservice: azure-devops-new-user
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.date: 04/23/2019
@@ -189,5 +187,3 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-
-
