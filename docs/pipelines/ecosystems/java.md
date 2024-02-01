@@ -6,17 +6,12 @@ ms.reviewer: dastahel
 ms.custom: freshness-fy22q2, devdivchpfy22, devx-track-extended-java
 ms.topic: quickstart
 ms.date: 10/03/2022
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Build Java apps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
-::: moniker range="tfs-2018"
-> [!NOTE]
-> The following guidance uses YAML-based pipelines available in Azure Pipelines. Use tasks that correspond to those used in the following YAML.
-::: moniker-end
 
 You can use a pipeline to automatically build and test your Java projects. After you build and test your app, you can deploy your app to [Azure App Service](java-webapp.md), [Azure Functions](java-function.md), or [Azure Kubernetes Service](kubernetes/aks-template.md). If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).
 
@@ -24,66 +19,98 @@ You can use a pipeline to automatically build and test your Java projects. After
 
 You must have the following items in Azure DevOps:
 
+::: moniker-range=">= azure-devops"
+
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md).
+* A project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now. 
+* An ability to run pipelines on Microsoft-hosted agents. 
+
+::: moniker-end
+
+::: moniker-range="< azure-devops"
+
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* AAccess to an Azure DevOps Server collection.
+* An ability to run pipelines on self-hosted agents. 
 - A project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
-- A pipeline. If you don't have one, [Create a pipeline](#build-your-code) now.
+- A pipeline. If you don't have one, [Create a pipeline](#create-a-pipeline) now.
 
-### Create a pipeline
+::: moniker-end
 
-::: moniker range="> azure-devops-2019"
+## Create a GitHub repository
+Clone the following repo to your GitHub account:
 
-1. Fork the following repo at GitHub:
+```text
+https://github.com/MicrosoftDocs/pipelines-java
+```
 
-   ```
-   https://github.com/MicrosoftDocs/pipelines-java
-   ```
+## Create a pipeline
+
+::: moniker range=">= azure-devops"
 
 1. Sign in to your Azure DevOps organization and go to your project.
 
-1. Go to **Pipelines**, and then select **New pipeline**.
+1. Go to **Pipelines**, and then select **New pipeline** or **Create pipeline** if this is the first pipeline in the project.
 
 1. Perform the steps of the wizard by first selecting **GitHub** as the location of your source code. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
 1. Select your repo. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
 
-1. When you see the **Configure** tab, select **Maven** or **Gradle** or **Ant** depending on how you want to [build your code](#build-your-code).
+1. When you see the **Configure** tab, select **Maven**, **Gradle**, or **Ant** depending on how you want to [build your code](#build-your-code).
 
-1. When you're ready, select **Save and run**.
+1. The `azure-pipeline.yml` file pipeline is opened in an editor where you can view and edit your pipeline. When you're ready, select **Save and run**.
 
-1. Commit a new _azure-pipelines.yml_ file to your repo. Select **Save and run** again.
+1. To commit the `azure-pipelines.yml` file to your repo, select **Save and run** again.
 
-   If you want to watch your pipeline in action, select the build job.
-
-   You just created and ran a pipeline, because your code appeared to be a good match for the [Maven](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/maven.yml) template that we automatically created for you.
-
-   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repo that's ready for you to customize!
-
-1. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+  You can select **Job** to watch  your pipeline in action. 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-1. Import the following repo into your Git repo in Azure DevOps Server 2019:
+1. Go to your collection and select your project.
 
-   ```
-   https://github.com/MicrosoftDocs/pipelines-java
-   ```
+1. Select **Pipelines**, and then select **New pipeline** or **Create pipeline** if this is the first pipeline in the project.
 
-1. Save the pipeline and queue a build. When the ```Build #nnnnnnnn.n has been queued``` message appears, select the number link to see your pipeline in action. You now have a working pipeline that's ready for you to customize anytime!
+1. Perform the steps of the wizard by first selecting **GitHub Enterprisse Server** as the location of your source code. 
+1. To create a service connection:
+    1. Select **Connect to GitHub Enterprise Server**.
+    1. Enter your GitHub Enterprise Server URL.
+    1. Enter you GitHub Enterprise Server personal access token.
+ 
+
+1. Select your repo. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
+1. Review your new pipeline YAML file.  
+    
+    The Maven task is automatically added to your pipeline YAML file.  You can customize the Maven task by adding additional parameters.  For example, you can add the `goals` parameter to specify the Maven goals to run.  For more information, see [Maven task](/azure/devops/pipelines/tasks/build/maven.md).
+
+    You can also choose a different build tool by deleting the **Maven** task and selecting **Add task** and then selecting **Gradle**, or **Ant** depending on how you want to [build your code](#build-your-code).  The build agent's host environment must have the appropriate build tools and packages installed.
+
+1. When you see the **Configure** tab, select **Maven**, **Gradle**, or **Ant** depending on how you want to [build your code](#build-your-code).  The build agent's host environment must have the appropriate build tools and packages installed.
+    
+
+1. The `azure-pipeline.yml` file pipeline is opened in an editor where you can view and edit your pipeline. When you're ready, select **Save and run**.
+
+1. To commit the `azure-pipelines.yml` file to your repo, select **Save and run** again.
+
+  You can select **Job** to watch  your pipeline in action. 
+
+
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+You now have a working YAML pipeline (`azure-pipelines.yml`) in your repo that's ready for you to customize! To make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
-1. Import the following repo into your Git repo in TFS:
 
-   ```
+::: moniker range="azure-devops-2019"
+
+1. Import the following repo into your Git repo in Azure DevOps Server 2019:
+
+   ```text
    https://github.com/MicrosoftDocs/pipelines-java
    ```
 
-      This template automatically adds the tasks you need to build the code in the sample repo.
-
 1. Save the pipeline and queue a build. When the ```Build #nnnnnnnn.n has been queued``` message appears, select the number link to see your pipeline in action. You now have a working pipeline that's ready for you to customize anytime!
-
 ::: moniker-end
 
 Read further to learn some of the more common ways to customize your pipeline.
@@ -113,13 +140,12 @@ Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
 
 ## Build your code
 
 ### Maven
 
-With your Maven build, the following snippet gets added to your `azure-pipelines.yml` file. You can change values, such as the path to your `pom.xml` file, to match your project configuration. See the [Maven](/azure/devops/pipelines/tasks/reference/maven-v3) task for more information about these options.
+With your Maven build, the following snippet is added to your `azure-pipelines.yml` file. You can change values, such as the path to your `pom.xml` file, to match your project configuration. See the [Maven](/azure/devops/pipelines/tasks/reference/maven-v3) task for more information about these options.
 
 ```yaml
 steps:
@@ -231,15 +257,14 @@ steps:
 
 After you've built and tested your app, you can upload the build output to Azure Pipelines, create and publish a Maven package, or package the build output into a _.war/jar_ file to be deployed to a web application.
 
-::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
 
 Learn more about creating a CI/CD pipeline for your deployment target:
 
-- [Build and deploy to a Java web app](java-webapp.md)
-- [Build and deploy Java to Azure Functions](java-function.md)
-- [Build and deploy to Azure Kubernetes Service with Azure Pipelines](kubernetes/aks-template.md)
+- [Azure App Service](java-webapp.md)
+- [Azure Functions](java-function.md)
+- [Azure Kubernetes service](kubernetes/aks-template.md)
 
 ::: moniker-end
 
