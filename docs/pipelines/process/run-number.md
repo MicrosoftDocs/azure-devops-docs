@@ -1,6 +1,5 @@
 ---
 title: Run (build) number
-ms.custom: seodec18
 description: Customize pipeline run number in Azure Pipelines or Azure DevOps Server.
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
@@ -186,5 +185,3 @@ steps:
 ::: moniker-end
 
 <!-- ENDSECTION -->
-
-

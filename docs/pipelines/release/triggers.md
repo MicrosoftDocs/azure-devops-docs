@@ -5,7 +5,6 @@ ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
-ms.custom: seodec18, contperf-fy21q1
 ms.date: 10/20/2021
 monikerRange: '<= azure-devops'
 ---
@@ -104,6 +103,3 @@ Enable the toggle button to set up specific gates to evaluate before trigger dep
 Configure specific actions when multiple releases are queued for deployment.
 
     :::image type="content" source="media/deploy-queue.png" alt-text="A screenshot showing deployment queue settings."::: 
-
-
-

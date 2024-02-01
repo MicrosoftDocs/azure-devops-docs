@@ -1,6 +1,5 @@
 ---
 title: Stages in Azure Pipelines
-ms.custom: seodec18
 description: Understand stages in Azure Pipelines
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
 ms.topic: conceptual
