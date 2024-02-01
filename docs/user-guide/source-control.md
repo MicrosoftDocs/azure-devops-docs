@@ -1,8 +1,7 @@
 ---
 title: Understand source control
 titleSuffix: Azure DevOps
-ms.custom: seodec18
-description: What is source control or version control in Azure DevOps?  
+description: What is source control or version control in Azure DevOps?
 ms.subservice: azure-devops-new-user
 ms.assetid: 7E769466-2165-4223-96FA-80A687287EFC
 ms.author: chcomley
