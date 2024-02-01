@@ -2,7 +2,7 @@
 title: Send an email with work items
 titleSuffix: Azure Boards
 description: Learn how to send an email with work items in Azure Boards, Azure DevOps, and Visual Studio Team Explorer. Also learn how to print a list of work items.
-ms.custom: work-items, contperf-fy23
+ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ms.topic: how-to
