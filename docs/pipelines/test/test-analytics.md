@@ -3,7 +3,7 @@ title: Test Analytics
 description: Get meaningful insights with test analytics in the pipeline
 ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
 ms.topic: conceptual
-ms.custom: "continuous-test, seodec18, cross-service"
+ms.custom: continuous-test, cross-service
 ms.author: rbatra
 author: raviLiftr
 ms.date: 06/28/2019

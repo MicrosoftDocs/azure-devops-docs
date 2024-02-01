@@ -1,6 +1,5 @@
 ---
 title: File transforms and variable substitution
-ms.custom: seodec18
 description: File transforms and variable substitution for tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
 ms.topic: reference
