@@ -1,7 +1,6 @@
 ---
 title: Use runtime and type-safe parameters
-ms.custom: seodec18
-description: You can use runtime parameters in pipelines or as part of a template 
+description: You can use runtime parameters in pipelines or as part of a template
 ms.topic: conceptual
 ms.date: 07/03/2023
 monikerRange: '>=azure-devops-2020'
@@ -298,4 +297,3 @@ steps:
 ## Parameter data types
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
-
