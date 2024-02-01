@@ -1,6 +1,5 @@
 ---
 title: File matching patterns reference
-ms.custom: seodec18
 description: A reference guide that can help you to understand the file matching patterns for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
