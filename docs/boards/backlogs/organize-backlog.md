@@ -1,10 +1,10 @@
 ---
 title: Organize your product backlog in Azure Boards
-titleSuffix: Azure Boards  
+titleSuffix: Azure Boards
 description: Learn how to map or parent backlog items to features. Then learn how to map features to epics in Azure Boards.
-ms.custom: "boards-backlogs, seodec18" 
+ms.custom: boards-backlogs
 ms.service: azure-devops-boards
-ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF  
+ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
@@ -302,4 +302,3 @@ From a product or portfolio backlog, you can multi-select several work items and
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-

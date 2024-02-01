@@ -1,6 +1,5 @@
 ---
 title: Templates
-ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
@@ -27,6 +26,14 @@ There are two types of templates: includes and extends.
 - **Extends template** control what is allowed in a pipeline. When an extends template controls what is allowed in a pipeline, the template defines logic that another file must follow. 
 
 To take full advantage of templates, you should also use [template expressions](template-expressions.md) and [template parameters](template-parameters.md). 
+
+### Imposed limits
+
+Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
+To help prevent runaway growth, Azure Pipelines imposes the following limits:
+- No more than 100 separate YAML files may be included (directly or indirectly)
+- No more than 20 levels of template nesting (templates including other templates)
+- No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600 KB - 2 MB of on-disk YAML, depending on the specific features used)
 
 ::: moniker-end
 
@@ -692,6 +699,3 @@ steps:
   - script: echo I run only if Build.Reason = IndividualCI 
 - script: echo I run after the conditions
 ```
-
-
-

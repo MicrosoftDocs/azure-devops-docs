@@ -2,7 +2,7 @@
 title: Add a user to manage billing
 titleSuffix: Azure DevOps Services
 description: Add a user who can set up and manage billing for Azure DevOps.
-ms.custom: seodec18, freshness-fy22q1, engagement-fy23
+ms.custom: freshness-fy22q1, engagement-fy23
 ms.subservice: azure-devops-billing
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
 ms.topic: conceptual

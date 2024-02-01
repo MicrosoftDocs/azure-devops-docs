@@ -5,7 +5,6 @@ ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.author: rabououn
 ms.reviewer: rabououn
 author: ramiMSFT
-ms.custom: "seodec18, contperf-fy21q1"
 ms.topic: conceptual
 ms.date: 10/10/2022
 monikerRange: '<= azure-devops'
@@ -156,4 +155,4 @@ For existing pipelines, add the **NuGet Tool Installer** to your pipeline and se
 
 - [Publish to NuGet feeds (YAML/Classic)](../artifacts/nuget.md)
 - [Publish and consume build artifacts](../artifacts/build-artifacts.md)
-- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
+- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/en-us/)

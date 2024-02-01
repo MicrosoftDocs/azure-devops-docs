@@ -1,7 +1,7 @@
 ---
 title: Access your organization with Microsoft Entra ID
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, engagement-fy23
+ms.custom: engagement-fy23
 description: About user authentication and controlling conditional access to your organization with your Microsoft Entra tenant.
 ms.subservice: azure-devops-organizations
 ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2

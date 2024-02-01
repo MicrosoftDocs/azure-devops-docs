@@ -1,8 +1,8 @@
 ---
-title: Move work items and change the work item type in Azure Boards 
+title: Move work items and change the work item type in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to change the work item type or bulk move work items to another project in Azure Boards.
-ms.custom: "boards-backlogs, seodec18, cross-project" 
+ms.custom: boards-backlogs, cross-project
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
@@ -157,4 +157,3 @@ Note the following:
 
 - [Remove or delete work items](remove-delete-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
-

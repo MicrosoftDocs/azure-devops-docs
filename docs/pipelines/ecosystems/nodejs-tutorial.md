@@ -50,7 +50,7 @@ To fork the sample application, you'll need to sign in to GitHub, go to the samp
 
 Use the Azure CLI to add the resources needed to deploy and run an App Service instance. You'll access Azure CLI from Azure Cloud Shell. 
 
-1. Go to the [Azure portal][https://portal.azure.com?azure-portal=true] and sign in.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 

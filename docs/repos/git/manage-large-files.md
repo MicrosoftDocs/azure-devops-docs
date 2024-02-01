@@ -72,7 +72,7 @@ Your local development tools will transparently work with the files as if they w
 ###  Benefits
 
 The benefit of Git LFS is that your team can use the familiar end to end Git workflow no matter what files your team creates. 
-LFS files can be as big as you need them to be.
+LFS handles large files, preventing them from adversely impacting the overall repository.
 Additionally, as of version 2.0, Git LFS supports [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help your team work on large, undiffable assets like videos, sounds, and game maps.
 
 Git LFS is [is fully supported and free in Azure DevOps Services](https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/).

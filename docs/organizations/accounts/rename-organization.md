@@ -1,7 +1,6 @@
 ---
 title: Rename your organization
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
 description: Learn how to rename your organization and what to do before and after you rename it.
 ms.subservice: azure-devops-organizations
 ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d

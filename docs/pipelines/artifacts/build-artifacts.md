@@ -1,7 +1,6 @@
 ---
 title: Publish and download build artifacts
 description: How to publish and download build artifacts with Azure Pipelines
-ms.custom: seodec18
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
 ms.date: 04/21/2022

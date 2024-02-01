@@ -1,7 +1,6 @@
 ---
 title: Delete, remove users from team, project, organization
 titleSuffix: Azure DevOps
-ms.custom: seodec18
 description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project.
 ms.subservice: azure-devops-organizations
 ms.topic: conceptual

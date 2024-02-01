@@ -1,7 +1,7 @@
 ---
-title: Find or change location or geography of organization 
+title: Find or change location or geography of organization
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, references_regions
+ms.custom: references_regions
 description: Find your organization's default location or update your organization's geography in Azure DevOps.
 ms.subservice: azure-devops-organizations
 ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65

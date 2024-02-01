@@ -1,7 +1,6 @@
 ---
 title: Set pipeline permissions
 ms.topic: conceptual
-ms.custom: seodec18, contperf-fy21q3
 description: Understand how you can set permissions at varying levels to securely manage Azure Pipelines.
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.author: jukullam

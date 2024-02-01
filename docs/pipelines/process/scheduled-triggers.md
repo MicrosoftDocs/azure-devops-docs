@@ -5,7 +5,6 @@ ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 10/10/2023
-ms.custom: contperf-fy21q3
 monikerRange: '<= azure-devops'
 ---
 
