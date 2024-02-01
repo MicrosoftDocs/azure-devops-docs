@@ -3,7 +3,7 @@ title: About pipeline tests
 description: Understand terms used in test report and test analytics
 ms.assetid: 7C6E8651-FD90-40EB-8E0F-1AE48360B5DB
 ms.topic: conceptual
-ms.custom: "continuous-test, seodec18"
+ms.custom: continuous-test
 ms.author: rbatra
 author: raviLiftr
 ms.date: 12/07/2018

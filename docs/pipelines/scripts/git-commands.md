@@ -1,6 +1,5 @@
 ---
 title: Run Git commands in a script
-ms.custom: seodec18
 description: Learn how you can run a Git command in a build script for your workflow with Azure Pipelines
 ms.topic: conceptual
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD

@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot Azure Resource Manager workload identity service connections
-ms.custom: seodec18, devx-track-arm-template, arm2024
+ms.custom: devx-track-arm-template, arm2024
 description: How to troubleshoot workload identity service connections in Azure Pipelines
 ms.topic: troubleshooting-general
 ms.author: jukullam
