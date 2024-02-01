@@ -3,7 +3,6 @@ title: Deploy to Azure SQL Database
 description: Deploy to an Azure SQL database from Azure Pipelines or TFS
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: conceptual
-ms.custom: seodec18
 ms.date: 04/20/2022
 monikerRange: '<= azure-devops'
 ---

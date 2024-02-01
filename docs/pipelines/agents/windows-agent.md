@@ -1,6 +1,5 @@
 ---
 title: Deploy an Azure Pipelines agent on Windows
-ms.custom: contperf-fy21q1
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines
 ms.topic: conceptual
 ms.date: 05/05/2023
@@ -38,7 +37,7 @@ Make sure your machine has these prerequisites:
   * Server OS
     * Windows Server 2012 or higher
 * The agent software installs its own version of .NET so there's no .NET prerequisite.
-- [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
+* [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
 * **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
 * Recommended - [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) (2015 or higher)
 
@@ -94,7 +93,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 
 > [!Note]
-> Please avoid using mintty based shells, such as git-bash, for agent configuration. Mintty is not fully compatible with native Input/Output Windows API ([here](https://github.com/mintty/mintty/wiki/Tips#inputoutput-interaction-with-alien-programs) is some info about it) and we couldn't guarantee correct work of setup script in this case.
+> Please avoid using mintty based shells, such as git-bash, for agent configuration. Mintty is not fully compatible with native Input/Output Windows API ([here](https://github.com/mintty/mintty/wiki/Tips#inputoutput-interaction-with-alien-programs) is some info about it) and we can't guarantee the setup script will work correctly in this case.
 
 ### Server URL
 
@@ -112,7 +111,7 @@ When setup asks for your server URL, for Azure DevOps Server, answer `https://{m
 
 ### Agent setup authentication type
 
-When you register an agent, choose from the following authentication types, and agent setup prompts you for the specific additional information required for each authentication type.  For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
+When you register an agent, choose from the following authentication types, and setup will prompt you for the specific additional information required for each authentication type.  For more information, see [Self-hosted agent authentication options](./agent-authentication-options.md).
 
 [!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
@@ -140,18 +139,18 @@ If you choose to run as a service (which we recommend), the username you run as 
 
 ### Run interactively
 
-If you configured the agent to run interactively, to run it:
+If you configured the agent to run interactively, run the following the command to start the agent.
 
  ```ps
  .\run.cmd
  ```
 
-To restart the agent, press Ctrl+C to stop the agent and then run `run.cmd` to restart it. 
+To restart the agent, press Ctrl+C to stop the agent, and then run `run.cmd` to restart it. 
 
-### Run once
+#### Run once
 
-For agents configured to run interactively, you can choose to have the agent accept only one job.
-To run in this configuration:
+You can also choose to have the agent accept only one job and then exit.
+To run in this configuration, use the following command.
 
  ```ps
  .\run.cmd --once
@@ -162,9 +161,9 @@ Agents in this mode will accept only one job and then spin down gracefully (usef
 ### Run as a service
 
 If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for one of:
-- "Azure Pipelines Agent (*name of your agent*)".
-- "VSTS Agent (*name of your agent*)".
-- "vstsagent.(*organization name*).(*name of your agent*)".
+- "Azure Pipelines Agent (*name of your agent*)"
+- "VSTS Agent (*name of your agent*)"
+- "vstsagent.(*organization name*).(*name of your agent*)"
 
 To restart the agent, right-click the entry and choose **Restart**.
 

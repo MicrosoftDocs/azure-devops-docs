@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 1/17/2024
+ms.date: 1/19/2024
 ms.topic: include
 ---
 
@@ -21,7 +21,7 @@ This is the first of several features we're making to improve the current integr
 We're happy to announce the release of this feature to all customers of Azure DevOps Service. 
 
 > [!NOTE]
-> This feature will roll out over the next two to three weeks. It may not be available to your organization untill early February 2024.
+> This feature will roll out over the next two to three weeks. It may not be available to your organization until early February 2024.
 
 You can now configure each backlog level to automate the opening and closing (or resolving) of work items based on the state of the child items. There are two main scenarios we're attempting to solve.
 

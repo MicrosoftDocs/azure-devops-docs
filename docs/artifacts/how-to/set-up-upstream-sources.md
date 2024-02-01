@@ -70,9 +70,6 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 ## Add a feed in a different organization as an upstream source
 
-> [!NOTE]
-> Universal Packages are only supported in upstream sources within the same organization.
-
 1. Select the ![gear icon](../../media/icons/gear-icon.png) button to access your feed's settings.
 
 1. Select **Upstream sources**.

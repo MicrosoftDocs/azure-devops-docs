@@ -1,11 +1,11 @@
 ---
 title: Use service principals & managed identities
 titleSuffix: Azure DevOps
-ms.custom: 
 description: Learn how to add and manage service principals and managed identities in your Azure DevOps organizations.
 ms.subservice: azure-devops-security
 ms.assetid: 
 ms.topic: how-to
+ms.custom: arm2024
 ms.author: wonga
 author: wonga
 ms.date: 11/10/2023
@@ -160,7 +160,7 @@ $accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-26
 
 Write-Host "Use access token with Azure DevOps REST API to list projects in the organization..."
 $apiVersion = "7.1-preview.1"
-$uri = "https://dev.azure.com/${yourUsername}/_apis/projects?api-version=${apiVersion}"
+$uri = "https://dev.azure.com/${yourOrgname}/_apis/projects?api-version=${apiVersion}"
 $headers = @{
     Accept = "application/json"
     Authorization = "Bearer $accessToken"
@@ -321,7 +321,7 @@ tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-
 ### Pipelines
 
 #### Q: Can I use a managed identity within a service connection? How can I more easily rotate secrets for the service principal in my service connection? Can I avoid storing secrets in a service connection altogether?
-Azure supports workload identity federation using the OpenID Connect protocol, which allows us to create secret-free service connections in Azure Pipelines backed by service principals or managed identities with federated credentials in Microsoft Entra ID. As part of its execution, a pipeline can exchange its own internal token with a Microsoft Entra token, thereby gaining access to Azure resources. Once implemented, this mechanism is recommended in the product over [other types of Azure service connections](/azure/devops/pipelines/library/connect-to-azure) that exist today. This mechanism can also be used to set up secret-free deployments with any other OIDC compliant service provider. This mechanism is in preview, but you can follow along with its public release on our [public roadmap](/azure/devops/release-notes/roadmap/2022/secret-free-deployments).
+Azure supports workload identity federation using the OpenID Connect protocol, which allows us to create secret-free service connections in Azure Pipelines backed by service principals or managed identities with federated credentials in Microsoft Entra ID. As part of its execution, a pipeline can exchange its own internal token with a Microsoft Entra token, thereby gaining access to Azure resources. Once implemented, this mechanism is recommended in the product over [other types of Azure service connections](/azure/devops/pipelines/library/connect-to-azure) that exist today. This mechanism can also be used to set up secret-free deployments with any other OIDC compliant service provider. This mechanism is in preview.
 
 ### Repos
 #### Q: Can I use a service principal to do git operations, like clone a repo?

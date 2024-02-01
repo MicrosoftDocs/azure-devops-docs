@@ -1,21 +1,14 @@
 ---
 title: Build your GCC C/C++ app
-ms.custom: seodec18
 description: Learn how you can use continuous integration in Azure Pipelines to automatically build your GCC C/C++ app.
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
 ms.date: 04/04/2022
 ms.topic: quickstart
-monikerRange: '<= azure-devops'
 ---
 
 # Build your GCC C/C++ app
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
-
-
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
 
 Azure Pipelines provides a highly customizable continuous integration (CI) pipeline to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline for a C/C++ application compiled with GCC/g++.
 
@@ -87,8 +80,6 @@ https://github.com/adventworks/cpp-gpp-sample
 
 5. Click the **+** icon on **Job 1** of the build and then:
 
-::: moniker range=">= tfs-2018"
-
   ### Azure Pipelines and TFS 2018
 
   1. Search for the **Shell Script** task and click **Add** to add it to your build.
@@ -100,8 +91,6 @@ https://github.com/adventworks/cpp-gpp-sample
       Version | `3.*` or later
       Type    | `Inline`
       Script  | `make`
-
-::: moniker-end
 
   ### Finish
 

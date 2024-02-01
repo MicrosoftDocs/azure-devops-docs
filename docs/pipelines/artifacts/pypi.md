@@ -1,6 +1,6 @@
 ---
 title: Publish Python packages to an Azure Artifacts feed
-ms.custom: seodec18, devx-track-python
+ms.custom: devx-track-python
 description: How to publish Python packages to an Azure Artifacts feed using Azure Pipelines
 services: vsts
 ms.topic: conceptual

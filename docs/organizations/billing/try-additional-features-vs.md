@@ -1,7 +1,7 @@
 ---
 title: Try Azure Test Plans for free
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, contperf-fy22q3, freshness-fy22q1, engagement-fy23
+ms.custom: freshness-fy22q1, engagement-fy23
 description: Get a free 30-day trial for Azure Test Plans (formerly Test Manager).
 ms.subservice: azure-devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410

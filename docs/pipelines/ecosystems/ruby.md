@@ -6,7 +6,7 @@ ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
 ms.author: vijayma
 author: vijayma
 ms.reviewer: dastahel
-ms.custom: seodec18, freshness-fy22q2, kr2b-contr-experiment
+ms.custom: freshness-fy22q2, kr2b-contr-experiment
 ms.date: 01/20/2022
 monikerRange: azure-devops
 ---

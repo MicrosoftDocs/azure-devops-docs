@@ -2,13 +2,13 @@
 title: Catalog of Out Of Box widgets you can add to a dashboard
 titleSuffix: Azure DevOps
 description: An index of widgets you might want to add to your dashboards when working in Azure DevOps.
-ms.custom: dashboards, contperf-fy22q1, engagement-fy23  
+ms.custom: dashboards, engagement-fy23
 ms.subservice: azure-devops-analytics
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-monikerRange: '<= azure-devops'  
+monikerRange: '<= azure-devops'
 ms.date: 01/02/2024
 ---
 

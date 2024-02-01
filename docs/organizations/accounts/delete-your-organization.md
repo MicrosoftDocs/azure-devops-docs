@@ -1,7 +1,6 @@
 ---
 title: Delete or remove an organization
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
 description: Learn how to delete your organization, and what happens to users when you do.
 ms.subservice: azure-devops-organizations
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5

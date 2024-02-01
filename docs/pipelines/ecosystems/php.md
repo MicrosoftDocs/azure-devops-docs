@@ -4,7 +4,7 @@ description: Build and test PHP apps with Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.author: jukullam
-ms.custom: seodec18, freshness-fy22q2
+ms.custom: freshness-fy22q2
 ms.date: 06/13/2022
 monikerRange: azure-devops
 ---
@@ -205,4 +205,3 @@ If your composer.json is in a subfolder instead of the root directory, you can u
 You can also specify the absolute path, using the built-in system variables:
 
 ```composer install --no-interaction --working-dir='$(system.defaultWorkingDirectory)/pkgs'```
-
