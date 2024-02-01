@@ -1,6 +1,5 @@
 ---
 title: Understand releases and deployments in Azure Pipelines
-ms.custom: seodec18
 description: DevOps CI/CD - Understand releases pipelines
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.topic: conceptual

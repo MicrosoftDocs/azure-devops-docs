@@ -1,6 +1,5 @@
 ---
 title: Template expressions
-ms.custom: seodec18
 description: How to use expressions in templates
 ms.topic: conceptual
 ms.date: 06/30/2023

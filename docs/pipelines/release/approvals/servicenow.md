@@ -1,6 +1,5 @@
 ---
 title: Control deployments by using ServiceNow
-ms.custom: seodec18
 description: Understand ServiceNow gated releases in Azure Pipelines
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.topic: conceptual

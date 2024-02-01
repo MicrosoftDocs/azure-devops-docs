@@ -1,6 +1,5 @@
 ---
 title: Build and Release Tasks
-ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
