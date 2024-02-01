@@ -4,7 +4,7 @@ description:  Build, deploy, and test JavaScript and Node.js apps with Azure Pip
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: quickstart
-ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2, contperf-fy22q2
+ms.custom: devx-track-js, freshness-fy22q2
 ms.date: 04/17/2023
 monikerRange: '<= azure-devops'
 zone_pivot_groups: pipelines-version
@@ -186,4 +186,3 @@ Congratulations, you've successfully completed this quickstart!
 
 > [!div class="nextstepaction"]
 > [Configure JavaScript](customize-javascript.md)
-

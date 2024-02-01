@@ -1,6 +1,5 @@
 ---
 title: Use Azure Pipelines
-ms.custom: seodec18
 description: Learn the basics about Azure Pipelines and how to use it to automatically build and release code.
 ms.topic: overview
 ms.author: sdanie
@@ -161,5 +160,3 @@ TFS 2015 through TFS 2018 supports the Classic interface only. The following tab
 ## Related articles
 
 - [Key concepts for new Azure Pipelines users](key-pipelines-concepts.md) 
-
-

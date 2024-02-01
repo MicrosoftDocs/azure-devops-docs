@@ -2,7 +2,6 @@
 title: Understand job access tokens
 description: Access repositories, artifacts and other resources from pipelines
 ms.topic: reference
-ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
 ms.date: 06/30/2022
