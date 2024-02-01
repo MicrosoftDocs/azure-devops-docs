@@ -1,8 +1,8 @@
 ---
 title: Define a work item query in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to use queries and perform tasks like define a flat-list, clause, or hyperlink, and use a tree, direct link, hyperlink or logical expression. Also learn how to query across or within projects and view results in a dashboard, and best practices. 
-ms.custom: boards-queries, contperf-fy23, linked-from-support, cross-project 
+description: Learn how to use queries and perform tasks like define a flat-list, clause, or hyperlink, and use a tree, direct link, hyperlink or logical expression. Also learn how to query across or within projects and view results in a dashboard, and best practices.
+ms.custom: boards-queries, linked-from-support, cross-project, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.author: chcomley

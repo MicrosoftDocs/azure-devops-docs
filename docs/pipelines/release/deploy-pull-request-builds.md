@@ -3,7 +3,7 @@ title: Deploy pull request Artifacts
 description: Deploy pull request Artifacts from Azure Repos or GitHub repositories
 ms.topic: tutorial
 ms.author: moala
-ms.custom: contperf-fy21q4, engagement-fy23
+ms.custom: engagement-fy23
 author: raiyanalam
 ms.date: 02/14/2023
 monikerRange: '>= azure-devops-2019'

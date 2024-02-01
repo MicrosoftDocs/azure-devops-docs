@@ -3,7 +3,7 @@ title: Use Azure Key Vault secrets in Azure Pipelines
 description: How to create Azure Key vaults, store secrets, and use those secrets in your Azure Pipelines
 ms.topic: tutorial
 ms.date: 05/16/2022
-ms.custom: contperf-fy21q3, devx-track-azurecli
+ms.custom: devx-track-azurecli, arm2024
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---

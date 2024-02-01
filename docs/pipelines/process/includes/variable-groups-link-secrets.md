@@ -5,6 +5,7 @@ ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 04/29/2022
+ms.custom: arm2024
 ---
 
 Link an existing Azure key vault to a variable group and map selective vault secrets to the variable group.

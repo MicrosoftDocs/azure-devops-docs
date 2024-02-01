@@ -1,7 +1,6 @@
 ---
 title: Assign an owner to an orphaned organization
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
 description: Learn how to assign a new owner to an organization when the current owner's inactive.
 ms.subservice: azure-devops-organizations
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff

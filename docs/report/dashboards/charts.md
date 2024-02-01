@@ -1,10 +1,10 @@
 ---
 title: Status and trend work item, query-based charts
-titleSuffix: Azure DevOps  
+titleSuffix: Azure DevOps
 description: Learn how to add status, progress, and trend charts to dashboards from flat-based queries in Azure DevOps.
-ms.custom: dashboards, contperf-fy20q4 
+ms.custom: dashboards
 ms.subservice: azure-devops-analytics
-ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
+ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

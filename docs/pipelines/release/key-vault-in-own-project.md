@@ -4,6 +4,7 @@ description: How to set up Azure Key vaults with your own project and use it in 
 ms.topic: tutorial
 ms.date: 08/28/2023
 monikerRange: '>= azure-devops-2019'
+ms.custom: arm2024
 "recommendations": "true"
 ---
 

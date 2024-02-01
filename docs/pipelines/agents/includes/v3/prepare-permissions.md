@@ -11,11 +11,11 @@ ms.date: 09/22/2023
 
 The user configuring the agent needs pool admin permissions, but the user running the agent does not.
 
-The folders controlled by the agent should be restricted to as few users as possible and they contain secrets that could be decrypted or exfiltrated.
+The folders controlled by the agent should be restricted to as few users as possible because they contain secrets that could be decrypted or exfiltrated.
 
 The Azure Pipelines agent is a software product designed to execute code it downloads from external sources. It inherently could be a target for Remote Code Execution (RCE) attacks.
 
-Therefore, it is important to consider the threat model surrounding each individual usage of Pipelines Agents to perform work, and decide what are the minimum permissions could be granted to the user running the agent, to the machine where the agent runs, to the users who have write access to the Pipeline definition, the git repos where the yaml is stored, or the group of users who control access to the pool for new pipelines.
+Therefore, it is important to consider the threat model surrounding each individual usage of Pipelines Agents to perform work, and decide what are the minimum permissions that could be granted to the user running the agent, to the machine where the agent runs, to the users who have write access to the Pipeline definition, the git repos where the yaml is stored, or the group of users who control access to the pool for new pipelines.
 
 It is a best practice to have the identity running the agent be different from the identity with permissions to connect the agent to the pool. The user generating the credentials (and other agent-related files) is different than the user that needs to read them. Therefore, it is safer to carefully consider access granted to the agent machine itself, and the agent folders which contain sensitive files, such as logs and artifacts.
 

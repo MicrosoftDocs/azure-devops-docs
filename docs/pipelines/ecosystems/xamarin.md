@@ -4,7 +4,7 @@ description: Learn how to build a pipeline that deploys a Xamarin app for automa
 ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
 ms.reviewer: dastahel
-ms.custom: seodec18,contperf-fy21q2, freshness-fy22q2
+ms.custom: freshness-fy22q2
 ms.date: 11/01/2023
 monikerRange: 'azure-devops'
 # Customer intent: As an Azure DevOps user, I want to build a pipeline that deploys a Xamarin app so that I can take advantage of automated builds.

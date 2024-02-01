@@ -1,7 +1,6 @@
 ---
 title: Manage an organization
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, contperf-fy22q3
 description: Manage an organization, so you can collaborate with others to develop apps, plan and track work, integrate with other services, get more features and extensions.
 ms.subservice: azure-devops-organizations
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83

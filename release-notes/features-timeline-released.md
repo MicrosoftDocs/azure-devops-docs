@@ -38,8 +38,8 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="6"><a href="2024/sprint-233-update.md" data-raw-source="[18 January   2024](2024/sprint-233-update.md)"> 18 January  2024</a></td>
-    <td>Azure DevOps OAuth self-service secret rotation</td><td>General</td><td>Future</td></tr>
+    <td rowspan="6"><a href="2024/sprint-233-update.md" data-raw-source="[19 January   2024](2024/sprint-233-update.md)"> 19 January  2024</a></td>
+    <td>Custom CodeQL queries now supported in GitHub Advanced Security for Azure DevOps</td><td>General</td><td>Future</td></tr>
     <td>GitHub Integration - Improved AB# validation is generally available</td><td>Boards</td><td>Future</td></tr>
     <td>Team Automation Rules is generally available</td><td>Boards</td><td>Future</td></tr>
     <td>Update deprecated tasks before January 31</td><td>Pipelines</td><td>Future</td></tr>

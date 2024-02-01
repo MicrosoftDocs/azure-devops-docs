@@ -1,12 +1,12 @@
 ---
 title: Copy or clone work items and more
-titleSuffix: Azure Boards  
+titleSuffix: Azure Boards
 description: Learn how to copy work items and lists of stories or issues in Azure Boards.
-ms.custom: "seodec18, cross-project"   
+ms.custom: cross-project
 ms.service: azure-devops-boards
-ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
+ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95
 ms.author: chcomley
-author: chcomley 
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 08/17/2023
@@ -176,7 +176,3 @@ In Visual Studio, right-select the work item tab to copy the URL. The URL opens 
 - [Remove, delete, or restore work items](remove-delete-work-items.md)  
 - [Prepopulate fields using work item templates](work-item-template.md)
 - [Azure Boards FAQs](../faqs.yml) 
-
-
-
-

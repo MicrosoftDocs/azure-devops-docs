@@ -1,6 +1,5 @@
 ---
 title: Cross-platform scripting
-ms.custom: seodec18
 description: Patterns for safe cross-platform scripting
 ms.topic: conceptual
 ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2

@@ -239,7 +239,7 @@ Learn more about creating a CI/CD pipeline for your deployment target:
 
 - [Build and deploy to a Java web app](java-webapp.md)
 - [Build and deploy Java to Azure Functions](java-function.md)
-- [Build and deploy Java to Azure Kubernetes service](kubernetes/aks-template.md)
+- [Build and deploy to Azure Kubernetes Service with Azure Pipelines](kubernetes/aks-template.md)
 
 ::: moniker-end
 
