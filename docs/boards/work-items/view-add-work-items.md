@@ -1,8 +1,8 @@
 ---
 title: View and add work items from Work Items page
 titleSuffix: Azure Boards
-description: Learn how to view and filter work items like user stories, issues, and bugs from the Work Items hub and seven personalized pivot views. 
-ms.custom: boards-work-items, devx-track-azurecli, contperf-fy20q4,  engagement-fy23
+description: Learn how to view and filter work items like user stories, issues, and bugs from the Work Items hub and seven personalized pivot views.
+ms.custom: boards-work-items, devx-track-azurecli, engagement-fy23
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer

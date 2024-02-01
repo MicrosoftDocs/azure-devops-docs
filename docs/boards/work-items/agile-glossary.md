@@ -3,8 +3,6 @@ title: Learn key concepts & terms to support Agile tools
 titleSuffix: Azure Boards
 description: Learn about the key terms and concepts to understand the objects and items used to track work in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: seodec18
-ms.assetid:  
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
