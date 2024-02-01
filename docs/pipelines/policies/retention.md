@@ -6,7 +6,7 @@ ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
 ms.date: 05/03/2023
-ms.custom: contperf-fy21q1, contperf-fy21q2, cross-service
+ms.custom: cross-service
 monikerRange: '<= azure-devops'
 ---
 

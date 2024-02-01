@@ -1,20 +1,15 @@
 ---
 title: Build C++ Windows apps
-ms.custom: seodec18, devdivchpfy22
+ms.custom: devdivchpfy22
 ms.date: 06/08/2022
 description: Automatically build your C++ Windows app with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
 ms.topic: quickstart
-monikerRange: '<= azure-devops'
 ---
 
 # Build C++ Windows apps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
-
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
 
 This article explains how to build C++ projects on Windows automatically.
 
@@ -26,12 +21,8 @@ This example shows how to build a C++ project. To start, import (into Azure Repo
 https://github.com/MicrosoftDocs/pipelines-cpp
 ```
 
-::: moniker range="< azure-devops"
-
 > [!NOTE]
 > This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. You'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
-
-::: moniker-end
 
 * After you have the sample code in your own repository, create a pipeline using the instructions in [Create your first pipeline](../../create-first-pipeline.md) and select the **.NET Desktop** template. This automatically adds the tasks required to build the code in the sample repository.
 

@@ -1,6 +1,5 @@
 ---
 title: Build options
-ms.custom: seodec18
 description: Learn about building your code or deploying your software using build options on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E

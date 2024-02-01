@@ -3,7 +3,6 @@ title: Review logs to diagnose pipeline issues
 description: Learn how to review pipeline diagnostic logs to troubleshoot
 ms.author: sdanie
 ms.reviewer: steved0x
-ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
 ms.date: 11/27/2023
 monikerRange: '<= azure-devops'

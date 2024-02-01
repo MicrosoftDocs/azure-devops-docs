@@ -1,7 +1,6 @@
 ---
 title: Change process from Agile to Scrum
 titleSuffix: Azure Boards
-ms.custom: seodec18
 description: Change the process for your project from Agile to Scrum
 ms.topic: how-to
 ms.service: azure-devops-boards

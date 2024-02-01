@@ -3,6 +3,7 @@ title: Self-hosted agent authentication options
 description: Learn about authentication options for registering a self-hosted agent
 ms.topic: conceptual
 ms.date: 09/22/2023
+ms.custom: arm2024
 monikerRange: '<= azure-devops'
 ---
 

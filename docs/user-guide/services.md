@@ -1,8 +1,8 @@
 ---
 title: Overview of services
 titleSuffix: Azure DevOps
-ms.custom: seodec18, engagement-fy23
-description: Understand the services provided in Azure DevOps. 
+ms.custom: engagement-fy23
+description: Understand the services provided in Azure DevOps.
 ms.subservice: azure-devops-new-user
 ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D

@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/13/2023
+ms.date: 01/18/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -68,7 +68,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td><a href="/azure/devops/release-notes/2021/sprint-186-update#pat-lifecycle-management-api-general-availability" data-raw-source="[PAT lifecycle APIs](/azure/devops/release-notes/2021/sprint-186-update#pat-lifecycle-management-api-general-availability)">PAT lifecycle APIs</a></td>
          <td>General</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
-         <td>2022.1</td>
+         <td>N/A</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes" data-raw-source="[Control plane for personal access tokens (PAT)](/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)">Control plane for personal access tokens (PAT)</a></td>
@@ -83,7 +83,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Workload Identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload Identity federation for Azure Deployments (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-azurerm-deployments" data-raw-source="[Workload identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload identity federation for Azure Deployments (preview)</a></td>
          <td>Pipelines</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q3</td>
          <td>N/A</td>
@@ -100,20 +100,26 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q3</td>
          <td>N/A</td>
       </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-azurerm-deployments" data-raw-source="[Workload identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload identity federation for Azure service connection (GA)</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
+         <td>N/A</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-acr-deployments" data-raw-source="[Workload identity federation for Docker service connection](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload identity federation for Docker service connection</a></td>
+         <td>Pipelines</td>
+         <td>2024 H1</td>
+         <td>N/A</td>
+      </tr>
        <tr>
          <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
          <td>General</td>
-         <td>2023 H2</td>
+         <td>2024 Q1</td>
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Workload Identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Workload Identity federation for Azure Deployments (GA)</a></td>
-         <td>Pipelines</td>
-         <td>2023 H2</td>
-         <td>N/A</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable alternate authentication credentials](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
          <td>General</td>
          <td>Future</td>
          <td>N/A</td>
@@ -196,17 +202,11 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q2</td>
          <td>Future</td>
-      </tr>                  
+      </tr>     
       <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automated team work item rules](azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available)">Automated team work item rules</a></td>
          <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q3</td>
-         <td>Future</td>
-      </tr>    
-       <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules (general availability)</a></td>
-         <td>Boards</td>
-         <td>2024 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
          <td>Future</td>
       </tr>  
        <tr>
@@ -242,9 +242,9 @@ These investments include:
     </thead>
     <tbody>
       <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-230-update#github-integration---improved-ab-validation-private-preview" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/2023/sprint-230-update#github-integration---improved-ab-validation-private-preview)">Improved AB#{ID} validation</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-233-update#github-integration---improved-ab-validation-is-generally-available" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/2024/sprint-233-update#github-integration---improved-ab-validation-is-generally-available)">Improved AB#{ID} validation</a></td>
          <td>Boards</td>
-         <td>2023 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -256,19 +256,19 @@ These investments include:
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item)">Show more details about a GitHub Pull Request</a></td>
          <td>Boards</td>
-         <td>2024 H1</td>
+         <td>2024 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
          <td>Boards</td>
-         <td>2024 H1</td>
+         <td>2024 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability when searching and linking GitHub repos to an Azure DevOps project</a></td>
          <td>Boards</td>
-         <td>Future</td>
+         <td>2024 Q2</td>
          <td>Future</td>
       </tr>
     </tbody>
@@ -291,40 +291,40 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
     </thead>
     <tbody>
       <tr>
-         <td><a href="/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent" data-raw-source="[Node 16 runner along with other runners](/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent)">Node 16 runner along with other runners</a></td>
+         <td><a href="/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent" data-raw-source="[Node 16 runner along with other runners](/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent)">Node 16 task runner in pipeline agent</a></td>
          <td>Pipelines</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q3</td>
-         <td>Future</td>
+         <td>2022.1</td>
       </tr>
       <tr>
          <td><a href=https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md data-raw-source="[Tasks can express compatibility with multiple Node runners](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md)">Tasks can express compatibility with multiple Node runners</a></td>
          <td>Pipelines</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q3</td>
-         <td>Future</td>
+         <td>2022.1</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16" data-raw-source="[All in-the-box tasks run on Node 16](/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16)">All in-the-box tasks run on Node 16</a></td>
          <td>Pipelines</td>
-         <td>2023 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/pick-next-runner" data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](/azure/devops/release-notes/roadmap/2022/pick-next-runner)">Ability to run tasks on next available Node version, if targeted version is not available</a></td>
          <td>Pipelines</td>
-         <td>2023 Q4</td>
-         <td>Future</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
+         <td>2022.1</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents" data-raw-source="[Removal of Node 6 and 10 from Microsoft hosted pools](/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents)">Removal of Node 6 and 10 from Microsoft hosted pools</a></td>
          <td>Pipelines</td>
-         <td>2023 Q4</td>
+         <td>Future</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/install-old-runner" data-raw-source="[Ability to download and install old runners on self-hosted agents](/azure/devops/release-notes/roadmap/2023/install-old-runner)">Ability to download and install old runners on self-hosted agents</a></td>
          <td>Pipelines</td>
-         <td>2023 Q4</td>
-         <td>Future</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
+         <td>2022.1</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/remove-node-6" data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
@@ -333,9 +333,9 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/node-16-agent" data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/node-16-agent" data-raw-source="[Ship a Node 16+ only agent in addition to the one that has all versions](/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16+ only agent in addition to the one that has all versions</a></td>
          <td>Pipelines</td>
-         <td>Future</td>
+         <td>2024 Q1</td>
          <td>Future</td>
       </tr>
     </tbody>
@@ -375,16 +375,22 @@ As a first step, we'll focus on **checks**. Checks are the primary mechanism in 
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q2</td>
          <td>Future</td>
       </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-sequencing" data-raw-source="[Sequencing approvals and other checks](/azure/devops/release-notes/roadmap/2022/checks-sequencing)">Sequencing approvals and other checks</a></td>
+     <tr>
+         <td><a href="/azure/devops/release-notes/2023/sprint-230-update#bypass-approvals-and-checks" data-raw-source="[Bypass approvals and checks](/azure/devops/release-notes/2023/sprint-230-update#bypass-approvals-and-checks)">Bypass approvals and checks</a></td>
          <td>Pipelines</td>
-         <td>2023 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/bypass-checks" data-raw-source="[Bypass approvals and checks](/azure/devops/release-notes/roadmap/2023/bypass-checks)">Bypass approvals and checks</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-sequencing" data-raw-source="[Sequencing approvals and other checks](/azure/devops/release-notes/roadmap/2022/checks-sequencing)">Sequencing approvals and other checks</a></td>
          <td>Pipelines</td>
-         <td>2023 Q4</td>
+         <td>2024 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/deferred-approvals" data-raw-source="[Deferred approvals](/azure/devops/release-notes/roadmap/2024/deferred-approvals)">Deferred approvals</a></td>
+         <td>Pipelines</td>
+         <td>2024 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -457,7 +463,13 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
       <tr>
          <td><a href="https://devblogs.microsoft.com/devops/introducing-work-item-chart-filtering-in-azure-devops-dashboards/" data-raw-source="[Work Item Chart Filtering](https://devblogs.microsoft.com/devops/introducing-work-item-chart-filtering-in-azure-devops-dashboards/)">Work Item Chart Filtering</a></td>
          <td>Reporting</td>
-         <td>2023 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=/azure/devops/release-notes/2023/reporting/sprint-229-update#new-dashboard-directory-experience" data-raw-source="[New Dashboard directory experience](https://learn.microsoft.com/en-us/azure/devops/release-notes/2023/reporting/sprint-229-update#new-dashboard-directory-experience)">New Dashboard directory experience</a></td>
+         <td>Reporting</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -470,12 +482,6 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-template" data-raw-source="[Dashboard Template](/azure/devops/release-notes/roadmap/2024/dashboard-template)">Dashboard Template</a></td>
          <td>Reporting</td>
           <td>2024 H1</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/private-dashboard" data-raw-source="[Private Dashboard](/azure/devops/release-notes/roadmap/2024/private-dashboard)">Private Dashboard</a></td>
-         <td>Reporting</td>
-         <td>2024 H1</td>
          <td>Future</td>
       </tr>
     </tbody>
@@ -494,17 +500,57 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
     </thead>
     <tbody>       
       <tr>
-        <td rowspan="12"><strong>2023 Q4</strong></td>
-        <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
+        <td rowspan="21"><strong>2024 Q1</strong></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview" data-raw-source="[Security Overview](/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview)">Security Overview</a></td>
         <td>General</td>
-        <td>Future</td>
-      </tr>      
+        <td>N/A</td>
       <tr>
-        <td><a href="/azure/devops/release-notes/2023/sprint-230-update#github-integration---improved-ab-validation-private-preview" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/2023/sprint-230-update#github-integration---improved-ab-validation-private-preview)">Improved AB# validation (preview)</a></td>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a></td>
+         <td>General</td>
+         <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-3p-sarif" data-raw-source="[Third-party SARIF support](/azure/devops/release-notes/roadmap/2024/ghazdo-3p-sarif)">Third-party SARIF support</a></td>
+        <td>General</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-improved-generic-secrets" data-raw-source="[Improved secret detection](/azure/devops/release-notes/roadmap/2024/ghazdo-improved-generic-secrets)">Improved secret detection</a></td>
+        <td>General</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-custom-codeql" data-raw-source="[Custom CodeQL queries](/azure/devops/release-notes/roadmap/2024/ghazdo-custom-codeql)">Custom CodeQL queries</a></td>
+        <td>General</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available)">Automated team work item rules</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
+        <td><a href="/azure/devops/release-notes/2024/sprint-233-update#github-integration---improved-ab-validation-is-generally-available" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/2024/sprint-233-update#github-integration---improved-ab-validation-is-generally-available)">Improved GitHub app and AB#{ID} validation</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item)">Add link to GitHub Commit or Pull Request from work item</a></td>
+        <td>Boards</td>         
+        <td>Future</td>
+      </tr>        
+      <tr>
+        <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (general availability)</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>  
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>
+      </tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16" data-raw-source="[All in-the-box tasks run on Node 16](/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16)">All in-the-box tasks run on Node 16</a></td>
          <td>Pipelines</td>
          <td>Future</td>
@@ -530,74 +576,8 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/bypass-checks" data-raw-source="[Bypass approvals and checks](/azure/devops/release-notes/roadmap/2023/bypass-checks)">Bypass approvals and checks</a></td>
-         <td>Pipelines</td>
-         <td>Future</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings" data-raw-source="[In-product recommendations for secure settings](/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td>
         <td>Pipelines</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/generate-code-coverage-results" data-raw-source="[Generate code coverage results in source /folder level view](/azure/devops/release-notes/roadmap/2023/generate-code-coverage-results)">Generate code coverage results in source /folder level view</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section" data-raw-source="[Chart click thru to results by section](/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section)">Work Item Chart Filtering</a></td>
-        <td>Reporting</td>
-        <td>Future</td>
-      </tr> 
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/improvements-to-code-coverage" data-raw-source="[Improvements to code coverage user experience in Pipeline results page](/azure/devops/release-notes/roadmap/2023/improvements-to-code-coverage)">Improvements to code coverage user experience in Pipeline results page</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-       <td rowspan="13"><strong>2024 Q1</strong></td>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview" data-raw-source="[Security Overview](/azure/devops/release-notes/roadmap/2024/ghazdo-security-overview)">Security Overview</a></td>
-        <td>General</td>
-        <td>N/A</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-3p-sarif" data-raw-source="[Third-party SARIF support](/azure/devops/release-notes/roadmap/2024/ghazdo-3p-sarif)">Third-party SARIF support</a></td>
-        <td>General</td>
-        <td>N/A</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-improved-generic-secrets" data-raw-source="[Improved secret detection](/azure/devops/release-notes/roadmap/2024/ghazdo-improved-generic-secrets)">Improved secret detection</a></td>
-        <td>General</td>
-        <td>N/A</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-custom-codeql" data-raw-source="[Custom CodeQL queries](/azure/devops/release-notes/roadmap/2024/ghazdo-custom-codeql)">Custom CodeQL queries</a></td>
-        <td>General</td>
-        <td>N/A</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/2023/sprint-228-update#team-automation-rules-private-preview)">Automated team work item rules (general availability)</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item)">Add link to GitHub Commit or Pull Request from work item</a></td>
-        <td>Boards</td>         
-        <td>Future</td>
-      </tr>      
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item)">Show more details about a GitHub Pull Request</a></td>
-         <td>Boards</td>      
-         <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (general availability)</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>  
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default</a></td>
-        <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
@@ -620,13 +600,39 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td>Pipelines</td>
          <td>Future</td>
       </tr>
-      <td rowspan="31"><strong>Future</strong></td>
+      <tr>
+      <td rowspan="5"><strong>2024 Q2</strong></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/reduce-time-to-filter" data-raw-source="[Reduce time to filter test plans and test suites in copy and import operations](/azure/devops/release-notes/roadmap/2022/reduce-time-to-filter)">Reduce time to filter test plans and test suites in copy and import operations</a></td>
+        <td>Test Plans</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/code-coverage-policy" data-raw-source="[Code coverage policy at a folder level](/azure/devops/release-notes/roadmap/2022/code-coverage-policy)">Code coverage policy at a folder level</a></td>
+        <td>Test Plans</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item)">Show more details about a GitHub Pull Request</a></td>
+         <td>Boards</td>      
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
+         <td>Boards</td>        
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability to link more than 500 GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability to link more than 500 GitHub repos to an Azure DevOps project</a></td>
+         <td>Boards</td>         
+         <td>Future</td>
+      </tr> 
+      <td rowspan="27"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable alternate authentication credentials](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
         <td>General</td>
         <td>N/A</td>
       </tr>
@@ -644,17 +650,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
         <td>Future</td>
-      </tr>
-       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/github-branch" data-raw-source="[Create branch on GitHub repository from work item](/azure/devops/release-notes/roadmap/2024/github-branch)">Create branch on GitHub repository from work item</a></td>
-         <td>Boards</td>        
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability to link more than 500 GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability to link more than 500 GitHub repos to an Azure DevOps project</a></td>
-         <td>Boards</td>         
-         <td>Future</td>
-      </tr>  
+      </tr>      
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>
@@ -721,11 +717,6 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/private-dashboard" data-raw-source="[Private Dashboard](/azure/devops/release-notes/roadmap/2024/private-dashboard)">Private Dashboard</a></td>
-         <td>Reporting</td>
-         <td>Future</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2022/sort-test-plans" data-raw-source="[Pause and resume manual test execution](/azure/devops/release-notes/roadmap/2022/sort-test-plans)">Sort test plans by any column</a></td>
         <td>Test Plans</td>
         <td>Future</td>
@@ -741,17 +732,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/code-coverage-policy" data-raw-source="[Code coverage policy at a folder level](/azure/devops/release-notes/roadmap/2022/code-coverage-policy)">Code coverage policy at a folder level</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/improved-visibility" data-raw-source="[Improved co-relation between test run and test case versions](/azure/devops/release-notes/roadmap/2022/improved-visibility)">Improved co-relation between test run and test case versions</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/reduce-time-to-filter" data-raw-source="[Reduce time to filter test plans and test suites in copy and import operations](/azure/devops/release-notes/roadmap/2022/reduce-time-to-filter)">Reduce time to filter test plans and test suites in copy and import operations</a></td>
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
@@ -766,11 +747,6 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/export-test-plan" data-raw-source="[Export Test Plan in XLSX format](/azure/devops/release-notes/roadmap/2022/export-test-plan)">Export Test Plan in XLSX format</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/alphabetical-sort" data-raw-source="[Sort test suites in alphabetical order](/azure/devops/release-notes/roadmap/2022/alphabetical-sort)">Sort test suites in alphabetical order</a></td>
         <td>Test Plans</td>
         <td>Future</td>

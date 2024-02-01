@@ -1,9 +1,9 @@
 ---
-title: Query work items by history in Azure Boards  
+title: Query work items by history in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to query work item history and comments to support audit requirements when working in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: boards-queries, contperf-fy23
+ms.custom: boards-queries, engagement-fy23
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.author: chcomley
 author: chcomley
@@ -370,6 +370,3 @@ You can use the following fields to filter queries and create reports. Several o
  
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
-
-
-

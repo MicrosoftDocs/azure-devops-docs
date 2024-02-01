@@ -1,7 +1,7 @@
 ---
 title: Rename a project - Azure DevOps
 titleSuffix: Azure DevOps
-ms.custom: seodec18, contperf-fy21q3, content-perf-fy23q2, engagement-fy23
+ms.custom: content-perf-fy23q2, engagement-fy23
 description: Learn how to rename your project, including tasks you need to complete to work with the renamed project.
 ms.subservice: azure-devops-projects
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac

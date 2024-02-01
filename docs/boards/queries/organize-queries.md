@@ -1,10 +1,10 @@
 ---
 title: Manage and organize your queries in Azure Boards and Azure DevOps
-titleSuffix: Azure Boards  
+titleSuffix: Azure Boards
 description: Learn how to manage your queries by using favorites and folders in Azure Boards and Azure DevOps.
-ms.custom: boards-queries, contperf-fy23 
+ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
-ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
+ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -266,4 +266,3 @@ A query tile displays a count of the work items in a query. You can also quickly
 - [Set query permissions](set-query-permissions.md)  
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) 
-

@@ -4,7 +4,6 @@ description: How to set up your .npmrc config file to publish and download npm p
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
-ms.custom: contperf-fy20q4, conterperfq3, contperf-fy21q3
 ms.date: 10/16/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"

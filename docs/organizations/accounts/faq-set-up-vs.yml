@@ -2,8 +2,7 @@
 metadata:
   title: Set up Visual Studio with Azure DevOps FAQs
   titleSuffix: Azure DevOps Services
-  ms.custom: seodec18
-  description: Having problems installing Visual Studio, signing in, or handling an expired subscription? Learn answers to these frequently asked questions (FAQs). 
+  description: Having problems installing Visual Studio, signing in, or handling an expired subscription? Learn answers to these frequently asked questions (FAQs).
   ms.subservice: azure-devops-organizations
   ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
   ms.topic: faq
