@@ -874,7 +874,7 @@ You can also [build an image](containers/build-image.md) for your app and [push 
 
 ### Publish symbols
 
-You can use the **PublishSymbols@2** task to publish symbols to a symbol server or a file share.
+You can use the **PublishSymbols@2** task to publish symbols to an Azure Artifacts symbol server or a file share.
 
 For example, to publish symbols to a file share, add the following snippet to your `azure-pipelines.yml` file:
 
