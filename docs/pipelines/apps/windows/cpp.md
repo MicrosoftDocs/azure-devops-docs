@@ -1,6 +1,6 @@
 ---
 title: Build C++ Windows apps
-ms.custom: seodec18, devdivchpfy22
+ms.custom: devdivchpfy22
 ms.date: 06/08/2022
 description: Automatically build your C++ Windows app with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49

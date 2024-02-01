@@ -1,7 +1,6 @@
 ---
 title: Publish and download pipeline artifacts
 description: How to publish and download pipeline artifacts
-ms.custom: seodec18
 ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
 ms.date: 08/30/2021
