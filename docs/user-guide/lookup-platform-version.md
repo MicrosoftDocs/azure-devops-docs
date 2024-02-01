@@ -1,8 +1,7 @@
 ---
 title: Look up your Azure DevOps platform and version
 titleSuffix: Azure DevOps
-ms.custom: seodec18
-description: Learn how to find the Azure DevOps platform and version you're using. 
+description: Learn how to find the Azure DevOps platform and version you're using.
 ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley

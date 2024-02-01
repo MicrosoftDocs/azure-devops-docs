@@ -1,7 +1,7 @@
 ---
 title: What is Azure DevOps?
-titleSuffix: Azure DevOps 
-ms.custom: seodec18, contperf-fy21q3, engagement-fy23, UpdateFrequency3
+titleSuffix: Azure DevOps
+ms.custom: engagement-fy23, UpdateFrequency3
 ms.topic: overview
 description: Get an overview of the integrated set of features to help you plan, code, collaborate, and ship your applications faster.
 ms.subservice: azure-devops-new-user
