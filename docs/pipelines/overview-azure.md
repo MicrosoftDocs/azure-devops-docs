@@ -1,8 +1,7 @@
 ---
 title: Deploy to Azure index to content
-ms.custom: seodec18, contperf-fy21q4
-description: Learn how to deploy to Azure using Azure Pipelines. Tutorials, references, and other documentation.  
-ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235  
+description: Learn how to deploy to Azure using Azure Pipelines. Tutorials, references, and other documentation.
+ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235
 ms.author: jukullam
 author: juliakm
 ms.date: 01/24/2023
@@ -67,9 +66,3 @@ Learn more about the Azure services that support continuous integration (CI) and
 
 
  For a complete list of Azure Pipelines tasks, see [Build and release tasks](tasks/index.md).
-
-
-
-
-
-

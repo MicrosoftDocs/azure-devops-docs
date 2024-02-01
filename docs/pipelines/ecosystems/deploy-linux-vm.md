@@ -3,9 +3,9 @@ title: Deploy a Linux VM to an environment
 description: Deploy a web application to a web server on a Linux VM with an environment.
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
-ms.custom: seodec18, freshness-fy22q2
+ms.custom: freshness-fy22q2
 ms.date: 01/24/2023
-monikerRange: 'azure-devops' 
+monikerRange: 'azure-devops'
 ---
 
 # Deploy to a Linux Virtual Machine
