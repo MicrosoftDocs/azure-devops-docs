@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.author: vijayma
 ms.reviewer: dastahel
-ms.custom: seodec18, freshness-fy22q2
+ms.custom: freshness-fy22q2
 ms.date: 12/22/2021
 monikerRange: azure-devops
 author: vijayma
