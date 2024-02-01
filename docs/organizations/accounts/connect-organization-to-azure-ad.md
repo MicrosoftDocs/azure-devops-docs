@@ -1,7 +1,6 @@
 ---
 title: Connect organization to Microsoft Entra ID
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
 description: Learn how to connect your organization to your Microsoft Entra ID
 ms.subservice: azure-devops-organizations
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7

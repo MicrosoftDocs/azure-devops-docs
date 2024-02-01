@@ -1,7 +1,6 @@
 ---
 title: Manage access with Microsoft Entra groups
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
 description: Learn how to control who can access Azure DevOps with Microsoft Entra groups
 ms.subservice: azure-devops-organizations
 ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11

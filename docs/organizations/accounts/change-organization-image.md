@@ -1,7 +1,6 @@
 ---
 title: Change organization image
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
 description: Change your organization's profile icon image.
 ms.subservice: azure-devops-organizations
 ms.topic: how-to
