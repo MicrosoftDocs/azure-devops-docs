@@ -1,10 +1,8 @@
 ---
-title: Use Agile tools to use portfolios, dashboards, and delivery plans in Azure Boards   
+title: Use Agile tools to use portfolios, dashboards, and delivery plans in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to scale Agile tools using portfolios, dashboards, and delivery plans in Azure Boards and Azure DevOps.
-ms.custom: seodec18
 ms.service: azure-devops-boards
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

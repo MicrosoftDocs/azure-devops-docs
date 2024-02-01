@@ -1,13 +1,13 @@
 ---
 title: Use Azure DevOps work item templates to update work items in Azure Boards
-titleSuffix: Azure Boards   
-description: Learn how to add and manage Azure DevOps work item templates to update work items in Azure Boards. Learn to prepopulate work item form fields in Azure DevOps and Visual Studio. 
+titleSuffix: Azure Boards
+description: Learn how to add and manage Azure DevOps work item templates to update work items in Azure Boards. Learn to prepopulate work item form fields in Azure DevOps and Visual Studio.
 ms.service: azure-devops-boards
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.custom: "work-items, contperf-fy21q3"  
+ms.custom: work-items
 monikerRange: '<= azure-devops'
 ms.date: 10/25/2023
 ---
