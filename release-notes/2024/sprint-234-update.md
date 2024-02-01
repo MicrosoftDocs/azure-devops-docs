@@ -12,26 +12,43 @@ Check out the release notes for details.
 
 ### General
 
-[!INCLUDE [sprint-233-update-links](includes/general/sprint-233-update-links.md)]
+[!INCLUDE [sprint-234-update-links](includes/general/sprint-234-update-links.md)]
 
 ### Azure Boards
 
-[!INCLUDE [sprint-233-update-links](includes/boards/sprint-233-update-links.md)]
+[!INCLUDE [sprint-234-update-links](includes/boards/sprint-234-update-links.md)]
 
 ### Azure Pipelines
 
-[!INCLUDE [sprint-233-update-links](includes/pipelines/sprint-233-update-links.md)]
+[!INCLUDE [sprint-234-update-links](includes/pipelines/sprint-234-update-links.md)]
+
+### Azure Repos
+
+[!INCLUDE [sprint-234-update-links](includes/repos/sprint-234-update-links.md)]
+
+### Azure Artifacts
+
+[!INCLUDE [sprint-234-update-links](includes/artifacts/sprint-234-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-233-update](includes/general/sprint-233-update.md)]
+[!INCLUDE [sprint-234-update](includes/general/sprint-234-update.md)]
 ## Azure Boards
 
-[!INCLUDE [sprint-233-update](includes/boards/sprint-233-update.md)]
+[!INCLUDE [sprint-234-update](includes/boards/sprint-234-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-233-update](includes/pipelines/sprint-233-update.md)]
+[!INCLUDE [sprint-234-update](includes/pipelines/sprint-234-update.md)]
+
+## Azure Repos
+
+[!INCLUDE [sprint-234-update](includes/repos/sprint-234-update.md)]
+
+## Azure Artifacts
+
+[!INCLUDE [sprint-234-update](includes/artifacts/sprint-234-update.md)]
+
 
 ## Next steps
 
