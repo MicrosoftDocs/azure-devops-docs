@@ -4,7 +4,7 @@ description: Best practices when publishing and consuming packages with Azure Ar
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 04/07/2023
-ms.custom: contperf-fy23, engagement-fy23
+ms.custom: engagement-fy23
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---

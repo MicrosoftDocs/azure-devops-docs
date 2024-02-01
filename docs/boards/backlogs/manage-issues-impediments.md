@@ -1,8 +1,8 @@
 ---
-title: Manage and resolve issues or impediments in Azure Boards 
-titleSuffix: Azure Boards 
+title: Manage and resolve issues or impediments in Azure Boards
+titleSuffix: Azure Boards
 description: Learn how to track issues or impediments to more effectively execute plans or stay on schedule by using Azure Boards.
-ms.custom: "boards-backlogs, seodec18"
+ms.custom: boards-backlogs
 ms.service: azure-devops-boards
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.author: chcomley

@@ -1,8 +1,8 @@
 ---
 title: Define, capture, triage, and manage bugs or code defects in Azure Boards
-titleSuffix: Azure Boards 
-description: Define, capture, and triage bugs and code defects to manage technical debt and maintain software quality. 
-ms.custom: "boards-backlogs, contperf-fy21q4-portal"
+titleSuffix: Azure Boards
+description: Define, capture, and triage bugs and code defects to manage technical debt and maintain software quality.
+ms.custom: boards-backlogs
 ms.service: azure-devops-boards
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: chcomley
@@ -571,4 +571,3 @@ For more information on extensions, see [Azure Boards extensions developed by Mi
 
 - [Good and Bad Technical Debt (and how TDD helps)](https://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt) by Henrik Kniberg 
 - [Managing Technical Debt](https://www.infoq.com/articles/managing-technical-debt) posted by Sven Johann & Eberhard Wolff  
-

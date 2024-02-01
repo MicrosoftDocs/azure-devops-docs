@@ -1,10 +1,9 @@
 ---
 title: Delete test plans, test cases, and other test artifacts in Azure Boards
-titleSuffix: Azure Boards  
-description: Learn how to delete test plans, test cases, test results, & other test artifacts in Azure Boards. 
-ms.custom: seodec18
+titleSuffix: Azure Boards
+description: Learn how to delete test plans, test cases, test results, & other test artifacts in Azure Boards.
 ms.service: azure-devops-boards
-ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
+ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
@@ -102,4 +101,3 @@ However, these objects aren't connected to each other through link types. For de
 - [Create a test plan](../../test/create-a-test-plan.md)
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 
 - [Set permissions and access for work tracking, Manage test artifacts](../../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts)
-

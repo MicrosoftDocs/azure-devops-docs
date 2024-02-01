@@ -1,8 +1,8 @@
 ---
-title: Resolve nest, display, and reorder issues for work items 
+title: Resolve nest, display, and reorder issues for work items
 titleSuffix: Azure Boards
-description: Learn how to fix reordering and nesting issues for work items in Azure Boards. Resolve error messages and maintain a natural hierarchy for your backlog. 
-ms.custom: "boards-backlogs, seodec18"  
+description: Learn how to fix reordering and nesting issues for work items in Azure Boards. Resolve error messages and maintain a natural hierarchy for your backlog.
+ms.custom: boards-backlogs
 ms.service: azure-devops-boards
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.topic: troubleshooting
