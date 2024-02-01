@@ -1,10 +1,8 @@
 ---
 title: Troubleshoot connecting project
 titleSuffix: Azure DevOps
-ms.custom: seodec18
 description: Resolve connection issues with Azure DevOps.
 ms.subservice: azure-devops-new-user
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
