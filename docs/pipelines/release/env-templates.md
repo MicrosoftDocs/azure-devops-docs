@@ -1,6 +1,5 @@
 ---
 title: Use stage templates in release pipelines
-ms.custom: seodec18
 description: How to use stage templates in Azure Pipelines
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
 ms.topic: conceptual
