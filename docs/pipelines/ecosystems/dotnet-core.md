@@ -890,7 +890,7 @@ For example, to publish symbols to a file share, add the following snippet to yo
 ```
 
 
-When using the classic editor, select **Index sources publish symbols** from the task catelog to add to your pipeline.
+When using the classic editor, select **Index sources publish symbols** from the task catalog to add to your pipeline.
 
 For more information, see [Publish symbols](../artifacts/symbols.md).
 
