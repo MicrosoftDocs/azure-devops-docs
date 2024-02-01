@@ -1,7 +1,7 @@
 ---
 title: Manage paid access for users
 titleSuffix: Azure DevOps
-ms.custom: seodec18, freshness-fy22q1, engagement-fy23
+ms.custom: freshness-fy22q1, engagement-fy23
 description: Assign paid access and control the default access of your new users in Azure DevOps.
 ms.subservice: azure-devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f

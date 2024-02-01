@@ -1,9 +1,8 @@
 ---
-title: Allowed address lists and network connections  
+title: Allowed address lists and network connections
 titleSuffix: Azure DevOps
-description: Add IP addresses and domain URLs to the allowlist for Azure DevOps and troubleshoot network connections. 
+description: Add IP addresses and domain URLs to the allowlist for Azure DevOps and troubleshoot network connections.
 ms.topic: reference
-ms.custom: contperf-fy21q4
 ms.subservice: azure-devops-security
 ms.reviewer: jominana
 ms.author: chcomley
