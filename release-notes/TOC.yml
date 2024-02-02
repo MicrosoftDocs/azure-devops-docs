@@ -241,6 +241,13 @@
             expanded: false
     - name: By service
       items:
+      - name: GitHub Advanced Security for Azure DevOps
+        items:
+        - name: "2023"
+          items:
+          - name: June 6
+            href: 2023/ghazdo/sprint-222-update.md
+          expanded: false
       - name: Azure Boards
         items:
         - name: "2024"
