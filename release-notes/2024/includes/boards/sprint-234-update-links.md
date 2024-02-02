@@ -7,4 +7,4 @@ ms.topic: include
 
 - [Development and Deployment Controls](#development-and-deployment-controls)
 - [New Boards Hub Improvements](#new-boards-hub-improvements)
-- [Improvements to Add link experience (Preview)](#improvements-to-add-link-experience-preview)
+- [Add link to GitHub commit or pull request (preview)](#add-link-to-github-commit-or-pull-request-preview)

@@ -42,6 +42,7 @@ In this sprint, we are happy to be introducing an enhanced experience by enablin
 > [!div class="mx-imgBorder"]
 > ![Gif to demo add link.](../../media/234-boards-02.gif "gif to demo add link")
 
-> [!NOTE] This feature is only available in the New Boards Hub preview.
+> [!NOTE] 
+>This feature is only available in the New Boards Hub preview.
 
 If you are interested in getting access to this feature, please send us an email directly along with your organization name (https://dev.azure.com/{organization name}).
