@@ -3,7 +3,7 @@ title: Azure DevOps Release Notes - Azure Boards Sprint 234 Update
 description: See the Sprint 234 feature updates for Azure Boards, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 1/19/2024
+ms.date: 2/6/2024
 ---
 
 # Azure Boards - Sprint 234 Update
