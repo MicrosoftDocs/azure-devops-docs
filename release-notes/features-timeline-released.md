@@ -71,7 +71,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
 <tr>
     <td rowspan="5"><a href="2023/sprint-229-update.md" data-raw-source="[26 October 2023](2023/sprint-229-update.md)"> 26 October 2023</a></td>
-    <td>REST API documentation now available for Advanced Security </td><td>General</td><td>Future</td></tr>
+    <td>REST API documentation now available for Advanced Security </td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
     <td>Publish Test Results Task</td><td>General</td><td>Future</td></tr>
     <td>Building PRs from forked GitHub repositories</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks</td><td>Artifacts</td><td>Future</td></tr>
@@ -81,9 +81,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td rowspan="8"><a href="2023/sprint-228-update.md" data-raw-source="[4 October 2023](2023/sprint-227-update.md)"> 4 October 2023</a></td>
     <td>Managed identity and service principal support for Azure DevOps now in general availability (GA)</td><td>General</td><td>Future</td></tr>
     <td>New Azure DevOps scopes available for Microsoft Identity OAuth delegated flow apps</td><td>General</td><td>Future</td></tr>
-    <td>Changes to Code Scanning (CodeQL) user input task and variables</td><td>General</td><td>N/A</td></tr>
-    <td>Publish task is no longer required for Setting up code Scanning</td><td>General</td><td>N/A</td></tr>
-    <td>CodeQL code scanning now supports Swift</td><td>General</td><td>N/A</td></tr>
+    <td>Changes to Code Scanning (CodeQL) user input task and variables</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Publish task is no longer required for Setting up code Scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>CodeQL code scanning now supports Swift</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Team Automation Rules (private preview)</td><td>Boards</td><td>Future</td><tr>   
     <td>Pipeline logs now contain resource utilization</td><td>Pipelines</td><td>Future</td></tr>  
     <td>Azure Pipelines agent now supports Alpine Linux</td><td>Pipelines</td><td>N/A</td></tr>
@@ -116,7 +116,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
 <tr>
     <td rowspan="8"><a href="2023/sprint-224-update.md" data-raw-source="[11 July 2023](2023/sprint-223-update.md)"> 11 July 2023</a></td>
-    <td>Alert dismissals for dependency scanning alerts in Advanced Security</td><td>General</td><td>Future</td></tr>
+    <td>Alert dismissals for dependency scanning alerts in Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
     <td>Copy link to work item</td><td>Boards</td><td>Future</td></tr>
     <td>Kubernetes tasks now support kubelogin</td><td>Pipelines</td><td>2022.1</td></tr>
     <td>Updates to YAML cron schedules</td><td>Pipelines</td><td>N/A</td></tr>
@@ -138,7 +138,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
 <tr>
     <td rowspan="6"><a href="2023/sprint-222-update.md" data-raw-source="[6 June 2023](2023/sprint-222-update.md)"> 6 June 2023</a></td>
-    <td>GitHub Advanced Security for Azure DevOps (public preview)</td><td>General</td><td>N/A</td></tr>
+    <td>GitHub Advanced Security for Azure DevOps (public preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Fixed a bug that allowed users to bypass restrict global personal access token (PAT) creation</td><td>General</td><td>Future</td></tr>
     <td>Markdown support for comments (private preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Improvements to YAML pipeline traceability</td><td>Pipelines</td><td>Future</td></tr>
