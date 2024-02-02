@@ -241,13 +241,6 @@
             expanded: false
     - name: By service
       items:
-      - name: GitHub Advanced Security for Azure DevOps
-        items:
-        - name: "2023"
-          items:
-          - name: June 6
-            href: 2023/ghazdo/sprint-222-update.md
-          expanded: false
       - name: Azure Boards
         items:
         - name: "2024"
@@ -725,6 +718,15 @@
             href: 2019/artifacts/sprint-146-update.md
           expanded: false
         expanded: false
+      - name: GitHub Advanced Security for Azure DevOps
+        items:
+        - name: "2023"
+          items:
+          - name: July 11
+            href: 2023/ghazdo/sprint-224-update.md
+          - name: June 6
+            href: 2023/ghazdo/sprint-222-update.md
+          expanded: false
       - name: General
         items:
         - name: "2024"
@@ -744,8 +746,6 @@
             href: 2023/general/sprint-228-update.md
           - name: August 23
             href: 2023/general/sprint-226-update.md
-          - name: July 11
-            href: 2023/general/sprint-224-update.md
           - name: June 21
             href: 2023/general/sprint-223-update.md
           - name: June 6
