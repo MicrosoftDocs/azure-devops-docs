@@ -872,6 +872,28 @@ You can also [build an image](containers/build-image.md) for your app and [push 
 
 <a name="troubleshooting"></a>
 
+### Publish symbols
+
+You can use the **PublishSymbols@2** task to publish symbols to an Azure Artifacts symbol server or a file share.
+
+For example, to publish symbols to a file share, add the following snippet to your `azure-pipelines.yml` file:
+
+```yaml
+- task: PublishSymbols@2
+  inputs:
+    SymbolsFolder: '$(Build.SourcesDirectory)'
+    SearchPattern: '**/bin/**/*.pdb'
+    IndexSources: true
+    PublishSymbols: true
+    SymbolServerType: 'FileShare' 
+    SymbolsPath: '\\server\shareName'
+```
+
+
+When using the classic editor, select **Index sources publish symbols** from the task catalog to add to your pipeline.
+
+For more information, see [Publish symbols](../artifacts/symbols.md).
+
 ## Troubleshoot
 
 If you can build your project on your development machine, but you're having trouble building it on Azure Pipelines, explore the following potential causes and corrective actions:
