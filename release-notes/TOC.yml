@@ -720,6 +720,11 @@
         expanded: false
       - name: GitHub Advanced Security for Azure DevOps
         items:
+        - name: "2024"
+          items:
+          - name: January 18
+            href: 2024/ghazdo/sprint-233-update.md
+          expanded: false
         - name: "2023"
           items:
           - name: October 26

@@ -13,9 +13,9 @@ With this update, we also introduce support for custom CodeQL queries in Code sc
 
 Check out the release notes for details.
 
-### General
+### GitHub Advanced Security for Azure DevOps
 
-[!INCLUDE [sprint-233-update-links](includes/general/sprint-233-update-links.md)]
+[!INCLUDE [sprint-233-update-links](includes/ghazdo/sprint-233-update-links.md)]
 
 ### Azure Boards
 
@@ -25,9 +25,9 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-233-update-links](includes/pipelines/sprint-233-update-links.md)]
 
-## General
+## GitHub Advanced Security for Azure DevOps
 
-[!INCLUDE [sprint-233-update](includes/general/sprint-233-update.md)]
+[!INCLUDE [sprint-233-update](includes/ghazdo/sprint-233-update.md)]
 ## Azure Boards
 
 [!INCLUDE [sprint-233-update](includes/boards/sprint-233-update.md)]
