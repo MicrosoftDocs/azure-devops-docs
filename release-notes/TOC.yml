@@ -722,6 +722,8 @@
         items:
         - name: "2023"
           items:
+          - name: October 4
+            href: 2023/ghazdo/sprint-228-update.md
           - name: July 11
             href: 2023/ghazdo/sprint-224-update.md
           - name: June 6
