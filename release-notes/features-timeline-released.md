@@ -2,8 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 12/12/2023
-
+ms.date: 2/8/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -38,8 +37,8 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="6"><a href="2024/sprint-233-update.md" data-raw-source="[19 January   2024](2024/sprint-233-update.md)"> 19 January  2024</a></td>
-    <td>Custom CodeQL queries now supported in GitHub Advanced Security for Azure DevOps</td><td>General</td><td>Future</td></tr>
+    <td rowspan="6"><a href="2024/sprint-233-update.md" data-raw-source="[19 January 2024](2024/sprint-233-update.md)"> 19 January  2024</a></td>
+    <td>Custom CodeQL queries now supported in GitHub Advanced Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
     <td>GitHub Integration - Improved AB# validation is generally available</td><td>Boards</td><td>Future</td></tr>
     <td>Team Automation Rules is generally available</td><td>Boards</td><td>Future</td></tr>
     <td>Update deprecated tasks before January 31</td><td>Pipelines</td><td>Future</td></tr>
