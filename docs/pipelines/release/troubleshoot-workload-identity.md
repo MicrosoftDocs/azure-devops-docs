@@ -78,3 +78,7 @@ You have two options:
 |*Failed to obtain the Json Web Token(JWT) using service principal client ID*|Your federation identity credential is misconfigured or the Microsoft Entra tenant blocks OIDC.|
 | *Script failed with error: UnrecognizedArgumentError: unrecognized arguments: --federated-token* | You're using the AzureCLI task on an agent that has an old version of the Azure CLI installed. Workload identity federation requires Azure CLI 2.30 or higher. |
 | *Failed to create an app in Microsoft Entra ID. Error: Insufficient privileges to complete the operation in Microsoft Graph. Ensure that the user has permissions to create a Microsoft Entra Application.* | The ability to create App Registrations has been [disabled](/azure/active-directory/roles/delegate-app-roles#restrict-who-can-create-applications) in the Microsoft Entra tenant. Assign the user creating the service connection to the [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) Microsoft Entra role. Alternatively, create the service connection manually with a Managed Identity. See [Workload identity with managed identity](https://aka.ms/azdo-rm-workload-identity-manual). |
+
+### I use an Container Resource that specifies an Azure Container Registry
+
+[Container Resources](/azure/devops/pipelines/process/resources?view#define-a-containers-resource) that are pulled from Azure Container Registry do not support a Workload identity federation service connection specified in `azureSubscription`.
