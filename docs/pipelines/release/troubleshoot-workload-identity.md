@@ -46,16 +46,6 @@ You can fix the issuer URL by editing and saving the service connection to updat
 
 ## Common issues and causes
 
-<!-- ### I can't enable features for my organization
-
-I want to set up workload identity but I don't see the option to turn it on. 
-
-#### Solution: Verify organization admins and enable features
-
-1. Find your organization owners on the organization settings page `https://dev.azure.com/<org>/_settings/organizationOverview`. 
-1. Make sure the preview feature Workload Identity federation for ARM service connections is enabled for your organization, see [manage or enable features](../../project/navigation/preview-features.md). 
- -->
-
 <a name='i-dont-have-permission-to-create-a-service-principal-in-the-azure-entra-id-tenant'></a>
 
 ### I don't have permission to create a service principal in the Azure Microsoft Entra tenant
