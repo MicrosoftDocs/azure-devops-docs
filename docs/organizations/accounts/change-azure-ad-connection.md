@@ -62,7 +62,7 @@ For more information about using Microsoft Entra ID with Azure DevOps, see the [
 
 6. Confirm that the process is complete. Sign out, and then open your browser in a private session and sign in to your organization with your Microsoft Entra ID or work credentials.
 
-7. If some of your members are disconnected during this process, you will see the error message below on the Azure Active Directory page. You should be able to click the resolve button and map the disconnected users. If you run further issues, please review our [FAQ](./faq-azure-access.yml#users-disconnected-after-tenant-switch).
+7. If some of your members are disconnected during this process, the following error message displays on the Microsoft Entra page. Choose **Resolve** to map the disconnected users. For more information, see the [FAQ](./faq-azure-access.yml#users-disconnected-after-tenant-switch).
 
    :::image type="content" source="media/shared/azure-ad-select-resolve-for-disconnected-users.png" alt-text="Screenshot showing Resolve button emphasized.":::
 
