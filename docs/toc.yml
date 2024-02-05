@@ -47,9 +47,9 @@
     href: ./integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Authenticate with PATs
     href: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Use Azure DevOps OAuth 2.0 to create a web app
-    href: ./integrate/get-started/authentication/oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Authenticate with OAuth 2.0
+    href: ./integrate/get-started/authentication/oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Use Azure DevOps OAuth 2.0 to create a web app
     href: ./integrate/get-started/authentication/azure-devops-oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Cross-platform CLI for Azure DevOps using PATs
     href: ./integrate/get-started/auth/tfs-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
