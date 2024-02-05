@@ -25,7 +25,6 @@ Not all pipelines tasks support workload identity. During the preview, no Azure 
 
 - `AzureCloudPowerShellDeploymentV1`
 - `AzCopy` (`AzureFileCopyV1`, `AzureFileCopyV2`, `AzureFileCopyV3`, `AzureFileCopyV4`, `AzureFileCopyV5`)
-- `AzureIoTEdgeV2`
 - `AzureMonitorAlertsV0`
 - `AzureNLBManagementV1`
 - `PackerBuild` (`PackerBuildV0`, `PackerBuildV1`)
