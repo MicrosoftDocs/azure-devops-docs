@@ -29,7 +29,7 @@ Azure DevOps is an identity provider for OAuth 2.0 apps. Our implementation of O
 
    The application settings page displays.
 
-   :::image type="content" source="media/app-settings.png" alt-text="Screenshot showing Applications settings for your app.":::
+   :::image type="content" source="media/app-settings-new.png" alt-text="Screenshot showing Applications settings for your app.":::
 
    - When Azure DevOps Services presents the authorization approval page to your user, it uses your company name, app name, and descriptions. It also uses the URLs for your company web site, app website, and terms of service and privacy statements.
 
@@ -213,6 +213,15 @@ Replace the placeholder values in the previous sample request body:
 ### Samples
 
 You can find a C# sample that implements OAuth to call Azure DevOps Services REST APIs in our [C# OAuth GitHub Sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample).
+
+## Regenerate client secret
+
+Every 5 years, your application secret will expire. You are expected to regenerate your app secret to continue to be able to create and use access tokens and refresh tokens. To do so, you can click the "Regenerate secret" button, which will pop up a dialog to confirm you want to complete this action.
+
+:::image type="content" source="media/secret-regeneration-modal.png" alt-text="Screenshot confirming secret regeneration.":::
+
+When you confirm that you want to regenerate, the previous app secret will no longer work and all previous tokens minted with this secret will also stop working. Make sure to time this client secret rotation well to minimize any customer downtime.
+
 
 ## Frequently asked questions (FAQs)
 
