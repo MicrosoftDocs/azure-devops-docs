@@ -42,14 +42,13 @@ To create extensions for Azure DevOps, you need the following software and tools
   ``` 
 > [!IMPORTANT]
 > The dev machine must run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of `azure-pipelines-task-lib`. Update your task.json file as per the following command:
-```
+>```
 "execution": {
     "Node16": {
       "target": "index.js"
     }
   }
-```
-|
+>```
 
 <a name="createtask"></a>
 
@@ -158,30 +157,6 @@ Now that the scaffolding is complete, we can create our custom task.
     }
    ```
 
-#### task.json components
-
-See the following descriptions of some of the components of the `task.json` file.
-
-| Property             | Description                                                                                                            |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `id`                 | A unique GUID for your task.                                                                                                |
-| `name`               | Name with no spaces.                                                                                                        |
-| `friendlyName`       | Descriptive name (spaces allowed).                                                                                          |
-| `description`        | Detailed description of what your task does.                                                                                |
-| `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation."              |
-| `instanceNameFormat` | How the task displays within the build/release step list. You can use variable values by using **$(variablename)**. |
-| `groups`             | Describes groups that task properties might be grouped logically by in the UI.                                               |
-| `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
-| `execution`          | Execution options for this task, including scripts.                                                                         
-| `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
-
-> [!NOTE]
-> Create an `id` with the following command in PowerShell:
->   ```powershell
->   (New-Guid).Guid
->   ```
-> For more information, see the **[Build/release task reference](./integrate-build-task.md)**.
-
 3. Create an `index.ts` file by using the following code as a reference. This code runs when the task gets called.
 
 ```typescript
@@ -205,6 +180,30 @@ run();
 ```
 
 4. Enter "tsc" from the `buildandreleasetask` folder to compile an `index.js` file from `index.ts`.
+
+#### task.json components
+
+See the following descriptions of some of the components of the `task.json` file.
+
+| Property             | Description                                                                                                            |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `id`                 | A unique GUID for your task.                                                                                                |
+| `name`               | Name with no spaces.                                                                                                        |
+| `friendlyName`       | Descriptive name (spaces allowed).                                                                                          |
+| `description`        | Detailed description of what your task does.                                                                                |
+| `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation."              |
+| `instanceNameFormat` | How the task displays within the build/release step list. You can use variable values by using **$(variablename)**. |
+| `groups`             | Describes groups that task properties might be grouped logically by in the UI.                                               |
+| `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
+| `execution`          | Execution options for this task, including scripts.                                                                         
+| `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
+
+> [!NOTE]
+> Create an `id` with the following command in PowerShell:
+>   ```powershell
+>   (New-Guid).Guid
+>   ```
+> For more information, see the **[Build/release task reference](./integrate-build-task.md)**.
 
 ### Run the task 
 
@@ -385,6 +384,7 @@ Do unit tests to quickly test the task script, and not the external tools that i
 The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images folders. Ensure you created an images folder with extension-icon.png. The following example is an extension manifest that contains the build or release task.
 
 1. Copy the following .json code and save it as your `vss-extension.json` file in your `home` directory. 
+   
    **Don't create this file in the buildandreleasetask folder.**
 
    [!code-javascript[JSON](../_data/extension-build-tasks.json)]
@@ -416,11 +416,11 @@ The extension manifest contains all of the information about your extension. It 
 
 Package all of your files together to get your extension into the Visual Studio Marketplace. All extensions are packaged as VSIX 2.0-compatible .vsix files. Microsoft provides a cross-platform command-line interface (CLI) to package your extension.
 
-1. Once you have the [tfx-cli](#prerequisites), go to your extension's home directory, and run the following command:
+Once you have the [tfx-cli](#prerequisites), go to your extension's home directory, and run the following command:
 
-   ```no-highlight
-   tfx extension create --manifest-globs vss-extension.json
-   ```
+```no-highlight
+tfx extension create --manifest-globs vss-extension.json
+```
 
 > [!NOTE]
 > An extension or integration's version must be incremented on every update.
@@ -454,22 +454,23 @@ without the need to share a set of credentials across users.
 
 ### Upload your extension
 
-1. Find the **Upload new extension** button, go to your packaged .vsix file, and select **Upload**.
+Find the **Upload new extension** button, go to your packaged .vsix file, and select **Upload**.
 
-   You can also upload your extension via the command line interface (CLI) by using the `tfx extension publish` command instead of `tfx extension create` to package and publish your extension in one step. You can optionally use `--share-with` to share your extension with one or more accounts after it gets published. 
+1. You can also upload your extension via the command line interface (CLI) by using the `tfx extension publish` command instead of `tfx extension create` to package and publish your extension in one step. You can optionally use `--share-with` to share your extension with one or more accounts after it gets published. 
 
    ```no-highlight
    tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
    ```
 
-   - [Create a personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). Select the "Marketplace (publish)" scope. This scope limits the token to only being able to publish extensions to the Marketplace. 
+2. [Create a personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). 
+   - Select the "Marketplace (publish)" scope. This scope limits the token to only being able to publish extensions to the Marketplace. 
 
 ### Share your extension
 
 Now that you uploaded your extension, it's in the Marketplace, but no one can see it.
 Share it with your organization so that you can install and test it.
 
-1. Right-select your extension and select **Share**, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
+Right-select your extension and select **Share**, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
 
 > [!IMPORTANT]
 > Publishers must be verified to share extensions publicly. To learn more, see [Package/Publish/Install](../publish/overview.md).
@@ -482,33 +483,32 @@ Now that your extension is shared in the Marketplace, anyone who wants to use it
 
 Create a build and release pipeline on Azure DevOps to help maintain the custom task on the Marketplace.
 
-### Prerequisites - Create a build and release pipeline to publish extension
+### Prerequisites
+
+:::moniker range=">=azure-devops-2019"
 
 |Software/tool |Information |
 |---------|---------|
 |Azure DevOps project    | [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).  |
 |Azure DevOps Extension Tasks extension | Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)  in your organization. |
-|Pipeline library variable group.    | Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:</br>
+|Pipeline library variable group.    | Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:
+</br>
 - `publisherId`: ID of your marketplace publisher</br>
 - `extensionId`: ID of your extension, as declared in the vss-extension.json file</br>
 - `extensionName`: Name of your extension, as declared in the vss-extension.json file</br>
-- `artifactName`: Name of the artifact being created for the VSIX file</br>|
+- `artifactName`: Name of the artifact being created for the VSIX file|
 |Service connection | Create a new Marketplace service connection and grant access permissions for all pipelines. 
-![Screenshot that shows the new service connection pane.](media/new-service-connection.png)</br>
-![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png) |
+![Screenshot that shows the new service connection pane.](media/new-service-connection.png)
+![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png)|
 :::moniker range=">=azure-devops-2019"
 | YAML pipeline | Use the following example to create a new pipeline with YAML. For more information, see [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](/azure/devops/pipelines/yaml-schema/).
-
 ```yaml
 trigger: 
 - main
-
 pool:
   vmImage: "ubuntu-latest"
-
 variables:
   - group: variable-group # Rename to whatever you named your variable group in the prerequisite stage of step 6
-
 stages:
   - stage: Run_and_publish_unit_tests
     jobs:
@@ -611,10 +611,13 @@ stages:
               extensionPricing: 'free'
 ```
 |
-
 :::moniker-end
 
-For more help with triggers, such as CI and PR triggers, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
+::: moniker range="< azure-devops-2019"
+
+::: moniker-end
+
+For more information, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
 
 > [!NOTE]
 > Each job uses a new user agent and requires dependencies to be installed.
