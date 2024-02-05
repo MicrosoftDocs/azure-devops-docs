@@ -415,6 +415,8 @@ sections:
           - Match the identities. Select **Next** when you're done.
           
             ![Resolve disconnected users](media/shared/resolve-disconnected-users.png)
+
+          <a name="users-disconnected-after-tenant-switch"></a>
           
       - question: |
           I got an error message when I was resolving disconnections. What should I do?
