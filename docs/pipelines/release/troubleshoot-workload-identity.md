@@ -81,4 +81,4 @@ You have two options:
 
 ### I use a Container Resource that specifies an Azure Container Registry
 
-[Container Resources](/azure/devops/pipelines/process/resources?view#define-a-containers-resource) that are pulled from Azure Container Registry do not support a Workload identity federation service connection specified in `azureSubscription`.
+[Container resources](/azure/devops/pipelines/process/resources?view#define-a-containers-resource) that are pulled from Azure Container Registry do not support a workload identity federation service connection specified in `azureSubscription`.
