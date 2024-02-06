@@ -44,7 +44,7 @@ The approval shows up as deferred in the checks panel.After the deferred-to time
 
 Starting this sprint, you'll be able to specify the order in which Approvals and checks run.
 
-[Approvals and checks](https://learn.microsoft.com/azure/devops/pipelines/process/approvals) allow you to control deployments to production. For example, you can specify that only pipelines that run on the `main` branch of a repository are allowed to use a production ARM service connection. Furthermore, you can require human approval and that the system passes a performance check.
+[Approvals and checks](/azure/devops/pipelines/process/approvals) allow you to control deployments to production. For example, you can specify that only pipelines that run on the `main` branch of a repository are allowed to use a production ARM service connection. Furthermore, you can require human approval and that the system passes a performance check.
 
 Up until today, all approvals and checks ran in parallel, with the exception of exclusive lock. This meant that if your deployment process required performance checks to pass before manual approval is given, you could not enforce this in Azure Pipelines. You had to rely on approval instructions and internal process documentation.
 
