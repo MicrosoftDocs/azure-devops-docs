@@ -45,4 +45,4 @@ In this sprint, we are happy to be introducing an enhanced experience by enablin
 > [!NOTE] 
 >This feature is only available in the New Boards Hub preview.
 
-If you are interested in getting access to this feature, please send us an email directly along with your organization name (https://dev.azure.com/{organization name}).
+If you are interested in getting access to this feature, please send us an email directly along with your organization name (dev.azure.com/{organization name}).

@@ -34,7 +34,7 @@ If your pipeline has errors, you'll still be able to save it.
 > ![Screenshot of pipeline is valid.](../../media/234-pipelines-07.png "Screenshot of save anyway")
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of pipeline is valid.](../../media/234-pipelines-08.png "Screenshot of save anyway")
+> ![Screenshot of errors detected.](../../media/234-pipelines-08.png "Screenshot of errors detected")
 
 
 We also improved the _Validate_ experience, so you can see the errors in a list thats easier to understand.
