@@ -10,15 +10,15 @@ ms.topic: include
 Code snippets highlighting the affected line of code now appear in the alert detail page for code scanning and secret scanning alerts. To be taken to the original file in your Azure DevOps repository, click on the file name itself above the code snippet that appears. 
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of case-sensitive middleware path.](../../media/234-general-01.png "Screenshot of case-sensitive middleware path")
+> ![Screenshot of case-sensitive middleware path.](../../media/234-general-02.png "Screenshot of case-sensitive middleware path")
 
 ### Linked Azure subscription required for GHAzDO enablement
 
-If you previously enabled Advanced Security for repositories in an Azure DevOps organization without a linked Azure subscription, you may have noticed Advanced Security automatically disable itself on those repositories. To re-enable Advanced Security, add an associated Azure subscription to the organization. For more information on how to add or change your subscription, refer to [Change Azure subscription](/azure/devops/organizations/billing/change-azure-subscription?view=azure-devops).
+If you previously enabled Advanced Security for repositories in an Azure DevOps organization without a linked Azure subscription, you may have noticed Advanced Security automatically disable itself on those repositories. To re-enable Advanced Security, add an associated Azure subscription to the organization. For more information on how to add or change your subscription, refer to [Change Azure subscription](/azure/devops/organizations/billing/change-azure-subscription?view=azure-devopsthe&preserve-view=true).
 
 ### Final notice of alternate credentials deprecation
 
-Alternate credentials were [formally deprecated in March 2020](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/), but a small number of current users were grandfathered in with ongoing usage of their existing alternate credentials. We are fully deprecating all alternate credentials as of January 2024. To reduce any chance of downtime, replace your alternate credentials with one of the [available authentication mechanisms](/azure/devops/integrate/get-started/authentication/authentication-guidance?view=azure-devops) we have, such as personal access tokens or managed identities.
+Alternate credentials were [formally deprecated in March 2020](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/), but a small number of current users were grandfathered in with ongoing usage of their existing alternate credentials. We are fully deprecating all alternate credentials as of January 2024. To reduce any chance of downtime, replace your alternate credentials with one of the [available authentication mechanisms](/azure/devops/integrate/get-started/authentication/authentication-guidance?view=azure-devopsthe&preserve-view=true) we have, such as personal access tokens or managed identities.
 
 ### Azure Devops OAuth self-service secret rotation
 
