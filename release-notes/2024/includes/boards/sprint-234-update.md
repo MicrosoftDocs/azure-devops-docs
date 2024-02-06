@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/6/2024
+ms.date: 2/7/2024
 ms.topic: include
 ---
 
@@ -33,7 +33,7 @@ Here is an example of the page reflow changes that are adaptive up to 400% zoom.
 
 Furthermore, we've rolled out performance enhancements across the work item form, boards, and backlogs pages. With these changes, you can expect New Boards to match the performance standards set with Old Boards.
 
-### Add link to GitHub commit or pull request (preview)
+### Add link to GitHub commit or pull request (private preview)
 
 You have two options for associating your work item with a GitHub pull request or commit. You can use the AB# syntax from the pull request, or you can directly link it from the work item. Today, the process involves copying the URL of the GitHub pull request and pasting it when adding a link. This requires opening multiple windows and bouncing back and forth between GitHub and Azure DevOps.
 
