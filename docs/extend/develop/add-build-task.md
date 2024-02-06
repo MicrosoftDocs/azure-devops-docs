@@ -162,21 +162,21 @@ Now that the scaffolding is complete, we can create our custom task.
    ```typescript
    import tl = require('azure-pipelines-task-lib/task');
 
-   async function run() {
-    try {
-        const inputString: string | undefined = tl.getInput('samplestring', true);
-        if (inputString == 'bad') {
-            tl.setResult(tl.TaskResult.Failed, 'Bad input was given');
-            return;
+    async function run() {
+        try {
+            const inputString: string | undefined = tl.getInput('samplestring', true);
+            if (inputString == 'bad') {
+                tl.setResult(tl.TaskResult.Failed, 'Bad input was given');
+                return;
+            }
+            console.log('Hello', inputString);
         }
-        console.log('Hello', inputString);
+        catch (err) {
+            tl.setResult(tl.TaskResult.Failed, err.message);
+        }
     }
-    catch (err) {
-        tl.setResult(tl.TaskResult.Failed, err.message);
-    }
-}
 
-run();
+    run();
    ```
 
 4. Enter "tsc" from the `buildandreleasetask` folder to compile an `index.js` file from `index.ts`.
@@ -185,8 +185,8 @@ run();
 
 See the following descriptions of some of the components of the `task.json` file.
 
-| Property             | Description                                                                                                            |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Property             | Description               |
+| -------------------- | -------------------------- |
 | `id`                 | A unique GUID for your task.                                                                                                |
 | `name`               | Name with no spaces.                                                                                                        |
 | `friendlyName`       | Descriptive name (spaces allowed).                                                                                          |
@@ -212,13 +212,13 @@ Run the task with `node index.js` from PowerShell.
 In the following example, the task fails because inputs weren't supplied (`samplestring` is a required input).
 
 ```
-node index.js
-##vso[task.debug]agent.workFolder=undefined
-##vso[task.debug]loading inputs and endpoints
-##vso[task.debug]loaded 0
-##vso[task.debug]task result: Failed
-##vso[task.issue type=error;]Input required: samplestring
-##vso[task.complete result=Failed;]Input required: samplestring
+ node index.js
+ ##vso[task.debug]agent.workFolder=undefined
+ ##vso[task.debug]loading inputs and endpoints
+ ##vso[task.debug]loaded 0
+ ##vso[task.debug]task result: Failed
+ ##vso[task.issue type=error;]Input required: samplestring
+ ##vso[task.complete result=Failed;]Input required: samplestring
 ```
 
 As a fix, we can set the `samplestring` input and run the task again.
@@ -485,130 +485,171 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 
 ### Prerequisites
 
-:::moniker range=">=azure-devops-2019"
+:::moniker range=">= azure-devops-2019"
 
-|Software/tool |Information |
-|--------------|------------|
-|Azure DevOps project    | [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).  |
-|Azure DevOps Extension Tasks extension | Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)  in your organization. |
-|Pipeline library variable group.    | Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:
-</br>
+:::row:::
+   :::column span="1":::
+**Software/tool**
+   :::column-end:::
+   :::column span="2":::
+**Information**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+Azure DevOps project
+   :::column-end:::
+   :::column span="2":::
+[Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+Azure DevOps Extension Tasks extension 
+   :::column-end:::
+   :::column span="2":::
+Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)  in your organization.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+Pipeline library variable group
+   :::column-end:::
+   :::column span="2":::
+Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:
+
 - `publisherId`: ID of your marketplace publisher</br>
 - `extensionId`: ID of your extension, as declared in the vss-extension.json file</br>
 - `extensionName`: Name of your extension, as declared in the vss-extension.json file</br>
-- `artifactName`: Name of the artifact being created for the VSIX file|
-|Service connection | Create a new Marketplace service connection and grant access permissions for all pipelines.
-
-![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png)|
-| YAML pipeline | Use the following example to create a new pipeline with YAML. For more information, see [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](/azure/devops/pipelines/yaml-schema/).
+- `artifactName`: Name of the artifact being created for the VSIX file
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+Service connection
+   :::column-end:::
+   :::column span="2":::
+Create a new Marketplace service connection and grant access permissions for all pipelines.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+ YAML pipeline
+   :::column-end:::
+   :::column span="2":::
+Use the following example to create a new pipeline with YAML. For more information, see [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](/azure/devops/pipelines/yaml-schema/).
+    
 ```yaml
-trigger: 
-- main
-pool:
-  vmImage: "ubuntu-latest"
-variables:
-  - group: variable-group # Rename to whatever you named your variable group in the prerequisite stage of step 6
-stages:
-  - stage: Run_and_publish_unit_tests
-    jobs:
-      - job:
-        steps:
-          - task: TfxInstaller@4
-            inputs:
-              version: "v0.x"
-          - task: Npm@1
-            inputs:
-              command: 'install'
-              workingDir: '/TaskDirectory' # Update to the name of the directory of your task
-          - task: Bash@3
-            displayName: Compile Javascript
-            inputs:
-              targetType: "inline"
-              script: |
-                cd TaskDirectory # Update to the name of the directory of your task
-                tsc
-          - task: Npm@1
-            inputs:
-              command: 'custom'
-              workingDir: '/TestsDirectory' # Update to the name of the directory of your task's tests
-              customCommand: 'testScript' # See the definition in the explanation section below - it may be called test
-          - task: PublishTestResults@2
-            inputs:
-              testResultsFormat: 'JUnit'
-              testResultsFiles: '**/ResultsFile.xml'
-  - stage: Package_extension_and_publish_build_artifacts
-    jobs:
-      - job:
-        steps:
-          - task: TfxInstaller@4
-            inputs:
-              version: "0.x"
-          - task: Npm@1
-            inputs:
-              command: 'install'
-              workingDir: '/TaskDirectory' # Update to the name of the directory of your task
-          - task: Bash@3
-            displayName: Compile Javascript
-            inputs:
-              targetType: "inline"
-              script: |
-                cd TaskDirectory # Update to the name of the directory of your task
-                tsc
-          - task: QueryAzureDevOpsExtensionVersion@4
-            name: QueryVersion
-            inputs:
-              connectTo: 'VsTeam'
-              connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
-              publisherId: '$(PublisherID)'
-              extensionId: '$(ExtensionID)'
-              versionAction: 'Patch'
-          - task: PackageAzureDevOpsExtension@4
-            inputs:
-              rootFolder: '$(System.DefaultWorkingDirectory)'
-              publisherId: '$(PublisherID)'
-              extensionId: '$(ExtensionID)'
-              extensionName: '$(ExtensionName)'
-              extensionVersion: '$(QueryVersion.Extension.Version)'
-              updateTasksVersion: true
-              updateTasksVersionType: 'patch'
-              extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
-              extensionPricing: 'free'
-          - task: CopyFiles@2
-            displayName: "Copy Files to: $(Build.ArtifactStagingDirectory)"
-            inputs:
-              Contents: "**/*.vsix"
-              TargetFolder: "$(Build.ArtifactStagingDirectory)"
-          - task: PublishBuildArtifacts@1
-            inputs:
-              PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-              ArtifactName: '$(ArtifactName)'
-              publishLocation: 'Container'
-  - stage: Download_build_artifacts_and_publish_the_extension
-    jobs:
-      - job:
-        steps:
-          - task: TfxInstaller@4
-            inputs:
-              version: "v0.x"
-          - task: DownloadBuildArtifacts@0
-            inputs:
-              buildType: "current"
-              downloadType: "single"
-              artifactName: "$(ArtifactName)"
-              downloadPath: "$(System.DefaultWorkingDirectory)"
-          - task: PublishAzureDevOpsExtension@4
-            inputs:
-              connectTo: 'VsTeam'
-              connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
-              fileType: 'vsix'
-              vsixFile: '$(PublisherID).$(ExtensionName)/$(PublisherID)..vsix'
-              publisherId: '$(PublisherID)'
-              extensionId: '$(ExtensionID)'
-              extensionName: '$(ExtensionName)'
-              updateTasksVersion: false
-              extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
-              extensionPricing: 'free'
-```|
+    trigger: 
+    - main
+    pool:
+      vmImage: "ubuntu-latest"
+    variables:
+      - group: variable-group # Rename to whatever you named your variable group in the prerequisite stage of step 6
+    stages:
+      - stage: Run_and_publish_unit_tests
+        jobs:
+          - job:
+            steps:
+              - task: TfxInstaller@4
+                inputs:
+                  version: "v0.x"
+              - task: Npm@1
+                inputs:
+                  command: 'install'
+                  workingDir: '/TaskDirectory' # Update to the name of the directory of your task
+              - task: Bash@3
+                displayName: Compile Javascript
+                inputs:
+                  targetType: "inline"
+                  script: |
+                    cd TaskDirectory # Update to the name of the directory of your task
+                    tsc
+              - task: Npm@1
+                inputs:
+                  command: 'custom'
+                  workingDir: '/TestsDirectory' # Update to the name of the directory of your task's tests
+                  customCommand: 'testScript' # See the definition in the explanation section below - it may be called test
+              - task: PublishTestResults@2
+                inputs:
+                  testResultsFormat: 'JUnit'
+                  testResultsFiles: '**/ResultsFile.xml'
+      - stage: Package_extension_and_publish_build_artifacts
+        jobs:
+          - job:
+            steps:
+              - task: TfxInstaller@4
+                inputs:
+                  version: "0.x"
+              - task: Npm@1
+                inputs:
+                  command: 'install'
+                  workingDir: '/TaskDirectory' # Update to the name of the directory of your task
+              - task: Bash@3
+                displayName: Compile Javascript
+                inputs:
+                  targetType: "inline"
+                  script: |
+                    cd TaskDirectory # Update to the name of the directory of your task
+                    tsc
+              - task: QueryAzureDevOpsExtensionVersion@4
+                name: QueryVersion
+                inputs:
+                  connectTo: 'VsTeam'
+                  connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
+                  publisherId: '$(PublisherID)'
+                  extensionId: '$(ExtensionID)'
+                  versionAction: 'Patch'
+              - task: PackageAzureDevOpsExtension@4
+                inputs:
+                  rootFolder: '$(System.DefaultWorkingDirectory)'
+                  publisherId: '$(PublisherID)'
+                  extensionId: '$(ExtensionID)'
+                  extensionName: '$(ExtensionName)'
+                  extensionVersion: '$(QueryVersion.Extension.Version)'
+                  updateTasksVersion: true
+                  updateTasksVersionType: 'patch'
+                  extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
+                  extensionPricing: 'free'
+              - task: CopyFiles@2
+                displayName: "Copy Files to: $(Build.ArtifactStagingDirectory)"
+                inputs:
+                  Contents: "**/*.vsix"
+                  TargetFolder: "$(Build.ArtifactStagingDirectory)"
+              - task: PublishBuildArtifacts@1
+                inputs:
+                  PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+                  ArtifactName: '$(ArtifactName)'
+                  publishLocation: 'Container'
+      - stage: Download_build_artifacts_and_publish_the_extension
+        jobs:
+          - job:
+            steps:
+              - task: TfxInstaller@4
+                inputs:
+                  version: "v0.x"
+              - task: DownloadBuildArtifacts@0
+                inputs:
+                  buildType: "current"
+                  downloadType: "single"
+                  artifactName: "$(ArtifactName)"
+                  downloadPath: "$(System.DefaultWorkingDirectory)"
+              - task: PublishAzureDevOpsExtension@4
+                inputs:
+                  connectTo: 'VsTeam'
+                  connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
+                  fileType: 'vsix'
+                  vsixFile: '$(PublisherID).$(ExtensionName)/$(PublisherID)..vsix'
+                  publisherId: '$(PublisherID)'
+                  extensionId: '$(ExtensionID)'
+                  extensionName: '$(ExtensionName)'
+                  updateTasksVersion: false
+                  extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
+                  extensionPricing: 'free'
+```
+   :::column-end:::
+:::row-end:::
+
 :::moniker-end
 
 ::: moniker range="< azure-devops-2019"
@@ -622,9 +663,7 @@ stages:
 - `extensionId`: ID of your extension, as declared in the vss-extension.json file</br>
 - `extensionName`: Name of your extension, as declared in the vss-extension.json file</br>
 - `artifactName`: Name of the artifact being created for the VSIX file|
-|Service connection | Create a new Marketplace service connection and grant access permissions for all pipelines. 
-![Screenshot that shows the new service connection pane.](media/new-service-connection.png)
-![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png)|
+|Service connection | Create a new Marketplace service connection and grant access permissions for all pipelines. |
 ::: moniker-end
 
 For more information, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
