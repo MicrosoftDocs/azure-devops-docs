@@ -193,7 +193,7 @@ See the following descriptions of some of the components of the `task.json` file
 | `description`        | Detailed description of what your task does.                                                                                |
 | `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation."              |
 | `instanceNameFormat` | How the task displays within the build/release step list. You can use variable values by using **$(variablename)**. |
-| `groups`             | Describes groups that task properties might be grouped logically by in the UI.                                               |
+| `groups`             | Describes the logical grouping of task properties in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
 | `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
@@ -653,17 +653,53 @@ Use the following example to create a new pipeline with YAML. For more informati
 :::moniker-end
 
 ::: moniker range="< azure-devops-2019"
-|Software/tool |Information |
-|---------|---------|
-|Azure DevOps project    | [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).  |
-|Azure DevOps Extension Tasks extension | Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)  in your organization. |
-|Pipeline library variable group.    | Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:
-</br>
+
+:::row:::
+   :::column span="1":::
+**Software/tool**
+   :::column-end:::
+   :::column span="2":::
+**Information**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+Azure DevOps project
+   :::column-end:::
+   :::column span="2":::
+[Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+Azure DevOps Extension Tasks extension 
+   :::column-end:::
+   :::column span="2":::
+Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)  in your organization.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+Pipeline library variable group
+   :::column-end:::
+   :::column span="2":::
+Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:
+
 - `publisherId`: ID of your marketplace publisher</br>
 - `extensionId`: ID of your extension, as declared in the vss-extension.json file</br>
 - `extensionName`: Name of your extension, as declared in the vss-extension.json file</br>
-- `artifactName`: Name of the artifact being created for the VSIX file|
-|Service connection | Create a new Marketplace service connection and grant access permissions for all pipelines. |
+- `artifactName`: Name of the artifact being created for the VSIX file
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+Service connection
+   :::column-end:::
+   :::column span="2":::
+Create a new Marketplace service connection and grant access permissions for all pipelines.
+   :::column-end:::
+:::row-end:::
+
 ::: moniker-end
 
 For more information, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
