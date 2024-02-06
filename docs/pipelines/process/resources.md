@@ -606,6 +606,9 @@ resources:          # types: pipelines | repositories | containers | builds | pa
 > [!NOTE]
 > The syntax that's used to enable container triggers for all image tags (`enabled: 'true'`) is different from the syntax that's used for other resource triggers. Pay close attention to use the correct syntax for a specific resource.
 
+> [!NOTE]
+> Service connections that use [Workload identity federation](/azure/devops/pipelines/library/connect-to-azure#create-an-azure-resource-manager-service-connection-using-workload-identity-federation) are not supported in `azureSubscription`.
+
 ## [Example](#tab/example)
 
 ```yaml
