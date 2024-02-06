@@ -43,11 +43,11 @@ To create extensions for Azure DevOps, you need the following software and tools
 > [!IMPORTANT]
 > The dev machine must run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of `azure-pipelines-task-lib`. Update your task.json file as per the following command:
 >```
-"execution": {
-    "Node16": {
-      "target": "index.js"
-    }
-  }
+>"execution": {
+>    "Node16": {
+>      "target": "index.js"
+>    }
+>  }
 >```
 
 <a name="createtask"></a>
@@ -159,10 +159,10 @@ Now that the scaffolding is complete, we can create our custom task.
 
 3. Create an `index.ts` file by using the following code as a reference. This code runs when the task gets called.
 
-```typescript
-import tl = require('azure-pipelines-task-lib/task');
+   ```typescript
+   import tl = require('azure-pipelines-task-lib/task');
 
-async function run() {
+   async function run() {
     try {
         const inputString: string | undefined = tl.getInput('samplestring', true);
         if (inputString == 'bad') {
@@ -177,7 +177,7 @@ async function run() {
 }
 
 run();
-```
+   ```
 
 4. Enter "tsc" from the `buildandreleasetask` folder to compile an `index.js` file from `index.ts`.
 
@@ -383,14 +383,14 @@ Do unit tests to quickly test the task script, and not the external tools that i
 
 The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images folders. Ensure you created an images folder with extension-icon.png. The following example is an extension manifest that contains the build or release task.
 
-1. Copy the following .json code and save it as your `vss-extension.json` file in your `home` directory. 
+Copy the following .json code and save it as your `vss-extension.json` file in your `home` directory. 
    
-   **Don't create this file in the buildandreleasetask folder.**
+**Don't create this file in the buildandreleasetask folder.**
 
-   [!code-javascript[JSON](../_data/extension-build-tasks.json)]
+[!code-javascript[JSON](../_data/extension-build-tasks.json)]
 
 >[!NOTE]
->Change the **publisher** to your publisher name. For more information, see [Create a publisher](#createpublisher).
+> Change the **publisher** to your publisher name. For more information, see [Create a publisher](#createpublisher).
 
 ### Contributions
 
@@ -488,7 +488,7 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 :::moniker range=">=azure-devops-2019"
 
 |Software/tool |Information |
-|---------|---------|
+|--------------|------------|
 |Azure DevOps project    | [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).  |
 |Azure DevOps Extension Tasks extension | Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)  in your organization. |
 |Pipeline library variable group.    | Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:
@@ -497,10 +497,9 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 - `extensionId`: ID of your extension, as declared in the vss-extension.json file</br>
 - `extensionName`: Name of your extension, as declared in the vss-extension.json file</br>
 - `artifactName`: Name of the artifact being created for the VSIX file|
-|Service connection | Create a new Marketplace service connection and grant access permissions for all pipelines. 
-![Screenshot that shows the new service connection pane.](media/new-service-connection.png)
+|Service connection | Create a new Marketplace service connection and grant access permissions for all pipelines.
+
 ![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png)|
-:::moniker range=">=azure-devops-2019"
 | YAML pipeline | Use the following example to create a new pipeline with YAML. For more information, see [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](/azure/devops/pipelines/yaml-schema/).
 ```yaml
 trigger: 
@@ -609,12 +608,23 @@ stages:
               updateTasksVersion: false
               extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
               extensionPricing: 'free'
-```
-|
+```|
 :::moniker-end
 
 ::: moniker range="< azure-devops-2019"
-
+|Software/tool |Information |
+|---------|---------|
+|Azure DevOps project    | [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).  |
+|Azure DevOps Extension Tasks extension | Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)  in your organization. |
+|Pipeline library variable group.    | Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:
+</br>
+- `publisherId`: ID of your marketplace publisher</br>
+- `extensionId`: ID of your extension, as declared in the vss-extension.json file</br>
+- `extensionName`: Name of your extension, as declared in the vss-extension.json file</br>
+- `artifactName`: Name of the artifact being created for the VSIX file|
+|Service connection | Create a new Marketplace service connection and grant access permissions for all pipelines. 
+![Screenshot that shows the new service connection pane.](media/new-service-connection.png)
+![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png)|
 ::: moniker-end
 
 For more information, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
