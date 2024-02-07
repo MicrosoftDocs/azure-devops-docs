@@ -7,4 +7,7 @@ ms.topic: include
 
 ### Support for Rust Crates is generally available
 
-Azure Artifacts support for Rust Crates will enter General Availability starting from February 16, 2024. Billing meters will be turned on, following the same pricing model applicable to the rest of the supported protocols.
+Starting February 16, 2024, Rust Crates support will become a generally available feature for Azure Artifacts. Billing meters will be activated, using the same pricing model that applies to the other supported protocols.
+
+### Azure Artifacts support for npm audit 
+
