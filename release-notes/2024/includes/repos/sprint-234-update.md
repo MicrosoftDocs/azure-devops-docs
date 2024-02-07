@@ -17,24 +17,24 @@ See the image below showing the pipeline named "Sandbox" with **Queue builds** p
 
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of permissions for Sandbox.](../../media/234-pipelines-01.png "Screenshot of permissions for Sandbox")
+> ![Screenshot of permissions for Sandbox.](../../media/234-repos-01.png "Screenshot of permissions for Sandbox")
 
 See the image below showing the pipeline named "Sandbox" disabled (greyed out) in the drop-down when user with denied **Queue builds** permission is trying to add new build policy.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of add build policy.](../../media/234-pipelines-02.png "Screenshot of add build policy")
+> ![Screenshot of add build policy.](../../media/234-repos-02.png "Screenshot of add build policy")
 
 When the build policy configured to run the pipeline named "Sandbox" already exists, then the user with no **Queue builds**  permission will not be able to edit or view the build policy. This case is shown on the following image.
 
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of build validation.](../../media/234-pipelines-03.png "Screenshot of build validation")
+> ![Screenshot of build validation.](../../media/234-repos-03.png "Screenshot of build validation")
 
 When the user will try to delete such policy the pop-up dialog asking for deletion confirmation will be shown.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of confirm deletion.](../../media/234-pipelines-04.png "Screenshot of confirm deletion")
+> ![Screenshot of confirm deletion.](../../media/234-repos-04.png "Screenshot of confirm deletion")
 
-These changes also apply to any API calls that result in either creation or editing of the build policy. When any of these actions is run using a user identity with no **Queue builds** permission, then the call will fail returning back the appropriate error code and the error message saying “TFS.WebApi.Exception: TF401027: You need the QueueBuild permission on this pipeline to perform this action.”.
+These changes also apply to any API calls that result in either creation or editing of the build policy. When any of these actions is run using a user identity with no **Queue builds** permission, then the call will fail returning back the appropriate error code and the error message saying `“TFS.WebApi.Exception: TF401027:` You need the QueueBuild permission on this pipeline to perform this action.”.
 
-Deletion of a build policy done via API using a user identity with no **Queue builds** permission will succeed and there will be no warning or prevention done (no changes in how the deletion via API works).
+Deletion of a build policy done via API using a `user identity` with no **Queue builds** permission will succeed and there will be no warning or prevention done (no changes in how the deletion via API works).
