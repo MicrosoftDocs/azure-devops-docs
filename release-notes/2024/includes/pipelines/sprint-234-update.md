@@ -15,7 +15,7 @@ Azure Pipelines provides two versions of agent packages:
 - __vsts-agent-*__ packages support tasks using Node 6 to run.
 - __pipelines-agent-*__ packages do not support tasks that require Node 6 to run.
 
-Customers that create Self-hosted agents can download these from the Pipeline agent [releases page](https://github.com/microsoft/azure-pipelines-agent/releases). The Node versions included with the agent are used to execute tasks. See [Node runner versions](/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser#node-runner-versions).
+Customers that create Self-hosted agents can download these from the Pipeline agent [releases page](https://github.com/microsoft/azure-pipelines-agent/releases). The Node versions included with the agent are used to execute tasks. See [Node runner versions](/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser#node-runner-versions&preserve-view=true).
 
 After agent registration, agents installed from __pipelines-agent-*__ packages will now download Node versions that are not included with the agent and not blocked under 'Task restrictions' in organization settings. This allows customers to use __pipelines-agent-*__ agent packages and control the installation of Node 6 with 'Task restrictions' in organization settings.
 
