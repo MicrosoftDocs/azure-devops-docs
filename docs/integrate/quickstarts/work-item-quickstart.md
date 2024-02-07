@@ -26,7 +26,7 @@ You must have the following items:
 
 ## Create a C# project in Visual Studio
 
-To learn about C# programming within Visual Studio, see the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/).
+For information about C# programming within Visual Studio, see the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/).
 
 ## C# code content
 
@@ -40,7 +40,7 @@ The following tasks occur in the following code sample:
    2. Get the results for that query
    3. Get each of the work items by ID
 
-## C# code snippet
+### C# code snippet
 
 ```cs
 // nuget:Microsoft.TeamFoundationServer.Client
