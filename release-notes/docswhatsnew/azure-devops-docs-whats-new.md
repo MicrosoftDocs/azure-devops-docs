@@ -14,14 +14,9 @@ Welcome to what's new in the Azure DevOps docs from January 1, 2024 through Janu
 
 - [Add users or groups to a team or project](/azure/devops/organizations/security/add-users-team-project)
 - [View permissions for yourself or others](/azure/devops/organizations/security/view-permissions)
-- [Title not found in: #6428](/azure/devops/organizations/projects/resources-granted-to-project-members.md)
 - [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url)
 
 ## Azure Boards
-
-### New articles
-
-- [Title not found in: #6404](/azure/devops/boards/work-items/automate-work-item-state-transitions.md)
 
 ### Updated articles
 
