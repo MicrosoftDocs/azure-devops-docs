@@ -78,7 +78,6 @@ We added pre-dynamic checks and post-dynamic checks Approvals, so you can sign o
 
 ### Validate and Save by default when editing YAML pipelines
 
-
 An incorrect YAML pipeline can lead to wasted time and effort. To improve your pipeline editing productivity, we are changing the _Save_ button in the editor to also do YAML validation. 
 
 > [!div class="mx-imgBorder"]
