@@ -1,25 +1,27 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/6/2024
+ms.date: 2/8/2024
 ms.topic: include
 ---
 
 ### Provide discoverable resource utilization information
 
 
+### Out-of-band installation of Node 6 task runner
 
-### Artifacts support for Rust Crates
+Azure Pipelines provides two versions of agent packages:
 
-Azure Artifacts support for Rust Crates will enter General Availability starting from 2/16/2024. Billing meters will be turned, following the same pricing model applicable to the rest of the supported protocols. 
+- __vsts-agent-*__ packages support tasks using Node 6 to run.
+- __pipelines-agent-*__ packages do not support tasks that require Node 6 to run.
 
-### Download EOL Node runners out-of-band
+Customers that create Self-hosted agents can download these from the Pipeline agent [releases page](https://github.com/microsoft/azure-pipelines-agent/releases). The Node versions included with the agent are used to execute tasks. See [Node runner versions](https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser#node-runner-versions).
 
-### Deprecated tasks fail 
+After agent registration, agents installed from __pipelines-agent-*__ packages will now download Node versions that are not included with the agent and not blocked under 'Task restrictions' in organization settings. This allows customers to use __pipelines-agent-*__ agent packages and control the installation of Node 6 with 'Task restrictions' in organization settings.
 
 ### Deferred approval
 
-Approvals can be used to sign off on a deployment. However, there are situations when the time when the approval is given and the time the deployment should start do not match. For example, for the particular deployment you review, you know it's an out-of-bounds one. Imagine it cannot proceed immediately, rather it should take place during the night.
+Approvals can be used to sign off on a deployment. However, there are situations when the time when the approval is given and the time the deployment should start don't match. For example, for the particular deployment you review, you know it's an out-of-bounds one. Imagine it cannot proceed immediately, rather it should take place during the night.
 
 To cover such scenarios, we've added the option to defer approvals for YAML pipelines. Now, you can approve a pipeline run and specify when should the approval be effective.
 
@@ -34,7 +36,7 @@ When you select _Defer approval_, you can configure the time when the approval b
 > [!div class="mx-imgBorder"]
 > ![Screenshot of after_approval_deferred.](../../media/234-pipelines-16.png "Screenshot of after_approval_deferred")
 
-The approval shows up as deferred in the checks panel.After the deferred-to time, the approval is effective.
+The approval shows up as deferred in the checks panel. After the deferred-to time, the approval is effective.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of  approval is effective.](../../media/234-pipelines-17.png "Screenshot of  approval is effective")
@@ -42,13 +44,13 @@ The approval shows up as deferred in the checks panel.After the deferred-to time
 
 ### Sequencing approvals and checks
 
-Starting this sprint, you'll be able to specify the order in which Approvals and checks run.
+Starting this sprint, you are be able to specify the order in which Approvals and checks run.
 
 [Approvals and checks](/azure/devops/pipelines/process/approvals) allow you to control deployments to production. For example, you can specify that only pipelines that run on the `main` branch of a repository are allowed to use a production ARM service connection. Furthermore, you can require human approval and that the system passes a performance check.
 
 Up until today, all approvals and checks ran in parallel, with the exception of exclusive lock. This meant that if your deployment process required performance checks to pass before manual approval is given, you could not enforce this in Azure Pipelines. You had to rely on approval instructions and internal process documentation.
 
-With this sprint, we're introducing sequencing in Approvals and Checks. There are now 5 categories of Approvals and Checks:
+With this sprint, we're introducing sequencing in Approvals and Checks. There are now five categories of Approvals and Checks:
 
 1. Static checks: Branch control, Required template, and Evaluate artifact
 2. Pre-dynamic checks Approval
@@ -74,11 +76,11 @@ Check categories run one by one and if one fails, the rest of the checks are not
 > [!div class="mx-imgBorder"]
 > ![Screenshot of checks for deploy fail.](../../media/234-pipelines-13.png "Screenshot of checks for deploy fail")
 
-We added pre-dynamic checks and post-dynamic checks Approvals, so you can sign off a deployment after all dynamic checks ran (post checks Approvals) or do a manual validation before proceeding with dynamic checks (pre-dynamic checks Approvals).
+We added predynamic checks and post-dynamic checks Approvals, so you can sign off on a deployment after all dynamic checks ran (post checks Approvals) or do a manual validation before proceeding with dynamic checks (predynamic checks Approvals).
 
 ### Validate and Save by default when editing YAML pipelines
 
-An incorrect YAML pipeline can lead to wasted time and effort. To improve your pipeline editing productivity, we are changing the _Save_ button in the editor to also do YAML validation. 
+An incorrect YAML pipeline can lead to wasted time and effort. To improve your pipeline editing productivity, we're changing the _Save_ button in the editor to also do YAML validation. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of  new button.](../../media/234-pipelines-05.png "Screenshot of new button")
