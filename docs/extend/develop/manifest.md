@@ -51,7 +51,7 @@ See the following example of a typical manifest:
 
 #### Mark an extension public
 
-By default, all extensions in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops/) are private. They're only visible to the publisher and accounts shared to by the publisher. If your publisher has been verified, you can make your extension public by setting the `Public` flag in your extension manifest:
+By default, all extensions in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops/) are private. They're only visible to the publisher and accounts shared to by the publisher. If your publisher is verified, you can make your extension public by setting the `Public` flag in your extension manifest:
 
 ```json
 {
@@ -125,7 +125,7 @@ Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an exte
 }          
 ```
 
-You also need to add a new section in your extension manifest to override paid licensing. In the future, we'll remove the paid licensing check and no longer require the override. For now, ensure your extension displays as expected. Each override consists of an “ID” and a “behavior.” The “ID” must match the ID of the contributions defined in the manifest.
+You also need to add a new section in your extension manifest to override paid licensing. In the future, we remove the paid licensing check and no longer require the override. For now, ensure your extension displays as expected. Each override consists of an “ID” and a “behavior.” The “ID” must match the ID of the contributions defined in the manifest.
 ```json
 "licensing": {
 
@@ -147,8 +147,8 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 ```
 
 > [!NOTE]
-> If you want to target TFS, but don't wish to surface a **Download** option for your extension, then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
-> If you're moving an extension from the previously-offered billing & licensing from Microsoft to the BYOL model, then contact us and we'll provide you with suitable steps.
+> If you want to target Azure DevOps, but don't wish to surface a **Download** option for your extension, then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
+> If you're moving an extension from the previously-offered billing & licensing from Microsoft to the BYOL model, then contact us for suitable steps.
 
 ### Example of more properties
 
@@ -229,7 +229,7 @@ Properties for the Customer Q & A Support section:
 
 ## Scopes
 
-Your extension can specify one or more scopes. Scopes control what resources can be accessed by your extension and what operations your extension is allowed to do with those resources. The scopes you specify in your extension manifest are the scopes set on access tokens issued to your extension. For more information, see [Auth and security](auth.md).
+In your extension, you can define one or more scopes. These scopes determine which resources your extension can access and the operations it's permitted to perform on those resources. The scopes you specify in your extension manifest are the scopes set on access tokens issued to your extension. For more information, see [Auth and security](auth.md).
 
 If no scopes are specified, extensions are only provided access to user profile and extension data.
 
@@ -258,13 +258,13 @@ The installation targets for an extension or integration are specified via the `
 Supported identifiers for **extensions**:
 
 * `Microsoft.VisualStudio.Services.Cloud`: installs into Azure DevOps Services
-* `Microsoft.TeamFoundation.Server`: installs into TFS
+* `Microsoft.TeamFoundation.Server`: installs into Azure DevOps Server
 * `Microsoft.VisualStudio.Services`: installs into both. Shortcut for `Microsoft.VisualStudio.Services.Cloud` and `Microsoft.TeamFoundation.Server` version `[14.2,)`
 
 Supported identifiers for **integrations**:
 
 * `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with Azure DevOps Services
-* `Microsoft.TeamFoundation.Server.Integration`: integrates with TFS
+* `Microsoft.TeamFoundation.Server.Integration`: integrates with Azure DevOps Server
 * `Microsoft.VisualStudio.Services.Integration`: integrates with both. Shortcut for `Microsoft.VisualStudio.Services.Cloud.Integration` and `Microsoft.TeamFoundation.Server.Integration`
 
 For more information, see [Extensibility points](../reference/targets/overview.md).
@@ -308,7 +308,7 @@ Installation targets can also be used in the manifest of integrations. For examp
 }
 ```
 
-#### Example: Integration that only works with TFS
+#### Example: Integration that only works with Azure DevOps Server
 
 ```json
 {
@@ -553,7 +553,7 @@ Each contribution entry has the following properties:
 * **id** - A reference ID (string) for the contribution type. Each contribution type's ID must be unique within an extension. See [referencing contributions and types](#contributionIds). 
 * **name** - The friendly name of the contribution type. 
 * **description** - (Optional) A string describing in more detail what the contribution type is for.
-* **properties** - (Optional) A dictionary that maps property names to property descriptions. These properties describe the required and optional properties that can be used by contributions of this type.
+* **properties** - (Optional) A dictionary that maps property names to property descriptions. These properties describe the required and optional properties that contributions of this type can use.
 
 Property descriptions have the following properties:
 
@@ -567,21 +567,20 @@ For more information, see the [contribution model overview](contributions-overvi
 
 ### Referencing contributions and types
 
-Contributions and contribution types are referenced by their identifiers. Contributions reference types through the `type` property, and reference other
-contributions through the `targets` property.
+Use unique identifiers to reference contributions and contribution types. Reference *types* with the `type` property, and reference other contributions with the `targets` property.
 
 - A *full* contribution reference includes the publisher identifier, extension identifier, and contribution/type identifier, separated by
 a dot (.). For example, `ms.vss-web.hub` is the full identifier for the contribution with identifier of "hub" in the "vss-web" extension published by the "ms" (Microsoft) publisher.
-- *Relative* contribution references may be used within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is a dot (.) followed
-by the contribution identifier. For example, ".hub" may be used within the "vss-web" extension mentioned previously as a shortcut for "ms.vss-web.hub".
+- *Relative* contribution references might be used within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is a dot (.) followed
+by the contribution identifier. For example, ".hub" might be used within the "vss-web" extension mentioned previously as a shortcut for "ms.vss-web.hub."
 
 <a name="contributionTargets"></a>
 
 ### Targeting contributions
 
-Some contributions act as containers that can be targeted by other contributions.
+Some contributions act as containers targeted by other contributions.
 - Hub contributions can target Hub Groups. When a page is rendered, the web UI shows all Hub contributions that target the selected hub group. Hub groups target a hub group collection, which defines a set of hub groups that show up in a given navigational area, for example, project-level admin pages.
-- Menus can be targeted by contributions of different types: action, hyperlink-action, and action-provider. Actions and hyperlink-actions provide single menu item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these types) that target that specific menu contribution.  
+- Different types of contributions can target menus: action, hyperlink-action, and action-provider. Actions and hyperlink-actions provide single menu item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these types) that target that specific menu contribution.  
 
 ### Adding a hub icon
 
@@ -621,7 +620,7 @@ The Marketplace only supports badges from the following trusted services:
 > [!NOTE]
 > Replace "vsmarketplacebadge.apphb.com" with "vsmarketplacebadges.dev".
 
-If you want to show a badge from another service, contact *vsmarketplace@microsoft.com*.
+To show a badge from another service, contact *vsmarketplace@microsoft.com*.
 
 <a name="example"></a>
 
