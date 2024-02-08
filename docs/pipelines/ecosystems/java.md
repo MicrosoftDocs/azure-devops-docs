@@ -76,7 +76,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ::: moniker-end
 
-::: moniker range="< azure-devops>"
+::: moniker range="< azure-devops"
 
 1. Go to your collection and select your project.
 
@@ -144,7 +144,7 @@ You can build your Java app with Maven, Gradle, Ant, or a script. The following 
 
 ### Maven
 
-With your Maven build, the following tasks is added to your `azure-pipelines.yml` file. Replace the values to match your project. For more information about the task options, see the [Maven task](/azure/devops/pipelines/tasks/reference/maven-v3).
+With your Maven build, the following tasks are added to your `azure-pipelines.yml` file. Replace the values to match your project. For more information about the task options, see the [Maven task](/azure/devops/pipelines/tasks/reference/maven-v3).
 
 ```yaml
 steps:
