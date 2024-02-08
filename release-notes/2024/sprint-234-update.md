@@ -1,11 +1,11 @@
 ---
-title: Workload identity federation for AzureRM service connections is now generally available
+title: General availability of Workload identity federation for Azure Resource Manager service connections 
 author: ckanyika
 ms.author: ckanyika
 ms.date: 2/8/2024
-description: Workload identity federation for AzureRM service connections is now generally available
+description: General availability of Workload identity federation for Azure Resource Manager service connections 
 ---
-# Workload identity federation for Azure Resource Manager service connections is now generally available
+# General availability of Workload identity federation for Azure Resource Manager service connections 
 
 We’re excited to announce that Workload identity federation is now generally available in Azure Pipelines!
 You can enjoy a streamlined experience without the need to manage secrets and certificates in Azure service connections.
