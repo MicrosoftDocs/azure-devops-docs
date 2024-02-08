@@ -17,7 +17,7 @@ ms.date: 09/13/2021
 
 Integrate your app with Azure DevOps using the REST APIs provided in this article.
 
-The APIs follow a common pattern, like the following example:
+The APIs follow a common pattern, like the following example.
 
 ```no-highlight
 VERB https://{instance}/{collection}/{team-project}/_apis/{area}/{resource}?api-version={version}
@@ -28,26 +28,25 @@ VERB https://{instance}/{collection}/{team-project}/_apis/{area}/{resource}?api-
 
 ## Azure DevOps Services
 
-For Azure DevOps Services, `instance` is `dev.azure.com/{organization}` and `collection` is `DefaultCollection`,
-so the pattern looks like the following example:
+For Azure DevOps Services, `instance` is `dev.azure.com/{organization}` and `collection` is `DefaultCollection`, so the pattern looks like the following example.
 
 ```no-highlight
 VERB https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version={version}
 ```
 
-For example, here's how to get a list of projects in an organization.
+The following example shows how to get a list of projects in an organization.
 
 ```dos
 curl -u {username}:{personalaccesstoken} https://dev.azure.com/{organization}/_apis/projects?api-version=2.0
 ```
 
-If you wish to provide the personal access token (PAT) through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
+If you want to provide the personal access token (PAT) through an HTTP header, you must first convert it to a Base64 string. The following example shows how to convert to Base64 using C#.  The resulting string can then be provided as an HTTP header in the format.
 
 ```
 Authorization: Basic BASE64PATSTRING
 ```
 
-Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
+The following example shows C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
 
 ```cs
 public static async void GetProjects()
@@ -82,9 +81,8 @@ public static async void GetProjects()
 }
 ```
 <br />
-If you don't have an organization, you can <a href="https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/" data-raw-source="[set one up for free](https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/)">set one up for free</a>.
 
-Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are various authentication mechanisms available for Azure DevOps Services including Microsoft Authentication Library (MSAL), OAuth, and Session Tokens.  For more information, see [Authentication guidance](../get-started/authentication/authentication-guidance.md), to help you determine which one is best suited for your scenario.
+Most of our samples use PATs, as they're a compact example for authenticating with the service.  However, there are various authentication mechanisms available for Azure DevOps Services including Microsoft Authentication Library (MSAL), OAuth, and Session Tokens.  For more information, see [Authentication guidance](../get-started/authentication/authentication-guidance.md), to help you determine which one is best suited for your scenario.
 
 ## Azure DevOps Server
 
@@ -253,15 +251,14 @@ Azure DevOps REST APIs are versioned to ensure applications and services continu
 
 ### Guidelines
 
-* API version **must** be specified with every request.
-* API versions are in the format {major}.{minor}-{stage}.{resource-version} - For example, ```1.0```, ```1.1```, ```1.2-preview```, ```2.0```.
-* While an API is in preview, you can specify a precise version of a particular revision of the API when needed (for example, ```1.0-preview.1```, ```1.0-preview.2```)
-* Once an API is released (1.0, for example), its preview version (1.0-preview) is deprecated and can be deactivated after 12 weeks.
-* Now, you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify ```-preview``` version get rejected.
+* Specify the API version with every request (**required**).
+* Format API versions as follows: {major}.{minor}-{stage}.{resource-version}. For example, ```1.0```, ```1.1```, ```1.2-preview```, ```2.0```.
+* Specify a particular revision of the API when it's in preview, by using the following version format: ```1.0-preview.1```, ```1.0-preview.2```. Once an API is released (1.0, for example), its preview version (1.0-preview) is deprecated and can be deactivated after 12 weeks.
+* Upgrade to the released version of the API. Once a preview API is deactivated, requests that specify ```-preview``` version get rejected.
 
 ### Usage
 
-API version can be specified either in the header of the HTTP request or as a URL query parameter:
+Specify the API version in the header of the HTTP request or as a URL query parameter.
 
 HTTP request header:
 

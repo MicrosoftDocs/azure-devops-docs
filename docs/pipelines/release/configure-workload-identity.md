@@ -1,6 +1,6 @@
 ---
 title: 'Manually configure Azure Resource Manager workload identity service connections'
-ms.custom: seodec18, devx-track-arm-template, arm2024
+ms.custom: devx-track-arm-template, arm2024
 description: How to manually configure workload identity service connections in Azure Pipelines
 ms.topic: conceptual
 ms.author: jukullam
@@ -17,8 +17,6 @@ When you [troubleshoot an Azure Resource Manager workload identity service conne
 There are two options for authentication: managed identity and using a service principal. The advantage of the managed identity option is that you can use it when you don't have permission to create service principals or you are using a different Azure Microsoft Entra tenant than your Azure DevOps user. 
 
 ## Workload identity with managed identity
-
-[!INCLUDE [workload-identity-preview](includes/workload-identity-preview.md)]
 
 You may need to manually create a managed identity with federated credentials and grant appropriate permissions. You can also use the REST API for this process.    
 
@@ -106,8 +104,6 @@ You may need to manually create a managed identity with federated credentials an
 
 
 ## Workload identity with a service principal
-
-[!INCLUDE [workload-identity-preview](includes/workload-identity-preview.md)]
 
 You may need to manually create a service principal with federated credentials and grant appropriate permissions. You can also use the REST API for this process.    
 

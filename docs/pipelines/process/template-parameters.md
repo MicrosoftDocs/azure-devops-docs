@@ -1,6 +1,5 @@
 ---
 title: Parameters and templateContext
-ms.custom: seodec18
 description: How to use parameters in templates
 ms.topic: conceptual
 ms.date: 06/30/2023

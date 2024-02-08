@@ -19,6 +19,10 @@ Head over to the feature list below to learn move about these features.
 
 [!INCLUDE [sprint-228-update-links](includes/general/sprint-228-update-links.md)]
 
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-228-update-links](includes/ghazdo/sprint-228-update-links.md)]
+
 ### Azure Boards
 
 [!INCLUDE [sprint-228-update-links](includes/boards/sprint-228-update-links.md)]
@@ -30,6 +34,10 @@ Head over to the feature list below to learn move about these features.
 ## General
 
 [!INCLUDE [sprint-228-update](includes/general/sprint-228-update.md)]
+
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-228-update](includes/ghazdo/sprint-228-update.md)]
 
 ## Azure Boards
 
