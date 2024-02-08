@@ -1,17 +1,19 @@
 ---
-title: Add link to GitHub commit or pull request (preview)
+title: Workload identity federation for AzureRM service connections is now generally available
 author: ckanyika
 ms.author: ckanyika
 ms.date: 2/8/2024
-description: Add link to GitHub commit or pull request (preview)
+description: Workload identity federation for AzureRM service connections is now generally available
 ---
-# Add link to GitHub commit or pull request (preview)
+# Workload identity federation for AzureRM service connections is now generally available
 
-With this update, we introduce improvements to development workflows and security enhancements. In Azure Boards, we have expanded our GitHub integration to enhance your experience. Now, you can easily search and link directly to a GitHub pull request or commit without needing to switch between multiple windows or rely on copy/paste. Simply select the repository of interest and drill down to find and link to the specific pull request or commit, streamlining your development process further.
+We’re excited to announce that Workload Identity Federation is now generally available in Azure Pipelines!
 
-In Azure Pipelines, we introduce sequencing in Approval and Checks, as well as a new feature for deferred approvals for YAML pipelines.
+You can now enjoy a hassle-free experience without the need to manage secrets and certificates in Azure service connections.
 
-Check out the release notes for details.
+With this update, we preview a new feature as part of our enhanced GitHub integration with Azure Boards. You can now link directly to GitHub pull requests or commits. No more switching between windows or copy/pasting. Simply select the repository you want, find the pull request or commit you need, and link it!
+
+Check out the release notes to learn more about these features.
 
 ### General
 
