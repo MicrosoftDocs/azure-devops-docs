@@ -24,14 +24,13 @@ If you're working on an Android project, see [Build, test, and deploy Android ap
 
 ## Prerequisites
 
-You must have the following items in Azure DevOps:
+To run the following exmaple, you must have the following items:
 
 ::: moniker range=">= azure-devops"
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md).
 * An Azure DevOps project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now. 
-* An ability to run pipelines on Microsoft-hosted agents. 
 
 ::: moniker-end
 
@@ -39,7 +38,7 @@ You must have the following items in Azure DevOps:
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * Access to an Azure DevOps Server collection.
-* The ability to run pipelines on self-hosted agents. 
+* The ability to run Azure DevOps pipelines on Azure DevOps self-hosted agents. 
 * An Azure DevOps project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
 
 ::: moniker-end
@@ -125,7 +124,7 @@ pool:
 
 See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
 
-As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save more time if you have a large repo or you can run incremental builds.
+As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save more time if you have a large repo or you run incremental builds.
 
 ::: moniker-end
 
@@ -134,6 +133,14 @@ As an alternative to using Microsoft-hosted agents, you can set up [self-hosted 
 Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure that you have Java and the tools necessary to build with your chosen method installed on the agent's host.
 
 You can select your agent pool and the agent capabilities in the **Agent pool** and **Agent Specification** sections of the **Options** tab in the pipeline editor.
+
+For example to specify the agent pool and an agent with the Maven capability, add the following snippet to your `azure-pipelines.yml` file.
+
+```yaml
+pool: 
+  name: MyPool
+  demands: maven
+```
 
 ::: moniker-end
 
@@ -168,13 +175,11 @@ Adjust the `mavenPomFile` value if your `pom.xml` file isn't in the root of the 
 
 #### Customize Maven goals
 
-Set the **goals** value to a space-separated list of goals for Maven to execute, such as `clean package`.
-
-For details about common Java phases and goals, see [Apache's Maven documentation](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html).
+Set the **goals** value to a space-separated list of goals for Maven to execute, such as `clean package`. For details about common Java phases and goals, see [Apache's Maven documentation](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html).
 
 ### Gradle
 
-With the Gradle build, the following snippet is added to your `azure-pipelines.yml` file. For more information about these options, see the [Gradle](/azure/devops/pipelines/tasks/reference/gradle-v3) task.
+With the Gradle build, the following task is added to your `azure-pipelines.yml` file. For more information about these options, see the [Gradle](/azure/devops/pipelines/tasks/reference/gradle-v3) task.
 
 ```yaml
 steps:
@@ -193,7 +198,7 @@ steps:
 
 #### Gradle wrapper
 
-You need to have a `gradlew` file in your repo. If you don't have one, you can generate it by running `gradle wrapper` in your project's root directory. For information about creating a Gradle wrapper, see the [[Gradle](/azure/devops/pipelines/tasks/reference/gradle-v3#how-do-i-generate-a-wrapper-from-my-gradle-project).
+You need to have a `gradlew` file in your repo. If you don't have one, you can generate it by running `gradle wrapper` in your project's root directory. For information about creating a Gradle wrapper, see the [Gradle](/azure/devops/pipelines/tasks/reference/gradle-v3#how-do-i-generate-a-wrapper-from-my-gradle-project).
 
 #### Choose the version of Gradle
 
@@ -208,13 +213,11 @@ Adjust the `gradleWrapperFile` value if your `gradlew` file isn't in the root of
 
 #### Adjust Gradle tasks
 
-Adjust the **tasks** value for the tasks that Gradle should execute, such as `build` or `check`.
-
-For more information about common Java Plugin tasks for Gradle, see [Gradle's documentation](https://docs.gradle.org/current/userguide/java_plugin.html#sec:java_tasks).
+Adjust the **tasks** value for the tasks that Gradle should execute, such as `build` or `check`. For more information about common Java Plugin tasks for Gradle, see [Gradle's documentation](https://docs.gradle.org/current/userguide/java_plugin.html#sec:java_tasks).
 
 ### Ant
 
-With Ant build, add the following task to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file to match your project configuration. For more information about these options, see the [Ant](/azure/devops/pipelines/tasks/reference/ant-v1) task. If using the sample repo, you need to provide a `build.xml` file in your repo.
+With Ant build, add the following task to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file, to match your project configuration. For more information about these options, see the [Ant](/azure/devops/pipelines/tasks/reference/ant-v1) task. If using the sample repo, you need to provide a `build.xml` file in your repo.
 
 ```yaml
 steps:
