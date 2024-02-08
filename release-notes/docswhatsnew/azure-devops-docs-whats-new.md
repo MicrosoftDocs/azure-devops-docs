@@ -21,7 +21,7 @@ Welcome to what's new in the Azure DevOps docs from January 1, 2024 through Janu
 ### Updated articles
 
 - [Define features and epics, organize your backlog](/azure/devops/boards/backlogs/define-features-epics)
-- [3. Determine and set sprint capacity in Azure Boards](/azure/devops/boards/sprints/set-capacity)
+- [Determine and set sprint capacity in Azure Boards](/azure/devops/boards/sprints/set-capacity)
 - [About work items and work item types](/azure/devops/boards/work-items/about-work-items)
 - [Azure Boards FAQs](/azure/devops/boards/faqs)
 
