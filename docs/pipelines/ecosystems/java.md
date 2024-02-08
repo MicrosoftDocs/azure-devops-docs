@@ -24,7 +24,7 @@ If you're working on an Android project, see [Build, test, and deploy Android ap
 
 ## Prerequisites
 
-To run the following exmaple, you must have the following items:
+To run the following example, you must have:
 
 ::: moniker range=">= azure-devops"
 
