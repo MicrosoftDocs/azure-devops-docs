@@ -1,12 +1,13 @@
 ---
-title: TBD
+title: Add link to GitHub commit or pull request (preview)
 author: ckanyika
 ms.author: ckanyika
 ms.date: 2/8/2024
-description: TBD
+description: Add link to GitHub commit or pull request (preview)
 ---
-# TBD
+# Add link to GitHub commit or pull request (preview)
 
+With this update, we are excited to introduce improvements to development workflows and security enhancements. In Boards, we have expanded our GitHub integration to enhance your experience. Now, you can easily search and link directly to a GitHub pull request or commit without needing to switch between multiple windows or rely on copy/paste. Simply select the repository of interest and drill down to find and link to the specific pull request or commit, streamlining your development process further.
 
 Check out the release notes for details.
 
