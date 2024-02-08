@@ -32,9 +32,8 @@ You must have the following items in Azure DevOps:
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * Access to an Azure DevOps Server collection.
-* An ability to run pipelines on self-hosted agents. 
-- A project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
-- A pipeline. If you don't have one, [Create a pipeline](#create-a-pipeline) now.
+* An ability to run pipelines on self-hosted agents. Java and the tools necessary to build using your chosen method must be installed on the agent's host.
+* A project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
 
 ::: moniker-end
 
@@ -61,7 +60,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 1. When you see the **Configure** tab, select **Maven**, **Gradle**, or **Ant** depending on how you want to [build your code](#build-your-code).
 
-1. The `azure-pipeline.yml` file pipeline is opened in an editor where you can view and edit your pipeline. When you're ready, select **Save and run**.
+1. The `azure-pipelines.yml` file pipeline is opened in an editor where you can view and edit your pipeline. When you're ready, select **Save and run**.
 
 1. To commit the `azure-pipelines.yml` file to your repo, select **Save and run** again.
 
@@ -87,7 +86,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
     You need to add the appropriate configuration files to your repo if they aren't already there. For example, if you choose Maven, you need to add a `pom.xml` file to your repo.
 
-1. The `azure-pipeline.yml` file pipeline is opened in an editor where you can view and edit your pipeline. When you're ready, select **Save and run**.
+1. The `azure-pipelines.yml` file pipeline is opened in an editor where you can view and edit your pipeline. When you're ready, select **Save and run**.
 
 1. To commit the `azure-pipelines.yml` file to your repo, select **Save and run** again.
 
@@ -105,7 +104,7 @@ Read further to learn some of the more common ways to customize your pipeline.
 
 You can use Azure Pipelines to build Java apps without needing to set up any infrastructure of your own. You can build on Windows, Linux, or macOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java preinstalled. To know which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
-Update the following snippet in your `azure-pipelines.yml` file to select the appropriate image.
+Modify the following section in your `azure-pipelines.yml` file to select the appropriate image.
 
 ```yaml
 pool:
@@ -122,6 +121,8 @@ As an alternative to using Microsoft-hosted agents, you can set up [self-hosted 
 
 Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure that you have Java and the tools necessary to build with your chosen method installed on the agent's host.
 
+You can select your agent pool and the agent capabilities in the **Agent pool** and **Agent Specification** sections of the **Options** tab in the pipeline editor.
+
 ::: moniker-end
 
 
@@ -131,7 +132,7 @@ You can build your Java app with Maven, Gradle, Ant, or a script. The following 
 
 ### Maven
 
-With your Maven build, the following snippet is added to your `azure-pipelines.yml` file. Replace the values to match your project.  For more information about the task options, see the [Maven task](/azure/devops/pipelines/tasks/reference/maven-v3).
+With your Maven build, the following tasks is added to your `azure-pipelines.yml` file. Replace the values to match your project.  For more information about the task options, see the [Maven task](/azure/devops/pipelines/tasks/reference/maven-v3).
 
 ```yaml
 steps:
@@ -180,7 +181,7 @@ steps:
 
 #### Gradle wrapper
 
-You need to have a `gradlew` file in your repo. If you don't have one, you can generate it by running `gradle wrapper` in your project's root directory. The `gradlew` file is a shell script that downloads and runs the correct version of Gradle for your project.
+You need to have a `gradlew` file in your repo. If you don't have one, you can generate it by running `gradle wrapper` in your project's root directory. The `gradlew` file is a shell script that downloads and runs the correct version of Gradle for your project. For informatioon about creating a Gradle wrapper, see the [[Gradle](/azure/devops/pipelines/tasks/reference/gradle-v3#how-do-i-generate-a-wrapper-from-my-gradle-project).
 
 #### Choose the version of Gradle
 
@@ -201,7 +202,7 @@ For more information about common Java Plugin tasks for Gradle, see [Gradle's do
 
 ### Ant
 
-With Ant build, add the following snippet to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file to match your project configuration. For more information about these options, see the [Ant](/azure/devops/pipelines/tasks/reference/ant-v1) task.  You need to provide a `build.xml` file in your repo.
+With Ant build, add the following task to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file to match your project configuration. For more information about these options, see the [Ant](/azure/devops/pipelines/tasks/reference/ant-v1) task.  If using the sample repo, you need to provide a `build.xml` file in your repo.
 
 ```yaml
 steps:
@@ -234,7 +235,7 @@ steps:
 
 #### Script file
 
-This snippet runs a script file that is in your repo. For details, see the [Shell Script](/azure/devops/pipelines/tasks/reference/shell-script-v2), [Batch script](/azure/devops/pipelines/tasks/reference/batch-script-v1), or [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2) task.
+This task runs a script file that is in your repo. For details, see the [Shell Script](/azure/devops/pipelines/tasks/reference/shell-script-v2), [Batch script](/azure/devops/pipelines/tasks/reference/batch-script-v1), or [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2) task.
 
 ```YAML
 steps:
