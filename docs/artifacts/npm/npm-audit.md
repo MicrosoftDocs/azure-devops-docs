@@ -24,8 +24,6 @@ Addressing these vulnerabilities is crucial for preventing potential problems li
 
 If you want to fix the detected vulnerabilities, you can run `npm audit fix`, but you must be authenticated with your feed in order to do so. This command updates insecure package versions to the latest secure releases available.
 
-When npm audit fix is executed, not only will it update the local project’s package.json and package-lock.json, but it will also synchronize these changes with the associated Azure Artifacts feed. The updated, secure versions of the packages will be reflected in your Azure Artifacts feed automatically.
-
 When you run npm audit fix, it not only updates the local project's *package.json* and *package-lock.json* but also syncs these changes with the associated Azure Artifacts feed. The newly secured versions of the packages will be automatically available in your feed.
 
 This synchronization ensures that other projects sharing the same feed will also benefit from these updates. It helps maintain a consistent and secure set of package versions across all projects.
