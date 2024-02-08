@@ -5,6 +5,111 @@ ms.date: 2/8/2024
 ms.topic: include
 ---
 
+### Workload identity federation for AzureRM service connections is now generally available
+
+In September, we [announced](https://devblogs.microsoft.com/devops/public-preview-of-workload-identity-federation-for-azure-pipelines/) the ability to configure Azure service connections without using a secret. Since then, many customers have adopted this feature and we are now ready to announce this is generally available. We are excited to announce this capability is now generally available.
+
+If you are not using Workload identity federation yet, you can take advantage of worry-free Azure service connections that do not have expiring secrets in the following ways:
+
+To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) in the Azure service connection creation experience:
+
+<center>
+  <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/create-service-connection2-1.png" width="457" />
+</center>
+
+To convert a previously created Azure service connection, select the "Convert" action after selecting the connection:
+
+<center>
+  <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/convert-service-connection.png" width="870" />
+</center>
+
+To convert multiple service connections you can use automation e.g. this PowerShell script:
+   
+```powershell
+#!/usr/bin/env pwsh
+<# 
+.SYNOPSIS 
+    Convert multiple Azure Resource Manager service connection(s) to use Workload identity federation
+
+.LINK
+    https://aka.ms/azdo-rm-workload-identity-conversion
+
+.EXAMPLE
+    ./convert_azurerm_service_connection_to_oidc_simple.ps1 -Project <project> -OrganizationUrl https://dev.azure.com/<organization>
+#> 
+#Requires -Version 7.3
+
+param ( 
+    [parameter(Mandatory=$true,HelpMessage="Name of the Azure DevOps Project")]
+    [string]
+    [ValidateNotNullOrEmpty()]
+    $Project,
+
+    [parameter(Mandatory=$true,HelpMessage="Url of the Azure DevOps Organization")]
+    [uri]
+    [ValidateNotNullOrEmpty()]
+    $OrganizationUrl
+) 
+$apiVersion = "7.1"
+$PSNativeCommandArgumentPassing = "Standard" 
+
+#-----------------------------------------------------------
+# Log in to Azure
+$azdoResource = "499b84ac-1321-427f-aa17-267ca6975798"
+az login --allow-no-subscriptions --scope ${azdoResource}/.default
+$OrganizationUrl = $OrganizationUrl.ToString().Trim('/')
+
+#-----------------------------------------------------------
+# Retrieve the service connection
+$getApiUrl = "${OrganizationUrl}/${Project}/_apis/serviceendpoint/endpoints?authSchemes=ServicePrincipal&type=azurerm&includeFailed=false&includeDetails=true&api-version=${apiVersion}"
+az rest --resource $azdoResource -u "${getApiUrl} " -m GET --query "sort_by(value[?authorization.scheme=='ServicePrincipal' && data.creationMode=='Automatic' && !(isShared && serviceEndpointProjectReferences[0].projectReference.name!='${Project}')],&name)" -o json `
+        | Tee-Object -Variable rawResponse | ConvertFrom-Json | Tee-Object -Variable serviceEndpoints | Format-List | Out-String | Write-Debug
+if (!$serviceEndpoints -or ($serviceEndpoints.count-eq 0)) {
+    Write-Warning "No convertible service connections found"
+    exit 1
+}
+
+foreach ($serviceEndpoint in $serviceEndpoints) {
+    # Prompt user to confirm conversion
+    $choices = @(
+        [System.Management.Automation.Host.ChoiceDescription]::new("&Convert", "Converting service connection '$($serviceEndpoint.name)'...")
+        [System.Management.Automation.Host.ChoiceDescription]::new("&Skip", "Skipping service connection '$($serviceEndpoint.name)'...")
+        [System.Management.Automation.Host.ChoiceDescription]::new("&Exit", "Exit script")
+    )
+    $prompt = $serviceEndpoint.isShared ? "Convert shared service connection '$($serviceEndpoint.name)'?" : "Convert service connection '$($serviceEndpoint.name)'?"
+    $decision = $Host.UI.PromptForChoice([string]::Empty, $prompt, $choices, $serviceEndpoint.isShared ? 1 : 0)
+
+    if ($decision -eq 0) {
+
+        Write-Host "$($choices[$decision].HelpMessage)"
+    } elseif ($decision -eq 1) {
+        Write-Host "$($PSStyle.Formatting.Warning)$($choices[$decision].HelpMessage)$($PSStyle.Reset)"
+        continue 
+    } elseif ($decision -ge 2) {
+        Write-Host "$($PSStyle.Formatting.Warning)$($choices[$decision].HelpMessage)$($PSStyle.Reset)"
+        exit 
+    }
+
+    # Prepare request body
+    $serviceEndpoint.authorization.scheme = "WorkloadIdentityFederation"
+    $serviceEndpoint.data.PSObject.Properties.Remove('revertSchemeDeadline')
+    $serviceEndpoint | ConvertTo-Json -Depth 4 | Write-Debug
+    $serviceEndpoint | ConvertTo-Json -Depth 4 -Compress | Set-Variable serviceEndpointRequest
+    $putApiUrl = "${OrganizationUrl}/${Project}/_apis/serviceendpoint/endpoints/$($serviceEndpoint.id)?operation=ConvertAuthenticationScheme&api-version=${apiVersion}"
+    # Convert service connection
+    az rest -u "${putApiUrl} " -m PUT -b $serviceEndpointRequest --headers content-type=application/json --resource $azdoResource -o json `
+            | ConvertFrom-Json | Set-Variable updatedServiceEndpoint
+    
+    $updatedServiceEndpoint | ConvertTo-Json -Depth 4 | Write-Debug
+    if (!$updatedServiceEndpoint) {
+        Write-Debug "Empty response"
+        Write-Error "Failed to convert service connection '$($serviceEndpoint.name)'"
+        exit 1
+    }
+    Write-Host "Successfully converted service connection '$($serviceEndpoint.name)'"
+}
+```
+
 ### The Pipelines agent shows resource utilization issues more prominently
 
 [Last October](/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization) we added the ability to track memory & disk space usage by the Pipelines agent.
