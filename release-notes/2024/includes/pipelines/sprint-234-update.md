@@ -197,7 +197,7 @@ Check categories run one by one and if one fails, the rest of the checks are not
 > [!div class="mx-imgBorder"]
 > ![Screenshot of checks for deploy fail.](../../media/234-pipelines-13.png "Screenshot of checks for deploy fail")
 
-We added predynamic checks and post-dynamic checks Approvals, so you can sign off on a deployment after all dynamic checks ran (post checks Approvals) or do a manual validation before proceeding with dynamic checks (predynamic checks Approvals).
+You can sign off on a deployment after all dynamic checks ran, using a post-dynamic checks Approval, or do a manual validation before proceeding with dynamic checks, using a pre-dynamic checks Approval.
 
 ### Validate and Save by default when editing YAML pipelines
 
