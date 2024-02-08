@@ -9,7 +9,7 @@ ms.topic: include
 
 [Last October](/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization) we added the ability to track memory & disk space usage by the Pipelines agent.
 
-To make customers aware they may have resource constraints such as memory or dik space limitations on their agent, we have made resource constraints more visible:
+To make customers aware they may have resource constraints such as memory or disk space limitations on their agent, we have made resource constraints more visible:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Limited memory and disk space warning.](../../media/234-pipelines-18.png "Screenshot of Limited memory and disk space warning")
@@ -20,7 +20,7 @@ If you see any of the above messages, this may be caused by a task using more re
 
 > "We stopped hearing from the agent"
 
-In such cases, please enable [verbose logs](https://learn.microsoft.com/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops#configure-verbose-logs) to get more finer grained resource utilization messages and track where your agent ran out of resources. If you are using a Self-hosted agent, make sure your agent has adequate resources.
+In such cases, please enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops#configure-verbose-logs) to get more finer grained resource utilization messages and track where your agent ran out of resources. If you are using a Self-hosted agent, make sure your agent has adequate resources.
 
 ### Out-of-band installation of Node 6 task runner
 
