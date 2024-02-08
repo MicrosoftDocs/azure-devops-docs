@@ -7,14 +7,14 @@ ms.topic: include
 
 ### The Pipelines agent shows resource utilization issues more prominently
 
-[Last October](https://learn.microsoft.com/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization) we added the ability to track memory & disk space usage by the Pipelines agent.
+[Last October](/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization) we added the ability to track memory & disk space usage by the Pipelines agent.
 
 To make customers aware they may have resource constraints such as memory or dik space limitations on their agent, we have made resource constraints more visible:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Limited memory and disk space warning.](../../media/234-pipelines-18.png "Screenshot of Limited memory and disk space warning")
 
-[](https://learn.microsoft.com/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization)
+[](/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization)
 
 If you see any of the above messages, this may be caused by a task using more resources than the agent is dimensioned for which may result in the agent not being responsive and failing a pipeline job:
 
