@@ -11,3 +11,4 @@ Starting February 16, 2024, Rust Crates support will become a generally availabl
 
 ### Azure Artifacts support for npm audit 
 
+Azure Artifacts now supports `npm audit` and `npm audit` fix commands. This feature enables users to analyze and fix their project's vulnerabilities by automatically updating insecure package versions.

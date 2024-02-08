@@ -7,7 +7,7 @@ ms.topic: include
 
 ### New Boards Hub Improvements
 
-In the current release, we have introduced a range of enhancements to the New Boards Hub preview, focusing on accessibility and page reflow.
+With this release, we have introduce a range of enhancements to the New Boards Hub preview, focusing on accessibility and page reflow.
 
 Here's an example of the page reflow changes that are adaptive up to 400% zoom.
 
@@ -18,7 +18,7 @@ Furthermore, we have rolled out performance enhancements across the work item fo
 
 ### Add link to GitHub commit or pull request (preview)
 
-You can choose from two ways to connect your work item with a GitHub pull request or commit. You can either use the AB# syntax in the pull request, or you can link it directly from the work item. Today, the process involves copying the URL of the GitHub pull request and pasting it when adding a link. This requires opening multiple windows and switching between GitHub and Azure DevOps.
+You have two options to connect your work item with a GitHub pull request or commit. You can either use the AB# syntax in the pull request, or you can link it directly from the work item. Today, the process involves copying the URL of the GitHub pull request and pasting it when adding a link. This requires opening multiple windows and switching between GitHub and Azure DevOps.
 
 In this sprint, we're excited to announce an enhanced experience by enabling search functionality when linking to a GitHub pull request or commit. Search and select the desired repository and drill down to find and link to the specific pull request or commit. No more need for multiple window changes and copy/paste (although you still have that option).
 
@@ -28,7 +28,7 @@ In this sprint, we're excited to announce an enhanced experience by enabling sea
 > [!NOTE] 
 >This feature is only available in the [New Boards Hub preview](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview).
 
-If you're interested in getting access to this feature, send us an [email directly](mailto:dahellem@microsoft.com) along with your organization name (dev.azure.com/{organization name}).
+If you're interested in getting access to this feature, send us an [email directly](mailto:dahellem@microsoft.com) along with your organization name ***(dev.azure.com/{organization name})***.
 
 ### Development and Deployment Controls
 
