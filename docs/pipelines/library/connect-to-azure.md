@@ -32,8 +32,6 @@ There are multiple options for connecting to Azure with Azure Resource Manager s
 
 ## Create an Azure Resource Manager service connection using workload identity federation 
 
-[!INCLUDE [workload-identity-preview](../release/includes/workload-identity-preview.md)]
-
 [Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect to authenticate with Microsoft Entra protected resources without needing to manage secrets. 
 
 We recommend this approach if:
