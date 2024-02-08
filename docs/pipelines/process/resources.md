@@ -1,6 +1,5 @@
 ---
 title: Define YAML resources for Azure Pipelines
-ms.custom: seodec18
 description: Learn how to define YAML resources that can be consumed anywhere in your pipelines.
 ms.topic: how-to
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
@@ -606,6 +605,9 @@ resources:          # types: pipelines | repositories | containers | builds | pa
 
 > [!NOTE]
 > The syntax that's used to enable container triggers for all image tags (`enabled: 'true'`) is different from the syntax that's used for other resource triggers. Pay close attention to use the correct syntax for a specific resource.
+
+> [!NOTE]
+> Service connections that use [Workload identity federation](/azure/devops/pipelines/library/connect-to-azure#create-an-azure-resource-manager-service-connection-using-workload-identity-federation) are not supported in `azureSubscription`.
 
 ## [Example](#tab/example)
 

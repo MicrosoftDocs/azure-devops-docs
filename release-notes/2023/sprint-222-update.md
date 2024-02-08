@@ -15,6 +15,10 @@ Check out the release notes to learn how you can sign up for the public preview.
 
 [!INCLUDE [sprint-222-update-links](includes/general/sprint-222-update-links.md)]
 
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-222-update-links](includes/ghazdo/sprint-222-update-links.md)]
+
 ### Azure Boards
 
 [!INCLUDE [sprint-222-update-links](includes/boards/sprint-222-update-links.md)]
@@ -26,6 +30,9 @@ Check out the release notes to learn how you can sign up for the public preview.
 
 ## General
 [!INCLUDE [sprint-222-update](includes/general/sprint-222-update.md)]
+
+## GitHub Advanced Security for Azure DevOps
+[!INCLUDE [sprint-222-update](includes/ghazdo/sprint-222-update.md)]
 
 ## Azure Boards
 

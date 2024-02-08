@@ -1,6 +1,5 @@
 ---
 title: Control releases with deployment gates
-ms.custom: seodec18
 description: Understand deployment gates in Azure Pipelines
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.topic: conceptual
