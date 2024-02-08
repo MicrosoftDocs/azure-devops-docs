@@ -110,6 +110,8 @@ foreach ($serviceEndpoint in $serviceEndpoints) {
 }
 ```
 
+For more information, please visit our [documentation](https://aka.ms/azdo-rm-workload-identity).
+
 ### The Pipelines agent shows resource utilization issues more prominently
 
 [Last October](/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization) we added the ability to track memory & disk space usage by the Pipelines agent.
