@@ -18,8 +18,6 @@ There are two options for authentication: managed identity and using a service p
 
 ## Workload identity with managed identity
 
-[!INCLUDE [workload-identity-preview](includes/workload-identity-preview.md)]
-
 You may need to manually create a managed identity with federated credentials and grant appropriate permissions. You can also use the REST API for this process.    
 
 ### Create a managed identity
@@ -106,8 +104,6 @@ You may need to manually create a managed identity with federated credentials an
 
 
 ## Workload identity with a service principal
-
-[!INCLUDE [workload-identity-preview](includes/workload-identity-preview.md)]
 
 You may need to manually create a service principal with federated credentials and grant appropriate permissions. You can also use the REST API for this process.    
 
