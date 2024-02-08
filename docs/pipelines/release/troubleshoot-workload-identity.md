@@ -15,8 +15,6 @@ monikerRange: '>= azure-devops'
 
 Get help debugging common issues with workload identity service connections and learn how to manually create a service connection if necessary.
 
-[!INCLUDE [workload-identity-preview](includes/workload-identity-preview.md)]
-
 ## Troubleshooting checklist
 
 ### Review pipeline tasks
