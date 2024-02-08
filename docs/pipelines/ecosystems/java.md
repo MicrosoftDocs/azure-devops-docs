@@ -5,7 +5,7 @@ ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
 ms.reviewer: dastahel
 ms.custom: freshness-fy22q2, devdivchpfy22, devx-track-extended-java
 ms.topic: quickstart
-ms.date: 02/14/2024
+ms.date: 02/08/2024
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -38,7 +38,7 @@ To run the following example, you must have:
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * Access to an Azure DevOps Server collection.
-* The ability to run Azure DevOps pipelines on Azure DevOps self-hosted agents. 
+* The ability to run Azure Pipelines on Azure DevOps self-hosted agents. 
 * An Azure DevOps project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
 
 ::: moniker-end
@@ -89,7 +89,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
     1. Select **Connect to GitHub Enterprise Server**.
     1. Enter your GitHub Enterprise Server URL.
-    1. Enter your GitHub Enterprise Server personal access token.
+    1. Enter your GitHub Enterprise Server personal access token. If you don't have a personal access token, you can create one in your GitHub Enterprise Server account. For more information, see [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
 1. Select your repository. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
 
