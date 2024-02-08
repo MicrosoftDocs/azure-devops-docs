@@ -5,7 +5,7 @@ ms.date: 2/8/2024
 ms.topic: include
 ---
 
-### Workload identity federation for Azure Resource Manager Service connections is now generally available
+### General availability of Workload identity federation for Azure Resource Manager service connections 
 
 In September, we [announced](https://devblogs.microsoft.com/devops/public-preview-of-workload-identity-federation-for-azure-pipelines/) the ability to configure Azure service connections without using a secret. Since then, many customers have adopted this feature and we're excited to announce this capability is now generally available.
 
