@@ -13,15 +13,15 @@ If you are not using Workload identity federation yet, you can take advantage of
 
 To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) in the Azure service connection creation experience:
 
-<center>
-  <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/create-service-connection2-1.png" width="457" />
-</center>
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Workload identity federation (automatic).](../../media/234-pipelines-19.png "Screenshot of Workload identity federation (automatic)")
+
 
 To convert a previously created Azure service connection, select the "Convert" action after selecting the connection:
 
-<center>
-  <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/09/convert-service-connection.png" width="870" />
-</center>
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Convert action.](../../media/234-pipelines-20.png "Screenshot of Convert action")
+
 
 To convert multiple service connections you can use automation e.g. this PowerShell script:
    
