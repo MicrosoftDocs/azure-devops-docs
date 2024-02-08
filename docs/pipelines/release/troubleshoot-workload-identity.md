@@ -37,9 +37,9 @@ Verify that there are no Microsoft Entra policies in place that block federated 
 
 ### Check the issuer URL for accuracy
 
-If you see a message that there's `no matching federated identity record found`, either the issuer URL or federation subject doesn't match. The correct issuer URL show start with `https://vstoken.dev.azure.com`. 
+If you see a message that there's `no matching federated identity record found`, either the issuer URL or federation subject does not match. The correct issuer URL show start with `https://vstoken.dev.azure.com`. 
 
-You can fix the issuer URL by editing and saving the service connection to update the issuer URL. The issuer needs to be updated manually if Azure DevOps didn't create the identity. For Azure identities, the issuer URL automatically updates.  
+You can fix the issuer URL by editing and saving the service connection to update the issuer URL. The issuer needs to be updated manually if Azure DevOps did not create the identity. For Azure identities, the issuer URL automatically updates.  
 
 
 ## Common issues and causes
@@ -61,16 +61,15 @@ You have two options:
 
 | Message | Plausible issue |
 |---------|-----------------|
-| *cannot request token: Get `?audience=api://AzureADTokenExchange: unsupported protocol scheme`* | Task doesn't support workload identity federation. |
-| *Identity not found* | Task doesn't support workload identity federation. |
-| *Could not fetch access token for Azure* | Task doesn't support workload identity federation. |
-| \<Task\> *only support(s) service principal authorization* | Task doesn't support workload identity federation. |
+| *cannot request token: Get `?audience=api://AzureADTokenExchange: unsupported protocol scheme`* | Task does not support workload identity federation. |
+| *Identity not found* | Task does not support workload identity federation. |
+| *Could not fetch access token for Azure* | Task does not support workload identity federation. |
 | *AADSTS700016: Application with identifier '****' was not found* | The identity used for the service connection no longer exists, it may have been removed independent from the service connection. You will need to create a new service connection. |
 | *AADSTS7000215:  Invalid client secret provided.* | You are using a service connection with a secret that expired. [Convert the service connection to Workload identity federation](https://aka.ms/azdo-rm-workload-identity-conversion) to replace the expired secret with a federation. |
 | *AADSTS700024: Client assertion is not within its valid time range* | This can happen in the following cases:<ul><li> You're using the AzureCLI task with `addSpnToEnvironment: true` to consume the `idToken` environment variable. The `idToken` has expired after 10 minutes.</li><li>Some Azure data plane (non-ARM) operations require a separate bearer token to authenticate. A bearer token is requested with the Azure CLI using `az account get-access-token` or PowerShell Az using `Get-AzAccessToken`. These tokens have a lifetime of 1 hour. Using the token after 1 hour will result in `AADSTS700024`. Some tools and SDKs (e.g. [Azure GO SDK](https://github.com/Azure/azure-sdk-for-go), [Azure Python SDK](/azure/developer/python/sdk/azure-sdk-overview)) use Azure CLI and `az account get-access-token` indirectly to obtain a bearer token. If you have tasks that (directly or indirectly) obtain a bearer token and run longer than 1 hour, use a service connection with a secret instead.</li> |
-| *AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer: `https://app.vstoken.visualstudio.com`.* | The issuer URL isn't correct. The correct issuer URL is `https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. You can fix the issuer URL by editing and resaving a service connection. You need to manually update the issuer if Azure DevOps didn't create your identity. You can find the correct issuer in the edit dialog of the service connection, or in the response (under authorization parameters) when using the REST API. |
+| *AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer: `https://app.vstoken.visualstudio.com`.* | The issuer URL is not correct. The correct issuer URL is `https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. You can fix the issuer URL by editing and resaving a service connection. You need to manually update the issuer if Azure DevOps did not create your identity. You can find the correct issuer in the edit dialog of the service connection, or in the response (under authorization parameters) when using the REST API. |
+| *AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer:  `https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. Assertion Subject: `sc://\<org\>/\<project\>/\<service-connection\>.`* | Either the issuer url or federation subject does not match. The Azure DevOps organization or project has been renamed, or a manually created service connection was renamed without updating the federation subject on the identity. |
 | *AADSTS700211: No matching federated identity record found for presented assertion issuer* | The issuer url and/or federation subject is rejected by an Entra ID policy. |
-| *AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer:  `https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. Assertion Subject: `sc://\<org\>/\<project\>/\<service-connection\>.`* | Either the issuer url or federation subject doesn't match. The Azure DevOps organization or project has been renamed, or a manually created service connection was renamed without updating the federation subject on the identity. |
 | *AADSTS700223* | Workload identity federation has been constrained or disabled on the Microsoft Entra tenant. In these cases it is often possible to use a Managed Identity for the federation instead, see [Workload identity with managed identity](https://aka.ms/azdo-rm-workload-identity-manual). |
 | *Microsoft Entra rejected the token issued by Azure DevOps with error code AADSTS700238* | Workload identity federation has been constrained on the Microsoft Entra tenant. The issuer for your organization (`https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`) is not allowed to use Workload identity federation. Please contact your Entra tenant administrator(s) to allow Workload identity federation for your Azure DevOps organization. |
 |*Failed to obtain the Json Web Token(JWT) using service principal client ID*|Your federation identity credential is misconfigured or the Microsoft Entra tenant blocks OIDC.|
