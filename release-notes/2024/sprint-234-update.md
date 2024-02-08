@@ -9,7 +9,7 @@ description: Add link to GitHub commit or pull request (preview)
 
 With this update, we introduce improvements to development workflows and security enhancements. In Azure Boards, we have expanded our GitHub integration to enhance your experience. Now, you can easily search and link directly to a GitHub pull request or commit without needing to switch between multiple windows or rely on copy/paste. Simply select the repository of interest and drill down to find and link to the specific pull request or commit, streamlining your development process further.
 
-In Azure Pipelines, we introduce sequencing in Approval and Checks, as well as a new feature for deferred approvals for YAML pipelines
+In Azure Pipelines, we introduce sequencing in Approval and Checks, as well as a new feature for deferred approvals for YAML pipelines.
 
 Check out the release notes for details.
 
