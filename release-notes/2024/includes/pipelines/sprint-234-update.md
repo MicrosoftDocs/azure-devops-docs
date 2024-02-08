@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Workload identity federation for AzureRM service connections is now generally available
 
-In September, we [announced](https://devblogs.microsoft.com/devops/public-preview-of-workload-identity-federation-for-azure-pipelines/) the ability to configure Azure service connections without using a secret. Since then, many customers have adopted this feature and we are now ready to announce this is generally available. We are excited to announce this capability is now generally available.
+In September, we [announced](https://devblogs.microsoft.com/devops/public-preview-of-workload-identity-federation-for-azure-pipelines/) the ability to configure Azure service connections without using a secret. Since then, many customers have adopted this feature and we are excited to announce this capability is now generally available.
 
 If you are not using Workload identity federation yet, you can take advantage of worry-free Azure service connections that do not have expiring secrets in the following ways:
 
