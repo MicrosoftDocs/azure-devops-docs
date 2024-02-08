@@ -5,13 +5,13 @@ ms.date: 2/8/2024
 ms.topic: include
 ---
 
-### Workload identity federation for AzureRM service connections is now generally available
+### Workload identity federation for Azure Resource Manager Service connections is now generally available
 
-In September, we [announced](https://devblogs.microsoft.com/devops/public-preview-of-workload-identity-federation-for-azure-pipelines/) the ability to configure Azure service connections without using a secret. Since then, many customers have adopted this feature and we are excited to announce this capability is now generally available.
+In September, we [announced](https://devblogs.microsoft.com/devops/public-preview-of-workload-identity-federation-for-azure-pipelines/) the ability to configure Azure service connections without using a secret. Since then, many customers have adopted this feature and we're excited to announce this capability is now generally available.
 
-If you are not using Workload identity federation yet, you can take advantage of worry-free Azure service connections that do not have expiring secrets in the following ways:
+If you are not using Workload identity federation yet, you can take advantage of worry-free Azure service connections that don't have expiring secrets in the following ways:
 
-To create a new Azure service connection using workload identity federation, simply select Workload identity federation (automatic) in the Azure service connection creation experience:
+To create a new Azure service connection using workload identity federation, select Workload identity federation (automatic) in the Azure service connection creation experience:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Workload identity federation (automatic).](../../media/234-pipelines-19.png "Screenshot of Workload identity federation (automatic)")
@@ -23,7 +23,7 @@ To convert a previously created Azure service connection, select the "Convert" a
 > ![Screenshot of Convert action.](../../media/234-pipelines-20.png "Screenshot of Convert action")
 
 
-To convert multiple service connections you can use automation e.g. this PowerShell script:
+To convert multiple service connections, you can use automation for example, this PowerShell script:
    
 ```powershell
 #!/usr/bin/env pwsh
@@ -116,18 +116,16 @@ For more information, please visit our [documentation](https://aka.ms/azdo-rm-wo
 
 [Last October](/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization) we added the ability to track memory & disk space usage by the Pipelines agent.
 
-To make customers aware they may have resource constraints such as memory or disk space limitations on their agent, we have made resource constraints more visible:
+To make customers aware,they may have resource constraints such as memory or disk space limitations on their agent, we made resource constraints more visible:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Limited memory and disk space warning.](../../media/234-pipelines-18.png "Screenshot of Limited memory and disk space warning")
-
-[](/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization&preserve-view=true)
 
 If you see any of the above messages, this may be caused by a task using more resources than the agent is dimensioned for which may result in the agent not being responsive and failing a pipeline job:
 
 > "We stopped hearing from the agent"
 
-In such cases, please enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops#configure-verbose-logs) to get more finer grained resource utilization messages and track where your agent ran out of resources. If you are using a Self-hosted agent, make sure your agent has adequate resources.
+In such cases, please enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops#configure-verbose-logs) to get more finer grained resource utilization messages and track where your agent ran out of resources. If you're using a Self-hosted agent, make sure your agent has adequate resources.
 
 ### Out-of-band installation of Node 6 task runner
 
@@ -142,7 +140,7 @@ After agent registration, agents installed from __pipelines-agent-*__ packages w
 
 ### Deferred approval
 
-Approvals can be used to sign off on a deployment. However, there are situations when the time when the approval is given and the time the deployment should start don't match. For example, for the particular deployment you review, you know it's an out-of-bounds one. Imagine it cannot proceed immediately, rather it should take place during the night.
+Approvals can be used to sign off on a deployment. However, there are situations when the time when the approval is given and the time the deployment should start don't match. For example, for the particular deployment you review, you know it's an out-of-bounds one. Imagine it can't proceed immediately, rather it should take place during the night.
 
 To cover such scenarios, we've added the option to defer approvals for YAML pipelines. Now, you can approve a pipeline run and specify when should the approval be effective.
 
@@ -165,11 +163,11 @@ The approval shows up as deferred in the checks panel. After the deferred-to tim
 
 ### Sequencing approvals and checks
 
-Starting this sprint, you are be able to specify the order in which Approvals and checks run.
+With this sprint, you're able to specify the order in which approvals and checks run.
 
 [Approvals and checks](/azure/devops/pipelines/process/approvals) allow you to control deployments to production. For example, you can specify that only pipelines that run on the `main` branch of a repository are allowed to use a production ARM service connection. Furthermore, you can require human approval and that the system passes a performance check.
 
-Up until today, all approvals and checks ran in parallel, with the exception of exclusive lock. This meant that if your deployment process required performance checks to pass before manual approval is given, you could not enforce this in Azure Pipelines. You had to rely on approval instructions and internal process documentation.
+Up until today, all approvals,and checks ran in parallel, except for exclusive lock. This meant that if your deployment process required performance checks to pass before manual approval is given, you could not enforce this in Azure Pipelines. You had to rely on approval instructions and internal process documentation.
 
 With this sprint, we're introducing sequencing in Approvals and Checks. There are now five categories of Approvals and Checks:
 
@@ -192,7 +190,7 @@ Within each category, the checks run in parallel. That is, if you have an Invoke
 > [!div class="mx-imgBorder"]
 > ![Screenshot of checks for deploy.](../../media/234-pipelines-12.png "Screenshot of checks for deploy")
 
-Check categories run one by one and if one fails, the rest of the checks are not executed. This means that if you have a Branch control check and an Approval, if the Branch control fails, the Approval will fail, too. So no needless emails will be sent.
+Check categories run one by one and if one fails, the rest of the checks aren't executed. This means that if you have a Branch control check and an Approval, if the Branch control fails, the Approval will fail, too. So no needless emails will be sent.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of checks for deploy fail.](../../media/234-pipelines-13.png "Screenshot of checks for deploy fail")

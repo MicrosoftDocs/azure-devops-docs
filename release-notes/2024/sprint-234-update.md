@@ -5,11 +5,10 @@ ms.author: ckanyika
 ms.date: 2/8/2024
 description: Workload identity federation for AzureRM service connections is now generally available
 ---
-# Workload identity federation for AzureRM service connections is now generally available
+# Workload identity federation for Azure Resource Manager service connections is now generally available
 
-We’re excited to announce that Workload Identity Federation is now generally available in Azure Pipelines!
-
-You can now enjoy a hassle-free experience without the need to manage secrets and certificates in Azure service connections.
+We’re excited to announce that Workload identity federation is now generally available in Azure Pipelines!
+You can enjoy a streamlined experience without the need to manage secrets and certificates in Azure service connections.
 
 With this update, we preview a new feature as part of our enhanced GitHub integration with Azure Boards. You can now link directly to GitHub pull requests or commits. No more switching between windows or copy/pasting. Simply select the repository you want, find the pull request or commit you need, and link it!
 
