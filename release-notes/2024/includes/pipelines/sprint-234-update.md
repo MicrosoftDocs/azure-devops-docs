@@ -9,7 +9,7 @@ ms.topic: include
 
 In September, we [announced](https://devblogs.microsoft.com/devops/public-preview-of-workload-identity-federation-for-azure-pipelines/) the ability to configure Azure service connections without using a secret. Since then, many customers have adopted this feature and we're excited to announce this capability is now generally available.
 
-If you are not using Workload identity federation yet, you can take advantage of worry-free Azure service connections that don't have expiring secrets in the following ways:
+If you aren't using Workload identity federation yet, you can take advantage of worry-free Azure service connections that don't have expiring secrets in the following ways:
 
 To create a new Azure service connection using workload identity federation, select Workload identity federation (automatic) in the Azure service connection creation experience:
 
@@ -125,7 +125,7 @@ If you see any of the above messages, this may be caused by a task using more re
 
 > "We stopped hearing from the agent"
 
-In such cases, please enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops#configure-verbose-logs) to get more finer grained resource utilization messages and track where your agent ran out of resources. If you're using a Self-hosted agent, make sure your agent has adequate resources.
+In such cases, please enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops#configure-verbose-logs&preserve-view=true) to get more finer grained resource utilization messages and track where your agent ran out of resources. If you're using a Self-hosted agent, make sure your agent has adequate resources.
 
 ### Out-of-band installation of Node 6 task runner
 
