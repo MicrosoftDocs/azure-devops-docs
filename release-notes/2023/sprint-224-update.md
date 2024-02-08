@@ -13,9 +13,9 @@ In Azure Repos, we changed the default behavior to remove "Edit policies" permis
 
 Check out the release notes to learn more about these features.
 
-### General
+### GitHub Advanced Security for Azure DevOps
 
-[!INCLUDE [sprint-224-update-links](includes/general/sprint-224-update-links.md)]
+[!INCLUDE [sprint-224-update-links](includes/ghazdo/sprint-224-update-links.md)]
 
 ### Azure Boards
 
