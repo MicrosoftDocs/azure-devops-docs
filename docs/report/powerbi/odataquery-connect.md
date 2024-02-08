@@ -152,7 +152,7 @@ The following action is required for Power BI to successfully run an OData query
 
 Select **Close & Apply** to save your settings and pull the data into Power BI. Once the data refreshes, you can create a report as you would normally in Power BI.
 
-:::image type="content" source="media/transform-data/powerbi-close-apply.png" alt-text="Screenshot of Power BI "Close & Apply" button.":::
+:::image type="content" source="media/transform-data/powerbi-close-apply.png" alt-text="Screenshot of Power BI Close and Apply button.":::
 
 ## Related articles
 
