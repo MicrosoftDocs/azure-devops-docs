@@ -42,7 +42,7 @@ When you go to the work item, the corresponding Development and Deployment contr
 > [!div class="mx-imgBorder"]
 > ![Screenshots of related work.](../../media/234-boards-02.png "Screenshots of related work.")
 
-Finally, if you decide to connect a GitHub repo to Azure Boards, the Development control for GitHub repos will be displayed.
+If you decide to [connect a GitHub repo to Azure Boards](https://learn.microsoft.com/en-us/azure/devops/boards/github/?view=azure-devops), the Development control for GitHub repos will be displayed.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshots of development control .](../../media/234-boards-03.png "Screenshots of development control .")
