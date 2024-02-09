@@ -245,7 +245,7 @@ Next, create the Dockerfile.
       ```dockerfile
       FROM ubuntu:22.04
 
-      RUN apt update -y && apt upgrade -y && apt install curl git jq libicu72
+      RUN apt update -y && apt upgrade -y && apt install curl git jq libicu70
 
       # Also can be "linux-arm", "linux-arm64".
       ENV TARGETARCH="linux-x64"
