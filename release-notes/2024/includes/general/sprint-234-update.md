@@ -22,7 +22,7 @@ Alternate credentials were [formally deprecated in March 2020](https://devblogs.
 
 ### Azure Devops OAuth self-service secret rotation
 
-Every five years, it's essential to update the **Client Secret** for your Azure DevOps OAuth app, to ensure continuous generation of access and refresh tokens necessary for utilizing Azure DevOps APIs. As your **Client Secret** approaches expiration, you can now independently generate a new one, providing your team the freedom to manage it without relying on customer support. This flexibility in scheduling secret rotation minimizes potential outage time for your customers waiting for a replacement due to an expired secret. 
+Every five years, it's essential to update the **Client Secret** for your Azure DevOps OAuth app, to ensure continuous generation of access and refresh tokens necessary for utilizing Azure DevOps APIs. As your **Client Secret** approaches expiration, you can now independently generate a new one, providing your team the freedom to manage it without relying on customer support. This flexibility in scheduling secret rotation minimizes potential outage time for your customers waiting for a replacement due to an expired secret.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Select a geography.](../../media/234-general-01.png "Screenshot of Select a geography")
