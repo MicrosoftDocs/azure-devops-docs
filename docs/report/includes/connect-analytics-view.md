@@ -40,7 +40,7 @@ ms.date: 08/10/2020
 
 1. Expand the **Shared Views** folder, choose an Analytics view, and then choose **Load**. The Data Connector presents a list of available [Analytics views](../powerbi/what-are-analytics-views.md). Each view represents a set of data that you can pull into Power BI. You can also [create custom Analytics views](../powerbi/analytics-views-create.md).
 
-	The following image shows the default Analytics views. Your list of views might differ based on the process model used to created your project. All views listed, except those appended with "Today", provide historical trend data. 
+	The following image shows the default Analytics views. Your list of views might differ based on the process model used to create your project. All views listed, except those appended with "Today", provide historical trend data. 
 
 	Here we choose **Stories - Last 30 days**, which filters for product backlog items.
 
