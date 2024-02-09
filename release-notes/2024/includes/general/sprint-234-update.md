@@ -5,17 +5,6 @@ ms.date: 2/9/2024
 ms.topic: include
 ---
 
-### Code snippets now available in alert details view
-
-The alert detail page for code scanning and secret scanning alerts now shows code snippets that mark the line of code where the alert occurred. To go to the original file in your Azure DevOps repository, click on the file name above the code snippet. 
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of case-sensitive middleware path.](../../media/234-general-02.png "Screenshot of case-sensitive middleware path")
-
-### Linked Azure subscription required for GitHub Advanced Security for Azure DevOps enablement
-
-If you previously enabled Advanced Security for repositories in an Azure DevOps organization without a linked Azure subscription, you may have noticed Advanced Security automatically disable itself on those repositories. To re-enable Advanced Security, add an associated Azure subscription to the organization. For more information on how to add or change your subscription, see [Change Azure subscription](/azure/devops/organizations/billing/change-azure-subscription?view=azure-devopsthe&preserve-view=true).
-
 ### Final notice of alternate credentials deprecation
 
 Alternate credentials were [formally deprecated in March 2020](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/), but some existing users were grandfathered in with ongoing usage of their existing alternate credentials. As of January 2024 we've fully deprecating all alternate credentials.To avoid any potential disruptions, switch to one of the [available authentication mechanisms](/azure/devops/integrate/get-started/authentication/authentication-guidance?view=azure-devopsthe&preserve-view=true) we provide, such as personal access tokens or managed identities.
