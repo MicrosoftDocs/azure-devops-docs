@@ -41,6 +41,7 @@ Check out the release notes to learn more about these features.
 ## General
 
 [!INCLUDE [sprint-234-update](includes/general/sprint-234-update.md)]
+
 ## GitHub Advanced Security for Azure DevOps
 
 [!INCLUDE [sprint-234-update](includes/ghazdo/sprint-234-update.md)]
