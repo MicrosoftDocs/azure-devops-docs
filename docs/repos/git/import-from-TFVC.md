@@ -115,7 +115,7 @@ In order to make migrations easier, there are a number of requirements before fo
    there's an option to migrate some history, up to 180 days, so that the team can work only out of Git.
    For more information, see [Plan your migration to Git](/devops/develop/git/centralized-to-git).
 * Exclude binary assets like images, scientific data sets, or game models from the repository. These assets 
-   should use the Git LFS (Large File Support) extension, which the import tool doesn't configure.
+   should use the Git LFS (Large File Storage) extension, which the import tool doesn't configure.
 * Keep the imported repository below 1GB in size.
 
 If the repository doesn't meet these requirements, use the [Git-TFS tool](https://github.com/git-tfs/git-tfs) 
