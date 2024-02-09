@@ -18,6 +18,10 @@ Check out the release notes to learn more about these features.
 
 [!INCLUDE [sprint-234-update-links](includes/general/sprint-234-update-links.md)]
 
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-234-update-links](includes/ghazdo/sprint-234-update-links.md)]
+
 ### Azure Boards
 
 [!INCLUDE [sprint-234-update-links](includes/boards/sprint-234-update-links.md)]
