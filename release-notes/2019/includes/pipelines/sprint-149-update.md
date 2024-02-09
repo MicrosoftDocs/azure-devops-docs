@@ -6,7 +6,7 @@ ms.topic: include
 
 Previously, we checked out repos to the `s` directory under $(Agent.BuildDirectory). Now you can choose the directory where your Git repo will be checked out for use with YAML pipelines.
 
-Use the `path` keyword on `checkout` and you will be in control of the folder structure. Below is an example of the YAML code that you can use to specify a directory.
+Use the `path` keyword on `checkout` and you'll be in control of the folder structure. Below is an example of the YAML code that you can use to specify a directory.
 
 ```yaml
 steps:
@@ -18,7 +18,7 @@ In this example, your code will be checked out to the `my-great-repo` directory 
 
 ### Private projects now get 60 minutes of run time per pipeline job
 
-Until now, a free account (that is, one which had not purchased parallel jobs) would run a job for up to 30 minutes at a time, up to 1,800 minutes per month. With this update, we have increased the limit from 30 to 60 minutes for free accounts.  
+Until now, a free account (that is, one which hadn't purchased parallel jobs) would run a job for up to 30 minutes at a time, up to 1,800 minutes per month. With this update, we have increased the limit from 30 to 60 minutes for free accounts.  
 
 If you need to run your pipeline for more than 60 minutes, you can pay for additional capacity per parallel job or run in a self-hosted agent. Self-hosted agents don't have a job length restrictions.
 
@@ -39,7 +39,7 @@ In this update, we added a new task for build and release pipelines that allows 
 
 ### Approve Azure Pipelines deployments from Slack
 
-Until now, Slack users have had limited capabilities to manage release deployments from within a channel. The Azure Pipelines app for Slack lets you approve or reject a release deployment from the channel. This will make the approval process easier since you are not forced to navigate to the Azure Pipelines portal. In addition, you can approve deployments on the go by using the Slack mobile app.
+Until now, Slack users have had limited capabilities to manage release deployments from within a channel. The Azure Pipelines app for Slack lets you approve or reject a release deployment from the channel. This will make the approval process easier since you aren't forced to navigate to the Azure Pipelines portal. In addition, you can approve deployments on the go by using the Slack mobile app.
 
 > [!div class="mx-imgBorder"]
 > ![Approve Azure Pipelines deployments from Slack.](../../media/149_03.png)
