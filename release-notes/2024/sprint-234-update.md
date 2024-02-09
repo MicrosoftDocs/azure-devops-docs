@@ -2,7 +2,7 @@
 title: General availability of Workload identity federation for Azure Resource Manager service connections 
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/8/2024
+ms.date: 2/9/2024
 description: General availability of Workload identity federation for Azure Resource Manager service connections 
 ---
 # General availability of Workload identity federation for Azure Resource Manager service connections 
@@ -10,7 +10,7 @@ description: General availability of Workload identity federation for Azure Reso
 We’re excited to announce that Workload identity federation is now generally available in Azure Pipelines!
 You can enjoy a streamlined experience without the need to manage secrets and certificates in Azure service connections.
 
-With this update, we preview a new feature as part of our enhanced GitHub integration with Azure Boards. You can now link directly to GitHub pull requests or commits. No more switching between windows or copy/pasting. Simply select the repository you want, find the pull request or commit you need, and link it!
+With this update, we are also previewing a new feature as part of our enhanced GitHub integration with Azure Boards. You can now link directly to GitHub pull requests or commits. No more switching between windows or copy/pasting. Simply select the repository you want, find the pull request or commit you need, and link it!
 
 Check out the release notes to learn more about these features.
 
