@@ -38,6 +38,24 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="15"><a href="2024/sprint-234-update.md" data-raw-source="[9 February  2024](2024/sprint-234-update.md)"> 9 February  2024</a></td>
+    <td>Code snippets now available in alert details view </td><td>General</td><td>Future</td></tr>
+    <td>Linked Azure subscription required for GitHub Advanced Security for Azure DevOps enablement</td><td>General</td><td>Future</td></tr>
+    <td>Final notice of alternate credentials deprecation</td><td>General</td><td>N/A</td></tr>
+    <td>Azure Devops OAuth self-service secret rotation</td><td>General</td><td>N/A</td></tr>
+    <td>Add link to GitHub commit or pull request (preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>New Boards Hub Improvements</td><td>Boards</td><td>Future</td><tr>   
+    <td>Development and Deployment Controls</td><td>Boards</td><td>Future</td></tr>  
+    <td>Workload identity federation for Azure Resource Manager service connections is now generally available</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Out-of-band installation of Node 6 task runner</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Deferred approval</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Sequencing approvals and checks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Validate and Save by default when editing YAML pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Prevention for unauthorized users to configure pipeline as a Build Policy</td><td>Repos</td><td>Future</td></tr>
+    <td>Support for Rust Crates is generally available</td><td>Artifacts</td><td>N/A</td></tr>
+    <td>Azure Artifacts support for npm audit</td><td>Artifacts</td><td>N/A</td></tr>
+<tr>
+<tr>
     <td rowspan="6"><a href="2024/sprint-233-update.md" data-raw-source="[19 January   2024](2024/sprint-233-update.md)"> 19 January  2024</a></td>
     <td>Custom CodeQL queries now supported in GitHub Advanced Security for Azure DevOps</td><td>General</td><td>Future</td></tr>
     <td>GitHub Integration - Improved AB# validation is generally available</td><td>Boards</td><td>Future</td></tr>
