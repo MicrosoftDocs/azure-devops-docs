@@ -10,4 +10,4 @@ ms.topic: include
 - [Additional alert severities added for code scanning alerts](#additional-alert-severities-added-for-code-scanning-alerts)
 - [Linked Azure subscription required for GitHub Advanced Security for Azure DevOps enablement](#linked-azure-subscription-required-for-github-advanced-security-for-azure-devops-enablement)
 - [Advanced Security API updates](#advanced-security-api-updates)
-- [Advanced Security permissions are now permanently displayed])(#advanced-security-permissions-are-now-permanently-displayed)
+- [Advanced Security permissions are now permanently displayed](#advanced-security-permissions-are-now-permanently-displayed)
