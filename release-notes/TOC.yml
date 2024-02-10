@@ -732,6 +732,8 @@
         items:
         - name: "2024"
           items:
+          - name: February 9
+            href: 2024/ghazdo/sprint-234-update.md
           - name: January 18
             href: 2024/ghazdo/sprint-233-update.md
           expanded: false
