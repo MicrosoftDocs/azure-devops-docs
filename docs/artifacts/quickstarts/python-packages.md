@@ -42,7 +42,7 @@ To run the following steps, you must have:
 
 ## Create a feed
 
-::: moniker-range=">=azure-devops"
+::: moniker range=">= azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then go to your project.
 
