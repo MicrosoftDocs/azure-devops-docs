@@ -1,9 +1,9 @@
 ---
 title: Get started with Python packages in Azure Artifacts
-description: Quickly start hosting python packages with Azure Artifacts
+description: Quickly start hosting python packages with Azure.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
-ms.date: 01/19/2023
+ms.date: 02/12/2024
 monikerRange: '>= azure-devops-2019'
 ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 "recommendations": "true"
@@ -13,11 +13,38 @@ ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-This guide will walk you through using Azure Artifacts to publish and consume Python packages to and from your feed.
+This guide walks you through using Azure Artifacts to publish and consume Python packages to and from your feed on your local development environment. To publish and consume packages in your Azure Pipelines, see [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
+
+## Prerequisites
+
+To run the following steps, you must have:
+
+::: moniker range=">= azure-devops"
+
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* An Azure DevOps organization. [Create one for free](../../pipelines/get-started/pipelines-sign-up.md).
+* An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
+* Python 3.6 or later installed on your local machine, and an active Python virtual environment.
+* A Python package to publish from your local machine to your feed.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* Access to an Azure DevOps Server collection.
+* The ability to run Azure Pipelines on Azure DevOps self-hosted agents. 
+* An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
+* Python 3.6 or later installed on your local machine, and an active Python virtual environment.
+* A Python package to publish from your local machine to your feed.
+
+::: moniker-end
 
 ## Create a feed
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+::: moniker-range=">=azure-devops"
+
+1. Sign in to your Azure DevOps organization, and then go to your project.
 
 1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
 
@@ -26,13 +53,44 @@ This guide will walk you through using Azure Artifacts to publish and consume Py
 1. Select **Create** when you're done.
 
     :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
-     
+
+1. To allow you to publish packages to the feed, set your organization-scoped *Project Collection Build Service* and the project-scoped *Build Service* roles to  **Contributor** . To set this permission, see [Feed permissions](../feeds/feed-permissions.md#feed-settings).
+
+::: moniker-end
+
+::: moniker-range="< azure-devops-2022"
+
+1. Go to your Azure DevOps collection, select your project.
+
+1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
+
+1. Enter a descriptive **Name** for your feed and define its **Visibility** (indicating who can view packages within the feed). Specify the **Scope** of your feed, and if you wish to include packages from public sources, mark the **Upstream sources** checkbox.
+
+1. Select **Create** when you're done.
+
+::: moniker-end
+
+::: moniker-range="azure-devops-2022"
+
+1. Go to your Azure DevOps collection, select your project.
+
+1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
+
+1. Enter a descriptive **Name** for your feed and define its **Visibility** (indicating who can view packages within the feed). Specify the **Scope** of your feed, and if you wish to include packages from public sources, mark the **Upstream sources** checkbox.
+
+1. Select **Create** when you're done.
+
+1. To allow you to publish packages to the feed, set your organization-scoped *Project Collection Build Service* and the project-scoped *Build Service* roles to  **Contributor** . To set this permission, see [Feed permissions](../feeds/feed-permissions.md#feed-settings).
+
+
+::: moniker-end
+
 ## Connect to feed
 
 There are two primary ways to connect to a feed to publish or consume your Python packages:
 
-1. Install and use the [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package, which will automatically set up authentication for you.
-1. Manually set up credentials for your *.pypirc* pushes, and your *pip.ini*/*pip.conf* for pulls with a personal access token (PAT).
+1. Install and use the [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package, which automatically sets up authentication for you.
+1. Manually set up credentials for your `.pypirc` pushes, and your *pip.ini*/*pip.conf* for pulls with a personal access token (PAT).
 
 > [!NOTE]
 > **artifacts-keyring** is not supported on newer versions of Ubuntu.
@@ -42,7 +100,7 @@ There are two primary ways to connect to a feed to publish or consume your Pytho
 The [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package allows you to set up authentication to publish and consume your Python packages to and from your feed. Both [pip](https://pypi.org/project/pip/) and [twine](https://pypi.org/project/twine/) use the Python [keyring library](https://pypi.org/project/keyring/) to find credentials. 
 
 > [!IMPORTANT]
-> You must have pip 19.2 and twine 1.13.0 or higher to use **artifacts-keyring**. See [Usage requirements](https://github.com/microsoft/artifacts-keyring#requirements) for more details.
+> You must have pip 19.2 and twine 1.13.0 or higher to use **artifacts-keyring**. For more information, see [Usage requirements](https://github.com/microsoft/artifacts-keyring#requirements).
 
 1. In an elevated command prompt window, run the following command to install the artifacts-keyring package:
    
@@ -51,14 +109,14 @@ The [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package 
    ```
    
 1. To install a package from your feed, run the following command:
-    
-    - **Project scoped feed**:
+
+    - **Project-scoped feed**:
 
        ```Command
        pip install <PACKAGE_NAME> --index-url https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/simple
        ```
     
-    - **Organization scoped feed**:
+    - **Organization-scoped feed**:
     
        ```Command
        pip install <PACKAGE_NAME> --index-url https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/pypi/simple
@@ -66,13 +124,13 @@ The [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package 
 
 1. To publish a package to your feed, run the following command:
    
-    - **Project scoped feed**:
+    - **Project-scoped feed**:
     
        ```Command
        twine upload --repository-url https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/upload
        ```
 
-    - **Organization scoped feed**:
+    - **Organization-scoped feed**:
     
        ```Command
        twine upload --repository-url https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/pypi/upload
@@ -93,33 +151,33 @@ The [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package 
 
    :::image type="content" source="media/pip-feed.png" alt-text="A screenshot highlighting the pip package type.":::
 
-1. If this is your first time using Azure Artifacts with twine, select **Get the tools** to download and install the prerequisites.
+1. If connecting to your feed for the first time, select **Get the tools** to download and install the prerequisites.
 
 1. [Create a virtualenv](https://docs.python.org/3/library/venv.html), if you don't already have one.
 
-1. Add a *pip.ini* (Windows) or a *pip.conf* (Mac/Linux) file to your virtualenv. Make sure you don't check your personal access token into a public repository. 
+1. Add a *pip.ini* (Windows) or a *pip.conf* (Mac/Linux) file to the root directory of your virtualenv. Make sure you don't check your personal access token into a public repository. 
 
-    - **Project scoped feed**:
+    - **Project-scoped feed**:
 
         ```
         [global]
         extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/simple/
         ```
 
-    - **Organization scoped feed**:
+    - **Organization-scoped feed**:
 
         ```
         [global]
         extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/pypi/simple/
         ```
 
-1. Run the following command in your project directory to install your package.
+1. To install your package, run the following command in your project directory.
 
     ```Command
     pip install <PACKAGE_NAME>
     ```
 
-When you connect to Azure DevOps for the first time, you'll be prompted for credentials. Enter your user name(any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
+When you connect to Azure DevOps for the first time, you're prompted for credentials. Enter your user name(any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
 
 > [!NOTE]
 > If you want to publish or consume your packages using Azure Pipelines, use the [Python Pip Authenticate](/azure/devops/pipelines/tasks/reference/pip-authenticate-v1) task to authenticate and install packages, or the [Python Twine Upload Authenticate](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) task to publish your packages.
@@ -128,7 +186,7 @@ When you connect to Azure DevOps for the first time, you'll be prompted for cred
 
 - [Use feed views to share packages](../feeds/views.md)
 
-- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
+- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
 
-- [Build Python apps](../../pipelines/ecosystems/python.md).
+- [Build Python apps](../../pipelines/ecosystems/python.md)
 
