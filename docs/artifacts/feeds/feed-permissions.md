@@ -17,6 +17,8 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 ## Azure Artifacts settings
 
+To set roles for predefined users or groups to manage access to your feed. Use the following steps to assign roles to users and groups.
+
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the Azure Artifacts settings icon on the right.
@@ -44,7 +46,7 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
     :::image type="content" source="media/feed-permissions.png" alt-text="A screenshot showing how to access feed permissions.":::
 
-1. Add new user(s)/group(s) and choose the appropriate **Role** for them.
+1. Add new user(s)/group(s) and choose their appropriate **Role**.  If you choose a user or group that has an existing role, the role you select will replace the existing role. To see a dropdown list, begin typing the name of the user or group.
 
     :::image type="content" source="media/add-users-groups-dialogue.png" alt-text="Screenshot showing how to add new users or groups.":::
 
@@ -68,17 +70,17 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops"
 
 > [!NOTE]
-> By default, the *Project Collection Build Service* (org-scoped) and the project-level *Build Service* (project-scoped) are assigned the **Collaborator** role.
+> By default, the *Project Collection Build Service* (org-scoped) and the project-level *Build Service* (project-scoped) are assigned the **Collaborator** role.  To manage packages in your feed, set these permissions to **Contributor** role or higher.
 
 ::: moniker-end
 
-:::moniker range=">= azure-devops-2022"
+:::moniker range="azure-devops-2022"
 
 > [!NOTE]
-> By default, the *Project Collection Build Service* is automatically assigned the **Collaborator** role for newly created collection-scoped feeds.
+> By default, the *Project Collection Build Service* is automatically assigned the **Collaborator** role for newly created collection-scoped feeds.To manage packages in your feed, set these permissions to **Contributor** role or higher.
 
 ::: moniker-end
 
