@@ -10,21 +10,21 @@ ms.topic: include
 The alert detail page for code scanning and secret scanning alerts now shows code snippets that mark the one or more lines of code where the alert occurred. To go to the original file in your Azure DevOps repository, click on the file name above the code snippet. 
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of case-sensitive middleware path.](../../media/234-general-02.png "Screenshot of case-sensitive middleware path")
+> [![Screenshot of case-sensitive middleware path.](../../media/234-general-02.png "Screenshot of case-sensitive middleware path")](../../media/234-general-02.png#lightbox)
 
 ### Truncated secrets displayed in alert overview 
 
 The truncated, last six characters of any detected secrets are now displayed in the secrets alert overview screen. This feature is helpful if you have multiple secret exposures of the same secret type, allowing you to quickly identify where particular secrets live.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of secret alerts list.](../../media/234-ghazdo-03.png "Screenshot of secret alerts list")
+> [![Screenshot of secret alerts list.](../../media/234-ghazdo-03.png "Screenshot of secret alerts list")](../../media/234-ghazdo-03.png#lightbox)
 
 ### More alert severities added for code scanning alerts 
 
 New alert severities now exist for alert results from the CodeQL `quality` queries as `Error`, `Warning`, and `Note` severities. Each quality alert severity has its own badge and color to denote scaling severities. You can also filter for each of these severities, similar to the `low` to `critical` severity scale for security alerts. 
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of code scanning alerts list and severity filter.](../../media/234-ghazdo-05.png "Screenshot of code scanning alerts list and severity filter")
+> [![Screenshot of code scanning alerts list and severity filter.](../../media/234-ghazdo-05.png "Screenshot of code scanning alerts list and severity filter")](../../media/234-ghazdo-05.png#lightbox)
 
 
 ### Linked Azure subscription required for GitHub Advanced Security for Azure DevOps enablement
@@ -44,4 +44,4 @@ Various updates to the Advanced Security APIs recently shipped:
 In the past, the three Advanced Security permission bits would only be present as per-repository assignable permissions if Advanced Security was enabled. Now, these permissions are available by default at the **Repositories > Security** permissions pane and can be assigned without having Advanced Security to be enabled. 
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Advanced Security permissions.](../../media/234-ghazdo-02.png "Screenshot of Advanced Security permissions")
+> [![Screenshot of Advanced Security permissions.](../../media/234-ghazdo-02.png "Screenshot of Advanced Security permissions")](../../media/234-ghazdo-02.png#lightbox)
