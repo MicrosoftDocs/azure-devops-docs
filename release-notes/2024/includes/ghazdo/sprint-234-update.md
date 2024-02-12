@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Code snippets now available in alert details view
 
-The alert detail page for code scanning and secret scanning alerts now shows code snippets that mark the line of code where the alert occurred. To go to the original file in your Azure DevOps repository, click on the file name above the code snippet. 
+The alert detail page for code scanning and secret scanning alerts now shows code snippets that mark the line(s) of code where the alert occurred. To go to the original file in your Azure DevOps repository, click on the file name above the code snippet. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of case-sensitive middleware path.](../../media/234-general-02.png "Screenshot of case-sensitive middleware path")
