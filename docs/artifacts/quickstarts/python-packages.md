@@ -33,7 +33,6 @@ To run the following steps, you must have:
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * Access to an Azure DevOps Server collection.
-* The ability to run Azure Pipelines on Azure DevOps self-hosted agents. 
 * An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
 * Python 3.6 or later installed on your local machine, and an active Python virtual environment.
 * A Python package to publish from your local machine to your feed.
@@ -54,11 +53,9 @@ To run the following steps, you must have:
 
     :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
 
-1. To allow you to publish packages to the feed, set your organization-scoped *Project Collection Build Service* and the project-scoped *Build Service* roles to  **Contributor** . To set this permission, see [Feed permissions](../feeds/feed-permissions.md#feed-settings).
-
 ::: moniker-end
 
-::: moniker-range="< azure-devops-2022"
+::: moniker range="< azure-devops-2022"
 
 1. Go to your Azure DevOps collection, select your project.
 
@@ -70,7 +67,7 @@ To run the following steps, you must have:
 
 ::: moniker-end
 
-::: moniker-range="azure-devops-2022"
+::: moniker range="azure-devops-2022"
 
 1. Go to your Azure DevOps collection, select your project.
 
@@ -79,9 +76,6 @@ To run the following steps, you must have:
 1. Enter a descriptive **Name** for your feed and define its **Visibility** (indicating who can view packages within the feed). Specify the **Scope** of your feed, and if you wish to include packages from public sources, mark the **Upstream sources** checkbox.
 
 1. Select **Create** when you're done.
-
-1. To allow you to publish packages to the feed, set your organization-scoped *Project Collection Build Service* and the project-scoped *Build Service* roles to  **Contributor** . To set this permission, see [Feed permissions](../feeds/feed-permissions.md#feed-settings).
-
 
 ::: moniker-end
 
