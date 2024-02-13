@@ -79,7 +79,7 @@ Values in parenthesis indicate the following criteria:
    - [Associated Context Type](guidance-code-review-feedback-field-reference.md#fields)
    - [Attached File Count](../../queries/linking-attachments.md#fields)
    - Authorized As (Not used)
-   - [Automated Test Id](../../queries/build-test-integration.md#fields) (TCM)
+   - [Automated Test ID](../../queries/build-test-integration.md#fields) (TCM)
    - [Automated Test Name](../../queries/build-test-integration.md#fields) (TCM) 
    - [Automated Test Storage](../../queries/build-test-integration.md#fields) (TCM)
    - [Automated Test Type](../../queries/build-test-integration.md#fields) (TCM) 
@@ -243,8 +243,7 @@ Values in parenthesis indicate the following criteria:
 > 1. This field is available from Azure DevOps Services and Azure DevOps Server 2020 and later versions.
 > 2. This field is available for Azure DevOps Services only.
 
-By using the system fields or other fields you've added to your project collection, you can enable meaningful cross-project reports and queries. Also, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.  
-
+Using the system fields or other fields you added to your project collection, you can enable meaningful cross-project reports and queries. Also, any nonsystem field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any nonsystem field that you might want to use to generate a query or report in the **FIELDS** section.  
 
 ## Field reference articles 
 
@@ -278,10 +277,8 @@ The following articles describe fields that are used in common by several WITs, 
 - [Issues](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields)
 - [Review Meetings](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields)
 - [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) 
- 
 
 ## Related articles
-
 
 ::: moniker range=">= azure-devops-2022"  
 
