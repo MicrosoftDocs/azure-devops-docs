@@ -1,7 +1,7 @@
 ---
 title: Best practices for Agile project management 
 titleSuffix: Azure Boards
-description: Get started guide for project managers new to Azure Boards to plan and track their projects  
+description: Get started guide for project managers new to Azure Boards to plan and track their projects.  
 ms.service: azure-devops-boards
 ms.topic: best-practice
 ms.custom: cross-project  
@@ -36,7 +36,7 @@ For more information about configuring teams, see the following articles:
 
 - [Configure a hierarchy of teams](plans/configure-hierarchical-teams.md) 
 - [Add a team, move from one default team to several teams](../organizations/settings/add-teams.md) 
-- [Agile culture](/devops/plan/adopting-agile) 
+- [Understand Agile culture](/devops/plan/adopting-agile) 
 - [Scale Agile to Large Teams](/devops/plan/scaling-agile)
 
 ## Configure your sprints 
@@ -49,7 +49,7 @@ Sprints&mdash;specified by Iteration Paths&mdash;are defined for a project and t
 - Define at least six or more iterations that support planning for the next six to 12 months 
 - Determine how teams use iterations to manage backlog items
 	- Unassigned sprint work is assigned to the default backlog, or
-	- Unassigned sprint work is assigned to a designated future backlog sprint.
+	- Unassigned sprint work is assigned to a designated future backlog sprint
 
 For more information about configuring sprints, see the following articles:
 
@@ -60,7 +60,7 @@ For more information about configuring sprints, see the following articles:
 
 Determine which work item types your team can use to capture customer requirements and development work. If your project is based on the Agile process, we recommend using User Stories, Bugs, and Features.  
 
-If your project is based on another process, such as Basic, Scrum, or CMMI, you have a choice from those shown in the following images. Also, each team can determine how they want to track bugs.
+If your project is based on another process, such as Basic, Scrum, or CMMI, you have the following choices. Each team determines how they want to track bugs.
 
 [!INCLUDE [temp](includes/work-item-types.md)]
 
@@ -81,7 +81,7 @@ If your project is based on another process, such as Basic, Scrum, or CMMI, you 
 
 As project managers, you manage the Features and the development team manages the Requirements. By mapping them using parent-child links, you gain visibility into the progress of your features. Each work item you add to your team backlog is automatically assigned the default area path and iteration path set for your team. 
 
-If you have larger initiatives or scenarios that require shipping several Features, you can group these under Epics, again using parent-child links. 
+If you have larger initiatives or scenarios that require shipping several Features, group them under Epics, again using parent-child links. 
 
 For more information about work item types, see the following articles:
 
@@ -109,14 +109,14 @@ Development teams add User Stories to their product backlog so that  the User St
  
 ### Refine each backlog  
 
-Periodically review each backlog: 
+Periodically review each backlog by doing the following tasks: 
 - Define work to be performed 
 - Reorder work items using drag-and-drop so that they appear in priority order 
 - Open work items and add details 
 - Assign work to team members or to sprints
 - Capture technical debt and nonfeature work required to support a healthy ecosystem of delivery 
 - Map unparented work to the Feature they belong to
-- (Optional) Estimate size of requirements to help determine team velocity and support forecasting  
+- Estimate size of requirements to help determine team velocity and support forecasting (optional)   
 
 > [!TIP]   
 > You can monitor team velocity based on estimates assigned to completed work or a simple count of work items completed during sprints. However, to use the Forecast feature, you must assign a value to the Story Points, Effort, or Size field. If you don't want to estimate requirements, you can simply assign a value of 1 to requirement estimates and then use the Forecast tool based on a count of work items. 
@@ -139,7 +139,7 @@ For more information, see the following articles:
 
 ## Use tags to support queries and filtering 
  
-With work item tags, team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards, and query on work items.  For tags to be useful to the team, provide some general guidance on how your team should use tags. Consider documenting this guidance in a central place, such as the [project wiki](../project/wiki/about-readme-wiki.md). 
+With work item tags, team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards, and query on work items. For tags to be useful to the team, provide some general guidance on how your team should use tags. Consider documenting this guidance in a central place, such as the [project wiki](../project/wiki/about-readme-wiki.md). 
 
 The following image illustrates a Kanban board filtered on the *web* keyword that displays cards with the *Web* tag. 
 
@@ -172,7 +172,7 @@ Here the features backlog shows the sequence of features to ship.
 
 ### Order the requirements backlog based on parent features 
 
-First you want to make sure you're completing the requirements needed to ship features. As shown in the following image, the requirements backlog has been ordered according to the features you want to ship. This ordering assumes that all requirements in a feature must be complete to ship it. Also, Story Points have been assigned to each User Story. 
+First you want to make sure you're completing the requirements needed to ship features. As shown in the following image, the requirements backlog is ordered according to the features you want to ship. This ordering assumes that all requirements in a feature must be complete to ship it. Also, Story Points are assigned to each User Story. 
 
 :::image type="content" source="media/best-practices/product-backlog-ordered-parent.png" alt-text="Screenshot of Requirements backlog, ordered by feature parent.":::
 
@@ -201,15 +201,15 @@ However, you can use one or more of the following options to mark a work item as
 - [Add a work item tag](./queries/add-tags-to-work-items.md) labeled **Milestone**   
 - [Add a custom field](../organizations/settings/work/customize-process-field.md) labeled **Milestone** and populate it with a pick list of milestones  
 - [Link work items](./backlogs/add-link.md) using the Predecessor/Successor or Related link type to a milestone work item 
-- [Assign a milestone work item to the sprint](./sprints/assign-work-sprint.md) in which it's targeted for completion. 
+- [Assign a milestone work item to the sprint](./sprints/assign-work-sprint.md) targeted for completion 
  
 ## Manage dependencies  
 
-In Microsoft Project, you manage tasks that depend on the completion of other tasks by linking them. To manage dependencies in Azure Boards, you can add similar linking by adding Predecessor/Successor link types to work items. You add these links from the Add link dialog for a work item. 
+In Microsoft Project, you manage tasks that depend on the completion of other tasks by linking them. To manage dependencies in Azure Boards, you can add similar linking by adding Predecessor/Successor link types to work items. Add these links from the **Add link** dialog for a work item. 
 
 ### Add link dialog
 
-Azure Boards supports many link types to track related work. Choose the **Predecessor/Successor** link types to track work with dependencies. A quick way to link work items is to add a tag to work items that participate in producing or consuming dependencies, create a query based on this tag, and then add the required links.
+Azure Boards supports many link types to track related work. Choose the **Predecessor/Successor** link types to track work with dependencies. A quick way to link work items is to add a tag to work items that participate in producing or consuming dependencies. Create a query that is based on the tag, and then add the required links.
 
 The following Add link dialog illustrates how two work items are linked using the Successor link type. 
 
@@ -239,7 +239,7 @@ With the [Work Item Visualization](https://marketplace.visualstudio.com/items?it
 
 ### Minimum Viable Product versus Critical Path Management  
 
-Azure Boards doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks. For more context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
+Azure Boards doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories, and tasks. For more context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
 
 #### Best practice tips: 
 
@@ -247,7 +247,7 @@ Azure Boards doesn't provide a native view of the critical path. In part, as Agi
 - Use **Predecessor/Successor** link types to track dependencies of work owned by other teams or within other projects
 - Create queries to track, add, and triage dependencies 
 - Use [Delivery Plans](plans/track-dependencies.md) to view work that you have dependencies on from other teams 
-- Use the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension to visualize dependencies for a specific work item within the work item form.
+- Use the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension to visualize dependencies for a specific work item within the work item form
 
 > [!NOTE]   
 > Marketplace extensions are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
@@ -280,7 +280,7 @@ Each sprint, perform the following tasks:
 - Ensure each sprint work item is assigned to a team member 
 - Ensure each work item is scoped for completion within the sprint
 - Ensure the acceptance criteria for the work are well defined and understood
-- Update the status of sprint work items as work moves from a *New* to *Active* to *Completed* state to track sprint burndown  
+- Update the status of sprint work items as work moves from *New* > *Active* > *Completed* states, tracking sprint burndown  
 - Check in with other teams on dependencies that your team's work depends on 
 - Monitor sprint progress using the Sprint burndown chart 
 
@@ -300,7 +300,7 @@ The three main tools you should use to review progress and deliverables are:
 
 ### Features Kanban board 
  
-Your Features board is another place to review progress and ensure the continuous flow of deliverables. The following image illustrates a customized Features board. In progress columns have been added such as *Need more info*, *Spec Complete*, *In Progress*, and *Customer Rollout*. These provide a more natural set of states as Features get proposed, researched, designed, developed, and then deployed to production. 
+Your Features board is another place to review progress and ensure the continuous flow of deliverables. The following image illustrates a customized Features board, including in progress columns like *Need more info*, *Spec Complete*, *In Progress*, and *Customer Rollout*. These columns provide a more natural set of states as Features get proposed, researched, designed, developed, and then deployed to production. 
 
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
@@ -332,11 +332,11 @@ To review features delivered across several teams, configure a delivery plan. De
 
 - Customize your Features Kanban board to support your team's processes 
 - Add fields to cards so that you can update their values quickly and easily
-- Update the Iteration Path (Sprint) of Features as you gain clarity as to when they'll ship 
+- Update the Iteration Path (Sprint) of Features as you gain clarity as to when they ship 
 - Review the Features board to talk through status, blocks/issues/risks/changes, and update status
-- Use the filter feature to focus on tagged items, assigned by features, a specific sprint and more  
+- Use the filter feature to focus on tagged items, assigned by features, specific sprints, and more  
 - Add rollup columns to your Feature backlog to monitor overall progress based on work item count completion 
-- Use delivery plans to review features for several teams and discuss cross-team dependencies 
+- Use delivery plans to review features for several teams to discuss cross-team dependencies 
 
 For more information, see the following articles:
 
@@ -352,7 +352,7 @@ For more information, see the following articles:
 
 Continuous improvement is at the heart of Agile methods. To improve your processes, you need to have shared goals and a shared plan. To initiate process improvement activities, consider adding them through regular practices, such as: 
 
-- Sprint planning 
+- Planning sprints
 - Setting sprint goals 
 - Conducting regular retrospectives 
 
@@ -386,9 +386,9 @@ Teams can define one or more dashboards to share information and monitor real-ti
 
 - Identify process improvement goals that your team can agree to, write them down and review them periodically  
 - Use team dashboards to share information and work tracking charts which you and your team review periodically  
-- At sprint planning meetings, have your team identify at least one sprint goal related to process improvement  
+- Have your team identify at least one sprint goal related to process improvement while at sprint planning meetings  
 - Conduct regular retrospectives to capture what went well, what didn't go well, and actions to improve  
-- Maintain an improvement tracking board, such as that available with the [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) Marketplace extension. 
+- Maintain an improvement tracking board, such as that available with the [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) Marketplace extension 
 
 For more information, see the following articles:
 
