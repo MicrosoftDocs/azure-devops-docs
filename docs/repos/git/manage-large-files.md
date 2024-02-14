@@ -93,7 +93,7 @@ Git LFS has some drawbacks that you should consider before adopting:
    Users must still take care to always pull the latest copy of a binary asset before beginning work.
 4. Azure Repos currently does not support using SSH in repos with Git LFS tracked files.   
 5. If a user drags and drops a binary file via the web interface into a repo which is configured for Git LFS, the binary will be committed to the repo and not the pointers that would be committed via the Git LFS client.
-6. There is no explicit file size limit; however, the limitation is governed by the available free space on our servers and the current server load.
+6. While there isn't a strict file size restriction, the actual performance and functionality could be constrained by the server's available free space and current workload.
 7. One file upload time limit is 1 hour.
 
 ### File format
