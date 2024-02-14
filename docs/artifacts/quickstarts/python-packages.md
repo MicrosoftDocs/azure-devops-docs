@@ -13,7 +13,7 @@ ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-This guide walks you through using Azure Artifacts to publish and consume Python packages to and from your feed on your local development environment. To publish and consume packages in your Azure Pipelines, see [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
+This guide walks you through using Azure Artifacts to publish and consume Python packages to and from your feed using the command line in your local development environment. To publish and consume packages in your Azure Pipelines, see [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
 
 ## Prerequisites
 
@@ -21,7 +21,6 @@ To run the following steps, you must have:
 
 ::: moniker range=">= azure-devops"
 
-* A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An Azure DevOps organization. [Create one for free](../../pipelines/get-started/pipelines-sign-up.md).
 * An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
 * Python 3.6 or later installed on your local machine, and an active Python virtual environment.
@@ -31,7 +30,6 @@ To run the following steps, you must have:
 
 ::: moniker range="< azure-devops"
 
-* A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * Access to an Azure DevOps Server collection.
 * An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
 * Python 3.6 or later installed on your local machine, and an active Python virtual environment.
@@ -135,7 +133,11 @@ The [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package 
 
 ## Manually configure authentication
 
-1. Create a [Personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read** scope to authenticate with Azure DevOps.
+You can manually configure authentication to publish packages via twine and consume packages via pip.  
+
+If you don't already have a personal access token, [create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read** scope to authenticate with Azure DevOps.
+
+### Consume packages with pip
 
 1. Select **Artifacts**, and then select your feed then select **Connect to feed**.
 
@@ -173,8 +175,61 @@ The [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package 
 
 When you connect to Azure DevOps for the first time, you're prompted for credentials. Enter your user name(any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
 
-> [!NOTE]
-> If you want to publish or consume your packages using Azure Pipelines, use the [Python Pip Authenticate](/azure/devops/pipelines/tasks/reference/pip-authenticate-v1) task to authenticate and install packages, or the [Python Twine Upload Authenticate](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) task to publish your packages.
+
+### Publish packages with twine
+
+To publish packages to your feed, you can use the twine package.
+
+1. Select **Artifacts**, and then select your feed then select **Connect to feed**.
+
+   :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot highlighting the connect to feed.":::
+
+1. Select **twine** under the **Python** section. 
+
+   :::image type="content" source="media/screenshot-create-new-feed-twine-selection.png" alt-text="A screenshot highlighting the twine package type.":::
+
+1. If connecting to your feed for the first time, select **Get the tools** to download and install the prerequisites.
+
+
+1. On your development machine, ensure that twine is installed.  
+
+    ```Command
+    pip install -- upgrade twine
+    ```
+1. Create a `.pyirc` file in your home directory. Make sure you don't check your personal access token into a public repository.
+
+    - **Project-scoped feed**:
+
+        ```
+        [distutils]
+        Index-servers =
+          <FEED_NAME>
+
+        [<FEED_NAME>]
+        Repository = https://pkgs.dev.azure.com/<ORGANIZATION>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/upload/
+        username = <USERNAME>
+        password = <YOUR_PERSONAL_ACCESS_TOKEN>
+        ```
+
+    - **Organization-scoped feed**:
+
+        ```
+        [distutils]
+        Index-servers =
+          <FEED_NAME>
+
+        [<FEED_NAME>]
+        Repository = https://pkgs.dev.azure.com/<ORGANIZATION>/_packaging/<FEED_NAME>/pypi/upload/
+        username = <USERNAME>
+        password = <YOUR_PERSONAL_ACCESS_TOKEN>
+        ```
+
+1. To install your package, run the following command in your project directory. On Windows, you might need to specify the `pyirc` file location with the `--config-file` option.
+
+    ```Command
+    twine upload --repository<FEED_NAME> dist/*
+    ```
+
 
 ## Related articles
 
