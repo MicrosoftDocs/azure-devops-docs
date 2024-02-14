@@ -64,8 +64,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>New Azure service connection secrets expire in three months</td><td>Pipelines</td><td>Future</td></tr>
 <tr>
 <tr>
-    <td rowspan="2"><a href="2024/sprint-232-update.md" data-raw-source="[11 January   2024](2024/sprint-232-update.md)"> 11 January  2024</a></td>
+    <td rowspan="3"><a href="2024/sprint-232-update.md" data-raw-source="[11 January   2024](2024/sprint-232-update.md)"> 11 January  2024</a></td>
     <td>Select a geography when creating a new Azure DevOps organization</td><td>General</td><td>Future</td></tr>
+    <td>Removed Visual Studio Subscriber option from group rules</td><td>General</td><td>Future</td></tr>
     <td>Code Coverage results for folders</td><td>Reporting</td><td>Future</td></tr>
 <tr>
 <tr>
