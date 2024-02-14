@@ -32,6 +32,8 @@ landingContent:
             url: ./work-items/guidance/choose-process.md
           - text: Agile process workflow
             url: ./work-items/guidance/agile-process-workflow.md
+          - text: Best practices for Agile project management
+            url: best-practices-agile-project-management.md
   - title: Get started
     linkLists:
       - linkListType: quickstart
@@ -156,7 +158,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Fix re-ordering & nesting issues
+          - text: Fix reordering & nesting issues
             url: ./backlogs/resolve-backlog-reorder-issues.md
           - text: Set up your Backlogs & Boards
             url: ./backlogs/set-up-your-backlog.md
