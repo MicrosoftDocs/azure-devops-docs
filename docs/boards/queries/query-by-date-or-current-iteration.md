@@ -548,7 +548,7 @@ Use date fields to filter your queries. Some of these fields are populated with 
 	<FIELD refname="Microsoft.VSTS.Common.ResolvedDate" />  
 	   <SERVERDEFAULT from="clock"  />  
 	</FIELD >  
-    ```
+```
 
 2. **Start Date** and **Finish Date** fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields might not appear on the work item form, but are calculated for the backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel.  
 
