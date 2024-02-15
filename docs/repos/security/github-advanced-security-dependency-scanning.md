@@ -132,8 +132,6 @@ A direct dependency is a component that you have in your repository. A transitiv
 
 Fixing a vulnerable transitive dependency usually takes the form of explicitly overriding the version of the vulnerable component used for each identified direct dependency. Once the root dependencies have upgraded their use of the vulnerable component to a safe version, you can upgrade each root dependency rather than multiple individual overrides.  
 
-To fix a vulnerable transitive dependency, override the version of the vulnerable component used for each identified direct dependency. Once the root dependencies upgrade their use of the vulnerable component to a safe version, you can upgrade each root dependency rather than have multiple individual overrides.  
-
 #### Updating dependencies for Yarn/Npm 
 
 Hypothetically, say this package has two vulnerabilities. One is for `axios`, a direct dependency, and one is for `acorn`, a transitive dependency (also known as an indirect dependency or dependency of dependency). 
