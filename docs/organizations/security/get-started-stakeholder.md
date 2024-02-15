@@ -23,7 +23,7 @@ Stakeholders are users with free but limited access to Azure DevOps features and
 Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, view and approve pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 ::: moniker-end  
 
-For more information, see the [Stakeholder access quick reference](stakeholder-access.md) the [feature matrix](https://azure.microsoft.com/services/devops/compare-features/).
+For more information, see the [Stakeholder access quick reference](stakeholder-access.md) and the [feature matrix](https://azure.microsoft.com/services/devops/compare-features/).
 
 ## Prerequisites
 
