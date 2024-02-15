@@ -356,9 +356,9 @@ The following table summarizes the main distinctions between the WITs and states
 Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state.
 
 > [!IMPORTANT]  
-> For Azure DevOps Services and Azure DevOps Server 2019, the default workflow transitions support any state to any state transition. Customize these workflows to restrict some transitions .See [Customize work tracking objects to support your team's processes](../../../reference/customize-work.md).  
+> For Azure DevOps Services and Azure DevOps Server 2019, the default workflow transitions support any state to any state transition. Customize these workflows to restrict some transitions. For more information, see [Customize work tracking objects to support your team's processes](../../../reference/customize-work.md).  
 > 
-> Also, view the supported workflow transitions for each work item type by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Markeplace extension. This extension adds a new hub under Boards labeled **State Visualizer**. On that page choose a work item type and view the workflow state model.  
+> Also, view the supported workflow transitions for each work item type by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Marketplace extension. This extension adds a new hub under Boards labeled **State Visualizer**. On that page choose a work item type and view the workflow state model.  
 
 The following diagrams show the typical forward progression of 
 those WITs used to track work and code defects for the three default processes. 
