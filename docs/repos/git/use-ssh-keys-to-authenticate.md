@@ -53,7 +53,7 @@ The following steps cover configuration of SSH key authentication on the followi
 To use key-based authentication, you first need to generate public/private key pairs for your client. **ssh-keygen.exe** is used to generate key files and the algorithms DSA, RSA, ECDSA, or Ed25519 can be specified. If no algorithm is specified, RSA is used.
 
 >[!NOTE]
-> The only SSH key type supported by Azure DevOps is _RSA_.
+> The only SSH key type supported by Azure DevOps is _RSA_
 
 To generate key files using the RSA algorithm, run the following command from a PowerShell or another shell such as `bash` on your client:
 
@@ -271,20 +271,28 @@ Associate the public key generated in the previous step with your user ID.
 ### Q: SSH cannot establish a connection. What should I do?
 
 **A:** There are multiple different problems that you may experience:
-
-```Output
-Unable to negotiate with <IP> port 22: no matching host key type found. Their offer: ssh-rsa
+```output
+ssh-rsa is about to be deprecated and your request has been throttled. Please use rsa-sha2-256 or rsa-sha2-512 instead. Your session will continue automatically. For more details see https://devblogs.microsoft.com/devops/ssh-rsa-deprecation.
+```
+or
+```output
+You’re using ssh-rsa that is about to be deprecated and your request has been blocked intentionally. Any SSH session using SSH-RSA is subject to brown out (failure during random time periods). Please use rsa-sha2-256 or rsa-sha2-512 instead. For more details see https://devblogs.microsoft.com/devops/ssh-rsa-deprecation.
+```
+or
+```output
+You’re using ssh-rsa that is unsupported. Please use rsa-sha2-256 or rsa-sha2-512 instead. For more details see https://devblogs.microsoft.com/devops/ssh-rsa-deprecation.
 ```
 
-Modify your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
+Verify if you have enforced ssh-rsa.
+
+Modify your SSH config for Azure DevOps by allowing usage of rsa-sha2-256 or rsa-sha2-512. Ensure that your ~/.ssh/config (%UserProfile%\.ssh\config on Windows) file does not have the following lines:
 
 ```
 Host ssh.dev.azure.com vs-ssh.visualstudio.com
   HostkeyAlgorithms +ssh-rsa
 ```
+For more details, refer to the [ssh-rsa deprecation blockpost](https://devblogs.microsoft.com/devops/ssh-rsa-deprecation/).
 
-> [!IMPORTANT]
-> OpenSSH deprecated the `ssh-rsa` public key signature algorithm in [version 8.2](https://www.openssh.com/txt/release-8.2) and disabled it by default in [version 8.8](https://www.openssh.com/txt/release-8.8).
 
 ```Output
 Unable to negotiate with <IP> port 22: no matching MAC found. Their offer: hmac-sha2-256,hmac-sha2-512
