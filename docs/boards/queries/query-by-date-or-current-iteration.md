@@ -64,7 +64,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
    :::column-end::: 
    :::column span="3":::
       = , <> , Under, Not Under  
-      **Macros**: `@CurrentIteration`<sup>2</sup> and `@CurrentIteration +/- n`<sup>3</sup> valid with the **Iteration Path** field.
+      **Macros**: `@CurrentIteration`<sup>1</sup> and `@CurrentIteration +/- n`<sup>2</sup> valid with the **Iteration Path** field.
    :::column-end:::
 :::row-end:::
 ---
@@ -85,7 +85,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
       **TreePath**
    :::column-end::: 
    :::column span="3":::
-     `=`, `<>` , `Under`, `Not Under`
+     `=`, `<>` , `Under`, `Not Under` 
       **Macros**: `@CurrentIteration`<sup>2</sup> is valid with the **Iteration Path** field
    :::column-end:::
 :::row-end:::
@@ -273,7 +273,7 @@ Any item assigned to a sprint that corresponds to the current iteration path for
 Azure Boards adds a team parameter when you select the **@CurrentIteration** or **@CurrentIteration +/- _n_** macros. The team parameter is derived from your current [team context](#team_view). 
 
 > [!div class="mx-imgBorder"]
-> ![Query filter using the CurrentIteration macro with team parameter](media/query-date-iteration/at-current-with-team-parameter.png)  
+> ![Screenshot of the Query filter using the CurrentIteration macro with team parameter.](media/query-date-iteration/at-current-with-team-parameter.png)  
 
 > [!TIP]  
 > If the **@CurrentIteration** macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
@@ -281,7 +281,7 @@ Azure Boards adds a team parameter when you select the **@CurrentIteration** or 
 To change the team parameter the system automatically sets, you choose it by entering the name of the team into the parameter field added below the **@CurrentIteration** macro.  
 
 > [!div class="mx-imgBorder"]
-> ![Choose team parameter](media/query-date-iteration/choose-team-parameter.png)
+> ![Screenshot showing Choose team parameter.](media/query-date-iteration/choose-team-parameter.png)
 
 ::: moniker-end
 
@@ -290,7 +290,7 @@ To change the team parameter the system automatically sets, you choose it by ent
 Before creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
 
 > [!div class="mx-imgBorder"]
-> ![Query filter using the CurrentIteration macro](media/query-date-iteration/at-current-no-team-specified.png)  
+> ![Screenshot showing Query filter using the CurrentIteration macro.](media/query-date-iteration/at-current-no-team-specified.png)  
 
 ::: moniker-end
 
@@ -304,7 +304,7 @@ Use the **@CurrentIteration +/- <i>n</i>** macro when you want to track the work
 
 > [!NOTE]
 > For the **@CurrentIteration +/- <i>n</i>** macro to work, the team must have selected **Iteration Paths** that meet the **+/- _n_**
-> criteria and date ranges encompass the current date for the **@CurrentIteration**. For details about team selection of Iteration Paths, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+> criteria and date ranges must encompass the current date for the **@CurrentIteration**. For details about team selection of Iteration Paths, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
@@ -323,7 +323,7 @@ To use this macro, the specified team must [select a set of sprints](../../organ
 
 List work items that were defined for a sprint but later moved out using a query with a clause that contains the **Was Ever** operator for the **Iteration Path**. Only construct this query using the [WIQL syntax](wiql-syntax.md). Edit the WIQL syntax in the Query Editor by installing the [Wiql Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
 
-For example, the following syntax queries for work items that meet the following criteria: 
+For example, the following syntax queries for work items meet the following criteria: 
 - Defined in the current project 
 - Work item type equals User Story or Bug
 - Work items are under the Fabrikam Fiber Web team Area Path 
@@ -372,9 +372,9 @@ The Query Editor view of the syntax appears as shown.
 
 ## List work items added to a sprint after the start date 
 
-To list newly created work items added to a sprint after its start date, use a query similar to the one shown in the following image. This query works by filtering for work items assigned to the current sprint but were created after the start of the sprint date. We use the clause, **`created Date = @Today - 28`**. 
+To list newly created work items added to a sprint after its start date, use a query similar to the one shown in the following image. This query works by filtering for work items assigned to the current sprint but were created after the start of the sprint date. We use the clause **`created Date = @Today - 28`**. 
 
-:::image type="content" source="media/example-work-item-queries/query-work-items-added-to-sprint.png" alt-text="Screenshot of Query Editor, Work Items newly created and added to a sprint after it's start date.":::
+:::image type="content" source="media/example-work-item-queries/query-work-items-added-to-sprint.png" alt-text="Screenshot of Query Editor, Work Items newly created and added to a sprint after its start date.":::
 
 For other options for querying changes to sprint scope, see [About Sprints, Scrum and project management, Sprint scope change](../sprints/scrum-overview.md#sprint-scope-change).
 
@@ -542,15 +542,15 @@ Use date fields to filter your queries. Some of these fields are populated with 
  
 1. See also [Query by assignment or workflow changes, Date, and Identity fields](query-by-workflow-changes.md).
 
-1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state.  
+2. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state.  
 	
-```xml
+   ```xml
 	<FIELD refname="Microsoft.VSTS.Common.ResolvedDate" />  
 	   <SERVERDEFAULT from="clock"  />  
 	</FIELD >  
-```
+   ```
 
-2. **Start Date** and **Finish Date** fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields might not appear on the work item form, but are calculated for the backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel.  
+3. **Start Date** and **Finish Date** fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields might not appear on the work item form, but are calculated for the backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel.  
 
 	[!INCLUDE [temp](../includes/deprecate-project.md)]
 
