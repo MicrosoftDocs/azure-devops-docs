@@ -328,7 +328,7 @@ To clean up your local development environment:
 
 - [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
 
-- [Build Python apps](../../pipelines/ecosystems/python.md)[
+- [Build Python apps](../../pipelines/ecosystems/python.md)
 
 ## Related articles
 
@@ -336,6 +336,3 @@ To clean up your local development environment:
 
 - [Python virtual environment](https://docs.python.org/3/library/venv.html)
 
-- [twine](https://pypi.org/project/twine/)
-
-- [pip](https://pypi.org/project/pip/)
