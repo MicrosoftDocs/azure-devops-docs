@@ -297,7 +297,7 @@ For more details, refer to the [blog post](https://devblogs.microsoft.com/devops
 
 **A:** There are multiple different problems that you may experience:
 
-1. **Use of unsupported SSH-RSA**
+- **Use of unsupported SSH-RSA**
 
    ```output
    You’re using ssh-rsa that is unsupported. Please use rsa-sha2-256 or rsa-sha2-512 instead. For more details see https://devblogs.microsoft.com/devops/ssh-rsa-deprecation.
@@ -314,7 +314,7 @@ For more details, refer to the [blog post](https://devblogs.microsoft.com/devops
 
    For more details, refer to the [blog post](https://devblogs.microsoft.com/devops/ssh-rsa-deprecation/).
 
-2. **No matching host key**
+- **No matching host key**
 
    This should happen neither on Azure DevOps Service nor on more recent Azure DevOps Server versions as mentioned in the [blog post](https://devblogs.microsoft.com/devops/ssh-rsa-deprecation/).
 
@@ -332,7 +332,7 @@ For more details, refer to the [blog post](https://devblogs.microsoft.com/devops
   > [!IMPORTANT]
   > OpenSSH deprecated the `ssh-rsa` public key signature algorithm in [version 8.2](https://www.openssh.com/txt/release-8.2) and disabled it by default in [version 8.8](https://www.openssh.com/txt/release-8.8).
 
-3. **No matching MAC**
+- **No matching MAC**
 
    ```Output
    Unable to negotiate with <IP> port 22: no matching MAC found. Their offer: hmac-sha2-256,hmac-sha2-512
@@ -345,7 +345,7 @@ For more details, refer to the [blog post](https://devblogs.microsoft.com/devops
      MACs +hmac-sha2-512,+hmac-sha2-256
    ```
 
-4. **No matching key exchange method**
+- **No matching key exchange method**
 
    ```Output
    Unable to negotiate with <IP> 22: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256
