@@ -1,7 +1,7 @@
 ---
 title: Ignore files in your Git repo
 titleSuffix: Azure Repos
-description: Learn how to exclude files from Git version control by using gitignore and exclude files, the git update-index command, and repo management.
+description: Learn how to exclude files from Git version control by using files, commands, and repo management.
 ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.service: azure-devops-repos
 ms.topic: how-to
@@ -15,29 +15,31 @@ ms.subservice: azure-devops-repos-git
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Not every file in your project should be tracked by Git. Temporary files from your development environment, test outputs, and logs, are all examples of files that probably don't need to be tracked. You can use different mechanisms to let Git know which files in your project shouldn't be tracked, and to ensure Git won't report changes to those files. For files that aren't tracked by Git, you can use a `.gitignore` or `exclude` file. For files that are tracked by Git, you can tell Git to stop tracking them and to ignore changes.
+Git shouldn't track every file in your project. Temporary files from your development environment, test outputs, and logs are all examples of files that probably don't need to be tracked.
 
-In this article you learn how to:
+You can use various mechanisms to let Git know which files in your project shouldn't be tracked, and to ensure that Git won't report changes to those files. For files that Git doesn't track, you can use a `.gitignore` or `exclude` file. For files that Git does track, you can tell Git to stop tracking them and to ignore changes.
+
+In this article, you learn how to:
 
 > [!div class="checklist"]
-> * Ignore changes to untracked files by using a `.gitignore` file
-> * Ignore changes to untracked files by using an `exclude` file
-> * Stop tracking a file and ignore changes using `git update-index`
-> * Stop tracking a file and ignore changes using `git rm`
+>
+> * Ignore changes to untracked files by using a `.gitignore` file.
+> * Ignore changes to untracked files by using an `exclude` file.
+> * Stop tracking a file and ignore changes by using the `git update-index` command.
+> * Stop tracking a file and ignore changes by using the `git rm` command.
 
+## Use a .gitignore file
 
-## Use a gitignore file
+You can tell Git not to track certain files in your project by adding and configuring a [.gitignore](https://git-scm.com/docs/gitignore) file. Entries in a `.gitignore` file apply only to untracked files. They don't prevent Git from reporting changes to tracked files. Tracked files are files that were committed and exist in the last Git snapshot.
 
-You can tell Git not to track certain files in your project by adding and configuring a [`.gitignore`](https://git-scm.com/docs/gitignore) file. Entries in a `.gitignore` file only apply to untracked files, and won't prevent Git from reporting changes to tracked files. Tracked files are files that were committed and exist in the last Git snapshot.
+Each line in a `.gitignore` file specifies a file search pattern relative to the `.gitignore` file path. The [.gitignore syntax](https://git-scm.com/docs/gitignore) is flexible and supports the use of wildcards to specify individual or multiple files by name, extension, and path. Git matches `.gitignore` search patterns to the files in your project to determine which files to ignore.
 
-Each line in a `.gitignore` file specifies a file search pattern relative to the `.gitignore` file path. The [`.gitignore` syntax](https://git-scm.com/docs/gitignore) is flexible and supports the use of wildcards to specify individual or multiple files by name, extension, and path. Git matches `.gitignore` search patterns to the files in your project to determine which files to ignore.
+Typically, you just add a `.gitignore` file to the root folder of your project. However, you can add a `.gitignore` file to any project folder to let Git know which files to ignore within that folder and its subfolders at any nested depth. For multiple `.gitignore` files, the file search patterns that a `.gitignore` file specifies within a folder take precedence over the patterns that a `.gitignore` file specifies within a parent folder.
 
-Typically, you'll just add a `.gitignore` file to the root folder of your project. However, you can add a `.gitignore` file to any project folder to let Git know which files to ignore within that folder and its subfolders at any nested depth. For multiple `.gitignore` files, the file search patterns specified by a `.gitignore` file within a folder take precedence over the patterns specified by a `.gitignore` file within a parent folder.
-
-You can manually create a `.gitignore` file and add file pattern entries to it, or save time by downloading a `.gitignore` template for your development environment from the GitHub [`gitignore`](https://github.com/github/gitignore) repo. One of the benefits of using a `.gitignore` file is that you can [commit](commits.md) changes and share it with others.
+You can manually create a `.gitignore` file and add file pattern entries to it. Or you can save time by downloading a `.gitignore` template for your development environment from the GitHub [gitignore repo](https://github.com/github/gitignore). One of the benefits of using a `.gitignore` file is that you can [commit](commits.md) changes and share it with others.
 
 > [!NOTE]
-> Visual Studio automatically creates a `.gitignore` file for the Visual Studio development environment when you [create a new Git repo](creatingrepo.md#create-a-local-git-repo-from-an-existing-solution).
+> Visual Studio automatically creates a `.gitignore` file for the Visual Studio development environment when you [create a Git repo](creatingrepo.md#create-a-local-git-repo-from-an-existing-solution).
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
@@ -103,8 +105,7 @@ As soon as you modify a `.gitignore` file, Git updates the list of files that it
 > [!NOTE]
 > Windows users must use a forward slash path separator in a `.gitignore` file instead of a backslash. All users must add a trailing `/` when specifying a folder.
 
-
-### Use a global gitignore file
+### Use a global .gitignore file
 
 You can designate a `.gitignore` file as a global ignore file that applies to all local Git repos. To do so, use the `git config` command as follows:
 
@@ -114,7 +115,6 @@ git config core.excludesfile <gitignore file path>
 
 A global `.gitignore` file helps ensure that Git doesn't commits certain file types, such as compiled binaries, in any local repo. File search patterns in a repo-specific `.gitignore` file have precedence over patterns in a global `.gitignore` file.
 
-
 ## Use an exclude file
 
 You can also add file search pattern entries to the `exclude` file in the `.git/info/` folder of your local repo. The `exclude` file lets Git know which untracked files to ignore and uses the same file search pattern syntax as a `.gitignore` file.
@@ -123,8 +123,7 @@ Entries in an `exclude` file only apply to untracked files, and won't prevent Gi
 
 Since Git doesn't commit or push the `exclude` file, you can safely use it to ignore files on your local system without affecting anyone else.
 
-
-## Use Git update-index to ignore changes
+## Use git update-index to ignore changes
 
 Sometimes it's convenient to temporarily stop tracking a local repo file and have Git ignore changes to the file. For example, you might want to customize a settings file for your development environment without the risk of committing your changes. To do so, you can run the `git update-index` command with the `skip-worktree`flag:
 
@@ -142,8 +141,7 @@ git update-index --assume-unchanged <file path>
 
 To resume tracking, run the `git update-index` command with the `--no-assume-unchanged` flag.
 
-
-## Use Git rm to ignore changes
+## Use git rm to ignore changes
 
 Entries in a `.gitignore` or `exclude` file have no effect on files that Git already tracks. Git tracks files that you've previously committed. To permanently remove a file from the Git snapshot so that Git no longer tracks it, but without deleting it from the filesystem, run the following commands:
 
@@ -154,14 +152,12 @@ git commit <some message>
 
 Then, use a `.gitignore` or `exclude` file entry to prevent Git from reporting changes to the file.
 
-
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Review history](review-history.md)
 
-
 ## Related articles
 
-- [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
-- [Save your work with commits](commits.md)
+* [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
+* [Save your work with commits](commits.md)
