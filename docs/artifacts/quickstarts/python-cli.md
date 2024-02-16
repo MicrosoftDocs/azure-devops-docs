@@ -2,7 +2,7 @@
 title: Publish and consume Python packages using the CLI
 description: Publish and consume Python packages from the command-line interface.
 ms.service: azure-devops-artifacts
-ms.topic: quickstart
+ms.topic: how-to
 ms.custom: engagement-fy23, devx-track-python
 ms.date: 02/16/2024
 monikerRange: '>= azure-devops-2019'
@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Azure Artifacts enables developers to publish and consume packages from Azure Artifacts feeds and public registries like pypi.org. By following this quickstart guide, you can learn how to use the command line to publish and consume Python packages.
+Azure Artifacts enables developers to publish and consume Python packages from Azure Artifacts feeds and public registries like pypi.org. By following this quickstart guide, you can learn how to use the command line to publish and consume Python packages.
 
 ## Prerequisites
 
@@ -30,7 +30,6 @@ To run the following steps, you must have:
 
 ::: moniker range="< azure-devops"
 
-- A GitHub account where you can create a repository. [Create one for free](https://github.com).
 - Access to an Azure DevOps Server collection.
 - An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
 - An Azure Artifacts feed. If you don't have one, [create a feed](python-packages.md#create-a-feed).
@@ -40,39 +39,27 @@ To run the following steps, you must have:
 
 ## Publish Python packages
 
+Azure Artifacts support twine to upload Python packages to your feed. 
+
+### Configure your Python environment with twine
+
+To publish Python packages to your feed, you need to install twine and configure your `.pypirc` file.
+
 1. Go to your Azure DevOps project.
 
-1. Select **Artifacts** and then select your feed from the dropdown menu.
+1. Select **Artifacts** and select your feed from the drop-down menu.
 
-1. Select **Connect to feed** and then select **twine** from the left navigation panel.
+1. Select **Connect to feed** and select **twine** from the Python section.
 
-1. If connecting to the Azure Artifacts feed with twine for the first time, select **Get the tools** to install the prerequisites.
+1. If connecting to the Azure Artifacts feed with twine for the first time, select **Get the tools** and follow the steps to install the prerequisites.
  
-1. Download and install Python, and then run the following command to install the latest version of Azure Artifacts keyring.
+1. Follow the instructions in **Project setup** to configure the `.pyirc` file. Copy the snippet provided in the **Project setup** section and paste it into your `.pypirc` file.
 
-    ```Command
-    pip install twine keyring artifacts-keyring
-    ```
-
-1. Add a `.pypirc` configuration file to your home directory on Linux and macOS or your project directory on Windows.
-
-    > [!NOTE]
-    > If you already have a `.pypirc` file with credentials for the public PyPI index, it is recommended to remove the [pypi] section from your file to prevent unintended publication of private packages.
-
-1. Paste the following snippet to your `.pypirc` file.
-
-    ```Command
-    [distutils]
-    Index-servers =
-      <FEED_NAME>
-    
-    [<FEED_NAME>]
-    Repository = https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/PROJECT_NAME/_packaging/<FEED_NAME>/pypi/upload/
-    ```
+## Build your Python package
 
 1. Create a source and wheel distributions.  
 
-    If using setuptools, run the following command.
+    If using setuptools, run the following command from your local project root directory.
 
    ```Command
    python setup.py sdist bdist_wheel
@@ -85,6 +72,8 @@ To run the following steps, you must have:
     python -m build
     ```   
 
+### Publish your Python package to your feed
+
 1. Run the following command to publish your package to your Azure Artifacts feed. On Windows, use the `--config-file` parameter to specify the location of your `.pypirc` file.
 
    ```
@@ -96,7 +85,11 @@ To run the following steps, you must have:
 
 ## Consume Python packages
 
-1. Go to your project, select **Artifacts**, then select your feed from the dropdown menu.
+Azure Artifacts support pip to install Python package from your feed.
+
+### Configure your Python environment with pip
+
+1. Go to your project, select **Artifacts**, then select your feed from the drop-down menu.
 
 1. Select **Connect to feed** and then select **pip** from the left navigation panel.
 
@@ -123,7 +116,9 @@ To run the following steps, you must have:
     extra-index-url=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/simple/
     ```
 
-1. To install your package from the feed, run the following command.
+### Install your Python package from your feed
+
+1. To install your package from the feed, run the following command replacing \<PACKAGE_NAME\> with the package from your feed.
 
    ```
    pip install <PACKAGE_NAME>
