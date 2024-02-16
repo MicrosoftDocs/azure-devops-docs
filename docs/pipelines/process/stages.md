@@ -3,7 +3,7 @@ title: Stages in Azure Pipelines
 description: Understand stages in Azure Pipelines
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
 ms.topic: conceptual
-ms.date: 12/22/2022
+ms.date: 02/16/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,7 +15,10 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-A stage is a logical boundary in the pipeline. It can be used to mark separation of concerns (for example, Build, QA, and production). Each stage contains one or more jobs. When you define multiple stages in a pipeline, by default, they run one after the other. 
+
+A stage is a logical boundary in an Azure DevOps pipeline. Stages can be used to group actions in your software development process (for example, build the app, run tests, deploy to pre-production). Each stage contains one or more jobs. 
+
+When you define multiple stages in a pipeline, by default, they run one after the other. Stages can also depend on each other. You can use the `dependsOn` keyword to define [dependencies](#specify-dependencies). Stages also can run based on the result of a previous stage with [conditions](#conditions). 
 
 For Classic pipelines, You can organize the deployment jobs in your release pipeline into stages.
 
@@ -270,7 +273,8 @@ You control the dependencies by setting the triggers on each stage of the releas
 * With an **After stage** trigger, a stage will start after all the dependent stages complete. Using this, you can model fan-out and fan-in behavior for stages.
 
 * * *
-<h2 id="conditions">Conditions</h2>
+
+## Define conditions
 
 You can specify the conditions under which each stage runs with [expressions](expressions.md). By default, a stage runs if it doesn't depend on any other stage, or if all of the stages that it depends on have completed and succeeded. You can customize this behavior by forcing a stage to run even if a previous stage fails or by specifying a custom condition. 
 
