@@ -66,8 +66,8 @@ To run the following steps, you must have:
 
 1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
 
-Enter the following information for your feed:
- 
+1. Enter the following information for your feed:
+     
     1. Enter a descriptive **Name** for your feed.
     1. Define its **Visibility** (indicating who can view packages within the feed). 
     1. Specify the **Scope** of your feed.  
@@ -142,37 +142,37 @@ In an elevated command prompt window, run the following command to install the a
 
 1. Prepare your local your Python environment.
 
-    #[Windows](#tab/Windows)
-    
-    1. Ensure pip is installed and up to date:
+#[Windows](#tab/Windows)
 
-        ```Command
-        python -m pip install --upgrade pip
-        ```
+1. Ensure pip is installed and up to date:
 
-    1. To create and activate a Python virtual environment:
+    ```Command
+    python -m pip install --upgrade pip
+    ```
 
-        ```Command
-        python -m venv myenv
-        myenv/Scripts/activate
-        ```
-    
-    #[Linux/Mac](#tab/Linux/Mac)
-    
-    1. Ensure pip is installed and up to date:
+1. To create and activate a Python virtual environment:
 
-        ```Command
-        python3 -m pip install --upgrade pip
-        ```
+    ```Command
+    python -m venv myenv
+    myenv/Scripts/activate
+    ```
 
-    1. To create and activate a Python virtual environment:
+#[Linux/Mac](#tab/Linux/Mac)
 
-        ```Command
-        python3 -m venv myenv
-        source myenv/bin/activate
-        ```
+1. Ensure pip is installed and up to date:
 
-    ---
+    ```Command
+    python3 -m pip install --upgrade pip
+    ```
+
+1. To create and activate a Python virtual environment:
+
+    ```Command
+    python3 -m venv myenv
+    source myenv/bin/activate
+    ```
+
+---
     
 1. Copy the index-url from the **Project setup** section of the **Connect to feed** dialog.
 
@@ -243,37 +243,37 @@ Use the twine to upload your package to your Azure Artifacts feed.
 
 1. Prepare your local your Python environment.
 
-    #[Windows](#tab/Windows)
-    
-    1. Ensure pip is installed and up to date:
+#[Windows](#tab/Windows)
 
-        ```Command
-        python -m pip install --upgrade pip
-        ```
+1. Ensure pip is installed and up to date:
 
-    1. Create and activate a Python virtual environment:
+    ```Command
+    python -m pip install --upgrade pip
+    ```
 
-        ```Command
-        python -m venv myenv
-        myenv/Scripts/activate
-        ```
-    
-    #[Linux/Mac](#tab/Linux/Mac)
-    
-    1. Ensure pip is installed and up to date:
+1. Create and activate a Python virtual environment:
 
-        ```Command
-        python3 -m pip install --upgrade pip
-        ```
+    ```Command
+    python -m venv myenv
+    myenv/Scripts/activate
+    ```
 
-    1. To create and activate a Python virtual environment:
+#[Linux/Mac](#tab/Linux/Mac)
 
-        ```Command
-        python3 -m venv myenv
-        source myenv/bin/activate
-        ```
-    
-    ---
+1. Ensure pip is installed and up to date:
+
+    ```Command
+    python3 -m pip install --upgrade pip
+    ```
+
+1. To create and activate a Python virtual environment:
+
+    ```Command
+    python3 -m venv myenv
+    source myenv/bin/activate
+    ```
+
+---
 
 1. Add a *pip.ini* (Windows) or a *pip.conf* (Mac/Linux) file to the root directory of your virtualenv. Copy the `pip.ini` content from the **Project setup** section of the **Connect to feed** dialog and add it to your *pip.ini* or *pip.conf* file.
     
