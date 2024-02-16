@@ -156,8 +156,8 @@ In an elevated command prompt window, run the following command to install the a
         python -m venv myenv
         myenv/Scripts/activate
         ```
-    
-    # [Linux/Mac](#tab/LinuxMac)
+
+    # [Linux and macOS](#tab/LinuxMac)
     
     1. Ensure pip is installed and up to date:
     
@@ -174,11 +174,11 @@ In an elevated command prompt window, run the following command to install the a
     
     ---
         
-1. Copy the index-url from the **Project setup** section of the **Connect to feed** dialog.
+1. Copy the `index-url` from the **Project setup** section of the **Connect to feed** dialog.
 
    :::image type="content" source="media/screenshot-pip-connect-to-feed-index-url.png" alt-text="A screenshot of the index-url in the Connect to feed dialog."::: 
 
-1. To install a package from your feed, run the following command replacing \<PACKAGE_NAME\> with the package name from your feed and \<INDEX_URL\> with the index-url you copied from the **Connect to feed** dialog:
+1. To install a package from your feed, run the following command replacing \<PACKAGE_NAME\> with the package name from your feed and \<INDEX_URL\> with the index url you copied from the **Connect to feed** dialog:
 
     ```Command
     pip install <PACKAGE_NAME> --index-url <INDEX_URL>
@@ -257,8 +257,8 @@ Use the twine to upload your package to your Azure Artifacts feed.
         python -m venv myenv
         myenv/Scripts/activate
         ```
-    
-    # [Linux/Mac](#tab/LinuxMac)
+
+    # [Linux and macOS](#tab/LinuxMac)
     
     1. Ensure pip is installed and up to date:
     
