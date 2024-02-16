@@ -4,7 +4,7 @@ description: Publish and consume Python packages from the command-line interface
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.custom: engagement-fy23, devx-track-python
-ms.date: 02/16/2024
+ms.date: 02/18/2024
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
@@ -53,11 +53,11 @@ To publish Python packages to your feed, you need to install twine and configure
 
 1. If connecting to the Azure Artifacts feed with twine for the first time, select **Get the tools** and follow the steps to install the prerequisites.
  
-1. Follow the instructions in **Project setup** to configure the `.pyirc` file. Copy the snippet provided in the **Project setup** section and paste it into your `.pypirc` file.
+1. Follow the instructions in **Project setup** to configure the `.pypirc` file. Copy the snippet provided in the **Project setup** section and paste it into your `.pypirc` file.
 
 ## Build your Python package
 
-1. Create a source and wheel distributions.  
+1. Create source and wheel distributions.  
 
     If using setuptools, run the following command from your local project root directory.
 
@@ -85,7 +85,7 @@ To publish Python packages to your feed, you need to install twine and configure
 
 ## Consume Python packages
 
-Azure Artifacts support pip to install Python package from your feed.
+Azure Artifacts supports pip to install Python package from your feed.
 
 ### Configure your Python environment with pip
 
@@ -95,27 +95,41 @@ Azure Artifacts support pip to install Python package from your feed.
 
 1. If connecting to the Azure Artifacts feed with pip for the first time, select **Get the tools** to install the prerequisites.
 
-1. Download and install Python, and then run the following command to update your Python package installer.
+    1. Download and install Python, and then run the following command to update your Python package installer.
+    
+        ```Command
+        python -m pip install --upgrade pip
+        ```
+    
+    1. Install the latest Azure Artifacts keyring.
+    
+        ```Command
+        pip install keyring artifacts-keyring
+        ```
+    1.  Select **Close** to close the **Get the tools** dialog.
 
-    ```Command
-    python -m pip install --upgrade pip
-    ```
+1. Follow the instructions in the **Project setup** section.
 
-1. Install the latest Azure Artifacts keyring.
+    1. Create and activate a Python virtual environment.
 
-    ```Command
-    pip install keyring artifacts-keyring
-    ```
+        # [Windows](#tab/Windows)
+    
+        ```Command
+        python -m venv myenv
+        myenv/Scripts/activate
+        ```
 
-1. [Create a virtual environment](https://docs.python.org/3/library/venv.html) if you don't have one already.
+       # [Linux and macOS](#tab/LinuxMac)
+    
+        ```Command
+        python3 -m venv myenv
+        source myenv/bin/activate
+    
+        ---
 
-1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) configuration file to the root of your virtualenv.
+    1. Create a `pip.ini` (Windows) or `pip.conf` (Linux/macOS) in the root the the virtual environment and copy the snippet provided in the **Project setup** section and paste it into the file.
 
-    ```Command
-    [global]
-    extra-index-url=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/simple/
-    ```
-
+    
 ### Install your Python package from your feed
 
 1. To install your package from the feed, run the following command replacing \<PACKAGE_NAME\> with the package from your feed.
