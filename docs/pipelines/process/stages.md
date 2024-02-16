@@ -20,8 +20,6 @@ A stage is a logical boundary in an Azure DevOps pipeline. Stages can be used to
 
 When you define multiple stages in a pipeline, by default, they run one after the other. Stages can also depend on each other. You can use the `dependsOn` keyword to define [dependencies](#specify-dependencies). Stages also can run based on the result of a previous stage with [conditions](#conditions). 
 
-For Classic pipelines, You can organize the deployment jobs in your release pipeline into stages.
-
 To learn how stages work with parallel jobs and licensing, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md). 
 
 To find out how stages relate to other parts of a pipeline such as jobs, see [Key pipelines concepts](../get-started/key-pipelines-concepts.md). 
@@ -51,9 +49,8 @@ This version of TFS doesn't support YAML.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-You can organize the deployment jobs in your release pipeline into stages.
-Stages are the major divisions in your release pipeline: "run functional tests", "deploy to pre-production",
-and "deploy to production" are good examples of release stages.
+Organize the deployment jobs in your release pipeline into stages.
+Stages are the major divisions in your release pipeline: "run functional tests", "deploy to pre-production", and "deploy to production" are good examples of release stages.
 
 <a name="approvals"></a><a name="conditions"></a>
 A stage in a release pipeline consists of [jobs](../process/phases.md) and [tasks](../process/tasks.md).
@@ -368,26 +365,16 @@ stage. **Queuing policies** give you that control.
 The options you can choose for a queuing policy are:
 
 * **Number of parallel deployments**:
-  Use this option if you dynamically provision new resources
-  in your stage and it's physically capable of handling
-  the deployment of multiple releases in parallel, but you want
-  to limit the number of parallel deployments.
+  Use this option if you dynamically provision new resources in your stage and it's physically capable of handling the deployment of multiple releases in parallel, but you want to limit the number of parallel deployments.
 
 * If you specify a maximum number of deployments, two more options appear:
 
   - **Deploy all in sequence**:
-    Use this option if you want to deploy all the releases
-    sequentially into the same shared physical resources.
-    By deploying the builds in turn, one after the other, you
-    ensure that two deployment jobs don't target the same
-    physical resources concurrently, even if there are
-    multiple build and release agents available. You
-    also ensure that pre-deployment approval requests for the
-    stage are sent out in sequence.
+    Use this option if you want to deploy all the releases sequentially into the same shared physical resources.
+    By deploying the builds in turn, one after the other, you ensure that two deployment jobs don't target the same physical resources concurrently, even if there are multiple build and release agents available. You also ensure that pre-deployment approval requests for the stage are sent out in sequence.
 
   - **Deploy latest and cancel the others**:
-    Use this option if you're producing builds faster
-    than releases, and you only want to deploy the latest build.
+    Use this option if you're producing builds faster than releases, and you only want to deploy the latest build.
 
 To understand how these options work, consider a scenario
 where releases **R1**, **R2**, **...**, **R5** of a
@@ -432,8 +419,7 @@ defined.
 
 You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control if and when a stage in a pipeline can consume a resource. As an owner of a resource, such as an environment, you can define checks that must be satisfied before a stage consuming that resource can start. 
 
-Currently, manual approval checks are supported on environments. 
-For more information, see [Approvals](approvals.md).
+Currently, manual approval checks are supported on environments. For more information, see [Approvals](approvals.md).
 
 ::: moniker-end
 
