@@ -3,7 +3,7 @@ title: Get started with Python packages in Azure Artifacts
 description: Quickly start hosting python packages with Azure.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
-ms.date: 02/16/2024
+ms.date: 02/18/2024
 monikerRange: '>= azure-devops-2019'
 ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 "recommendations": "true"
@@ -13,7 +13,7 @@ ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-In this quickstart, you'll learn you how to publish and consume Python packages using an Azure Artifacts feed from the command line in your local development environment. 
+In this quickstart, you'll learn how to publish and consume Python packages using an Azure Artifacts feed from the command line in your local development environment. 
 
 To publish and consume packages in your Azure Pipelines, see [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
 
@@ -40,7 +40,7 @@ To run the following steps, you must have:
 * Python 3.8 or later installed in your local development environment.
 * pip 19.2 and twine 1.13.0 or higher.
 * A Python package to publish from your local machine to your feed.
-* An Azure DevOps personal access token (PAT) with **Packaging** > **Read** scope. To create one, see [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
+
 
 ::: moniker-end
 
@@ -74,7 +74,8 @@ To run the following steps, you must have:
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-dialog-devops-server.png" alt-text="A screenshot showing how to create a  feed.":::
+    :::image type="content" source="../media/new-feed-dialog-devops-server.png" alt-text="A screenshot showing how to create a  feed in DevOps Server.":::
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022"
@@ -120,7 +121,7 @@ In an elevated command prompt window, run the following command to install the a
 
  1. Select **twine** and copy the repository URL from the **Project setup** section.
  
-   :::image type="content" source="media/screenshot-twine-connect-to-feed-url.png" alt-text="A screenshot of instructions to connect to feed with twine.":::
+   :::image type="content" source="./media/screenshot-twine-connect-to-feed-url.png" alt-text="A screenshot of instructions to connect to feed with twine.":::
 
 1. To publish a package to your feed, run the following command replacing \<FEED_URL\> with the repository URL you copied from the **Connect to feed** dialog:
     
@@ -140,7 +141,7 @@ In an elevated command prompt window, run the following command to install the a
 
    :::image type="content" source="./media/pip-feed.png" alt-text="A screenshot of pip selection in Connect to feed.":::
 
-1. Prepare your local your Python environment.
+1. Prepare your local Python environment.
 
     # [Windows](#tab/Windows)
     
@@ -176,7 +177,7 @@ In an elevated command prompt window, run the following command to install the a
         
 1. Copy the `index-url` from the **Project setup** section of the **Connect to feed** dialog.
 
-   :::image type="content" source="media/screenshot-pip-connect-to-feed-index-url.png" alt-text="A screenshot of the index-url in the Connect to feed dialog."::: 
+   :::image type="content" source="./media/screenshot-pip-connect-to-feed-index-url.png" alt-text="A screenshot of the index-url in the Connect to feed dialog."::: 
 
 1. To install a package from your feed, run the following command replacing \<PACKAGE_NAME\> with the package name from your feed and \<INDEX_URL\> with the index url you copied from the **Connect to feed** dialog:
 
@@ -192,20 +193,20 @@ You can manually configure authentication to publish packages via twine and cons
 
 ### Publish packages with manual configuration
 
-Use the twine to upload your package to your Azure Artifacts feed.
+Use twine to upload your package to your Azure Artifacts feed.
 
-1. Select **Artifacts**, and then select your feed then select **Connect to feed**.
+1. Select **Artifacts**, select your feed, and then select **Connect to feed**.
 
    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot highlighting the connect to feed.":::
 
 1. Select **twine** under the **Python** section.
 
-   :::image type="content" source="media/screenshot-connect-to-feed-twine-selection.png" alt-text="A screenshot highlighting the twine package type.":::
+   :::image type="content" source="./media/screenshot-connect-to-feed-twine-selection.png" alt-text="A screenshot highlighting the twine package type.":::
 
 1. On your development machine, ensure that twine is installed.  
 
     ```Command
-    pip install -- upgrade twine
+    pip install --upgrade twine
     ```
 
 1. Follow the instructions in the **Project setup** section to set up your `.pypirc` file.  
@@ -225,7 +226,7 @@ Use the twine to upload your package to your Azure Artifacts feed.
     password = <YOUR_PERSONAL_ACCESS_TOKEN>
     ```
 
-1. To upload your package, run the following command in your project directory replacing \<FEED_NAME\> with your feed name. On Windows, you might need to specify the `pyirc` file location with the `--config-file` option.
+1. To upload your package, run the following command in your project directory replacing \<FEED_NAME\> with your feed name. On Windows, you might need to specify the `pypirc` file location with the `--config-file` option.
 
     ```Command
     twine upload --repository <FEED_NAME> dist/*
@@ -233,7 +234,7 @@ Use the twine to upload your package to your Azure Artifacts feed.
 
 ### Consume packages with manual configuration
 
-1. Select **Artifacts**, and then select your feed then select **Connect to feed**.
+1. Select **Artifacts**, select your feed, and then select **Connect to feed**.
 
    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot highlighting the connect to feed button.":::
 
@@ -241,7 +242,7 @@ Use the twine to upload your package to your Azure Artifacts feed.
 
    :::image type="content" source="media/pip-feed.png" alt-text="A screenshot highlighting the pip package type.":::
 
-1. Prepare your local your Python environment.
+1. Prepare your local Python environment.
 
     # [Windows](#tab/Windows)
     
@@ -294,7 +295,7 @@ Use the twine to upload your package to your Azure Artifacts feed.
 
 ## Clean up resources
 
-When you're finished with the resources you created, you can delete them to avoid incurring charges. When you delete a project, all it's project level Artifacts feeds are deleted.  
+When you're finished with the resources you created, you can delete them to avoid incurring charges. When you delete a project, all it's project level artifacts feeds are deleted.  
 
 To delete a project: 
 
@@ -316,8 +317,9 @@ To clean up your local development environment:
     ```Command
     deactivate
     ```
-    
+
 1. To delete your virtual environment, delete the directory where it was created.
+1. Remove the .pypirc file from your home directory.
 
 
 ## Next steps
@@ -326,7 +328,7 @@ To clean up your local development environment:
 
 - [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
 
-- [Build Python apps](../../pipelines/ecosystems/python.md)[artifacts-keyring](https://github.com/microsoft/artifacts-keyring)
+- [Build Python apps](../../pipelines/ecosystems/python.md)[
 
 ## Related articles
 
