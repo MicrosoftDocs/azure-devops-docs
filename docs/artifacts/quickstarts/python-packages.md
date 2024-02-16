@@ -157,7 +157,7 @@ In an elevated command prompt window, run the following command to install the a
         myenv/Scripts/activate
         ```
     
-    # [Linux/Mac](#tab/Linux/Mac)
+    # [Linux/Mac](#tab/LinuxMac)
     
     1. Ensure pip is installed and up to date:
     
@@ -258,7 +258,7 @@ Use the twine to upload your package to your Azure Artifacts feed.
         myenv/Scripts/activate
         ```
     
-    # [Linux/Mac](#tab/Linux/Mac)
+    # [Linux/Mac](#tab/LinuxMac)
     
     1. Ensure pip is installed and up to date:
     
