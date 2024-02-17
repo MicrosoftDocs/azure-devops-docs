@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-git
 
 The Windows, macOS, and Linux file systems have limitations and behaviors that one or more of the other platforms don't always support. Because Git is a cross-platform technology, it's possible for a developer on one platform to make a commit that contains files or folders that have incompatible names with another platform's file system. Protecting your repo from this incompatibility is important because developers on other platforms might unknowingly check out a commit that corrupts their working directories because of unsupported file or path names.
 
-Azure Repos offers [three cross-platform compatibility settings](repository-settings.md) that help protect your repo from people pushing commits that are incompatible with one or more platforms. These settings are related to the following file system limitations:
+Azure Repos offers [three cross-platform compatibility settings](repository-settings.md) that help protect your repo from people pushing commits that are incompatible with one or more platforms. These settings are related to the following limitations with file systems:
 
 - Case sensitivity
 - Restrictions on file and folder names
@@ -37,15 +37,12 @@ Those are distinct file names.
 On Windows and macOS, checking out both files causes the second one to overwrite the first one.
 If two folders differ only by case, their contents are mixed together in case-insensitive file systems.
 
-### Fixing case conflicts
+There are two ways to fix a repository that has case conflicts:
 
-One way to fix a repository that has case conflicts is to check it out in a case-sensitive environment.
+- Check out the repository in a case-sensitive environment.
 Rename files and folders so they no longer conflict, and then push those changes to the repository.
 [Windows Subsystem for Linux](/windows/wsl/about) is one such environment.
-
-Another approach is to use the command `git mv -f <conflicting name> <non-conflicting name>` for each conflict. Be careful to use exact capitalization on both file names.
-
-### Avoiding case conflicts
+- Use the command `git mv -f <conflicting name> <non-conflicting name>` for each conflict. Be careful to use exact capitalization on both file names.
 
 It's good to avoid creating case conflicts in the first place.
 Azure Repos offers a [case-enforcement setting](repository-settings.md) to prevent pushes that would lead to this situation.
@@ -64,14 +61,14 @@ A small file represents each ref. If a ref name contains slash (`/`) characters,
 One simple way to avoid problems is to always use all-lowercase branch and tag names.
 If you already created two branches or tags that have this problem, you can fix them in the Azure Repos web UI.
 
-### Fixing branch names
+To fix branch names:
 
 1. On the page for branches, go to the related commit.
 1. On the shortcut menu, select **New branch**.
 1. Give the branch a new name that doesn't have a case conflict.
 1. Return to the page for branches and delete the conflicting branch.
 
-### Fixing tag names
+To fix tag names:
 
 1. On the page for tags, go to the tagged commit.
 1. On the shortcut menu, select **Create tag**.
@@ -112,7 +109,7 @@ Azure Repos offers [repository settings](repository-settings.md) that block push
 
 ::: moniker range=">=azure-devops-2019"
 
-Microsoft added support for UTF-16 and UTF-32 encoding via the web push endpoint. This means that we preserve the encoding type, so you don't have to rewrite your files as UTF-8. You also see a warning when you try to save a file that's not UTF encoded via the web (which supports only UTF encoding).
+Microsoft added support for UTF-16 and UTF-32 encoding via the web push endpoint. This support means that we preserve the encoding type, so you don't have to rewrite your files as UTF-8. You also see a warning when you try to save a file that's not UTF encoded via the web (which supports only UTF encoding).
 
 The following screenshot shows an example of the dialog that appears when you introduce encoding changes by using a web push.
 
