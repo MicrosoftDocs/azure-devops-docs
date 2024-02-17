@@ -42,7 +42,7 @@ git add *
 git commit --amend -m "An amended commit"
 ```
 
-If you check the regular log history, information like the following appears:
+If you check the regular log history, information like the following example appears:
 
 ```
 git log
@@ -67,7 +67,7 @@ CommitDate: Thu Feb 25 19:39:36 2016 -0500
 ```
 
 Note the slight difference between the author date and commit date in the examples.
-The author date is the original, unedited, commit time. The commit date is the time at which you ran the `--amend` command.
+The author date is the original, unedited commit time. The commit date is the time at which you ran the `--amend` command.
 
 Many `git log` options can help you understand dates better.
 For example, if you pass the `--date` flag, you can determine how dates are displayed.

@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-git
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Git helps keep the footprint of your source code small because the differences between versions are easily picked out and code is easily compressed.
-Large files that don't compress well and change entirely between versions (such as binaries) present problems when they're stored in your Git repos.
+Large files that don't compress well and that change entirely between versions (such as binaries) present problems when they're stored in your Git repos.
 Git's fast performance comes from its ability to address and switch to all versions of a file from its local storage.
 
 If you have large, undiffable files in your repo (such as binaries), you keep a full copy of those files in your repo every time you commit a change to them.
@@ -51,7 +51,7 @@ consistent workflow.
 
 Git manages one main version of a file and then stores only the differences from that version, in a process known as *deltification*.
 Deltification and file compression allow Git to store your entire code history in your local repo.
-Large binaries usually change entirely between versions and are often already compressed. These files are difficult for Git to manage because the difference between versions is large.
+Large binaries usually change entirely between versions and are often already compressed. These files are difficult for Git to manage because the differences between versions are large.
 
 Git must store the entire contents of each version of the file and has difficulty saving space through deltification and compression.
 Storing the full versions of these files causes the repo size to increase over time. The increased repo size reduces branching performance, increases the clone times, and expands storage requirements.
@@ -61,7 +61,7 @@ Storing the full versions of these files causes the repo size to increase over t
 - Don't commit compressed archives of data. It's better to uncompress the files and commit the diffable sources. Let Git handle compressing the data in your repo.
 - Avoid committing compiled code and other binary dependencies. Commit the source and build the dependencies, or use a package management solution to version and supply these files
 to your system.
-- Store configuration and other structured data in diffable plain text formats, such as JSON.
+- Store configuration and other structured data in diffable plain-text formats, such as JSON.
 
 ## What is Git LFS?
 
@@ -95,7 +95,7 @@ Git LFS has some drawbacks that you should consider before adopting it:
    Users must still take care to always pull the latest copy of a binary asset before beginning work.
 - Azure Repos currently doesn't support using Secure Shell (SSH) in repos with Git LFS tracked files.
 - If a user drags a binary file via the web interface into a repo that's configured for Git LFS, the binary is committed to the repo--not the pointers that would be committed via the Git LFS client.
-- Although there isn't a strict file size restriction, the server's available free space and current workload could constrain the performance and functionality.
+- Although there isn't a strict file-size restriction, the server's available free space and current workload could constrain the performance and functionality.
 - The time limit for one file upload is one hour.
 
 ### File format

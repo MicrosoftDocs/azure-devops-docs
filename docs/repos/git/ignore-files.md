@@ -34,7 +34,7 @@ You can tell Git not to track certain files in your project by adding and config
 
 Each line in a `.gitignore` file specifies a file search pattern relative to the `.gitignore` file path. The [.gitignore syntax](https://git-scm.com/docs/gitignore) is flexible and supports the use of wildcards to specify individual or multiple files by name, extension, and path. Git matches `.gitignore` search patterns to the files in your project to determine which files to ignore.
 
-Typically, you just add a `.gitignore` file to the root folder of your project. However, you can add a `.gitignore` file to any project folder to let Git know which files to ignore within that folder and its subfolders at any nested depth. For multiple `.gitignore` files, the file search patterns that a `.gitignore` file specifies within a folder take precedence over the patterns that a `.gitignore` file specifies within a parent folder.
+Typically, you add a `.gitignore` file to the root folder of your project. However, you can add a `.gitignore` file to any project folder to let Git know which files to ignore within that folder and its subfolders at any nested depth. For multiple `.gitignore` files, the file search patterns that a `.gitignore` file specifies within a folder take precedence over the patterns that a `.gitignore` file specifies within a parent folder.
 
 You can manually create a `.gitignore` file and add file pattern entries to it. Or you can save time by downloading a `.gitignore` template for your development environment from the GitHub [gitignore repo](https://github.com/github/gitignore). One of the benefits of using a `.gitignore` file is that you can [commit](commits.md) changes and share it with others.
 
@@ -55,7 +55,7 @@ Visual Studio 2019 provides a Git version control experience through the **Git**
 
 #### [Visual Studio 2019: Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, go to the menu bar. Select **Tools** > **Options** > **Preview Features**, and then clear **New Git user experience**. You can use Git features from either interface interchangeably.
+Visual Studio 2019 version 16.8 and later versions provide a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, go to the menu bar. Select **Tools** > **Options** > **Preview Features**, and then clear **New Git user experience**. You can use Git features from either interface interchangeably.
 
 In the **Changes** view of **Team Explorer**, right-click any changed file that you want Git to ignore, and then select **Ignore this local item** or **Ignore this extension**. Those menu options don't exist for tracked files.
   
@@ -71,7 +71,7 @@ Either option creates a `.gitignore` file if it doesn't already exist in the roo
 
 ### Edit a gitignore file
 
-Each entry in the `.gitignore` file is either: a file search pattern that specifies which files to ignore, a comment that begins with `#`, or a blank line (for readability). The [`.gitignore` syntax](https://git-scm.com/docs/gitignore) is flexible and supports the use of wildcards to specify individual or multiple files by name, extension, and path. All paths for file search patterns are relative to the `.gitignore` file.
+Each entry in the `.gitignore` file is either: a file search pattern that specifies which files to ignore, a comment that begins with a number sign (`#`), or a blank line (for readability). The [`.gitignore` syntax](https://git-scm.com/docs/gitignore) is flexible and supports the use of wildcards to specify individual or multiple files by name, extension, and path. All paths for file search patterns are relative to the `.gitignore` file.
 
 Here are some examples of common file search patterns:
 
@@ -103,7 +103,7 @@ config.json
 As soon as you modify a `.gitignore` file, Git updates the list of files that it ignores.
 
 > [!NOTE]
-> Windows users must use a forward slash as a path separator in a `.gitignore` file, instead of using a backslash. All users must add a trailing `/` when specifying a folder.
+> Windows users must use a slash (`/`) as a path separator in a `.gitignore` file, instead of using a backslash (`\`). All users must add a trailing slash when specifying a folder.
 
 ### Use a global .gitignore file
 
