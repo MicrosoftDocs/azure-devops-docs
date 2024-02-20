@@ -1,21 +1,21 @@
 ---
 title: Get started with Python packages in Azure Artifacts
-description: Quickly start hosting python packages with Azure.
+description: Quickly start hosting and consuming python packages with Azure.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 monikerRange: '>= azure-devops-2019'
 ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 "recommendations": "true"
 ---
 
-# Quickstart: Publish and consume Python packages with Azure Artifacts using the command line
+# Quickstart: Publish and consume Python packages with Azure Artifacts using the command line (CLI)
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
 In this quickstart, you learn how to publish and consume Python packages using an Azure Artifacts feed from the command line in your local development environment. 
 
-By the end of this quickstart, you have:
+By the end of this quickstart, you'll have:
 
 - Created a feed in Azure Artifacts.
 - Published a Python package to your feed.
@@ -56,7 +56,7 @@ To run the following steps, you must have:
 
 ::: moniker-end
 
-## Create local your Python package
+## Create a local Python package
 
 You need a Python package to publish to your feed. If you don't have a package to publish, you can clone a sample Python package from GitHub.
 
@@ -73,13 +73,13 @@ Use the following steps to use the sample Python package from GitHub.
 1. Fork the repository to your GitHub account.
 1. Go to your forked repository, and select **Code**.
 1. Copy the URL of your forked repository.
-1. From a CLI on your local machine, clone the repository to your local machine using the URL you copied from your forked repository. 
+1. From a CLI on your local machine, clone the repository with the following command using the URL you copied from your forked repository: 
 
     ```Command
-    git clone <REPOSIORY_URL>
+    git clone <REPOSITORY_URL>
     ```
 
-1. Change directory to your cloned repository.
+1. Change directory to the cloned repository.
 
     ```Command
     cd python-package-template
@@ -102,49 +102,7 @@ python setup.py sdist bdist_wheel
 
 ## Create a feed
 
-::: moniker range=">= azure-devops"
-
-1. Sign in to your Azure DevOps organization, and then go to your project.
-
-1. Select **Artifacts**, and then select **Create Feed**.
-
-1. Enter a descriptive **Name** for your feed. You can leave the rest of the settings as default.
-
-1. Select **Create**.
-
-    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a  feed.":::
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2022"
-
-1. Go to your Azure DevOps collection, select your project.
-
-1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
-
-1. Enter the following information for your feed:
-     
-    1. Enter a descriptive **Name** for your feed.
-    1. Define its **Visibility** (indicating who can view packages within the feed).
-    1. Specify the **Scope** of your feed.  
-
-1. Select **Create** when you're done.
-
-    :::image type="content" source="../media/new-feed-dialog-devops-server.png" alt-text="A screenshot showing how to create a  feed in DevOps Server.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2022"
-
-1. Go to your Azure DevOps collection, select your project.
-
-1. Select **Artifacts**, and then select **Create Feed**.
-
-1. Enter a descriptive **Name** for your feed. You can leave the rest of the settings as default.
-
-1. Select **Create**.
-
-::: moniker-end
+[!INCLUDE [Create a feed](../includes/create-feed.md)]
 
 ## Publish your package to your feed
 
@@ -182,7 +140,7 @@ Use twine to upload your package to your Azure Artifacts feed.
     password = <YOUR_PERSONAL_ACCESS_TOKEN>
     ```
 
-1. To upload your package, run the following command in your project directory replacing \<FEED_NAME\> with your feed name. On Windows, you might need to specify the `pypirc` file location with the `--config-file` option.
+1. To upload your package, run the following command in your project directory replacing \<FEED_NAME\> with your feed name. On Windows, you might need to specify the `.pypirc` file location with the `--config-file` argument.
 
     ```Command
     twine upload --repository <FEED_NAME> dist/*
