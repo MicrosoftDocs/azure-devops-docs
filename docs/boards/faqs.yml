@@ -150,6 +150,10 @@ sections:
         answer: | 
           Work items automatically change state after your team administrator set up automation rules on the backlog. Create rules to automatically set the state to active or closed depending on the state change of its children. For more information, see [Automate work item state transitions](work-items/automate-work-item-state-transitions.md).
 
+      - question: Why are the rules not triggering when I reactivate a child item?  
+        answer: | 
+          Rules only trigger when the state of the child item moves from New to Active or into Closed. Rules don't trigger when the state of the child item moves from Closed back to Active. This is currently by design.
+
       - question: Can I set automation rules per work item type or state?  
         answer: | 
           No, the rules are applied to all work item types in that backlog level. We use state categories instead of states because state categories are consistent across all work item types.

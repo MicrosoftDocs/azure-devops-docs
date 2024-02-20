@@ -23,7 +23,7 @@ Analytics via Excel.
 
 1. To get started, Open Excel 2016. 
 
-   It will work with earlier versions of Excel. You'll need to have installed the Power Query add-in that you can do from [Microsoft Power Query for Excel](https://www.microsoft.com/download/details.aspx?id=39379&CorrelationId=3f2bb5d7-8db9-4e8f-ad58-bfa2789c877c). 
+   It will work with earlier versions of Excel. You'll need to have installed the Power Query add-in that you can do from [Microsoft Power Query for Excel](https://powerquery.microsoft.com/en-us/excel/). 
 
 2. Create a blank workbook.
 
@@ -111,5 +111,5 @@ which isn't allowed.
 ## Related articles
 
 - [Client authentication options](client-authentication-options.md)
-- [Microsoft Power Query for Excel](https://www.microsoft.com/download/details.aspx?id=39379&CorrelationId=3f2bb5d7-8db9-4e8f-ad58-bfa2789c877c)
+- [Microsoft Power Query for Excel](https://powerquery.microsoft.com/en-us/excel/)
 - [Excel documentation](https://support.office.com/article/Add-a-query-to-an-Excel-worksheet-Power-Query-ca69e0f0-3db1-4493-900c-6279bef08df4?ui=en-US&rs=en-US&ad=US#querytoworksheet)

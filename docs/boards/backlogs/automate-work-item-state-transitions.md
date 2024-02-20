@@ -78,6 +78,7 @@ The following example shows the rules applied to several backlog levels in sync.
 For answers to the following frequently asked questions, see the [FAQs](../faqs.yml#automation-rules):
 - Is there way to make the parent active when a child is active?
 - Why are my work items automatically changing state?
+- Why are the rules not triggering when I reactivate a child item?  
 - Can I set automation rules per work item type or state?
 - Can I set up automation rules for user stories but not for features or epics?
 - Why are automation rules not working if the child or parent items belongs to a different team or project?
