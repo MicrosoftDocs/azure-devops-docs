@@ -21,9 +21,9 @@ Use bulk modify when you need to quickly make the same change to many work items
 > [!TIP]    
 > To add work items in bulk or update multiple fields with different values, use [CSV Import](../queries/import-work-items-from-csv.md). You can't complete a bulk add of work items through the web portal.   
 
-With bulk modify, you may edit fields and add or remove tags. You can also reassign work or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions you've been granted.
+With bulk modify, you might edit fields and add or remove tags. You can also reassign work or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions assigned to you.
 
-In this article you'll learn:  
+In this article, learn how to do the following tasks:  
 
 > [!div class="checklist"]    
 > * How to multi-select work items from a list and open the context menu  
@@ -31,12 +31,11 @@ In this article you'll learn:
 > * Assign work from a backlog to a sprint using drag-and-drop 
 > * Add or remove tags from several work items  
 
-
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
 ## Supported tasks
 
-All of the following actions can be completed by team members that belong to the Contributors group. Members provided with Stakeholder access can run multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For more information, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
+Team members who belong to the Contributors group can complete the following tasks. Members provided with Stakeholder access can run multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For more information, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -73,7 +72,7 @@ All of the following actions can be completed by team members that belong to the
    Bulk edit/update/delete
    :::column-end:::
    :::column span="1":::
-   - [Edit field(s)](#edit)
+   - [Edit fields](#edit)
    - [Assign to](#assign-to)
    - [Move to iteration](#move-iteration)
    - [Change position](create-your-backlog.md#move-items-priority-order)
@@ -91,12 +90,11 @@ All of the following actions can be completed by team members that belong to the
    :::column span="1":::
    - [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup>
    - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md)
-   - [Send email with selected item(s)](../work-items/email-work-items.md)
+   - [Send email with selected items](../work-items/email-work-items.md)
    - [Change work item type](move-change-type.md#change-type)<sup>1</sup>
    - [Move items to another project](move-change-type.md#move)<sup>1, 3</sup>
    :::column-end:::
 :::row-end:::
-
 
 > [!NOTE]  
 > 1. You can't perform certain functions on work items whose [work item types (WITs)](../work-items/about-work-items.md) belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
@@ -104,7 +102,6 @@ All of the following actions can be completed by team members that belong to the
 > 3. You must be a member of the Project Administrators group or be granted explicit permissions to [**Move work items**](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).  
 
 ::: moniker-end
-
 
 ::: moniker range="tfs-2018"
 
@@ -142,7 +139,7 @@ All of the following actions can be completed by team members that belong to the
    Bulk edit/update/delete
    :::column-end:::
    :::column span="1":::
-   - [Edit field(s)](#edit)
+   - [Edit fields](#edit)
    - [Assign to](#assign-to)
    - [Move to iteration](#move-iteration)
    - [Change position](create-your-backlog.md#move-items-priority-order)
@@ -159,7 +156,7 @@ All of the following actions can be completed by team members that belong to the
    :::column span="1":::
    - [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup>
    - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md)
-   - [Send email with selected item(s)](../work-items/email-work-items.md)
+   - [Send email with selected items](../work-items/email-work-items.md)
    
    :::column-end:::
 :::row-end:::
@@ -168,10 +165,6 @@ All of the following actions can be completed by team members that belong to the
 >1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 >2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
 >3. For on-premises Azure DevOps, you must have an [SMTP server configured for your deployment](/azure/devops/server/admin/setup-customize-alerts). 
-
-
-
-
 
 <a id="multi-select"> </a>  
 <a id="edit"> </a>  
@@ -203,11 +196,11 @@ The menu options available to you change depending on the platform you work from
 
 ### Select multiple items and open the context menu
 
-To select several items in a sequence, click on the first item of the sequence, hold down the shift key and click on the last item of the sequence. To select several non-sequential items, hold down the `Ctrl` key and click on the items to be selected one after the other. Then, you can either drag the selected items to a new position within the backlog or to a different sprint if the `Planning` side pane is enabled. 
+To select several items in a sequence, select the first item of the sequence, hold down the shift key and select the last item of the sequence. To select several nonsequential items, hold down the `Ctrl` key and select the items to be selected one after the other. Then, you can either drag the selected items to a new position within the backlog or to a different sprint if the `Planning` side pane is enabled. 
 
-To open the context menu, select (  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: ) or (![context icon](../media/icons/context_menu.png)), and then choose the option from the menu. 
+To open the context menu, select (:::image type="icon" source="../media/icons/actions-icon.png" border="false":::) or (![context icon](../media/icons/context_menu.png)), and then choose the option from the menu. 
 
-Here, we use the context menu to move several non-sequential items to the current sprint.
+Here, we use the context menu to move several nonsequential items to the current sprint.
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -249,9 +242,9 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screeenshot of Edit work items dialog.](media/bulk-modify/edit-work-items-new-text-editor.png)  
+	> ![Screenshot of Edit work items dialog.](media/bulk-modify/edit-work-items-new-text-editor.png)  
 
-2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store.  The **Save items** button may be in a different place in the UI than shown in the picture below, depending on the layout of your browser and the specific version in use.
+2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes aren't saved to the data store. The **Save items** button might be in a different place in the UI than shown in the following picture, depending on the layout of your browser and the specific version in use.
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of Query results page, save bulk modified items.](media/bulk-modify/query-results-bulk-save-items.png) 
@@ -260,11 +253,11 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 ::: moniker range="tfs-2018"
 
-1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
+1. For audit purposes, you can enter a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
     !Screenshot of Query results page, bulk edit fields.](media/bulk-modify-edit-fields-ts.png)  
 
-2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store.  
+2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes aren't saved to the data store.  
 
     ![Screenshot of Query results page, save bulk modified items, TFS 2018.](media/bulk-modify-save-ts.png)
 
@@ -279,7 +272,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 Rich-text fields support entry of HTML syntax tags to support formatting. Rich-text fields correspond to the **Description**, **Acceptance Criteria**, **Repos Steps**, and others listed in [Query samples for select fields](../queries/query-index-quick-ref.md#example-queries-for-select-fields). 
 
-You can bulk update a rich-text field by using the bulk modify tool, selecting the field, and entering the text with syntax in the **Value** field. Or, you can create a work item template with the text you want to use and complete a bulk update by applying the template to the selected work items. For details on using work item templates, see [Use templates to add and update work items](work-item-template.md) 
+You can bulk update a rich-text field by using the bulk modify tool, selecting the field, and entering the text with syntax in the **Value** field. Or, you can create a work item template with the text you want to use and complete a bulk update by applying the template to the selected work items. For details on using work item templates, see [Use templates to add and update work items.](work-item-template.md) 
 
 For a worked example using templates showing entry of HTML formatted syntax, see [Sample work item templates, Add guidance in a rich-text field](../work-items/work-item-template-examples.md#rich-text). 
 
@@ -308,4 +301,4 @@ At this time, you can't move work items to a different organization or collectio
 
 ### Add multiple values to a field  
 
-If you have implemented a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), you can use Excel to bulk edit the field, but you can't modify it using the web portal. In the web portal, you can only select a single value for the field.   
+If you implemented a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), you can use Excel to bulk edit the field. But, you can't modify it using the web portal - you can only select a single value for the field.   
