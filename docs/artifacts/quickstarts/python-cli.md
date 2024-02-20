@@ -94,7 +94,6 @@ If your Python project has a `setup.py` file, you can use the following command 
 python setup.py sdist bdist_wheel
 ```
 
-
 ## Connect to feed
 
 There are two primary ways to connect to a feed to publish or consume your Python packages:
@@ -109,12 +108,14 @@ There are two primary ways to connect to a feed to publish or consume your Pytho
 > [!NOTE]
 > If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
-## Use artifacts-keyring to set up authentication
+## Use artifacts-keyring for authentication
 
 The artifacts-keyring package works with the Python keyring package to allow you to set up authentication to publish and consume your Python packages to and from your feed. Both pip and twine use the Python keyring package to find credentials. 
 
 > [!IMPORTANT]
 > You must have pip 19.2 and twine 1.13.0 or higher to use **artifacts-keyring**. For more information, see [Usage requirements](https://github.com/microsoft/artifacts-keyring#requirements).
+
+If you choose to use **artifacts-keyring**, you must install the package before you can use it.
 
 In an elevated command prompt window, run the following command to install the artifacts-keyring package:
    
@@ -122,7 +123,11 @@ In an elevated command prompt window, run the following command to install the a
    pip install artifacts-keyring
    ```
 
-## Publish packages with artifacts-keyring
+## Publish Python packages
+
+You can publish Python packages to your feed using the artifacts-keyring package or PAT authentication.
+
+### Publish packages with artifacts-keyring
 
 1. Select **Connect to feed** from your feed.
 
@@ -138,7 +143,53 @@ In an elevated command prompt window, run the following command to install the a
     twine upload --repository-url <FEED_URL> dist/*
     ```
 
-## Consume packages with artifacts-keyring
+### Publish your package with PAT authentication
+
+Use twine to upload your package to your Azure Artifacts feed.
+
+1. Go to  your Azure DevOps Project and select **Artifacts**.
+1. Select your feed and select **Connect to feed**.
+
+   :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot highlighting the connect to feed.":::
+
+1. Select **twine** under the **Python** section.
+
+   :::image type="content" source="./media/screenshot-connect-to-feed-twine-selection.png" alt-text="A screenshot highlighting the twine package type.":::
+
+1. On your development machine, ensure that twine is installed.  
+
+    ```Command
+    pip install --upgrade twine
+    ```
+
+1. Follow the instructions in the **Project setup** section to set up your `.pypirc` file.  
+
+    To avoid needing to enter your personal access token every time you publish a package, you can add your credentials to the `.pypirc` file. Ensure that you don't check your personal access token into a public repository.
+
+    Example of a `.pypirc` file with credentials:
+
+    ```
+    [distutils]
+    Index-servers =
+        <FEED_NAME>
+
+    [<FEED_NAME>]
+    Repository = <FEED_URL>
+    username = <FEED_NAME>
+    password = <YOUR_PERSONAL_ACCESS_TOKEN>
+    ```
+
+1. To upload your package, run the following command in your project directory replacing \<FEED_NAME\> with your feed name. On Windows, you might need to specify the `pypirc` file location with the `--config-file` option.
+
+    ```Command
+    twine upload --repository <FEED_NAME> dist/*
+    ```
+
+## Consume Python packages
+
+You can consume Python packages from your feed using the artifacts-keyring package or PAT authentication.
+
+### Consume packages with artifacts-keyring
 
 1. In your project, select **Artifacts** and then select your feed.
 
@@ -196,49 +247,6 @@ In an elevated command prompt window, run the following command to install the a
 
 When you connect to Azure DevOps for the first time, you're prompted for credentials. Enter your user name (any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
 
-## Publish your package with PAT authentication
-
-
-Use twine to upload your package to your Azure Artifacts feed.
-
-1. Go to  your Azure DevOps Project and select **Artifacts**.
-1. Select your feed and select **Connect to feed**.
-
-   :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot highlighting the connect to feed.":::
-
-1. Select **twine** under the **Python** section.
-
-   :::image type="content" source="./media/screenshot-connect-to-feed-twine-selection.png" alt-text="A screenshot highlighting the twine package type.":::
-
-1. On your development machine, ensure that twine is installed.  
-
-    ```Command
-    pip install --upgrade twine
-    ```
-
-1. Follow the instructions in the **Project setup** section to set up your `.pypirc` file.  
-
-    To avoid needing to enter your personal access token every time you publish a package, you can add your credentials to the `.pypirc` file. Ensure that you don't check your personal access token into a public repository.
-
-    Example of a `.pypirc` file with credentials:
-
-    ```
-    [distutils]
-    Index-servers =
-        <FEED_NAME>
-
-    [<FEED_NAME>]
-    Repository = <FEED_URL>
-    username = <FEED_NAME>
-    password = <YOUR_PERSONAL_ACCESS_TOKEN>
-    ```
-
-1. To upload your package, run the following command in your project directory replacing \<FEED_NAME\> with your feed name. On Windows, you might need to specify the `pypirc` file location with the `--config-file` option.
-
-    ```Command
-    twine upload --repository <FEED_NAME> dist/*
-    ```
-
 ## Consume your package with PAT authentication
 
 1. Go to  your Azure DevOps Project and select **Artifacts**.
@@ -281,7 +289,7 @@ Use twine to upload your package to your Azure Artifacts feed.
         python3 -m venv myenv
         source myenv/bin/activate
         ```
-    
+
     ---
 
 1. Add a *pip.ini* (Windows) or a *pip.conf* (Mac/Linux) file to the root directory of your virtualenv. Copy the `pip.ini` content from the **Project setup** section of the **Connect to feed** dialog and add it to your *pip.ini* or *pip.conf* file.
