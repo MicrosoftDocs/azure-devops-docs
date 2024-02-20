@@ -4,16 +4,16 @@ description: Publish and consume Python packages from the command-line interface
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.custom: engagement-fy23, devx-track-python
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
-# Publish and consume Python packages using the command line
+# Publish and consume Python packages using the command line (CLI)
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Azure Artifacts allows you to create, host, and share packages with your team and your organization. This article shows you how to publish and consume Python packages to and from your feed using the command-line interface (CLI). You learn how to use the artifacts-keyring package to automatically setup authentication for you, and alternatively, authenticate with a personal access token (PAT).
+Azure Artifacts allows you to create, host, and share packages with your team, organization and the Python community. This article shows you how to publish and consume Python packages to and from your feed using the command-line interface (CLI). You learn how to use the artifacts-keyring package to automatically setup authentication for you, and alternatively, authenticate with a personal access token (PAT).
 
 To publish and consume packages in your Azure Pipelines, see [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
 
@@ -49,7 +49,14 @@ To run the following steps, you must have:
 
 ::: moniker-end
 
-## Create local your Python package
+
+## Create an Azure Artifacts feed
+
+If you don't have a feed, use the following steps to create one.
+
+[!INCLUDE [Create a feed](../includes/create-feed.md)]
+
+## Create a local Python package
 
 You need a Python package to publish to your feed. If you don't have a package to publish, you can clone a sample Python package from GitHub.
 
@@ -247,7 +254,7 @@ You can consume Python packages from your feed using the artifacts-keyring packa
 
 When you connect to Azure DevOps for the first time, you're prompted for credentials. Enter your user name (any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
 
-## Consume your package with PAT authentication
+### Consume your package with PAT authentication
 
 1. Go to  your Azure DevOps Project and select **Artifacts**.
 1. Select your feed and select **Connect to feed**.
