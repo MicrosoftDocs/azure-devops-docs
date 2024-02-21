@@ -11,8 +11,6 @@
         "exclude": [
           "artifacts/nuget/bootstrap-nuget.md",
           "pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
-          "pipelines/apps/c-cpp/gcc.md",
-          "pipelines/apps/windows/cpp.md",
            "**/obj/**",
           "**/includes/**",
           "**/_data/**",
@@ -27,9 +25,8 @@
       {
         "files": [
           "artifacts/nuget/bootstrap-nuget.md",
-          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
-          "pipelines/apps/c-cpp/gcc.md",
-          "pipelines/apps/windows/cpp.md"        ],
+          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
