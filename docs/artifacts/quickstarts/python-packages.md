@@ -191,7 +191,7 @@ Use twine to upload your package to your Azure Artifacts feed.
     
     ---
 
-1. Add a *pip.ini* (Windows) or a *pip.conf* (Mac/Linux) file to the root directory of your virtualenv. Copy the `pip.ini` content from the **Project setup** section of the **Connect to feed** dialog and add it to your *pip.ini* or *pip.conf* file.
+1. Add a *pip.ini* (Windows) or a *pip.conf* (Mac/Linux) file to the root directory of your virtualenv. Copy the content from the **Project setup** section of the **Connect to feed** dialog and add it to your *pip.ini* or *pip.conf* file.
     
     To avoid needing to enter your personal access token every time you install a package from your feed, you can add your credentials to the *pip.ini* or *pip.conf* file. Make sure you don't check your personal access token into a public repository.
 
@@ -235,7 +235,8 @@ To clean up your local development environment:
 
 1. To delete your virtual environment, delete the directory where it was created.
 1. Remove the `.pypirc` file from your home directory.
-1. If you cloned the sample Python package, you can delete the repository from your local machine and your GitHub account.
+
+If you cloned the sample Python package, you can delete the repository from your local machine and your GitHub account.
 
 
 ## Next steps
