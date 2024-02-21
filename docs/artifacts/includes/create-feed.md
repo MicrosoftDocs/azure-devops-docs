@@ -81,7 +81,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="tfs-2018"
 
-Azure Artifacts comes pre-installed in TFS 2018. If this is your first time using your feed, you might be prompted to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses).
+Azure Artifacts comes preinstalled in TFS 2018. The first time using your feed you might be prompted to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses).
 
 1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 
