@@ -122,7 +122,7 @@ There are two primary ways to connect to a feed to publish or consume your Pytho
 > [!NOTE]
 > If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
-## Use artifacts-keyring for authentication
+## Set up artifacts-keyring for authentication
 
 The artifacts-keyring package works with the Python keyring package to allow you to set up authentication to publish and consume your Python packages to and from your feed. Both pip and twine use the Python keyring package to find credentials. 
 
@@ -157,7 +157,7 @@ You can publish Python packages to your feed using the artifacts-keyring package
     twine upload --repository-url <FEED_URL> dist/*
     ```
 
-### Publish your package with PAT authentication
+### Publish packages with PAT authentication
 
 Use twine to upload your package to your Azure Artifacts feed.
 
@@ -261,7 +261,7 @@ You can consume Python packages from your feed using the artifacts-keyring packa
 
 When you connect to Azure DevOps for the first time, you're prompted for credentials. Enter your user name (any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
 
-### Consume your package with PAT authentication
+### Consume packages with PAT authentication
 
 1. Go to  your Azure DevOps Project and select **Artifacts**.
 1. Select your feed and select **Connect to feed**.
