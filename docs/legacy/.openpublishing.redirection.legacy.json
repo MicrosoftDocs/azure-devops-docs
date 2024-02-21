@@ -7887,6 +7887,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/docs/build-release/apps/c-cpp/gcc.md",
+      "redirect_url": "/azure/devops/pipelines/apps/c-cpp/gcc",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/docs/build-release/apps/containers/build.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/docker",
       "redirect_document_id": false
@@ -7964,6 +7969,11 @@
     {
       "source_path_from_root": "/docs/build-release/apps/nodejs/build-gulp.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/javascript",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/build-release/apps/windows/cpp.md",
+      "redirect_url": "/azure/devops/pipelines/apps/windows/cpp",
       "redirect_document_id": false
     },
     {
