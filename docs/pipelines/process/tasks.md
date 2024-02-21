@@ -1,9 +1,9 @@
 ---
-title: Build and Release Tasks
-description: Understand Build and Release tasks in Azure Pipelines
+title: Task types & usage
+description: Learn how to define tasks in your pipeline, set inputs, and control task conditions with Azure DevOps.
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 12/21/2022
+ms.date: 02/21/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -13,12 +13,13 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-A **task** is the building block for defining automation in a
-pipeline.
-A task is simply a packaged script or procedure that has been
-abstracted with a set of inputs. 
+A **task** performs an action in a pipeline and is a packaged script or procedure that's
+abstracted with a set of inputs. Tasks are the building blocks for defining automation in a pipeline. 
 
-When you add a task to your pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
+::: moniker range="< azure-devops-2019"
+When you add a task to your pipeline, it might also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands is chosen.
+
+::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
@@ -26,10 +27,10 @@ When you run a [job](phases.md), all the tasks are run in sequence, one after th
 To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
 
 By default, all tasks run in the same context, whether that's on the [host](phases.md) or in a [job container](container-phases.md).
-You may optionally use [step targets](#step-target) to control context for an individual task.
+
+You might optionally use [step targets](#step-target) to control context for an individual task.
 
 Learn more about how to specify properties for a task with the [built-in tasks](../tasks/index.md). 
-
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
@@ -38,22 +39,23 @@ When you run a [job](phases.md), all the tasks are run in sequence, one after th
 
 ::: moniker-end
 
+To learn more about the general attributes supported by tasks, see the [YAML Reference for *steps.task*](/azure/devops/pipelines/yaml-schema/steps-task).
+
 ## Custom tasks
 
-We provide some [built-in tasks](../tasks/index.md) 
-to enable fundamental build and deployment scenarios. We have also
-provided guidance for [creating your own custom task](../../extend/develop/add-build-task.md).
+Azure DevOps includes [built-in tasks](../tasks/index.md) 
+to enable fundamental build and deployment scenarios. You also can [create your own custom task](../../extend/develop/add-build-task.md).
 
 In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
 offers many extensions; each of which, when installed to your
 subscription or collection, extends the task catalog with one or more tasks.
-Furthermore, you can write your own [custom extensions](../../integrate/index.md)
-to add tasks to Azure Pipelines or TFS.
+You can also write your own [custom extensions](../../integrate/index.md)
+to add tasks to Azure Pipelines.
 
 ::: moniker range=">= azure-devops-2019"
 
 In YAML pipelines, you refer to tasks by name. If a name matches both an in-box task
-and a custom task, the in-box task will take precedence. You can use the task GUID or a fully qualified
+and a custom task, the in-box task takes precedence. You can use the task GUID or a fully qualified
 name for the custom task to avoid this risk:
 
 ```yaml
@@ -74,11 +76,11 @@ pipeline. This can help to prevent issues when new versions of a task are releas
 Tasks are typically backwards compatible, but in some scenarios you may
 encounter unpredictable errors when a task is automatically updated.
 
-When a new minor version is released (for example, 1.2 to 1.3), your build or release
-will automatically use the new version. However, if a new major version is released
-(for example 2.0), your build or release will continue to use the major version you specified
+When a new minor version is released (for example, 1.2 to 1.3), your pipeline
+automatically uses the new version. However, if a new major version is released
+(for example 2.0), your pipeline continues to use the major version you specified
 until you edit the pipeline and manually change to the new major version.
-The build or release log will include an alert that a new major version is available.
+The log will include an alert that a new major version is available.
 
 You can set which minor version gets used by specifying the full version number of a task after the `@` sign (example: `GoTool@0.3.1`). You can only use task versions that exist for your [organization](../../organizations/accounts/organization-management.md). 
 
@@ -105,8 +107,8 @@ YAML pipelines aren't available in TFS.
 #### [Classic](#tab/classic/)
 Each task in a pipeline has a **Version** selector to let you choose the version you want.
 
-If you select a preview version (such as **1.\* Preview**), be aware that this
-version is still under development and might have known issues.
+If you select a preview version (such as **1.\* Preview**), the
+version is still under development and might have issues.
 
 If you change the version and have problems with your builds, you can revert the pipeline change from the **History** tab.
 The ability to restore to an older version of a release pipeline isn't currently available. You must manually revert the changes to the release pipeline, then save the pipeline.
@@ -128,26 +130,39 @@ Each task offers you some **Control Options**.
 Control options are available as keys on the `task` section.
 
 ```yaml
-- task: string  # reference to a task and version, e.g. "VSBuild@1"
-  condition: expression     # see below
-  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
-  enabled: boolean          # whether or not to run this step; defaults to 'true'
-  timeoutInMinutes: string  # how long to wait before timing out the task
+- task: string # Required as first property. Name of the task to run.
+  inputs: # Inputs for the task.
+    string: string # Name/value pairs
+  condition: string # Evaluate this condition expression to determine whether to run this task.
+  continueOnError: boolean # Continue running even on failure?
+  displayName: string # Human-readable name for the task.
+  enabled: boolean # Run this task when the job runs?
+  env: # Variables to map into the process's environment.
+    string: string # Name/value pairs
+  name: string # ID of the step.
+  timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
 ```
 
 ::: moniker-end
 
-::: moniker range=">azure-devops-2019 <azure-devops"
+::: moniker range="> azure-devops-2019 < azure-devops"
 
 Control options are available as keys on the `task` section.
 
 ```yaml
-- task: string  # reference to a task and version, e.g. "VSBuild@1"
-  condition: expression     # see below
-  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
-  enabled: boolean          # whether or not to run this step; defaults to 'true'
-  timeoutInMinutes: string  # how long to wait before timing out the task
-  target: string            # 'host' or the name of a container resource to target
+- task: string # Required as first property. Name of the task to run.
+  inputs: # Inputs for the task.
+    string: string # Name/value pairs
+  condition: string # Evaluate this condition expression to determine whether to run this task.
+  continueOnError: boolean # Continue running even on failure?
+  displayName: string # Human-readable name for the task.
+  target: string | target # Environment in which to run this task.
+  enabled: boolean # Run this task when the job runs?
+  env: # Variables to map into the process's environment.
+    string: string # Name/value pairs
+  name: string # ID of the step.
+  timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
+  retryCountOnTaskFailure: string # Number of retries if the task fails.
 ```
 
 ::: moniker-end
@@ -157,13 +172,19 @@ Control options are available as keys on the `task` section.
 Control options are available as keys on the `task` section.
 
 ```yaml
-- task: string  # reference to a task and version, e.g. "VSBuild@1"
-  condition: expression     # see below
-  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
-  enabled: boolean          # whether or not to run this step; defaults to 'true'
-  retryCountOnTaskFailure: number # Max number of retries; default is zero
-  timeoutInMinutes: string  # how long to wait before timing out the task
-  target: string            # 'host' or the name of a container resource to target
+- task: string # Required as first property. Name of the task to run.
+  inputs: # Inputs for the task.
+    string: string # Name/value pairs
+  condition: string # Evaluate this condition expression to determine whether to run this task.
+  continueOnError: boolean # Continue running even on failure?
+  displayName: string # Human-readable name for the task.
+  target: string | target # Environment in which to run this task.
+  enabled: boolean # Run this task when the job runs?
+  env: # Variables to map into the process's environment.
+    string: string # Name/value pairs
+  name: string # ID of the step.
+  timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
+  retryCountOnTaskFailure: string # Number of retries if the task fails.
 ```
 
 ::: moniker-end
@@ -181,7 +202,7 @@ time the task is queued or is waiting for an agent.
 > [!NOTE]
 > Pipelines may have a job level timeout specified in addition to a task level timeout. If the job level timeout interval elapses before your step completes, the running job is terminated, even if the step is configured with a longer timeout interval. For more information, see [Timeouts](phases.md#timeouts).
 
-In this YAML, `PublishTestResults@2` will run even if the previous step fails because of the [succeededOrFailed() condition](expressions.md#succeededorfailed).
+In this YAML, `PublishTestResults@2` runs even if the previous step fails because of the [succeededOrFailed() condition](expressions.md#succeededorfailed).
 
 ```yaml
 steps:
@@ -208,7 +229,7 @@ steps:
 ### Step target
 
 Tasks run in an execution context, which is either the agent host or a container.
-An individual step may override its context by specifying a `target`.
+An individual step might override its context by specifying a `target`.
 Available options are the word `host` to target the agent host plus any containers defined in the pipeline.
 For example:
 
@@ -296,12 +317,10 @@ Specify the number of retries if this task fails. The default is zero.
 Select the condition for running this task:
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
-* [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
+* [Custom conditions](conditions.md), which are composed of [expressions](expressions.md)
 
 > [!NOTE]
 > If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [pipeline options](../process/phases.md#timeouts).
-
-### TFS 2018 and newer options
 
 #### Continue on error (partially successful)
 
@@ -455,7 +474,7 @@ Add these tasks:
 
 #### Variables tab
 
-On the [Variables tab](../build/variables.md) define this variable:
+On the [Variables tab](../build/variables.md), define this variable:
 
 |Name|Value|Settable at queue time|
 |-|-|-|
@@ -477,7 +496,7 @@ For a list of our tool installer tasks, see [Tool installer tasks](../tasks/inde
 
 On the organization settings page, you can disable Marketplace tasks, in-box tasks, or both.
 Disabling Marketplace tasks can help [increase security](../security/misc.md) of your pipelines.
-If you disable both in-box and Marketplace tasks, only tasks you install using [`tfx`](https://www.npmjs.com/package/tfx-cli) will be available.
+If you disable both in-box and Marketplace tasks, only tasks you install using [`tfx`](https://www.npmjs.com/package/tfx-cli) is available.
 
 ::: moniker-end
 
