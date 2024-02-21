@@ -178,7 +178,9 @@ Use twine to upload your package to your Azure Artifacts feed.
 
 1. Follow the instructions in the **Project setup** section to set up your `.pypirc` file.  
 
-    To avoid needing to enter your personal access token every time you publish a package, you can add your credentials to the `.pypirc` file. Ensure that you don't check your personal access token into a public repository.
+   :::image type="content" source="./media/screenshot-twine-connect-to-feed-pyirc.png" alt-text="A screenshot highlighting the `.pyirc` file content.":::
+
+1. To avoid needing to enter your personal access token every time you publish a package, you can add your credentials to the `.pypirc` file. Ensure that you don't check your personal access token into a public repository.
 
     Example of a `.pypirc` file with credentials:
 
@@ -307,8 +309,10 @@ When you connect to Azure DevOps for the first time, you're prompted for credent
     ---
 
 1. Add a *pip.ini* (Windows) or a *pip.conf* (Mac/Linux) file to the root directory of your virtual environment. Copy the content from the **Project setup** section of the **Connect to feed** dialog and add it to your *pip.ini* or *pip.conf* file.
-    
-    To avoid needing to enter your personal access token every time you install a package from your feed, you can add your credentials to the *pip.ini* or *pip.conf* file. Make sure you don't check your personal access token into a public repository.
+
+    :::image type="content" source="./media/screenshot-pip-connect-to-feed-pip-ini.png" alt-text="A screenshot highlighting the pip.ini file content.":::
+
+1. To avoid needing to enter your personal access token every time you install a package from your feed, you can add your credentials to the *pip.ini* or *pip.conf* file. Make sure you don't check your personal access token into a public repository.
 
     Example of a *pip.ini* or *pip.conf* file with credentials:
 
