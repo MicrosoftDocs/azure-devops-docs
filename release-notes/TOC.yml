@@ -10,6 +10,8 @@
       items:
         - name: "2024"
           items:
+          - name: February 23
+            href: 2024/sprint-235-update.md
           - name: February 9
             href: 2024/sprint-234-update.md
           - name: January 18
@@ -640,6 +642,11 @@
         expanded: false
       - name: Azure Test Plans
         items:
+        - name: "2024"
+          items:
+          - name: February 23
+            href: 2024/testplans/sprint-235-update.md
+          expanded: false
         - name: "2020"
           items:
           - name: November 12
