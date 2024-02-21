@@ -61,7 +61,7 @@ To run the following steps, you must have:
 
 If you don't have a feed, use the following steps to create one.
 
-[!INCLUDE [Create a feed](../includes/create-feed.md)]
+[!INCLUDE [Create a feed](../includes/create-feed-gt-eq-2019.md)]
 
 ## Create a local Python package
 

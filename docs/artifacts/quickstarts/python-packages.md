@@ -96,7 +96,7 @@ python setup.py sdist bdist_wheel
 
 ## Create a feed
 
-[!INCLUDE [Create a feed](../includes/create-feed.md)]
+[!INCLUDE [Create a feed](../includes/create-feed-gt-eq-2019.md)]
 
 ## Publish your package to your feed
 
