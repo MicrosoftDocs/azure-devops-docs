@@ -24,8 +24,6 @@ ms.date: 02/22/2024
 
 1. Select **Create**.
 
-    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a  feed.":::
-
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022"
@@ -47,7 +45,7 @@ ms.date: 02/22/2024
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops-2022"
+::: moniker range="azure-devops-2020"
 
 1. Go to your Azure DevOps collection, select your project.
 
