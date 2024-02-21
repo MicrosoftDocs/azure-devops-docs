@@ -13,13 +13,7 @@ ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-In this quickstart, you learn how to publish and consume Python packages using an Azure Artifacts feed from the command line in your local development environment. 
-
-In this quickstart, you:
-
-- Create a feed in Azure Artifacts.
-- Publish a Python package to your feed.
-- Install a Python package from your feed.
+In this quickstart, you learn how to create an Azure Artifacts feed and use your feed to publish and consume Python packages from the command line in your local development environment. When you're finished, you have a Python package published to your feed and installed from your feed to your local development environment.
 
 To publish and consume packages in your Azure Pipelines, see [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
 
@@ -125,7 +119,9 @@ Use twine to upload your package to your Azure Artifacts feed.
 
 1. Follow the instructions in the **Project setup** section to set up your `.pypirc` file.  
 
-    To avoid needing to enter your personal access token every time you publish a package, you can add your credentials to the `.pypirc` file. Ensure that you don't check your personal access token into a public repository.
+    :::image type="content" source="./media/screenshot-twine-connect-to-feed-pyirc.png" alt-text="A screenshot highlighting the `.pyirc` content.":::
+
+1. To avoid needing to enter your personal access token every time you publish a package, you can add your credentials to the `.pypirc` file. Ensure that you don't check your personal access token into a public repository.
 
     Example of a `.pypirc` file with credentials:
 
@@ -192,8 +188,10 @@ Use twine to upload your package to your Azure Artifacts feed.
     ---
 
 1. Add a *pip.ini* (Windows) or a *pip.conf* (Mac/Linux) file to the root directory of your virtual environment. Copy the content from the **Project setup** section of the **Connect to feed** dialog and add it to your *pip.ini* or *pip.conf* file.
+
+    :::image type="content" source="./media/screenshot-pip-connect-to-feed-pip-ini.png" alt-text="A screenshot highlighting the pip.ini file content.":::
     
-    To avoid needing to enter your personal access token every time you install a package from your feed, you can add your credentials to the *pip.ini* or *pip.conf* file. Make sure you don't check your personal access token into a public repository.
+1. To avoid needing to enter your personal access token every time you install a package from your feed, you can add your credentials to the *pip.ini* or *pip.conf* file. Make sure you don't check your personal access token into a public repository.
 
     Example of a *pip.ini* or *pip.conf* file with credentials:
 
@@ -252,4 +250,3 @@ If you cloned the sample Python package, you can delete the repository from your
 - [Artifacts keyring](https://github.com/microsoft/artifacts-keyring)
 
 - [Python virtual environment](https://docs.python.org/3/library/venv.html)
-
