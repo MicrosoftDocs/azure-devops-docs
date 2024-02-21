@@ -15,11 +15,11 @@ ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 
 In this quickstart, you learn how to publish and consume Python packages using an Azure Artifacts feed from the command line in your local development environment. 
 
-By the end of this quickstart, you'll have:
+In this quickstart, you:
 
-- Created a feed in Azure Artifacts.
-- Published a Python package to your feed.
-- Installed a Python package from your feed.
+- Create a feed in Azure Artifacts.
+- Publish a Python package to your feed.
+- Install a Python package from your feed.
 
 To publish and consume packages in your Azure Pipelines, see [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
 

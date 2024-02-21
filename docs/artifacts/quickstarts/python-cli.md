@@ -13,7 +13,14 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Azure Artifacts allows you to create, host, and share packages with your team or organization. This article shows you how to publish and consume Python packages to and from your feed using the command-line interface (CLI). You learn how to use the artifacts-keyring package to automatically setup authentication for you, and alternatively, authenticate with a personal access token (PAT).
+Azure Artifacts allows you to create, host, and share Python packages with your team or organization. You can publish and consume Python packages using an Azure Artifacts feed from the command line in your local development environment.
+
+In this article you learn how to:
+
+* Create an Azure Artifacts feed.
+* Set up authentication with either the Python artifacts-keyring package or, a personal access token (PAT).
+* Publish Python packages to your feed.
+* Consume Python packages fromyoure feed.
 
 To publish and consume packages in your Azure Pipelines, see [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
 
