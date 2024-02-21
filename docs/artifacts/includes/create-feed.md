@@ -5,6 +5,7 @@ ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 02/22/2024
+monikerRange: '<= azure-devops'
 ---
 
 ::: moniker range=">= azure-devops"
