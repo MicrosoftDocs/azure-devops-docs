@@ -17,7 +17,7 @@ You can customize how your pipeline runs are numbered. The default value for run
 
 In Azure DevOps `$(Rev:r)` is a special variable format that only works in the build number field. When a build is completed, if nothing else in the build number has changed, the `Rev` integer value increases by one.
 
-`$(Rev:r)` resets when you change part of the build number. For example, if you've configured your build number format as `$(Build.DefinitionName)_$(Date:yyyyMMdd)$(Rev:r)`, then the build number will reset when the date changes the next day. If your build number is `MyBuild_20230621.1`, the next build number that day is `MyBuild_20230621.2`. The next day, the build number is `MyBuild_20230622.1`.
+`$(Rev:r)` resets when you change part of the build number. For example, if you've configured your build number format as `$(Build.DefinitionName)_$(Date:yyyyMMdd).$(Rev:r)`, then the build number will reset when the date changes the next day. If your build number is `MyBuild_20230621.1`, the next build number that day is `MyBuild_20230621.2`. The next day, the build number is `MyBuild_20230622.1`.
 
 If your build number format is `1.0.$(Rev:r)`, then the build number resets to `1.0.1` when you change part of the number. For example, if your last build number was `1.0.3`, and you change the build number to `1.1.$(Rev:r)` to indicate a version change, the next build number is `1.1.1`.
 
@@ -37,7 +37,7 @@ You can use a combination of tokens, variables, and underscore characters.
 The `name` property doesn't work in template files. 
 
 ```yaml
-name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:r)
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
 
 steps:
   - script: echo '$(Build.BuildNumber)' # outputs customized build number like project_def_master_20200828.1
@@ -75,7 +75,7 @@ At the time, a run is started:
 If you specify this build number format:
 
 ```
-$(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+$(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:.r)
 ```
 
 Then the second run on this day would be named: **Fabrikam\_CIBuild_main\_20190505.2**
@@ -173,7 +173,7 @@ variables:
     ${{ else }}:
       value: other
 
-name: $(TeamProject)_$(SourceBranchName)_$(why)_$(Date:yyyyMMdd)$(Rev:.r)
+name: $(TeamProject)_$(SourceBranchName)_$(why)_$(Date:yyyyMMdd).$(Rev:.r)
 
 pool:
   vmImage: 'ubuntu-latest'
