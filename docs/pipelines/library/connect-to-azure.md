@@ -25,7 +25,7 @@ You have multiple options for connecting to Azure by using Azure Resource Manage
 * Service principal with secret
 * Agent-assigned managed identity
 
-> To learn about other types of connections and for general information about creating and using connections, see [Service connections for builds and releases](service-endpoints.md).
+To learn about other types of connections and for general information about creating and using connections, see [Service connections for builds and releases](service-endpoints.md).
 
 ::: moniker range="azure-devops"
 
@@ -33,7 +33,7 @@ You have multiple options for connecting to Azure by using Azure Resource Manage
 
 ## Create an Azure Resource Manager service connection that uses workload identity federation
 
-[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect to authenticate with Microsoft Entra protected resources without needing to manage secrets.
+[Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect (OIDC) to authenticate with Microsoft Entra protected resources without using secrets.
 
 We recommend that you use this approach if all the following items are true for your scenario:
 
@@ -44,15 +44,17 @@ We recommend that you use this approach if all the following items are true for 
 
 ### Create a new workload identity federation service connection
 
-1. In the Azure DevOps project, go to **Project settings** > **Service connections** [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
+
+   For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
 
 1. Select **New service connection**, and then select **Azure Resource Manager**.
 
-   ![Screenshot that shows choosing a workload identity service connection type.](media/new-service-connection-azure-resource-manager.png)
+   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows choosing a workload identity service connection type.":::
 
 1. Select **Workload identity federation (automatic)**.
 
-   ![Screenshot that shows selecting a workload identity service connection type.](media/select-workload-identity-service.png)
+   :::image type="content" source="media/select-workload-identity-service.png" alt-text="Screenshot that shows selecting a workload identity service connection type.":::
 
 1. Specify the following parameters:
 
@@ -103,7 +105,7 @@ To revert a service connection:
 
 1. Select **Revert conversion to the original scheme**.
 
-    :::image type="content" source="media/federated-revert-credential.png" alt-text="Screenshot that shows selecting revert for a federated credential.":::
+   :::image type="content" source="media/federated-revert-credential.png" alt-text="Screenshot that shows selecting revert for a federated credential.":::
 
 1. Select **Revert** again to confirm your choice.
 
@@ -130,7 +132,7 @@ To create the service connection:
 
 1. Select **New service connection**, and then select **Azure Resource Manager**.
 
-   ![Screenshot that shows choosing a service connection type.](media/new-service-endpoint-2.png)
+   :::image type="content" source="media/new-service-endpoint-2.png" alt-text="Screenshot that shows choosing a service connection type.":::
 
 1. Enter or select the following parameters:
 
@@ -156,7 +158,7 @@ To create the service connection:
 >
 > When you follow this approach, Azure DevOps *connects with Microsoft Entra ID and creates an app registration with a secret that's valid for three months*. When the service connection is about to expire, Microsoft Entra ID displays this prompt: **A certificate or secret is expiring soon. Create a new one**. In this scenario, you must refresh the service connection.
 >
-> To refresh a service connection, in the Azure DevOps portal, edit the connection and then select **Verify**. After you save the edit, the service connection is valid for another three months.
+> To refresh a service connection, in the Azure DevOps portal, edit the connection, and then select **Verify**. After you save the edit, the service connection is valid for another three months.
 >
 > We recommend that you use workload identity federation instead of creating a secret. If you use workload identity federation, you don't need to rotate secrets, and app registration maintains its intended purpose. To start using workload identity federation, go to the service connection details page and select **Convert**. The service connection is converted to use workload identity federation instead of a secret. For more information, see [Convert an existing Azure Resource Manager service connection to use workload identity federation](#convert-an-existing-azure-resource-manager-service-connection-to-use-workload-identity-federation).
 >
@@ -184,11 +186,11 @@ If you have problems using this approach (such as no subscriptions shown in the 
 
 1. Select **New service connection**, and then select **Azure Resource Manager**.
 
-   ![Screenshot that shows choosing a service connection type.](media/new-service-endpoint-2.png)
+   :::image type="content" source="media/new-service-endpoint-2.png" alt-text="Screenshot that shows choosing a service connection type.":::
 
 1. Select the **Service Principal (manual)** option, and then enter the service principal details.
 
-   ![Screenshot that shows opening the full version of the service dialog.](media/rm-endpoint-link.png)
+   :::image type="content" source="media/rm-endpoint-link.png" alt-text="Screenshot that shows opening the full version of the service dialog.":::
 
 1. For **Connection name**, enter a display name to use to refer to this service connection.
 
@@ -226,7 +228,7 @@ For more information, see [Troubleshoot Azure Resource Manager service connectio
 
 <a name="use-msi"></a>
 
-## Create an Azure Resource Manager service connection to a virtual machine that uses a managed service identity
+## Create an Azure Resource Manager service connection to a VM that uses a managed service identity
 
 > [!NOTE]
 >
@@ -242,11 +244,11 @@ You can configure Azure VM-based agents to use an [Azure Managed Service Identit
 
 1. Select **New service connection**, and then select **Azure Resource Manager**.
 
-   ![Screenshot that shows choosing a service connection type.](media/new-service-endpoint-2.png)
+   :::image type="content" source="media/new-service-endpoint-2.png" alt-text="Screenshot that shows choosing a service connection type.":::
 
 1. Select the **Managed Identity Authentication** option.
 
-   ![Screenshot that shows going to the managed service identity settings.](media/rm-endpoint-msi.png)
+   :::image type="content" source="media/rm-endpoint-msi.png" alt-text="Screenshot that shows going to the managed service identity settings.":::
 
 1. For **Connection name**,  enter a display name to use when you refer to this service connection.
 
@@ -270,13 +272,13 @@ You can configure Azure VM-based agents to use an [Azure Managed Service Identit
    For more information, see [How can I use managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview#how-can-i-use-managed-identities-for-azure-resources) and
    [Use role-based access control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
 
-For more information, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
+For more information about the process, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
 <a name="connect-govt"></a>
 
 ## Connect to an Azure Government Cloud
 
-For information about connecting to an Azure Government Cloud, see [Connecting from Azure Pipelines (Azure Government Cloud)](/azure/azure-government/documentation-government-get-started-connect-with-vsts).
+For information about connecting to an Azure Government Cloud, see [Connect from Azure Pipelines (Azure Government Cloud)](/azure/azure-government/documentation-government-get-started-connect-with-vsts).
 
 <a name="connect-stack"></a>
 
@@ -285,7 +287,7 @@ For information about connecting to an Azure Government Cloud, see [Connecting f
 For information about connecting to Azure Stack, see these articles:
 
 * [Connect to Azure Stack](/azure/azure-stack/azure-stack-connect-azure-stack)
-* [Connect Azure Stack to Azure by using VPN](/azure/azure-stack/azure-stack-connect-vpn)
-* [Connect Azure Stack to Azure by using ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
+* [Connect Azure Stack to Azure by using a VPN](/azure/azure-stack/azure-stack-connect-vpn)
+* [Connect Azure Stack to Azure by using Azure ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

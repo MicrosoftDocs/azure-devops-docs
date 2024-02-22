@@ -17,11 +17,19 @@ Get help debugging common issues with workload identity service connections. You
 
 ## Troubleshooting checklist
 
-Use the following checklist to troubleshoot issues with workload identity service connections.
+Use the following checklist to troubleshoot issues with workload identity service connections:
+
+- Review pipeline tasks to ensure that they support workload identity.
+- Verify that workload identity federation is active for the tenant.
+- Check the issuer URL and federation subject for accuracy.
+
+The following sections describe the issues and how to resolve them.
 
 ### Review pipeline tasks
 
-Not all pipelines tasks support workload identity. During the preview, no Azure Marketplace tasks support workload identity service connections. The following tasks don't currently support workload identity federation:
+Not all pipelines tasks support workload identity. During the preview, no Azure Marketplace tasks support workload identity service connections.
+
+The following tasks currently don't support workload identity federation:
 
 - AzureCloudPowerShellDeploymentV1
 - AzCopy (AzureFileCopyV1, AzureFileCopyV2, AzureFileCopyV3, AzureFileCopyV4, AzureFileCopyV5)
@@ -39,9 +47,9 @@ Verify that there are no Microsoft Entra policies in place that block federated 
 
 ### Check the issuer URL for accuracy
 
-If you see a message that indicates `no matching federated identity record found`, either the issuer URL or the federation subject doesn't match. The correct issuer URL starts with `https://vstoken.dev.azure.com`.
+If you see a message that indicates **no matching federated identity record found**, either the issuer URL or the federation subject don't match. The correct issuer URL starts with `https://vstoken.dev.azure.com`.
 
-You can fix the issuer URL by editing and saving the service connection to update the issuer URL. If Azure DevOps didn't create the identity, the issuer must be updated manually. For Azure identities, the issuer URL automatically updates.  
+You can fix the issuer URL by editing and saving the service connection to update the issuer URL. If Azure DevOps didn't create the identity, the issuer URL must be updated manually. For Azure identities, the issuer URL automatically updates.  
 
 ## Common issues
 
@@ -57,8 +65,8 @@ You must either have permissions in Microsoft Entra ID to create app registratio
 
 You have two options to resolve the issue:
 
-- [Solution 1: Manually configure workload identity by using managed identity authentication](configure-workload-identity.md#workload-identity-by-using-managed-identity-authentication)
-- [Solution 2: Manually configure workload identity by using service principal authentication](configure-workload-identity.md#workload-identity-by-using-service-principal-authentication)
+- [Solution 1: Manually configure workload identity by using managed identity authentication](configure-workload-identity.md#set-a-workload-identity-service-connection-to-use-managed-identity-authentication)
+- [Solution 2: Manually configure workload identity by using service principal authentication](configure-workload-identity.md#set-a-workload-identity-service-connection-to-use-service-principal-authentication)
 
 ### I use a container resource that specifies an instance of Azure Container Registry
 
@@ -66,14 +74,14 @@ You have two options to resolve the issue:
 
 ## Error messages
 
-The following table identifies common error messages and an issue that might generate each message:
+The following table identifies common error messages and issues that might generate them:
 
-| Message | Plausible issue |
+| Message | Possible issue |
 |---------|-----------------|
 | **cannot request token: Get `?audience=api://AzureADTokenExchange: unsupported protocol scheme`** | The task doesn't support workload identity federation. |
 | **Identity not found** | The task doesn't support workload identity federation. |
 | **Could not fetch access token for Azure** | The task doesn't support workload identity federation. |
-| **AADSTS700016: Application with identifier '****' wasn't found** | The identity that is used for the service connection no longer exists or it might have been removed independently from the service connection. Create a new service connection. |
+| **AADSTS700016: Application with identifier '****' wasn't found** | The identity that is used for the service connection no longer exists or it might have been removed from the service connection. In this scenario, create a new service connection. |
 | **AADSTS7000215:  Invalid client secret provided.** | You're using a service connection that has an expired secret. [Convert the service connection to workload identity federation](https://aka.ms/azdo-rm-workload-identity-conversion) and replace the expired secret with federated credentials. |
 | **AADSTS700024: Client assertion is not within its valid time range** | This error might occur in the following cases:<br />- You're using an AzureCLI task with `addSpnToEnvironment` set to `true` to consume the `idToken` environment variable. The `idToken` environment variable expires after 10 minutes.<br />- Some Azure data plane (non-Azure Resource Manager) operations require a separate bearer token to authenticate. You request a bearer token in the Azure CLI by using `az account get-access-token` or in Azure PowerShell by using Get-AzAccessToken. These tokens have a lifetime of one hour. Using the token after one hour results in an `AADSTS700024` error. Some tools and SDKs (for example, [Azure GO SDK](https://github.com/Azure/azure-sdk-for-go) and [Azure Python SDK](/azure/developer/python/sdk/azure-sdk-overview)) use the Azure CLI and `az account get-access-token` indirectly to obtain a bearer token. If you have tasks that (directly or indirectly) obtain a bearer token and run longer than one hour, use a service connection with a secret instead. |
 | **AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer: `https://app.vstoken.visualstudio.com`.** | The issuer URL isn't correct. The correct issuer URL has the format `https://vstoken.dev.azure.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. You can fix the issuer URL by editing and then saving a service connection. If Azure DevOps didn't create your identity, you must manually update the issuer. You can find the correct issuer in the edit dialog of the service connection or in the response (under authorization parameters) if you use the REST API. |
