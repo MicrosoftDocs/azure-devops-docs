@@ -29,7 +29,7 @@ You have multiple options for connecting to Azure by using Azure Resource Manage
 
 ::: moniker range="azure-devops"
 
-<a name="create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation">
+<a name="create-an-azure-resource-manager-service-connection-using-workload-identity-federation"></a>
 
 ## Create an Azure Resource Manager service connection that uses workload identity federation
 
@@ -167,7 +167,7 @@ If you have problems using this approach (such as no subscriptions shown in the 
 
 ::: moniker-end
 
-<a name="create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation"></a>
+<a name="create-an-azure-resource-manager-service-connection-with-an-existing-service-principal"></a>
 
 ## Create an Azure Resource Manager service connection that uses an existing service principal
 
