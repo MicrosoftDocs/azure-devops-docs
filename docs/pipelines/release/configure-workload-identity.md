@@ -12,13 +12,13 @@ monikerRange: '>= azure-devops'
 
 # Manually set an Azure Resource Manager workload identity service connection
 
-When you [troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md#i-dont-have-permissions-to-create-a-service-principal-in-the-micrososft-entra-tenant), you might need to manually configure the connection instead of using the automated tool.
+When you [troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md#i-dont-have-permissions-to-create-a-service-principal-in-the-micrososft-entra-tenant), you might need to manually configure the connection instead of using the automated tool that's available in Azure DevOps.
 
 We recommend that you [try the automated approach](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) before you begin a manual configuration.
 
 There are two options for authentication: use a managed identity or use a service principal. The advantage of the managed identity option is that you can use it if you don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
 
-## Workload identity by using managed identity authentication
+## Set a workload identity service connection to use managed identity authentication
 
 You might need to manually create a managed identity that uses federated credentials, and then grant the required permissions. You can also use the REST API for this process.
 
@@ -111,7 +111,7 @@ You might need to manually create a managed identity that uses federated credent
 
 1. In Azure DevOps, select **Verify and save**.
 
-## Workload identity by using service principal authentication
+## Set a workload identity service connection to use service principal authentication
 
 You might need to manually create a service principal that has federated credentials, and then grant the required permissions. You can also use the REST API for this process.
 
@@ -192,7 +192,7 @@ You might need to manually create a service principal that has federated credent
 
     :::image type="content" source="approvals/media/federated-credentials-devops.png" alt-text="Screenshot that shows DevOps credentials for federated authentication.":::
 
-1. In the Azure portal, return to your app registration federated credential.
+1. In the Azure portal, return to your app registration federated credentials.
 
 1. Paste the values for **Issuer** and **Subject identifier** that you copied from your Azure DevOps project into your federated credentials in the Azure portal.
 
