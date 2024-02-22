@@ -2,7 +2,6 @@
 title: Use an Azure Resource Manager service connection
 ms.custom: devx-track-arm-template, arm2024
 description: Learn how to use an Azure Resource Manager service connection to connect Azure Pipelines or Microsoft Visual Studio Team Foundation Server to Azure.
-ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
@@ -72,6 +71,8 @@ You can quickly convert an existing Azure Resource Manager service connection to
 * Azure DevOps originally created the service connection. If you manually create your service connection, you can't convert the service connection by using the service connection conversion tool because Azure DevOps doesn't have permissions to modify its own credentials.
 * Only one project uses the service connection. You can't convert [cross-project service connections](service-endpoints.md#project-permissions---cross-project-sharing-of-service-connections).
 
+To convert a service connection:
+
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
    For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
@@ -86,7 +87,7 @@ You can quickly convert an existing Azure Resource Manager service connection to
 
    The conversion might take a few minutes. If you want to revert the connection, you must revert it within seven days.
 
-### Revert an existing Azure Resource Manager Service connection to use a service principal secret
+### Revert an existing Azure Resource Manager Service connection that uses a service principal secret
 
 You can revert a converted automatic service connection with its secret for seven days. After seven days, manually create a new secret.
 
@@ -116,6 +117,8 @@ We recommend that you use this approach if all the following items are true for 
 * You don't need to further limit permissions for Azure resources that users access through the service connection.
 * You're not connecting to [Azure Stack](#connect-stack) or to an [Azure Government Cloud](#connect-govt).
 * You're not connecting from Azure DevOps Server 2019 or earlier versions of Team Foundation Server.
+
+To create the service connection:
 
 1. In the Azure DevOps project, go to **Project settings** > **Service connections**.
 
@@ -151,14 +154,14 @@ We recommend that you use this approach if all the following items are true for 
 >
 > When you follow this approach, Azure DevOps *connects with Microsoft Entra ID and creates an app registration with a secret that's valid for three months*. When the service connection is about to expire, Microsoft Entra ID displays this prompt: **A certificate or secret is expiring soon. Create a new one**. In this scenario, you must refresh the service connection.
 >
-> To refresh a service connection, in the Azure DevOps portal, edit the connection and select **Verify**. After you save the edit, the service connection is valid for another three months.
+> To refresh a service connection, in the Azure DevOps portal, edit the connection and then select **Verify**. After you save the edit, the service connection is valid for another three months.
 >
-> We recommend that you use workload identity federation instead of creating a secret. If you use workload identity federation, you don't need to rotate secrets, and app registration is constrained to its intended purpose. To start using workload identity federation, go to the service connection details page and select **Convert**. This converts the service connection to use workload identity federation instead of a secret. For more information, see [Convert an existing Resource Manager service connection to use workload identity federation](#convert-an-existing-arm-service-connection-to-use-workload-identity-federation).
+> We recommend that you use workload identity federation instead of creating a secret. If you use workload identity federation, you don't need to rotate secrets, and app registration maintains its intended purpose. To start using workload identity federation, go to the service connection details page and select **Convert**. The service connection is converted to use workload identity federation instead of a secret. For more information, see [Convert an existing Azure Resource Manager service connection to use workload identity federation](#convert-an-existing-azure-resource-manager-service-connection-to-use-workload-identity-federation).
 >
 
-For more information, see [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
+For more information, see [Troubleshoot an Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
 
-If you have problems using this approach (such as no subscriptions shown in the dropdown list) or if you want to further limit users' permissions, you can instead use a [service principal](#use-spn) or a [virtual machine with a managed service identity](#use-msi).  
+If you have problems using this approach (such as no subscriptions shown in the dropdown list) or if you want to further limit user permissions, you can instead use a [service principal](#use-spn) or a [virtual machine with a managed service identity](#use-msi).  
 
 ::: moniker-end
 
@@ -221,7 +224,7 @@ For more information, see [Troubleshoot Azure Resource Manager service connectio
 
 <a name="use-msi"></a>
 
-## Create an Azure Resource Manager service connection to a virtual machine by using a managed service identity
+## Create an Azure Resource Manager service connection to a virtual machine that uses a managed service identity
 
 > [!NOTE]
 >
