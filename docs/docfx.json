@@ -25,7 +25,8 @@
       {
         "files": [
           "artifacts/nuget/bootstrap-nuget.md",
-          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md"        ],
+          "pipelines/apps/cd/deploy-linuxvm-deploygroups.md"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
