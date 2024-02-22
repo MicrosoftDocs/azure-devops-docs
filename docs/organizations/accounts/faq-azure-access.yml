@@ -284,7 +284,7 @@ sections:
         answer: |
           During the connect process, we map existing users to members of the Microsoft Entra tenant, based on their UPN, which is often known as sign-in address. If we detect multiple users with the same UPN, we don't know how to map these users. This scenario occurs if a user changes their UPN to match one already existing in the organization. 
 
-          If you encounter this error, review your list of users for any duplicates. If you find any duplicates, remove the users you don't need. If you can't find any duplicates, [contact support.](https://developercommunity.visualstudio.com/spaces/21/index.html)
+          If you encounter this error, review your list of users for any duplicates. If you find any duplicates, remove the users you don't need. If you can't find any duplicates, [contact support](https://developercommunity.visualstudio.com/spaces/21/index.html).
           
       - question: |
           Can I switch current users from Microsoft accounts to work accounts in Azure DevOps?
