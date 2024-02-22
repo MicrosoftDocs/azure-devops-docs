@@ -2,7 +2,7 @@
 title: Azure Pipelines New User Guide - Key concepts
 description: Learn how Azure Pipelines works with your code and tools to automate build and deployment, and the key concepts behind it.
 ms.topic: overview
-ms.date: 12/20/2022
+ms.date: 02/20/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -10,7 +10,8 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn about the key concepts and components that make up a pipeline. Understanding the basic terms and parts of a pipeline can help you deliver better code more efficiently and reliably.  
+Learn about the key concepts and components that make up Azure Pipelines. Understanding the basic terms and parts of a pipeline can help you more effectively build, test, and deploy your code.  
+
 <br />
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMlMo]  
 
@@ -19,13 +20,13 @@ Learn about the key concepts and components that make up a pipeline. Understandi
 
 ![key concepts graphic](media/key-concepts-overview.svg)
 
-- A [trigger](#trigger) tells a Pipeline to run. 
+- A [trigger](#trigger) tells a pipeline to run. 
 - A [pipeline](#pipeline) is made up of one or more [stages](#stage). A pipeline can deploy to one or more [environments](#environment).
 - A [stage](#stage) is a way of organizing [jobs](#job) in a pipeline and each stage can have one or more jobs.
 - Each [job](#job) runs on one [agent](#agent). A job can also be agentless.  
 - Each [agent](#agent) runs a job that contains one or more [steps](#step).
 - A [step](#step) can be a [task](#task) or [script](#script) and is the smallest building block of a pipeline. 
-- A [task](#task) is a pre-packaged script that performs an action, such as invoking a REST API or publishing a build artifact.
+- A [task](#task) is a prepackaged script that performs an action, such as invoking a REST API or publishing a build artifact.
 - An [artifact](#artifact) is a collection of files or packages published by a [run](#run).
 
 **Azure Pipelines terms**
@@ -38,7 +39,7 @@ For more in-depth information about the different types of agents and how to use
 
 ## Approvals
 
-[Approvals](../process/approvals.md) define a set of validations required before a deployment runs. Manual approval is a common check performed to control deployments to production environments. When checks are configured on an environment, pipelines will stop before starting a stage that deploys to the environment until all the checks are completed successfully. 
+[Approvals](../process/approvals.md) define a set of validations required before a deployment runs. Manual approval is a common check performed to control deployments to production environments. When checks are configured on an environment, a pipeline run pauses until all the checks are completed successfully. 
 
 ## Artifact
 
@@ -54,9 +55,9 @@ Continuous integration &#40;CI&#41; is the practice used by development teams to
 
 ## Deployment
 
-For Classic pipelines, a deployment is the action of running the tasks for one stage, which can include running automated tests, deploying build artifacts, and any other actions are specified for that stage. 
+A classic pipeline deployment is the action of running the tasks for one stage. The deployment can include running automated tests, deploying build artifacts, and any other actions are specified for that stage. 
 
-For YAML pipelines, a deployment typically refers to a [deployment job](../process/deployment-jobs.md).  A deployment job is a collection of steps that are run sequentially against an environment. You can use strategies like run once, rolling, and canary for deployment jobs. 
+For YAML pipelines, a deployment refers to a [deployment job](../process/deployment-jobs.md). A deployment job is a collection of steps that are run sequentially against an environment. You can use strategies like run once, rolling, and canary for deployment jobs. 
 
 ## Deployment group
 
@@ -64,32 +65,32 @@ A deployment group is a set of deployment target machines that have agents insta
 
 ## Environment
 
-An [environment](../process/environments.md) is a collection of resources, where you deploy your application. It can contain one or more virtual machines, containers, web apps, or any service that's used to host the application being developed. A pipeline might deploy the app to one or more environments after build is completed and tests are run.
+An [environment](../process/environments.md) is a collection of resources where you deploy your application. One environment can contain one or more virtual machines, containers, web apps, or any service. Pipelines deploy to one or more environments after a build is completed and tests are run.
 
 ## Job
 
 A stage contains one or more [jobs](../process/phases.md). Each job runs on an agent. A job represents an execution boundary of a set of steps. All of the steps run together on the same agent. Jobs are most useful when you want to run a series of steps in different environments. For example, you might want to build two configurations - x86 and x64. In this case, you have one stage and two jobs. One job would be for x86 and the other job would be for x64.
 
-Agentless jobs run in Azure DevOps or Azure DevOps Server without using an agent. A [limited number of tasks](../process/phases.md#agentless-tasks) support agentless jobs.
+Agentless jobs run in Azure DevOps and Azure DevOps Server without using an agent. A [limited number of tasks](../process/phases.md#agentless-tasks) support agentless jobs.
 
 ## Pipeline
 
 A pipeline defines the continuous integration and deployment process for your app. It's made up of one or more stages. It can be thought of as a workflow that defines how your test, build, and deployment steps are run. 
 
-For Classic pipelines, a pipeline can also be referred to as a definition.
+For classic pipelines, a pipeline can also be referred to as a definition.
 
 ## Release
 
-For Classic pipelines, a [release](../release/releases.md) is a versioned set of artifacts specified in a pipeline. The release includes a snapshot of all the information required to carry out all the tasks and actions in the release pipeline, such as stages, tasks, policies such as triggers and approvers, and deployment options. You can create a release manually, with a deployment trigger, or with the REST API. 
+For classic pipelines, a [release](../release/releases.md) is a versioned set of artifacts specified in a pipeline. The release includes a snapshot of all the information required to carry out all the tasks and actions in the release pipeline, such as stages, tasks, policies such as triggers and approvers, and deployment options. You can create a release manually, with a deployment trigger, or with the REST API. 
 
 For YAML pipelines, the build and release stages are in one, [multi-stage pipeline](multi-stage-pipelines-experience.md). 
 
 
 ## Run
 
-A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines will first process the pipeline and then send the run to one or more agents. Each agent will run jobs. Learn more about the [pipeline run sequence](../process/runs.md).  
+A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines will first process the pipeline and then send the run to one or more agents. Each agent runs jobs. Learn more about the [pipeline run sequence](../process/runs.md).  
 
-For Classic pipelines, a build represents one execution of a pipeline.
+For classic pipelines, a build represents one execution of a pipeline.
 
 ## Script
 
@@ -98,14 +99,14 @@ A script runs code as a step in your pipeline using command line, PowerShell, or
 ## Stage
 
 A [stage](../process/stages.md) is a logical boundary in the pipeline. It can be used to mark separation of concerns (for example, Build, QA, and production). Each stage contains one or more jobs. When you define multiple stages in a pipeline, by default, they run one after the other. You can specify the conditions for when a stage runs. 
-When you are thinking about whether you need a stage, ask yourself:
+When you're thinking about whether you need a stage, ask yourself:
 - Do separate groups manage different parts of this pipeline? For example, you could have a test manager that manages the jobs that relate to testing and a different manager that manages jobs related to production deployment. In this case, it makes sense to have separate stages for testing and production. 
 - Is there a set of [approvals](../process/approvals.md) that are connected to a specific job or set of jobs? If so, you can use stages to break your jobs into logical groups that require approvals. 
-- Are there jobs that need to run a long time? If you have part of your pipeline that will have an extended run time, it makes sense to divide them into their own stage. 
+- Are there jobs that need to run a long time? If a job in your pipeline has a long run time, it makes sense to put that job in its own stage. 
 
 ## Step
 
-A step is the smallest building block of a pipeline. For example, a pipeline might consist of build and test steps. A step can either be a script or a task. A task is simply a pre-created script offered as a convenience to you. To view the available tasks, see the [Build and release tasks](../tasks/index.md) reference. For information on creating custom tasks, see [Create a custom task](../../extend/develop/add-build-task.md).
+A step is the smallest building block of a pipeline. For example, a pipeline might consist of build and test steps. A step can either be a script or a task. A task is simply a precreated script offered as a convenience to you. To view the available tasks, see the [Build and release tasks](../tasks/index.md) reference. For information on creating custom tasks, see [Create a custom task](../../extend/develop/add-build-task.md).
 
 ## Task
 
@@ -117,7 +118,7 @@ A trigger is something that's set up to tell the pipeline when to run. You can c
 
 ## Library
 
-The [Library](../library/index.md) includes **secure files** and **variable groups**. [Secure files](../library/secure-files.md) are a way to store files and share them across pipelines. You may need to save a file at the DevOps level and then use it during build or deployment. In that case, you can save the file within [Library](../library/index.md) and use it when you need it. [Variable groups](../library/variable-groups.md) store values and secrets that you might want to be passed into a YAML pipeline or make available across multiple pipelines.
+The [Library](../library/index.md) includes **secure files** and **variable groups**. [Secure files](../library/secure-files.md) are a way to store files and share them across pipelines. For example, you may want to reference the same file for different pipelines. In that case, you can save the file within [Library](../library/index.md) and use it when you need it. [Variable groups](../library/variable-groups.md) store values and secrets that you might want to be passed into a YAML pipeline or make available across multiple pipelines.
 
 ### About the authors
 - Dave Jarvis contributed to the key concepts overview graphic.
