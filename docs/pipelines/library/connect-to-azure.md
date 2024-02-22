@@ -29,6 +29,8 @@ You have multiple options for connecting to Azure by using Azure Resource Manage
 
 ::: moniker range="azure-devops"
 
+<a name="create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation">
+
 ## Create an Azure Resource Manager service connection that uses workload identity federation
 
 [Workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) uses OpenID Connect to authenticate with Microsoft Entra protected resources without needing to manage secrets.
@@ -161,11 +163,11 @@ To create the service connection:
 
 For more information, see [Troubleshoot an Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
 
-If you have problems using this approach (such as no subscriptions shown in the dropdown list) or if you want to further limit user permissions, you can instead use a [service principal](#use-spn) or a [virtual machine with a managed service identity](#use-msi).  
+If you have problems using this approach (such as no subscriptions shown in the dropdown list) or if you want to further limit user permissions, you can instead use a [service principal](#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) or a [virtual machine with a managed service identity](#use-msi).  
 
 ::: moniker-end
 
-<a name="use-spn"></a>
+<a name="create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation"></a>
 
 ## Create an Azure Resource Manager service connection that uses an existing service principal
 
