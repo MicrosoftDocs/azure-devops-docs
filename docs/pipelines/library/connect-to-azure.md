@@ -87,7 +87,7 @@ Quickly convert an existing ARM service connection to use workload identity fede
 
 #### Convert multiple ARM service connections with a script
 
-You can use a script to convert multiple, existing service connections to use workload identity federation for authentication. 
+Use a script to update multiple service connections at once to now use workload identity federation for authentication.
 
 This example PowerShell script requires two parameters: Azure DevOps organization (example: `https://dev.azure.com/fabrikam-tailspin`) and Azure DevOps project (example: `Space game web agent`). The script then retrieves the associated service connections for your Azure DevOps project and organization. You'll be asked to confirm that you want to convert each associated service connection that does not use workload identity federation. If you confirm, the script uses the Azure DevOps REST API to update each service connection to now use workload identity federation. 
 
