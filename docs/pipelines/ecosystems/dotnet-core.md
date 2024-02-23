@@ -757,7 +757,7 @@ You can publish your build artifacts by:
 To publish the output of your .NET **build** to your pipeline, do the following tasks: 
 
 * Run `dotnet publish --output $(Build.ArtifactStagingDirectory)` on the .NET CLI or add the **DotNetCoreCLI@2** task with the publish command.
-* Publish the artifact by using the Publish Pipeline [Artifact task.
+* Publish the artifact by using the [Publish Pipeline Artifact](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
 
 Add the following snippet to your `azure-pipelines.yml` file:
 
