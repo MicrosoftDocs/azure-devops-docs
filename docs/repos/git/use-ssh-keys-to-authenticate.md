@@ -268,48 +268,98 @@ Associate the public key generated in the previous step with your user ID.
 
 ## Questions and troubleshooting
 
-### Q: SSH cannot establish a connection. What should I do?
+### Q: I see SSH-RSA related warnings. What should I do?
 
-**A:** There are multiple different problems that you may experience:
+**A:** There are two different warning messages you may see:
 
-```Output
-Unable to negotiate with <IP> port 22: no matching host key type found. Their offer: ssh-rsa
+```output
+ssh-rsa is about to be deprecated and your request has been throttled. Please use rsa-sha2-256 or rsa-sha2-512 instead. Your session will continue automatically. For more details see https://devblogs.microsoft.com/devops/ssh-rsa-deprecation.
 ```
 
-Modify your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
+or
+
+```output
+You’re using ssh-rsa that is about to be deprecated and your request has been blocked intentionally. Any SSH session using SSH-RSA is subject to brown out (failure during random time periods). Please use rsa-sha2-256 or rsa-sha2-512 instead. For more details see https://devblogs.microsoft.com/devops/ssh-rsa-deprecation.
+```
+
+You may have previously modified your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
 
 ```
 Host ssh.dev.azure.com vs-ssh.visualstudio.com
   HostkeyAlgorithms +ssh-rsa
 ```
 
-> [!IMPORTANT]
-> OpenSSH deprecated the `ssh-rsa` public key signature algorithm in [version 8.2](https://www.openssh.com/txt/release-8.2) and disabled it by default in [version 8.8](https://www.openssh.com/txt/release-8.8).
+Please remove these lines now and make sure `rsa-sha2-256` and/or `rsa-sha2-512` are allowed. 
 
-```Output
-Unable to negotiate with <IP> port 22: no matching MAC found. Their offer: hmac-sha2-256,hmac-sha2-512
-```
+For more details, refer to the [blog post](https://devblogs.microsoft.com/devops/ssh-rsa-deprecation/).
 
-Modify your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
+### Q: SSH cannot establish a connection. What should I do?
 
-```
-Host ssh.dev.azure.com vs-ssh.visualstudio.com
-  MACs +hmac-sha2-512,+hmac-sha2-256
-```
+**A:** There are multiple different problems that you may experience:
 
-```Output
-Unable to negotiate with <IP> 22: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256
-```
+- **Use of unsupported SSH-RSA**
 
-Modify your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
+   ```output
+   You’re using ssh-rsa that is unsupported. Please use rsa-sha2-256 or rsa-sha2-512 instead. For more details see https://devblogs.microsoft.com/devops/ssh-rsa-deprecation.
+   ```
 
-```
-Host ssh.dev.azure.com vs-ssh.visualstudio.com
-  KexAlgorithms +diffie-hellman-group-exchange-sha256,+diffie-hellman-group14-sha1,+diffie-hellman-group1-sha1
-```
+   You may have previously modified your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
 
-> [!IMPORTANT]
-> The key exchange algorithm `diffie-hellman-group1-sha1` has been disabled by default in [version 6.9](https://www.openssh.com/txt/release-6.9) of OpenSSH and `diffie-hellman-group14-sha1` in [version 8.2](https://www.openssh.com/txt/release-8.2).
+   ```
+   Host ssh.dev.azure.com vs-ssh.visualstudio.com
+     HostkeyAlgorithms +ssh-rsa
+   ```
+
+   Please remove these lines now and make sure `rsa-sha2-256` and/or `rsa-sha2-512` are allowed. 
+
+   For more details, refer to the [blog post](https://devblogs.microsoft.com/devops/ssh-rsa-deprecation/).
+
+- **No matching host key**
+
+   This should happen neither on Azure DevOps Service nor on more recent Azure DevOps Server versions as mentioned in the [blog post](https://devblogs.microsoft.com/devops/ssh-rsa-deprecation/).
+
+   ```Output
+   Unable to negotiate with <IP> port 22: no matching host key type found. Their offer: ssh-rsa
+   ```
+
+   Modify your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
+
+   ```
+   Host ssh.dev.azure.com vs-ssh.visualstudio.com
+     HostkeyAlgorithms +ssh-rsa
+   ```
+
+  > [!IMPORTANT]
+  > OpenSSH deprecated the `ssh-rsa` public key signature algorithm in [version 8.2](https://www.openssh.com/txt/release-8.2) and disabled it by default in [version 8.8](https://www.openssh.com/txt/release-8.8).
+
+- **No matching MAC**
+
+   ```Output
+   Unable to negotiate with <IP> port 22: no matching MAC found. Their offer: hmac-sha2-256,hmac-sha2-512
+   ```
+
+   Modify your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
+
+   ```
+   Host ssh.dev.azure.com vs-ssh.visualstudio.com
+     MACs +hmac-sha2-512,+hmac-sha2-256
+   ```
+
+- **No matching key exchange method**
+
+   ```Output
+   Unable to negotiate with <IP> 22: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256
+   ```
+
+   Modify your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
+
+   ```
+   Host ssh.dev.azure.com vs-ssh.visualstudio.com
+     KexAlgorithms +diffie-hellman-group-exchange-sha256,+diffie-hellman-group14-sha1,+diffie-hellman-group1-sha1
+   ```
+
+  > [!IMPORTANT]
+  > The key exchange algorithm `diffie-hellman-group1-sha1` has been disabled by default in [version 6.9](https://www.openssh.com/txt/release-6.9) of OpenSSH and `diffie-hellman-group14-sha1` in [version 8.2](https://www.openssh.com/txt/release-8.2).
 
 > [!TIP]
 > For self-hosted instances of Azure DevOps Server and TFS use the appropriate hostname in the `Host` line instead of `ssh.dev.azure.com vs-ssh.visualstudio.com`.

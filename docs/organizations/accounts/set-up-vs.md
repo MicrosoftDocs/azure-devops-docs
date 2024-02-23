@@ -32,7 +32,7 @@ test early, and ship faster.
 > learn how to [install and set up Azure DevOps Server](/azure/devops/server/install/get-started).
 
 Azure DevOps Services is free for [up to five users with access to Basic features](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) and for unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/products/how-to-buy-vs) and [Stakeholders who can access limited features](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs).
-Learn [what else you get with Azure DevOps Services](https://visualstudio.microsoft.com/pricing/visual-studio-team-services-pricing-vs). 
+Learn [what else you get with Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). 
 If you want, you can also use Azure DevOps Services with any IDE or code editor, like the following examples:
 
 * [Eclipse, Android Studio, or IntelliJ](/azure/devops/pipelines/ecosystems/java)
