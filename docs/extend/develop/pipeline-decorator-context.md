@@ -6,7 +6,7 @@ ms.subservice: azure-devops-ecosystem
 ms.assetid: fe3e1e94-0415-400a-9b2d-7eeadb6101fc
 ms.author: chcomley
 author: chcomley
-ms.date: 07/20/2021
+ms.date: 02/26/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [Pipeline decorators](add-pipeline-decorator.md) have access to context about the pipeline in which they run.
 As a pipeline decorator author, you can use this context to make decisions about the decorator's behavior. The information available in context is different for pipelines and for release.
-Also, decorators run after task names are resolved to task GUIDs.
+Also, decorators run after task names are resolved to task globally unique identifiers (GUIDs).
 When your decorator wants to reference a task, it should use the GUID rather than the name or keyword.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
@@ -110,7 +110,7 @@ For instance, to conditionally add a task only if it doesn't already exist:
 For instance, if the pipeline had a variable called `myVar`, its value would be available to the decorator as `variables['myVar']`.
 
 For example, to give a decorator an opt-out, we could look for a variable.
-Pipeline authors who wish to opt out of the decorator can set this variable, and the decorator won't be injected.
+Pipeline authors who wish to opt out of the decorator can set this variable, and the decorator isn't injected.
 If the variable isn't present, then the decorator is injected as usual.
 
 #### my-decorator.yml
@@ -131,7 +131,7 @@ steps:
 
 ## Task names and GUIDs
 
-Decorators run after tasks have already been turned into GUIDs.
+Decorators run after tasks already turned into GUIDs.
 Consider the following YAML:
 
 ```yaml
@@ -154,15 +154,15 @@ For special keywords like `checkout` and `bash` in the previous example, you can
 
 | Keyword      | GUID                                   | Task Name |
 |--------------|----------------------------------------|-----------|
-| `checkout`   | `6D15AF64-176C-496D-B583-FD2AE21D4DF4` | n/a, see note below |
+| `checkout`   | `6D15AF64-176C-496D-B583-FD2AE21D4DF4` | n/a, see note |
 | `bash`       | `6C731C3C-3C68-459A-A5C9-BDE6E6595B5B` | Bash |
 | `script`     | `D9BAFED4-0B18-4F58-968D-86655B4D2CE9` | CmdLine |
 | `powershell` | `E213FF0F-5D5C-4791-802D-52EA3E7BE1F1` | PowerShell |
 | `pwsh`       | `E213FF0F-5D5C-4791-802D-52EA3E7BE1F1` | PowerShell |
 | `publish`    | `ECDC45F6-832D-4AD9-B52B-EE49E94659BE` | PublishPipelineArtifact |
-| `download`   | `61F2A582-95AE-4948-B34D-A1B3C4F6A737` | DownloadPipelineArtifact |
+| `download`   | `30f35852-3f7e-4c0c-9a88-e127b4f97211` | DownloadPipelineArtifact |
 
-After resolving task names and keywords, the previous YAML becomes:
+After task names and keywords resolve, the previous YAML becomes:
 
 ```yaml
 steps:
@@ -180,6 +180,6 @@ steps:
 ```
 
 > [!TIP]
-> Each of these GUIDs can be found in the `task.json` for the corresponding [in-box task](https://github.com/microsoft/azure-pipelines-tasks).
+> You can find each of these GUIDs in the `task.json` for the corresponding [in-box task](https://github.com/microsoft/azure-pipelines-tasks).
 > The only exception is `checkout`, which is a native capability of the agent.
 > Its GUID is built into the Azure Pipelines service and agent.
