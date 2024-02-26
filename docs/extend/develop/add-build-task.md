@@ -8,7 +8,7 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-date: 02/06/2024
+date: 02/26/2024
 ---
 
 # Add a custom pipelines task extension
@@ -171,7 +171,7 @@ Now that the scaffolding is complete, we can create our custom task.
             }
             console.log('Hello', inputString);
         }
-        catch (err) {
+        catch (err:any) {
             tl.setResult(tl.TaskResult.Failed, err.message);
         }
     }
