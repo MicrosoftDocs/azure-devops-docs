@@ -51,6 +51,8 @@ You can manually control when a stage should run using approval and checks. This
 
     :::image type="content" source="media/approval-prompt.png" alt-text="A screenshot showing the approval prompt window.":::
 
+The list of users who can review an Approval is fixed at the time approvals & checks start running. That is, changes to the list of users and groups of an approval check done after checks start executing are not picked up.
+
 > [!NOTE]
 > If a group is designated as an approver, only one user within the group needs to approve for the run to proceed.
 
