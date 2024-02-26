@@ -45,9 +45,9 @@ Your project collection reuses your Azure subscription for future Marketplace pu
 
 Install an extension to your organization by doing the following steps.
 
-::: moniker range=">= azure-devops-2020"
-
 #### [Browser](#tab/browser)
+
+::: moniker range=">= azure-devops-2020"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select the shopping bag icon, and then select **Browse Marketplace**.
@@ -69,6 +69,8 @@ Install an extension to your organization by doing the following steps.
 Your extension is now installed! You can now go to your organization to use your extension. Also, tell your team about this extension, so they can start using its capabilities.
 
 ![Extension installed](media/get-vsts-extensions/you-are-all-set.png)
+
+::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -148,6 +150,7 @@ scopes: null
 serviceInstanceType: null
 version: 5.0.1.34507
 ```
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020 < azure-devops"
