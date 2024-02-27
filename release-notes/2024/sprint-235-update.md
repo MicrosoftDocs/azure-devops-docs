@@ -2,10 +2,16 @@
 title: Show GitHub pull request details on linked work items (preview)
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/27/2024
+ms.date: 2/28/2024
 description: Show GitHub pull request details on linked work items (preview)
 ---
 # Show GitHub pull request details on linked work items (preview)
+
+With this update, we've enhanced the way you can view GitHub pull request statuses within the Azure Boards work item. Now, you can quickly check if a pull request is in draft, pending review, or undergoing status checks. This enhancement lets you see beyond the simple open or closed statuses—without having to open the pull request.
+
+Additionally, we are excited to announce the Test Plan and Suite ID Search feature in Azure Test Plans. This update is part of our ongoing effort to improve your test management experience 
+
+Check out the release notes for details.
 
 ### Azure Boards:
 
