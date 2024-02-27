@@ -7,13 +7,14 @@ ms.topic: include
 
 ### Introducing Test Plan and Suite ID Search in Azure Test Plans 
 
-Managing numerous test plans in Azure Test Plans has become effortless! Previously, you might have found yourself waiting for lengthy dropdown menus while importing, copying, or cloning test cases. Especially for those with extensive test plans or suites, this could significantly slow down your workflow. 
+You can now handle multiple test plans in Azure Test Plans with ease! Recognizing the challenges previously faced with long dropdown menus for importing, copying, or cloning test cases—especially for those with extensive plans or suites—we've taken steps to streamline your workflow.
 
-Now, we're excited to announce the Test Plan and Suite ID Search feature. Simply enter your Test Plan or Suite ID for importing or copying Test Cases. Instantly, find yourself exactly where you need to be—no delays, no hassle. This innovation aims to refine your test management experience, making it more fluid and efficient. 
+We're excited to announce the Test Plan and Suite ID Search feature. Simply enter your Test Plan or Suite ID for swift importing or copying of Test Cases without any delays.This update is part of our ongoing commitment to refining your test management experience, making it more intuitive and less time-consuming.
+
 
 ### Update for Azure Test Runner
 
-We're thrilled to announce an important update for Azure Test Runner, now upgraded to a new version for an enhanced user experience. This update focuses on improving stability and performance, ensuring you can continue running your tests smoothly and efficiently. The older version of Azure Test Runner is no longer supported. To ensure your testing operations remain reliable and effective, please upgrade to the latest version immediately. 
+We're excited to share a significant update for Azure Test Runner, which has been upgraded to a new version for a better user experience. This update improves stability and performance, allowing you to run your tests without interruptions or delays. The older version of Azure Test Runner is no longer supported. To maintain the reliability and efficiency of your testing operations, please upgrade to the latest version as soon as possible.
 
 **What's New?**
 

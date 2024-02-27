@@ -1,11 +1,11 @@
 ---
-title: TBD
+title: Show GitHub pull request details on linked work items (preview)
 author: ckanyika
 ms.author: ckanyika
 ms.date: 2/27/2024
-description: TBD
+description: Show GitHub pull request details on linked work items (preview)
 ---
-# TBD
+# Show GitHub pull request details on linked work items (preview)
 
 ### Azure Boards:
 
