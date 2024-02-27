@@ -76,7 +76,7 @@ To address this scenario, you can defer an approval and set the time the approva
 
 1. Select **Defer approval**. 
 
-    :::image type="content" source="media/defer-approval.png" alt-text="Screenshot of defer approval option. ":::
+    :::image type="content" source="media/defer-approval.png" alt-text="Screenshot of defer approval option when you respond to an approval request. ":::
 
 1. Set the approval time. 
 
