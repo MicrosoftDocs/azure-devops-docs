@@ -108,8 +108,7 @@ With our project now configured to authenticate with our feed, we can now procee
 
 1. Paste your command in the Package Manager Console window, and press Enter to install your package.
 
-> [!NOTE]
-> You must be a **Collaborator**, a **Contributor**, or an **Owner** to save packages from upstream. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
+[!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 
 ## View saved packages
 

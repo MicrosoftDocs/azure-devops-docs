@@ -76,8 +76,7 @@ In this example, we will save the Zipflinger Library from Google Maven Repositor
     mvn install
     ```
 
-> [!NOTE]
-> To save packages from upstream sources, you need to have at least the **Collaborator** role or higher. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
+[!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 
 ## View saved packages
 

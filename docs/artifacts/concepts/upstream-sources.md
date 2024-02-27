@@ -15,8 +15,7 @@ monikerRange: '<= azure-devops'
 
 Using upstream sources, you can conveniently store packages from various sources in a single feed. This includes packages you publish and those you consume from external feeds and public registries like NuGet.org, npmjs.com, Maven Central, and PyPI. Once you've enabled upstream sources, any package installed from these upstream sources, a copy will be automatically saved to your feed.
 
-> [!NOTE]
-> To save packages from upstream sources, you must be a **Collaborator** or higher. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
+[!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 
 ## Advantages
 
@@ -72,9 +71,9 @@ To make sure your feed is easily configured as an upstream source, consider appl
 
 #### Use the default view:
 
-The default view for all newly created feeds is the `@local` view, which contains all the packages published to your feed or saved from upstream sources.
+The default view for all newly created feeds is the `@Local` view, which contains all the packages published to your feed or saved from upstream sources.
 
-If you want to use other views such as a view for newly released package versions, you can promote your package to the `@release` view and then make that view available for your package consumers.
+If you want to use other views such as a view for newly released package versions, you can promote your package to the `@Release` view and then make that view available for your package consumers.
 
 #### Construct a package graph:
 
@@ -150,7 +149,7 @@ Upstream sources serve as a valuable safeguard for your consumers and infrastruc
 
 ##### Q: I can't find my package even though I can see it in one of my feed's upstreams?
 
-A: Packages from upstream sources become available downstream as soon as they're published. However, the package will only appear in your feed's UI after it has been ingested. Ingestion is triggered when a **Collaborator** or higher installs the package version from upstream.
+A: Packages from upstream sources become available downstream as soon as they're published. However, the package will only appear in your feed's UI after it has been ingested. Ingestion is triggered when a **Feed and Upstream Reader (Collaborator)** or higher installs the package version from upstream.
 
 ##### Q: What are feed views?
 
@@ -160,9 +159,9 @@ A:  Views allow developers to selectively share a subset of package versions tha
 
 A: Make sure that the feed's owner is sharing a view as an upstream source.
 
-##### Q: Can a user with **Reader** role download packages from an upstream source?
+##### Q: Can a user with **Feed Reader** role download packages from an upstream source?
 
-A: No. A user with **Reader** role in an Azure Artifacts feed can only download packages that have been saved to the feed. Packages are saved to the feed when a **Collaborator**, a **Contributor**, an **Administrator**, or an **Owner** installs those packages from upstream.
+A: No. A user with **Feed Reader** role in an Azure Artifacts feed can only download packages that have been saved to the feed. Packages are saved to the feed when a **Feed and Upstream Reader (Collaborator)**, a **Feed Publisher (Contributor)**, or a **Feed Owner** install those packages from upstream.
 
 ##### Q: What happens when a user deletes or unpublishes a package saved from an upstream source?
 

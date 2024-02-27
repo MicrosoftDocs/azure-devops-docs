@@ -204,7 +204,7 @@ For authentication with your pipeline, Azure Artifacts recommends using the [npm
 * * *
 
 > [!NOTE]
-> To grant your pipeline access to your feed, make sure you set the build service role to **Contributor** in your feed settings.
+> To grant your pipeline access to your feed, make sure you set the build service role to **Feed And Upstream Reader (Contributor)** in your feed settings.
 
 :::image type="content" source="../media/project-collection-contributor.png" alt-text="A screenshot showing the build service roles in feed settings.":::
 

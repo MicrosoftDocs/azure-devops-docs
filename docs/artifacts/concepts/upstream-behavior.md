@@ -76,7 +76,7 @@ In this situation, when a public package is converted to a private package, the 
 ## Allow external versions
 
 > [!NOTE]
-> You must be a feed **Owner** or a feed **Administrator** to allow externally sourced versions. See [Feed permissions](../feeds/feed-permissions.md) for more details.
+> You must be a **Feed Owner** to allow externally sourced versions. See [Feed permissions](../feeds/feed-permissions.md) for more details.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 

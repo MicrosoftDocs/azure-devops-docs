@@ -103,7 +103,7 @@ npm install --save <package>
 ```
 
 > [!NOTE]
-> You must be a **Collaborator**, a **Contributor**, or an **Owner** to install new packages from upstream. A copy of each upstream package is saved to the feed on first use. Packages already saved from upstream sources can be used by feed **Readers**.
+> You must be a **Feed and Upstream Reader (Collaborator)**, a **Feed Publisher (Contributor)**, or a **Feed Owner** to install new packages from upstream. A copy of each upstream package is saved to the feed on first use. Packages already saved from upstream sources can be used by **Feed Readers**.
 
 ## Related articles
 

@@ -100,7 +100,7 @@ In order for a pipeline to access a project-scoped feed in a different project, 
 
 - Project setup: navigate to the project hosting the feed, select **Project settings** > **Permissions** and then add your pipeline's *project build service* to the Contributors group or any other suitable group that provides contributor access to its users.
 
-- Feed setup: Navigate to the feed you want to access, select  **Settings** > **Feed permissions** and then add your *project build service* as a **Collaborator**. Your *Project build service* identity is displayed in the following format: `[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
+- Feed setup: Navigate to the feed you want to access, select  **Settings** > **Feed permissions** and then add your *project build service* as a **Feed and Upstream Reader (Collaborator)**. Your *Project build service* identity is displayed in the following format: `[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
 
 #### Q: I want to download a pipeline artifact from another project but my pipeline is failing?
 

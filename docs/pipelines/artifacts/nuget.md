@@ -118,7 +118,7 @@ inputs:
 
 ## Publish NuGet packages
 
-To publish packages to an Azure Artifacts feed from your pipeline, you must set the **Project Collection Build Service** identity to be a **Contributor** on your feed. For more information, see [Configure feed settings](../../artifacts/feeds/feed-permissions.md#feed-settings). 
+To publish packages to an Azure Artifacts feed from your pipeline, you must set the **Project Collection Build Service** identity to be a **Feed Publisher (Contributor)** on your feed. For more information, see [Configure feed settings](../../artifacts/feeds/feed-permissions.md#feed-settings). 
 
 #### [YAML](#tab/yaml/)
 
@@ -248,7 +248,7 @@ Add the NuGet task to your pipeline definition and configure it as follows:
 
 :::image type="content" source="media/push-to-nuget-org.png" alt-text="Screenshot showing how to configure the NuGet push task in Azure Pipelines":::
 
-* * *
+- - -
 
 ## Related articles
 
