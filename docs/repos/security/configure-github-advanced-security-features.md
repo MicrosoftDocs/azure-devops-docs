@@ -45,10 +45,11 @@ If your organization uses self-hosted agents, there are more requirements:
 
 * Run a compatible version of the .NET runtime (currently .NET 6.0.x). If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://visualstudio.microsoft.com/downloads/). 
 
-* Install the CodeQL bundle to the agent tool cache: 
+* Install the CodeQL bundle to the agent tool cache by utilizing the setup script for your architecture, available on [GitHub](https://github.com/microsoft/GHAzDO-Resources/tree/main/src/agent-setup). These scripts require the
+`$AGENT_TOOLSDIRECTORY` environment variable to be set to the location of the agent tools directory on the agent, e.g. `C:/agent/_work/_tool`. Alternatively, you may manually implement the following steps: 
     1.	Pick the latest CodeQL release bundle from [GitHub](https://github.com/github/codeql-action/releases). 
     2.	Download and unzip the bundle to the following directory inside the agent tool directory, typically located under `_work/_tool`: `./CodeQL/0.0.0-[codeql-release-bundle-tag]/x64/`. Using the current release of `v2.16.0`, the folder name would be titled `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64/`. Learn more about the [agent tool directory](https://github.com/microsoft/azure-pipelines-tool-lib/blob/master/docs/overview.md#tool-cache). 
-    3.	Create an empty file titled `x64.complete` within the `./CodeQL/0.0.0-[codeql-release-bundle-tag]` folder. Using the previous example, the end file path to your `x64.complete` file should be `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64.complete`. 
+    3.	Create an empty file titled `x64.complete` within the `./CodeQL/0.0.0-[codeql-release-bundle-tag]` folder. Using the previous example, the end file path to your `x64.complete` file should be `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64.complete`.
 
 ## Enable GitHub Advanced Security
 
@@ -124,7 +125,7 @@ Code scanning is also a pipeline-based scanning tool where results are aggregate
 
 Add the tasks in the following order: 
 1. Advanced Security Initialize CodeQL ([AdvancedSecurity-Codeql-Init@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1))
-1. Advanced Security AutoBuild (language-dependent) ([AdvancedSecurity-Codeql-Autobuild@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-autobuild-v1)) or replace this with your own custom build steps
+1. Your custom build steps
 1. Advanced Security Perform CodeQL Analysis ([AdvancedSecurity-Codeql-Analyze@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1))
 
 :::image type="content" source="media/code-scanning-config-yaml-tasks.png" lightbox="media/code-scanning-config-yaml-tasks.png" alt-text="Screenshot of code scanning pipeline setup for YAML.":::
@@ -150,11 +151,7 @@ steps:
       # Supported languages: csharp, cpp, go, java, javascript, python, ruby, swift
       # You can customize the initialize task: https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1?view=azure-pipelines
 
-  - task: AdvancedSecurity-Codeql-Autobuild@1    
-
-# It's possible that the the autobuild step does not execute successfully, specifically if you are scanning a language like cpp, java, csharp, or swift.
-# If the above does not execute correctly, you can usually resolve by providing credentials to package managers or configuring the build environment/dependencies as needed before the autobuild.
-# Otherwise, remove the Autobuild task and replace with your customized build commands.
+#   Add your custom build steps here
 # - Ensure that all code to be scanned is compiled (often using a `clean` command to ensure you are building from a clean state).
 # - Disable the use of any build caching mechanisms as this can interfere with CodeQL's ability to capture all the necessary data during the build.
 # - Disable the use of any distributed/multithreaded/incremental builds as CodeQL needs to monitor executions of the compiler to construct an accurate representation of the application. 

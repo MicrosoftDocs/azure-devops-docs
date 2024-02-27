@@ -160,10 +160,10 @@ tools:
       url: ./pipelines/ecosystems/dotnet-core.md
     - title: C/C++ with GCC
       imageSrc: /media/logos/logo_Cplusplus.svg
-      url: ./pipelines/apps/c-cpp/gcc.md
+      url: /previous-versions/azure/devops/pipelines/apps/c-cpp/gcc?view=tfs-2017&preserve-view=true
     - title: C/C++ with VC++
       imageSrc: /media/logos/logo_visual-studio.svg
-      url: ./pipelines/apps/windows/cpp.md
+      url: /previous-versions/azure/devops/pipelines/apps/windows/cpp?view=tfs-2017&preserve-view=true
     - title: Docker 
       imageSrc: ./pipelines/media/index/logo_dockercontainer.svg
       url: /azure/devops/pipelines/tasks/reference/docker-v2
