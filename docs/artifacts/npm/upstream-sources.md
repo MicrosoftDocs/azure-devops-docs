@@ -68,8 +68,7 @@ Before you save packages from npmjs, make sure your project is set up to connect
     npm install axios
     ```
 
-> [!NOTE]
-> To save packages from upstreams, you must be a **Collaborator** or higher. See [Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
+[!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 
 ## View saved packages
 
