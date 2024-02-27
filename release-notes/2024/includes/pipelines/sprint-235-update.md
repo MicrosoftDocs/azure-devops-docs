@@ -7,14 +7,14 @@ ms.topic: include
 
 ### Rerun a single stage
 
-One way to do a rollback in YAML pipelines is to rerun a stage from a previous, successful pipeline run. 
+You can perform a rollback in YAML pipelines by rerunning a stage from an previous pipeline run that succeeded. 
 
-Starting with this sprint, you can rerun a single stage, and skip rerunning its dependent stages. 
+With this sprint, you can rerun a single stage, without having to rerun its dependent stages. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of rerun this stage.](../../media/235-pipelines-01.png "Screenshot of rerun this stage")
 
-If a stage You can still rerun a stage _and_ its dependent stages (if any), like before.
+As before, you can still rerun a stage _and_ its dependent stages (if any).
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of rerun stage and dependents.](../../media/235-pipelines-02.png "Screenshot of rerun stage and dependents")
