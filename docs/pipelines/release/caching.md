@@ -98,8 +98,7 @@ When using `checkout: self`, the repository is checked out to `$(Pipeline.Worksp
 
 > [!NOTE]
 > `Pipeline.Workspace` is the local path on the agent running your pipeline where all directories are created. This variable has the same value as `Agent.BuildDirectory`.
-
-> [!NOTE]
+> 
 > Ensure you update the variable `YARN_CACHE_FOLDER` if using anything other than `checkout: self` as this should point to the repository where `.yarn` resides.
 
 #### Restore keys
