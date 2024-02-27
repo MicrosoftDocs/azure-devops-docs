@@ -230,6 +230,8 @@ Output variables can be used across stages in pipelines. You can use output vari
 
 When you set a variable with the `isoutput` property, you can reference that variable in later stages with the task name and the `stageDependencies` syntax. Learn more about [dependencies](expressions.md#dependencies). 
 
+Output variables are only available in the next downstream stage. If multiple stages consume the same output variable, use the `dependsOn` condition.
+
 # [Bash](#tab/bash)
 
 First, set the output variable `myStageVal`.
