@@ -36,11 +36,13 @@ Assign any of the following roles to a user under the subscription your organiza
 2. Enter *subscriptions* in the search box and select **Subscriptions**. 
 3. Choose the **subscription** > **Access control (IAM)** > **+ Add**, and then **Add co-administrator** from the dropdown menu.
 
-   ![Screenshot of sequence of buttons to add co-administrator.](media/add-backup-billing-manager/add-co-administrator-to-subscription.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot of sequence of buttons to add co-administrator.](media/add-backup-billing-manager/add-co-administrator-to-subscription.png)
 
 4. Select the **user**, and then select **Add**.
 
-   ![Screenshot of Add co-administrator pop-out pane.](media/add-backup-billing-manager/select-user-add.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot of Add co-administrator pop-out pane.](media/add-backup-billing-manager/select-user-add.png)
 
 > [!NOTE]
 > The user must accept their email invitation before they can access the Azure subscription, if they aren't in your directory.
