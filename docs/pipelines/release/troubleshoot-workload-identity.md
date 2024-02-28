@@ -61,7 +61,7 @@ The next sections identify common issues and describe causes and resolutions.
 
 You can't use the Azure DevOps service connection configuration tool if you don't have the correct permissions. Your permissions level is insufficient to use the tool if you either don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
 
-You must either have permissions in Microsoft Entra ID to create app registrations or you must have an appropriate role (for example, Application Developer).
+You must either have permissions in Microsoft Entra ID to create app registrations or have an appropriate role (for example, Application Developer).
 
 You have two options to resolve the issue:
 
