@@ -196,40 +196,59 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 
 ## Capture custom logs
 
-### Capture disk space details
+In addition to the built-in logs, you can use tasks and scripts to capture custom logs in your pipeline. The following examples show how to capture resource utilization, network traces, memory dumps, and perfview traces. If you are working with customer support, you may be asked to capture logs such as these.
 
-You can capture details about disk space on the agent while running the pipeline.
+### Capture resource utilization details
 
-If using Azure DevOps Services, you can see resource utilization in the logs, including disk usage, by enabling [verbose logs](./review-logs.md#configure-verbose-logs). When the pipeline completes, [search the logs](./review-logs.md#view-and-download-logs) for `Agent environment resources` entries for each step.
+When using Azure DevOps Services, you can see resource utilization in the logs, including disk usage, memory usage, and CPU utilization, by enabling [verbose logs](./review-logs.md#configure-verbose-logs). When the pipeline completes, [search the logs](./review-logs.md#view-and-download-logs) for `Agent environment resources` entries for each step.
 
 ```
 2024-02-28T17:41:15.1315148Z ##[debug]Agent environment resources - Disk: D:\ Available 12342.00 MB out of 14333.00 MB, Memory: Used 1907.00 MB out of 7167.00 MB, CPU: Usage 17.23%
 ```
 
-If you are using Azure DevOps Server, you can use PowerShell to capture resource utilization and upload it to the pipeline logs. When the pipeline run completes, you can [download the pipeline logs and view the captured data](./review-logs.md#view-and-download-logs).
+If you are using Azure DevOps Server, you can use PowerShell to capture resource utilization and upload it to the pipeline logs. When the pipeline run completes, you can [download the pipeline logs and view the captured data](./review-logs.md#view-and-download-logs). If the `Upload resource usage from pipeline run` step is the sixth step in the job, the filename in the logs will be **6_resource-usage.txt**.
 
 ```yml
+# Place this task in your pipeline to log the current resource utilization
+# of the pipeline. This task appends the specified resource usage to a logfile
+# which is uploaded at the end of the current pipeline job.
 - pwsh: |
-      $logFile = '$(Agent.TempDirectory)\diskLogFile.txt'
+      $logFile = '$(Agent.TempDirectory)\resource-usage.txt'
       if (!(Test-Path $logFile))
       {
         New-Item $logFile
       }
       Get-Date | Out-File -FilePath $logFile -Append
       Get-Volume | Out-File -FilePath $logFile -Append
+      Get-Counter '\Memory\Available MBytes' | Out-File -FilePath $logFile -Append
+      Get-Counter '\Processor(_Total)\% Processor Time' | Out-File -FilePath $logFile -Append
       sleep 10
-  displayName: 'Checking diskspace during pipeline run'
+  displayName: 'Check resource utilization'
 
-# Other tasks here, and you can repeat the
-# "Checking diskspace during pipeline run"
-# step if desired
+# Other tasks here, and you can repeat the "Check resource utilization"
+# step if desired, and the results will be appended to the resource-usage.txt file
 
-- pwsh: Write-Host "##vso[task.uploadfile]$(Agent.TempDirectory)\diskLogFile.txt"
-  displayName: 'Upload diskspace usage from pipeline run'
+- pwsh: Write-Host "##vso[task.uploadfile]$(Agent.TempDirectory)\resource-usage.txt"
+  displayName: 'Upload resource usage from pipeline run'
 ```
 
-### Capture a mempry dump using ProcDump
+### Capture a memory dump using ProcDump
 
 ### Capture ETW traces for a hosted agent
+
+```yml
+- script: netsh trace start scenario=InternetClient capture=yes tracefile=$(Agent.TempDirectory)\networktrace.etl
+  displayName: 'Start ETW trace'
+
+# Other tasks here
+
+- script: netsh trace stop
+  displayName: 'Stop ETW trace'
+
+- pwsh: |
+    Write-Host "##vso[task.uploadfile]$(Agent.TempDirectory)\networktrace.etl"
+    Write-Host "##vso[task.uploadfile]$(Agent.TempDirectory)\networktrace.cab"
+  displayName: 'Upload ETW trace logs'
+```
 
 ### Capture perfview traces for Visual Studio build
