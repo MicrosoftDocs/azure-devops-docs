@@ -232,7 +232,24 @@ If you are using Azure DevOps Server, you can use PowerShell to capture resource
   displayName: 'Upload resource usage from pipeline run'
 ```
 
-### Capture a memory dump using ProcDump
+### Capture a dotnet process memory dump using ProcDump
+
+If you have a test execution that crashes, customer support may ask you to capture a memory dump of the dotnet process after the failed test execution.
+
+```yml
+# Run this task after your test execution crashes
+# with a condition of alway() so that it always runs
+- pwsh: |
+    Invoke-WebRequest https://download.sysinternals.com/files/Procdump.zip -OutFile $(Agent.TempDirectory)\Procdump.zip
+    mkdir $(Agent.TempDirectory)\Procdump
+    unzip $(Agent.TempDirectory)\Procdump.zip -d Procdump
+    cd $(Agent.TempDirectory)\Procdump
+    Get-Process dotnet | % { $(Agent.TempDirectory)\procdump.exe -accepteula -ma $_.Id dotnet-$($_.Id).dmp }
+    Compress-Archive *.dmp -DestinationPath $(Agent.TempDirectory)\dump_files.zip
+    Write-Host "##vso[task.uploadfile]$(Agent.TempDirectory)\dump_files.zip"
+  condition: always()
+  displayName: 'Create and upload a dotnet process memory dump'
+```
 
 ### Capture ETW traces for a hosted agent
 
@@ -252,3 +269,11 @@ If you are using Azure DevOps Server, you can use PowerShell to capture resource
 ```
 
 ### Capture perfview traces for Visual Studio build
+
+If customer support asks you to create a `PerfView` trace of your Visual Studio build, add the following tasks to your pipeline before and after your Visual Studio build step.
+
+After running the pipeline, you can download the **PerfViewLog** artifact from the [pipeline run details](../create-first-pipeline.md#view-pipeline-run-details) and send that file customer support.
+
+```yml
+
+```
