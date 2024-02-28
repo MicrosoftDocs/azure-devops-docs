@@ -47,7 +47,7 @@ Verify that there are no Microsoft Entra policies in place that block federated 
 
 ### Check the issuer URL for accuracy
 
-If you see a message that indicates **no matching federated identity record found**, either the issuer URL or the federation subject don't match. The correct issuer URL starts with `https://vstoken.dev.azure.com`.
+If you see a message that indicates **no matching federated identity record found**, either the issuer URL or the federation subject doesn't match. The correct issuer URL starts with `https://vstoken.dev.azure.com`.
 
 You can fix the issuer URL by editing and saving the service connection to update the issuer URL. If Azure DevOps didn't create the identity, the issuer URL must be updated manually. For Azure identities, the issuer URL automatically updates.  
 
