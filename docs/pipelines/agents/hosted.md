@@ -45,7 +45,6 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 ### Recent updates
 
 * The macOS 13 image is generally available
-* The macOS 13 image is available in preview
 * The macOS 10.15 image is fully unsupported as of 4/24/2023
 * Ubuntu 18.04 has been retired
 * [`ubuntu-latest` images use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
