@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 04/29/2022
+ms.date: 02/28/2024
 ---
 
 To set secrets in the web interface, follow these steps:
@@ -12,7 +12,7 @@ To set secrets in the web interface, follow these steps:
 1. Go to the **Pipelines** page, select the appropriate pipeline, and then select **Edit**.
 1. Locate the **Variables** for this pipeline.
 1. Add or update the variable.
-1. Select the ![Secret](../media/variables/secret-variable-icon.png) lock icon to store the variable in an encrypted manner.
+1. Select the option to **Keep this value secret** to store the variable in an encrypted manner.
 1. Save the pipeline.
 
 Secret variables are encrypted at rest with a 2048-bit RSA key.
