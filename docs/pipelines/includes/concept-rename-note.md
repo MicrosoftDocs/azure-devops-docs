@@ -4,16 +4,18 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/13/2020
+ms.date: 02/13/2024
 ---
 
 ::: moniker range="tfs-2018"
+
 > [!NOTE]  
-> In Microsoft Team Foundation Server (TFS) 2018 and previous versions,
-build and release _pipelines_ are called _definitions_,
-_runs_ are called _builds_,
-_service connections_ are called _service endpoints_,
-_stages_ are called _environments_,
-and _jobs_ are called _phases_.
+> Microsoft Visual Studio Team Foundation Server 2018 and earlier versions have the following differences in naming:
+>
+> - _Pipelines_ for build and release are called _definitions_
+> - _Runs_ are called _builds_
+> - _Service connections_ are called _service endpoints_
+> - _Stages_ are called _environments_
+> - _Jobs_ are called _phases_
 
 ::: moniker-end
