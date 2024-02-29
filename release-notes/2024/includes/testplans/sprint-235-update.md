@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/28/2024
+ms.date: 2/29/2024
 ms.topic: include
 ---
 
@@ -11,6 +11,8 @@ You can now handle multiple test plans in Azure Test Plans with ease! Recognizin
 
 We're excited to announce the Test Plan and Suite ID Search feature. Enter your Test Plan or Suite ID for swift importing or copying of Test Cases without any delays. This update is part of our ongoing commitment to improve your test management experience, making it more intuitive and less time-consuming.
 
+> [!div class="mx-imgBorder"]
+> ![Gif to demo Test Plan, Suite ID search details.](../../media/235-testplans-01.gif "gif to GitHub Test Plan, Suite ID search details")
 
 ### Update for Azure Test Runner
 
