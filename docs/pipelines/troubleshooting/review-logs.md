@@ -198,6 +198,11 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 
 In addition to the built-in logs, you can use tasks and scripts to capture custom logs in your pipeline. The following examples show how to capture resource utilization, network traces, memory dumps, and perfview traces. If you are working with customer support, you may be asked to capture logs such as these.
 
+- [Capture resource utilization details](#capture-resource-utilization-details)
+- [Capture a dotnet process memory dump using ProcDump](#capture-a-dotnet-process-memory-dump-using-procdump)
+- [Capture ETW traces for a hosted agent](#capture-etw-traces-for-a-hosted-agent)
+- [Capture perfview traces for Visual Studio build](#capture-perfview-traces-for-visual-studio-build)
+
 ### Capture resource utilization details
 
 When using Azure DevOps Services, you can see resource utilization in the logs, including disk usage, memory usage, and CPU utilization, by enabling [verbose logs](./review-logs.md#configure-verbose-logs). When the pipeline completes, [search the logs](./review-logs.md#view-and-download-logs) for `Agent environment resources` entries for each step.
@@ -206,7 +211,7 @@ When using Azure DevOps Services, you can see resource utilization in the logs, 
 2024-02-28T17:41:15.1315148Z ##[debug]Agent environment resources - Disk: D:\ Available 12342.00 MB out of 14333.00 MB, Memory: Used 1907.00 MB out of 7167.00 MB, CPU: Usage 17.23%
 ```
 
-If you are using Azure DevOps Server, you can use PowerShell to capture resource utilization and upload it to the pipeline logs. When the pipeline run completes, you can [download the pipeline logs and view the captured data](./review-logs.md#view-and-download-logs). If the `Upload resource usage from pipeline run` step is the sixth step in the job, the filename in the logs will be **6_resource-usage.txt**.
+If you are using Azure DevOps Server, or if you want to collect additional metrics, you can use PowerShell to capture resource utilization and upload it to the pipeline logs. When the pipeline run completes, you can [download the pipeline logs and view the captured data](./review-logs.md#view-and-download-logs). If the `Upload resource usage from pipeline run` step is the sixth step in the job, the filename in the logs will be **6_resource-usage.txt**.
 
 ```yml
 # Place this task in your pipeline to log the current resource utilization
@@ -230,11 +235,12 @@ If you are using Azure DevOps Server, you can use PowerShell to capture resource
 
 - pwsh: Write-Host "##vso[task.uploadfile]$(Agent.TempDirectory)\resource-usage.txt"
   displayName: 'Upload resource usage from pipeline run'
+  condition: always()
 ```
 
 ### Capture a dotnet process memory dump using ProcDump
 
-If you have a test execution that crashes, customer support may ask you to capture a memory dump of the dotnet process after the failed test execution.
+If you have a test execution that crashes, customer support may ask you to capture a memory dump of the dotnet process after the failed test execution. Add the following task after your Visual Studio Test task with `condition: always()`. When the pipeline run completes, you can [download the pipeline logs, including the memory dump](./review-logs.md#view-and-download-logs).
 
 ```yml
 # Run this task after your test execution crashes
@@ -253,12 +259,17 @@ If you have a test execution that crashes, customer support may ask you to captu
 
 ### Capture ETW traces for a hosted agent
 
+If you are troubleshooting network issues with Microsoft-hosted agents, customer support may ask you to collect ETW traces. When the pipeline run completes, you can [download the pipeline logs, including the ETW traces](./review-logs.md#view-and-download-logs).
+
 ```yml
+# Add this task to start the ETW trace
 - script: netsh trace start scenario=InternetClient capture=yes tracefile=$(Agent.TempDirectory)\networktrace.etl
   displayName: 'Start ETW trace'
 
 # Other tasks here
 
+# Add these 2 tasks to stop the trace and upload
+# the trace to the pipeline logs
 - script: netsh trace stop
   displayName: 'Stop ETW trace'
 
@@ -275,5 +286,45 @@ If customer support asks you to create a `PerfView` trace of your Visual Studio 
 After running the pipeline, you can download the **PerfViewLog** artifact from the [pipeline run details](../create-first-pipeline.md#view-pipeline-run-details) and send that file customer support.
 
 ```yml
+steps:
+- task: PowerShell@2 # download the perfview exe
+  inputs:
+    targetType: 'inline'
+    script: |
+      invoke-webrequest https://github.com/microsoft/perfview/releases/download/v3.1.7/PerfView.exe -OutFile PerfView.exe
 
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline' # start perfview to capture the traces before build build task
+    script: '$(System.DefaultWorkingDirectory)\PerfView.exe "/DataFile:PerfViewData.etl" /accepteula /BufferSizeMB:512 /StackCompression /CircularMB:5000 /Providers:"Microsoft-Windows-IIS" /logfile:"PerfView.log" /zip:true /norundown start'
+
+- task: VSBuild@1
+  displayName: '$(solution)' # build of the solution, note the msbuildargs might be different for your scenario
+  inputs:
+    solution: '$(solution)'
+    clean: true
+    msbuildArgs: '/p:DeployOnBuild=true /p:PrecompileBeforePublish=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(Build.ArtifactStagingDirectory)" /p:TransformWebConfigEnabled=false /p:AutoParameterizationWebConfigConnectionStrings=false /p:MarkWebConfigAssistFilesAsExclude=false /p:ProfileTransformWebConfigEnabled=false /p:IsTransformWebConfigDisabled=true'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+- task: PowerShell@2 # stop the perfview tracing
+  inputs:
+    targetType: 'inline' 
+    script: |
+      $(System.DefaultWorkingDirectory)\perfview.exe /accepteula /logfile:"PerfView.log" stop
+
+- task: PowerShell@2 # abort perfview, it seems required.
+  inputs:
+    targetType: 'inline'
+    script: '$(System.DefaultWorkingDirectory)\perfview.exe /accepteula /logfile:"PerfView.log" abort'
+
+- task: PowerShell@2 # add a sleep of 5 mins, to givet time for required for traces to be complete
+  inputs:
+    targetType: 'inline'
+    script: 'Start-Sleep -Seconds 300'
+
+- task: PublishPipelineArtifact@1 # upload the traces
+  displayName: 'Publish Pipeline Artifact'
+  inputs:
+    artifactName: webapp
 ```
