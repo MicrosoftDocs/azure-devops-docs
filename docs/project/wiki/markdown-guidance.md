@@ -193,7 +193,8 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 ## Code highlighting
 
 Highlight suggested code segments using code highlight blocks.
-To indicate a span of code, wrap it with three backtick quotes (`&#96;&#96;&#96;`) on a new line at both the start and end of the block. To indicate code inline, wrap it with one backtick quote (`&#96;`).
+To indicate a span of code, wrap it with three backtick quotes (<code>```</code>) on a new line at both the start and end of the
+block. To indicate code inline, wrap it with one backtick quote (<code>`</code>).
 
 Code highlighting entered within the Markdown widget renders code as plain preformatted text.
 
