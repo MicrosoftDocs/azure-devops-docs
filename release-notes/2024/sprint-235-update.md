@@ -2,7 +2,7 @@
 title: Show GitHub pull request details on linked work item (preview)
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/28/2024
+ms.date: 2/29/2024
 description: Show GitHub pull request details on linked work item (preview)
 ---
 # Show GitHub pull request details on linked work item (preview)
@@ -21,10 +21,6 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-235-update-links](includes/pipelines/sprint-235-update-links.md)]
 
-### Azure Repos
-
-[!INCLUDE [sprint-235-update-links](includes/repos/sprint-235-update-links.md)]
-
 ### Azure Test Plans:
 
 [!INCLUDE [sprint-235-update-links](includes/testplans/sprint-235-update-links.md)]
@@ -36,10 +32,6 @@ Check out the release notes for details.
 ## Azure Pipelines
 
 [!INCLUDE [sprint-235-update](includes/pipelines/sprint-235-update.md)]
-
-## Azure Repos
-
-[!INCLUDE [sprint-235-update](includes/repos/sprint-235-update.md)]
 
 ## Azure Test Plans
 
