@@ -208,17 +208,11 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
          <td>Future</td>
-      </tr>  
-       <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Work item markdown support](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (general availability)</a></td>
-         <td>Boards</td>
-         <td>2024 Q1</td>
-         <td>Future</td>
-      </tr>        
+      </tr>             
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default" data-raw-source="[New boards hub on by default.](/azure/devops/release-notes/roadmap/2023/new-boards-hub-on-by-default)">New Boards Hub on by default for all organizations</a></td>
          <td>Boards</td>
-         <td>2024 Q1</td>
+         <td>2024 Q2</td>
          <td>Future</td>
       </tr>             
     </tbody>
