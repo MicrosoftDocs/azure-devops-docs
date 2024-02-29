@@ -13,11 +13,9 @@ author: steved0x
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Pipeline logs provide a powerful tool for determining the cause of pipeline failures.
+Pipeline logs provide a powerful tool for determining the cause of pipeline failures, and verbose logs can be configured to provide more diagnostic information.
 
-A typical starting point is to review the logs in your completed build or release. You can view logs by navigating to the pipeline run summary and selecting the job and task. If a certain task is failing, check the logs for that task.
-
-In addition to viewing logs in the pipeline build summary, you can download complete logs which include additional diagnostic information, and you can configure more verbose logs to assist with your troubleshooting.
+A typical starting point is to review the logs in your completed build or release. You can view logs by navigating to the pipeline run summary and selecting the job and task. If a certain task is failing, check the logs for that task. You can also download complete logs which include additional diagnostic information.
 
 ## Configure verbose logs
 
