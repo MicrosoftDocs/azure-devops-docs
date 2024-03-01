@@ -68,7 +68,7 @@ Do the following steps to grant organization access.
 
 5. Choose the Azure DevOps organization and Azure Boards project you want to connect to GitHub.com.
 
-   :::image type="content" source="media/github-app/choose-azure-boards-project.png" alt-text="Screenshot of "Set up your Azure Boards project" dialog.":::
+   :::image type="content" source="media/github-app/choose-azure-boards-project.png" alt-text="Screenshot of setting up connection dialog.":::
 
 	You can only connect one project at a time. If you have other projects you want to connect, you can do that later as described in [Configure other projects or repositories](#configure) later in this article.
 
