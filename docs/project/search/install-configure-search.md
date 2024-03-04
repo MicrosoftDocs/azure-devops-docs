@@ -253,7 +253,8 @@ Do the following steps to unconfigure Search, like for Code, Work item, or Wiki,
    ![Screenshot of Checking that the extension's installed.](media/shared/goto-marketplace.png)
    ::: moniker-end
 
-2. Remove the Search feature.
+::: moniker range="<= azure-devops-2019"
+2. Remove the Search feature:
 
    a. Open the *Remove Feature* dialog,  Administration Console.
    b. In the left pane, select the name of the Azure DevOps Server.
@@ -264,8 +265,7 @@ Do the following steps to unconfigure Search, like for Code, Work item, or Wiki,
 
     a. Open **PowerShell** as an administrator.
     b. Open the **Configure Search.ps1** folder, along with the rest of the files that are required for a remote install of Search.
-    c. Run the script again with the **remove** option: `"ConfigureTFSSearch.ps1 -remove"`.
-
+    c. Run the script again with the remove option: `"ConfigureTFSSearch.ps1 -remove".`
 ::: moniker-end
 
 <a name="limit-tfs"></a>
