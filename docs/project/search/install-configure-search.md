@@ -253,7 +253,6 @@ Do the following steps to unconfigure Search, like for Code, Work item, or Wiki,
    ![Screenshot of Checking that the extension's installed.](media/shared/goto-marketplace.png)
    ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
 2. Remove the Search feature:
 
    a. Open the *Remove Feature* dialog,  Administration Console.
@@ -263,10 +262,9 @@ Do the following steps to unconfigure Search, like for Code, Work item, or Wiki,
 
 3. Remove the Elasticsearch service and data.
 
-    a. Open **PowerShell** as an administrator.
-    b. Open the **Configure Search.ps1** folder, along with the rest of the files that are required for a remote install of Search.
-    c. Run the script again with the remove option: `"ConfigureTFSSearch.ps1 -remove".`
-::: moniker-end
+   a. Open **PowerShell** as an administrator.
+   b. Open the **Configure Search.ps1** folder, along with the rest of the files that are required for a remote install of Search.
+   c. Run the script again with the remove option: `"ConfigureTFSSearch.ps1 -remove".`
 
 <a name="limit-tfs"></a>
 
