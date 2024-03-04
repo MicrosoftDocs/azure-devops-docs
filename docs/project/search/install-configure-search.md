@@ -255,16 +255,16 @@ Do the following steps to unconfigure Search, like for Code, Work item, or Wiki,
 
 2. Remove the Search feature:
 
-   a. Open the *Remove Feature* dialog,  Administration Console.
-   b. In the left pane, select the name of the Azure DevOps Server.
-   c. In the right pane, choose **Remove Feature**.
-   d. In the *Remove Feature* dialog, select **Search service**, and then choose **Remove**.
+   1. Open the *Remove Feature* dialog,  Administration Console.
+   1. In the left pane, select the name of the Azure DevOps Server.
+   1. In the right pane, choose **Remove Feature**.
+   1. In the *Remove Feature* dialog, select **Search service**, and then choose **Remove**.
 
 3. Remove the Elasticsearch service and data.
 
-   a. Open **PowerShell** as an administrator.
-   b. Open the **Configure Search.ps1** folder, along with the rest of the files that are required for a remote install of Search.
-   c. Run the script again with the remove option: `"ConfigureTFSSearch.ps1 -remove".`
+   1. Open **PowerShell** as an administrator.
+   1. Open the **Configure Search.ps1** folder, along with the rest of the files that are required for a remote install of Search.
+   1. Run the script again with the remove option: `"ConfigureTFSSearch.ps1 -remove".`
 
 <a name="limit-tfs"></a>
 
