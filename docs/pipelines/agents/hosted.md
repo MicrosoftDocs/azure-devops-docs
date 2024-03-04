@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 11/16/2023
+ms.date: 03/04/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -44,8 +44,8 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
+* All Microsoft hosted agents will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS starting January 28. For more information, including potential breaking changes, see [Microsoft hosted agents use PowerShell 7.4](/azure/devops/release-notes/2024/sprint-233-update#microsoft-hosted-agents-use-powershell-74).
 * The macOS 13 image is generally available
-* The macOS 13 image is available in preview
 * The macOS 10.15 image is fully unsupported as of 4/24/2023
 * Ubuntu 18.04 has been retired
 * [`ubuntu-latest` images use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
