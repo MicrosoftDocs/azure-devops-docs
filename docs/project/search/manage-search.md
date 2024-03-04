@@ -7,7 +7,7 @@ ms.subservice: azure-devops-search
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/01/2024
+ms.date: 03/04/2024
 monikerRange: '< azure-devops'
 ---
 
@@ -44,9 +44,9 @@ The PowerShell scripts require the SQL script files, so ensure the **SqlScripts*
 
 ### Check indexing status
 
-::: moniker range=" azure-devops-2022"
+To check the indexing status after Search is configured, or after the extension is installed for a collection, do the following steps.
 
-To check the indexing status after Search is configured, or after the extension was installed for a collection, complete the following steps.
+::: moniker range=" azure-devops-2022"
 
 1. Execute the `ExtensionInstallIndexingStatus.ps1` script with **administrative privileges** and enter the following information:
 
@@ -62,7 +62,7 @@ To check the indexing status after Search is configured, or after the extension 
    - **Repositories Indexing Completed:** Lists repositories whose indexing completed and is searchable.
    - **Status of repositories currently indexing:** Lists the names of all the repositories that are still being indexed and are partially searchable. It takes some time for indexing to complete.
  
-3. Execute the `RecentIndexingActivity.ps1` script at intervals for indexing progress. This script takes the same parameters as the `ExtensionInstallIndexingStatus.ps1` script.
+3. Execute the `RecentIndexingActivity.ps1` script at intervals for indexing progress. This script takes the same parameters as the `ExtensionInstallIndexingStatus.ps1` script:
 
    - **Repositories completed fresh indexing:** Shows number of repositories for which indexing completed within the specified time interval.
    - **Count of repositories with fresh indexing in progress:**  Shows the number of repositories for which indexing isn't complete. These repositories are still being indexed and are partially searchable.
@@ -73,8 +73,6 @@ To check the indexing status after Search is configured, or after the extension 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2022"
-
-To check the indexing status after Search is configured, or after the extension is installed for a collection, do the following steps.
 
 1. Execute the `CheckIndexingStatus.ps1` script with **administrative privileges** and enter the following information: 
 
@@ -100,21 +98,21 @@ To check the indexing status after Search is configured, or after the extension 
 
 ### Pause indexing
 
-To pause all indexing, execute `PauseSearchIndexing.ps1`, which is useful if you see spikes in CPU utilization after configuring Search. You're prompted to enter the following information:
+To pause all indexing, execute: `PauseSearchIndexing.ps1`, which is useful if you see spikes in CPU utilization after configuring Search. You're prompted to enter the following information.
 * The SQL server instance name where the Azure DevOps Server configuration database is
 * The name of the Azure DevOps Server configuration database
 
 ### Resume indexing
 
-If you paused indexing, execute `ResumeIndexing.ps1` to start again. You're prompted to enter the following information:
+If you paused indexing, execute: `ResumeIndexing.ps1` to start again. You're prompted to enter the following information.
 * The SQL server instance name where the Azure DevOps Server configuration database is
 * The name of the Azure DevOps Server configuration database
 
 ### Reindex a repository or collection
 
 To reindex a Git or TFVC repository, execute the appropriate
-version of the script `Re-IndexingRepository.ps1` for your Azure DevOps Server version. 
-You're prompted to enter the following information:
+version of the script, `Re-IndexingRepository.ps1`, for your Azure DevOps Server version. 
+You're prompted to enter the following information.
 
 * The SQL server instance name where the Azure DevOps Server configuration database is
 * The name of the Azure DevOps Server collection database
@@ -123,8 +121,8 @@ You're prompted to enter the following information:
 * The name of the collection
 * The name of the repository to reindex
 
-To reindex a **collection**, execute the script `TriggerCollectionIndexing.ps1`
-You're prompted to enter the following information:
+To reindex a **collection**, execute the script: `TriggerCollectionIndexing.ps1`.
+You're prompted to enter the following information.
 * The SQL server instance name where the Azure DevOps Server configuration database is
 * The name of the Azure DevOps Server collection database
 * The name of the Azure DevOps Server configuration database
