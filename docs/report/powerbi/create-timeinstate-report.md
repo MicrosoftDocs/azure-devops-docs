@@ -440,41 +440,40 @@ Similar to *State Restart Time in Days*, the *State Rework Time in Days* looks f
 
 1. Create the "State Change Count - First Completed" column. This column tracks the number of times a work item transitions to the Completed state from any other state.
 
-> [!div class="tabbedCodeSnippets"]   
-> ```DAX
-> State Change Count - First Completed =
-> VAR CompletedState = "Completed"
-> RETURN
-> CALCULATE(
->    COUNTROWS('YourTable'),
->    FILTER(
->        'YourTable',
->        'YourTable'[State] = CompletedState
->        && 'YourTable'[State Change Date] = MIN('YourTable'[State Change Date])
->    )
-> )
-
+    > [!div class="tabbedCodeSnippets"]   
+    > ```DAX
+    > State Change Count - First Completed =
+    > VAR CompletedState = "Completed"
+    > RETURN
+    > CALCULATE(
+    >    COUNTROWS('YourTable'),
+    >    FILTER(
+    >        'YourTable',
+    >        'YourTable'[State] = CompletedState
+    >        && 'YourTable'[State Change Date] = MIN('YourTable'[State Change Date])
+    >    )
+    > )
 
 2. From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
-> [!div class="tabbedCodeSnippets"]   
-> ```DAX
-> State Rework Time in Days = 
-> IF (
->     ISBLANK ( 'View Name'[State Change Count - First Completed] ),
->     0,
->     CALCULATE (
->         SUM ( 'View Name'[Date Diff in Days] ),
->         ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
->         'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
->         'View Name'[State Change Count] EARLIER ( 'View Name'[State Change Count - First Completed] ),
->         'View Name'[State] IN {"Completed", "Closed", "Cut" } = FALSE()
->     ) + 0
-> )
-> ```
-> 
-> [!NOTE]
-> You might need to revise the above definition based on the workflow states used by your project. For example, if your project uses *Done* in place of *Closed*, and so on. 
+    > [!div class="tabbedCodeSnippets"]   
+    > ```DAX
+    > State Rework Time in Days = 
+    > IF (
+    >     ISBLANK ( 'View Name'[State Change Count - First Completed] ),
+    >     0,
+    >     CALCULATE (
+    >         SUM ( 'View Name'[Date Diff in Days] ),
+    >         ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
+    >         'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
+    >         'View Name'[State Change Count] EARLIER ( 'View Name'[State Change Count - First Completed] ),
+    >         'View Name'[State] IN {"Completed", "Closed", "Cut" } = FALSE()
+    >     ) + 0
+    > )
+    > ```
+    > 
+    > [!NOTE]
+    > You might need to revise the above definition based on the workflow states used by your project. For example, if your project uses *Done* in place of *Closed*, and so on. 
 
 <a id="dax-functions"></a>
 
