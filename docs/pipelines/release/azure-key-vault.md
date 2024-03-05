@@ -22,6 +22,9 @@ In this tutorial, you will learn how to:
 > * Add a secret and configure access to Azure key vault
 > * Use secrets in your pipeline
 
+> [!WARNING]
+> This tutorial is for educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
+
 ## Prerequisites
 
 * An Azure DevOps organization. If you don't have one, you can [create one for free](../get-started/pipelines-sign-up.md).
@@ -249,9 +252,6 @@ In order to access our Azure Key Vault, we must first set up a service principal
     :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to open the published artifact.":::
 
 1. The text file should contain our secret: *mysecretpassword*.
-
-> [!WARNING]
-> This tutorial is for educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
 
 ## Clean up resources
 
