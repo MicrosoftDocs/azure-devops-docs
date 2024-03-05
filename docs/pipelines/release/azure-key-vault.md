@@ -25,6 +25,9 @@ In this tutorial, you will learn how to:
 ## Prerequisites
 
 * An Azure DevOps organization. If you don't have one, you can [create one for free](../get-started/pipelines-sign-up.md).
+    > [!NOTE]
+    > If you are setting up a new free Azure DevOps organization then you will need to complete [a request](https://aka.ms/azpipelines-parallelism-request) to get the free grant of parallel jobs to run the pipeline tasks in this tutorial. More information on this process, and what parallel jobs are can be found at [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
+
 * An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) if you don't have one already.
 
 ## Create an Azure Key Vault
