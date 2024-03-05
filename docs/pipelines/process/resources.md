@@ -53,7 +53,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
   pipelines:
   - pipeline: string  # identifier for the resource used in pipeline resource variables
     project: string # project for the source; optional for current project
-    source: string  # name of the pipeline that produces an artifact
+    source: string  # name of the pipeline that produces an artifact. If it is in a different pipelines folder, it needs to be the full path, e.g. MyTeam/MyPipeline
     version: string  # the pipeline run number to pick the artifact, defaults to latest pipeline successful across all stages; Used only for manual or scheduled triggers
     branch: string  # branch to pick the artifact, optional; defaults to all branches; Used only for manual or scheduled triggers
     tags: [ string ] # list of tags required on the pipeline to pickup default artifacts, optional; Used only for manual or scheduled triggers
