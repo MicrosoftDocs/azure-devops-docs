@@ -31,6 +31,7 @@ This article provides recipes using Data Analysis Expressions (DAX) to evaluate 
 | *State Changed*  | Adds a column that determines the date when a work item transitioned from one **State** to another  |
 | *State Flow* | Adds a column that illustrates the state flow as a work item transitions from one **State** to another   |
 | *State Change Count* | Adds a column that calculates the number of times a work item transitioned from one **State** to another   |
+| *State Change Count - First Completed* | Adds a column that determines the number of times a work item transitions to the Completed state for the first time. In other words, when it moves from any other state to the Completed state. |
 | *State Change Count - Last Proposed* | Adds a column that determines if a work item was in a Proposed state previously after it transitioned to a later **State**   |
 | *State Restart Time in Days* | Adds a column that calculates the days a work item spent in a restart state    |
 | *State Rework Time in Days* |  Adds a column that calculates the days a work item spends in a state other than *Completed*    | 
