@@ -5,7 +5,7 @@ ms.date: 2/29/2024
 ms.topic: include
 ---
 
-### Introducing Test Plan and Suite ID Search in Azure Test Plans 
+### Quick Copy and Import with Test Plan or Suite ID 
 
 You can now handle multiple test plans in Azure Test Plans with ease! Recognizing the challenges previously faced with long dropdown menus for importing, copying, or cloning test cases—especially for extensive plans or suites—we've taken steps to streamline your workflow.
 
