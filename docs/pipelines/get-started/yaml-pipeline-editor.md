@@ -141,6 +141,14 @@ Validate your changes to catch syntax errors in your pipeline that prevent it fr
 
 :::moniker range="azure-devops"
 
+Azure Pipelines validates your pipelines each time you save. Choose **Validate and save** to validate your pipeline before saving. If there are any errors, you can **Cancel** or **Save anyway**. To save your pipeline without validating, choose **Save without validating**.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate-and-save-button.png" alt-text="Validate and save button.":::
+
+:::moniker-end
+
+:::moniker range="azure-devops"
+
 Azure Pipelines detects incorrect variable definitions defined at the pipeline, stage, and job level and detects incorrect YAML conditions defined at the pipeline, stage, and job level.
 
 :::moniker-end
