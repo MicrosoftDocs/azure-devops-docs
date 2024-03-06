@@ -63,9 +63,21 @@ To access the YAML pipeline editor, do the following steps.
 
 :::moniker-end
 
+:::moniker range=">= azure-devops-2020 < azure-devops"
+
 5. Choose **Save**. You can commit directly to your branch, or create a new branch and optionally start a pull request.
 
     :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-save.png" alt-text="YAML pipeline editor save window.":::
+
+:::moniker-end
+
+:::moniker range="azure-devops"
+
+5. Choose **Validate and save**. You can commit directly to your branch, or create a new branch and optionally start a pull request.
+
+    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate-ad-save.png" alt-text="YAML pipeline editor validate and save window.":::
+
+:::moniker-end
 
 ### Use keyboard shortcuts
 
