@@ -1004,7 +1004,7 @@ To embed videos from YouTube and Microsoft Streams in a wiki page, use the follo
 
 ```markdown
 ::: video
-> [!VIDEO https://www.youtube.com/embed/_EXAMPLE_]
+<iframe width="640" height="360" src="https://www.youtube.com/embed/OtqFyBA6Dbk" allowfullscreen style="border:none"><iframe>
 :::
 ```
 The iframe corresponds to the embedding iframe block of either a YouTube or Microsoft Streams video.
