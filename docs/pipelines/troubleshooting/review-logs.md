@@ -205,7 +205,7 @@ In addition to the built-in logs, you can use tasks and scripts to capture custo
 - [Capture resource utilization details](#capture-resource-utilization-details)
 - [Capture a dotnet process memory dump using ProcDump](#capture-a-dotnet-process-memory-dump-using-procdump)
 - [Capture ETW traces for a hosted agent](#capture-etw-traces-for-a-hosted-agent)
-- [Capture :::no-loc text="perfview"::: traces for Visual Studio build](#capture-perfview-traces-for-visual-studio-build)
+- [Capture :::no-loc text="perfview"::: traces for Visual Studio build](#capture--traces-for-visual-studio-build)
 
 ### Retrieving custom logs
 
