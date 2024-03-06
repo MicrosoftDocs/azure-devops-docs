@@ -7,6 +7,7 @@ ms.topic: troubleshooting
 ms.date: 03/06/2024
 monikerRange: '<= azure-devops'
 author: steved0x
+no-loc: [nix]
 ---
 
 # Review logs to diagnose pipeline issues
@@ -194,7 +195,7 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
    export VSTS_HTTP_PROXY=http://127.0.0.1:8888
    ```
 
-4. Run the agent interactively. If it's running as a service, you can set in the .env file. See [:::no-loc text="nix"::: service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
+4. Run the agent interactively. If it's running as a service, you can set in the .env file. See [nix service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
 
 5. Restart the agent.
 
