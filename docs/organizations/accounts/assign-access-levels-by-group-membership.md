@@ -7,7 +7,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2024
+ms.date: 03/06/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -19,7 +19,7 @@ Azure DevOps provides group-based access levels for Microsoft Entra groups and A
 
 Assign group rules to support both access levels and project memberships. Users get the highest access level when they're assigned to more than one rule or Microsoft Entra group, which specify different levels of access. For example, if John is assigned to two Microsoft Entra groups and two different Group rules that specify Stakeholder access and the other Basic access, then John's access level is Basic. 
 
-When users leave the Microsoft Entra group, Azure DevOps automatically removes them.
+When users leave the Microsoft Entra group, Azure DevOps adjusts their access level based on the rules defined for that group. The user remains in Azure DevOps but may have different permissions or access rights. The highest access level assigned to the user determines their final permissions.
 
 [!INCLUDE [note-group-rules](../security/includes/note-group-rules.md)]
 
