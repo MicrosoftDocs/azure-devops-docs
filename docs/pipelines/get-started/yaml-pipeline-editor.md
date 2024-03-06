@@ -75,7 +75,7 @@ To access the YAML pipeline editor, do the following steps.
 
 5. Choose **Validate and save**. You can commit directly to your branch, or create a new branch and optionally start a pull request.
 
-    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate-ad-save.png" alt-text="YAML pipeline editor validate and save window.":::
+    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate-and-save.png" alt-text="YAML pipeline editor validate and save window.":::
 
 :::moniker-end
 
