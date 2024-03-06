@@ -96,8 +96,6 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 ## Create a new pipeline
 
-#### [YAML]
-
 1. Select **Pipelines**, and then select **New Pipeline**.
 
 1. Select **Azure Repos Git** (YAML).
