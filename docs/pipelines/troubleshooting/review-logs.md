@@ -50,6 +50,10 @@ Azure pipeline logs can now capture resource utilization metrics such as memory,
 
 To view the captured resource utilization metrics, [search the logs](#view-and-download-logs) for `Agent environment resources` entries for each step.
 
+```
+2024-02-28T17:41:15.1315148Z ##[debug]Agent environment resources - Disk: D:\ Available 12342.00 MB out of 14333.00 MB, Memory: Used 1907.00 MB out of 7167.00 MB, CPU: Usage 17.23%
+```
+
 ::: moniker-end
 
 
@@ -203,15 +207,44 @@ In addition to the built-in logs, you can use tasks and scripts to capture custo
 - [Capture ETW traces for a hosted agent](#capture-etw-traces-for-a-hosted-agent)
 - [Capture perfview traces for Visual Studio build](#capture-perfview-traces-for-visual-studio-build)
 
+### Retrieving custom logs
+
+After capturing a custom log in your pipeline, you must upload it so that it can be retrieved for review. You can upload the custom log as part of the standard pipeline logs, or you can upload it as an artifact. The examples in the following sections show both ways of uploading custom logs.
+
+#### Upload a log as part of the standard logs
+
+To upload the custom log as part of the standard pipeline logs, use `##vso[task.uploadfile]` to upload the desired file. To use this command, specify it as part of a script command as shown in the following example. The file can be [downloaded and viewed](#view-and-download-logs) as part of the standard pipeline logs.
+
+```yml
+- pwsh: Write-Host "##vso[task.uploadfile]$(Agent.TempDirectory)\resource-usage.txt"
+```
+
+For more information, see [Logging commands](../scripts/logging-commands.md) and [UploadFile: Upload a file that can be downloaded with task logs](../scripts/logging-commands.md#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs).
+
+#### Upload a log as a pipeline artifact
+
+To upload a custom log as a pipeline artifact, use the [PublishPipelineArtifact@1](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
+
+```yml
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)/s/trace'
+    artifact: 'file_result.pcap'
+    publishLocation: 'pipeline'
+```
+
+For more information, see [Publish Pipeline Artifacts](../publish-pipeline-artifact.md).
+
+
 ### Capture resource utilization details
 
-When using Azure DevOps Services, you can see resource utilization in the logs, including disk usage, memory usage, and CPU utilization, by enabling [verbose logs](./review-logs.md#configure-verbose-logs). When the pipeline completes, [search the logs](./review-logs.md#view-and-download-logs) for `Agent environment resources` entries for each step.
+When using Azure DevOps Services, you can see resource utilization in the logs, including disk usage, memory usage, and CPU utilization, by enabling [verbose logs](#configure-verbose-logs). When the pipeline completes, [search the logs](#view-and-download-logs) for `Agent environment resources` entries for each step.
 
 ```
 2024-02-28T17:41:15.1315148Z ##[debug]Agent environment resources - Disk: D:\ Available 12342.00 MB out of 14333.00 MB, Memory: Used 1907.00 MB out of 7167.00 MB, CPU: Usage 17.23%
 ```
 
-If you are using Azure DevOps Server, or if you want to collect additional metrics, you can use PowerShell to capture resource utilization and upload it to the pipeline logs. When the pipeline run completes, you can [download the pipeline logs and view the captured data](./review-logs.md#view-and-download-logs). If the `Upload resource usage from pipeline run` step is the sixth step in the job, the filename in the logs will be **6_resource-usage.txt**.
+If you are using Azure DevOps Server, or if you want to collect additional metrics, you can use PowerShell to capture resource utilization and upload it to the pipeline logs. When the pipeline run completes, you can [download the pipeline logs and view the captured data](#view-and-download-logs). If the `Upload resource usage from pipeline run` step is the sixth step in the job, the filename in the logs will be **6_resource-usage.txt**.
 
 ```yml
 # Place this task in your pipeline to log the current resource utilization
