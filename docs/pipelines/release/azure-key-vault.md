@@ -208,11 +208,11 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 ***
 
-Don't save or queue your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your browser tab open, we will resume the remaining steps once we set up the key vault permissions.
+Don't save or run your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your browser tab open, we will resume the remaining steps once we set up the key vault permissions. 
 
 ## Set up Azure Key Vault access policies
 
-1. Navigate to [Azure portal](https://azure.microsoft.com/).
+1. Open a new browser tab an navigate to [Azure portal](https://azure.microsoft.com/).
 
 1. Use the search bar to search for the key vault you created earlier.
 
@@ -224,7 +224,7 @@ Don't save or queue your pipeline just yet. We must first give our pipeline the 
 
 1. For **Secret permissions**, select **Get** and **List**.
 
-1. Select the option to select a service principal and search for the one you created in the beginning of this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
+1. Select the option to select a service principal and search for the service connection which was created by Azure DevOps when we created the pipeline. The format for the name of the principal is [DevOps Organization Name]-[DevOps Project Name]-[Subscription ID]. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
 
 1. Select **Add** to create the access policy, then select **Save** when you are done.
 
