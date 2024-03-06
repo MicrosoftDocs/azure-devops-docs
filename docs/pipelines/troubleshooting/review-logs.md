@@ -213,7 +213,7 @@ After capturing a custom log in your pipeline, you must upload it so that it can
 
 #### Upload a log as part of the standard logs
 
-To upload the custom log as part of the standard pipeline logs, use `##vso[task.uploadfile]` to upload the desired file. To use this command, specify it as part of a script command as shown in the following example. The file can be [downloaded and viewed](#view-and-download-logs) as part of the standard pipeline logs.
+To upload the custom log as part of the standard pipeline logs, use `##vso[task.uploadfile]` to upload the desired file. To use this command, specify it as part of a script command as shown in the following example. The file can be [downloaded and viewed](#view-and-download-logs) as part of the standard pipeline logs. The `##vso[task.uploadfile]` method is good for uploading a single log file. If you have more than one log file, you must use a separate `##vso[task.uploadfile]` line for each file.
 
 ```yml
 - pwsh: Write-Host "##vso[task.uploadfile]$(Agent.TempDirectory)\resource-usage.txt"
@@ -223,7 +223,7 @@ For more information, see [Logging commands](../scripts/logging-commands.md) and
 
 #### Upload a log as a pipeline artifact
 
-To upload a custom log as a pipeline artifact, use the [PublishPipelineArtifact@1](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
+To upload a custom log as a pipeline artifact, use the [PublishPipelineArtifact@1](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task. `PublishPipelineArtifact@1` can upload a single file or the files in a directory path, and is useful if you have many custom log files to upload.
 
 ```yml
 - task: PublishPipelineArtifact@1
