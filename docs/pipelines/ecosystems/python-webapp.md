@@ -5,8 +5,8 @@ ms.topic: how-to
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.author: jukullam
 author: juliakm
-ms.date: 02/28/2024
-monikerRange: 'azure-devops'
+ms.date: 03/15/2024
+monikerRange: '<= azure-devops'
 ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2, arm2024
 
 ---
@@ -61,7 +61,7 @@ On your local host, clone your GitHub repository. Use the following command, rep
 
 To build and run the sample app, run the following commands.
 
-[Linux](#tab/linux)
+# [Linux](#tab/linux)
 
 ```bash
 python3 -m venv .env
@@ -72,7 +72,7 @@ export set FLASK_APP=hello_app.webapp
 python3 -m flask run
 ```
 
-[Windows PowerShell](#tab/windows-powershell)
+# [Windows PowerShell](#tab/windows-powershell)
 
 ```powershell
 py -m venv .env
@@ -271,8 +271,8 @@ pythonVersion: '3.10'
 
 ```
  
-|--|---|
 |**Variable**|**Description**|
+|--|---|
 |`azureServiceConnectionId`|The ID or name of the Azure Resource Manager service connection.|
 |`webAppName`|The name of the web app.|
 |`vmImageName`|The name of the operating system to use for the build agent.|
@@ -332,7 +332,9 @@ The job contains multiple steps:
        artifact: drop
     ```
 
+
    |**Parameter**|**Description**|
+   |---|---|
    |`rootFolderOrFile`|The location of the app code.|
    |`includeRootFolder`|Indicates whether to include the root folder in the *.zip* file. Set this parameter to `false` otherwise, the contents of the *.zip* file are put in a folder named *s* and App Service on Linux container can't find the app code|
    |`archiveType`|The type of archive to create.|
@@ -361,6 +363,7 @@ The deployment stage contains a single deployment job configured with the follow
 
 
 |**Keyword**|**Description**|
+|--|---|
 |`deployment`|Indicates that the job is a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md).|
 |`pool`|Specifies deployment agent. The `vmImage` keyword identifies the operating system for the agent's VM image|
 |`environment`|Specifies the environment to deploy to.|
@@ -398,6 +401,7 @@ The `steps` in the generated pipeline are:
     ```
 
    |**Parameter**|**Description**|
+   |--|---|
    |`azureSubscription`|The Azure Resource Manager service connection ID or name to use.|
    |`appName`|The name of the web app.|
    |`package`|The location of the *.zip* file to deploy.|
