@@ -4,7 +4,7 @@ description: Learn how to review pipeline diagnostic logs to troubleshoot
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: troubleshooting
-ms.date: 11/27/2023
+ms.date: 03/06/2024
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -47,6 +47,8 @@ A typical starting point is to review the logs in your completed build or releas
 ::: moniker range="> azure-devops-2022"
 
 Azure pipeline logs can now capture resource utilization metrics such as memory, CPU usage and available disk space. The logs also include resources used by the pipeline agent and child processes including tasks run in a job. If you suspect your pipeline job may run into resource constraints, enable verbose logs to have resource utilization information injected into pipeline logs. This works on any agent, independent from hosting model.
+
+To view the captured resource utilization metrics, [search the logs](#view-and-download-logs) for `Agent environment resources` entries for each step.
 
 ::: moniker-end
 
@@ -259,6 +261,8 @@ If you have a test execution that crashes, customer support may ask you to captu
 
 If you are troubleshooting network issues with Microsoft-hosted agents, customer support may ask you to collect ETW traces. When the pipeline run completes, you can [download the pipeline logs, including the ETW traces](./review-logs.md#view-and-download-logs).
 
+#### [Windows agent](#tab/windows-agent/)
+
 ```yml
 # Add this task to start the ETW trace
 - script: netsh trace start scenario=InternetClient capture=yes tracefile=$(Agent.TempDirectory)\networktrace.etl
@@ -276,6 +280,31 @@ If you are troubleshooting network issues with Microsoft-hosted agents, customer
     Write-Host "##vso[task.uploadfile]$(Agent.TempDirectory)\networktrace.cab"
   displayName: 'Upload ETW trace logs'
 ```
+#### [Linux agent](#tab/linux-agent/)
+
+```yml
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      sudo rm -f nohup.out
+      sudo rm -R trace
+      sudo mkdir trace
+      sudo nohup tcpdump -i eth0 -s 65535 -w trace/file_result.pcap &
+      cd trace
+      ls
+
+# Add tasks that perform actions that you want to trace here
+
+# Upload the trace to a pipeline artifact
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)/s/trace'
+    artifact: 'file_result.pcap'
+    publishLocation: 'pipeline'
+```
+
+* * *
 
 ### Capture perfview traces for Visual Studio build
 
