@@ -205,7 +205,7 @@ In addition to the built-in logs, you can use tasks and scripts to capture custo
 - [Capture resource utilization details](#capture-resource-utilization-details)
 - [Capture a dotnet process memory dump using ProcDump](#capture-a-dotnet-process-memory-dump-using-procdump)
 - [Capture ETW traces for a hosted agent](#capture-etw-traces-for-a-hosted-agent)
-- [Capture perfview traces for Visual Studio build](#capture-perfview-traces-for-visual-studio-build)
+- [Capture :::no-loc text="perfview"::: traces for Visual Studio build](#capture-perfview-traces-for-visual-studio-build)
 
 ### Retrieving custom logs
 
@@ -339,9 +339,9 @@ If you are troubleshooting network issues with Microsoft-hosted agents, customer
 
 * * *
 
-### Capture perfview traces for Visual Studio build
+### Capture :::no-loc text="perfview"::: traces for Visual Studio build
 
-If customer support asks you to create a `PerfView` trace of your Visual Studio build, add the following tasks to your pipeline before and after your Visual Studio build step.
+If customer support asks you to create a :::no-loc text="perfview"::: trace of your Visual Studio build, add the following tasks to your pipeline before and after your Visual Studio build step.
 
 After running the pipeline, you can download the **PerfViewLog** artifact from the [pipeline run details](../create-first-pipeline.md#view-pipeline-run-details) and send that file customer support.
 
