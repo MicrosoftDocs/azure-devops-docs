@@ -235,7 +235,7 @@ Don't save or run your pipeline just yet. We must first give our pipeline the ri
 
 1. Return to the previous tab where we left off.
 
-1. Select **Save**, and then select **Save** again to commit your changes and trigger the pipeline. You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once.
+1. Select **Save and run**, and then select **Save and run** again to commit your changes and trigger the pipeline. You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once.
 
 1. Select the **CmdLine** task to view the logs.
 
