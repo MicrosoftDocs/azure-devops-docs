@@ -75,7 +75,7 @@ To access the YAML pipeline editor, do the following steps.
 
 5. Choose **Validate and save**. You can commit directly to your branch, or create a new branch and optionally start a pull request.
 
-    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate-and-save.png" alt-text="YAML pipeline editor validate and save window.":::
+    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate-and-save.png" alt-text="Screenshot showing the YAML pipeline editor validate and save window.":::
 
 :::moniker-end
 
@@ -143,7 +143,7 @@ Validate your changes to catch syntax errors in your pipeline that prevent it fr
 
 Azure Pipelines validates your pipelines each time you save. Choose **Validate and save** to validate your pipeline before saving. If there are any errors, you can **Cancel** or **Save anyway**. To save your pipeline without validating, choose **Save without validating**.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate-and-save-button.png" alt-text="Validate and save button.":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate-and-save-button.png" alt-text="Screenshot showing the Validate and save button.":::
 
 :::moniker-end
 
