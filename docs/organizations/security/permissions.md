@@ -2029,7 +2029,7 @@ You can define the following permissions in Build at both levels.
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="edit-pipeline-queue-configuration-permission"></a> Edit pipeline queue configuration
+   <a id="edit-pipeline-queue-configuration-permission"></a> Edit queue build configuration
    `Build, EditPipelineQueueConfigurationPermission`
    :::column-end:::
    :::column span="2":::
