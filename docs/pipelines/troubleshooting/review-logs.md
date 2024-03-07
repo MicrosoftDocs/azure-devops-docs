@@ -207,7 +207,7 @@ In addition to the built-in logs, you can use tasks and scripts to capture custo
 - [Capture ETW traces for a hosted agent](#capture-etw-traces-for-a-hosted-agent)
 - [Capture :::no-loc text="perfview"::: traces for Visual Studio build](#capture--traces-for-visual-studio-build)
 
-### Retrieving custom logs
+### Retrieve custom logs
 
 After capturing a custom log in your pipeline, you must upload it so that it can be retrieved for review. You can upload the custom log as part of the standard pipeline logs, or you can upload it as an artifact. The examples in the following sections show both ways of uploading custom logs.
 
