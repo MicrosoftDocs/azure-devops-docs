@@ -135,6 +135,11 @@ We recommend that you create a test project and apply your customized  inherited
 
 [!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 
+## Q & A
+
+### Q: Are there some fields that cannot be used?
+
+**A:** Yes, the Steps control that is available on the Test Case work item type, cannot be used on a custom work item type.
 
 ## Try this next
 
