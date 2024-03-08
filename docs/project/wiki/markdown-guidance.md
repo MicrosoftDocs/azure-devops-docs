@@ -407,15 +407,12 @@ When you link to another Markdown page in the same Git or TFVC repository, the l
 
 **Supported links for Markdown widget:**
 
-<ul>
-- URL: `[text to display](http://address.com)`  </br>
-</ul>
+- URL: `[text to display](http://address.com)`
 
 **Supported links for Wiki:**  
-<ul>
-- Absolute path of Wiki pages: `[text to display](/parent-page/child-page)` </br>
-- URL: `[text to display](http://address.com)`  </br>
-</ul>
+
+- Absolute path of Wiki pages: `[text to display](/parent-page/child-page)`
+- URL: `[text to display](http://address.com)`
 
 > [!NOTE]  
 > - Links to documents on file shares using `file://` aren't supported on 2017.1 and later versions. This restriction has been implemented for security purposes.
