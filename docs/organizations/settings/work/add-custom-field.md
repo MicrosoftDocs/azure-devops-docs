@@ -76,7 +76,7 @@ You always add a field to an existing work item type.
 
 	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" />  
 
-1.	Choose **Add field** to complete adding the field. If you haven't specified it's layout location, it is added to the first group of fields on the layout form.  
+1.	Choose **Add field** to complete adding the field. If you haven't specified its layout location, it is added to the first group of fields on the layout form.  
 
 	> [!TIP]    
 	> Once you've added a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields.  You can't add a field to the gray area within the form where the Assigned To, State, and Reason fields are located. 
@@ -135,6 +135,11 @@ We recommend that you create a test project and apply your customized  inherited
 
 [!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 
+## Q & A
+
+### Q: Are there some fields that can't be used?
+
+**A:** Yes, the Steps control that is available on the Test Case work item type can't be used on a custom work item type.
 
 ## Try this next
 
