@@ -63,9 +63,21 @@ To access the YAML pipeline editor, do the following steps.
 
 :::moniker-end
 
+:::moniker range=">= azure-devops-2020 < azure-devops"
+
 5. Choose **Save**. You can commit directly to your branch, or create a new branch and optionally start a pull request.
 
     :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-save.png" alt-text="YAML pipeline editor save window.":::
+
+:::moniker-end
+
+:::moniker range="azure-devops"
+
+5. Choose **Validate and save**. You can commit directly to your branch, or create a new branch and optionally start a pull request.
+
+    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate-and-save.png" alt-text="Screenshot showing the YAML pipeline editor validate and save window.":::
+
+:::moniker-end
 
 ### Use keyboard shortcuts
 
@@ -124,6 +136,14 @@ The task assistant provides a method for adding tasks to your YAML pipeline.
 Validate your changes to catch syntax errors in your pipeline that prevent it from starting. Choose **More actions** > **Validate**.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate.png" alt-text="Validate and Download full YAML.":::
+
+:::moniker-end
+
+:::moniker range="azure-devops"
+
+Azure Pipelines validates your pipelines each time you save. Choose **Validate and save** to validate your pipeline before saving. If there are any errors, you can **Cancel** or **Save anyway**. To save your pipeline without validating, choose **Save without validating**.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate-and-save-button.png" alt-text="Screenshot showing the Validate and save button.":::
 
 :::moniker-end
 
