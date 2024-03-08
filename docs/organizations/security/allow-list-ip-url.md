@@ -242,7 +242,6 @@ We recommend you open port `443` to all traffic on the following IP addresses an
 |More domain URLs |Descriptions  |
 |---------|---------|
 |https://login.microsoftonline.com |Authentication and sign-in related     |
-|https://app.vssps.visualstudio.com    | Authentication and sign-in related         |
 |https://*.vssps.visualstudio.com   |Authentication and sign-in related          |
 |https://*gallerycdn.vsassets.io   |Hosts Azure DevOps extensions         |
 |https://*vstmrblob.vsassets.io | Hosts Azure DevOps TCM log data        |
