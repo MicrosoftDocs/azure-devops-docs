@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 01/16/2024
+ms.date: 03/08/2024
 ---
 
 # Use Markdown in Azure DevOps
@@ -218,15 +218,14 @@ sudo npm install vsoagent-installer -g
 **Example:**
 
 <pre>
-&#96;&#96;&#96;To install the Microsoft Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;.
-&#96;&#96;&#96; 
+&#96;&#96;&#96;To install the Microsoft Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;.&#96;&#96;&#96; 
 </pre>
 
 <br/>
 
 **Result:**
 
-To install the Microsoft Cross Platform Build & Release Agent, run the following command: `$ sudo npm install vsoagent-installer -g`.  
+```To install the Microsoft Cross Platform Build & Release Agent, run the following command: `$ sudo npm install vsoagent-installer -g`.```  
 
 <br/>
 
