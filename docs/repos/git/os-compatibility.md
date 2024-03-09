@@ -1,7 +1,7 @@
 ---
-title: Cross-Platform Compatibility
+title: Cross-platform compatibility
 titleSuffix: Azure Repos
-description: How Git interacts with multiple platform filesystems
+description: Learn how Git interacts with multiple platform file systems.
 ms.assetid: 7e02f9e9-ebb1-4d7a-aeb2-37445a6cf8c7
 ms.service: azure-devops-repos
 ms.topic: conceptual
@@ -10,91 +10,89 @@ monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
 
-# Git Cross-Platform Compatibility
+# Git cross-platform compatibility
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The Windows, macOS, and Linux file systems each have limitations and behaviors that are not always supported by one or more of the other platforms. Since Git is a cross-platform technology, it is possible for a developer on one platform to make a commit containing files or folders that have incompatible names with another platform's file system. Protecting your repo from this is important because developers on other platforms may unknowingly checkout a commit that corrupts their working directory due to unsupported file or paths names.
+The Windows, macOS, and Linux file systems have limitations and behaviors that one or more of the other platforms don't always support. Because Git is a cross-platform technology, it's possible for a developer on one platform to make a commit that contains files or folders that have incompatible names with another platform's file system. Protecting your repo from this incompatibility is important because developers on other platforms might unknowingly check out a commit that corrupts their working directories because of unsupported file or path names.
 
-Azure Repos offers [three cross-platform compatibility settings](repository-settings.md) that help protect your repo from people pushing commits that are incompatible with one or more platforms. The three file system limitations these settings are related to are:
+Azure Repos offers [three cross-platform compatibility settings](repository-settings.md) that help protect your repo from people pushing commits that are incompatible with one or more platforms. These settings are related to the following limitations with file systems:
 
-- Case Sensitivity
-- Restricted File and Folder Names
-- Path Length Restrictions
+- Case sensitivity
+- Restrictions on file and folder names
+- Path length restrictions
 
-## Case Sensitivity
+## Case sensitivity
 
-The Windows and macOS file systems are case-insensitive (but case-preserving) by default.
-Most Linux filesystems are case-sensitive.
-Git was built originally to be the Linux kernel's version control system, so unsurprisingly, it's case-sensitive.
+The Windows and macOS file systems are case insensitive (but case preserving) by default.
+Most Linux file systems are case sensitive.
+Git was built originally to be the Linux kernel's version control system, so it's case sensitive.
 
-While many of the issues with a case-insensitive OS have been addressed in [Git for Windows](https://gitforwindows.org/), a few quirks remain.
+Although [Git for Windows](https://gitforwindows.org/) addresses many of the problems with a case-insensitive operating system, a few quirks remain.
 
 ### File and folder names
 
-On Linux, checking out a Git repo which contains both "File.txt" and "file.txt" is no problem.
-Those are distinct filenames.
-On Windows and macOS, checking out both files will result in the second one overwriting the first one.
-If two folders differ only by case, their contents will end up mixed together on case-insensitive filesystems.
+On Linux, checking out a Git repo that contains both *File.txt* and *file.txt* is no problem.
+Those are distinct file names.
+On Windows and macOS, checking out both files causes the second one to overwrite the first one.
+If two folders differ only by case, their contents are mixed together in case-insensitive file systems.
 
-### Fixing case conflicts
+There are two ways to fix a repository that has case conflicts:
 
-One way to fix a repository with this problem is to check it out in a case-sensitive environment.
-Rename files and folders so they no longer conflict, then push those changes to the repository.
+- Check out the repository in a case-sensitive environment.
+Rename files and folders so they no longer conflict, and then push those changes to the repository.
 [Windows Subsystem for Linux](/windows/wsl/about) is one such environment.
-Another approach is to use the command `git mv -f <conflicting name> <non-conflicting name>` for each conflict, being careful to use exact capitalization on both file names.
+- Use the command `git mv -f <conflicting name> <non-conflicting name>` for each conflict. Be careful to use exact capitalization on both file names.
 
-### Avoiding case conflicts
-
-It's good to avoid creating this situation in the first place.
-Azure Repos offers a [case-enforcement setting](repository-settings.md) to prevent pushes which would lead to this situation.
-For developers, adopting the habit of using tab-completion to commit files will also help.
-Since both Windows and macOS are case-preserving, this will ensure that Git's internals see the exact same casing that the filesystem uses.
+It's good to avoid creating case conflicts in the first place.
+Azure Repos offers a [case-enforcement setting](repository-settings.md) to prevent pushes that would lead to this situation.
+For developers, adopting the habit of using tab completion to commit files will also help.
+Because both Windows and macOS are case preserving, these approaches ensure that Git's internals see exactly the same casing that the file system uses.
 
 ### Branch and tag names
 
-You can create two branches or tags (known as 'refs') that differ only in casing.
-Git's internals, as well as Azure DevOps Services/TFS, will treat them as two separate refs.
-On a user's machine, Git uses the filesystem to store refs.
+You can create two branches or tags (known as *refs*) that differ only in casing.
+Git's internals, along with Azure DevOps Services and Azure DevOps Server, treat them as two separate refs.
+On a user's machine, Git uses the file system to store refs.
 Fetches and other operations begin to fail because of the ambiguity.
-Each ref is represented by a small file, and if a ref name contains `/` characters, the parts before the final `/` are represented by folders.
 
-One simple way to avoid issues is to always use all-lowercase branch and tag names.
-If you have already created two branches or tags with this problem, you can fix it in the Azure Repos web UI.
+A small file represents each ref. If a ref name contains slash (`/`) characters, folders represent the parts before the final slash.
 
-### Fixing branch names
+One simple way to avoid problems is to always use all-lowercase branch and tag names.
+If you already created two branches or tags that have this problem, you can fix them in the Azure Repos web UI.
 
-From the branches page, navigate to the related commit.
-In the context menu, choose "New branch".
-Give the branch a new name that doesn't have a case conflict.
-Return to the branches page and delete the conflicting branch.
+To fix branch names:
 
-### Fixing tag names
+1. On the page for branches, go to the related commit.
+1. On the shortcut menu, select **New branch**.
+1. Give the branch a new name that doesn't have a case conflict.
+1. Return to the page for branches and delete the conflicting branch.
 
-The steps for fixing a tag name are similar to branches.
-From the tags page, navigate to the tagged commit.
-In the context menu, choose "Create tag".
-Give the tag a new name that doesn't have a case conflict.
-Return to the tags page and delete the conflicting tag.
+To fix tag names:
 
-## Path and File Name Restrictions
+1. On the page for tags, go to the tagged commit.
+1. On the shortcut menu, select **Create tag**.
+1. Give the tag a new name that doesn't have a case conflict.
+1. Return to the page for tags and delete the conflicting tag.
 
-The Windows, macOS, and Linux operating systems each have various naming limitations and max path limits. These restrict what you can name files or folders. This can create problem situations for teams using Git across multiple platforms.
+## Path and file name restrictions
 
-For example, let's say a developer on one platform commits a change to the shared repository that contains a file name or path length that is invalid on another platform. Later, another developer attempts to checkout that commit on a platform where the contents are invalid. This results in a corrupted working directory creating the potential to damage your repo with corrupted data.
+The Windows, macOS, and Linux operating systems have various limitations for file names and paths. These limitations restrict what you can name files or folders, which can create problems for teams that use Git across multiple platforms.
+
+For example, imagine that a developer on one platform commits a change to the shared repository that contains a file name or path length that's invalid on another platform. Later, another developer tries to check out that commit on a platform where the contents are invalid. This situation results in a corrupted working directory that has the potential to damage your repo with corrupted data.
 
 ::: moniker range="azure-devops"
 
-Azure Repos offers file name and max path [repository settings](repository-settings.md) that block pushes containing commits that violate one or more of the below limitations.
+Azure Repos offers [repository settings](repository-settings.md) that block pushes containing commits that violate one or more of the following limitations.
 
 ::: moniker-end
 
-### File Name & Path Length Reference Table
+### Reference table for file names and paths
 
-| Restrictions / Platforms |                                                                                                                                                         Windows                                                                                                                                                         |                                                                                              macOS                                                                                              |                               Linux                               |
+| Restrictions/Platforms |                                                                                                                                                         Windows                                                                                                                                                         |                                                                                              macOS                                                                                              |                               Linux                               |
 |--------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------:|
-|  File Name Restrictions  |                      [Reserved File Names](/windows/desktop/FileIO/naming-a-file): CON, PRN, AUX, NUL, COM1 - COM9, LPT1 - LPT9<br><br>Reserved File Names followed by `.`<br><br>Reserved Characters: `\ / : * ? " < >` <br><br> Filenames ending in `.` or whitespace                       |                                                                                     Filenames ending in `/`                                                                                     |                      Filenames ending in `/`                      |
-| Path Length Restrictions | [Paths in Windows](/windows/desktop/FileIO/naming-a-file#paths) have a maximum length of 260 characters (incl. a null terminator). <br><br>For directories with .NET the fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters. | File names are limited to 255 characters<br><br> Path max in HFS+ are documented as unlimited, though some macOS versions cap it at 1016 characters. Some file systems support 1016 as max path | File names are limited to 255 characters<br><br> Path max is 4096 |
+|  File name restrictions  |                      [Reserved file names](/windows/desktop/FileIO/naming-a-file): CON, PRN, AUX, NUL, COM1-COM9, LPT1-LPT9<br><br>Reserved file names followed by `.`<br><br>Reserved characters: `\ / : * ? " < >` <br><br> File names that end in `.` or whitespace                       |                                                                                     File names that end in `/`                                                                                     |                      File names that end in `/`                      |
+| Path length restrictions | [Paths in Windows](/windows/desktop/FileIO/naming-a-file#paths) have a maximum length of 260 characters (including a null terminator). <br><br>For directories with .NET, the fully qualified file name must be fewer than 260 characters, and the directory name must be fewer than 248 characters. | File names are limited to 255 characters.<br><br> Path maximums in HFS+ are documented as unlimited, though some macOS versions cap paths at 1,016 characters. Some file systems support 1,016 as the path maximum. | File names are limited to 255 characters.<br><br> Path maximum is 4096. |
 
 ::: moniker range=">=azure-devops-2019"
 
@@ -105,16 +103,16 @@ Azure Repos offers file name and max path [repository settings](repository-setti
 ::: moniker range="azure-devops-2019"
 
 > [!NOTE]
-> The encoding support described in this section is supported in Azure DevOps Server 2019.1 and higher.
+> The encoding support that this section describes is supported in Azure DevOps Server 2019.1 and later.
 
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2019"
 
-Microsoft has added support for UTF-16 and UTF-32 encoding via the web pushes endpoint. This means that we will preserve the encoding type so you don't have to rewrite your files as UTF-8. You will also see a warning when you try to save a file that is not UTF encoded via the web (which only supports UTF encoding).
+Microsoft added support for UTF-16 and UTF-32 encoding via the web push endpoint. This support means that we preserve the encoding type, so you don't have to rewrite your files as UTF-8. You also see a warning when you try to save a file that's not UTF encoded via the web (which supports only UTF encoding).
 
-The following screenshot shows an example of the dialog that you see when you introduce encoding changes by a web push.
+The following screenshot shows an example of the dialog that appears when you introduce encoding changes by using a web push.
 
-:::image type="content" source="media/os-compatibility/web-push-encoding-dialog.png" alt-text="{Screenshot that shows the dialog when you introduce encoding changes by a web push.}":::
+:::image type="content" source="media/os-compatibility/web-push-encoding-dialog.png" alt-text="Screenshot that shows the dialog about introducing encoding changes through a web push.":::
 
 ::: moniker-end

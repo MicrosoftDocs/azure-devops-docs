@@ -10,6 +10,10 @@
       items:
         - name: "2024"
           items:
+          - name: February 29
+            href: 2024/sprint-235-update.md
+          - name: February 9
+            href: 2024/sprint-234-update.md
           - name: January 18
             href: 2024/sprint-233-update.md
           - name: January 11
@@ -245,6 +249,10 @@
         items:
         - name: "2024"
           items:
+          - name: February 29
+            href: 2024/boards/sprint-235-update.md
+          - name: February 9
+            href: 2024/boards/sprint-234-update.md
           - name: January 18
             href: 2024/boards/sprint-233-update.md
           expanded: true
@@ -378,6 +386,10 @@
         items:
         - name: "2024"
           items:
+          - name: February 29
+            href: 2024/repos/sprint-235-update.md
+          - name: February 9
+            href: 2024/repos/sprint-234-update.md
           expanded: false  
         - name: "2023"
           items:
@@ -447,6 +459,10 @@
         items:
         - name: "2024"
           items:
+          - name: February 29
+            href: 2024/pipelines/sprint-235-update.md
+          - name: February 9
+            href: 2024/pipelines/sprint-234-update.md
           - name: January 18
             href: 2024/pipelines/sprint-233-update.md
           expanded: false
@@ -632,6 +648,11 @@
         expanded: false
       - name: Azure Test Plans
         items:
+        - name: "2024"
+          items:
+          - name: February 29
+            href: 2024/testplans/sprint-235-update.md
+          expanded: false
         - name: "2020"
           items:
           - name: November 12
@@ -653,6 +674,8 @@
         items:
         - name: "2024"
           items:
+          - name: February 9
+            href: 2024/artifacts/sprint-234-update.md
           expanded: false
         - name: "2023"
           items:
@@ -722,6 +745,8 @@
         items:
         - name: "2024"
           items:
+          - name: February 9
+            href: 2024/ghazdo/sprint-234-update.md
           - name: January 18
             href: 2024/ghazdo/sprint-233-update.md
           expanded: false
@@ -740,6 +765,8 @@
         items:
         - name: "2024"
           items:
+          - name: February 9
+            href: 2024/general/sprint-234-update.md
           - name: January 18
             href: 2024/general/sprint-233-update.md
           - name: January 11
@@ -949,11 +976,11 @@
   items:
   - name: What's new
     href: docswhatsnew/index.yml
-  - name: December 2023
+  - name: February 2024
     href: docswhatsnew/azure-devops-docs-whats-new.md
-  - name: November 2023
-    href: docswhatsnew/azure-devops-docs-2023-11.md
-  - name: October 2023
-    href: docswhatsnew/azure-devops-docs-2023-10.md
+  - name: January 2024
+    href: docswhatsnew/azure-devops-docs-2024-01.md
+  - name: December 2023
+    href: docswhatsnew/azure-devops-docs-2023-12.md
 - name: Subscribe to updates
   href: https://azure.microsoft.com/updates/?product=azure-devops

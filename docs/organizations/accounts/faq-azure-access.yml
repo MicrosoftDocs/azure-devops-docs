@@ -8,7 +8,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 10/19/2023
+  ms.date: 02/22/2024
   monikerRange: 'azure-devops'
 title: Access via Microsoft Entra FAQs
 summary: |
@@ -210,7 +210,7 @@ sections:
           | `[TEAM FOUNDATION]` | Membership is defined _directly_ in Microsoft Entra ID | 
           
           > [!Note]
-          > If you add a Microsoft Entra group to a custom security group _and_ use a similar name, you might see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is a Microsoft Entra group.
+          > If you add a Microsoft Entra group to a custom security group and use a similar name, you might see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is a Microsoft Entra group.
           
       - question: |
           Why doesn't the Users list show all Microsoft Entra group members?
@@ -282,7 +282,9 @@ sections:
       - question: |
           Why did I get an error stating that my organization has multiple active identities with the same UPN?
         answer: |
-          During the connect process, we map existing users to members of the Microsoft Entra tenant, based on their UPN, which is often known as sign-in address. If we detect multiple users with the same UPN, we don't know how to map these users. This scenario occurs if a user changes their UPN to match one already existing in the organization.
+          During the connect process, we map existing users to members of the Microsoft Entra tenant, based on their UPN, which is often known as sign-in address. If we detect multiple users with the same UPN, we don't know how to map these users. This scenario occurs if a user changes their UPN to match one already existing in the organization. 
+
+          If you encounter this error, review your list of users for any duplicates. If you find any duplicates, remove the users you don't need. If you can't find any duplicates, [contact support](https://developercommunity.visualstudio.com/spaces/21/index.html).
           
       - question: |
           Can I switch current users from Microsoft accounts to work accounts in Azure DevOps?
