@@ -53,7 +53,7 @@ Dependency scanning supports both direct and transitive dependencies for all sup
 
 ### About dependency scanning alerts 
 
-The Advanced Security tab in Repos in Azure DevOps is the hub to view your security alerts, which by default shows dependency scanning alerts. You can filter by branch, pipeline, package, and severity. You can select into an alert for more details, including remediation guidance.  
+The Advanced Security tab in Repos in Azure DevOps is the hub to view your security alerts, which by default shows dependency scanning alerts. You can filter by branch, pipeline, package, and severity. You can select into an alert for more details, including remediation guidance. At this time, the alerts hub does not display alerts for scanning completed on PR branches.
 
 When a vulnerable package is detected in your repository, fixing dependency scanning alerts typically involves upgrading to a higher package version or removing an offending package. This advice holds true for both direct and transitive (or indirect) dependencies. The default view in your Advanced Security tab is active alerts for the default branch for your repository.
 
