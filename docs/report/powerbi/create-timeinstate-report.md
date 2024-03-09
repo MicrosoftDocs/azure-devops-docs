@@ -8,16 +8,16 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
-ms date: 02/08/2023
+ms date: 03/04/2024
 ---
 
 # Add a time-in-state measure to your Power BI report
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-The time a work item spends in a specific workflow state or series of states is an important aspect for understanding efficiency. The [Cycle Time and Lead Time](../dashboards/cycle-time-and-lead-time.md) Analytics widgets provide some measures of time-in-state. However, these widgets may not have the level of detail that you want. 
+The time a work item spends in a specific workflow state or series of states is an important aspect for understanding efficiency. The [Cycle Time and Lead Time](../dashboards/cycle-time-and-lead-time.md) Analytics widgets provide some measures of time-in-state. However, these widgets might not have the level of detail that you want. 
 
-This article provides recipes using DAX calculations to evaluate time spent by work items in a combination of states. Specifically, you learn how to add the following measure and calculated columns to your Power BI reports and use them to generate various trend charts. All fields are calculated columns except the first one listed.  
+This article provides recipes using Data Analysis Expressions (DAX) to evaluate time spent by work items in a combination of states. Specifically, you learn how to add the following measure and calculated columns to your Power BI reports and use them to generate various trend charts. All fields are calculated columns except the first one listed.  
 
 |Count| Description |
 |-----|-------------|
@@ -31,6 +31,7 @@ This article provides recipes using DAX calculations to evaluate time spent by w
 | *State Changed*  | Adds a column that determines the date when a work item transitioned from one **State** to another  |
 | *State Flow* | Adds a column that illustrates the state flow as a work item transitions from one **State** to another   |
 | *State Change Count* | Adds a column that calculates the number of times a work item transitioned from one **State** to another   |
+| *State Change Count - First Completed* | Adds a column that determines the number of times a work item transitions to the Completed state for the first time. In other words, when it moves from any other state to the Completed state. |
 | *State Change Count - Last Proposed* | Adds a column that determines if a work item was in a Proposed state previously after it transitioned to a later **State**   |
 | *State Restart Time in Days* | Adds a column that calculates the days a work item spent in a restart state    |
 | *State Rework Time in Days* |  Adds a column that calculates the days a work item spends in a state other than *Completed*    | 
@@ -82,13 +83,13 @@ Compare the *Work Items Count* measure with the default count aggregation based 
 
 :::image type="content" source="media/measure/work-item-count-measure-vs-id.png" alt-text="Screenshot of Power BI report page, two cards showing Work Item Count measure and Work Item ID property.":::
 
-To get the correct count using a default aggregation, you apply the filter *Is Current* equals 'True'. This pattern of applying filters to a default aggregation is the basis for many of the examples provided in this article.
+To get the correct count using a default aggregation, you apply the filter *Is Current* equals 'True.' This pattern of applying filters to a default aggregation is the basis for many of the examples provided in this article.
 
-:::image type="content" source="media/measure/work-item-id-count-is-current.png" alt-text="Screenshot of Power BI report page, Work Item ID*count filtered with Is Current=True.":::
+:::image type="content" source="media/measure/work-item-id-count-is-current.png" alt-text="Screenshot of Power BI report page, work item ID count filtered.":::
 
 ## Add State Sort Order
 
-By default, Power BI shows states sorted alphabetically in a visualization. It can be misleading when you want to visualize time in state and *Proposed* shows up after *In Progress*.  The following steps help to resolve this issue.
+By default, Power BI shows states sorted alphabetically in a visualization. It can be misleading when you want to visualize time in state and *Proposed* shows up after *In Progress*. The following steps help to resolve this issue.
 
 1. Verify that the *State Category* field is included in the Analytics view. This field is included in all default shared views. 
 
@@ -151,7 +152,7 @@ CALCULATE (
 )
 ```
 
-The **Date Previous** calculated column uses three DAX functions, [`MAX`](/dax/max-function-dax), [`ALLEXCEPT`](/dax/allexcept-function-dax), and  [`EARLIER`](/dax/earlier-function-dax), described in more detail [later in this article](#dax-functions). Because the column is calculated, it's run for every row in the table, and each time it's run it has the context of that specific row. 
+The **Date Previous** calculated column uses three DAX functions, [`MAX`](/dax/max-function-dax), [`ALLEXCEPT`](/dax/allexcept-function-dax), and  [`EARLIER`](/dax/earlier-function-dax), described in more detail [later in this article](#dax-functions). Because the column is calculated, it runs for every row in the table, and each time it runs, it has the context of that specific row. 
 
 :::image type="content" source="media/measure/table-report-state-date-date-previous.png" alt-text="Screenshot of Power BI table chart and Visualization tab for Date and Date Previous.":::
 
@@ -206,7 +207,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 
 ## Add State Time in Days
 
-The time that a work item spent in a specific state can now be calculated by summing the *Date Diff in Days* for each work item. This calculation includes all of the time spent in a specific state even if it has switched between states multiple times. It's possible to evaluate each row as a trend using *Date* or the latest information by using *Is Last Day In State*.
+The time that a work item spent in a specific state can now be calculated by summing the *Date Diff in Days* for each work item. This calculation includes all of the time spent in a specific state even if it switched between states multiple times. It's possible to evaluate each row as a trend using *Date* or the latest information by using *Is Last Day In State*.
 
 > [!IMPORTANT]  
 > Requires that you have added the *Date Diff in Days* and *Is Last Day in State* calculated columns to the table.
@@ -237,18 +238,18 @@ The second chart illustrates the trend of average days the active work items are
 
 ### Add State Time in Days - Latest (Is Last Day In State)
 
-When evaluating time-in-state for each work item in a table or when filtered by a field like *Area Path*, don't use the *State Time in Days* column in an aggregation. The aggregation uses the value for every day the work item was in the state. For example, if a work item was *In Progress* on Monday and moved to *Completed* on Thursday, the time-in-state is three days, but the sum of *State Time in Days* column is six days (1+2+3) which is clearly incorrect.
+When evaluating time-in-state for each work item in a table or when filtered by a field like *Area Path*, don't use the *State Time in Days* column in an aggregation. The aggregation uses the value for every day the work item was in the state. For example, if a work item was *In Progress* on Monday and moved to *Completed* on Thursday, the time-in-state is three days, but the sum of *State Time in Days* column is six days, `1+2+3`, which is incorrect.
 
 > [!div class="mx-imgBorder"]  
 > ![Add State Time in Days - Latest.](media/StateTimeInDaysTable.png) 
 
-To resolve this issue, use *State Time in Days* and apply the filter *Is Last Day In State* equals 'True'. It eliminates all the historical data necessary for a trend and focuses instead on just the latest value for each state.
+To resolve this issue, use *State Time in Days* and apply the filter *Is Last Day In State* equals 'True.' It eliminates all the historical data necessary for a trend and focuses instead on just the latest value for each state.
 
 :::image type="content" source="media/StateTimeInDaysTableIsLast.png" alt-text="Use State Time in Days and apply the filter Is Last Day In State equals 'True'.":::
 
 ### Add State Time in Days - In Progress
 
-In the examples above, *State Time in Days* for a given work item is only counted when the work item was in that specific state. If your goal is to have the time-in-state for a given work item count towards an average continuously, you must change the calculation. For example, if we want to track the "In Progress" state, we add the *State Time in Days - In Progress* calculated column. 
+In the previous examples, *State Time in Days* for a given work item is only counted when the work item was in that specific state. If your goal is to have the time-in-state for a given work item count towards an average continuously, you must change the calculation. For example, if we want to track the "In Progress" state, we add the *State Time in Days - In Progress* calculated column. 
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
@@ -299,7 +300,7 @@ The chart of the left shows combined average while the right-hand side shows eac
     
 ## Get the State Time in Days- Latest for multiple states
 
-You use the *State Time in Days- Latest* calculated column when creating a trend. Using a filter on the states, the *State Time in Days* column and *Is Last Day in State* provides a simple way to get the total time any work item or group of work items spent in a set of states.
+You use the *State Time in Days- Latest* calculated column when creating a trend. With a filter on the states, the *State Time in Days* column and *Is Last Day in State* provides a simple way to get the total time any work item or group of work items spent in a set of states.
 
 > [!div class="mx-imgBorder"]  
 > ![Latest Time in States](media/CombinedTimeInState.png) 
@@ -337,7 +338,7 @@ And, the last parameter, `'View Name'[Date], 'View Name'[Date Previous]`, specif
 ## Add State Changed
 
 Using the *State Previous* column, we can flag the rows for each work item where a state transition occurred. The *Stage Changed* calculated column has two special considerations:
-* Blank values of *State Previous* which we set to the *Created Date* of the work item
+* Blank values of *State Previous, which we set to the *Created Date* of the work item
 * Creation of a work item is considered a state transition
 
 > [!IMPORTANT]  
@@ -397,13 +398,12 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 
 ## Add State Change Count - Last Proposed and State Restart Time in Days
 
-Calculating restarts, *State Restart Time in Days*, is a fairly complex calculation. The first step is to find the last time a work item was in a proposed state. Add the *State Change Count - Last Proposed*  calculated column. 
-
+*State Restart Time in Days* is a fairly complex calculation. The first step is to find the last time a work item was in a proposed state. Add the *State Change Count - Last Proposed* calculated column. 
 
 > [!NOTE]   
-> You may need to revise the following definitions based on the workflow states used by your project. For example, if your project uses 'New' in place of 'Proposed'. 
+> You might need to revise the following definitions based on the workflow states used by your project. For example, if your project uses 'New' in place of 'Proposed'. 
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
+From the **Modeling** tab, choose **New column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX
@@ -434,31 +434,46 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 
 Since the **State Restart Time in Days** is updated for each row of data, you can either create a trend to evaluate rework across specific sprints or examine rework for individual work items by using **Is Current**.
 
-
 ## Add State Rework Time in Days
 
-Similar to *State Restart Time in Days*, the *State Rework Time in Days* looks for the first time a work item was in the **Completed** state category. After that time, each day a work item spends in a state other than Completed, counts as rework.
+Similar to *State Restart Time in Days*, the *State Rework Time in Days* looks for the first time a work item was in the Completed state category. After that time, each day a work item spends in a state other than Completed, counts as rework.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
+1. Create the "State Change Count - First Completed" column. This column tracks the number of times a work item transitions to the Completed state from any other state.
 
-> [!div class="tabbedCodeSnippets"]   
-> ```DAX
-> State Rework Time in Days = 
-> IF (
->     ISBLANK ( 'View Name'[State Change Count - First Completed] ),
->     0,
->     CALCULATE (
->         SUM ( 'View Name'[Date Diff in Days] ),
->         ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
->         'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
->         'View Name'[State Change Count] EARLIER ( 'View Name'[State Change Count - First Completed] ),
->         'View Name'[State] IN {"Completed", "Closed", "Cut" } = FALSE()
->     ) + 0
-> )
-> ```
-> 
-> [!NOTE]
-> You may need to revise the above definition based on the workflow states used by your project. For example, if your project uses *Done* in place of *Closed*. 
+    > [!div class="tabbedCodeSnippets"]   
+    > ```DAX
+    > State Change Count - First Completed =
+    > VAR CompletedState = "Completed"
+    > RETURN
+    > CALCULATE(
+    >    COUNTROWS('YourTable'),
+    >    FILTER(
+    >        'YourTable',
+    >        'YourTable'[State] = CompletedState
+    >        && 'YourTable'[State Change Date] = MIN('YourTable'[State Change Date])
+    >    )
+    > )
+
+2. From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
+
+    > [!div class="tabbedCodeSnippets"]   
+    > ```DAX
+    > State Rework Time in Days = 
+    > IF (
+    >     ISBLANK ( 'View Name'[State Change Count - First Completed] ),
+    >     0,
+    >     CALCULATE (
+    >         SUM ( 'View Name'[Date Diff in Days] ),
+    >         ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
+    >         'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
+    >         'View Name'[State Change Count] EARLIER ( 'View Name'[State Change Count - First Completed] ),
+    >         'View Name'[State] IN {"Completed", "Closed", "Cut" } = FALSE()
+    >     ) + 0
+    > )
+    > ```
+    > 
+    > [!NOTE]
+    > You might need to revise the above definition based on the workflow states used by your project. For example, if your project uses *Done* in place of *Closed*, and so on. 
 
 <a id="dax-functions"></a>
 
@@ -468,16 +483,15 @@ Additional information is provided in this section for the DAX functions used to
 
 |Function| Description |
 |-----|-------------|
-| [`ALLEXCEPT`](/dax/allexcept-function-dax) | Removes all context filters in the table except filters that have been applied to the specified columns. Essentially, `ALLEXCEPT ('View Name'', 'View Name'[Work Item Id])` reduces the rows in the table down to only the ones that share the same work item ID as the current row. |   
+| [`ALLEXCEPT`](/dax/allexcept-function-dax) | Removes all context filters in the table except filters applied to the specified columns. Essentially, `ALLEXCEPT ('View Name'', 'View Name'[Work Item Id])` reduces the rows in the table down to only the ones that share the same work item ID as the current row. |   
 | [`CALCULATE`](/dax/calculate-function-dax) | This function is the basis for nearly all examples. The basic structure is an expression followed by a series of filters that are applied to the expression. |   
 | [`COUNTROWS`](/dax/countrows-function-dax) | This function, `COUNTROWS ( 'View Name' )`, simply counts the number of rows that remain after the filters are applied. |   
 | [`DATEDIFF`](/dax/datediff-function-dax) | Returns the count of interval boundaries crossed between two dates. `DATEDIFF` subtracts *Date Previous* from *Date* to determine the number of days between them.|   
-| [`EARLIER`](/dax/earlier-function-dax) | Returns the current value of the specified column in an outer evaluation pass of the mentioned column. For example, `'View Name'[Date] < EARLIER ( 'View Name'[Date] )`, further reduces the data set to only those rows that occurred before the date for the current row that is referenced by using the `EARLIER` function. `EARLIER` doesn't refer to previous dates, it specifically defines the row context of the calculated column. |   
+| [`EARLIER`](/dax/earlier-function-dax) | Returns the current value of the specified column in an outer evaluation pass of the mentioned column. For example, `'View Name'[Date] < EARLIER ( 'View Name'[Date] )` further reduces the data set to only those rows that occurred before the date for the current row that is referenced by using the `EARLIER` function. `EARLIER` doesn't refer to previous dates; it specifically defines the row context of the calculated column. |   
 | [`ISBLANK`](/dax/isblank-function-dax) | Checks whether a value is blank, and returns TRUE or FALSE. `ISBLANK` evaluates the current row to determine if *Date Previous* has a value. If it doesn't, the If statement sets *Date Diff in Days* to 1.|   
 | [`LASTDATE`](/dax/lastdate-function-dax) | We apply the `LASTDATE` filter to an expression, for example `LASTDATE ( 'View Name'[Date] )`, to find the newest date across all rows in the table and eliminate the rows that don't share the same date. With the snapshot table generated by an Analytics view, this filter effectively picks the last day of the selected period. |   
 | [`LOOKUPVALUE`](/dax/lookupvalue-function-dax) | Returns the value in *result_columnName* for the row that meets all criteria specified by *search_columnName* and *search_value*. |   
-| [`MAX`](/dax/max-function-dax) | Returns the largest numeric value in a column, or between two scalar expressions. We apply  `MAX ( 'View Name'[Date] )`, to determine the most recent date after all filters have been applied.  |   
-
+| [`MAX`](/dax/max-function-dax) | Returns the largest numeric value in a column, or between two scalar expressions. We apply  `MAX ( 'View Name'[Date] )`, to determine the most recent date after all filters are applied.  |   
 
 ## Related articles
 

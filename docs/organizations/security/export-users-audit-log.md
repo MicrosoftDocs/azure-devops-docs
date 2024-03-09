@@ -1,7 +1,7 @@
 ---
 title: Export a list of users and their access levels
 titleSuffix: Azure DevOps
-description: Determine the access level-stakeholder, basic, advanced, or VS Enterprise-granted to user accounts  
+description: Determine the access level-stakeholder, basic, advanced, or Visual Studio Enterprise-granted to user accounts.  
 ms.subservice: azure-devops-security
 ms.assetid: 
 ms.topic: how-to
@@ -9,7 +9,7 @@ ms.reviewer:
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/16/2023
+ms.date: 03/04/2024
 ---
 
 # Export a list of users and their access levels
@@ -34,24 +34,24 @@ You can get a list of users and groups that have access to your Team Foundation 
 
 ::: moniker range="azure-devops"
 
-* You must be the **Organization owner** or a member of the **Project Collection Administrators** group. See [Change project collection-level permissions](change-organization-collection-level-permissions.md)
+* You must be the **Organization owner** or a member of the **Project Collection Administrators** group. For more information, see [Change project collection-level permissions](change-organization-collection-level-permissions.md).
   ::: moniker-end
 
   ::: moniker range="< azure-devops"
-* You must be a member of the Azure DevOps Server Administrators group. If you aren't a member, get added now. See [Add administrators](/azure/devops/server/admin/add-administrator).
+* You must be a member of the Administrators group. If you aren't a member, get added now. For more information, see [Add administrators](/azure/devops/server/admin/add-administrator).
   ::: moniker-end
 
 ## Export a list of users
 
 ::: moniker range="azure-devops"
 
-From your web portal or the Azure DevOps CLI command, you can get a list of the users in your organization and view their access level information.
+From your web portal or the Azure DevOps CLI command, get a list of the users in your organization and view their access level information.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-From your web portal, you can get a list of the users in your organization and view their access level information.
+From your web portal, get a list of the users in your organization and view their access level information.
 
 ::: moniker-end
 
@@ -59,21 +59,21 @@ From your web portal, you can get a list of the users in your organization and v
 
 ::: moniker range="azure-devops"
 
-1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Open Organization settings.](../../media/settings/open-admin-settings-vert.png)  
+	> ![Screenshot of highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)  
 
-2. Choose **Users**, and then **Export users**.
+2. Select **Users** > **Export users**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Export users.](media/export-users-audit/export-new-nav.png) 
+	> ![Screenshot of Export users button.](media/export-users-audit/export-new-nav.png) 
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-You can get a list of users and groups that have accessed your Azure DevOps Server instance by exporting the audit log. The audit log also indicates access levels.  
+You can get a list of users and groups that accessed your instance by exporting the audit log. The audit log also indicates access levels.  
 
 1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo, (1) the project collection, and (2) **Access levels**. 
 
@@ -96,15 +96,15 @@ You can get a list of users and groups that have accessed your Azure DevOps Serv
 
 ::: moniker range="tfs-2018"
 
-You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates access levels.  
+You can get a list of users and groups that have access to your instance by exporting the audit log. The audit log also indicates access levels.  
 
 1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
 
-	<img src="media/access-levels-2017-open-admin-context.png" alt="Screenshot of Open Server settings admin context, TFS 2018." />  
+	<img src="media/access-levels-2017-open-admin-context.png" alt="Screenshot of Open Server settings admin context, 2018." />  
 
 2. Choose **Access levels**, and then **Export audit log**. 
 
-	<img src="media/export-users-audit/export-audit-log-tfs.png" alt="Screenshot of Export audit log, TFS 2018. " />  
+	<img src="media/export-users-audit/export-audit-log-tfs.png" alt="Screenshot of Export audit log, 2018. " />  
 
 	> [!NOTE]
 	> If you're not a member of the Team Foundation Server Administrators group, the link to the **Access levels** page won't appear. 
@@ -124,7 +124,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ### List users
 
-You can list the users in an organization with the [az devops user list](/cli/azure/devops/user#az-devops-user-list) command, which doesn't apply to users added via Microsoft Entra groups. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can list the users in an organization with the [az devops user list](/cli/azure/devops/user#az-devops-user-list) command. This action doesn't apply to users added via Microsoft Entra groups, as certain commands or features might not directly apply to users added via Microsoft Entra. When you export the list, you might notice that group users get indicated with an "assignmentSource" of "groupRule." This assignment signifies that their access gets determined by the group membership rules, rather than individual settings. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user list [--org] [--skip] [--top]
@@ -132,10 +132,9 @@ az devops user list [--org] [--skip] [--top]
 
 #### Parameters
 
-- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
-- - **skip**: Optional. Number of users to skip.  
-- **top**: Optional. Maximum number of users to return. The maximum value is 10000; the default value is 100.  
-
+- **org**: Azure DevOps organization URL. Configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. For example, `--org https://dev.azure.com/MyOrganizationName/`.
+- - **skip**: Optional. Number of users to skip.
+- **top**: Optional. Maximum number of users to return. The maximum value is 10000; the default value is 100.
 
 #### Example
 

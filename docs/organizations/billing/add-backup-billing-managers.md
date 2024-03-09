@@ -8,13 +8,16 @@ ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 01/05/2023
+ms.date: 02/26/2024
 monikerRange: 'azure-devops'
 ---
 
 # Add a user to manage billing
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
+> [!IMPORTANT]
+> Classic admins retire August 31, 2024. Starting on February 26, you can't add a new co-administrator using the Access control blade. Remove co-administrators and use Azure RBAC for fine-grained access control. For more information, see [Azure classic subscription administrators](/azure/role-based-access-control/classic-administrators).
 
 Give another user access, so they can [set up billing](set-up-billing-for-your-organization-vs.md) or [change the Azure subscription used for billing](change-azure-subscription.md) for your Azure DevOps organization. 
 
@@ -30,29 +33,16 @@ Assign any of the following roles to a user under the subscription your organiza
 
 1. [Sign in to the Azure portal](https://portal.azure.com/) as the Azure Account Administrator.
 
-2. Enter *subscriptions* in the search box, and then select **Subscriptions** from the drop-down menu. Choose the subscription to modify, if more that one subscription's listed.
+2. Enter *subscriptions* in the search box and select **Subscriptions**. 
+3. Choose the **subscription** > **Access control (IAM)** > **+ Add**, and then **Add co-administrator** from the dropdown menu.
 
-   ![Screenshot of highlighted subscription to modify for backup billing manager.](media/add-backup-billing-manager/choose-subscription-to-modify.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot of sequence of buttons to add co-administrator.](media/add-backup-billing-manager/add-co-administrator-to-subscription.png)
 
-3. Select **Access control (IAM)**.
+4. Select the **user**, and then select **Add**.
 
-   ![Screenshot showing highlighted Access control (IAM) button in Azure portal.](media/add-backup-billing-manager/choose-access-control.png)
-
-4. Select **Add**.
-
-   ![Screenshot showing highlighted Add button.](media/add-backup-billing-manager/add-role-assignment.png)
-
-5. Choose the user's *role* and *assignment* type from the dropdown menus.
-
-   ![Screenshot showing user role and assignment type dropdown menus.](media/add-backup-billing-manager/choose-role-and-select-an-assignment-type.png)
-
-6. Select a user or group by entering their *name* or *email alias*. (Select a device by entering its *name*.)
-
-   ![Screenshot showing selected member name and email alias.](media/add-backup-billing-manager/add-permissions-select-member-choose-save.png)
-
-7. Choose **Save**, once you're done with your update.
-
-Now you have a user who can [set up](set-up-billing-for-your-organization-vs.md) or [change billing](change-azure-subscription.md) for your organization.
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot of Add co-administrator pop-out pane.](media/add-backup-billing-manager/select-user-add.png)
 
 > [!NOTE]
 > The user must accept their email invitation before they can access the Azure subscription, if they aren't in your directory.

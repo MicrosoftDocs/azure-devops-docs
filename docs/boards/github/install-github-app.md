@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/03/2023
+ms.date: 03/01/2024
 ---
 
 # Install the Azure Boards app for GitHub  
@@ -21,7 +21,7 @@ For an overview of the integration that the Azure Boards app for GitHub supports
 ## Prerequisites 
 
 * To install the Azure Boards app, you must be an administrator or owner of the GitHub organization.
-* To connect to the Azure Boards project, you must have read permission to the GitHub repository. Also, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). If you created the project, then you have permissions. 
+* To connect to the Azure Boards project, you must have **Read** permissions for the GitHub repository. Also, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). If you created the project, then you have permissions. 
 
 > [!IMPORTANT]  
 > If your repository is already connected via another authentication type such as OAuth, you must remove that repository from your existing connection before you re-connect it via the GitHub App. Follow the steps provided in [Add or remove GitHub repositories](#add-remove-repos) later in this article before you configure the GitHub App.
@@ -42,7 +42,7 @@ Do the following steps to grant organization access.
 
    :::image type="content" source="media/troubleshoot/open-azure-boards.png" alt-text="Screenshot of Authorized OAuth Apps tab, choose Azure Boards.":::   
 
-4. Under **Organization access**, resolve any issues that may appear. Select **Grant** to grant access to any organizations that show as having an **Access request pending**. 
+4. Under **Organization access**, resolve any issues that might appear. Select **Grant** to grant access to any organizations that show as having an **Access request pending**. 
 
    :::image type="content" source="media/troubleshoot/organization-access-issues.png" alt-text="Screenshot of Organization access with organizations without access.":::	
 
@@ -62,13 +62,13 @@ Do the following steps to grant organization access.
 
 4. Choose the repositories that you want to connect to Azure Boards. 
 
-   Here we choose to connect to all repositories.
+   In the following example, we choose to connect to all repositories.
    
    :::image type="content" source="media/github-app/install-options.png" alt-text="Screenshot showing all repositories selected.":::
 
 5. Choose the Azure DevOps organization and Azure Boards project you want to connect to GitHub.com.
 
-   :::image type="content" source="media/github-app/choose-azure-boards-project.png" alt-text="Screenshot of Setup your Azure Boards project dialog.":::
+   :::image type="content" source="media/github-app/choose-azure-boards-project.png" alt-text="Screenshot of setting up connection dialog.":::
 
 	You can only connect one project at a time. If you have other projects you want to connect, you can do that later as described in [Configure other projects or repositories](#configure) later in this article.
 
@@ -84,39 +84,35 @@ Do the following steps to grant organization access.
 
 ## Use the connection 
 
-At this point, your Azure Boards-GitHub integration is complete. You can skip the next steps or run through them to understand the features supported with the connection.  
+At this point, your Azure Boards-GitHub integration is complete. You can skip the next steps or go through them to understand the features supported with the connection.  
 
-1. Select **Create** to add a work item&mdash;Issue (Basic), User Story (Agile), or Product Backlog Item (Scrum)&mdash;depending on the process model used by your Azure Boards project. 
+1. On your board, select **New item** to enter a new work item named "Add badge to README"&mdash;Issue (Basic), User Story (Agile), or Product Backlog Item (Scrum)&mdash;depending on the process model used by your Azure Boards project. 
 
-   :::image type="content" source="media/github-app/get-started-success.png" alt-text="Screenshot of the Get started, Create issue dialog.":::
+	A work item titled *Add badge to README* appears on your board. 
 
-	A work item titled *Add badge to README* appears on your Azure Boards. 
+2. Open your work item and select **pull request** under **Add link**.
+3. Select the repository and enter the pull request ID and an optional comment.
+4. Select **Add link**.
 
-2. Select **Create and link a pull request**. 
+   :::image type="content" source="media/troubleshoot/add-link-to-pull-request.png" alt-text="Screenshot of Add link action in user story, showing repository selection and empty boxes for input of pull request ID and optional comment."::: 
 
-   :::image type="content" source="media/github-app/get-started-issue-created.png" alt-text="Success screenshot, GitHub repo is connected to Azure Boards.":::
-
-	This step runs the following actions in the background:  
-	- Adds a badge to the README file of the first repository in the list of connected GitHub repositories  
-	- Creates a GitHub commit for the update made by adding the badge to the README file
-	- Creates a GitHub pull request to merge the changes made to the README file  
+	The following actions occur in the background.  
+	- Adds a badge to the README file of the first repository in the list of connected GitHub repositories.  
+	- Creates a GitHub commit for the update made by adding the badge to the README file.
+	- Creates a GitHub pull request to merge the changes made to the README file.  
 	- Links the GitHub commit and pull request to the work item created in step 1.  
 
-3. Select **View work item** to open the work item you created in step 1. Note the links under the **Development** section that correspond to the commit and pull request created in GitHub.com
+5. Select the first pull request link from your work item.
 
-   :::image type="content" source="media/github-app/get-started-view-work-item.png" alt-text="Screenshot of viewing work item.":::
+   :::image type="content" source="media/github-app/issue-add-badge.png" alt-text="Screenshot of issue form for pull request opened in GitHub.":::
 
-4.	Choose the pull request link, the first link in the list, to open the pull request in GitHub.  
+   The GitHub pull request opens in a new browser tab.
 
-	The GitHub pull request opens in a new browser tab.
+6. Select **Merge pull request**.
 
-   :::image type="content" source="media/github-app/issue-add-badge.png" alt-text="Screenshot of issue form.":::
+   :::image type="content" source="media/github-app/git-hub-pr-for-badge-b.png" alt-text="Screenshot of example pull request in GitHub."::: 
 
-5. Complete the pull request.
-
-   :::image type="content" source="media/github-app/git-hub-pr-for-badge-b.png" alt-text="Screenshot of example PR."::: 
-
-6. Go to your repository README file and view the badge that was added. 
+7. Go to your repository README file and view the badge that was added. 
 
    :::image type="content" source="media/github-app/readme-file-with-badge.png" alt-text="Screenshot of GitHub repo with badge added.":::
 
@@ -197,9 +193,9 @@ If you encounter a problem with a connection, we recommend that you remove the c
 
 ## Update Azure Boards-GitHub connections
  
-If you change the repositories that the Azure Boards app for GitHub supports, you may be redirected to Azure Boards GitHub connections. A good practice is to remove the repositories in Azure Boards that can no longer connect to GitHub. For more information, see [Add or remove GitHub repositories](#add-remove-repos).
+If you change the repositories that the Azure Boards app for GitHub supports, you might get redirected to Azure Boards GitHub connections. A good practice is to remove the repositories in Azure Boards that can no longer connect to GitHub. For more information, see [Add or remove GitHub repositories](#add-remove-repos).
 
-If you uninstall the Azure Boards app for GitHub, you'll see the following message in Azure Boards, **Project Settings>GitHub** Connections. Choose **Remove connection** to remove all GitHub connections that have been previously made. See also, [Add or remove GitHub repositories](#add-remove-repos). 
+If you uninstall the Azure Boards app for GitHub, the following message displays in Azure Boards, **Project settings** > **GitHub** connections. Choose **Remove connection** to remove all previously made GitHub connections. For more information, see [Add/remove GitHub repositories](#add-remove-repos). 
 
 :::image type="content" source="media/change-repo-access/boards-remove-connection.png" alt-text="Screenshot of uninstalled Azure Boards GitHub app.":::
 

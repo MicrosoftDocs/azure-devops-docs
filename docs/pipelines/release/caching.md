@@ -75,7 +75,7 @@ Here's an example showing how to cache dependencies installed by Yarn:
 
 ```yaml
 variables:
-  YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
+  YARN_CACHE_FOLDER: $(Pipeline.Workspace)/s/.yarn
 
 steps:
 - task: Cache@2
@@ -92,10 +92,14 @@ steps:
 
 In this example, the cache key contains three parts: a static string ("yarn"), the OS the job is running on since this cache is unique per operating system, and the hash of the `yarn.lock` file that uniquely identifies the set of dependencies in the cache.
 
-On the first run after the task is added, the cache step will report a "cache miss" since the cache identified by this key doesn't exist. After the last step, a cache will be created from the files in `$(Pipeline.Workspace)/.yarn` and uploaded. On the next run, the cache step will report a "cache hit" and the contents of the cache will be downloaded and restored.
+On the first run after the task is added, the cache step will report a "cache miss" since the cache identified by this key doesn't exist. After the last step, a cache will be created from the files in `$(Pipeline.Workspace)/s/.yarn` and uploaded. On the next run, the cache step will report a "cache hit" and the contents of the cache will be downloaded and restored.
+
+When using `checkout: self`, the repository is checked out to `$(Pipeline.Workspace)/s`, and your `.yarn` folder usually resides in the repository itself.
 
 > [!NOTE]
 > `Pipeline.Workspace` is the local path on the agent running your pipeline where all directories are created. This variable has the same value as `Agent.BuildDirectory`.
+> 
+> Ensure you update the variable `YARN_CACHE_FOLDER` if using anything other than `checkout: self` as this should point to the repository where `.yarn` resides.
 
 #### Restore keys
 
