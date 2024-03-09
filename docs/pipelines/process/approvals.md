@@ -1,6 +1,6 @@
 ---
 title: Pipeline deployment approvals
-description: Use approvals to determine when a deployment stage can run
+description: Use approvals to determine when a deployment stage can run.
 ms.topic: conceptual
 ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.author: sandrica
@@ -15,12 +15,24 @@ monikerRange: ">= azure-devops-2020"
 
 A pipeline is made up of stages. A pipeline author can control whether a stage should run by defining [conditions](conditions.md) on the stage. Another way to control if and when a stage should run is through **approvals and checks**. 
 
- Pipelines rely on resources such as environments, service connections, agent pools, variable groups, and secure files. Checks enable the _resource owner_ to control if and when a stage in any pipeline can consume a resource. As an owner of a resource, you can define checks that must be satisfied before a stage consuming that resource can start. For example, a _manual approval check_ on an [environment](environments.md) would ensure that deployment to that environment only happens after the designated user(s) has reviewed the changes being deployed. 
+Approvals and other checks aren't defined in the yaml file. Users modifying the pipeline yaml file can't modify the checks performed before start of a stage. Administrators of resources manage checks using the web interface of Azure Pipelines.
 
-A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. Checks are reevaluated based on the retry interval specified in each check. If all checks aren't successful until the **timeout** specified, then that stage isn't executed.
+Pipelines rely on resources such as environments, service connections, agent pools, variable groups, and secure files. Checks enable the _resource owner_ to control if and when a stage in any pipeline can consume a resource. As an owner of a resource, you can define checks that must be satisfied before a stage consuming that resource can start. For example, a _manual approval check_ on an [environment](environments.md) ensures that deployment to that environment only happens after the designated user  reviews the changes being deployed. 
+
+A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. 
+
+There are five categories of approvals and checks and they run in the order they were created within each category. Checks are reevaluated based on the retry interval specified in each check. If all checks aren't successful until the **timeout** specified, then that stage isn't executed.
 If any of the checks terminally fails (for example, if you reject an approval on one of the resources), then that stage isn't executed. However, you can retry a stage when approvals and checks time out.
 
-Approvals and other checks aren't defined in the yaml file. Users modifying the pipeline yaml file can't modify the checks performed before start of a stage. Administrators of resources manage checks using the web interface of Azure Pipelines.
+Static checks run first and then pre-check approvals run. The categories in order are:
+
+1. Static checks: Branch control, Required template, and Evaluate artifact
+2. Pre-check approvals
+3. Dynamic checks: Approval, Invoke Azure Function, Invoke REST API, Business Hours, Query Azure Monitor alerts
+4. Post-check approvals
+5. Exclusive lock 
+
+You can also see the execution order on the **Approvals and checks** tab.
 
 > [!IMPORTANT]
 > Checks can be configured on environments, service connections, repositories, variable groups, secure files, and agent pools.
@@ -51,8 +63,27 @@ You can manually control when a stage should run using approval and checks. This
 
     :::image type="content" source="media/approval-prompt.png" alt-text="A screenshot showing the approval prompt window.":::
 
+The list of users who can review an Approval is fixed at the time approvals & checks start running. That is, changes to the list of users and groups of an approval check done after checks start executing aren't picked up.
+
 > [!NOTE]
 > If a group is designated as an approver, only one user within the group needs to approve for the run to proceed.
+
+### Deferred approvals
+
+There are situations when the time when an approval is given and the time the deployment should start don't match. For example, you might want to wait to deploy a new release until a low-traffic time in the evening. 
+
+To address this scenario, you can defer an approval and set the time the approval becomes effective. 
+
+1. Select **Defer approval**. 
+
+    :::image type="content" source="media/defer-approval.png" alt-text="Screenshot of defer approval option when you respond to an approval request. ":::
+
+1. Set the approval time. 
+
+    :::image type="content" source="media/defer-approval-set-time.png" alt-text="Screenshot of setting the time for an approval. ":::
+
+You'll see the approval in the **Checks** panel as a pre-approval. The approval will be effective at the set time. 
+
 
 ## Branch control
 
@@ -169,12 +200,12 @@ When you bypass a check, you'll see who bypassed the check in the checks panel.
 
 ## Evaluate artifact
 
-You can evaluate artifact(s) to be deployed to an environment against custom policies.
+You can evaluate artifacts to be deployed to an environment against custom policies.
 
 > [!NOTE]
 > Currently, this works with container image artifacts only
 
-To define a custom policy evaluation over the artifact(s), follow the below steps.
+To define a custom policy evaluation over the artifacts, follow the below steps.
 
 1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. Learn more about [creating an environment](environments.md).
 
@@ -189,7 +220,7 @@ To define a custom policy evaluation over the artifact(s), follow the below step
     
     :::image type="content" source="media/checks/evaluate-artifact.png" alt-text="Add evaluate artifact check.":::
    
-4. Paste the policy definition and click **Save**. [See more](artifact-policy.md) about writing policy definitions.
+4. Paste the policy definition and select **Save**. [See more](artifact-policy.md) about writing policy definitions.
 
     :::image type="content" source="media/checks/policy-definition.png" alt-text="Add policy definition.":::
  
@@ -217,7 +248,7 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 :::moniker range="> azure-devops-2020"
 
-The **exclusive lock** check allows only a single run from the pipeline to proceed. All stages in all runs of that pipeline that use the resource are paused. When the stage using the lock completes, then another stage can proceed to use the resource. Also, only one stage will be allowed to continue.
+The **exclusive lock** check allows only a single run from the pipeline to proceed. All stages in all runs of that pipeline that use the resource are paused. When the stage using the lock completes, then another stage can proceed to use the resource. Also, only one stage is allowed to continue.
 
 The behavior of any other stages that attempt to take a lock is configured by the `lockBehavior` value that is configured in the YAML file for the pipeline.
 
@@ -261,7 +292,7 @@ If you don't specify a `lockBehavior`, the default value of `runLatest` is used.
 The **exclusive lock** check allows only a single run from the pipeline to proceed.
 All stages in all runs of that pipeline that use the resource are paused.
 When the stage using the lock completes, then another stage can proceed to use the resource.
-Also, only one stage will be allowed to continue.
+Also, only one stage is allowed to continue.
 Any other stages that tried to take the lock will be canceled.
 
 :::moniker-end
@@ -312,18 +343,18 @@ In this execution:
 - At minute 14, _Sync Check 2_ is retried and succeeds. The pass decision is valid for 7 minutes. If _Sync Check 1_ doesn't pass in this time interval, _Sync Check 2_ will be retried.
 - At minute 15, _Sync Check 1_ is retried and succeeds. Now, both checks pass, so the pipeline is allowed to continue to deploy the stage.
 
-Let us look at an example that involves an approval and a synchronous check. Imagine you configured a synchronous check and an approval for a service connection with a _Time between evaluations_ of 5 minutes. Until the approval is given, your check will run every 5 minutes, regardless of decision.
+Let us look at an example that involves an approval and a synchronous check. Imagine you configured a synchronous check and an approval for a service connection with a _Time between evaluations_ of 5 minutes. Until the approval is given, your check runs every 5 minutes, regardless of decision.
 
 ## FAQ
 
-### The checks defined did not start. What happened?
+### The checks defined didn't start. What happened?
 The evaluation of checks starts once the stage conditions are satisfied. You should confirm run of the stage started after the checks were added on the resource and that the resource is consumed in the stage.
 
 ### How can I use checks for scheduling a stage?
 Using the business hours check, you can control the time for start of stage execution. You can achieve the same behavior as [predefined schedule on a stage](../release/triggers.md#scheduled-release-triggers) in designer releases. 
 
 ### How can I take advance approvals for a stage scheduled to run in future?
-This scenario can be enabled 
+This scenario can be enabled. 
 1.	The business hours check enables all stages deploying to a resource to be scheduled for execution between the time window
 2.	When approvals are configured on the same resource, the stage would wait for approvals before starting.
 3.	You can configure both the checks on a resource. The stage would wait on approvals and business hours. It would start in the next scheduled window after approvals are complete. 
