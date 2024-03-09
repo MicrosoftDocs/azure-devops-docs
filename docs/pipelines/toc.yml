@@ -225,8 +225,6 @@
   - name: Anaconda
     displayName: data science, python, miniconda, conda
     href: ecosystems/anaconda.md
-  - name: C/C++
-    href: apps/windows/cpp.md
   - name: Java
     items:
     - name: Java apps

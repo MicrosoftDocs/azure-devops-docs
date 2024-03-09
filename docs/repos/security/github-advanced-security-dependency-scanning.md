@@ -53,7 +53,7 @@ Dependency scanning supports both direct and transitive dependencies for all sup
 
 ### About dependency scanning alerts 
 
-The Advanced Security tab in Repos in Azure DevOps is the hub to view your security alerts, which by default shows dependency scanning alerts. You can filter by branch, pipeline, package, and severity. You can select into an alert for more details, including remediation guidance.  
+The Advanced Security tab in Repos in Azure DevOps is the hub to view your security alerts, which by default shows dependency scanning alerts. You can filter by branch, pipeline, package, and severity. You can select into an alert for more details, including remediation guidance. At this time, the alerts hub does not display alerts for scanning completed on PR branches.
 
 When a vulnerable package is detected in your repository, fixing dependency scanning alerts typically involves upgrading to a higher package version or removing an offending package. This advice holds true for both direct and transitive (or indirect) dependencies. The default view in your Advanced Security tab is active alerts for the default branch for your repository.
 
@@ -128,13 +128,9 @@ By default, the alerts page shows dependency scanning results for the default br
 The status of an alert reflects the state for the default branch and latest run pipeline, even if the alert exists on other branches and pipelines. 
 
 ### Fixing dependency scanning alerts 
-A direct dependency is a component that you have explicitly included in your repository. A transitive or indirect dependency is a component that utilized by a direct dependency. Regardless of whether the vulnerability is found in a direct or transitive dependency, your project is still vulnerable.  
-
 A direct dependency is a component that you have in your repository. A transitive or indirect dependency is a component that gets used by a direct dependency. Your project is still vulnerable regardless of whether the vulnerability is found in a direct or transitive dependency.
 
 Fixing a vulnerable transitive dependency usually takes the form of explicitly overriding the version of the vulnerable component used for each identified direct dependency. Once the root dependencies have upgraded their use of the vulnerable component to a safe version, you can upgrade each root dependency rather than multiple individual overrides.  
-
-To fix a vulnerable transitive dependency, override the version of the vulnerable component used for each identified direct dependency. Once the root dependencies upgrade their use of the vulnerable component to a safe version, you can upgrade each root dependency rather than have multiple individual overrides.  
 
 #### Updating dependencies for Yarn/Npm 
 

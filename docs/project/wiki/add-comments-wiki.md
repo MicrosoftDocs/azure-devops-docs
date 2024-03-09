@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= azure-devops-2020'
-ms.date: 11/21/2023
+ms.date: 02/26/2024
 ---
 
 # Add comments to wiki pages
@@ -33,7 +33,7 @@ When you add a Markdown-based comment, there's a Markdown editor and preview tab
 
 ## Edit or delete a comment
 
-Edit or delete any comments that you added to a wiki.
+Edit or delete any comments that you added to a wiki. You can't edit or delete comments made by other users.
 
 ![Screenshot of Edit or delete wiki comment.](media/wiki/wiki-comment.png)
 
@@ -41,5 +41,4 @@ Edit or delete any comments that you added to a wiki.
 
 - [Follow wiki pages, get notifications](follow-notifications-wiki-pages.md)
 - [Create and embed a work item from wiki content](create-embed-wit-from-wiki.md)
-- [Markdown guidance](markdown-guidance.md)
-- [Wiki Markdown guidance](markdown-guidance.md)
+- [Get Markdown guidance](markdown-guidance.md)
