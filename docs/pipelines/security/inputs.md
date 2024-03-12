@@ -3,7 +3,7 @@ title: Recommendations to secure variables and parameters in a pipeline
 description: Find out how to safely accept input from pipeline users.
 ms.assetid: ada3e166-c606-48b3-8e5e-7d83b1c1c962
 ms.reviewer: vijayma
-ms.date: 01/09/2023
+ms.date: 03/12/2024
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -14,16 +14,19 @@ monikerRange: '> azure-devops-2019'
 This article discusses how to securely use variables and parameters to gather input from pipeline users. If you'd like to learn more about using variables and parameters, see:
 
 * [Define variables](../process/variables.md)
+* [Set secret variables](../process/set-secret-variables.md)
 * [Use predefined variables](../build/variables.md)
 * [Use runtime parameters](../process/runtime-parameters.md)
 * [Template types & usage](../process/templates.md)
 
+Use caution with secret variables. The recommended ways to set secret variables are in the UI, in a variable group, and in a variable group from Azure Key Vault. For more information, see [set secret variables](../process/set-secret-variables.md).
+
 ## Variables
 
 Variables can be a convenient way to collect information from the user up front. 
-You can also use variables to pass data from step to step within a pipeline.
+You can also use variables to pass data from step to step within a pipeline. 
 
-But use variables with caution. Newly created variables, whether they're defined in YAML or written by a script, are read-write by default. A downstream step can change the value of a variable in a way that you don't expect.
+But use variables with caution. Newly created variables, whether they're defined in YAML or written by a script, are read-write by default. A downstream step can change the value of a variable in a way that you don't expect. 
 
 For instance, your script reads:
 
