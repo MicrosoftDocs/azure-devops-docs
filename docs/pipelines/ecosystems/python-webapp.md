@@ -5,7 +5,6 @@ ms.topic: how-to
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.author: jukullam
 author: juliakm
-ms.date: 03/15/2024
 monikerRange: '>= azure-devops-2020 <= azure-devops'
 ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2, arm2024
 
@@ -243,7 +242,7 @@ A service connection allows you to create a connection to provide authenticated 
 1. Select **Create service connection**.
 1. Select **Azure Resource Manager** and select **Next**. 
 
-    :::image type="content" source="../media/service-connection-type-devops-services.png" alt-text="Select Azure Resource Manager service connection.":::
+    :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Select Azure Resource Manager service connection.":::
 
 1. If your organization uses an authentication method such as Microsoft Entra Workload identity federation or a service principal, you see a dialog to select the method. Select the **Authentication method** you want to use and select **Next**.
 1. Enter the following information in the **Add an Azure Resource Manager service connection** dialog.
@@ -267,7 +266,7 @@ A service connection allows you to create a connection to provide authenticated 
 
 1. Select **Azure Resource Manager** and select **Next**. 
 
-    :::image type="content" source="../media/service-connection-type-devops-services.png" alt-text="Select Azure Resource Manager service connection.":::
+    :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Select Azure Resource Manager service connection.":::
 
 1. On **New Azure service connection**, select **Next**.
 1. For Scope level, select **Subscription**.
@@ -334,7 +333,7 @@ If you already have the Python version you want to use on the machine hosting yo
 
 1. On the left navigation menu, select **Pipelines**.
 
-    :::image type="content" source="media/python/select-pipelines.png" alt-text="Selecting Pipelines on the project dashboard.":::
+    :::image type="content" source="../media/python/select-pipelines.png" alt-text="Selecting Pipelines on the project dashboard.":::
 
 1. Select **Create Pipeline**.
 
@@ -783,11 +782,11 @@ You're now ready to try it out!
 
 You can watch the pipeline as it runs by selecting the Stages or Jobs in the pipeline run summary. 
 
-:::image type="content" source="../media/python/pipeline-summary-stages-section" alt-text="{alt-text}":::
+:::image type="content" source="../media/python/pipeline-summary-stages-section.png" alt-text="{alt-text}":::
 
 There are green check marks next to each stage and job as it completes successfully. If errors occur, they're displayed in the summary or in the job steps. You can quickly return to the YAML editor by selecting the vertical dots at the upper right of the **Summary** page and selecting **Edit pipeline**:
 
-   :::image type="content" source="../media/python/edit-pipeline-command.pn" alt-text="Edit pipeline comment from a build report.":::
+   :::image type="content" source="../media/python/edit-pipeline-command.png" alt-text="Edit pipeline comment from a build report.":::
 
 1. From the deployment job, select the **Deploy Azure Web App** task to display its output. To visit the deployed site, hold down the <kbd>Ctrl</kbd> and select the URL after `App Service Application URL`.
 
