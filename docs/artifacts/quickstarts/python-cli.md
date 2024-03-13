@@ -33,8 +33,8 @@ To run the following steps, you must have:
 * An Azure DevOps organization. [Create one for free](../../pipelines/get-started/pipelines-sign-up.md).
 * A personal access token (PAT) with **Packaging** > **Read** scope. To create one, see [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
 * An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
-* Python 3.8 or later installed on your local machine. [Download Python here](https://www.python.org/downloads).
-* pip 19.2 and twine 1.13.0 or higher.
+* Python 3.9 or later installed on your local machine. [Download Python here](https://www.python.org/downloads).
+* pip 24.0 and twine 5.0.0 or higher.
 * A Python package to publish from your local machine to your feed.
 * If using the sample Python package:
     * A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
@@ -48,8 +48,8 @@ To run the following steps, you must have:
 * Access to an Azure DevOps Server collection.
 * A personal access token (PAT) with **Packaging** > **Read** scope. To create one, see [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
 * An Azure DevOps project. If you don't have one, [create a project](../../organizations/projects/create-project.md).
-* Python 3.8 or later installed in your local development environment.
-* pip 19.2 and twine 1.13.0 or higher.
+* Python 3.9 or later installed in your local development environment.
+* pip 24.0 and twine 5.0.0 or higher.
 * If using the sample Python package:
     * A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
     * git installed on your local machine. 
