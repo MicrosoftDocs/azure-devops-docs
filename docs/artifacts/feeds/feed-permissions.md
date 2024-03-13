@@ -98,7 +98,7 @@ Use the following steps to allow users and groups to manage access to your feed.
 
 ## Feed views settings
 
-Feed views enable users to share certain packages while keeping others private. A common scenario for using a feed view is sharing a package version is tested and validated but keeping packages under development private.
+Feed views enable users to share certain packages while keeping others private. A common scenario for using a feed view is sharing a package version that is tested and validated while keeping packages under development private.
 
 By default, there are three views in a feed: **@local**, **@prerelease**, and **@release** view. The latter two are suggested views that you can rename or delete as desired. The **@local** view is the default view and it includes all the packages published to the feed and all the packages downloaded from upstream sources.
 
