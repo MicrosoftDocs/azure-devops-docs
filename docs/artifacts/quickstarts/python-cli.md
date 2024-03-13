@@ -149,7 +149,7 @@ You can publish Python packages to your feed using the artifacts-keyring package
 
  1. Select **twine** and copy the repository URL from the **Project setup** section.
  
-   :::image type="content" source="./media/screenshot-twine-connect-to-feed-url.png" alt-text="A screenshot of instructions to connect to feed with twine.":::
+       :::image type="content" source="./media/screenshot-twine-connect-to-feed-url.png" alt-text="A screenshot of instructions to connect to feed with twine.":::
 
 1. To publish a package to your feed, run the following command replacing \<FEED_URL\> with the repository URL you copied from the **Connect to feed** dialog:
     
