@@ -20,7 +20,8 @@ In this article, you learn how to:
 
 > [!div class="checklist"]
 > * Create a web app in Azure App Service.
-> * Create an Azure DevOps project and connect it to Azure.
+> * Create a project in Azure DevOps.
+> * Connect your DevOps project to Azure.
 > * Create a Python-specific pipeline.
 > * Run the pipeline to build and deploy your app to your web app in App Service.
 
@@ -31,7 +32,7 @@ In this article, you learn how to:
 * An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * A GitHub account. If you don't have one, [create one for free](https://github.com).
 * An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md).
-* An Azure DevOps project. For more information, see [Create a project](../../organizations/projects/create-project.md).
+
 
 ::: moniker-end
 
@@ -40,7 +41,6 @@ In this article, you learn how to:
 * An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * A GitHub account. If you don't have one, [create one for free](https://github.com).
 * An Azure DevOps collection.
-* An Azure DevOps project. For more information, see [Create a project](../../organizations/projects/create-project.md).
 * A self-hosted agent. If you need to create a self-hosted agent, see [Self-hosted agents](../agents/agents.md#self-hosted-agents). 
 
 ::: moniker-end
@@ -72,7 +72,7 @@ export set FLASK_APP=hello_app.webapp
 python3 -m flask run
 ```
 
-# [Windows PowerShell](#tab/windows-powershell)
+# [PowerShell](#tab/windows-powershell)
 
 ```powershell
 py -m venv .env
@@ -86,7 +86,7 @@ flask run
 
 To view the app, open a browser window and go to *http://localhost:5000*. Verify that you see the title `Visual Studio Flask Tutorial`. 
 
-When you're finished, close the browser window and stop the Flask server with `Ctrl-C`.
+When you're finished, close the browser window and stop the Flask server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 ### Open a Cloud Shell
 
@@ -105,10 +105,10 @@ When you're finished, close the browser window and stop the Flask server with `C
 
 ### Create an Azure App Service web app
 
-Create your Azure App Service web app from the Cloud Shell in the Azure portal. Use [az webapp up](/cli/azure/webapp#az-webapp-up) to both provision the App Service and do the first deployment of your app.
+Create your Azure App Service web app from the Cloud Shell in the Azure portal. 
 
 > [!TIP]
-> To paste into the Cloud Shell, use **Ctrl-Shift-V**, or right-click and select **Paste** from the context menu.
+> To paste into the Cloud Shell, use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> or right-click and select **Paste** from the context menu.
 
 1. Clone your repository with the following command, replacing `<repository-url>` with the URL of your forked repository.
 
@@ -123,13 +123,13 @@ Create your Azure App Service web app from the Cloud Shell in the Azure portal. 
    cd python-sample-vscode-flask-tutorial
    ```
 
-1. Use `az webapp up` to create an App Service and initially deploy your app. Replace `<your-web-app-name>` with a name that is unique across Azure. Typically, you use a personal or company name along with an app identifier, such as `<your-name>-flaskpipelines`. The app URL becomes *\<your-appservice>.azurewebsites.net*.
+1. Use the [az webapp up](/cli/azure/webapp#az-webapp-up) command to both provision the App Service and do the first deployment of your app.. Replace `<your-web-app-name>` with a name that is unique across Azure. Typically, you use a personal or company name along with an app identifier, such as `<your-name>-flaskpipelines`. The app URL becomes *\<your-appservice>.azurewebsites.net*.
 
    ```azurecli
    az webapp up --name <your-web-app-name>
    ```
 
-1. The JSON output of the `az webapp up` command shows:
+    The JSON output of the `az webapp up` command shows:
 
     ```json
     {
@@ -187,7 +187,6 @@ Create your Azure App Service web app from the Cloud Shell in the Azure portal. 
 1. Enter a **Project name**.
 1. Select the **Visibility** for your project.
 1. Select **Create**.
-1. Enter a project name and select **Create**.
 
 ::: moniker-end
 
@@ -196,7 +195,9 @@ Create your Azure App Service web app from the Cloud Shell in the Azure portal. 
 1. In a browser, go your Azure DevOps Server.
 1. Select your collection.
 1. Create a new project by selecting **New project** or **Create project** if creating the first project in the collection.
-1. Enter a **Project name** and select **Create**.
+1. Enter a **Project name**.
+1. Select the **Visibility** for your project.
+1. Select **Create**.
 
 ::: moniker-end
 
@@ -238,24 +239,28 @@ A service connection allows you to create a connection to provide authenticated 
 
     :::image type="content" source="../media/python/project-settings.png" alt-text="Project settings command on the project dashboard.":::
 
- 1. On the **Project Settings** page, select **Service connections** in the **Pipelines** section of the menu.
+1. On the **Project Settings** page, select **Service connections** in the **Pipelines** section of the menu.
 1. Select **Create service connection**.
 1. Select **Azure Resource Manager** and select **Next**. 
 
     :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Select Azure Resource Manager service connection.":::
 
-1. If your organization uses an authentication method such as Microsoft Entra Workload identity federation or a service principal, you see a dialog to select the method. Select the **Authentication method** you want to use and select **Next**.
-1. Enter the following information in the **Add an Azure Resource Manager service connection** dialog.
-   1. For **Scope level**, select **Subscription**.
-   1. Select the subscription for your App Service from the **Subscription** dropdown list. 
-   1. If you're using username and password to authenticate, a browser window opens for you to sign in to your Microsoft account.
-   1. Under **Resource Group**, select web apps' resource group from the dropdown list. 
-   1. Enter a descriptive connection name. Make note of the name to use later in the pipeline.
-   1. Select **Grant access permissions to all pipelines** and select **Save**.
+1. Select your authentication method and select **Next**. 
+1. In the **New Azure service connection** dialog, enter the information specific to the selected authentication method.  For more information about authentication methods, see [Service connections](../library/connect-to-azure.md#service-connections).
   
+    For example, if you're using a **Workload Identity federcation (automatic)** or **Service principal (automatic)** authentication method, enter the following information
+
+    |**Field**|**Description**|
+    |--|--|
+    |**Scope level**| Select **Subscription**.|
+    |**Subscription**| The name of your Azure subscription.|
+    |**Resource group**| The name of the resource group containing your web app.|
+    |**Service connection name**| A descriptive name for the connection.|
+    |**Grant access permissions to all pipelines**| Select this option to grant access to all pipelines.|
+ 
     :::image type="content" source="../media/azure-service-connection-settings-devops-services.png" alt-text="New service connection dialog box.":::
 
-   The new connection appears in the **Service connections** list, and is ready for Azure Pipelines to use from the project.
+   The new connection appears in the **Service connections** list, and is ready for use in your Azure Pipeline.
 
 ::: moniker-end
 
@@ -341,7 +346,7 @@ If you already have the Python version you want to use on the machine hosting yo
 
 1. In the **Where is your code** dialog, select **GitHub**. You might be prompted to sign into GitHub.
 
-   ::: image type="content" source="../media/python/where-is-your-code.png" alt-text="Screenshot of select GitHub as the location of your code." :::
+    :::image type="content" source="../media/python/where-is-your-code.png" alt-text="Screenshot of select GitHub as the location of your code.":::
 
 1. On the **Select a repository** screen, select the forked sample repository.
 
@@ -377,7 +382,7 @@ Azure Pipelines creates a **azure-pipelines.yml** file and displays it in the YA
 
 1. In the **Where is your code** dialog, select **GitHub Enterprise Server**. You might be prompted to sign into GitHub.
 
-   ::: image type="content" source="../media/python/where-is-your-code-devops-server.png" alt-text="Screenshot of select GitHub as the location of your code." :::
+    :::image type="content" source="../media/python/where-is-your-code.png" alt-text="Screenshot of select GitHub as the location of your code.":::
 
 1. On the **Select a repository** tab, select the forked sample repository. 
 
