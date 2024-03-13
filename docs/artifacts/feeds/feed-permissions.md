@@ -62,7 +62,7 @@ Use the following steps to allow users and groups to manage access to your feed.
 
 1. Select **Permissions**, and then select **Add user/group**.
 
-    :::image type="content" source="media/editfeeddialog1.png" alt-text="A screenshot showing feed permission in TFS.":::
+    :::image type="content" source="media/editfeeddialog1.png" alt-text="A screenshot showing feed permission.":::
 
 1. Add users/groups and choose their appropriate **Role**.
 
