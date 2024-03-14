@@ -31,7 +31,7 @@ In this article, you learn how to:
 
 * An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * A GitHub account. If you don't have one, [create one for free](https://github.com).
-* An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md).
+* An Azure DevOps Services organization. [Create one for free](../get-started/pipelines-sign-up.md).
 
 ::: moniker-end
 
@@ -39,7 +39,7 @@ In this article, you learn how to:
 
 * An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * A GitHub account. If you don't have one, [create one for free](https://github.com).
-* An Azure DevOps collection.
+* An Azure DevOps Server.
 * A self-hosted agent. If you need to create a self-hosted agent, see [Self-hosted agents](../agents/agents.md#self-hosted-agents). 
 
 ::: moniker-end
@@ -176,27 +176,7 @@ Create your Azure App Service web app from the Cloud Shell in the Azure portal.
 
 ## Create an Azure DevOps project
 
-::: moniker range=">=azure-devops"
-
-1. In a browser, go to [dev.azure.com](https://dev.azure.com) and sign in.
-1. Select your organization.
-1. Create a new project by selecting **New project** or **Create project** if creating the first project in the organization.
-1. Enter a **Project name**.
-1. Select the **Visibility** for your project.
-1. Select **Create**.
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-1. In a browser, go to your Azure DevOps Server.
-1. Select your collection.
-1. Create a new project by selecting **New project** or **Create project** if creating the first project in the collection.
-1. Enter a **Project name**.
-1. Select the **Visibility** for your project.
-1. Select **Create**.
-
-::: moniker-end
+[!INCLUDE [create-project](./includes/create-project.md)]
 
 ::: moniker range="< azure-devops"
 
