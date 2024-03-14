@@ -242,7 +242,7 @@ A service connection allows you to create a connection to provide authenticated 
     :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Select Azure Resource Manager service connection.":::
 
 1. Select your authentication method and select **Next**. 
-1. In the **New Azure service connection** dialog, enter the information specific to the selected authentication method. For more information about authentication methods, see [Service connections](../library/connect-to-azure.md#service-connections).
+1. In the **New Azure service connection** dialog, enter the information specific to the selected authentication method. For more information about authentication methods, see [Connect to Azure by using an Azure Resource Manager service connection](../library/connect-to-azure.md).
   
     For example, if you're using a **Workload Identity federation (automatic)** or **Service principal (automatic)** authentication method, enter the following information
 
