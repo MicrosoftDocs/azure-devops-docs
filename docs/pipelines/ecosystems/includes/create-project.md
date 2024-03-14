@@ -5,6 +5,7 @@ ms.manager: mijacobs
 ms.author: jukullam
 author: v-catherbund
 ms.custom: devdivchpfy22
+monikerRange: '>= azure-devops-2020 <= azure-devops'
 ---
 
 ::: moniker range=">=azure-devops"
@@ -28,4 +29,3 @@ ms.custom: devdivchpfy22
 1. Select **Create**.
 
 ::: moniker-end
-
