@@ -1,6 +1,6 @@
 ---
 title: Configure permissions
-description: How to configure permissions for Artifacts feeds, views, and pipelines access
+description: How to configure permissions for Artifacts feeds, views, and pipelines access.
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
@@ -17,16 +17,18 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 ## Azure Artifacts settings
 
+Use the following steps to allow users and groups to manage access to your feed.
+
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the Azure Artifacts settings icon on the right.
+1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the Azure Artifacts settings icon.
 
     :::image type="content" source="media/configure-artifacts-settings.png" alt-text="A screenshot showing how to access Azure Artifacts settings.":::
 
     > [!NOTE]
     > By default, the Azure Artifacts settings icon is only visible to feed owners and [project collection administrators](../../organizations/security/look-up-project-collection-administrators.md).
 
-1. Choose the users or groups who should have the ability to create and/or administer feeds, and then select **Save** when you're done. 
+1. Choose the users and groups who should have the ability to create and/or administer feeds, and then select **Save** when you're done. 
 
     :::image type="content" source="media/artifact-feed-settings.png" alt-text="Screenshot showing how to set up Azure Artifacts settings.":::
 
@@ -44,7 +46,7 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
     :::image type="content" source="media/feed-permissions.png" alt-text="A screenshot showing how to access feed permissions.":::
 
-1. Add new user(s)/group(s) and choose the appropriate **Role** for them.
+1. Add users/groups and choose their appropriate **Role**. If you choose a user or group that has an existing role, the role you select replaces the existing role. To see a dropdown list, begin typing the name of the user or group. For information about pipeline permissions, see [Pipelines permissions](#pipelines-permissions).
 
     :::image type="content" source="media/add-users-groups-dialogue.png" alt-text="Screenshot showing how to add new users or groups.":::
 
@@ -60,25 +62,18 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 1. Select **Permissions**, and then select **Add user/group**.
 
-    :::image type="content" source="media/editfeeddialog1.png" alt-text="A screenshot showing feed permissions in TFS.":::
+    :::image type="content" source="media/editfeeddialog1.png" alt-text="A screenshot showing feed permission.":::
 
-1. Add new user(s)/group(s) and choose the appropriate **Role** for them.
+1. Add users/groups and choose their appropriate **Role**.
 
 1. Select **Save** when you're done.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops"
 
 > [!NOTE]
-> By default, the *Project Collection Build Service* (org-scoped) and the project-level *Build Service* (project-scoped) are assigned the **Collaborator** role.
-
-::: moniker-end
-
-:::moniker range=">= azure-devops-2022"
-
-> [!NOTE]
-> By default, the *Project Collection Build Service* is automatically assigned the **Collaborator** role for newly created collection-scoped feeds.
+> By default, the *Project Collection Build Service* (org-scoped) and the project-level *Build Service* (project-scoped) are assigned the **Collaborator** role.  To manage packages in your feed, set these permissions to **Contributor** role or higher.
 
 ::: moniker-end
 
@@ -103,9 +98,9 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 ## Feed views settings
 
-Feed views enable users to share certain packages while keeping others private. A common scenario for using a feed view is sharing a package version that has already been tested and validated but keeping packages under development private.
+Feed views enable users to share certain packages while keeping others private. A common scenario for using a feed view is sharing a package version that is tested and validated while keeping packages under development private.
 
-By default, there are three views in a feed: **@local**, **@prerelease**, and **@release** view. The latter two are suggested views that you can rename or delete as desired. The **@local** view is the default view and it includes all the packages published to the feed as well as all the packages downloaded from upstream sources.
+By default, there are three views in a feed: **@local**, **@prerelease**, and **@release** view. The latter two are suggested views that you can rename or delete as desired. The **@local** view is the default view and it includes all the packages published to the feed and all the packages downloaded from upstream sources.
 
 > [!IMPORTANT]
 > Users who have access to a specific view are able to access and download packages from the feed through that view even if they don't have direct access to that feed.
@@ -130,13 +125,15 @@ If you want to completely hide your packages, you must restrict access to both f
 
 ## Pipelines permissions
 
-To access your feed from your pipeline, the corresponding build identity must have the necessary permissions. By default, feeds have the *Project Collection Build Service* role set to *Collaborator*. However, if you have configured your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a *Reader* or *Contributor*. Example: FabrikamFiber Build Service (codesharing-demo).
+To access your feed from your pipeline, the corresponding build identity must have the necessary permissions. By default, feeds have the *Project Collection Build Service* role set to *Collaborator*. However, if you configured your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you need to add the project-level build identity as a *Reader* or *Contributor*. Example: FabrikamFiber Build Service (codesharing-demo).
+
+To publish packages from your pipeline to your feed, you must set the build identity to a **Contributor** role.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
 
-1. Select **Permissions**, and then select **Add users/groups**.  Add your build identity and set its role to a **Contributor**.
+1. Select **Permissions**, and then select **Add users/groups**. Add your build identity and set its role to a **Contributor**.
 
     :::image type="content" source="media/feed-pipelines-permissions.png" alt-text="A screenshot showing the build identity permission.":::
 
@@ -146,13 +143,15 @@ To access your feed from your pipeline, the corresponding build identity must ha
 
 ## Pipelines permissions
 
-To access your feed from your pipeline, the corresponding build identity must have the necessary permissions. if you have configured your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a *Reader* or *Contributor*. Example: FabrikamFiber Build Service (codesharing-demo).
+To access your feed from your pipeline, the corresponding build identity must have the necessary permissions. If you configured your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you need to add the project-level build identity as a *Reader* or *Contributor*. Example: FabrikamFiber Build Service (codesharing-demo).
+
+To publish packages from your pipeline to your feed, the build identity must be set to a **Contributor** role.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
 
-1. Select **Permissions**, and then select **Add users/groups**.  Add your build identity and set its role to a **Contributor**.
+1. Select **Permissions**, and then select **Add users/groups**. Add your build identity and set its role to a **Contributor**.
 
 ::: moniker-end
 
