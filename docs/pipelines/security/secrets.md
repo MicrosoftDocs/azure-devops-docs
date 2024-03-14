@@ -26,7 +26,7 @@ The best method to protect a secret is not to have a secret in the first place. 
 
 Sensitive values should never be stored as plaintext in an Azure Pipelines **.yml** file. 
 
-Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want exposed in a pipeline. The recommended way to [set secret variables](../process/set-secret-variables.md) is with Azure Key Vault. You can also set secret variables in the UI, in a variable group, and in a script with a logging command. Using a logging command is not recommended since anyone who can access your pipeline will be able to also see the secret. 
+Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want exposed in a pipeline. The recommended way to [set secret variables](../process/set-secret-variables.md) is with Azure Key Vault. You can also set secret variables in the UI or in a variable group. Using a logging command to set a secret variable is not recommended. When you set a secret with a logging command, anyone who can access your pipeline will be able to also see the secret. 
 
 Secret variables are encrypted and can be used in pipelines without exposing their values. Although their values aren't exposed, never echo secrets as output and don't pass secrets on the command line. Instead, we suggest that you map your secrets into environment variables.
 
