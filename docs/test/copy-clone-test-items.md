@@ -192,8 +192,8 @@ Do the following steps to generate a list of test plans, test suites, or other t
 
 > [!TIP]
 > While test plans, test suites, and test cases are related to each other, you can't view the relationships through a work item query. Link types don't link test plans, test suites, and test cases. Only shared steps and shared parameters link to test cases. Also, test cases link to user stories or other work items that they test. 
- 
-:::image type="content" source="media/copy-clone/query-test-plans.png" alt-text="Screenshot of Query Editor, Query test plans.":::
+
+:::image type="content" source="media/copy-clone/query-test-plans.png" alt-text="Screenshot of Query Editor.":::
 
 <a id="work-tcm-cli"></a>
 
