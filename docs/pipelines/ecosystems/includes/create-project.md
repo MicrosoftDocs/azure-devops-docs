@@ -2,8 +2,8 @@
 ms.topic: include
 ms.service: azure-devops-pipelines
 ms.manager: mijacobs
-ms.author: jukullam
-author: v-catherbund
+ms.author: v-catherbund
+author: cebundy
 ms.custom: devdivchpfy22
 monikerRange: '>= azure-devops-2020 <= azure-devops'
 ---
