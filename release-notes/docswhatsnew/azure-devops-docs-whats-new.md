@@ -1,114 +1,93 @@
 ---
-title: "Azure DevOps docs: What's new for January 1, 2024 - January 31, 2024"
-description: "What's new in the Azure DevOps docs for January 1, 2024 - January 31, 2024."
-ms.date: 02/07/2024
+title: "Azure DevOps docs: What's new for February 1, 2024 - February 29, 2024"
+description: "What's new in the Azure DevOps docs for February 1, 2024 - February 29, 2024."
+ms.date: 03/05/2024
 ---
 
-# Azure DevOps docs: What's new for January 1, 2024 - January 31, 2024
+# Azure DevOps docs: What's new for February 1, 2024 - February 29, 2024
 
-Welcome to what's new in the Azure DevOps docs from January 1, 2024 through January 31, 2024. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from February 1, 2024 through February 29, 2024. This article lists some of the major changes to docs during this period.
 
 ## Administration
 
 ### Updated articles
 
-- [Add users or groups to a team or project](/azure/devops/organizations/security/add-users-team-project)
-- [View permissions for yourself or others](/azure/devops/organizations/security/view-permissions)
-- [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url)
+- [Add a user to manage billing](/azure/devops/organizations/billing/add-backup-billing-managers)
+- [Get started as a Stakeholder](/azure/devops/organizations/security/get-started-stakeholder)
+
+## Artifacts
+
+### Updated articles
+
+- [Use npm audit to detect and fix package vulnerabilities](/azure/devops/artifacts/npm/npm-audit)
 
 ## Azure Boards
 
 ### Updated articles
 
-- [Define features and epics, organize your backlog](/azure/devops/boards/backlogs/define-features-epics)
-- [Determine and set sprint capacity in Azure Boards](/azure/devops/boards/sprints/set-capacity)
-- [About work items and work item types](/azure/devops/boards/work-items/about-work-items)
-- [Azure Boards FAQs](/azure/devops/boards/faqs)
+- [Query by date or current iteration in Azure Boards](/azure/devops/boards/queries/query-by-date-or-current-iteration)
+- [Modify work items in bulk in Azure Boards](/azure/devops/boards/backlogs/bulk-modify-work-items)
+- [Best practices for Agile project management](/azure/devops/boards/best-practices-agile-project-management)
+- [About default processes and process templates](/azure/devops/boards/work-items/guidance/choose-process)
 
 ## Azure DevOps Reporting and Analytics service
 
 ### Updated articles
 
-- [Refresh your report and show last refresh date](/azure/devops/report/powerbi/add-last-refresh-time)
-- [Burndown and burnup guidance](/azure/devops/report/dashboards/burndown-guidance)
-- [Configure and monitor sprint burndown](/azure/devops/report/dashboards/configure-sprint-burndown)
-- [View and configure team velocity](/azure/devops/report/dashboards/team-velocity)
-- [Out Of Box widget catalog](/azure/devops/report/dashboards/widget-catalog)
+- [Lead Time and Cycle Time widgets](/azure/devops/report/dashboards/cycle-time-and-lead-time)
+- [About dashboards, charts, reports, & widgets](/azure/devops/report/dashboards/overview)
+- [Connect Analytics with Power BI Data Connector](/azure/devops/report/powerbi/data-connector-connect)
+- [Connect with data by using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
+- [About Power BI integration](/azure/devops/report/powerbi/overview)
 
 ## Azure Pipelines
 
 ### Updated articles
 
-- [Self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent)
-- [Classic release and artifacts variables](/azure/devops/pipelines/release/variables)
-- [Quickstart: Build a container image to deploy apps using Azure Pipelines](/azure/devops/pipelines/ecosystems/containers/build-image)
-- [YAML pipeline editor](/azure/devops/pipelines/get-started/yaml-pipeline-editor)
-- [Publish NuGet packages with Azure Pipelines (YAML/Classic)](/azure/devops/pipelines/artifacts/nuget)
+- [Set variables in scripts](/azure/devops/pipelines/process/set-variables-scripts)
+- [Define approvals and checks](/azure/devops/pipelines/process/approvals)
+- [Connect to Azure by using an Azure Resource Manager service connection](/azure/devops/pipelines/library/connect-to-azure)
+- [Manually set an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/configure-workload-identity)
+- [Troubleshoot an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/troubleshoot-workload-identity)
+- [Key concepts for new Azure Pipelines users](/azure/devops/pipelines/get-started/key-pipelines-concepts)
+- [Task types & usage](/azure/devops/pipelines/process/tasks)
+- [Add stages, dependencies, & conditions](/azure/devops/pipelines/process/stages)
 - [Build, test, and deploy .NET Core apps](/azure/devops/pipelines/ecosystems/dotnet-core)
-- [Troubleshoot ARM service connections](/azure/devops/pipelines/release/azure-rm-endpoint)
+- [Build Java apps](/azure/devops/pipelines/ecosystems/java)
 
 ## Azure Repos
 
 ### Updated articles
 
-- [Code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning)
-- [Start using Azure Repos](/azure/devops/repos/get-started/index)
-- [Sign up for free for Azure Repos](/azure/devops/repos/get-started/sign-up-invite-teammates)
+- [How dates work in Git](/azure/devops/repos/git/git-dates)
+- [How names work in Git](/azure/devops/repos/git/git-names)
+- [Ignore file changes with Git](/azure/devops/repos/git/ignore-files)
+- [Manage and store large files in Git](/azure/devops/repos/git/manage-large-files)
+- [Git cross-platform compatibility](/azure/devops/repos/git/os-compatibility)
+- [Use SSH key authentication](/azure/devops/repos/git/use-ssh-keys-to-authenticate)
 
-## Azure Test Plans
-
-### Updated articles
-
-- [Add findings to existing bugs with exploratory testing](/azure/devops/test/add-to-bugs-exploratory-testing)
-- [Associate automated tests with test cases](/azure/devops/test/associate-automated-test-with-test-case)
-- [Bulk import or export of test cases](/azure/devops/test/bulk-import-export-test-cases)
-- [Collect diagnostic data while testing](/azure/devops/test/collect-diagnostic-data)
-- [Exploratory testing with the Test & Feedback extension in Connected mode](/azure/devops/test/connected-mode-exploratory-testing)
-- [Copy or clone test plans, test suites, and test cases](/azure/devops/test/copy-clone-test-items)
-- [Create test plans and test suites](/azure/devops/test/create-a-test-plan)
-- [Create manual test cases](/azure/devops/test/create-test-cases)
-- [Explore work items with the Test & Feedback extension](/azure/devops/test/explore-workitems-exploratory-testing)
-- [Set test retention policies](/azure/devops/test/how-long-to-keep-test-results)
-- [Get insights across your exploratory testing sessions](/azure/devops/test/insights-exploratory-testing)
-- [Navigate Test Plans](/azure/devops/test/navigate-test-plans)
-- [Install the Test & Feedback extension](/azure/devops/test/perform-exploratory-tests)
-- [Progress Report](/azure/devops/test/progress-report)
-- [Repeat a test with different data](/azure/devops/test/repeat-test-with-different-data)
-- [Run automated tests from test plans](/azure/devops/test/run-automated-tests-from-test-hub)
-- [Share steps between test cases](/azure/devops/test/share-steps-between-test-cases)
-- [Exploratory testing with the Test &amp; Feedback extension in Standalone mode](/azure/devops/test/standalone-mode-exploratory-testing)
-- [Track stakeholder feedback](/azure/devops/test/track-stakeholder-feedback)
-- [Track test status](/azure/devops/test/track-test-status)
-- [Assign tests for user acceptance testing](/azure/devops/test/user-acceptance-testing)
-- [Provide stakeholder feedback with the Test & Feedback extension](/azure/devops/test/voluntary-stakeholder-feedback)
-
-## Migrate
+## Extend
 
 ### Updated articles
 
-- [Validation and import processes](/azure/devops/migrate/migration-import)
+- [Extension manifest reference](/azure/devops/extend/develop/manifest)
+- [Add a custom pipelines task extension](/azure/devops/extend/develop/add-build-task)
 
-## Project
-
-### Updated articles
-
-- [Use Markdown in Azure DevOps](/azure/devops/project/wiki/markdown-guidance)
-- [Navigate the web portal in Azure DevOps](/azure/devops/project/navigation/index)
-- [Work across projects](/azure/devops/project/navigation/work-across-projects)
-- [Work across projects FAQs](/azure/devops/project/work-across-projects-faqs)
-- [Manage wikis with the CLI](/azure/devops/project/wiki/manage-wikis)
-- [Migrate pages from wiki extension to a team project wiki](/azure/devops/project/wiki/migrate-extension-wiki-pages)
-- [Create a wiki for your project](/azure/devops/project/wiki/wiki-create-repo)
-- [Wiki files and file structure](/azure/devops/project/wiki/wiki-file-structure)
-- [Clone and update wiki content offline](/azure/devops/project/wiki/wiki-update-offline)
-
-## User guide
+## Integrate
 
 ### Updated articles
 
-- [Navigate in Visual Studio Team Explorer](/azure/devops/user-guide/work-team-explorer)
-- [Troubleshoot connecting to a project](/azure/devops/user-guide/troubleshoot-connection)
+- [Get started with the REST APIs](/azure/devops/integrate/how-to/call-rest-api)
+- [Use Azure DevOps OAuth 2.0 to create a web app](/azure/devops/integrate/get-started/authentication/azure-devops-oauth)
+
+## Marketplace
+
+### Updated articles
+
+- [Install extensions](/azure/devops/marketplace/install-extension)
+
+
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2024-01-01..2024-01-31).
+Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2024-02-01..2024-02-29).

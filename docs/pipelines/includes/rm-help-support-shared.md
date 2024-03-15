@@ -4,12 +4,12 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 09/09/2020
+ms.date: 02/21/2024
 ---
 
 ## Help and support
 
-* See our [troubleshooting](../troubleshooting/troubleshooting.md) page
-* Get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops),
-  and feel free to post your questions, search for answers, or suggest a feature on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). [Support](https://azure.microsoft.com/support/devops/) page.
-
+* Explore [troubleshooting tips](../troubleshooting/troubleshooting.md).
+* Get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
+* Post your questions, search for answers, or suggest a feature in the [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
+* Get [support for Azure DevOps](https://azure.microsoft.com/support/devops/).

@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 01/16/2024
+ms.date: 03/08/2024
 ---
 
 # Use Markdown in Azure DevOps
@@ -193,7 +193,8 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 ## Code highlighting
 
 Highlight suggested code segments using code highlight blocks.
-To indicate a span of code, wrap it with three backtick quotes (`&#96;&#96;&#96;`) on a new line at both the start and end of the block. To indicate code inline, wrap it with one backtick quote (`&#96;`).
+To indicate a span of code, wrap it with three backtick quotes (<code>```</code>) on a new line at both the start and end of the
+block. To indicate code inline, wrap it with one backtick quote (<code>`</code>).
 
 Code highlighting entered within the Markdown widget renders code as plain preformatted text.
 
@@ -217,15 +218,14 @@ sudo npm install vsoagent-installer -g
 **Example:**
 
 <pre>
-&#96;&#96;&#96;To install the Microsoft Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;.
-&#96;&#96;&#96; 
+&#96;&#96;&#96;To install the Microsoft Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;.&#96;&#96;&#96; 
 </pre>
 
 <br/>
 
 **Result:**
 
-To install the Microsoft Cross Platform Build & Release Agent, run the following command: `$ sudo npm install vsoagent-installer -g`.  
+```To install the Microsoft Cross Platform Build & Release Agent, run the following command: `$ sudo npm install vsoagent-installer -g`.```  
 
 <br/>
 
@@ -406,15 +406,12 @@ When you link to another Markdown page in the same Git or TFVC repository, the l
 
 **Supported links for Markdown widget:**
 
-<ul>
-- URL: `[text to display](http://address.com)`  </br>
-</ul>
+- URL: `[text to display](http://address.com)`
 
 **Supported links for Wiki:**  
-<ul>
-- Absolute path of Wiki pages: `[text to display](/parent-page/child-page)` </br>
-- URL: `[text to display](http://address.com)`  </br>
-</ul>
+
+- Absolute path of Wiki pages: `[text to display](/parent-page/child-page)`
+- URL: `[text to display](http://address.com)`
 
 > [!NOTE]  
 > - Links to documents on file shares using `file://` aren't supported on 2017.1 and later versions. This restriction has been implemented for security purposes.
@@ -1003,7 +1000,7 @@ To embed videos from YouTube and Microsoft Streams in a wiki page, use the follo
 
 ```markdown
 ::: video
-> [!VIDEO https://www.youtube.com/embed/_EXAMPLE_]
+<iframe width="640" height="360" src="https://www.youtube.com/embed/OtqFyBA6Dbk" allowfullscreen style="border:none"><iframe>
 :::
 ```
 The iframe corresponds to the embedding iframe block of either a YouTube or Microsoft Streams video.

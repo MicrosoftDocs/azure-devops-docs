@@ -174,11 +174,14 @@ If your repository doesn't require a service connection, you can declare it inli
 
 ```yaml
 steps:
+- checkout: self
 - checkout: git://MyProject/MyRepo # Azure Repos Git repository in the same organization
 ```
 
 > [!NOTE]
-> In the previous example, the `self` repository is not checked out. If you specify any `checkout` steps, you must include `checkout: self` in order for `self` to be checked out.
+> In the previous example, the `self` checkout repository is specified in order to checkout the source of the repository associated with the pipeline.
+>
+> If you are using the default Azure Repos Git repository (that has the same name as the project), use the format `- checkout: git://MyRepo/MyRepo`.
 
 ## Checkout path
 

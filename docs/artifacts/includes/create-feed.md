@@ -4,7 +4,7 @@ ms.service: azure-devops-artifacts
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 11/10/2023
+ms.date: 03/15/2024
 ---
 
 ::: moniker range=">= azure-devops-2019"

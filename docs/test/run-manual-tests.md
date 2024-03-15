@@ -144,6 +144,19 @@ You can also update an existing bug with information about the failure.
 
    ![Screenshot shows Test Runner with a failed test and Create bug highlighted.](media/run-manual-tests/create-bug-button.png)
 
+   > [!NOTE]
+   >
+   > If the create bug button does not launch bug workitem, then verify if the teams settings are correct at Area and Iteration level as below: 
+   >
+   > Go to the project settings and Team, check if the correct Team is set as default. 
+   >
+   > From that Team, click on the Iterations and Area paths hyperlink near to Team name. It will take you to Team configuration page. 
+   >
+   > In the Team configuration page, select Iterations, Default and Backlog iteration must match the Team for which the test case is running. 
+   >
+   > In the Team configuration page, select Areas, Default area must match the Team for which the test case is running. 
+   
+
 1. In the **New bug** dialog box, enter a name for the bug.
 
    ![Screenshot shows Test Runner with Create bug selected and the new bug dialog box open.](media/run-manual-tests/create-bug-test-fail.png)

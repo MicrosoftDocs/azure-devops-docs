@@ -230,6 +230,8 @@ Output variables can be used across stages in pipelines. You can use output vari
 
 When you set a variable with the `isoutput` property, you can reference that variable in later stages with the task name and the `stageDependencies` syntax. Learn more about [dependencies](expressions.md#dependencies). 
 
+Output variables are only available in the next downstream stage. If multiple stages consume the same output variable, use the `dependsOn` condition.
+
 # [Bash](#tab/bash)
 
 First, set the output variable `myStageVal`.
@@ -317,3 +319,29 @@ There are a few reasons why your output variable may not appear.
 * Output variables set with `isoutput` aren't available in the same job and instead are only available in downstream jobs. 
 * Depending on what variable syntax you use, a variable that sets an output variable's value may not be available at runtime. For example, variables with macro syntax (`$(var)`) get processed before a task runs. In contrast, variables with template syntax are processed at runtime (`$[variables.var]`). You'll usually want to use runtime syntax when setting output variables. For more information on variable syntax, see [Define variables](variables.md#understand-variable-syntax).
 * There may be extra spaces within your expression. If your variable isn't rendering, check for extra spaces surrounding `isOutput=true`.
+
+You can troubleshoot the `dependencies` output for a pipeline job or stage by adding a variable for the dependencies and then printing that variable. For example, in this pipeline job `A` sets the output variable `MyTask`. The second job (`B`) depends on job `A`. A new variable, `deps` holds the JSON representation of the job dependencies. The second step in Job `B` uses PowerShell to print out `deps` so that you can see the job dependencies.  
+
+```yml
+trigger:
+- '*'
+
+pool:
+  vmImage: 'ubuntu-latest'
+ 
+jobs:
+- job: A
+  steps:
+    - script: |
+        echo "##vso[task.setvariable variable=MyTask;isOutput=true]theoutputval"
+      name: ProduceVar  
+- job: B
+  dependsOn: A
+  variables:
+    varFromA: $[ dependencies.A.outputs['ProduceVar.MyTask'] ]
+    deps: $[convertToJson(dependencies)] # create a variable with the job dependencies
+  steps:
+  - script: echo $(varFromA) # 
+  - powershell: Write-Host "$(deps)"
+  ```
+
