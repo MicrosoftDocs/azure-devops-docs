@@ -1,9 +1,8 @@
 ---
 title: Quickstart - Use Azure Pipelines to build and publish a Python app
-description: Automatically build and test Python apps with Azure Pipelines
+description: Automatically build and test Python apps with Azure Pipelines.
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.date: 12/20/2022
 monikerRange: '>=azure-devops-2019'
 ms.custom: devx-track-python, freshness-fy22q2
 ---
@@ -12,46 +11,58 @@ ms.custom: devx-track-python, freshness-fy22q2
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. This article focuses on creating a basic pipeline. This quickstart walks through how to create a simple Flask app with three pages that use a common base template and deploy it with Azure DevOps. 
+You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. In this quickstart, you learn how to create a pipeline to build a Python app.
+
+::: moniker range=">=azure-devops"
 
 You don't have to set up anything for Azure Pipelines to build Python projects. Python is preinstalled on [Microsoft-hosted build agents](../agents/hosted.md) for Linux, macOS, or Windows. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software). 
 
-To learn about configuring Python in pipelines, see [Customize Python](customize-python.md).
-
-If you want a more complex example, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
+::: moniker-end
 
 ## Prerequisites
 
-You must have the following items in Azure DevOps:
+::: moniker range=">=azure-devops"
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
 * An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
+* A self-hosted agent. To create one, see ee [Self-hosted agents](../agents/agents.md#self-hosted-agents).
+* Python versions installed on your self-hosted agent. To install Python on your agent, see [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0).
+
+:::
 
 ## 1 - Fork the sample code
 
 ::: moniker range="azure-devops-2019"
 
-Import this repo into your Git repo in Azure DevOps Server 2019:
+Import this repo into your Git repo in Azure DevOps Server 2019.
 
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
 
-For the following sample Python Flask tutorial:
+Fork the following sample Python Flask tutorial to your GitHub account.
 
 ::: moniker-end
 
 ```
+
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 ```
 
 ## 2 - Create your pipeline
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range=">=azure-devops"
 
-1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser will go to `https://dev.azure.com/my-organization-name` and display your Azure DevOps dashboard.
+1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser goes to `https://dev.azure.com/my-organization-name`.
+1. Select your organization.
 
 1. Go to your project and select **Pipelines** > **Create a new pipeline**.
 
@@ -69,9 +80,32 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 When you're done, you have a YAML file *azure-pipelines.yml* in your repository that's ready for you to customize.
 
-### Customize your pipeline
+::: moniker-end
 
-1. Edit the `azure-pipelines.yml` file in your repository and update the Python version references.   
+::: moniker range="< azure-devops"
+
+1. In a browser to your DevOps Server collection.
+
+1. Go to your project and select **Pipelines** > **Create a new pipeline**.
+
+1. Select **GitHub** as the location of your source code.
+
+1. If you're redirected to GitHub to sign in, enter your GitHub credentials.
+
+1. When the list of repositories appears, select your Python sample repository.
+
+1. Azure Pipelines analyzes the code in your repository and recommends the `Python package` template for your pipeline. Select that template.
+
+1. Azure Pipelines generates a YAML file for your pipeline. 
+
+::: moniker-end
+
+## 3 - Customize your pipeline
+
+
+::: moniker range=">=azure-devops"
+
+Update the Python versions.
 
 ```yaml
 trigger:
@@ -81,12 +115,12 @@ pool:
   vmImage: ubuntu-latest
 strategy:
   matrix:
-    Python38:
-      python.version: '3.8'
-    Python39:
-      python.version: '3.9'
     Python310:
       python.version: '3.10'
+    Python311:
+      python.version: '3.11'
+    Python312:
+      python.version: '3.12'
 
 steps:
 - task: UsePythonVersion@0
@@ -107,45 +141,152 @@ steps:
 
 ::: moniker-end
 
+::: moniker ranage=">azure-devops-2019 < azure-devops"
 
-::: moniker range="azure-devops-2019"
+Customize the `azure-pipelines.yml` to match your project configuration. 
 
-1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
+1. If you have a different agent pool, change the pool `name` parameter.
+1. Change the Python versions to match the versions installed on your self-hosted agent.  
 
-``` yaml
-trigger:
-- main
+    ```yml
+    trigger:
+    - main
+    
+    pool:
+      name: default
+    strategy:
+      matrix:
+        Python310:
+          python.version: '3.10'
+        Python311:
+          python.version: '3.11'
+        Python312:
+          python.version: '3.12'
+    
+    
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(python.version)'
+      displayName: 'Use Python $(python.version)'
+    
+    - script: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+      displayName: 'Install dependencies'
+    
+    - script: |
+        pip install pytest pytest-azurepipelines
+        pytest
+      displayName: 'pytest'
+    ```
 
-pool: Default
-
-steps:
-- script: python -m pip install --upgrade pip
-  displayName: 'Install dependencies'
-
-- script: pip install -r requirements.txt
-  displayName: 'Install requirements'
-```
-
-2. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **YAML**.
-
-3. Set the **Agent pool** and **YAML file path** for your pipeline. 
-
-4. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
-
-5. When you're ready to make changes to your pipeline, **Edit** it.
+    If There's only a single version of Python on your agent, remove the matrix strategy and specify a single version of Python. For example:
+  
+    ```yaml
+      trigger:
+      - main
+      
+      pool: '<your-pool-name or Default>'
+      
+      steps:
+      - task: UsePythonVersion@0
+        inputs:
+          versionSpec: '3.11'
+        displayName: 'Use Python 3.11'
+      
+      - script: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        displayName: 'Install dependencies'
+      
+      - script: |
+          pip install pytest pytest-azurepipelines
+          pytest
+        displayName: 'pytest'
+        ```
 
 ::: moniker-end
 
+::: moniker range="azure-devops-2019"
 
-## 3 - Run your pipeline
+Edit the `azure-pipelines.yml` to match your project configuration.  
+
+1. Change the trigger branch to `main`.
+1. If you have a different agent pool, change the `pool:` keyword value to your pool name.
+1. Update the Python version references to the versions installed on your self-hosted agent.  
+
+    ```yml
+    trigger:
+    - main
+    
+    pool: 'Default'
+    strategy:
+      matrix:
+        Python310:
+          python.version: '3.10'
+        Python311:
+          python.version: '3.11'
+        Python312:
+          python.version: '3.12'
+    
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(python.version)'
+      displayName: 'Use Python $(python.version)'
+    
+    - script: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+      displayName: 'Install dependencies'
+    
+    - script: |
+        pip install pytest pytest-azurepipelines
+        pytest
+      displayName: 'pytest'
+    
+    ```
+
+
+    If there's only a single version of Python on your agent, remove the matrix strategy and specify a single version of Python. For example:
+  
+    ```yaml
+      trigger:
+      - main
+      
+      pool: '<your-pool-name or Default>'
+      
+      steps:
+      - task: UsePythonVersion@0
+        inputs:
+          versionSpec: '3.11'
+        displayName: 'Use Python 3.11'
+      
+      - script: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        displayName: 'Install dependencies'
+      
+      - script: |
+          pip install pytest pytest-azurepipelines
+          pytest
+        displayName: 'pytest'
+      ```
+
+
+::: moniker-end
+
+## 4 - Run your pipeline
 
 Save and run your pipeline. After your pipeline runs, verify that the jobs ran successfully. 
-    
+  
 :::image type="content" source="media/python-successful-jobs.png" alt-text="Screenshot of complete Python jobs.":::
 
 ## Next steps
 
-Congratulations, you've successfully completed this quickstart! To run Python scripts or run specific versions of Python, see [Configure Python](customize-python.md).
+Congratulations, you successfully completed this quickstart! 
 
 > [!div class="nextstepaction"]
 > [Configure Python](customize-python.md)
+> [Use CI/CD to deploy a Python web app to Azure App Service](python-webapp.md).
