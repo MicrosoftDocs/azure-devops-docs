@@ -226,6 +226,8 @@ A service connection allows you to create a connection to provide authenticated 
   
     For example, if you're using a **Workload Identity federation (automatic)** or **Service principal (automatic)** authentication method, enter the following information
 
+    :::image type="content" source="../media/azure-service-connection-settings-devops-services.png" alt-text="New service connection dialog box.":::
+
     |**Field**|**Description**|
     |--|--|
     |**Scope level**| Select **Subscription**.|
@@ -236,7 +238,6 @@ A service connection allows you to create a connection to provide authenticated 
  
     Select **Save**.
 
-    :::image type="content" source="../media/azure-service-connection-settings-devops-services.png" alt-text="New service connection dialog box.":::
 
    The new connection appears in the **Service connections** list, and is ready for use in your Azure Pipeline.
 
@@ -505,7 +506,7 @@ The following sections describe the key elements of the pipeline that is generat
 
 #### Variables
 
-::: moniker range=">= azure-devops"
+::: moniker range=">=azure-devops"
 
 The `variables` section contains the following variables:
 
@@ -576,7 +577,7 @@ pythonVersion: '3.11'
 
 #### Build stage
 
-::: moniker range=">= azure-devops"
+::: moniker range=">=azure-devops"
 
 The build stage contains a single job that runs on the operating system defined in the vmImageName variable.
 

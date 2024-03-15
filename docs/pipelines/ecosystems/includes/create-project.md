@@ -19,7 +19,7 @@ monikerRange: '>= azure-devops-2020 <= azure-devops'
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="azure-devops-2020"
 
 1. In a browser, go to your Azure DevOps Server.
 1. Select your collection.
