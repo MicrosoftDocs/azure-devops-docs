@@ -1,7 +1,7 @@
 ---
 title: Service hooks events
 titleSuffix: Azure DevOps  
-description: Reference for service hook events. 
+description: Reference article for service hook events. 
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-service-hooks
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/12/2023
+ms.date: 03/04/2024
 ---
 
 # Service hooks events
@@ -612,7 +612,7 @@ Event: A deployment approval is completed.
       * `4` - Rejected
  * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
    * Valid values: 
-      * `1` - Pre-deployment
+      * `1` - Predeployment
       * `2` - Post-deployment
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
@@ -816,7 +816,7 @@ Event: A deployment approval is requested.
 
  * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
    * Valid values: 
-      * `1` - Pre-deployment
+      * `1` - Predeployment
       * `2` - Post-deployment
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
@@ -1283,7 +1283,7 @@ Event: A deployment started.
 
 ### Job state changed
 
-Event: Overall statuses of a job changed. A job within a run has transitioned to skipped, running or completed.
+Event: Overall statuses of a job changed. A job within a run transitioned to skip, run, or complete.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.job-state-changed-event`
@@ -1356,7 +1356,7 @@ Event: Overall statuses of a job changed. A job within a run has transitioned to
 
 ### Run state changed
 
-Event: Overall statuses of a pipeline run changed. A new run has started, or a run has transitioned to canceling, canceled, failed, partially succeeded or succeeded state.
+Event: Overall statuses of a pipeline run changed. A new run started, or a run transitioned to canceling, canceled, failed, partially succeeded or succeeded state.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.run-state-changed-event`
@@ -1467,7 +1467,7 @@ Event: Overall statuses of a pipeline run changed. A new run has started, or a r
 
 ### Run stage state changed
 
-Event: A new stage has started, or a stage has transitioned to canceling, canceled, failed, partially succeeded, or succeeded.
+Event: A new stage started, or a stage transitioned to canceling, canceled, failed, partially succeeded, or succeeded.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.stage-state-changed-event`
@@ -1756,7 +1756,7 @@ Event: An approval completed for a run stage.
 
 ### Run job state changed
 
-Event: A new job is running, or it has completed, or is waiting for an agent.
+Event: A new job is running, or it completed, or is waiting for an agent.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.job-state-changed-event`
@@ -2695,12 +2695,14 @@ Filter events to include only changed work items.
 * Resource Name: `workitem`
 
 > [!NOTE]
-> Creating a Service Hooks subscription with multiple fields is not supported through the UI, but you can achieve this by either [creating a custom payload through the API](/rest/api/azure/devops/hooks/subscriptions/create), or by creating separate Service Hooks subscriptions for each field.
+> You can't create a Service Hooks subscription with multiple fields through the UI. But, you can do so in the following ways: 
+> - [Create a custom payload through the API](/rest/api/azure/devops/hooks/subscriptions/create)
+> - [Create separate Service Hooks subscriptions for each field](#create-a-service-hooks-subscription)
 
 #### Settings
 
  * `areaPath`: Filter events to include only work items under the specified area path.
- * `changedFields`: Filter events to include only work items with the specified field(s) changed.
+ * `changedFields`: Filter events to include only work items with the specified field changed.
  * `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
@@ -2780,6 +2782,16 @@ Filter events to include only changed work items.
 }
 ```
 
+#### Create a service hooks subscription
+
+Do the following steps to create a service hooks subscription for each work item field.
+1. Go to your **Project settings**.
+2. Select **Service Hooks** > + **Create subscription**.
+3. Choose **Web Hooks** as the type of event > **Next**. 
+4. Select **Work item updated** as the type of trigger event.
+5. Specify the field you want to monitor for changes in the subscription configuration dialog. For example, if you want to track changes in the **State** field, set the filter to **Field: State**. You can also filter events to include only items under a specified area path, only specified work item types, and only work items containing a specified tag.
+6. Select **Next**.
+7. Continue in the SETTINGS dialog, and then **Test** or **Finish** creating your subscription.
 
 <a name="workitem.commented"></a>
 

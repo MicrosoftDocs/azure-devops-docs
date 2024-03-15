@@ -7,19 +7,19 @@ ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/14/2024
+ms.date: 03/06/2024
 monikerRange: 'azure-devops'
 ---
 
-# Add a group rule to assign access levels
+# Assign access levels with group rules
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure DevOps offers group-based access levels for Microsoft Entra groups and Azure DevOps groups. In this article, learn how to add a group rule to assign an access level to that group. Azure DevOps resources get assigned to all members of a group.
+Azure DevOps provides group-based access levels for Microsoft Entra groups and Azure DevOps groups. These groups allow you to manage permissions efficiently by assigning access levels to entire groups of users. In this article, learn how to add a group rule to assign an access level to that group of users. Azure DevOps resources get assigned to all members of a group.
 
 Assign group rules to support both access levels and project memberships. Users get the highest access level when they're assigned to more than one rule or Microsoft Entra group, which specify different levels of access. For example, if John is assigned to two Microsoft Entra groups and two different Group rules that specify Stakeholder access and the other Basic access, then John's access level is Basic. 
 
-When users leave the Microsoft Entra group, Azure DevOps automatically removes them.
+When users leave the Microsoft Entra group, Azure DevOps adjusts their access level based on the rules defined for that group. The user remains in Azure DevOps but may have different permissions or access rights. The highest access level assigned to the user determines their final permissions.
 
 [!INCLUDE [note-group-rules](../security/includes/note-group-rules.md)]
 
@@ -108,7 +108,7 @@ To manage a user's resources only by the groups that they're in, remove their di
 
 #### Q: How do Visual Studio Subscriptions work with group rules?
 
-A: Visual Studio Subscribers are always directly assigned via the [Visual Studio Admin Portal](https://manage.visualstudio.com/) and take precedence in Azure DevOps over access levels assigned directly or via group rules. When viewing these users from the Users Hub, the License Source always shows as Direct. The only exception are Visual Studio Professional subscribers who are assigned Basic + Test Plans. Since Basic + Test Plans provides more access in Azure DevOps, it takes precedence over a Visual Studio Professional subscription.
+A: Visual Studio Subscribers are always directly assigned via the [Visual Studio Admin Portal](https://manage.visualstudio.com/) and take precedence in Azure DevOps over access levels assigned directly or via group rules. When you view these users from the Users Hub, the License Source always shows as Direct. The only exception are Visual Studio Professional subscribers who are assigned Basic + Test Plans. Since Basic + Test Plans provides more access in Azure DevOps, it takes precedence over a Visual Studio Professional subscription.
 
 ## Related articles
 

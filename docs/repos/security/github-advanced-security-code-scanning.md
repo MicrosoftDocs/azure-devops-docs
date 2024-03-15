@@ -53,8 +53,7 @@ You can view the specific queries and task details used by CodeQL by looking thr
 
 To use code scanning, you need to first configure [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md). 
 
-The Advanced Security tab under Repos in Azure DevOps is the hub to view your code scanning alerts. 
-Select the **Code scanning** tab to view scanning alerts. You can filter by branch, state, pipeline, rule type, and severity. 
+The Advanced Security tab under Repos in Azure DevOps is the hub to view your code scanning alerts. Select the **Code scanning** tab to view scanning alerts. You can filter by branch, state, pipeline, rule type, and severity. At this time, the alerts hub does not display alerts for scanning completed on PR branches.
 
 There's no effect to results if pipelines or branches are renamed - it may take up to 24 hours before the new name is displayed. 
 

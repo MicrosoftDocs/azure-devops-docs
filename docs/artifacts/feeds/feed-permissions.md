@@ -4,7 +4,7 @@ description: How to configure permissions for Artifacts feeds, views, and pipeli
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 06/20/2023
+ms.date: 03/15/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---

@@ -6,7 +6,7 @@ ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 09/30/2022
+ms.date: 03/06/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -17,7 +17,6 @@ monikerRange: '<= azure-devops'
 <a id="platform-version"></a>
 
 You can tell what platform you use by opening the **About** page for Azure DevOps Services or Azure DevOps Server. 
- 
 
 ## Azure DevOps Services
 
@@ -29,12 +28,11 @@ A page similar to the following example opens showing the version number.
  
 :::image type="content" source="media/provide-feedback/version-azure-devops.png" alt-text="Screenshot of About page for Azure DevOps Services.":::
 
-
 ## Azure DevOps Server 
 
 Open the **About** page from the profile menu as shown in the following image. 
 
-:::image type="content" source="media/provide-feedback/about-menu-selection-on-premises.png" alt-text="Screenshot of profile menu":::
+:::image type="content" source="media/provide-feedback/about-menu-selection-on-premises.png" alt-text="Screenshot of profile menu.":::
 
 The corresponding browser URL is:
 
@@ -43,18 +41,26 @@ The corresponding browser URL is:
 A page similar to the following image opens showing the version number.
 
 :::image type="content" source="media/provide-feedback/version-azure-devops-on-premises.png" alt-text="Screenshot of About page for Azure DevOps Server on-premises.":::
- 
-## Version numbers
 
+For the most recent version details, refer to the following RTW Release Notes. You can also find Update 1 Release Notes and Secure Hash Algorithm (SHA) information in the table of contents from these links.
+- [Azure DevOps Server 2022 Release Notes](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true)
+  - [Update 1 Release Notes, Azure DevOps Server 2022](/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml&preserve-view=true)
+  - [SHA-256 Values](/azure/devops/server/release-notes/azuredevops2022-sha?view=azure-devops&preserve-view=true)
+- [Azure DevOps Server 2020 Release Notes](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops&preserve-view=true)
+  - [Update 1 Release Notes, Azure DevOps Server 2020](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops&preserve-view=true)
+  - [SHA-1 Values](/azure/devops/server/release-notes/azuredevops2020-sha?view=azure-devops&preserve-view=true)
+- [Azure DevOps Server 2019 Release Notes](/azure/devops/server/release-notes/azuredevops2019?view=azure-devops&preserve-view=true)
+  - [Update 1 Release Notes, Azure DevOps Server 2019](/azure/devops/server/release-notes/azuredevops2019u1?view=azure-devops&preserve-view=true)
+  - [SHA-1 Values](/azure/devops/server/release-notes/azuredevops2019-sha?view=azure-devops&preserve-view=true)
+
+<!--- 
+Removed 3/6/2024
 |**On-premises release**|**Version**|**About help page version**| **Build number** | 
 |-------------------|-------|-----------------------| -----------------------|  
-|Azure DevOps Server 2022|RC1|(AzureDevOpsServer_20220720.1)|19.205.32728.1 |  
+|Azure DevOps Server 2022|RC1|(AzureDevOpsServer_20220720.1)|19.205.34309.3 |  
 |Azure DevOps Server 2020|Update 1.1|Version Azure DevOps Server 2020 Update 1.2| 18.181.31230.2|   
 |Azure DevOps Server 2020|RTW|Version Dev 18.M170.9| 18.170.30830.2  |
 |Azure DevOps Server 2019|Update 1|Version Dev17.M153.6| 17.153.29522.3 |  
- 
-
-<!--- 
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 

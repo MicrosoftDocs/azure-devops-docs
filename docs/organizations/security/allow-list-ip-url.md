@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/02/2024
+ms.date: 03/15/2024
 ---
 
 # Allowed IP addresses and domain URLs
@@ -242,7 +242,6 @@ We recommend you open port `443` to all traffic on the following IP addresses an
 |More domain URLs |Descriptions  |
 |---------|---------|
 |https://login.microsoftonline.com |Authentication and sign-in related     |
-|https://app.vssps.visualstudio.com    | Authentication and sign-in related         |
 |https://*.vssps.visualstudio.com   |Authentication and sign-in related          |
 |https://*gallerycdn.vsassets.io   |Hosts Azure DevOps extensions         |
 |https://*vstmrblob.vsassets.io | Hosts Azure DevOps TCM log data        |
@@ -260,6 +259,7 @@ Ensure the following domain URLs are allowed for Azure Artifacts:
 ```AzureArtifactsDomainURLs
 https://*.blob.core.windows.net
 https://*.visualstudio.com
+https://*.dedup.microsoft.com
 ```
 
 Also allow all IP addresses in the "name": "Storage.{region}" section of the following file (updated weekly): [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519). {region} is the same Azure Geography as your organization.
