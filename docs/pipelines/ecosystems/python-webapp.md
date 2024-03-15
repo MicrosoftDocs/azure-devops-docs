@@ -589,7 +589,8 @@ The build stage contains a single job that runs on the operating system defined 
 
 ::: moniker-end
 
-::: moniker range ">=azure-devops-2020 < azure-devops"
+
+::: moniker range=">=azure-devops"
 
 The build stage contains a single job that runs on an agent in the pool identified by the name parameter. You can specify the agent capabilities with the `demands` keyword. For example, `demands: python` specifies that the agent must have Python installed. To specify a self-hosted agent by name, you can use the `demands: Agent.Name -equals <agent-name>` keyword.
 

@@ -5,7 +5,6 @@ ms.manager: mijacobs
 ms.author: v-catherbund
 author: cebundy
 ms.custom: devdivchpfy22
-monikerRange: '>=azure-devops-2019 <=azure-devops'
 ---
 
 ::: moniker range=">=azure-devops"
