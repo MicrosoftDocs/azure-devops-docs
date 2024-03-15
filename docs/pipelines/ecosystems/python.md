@@ -36,7 +36,7 @@ You don't have to set up anything for Azure Pipelines to build Python projects. 
 * A self-hosted agent. To create one, see ee [Self-hosted agents](../agents/agents.md#self-hosted-agents).
 * Python versions installed on your self-hosted agent. To install Python on your agent, see [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0).
 
-:::
+::: moniker-end
 
 ## 1 - Fork the sample code
 
@@ -52,9 +52,10 @@ Fork the following sample Python Flask tutorial to your GitHub account.
 
 ::: moniker-end
 
-```
+```html
 
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial
+
 ```
 
 ## 2 - Create your pipeline
@@ -74,11 +75,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 1. Azure Pipelines analyzes the code in your repository and recommends the `Python package` template for your pipeline. Select that template.
 
-1. Azure Pipelines generates a YAML file for your pipeline. Select **Save and run** > **Commit directly to the main branch**, and then choose **Save and run** again.
-
-1. A new run starts. Wait for the run to finish.
-
-When you're done, you have a YAML file *azure-pipelines.yml* in your repository that's ready for you to customize.
+1. Azure Pipelines generates a YAML file for your pipeline. 
 
 ::: moniker-end
 
@@ -101,7 +98,6 @@ When you're done, you have a YAML file *azure-pipelines.yml* in your repository 
 ::: moniker-end
 
 ## 3 - Customize your pipeline
-
 
 ::: moniker range=">=azure-devops"
 
@@ -141,7 +137,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker ranage=">azure-devops-2019 < azure-devops"
+::: moniker ranage="> azure-devops-2019 < azure-devops"
 
 Customize the `azure-pipelines.yml` to match your project configuration. 
 
@@ -181,7 +177,7 @@ Customize the `azure-pipelines.yml` to match your project configuration.
       displayName: 'pytest'
     ```
 
-    If There's only a single version of Python on your agent, remove the matrix strategy and specify a single version of Python. For example:
+    If there's only a single version of Python on your agent, remove the matrix strategy and specify a single version of Python. For example:
   
     ```yaml
       trigger:
@@ -248,7 +244,6 @@ Edit the `azure-pipelines.yml` to match your project configuration.
     
     ```
 
-
     If there's only a single version of Python on your agent, remove the matrix strategy and specify a single version of Python. For example:
   
     ```yaml
@@ -274,19 +269,22 @@ Edit the `azure-pipelines.yml` to match your project configuration.
         displayName: 'pytest'
       ```
 
-
 ::: moniker-end
 
 ## 4 - Run your pipeline
 
-Save and run your pipeline. After your pipeline runs, verify that the jobs ran successfully. 
+Save and run your pipeline. 
+
+1. Select **Save and run**.
+1. In the **Save and run** dialog, select **Save and run**.
+1. From the **Summary** tab, you can see the status of your pipeline run.
+1. Verify that the build jobs ran successfully. 
   
 :::image type="content" source="media/python-successful-jobs.png" alt-text="Screenshot of complete Python jobs.":::
 
-## Next steps
-
 Congratulations, you successfully completed this quickstart! 
 
-> [!div class="nextstepaction"]
-> [Configure Python](customize-python.md)
-> [Use CI/CD to deploy a Python web app to Azure App Service](python-webapp.md).
+## Next steps
+
+* [Configure Python](customize-python.md)
+* [Use CI/CD to deploy a Python web app to Azure App Service](python-webapp.md).
