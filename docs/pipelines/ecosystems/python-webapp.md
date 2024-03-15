@@ -176,7 +176,29 @@ Create your Azure App Service web app from the Cloud Shell in the Azure portal.
 
 ## Create an Azure DevOps project
 
-[!INCLUDE [create-project](./includes/create-project.md)]
+Create a new project in Azure DevOps to host your pipeline.
+
+::: moniker range=">=azure-devops"
+
+1. In a browser, go to [dev.azure.com](https://dev.azure.com) and sign in.
+1. Select your organization.
+1. Create a new project by selecting **New project** or **Create project** if creating the first project in the organization.
+1. Enter a **Project name**.
+1. Select the **Visibility** for your project.
+1. Select **Create**.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+1. In a browser, go to your Azure DevOps Server.
+1. Select your collection.
+1. Create a new project by selecting **New project** or **Create project** if creating the first project in the collection.
+1. Enter a **Project name**.
+1. Select the **Visibility** for your project.
+1. Select **Create**.
+
+::: moniker-end
 
 ::: moniker range="< azure-devops"
 
@@ -214,8 +236,7 @@ A service connection allows you to create a connection to provide authenticated 
 1. On project page, select **Project settings**.
 
     :::image type="content" source="../media/python/project-settings.png" alt-text="Project settings command on the project dashboard.":::
-
-1. On the **Project Settings** page, select **Service connections** in the **Pipelines** section of the menu.
+1. Select **Service connections** in the **Pipelines** section of the menu.
 1. Select **Create service connection**.
 1. Select **Azure Resource Manager** and select **Next**. 
 
@@ -236,10 +257,9 @@ A service connection allows you to create a connection to provide authenticated 
     |**Service connection name**| A descriptive name for the connection.|
     |**Grant access permissions to all pipelines**| Select this option to grant access to all pipelines.|
  
-    Select **Save**.
+1. Select **Save**.
 
-
-   The new connection appears in the **Service connections** list, and is ready for use in your Azure Pipeline.
+The new connection appears in the **Service connections** list, and is ready for use in your Azure Pipeline.
 
 ::: moniker-end
 
@@ -249,7 +269,7 @@ A service connection allows you to create a connection to provide authenticated 
 
     :::image type="content" source="../media/python/project-settings.png" alt-text="Project settings command on the project dashboard.":::
 
-1. On the **Project Settings** page, select **Service connections** in the **Pipelines** section of the menu.
+1. Select **Service connections** in the **Pipelines** section of the menu.
 1. Select **Create service connection**.
 
 1. Select **Azure Resource Manager** and select **Next**. 
@@ -270,14 +290,14 @@ A service connection allows you to create a connection to provide authenticated 
     |**Service Principal Key**| The `password` value from the JSON object returned by the `az ad sp create-for-rbac` command.|
     |**Tenant Id**| The `tenant` value from the JSON object returned by the `az ad sp create-for-rbac` command.|
 
-    1. Select **Verify** to verify the connection.
-    1. Enter a **Service connection name**.
-    1. Ensure **Grant access permissions to all pipelines** is selected.
-    1. Select **Verify and save**.
+1. Select **Verify** to verify the connection.
+1. Enter a **Service connection name**.
+1. Ensure **Grant access permissions to all pipelines** is selected.
+1. Select **Verify and save**.
 
     :::image type="content" source="../media/azure-service-connection-settings-devops-server.png" alt-text="New service connection dialog box.":::
 
-   The new connection appears in the **Service connections** list, and is ready for Azure Pipelines to use from the project.
+The new connection appears in the **Service connections** list, and is ready for Azure Pipelines to use from the project.
 
 ::: moniker-end
 
@@ -590,7 +610,7 @@ The build stage contains a single job that runs on the operating system defined 
 ::: moniker-end
 
 
-::: moniker range=">=azure-devops"
+::: moniker range="< azure-devops"
 
 The build stage contains a single job that runs on an agent in the pool identified by the name parameter. You can specify the agent capabilities with the `demands` keyword. For example, `demands: python` specifies that the agent must have Python installed. To specify a self-hosted agent by name, you can use the `demands: Agent.Name -equals <agent-name>` keyword.
 
