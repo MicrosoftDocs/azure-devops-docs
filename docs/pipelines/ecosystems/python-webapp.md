@@ -5,7 +5,7 @@ ms.topic: how-to
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.author: v-catherbund
 author: cebundy
-monikerRange: '>= azure-devops-2020 <= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2, arm2024
 
 ---
