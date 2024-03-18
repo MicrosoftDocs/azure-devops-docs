@@ -76,8 +76,7 @@ Now that you added the PowerShell Gallery as an upstream source and registered y
 Install-Module -Name PSScriptAnalyzer -Repository PSGalleryUpstream
 ```
 
-> [!NOTE]
-> To save packages from upstream sources you must be at least a **Collaborator**. See [Configure permissions](../feeds/feed-permissions.md#permissions-table) for more details.
+[!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 
 ## View saved packages
 
