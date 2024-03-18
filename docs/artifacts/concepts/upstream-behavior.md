@@ -19,11 +19,11 @@ With Azure Artifacts upstream sources, developers gain the convenience of utiliz
 
 Upstream behavior is a feature that enables developers to choose if they want to consume externally sourced package versions. It governs which packages are accessible from the public registries for specific packages.
 
-Once upstream behavior is enabled, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
+Once upstream behavior is enabled, when a package is published to your Azure Artifacts feed, any version from the public registry is blocked and not made available for download.
 
 This approach adds an extra layer of security by preventing potential exposure to malicious packages that might have infiltrated the public registries.
 
-However, users still have the option to deactivate the upstream behavior setting, allowing them to consume packages from the public registries if they prefer to do so.
+However, users can still deactivate the upstream behavior setting, allowing them to consume packages from the public registries if they prefer to do so.
 
 > [!NOTE]
 > The new behavior will not impact any package versions that are currently in use, as they are preserved within the feed's *@local* view.
@@ -57,26 +57,26 @@ In this scenario, if a team uses a combination of private and public packages, e
 
 #### All packages are private*
 
-If all existing packages are private, and the team has no plans to use any public packages, the new upstream behavior will have no effect on the team's workflow in this scenario.
+If all existing packages are private, and the team has no plans to use any public packages, the new upstream behavior has no effect on the team's workflow in this scenario.
 
 :::image type="content" source="media\only-private-packages.svg" alt-text="An illustration showing feed with only private packages.":::
 
 #### All packages are public
 
-In this scenario, if the team exclusively consumes public packages, whether from the public registry or other open-source repositories, the new upstream behavior won't impact their workflow in any way.
+In this scenario, if the team exclusively consumes public packages, whether from the public registry or other open-source repositories, the new upstream behavior doesn't affect their workflow in any way.
 
 :::image type="content" source="media\public-packages-only.svg" alt-text="An illustration showing feed with only public packages.":::
 
 #### Public package made private
 
-In this situation, when a public package is converted to a private package, the new upstream behavior won't influence the team's workflow in any way.
+In this situation, when a public package is converted to a private package, the new upstream behavior doesn't affect the team's workflow in any way.
 
 :::image type="content" source="media\public-to-internal.svg" alt-text="An illustration showing a package converted from public to private.":::
 
 ## Allow external versions
 
 > [!NOTE]
-> You must be a feed **Owner** or a feed **Administrator** to allow externally sourced versions. See [Feed permissions](../feeds/feed-permissions.md) for more details.
+> You must be a **Feed Owner** to allow externally sourced versions. For more information, see [Feed permissions](../feeds/feed-permissions.md).
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
