@@ -19,7 +19,7 @@ ms.date: 08/10/2020
 
    :::image type="content" source="../powerbi/media/data-connector/get-data-azure-devops.png" alt-text="Screenshot that shows the Get Data flow.":::
 
-1. Specify the basic parameters to connect to your data:
+1. Specify the basic parameters to connect to your data.
 
 	::: moniker range="azure-devops"
 	:::image type="content" source="../powerbi/media/create-report/specify-account.png" alt-text="Screenshot that shows specifying the organization and project name.":::

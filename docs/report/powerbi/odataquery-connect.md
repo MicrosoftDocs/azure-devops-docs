@@ -14,7 +14,7 @@ ms.date: 12/09/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-To pull data into Power BI, we recommend using Open Data Protocol (OData) queries. OData is an ISO/IEC-approved OASIS standard that defines best practices for building and consuming REST APIs. For more information, see the [OData documentation](/odata/).
+To pull data into Power BI, we recommend that you use Open Data Protocol (OData) queries. OData is an ISO/IEC-approved OASIS standard that defines best practices for building and consuming REST APIs. For more information, see the [OData documentation](/odata/).
 
 To get started quickly, check out the [Overview of sample reports that use OData queries](sample-odata-overview.md). For information about other approaches, see the [Power BI integration overview](overview.md).
 
@@ -47,17 +47,19 @@ The easiest way to write and test OData is to use [Visual Studio Code](https://a
 
 1. Write the OData query. For example queries, see the [Overview of sample reports that use OData queries](sample-odata-overview.md).
 
-The following query returns the top 10 work items under a specific area path. Replace `{organization}`, `{project}`, and `{area path}` with your values.
+   The following query returns the top 10 work items under a specific area path.
 
-```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
-    $select=WorkItemId,Title,WorkItemType,State,CreatedDate
-    &$filter=startswith(Area/AreaPath,'{area path}')
-    &$orderby=CreatedDate desc
-    &$top=10
-``` 
+1. Replace `{organization}`, `{project}`, and `{area path}` with your values.
 
-To query across projects, omit `/{project}` entirely.
+    ```
+    https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
+        $select=WorkItemId,Title,WorkItemType,State,CreatedDate
+        &$filter=startswith(Area/AreaPath,'{area path}')
+        &$orderby=CreatedDate desc
+        &$top=10
+    ``` 
+    
+    To query across projects, omit `/{project}` entirely.
 
 For more information, see [OData query quick reference](../extend-analytics/quick-ref.md).
 
@@ -76,11 +78,11 @@ After you write the query in Visual Studio Code, you should see syntax highlight
 
    - The OData query result set is in JSON format. To view the results, install the JSON Formatter extension for your browser. Several options are available for both Chrome and Microsoft Edge.
 
-   :::image type="content" source="media/odataquery-jsonoutput.png" alt-text="Screenshot that shows the Visual Studio Code OData extension, JSON output.":::
+      :::image type="content" source="media/odataquery-jsonoutput.png" alt-text="Screenshot that shows the Visual Studio Code OData extension, JSON output.":::
 
    - If the query has an error, the Analytics service returns an error in JSON format. For example, this error states that the query selected a field that doesn't exist.
 
-   :::image type="content" source="media/odataquery-jsonerror.png" alt-text="Screenshot that shows the Visual Studio Code OData extension, JSON error.":::
+      :::image type="content" source="media/odataquery-jsonerror.png" alt-text="Screenshot that shows the Visual Studio Code OData extension, JSON error.":::
 
 After you verify that the query works correctly, you can run it from Power BI.
 
@@ -99,7 +101,7 @@ Before you use the query in Power BI, you must convert the multiline OData query
 
    The multiline query gets converted into a single-line query.
 
-   :::image type="content" source="media/odataquery-combineto1line.png" alt-text="Screenshot that shows the Visual Studio Code OData extension, combined to a single-line query.":::
+      :::image type="content" source="media/odataquery-combineto1line.png" alt-text="Screenshot that shows the Visual Studio Code OData extension, combined to a single-line query.":::
 
 1. Copy the entire line for use in the next section.
 
@@ -139,7 +141,7 @@ Before you use the query in Power BI, you must convert the multiline OData query
 
     > [!NOTE]
     > To prevent throttling errors, do the following actions:
-    
+    >
     > - Instruct Power BI to reference OData v4.
     > - Instruct the Analytics service to omit any values that are null, which improves query performance.
     > Power Query attempts to resolve null values as errors by generating another query for every null value it encounters. This action can result in thousands of queries, which quickly exceeds your usage threshold, beyond which your user account gets throttled.
