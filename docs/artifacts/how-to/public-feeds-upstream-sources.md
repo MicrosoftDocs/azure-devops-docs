@@ -114,7 +114,7 @@ pip install
 - - -
 
 > [!NOTE]
-> You must be a **Collaborator** or higher to install new package versions from upstream. Anonymous users can only install packages that exist in their feed.
+> You must be a **Feed and Upstream Reader (Collaborator)** or higher to install new package versions from upstream. Anonymous users can only install packages that exist in their feed.
 
 ## Q&A
 
@@ -122,7 +122,7 @@ pip install
 
 The contents of a feed can only be changed by an authenticated and authorized identity who has appropriate permissions on the feed. This includes saving packages into the feed from an upstream source. Unauthenticated (anonymous) users can *download packages already saved* into a feed, but cannot save new packages from an upstream into the feed.
 	
-Maintainers of a project should save all needed versions of packages into the public feed. This can be done by restoring a project using an identity that *can* supply credentials to the feed when prompted, **and** ensuring that the identity used has **Collaborator** or higher permissions on the public feed.
+Maintainers of a project should save all needed versions of packages into the public feed. This can be done by restoring a project using an identity that *can* supply credentials to the feed when prompted, **and** ensuring that the identity used has **Feed and Upstream Reader (Collaborator)** or higher permissions on the public feed.
 	
 If anonymous users who are restoring packages for a project are repeatedly being blocked by requests for credentials (401 response), the following approaches will reduce or eliminate the issue:
 	
