@@ -5,10 +5,9 @@ ms.manager: mijacobs
 ms.author: v-catherbund
 author: cebundy
 ms.custom: devdivchpfy22
-monikerRange: '>= azure-devops-2020'
 ---
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range=">=azure-devops"
 
 1. In a browser, go to [dev.azure.com](https://dev.azure.com) and sign in.
 1. Select your organization.
@@ -19,7 +18,8 @@ monikerRange: '>= azure-devops-2020'
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range=">= azure-devops-2020 = azure-devops"
+
 1. In a browser, go to your Azure DevOps Server.
 1. Select your collection.
 1. Create a new project by selecting **New project** or **Create project** if creating the first project in the collection.
