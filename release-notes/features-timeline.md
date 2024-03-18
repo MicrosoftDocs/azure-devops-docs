@@ -248,9 +248,9 @@ These investments include:
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item)">Show more details about a GitHub pull request (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview)">Show more details about a GitHub pull request (preview)</a></td>
          <td>Boards</td>
-         <td>2024 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -530,12 +530,12 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/roadmap/2024/add-link-to-github-from-work-item)">Add link to GitHub commit or pull request from work item (preview)</a></td>
+        <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item (preview)</a></td>
         <td>Boards</td>         
         <td>Future</td>
       </tr> 
        <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item" data-raw-source="[Show more details about a GitHub pull request](/azure/devops/release-notes/roadmap/2024/github-pr-details-on-work-item)">Show more details about a GitHub pull request (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview" data-raw-source="[Show more details about a GitHub pull request](/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview)">Show more details about a GitHub pull request (preview)</a></td>
          <td>Boards</td>      
          <td>Future</td>
       </tr>       
