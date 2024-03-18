@@ -76,7 +76,7 @@ sections:
 
       - question: Can I copy test cases from one project to another?
         answer: |
-            **Yes**. See [Copy test cases](copy-clone-test-items.md#copy-test-cases). For Azure DevOps Server 2020 and later versions, you can copy test cases from a project to a test suite, or you can use the [Grid view to copy and paste test cases](copy-clone-test-items.md#copy-paste) from one suite to another. Optionally, you can [bulk import and export test cases](copy-clone-test-items.md#bulk-import-export).
+            **Yes**. See [Copy test cases](copy-clone-test-items.md#copy-test-case). For Azure DevOps Server 2020 and later versions, you can copy test cases from a project to a test suite, or you can use the [Grid view to copy and paste test cases](copy-clone-test-items.md#copy-paste) from one suite to another. Optionally, you can [bulk import and export test cases](copy-clone-test-items.md#bulk-import-export).
 
       - question: Can I add an extra line to a test step?
         answer: |
