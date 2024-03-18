@@ -45,13 +45,13 @@ To publish a Universal Package to your Azure Artifacts feed, add the following t
 | vstsFeedPackagePublish      | The package name. Must be lower case. Use only letters, numbers, and dashes.                                              |
 | packagePublishDescription   | Description of the package content.                                                                                       |
 
-To publish packages to an Azure Artifacts feed from your pipeline, you must add the **Project Collection Build Service** identity as a **Feed Publisher (Contributor)** from your feed's settings. If you have set up your pipeline to run at project scope, you'll also need to add the project-level build identity **[Project name] Build Service ([Organization name])** as either a **Feed Reader** or a **Feed Publisher (Contributor)**. See [Adding users/groups permissions to a feed](../../artifacts/feeds/feed-permissions.md) for more details.
+To publish packages to an Azure Artifacts feed from your pipeline, the pipeline identity must have the **Feed Publisher (Contributor)** role on the feed. For more information, see [Pipelines permissions](../../artifacts/feeds/feed-permissions.md#pipelines-permissions).
 
-To publish to an external feed, you must first create a service connection to authenticate with your feed. see [Manage service connection](../library/service-endpoints.md) for more details. 
+To publish to an external feed, you must first create a service connection to authenticate with your feed. For more information, see [Manage service connection](../library/service-endpoints.md). 
 
 # [Classic](#tab/classic)
 
-To publish your Universal Package, add the **Universal Package** task to your pipeline and fill out the required fields as follows
+To publish your Universal Package, add the **Universal Package** task to your pipeline and fill out the required fields as follows:
 
 - **Command:** Publish
 - **Path to file(s) to publish:** The path to the list of files to be published. Default: `$(Build.ArtifactStagingDirectory)`.
@@ -63,7 +63,7 @@ To publish your Universal Package, add the **Universal Package** task to your pi
 
 [!INCLUDE [package management permissions](includes/package-management-permissions-for-web-build.md)]
 
-To publish to an external feed, you must first create a service connection to point to that feed. see [Manage service connection](../library/service-endpoints.md) for details. 
+To publish to an external feed, you must first create a service connection to point to that feed. For more information, see [Manage service connection](../library/service-endpoints.md). 
 
 ---
 
@@ -71,7 +71,7 @@ To publish to an external feed, you must first create a service connection to po
 
 Universal Packages follow the semantic versioning specification and can be identified by their names and version numbers. Semantic version numbers are composed of three numeric components, Major, Minor, and Patch, in the format: `Major.Minor.Patch`.
 
-The minor version number is incremented when new features are added that are backward compatible with previous versions, in this case, you increment the minor version and reset the patch version to 0 (`1.4.17` to `1.5.0`). The major version number is incremented when there are significant changes that could break compatibility with previous versions. In this case, you increment the major version and reset the minor and patch versions to 0 (`2.6.5` to `3.0.0`). The patch version number should be incremented when only bug fixes or other small changes are made that do not affect compatibility with previous versions (`1.0.0` to `1.0.1`). 
+The minor version number is incremented when new features are added that are backward compatible with previous versions, in this case, you increment the minor version and reset the patch version to 0 (`1.4.17` to `1.5.0`). The major version number is incremented when there are significant changes that could break compatibility with previous versions. In this case, you increment the major version and reset the minor and patch versions to 0 (`2.6.5` to `3.0.0`). The patch version number should be incremented when only bug fixes or other small changes are made that don't affect compatibility with previous versions (`1.0.0` to `1.0.1`). 
 
 When publishing a new package, the Universal Packages task will automatically select the next major, minor, or patch version for you.
 
@@ -79,9 +79,9 @@ When publishing a new package, the Universal Packages task will automatically se
 
 To enable versioning for your package, add a `versionOption` input to your YAML file. The options for publishing a new package version are: `major`, `minor`, `patch`, or `custom`.
 
-Selecting `custom` enables you to manually specify your package version. The other options will get the latest package version from your feed and increment the chosen version segment by 1. So if you have a *testPackage 1.0.0*, and select the *major* option, your new package will be *testPackage 2.0.0*. If you select the *minor* option, your package version will be *1.1.0*, and if you select the *patch* option, your package version will be *1.0.1*.
+Selecting `custom` enables you to manually specify your package version. The other options get the latest package version from your feed and increment the chosen version segment by 1. So if you have a *testPackage 1.0.0*, and select the *major* option, your new package will be *testPackage 2.0.0*. If you select the *minor* option, your package version will be *1.1.0*, and if you select the *patch* option, your package version will be *1.0.1*.
 
-Note that if you choose the `custom` option, you must also specify a `versionPublish` value as follows:
+If you choose the `custom` option, you must also specify a `versionPublish` value as follows:
 
 ```yaml
 - task: UniversalPackages@0
@@ -153,13 +153,13 @@ steps:
     versionDownloadExternal: 1.0.0
 ```
 
-| Argument                       | Description                                                                                                                              |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| feedsToUse                     | Set the value to `external` when downloading from an external source.                                                                    |
-| externalFeedCredentials        | Name of the service connection to the external feed. See [manage service connections](../library/service-endpoints.md) for more details. |
-| feedDownloadExternal           | Name of the external feed.                                                                                                               |
-| packageDownloadExternal        | The package name you wish to download.                                                                                                   |
-| versionDownloadExternal        | The version of the package you wish to download.                                                                                         |
+| Argument                       | Description                                                                                                                                   |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| feedsToUse                     | Set the value to `external` when downloading from an external source.                                                                         |
+| externalFeedCredentials        | Name of the service connection to the external feed. For more information, see [manage service connections](../library/service-endpoints.md). |
+| feedDownloadExternal           | Name of the external feed.                                                                                                                    |
+| packageDownloadExternal        | The package name you wish to download.                                                                                                        |
+| versionDownloadExternal        | The version of the package you wish to download.                                                                                              |
 
 #### [Classic](#tab/classic/)
 
@@ -177,7 +177,7 @@ To download a Universal Package, add the **Universal Package** task to your pipe
 ---
 
 > [!TIP]
-> You can use wildcards to download the latest version of a Universal Package. See [Download the latest version](../../artifacts/quickstarts/universal-packages.md#download-the-latest-version) for more details.
+> You can use wildcards to download the latest version of a Universal Package. For more information, see [Download the latest version](../../artifacts/quickstarts/universal-packages.md#download-the-latest-version).
 
 ## Related articles
 

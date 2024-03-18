@@ -13,11 +13,11 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables you to publish various package types to your feeds and install packages from both feeds and public registries like npmjs.com. Before we can authenticate with Azure Artifacts, we need to configure our *.npmrc* file, which stores the feed URLs and credentials that Npm uses. This file can be used to customize the behavior of the Npm client, such as setting up proxies, specifying default package locations, or configuring private package feeds. The *.npmrc* file is located in the user's home directory and can also be created at the project level to override the default settings. By editing the *.npmrc* file, users can customize their Npm experience and make it more tailored to their needs.
+Azure Artifacts enables you to publish various package types to your feeds and install packages from both feeds and public registries like npmjs.com. Before we can authenticate with Azure Artifacts, we need to configure our *.npmrc* file, which stores the feed URLs and credentials that npm uses. This file can be used to customize the behavior of the npm client, such as setting up proxies, specifying default package locations, or configuring private package feeds. The *.npmrc* file is located in the user's home directory and can also be created at the project level to override the default settings. By editing the *.npmrc* file, users can customize their npm experience and make it more tailored to their needs.
 
 ## Project setup
 
-For best practice, we suggest using two separate configuration files. The first file is used to authenticate with Azure Artifacts, while the second file is stored locally and contains your credentials. To set up the second file, place it in your home directory on your development machine and include all of your registry credentials. By using this approach, the Npm client can easily retrieve your credentials for authentication, allowing you to share your configuration file while keeping your credentials secure. These steps will walk you through the process of setting up the first configuration file:
+For best practice, we suggest using two separate configuration files. The first file is used to authenticate with Azure Artifacts, while the second file is stored locally and contains your credentials. To set up the second file, place it in your home directory on your development machine and include all of your registry credentials. By using this approach, the npm client can easily retrieve your credentials for authentication, allowing you to share your configuration file while keeping your credentials secure. These steps will walk you through the process of setting up the first configuration file:
 
 ### [Windows](#tab/windows/)
 
@@ -63,7 +63,7 @@ For best practice, we suggest using two separate configuration files. The first 
 
 1. Select **Packages**, and then select **Connect to feed**.
 
-    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed in TFS.":::
+    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed.":::
 
 1. Select **npm** from the left navigation pane.
 
@@ -172,7 +172,7 @@ For authentication with your pipeline, Azure Artifacts recommends using the [npm
 
 1. Select **Build and Release**, and then select **Builds**.
 
-    :::image type="content" source="../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png" alt-text="Screenshot showing how to access your builds in TFS.":::
+    :::image type="content" source="../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png" alt-text="Screenshot showing how to access your builds.":::
 
 1. Select your pipeline, and then select **Edit**.
 
@@ -186,7 +186,7 @@ For authentication with your pipeline, Azure Artifacts recommends using the [npm
 
 1. Select your *.npmrc* file.
 
-    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-file.png" alt-text="Screenshot showing how to add your .npmrc file to the npm authenticate task.":::
+    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-file.png" alt-text="Screenshot showing how to configure the npm authenticate task to use your .npmrc file.":::
 
 1. Select **Save & queue** when you're done.
 
@@ -213,14 +213,14 @@ For authentication with your pipeline, Azure Artifacts recommends using the [npm
 
 ## Troubleshoot
 
-##### vsts-npm-auth is not recognized
+##### vsts-npm-auth isn't recognized
 
 If you encounter the following error while running your project:
 
 - Cmd: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
 - PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
 
-Then it's likely that the npm modules folder is not added to your path. To resolve this issue, rerun the Node.js setup and make sure to select the `Add to PATH` option.
+Then it's likely that the npm modules folder isn't added to your path. To resolve this issue, rerun the Node.js setup and make sure to select the `Add to PATH` option.
 
 :::image type="content" source="./media/node-setup.png" alt-text="A Screenshot showing how to set up node.js.":::
 
@@ -236,7 +236,7 @@ vsts-npm-auth -config .npmrc -F
 
 ##### Reset vsts-npm-auth
 
-Follow the steps below to modify/reset your vsts-npm-auth credentials:
+Follow these steps to modify/reset your vsts-npm-auth credentials:
 
 - Uninstall vsts-npm-auth.
 

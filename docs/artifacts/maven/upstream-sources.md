@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Artifacts upstream sources allows you to use a single feed for hosting both the packages you produce and those from public registries such as Maven Central. By enabling upstream sources in your feed, Azure Artifacts will automatically save a copy of any package installed from upstream. This ensures continued accessibility for your development, even in the event of a public registry outage. Additionally, Azure Artifacts supports various other Maven upstream sources, including the Google Maven Repository, Gradle Plugins, and JitPack.
+Using Azure Artifacts upstream sources allows you to use a single feed for hosting both the packages you produce and packages from public registries such as Maven Central. When you add upstream sources to your feed, Azure Artifacts saves a copy of any package installed from upstream. This ensures continued accessibility for your development, even if a public registry suffers an outage. Additionally, Azure Artifacts supports various other Maven upstream sources, including the Google Maven Repository, Gradle Plugins, and JitPack.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ Using Azure Artifacts upstream sources allows you to use a single feed for hosti
 
 ## Enable upstream sources
 
-If you don't have a feed already, follow the instructions below to create one, and make sure that you check the *upstream sources* checkbox to enable them. If you already have a feed, move to the [next step](#add-maven-central-upstream) to add Maven Central as an upstream source.
+If you don't have a feed already, follow these instructions to create one, and make sure that you check the *upstream sources* checkbox to enable them. If you already have a feed, move to the [next step](#add-maven-central-upstream) to add Maven Central as an upstream source.
 
 [!INCLUDE [](../includes/create-feed.md)]
 
@@ -51,7 +51,7 @@ If you checked the *upstream sources* checkbox when creating your feed, Maven Ce
 
 Before saving packages from Maven Central, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](pom-and-settings.md) to set up your Maven project and connect to your feed.
 
-In this example, we will save the Kotlin Datetime Library from Maven Central.
+In this example, we'll save the Kotlin Datetime Library from Maven Central.
 
 1. Navigate to Maven Central at `https://mvnrepository.com/`.
 
