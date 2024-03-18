@@ -7,7 +7,7 @@ ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 11/16/2023
+ms.date: 03/15/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -25,6 +25,7 @@ Share your feedback and ideas with us, or join our communities. We're always wor
 |Report a bug   | Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [Azure DevOps Server](https://developercommunity.visualstudio.com/spaces/22/index.html).        |
 |Suggest a feature or fix    | Submit your idea or issue through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [Azure DevOps Server](https://developercommunity.visualstudio.com/content/idea/post.html?space=22).        |
 | Contact Support     | Contact Support by creating a support ticket. To create a support ticket, visit the [Microsoft Azure Support Ticket page](https://azure.microsoft.com/support/create-ticket/) and follow the instructions to create and manage support requests for Azure DevOps Services.                      |
+|Report security flaws | See the [Microsoft webpage for reporting a computer security vulnerability.](https://www.microsoft.com/msrc/faqs-report-an-issue?rtc=1)                                |
 
 ## Documentation feedback
 
@@ -37,8 +38,8 @@ Enter more detailed feedback in the **Tell us more** section. Make sure you don'
 If you just want to vent about the product or the documentation, that's okay. It helps us a lot to know when you're happy or unhappy with an experience. Provide details so we can better understand what we're doing right or wrong.
 
 * Provide a little context. What problem were you trying to solve? At what point did it go wrong?
-* What's your role? We don't need personal or professional details. Are you a dev? A manager? A business owner? When we understand our audience, we can come up with better solutions for you and other customers doing similar work.
-* What version of the product were you using? What other products were you using with it?
+* Include your role. We don't need personal or professional details. Are you a dev? A manager? A business owner? When we understand our audience, we can come up with better solutions for you and other customers doing similar work.
+* Include the version of the product you're using. What other products were you using with it?
 
 The best feedback we get is clear and precise. For example:
 
