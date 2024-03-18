@@ -18,7 +18,7 @@ ms.custom: devdivchpfy22
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 = azure-devops"
+::: moniker range=">= azure-devops-2020 > azure-devops"
 
 1. In a browser, go to your Azure DevOps Server.
 1. Select your collection.
