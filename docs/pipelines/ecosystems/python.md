@@ -40,7 +40,7 @@ You don't have to set up anything for Azure Pipelines to build Python projects. 
 
 ::: moniker-end
 
-## 1 - Fork the sample code
+## 1. Fork the sample code
 
 ::: moniker range="azure-devops-2019"
 
@@ -60,7 +60,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ```
 
-## 2 - Create your pipeline
+## 2. Create your pipeline
 
 ::: moniker range=">=azure-devops"
 
@@ -99,7 +99,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ::: moniker-end
 
-## 3 - Customize your pipeline
+## 3. Customize your pipeline
 
 ::: moniker range=">=azure-devops"
 
@@ -275,7 +275,7 @@ Edit the `azure-pipelines.yml` to match your project configuration.
 
 ::: moniker-end
 
-## 4 - Run your pipeline
+## 4. Run your pipeline
 
 Save and run your pipeline. 
 
