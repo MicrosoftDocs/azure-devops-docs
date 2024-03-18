@@ -4,83 +4,29 @@ ms.service: azure-devops-artifacts
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 02/22/2024
+ms.date: 03/15/2024
 ---
 
-::: moniker range=">= azure-devops"
+::: moniker range=">= azure-devops-2019"
 
-1. Sign in to your Azure DevOps organization, and then go to your project.
-
-1. Select **Artifacts**, and then select **Create Feed**.
-
-    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a  feed.":::
-
-1. Enter the following information for your feed:
-
-    1. Enter a descriptive **Name** for your feed.
-    1. Define its **Visibility** (indicating who can view packages within the feed).
-    1. Select whether to use packages from public sources such as pypi.org.
-    1. Specify the **Scope** of your feed.  
-
-1. Select **Create**.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2022"
-
-1. Go to your Azure DevOps collection, select your project.
-
-1. Select **Artifacts**, and then select **Create Feed**.
-
-    :::image type="content" source="../media/new-feed-dialog-devops-server.png" alt-text="A screenshot showing how to create a  feed in DevOps Server.":::
-
-1. Enter the following information for your feed:
-
-    1. Enter a descriptive **Name** for your feed.
-    1. Define its **Visibility** (indicating who can view packages within the feed).
-    1. Select whether to use packages from public sources such as pypi.org.
-    1. Specify the **Scope** of your feed.  
-
-1. Select **Create**.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-1. Go to your Azure DevOps collection, select your project.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
 
-1. Enter the following information for your feed:
+1. Enter a descriptive **Name** for your feed and define its **Visibility** (indicating who can view packages within the feed). Specify the **Scope** of your feed, and if you wish to include packages from public sources, mark the **Upstream sources** checkbox.
 
-    1. Enter a descriptive **Name** for your feed.
-    1. Define its **Visibility** (indicating who can view packages within the feed).
-    1. Select whether to use packages from public sources such as pypi.org.
-    1. Specify the **Scope** of your feed.  
+1. Select **Create** when you're done.
 
-1. Select **Create**.
+    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Go to your Azure DevOps collection, select your project.
-
-1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
-
-1. Enter the following information for your feed:
-
-    1. Enter a descriptive **Name** for your feed.
-    1. Define its **Visibility** (indicating who can view packages within the feed).
-    1. Choose whether to use packages from public sources such as pypi.org.
-
-1. Select **Create**.
+> [!NOTE]
+> By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-Azure Artifacts comes preinstalled in TFS 2018. The first time using your feed you might be prompted to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses).
+Azure Artifacts comes pre-installed in TFS 2018. If this is your first time using your feed, you might be prompted to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses).
 
 1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 
