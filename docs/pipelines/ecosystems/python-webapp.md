@@ -178,7 +178,7 @@ Create your Azure App Service web app from the Cloud Shell in the Azure portal.
 
 Create a new project in Azure DevOps to host your pipeline.
 
-[!INCLUDE [create-project](./includes/create-project.md)
+[!INCLUDE [create-project](includes/create-project.md)
 
 ::: moniker-end
 
