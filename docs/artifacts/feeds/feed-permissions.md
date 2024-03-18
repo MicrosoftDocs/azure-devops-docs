@@ -62,7 +62,7 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 1. Select **Permissions**, and then select **Add user/group**.
 
-    :::image type="content" source="media/editfeeddialog1.png" alt-text="A screenshot showing feed permissions in TFS.":::
+    :::image type="content" source="media/editfeeddialog1.png" alt-text="A screenshot showing the permissions configured on a feed.":::
 
 1. Add new user(s)/group(s) and choose the appropriate **Role** for them.
 
@@ -134,7 +134,7 @@ If you want to completely hide your packages, you must restrict access to both t
 ## Pipelines permissions
 
 To access your feed from your pipeline, the [corresponding build identity](../../pipelines/process/access-tokens.md#scoped-build-identities) must have the necessary permissions.
-If your pipeline is unable to access your feed, you may need to add the corresponding build identity to your feed's permissions.
+If your pipeline is unable to access your feed, you might need to add the corresponding build identity to your feed's permissions.
 
 > [!TIP]
 > - The project-level build identity is named `[Project name] Build Service ([Organization name])`, for example `FabrikamFiber Build Service (codesharing-demo)`.

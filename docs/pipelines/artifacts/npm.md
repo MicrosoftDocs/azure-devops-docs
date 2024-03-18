@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feeds or to public registries such as *npmjs.com*. In this article, you will learn how to publish your npm packages using YAML and Classic pipelines.
+Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feeds or to public registries such as *npmjs.com*. In this article, you'll learn how to publish your npm packages using YAML and Classic pipelines.
 
 ## Publish to Azure Artifacts feeds
 
@@ -23,7 +23,7 @@ Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feed
 ::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]
-> The **Project Collection Build Service** and your project's **Build Service** identity must be set to **Feed Publisher (Contributor)** to publish your packages to a feed using Azure Pipelines. See [Add new users/groups](../../artifacts/feeds/feed-permissions.md#feed-settings) for more details.
+> The **Project Collection Build Service** and your project's **Build Service** identity must be set to **Feed Publisher (Contributor)** to publish your packages to a feed using Azure Pipelines. For more information, see [Add new users/groups](../../artifacts/feeds/feed-permissions.md#feed-settings).
 
 ```yaml
 - task: Npm@1
@@ -33,7 +33,7 @@ Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feed
     publishFeed: <FEED_NAME>        ## For project-scoped feeds, use: <PROJECT_NAME>/<FEED_NAME> 
 ```
 
-- **publishRegistry**: Options: *useExternalRegistry*, *useFeed*.  Select *useFeed* to use a feed within your organization.
+- **publishRegistry**: Options: *useExternalRegistry*, *useFeed*. Select *useFeed* to use a feed within your organization.
 - **publishFeed**: Required when publishRegistry = useFeed. The feed you want to publish to.
 
 > [!TIP]
@@ -42,7 +42,7 @@ Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feed
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -51,7 +51,7 @@ YAML is not supported in TFS.
 
     :::image type="content" source="./media/add-npm-task.png" alt-text="A screenshot showing how to find and add the npm task.":::
 
-1. Name your task and select **Publish** from the dropdown menu. Select your package.json path, your **Registry location** and your **Target registry**
+1. Name your task and select **Publish** from the dropdown menu. Select your package.json path, your **Registry location**, and your **Target registry**
 
     :::image type="content" source="./media/npm-publish.png" alt-text="A screenshot showing how to configure the npm publish task.":::
 
@@ -70,7 +70,7 @@ To publish your packages to a public npm registry such as *npmjs.com*, you must 
 
     :::image type="content" source="./media/create-service-connection.png" alt-text="Screenshot showing how to create a new service connection":::
 
-1. Select **npm** and then select **Next**. Fill out the required fields, and then select **Save** when you are done.
+1. Select **npm** and then select **Next**. Fill out the required fields, and then select **Save** when you're done.
 
 #### [YAML](#tab/yaml/)
 
@@ -90,7 +90,7 @@ To publish your packages to a public npm registry such as *npmjs.com*, you must 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -99,7 +99,7 @@ YAML is not supported in TFS.
 
     :::image type="content" source="./media/add-npm-task.png" alt-text="Screenshot showing how to find and add the npm task":::
 
-1. Name your task, and then select **Publish** from the dropdown menu. Select your *package.json* path, your **Registry location** and your **External registry**.
+1. Name your task, and then select **Publish** from the dropdown menu. Select your *package.json* path, your **Registry location**, and your **External registry**.
 
     :::image type="content" source="./media/npm-publish-registry.png" alt-text="A screenshot showing how to configure the npm publish task to publish packages to public registries.":::
 

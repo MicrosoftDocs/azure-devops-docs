@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With upstream sources, you can use a single feed to store the packages you generate and the packages you consume from public registries such as npmjs.com, NuGet.org, Maven Central, and PyPI.org. Once you've enabled an upstream source, every time you install a package from the public registry, Azure Artifacts will save a copy of that package in your feed.
+With upstream sources, you can use a single feed to store the packages you generate and the packages you consume from public registries such as npmjs.com, NuGet.org, Maven Central, and PyPI.org. Once an upstream source is added to a feed, every time you install a package from the public registry through the feed, Azure Artifacts saves a copy of that package in your feed.
 
 ## Create a new feed and enable upstream sources
 
@@ -23,11 +23,11 @@ With upstream sources, you can use a single feed to store the packages you gener
 
     :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot of the create feed button.":::
 
-1. Give your feed a **Name** and choose its **visibility**, and **scope** settings. Make sure you check the  **Include packages from common public sources** checkbox to enable upstream sources.
+1. Give your feed a **Name** and choose its **visibility**, and **scope** settings. Make sure you check the **Include packages from common public sources** checkbox to enable upstream sources.
 
     :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="Screenshot showing the create new feed window panel.":::
 
-1. Select **Create** when you are done.
+1. Select **Create** when you're done.
 
 > [!IMPORTANT]
 > Maven snapshots are not supported in upstream sources.
@@ -43,9 +43,9 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 1. Select **Add upstream source**.
 
-1. Select **Public source**, and then select the **Public source**. (Example *Maven Central (https://repo.maven.apache.org/maven2/)* for Maven central)
+1. Select **Public source**, and then select the **Public source** (for example, *Maven Central (https://repo.maven.apache.org/maven2/)*).
 
-1. Select **Add** when you are done.
+1. Select **Add** when you're done.
 
 > [!NOTE]
 > Azure Artifacts support Maven Central, Google Maven Repository, Gradle Plugins, and JitPack as upstream sources for Maven.
@@ -62,9 +62,9 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 1. Select the feed you would like to add from the dropdown menu.
 
-1. Select the package types you want to use, select the **View** and name your upstream source.
+1. Select the package types you want to use, select the **View**, and name your upstream source.
 
-1. Select **Save** when you are done.
+1. Select **Save** when you're done.
 
     :::image type="content" source="../media/add-upstream-same-org.png" alt-text="A screenshot showing how to add a feed in your organization as an upstream source.":::
 
@@ -82,7 +82,7 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 1. Select the **Package type(s)** you want to use and enter an **Upstream source name**.
 
-1. Select **Save** when you are done.
+1. Select **Save** when you're done.
 
     :::image type="content" source="../media/add-upstream-diff-org.png" alt-text="A screenshot showing how to add a feed in a different organization as an upstream source.":::
 
@@ -96,7 +96,7 @@ Using Visual Studio, we can now install packages from the upstream sources we co
 
 ## Example: install npm packages from upstream sources using the CLI
 
-Run the following command in an elevated command prompt window to install your npm package from upstream.
+Run the following command in a command prompt window to install your npm package from upstream.
 
 ```Command
 npm install --save <package>

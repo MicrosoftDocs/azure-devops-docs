@@ -103,7 +103,7 @@ YAML isn't supported in TFS.
 - - -
 
 > [!NOTE]
-> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. For more information, see, the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
+> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. For more information, see [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
 
 
 ```yaml
@@ -118,7 +118,7 @@ inputs:
 
 ## Publish NuGet packages
 
-To publish packages to an Azure Artifacts feed from your pipeline, you must set the **Project Collection Build Service** identity to be a **Feed Publisher (Contributor)** on your feed. For more information, see [Configure feed settings](../../artifacts/feeds/feed-permissions.md#feed-settings). 
+To publish packages to an Azure Artifacts feed from your pipeline, the pipeline identity must have the **Feed Publisher (Contributor)** role on the feed. For more information, see [Pipelines permissions](../../artifacts/feeds/feed-permissions.md#pipelines-permissions).
 
 #### [YAML](#tab/yaml/)
 
@@ -136,7 +136,7 @@ steps:
     allowPackageConflicts: true
 ```
 
-To publish a package to an external NuGet feed, you must first create a service connection to connect to that feed.  To create a service connection:
+To publish a package to an external NuGet feed, you must first create a service connection to connect to that feed. To create a service connection:
 
 1. Go to **Project settings** > **Service connections** > **New service connection**. 
 1. Select **NuGet**, and then select **Next**. 
@@ -189,7 +189,7 @@ YAML isn't supported in TFS.
 To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your pipeline definition and configure it as follows:
 
 - **Command**: the NuGet command to run.
-- **Path to NuGet package(s) to publish**:the pattern to match or path to nupkg files to be uploaded.
+- **Path to NuGet package(s) to publish**: the pattern to match or path to nupkg files to be uploaded.
 - **Target feed location**: You can publish to your current organization or an external NuGet server.
 - **Target feed**: Select the feed that you want to publish to.
 
@@ -204,9 +204,9 @@ To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your p
 
 - - -
 
-## Publish to NuGet.Org
+## Publish to NuGet.org
 
-1. [Generate an API key](../../artifacts/nuget/publish-to-nuget-org.md#generate-an-api-key)
+1. [Generate an API key](../../artifacts/nuget/publish-to-nuget-org.md#generate-an-api-key).
 
 1. Navigate to your Azure DevOps project and then select ![gear icon](../../media/icons/gear-icon.png) **Project settings**.
 
