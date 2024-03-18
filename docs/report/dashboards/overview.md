@@ -87,7 +87,7 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
 ---
 :::row:::
    :::column span="3":::
-      **Dashboards** (View)
+      Dashboards (View)
    :::column-end:::
    :::column span="1":::
        ✔️  
@@ -98,7 +98,7 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
 :::row-end:::
 :::row:::
    :::column span="3":::
-      **Dashboards** (Create and edit)
+      Dashboards (Create and edit)
    :::column-end:::
    :::column span="1":::
         
@@ -109,7 +109,7 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
 :::row-end:::
 :::row:::
    :::column span="3":::
-      **Charts**, **Widgets** (View)
+      Charts, Widgets (View)
    :::column-end:::
    :::column span="1":::
        ✔️  
@@ -120,7 +120,7 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
 :::row-end:::
 :::row:::
    :::column span="3":::
-      **Charts**, **Widgets** (Add and configure)
+      Charts, Widgets (Add and configure)
    :::column-end:::
    :::column span="1":::
         
@@ -131,7 +131,7 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
 :::row-end:::
 :::row:::
    :::column span="3":::
-      **In-context reports**
+      In-context reports
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -143,7 +143,7 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="3":::
-      **Analytic views**
+      Analytics views
    :::column-end:::
    :::column span="1":::
         
@@ -154,7 +154,7 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
 :::row-end:::
 :::row:::
    :::column span="3":::
-      **Power BI reports**
+      Power BI reports
    :::column-end:::
    :::column span="1":::
        ✔️
@@ -167,7 +167,7 @@ Users with **Stakeholder** access get restricted privileges, granting them acces
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="3":::
-      **SQL Server reports**
+      SQL Server reports
    :::column-end:::
    :::column span="1":::
        ✔️
@@ -232,7 +232,7 @@ You can open a shared query, create a chart, and add it to the dashboard. After 
 
 For more information, see [Define a query](../../boards/queries/using-queries.md) and [Track progress with status and trend query-based charts](charts.md).
 
-**Sample Agile tool lightweight charts**
+#### Sample Agile tool lightweight charts
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -247,7 +247,7 @@ For more information, see [Define a query](../../boards/queries/using-queries.md
 
 ::: moniker-end
 
-**Sequence for adding query-based charts to a dashboard**
+#### Sequence for adding query-based charts to a dashboard
 
 Select one of the following boxes to open the corresponding article.
 
@@ -263,7 +263,7 @@ For more information, see:
 - [Create manual test cases](../../test/create-test-cases.md)
 - [Track test status charts](../../test/track-test-status.md#charts)
 
-**Sample lightweight test charts**
+#### Sample lightweight test charts
   
 ![Screenshot that shows Web Team test plan is a chart that shows counts of tests in various stages. Tests by Suite breaks down the same tests by test suite.](media/gs-monitor-test-charts.png)
 
@@ -329,7 +329,7 @@ There's no chart or widget that tracks changes to sprint scope. However, you can
 
 With the code tile widgets, you can monitor the activity occurring within a repository or branch folder. Build history displays a histogram of all builds run for a specific build pipeline. Bar colors use green for completed, red for failed, and yellow for completed without tests.
 
-**Code, build, and release chart widgets**
+#### Code, build, and release chart widgets
 
 ![Screenshot that shows Code tile widget.](media/widget-code-tile.png)&nbsp;&nbsp;&nbsp;![Screenshot that shows Pull request widget.](media/widget-catalog-pull-request.png)
 ![Screenshot that shows Build history widget.](media/widget-build-history-chart.png)&nbsp;&nbsp;&nbsp;&nbsp;![Screenshot that shows Deployment status widget.](media/widget-deployment-status.png)
@@ -357,11 +357,11 @@ The Analytics service is the reporting platform for Azure DevOps. As described i
 
 ::: moniker range=">= azure-devops-2019"
 
-**Sample Lead time widget**
+#### Sample Lead time widget
 
 ![Screenshot that shows Lead time widget.](media/lead-time-control-chart.png)
 
-For more information, see the following articles:
+For more information, see:
 
 - [Widgets based on Analytics](../dashboards/analytics-widgets.md)
 - [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget)
@@ -440,7 +440,7 @@ You can add the in-context reports to a dashboard by using the copy to dashboard
 > You can't add the in-context reports to a dashboard. However, you might find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data, which you can add to the dashboard.
 ::: moniker-end
 
-For more information about these reports, see the following articles:
+For more information about these reports, see:
 
 - [Cumulative flow](cumulative-flow.md)
 - [Team velocity](team-velocity.md)
@@ -456,7 +456,7 @@ Several in-context reports are provided for Azure Pipelines. These reports deriv
 
 :::image type="content" source="../../pipelines/reports/media/pipelines-reports/analyticstab.png" alt-text="Screenshot that shows the Analytics tab.":::
 
-For more information on each in-context Analytics report for pipeline runs, see the following articles:
+For more information on each in-context Analytics report for pipeline runs, see:
 ::: moniker-end
 
 ::: moniker range="azure-devops"
