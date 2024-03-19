@@ -105,37 +105,37 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 Update the Python versions.
 
-    ```yaml
-    trigger:
-    - main
-    
-    pool:
-      vmImage: ubuntu-latest
-    strategy:
-      matrix:
-        Python310:
-          python.version: '3.10'
-        Python311:
-          python.version: '3.11'
-        Python312:
-          python.version: '3.12'
-    
-    steps:
-    - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '$(python.version)'
-      displayName: 'Use Python $(python.version)'
-    
-    - script: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-      displayName: 'Install dependencies'
-    
-    - script: |
-        pip install pytest pytest-azurepipelines
-        pytest
-      displayName: 'pytest'
-    ```
+```yml
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+strategy:
+  matrix:
+    Python310:
+      python.version: '3.10'
+    Python311:
+      python.version: '3.11'
+    Python312:
+      python.version: '3.12'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python $(python.version)'
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+  displayName: 'Install dependencies'
+
+- script: |
+    pip install pytest pytest-azurepipelines
+    pytest
+  displayName: 'pytest'
+```
 
 ::: moniker-end
 
