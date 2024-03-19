@@ -48,44 +48,50 @@ In this article, you learn how to:
 
 Fork the sample repository at [https://github.com/Microsoft/python-sample-vscode-flask-tutorial](https://github.com/Microsoft/python-sample-vscode-flask-tutorial) to your GitHub account.
 
-### Test your app locally
-
-Build and run the app locally to make sure it works.
-
 On your local host, clone your GitHub repository. Use the following command, replacing `<repository-url>` with the URL of your forked repository.
 
    ```git
    git clone <repository-url>
    ```
 
-To build and run the sample app, run the following commands.
+### Test your app locally
 
-# [Linux](#tab/linux)
+Build and run the app locally to make sure it works.
 
-```bash
-python -m venv .env
-source .env/bin/activate
-pip install --upgrade pip
-pip install -r ./requirements.txt
-export set FLASK_APP=hello_app.webapp
-python3 -m flask run
-```
+1. Change to the cloned repository folder.
 
-# [PowerShell](#tab/windows-powershell)
+   ```bash
+   cd python-sample-vscode-flask-tutorial
+   ```
 
-```powershell
-py -m venv .env
-.env\scripts\activate
-pip install -r ./requirements.txt
-$env:FLASK_APP = "hello_app.webapp"
-flask run
-```
+1. Build and run the app
 
----
+    # [Linux](#tab/linux)
+    
+    ```bash
+    python -m venv .env
+    source .env/bin/activate
+    pip install --upgrade pip
+    pip install -r ./requirements.txt
+    export set FLASK_APP=hello_app.webapp
+    python3 -m flask run
+    ```
+    
+    # [PowerShell](#tab/windows-powershell)
+    
+    ```powershell
+    py -m venv .env
+    .env\scripts\activate
+    pip install -r ./requirements.txt
+    $env:FLASK_APP = "hello_app.webapp"
+    flask run
+    ```
+    
+    ---
 
-To view the app, open a browser window and go to *http://localhost:5000*. Verify that you see the title `Visual Studio Flask Tutorial`. 
+1. To view the app, open a browser window and go to *http://localhost:5000*. Verify that you see the title `Visual Studio Flask Tutorial`. 
 
-When you're finished, close the browser window and stop the Flask server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+1. When you're finished, close the browser window and stop the Flask server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 ### Open a Cloud Shell
 
@@ -200,7 +206,6 @@ Create a new project in Azure DevOps to host your pipeline.
 
 ::: moniker-end
 
-::: moniker-end
 
 ::: moniker range="< azure-devops"
 
@@ -836,9 +841,6 @@ To trigger a pipeline run, commit a change to the repository. For example, you c
     1. Select **Deployment Center** and select the **Logs** tab. 
     1. Verify that the new deployment is listed.
 
-## Run a post-deployment script
-
-A post-deployment script can, for example, define environment variables expected by the app code. Add the script as part of the app code and execute it using startup command. 
 
 ## Considerations for Django
 
