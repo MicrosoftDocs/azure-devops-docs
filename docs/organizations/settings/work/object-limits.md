@@ -56,6 +56,7 @@ A work item revision limit of 10,000 is in effect for updates made through the R
 | Query results | 20,000 items |
 | Query length | 32,000 characters |
 | Shared queries under a folder | 999 queries |
+| Favorite queries per project | 200 queries |
 
 The default maximum attachment size is 4 MB. You can [change the maximum size up to 2 GB](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).
 ::: moniker-end
