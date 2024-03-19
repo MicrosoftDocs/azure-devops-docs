@@ -26,7 +26,8 @@ You don't have to set up anything for Azure Pipelines to build Python projects. 
 ::: moniker range=">=azure-devops"
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
-* An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
+* An Azure DevOps organization[Create one for free](../get-started/pipelines-sign-up.md). 
+* An Azure DevOps project. Create one using the [Azure DevOps Project Creation Wizard](../../organizations/projects/create-project).
 * An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
 ::: moniker-end
@@ -34,8 +35,9 @@ You don't have to set up anything for Azure Pipelines to build Python projects. 
 ::: moniker range="< azure-devops"
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
-* An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
-* A self-hosted agent. To create one, see ee [Self-hosted agents](../agents/agents.md#self-hosted-agents).
+* An Azure DevOps Server.
+* An Azure DevOps project. Create one using the [Azure DevOps Server Project Creation Wizard](../../organizations/projects/create-project). 
+* A self-hosted agent. To create one, see [Self-hosted agents](../agents/agents.md#self-hosted-agents).
 * Python versions installed on your self-hosted agent. To learn how to install Python on your agent, see [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0#how-can-i-configure-a-self-hosted-agent-to-use-this-task).
 
 ::: moniker-end
@@ -65,7 +67,6 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 ::: moniker range=">=azure-devops"
 
 1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines) and select **Start free**. Your browser goes to `https://dev.azure.com/<your-organization-name>`.
-1. Select your organization.
 
 1. Go to your project and select **Pipelines** > **Create pipeline**.
 
@@ -83,7 +84,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ::: moniker range="< azure-devops"
 
-1. In a browser to your DevOps Server collection.
+1. In a browser, go to your DevOps Server collection.
 
 1. Go to your project and select **Pipelines** > **Create a new pipeline**.
 
@@ -105,7 +106,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 Update the Python versions.
 
-```yml
+```yaml
 trigger:
 - main
 
@@ -146,7 +147,7 @@ Customize the `azure-pipelines.yml` to match your project configuration.
 1. If you have a different agent pool, change the pool `name` parameter.
 1. Change the Python versions to match the versions installed on your self-hosted agent.  
 
-    ```yml
+    ```yaml
     trigger:
     - main
     
@@ -203,7 +204,7 @@ Customize the `azure-pipelines.yml` to match your project configuration.
           pip install pytest pytest-azurepipelines
           pytest
         displayName: 'pytest'
-        ```
+      ```
 
 ::: moniker-end
 
@@ -215,7 +216,7 @@ Edit the `azure-pipelines.yml` to match your project configuration.
 1. If you have a different agent pool, change the `pool:` keyword value to your pool name.
 1. Update the Python version references to the versions installed on your self-hosted agent.  
 
-    ```yml
+    ```yaml
     trigger:
     - main
     
