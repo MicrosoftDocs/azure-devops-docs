@@ -71,7 +71,7 @@ SQL Server Reporting Services is the legacy reporting solution available with Az
 Users with **Stakeholder** access get restricted privileges, granting them access to only those features outlined in the following table. For more information, see [About access levels](../../organizations/security/access-levels.md). In addition to access levels, certain features require permissions to execute.
 
 > [!NOTE]
-> Data displayed within a chart or widget is subject to permissions granted to the signed-in user. For more information, see [FAQs on Azure DevOps dashboards, charts, and reports, Access and permissions](faqs.yml).
+> Data displayed within a chart or widget is subject to permissions granted to the signed-in user. For more information, see [FAQs on Azure DevOps dashboards, charts, and reports in the Access and permissions section](faqs.yml).
 
 :::row:::
    :::column span="3":::
@@ -487,7 +487,7 @@ You can also use Power BI and OData to create reports based on pipeline and test
 
 The **Pipeline pass rate** report provides a trend of pipeline failure and task failure of the pipeline. You can view the pass rate of the pipeline over a configurable period of time, for example, 7, 14, or 30 days. Find more details in **Task failure details**, which not only highlights the trend but also lists the top failing tasks.
 
-:::image type="content" source="../../pipelines/reports/media/pipelines-reports/top-failing.png" alt-text="Screenshot that shows a pipeline pass rate report summary.":::
+:::image type="content" source="../../pipelines/reports/media/pipelines-reports/top-failing.png" alt-text="Screenshot that shows a summary of the pipeline pass rate report.":::
 
 For more information, see [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
 
