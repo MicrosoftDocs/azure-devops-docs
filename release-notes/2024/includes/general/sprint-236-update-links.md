@@ -5,5 +5,5 @@ ms.date: 3/20/2024
 ms.topic: include
 ---
 
-- [PAT lifespan API to return PAT with maximum lifespan](#pat-lifespan-api-to-return-pat-with-maximum-lifespan)
+- [Personal access token (PAT) APIs to return maximum allowed lifespan upon receiving date past allowed range](#personal-access-token-pat-apis-to-return-maximum-allowed-lifespan-upon-receiving-date-past-allowed-range)
 
