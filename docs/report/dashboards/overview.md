@@ -33,7 +33,7 @@ The following features provide support for viewing Azure DevOps data through the
 - **Dashboards**: Customizable interactive signboards that provide real-time information. Dashboards are associated with a team or a project and display configurable charts and widgets.
 - **Charts**: Query-based status or trend charts derived from a work item query or test results.
 - **Widgets**: Items that display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. Also, you can add widgets provided through [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
-- **In-context reports**: System-generated charts that support specific services. Examples are team velocity, sprint burndown, the Cumulative Flow Diagram (CFD), and the Test failures report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics.
+- **In-context reports**: System-generated charts that support specific services. Examples are team velocity, sprint burndown, the Cumulative Flow Diagram (CFD), and the **Test failures** report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -196,7 +196,7 @@ Set [dashboard permissions at the team level](dashboard-permissions.md) for team
 
 **Power BI Integration and Analytics views**
 
-You set [permissions](../powerbi/analytics-security.md) for the service at the project level, and for shared **Analytics views** at the object level.
+You set [permissions](../powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level.
 
 [!INCLUDE [temp](../../organizations/security/includes/analytics.md)]
 
@@ -228,7 +228,7 @@ Select one of the following boxes to open the corresponding article.
 
 With flat-list queries, you can create various charts to monitor status, progress, and trends. Before you monitor work progress and trends, [plan your project and make progress on work you're tracking](../../boards/backlogs/create-your-backlog.md).
 
-You can open a shared query, create a chart, and add it to the dashboard. After the chart is added to the dashboard, you can change the **Chart for work items** widget configuration to resize or change the chart parameters. Or, from the dashboard, you can add a **Chart for work items** widget and choose a shared query and set the chart parameters. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.
+You can open a shared query, create a chart, and add it to the dashboard. After the chart is added to the dashboard, you can change the **Chart for work items** widget configuration to resize or change the chart parameters. Or, from the dashboard, you can add a **Chart for work items** widget and choose a shared query and set the chart parameters. You have multiple chart types from which to choose. Status charts include pie, bar, column, stacked bar, and pivot. Trend charts include stacked area, line, and area.
 
 For more information, see [Define a query](../../boards/queries/using-queries.md) and [Track progress with status and trend query-based charts](charts.md).
 
@@ -243,7 +243,7 @@ For more information, see [Define a query](../../boards/queries/using-queries.md
 
 ::: moniker range="tfs-2018"
 
-![Screenshot that shows Active bugs chart.](media/gs-monitor-charts-active-bugs.png)
+![Screenshot that shows an Active bugs chart.](media/gs-monitor-charts-active-bugs.png)
 
 ::: moniker-end
 
@@ -265,7 +265,7 @@ For more information, see:
 
 #### Sample lightweight test charts
   
-![Screenshot that shows Web Team test plan is a chart that shows counts of tests in various stages. Tests by Suite breaks down the same tests by test suite.](media/gs-monitor-test-charts.png)
+![Screenshot that shows the Web Team test plan is a chart showing counts of tests in various stages. Tests by Suite breaks down the same tests by test suite.](media/gs-monitor-test-charts.png)
 
 ## Widgets
 
@@ -321,7 +321,7 @@ There's no chart or widget that tracks changes to sprint scope. However, you can
 
 ### Sample Cumulative Flow Diagram widget
 
-![Screenshot that shows Cumulative Flow Diagram widget.](media/cfd-exampe-rolling-30-days.png)
+![Screenshot that shows a Cumulative Flow Diagram widget.](media/cfd-exampe-rolling-30-days.png)
 
 ::: moniker-end
 
@@ -331,8 +331,8 @@ With the code tile widgets, you can monitor the activity occurring within a repo
 
 #### Code, build, and release chart widgets
 
-![Screenshot that shows Code tile widget.](media/widget-code-tile.png)&nbsp;&nbsp;&nbsp;![Screenshot that shows Pull request widget.](media/widget-catalog-pull-request.png)
-![Screenshot that shows Build history widget.](media/widget-build-history-chart.png)&nbsp;&nbsp;&nbsp;&nbsp;![Screenshot that shows Deployment status widget.](media/widget-deployment-status.png)
+![Screenshot that shows a Code tile widget.](media/widget-code-tile.png)&nbsp;&nbsp;&nbsp;![Screenshot that shows a Pull request widget.](media/widget-catalog-pull-request.png)
+![Screenshot that shows a Build history widget.](media/widget-build-history-chart.png)&nbsp;&nbsp;&nbsp;&nbsp;![Screenshot that shows a Deployment status widget.](media/widget-deployment-status.png)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -359,7 +359,7 @@ The Analytics service is the reporting platform for Azure DevOps. As described i
 
 #### Sample Lead time widget
 
-![Screenshot that shows Lead time widget.](media/lead-time-control-chart.png)
+![Screenshot that shows a Lead time widget.](media/lead-time-control-chart.png)
 
 For more information, see:
 
@@ -381,14 +381,14 @@ Azure Boards provides several in-context reports that derive from Analytics data
 Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns.
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot that shows Open CFD Analytics.](media/cfd/analytics-cfd-azure-devops.png)
+> ![Screenshot that shows open CFD analytics.](media/cfd/analytics-cfd-azure-devops.png)
 
 ### Velocity
 
 Use the interactive controls to choose the count or sum field and number of iterations.
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot that shows Open Velocity Analytics.](media/velocity/analytics-velocity-azure-devops.png)
+> ![Screenshot that shows open Velocity analytics.](media/velocity/analytics-velocity-azure-devops.png)
 
 ### Sprint Burndown Trend
 
@@ -408,13 +408,13 @@ Azure Boards provides several in-context reports that derive from the work-track
 The CFD report shows the count of work items in the backlog based on their state over time.
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot that shows Opened CFD chart.](media/cfd/data-store-cumulative-flow-opened.png)
+> ![Screenshot that shows an opened CFD chart.](media/cfd/data-store-cumulative-flow-opened.png)
 
 ### Velocity
 
 Velocity is based on the values entered for **Effort**, **Story Points**, or **Size** fields for work items that belong to the **Requirement** category.
 
-![Screenshot that shows Web portal, Velocity chart showing seven sprints of in-progress and completed work.](media/team-velocity-chart-web-7-iterations.png)
+![Screenshot that shows a web portal Velocity chart showing seven sprints of in-progress and completed work.](media/team-velocity-chart-web-7-iterations.png)
 
 ### Sprint burndown
 
@@ -422,7 +422,7 @@ Each sprint provides access to two charts. The first [tracks capacity](../../boa
 
 | Capacity bars | Burndown  |
 |-------| ----- |
-|![Screenshot that shows Capacity bars.](../../boards/sprints/media/ALM_DS_CapacityBars_S.png) | ![Screenshot that shows Burndown chart.](../../boards/sprints/media/ALM_DS_SprntBD_Chrt_S.png)  |
+|![Screenshot that shows Capacity bars.](../../boards/sprints/media/ALM_DS_CapacityBars_S.png) | ![Screenshot that shows a Burndown chart.](../../boards/sprints/media/ALM_DS_SprntBD_Chrt_S.png)  |
 
 ::: moniker-end
 
@@ -430,7 +430,7 @@ Each sprint provides access to two charts. The first [tracks capacity](../../boa
 
 You can add the in-context reports to a dashboard by using the copy to dashboard option from the report's context menu.
 
-:::image type="content" source="media/add-charts/add-analytics-chart-abbreviated.png" alt-text="Screenshot that shows Analytics in-context report, Copy to dashboard action.":::
+:::image type="content" source="media/add-charts/add-analytics-chart-abbreviated.png" alt-text="Screenshot that shows an Analytics in-context report with the Copy to dashboard action.":::
 
 ::: moniker-end
 
@@ -452,7 +452,7 @@ For more information about these reports, see:
 
 ## In-context reports: Pipelines and Test
 
-Several in-context reports are provided for Azure Pipelines. These reports derive from Analytics data. Open a pipeline (or release summary for Test failures) to view the reports and select the **Analytics** tab. Select **View full report** on a summary card for a detailed report.
+Several in-context reports are provided for Azure Pipelines. These reports derive from Analytics data. Open a pipeline (or release summary for **Test failures**) to view the reports and select the **Analytics** tab. Select **View full report** on a summary card for a detailed report.
 
 :::image type="content" source="../../pipelines/reports/media/pipelines-reports/analyticstab.png" alt-text="Screenshot that shows the Analytics tab.":::
 
@@ -495,7 +495,7 @@ For more information, see [Pipeline pass rate report](../../pipelines/reports/pi
 
 The **Test failures** report provides a granular view of the top failing tests in the pipeline, along with the failure details. Summary charts are also provided for builds that indicate code coverage and test failures or success.
 
-:::image type="content" source="../../pipelines/test/media/test-analytics/test-failures.png" alt-text="Screenshot that shows Test Analytics detail view.":::
+:::image type="content" source="../../pipelines/test/media/test-analytics/test-failures.png" alt-text="Screenshot that shows a Test analytics detail view.":::
 
 For more information, see [Test failures report](../../pipelines/test/test-analytics.md#test-failures).
 
@@ -505,7 +505,7 @@ The **Pipeline duration** report provides the duration trend of a pipeline. It a
 
 :::image type="content" source="../../pipelines/reports/media/pipelines-reports/duration-summary.png" alt-text="Screenshot that shows pipeline duration summary.":::
 
-:::image type="content" source="../../pipelines/reports/media/pipelines-reports/duration-trend.png" alt-text="Screenshot that shows pipeline duration trend.":::
+:::image type="content" source="../../pipelines/reports/media/pipelines-reports/duration-trend.png" alt-text="Screenshot that shows a pipeline duration trend.":::
 
 For more information, see [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report).
 
@@ -515,9 +515,9 @@ For more information, see [Pipeline duration report](../../pipelines/reports/pip
 
 ## In-context reports: Pipeline test failures
 
-Azure Pipelines provides an in-context Test failures report, derived from Analytics data. Open a release summary to view the report and select the **Analytics** tab. Select the summarized card for a detailed report. For more information, see [Test failures report](../../pipelines/reports/pipelinereport.md#test-failures-report).
+Azure Pipelines provides an in-context **Test failures** report, derived from Analytics data. Open a release summary to view the report and select the **Analytics** tab. Select the summarized card for a detailed report. For more information, see [Test failures report](../../pipelines/reports/pipelinereport.md#test-failures-report).
 
-:::image type="content" source="../../pipelines/reports/media/pipelines-reports/analyticstab-server-2019.png" alt-text="Screenshot that shows Analytics tab, Azure DevOps Server 2019.":::
+:::image type="content" source="../../pipelines/reports/media/pipelines-reports/analyticstab-server-2019.png" alt-text="Screenshot that shows the Analytics tab in Azure DevOps Server 2019.":::
 
 ::: moniker-end
 

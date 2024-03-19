@@ -72,17 +72,17 @@ After you write the query in Visual Studio Code, you should see syntax highlight
 1. To test the OData query, place your cursor anywhere in the query text and select **View** > **Command Palette**.
 1. In the search box, enter **odata** to bring up all the OData commands.
 
-   :::image type="content" source="media/odataquery-commandpallette.png" alt-text="Screenshot that shows the Visual Studio Code OData extension, Command Palette.":::
+   :::image type="content" source="media/odataquery-commandpallette.png" alt-text="Screenshot that shows the command palette for the Visual Studio Code OData extension.":::
 
 1. Select **OData: Open**. This action combines the multiline query into a one-line URL and opens it in your default browser.
 
    - The OData query result set is in JSON format. To view the results, install the JSON Formatter extension for your browser. Several options are available for both Chrome and Microsoft Edge.
 
-      :::image type="content" source="media/odataquery-jsonoutput.png" alt-text="Screenshot that shows the Visual Studio Code OData extension, JSON output.":::
+      :::image type="content" source="media/odataquery-jsonoutput.png" alt-text="Screenshot that shows the JSON output for the Visual Studio Code OData extension.":::
 
    - If the query has an error, the Analytics service returns an error in JSON format. For example, this error states that the query selected a field that doesn't exist.
 
-      :::image type="content" source="media/odataquery-jsonerror.png" alt-text="Screenshot that shows the Visual Studio Code OData extension, JSON error.":::
+      :::image type="content" source="media/odataquery-jsonerror.png" alt-text="Screenshot that shows the JSON error for the Visual Studio Code OData extension.":::
 
 After you verify that the query works correctly, you can run it from Power BI.
 
@@ -97,11 +97,11 @@ Before you use the query in Power BI, you must convert the multiline OData query
 > [!NOTE]
 > In your *filename.odata* file, you might want to first create a copy of the multiline query text and then run **OData: Combine** on the copy. Do this step first because there's no way to convert the single-line query back to a readable multiline query.
 
-1. In Visual Studio Code, place your query anywhere in the query text, and then select **View** > **Command Palette**. In the search box, enter **odata** and then, in the results list, select **OData: Combine**.
+1. In Visual Studio Code, place your query anywhere in the query text, and then select **View** > **Command Palette**. In the search box, enter **odata**. Then in the results list, select **OData: Combine**.
 
    The multiline query gets converted into a single-line query.
 
-      :::image type="content" source="media/odataquery-combineto1line.png" alt-text="Screenshot that shows the Visual Studio Code OData extension, combined to a single-line query.":::
+      :::image type="content" source="media/odataquery-combineto1line.png" alt-text="Screenshot that shows the Visual Studio Code OData extension combined to a single-line query.":::
 
 1. Copy the entire line for use in the next section.
 
@@ -117,21 +117,21 @@ Before you use the query in Power BI, you must convert the multiline OData query
 
    Power BI displays a preview page.
 
-   :::image type="content" source="media/odataquery-powerbi-preview.png" alt-text="Screenshot that shows the Power BI OData Feed Data Preview page.":::
+   :::image type="content" source="media/odataquery-powerbi-preview.png" alt-text="Screenshot that shows the preview page for the Power BI OData feed.":::
 
 ### Specify query options
 
-1. Select **Edit** on the preview page to open the Power Query Editor.
+1. Select **Edit** on the preview page to open Power Query Editor.
 
-   :::image type="content" source="media/odataquery-powerbi-queryeditor.png" alt-text="Screenshot that shows the Power BI - OData Feed - Power Query Editor.":::
+   :::image type="content" source="media/odataquery-powerbi-queryeditor.png" alt-text="Screenshot that shows Power Query Editor open for the Power BI OData feed.":::
 
-1. Select **Advanced Editor** in the ribbon.
+1. Select **Advanced Editor** on the ribbon.
 
-   :::image type="content" source="media/AdvancedEditor.png" alt-text="Screenshot that shows the Power BI - OData Feed - Select Advanced Editor.":::
+   :::image type="content" source="media/AdvancedEditor.png" alt-text="Screenshot that shows Advanced Editor selected for the Power BI OData feed.":::
 
 1. Scroll horizontally to view the `[Implementation="2.0"]` parameter in the **Query** pane.
 
-   :::image type="content" source="media/odataquery-powerbi-advancededitor1.png" alt-text="Screenshot that shows the Power BI OData Feed Advanced Editor - scrolled right.":::
+   :::image type="content" source="media/odataquery-powerbi-advancededitor1.png" alt-text="Screenshot that shows the Power BI OData feed with the Advanced Editor scrolled to the right.":::
 
 1. Replace `[Implementation="2.0"]` with the following string:
 
@@ -146,9 +146,9 @@ Before you use the query in Power BI, you must convert the multiline OData query
     > - Instruct the Analytics service to omit any values that are null, which improves query performance.
     > Power Query attempts to resolve null values as errors by generating another query for every null value it encounters. This action can result in thousands of queries, which quickly exceeds your usage threshold, beyond which your user account gets throttled.
     
-    The following action is required for Power BI to successfully run an OData query against the Azure DevOps Analytics Service.
+    The following action is required for Power BI to successfully run an OData query against Azure DevOps Analytics Service.
 
-1. Select **OK** to close the Advanced Editor and return to the Power BI Power Query Editor. You can use the Power Query Editor to perform the following optional actions:
+1. Select **OK** to close the Advanced Editor and return to Power BI Power Query Editor. You can use Power Query Editor to perform the following optional actions:
  
    - Rename the `Query1` query as something more specific.
    - Transform columns to a specific type. Power BI autodetects the type, but you might want to convert columns to a specific data type.

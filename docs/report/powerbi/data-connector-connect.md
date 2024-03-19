@@ -1,7 +1,7 @@
 ---
-title: Connect to the Power BI Data Connector
+title: Connect to Power BI Data Connector
 titleSuffix: Azure DevOps
-description: Learn how to connect to the Power BI Data Connector and Analytics to access Azure DevOps data.
+description: Learn how to connect to Power BI Data Connector and Analytics to access Azure DevOps data.
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
@@ -11,11 +11,11 @@ monikerRange: '>= azure-devops-2019'
 ms date: 10/04/2021
 ---
 
-# Connect Analytics with the Power BI Data Connector
+# Connect Analytics with Power BI Data Connector
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-In this article, you learn how to establish a seamless connection between Power BI and Azure DevOps by using the Data Connector. This integration allows you to extract valuable insights from your Azure DevOps data and create compelling reports within Power BI. The Power BI Data Connector uses [Analytics views](what-are-analytics-views.md).
+In this article, you learn how to establish a seamless connection between Power BI and Azure DevOps by using Data Connector. This integration allows you to extract valuable insights from your Azure DevOps data and create compelling reports within Power BI. Power BI Data Connector uses [Analytics views](what-are-analytics-views.md).
 
 [!INCLUDE [temp](includes/analytics-views-warning.md)]
 
@@ -26,7 +26,7 @@ In this article, you learn how to establish a seamless connection between Power 
 - Get familiar with [What is Analytics](what-is-analytics.md) and the [knowledge base of Power BI articles](/power-bi/).
 - Install the *Power BI Desktop* *October 2018 Update* or a [newer version](https://aka.ms/pbidesktopstore).
 - Ensure that you're added as a project member. If you aren't, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
-- Ensure that **Boards** is enabled. If not, **Analytics views** doesn't display. To reenable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+- Ensure that **Boards** is enabled. If not, **Analytics views** doesn't appear. To reenable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Ensure that you have [permissions required to access Analytics](analytics-security.md). If you're a member of the project Contributors group, you have permission.
 - [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report.
 
@@ -39,9 +39,9 @@ In this article, you learn how to establish a seamless connection between Power 
 - Ensure that you're a member of a project with Basic access or higher. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 - Ensure that you're added as a project member. If you aren't, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
 - [Verify that Analytics](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true) is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrators group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
-- Ensure that **Boards** is enabled. If not, **Analytics views** doesn't display. To reenable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+- Ensure that **Boards** is enabled. If not, **Analytics views** doesn't appear. To reenable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Ensure that you have [permissions required to access Analytics](analytics-security.md). If you're a member of the project Contributors group, you have permission.
-- [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report.
+- [Create an Analytics view](analytics-views-create.md) for which you want to create a Power BI report.
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Create reports based on the loaded data. After the load operation finishes, you 
 
 <a id="q-a">  </a>
 
-## Q & A
+## Q&A
 
 Find answers to common questions about Power BI Data Connector and Analytics error messages.
 
@@ -70,7 +70,7 @@ Find answers to common questions about Power BI Data Connector and Analytics err
 **A:** You might feel challenged reading error messages coming from the connector because they typically contain extra contextual information. If the load operation fails, then the message starts with "Failed to save modifications to the server...". When you see it, search for **&#91;DataSource.Error&#93; Azure DevOps...:**.
 The following example shows the error message returned from the connector. The most important part of the error message is "Query result exceeds maximum size. Reduce the number of records by applying additional filters."
 
-:::image type="content" source="media/QueryExceedsPreferredMaxSizeException.png" alt-text="Screenshot that shows the error message Query result exceeds maximum size.":::
+:::image type="content" source="media/QueryExceedsPreferredMaxSizeException.png" alt-text="Screenshot that shows the Query result exceeds maximum size error message.":::
 
 <a id="QueryExceedsPreferredMaxSizeException">  </a>
 
@@ -113,7 +113,7 @@ This error typically occurs when your project has a large number of work items. 
 
 For example, if the URL you use is `https://dev.azure.com/fabrikam-fiber-inc/Fabrikam-Fiber-Git/Device`, then `Fabrikam-Fiber-Git` is the project name and it should be used in the parameter. `Device` is the team name.
 
-![Screenshot that shows the project not found error.](media/ProjecNotFoundError.png)
+![Screenshot that shows the Project not found error.](media/ProjecNotFoundError.png)
 
 <!-- ENDSECTION -->
 
@@ -123,5 +123,5 @@ For example, if the URL you use is `https://dev.azure.com/fabrikam-fiber-inc/Fab
 - [Power BI integration overview](overview.md)
 - [Analytics security](analytics-security.md)
 - [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
-- [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
+- [Dataset design for Power BI Data Connector](data-connector-dataset.md)
 - [Data Connector - Example reports](data-connector-examples.md)

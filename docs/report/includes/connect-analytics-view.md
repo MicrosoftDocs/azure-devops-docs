@@ -15,7 +15,7 @@ ms.date: 08/10/2020
 
    :::image type="content" source="../powerbi/media/powerbi-successful-organizational-signin.png" alt-text="Screenshot that shows the Power BI Connection dialog.":::
 
-1. Select **Get Data** > **Online Services**, **Azure DevOps (Boards only)** for cloud services or **Azure DevOps Server (Boards only)** for on-premises > **Connect**. Analytics views only support queries against work items and test cases.
+1. Select **Get Data** > **Online Services**, **Azure DevOps (Boards only)** for cloud services or select **Azure DevOps Server (Boards only)** for on-premises. Then select **Connect**. Analytics views only support queries against work items and test cases.
 
    :::image type="content" source="../powerbi/media/data-connector/get-data-azure-devops.png" alt-text="Screenshot that shows the Get Data flow.":::
 
@@ -31,9 +31,9 @@ ms.date: 08/10/2020
 	::: moniker-end
 
      > [!IMPORTANT]
-     > Don't confuse the team name with the project name, which is a common mistake. For example, if the URL you use is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber-Git/Device`", then `Fabrikam-Fiber-Git` is the project name and `Device` is the team name.
+     > Don't confuse the team name with the project name, which is a common mistake. For example, if the URL that you use is `http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber-Git/Device`, then `Fabrikam-Fiber-Git` is the project name and `Device` is the team name.
 
-	After successful sign in, Power BI verifies if your user credentials have permissions to access the specified project. If any errors arise, see the [Q & A](../powerbi/data-connector-connect.md#q-a) section for answers to the most common problems.
+	After successful sign-in, Power BI verifies if your user credentials have permissions to access the specified project. If any errors arise, see the [Q&A](../powerbi/data-connector-connect.md#q-a) section for answers to the most common problems.
 
 ## Select the Analytics view
 
@@ -43,7 +43,7 @@ ms.date: 08/10/2020
 
 	Here you select **Stories - Last 30 days**, which filters for product backlog items.
 
-	![Screenshot that shows the Navigator dialog, Choose an Analytics view.](/azure/devops/report/powerbi/media/create-report/choose-view.png)
+	![Screenshot that shows the Navigator dialog with the Choose an Analytics view.](/azure/devops/report/powerbi/media/create-report/choose-view.png)
 
 	> [!NOTE]
 	> Because you verified the view in the previous section, the view should load. If the view doesn't load, it's most likely because the dataset is too large. Return to the view under the **Analytics view** in the web portal and adjust the filters to decrease the size of the dataset.
@@ -51,7 +51,7 @@ ms.date: 08/10/2020
 1. Select the view.
 
 	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows the Navigator dialog, default views.](/azure/devops/report/powerbi/media/default-views/navigator-dialog-default-views.png)
+	> ![Screenshot that shows the Navigator dialog with default views.](/azure/devops/report/powerbi/media/default-views/navigator-dialog-default-views.png)
 
 	> [!NOTE]
 	> The preview shown for any selected views in the navigator can be truncated depending on the number of fields selected and the size of the dataset. The data is truncated only for the preview and won't affect the full data refresh.
@@ -61,9 +61,9 @@ ms.date: 08/10/2020
 	- Select the checkbox next to the **Work Items - Today** table and select **Load**.
 
 	> [!NOTE]
-	> [Analytics views](../powerbi/what-are-analytics-views.md) don't apply filters defined by using Power BI on the server. Any filters applied in Power BI limit the data shown to end users but don't reduce the amount of data retrieved from Analytics. If the filter is intended to reduce the size of the dataset, it should be applied by [customizing the view](../powerbi/analytics-views-create.md).
+	> [Analytics views](../powerbi/what-are-analytics-views.md) don't apply filters defined by using Power BI on the server. Any filters applied in Power BI limit the data shown to end users but don't reduce the amount of data retrieved from Analytics. If the filter is intended to reduce the size of the dataset, apply it by [customizing the view](../powerbi/analytics-views-create.md).
 
-1. Wait for the data to load. You can observe its progress by looking at the status messages, which appear directly under the table name. If you see any errors, see the [Q & A](../powerbi/data-connector-connect.md#q-a) section for answers to the most common problems.
+1. Wait for the data to load. You can observe its progress by looking at the status messages, which appear directly under the table name. If you see any errors, see the [Q&A](../powerbi/data-connector-connect.md#q-a) section for answers to the most common problems.
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot that shows the Apply query changes loading dialog.](/azure/devops/report/powerbi/media/power-bi-data-loading-onprem.png)
