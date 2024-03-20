@@ -253,7 +253,7 @@ A service connection allows you to create a connection to provide authenticated 
 1. Select your authentication method and select **Next**. 
 1. In the **New Azure service connection** dialog, enter the information specific to the selected authentication method. For more information about authentication methods, see [Connect to Azure by using an Azure Resource Manager service connection](../library/connect-to-azure.md).
   
-    For example, if you're using a **Workload Identity federation (automatic)** or **Service principal (automatic)** authentication method, enter the following information
+    For example, if you're using a **Workload Identity federation (automatic)** or **Service principal (automatic)** authentication method, enter the required information.
 
     :::image type="content" source="../media/azure-service-connection-settings-devops-services.png" alt-text="New service connection dialog box.":::
 
@@ -285,7 +285,9 @@ The new connection appears in the **Service connections** list, and is ready for
     :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Select Azure Resource Manager service connection.":::
 
 1. On **New Azure service connection**, select **Service principal (manual)** and select **Next**    
-1. On the next dialog, the following information.
+1. On the next dialog, fill in the required information.
+
+    :::image type="content" source="../media/azure-service-connection-settings-devops-server.png" alt-text="New service connection dialog box.":::
 
 
     |**Field**|**Description**|
@@ -302,8 +304,6 @@ The new connection appears in the **Service connections** list, and is ready for
 1. Enter a **Service connection name**.
 1. Ensure **Grant access permissions to all pipelines** is selected.
 1. Select **Verify and save**.
-
-    :::image type="content" source="../media/azure-service-connection-settings-devops-server.png" alt-text="New service connection dialog box.":::
 
 The new connection appears in the **Service connections** list, and is ready for Azure Pipelines to use from the project.
 
