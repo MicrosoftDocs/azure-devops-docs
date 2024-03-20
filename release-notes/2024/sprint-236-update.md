@@ -1,13 +1,13 @@
 ---
-title: TBD
+title: Resource utilization notifications in Azure Pipelines agent
 author: ckanyika
 ms.author: ckanyika
 ms.date: 3/20/2024
-description: TBD
+description: Resource utilization notifications in Azure Pipelines agent
 ---
-# TBD
+# Resource utilization notifications in Azure Pipelines agent
 
- 
+With this update, the Azure Pipelines agent now provides notifications if you encounter resource constraints, such as limitations on memory or disk space.
 
 Check out the release notes for details.
 
@@ -48,4 +48,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-Dan Hellem
+Silviu Andrica
