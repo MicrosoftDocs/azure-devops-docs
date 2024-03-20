@@ -1,12 +1,12 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 3/20/2024
+ms.date: 3/21/2024
 ms.topic: include
 ---
 
-### Personal access token (PAT) APIs to return maximum allowed lifespan upon receiving date past allowed range
+### Personal access token (PAT) APIs to return maximum allowed lifespan 
 
-When managing personal access tokens (PATs) through the PAT management APIs, you may provide a ***"validTo"*** date for when the newly created or updated PAT should expire. If the ["Enforce maximum personal access token lifespan"](/azure/devops/organizations/accounts/manage-pats-with-policies-for-administrators?view=azure-devops#set-maximum-lifespan-for-new-pats) policy has been enabled and the provided ***"validTo"*** date is past the maximum allowed lifespan, we return back a PAT with the maximum allowed lifespan instead of an error.
+When managing personal access tokens (PATs) through the PAT management APIs, a ***"validTo"*** expiration date can be specified for newly created or updated PATs.  If the ["Enforce maximum personal access token lifespan"](/azure/devops/organizations/accounts/manage-pats-with-policies-for-administrators?view=azure-devops#set-maximum-lifespan-for-new-pats) policy has been enabled and the specified ***"validTo"*** date exceeds the policy's maximum lifespan limit, the system now automatically adjusts and issues a PAT with the maximum permitted lifespan, rather than producing an error.
 
-Previously, we returned a _PatLifespanPolicyViolation_ error if the ***"validTo"*** date was past the maximum allowed lifespan. This change allows apps and tools relying on these APIs to better handle PAT creation and update errors when the "maximum personal access token lifespan" policy is enabled.
+This is a change from the previous behavior, where going over the maximum allowed lifespan would cause a _PatLifespanPolicyViolation_ error. This change lets apps and tools that use these APIs deal with PAT creation and update errors more easily when the "maximum personal access token lifespan" policy is turned on.
