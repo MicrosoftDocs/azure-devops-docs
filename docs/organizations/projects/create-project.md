@@ -104,7 +104,7 @@ There isn't a limit on the number of projects that you can create within a proje
 
 ::: moniker-end
 
-::: moniker range="< azure-devops>"
+::: moniker range="< azure-devops"
 
 1. Sign in to your DevOps Server collection (```https://<your-devops-server>/<your-organization>```). 
 
