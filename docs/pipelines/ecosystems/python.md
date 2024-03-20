@@ -76,9 +76,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 1. When the list of repositories appears, select your Python sample repository.
 
-1. Azure Pipelines analyzes the code in your repository and recommends the `Python package` template for your pipeline. Select that template.
-
-1. Azure Pipelines generates a YAML file for your pipeline. 
+1. On the **Configure your pipeline** tab, select starter pipeline.
 
 ::: moniker-end
 
@@ -94,9 +92,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 1. When the list of repositories appears, select your Python sample repository.
 
-1. Azure Pipelines analyzes the code in your repository and recommends the `Python package` template for your pipeline. Select that template.
-
-1. Azure Pipelines generates a YAML file for your pipeline. 
+1. On the **Configure your pipeline** tab, select starter pipeline.
 
 ::: moniker-end
 
@@ -104,7 +100,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ::: moniker range=">=azure-devops"
 
-Update the Python versions.
+Replace the generated YAML with the following code. This code installs the required Python version and the dependencies, packages the Python package to a zip file published to your pipeline, and runs tests. 
 
 ```yaml
 trigger:
@@ -112,6 +108,7 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+
 strategy:
   matrix:
     Python310:
@@ -122,15 +119,31 @@ strategy:
       python.version: '3.12'
 
 steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '$(python.version)'
-  displayName: 'Use Python $(python.version)'
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '$(python.version)'
+    displayName: 'Use Python $(python.version)'
+  
+  - script: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+    displayName: 'Install dependencies'
+  
+  - task: ArchiveFiles@2
+    displayName: 'Archive files'
+    inputs:
+      rootFolderOrFile: '$(projectRoot)'
+      includeRootFolder: false
+      archiveType: zip
+      archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      replaceExistingArchive: true
+  
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'drop'
+      publishLocation: 'Container'
 
-- script: |
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
-  displayName: 'Install dependencies'
 
 - script: |
     pip install pytest pytest-azurepipelines
@@ -144,6 +157,7 @@ steps:
 
 Customize the `azure-pipelines.yml` to match your project configuration. 
 
+1. Replace the generated YAML with the following code. This code installs the required Python version and the dependencies, packages the Python package to a zip file published to your pipeline, and runs tests.
 1. If you have a different agent pool, change the pool `name` parameter.
 1. Change the Python versions to match the versions installed on your self-hosted agent.  
 
@@ -164,21 +178,36 @@ Customize the `azure-pipelines.yml` to match your project configuration.
     
     
     steps:
-    - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '$(python.version)'
-      displayName: 'Use Python $(python.version)'
-    
-    - script: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-      displayName: 'Install dependencies'
-    
-    - script: |
-        pip install pytest pytest-azurepipelines
-        pytest
-      displayName: 'pytest'
-    ```
+      - task: UsePythonVersion@0
+        inputs:
+          versionSpec: '$(python.version)'
+        displayName: 'Use Python $(python.version)'
+      
+      - script: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        displayName: 'Install dependencies'
+      
+      - script: |
+          pip install pytest pytest-azurepipelines
+          pytest
+        displayName: 'pytest'
+
+      - task: ArchiveFiles@2
+        displayName: 'Archive files'
+        inputs:
+          rootFolderOrFile: '$(projectRoot)'
+          includeRootFolder: false
+          archiveType: zip
+          archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+          replaceExistingArchive: true
+      
+      - task: PublishBuildArtifacts@1
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+          ArtifactName: 'drop'
+          publishLocation: 'Container'
+      ```
 
     If there's only a single version of Python on your agent, remove the matrix strategy and specify a single version of Python. For example:
   
@@ -193,86 +222,8 @@ Customize the `azure-pipelines.yml` to match your project configuration.
       - task: UsePythonVersion@0
         inputs:
           versionSpec: '3.11'
-        displayName: 'Use Python 3.11'
-      
-      - script: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-        displayName: 'Install dependencies'
-      
-      - script: |
-          pip install pytest pytest-azurepipelines
-          pytest
-        displayName: 'pytest'
-      ```
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-Edit the `azure-pipelines.yml` to match your project configuration.  
-
-1. Change the trigger branch to `main`.
-1. If you have a different agent pool, change the `pool:` keyword value to your pool name.
-1. Update the Python version references to the versions installed on your self-hosted agent.  
-
-    ```yaml
-    trigger:
-    - main
-    
-    pool: 'Default'
-    strategy:
-      matrix:
-        Python310:
-          python.version: '3.10'
-        Python311:
-          python.version: '3.11'
-        Python312:
-          python.version: '3.12'
-    
-    steps:
-    - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '$(python.version)'
-      displayName: 'Use Python $(python.version)'
-    
-    - script: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-      displayName: 'Install dependencies'
-    
-    - script: |
-        pip install pytest pytest-azurepipelines
-        pytest
-      displayName: 'pytest'
-    
+        displayName: 'Use Python 3.11'  
     ```
-
-    If there's only a single version of Python on your agent, remove the matrix strategy and specify a single version of Python. For example:
-  
-    ```yaml
-      trigger:
-      - main
-      
-      pool: 
-        name: '<your-pool-name or default>'
-      
-      steps:
-      - task: UsePythonVersion@0
-        inputs:
-          versionSpec: '3.11'
-        displayName: 'Use Python 3.11'
-      
-      - script: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-        displayName: 'Install dependencies'
-      
-      - script: |
-          pip install pytest pytest-azurepipelines
-          pytest
-        displayName: 'pytest'
-      ```
 
 ::: moniker-end
 
