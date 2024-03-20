@@ -126,7 +126,7 @@ Create your Azure App Service web app from the Cloud Shell in the Azure portal.
    cd python-sample-vscode-flask-tutorial
    ```
 
-1. Use the [az webapp up](/cli/azure/webapp#az-webapp-up) command to both provision the App Service and do the first deployment of your app.. Replace `<your-web-app-name>` with a name that is unique across Azure. Typically, you use a personal or company name along with an app identifier, such as `<your-name>-flaskpipelines`. The app URL becomes *\<your-appservice>.azurewebsites.net*.
+1. Use the [az webapp up](/cli/azure/webapp#az-webapp-up) command to both provision the App Service and do the first deployment of your app. Replace `<your-web-app-name>` with a name that is unique across Azure. Typically, you use a personal or company name along with an app identifier, such as `<your-name>-flaskpipelines`. The app URL becomes *\<your-appservice>.azurewebsites.net*.
 
    ```azurecli
    az webapp up --name <your-web-app-name>
@@ -182,7 +182,7 @@ Create your Azure App Service web app from the Cloud Shell in the Azure portal.
 
 ## Create an Azure DevOps project
 
-Create a new project in Azure DevOps to host your pipeline.
+Create a new Azure DevOps project.
 
 ::: moniker range=">=azure-devops"
 
