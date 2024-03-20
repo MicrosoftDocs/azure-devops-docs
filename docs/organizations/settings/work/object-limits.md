@@ -36,6 +36,7 @@ When defining work items or running queries, the following operational limits ap
 | Work item links assigned to a work item | 1,000 |
 | Work item tags assigned to a work item | 100 |
 | Work item revisions (REST API) | 10,000 | 
+| Favorite queries per project | 200 queries |
 
 A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restricts updates from the REST API, however, updates from the web portal are not affected.  
 
