@@ -27,7 +27,7 @@ You don't have to set up anything for Azure Pipelines to build Python projects. 
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An Azure DevOps organization[Create one for free](../get-started/pipelines-sign-up.md). 
-* An Azure DevOps project. Create one using the [Azure DevOps Project Creation Wizard](../../organizations/projects/create-project).
+* An Azure DevOps project. Create one using the [Azure DevOps Project Creation Wizard](../../organizations/projects/create-project.md).
 * An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
 ::: moniker-end
@@ -36,7 +36,7 @@ You don't have to set up anything for Azure Pipelines to build Python projects. 
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An Azure DevOps Server.
-* An Azure DevOps project. Create one using the [Azure DevOps Server Project Creation Wizard](../../organizations/projects/create-project). 
+* An Azure DevOps project. Create one using the [Azure DevOps Server Project Creation Wizard](../../organizations/projects/create-project.md). 
 * A self-hosted agent. To create one, see [Self-hosted agents](../agents/agents.md#self-hosted-agents).
 * Python versions installed on your self-hosted agent. To learn how to install Python on your agent, see [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0#how-can-i-configure-a-self-hosted-agent-to-use-this-task).
 
