@@ -213,25 +213,25 @@ Create a new Azure DevOps project.
 
 A service principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources. This access is restricted to the roles assigned to the service principal, giving you control over which resources can be accessed and at which level.
 
-1. To create a service principal, go to cloud shell (bash) and run the following command. Replace  `<service-principal-name>` with a name for your service principal, `<your-subscription-id>` with your subscription ID, and `<your-resource-group>` with the resource group for the web app.
+To create a service principal, go to cloud shell (bash) and run the following command. Replace  `<service-principal-name>` with a name for your service principal, `<your-subscription-id>` with your subscription ID, and `<your-resource-group>` with the resource group for the web app.
 
-   ```azurecli
-   az ad sp create-for-rbac --display-name <service-principal-name> --role contributor --scopes /subscriptions/<your-subscription-id>/resourceGroups/<your-resource-group>
-   ```
+```azurecli
+az ad sp create-for-rbac --display-name <service-principal-name> --role contributor --scopes /subscriptions/<your-subscription-id>/resourceGroups/<your-resource-group>
+```
 
-   The command returns a JSON object similar to the following example:
+The command returns a JSON object similar to the following example:
 
-  ```json
-  {
-    "clientId": "<client GUID>",
-    "clientSecret": "<string-value>",
-    "subscriptionId": "<scubscription GUID>",
-    "tenantId": "<tenant GUID>",
-    ...
-  }
-  ```
+```json
+{
+  "clientId": "<client GUID>",
+  "clientSecret": "<string-value>",
+  "subscriptionId": "<subscription GUID>",
+  "tenantId": "<tenant GUID>",
+  ...
+}
+```
 
-   Make note of the `clientId`, `clientSecret`, `subscriptionId`, and `tenantId` values. You need these values to create a service connection in the next section.
+Make note of the `clientId`, `clientSecret`, `subscriptionId`, and `tenantId` values. You need these values to create a service connection in the next section.
 
 ::: moniker-end
 
