@@ -16,7 +16,7 @@ To fix the service connection, you can [convert](https://aka.ms/azdo-rm-workload
 
 ### Resource utilization alerts for Azure Pipeline agents
 
-[Last October](/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization&preserve-view=true), we introduced the ability to monitor memory and disk space utilization by the Pipelines agent.
+[Last October](/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization), we introduced the ability to monitor memory and disk space utilization by the Pipelines agent.
 
 To inform you about these constraints, we've improved the visibility of resource constraint alerts:
 
@@ -27,4 +27,4 @@ Should you encounter messages indicating a lack of responsiveness from the agent
 
 > "We stopped hearing from the agent"
 
-To address this, enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops#configure-verbose-logs&preserve-view=true)  for more detailed tracking of resource utilization, helping to pinpoint where resources are being exhausted. For those utilizing a Self-hosted agent, ensuring that your agent is equipped with sufficient resources.
+To address this, enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops&branch=pr-en-us-6616&tabs=windows-agent#configure-verbose-logs)  for more detailed tracking of resource utilization, helping to pinpoint where resources are being exhausted. For those utilizing a Self-hosted agent, ensuring that your agent is equipped with sufficient resources.
