@@ -13,7 +13,7 @@ ms.custom: devx-track-python, freshness-fy22q2
 
 You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. 
 
-In this quickstart, you learn how to create a pipeline to build a Python app.
+In this quickstart, you learn how to create a pipeline to build and test a Python app.
 
 ::: moniker range=">=azure-devops"
 
@@ -26,7 +26,7 @@ You don't have to set up anything for Azure Pipelines to build Python projects. 
 ::: moniker range=">=azure-devops"
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
-* An Azure DevOps organization[Create one for free](../get-started/pipelines-sign-up.md). 
+* An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
 * An Azure DevOps project. Create one using the [Azure DevOps Project Creation Wizard](../../organizations/projects/create-project.md).
 * An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
@@ -52,7 +52,7 @@ Import this repo into your Git repo in Azure DevOps Server 2019.
 
 ::: moniker range=">=azure-devops-2020"
 
-Fork the following sample Python Flask tutorial to your GitHub account.
+Fork the following sample Python repository to your GitHub account.
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ::: moniker range=">=azure-devops"
 
-1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines) and select **Start free**. Your browser goes to `https://dev.azure.com/<your-organization-name>`.
+1. Go to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines) and select **Start free**. If prompted, sign in to your DevOps account.
 
 1. Go to your project and select **Pipelines** > **Create pipeline**.
 
@@ -74,9 +74,9 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 1. If you're redirected to GitHub to sign in, enter your GitHub credentials.
 
-1. When the list of repositories appears, select your Python sample repository.
+1. When the list of repositories appears, select your forked sample repository.
 
-1. On the **Configure your pipeline** tab, select starter pipeline.
+1. On the **Configure your pipeline** tab, select **Starter pipeline**.
 
 ::: moniker-end
 
@@ -90,9 +90,9 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 1. If you're redirected to GitHub to sign in, enter your GitHub credentials.
 
-1. When the list of repositories appears, select your Python sample repository.
+1. When the list of repositories appears, select your forked sample repository.
 
-1. On the **Configure your pipeline** tab, select starter pipeline.
+1. On the **Configure your pipeline** tab, select **Starter pipeline**.
 
 ::: moniker-end
 
@@ -100,7 +100,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ::: moniker range=">=azure-devops"
 
-Replace the generated YAML with the following code. This code installs the required Python version and the dependencies, packages the Python package to a zip file published to your pipeline, and runs tests. 
+Replace the generated azure-pipelines.yml file content with the following code. This code installs the required Python version and the dependencies, packages the Python package to a zip file published to your pipeline, and runs tests. 
 
 ```yaml
 trigger:
@@ -132,10 +132,10 @@ steps:
   - task: ArchiveFiles@2
     displayName: 'Archive files'
     inputs:
-      rootFolderOrFile: '$(projectRoot)'
+      rootFolderOrFile: $(System.DefaultWorkingDirectory)
       includeRootFolder: false
       archiveType: zip
-      archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId)-$(python.version).zip
       replaceExistingArchive: true
   
   - task: PublishBuildArtifacts@1
@@ -145,10 +145,10 @@ steps:
       publishLocation: 'Container'
 
 
-- script: |
-    pip install pytest pytest-azurepipelines
-    pytest
-  displayName: 'pytest'
+  - script: |
+      pip install pytest pytest-azurepipelines
+      pytest
+    displayName: 'pytest'
 ```
 
 ::: moniker-end
@@ -196,10 +196,10 @@ Customize the `azure-pipelines.yml` to match your project configuration.
       - task: ArchiveFiles@2
         displayName: 'Archive files'
         inputs:
-          rootFolderOrFile: '$(projectRoot)'
+          rootFolderOrFile: $(System.DefaultWorkingDirectory)
           includeRootFolder: false
           archiveType: zip
-          archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+          archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId)-$(python.version).zip
           replaceExistingArchive: true
       
       - task: PublishBuildArtifacts@1
@@ -221,8 +221,33 @@ Customize the `azure-pipelines.yml` to match your project configuration.
       steps:
       - task: UsePythonVersion@0
         inputs:
-          versionSpec: '3.11'
-        displayName: 'Use Python 3.11'  
+          versionSpec: '3.12'
+        displayName: 'Use Python 3.12'  
+      
+      - script: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        displayName: 'Install dependencies'
+      
+      - script: |
+          pip install pytest pytest-azurepipelines
+          pytest
+        displayName: 'pytest'
+
+      - task: ArchiveFiles@2
+        displayName: 'Archive files'
+        inputs:
+          rootFolderOrFile: $(System.DefaultWorkingDirectory)
+          includeRootFolder: false
+          archiveType: zip
+          archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+          replaceExistingArchive: true
+      
+      - task: PublishBuildArtifacts@1
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+          ArtifactName: 'drop'
+          publishLocation: 'Container'
     ```
 
 ::: moniker-end
@@ -235,9 +260,21 @@ Save and run your pipeline.
 1. In the **Save and run** dialog, select **Save and run**.
 1. From the **Summary** tab, you can see the status of your pipeline run.
 1. Verify that the build jobs ran successfully. 
-  
+
 :::image type="content" source="media/python-successful-jobs.png" alt-text="Screenshot of complete Python jobs.":::
 
+You can view your pipeline artifact by selecting **published** link in the **Summary** tab.
+
+:::image type="content" source="media/published-artifacts-link.png" alt-text="Pipeline published artifacts link.":::
+
+The **Artifacts** page shows the published artifacts.
+
+:::image type="content" source="media/pipeline-artifacts-list.png" alt-text="Pipeline published artifacts.":::
+
+To view the test results, select the **Tests** tab.
+
+:::image type="content" source="media/pipeline-test-results.png" alt-text="Pipeline test results.":::
+  
 ## Clean up
   
 When you're done with your quickstart, you can delete the project you created in Azure DevOps.
