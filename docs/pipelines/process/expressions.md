@@ -741,7 +741,7 @@ stages:
     steps:
     - script: echo Job A1
 - stage: B
-  condition: in(dependencies.A.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
+  condition: in(stageDependencies.A.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
   jobs:
   - job: B1
     steps:
@@ -764,7 +764,7 @@ stages:
        name: printvar
 
 - stage: B
-  condition: and(succeeded(), eq(dependencies.A.outputs['A1.printvar.shouldrun'], 'true'))
+  condition: and(succeeded(), eq(stageDependencies.A.outputs['A1.printvar.shouldrun'], 'true'))
   dependsOn: A
   jobs:
   - job: B1
