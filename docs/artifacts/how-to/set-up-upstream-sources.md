@@ -43,19 +43,17 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 > [!NOTE]
 > Custom public upstream sources are only supported with npm registries.
 
-## Add a feed in your organization as an upstream source
+## Add a feed in the same organization as an upstream source
 
-1. Select the ![gear icon](../../media/icons/gear-icon.png) button to access your feed's settings.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Upstream sources**.
+1. Select the gear icon button![gear icon](../../media/icons/gear-icon.png) to access your feed's settings.
 
-1. Select **Add Upstream**.
+1. Select **Upstream sources**, and then select **Add Upstream**.
 
 1. Select **Azure Artifacts feed in this organization**.
 
-1. Select the feed you would like to add from the dropdown menu.
-
-1. Select the package types you want to use, select the **View**, and name your upstream source.
+1. Select the desired **Feed** from the dropdown menu to add it as an upstream source. Then, select the **View** and choose the **Package type(s)** you wish to use. Optionally, you can also modify the name of your upstream source.
 
 1. Select **Save** when you're done.
 
@@ -63,17 +61,29 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
 ## Add a feed in a different organization as an upstream source
 
-1. Select the ![gear icon](../../media/icons/gear-icon.png) button to access your feed's settings.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Upstream sources**.
+1. Select the gear icon button![gear icon](../../media/icons/gear-icon.png) to access your feed's settings.
 
-1. Select **Add Upstream**.
+1. Select **Upstream sources**, and then select **Add Upstream**.
 
 1. Select **Azure Artifacts feed in another organization**.
 
-1. Enter your **Azure DevOps Services feed locator**. Example: *azure-feed://myOrg/myProject/myFeed@local*.
+1. Enter your **Azure Artifacts feed locator** in the following format:
 
-1. Select the **Package type(s)** you want to use and enter an **Upstream source name**.
+    - **Organization scoped feed**: 
+        
+        ```
+        azure-feed://ORGANIZATION_NAME/FEED_NAME@VIEW
+        ```
+    
+    - **Project scoped feed**: 
+        
+        ```
+        azure-feed://ORGANIZATION_NAME/PROJECT_NAME/FEED_NAME@VIEW
+        ```
+
+1. Select the **Package type(s)** you wish to use and provide a name for your upstream source.
 
 1. Select **Save** when you're done.
 
