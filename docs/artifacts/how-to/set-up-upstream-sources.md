@@ -13,42 +13,35 @@ monikerRange: '>= azure-devops-2019'
 
 With Azure Artifacts upstream sources, you can streamline your package management by using a single feed to store both the packages you publish and those you consume from external feeds and public registries such as npmjs.com, NuGet.org. When an upstream source is enabled on your feed, Azure Artifacts will automatically save a copy of any package installed by a collaborator or higher from upstream.
 
-## Create a new feed and enable upstream sources
+## Enable upstream sources in a new feed
 
-1. From within your project, select **Artifacts**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot of Artifacts button.":::
+1. Select **Artifacts**, and then select **Create Feed**.
 
-1. Select **Create Feed**.
-
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot of the create feed button.":::
-
-1. Give your feed a **Name** and choose its **visibility**, and **scope** settings. Make sure you check the **Include packages from common public sources** checkbox to enable upstream sources.
-
-    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="Screenshot showing the create new feed window panel.":::
-
+1. Provide a **Name** for your feed and select its **Visibility** and **Scope** settings. Make sure to check the **Include packages from common public sources** checkbox to enable upstream sources. 
+    
 1. Select **Create** when you're done.
+
+    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a new feed.":::
 
 > [!IMPORTANT]
 > Maven snapshots are not supported in upstream sources.
 
 ## Enable upstream sources in an existing feed
 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to your feed settings.
+
+1. Select **Upstream sources**, and then select **Add upstream source**.
+
+1. Select **Public source**, and then select a **Public source** from the dropdown menu.
+
+1. Select **Save** when you're done, and then select **Save** once more in the top right corner to preserve your changes.
+
 > [!NOTE]
 > Custom public upstream sources are only supported with npm registries.
-
-1. Select the ![gear icon](../../media/icons/gear-icon.png) button to access your feed's settings.
-
-1. Select **Upstream sources**.
-
-1. Select **Add upstream source**.
-
-1. Select **Public source**, and then select the **Public source** (for example, *Maven Central (https://repo.maven.apache.org/maven2/)*).
-
-1. Select **Add** when you're done.
-
-> [!NOTE]
-> Azure Artifacts support Maven Central, Google Maven Repository, Gradle Plugins, and JitPack as upstream sources for Maven.
 
 ## Add a feed in your organization as an upstream source
 
