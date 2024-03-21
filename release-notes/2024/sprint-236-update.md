@@ -7,7 +7,7 @@ description: Resource utilization notifications in Azure Pipelines agent
 ---
 # Resource utilization notifications in Azure Pipelines agent
 
-With this update, the Azure Pipelines agent now provides notification messages if you encounter resource constraints, such as limitations on memory or disk space.
+With this update, the Azure Pipelines agent now displays a notification if you encounter resource constraints, such as limitations on memory or disk space.
 
 Check out the release notes for details.
 
