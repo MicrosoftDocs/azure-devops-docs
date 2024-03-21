@@ -39,7 +39,6 @@ We recommend that you use this approach if all the following items are true for 
 
 * You have the Owner role for your Azure subscription.
 * You're not connecting to [Azure Stack](#connect-stack) or to an [Azure Government Cloud](#connect-govt).
-* You're not connecting from Azure DevOps Server 2019 or earlier versions of Azure Visual Studio Team Foundation Server.
 * Any Marketplace extensions tasks that you use are updated to support workload identity federation.
 
 ### Create a new workload identity federation service connection
