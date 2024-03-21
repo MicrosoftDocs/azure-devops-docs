@@ -144,7 +144,6 @@ steps:
       ArtifactName: 'drop'
       publishLocation: 'Container'
 
-
   - script: |
       pip install pytest pytest-azurepipelines
       pytest
@@ -159,96 +158,47 @@ Customize the `azure-pipelines.yml` to match your project configuration.
 
 1. Replace the generated YAML with the following code. This code installs the required Python version and the dependencies, packages the Python package to a zip file published to your pipeline, and runs tests.
 1. If you have a different agent pool, change the pool `name` parameter.
-1. Change the Python versions to match the versions installed on your self-hosted agent.  
+1. Change the Python version to match a version installed on your self-hosted agent.  
 
-    ```yaml
+  ```yaml
     trigger:
     - main
     
-    pool:
-      name: default
-    strategy:
-      matrix:
-        Python310:
-          python.version: '3.10'
-        Python311:
-          python.version: '3.11'
-        Python312:
-          python.version: '3.12'
-    
+    pool: 
+      name: '<your-pool-name or default>'
     
     steps:
-      - task: UsePythonVersion@0
-        inputs:
-          versionSpec: '$(python.version)'
-        displayName: 'Use Python $(python.version)'
-      
-      - script: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-        displayName: 'Install dependencies'
-      
-      - script: |
-          pip install pytest pytest-azurepipelines
-          pytest
-        displayName: 'pytest'
-
-      - task: ArchiveFiles@2
-        displayName: 'Archive files'
-        inputs:
-          rootFolderOrFile: $(System.DefaultWorkingDirectory)
-          includeRootFolder: false
-          archiveType: zip
-          archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId)-$(python.version).zip
-          replaceExistingArchive: true
-      
-      - task: PublishBuildArtifacts@1
-        inputs:
-          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-          ArtifactName: 'drop'
-          publishLocation: 'Container'
-      ```
-
-    If there's only a single version of Python on your agent, remove the matrix strategy and specify a single version of Python. For example:
-  
-    ```yaml
-      trigger:
-      - main
-      
-      pool: 
-        name: '<your-pool-name or default>'
-      
-      steps:
-      - task: UsePythonVersion@0
-        inputs:
-          versionSpec: '3.12'
-        displayName: 'Use Python 3.12'  
-      
-      - script: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-        displayName: 'Install dependencies'
-      
-      - script: |
-          pip install pytest pytest-azurepipelines
-          pytest
-        displayName: 'pytest'
-
-      - task: ArchiveFiles@2
-        displayName: 'Archive files'
-        inputs:
-          rootFolderOrFile: $(System.DefaultWorkingDirectory)
-          includeRootFolder: false
-          archiveType: zip
-          archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-          replaceExistingArchive: true
-      
-      - task: PublishBuildArtifacts@1
-        inputs:
-          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-          ArtifactName: 'drop'
-          publishLocation: 'Container'
-    ```
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '3.12'
+      displayName: 'Use Python 3.12'  
+    
+    - script: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+      displayName: 'Install dependencies'
+    
+    
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: $(System.DefaultWorkingDirectory)
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+    
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+    
+    - script: |
+        pip install pytest pytest-azurepipelines
+        pytest
+      displayName: 'pytest'
+  ```
 
 ::: moniker-end
 
@@ -259,7 +209,8 @@ Save and run your pipeline.
 1. Select **Save and run**.
 1. In the **Save and run** dialog, select **Save and run**.
 1. From the **Summary** tab, you can see the status of your pipeline run.
-1. Verify that the build jobs ran successfully. 
+
+::: moniker range=">=azure-devops"
 
 :::image type="content" source="media/python-successful-jobs.png" alt-text="Screenshot of complete Python jobs.":::
 
@@ -273,8 +224,25 @@ The **Artifacts** page shows the published artifacts.
 
 To view the test results, select the **Tests** tab.
 
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+The **Summary** tab shows the status of your pipeline run.
+
+:::image type="content" source="media/pipeline-summary-page-single-job.png" alt-text="Screenshot of complete Python jobs.":::
+
+Select the **published** link in the **Summary** tab to view your pipeline artifact.
+
+:::image type="content" source="pmedia/pipeline-artifacts-list-single-file.png" alt-text="Pipeline published artifacts link.":::
+
+Select the **Tests** tab to view the test results.
+
+::: moniker-end
+
+
 :::image type="content" source="media/pipeline-test-results.png" alt-text="Pipeline test results.":::
-  
+
 ## Clean up
   
 When you're done with your quickstart, you can delete the project you created in Azure DevOps.
