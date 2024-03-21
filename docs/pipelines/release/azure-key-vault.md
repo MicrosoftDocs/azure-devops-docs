@@ -22,9 +22,15 @@ In this tutorial, you will learn how to:
 > * Add a secret and configure access to Azure key vault
 > * Use secrets in your pipeline
 
+> [!WARNING]
+> This tutorial is for educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
+
 ## Prerequisites
 
 * An Azure DevOps organization. If you don't have one, you can [create one for free](../get-started/pipelines-sign-up.md).
+    > [!NOTE]
+    > If you are setting up a new free Azure DevOps organization then you will need to complete [a request](https://aka.ms/azpipelines-parallelism-request) to get the free grant of parallel jobs to run the pipeline tasks in this tutorial. More information on this process, and what parallel jobs are can be found at [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
+
 * An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) if you don't have one already.
 
 ## Create an Azure Key Vault
@@ -89,8 +95,6 @@ We will use YAML to create our pipeline but first we need to create a new repo.
     :::image type="content" border="false" source="media/azure-key-vault/initialize-repo.png" alt-text="A screenshot showing how to initialize a repository.":::
 
 ## Create a new pipeline
-
-#### [YAML](#tab/yaml)
 
 1. Select **Pipelines**, and then select **New Pipeline**.
 
@@ -162,53 +166,12 @@ We will use YAML to create our pipeline but first we need to create a new repo.
         publishLocation: 'Container'
     ```
 
-#### [Classic](#tab/classic)
 
-1. Select **Pipelines**, and then select **New Pipeline**.
-
-1. Select **Use the classic editor** to create a pipeline without YAML.
-
-1. Select **Azure Repos Git**, and then select your repository and default branch. Select **Continue** when you are done.
-
-1. Select the **.Net Desktop** pipeline template.
-
-1. For this example, we will only need the last two tasks from the template. Press CTRL and then select the first five tasks, right-click and choose **Remove selected tasks(s)** to delete them.
-
-    :::image type="content" border="false" source="media/delete-tasks.png" alt-text="A screenshot showing how to delete pipeline tasks.":::
-
-1. Select **+** to add a new task. Add the **Command line** task and configure it as follows:
-    
-    Display name: Command Line Script.
-    Script: ```echo $(Your-Secret-Name) > secret.txt```
-
-    :::image type="content" border="false" source="media/cmd-task.png" alt-text="A screenshot showing how to configure the command line task.":::
-
-1. Select **+** to add a new task. Add the **Azure Key Vault** task and configure it as follows:
-
-    Display Name: Azure Key Vault
-    Azure subscription: Select your Azure subscription from the list, and then select **Authorize**.
-    Key vault: Select your key vault
-    Secret filter: A comma separated list of secret names or leave * to download all secrets from the selected key vault.
-    
-    :::image type="content" border="false" source="media/key-vault-classic.png" alt-text="A screenshot showing how to configure the Azure Key Vault task.":::
-
-1. Select the **Copy files** task and fill out the required fields.
-
-    :::image type="content" border="false" source="media/copy-task.png" alt-text="A screenshot showing how to set up the copy files task.":::
-
-1. Select the **Publish Artifacts** and keep the default settings.
-
-    :::image type="content" border="false" source="media/publish-artifacts.png" alt-text="A screenshot showing how to set up the publish artifacts task.":::
-
-***
-
-Don't save or queue your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your browser tab open, we will resume the remaining steps once we set up the key vault permissions.
+Don't save or run your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your browser tab open, we will resume the remaining steps once we set up the key vault permissions. 
 
 ## Set up Azure Key Vault access policies
 
-In order to access our Azure Key Vault, we must first set up a service principal to give access to Azure Pipelines. Follow [this guide](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) to create your service principal and then proceed with the next steps in this section.
-
-1. Navigate to [Azure portal](https://azure.microsoft.com/).
+1. Open a new browser tab an navigate to [Azure portal](https://azure.microsoft.com/).
 
 1. Use the search bar to search for the key vault you created earlier.
 
@@ -220,7 +183,7 @@ In order to access our Azure Key Vault, we must first set up a service principal
 
 1. For **Secret permissions**, select **Get** and **List**.
 
-1. Select the option to select a service principal and search for the one you created in the beginning of this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
+1. Select the option to select a service principal and search for the service connection which was created by Azure DevOps when we created the pipeline. The format for the name of the principal is [DevOps Organization Name]-[DevOps Project Name]-[Subscription ID]. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
 
 1. Select **Add** to create the access policy, then select **Save** when you are done.
 
@@ -231,7 +194,7 @@ In order to access our Azure Key Vault, we must first set up a service principal
 
 1. Return to the previous tab where we left off.
 
-1. Select **Save**, and then select **Save** again to commit your changes and trigger the pipeline. You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once.
+1. Select **Save and run**, and then select **Save and run** again to commit your changes and trigger the pipeline. You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once.
 
 1. Select the **CmdLine** task to view the logs.
 
@@ -246,9 +209,6 @@ In order to access our Azure Key Vault, we must first set up a service principal
     :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to open the published artifact.":::
 
 1. The text file should contain our secret: *mysecretpassword*.
-
-> [!WARNING]
-> This tutorial is for educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
 
 ## Clean up resources
 
