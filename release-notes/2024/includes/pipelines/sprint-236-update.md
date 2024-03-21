@@ -7,12 +7,12 @@ ms.topic: include
 
 ### Azure Service Connections indicate when a secret has expired
 
-With this Sprint, you now have visibility into the expiration status of secrets within Azure service connections.If your tasks report an error indicating an expired secret such as messages containing "_AADSTS7000222_," visit the service connection details page. If you see the following message, the service connection's secret has expired:
+With this Sprint, you can now see the expiration status of secrets in Azure service connections. If your tasks show an error due to an expired secret such as messages with "AADSTS7000222," go to the service connection details page. If you see this message,the service connection's secret has expired:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of secret has expired.](../../media/236-pipelines-02.png "Screenshot of secret has expired")
 
-To fix the service connection, you can [convert](https://aka.ms/azdo-rm-workload-identity-conversion) it to use workload identity federation.This approach removes the necessity for rotating secrets, offering a more streamlined and secure management process.
+To fix the service connection, you can [convert](https://aka.ms/azdo-rm-workload-identity-conversion) it to use workload identity federation. This approach removes the necessity for rotating secrets, offering a more streamlined and secure management process.
 
 ### Resource utilization alerts for Azure Pipeline agents
 
