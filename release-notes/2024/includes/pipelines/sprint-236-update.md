@@ -16,7 +16,7 @@ To fix the service connection, you can [convert](https://aka.ms/azdo-rm-workload
 
 ### Resource utilization alerts for Azure Pipeline agents
 
-[Last October](https://learn.microsoft.com/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization), we introduced the ability to monitor memory and disk space utilization by the Pipelines agent.
+[Last October](/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization), we introduced the ability to monitor memory and disk space utilization by the Pipelines agent.
 
 To inform you about these constraints, we've improved the visibility of resource constraint alerts:
 
