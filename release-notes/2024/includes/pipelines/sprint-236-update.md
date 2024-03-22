@@ -18,9 +18,9 @@ To fix the service connection, you can [convert](https://aka.ms/azdo-rm-workload
 
 Some customers [block](https://learn.microsoft.com/azure/storage/common/shared-key-authorization-prevent?tabs=portal) the use of storage account keys and SAS tokens on storage accounts. The AzureFileCopy@5 task uses SAS tokens and can't be used in such cases.
 
-The new AzureFileCopy@6 uses Azure RBAC to access blob storage instead. This requires the identity on the service connection used to have the appropriate RBAC role e.g. [Storage Blob Data Contributor](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor). See [Assign an Azure role for access to blob data](https://learn.microsoft.com/azure/storage/blobs/assign-azure-role-data-access?tabs=portal).
+The new AzureFileCopy@6 uses Azure RBAC to access blob storage instead. This requires the identity of the service connection used to have the appropriate RBAC role e.g. [Storage Blob Data Contributor](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor). See [Assign an Azure role for access to blob data](https://learn.microsoft.com/azure/storage/blobs/assign-azure-role-data-access?tabs=portal).
 
-The AzureFileCopy@6 also supports service connections that use [Workload identity federation](https://aka.ms/azdo-rm-workload-identity).
+The AzureFileCopy@6 also supports service connections that use [workload identity federation](https://aka.ms/azdo-rm-workload-identity).
 
 ### Resource utilization alerts for Azure Pipeline agents
 
