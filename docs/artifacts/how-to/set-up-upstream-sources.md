@@ -89,29 +89,41 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
     :::image type="content" source="../media/add-upstream-diff-org.png" alt-text="A screenshot showing how to add a feed in a different organization as an upstream source.":::
 
-## Example: install NuGet packages from upstream sources with Visual Studio
+## Examples
 
-Using Visual Studio, we can now install packages from the upstream sources we configured:
+# [NuGet](#tab/nuget)
 
-1. Navigate to NuGet.org, find the package you want to install, and then copy the `Install-Package` command.
-1. In Visual Studio, select **Tools** > **NuGet Package Manager** > **Package Manager Console**.
-1. Paste the install command into the Package Manager Console and press ENTER to run it.
+- [Use packages from NuGet.org](../nuget/upstream-sources.md)
 
-## Example: install npm packages from upstream sources using the CLI
+# [Npm](#tab/npm)
 
-Run the following command in a command prompt window to install your npm package from upstream.
+- [Use packages from npmjs.com](../npm/upstream-sources.md)
 
-```Command
-npm install --save <package>
-```
+# [Maven](#tab/maven)
+
+- [Use packages from Maven Central](../maven/upstream-sources.md)
+
+- [Use packages from Google Maven Repository](../maven/google-maven.md)
+
+# [Python](#tab/python)
+
+- [Use packages from Python package index (PyPI)](../python/use-packages-from-pypi.md)
+
+# [Cargo](#tab/cargo)
+
+- [Use packages from Crates.io](../cargo/cargo-upstream-source.md)
+
+# [Universal Packages](#tab/universalpackages)
+
+- [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
+
+---
 
 > [!NOTE]
 > You must be a **Feed and Upstream Reader (Collaborator)**, a **Feed Publisher (Contributor)**, or a **Feed Owner** to install new packages from upstream. A copy of each upstream package is saved to the feed on first use. Packages already saved from upstream sources can be used by **Feed Readers**.
 
 ## Related articles
 
-- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
-- [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
-- [Configure upstream behavior](../concepts/upstream-behavior.md)
-- [Use feed views to share packages](../feeds/views.md)
+- [Search for packages in upstream sources](./search-upstream.md)
 - [Configure permissions](../feeds/feed-permissions.md)
+- [Use feed views to share packages](../feeds/views.md)
