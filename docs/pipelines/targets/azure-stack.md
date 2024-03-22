@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/01/2022
-monikerRange: '> tfs-2018'
+monikerRange: '> tfs-2019'
 ---
 
 # Deploy to Azure Stack Hub App Service using Azure Pipelines
