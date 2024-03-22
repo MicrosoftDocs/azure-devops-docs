@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Azure service connections indicate when a secret has expired
 
-With this Sprint, you can now see the expiration status of secrets in Azure service connections. If your tasks show an error due to an expired secret such as messages with "AADSTS7000222," go to the service connection details page. If you see this message,the service connection's secret has expired:
+With this sprint, you can now see the expiration status of secrets in Azure service connections. If your tasks show an error due to an expired secret, such as messages with "AADSTS7000222," go to the service connection details page. If you see this message,the service connection's secret has expired:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of secret has expired.](../../media/236-pipelines-02.png "Screenshot of secret has expired")
@@ -27,4 +27,4 @@ Should you encounter messages indicating a lack of responsiveness from the agent
 
 > "We stopped hearing from the agent"
 
-To address this, enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops&branch=pr-en-us-6616&tabs=windows-agent#configure-verbose-logs)  for more detailed tracking of resource utilization, helping to pinpoint where resources are being exhausted. For those utilizing a Self-hosted agent, ensuring that your agent is equipped with sufficient resources.
+To address this, enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops&branch=pr-en-us-6616&tabs=windows-agent#configure-verbose-logs) for more detailed tracking of resource utilization, helping to pinpoint where resources are being exhausted. For those utilizing a self-hosted agent, ensure your agent has sufficient resources.
