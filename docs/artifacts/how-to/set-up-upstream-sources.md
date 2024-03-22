@@ -99,15 +99,15 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
 - [Use packages from npmjs.com](../npm/upstream-sources.md)
 
+# [Python](#tab/python)
+
+- [Use packages from Python package index (PyPI)](../python/use-packages-from-pypi.md)
+
 # [Maven](#tab/maven)
 
 - [Use packages from Maven Central](../maven/upstream-sources.md)
 
 - [Use packages from Google Maven Repository](../maven/google-maven.md)
-
-# [Python](#tab/python)
-
-- [Use packages from Python package index (PyPI)](../python/use-packages-from-pypi.md)
 
 # [Cargo](#tab/cargo)
 
@@ -116,6 +116,10 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 # [Universal Packages](#tab/universalpackages)
 
 - [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
+
+# [PowerShell Gallery](#tab/powershellgallery)
+
+- [Universal Packages upstream sources](../tutorials/powershell-upstream-source.md)
 
 ---
 
