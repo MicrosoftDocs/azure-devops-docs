@@ -234,7 +234,7 @@ The **Summary** tab shows the status of your pipeline run.
 
 Select the **published** link in the **Summary** tab to view your pipeline artifact.
 
-:::image type="content" source="pmedia/pipeline-artifacts-list-single-file.png" alt-text="Pipeline published artifacts link.":::
+:::image type="content" source="media/pipeline-artifacts-list-single-file.png" alt-text="Pipeline published artifacts link.":::
 
 Select the **Tests** tab to view the test results.
 
