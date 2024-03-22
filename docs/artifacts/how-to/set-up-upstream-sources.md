@@ -119,7 +119,7 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 
 # [PowerShell Gallery](#tab/powershellgallery)
 
-- [Universal Packages upstream sources](../tutorials/powershell-upstream-source.md)
+- [Use packages from PowerShell Gallery](../tutorials/powershell-upstream-source.md)
 
 ---
 
