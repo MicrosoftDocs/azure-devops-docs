@@ -35,4 +35,4 @@ Some customers [block](https://learn.microsoft.com/azure/storage/common/shared-k
 
 The new AzureFileCopy@6 uses Azure RBAC to access blob storage instead. This requires the identity on the service connection used to have the appropriate RBAC role e.g. [Storage Blob Data Contributor](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor). See [Assign an Azure role for access to blob data](https://learn.microsoft.com/azure/storage/blobs/assign-azure-role-data-access?tabs=portal).
 
-The AzureFileCopy@6 also supports [Workload identity federation](https://aka.ms/azdo-rm-workload-identity).
+The AzureFileCopy@6 also supports service connections that use [Workload identity federation](https://aka.ms/azdo-rm-workload-identity).
