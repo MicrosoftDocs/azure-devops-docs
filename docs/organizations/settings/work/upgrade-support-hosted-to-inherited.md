@@ -61,6 +61,7 @@ When you clone a Hosted XML process to an inherited process, the customizations 
 > | Extensions | The inherited process supports an opt-out model for custom control extensions, while the Hosted XML process supports an opt-in model. This means that work item types defined within the cloned inherited process show all contributions from all installed and enabled extensions. You can selectively hide or remove them as needed. |
 > | Categories | Changes made to a [default category](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types#process) are preserved, but any custom categories are ignored. Also note that system work item types such as Issue or Impediment are not supported on a backlog level. | 
 > | Identity fields with string values | Lists that contain an identity value in ALLOWEDVALUES or PROHIBITEDVALUES are automatically converted into the Identity field type. Any other string values in the list are ignored. | 
+> | Test Steps | Test steps are not supported in any work item type other than Test Case. | 
 
 
 [!INCLUDE [temp](../includes/post-upgrade-steps.md)]

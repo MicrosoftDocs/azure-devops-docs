@@ -86,6 +86,10 @@ To convert a service connection:
 1. Select **Convert**.
 
     :::image type="content" source="media/federated-convert-credential.png" alt-text="Screenshot that shows selecting convert for federated credentials.":::
+    
+    If you have an existing service principal credential with an expired secret, you'll see a different option to convert. 
+
+    :::image type="content" source="media/secret-expired-workload-convert.png" alt-text="Screenshot that shows option to convert to use federated credentials when you have an expired certificate. ":::
 
 1. Select **Convert** again to confirm that you want to create a new service connection.
 

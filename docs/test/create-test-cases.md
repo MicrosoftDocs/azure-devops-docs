@@ -30,8 +30,6 @@ Organize your test cases by adding them to test plans and test suites, and then 
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
-[!INCLUDE [note-new-ui](includes/note-new-ui.md)] 
-
 <a name="createcase"></a>
 
 ## Create test cases
