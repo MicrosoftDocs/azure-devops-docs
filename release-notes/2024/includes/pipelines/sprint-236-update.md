@@ -14,6 +14,14 @@ With this sprint, you can now see the expiration status of secrets in Azure serv
 
 To fix the service connection, you can [convert](https://aka.ms/azdo-rm-workload-identity-conversion) it to use workload identity federation. This approach removes the necessity for rotating secrets, offering a more streamlined and secure management process.
 
+### New AzureFileCopy@6 task supports secret-less configurations
+
+Some customers [block](https://learn.microsoft.com/azure/storage/common/shared-key-authorization-prevent?tabs=portal) the use of storage account keys and SAS tokens on storage accounts. The AzureFileCopy@5 task uses SAS tokens and can't be used in such cases.
+
+The new AzureFileCopy@6 uses Azure RBAC to access blob storage instead. This requires the identity on the service connection used to have the appropriate RBAC role e.g. [Storage Blob Data Contributor](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor). See [Assign an Azure role for access to blob data](https://learn.microsoft.com/azure/storage/blobs/assign-azure-role-data-access?tabs=portal).
+
+The AzureFileCopy@6 also supports service connections that use [Workload identity federation](https://aka.ms/azdo-rm-workload-identity).
+
 ### Resource utilization alerts for Azure Pipeline agents
 
 [Last October](/azure/devops/release-notes/2023/pipelines/sprint-228-update#pipeline-logs-now-contain-resource-utilization), we introduced the ability to monitor memory and disk space utilization by the Pipelines agent.
@@ -28,11 +36,3 @@ Should you encounter messages indicating a lack of responsiveness from the agent
 > "We stopped hearing from the agent"
 
 To address this, enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops&branch=pr-en-us-6616&tabs=windows-agent#configure-verbose-logs) for more detailed tracking of resource utilization, helping to pinpoint where resources are being exhausted. For those utilizing a self-hosted agent, ensure your agent has sufficient resources.
-
-### New AzureFileCopy@6 task supports secret-less configurations
-
-Some customers [block](https://learn.microsoft.com/azure/storage/common/shared-key-authorization-prevent?tabs=portal) the use of storage account keys and SAS tokens on storage accounts. The AzureFileCopy@5 task uses SAS tokens and can't be used in such cases.
-
-The new AzureFileCopy@6 uses Azure RBAC to access blob storage instead. This requires the identity on the service connection used to have the appropriate RBAC role e.g. [Storage Blob Data Contributor](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor). See [Assign an Azure role for access to blob data](https://learn.microsoft.com/azure/storage/blobs/assign-azure-role-data-access?tabs=portal).
-
-The AzureFileCopy@6 also supports service connections that use [Workload identity federation](https://aka.ms/azdo-rm-workload-identity).
