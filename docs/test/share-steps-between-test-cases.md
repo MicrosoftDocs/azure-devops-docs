@@ -22,9 +22,7 @@ Many manual tests require performing an identical sequence of steps and test dat
 This article describes how to define and use **Shared Steps**. To learn how to define and reference **Shared Parameters**, see [Repeat a test with different data](repeat-test-with-different-data.md).
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)]
-
-[!INCLUDE [note-new-ui](includes/note-new-ui.md)]
-  
+ 
 ## Create shared steps
 ::: moniker range=">=azure-devops-2020"
 

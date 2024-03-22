@@ -39,8 +39,6 @@ In the next version of the product, you can reuse the existing test cases. Howev
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
-[!INCLUDE [note-new-ui](includes/note-new-ui.md)] 
-
 <a name="testplan"></a>
 
 ## Create a test plan

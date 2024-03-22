@@ -4,7 +4,7 @@ ms.service: azure-devops-artifacts
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 11/10/2023
+ms.date: 03/15/2024
 ---
 
 ::: moniker range=">= azure-devops-2019"
@@ -20,7 +20,7 @@ ms.date: 11/10/2023
     :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
 
 > [!NOTE]
-> By default, newly created feeds have their project's *Build Service* set to **Collaborator**.
+> By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
 
 ::: moniker-end
 

@@ -22,7 +22,7 @@ Azure Artifacts securely stores various package types within your feed, whether 
 > * Recover recently deleted packages.
 
 > [!NOTE]
-> To delete packages or set up retention policies, you must be a feed **Owner** or **Administrator**.
+> To delete/recover packages or set up retention policies, you must be a **Feed Owner**.
 
 ## Delete packages
 
@@ -31,7 +31,7 @@ In Azure Artifacts, packages are immutable. Once you publish a package to your f
 #### [NuGet](#tab/nuget/)
 
 > [!NOTE]
-> You must be a **Contributor** to unlist a package and an **Owner** to delete it.
+> You must be a **Feed Publisher (Contributor)** to unlist a package and a **Feed Owner** to delete it.
 
 There are two available choices for removing a NuGet package from your feed, [Unlist](#qa) and [Delete](#qa). Unlisting a package version hides it from the search results in Azure Artifacts feeds and on NuGet.org, while deleting a package version sends it to the recycle bin and makes it unavailable for installation.
 
@@ -81,7 +81,7 @@ There are two available choices for removing a NuGet package from your feed, [Un
 #### [npm](#tab/npm/)
 
 > [!NOTE]
-> You must be a **Contributor** to deprecate a package and an **Owner** to delete it.
+> You must be a **Feed Publisher (Contributor)** to deprecate a package and a **Feed Owner** to delete it.
 
 For npm packages in your feed, you have the option to [Deprecate](#qa) or [Delete](#qa) them. Deprecating a package adds a warning message to the package's metadata to be displayed whenever the package is viewed or installed. Deleting a package version, on the other hand, sends it to the Recycle Bin and makes it unavailable for installation.
 
@@ -131,7 +131,7 @@ For npm packages in your feed, you have the option to [Deprecate](#qa) or [Delet
 #### [Python](#tab/python/)
 
 > [!NOTE]
-> You must be a feed **Owner** to delete a Python package.
+> You must be a **Feed Owner** to delete a Python package.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -174,7 +174,7 @@ For npm packages in your feed, you have the option to [Deprecate](#qa) or [Delet
 #### [Universal Packages](#tab/universal/)
 
 > [!NOTE]
-> You must be a feed **Owner** to delete a Universal Package.
+> You must be a **Feed Owner** to delete a Universal Package.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -187,7 +187,7 @@ For npm packages in your feed, you have the option to [Deprecate](#qa) or [Delet
 #### [Cargo](#tab/cargo/)
 
 > [!NOTE]
-> You must be a **Contributor** to yank a package and an **Owner** to delete it.
+> You must be a **Feed Publisher (Contributor)** to yank a package and a **Feed Owner** to delete it.
 
 There are two available choices for your Cargo package in your feed when it comes to deletion: [Yank](#qa) and [Delete](#qa). Yanking a package version marks is as unusable or deprecated. Yanking a package version doesn't delete it but effectively discourages its use. Deleting a package version on the other hand, sends it to the recycle bin and makes it unavailable for installation.
 
