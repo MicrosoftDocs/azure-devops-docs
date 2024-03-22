@@ -7,3 +7,4 @@ ms.topic: include
 
 - [Azure service connections indicate when a secret has expired](#azure-service-connections-indicate-when-a-secret-has-expired)
 - [Resource utilization alerts for Azure Pipeline agents](#resource-utilization-alerts-for-azure-pipeline-agents)
+- [New AzureFileCopy@6 task supports secret-less configurations](#new-azurefilecopy@6-task-supports-secret-less-configurations)
