@@ -132,7 +132,7 @@ Create a service connection. You need the values from your SPN and the name of y
 1. Fill out the form, and then select **Verify and save**.
 1. Give your service connection a name. (You need the service connection name to create your yaml pipeline).
 
-    :::image type="content" source=".\media\azure-stack\create-service-connection-for-azure-stack-hub.png" alt-text="Create a service connection for Azure Stack Hub":::
+    :::image type="content" source=".\media\azure-stack\create-service-connection-for-azure-stack-hub.png" alt-text="Scrrenshot of create a service connection for Azure Stack Hub.":::
 
 ## Create your repository and add pipeline
 
@@ -145,6 +145,7 @@ Create a service connection. You need the values from your SPN and the name of y
 1. Select **Starter pipeline**.
 1. Navigate back to the repo and open the `azure-pipelines.yml`.
 1. Add the following yaml:
+
     ```yaml  
     # Starter pipeline
     # Start with a minimal pipeline that you can customize to build and deploy your code.
