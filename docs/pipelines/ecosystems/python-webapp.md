@@ -348,7 +348,7 @@ If you already have the Python version you want to use on the machine hosting yo
 
 ## Create a pipeline
 
-Create a pipeline to build and deploy your Python web app to Azure App Service.  To understand pipeline concepts, watch:
+Create a pipeline to build and deploy your Python web app to Azure App Service. To understand pipeline concepts, watch:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMlMo]  
 
@@ -356,7 +356,7 @@ Create a pipeline to build and deploy your Python web app to Azure App Service. 
 
 1. On the left navigation menu, select **Pipelines**.
 
-    :::image type="content" source="../media/python/select-pipelines.png" alt-text="Screenshot of Pipelines sectection on the project dashboard.":::
+    :::image type="content" source="../media/python/select-pipelines.png" alt-text="Screenshot of Pipelines selection on the project dashboard.":::
 
 1. Select **Create Pipeline**.
 
@@ -514,9 +514,272 @@ Azure Pipelines creates a **azure-pipelines.yml** file and displays it in the YA
    |`<your-pool-name>`|The name of the agent pool you want to use.|
    |`<your-python-version>`|The version of Python running on your agent. It's a good idea to match this version with the Python version running on your web app. The web app version is shown in the JSON output of the `az webapp up` command.|
 
-To understand the pipeline YAML file, see [YAML schema reference](/azure/devops/pipelines/yaml-schema/pipeline).
 
 ::: moniker-end
+
+### YAML pipeline file
+
+The following explanation describes the YAML pipeline file. To learn about the pipeline YAML file schema, see [YAML schema reference](/azure/devops/pipelines/yaml-schema/pipeline).
+
+#### Variables
+
+::: moniker range=">=azure-devops"
+
+The `variables` section contains the following variables:
+
+```yml
+variables:
+# Azure Resource Manager connection created during pipeline creation
+azureServiceConnectionId: '<GUID>'
+
+# Web app name
+webAppName: '<your-web-app-name>'
+
+# Agent VM image name
+vmImageName: 'ubuntu-latest'
+
+# Environment name
+environmentName: '<your-web-app-name>'
+
+# Project root folder.
+projectRoot: $(System.DefaultWorkingDirectory)
+
+# Python version: 3.11. Change this to match the Python runtime version running on your web app.
+pythonVersion: '3.11'
+
+```
+
+|**Variable**|**Description**|
+|--|---|
+|`azureServiceConnectionId`|The ID or name of the Azure Resource Manager service connection.|
+|`webAppName`|The name of the Azure App Service web app.|
+|`vmImageName`|The name of the operating system to use for the build agent.|
+|`environmentName`|The name of the environment used in the deployment stage. The environment is automatically created when the stage job is run.|
+|`projectRoot`|The root folder containing the app code.|
+|`pythonVersion`|The version of Python to use on the build and deployment agents.|
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+The `variables` section contains the following variables:
+
+```yml
+variables:
+# Azure Resource Manager connection created during pipeline creation
+azureServiceConnectionId: '<your-service-connection-name>'
+
+# Web app name
+webAppName: '<your-web-app-name>'
+
+# Environment name
+environmentName: '<your-web-app-name>'
+
+# Project root folder. 
+projectRoot: $(System.DefaultWorkingDirectory)
+
+# Python version: 3.11. Change this to the version that is running on your agent and web app.
+pythonVersion: '3.11'
+```
+
+|**Variable**|**Description**|
+|--|---|
+|`azureServiceConnectionId`|The name of the Azure Resource Manager service connection.|
+|`webAppName`|The name of the web app.|
+|`environmentName`|The name of the environment used in the deployment stage.|
+|`projectRoot`|The folder containing the app code. The value is an automatic system variable. |
+|`pythonVersion`|The version of Python to use on the build and deployment agents.|
+
+::: moniker-end
+
+#### Build stage
+
+::: moniker range=">=azure-devops"
+
+The build stage contains a single job that runs on the operating system defined in the vmImageName variable.
+
+```yml
+  - job: BuildJob
+    pool:
+      vmImage: $(vmImageName)
+```
+
+::: moniker-end
+
+
+::: moniker range="< azure-devops"
+
+The build stage contains a single job that runs on an agent in the pool identified by the name parameter. You can specify the agent capabilities with the `demands` keyword. For example, `demands: python` specifies that the agent must have Python installed. To specify a self-hosted agent by name, you can use the `demands: Agent.Name -equals <agent-name>` keyword.
+
+```yml
+  - job: BuildJob
+    pool:
+      name: <your-pool-name>
+      demands: python
+```
+
+::: moniker-end
+
+The job contains multiple steps:
+
+1. The [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0) task selects the version of Python to use. The version is defined in the `pythonVersion` variable.
+
+   ```yml
+      - task: UsePythonVersion@0
+         inputs:
+           versionSpec: '$(pythonVersion)'
+           displayName: 'Use Python $(pythonVersion)'
+    ```
+
+1. This step uses a script to create a virtual Python environment and install the app's dependencies contained in the `requirements.txt` file. The `--target` parameter specifies the location to install the dependencies. The `workingDirectory` parameter specifies the location of the app code.
+
+    ```yml
+      - script: |
+           python -m venv antenv
+           source antenv/bin/activate
+           python -m pip install --upgrade pip
+           pip install setup
+           pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
+         workingDirectory: $(projectRoot)
+         displayName: "Install requirements"
+   ```
+
+1. The [ArchiveFiles](/azure/devops/pipelines/tasks/reference/archive-files-v2) task creates the *.zip* archive containing the web app. The `.zip` file is uploaded to the pipeline as the artifact named `drop`. The `.zip` file is used in the deployment stage to deploy the app to the web app.
+
+    ```yml
+       - task: ArchiveFiles@2
+         displayName: 'Archive files'
+         inputs:
+           rootFolderOrFile: '$(projectRoot)'
+           includeRootFolder: false
+           archiveType: zip
+           archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+           replaceExistingArchive: true
+    
+       - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+         displayName: 'Upload package'
+         artifact: drop
+    ```
+
+   |**Parameter**|**Description**|
+   |---|---|
+   |`rootFolderOrFile`|The location of the app code.|
+   |`includeRootFolder`|Indicates whether to include the root folder in the *.zip* file. Set this parameter to `false` otherwise, the contents of the *.zip* file are put in a folder named *s* and App Service on Linux container can't find the app code.|
+   |`archiveType`|The type of archive to create. Set to `zip`.|
+   |`archiveFile`|The location of the *.zip* file to create.|
+   |`replaceExistingArchive`|Indicates whether to replace an existing archive if the file already exists. Set to `true`.|
+   |`upload`|The location of the *.zip* file to upload.|
+   |`artifact`|The name of the artifact to create.|
+
+#### Deployment stage
+
+The deployment stage is run if the build stage completes successfully. The following keywords define this behavior:
+
+```yml
+  dependsOn: Build
+  condition: succeeded()
+```
+
+The deployment stage contains a single deployment job configured with the following keywords:
+
+::: moniker range=">=azure-devops"
+
+```yml
+  - deployment: DeploymentJob
+    pool:
+      vmImage: $(vmImageName)
+    environment: $(environmentName)
+```
+
+|**Keyword**|**Description**|
+|--|---|
+|`deployment`|Indicates that the job is a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md).|
+|`pool`|Specifies deployment agent pool. The default agent pool if the name isn't specified. The `vmImage` keyword identifies the operating system for the agent's virtual machine image|
+|`environment`|Specifies the environment to deploy to. The environment is automatically created in your project when the job is run.|
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+```yml
+  - deployment: DeploymentJob
+    pool:
+      name: <your-pool-name>
+    environment: $(environmentName)
+```
+
+|**Keyword**|**Description**|
+|--|---|
+|`deployment`|Indicates that the job is a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md).|
+|`pool` Specifies the agent pool to use for deployment. This pool must contain an agent with the capability to run the python version specified in the pipeline.|
+|`environment`|Specifies the environment to deploy to. The environment is automatically created in your project when the job is run.|
+
+::: moniker-end
+
+The `strategy` keyword is used to define the deployment strategy. The `runOnce` keyword specifies that the deployment job runs once. The `deploy` keyword specifies the steps to run in the deployment job.
+
+```yml
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+```
+
+The `steps` in the pipeline are:
+
+1. Use the [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0) task to specify the version of Python to use on the agent. The version is defined in the `pythonVersion` variable.
+
+   ```yml
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python version'
+   ```
+
+1. Deploy the web app using the [AzureWebApp@1](/azure/devops/pipelines/tasks/reference/azure-web-app-v1). This task deploys the pipeline artifact `drop` to your web app.
+
+    ::: moniker range=">=azure-devops"
+
+   ```yml
+   - task: AzureWebApp@1
+      displayName: 'Deploy Azure Web App : <your-web-app-name>'
+      inputs:
+         azureSubscription: $(azureServiceConnectionId)
+         appName: $(webAppName)
+         package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+    ```
+
+   |**Parameter**|**Description**|
+   |--|---|
+   |`azureSubscription`|The Azure Resource Manager service connection ID or name to use.|
+   |`appName`|The name of the web app.|
+   |`package`|The location of the *.zip* file to deploy.|
+
+    Also, because the *python-vscode-flask-tutorial* repository contains the same startup command in a file named *startup.txt*, you can specify that file by adding the parameter: `startUpCommand: 'startup.txt'`.
+
+    ::: moniker-end
+
+    ::: moniker range="< azure-devops"
+
+    ```yml
+      - task: AzureWebApp@1
+         displayName: 'Deploy Azure Web App : $(webAppName)'
+         inputs:
+           azureSubscription: $(azureServiceConnectionId)
+           appName: $(webAppName)
+           package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+           startUpCommand: 'startup.txt'
+   ```
+
+   |**Parameter**|**Description**|
+   |--|---|
+   |`azureSubscription`|The Azure Resource Manager service connection ID or name to use.|
+   |`appName`|The name of the web app.|
+   |`package`|The location of the *.zip* file to deploy.|
+   |`startUpCommand`|The command to run after the app is deployed. The sample app uses `startup.txt`.|
+
+    ::: moniker-end
+
 
 ## Run the pipeline
 
