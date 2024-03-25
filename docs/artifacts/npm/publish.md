@@ -23,13 +23,17 @@ Using Azure Artifacts, you can easily manage the publication and retrieval of np
 
 - [Download Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-## Project setup
+## Connect to feed
 
-1. Navigate to your project,and then select **Artifacts** then select **Connect to feed**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **npm** from the left navigation panel, and then follow the instructions under **Project setup** to configure your .npmrc file and connect to your feed. If this is your first time using Azure Artifacts with npm on your machine, make sure you select **Get the tools** to download and install the prerequisites.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-    :::image type="content" source="../npm/media/project-setup-npm.png" alt-text="Screenshot showing how to set up your project":::
+1.  Select **Connect to feed**, and then select **npm** from the left.
+
+1. In the **Project setup** section, choose **Windows** if your operating system is Windows; otherwise, select **Other**. Follow the provided instructions to configure your .npmrc file and connect to your feed. If this is the first time using Azure Artifacts with npm, make sure you **Get the tools** at the top right corner of the page.
+
+    :::image type="content" source="../npm/media/project-setup-npm.png" alt-text="A screenshot showing how to connect to your feed." lightbox="../npm/media/project-setup-npm.png":::
 
 [!INCLUDE [](../includes/npm/publish-restore.md)]
 
