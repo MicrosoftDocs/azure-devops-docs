@@ -60,7 +60,6 @@
     "externalReference": [],
     "globalMetadata": {
       "feedback_system": "Standard",
-      "feedback_github_repo": "MicrosoftDocs/azure-devops-docs",
       "feedback_product_url": "https://developercommunity.visualstudio.com/AzureDevOps",
       "breadcrumb_path": "/azure/devops/breadcrumb/toc.json", 
       "uhfHeaderId": "MSDocsHeader-AzureDevOps",
