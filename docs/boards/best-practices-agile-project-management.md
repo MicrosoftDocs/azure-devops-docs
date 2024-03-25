@@ -35,9 +35,9 @@ Azure Boards provides each team with a set of Agile tools to plan and track work
 For more information about configuring teams, see:
 
 - [Configure a hierarchy of teams](plans/configure-hierarchical-teams.md)
-- [Add a team, move from one default team to several teams](../organizations/settings/add-teams.md)
+- [Add a team and move from one default team to several teams](../organizations/settings/add-teams.md)
 - [Understand Agile culture](/devops/plan/adopting-agile)
-- [Scale Agile to Large Teams](/devops/plan/scaling-agile)
+- [Scale Agile to large teams](/devops/plan/scaling-agile)
 
 ## Configure your sprints
 
@@ -53,7 +53,7 @@ Sprints specified by iteration paths are defined for a project and then selected
 
 For more information about configuring sprints, see:
 
-- [About area and iteration paths, Define and assign iteration paths](../organizations/settings/about-areas-iterations.md#iteration-path-guidance)
+- [Define and assign iteration paths](../organizations/settings/about-areas-iterations.md#iteration-path-guidance)
 - [Define iteration paths and configure team iterations](../organizations/settings/set-iteration-paths-sprints.md)
 
 ## Choose your work item types
@@ -224,7 +224,7 @@ The following **Add link** dialog illustrates how two work items are linked by u
 
 ::: moniker range="azure-devops"
 
-You can view dependencies and identify dependencies that have issues with delivery plans. As shown in the following image, you can toggle the display of dependency lines between linked work items. For more information, see [Track dependencies using delivery plans](plans/track-dependencies.md).
+You can view dependencies and identify dependencies that have issues with delivery plans. As shown in the following image, you can toggle the display of dependency lines between linked work items. For more information, see [Track dependencies by using delivery plans](plans/track-dependencies.md).
 
 :::image type="content" source="plans/media/dependencies/dependency-lines.png" alt-text="Screenshot that shows dependency lines between several work items.":::
 
@@ -337,7 +337,7 @@ To review features delivered across several teams, configure a delivery plan. De
 - Add rollup columns to your feature backlog to monitor overall progress based on work item count completion.
 - Use delivery plans to review features for several teams to discuss cross-team dependencies.
 
-For more information, see the following articles:
+For more information, see:
 
 - [Add columns to your Kanban board](boards/add-columns.md)
 - [Customize cards](boards/customize-cards.md)
@@ -392,7 +392,7 @@ For more information, see:
 
 - [View or configure team velocity](../report/dashboards/team-velocity.md)
 - [Add, rename, and delete dashboards](../report/dashboards/dashboards.md)
-- [Scaling Agile - Practices that scale](plans/practices-that-scale.md)
+- [Implement Agile practices that scale](plans/practices-that-scale.md)
 - [Retrospectives Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 
 ## Next steps
