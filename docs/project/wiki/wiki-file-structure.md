@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: '>= tfs-2018'
+monikerRange: "<=azure-devops"
 ms.date: 01/05/2024  
 ---
 

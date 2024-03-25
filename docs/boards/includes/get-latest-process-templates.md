@@ -16,12 +16,3 @@ ms.date: 01/22/2021
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
-
-> [!TIP]  
-> To access the latest versions of the default process templates: 
-> - [Install or upgrade to the latest version of TFS](https://visualstudio.microsoft.com/downloads/). 
-> - Download the zipped template file using the [Process Template Manager](../work-items/guidance/manage-process-templates.md). You'll need to use a version of Visual Studio that is at the same version level as TFS. You can install the latest version of [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) for free. 
-> - You can access the latest versions of the default process templates installed on TFS 2018 here:` %programfiles%/TFS 16.0/Tools/Deploy/ProcessTemplateManagerFiles/1033`. For descriptions of each file and folder, see [Overview of process template files](/previous-versions/azure/devops/reference/process-templates/overview-process-template-files). 
-
-::: moniker-end

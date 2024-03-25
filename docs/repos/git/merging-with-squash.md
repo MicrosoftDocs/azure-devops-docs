@@ -49,16 +49,7 @@ Choose **Squash commit** under **Merge type** in the **Complete pull request** d
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-### Complete pull requests with squash merge
 
-You can choose to squash merge when completing a pull request in Azure Repos.
-
-Choose **Squash changes when merging** on the **Complete pull request** dialog to squash merge the topic branch.
-
-![Screenshot of closing a pull request with a squash merge in Azure Repos.](media/merging-with-squash/squash-merge-pr.png)
-
-::: moniker-end
 
 ## Multiple merge bases
 

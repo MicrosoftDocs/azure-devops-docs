@@ -14,11 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 You can create a connection from Azure Pipelines to external and remote services for executing tasks in a job. Once you establish a connection, you can view, edit, and add security to the service connection.
 
@@ -55,18 +51,7 @@ Complete the following steps to create a service connection for Azure Pipelines.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. In Team Foundation Server (TFS), open the **Services** page from the "settings" icon in the top menu bar.
-1. Select **+ New service connection** and select the type of service connection you need.
-1. Enter the parameters for the service connection. The list of parameters differs for each type of service connection. For more information, see the [list of service connection types](#common-service-connection-types).
-1. Select **OK** to create the connection.
-
-    ![Azure Resource Manager connection dialog](media/new-azure-rm-connection-01.png)
-
-1. Validate the connection, once it's created and parameters are entered. The validation link uses a REST call to the external service with the information that you entered, and indicates whether the call succeeded.
-
-::: moniker-end
 
 > [!NOTE]
 > The new service connection window may appear different for the various types of service connections and have different parameters. See the list of parameters in [Common service connection types](#common-service-connection-types) for each service connection type.
@@ -95,25 +80,7 @@ Complete the following steps to edit a service connection.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. In TFS, open the **Services** page from the "settings" icon in the top menu bar.
-1. Select **Project settings** > **Service connections**.
-1. Select the service connection that you want to edit.
-1. See the **Overview** tab of the service connection where you can see the details of the service connection. For example, you can see details like type, creator, and authentication type. For instance, token, username/password, or OAuth, and so on.
-
-    ![Azure Resource Manager connection overview](../release/_img/azure-rm-endpoint/azure-rm-overview-page.png)
-
-1. Next to the overview tab, you can see **Usage history**, which shows the list of pipelines that are using the service connection.
-
-    ![Azure Resource Manager usage history](../release/_img/azure-rm-endpoint/azure-rm-usage-history.png)
-
-1. To update the service connection, select **Edit**.
-**Approvals and checks**, **Security**, and **Delete** are part of the more options at the top-right corner.
-
-    ![Azure Resource Manager more options](../release/_img/azure-rm-endpoint/azure-rm-more-options.png)
-
-::: moniker-end
 
 ## Secure a service connection
 
@@ -130,17 +97,7 @@ Complete the following steps to manage security for a service connection.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. In TFS, open the **Services** page from the "settings" icon in the top menu bar.
-
-1. To manage user permissions at hub level, go to the more options at the top-right corner and choose **Security**.
-
-    ![Service connection hub security](../release/media/azure-rm-endpoint/service-connection-hub-security.png)
-
-1. To manage security for a service connection, open the service connection and go to more options at top-right corner and choose **Security**.
-
-::: moniker-end
 
 Based on usage patterns, service connection security is divided into the following categories. Edit permissions as desired.
 

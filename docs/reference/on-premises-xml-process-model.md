@@ -28,10 +28,7 @@ For Azure DevOps Server 2019 and later versions, you have a choice of process mo
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-Team Foundation Server uses the On-premises XML process model to support customizations. This model relies on updating and importing XML files using the **witadmin** command line tool. 
-::: moniker-end  
+  
 
 > [!IMPORTANT]  
 > Migration of projects or collections from Hosted XML to the inherited model is not support for Azure DevOps Server. It is only available on the Azure DevOps Sevice.

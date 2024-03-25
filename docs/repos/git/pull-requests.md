@@ -43,12 +43,7 @@ For PR guidelines and management considerations, see [About pull requests](about
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
 
-::: moniker-end
 
 - To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
@@ -108,17 +103,7 @@ Select **Create a pull request** to go to a page where you can [enter your PR de
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-After you push or update a feature branch, Azure Repos prompts you to create a PR in the **Code** view on the web. This prompt is displayed on **Pull Requests** and **Files**.
-
-![Screenshot that shows the prompt to create a P R on the Pull Requests tab in Azure Repos.](media/pull-requests/create-pr-from-push.png)
-
-![Screenshot that shows the prompt to create a P R on the Files tab in Azure Repos.](media/pull-requests/create-pr-from-push-files-tab.png)
-
-Select **Create a pull request** to go to a page where you can [enter your PR details](pull-requests.md#finish) and create the PR.
-
-::: moniker-end
 
 <a name="from-a-linked-work-item"></a>
 
@@ -311,10 +296,7 @@ To change an existing published PR to a draft, choose **Mark as draft**. Marking
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-> [!NOTE]
-> This feature requires Azure DevOps Server 2019.1 update or later version.
-::: moniker-end
+
 
 
 # [Visual Studio](#tab/visual-studio)
@@ -479,23 +461,7 @@ To add reviewers to your PR:
 
 -->
 
-::: moniker range="tfs-2018"
 
-To add reviewers to your PR:
-
-1. Select the **Overview** tab in the PR.
-
-   ![PR overview](media/pull-requests/pull-request-overview-reviewers.png)
-
-1. Select the add button in the **Reviewers** area. :::image type="icon" source="media/pull-requests/pull-request-add-button.png":::
-
-1. Enter the name of the user or group to add to the reviewer list for the PR. If the user isn't a member of your project, you'll need to [add them](../../organizations/security/add-users-team-project.md).
-
-1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
-
-   ![Add PR reviewer](media/pull-requests/add-pr-reviewer.png)
-
-::: moniker-end
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -591,22 +557,7 @@ Removing a link only removes the link between a work item to a PR. Links created
 
 :::moniker-end
 
-::: moniker range="tfs-2018"
 
-To link work items to your PR:
-
-1. Select **Overview** in the PR.
-
-   ![Select Overview in the PR.](media/pull-requests/pull-request-overview-work-items.png)
-
-2. Select the add button in the **Work Items** area. :::image type="icon" source="media/pull-requests/pull-request-add-button.png":::
-
-3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears. Search by title returns work items filtered by state; all work items with states having state categories **Completed** and **Removed** are excluded. These work items are also filtered by date and user, with only items created or updated in the last 30 days shown, and they should be created by, assigned to, or authorized as the current user.
-
-Remove work item links by selecting the remove button that appears when you hover over the work item. ![remove icon](media/pull-requests/pr_remove_icon.png)
-Removing a link only removes the link between the work item and the PR. Links created in the branch or from commits stay in the work item.
-
-::: moniker-end
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -659,7 +610,7 @@ az repos pr work-item add --id
 
 <a name="add-tags"></a>
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 ## Add tags to a pull request
 
@@ -673,26 +624,10 @@ To add a tag when creating a PR, type a tag name in the **Tags** section. After 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-## Add labels to a pull request
 
-You can communicate extra information about a PR to the reviewers by using labels. Maybe the PR is still a work in progress, or it's a hotfix for an upcoming release. Use labels to communicate important details and help organize PRs.
-::: moniker-end
-::: moniker range="tfs-2018"
 
-> [!NOTE]
-> Using PR labels requires TFS 2018.2 or later version.  
-::: moniker-end
 
-::: moniker range="tfs-2018"
-![Screenshot showing P Rs with labels.](media/pull-requests/pull-request-labels.png)
-
-To add a label when creating a PR, choose **Add label**. After you create a PR, you can manage its labels in the **Labels** section.
-
-![Add P R label](media/pull-requests/add-pull-request-label.png)
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -716,7 +651,7 @@ For most teams, nearly all PRs target a default branch, such as `main` or `devel
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2018"
+::: moniker range="<=azure-devops"
 
 ## Email pull request notifications to stakeholders
 

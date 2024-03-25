@@ -72,27 +72,7 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Set dashboard permissions](dashboard-permissions.md)  
       - [View a dashboard](dashboards.md)  
       ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
-      - [Add a dashboard](dashboards.md)  
-      - [Add a chart to a dashboard](add-charts-to-dashboard.md)  
-      - [Add a widget to a dashboard](add-widget-to-dashboard.md)  
-      - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)  
-      - [Copy a widget to a dashboard](add-widget-to-dashboard.md#copy)   
-      - [Delete a dashboard](dashboards.md)  
-      - [Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete) 
-<br/>
-      - [Edit a dashboard](dashboards.md)  
-      - [Enable auto-refresh](dashboards.md)  
-      - [Favorite a dashboard](dashboards.md)  
-      - [Filter dashboard directory](dashboards.md)  
-      - [Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)  
-      - [Open a dashboard](dashboards.md)  
-      - [Rename a dashboard](dashboards.md)  
-<br/> 
-      - [Refresh a dashboard](dashboards.md)  
-      - [Set dashboard permissions](dashboard-permissions.md)  
-      - [View a dashboard](dashboards.md)  
-      ::: moniker-end
+      
    :::column-end:::
    :::column span="2":::
       **Charts** 
@@ -107,7 +87,7 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Power BI reports](../powerbi/overview.md#sample-reports)  
       - [OData](../extend-analytics/quick-ref.md)  
       ::: moniker-end
-      ::: moniker range="<= azure-devops-2019"
+      ::: moniker range="=azure-devops-2019"
       **SQL Reports** 
       - [SQL Server reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)  
       - [Excel work tracking reports](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)  
@@ -123,10 +103,7 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Configure the Test Results widget](configure-test-results-trend.md)  
       - [Resize a widget](add-widget-to-dashboard.md) 
       ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
-      - [Configure a widget](add-widget-to-dashboard.md#configure)  
-      - [Resize a widget](add-widget-to-dashboard.md) 
-      ::: moniker-end
+      
       **Troubleshoot** 
       - [FAQs: Dashboards, charts, and reports](faqs.yml)   
    :::column-end:::
@@ -145,10 +122,7 @@ In context reports appear on the **Analytics** tab of these specific service pag
 In-context reports appear on specific service pages, such as **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**,and **Pipelines>Builds>Analytics**. These reports derive data from the Analytics service. 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-In-context reports appear on specific service pages, such as **Work>Backlog**, **Work>Backlogs** and **Build and Release>Builds**. 
-::: moniker-end
 
 
 ---
@@ -170,15 +144,7 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
       - [Test failures](../../pipelines/test/test-analytics.md)  
       - [Test impact analysis](../../pipelines/test/test-impact-analysis.md) 
       ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
-      **Build & Release** 
-      - [Build test results](../../pipelines/test/review-continuous-test-results-after-build.md) 
-      - [Code coverage](../../pipelines/test/review-code-coverage-results.md) 
-      - [Release test results](../../pipelines/test/review-continuous-test-results-after-build.md) 
-      - [Trace test requirements](../../pipelines/test/requirements-traceability.md) 
-      - [Test failures](../../pipelines/test/test-analytics.md)  
-      - [Test impact analysis](../../pipelines/test/test-impact-analysis.md) 
-      ::: moniker-end
+      
    :::column-end:::
 :::row-end:::
 ---

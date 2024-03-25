@@ -126,7 +126,7 @@ Azure DevOps supports integration with Azure, GitHub, and many other services. A
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"  
+::: moniker range="<azure-devops"
 
 - [About projects](../organizations/projects/project-team-quick-reference.md)  
 - [Get started managing your organization or project collection](manage-organization-collection.md) 

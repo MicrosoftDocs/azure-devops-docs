@@ -128,9 +128,7 @@ You can add most fields listed in the [Work item field index](../work-items/guid
 ::: moniker-end 
 
 
-::: moniker range="tfs-2018"
-You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project.
-::: moniker-end
+
 
 
 ## About persistence of column options
@@ -146,12 +144,7 @@ Once you set the column options for a specific view, your settings  persist unti
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-- Column options you set for a backlog apply only to the active team and backlog. Options set for the product backlog differ from those options you set for a portfolio backlog. 
-- Column options you set for a Sprint backlog persist for all sprints you select until you change them.  
-- Column options you set for a query persist when you save the query. For Shared queries, your settings can get overwritten when someone else saves different column option settings. 
-::: moniker-end
 
 
 ::: moniker range="azure-devops"
@@ -163,10 +156,7 @@ Once you set the column options for a specific view, your settings  persist unti
 > [!NOTE]    
 > You can't set column options for other members of your team. Also, for projects that use the Inheritance process model, you can't set default column options. For projects that use the On-premises XML process model, you can set the default column options for product, portfolio, and sprint backlogs. To learn how, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 ::: moniker-end
-::: moniker range="tfs-2018"
-> [!NOTE]    
-> You can't set column options for other members of your team. For projects that use the On-premises XML process model, you can set the default column options for product and portfolio backlogs. To learn how, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
-::: moniker-end
+
 
 ## Open the Column options dialog
 
@@ -179,11 +169,7 @@ Start by opening the **Column Options** dialog. If you don't see the option, cho
 ::: moniker-end 
 
 
- ::: moniker range="tfs-2018"
-
-![Open column options](media/set-column-open-dialog-s125.png) 
-
-::: moniker-end 
+  
 
 
 ## Add or remove columns
@@ -194,17 +180,14 @@ Start by opening the **Column Options** dialog. If you don't see the option, cho
 In the Column options dialog, choose **Add a column** to add a field that isn't shown. To change the order of the fields, drag-and-drop the field where you want it within the set of selected fields. And, to remove a field, choose the ![delete icon](../media/icons/delete_icon.png).
 
 
-::: moniker range="tfs-2018"
-> [!NOTE]    
-> The following dialog is available from TFS 2018.2 and later versions. 
-::: moniker-end
+
 
 ![Column options dialog](media/set-column-options-s125.png)  
 
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 You can only change column options for queries in Visual Studio. To open, choose **Column Options**.
 
@@ -245,14 +228,7 @@ You can sort query results and Work items views. From the Column options dialog,
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-You can sort query results. From the Column options dialog, choose **Sorting**.  Add or remove a column field and drag and drop it into the order you want. Choose the up or down arrows to choose whether it sorts in ascending or descending order. 
-
-> [!div class="mx-imgBorder"]  
-> ![Column options, Sorting page dialog](media/columns/sort-dialog.png) 
-
-::: moniker-end
 
 ## Use keyboard shortcuts to change the column order, column width, or sort options
 

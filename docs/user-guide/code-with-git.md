@@ -66,37 +66,7 @@ To work with a Git repo, clone it to your computer, which creates a complete loc
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Complete the following step that's applicable to your scenario:
-
-   - If **You don't have any code yet**, first [Create a new Git repo in your project](../repos/git/create-new-repo.md#create-a-repo-using-the-web-portal), and then complete the next step.
-   - If **the code is in another Git repo**, such as a GitHub repo or a different Azure Repo instance, [import it into a new or existing empty Git repo](../repos/git/import-git-repository.md), and then complete the next step.
-   - If **the code is on your local computer and not yet in version control**, either [create a new Git repo in your project](../repos/git/create-new-repo.md#create-a-repo-using-the-web-portal) or add your code to an existing repository.
-
-2. From your web browser, open the project for your organization, and select **Code**.
-
-3. Select **Clone** in the upper-right corner of the Code window, and copy the URL.
-
-   ![Screenshot of project in web browser, with Copy icon highlighted.](media/code-with-git-clone-repo-prev.png)
-
-4. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
-
-   ```
-   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
-   ```
-  
-   Git downloads a copy of the code in a new folder for you to work with. The download includes all [commits](../repos/git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo.
-
-5. Switch your directory to the repository that you cloned.
-
-   ```
-   cd contoso-demo
-   ```
-
-   Keep the command window open to work in a branch.
-
-::: moniker-end
 
 ## 3. Work in a branch
 
@@ -210,33 +180,7 @@ The following example shows the basic steps of creating and completing a pull re
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Open the team project for your organization from your web browser and select the **Code** page.
-
-2. Select **Clone** in the upper-right corner of the **Code** page and copy the **Clone URL**.
-
-   ![Retrieve the clone URL](media/code-with-git-clone-repo.png)
-
-3. Open the Git command window, for example Git Bash on Git for Windows, and browse to the folder where the repo is stored on your computer. 
-   
-   Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
-
-   ```
-   git clone https://dev.azure.com/contoso-ltd/MyFirstProject/_git/contoso-demo
-   ```
-
-   Git downloads a copy of the code into a new folder for you to work with. The download includes all [commits](../repos/git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo.
-
-4. Switch your directory to the repository that you cloned.
-
-   ```
-   cd fabrikam-web
-   ```
-
-   Keep this command window open, because you use it in the following steps.
-
-::: moniker-end
 
 Your changes are now merged into the `main` branch, and your `users/jamal/feature1` branch is deleted on the remote repository. 
 
@@ -254,17 +198,7 @@ Your changes are now merged into the `main` branch, and your `users/jamal/featur
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Switch back to the web portal, and select **History** from the **Code** tab to view your new commit. Two commits appear: the first commit, where the README and .gitignore were added upon repo creation, and the commit you just made.
-
-   ![View commit history](../repos/git/media/repo-mgmt/commit-push.png)
-
-2. Switch to the **Files** tab, and select the README file to view your changes.
-
-   ![View changed file](../repos/git/media/repo-mgmt/readme-changed-file.png)  
-
-::: moniker-end
 
 ## Clean up
 

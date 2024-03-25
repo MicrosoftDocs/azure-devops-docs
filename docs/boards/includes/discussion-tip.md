@@ -56,15 +56,7 @@ A full audit trail of all  edited and deleted comments is maintained in the **Hi
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018" 
-
-Use the [**@mention** control](../../organizations/notifications/at-mentions.md) to notify another team member about the discussion. Enter `@` and their name. To reference a work item, use the [**#ID** control](../../organizations/notifications/add-links-to-work-items.md). Enter `#` and a list of work items that you've recently referenced appears from which you can select.  
-
-To reference a work item, use the **#ID** control. Enter `#` and a list of work items that you've recently referenced appears from which you can select.  
-
-You can't edit or delete comments once you've entered them. 
-
-::: moniker-end 
+ 
 
 ::: moniker range="< azure-devops" 
 

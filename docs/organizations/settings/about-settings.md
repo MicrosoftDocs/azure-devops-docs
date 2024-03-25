@@ -254,16 +254,7 @@ From the administrative **Project settings** page, you can configure settings av
 ![Screenshot of Project settings page, Azure DevOps Server versions.](media/about/project-settings-server-2020.png)  
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-**Project-level settings**  
-From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
 
-![Screenshot of Project settings tab selected, TFS versions.](media/about/collection-settings-tfs-nav.png)  
-
-> [!NOTE]  
-> Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
-
-::: moniker-end
 
 :::row:::
    :::column span="1":::
@@ -554,17 +545,7 @@ From the administrative page for a collection, you can configure the settings sh
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-**Collection-level settings**  
-From the administrative page for a collection, you can configure the settings shown in the following image and listed in the following table. 
-
-> [!NOTE]  
-> Project collection settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
-
-![Screenshot of Collection settings options, TFS.](media/about/collection-settings-tfs-nav.png) 
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 

@@ -9,7 +9,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-monikerRange: '>= tfs-2018'
+monikerRange: "<=azure-devops"
 ms.date: 01/05/2024  
 ---
 
@@ -19,10 +19,7 @@ ms.date: 01/05/2024
 
 You can update your wiki pages offline the same way you develop code in a Git repo.
 
-::: moniker range="tfs-2018"
-> [!NOTE]  
-> GIT workflows, like branch policies, are applicable only for publish code as wiki workflows.
-::: moniker-end
+
 
 You can use any client you want or git command-line tools to update your wiki offline. For details on working with Git repositories and supported tools, see [Git Repositories](../../repos/git/index.yml).
 
@@ -44,13 +41,7 @@ Do the following steps to migrate Markdown pages from another wiki to your team 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Do the following steps to migrate Markdown pages from another wiki to your team project wiki.
-
-- [Understand the underlying structure of your wiki Git repo](wiki-file-structure.md).
-
-::: moniker-end
 
 <a id="edit-wiki-offline"></a>
 

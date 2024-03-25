@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.date: 01/05/2024
-monikerRange: '>= tfs-2018'
+monikerRange: "<=azure-devops"
 ---
 
 # Manage Wiki permissions

@@ -35,7 +35,7 @@ This article shows you how to:
 > * Follow a pull request 
 > * Manage work items that you're following
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to receive notifications.   
 ::: moniker-end  
@@ -79,7 +79,7 @@ By default, you're **Subscribed** to receive a notification when any change is m
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](media/follow-work/follow-work-item.png) 
@@ -133,23 +133,7 @@ You can also view and manage work that you're following from **Boards>Work Items
 
 ::: moniker-end   
 
-::: moniker range="tfs-2018"
-
-Open **Work>Queries** and choose **Followed work items**.  
-
-<img src="media/follows-followed-work-items.png" alt="Followed work items, Follow icon control" />  
-
-From this view, you can view all items you're following across all projects. Also, you can complete similar actions supported with a query results view, such as:
-- Refresh the view
-- Add or remove visible columns
-- Sort the order of specific columns
-- Filter results by text or tags 
-- Set work item pane
-- Enter full screen mode. 
-
-You can also view and manage work that you're following from your Project pages. For more information, see [Work across projects](../../project/navigation/work-across-projects.md). 
-
-::: moniker-end 
+ 
 
 
 ## Query work items that you're following

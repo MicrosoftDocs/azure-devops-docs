@@ -36,34 +36,7 @@ ms.topic: include
 > [!WARNING]
 > Treat and use a PAT like your password and keep it a secret.
 
-::: moniker range=" < azure-devops-2019"
 
-1. Sign in to your web portal (```https://{server}:8080/tfs/```).
-
-2. From your home page, open your profile. Go to your security details.
-
-  :::image type="content" source="../media/my-profile-team-services.png" alt-text="Screenshot showing home page, opening your profile, and the Security button."::: 
-
-3. Create a personal access token.
-
-  :::image type="content" source="../media/add-personal-access-token.png" alt-text="Screenshot showing adding a personal access token.":::
-
-4. Name your token. Select a lifespan for your token.
-
-   If you have more than one organization, you can also select the organization where you want to use the token.
-
-   :::image type="content" source="../media/setup-personal-access-token.png" alt-text="Screenshot showing information entry, including token name and lifespan.":::
-
-5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
-   for this token to authorize for *your specific tasks*.
-
-   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate, limit your token's scope to **Agent Pools (read, manage)**.
-
-6. When you're done, make sure to *copy the token*. For your security, it doesn't display again. Use this token as your password. Select **Close**.
-
-   :::image type="content" source="../../tfvc/media/create-personal-access-token.png" alt-text="Screenshot showing created token.":::
-
-::: moniker-end
 
 Use your PAT anywhere your user credentials are required for authentication in Azure DevOps.
 
@@ -257,11 +230,7 @@ For more information and examples of how to use PATs, see the following articles
 - [Reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
 - [Get started with Azure DevOps CLI](../../../cli/index.md).
 
-::: moniker range="< azure-devops-2019"
 
-If you enable IIS Basic Authentication, PATs aren't valid. For more information, see [Using IIS Basic Authentication on-premises](../../../integrate/get-started/authentication/iis-basic-auth.md).
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 

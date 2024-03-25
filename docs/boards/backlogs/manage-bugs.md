@@ -194,9 +194,7 @@ To customize your particular process, see [Customize an inheritance process](../
 To customize your particular process, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md) or [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-To customize your particular process, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
-::: moniker-end
+
  
 
 ## Add or capture bugs 

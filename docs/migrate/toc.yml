@@ -1,26 +1,26 @@
 - name: Migrate data to Azure DevOps Services
-  href: migration-overview.md
   displayName: migration, migration guide, migration tool
+  href: migration-overview.md
 - name: Migrate options
-  href: migrate-from-tfs.md
   displayName: migration options, database, migration guide
+  href: migrate-from-tfs.md
 - name: Import
-  href: migration-import.md
   displayName: database import, data migration tool, validate collection
+  href: migration-import.md
 - name: Import large collections
-  href: migration-import-large-collections.md
   displayName: reduce collection size
+  href: migration-import-large-collections.md
 - name: Restrict access to Azure DevOps Services IPs only
-  href: migration-restricting-access-to-azure-devops-services.md
   displayName: restrict access to azure devops services ips only
+  href: migration-restricting-access-to-azure-devops-services.md
 - name: Process templates
-  href: migration-processtemplates.md
   displayName: inherited process model, hosted xml process model
+  href: migration-processtemplates.md
 - name: Post-import
   href: migration-post-import.md
 - name: Troubleshooting
-  href: migration-troubleshooting.md
   displayName: maximum supported size, isverror 100014, isverror 300005, VS4034, VS4032, VS4033
+  href: migration-troubleshooting.md
 - name: FAQs, migration and process models
-  href: faqs.yml
   displayName: hosted xml
+  href: faqs.yml

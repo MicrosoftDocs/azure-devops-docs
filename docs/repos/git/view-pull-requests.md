@@ -40,10 +40,7 @@ There are several ways to list, filter, view, and open PRs for a project.
 - To view PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 
-::: moniker-end
 
 - To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
@@ -81,22 +78,10 @@ You can list PRs by using the Azure DevOps project website, Visual Studio, or th
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-Manage PRs you own or are assigned to with the **Pull Requests** tab in the **Code** page on the web.
-
-![Screenshot of viewing completed and abandoned PRs in Azure Repos.](media/view-pull-requests/repos-code-pull-requests.png)
-
-::: moniker-end 
+ 
 
 
-::: moniker range="tfs-2018"
-
-You can view all of your PRs in your organization, across all projects, by choosing **My pull requests** from the **Projects** page.
-
-![View all my pull requests](media/view-pull-requests/view-all-pull-requests.png)
-
-::: moniker-end 
+ 
 
 # [Visual Studio](#tab/visual-studio)
 

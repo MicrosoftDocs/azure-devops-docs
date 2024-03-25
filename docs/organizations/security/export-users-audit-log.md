@@ -26,9 +26,7 @@ You can get a list of users and groups that have access to your organization in 
 You can get a list of users and groups that have access to your Azure DevOps Server instance by exporting the audit log. The audit log also indicates access levels.
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-You can get a list of users and groups that have access to your Team Foundation Server (TFS) instance by exporting the audit log. The audit log also indicates access levels.
-::: moniker-end
+
 
 ## Prerequisites
 
@@ -94,25 +92,7 @@ You can get a list of users and groups that accessed your instance by exporting 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-You can get a list of users and groups that have access to your instance by exporting the audit log. The audit log also indicates access levels.  
-
-1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
-
-	<img src="media/access-levels-2017-open-admin-context.png" alt="Screenshot of Open Server settings admin context, 2018." />  
-
-2. Choose **Access levels**, and then **Export audit log**. 
-
-	<img src="media/export-users-audit/export-audit-log-tfs.png" alt="Screenshot of Export audit log, 2018. " />  
-
-	> [!NOTE]
-	> If you're not a member of the Team Foundation Server Administrators group, the link to the **Access levels** page won't appear. 
-
-3. The user log file saves as a .csv file to your Download folder.  
-	To determine the access level assigned to each user or group, open the file in Excel.
-
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 

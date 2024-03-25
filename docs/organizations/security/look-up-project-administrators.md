@@ -106,22 +106,7 @@ Choose the **Project Administrators** group from the **Project Settings > Permis
 ::: moniker-end  
 
 
-::: moniker range="tfs-2018"  
 
-1. Open the web portal and choose your project. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
-
-2. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open **Project Settings**.
-
-   ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
-
-3. Choose the **Security** page, **Project Administrators** group, and then the **Members** tab.  
-
-	The list of members is shown. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Web portal, Security tab, Project Administrators Group, Members tab](media/view-permissions-project-level-membership.png) 
-
-::: moniker-end
 
  
 ## Next steps

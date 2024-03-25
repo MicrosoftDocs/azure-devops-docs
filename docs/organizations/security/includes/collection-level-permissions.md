@@ -32,9 +32,7 @@ The following table lists the permissions assigned at the organization or collec
       - Delete process
       - Edit process
       ::: moniker-end
-      ::: moniker range="tfs-2018"
-      - Delete field from organization or account  
-      ::: moniker-end
+      
       
       **Repos** (TFVC)  
       - Administer shelved changes  
@@ -50,12 +48,7 @@ The following table lists the permissions assigned at the organization or collec
       - Use build resources
       - View build resources
       ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
-      - Administer build resource permissions  
-      - Manage build resources 
-      - Use build resources
-      - View build resources
-      ::: moniker-end
+      
       **Test Plans**  
       - Manage test controllers  
       ::: moniker range="azure-devops"

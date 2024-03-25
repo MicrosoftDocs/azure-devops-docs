@@ -21,9 +21,7 @@ This article covers:
 - [Sign your Android app](#android)
 - [Sign your Apple iOS, macOS, tvOS, or watchOS app](#apple)
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 <a name="android"></a>
 

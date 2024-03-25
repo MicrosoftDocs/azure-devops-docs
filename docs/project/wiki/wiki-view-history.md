@@ -70,10 +70,7 @@ This article shows you how to view the revision history of a wiki page in Azure 
 
 Select **Revert** on the revision details page to revert a change on a wiki page.
 
-::: moniker range="tfs-2018"
-> [!NOTE]
-> The **Revert** option is available with TFS 2018.2 and later versions.
-::: moniker-end
+
 
 :::image type="content" source="media/wiki/wiki-revert.png" alt-text="Screenshot fo the Dialog box revert revision. Revert option is selected.":::
 

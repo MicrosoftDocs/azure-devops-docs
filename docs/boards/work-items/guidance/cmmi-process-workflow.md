@@ -39,7 +39,7 @@ Create requirements from the quick add panel on the [product backlog page](../..
 Or, you can bulk add requirements using a [cvs file](../../queries/import-work-items-from-csv.md). 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 Or, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).
 ::: moniker-end
 

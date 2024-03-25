@@ -14,11 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 Retention policies let you set how long to keep runs, releases, and tests stored in the system. To save storage space, you want to delete older runs, tests, and releases.   
 
@@ -89,11 +85,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 In most cases, you don't need to retain completed runs longer than a certain number of days. 
 Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
 
-::: moniker range="tfs-2018"
 
-Along with defining how many days to retain runs, you can also decide the minimum number of runs that should be kept for each pipeline.
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -146,23 +138,9 @@ The setting for number of recent runs to keep for each pipeline requires a littl
 
 ### What parts of the run get deleted
 
-::: moniker range="tfs-2018"
 
-When the retention policies mark a build for deletion, you can control which information related to the build is deleted:
 
-* Build record: You can choose to delete the entire build record or keep basic information about the build even after the build is deleted.
-* Source label: If you label sources as part of the build, then you can choose to delete the tag (for Git) or the label (for TFVC) created by a build.
-* Automated test results: You can choose to delete the automated test results associated with the build (for example, results published by the Publish Test Results build task).
-
-The following information is deleted when a build is deleted:
-
-* Logs
-* Published artifacts
-* Published symbols
-
-::: moniker-end
-
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 The following information is deleted when a run is deleted:
 
@@ -180,7 +158,7 @@ Universal packages, NuGet, npm, and other packages are not tied to pipelines ret
 
 ### When are runs deleted
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 Your retention policies are processed once a day. The time that the policies get processed variables because we spread the work throughout the day for load-balancing purposes. There is no option to change this process.
 
@@ -193,11 +171,7 @@ A run is deleted if all of the following conditions are true:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Your retention policies run every day at 3:00 A.M. UTC. There is no option to change the time the policies run.
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -245,10 +219,7 @@ The retention policy for YAML and build pipelines is the same. You can see your 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-You can also learn how to customize these policies on a [stage-by-stage basis](#stage-specific-retention-policies) later in this article.
 
-::: moniker-end
 
 ### Global release retention policy
 
@@ -282,96 +253,9 @@ For on-premises servers, you can also set the collection-level retention policie
 ::: moniker-end
 
 
-::: moniker range="<=tfs-2018"
 
-> [!NOTE]
-> In TFS, release retention management is restricted to specifying the number of days, and this is available only in TFS 2015.3 and newer.
 
-## Stage-specific retention policies
 
-You may want to retain more releases that have been deployed to specific stages. For example, your team may want to keep:
-
-* Releases deployed to Production stage for 60 days, with a minimum of three last deployed releases.
-* Releases deployed to Pre-production stage for 15 days, with a minimum of one last deployed release.
-* Releases deployed to QA stage for 30 days, with a minimum of two last deployed releases.
-* Releases deployed to Dev stage for 10 days, with a minimum of one last deployed release.
-
-The following example retention policy for a release pipeline meets the above requirements:
-
-  > [!div class="mx-imgBorder"]
-  > ![Configuring the release retention setting for a release pipeline](media/retention-policy-01.png)
-
-In this example, if a release that is deployed to Dev is not promoted to QA for 10 days, it is a potential candidate for deletion. However, if that same release is deployed to QA eight days after being deployed to Dev, its retention timer is reset, and it is retained in the system for another 30 days.
-
-When specifying custom policies per pipeline, you cannot exceed the maximum limits set by administrator.
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-### Interaction between build and release retention policies
-
-The build linked to a release has its own retention policy, which may be shorter than that of the release. If you want to retain the build for the same period as the release, set the **Retain associated artifacts** checkbox for the appropriate stages. This overrides the retention policy for the build, and ensures that the
-artifacts are available if you need to redeploy that release.
-
-When you delete a release pipeline, delete a release, or when the retention policy deletes a release automatically, the retention policy for the associated build will determine when that build is deleted.
-
-> [!NOTE]
-> In TFS, interaction between build and release retention is available in TFS 2017 and newer.
-
-## Set test retention policies
-
-You can set manual and automated test run policies. 
-
-### Manual test-runs retention policies
-
-To delete manual test results after a specific number of days, set the retention limit at the project level. Azure DevOps keeps manual test results related to builds, even after you delete those builds. That way, build policies don't delete your test results before you can analyze the data.
-
-1. Sign into your Azure DevOps. You'll need at least project administrator permissions.
-
-2. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
- 
-  > [!div class="mx-imgBorder"]
-  > ![configure project settings](media/project-settings.png)
-
-3. In the Retention page under the Test section, select a limit for how long you want to keep manual test data.
-
-  > [!div class="mx-imgBorder"]
-  > ![manual tests retention policies](media/manual-tests-retention-policies.png)
-
-### Automated test-runs retention policies
-
-By default, Azure DevOps keeps automated test results related to builds only as long as you keep those builds. To keep test results after you delete your builds, edit the build retention policy. If you use Git for version control, you can specify how long to keep automated test results based on the branch.
-
-1. Sign into Azure DevOps. You'll need at least build level permissions to edit build pipelines.
- 
-2. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
-
-  > [!div class="mx-imgBorder"]
-  > ![manage project settings](media/project-settings.png)
-
-3. Select ![gear icon](../../media/icons/gear-icon.png) Settings under Pipelines and modify your retention policies.
-
-  > [!div class="mx-imgBorder"]
-  > ![edit project settings](media/build-pipelines-retention-policies.png)
-
-### Other automated test results
-
-To clean up automated test results that are left over from deleted builds or test results that aren't related to builds, for example, results published from external test systems, set the retention limits at the project level as shown in the [Manual test-runs retention policies](#manual-test-runs-retention-policies)
-
-## Set artifact retention policies
-
-You can set artifact retention policies for pipeline runs in the Pipeline settings. 
-
-1. Sign in to your project, For Azure DevOps Services, the URL path is `https://dev.azure.com/{yourorganization}/{yourproject}`.
-
-2. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
-
-3. Select **Settings** in **Pipelines**.
-
-4. Edit **Days to keep artifacts, symbols, and attachments**. 
-
-::: moniker-end
 
 
 ::: moniker range=">=azure-devops-2020"
@@ -408,75 +292,9 @@ You can use the [Copy Files task](/azure/devops/pipelines/tasks/reference/copy-f
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-You can also customize these policies on a branch-by-branch basis if you are building from [Git repositories](#git-repositories).
 
-## Global build retention policy
 
-You can specify build retention policy defaults and maximums for a project collection. You can also specify when builds are permanently destroyed (removed from the **Deleted** tab in the build explorer).
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-* TFS 2018: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
-
-The **maximum retention policy** sets the upper limit for how long runs can be retained for all build pipelines.
-Authors of build pipelines cannot configure settings for their definitions beyond the values specified here.
-
-The **default retention policy** sets the default retention values for all the build pipelines. Authors of build pipelines can override these values.
-
-The **Permanently destroy releases** helps you keep the runs for a certain period of time after they are deleted. This policy cannot be overridden in individual build pipelines.
-
-## Git repositories
-
-If your [repository type](../repos/index.md) is one of the following, you can define multiple retention policies with branch filters:
-
-* Azure Repos Git or TFS Git.
-* GitHub.
-* Other/external Git.
-
-For example, your team may want to keep:
-
-* User branch builds for five days, with a minimum of a single successful or partially successful build for each branch.
-* Main and feature branch builds for 10 days, with a minimum of three successful or partially successful builds for each of these branches. You exclude a special feature branch that you want to keep for a longer period of time.
-* Builds from the special feature branch and all other branches for 15 days, with a minimum of a single successful or partially successful build for each branch.
-
-The following example retention policy for a build pipeline meets the above requirements:
-
-  > [!div class="mx-imgBorder"]
-  > ![define git retention policies](media/define-git-retention-policies.png)
-
-When specifying custom policies for each pipeline, you cannot exceed the maximum limits set by administrator.
-
-<a id="branch-policy-pr-builds"></a>
-
-### Clean up pull request builds
-
-If you [protect your Git branches with pull request builds](../../repos/git/branch-policies.md#build-validation), then you can use retention policies to automatically delete the completed builds. To do it, add a policy that keeps a minimum of `0` builds with the following branch filter:
-
-```
-  refs/pull/*
-```
-
-  > [!div class="mx-imgBorder"]
-  > ![retention policies for PR builds](media/retention-policy-for-pull-request-builds.png)
-
-### TFVC and Subversion repositories
-
-For TFVC and Subversion [repository types](../repos/index.md) you can modify a single policy with the same options shown above.
-
-### Policy order
-
-When the system is purging old builds, it evaluates each build against the policies in the order you have specified. You can drag and drop a policy lower or higher in the list to change this order.
-
-The "All" branches policy is automatically added as the last policy in the evaluation order to enforce the maximum limits for all other branches.
-
-  > [!div class="mx-imgBorder"]
-  > ![define git retention policy max shown in pipeline](media/define-git-retention-policy-max-shown-in-definition.png)
-
-::: moniker-end
 
 
 ## FAQ

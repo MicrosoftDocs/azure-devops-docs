@@ -137,7 +137,7 @@ Then combine multiple variable values to create a configuration.
 1. Save your new test configuration.
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 A test configuration is a combination of configuration variable 
 values. Your configuration variables could be, for example, 
@@ -206,7 +206,7 @@ Configurations assigned to a test suite apply to all tests or suites within it.
 
    ![Screenshot shows setting configurations for a test case.](media/testing-configurations/select-configuration-test-case.png)
 ::: moniker-end
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 You can assign configurations to a test plan, a test suite,
 or an individual test case. Configurations assigned to a test plan 
@@ -255,7 +255,7 @@ Set up a testing platform for a particular configuration, such as testing the ap
    ![Screenshot shows the configuration for this test in the status bar.](media/testing-configurations/configuration-status-bar.png)
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 1. Set up a testing platform for a particular configuration, such
    as testing the app using Google Chrome on Windows 10.
@@ -292,7 +292,7 @@ If you have a test case that appears in several test suites, you can set the dif
 The same test case can have different configuration settings in different test suites and test plans.
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 1. Open the **Charts** page for your test plan or test suite, choose 
    **New**, and select **New test result chart**.

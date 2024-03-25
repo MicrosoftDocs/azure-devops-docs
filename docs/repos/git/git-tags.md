@@ -52,31 +52,7 @@ To view tags for a specific branch in the **Commits** view, navigate to your rep
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-You can view tags in the **Tags** view and in the **Commits** view in the web portal.
-
-[!INCLUDE [project-urls](../../includes/project-urls.md)]
-
-### View tags in the Tags view
-
-1. To view the tags in your repo, navigate to your project in the web portal, choose **Code**, select the desired repo, and choose **Tags**.
-
-   ![View tags in Tags view.](media/git-tags/view-tags.png)
-
-   Annotated tags are displayed with a tag name, message, commit, tagger, and creation date. Lightweight tags are displayed with a tag name and commit.
-
-2. To filter the list of tags, type a search term into the **Search tag name** box and press **Enter**.
-
-   ![Filter tags](media/git-tags/filter-tags.png)
-
-### View tags in the Commits view
-
-To view tags for a specific branch in the **Commits** view, navigate to your repo in the web portal, choose **Code**, **Commits**, and select your branch.
-
-![View tags in Commits view.](media/git-tags/view-tags-from-commits.png)
-
-::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio)
 
@@ -158,34 +134,7 @@ To create a tag directly from the commits view, right-click the desired tag and 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-You can create annotated tags using the web portal from both the **Tags** view and the **Commits** view.
-
->[!IMPORTANT]
-> You can only create annotated tags in the web portal or [Visual Studio](git-tags.md?tabs=visual-studio#create-tag). To create a lightweight tag, you can use [Git command line](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
-
-### Create tags from the Tags view
-
-1. Select **Create Tag** from the **Tags** view in the web portal to create a new annotated tag.
-
-   ![Create tag from the Tags view.](media/git-tags/create-tag-button.png)
-
-2. Specify a **Name**, select the branch to **Tag from**, enter a **Description** (required since you are creating an annotated tag), and select **Create**.
-
-   ![Select Create.](media/git-tags/create-tag.png)
-
-3. The new tag is displayed in the tag list.
-
-   ![View new tag](media/git-tags/tag-created.png)
-
-### Create tags from the Commits view
-
-To create a tag directly from the commits view, right-click the desired tag and choose **Create tag**.
-
-![Create tag from the Commits view.](media/git-tags/create-tag-from-commit.png)
-
-::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio)
 
@@ -254,25 +203,7 @@ The steps in this procedure show you how to delete a tag in the remote repo usin
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-### Delete a tag in the remote repo
-
-The steps in this procedure show you how to delete a tag in the remote repo using the Azure DevOps Services web portal.
-
-1. To delete a tag, select the ellipsis to the right of the tag name and choose **Delete tag**.
-
-   ![Delete tag](media/git-tags/delete-tag.png)
-
-2. Select **Delete** to confirm.
-
-   ![Select Delete.](media/git-tags/delete-tag-confirm.png)
-
-3. The tag is deleted, and won't be displayed the next time you navigate to the **Tags** view.
-
-   ![Tag deleted](media/git-tags/tag-deleted.png)
-
-::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio)
 
@@ -309,21 +240,7 @@ Right-click the tag to delete and choose **Delete Locally**
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. To create a branch from a tag, select the ellipsis to the right of the tag name and choose **New branch**.
-
-   ![New branch from tag](media/git-tags/branch-from-tag.png)
-
-2. Specify a **Name**, optionally select any **Work items to link**, and choose **Create branch**.
-
-   ![Choose Create branch.](media/git-tags/branch-from-tag-create.png)
-
-3. The branch is created and you are taken to the new branch in the web portal.
-
-   ![Branch created.](media/git-tags/branch-from-tag-created.png)
-
-::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio)
 
@@ -365,17 +282,7 @@ The steps in this procedure show you how to create a branch from a tag using Vis
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. To view the history for a tag, select the ellipsis to the right of the tag name and choose **View history**.
-
-   ![View tag history](media/git-tags/view-history.png)
-
-2. You are taken to the commits view for the tag.
-
-   ![Tag history](media/git-tags/commits.png)
-
-::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio)
 

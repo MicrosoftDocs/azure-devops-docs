@@ -103,66 +103,6 @@ Team members who belong to the Contributors group can complete the following tas
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-:::row:::
-   :::column span="1":::
-   **Area**
-   :::column-end:::
-   :::column span="1":::
-   **Task**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-   Multi-select work items  
-   :::column-end:::
-   :::column span="1":::
-   - [Multi-select-query results](#multi-select)
-   - [Multi-select-backlog](#multi-select)
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Link work items 
-   :::column-end:::
-   :::column span="1":::
-   - [Link to a new item](add-link.md)
-   - [Link to an existing item](add-link.md)
-   - [New branch](connect-work-items-to-git-dev-ops.md)<sup>1</sup>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Bulk edit/update/delete
-   :::column-end:::
-   :::column span="1":::
-   - [Edit fields](#edit)
-   - [Assign to](#assign-to)
-   - [Move to iteration](#move-iteration)
-   - [Change position](create-your-backlog.md#move-items-priority-order)
-   - [Change parent](organize-backlog.md#reparent)
-   - [Add/remove tags](#tags)
-   - [Update from template](work-item-template.md)<sup>1</sup>
-   - [Delete](remove-delete-work-items.md#delete) <sup>1</sup>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Copy, clone, or email work items  
-   :::column-end:::
-   :::column span="1":::
-   - [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup>
-   - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md)
-   - [Send email with selected items](../work-items/email-work-items.md)
-   
-   :::column-end:::
-:::row-end:::
-
-::: moniker-end
-
 > [!NOTE]
 >1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 >2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
@@ -209,12 +149,6 @@ Here, we use the context menu to move several nonsequential items to the current
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
-
-![Screenshot of Backlog page, multi-select items, Open context menu, Move to iteration.](media/bulk-modify-multi-select-ts.png)
-
-::: moniker-end
-
 > [!TIP]  
 > Use the backlog **Create Query** feature to create a query with the backlog items. You can then open the query within the web portal or [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform additional bulk updates.  
 
@@ -248,18 +182,6 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of Query results page, save bulk modified items.](media/bulk-modify/query-results-bulk-save-items.png) 
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-1. For audit purposes, you can enter a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
-
-    !Screenshot of Query results page, bulk edit fields.](media/bulk-modify-edit-fields-ts.png)  
-
-2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes aren't saved to the data store.  
-
-    ![Screenshot of Query results page, save bulk modified items, TFS 2018.](media/bulk-modify-save-ts.png)
 
 ::: moniker-end
 

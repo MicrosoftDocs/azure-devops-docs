@@ -37,14 +37,7 @@ The **Project Collection Administrators** group is the main administrative secur
 - Manage permissions at all levels. 
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2019"  
-- Add users to a collection
-- Create and manage all projects in the organization or collection
-- Import and export On-premises XML process templates to a collection
-- Install and uninstall extensions
-- Add members and groups to the **Project Collection Administrators** group or any other project-level group
-- Manage permissions at all levels.  
-::: moniker-end 
+ 
 
 To add members to the **Project Collection Administrators** group or change a project collection-level permission see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 
@@ -96,18 +89,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"
 
-1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: settings icon and choose **Collection settings**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization Settings](../../media/settings/open-account-settings.png)  
-
-2. Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
-
-   ![Security, Project Collection Administrators group, Members tab](media/view-permissions/collection-admins.png)
-
-::: moniker-end
 
 
 

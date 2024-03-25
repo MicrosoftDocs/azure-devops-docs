@@ -133,11 +133,7 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"  
 
-## Query folders
-
-::: moniker-end
 
 
 > [!NOTE]   
@@ -161,13 +157,7 @@ Also, you can choose a query that you've favorited from the selector menu, Or, y
 ::: moniker-end
 
 
-::: moniker range="< azure-devops-2019"  
 
-The **Queries** page displays the folder structure in the left pane. You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. For more information, see [Manage and organize queries](../queries/organize-queries.md).
-
-:::image type="content" source="media/organize-queries/query-folders-tfs.png" alt-text="Screenshot of Queries page, TFS 2018 and earlier versions.":::
-
-::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
  
@@ -244,16 +234,7 @@ Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-	
-Choose **Copy query URL**. To email query items, see [Copy a list of work items](../backlogs/copy-clone-work-items.md).
 
-![Web portal, Query Editor/Results, Copy query URL](media/view-run-queries/copy-url-old-exp.png)  
-
-> [!NOTE]
-> With **Email query**, the system sends an email of the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md). All email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
-
-::: moniker-end
  
 
 #### [Visual Studio](#tab/visual-studio/)

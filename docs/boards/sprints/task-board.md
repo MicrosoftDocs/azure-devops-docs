@@ -107,28 +107,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot to open a team's sprint backlog page.](media/assign-items-sprint/open-work-backlogs-standard.png)
-
-	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot to Choose another team, TFS 2018.](media/assign-items-sprint/team-selector-backlogs-standard.png)
-
-	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md).
-
-1. Choose the sprint you want to plan, and then choose **Board**.
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows how to Open the task Board for a sprint, TFS 2018.](media/taskboard/open-taskboard-standard.png)
-
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md).
-
-::: moniker-end
 
 
 ## Customize the Taskboard
@@ -143,7 +122,7 @@ Each team can customize their **Taskboard** in the following ways:
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 - [Customize cards](../../boards/boards/customize-cards.md) that appear on the **Taskboard** to show other fields.
 - [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md). Your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
@@ -175,13 +154,7 @@ An administrator can customize the **Taskboard** for all teams in the following 
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-An administrator can customize the **Taskboard** for all teams in the following ways:  
-- [Modify the workflow for the task WIT definition](../../reference/xml/change-workflow-wit.md).
-- [Add a work item type to a backlog or board](../../reference/add-wits-to-backlogs-and-boards.md).
-
-::: moniker-end
 
 
 <a id="task-board-controls">  </a>
@@ -242,12 +215,7 @@ With this view, you can quickly see which items are nearing completion and which
 ::: moniker-end
 
 
-::: moniker range="tfs-2018" 
-You can expand ![expand icon](../media/icons/expand_row_icon.png) and collapse ![collapse icon](../media/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
 
-![Screenshot of Taskboard, Group by backlog items, show All team members, TFS 2018.](media/taskboard/group-items-all.png)
-
-::: moniker-end
 
 <a id="show-individual-progress">  </a>
 
@@ -265,12 +233,7 @@ To filter on the tasks for a specific team member, choose the :::image type="ico
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Choose the **Group by People** option, and then select a specific team member, or **All**.
-
-![Screenshot of Taskboard, Group by Backlog items, show Christie Church team member, TFS 2018.](media/ALM_TB_GRP_Items_CC.png)
-::: moniker-end
 
 
 
@@ -296,13 +259,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Choose the **Group by People** option, and then select a specific team member, or **All**.
-
-![Screenshot of Taskboard, Group by People, show All team members, TFS 2018.](media/ALM_TB_GRP_People_All.png)
-
-::: moniker-end
 
 <a id="update-tasks">  </a>
 
@@ -331,9 +288,7 @@ Each team member can review the tasks they've worked on and estimate the work re
 > ![Screenshot of Taskboard, Update remaining work.](media/taskboard/update-hours.png)
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-![Screenshot of Taskboard, update task remaining work, TFS 2018.](media/ALM_TB_UpdateRWork.png)
-::: moniker-end
+
 
 <a id="close-sprint">  </a>
 
@@ -348,9 +303,7 @@ Drag an incomplete item to the product backlog or to a future sprint updates the
 
 See also [End of sprint activities](end-sprint-activities.md).
 
-::: moniker range="tfs-2018"
-You can [drag-and-drop work items onto a sprint from any backlog or board](assign-work-sprint.md#drag-drop).
-::: moniker-end
+
 
 
 

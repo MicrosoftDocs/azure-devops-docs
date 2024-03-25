@@ -70,15 +70,7 @@ If you need to switch to a different project, select the :::image type="icon" so
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"
 
-Open a web browser, connect to your project, and  select **Dashboards**. 
-
-![Screenshot of Web portal, Open Dashboards, TFS 2018.](media/dashboards-go-to.png) 
-
-If you need to switch to a different project, select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
-
-::: moniker-end
 
 
 ## Add the Markdown widget
@@ -127,54 +119,7 @@ To add the Markdown widget to the dashboard, select :::image type="icon" source=
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
 
-1. Select :::image type="icon" source="media/edit-dashboard-icon.png" border="false"::: **Edit** to modify a dashboard.  
-
-1. Select :::image type="icon" source="media/add-widget-icon.png" border="false"::: to open the widget catalog.  
-
-2. Drag the Markdown widget onto the dashboard where you want it located.  
-
-	<img src="media/widget-markdown-tile.png" alt="Markdown widget" />  
-
-3. Select the ![gear icon](../../media/icons/gear-icon.png) gear icon to open the configuration dialog for the widget. 
-
-	To edit a Markdown widget, you may need to be a team admin, a member of the Project Administrators group, or be granted permissions. To learn more, see [Set dashboard permissions](dashboard-permissions.md). 
-
-4. Adjust the widget size as needed to fit the contents of the Markdown you'll enter. The largest size is 10 tiles wide by 10 tiles tall. You can always adjust this later. 
-
-	<img src="media/add-markdown-size.png" alt="Change Markdown widget size" />  
-
-5. Enter the text and Markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
-
-	Here we show some simple text with a bulleted list of four links
-
-	<img src="media/add-markdown-configure.png" alt="Configure Markdown" /> 
-
-	To link to a wiki page, repository file, or page within the project, use this format: 
-
-	`/DefaultCollection/Fabrikam%20Fiber/Voice/_wiki?pagePath=%2FHome`
-	`/DefaultCollection/Fabrikam%20Fiber/Voice/_git/Fabrikam%20Fiber?path=%2FREADME.md`
-	`/DefaultCollection/Fabrikam%20Fiber/Voice/_backlogs?level=Backlog%20items&showParents=false&_a=backlog`
-
-	This renders the following widget: 
-
-	<img src="../../project/wiki/media/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" /> 
-
-	> [!NOTE]  
-	> Links to documents on file shares using `file://` are not supported. This restriction has been implemented for security purposes.
-	
-6. Optionally, you can select to point to a file in your repository.
-
-	<img src="media/add-markdown-configure-repo-file.png" alt="Screenshot of Configuration dialog for Markdown widget with a repo file selected." /> 
-
-7. If you haven't closed the widget catalog yet, do that now.
-
-8. If you want to reposition the Markdown widget or other widgets on the dashboard, do that now while you're still in dashboard edit mode. 
-
-9. When you're finished with your changes, select ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
-
-::: moniker-end
 
 
 ## Related articles

@@ -152,7 +152,7 @@ ID    Name               Type    Description               Is Authorized    Numb
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 To use a variable from a variable group, add a reference to the group in your YAML file:
 
@@ -229,11 +229,7 @@ To authorize the group, use one of the following techniques:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML builds aren't available on TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -540,9 +536,7 @@ When you set a variable in a group and use it in a YAML file, it's equal to othe
 For more information about precedence of variables, see [Variables](../process/variables.md#expansion-of-variables).
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 

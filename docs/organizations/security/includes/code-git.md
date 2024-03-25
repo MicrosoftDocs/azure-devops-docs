@@ -96,45 +96,8 @@ ms.subservice: azure-devops-repos-git
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker range="< azure-devops-2019"
-:::row:::
-   :::column span="2":::
-      **Force push** (rewrite history, delete branches and tags) 
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-::: moniker range="< azure-devops-2019"
-:::row:::
-   :::column span="2":::
-      **Bypass policies when completing pull requests**  
-      (not set for any security group)
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-       
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
+
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::

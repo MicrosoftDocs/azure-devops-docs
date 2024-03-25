@@ -53,19 +53,7 @@ For other settings, see [Set your preferences](../../organizations/settings/set-
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Open your organization menu and select **My profile**.
-
-   :::image type="content" source="media/open-profile-team-services.png" alt-text="Screenshot showing My Profile link on Organization menu.":::
-
-2. From your profile and information page, select **Edit profile**.
-
-3. Update the address and select **Save changes**.
-
-For other settings, see [Set your preferences](../../organizations/settings/set-your-preferences.md).
-
-::: moniker-end
 
 ## Related articles
 

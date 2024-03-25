@@ -91,30 +91,7 @@ Refer to the [Slack documentation, Sending messages using Incoming Webhooks](htt
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Go to your project Service Hooks page. 
-
-    `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
-
-	![Screenshot of the Project administration page.](./media/add-service-hook.png)
-
-	Select **Create Subscription**.
-
-2. Choose the types of events you want to appear in your Slack channel.
-   
-   You can filter each of the triggers in specific ways.
-   For example, filter the *pull request created* trigger on the repository in which the pull request occurs, the target branch it applies to, and the team members required or invited to review the request.
-
-3. Paste the Web Hook URL from the Slack integration that you created and select **Finish**.
-
-   ![Screenshot of the Action dialog box with the Web Hook URL.](./media/slack/action.png) 
-
-4. When the event occurs in your project, a notification appears in your team's Slack channel.
-
-	![Screenshot that shows a notification in a Slack channel.](./media/slack/notifications.png)
-
-::: moniker-end
 
 ## FAQs
 
