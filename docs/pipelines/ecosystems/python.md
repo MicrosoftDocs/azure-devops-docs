@@ -216,11 +216,11 @@ Save and run your pipeline.
 
 You can view your pipeline artifact by selecting **published** link in the **Summary** tab.
 
-:::image type="content" source="media/published-artifacts-link.png" alt-text="Pipeline published artifacts link.":::
+:::image type="content" source="media/published-artifacts-link.png" alt-text="Screenshot of published pipeline artifacts link.":::
 
 The **Artifacts** page shows the published artifacts.
 
-:::image type="content" source="media/pipeline-artifacts-list.png" alt-text="Pipeline published artifacts.":::
+:::image type="content" source="media/pipeline-artifacts-list.png" alt-text="Screenshot of published pipeline artifacts.":::
 
 To view the test results, select the **Tests** tab.
 
@@ -230,18 +230,18 @@ To view the test results, select the **Tests** tab.
 
 The **Summary** tab shows the status of your pipeline run.
 
-:::image type="content" source="media/pipeline-summary-page-single-job.png" alt-text="Screenshot of complete Python jobs.":::
+:::image type="content" source="media/pipeline-summary-page-single-job.png" alt-text="Screenshot of complete Python job.":::
 
 Select the **published** link in the **Summary** tab to view your pipeline artifact.
 
-:::image type="content" source="media/pipeline-artifacts-list-single-file.png" alt-text="Pipeline published artifacts link.":::
+:::image type="content" source="media/pipeline-artifacts-list-single-file.png" alt-text="Screenshot of published pipeline artifacts link.":::
 
 Select the **Tests** tab to view the test results.
 
 ::: moniker-end
 
 
-:::image type="content" source="media/pipeline-test-results.png" alt-text="Pipeline test results.":::
+:::image type="content" source="media/pipeline-test-results.png" alt-text="Screenshot of pipeline test results.":::
 
 ## Clean up
   
