@@ -44,23 +44,11 @@ You don't have to set up anything for Azure Pipelines to build Python projects. 
 
 ## 1. Fork the sample code
 
-::: moniker range="azure-devops-2019"
+Fork the sample Python repository to your GitHub account.
 
-Import this repo into your Git repo in Azure DevOps Server 2019.
-
-::: moniker-end
-
-::: moniker range=">=azure-devops-2020"
-
-Fork the following sample Python repository to your GitHub account.
-
-::: moniker-end
-
-```html
-
-https://github.com/Microsoft/python-sample-vscode-flask-tutorial
-
-```
+1. Go to the [python-sample-vscode-flask-tutorial](https://github.com/Microsoft/python-sample-vscode-flask-tutorial) repository.
+1. Select **Fork** in the upper-right corner of the page.
+1. Select the GitHub account where you want to fork the repository, and enter a name for your forked repository.
 
 ## 2. Create your pipeline
 
@@ -152,7 +140,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="> azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 Customize the `azure-pipelines.yml` to match your project configuration. 
 
@@ -204,42 +192,66 @@ Customize the `azure-pipelines.yml` to match your project configuration.
 
 ## 4. Run your pipeline
 
+::: moniker range="> azure-devops-2019"
+
 Save and run your pipeline. 
 
 1. Select **Save and run**.
 1. In the **Save and run** dialog, select **Save and run**.
 1. From the **Summary** tab, you can see the status of your pipeline run.
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Select **Run**.
+1. The build number is displayed at the top of the page. Select the build number to see the details of the build.
+
+:::image type="content" source="media/server-2019-build-link.png" alt-text="Screenshot of pipeline build link.":::
+
+::: moniker-end
+
 ::: moniker range=">=azure-devops"
 
-:::image type="content" source="media/python-successful-jobs.png" alt-text="Screenshot of complete Python jobs.":::
+:::image type="content" source="media/python-successful-jobs.png" alt-text="Screenshot of completed Python jobs.":::
 
-You can view your pipeline artifact by selecting **published** link in the **Summary** tab.
+To view your build artifact. select **published** link in the **Summary** tab.
 
-:::image type="content" source="media/published-artifacts-link.png" alt-text="Screenshot of published pipeline artifacts link.":::
+:::image type="content" source="media/published-artifacts-link.png" alt-text="Screenshot of published build artifacts link.":::
 
-The **Artifacts** page shows the published artifacts.
+The **Artifacts** page shows the published build artifacts.
 
-:::image type="content" source="media/pipeline-artifacts-list.png" alt-text="Screenshot of published pipeline artifacts.":::
+:::image type="content" source="media/pipeline-artifacts-list.png" alt-text="Screenshot of published build artifacts.":::
 
 To view the test results, select the **Tests** tab.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="> azure-devops-2019 < azure-devops"
 
 The **Summary** tab shows the status of your pipeline run.
 
-:::image type="content" source="media/pipeline-summary-page-single-job.png" alt-text="Screenshot of complete Python job.":::
+:::image type="content" source="media/pipeline-summary-page-single-job.png" alt-text="Screenshot of completed Python job.":::
 
-Select the **published** link in the **Summary** tab to view your pipeline artifact.
+To view your build artifact, select the **published** link in the **Summary** tab .
 
-:::image type="content" source="media/pipeline-artifacts-list-single-file.png" alt-text="Screenshot of published pipeline artifacts link.":::
+:::image type="content" source="media/pipeline-artifacts-list-single-file.png" alt-text="Screenshot of published build artifacts link.":::
 
-Select the **Tests** tab to view the test results.
+To view the test results, select the **Tests** tab.
 
 ::: moniker-end
 
+::: moniker range="azure-devops-2019"
+
+The **Summary** tab shows the status of your pipeline run.
+
+:::image type="content" source="media/server-2019-build-job-summary.png" alt-text="Screenshot of completed Python job.":::
+
+To download your build artifact, select the **drop** link from the **Build artifacts published** section.
+
+To view the test results, select the **Tests** tab .
+
+::: moniker-end
 
 :::image type="content" source="media/pipeline-test-results.png" alt-text="Screenshot of pipeline test results.":::
 
