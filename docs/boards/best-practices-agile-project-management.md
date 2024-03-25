@@ -58,7 +58,7 @@ For more information about configuring sprints, see:
 
 ## Choose your work item types
 
-Determine which work item types your team can use to capture customer requirements and development work. If your project is based on the Agile process, we recommend using User Stories, Bugs, and Features.
+Determine which work item types your team can use to capture customer requirements and development work. If your project is based on the Agile process, we recommend using user stories, bugs, and features.
 
 If your project is based on another process, such as Basic, Scrum, or CMMI, you have the following choices. Each team determines how they want to track bugs.
 
@@ -68,18 +68,18 @@ If your project is based on another process, such as Basic, Scrum, or CMMI, you 
 
 #### Best practice tips
 
-- Use the Features work item type to capture customer features you want to ship.
+- Use the features work item type to capture customer features you want to ship.
 - Quickly add features or requirements from the backlog and fill in details later.
-- Use the Requirements work item type to break down features into work that the development team owns. In addition:
-    - For Agile, use User Stories.
-    - For Basic, use Issues.
-    - For Scrum, use Product Backlog Items.
-    - For CMMI, use Requirements.
-- Use the Bugs work item type to capture code defects.
+- Use the requirements work item type to break down features into work that the development team owns. In addition:
+    - For Agile, use user stories.
+    - For Basic, use issues.
+    - For Scrum, use product backlog items.
+    - For CMMI, use requirements.
+- Use the bugs work item type to capture code defects.
 - Map requirements to features to track progress at the project management level.
 - Size requirements to be completed within a sprint.
 - Size features to be completed within a sprint or several sprints.
-- Size Epic work items to be delivered quarterly or to some milestone objective.
+- Size epic work items to be delivered quarterly or to some milestone objective.
 - Let developers use the Tasks category to break down their work as needed.
 
 As project managers, you manage the features and the development team manages the requirements. When you map them by using parent-child links, you gain visibility into the progress of your features. Each work item you add to your team backlog is automatically assigned the default area path and iteration path set for your team.
@@ -105,7 +105,7 @@ Project managers initiate the product plan by adding features to the features ba
 
 ### Product backlog
 
-Development teams add User Stories to their product backlog so that the User Story is automatically assigned the team's default area path and iteration path. Then, they can map those stories under each feature that represents the work required to implement the feature. Each User Story should be sized so that it can be completed within a sprint.
+Development teams add user stories to their product backlog so that the user story is automatically assigned the team's default area path and iteration path. Then, they can map those stories under each feature that represents the work required to implement the feature. Each user story should be sized so that it can be completed within a sprint.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows a product backlog.](media/best-practices/product-backlog.png)
@@ -115,11 +115,11 @@ Development teams add User Stories to their product backlog so that the User Sto
 Periodically review each backlog by doing the following tasks:
 
 - Define the work to be performed.
-- Reorder work items by using drag-and-drop so that they appear in priority order.
+- Reorder work items by using the drag-and-drop method so that they appear in priority order.
 - Open work items and add details.
 - Assign work to team members or to sprints.
 - Capture technical debt and nonfeature work required to support a healthy ecosystem of delivery.
-- Map unparented work to the feature to which they belong.
+- Map unparented work to the features to which it belongs.
 - Estimate the size of the requirements to help determine team velocity and support forecasting (optional).
 
 > [!TIP]
@@ -170,15 +170,15 @@ To gain insight into what features can ship when, use the Forecast tool. This to
 
 As project managers, you should always have your features backlog in priority order, which conveys to the development team which features are most important to complete first.
 
-Here the features backlog shows the sequence of features to ship.
+Here, the features backlog shows the sequence of features to ship.
 
 :::image type="content" source="media/best-practices/feature-backlog-priority-order.png" alt-text="Screenshot that shows a features backlog ordered by feature parent.":::
 
 ### Order the requirements backlog based on parent features
 
-First, you want to make sure that you're completing the requirements needed to ship features. As shown in the following image, the requirements backlog is ordered according to the features you want to ship. This ordering assumes that all requirements in a feature must be complete to ship it. Also, Story Points are assigned to each User Story.
+First, you want to make sure that you're completing the requirements needed to ship features. As shown in the following image, the requirements backlog is ordered according to the features you want to ship. This ordering assumes that all requirements in a feature must be complete to ship it. Also, Story Points are assigned to each user story.
 
-:::image type="content" source="media/best-practices/product-backlog-ordered-parent.png" alt-text="Screenshot that shows a Requirements backlog ordered by feature parent.":::
+:::image type="content" source="media/best-practices/product-backlog-ordered-parent.png" alt-text="Screenshot that shows a requirements backlog ordered by feature parent.":::
 
 ### Forecast the requirements backlog
 
@@ -191,11 +191,11 @@ With estimates assigned to each requirement, you can set a team velocity. In the
 
 Getting good at estimates and having predictable team velocities are useful team goals for [process improvement](#process-improvement).
 
-### Update your features board
+### Update your Features board
 
 With a forecast of when a feature ships, you can update each feature's iteration path. Quickly assign values to a feature by adding those fields to the card on the Kanban board, as shown in the following image.
 
-:::image type="content" source="media/best-practices/features-board-iteration-path-updates.png" alt-text="Screenshot that shows a features board with updated iteration paths.":::
+:::image type="content" source="media/best-practices/features-board-iteration-path-updates.png" alt-text="Screenshot that shows a Features board with updated iteration paths.":::
 
 ### Milestone planning
 
@@ -213,7 +213,7 @@ In Microsoft Project, you manage tasks that depend on the completion of other ta
 
 ### Add link dialog
 
-Azure Boards supports many link types to track related work. Choose the **Predecessor/Successor** link types to track work with dependencies. A quick way to link work items is to add a tag to work items that participate in producing or consuming dependencies. Create a query that's based on the tag, and then add the required links.
+Azure Boards supports many link types to track related work. Choose the Predecessor/Successor link types to track work with dependencies. A quick way to link work items is to add a tag to work items that participate in producing or consuming dependencies. Create a query that's based on the tag, and then add the required links.
 
 The following **Add link** dialog illustrates how two work items are linked by using the Successor link type.
 
@@ -243,7 +243,7 @@ With the [Work Item Visualization](https://marketplace.visualstudio.com/items?it
 
 ### Minimum Viable Product vs. Critical Path Management
 
-Azure Boards doesn't provide a native view of the critical path. Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories, and tasks. For more context, see [The critical path on Agile projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42).
+Azure Boards doesn't provide a native view of the critical path. Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management. By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories, and tasks. For more context, see [The critical path on Agile projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42).
 
 #### Best practice tips
 

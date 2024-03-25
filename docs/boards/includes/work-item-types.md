@@ -11,20 +11,20 @@ ms.date: 05/25/2022
 
 The following image shows the Agile process backlog work item hierarchy:
 
-- User Stories and Tasks are used to track work.
+- User stories and tasks are used to track work.
 - Bugs track code defects.
-- Epics and Features are used to group work under larger scenarios.
+- Epics and features are used to group work under larger scenarios.
 
     > [!div class="mx-tdCol2BreakAll"]
     > ![Diagram that shows Agile work item types.](../work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png)
 
-Each team can configure how they manage Bug work items, at the same level as User Stories or Tasks, by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. For more information about using these work item types, see [Agile process](../work-items/guidance/agile-process.md).
+Each team can configure how they manage bug work items, at the same level as user stories or tasks, by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. For more information about using these work item types, see [Agile process](../work-items/guidance/agile-process.md).
 
 #### [Basic process](#tab/basic-process)
 
 The following image shows the Basic process backlog work item hierarchy:
 
-- Issues and Tasks are used to track work.
+- Issues and tasks are used to track work.
 - Epics are used to group work under larger scenarios.
 
 The Basic process is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions.
@@ -38,26 +38,26 @@ For more information about using these work item types, see [Plan and track work
 
 The following image shows the Scrum process backlog work item hierarchy:
 
-- Product Backlog Items and Tasks are used to track work.
+- Product backlog items and tasks are used to track work.
 - Bugs track code defects.
-- Epics and Features are used to group work under larger scenarios.
+- Epics and features are used to group work under larger scenarios.
 
     > [!div class="mx-tdCol2BreakAll"]
     > ![Diagram that shows Scrum work item types.](../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)
 
-Each team can configure how they manage Bug work items, at the same level as Product Backlog Items or Tasks, by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. For more information about using these work item types, see [Scrum process](../work-items/guidance/scrum-process.md).
+Each team can configure how they manage bug work items, at the same level as product backlog items or tasks, by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. For more information about using these work item types, see [Scrum process](../work-items/guidance/scrum-process.md).
 
 #### [CMMI process](#tab/cmmi-process)
 
 The following image shows the CMMI process backlog work item hierarchy:
 
-- Requirements and Tasks are used to track work.
+- Requirements and tasks are used to track work.
 - Bugs track code defects.
-- Epics and Features are used to group work under larger scenarios.
+- Epics and features are used to group work under larger scenarios.
 
     > [!div class="mx-tdCol2BreakAll"]
     > ![Diagram that shows CMMI work item types.](../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png)
 
-Each team can configure how they manage Bug work items, at the same level as Requirements or Tasks, by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. For more information about using these work item types, see [CMMI process](../work-items/guidance/cmmi-process.md).
+Each team can configure how they manage bug work items, at the same level as requirements or tasks, by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. For more information about using these work item types, see [CMMI process](../work-items/guidance/cmmi-process.md).
 
 * * *
