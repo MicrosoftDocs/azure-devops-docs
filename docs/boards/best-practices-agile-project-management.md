@@ -58,7 +58,7 @@ For more information about configuring sprints, see:
 
 ## Choose your work item types
 
-Determine which work item types your team can use to capture customer requirements and development work. If your project is based on the Agile process, we recommend using user stories, bugs, and features.
+Determine which work item types your team can use to capture customer requirements and development work. If your project is based on the Agile process, we recommend that you use the User Story, Bug, and Feature work item types.
 
 If your project is based on another process, such as Basic, Scrum, or CMMI, you have the following choices. Each team determines how they want to track bugs.
 
@@ -68,19 +68,19 @@ If your project is based on another process, such as Basic, Scrum, or CMMI, you 
 
 #### Best practice tips
 
-- Use the features work item type to capture customer features you want to ship.
+- Use the Feature work item type to capture customer features you want to ship.
 - Quickly add features or requirements from the backlog and fill in details later.
-- Use the requirements work item type to break down features into work that the development team owns. In addition:
-    - For Agile, use user stories.
-    - For Basic, use issues.
-    - For Scrum, use product backlog items.
-    - For CMMI, use requirements.
-- Use the bugs work item type to capture code defects.
+- Use the Requirement work item type to break down features into work that the development team owns. In addition:
+    - For Agile, use the User Story work item type.
+    - For Basic, use the Issue work item type.
+    - For Scrum, use the Product backlog item work item type.
+    - For CMMI, use the Requirement work item type.
+- Use the Bug work item type to capture code defects.
 - Map requirements to features to track progress at the project management level.
 - Size requirements to be completed within a sprint.
 - Size features to be completed within a sprint or several sprints.
-- Size epic work items to be delivered quarterly or to some milestone objective.
-- Let developers use the Tasks category to break down their work as needed.
+- Size Epic work items to be delivered quarterly or to some milestone objective.
+- Let developers use the Task category to break down their work as needed.
 
 As project managers, you manage the features and the development team manages the requirements. When you map them by using parent-child links, you gain visibility into the progress of your features. Each work item you add to your team backlog is automatically assigned the default area path and iteration path set for your team.
 
@@ -105,7 +105,7 @@ Project managers initiate the product plan by adding features to the features ba
 
 ### Product backlog
 
-Development teams add user stories to their product backlog so that the user story is automatically assigned the team's default area path and iteration path. Then, they can map those stories under each feature that represents the work required to implement the feature. Each user story should be sized so that it can be completed within a sprint.
+Development teams add User Stories to their product backlog so that the User Story is automatically assigned the team's default area path and iteration path. Then, they can map those stories under each feature that represents the work required to implement the feature. Each User Story should be sized so that it can be completed within a sprint.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows a product backlog.](media/best-practices/product-backlog.png)
@@ -176,7 +176,7 @@ Here, the features backlog shows the sequence of features to ship.
 
 ### Order the requirements backlog based on parent features
 
-First, you want to make sure that you're completing the requirements needed to ship features. As shown in the following image, the requirements backlog is ordered according to the features you want to ship. This ordering assumes that all requirements in a feature must be complete to ship it. Also, Story Points are assigned to each user story.
+First, you want to make sure that you're completing the requirements needed to ship features. As shown in the following image, the requirements backlog is ordered according to the features you want to ship. This ordering assumes that all requirements in a feature must be complete to ship it. Also, Story Points are assigned to each User Story.
 
 :::image type="content" source="media/best-practices/product-backlog-ordered-parent.png" alt-text="Screenshot that shows a requirements backlog ordered by feature parent.":::
 
@@ -243,7 +243,7 @@ With the [Work Item Visualization](https://marketplace.visualstudio.com/items?it
 
 ### Minimum Viable Product vs. Critical Path Management
 
-Azure Boards doesn't provide a native view of the critical path. Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management. By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories, and tasks. For more context, see [The critical path on Agile projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42).
+Azure Boards doesn't provide a native view of the critical path. Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management. By using MVP, you identify the shortest path and dependencies by prioritizing Epic, Feature, User Story, and Task work item types. For more context, see [The critical path on Agile projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42).
 
 #### Best practice tips
 
@@ -258,7 +258,7 @@ Azure Boards doesn't provide a native view of the critical path. Agile methodolo
 
 For more information, see:
 
-- [Link user stories, issues, bugs, and other work items](backlogs/add-link.md)
+- [Link work items to objects](backlogs/add-link.md)
 - [Track dependencies by using delivery plans](plans/track-dependencies.md)
 
 ## Work in sprints
