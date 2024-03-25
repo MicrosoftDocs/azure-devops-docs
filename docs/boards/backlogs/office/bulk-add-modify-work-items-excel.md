@@ -186,7 +186,7 @@ You can and can't do the following tasks from an Excel worksheet:
 - Add to a work item discussion thread. 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019" 
+::: moniker range="=azure-devops-2019"
 - Delete work items 
 - Import or update test case steps or other test artifacts 
 - Add work items in any other State than the new State 

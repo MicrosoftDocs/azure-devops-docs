@@ -331,11 +331,7 @@ See [set variables in scripts](../process/set-variables-scripts.md) and [define 
 * `isoutput` = boolean (Optional, defaults to false)
 * `isreadonly` = boolean (Optional, defaults to false)
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-* `variable` = variable name (Required)
-* `issecret` = boolean (Optional, defaults to false)
-* `isreadonly` = boolean (Optional, defaults to false)
-::: moniker-end   
+   
 
 #### Examples
 
@@ -352,14 +348,7 @@ Set the variables:
   name: SetVars
 ```
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-```yaml
-- bash: |
-    echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-    echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-  name: SetVars
-```
-::: moniker-end
+
 Read the variables:
 
 ::: moniker range=">= azure-devops-2019"
@@ -370,14 +359,7 @@ Read the variables:
     echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
 ```
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-```yaml
-- bash: |
-    echo "Non-secrets automatically mapped in, sauce is $SAUCE"
-    echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
-    echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-```
-::: moniker-end
+
 
 # [PowerShell](#tab/powershell)
 
@@ -392,14 +374,7 @@ Set the variables:
   name: SetVars
 ```
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-```yaml
-- pwsh: |
-    Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-    Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-  name: SetVars
-```
-::: moniker-end
+
 
 Read the variables:
 
@@ -413,14 +388,7 @@ Read the variables:
     write-Host "Future jobs can also see $(SetVars.outputSauce)"
 ```
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-```yaml
-- pwsh: |
-    Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
-    Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
-    Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-```
-::: moniker-end
+
 
 ---
 
@@ -435,13 +403,7 @@ Future jobs can also see canned goods
 Future jobs can also see canned goods
 ```
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-```
-Non-secrets automatically mapped in, sauce is crushed tomatoes
-Secrets are not automatically mapped in, secretSauce is 
-You can use macro replacement to get secrets, and they'll be masked in the log: ***
-```
-::: moniker-end
+
 
 ### SetSecret: Register a value as a secret
 

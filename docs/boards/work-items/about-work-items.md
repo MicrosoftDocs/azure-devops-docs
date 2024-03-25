@@ -110,7 +110,7 @@ From the web portal, copy the URL from the web browser address or hover over the
 
 :::image type="content" source="../backlogs/media/add-work-item-copy-URL.png" alt-text="Screenshot of copy hyperlink for a work item from web portal.":::
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 <a id="start-storyboarding">  </a>
 
@@ -249,22 +249,7 @@ The **Deployment** control provides a quick view of whether a feature or user st
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-## Development and Related Work controls
-
-The **Development** and **Related Work** controls are used to support common linking tasks to development objects or other work items. These controls are available in most work items used to track work. The following table provides a short description of each control.  
- 
-:::row:::
-   :::column span="1":::
-      ![Screenshot of Development control.](media/about-work-items/development-control.png)
-   :::column-end:::
-   :::column span="1":::
-      ![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  
-   :::column-end:::
-:::row-end:::
-
-::: moniker-end
 
 The **Development** control records all Git development processes that support completion of the work item.  It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. For more information, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).
 

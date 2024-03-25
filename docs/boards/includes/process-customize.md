@@ -22,12 +22,5 @@ ms.date: 06/07/2023
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-> [!NOTE]  
-> You can customize the work tracking system for your project by customizing an On-premises XML process. For more information, see [On-premises XML process customization](../../reference/on-premises-xml-process-model.md).
-> 
-> The latest version of each process uploads automatically when you install or upgrade to the latest version of Azure DevOps Server. Additional artifacts, such as SQL Server reports are only available when you connect to a project. Other resource requirements apply. 
-
-::: moniker-end
 

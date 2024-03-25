@@ -153,11 +153,7 @@ As shown in the following table, a ✔️ indicates the task is available from t
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-- To add, capture, edit, or delete work item templates through the web portal, you must be a team administrator.   
 
-- To apply a team template, you must be a Contributor of the project and a member of the team under which the work item template is defined.   
-::: moniker-end
 
 - To add, capture, or edit work item templates through Visual Studio Team Explorer, install the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer. 
 
@@ -195,29 +191,7 @@ Templates captured through the web portal get assigned a GUID.
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
-
-Templates captured through the web portal are assigned a GUID. 
-
-1. From the web portal, open a work item to use as the basis for a template.  
-
-    Within the web portal, work item templates are associated with a team. Only those templates that are defined for a team are accessible when you go to [apply a template](#apply) to work items using the web portal.  
-
-2. Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu. Choose **Templates** and then **Capture**.   
-
-    ![Capture work item field definitions as a template](media/templates/wi-templates-capture-bug-tfs.png) 
-
-    Name the template and optionally define or clear fields. Save the template when finished. The template is saved under the team you selected in the first step. 
-
-    ![Capture template dialog](media/wi-templates-capture-template-dialog.png) 
-
-3. Once you've saved the template, choose **Copy link** to capture the URL for the template that you can use to add work items using the template.
-
-4. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
-
-    You can save the URL as a text file or add the URL to a [dashboard](#markdown-widget) or web page as a hyperlink. 
-
-::: moniker-end  
+  
 
 <a id="tfs-portal-capture"></a> 
 
@@ -269,25 +243,7 @@ For each work item type, you can see and manage the templates that your team has
 
 <a id="team-services-manage"></a> 
 
-::: moniker range="tfs-2018"
 
-Manage templates from  team settings. All templates are defined for a team. If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team or project administrators can change work item templates.   
-
-1. From the web portal, open settings for a team. 
-
-    Choose the :::image type="icon" source="../../media/icons/admin-gear-icon.png" border="false"::: gear icon to open the settings for a team. 
-
-    Here we open the admin page for the Web team. 
-
-    :::image type="content" source="media/wit-templates-open-team-admin-context.png" alt-text="Screenshot of admin page.":::
-
-2. Choose **Work** > **Templates**.  
-
-    :::image type="content" source="media/wit-templates-work-templates-page.png" alt-text="Screenshot of Open Work - Templates page for team.":::
-
-    From here, you can select any work item type to view or add templates for that type.  
-
-::: moniker-end
 
 ### Manage templates for a work item type   
 
@@ -301,15 +257,7 @@ For example, choose **User Story** to view templates defined for capturing user 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Select a work item type to view its defined templates. 
-
-For example, choose **User Story** to view templates defined for capturing user stories.
-
-:::image type="content" source="media/wi-templates-user-stories-list.png" alt-text="Screenshot of managing user story templates.":::
-
-::: moniker-end
 
 <a id="define-template"></a>
 
@@ -407,20 +355,7 @@ You can apply a template to a single work item or do a bulk update of several wo
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
 
-### Apply a template within a work item 
-
-1. Open the work item that you want to update using the fields defined within a template, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, select **Templates**, and then select the name of a predefined template.  
-
-   :::image type="content" source="media/wi-templates-apply-user-story-template-vsts.png" alt-text="Screenshot of Apply a template to an existing work item within the form.":::
-
-   > [!TIP]  
-   > Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. 
-
-2. Save the work item for the changes to be applied. The fields changed are noted in the History field. </p>
-
-::: moniker-end
 
 <a id="apply-multiple"> </a>
 
@@ -438,17 +373,7 @@ You can apply a template to a single work item or do a bulk update of several wo
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018"
-
-1. To bulk update several work items, first select them from the backlog or a query results list, and then open the actions menu for one of them. All work items you select must be of the same work item type. For example, all user stories or all bugs. 
-
-2. Choose the template to apply. 
-
-   ![Screenshot of Bulk updating several work items.](media/wi-templates-bulk-update-list-vsts.png)
-
-3. Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
-
-::: moniker-end 
+ 
 
 ### [Visual Studio 2015](#tab/visual-studio/)
 

@@ -129,11 +129,7 @@ For more information, see [Review logs to diagnose pipeline issues](../troublesh
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [include](includes/variables-tfs2018.md)]
-
-::: moniker-end
 
 
 <a name="identity_values"></a>

@@ -11,9 +11,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 
 A stage is a logical boundary in an Azure DevOps pipeline. Stages can be used to group actions in your software development process (for example, build the app, run tests, deploy to preproduction). Each stage contains one or more jobs. 
@@ -42,11 +40,7 @@ Every pipeline has at least one stage even if you don't explicitly define it. Yo
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-This version of TFS doesn't support YAML.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 Organize the deployment jobs in your release pipeline into stages.
@@ -150,11 +144,7 @@ stages:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-This version of TFS doesn't support YAML pipelines. 
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -256,11 +246,7 @@ stages:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-This version of TFS doesn't support YAML pipelines. 
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 You control the dependencies by setting the triggers on each stage of the release pipeline:
@@ -323,12 +309,7 @@ stages:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-This version of TFS doesn't support YAML pipelines. 
-
-
-::: moniker-end
 
 
 #### [Classic](#tab/classic/)
@@ -346,11 +327,7 @@ When you specify **After release** or **After stage** triggers, you can also spe
 YAML pipelines don't support queuing policies. Each run of a pipeline is independent from and unaware of other runs. In other words, your two successive commits may trigger two pipelines, and both of them will execute the same sequence of stages without waiting for each other. While we work to bring queuing policies to YAML pipelines, we recommend that you use [manual approvals](approvals.md) in order to manually sequence and control the order the execution if this is of importance.
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-This version of TFS doesn't support YAML pipelines. 
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 In some cases, you may be able to generate builds faster than
@@ -429,11 +406,7 @@ Approvals aren't yet supported in YAML pipelines in this version of Azure DevOps
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-This version of TFS doesn't support YAML pipelines. 
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 

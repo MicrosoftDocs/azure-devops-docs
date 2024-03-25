@@ -112,22 +112,7 @@ With an understanding of how you want to use WIP limits, do the following steps 
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018"
-1. [Open your Kanban board](kanban-quickstart.md).
 
-2. Choose ![settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
-
-   :::image type="content" source="media/add-columns-open-settings-ts.png" alt-text="Screenshot showing Kanban board, open common configuration settings.":::
-
-3. Choose **Columns** and then a column tab to set the WIP limit for that column. 
-
-   :::image type="content" source="media/wip-columns-settings.png" alt-text="Screenshot of the Kanban board, Customize columns, default columns, Agile process, set WIP limits.":::
-
-	> [!NOTE]   
-	> Different column titles and choices are available based on the [process](../work-items/guidance/choose-process.md) that was used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
-
-4. When you're done, select **Save**.  
-::: moniker-end
 
 ## WIP limits, challenges, and solutions
 

@@ -18,14 +18,7 @@ When running automated tests in the CI/CD pipeline, you may need a special confi
 in order to run UI tests such as Selenium, Appium or Coded UI tests. This topic describes
 the typical considerations for running UI tests. 
 
-::: moniker range="tfs-2018"
 
-> [!NOTE] 
-> Applies only to TFS 2017 Update 1 and later.
-
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 ## Prerequisites
 

@@ -1,48 +1,47 @@
-name: Analytics and Power BI 
 items:
-- name: What is Analytics?  
-  href: what-is-analytics.md  
-- name: Reporting roadmap  
-  href: reporting-roadmap.md  
-- name: Get started  
+- name: What is Analytics?
+  href: what-is-analytics.md
+- name: Reporting roadmap
+  href: reporting-roadmap.md
+- name: Get started
   items:
-  - name: Data available and versioning  
-    href: data-available-in-analytics.md  
-  - name: Construct OData queries  
-    href: ../analytics/analytics-query-parts.md  
+  - name: Data available and versioning
+    href: data-available-in-analytics.md
+  - name: Construct OData queries
+    href: ../analytics/analytics-query-parts.md
   - name: Sample basic queries
     href: ../extend-analytics/wit-analytics.md
-  - name: Query tools  
-    href: ../analytics/analytics-query-tools.md  
-  - name: Best practices  
-    href: ../analytics/analytics-best-practices.md  
+  - name: Query tools
+    href: ../analytics/analytics-query-tools.md
+  - name: Best practices
+    href: ../analytics/analytics-best-practices.md
   - name: Project & organization-scoped queries
     href: ../extend-analytics/account-scoped-queries.md
-  - name: Permissions and prerequisites  
-    href: ../analytics/analytics-permissions-prerequisites.md  
-  - name: Set Analytics permissions (Security)  
-    href: analytics-security.md  
-  - name: Enable or install Analytics  
-    href: ../dashboards/analytics-extension.md  
-  - name: Analytics quick reference 
-    href: ../extend-analytics/quick-ref.md  
-- name: Analytics views  
-  items:  
-  - name: What are Analytics views?  
-    href: what-are-analytics-views.md 
-  - name: Create an Analytics view  
-    href: analytics-views-create.md?  
-  - name: Manage Analytics views  
-    href: analytics-views-manage.md  
-  - name: Analytics views dataset design  
-    href: data-connector-dataset.md  
+  - name: Permissions and prerequisites
+    href: ../analytics/analytics-permissions-prerequisites.md
+  - name: Set Analytics permissions (Security)
+    href: analytics-security.md
+  - name: Enable or install Analytics
+    href: ../dashboards/analytics-extension.md
+  - name: Analytics quick reference
+    href: ../extend-analytics/quick-ref.md
+- name: Analytics views
+  items:
+  - name: What are Analytics views?
+    href: what-are-analytics-views.md
+  - name: Create an Analytics view
+    href: analytics-views-create.md?
+  - name: Manage Analytics views
+    href: analytics-views-manage.md
+  - name: Analytics views dataset design
+    href: data-connector-dataset.md
   - name: Active bugs report
     href: active-bugs-sample-report.md
   - name: Get a count of work items
     href: data-connector-examples.md
 - name: Power BI integration
   items:
-  - name: About Power BI integration 
+  - name: About Power BI integration
     href: overview.md
   - name: Create a report using an Analytics view
     href: create-quick-report.md
@@ -71,16 +70,16 @@ items:
     href: create-team-filter.md
   - name: Add time-in-state measures
     href: create-timeinstate-report.md
-- name: Sample reports, Power BI and OData 
+- name: Sample reports, Power BI and OData
   items:
-  - name: Sample reports  
+  - name: Sample reports
     href: sample-odata-overview.md
   - name: View the OData query of a built-in report
     href: ../extend-analytics/view-odata-query-analytics-report.md
   - name: Transform Analytics data
     href: transform-analytics-data-report-generation.md
   - name: Refresh data, add last refresh date
-    href: add-last-refresh-time.md 
+    href: add-last-refresh-time.md
   - name: Add a team slicer to a report
     href: sample-boards-teamslicer.md
 - name: Sample reports, Boards
@@ -93,7 +92,7 @@ items:
     href: sample-boards-rollup.md
   - name: Feature progress
     href: sample-boards-featureprogress.md
-  - name: List linked work items 
+  - name: List linked work items
     href: sample-boards-directlinks.md
   - name: Release burndown
     href: sample-boards-releaseburndown.md
@@ -158,11 +157,11 @@ items:
   items:
   - name: Date, Project, and User
     href: ../analytics/entity-reference-general.md
-  - name: Work tracking (Azure Boards)  
+  - name: Work tracking (Azure Boards)
     href: ../analytics/entity-reference-boards.md
   - name: Pipelines (Azure Pipelines)
     href: ../analytics/entity-reference-pipelines.md
-  - name: Testing (Azure Test Plans)  
+  - name: Testing (Azure Test Plans)
     href: ../analytics/entity-reference-test-plans.md
 - name: Data model reference
   items:
@@ -182,9 +181,10 @@ items:
     href: data-connector-dataset.md
 - name: Troubleshooting
   items:
-  - name: Resolve errors with an Analytics view  
-    href: troubleshooting-views.md  
+  - name: Resolve errors with an Analytics view
+    href: troubleshooting-views.md
   - name: Odata Analytics query guidelines
     href: ../extend-analytics/odata-query-guidelines.md
   - name: Performance & latency
     href: performance-latency.md
+name: Analytics and Power BI

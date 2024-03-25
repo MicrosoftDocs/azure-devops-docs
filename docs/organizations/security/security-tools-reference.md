@@ -75,7 +75,7 @@ You can use the tools listed in the following table to set permissions. Links in
 ::: moniker-end 
 
 
-::: moniker range="> tfs-2018 < azure-devops"
+::: moniker range="<azure-devops"
 
 |  Permission level |  Web portal security pages |  TFSSecurity CLI | Tf CLI |   
 |---------------------------|:-------------------:|:-----------:|:-------------------:|  
@@ -100,28 +100,7 @@ You can use the tools listed in the following table to set permissions. Links in
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-|  Permission level |  Web portal security pages |  TFSSecurity CLI | Tf CLI |   
-|---------------------------|:-------------------:|:-----------:|:-------------------:|  
-| [Add users to a server instance](../accounts/add-organization-users.md)             |   ✔️  |  ✔️ |     | 
-| [Collection-level, workspaces](change-organization-collection-level-permissions.md)    |   ✔️  |  ✔️ |     | 
-| [Project-level, test management, create tags](change-project-level-permissions.md) |   ✔️  |  ✔️ |     | 
-| [Git repository](../../repos/git/set-git-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
-| [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️   | 
-| [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)              |   ✔️  |  ✔️ |     | 
-| [Build resources](change-organization-collection-level-permissions.md)     |   ✔️  |  ✔️ |     | 
-| [Pipeline security roles](../../pipelines/policies/permissions.md)                  |   ✔️  |   ✔️ |    |   
-| [Releases](../../pipelines/policies/permissions.md#set-release-permissions)             |   ✔️  |  ✔️ |     | 
-| [Area path (CSS)](set-permissions-access-work-tracking.md#set-permissions-area-path)      |   ✔️  |  ✔️ |     | 
-| [Iteration path](set-permissions-access-work-tracking.md#set-permissions-area-path) |   ✔️  |  ✔️ |     | 
-| [Delivery plans](set-permissions-access-work-tracking.md#plan-permissions)          |   ✔️  |  ✔️ |     | 
-| [Work item query](set-permissions-access-work-tracking.md#work-item-queries)        |   ✔️  |  ✔️ |     | 
-| [Work item tags](set-permissions-access-work-tracking.md#tags)                      |   ✔️  |  ✔️ |     | 
-| [Dashboards](../../report/dashboards/dashboard-permissions.md)                     |   ✔️  |  ✔️ |    |    
-| [Notifications or alerts](permissions.md#alerts)                                    |   ✔️  |  ✔️ |     | 
-
-::: moniker-end
 
 
 ::: moniker range="<= azure-devops-2020"  

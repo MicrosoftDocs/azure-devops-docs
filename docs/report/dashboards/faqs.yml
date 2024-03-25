@@ -52,15 +52,7 @@ sections:
           - **View release pipeline, View releases** (release object-level permission): Required to view release pipeline data
           - **View test runs** (project-level permission): Required to view rest run data 
           ::: moniker-end
-          ::: moniker range="< azure-devops-2019"
-          - **View work items in this node** (Area Path permission): Required to view queries and work items displayed in a query or dashboard chart 
-          - **View work items in this node** (Area Path permission): Required to view queries and work items displayed in a query or dashboard chart 
-          - **Read** (query permission): Required to view query-based charts 
-          - **Read** (Git or TFVC repository permission): Required to view code tile charts 
-          - **View build pipeline, View builds** (build object-level permissions): Required to view build pipeline data 
-          - **View release pipeline, View releases** (release object-level permission): Required to view release pipeline data
-          - **View test runs** (project-level permission): Required to view rest run data 
-          ::: moniker-end
+          
 
           > [!NOTE]
           > The ability for a project member to view query results from a query  or dashboard can be impacted by membership within another group. For example, if a project member belongs to two or more groups&mdash;and one of the groups has lesser permissions than the other&mdash;then the lesser permissions apply. For example, if the group is a member of a **Readers** group, which may have **View** permissions denied, then they wouldn’t be able to view queries with work items where they didn’t have view permissions.

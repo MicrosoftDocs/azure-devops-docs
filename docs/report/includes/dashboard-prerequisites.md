@@ -36,13 +36,7 @@ ms.date: 07/18/2023
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-- You must be a [member of the project](../../organizations/security/add-users-team-project.md).
-- Anyone with access to a project, including [**Stakeholders**](../../organizations/security/get-started-stakeholder.md), can view dashboards.
-- To add, edit, or manage a team dashboard, you must have **Basic** access, be added to the [team administrator role](../../organizations/settings/add-team-administrator.md), be a member of the Project Administrators group, or have [dashboard permissions](../dashboards/dashboard-permissions.md) granted to you.  Team administrators can manage permissions for the team. 
-
-::: moniker-end
 
 > [!NOTE]
 > Data that's displayed within a chart or widget is subject to permissions granted to the signed in user. For example, if a user doesn't have permissions to view work items under an area path, then those items don't display in a query results widget in a dashboard. For more information, see [FAQs on Azure DevOps dashboards, charts, and reports, Access and permissions](../dashboards/faqs.yml).

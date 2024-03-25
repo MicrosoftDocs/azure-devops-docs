@@ -66,11 +66,7 @@ sections:
           
           ::: moniker-end
           
-          ::: moniker range="<= tfs-2018"  
           
-          For more information, see [Look up a project administrator](../security/look-up-project-administrators.md).
-          
-          ::: moniker-end
           
           <a name="visual-studio-subscriptions"></a>
           

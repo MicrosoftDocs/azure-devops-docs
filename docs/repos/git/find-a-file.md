@@ -32,10 +32,6 @@ Launch the Find a File experience from the keyboard with the `t` shortcut from t
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Launch the Find a File experience from the keyboard with the `t` shortcut from the **Files** or **History** tabs in the **Files** page. Use the up and down arrows to cycle through the results, and click or press Enter to open a result. Press `Esc` to close the Find a File experience.
-
-::: moniker-end
 
 

@@ -21,13 +21,7 @@ The latest way to build pipelines is with the [YAML pipeline editor](yaml-pipeli
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Azure Pipelines supports continuous integration (CI) and continuous 
-delivery (CD) to continuously test, build, and deploy your code.  You accomplish this by defining a pipeline 
-using the user interface, also referred to as _Classic_. 
-
-::: moniker-end
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -64,11 +58,7 @@ Your code is now updated, built, tested, and packaged. It can be deployed to any
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML pipelines aren't available in TFS 2018 and earlier versions.
-
-::: moniker-end
 
 ## Define pipelines using the Classic interface 
  
@@ -125,30 +115,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 
 
 
-::: moniker range="tfs-2018"
 
-TFS 2015 through TFS 2018 supports the Classic interface only. The following table indicates which pipeline features are available when defining build or release pipelines. 
-
-| Feature | Classic Build |  Classic Release |Notes| 
-|---|:-:|:-:|---|
-| [Agents](../agents/agents.md) |  ✅ | ✅ |  Specifies a required resource on which the pipeline runs.|
-| [Approvals](../release/approvals/index.md) | ❌ | ✅ | Defines a set of validations required prior to completing a deployment stage. |
-| [Artifacts](../artifacts/artifacts-overview.md) | ✅ | ✅ | Supports publishing or consuming different package types. |
-| [Conditions](../process/conditions.md) | ✅ | ✅ | Specifies conditions to be met prior to running a job.     |
-| [Demands](/azure/devops/pipelines/yaml-schema/pool-demands) | ✅ | ✅ | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
-| [Dependencies](../process/stages.md) | ✅ | ✅ | Specifies a requirement that must be met in order to run the next job or stage.  |
-| [Deployment groups](../release/deployment-groups/index.md) | ❌ | ✅ | Defines a logical set of deployment target machines. | 
-| [Deployment group jobs](../process/deployment-group-phases.md)| ❌ | ✅ | Specifies a job to release to a deployment group. | 
-| [Jobs](key-pipelines-concepts.md) | ✅ | ✅ | Defines the execution sequence of a set of steps.|
-| [Service connections](../library/service-endpoints.md) |  ✅ | ✅ | Enables a connection to a remote service that is required to execute tasks in a job.   |
-| [Stages](key-pipelines-concepts.md) | ❌ | ✅ |Organizes jobs within a pipeline. |
-| [Task groups](../library/task-groups.md) | ✅ | ✅ | Encapsulates a sequence of tasks into a single reusable task. If using YAML, see templates.| 
-| [Tasks](../process/tasks.md) | ✅ | ✅ | Defines the building blocks that make up a pipeline.  |
-| [Triggers](../build/triggers.md) | ✅ | ✅ |Defines the event that causes a pipeline to run.  |
-| [Variables](../process/variables.md) | ✅ | ✅ | Represents a value to be replaced by data to pass to the pipeline.    |
-| [Variable groups](../library/variable-groups.md) | ✅ | ✅ | Use to store values that you want to control and make available across multiple pipelines.| 
-
-::: moniker-end
 
 
 

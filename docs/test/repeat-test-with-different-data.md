@@ -39,7 +39,7 @@ Do the following steps to add parameters to your tests.
    You might need to scroll down to see them.
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 1. Create a parameter by typing a name preceded by "**@**" in the 
    actions and expected results of your test steps.
@@ -91,7 +91,7 @@ You can also copy the data from your grid back into Excel.
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 1. Convert existing parameters to shared parameters so that you 
    can use them and the associated data in other test cases.
@@ -152,7 +152,7 @@ Do the following steps to run a test case that uses parameters.
 1. If any of the parameter values are incorrect, fix them without canceling the test by choosing **Edit** from step's shortcut menu.
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 1. Select a test case with parameters and start running it.
    The Test Runner shows the first row of parameter values.
@@ -186,7 +186,7 @@ You can view the results in the **Test Case Results** dialog box.
 ![Screenshot shows test results for a test point.](media/repeat-test-with-different-data/view-test-results.png)
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 The outcome of the test is based on a precedence hierarchy of all the iteration outcomes. The hierarchy order is Paused, Failed, Blocked, Passed, Not Applicable, and Unspecified (Active). For example, if you marked any iteration as *failed* and all the rest as *passed*, the outcome of the entire test shows as *failed*. This result is different from test cases that don't have parameters, where the outcome displays the status of the last run.
 

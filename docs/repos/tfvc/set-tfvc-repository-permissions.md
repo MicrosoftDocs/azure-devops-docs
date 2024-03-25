@@ -103,23 +103,7 @@ To set the permissions for the TFVC repository for a project:
 
 ::: moniker-end    
 
-::: moniker range="tfs-2018"
 
-1. In the web portal for the project where you want to set permissions, select **Settings** and then select **Version Control**. Choose the TFVC repository for the project.
-
-1. Choose the security group whose permissions you want to manage.
-
-1. Change the permission setting to **Allow** or **Deny**. 
-
-   For example, here you change the **Manage branch** permission to **Allow** for all members of the **Contributors** group. 
-
-   ![Image that shows setting TFVC repository security permissions for the Contributors group.](media/tfvc-permissions/set-repo-tfvc-permissions.png)  
-
-   [!INCLUDE [temp](../../includes/ability-to-find-user-once-added.md)]
-
-1. Save your changes. 
-
-::: moniker-end
 
 ## Related articles
 

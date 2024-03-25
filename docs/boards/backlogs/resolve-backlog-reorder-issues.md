@@ -87,12 +87,7 @@ When you refresh your browser, the work items display based on your selected fil
 ::: moniker range="azure-devops-2019"
    :::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="Screenshot of View options selector, In progress control, version 2019.":::
 ::: moniker-end
-::: moniker range="tfs-2018"
-1. Open your backlog.
-2. Show or hide **In progress items** on your backlog. 
-   - If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the [**In Progress** category state](../work-items/workflow-and-state-categories.md) don't appear. 
 
-::: moniker-end
  - Hide **In Progress items** when you want to forecast work. For more information, see [Forecast your product backlog](../sprints/forecast.md).
 
 > [!NOTE]   
@@ -133,29 +128,9 @@ The following image shows the natural hierarchy for the Agile, Scrum, and Capabi
 
 Sprint backlogs and Taskboards exclusively display the last node in a same-category hierarchy, which is referred to as the leaf node. 
 
-::: moniker range="tfs-2018"
-> [!NOTE]
-> - For TFS 2018 and earlier versions, the Kanban board only shows the last node with nested items of a same-category hierarchy.
-> - For TFS 2018.2 and later versions, Kanban boards display all work items of nested same-category work items.  
-::: moniker-end
 
-::: moniker range="tfs-2018"
 
-### Product backlog and Kanban boards
 
-If you link items within a same-category hierarchy that is **four levels deep**, for instance, **only the items at the fourth level** appear on the Kanban board, sprint backlog, and Taskboard.
-
-As shown in the following images, the third user story, *Interim save on long form*, has a child bug named *Save takes too long*. While the child bug, *Save takes too long*, appears on the Kanban board, the parent user story doesn't.  
-
-**All bugs and requirements appear on the backlog**  
-
-:::image type="content" source="media/resolve/bugs-appear-on-backlog.png" alt-text="Screenshot showing child bug on backlog.":::
-
-**Only leaf nodes appear on the Kanban board**  
-
-:::image type="content" source="media/resolve/bugs-appear-on-board.png" alt-text="Screenshot showing leaf node bug on Kanban board.":::
-
-::: moniker-end
 
 ### Sprint backlogs and Taskboards
 

@@ -11,9 +11,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 Azure Pipelines can automatically build and validate every pull request and commit to your Azure Repos Git repository.
 
@@ -33,11 +31,7 @@ You can later configure your pipeline to check out a different repository or mul
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-YAML pipelines aren't available in TFS.
-
-::: moniker-end
 
 # [Classic](#tab/classic/)
 
@@ -74,9 +68,7 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 
 [!INCLUDE [ci-triggers](includes/ci-triggers3.md)]
 
-::: moniker range="< azure-devops-2019"
-YAML pipelines aren't available in TFS.
-::: moniker-end
+
 
 # [Classic](#tab/classic/)
 
@@ -88,7 +80,7 @@ YAML pipelines aren't available in TFS.
 
 ### Skipping CI for individual pushes
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `***NO_CI***` in the message of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push.
 
@@ -125,7 +117,7 @@ If you have an open PR and you push changes to its source branch, multiple pipel
 > [!NOTE]
 > [Draft pull requests](../../repos/git/pull-requests.md#draft-pull-requests) do not trigger a pipeline even if you configure a branch policy.
 
-::: moniker range=">tfs-2018"
+::: moniker range="<=azure-devops"
 
 ### Validate contributions from forks
 
@@ -254,7 +246,7 @@ steps:
 > For many scenarios, multi-repo checkout can be leveraged, removing the need to use scripts to check out additional repositories in your pipeline. For more information, see [Check out multiple repositories in your pipeline](multi-repo-checkout.md).
 ::: moniker-end
 
-::: moniker range=">tfs-2018"
+::: moniker range="<=azure-devops"
 
 [!INCLUDE [ci-triggers](includes/source-options.md)]
 

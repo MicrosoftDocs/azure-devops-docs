@@ -20,7 +20,7 @@ ms.date: 07/07/2022
 Share progress and status with your team using configurable team or project dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ When you add a dashboard, you can choose to make it a project dashboard or one s
 
 All dashboards are associated with either a team or a project. From the **Overview>Dashboards** page, you can browse all dashboards and see which team they belong to, or if they are project dashboard.  
 ::: moniker-end
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="=azure-devops-2019"
 
 All dashboards are associated with a team. From the **Overview>Dashboards** page, you can browse all dashboards and see which team they belong to.  
 
@@ -76,14 +76,7 @@ If you need to switch to a different project, select the :::image type="icon" so
 ::: moniker-end  
 
 
-::: moniker range="tfs-2018"  
-Open a web browser, connect to your project, and select **Dashboards**. 
 
-![Dashboards directory, previous navigation](media/dashboards-go-to.png) 
-
-If you need to switch to a different project, select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
-
-::: moniker-end
 
 
 
@@ -108,18 +101,7 @@ If you need to switch to a different project, select the :::image type="icon" so
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"  
-
-1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch project or team](../../project/navigation/go-to-project-repo.md#switch-team-context).
-
-2. From **Dashboards**, select the name of the dashboard to view it. 
-
-	For example, here we choose to view the Work in Progress dashboard. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Dashboards, Select a team dashboard](media/dashboards/choose-dashboard.png)  
-
-::: moniker-end  
+  
 
 
 ## Add a dashboard 
@@ -179,16 +161,7 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
 
-From **Dashboards**, select :::image type="icon" source="../../boards/media/icons/green_plus_icon.png" border="false"::: **New Dashboard** and enter a dashboard name. 
-
-![Add and name a dashboard](media/dashboards-new-ts.png) 
-
-If you don't see :::image type="icon" source="../../boards/media/icons/green_plus_icon.png" border="false"::: **Edit** icon, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/breadcrumb/dashboards/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/breadcrumb/dashboards/toc.json). 
-
-With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test pages](add-charts-to-dashboard.md).
-::: moniker-end
 
 <a id="manage">  </a> 
 
@@ -214,23 +187,7 @@ You can rename or delete a dashboard. When you enable auto-refresh, the dashboar
 - To set permissions for a dashboard, select the **Security** option. For details, see [Set dashboard permissions](dashboard-permissions.md).
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-1. To manage dashboards, select the ![configure icon](media/icons/configure-icon.png) wrench icon.
 
-	![Open Manage dashboards dialog](media/dashboards-configure-ts.png) 
-
-2. Drag and drop the dashboards into the sequence you want them to appear.  
-
-	![Manage dashboards dialog](media/manage-dashboards-ts.png) 
-
-3. (Optional) Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes. 
- 
-4. To delete a dashboard, select the :::image type="icon" source="media/icons/delete_icon.png" border="false"::: delete icon.
-
-5. Select **Save** to save your changes. 
-
-You can also [manage dashboard permissions](dashboard-permissions.md).   
-::: moniker-end
 
 
 ## Move or delete a widget 
@@ -253,16 +210,7 @@ To remove a widget, select ![actions icon](../../media/icons/actions-icon.png) *
 When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-Select ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
 
-You can now add widgets or drag tiles to reorder their sequence on the dashboard. 
-
-To remove a widget, select the widget's ![Trash icon](media/dashboard-trash-icon.png) or ![Delete icon](media/dashboard-delete-icon.png) delete icons. 
-
-When you're finished with your changes, select ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
-
-::: moniker-end
 
 ## Extensibility 
 

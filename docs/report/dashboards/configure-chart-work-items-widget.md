@@ -145,41 +145,7 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 
 
 
-::: moniker range="tfs-2018"
 
-1. From the web portal, open the [team dashboard](dashboards.md) you want to add the chart to.   
-
-2. To add widgets to the dashboard, select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**. The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
-
-	If you don't see these icons, then you need to be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or a member of the Project Administrators group. 
-
-3. Select the **Chart for work items** widget and then select **Add**. 
-
-	<img src="media/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" /> 
-
-4. Select the widget's :::image type="icon" source="media/icons/gear-icon.png" border="false"::: gear icon to open the configuration dialog. 
-
-	<img src="media/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" /> 
-
-5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type. For guidance on choosing the chart type, see [Track progress with status and trend query-based charts ](charts.md).   
-
-	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown.   
-
-	> [!NOTE]  
-	> All rules for configuring charts described previously in this article apply to configuring the chart for work items widget. 
-
-6. After you save your changes, you'll see the new chart has been added to the dashboard. 
-
-	![Chart of work items widget, configure dialog](media/charts-chart-wit-widget-configured.png)  
-
-	> [!TIP]  
-	> If the chart doesn't display all the rows or columns you want, try changing the chart **Size**. Pivot tables and other chart types will display more data based on the area provided on the dashboard.  
-
-7. Drag the tile anywhere on the dashboard to put it where you want it. 
-
-8. When you're finished with your changes, select ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.  
-
-::: moniker-end
 
 
 

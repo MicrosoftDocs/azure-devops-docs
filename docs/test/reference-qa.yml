@@ -98,7 +98,7 @@ sections:
             In the **Linked Items** dialog box, select **Test Suites** to see the test suites linked to the test case. Double-click a test suite to open it.
             ::: moniker-end
 
-            ::: moniker range="<=azure-devops-2019"
+            ::: moniker range="=azure-devops-2019"
             Select a test case, then view the test suites details.
             The Associated test suites pane shows you any test suite for any test plan that contains this test case.
             This view includes all projects.

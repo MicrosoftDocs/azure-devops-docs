@@ -102,7 +102,7 @@ You can use the following keyboard shortcuts when you work in a web browser on o
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="=azure-devops-2019"
 
 The rich text formatting toolbar appears above each text box that can be formatted. It becomes active only when you select the text box.
 

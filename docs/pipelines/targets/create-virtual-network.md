@@ -13,9 +13,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 Network Virtualization provides ability to create multiple virtual
 networks on a shared physical network. Isolated virtual networks can
@@ -343,9 +341,7 @@ environments. You can create as many environments as you need with just a select
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/qa-versions.md)]
-::: moniker-end
+
 
 <!-- ENDSECTION -->
 

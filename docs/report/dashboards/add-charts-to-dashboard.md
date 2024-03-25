@@ -135,36 +135,9 @@ Each time a release gets deployed, it logs information about the release to each
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-> [!TIP]  
-> You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md).    
 
-1. Open **Pipelines** > **Releases** to add a release definition chart to a team dashboard.   
 
-    ![Screenshot of Add a Release pipeline chart to a dashboard, TFS 2018.](media/add-cd-release-definition.png)  
 
-2. Release pipeline charts show the success (green), in progress (blue), cancellation (red), or nondeployment (grey) to an environment for the current and last four releases:  
-
-	![Screenshot of Release pipeline tile, TFS 2018.](media/add-cd-release-definition-tile.png)  
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-## Add a manual test status or result chart  
-
-As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../../test/track-test-status.md).  
-
-> [!TIP]  
-> You can also add a [chart for test plans widget](widget-catalog.md) to a dashboard. 
-
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json).  
-
-2. Open **Test** > **Test Plans** > **Charts**, and select the dashboard to add the test chart to.  
-
-   :::image type="content" source="media/add-a-chart-test-plan.png" alt-text="Screenshot of Select the dashboard to add the test chart to.":::
-
-::: moniker-end
 
 ## Add a test quality trend chart   
 
@@ -202,7 +175,4 @@ As you update the Markdown file, changes automatically appear on the dashboard u
 - [Analyze test results](../../pipelines/test/test-analytics.md)
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-- [Burndown guidance](burndown-guidance.md)
-- [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-::: moniker-end
+

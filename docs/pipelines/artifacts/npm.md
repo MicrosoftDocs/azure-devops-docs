@@ -41,9 +41,6 @@ Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feed
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -89,9 +86,6 @@ To publish your packages to a public npm registry such as *npmjs.com*, you must 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 

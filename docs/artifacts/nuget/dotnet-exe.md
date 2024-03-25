@@ -65,19 +65,7 @@ With Azure Artifacts, you can publish and restore your NuGet packages to/from yo
     ```
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Select **Build and Release** > **Packages**.
-
-1. Select your feed from the dropdown menu or [create one](../get-started-nuget.md#create-a-feed) if you haven't.
-
-1. Select **Connect to feed**.
-
-    :::image type="content" source="../media/connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in TFS.":::
-
-1. Select **NuGet** and follow the instruction to connect to your feed.
-
-::: moniker-end
 
 ## Publish packages
 

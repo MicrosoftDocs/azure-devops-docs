@@ -60,13 +60,7 @@ For more information and best practices, see [Securing Azure Pipelines](../secur
 ### Task groups  
 [!INCLUDE [temp](../../organizations/security/includes/task-groups.md)]
 ::: moniker-end 
-::: moniker range="tfs-2018"
-## Default permissions assigned to built-in security groups
-### Build  
-[!INCLUDE [temp](../../organizations/security/includes/build.md)]
-### Release  
-[!INCLUDE [temp](../../organizations/security/includes/release.md)]
-::: moniker-end  
+  
 
 ## Set project-level pipeline permissions
 

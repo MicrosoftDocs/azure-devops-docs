@@ -35,16 +35,7 @@ Define iteration paths and assign them to teams when you want to use the followi
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-- [Assign work to sprints using the Planning pane](../sprints/assign-work-sprint.md)
-- [Query and chart work items based on Iteration Path](../queries/query-by-area-iteration-path.md)
-- [Forecast your product backlog](../sprints/forecast.md)
-- [Sprints> all tools](../sprints/scrum-overview.md) 
-- [Delivery Plans](../plans/review-team-plans.md)  
-- [Velocity chart](../../report/dashboards/team-velocity.md)  
-
-::: moniker-end
 
 > [!TIP]    
 > If a team hasn't subscribed or selected an iteration path, that iteration path won't appear in a team view or tool.
