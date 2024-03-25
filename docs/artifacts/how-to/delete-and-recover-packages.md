@@ -47,19 +47,7 @@ There are two available choices for removing a NuGet package from your feed, [Un
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build and Release**.
-
-1. Select **Packages**, and then select the package you wish to delete. 
-
-1. Select **Unlist** or **Delete latest**.
-
-    :::image type="content" source="../media/delete/unlist-delete-nuget-package.png" alt-text="A screenshot showing how to delete or unlist a NuGet package in Team Foundation Server 2018.":::
-
-::: moniker-end
 
 ### Unlist packages using NuGet.exe
 
@@ -97,17 +85,7 @@ For npm packages in your feed, you have the option to [Deprecate](#qa) or [Delet
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build and Release**.
-
-1. Select **Packages**, and then select the package you wish to delete. 
-
-1. Select **Deprecate** or **Delete**.
-
-::: moniker-end
 
 ### Deprecate or Delete packages CLI
 
@@ -157,19 +135,7 @@ For npm packages in your feed, you have the option to [Deprecate](#qa) or [Delet
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build and Release**, and then select **Packages**.
-
-1. Select your feed, and then select the package that you want to delete.
-
-1. Select **Delete** to delete your package.
-
-    :::image type="content" source="../media/delete/delete-maven-package.png" alt-text="A screenshot showing how to delete a Maven package in Team Foundation Server 2018.":::  
-
-::: moniker-end
 
 #### [Universal Packages](#tab/universal/)
 
@@ -248,22 +214,7 @@ If you want to retain a package indefinitely, you can promote it to a [view](../
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build and Release**, and then select **Packages**.
-
-1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your feed's settings. 
-
-1. From the **Retention** tab, specify a value for both the **Maximum number of versions per package** and **Days to keep recently downloaded packages**.
-    
-    - **Maximum number of versions per package**: The number of versions for each package you wish to retain.
-    - **Days to keep recently downloaded packages**: Packages will only get deleted if they haven't been downloaded for the specified number of days indicated here.
-  
-1. Select **Save** when you're done.
-
-::: moniker-end
 
 > [!NOTE]
 > When you enable retention policies, a version of a package will be deleted when **both** of the following conditions are met:
@@ -288,21 +239,7 @@ Deleted packages remain in the Recycle Bin for 30 days. After this period, they'
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build and Release** > **Packages**, and then select **Recycle Bin**.
-
-1. Select your package, and then select the package version that you want to delete.
-
-    :::image type="content" source="../media/recycle-bin/recycle-bin-view.png" alt-text="Screenshot that shows the package in the Recycle Bin in Team Foundation Server.":::
-
-1. Select **Restore to feed**.
-
-    :::image type="content" source="../media/recycle-bin/recycle-bin-restore.png" alt-text="Screenshot that shows the button for restoring to feed in Team Foundation Server.":::
-
-::: moniker-end
 
 ## Q&A
 

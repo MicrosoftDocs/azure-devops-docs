@@ -88,16 +88,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 ::: moniker-end 
 
 
-::: moniker range="tfs-2018"  
-Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .  
-
-> [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](../backlogs/media/multi-ownership/management-team-backlog-epics-pre-nav.png)  
-
-> [!TIP]    
-> Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
-
-::: moniker-end 
+ 
 
 
 ### View backlog items and parent items owned by other teams
@@ -114,12 +105,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 ::: moniker-end 
 
 
-::: moniker range="tfs-2018"  
-Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
-   
-> [!div class="mx-imgBorder"]  
-> ![Items that are owned by other teams appear with an information icon.](media/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   
-::: moniker-end 
+ 
 
 
 > [!TIP]

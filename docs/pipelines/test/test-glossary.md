@@ -16,11 +16,7 @@ monikerRange: '<= azure-devops'
 
 This article describes commonly used terms used in pipeline [test report](review-continuous-test-results-after-build.md) and [test analytics](test-analytics.md).
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 | Term | Definition |
 | ---- | ---------- |

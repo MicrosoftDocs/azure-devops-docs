@@ -177,48 +177,7 @@ Create a project-level group when you want to manage permissions at the project-
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
-
-2. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the administrative context.
-
-   :::image type="content" source="../../media/settings/open-project-settings-horz.png" alt-text="Open Project Settings, horizontal nav":::  
-
-3. Choose **Security** and under **Groups**, choose one of the following options:
-   - **Readers**: To add users who require read-only access to the project, choose.
-   - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-   - **Project Administrators**: To add users who need to administrate the project. For more information, see [Change project-level permissions](change-project-level-permissions.md).
-
-4. Next, choose the **Members** tab.
-
-   Here we choose the Contributors group.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)  
-
-    > [!TIP]
-    > Managing users is much easier [using groups](../../organizations/security/about-permissions.md), not individual users.
-
-   By default, the default team group and any other teams you add to the project, are included as members of the **Contributors** group. Add a new user as a member of a team instead, and the user automatically inherits Contributor permissions. 
-
-5. Choose ![gear icon](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
-
-6. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches.
-
-	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
-
-   > [!NOTE]
-   > The first time you add a user or group to Azure DevOps,
-   > you can't browse to it or check the friendly name.
-   > After the identity has been added, you can just enter the friendly name.
-
-7. (Optional) You can customize user permissions for other functionality within the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
-
-   > [!NOTE]
-   > Users with limited access, such as Stakeholders, can't access select features even if granted permissions to those features. For more information, see [Permissions and access](permissions-access.md).
-
-::: moniker-end
 
 <a id="project-level"></a>
 
@@ -302,26 +261,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2019"
 
-1. Open the **Permissions** page for either the project-level or organization-level as described in the previous section, [Create a custom security group](#create-custom-group). 
-
-1. Choose the security group whose members you want to manage, then choose the **Members** tab, and then choose **Add**.  
-
-	For example, here we choose the **Project Administrators** group, **Members**, and then **Add**.   
-
-    ![Screenshot of Project Settings, Security, Add member page.](media/project-level-permissions-add-member.png) 
-
-2. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
-
-    ![Screenshot of Add users and group dialog, TFS 2018 and earlier versions.](media/project-level-permissions-add-a-user.png)  
-
-    > [!NOTE]   
-    > Users with limited access, such as Stakeholders, can't access select features even if granted permissions to those features. For more information, see [Permissions and access](permissions-access.md).
-
-3. Choose **Save changes**. Choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see the additions.  
-
-::: moniker-end
 
 ## Change permissions for a user or group 
 

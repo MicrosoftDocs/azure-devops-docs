@@ -80,28 +80,7 @@ Use this article to learn how to:
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
-
-	> [!div class="mx-imgBorder"]
-	> ![Open the Boards>Backlogs page](media/assign-items-sprint/open-work-backlogs-standard.png) 
-
-	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](media/assign-items-sprint/team-selector-backlogs-standard.png) 
-
-	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
-
-1. Choose the sprint you want to plan. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another sprint](media/add-tasks/choose-sprint-standard.png)
-
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
-
-::: moniker-end
 
 
 ## Check your team capacity 
@@ -116,12 +95,7 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-> [!div class="mx-imgBorder"]  
-> ![Turn work details on](media//adjust-work/work-details-on-standard.png)
-
-::: moniker-end
 
 
 ## Move items out of a sprint
@@ -141,16 +115,7 @@ Here we select two items at the bottom of the sprint backlog, open the  :::image
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-Here we select the last item in the sprint backlog and drag it to the product backlog. 
-
-![Drag items back to product backlog](media/IC797613.png)  
-
-> [!TIP]    
-> Dragging a backlog item to the backlog or another sprint reassigns all child tasks to the same iteration path. Also, you can multi-select several items and drag them to the backlog or another sprint. Users with **Stakeholder** access can't drag-and-drop work items.
-
-::: moniker-end
 
 
 ## Balance work across the team
@@ -171,10 +136,7 @@ As you reassign tasks, capacity bars automatically update.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![Reassign tasks](media/IC797838.png) 
-::: moniker-end
 
 ## Next step
 > [!div class="nextstepaction"]

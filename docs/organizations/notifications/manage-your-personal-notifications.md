@@ -68,21 +68,9 @@ The following table shows notification event examples. For more information, see
 
 ::: moniker-end
 
-::: moniker range=" tfs-2018"
 
-Open **User settings**, and then select **Notification settings** from the resulting list.
 
-   :::image type="content" source="media/nav-personal-notifications-hub-newnav.png" alt-text="Screenshot showing personal notifications hub.":::
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-## View and edit all notification subscriptions
-
-The following view shows all notification subscriptions that either you or an administrator created. Notification subscriptions let you control what you get notified about. Subscribed notifications are indicated with the State as **On**.
-
-::: moniker-end  
+  
 
 ::: moniker range="azure-devops"
 
@@ -96,7 +84,7 @@ The following view shows all notification subscriptions that either you or an ad
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range="<=azure-devops"
 
 A notification subscription can be only for you. But, if you're a team administrator you can ensure that it goes to everyone on the team.
 
@@ -131,7 +119,7 @@ With custom personal notification subscriptions, you can define precise criteria
 
 ::: moniker-end  
 
-::: moniker range="> tfs-2018 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. From your **Notifications** page, select **New subscription**.
 
@@ -156,28 +144,7 @@ With custom personal notification subscriptions, you can define precise criteria
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"
 
-   :::image type="content" source="media/manage-personal-notifications-new-subscription.png" alt-text="Screenshot of the new notification subscription.":::
-
-1. Choose the category and template that you want to use. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
-
-   Here we choose to get notified when a pull request is created within a specific project, Fabrikam Fiber.
-
-   :::image type="content" source="media/manage-personal-notifications-new-subscription-dialog.png" alt-text="New notification subscription dialog.":::
-
-2. Modify the description to help you identify the notification subscription later. Also, choose an email address for notifications to be delivered to. By default, your preferred email address is used. Optionally, include one or more fields to further specify the event criteria.
-
-   :::image type="content" source="media/manage-personal-notifications-complete-pull-request-subscription.png" alt-text="Updated notification subscription dialog with field criteria.":::
-
-   > [!NOTE]
-   > The fields available for filtering event criteria differ depending on the category and template that you select.
-
-3. Select **Finish** when you're done. The notification subscription appears in the list under the category that you selected.
-
-   :::image type="content" source="media/manage-personal-notifications-subscription-added.png" alt-text="New subscription added.":::
-
-::: moniker-end
 
 [!INCLUDE [opt-out-notification](includes/opt-out-notification.md)]
 

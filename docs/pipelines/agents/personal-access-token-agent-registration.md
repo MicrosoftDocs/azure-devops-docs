@@ -16,11 +16,7 @@ To use a PAT with Azure DevOps Server, your server must be configured with HTTPS
 
 ## Create a personal access token for agent registration
 
-::: moniker range="< azure-devops-2019"
 
-1. Sign in with the user account you plan to use in your Team Foundation Server web portal (`https://{your-server}:8080/tfs/`).
-
-::: moniker-end
 
 ::: moniker range=" >= azure-devops-2019 < azure-devops"
 

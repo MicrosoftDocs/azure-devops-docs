@@ -147,13 +147,7 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 
 <a name="field-rules"></a>
 
-::: moniker range="tfs-2018"
 
-## Supported field rules  
-
-You can [specify only a small subset of rules](../../organizations/settings/work/rule-reference.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
-
-::: moniker-end
 
 
 ## Related articles 

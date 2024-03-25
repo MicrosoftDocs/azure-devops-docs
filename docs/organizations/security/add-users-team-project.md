@@ -291,26 +291,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. From the project admin context, open the **Overview** page, and then choose the team you want to add team members to.   
-
-	![Screenshot of Project Settings, Overview page, Choose team.](media/add-users/overview-page-select-team.png) 
-
-2. Choose the ![plus icon](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
-
-3. Enter the sign-in addresses or display name for each user you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
-
-	![Screenshot of Add users and group dialog, 2018 and earlier.](media/project-level-permissions-add-a-user.png)
-
-   > [!TIP]
-   > You must enter user and group names one at a time. However, after entering a name, it is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
-
-	Select :::image type="icon" source="../../media/icons/refresh.png" border="false"::: **Refresh** if you don't see your updates. 
-
-4. To [add an account as a Team administrator](../../organizations/settings/add-team-administrator.md), select **Add** located in the Team Profile page.
-
-::: moniker-end
 
 ---
 > [!TIP]
@@ -357,16 +338,7 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
- 
-1. To remove members, return to this page, highlight the user name, and then choose **Remove**.
 
-	![Screenshot of Team profile page, remove a team member, highlight and remove.](media/add-users/team-page-remove-team-member.png)
-
-   > [!NOTE]
-   > To remove a team administrator as a team member, you must first remove them as an administrator. 
-
-::: moniker-end
 
 ---
 
@@ -485,46 +457,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
-
-2. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the administrative context.
-
-   ![Screenshot of Open Project Settings, horizontal nav.](../../media/settings/open-project-settings-horz.png)  
-
-3. Choose **Security** and under **Groups**, choose one of the following options:
-   - **Readers**: To add users who require read-only access to the project, choose.
-   - **Contributors**: To add users who contribute fully to this project or have Stakeholder access.
-   - **Project Administrators**: To add users who need to administrate the project. For more information, see [Change project-level permissions](change-project-level-permissions.md).
-
-4. Next, choose the **Members** tab.
-
-   Here we choose the Contributors group.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Security page, Contributors group, Membership page.](media/add-users/add-members-to-contributors-group.png)  
-
-    > [!TIP]
-    > Managing users is much easier [using groups](../../organizations/security/about-permissions.md), not individual users.
-
-   By default, the default team group and any other teams you add to the project, are included as members of the **Contributors** group. Add a new user as a member of a team instead, and the user automatically inherits Contributor permissions. 
-
-5. Choose ![gear icon](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
-
-6. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches.
-
-	![Screenshot of Add users and group dialog.](media/project-level-permissions-add-a-user.png)
-
-   > [!TIP]
-   > The first time you add a user or group to Azure DevOps, you can't browse to it or check the friendly name. After the identity has been added, you can just enter the friendly name.
-
-7. (Optional) Customize user permissions for other functionality within the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
-
-   > [!NOTE]
-   > Users with limited access, such as Stakeholders, can't access select features even if granted permissions to those features. For more information, see [Permissions and access](permissions-access.md).
-
-::: moniker-end
 
 ---
 
@@ -548,12 +481,7 @@ As a member of the Project Administrators group, you can add members to a projec
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Open the **Project**> **Summary** page, and select **Add**.  
-	:::image type="content" source="../projects/media/summary/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
-
-::: moniker-end
 
 2. For new users, enter their email address. For existing users, enter their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
 

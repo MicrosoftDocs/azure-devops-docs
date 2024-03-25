@@ -36,19 +36,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](../organizations/projects/create-project.md). If you haven't been added as a team member, [get invited now](../organizations/security/add-users-team-project.md).
-
-	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_backlogs/board```  
-
-	If you don't see the team or project you want, select ![Azure DevOps icon](../media/icons/project-icon.png) **Azure DevOps** to [browse all projects and teams](../project/navigation/work-across-projects.md).  
-
-2. Select **Board** to open the Kanban board.
-
-    ![Azure DevOps backlogs board](media/azure-devops-backlogs-board.png)
-
-::: moniker-end
 
 ## Add tests
 
@@ -78,33 +66,7 @@ Before you run the test, you must add details.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. To add tests, open the menu for the work item.
-
-	<img src="../boards/boards/media/i-test-add-test.png" alt="Open the context menu of a backlog item to add inline test case" />
-
-	Inline tests are the same as test cases in a test suite. A default test plan and test suite automatically get created under which the manual test cases are grouped. 
-
-	For example, a test suite gets created for each user story, and all inline tests are added to that suite. The following user story 152 is highlighted. It has three manual tests defined with the IDs 153, 155, and 161.  
-
-	<img src="../boards/boards/media/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" /> 
-
-	To learn more about test plans and test suites, see [Plan your tests](../test/create-a-test-plan.md).  
-
-2. If you have a number of tests to add, enter each title and select **Enter**.
-
-	<img src="../boards/boards/media/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" />   
-
-	To add details to the test case, open it. You can select the title, double-select the inline item, or open the context menu and choose **Open**.
-
-	<img src="../boards/boards/media/i-test-case-form.png" alt="Open test case form from Kanban board" />
-
-To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
-
-Before you run the test, you must add details.
-
-::: moniker-end
 
 ---
 
@@ -119,14 +81,7 @@ Run the test by selecting ![Run icon](../boards/media/icons/run_query.png) **Run
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Run the test by selecting ![Run icon](../boards/media/icons/run_query.png) **Run test** from the ![Actions icon](../boards/media/icons/actions-icon.png) actions menu for the inline test.  
-
-<img src="../boards/boards/media/i-test-run-test.png" alt="Run a test" />  
-
-Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
-::: moniker-end
 
 ## Update the status of a test
 
@@ -140,15 +95,7 @@ When you update the status of tests, you can [track test results](../test/track-
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-You can update the status of the test from the ![Actions icon](../boards/media/icons/actions-icon.png) actions menu.
-
-   ![Pass test](media/pass-test.png)
-
-When you update the status of tests, you can [track test results](../test/track-test-status.md).  
-
-::: moniker-end
 
 ## Expand or collapse inline tests
 
@@ -164,17 +111,7 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
 
-When you first open the Kanban board, you'll see an unexpanded view of checklists.
-
-   ![Inline tests collapsed](../boards/boards/media/i-test-open-board-collapsed-tests.png)
-
-Select the inline test summary to expand a collapsed set of tests. Select the same summary to collapse an expanded list.
-
-   ![Inline tests expanded](../boards/boards/media/i-test-expanded-test-list.png)
-
-::: moniker-end
 
 ## Next steps
   

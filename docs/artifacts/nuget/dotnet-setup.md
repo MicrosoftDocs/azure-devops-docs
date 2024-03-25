@@ -59,30 +59,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-> [!NOTE]
-> dotnet is not supported in TFS 2018.
-
-1. Select **Build and Release**, and then select **Packages**.
-
-1. Select your feed from the dropdown menu.
-
-1. Select **Connect to feed**.
-
-    :::image type="content" source="../media/connect-to-feed-tfs.png" alt-text="A screenshot showing how to connect to a feed in TFS.":::
-
-1. Select **NuGet** from the left panel.
-
-1. If this is your first time using Azure Artifacts with NuGet, select the link under **Get the tools** to download and install NuGet and the Credential Provider.
-
-1. Run the following command in an elevated command prompt to add your feed URL to your nuget.config file:
-
-    ```cmd
-    nuget.exe sources add -name <Feed_Name> -source <Feed_URL> 
-    ```
-
-::: moniker-end
 
 ## Related articles
 

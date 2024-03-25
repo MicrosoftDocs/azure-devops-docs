@@ -40,15 +40,7 @@ The first thing you need to understand is that your product **Backlog** and **Bo
 
 [!INCLUDE [temp](../includes/basic-process-note.md)] 
 
-::: moniker range="tfs-2018"
 
-- Work item type belongs to the Requirements category. The types differ depending on the process selected for your project: 
-	- [Agile](../work-items/guidance/agile-process.md): User Story, Backlog name=<strong>Stories</strong>  
-	- [Scrum](../work-items/guidance/scrum-process.md): Product Backlog Item, Backlog name=<strong>Backlog items</strong> 
-	- [CMMI](../work-items/guidance/cmmi-process.md): Requirement, Backlog name=<strong>Requirements</strong>  
-- Work item <strong>Area Path</strong> matches one of the selected team's Area Paths
-- Work item <strong>Iteration Path</strong> is under the team's Default Iteration Path
-::: moniker-end
 
 You can determine the work item types that belong to your Requirements category. Determine the items by [opening your product Backlog](create-your-backlog.md) and checking the product backlog name. 
 
@@ -59,13 +51,7 @@ You can determine the work item types that belong to your Requirements category.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-As shown in the following image, (1) choose the team, (2) **Work**, (3) **Backlogs**, and then the product backlog. 
 
-> [!div class="mx-imgBorder"]
-> ![Product backlog level, Backlog items, Stories, or Requirements](media/setup-backlog/backlog-levels-prev-versions.png)
-
-::: moniker-end
 
 Look up your team's Area Path(s) and Iteration Paths. For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and 
 [Define sprint paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
@@ -112,11 +98,7 @@ For all processes except the Basic process, each team manages the way bugs are t
 
 [!INCLUDE [temp](../includes/basic-process-bug-note.md)]
 
-::: moniker range="tfs-2018"
 
-Each team can manage the way bugs are tracked. You can track bugs as belonging to the Requirements category. Those bugs show up on the Backlog and Kanban board or the Tasks category. They can show up on the Taskboard or the Bugs category where they don't appear on either backlogs or boards. 
-
-::: moniker-end
 
 If you want bugs to show up on your Backlog and Board, choose <strong>Bugs are managed with requirements</strong>.
 
@@ -164,20 +146,7 @@ To learn more about checklists, see the following articles:
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-
-For example, here we've chosen to track bugs along with tasks, and  enable Task and Bug to appear within checklists. 
-
-> [!div class="mx-imgBorder"]
-> ![Kanban board, Settings, Annotations](media/setup-backlog/annotations-product-backlog.png)
-
-To learn more about checklists, see the following articles: 
-- [Add tasks or child items as checklists](../boards/add-task-checklists.md)  
-- [Add, run, and update inline tests](../boards/add-run-update-tests.md)
-
-
-::: moniker-end
 
 
 <a id="customize-checklist-2019"></a>
@@ -242,14 +211,7 @@ For more information, see the following resources:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-- [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md)  
-- [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
-- [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md) 
-- [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)  
-
-::: moniker-end
 
 <a id="taskboard-types"></a> 
 
@@ -339,10 +301,7 @@ The following settings can influence the type and number of work items that appe
 	> ![Backlogs, View Options, Hide In Progress](media/setup-backlog/hide-in-progress.png)  
 	::: moniker-end
 
-	::: moniker range="tfs-2018"  
-	> [!div class="mx-imgBorder"]  
-	> ![Backlogs, Hide In Progress](media/setup-backlog/hide-in-progress-prev.png)  
-	::: moniker-end
+	
 
 - Work items appear in the priority order in which they're added or moved to. This order or sequence is managed by the **Stack Rank** (Basic, Agile, and CMMI processes) or **Backlog Priority** (Scrum) field. For more information, see the Stack rank section in [Backlogs, portfolios, and Agile project management](backlogs-overview.md#stack-rank).
 

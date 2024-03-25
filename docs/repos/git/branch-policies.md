@@ -934,7 +934,7 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2018 < azure-devops-2020"
+::: moniker range="<azure-devops-2020"
 
 <a name="require-approval-from-external-services"></a>
 
@@ -1096,7 +1096,7 @@ az repos policy required-reviewer update --id
 
  
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 Select reviewers for specific directories and files in your repo.
 
@@ -1142,7 +1142,7 @@ For more information about managing these permissions, see [Git permissions](../
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 In TFS 2015 through TFS 2018 Update 2, the **Exempt from policy enforcement** permission allows users with this permission to perform the following actions:
 

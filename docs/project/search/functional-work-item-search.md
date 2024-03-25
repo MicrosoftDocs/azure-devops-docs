@@ -46,11 +46,7 @@ Enter the work item ID in the Azure DevOps title bar. You can read and edit the 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
 
-![Screenshot showing opening the work item in a modal dialogue.](media/advanced-work-item-search-syntax/open-work-item-modal.png)
-
-::: moniker-end
 
 ## Search across all fields
 
@@ -158,41 +154,7 @@ For more information, see the following articles:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
-   
-   :::image type="content" source="media/get-started/work-item-search-filters.png" alt-text="Screenshot showing Search from the title bar.":::   
-
-   See the following quick filters that you can use:
-
-   * `a:` for **Assigned to:** 
-   * `c:` for **Created by:** 
-   * `s:` for **State** 
-   * `t:` for **Work item type**<p />
- 
-2. Start entering the name of a field in your work items; for example, enter `ta`.
-
-   :::image type="content" source="media/work-item-search-get-started/dyna-dropdown.png" alt-text="Screenshot showing quick filters as you enter a field name.":::   
-
-   The dropdown list shows work item field name suggestions that match user input. These suggestions help you complete the search faster. For example, a search such as **tags:Critical** finds all work items tagged 'Critical.' 
-
-3. Add more filters to further narrow your search, and use Boolean operators to combine terms if necessary. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
-
-4. Narrow your search to specific types and states, by using the drop-down selector lists at the top of the results page.
-5. Widen your search across all projects, or narrow it to specific types and states. Use the filter to show the selector lists.
-
-   ![Screenshot showing the filter lists.](media/shared/show-filters.png)    
-
-6. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
-
-   ![Screenshot showing selector drop-down lists.](media/work-item-search-get-started/area-selectors.png)    
-
-7. Sort the results with the drop-down list of field names, work item types, or by relevance.
-
-   ![Screenshot showing sort drop-down list.](media/work-item-search-get-started/sort-order.png)    
-
-::: moniker-end
 
 ### Quick filters for matching in specific fields
 

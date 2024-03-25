@@ -92,21 +92,7 @@ To focus on one level of a backlog at a time, select the name of the backlog. If
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
-
-   :::image type="content" source="media/features-epics/open-features-epics.png" alt-text="Screenshot of opening Boards, Backlogs, and then Features, TFS 2018 version.":::
-
-   To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
-
-   :::image type="content" source="../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png" alt-text="Screenshot of Choose another team, TFS 2018 version.":::
-
-2. Select **Epics** to see a list of all epics defined in your team's active area paths.  
-
-   :::image type="content" source="media/org-backlog-epics-ts-new-nav.png" alt-text="Screenshot of Epics pane and Value Area columns."::: 
-
-::: moniker-end
 
 For more information, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).  
 
@@ -130,17 +116,7 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
-
-   :::image type="content" source="media/features-epics/add-feature-standard.png" alt-text="Screenshot showing how to add a feature, TFS 2018.":::
-
-2. Repeat this step until you captured all your main ideas.
-
-   :::image type="content" source="media/org-backlog-features-ts-new-nav.png" alt-text="Screenshot of the Features backlog, TFS 2018.":::
-
-::: moniker-end
 
 ## Add details to a feature or epic 
 
@@ -214,18 +190,7 @@ Whenever you see the ![plus-icon](../../media/icons/blue-add-icon.png) **Add** i
 For more information, see [Configure your backlog view](../backlogs/configure-your-backlog-view.md) and [About work items and work item types](../work-items/about-work-items.md).
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-To add a work item, choose :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: **Add**, and choose from the options provided.
-
-In the following image, we added a product backlog item as a child to the Customer Web - Phase 1 feature. 
-
-:::image type="content" source="media/org-backlog-features-add-child-ts.png" alt-text="Screenshot of how to add a child item to a backlog work item, TFS 2018.":::
-
-Whenever you see the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: **Add** icon, you can add a child item. 
-The work item(s) always corresponds to the hierarchy of work item types defined for your project.   
-
-::: moniker-end
 
 For Scrum projects, your hierarchy looks like the following example. 
 

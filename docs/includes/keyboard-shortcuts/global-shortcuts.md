@@ -27,7 +27,7 @@ The following screenshot shows the list of keyboard shortcuts as it appears in A
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 |Shortcut|Action|
 |--------|------|

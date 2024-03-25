@@ -2,48 +2,39 @@
   "redirections": [
     {
       "source_path": "docs/pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
-      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups",
-      "redirect_document_id": false
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups"
     },
     {
       "source_path": "docs/pipelines/apps/cd/howto-webdeploy-iis-deploygroups.md",
-      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/howto-webdeploy-iis-deploygroups",
-      "redirect_document_id": false
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/howto-webdeploy-iis-deploygroups"
     },
     {
       "source_path": "docs/migrate/migration.md",
-      "redirect_url": "/azure/devops/migrate/migration-overview",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/migrate/migration-overview"
     },
     {
       "source_path": "docs/devsecops/index.md",
-      "redirect_url": "/devops/devsecops/enable-devsecops-azure-github",
-      "redirect_document_id": false
+      "redirect_url": "/devops/devsecops/enable-devsecops-azure-github"
     },
     {
       "source_path": "docs/user-guide/faqs.md",
-      "redirect_url": "/azure/devops/user-guide/user-guide-faqs",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/user-guide/user-guide-faqs"
     },
     {
       "source_path": "docs/marketplace/how-to/uninstall-disable-extensions-tfs.md",
-      "redirect_url": "/azure/devops/marketplace/uninstall-disable-extensions",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/marketplace/uninstall-disable-extensions"
     },
     {
       "source_path": "docs/organizations/security/set-project-collection-level-permissions.md",
-      "redirect_url": "/azure/devops/organizations/security/change-project-level-permissions",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/security/change-project-level-permissions"
     },
     {
       "source_path": "docs/organizations/security/lookup-organization-owner-admin.md",
-      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions"
     },
     {
       "source_path": "docs/organizations/security/change-individual-permissions.md",
-      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions"
     },
     {
       "source_path": "docs/report/powerbi/analytics-fields-reference.md",
@@ -52,43 +43,35 @@
     },
     {
       "source_path": "docs/organizations/projects/faq-create-project.yml",
-      "redirect_url": "/azure/devops/organizations/projects/create-project",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/projects/create-project"
     },
     {
       "source_path": "docs/organizations/projects/faq-rename-project.yml",
-      "redirect_url": "/azure/devops/organizations/projects/rename-project",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/projects/rename-project"
     },
     {
       "source_path": "docs/marketplace/get-tfs-extensions.md",
-      "redirect_url": "/azure/devops/marketplace/install-extension",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/marketplace/install-extension"
     },
     {
       "source_path": "docs/marketplace/trust.md",
-      "redirect_url": "/azure/devops/marketplace/overview",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/marketplace/overview"
     },
     {
       "source_path": "docs/marketplace/how-to/grant-permissions.md",
-      "redirect_url": "/azure/devops/marketplace/grant-permissions",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/marketplace/grant-permissions"
     },
     {
       "source_path": "docs/extend/develop/install.md",
-      "redirect_url": "/azure/devops/extend/get-started/node?view=azure-devops#install-your-extension",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/extend/get-started/node?view=azure-devops#install-your-extension"
     },
     {
       "source_path": "docs/marketplace/overview.md",
-      "redirect_url": "/azure/devops/extend/overview",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/extend/overview"
     },
     {
       "source_path": "docs/marketplace/faq-extensions.yml",
-      "redirect_url": "/azure/devops/marketplace/install-extension#frequently-asked-questions-faqs",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/marketplace/install-extension#frequently-asked-questions-faqs"
     },
     {
       "source_path": "docs/organizations/public/about-public-projects.md",
@@ -97,133 +80,107 @@
     },
     {
       "source_path": "docs/organizations/public/browse-code-public.md",
-      "redirect_url": "/azure/devops/repos/git/find-a-file",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/repos/git/find-a-file"
     },
     {
       "source_path": "docs/organizations/public/clone-git-repo-public.md",
-      "redirect_url": "/azure/devops/repos/git/clone",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/repos/git/clone"
     },
     {
       "source_path": "docs/organizations/public/code-search-public.md",
-      "redirect_url": "/azure/devops/project/search/functional-code-search",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/project/search/functional-code-search"
     },
     {
       "source_path": "docs/organizations/public/create-public-project.md",
-      "redirect_url": "/azure/devops/organizations/projects/create-project",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/projects/create-project"
     },
     {
       "source_path": "docs/organizations/public/default-roles-access-public.md",
-      "redirect_url": "/azure/devops/organizations/security/permissions-access",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/security/permissions-access"
     },
     {
       "source_path": "docs/organizations/public/feature-differences.md",
-      "redirect_url": "/azure/devops/organizations/projects/make-project-public#access-levels-and-unavailable-features-for-public-projects",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/projects/make-project-public#access-levels-and-unavailable-features-for-public-projects"
     },
     {
       "source_path": "docs/organizations/public/glossary-public.md",
-      "redirect_url": "/azure/devops/organizations/projects/about-projects",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/projects/about-projects"
     },
     {
       "source_path": "docs/organizations/public/invite-users-public.md",
-      "redirect_url": "/azure/devops/organizations/projects/make-project-public#access-levels-and-unavailable-features-for-public-projects",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/projects/make-project-public#access-levels-and-unavailable-features-for-public-projects"
     },
     {
       "source_path": "docs/organizations/public/migration-checklist.md",
-      "redirect_url": "/azure/devops/organizations/projects/make-project-public#migration-checklist",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/projects/make-project-public#migration-checklist"
     },
     {
       "source_path": "docs/organizations/public/service-limits-public.md",
-      "redirect_url": "/azure/devops/user-guide/service-limits",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/user-guide/service-limits"
     },
     {
       "source_path": "docs/organizations/public/view-build-release-public.md",
-      "redirect_url": "/azure/devops/pipelines/release/releases",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/pipelines/release/releases"
     },
     {
       "source_path": "docs/organizations/public/view-filter-work-items-public.md",
-      "redirect_url": "/azure/devops/boards/work-items/quick-ref",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/work-items/quick-ref"
     },
     {
       "source_path": "docs/organizations/public/view-project-dashboard-public.md",
-      "redirect_url": "/azure/devops/report/dashboards/dashboards",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/report/dashboards/dashboards"
     },
     {
       "source_path": "docs/organizations/public/view-wiki-public.md",
-      "redirect_url": "/azure/devops/project/wiki/wiki-create-repo",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/project/wiki/wiki-create-repo"
     },
     {
       "source_path": "docs/organizations/public/work-item-search-public.md",
-      "redirect_url": "/azure/devops/project/search/functional-work-item-search",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/project/search/functional-work-item-search"
     },
     {
       "source_path": "docs/marketplace/uninstall-disable-extensions.md",
-      "redirect_url": "/azure/devops/marketplace/install-extension#uninstall-disable-extension",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/marketplace/install-extension#uninstall-disable-extension"
     },
     {
       "source_path": "docs/organizations/public/make-project-public.md",
-      "redirect_url": "/azure/devops/organizations/projects/make-project-public",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/projects/make-project-public"
     },
     {
       "source_path": "docs/user-guide/alm-devops-features.md",
-      "redirect_url": "https://azure.microsoft.com/products/devops/#overview",
-      "redirect_document_id": false
+      "redirect_url": "https://azure.microsoft.com/products/devops/#overview"
     },
     {
       "source_path": "docs/organizations/billing/csp/buy-vs-app-center.md",
-      "redirect_url": "https://visualstudio.microsoft.com/app-center/",
-      "redirect_document_id": false
+      "redirect_url": "https://visualstudio.microsoft.com/app-center/"
     },
     {
       "source_path": "docs/pipelines/apps/aspnet/build-aspnet-dacpac.md",
-      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/aspnet/build-aspnet-dacpac",
-      "redirect_document_id": false
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/aspnet/build-aspnet-dacpac"
     },
     {
       "source_path": "docs/pipelines/apps/aspnet/build-aspnet-cloudservice.md",
-      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/aspnet/build-aspnet-cloudservice",
-      "redirect_document_id": false
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/aspnet/build-aspnet-cloudservice"
     },
     {
       "source_path": "docs/pipelines/apps/cd/azure/aspnet-core-to-acr.md",
-      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/aspnet/build-aspnet-cloudservice",
-      "redirect_document_id": false
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/aspnet/build-aspnet-cloudservice"
     },
     {
       "source_path": "docs/pipelines/apps/cd/deploy-cloudservice-cloudservice.md",
-      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/deploy-cloudservice-cloudservice",
-      "redirect_document_id": false
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/deploy-cloudservice-cloudservice"
     },
     {
       "source_path": "docs/boards/extensions/feature-timeline.md",
-      "redirect_url": "/previous-versions/azure/devops/all/extensions/feature-timeline",
-      "redirect_document_id": false
+      "redirect_url": "/previous-versions/azure/devops/all/extensions/feature-timeline"
     },
     {
       "source_path": "docs/boards/extensions/epic-roadmap.md",
-      "redirect_url": "/previous-versions/azure/devops/all/extensions/epic-roadmap",
-      "redirect_document_id": false
+      "redirect_url": "/previous-versions/azure/devops/all/extensions/epic-roadmap"
     },
     {
       "source_path": "docs/organizations/notifications/concepts-events-and-notifications.md",
-      "redirect_url": "/azure/devops/organizations/notifications/about-notifications",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/notifications/about-notifications"
     },
     {
       "source_path": "docs/boards/get-started/why-use-azure-boards.md",
@@ -242,24 +199,20 @@
     },
     {
       "source_path": "docs/boards/get-started/customize-boards.md",
-      "redirect_url": "/azure/devops/boards/configure-customize",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/configure-customize"
     },
     {
       "source_path": "docs/boards/work-items/guidance/basic-field-reference.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/work-item-field",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/work-items/guidance/work-item-field"
     },
     {
       "source_path": "docs/boards/work-items/get-started/keyboard-shortcuts.md",
-      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts"
     },
     {
       "source_path": "docs/boards/work-items/changes-to-process-templates.md",
-      "redirect_url": "/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops#removing-assigned-to-rule-on-bug-work-item-type",
-      "redirect_document_id": false
-    }, 
+      "redirect_url": "/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops#removing-assigned-to-rule-on-bug-work-item-type"
+    },
     {
       "source_path": "docs/boards/report/dashboards/velocity-guidance.md",
       "redirect_url": "/azure/devops/report/dashboards/team-velocity",
@@ -267,279 +220,223 @@
     },
     {
       "source_path": "docs/boards/backlogs/office/resolve-excel-invalid-links-tree-list.md",
-      "redirect_url": "/azure/devops/boards/backlogs/office/faqs",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/backlogs/office/faqs"
     },
     {
       "source_path": "docs/boards/plans/edit-delivery-plans-permissions.md",
-      "redirect_url": "/azure/devops/organizations/security/set-permissions-access-work-tracking",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/security/set-permissions-access-work-tracking"
     },
     {
       "source_path": "docs/boards/boards/split-columns.md",
-      "redirect_url": "/azure/devops/boards/boards/add-columns",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/boards/add-columns"
     },
-    { 
+    {
       "source_path": "docs/boards/boards/reorder-cards.md",
-      "redirect_url": "/azure/devops/boards/boards/customize-cards#reorder-cards",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/boards/customize-cards#reorder-cards"
     },
     {
       "source_path": "docs/boards/boards/kanban-board-controls.md",
-      "redirect_url": "/azure/devops/boards/boards/kanban-overview#use-kanban-board-controls",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview#use-kanban-board-controls"
     },
     {
       "source_path": "docs/boards/boards/kanban-key-concepts.md",
-      "redirect_url": "/azure/devops/boards/boards/kanban-overview#kanban-concepts-and-terms",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview#kanban-concepts-and-terms"
     },
     {
       "source_path": "docs/boards/boards/kanban-basics.md",
-      "redirect_url": "/azure/devops/boards/boards/kanban-quickstart",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/boards/kanban-quickstart"
     },
     {
       "source_path": "docs/boards/backlogs/backlogs-boards-plans.md",
-      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards"
     },
     {
       "source_path": "docs/boards/github/add-remove-repositories.md",
-      "redirect_url": "/azure/devops/boards/github/install-github-app#add-remove-repos",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/github/install-github-app#add-remove-repos"
     },
     {
       "source_path": "docs/boards/github/change-azure-boards-app-github-repository-access.md",
-      "redirect_url": "/azure/devops/boards/github/install-github-app#change-repository-access",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/github/install-github-app#change-repository-access"
     },
     {
       "source_path": "docs/boards/github/troubleshoot-github-connection.md",
-      "redirect_url": "/azure/devops/boards/github/connect-to-github#resolve-connection-issues",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/github/connect-to-github#resolve-connection-issues"
     },
     {
       "source_path": "docs/boards/boards/definition-of-done.md",
-      "redirect_url": "/azure/devops/boards/boards/add-columns",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/boards/add-columns"
     },
     {
       "source_path": "docs/boards/boards/best-practices-kanban.md",
-      "redirect_url": "/azure/devops/boards/boards/kanban-overview",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview"
     },
     {
       "source_path": "docs/organizations/notifications/add-links-to-work-items.md",
-      "redirect_url": "/azure/devops/boards/backlogs/add-link",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/backlogs/add-link"
     },
     {
       "source_path": "docs/boards/extensions/delivery-plans.md",
-      "redirect_url": "/azure/devops/boards/plans/review-team-plans",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/plans/review-team-plans"
     },
     {
       "source_path": "docs/boards/work-items/best-tool-add-update-link-work-items.md",
-      "redirect_url": "/azure/devops/boards/work-items/about-work-items",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/work-items/about-work-items"
     },
     {
       "source_path": "docs/organizations/settings/work/troubleshoot-work-item-form-caching-issues.md",
-      "redirect_url": "/azure/devops/boards/faqs",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/faqs"
     },
     {
       "source_path": "docs/boards/extensions/index.md",
-      "redirect_url": "/azure/devops/boards/extensions/migrate-integrate",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/extensions/migrate-integrate"
     },
     {
       "source_path": "docs/boards/backlogs/best-practices-product-backlog.md",
-      "redirect_url": "/azure/devops/boards/backlogs/set-up-your-backlog",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/backlogs/set-up-your-backlog"
     },
     {
       "source_path": "docs/boards/queries/query-support-integration-cross-service-extensions.md",
-      "redirect_url": "/azure/devops/boards/extensions/migrate-integrate",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/extensions/migrate-integrate"
     },
     {
       "source_path": "docs/boards/backlogs/product-backlog-controls.md",
-      "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview#product-backlog-controls",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview#product-backlog-controls"
     },
     {
       "source_path": "docs/boards/queries/triage-work-items.md",
-      "redirect_url": "/azure/devops/boards/work-items/about-work-items",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/work-items/about-work-items"
     },
     {
       "source_path": "docs/boards/backlogs/copy-list.md",
-      "redirect_url": "/azure/devops/boards/backlogs/copy-clone-work-items",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/backlogs/copy-clone-work-items"
     },
     {
       "source_path": "docs/boards/queries/high-performing-queries.md",
-      "redirect_url": "/azure/devops/boards/queries/using-queries#best-practices",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/queries/using-queries#best-practices"
     },
     {
       "source_path": "docs/boards/queries/define-query-hyperlink.md",
-      "redirect_url": "/azure/devops/boards/queries/using-queries#define-a-query-as-a-hyperlink",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/queries/using-queries#define-a-query-as-a-hyperlink"
     },
     {
       "source_path": "docs/boards/queries/share-plans.md",
-      "redirect_url": "/azure/devops/boards/work-items/email-work-items",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/work-items/email-work-items"
     },
     {
       "source_path": "docs/organizations/security/permissions-access-work-tracking.md",
-      "redirect_url": "/azure/devops/organizations/security/set-permissions-access-work-tracking",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/security/set-permissions-access-work-tracking"
     },
     {
       "source_path": "docs/boards/work-items/work-items-form-controls.md",
-      "redirect_url": "/azure/devops/boards/work-items/about-work-items#work-items-form-controls",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/work-items/about-work-items#work-items-form-controls"
     },
     {
       "source_path": "docs/organizations/settings/set-working-days.md",
-      "redirect_url": "/azure/devops/boards/sprints/set-capacity#set-capacity-for-the-team-and-team-members",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/sprints/set-capacity#set-capacity-for-the-team-and-team-members"
     },
     {
       "source_path": "docs/repos/git/configure-repos-work-tracking.md",
-      "redirect_url": "/azure/devops/cross-service/cross-service-overview#azure-boards--azure-repos",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/cross-service/cross-service-overview#azure-boards--azure-repos"
     },
     {
       "source_path": "docs/boards/work-items/work-item-url-hyperlink.md",
-      "redirect_url": "/azure/devops/boards/work-items/email-work-items",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/work-items/email-work-items"
     },
     {
       "source_path": "docs/project/search/faq-search.yml",
-      "redirect_url": "/azure/devops/project/search/manage-search",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/project/search/manage-search"
     },
     {
       "source_path": "docs/organizations/settings/search-settings.md",
-      "redirect_url": "/azure/devops/project/search/get-started-search",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/project/search/get-started-search"
     },
     {
       "source_path": "docs/user-guide/service-limits.md",
-      "redirect_url": "/azure/devops/integrate/concepts/rate-limits",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/integrate/concepts/rate-limits"
     },
     {
       "source_path": "docs/integrate/concepts/cross-origin-resource-sharing.md",
-      "redirect_url": "/azure/devops/integrate/how-to/call-rest-api?view=azure-devops#cross-origin-resource-sharing-cors",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/integrate/how-to/call-rest-api?view=azure-devops#cross-origin-resource-sharing-cors"
     },
     {
       "source_path": "docs/integrate/rest-api-overview.md",
-      "redirect_url": "/rest/api/azure/devops/?view=azure-devops-rest-7.2&viewFallbackFrom=azure-devops",
-      "redirect_document_id": false
+      "redirect_url": "/rest/api/azure/devops/?view=azure-devops-rest-7.2\u0026viewFallbackFrom=azure-devops"
     },
     {
       "source_path": "docs/boards/boards/kanban-enable-live-updates.md",
-      "redirect_url": "/azure/devops/boards/boards/kanban-overview",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview"
     },
     {
       "source_path": "docs/boards/queries/link-work-items-support-traceability.md",
-      "redirect_url": "/azure/devops/boards/backlogs/add-link",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/backlogs/add-link"
     },
     {
       "source_path": "docs/boards/work-items/work-item-deployments-control.md",
-      "redirect_url": "/azure/devops/boards/backlogs/add-link",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/backlogs/add-link"
     },
     {
       "source_path": "docs/project/wiki/wiki-select-unpublish-versions.md",
-      "redirect_url": "/azure/devops/project/wiki/publish-repo-to-wiki#unpublish-a-code-wiki",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/project/wiki/publish-repo-to-wiki#unpublish-a-code-wiki"
     },
     {
       "source_path": "docs/project/wiki/wiki-markdown-guidance.md",
-      "redirect_url": "/azure/devops/project/wiki/markdown-guidance#wiki-markdown-guidance",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/project/wiki/markdown-guidance#wiki-markdown-guidance"
     },
     {
       "source_path": "docs/project/wiki/wiki-keyboard-shortcuts.md",
-      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts#wiki-shortcuts",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts#wiki-shortcuts"
     },
     {
       "source_path": "docs/extend/publish/publicize.md",
-      "redirect_url": "/azure/devops/extend/publish/overview#publicize-your-extension",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/extend/publish/overview#publicize-your-extension"
     },
     {
       "source_path": "docs/extend/publish/manage-ratings-reviews.md",
-      "redirect_url": "/azure/devops/extend/publish/overview#respond-to-marketplace-extension-reviews",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/extend/publish/overview#respond-to-marketplace-extension-reviews"
     },
     {
       "source_path": "docs/organizations/projects/restore-project.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-project#restore-a-deleted-project",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/accounts/delete-project#restore-a-deleted-project"
     },
     {
       "source_path": "docs/organizations/projects/save-project-data.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-project#save-project-data",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/accounts/delete-project#save-project-data"
     },
     {
       "source_path": "docs/organizations/security/provide-stakeholder-pipeline-access.md",
-      "redirect_url": "/azure/devops/organizations/security/stakeholder-access",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/security/stakeholder-access"
     },
     {
       "source_path": "docs/repos/get-started/key-concepts-repos.md",
-      "redirect_url": "/azure/devops/repos/get-started/index",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/repos/get-started/index"
     },
     {
       "source_path": "docs/organizations/projects/project-team-quick-reference.md",
-      "redirect_url": "/azure/devops/organizations/projects/about-projects",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/organizations/projects/about-projects"
     },
     {
       "source_path": "docs/project/configure-or-add-a-project-portal.md",
-      "redirect_url": "/azure/devops/project/wiki/about-readme-wiki",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/project/wiki/about-readme-wiki"
     },
     {
       "source_path": "docs/organizations/projects/tf31002-unable-connect-tfs.md",
-      "redirect_url": "/azure/devops/user-guide/troubleshoot-connection",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/user-guide/troubleshoot-connection"
     },
     {
       "source_path": "docs/project/navigation/use-breadcrumbs-selectors.md",
-      "redirect_url": "/azure/devops/project/navigation/go-to-project-repo",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/project/navigation/go-to-project-repo"
     },
     {
       "source_path": "docs/organizations/projects/resources-granted-to-project-members.md",
-      "redirect_url": "/azure/devops/user-guide/project-admin-tutorial",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/user-guide/project-admin-tutorial"
     },
     {
       "source_path": "docs/user-guide/user-guide-faqs.yml",
-      "redirect_url": "/azure/devops/user-guide/provide-feedback",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/user-guide/provide-feedback"
     },
     {
       "source_path": "docs/boards/work-items/automate-work-item-state-transitions.md",
-      "redirect_url": "/azure/devops/boards/backlogs/automate-work-item-state-transitions",
-      "redirect_document_id": false
+      "redirect_url": "/azure/devops/boards/backlogs/automate-work-item-state-transitions"
     }
   ]
 }
-

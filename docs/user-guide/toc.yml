@@ -5,7 +5,6 @@
 - name: Compare Azure DevOps hosted vs. on-premises
   href: about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json
 - name: Get started for end users
-  expanded: true
   items:
   - name: Sign in to the web or a client
     href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/get-started/toc.json
@@ -23,19 +22,19 @@
     href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/get-started/toc.json
   - name: View permissions
     href: ../organizations/security/view-permissions.md?toc=/azure/devops/get-started/toc.json
-- name: Get started for administrators
   expanded: true
+- name: Get started for administrators
   items:
   - name: Sign up for Azure DevOps
     href: sign-up-invite-teammates.md?toc=/azure/devops/get-started/toc.json
   - name: Create an organization or project collection
     href: ../organizations/accounts/create-organization.md?toc=/azure/devops/get-started/toc.json
   - name: Manage your project
-    href: project-admin-tutorial.md?toc=/azure/devops/get-started/toc.json 
+    href: project-admin-tutorial.md?toc=/azure/devops/get-started/toc.json
   - name: Manage your organization or collection
     href: manage-organization-collection.md?toc=/azure/devops/get-started/toc.json
   - name: Add users to a project or team
-    href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/get-started/toc.json 
+    href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/get-started/toc.json
   - name: Manage teams and configure team tools
     href: ../organizations/settings/manage-teams.md?toc=/azure/devops/get-started/toc.json
   - name: Change individual permissions
@@ -44,6 +43,7 @@
     href: ../organizations/security/restrict-access.md?toc=/azure/devops/get-started/toc.json
   - name: Security best practices
     href: ../organizations/security/security-best-practices.md?toc=/azure/devops/get-started/toc.json
+  expanded: true
 - name: Key concepts
   items:
   - name: Plan your organizational structure
@@ -51,7 +51,7 @@
   - name: Source control
     href: source-control.md?toc=/azure/devops/get-started/toc.json
   - name: Clients and tools
-    href: tools.md?toc=/azure/devops/get-started/toc.json 
+    href: tools.md?toc=/azure/devops/get-started/toc.json
   - name: Software development roles
     href: roles.md?toc=/azure/devops/get-started/toc.json
 - name: Troubleshooting
@@ -65,9 +65,9 @@
   - name: Allowed address lists and network connections
     href: ../organizations/security/allow-list-ip-url.md?toc=/azure/devops/get-started/toc.json
   - name: Get support or provide feedback
-    href: provide-feedback.md?toc=/azure/devops/get-started/toc.json 
+    href: provide-feedback.md?toc=/azure/devops/get-started/toc.json
   - name: Look up platform and version
-    href: lookup-platform-version.md?toc=/azure/devops/get-started/toc.json 
+    href: lookup-platform-version.md?toc=/azure/devops/get-started/toc.json
 - name: Reference
   items:
   - name: Navigate in Team Explorer

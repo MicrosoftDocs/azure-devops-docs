@@ -52,11 +52,7 @@ For YAML pipelines, the process for cloning is to copy the YAML from the source 
 
 :::moniker-end
 
-:::moniker range="< azure-devops-2019"
 
-This version of TFS doesn't support YAML pipelines.
-
-:::moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -79,15 +75,7 @@ You need `Edit release pipeline` or `Edit build pipeline` permissions to clone a
 
 :::moniker-end
 
-:::moniker range="< azure-devops-2019"
 
-1. To clone a build definition, navigate to **Build Definitions** on the **Builds** hub, choose **...** beside the desired build definition, and choose **Clone**.
-
-   :::image type="content" source="media/clone-build-definition-tfs-2018.png" alt-text="Clone a build definition in TFS 2018.":::
-
-2. Your pipeline is cloned with **-clone** appended to the name. Choose **Save** or **Save & queue** to save the cloned pipeline.
-
-:::moniker-end
 
 * * *
 
@@ -127,11 +115,7 @@ In a YAML pipeline, exporting from one project and importing into another is the
 
 :::moniker-end
 
-:::moniker range="< azure-devops-2019"
 
-This version of TFS doesn't support YAML pipelines.
-
-:::moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -175,17 +159,7 @@ The procedure for exporting and importing a classic release pipeline is very sim
 
 :::moniker-end
 
-:::moniker range="tfs-2018"
 
-To export a build definition, navigate to **Build Definitions** on the **Builds** hub, choose **...** beside the desired build definition, choose **Export**, and download the .json file that contains the build definition.
-
-:::image type="content" source="media/export-build-definition-tfs-2018.png" alt-text="Export a build definition in TFS 2018.":::
-
-To import a build definition, choose **+Import** from the **Build Definitions** page, and select the .json file saved from the previous step.
-
-:::image type="content" source="media/import-build-definition-tfs-2018.png" alt-text="Import a build definition in TFS 2018.":::
-
-:::moniker-end
 
 :::moniker range=">= azure-devops-2019 <= azure-devops-2020"
 

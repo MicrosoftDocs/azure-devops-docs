@@ -23,9 +23,7 @@ With checklists or to do lists, you continue to enjoy lightweight tracking. You 
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/checklists/board-checklists.png" alt-text="Screenshot of product-level Kanban board with three work items showing child lists":::
 ::: moniker-end
-::: moniker range="tfs-2018"
-<img src="media/kanban-task-checklists.png" alt="Kanban board with several task checklists defined" />  
-::: moniker-end
+
 
 In this article, you'll learn: 
 > [!div class="checklist"]    
@@ -66,17 +64,13 @@ In this example, tasks are added to the product Kanban board using the checklist
     ::: moniker range=">=azure-devops-2019"  
     :::image type="content" source="media/checklists/add-task-menu.png" alt-text="Screenshot of open the context menu of work item to add a task.":::
     ::: moniker-end
-    ::: moniker range="tfs-2018"  
-    <img src="media/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" />  
-    ::: moniker-end
+    
 
 2. If you have many tasks to add, keep entering their titles and choose Enter after each title.  
     ::: moniker range=">= azure-devops-2019"  
     :::image type="content" source="media/checklists/four-tasks-added.png" alt-text="Screenshot of added tasks.":::
     ::: moniker-end
-    ::: moniker range="tfs-2018"
-    <img src="media/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" />  
-    ::: moniker-end
+    
 
 3. If you have details you want to add about a task, open the item by choosing the title. 
     :::image type="content" source="media/checklists/open-task.png" alt-text="Screenshot of opening a task.":::
@@ -92,9 +86,7 @@ When you complete a task or other checklist item, choose the checkbox to change 
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/checklists/board-checklists.png" alt-text="Screenshot of product-level Kanban board showing several done child items":::
 ::: moniker-end
-::: moniker range="tfs-2018"
-<img src="media/kanban-check-done-tasks.png" alt="Check tasks that are complete" />
-::: moniker-end
+
 
 The **State** of the work item is updated from *Active* to *Closed* for projects based on an Agile or CMMI process, and from *To Do* to *Done* for projects based on a Scrum or Basic process. 
 
@@ -108,9 +100,7 @@ Upon first opening the Kanban board, you'll see an unexpanded view of checklists
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/checklists/unexpanded-checklists.png" alt-text="Screenshot of unexpanded checklist":::
 ::: moniker-end
-::: moniker range="tfs-2018"
-<img src="media/kanban-board-first-open-collapsed-checklists.png" alt="Expand task checklist for a work item" /> 
-::: moniker-end
+
 
 
 ## Reorder tasks, reparent tasks, or reassign tasks to a sprint 
@@ -120,9 +110,7 @@ You can drag a task within a work item to reorder it. Or, you can drag the task 
 ::: moniker range=">= azure-devops-2019"
 ![Drag tasks to reorder them.](../get-started/media/plan-track-work/reorder-task.png)
 ::: moniker-end
-::: moniker range="tfs-2018"
-![Drag tasks to reorder them within the list](media/task-checklist-reorder-tasks.png) 
-::: moniker-end
+
 
 
 > [!NOTE]   

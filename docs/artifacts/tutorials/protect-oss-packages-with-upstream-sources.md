@@ -39,21 +39,7 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Select **Build & Release**, and then select **Packages**.
-
-    :::image type="content" source="../media/goto-feed-hub.png" alt-text="Screenshot showing how to navigate to Azure Artifacts - TFS.":::
-
-1. Select **New Feed** to create a new feed.
-
-    :::image type="content" source="../media/new-feed-button.png" alt-text="Screenshot showing the create feed button - TFS.":::
-
-1. Give your feed a **Name** and a **Description**, and set up **who can read** and **who can contribute**. Make sure you check the **Include external packages** checkbox, and then select **Create** when you're done.
-
-    :::image type="content" source="../media/create-new-feed-dialog.png" alt-text="A screenshot showing how to create a new feed window in TFS.":::
-
-::: moniker-end
 
 ## Set up the configuration file
 
@@ -78,17 +64,7 @@ Now that we created our feed, we need to update the config file to point to our 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Select **Build & Release** > **Packages**, and then select **Connect to Feed**.
-
-    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed - TFS":::
-
-1. Copy the highlighted snippet to add it to your config file.
-
-    :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot highlighting the snippet to be added to the config file - TFS":::
-
-::: moniker-end
 
 If you don't have a *.npmrc* file already, create a new one in the root of your project (in the same folder as your *package.json*). Open your new *.npmrc* file and paste the snippet you just copied in the previous step.
 

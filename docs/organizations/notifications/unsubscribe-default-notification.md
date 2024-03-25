@@ -1,4 +1,4 @@
-﻿---
+---
 title: View subscribed notifications
 titleSuffix: Azure DevOps
 description: View your notifications and unsubscribe from a default or built-in notification in Azure DevOps.
@@ -45,29 +45,7 @@ If you want to stop receiving select email notifications, you can do so by unsub
 
 ::: moniker-end
 
-::: moniker range="tfs-2018" 
 
-1. From the web portal, select your initials or picture, and select **Notification settings** from the drop-down menu.
-
-    <img src="media/unsubscribe-open-notification-settings.png" alt="Open personal notification settings" />
-
-    Your subscribed notifications show the State as **On**.  
-
-    <img src="media/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" />
-
-    The following image indicates a subscription is a default or out-of-the-box (OOB) subscription:
-
-   ![OOB notification](media/oob-notification.png)
-
-    You can't modify an OOB subscription, but you can view its definition from its context menu.
-
-2. To unsubscribe, slide the state **On/Off** indicator to the *Off* position.
-
-    In the following image, the "Build completes" subscription is turned off.
-
-    <img src="media/unsubscribe-from-build-completes.png" alt="Unsubscribe from Build completes subscription" />
-
-::: moniker-end
 
 ## Related articles
 

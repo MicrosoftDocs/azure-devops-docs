@@ -100,9 +100,7 @@ Names of mentioned users appear in blue text. Choose the **\@mention link name**
 > ![Screenshot of discussion section with at mention made.](media/at-mention/at-mention-discussion.png)  
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-![Web portal, At mention user contact information accessible](media/at-mention-link-to-user-contact-card.png)  
-::: moniker-end
+
 
 
 > [!NOTE]
@@ -116,9 +114,7 @@ Upon completion of your selection and text entry, your **@mention** user receive
 > ![Screenshot of Email sent in Outlook.](media/at-mention/at-mention-work-item.png)  
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-![Email sent to at-mention user organization](media/mail-to-at-mention-user.png)
-::: moniker-end
+
 
 
 Use the **\@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments.
