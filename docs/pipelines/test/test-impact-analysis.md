@@ -14,12 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
 
-> [!NOTE] 
-> Applies only to TFS 2017 Update 1 and later, and Visual Studio 2015 Update 3 and later.
-
-::: moniker-end
 
 Continuous Integration (CI) is a key practice in the industry.
 Integrations are frequent, and verified with an automated build that runs regression tests to detect integration errors as soon as possible.
@@ -47,11 +42,7 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 * **Running tests in parallel**. In this case, tests will run serially.
 * **Running tests with code coverage enabled**. In this case, code coverage data will not get collected.
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 ## Test Impact Analysis supported scenarios
 

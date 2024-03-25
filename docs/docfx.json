@@ -1,17 +1,20 @@
 {
   "build": {
-      "content":
-      [
-        {
-            "files": ["breadcrumb/toc.yml"]
-        },
-        {
-          "files": ["**/**.md",
-                    "**/**.yml"],
+    "content": [
+      {
+        "files": [
+          "breadcrumb/toc.yml"
+        ]
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
         "exclude": [
           "artifacts/nuget/bootstrap-nuget.md",
           "pipelines/apps/cd/deploy-linuxvm-deploygroups.md",
-           "**/obj/**",
+          "**/obj/**",
           "**/includes/**",
           "**/_data/**",
           "**/_shared/**",
@@ -61,7 +64,7 @@
     "globalMetadata": {
       "feedback_system": "Standard",
       "feedback_product_url": "https://developercommunity.visualstudio.com/AzureDevOps",
-      "breadcrumb_path": "/azure/devops/breadcrumb/toc.json", 
+      "breadcrumb_path": "/azure/devops/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-AzureDevOps",
       "archive_url": "https://docs.microsoft.com/en-us/previous-versions/azure/devops/all/",
       "ms.topic": "conceptual",
@@ -209,7 +212,7 @@
         "repos/tfvc/**": "true",
         "repos/get-started/**": "true",
         "repos/git/**": "true"
-     },
+      },
       "exclude_monikers": {
         "reference/error/**/*.md": [
           "azure-devops"
@@ -217,52 +220,62 @@
         "boards/backlogs/**/*.md": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "boards/boards/**/*.md": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "boards/plans/**/*.md": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "boards/queries/**/*.md": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "boards/sprints/**/*.md": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "boards/work-items/**/*.md": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "boards/best-practices-agile-project-management.md": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "boards/configure-customize.md": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "boards/faqs.yml": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "boards/index.yml": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "get-started/**/*.md": [
           "tfs-2013",
@@ -292,7 +305,8 @@
         "reference/index.yml": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "organizations/security/**/*.md": [
           "tfs-2013",
@@ -353,12 +367,14 @@
         "project/index.yml": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "project/work-across-projects-faqs.yml": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "report/dashboards/**/*.md": [
           "tfs-2013",
@@ -373,7 +389,8 @@
         "repos/index.yml": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "repos/get-started/**/*.md": [
           "tfs-2013",
@@ -383,7 +400,8 @@
         "user-guide/**/*.md": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "user-guide/**/*.yml": [
           "tfs-2013",
@@ -392,38 +410,45 @@
         ],
         "boards/get-started/**/*.md": [
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "marketplace/**/*.md": [
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "marketplace/**/*.yml": [
           "tfs-2015",
           "tfs-2017"
         ],
         "marketplace-extensibility/index.yml": [
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "organizations/accounts/**/*.md": [
           "tfs-2017"
         ],
         "organizations/index.yml": [
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "pipelines/**/*.md": [
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "pipelines/index.yml": [
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "report/index.yml": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "repos/git/**/*.md": [
           "tfs-2015",
@@ -431,7 +456,8 @@
         ],
         "test/**/*.md": [
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "test/**/*.yml": [
           "tfs-2015",
@@ -440,33 +466,452 @@
         "index.yml": [
           "tfs-2013",
           "tfs-2015",
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "artifacts/**/*.md": [
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "artifacts/**/*.yml": [
           "tfs-2017"
         ],
         "extend/**/*.md": [
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "integrate/**/*.md": [
-          "tfs-2017"
+          "tfs-2017",
+          "tfs-2018"
         ],
         "service-hooks/**/*.md": [
+          "tfs-2017",
+          "tfs-2018"
+        ],
+        "cross-service/media/**/*.md": [
+          "tfs-2018"
+        ],
+        "cross-service/cross-service-overview.md": [
+          "tfs-2018"
+        ],
+        "cross-service/end-to-end-traceability.md": [
+          "tfs-2018"
+        ],
+        "cross-service/github-integration.md": [
+          "tfs-2018"
+        ],
+        "cross-service/index.yml": [
+          "tfs-2018"
+        ],
+        "cross-service/manage-change.md": [
+          "tfs-2018"
+        ],
+        "cross-service/manage-requirements.md": [
+          "tfs-2018"
+        ],
+        "get-started/index.yml": [
+          "tfs-2018"
+        ],
+        "migrate/media/**/*.md": [
+          "tfs-2018"
+        ],
+        "migrate/faqs.yml": [
+          "tfs-2018"
+        ],
+        "migrate/migrate-from-tfs.md": [
+          "tfs-2018"
+        ],
+        "migrate/migration-import-large-collections.md": [
+          "tfs-2018"
+        ],
+        "migrate/migration-import.md": [
+          "tfs-2018"
+        ],
+        "migrate/migration-overview.md": [
+          "tfs-2018"
+        ],
+        "migrate/migration-post-import.md": [
+          "tfs-2018"
+        ],
+        "migrate/migration-processtemplates.md": [
+          "tfs-2018"
+        ],
+        "migrate/migration-restricting-access-to-azure-devops-services.md": [
+          "tfs-2018"
+        ],
+        "migrate/migration-troubleshooting.md": [
+          "tfs-2018"
+        ],
+        "migrate/phase-rollout-with-rings.md": [
+          "tfs-2018"
+        ],
+        "organizations/settings/work/faqs.yml": [
+          "tfs-2018"
+        ],
+        "organizations/accounts/faq-azure-access.yml": [
+          "tfs-2018"
+        ],
+        "organizations/accounts/faq-configure-customize-organization.yml": [
+          "tfs-2018"
+        ],
+        "organizations/accounts/faq-set-up-vs.yml": [
+          "tfs-2018"
+        ],
+        "organizations/accounts/faq-user-and-permissions-management.yml": [
+          "tfs-2018"
+        ],
+        "organizations/billing/billing-faq.yml": [
+          "tfs-2018"
+        ],
+        "organizations/notifications/faq-notifications.yml": [
+          "tfs-2018"
+        ],
+        "organizations/security/faq-github-authentication.yml": [
+          "tfs-2018"
+        ],
+        "organizations/security/faq-permissions.yml": [
+          "tfs-2018"
+        ],
+        "organizations/security/index.yml": [
+          "tfs-2018"
+        ],
+        "organizations/**/*.md": [
+          "tfs-2018"
+        ],
+        "project/**/*.md": [
+          "tfs-2018"
+        ],
+        "reference/mapping/**/*.md": [
+          "tfs-2018"
+        ],
+        "reference/media/**/*.md": [
+          "tfs-2018"
+        ],
+        "reference/process-templates/**/*.md": [
+          "tfs-2018"
+        ],
+        "reference/witadmin/**/*.md": [
+          "tfs-2018"
+        ],
+        "reference/xml/**/*.md": [
+          "tfs-2018"
+        ],
+        "reference/add-modify-field.md": [
+          "tfs-2018"
+        ],
+        "reference/add-modify-wit.md": [
+          "tfs-2018"
+        ],
+        "reference/add-portfolio-backlogs.md": [
+          "tfs-2018"
+        ],
+        "reference/add-wits-to-backlogs-and-boards.md": [
+          "tfs-2018"
+        ],
+        "reference/customize-wit-form.md": [
+          "tfs-2018"
+        ],
+        "reference/customize-work.md": [
+          "tfs-2018"
+        ],
+        "reference/on-premises-xml-process-model.md": [
+          "tfs-2018"
+        ],
+        "reference/quick-reference-index-boards-settings.md": [
+          "tfs-2018"
+        ],
+        "report/dashboards/faqs.yml": [
+          "tfs-2018"
+        ],
+        "report/**/*.md": [
+          "tfs-2018"
+        ],
+        "repos/git/howto.yml": [
+          "tfs-2018"
+        ],
+        "repos/git/index.yml": [
+          "tfs-2018"
+        ],
+        "repos/tfvc/index.yml": [
+          "tfs-2018"
+        ],
+        "repos/**/*.md": [
+          "tfs-2018"
+        ],
+        "test/index.yml": [
+          "tfs-2018"
+        ],
+        "test/reference-qa.yml": [
           "tfs-2017"
+        ],
+        "boards/backlogs/office/media/**/*.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/office/bulk-add-modify-work-items-excel.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/office/faqs.yml": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/office/resolve-excel-data-validation-errors.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/office/tfs-office-integration-issues.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/office/track-work.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/add-link.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/add-work-items.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/automate-work-item-state-transitions.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/backlogs-overview.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/bulk-modify-work-items.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/configure-your-backlog-view.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/connect-work-items-to-git-dev-ops.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/copy-clone-work-items.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/create-your-backlog.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/define-features-epics.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/delete-test-artifacts.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/display-rollup.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/filter-backlogs-boards-plans.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/manage-bugs.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/manage-issues-impediments.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/move-change-type.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/organize-backlog.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/remove-delete-work-items.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/resolve-backlog-reorder-issues.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/set-column-options.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/set-up-your-backlog.md": [
+          "tfs-2018"
+        ],
+        "boards/backlogs/work-item-template.md": [
+          "tfs-2018"
+        ],
+        "boards/boards/add-columns.md": [
+          "tfs-2018"
+        ],
+        "boards/boards/add-run-update-tests.md": [
+          "tfs-2018"
+        ],
+        "boards/boards/add-task-checklists.md": [
+          "tfs-2018"
+        ],
+        "boards/boards/customize-cards.md": [
+          "tfs-2018"
+        ],
+        "boards/boards/expedite-work.md": [
+          "tfs-2018"
+        ],
+        "boards/boards/kanban-epics-features-stories.md": [
+          "tfs-2018"
+        ],
+        "boards/boards/kanban-overview.md": [
+          "tfs-2018"
+        ],
+        "boards/boards/kanban-quickstart.md": [
+          "tfs-2018"
+        ],
+        "boards/boards/wip-limits.md": [
+          "tfs-2018"
+        ],
+        "boards/extensions/**/*.md": [
+          "tfs-2018"
+        ],
+        "boards/github/**/*.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/media/**/*.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/add-edit-delivery-plan.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/agile-culture.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/configure-hierarchical-teams.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/faqs.yml": [
+          "tfs-2018"
+        ],
+        "boards/plans/index.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/portfolio-management.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/practices-that-scale.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/review-team-plans.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/safe-concepts.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/safe-configure-boards.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/safe-customize.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/safe-plan-track-boards.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/safe-review-roadmaps-progress.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/scaled-agile-framework.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/track-dependencies.md": [
+          "tfs-2018"
+        ],
+        "boards/plans/visibility-across-teams.md": [
+          "tfs-2018"
+        ],
+        "boards/integrations/**/*.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/media/**/*.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/about-managed-queries.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/add-tags-to-work-items.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/build-test-integration.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/example-query-charts.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/history-and-auditing.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/import-work-items-from-csv.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/link-type-reference.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/linking-attachments.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/organize-queries.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/planning-ranking-priorities.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/query-by-area-iteration-path.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/query-by-date-or-current-iteration.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/query-by-workflow-changes.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/query-faqs.yml": [
+          "tfs-2018"
+        ],
+        "boards/queries/query-field-value.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/query-index-quick-ref.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/query-numeric.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/query-operators-variables.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/search-box-queries.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/set-query-permissions.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/titles-ids-descriptions.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/using-queries.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/view-run-query.md": [
+          "tfs-2018"
+        ],
+        "boards/queries/wiql-syntax.md": [
+          "tfs-2018"
+        ],
+        "boards/includes/**/*.md": [
+          "tfs-2018"
+        ],
+        "boards/media/**/*.md": [
+          "tfs-2018"
+        ],
+        "artifacts/index.yml": [
+          "tfs-2018"
         ]
       }
     },
     "template": [],
-    "dest": "team-services",
     "markdownEngineName": "markdig",
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azure-devops || tfs-2018 || >= azure-devops-2019 <= azure-devops-2022"
+        "moniker_range": "azure-devops || >= azure-devops-2019 <= azure-devops-2022"
       }
-    }
+    },
+    "dest": "team-services"
   }
 }

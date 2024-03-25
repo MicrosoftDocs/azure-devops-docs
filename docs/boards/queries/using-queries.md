@@ -22,9 +22,7 @@ Work item queries generate lists of work items based on the filter criteria prov
 ::: moniker range=">= azure-devops-2020"
 You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
-::: moniker-end
+
 
 Check out our recommended best practices, later in this article.
 
@@ -63,16 +61,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [Was Ever (Board Column)](./query-by-workflow-changes.md#kanban_query_fields)  
       - [Wildcard](./titles-ids-descriptions.md)  
       ::: moniker-end
-      ::: moniker range="tfs-2018"
-      - [Compare fields](./query-field-value.md) 
-      - [Key words](./titles-ids-descriptions.md)  
-      - [Linked work items](./linking-attachments.md)  
-      - [Logical groupings](#use-andor-logical-expression)  
-      - [Query macros](./about-managed-queries.md#macros)  
-      - [Tags](./add-tags-to-work-items.md#query)  
-      - [Was Ever](./query-by-workflow-changes.md)  
-      - [Wildcard](./titles-ids-descriptions.md)  
-      ::: moniker-end
+      
    :::column-end::: 
    :::column span="1":::
       ::: moniker range=">= azure-devops-2019"
@@ -84,12 +73,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [In and Not In Group searches](./planning-ranking-priorities.md#picklist-query-examples) 
       - [Search across projects](#query-across-or-within-projects)
       ::: moniker-end
-      ::: moniker range="tfs-2018"
-      - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
-      - [History and Discussion](./history-and-auditing.md) 
-      - [In and Not In Group searches](./planning-ranking-priorities.md#picklist-query-examples) 
-      - [Search across projects](#query-across-or-within-projects)
-      ::: moniker-end
+      
    :::column-end:::
    :::column span="2":::
       ::: moniker range=">= azure-devops-2019"
@@ -102,14 +86,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [@StartOfDay, @StartOfMonth, @StartOfWeek, @StartOfYear](query-by-date-or-current-iteration.md)   
       - [@TeamAreas](query-by-area-iteration-path.md)
       ::: moniker-end
-      ::: moniker range="tfs-2018"
-      - [[Any]](titles-ids-descriptions.md)
-      - [@Me](query-by-workflow-changes.md)
-      - [@Today](query-by-date-or-current-iteration.md) 
-      - [@CurrentIteration](query-by-date-or-current-iteration.md)   
-      - [@Follows](titles-ids-descriptions.md#following)
-      - [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](titles-ids-descriptions.md#recent-macros)
-      ::: moniker-end
+      
    :::column-end:::
 :::row-end:::
 ---
@@ -141,17 +118,7 @@ The Query Editor displays with the following default settings: **Flat list of wo
 Modify the **Values** and [add or remove clauses](#define-a-clause), or change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
-
-![Screenshot to Queries page, Choose New query from the drop down menu.](media/using-queries-new-query-ts.png)  
-
-The Query Editor displays with the following default settings: **Flat list of work items**, **Team Project=@Project** (the current project), **Work Item Type=[Any]**, and **State=[Any]**. 
-
-:::image type="content" source="media/using-queries/new-query-flat-list-tfs.png" alt-text="Screenshot of Query Editor with flat list of work items selected."::: 
-
-You can modify the **Values** and [add or remove clauses](#define-a-clause). Or, change the **Type of query** to [Work items and direct links](#use-direct-links-to-view-dependencies) or to a [Tree of work items](#use-a-work-item-tree-to-view-hierarchies). 
-
-::: moniker-end  
+  
  
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -282,11 +249,7 @@ Use the :::image type="icon" source="media/11.png" border="false"::: **Tree of W
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
-
-:::image type="content" source="media/view-run-queries/tree-query-view-tfs.png" alt-text="Screenshot of Query Results List showing a Tree Query.":::
-
-::: moniker-end  
+  
 
 Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
 

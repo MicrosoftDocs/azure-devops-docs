@@ -120,14 +120,7 @@ Responsible for configuring project-level resources, including:
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies  
 ::: moniker-end  
 
-::: moniker range="tfs-2018"
-
-- [Area paths](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
-- [Project permissions and repository security](../organizations/security/permissions.md)  
-- [Customizing work tracking objects](../reference/customize-work.md)  
-- [Build agents, pools, and service connections](../pipelines/get-started/what-is-azure-pipelines.md)  
-- [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies
-::: moniker-end  
+  
 
 ::: moniker range="azure-devops"
 
@@ -145,32 +138,7 @@ Responsible for configuring organization-level resources, including the followin
 To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects).
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-### Project Collection Administrators
-
-Responsible for configuring collection-level resources. These tasks include:  
-
-- Add and manage projects
-- Manage collection-level permissions
-- Install and manage extensions
-
-To get started, see [Settings](../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects).
-
-### Azure DevOps Server administrators
-
-Responsible for installing, upgrading, and maintaining an on-premises Azure DevOps Server deployment, including the:
-
-- Install Azure DevOps Server
-- Update servers running Azure DevOps Server
-- Manage database backups
-- Manage server administrative settings and permissions
-- Build retention policies
-- Add and manage project collections
-  
-To get started, see [Server Administration (Azure DevOps Server)](/azure/devops/server/index).
-
-::: moniker-end
 
 ## Related articles
 

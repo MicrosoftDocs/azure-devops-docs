@@ -656,55 +656,7 @@ Use the following example to create a new pipeline with YAML. For more informati
 
 :::moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-:::row:::
-   :::column span="1":::
-**Software/tool**
-   :::column-end:::
-   :::column span="2":::
-**Information**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-Azure DevOps project
-   :::column-end:::
-   :::column span="2":::
-[Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-Azure DevOps Extension Tasks extension 
-   :::column-end:::
-   :::column span="2":::
-Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)  in your organization.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-Pipeline library variable group
-   :::column-end:::
-   :::column span="2":::
-Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group) within this group in your pipeline. Also, declare the following variables in the variable group:
-
-- `publisherId`: ID of your marketplace publisher</br>
-- `extensionId`: ID of your extension, as declared in the vss-extension.json file</br>
-- `extensionName`: Name of your extension, as declared in the vss-extension.json file</br>
-- `artifactName`: Name of the artifact being created for the VSIX file
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-Service connection
-   :::column-end:::
-   :::column span="2":::
-Create a new Marketplace service connection and grant access permissions for all pipelines.
-   :::column-end:::
-:::row-end:::
-
-::: moniker-end
 
 For more information, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
 

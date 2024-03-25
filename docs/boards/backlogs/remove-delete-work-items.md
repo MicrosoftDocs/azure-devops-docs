@@ -68,16 +68,7 @@ To move a work item from one project to another, or to change the work item type
        - By default, members of the **Contributors** group have this permission.
    :::column-end:::
 :::row-end:::
-::: moniker range="tfs-2018"
-:::row:::
-   :::column span="1":::
-      [Permanently delete or destroy work items from the command line](#delete-or-destroy-work-items-from-the-command-line)  
-   :::column-end:::
-   :::column span="2":::
-       Be a member of the **Project Administrators** group.
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
@@ -175,33 +166,7 @@ You can delete work items in one of the following ways:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
-
-	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Actions**, and select **Delete**. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of work item form, Actions menu, Delete option, TFS 2018 version.](media/move-change-delete/delete-work-item.png)  
-
-	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md). Then, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of List of work items, actions menu, Delete, TFS 2018 version.](media/move-change-delete/multi-delete.png)  
-
-	You can also delete work items from your Kanban or Taskboard. 
- 
-	![Screenshot of Kanban board, Delete work item, TFS 2018 version.](media/move-change-delete/delete-work-items-from-kanban-board.png)
-
-	Or, you can drag them to the :::image type="icon" source="media/recycle-bin-icon.png" border="false"::: **Recycle bin**. You can only access the **Recycle bin** from the **Work** hub. 
-
-2. Confirm you want to delete the item(s).  
-
-	![Confirm delete dialog, TFS 2018 version.](media/move-change-delete/delete-work-items-dialog-tfs.png)
-
-	> [!NOTE]    
-	> The Delete work items confirmation dialog for on-premises Azure DevOps may indicate there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
-::: moniker-end
 
 <a id="restore"></a>
 <a id="restore-or-permanently-delete-work-items"></a>

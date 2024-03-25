@@ -86,7 +86,7 @@ To delete a test plan, do the following steps.
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 In general, you create test plans to test requirements. Before you create a test plan, [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
 
 1. From the web portal, open your project and go to **Test Plans**.
@@ -146,7 +146,7 @@ Now add test suites for the backlog items that need manual tests. These tests co
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 Now add test suites for the backlog items that need manual tests. These tests could be user stories, requirements, or other work items based your project.
 
 > [!NOTE] 
@@ -179,7 +179,7 @@ You can create a static test suite that can contain any type of test suites. Use
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 ![Screenshot shows using drag and drop to reorder tests.](media/create-a-test-plan/AddRequirementSuitesToTestPlan4.png)
 ::: moniker-end
 
@@ -194,7 +194,7 @@ Select **Export test cases to CSV**.
 
 ![Screenshot shows a test plan selected and the Export test cases to CSV option.](media/create-a-test-plan/export-test-cases.png)
 ::: moniker-end
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 Select the details that you want in the report.
 Then email or print this report for review.
 
@@ -217,7 +217,7 @@ In **Test Plans** for your test plan, use the :::image type="icon" source="media
   ![Screenshot shows finding a test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/filter-select-test-plan.png)
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
 Or filter the list of tests using **Outcome**, **Tester**, and **Configuration** (**3**).

@@ -39,23 +39,5 @@ To view or set your personal notifications, see [Manage your personal notificati
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Select the settings button while you have your project open to bring up the project administration page.
-
-![Screenshot that shows Open up the administrative area of the web portal for your project.](media/pull-requests/gear_icon_settings.png) 
-
-- Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to more notifications.
-
-  ![Screenshot that shows Subscribe to emails.](media/pull-request-notifications/pr-notifications.png)
-
-- To edit a notification, select **...** for the notification and choose **View** to edit the subscription. 
-
-  ![Screenshot that shows Change subscription.](media/pull-request-notifications/view-pr-notifications.png)
-
-- To opt-out of a notification, set the **State** to **Off**.
-
-   ![Screenshot that shows Opt out of emails.](media/pull-request-notifications/opt-out-notifications.png)
-
-::: moniker-end
 

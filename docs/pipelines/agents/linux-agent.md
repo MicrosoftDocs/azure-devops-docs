@@ -18,11 +18,7 @@ monikerRange: '<= azure-devops'
 
 :::moniker-end
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 To run your jobs, you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. See [Check prerequisites](#check-prerequisites) for a list of supported Linux distributions.
 
@@ -33,7 +29,7 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 
 ## Check prerequisites
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 The agent is based on .NET 6.
 You can run this agent on several Linux distributions.

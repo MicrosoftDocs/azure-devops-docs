@@ -2,11 +2,11 @@
   displayName: policy, permission, resource, change, log, export, filter
   href: azure-devops-auditing.md
 - name: Create audit streaming
-  href: auditing-streaming.md
   displayName: data, process, processing, alert, alerting, Splunk, Event Grid, Azure Monitor Log
+  href: auditing-streaming.md
 - name: List of audit events
-  href: auditing-events.md
   displayName: audit, events, list
+  href: auditing-events.md
 - name: Export user list
   displayName: access level, account, member, log
   href: ../security/export-users-audit-log.md

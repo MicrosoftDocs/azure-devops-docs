@@ -18,11 +18,7 @@ monikerRange: '<= azure-devops'
 
 :::moniker-end
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 To run your jobs, you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu, Red Hat, and CentOS.
 
@@ -34,7 +30,7 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 
 ## Check prerequisites
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 The agent is based on .NET Core 3.1.
 You can run this agent on several Linux distributions.
@@ -87,18 +83,7 @@ You can install those dependencies on supported Linux platforms by running `./bi
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-**TFS 2018 RTM and older**: The shipped agent is based on CoreCLR 1.0.
-We recommend that, if able, you should upgrade to a later agent version (2.125.0 or higher).
-See [Azure Pipelines agent prereqs](?view=azure-devops&preserve-view=true#check-prerequisites) for more about what's required to run a newer agent.
-
-If you must stay on the older agent, make sure your machine is prepared with our prerequisites for either of the supported distributions:
-
-* [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
-* [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
-
-::: moniker-end
 
 ### Subversion
 
@@ -182,27 +167,7 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-### TFS 2018
-
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
-
-1. In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
-
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
-
-1. Click **Download agent**.
-
-1. On the **Get agent** dialog box, click **Linux**.
-
-1. Click the **Download** button.
-
-1. Follow the instructions on the page.
-
-1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
-
-::: moniker-end
 
 
 ### Server URL
@@ -219,11 +184,7 @@ Azure DevOps Server 2019: `https://{your_server}/DefaultCollection`
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-TFS 2018: `https://{your_server}/tfs`
-
-::: moniker-end
 
 
 ### Authentication type

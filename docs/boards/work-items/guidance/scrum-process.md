@@ -42,18 +42,7 @@ Define work item queries to list work items for a current sprint or the product 
 
 [!INCLUDE [temp](../../includes/shared-queries.md)] 
 
-::: moniker range="tfs-2018"
 
-Or, use the shared queries that the Scrum process provides.
-
-:::image type="content" source="media/IC665405.png" alt-text="Screenshot of Shared queries for the Scrum process.":::
-
-You can find [descriptions of predefined queries](#predefined-queries) later in this article.   
-
-> [!TIP]
-> Queries listed under the **Current Iteration** folder don't automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../sprints/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../queries/query-by-date-or-current-iteration.md).
-
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/quick-tips-shared-query.md)] 
 
@@ -93,27 +82,7 @@ For a summary of updates made to process templates, see [Release Notes for Azure
 
 <a id="predefined-queries"></a>
 
-::: moniker range="tfs-2018"
 
-### Scrum process predefined queries
-
-Your product owner can plan and track product backlog items and bugs in the product backlog by using the **Product Backlog** query. You can find work items that are assigned to the current sprint by using the shared queries that are listed under the **Current Sprint** folder. These queries find work items that are assigned to a specified iteration or sprint. As you plan more sprints, you can modify these queries to specify the latest sprint and save them to other folders that you create, such as **Sprint 2** or **Sprint 3**.
-
-The project administrator for each project [defines area paths](../../../organizations/settings/set-area-paths.md) and [iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md) for that project so that the team can track progress by those designations.  
-
-> [!div class="mx-tdCol2BreakAll"]
-> |Shared queries|Description| 
-> |---|---|  
-> |Blocked Tasks | Lists all tasks in the current sprint that have been marked as Blocked.|
-> |Open Impediments |Lists all open impediment work items in the current sprint.|
-> |Sprint Backlog |Lists all product backlog items, bugs, and their linked tasks that your team has committed to complete in the current sprint.|
-> |Test Cases |Lists all test cases in the current sprint and sorts them by priority.|
-> |Unfinished Work |Lists all product backlog items, bugs, and their linked tasks that have not been marked as Done in the current sprint.|
-> |Work in Progress |Lists all tasks in the current sprint that are marked as In Progress.| 
-> |Feedback | Lists all feedback responses that are in an Active state. |
-> |Product Backlog |Lists all product backlog items and bugs that are assigned to the root iteration. Product backlog items and bugs are sorted by backlog priority.|  
-
-::: moniker-end
 
 ## Related articles 
 

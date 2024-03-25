@@ -30,11 +30,7 @@ To support other tracking needs, you can [define your own custom work item field
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
-
-To support other tracking needs, you can [modify or add a custom field](../../../reference/add-modify-field.md). 
-
-::: moniker-end  
+  
 
 
 ::: moniker range=">= azure-devops-2019"  

@@ -12,11 +12,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 > [!NOTE]
 >
@@ -43,11 +39,7 @@ Import this repo into your Git repo in Azure DevOps Server 2019:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-Import this repo into your Git repo in TFS:
-
-::: moniker-end
 
 ```
 https://github.com/Azure-Samples/app-service-web-dotnet-get-started

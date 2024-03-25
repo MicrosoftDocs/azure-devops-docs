@@ -24,18 +24,12 @@ If it is your first time opening **Queries**, the page opens to **Favorites**. T
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"  
 
-From your web browser, open **Boards > Queries**. 
-
-![From your web browser, open Boards>Queries](../queries/media/view-run-queries/open-hub-page.png)  
-
-::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md#open-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 1. From the Team Explorer home page, choose **Work Items**. 
   

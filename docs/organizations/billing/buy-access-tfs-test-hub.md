@@ -63,24 +63,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. [Create an organization](../accounts/create-organization.md), if you don't have one already.
-
-2. Based on the number of users who need Azure Test Plans access in Azure DevOps Server, [buy paid access](buy-basic-access-add-users.md).
-
-    Test Plans installs automatically in Azure DevOps Server.
-
-3. [Add users](../accounts/add-organization-users.md) to your organization. Assign them Basic + Test Plans access so you can track them.
-
-4. As the Azure DevOps Server administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them Advanced access](../../organizations/security/change-access-levels.md) so they can use Azure Test Plans.
-
-    > [!NOTE]
-    > Azure DevOps Server doesn't detect what happens in Azure DevOps Services. 
-    >
-    > If you stop paying for these users, your administrator should remove those users from Azure DevOps Server.
-
-::: moniker-end
 
 ## FAQs
 

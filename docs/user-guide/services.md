@@ -42,12 +42,7 @@ For more information, see the following associated articles.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-Access Azure DevOps through the top navigational bar, as shown in the following image.
 
-![Azure DevOps Services, main](../media/services-hubs.png) 
-
-::: moniker-end
 
 Many of our services are either free for small teams or available through a subscription model or per use model. You can do a hybrid approach where you use an on-premises deployment to manage your code and work. Then, purchase cloud build or testing services on an as-needed basis.  
 
@@ -60,9 +55,7 @@ Gain access to user-configurable dashboards from **Dashboards**.
 ![Azure DevOps Services, Dashboards.](media/dashboard-overview.png)
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-:::image type="content" source="../report/dashboards/media/dashboard-view-with-widgets.png" alt-text="Screenshot of Dashboard overview.":::
-::: moniker-end
+
 
 You can do the following tasks in **Dashboards**:
 - Add, configure, and manage dashboards
@@ -100,13 +93,7 @@ From **Repos**, you gain access to your source control Git-based or Team Foundat
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-From **Code**, you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
-
-:::image type="content" source="media/code-git-hub.png" alt-text="Screenshot of the Code, Git, files page.":::
-
-::: moniker-end
 
 From Azure Repos for Git, you can do the following tasks:
 
@@ -127,13 +114,7 @@ From **Boards**, you gain access to Agile tools to support planning and tracking
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-From **Work**, you gain access to Agile tools to support planning and tracking work.
-
-<img src="media/services/work-hub-backlogs.png" alt="Work, Backlogs page" />
-
-::: moniker-end
 
 You can do the following tasks with boards.
 
@@ -170,11 +151,7 @@ The rapid and reliable release of software comes from automating as many process
 >
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-**Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
-:::image type="content" source="media/services/build-release-hub.png" alt-text="Screenshot of build pipelines page.":::
-::: moniker-end
 
 Use pipelines to implement continuous integration and continuous delivery.
 - **Build automation**: Define the steps to take during build and the triggers that start a build.
@@ -196,11 +173,7 @@ For more information, see [Continuous integration on any platform](../pipelines/
 ![Test Plans](media/test-plans-vert.png)
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-**Test** supports creating and managing manual tests.
 
-:::image type="content" source="media/services/test-hub.png" alt-text="Screenshot of Test hub.":::
-::: moniker-end
 
 With test features, you gain access to the following features:
 
@@ -229,15 +202,7 @@ Azure DevOps also provides the following collaboration services.
 - [Analytics service](../report/powerbi/analytics-security.md), [analytics views](../report/powerbi/analytics-views-manage.md), and [Power BI reporting](../report/powerbi/access-analytics-power-bi.md)
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-- [Dashboards](../report/dashboards/dashboards.md)
-- [Project wiki](../project/wiki/manage-wikis.md)
-- [Discussion within work item forms](../boards/work-items/work-item-fields.md)
-- Linking of [work items](../boards/backlogs/add-link.md), [commits](../repos/git/commits.md), [pull requests](../repos/git/pull-requests.md), and other objects to support traceability
-- [Alerts and change notifications](../organizations/notifications/about-notifications.md) managed per user, team, project, or collection
-- Ability to [request](../test/request-stakeholder-feedback.md), [provide](provide-feedback.md), and manage feedback
-- [SQL Server Reporting](../report/sql-reports/analytics-insights-comparable-sql-reports.md)
-::: moniker-end
+
 
 ## Service hooks
 

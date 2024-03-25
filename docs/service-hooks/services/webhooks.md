@@ -48,31 +48,7 @@ Only organization Owners or Project Collection Administrators can manage webhook
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Go to your project Service Hooks page: 
-
-    `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
-
-	![Screenshot of the Project administration page](./media/add-service-hook.png)
-
-	Select **Create Subscription**.
-
-1.  Select and configure the Azure DevOps Services event:
-
-	![Configure the event dialog box](./media/webhooks/configure-event.png)
-
-1. Configure what to do when the event occurs:
-
-	See the following [Q & A](#q--a) for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
-
-	![Configure the action dialog box](./media/webhooks/configure-action.png)
-
-2. Test the service hook subscription and finish the wizard:
-
-	![Test it](./media/webhooks/test.png)
-
-::: moniker-end
 
 Now the webhook is set up. Go to the target service to view the JSON representation:
 

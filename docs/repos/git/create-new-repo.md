@@ -52,30 +52,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Navigate to your project by browsing to `https://dev.azure.com/<your organization name>` and selecting the name of your project. You can select it from the **All projects** list, or from the **Recent** projects list at the top if you've accessed it recently.
-
-   ![Screenshot of collection page that lists projects, TFS 2018 version.](media/repo-mgmt/select-vsts-project.png) 
-
-2. In the **Project** area in the web portal, select **Code**, then select the drop-down next to the current repo name and choose **New Repository**.
-
-   ![Screenshot of Code page, Repository menu selection, Choose new repository, TFS 2018 version.](media/repo-mgmt/create-vsts-repo.png)
-
-3. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. For naming restrictions, see [Naming restrictions, Azure Repos (git)](../../organizations/settings/naming-restrictions.md). 
-
-   ![Screenshot of  Create a new repoistory dialog, TFS 2018 version.](media/repo-mgmt/create-a-new-repository.png)
-
-	You can also add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo. The [.gitignore](ignore-files.md) file tells Git which types of files to ignore, such as temporary build files from your development environment.
-
-4. When you're happy with the repo name and choices, select **Create**.
-
-   A new empty Git repo is now created in your project. 
-
-    - If you created an empty repo with no README or .gitignore files, you'll see instructions on how to [clone](clone.md) the repo to your computer. You'll also see instructions on how to [push](pushing.md) code in an existing repo into the newly created one.
-    - In this example. you created a README and a .gitignore. You'll now see an overview of the files in your repo. You can [clone](clone.md) the repo using the **Clone** link on the upper right of the page to get working with a local copy of the repo immediately. 
-
-::: moniker-end
 
 ## Clone the repo to your computer
 
@@ -109,23 +86,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
-
-   ![Screenshot of Clone repo dialog, TFS 2018 version.](media/repo-mgmt/clone-git-repo.png)
-
-2. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous step, as shown in the following example.
-
-   ```
-   git clone https://fabrikam-fiber.visualstudio.com/DefaultCollection/MyFirstProject/_git/
-   ```
-  
-   After running the previous command, Git downloads a copy of the code into a new folder for you to work with. This download includes all [commits](commits.md) and [branches](./create-branch.md) from the repo.
-
-   Keep this command window open, as you'll use it in the following steps.
-
-::: moniker-end
 
 ## Work with the code
 

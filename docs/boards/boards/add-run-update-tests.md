@@ -68,25 +68,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
-	![Taskboard, collapsed backlog items, cloud service](media/quickstart/open-kanban-board.png)
-
-	If you don't see **Work**, your screen size may be reduced. Select the three dots (:::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false":::, then choose **Work**, **Backlogs**, and then **Board**.   
-
-	![Open Work when screen size is reduced](media/kanban-quickstart-reduced-screensize.png)   
-
-1. To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
-
-   > [!div class="mx-imgBorder"]  
-   > ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
-
-2. Your Kanban board displays. 
-
-	![Kanban board, Agile template](media/kanban-basics-intro.png)  
-
-::: moniker-end
 
 ## Add inline tests   
 

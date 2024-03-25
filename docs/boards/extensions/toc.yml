@@ -10,9 +10,9 @@
 - name: Deprecated extensions
   items:
   - name: Epic Roadmap >>
-    href: /previous-versions/azure/devops/all/extensions/epic-roadmap 
+    href: /previous-versions/azure/devops/all/extensions/epic-roadmap
   - name: Feature Timeline >>
-    href: /previous-versions/azure/devops/all/extensions/feature-timeline 
+    href: /previous-versions/azure/devops/all/extensions/feature-timeline
   - name: Project Server Integration >>
     href: /previous-versions/azure/devops/reference/tfs-ps-sync/
   - name: TFS-SharePoint Integration >>

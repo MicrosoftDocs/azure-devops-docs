@@ -14,13 +14,7 @@ ms.date: 10/04/2022
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Select **Packages**, and then select **Connect to Feed**.
-
-    :::image type="content" source="../../media/connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in TFS.":::
-
-::: moniker-end
 
 2. Select **Maven**.
 

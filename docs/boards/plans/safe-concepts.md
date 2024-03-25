@@ -240,36 +240,12 @@ For details on supported Markdown features, see the following articles.
 
 <!---
 
-::: moniker range="tfs-2018"
-
-![SAFe® roles map to a hierarchy of teams](media/safe-roles-to-vso-roles.png)  
-
-![Hierarchical backlog: epics, features, and stories](media/safe-epics-to-stories-value-area.png)
-
-![SAFe® release trains map to iterations](media/safe-release-trains-map.png)  
-
-![Teams track deliverables using iterations](media/safe-teams-track-deliverables.png)  
 
 
-![Tags can track value streams or associated budgets](media/save-epics-value-stream-tags.png)    
 
 
-![Value Area tracks Business or Architectural work](media/safe-epic-to-stories-map-to-value-area.png)    
-
-::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-> [!NOTE]  
-> The [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) is supported on TFS 2018 and later versions. 
-
-::: moniker-end
-
-
-::: moniker range="tfs-2018"
-> [!NOTE]  
-> The Project Wiki is available with TFS 2018 and later versions. 
-::: moniker-end
 
 -->

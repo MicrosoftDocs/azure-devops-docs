@@ -44,15 +44,7 @@ You can use work item queries to list work items based on their type, such as ch
 [!INCLUDE [temp](../../includes/shared-queries.md)] 
 
 
-::: moniker range="tfs-2018"
 
-Or, use one of the shared queries that the CMMI process provides.
-
-![Screenshot of CMMI shared queries.](media/IC667909.png)
-
-[Descriptions of predefined queries](#predefined-queries) are listed later in this article.  
-
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/quick-tips-shared-query.md)] 
 
@@ -114,76 +106,5 @@ Using the CMMI template and guidance can help you achieve the aims of CMMI if yo
 
 <a id="predefined-queries"></a>
 
-::: moniker range="tfs-2018"
 
-### CMMI process predefined queries  
-
-#### Query for items assigned to you
-
-You can find the work items that are assigned to you by using one of the shared queries that the following table describes.
-
-> [!div class="mx-tdCol2BreakAll"]
-> | Shared query | Description |
-> |---|---|
-> | My Test Cases | Lists all test cases that are not closed and that are assigned to the team member who is running the query. Test cases are sorted by priority and then ID. |
-> | My Work Items | Lists all work items, excluding shared steps, that are not closed and that are assigned to the team member who is running the query. Work items are sorted by rank, priority, type, and ID. |
-
-#### Development and test queries
-
-Team members can use the shared queries that are described in the following table to track the status of development and test tasks and active and resolved bugs.
-
-> [!div class="mx-tdCol2BreakAll"]
-> | Shared query | Description |
-> |---|---|
-> | Active Bugs | Lists all active bugs and sorts them by rank, priority, and severity. |
-> | Development Tasks | Lists all tasks whose **Discipline** is set to **Development**. Tasks are sorted by ID. |
-> | My Test Cases | Lists all test cases that are not closed and that are assigned to the team member who is running the query. Test cases are sorted by priority and then ID. |
-> | Open Tasks | Lists all tasks that are not closed, sorted by rank, priority, and then ID. |
-> | Open Test Cases | Lists all test cases that are not closed, sorted by priority and then ID. |
-> | Resolved Bugs | Lists all resolved bugs that are defined for the project, sorted by rank, priority, and severity. |
-> | Test Tasks | Lists all tasks whose **Discipline** is set to **Test**, sorted by ID. |
-
-#### Backlog management queries
-
-Product owners can use the shared queries that are described in the following table to track the status of requirements and untriaged work.
-
-> [!div class="mx-tdCol2BreakAll"]
-> | Shared query | Description |
-> |---|---|
-> | Customer Requirements | Lists all requirements, sorted by ID, that have been identified as Scenario or Quality of Service work items. |
-> | Product Requirements | Lists all requirements, sorted by ID, that have been identified as Functional, Operational, Security, Safety, or a Feature. |
-> | Open Requirements | Lists all requirements that are not closed, sorted by iteration ID, priority, and then work item ID. |
-> | Open Requirements without Test Cases | Lists all requirements that are not closed and that do not have a Tested By link to a test case, sorted by work item ID. |
-> | Open Work Items | Lists all work items except shared steps that are not closed. Work items are sorted by rank, priority, type, and then ID. |
-> | Proposed Work Items | Lists all proposed work items, sorted by rank, priority, iteration, area, triage, and then work item ID. |
-> | Reviews | Lists all reviews, sorted by work item ID. |
-> | Untriaged Work Items | Lists all requirements, tasks, change requests, bugs, and issues that have not been closed or triaged. The Triage field for these work items is set to Pending, More Info, or Info Received.<br /><br />Work items are sorted by state, triage, rank, priority, iteration, and area. |
-> | Work Breakdown | Lists all requirements that are not closed and their child requirements or tasks. |
-> | Work Items With Summary Values | Lists all tasks that have child tasks and that contain non-zero values for the Remaining Work or Completed Work fields. This query is designed to find tasks that report work effort that is already accounted for in their child tasks. For the hours to be counted only once, summary tasks should not be assigned any hours.<br /><br />For more information, see [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md). |
-
-#### Change management queries
-
-Product owners can use the shared queries that are described in the following table to track change requests and dependencies that have been identified between change requests and requirements.
-
-> [!div class="mx-tdCol2BreakAll"]
-> | Shared query | Description |
-> |---|---|
-> | Change Requests | Lists all change requests, sorted by ID. |
-> | Open Change Requests with Requirements | Lists change requests that are not closed and their linked requirements, sorted by ID. Only change requests that are linked to a requirement with a link type of Affects appears in the list. |
-> | Requirements with Open Change Requests | Lists requirements and the change requests that are not closed and that depend on them, sorted by ID. Only requirements that are linked to a change request with a link type of Affected By are listed. |
-
-#### Troubleshooting queries
-
-Product owners can use the shared queries that are described in the following table to troubleshoot issues and risks to the product schedule.
-
-> [!div class="mx-tdCol2BreakAll"]
-> | Shared query | Lists |
-> |---|---|
-> | Blocked Work Items | Lists all work items where the **Blocked** field is set to **Yes**.<br /><br />Only requirements, tasks, bugs, issues, and change requests can be blocked. |
-> | Corrective Action Status | Lists all tasks whose **Task Type** is set to **Corrective Action**. |
-> | Mitigation Actions | Lists all tasks whose **Task Type** is set to **Mitigation Action**. |
-> | Open Issues | Lists all issues that are not closed.<br /><br />The [Issues workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) references this query. |
-> | Risks | Lists all risks, sorted by ID. |
-
-::: moniker-end
  

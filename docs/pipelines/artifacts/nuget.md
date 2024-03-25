@@ -36,9 +36,7 @@ To create a NuGet package, add the following snippet to your pipeline YAML file.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 
@@ -90,9 +88,7 @@ steps:
 ```
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 
@@ -180,9 +176,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 
@@ -195,12 +189,7 @@ To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your p
 
 :::image type="content" source="media/nuget/publish-packages-from-team-build.png" alt-text="Screenshot showing how to configure the NuGet task in Azure Pipelines":::
 
-::: moniker range="tfs-2018"
 
-> [!NOTE]
-> If you are running TFS Update 2 or older, **Nuget** is not a service endpoint option. You must use the **Generic** service connection.
-
-::: moniker-end
 
 - - -
 

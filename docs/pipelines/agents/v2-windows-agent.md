@@ -113,27 +113,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-### TFS 2018
-
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
-
-1. In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
-
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
-
-1. Click **Download agent**.
-
-1. On the **Get agent** dialog box, click **Windows**.
-
-1. Click the **Download** button.
-
-1. Follow the instructions on the page to download the agent.
-
-1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`. 
-
-::: moniker-end
 
 > [!IMPORTANT]
 > We strongly recommend you configure the agent from an elevated PowerShell window.

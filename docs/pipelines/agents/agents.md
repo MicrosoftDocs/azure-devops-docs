@@ -12,11 +12,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 To build your code or deploy your software using Azure Pipelines, you need at least one agent. As you add more code and people, you'll eventually need more.
 
@@ -180,11 +176,7 @@ You can check for the existence of a capability, or make a comparison with the v
 
 :::moniker-end
 
-:::moniker range="<azure-devops-2019"
 
-YAML Pipelines are supported in Azure DevOps Server 2019 and higher.
-
-:::moniker-end
 
 # [Classic](#tab/classic)
 
@@ -352,17 +344,13 @@ ID    Name                             Is Hosted    Pool Type
 
 ::: moniker-end
 
-::: moniker range=">tfs-2018 <azure-devops"
+::: moniker range="<azure-devops"
 
 ### Communication with Azure DevOps Server
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-### Communication with TFS
-
-::: moniker-end
 
 The agent communicates with Azure Pipelines or Azure DevOps Server to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.
 

@@ -63,25 +63,7 @@ In the following steps, we show how to change it from the board view.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
-
-2. Choose **Board settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: to open the settings dialog.  
-
-	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team](media/configure-team/open-settings-tfs.png)  
-
-3. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
-
-	> [!div class="mx-imgBorder"]
-	> ![Settings, working with bugs dialog](media/show-bugs-dialog.png)  
-
-4. When done with your changes, choose **Save**.  
-
-5. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-overview.md).
-
-::: moniker-end
 
 
 ## Nest items   
@@ -107,11 +89,7 @@ You can add other work item types&#8212;such as change requests, issues, or impe
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"    
 
-You can add other work item types&#8212;such as change requests, issues, or impediments—by customizing your process or project, based on the process model you use. For details, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
-
-::: moniker-end
 
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).  
 

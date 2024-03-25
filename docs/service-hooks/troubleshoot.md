@@ -36,19 +36,7 @@ You can access detailed history about a subscription including detailed request/
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. To view the activity and status of your subscriptions,
-go to the Service Hooks page. 
-
-   :::image type="content" source="media/troubleshoot/service-hooks.png" alt-text="Screenshot showing view of subscription status.":::
-
-1. To view detailed activity for a subscription, including full request, response,
-and event payload data, select a subscription in the table and select **History**.
-
-   :::image type="content" source="media/troubleshoot/detailed-activity.png" alt-text="Screenshot showing view of detailed activity for subscription.":::
-
-::: moniker-end
 
 ## Subscription failures and probation (restricted)
 

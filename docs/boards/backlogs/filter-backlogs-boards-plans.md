@@ -25,9 +25,7 @@ You enable the filter feature by choosing :::image type="icon" source="../../med
 :::image type="content" source="media/filter/filter-backlogs.png" alt-text="Screenshot of choosing Filter function latest versions.":::
 ::: moniker-end 
 
-::: moniker range="tfs-2018"
-:::image type="content" source="media/filter/filter-backlogs-options-tfs-2017.png" alt-text="Screenshot of initial keyword filter function.  ":::
-::: moniker-end 
+ 
 
 
 From these tools, you may still have a large number of work items listed or displayed. Interactive filtering supports your ability to focus on a subset of them. You can apply one or more filter functions to each of the Azure Boards tools.  
@@ -52,13 +50,7 @@ Backlogs and boards are subject to filters defined for the team as described in 
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018"
-
-Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sprint Backlogs, Taskboards, and Queries. The set of features supported depends on the tool and Azure DevOps version. *(Use the content selector to view the filters available for your version.)* 
-
-Supported options are indicated with a ✔️ or listed. 
-
-::: moniker-end 
+ 
 
 :::row:::
    :::column span="1.5":::
@@ -774,11 +766,7 @@ To add columns or fields, see the following articles:
 	- For queries, define the query filter criteria of interest. 
 	::: moniker-end 
 
-	::: moniker range="< azure-devops-2019"
-	- For Backlogs and Boards, choose the backlog level you want, such as **Stories**, **Features**, or **Epics** 
-	- For sprint Backlogs and Taskboards, choose the iteration   
-	- For queries, define the query filter criteria of interest. 
-	::: moniker-end 
+	 
 
 1. Choose any other view settings available for your view.  For example: 
 	::: moniker range=">= azure-devops-2019"
@@ -787,10 +775,7 @@ To add columns or fields, see the following articles:
 	- For Taskboards, from the **Person** menu, choose **All**, **Unassigned**, or a specific team member.  
 	::: moniker-end 
 
-	::: moniker range="< azure-devops-2019"
-	- For Backlogs, from the **View options** menu, enable/disable **In Progress items**  
-	- For Taskboards, from the **Person** menu, choose **All**, **Unassigned**, or a specific team member.  
-	::: moniker-end 
+	 
 
 1. For list views, add columns to display fields containing text you want to filter on or possibly sort on. For card views, add fields to display on cards containing text you want to filter on. 
 
@@ -804,9 +789,7 @@ To add columns or fields, see the following articles:
 	> ![Screenshot of choosing Filter function.](media/filter-boards/filter-kb-choose-filter-services.png)
 	::: moniker-end
 
-	::: moniker range="< azure-devops-2019"
-	Choose  **Filter** :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false":::.
-	::: moniker-end
+	
 
 4. Choose the filters of interest. 
 
@@ -872,9 +855,7 @@ Filtering is case-insensitive.
 The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
-::: moniker-end
+
 
 
 ### Filter a board using a keyword
@@ -888,11 +869,7 @@ Here we filter the Kanban board to only show those cards that include 'web', eit
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-Here we filter the Kanban board to only show those cards that include 'Web', either in the title, tag, or displayed field.
 
-![Screenshot of Kanban board, Filter using keyword search, TFS 2018.](media/filter-boards/filter-options-web.png)
-::: moniker-end
 
 
 ## Filter a backlog by using a keyword
@@ -1007,11 +984,7 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of filtering board based on tags, TFS 2018. ](../queries/media/add-tags/filter-backlog-tags.png) 
-::: moniker-end
 
 To learn more about tags, see [Add tags to work items to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).
   

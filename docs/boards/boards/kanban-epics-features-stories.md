@@ -61,26 +61,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-1. To view a portfolio backlog, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Features** or **Epics**, and then (5) **Board**.  
-
-	![Open Features Kanban board](media/features-epics/open-features-board-standard.png)
-
-	If you don't see **Work**, your screen size may be reduced. Select the three dots (:::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false":::, then choose **Work**, **Backlogs**, and then **Board**.   
-
-	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
-
-2.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-standard.png)  
-
-3. Your Kanban board for the selected portfolio backlog displays.  
-
-	![Kanban board, Agile template](media/features-epics/features-board-standard.png)   
-
-::: moniker-end
 
 
 ## Add epics or features   
