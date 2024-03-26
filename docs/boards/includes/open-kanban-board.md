@@ -61,24 +61,5 @@ To switch to the [product backlog](../backlogs/create-your-backlog.md), select *
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
-
-1. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
-
-	![Open Portfolio Kanban board, features](../boards/media/quickstart/open-kanban-board.png)
-
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
-
-	![Open Work when screen size is reduced](../boards/media/kanban-quickstart-reduced-screensize.png)   
-
-1. To select another team, open the project and team selector. Select a different team, or select the **Browse** option.  
-
-   > [!div class="mx-imgBorder"]  
-   > ![Select another team](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png)  
-
-   Your Kanban board appears. 
-	  
-   ![Kanban board, Agile template](../boards/media/kanban-basics-intro.png)   
-
-::: moniker-end   
+   
  

@@ -555,9 +555,7 @@ For more information about field attributes, see [Work item fields and attribute
    :::column-end:::
    :::column span="2":::
       The reason why the work item is in the current state. Each transition from one workflow state to another is associated with a corresponding reason.  
-      ::: moniker range="< azure-devops-2019"
-      For On-premises XML process models, the reason values are defined within the `WORKFLOW` section of the work item type definition using the `REASON` element. To modify the defined reasons, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
-      ::: moniker-end 
+       
       Reference name=`System.Reason`  
       Data type=String
    :::column-end:::
@@ -661,9 +659,7 @@ For more information about field attributes, see [Work item fields and attribute
       - For Inherited process model: see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md) 
       - For On-premises XML process models: see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
       ::: moniker-end 
-      ::: moniker range="< azure-devops-2019"
-      To modify the workflow states, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
-      ::: moniker-end  
+        
       Reference name=`System.State`  
       Data type=String
    :::column-end:::

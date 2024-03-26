@@ -23,9 +23,7 @@ For example, find work items that were modified in the last three days with the 
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/example-work-item-queries/query-changed-date-last-3-days.png" alt-text="Screenshot of Query Editor, Changed Date >= 3.":::
 ::: moniker-end
-::: moniker range="tfs-2018"
-![Screenshot of query editor, filter based on recent changes.](media/query-by-date-example.png)  
-::: moniker-end
+
 ::: moniker range=">= azure-devops-2019"
 Also, you can use  the `CurrentIteration +/- _n_` macro to create queries based on a sliding window of team iterations. 
 ::: moniker-end
@@ -69,28 +67,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range="tfs-2018"
-:::row:::
-   :::column span="1":::
-      **DateTime**   
-   :::column-end::: 
-   :::column span="3":::
-      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`  
-      **Macros**: **@Today** which you can specify with +/- _n_ integer.
-   :::column-end:::
-:::row-end:::
- ---
-:::row:::
-   :::column span="1":::
-      **TreePath**
-   :::column-end::: 
-   :::column span="3":::
-     `=`, `<>` , `Under`, `Not Under` 
-      **Macros**: `@CurrentIteration`<sup>2</sup> is valid with the **Iteration Path** field
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
+
 
 #### Notes:
 1. The  `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, `@StartOfYear`  macros are supported for Azure DevOps Server 2019.1 and later versions, and only when run from the web portal.
@@ -285,14 +262,7 @@ To change the team parameter the system automatically sets, you choose it by ent
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Before creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing Query filter using the CurrentIteration macro.](media/query-date-iteration/at-current-no-team-specified.png)  
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 

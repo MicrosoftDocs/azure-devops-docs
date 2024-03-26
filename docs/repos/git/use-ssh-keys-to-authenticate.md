@@ -168,70 +168,7 @@ Associate the public key generated in the previous step with your user ID.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-### Step 2: Add the public key to Azure DevOps
-
-Associate the public key generated in the previous step with your user ID.
-
->[!NOTE]
-> You have to repeat this operation for each organisation you have access to and want to use SSH for.
-
-1. Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
-   user interface. Select **Security** in the menu that appears.
-
-   ![Screenshot showing User Profile access in Azure DevOps.](media/use-ssh-authentication/ssh_profile_access.png)
-
-2. Select **+ New Key**.
-
-   ![Screenshot showing Security Configuration in Azure DevOps.](media/use-ssh-authentication/ssh_accessing_security_key.png)
-
-3. Copy the contents of the public key (for example, `id_rsa.pub`) that you generated into the **Public Key Data** field.
-
-   >[!NOTE]
-   > You can use the command `$ cat ~/.ssh/id_rsa.pub` to print the contents of the id_rsa.pub file in the terminal, then copy this to your clipboard.
-   > If your SSH public key file has a different name than the example code, modify the filename to match your current setup. When you copy your key, don't add any new lines or whitespace.
-   > Alternatively, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.
-
-    ![Screenshot showing configuration of a Public Key in Azure DevOps.](media/use-ssh-authentication/ssh_key_input.png)
-
-   >[!IMPORTANT]
-   > Don't add whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps to use an invalid public key. When you paste in the key, a new line often gets added at the end. Be sure to remove this new line if it occurs.
-
-4. Give the key a useful description (this description is displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you can't change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
-
-5. On the overview page a note is displayed at the top containing the server fingerprints. Make note of them because they will be required when you first connect to Azure DevOps with SSH.
-
-   ![Screenshot showing where to locate server fingerprints in Azure DevOps Services.](media/use-ssh-authentication/ssh_accessing_security_key.png)
-
-6. Test the connection by running the following command:
-
-   ```powershell
-   ssh -T git@ssh.dev.azure.com
-   ```
-
-   If this was the first time connecting you should receive the following output:
-
-   ```Output
-   The authenticity of host 'ssh.dev.azure.com (<IP>)' can't be established.
-   RSA key fingerprint is SHA256:ohD8VZEXGWo6Ez8GSEJQ9WpafgLFsOfLOtGGQCQo6Og.
-   This key is not known by any other names
-   Are you sure you want to continue connecting (yes/no/[fingerprint])?
-   ```
-
-   Compare the given fingerprint with the fingerprints offered on the aforementioned settings page. Proceed only if they match!
-
-   If everything is configured correctly the output should look like this:
-
-   ```Output
-   remote: Shell access is not supported.
-   ```
-
-   If not, see the section on [Questions and troubleshooting](use-ssh-keys-to-authenticate.md#questions-and-troubleshooting).
-
-<a name="copy-url"></a>
-
-::: moniker-end
 
 ### Step 3: Clone the Git repository with SSH
 

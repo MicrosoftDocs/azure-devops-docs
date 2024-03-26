@@ -169,19 +169,7 @@ For the Inherited process model, you can view and delete fields from the web por
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker range="< azure-devops-2019"
-:::row:::
-   :::column span="2":::
-   `indexfield`: Turn field indexing on/off  
-   :::column-end:::
-   :::column span="1":::
-       
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 :::row:::
    :::column span="2":::
    `changefield`: Change a field attribute 
@@ -290,19 +278,7 @@ Use different link types to manage the various relationships between work items.
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker range="< azure-devops-2019"
-:::row:::
-   :::column span="2":::  
-   `importlinktype`:  Import a link type file
-   :::column-end:::
-   :::column span="1":::
-       
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 :::row:::
    :::column span="2":::  
    `listlinktypes`:  List the defined link types
@@ -480,14 +456,7 @@ For the Inherited process model, you can customize backlogs from the web portal.
 :::row-end:::
 ---
 
-::: moniker range="< azure-devops-2019"
 
-## [Work items](/previous-versions/azure/devops/reference/witadmin/remove-work-items-permanently) 
-
-The following **witadmin** command is only available for TFS 2018.1 and earlier versions. It is deprecated for TFS 2018.2 and later versions. For more information about how to permanently delete work items for later versions, see [Remove, delete, or restore work items](../../boards/backlogs/remove-delete-work-items.md).
-
-- `destroywi`: Permanently delete work items    
-::: moniker-end
 
 ::: moniker range="< azure-devops"
 
@@ -530,7 +499,4 @@ To customize the resolution types, bug work item type, and failure types used wh
  
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-- [Customize your work tracking experience](../customize-work.md)   
-- [On-premises XML process model](../on-premises-xml-process-model.md)  
-::: moniker-end
+

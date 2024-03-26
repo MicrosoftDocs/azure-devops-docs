@@ -176,7 +176,7 @@ Use the [npm](/azure/devops/pipelines/tasks/reference/npm-v1) or [npm authentica
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range="<=azure-devops"
 
 If your builds occasionally fail because of connection issues when you restore packages from the npm registry,
 you can use Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md),

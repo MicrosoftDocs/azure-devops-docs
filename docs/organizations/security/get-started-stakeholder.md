@@ -103,23 +103,7 @@ You can view work items once you connect to a project.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-1. In your project select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
-
-	:::image type="content" source="../../boards/boards/media/quickstart/open-kanban-board.png" alt-text="Screenshot of Open Portfolio Kanban board, features.":::
-
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
-
-	:::image type="content" source="../../boards/boards/media/kanban-quickstart-reduced-screensize.png" alt-text="Screenshot of Open Work when screen size is reduced.":::
-
-2. To select another team, open the project and team selector. Select a different team, or select the **Browse** option.  
-
-   :::image type="content" source="../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-standard.png" alt-text="Screenshot of selection of another team.":::
-
-   Your Kanban board displays.
-
-   :::image type="content" source="../../boards/boards/media/kanban-basics-intro.png" alt-text="Screenshot of Kanban board, Agile template.":::
-::: moniker-end   
+   
 
 ## Add work items 
 
@@ -209,11 +193,7 @@ From the Kanban board, select **View as backlog**.
 :::image type="content" source="../../boards/media/switch-to-backlog-2019.png" alt-text="Screenshot of link to view Backlog, on-premises version.":::
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-From the Kanban board, select **Backlog**.  
 
-:::image type="content" source="../../boards/media/switch-to-backlog-2015.png" alt-text="Screenshot of link to view Backlog.":::
-::: moniker-end
 
 The list of backlog items displays in priority order. You can add a backlog item, which goes to the bottom of the list. With Stakeholder access, you can't reprioritize work. 
 
@@ -233,21 +213,7 @@ For more information, see the following articles:
 
 ::: moniker-end    
 
-::: moniker range="tfs-2018"
 
-1. Select **Work** > **Queries** > **Assigned to me**. A list of work items assigned to you displays.  
-	
-   :::image type="content" source="media/work-as-a-stakeholder-query.png" alt-text="Screenshot of the queries page, items assigned to you.":::
-
-   Or, open any of the queries defined in the Shared Queries folder.  
-	
-   :::image type="content" source="media/work-as-a-stakeholder-open-shared-query.png" alt-text="Screenshot showing running a shared query.":::
-
-2. [Create new queries or edit existing queries](../../boards/queries/using-queries.md) and save them under the My Queries folder.  
-
-   :::image type="content" source="media/work-as-a-stakeholder-edit-query.png" alt-text="Screenshot showing Query Editor.":::
-
-::: moniker-end
 
 ## Next steps
 

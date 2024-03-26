@@ -21,8 +21,4 @@ For most work item types, you can add fields, change the workflow, add custom ru
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-For most work item types, you can add fields, change the workflow, add custom rules, and add custom pages to the work item form. You can also add custom work item types. For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
-
-::: moniker-end

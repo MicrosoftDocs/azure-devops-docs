@@ -29,11 +29,7 @@ You can filter most items using keywords or a user name for an author of an item
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-- Git repositories: Branches, Commits, Commit history, Pull Requests, Pushes, and Repositories  
-- Work tracking: Work Items, Kanban boards, Backlogs, Sprint Backlogs, and Taskboards 
 
-::: moniker-end
 
 
 > [!NOTE]   

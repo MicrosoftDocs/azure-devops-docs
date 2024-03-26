@@ -23,10 +23,7 @@ To support your team or contributors to your project, use [Markdown](https://en.
 
 Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a new Git repository stores your Markdown files, images, attachments, and sequence of pages. This wiki supports collaborative editing of its content and structure.
 
-::: moniker range="tfs-2018"
-> [!NOTE]  
-> The built-in wiki is available with TFS 2018 and later versions. To download Azure DevOps Server, see  [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
-::: moniker-end
+
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -60,25 +57,7 @@ The following features are supported for the team project wiki.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-The following features are supported for a team project wiki. For more information, see [Create a wiki for your team project](wiki-create-repo.md) and [Add and edit wiki pages](add-edit-wiki.md).
-
-> [!div class="mx-tdBreakAll"]
-> |Feature | TFS version |  
-> |--------|--------------|  
-> |[Markdown format](markdown-guidance.md) | TFS 2018 |
-> |[HTML tags](markdown-guidance.md#html) | TFS 2018 |
-> |[Insert and resize images](markdown-guidance.md#images) | TFS 2018 |
-> |[Link to work items using #](markdown-guidance.md#link-work-items) | TFS 2018 |  
-> |[Attach files](markdown-guidance.md#attach) | TFS 2018 |  
-> |[Filter wiki TOC](filter-print-wiki.md) | TFS 2018 |  
-> |[Mathematical notation and characters](markdown-guidance.md#math-notation) |TFS 2018.2 |
-> |[Preview a wiki page while editing](add-edit-wiki.md) | TFS 2018.2 |
-> |[Print a wiki page](filter-print-wiki.md) <sup>1</sup> | TFS 2018.2 |
-> |[Wiki keyboard shortcuts](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts) | TFS 2018.2 |
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -111,15 +90,7 @@ Markdown makes it easy to format text and include images. You can also link to d
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-  
-- [Add and edit wiki pages](add-edit-wiki.md)
-- [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md) 
-- [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull requests](../../repos/git/pull-requests.md)
 
-::: moniker-end
 
 For supported syntax, see [Use Markdown in Azure DevOps](markdown-guidance.md).
 

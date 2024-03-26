@@ -107,7 +107,7 @@ Follow these steps to run tests for web applications.
    You can also [Create or add to a bug](#create-or-add-to-a-bug).
 
 ::: moniker-end
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 1. If you haven't already, [create your manual tests](create-test-cases.md#test-cases).
 
 1. Select a test from a test suite and run it.
@@ -176,7 +176,7 @@ Instead of creating a bug, you can update an existing bug with information about
 ![Screenshot shows Test Runner with Add to existing bug selected](media/run-manual-tests/find-existing-bug.png)
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 1. In the Test Runner window, select **Create bug**.
 
    ![Submit a bug.](media/run-manual-tests/RunTest_4.png)
@@ -209,7 +209,7 @@ After you complete testing, save your results, close the session, and review tes
    ::: moniker range=">=azure-devops-2020"
    ![Screenshot shows the result of running test cases, with outcomes of Active, Failed, and Passed displayed.](media/run-manual-tests/test-case-outcome.png)
    ::: moniker-end
-   ::: moniker range="<=azure-devops-2019"
+   ::: moniker range="=azure-devops-2019"
    ![Screenshot shows View test results.](media/run-manual-tests/RunTest_8.png)
    ::: moniker-end
 
@@ -222,7 +222,7 @@ After you complete testing, save your results, close the session, and review tes
    ::: moniker range=">=azure-devops-2020"
    ![Screenshot shows the Related Work section of a work item to view bugs filed for that test.](media/run-manual-tests/related-work-shows-bugs.png)  
    ::: moniker-end
-   ::: moniker range="<=azure-devops-2019"
+   ::: moniker range="=azure-devops-2019"
    ![View bugs filed](media/run-manual-tests/view-bugs.png)
    ::: moniker-end  
 
@@ -256,7 +256,7 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 If you want to collect more diagnostic data for your desktop application, run your tests using Test Runner client:
 
@@ -284,7 +284,7 @@ Select a test suite and select **Run for web application** or **Run for desktop 
 
 ![Screenshot shows how to select and run all active tests in a test suite.](media/run-manual-tests/run-test-test-suite.png)
 ::: moniker-end
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 Select a test suite and select **Run** to run all the active tests.
 
 ![Screenshot shows how to run all active tests in a test suite.](media/run-manual-tests/RunTestsRunSuite.png) 
@@ -303,7 +303,7 @@ Choose a build to run tests against.
 
    ![Screenshot shows the Run with options dialog box with a build selected.](media/run-manual-tests/run-test-select-build.png)
 ::: moniker-end
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 1. Choose **Run** and then select **Run with options**.
 
    ![Screenshot shows Run selected and Run with options available.](media/shared/collect-diagnostic-data-16.png)
@@ -336,7 +336,7 @@ Select the **Edit test step** icon.
 ::: moniker range=">=azure-devops-2020"
 ![Screenshot shows how to select the edit icon to edit test steps.](media/run-manual-tests/edit-icon-test-run.png)
 ::: moniker-end
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 ![Screenshot shows how to select the edit icon to modify test steps.](media/run-manual-tests/RunTest_11.png)
 ::: moniker-end
 
@@ -346,7 +346,7 @@ You can also edit the text itself.
 ::: moniker range=">=azure-devops-2020"
 ![Screenshot shows the tool to edit test steps when you run a test.](media/run-manual-tests/edit-test-step.png)
 ::: moniker-end
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 ![Screenshot shows the tool to modify test steps when you run a test.](media/run-manual-tests/RunTest_9.png)
 ::: moniker-end
 
@@ -364,7 +364,7 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 ::: moniker range=">=azure-devops-2020"
 ![Screenshot shows the button for capturing a screenshot during a test.](media/run-manual-tests/test-capture-screen.png)
 ::: moniker-end
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 ![Screenshot shows the button for capturing a screenshot.](media/shared/collect-diagnostic-data-01.png)
 ::: moniker-end
 
@@ -380,7 +380,7 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 ::: moniker range=">=azure-devops-2020"
 ![Screenshot shows the button for capturing an image action log from the app.](media/run-manual-tests/test-capture-action.png)
 ::: moniker-end
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 ![Screenshot shows the button to capture an image action log from the app.](media/shared/collect-diagnostic-data-06.png)
 ::: moniker-end
 
@@ -396,7 +396,7 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 ::: moniker range=">=azure-devops-2020"
 ![Screenshot show the button for capturing a screen recording from the app.](media/run-manual-tests/test-capture-screen-recording.png)
 ::: moniker-end
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 ![Screenshot show the button to capture a screen recording from the app.](media/shared/collect-diagnostic-data-11.png)
 ::: moniker-end
 

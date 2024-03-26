@@ -25,13 +25,7 @@ View your repo's branches by selecting **Repos**, **Branches** while viewing you
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-View your repo's branches by selecting **Branches** while viewing your repo on the web.
-
-![Access the branches view from your Git repo in Team Explorer](media/branches/branches_nav.png)
-
-::: moniker-end
 
 ## Organize your branches
 

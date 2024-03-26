@@ -1,0 +1,5067 @@
+{
+  "redirections": [
+    {
+      "source_path": "docs/boards/backlogs/office/bulk-add-modify-work-items-excel.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/faqs.yml",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/faqs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-excel-data-validation-errors.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/resolve-excel-data-validation-errors",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/tfs-office-integration-issues.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/tfs-office-integration-issues",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/track-work.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/track-work",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/add-link.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/add-link",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/add-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/add-work-items",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/automate-work-item-state-transitions.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/automate-work-item-state-transitions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/backlogs-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/backlogs-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/bulk-modify-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/bulk-modify-work-items",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/connect-work-items-to-git-dev-ops.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/connect-work-items-to-git-dev-ops",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/copy-clone-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/copy-clone-work-items",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/create-your-backlog.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/create-your-backlog",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/define-features-epics.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/define-features-epics",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/delete-test-artifacts.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/delete-test-artifacts",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/filter-backlogs-boards-plans.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/manage-bugs.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/manage-bugs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/manage-issues-impediments.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/manage-issues-impediments",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/organize-backlog.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/organize-backlog",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/remove-delete-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/remove-delete-work-items",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/resolve-backlog-reorder-issues.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/resolve-backlog-reorder-issues",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/set-column-options.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/set-column-options",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/set-up-your-backlog.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/set-up-your-backlog",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/work-item-template.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/work-item-template",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/add-columns.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/add-columns",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/add-run-update-tests.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/add-run-update-tests",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/add-task-checklists.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/add-task-checklists",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/customize-cards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/customize-cards",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/expedite-work.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/expedite-work",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-epics-features-stories.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/kanban-epics-features-stories",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/kanban-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-quickstart.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/kanban-quickstart",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/wip-limits.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/wip-limits",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/extensions/migrate-integrate.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/extensions/migrate-integrate",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/get-started/permissions-access-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/get-started/permissions-access-boards",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/get-started/plan-track-work.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/get-started/plan-track-work",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/get-started/what-is-azure-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/get-started/what-is-azure-boards",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/agile-culture.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/agile-culture",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/configure-hierarchical-teams.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/configure-hierarchical-teams",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/index.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/portfolio-management.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/portfolio-management",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/practices-that-scale.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/practices-that-scale",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/safe-concepts.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/safe-concepts",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/safe-configure-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/safe-configure-boards",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/safe-customize.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/safe-customize",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/safe-plan-track-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/safe-plan-track-boards",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/safe-review-roadmaps-progress.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/safe-review-roadmaps-progress",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/scaled-agile-framework.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/scaled-agile-framework",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/visibility-across-teams.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/visibility-across-teams",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/about-managed-queries.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/about-managed-queries",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/add-tags-to-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/add-tags-to-work-items",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/build-test-integration.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/build-test-integration",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/example-query-charts.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/example-query-charts",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/history-and-auditing.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/history-and-auditing",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/link-type-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/link-type-reference",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/linking-attachments.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/linking-attachments",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/organize-queries.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/organize-queries",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/planning-ranking-priorities.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/planning-ranking-priorities",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-by-area-iteration-path.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-by-area-iteration-path",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-by-date-or-current-iteration.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-by-date-or-current-iteration",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-by-workflow-changes.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-by-workflow-changes",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-field-value.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-field-value",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-index-quick-ref.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-index-quick-ref",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-numeric.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-numeric",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-operators-variables.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-operators-variables",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/search-box-queries.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/search-box-queries",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/set-query-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/set-query-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/titles-ids-descriptions.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/titles-ids-descriptions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/using-queries.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/using-queries",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/view-run-query.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/view-run-query",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/wiql-syntax.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/wiql-syntax",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-faqs.yml",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-faqs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/add-tasks.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/add-tasks",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/adjust-work.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/adjust-work",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/assign-work-sprint.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/assign-work-sprint",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/best-practices-scrum.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/best-practices-scrum",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/customize-taskboard.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/customize-taskboard",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/define-sprints.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/define-sprints",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/end-sprint-activities.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/end-sprint-activities",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/forecast.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/forecast",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/scrum-key-concepts.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/scrum-key-concepts",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/scrum-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/scrum-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/set-capacity.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/set-capacity",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/share-plan.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/share-plan",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/task-board.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/task-board",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/about-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/about-work-items",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/agile-glossary.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/agile-glossary",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/auto-complete-work-items-pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/auto-complete-work-items-pull-requests",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/email-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/email-work-items",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/follow-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/follow-work-items",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/move-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/move-work-items",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/quick-ref.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/quick-ref",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/work-item-fields.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/work-item-fields",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/work-item-template-examples.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/work-item-template-examples",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/workflow-and-state-categories.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/workflow-and-state-categories",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/agile-process-workflow.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/agile-process-workflow",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/agile-process.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/agile-process",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/choose-process.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/choose-process",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi-process-workflow.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi-process-workflow",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi-process.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi-process",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/guidance-code-review-feedback-field-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/guidance-code-review-feedback-field-reference",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/manage-process-templates.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/manage-process-templates",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/scrum-process-workflow.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/scrum-process-workflow",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/scrum-process.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/scrum-process",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/work-item-field.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/work-item-field",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-background-to-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/best-practices-agile-project-management.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/best-practices-agile-project-management",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/configure-customize.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/configure-customize",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/faqs.yml",
+      "redirect_url": "/previous-versions/azure/devops/boards/faqs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/boards/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/boards/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/artifacts-key-concepts.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/artifacts-key-concepts",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/collaborate-with-packages.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/collaborate-with-packages",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/get-started-maven.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/get-started-maven",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/get-started-npm.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/get-started-npm",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/get-started-nuget.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/get-started-nuget",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/package-badges.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/package-badges",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/start-using-azure-artifacts.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/concepts/best-practices.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/concepts/best-practices",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/concepts/feeds.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/concepts/feeds",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/concepts/package-graph.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/concepts/package-graph",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/concepts/symbols.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/concepts/symbols",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/concepts/upstream-sources.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/concepts/upstream-sources",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/concepts/views.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/concepts/views",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/feeds/feed-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/feeds/feed-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/feeds/project-scoped-feeds.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/feeds/project-scoped-feeds",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/feeds/views.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/feeds/views",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/how-to/delete-and-recover-packages.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/how-to/delete-and-recover-packages",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/how-to/follow-package-notifications.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/how-to/follow-package-notifications",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/how-to/public-feeds-upstream-sources.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/how-to/public-feeds-upstream-sources",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/how-to/set-up-upstream-sources.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/how-to/set-up-upstream-sources",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/maven/google-maven.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/maven/google-maven",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/maven/gradle-plugins.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/maven/gradle-plugins",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/maven/install.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/maven/install",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/maven/jitpack-upstream.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/maven/jitpack-upstream",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/maven/pom-and-settings.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/maven/pom-and-settings",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/maven/publish-with-gradle.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/maven/publish-with-gradle",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/maven/upstream-sources.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/maven/upstream-sources",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/npm/npmrc.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/npm/npmrc",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/npm/publish.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/npm/publish",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/npm/scopes.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/npm/scopes",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/npm/upstream-sources.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/npm/upstream-sources",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/nuget/consume.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/nuget/consume",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/nuget/dotnet-exe.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/nuget/dotnet-exe",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/nuget/dotnet-setup.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/nuget/dotnet-setup",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/nuget/move-from-fileshares.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/nuget/move-from-fileshares",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/nuget/nuget-exe.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/nuget/nuget-exe",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/nuget/publish-to-nuget-org.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/nuget/publish-to-nuget-org",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/nuget/publish.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/nuget/publish",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/nuget/upstream-sources.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/nuget/upstream-sources",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/reference/limits.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/reference/limits",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/symbols/debug-with-symbols-visual-studio.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/symbols/debug-with-symbols-windbg.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/symbols/debug-with-symbols-windbg",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/artifacts/tutorials/protect-oss-packages-with-upstream-sources.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/tutorials/protect-oss-packages-with-upstream-sources",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/cross-service/cross-service-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/cross-service/cross-service-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/cross-service/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/cross-service/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/cross-service/manage-change.md",
+      "redirect_url": "/previous-versions/azure/devops/cross-service/manage-change",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/cross-service/manage-requirements.md",
+      "redirect_url": "/previous-versions/azure/devops/cross-service/manage-requirements",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/extension-report.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/extension-report",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/add-action.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/add-action",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/add-build-task.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/add-build-task",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/add-hub-group.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/add-hub-group",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/add-query-result-tabs.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/add-query-result-tabs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/add-service-hook.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/add-service-hook",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/add-workitem-extension.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/add-workitem-extension",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/auth-schemes.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/auth-schemes",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/auth.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/auth",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/call-rest-api.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/call-rest-api",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/configure-workitemform-extensions.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/configure-workitemform-extensions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/contributions-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/contributions-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/custom-control.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/custom-control",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/data-storage.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/data-storage",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/host-navigation.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/host-navigation",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/integrate-build-task.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/integrate-build-task",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/manifest.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/manifest",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/samples-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/samples-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/service-endpoints.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/service-endpoints",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/styles-from-widget-sdk.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/styles-from-widget-sdk",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/using-host-dialog.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/develop/using-host-dialog",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/get-started/node.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/get-started/node",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/publish/command-line.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/publish/command-line",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/publish/integration.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/publish/integration",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/publish/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/publish/overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/publish/publish-azure.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/publish/publish-azure",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/extend/reference/targets/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/extend/reference/targets/overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/get-started/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/get-started/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/index.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/concepts/dotnet-client-libraries.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/concepts/dotnet-client-libraries",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/concepts/rest-api-versioning.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/concepts/rest-api-versioning",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/get-started/auth/tfs-basic-auth.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/get-started/auth/tfs-basic-auth",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/get-started/authentication/authentication-guidance.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/get-started/authentication/authentication-guidance",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/get-started/authentication/iis-basic-auth.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/get-started/authentication/iis-basic-auth",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/get-started/authentication/service-principal-managed-identity.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/get-started/authentication/service-principal-managed-identity",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/get-started/client-libraries/samples.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/get-started/client-libraries/samples",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/get-started/client-libraries/soapSamples.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/get-started/client-libraries/soapSamples",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/get-started/rest/samples.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/get-started/rest/samples",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/how-to/call-rest-api.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/how-to/call-rest-api",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/integrate/quickstarts/create-bug-quickstart.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/quickstarts/create-bug-quickstart",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/marketplace/grant-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/marketplace/grant-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/marketplace/install-extension.md",
+      "redirect_url": "/previous-versions/azure/devops/marketplace/install-extension",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/marketplace/request-extensions.md",
+      "redirect_url": "/previous-versions/azure/devops/marketplace/request-extensions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/marketplace-extensibility/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/marketplace-extensibility/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/migrate/faqs.yml",
+      "redirect_url": "/previous-versions/azure/devops/migrate/faqs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/migrate/migrate-from-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/migrate-from-tfs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/migrate/migration-import-large-collections.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/migration-import-large-collections",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/migrate/migration-import.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/migration-import",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/migrate/migration-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/migration-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/migrate/migration-post-import.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/migration-post-import",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/migrate/migration-processtemplates.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/migration-processtemplates",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/migrate/migration-restricting-access-to-azure-devops-services.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/migration-restricting-access-to-azure-devops-services",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/migrate/migration-troubleshooting.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/migration-troubleshooting",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/migrate/phase-rollout-with-rings.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/phase-rollout-with-rings",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/organizations/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/work/faqs.yml",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/work/faqs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/accounts/faq-configure-customize-organization.yml",
+      "redirect_url": "/previous-versions/azure/devops/organizations/accounts/faq-configure-customize-organization",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/accounts/faq-user-and-permissions-management.yml",
+      "redirect_url": "/previous-versions/azure/devops/organizations/accounts/faq-user-and-permissions-management",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/billing/billing-faq.yml",
+      "redirect_url": "/previous-versions/azure/devops/organizations/billing/billing-faq",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/faq-notifications.yml",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/faq-notifications",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/accounts/admin-revoke-user-pats.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/accounts/admin-revoke-user-pats",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/accounts/create-organization.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/accounts/create-organization",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/accounts/use-personal-access-tokens-to-authenticate.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/billing/buy-access-tfs-test-hub.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/billing/buy-access-tfs-test-hub",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/billing/buy-basic-access-add-users.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/billing/buy-basic-access-add-users",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/billing/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/billing/overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/about-notifications.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/about-notifications",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/at-mentions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/at-mentions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/change-email-address.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/change-email-address",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/concepts-email-recipients.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/concepts-email-recipients",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/exclude-self-from-email.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/exclude-self-from-email",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/integrate-third-party-services.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/integrate-third-party-services",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/manage-team-group-global-organization-notifications.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/manage-your-personal-notifications.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/manage-your-personal-notifications",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/navigating-the-ui.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/navigating-the-ui",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/oob-built-in-notifications.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/oob-built-in-notifications",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/oob-supported-event-types.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/oob-supported-event-types",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-contact-support.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-contact-support",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-delayed-email.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-delayed-email",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-not-getting-email.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-unexpected-email.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-unexpected-email",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/unsubscribe-default-notification.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/unsubscribe-default-notification",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/use-subscription-logging.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/use-subscription-logging",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/view-organization-notification-statistics.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/view-organization-notification-statistics",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/about-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/about-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/about-security-identity.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/about-security-identity",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/about-security-roles.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/about-security-roles",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/access-levels.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/access-levels",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/add-ad-aad-built-in-security-groups.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/add-ad-aad-built-in-security-groups",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/add-remove-manage-user-group-security-group.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/add-remove-manage-user-group-security-group",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/add-users-team-project.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/add-users-team-project",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/allow-list-ip-url.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/allow-list-ip-url",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/change-access-levels.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/change-access-levels",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/change-organization-collection-level-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/change-organization-collection-level-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/change-project-level-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/change-project-level-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/default-git-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/default-git-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/default-tfvc-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/default-tfvc-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/export-users-audit-log.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/export-users-audit-log",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/get-started-stakeholder.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/get-started-stakeholder",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/look-up-project-administrators.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/look-up-project-administrators",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/look-up-project-collection-administrators.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/look-up-project-collection-administrators",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/namespace-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/namespace-reference",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/permissions-access.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/permissions-access",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/permissions-lookup-guide.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/permissions-lookup-guide",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/quick-reference-index-security.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/quick-reference-index-security",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/remove-users-prohibit-access.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/remove-users-prohibit-access",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/request-changes-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/request-changes-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/restrict-access.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/restrict-access",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/security-best-practices.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/security-best-practices",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/security-glossary.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/security-glossary",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/security-tools-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/security-tools-reference",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/set-object-level-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/set-object-level-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/set-permissions-access-test.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/set-permissions-access-test",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/set-permissions-access-work-tracking.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/set-permissions-access-work-tracking",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/troubleshoot-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/troubleshoot-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/view-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/view-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/about-areas-iterations.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/about-areas-iterations",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/about-settings.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/about-settings",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/about-teams-and-settings.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/about-teams-and-settings",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/add-team-administrator.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/add-team-administrator",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/add-teams.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/add-teams",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/naming-restrictions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/naming-restrictions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/rename-remove-team.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/rename-remove-team",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/select-backlog-navigation-levels.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/select-backlog-navigation-levels",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/set-area-paths.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/set-area-paths",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/set-iteration-paths-sprints.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/set-iteration-paths-sprints",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/set-your-preferences.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/set-your-preferences",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/show-bugs-on-backlog.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/show-bugs-on-backlog",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/timezone-settings-usage.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/timezone-settings-usage",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/work/object-limits.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/work/object-limits",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/work/rule-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/work/rule-reference",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/work/rule-samples.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/work/rule-samples",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/create-first-pipeline.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/create-first-pipeline",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/overview-azure.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/overview-azure",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/agent-authentication-options.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/agent-authentication-options",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/agents.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/agents",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/certificate.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/certificate",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/hosted.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/hosted",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/linux-agent.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/linux-agent",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/osx-agent.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/osx-agent",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/personal-access-token-agent-registration.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/personal-access-token-agent-registration",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/pools-queues.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/pools-queues",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/proxy.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/proxy",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/v2-linux-agent.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/v2-linux-agent",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/v2-osx-agent.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/v2-osx-agent",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/v2-windows-agent.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/v2-windows-agent",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/agents/windows-agent.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/windows-agent",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/apps/aspnet/build-aspnet-4.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/aspnet/build-aspnet-4",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/deploy-docker-webapp.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/deploy-docker-webapp",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/apps/mobile/app-signing.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/mobile/app-signing",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/architectures/devops-pipelines-azure-web-apps-architecture.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/architectures/devops-pipelines-azure-web-apps-architecture",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/architectures/devops-pipelines-baseline-architecture.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/architectures/devops-pipelines-devtest-iaas-architecture.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/architectures/devops-pipelines-devtest-iaas-architecture",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/architectures/devops-pipelines-iaas-vms-architecture.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/architectures/devops-pipelines-iaas-vms-architecture",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/artifacts/artifacts-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/artifacts/artifacts-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/artifacts/build-artifacts.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/artifacts/build-artifacts",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/artifacts/npm.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/artifacts/npm",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/artifacts/nuget.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/artifacts/nuget",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/artifacts/publish-maven-artifacts.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/artifacts/publish-maven-artifacts",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/artifacts/publish-public-registry.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/artifacts/publish-public-registry",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/artifacts/pull-package-gradle.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/artifacts/pull-package-gradle",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/artifacts/symbols.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/artifacts/symbols",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/build/ci-build-git.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/build/ci-build-git",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/build/history.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/build/history",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/build/options.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/build/options",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/build/triggers.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/build/triggers",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/build/variables.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/build/variables",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/ecosystems/customize-javascript.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/ecosystems/customize-javascript",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/ecosystems/customize-python.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/ecosystems/customize-python",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/ecosystems/ecosystems.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/ecosystems/ecosystems",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/ecosystems/javascript.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/ecosystems/javascript",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/ecosystems/nodejs-tutorial.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/ecosystems/nodejs-tutorial",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/ecosystems/xcode.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/ecosystems/xcode",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/get-started/clone-import-pipeline.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/get-started/clone-import-pipeline",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/get-started/pipelines-get-started.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/get-started/pipelines-get-started",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/get-started/what-is-azure-pipelines.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/get-started/what-is-azure-pipelines",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/integrations/configure-pipelines-work-tracking.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/integrations/configure-pipelines-work-tracking",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/library/add-resource-protection.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/library/add-resource-protection",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/library/connect-to-azure.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/library/connect-to-azure",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/library/index.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/library/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/library/secure-files.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/library/secure-files",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/library/service-endpoints.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/library/service-endpoints",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/library/task-groups.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/library/task-groups",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/library/variable-groups.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/library/variable-groups",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/licensing/concurrent-jobs.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/licensing/concurrent-jobs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/packages/nuget-restore.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/packages/nuget-restore",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/policies/permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/policies/permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/policies/retention.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/policies/retention",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/policies/set-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/policies/set-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/access-tokens.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/access-tokens",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/conditions.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/conditions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/create-multistage-pipeline.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/create-multistage-pipeline",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/deployment-group-phases.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/deployment-group-phases",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/parameters.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/parameters",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/phases.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/phases",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/run-number.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/run-number",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/scheduled-triggers.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/scheduled-triggers",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/set-variables-scripts.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/set-variables-scripts",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/stages.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/stages",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/tasks.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/tasks",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/process/variables.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/process/variables",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/artifacts.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/artifacts",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/azure-rm-endpoint.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/azure-rm-endpoint",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/define-multistage-release-process.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/define-multistage-release-process",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/deploy-using-approvals.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/deploy-using-approvals",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/deploy-webdeploy-iis-deploygroups.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/deploy-webdeploy-iis-deploygroups",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/env-templates.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/env-templates",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/index.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/releases.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/releases",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/triggers.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/triggers",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/variables.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/variables",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/approvals/approvals.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/approvals/approvals",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/approvals/gates.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/approvals/gates",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/approvals/index.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/approvals/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/approvals/servicenow.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/approvals/servicenow",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/deployment-groups/deploying-azure-vms-deployment-groups.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/deployment-groups/deploying-azure-vms-deployment-groups",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/deployment-groups/howto-provision-deployment-group-agents.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/release/deployment-groups/index.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/deployment-groups/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/repos/azure-repos-git.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/repos/azure-repos-git",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/repos/index.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/repos/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/repos/pipeline-options-for-git.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/repos/pipeline-options-for-git",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/repos/tfvc.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/repos/tfvc",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/scripts/cross-platform-scripting.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/scripts/cross-platform-scripting",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/scripts/git-commands.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/scripts/git-commands",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/scripts/logging-commands.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/scripts/logging-commands",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/scripts/powershell.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/scripts/powershell",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/targets/azure-sqldb.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/targets/azure-sqldb",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/targets/create-virtual-network.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/targets/create-virtual-network",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/tasks/file-matching-patterns.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/tasks/file-matching-patterns",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/tasks/transforms-variable-substitution.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/tasks/transforms-variable-substitution",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/test/continuous-test-selenium.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/test/continuous-test-selenium",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/test/parallel-testing-vstest.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/test/parallel-testing-vstest",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/test/requirements-traceability.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/test/requirements-traceability",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/test/review-code-coverage-results.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/test/review-code-coverage-results",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/test/review-continuous-test-results-after-build.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/test/review-continuous-test-results-after-build",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/test/test-glossary.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/test/test-glossary",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/test/test-impact-analysis.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/test/test-impact-analysis",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/test/ui-testing-considerations.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/test/ui-testing-considerations",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/troubleshooting/review-logs.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/troubleshooting/review-logs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/troubleshooting/troubleshoot-start.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/troubleshooting/troubleshoot-start",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/troubleshooting/troubleshoot-triggers.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/troubleshooting/troubleshoot-triggers",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/troubleshooting/troubleshooting.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/troubleshooting/troubleshooting",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/project/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/work-across-projects-faqs.yml",
+      "redirect_url": "/previous-versions/azure/devops/project/work-across-projects-faqs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/feedback/index.md",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/navigation/add-artifact-team.md",
+      "redirect_url": "/previous-versions/azure/devops/project/navigation/add-artifact-team",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/navigation/filter-basics.md",
+      "redirect_url": "/previous-versions/azure/devops/project/navigation/filter-basics",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/navigation/glossary.md",
+      "redirect_url": "/previous-versions/azure/devops/project/navigation/glossary",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/navigation/go-to-project-repo.md",
+      "redirect_url": "/previous-versions/azure/devops/project/navigation/go-to-project-repo",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/navigation/go-to-service-page.md",
+      "redirect_url": "/previous-versions/azure/devops/project/navigation/go-to-service-page",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/navigation/index.md",
+      "redirect_url": "/previous-versions/azure/devops/project/navigation/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/navigation/keyboard-shortcuts.md",
+      "redirect_url": "/previous-versions/azure/devops/project/navigation/keyboard-shortcuts",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/navigation/mobile-work.md",
+      "redirect_url": "/previous-versions/azure/devops/project/navigation/mobile-work",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/navigation/set-favorites.md",
+      "redirect_url": "/previous-versions/azure/devops/project/navigation/set-favorites",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/navigation/work-across-projects.md",
+      "redirect_url": "/previous-versions/azure/devops/project/navigation/work-across-projects",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/search/functional-code-search.md",
+      "redirect_url": "/previous-versions/azure/devops/project/search/functional-code-search",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/search/functional-work-item-search.md",
+      "redirect_url": "/previous-versions/azure/devops/project/search/functional-work-item-search",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/search/get-started-search.md",
+      "redirect_url": "/previous-versions/azure/devops/project/search/get-started-search",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/search/install-configure-search.md",
+      "redirect_url": "/previous-versions/azure/devops/project/search/install-configure-search",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/search/manage-search.md",
+      "redirect_url": "/previous-versions/azure/devops/project/search/manage-search",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/about-readme-wiki.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/about-readme-wiki",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/add-edit-wiki.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/add-edit-wiki",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/filter-print-wiki.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/filter-print-wiki",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/manage-readme-wiki-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/manage-readme-wiki-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/markdown-guidance.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/markdown-guidance",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/migrate-extension-wiki-pages.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/migrate-extension-wiki-pages",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/provisioned-vs-published-wiki.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/provisioned-vs-published-wiki",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/publish-repo-to-wiki.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/publish-repo-to-wiki",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/restore-deleted-wiki.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/restore-deleted-wiki",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/wiki-create-repo.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/wiki-create-repo",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/wiki-file-structure.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/wiki-file-structure",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/wiki-readme-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/wiki-readme-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/wiki-update-offline.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/wiki-update-offline",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/project/wiki/wiki-view-history.md",
+      "redirect_url": "/previous-versions/azure/devops/project/wiki/wiki-view-history",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/customize-process.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/customize-process",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/index.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/manage-work-item-fields.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-work-item-fields",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/witadmin-import-export-manage-wits.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-manage-wits",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/witadmin-import-export-process-configuration.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-process-configuration",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/change-workflow-wit.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/change-workflow-wit",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/process-configuration-xml-element.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/process-configuration-xml-element",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/provide-help-text-hyperlinks-web-content-form.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/provide-help-text-hyperlinks-web-content-form",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/support-rollup-of-work-and-other-fields.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/support-rollup-of-work-and-other-fields",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/add-modify-field.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/add-modify-field",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/add-modify-wit.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/add-modify-wit",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/add-portfolio-backlogs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/add-portfolio-backlogs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/add-wits-to-backlogs-and-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/add-wits-to-backlogs-and-boards",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/customize-wit-form.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/customize-wit-form",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/customize-work.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/customize-work",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/reference/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/on-premises-xml-process-model.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/on-premises-xml-process-model",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/reference/quick-reference-index-boards-settings.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/quick-reference-index-boards-settings",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/report/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/faqs.yml",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/faqs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/add-charts-to-dashboard.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/add-charts-to-dashboard",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/add-markdown-to-dashboard.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/add-markdown-to-dashboard",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/add-widget-to-dashboard.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/add-widget-to-dashboard",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/charts-dashboard-permissions-access.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/charts-dashboard-permissions-access",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/charts.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/charts",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/configure-chart-work-items-widget.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/configure-chart-work-items-widget",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/cumulative-flow-cycle-lead-time-guidance.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/cumulative-flow-cycle-lead-time-guidance",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/cumulative-flow.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/cumulative-flow",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/dashboard-focus.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/dashboard-focus",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/dashboard-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/dashboard-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/dashboards.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/dashboards",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/quick-ref.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/quick-ref",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/widget-catalog.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/widget-catalog",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/report/powerbi/reporting-roadmap.md",
+      "redirect_url": "/previous-versions/azure/devops/report/powerbi/reporting-roadmap",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/repos/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/howto.yml",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/howto",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/get-started/index.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/get-started/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/get-started/what-is-repos.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/get-started/what-is-repos",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/about-pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/about-pull-requests",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/auth-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/auth-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/branch-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/branch-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/branch-policies-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/branch-policies-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/branch-policies.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/branch-policies",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/case-sensitivity.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/case-sensitivity",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/change-default-branch.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/change-default-branch",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/cherry-pick.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/cherry-pick",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/clone.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/clone",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/command-prompt.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/command-prompt",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/commit-details.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/commit-details",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/commit-history.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/commit-history",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/commits.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/commits",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/complete-pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/complete-pull-requests",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/create-a-readme.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/create-a-readme",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/create-branch.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/create-branch",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/create-new-repo.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/create-new-repo",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/create-pr-status-server-with-azure-functions.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/create-pr-status-server-with-azure-functions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/create-pr-status-server.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/create-pr-status-server",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/create-repo-intellij.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/create-repo-intellij",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/creatingrepo.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/creatingrepo",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/delete-branch.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/delete-branch",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/delete-existing-repo.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/delete-existing-repo",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/delete-git-branch.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/delete-git-branch",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/find-a-file.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/find-a-file",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/forks.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/forks",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/gcm-ssh-passphrase.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/gcm-ssh-passphrase",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/git-branching-guidance.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/git-branching-guidance",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/git-config.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/git-config",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/git-dates.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/git-dates",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/git-index-lock.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/git-index-lock",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/git-log-history-simplification.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/git-log-history-simplification",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/git-names.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/git-names",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/git-tags.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/git-tags",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/gitquickstart.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/gitquickstart",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/gitworkflow.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/gitworkflow",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/history.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/history",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/ignore-files.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/ignore-files",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/import-from-TFVC.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/import-from-TFVC",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/import-git-repository.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/import-git-repository",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/lfs-kerberos.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/lfs-kerberos",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/lock-branches.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/lock-branches",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/manage-large-files.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/manage-large-files",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/manage-your-branches.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/manage-your-branches",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/mapping-my-tfvc-actions-to-git.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/mapping-my-tfvc-actions-to-git",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/merging-with-squash.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/merging-with-squash",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/merging.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/merging",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/move-git-repos-between-team-projects.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/move-git-repos-between-team-projects",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/os-compatibility.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/os-compatibility",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/perform-migration-from-svn-to-git.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/perform-migration-from-svn-to-git",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/pr-status-policy.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/pr-status-policy",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/pull-request-notifications.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/pull-request-notifications",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/pull-request-status.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/pull-request-status",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/pull-requests",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/pulling.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/pulling",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/pushing.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/pushing",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/rebase.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/rebase",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/remove-binaries.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/remove-binaries",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/repo-rename.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/repo-rename",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/repository-settings.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/repository-settings",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/require-branch-folders.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/require-branch-folders",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/restore-deleted-branch.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/restore-deleted-branch",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/review-history.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/review-history",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/review-pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/review-pull-requests",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/rpc-failures-http-postbuffer.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/rpc-failures-http-postbuffer",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/set-git-repository-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/set-git-repository-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/set-up-credential-managers.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/set-up-credential-managers",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/share-your-code-in-git-eclipse.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/share-your-code-in-git-eclipse",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/share-your-code-in-git-vs.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/share-your-code-in-git-vs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/share-your-code-in-git-xcode.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/share-your-code-in-git-xcode",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/team-projects.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/team-projects",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/undo.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/undo",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/use-ssh-keys-to-authenticate.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/use-ssh-keys-to-authenticate",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/view-pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/view-pull-requests",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/add-check-policies.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/add-check-policies",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/add-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/add-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/add-files-server.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/add-files-server",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/associate-file-type-file-comparison-tool.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/associate-file-type-file-comparison-tool",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/associate-file-type-merge-tool.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/associate-file-type-merge-tool",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/branch-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/branch-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/branch-folders-files.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/branch-folders-files",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/branch-strategically.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/branch-strategically",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/branches-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/branches-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/branching-strategies-with-tfvc.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/branching-strategies-with-tfvc",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/changeset-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/changeset-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/check-folder-controlled-by-gated-check-build-process.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/check-folder-controlled-by-gated-check-build-process",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/check-out-edit-files.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/check-out-edit-files",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/check-your-work-team-codebase.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/check-your-work-team-codebase",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/checkin-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/checkin-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/checkout-or-edit-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/checkout-or-edit-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/clean-up-files-when-users-leave.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/clean-up-files-when-users-leave",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/compare-files.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/compare-files",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/compare-folders.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/compare-folders",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/comparison-git-tfvc.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/comparison-git-tfvc",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/configure-check-notes.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/configure-check-notes",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/configure-check-out-settings.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/configure-check-out-settings",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/configure-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/configure-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/control-access-team-foundation-version-control.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/control-access-team-foundation-version-control",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/create-work-workspaces.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/create-work-workspaces",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/day-life-alm-developer-write-new-code-user-story.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/day-life-alm-developer-write-new-code-user-story",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/decide-between-using-local-server-workspace.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/decide-between-using-local-server-workspace",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/delete-command-team-foundation-version-control.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/delete-command-team-foundation-version-control",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/delete-restore-files-folders.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/delete-restore-files-folders",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/destroy-command-team-foundation-version-control.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/destroy-command-team-foundation-version-control",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/destroy-version-controlled-files.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/destroy-version-controlled-files",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/develop-code-manage-pending-changes.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/develop-code-manage-pending-changes",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/develop-your-app-team-foundation-version-control.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/develop-your-app-team-foundation-version-control",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/difference-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/difference-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/dir-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/dir-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/download-get-files-from-server.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/download-get-files-from-server",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/edit-check-policies.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/edit-check-policies",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/effective-feature-isolation-on-tfvc.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/effective-feature-isolation-on-tfvc",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/effective-tfvc-branching-strategies-for-devops.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/effective-tfvc-branching-strategies-for-devops",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/enable-disable-check-policies.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/enable-disable-check-policies",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/find-view-changesets.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/find-view-changesets",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/folder-comparison-filters.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/folder-comparison-filters",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/folderdiff-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/folderdiff-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/get-code-reviewed-vs.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/get-code-reviewed-vs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/get-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/get-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/get-history-item.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/get-history-item",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/git-permission-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/git-permission-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/git-view-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/git-view-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/help-command-team-foundation-version-control.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/help-command-team-foundation-version-control",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/history-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/history-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/label-command-team-foundation-version-control.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/label-command-team-foundation-version-control",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/labels-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/labels-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/localversions-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/localversions-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/lock-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/lock-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/lock-unlock-folders-files.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/lock-unlock-folders-files",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/merge-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/merge-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/merge-folders-files.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/merge-folders-files",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/merges-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/merges-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/msdn-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/msdn-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/optimize-your-workspace.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/optimize-your-workspace",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/permission-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/permission-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/properties-or-info-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/properties-or-info-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/proxy-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/proxy-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/reconcile-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/reconcile-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/reconcile-differences-between-two-folders.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/reconcile-differences-between-two-folders",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/remove-access-version-control-files.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/remove-access-version-control-files",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/remove-check-policies.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/remove-check-policies",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/rename-command-team-foundation-version-control.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/rename-command-team-foundation-version-control",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/rename-move-files-folders.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/rename-move-files-folders",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/resolve-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/resolve-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/resolve-team-foundation-version-control-conflicts.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/resolve-team-foundation-version-control-conflicts",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/roll-back-changesets.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/roll-back-changesets",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/rollback-command-team-foundation-version-control.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/rollback-command-team-foundation-version-control",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/set-enforce-quality-gates.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/set-enforce-quality-gates",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/set-tfvc-repository-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/set-tfvc-repository-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/set-up-team-foundation-version-control-your-dev-machine.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/set-up-team-foundation-version-control-your-dev-machine",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/share-your-code-in-tfvc-eclipse.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/share-your-code-in-tfvc-eclipse",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/share-your-code-in-tfvc-vs.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/share-your-code-in-tfvc-xcode.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/share-your-code-in-tfvc-xcode",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/shelve-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/shelve-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/shelvesets-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/shelvesets-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/status-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/status-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/suspend-your-work-manage-your-shelvesets.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/test-impact-for-partially-mapped-tfvc-repositories.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/test-impact-for-partially-mapped-tfvc-repositories",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/undelete-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/undelete-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/understand-lock-types.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/understand-lock-types",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/undo-changes-another-user-workspace.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/undo-changes-another-user-workspace",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/undo-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/undo-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/unlabel-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/unlabel-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/unshelve-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/unshelve-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/use-labels-take-snapshot-your-files.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/use-labels-take-snapshot-your-files",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/use-source-control-explorer-manage-files-under-version-control.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/use-source-control-explorer-manage-files-under-version-control",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/use-team-foundation-version-control-commands.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/use-team-foundation-version-control-commands",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/use-visual-studio-git.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/use-visual-studio-git",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/view-branch-hierarchy-team-project.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/view-branch-hierarchy-team-project",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/view-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/view-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/view-file-changes-using-annotate.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/view-file-changes-using-annotate",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/view-manage-past-versions.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/view-manage-past-versions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/view-where-when-changesets-have-been-merged.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/view-where-when-changesets-have-been-merged",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/what-is-tfvc.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/what-is-tfvc",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/work-version-control-locks.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/work-version-control-locks",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/workfold-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/workfold-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/workspace-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/workspace-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/workspaces-command.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/workspaces-command",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/authorize.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/authorize",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/consumers.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/consumers",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/create-subscription.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/create-subscription",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/events.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/events",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/troubleshoot.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/troubleshoot",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/services/jenkins.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/services/jenkins",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/services/slack.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/services/slack",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/services/teams.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/services/teams",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/services/trello.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/services/trello",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/services/webhooks.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/services/webhooks",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/service-hooks/services/workplace-messaging-apps.md",
+      "redirect_url": "/previous-versions/azure/devops/service-hooks/services/workplace-messaging-apps",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/test/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/reference-qa.yml",
+      "redirect_url": "/previous-versions/azure/devops/test/reference-qa",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/add-to-bugs-exploratory-testing.md",
+      "redirect_url": "/previous-versions/azure/devops/test/add-to-bugs-exploratory-testing",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/associate-automated-test-with-test-case.md",
+      "redirect_url": "/previous-versions/azure/devops/test/associate-automated-test-with-test-case",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/collect-diagnostic-data.md",
+      "redirect_url": "/previous-versions/azure/devops/test/collect-diagnostic-data",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/connected-mode-exploratory-testing.md",
+      "redirect_url": "/previous-versions/azure/devops/test/connected-mode-exploratory-testing",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/copy-clone-test-items.md",
+      "redirect_url": "/previous-versions/azure/devops/test/copy-clone-test-items",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/create-a-test-plan.md",
+      "redirect_url": "/previous-versions/azure/devops/test/create-a-test-plan",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/create-test-cases.md",
+      "redirect_url": "/previous-versions/azure/devops/test/create-test-cases",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/explore-workitems-exploratory-testing.md",
+      "redirect_url": "/previous-versions/azure/devops/test/explore-workitems-exploratory-testing",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/how-long-to-keep-test-results.md",
+      "redirect_url": "/previous-versions/azure/devops/test/how-long-to-keep-test-results",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/insights-exploratory-testing.md",
+      "redirect_url": "/previous-versions/azure/devops/test/insights-exploratory-testing",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/manual-test-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/test/manual-test-permissions",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/test/overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/perform-exploratory-tests.md",
+      "redirect_url": "/previous-versions/azure/devops/test/perform-exploratory-tests",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/provide-stakeholder-feedback.md",
+      "redirect_url": "/previous-versions/azure/devops/test/provide-stakeholder-feedback",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/repeat-test-with-different-data.md",
+      "redirect_url": "/previous-versions/azure/devops/test/repeat-test-with-different-data",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/request-stakeholder-feedback.md",
+      "redirect_url": "/previous-versions/azure/devops/test/request-stakeholder-feedback",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/run-automated-tests-from-test-hub.md",
+      "redirect_url": "/previous-versions/azure/devops/test/run-automated-tests-from-test-hub",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/run-manual-tests.md",
+      "redirect_url": "/previous-versions/azure/devops/test/run-manual-tests",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/share-steps-between-test-cases.md",
+      "redirect_url": "/previous-versions/azure/devops/test/share-steps-between-test-cases",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/standalone-mode-exploratory-testing.md",
+      "redirect_url": "/previous-versions/azure/devops/test/standalone-mode-exploratory-testing",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/test-case-managment-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/test/test-case-managment-reference",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/test-different-configurations.md",
+      "redirect_url": "/previous-versions/azure/devops/test/test-different-configurations",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/test-objects-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/test/test-objects-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/track-stakeholder-feedback.md",
+      "redirect_url": "/previous-versions/azure/devops/test/track-stakeholder-feedback",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/track-test-status.md",
+      "redirect_url": "/previous-versions/azure/devops/test/track-test-status",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/user-acceptance-testing.md",
+      "redirect_url": "/previous-versions/azure/devops/test/user-acceptance-testing",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/test/voluntary-stakeholder-feedback.md",
+      "redirect_url": "/previous-versions/azure/devops/test/voluntary-stakeholder-feedback",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/about-azure-devops-services-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/about-azure-devops-services-tfs",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/add-run-manual-tests.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/add-run-manual-tests",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/code-with-git.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/code-with-git",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/devops-alm-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/devops-alm-overview",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/lookup-platform-version.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/lookup-platform-version",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/manage-organization-collection.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/manage-organization-collection",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/plan-your-azure-devops-org-structure.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/plan-your-azure-devops-org-structure",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/project-admin-tutorial.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/project-admin-tutorial",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/provide-feedback.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/provide-feedback",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/roles.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/roles",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/services.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/services",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/source-control.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/source-control",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/tools.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/tools",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/troubleshoot-connection.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/troubleshoot-connection",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/what-is-azure-devops.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/what-is-azure-devops",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/work-team-explorer.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/work-team-explorer",
+      "monikers": [
+        "tfs-2018"
+      ]
+    },
+    {
+      "source_path": "docs/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/index",
+      "monikers": [
+        "tfs-2018"
+      ]
+    }
+  ]
+}
+

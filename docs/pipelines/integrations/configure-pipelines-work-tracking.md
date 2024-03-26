@@ -177,9 +177,7 @@ Open the build pipeline, choose to edit the pipeline, and then choose the **Opti
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/pipelines-integration/open-classic-build-properties-options.png" alt-text="Screenshot of Classic Build pipeline, Options tab.":::
 ::: moniker-end 
-::: moniker range="tfs-2018"
-:::image type="content" source="media/pipelines-integration/open-classic-build-properties-options-tfs-2018.png" alt-text="Build and Release pipeline Build properties dialog, TFS-2018.":::
-::: moniker-end 
+ 
 
 The Build properties page appears. 
 
@@ -194,16 +192,7 @@ For details on each setting, use one of the following links:
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018"
-:::image type="content" source="media/pipelines-integration/build-properties-tfs-2018.png" alt-text="Build properties dialog, TFS-2018.":::
-
-For details on each setting, use one of the following links: 
-- [Build number format](../release/index.md#q-how-do-i-manage-the-naming-of-new-releases)
-- [Badge enabled](#status-badge)
-- [Automatically link work items](#auto-link-work-items-builds)
-- [Create work item on failure](#create-work-item-on-failure)
-
-::: moniker-end 
+ 
 
 
 # [Classic Release](#tab/classic-release)
@@ -228,7 +217,7 @@ For details on each setting, use one of the following links:
 - [Enable the deployment status badge](#enable-status-badge)
 ::: moniker-end 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Integrations options for Classic pipelines, Azure DevOps 2019 and earlier versions](../release/media/what-is-release-management/report-options.png)
 
@@ -336,10 +325,7 @@ To verify the integration is working, perform the following steps:
 ::: moniker-end
  
 
-::: moniker range="< azure-devops-2019"
 
-This feature isn't supported for Azure DevOps Server 2019 and earlier versions.
-::: moniker-end
 
 *** 
  

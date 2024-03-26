@@ -74,10 +74,7 @@ To learn how to add users to a group or set a specific permission that you can m
      - [Analytics views](../../report/powerbi/analytics-security.md) 
      - [SQL Server Reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports) 
   ::: moniker-end
-  ::: moniker range="tfs-2018"
-     - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
-     - [SQL Server Reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports) 
-  ::: moniker-end
+  
    :::column-end:::
 :::row-end:::
 
@@ -140,11 +137,7 @@ When you install Azure DevOps Server, the system creates default groups that hav
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-
-![Screenshot of Azure DevOps Security group dialog, TFS-2018 version.](media/permissions/server-groups-and-permissions.png)
-
-::: moniker-end 
+ 
 
 ::: moniker range="< azure-devops"
 
@@ -239,91 +232,7 @@ When you install Azure DevOps Server, the system creates default groups that hav
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-:::row:::
-   :::column span="1":::
-   **Group name**
-   :::column-end:::
-   :::column span="1":::
-   **Permissions**
-   :::column-end:::
-   :::column span="1":::
-   **Membership**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Team Foundation Administrators
-   :::column-end:::
-   :::column span="1":::   
-   Has permissions to perform all server-level operations.
-   :::column-end:::
-   :::column span="1":::   
-   **Local Administrators** group (BUILTIN\Administrators)
-   for any server that hosts Azure DevOPs/Team Foundation application services.  
-
-   *Server* **\Team Foundation Service Accounts** group
-   and the members of the **\Project Server Integration Service Accounts** group.  
-
-   This group should be restricted to the smallest possible number of users
-   who need total administrative control over server-level operations.  
-
-   > [!NOTE]   
-   > If your deployment uses Reporting, consider [adding the members of this group to the Content Managers groups in Reporting Services](/azure/devops/server/admin/add-administrator).
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Team Foundation Proxy Service Accounts
-   :::column-end:::
-   :::column span="1":::   
-   Has service level permissions for Team Foundation Server Proxy,
-   and some service-level permissions.
-   > [!NOTE]   
-   > This account is created when you [install the TFS proxy service](/azure/devops/server/install/install-proxy-setup-remote). 
-   :::column-end:::
-   :::column span="1":::   
-   This group should contain only service accounts and not user accounts or groups
-   that contain user accounts.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Team Foundation Service Accounts
-   :::column-end:::
-   :::column span="1":::
-   Has service-level permissions for the server instance.
-   :::column-end:::
-   :::column span="1":::
-   Contains the service account that was supplied during installation  
-
-   This group should contain only service accounts
-   and not user accounts or groups that contain user accounts.
-   By default, this group is a member of **Team Foundation Administrators**.  
-
-   If you need to add an account to this group after you install Azure DevOps Server, you can do so using
-   the TFSSecurity.exe utility in the **Tools** subfolder of your TFS installation directory.
-   Use the following command: `TFSSecurity /g+ "[TEAM FOUNDATION]\Team Foundation Service Accounts" n:domain\username /server:http(s)://tfsservername`.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Team Foundation Valid Users
-   :::column-end:::
-   :::column span="1":::
-   Has permission to view server instance-level information.
-   > [!NOTE]   
-   > If you set the **View instance-level information** permission to **Deny** or **Not set** for this group, no users will be able to access the deployment.
-   :::column-end:::
-   :::column span="1":::
-   Contains all users known to exist in the server instance.
-   You can't modify the membership of this group.
-   :::column-end:::
-:::row-end:::
-
-::: moniker-end
 
 
 
@@ -530,9 +439,7 @@ For each project that you create, the system creates the followings project-leve
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-:::image type="content" source="media/permissions/project-level-groups-permissions-tfs-2018.png" alt-text="Screenshot of Project-level groups and permissions, TFS-2018 and earlier versions.":::
-::: moniker-end
+
 
 > [!TIP]  
 > The full name of each of these groups is **[{project name}]\\{group name}**. 
@@ -1182,12 +1089,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Collection level permissions and groups.](media/permissions/collection-level-permissions-2018.png)   
-
-::: moniker-end
 
 
 [!INCLUDE [note-collection-level-permissions](includes/note-collection-level-permissions.md)]
@@ -1490,12 +1392,7 @@ Manage project-level permissions through the [web portal admin context](change-p
   > [!div class="mx-imgBorder"]  
   > ![Screenshot of Project-level permissions, on-premises, Inherited process model.](media/permissions/project-level-permissions.png)
 ::: moniker-end
-::: moniker range="tfs-2018"
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Project-level permissions dialog, TFS-2018.](media/permissions/project-level-permissions-2018.png)
-
-::: moniker-end
 
 
 ::: moniker range="< azure-devops"
@@ -1891,12 +1788,7 @@ Manage pipeline permissions [for each pipeline defined in the web portal](../../
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Build object-level permissions dialog, Azure DevOps Server 2019 and earlier on-premises versions.](media/permissions/build-permissions-vsts.png)
-
-::: moniker-end
 
 Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build definition.
 
@@ -2109,12 +2001,7 @@ Manage the security of each [Git repository](../../repos/git/set-git-repository-
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018" 
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Git repository permissions dialog, TFS.](media/permissions/git-repo-permissions-tfs.png) 
-
-::: moniker-end 
+ 
 
 > [!NOTE]  
 > Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from  the top-level **Git repositories** entry. Branches inherit permissions from assignments made at the repository level. By default, the project level Readers groups only have Read permissions.

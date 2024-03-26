@@ -9,9 +9,7 @@ ms.date: 04/04/2022
 You can use the following keyboard shortcuts when you work on a page under **Repos**. To view the valid shortcuts, select **?** to access  global and service-specific shortcuts.  
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-You can use the following keyboard shortcuts when you work on a page under **Code**. To view the valid shortcuts, select **?** to access global and service-specific shortcuts.  
-::: moniker-end
+
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -76,7 +74,7 @@ The following screenshot shows the lists of keyboard shortcuts as they appear in
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 #### Code shortcuts
 

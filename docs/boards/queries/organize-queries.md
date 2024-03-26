@@ -66,27 +66,7 @@ The following example shows how to find all closed bugs by modifying the
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-
-1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
-
-   ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](media/using-queries-active-bugs-ts.png)  
-
-   > [!TIP]  
-   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
-
-1. Edit the query to find closed bugs and then run the query. 
-   Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md).      
-	
-   ![Web portal, Queries page, Editor view of a Flat List Query](media/query-active-bugs-editor-vso.png)  
-
-2. Save the query to your **My Queries** folder.  
-	
-   ![Save Query As](media/6.png)  
-
-   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. For more information, see [Set query permissions](set-query-permissions.md).  
-
-::: moniker-end  
+  
 
 
 #### [Visual Studio](#tab/visual-studio/)
@@ -128,13 +108,7 @@ For shared queries, you can also choose to do one of these tasks:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
 
-Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon of a query to edit, rename, or delete the query.
-
-![Web portal, Boards>Queries, Open Shared queries, Active Bugs](media/using-queries-active-bugs-ts.png)
-
-::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -180,23 +154,7 @@ You add query folders from the **Boards>Queries>All** page.
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-You add query folders from the **Boards>Queries** page.
-
-1. To add a folder, choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu for an existing folder or the top container folder and select **New query folder**. 
-
-	Enter the name for the folder in the New query folder dialog.  
-
-	![New query folder link on queries context menu](media/set-query-perm-new-folder.png)   
-
-1. To move items into a folder, drag-and-drop a query onto the folder.  From the web portal, you can only drag a single query from outside a folder into a folder. 
-
-	Optionally, you can choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context icon for an existing query and choose **Rename**. In the Rename query dialog, select the folder you want to save the query in. 
-
-	![Rename query dialog](media/organize-queries/rename-query-old-experience.png) 
-
-::: moniker-end
 
 
 #### [Visual Studio](#tab/visual-studio/)

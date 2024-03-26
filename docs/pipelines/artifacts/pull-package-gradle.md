@@ -49,17 +49,7 @@ gradle -v
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Select your profile icon, and then select **Security**.
-
-2. Select **New Token**, and then name your token and set its expiration date. 
-
-3. Select the **Packaging (Read & write)** scope.
-
-    :::image type="content" source="media/select-scope.png" alt-text="Screenshot showing the available scopes for a pat.":::
-
-::: moniker-end
 
 4. Copy your token and save it in a secure location.
 

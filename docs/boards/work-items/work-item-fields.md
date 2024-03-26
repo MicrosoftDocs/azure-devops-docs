@@ -31,9 +31,7 @@ Work item fields are used to track information. Fields are defined for a collect
 ::: moniker-end
 
 
-::: moniker range="< azure-devops-2019"
-Work item fields are used to track information. Fields are defined for a collection and shared across all projects defined for that collection. To view all fields defined for a collection, you can use the [Work Item Field Explorer](#wi-explorer) tool, a plug-in to Visual Studio.   
-::: moniker-end
+
 
 For a description of each field defined with a system process, see [Work item field index](guidance/work-item-field.md).  
 
@@ -145,11 +143,7 @@ If the On-premises XML process model is used, you can look up the data type thro
 
 ::: moniker-end
 
-::: moniker range="tfs-2018" 
 
-You can look up the data type through the [Work item field index](guidance/work-item-field.md). Or, you can open the Work Item Field Explorer to review the fields defined and their attribute assignments, or use the **witadmin listfields** command to list the field attributes.  For more information, see [Work Item Field Explorer](#wi-explorer) and [List field attributes](#list-attributes) later in this article.
-
-::: moniker-end
 
 <a id="review-fields"></a>
 
@@ -805,13 +799,7 @@ The **Use** parameter indicates the name of each project and the work item type 
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"  
-
-## Project integration and project field mapping  
-
-You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file). 
-
-::: moniker-end  
+  
 
 ## Add and modify fields   
 
@@ -831,13 +819,7 @@ You can change the field name, the index, and the report attributes for any fiel
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops-2019"  
-
-To add fields to a project, you add them to one or more work item types. See [Add or modify a field to track work](../../reference/add-modify-field.md).  
-
-You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md).  
-
-::: moniker-end  
+  
 
 
 ## Related articles  
@@ -860,14 +842,7 @@ You can change the field name, the index, and the report attributes for any fiel
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
-
-- [Query quick reference](../queries/query-index-quick-ref.md)
-- [Work item field index](guidance/work-item-field.md) 
-- [Add or modify a field to track work](../../reference/add-modify-field.md)
-- [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
-
-::: moniker-end  
+  
 
 
 

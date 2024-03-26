@@ -62,18 +62,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-- Drag-and-drop work items from one column to another on a Kanban board or Taskboard to change the work item state
-- Change the priority of an item within a backlog or board 
-- Delete work items or move work items to another project 
-- Change fields on cards on a Kanban board or Taskboard 
-- Drag-and-drop work items from a Backlog to the Mapping pane (parent a work item) or Planning pane (to assign to a sprint)   
-- Add new work item tags  
-- Create shared queries, view query charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)    
-- Access the full set of features under **Code**, **Build and Release**, or **Test**.  
-::: moniker-end
 
 
 

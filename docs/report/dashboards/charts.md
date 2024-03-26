@@ -42,13 +42,7 @@ For example, the following image illustrates two different charts created from t
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-For example, the following image illustrates four different charts created from the same flat-list query. The pie chart groups the 146 active bugs by priority, and the bar chart groups the bugs by team and their triage status. The last two chart show two different trend views of the active bugs over the last two weeks.  
-  
-![Screenshot of 4 charts for a flat-list query.](media/charts-active-bugs.png)
-
-::: moniker-end
 
 ## Prerequisites
 
@@ -152,13 +146,7 @@ When a chart contains more than eight or 12 items within the data series, values
 ::: moniker-end 
 
 
-::: moniker range="tfs-2018"
-
-When a chart contains more than seven items within the data series, values in the eight-plus items are consolidated into a set labeled "other"?   
-
-![Screenshot of Other category groups data beyond 7 set series.](media/tfs-vso-remaining-category-consolidation-chart.png)  
-
-::: moniker-end 
+ 
 
 ## Chart availability
 
@@ -176,9 +164,7 @@ When a chart contains more than seven items within the data series, values in th
    > ![Screenshot of New chart button.](media/charts/new-chart-new-qe.png)   
    ::: moniker-end  
 
-   ::: moniker range="tfs-2018"  
-   :::image type="content" source="media/charts-new-chart.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, New chart link.":::  
-   ::: moniker-end  
+     
 
 	If you have **Stakeholder** access, the **Charts** and **New Chart** links won't appear. 
 
@@ -188,9 +174,7 @@ When a chart contains more than seven items within the data series, values in th
    > ![Screenshot of pie chart configure dialog.](media/charts/config-pie-chart-priority-qe.png)  
    ::: moniker-end  
 
-   ::: moniker range="tfs-2018"  
-   :::image type="content" source="media/charts-pie-chart-active-bugs-by-priority.png" alt-text="Screenshot of web portal, Queries page, Chart tab, Configure Chart dialog, Configure a Pie chart.":::    
-   ::: moniker-end  
+     
 
    If you don't see the field you want in the **Group by** drop-down list, [add the field as a column to the query and save the query](../../boards/backlogs/set-column-options.md). Also, the **Aggregation** options depend on the fields used in the query or those selected from the **Column Options**.  
 
@@ -204,9 +188,7 @@ When a chart contains more than seven items within the data series, values in th
    > ![Screenshot of Charts dialog, color series picker.](media/charts/color-series-picker.png)  
    ::: moniker-end  
 
-   ::: moniker range="tfs-2018"  
-   To change a color, select a color on the chart and pick a new color from the color picker.  
-   ::: moniker-end  
+     
 
 Charts automatically update when you edit the query or refresh the query results.  
 
@@ -243,9 +225,7 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 > ![Screenshot of Configure chart dialog, Stacked bar chart.](media/charts/config-stacked-bar-chart-team-qe.png)   
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
-:::image type="content" source="media/charts-add-stacked-bar.png" alt-text="Screenshot of web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart.":::     
-::: moniker-end   
+   
 
 ## Add a Pivot table  
 
@@ -265,9 +245,7 @@ Trend charts let you view progress over time. You can select a rolling period ra
 > ![Screenshot of Configure chart dialog, two week trend chart.](media/charts/config-2-week-trend-chart-bugs.png)   
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
-:::image type="content" source="media/charts-active-bugs-area-trend-2-weeks.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog, two week trend chart.":::  
-::: moniker-end  
+  
 
 Trend data is extracted from the work tracking data store. Like most data stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Therefore, data in the operational store is constantly changing and being updated, and all data is current.
 
@@ -286,9 +264,7 @@ In addition to query-based burndown charts, you can [Configure a burndown or bur
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"   
-:::image type="content" source="media/create-burndown-trend-sum-chart.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog, Trend chart for the past four weeks.":::  
-::: moniker-end  
+  
 
 
 ## Add chart to a dashboard 
@@ -312,9 +288,7 @@ In the dialog that opens, select the dashboard to add the chart to.
 > ![Select a dashboard dialog](media/charts/select-dashboard-dialog.png)  
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
-![Screenshot of a chart context menu, add to a team dashboard.](media/add-charts/pin-chart-to-a-dashboard.png)
-::: moniker-end  
+  
 
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
 

@@ -56,7 +56,7 @@ Some suggestions for naming your feature branches:
 * feature/feature-area/feature-name
 * hotfix/description
 
-::: moniker range=">= tfs-2018" 
+::: moniker range="<=azure-devops"
  
 >[!NOTE]
 >For information on setting policies to enforce a branch naming strategy, see [Require branch folders](require-branch-folders.md).

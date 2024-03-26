@@ -34,24 +34,6 @@ Follow these instructions and select the appropriate scope for your need to crea
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-1. Navigate to **Build & Release**, and then select **Packages**.
-
-    :::image type="content" source="../media/goto-feed-hub.png" alt-text="A screenshot showing how to navigate to feeds.":::
-
-1. Select the dropdown menu, and then select **New feed**.
-
-    :::image type="content" source="../media/new-feed-button.png" alt-text="A screenshot showing how to create a new feed.":::
-
-1. Give your feed a **Name**, a **Description**, and then select who can read and contribute to your feed. Select **Include external packages** if you want to use packages from public registries.
-
-1. Select **Create** when you're done.
-
-    :::image type="content" source="../media/new-feed-dialog-azure-tfs.png" alt-text="A screenshot showing how to set up a new feed.":::
-
-::: moniker-end
-
 > [!NOTE]
 > Organization-scoped feeds cannot be converted into project-scoped feeds.
 

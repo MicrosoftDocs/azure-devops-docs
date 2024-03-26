@@ -81,28 +81,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-1. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
-
-	> [!div class="mx-imgBorder"]
-	> ![Open the Boards>Backlogs page](media/assign-items-sprint/open-work-backlogs-standard.png) 
-
-	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](media/assign-items-sprint/team-selector-backlogs-standard.png) 
-
-	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
-
-1. Choose the sprint you want to plan. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another sprint](media/add-tasks/choose-sprint-standard.png)
-
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
-
-::: moniker-end
 
 ## Add existing work items to a sprint
 
@@ -156,26 +135,7 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Select the
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-You can add tasks from the sprint **Backlog** or **Taskboard**. 
-
-From the **Backlog** view, choose the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: plus icon to add a new task.  
-
-> [!div class="mx-imgBorder"]
-> ![print backlog page, add task](media/add-tasks/sp-add-tasks.png)
-
-Complete the form as described in the next section. 
-
-Another option, is to open **Taskboard**, and add tasks as cards. Select the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus icon, enter a title for the item, and then press Enter on your keyboard.    
-
-> [!div class="mx-imgBorder"]
-> ![Add task from the taskboard](media/add-tasks/add-task-board-standard.png)
-
-> [!TIP]    
-> You can quickly add tasks by just specifying the title of the work item. To show fields on the card, see [Customize a sprint Taskboard](customize-taskboard.md).  
-
-::: moniker-end
 
 To interactively filter sprint views, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::, and then specify a keyword or select a value for a field or tag. For more information, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
@@ -190,11 +150,7 @@ Name the task and enter an estimate for *Remaining Work*. Also, if you know who'
 > ![Add task](media/add-tasks/add-task-form.png)
 ::: moniker-end 
 
-::: moniker range="tfs-2018"
-<a id="task-form-team-services"></a> 
-<!--- Task form, new form -->
-![New task form](media/sp-scrum-task-form.png)  
-::: moniker-end
+
 
 
 At the planning stage, *Remaining Work* corresponds to an estimate of how long it takes to complete the task.  
@@ -268,11 +224,7 @@ Tasks without links to parent backlog items or user stories appear at the top of
 > ![Unparented tasks, agile taskboard](media/add-tasks/unparented-tasks.png) 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![Unparented tasks](media/ALM_TB_UnparentedTasks_CO.png)
-
-::: moniker-end
 
 
 ## Next step

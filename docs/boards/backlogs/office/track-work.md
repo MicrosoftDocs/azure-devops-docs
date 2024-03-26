@@ -21,11 +21,7 @@ To support your work tracking efforts, you can use Microsoft Excel. You can eith
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-To support your work tracking efforts, use Microsoft Excel and Microsoft Project. You can either work in online mode, where you're connected to Azure DevOps. Or, work in offline mode, where you access the local computer and document.
-
-::: moniker-end
 
 > [!TIP]
 > For bulk import or to update work items, use the [web portal](../bulk-modify-work-items.md) or [CSV import](../../queries/import-work-items-from-csv.md).
@@ -113,16 +109,7 @@ Connection from an Office client to an Azure Boards project requires the followi
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-- To connect Excel to Azure Boards, you must install Office Excel 2010 or later version, including Microsoft 365.
-- To connect Project to Azure Boards, you must install Office Project 2010 or later version, including Microsoft 365.
-- To connect PowerPoint to Azure Boards, you must install [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400).  
-- Installed Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-- The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration plug-in. The plug-in supports connection to TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md).
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -132,14 +119,7 @@ Connection from an Office client to an Azure Boards project requires the followi
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-- Office Excel 2010 or later version, including Microsoft Office Excel 365
-- Office Project 2010 or later version, including Office Project 365
-- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md).
-
-::: moniker-end
 
 For information about compatibility requirements, see [Compatibility with Azure DevOps](/azure/devops/server/compatibility).
 
@@ -152,17 +132,13 @@ For information about compatibility requirements, see [Compatibility with Azure 
 
 ## Publish and refresh work items
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 
 When you add or update work items from Excel, local copies of your work items are created. To keep data in sync, it's important to refresh your local file when you open it and publish and refresh frequently during a long online session.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-When you add or update work items from Excel, local copies of your work items are created. To keep data in sync, it's important to refresh your local file when you open it and publish and refresh frequently during a long online session.
-
-::: moniker-end
 
 At first, the data in the local document matches the data in the database. But you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. The refresh downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.
 

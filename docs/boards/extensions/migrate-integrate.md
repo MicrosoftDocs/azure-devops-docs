@@ -120,13 +120,7 @@ For more information, see [Review team Delivery Plans](../plans/review-team-plan
 - [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
 ::: moniker-end
  
-::: moniker range="tfs-2018"
-- [Delivery Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans)
-- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/epic-roadmap)  
-- [Feature Timeline extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/feature-timeline) 
-- [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 
-::: moniker-end
 
 ### Customizing work item types
 
@@ -141,12 +135,7 @@ For more information, see [Review team Delivery Plans](../plans/review-team-plan
 - [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-- [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
-- [Multivalue control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control)
-- [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
 
-::: moniker-end
  
 ::: moniker range=">= azure-devops-2019"
 ## Querying and reporting
@@ -168,9 +157,7 @@ For more information, see [Review team Delivery Plans](../plans/review-team-plan
 - [Roll-up Board Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard)
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-- [Roll-up Board Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard)
-::: moniker-end
+
  
 ### Command-line interface
 

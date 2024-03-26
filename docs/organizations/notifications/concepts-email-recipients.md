@@ -50,13 +50,7 @@ You can manage subscriptions and delivery settings at the team-level or organiza
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. In Organization settings, select your **Team** > **Subscribers** > **Delivery settings**.
-
-   ![Screenshot showing organization-level settings.](media/email-team-subscribers-view.png)
-
-::: moniker-end
 
 2. Select from the following settings:
 
@@ -92,23 +86,7 @@ The following delivery options are available for a group or team subscription:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![Screenshot showing email team delivery options.](media/email-team-delivery-options.png)
-
-You can choose from the following delivery options for a group or team subscription:
-
-|Option  |Recipients  |
-|---------|---------|
-|**[Member of team by role](#member-of-team-by-role)**   | Members of the team or group who have one of the selected roles, for example, work item assignee.        |
-|**[Team preference](#team-preference)**     | Determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_).          |
-|**[Custom email address](#custom-email-address)**      | Specified email address.        |
-|**[Members of team](#members-of-team)**    | Members of the team or group, except members who have opted out of the subscription.     |
-
-> [!NOTE]
-> The default delivery setting of each member is honored, including groups that are members of the team or group.
-
-::: moniker-end
 ### Member of team by role
 
 The email recipient list is determined by members that had a role in the event. For example, the user assigned the work item has the role _Assigned to (new)_ while the identity that was assigned the work item has the role _Assigned to (previous)_. The full list of roles for each event type is shown in the [supported event types](oob-supported-event-types.md).
