@@ -241,14 +241,14 @@ Any item assigned to a sprint that corresponds to the current iteration path for
 > [!NOTE]
 > For the `@CurrentIteration` macro to work, the team must have selected an iteration path whose date range encompasses the current date. For more information, see [Define iteration paths (also referred to as sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
 >
-> See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
+> See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) earlier in this article.
 
 ::: moniker range=">= azure-devops-2019"
 
 Azure Boards adds a team parameter when you select the **@CurrentIteration** or **@CurrentIteration +/- _n_** macros. The team parameter derives from your current [team context](#team_view).
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot that shows the Query filter by using the @CurrentIteration macro with team parameter.](media/query-date-iteration/at-current-with-team-parameter.png)
+> ![Screenshot that shows the Query filter by using the CurrentIteration macro with team parameter.](media/query-date-iteration/at-current-with-team-parameter.png)
 
 > [!TIP]
 > If the `@CurrentIteration` macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it](../../organizations/settings/set-iteration-paths-sprints.md#activate).
@@ -272,7 +272,7 @@ Use the `@CurrentIteration +/- <i>n</i>` macro when you want to track the work a
 > For the `@CurrentIteration +/- <i>n</i>` macro to work, the team must have selected iteration paths that meet the `+/- _n_`
 > criteria. Date ranges must encompass the current date for the `@CurrentIteration`. For more information about team selection of iteration paths, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate).
 > 
-> See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
+> See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) earlier in this article.
 
 The following image shows how to list all User Story and Bug work item types that are assigned to the sliding window that spans the last two, the current, and the next two sprints selected for the Cloud Admin and Tools team.
 
@@ -366,7 +366,7 @@ Use **Date** fields to filter your queries. Some of these fields are populated w
 ---
 :::row:::
    :::column span="1":::
-      Activated Date (Notes 1, and 2)
+      Activated Date (Notes 1 and 2)
    :::column-end:::
    :::column span="2":::
       The date and time when the work item was created or when its status was changed from `Closed`, `Completed`, or `Done` to a `New` or `Active` state.
@@ -505,11 +505,11 @@ Use **Date** fields to filter your queries. Some of these fields are populated w
    :::column-end:::
 :::row-end:::
 
-Notes
+Notes:
 
 1. See also [Query by assignment or workflow changes, Date, and Identity fields](query-by-workflow-changes.md).
 
-1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a `Resolved` state.
+1. For these fields to be defined for a work item type, they must be included in the ```WORKFLOW``` section of the work item type definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a `Resolved` state.
 	
    ```xml
 	<FIELD refname="Microsoft.VSTS.Common.ResolvedDate" />  
