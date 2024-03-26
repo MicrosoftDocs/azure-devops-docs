@@ -9,7 +9,7 @@ ms.date: 05/25/2022
 
 #### [Agile process](#tab/agile-process)
 
-The following image shows the Agile process backlog work item hierarchy:
+The following image shows the hierarchy for the Agile process backlog work item:
 
 - User Stories and tasks are used to track work.
 - Bugs track code defects.
@@ -22,7 +22,7 @@ Each team can configure how they manage Bug work items, at the same level as Use
 
 #### [Basic process](#tab/basic-process)
 
-The following image shows the Basic process backlog work item hierarchy:
+The following image shows the hierarchy for the Basic process backlog work item:
 
 - Issues and tasks are used to track work.
 - Epics are used to group work under larger scenarios.
@@ -36,7 +36,7 @@ For more information about using these work item types, see [Plan and track work
 
 #### [Scrum process](#tab/scrum-process)
 
-The following image shows the Scrum process backlog work item hierarchy:
+The following image shows the hierarchy for the Scrum process backlog work item:
 
 - Product backlog items and Tasks are used to track work.
 - Bugs track code defects.
@@ -49,7 +49,7 @@ Each team can configure how they manage bugs, at the same level as product backl
 
 #### [CMMI process](#tab/cmmi-process)
 
-The following image shows the CMMI process backlog work item hierarchy:
+The following image shows the hierarchy for the CMMI process backlog work item:
 
 - Requirements and Tasks are used to track work.
 - Bugs track code defects.
