@@ -62,20 +62,7 @@ Use this article to learn how to:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018" 
 
-You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. CFDs help teams monitor the count of work items as they progressively move through various workflow states. These diagrams can show the flow of epics, features, user stories, product backlog items, or requirements, depending on the process selected for your project:
-- [Agile](../../boards/work-items/guidance/agile-process.md)
-- [Basic](../../boards/get-started/plan-track-work.md)
-- [Scrum](../../boards/work-items/guidance/scrum-process.md)
-- [Capability Maturity Model Integration (CMMI)](../../boards/work-items/guidance/cmmi-process.md)
-
-Use this article to learn how to: 
-
-> [!div class="checklist"] 
-> * View and configure the CFD in-context report (work tracking data store)  
-
-::: moniker-end
 
 The CFD shows the count of items in each Kanban column for the selected time period. From this chart, you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement once work has started. 
 
@@ -154,19 +141,7 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-On your web browser, open your team's product backlog and select the team from the project and team selector. Then select **Work** > **Backlogs**. Select the product backlog, which is **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI. 
-
-> [!div class="mx-imgBorder"]
-> ![Open the Boards > Backlogs page](/azure/devops/boards/sprints/media/assign-items-sprint/open-work-backlogs-standard.png) 
-
-To select another team, open the project and team selector. Select a different team, or select the **Browse** option. 
-
-> [!div class="mx-imgBorder"]  
-> ![Select another team](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
-
-::: moniker-end
 
 
 ## View the CFD in-context report   
@@ -226,19 +201,13 @@ The image opens to display a larger view of the CFD.
 ::: moniker-end  
 
 
-::: moniker range="tfs-2018"
 
-To open the CFD in-context report for your product or portfolio backlog, select the image in the upper-right corner of your **Work>Backlogs** page. 
-
-![Open CFD, prev nav](/azure/devops/boards/boards/media/kanban-basics-open-cfd.png)
-
-::: moniker-end
 
 
 
 <a id="configure-built-in-cfd"></a>
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="=azure-devops-2019"
 
 ## Configure the CFD in-context report    
 
@@ -262,18 +231,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"
 
-1. Open the backlog level for which you want to configure and then open the common configuration dialog. Select the :::image type="icon" source="../../boards/media/icons/team-settings-gear-icon.png" border="false"::: gear icon.
-
-    :::image type="content" source="../../boards/boards/media/kanban-card-customize-open-settings.png" alt-text="Kanban board, open common configuration settings":::   
-
-	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the team Kanban boards and CFD charts.  
-
-2. Select **Cumulative flow** and specify the team's preferences.  
-
-    :::image type="content" source="media/cfd-configure-common-settings.png" alt-text="Kanban board, Common configuration dialog, Cumulative flow":::
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
 

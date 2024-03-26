@@ -230,13 +230,7 @@ For more information, see the following articles:
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"
 
-All work-tracking tools are available immediately after you create a project. Often, one or more users might want to customize the experience to meet one or more business needs. But, you might want to establish a methodology for who manages the updates and evaluates requests.
-
-For more information, see [On-premises XML process model](../reference/on-premises-xml-process-model.md).
-
-::: moniker-end
  
 ::: moniker range=">= azure-devops-2019"
 

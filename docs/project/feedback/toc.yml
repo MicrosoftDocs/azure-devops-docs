@@ -35,12 +35,12 @@
 - name: Microsoft Feedback client (Archived)
   items:
   - name: Request feedback
-    href: /previous-versions/azure/devops/project/feedback/get-feedback 
+    href: /previous-versions/azure/devops/project/feedback/get-feedback
   - name: Provide feedback
     href: /previous-versions/azure/devops/project/feedback/give-feedback
-  - name: Set feedback permissions  
-    href: /previous-versions/azure/devops/project/feedback/give-permissions-feedback
+  - name: Set feedback permissions
     displayName: security
+    href: /previous-versions/azure/devops/project/feedback/give-permissions-feedback
   - name: Enable remote audio capture
     href: /previous-versions/azure/devops/project/feedback/enable-remote-audio-capture
   - name: Change the audio device or annotation tool

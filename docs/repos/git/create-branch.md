@@ -78,23 +78,7 @@ The main page of your repo now shows the files in your new branch.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. View your repo's branches by selecting **Branches** while viewing your repo on the web.
-
-   :::image type="content" source="media/create-branch/branches-nav.png" border="false" alt-text="Branches page.":::
-
-1. Select **New branch** in the upper-right corner of the page.
-
-   :::image type="content" source="media/create-branch/create-branch.png" border="false" alt-text="Create branch button.":::
-
-1. In the **Create a branch** dialog box, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
-
-   :::image type="content" source="media/create-branch/newbranch-dialog.png" border="false" alt-text="Create a branch with the new branch dialog.":::
-
-1. Select **Create branch**.
-
-::: moniker-end
 
 > [!TIP]
 > After you've created a remote branch, you can [fetch](pulling.md) it into your local Git repo. At the command prompt, run:<br>

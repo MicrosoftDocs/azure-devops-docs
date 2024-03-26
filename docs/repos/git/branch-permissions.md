@@ -30,13 +30,7 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-1. Open the **Branches** page by navigating to your project in the web portal and selecting **Code**, **Branches**.
-
-   ![Open up the Branches page on the web](media/branches/branches_nav.png)
-
-::: moniker-end
 
 2. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
@@ -128,16 +122,7 @@ The following permissions are automatically assigned to branch creators: **Contr
    :::column-end:::
 :::row-end:::
 
-::: moniker range="tfs-2018"
-:::row:::
-   :::column span="":::
-      **Exempt from policy enforcement**
-   :::column-end:::
-   :::column span="":::
-      Are exempt from [branch policies](branch-policies.md) when completing pull requests and can override the policies by checking **Override branch policies and enable merge** when completing a PR. Can also push to a branch that has branch policies enabled. 
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 
 :::row:::
    :::column span="":::

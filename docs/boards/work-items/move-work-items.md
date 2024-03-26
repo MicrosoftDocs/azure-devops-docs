@@ -57,15 +57,7 @@ From the web portal, you can perform bulk updates of the **Area Path**.
  
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-
-1. [Create a query](../queries/using-queries.md) of all work items you want to reassign. Multi-select those items belonging to each team, and [bulk edit the area path](../backlogs/bulk-modify-work-items.md).
-
-2. After you bulk modify, do a bulk save.  
-
-   ![Screenshot of the Web portal, Queries page, Bulk save selected work items.](media/move-work-items/scale-agile-bulk-save-area-path-co.png)  
-
-::: moniker-end  
+  
 
 <a id="move-work-items"></a> 
 

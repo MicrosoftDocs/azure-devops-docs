@@ -80,22 +80,7 @@ ms.date: 04/04/2022
    :::column-end:::
 :::row-end:::
 ::: moniker-end  
-::: moniker range="tfs-2018"
-:::row:::
-   :::column span="2":::
-      Add child items to a backlog item; prioritize or reorder a backlog; parent items using the Mapping pane; Assign items to a sprint using drag-and-drop 
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-::: moniker-end  
+  
 :::row:::
    :::column span="2":::
       Configure team settings, backlog levels, show bugs, work days off  

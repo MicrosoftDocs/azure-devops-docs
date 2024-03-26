@@ -113,34 +113,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018"  
-
-1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
-
-2. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
-
-	![Screenshot of Kanban board, open common configuration settings.](media/add-columns-open-settings-ts.png)  
-
-3. Choose **Swimlanes** and then choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of the swimlane you want to add.  
-
-	> [!div class="mx-imgBorder"]
-	> ![Kanban board settings dialog, Add a swimlane](media/expedite/settings-swimlanes-add.png)  
-
-	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board. 
-    
-4. To reorder your swimlanes, grab the lane and move it up or down. 
-
-   > [!div class="mx-imgBorder"]
-   > ![Kanban board settings dialog, Reorder a swimlane](media/expedite/swimlanes-reorder.png)  
-
-5. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Remove**. 
-	
-   > [!div class="mx-imgBorder"]
-   > ![Kanban board settings dialog, Remove a swimlane](media/expedite/swimlanes-remove.png)  
-
-6. When you're done with your changes, choose **Save**.  
-
-::: moniker-end  
+  
 
 ## Set up swimlane rules
 

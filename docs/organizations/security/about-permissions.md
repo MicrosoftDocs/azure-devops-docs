@@ -168,11 +168,7 @@ When you add accounts of users directly to a security group, they're automatical
 - *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
 - *ProjectName*\\Project Valid Users: All members added to project-level groups.
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-- *Server*\\Team Foundation Valid Users: All members added to server-level groups.
-- *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
-- *ProjectName*\\Project Valid Users: All members added to project-level groups.
-::: moniker-end
+
 
 The default permissions assigned to these groups are primarily limited to
 read access, such as **View build resources**, **View project-level information**, and **View collection-level information**.
@@ -237,9 +233,7 @@ As shown in the following image, security groups defined at the project and coll
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-![Conceptual image of security groups and permission levels, TFS-2018 and earlier versions](media/permissions/permissions-overview.png) 
-::: moniker-end
+
  
 For a description of each default security group, see [Security groups, service accounts, and permissions](permissions.md#groups).
 

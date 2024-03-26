@@ -37,24 +37,24 @@
     - name: XML element reference
       items:
       - name: XML element index
-        href: /previous-versions/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index 
+        href: /previous-versions/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index
       - name: Process template files
-        href: /previous-versions/azure/devops/reference/process-templates/overview-process-template-files 
+        href: /previous-versions/azure/devops/reference/process-templates/overview-process-template-files
       - name: Define root tasks
         href: /previous-versions/azure/devops/reference/process-templates/define-root-tasks-process-template-plug-in
       - name: Process template XML elements
-        href: /previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference 
+        href: /previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference
       - name: Define tasks and task group dependencies
-        href: /previous-versions/azure/devops/reference/process-templates/define-dependencies-plug-ins-groups-tasks 
+        href: /previous-versions/azure/devops/reference/process-templates/define-dependencies-plug-ins-groups-tasks
       - name: Define tasks to process
-        href: /previous-versions/azure/devops/reference/process-templates/define-tasks-to-process-a-plug-in 
+        href: /previous-versions/azure/devops/reference/process-templates/define-tasks-to-process-a-plug-in
       - name: Define the Classification plug-in
-        href: /previous-versions/azure/devops/reference/process-templates/define-classification-plug-in 
+        href: /previous-versions/azure/devops/reference/process-templates/define-classification-plug-in
       - name: Define the Portal plug-in
-        href: /previous-versions/azure/devops/reference/process-templates/define-project-portal-plug-in 
+        href: /previous-versions/azure/devops/reference/process-templates/define-project-portal-plug-in
       - name: Define the Reporting plug-in
-        href: /previous-versions/azure/devops/reference/process-templates/add-reports-to-the-process-template 
+        href: /previous-versions/azure/devops/reference/process-templates/add-reports-to-the-process-template
       - name: Configure initial groups, teams, members, & permissions
-        href: /previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions 
+        href: /previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions
       - name: Define the Groups and Permissions plug-in
-        href: /previous-versions/azure/devops/reference/process-templates/define-groups-teams-permissions-plug-in 
+        href: /previous-versions/azure/devops/reference/process-templates/define-groups-teams-permissions-plug-in

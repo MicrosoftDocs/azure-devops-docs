@@ -89,15 +89,11 @@ To customize a process template, you customize one or more files associated with
   
 
 - **Teams, groups, permissions, & area and iteration paths** 
-	::: moniker range="> tfs-2018"
+	::: moniker range="<=azure-devops"
 	- [Area and iteration paths](/previous-versions/azure/devops/reference/process-templates/define-classification-plug-in) 
 	- [Groups, teams, members, and permissions](/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions)
 	::: moniker-end
-	::: moniker range="tfs-2018"
-	- [Area and iteration paths](/previous-versions/azure/devops/reference/process-templates/define-classification-plug-in) 
-	- [Groups, teams, members, and permissions](/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions)
-	- [Microsoft Project mapping file](/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields) 
-	::: moniker-end
+	
 
 - **Work item tracking**  
 	- [WIT definitions](/previous-versions/azure/devops/reference/process-templates/add-wit-definitions-process-template) 

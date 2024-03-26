@@ -63,36 +63,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-From the **Projects** page you can quickly navigate to a project or a team that you've accessed or worked in previously. Projects and teams are listed in the order you've last accessed, with the most recent five projects accessed appearing first. All projects you've accessed are listed within the **All** section. 
-
-1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing web portal, Azure DevOps logo, TFS.](../../media/settings/open-project-hub-horz.png)
-
-	The projects you most recently viewed are displayed, followed by a list of all projects in alphabetic order. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing projects page, TFS-2018.](media/projects-page/account-home-projects.png)
-
-1. As you hover over a project or team, you can choose one of the links to go to **Home** or **Dashboards**, **Code**, **Work**, **Build and Release**, **Test**, or **Wiki** pages. Choose the ![favorites](../../media/icons/icon-favorite-star.png) star icon to mark the project as a favorite. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing account home, Projects page, hover over a project.](media/projects-page/account-home-projects-hover-links.png) 
-
-2. You can filter the project and team list using the *Filter projects and teams* search box. Simply type a keyword contained within the name of a project or team. Here we type **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing Projects page, filter on Fabrikam.](media/projects-page/account-home-search-projects-fabrikam.png) 
-
-3. Choose **New Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../organizations/projects/create-project.md).
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing selection of account home, Projects page, New project.](media/projects-page/account-home-projects-new-project.png) 
-
-::: moniker-end
 
 
 ## View and open a repository 
@@ -111,18 +82,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
-
-1. Choose **Code**.  
- 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing Open Code, previous nav.](../../organizations/projects/media/browse-code/select-code-hub.png)  
-
-1. Select the repository from the selector.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing selecting repository.](../../organizations/projects/media/browse-code/select-repository.png)
-   ::: moniker-end  
+  
 
 
 <a id="switch-to-a-different-team">  </a>
@@ -142,11 +102,7 @@ From a **Project Settings>Work>Team configuration** page, you select a team from
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
-You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [access the **Projects** page](work-across-projects.md).  
 
-![Screenshot showing selecting another team from the project menu.](../../media/work-web-portal-ts-switch-team-focus.png)
-::: moniker-end
 
 ## Related articles
 - [Work across projects](work-across-projects.md)

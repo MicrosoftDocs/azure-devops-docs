@@ -59,10 +59,7 @@ Open your profile menu and choose **Notification settings**.
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::image type="content" source="media/personal/open-profile-menu-notifications-2020.png" alt-text="Select your profile menu, and Notification settings":::
 ::: moniker-end
-::: moniker range="tfs-2018"
-> [!div class="mx-imgBorder"] 
-> ![Go to personal notifications page](media/nav-personal-notifications-hub.png)
-::: moniker-end
+
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::image type="content" source="media/personal/user-notifications.png" alt-text="View personal notifications page":::
 ::: moniker-end
@@ -126,17 +123,7 @@ Enter the following URL to reach the organization-level notifications page, repl
 
 ::: moniker-end
 
-::: moniker range="tfs-2018" 
 
-```URL
-https://dev.azure.com/{organization}/_admin/_notifications
-```
-
-:::image type="content" source="media/nav-organization-notifications-hub.png" alt-text="Screenshot showing notifications selection.":::
- 
-:::image type="content" source="media/view-organization-notification-hub.png" alt-text="Screenshot showing notifications hub.":::
-
-::: moniker-end
 
 For more information, see [Manage team and Global notifications](manage-team-group-global-organization-notifications.md)
 

@@ -63,16 +63,7 @@ sections:
                 - [Was Ever](./query-by-workflow-changes.md)  
                 - [Wildcard](./titles-ids-descriptions.md)  
                 ::: moniker-end
-                ::: moniker range="tfs-2018"
-                - [Compare fields](./query-field-value.md) 
-                - [Key words](./titles-ids-descriptions.md)  
-                - [Linked work items](./linking-attachments.md)  
-                - [Logical groupings](./using-queries.md)  
-                - [Query macros](about-managed-queries.md#macros)  
-                - [Tags](./add-tags-to-work-items.md#query)  
-                - [Was Ever](./query-by-workflow-changes.md)  
-                - [Wildcard](./titles-ids-descriptions.md)  
-                ::: moniker-end
+                
              :::column-end::: 
              :::column span="1":::
                ::: moniker range=">= azure-devops-2019"
@@ -83,13 +74,7 @@ sections:
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
                 - [Search across projects](./using-queries.md)
                 ::: moniker-end
-                ::: moniker range="tfs-2018"
-                - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
-                - [History and Discussion](./history-and-auditing.md) 
-                - [In and Not In Group searches](./planning-ranking-priorities.md) 
-                - [Search across projects](./using-queries.md)
-                - [In and Not In Group searches](./planning-ranking-priorities.md) 
-                ::: moniker-end
+                
              :::column-end:::
              :::column span="2":::
                 ::: moniker range=">= azure-devops-2019"
@@ -102,14 +87,7 @@ sections:
                 - [@StartOfDay, @StartOfMonth, @StartOfWeek, @StartOfYear](query-by-date-or-current-iteration.md)   
                 - [@TeamAreas](query-by-area-iteration-path.md)
                 ::: moniker-end
-                ::: moniker range="tfs-2018"
-                - [[Any]](titles-ids-descriptions.md)
-                - [@Me](query-by-workflow-changes.md)
-                - [@Today](query-by-date-or-current-iteration.md) 
-                - [@CurrentIteration](query-by-date-or-current-iteration.md)   
-                - [@Follows](titles-ids-descriptions.md#following)
-                - [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](titles-ids-descriptions.md#recent-macros)
-                ::: moniker-end
+                
              :::column-end:::
           :::row-end:::
           ---
@@ -190,9 +168,7 @@ sections:
           ::: moniker range=">= azure-devops-2019"
           **No**. Cross-project queries won't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards. For more information, see [Bulk import or update work items using CSV files](import-work-items-from-csv.md). 
           ::: moniker-end
-          ::: moniker range="tfs-2018"
-          **No**. Cross-project queries won't open in Excel.   
-          ::: moniker-end
+          
 
       - question: How do I manage dependencies across projects?  
         answer: |

@@ -88,18 +88,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Area path (Object)](set-permissions-access-work-tracking.md)
    - [Azure Artifacts](../../artifacts/feeds/feed-permissions.md)
    ::: moniker-end
-   ::: moniker range="tfs-2018"
-   - [Administer build permissions (Object)](../../pipelines/policies/permissions.md)
-   - [Administer release permissions (Object)](../../pipelines/policies/permissions.md)
-   - [Administer task group permissions (Object)](../../pipelines/policies/permissions.md)
-   - [Administer warehouse (Server)](permissions.md#server-permissions)
-   - [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)
-   - [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
-   - [Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)
-   - [Alerts (Team)](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
-   - [Area path (Object)](set-permissions-access-work-tracking.md)
-   - [Azure Artifacts](../../artifacts/feeds/feed-permissions.md)
-   ::: moniker-end
+   
    
    ### B
    ::: moniker range=">= azure-devops-2019"
@@ -115,18 +104,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Bypass policies when pushing (Object)](../../repos/git/branch-permissions.md) 
    - [Bypass rules on work item updates (Project)](change-project-level-permissions.md)
    ::: moniker-end
-   ::: moniker range="tfs-2018"
-   - [Branches, Git (Object)](../../repos/git/branch-permissions.md)
-   - [Branches, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Build pipelines (Object)](../../pipelines/policies/set-permissions.md)
-   - [Build quality, manage (Object)](../../pipelines/policies/set-permissions.md)
-   - [Build queue, manage (Object)](../../pipelines/policies/set-permissions.md)
-   - [Build resources (Collection)](../../pipelines/policies/set-permissions.md)
-   - [Build permissions, manage (Object)](../../pipelines/policies/set-permissions.md)
-   - [Builds, manage (Object)](../../pipelines/policies/set-permissions.md)
-   - [Bypass policies when completing pull requests (Object)](../../repos/git/branch-permissions.md)
-   - [Bypass policies when pushing (Object)](../../repos/git/branch-permissions.md) 
-   ::: moniker-end
+   
    ### C
    ::: moniker range=">= azure-devops-2019"
    - [Change process of team project (Project)](change-project-level-permissions.md)
@@ -146,15 +124,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Contribute (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
    - [Customize process](set-permissions-access-work-tracking.md#process-permissions)
    ::: moniker-end
-   ::: moniker range="tfs-2018"
-   - [Check ins, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Collection-level information](change-organization-collection-level-permissions.md)
-   - [Configure Agile tools (Team)](../settings/manage-teams.md)
-   - [Contribute (Git branch, Object)](../../repos/git/branch-permissions.md)
-   - [Contribute (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
-   - [Create project collection (Server)](permissions.md#server-permissions)
-   - [Create releases (Object)](../../pipelines/policies/permissions.md)
-   ::: moniker-end
+   
    ### D
    ::: moniker range=">= azure-devops-2019"
    - [Dashboards, manage (Team)](../../report/dashboards/dashboard-permissions.md)
@@ -179,23 +149,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Destroy builds (Object)](../../pipelines/policies/permissions.md)
    ::: moniker-end
-   ::: moniker range="tfs-2018"
-   - [Dashboards, manage (Team)](../../report/dashboards/dashboard-permissions.md)
-   - [Delete build pipeline (Object)](../../pipelines/policies/permissions.md)
-   - [Delete builds (Object)](../../pipelines/policies/permissions.md)
-   - [Delete field from account](../settings/work/customize-process-field.md)
-   - [Delete project collection (Server)](permissions.md#server-permissions)
-   - [Delete release pipeline (Object)](../../pipelines/policies/permissions.md)
-   - [Delete release stage (Object)](../../pipelines/policies/permissions.md)
-   - [Delete releases (Object)](../../pipelines/policies/permissions.md)
-   - [Delete task group(Object)](../../pipelines/policies/permissions.md)
-   - [Delete test artifacts](set-permissions-access-work-tracking.md)
-   - [Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)
-   - [Delivery plans (Object)](../../organizations/security/set-permissions-access-work-tracking.md)
-   - [Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md)
-   - [Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
-   - [Destroy builds (Object)](../../pipelines/policies/permissions.md)
-   ::: moniker-end
+   
    
    ### E
    ::: moniker range=">= azure-devops-2019"
@@ -219,19 +173,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Events (Collection)](change-organization-collection-level-permissions.md)
    - [Extensions (Collection, Role)](../../marketplace/grant-permissions.md)
    ::: moniker-end
-   ::: moniker range="tfs-2018"
-   - [Edit build definition (Object)](../../pipelines/policies/permissions.md)
-   - [Edit build quality (Object)](../../pipelines/policies/permissions.md)
-   - [Edit collection-level information (Collection)](change-organization-collection-level-permissions.md)
-   - [Edit policies (Git branch, Object)](../../repos/git/branch-permissions.md)
-   - [Edit project-level information (Project)](change-project-level-permissions.md)
-   - [Edit release pipeline (Object)](../../pipelines/policies/permissions.md)
-   - [Edit release state (Object)](../../pipelines/policies/permissions.md)
-   - [Edit task group (Object)](../../pipelines/policies/permissions.md)
-   - [Edit work items in this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
-   - [Events (Collection)](change-organization-collection-level-permissions.md)
-   - [Extensions (Collection, Role)](../../marketplace/grant-permissions.md)
-   ::: moniker-end
+   
    
    ### F-L
    ::: moniker range=">= azure-devops-2019"
@@ -246,17 +188,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Library (Object, Role)](about-security-roles.md#library-asset-security-roles-variable-groups-and-secure-files)
    - [Locks, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    ::: moniker-end
-   ::: moniker range="< azure-devops-2019"
-   - [Feeds](../../artifacts/feeds/feed-permissions.md) 
-   - [Force push (rewrite history, delete branches and tags) (Git branch, Object)](../../repos/git/branch-permissions.md)
-   - [Git branch (Object)](../../repos/git/branch-permissions.md)
-   - [Inherited process (Object)](set-permissions-access-work-tracking.md#process-permissions)
-   - [Iteration paths (Object)](set-permissions-access-work-tracking.md)
-   - [Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)
-   - [Labels, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Library (Object, Role)](about-security-roles.md#library-asset-security-roles-variable-groups-and-secure-files)
-   - [Locks, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   ::: moniker-end
+   
    :::column-end:::
    :::column span="1":::
 
@@ -319,14 +251,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Project properties (Project)](change-project-level-permissions.md)
    - [Project-level information](change-project-level-permissions.md)
    ::: moniker-end
-   ::: moniker range="< azure-devops-2019"
-   - [Override check-in validation by build (Object)](../../pipelines/policies/permissions.md)
-   - [Policies, Git branch (Object)](../../repos/git/branch-permissions.md)
-   - [Policies, Git repository (Object)](../../repos/git/set-git-repository-permissions.md)
-   - [Project collection (Server)](permissions.md#server-permissions)
-   - [Project properties (Project)](change-project-level-permissions.md)
-   - [Project-level information](change-project-level-permissions.md)
-   ::: moniker-end
+   
 
    ### Q-R
    
@@ -374,12 +299,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Update tag definition (Project)](permissions.md#work-item-tags) 
    - [Use build resources (Collection)](change-organization-collection-level-permissions.md)
    ::: moniker-end
-   ::: moniker range="< azure-devops-2019"
-   - [Update build information (Object)](../../pipelines/policies/permissions.md)
-   - [Update build queue (Object)](../../pipelines/policies/permissions.md)
-   - [Update tag definition (Project)](permissions.md#work-item-tags) 
-   - [Use full Web Access features (Server)](permissions.md#server-permissions)
-   ::: moniker-end
+   
 
    ### V
    ::: moniker range=">= azure-devops-2019"
@@ -400,16 +320,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [View permissions for this node (Iteration Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [View system synchronization information (Collection)](change-organization-collection-level-permissions.md)
    ::: moniker-end
-   ::: moniker range="< azure-devops-2019"
-   - [Update build information (Object)](../../pipelines/policies/permissions.md)
-   - [Update build queue (Object)](../../pipelines/policies/permissions.md)
-   - [Use full Web Access features (Server)](permissions.md#server-permissions)
-   - [Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md)
-   - [View builds (Object)](../../pipelines/policies/permissions.md)
-   - [View release pipeline (Object)](../../pipelines/policies/permissions.md)
-   - [View releases (Object)](../../pipelines/policies/permissions.md)
-   - [View system synchronization information (Collection)](change-organization-collection-level-permissions.md)
-   ::: moniker-end
+   
    ### W
    - [Work items (Project)](set-permissions-access-work-tracking.md)
    - [Workspaces (Collection)](change-project-level-permissions.md) 

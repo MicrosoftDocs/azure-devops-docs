@@ -91,13 +91,7 @@ To add a work item, select the :::image type="icon" source="../media/icons/add_i
 The system automatically saves the work item with the title you entered. You can add as many work items you want by using this method. 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-To add a work item, select the :::image type="icon" source="../media/icons/add_icon.png" border="false"::: plus sign, enter a title, and then select **Enter**. 
 
-:::image type="content" source="media/quickstart/add-new-item-standard.png" alt-text="Screenshot showing adding a new item on Kanban board, prev nav.":::
-
-The system automatically saves the work item with the title you entered. You can add as many work items you want by using this method. 
-::: moniker-end
 
 To add details to any work item, select the title. Or, you can directly modify any field that displays. For example, you can reassign a work item by selecting **Assigned To**. For a description of each field, see [Create your backlog, Add details and estimates](../backlogs/create-your-backlog.md#estimates). You can also [add tasks or child items as checklists on your cards](add-task-checklists.md).
 
@@ -128,7 +122,7 @@ You can quickly update a field or reassign ownership directly from the board. If
 
 You can apply filters interactively to focus on a subset of work. For example, you can filter the board to focus on work assigned to at team member for a specific sprint. To start filtering, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. For more information, see [Filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 :::image type="content" source="../backlogs/media/filter-boards/filter-kb-choose-filter.png" alt-text="Screenshot showing enabled field-based filtering, earlier versions.":::
 ::: moniker-end
 
@@ -152,9 +146,7 @@ All members of a project can view and contribute to your Kanban board. To invite
 :::image type="content" source="media/quickstart/kanban-board-url.png" alt-text="Screenshot showing red square surrounding the Kanban board URL.":::
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-:::image type="content" source="media/kanban-basics-url.png" alt-text="Screenshot showing highlighted URL for the Kanban board.":::
-::: moniker-end
+
 
 To add users to your project, see [Add users to a project](../../organizations/security/add-users-team-project.md).
 
@@ -179,7 +171,7 @@ The following example image shows that on July 3, 101 items were in a *Researchi
 > The selections you make only get set for you, and persist across sessions until you change them. 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 Choose the chart as shown in the following image. 
 
 :::image type="content" source="media/kanban-basics-open-cfd.png" alt-text="Screenshot showing the cumulative flow diagram square, surrounded by red box.":::

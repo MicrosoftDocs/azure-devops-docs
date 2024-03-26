@@ -1,75 +1,75 @@
 - name: About notifications
-  href:  about-notifications.md
   displayName: view, set, see, edit, custom, subscription, team, project, personal, global
+  href: about-notifications.md
 - name: Navigate the UI
-  href:  navigating-the-ui.md
   displayName: interface, personal, team, project, organization, collection, notification, settings
+  href: navigating-the-ui.md
 - name: How email recipients are determined
-  href:  concepts-email-recipients.md
   displayName: subscription, delivery, preference, settings, preferred, team, group, alert
+  href: concepts-email-recipients.md
 - name: Manage notifications
   items:
   - name: Change your preferred email address
-    href:  change-email-address.md
     displayName: organization, user, profile, update
+    href: change-email-address.md
   - name: Manage personal notifications
-    href:  manage-your-personal-notifications.md
     displayName: change, update, email, alert, set, subscription
+    href: manage-your-personal-notifications.md
   - name: Unsubscribe from default notification
-    href:  unsubscribe-default-notification.md
     displayName: stop, settings, turn, off, avoid
+    href: unsubscribe-default-notification.md
   - name: Manage team, group, Global notifications
-    href:  manage-team-group-global-organization-notifications.md
     displayName: organization, project, collection, administrator, settings, email, alert
+    href: manage-team-group-global-organization-notifications.md
   - name: Limit your emails
-    href:  exclude-self-from-email.md
     displayName: skip, initiator, trigger, events, subscription, avoid
+    href: exclude-self-from-email.md
 - name: Follow work, link work items, use @mentions
   items:
-  - name: "Follow work & pull requests"
-    href: ../../boards/work-items/follow-work-items.md
+  - name: Follow work & pull requests
     displayName: notification, subscription, subscribe, user, story, automatic
-  - name: "Use @mentions to further discussion"
-    href:  at-mentions.md
+    href: ../../boards/work-items/follow-work-items.md
+  - name: Use @mentions to further discussion
     displayName: add, user, group, conversation, comments, PR, story, directory
+    href: at-mentions.md
   - name: Link work items and other objects
     href: ../../boards/backlogs/add-link.md
 - name: Notifications to third parties
   items:
   - name: Send notifications to third-party services (Slack, Teams)
-    href:  integrate-third-party-services.md
     displayName: service, hooks, integration, endpoint, webhook
+    href: integrate-third-party-services.md
 - name: Troubleshooting
   items:
   - name: Enable subscription logging for troubleshooting
-    href:  use-subscription-logging.md
     displayName: diagnostic, information, event, matching
-  - name: FAQs 
-    href:  faq-notifications.yml
+    href: use-subscription-logging.md
+  - name: FAQs
     displayName: recipients, multiple, activity, organization
+    href: faq-notifications.yml
   - name: Why am I not getting an email
-    href:  troubleshoot-not-getting-email.md
     displayName: event, subscription, filter, initiator, team, group, permission
+    href: troubleshoot-not-getting-email.md
   - name: Why am I getting this email
-    href:  troubleshoot-unexpected-email.md
     displayName: group, trigger, subscription, footer
+    href: troubleshoot-unexpected-email.md
   - name: Why are my emails delayed
-    href:  troubleshoot-delayed-email.md
     displayName: expected, notification, statistics, issue, filter, duplicate, subscription, volume
+    href: troubleshoot-delayed-email.md
   - name: Contacting support
-    href:  troubleshoot-contact-support.md
     displayName: developer, community, version, platform, event, ID
+    href: troubleshoot-contact-support.md
 - name: Reference
   items:
-  - name: Default permissions (Security)  
-    href: ../../project/wiki/wiki-readme-permissions.md
+  - name: Default permissions (Security)
     displayName: personal, team, project, contributors, access, security, automatic
+    href: ../../project/wiki/wiki-readme-permissions.md
   - name: View notification statistics for your organization
-    href:  view-organization-notification-statistics.md
     displayName: active, subscription, event, initiator, administrator, review
+    href: view-organization-notification-statistics.md
   - name: Default notifications
-    href:  oob-built-in-notifications.md
     displayName: subscription, automatic, alert, role, targeted, trigger
+    href: oob-built-in-notifications.md
   - name: Events
-    href:  oob-supported-event-types.md
     displayName: subscription, automatic, alert, trigger, notification
+    href: oob-supported-event-types.md

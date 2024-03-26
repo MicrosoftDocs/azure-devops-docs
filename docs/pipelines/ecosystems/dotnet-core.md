@@ -6,7 +6,7 @@ ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
 ms.date: 01/26/2024
 ms.custom: freshness-fy22q2, content-freshness, devx-track-dotnet
-monikerRange: '> tfs-2018 <= azure-devops'
+monikerRange: "<=azure-devops"
 ---
 
 # Build, test, and deploy .NET Core apps

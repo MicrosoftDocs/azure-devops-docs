@@ -32,9 +32,7 @@ To maximize a team's ability to consistently deliver high-quality software, Kanb
 :::image type="content" source="../work-items/media/about-agile/view-boards-agile.png" alt-text="Screenshot showing Kanban board, Agile template.":::
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-:::image type="content" source="media/kanban-basics-intro.png" alt-text="Screenshot of Kanban boards, Agile template, TFS 2018.":::
-::: moniker-end  
+  
 
 ## Kanban concepts and terms 
 
@@ -168,11 +166,7 @@ If you need more than three board levels, you can add more. For more information
 You can also add or modify the fields defined for a work item type (WIT), add a custom WIT, or modify the workflow. For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
  
-::: moniker range="< azure-devops-2019" 
-If you need more than three board levels, you can add more. For more information, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 
-You can also add or modify the fields defined for a work item type (WIT), add a custom WIT, or modify the workflow.  For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
-::: moniker-end
 
 ## Next steps
 

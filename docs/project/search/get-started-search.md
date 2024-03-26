@@ -46,11 +46,7 @@ Start your search using a keyword. You can then apply other options, as needed, 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-:::image type="content" source="media/shared/title-bar-search-box-select-type.png" alt-text="Search boxes in TFS 2018 and earlier":::
-
-::: moniker-end
 
 - To get results that match the input, you may need to remove filters and search again. After you see the search results, you can narrow them down by applying appropriate filters and searching again. 
 - Make sure your search terms are spelled correctly. Work item search doesn't ignore spelling errors. 

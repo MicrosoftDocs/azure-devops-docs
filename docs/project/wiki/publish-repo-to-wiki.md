@@ -55,11 +55,7 @@ If you need to switch projects, select :::image type="icon" source="../../media/
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select **Wiki**.  
-
-::: moniker-end
 
 ## Publish a Git repository to a wiki
 

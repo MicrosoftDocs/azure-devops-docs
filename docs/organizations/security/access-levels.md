@@ -55,14 +55,7 @@ Assign users or groups of users to one of the following access levels:
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"
-
-- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio Professional subscription. 
-- **Advanced** (legacy access level, deprecated in Azure DevOps Server 2019): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
-- **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
-
-::: moniker-end    
+    
 
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise. 
 
@@ -103,23 +96,7 @@ The following table indicates those features available for each supported access
 :::row-end:::
 ---
 ::: moniker-end  
-::: moniker range="tfs-2018"
-:::row:::
-   :::column span="3":::
-      **Feature**
-   :::column-end:::
-   :::column span="1":::
-      **Stakeholder**
-   :::column-end:::
-   :::column span="1":::
-      **Basic** &<br/>**Visual Studio Professional**
-   :::column-end:::
-   :::column span="1":::
-      **Advanced** & <br/>**Visual Studio Enterprise**
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end  
+  
 :::row:::
    :::column span="3":::
       [**Administer organization**](../settings/about-settings.md)  
@@ -533,13 +510,7 @@ With VS Enterprise access, users have access to any fee-based, Marketplace exten
 ::: moniker-end
 
 
-::: moniker range="< azure-devops-2019"
 
-## Advanced access
-
-Advanced access lets users manage test cases with [Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for Azure Test Plans. Advanced access user accounts gain full access to [Web-based test case management tools](../../test/create-a-test-plan.md).
-
-::: moniker-end
 
 ::: moniker range="< azure-devops"
 
@@ -587,18 +558,7 @@ You can manage access levels programmatically using the [User Entitlement - Add 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018" 
 
-You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType`, `licensingSource`, and `msdnLicenseType` parameters.
-
-| Access level (user interface)<br/>licenseDisplayName  | accountLicenseType | licensingSource | msdnLicenseType | 
-| ------------------------------------------------------|--------------------|----------------|------------------|
-| Basic                                                 | express            | account        | none             | 
-| Advanced                                              | advanced           | account        | none             | 
-| Stakeholder                                           | stakeholder        | account        | none             | 
-| VS Enterprise                                         | none               | msdn           | enterprise       | 
-
-::: moniker-end
 
 
 ::: moniker range="< azure-devops"

@@ -111,10 +111,7 @@ You can list work items based on the following criteria...
       - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  
       - [Assigned to a team's sprint window](query-by-date-or-current-iteration.md#current-iteration-plus-minus-n)  
       ::: moniker-end
-      ::: moniker range="tfs-2018"
-      - [Assigned to a member of a team](query-by-workflow-changes.md#group)
-      - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
-      ::: moniker-end
+      
 
       **Build and test field queries**  
       - [List bugs and linked test cases](build-test-integration.md#linked-bugs)

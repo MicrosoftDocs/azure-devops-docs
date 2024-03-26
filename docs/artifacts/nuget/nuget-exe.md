@@ -64,23 +64,7 @@ Azure Artifacts allows developers to both publish and download NuGet packages fr
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build and Release**, and then select **Packages**.
-
-1. Select your feed from the dropdown menu, and then select **Connect to feed**.
-
-    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing the connect to feed button in TFS":::
-
-1. Select **NuGet** from the left panel. Make sure you've installed the prerequisites if this is your first time using Azure Artifacts with NuGet.exe, otherwise select **Get the tools** to download and install them.
-
-1. Run the command highlighted in step number two (2) to add your feed source URL to your *nuget.config* file.
-
-    :::image type="content" source="../media/nugeturl.png" alt-text="A screenshot showing how to connect to your feed with NuGet in TFS.":::
-
-::: moniker-end
 
 > [!IMPORTANT]
 > [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider) requires NuGet `4.8.0.5385` or later. Azure Artifacts recommends using NuGet version `5.5.x` or later as it includes crucial bug fixes related to cancellations and timeouts.
@@ -129,41 +113,7 @@ If you're using an older version of NuGet, follow the instructions below to conn
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-## Legacy project setup
-
-If you're using an older version of NuGet, follow the instructions below to connect to your feed:
-
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build and Release**, and then select **Packages**.
-
-1. Select your feed from the dropdown menu, and then select **Connect to feed**.
-
-    :::image type="content" source="../media/connect-to-feed.png" alt-text="A screenshot of the connect to feed button in TFS.":::
-
-1. Select **NuGet**, and then copy your source URL. Replace `/v3/index.json` with `/v2`.
-
-    :::image type="content" source="../media/nuget-consume-url.png" alt-text="A screenshot showing where to find the source URL in TFS.":::
-
-1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat), and make sure you scope it to the right organization you want to access and select one of the following scopes: **Packaging (read)**, **Packaging (read and write)**, or **Packaging (read, write, and manage)**.
-
-1. Run the following command in a command prompt window to add your feed source to your *nuget.config* file:
-
-    ```Command
-    nuget sources add -name <FEED_NAME> -source <SOURCE_URL> -username <ANY_STRING_BUT_NOT_NULL> -password <YOUR_PERSONAL_ACCESS_TOKEN>
-    ```
-
-1. If your organization is connected to Microsoft Entra ID, you must first authenticate with your AD credentials and then add your personal access token using the *setapikey* command:
-
-    ```Command
-    nuget sources add -name <FEED_NAME> -source <SOURCE_URL> -username <AZURE_ACTIVE_DIRECTORY_USERNAME> -password <AZURE_ACTIVE_DIRECTORY_PASSWORD>
-    
-    nuget setapikey <YOUR_PERSONAL_ACCESS_TOKEN> -source <SOURCE_URL> 
-    ```
-
-::: moniker-end
 
 ## Related articles
 

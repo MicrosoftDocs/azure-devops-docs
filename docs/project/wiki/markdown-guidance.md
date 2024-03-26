@@ -46,10 +46,7 @@ Not all Markdown syntax is supported across all features in Azure DevOps. The fo
 
 For more information, see [Definition of Done (Kanban board)](../../boards/boards/add-columns.md#definition-of-done), [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), [pull request](../../repos/git/pull-requests.md), [README files](../../repos/git/create-a-readme.md), and [wiki](add-edit-wiki.md).
 
-::: moniker range="tfs-2018"
-> [!NOTE]
-> Rich Markdown rendering in code repositories is supported for TFS 2018.2 and later versions. You can create rich README.md files in the code repositories. The Markdown rendering of the MD files in code repositories supports HTML tags, block quotes, emojis, image resizing, and mathematical formulas. There is parity in Markdown rendering in Wiki and MD files in code.
-::: moniker-end
+
 
 ## Headers
 
@@ -169,12 +166,7 @@ Combine these elements to apply emphasis to the text.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-> [!NOTE]
-> There is no Markdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text</u>.
-
-::: moniker-end
 
 **Example:**
 
@@ -663,12 +655,7 @@ We support both inline and block [KaTeX](https://khan.github.io/KaTeX/function-s
 
 To include mathematical notation surround the mathematical notation with a `$` sign for inline and `$$` for block,  as shown in the following examples:
 
-::: moniker range="tfs-2018"
 
-> [!NOTE]  
-> This feature is supported within Wiki pages and pull requests for TFS 2018.2 or later versions.
-
-::: moniker-end
 
 ### Example: Greek characters
 
@@ -1061,10 +1048,7 @@ Use the batch API `pagesBatch` to see the daily quantity of visits to all pages 
 
 Enter the pound sign (`#`), and then enter a work item ID.
 
-::: moniker range="tfs-2018"
-> [!NOTE]
-> This feature is available with TFS 2018.2 and later versions.
-::: moniker-end
+
 
 <a name="html"></a>
 

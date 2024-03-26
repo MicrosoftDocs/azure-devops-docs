@@ -11,9 +11,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 <a name='agent-phase'></a>
 
@@ -28,15 +26,7 @@ Azure Pipelines does not support job priority for YAML pipelines. To control whe
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-You can organize your build or release pipeline into jobs. Every pipeline has at least one job. A job is a series of steps that run sequentially as a unit.
-In other words, a job is the smallest unit of work that can be scheduled to run.
-
-> [!NOTE]
-> You must install TFS 2018.2 to use jobs in build processes. In TFS 2018 RTM you can use jobs in release deployment processes.
-
-::: moniker-end
 
 ## Define a single job
 
@@ -190,9 +180,7 @@ Although you can add steps for deployment tasks in a `job`, we recommend that yo
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 To add jobs to your build pipeline, edit the pipeline on the Pipelines page. Select **...**  to add a job.
@@ -241,13 +229,7 @@ Jobs can be of different types, depending on where they run.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-* **Agent pool jobs** run on an agent in the agent pool. These jobs are available in build and release pipelines.
-* **Server jobs** run on TFS. These jobs are available in build and release pipelines.
-* **Deployment group jobs** run on machines in a deployment group. These jobs are available only in release pipelines.
-
-::: moniker-end
 
 ### Agent pool jobs
 
@@ -286,9 +268,7 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 You have the option to specify demands in the pipeline, in the jobs, or both.
@@ -341,9 +321,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 You add a server job in the editor by selecting '...' on the **Pipeline** channel in the **Tasks** tab of a pipeline. The properties for the server job are displayed when you select the job in the editor.
@@ -440,24 +418,18 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 To add a new job, select '...' on the pipeline channel in the **Tasks** tab of the pipeline. The conditions and order of execution for a job are displayed when you select the job in the editor.
 
-::: moniker range="> tfs-2018"
+::: moniker range="<=azure-devops"
 When you specify multiple jobs in a build pipeline, they run in parallel by default. You can specify the order in which jobs must execute by configuring dependencies between jobs. Job dependencies aren't supported in release pipelines. Multiple jobs in a release pipeline run in sequence. 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-Multiple jobs you add to a build or a release pipeline run in sequence. You can't configure the order of dependencies between jobs in this version of TFS.
-::: moniker-end
 
-::: moniker range="tfs-2018"
-Multiple jobs you add to a release pipeline run in sequence. You can't configure the order of dependencies between jobs in this version of TFS. You also can't use jobs with build pipelines.
-::: moniker-end
+
+
 
 For example, the pipeline shown below divides the overall release
 execution into separate execution jobs by using two agent jobs
@@ -558,13 +530,11 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 
 #### [Classic](#tab/classic/)
-::: moniker range=">= tfs-2018"
+::: moniker range="<=azure-devops"
 
 Use the **Run this job** option on an agent or server job to run the tasks
   only when specific [conditions](conditions.md) are met. Select a predefined
@@ -573,9 +543,7 @@ Use the **Run this job** option on an agent or server job to run the tasks
   expressions can access variables available in the release pipeline.
 
 ::: moniker-end
-::: moniker range="tfs-2018"
-Conditions aren't supported in this version of TFS.
-::: moniker-end
+
 
 * * *
 <h2 id="timeouts">Timeouts</h2>
@@ -604,9 +572,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 Select the job and then specify the timeout value.
@@ -691,9 +657,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 To run multiple jobs using multi-configuration option,
@@ -758,9 +722,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 Specify the **multi-agent** option on an agent job to apply slicing.
@@ -793,9 +755,7 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 Job variables aren't yet supported in the web editor.
@@ -811,11 +771,7 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-When you run an agent pool job, it creates a workspace on the agent. The workspace is a directory in which it downloads the source, runs steps, and produces outputs. The workspace directory can be referenced in your job using `Agent.BuildDirectory` variable. Under this, various subdirectories are created:
-
-::: moniker-end
 
 - `Build.SourcesDirectory` is where tasks download the application's source code.
 - `Build.ArtifactStagingDirectory` is where tasks download artifacts needed for the pipeline or upload artifacts before they're published.
@@ -868,9 +824,7 @@ In addition to workspace clean, you can also configure cleaning by configuring t
     :::image type="content" source="media/clean-setting.png" alt-text="Clean setting."::: 
 
 ::: moniker-end
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 When you run a pipeline on a self-hosted agent, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
@@ -919,9 +873,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 In a release pipeline, you may choose to skip the
@@ -929,7 +881,7 @@ In a release pipeline, you may choose to skip the
   during the job execution. Use this option if you want to implement
   your own custom logic for downloading artifacts by using tasks, or if the tasks in a particular job don't rely on the artifacts.
 
-::: moniker range=">=tfs-2018"
+::: moniker range="<=azure-devops"
 
 Alternatively, you can choose to download specific [artifacts](../release/artifacts.md) during the job execution in a release. Use this option if the tasks in a particular job rely on only specific artifacts.
 
@@ -964,9 +916,7 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="tfs-2018"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 Select the **Allow scripts to access OAuth token** option in the control options for the job. The token is available as the environment variable `SYSTEM_ACCESSTOKEN`.

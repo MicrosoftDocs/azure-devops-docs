@@ -60,10 +60,7 @@ Most work item type customizations are made to the work item type XML definition
 - To add or customize a work item type by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to **Allow**.    
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-- To list work item types, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
-- To add or customize a work item type, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to **Allow**.
-::: moniker-end
+
 
 To get added as an administrator, see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).
 
@@ -274,17 +271,7 @@ When you rename a work item type that belongs to a category, you have to update 
 For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories).  
 
 
-::: moniker range="tfs-2018"
 
-## Enable features after upgrade 
-
-What customizations can you make and still use the Configure Features Wizard to update my project after an on-premises upgrade?  
-
-You can add custom work item types and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) will update your projects and you'll get access to the latest features.
-
-Changing the workflow or renaming a work item type might require you to perform some manual operations when updating your project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](on-premises-xml-process-model.md#before-you-customize).  
- 
-::: moniker-end
 
 ## Related articles
 
