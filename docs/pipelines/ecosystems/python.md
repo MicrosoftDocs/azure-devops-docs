@@ -262,7 +262,7 @@ To view the test results, select the **Tests** tab.
 
 ## Clean up
   
-When you're done with your quickstart, you can delete the project you created in Azure DevOps.
+When you're done with this quickstart, you can delete the project you created in Azure DevOps.
 
 1. Select the **Project settings** gear icon in the lower left corner of the page.
 1. At the bottom of the **Project overview** page, select **Delete**.
