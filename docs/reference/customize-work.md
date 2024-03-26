@@ -404,9 +404,7 @@ To learn more about project collections, see [Manage project collections](/azure
 Several work item types support the test experience within the web portal **Test** pages and Test Manager client. For an Inherited process, you can customize Test Plan, Test Suite, and Test Case, work item types as you would any other work item type. For an On-premises XML process, you can customize all test-related work item types&mdash;Test Plan, Test Suite, Test Case, Shared Steps, and Shared Parameters&mdash;as you would any other work item type. 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-Several work item types support the test experience within the web portal **Test** pages and Test Manager client. You can customize these work item types&mdash;Test Plan, Test Suite, Test Case, Shared Steps, and Shared Parameters&mdash;as you would any other work item type. 
-::: moniker-end
+
 
 The following image illustrates the supported link relationships.  
 

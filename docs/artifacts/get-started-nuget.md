@@ -57,23 +57,7 @@ Azure Artifacts offers two types of feeds: project-scoped feeds and organization
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build and Release** > **Packages**.
-
-1. Select your feed from the dropdown menu.
-
-1. Select **Connect to feed**.
-
-    :::image type="content" source="./media/connect-to-feed.png" alt-text="A screenshot showing the connect to feed button in TFS.":::
-
-1. Select **NuGet**, and then follow the instruction to connect to your feed.
-
-    :::image type="content" source="./media/connect-to-nuget-feed-tfs.png" alt-text="A screenshot showing how to connect to your feed in TFS.":::
-
-::: moniker-end
 
 ## Download packages
 

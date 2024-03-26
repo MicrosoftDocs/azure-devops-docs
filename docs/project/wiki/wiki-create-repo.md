@@ -24,11 +24,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Each team project wiki is powered by a Git repository in the back-end. When you create a team project, a wiki Git repo isn't created by default. Create a Git repository to store your wiki Markdown files.
-
-::: moniker-end
 
 <a id="prereq">  </a>
 
@@ -65,10 +61,7 @@ Create a new Git repository that stores all your wiki pages and related artifact
 > ![Screenshot of Create wiki, Git repo for your wiki or publish existing repo Markdown files.](media/wiki/create-wiki-or-publish-create-option.png)
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Create wiki, Git repo for your wiki.](media/wiki/wiki-create.png)
-::: moniker-end
+
 
 If you don't have access to create a wiki Git repository or if you don't have access to any of the existing wikis, the following message appears.
 

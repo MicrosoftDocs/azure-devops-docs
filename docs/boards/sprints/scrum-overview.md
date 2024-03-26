@@ -68,11 +68,7 @@ Sprint backlogs and Taskboards provide a filtered view of work items a team has 
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
-> [!div class="mx-imgBorder"]  
-> [Screenshot of Web portal, choose Boards, Backlogs, Sprint.](../work-items/media/view-add/view-sprint-backlog.png)
 
-::: moniker-end
 
 
 ## How selected sprints show up on the backlog
@@ -100,13 +96,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-
-For example, by selecting Sprints 1 through 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
-
-![Screenshot showing how selected iterations show up on Web portal, sprint backlogs.](media/define-sprints/selected-team-iterations-vsts.png)
-
-::: moniker-end  
+  
 
 ## Track team capacity
 

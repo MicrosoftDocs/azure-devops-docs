@@ -120,29 +120,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-1. Add a query folder under **Shared queries** or a subfolder. Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu for the folder and choose **New query folder**.  
-
-	![Screenshot of New query folder menu option and New query folder dialog, TFS 2018. ](media/set-query-perm-new-folder.png)  
-
-1. To set permissions for the folder, choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu for the folder you just added and choose **Security**.
-
-   ![Screenshot of context menu for a query folder, Security option, TFS 2018.](media/set-permissions-query-folder-security.png)
-
-2. Change the permissions so that the team member or group can contribute and manage permissions for the folder.  
-
-   Here we add the Web team and grant them permissions to create and manage permissions to all queries and folders under the Triage folder.  
-
-   ![Screenshot of Permissions dialog for a Shared query folder, TFS 2018.](media/set-permissions-triage-folder-dialog.png)  
-
-   Choose the **Add...** menu to add a user identity or group.
-
-   **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
-
-3. (Optional) Turn off inheritance. Default is On. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. For more information, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
-
-::: moniker-end
 
 ## Set permissions on a shared query 
 
@@ -164,19 +142,7 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon and select **Security**. 
-
-   ![Screenshot of Open query permissions context menu, TFS 2018.](media/set-query-perm-security-menu-option.png)
-
-1. Change the permissions so that the team member or group can't edit, delete, or change permissions for the query.  
-
-   Here we deny permissions for the Project Administrators group.   
-
-   ![Screenshot of Permissions dialog for a shared query, TFS 2018.](media/set-permissions-deny-for-query.png)
-
-::: moniker-end
  
 
 ## Related articles  

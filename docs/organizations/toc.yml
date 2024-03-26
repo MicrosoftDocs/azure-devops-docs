@@ -135,14 +135,14 @@
 - name: Resources
   items:
   - name: Get started
-    href: ../get-started/index.yml 
+    href: ../get-started/index.yml
   - name: Security, Permissions, & Access
-    href: security/index.yml 
+    href: security/index.yml
   - name: Azure Boards customization
-    href: ../reference/index.yml 
+    href: ../reference/index.yml
   - name: Service hooks
     href: ../service-hooks/overview.md?toc=/azure/devops/organizations/toc.json
   - name: Marketplace & extensibility
-    href: ../marketplace-extensibility/index.yml 
+    href: ../marketplace-extensibility/index.yml
   - name: Get extensions for Visual Studio >>
     href: /visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2019&preserve-view=true#install-or-uninstall-visual-studio-extensions

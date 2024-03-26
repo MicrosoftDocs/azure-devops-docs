@@ -25,7 +25,7 @@ The Kanban board helps you visualize your team's workflow, including the types o
 > - To manage columns on a backlog or in query results, see [Change column options](../backlogs/set-column-options.md).   
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 > [!NOTE]    
 > - To add columns to a Taskboard, you need to customize the workflow. For more information, see [Add or modify a work item type](../../reference/add-modify-wit.md). 
@@ -155,43 +155,7 @@ Do the following steps to add and edit your columns.
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018"  
-
-1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
-
-2. Select **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to open the common configuration settings dialog for the Kanban board. 
-
-   :::image type="content" source="media/add-columns-open-settings-ts.png" alt-text="Screenshot that shows the Settings icon on the Kanban board.":::
-
-3. Select **Columns** and then a column tab to see all the settings that you can modify. Your initial column settings look similar to the following example. 
-
-   :::image type="content" source="media/add-columns-settings-dialog-ts.png" alt-text="Screenshot that shows column settings in the Settings dialog.":::
-
-4. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
-
-	Rename the first, second, and third columns to **Backlog**, **Analyze**, and **Develop**. Then, add a column and label it **Test**. 
-
-	You can rename a column directly from the Kanban board. 
-
-   :::image type="content" source="media/rename-kanban-columns-direct-ts.png" alt-text="Screenshot that shows renaming a column directly on a Kanban board.":::
-
-	Or, you can open the dialog and change one or more settings for a Kanban column. 
-
-   :::image type="content" source="media/add-columns-settings-dialog-add-test-ts.png" alt-text="Screenshot that shows the Settings dialog and selections for adding a Test column.":::
-
-5. To change the column order, drag the column tab to the position that you want.  
-
-6. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: on the column tab and select **Remove** from the menu. 
-
-   :::image type="content" source="media/columns/remove-column.png" alt-text="Screenshot that shows the selections for deleting a column in the Settings dialog."::: 
-
-7. [Change state mappings as needed](#state-mappings) for added columns, added workflow states, or added WITs.  
-
-   Usually, you need to update state mappings when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting, add [WITs to the Requirement category](../../reference/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../../organizations/settings/work/customize-process-workflow.md).  
-
-8. When you're done with your changes, select **Save**.  
-
-::: moniker-end  
+  
 
 <a id="update-status"> </a>
 
@@ -272,24 +236,7 @@ Before you split columns, ensure you [mapped each stage of your team's process t
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018"
 
-1. [Open your Kanban board](kanban-quickstart.md) and choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
-
-   :::image type="content" source="media/add-columns-open-settings-ts.png" alt-text="Screenshot of Kanban board, open common configuration settings.":::
-
-2. Choose **Columns** and then choose the column tab that you want to split. Place a check in the checkbox to cause the column to split.   
-
-	> [!NOTE]   
-	> There are different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team chose to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
-
-   :::image type="content" source="media/columns/split-columns-tfs-2018.png" alt-text="Screenshot of Kanban board settings dialog, Split columns.":::
-
-3. When you're done with your changes, choose **Save**.  
-
-	> [!TIP]    
-	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields).  
-::: moniker-end
 
 ### List work items in a *Doing* or *Done* column 
 
@@ -323,21 +270,7 @@ Team members can quickly double-check the criteria by choosing the Information t
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018" 
 
-1. Open your Kanban board.
-
-2. Choose ![settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
-
-   :::image type="content" source="media/add-columns-open-settings-ts.png" alt-text="Screenshot showing the settings gear highlighted for selection.":::
-
-3. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.   
-
-   :::image type="content" source="media/columns/definition-of-done-defined.png" alt-text="Screenshot of columns management screen, entering plain text for Definition of Done.":::
-
-4. When you're done with your changes, choose **Save**.  
-
-::: moniker-end
 
 ## Do more tasks
 

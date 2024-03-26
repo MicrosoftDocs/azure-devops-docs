@@ -27,11 +27,7 @@ This can be done easily by employing the additional capacity offered by the clou
 This article discusses how you can configure the
 [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2) to run tests in parallel by using multiple agents.
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 ## Pre-requisite
 

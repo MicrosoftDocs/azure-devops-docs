@@ -49,21 +49,7 @@ All dashboards are associated with a team. You must be a team administrator, pro
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-1. Open a web browser, connect to your project, and select **Dashboards**. 
-
-:::image type="content" source="media/dashboards-go-to.png" alt-text="Screenshot of dashboards directory-previous-navigation.":::
-
-2. Select the team whose dashboards you want to view. To switch your team focus, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md).
-
-3. Select the name of the dashboard to modify it. 
-
-For example, here we select to view the Work in Progress dashboard. 
-
-:::image type="content" source="media/dashboards/choose-dashboard.png" alt-text="Screenshot of selecting a team dashboard."::: 
-
-If you need to switch to a different project, select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
-::: moniker-end  
+  
 
 ## Add a widget   
 
@@ -84,12 +70,7 @@ To remove a widget, select ![actions icon](../../media/icons/actions-icon.png) *
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
-Select ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify a dashboard. Select ![add a widget icon](media/add-widget-icon.png) to add a widget to the dashboard.  
 
-The [widget catalog](widget-catalog.md) describes all available widgets, many of which are scoped to the selected team context.  
-
-::: moniker-end
 
 Or, you can drag and drop a widget from the catalog onto the dashboard.
 
@@ -162,20 +143,9 @@ When you're finished with your changes, select  **Done Editing** to exit dashboa
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"  
-Select ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
 
-To remove a widget, select the ![actions icon](../../media/icons/actions-icon.png) actions icon and select **Delete** it.  
 
-:::image type="content" source="media/dashboards/delete-widget.png" alt-text="Screenshot of deleting a widget from a dashboard.":::
 
-::: moniker-end
-
-::: moniker range="tfs-2018"  
-
-When you're finished with your changes, select ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
-
-::: moniker-end
 
 <a id="copy"></a>
 
@@ -190,14 +160,7 @@ To copy a configured widget to another team dashboard, select the ![Actions icon
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-To copy a configured widget to another team dashboard, select 
-the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Add to dashboard** and then the dashboard to copy it to. 
-
-<img src="media/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" />  
-
-::: moniker-end
 
 ## Widget size
 
@@ -238,8 +201,4 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
-- [Burndown guidance](burndown-guidance.md)
-- [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-::: moniker-end
+

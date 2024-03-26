@@ -16,9 +16,7 @@ By default, a job or stage runs if it doesn't depend on any other job or stage, 
 By default, a step runs if nothing in its job has failed yet and the step immediately preceding it has finished.
 You can customize this behavior by forcing a stage, job, or step to run even if a previous dependency fails or by specifying a custom condition.
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"

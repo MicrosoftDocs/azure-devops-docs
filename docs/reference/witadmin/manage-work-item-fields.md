@@ -36,21 +36,7 @@ You can manage the fields defined for work item types that are defined for a pro
 ::: moniker-end
 
   
-::: moniker range="< azure-devops-2019"
 
--   `changefield`: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:   
-    -   **Data type** for `PlainText` or `HTML` fields.    
-        > [!IMPORTANT]  
-        >  When you upgrade Team Foundation Server from an earlier version to the current version, the type assignment for the **Description** (System.Description) field is automatically converted from `PlainText` to `HTML`. With the `changefield` command, you can restore the content of this field to display plain text.  
-  
-    -   **Friendly name** that displays in the work item query. This name may differ from that displayed on the work item form.    
-    -   **Reporting attributes** which includes the name of the field as it appears in a report, the reference report name, and the reporting type.  
-    -   **Synchronization** with Active Directory - you can enable/disable synchronization of person name fields.   
--   `deletefield`: Deletes the specified field.    
--   `indexfield`: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.   
--   `listfields`: Lists the attributes for all fields or a specified field.
-
-::: moniker-end
 
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)] 
@@ -85,19 +71,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-  
-```  
-witadmin changefield /collection:CollectionURL /n:RefName   [/name:NewName]    [/syncnamechanges:true | false]   [/reportingname:ReportingName]    [/reportingrefname:ReportingRefName]   [/reportingtype:Type]   [/reportingformula:Formula]   [/type:PlainText | HTML]   [/noprompt]  
 
-witadmin deletefield /collection:CollectionURL /n:RefName [/noprompt]  
- 
-witadmin indexfield /collection:CollectionURL /n:Name /index:on|off   
-  
-witadmin listfields /collection:CollectionURL /n:RefName [/unused]  
-```  
-
-::: moniker-end
   
 ### Parameters  
   
@@ -119,14 +93,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 
 
 
-::: moniker range="< azure-devops-2019"
-### Indexed fields  
 
-A query index is created based on those fields that have indexing enabled. This index improves the response time when running queries that include indexed fields.  
-  
-By default, the following fields are indexed: Assigned To, Created Date, Changed By, State, Reason, Area ID, Iteration ID, and Work Item Type. If there are other fields that your team frequently uses in their queries, you can add them to the query index.  
-
-::: moniker-end
   
 ### Synchronizing person names with Active Directory  
 
@@ -378,17 +345,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 Enter **y** at the confirmation prompt to complete this step.  
 
 
-::: moniker range="< azure-devops-2019"
 
-## Q & A  
-  
-### Q: What customizations can I make and still use the Configure Features Wizard to update my project after an upgrade?  
-
-**A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
-  
-Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
-
-::: moniker-end
   
 ## Related articles 
 

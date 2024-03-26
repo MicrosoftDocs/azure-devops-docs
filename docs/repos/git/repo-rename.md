@@ -50,26 +50,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. 1. From the web portal, open the project administration page for your project and select **Version Control**.
-
-   ![Version control settings](media/repo-mgmt/version-control-settings.png)
-
-2. Select the repo you want to rename under **Git repositories** on the left and select **...**. Select **Rename repository...** from the menu.
-
-   ![Rename a repository](media/repo-mgmt/rename-repo-2107.png)
-
-   > [!NOTE]
-   > If the **Repositories** pane is not expanded, select **>** to expand it and display the list of repositories.
-   >
-   >![Repositories pane](media/repo-mgmt/expand-repositories-pane.png)
-
-3. Enter a new repo name in the **Repository name** field in the dialog, then select **Rename**.
-
-   ![Rename repository confirm](media/repo-mgmt/rename-repository-confirm.png)
-
-::: moniker-end
 
 
 <a name="repos-rename" />
@@ -108,13 +89,7 @@ Each member of your team must update their local Git repos to continue connectin
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-- Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
-
-   ![Retrieve the clone URL](media/repo-mgmt/clone-git-repo.png)
-
-::: moniker-end
 
 
 ### Update your remote in Visual Studio

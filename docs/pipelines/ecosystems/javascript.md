@@ -32,11 +32,7 @@ You must have the following items in Azure DevOps:
 
 ::: zone pivot="pipelines-yaml"
 
-::: moniker range="tfs-2018"
 
-YAML is not available for TFS 2018.
-
-::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
 

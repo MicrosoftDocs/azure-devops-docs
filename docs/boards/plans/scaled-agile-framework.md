@@ -385,18 +385,6 @@ The articles in this series were updated from a previous white paper developed i
 
 
 <!---
-::: moniker range="tfs-2018" 
 
-![SAFe® architectural overview &copy; D. Leffingwell](https://www.scaledagileframework.com/wp-content/uploads/2018/07/46BP-PORTFOLIO.png) 
-
-### SAFe® 5.0 
-
-![SAFe® overview 5.0 &copy; D. Leffingwell](media/safe/safe-overview-v5.0.png) 
-
-Business Agility 
-Enterprise Solution Delivery
-Agile Product Delivery 
-
-::: moniker-end
 
 -->

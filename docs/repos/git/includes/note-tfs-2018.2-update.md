@@ -8,7 +8,4 @@ ms.date: 10/15/2021
 ms.subservice: azure-devops-repos-git
 ---
 
-::: moniker range="tfs-2018"
-> [!NOTE]
-> The feature documented in this article requires TFS 2018 Update 2 or later version. 
-::: moniker-end 
+ 

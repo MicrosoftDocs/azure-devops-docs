@@ -99,10 +99,7 @@ In each work item form, describe work, assign contributors, track status, and co
 
 For more information, see [Default permissions and access for Azure Boards](permissions-access-boards.md).
 
-::: moniker range="tfs-2018"
-> [!NOTE]   
-> The images shown in this article correspond to the latest version of Azure Boards. While they may differ from those shown in earlier, on-premises versions of Azure DevOps, they are similar in the functions described unless otherwise noted. 
-::: moniker-end
+
 
 <a id="define-new-work">  </a>
 

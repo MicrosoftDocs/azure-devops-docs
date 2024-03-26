@@ -22,20 +22,11 @@ There are two types of copy functions you can use. The first is to copy or dupli
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-There are two types of copy functions you can use. The first is to copy or duplicate a single work item, referred to as copy or clone. 
-
-::: moniker-end
 
 The second function is to copy a multi-selected list of work items to the clipboard, referred to as copy as HTML or copy to clipboard. 
 
-::: moniker range="< azure-devops-2019"
 
-> [!TIP]    
-> You can't copy or clone linked work items at this time. For more information, see the [Azure Boards FAQs](../faqs.yml#how-do-i-copy-or-clone-a-work-item-with-all-linked-items). 
-
-::: moniker-end
 
 [!INCLUDE [temp](../includes/image-differences.md)] 
 
@@ -100,17 +91,7 @@ In other words, **copy** a work item to create a new work item with prepopulated
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
-    ![web portal, user story work item form, open context menu, click Create copy of work item](media/copy-work-item-copy-clone-ts.png) 
-1. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide more details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
-    ![Copy work item dialog](media/copy-work-item-copy-clone-ts-dialogue.png)  
-
-1. Select **OK**.
-
-1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
-::: moniker-end
 
 > [!TIP]    
 > Copied or cloned work items always have an ID that is greater than the work items from which they were copied or cloned.   
@@ -127,7 +108,7 @@ If you have a large number of work items whose type you want to change, use [Cha
 
 You can copy an HTML formatted table of selected items from either a backlog page or query results list. Then, you can send an email of this list using your choice of email client, or paste the list into a Word document, Excel spreadsheet, or other application. 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 > [!NOTE]  
 > The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
 ::: moniker-end

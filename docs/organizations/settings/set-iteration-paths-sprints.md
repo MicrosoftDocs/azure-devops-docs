@@ -84,11 +84,7 @@ You define both areas and iterations for a project from the **Project Settings >
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-You define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, you open the admin context by choosing **Settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
-
-::: moniker-end
 
 #### [Browser](#tab/browser/)
 
@@ -120,13 +116,7 @@ Define both areas and iterations for a project from the **Project configuration 
 
 <a id="admin-intro-tfs-2015"></a>
 
-::: moniker range="tfs-2018"
 
-From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open project administration pages. Then, choose **Iterations**.  
-
-![Screenshot of Open the project administration page for TFS 2018.](../../media/settings/open-project-settings-tfs-2015.png)
-
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -240,31 +230,7 @@ From **Iterations**, you can add iterations that teams can then select for their
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-<a id="define-sprints-team-services"></a>
-
-Add and modify area paths from the **Work** > **Iterations** page from the project admin or settings context.   
-
-For Scrum-based projects, you see the following set of sprints. 
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Project Settings, Work, Iterations page for TFS 2018.](media/areas/modify-areas-its-iterations-ts.png) 
-
-1. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the iteration path and choose **Edit**.
-	
-   Choose the calendar icon to choose new dates. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Work, Iterations page, and calendar icon for setting new dates in TFS 2018.](media/iterations/schedule-sprints-calendar.png) 	
-
-2. When you're finished, you have a set of sprints scheduled - like this: 
-
-   :::image type="content" source="media/areas/modify-areas-its-iterations-scheduled-ts.png" alt-text="Screenshot of Work, Iterations page, scheduled set of sprints for TFS 2018.":::
-
-   Your next step is to [choose the sprints each team uses](#activate-team-services). 
-
-::: moniker-end
 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
@@ -357,14 +323,7 @@ You define both areas and iterations from **Project settings > Boards > Team con
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
 
-You open team settings from the upper navigation bar. Select the team you want and then choose **Team settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::. For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Open team settings for TFS 2018.](media/team-defaults/open-team-settings-horz.png) 
-
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -458,40 +417,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
 
-1.	Open **Work** > **Iterations** for a team.  
-
-	Here, we navigate to the Fabrikam Fiber Team.  
-
-	![Screenshot of Work, Iterations page for a team.](../../boards/sprints/media/dsprints-team-work-iterations-page.png)  
-
-    <a id="set-backlog-iteration">  </a>
-2. **Backlog iteration**. Only work items assigned to an iteration equal to or under this backlog iteration appear in the team's backlogs and boards. 
-
-    ![Screenshot of Work, Iterations page for a team, set team backlog iteration for backlogs and boards.](media/team-defaults/stdefaults-team-backlog-iteration.png)
-
-    Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
-
-3. **Default iteration**. The default iteration defines the iteration that's used when you create a work item from the team dashboard and queries page. You can use an explicit value or use <strong>@CurrentIteration</strong> to assign new work items to the team's current iteration. The same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration) is used.  
-
-	For example, you might want all new work items added to a future iteration path, which you use to triage and assign to specific sprints at periodic intervals.
-
-	![Screenshot of Work, Iterations page for team, set team default for new work items for TFS 2018.](media/team-defaults/stdefaults-team-default-iteration.png)
-
-4. **Active sprints**. Add an iteration for each sprint backlog you want active for the team. Add each sprint, one by one, by selecting it from the menu.  
-
- 	![Screenshot of Work, Iterations page for team, select sprint to activate for TFS 2018.](../../boards/sprints/media/dsprints-add-sprints-to-team-iterations-page.png)
-
-	When you're done, you should see a list of sprints, similar to the following.  
-
-	![Screenshot of Work, Iterations page for team, activates sprint list for TFS 2018.](../../boards/sprints/media/dsprints-selected-active-sprints.png) 
-
-	If you don't see the sprints or dates that you need, then [return to the project administration context and define them there](set-iteration-paths-sprints.md#define-sprints-team-services).  
-
-5. To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
-
-::: moniker-end
 
 <a id="activate-sprints-tfs">  </a>
 

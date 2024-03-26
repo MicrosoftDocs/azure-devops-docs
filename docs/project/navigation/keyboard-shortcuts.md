@@ -58,11 +58,7 @@ You can use these keyboard shortcuts when you work in a list in the web portal f
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-## Code  
-
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/code-shortcuts.md)]
 
@@ -112,12 +108,7 @@ You can use these keyboard shortcuts when you work in a list in the web portal f
 
 You can use the following keyboard shortcuts when you [manage or edit wiki pages](../../project/wiki/add-edit-wiki.md). To view valid shortcuts, select **?** on a **Wiki** page.
 
-::: moniker range="tfs-2018"
 
-> [!NOTE]  
-> Shortcuts you can use when you manage or edit a wiki page are available in the web portal for TFS 2018.2 and later versions.  
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -157,7 +148,7 @@ The following screenshot shows the list of keyboard shortcuts as it appears in A
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 ### Manage wiki page shortcuts
 

@@ -24,18 +24,4 @@ ms.date: 06/23/2022
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Select **Build and Release** > **Packages**.
-
-1. Select your feed from the dropdown menu or [create one](../../get-started-nuget.md#create-a-feed) if you haven't.
-
-1. Select **Connect to feed**.
-
-    :::image type="content" source="../../media/connect-to-feed.png" alt-text="Connect to feed - TFS":::
-
-1. Select **NuGet** and follow the instruction to connect to your feed.
-
-    :::image type="content" source="../../media/connect-to-nuget-feed-tfs.png" alt-text="Connect to NuGet feed - TFS":::
-
-::: moniker-end

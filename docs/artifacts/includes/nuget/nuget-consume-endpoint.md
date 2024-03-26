@@ -18,14 +18,4 @@ ms.date: 01/26/2023
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Select **Build and Release**, and then select **Packages**.
-
-1. Select your feed from the dropdown menu.  
-
-1. Select **Connect to feed**, and then copy your **Source** URL.
-
-    :::image type="content" source="../../media/nuget-consume-url.png" alt-text="A screenshot showing the package source URL in TFS.":::
-
-::: moniker-end

@@ -50,16 +50,7 @@ From there, you can use a pull request, cherry-pick, or merge to get the commits
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![View all pushes for your restored branch](media/branches/restore_deleted_branch_pushes.png)
-
-You can navigate to a specific commit, then select **New branch** from the **...** icon.
-From there, you can use a pull request, cherry-pick, or merge to get the commits back into the desired branch.
-
-![New branch from commit](media/branches/deleted_branch_new_branch_from_commit.png)
-
-::: moniker-end
 
 
 

@@ -13,7 +13,7 @@
 - name: Archived articles
   items:
   - name: Import & export categories
-    href: /previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories 
+    href: /previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories
     displayname: exportcategories, importcategories
   - name: Manage link types
     href: /previous-versions/azure/devops/reference/witadmin/manage-link-types

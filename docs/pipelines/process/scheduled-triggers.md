@@ -12,9 +12,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 Azure Pipelines provides several types of triggers to configure how your pipeline starts.
 
@@ -215,11 +213,7 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML isn't supported in TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -234,11 +228,7 @@ If your repository is Azure Repos Git, GitHub, or Other Git, then you can also s
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
-
-::: moniker-end
 
 * * *
 
@@ -286,11 +276,7 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML isn't supported in TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -310,11 +296,7 @@ In this example, the classic editor scheduled trigger has two entries, which pro
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
-
-::: moniker-end
 
 
 #### Example: Nightly build with different frequencies
@@ -335,12 +317,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-
-![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
-
-::: moniker-end
 
 
 * * *
@@ -398,11 +375,7 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML isn't supported in TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -449,11 +422,7 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML isn't supported in TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 ::: moniker range=">= azure-devops-2020"
@@ -480,11 +449,7 @@ Classic scheduled pipelines don't have a **Scheduled runs** view, but you can vi
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
-
-::: moniker-end
 
 
 * * *
@@ -492,14 +457,9 @@ Classic scheduled pipelines don't have a **Scheduled runs** view, but you can vi
 <a name="always"></a>
 ## Running even when there are no code changes
 
-::: moniker range="<=tfs-2018"
 
-> [!NOTE] 
-> Scheduled builds always run on schedule regardless of code changes on TFS 2018.1 and lower.
 
-::: moniker-end
-
-::: moniker range=">=tfs-2018"
+::: moniker range="<=azure-devops"
 
 By default, your pipeline doesn't run as scheduled if there have been no code changes since the last successful scheduled run. For instance, consider that you've scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you don't make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline doesn't run as scheduled during the weekend. 
 
@@ -527,29 +487,15 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML isn't supported in TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
-::: moniker range="<=tfs-2018"
 
-> [!NOTE] 
-> Scheduled builds always run on schedule regardless of code changes on TFS 2018.1 and lower.
 
-::: moniker-end
 
-::: moniker range="tfs-2018"
 
-> [!NOTE]
-> The [Skip scheduled builds if nothing has changed in the repo](/previous-versions/azure/devops/2017/dec-11-vsts#skip-scheduled-builds-if-nothing-has-changed-in-the-repo) support described in this section is supported in TFS 2018.2 and higher.
-
-::: moniker-end
-
-::: moniker range=">=tfs-2018"
+::: moniker range="<=azure-devops"
 
 To configure the scheduled pipeline to build only if there has been a change since the last build, check **Only schedule builds if the source or pipeline has changed**.
 

@@ -32,15 +32,4 @@ You can specify page titles which contain one or more of these special character
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-> [!div class="mx-tdCol2BreakAll"]
-> |Restriction type| Restriction|
-> |---------------|-----------|
-> | File name     | The fully qualified page path shouldn't exceed 235 characters.  |
-> | Uniqueness    | Page titles are case sensitive and must be unique within the wiki hierarchy.|
-> |Special characters| - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `/ \ : < > * ? | - #`.<br>- Must not start or end with a period `.`.<br>- Titles of pages added offline must not contain a blank space.|
-> | File size     | Must not exceed the maximum of 18 MB. |
-> | Attachment file size |  Must not exceed the maximum of 19 MB.  |
-
-::: moniker-end

@@ -25,11 +25,7 @@ Reviewing the code coverage result helps to identify code path(s) that are not
 covered by the tests. This information is important to improve the test collateral
 over time by reducing the test debt.
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 ## Example
 
@@ -39,18 +35,7 @@ code coverage for [JavaScript](../ecosystems/customize-javascript.md) using Ista
 
 ## View results 
 
-:::moniker range="< azure-devops-2019"
 
-The code coverage summary can be viewed in the build timeline view.
-The summary shows the overall percentage of line coverage. 
-
-![View code coverage results](media/review-code-coverage-results/view-code-coverage-summary-2018.png)
-
-> [!NOTE]
-> Merging code coverage results from multiple [test runs](test-glossary.md) is
-> limited to .NET and .NET Core at present. This will be supported for other formats in a future release.
-
-:::moniker-end
 
 :::moniker range=">= azure-devops-2019"
 
@@ -76,14 +61,7 @@ The results can be viewed and downloaded on the **Code coverage** tab.
 
 ## Artifacts
 
-:::moniker range="< azure-devops-2019"
 
-The code coverage artifacts published during the build can be viewed under the
-**Build artifacts published** milestone in the timeline view.
-
-![View code coverage artifact](media/review-code-coverage-results/view-code-coverage-artifact-2018.png)
-
-:::moniker-end
 
 :::moniker range=">= azure-devops-2019"
 

@@ -264,9 +264,7 @@ Learn more about [variable reuse with templates](templates.md).
 [!INCLUDE [temp](includes/access-variables-through-env.md)]
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 You can set a variable for a build pipeline by following these steps:
@@ -535,9 +533,7 @@ steps:
 > By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Contributions from forks](../repos/github.md#contributions-from-forks).
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 [!INCLUDE [temp](includes/set-secrets.md)]
@@ -576,9 +572,7 @@ Some tasks define output variables, which you can consume in downstream steps an
 In YAML, you can access variables across jobs by using [dependencies](expressions.md#dependencies). 
 ::: moniker-end
 
-::: moniker range="<azure-devops-2019"
-Some tasks define output variables, which you can consume in downstream steps within the same job.
-::: moniker-end
+
 
  - To reference a variable from a different task within the same job, use `TASK.VARIABLE`.
  - To reference a variable from a task from a different job, use `dependencies.JOB.outputs['TASK.VARIABLE']`.
@@ -1005,9 +999,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML isn't supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 ### Set a job-scoped variable from a script
@@ -1072,9 +1064,7 @@ jobs:
 For more information about counters, dependencies, and other expressions, see [expressions](expressions.md).
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 You can use any of the supported expressions for setting a variable. Here's an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
@@ -1144,9 +1134,7 @@ To allow a variable to be set at queue time, make sure the variable doesn't also
 
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 You can choose which variables are allowed to be set at queue time, and which are fixed by the pipeline author.
@@ -1285,9 +1273,7 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not supported in TFS.
-::: moniker-end
+
 
 #### [Classic](#tab/classic/)
 When you set a variable with the same name in multiple scopes, the following precedence applies (highest precedence first).

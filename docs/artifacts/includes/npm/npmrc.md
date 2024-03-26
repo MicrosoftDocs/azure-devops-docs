@@ -76,16 +76,3 @@ ms.date: 09/11/2023
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build and Release**.
-
-1. Select **Packages**, and then select **Connect to feed**.
-
-1. Select **npm** and then select **Generate npm credentials**, and then copy the credentials and add them to your .npmrc file.
-
-    :::image type="content" source="../../media/tfs2018-connect-to-npm-feed.png" alt-text="Screenshot showing how to generate npm credentials in TFS.":::
-
-::: moniker-end

@@ -317,109 +317,109 @@
       href: test/codecoverage-for-pullrequests.md
 - name: Deploy apps
   items:
-    - name: Create a multistage pipeline
-      href: process/create-multistage-pipeline.md
-      displayName: multi stage, multi stage pipelines 
-    - name: Deploy apps to environments
-      items:
-        - name: Define and target environments
-          href: process/environments.md
-          displayName: clusters, vms, resources
-        - name: Kubernetes resource
-          href: process/environments-kubernetes.md
-          displayName: clusters, aks, manifest, service account
-        - name: Virtual machine resource
-          href: process/environments-virtual-machines.md
-    - name: Deploy apps using VMs
-      items:
-        - name: Linux virtual machines
-          href: ecosystems/deploy-linux-vm.md
-    - name: Deploy mobile apps
-      items:
-        - name: Manage signing certificates
-          href: apps/mobile/app-signing.md
+  - name: Create a multistage pipeline
+    displayName: multi stage, multi stage pipelines
+    href: process/create-multistage-pipeline.md
+  - name: Deploy apps to environments
+    items:
+    - name: Define and target environments
+      displayName: clusters, vms, resources
+      href: process/environments.md
+    - name: Kubernetes resource
+      displayName: clusters, aks, manifest, service account
+      href: process/environments-kubernetes.md
+    - name: Virtual machine resource
+      href: process/environments-virtual-machines.md
+  - name: Deploy apps using VMs
+    items:
+    - name: Linux virtual machines
+      href: ecosystems/deploy-linux-vm.md
+  - name: Deploy mobile apps
+    items:
+    - name: Manage signing certificates
+      href: apps/mobile/app-signing.md
 - name: Deploy apps (Classic)
   items:
-    - name: Release pipelines overview
-      href: release/index.md
-      displayName: release, deploy, deployment
-    - name: Deploy from multiple branches
-      href: release/deploy-multiple-branches.md
-      displayName: multiple branches, deployment
-    - name: Deploy pull request Artifacts
-      href: release/deploy-pull-request-builds.md
-      displayName: pr release, deployment
-    - name: Classic release pipelines
-      href: release/define-multistage-release-process.md
-      displayName: classic release, classic deployment
-    - name: Stage templates in Azure Pipelines
-      href: release/env-templates.md
-      displayName: environment, templates, stages
-    - name: Deploy to a Windows VM
-      href: release/deploy-webdeploy-iis-deploygroups.md
-      displayName: windows vm, deployment vm
+  - name: Release pipelines overview
+    displayName: release, deploy, deployment
+    href: release/index.md
+  - name: Deploy from multiple branches
+    displayName: multiple branches, deployment
+    href: release/deploy-multiple-branches.md
+  - name: Deploy pull request Artifacts
+    displayName: pr release, deployment
+    href: release/deploy-pull-request-builds.md
+  - name: Classic release pipelines
+    displayName: classic release, classic deployment
+    href: release/define-multistage-release-process.md
+  - name: Stage templates in Azure Pipelines
+    displayName: environment, templates, stages
+    href: release/env-templates.md
+  - name: Deploy to a Windows VM
+    displayName: windows vm, deployment vm
+    href: release/deploy-webdeploy-iis-deploygroups.md
 - name: Deploy to Azure
   items:
-    - name: Overview
-      href: overview-azure.md
-    - name: Connect to Azure
-      items:
-        - name: Azure Resource Manager service connection
-          href: library/connect-to-azure.md
-          displayName: resource manager, service connection, service principal
-        - name: Troubleshoot workload identity service connections
-          href: release/troubleshoot-workload-identity.md
-        - name: Manually configure workload identity service connections
-          href: release/configure-workload-identity.md
-    - name: Azure App Service (Web Apps)
-      items:
-        - name: App Service
-          href: /azure/app-service/deploy-azure-pipelines
-        - name: Azure Web App for Containers
-          href: apps/cd/deploy-docker-webapp.md
-          displayName: containers, docker, azure web app
-    - name: Azure Functions
-      href: /azure/azure-functions/functions-how-to-azure-devops
-    - name: Azure Resource Manager (ARM) templates
-      items:
-       - name: Use a Resource Manager template to deploy
-         displayName: Resource Manager, ARM, azure
-         href: apps/cd/azure/deploy-arm-template.md
-    - name: Azure Databricks
-      items:
-       - name: Data pipeline overview
-         displayName: data science, machine learning
-         href: apps/cd/azure/cicd-data-overview.md
-       - name: Build a data pipeline
-         href: apps/cd/azure/build-data-pipeline.md
-    - name: Azure Machine Learning
-      href: /azure/machine-learning/how-to-devops-machine-learning
-    - name: Azure Databases
-      items:
-       - name: Azure SQL database
-         href: targets/azure-sqldb.md
-       - name: Azure MySQL database
-         href: /azure/mysql/single-server/azure-pipelines-mysql-deploy
-    - name: Azure Virtual Machine Scale Set
-      items:
-       - name: Deploy a virtual machine scale set
-         displayName: vmss, custom image
-         href: apps/cd/azure/deploy-virtual-scale-set-java.md
-    - name: Azure Stack
-      href: targets/azure-stack.md
-    - name: Azure Container Registry
-      items:
-       - name: Build and push to Azure Container Registry with a Docker template
-         href: ecosystems/containers/acr-template.md
-       - name: Build and push to Azure Container Registry - Managed Service Identity
-         href: ecosystems/containers/publish-to-acr.md
-    - name: Azure Kubernetes Service
-      items:
-       - name: Build and deploy to Azure Kubernetes Service
-         href: /azure/aks/devops-pipeline
-    - name: Azure Policy Compliance (Classic)
-      displayName: policy, compliance
-      href: /azure/governance/policy/tutorials/policy-devops-pipelines
+  - name: Overview
+    href: overview-azure.md
+  - name: Connect to Azure
+    items:
+    - name: Azure Resource Manager service connection
+      displayName: resource manager, service connection, service principal
+      href: library/connect-to-azure.md
+    - name: Troubleshoot workload identity service connections
+      href: release/troubleshoot-workload-identity.md
+    - name: Manually configure workload identity service connections
+      href: release/configure-workload-identity.md
+  - name: Azure App Service (Web Apps)
+    items:
+    - name: App Service
+      href: /azure/app-service/deploy-azure-pipelines
+    - name: Azure Web App for Containers
+      displayName: containers, docker, azure web app
+      href: apps/cd/deploy-docker-webapp.md
+  - name: Azure Functions
+    href: /azure/azure-functions/functions-how-to-azure-devops
+  - name: Azure Resource Manager (ARM) templates
+    items:
+    - name: Use a Resource Manager template to deploy
+      displayName: Resource Manager, ARM, azure
+      href: apps/cd/azure/deploy-arm-template.md
+  - name: Azure Databricks
+    items:
+    - name: Data pipeline overview
+      displayName: data science, machine learning
+      href: apps/cd/azure/cicd-data-overview.md
+    - name: Build a data pipeline
+      href: apps/cd/azure/build-data-pipeline.md
+  - name: Azure Machine Learning
+    href: /azure/machine-learning/how-to-devops-machine-learning
+  - name: Azure Databases
+    items:
+    - name: Azure SQL database
+      href: targets/azure-sqldb.md
+    - name: Azure MySQL database
+      href: /azure/mysql/single-server/azure-pipelines-mysql-deploy
+  - name: Azure Virtual Machine Scale Set
+    items:
+    - name: Deploy a virtual machine scale set
+      displayName: vmss, custom image
+      href: apps/cd/azure/deploy-virtual-scale-set-java.md
+  - name: Azure Stack
+    href: targets/azure-stack.md
+  - name: Azure Container Registry
+    items:
+    - name: Build and push to Azure Container Registry with a Docker template
+      href: ecosystems/containers/acr-template.md
+    - name: Build and push to Azure Container Registry - Managed Service Identity
+      href: ecosystems/containers/publish-to-acr.md
+  - name: Azure Kubernetes Service
+    items:
+    - name: Build and deploy to Azure Kubernetes Service
+      href: /azure/aks/devops-pipeline
+  - name: Azure Policy Compliance (Classic)
+    displayName: policy, compliance
+    href: /azure/governance/policy/tutorials/policy-devops-pipelines
 - name: Deploy apps using containers
   items:
   - name: Build images
@@ -637,14 +637,14 @@
 - name: Integrate with 3rd party software
   items:
   - name: Microsoft Teams
-    href: integrations/microsoft-teams.md
     displayName: integrations, teams
+    href: integrations/microsoft-teams.md
   - name: Slack
     displayName: integrations, slack
     href: integrations/slack.md
   - name: Integrate with ServiceNow
-    href: release/approvals/servicenow.md
     displayName: integrations, servicenow
+    href: release/approvals/servicenow.md
 - name: Migrate
   items:
   - name: Migrate from Classic pipelines

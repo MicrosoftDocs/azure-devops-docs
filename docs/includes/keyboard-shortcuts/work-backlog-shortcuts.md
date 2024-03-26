@@ -45,25 +45,4 @@ The following screenshot shows the list of keyboard shortcuts as it appears in A
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-You can use the following keyboard shortcuts when you work on a **Work** > **Backlogs** page. These shortcuts work when you are on a product backlog, portfolio backlog, or sprint backlog page.
-
-### Backlogs
-
-|Shortcut|Action|
-|---|---|
-|Ctrl+Home|Move item to top|
-|m, b|Move item to backlog|
-|m, i|Move item to current iteration|
-|m, n|Move item to next iteration|
-|n|Open new item panel|
-|Insert|Add child|
-|Ctrl+Shift+f|Filter results|
-|r|Toggle show/hide parents|
-
-The following screenshot shows the list of keyboard shortcuts as it appears in Team Foundation Server 2018:
-
-:::image type="content" source="../../media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt-text="Screenshot that shows TFS 2018 Work Backlogs page keyboard shortcuts.":::
-
-::: moniker-end

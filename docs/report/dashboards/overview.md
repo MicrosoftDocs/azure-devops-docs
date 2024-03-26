@@ -60,11 +60,7 @@ SQL Server Reporting Services is the legacy reporting solution available with Az
 - **Excel status and trend reports**: Support generating custom work tracking reports by using Excel starting with a flat-list query. For more information, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
 - **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server).
 ::: moniker-end  
-
-::: moniker range="tfs-2018"
-- **Excel status and trend reports**: Support generating custom work tracking reports by using Excel starting with a flat-list query. For more information, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
-- **SQL Server reports**: Allow users access to out-of-the-box SQL Server reports and support to create customized SQL reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server).
-::: moniker-end
+   
 
 ### Supported features for access levels
 
@@ -241,11 +237,7 @@ For more information, see [Define a query](../../boards/queries/using-queries.md
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![Screenshot that shows an Active bugs chart.](media/gs-monitor-charts-active-bugs.png)
-
-::: moniker-end
 
 #### Sequence for adding query-based charts to a dashboard
 
@@ -399,7 +391,7 @@ Use the interactive controls to choose the start and end of the sprint and count
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 Azure Boards provides several in-context reports that derive from the work-tracking data store. From your backlog or board, you can view the Cumulative Flow Diagram and team Velocity reports by choosing the miniature charts that appear on each page. From a Sprint backlog, you can view the sprint burndown.
 
@@ -434,7 +426,7 @@ You can add the in-context reports to a dashboard by using the copy to dashboard
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 > [!NOTE]
 > You can't add the in-context reports to a dashboard. However, you might find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data, which you can add to the dashboard.
@@ -533,10 +525,7 @@ Azure Pipelines provides an in-context **Test failures** report, derived from An
 Add data to support reporting requirements by adding a custom field [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-[Add a custom field](../../reference/add-modify-field.md) to add data to support reporting requirements.
-::: moniker-end
 
 ## Marketplace widgets and extensibility
 

@@ -105,38 +105,7 @@ check out the information on the service that you're interested in.
  
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1.	Open the admin page for a project in web access.
-
-    :::image type="content" source="./media/openadmin.png" alt-text="Screenshot of the admin page."::: 
-
-1. 	Create a subscription by running the wizard.
-
-    :::image type="content" source="./media/createfirst.png" alt-text="Screenshot of highlighted box, Create subscription, to select to run the subscription wizard."::: 
- 
-1.	Select the service you want to integrate with.
-
-    :::image type="content" source="./media/select-service.png" alt-text="Screenshot showing services selection to integrate.":::  
- 
-1.	Select the event to trigger on and any filters (if applicable).
-
-    :::image type="content" source="./media/trello-wizard-event.png" alt-text="Screenshot showing selection of the event to trigger on.":::  
- 
-1.	Select an action to run on the target service. 
-
-	> [!NOTE]
-    > The list of available actions may be limited based on the event type you selected. 
-
-    :::image type="content" source="./media/trello-wizard-action.png" alt-text="Screenshot showing selected action to perform on the target service.":::  
-
-1.	To confirm the settings are correct, test the subscription and then finish the wizard.
-
-    :::image type="content" source="./media/test1.png" alt-text="Screenshot showing test notification 1.":::  
-	
-    :::image type="content" source="./media/test2.png" alt-text="Screenshot showing test notification 2.":::  
- 
-::: moniker-end
 
 ## FAQs
 

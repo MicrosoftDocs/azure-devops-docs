@@ -45,15 +45,7 @@ You can manage access levels for the collections defined on the application tier
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-From a user context, open **Server Settings** by choosing the :::image type="icon" source="../../boards/media/icons/gear_icon.png" border="false"::: gear icon. The tabs and pages available differ depending on which settings level you access.
-
-- From the web portal home page for a project (for example, `http://MyServer:8080/tfs/DefaultCollection/MyProject/`), open **Server settings**.
-
-   ![Screenshot of TFS 2017, Web portal, open the Server settings admin context.](media/access-levels-2017-open-admin-context.png) 
-
-::: moniker-end
 
 ## Add a user or group to an access level 
 
@@ -75,21 +67,7 @@ Changes you make to the access level settings take effect immediately.
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access.
-
-	![Screenshot of TFS 2017, Web portal, adding user or group.](media/access-levels-2017-stakeholder-access.png)
-
-	If you don't see **Access levels**, you aren't an administrator and need to [get permission](/azure/devops/server/admin/add-administrator).
-
-2. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
-
-   ![Screenshot of Add users and group dialog.](media/project-level-permissions-add-a-user.png)  
-
-3. Choose **Save changes**.
-
-::: moniker-end
 
 ## Change the access level for a user or group 
 
@@ -114,11 +92,7 @@ You can set an access level from its page. Choose **Set as default access level*
 ![Screenshot of Stakeholder access level, set as default.](media/change-access-levels/set-stakeholder-as-default-2019.png)
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![Screenshot of Admin context, Control panel, Access levels, Stakeholder tab, set as default access level.](media/change-access-levels-set-default.png)
- 
-::: moniker-end
 
 > [!IMPORTANT]  
 > Service accounts get added to the default access level. If you set Stakeholder as the default access level, you must add the Azure DevOps service accounts to the Basic or an advanced access level group.
