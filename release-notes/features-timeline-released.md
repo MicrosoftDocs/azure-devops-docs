@@ -37,6 +37,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="4"><a href="2024/sprint-236-update.md" data-raw-source="[26 March 2024](2024/sprint-236-update.md)"> 26 March  2024</a></td>
+    <td>Personal access token (PAT) APIs to return maximum allowed lifespan</td><td>General</td><td>Future</td></tr>
+    <td>Azure service connections indicate when a secret has expired</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New AzureFileCopy@6 task supports secret-less configurations</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Resource utilization alerts for Azure Pipeline agents</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
+<tr>
     <td rowspan="5"><a href="2024/sprint-235-update.md" data-raw-source="[29 February 2024](2024/sprint-235-update.md)"> 29 February  2024</a></td>
     <td>Show GitHub pull request details (preview)</td><td>Boards</td><td>Future</td></tr>
     <td>SSH-RSA deprecation</td><td>Repos</td><td>Future</td></tr>
