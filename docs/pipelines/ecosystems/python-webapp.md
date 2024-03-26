@@ -373,12 +373,12 @@ Create a pipeline to build and deploy your Python web app to Azure App Service. 
 1. You might be prompted to enter your GitHub password again as a confirmation. 
 1. If the Azure Pipelines extension isn't installed on GitHub, GitHub prompts you to install the **Azure Pipelines** extension.
 
-   :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
+    :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
 
-   On this page, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**.
-
-  :::image type="content" source="../media/python/github-pipelines-install-02.png" alt-text="Screenshot of Approve and Install Azure Pipelines extension on GitHub.":::
-
+    On this page, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**.
+    
+    :::image type="content" source="../media/python/github-pipelines-install-02.png" alt-text="Screenshot of Approve and Install Azure Pipelines extension on GitHub.":::
+    
 1. In the **Configure your pipeline** dialog, select **Python to Linux Web App on Azure**.
 1. Select your Azure subscription and select **Continue**.  
 1. If you're using your username and password to authenticate, a browser opens for you to sign in to your Microsoft account.
