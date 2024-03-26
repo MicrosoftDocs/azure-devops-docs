@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/15/2024
+ms.date: 03/26/2024
 ---
 
 # Allowed IP addresses and domain URLs
@@ -26,6 +26,8 @@ If your organization is secured with a firewall or proxy server, you must add ce
 <a id="range-restrictions"></a>
 
 ## IP addresses and range restrictions
+
+::: moniker range="azure-devops"
 
 ### Outbound connections
 
@@ -63,6 +65,8 @@ If you're currently allowing the `13.107.6.183` and `13.107.9.183` IP addresses,
 
 > [!NOTE]
 > [Azure Service Tags](/azure/virtual-network/service-tags-overview) aren't supported for *outbound* connections.
+
+::: moniker-end
 
 ### Inbound connections
 
@@ -296,7 +300,6 @@ For more information about hosted Windows, Linux and macOS agents, see [Microsof
 
 ### Azure Pipelines Self-hosted agents
 If you're running a firewall and your code is in Azure Repos, see [Self-hosted Linux agents FAQs](../../pipelines/agents/linux-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with), [Self-hosted macOS agents FAQs](../../pipelines/agents/osx-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) or [Self-hosted Windows agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
-
 
 ## Azure DevOps import service
 
