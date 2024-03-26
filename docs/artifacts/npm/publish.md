@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Publish and restore npm packages from the command line
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
 Using Azure Artifacts, you can easily manage the publication and retrieval of npm packages from various sources, including feeds and public registries like npmjs.com. This article will walk you through setting up your project, and publishing and restoring your npm packages from your Azure Artifacts feed.
 
