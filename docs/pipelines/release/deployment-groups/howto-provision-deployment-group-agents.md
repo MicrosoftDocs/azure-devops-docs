@@ -1,7 +1,7 @@
 ---
 title: Provision agents for deployment groups
 ms.custom: devx-track-arm-template
-description: How to provision agents for deployment groups in Azure Pipelines and Team Foundation Server (TFS)
+description: How to provision agents for deployment groups in Azure Pipelines
 ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
 ms.topic: conceptual
 ms.author: ronai
@@ -28,7 +28,6 @@ You can install the agent in any one of these ways:
 
 For information about agents and pipelines, see:
 
-* [Parallel jobs in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
 * [Parallel jobs in Azure Pipelines](../../licensing/concurrent-jobs.md).
 * [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
