@@ -40,12 +40,12 @@
   - name: Create work tracking charts
     href: dashboards/charts.md
     displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line, flat, query
-  - name: Configure charts for work items 
+  - name: Configure charts for work items
     href: dashboards/configure-chart-work-items-widget.md
     displayname: tags, flat, query
   - name: Example query charts
     href: ../boards/queries/example-query-charts.md
-    displayname: status, monitor, trend, widgets  
+    displayname: status, monitor, trend, widgets
   - name: View/configure CFD
     href: dashboards/cumulative-flow.md
     displayname: cumulative flow diagram, in-context report, team, analytics
@@ -90,21 +90,21 @@
   - name: Work item field index
     href: ../boards/work-items/guidance/work-item-field.md?toc=/azure/devops/report/toc.json
   - name: Rollup of work & other fields
-    href: ../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/report/toc.json 
+    href: ../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/report/toc.json
 - name: Reference
   items:
   - name: Markdown guidance
     href: ../project/wiki/markdown-guidance.md?toc=/azure/devops/report/toc.json
   - name: Configure or add a project portal
     href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/report/toc.json
-- name: Extension samples  
+- name: Extension samples
   items:
   - name: Add a dashboard widget
     href: ../extend/develop/add-dashboard-widget.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Add a chart widget
     href: ../extend/develop/add-chart.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Add an Analytics widget
-    href: extend-analytics/example-analytics-widget.md 
+    href: extend-analytics/example-analytics-widget.md
 - name: REST API Reference
   items:
   - name: Dashboards
@@ -136,4 +136,4 @@
   - name: Power BI documentation >>
     href: /power-bi/
   - name: Developer Community, Power BI support forum >>
-    href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI 
+    href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI

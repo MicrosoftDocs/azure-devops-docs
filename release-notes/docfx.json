@@ -34,6 +34,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "feedback_system": "Standard",
       "ms.subservice": "azure-devops-release-notes",
       "uhfHeaderId": "MSDocsHeader-AzureDevOps",
       "ms.topic": "article",

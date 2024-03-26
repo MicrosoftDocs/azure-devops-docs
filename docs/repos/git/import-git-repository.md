@@ -16,25 +16,7 @@ ms.subservice: azure-devops-repos-git
 
 This article shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your Azure DevOps project.
 
-::: moniker range="tfs-2018"
 
->[!IMPORTANT]
->The **Import repository** feature is currently not working if you are importing a GitHub repo using TFS 2017.1 to TFS 2018.1. For more information about this issue, see [Weak cryptographic standards removal notice](https://githubengineering.com/crypto-removal-notice/) and [Unable to connect to GitHub due to TLS 1.2 only change](https://developercommunity.visualstudio.com/content/problem/201457/unable-to-connect-to-github-due-to-tls-12-only-cha.html)
-
-There are several workarounds to this issue:
-* You can import a GitHub repo into Azure Devops using the steps provided later in this article, [Manually import a repo using git CLI](#manual-import-git-cli).
-* You can set a machine-wide .NET registry key on your Application Tier servers to enable them to use all available TLS protocol versions. After setting these registry keys, you will need to recycle the TFS application pools (or restart the servers) for the settings to be activated. Open an elevated command prompt and run the following commands to set the registry keys.
- 
-     ```
-      reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:64
-      reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:32
-     ```
-
-* On your Application Tier servers, you can modify the web.config file to change the targetFramework from `<httpRuntime targetFramework="4.5"` to `<httpRuntime targetFramework="4.6"`.
-
-This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 and higher](/visualstudio/releasenotes/tfs2018-update2).
-
-::: moniker-end
 
 ## Prerequisites
 
@@ -78,19 +60,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-From the repo drop-down, select **Import repository**.
-
-![Import Repository Option](media/Import-Repo/ImportRepository.png)
-
-If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
-
-If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo using git CLI](#manual-import-git-cli).
-
-![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
-
-::: moniker-end
 
 
 ## Import into an existing empty repo 

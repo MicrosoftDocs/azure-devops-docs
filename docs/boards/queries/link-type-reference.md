@@ -44,15 +44,7 @@ A specific field maintains a count of links for the first three link types, such
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018"  
-
-- [**Work link type**](#work-link-type): links work items including select test case management work items
-- [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
-- [**External link type**](#external-link-type): connects a work item to an external object, such as a code object, build, or storyboard.   
-
-A specific field maintains a count of links for each of these link types, such as *Related Link Count*, *Hyperlink Count*, and *External Link Count*.  
-
-::: moniker-end 
+ 
 
 Link types are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you want to create.  To learn more about the different topologies, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology).
 

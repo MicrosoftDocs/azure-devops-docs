@@ -56,15 +56,7 @@ Within the page you may select a specific view or artifact, such as a team backl
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-You open a service by choosing it from the horizontal blue bar. Then, select from the available pages.
-
-For example, here we select **Work>Work Items**. 
-
-![Open a service, previous navigation gif](media/go-to-app/project-app-page-horizontal-selection.png)
-
-::: moniker-end
 
 <a id="team-settings"></a> 
 
@@ -95,18 +87,7 @@ Select configurations are made to teams through the team settings pages. For an 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-You open team settings from the top navigation bar. Select the team you want and then choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. To learn more about switching your team focus, see [Switch project, repository, team](go-to-project-repo.md#switch-team-context).
-
-> [!div class="mx-imgBorder"]  
-> ![Open team settings](../../organizations/settings/media/team-defaults/open-team-settings-horz.png)  
-
-1. Choose one of the pages **General**, **Iterations**, **Areas**, or **Templates** to configure settings for the team. To learn more, see [Manage teams](../../organizations/settings/manage-teams.md). 
-
-1. To add a team administrator, add team members, or change the team profile, choose **Overview**. 
-2. 
-   ::: moniker-end
 
 
 <a id="project-admin-context"></a> 
@@ -130,21 +111,9 @@ Administrators configure resources for a project and manage project-level permis
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-From a user context, open **Project settings** by choosing the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. 
-::: moniker-end
 
-::: moniker range="tfs-2018"
 
-<a id="admin-intro"></a>
-<a id="admin-intro-team-services"></a> 
- 
-Open any admin page by choosing it's name. Choose or hover over the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
-
-![Project Settings](../../media/settings/open-project-settings-horz.png) 
-
-::: moniker-end
 
 
 <a id="collection-admin-context"></a> 
@@ -181,36 +150,10 @@ Members of the Project Collection Administrators group configure resources for a
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
-
-1. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open **Organization settings** or **Collection settings**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](../../media/settings/open-organization-settings.png) 
-
-1. From there, you can choose a page. Settings are organized based on the service they support. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Account settings, Projects](media/go-to-app/open-admin-settings-horizontal.png) 
-
-::: moniker-end
 
 
-::: moniker range="tfs-2018"
 
-## Open Server settings 
 
-Members of the Team Foundation Server Administrators group configure resources for the server instance from the Server settings pages. 
-
-1. From the web portal home page for a project, choose or hover over the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
-
-	<img src="../../organizations/security/media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" />  
-
-1. Choose **Access levels**, to set access levels for a member or group. For details, see [Change access levels](../../organizations/security/change-access-levels.md).  
-
-	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator). 
-
-::: moniker-end
 
 
 ## Related articles 

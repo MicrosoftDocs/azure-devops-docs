@@ -22,9 +22,7 @@ Many manual tests require performing an identical sequence of steps and test dat
 This article describes how to define and use **Shared Steps**. To learn how to define and reference **Shared Parameters**, see [Repeat a test with different data](repeat-test-with-different-data.md).
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)]
-
-[!INCLUDE [note-new-ui](includes/note-new-ui.md)]
-  
+ 
 ## Create shared steps
 ::: moniker range=">=azure-devops-2020"
 
@@ -49,7 +47,7 @@ If you reopen the work item, you can select the shared step to open a new shared
    ![Screenshot shows the new work item with the shared steps.](media/shared-steps/shared-steps-work-item.png)  
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 While you edit a test case, select a sequence of steps that you want to share:  
   
@@ -84,7 +82,7 @@ You can add shared steps to other test cases.
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 Now you can use the shared steps in another test case:  
   
@@ -104,7 +102,7 @@ When you [run a test](run-manual-tests.md), you can either mark the whole shared
 
 ::: moniker-end
 
-::: moniker range="<=azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 When you [run a test](run-manual-tests.md), you can either mark the whole shared sequence as passed or failed, or mark each step separately:  
   

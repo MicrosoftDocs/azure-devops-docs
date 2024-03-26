@@ -191,7 +191,7 @@ Once an extension is installed, you can find it under the value of the `$AZURE_E
 
 * * *
 
-::: moniker range="> tfs-2018 < azure-devops-2020"
+::: moniker range="<azure-devops-2020"
 
 1. Go to [Marketplace.visualstudio.com](https://marketplace.visualstudio.com/azuredevops).
 2.	Sign in using your Azure DevOps credentials.
@@ -228,136 +228,7 @@ Once an extension is installed, you can find it under the value of the `$AZURE_E
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. From your Azure DevOps Server home page (```https://{server}:8080/tfs/```), 
-   go to the project collection where you want to install the extension.
-
-2. Open the extensions menu and choose **Browse Marketplace**.
-   
-   :::image type="content" source="media/browse-marketplace2-new.png" alt-text="Screenshot showing highlighted Browse Marketplace button.":::
-
-3. Find and select the extension that you want to install.
-   
-   :::image type="content" source="media/get-tfs-extensions/connected/marketplace-select-extension.png" alt-text="Screenshot showing selected extension example.":::
-
-4. Select the extension, and then **Install**.
-
-5. Confirm the project collection that you want to install this extension to.
-   
-   :::image type="content" source="media/get-tfs-extensions/connected/select-team-project-collection.png" alt-text="Selection showing Project collection.":::
-
-6. Finish installing your extension.
-
-7. Assign the extension to users who need access. 
-   Otherwise, you can go to your project collection to use your extension. 
-   Tell your team about this extension, so they can start using its capabilities too. 
-   
-   :::image type="content" source="media/get-tfs-extensions/connected/assign-extension-to-users.png" alt-text="Screenshot showing installed extension confirmation.":::
-
-### Install extensions when disconnected
-
-When you're disconnected from Azure DevOps Server, you can install free and preview extensions. First, you [download the extension](#download-from-the-marketplace), then [upload it to Azure DevOps Server](#upload-extension-to-azure-devops), and then [install it in a project collection](#install-extension-in-your-project-collection).
-
-#### Download from the Marketplace
-
-1. Sign in to the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
-
-2. Find the extension that you want to install.
-   
-   :::image type="content" source="media/get-tfs-extensions/standalone/marketplace-find-extension.png" alt-text="Screenshot showing search for extension in the Marketplace.":::
-  
-   :::image type="content" source="media/get-tfs-extensions/standalone/marketplace-find-extension2.png" alt-text="Screenshot showing search for extension.":::
-  
-3. Download and save your extension.
-   
-   :::image type="content" source="media/get-tfs-extensions/standalone/download-extension.png" alt-text="Screenshot showing download extension.":::
-
-#### Upload extension to Azure DevOps
-
-1. Browse for your downloaded extensions (```https://{server}:8080/tfs/_gallery```).
-
-2. Select **Manage extensions**.
-   
-   :::image type="content" source="media/get-tfs-extensions/standalone/manage-extensions.png" alt-text="Screenshot showing selection, Manage extensions button.":::
-
-3. Select **Upload new extension**.
-   
-   :::image type="content" source="media/get-tfs-extensions/standalone/upload-extension.png" alt-text="Screenshot showing selection, Upload new extension button.":::
-
-   [Why can't I upload extensions?](faq-extensions.yml)
-
-> [!TIP]
-> The maximum size for upload is 25MB. If you can't work around this requirement, **Report a problem** in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21).
-
-#### Install extension in your project collection
-
-1. Select and install the extension that you uploaded. 
-
-   :::image type="content" source="media/get-tfs-extensions/standalone/install-extension.png" alt-text="Screenshot showing extension selection.":::
-
-2. Choose the project collection where you want to install the extension.
-
-   :::image type="content" source="media/get-tfs-extensions/standalone/choose-collection.png" alt-text="Screenshot showing Continue button selection.":::
-
-3. Review the permissions that the extension gets. Finish installing your extension.
-
-   :::image type="content" source="media/get-tfs-extensions/standalone/confirm.png" alt-text="Screenshot showing review of permissions granted to the extension.":::
-
-   You can now go to your project collection to use your extension. Tell your team about this extension, so they can start using its capabilities too. 
-
-### Install preinstalled extensions (first-party) for disconnected Azure DevOps Server
-
->[!NOTE]
-> This section is only for adding pre-installed extensions (first-party), if you're installing extensions that aren't pre-installed with Azure DevOps Server, see the section [Install extensions when disconnected](#install-extensions-when-disconnected).
-
-For first-party extensions that come preinstalled with Azure DevOps Server, here's an alternate method of installation that prevents compatibility issues.
-
-1. Hover over the shopping bag and select **Manage extensions**.
-
-   ![Screenshot showing selected Manage extensions button.](./media/get-tfs-extensions/standalone/manage-extensions.png)
-
-2. Once on the Extensions page, select **Browse local extensions**.
-
-   ![Screenshot showing the Extensions page, browsing local extensions.](./media/get-tfs-extensions/standalone/browse-local-extensions.png)
-
-3. Scroll down until you see the "Plan and track" category, which includes **Delivery Plans**. Select **Delivery Plans**.
-
-   ![Screenshot of chosen extension.](./media/get-tfs-extensions/standalone/delivery-plans.png)
-
-4. You're redirected to a local extension page for Delivery Plans where you select **Install**. Installation works when you're online and offline.
-
-   ![Screenshot showing Delivery Plans extension gallery.](./media/get-tfs-extensions/standalone/delivery-plans-gallery.png)
-
-### Install extension from the local gallery
-
-Several extensions are preinstalled in the local extensions gallery.
-Users can install these extensions without requiring an external connection to Marketplace or the internet.
-
-> [!TIP]
-> Extensions that have previously been installed from Marketplace appear in the local gallery automatically so that they can easily be installed into other project collections.
-
-1. Open the extensions menu and choose **Manage Extensions**.
-
-   ![Screenshot of the extensions menu, choose Manage extensions.](media/get-devops-extensions/install-devops-extension-13.png)
-
-2. In the Extensions page, choose **Browse local extensions**.
-
-   ![Screenshot showing browse local extensions.](media/get-devops-extensions/install-devops-extension-09.png)
-
-3. Choose the extension you want to install.
-
-   ![Screenshot showing choosing a local extension.](media/get-devops-extensions/install-devops-extension-10.png)
-
-4. Select the project collection where you want to install this extension and choose **Install**.
-
-   ![Screenshot showing the selected project collection for install and the Install button for selection.](media/get-devops-extensions/install-devops-extension-06.png)
-
-5. After installation is complete, go to the project collection or return to the Marketplace to find other extensions.
-
-   ![Screenshot showing installation completed.](media/get-devops-extensions/install-devops-extension-07.png)
-
-::: moniker-end
 
 <a id="uninstall-disable-extension">  </a>
 

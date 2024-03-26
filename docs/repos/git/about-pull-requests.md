@@ -54,12 +54,7 @@ This article describes pull request guidelines and management considerations. Fo
 - To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 
-::: moniker-end
 
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 

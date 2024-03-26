@@ -85,11 +85,7 @@ Define both areas and iterations for a project from the **Project Settings** > *
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-Define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, open the admin context by choosing **Settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
-
-::: moniker-end
 
 #### [Browser](#tab/browser/)
 
@@ -105,21 +101,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 
 <a id="admin-intro-team-services"></a> 
 
-::: moniker range="tfs-2018"
-
-1. From the web portal for the project, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Admin context, project level](media/areas/modify-areas-its-open-admin-context-ts.png)
-
-    If you're currently working from a team context, then hover over **Settings** ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
-
-    > [!div class="mx-imgBorder"]
-    > ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)
-
-2. Choose **Work**.  
-
-::: moniker-end   
+   
 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
@@ -277,14 +259,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"  
 
-You open team settings from the upper navigation bar. Select the team you want and then choose **Team settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: . For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
-
-> [!div class="mx-imgBorder"]  
-> ![Open team settings](media/team-defaults/open-team-settings-horz.png) 
-
-::: moniker-end
 
 
 

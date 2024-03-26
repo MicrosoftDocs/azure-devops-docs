@@ -90,28 +90,7 @@ Most teams specify capacity in hours. You can also specify it in days or any oth
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. From your web browser, open your team's product backlog. (1) Select the project/team from the project/teams selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Open the Backlogs page, earlier versions](media/assign-items-sprint/open-work-backlogs-standard.png) 
-
-	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Choose another team, earlier versions.](media/assign-items-sprint/team-selector-backlogs-standard.png) 
-
-	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
-
-1. Choose the sprint you want to plan. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Choose another sprint, earlier versions](media/add-tasks/choose-sprint-standard.png)
-
-	The system lists only those sprints that are selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
-
-::: moniker-end
 
 <a id="set-team-capacity">  </a> 
 
@@ -149,33 +128,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-1. If you don't see your team members listed, add them. Choose the :::image type="icon" source="media/capacity/capacity-add-users.png" border="false"::: **Add missing team members** icon. For this feature to work, [team members must be added to the team](../../organizations/settings/add-teams.md#add-team-members).  
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Add team members, earlier versions](media/capacity/add-team-members-standard.png)  
-
-2. If you need to add other contributors to your project, choose the :::image type="icon" source="../media/icons/add-light-icon.png" border="false"::: **Add user** icon.  
-
-3. Set team member time off. For the entire team days off, choose the **0 days** link as shown.  
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Set team days off, earlier versions.](media/capacity/set-team-days-off-standard.png) 
-
-	In the Days off for the entire team dialog, select the start and end days during the sprint for team days off. 
-
-	> [!NOTE]
-	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's settings.
-
-4. Now, set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned. 
-
-	For example, Christie Church's capacity is 6 hours/day for design work. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Set individual capacity, TFS 2018 version.](media/capacity/capacity-planning-set-capacity-tfs-15.png)
-
-::: moniker-end  
+  
 
 <a id="copy-capacity">  </a>
 
@@ -192,12 +145,7 @@ Notice that only the capacity-per-day value and activity value are copied over. 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-For example, here we choose Sprint 2 and copy the capacity set for Sprint 1. 
-![Screenshot of Copy capacity from the previous iteration, earlier versions.](media/capacity/copy-capacity-from-previous-sprint.png)
-
-::: moniker-end
 
 <a id="add-remove-users">  </a>
 
@@ -212,10 +160,7 @@ To remove a user, choose the option from the users  :::image type="icon" source=
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-![Screenshot of Copy capacity Capacity planning, Remove a user, earlier versions.](media/capacity/capacity-planning-remove-user.png) 
 
-::: moniker-end
 
 ## Review capacity charts 
 
@@ -230,11 +175,7 @@ You also see a roll-up of the remaining work required to complete each requireme
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![Screenshot of Capacity charts.](media/capacity/review-capacity.png)  
-
-::: moniker-end
 
 From this view, you can easily see which individuals are at or near capacity. Teams can determine if work needs to be moved out of the sprint or to reassign tasks.  
 
@@ -247,14 +188,7 @@ From this view, you can easily see which individuals are at or near capacity. Te
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-> [!TIP]  
-> Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
->
-> Also, don't divide tasks into sub-tasks as [Taskboards only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md). If you do divide a task into sub-tasks, specify Remaining Work only for the sub-tasks, as the system rolls up summary values to the parent task. 
-
-::: moniker-end
 
 <a id="track-multiple-activities">  </a>
 

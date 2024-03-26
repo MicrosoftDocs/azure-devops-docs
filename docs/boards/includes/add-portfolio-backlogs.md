@@ -30,7 +30,4 @@ To add a portfolio backlog or board, either customize your inherited process or 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-To add a portfolio backlog or board, define more work item types, and then customize your process configuration. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md) and [Add a portfolio backlog level](../../reference/add-portfolio-backlogs.md).
 
-::: moniker-end

@@ -46,12 +46,7 @@ To address reviewers' changes, and respond to and resolve review comments, see [
 - To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-- To complete a PR, you must be a member of the **Contributors** security group for the Azure DevOps project, or have the corresponding permissions.
-- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-- To contribute to a PR, you must be a member of the **Readers** security group for the Azure DevOps project or have the corresponding permissions.
 
-::: moniker-end
 
 - To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
@@ -225,34 +220,7 @@ When you complete the merge, any [linked work items](pull-requests.md#link-work-
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. Select **Complete** in the upper right of the PR view to complete your PR after the reviewers approve of the changes.
-
-   ![Complete button for the PR with its drop-down options](./media/complete-pull-requests/old-complete-pr-options.png)
-
-   - **Complete**: Complete the PR now and merge the changes to the target branch.
-   - **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the PR to close once it meets all branch policies.
-   - **Abandon**: Close the PR without merging the changes.
-
-2. In **Complete pull request**, enter the message for the [merge commit](merging.md) and update the PR description.
-
-   ![Complete PR dialog](./media/complete-pull-requests/complete-pr-dialog.png)
-
-3. Select any of the following post-completion options:
-
-   - **Complete linked work items after merging** to complete any linked work items.
-   - **Delete `<branch name>` after merging** to delete the source branch from the PR.
-   - **Squash changes when merging** to [squash merge](merging-with-squash.md) your PR. Be aware that a new commit will be created for the target branch without keeping the commit history from the source branch.
-   - **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
-
-4. Select **Complete merge**.
-
-Linked work items are also updated showing the PR completion.
-
-![Linked Work Items showing completed PRs](./media/complete-pull-requests/pr-workitem-complete.png)
-
-::: moniker-end
 
 # [Visual Studio](#tab/visual-studio)
 

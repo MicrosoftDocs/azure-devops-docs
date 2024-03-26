@@ -47,18 +47,7 @@ The following table describes the most common hub groups in Azure DevOps that yo
 | Organization settings  | `ms.vss-web.collection-admin-hub-group` | Organization or collection  | ![Custom organization admin hub.](media/test/organization-settings.png) | 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-| Name                | ID                                         | Level                           | Preview image| 
-| --------------------|--------------------------------------------|---------------------------------|----------------------------- |          
-| Code                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![Custom code hub, TFS versions](media/code/hubs-source.png)| 
-| Work                | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![Custom work hub, TFS versions](media/work/hubs-workitems.png)| 
-| Build and Release   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![Custom build and release hub, TFS versions](media/build/hubs-build-release.png)| 
-| Test                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![Custom test hub, TFS versions](media/test/hubs-testmanagement.png)| 
-| Project settings    | `ms.vss-web.project-admin-hub-group`       | Project                | ![Custom project admin hub, TFS versions](media/web/hubs-admin-project.png) | 
-| Collection settings | `ms.vss-web.collection-admin-hub-group`    | Collection      | ![Custom collection admin hub, TFS versions](media/web/hubs-admin-collection.png) | 
-
-::: moniker-end
 
 ### Example
 
@@ -149,29 +138,7 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-## Work menu and toolbar
-
-| Name                            | Target ID                                         | Preview image | 
-| --------------------------------|---------------------------------------------------|-------------------| 
-| Work item query menu            | `ms.vss-work-web.work-item-query-menu`            | ![Custom query action added to query menu, TFS versions](media/work/queryActions.png)| 
-| Work item query results toolbar menu | `ms.vss-work-web.work-item-query-results-toolbar-menu` | ![Query Results custom toolbar menu action, TFS versions](media/work/queryResultsToolbarMenu.png)| 
-| Work item query results menu item | `ms.vss-work-web.query-result-work-item-menu`   | ![Query Result Item Menu custom action, TFS versions](media/work/queryResultsItemMenu.png)| 
-| Work item query results tab     | `ms.vss-work-web.query-tabs`                      | ![Query toolbar custom pivot tab, TFS versions](media/work/queryResultsPivotTab.png)| 
-| Work item for context menu               | `ms.vss-work-web.work-item-toolbar-menu` | ![Custom work item toolbar actions, TFS versions](media/work/workItemToolbarActions.png)| 
-| Backlog item menu               | `ms.vss-work-web.backlog-item-menu`               | ![Backlog item actions custom menu options, TFS versions](media/work/backlogItemActions.png)| 
-| Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  | ![Sprint Board Pivot Filter Actions, TFS versions](media/work/sprintBoardPivotFilterActions.png)| 
-| Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![Backlog Board Pivot Filter Actions, TFS versions](media/work/backlogBoardPivotFilterActions.png)| 
-| Card menu                       | `ms.vss-work-web.backlog-board-card-item-menu`    |   | 
-| Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![Product Backlog Custom Tab, TFS versions](../../media/backlog-tab/product-backlog-tab.png)| 
-| Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![Iterations Backlog Custom Tab, TFS versions](../../media/backlog-tab/iteration-backlog-tab.png)| 
-| Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![Portfolio Backlog Custom Pane, TFS versions](../../media/backlog-pane/portfolio-backlog-pane.png)| 
-| Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![Product Backlog Custom Pane, TFS versions](../../media/backlog-pane/product-backlog-pane.png)| 
-| Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![Iteration Backlog Custom Pane, TFS versions](../../media/backlog-pane/iteration-backlog-pane.png) |
-
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
 
@@ -216,32 +183,9 @@ Tasks perform work in a build or release. For more information, learn how to [co
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-## Build menu and toolbar
 
-| Name                      | Target ID                                   | Preview image| 
-| --------------------------|---------------------------------------------|-------------------| 
-| Completed build menu        | `ms.vss-build-web.completed-build-menu`     | ![Completed Build Actions, TFS versions](media/build/completedBuildActions.png)| 
-| Build definitions menu      | `ms.vss-build-web.build-definition-menu`    | ![Build Definition Actions, TFS versions](media/build/buildDefinitionActions.png)| 
-| Test results toolbar action | `ms.vss-test-web.test-results-actions-menu`  | ![Test Results Toolbar Action, TFS versions](../../media/extension_test_custom_action.png)| 
-| Test result details tab     | `ms.vss-test-web.test-result-details-tab-items` | ![Test Result Details Tab, TFS versions](../../media/extension_test_custom_tab.png) | 
 
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-## Release menu and toolbar
-
-| Name                                     | Target ID                                                              | Preview | 
-| -----------------------------------------|-------------------------------------------------------------------------|-------------------| 
-| Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![Definition Explorer Context Menu, TFS versions](media/release/definitionExplorerContextMenu.png)| 
-| Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![Definition Explorer Toolbar Menu, TFS versions](media/release/definitionExplorerToolbarMenu.png)| 
-| Release summary toolbar menu             | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`             | ![Release Summary Toolbar Menu, TFS versions](media/release/releaseSummaryToolbarMenu.png)| 
-| Release summary tab                      | `ms.vss-releaseManagement-web.release-details-view`                     | ![Release Summary Tab, TFS versions](media/release/releaseSummaryTab.png)| 
-| Release summary section                  | `ms.vss-releaseManagement-web.release-details-summary-tab`              | ![Release Summary Section, TFS versions](media/release/releaseSummarySection.png)| 
-
-::: moniker-end
 
 <a name="menus_code"></a>
 
@@ -264,23 +208,7 @@ Tasks perform work in a build or release. For more information, learn how to [co
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-## Code menu and toolbar
 
-|Name                                | Target ID                                        | Preview image |
-|------------------------------------|--------------------------------------------------|-------------------|
-|Source item (grid) menu             | `ms.vss-code-web.source-grid-item-menu`          | ![Source Item Grid Actions, TFS versions](media/code/sourceGridItemActions.png)|
-|Source item (tree) menu             | `ms.vss-code-web.source-tree-item-menu`          | ![Source Item Tree Actions, TFS versions](media/code/sourceTreeItemActions.png)|
-|Source item (grid and tree) menu    | `ms.vss-code-web.source-item-menu`               |  |
-|Change list item menu               | `ms.vss-code-web.change-list-item-menu`          |  |
-|Change list summary item menu       | `ms.vss-code-web.change-list-summary-item-menu`  |  |
-|Git branches tree menu              | `ms.vss-code-web.git-branches-tree-menu`         | ![Git Branches Tree, TFS versions](media/code/gitBranchesTreeActions.png)|
-|Git pull request actions menu       | `ms.vss-code-web.pull-request-action-menu`       | ![Git Pull Request Actions, TFS versions](media/code/pullRequestActions.png)|
-|Git pull request tabs (pivots)      | `ms.vss-code-web.pr-tabs`                        | ![Git Pull Request Tab, TFS versions](media/code/pullRequestTab.png)|
-|Git commit listing menu             | `ms.vss-code-web.git-commit-list-menu`           | ![Git Commit List Menu, TFS versions](../../media/git-commit-list-menu.png)|
-|Git commit detail menu              | `ms.vss-code-web.git-commit-details-menu`        | ![Git Commit Detail Menu, TFS versions](../../media/git-commit-detail-menu.png)| 
-
-::: moniker-end
 
 <a name="menus_test"></a>
 
@@ -296,16 +224,7 @@ Tasks perform work in a build or release. For more information, learn how to [co
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-## Test menu and toolbar
 
-| Name                       | Target ID                                   | Preview image  | 
-| ---------------------------|---------------------------------------------|-------------------| 
-| Test run grid menu         | `ms.vss-test-web.test-run-grid-menu`        |  | 
-| Test plan suites tree menu | `ms.vss-test-web.test-plans-suites-context` |  | 
-| Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![Test Hub Pivot Tab, TFS versions](media/test/test-plan-hub-pivot-tab-preview.png)| 
-
-::: moniker-end
 
 <a name="dashboard"></a>
 

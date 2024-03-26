@@ -17,12 +17,7 @@ ms.date: 11/07/2021
 
 You can use the code review and feedback fields to create queries and reports that track the status of these processes. The fields appear in the following work item types, which are included with the default processes for Azure Boards and TFS: Code Review Request, Code Review Response, Feedback Request, and Feedback Response.  
 
-::: moniker range="tfs-2018"
 
-> [!NOTE]  
->  If your on-premises server has been upgraded from an earlier version, you might need to update your project to get access to these work item types. See [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).   
-
-::: moniker-end
 
 <a name="codereviews"></a> 
 <a id="fields"></a>

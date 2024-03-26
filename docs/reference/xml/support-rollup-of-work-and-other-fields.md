@@ -73,11 +73,7 @@ From the sprint backlog, the sum of all **Remaining Work** defined for all tasks
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![Sprint backlog displays rollup of Remaining Work](media/alm_rup_remworkiteration.png "ALM_RUP_RemWorkIteration")  
-
-::: moniker-end
   
 From a sprint task board, there are three types of rollup: 
 - The rollup of Remaining Work displays on the card for the parent work item
@@ -98,11 +94,7 @@ From a sprint task board, there are three types of rollup:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-![Task board, collapsed backlog items](../../boards/sprints/media/ALM_TB_Intro.png)
-
-::: moniker-end
 
 When you update the status of a task as Completed, the system automatically zeros out the Remaining Work for that task. To learn more, see [Task board](../../boards/sprints//task-board.md).
 
@@ -122,14 +114,7 @@ You can obtain rollup of additional data fields in Azure DevOps work tracking da
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-- Work item query charts
-- Microsoft Excel
-- Microsoft Project
-- Marketplace extensions
-- SQL Server Reporting Services report 
-::: moniker-end
 
 
 
@@ -153,16 +138,7 @@ To learn more about Excel macros, see [Automate tasks with the Macro Recorder](h
 > [!TIP]
 > To provide support for opening work items and query results in Excel from the web portal, add the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension to your organization or collection.
 
-::: moniker range="tfs-2018"
 
-## Microsoft Project and rollup of work tracking data 
- 
- Project natively supports rollup of summary tasks. With Project, you can round trip work tracking data to obtain rollup values.  
-  
- ![Task board displays round&#45;trip rollup from Project](media/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
-  
- To learn how, see [Rollup estimated and actual work](/previous-versions/azure/devops/boards/backlogs/office/rollup-estimated-and-actual-work-using-project).  
-::: moniker-end
 
 
 <a name="marketplace"></a>

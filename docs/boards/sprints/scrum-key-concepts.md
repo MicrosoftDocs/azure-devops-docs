@@ -42,9 +42,7 @@ By setting team capacity, the team knows exactly the total number of work hours 
 :::image type="content" source="media/capacity/set-capacity-web-team.png" alt-text="Screenshot of team capacity page.":::
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-:::image type="content" source="media/team-capacity-planning-tool.png" alt-text="Screenshot of team capacity page, TFS 2018.":::
-::: moniker-end
+
 
 ## Capacity bars
 
@@ -104,9 +102,7 @@ The sprint burndown chart reflects the progress made by a team in completing all
 :::image type="content" source="../../report/dashboards/media/burndown/analytics-burndown-remaining-work-s159.png" alt-text="Screenshot of Sprint burndown chart.":::
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-![Screenshot of Sprint burndown chart, TFS 2018](media/ALM_DS_SprntBD_Chrt_S.png)
-::: moniker-end
+
 
 
 ## Sprint goals
@@ -163,9 +159,7 @@ For example, in the chart shown below the green bar indicates the total estimate
 :::image type="content" source="../../report/dashboards/media/velocity/analytics-velocity-azure-devops.png" alt-text="Screenshot of Velocity.":::
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-![Screenshot of Velocity chart, TFS 2018.](media/velocity-chart.png)
-::: moniker-end
+
 
 
 ::: moniker range=">= azure-devops-2019"  

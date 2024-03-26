@@ -38,11 +38,7 @@ To deploy a DACPAC to an Azure SQL database, add the following snippet to your a
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML is not supported in TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
@@ -194,11 +190,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML is not supported in TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -262,11 +254,7 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-YAML is not supported in TFS.
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 

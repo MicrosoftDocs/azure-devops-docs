@@ -26,9 +26,7 @@ If you need more portfolio backlogs, see the following articles based on the pro
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019" 
-If you need more portfolio backlogs, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
-::: moniker-end
+
 
 [!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
@@ -58,24 +56,7 @@ This setting impacts the backlog and board views for all team members. You can m
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018" 
 
-1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md).
-
-2. Select **Configure team settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: to open the  settings dialog.  
-
-	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team](media/configure-team/open-settings-tfs.png)  
-
-3. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
-
-	![Team settings dialog, Backlogs tab](media/select-nav-backlog-levels-config-ts.png)  
-
-4. When you're done with your changes, choose **Save**.  
-
-5. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
-
-::: moniker-end
 
 ## Related articles
 

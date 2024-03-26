@@ -73,11 +73,7 @@ In this article you learn how to:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access level or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-
-::: moniker-end
 
 - To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
@@ -321,7 +317,7 @@ To like your own or someone else's comment, hover over the comment and select th
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 ### Like a comment
 

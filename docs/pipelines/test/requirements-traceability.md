@@ -22,11 +22,7 @@ A fundamental aspect of requirements traceability is association of the requirem
 
 > Read the [glossary](./test-glossary.md) to understand test report terminology.
 
-::: moniker range="tfs-2018"
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 <a name="agileteams"></a>
 ## Agile teams running automated tests 
@@ -44,7 +40,7 @@ The following sections explore traceability from **Quality**, **Bug** and **Sour
 
 ### Quality traceability
 
-:::moniker range="<=azure-devops-2019"
+:::moniker range="=azure-devops-2019"
 
 To ensure user requirements meet the quality goals, the requirements
 in a project can be linked to test results, which can then be viewed on the

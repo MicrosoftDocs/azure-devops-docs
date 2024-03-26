@@ -205,7 +205,7 @@
     href: ../service-hooks/troubleshoot.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Integrate applications
   items:
-  - name: Integrate applications overview 
+  - name: Integrate applications overview
     href: ../integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Get started
     items:

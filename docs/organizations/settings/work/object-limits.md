@@ -36,6 +36,7 @@ When defining work items or running queries, the following operational limits ap
 | Work item links assigned to a work item | 1,000 |
 | Work item tags assigned to a work item | 100 |
 | Work item revisions (REST API) | 10,000 | 
+| Favorite queries per project | 200 queries |
 
 A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restricts updates from the REST API, however, updates from the web portal are not affected.  
 
@@ -56,6 +57,7 @@ A work item revision limit of 10,000 is in effect for updates made through the R
 | Query results | 20,000 items |
 | Query length | 32,000 characters |
 | Shared queries under a folder | 999 queries |
+| Favorite queries per project | 200 queries |
 
 The default maximum attachment size is 4 MB. You can [change the maximum size up to 2 GB](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).
 ::: moniker-end
@@ -192,31 +194,7 @@ The following table lists the maximum number of objects that you can define for 
 > For the On-premises XML process model, you can define an approximate total of 10K items for all global lists specified across all WITs.
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-The following table lists the maximum number of objects that you can define for the ON-premises XML process model. While these represent hard limits, practical limits may apply.
-
-| Object                                              | On-premises XML |  
-| --------------------------------------------------- |  ---------: |  
-| Number of processes you can have in an organization |          64 |  
-| Work item types defined for a process               |          64 |  
-| Fields defined for a collection                     |        1024 |  
-| Fields defined for a process                        |        1024 |  
-| Fields defined for a work item type                 |        1024 |  
-| Picklists defined for a collection                  |         N/A |  
-| Picklist items defined for a list                   |        2048 |  
-| Picklist item character length                      |         N/A |  
-| Workflow states defined for a work item type        |          16 |  
-| Rules defined for a work item type                  |        1024 |  
-| Portfolio backlog levels defined for a process      |           5 |  
-| Categories defined for a process                    |          32 |
-| Global lists defined for a process                  |         256 |
-| List items defined within a global list             |        1024 |
-| Size of imported process template                   |        2 GB |
-
-> [!NOTE]
-> For the On-premises XML process model, you can define an approximate total of 10K items for all global lists specified across all WITs.
-::: moniker-end
 
 ## Practical limits
 
@@ -287,14 +265,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-- [Customize your work tracking experience](../../../reference/customize-work.md)
-- [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
-- [Rules and rule evaluation](../../../organizations/settings/work/rule-reference.md)
-- [Naming restrictions and conventions](../naming-restrictions.md)
-
-::: moniker-end
 
 ## Related resources
 

@@ -216,9 +216,7 @@ There might be cases where you no longer want to use Search or you want to do a 
    ![Screenshot of checking that the extension is installed.](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
-   ::: moniker range="tfs-2018"
-   ![Screenshot of Checking the extension is installed.](media/shared/goto-marketplace.png)
-   ::: moniker-end
+   
 
 2. Remove the Search feature:
    
@@ -249,9 +247,7 @@ Do the following steps to unconfigure Search, like for Code, Work item, or Wiki,
    ![Screenshot Checking that the extension is installed.](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
-   ::: moniker range="tfs-2018"
-   ![Screenshot of Checking that the extension's installed.](media/shared/goto-marketplace.png)
-   ::: moniker-end
+   
 
 2. Remove the Search feature:
 

@@ -14,9 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 [Deployment groups](index.md) make it easy to define logical groups of target machines for deployment,
 and install the required agent on each machine. This topic explains how to create a deployment group,

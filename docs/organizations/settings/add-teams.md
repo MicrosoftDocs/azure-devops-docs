@@ -124,12 +124,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 	![Screenshot of Open Project settings button, and then Teams button selection on Current page](media/shared/open-project-settings-team-new-nav.png)
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-1. From the web portal, choose **Project settings > Overview** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.    
 
-	 ![Open project admin page](media/add-team/open-team-settings-tfs-2018.png) 
-
-::: moniker-end
 2. Choose **New team**. Give the team a name, and optionally a description. Choose a security group to add team members to.  
 
 	 ![Screenshot of New team subteam with its own area path on Current page](media/add-team/create-new-team-new-nav.png)
@@ -305,9 +300,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 ::: moniker range=">= azure-devops-2019" 
 1. Open **Project settings > Teams** as indicated in the previous section. 
 ::: moniker-end
-::: moniker range="tfs-2018" 
-1. Open **Project Settings > Overview** as indicated in the previous section. 
-::: moniker-end 
+ 
 1. Choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: to open the context menu for the team you want to designate as the default, and choose **Set team as project default**. 
 
 	 ![Screenshot of Teams page, More options menu selection, New Teams Page enabled.](media/add-team/set-team-project-default-current.png)  

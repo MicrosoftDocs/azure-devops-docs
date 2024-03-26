@@ -256,13 +256,7 @@ If you modify the test suite workflow, then you have to make a similar update if
 
 ## Q & A  
 
-::: moniker range="< azure-devops-2019"
-### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
-**A:** You can customize the quick add panel. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) will update your projects and you'll get access to the latest features.  
-
-Other changes might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../customize-work.md).  
-::: moniker-end
 
 ### Q: When do I need to map workflow states to metastates?  
 

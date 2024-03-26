@@ -44,13 +44,7 @@ See the following articles for setting more user preferences:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-On your user profile page, you can change your picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences.
-
-Other tools for setting your Azure DevOps preferences include [Notifications](../../organizations/notifications/manage-your-personal-notifications.md) to add or review subscriptions to event changes.
-
-::: moniker-end
 ## Set preferences
 
 ::: moniker range="azure-devops"
@@ -88,32 +82,7 @@ Other tools for setting your Azure DevOps preferences include [Notifications](..
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-1. To change the user preferences, open the user profile menu.
-
-	![Screenshot to Open Profile menu for TFS 2018.](../../media/settings/open-profile-tfs-2017.png)
-
-2. Choose **Edit profile**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of highlighted Edit profile button.](../../media/settings/profile-jamal-h.png)
-
-3. From the **About** page, you can change the user profile picture, display name, contact information, and country/region. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of the About User profile page.](../../media/settings/edit-profile-about-dialog.png)
-
-4. From the **Preferences** page, you can change the following information:
-    - preferred language
-    - date and time pattern
-    - time zone
-    - UI theme
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Preferences page with Save button highlighted.](../../media/settings/edit-profile-preferences-dialog.png)
-
-::: moniker-end
 
 User profile settings are updated.
 

@@ -1,5 +1,5 @@
-- name: Azure DevOps 
-  href: index.yml 
+- name: Azure DevOps
+  href: index.yml
 - name: Get started >>
   href: get-started/index.yml
 - name: Azure Artifacts >>
@@ -233,7 +233,7 @@
     href: ./service-hooks/troubleshoot.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Integrate applications
   items:
-  - name: Integrate applications overview 
+  - name: Integrate applications overview
     href: ./integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Get started
     items:

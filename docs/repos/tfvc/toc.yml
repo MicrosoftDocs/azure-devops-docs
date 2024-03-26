@@ -12,7 +12,7 @@
     href: share-your-code-in-tfvc-xcode.md
   - name: Develop an app
     href: develop-your-app-team-foundation-version-control.md
-  - name: Write new code 
+  - name: Write new code
     href: day-life-alm-developer-write-new-code-user-story.md
   - name: Suspend work using My Work
     href: day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md

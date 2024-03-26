@@ -11,9 +11,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+
 
 For some workflows, you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to main.
 
@@ -62,7 +60,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 Go to the Version Control control panel tab
 
@@ -237,7 +235,7 @@ Yes
 
 ### How do I avoid triggering a CI build when the script pushes?
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 Add ```***NO_CI***``` to your commit message. Here are examples:
 * ```git commit -m "This is a commit message ***NO_CI***"```

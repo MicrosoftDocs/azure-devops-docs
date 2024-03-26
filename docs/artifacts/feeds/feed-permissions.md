@@ -54,22 +54,6 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-1. Select **Build and Release**.
-
-1. Select **Packages**, and then select the gear icon to navigate to your feed's settings. 
-
-1. Select **Permissions**, and then select **Add user/group**.
-
-    :::image type="content" source="media/editfeeddialog1.png" alt-text="A screenshot showing the permissions configured on a feed.":::
-
-1. Add new user(s)/group(s) and choose the appropriate **Role** for them.
-
-1. Select **Save** when you're done.
-
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 > [!NOTE]

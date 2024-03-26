@@ -24,7 +24,7 @@ Sprint Taskboards are similar to Kanban boards because they show work items as c
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 
 Sprint Taskboards are similar to Kanban boards in that they show work items as cards instead of as lists. They're different in the ways summarized in [Backlogs, Boards, and Plans](../backlogs/backlogs-boards-plans.md#kanban-Taskboards). Similar to the Kanban boards, you can customize cards. To change column names or add columns, you need to customize the workflow.   
 
@@ -125,12 +125,7 @@ Before you configure your Taskboard, you'll want to make sure the following task
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
 
-> [!NOTE]  
-> You can customize a work item type which is different than customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
-
-::: moniker-end
 
 **Team Administrator**:
 1. Meet with your team and determine how the team wants to manage bugs, similar to requirements or tasks.  
@@ -244,30 +239,7 @@ You change the way cards appear on the Taskboard in the same way you change the 
 ::: moniker-end  
 
 
-::: moniker range="tfs-2018"
-
-1. [Open the taskboard](task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
-
-1. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the Settings dialog.  
-
-   ![taskboard, open card customization dialog](media/customize/task-board-customize-open-settings.png)    
-
-2. Choose **Fields** and then a work item type to see all the settings you can modify. 
-
-3. Place a check mark in the check box for those fields you want to have appear on the board. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Settings dialog, Fields, Task work item type](media/customize/settings-fields-taskboard-142.png)  
-
-	Repeat this step for each work item type you want to change. Don't be surprised if the options change when you choose a different work item type. For example, **Show Remaining Work** only applies to tasks and perhaps bugs, but not to user stories or product backlog items.   
-
-4. To add a field, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of a field  you want to add.  
-
-5. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.  
-
-6. When you're done with your changes, choose **Save**.
-
-::: moniker-end  
+  
  
 
 <a id="fields"></a>
@@ -361,35 +333,7 @@ You can apply style rules to change the color of Taskboard cards based on specif
 ::: moniker-end  
 
 
-::: moniker range="tfs-2018"
 
-1. [Open the Taskboard](task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
-
-2. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the **Settings** dialog. 
-
-3. Choose **Styles** to specify a style rule. Choose the :::image type="icon" source="../../media/icons/green_plus_icon.png" border="false"::: plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
-
-	In this example, we show the **Styles** dialog for the taskboard. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Settings, Styles dialog](media/customize/taskboard-styles-priority.png)
-
-	Follow these rules when creating and ordering your style rules:
-   - The criteria you specify works in a similar fashion as when [constructing a query](../queries/using-queries.md) 
-   - All clauses are considered AND clauses, grouping clauses isn't supported  
-   - Card rules apply to all work items that meet the rule criteria  
-   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Drag them into the order you want them applied.  
-   - You can quickly enable and disable a style rule     
-
-     Here we add a Stale tasks rule that highlights tasks that haven't changed in the last five days.
-
-     ![taskboard, Style dialog, example style rule](media/customize/task-board-card-style-rule-stale-tasks.png)   
-
-4. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**, respectively.
-
-5. When you're done with your changes, choose **Save**.
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 

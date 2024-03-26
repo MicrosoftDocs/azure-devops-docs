@@ -32,16 +32,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-From a **Work** page, you can add a work item from the menu of options as shown in the following image.
- 
-> [!div class="mx-imgBorder"]
-> ![Work, add a work item](../../boards/backlogs/media/add-work-items-choose-user-story.png)
-
- Or, you can open one of the pages&mdash;**Boards**, **Backlogs**, **Queries**, or **Plans**&mdash;to add an artifact specific to each of these functional pages.
-
-::: moniker-end
 
 To add other work tracking artifacts, see one of the following articles: 
 
@@ -66,16 +57,7 @@ For details on adding a Git repository, see [Git repository](../../repos/git/cre
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-From **Code**, open the context menu for the current repository and choose ![plus icon](../../media/icons/blue-add-icon.png) **New repository**. For details on adding a Git repository, see [Git repository](../../repos/git/creatingrepo.md)
-
-> [!div class="mx-imgBorder"]
-> ![Code, add artifact](media/add-artifact/add-repo-horz.png)
-
-From one of the other **Code** pages, you can add files or folders, a new branch, or a new pull request. 
-
-::: moniker-end
 
 
 Note that you can only add one TFVC repository per project, but an unlimited number of Git repositories. To learn more about Git artifacts, see one of the following articles:
@@ -98,14 +80,7 @@ Expand  **Pipelines** and choose **Builds** or **Releases**. Then choose the :::
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-From **Build and Release**, choose **Builds**, **Releases**, or other page to add an artifact associated with that page.
- 
-> [!div class="mx-imgBorder"]
-> ![Build and Release, add an artifact](media/add-artifact/build-release-hub.png)
-
-::: moniker-end
 
 To learn more about adding other pipeline related artifacts, see the following articles: 
 - [Deployment groups](../../pipelines/release/deployment-groups/index.md)  
@@ -131,13 +106,7 @@ To view the set of defined teams, open **Project settings**, and choose **Overvi
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-To view the set of defined teams, open the admin context for the project, and choose **Overview**.  
-
-![Web portal, admin context, project, Overview page](../../boards/plans/media/multiple-teams-view-teams.png) 
-
-::: moniker-end
 
 ## Add a dashboard 
 
@@ -145,7 +114,7 @@ To view the set of defined teams, open the admin context for the project, and ch
 Dashboards are associated with a team or a project. Each team can create and configure a number of dashboards. And, any team member can create one or more project dashboards. To learn how, see [Add a dashboard](../../report/dashboards/dashboards.md).
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 Dashboards are associated with a team. Each team can create and configure a number of dashboards. To learn how, see [Add a dashboard](../../report/dashboards/dashboards.md).
 ::: moniker-end
 
@@ -163,12 +132,7 @@ If you don't have a wiki yet, you can add one. Once added, you can add and updat
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
 
-- [Create a wiki](../wiki/wiki-create-repo.md)
-- [Add and edit wiki pages](../wiki/add-edit-wiki.md)
-
-::: moniker-end
 
 ## Related articles
 

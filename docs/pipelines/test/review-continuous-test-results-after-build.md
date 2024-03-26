@@ -29,19 +29,9 @@ For an example of using this with your build and deploy pipelines, see [Analyze 
 
 Read the [glossary](./test-glossary.md) to understand test report terminology.
 
-::: moniker range="< azure-devops-2019"
 
-> [!NOTE]
-> Test report is available in TFS 2015 and above, however the new experience
-> described in this topic is currently available only in Azure Pipelines.
 
-::: moniker-end
 
-::: moniker range="tfs-2018"
-
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 Published test results can be viewed in the **Tests** tab in a build or release summary.
 

@@ -57,21 +57,6 @@ For best practice, we suggest using two separate configuration files. The first 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-1. Select **Build and Release**.
-
-1. Select **Packages**, and then select **Connect to feed**.
-
-    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed.":::
-
-1. Select **npm** from the left navigation pane.
-
-1. Follow the instructions provided in the **Other** tab to set up your project.
-
-::: moniker-end
-
-
 > [!TIP]
 > Using multiple registries in .npmrc files is supported with [scopes](..//npm/scopes.md) and [upstream sources](../concepts/upstream-sources.md).
 
@@ -163,30 +148,6 @@ For authentication with your pipeline, Azure Artifacts recommends using the [npm
 1. Select your *.npmrc* file.
 
     :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-file.png" alt-text="Screenshot showing how to add your *.npmrc* file.":::
-
-1. Select **Save & queue** when you're done.
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-1. Select **Build and Release**, and then select **Builds**.
-
-    :::image type="content" source="../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png" alt-text="Screenshot showing how to access your builds.":::
-
-1. Select your pipeline, and then select **Edit**.
-
-1. Select `+` to add a task to your pipeline.
-
-    :::image type="content" source="../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png" alt-text="Screenshot showing how to add a new task to your pipeline.":::
-
-1. Search for the **npm Authenticate** task, and then select **Add** to add it to your pipeline.
-
-    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-phase.png" alt-text="Screenshot showing the npm authenticate task.":::
-
-1. Select your *.npmrc* file.
-
-    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-file.png" alt-text="Screenshot showing how to configure the npm authenticate task to use your .npmrc file.":::
 
 1. Select **Save & queue** when you're done.
 

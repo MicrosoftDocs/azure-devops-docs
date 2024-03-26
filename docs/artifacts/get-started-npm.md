@@ -15,28 +15,7 @@ monikerRange: '<= azure-devops'
 
 Using Azure Artifacts, you can publish and download npm packages from feeds and public registries like npmjs.com. This quickstart will walk you through the process of creating your feed, configuring your project, and publishing and downloading npm packages to and from your Azure Artifacts feed.
 
-::: moniker range="tfs-2018"
 
-## License the Azure Artifacts extension
-
-If the Azure Artifacts extension has been removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Each organization gets five free licenses. If you need more than five licenses, go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed), and select **Get it free**.
-
-If you aren't sure, you can select **Start 30-day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users. If you need additional licenses at this point, you can purchase them from Visual Studio Marketplace. If you have a license for Visual Studio Enterprise, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
-
-> [!NOTE]
-> If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access. Licenses don't need to be assigned until the trial period ends. 
-
-1. From any collection in Team Foundation Server, hover over the settings menu and select **Users**. Then select **Package Management**.
-
-    :::image type="content" source="media/users-hub-tfs.png" alt-text="Screenshot showing the user page in TFS 2018":::
-
-1. Select **Assign**, enter the users you want to assign licenses, and then select **OK**.
-
-   * Users with Visual Studio Enterprise subscriptions get Azure Artifacts for free. Make sure that your Visual Studio Enterprise subscribers have the appropriate access level. For more information, see [Change access levels](../organizations/security/change-access-levels.md).
-
-   * Users who are using an instance of Team Foundation Server that's disconnected from the internet (and thus can't purchase licenses from Visual Studio Marketplace) can still assign licenses purchased through an enterprise agreement.
-
-::: moniker-end
 
 ## Create a feed
 
@@ -141,21 +120,7 @@ If you're developing on a non-Windows platform and need to authenticate with Azu
 
 * * * 
 
-::: moniker range="tfs-2018"
 
-## Connect to feed
-
-1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
-
-1. Select **Build & Release**, and then select **Packages**.
-
-1. Select **Connect to feed**, and then select **npm**.
-
-1. Select **Generate npm credentials**. Copy the credentials and add them to your user-level .npmrc file.
-
-    :::image type="content" source="./media/tfs2018-connect-to-npm-feed.png" alt-text="A screenshot showing how to generate npm credentials in TFS 2018.":::
-
-::: moniker-end
 
 ## Publish packages
 

@@ -23,7 +23,7 @@ The commit details view provides information regarding all the changes made as p
 ::: moniker range=">= azure-devops-2020"
 :::image type="content" source="media/commit-details/git-repo-file-history.png" alt-text="Files, Commits page example":::
 ::: moniker-end
-::: moniker range="<= azure-devops-2019"
+::: moniker range="=azure-devops-2019"
 ![Commit details page](media/commit-details/1Commitdetails.png)
 ::: moniker-end
 
