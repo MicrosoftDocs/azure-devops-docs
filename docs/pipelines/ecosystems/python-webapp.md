@@ -243,13 +243,13 @@ A service connection allows you to create a connection to provide authenticated 
 
 1. On project page, select **Project settings**.
 
-  :::image type="content" source="../media/python/project-settings.png" alt-text="Screenshot of project settings button on the project dashboard.":::
+    :::image type="content" source="../media/python/project-settings.png" alt-text="Screenshot of project settings button on the project dashboard.":::
 
 1. Select **Service connections** in the **Pipelines** section of the menu.
 1. Select **Create service connection**.
 1. Select **Azure Resource Manager** and select **Next**. 
 
-  :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Screenshot of Azure Resource Manager service connection selection.":::
+    :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Screenshot of Azure Resource Manager service connection selection.":::
 
 1. Select your authentication method and select **Next**. 
 1. In the **New Azure service connection** dialog, enter the information specific to the selected authentication method. For more information about authentication methods, see [Connect to Azure by using an Azure Resource Manager service connection](../library/connect-to-azure.md).
@@ -392,33 +392,33 @@ Azure Pipelines creates a **azure-pipelines.yml** file and displays it in the YA
 
 1. On the navigation menu, select **Pipelines**.
 
-  :::image type="content" source="../media/python/select-pipelines.png" alt-text="Screenshot of Pipelines selection on the project dashboard.":::
+    :::image type="content" source="../media/python/select-pipelines.png" alt-text="Screenshot of Pipelines selection on the project dashboard.":::
 
 1. Select **Create Pipeline**.
 
-  :::image type="content" source="media/create-first-pipeline.png" alt-text="Screenshot of New pipeline button.":::
+    ::image type="content" source="media/create-first-pipeline.png" alt-text="Screenshot of New pipeline button.":::
 
 1. In the **Where is your code** dialog, select **GitHub Enterprise Server**. You might be prompted to sign into GitHub.
 
-  :::image type="content" source="../media/python/where-is-your-code.png" alt-text="Screenshot of select GitHub as the location of your code.":::
+    :::image type="content" source="../media/python/where-is-your-code.png" alt-text="Screenshot of select GitHub as the location of your code.":::
 
 1. On the **Select a repository** tab, select the forked sample repository. 
 
-  :::image type="content" source="../media/python/select-repository.png" alt-text="Screenshot of repository selection.":::
+    :::image type="content" source="../media/python/select-repository.png" alt-text="Screenshot of repository selection.":::
 
 1. You might be prompted to enter your GitHub password again as a confirmation.
 1. If the Azure Pipelines extension isn't installed on GitHub, GitHub prompts you to install the **Azure Pipelines** extension.
 
-  :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Screenshot of Azure Pipelines extension on GitHub.":::
+    :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Screenshot of Azure Pipelines extension on GitHub.":::
 
-  On this page, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**.
+    On this page, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**.
 
-  :::image type="content" source="../media/python/github-pipelines-install-02.png" alt-text="Screenshot of Approve and Install Azure Pipelines extension on GitHub.":::
+    :::image type="content" source="../media/python/github-pipelines-install-02.png" alt-text="Screenshot of Approve and Install Azure Pipelines extension on GitHub.":::
 
 1. In the **Configure your pipeline** dialog, select **Starter pipeline**.
 1. Replace the contents of the **azure-pipelines.yml** file with the following code.
 
-   ```yml
+    ```yml
     trigger:
     - main
     
@@ -502,18 +502,18 @@ Azure Pipelines creates a **azure-pipelines.yml** file and displays it in the YA
                   appName: $(webAppName)
                   package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
                   startUpCommand: 'startup.txt'
-
+    
     ```
 
 1. Replace the following placeholders with your own values:
 
-   |**Placeholder**|**Description**|
-   |--|--|
-   |`<your-service-connection-name>`|The name of the service connection you created.|
-   |`<your-web-app-name>`|The name your Azure App Service web app.|
-   |`<your-pool-name>`|The name of the agent pool you want to use.|
-   |`<your-python-version>`|The version of Python running on your agent. It's a good idea to match this version with the Python version running on your web app. The web app version is shown in the JSON output of the `az webapp up` command.|
-
+    |**Placeholder**|**Description**|
+    |--|--|
+    |`<your-service-connection-name>`|The name of the service connection you created.|
+    |`<your-web-app-name>`|The name your Azure App Service web app.|
+    |`<your-pool-name>`|The name of the agent pool you want to use.|
+    |`<your-python-version>`|The version of Python running on your agent. It's a good idea to match this version with the Python version running on your web app. The web app version is shown in the JSON output of the `az webapp up` command.|
+    
 
 ::: moniker-end
 
@@ -788,17 +788,17 @@ You're now ready to try it out!
 1. In the editor, select **Save and run**.
 1. In the **Save and run** dialog, add a commit message then select **Save and run**.
 
-  You can watch the pipeline as it runs by selecting the Stages or Jobs in the pipeline run summary. 
-
-  :::image type="content" source="../media/python/pipeline-summary-stages-section.png" alt-text="Screenshot of pipeline run summary stages section.":::
-
-  There are green check marks next to each stage and job as it completes successfully. If errors occur, they're displayed in the summary or in the job steps. 
-
-  :::image type="content" source="../media/python/pipeline-stages.png" alt-text="Screenshot of pipeline stage steps.":::
-
-  You can quickly return to the YAML editor by selecting the vertical dots at the upper right of the **Summary** page and selecting **Edit pipeline**:
-
-  :::image type="content" source="../media/python/edit-pipeline-command.png" alt-text="Screenshot of edit pipeline comment from a build report.":::
+    You can watch the pipeline as it runs by selecting the Stages or Jobs in the pipeline run summary. 
+    
+    :::image type="content" source="../media/python/pipeline-summary-stages-section.png" alt-text="Screenshot of pipeline run summary stages section.":::
+    
+    There are green check marks next to each stage and job as it completes successfully. If errors occur, they're displayed in the summary or in the job steps. 
+    
+    :::image type="content" source="../media/python/pipeline-stages.png" alt-text="Screenshot of pipeline stage steps.":::
+    
+    You can quickly return to the YAML editor by selecting the vertical dots at the upper right of the **Summary** page and selecting **Edit pipeline**:
+    
+    :::image type="content" source="../media/python/edit-pipeline-command.png" alt-text="Screenshot of edit pipeline comment from a build report.":::
 
 1. From the deployment job, select the **Deploy Azure Web App** task to display its output. To visit the deployed site, hold down <kbd>Ctrl</kbd> and select the URL after `App Service Application URL`.
 
