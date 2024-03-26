@@ -74,7 +74,7 @@ Fork the sample Python repository to your GitHub account.
 
 1. Go to your project and select **Pipelines** > **Create a new pipeline**.
 
-1. Select **GitHub** as the location of your source code.
+1. Select **GitHub Enterprise Server** as the location of your source code.
 
 1. If you're redirected to GitHub to sign in, enter your GitHub credentials.
 
@@ -225,6 +225,8 @@ The **Artifacts** page shows the published build artifacts.
 
 To view the test results, select the **Tests** tab.
 
+:::image type="content" source="media/pipeline-test-results.png" alt-text="Screenshot of pipeline test results.":::
+
 ::: moniker-end
 
 ::: moniker range="> azure-devops-2019 < azure-devops"
@@ -233,11 +235,13 @@ The **Summary** tab shows the status of your pipeline run.
 
 :::image type="content" source="media/pipeline-summary-page-single-job.png" alt-text="Screenshot of completed Python job.":::
 
-To view your build artifact, select the **published** link in the **Summary** tab .
+To view your build artifact, select the **published** link in the **Summary** tab.
 
 :::image type="content" source="media/pipeline-artifacts-list-single-file.png" alt-text="Screenshot of published build artifacts link.":::
 
 To view the test results, select the **Tests** tab.
+
+:::image type="content" source="media/pipeline-test-results.png" alt-text="Screenshot of pipeline test results.":::
 
 ::: moniker-end
 
@@ -249,11 +253,12 @@ The **Summary** tab shows the status of your pipeline run.
 
 To download your build artifact, select the **drop** link from the **Build artifacts published** section.
 
-To view the test results, select the **Tests** tab .
+To view the test results, select the **Tests** tab.
+
+:::image type="content" source="media/server-2019-test-results.png" alt-text="Screenshot of pipeline test results.":::
 
 ::: moniker-end
 
-:::image type="content" source="media/pipeline-test-results.png" alt-text="Screenshot of pipeline test results.":::
 
 ## Clean up
   
