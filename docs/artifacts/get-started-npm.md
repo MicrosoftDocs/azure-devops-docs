@@ -28,7 +28,7 @@ A feed is an organizational construct that allows users to store their packages 
 ## Set up your .npmrc files
 
 > [!NOTE]
-> `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
+> `vsts-npm-auth` is not supported in Azure DevOps Server.
 
 We recommend using two .npmrc files. The first one should be located in the same directory as your package.json file. The second should be placed in the *$home* directory (Linux/macOS) or *$env.HOME* (Windows) to securely store your credentials. The npm client will then be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
 
