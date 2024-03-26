@@ -35,4 +35,4 @@ Should you encounter messages indicating a lack of responsiveness from the agent
 
 > "We stopped hearing from the agent"
 
-To address this, enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops&branch=pr-en-us-6616&tabs=windows-agent#configure-verbose-logs&preserve-view=true) for more detailed tracking of resource utilization, helping to pinpoint where resources are being exhausted. For those utilizing a self-hosted agent, ensure your agent has sufficient resources.
+To address this, enable [verbose logs](/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops&branch=pr-en-us-6616&tabs=windows-agent#configure-verbose-logs) for more detailed tracking of resource utilization, helping to pinpoint where resources are being exhausted. For those utilizing a self-hosted agent, ensure your agent has sufficient resources.
