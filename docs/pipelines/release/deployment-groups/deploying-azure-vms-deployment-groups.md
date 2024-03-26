@@ -47,7 +47,7 @@ The following resources are provisioned on the Azure using an ARM template:
 
     [Deploy to Azure](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json)
 
-    :::image type="content" source="edia/deploying-azure-vms-deployment-groups/deploy-azure.png" alt-text="Screenshot showing how to set up your Azure deployment environment.":::
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deploy-azure.png" alt-text="Screenshot showing how to set up your Azure deployment environment.":::
 
     > [!NOTE]
     > It takes approximately 10-15 minutes to complete the deployment. If you receive any naming conflict errors, try changing the parameter you provide for **Env Prefix Name**.
