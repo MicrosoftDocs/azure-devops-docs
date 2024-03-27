@@ -98,7 +98,7 @@ To take full advantage of the fast lookup feature, we recommend that you include
 
 ## Save packages from upstream sources
 
-When you enable upstream sources for your feed and install a package from an upstream source, an automatic copy of that package is saved to your feed. This practice enhances download performance and conserves network bandwidth, making it particularly beneficial for TFS servers in internal networks.
+When you enable upstream sources for your feed and install a package from an upstream source, an automatic copy of that package is saved to your feed. This practice enhances download performance and conserves network bandwidth.
 
 For instance, you can install packages directly from the upstream source using a command like *npm install express*. Alternatively, packages might be installed as part of a dependency resolution process. In the latter scenario, installing *express* would also save its dependencies, such as *accepts*.
 
