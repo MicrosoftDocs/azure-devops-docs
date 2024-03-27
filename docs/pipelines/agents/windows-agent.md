@@ -99,15 +99,13 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 1. Start an elevated (PowerShell) window and set the location to where you unpacked the agent.
 
- ```ps
- cd C:\agents 
- ```   
+   ```ps
+   cd C:\agents 
 
-4. Run `config.cmd`. This will ask you a series of questions to configure the agent.
+1. Run `config.cmd`. This will ask you a series of questions to configure the agent.
 
- ```ps
- .\config.cmd
- ```
+   ```ps
+   .\config.cmd
 
 ### Server URL
 
