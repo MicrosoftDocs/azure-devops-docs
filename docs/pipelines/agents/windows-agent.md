@@ -80,7 +80,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 1. Follow the instructions on the page to download the agent.
 
-1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
+1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues.
 
 > [!IMPORTANT]
 > We strongly recommend you configure the agent from an elevated PowerShell window.
@@ -94,6 +94,18 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 > [!Note]
 > Please avoid using mintty based shells, such as git-bash, for agent configuration. Mintty is not fully compatible with native Input/Output Windows API ([here](https://github.com/mintty/mintty/wiki/Tips#inputoutput-interaction-with-alien-programs) is some info about it) and we can't guarantee the setup script will work correctly in this case.
+
+## Install the agent
+
+1. Start an elevated (PowerShell) window and set the location to where you unpacked the agent.
+
+   ```ps
+   cd C:\agents 
+
+1. Run `config.cmd`. This will ask you a series of questions to configure the agent.
+
+   ```ps
+   .\config.cmd
 
 ### Server URL
 
