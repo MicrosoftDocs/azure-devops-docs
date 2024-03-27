@@ -1,6 +1,6 @@
 ---
-title: publish and download npm packages
-description: How to set up your .npmrc config file to publish and download npm packages
+title: Publish and download npm packages
+description: How to set up your config file to publish and download npm packages.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
@@ -63,7 +63,7 @@ We recommend using two .npmrc files. The first one should be located in the same
 
 #### [Windows](#tab/Windows/)
 
-If you're developing on Windows, we recommend using *vsts-npm-auth* to authenticate with Azure Artifacts. Make sure you have *vsts-npm-auth* installed from **Get the tools** and then run vsts-npm-auth to get an Azure Artifacts token added to your user-level .npmrc file:
+If you're developing on Windows, we recommend using *vsts-npm-auth* to authenticate with Azure Artifacts. Make sure you have *vsts-npm-auth* installed from **Get the tools** and then run vsts-npm-auth to get an Azure Artifacts token added to your user-level npmrc file:
 
 ```Command
 vsts-npm-auth -config .npmrc
@@ -71,7 +71,7 @@ vsts-npm-auth -config .npmrc
 
 #### [Other](#tab/Other/)
 
-If you're developing on a non-Windows platform and need to authenticate with Azure Artifacts, you'll need to create a personal access token, encode it in Base64, and then add it to your user-level .npmrc file.
+If you're developing on a non-Windows platform and need to authenticate with Azure Artifacts, you need to create a personal access token, encode it in Base 64, and then add it to your user-level npmrc file.
 
 1. Generate a [personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
 
@@ -85,10 +85,10 @@ If you're developing on a non-Windows platform and need to authenticate with Azu
 
     1. Paste your personal access token, and then press **Enter**.
  
-    1. Copy the Base64 encoded personal access token.
+    1. Copy the Base 64 encoded personal access token.
 
 
-1. Copy the following code snippet to your user-level .npmrc file and replace the `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` placeholder with your Base64 personal access token: 
+1. Copy the following code snippet to your user-level .npmrc file and replace the `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` placeholder with your Base 64 personal access token: 
 
     - **Organization-scoped feed**:
 
