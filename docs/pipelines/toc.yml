@@ -197,8 +197,8 @@
   - name: Ecosystem support
     displayName: language, platform
     href: ecosystems/ecosystems.md
-  -name: .NET
-   items:
+  - name: .NET
+    items:
     - name: .NET Core
       displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild, DotNetCore
       href: ecosystems/dotnet-core.md
