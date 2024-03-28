@@ -35,7 +35,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://aka.ms/ubuntu-20.04-readme)
 | macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
 | macOS 12 Monterey | *macOS-12* | `macOS-latest` OR `macOS-12` | [Link](https://aka.ms/macOS-12-readme) |
-| macOS 11 Big Sur | *macOS-11* | `macOS-11` | [Link](https://aka.ms/macOS-11-readme) |
+| macOS 11 Big Sur (deprecated) | *macOS-11* | `macOS-11` | [Link](https://aka.ms/macOS-11-readme) |
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
@@ -44,6 +44,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
+* The macOS-11 Big Sur image is deprecated and will be retired June 28, 2024.
 * All Microsoft hosted agents will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS starting January 28. For more information, including potential breaking changes, see [Microsoft hosted agents use PowerShell 7.4](/azure/devops/release-notes/2024/sprint-233-update#microsoft-hosted-agents-use-powershell-74).
 * The macOS 13 image is generally available
 * The macOS 10.15 image is fully unsupported as of 4/24/2023
@@ -66,6 +67,10 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 Customers are encouraged to migrate to newer versions or a [self-hosted agent](windows-agent.md).
 
 For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
+
+> [!NOTE]
+> macOS capacity is currently limited. Unlike Linux and Windows images, where our capacity is restrained by Azure's all up capacity, macOS capacity is constrained by the amount of hardware we have available. While we are working to make additional capacity available over Spring 2024, some jobs may experience delayed execution.
+> Wherever possible, e.g. for jobs that do not create Apple ecosystem apps, customers should choose Linux or Windows images.
 
 > [!NOTE]
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
