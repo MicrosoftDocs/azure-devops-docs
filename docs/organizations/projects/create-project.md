@@ -67,7 +67,7 @@ There isn't a limit on the number of projects that you can create within a proje
 
 #### [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
 
@@ -104,9 +104,9 @@ There isn't a limit on the number of projects that you can create within a proje
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops"
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
+1. Sign in to your DevOps Server collection (```https://<your-devops-server>/<your-organization>```). 
 
 2. Select **New project**.
 
