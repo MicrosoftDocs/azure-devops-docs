@@ -37,7 +37,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | macOS 12 Monterey | *macOS-12* | `macOS-latest` OR `macOS-12` | [Link](https://aka.ms/macOS-12-readme) |
 | macOS 11 Big Sur (deprecated) | *macOS-11* | `macOS-11` | [Link](https://aka.ms/macOS-11-readme) |
 
-The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For m)ore information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
+The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
 
