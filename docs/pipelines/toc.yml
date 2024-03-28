@@ -213,18 +213,20 @@
       href: ecosystems/customize-javascript.md
     - name: Node.js tutorial
       href: ecosystems/nodejs-tutorial.md
-  - name: Python quickstart
-    displayName: flake, python
-    href: ecosystems/python.md
-  - name: Customize Python
-    displayName: anaconda, PyPI, pip , setuptools, wheel, conda, flake8, pytest, junit, cobertura, tox, twine
-    href: ecosystems/customize-python.md
-  - name: Python to web app
-    displayName: django, webapp
-    href: ecosystems/python-webapp.md
-  - name: Anaconda
-    displayName: data science, python, miniconda, conda
-    href: ecosystems/anaconda.md
+  - name: Python
+    items:
+    - name: Python quickstart
+      displayName: flake, python
+      href: ecosystems/python.md
+    - name: Customize Python
+      displayName: anaconda, PyPI, pip , setuptools, wheel, conda, flake8, pytest, junit, cobertura, tox, twine
+      href: ecosystems/customize-python.md
+    - name: Python to web app
+      displayName: django, webapp
+      href: ecosystems/python-webapp.md
+    - name: Anaconda
+      displayName: data science, python, miniconda, conda
+      href: ecosystems/anaconda.md
   - name: Java
     items:
     - name: Java apps
