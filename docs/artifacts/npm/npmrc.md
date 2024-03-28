@@ -121,7 +121,7 @@ For best practice, we suggest using two separate configuration files. The first 
 * * *
 
 > [!NOTE]
-> `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
+> `vsts-npm-auth` is not supported in Azure DevOps Server.
 
 ## Pipeline authentication
 
