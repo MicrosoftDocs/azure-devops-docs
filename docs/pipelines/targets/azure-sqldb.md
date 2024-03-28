@@ -1,6 +1,6 @@
 ---
 title: Deploy to Azure SQL Database
-description: Deploy to an Azure SQL database from Azure Pipelines or TFS
+description: Deploy to an Azure SQL database from Azure Pipelines
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: conceptual
 ms.date: 04/20/2022
@@ -208,7 +208,7 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
 
 ## Azure service connection
 
-The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.
+The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure.
 
 ::: moniker range="azure-devops"
 
