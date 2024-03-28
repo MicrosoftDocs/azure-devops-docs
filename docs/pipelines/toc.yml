@@ -197,12 +197,14 @@
   - name: Ecosystem support
     displayName: language, platform
     href: ecosystems/ecosystems.md
-  - name: .NET Core
-    displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild, DotNetCore
-    href: ecosystems/dotnet-core.md
-  - name: .NET Framework
-    displayName: ASP, ASPNET, web
-    href: apps/aspnet/build-aspnet-4.md
+  -name: .NET
+   items:
+    - name: .NET Core
+      displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild, DotNetCore
+      href: ecosystems/dotnet-core.md
+    - name: .NET Framework
+      displayName: ASP, ASPNET, web
+      href: apps/aspnet/build-aspnet-4.md
   - name: JavaScript
     items:
     - name: JavaScript quickstart
