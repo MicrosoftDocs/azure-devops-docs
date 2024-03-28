@@ -69,6 +69,10 @@ Customers are encouraged to migrate to newer versions or a [self-hosted agent](w
 For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
 
 > [!NOTE]
+> macOS capacity is currently limited. Unlike Ubuntu and Windows images, where our capacity is restrained by Azure's all up capacity, Mac capacity is constrained by the amount of hardware we have available. Please expect jobs to have delayed execution while we are working to make additional capacity available over the spring.
+> Wherever possible, e.g. for jobs that create Apple ecosystem apps, customers should choose non-MacOS images.
+
+> [!NOTE]
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
 > [!IMPORTANT]
