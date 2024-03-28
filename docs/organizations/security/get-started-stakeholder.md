@@ -183,9 +183,9 @@ For example, here we assign the Requirement work item to Jamal Hartnett. When yo
 
 To add more details, you can change field values, add a description or tags, and add comments. For more information, see:
 
-- [Update fields: Descriptions and usage](../../boards/get-started/plan-track-work.md)
-- [Add tags to work items](../../boards/queries/add-tags-to-work-items.md). As a Stakeholder, you can add existing tags to a work item, but you can't add new tags
-- [Capture comments in the Discussion section](../../boards/get-started/plan-track-work.md#capture-comments-in-the-discussion-section)
+- [Update fields: Descriptions and usage](../../boards/get-started/plan-track-work.md).
+- [Add tags to work items](../../boards/queries/add-tags-to-work-items.md). As a Stakeholder, you can add existing tags to a work item, but you can't add new tags.
+- [Capture comments in the Discussion section](../../boards/get-started/plan-track-work.md#capture-comments-in-the-discussion-section).
 
 ## View as backlog
 
@@ -210,7 +210,7 @@ The list of backlog items appears in priority order. You can add a backlog item,
 
 ::: moniker range=">= azure-devops-2019"
 
-Select **Boards** > **Work Items**. Then select an option from the dropdown menu. For example, choose **Assigned to me**.
+Select **Boards** > **Work Items**. Then select an option from the dropdown menu. For example, select **Assigned to me**.
 
 :::image type="content" source="media/stakeholder/work-items-assigned-to-me.png" alt-text="Screenshot that shows selections of work on the Work Items page and choosing Assigned to me.":::
 
