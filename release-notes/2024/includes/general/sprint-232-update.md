@@ -17,7 +17,7 @@ For more information, see [Find or change your organization geography](/azure/de
 
 ### Removed Visual Studio Subscriber option from group rules
 
-Visual Studio subscriptions that a user has assigned to them have always taken precedence over group rules when the user logs in. To avoid confusion we removed the Visual Studio Subscriber option from group rules. To learn more visit, [How do Visual Studio Subscriptions work with group rules ?](https://learn.microsoft.com/azure/devops/organizations/accounts/assign-access-levels-by-group-membership?view=azure-devops#q-how-do-visual-studio-subscriptions-work-with-group-rules)
+Visual Studio subscriptions that a user has assigned to them have always taken precedence over group rules when the user logs in. To avoid confusion we removed the Visual Studio Subscriber option from group rules. To learn more visit, [How do Visual Studio Subscriptions work with group rules ?](/azure/devops/organizations/accounts/assign-access-levels-by-group-membership#q-how-do-visual-studio-subscriptions-work-with-group-rules)
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Removed Visual Studio Subscriber option.](../../media/232-general-03.png "Screenshot of Removed Visual Studio Subscriber option")
