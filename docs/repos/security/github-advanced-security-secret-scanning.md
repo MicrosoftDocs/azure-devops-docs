@@ -159,31 +159,34 @@ If you believe a blocked secret is a false positive or safe to push, you can byp
 
 ## Secret scanning patterns
 
-GitHub Advanced Security maintains multiple sets of default secret scanning patterns: 
+Advanced Security maintains multiple sets of default secret scanning patterns: 
 
 1. **Push protection patterns** - used to detect potential secrets at push time in repositories with secret scanning push protection enabled.
-1. **User Alert patterns** - used to detect potential secrets in repositories with secret scanning alerts enabled.
-1. **Non-Provider patterns** - used to detect common occurrences of structured secrets in repositories with secret scanning alerts enabled
+1. **User alert patterns** - used to detect potential secrets in repositories with secret scanning alerts enabled.
+1. **Non-provider patterns** - used to detect common occurrences of structured secrets in repositories with secret scanning alerts enabled.
 
-### Supported secrets
+### Supported secrets 
 
-#### Non-Provider Secrets
+| Section  | Explanation  |
+|---|---|
+|  Provider | The name of the token provider. |
+| Token name | The type of token discovered by Advanced Security secret scanning. |
+| User | A token for which leaks are reported to users post-push. This applies to all repositories where Advanced Security is enabled |
+| Push protection | A token for which leaks are reported to users on push. This applies to all repositories where secret push protection enabled. |
+| Validity | Tokens for which Advanced Security will attempt to perform validity checking for. |
 
-This table lists the non-provider generated secrets detected by secret scanning. All alerts are generated post-push, and surfaced in the secret scanning UX. Non-provider secret are viewable by selecting "Other" from the confidence dropdown on the Secret Scanning tab.
+#### Partner provider patterns
+
+The following table lists the partner provider patterns supported by secret scanning. 
+
+[!INCLUDE [provider-table](includes/provider-table.md)]
+
+#### Non-provider patterns
+
+The following table lists the non-provider generated secrets detected by secret scanning. Non-provider secret are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab.
 
 > [!TIP]
 > The detection of non-provider patterns is currently in beta and subject to change.
 
 [!INCLUDE [non-provider-table](includes/non-provider-table.md)] 
 
-#### Partner Provider Secrets
-
-This table lists the secrets supported by secret scanning. You can see the types of alert that get generated for each token.
-
-- Provider — name of the token provider.
-- Token Name - the type of token that we discover
-- User — token for which leaks are reported to users post-push. Applies to repositories where GitHub Advanced Security is enabled.
-- Push protection — token for which leaks are reported to users on push. Applies to repositories with secret scanning and push protection enabled.
-  Validity - tokens for which GHAzDO will attempt to perform validity checking for
-
-[!INCLUDE [provider-table](includes/provider-table.md)]
