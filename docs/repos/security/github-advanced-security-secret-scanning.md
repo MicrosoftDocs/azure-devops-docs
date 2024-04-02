@@ -159,119 +159,34 @@ If you believe a blocked secret is a false positive or safe to push, you can byp
 
 ## Secret scanning patterns
 
-GitHub Advanced Security maintains multiple sets of default secret scanning patterns: 
+Advanced Security maintains multiple sets of default secret scanning patterns: 
 
 1. **Push protection patterns** - used to detect potential secrets at push time in repositories with secret scanning push protection enabled.
-1. **Alert patterns** - used to detect potential secrets in repositories with secret scanning alerts enabled.
+1. **User alert patterns** - used to detect potential secrets in repositories with secret scanning alerts enabled.
+1. **Non-provider patterns** - used to detect common occurrences of structured secrets in repositories with secret scanning alerts enabled.
 
-### Supported secrets
+### Supported secrets 
 
-This table lists the secrets supported by secret scanning. You can see the types of alert that get generated for each token.
+| Section  | Explanation  |
+|---|---|
+|  Provider | The name of the token provider. |
+| Token name | The type of token discovered by Advanced Security secret scanning. |
+| User | A token for which leaks are reported to users post-push. This applies to all repositories where Advanced Security is enabled |
+| Push protection | A token for which leaks are reported to users on push. This applies to all repositories where secret push protection enabled. |
+| Validity | Tokens for which Advanced Security will attempt to perform a validity check. |
 
-- Provider—name of the token provider.
-- User—token for which leaks are reported to users post-push. Applies to repositories where GitHub Advanced Security is enabled.
-- Push protection—token for which leaks are reported to users on push. Applies to repositories with secret scanning and push protection enabled.
+#### Partner provider patterns
 
-| Provider                  | Supported secret                                                                                  | User                                                 | Push Protection                                     |
-| ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------- |
-| Adafruit IO               | Adafruit IO Key                                                                                   | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Alibaba Cloud             | Alibaba Cloud Access Key ID with Alibaba Cloud Access Key Secret                                  | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Amazon                    | Amazon OAuth Client ID with Amazon OAuth Client Secret                                            | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Amazon Web Services (AWS) | Amazon AWS Access Key ID with Amazon AWS Secret Access Key                                        | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Amazon Web Services (AWS) | Amazon AWS Session Token with Amazon AWS Temporary Access Key ID and Amazon AWS Secret Access Key | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Asana                     | Asana Personal Access Token                                                                       | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Atlassian                 | Bitbucket Server Personal Access Token                                                            | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Chief Tools               | Chief Tools Token                                                                                 | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Clojars                   | Clojars Deploy Token                                                                              | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Databricks                | Databricks Access Token                                                                           | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| DevCycle                  | DevCycle Client API Key                                                                           | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| DevCycle                  | DevCycle Mobile API Key                                                                           | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| DevCycle                  | DevCycle Server API Key                                                                           | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| DigitalOcean              | DigitalOcean OAuth Token                                                                          | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| DigitalOcean              | DigitalOcean Personal Access Token                                                                | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| DigitalOcean              | DigitalOcean Refresh Token                                                                        | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| DigitalOcean              | DigitalOcean System Token                                                                         | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Discord                   | Discord Bot Token                                                                                 | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Doppler                   | Doppler Audit Token                                                                               | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Doppler                   | Doppler CLI Token                                                                                 | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Doppler                   | Doppler Personal Token                                                                            | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Doppler                   | Doppler SCIM Token                                                                                | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Doppler                   | Doppler Service Token                                                                             | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Dropbox                   | Dropbox Short Lived Access Token                                                                  | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Duffel                    | Duffel Live Access Token                                                                          | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| EasyPost                  | EasyPost Production API Key                                                                       | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Figma                     | Figma Personal Access Token                                                                       | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Flutterwave               | Flutterwave Live API Secret Key                                                                   | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| FullStory                 | FullStory API Key                                                                                 | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| GitHub                    | GitHub Personal Access Token                                                                      | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| GitHub                    | GitHub App Installation Access Token                                                              | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| GitHub                    | GitHub OAuth Access Token                                                                         | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| GitHub                    | GitHub Refresh Token                                                                              | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Google                    | Google OAuth Client ID with Google OAuth Client Secret                                            | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Google                    | Google Cloud Storage Service Account Access Key ID with Google Cloud Storage Access Key Secret    | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Google                    | Google Cloud Storage User Access Key ID with Google Cloud Storage Access Key Secret               | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Grafana                   | Grafana API Key                                                                                   | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| HashiCorp                 | HashiCorp Vault Batch Token                                                                       | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| HashiCorp                 | HashiCorp Vault Root Service Token                                                                | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| HashiCorp                 | HashiCorp Vault Service Token                                                                     | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Highnote                  | Highnote RK Live Key                                                                              | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Highnote                  | Highnote RK Test Key                                                                              | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Highnote                  | Highnote SK Live Key                                                                              | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Highnote                  | Highnote SK Test Key                                                                              | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Hubspot                   | Hubspot API Key                                                                                   | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Hubspot                   | Hubspot API Personal Access Key                                                                   | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Intercom                  | Intercom Access Token                                                                             | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Ionic                     | Ionic Personal Access Token                                                                       | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Ionic                     | Ionic Refresh Token                                                                               | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| JFrog                     | JFrog Platform API Key                                                                            | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| JFrog                     | JFrog Platform Access Token                                                                       | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Linear                    | Linear API Key                                                                                    | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Linear                    | Linear OAuth Access Token                                                                         | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| LogicMonitor              | LogicMonitor Bearer Token                                                                         | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| LogicMonitor              | LogicMonitor LMV1 Access Key                                                                      | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Azure DevOps Personal Access Token                                                                | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Office/Teams Inbound Webhook                                                                      | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Azure Storage Key Identifiable                                                                    | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Azure Cache for Redis Access Key                                                                  | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Microsoft Entra Application Secret                                                         | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Azure Functions V4+ KEY                                                                           | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Azure Cosmos DB Key Identifiable                                                                  | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Azure Batch Key Identifiable                                                                      | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Azure Search Query Key                                                                            | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Azure Search Admin Key                                                                            | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Microsoft                 | Azure Machine Learning studio (classic) web service key                                           | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Midtrans                  | Midtrans Production Server Key                                                                    | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| New Relic                 | New Relic Insights Query Key                                                                      | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| New Relic                 | New Relic Personal API Key                                                                        | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| New Relic                 | New Relic REST API Key                                                                            | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| npm                       | npm Access Token                                                                                  | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| NuGet                     | NuGet API Key                                                                                     | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Onfido                    | Onfido Live API Token                                                                             | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| OpenAI                    | OpenAI API Key                                                                                    | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| PlanetScale               | PlanetScale Database Password                                                                     | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| PlanetScale               | PlanetScale OAuth Token                                                                           | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| PlanetScale               | PlanetScale Service Token                                                                         | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Postman                   | Postman API Key                                                                                   | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Prefect                   | Prefect Server API Key                                                                            | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Prefect                   | Prefect User API Key                                                                              | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Proctorio                 | Proctorio Secret Key                                                                              | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| ReadMe                    | ReadMe API Access Key                                                                             | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| redirect.pizza            | redirect.pizza API Token                                                                          | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Samsara                   | Samsara API Token                                                                                 | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Samsara                   | Samsara OAuth Access Token                                                                        | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| SendGrid                  | SendGrid API Key                                                                                  | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Sendinblue                | Sendinblue API Key                                                                                | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Sendinblue                | Sendinblue SMTP Key                                                                               | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Shippo                    | Shippo Live API Token                                                                             | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Shopify                   | Shopify Access Token                                                                              | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Shopify                   | Shopify App Shared Secret                                                                         | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Slack                     | Slack API Token                                                                                   | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Stripe                    | Stripe API Key                                                                                    | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Tencent Cloud             | Tencent Cloud Secret ID                                                                           | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Typeform                  | Typeform Personal Access Token                                                                    | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Uniwise                   | WISEflow API Key                                                                                  | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| WakaTime                  | WakaTime App Secret                                                                               | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| WakaTime                  | WakaTime OAuth Access Token                                                                       | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| WakaTime                  | WakaTime OAuth Refresh Token                                                                      | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| WorkOS                    | WorkOS Production API Key                                                                         | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
-| Zuplo                     | Zuplo Consumer API Key                                                                            | ![Green Checkmark](../../media/icons/checkmark.png)  | ![Green Checkmark](../../media/icons/checkmark.png) |
+The following table lists the partner provider patterns supported by secret scanning. 
+
+[!INCLUDE [provider-table](includes/provider-table.md)]
+
+#### Non-provider patterns
+
+The following table lists the non-provider generated secrets detected by secret scanning. Non-provider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab.
+
+> [!TIP]
+> The detection of non-provider patterns is currently in beta and subject to change.
+
+[!INCLUDE [non-provider-table](includes/non-provider-table.md)] 
+
