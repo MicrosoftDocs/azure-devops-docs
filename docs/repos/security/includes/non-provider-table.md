@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.service: azure-devops-repos
+ms.author: laurajjiang
+author: laurajjiang
+ms.date: 04/02/2024
+---
+
 | Provider | Supported Secret                | Token Name                     |
 | -------- | ------------------------------- | ------------------------------ |
 | Generic  | ASP.NET Machine Key             | AspNetMachineKey               |
