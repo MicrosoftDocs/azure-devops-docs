@@ -203,8 +203,8 @@
 | Notion                   | NotionIntegrationToken                                |                                                     | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
 | Notion                   | NotionOAuthClientCredentials                          |                                                     | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
 | npm                      | NpmAuthorIdentifiableToken                            | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
-| NPM                      | NpmCredentials                                        | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
-| NPM                      | NpmLegacyAuthorToken                                  |                                                     | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
+| npm                      | NpmCredentials                                        | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
+| npm                      | NpmLegacyAuthorToken                                  |                                                     | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
 | NuGet                    | NuGetApiKey                                           | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
 | NuGet                    | NuGetCredentials                                      |                                                     | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
 | Octopus Deploy           | OctopusDeployApiKey                                   |                                                     | ![Green Checkmark](../../../media/icons/checkmark.png) |
