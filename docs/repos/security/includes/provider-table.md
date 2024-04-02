@@ -1,4 +1,4 @@
-| Provider                 | Token Name                                            | Push Protection                                     | User Alerts                                         | Validity checking |
+| Provider                 | Token Name                                            | Push Protection                                     | User Alerts                                         | Validity Checking |
 | ------------------------ | ----------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------- |
 | Adafruit IO              | AdafruitIOKey                                         | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
 | Adobe                    | AdobeDeviceToken                                      |                                                     | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
