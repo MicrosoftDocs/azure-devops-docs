@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.service: azure-devops-repos
+ms.author: laurajjiang
+author: laurajjiang
+ms.date: 04/02/2024
+---
+
 | Provider                 | Token Name                                            | Push Protection                                     | User Alerts                                         | Validity Checking |
 | ------------------------ | ----------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------- |
 | Adafruit IO              | AdafruitIOKey                                         | ![Green Checkmark](../../../media/icons/checkmark.png) | ![Green Checkmark](../../../media/icons/checkmark.png) |                   |
