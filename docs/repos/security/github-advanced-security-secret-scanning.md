@@ -173,7 +173,7 @@ Advanced Security maintains multiple sets of default secret scanning patterns:
 | Token name | The type of token discovered by Advanced Security secret scanning. |
 | User | A token for which leaks are reported to users post-push. This applies to all repositories where Advanced Security is enabled |
 | Push protection | A token for which leaks are reported to users on push. This applies to all repositories where secret push protection enabled. |
-| Validity | Tokens for which Advanced Security will attempt to perform validity checking for. |
+| Validity | Tokens for which Advanced Security will attempt to perform a validity check. |
 
 #### Partner provider patterns
 
@@ -183,7 +183,7 @@ The following table lists the partner provider patterns supported by secret scan
 
 #### Non-provider patterns
 
-The following table lists the non-provider generated secrets detected by secret scanning. Non-provider secret are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab.
+The following table lists the non-provider generated secrets detected by secret scanning. Non-provider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab.
 
 > [!TIP]
 > The detection of non-provider patterns is currently in beta and subject to change.
