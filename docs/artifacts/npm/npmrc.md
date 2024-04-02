@@ -1,19 +1,20 @@
 ---
-title: Set up your client's npmrc
-description: How to set up your project and connect to Azure Artifacts feeds
+title: Connect to Azure Artifacts with npm projects
+description: How to set up your npm project and connect to Azure Artifacts feeds
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
 ms.topic: conceptual
-ms.date: 04/04/2023
+ms.date: 04/02/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Set up your project and connect to Azure Artifacts
+# Connect your npm project to Azure Artifacts feeds
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables you to publish various package types to your feeds and install packages from both feeds and public registries like npmjs.com. Before we can authenticate with Azure Artifacts, we need to configure our *.npmrc* file, which stores the feed URLs and credentials that npm uses. This file can be used to customize the behavior of the npm client, such as setting up proxies, specifying default package locations, or configuring private package feeds. The *.npmrc* file is located in the user's home directory and can also be created at the project level to override the default settings. By editing the *.npmrc* file, users can customize their npm experience and make it more tailored to their needs.
+Azure Artifacts enables developers to publish and install various package types from feeds and public registries like npmjs.com. To authenticate with Azure Artifacts, it's necessary to configure your npm config file. 
+This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The .npmrc file is typically located in the user's home directory but can also be created at the project level to override default settings. By modifying the .npmrc file, users can personalize their npm experience to meet their specific requirements.
 
 ## Project setup
 
