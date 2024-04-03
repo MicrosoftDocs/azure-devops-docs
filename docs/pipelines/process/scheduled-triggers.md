@@ -4,7 +4,7 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 10/10/2023
+ms.date: 04/03/2024
 monikerRange: '<= azure-devops'
 ---
 
