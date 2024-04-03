@@ -20,7 +20,7 @@ monikerRange: '<= azure-devops'
 
 
 
-To run your jobs, you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. See [Check prerequisites](#check-prerequisites) for a list of supported Linux distributions.
+To run your jobs, you need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. See [Check prerequisites](#check-prerequisites) for a list of supported Linux distributions.
 
 > [!NOTE]
 > This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you're using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Linux agent.
@@ -51,7 +51,7 @@ We support the following subset of .NET 6 supported distributions:
     * Ubuntu 22.04, 20.04, 18.04
   * Alpine x64
     * [Alpine Linux](https://alpinelinux.org/) 3.13 and higher ([requires agent 3.227 or higher](/azure/devops/release-notes/2023/sprint-228-update#azure-pipelines-agent-now-supports-alpine-linux))
-* **Git** - Regardless of your platform, you will need to install Git 2.9.0 or higher.
+* **Git** - Regardless of your platform, you need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
 * **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
 * **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
@@ -83,7 +83,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### Azure Pipelines
 
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
+1. Log on to the machine using the account for which you've prepared permissions as explained in the previous section.
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
@@ -135,7 +135,7 @@ To run the agent interactively:
   To restart the agent, press Ctrl+C and then run `run.sh` to restart it.
 
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
-If you didn't choose a different pool, your agent will be in the **Default** pool.
+If you didn't choose a different pool, your agent is placed in the **Default** pool.
 
 ### Run once
 
@@ -146,7 +146,7 @@ To run in this configuration:
 ./run.sh --once
 ```
 
-Agents in this mode will accept only one job and then spin down gracefully (useful for running in [Docker](docker.md) on a service like Azure Container Instances).
+Agents in this mode accept only one job and then spin down gracefully (useful for running in [Docker](docker.md) on a service like Azure Container Instances).
 
 ## Run as a systemd service
 
@@ -186,7 +186,7 @@ Command:
 sudo ./svc.sh install [username]
 ```
 
-This command creates a service file that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agents host. If `username` parameter is not specified then the username is taken from the $SUDO_USER environment variable which is set by sudo command. This variable is always equal to the name of the user who invoked the `sudo` command.
+This command creates a service file that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agents host. If `username` parameter is not specified, the username is taken from the $SUDO_USER environment variable set by sudo command. This variable is always equal to the name of the user who invoked the `sudo` command.
 
 #### Start
 
@@ -334,14 +334,14 @@ If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.
 (The Oracle JRE and OpenJDK aren't sufficient for this purpose.)
 
 [TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
-It has an EULA, which you'll need to accept during configuration if you plan to work with TFVC.
+It has an EULA, which you need to accept during configuration if you plan to work with TFVC.
 
 Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin will be downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin will be removed after the job execution.
 
 > [!NOTE]
 > Note: You may notice your checkout task taking a long time to start working because of this download mechanism.
 
-If the agent is running behind a proxy or a firewall, you'll need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
+If the agent is running behind a proxy or a firewall, you need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
 
 If you're using a self-hosted agent and facing issues with TEE downloading, you may install TEE manually:
 1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`. This variable prevents the agent from removing the TEE plugin after TFVC repository checkout.
