@@ -107,21 +107,24 @@ The following steps will guide you through setting up the first configuration fi
 > [!TIP]
 > Using multiple registries in .npmrc files is supported with [scopes](..//npm/scopes.md) and [upstream sources](../concepts/upstream-sources.md).
 
+::: moniker range="azure-devops"
+
 ### [Other](#tab/other/)
 
 1. Add a *.npmrc* file in your project's directory, in the same directory as your package.json file, and copy the following snippet into it. 
 
-    ```Command
-    registry=https://pkgs.dev.azure.com/ramiMSFTDevOps/_packaging/OrgScopedDemo/npm/registry/ 
+    ```Cli
+    registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
                         
     always-auth=true
     ```
+### Setup credentials
 
-1. Copy the following snippet into your user-level *.npmrc* file (~/.npmrc). Make sure that you don't add it to the *.npmrc* file in your source repository:
+1. Copy the following snippet into your user-level *.npmrc* file:
 
     - **Organization-scoped feed**:
 
-        ```Command
+        ```Cli
         ; begin auth token
         //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
         //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
@@ -134,7 +137,7 @@ The following steps will guide you through setting up the first configuration fi
 
     - **Project-scoped feed**:
 
-        ```Command
+        ```Cli
         ; begin auth token
         //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
         //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
@@ -151,7 +154,7 @@ The following steps will guide you through setting up the first configuration fi
 
     1. Run the following command in a command prompt window, and then paste your personal access token when prompted:
 
-        ```Command
+        ```Cli
         node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
         ```
 
@@ -163,12 +166,71 @@ The following steps will guide you through setting up the first configuration fi
             ```
     1. Copy the Base64 encoded value.
 
-1. Open your *.npmrc* file and replace the placeholder *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* with your encoded personal access token that you created in the previous step.
+1. Replace both *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* values in your user .npmrc file with your personal access token from Step 3.
 
-* * *
+::: moniker-end
+
+::: moniker range="azure-devops-2022 || azure-devops-2020"
+
+### [Other](#tab/other/)
+
+1. Add a *.npmrc* file in your project's directory, in the same directory as your package.json file, and copy the following snippet into it. 
+
+    ```Cli
+    registry=http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
+                        
+    always-auth=true
+    ```
+### Setup credentials
+
+1. Copy the following snippet into your user-level *.npmrc* file:
+
+    - **Collection-scoped feed**:
+
+        ```Cli
+        ; begin auth token
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=DefaultCollection
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:username=DefaultCollection
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
+        ; end auth token
+        ```
+
+    - **Project-scoped feed**:
+
+        ```Cli
+        ; begin auth token
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
+        ; end auth token
+        ```
+
+1. Generate a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
+
+1. Encode your newly generated personal access token as follows:
+
+    1. Run the following command in a command prompt window, and then paste your personal access token when prompted:
+
+        ```Cli
+        node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
+        ```
+
+    1. Copy the Base64 encoded value.
+
+1. Replace both *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* values in your user .npmrc file with your personal access token from Step 3.
 
 > [!NOTE]
 > `vsts-npm-auth` is not supported in Azure DevOps Server.
+
+::: moniker-end
+
+* * *
 
 ## Pipeline authentication
 
