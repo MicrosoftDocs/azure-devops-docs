@@ -67,15 +67,15 @@
     - name: npm quickstart
       displayName: npm, npm introduction
       href: get-started-npm.md
+    - name: Project setup
+      displayName: npmrc, connect, feed, npm
+      href: npm/npmrc.md
     - name: Publish and restore npm packages (CLI)
       displayName: npm, publish, restore, cli
       href: npm/publish.md
     - name: Publish npm packages (YAML/Classic)
       displayName: npm, publish, yaml, classic
       href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json
-    - name: Set up your project's npmrc
-      displayName: npmrc, project setup, npm feed
-      href: npm/npmrc.md
     - name: Use packages from npmjs.com
       displayName: upstream, npmjs, npm, install
       href: npm/upstream-sources.md
