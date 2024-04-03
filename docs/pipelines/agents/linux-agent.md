@@ -244,7 +244,7 @@ When you install the service, some service files are put in place.
 
 #### systemd service file
 
-A systemd service file is created:
+A `systemd` service file is created:
 
 `/etc/systemd/system/vsts.agent.{tfs-name}.{agent-name}.service`
 
@@ -268,7 +268,7 @@ You can use the template described above as to facilitate generating other kinds
 
 ## Use a cgroup to avoid agent failure
 
-It's important to avoid situations in which the agent fails or become unusable because otherwise the agent can't stream pipeline logs or report pipeline status back to the server. You can mitigate the risk of this kind of problem being caused by high memory pressure by using cgroups and a lower `oom_score_adj`. After you've done this, Linux reclaims system memory from pipeline job processes before reclaiming memory from the agent process. [Learn how to configure cgroups and OOM score](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/resourceconfig.md).
+It's important to avoid situations in which the agent fails or become unusable because otherwise the agent can't stream pipeline logs or report pipeline status back to the server. You can mitigate the risk of this kind of problem being caused by high memory pressure by using `cgroups` and a lower `oom_score_adj`. After you've done this, Linux reclaims system memory from pipeline job processes before reclaiming memory from the agent process. [Learn how to configure `cgroups` and OOM score](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/resourceconfig.md).
 
 [!INCLUDE [include](includes/v3/replace-agent.md)]
 
