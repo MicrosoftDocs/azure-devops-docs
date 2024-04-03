@@ -234,31 +234,45 @@ The following steps will guide you through setting up the first configuration fi
 
 ## Pipeline authentication
 
-For authentication with your pipeline, Azure Artifacts recommends using the [npm authenticate task](/azure/devops/pipelines/tasks/reference/npm-authenticate-v0). When using a task runner like gulp or Grunt, it's important to add the npm authenticate task to the beginning of your pipeline. By doing so, your credentials are injected into your project's *.npmrc* file and persisted during the pipeline run, enabling subsequent steps to use the credentials in the configuration file.
+To authenticate with your pipeline, Azure Artifacts recommends using the [npm authenticate task](/azure/devops/pipelines/tasks/reference/npm-authenticate-v0). 
+
+When using task runners such as gulp or Grunt, it's important to include your npm authenticate task at the start of your pipeline. This action ensures that your credentials are injected into your project's .npmrc file and retained throughout the pipeline run, enabling subsequent steps to access the credentials in the configuration file.
 
 ### [Classic](#tab/classic)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops-2020 || azure-devops-2022 || azure-devops"
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Navigate to your project, select **Pipelines**, and then select your pipeline definition.
 
-1. Select **Azure Pipelines**, and then select your pipeline definition.
+2. Select **Edit** to modify your pipeline.
 
-1. Select **Edit** to modify your pipeline.
-
-1. Select `+` to add a task to your pipeline.
+3. Select `+` to add a new task to your pipeline.
 
     :::image type="content" source="../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png" alt-text="Screenshot showing how to add the npm authenticate task to your pipeline.":::
 
-1. Search for the **npm Authenticate** task, and then select **Add** to add it to your pipeline.
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Navigate to your project, select **Pipelines** > **Builds**, and then select your build definition.
+
+2. Select **Edit** to modify your build pipeline.
+
+3. Select `+` to add a new task to your build pipeline.
+
+    :::image type="content" source="../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png" alt-text="Screenshot showing how to add the npm authenticate task to your pipeline.":::
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+4. Search for the **npm Authenticate** task, and then select **Add**.
 
     :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-phase-newnav.png" alt-text="Screenshot showing the npm authenticate task added to the pipeline.":::
 
-1. Select your *.npmrc* file.
+5. Select your *.npmrc* file, and then select **Save & queue** when you're done.
 
     :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-file.png" alt-text="Screenshot showing how to add your *.npmrc* file.":::
-
-1. Select **Save & queue** when you're done.
 
 ::: moniker-end
 
@@ -274,12 +288,12 @@ For authentication with your pipeline, Azure Artifacts recommends using the [npm
 * * *
 
 > [!NOTE]
-> To grant your pipeline access to your feed, make sure you set the build service role to **Feed And Upstream Reader (Contributor)** in your feed settings.
+> For your pipeline to access your feed, ensure that the build service role is set to **Feed And Upstream Reader (Contributor)** in your feed settings.
 
 :::image type="content" source="../media/project-collection-contributor.png" alt-text="A screenshot showing the build service roles in feed settings.":::
 
 > [!NOTE]
-> If your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. For more information, please refer to the list of [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md).
+> If your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. See [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md) for details.
 
 ## Troubleshoot
 
