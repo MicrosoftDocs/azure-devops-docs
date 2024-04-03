@@ -16,9 +16,21 @@ monikerRange: '<= azure-devops'
 Azure Artifacts enables developers to publish and install various package types from feeds and public registries like npmjs.com. To authenticate with Azure Artifacts, it's necessary to configure your npm config file. 
 This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The .npmrc file is typically located in the user's home directory but can also be created at the project level to override default settings. By modifying the .npmrc file, users can personalize their npm experience to meet their specific requirements.
 
+## Prerequisites
+
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed. [Create a new feed](../get-started-npm.md#create-a-feed) if you don't have one already.
+
+- [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+
 ## Project setup
 
-For best practice, we suggest using two separate configuration files. The first file is used to authenticate with Azure Artifacts, while the second file is stored locally and contains your credentials. To set up the second file, place it in your home directory on your development machine and include all of your registry credentials. By using this approach, the npm client can easily retrieve your credentials for authentication, allowing you to share your configuration file while keeping your credentials secure. These steps will walk you through the process of setting up the first configuration file:
+For best practices, it's recommended to use two separate configuration files. The first one is used for authenticating with Azure Artifacts, while the second one is stored locally and holds your credentials.
+
+To set up the second file, simply place it in your home directory on your development machine and include all of your registry credentials. This way, the npm client can easily access your credentials for authentication, allowing you to share your configuration file while keeping your credentials secure.
+
+The following steps will guide you through setting up the first configuration file:
 
 ### [Windows](#tab/windows/)
 
@@ -28,25 +40,25 @@ For best practice, we suggest using two separate configuration files. The first 
 
 1. Select **Artifacts**, and then select **Connect to feed**.
  
-    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
+    :::image type="content" source="../media/npm-connect-to-feed-azure-devops.png" alt-text="A screenshot showing how to connect to a feed.":::
 
 1. Select **npm** from the left navigation pane.
 
 1. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
 
-1. Follow the instructions in **Project setup** to set up your config file.
+1. Follow the instructions in **Project setup** to connect to your feed.
 
-    :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
+    :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot showing how to set up your npm project.":::
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020 || azure-devops-2022"
+::: moniker range="azure-devops-2022"
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Select your collection, and then navigate to your project.
 
 1. Select **Artifacts**, and then select **Connect to feed**.
  
-    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
+    :::image type="content" source="../media/server-2022-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2022.1.":::
 
 1. Select **npm** from the left navigation pane.
 
@@ -54,7 +66,41 @@ For best practice, we suggest using two separate configuration files. The first 
 
 1. Follow the instructions in **Project setup** to set up your config file.
 
-   :::image type="content" source="../media/connect-to-feed-devops-server.png" alt-text="Screenshot showing the steps to set up the project and restore packages.":::
+   :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+1. Select your collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to feed**.
+ 
+    :::image type="content" source="../media/server-2020-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2020.1.":::
+
+1. Select **npm** from the left navigation pane.
+
+1. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
+
+1. Follow the instructions in **Project setup** to set up your config file.
+
+   :::image type="content" source="../media/npm-project-setup-server-2020-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2020.1.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Select your collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to feed**.
+ 
+    :::image type="content" source="../media/server-2019-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2019.1.":::
+
+1. A new window will appear. From the left-hand navigation pane, select **npm**.
+
+1. Follow the instructions to configure your **project** and **user** .npmrc files.
+
+   :::image type="content" source="../media/npm-project-setup-server-2019-1.png" alt-text="A screenshot showing how to setup your project-level and user-level npmrc files in Azure DevOps Server 2019.1.":::
 
 ::: moniker-end
 
