@@ -7,6 +7,7 @@ ms.custom: engagement-fy23
 ms.topic: conceptual
 ms.date: 04/02/2024
 monikerRange: '<= azure-devops'
+"recommendations": "true"
 ---
 
 # Connect your npm project to Azure Artifacts feeds
@@ -100,7 +101,7 @@ The following steps will guide you through setting up the first configuration fi
 
 1. Follow the instructions to configure your **project** and **user** .npmrc files.
 
-   :::image type="content" source="../media/npm-project-setup-server-2019-1.png" alt-text="A screenshot showing how to setup your project-level and user-level npmrc files in Azure DevOps Server 2019.1.":::
+   :::image type="content" source="../media/npm-project-setup-server-2019-1.png" alt-text="A screenshot showing how to set up your project-level and user-level npmrc files in Azure DevOps Server 2019.1.":::
 
 ::: moniker-end
 
@@ -120,7 +121,7 @@ The following steps will guide you through setting up the first configuration fi
     ```
 ### Setup credentials
 
-1. Copy the following snippet into your user-level *.npmrc* file:
+1. Copy the following snippet into your user-level *npmrc* file:
 
     - **Organization-scoped feed**:
 
@@ -158,13 +159,13 @@ The following steps will guide you through setting up the first configuration fi
         node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
         ```
 
-        You can also use the following command to convert your personal access token to Base64. 
+        You can also use the following command to convert your personal access token to Base 64. 
 
         - **Linux/Mac**:
             ```Command
             echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64
             ```
-    1. Copy the Base64 encoded value.
+    1. Copy the Base 64 encoded value.
 
 1. Replace both *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* values in your user .npmrc file with your personal access token from Step 3.
 
@@ -221,7 +222,7 @@ The following steps will guide you through setting up the first configuration fi
         node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
         ```
 
-    1. Copy the Base64 encoded value.
+    1. Copy the Base 64 encoded value.
 
 1. Replace both *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* values in your user .npmrc file with your personal access token from Step 3.
 
@@ -297,53 +298,54 @@ When using task runners such as gulp or Grunt, it's important to include your np
 
 ## Troubleshoot
 
-##### vsts-npm-auth isn't recognized
+#### vsts-npm-auth is not recognized
 
-If you encounter the following error while running your project:
+If you encounter the following error during project execution:
 
 - Cmd: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
+
 - PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
 
-Then it's likely that the npm modules folder isn't added to your path. To resolve this issue, rerun the Node.js setup and make sure to select the `Add to PATH` option.
+Then it's probable that the npm modules folder hasn't been added to your path. To address this, rerun the Node.js setup and make sure to select the `Add to PATH` option.
 
 :::image type="content" source="./media/node-setup.png" alt-text="A Screenshot showing how to set up node.js.":::
 
-As an alternative solution, you can add the npm modules folder to your path by editing the PATH variable `%APPDATA%\npm` in Command Prompt or `$env:APPDATA\npm` in PowerShell.
+Alternatively, you can add the npm modules folder to your path by modifying the PATH variable to `%APPDATA%\npm` in Command Prompt or `$env:APPDATA\npm` in PowerShell.
 
-##### Unable to authenticate
+#### Unable to authenticate
 
-If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with **-F** flag to reauthenticate.
+If you're running into an E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with **-F** flag to reauthenticate.
 
-```Command
+```Cli
 vsts-npm-auth -config .npmrc -F
 ```
 
-##### Reset vsts-npm-auth
+#### Reset vsts-npm-auth
 
-Follow these steps to modify/reset your vsts-npm-auth credentials:
+Follow these steps to reset your vsts-npm-auth credentials:
 
-- Uninstall vsts-npm-auth.
+1. Uninstall vsts-npm-auth:
 
-    ```command
+    ```Cli
     npm uninstall -g vsts-npm-auth
     ```
 
-- Clear your npm cache.
+1. Clear your npm cache:
 
-    ```command
+    ```Cli
     npm cache clean --force
     ```
 
-- Delete your *.npmrc* file.
+1. Delete your *.npmrc* file.
 
-- Reinstall vsts-npm-auth.
+1. Reinstall vsts-npm-auth:
 
-    ```command
+    ```Cli
     npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
     ```
 
 ## Related articles
 
+- [Publish and restore npm packages (CLI)](./publish.md)
 - [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md)
-- [Use npm scopes](./scopes.md)
-- [Use npm audit](./npm-audit.md)
+- [Use packages from npmjs.com](./upstream-sources.md)
