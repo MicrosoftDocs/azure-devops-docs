@@ -47,6 +47,10 @@ If Advanced Security was recently enabled for your repository, you may see a car
 
 Once the scan is complete, any results are displayed. A single alert gets generated for each detected unique credential, across all branches and history of your repository. There are no branch filters as they're rolled up into one alert. 
 
+Non-provider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab. 
+
+:::image type="content" source="media/secret-scanning-confidence-filter.png" lightbox="media/enable-github-advanced-security.png" alt-text="Screenshot of GitHub Advanced Security secret scanning confidence filter."::: 
+
 
 ### Alert details 
 
@@ -62,6 +66,9 @@ When you navigate into an alert, a detailed alert view appears and reveals more 
 | Severity | All secret scanning alerts are set as critical. Any exposed credential is potentially an opportunity for a malicious actor. |
 | Finding details | The type of credential and rule used to find the credential are listed under the **Finding details** on the sidebar of the alert details page. |
 
+With non-provider secrets, the **Confidence: other** tag also appears by the severity badge in the alert detail view. 
+
+:::image type="content" source="media/secret-scanning-detail-confidence-other.png" lightbox="media/enable-github-advanced-security.png" alt-text="Screenshot of GitHub Advanced Security secret scanning generic alert detail.":::
 
 ### Fixing secret scanning alerts
 
@@ -116,7 +123,6 @@ Push protection alerts are user alerts that reported by push protection. Secret 
 If access to a resource requires paired credentials, then secret scanning may create an alert only when both parts of the pair are detected in the same file. The pairing ensures that the most critical leaks aren't hidden behind information about partial leaks. Pair matching also helps reduce false positives since both elements of a pair must be used together to access the provider's resource.
 
 Push protection may not block older versions of certain tokens as these tokens may generate a higher number of false positives than their most recent version. Push protection may also not block legacy tokens. For tokens such as Azure Storage Keys, Advanced Security only supports recently created tokens, not tokens that match the legacy patterns. 
-
 
 ### Push protection from the command line 
 
@@ -183,7 +189,7 @@ The following table lists the partner provider patterns supported by secret scan
 
 #### Non-provider patterns
 
-The following table lists the non-provider generated secrets detected by secret scanning. Non-provider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab.
+The following table lists the non-provider generated secrets detected by secret scanning. Non-provider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab. For more information, see [Manage secret scanning alerts](#manage-secret-scanning-alerts).
 
 > [!TIP]
 > The detection of non-provider patterns is currently in beta and subject to change.
