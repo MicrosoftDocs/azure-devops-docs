@@ -33,9 +33,16 @@ To set up the second file, simply place it in your home directory on your develo
 
 The following steps will guide you through setting up the first configuration file:
 
-### [Windows](#tab/windows/)
+::: moniker range="< azure-devops"
+
+> [!NOTE]
+> `vsts-npm-auth` is not supported in Azure DevOps Server.
+
+::: moniker-end
 
 ::: moniker range="azure-devops"   
+
+### [Windows](#tab/windows/)
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -50,65 +57,6 @@ The following steps will guide you through setting up the first configuration fi
 1. Follow the instructions in **Project setup** to connect to your feed.
 
     :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot showing how to set up your npm project.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2022"
-
-1. Select your collection, and then navigate to your project.
-
-1. Select **Artifacts**, and then select **Connect to feed**.
- 
-    :::image type="content" source="../media/server-2022-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2022.1.":::
-
-1. Select **npm** from the left navigation pane.
-
-1. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
-
-1. Follow the instructions in **Project setup** to set up your config file.
-
-   :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-1. Select your collection, and then navigate to your project.
-
-1. Select **Artifacts**, and then select **Connect to feed**.
- 
-    :::image type="content" source="../media/server-2020-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2020.1.":::
-
-1. Select **npm** from the left navigation pane.
-
-1. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
-
-1. Follow the instructions in **Project setup** to set up your config file.
-
-   :::image type="content" source="../media/npm-project-setup-server-2020-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2020.1.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Select your collection, and then navigate to your project.
-
-1. Select **Artifacts**, and then select **Connect to feed**.
- 
-    :::image type="content" source="../media/server-2019-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2019.1.":::
-
-1. A new window will appear. From the left-hand navigation pane, select **npm**.
-
-1. Follow the instructions to configure your **project** and **user** .npmrc files.
-
-   :::image type="content" source="../media/npm-project-setup-server-2019-1.png" alt-text="A screenshot showing how to set up your project-level and user-level npmrc files in Azure DevOps Server 2019.1.":::
-
-::: moniker-end
-
-> [!TIP]
-> Using multiple registries in .npmrc files is supported with [scopes](..//npm/scopes.md) and [upstream sources](../concepts/upstream-sources.md).
-
-::: moniker range="azure-devops"
 
 ### [Other](#tab/other/)
 
@@ -169,9 +117,27 @@ The following steps will guide you through setting up the first configuration fi
 
 1. Replace both *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* values in your user .npmrc file with your personal access token from Step 3.
 
+* * *
+
 ::: moniker-end
 
-::: moniker range="azure-devops-2022 || azure-devops-2020"
+::: moniker range="azure-devops-2022"
+
+### [Windows](#tab/windows/)
+
+1. Select your collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to feed**.
+ 
+    :::image type="content" source="../media/server-2022-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2022.1.":::
+
+1. Select **npm** from the left navigation pane.
+
+1. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
+
+1. Follow the instructions in **Project setup** to set up your config file.
+
+   :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1.":::
 
 ### [Other](#tab/other/)
 
@@ -226,12 +192,103 @@ The following steps will guide you through setting up the first configuration fi
 
 1. Replace both *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* values in your user .npmrc file with your personal access token from Step 3.
 
-> [!NOTE]
-> `vsts-npm-auth` is not supported in Azure DevOps Server.
+* * *
 
 ::: moniker-end
 
+::: moniker range="azure-devops-2020"
+
+### [Windows](#tab/windows/)
+
+1. Select your collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to feed**.
+ 
+    :::image type="content" source="../media/server-2020-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2020.1.":::
+
+1. Select **npm** from the left navigation pane.
+
+1. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
+
+1. Follow the instructions in **Project setup** to set up your config file.
+
+   :::image type="content" source="../media/npm-project-setup-server-2020-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2020.1.":::
+
+### [Other](#tab/other/)
+
+1. Add a *.npmrc* file in your project's directory, in the same directory as your package.json file, and copy the following snippet into it. 
+
+    ```Cli
+    registry=http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
+                        
+    always-auth=true
+    ```
+### Setup credentials
+
+1. Copy the following snippet into your user-level *.npmrc* file:
+
+    - **Collection-scoped feed**:
+
+        ```Cli
+        ; begin auth token
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=DefaultCollection
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:username=DefaultCollection
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
+        ; end auth token
+        ```
+
+    - **Project-scoped feed**:
+
+        ```Cli
+        ; begin auth token
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
+        ; end auth token
+        ```
+
+1. Generate a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
+
+1. Encode your newly generated personal access token as follows:
+
+    1. Run the following command in a command prompt window, and then paste your personal access token when prompted:
+
+        ```Cli
+        node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
+        ```
+
+    1. Copy the Base 64 encoded value.
+
+1. Replace both *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* values in your user .npmrc file with your personal access token from Step 3.
+
 * * *
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Select your collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to feed**.
+ 
+    :::image type="content" source="../media/server-2019-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2019.1.":::
+
+1. A new window will appear. From the left-hand navigation pane, select **npm**.
+
+1. Follow the instructions to configure your **project** and **user** .npmrc files.
+
+   :::image type="content" source="../media/npm-project-setup-server-2019-1.png" alt-text="A screenshot showing how to set up your project-level and user-level npmrc files in Azure DevOps Server 2019.1.":::
+
+::: moniker-end
+
+> [!TIP]
+> Using multiple registries in .npmrc files is supported with [scopes](..//npm/scopes.md) and [upstream sources](../concepts/upstream-sources.md).
 
 ## Pipeline authentication
 
