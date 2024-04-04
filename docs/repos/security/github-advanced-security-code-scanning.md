@@ -237,7 +237,7 @@ This error describes an automatic build failure, suggesting an issue with code s
 Troubleshooting steps:
 1. Configure build steps
    * Remove the AutoBuild step and instead configure specific build steps for compiled languages in your pipelines.
-   * Refer to setup guidelines provided in [Configure GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md#set-up-code-scanning)
+   * Refer to setup guidelines provided in [Configure GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md#set-up-code-scanning).
 
 ### Error: CodeQL directories not found in agent tool cache 
 This error indicates an issue with installing CodeQL for self-hosted agents. 
@@ -250,7 +250,7 @@ This error occurs when attempting to run CodeQL without setting the pipeline var
 
 Troubleshooting steps:
 1. Set language pipeline variable
-   * Ensure the language pipeline variable is correctly configured. Refer to [Configure GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md#set-up-code-scanning).
+   * Ensure the language pipeline variable is correctly configured. Refer to setup guidelines provided in [Configure GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md#set-up-code-scanning).
    * Supported languages include `csharp`, `cpp`, `go`, `java`, `javascript`, `python`, `ruby`, and `swift`.
   
 ### CodeQL returning no results
