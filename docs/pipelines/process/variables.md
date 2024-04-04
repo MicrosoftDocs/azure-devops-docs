@@ -54,7 +54,7 @@ Azure DevOps never alters variable values, even if you provide unsupported forma
 
 ## System variables
 
-In addition to user-defined variables, Azure Pipelines has system variables with predefined values. For example, the predefined variable [Build.BuildId](../build/variables.md##build-variables-devops-services) gives the ID of each build and can be used to identify different pipeline runs. You can use the `Build.BuildId` variable in scripts or tasks when you need to a unique value. 
+In addition to user-defined variables, Azure Pipelines has system variables with predefined values. For example, the predefined variable [Build.BuildId](../build/variables.md#build-variables-devops-services) gives the ID of each build and can be used to identify different pipeline runs. You can use the `Build.BuildId` variable in scripts or tasks when you need to a unique value. 
 
 If you're using YAML or classic build pipelines, see [predefined variables](../build/variables.md) for a comprehensive list of system variables. 
 
