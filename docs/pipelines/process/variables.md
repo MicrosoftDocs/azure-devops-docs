@@ -54,7 +54,7 @@ Azure DevOps never alters variable values, even if you provide unsupported forma
 
 ## System variables
 
-In addition to user-defined variables, Azure Pipelines has system variables with predefined values. For example, the predefined variable `[Build.BuildId](../build/variables.md##build-variables-devops-services)` gives the ID of each build and can be used to identify different pipeline runs. You can use the `Build.BuildId` variable in scripts or tasks when you need to a unique value. 
+In addition to user-defined variables, Azure Pipelines has system variables with predefined values. For example, the predefined variable [Build.BuildId](../build/variables.md##build-variables-devops-services) gives the ID of each build and can be used to identify different pipeline runs. You can use the `Build.BuildId` variable in scripts or tasks when you need to a unique value. 
 
 If you're using YAML or classic build pipelines, see [predefined variables](../build/variables.md) for a comprehensive list of system variables. 
 
@@ -443,11 +443,11 @@ The following example shows how to map and use a secret variable called `mySecre
 
 The PowerShell task runs a script to print the variables. 
 
-- `$(mySecret)`: Direct reference to the secret variable, which works in the script.
-- `$env:MYSECRET`: Doesn't work because it attempts to access the secret variable as an environment variable. Secret variables aren't automatically mapped to environment variables.
-- `$env:GLOBAL_MYSECRET`: Attempts to access the secret variable through a global variable, which doesn't work because secret variables cannot be mapped this way.
-- `$env:GLOBAL_MY_MAPPED_ENV_VAR`: Accesses the non-secret variable through a global variable, which works.
-- `$env:MY_MAPPED_ENV_VAR`: The recommended way to map secret variables to environment variables.Accesses the secret variable through a task-specific environment variable. 
+- `$(mySecret)`: This is a direct reference to the secret variable and works.
+- `$env:MYSECRET`: This attempts to access the secret variable as an environment variable, which does not work because secret variables are not automatically mapped to environment variables.
+- `$env:GLOBAL_MYSECRET`: This attempts to access the secret variable through a global variable, which also does not work because secret variables cannot be mapped this way.
+- `$env:GLOBAL_MY_MAPPED_ENV_VAR`: This accesses the non-secret variable through a global variable, which works.
+- `$env:MY_MAPPED_ENV_VAR`: This accesses the secret variable through a task-specific environment variable, which is the recommended way to map secret variables to environment variables.
 
 ```yaml
 variables:
