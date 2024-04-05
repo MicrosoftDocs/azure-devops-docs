@@ -1,93 +1,95 @@
 ---
-title: "Azure DevOps docs: What's new for February 1, 2024 - February 29, 2024"
-description: "What's new in the Azure DevOps docs for February 1, 2024 - February 29, 2024."
-ms.date: 03/05/2024
+title: "Azure DevOps docs: What's new for March 1, 2024 - March 31, 2024"
+description: "What's new in the Azure DevOps docs for March 1, 2024 - March 31, 2024."
+ms.date: 04/05/2024
 ---
 
-# Azure DevOps docs: What's new for February 1, 2024 - February 29, 2024
+# Azure DevOps docs: What's new for March 1, 2024 - March 31, 2024
 
-Welcome to what's new in the Azure DevOps docs from February 1, 2024 through February 29, 2024. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from March 1, 2024 through March 31, 2024. This article lists some of the major changes to docs during this period.
 
 ## Administration
 
 ### Updated articles
 
-- [Add a user to manage billing](/azure/devops/organizations/billing/add-backup-billing-managers)
 - [Get started as a Stakeholder](/azure/devops/organizations/security/get-started-stakeholder)
+- [Export a list of users and their access levels](/azure/devops/organizations/security/export-users-audit-log)
 
 ## Artifacts
 
 ### Updated articles
 
-- [Use npm audit to detect and fix package vulnerabilities](/azure/devops/artifacts/npm/npm-audit)
+- [Publish and restore npm packages from the command line](/azure/devops/artifacts/npm/publish)
+- [Set up upstream sources](/azure/devops/artifacts/how-to/set-up-upstream-sources)
+- [Manage permissions](/azure/devops/artifacts/feeds/feed-permissions)
+- [Project-scoped feeds](/azure/devops/artifacts/feeds/project-scoped-feeds)
+- [Publish and consume Python packages using the command line (CLI)](/azure/devops/artifacts/quickstarts/python-cli)
+- [Quickstart: Publish and consume Python packages with Azure Artifacts using the command line (CLI)](/azure/devops/artifacts/quickstarts/python-packages)
 
 ## Azure Boards
 
 ### Updated articles
 
-- [Query by date or current iteration in Azure Boards](/azure/devops/boards/queries/query-by-date-or-current-iteration)
-- [Modify work items in bulk in Azure Boards](/azure/devops/boards/backlogs/bulk-modify-work-items)
-- [Best practices for Agile project management](/azure/devops/boards/best-practices-agile-project-management)
 - [About default processes and process templates](/azure/devops/boards/work-items/guidance/choose-process)
+- [Query by date or current iteration in Azure Boards](/azure/devops/boards/queries/query-by-date-or-current-iteration)
+- [Best practices for Agile project management](/azure/devops/boards/best-practices-agile-project-management)
+- [About configuring and customizing Azure Boards](/azure/devops/boards/configure-customize)
+- [Fix reordering and nesting issues](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues)
+- [Install the Azure Boards app for GitHub](/azure/devops/boards/github/install-github-app)
 
 ## Azure DevOps Reporting and Analytics service
 
 ### Updated articles
 
-- [Lead Time and Cycle Time widgets](/azure/devops/report/dashboards/cycle-time-and-lead-time)
-- [About dashboards, charts, reports, & widgets](/azure/devops/report/dashboards/overview)
+- [About dashboards, charts, reports, and widgets](/azure/devops/report/dashboards/overview)
 - [Connect Analytics with Power BI Data Connector](/azure/devops/report/powerbi/data-connector-connect)
 - [Connect with data by using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
-- [About Power BI integration](/azure/devops/report/powerbi/overview)
+- [Show last refresh date to Power BI report](/azure/devops/report/powerbi/add-last-refresh-time)
+- [Add a time-in-state measure to your Power BI report](/azure/devops/report/powerbi/create-timeinstate-report)
 
 ## Azure Pipelines
 
 ### Updated articles
 
-- [Set variables in scripts](/azure/devops/pipelines/process/set-variables-scripts)
-- [Define approvals and checks](/azure/devops/pipelines/process/approvals)
-- [Connect to Azure by using an Azure Resource Manager service connection](/azure/devops/pipelines/library/connect-to-azure)
-- [Manually set an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/configure-workload-identity)
-- [Troubleshoot an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/troubleshoot-workload-identity)
-- [Key concepts for new Azure Pipelines users](/azure/devops/pipelines/get-started/key-pipelines-concepts)
-- [Task types & usage](/azure/devops/pipelines/process/tasks)
-- [Add stages, dependencies, & conditions](/azure/devops/pipelines/process/stages)
-- [Build, test, and deploy .NET Core apps](/azure/devops/pipelines/ecosystems/dotnet-core)
-- [Build Java apps](/azure/devops/pipelines/ecosystems/java)
+- [Provision agents for deployment groups](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents)
+- [Classic release and artifacts variables](/azure/devops/pipelines/release/variables)
+- [Troubleshoot pipeline runs](/azure/devops/pipelines/troubleshooting/troubleshooting)
+- [Build Python apps](/azure/devops/pipelines/ecosystems/python)
+- [YAML pipeline editor](/azure/devops/pipelines/get-started/yaml-pipeline-editor)
+- [Review logs to diagnose pipeline issues](/azure/devops/pipelines/troubleshooting/review-logs)
+- [Publish and download Universal Packages with Azure Pipelines](/azure/devops/pipelines/artifacts/universal-packages)
+- [Use Azure Pipelines to build and deploy a Python web app to Azure App Service](/azure/devops/pipelines/ecosystems/python-webapp)
+- [Self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent)
 
-## Azure Repos
-
-### Updated articles
-
-- [How dates work in Git](/azure/devops/repos/git/git-dates)
-- [How names work in Git](/azure/devops/repos/git/git-names)
-- [Ignore file changes with Git](/azure/devops/repos/git/ignore-files)
-- [Manage and store large files in Git](/azure/devops/repos/git/manage-large-files)
-- [Git cross-platform compatibility](/azure/devops/repos/git/os-compatibility)
-- [Use SSH key authentication](/azure/devops/repos/git/use-ssh-keys-to-authenticate)
-
-## Extend
+## Azure Test Plans
 
 ### Updated articles
 
-- [Extension manifest reference](/azure/devops/extend/develop/manifest)
-- [Add a custom pipelines task extension](/azure/devops/extend/develop/add-build-task)
+- [Copy or clone test plans, test suites, and test cases](/azure/devops/test/copy-clone-test-items)
+- [Run manual tests](/azure/devops/test/run-manual-tests)
 
-## Integrate
-
-### Updated articles
-
-- [Get started with the REST APIs](/azure/devops/integrate/how-to/call-rest-api)
-- [Use Azure DevOps OAuth 2.0 to create a web app](/azure/devops/integrate/get-started/authentication/azure-devops-oauth)
-
-## Marketplace
+## CLI
 
 ### Updated articles
 
-- [Install extensions](/azure/devops/marketplace/install-extension)
+- [Configure Git repository policies using a configuration file](/azure/devops/cli/policy-configuration-file)
 
+## Project
 
+### Updated articles
 
-## GitHub issue content updates
+- [Install and configure Search](/azure/devops/project/search/install-configure-search)
+- [Manage Search indexing](/azure/devops/project/search/manage-search)
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2024-02-01..2024-02-29).
+## Service-hooks
+
+### Updated articles
+
+- [Service hooks events](/azure/devops/service-hooks/events)
+
+## User guide
+
+### Updated articles
+
+- [Look up your Azure DevOps platform and version](/azure/devops/user-guide/lookup-platform-version)
+
