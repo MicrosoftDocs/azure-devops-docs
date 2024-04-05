@@ -339,8 +339,6 @@ From the **More actions** :::image type="icon" source="../media/icons/more-actio
 
 ::: moniker range="<= azure-devops-2020"
 
-[!INCLUDE [temp](includes/concept-rename-note.md)]
-
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
