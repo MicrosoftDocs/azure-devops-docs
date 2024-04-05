@@ -23,9 +23,28 @@ Using Azure CLI, you can publish and download Universal Packages directly from t
 
 - [Install Azure CLI](/cli/azure/install-azure-cli).
 
-- [Install the Azure DevOps extension](#project-setup) version 0.14.0 or higher. 
+- [Install the Azure DevOps extension](#connect-to-feed) version 0.14.0 or higher. 
 
-## Project setup
+## Create a feed
+
+If you already have a feed, you can move on to the next section. Otherwise, follow the steps below to create a new Azure Artifacts feed:
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Create Feed**.
+
+1. Provide a descriptive **Name** for your feed and set its **Visibility** (who can view packages in your feed). Define the **Scope** of your feed, and then select the **Upstream sources** checkbox if you want to include packages from public registries.
+
+1. Select **Create** when you're done.
+
+    :::image type="content" source="/media/universal-packages-create-feed.png" alt-text="A screenshot showing how to create a new feed.":::
+
+> [!NOTE]
+> Newly created feeds designate the project's *Build Service* role as **Feed and Upstream Reader (Collaborator)** by default.
+
+## Connect to feed
+
+Using the CLI helps streamline your tasks. Before you continue, make sure you have installed Azure CLI. Additionally, we'll need to install the Azure DevOps extension to manage Azure DevOps services from the command line.
 
 #### [Windows](#tab/Windows/)
 
