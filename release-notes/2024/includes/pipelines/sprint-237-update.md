@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Upgrade AzDO owned tasks to Node 20
 
-Azure Artifacts support for Rust Crates will enter General Availability starting from 2/16/2024. Billing meters will be turned, following the same pricing model applicable to the rest of the supported protocols.. 
+Azure Artifacts support for Rust Crates will enter General Availability starting from 2/16/2024. Billing meters will be turned, following the same pricing model applicable to the rest of the supported protocols.
 
 
 ### TFX validates whether a task is using an EOL Node runner

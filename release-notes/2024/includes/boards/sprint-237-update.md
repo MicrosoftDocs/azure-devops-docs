@@ -13,8 +13,16 @@ Today, we’re thrilled to announce the final stage of our journey. We are begin
 
 For more information, please see our [latest blog post here](https://devblogs.microsoft.com/devops/new-boards-hub-on-as-default/).
 
-###  Link to work item to the development section of the GitHub pull 
+###  AB# Links on GitHub pull request (private preview)
 
+As part of our ongoing enhancements to Azure Boards + GitHub integration, we're introducing a private preview feature that enhances the experience with AB# links. With this update, your AB# links will now appear directly in the Development section of GitHub pull requests. This means you can view the linked work items without the need to navigate through the pull request description or comments, resulting in a more intuitive experience.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshots of AB# links.](../../media/237-boards-01.png "Screenshots of AB# links.")
+
+These links will only be available when you use AB# in the pull the request description. They will not show up if you link directly from the pull request from the work item. Removing the AB# link from the description will also remove it from the Development control.
+
+If you're interested in participating in the preview, please reach out to us directly via email. Make sure to include your GitHub organization name (https://github.com/{organization}).
 
 
 ###  Add link to GitHub commit or pull request (general availability)
