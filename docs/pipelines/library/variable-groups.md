@@ -18,8 +18,6 @@ Variable groups store values and secrets that you might want to be [passed into 
 
 Secret variables in Variables groups are [protected resources](../security/resources.md). You can add combinations of approvals, checks, and pipeline permissions to limit access to secret variables in a variable group. Access to non-secret variables is not limited by approvals, checks, and pipeline permissions.
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 ## Create a variable group
 
 #### [YAML](#tab/yaml/)

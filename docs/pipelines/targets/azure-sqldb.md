@@ -11,8 +11,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 You can automatically deploy your database updates to Azure SQL database after every successful build.
 
 ## DACPAC
