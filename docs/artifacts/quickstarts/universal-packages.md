@@ -23,7 +23,7 @@ Using Azure CLI, you can publish and download Universal Packages directly from t
 
 - [Install Azure CLI](/cli/azure/install-azure-cli).
 
-- [Install the Azure DevOps extension](#connect-to-feed) version 0.14.0 or higher. 
+- [Install the Azure DevOps extension](#install-azure-devops-extension) version 0.14.0 or higher. 
 
 ## Create a feed
 
@@ -42,34 +42,41 @@ If you already have a feed, you can move on to the next section. Otherwise, foll
 > [!NOTE]
 > Newly created feeds designate the project's *Build Service* role as **Feed and Upstream Reader (Collaborator)** by default.
 
-## Connect to feed
+## Install Azure DevOps extension
 
-Using the CLI helps streamline your tasks. Before you continue, make sure you have installed Azure CLI. Additionally, we'll need to install the Azure DevOps extension to manage Azure DevOps services from the command line.
+Using the CLI helps streamline your tasks. Before you continue, make sure you have installed Azure CLI (version 2.10.1 or higher). Additionally, we'll need to install the Azure DevOps extension to manage Azure DevOps services from the command line.
 
-#### [Windows](#tab/Windows/)
-
-1. Run the following command to install the Azure DevOps extension. Make sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli). At the very least, your Azure CLI version should be 2.10.1. You can confirm this by using the command `az --version`. To run the Azure CLI, you can use the `az` command from the Windows Command Prompt or [PowerShell](/powershell/azure/install-azure-powershell).
+1. Run the following command to install the Azure DevOps extension:
 
    ```azurecli
    az extension add --name azure-devops
    ```
 
-2. If you already have the Azure DevOps extension installed and wish to update it to the latest version, run the following command::
+1. If you already have the Azure DevOps extension installed and want to update it to the latest, run the following command:
 
    ```azurecli
    az extension update --name azure-devops
    ```
 
-3. Log in to Azure.
+## Connect to feed
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Connect to feed**, and then select **Universal Packages** from the left navigation pane.
+
+1. Follow the instructions in the **Project setup** section to connect to your feed.
+
+#### [Windows](#tab/Windows/)
+
+1. Run the following command to log into the Azure CLI:
 
     ```azurecli
     az login
     ```
 
-> [!TIP]
-> To access tenants without subscriptions, run `az login --allow-no-subscription`.
-
-4. Set your project and organization as the CLI's default.
+1. Run the following command to set your project and organization as the CLI's default configuration:
 
     ```azurecli
     az devops configure --defaults project=<YOUR_PROJECT_NAME> organization=https://dev.azure.com/<YOUR_ORGANIZATION_NAME> 
@@ -79,28 +86,33 @@ Using the CLI helps streamline your tasks. Before you continue, make sure you ha
 
 1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging Read & write** scope, and then copy it to your clipboard.
 
-1. Run the following command to log in. When prompted, enter the personal access token you created in the previous step.
+1. Run the following command to log in. When prompted, paste the personal access token you created in the previous step, and then press *Enter*.
  
     ```azurecli
     az devops login --organization https://dev.azure.com/<YOUR_ORGANIZATION_NAME> 
     ```
-***
 
-## Publish packages
+* * *
 
-To publish a universal package, run the following command in an elevated command prompt. Package names must be lowercase, start and end with letters or numbers, and contain only letters, numbers, and nonconsecutive dashes, underscores, and periods. Package versions must be lowercase without build metadata (+ suffix). See [SemVer](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
+## Publish Universal Packages
 
-- Organization-scoped feed:
+To publish a Universal Package to your feed, you need to provide a package name and version number.
 
-    ```azurecli
-    az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <PACKAGE_DIRECTORY> --description <PACKAGE_DESCRIPTION>
-    ```
+The package name should be in lowercase, start and end with letters or numbers, and only contain letters, numbers, and nonconsecutive dashes, underscores, and periods. The package version should also be in lowercase and should not include build metadata (+ suffix). See [semantic versioning](https://semver.org/spec/v2.0.0.html) for more details.
 
-- Project-scoped feed:
+1. Run the following command to publish your Universal Package to your feed:
 
-    ```azurecli
-    az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --project <PROJECT_NAME> --scope project --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <PACKAGE_DIRECTORY> --description <PACKAGE_DESCRIPTION>
-    ```
+    - Organization-scoped feed:
+    
+        ```azurecli
+        az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <PACKAGE_DIRECTORY> --description <PACKAGE_DESCRIPTION>
+        ```
+    
+    - Project-scoped feed:
+    
+        ```azurecli
+        az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --project <PROJECT_NAME> --scope project --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <PACKAGE_DIRECTORY> --description <PACKAGE_DESCRIPTION>
+        ```
 
 > [!NOTE]
 > If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
