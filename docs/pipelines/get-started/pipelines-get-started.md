@@ -21,10 +21,6 @@ The latest way to build pipelines is with the [YAML pipeline editor](yaml-pipeli
 
 ::: moniker-end
 
-
-
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 ## Automate tests, builds, and delivery
 
 Continuous integration (CI) automates tests and builds for your project. CI helps to catch bugs or issues early in the development cycle, when they're easier and faster to fix. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.

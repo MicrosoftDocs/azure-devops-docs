@@ -13,8 +13,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 ::: moniker range="azure-devops"
 Pipeline permissions and roles help you securely manage your pipelines. You can set hierarchical permissions at the organization, project, and object levels for all pipelines in a project or for an individual pipeline. You can update pipeline permissions with security groups or by [adding individual users](set-permissions.md).
 ::: moniker-end
