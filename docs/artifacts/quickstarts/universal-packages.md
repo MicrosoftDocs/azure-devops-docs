@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Universal Packages enable developers to store a wide range of package types beyond the traditional ones like NuGet, npm, Python packages, etc. 
-Using Azure CLI, you can publish and download Universal Packages directly from the command line. While the size of published packages can vary, reaching up to 4 TB, they must always maintain the essential requirement of including a name and version number. This articleS will walk you through the steps to publish and download Universal Packages to your Azure Artifacts feed.
+Using Azure CLI, you can publish and download Universal Packages directly from the command line. While the size of published packages can vary, reaching up to 4 TB, they must always maintain the essential requirement of including a name and version number. This article will walk you through the steps to publish and download Universal Packages from your Azure Artifacts feed.
 
 ## Prerequisites
 
@@ -121,44 +121,45 @@ The package name should be in lowercase, start and end with letters or numbers, 
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed from the drop-down menu. Once publishing is completed successfully, your package should be available in your feed.
+1. Select **Artifacts**, and then pick your feed from the dropdown menu. Once the publishing process is successfully completed, your package should be available in your feed.
 
-    :::image type="content" source="media/universal-package-published.png" alt-text="A screenshot showing the newly published universal package.":::
+    :::image type="content" source="media/universal-package-published.png" alt-text="A screenshot showing the newly published Universal Package." lightbox="media/universal-package-published.png":::
 
-## Download packages
+## Download Universal Packages
 
-To download a universal package using Azure CLI, run the following command in an elevated command prompt.
+Run the following command to download a particular Universal Package from your feed using Azure CLI:
 
 - Organization-scoped feed:
 
     ```azurecli
-    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
+    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION_NAME> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
     ```
 
 - Project-scoped feed:
 
     ```azurecli
-    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --project <PROJECT_NAME> --scope project --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
+    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION_NAME> --project <PROJECT_NAME> --scope project --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
     ```
 
-### Download specific files
+#### Download specific files
 
-If you only want to download specific files, you can use the `--file-filter` parameter to download a subset of files. See [File matching patterns reference](../../pipelines/tasks/file-matching-patterns.md) for more details.
 
-Example: *--file-filter *logs/*.log* would match any file ending with *logs* and with the extension *.log* (Example: build123_logs.log). 
-
+If you wish to download only specific files, use the `--file-filter` parameter to fetch a subset of files. See [File matching patterns reference](../../pipelines/tasks/file-matching-patterns.md) for more details.
+ 
 - Organization-scoped feed:
 
     ```azurecli
-    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH> --file-filter <MATCH_PATTERN>
+    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION_NAME> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH> --file-filter <MATCH_PATTERN>
     ```
 - Project-scoped feed:
 
     ```azurecli
-    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --project <PROJECT_NAME> --scope project --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH> --file-filter <MATCH_PATTERN>
+    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION_NAME> --project <PROJECT_NAME> --scope project --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH> --file-filter <MATCH_PATTERN>
     ```
 
-### Download the latest version
+**Example:** For instance, using *--file-filter logs/.log* would match any file with a filename containing "logs" and ending with the extension ".log" (e.g., build_logs.log).
+
+#### Download the latest version
 
 You can use wildcards `*` to download the latest version of your Universal Packages.
 
@@ -175,6 +176,6 @@ You can use wildcards `*` to download the latest version of your Universal Packa
 
 ## Related articles
 
-- [Publish and download universal packages with Azure Pipelines](../../pipelines/artifacts/universal-packages.md).
-- [Delete and recover packages](../how-to/delete-and-recover-packages.md).
-- [Configure feed permissions](../feeds/feed-permissions.md)
+- [Publish and download Universal Packages with Azure Pipelines](../../pipelines/artifacts/universal-packages.md)
+- [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
+- [Manage permissions](../feeds/feed-permissions.md)
