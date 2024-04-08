@@ -979,14 +979,7 @@
   - name: Azure DevOps Server
     href: /azure/devops/server/release-notes/azuredevops2020
 - name: Documentation updates
-  items:
-  - name: What's new
-    href: docswhatsnew/index.yml
-  - name: February 2024
-    href: docswhatsnew/azure-devops-docs-whats-new.md
-  - name: January 2024
-    href: docswhatsnew/azure-devops-docs-2024-01.md
-  - name: December 2023
-    href: docswhatsnew/azure-devops-docs-2023-12.md
+  href: ./docswhatsnew/toc.yml
+
 - name: Subscribe to updates
   href: https://azure.microsoft.com/updates/?product=azure-devops
