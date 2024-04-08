@@ -8,7 +8,9 @@ ms.custom: template-how-to-pattern
 
 # Add an admin role to a protected resource
 
-Azure Pipelines requires specific permissions to a [protected resource](../process/about-resources.md) and to open access to all pipelines. For all protected resource types other than Environments, you'll need the administrator role to create a protected resource or edit its **Security** configuration. For Environments, you'll need the **Creator** role. When you don't appropriate access, the **Grant access permission to all pipelines** option is disabled.
+Azure Pipelines requires specific permissions to manage [protected resources](../process/about-resources.md). To manage resource permissions at the project level or to grant permission to all project pipelines for an inidivdual resource you need to be a member of the **Project Administrators** group.  To manage security for an individual resource, you must be a user or a member of a user that is assigned the **Administrator** role.
+
+This article shows you how to set the **Adminstrator** role or users and groups in a protected resource.
 
 Protected resources include:
 
@@ -24,7 +26,7 @@ For repository resources, see [protect a repository resource](../process/reposit
 
 ## Prerequisites
 
-You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md) to update resource permissions.  
+You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md) to update project-evel resource permissions or to grant access to all pipelines in the project for an individual resource.  Some individual resources also require Project Administrators group membership.
 
 ## Agent pools
 
