@@ -37,7 +37,7 @@ If you already have a feed, you can move on to the next section. Otherwise, foll
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="/media/universal-packages-create-feed.png" alt-text="A screenshot showing how to create a new feed.":::
+    :::image type="content" source="media/universal-packages-create-feed.png" alt-text="A screenshot showing how to create a new feed.":::
 
 > [!NOTE]
 > Newly created feeds designate the project's *Build Service* role as **Feed and Upstream Reader (Collaborator)** by default.
