@@ -61,6 +61,8 @@ Queue-time variables are exposed to the end user when they manually run a pipeli
 
 ::: moniker range="azure-devops"
 
+Users need [Edit queue build configuration](/azure/devops/pipelines/policies/permissions#pipeline-permissions-reference) permission on the pipeline to specify variables set at queue time.
+
 ### Limit variables that can be set at queue time
 
 The UI and REST API used to run a pipeline provide means for users to define new variables at queue time.
