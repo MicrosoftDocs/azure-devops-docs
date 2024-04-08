@@ -123,7 +123,7 @@ The package name should be in lowercase, start and end with letters or numbers, 
 
 1. Select **Artifacts**, and then pick your feed from the dropdown menu. Once the publishing process is successfully completed, your package should be available in your feed.
 
-    :::image type="content" source="media/universal-package-published.png" alt-text="A screenshot showing the newly published Universal Package." lightbox="media/universal-package-published.png":::
+    :::image type="content" source="media/view-published-package.png" alt-text="A screenshot showing the newly published Universal Package." lightbox="media/view-published-package.png":::
 
 ## Download Universal Packages
 
