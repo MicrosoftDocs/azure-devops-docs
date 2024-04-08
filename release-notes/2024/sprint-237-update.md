@@ -8,9 +8,14 @@ description: TBD
 # TBD
 
 
+
 Check out the release notes for details.
 
-### Azure Boards:
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-237-update-links](includes/ghazdo/sprint-237-update-links.md)]
+
+### Azure Boards
 
 [!INCLUDE [sprint-237-update-links](includes/boards/sprint-237-update-links.md)]
 
@@ -18,6 +23,9 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-237-update-links](includes/pipelines/sprint-237-update-links.md)]
 
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-237-update](includes/ghazdo/sprint-237-update.md)]
 ## Azure Boards
 
 [!INCLUDE [sprint-237-update](includes/boards/sprint-237-update.md)]
@@ -25,7 +33,6 @@ Check out the release notes for details.
 ## Azure Pipelines
 
 [!INCLUDE [sprint-237-update](includes/pipelines/sprint-237-update.md)]
-
 
 ## Next steps
 

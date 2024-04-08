@@ -27,7 +27,7 @@ If you're interested in participating in the preview, please reach out to us dir
 
 ###  Add link to GitHub commit or pull request (general availability)
 
-After several weeks [in preview](https://learn.microsoft.com/en-us/azure/devops/release-notes/2024/sprint-234-update#azure-boards-1), we are excited to announce an enhanced experience by enabling search functionality when linking to a GitHub pull request or commit. Search and select the desired repository and drill down to find and link to the specific pull request or commit. No more need for multiple window changes and copy/paste (although you still have that option).
+After several weeks [in preview](https://learn.microsoft.com/azure/devops/release-notes/2024/sprint-234-update#azure-boards-1), we are excited to announce an enhanced experience by enabling search functionality when linking to a GitHub pull request or commit. Search and select the desired repository and drill down to find and link to the specific pull request or commit. No more need for multiple window changes and copy/paste (although you still have that option).
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo Add link improvements.](../../media/237-boards-01.gif "gif to Add link improvements")

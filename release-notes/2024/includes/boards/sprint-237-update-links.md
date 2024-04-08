@@ -6,6 +6,6 @@ ms.topic: include
 ---
 
 - [New Boards Hub on by default](#new-boards-hub-on-by-default)
-- [Link to work item to the development section of the GitHub pull](#link-to-work-item-to-the-development-section-of-the-github-pull)
+- [AB# Links on GitHub pull request private preview](#ab#-links-on-github-pull-request-private-preview)
 - [Add link to GitHub commit or pull request general availability](#add-link-to-github-commit-or-pull-request-general-availability)
 - [Connect to GitHub repository search improvements private preview](#connect-to-github-repository-search-improvements-private-preview)
