@@ -5,17 +5,17 @@ ms.date: 4/9/2024
 ms.topic: include
 ---
 
-###  New Boards Hub on by default
+### New Boards Hub on by default
 
 If you’ve been keeping up with the progress of New Boards Hub, you’re probably aware that the preview has been active for quite some time now. In fact, we officially [announced the preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/) of New Boards Hub a little over two years ago.
 
-Today, we’re thrilled to announce the final stage of our journey. We are beginning the process of making New Boards Hub the default experience for all of our customers. This will happen in two waves, with the first wave having started the first week of April. The rollout process for each wave will span several weeks, as we gradually roll out to a different set of customers every other day. The second (final) wave will most likely start sometime in late May.
+Today, we’re thrilled to announce the final stage of our journey. We are beginning the process of making New Boards Hub the default experience for all of our customers. This happens in two waves, with the first wave having started the first week of April. The rollout process for each wave spans several weeks, as we gradually roll out to a different set of customers every other day. The second (final) wave will likely start in late May.
 
 For more information, please see our [latest blog post here](https://devblogs.microsoft.com/devops/new-boards-hub-on-as-default/).
 
-###  Add link to GitHub commit or pull request is generally available
+### Add link to GitHub commit or pull request is generally available
 
-After several weeks [in preview](https://learn.microsoft.com/azure/devops/release-notes/2024/sprint-234-update#azure-boards-1), we are excited to announce an enhanced experience by enabling search functionality when linking to a GitHub pull request or commit. Search and select the desired repository and drill down to find and link to the specific pull request or commit. No more need for multiple window changes and copy/paste (although you still have that option).
+After several weeks [in preview](https://learn.microsoft.com/azure/devops/release-notes/2024/sprint-234-update#azure-boards-1), we're excited to announce an enhanced experience by enabling search functionality when linking to a GitHub pull request or commit. Search and select the desired repository and drill down to find and link to the specific pull request or commit. No more need for multiple window changes and copy/paste (although you still have that option).
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo Add link improvements.](../../media/237-boards-01.gif "gif to Add link improvements")
@@ -23,7 +23,7 @@ After several weeks [in preview](https://learn.microsoft.com/azure/devops/releas
 This feature is only available in the [New Boards Hub preview](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview).
 
 
-###  AB# Links on GitHub pull requests (private preview)
+### AB# Links on GitHub pull requests (preview)
 
 As part of our ongoing enhancements to Azure Boards + GitHub integration, we're introducing a private preview feature that enhances the experience with AB# links. With this update, your AB# links will now appear directly in the Development section of GitHub pull requests. This means you can view the linked work items without the need to navigate through the pull request description or comments, resulting in a more intuitive experience.
 
@@ -35,8 +35,8 @@ These links will only be available when you use AB# in the pull the request desc
 If you're interested in participating in the preview, please reach out to us directly via email. Make sure to include your GitHub organization name (https://github.com/{organization}).
 
 
-###  Connect to GitHub repository search improvements (private preview)
+### Connect to GitHub repository search improvements (preview)
 
-For GitHub organizations housing thousands of repositories, [connecting them](https://learn.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops) to an Azure DevOps project has posed significant challenges. Previously, attempts to connect encountered timeout issues, preventing you from integrating GitHub with Azure Boards. Today we are announcing a preview that will unblock large GitHub organizations. You will now be able to search and select across thousands of repositories without the risk of timeout issues.
+For GitHub organizations housing thousands of repositories, [connecting them](https://learn.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops) to an Azure DevOps project has posed significant challenges. Previously, attempts to connect encountered timeout issues, preventing you from integrating GitHub with Azure Boards. Today we're announcing a preview that unblocks large GitHub organizations. You will now be able to search and select across thousands of repositories without the risk of timeout issues.
 
-We are happy to enable to this feature upon request. If you are interested, please [send us](mailto:dahellem@microsoft.com) your Azure DevOps organization name (dev.azure.com/{organization}).
+We are happy to enable to this feature upon request. If you're interested, please [send us](mailto:dahellem@microsoft.com) your Azure DevOps organization name (dev.azure.com/{organization}).
