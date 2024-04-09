@@ -127,15 +127,15 @@
       href: python/use-packages-from-pypi.md
   - name: Universal Packages
     items:
-    - name: Quickstart
-      displayName: universal packages
+    - name: Universal Packages quickstart
+      displayName: universal packages, publish, download
       href: quickstarts/universal-packages.md
+    - name: Universal Packages in Azure Pipelines (YAML/Classic)
+      displayName: universal packages, yaml, classic
+      href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json
     - name: Universal Packages upstream sources
       displayName: universal packages, upstream sources, upstreams
       href: universal-packages/universal-packages-upstream.md
-    - name: Universal Packages in Azure Pipelines (YAML/Classic)
-      displayName: universal packages yaml, universal packages classic
-      href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json
   - name: Cargo
     items:
     - name: Cargo quickstart
