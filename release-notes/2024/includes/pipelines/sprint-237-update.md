@@ -5,14 +5,9 @@ ms.date: 4/9/2024
 ms.topic: include
 ---
 
-### Upgrade AzDO owned tasks to Node 20
-
-Azure Artifacts support for Rust Crates will enter General Availability starting from 2/16/2024. Billing meters will be turned, following the same pricing model applicable to the rest of the supported protocols.
-
-
 ### TFX validates whether a task is using an EOL Node runner
 
-Task authors use [TFX](https://learn.microsoft.com/en-us/azure/devops/extend/publish/command-line?view=azure-devops) to publish extensions. TFX has been updated to perform validations on additional Node runner versions.
+Task authors use [TFX](https://learn.microsoft.com/azure/devops/extend/publish/command-line?view=azure-devops) to publish extensions. TFX has been updated to perform validations on additional Node runner versions.
 
 Extensions that contain tasks using a Node runner version that is end-of-live (up to and including Node 16) will see this warning:
 

@@ -7,13 +7,23 @@ ms.topic: include
 
 ###  New Boards Hub on by default
 
-If you’ve been keeping up with the progress of New Boards Hub, you’re probably aware that the preview has been active for quite some time now. In fact, we officially [announced the preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/) of New Boards Hub almost two years ago to the day.
+If you’ve been keeping up with the progress of New Boards Hub, you’re probably aware that the preview has been active for quite some time now. In fact, we officially [announced the preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/) of New Boards Hub a little over two years ago.
 
-Today, we’re thrilled to announce the final stage of our journey. We are beginning the process of making New Boards Hub the default experience for all of our customers. This will happen in two waves, with the first wave kicking off in the first week of April. The rollout process for each wave will span several weeks, as we gradually roll out to a different set of customers every other day. The second (final) wave will most likely start sometime in late May.
+Today, we’re thrilled to announce the final stage of our journey. We are beginning the process of making New Boards Hub the default experience for all of our customers. This will happen in two waves, with the first wave having started the first week of April. The rollout process for each wave will span several weeks, as we gradually roll out to a different set of customers every other day. The second (final) wave will most likely start sometime in late May.
 
 For more information, please see our [latest blog post here](https://devblogs.microsoft.com/devops/new-boards-hub-on-as-default/).
 
-###  AB# Links on GitHub pull request (private preview)
+###  Add link to GitHub commit or pull request is generally available
+
+After several weeks [in preview](https://learn.microsoft.com/azure/devops/release-notes/2024/sprint-234-update#azure-boards-1), we are excited to announce an enhanced experience by enabling search functionality when linking to a GitHub pull request or commit. Search and select the desired repository and drill down to find and link to the specific pull request or commit. No more need for multiple window changes and copy/paste (although you still have that option).
+
+> [!div class="mx-imgBorder"]
+> ![Gif to demo Add link improvements.](../../media/237-boards-01.gif "gif to Add link improvements")
+
+This feature is only available in the [New Boards Hub preview](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview).
+
+
+###  AB# Links on GitHub pull requests (private preview)
 
 As part of our ongoing enhancements to Azure Boards + GitHub integration, we're introducing a private preview feature that enhances the experience with AB# links. With this update, your AB# links will now appear directly in the Development section of GitHub pull requests. This means you can view the linked work items without the need to navigate through the pull request description or comments, resulting in a more intuitive experience.
 
@@ -24,15 +34,6 @@ These links will only be available when you use AB# in the pull the request desc
 
 If you're interested in participating in the preview, please reach out to us directly via email. Make sure to include your GitHub organization name (https://github.com/{organization}).
 
-
-###  Add link to GitHub commit or pull request (general availability)
-
-After several weeks [in preview](https://learn.microsoft.com/azure/devops/release-notes/2024/sprint-234-update#azure-boards-1), we are excited to announce an enhanced experience by enabling search functionality when linking to a GitHub pull request or commit. Search and select the desired repository and drill down to find and link to the specific pull request or commit. No more need for multiple window changes and copy/paste (although you still have that option).
-
-> [!div class="mx-imgBorder"]
-> ![Gif to demo Add link improvements.](../../media/237-boards-01.gif "gif to Add link improvements")
-
-This feature is only available in the [New Boards Hub preview](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview).
 
 ###  Connect to GitHub repository search improvements (private preview)
 
