@@ -12,7 +12,7 @@ Task authors use [TFX](https://learn.microsoft.com/azure/devops/extend/publish/c
 Extensions that contain tasks using a Node runner version that is EOL (up to and including Node 16) will see this warning:
 
 ```
-Task <TaskName> is dependent on a task runner that is end-of-life and will be removed in the future. Authors should review Node upgrade guidance: https://aka.ms/node-runner-guidance.
+Task <TaskName> is dependent on a task runner that is end-of-life and are removed in the future. Authors should review Node upgrade guidance: https://aka.ms/node-runner-guidance.
 ```
 
 ### Auditable Shell task argument validation
@@ -36,9 +36,9 @@ To help you improve the security posture of your pipelines, we're adding a new p
 
 Variables settable at queue time and parameters allow you to write configurable YAML pipelines. Unfortunately, they also introduce the possibility of user input to be executed. The new permission mitigates this risk.
 
-Users who have only _Queue build_ permission will be able to queue builds and edit the values of runtime parameters that have a predefined set of values. That is, they're able to choose values for parameters that are of type `boolean`, `number` or they have the `values` property set.
+Users who have only _Queue build_ permission are able to queue builds and edit the values of runtime parameters that have a predefined set of values. That is, they're able to choose values for parameters that are of type `boolean`, `number` or they have the `values` property set.
 
-If a parameter can contain free text, for example, is of type `object`, then only those users who have the _Edit queue build configuration_ permission will be able to set it.
+If a parameter can contain free text, for example, is of type `object`, then only those users who have the _Edit queue build configuration_ permission are able to set it.
 
 Consider a pipeline with the following parameters defined:
 ```yaml
@@ -60,7 +60,7 @@ parameters:
     WUS3: Standard D2lds v5
 ```   
 
-If the user queueing a run has only the _Queue build_ permission. When they queue the pipeline, they will be able to only specify the values of the `Configuration` and `UseNewDeploymentMethod` parameters. They wont be able to specify the value for the `AzureSKU` parameter.
+If a user queueing a run has only the _Queue build_ permission. When they queue the pipeline, they'll able to only specify the values of the `Configuration` and `UseNewDeploymentMethod` parameters. They wont be able to specify the value for the `AzureSKU` parameter.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of run pipeline.](../../media/237-pipelines-03.png "Screenshot of run pipeline")
