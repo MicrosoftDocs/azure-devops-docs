@@ -57,6 +57,6 @@ Task authors use [TFX](https://learn.microsoft.com/azure/devops/extend/publish/c
 Extensions that contain tasks using a Node runner version that is end of life (EOL) (up to and including Node 16) will see this warning:
 
 
-*Task < TaskName > is dependent on a task runner that is end-of-life and are removed in the future. Authors should review Node upgrade guidance: https://aka.ms/node-runner-guidance.*
+*Task < TaskName > is dependent on a task runner that is end-of-life and are removed in the future. Authors should review Node upgrade guidance: https://aka.ms/node-runner-guidance*
 
 
