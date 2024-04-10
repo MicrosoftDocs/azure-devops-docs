@@ -7,11 +7,11 @@ description: Enhancement and Integration Improvements in Azure Boards, Pipelines
 ---
 # Enhancements and Integration Improvements in Azure Boards, Pipelines, and GitHub Advanced Security
 
+For GitHub Advanced Security, we're improving our secret scanning capabilities by adding more partner patterns. This will significantly increase the detection abilities of our Secret Scanning feature, providing a more secure environment for your projects.
+
 We're excited to announce that we're close to making New Boards Hub your default experience! It will introduce an updated design, better performance, and enhanced accessibility. In addition, we're previewing two new features within Boards: AB# Links on GitHub pull requests and a more reliable GitHub repository search, removing the risk of timeouts.
 
 In Azure Pipelines, we're strengthening our security commitment with the launch of a new pipeline permission named _Edit queue build configuration_. This feature precisely regulates the setting of variables at queue time, including free-text runtime parameters, for a more secure pipeline environment.
-
-For GitHub Advanced Security, we're improving our secret scanning capabilities by adding more partner patterns. This will significantly increase the detection abilities of our Secret Scanning feature, providing a more secure environment for your projects.
 
 Check out the release notes for details.
 
@@ -30,6 +30,7 @@ Check out the release notes for details.
 ## GitHub Advanced Security for Azure DevOps
 
 [!INCLUDE [sprint-237-update](includes/ghazdo/sprint-237-update.md)]
+
 ## Azure Boards
 
 [!INCLUDE [sprint-237-update](includes/boards/sprint-237-update.md)]
