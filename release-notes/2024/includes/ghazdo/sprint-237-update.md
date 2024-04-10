@@ -20,7 +20,7 @@ Secret scanning now detects many non-provider patterns, including:
 - OpenSSH private keys
 - RSA private keys 
 
-> [!TIP]
+> [!NOTE]
 > The detection of non-provider patterns is currently in preview and subject to change.
 
 Detection of these patterns is enabled for all GitHub Advanced Security enabled repositories in Azure DevOps. Resulting secrets appear in a new, separate filter on the secret scanning alert list called "Confidence.”

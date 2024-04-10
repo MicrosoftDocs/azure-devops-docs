@@ -33,11 +33,11 @@ As part of our ongoing enhancements to the Azure Boards + GitHub integration, we
 
 These links will only be available when you use AB# in the pull the request description. They won't show up if you link directly from the pull request from the work item. Removing the AB# link from the description will also remove it from the Development control.
 
-If you're interested in participating in the preview, please reach out to us directly via email. Make sure to include your GitHub organization name (https://github.com/{organization}).
+If you're interested in participating in the preview, please reach out to us directly [via email](mailto:dahellem@microsoft.com). Make sure to include your GitHub organization name (github.com/{organization name}). 
 
 
 ### Connect to GitHub repository search improvements (preview)
 
-For GitHub organizations with thousands of repositories, [connecting them](https://learn.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops) to an Azure DevOps project has been challenging. Customers with that many GitHub repositories can encounter timeout errors or long wait times. Today we're announcing a preview that unblocks large GitHub organizations. You can now search and select across thousands of repositories without the risk of timeout issues.
+Previously, [connecting](https://learn.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops) an Azure DevOps project to a GitHub organization with thousands of repositories was challenging. Customers with that many GitHub repositories can encounter timeout errors or long wait times. Today we're announcing a preview that unblocks large GitHub organizations. You can now search and select across thousands of repositories without the risk of timeout issues.
 
 We're happy to enable to this feature upon request. If you're interested, please [send us](mailto:dahellem@microsoft.com) your Azure DevOps organization name (dev.azure.com/{organization}).

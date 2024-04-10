@@ -1,17 +1,16 @@
 ---
-title: Enhancement and Integration Improvements in Azure Boards, Pipelines, and GitHub Advanced Security
+title: Improvements to secret scanning capabilities and New Board Hub on by default
 author: ckanyika
 ms.author: ckanyika
 ms.date: 4/10/2024
-description: Enhancement and Integration Improvements in Azure Boards, Pipelines, and GitHub Advanced Security
+description: Improvements to secret scanning capabilities and New Board Hub on by default
 ---
-# Enhancements and Integration Improvements in Azure Boards, Pipelines, and GitHub Advanced Security
+# Improvements to secret scanning capabilities and New Board Hub on by default
 
-For GitHub Advanced Security, we're improving our secret scanning capabilities by adding more partner patterns. This will significantly increase the detection abilities of our Secret Scanning feature, providing a more secure environment for your projects.
+We're excited to announce we're improving our secret scanning capabilities by adding more partner patterns in GitHub Advanced Security! This will significantly increase the detection abilities of our Secret Scanning feature, providing a more secure environment for your projects.
 
-We're excited to announce that we're close to making New Boards Hub your default experience! It will introduce an updated design, better performance, and enhanced accessibility. In addition, we're previewing two new features within Boards: AB# Links on GitHub pull requests and a more reliable GitHub repository search, removing the risk of timeouts.
+With this update, we're close to making New Boards Hub your default experience! It will introduce an updated design, better performance, and enhanced accessibility. In addition, we're previewing two new features within Boards: AB# Links on GitHub pull requests and a more reliable GitHub repository search, removing the risk of timeouts.
 
-In Azure Pipelines, we're strengthening our security commitment with the launch of a new pipeline permission named _Edit queue build configuration_. This feature precisely regulates the setting of variables at queue time, including free-text runtime parameters, for a more secure pipeline environment.
 
 Check out the release notes for details.
 
