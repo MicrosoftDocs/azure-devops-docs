@@ -23,7 +23,7 @@ After several weeks [in preview](https://learn.microsoft.com/azure/devops/releas
 This feature is only available in the [New Boards Hub preview](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview).
 
 
-### AB# Links on GitHub pull requests (preview)
+### AB# links on GitHub pull requests (preview)
 
 As part of our ongoing enhancements to Azure Boards + GitHub integration, we're previewing a feature that enhances the experience with AB# links. With this update, your AB# links will now appear directly in the Development section of GitHub pull requests. This means you can view the linked work items without the need to navigate through the pull request description or comments, resulting in a more intuitive experience.
 
