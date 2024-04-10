@@ -52,9 +52,11 @@ To make sure the new permission doesn't interfere with your day-to-day workloads
 
 ### TFX validates whether a task is using an End of Life (EOL) Node runner
 
-Task authors use [TFX](https://learn.microsoft.com/azure/devops/extend/publish/command-line?view=azure-devops) to publish extensions. TFX has been updated to perform validations on other Node runner versions.
+Task authors use [TFX](https://learn.microsoft.com/azure/devops/extend/publish/command-line?view=azure-devops#prerequisites) to publish extensions. TFX has been updated to perform validations on other Node runner versions.
 
-Extensions that contain tasks using a Node runner version that is EOL (up to and including Node 16) will see this warning:
+Extensions that contain tasks using a Node runner version that is end-of-life (EOL) (up to and including Node 16) will see this warning:
 
 
-*Task <TaskName> is dependent on a task runner that is end-of-life and are removed in the future. Authors should review Node upgrade guidance: https://aka.ms/node-runner-guidance.*
+*Task < TaskName > is dependent on a task runner that is end-of-life and are removed in the future. Authors should review Node upgrade guidance: https://aka.ms/node-runner-guidance.*
+
+
