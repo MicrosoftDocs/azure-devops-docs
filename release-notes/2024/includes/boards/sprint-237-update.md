@@ -9,7 +9,7 @@ ms.topic: include
 
 If you’ve been keeping up with the progress of New Boards Hub, you’re probably aware that the preview has been active for quite some time now. In fact, we officially [announced the preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/) of New Boards Hub a little over two years ago.
 
-Today, we’re thrilled to announce the final stage of our journey. We are beginning the process of making New Boards Hub the default experience for all of our customers. This happens in two waves, with the first wave having started the first week of April. The rollout process for each wave spans several weeks, as we gradually roll out to a different set of customers every other day. The second (final) wave will likely start in late May.
+Today, we’re thrilled to announce the final stage of our journey. We're beginning the process of making New Boards Hub the default experience for all of our customers. This happens in two waves, with the first wave having started the first week of April. The rollout process for each wave spans several weeks, as we gradually roll out to a different set of customers every other day. The second (final) wave will likely start in late May.
 
 For more information, please see our [latest blog post here](https://devblogs.microsoft.com/devops/new-boards-hub-on-as-default/).
 
@@ -25,18 +25,18 @@ This feature is only available in the [New Boards Hub preview](https://learn.mic
 
 ### AB# Links on GitHub pull requests (preview)
 
-As part of our ongoing enhancements to Azure Boards + GitHub integration, we're introducing a private preview feature that enhances the experience with AB# links. With this update, your AB# links will now appear directly in the Development section of GitHub pull requests. This means you can view the linked work items without the need to navigate through the pull request description or comments, resulting in a more intuitive experience.
+As part of our ongoing enhancements to Azure Boards + GitHub integration, we're previewing a feature that enhances the experience with AB# links. With this update, your AB# links will now appear directly in the Development section of GitHub pull requests. This means you can view the linked work items without the need to navigate through the pull request description or comments, resulting in a more intuitive experience.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshots of AB# links.](../../media/237-boards-01.png "Screenshots of AB# links.")
 
-These links will only be available when you use AB# in the pull the request description. They will not show up if you link directly from the pull request from the work item. Removing the AB# link from the description will also remove it from the Development control.
+These links will only be available when you use AB# in the pull the request description. They won't show up if you link directly from the pull request from the work item. Removing the AB# link from the description will also remove it from the Development control.
 
 If you're interested in participating in the preview, please reach out to us directly via email. Make sure to include your GitHub organization name (https://github.com/{organization}).
 
 
 ### Connect to GitHub repository search improvements (preview)
 
-For GitHub organizations housing thousands of repositories, [connecting them](https://learn.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops) to an Azure DevOps project has posed significant challenges. Previously, attempts to connect encountered timeout issues, preventing you from integrating GitHub with Azure Boards. Today we're announcing a preview that unblocks large GitHub organizations. You will now be able to search and select across thousands of repositories without the risk of timeout issues.
+For GitHub organizations housing thousands of repositories, [connecting them](https://learn.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops) to an Azure DevOps project has posed significant challenges. Previously, attempts to connect encountered timeout issues, preventing you from integrating GitHub with Azure Boards. Today we're announcing a preview that unblocks large GitHub organizations. You'll now be able to search and select across thousands of repositories without the risk of timeout issues.
 
-We are happy to enable to this feature upon request. If you're interested, please [send us](mailto:dahellem@microsoft.com) your Azure DevOps organization name (dev.azure.com/{organization}).
+We're happy to enable to this feature upon request. If you're interested, please [send us](mailto:dahellem@microsoft.com) your Azure DevOps organization name (dev.azure.com/{organization}).

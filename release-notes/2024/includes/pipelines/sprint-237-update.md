@@ -74,4 +74,4 @@ This allows organizations and teams to make an informed decision before enforcin
 
 ### Upgrade AzDO owned tasks to Node 20
 
-Azure Artifacts support for Rust Crates will enter General Availability starting from 2/16/2024. Billing meters will be turned, following the same pricing model applicable to the rest of the supported protocols.
+Azure Artifacts support for Rust Crates will enter General Availability starting from 2/16/2024. Billing meters are turned, following the same pricing model applicable to the rest of the supported protocols.

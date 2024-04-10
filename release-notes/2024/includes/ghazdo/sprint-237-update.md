@@ -9,7 +9,7 @@ ms.topic: include
 
 We're expanding the set of partner patterns that can be detected with Secret Scanning. This expansion brings in many high confidence patterns for new token types. These new patterns include a large number of Azure resource providers, and other SaaS providers through the GHAS Secret Scanning partner program. 
 
-For more information on the types of partner patterns that Github Advanced Security Secret Scanning detects, see [Secret scanning alerts for GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/github-advanced-security-secret-scanning?view=azure-devops&branch=main#secret-scanning-patterns&preserve-view=true).
+For more information on the types of partner patterns that GitHub Advanced Security Secret Scanning detects, see [Secret scanning alerts for GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/github-advanced-security-secret-scanning?view=azure-devops&branch=main#secret-scanning-patterns&preserve-view=true).
 
 ### Secret Scanning now detects non-provider patterns
 
