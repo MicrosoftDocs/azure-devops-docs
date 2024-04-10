@@ -1,31 +1,9 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 4/9/2024
+ms.date: 4/10/2024
 ms.topic: include
 ---
-
-### TFX validates whether a task is using an EOL Node runner
-
-Task authors use [TFX](https://learn.microsoft.com/azure/devops/extend/publish/command-line?view=azure-devops) to publish extensions. TFX has been updated to perform validations on other Node runner versions.
-
-Extensions that contain tasks using a Node runner version that is end-of-life (EOL) (up to and including Node 16) will see this warning:
-
-```
-Task <TaskName> is dependent on a task runner that is end-of-life and are removed in the future. Authors should review Node upgrade guidance: https://aka.ms/node-runner-guidance.
-```
-
-### Auditable Shell task argument validation
-
-Many tasks have enhanced argument validation, see [enable shell tasks arguments parameter validation](https://learn.microsoft.com/azure/devops/pipelines/security/inputs?view=azure-devops#enable-shell-tasks-arguments-parameter-validation).
-
-We now allow you to audit the impact of argument validation before enabling the feature. Go to Organization Settings > Settings > Task restrictions or Project Settings > General to enable auditing:
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Enable shell tasks arguments validation.](../../media/237-pipelines-01.png "Screenshot of Enable shell tasks arguments validation")
-
-
-This allows organizations and teams to make an informed decision before enforcing argument validation.
 
 ### Edit queue build configuration permission
 
@@ -71,3 +49,29 @@ Changing variables marked as settable at queue time also requires the  _Edit que
 > ![Screenshot of variables.](../../media/237-pipelines-04.png "Screenshot of variables")
 
 To make sure the new permission doesn't interfere with your day-to-day workloads, everyone who has _Queue build_ permission receives the _Edit queue build configuration_ permission. Afterward, you can remove this permission as needed.
+
+### TFX validates whether a task is using an EOL Node runner
+
+Task authors use [TFX](https://learn.microsoft.com/azure/devops/extend/publish/command-line?view=azure-devops) to publish extensions. TFX has been updated to perform validations on other Node runner versions.
+
+Extensions that contain tasks using a Node runner version that is end-of-life (EOL) (up to and including Node 16) will see this warning:
+
+```
+Task <TaskName> is dependent on a task runner that is end-of-life and are removed in the future. Authors should review Node upgrade guidance: https://aka.ms/node-runner-guidance.
+```
+
+### Auditable Shell task argument validation
+
+Many tasks have enhanced argument validation, see [enable shell tasks arguments parameter validation](https://learn.microsoft.com/azure/devops/pipelines/security/inputs?view=azure-devops#enable-shell-tasks-arguments-parameter-validation).
+
+We now allow you to audit the impact of argument validation before enabling the feature. Go to Organization Settings > Settings > Task restrictions or Project Settings > General to enable auditing:
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Enable shell tasks arguments validation.](../../media/237-pipelines-01.png "Screenshot of Enable shell tasks arguments validation")
+
+
+This allows organizations and teams to make an informed decision before enforcing argument validation.
+
+### Upgrade AzDO owned tasks to Node 20
+
+Azure Artifacts support for Rust Crates will enter General Availability starting from 2/16/2024. Billing meters will be turned, following the same pricing model applicable to the rest of the supported protocols.

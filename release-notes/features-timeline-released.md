@@ -37,16 +37,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="9"><a href="2024/sprint-237-update.md" data-raw-source="[9 April 2024](2024/sprint-236-update.md)"> 9 April  2024</a></td>
+    <td rowspan="10"><a href="2024/sprint-237-update.md" data-raw-source="[10 April 2024](2024/sprint-236-update.md)"> 10 April  2024</a></td>
     <td>Expanded set of Secret Scanning detections</td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
     <td>Secret Scanning now detects non-provider patterns</td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
     <td>New Boards Hub on by default</td><td>Boards</td><td>Future</td></tr>
     <td>Add link to GitHub commit or pull request is generally available</td><td>Boards</td><td>Future</td></tr>
     <td>AB# Links on GitHub pull request (preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Connect to GitHub repository search improvements (preview)</td><td>Boards</td><td>Future</td></tr>
-    <td>TFX validates whether a task is using an EOL Node runner</td><td>Boards</td><td>Future</td></tr>
-    <td>Auditable Shell task argument validation</td><td>Pipelines</td><td>Future</td></tr>
     <td>Edit queue build configuration permission</td><td>Pipelines</td><td>Future</td></tr>
+    <td>TFX validates whether a task is using an EOL Node runner</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Auditable Shell task argument validation</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Upgrade AzDO owned tasks to Node 20</td><td>Pipelines</td><td>Future</td></tr>
 <tr>
 <tr>
 <tr>

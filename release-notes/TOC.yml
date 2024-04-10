@@ -10,7 +10,7 @@
       items:
         - name: "2024"
           items:
-          - name: April 9
+          - name: April 10
             href: 2024/sprint-237-update.md
           - name: March 26
             href: 2024/sprint-236-update.md
@@ -253,7 +253,7 @@
         items:
         - name: "2024"
           items:
-          - name: April 9
+          - name: April 10
             href: 2024/boards/sprint-237-update.md
           - name: February 29
             href: 2024/boards/sprint-235-update.md
@@ -465,7 +465,7 @@
         items:
         - name: "2024"
           items:
-          - name: April 9
+          - name: April 10
             href: 2024/pipelines/sprint-237-update.md
           - name: March 26
             href: 2024/pipelines/sprint-236-update.md
@@ -755,6 +755,8 @@
         items:
         - name: "2024"
           items:
+          - name: April 10
+            href: 2024/ghazdo/sprint-237-update.md
           - name: February 9
             href: 2024/ghazdo/sprint-234-update.md
           - name: January 18
