@@ -50,11 +50,11 @@ Changing variables marked as settable at queue time also requires the  _Edit que
 
 To make sure the new permission doesn't interfere with your day-to-day workloads, everyone who has _Queue build_ permission receives the _Edit queue build configuration_ permission. Afterward, you can remove this permission as needed.
 
-### TFX validates whether a task is using an End of Life (EOL) Node runner
+### TFX validates whether a task is using an End of Life Node runner
 
 Task authors use [TFX](https://learn.microsoft.com/azure/devops/extend/publish/command-line?view=azure-devops#prerequisites) to publish extensions. TFX has been updated to perform validations on other Node runner versions.
 
-Extensions that contain tasks using a Node runner version that is end-of-life (EOL) (up to and including Node 16) will see this warning:
+Extensions that contain tasks using a Node runner version that is end of life (EOL) (up to and including Node 16) will see this warning:
 
 
 *Task < TaskName > is dependent on a task runner that is end-of-life and are removed in the future. Authors should review Node upgrade guidance: https://aka.ms/node-runner-guidance.*

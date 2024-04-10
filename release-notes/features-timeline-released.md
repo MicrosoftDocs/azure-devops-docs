@@ -45,7 +45,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>AB# Links on GitHub pull request (preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Connect to GitHub repository search improvements (preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Edit queue build configuration permission</td><td>Pipelines</td><td>Future</td></tr>
-    <td>TFX validates whether a task is using an EOL Node runner</td><td>Pipelines</td><td>Future</td></tr>
+    <td>TFX validates whether a task is using an End or Life Node runner</td><td>Pipelines</td><td>Future</td></tr>
 <tr>
 <tr>
     <td rowspan="4"><a href="2024/sprint-236-update.md" data-raw-source="[26 March 2024](2024/sprint-236-update.md)"> 26 March  2024</a></td>
