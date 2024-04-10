@@ -26,7 +26,7 @@ After several weeks [in preview](https://learn.microsoft.com/azure/devops/releas
 
 ### AB# links on GitHub pull requests (preview)
 
-As part of our ongoing enhancements to the Azure Boards + GitHub integration, we're previewing a feature that improves experience with AB# links. With this update, your AB# links will now appear directly in the Development section of the GitHub pull requests. This means you can view the linked work items without the need to navigate through the pull request description or comments, resulting in easier access to those AB# links.
+As part of our ongoing enhancements to the Azure Boards + GitHub integration, we're previewing a feature that improves experience with AB# links. With this update, your AB# links will now appear directly in the Development section of the GitHub pull request. This means you can view the linked work items without the need to navigate through description or comments, resulting in easier access to those AB# links.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshots of AB# links.](../../media/237-boards-01.png "Screenshots of AB# links.")
@@ -38,6 +38,6 @@ If you're interested in participating in the preview, please reach out to us dir
 
 ### Connect to GitHub repository search improvements (preview)
 
-For GitHub organizations with thousands of repositories, [connecting them](https://learn.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops) to an Azure DevOps project has been challenging. Customers with that many GitHub repositories would encounter timeout errors or long wait times. Today we're announcing a preview that unblocks large GitHub organizations. You can now search and select across thousands of repositories without the risk of timeout issues.
+For GitHub organizations with thousands of repositories, [connecting them](https://learn.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops) to an Azure DevOps project has been challenging. Customers with that many GitHub repositories can encounter timeout errors or long wait times. Today we're announcing a preview that unblocks large GitHub organizations. You can now search and select across thousands of repositories without the risk of timeout issues.
 
 We're happy to enable to this feature upon request. If you're interested, please [send us](mailto:dahellem@microsoft.com) your Azure DevOps organization name (dev.azure.com/{organization}).
