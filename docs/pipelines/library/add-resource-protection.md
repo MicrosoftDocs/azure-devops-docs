@@ -39,7 +39,7 @@ To add the **Administrator** role to a user or group for all agent pools:
 1. Select **Security**. 
 
 1. Assign the **Administrator** role in the **Role** column for a user or group. 
-1. To save the settings, select :::image type="icon" source="../../media/icons/save-icon.png" border="false":::.
+1. Select :::image type="icon" source="../../media/icons/save-icon.png" border="false"::: to save the settings.
 
 To add the **Administrator** role to a user or group for a specific agent pool:
 
@@ -50,11 +50,11 @@ To add the **Administrator** role to a user or group for a specific agent pool:
 1. Select **Security**. 
 
 1. In **User permissions**, assign the **Administrator** role in the **Role** column for a user or group.
-1. To save the settings, select :::image type="icon" source="../../media/icons/save-icon.png" border="false":::.
+1. Select :::image type="icon" source="../../media/icons/save-icon.png" border="false"::: to save the settings.
 
 ## Library resources (variable groups and secure files)
 
-You can manage security for library resources at the project level or for specific variable groups and files. To create a library resource, you must be assigned or be a member of a group that is assigned either the **Administrator** or **Creator** role. The creator of a resource is automatically assigned the **Administrator** role for that individual resource.
+You can manage security for all library resources at the project level or for individual variable groups and files. To create a library resource, you must be assigned or be a member of a group that is assigned either the **Administrator** or **Creator** role. The creator of a resource is automatically assigned the **Administrator** role for that individual resource.
 
 To assign the **Administrator** role to users and groups at the project level:
 
@@ -63,15 +63,15 @@ To assign the **Administrator** role to users and groups at the project level:
 1. Select **Security**.
 
 1. Assign the **Administrator** role in the **Role** column for a user or group.
+1. Select :::image type="icon" source="../../media/icons/save-icon.png" border="false"::: to save the settings.
 
-To assign the **Administrator** role to users and groups for variable group:
+To assign the **Administrator** role to users and groups for a variable group:
 
 1. Go to **Pipelines** > **Library**. 
 
 1. Select the variable group.
 1. Select **Security**.
-1. Assign the **Administrator** role in the **Role** column for a user or group.
-1. To save the settings, select :::image type="icon" source="../../media/icons/save-icon.png" border="false":::.
+1. Select :::image type="icon" source="../../media/icons/save-icon.png" border="false"::: to save the settings.
 
 To assign the **Administrator** role to users and groups for a secure file:
 
@@ -80,12 +80,12 @@ To assign the **Administrator** role to users and groups for a secure file:
 1. Select **Secure files** and select a file from the list.
 1. Select **Security**.
 1. Assign the **Administrator** role in the **Role** column for a user or group.
-1. To save the settings, select :::image type="icon" source="../../media/icons/save-icon.png" border="false":::.
+1. Select :::image type="icon" source="../../media/icons/save-icon.png" border="false"::: to save the settings.
 
 
 ## Service connections
 
-You can manage security for service connections at the project level or for individual service connections. To create a service connection, you must be assigned or be a member of a group that is assigned either the **Administrator** or **Creator** role. The creator of a service connection is automatically assigned the **Administrator** role for that individual service connection. 
+You can manage security for all service connections at the project level or for individual service connections. To create a service connection, you must be assigned or be a member of a group that is assigned either the **Administrator** or **Creator** role. The creator of a service connection is automatically assigned the **Administrator** role for that individual service connection. 
 
 To assign the **Administrator** role to users and groups at the project level:
 
@@ -95,7 +95,7 @@ To assign the **Administrator** role to users and groups at the project level:
 1. Assign the **Administrator** role in the **Role** column for a user or group.
 1. To save the settings, select **Save**.
 
-To assign the **Administrator** role to users and groups to a service connection:
+To assign the **Administrator** role to users and groups for a service connection:
 
 1. Go to **Project Settings** > **Service connections**. 
 
@@ -108,9 +108,9 @@ To assign the **Administrator** role to users and groups to a service connection
 
 ## Environments
 
-You can manage security for environments at the project level or for individual environments. To create an environment, you must be assigned or be a member of a group that is assigned either the **Administrator** or **Creator** role. The creator of an environment is automatically assigned the **Administrator** role for that individual environment.
+You can manage security for all environments at the project level or for individual environments. To create an environment, you must be assigned or be a member of a group that is assigned either the **Administrator** or **Creator** role. The creator of an environment is automatically assigned the **Administrator** role for that individual environment.
 
-To assign the **Administrator** role to a group at the project level:
+To assign the **Administrator** role to users and  groups at the project level:
 
 1. Go to **Pipelines** > **Environments**. 
 
