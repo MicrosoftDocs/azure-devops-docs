@@ -42,7 +42,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Secret Scanning now detects non-provider patterns</td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
     <td>New Boards Hub on by default</td><td>Boards</td><td>Future</td></tr>
     <td>Add link to GitHub commit or pull request is generally available</td><td>Boards</td><td>Future</td></tr>
-    <td>AB# Links on GitHub pull request (preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>AB# Links on GitHub pull requests (preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Connect to GitHub repository search improvements (preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Edit queue build configuration permission</td><td>Pipelines</td><td>Future</td></tr>
     <td>TFX validates whether a task is using an End or Life Node runner</td><td>Pipelines</td><td>Future</td></tr>
