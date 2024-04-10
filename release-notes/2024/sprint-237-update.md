@@ -7,12 +7,11 @@ description: Enhancement and Integration Improvements in Azure Boards, Pipelines
 ---
 # Enhancements and Integration Improvements in Azure Boards, Pipelines, and GitHub Advanced Security
 
-We are excited to announce that we are closer to setting New Boards Hub as your default experience. It will introduce a refreshed design, improved performance, and better accessibility. Adding to Boards, we're previewing AB# Links on GitHub pull requests and a more reliable GitHub repository search, removing the risk of timeouts.
+We're excited to announce that we're close to making New Boards Hub your default experience. It will introduce a refreshed design, better performance, and enhanced accessibility. Adding to Boards, we're previewing AB# Links on GitHub pull requests and a more reliable GitHub repository search, removing the risk of timeouts.
 
-In Azure Pipelines, we're reinforcing our commitment to security with the introduction of a new "Edit queue build configuration" permission. This feature precisely regulates the setting of variables at queue time, including free-text runtime parameters, for a more secure pipeline environment.
+In Azure Pipelines, we're strengthening our security commitment with the launch of a new pipeline permission named _Edit queue build configuration_. This feature precisely regulates the setting of variables at queue time, including free-text runtime parameters, for a more secure pipeline environment.
 
-
-For GitHub Advanced Security, we're stepping up our game by expanding our secret scanning capabilities. With a wider range of partner patterns now included, we're significantly enhancing the detection abilities of our Secret Scanning feature, providing a more secure environment for your projects.
+For GitHub Advanced Security, we're improving our secret scanning capabilities by adding more partner patterns. This will significantly increase the detection abilities of our Secret Scanning feature, providing a more secure environment for your projects.
 
 Check out the release notes for details.
 
