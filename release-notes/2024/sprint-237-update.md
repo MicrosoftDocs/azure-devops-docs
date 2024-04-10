@@ -7,7 +7,7 @@ description: Enhancement and Integration Improvements in Azure Boards, Pipelines
 ---
 # Enhancements and Integration Improvements in Azure Boards, Pipelines, and GitHub Advanced Security
 
-We're excited to announce that we're close to making New Boards Hub your default experience. It will introduce a refreshed design, better performance, and enhanced accessibility. Adding to Boards, we're previewing AB# Links on GitHub pull requests and a more reliable GitHub repository search, removing the risk of timeouts.
+We're excited to announce that we're close to making New Boards Hub your default experience! It will introduce an updated design, better performance, and enhanced accessibility. Adding to Boards, we're previewing AB# Links on GitHub pull requests and a more reliable GitHub repository search, removing the risk of timeouts.
 
 In Azure Pipelines, we're strengthening our security commitment with the launch of a new pipeline permission named _Edit queue build configuration_. This feature precisely regulates the setting of variables at queue time, including free-text runtime parameters, for a more secure pipeline environment.
 
