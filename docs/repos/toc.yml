@@ -47,6 +47,8 @@
     href: security/github-advanced-security-dependency-scanning.md
   - name: Code Scanning for GitHub Advanced Security
     href: security/github-advanced-security-code-scanning.md
+  - name: Security Overview on GitHub Advanced Security
+    href: security/github-advanced-security-security-overview.md
 - name: Integrations
   items:
   - name: Azure Repos with Slack
