@@ -1921,6 +1921,15 @@ You can define the following permissions in Build at both levels.
 :::row-end:::
 :::row:::
    :::column span="2":::
+   <a id="edit-pipeline-queue-configuration-permission"></a> Edit queue build configuration
+   `Build, EditPipelineQueueConfigurationPermission`
+   :::column-end:::
+   :::column span="2":::
+   Can specify values for free-text parameters (e.g., of type `object` or `array`) and pipeline variables when queueing new builds.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
    <a id="retain-indefinitely-permission"></a> Retain indefinitely  
    `Build, RetainIndefinitely`  
    :::column-end:::

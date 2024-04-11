@@ -49,7 +49,7 @@ Once the scan is complete, any results are displayed. A single alert gets genera
 
 Non-provider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab. 
 
-:::image type="content" source="media/secret-scanning-confidence-filter.png" lightbox="media/enable-github-advanced-security.png" alt-text="Screenshot of GitHub Advanced Security secret scanning confidence filter."::: 
+:::image type="content" source="media/secret-scanning-confidence-filter.png" lightbox="media/secret-scanning-confidence-filter.png" alt-text="Screenshot of GitHub Advanced Security secret scanning confidence filter."::: 
 
 
 ### Alert details 
@@ -68,7 +68,7 @@ When you navigate into an alert, a detailed alert view appears and reveals more 
 
 With non-provider secrets, the **Confidence: other** tag also appears by the severity badge in the alert detail view. 
 
-:::image type="content" source="media/secret-scanning-detail-confidence-other.png" lightbox="media/enable-github-advanced-security.png" alt-text="Screenshot of GitHub Advanced Security secret scanning generic alert detail.":::
+:::image type="content" source="media/secret-scanning-detail-confidence-other.png" lightbox="media/secret-scanning-detail-confidence-other.png" alt-text="Screenshot of GitHub Advanced Security secret scanning generic alert detail.":::
 
 ### Fixing secret scanning alerts
 
@@ -195,4 +195,3 @@ The following table lists the non-provider generated secrets detected by secret 
 > The detection of non-provider patterns is currently in beta and subject to change.
 
 [!INCLUDE [non-provider-table](includes/non-provider-table.md)] 
-
