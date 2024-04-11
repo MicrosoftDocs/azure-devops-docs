@@ -4,7 +4,7 @@ description: Learn the basics about Azure Pipelines and how to use it to automat
 ms.topic: overview
 ms.author: sdanie
 author: steved0x
-ms.date: 06/07/2023
+ms.date: 04/05/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -20,10 +20,6 @@ delivery (CD) to continuously test, build, and deploy your code. You accomplish 
 The latest way to build pipelines is with the [YAML pipeline editor](yaml-pipeline-editor.md). You can also use Classic pipelines with the [Classic editor](../release/define-multistage-release-process.md). 
 
 ::: moniker-end
-
-
-
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ## Automate tests, builds, and delivery
 

@@ -11,8 +11,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 A **task** performs an action in a pipeline and is a packaged script or procedure that's
 abstracted with a set of inputs. Tasks are the building blocks for defining automation in a pipeline. 
 

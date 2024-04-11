@@ -10,6 +10,10 @@
       items:
         - name: "2024"
           items:
+          - name: April 10
+            href: 2024/sprint-237-update.md
+          - name: March 26
+            href: 2024/sprint-236-update.md
           - name: February 29
             href: 2024/sprint-235-update.md
           - name: February 9
@@ -249,6 +253,8 @@
         items:
         - name: "2024"
           items:
+          - name: April 10
+            href: 2024/boards/sprint-237-update.md
           - name: February 29
             href: 2024/boards/sprint-235-update.md
           - name: February 9
@@ -459,6 +465,10 @@
         items:
         - name: "2024"
           items:
+          - name: April 10
+            href: 2024/pipelines/sprint-237-update.md
+          - name: March 26
+            href: 2024/pipelines/sprint-236-update.md
           - name: February 29
             href: 2024/pipelines/sprint-235-update.md
           - name: February 9
@@ -745,6 +755,8 @@
         items:
         - name: "2024"
           items:
+          - name: April 10
+            href: 2024/ghazdo/sprint-237-update.md
           - name: February 9
             href: 2024/ghazdo/sprint-234-update.md
           - name: January 18
@@ -765,6 +777,8 @@
         items:
         - name: "2024"
           items:
+          - name: March 26
+            href: 2024/general/sprint-236-update.md
           - name: February 9
             href: 2024/general/sprint-234-update.md
           - name: January 18
@@ -973,14 +987,7 @@
   - name: Azure DevOps Server
     href: /azure/devops/server/release-notes/azuredevops2020
 - name: Documentation updates
-  items:
-  - name: What's new
-    href: docswhatsnew/index.yml
-  - name: February 2024
-    href: docswhatsnew/azure-devops-docs-whats-new.md
-  - name: January 2024
-    href: docswhatsnew/azure-devops-docs-2024-01.md
-  - name: December 2023
-    href: docswhatsnew/azure-devops-docs-2023-12.md
+  href: ./docswhatsnew/toc.yml
+
 - name: Subscribe to updates
   href: https://azure.microsoft.com/updates/?product=azure-devops

@@ -62,7 +62,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [Universal Packages](#tab/universalpackages)
 
-- [Publish Universal Packages](../quickstarts/universal-packages.md#publish-packages)
+- [Publish Universal Packages](../quickstarts/universal-packages.md#publish-universal-packages)
 
 - - -
 
