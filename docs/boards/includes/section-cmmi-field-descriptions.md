@@ -23,13 +23,13 @@ ms.date: 09/21/2020
       [Impact Assessment](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi)
    :::column-end:::
    :::column span="3":::
-      The customer impact of not implementing this requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories. You capture this information in the rich-text HTML field which corresponds to Impact Assessment.  
+      The effect on the customer of not implementing this requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories. You capture this information in the rich-text HTML field that corresponds to Impact Assessment.  
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="":::
-      [Requirement Type](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi)(Required)  
+      [Requirement Type](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi) (Required)  
    :::column-end:::
    :::column span="3":::
       The kind of requirement to implement. You can specify one of the following values:  
@@ -50,8 +50,8 @@ ms.date: 09/21/2020
       [Start Date/Finish Date](../queries/query-by-date-or-current-iteration.md)  
    :::column-end:::
    :::column span="3":::
-      The target dates for when the work to start or finish. These fields are filled in by Microsoft Project when you use it for scheduling.  
-      You can specify work in hours or in days. There are no inherent time units associated with this field.  
+      The target dates for when the work is expected to start or finish. These fields are filled in by Microsoft Project when you use it for scheduling.  
+      You can specify work in hours or in days. No inherent time units are associated with this field.  
    :::column-end:::
 :::row-end:::
 ---
@@ -60,7 +60,7 @@ ms.date: 09/21/2020
       [Triage](../queries/planning-ranking-priorities.md) (Required)
    :::column-end:::
    :::column span="3":::
-      Indicates the type of triage decision that is pending for the work item. Use this field when the work item is in the *Proposed* state and specify one of the following values: **Pending** (default), **More Info**, **Info Received**, or **Triaged**.  
+      Indicates the type of triage decision that's pending for the work item. Use this field when the work item is in the `Proposed` state and specify one of the following values: **Pending** (default), **More Info**, **Info Received**, or **Triaged**.  
    :::column-end:::
 :::row-end:::
 ---
@@ -69,7 +69,7 @@ ms.date: 09/21/2020
       [Blocked](../queries/planning-ranking-priorities.md)  
    :::column-end:::
    :::column span="3":::
-      Indicates whether a team member is prevented from making progress toward implementing a requirement or task or resolving a bug, change request, or risk. If an issue has been opened to track a blocking problem, you can create a link to the issue. You can specify **Yes** or **No** (default).  
+      Indicates whether a team member is prevented from making progress toward implementing a requirement or task or resolving a bug, change request, or risk. If an issue was opened to track a blocking problem, you can create a link to the issue. You can specify **Yes** or **No** (default).  
    :::column-end:::
 :::row-end:::
 ---
@@ -87,7 +87,7 @@ ms.date: 09/21/2020
       [Integrated In](../queries/build-test-integration.md)
    :::column-end:::
    :::column span="3":::
-      Product build number that incorporates the requirement, change request, or fixes a bug.  
+      Product build number that incorporates the requirement or change request, or fixes a bug.  
    :::column-end:::
 :::row-end:::
 ---
@@ -103,7 +103,7 @@ ms.date: 09/21/2020
       - **Ready**  
       - **Skipped**  
       - **Info Received**  
-      Specify **Not Ready** when the requirement is in the Active state, and you specify **Ready** when the requirement is in the Resolved state.  
+      Specify **Not Ready** when the requirement is in the `Active` state. Specify **Ready** when the requirement is in the `Resolved` state.  
    :::column-end:::
 :::row-end:::
 ---

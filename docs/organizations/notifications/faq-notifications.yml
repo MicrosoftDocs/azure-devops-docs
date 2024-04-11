@@ -3,10 +3,10 @@ metadata:
   title: Notification FAQs
   titleSuffix: Azure DevOps
   description: General questions and answers about notifications settings in Azure DevOps.
-  ms.technology: devops-collab
   toc: show
   ms.topic: faq
   ms.author: chcomley
+  ms.subservice: azure-devops-notifications
   author: chcomley
   ms.date: 07/25/2022
   monikerRange: '<= azure-devops'

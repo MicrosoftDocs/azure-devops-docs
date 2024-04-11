@@ -67,15 +67,15 @@
     - name: npm quickstart
       displayName: npm, npm introduction
       href: get-started-npm.md
+    - name: Project setup
+      displayName: npmrc, connect, feed, npm
+      href: npm/npmrc.md
     - name: Publish and restore npm packages (CLI)
       displayName: npm, publish, restore, cli
       href: npm/publish.md
     - name: Publish npm packages (YAML/Classic)
       displayName: npm, publish, yaml, classic
       href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json
-    - name: Set up your project's npmrc
-      displayName: npmrc, project setup, npm feed
-      href: npm/npmrc.md
     - name: Use packages from npmjs.com
       displayName: upstream, npmjs, npm, install
       href: npm/upstream-sources.md
@@ -127,15 +127,15 @@
       href: python/use-packages-from-pypi.md
   - name: Universal Packages
     items:
-    - name: Quickstart
-      displayName: universal packages
+    - name: Universal Packages quickstart
+      displayName: universal packages, publish, download
       href: quickstarts/universal-packages.md
+    - name: Universal Packages in Azure Pipelines (YAML/Classic)
+      displayName: universal packages, yaml, classic
+      href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json
     - name: Universal Packages upstream sources
       displayName: universal packages, upstream sources, upstreams
       href: universal-packages/universal-packages-upstream.md
-    - name: Universal Packages in Azure Pipelines (YAML/Classic)
-      displayName: universal packages yaml, universal packages classic
-      href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json
   - name: Cargo
     items:
     - name: Cargo quickstart

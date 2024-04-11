@@ -396,7 +396,7 @@
     },
     {
       "source_path": "docs/organizations/projects/restore-project.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-project#restore-a-deleted-project"
+      "redirect_url": "/azure/devops/organizations/projects/delete-project#restore-a-deleted-project"
     },
     {
       "source_path": "docs/organizations/projects/save-project-data.md",

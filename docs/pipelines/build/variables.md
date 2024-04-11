@@ -13,8 +13,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 Variables give you a convenient way to get key bits of data into various parts of your pipeline.
 This is a list of predefined variables that are available for your use. There may be a few other predefined variables, but they're mostly for internal use.
 

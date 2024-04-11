@@ -37,6 +37,24 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="8"><a href="2024/sprint-237-update.md" data-raw-source="[10 April 2024](2024/sprint-237-update.md)"> 10 April  2024</a></td>
+    <td>Expanded set of Secret Scanning detections</td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
+    <td>Secret Scanning now detects non-provider patterns</td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
+    <td>New Boards Hub on by default</td><td>Boards</td><td>Future</td></tr>
+    <td>Add link to GitHub commit or pull request is generally available</td><td>Boards</td><td>Future</td></tr>
+    <td>AB# Links on GitHub pull requests (preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>Connect to GitHub repository search improvements (preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>Edit queue build configuration permission</td><td>Pipelines</td><td>Future</td></tr>
+    <td>TFX validates whether a task is using an End or Life Node runner</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="4"><a href="2024/sprint-236-update.md" data-raw-source="[26 March 2024](2024/sprint-236-update.md)"> 26 March  2024</a></td>
+    <td>Personal access token (PAT) APIs to return maximum allowed lifespan</td><td>General</td><td>Future</td></tr>
+    <td>Azure service connections indicate when a secret has expired</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New AzureFileCopy@6 task supports secret-less configurations</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Resource utilization alerts for Azure Pipeline agents</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
+<tr>
     <td rowspan="5"><a href="2024/sprint-235-update.md" data-raw-source="[29 February 2024](2024/sprint-235-update.md)"> 29 February  2024</a></td>
     <td>Show GitHub pull request details (preview)</td><td>Boards</td><td>Future</td></tr>
     <td>SSH-RSA deprecation</td><td>Repos</td><td>Future</td></tr>
@@ -589,7 +607,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td rowspan="10"><a href="2020/sprint-167-update.md" data-raw-source="[13 April 2020](2020/sprint-167-update.md)">13 April 2020</a></td>
             <td>Support for Team Admins to create subscriptions for messaging apps in Slack and Teams</td></td><td>General</td><td>2020</td>
         </tr>
-        <tr><td>Multi tenant support for Azure Boards, Repos and Pipelines app in Microsoft Teams</td></td><td>General</td><td>2020</td></tr>
+        <tr><td>Multitenant support for Azure Boards, Repos and Pipelines app in Microsoft Teams</td></td><td>General</td><td>2020</td></tr>
         <tr><td>Sync GitHub Issues to Azure DevOps Work Items</td><td>Boards</td><td>2019</td></tr>
         <tr><td>Improved PR actionability</td><td>Repos</td><td>2020.1</td></tr>
         <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>2020.1</td></tr>
