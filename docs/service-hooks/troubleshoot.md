@@ -124,7 +124,6 @@ A: A subscription is automatically disabled after a series of consecutive failur
 
 **A:** The user who created the subscription is no longer a member of the team.
 
-
 ### Q: What should I try if a service hook isn't working? 
 
 **A:** Check the following items:
