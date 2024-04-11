@@ -129,6 +129,7 @@ Default values are set for project collections and project groups. For example, 
 > | **Manage build queue** | _Only applies to XAML builds_ |
 > | **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../repos/tfvc.md#gated). Doesn't apply to pull request builds. |
 > | **Queue builds** | Can queue new builds. |
+> | **Edit queue build configuration** | Can specify values for free-text parameters (e.g., of type `object`) and pipeline variables when queueing new builds. |
 > | **Retain indefinitely** | Can toggle the retain indefinitely flag on a build. |
 > | **Stop builds** | Can stop builds queued by other team members or by the system.  |
 > | **Update build information** | It is recommended to leave this alone. It's intended to enable service accounts, not team members. |

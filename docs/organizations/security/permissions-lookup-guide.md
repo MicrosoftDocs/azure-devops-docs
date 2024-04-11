@@ -161,6 +161,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Edit policies (Git branch, Object)](../../repos/git/branch-permissions.md)
    - [Edit process (Collection)](change-organization-collection-level-permissions.md)
    - [Edit project-level information (Project)](change-project-level-permissions.md)
+   - [Edit queue build configuration (Object)](../../pipelines/policies/permissions.md)
    - [Edit release pipeline (Object)](../../pipelines/policies/permissions.md)
    - [Edit release state (Object)](../../pipelines/policies/permissions.md)
    - [Edit shared Analytics views (Object)](../../report/powerbi/analytics-security.md)
