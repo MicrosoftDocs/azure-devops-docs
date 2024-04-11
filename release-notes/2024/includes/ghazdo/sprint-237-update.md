@@ -5,6 +5,11 @@ ms.date: 4/10/2024
 ms.topic: include
 ---
 
+### Security overview risk and coverage panes 
+You can now see an organization-wide view of your Advanced Security alerts and Advanced Security enablement status of all repositories in your organization. 
+
+The security overview feature for Advanced Security can be found by navigating to **Organization settings > Security overview**. For more information, see [Security overview on GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/github-advanced-security-security-overview)
+
 ### Expanded set of Secret Scanning detections
 
 We're expanding the set of partner patterns that can be detected with Secret Scanning. This expansion brings in many high confidence patterns for new token types. These new patterns include a large number of Azure resource providers, and other SaaS providers through the GHAS Secret Scanning partner program. 
