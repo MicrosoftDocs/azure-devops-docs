@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 01/05/2024
+ms.date: 04/12/2024
 ---
 
 # Add and edit wiki pages
@@ -151,7 +151,7 @@ For code wikis, you can edit a page in the side-by-side editor, using the markdo
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Edit wiki page.](media/wiki/edit-in-repos.png)
 
-If you have branch policies in your code wiki, use **Edit in Repos** to create a branch and continue editing.
+If your code wiki has branch policies, select **Edit in Repos** to create a branch and continue editing. The **Edit in Repos** option is specifically available for code wikis.
 
 ::: moniker-end
 
