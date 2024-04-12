@@ -127,8 +127,6 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Security quick reference index
-            url: quick-reference-index-security.md
           - text: Default permissions quick reference 
             url: permissions-access.md 
           - text: Security management tools 

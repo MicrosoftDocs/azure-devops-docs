@@ -227,8 +227,6 @@ additionalContent:
               url: ./organizations/security/access-levels.md
             - text: Use personal access tokens
               url: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md
-            - text: Security quick reference index
-              url: ./organizations/security/quick-reference-index-security.md
             - text: Billing overview
               url: ./organizations/billing/overview.md
             - text: Add or remove users or groups 
