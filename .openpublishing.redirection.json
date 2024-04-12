@@ -437,6 +437,10 @@
     {
       "source_path": "docs/boards/work-items/automate-work-item-state-transitions.md",
       "redirect_url": "/azure/devops/boards/backlogs/automate-work-item-state-transitions"
+    },
+    {
+      "source_path": "docs/organizations/security/quick-reference-index-security.md",
+      "redirect_url": "/azure/devops/organizations/security/index"
     }
   ]
 }

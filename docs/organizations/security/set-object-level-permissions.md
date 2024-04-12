@@ -32,8 +32,6 @@ To set most object-level permissions, you must be a member of the Project Admini
 > [!NOTE]
 > TFVC only supports a single repository per project. You can set permissions for the repository or repo folders/branches, which inherit from the repo.
 
-For more information, see [Security concepts](quick-reference-index-security.md#concepts) and [Security tasks](quick-reference-index-security.md#tasks).
-
 ## Open the permissions dialog for an object section
 
 There are various ways to get to the Permissions dialog for an object. The simplest way is to start from the object, and then select **More** ... > **Security**. 

@@ -20,7 +20,6 @@ Due to the extensive security and permission structure of Azure DevOps, you migh
 Before using this guide, we recommend that you're familiar with the following content: 
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Default permissions and access quick reference.](permissions-access.md) 
-- [Quick reference index to Azure DevOps security](quick-reference-index-security.md)  
 
 > [!TIP]
 > When you're creating an Azure DevOps security group, label it in a way that is easy to discern if it's created to limit access.
