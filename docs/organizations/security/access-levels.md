@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/17/2023  
+ms.date: 04/12/2024  
 ---
 
 
@@ -264,7 +264,7 @@ The following table indicates those features available for each supported access
       Includes full access to all features to [manage continuous integration and continuous delivery of software](../../pipelines/get-started/what-is-azure-pipelines.md).
    :::column-end:::
    :::column span="1":::
-       
+      ✔️
    :::column-end:::
    :::column span="1":::
       ✔️
