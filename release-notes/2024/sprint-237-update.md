@@ -7,7 +7,7 @@ description: Improvements to secret scanning capabilities and New Board Hub on b
 ---
 # Improvements to secret scanning capabilities and New Board Hub on by default
 
-We're excited to announce we've improved our secret scanning capabilities by adding more partner patterns in GitHub Advanced Security! This will significantly increase the detection abilities of our Secret Scanning feature, providing a more secure environment for your projects.
+We're excited to announce we're rolling out a security overview, a single pane of glass view for your Advanced Security alerts and enablement, and we've also improved our secret scanning capabilities by adding more partner patterns in GitHub Advanced Security! This will significantly increase the detection abilities of our secret scanning feature, providing a more secure environment for your projects.
 
 With this update, we're close to making New Boards Hub your default experience! It will introduce an updated design, better performance, and enhanced accessibility. In addition, we're previewing two new features within Boards: AB# Links on GitHub pull requests and a more reliable GitHub repository search, removing the risk of timeouts.
 
