@@ -23,7 +23,7 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         days-before-issue-stale: 180
         stale-issue-label: 'auto-close'
-        operations-per-run: 100
+        operations-per-run: 1000
         close-issue-reason: not_planned
         close-issue-label: inactive
         days-before-issue-close: 3
