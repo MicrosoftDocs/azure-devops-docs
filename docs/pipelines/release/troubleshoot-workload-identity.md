@@ -29,15 +29,68 @@ The following sections describe the issues and how to resolve them.
 
 Not all pipelines tasks support workload identity. During the preview, no Azure Marketplace tasks support workload identity service connections.
 
-The following tasks currently don't support workload identity federation:
-
-- AzureCloudPowerShellDeploymentV1
-- AzCopy (AzureFileCopyV1, AzureFileCopyV2, AzureFileCopyV3, AzureFileCopyV4, AzureFileCopyV5)
-- AzureMonitorAlertsV0
-- AzureNLBManagementV1
-- PackerBuild (PackerBuildV0, PackerBuildV1)
-- ServiceFabricComposeDeployV0
-- ServiceFabricDeployV1
+| Task                                 | Workload identity federation support                                                                                            |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| AutomatedAnalysis@0                      | Y |
+| AzureAppServiceManage@0                  | Y |
+| AzureAppServiceSettings@1                | Y |
+| AzureCLI@1                               | Y |
+| AzureCLI@2                               | Y |
+| AzureCloudPowerShellDeployment@1         | Use AzureCloudPowerShellDeployment@2 |
+| AzureCloudPowerShellDeployment@2         | Y |
+| AzureContainerApps@0                     | Y |
+| AzureContainerApps@1                     | Y |
+| AzureFileCopy@1                          | Use AzureFileCopy@6 |
+| AzureFileCopy@2                          | Use AzureFileCopy@6 |
+| AzureFileCopy@3                          | Use AzureFileCopy@6 |
+| AzureFileCopy@4                          | Use AzureFileCopy@6 |
+| AzureFileCopy@5                          | Use AzureFileCopy@6 |
+| AzureFileCopy@6                          | Y |
+| AzureFunctionApp@1                       | Y |
+| AzureFunctionApp@2                       | Y |
+| AzureFunctionAppContainer@1              | Y |
+| AzureFunctionOnKubernetes@0              | Use AzureFunctionOnKubernetes@1 |
+| AzureFunctionOnKubernetes@1              | azureSubscriptionConnection: Y, dockerRegistryServiceConnection: 2024 Q2, [use Azure instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| AzureIoTEdge@2                           | azureSubscription: Y, azureSubscriptionEndpoint: Y, dockerRegistryConnection: 2024 Q2 |
+| AzureKeyVault@1                          | Y |
+| AzureKeyVault@2                          | Y |
+| AzureMonitor@0                           | Use AzureMonitor@1 |
+| AzureMonitor@1                           | Y |
+| AzureMysqlDeployment@1                   | Y |
+| AzureNLBManagement@1                     | N |
+| AzurePolicyCheckGate@0                   | Y |
+| AzurePowerShell@2                        | Y |
+| AzurePowerShell@3                        | Y |
+| AzurePowerShell@4                        | Y |
+| AzurePowerShell@5                        | Y |
+| AzureResourceGroupDeployment@2           | Y |
+| AzureResourceManagerTemplateDeployment@3 | Y |
+| AzureRmWebAppDeployment@3                | azureSubscription:Y, dockerRegistryConnection: 2024 Q2 |
+| AzureRmWebAppDeployment@4                | Y |
+| AzureSpringCloud@0                       | Y |
+| AzureVmssDeployment@0                    | Y |
+| AzureWebApp@1                            | Y |
+| AzureWebAppContainer@1                   | Y |
+| ContainerBuild@0                         | 2024 Q2 |
+| ContainerStructureTest@0                 | 2024 Q2 |
+| Docker@0                                 | azureSubscription: y,dockerRegistryConnection: N |
+| Docker@1                                 | azureSubscription: y, azureSubscriptionEndpoint: Y, dockerRegistryConnection: N |
+| Docker@2                                 | 2024 Q2 |
+| DockerCompose@0                          | azureSubscription: Y, dockerRegistryEndpoint: N |
+| HelmDeploy@0                             | Y, [use Azure instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| InvokeRESTAPI@1                          | Y |
+| JavaToolInstaller@0                      | Y |
+| JenkinsDownloadArtifacts@1               | Y |
+| Kubernetes@0                             | Use Kubernetes@1  |
+| Kubernetes@1                             | azureSubscriptionEndpoint: Y, dockerRegistryEndpoint: N |
+| KubernetesManifest@0                     | Use KubernetesManifest@1 |
+| KubernetesManifest@1                     | azureSubscriptionConnection: Y, dockerRegistryEndpoint: N |
+| Notation@0                               | N |
+| PackerBuild@0                            | N |
+| PackerBuild@1                            | N |
+| ServiceFabricComposeDeploy@0             | N |
+| ServiceFabricDeploy@1                    | N |
+| SqlAzureDacpacDeployment@1               | N |
 
 ### Verify that workload identity federation is active
 
