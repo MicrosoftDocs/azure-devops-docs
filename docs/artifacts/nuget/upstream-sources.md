@@ -91,6 +91,8 @@ If you've checked the upstream sources checkbox when making your feed, NuGet Gal
 
 ## Connect to feed
 
+::: moniker range="azure-devops"
+
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed.
@@ -123,6 +125,32 @@ If you've checked the upstream sources checkbox when making your feed, NuGet Gal
         </configuration>
         ```
 
+::: moniker-end
+
+::: moniker range="azure-devops-2020 || azure-devops-2022"
+
+1. Sign in to your Azure DevOps server, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed.
+
+1. Select **Connect to Feed**, and then select **NuGet.exe** from the left navigation pane.
+
+1. Follow the instructions in the **Project setup** section to connect to your feed.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in to your Azure DevOps server, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed.
+
+1. Select **Connect to Feed**, and then select **NuGet** from the left navigation pane.
+
+1. Follow the provided instructions to add your package source URL to your *nuget.config* file.
+
+::: moniker-end
+
 ## Install packages from NuGet Gallery
 
 With our project now configured to authenticate with our feed, we can now proceed to install packages from the NuGet Gallery upstream. In this example, we will install the *Serilog* diagnostic logging library:
@@ -145,13 +173,23 @@ With our project now configured to authenticate with our feed, we can now procee
 
 ## View saved packages
 
+::: moniker range="azure-devops"
+
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
+::: moniker-end
 
-1. Select the **NuGet Gallery** source from the dropdown menu to filter for packages from this upstream.
+::: moniker range="< azure-devops"
 
-1. The *Serilog* package, installed in the previous step, is now available in our feed. Azure Artifacts automatically saved a copy to our feed when we executed the install command.
+1. Sign in to your Azure DevOps server, and then navigate to your project.
+
+::: moniker-end
+
+2. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+3. Select the **NuGet Gallery** source from the dropdown menu to filter for packages from this upstream.
+
+4. The *Serilog* package, installed in the previous step, is now available in our feed. Azure Artifacts automatically saved a copy to our feed when we executed the install command.
 
     :::image type="content" source="media/package-saved-from-upstream.png" alt-text="A screenshot showing the package that was saved from upstream.":::
 
