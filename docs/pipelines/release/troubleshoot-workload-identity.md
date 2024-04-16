@@ -71,8 +71,8 @@ Not all pipelines tasks support workload identity. During the preview, no Azure 
 | AzureVmssDeployment@0                    | Y |
 | AzureWebApp@1                            | Y |
 | AzureWebAppContainer@1                   | Y |
-| ContainerBuild@0                         | 2024 Q2 |
-| ContainerStructureTest@0                 | 2024 Q2 |
+| ContainerBuild@0                         | N |
+| ContainerStructureTest@0                 | N |
 | Docker@0                                 | azureSubscription: y,dockerRegistryConnection: N |
 | Docker@1                                 | azureSubscription: y, azureSubscriptionEndpoint: Y, dockerRegistryConnection: N |
 | Docker@2                                 | 2024 Q2 |
