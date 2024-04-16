@@ -376,7 +376,7 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
 #### Mono
 
-  To manually select a Mono version to use on the **Hosted macOS** agent pool, execute this script in each job of your build before your Mono build task, specifying the symlink with the required Mono version (list of all available symlinks can be found in the [Xamarin section](#xamarin) above):
+  To manually select a Mono version to use on the **Hosted macOS** agent pool, execute this script in each job of your build before your Mono build task, specifying the symlink with the required Mono version:
 
   ```bash
   SYMLINK=<symlink>
