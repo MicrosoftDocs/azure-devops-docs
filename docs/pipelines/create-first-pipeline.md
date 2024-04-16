@@ -222,8 +222,6 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
     [24] Python package
     [25] Ruby
     [26] Universal Windows Platform
-    [27] Xamarin.Android
-    [28] Xamarin.iOS
     [29] Xcode
     Please enter a choice [Default choice(1)]:
     ```

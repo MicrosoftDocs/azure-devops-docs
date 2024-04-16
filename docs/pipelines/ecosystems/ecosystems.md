@@ -97,12 +97,10 @@ Build your app with any of the following languages.
         [UWP](/previous-versions/azure/devops/pipelines/apps/windows/universal)
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/index/logo_xamarin.png":::
-        [Xamarin](xamarin.md)
-    :::column-end:::
-    :::column:::
         :::image type="icon" source="./media/index/logo_xcode.png":::
         [Xcode](xcode.md)
+    :::column-end:::
+   :::column:::
     :::column-end:::
 :::row-end:::
 
