@@ -1,10 +1,10 @@
 ---
-title: Use packages from nuget.org
+title: Consume packages from nuget.org
 description: How to consume packages from nuget.org with Azure Artifacts upstream sources
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 11/27/2023
+ms.date: 04/16/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -33,7 +33,7 @@ With Azure Artifacts upstream sources, developers are able to consume packages f
 
 ## Enable upstream sources on your feed
 
-If you don't have a feed, follow these steps to create a new one and make sure to check the upstream sources checkbox to enable them. If you already have a feed, you can jump to the [next step](#add-nuget-gallery-upstream-source) to add the NuGet Gallery as an upstream source.
+If you haven't created a feed yet, follow the steps below to create a new one and make sure you select the upstream sources checkbox to enable them. If you already have a feed, proceed to the [next step](#add-nuget-gallery-upstream-source) to add the NuGet Gallery as an upstream source.
 
 [!INCLUDE [](../includes/create-feed.md)]
 
