@@ -204,6 +204,10 @@
     {
       "source_path_from_root": "/docs/pipelines/release/dsc-cicd.md",
       "redirect_url": "/azure/devops/pipelines/release/define-multistage-release-process"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/ecosystems/xamarin.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core"
     }
   ]
 }

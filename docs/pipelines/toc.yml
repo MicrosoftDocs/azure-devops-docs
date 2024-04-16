@@ -250,9 +250,6 @@
   - name: Ruby
     displayName: rails, bundler, rake, simplecov, cobertura
     href: ecosystems/ruby.md
-  - name: Xamarin
-    displayName: xamarin.android, xamarin.ios, macOS, AppStore, Xamarin SDK
-    href: ecosystems/xamarin.md
   - name: Xcode
     displayName: app certificate, test flight
     href: ecosystems/xcode.md

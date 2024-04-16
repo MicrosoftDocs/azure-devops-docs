@@ -364,28 +364,6 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 <a name="mac-pick-tools"></a>
 ### How can I manually select versions of tools on the Hosted macOS agent?
 
-#### Xamarin
-
-  **Hosted macOS** agent stores Xamarin SDK versions and the associated Mono versions as a set of symlinks to Xamarin SDK locations that are available by a single bundle symlink.
-
-  To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, execute the following bash command before your Xamarin build task as a part of your build, specifying the symlink to Xamarin versions bundle that you need.
-
-  `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh <symlink>"`
-
-  The list of all available Xamarin SDK versions and symlinks can be found in the agents documentation:
-  - [macOS 11](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xamarin)
-  - [macOS 12](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xamarin)
-  
-This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
-
-  In case you are using a non-default version of Xcode for building your Xamarin.iOS or Xamarin.Mac apps, you should additionally execute this command line:
-
-  `/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'$(xcodeRoot);sudo xcode-select --switch $(xcodeRoot)/Contents/Developer"`
-  
-  where `$(xcodeRoot)` = `/Applications/Xcode_13.2.app`
-
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xcode) for the `macos-11` agent and [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xcode) for the `macos-12` agent.
-
 #### Xcode
 
   If you use the [Xcode task](/azure/devops/pipelines/tasks/reference/xcode-v5) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
