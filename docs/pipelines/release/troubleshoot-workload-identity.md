@@ -88,6 +88,8 @@ Not all pipelines tasks support workload identity. During the preview, no Azure 
 | Notation@0                               | N |
 | PackerBuild@0                            | N |
 | PackerBuild@1                            | N |
+| PublishToAzureServiceBus@1               | N |
+| PublishToAzureServiceBus@2               | 2024 Q2 |
 | ServiceFabricComposeDeploy@0             | N |
 | ServiceFabricDeploy@1                    | N |
 | SqlAzureDacpacDeployment@1               | N |
