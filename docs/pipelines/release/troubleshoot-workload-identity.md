@@ -50,8 +50,8 @@ Not all pipelines tasks support workload identity. During the preview, no Azure 
 | AzureFunctionApp@2                       | Y |
 | AzureFunctionAppContainer@1              | Y |
 | AzureFunctionOnKubernetes@0              | Use AzureFunctionOnKubernetes@1 |
-| AzureFunctionOnKubernetes@1              | azureSubscriptionConnection: Y, dockerRegistryServiceConnection: 2024 Q2, [use Azure instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
-| AzureIoTEdge@2                           | azureSubscription: Y, azureSubscriptionEndpoint: Y, dockerRegistryConnection: 2024 Q2 |
+| AzureFunctionOnKubernetes@1              | azureSubscriptionConnection: Y, dockerRegistryServiceConnection: N, [use Azure instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| AzureIoTEdge@2                           | azureSubscription: Y, azureSubscriptionEndpoint: Y, dockerRegistryConnection: N |
 | AzureKeyVault@1                          | Y |
 | AzureKeyVault@2                          | Y |
 | AzureMonitor@0                           | Use AzureMonitor@1 |
@@ -65,7 +65,7 @@ Not all pipelines tasks support workload identity. During the preview, no Azure 
 | AzurePowerShell@5                        | Y |
 | AzureResourceGroupDeployment@2           | Y |
 | AzureResourceManagerTemplateDeployment@3 | Y |
-| AzureRmWebAppDeployment@3                | azureSubscription:Y, dockerRegistryConnection: 2024 Q2 |
+| AzureRmWebAppDeployment@3                | azureSubscription:Y, dockerRegistryConnection: N |
 | AzureRmWebAppDeployment@4                | Y |
 | AzureSpringCloud@0                       | Y |
 | AzureVmssDeployment@0                    | Y |
