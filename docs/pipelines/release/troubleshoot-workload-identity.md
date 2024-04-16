@@ -82,17 +82,17 @@ Not all pipelines tasks support workload identity. During the preview, no Azure 
 | JavaToolInstaller@0                      | Y |
 | JenkinsDownloadArtifacts@1               | Y |
 | Kubernetes@0                             | Use Kubernetes@1  |
-| Kubernetes@1                             | azureSubscriptionEndpoint: Y, dockerRegistryEndpoint: N |
+| Kubernetes@1                             | azureSubscriptionEndpoint: Y, dockerRegistryEndpoint: N, [use Azure instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
 | KubernetesManifest@0                     | Use KubernetesManifest@1 |
-| KubernetesManifest@1                     | azureSubscriptionConnection: Y, dockerRegistryEndpoint: N |
+| KubernetesManifest@1                     | azureSubscriptionConnection: Y, dockerRegistryEndpoint: N, [use Azure instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
 | Notation@0                               | N |
-| PackerBuild@0                            | N |
-| PackerBuild@1                            | N |
+| PackerBuild@0                            | 2024 Q2 |
+| PackerBuild@1                            | 2024 Q2 |
 | PublishToAzureServiceBus@1               | N |
 | PublishToAzureServiceBus@2               | 2024 Q2 |
 | ServiceFabricComposeDeploy@0             | N |
 | ServiceFabricDeploy@1                    | N |
-| SqlAzureDacpacDeployment@1               | N |
+| SqlAzureDacpacDeployment@1               | Y |
 
 ### Verify that workload identity federation is active
 
