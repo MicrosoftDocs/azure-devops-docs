@@ -39,6 +39,8 @@ If you haven't created a feed yet, follow the steps below to create a new one an
 
 ## Add NuGet Gallery upstream source
 
+::: moniker range="azure-devops"
+
 If you've checked the upstream sources checkbox when making your feed, NuGet Gallery should have been added automatically. If not, add it manually by following these steps:
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
@@ -52,9 +54,40 @@ If you've checked the upstream sources checkbox when making your feed, NuGet Gal
 1. Select **Public source**, and then select **NuGet Gallery** from the dropdown menu.
 
 1. Select **Save** when you're done, and then select **Save** one more time at the top right corner to save your changes.
-    
-> [!NOTE]
-> The service index location for nuget.org is `https://api.nuget.org/v3/index.json`.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2022"
+
+1. Sign in to your Azure DevOps server, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed.
+
+1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to your **Feed settings**.
+
+1. Select **Upstream Sources**, and then select **Add Upstream**.
+
+1. Select **Public source**, and then select **NuGet Gallery** from the dropdown menu.
+
+1. Select **Save** when you're done, and then select **Save** one more time at the top right corner to save your changes.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019 || azure-devops-2020"
+
+1. Sign in to your Azure DevOps server, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed.
+
+1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to your **Feed settings**.
+
+1. Select **Upstream Sources**, and then select **Add upstream source**.
+
+1. Select **Public source**, and then select **NuGet Gallery** from the dropdown menu.
+
+1. Select **Add** when you're done.
+
+::: moniker-end
 
 ## Connect to feed
 
