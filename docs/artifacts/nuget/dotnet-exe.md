@@ -1,6 +1,6 @@
 ---
 title: Publish and restore NuGet packages with dotnet CLI
-description: How to connect to a feed and use the dotnet CLI to publish and restore NuGet packages
+description: How to connect to a feed and use the dotnet CLI to publish and restore NuGet packages.
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.service: azure-devops-artifacts
 ms.custom: devx-track-dotnet
@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables you to publish and restore your NuGet packages to and from your feed, allowing you to share them with others according to your feed's visibility settings. This guide will walk you through configuring your project to publish and restore packages using the dotnet command-line interface.
+Azure Artifacts enables you to publish and restore your NuGet packages to and from your feed, allowing you to share them with others according to your feed's visibility settings. This guide walks you through configuring your project to publish or restore packages using the dotnet command-line interface.
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ Azure Artifacts enables you to publish and restore your NuGet packages to and fr
 
 1. Select **Connect to feed**, and then select **dotnet** from the *NuGet* section on the left.
 
-1. Create a *nuget.config* file in the same folder as your .csproj or .sln file. Copy the following XML snippet and paste it into your new file, replacing the placeholders with the relevant information:
+1. Create a *nuget.config* file in the same folder as your *csproj* or *sln* file. Copy the following XML snippet and paste it into your new file, replacing the placeholders with the relevant information:
 
 - Organization-scoped feed:
 
@@ -95,7 +95,7 @@ dotnet nuget push --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJE
 
 1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scope.
 
-1. Replace the *<PERSONAL_ACCESS_TOKEN>* placeholder with your personal access token, and then run the following command to add your package source to your *nuget.config* file. This will add your PAT to your *nuget.config*. Make sure to store this file securely and not check it into source control.
+1. Replace the *<PERSONAL_ACCESS_TOKEN>* placeholder with your personal access token, and then run the following command to add your package source to your *nuget.config* file. This adds your PAT to your *nuget.config*. Make sure to store this file securely and not check it into source control.
 
     ```CLI
     dotnet nuget add source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --name <SOURCE_NAME> --username <USER_NAME> --password <PERSONAL_ACCESS_TOKEN> --configfile <PATH_TO_NUGET_CONFIG_FILE>
@@ -107,7 +107,8 @@ dotnet nuget push --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJE
     dotnet nuget push --source <SOURCE_NAME> --api-key <ANY_STRING> <PACKAGE_PATH>
     ```
 
-**Example**: *dotnet nuget add source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --name MySource --username MyUserName --password MyPersonalAccessToken --configfile ./nuget.config*
+**Example**: 
+*dotnet nuget add source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --name MySource --username MyUserName --password MyPersonalAccessToken --configfile ./nuget.config*
 *dotnet nuget push --source MySource --api-key AZ nupkgs/mypackage.1.1.0.nupkg*
 
 > [!NOTE]
