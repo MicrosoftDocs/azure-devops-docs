@@ -3,7 +3,7 @@ title: Deploy an Azure Pipelines agent on Windows (2.x)
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS (2.x)
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.date: 05/05/2023
+ms.date: 17/04/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -204,6 +204,13 @@ If you configured the agent to run as a service, it starts automatically. You ca
 - "Azure Pipelines Agent (*name of your agent*)".
 - "VSTS Agent (*name of your agent*)".
 - "vstsagent.(*organization name*).(*name of your agent*)".
+
+> [!Note]
+> To allow more flexibility with access control of an agent running as a service
+> is possible to set up the agent service SID type as [`SERVICE_SID_TYPE_UNRESTRICTED`] via
+> flag or prompt during interactive configuration flow.
+> By default the agent service is configured with `SERVICE_SID_TYPE_NONE`.
+> For more details about [SID](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-identifiers) types please check this [documentation](https://learn.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_sid_info#members).
 
 To restart the agent, right-click the entry and choose **Restart**.
 

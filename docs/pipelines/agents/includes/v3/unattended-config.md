@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 02/12/2020
+ms.date: 17/04/2024
 ---
 
 To configure an agent, it must know the URL to your organization or collection and credentials of someone authorized to set up agents.
@@ -50,6 +50,7 @@ agent and should not be shared between multiple agents.
 - `--windowsLogonAccount <account>` - used with `--runAsService` or `--runAsAutoLogon` to specify the Windows user
 name in the format `domain\userName` or `userName@domain.com`
 - `--windowsLogonPassword <password>` - used with `--runAsService` or `--runAsAutoLogon` to specify Windows logon password (not required for [Group Managed Service Accounts](https://aka.ms/gmsa) and Windows built in accounts such as 'NT AUTHORITY\NETWORK SERVICE')
+- `--enableservicesidtypeunrestricted` - used with `--runAsService` to configure the agent with service SID type as `SERVICE_SID_TYPE_UNRESTRICTED` (requires administrator permission)
 - `--overwriteAutoLogon` - used with `--runAsAutoLogon` to overwrite the existing auto logon on the machine
 - `--noRestart` - used with `--runAsAutoLogon` to stop the host from restarting after agent configuration completes
 
