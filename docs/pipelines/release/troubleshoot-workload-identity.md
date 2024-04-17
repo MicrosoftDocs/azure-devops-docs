@@ -29,7 +29,7 @@ The following sections describe the issues and how to resolve them.
 
 Not all pipelines tasks support workload identity. During the preview, no Azure Marketplace tasks support workload identity service connections.
 
-| Task                                 | Workload identity federation support                                                                                            |
+| Task                                     | Workload identity federation support                                                                                            |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | AutomatedAnalysis@0                      | Y |
 | AzureAppServiceManage@0                  | Y |
@@ -50,8 +50,8 @@ Not all pipelines tasks support workload identity. During the preview, no Azure 
 | AzureFunctionApp@2                       | Y |
 | AzureFunctionAppContainer@1              | Y |
 | AzureFunctionOnKubernetes@0              | Use AzureFunctionOnKubernetes@1 |
-| AzureFunctionOnKubernetes@1              | azureSubscriptionConnection: Y, dockerRegistryServiceConnection: N, [use Azure instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
-| AzureIoTEdge@2                           | azureSubscription: Y, azureSubscriptionEndpoint: Y, dockerRegistryConnection: N |
+| AzureFunctionOnKubernetes@1              | Azure Service Connection: Y<br/> Docker Registry service connection: N <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| AzureIoTEdge@2                           | Azure Service Connection: Y<br/> Docker Registry service connection: N <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
 | AzureKeyVault@1                          | Y |
 | AzureKeyVault@2                          | Y |
 | AzureMonitor@0                           | Use AzureMonitor@1 |
@@ -65,7 +65,7 @@ Not all pipelines tasks support workload identity. During the preview, no Azure 
 | AzurePowerShell@5                        | Y |
 | AzureResourceGroupDeployment@2           | Y |
 | AzureResourceManagerTemplateDeployment@3 | Y |
-| AzureRmWebAppDeployment@3                | azureSubscription:Y, dockerRegistryConnection: N |
+| AzureRmWebAppDeployment@3                | Azure Service Connection: Y<br/> Docker Registry service connection: N |
 | AzureRmWebAppDeployment@4                | Y |
 | AzureSpringCloud@0                       | Y |
 | AzureVmssDeployment@0                    | Y |
@@ -73,18 +73,18 @@ Not all pipelines tasks support workload identity. During the preview, no Azure 
 | AzureWebAppContainer@1                   | Y |
 | ContainerBuild@0                         | N |
 | ContainerStructureTest@0                 | N |
-| Docker@0                                 | azureSubscription: y,dockerRegistryConnection: N |
-| Docker@1                                 | azureSubscription: y, azureSubscriptionEndpoint: Y, dockerRegistryConnection: N |
+| Docker@0                                 | Azure Service Connection: Y<br/> Docker Registry service connection: N |
+| Docker@1                                 | Azure Service Connection: Y<br/> Docker Registry service connection: N |
 | Docker@2                                 | 2024 Q2 |
-| DockerCompose@0                          | azureSubscription: Y, dockerRegistryEndpoint: N |
-| HelmDeploy@0                             | Y, [use Azure instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| DockerCompose@0                          | Azure Service Connection: Y<br/> Docker Registry service connection: N |
+| HelmDeploy@0                             | Azure Service Connection: Y<br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
 | InvokeRESTAPI@1                          | Y |
 | JavaToolInstaller@0                      | Y |
 | JenkinsDownloadArtifacts@1               | Y |
 | Kubernetes@0                             | Use Kubernetes@1  |
-| Kubernetes@1                             | azureSubscriptionEndpoint: Y, dockerRegistryEndpoint: N, [use Azure instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| Kubernetes@1                             | Azure Service Connection: Y<br/> Docker Registry service connection: N <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
 | KubernetesManifest@0                     | Use KubernetesManifest@1 |
-| KubernetesManifest@1                     | azureSubscriptionConnection: Y, dockerRegistryEndpoint: N, [use Azure instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| KubernetesManifest@1                     | Azure Service Connection: Y<br/> Docker Registry service connection: N <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
 | Notation@0                               | N |
 | PackerBuild@0                            | 2024 Q2 |
 | PackerBuild@1                            | 2024 Q2 |
