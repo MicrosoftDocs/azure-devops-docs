@@ -1,12 +1,12 @@
 ---
-title: Publish and restore packages with dotnet CLI
+title: Publish and restore NuGet packages with dotnet CLI
 description: How to connect to a feed and use the dotnet CLI to publish and restore NuGet packages
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.service: azure-devops-artifacts
 ms.custom: devx-track-dotnet
 ms.topic: conceptual
-ms.date: 06/28/2022
-monikerRange: '<= azure-devops'
+ms.date: 04/17/2024
+monikerRange: '<=azure-devops'
 "recommendations": "true"
 ---
 
@@ -14,17 +14,17 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, you can publish and restore your NuGet packages to/from your feed and share them with others based on your feed's visibility settings. This article will guide you through setting up your project to publish and restore your packages using the dotnet command-line interface.
+Azure Artifacts enables you to publish and restore your NuGet packages to and from your feed, allowing you to share them with others according to your feed's visibility settings. This guide will walk you through configuring your project to publish and restore packages using the dotnet command-line interface.
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
 - An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
 
-- [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
+- Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
 
-- Download and install [.NET SDK](https://dotnet.microsoft.com/en-us/download).
+- Download and install [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download).
 
 ## Connect to feed
 
