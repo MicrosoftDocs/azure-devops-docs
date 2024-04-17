@@ -8,7 +8,7 @@ ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2023
+ms.date: 04/17/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -30,7 +30,9 @@ When you [create an organization](create-organization.md) in Azure DevOps, you c
 
    :::image type="content" source="media/change-organization-location/organization-settings-geography.png" alt-text="Screenshot showing the geography in Organization settings.":::
 
-[!INCLUDE [pca-prerequisite](includes/pca-prerequisite.md)]
+## Prerequisites
+
+You must be an owner of your organization to change its location. For more information, see [Change the organization owner](change-organization-ownership.md).
 
 ## Change organization geography
 
