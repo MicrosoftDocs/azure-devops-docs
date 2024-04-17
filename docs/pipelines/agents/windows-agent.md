@@ -182,6 +182,7 @@ If you configured the agent to run as a service, it starts automatically. You ca
 > is possible to set up the agent service SID type as [`SERVICE_SID_TYPE_UNRESTRICTED`] via
 > flag or prompt during interactive configuration flow.
 > By default the agent service is configured with `SERVICE_SID_TYPE_NONE`.
+>
 > For more details about [SID](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-identifiers) types please check this [documentation](https://learn.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_sid_info#members).
 
 To restart the agent, right-click the entry and choose **Restart**.
