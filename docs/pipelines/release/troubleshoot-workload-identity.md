@@ -125,7 +125,7 @@ You have two options to resolve the issue:
 
 ### I use a container resource that specifies an instance of Azure Container Registry
 
-[Container resources](/azure/devops/pipelines/process/resources?view#define-a-containers-resource) that are pulled from Azure Container Registry don't support a workload identity federation service connection that's specified in `azureSubscription`.
+[Container resources](/azure/devops/pipelines/process/resources?view#define-a-containers-resource) that are pulled from Azure Container Registry don't support a workload identity federation yet.
 
 ## Error messages
 
