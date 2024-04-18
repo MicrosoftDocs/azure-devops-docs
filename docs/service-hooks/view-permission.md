@@ -15,9 +15,9 @@ ms.date: 04/17/2024
 # Define view permission for a group for ServiceHooks
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-:::image type="content" source="media/permissions/no-permission-service-hooks.png" alt-text="Service hooks page without view permission.":::
+By default, only project administrators have view or edit permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
 
-By default, only project administrators have these permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
+![ServiceHooks page without permission](media/permissions/no-permission-service-hooks.png)
 
 ServiceHooks security namespace id is defined under [List Security Namespaces] (../organizations/security/manage-tokens-namespaces.md#list-security-namespaces) as `cb594ebe-87dd-4fc9-ac2c-6a10a4c92046`
 
@@ -146,7 +146,7 @@ PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b  0                  0
 
 Then, the user can see the service hooks subscriptions
 
-:::image type="content" source="media/permissions/service-hooks-subscriptions-with-permission.png" alt-text="Service hooks page with view permission.":::
+![ServiceHooks page with permission](media/permissions/service-hooks-subscriptions-with-permission.png)
 
 ## Reset permission for the group
 
@@ -168,4 +168,4 @@ PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b  0                  0
 
 Then, the user cannot view to service hooks subscriptions after permission reset.
 
-:::image type="content" source="media/permissions/no-permission-service-hooks.png" alt-text="Service hooks page without view permission.":::
+![ServiceHooks page without permission](media/permissions/no-permission-service-hooks.png)
