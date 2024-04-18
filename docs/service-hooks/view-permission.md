@@ -1,5 +1,5 @@
 ---
-title: Define permission for a group for ServiceHooks
+title: Define view permission for a group for ServiceHooks
 titleSuffix: Azure DevOps ServiceHooks
 description: One of the sample to update permission for ServiceHooks with defining access to a group
 ms.service: azure-devops
