@@ -1,5 +1,5 @@
 ---
-title: Define view permission for a group for ServiceHooks
+title: How to define view permission for a group in ServiceHooks
 titleSuffix: Azure DevOps ServiceHooks
 description: One of the sample to update permission for ServiceHooks with defining access to a group
 ms.service: azure-devops
@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 04/17/2024
 ---
 
-# Define view permission for a group for ServiceHooks
+# How to define view permission for a group in ServiceHooks
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 By default, only project administrators have view or edit permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
