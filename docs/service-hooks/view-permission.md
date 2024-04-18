@@ -115,7 +115,7 @@ PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b  0                  0
 2. Give view access to the group. `--allow-bit` is defined as 1 which is equal to View ServiceHooks subscriptions.
 
 ```
-> az devops security permission update --namespace-id cb594ebe-87dd-4fc9-ac2c-6a10a4c92046 --subject "aadgp.Uy0xLTktMTU1MTM3NDI0NS0xMjA0NDAwOTY5LTI0MDI5ODY0MTMtMjE3OTQwODYxNi0zLTM5NTQxNzM3ODYtMTUyMTA4MTkyNS0yNTQwNTA4MjYzLTMzNDgxNjQxNjg" --token PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b --allow-bit 1
+> az devops security permission update --namespace-id cb594ebe-87dd-4fc9-ac2c-6a10a4c92046 --subject <Group or user descriptor> --token PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b --allow-bit 1
 
 [
   {
@@ -144,6 +144,17 @@ PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b  0                  0
 ]
 ```
 
+3. Get permission token to see your changes
+```
+> az devops security permission list --id cb594ebe-87dd-4fc9-ac2c-6a10a4c92046 --subject <Group or user descriptor> --output table
+
+Token                                                   Effective Allow    Effective Deny
+------------------------------------------------------  -----------------  ----------------
+PublisherSecurity                                       0                  0
+PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b  1                  0
+
+```
+
 Then, the user can see the service hooks subscriptions
 
 ![ServiceHooks page with permission](media/permissions/service-hooks-subscriptions-with-permission.png)
@@ -153,7 +164,7 @@ Then, the user can see the service hooks subscriptions
 If you need to reset permission for group or user, you can call `reset-all`
 
 ```
-> az devops security permission reset-all --id cb594ebe-87dd-4fc9-ac2c-6a10a4c92046 --subject "aadgp.Uy0xLTktMTU1MTM3NDI0NS0xMjA0NDAwOTY5LTI0MDI5ODY0MTMtMjE3OTQwODYxNi0zLTM5NTQxNzM3ODYtMTUyMTA4MTkyNS0yNTQwNTA4MjYzLTMzNDgxNjQxNjg" --token PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b
+> az devops security permission reset-all --id cb594ebe-87dd-4fc9-ac2c-6a10a4c92046 --subject <Group or user descriptor> --token PublisherSecurity/ac515e82-560c-4af8-845b-9f7f968d8e7b
 
 Are you sure you want to reset all explicit permissions for this user/group and token? (y/n): Y
 true
