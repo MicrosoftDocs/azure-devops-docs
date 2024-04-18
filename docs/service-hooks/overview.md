@@ -116,7 +116,7 @@ check out the information on the service that you're interested in.
 A: *Edit subscriptions* and *View subscriptions*. By default, only project administrators 
 have these permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
 
-To grant view permission for a group, you can follow steps under [Define view permission for a group for ServiceHooks](view-permission.md) page.
+To grant view permission for a group, you can follow steps under [How to define view permission for a group in ServiceHooks](view-permission.md) page.
 
 ### Q: What are the security implications of granting *Edit subscriptions* and *View subscriptions* permissions?
 
