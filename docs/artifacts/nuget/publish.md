@@ -1,10 +1,10 @@
 ---
-title: Connect to a feed and publish NuGet packages - NuGet.exe
-description: How to connect to your feed and publish NuGet packages using the command line
+title: Publish and restore NuGet packages with the NuGet CLI
+description: How to connect to your feed and publish NuGet packages using the NuGet CLI
 ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 06/30/2023
+ms.date: 04/18/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, you can publish your NuGet packages to public or private feeds and share them with others based on your feed's visibility settings. This article will guide you through connecting to Azure Artifacts and publishing and restoring your NuGet packages.
+With Azure Artifacts, you can publish your NuGet packages to both public and private feeds, enabling you to share them with others based on your feed's visibility settings. This article will guide you through connecting to your Azure Artifacts feed and publishing and restoring your NuGet packages.
 
 ## Prerequisites
 
