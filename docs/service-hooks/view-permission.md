@@ -19,7 +19,7 @@ By default, only project administrators have view or edit permissions. To grant 
 
 ![ServiceHooks page without permission](media/permissions/no-permission-service-hooks.png)
 
-ServiceHooks security namespace id is defined under [List Security Namespaces] (../organizations/security/manage-tokens-namespaces.md#list-security-namespaces) as `cb594ebe-87dd-4fc9-ac2c-6a10a4c92046`
+ServiceHooks security namespace id is defined under [List Security Namespaces](../organizations/security/manage-tokens-namespaces.md#list-security-namespaces) as `cb594ebe-87dd-4fc9-ac2c-6a10a4c92046`
 
 ## Prerequisites
 1. Install Azure CLI to run `az devops` command. [How to install the Azure CLI](/cli/azure/install-azure-cli)
