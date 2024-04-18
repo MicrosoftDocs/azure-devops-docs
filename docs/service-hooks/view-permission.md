@@ -1,7 +1,7 @@
 ---
 title: How to define view permission for a group in ServiceHooks
 titleSuffix: Azure DevOps ServiceHooks
-description: One of the sample to update permission for ServiceHooks with defining access to a group
+description: An example to define view permission for a group in ServiceHooks
 ms.service: azure-devops
 ms.subservice: azure-devops-service-hooks
 ms.topic: how-to 
