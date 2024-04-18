@@ -27,7 +27,7 @@ The following sections describe the issues and how to resolve them.
 
 ### Review pipeline tasks
 
-Not all pipelines tasks support workload identity. Specifically, only Azure Resource Manager service connection properties on tasks use workload identity federation. The table below lists workload identity federation support for [tasks included with Azure DevOps](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines). For [Task extensions](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&visibilityQuery=all&sortBy=Installs), contact the extension owner for support.
+Not all pipelines tasks support workload identity. Specifically, only Azure Resource Manager service connection properties on tasks use workload identity federation. The table below lists workload identity federation support for [tasks included with Azure DevOps](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines). For tasks installed from the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&visibilityQuery=all&sortBy=Installs), contact the extension publisher for support.
 
 | Task                                     | Workload identity federation support                                                                                            |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------|
