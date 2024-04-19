@@ -88,57 +88,57 @@ With Azure Artifacts, you can publish your NuGet packages to both public and pri
 
 ## Publish packages
 
-Run the following command to publish your packages to your feed. Replace the placeholders with the appropriate information:
+Run the following command to publish your packages to your feed. Replace the placeholders with the relevant information:
 
-```Command
+```CLI
 nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
+```
+
+**Example**: 
+
+```CLI
+nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -ApiKey AZ
 ```
 
 > [!NOTE]
 > The `ApiKey` is required, but you can use any arbitrary value when pushing to Azure Artifacts feeds.
 
-- **Example**:
-
-    ```Command
-    nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -ApiKey AZ
-    ```
-
 ## Publish packages from external sources
 
 1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scope.
 
-1. Add your package source to your nuget.config file. This will add your PAT to your nuget.config file. Store this file in a safe location, and make sure that you don't check it into source control. See [NuGet sources](/nuget/reference/cli-reference/cli-ref-sources) for more details.
+1. Add your package source to your *nuget.config* file. This will add your PAT to your *nuget.config* file. Store this file in a safe location, and make sure that you don't check it into source control.
 
-    ```Command
+    ```CLI
     nuget sources Add -Name <SOURCE_NAME> -Source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -UserName <USER_NAME> -Password <PERSONAL_ACCESS_TOKEN> -config <PATH_TO_NUGET_CONFIG_FILE>
     ```
 
-1. Publish your package. See [NuGet push](/nuget/reference/cli-reference/cli-ref-push) for more details.
+1. Publish your NuGet package to your feed:
 
-    ```Command
+    ```CLI
     nuget push <PACKAGE_PATH> -src <SOURCE_NAME> -ApiKey <ANY_STRING>
     ```
 
-- **Example**:
+**Example**:
 
-    ```Command
-    nuget sources Add -Name "MySource" -Source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -UserName MyUserName -Password YourPersonalAccessToken -config ./nuget.config
-    nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
-    ```
+```CLI
+nuget sources Add -Name "MySource" -Source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -UserName MyUserName -Password YourPersonalAccessToken -config ./nuget.config
+nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
+```
 
 > [!NOTE]
 > If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
 
 ## Restore packages
 
-Run the following command to restore your packages:
+Run the following command in your project directory to restore your packages:
 
-```Command
+```CLI
 nuget.exe restore
 ```
 
 ## Related articles
 
+- [Use packages from NuGet.org](./upstream-sources.md)
 - [Publish packages to NuGet.org](publish-to-nuget-org.md)
-- [Set up upstream sources](../how-to/set-up-upstream-sources.md).
-- [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md).
+- [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
