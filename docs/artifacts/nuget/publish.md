@@ -26,7 +26,65 @@ With Azure Artifacts, you can publish your NuGet packages to both public and pri
 
 ## Connect to feed
 
-[!INCLUDE [](../includes/nuget/nuget-publish-endpoint.md)]
+::: moniker range="azure-devops"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Connect to feed**, and then select **NuGet.exe** from the left navigation pane.
+
+1. Add a *nuget.config* file to your project, in the same folder as your *.csproj* or *.sln* file. Paste the provided XML snippet into your file. The snippet should look like the following:
+
+    - **Organization-scoped feed**:
+    
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<SOURCE_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
+    
+    - **Project-scoped feed**:
+    
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<SOURCE_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020 || azure-devops-2022"
+
+1. Sign in to your Azure DevOps server, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed.
+
+1. Select **Connect to Feed**, and then select **NuGet.exe** from the left navigation pane.
+
+1. Follow the instructions in the **Project setup** section to connect to your feed.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in to your Azure DevOps server, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed.
+
+1. Select **Connect to Feed**, and then select **NuGet** from the left navigation pane.
+
+1. Follow the provided instructions to add your package source URL to your *nuget.config* file.
+
+::: moniker-end
 
 ## Publish packages
 
