@@ -27,17 +27,73 @@ The following sections describe the issues and how to resolve them.
 
 ### Review pipeline tasks
 
-Not all pipelines tasks support workload identity. During the preview, no Azure Marketplace tasks support workload identity service connections.
+Not all pipelines tasks support workload identity. Specifically, only Azure Resource Manager service connection properties on tasks use workload identity federation. The table below lists workload identity federation support for [tasks included with Azure DevOps](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines). For tasks installed from the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&visibilityQuery=all&sortBy=Installs), contact the extension publisher for support.
 
-The following tasks currently don't support workload identity federation:
-
-- AzureCloudPowerShellDeploymentV1
-- AzCopy (AzureFileCopyV1, AzureFileCopyV2, AzureFileCopyV3, AzureFileCopyV4, AzureFileCopyV5)
-- AzureMonitorAlertsV0
-- AzureNLBManagementV1
-- PackerBuild (PackerBuildV0, PackerBuildV1)
-- ServiceFabricComposeDeployV0
-- ServiceFabricDeployV1
+| Task                                     | Workload identity federation support                                                                                            |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| AutomatedAnalysis@0                      | Y |
+| AzureAppServiceManage@0                  | Y |
+| AzureAppServiceSettings@1                | Y |
+| AzureCLI@1                               | Y |
+| AzureCLI@2                               | Y |
+| AzureCloudPowerShellDeployment@1         | Use AzureCloudPowerShellDeployment@2 |
+| AzureCloudPowerShellDeployment@2         | Y |
+| AzureContainerApps@0                     | Y |
+| AzureContainerApps@1                     | Y |
+| AzureFileCopy@1                          | Use AzureFileCopy@6 |
+| AzureFileCopy@2                          | Use AzureFileCopy@6 |
+| AzureFileCopy@3                          | Use AzureFileCopy@6 |
+| AzureFileCopy@4                          | Use AzureFileCopy@6 |
+| AzureFileCopy@5                          | Use AzureFileCopy@6 |
+| AzureFileCopy@6                          | Y |
+| AzureFunctionApp@1                       | Y |
+| AzureFunctionApp@2                       | Y |
+| AzureFunctionAppContainer@1              | Y |
+| AzureFunctionOnKubernetes@0              | Use AzureFunctionOnKubernetes@1 |
+| AzureFunctionOnKubernetes@1              | Azure service connection: Y<br/> Docker Registry service connection: 2024 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| AzureIoTEdge@2                           | Azure service connection: Y<br/> Docker Registry service connection: 2024 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| AzureKeyVault@1                          | Y |
+| AzureKeyVault@2                          | Y |
+| AzureMonitor@0                           | Use AzureMonitor@1 |
+| AzureMonitor@1                           | Y |
+| AzureMysqlDeployment@1                   | Y |
+| AzureNLBManagement@1                     | N |
+| AzurePolicyCheckGate@0                   | Y |
+| AzurePowerShell@2                        | Y |
+| AzurePowerShell@3                        | Y |
+| AzurePowerShell@4                        | Y |
+| AzurePowerShell@5                        | Y |
+| AzureResourceGroupDeployment@2           | Y |
+| AzureResourceManagerTemplateDeployment@3 | Y |
+| AzureRmWebAppDeployment@3                | Azure service connection: Y<br/> Docker Registry service connection: 2024 |
+| AzureRmWebAppDeployment@4                | Y |
+| AzureSpringCloud@0                       | Y |
+| AzureVmssDeployment@0                    | Y |
+| AzureWebApp@1                            | Y |
+| AzureWebAppContainer@1                   | Y |
+| ContainerBuild@0                         | N |
+| ContainerStructureTest@0                 | N |
+| Docker@0                                 | Azure service connection: Y<br/> Docker Registry service connection: 2024 |
+| Docker@1                                 | Azure service connection: Y<br/> Docker Registry service connection: N |
+| Docker@2                                 | 2024 Q2 |
+| Docker@0                                 | Azure service connection: Y<br/> Docker Registry service connection: 2024 |
+| DockerCompose@0                          | Azure service connection: Y<br/> Docker Registry service connection: 2024 |
+| HelmDeploy@0                             | Azure service connection: Y<br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| InvokeRESTAPI@1                          | Y |
+| JavaToolInstaller@0                      | Y |
+| JenkinsDownloadArtifacts@1               | Y |
+| Kubernetes@0                             | Use Kubernetes@1  |
+| Kubernetes@1                             | Azure service connection: Y<br/> Docker Registry service connection: 2024 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| KubernetesManifest@0                     | Use KubernetesManifest@1 |
+| KubernetesManifest@1                     | Azure service connection: Y<br/> Docker Registry service connection: 2024 <br/>[Use Azure service connection instead of Kubernetes service connection](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/) |
+| Notation@0                               | 2024 |
+| PackerBuild@0                            | 2024 |
+| PackerBuild@1                            | 2024 |
+| PublishToAzureServiceBus@1               | PublishToAzureServiceBus@2 will support workload identity federation |
+| PublishToAzureServiceBus@2               | 2024 Q2 |
+| ServiceFabricComposeDeploy@0             | N |
+| ServiceFabricDeploy@1                    | N |
+| SqlAzureDacpacDeployment@1               | Y |
 
 ### Verify that workload identity federation is active
 
@@ -70,7 +126,7 @@ You have two options to resolve the issue:
 
 ### I use a container resource that specifies an instance of Azure Container Registry
 
-[Container resources](/azure/devops/pipelines/process/resources?view#define-a-containers-resource) that are pulled from Azure Container Registry don't support a workload identity federation service connection that's specified in `azureSubscription`.
+[Container resources](/azure/devops/pipelines/process/resources?view#define-a-containers-resource) that are pulled from Azure Container Registry don't support a workload identity federation yet.
 
 ## Error messages
 
