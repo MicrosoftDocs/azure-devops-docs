@@ -67,7 +67,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Code snippets now available in alert details view</td><td>General</td><td>Future</td></tr>
     <td>Final notice of alternate credentials deprecation</td><td>General</td><td>N/A</td></tr>
     <td>Azure Devops OAuth self-service secret rotation</td><td>General</td><td>Future</td></tr>
-    <td>Linked Azure subscription required for GitHub Advanced Security for Azure DevOps enablement</td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
+    <td>Linked Azure subscription required for GitHub Advanced Security for Azure DevOps enablement</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Add link to GitHub commit or pull request (preview)</td><td>Boards</td><td>Future</td></tr>
     <td>New Boards Hub Improvements</td><td>Boards</td><td>Future</td></tr>
     <td>Development and Deployment Controls</td><td>Boards</td><td>Future</td></tr>
@@ -82,7 +82,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
 <tr>
     <td rowspan="6"><a href="2024/sprint-233-update.md" data-raw-source="[19 January 2024](2024/sprint-233-update.md)"> 19 January  2024</a></td>
-    <td>Custom CodeQL queries now supported in GitHub Advanced Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
+    <td>Custom CodeQL queries now supported in GitHub Advanced Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>GitHub Integration - Improved AB# validation is generally available</td><td>Boards</td><td>Future</td></tr>
     <td>Team Automation Rules is generally available</td><td>Boards</td><td>Future</td></tr>
     <td>Update deprecated tasks before January 31</td><td>Pipelines</td><td>Future</td></tr>
@@ -116,7 +116,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
 <tr>
     <td rowspan="5"><a href="2023/sprint-229-update.md" data-raw-source="[26 October 2023](2023/sprint-229-update.md)"> 26 October 2023</a></td>
-    <td>REST API documentation now available for Advanced Security </td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
+    <td>REST API documentation now available for Advanced Security </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Publish Test Results Task</td><td>General</td><td>Future</td></tr>
     <td>Building PRs from forked GitHub repositories</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks</td><td>Artifacts</td><td>Future</td></tr>
@@ -161,7 +161,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
 <tr>
     <td rowspan="8"><a href="2023/sprint-224-update.md" data-raw-source="[11 July 2023](2023/sprint-223-update.md)"> 11 July 2023</a></td>
-    <td>Alert dismissals for dependency scanning alerts in Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>Future</td></tr>
+    <td>Alert dismissals for dependency scanning alerts in Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Copy link to work item</td><td>Boards</td><td>Future</td></tr>
     <td>Kubernetes tasks now support kubelogin</td><td>Pipelines</td><td>2022.1</td></tr>
     <td>Updates to YAML cron schedules</td><td>Pipelines</td><td>N/A</td></tr>
