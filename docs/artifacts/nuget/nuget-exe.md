@@ -1,6 +1,6 @@
 ---
 title: Connect to Azure Artifacts feeds with NuGet CLI
-description: How to connect to an Azure Artifacts feed with NuGet CLI
+description: How to connect to an Azure Artifacts feed with NuGet CLI.
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
@@ -37,7 +37,7 @@ Azure Artifacts enables developers to publish and download NuGet packages from v
 
 1. If this is your first time using Azure Artifacts with NuGet.exe, make sure you've installed the prerequisites, otherwise select **Get the tools** in the top-right corner to install them.
 
-1. Add a *nuget.config* file to your project, place it in the same folder as your *.csproj* or *.sln* file, and then paste the provided snippet into it. The snippet should be structured like this:
+1. Add a *nuget.config* file to your project, place it in the same folder as your *csproj* or *sln* file, and then paste the provided snippet into it. The snippet should be structured like this:
 
     - **Project-scoped feed**:
     
