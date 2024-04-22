@@ -20,7 +20,10 @@ ms.date: 03/15/2024
     :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a new feed in Azure DevOps Services.":::
 
 > [!NOTE]
-> By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
+> 1. By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
+> 2. If 'Project' is selected in the 'Scope' section, then we say that it is a 'Project-scoped feed'.
+     If 'Organization' is selected, then we say that it is a 'Organization-scoped feed'.
+     When creating the .npmrc file, choose the template as per the scope of your feed.
 
 ::: moniker-end
 
@@ -41,7 +44,10 @@ ms.date: 03/15/2024
     :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="A screenshot showing how to create a new feed in Azure DevOps 2022.":::
 
 > [!NOTE]
-> By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
+> 1. By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
+> 2. If 'Project' is selected in the 'Scope' section, then we say that it is a 'Project-scoped feed'.
+     If 'Organization' is selected, then we say that it is a 'Organization-scoped feed'.
+     When creating the .npmrc file, choose the template as per the scope of your feed.
 
 ::: moniker-end
 
@@ -52,7 +58,10 @@ ms.date: 03/15/2024
     :::image type="content" source="../media/create-new-feed-server-2020.png" alt-text="A screenshot showing how to create a new feed in Azure DevOps 2020.":::
 
 > [!NOTE]
-> By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
+> 1. By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
+> 2. If 'Project' is selected in the 'Scope' section, then we say that it is a 'Project-scoped feed'.
+     If 'Organization' is selected, then we say that it is a 'Organization-scoped feed'.
+     When creating the .npmrc file, choose the template as per the scope of your feed.
 
 ::: moniker-end
 
@@ -69,6 +78,9 @@ ms.date: 03/15/2024
     :::image type="content" source="../media/create-new-feed-server-2019.png" alt-text="A screenshot showing how to create a new feed in Azure DevOps 2019.":::
 
 > [!NOTE]
-> By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
+> 1. By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
+> 2. If 'Project' is selected in the 'Scope' section, then we say that it is a 'Project-scoped feed'.
+     If 'Organization' is selected, then we say that it is a 'Organization-scoped feed'.
+     When creating the .npmrc file, choose the template as per the scope of your feed.
 
 ::: moniker-end
