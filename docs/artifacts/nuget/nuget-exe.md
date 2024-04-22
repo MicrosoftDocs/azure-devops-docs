@@ -65,8 +65,6 @@ Azure Artifacts enables developers to publish and download NuGet packages from v
 
 ::: moniker-end
 
-::: moniker-end
-
 ::: moniker range="azure-devops-2020 || azure-devops-2022"
 
 1. Sign in to your Azure DevOps server, and then navigate to your project.
