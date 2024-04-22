@@ -9,18 +9,18 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 10/16/2023
+  ms.date: 04/22/2024
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
-  Learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. FAQs are grouped by the following subjects:
+  Learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. We grouped the FAQs by the following subjects:
   - [General permissions](#general-permissions)
   - [Visual Studio subscriptions](#visual-studio-subscriptions)
   - [User access](#user-access)
   - [Change app access policies](#change-app-access-policies)
-  - [Leave your organization](#leave-organization)
+  - [Organizations](#leave-organization)
   - [Group-based licensing](#group-based-licensing)
   - [Add members to projects](#add-members-to-projects)
   
@@ -65,9 +65,15 @@ sections:
           For more information, see [Look up a project collection administrator](../security/look-up-project-collection-administrators.md).
           
           ::: moniker-end
-          
-          
-          
+      
+      - question: Why can't users access some features?
+        answer: |
+           Q: They might need a different [access level](access-levels.md#supported-access-levels) assigned, in addition to permissions granted through security groups. For example, [Stakeholder access](stakeholder-access.md) access level provides partial support to select features, allowing users to view and modify work items, but not to use all features.
+
+      - question: I accidentally removed my permissions and am unable to grant them again. What should I do?
+        answer: |
+          A: The only way to resolve this scenario is to [Request an increase in permission levels](request-changes-permissions.md).
+
           <a name="visual-studio-subscriptions"></a>
           
   - name: Visual Studio subscriptions
@@ -75,7 +81,7 @@ sections:
       - question: |
           Q: When do I select "Visual Studio/MSDN Subscriber"?
         answer: |
-          A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). Azure DevOps automatically recognizes and validates Visual Studio subscribers who have Azure DevOps as a benefit. You need the email address that's associated with the subscription.
+          A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). Azure DevOps automatically recognizes and validates Visual Studio subscribers who have Azure DevOps as a benefit. You need the email address associated with the subscription.
           
           If the user doesn't have a valid, active Visual Studio subscription, they can work only [as a Stakeholder](../../organizations/security/get-started-stakeholder.md).
           
@@ -91,9 +97,9 @@ sections:
            <a name="ValidateMSDNSubscription"></a>
           
       - question: |
-          Q: Why won't my Visual Studio subscription validate?
+          Q: Why doesn't my Visual Studio subscription validate?
         answer: |
-          A: See [Why won't Azure DevOps recognize my Visual Studio subscription?](/visualstudio/subscriptions/vs-alternate-identity#faq)
+          A: See [Why doesn't Azure DevOps recognize my Visual Studio subscription?](/visualstudio/subscriptions/vs-alternate-identity#faq)
           
           <a name="why-access-changed"></a>
           
@@ -116,14 +122,14 @@ sections:
       - question: |
           Q: What does "Last Access" mean in the All Users view?
         answer: |
-          A: The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/) extension, or you can push code to Azure DevOps from a Git command line or IDE.
+          A: The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *OrganizationName*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/) extension, or you can push code to Azure DevOps from a Git command line or IDE.
           
           <a name="paid-basic-access-join-other-organizations"></a>
           
       - question: |
-          Q: Can a user who has paid for Basic access join other organizations?
+          Q: Can a user who paid for Basic access join other organizations?
         answer: |
-          A: No, a user can join only the organization for which the user has paid for Basic access. But a user can join any organization where free users with Basic access are still available. The user can also join as a user with Stakeholder access for free.
+          A: No, a user can join only the organization for which the user paid for Basic access. But a user can join any organization where free users with Basic access are still available. The user can also join as a user with Stakeholder access for free.
           
           <a name="feature-access"></a>
           
@@ -155,7 +161,7 @@ sections:
         answer: |
           A: A user can lose access for the following reasons (although the user can continue to [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md)):
           
-          *   The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
+          *   The user's Visual Studio subscription expired. Meanwhile, the user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
           
           *   The Azure subscription used for billing is no longer active. All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
           
@@ -177,7 +183,21 @@ sections:
           For more information about permissions states, see [Permission states](../security/about-permissions.md?view=azure-devops&tabs=preview-page&preserve-view=true#permission-states).
           
           <a name="change-app-access-policies"></a>
-          
+      - question: |
+          Q: How do I remove users from Azure DevOps? 
+        answer: |
+          A: See [How to remove users from Azure DevOps](../accounts/delete-organization-users.md).
+      
+      - question: |
+          Q: I added a user to my project. Why can't they see the project?  
+        answer: |
+          A: Verify the user isn't added to a group where the project-level **View project-level information** permission isn't set or is set to **Deny**. To learn more, see [Change project-level permissions](change-project-level-permissions.md).  
+
+      - question: |
+          Q: Why can't guest users search for Microsoft Entra users?
+        answer: |
+          A: By default, [Access via Microsoft Entra FAQs. Microsoft Entra guests can't search the Microsoft Entra ID in the manner required by Azure DevOps](../accounts/faq-azure-access.yml#no-identities).    
+  
   - name: Change app access policies for your organization
     questions:
       - question: |
@@ -197,7 +217,7 @@ sections:
           
           <a name="leave-organization"></a>
           
-  - name: Leave your organization
+  - name: Organizations
     questions:
       - question: |
           Q: How do I remove myself from an organization when the owner isn't available to remove me?
@@ -214,7 +234,12 @@ sections:
               ![Screenshot showing confirmation for leaving the organization.](media/faq/confirm-removal-from-organization.png)
           
           <a name="group-based-licensing"></a>
-          
+
+      - question: |
+          Q: Why can't I create an organization? 
+        answer: |
+          A: Contact your administrator to determine if your organization is using [the Microsoft Entra tenant policy to restrict new organization creation](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+     
   - name: Group-based licensing
     questions:
       - question: |
@@ -226,9 +251,9 @@ sections:
           > ![remove-test-group-group-rule-managing_group-based-licensing](media/faq/remove-test-group-rule.png)
           
       - question: |
-          Q: Will my Azure DevOps or Microsoft Entra group be deleted if I remove its group rule?
+          Q: Will my Azure DevOps or Microsoft Entra group get deleted if I remove its group rule?
         answer: |
-          A: No. Your groups won't be deleted.
+          A: No. Your groups don'g get deleted.
           
       - question: |
           Q: What does the option "Remove <group> from all project level groups" do?
@@ -243,17 +268,17 @@ sections:
           
           See the following examples, showing how the subscriber detection factors into group rules.
           
-          **Example 1**: group rule gives me more access
+          **Example 1**: group rule gives me more access.
           
           If I have a Visual Studio Pro subscription and I'm in a group rule that gives me Basic + Test Plans – what happens?
           
           Expected: I get Basic + Test Plans because what the group rule gives me is greater than my subscription.
           
-          **Example 2**: group rule gives me the same access
+          **Example 2**: group rule gives me the same access.
           
           I have a Visual Studio Test Pro subscription and I'm in a group rule that gives me Basic + Test Plans what happens?
           
-          Expected: I get detected as a Visual Studio Test Pro subscriber, because the access is the same as the group rule, and I'm already paying for the Visual Studio Test Pro, so I wouldn't want to pay again.
+          Expected: I get detected as a Visual Studio Test Pro subscriber, because the access is the same as the group rule, and I'm already paying for the Visual Studio Test Pro, so I don't want to pay again.
           
           <a name="add-members-to-projects"></a>
           
@@ -304,7 +329,7 @@ sections:
           If you're a Microsoft Entra guest, do one of the following steps:
           
           * Have another Azure DevOps admin, who isn't a Microsoft Entra guest, manage the users in Azure DevOps for you. Members of the Project Collection Administrators group inside Azure DevOps can administer users.
-          * Have the Microsoft Entra admin remove your account from the connected directory and re-add it. The admin needs to make you a Microsoft Entra member rather than a guest. See [Can Microsoft Entra B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
+          * Have the Microsoft Entra admin remove your account from the connected directory and readd it. The admin needs to make you a Microsoft Entra member rather than a guest. See [Can Microsoft Entra B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
           * Change the **User Type** of the Microsoft Entra guest by using Microsoft Graph PowerShell. We don't advise using the following process, but it works and allows the user to query Microsoft Entra ID from Azure DevOps  thereafter.
           
           1. [Download and install Microsoft Graph PowerShell](/powershell/microsoftgraph/installation).
