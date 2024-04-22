@@ -93,6 +93,7 @@ Azure Artifacts enables developers to publish and download NuGet packages from v
 
 > [!IMPORTANT]
 > The [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider) requires NuGet `4.8.0.5385` or higher.
+> 
 > For optimal performance, Azure Artifacts recommends using NuGet version `5.5.x` or later as it includes crucial bug fixes related to cancellations and timeouts.
 
 ::: moniker range="azure-devops"
