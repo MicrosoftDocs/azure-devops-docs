@@ -132,11 +132,11 @@ A source control folder or container you configure to help you track file change
 
 ## Role-based permissions
 
-A security model that limits actions based on membership within a role and permissions assigned to that role. For more information, see [About permissions, access, and security groups, Role-based permissions](../../organiztions/security/about-permissions.md#security-roles).
+A security model that limits actions based on membership within a role and permissions assigned to that role. For more information, see [Role-based permissions](../../organizations/security/about-permissions.md#role-based-permissions).
 
 ## Security group
 
-A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps supports many default security groups and the ability to create custom groups. For more information, see [Get started with permissions, access, and security groups](../security/about-permissions.md).
+A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps supports many default security groups and the ability to create custom groups. For more information, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
 
 ## Service account
 
