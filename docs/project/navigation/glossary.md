@@ -33,17 +33,17 @@ Analytics views provide a simplified way to specify the filter criteria for a Po
 
 ## Audit log
 
-Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact, including changes to permissions. For more information, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md).
+Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact, including changes to permissions. For more information, see [Access, export, and filter audit logs](../../organizations/audit/azure-devops-auditing.md).
 
 ::: moniker-end
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into an organization in Azure DevOps. These services/servers typically integrate with and rely upon the security features provided by services such as Active Directory or Microsoft Entra ID. For more information, see [About security, authentication, and authorization](about-security-identity.md).
+Authentication verifies a user's identify based on the credentials provided when they sign into an organization in Azure DevOps. These services/servers typically integrate with and rely upon the security features provided by services such as Active Directory or Microsoft Entra ID. For more information, see [About security, authentication, and authorization](../../organizations/security/about-security-identity.md).
 
 ## Authorization
 
-Authorization is the operation that's performed to verify that the identity that's attempting to connect to a service or server instance has the necessary permissions to access a service, feature, function, object, or method. For more information, see [About security, authentication, and authorization](about-security-identity.md).
+Authorization is the operation that's performed to verify that the identity that's attempting to connect to a service or server instance has the necessary permissions to access a service, feature, function, object, or method. For more information, see [About security, authentication, and authorization](../../organizations/security/about-security-identity.md).
 
 ## Boards (Kanban) 
 An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban overview](../../boards/boards/kanban-overview.md).
@@ -52,7 +52,7 @@ An interactive, electronic sign board that supports visualization of the flow of
 
 ## Conditional access
 
-Conditional access provides support for securing Azure DevOps resources backed by a Microsoft Entra tenant. For example, you can enable multifactor authentication to help protect against the risk of compromised credentials. For more information, see [Manage conditional access to Azure DevOps](../accounts/change-application-access-policies.md).
+Conditional access provides support for securing Azure DevOps resources backed by a Microsoft Entra tenant. For example, you can enable multifactor authentication to help protect against the risk of compromised credentials. For more information, see [Manage conditional access to Azure DevOps](../../organizations/accounts/change-application-access-policies.md).
 
 [!INCLUDE [temp](../../includes/glossary-terms/dashboards.md)] 
 
@@ -71,7 +71,7 @@ A Git repository supports a distributed version control system for tracking chan
 
 ## Inheritance
 
-Permissions that aren't directly allowed or denied for a user, might be inherited. For more information, see [Get started with permissions, access, and security groups](../security/about-permissions.md).   
+Permissions that aren't directly allowed or denied for a user, might be inherited. For more information, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).   
 
 ## Microsoft Authentication Library
 
@@ -81,7 +81,7 @@ The Microsoft Authentication Library (MSAL) enables application developers to ac
 
 Each family of Azure DevOps resources (work items, Git repositories, etc.) is secured using a different namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag, and a set of zero or more ACEs. Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. 
 
-For a list of Azure DevOps namespaces, see [Security namespace and permission reference](namespace-reference.md).  
+For a list of Azure DevOps namespaces, see [Security namespace and permission reference](../../organizations/security/namespace-reference.md).  
 
 [!INCLUDE [temp](../../includes/glossary-terms/notifications.md)]
 
@@ -93,22 +93,22 @@ OAuth 2.0 is an industry-standard protocol for authorization. OAuth 2.0 is suppo
 
 ## Organization owner
 
-The person who created the organization or was later assigned as the organization owner. The organization owner has access to all Azure DevOps features and functions, and can grant access to others to features and functions. To look up or change organization owner, see [Change the organization owner](../accounts/change-organization-ownership.md).
+The person who created the organization or was later assigned as the organization owner. The organization owner has access to all Azure DevOps features and functions, and can grant access to others to features and functions. To look up or change organization owner, see [Change the organization owner](../../organizations/accounts/change-organization-ownership.md).
 
 ::: moniker-end
 
 ## Personal Access Token (PAT)
 
-Personal access tokens (PATs) are alternate passwords that you can use to authenticate into Azure DevOps. To learn how to create and revoke PATs, see [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md). 
+Personal access tokens (PATs) are alternate passwords that you can use to authenticate into Azure DevOps. To learn how to create and revoke PATs, see [Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). 
 
 
 ## Permission
 
-The assignment made to a user or group to use a feature or function. Permissions are assigned to default security groups. For more information, see [Get started with permissions, access, and security groups](../security/about-permissions.md).
+The assignment made to a user or group to use a feature or function. Permissions are assigned to default security groups. For more information, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
 
 ## Permission state
 
-The state assigned to a feature or function to a user's or group's permission. Users have permission to access a feature if their permission is set to **Allow**, **Inherited Allow**, or **System Allow**. They don't have permission when the state is set to **Deny**, **Inherited deny**, **System deny**, or **Not set**. For more information, see [Get started with permissions, access, and security groups](../security/about-permissions.md).
+The state assigned to a feature or function to a user's or group's permission. Users have permission to access a feature if their permission is set to **Allow**, **Inherited Allow**, or **System Allow**. They don't have permission when the state is set to **Deny**, **Inherited deny**, **System deny**, or **Not set**. For more information, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
 
 ## Pipelines 
 
@@ -132,7 +132,7 @@ A source control folder or container you configure to help you track file change
 
 ## Role-based permissions
 
-A security model that limits actions based on membership within a role and permissions assigned to that role. For more information, see [About permissions, access, and security groups, Role-based permissions](about-permissions.md#security-roles).
+A security model that limits actions based on membership within a role and permissions assigned to that role. For more information, see [About permissions, access, and security groups, Role-based permissions](../../organiztions/security/about-permissions.md#security-roles).
 
 ## Security group
 
@@ -154,7 +154,7 @@ An interactive list of work items assigned to the same sprint or iteration path 
 
 ## Stakeholder
 
-A user account granted membership to an organization in an Azure DevOps instance with Stakeholder access. With Stakeholder access, you can add and modify work items, check project status, manage pipelines, and view and manage dashboards. For more information, see [Get started as a Stakeholder](get-started-stakeholder.md).
+A user account granted membership to an organization in an Azure DevOps instance with Stakeholder access. With Stakeholder access, you can add and modify work items, check project status, manage pipelines, and view and manage dashboards. For more information, see [Get started as a Stakeholder](../../organizations/security/get-started-stakeholder.md).
  
 [!INCLUDE [temp](../../includes/glossary-terms/taskboard.md)] 
 
@@ -168,7 +168,7 @@ A security group that is defined when a team is created and automatically popula
 
 ## Tenant
 
-A Microsoft Entra ID used to manage access or billing. For more information, see [Change Microsoft Entra tenant.](../accounts/change-organization-location.md)
+A Microsoft Entra ID used to manage access or billing. For more information, see [Change Microsoft Entra tenant.](../../organizations/accounts/change-organization-location.md)
 
 ::: moniker-end
 
@@ -176,7 +176,7 @@ A Microsoft Entra ID used to manage access or billing. For more information, see
 
 ## Valid users
 
-Valid users are users that Azure DevOps recognizes as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Microsoft Entra group, they're automatically added to one of the valid user groups. For more information, see [Get started with permissions, access, and security groups](about-permissions.md).
+Valid users are users that Azure DevOps recognizes as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Microsoft Entra group, they're automatically added to one of the valid user groups. For more information, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
 
 [!INCLUDE [temp](../../includes/glossary-terms/widgets.md)] 
 
