@@ -445,6 +445,10 @@
     {
       "source_path": "docs/organizations/security/security-glossary.md",
       "redirect_url": "/azure/devops/project/navigation/glossary"
+    },
+    {
+      "source_path": "docs/organizations/security/faq-permissions.yml",
+      "redirect_url": "/azure/devops/organizations/accounts/faq-user-and-permissions-management"
     }
   ]
 }
