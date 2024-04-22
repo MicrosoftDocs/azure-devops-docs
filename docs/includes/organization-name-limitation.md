@@ -3,7 +3,7 @@ ms.topic: include
 ---
 
 > [!IMPORTANT]
-> Adhere to the following guidelines when you create an organization name:
+> Adhere to the following guidelines when you create an organization name.
 > - Use only letters from the English alphabet
 > - Start your organization name with a letter or number
 > - Use letters, numbers, or hyphens after the initial character
@@ -11,4 +11,4 @@ ms.topic: include
 > - End with a letter or number
 >
 > If you use any of the disallowed characters, you get the following error message:
-> VS850015: The specified name is not allowed to be used: {Organization name}
+> VS850015: The specified name is not allowed to be used: {Organization name}.
