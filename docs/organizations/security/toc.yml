@@ -304,9 +304,6 @@
     href: manage-tokens-namespaces.md
   - name: Enable DevSecOps with Azure and GitHub
     href: /devops/devsecops/enable-devsecops-azure-github
-  - name: Security key concepts
-    displayName: definitions, terms, manage, authentication, permission
-    href: security-glossary.md
 - name: Resources
   items:
   - name: Get started
