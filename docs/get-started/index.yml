@@ -12,7 +12,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 09/30/2019 
+  ms.date: 04/22/2024 
   manager: jillfra
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -123,7 +123,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Migrate from TFS to Azure DevOps Services
+          - text: Migrate from Azure DevOps Server to Azure DevOps Services
             url: ../migrate/migration-overview.md
           - text: Migration options
             url: ../migrate/migrate-from-tfs.md
