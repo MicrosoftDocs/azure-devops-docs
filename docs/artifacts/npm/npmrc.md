@@ -377,6 +377,8 @@ If you're running into an E401 error: `code E401 npm ERR! Unable to authenticate
 vsts-npm-auth -config .npmrc -F
 ```
 
+If you are facing on systems which are not Windows (Others), please verify that the PAT is correct, the generate BASE-64 encrypted string and the npmrc files are according to [this section](#tab/other/).
+
 #### Reset vsts-npm-auth
 
 Follow these steps to reset your vsts-npm-auth credentials:
@@ -400,6 +402,11 @@ Follow these steps to reset your vsts-npm-auth credentials:
     ```Cli
     npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
     ```
+
+#### Unable to pushlish packages
+
+If you are running into an `ERR! 403 403 Forbidden`, it might be because a package with the same name and version exists on your account. Even if it is deleted, it will be detected and cause this error.
+To solve this issue, update the version of the package to be published in the package.json file and try again. 
 
 ## Related articles
 
