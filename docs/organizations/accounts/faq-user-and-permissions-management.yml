@@ -68,11 +68,11 @@ sections:
       
       - question: Why can't users access some features?
         answer: |
-           Q: They might need a different [access level](access-levels.md#supported-access-levels) assigned, in addition to permissions granted through security groups. For example, [Stakeholder access](stakeholder-access.md) access level provides partial support to select features, allowing users to view and modify work items, but not to use all features.
+           Q: They might need a different [access level](../security/access-levels.md#supported-access-levels) assigned, in addition to permissions granted through security groups. For example, [Stakeholder access](../security/stakeholder-access.md) access level provides partial support to select features, allowing users to view and modify work items, but not to use all features.
 
       - question: I accidentally removed my permissions and am unable to grant them again. What should I do?
         answer: |
-          A: The only way to resolve this scenario is to [Request an increase in permission levels](request-changes-permissions.md).
+          A: The only way to resolve this scenario is to [Request an increase in permission levels](../security/request-changes-permissions.md).
 
           <a name="visual-studio-subscriptions"></a>
           
@@ -165,7 +165,7 @@ sections:
           
           *   The Azure subscription used for billing is no longer active. All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
           
-          *   The Azure subscription used for billing was removed from your organization. Learn more about [linking your organization](../billing/set-up-billing-for-your-organization-vs.md).
+          *   The Azure subscription used for billing was removed from your organization. For more information, see [Link your organization](../billing/set-up-billing-for-your-organization-vs.md).
           
           *   Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../billing/buy-basic-access-add-users.md). 
           
@@ -191,7 +191,7 @@ sections:
       - question: |
           Q: I added a user to my project. Why can't they see the project?  
         answer: |
-          A: Verify the user isn't added to a group where the project-level **View project-level information** permission isn't set or is set to **Deny**. To learn more, see [Change project-level permissions](change-project-level-permissions.md).  
+          A: Verify the user isn't added to a group where the project-level **View project-level information** permission isn't set or is set to **Deny**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).  
 
       - question: |
           Q: Why can't guest users search for Microsoft Entra users?
@@ -203,7 +203,7 @@ sections:
       - question: |
           Q: How do personal access tokens differ from alternate authentication credentials?
         answer: |
-          A:  Personal access tokens are a more convenient and secure replacement for alternate authentication credentials. You can limit a token's use to a specific lifetime, to an organization, and to [scopes](../../integrate/index.md) of activities that the token authorizes. Learn more about [personal access tokens](use-personal-access-tokens-to-authenticate.md).
+          A:  Personal access tokens are a more convenient and secure replacement for alternate authentication credentials. You can limit a token's use to a specific lifetime, to an organization, and to [scopes](../../integrate/index.md) of activities that the token authorizes. For more information, see [Use personal access tokens](use-personal-access-tokens-to-authenticate.md).
           
       - question: |
           Q: If I deny access to one authentication method in one organization, does that affect all the organizations that I own?
