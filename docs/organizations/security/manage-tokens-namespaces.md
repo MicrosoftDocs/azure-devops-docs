@@ -438,8 +438,5 @@ See [Security namespace and permission reference for Azure DevOps](namespace-ref
 ## Related articles
 
 - [Security namespace and permission reference](namespace-reference.md)
-- [Security Namespaces REST API](/rest/api/azure/devops/security/security%20namespaces)
-- [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
-- [Security glossary](security-glossary.md)
-
- 
+- [Security namespaces REST API](/rest/api/azure/devops/security/security%20namespaces)
+- [Use TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd)

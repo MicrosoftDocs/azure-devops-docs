@@ -441,6 +441,10 @@
     {
       "source_path": "docs/organizations/security/quick-reference-index-security.md",
       "redirect_url": "/azure/devops/organizations/security/index"
+    },
+    {
+      "source_path": "docs/organizations/security/security-glossary.md",
+      "redirect_url": "/azure/devops/project/navigation/glossary"
     }
   ]
 }
