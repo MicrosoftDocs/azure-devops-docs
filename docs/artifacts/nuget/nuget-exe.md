@@ -1,10 +1,10 @@
 ---
-title: Connect to a feed - NuGet.exe
-description: How to connect to an Azure Artifacts feed - NuGet.exe
+title: Connect to Azure Artifacts feeds with NuGet CLI
+description: How to connect to an Azure Artifacts feed with NuGet CLI
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 10/27/2023
+ms.date: 04/22/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -13,15 +13,17 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts allows developers to both publish and download NuGet packages from various sources, including feeds and public registries. You can use it to privately share packages with your team or specific users and also make them publicly accessible, allowing you to share them openly with anyone on the internet. This article will guide you through the process of connecting to your Azure Artifacts feed.
+Azure Artifacts enables developers to publish and download NuGet packages from various sources, including feeds and public registries. You can use private Azure Artifacts feeds to share packages privately with your team or specific users. Additionally, you can create public feeds to make packages publicly accessible, allowing you to share them openly with anyone on the internet. This article will guide you through connecting to your Azure Artifacts feed.
 
 ## Prerequisites
 
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
+
 - Install the [latest NuGet version](https://www.nuget.org/downloads).
 
-- Install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+- Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
 ## Project setup
 
