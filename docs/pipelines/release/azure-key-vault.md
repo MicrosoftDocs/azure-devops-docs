@@ -1,8 +1,8 @@
 ---
 title: Use Azure Key Vault secrets in Azure Pipelines
-description: How to create Azure Key vaults, store secrets, and use those secrets in your Azure Pipelines
+description: How to create Azure Key vaults, store secrets, and use them in your Azure Pipelines.
 ms.topic: tutorial
-ms.date: 05/16/2022
+ms.date: 04/23/2024
 ms.custom: devx-track-azurecli, arm2024
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
@@ -12,7 +12,8 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Azure Key Vault enables developers to securely store and manage secrets such as API keys, credentials or certificates. Azure Key Vault service supports two types of containers: vaults and managed HSM (hardware security module) pools. Vaults support storing software and HSM-backed keys, secrets, and certificates, while managed HSM pools only support HSM-backed keys.
+Azure Key Vault allows developers to securely store and manage sensitive information like API keys, credentials, or certificates. 
+Azure Key Vault service supports two types of containers: vaults and managed HSM (Hardware Security Module) pools. Vaults can store both software and HSM-backed keys, secrets, and certificates, while managed HSM pools exclusively support HSM-backed keys.
 
 In this tutorial, you will learn how to:
 
@@ -24,69 +25,58 @@ In this tutorial, you will learn how to:
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [create one for free](../get-started/pipelines-sign-up.md).
-* An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) if you don't have one already.
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) if you don't have one already.
 
 ## Create an Azure Key Vault
 
-[!INCLUDE [include](../ecosystems/includes/sign-in-azure-cli.md)]
+1. Sign in to the [Azure Portal](https://portal.azure.com/), and then select the [Cloud Shell](/azure/cloud-shell/overview) button in the upper-right corner.
 
 1. If you have more than one Azure subscription associated with your account, use the command below to specify a default subscription. You can use `az account list` to generate a list of your subscriptions.
 
     ```azurecli
-    az account set --subscription <your_subscription_name_or_ID>
+    az account set --subscription <YOUR_SUBSCRIPTION_NAME_OR_ID>
     ```
 
 1. Set your default Azure region. You can use `az account list-locations` to generate a list of available regions.
 
     ```azurecli
-    az config set defaults.location=<your_region>
+    az config set defaults.location=<YOUR_REGION>
     ```
 
-    For example, this command will select the westus2 region:
+1. Create a new resource group.
 
     ```azurecli
-    az config set defaults.location=westus2
+    az group create --name <YOUR_RESOURCE_GROUP_NAME>
     ```
 
-1. Create a new resource group. A resource group is a container that holds related resources for an Azure solution.
-
-    ```azurecli
-    az group create --name <your-resource-group>
-    ```
-
-1. Create a new key vault.
+1. Create a new Azure Key Vault.
 
     ```azurecli
     az keyvault create \
-      --name <your-key-vault> \
-      --resource-group <your-resource-group>
+      --name <YOUR_KEY_VAULT_NAME> \
+      --resource-group <YOUR_RESOURCE_GROUP_NAME>
     ```
 
 1. Create a new secret in your Azure key vault.
 
     ```azurecli
     az keyvault secret set \
-      --name "Password" \
-      --value "mysecretpassword" \
-      --vault-name <your-key-vault-name>
+      --name <YOUR_SECRET_NAME> \
+      --value <YOUR_ACTUAL_SECRET> \
+      --vault-name <YOUR_KEY_VAULT_NAME>
     ```
-
-## Create a project
-
-1. Sign in to your [Azure DevOps organization](https://dev.azure.com/).
-
-1. If you don't have any projects in your organization yet, select **Create a project to get started**. Otherwise, select **New project** in the upper-right corner.
 
 ## Create a repo
 
-We will use YAML to create our pipeline but first we need to create a new repo.
+If you already have your own repository, proceed to the next step. Otherwise, follow the instructions below to create a new repository that we can use to set up our pipeline.
 
-1. Sign in to your Azure DevOps organization and navigate to your project.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Repos**, and then select **Initialize** to initialize a new repo with a README.
 
-    :::image type="content" border="false" source="media/azure-key-vault/initialize-repo.png" alt-text="A screenshot showing how to initialize a repository.":::
+    :::image type="content" border="false" source="media/azure-key-vault/initialize-repo.png" alt-text="A screenshot showing how to initialize a repository with a README file.":::
 
 ## Create a new pipeline
 
