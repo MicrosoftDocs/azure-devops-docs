@@ -208,7 +208,7 @@ Don't save or queue your pipeline just yet. We must first give our pipeline the 
 
 In order to access our Azure Key Vault, we must first set up a service principal to give access to Azure Pipelines. Follow [this guide](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) to create your service principal and then proceed with the next steps in this section.
 
-1. Navigate to [Azure portal](https://azure.microsoft.com/).
+1. Navigate to [Azure portal](https://portal.azure.com/).
 
 1. Use the search bar to search for the key vault you created earlier.
 
