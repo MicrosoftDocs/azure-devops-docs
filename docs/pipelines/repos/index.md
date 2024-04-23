@@ -11,13 +11,11 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+Azure Pipelinesand  Azure DevOps Server integrate with a number of version control systems. When you use any of these version control systems, you can configure a pipeline to build, test, and deploy your application.
 
+YAML pipelines are were introduced in Azure DevOps Server 2019 and in Azure Pipelines. YAML pipelines only work with certain version control systems. The following table shows all the supported version control systems and the ones that support YAML pipelines.
 
-Azure Pipelines, Azure DevOps Server, and TFS integrate with a number of version control systems. When you use any of these version control systems, you can configure a pipeline to build, test, and deploy your application.
-
-YAML pipelines are a new form of pipelines that have been introduced in Azure DevOps Server 2019 and in Azure Pipelines. YAML pipelines only work with certain version control systems. The following table shows all the supported version control systems and the ones that support YAML pipelines.
-
-| Repository type | Azure Pipelines (YAML) | Azure Pipelines (classic editor) | Azure DevOps Server 2022, 2020, 2019, TFS 2018 |
+| Repository type | Azure Pipelines (YAML) | Azure Pipelines (classic editor) | Azure DevOps Server 2022, 2020, 2019 |
 |---|---|---|---|
 | [Azure Repos Git](azure-repos-git.md) | Yes | Yes | Yes |
 | [Azure Repos TFVC](tfvc.md) | No | Yes | Yes |
