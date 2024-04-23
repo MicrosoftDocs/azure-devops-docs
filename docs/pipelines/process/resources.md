@@ -253,7 +253,9 @@ Artifacts from the `pipeline` resource get downloaded to `$(PIPELINE.WORKSPACE)/
 
 ### Pipeline resource variables
 
-In each run, the metadata for a pipeline resource is available to all jobs in the form of [predefined variables](../build/variables.md). The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime.
+In each run, the metadata for a pipeline resource is available to all jobs in the form of [predefined variables](../build/variables.md). The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime. 
+
+To learn more about variable syntax, see [Define variables](variables.md). 
 
 ## [Schema](#tab/schema)
 
