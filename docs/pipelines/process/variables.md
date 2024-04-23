@@ -578,7 +578,7 @@ To share variables across multiple pipelines in your project, use the web interf
 Some tasks define output variables, which you can consume in downstream steps, jobs, and stages.
 In YAML, you can access variables across jobs and stages by using [dependencies](expressions.md#dependencies). 
 
-When referencing matrix jobs in downstream tasks, you'll need to use a different syntax. See [Set a multi-job output variable](#set-a-multi-job-output-variable).  
+When referencing matrix jobs in downstream tasks, you'll need to use a different syntax. See [Set a multi-job output variable](#set-a-multi-job-output-variable). You also need to use a different syntax for variables in deployment jobs. See [Support for output variables in deployment jobs](deployment-jobs.md#support-for-output-variables). 
 
 ::: moniker-end
 
