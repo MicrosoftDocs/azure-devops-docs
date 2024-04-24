@@ -131,7 +131,7 @@ the **tscon** command as described above.
 
 > [!NOTE]
 > The screen resolution utility task runs on the unified build/release/test agent, and cannot be used with
-> the deprecated [Run Functional Tests task](/azure/devops/pipelines/tasks/reference/run-visual-studio-testsusing-test-agent-v1).
+> the deprecated [Run Functional Tests task](/azure/devops/pipelines/tasks/reference/run-visual-studio-testsusing-test-agent-v1). The resolution util task also does not work for Azure virtual machines. 
 
 ## Troubleshooting failures in UI tests
 
