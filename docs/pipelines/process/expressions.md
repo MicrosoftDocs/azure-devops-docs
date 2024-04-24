@@ -669,7 +669,7 @@ The syntax of referencing output variables with dependencies varies depending on
    :::column-end:::
    :::column span="2":::
     Reference an output variable in a different job in the same stage in `stages`. 
-    - Syntax: `and(succeeded(), eq(dependencies.<stage-name>.outputs['<step-name>.<variable-name>'], 'true'))`
+    - Syntax: `and(succeeded(), eq(dependencies.<job-name>.outputs['<step-name>.<variable-name>'], 'true'))`
     - Example: `and(succeeded(), eq(dependencies.A.outputs['printvar.shouldrun'], 'true'))` 
    :::column-end:::
 :::row-end:::
