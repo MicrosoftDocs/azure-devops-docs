@@ -99,6 +99,30 @@ To access our Azure Key Vault, we need to set up a service principal to grant ac
 > [!NOTE]
 > Azure Key Vaults that use Azure role-based access control (Azure RBAC) are not supported.
 
+## Create a service connection
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Project settings** > **Service connections**, and then select **New service connection** to create a new service connection.
+
+1. Select **Azure Resource Manager**, and then select **Next**.
+
+1. Select **Service principal (manual)**, and then select **Next**.
+
+1. Select **Azure Cloud** for **Environment** and **Subscription** for the **Scope Level**, then enter your **Subscription Id** and your **Subscription Name**.
+
+1. Fill out the following fields with the information you obtained when creating the service principal, and then select **Verify** when you're done: 
+
+    - **Service Principal Id**: Your service principal **appId**.
+    - **Service Principal key**: Your service principal **password**.
+    - **Tenant ID**: Your service principal **tenant**.
+
+1. Once the verification has succeeded, provide a name and description (optional) for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
+
+1. Select **Verify and save** when you're done.
+
+    :::image type="content" source="media/manual-service-principal-service-connection.png" alt-text="A screenshot showing how to create a new Azure Resource Manager service connection using service principal.":::
+
 ## Create a new pipeline
 
 #### [YAML](#tab/yaml)
@@ -212,8 +236,6 @@ To access our Azure Key Vault, we need to set up a service principal to grant ac
     :::image type="content" border="false" source="media/publish-artifacts.png" alt-text="A screenshot showing how to set up the publish artifacts task.":::
 
 ***
-
-Don't save or queue your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your browser tab open, we will resume the remaining steps once we set up the key vault permissions.
 
 ## Run and review the pipeline
 
