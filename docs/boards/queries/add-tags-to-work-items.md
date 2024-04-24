@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/23/2024
+ms.date: 04/24/2024
 ---
 
 # Add work item tags to categorize and filter lists and boards  
@@ -80,7 +80,7 @@ For example, here we query for all work items that are tagged either ```Web``` o
 <a id="no-tags"></a>
 
 > [!NOTE]
-> The ability to query for work items that don't have any tags attached to them is not a supported feature. If you'd like to up vote the request to support this feature, you can do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 
+> You can't query for work items that don't have any tags attached to them. If you'd like to up vote the request to support this feature, you can do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 
 
 <a id="show-tags"></a>
 
