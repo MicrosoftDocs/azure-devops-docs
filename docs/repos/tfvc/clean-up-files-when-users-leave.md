@@ -34,4 +34,4 @@ To perform these procedures, you must be a member of the **Azure DevOps Administ
 
 ## Related articles
 
-- [Remove user accounts](../../organizations/security/remove-users-prohibit-access.md)
+- [Remove user accounts](/azure/active-directory/add-users-azure-active-directory#delete-a-user?toc=/azure/devops/organizations/security/toc.json)
