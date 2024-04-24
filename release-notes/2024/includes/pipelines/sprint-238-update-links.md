@@ -5,6 +5,6 @@ ms.date: 5/1/2024
 ms.topic: include
 ---
 
-- [Edit queue build configuration permission](#edit-queue-build-configuration-permission)
-- [TFX validates whether a task is using an End of Life Node runner](#tfx-validates-whether-a-task-is-using-an-end-of-life-node-runner)
+- [macOS-14 is available in preview, macOS-11 will be retired June 2024](#macos-14-is-available-in-preview-macos-11-will-be-retired-june-2024)
+
 
