@@ -29,6 +29,16 @@ In this tutorial, you will learn how to:
 
 - An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) if you don't have one already.
 
+## Create a repo
+
+If you already have your own repository, proceed to the next step. Otherwise, follow the instructions below to initialize your repository. We will use this Azure Repo to set up our pipeline.
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Repos**, and then select **Initialize** to initialize the main branch with a README.
+
+    :::image type="content" border="false" source="media/azure-key-vault/initialize-repo.png" alt-text="A screenshot showing how to initialize a repository with a README file.":::
+
 ## Create an Azure Key Vault
 
 1. Sign in to the [Azure Portal](https://portal.azure.com/), and then select the [Cloud Shell](/azure/cloud-shell/overview) button in the upper-right corner.
@@ -68,15 +78,26 @@ In this tutorial, you will learn how to:
       --vault-name <YOUR_KEY_VAULT_NAME>
     ```
 
-## Create a repo
+## Set up key vault access policies
 
-If you already have your own repository, proceed to the next step. Otherwise, follow the instructions below to create a new repository that we can use to set up our pipeline.
+To access our Azure Key Vault, we need to set up a service principal to grant access to Azure Pipelines. Follow [this guide](/cli/azure/azure-cli-sp-tutorial-1#create-a-service-principal) to create a service principal with Azure CLI, and then continue with the next steps in this section.
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Navigate to [Azure portal](https://azure.microsoft.com/), and then use the search bar to find the key vault you created earlier.
 
-1. Select **Repos**, and then select **Initialize** to initialize a new repo with a README.
+    :::image type="content" border="false" source="media/azure-key-vault/search-azure-key-vault.png" alt-text="A screenshot showing how to search for your Azure Key Vault.":::
 
-    :::image type="content" border="false" source="media/azure-key-vault/initialize-repo.png" alt-text="A screenshot showing how to initialize a repository with a README file.":::
+1. Select **Access policies**, and then select **Create** to create a new policy.
+
+1. Under **Secret permissions**, select **Get** and **List**.
+
+1. Select **Next**, and then select the service principal you created earlier. A service principal is an object that represents an application or service that's requesting access to Azure resources.
+
+1. Select **Next**, and then **Next** once more.
+
+1. Review your policies, and then select **Create** when you're done.
+
+> [!NOTE]
+> Azure Key Vaults that use Azure role-based access control (Azure RBAC) are not supported.
 
 ## Create a new pipeline
 
@@ -193,29 +214,6 @@ If you already have your own repository, proceed to the next step. Otherwise, fo
 ***
 
 Don't save or queue your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your browser tab open, we will resume the remaining steps once we set up the key vault permissions.
-
-## Set up Azure Key Vault access policies
-
-In order to access our Azure Key Vault, we must first set up a service principal to give access to Azure Pipelines. Follow [this guide](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) to create your service principal and then proceed with the next steps in this section.
-
-1. Navigate to [Azure portal](https://azure.microsoft.com/).
-
-1. Use the search bar to search for the key vault you created earlier.
-
-    :::image type="content" border="false" source="media/azure-key-vault/search-azure-key-vault.png" alt-text="A screenshot showing how to search for your Azure Key Vault.":::
-
-1. Under **Settings** Select **Access policies**.
-
-1. Select **Add Access Policy** to add a new policy.
-
-1. For **Secret permissions**, select **Get** and **List**.
-
-1. Select the option to select a service principal and search for the one you created in the beginning of this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
-
-1. Select **Add** to create the access policy, then select **Save** when you are done.
-
-> [!NOTE]
-> Azure Key Vaults that use Azure role-based access control (Azure RBAC) are not supported.
 
 ## Run and review the pipeline
 
