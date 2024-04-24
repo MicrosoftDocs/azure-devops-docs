@@ -68,14 +68,14 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 
 To query work items based on tags, add a clause for each tag you want to use to support your query.
 
+[!INCLUDE [temp](../includes/query-clause-tip.md)]
+
 You can use the **Contains** or **Does Not Contain** operators. Tags that start with the `@` character can't be used in a work item query as the query editor interprets the `@` character as a macro. For more information, see [Create managed queries](using-queries.md). 
 
 For example, here we query for all work items that are tagged either ```Web``` or ```Service```. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Query Editor to query on tags.](media/add-tags/query-tags-add-or.png) 
-
-[!INCLUDE [temp](../includes/query-clause-tip.md)]
 
 <a id="no-tags"></a>
 
