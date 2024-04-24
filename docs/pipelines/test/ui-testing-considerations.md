@@ -4,8 +4,6 @@ description: Continuous testing. Things to consider when running UI tests and FA
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
 ms.topic: conceptual
 ms.custom: continuous-test
-ms.author: rbatra
-author: raviLiftr
 ms.date: 12/07/2018
 monikerRange: '<= azure-devops'
 ---
