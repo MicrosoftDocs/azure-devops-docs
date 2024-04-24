@@ -301,7 +301,7 @@ For examples that illustrate how to restrict modification of work items or selec
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Remove user accounts](remove-users-prohibit-access.md)
+> [Remove user accounts](/azure/active-directory/add-users-azure-active-directory#delete-a-user?toc=/azure/devops/organizations/security/toc.json)
 
 ## Related articles
 
