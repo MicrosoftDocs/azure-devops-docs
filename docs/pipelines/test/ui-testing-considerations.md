@@ -4,7 +4,7 @@ description: Continuous testing. Things to consider when running UI tests and FA
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
 ms.topic: conceptual
 ms.custom: continuous-test
-ms.date: 12/07/2018
+ms.date: 04/25/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When running automated tests in the CI/CD pipeline, you may need a special configuration
-in order to run UI tests such as Selenium, Appium or Coded UI tests. This topic describes
+in order to run UI tests such as Selenium, Appium, or Coded UI tests. This article describes
 the typical considerations for running UI tests. 
 
 
@@ -27,12 +27,12 @@ Familiarize yourself with [agents](../agents/agents.md) and [deploying an agent 
 When running Selenium tests for a web app, you can launch the browser in two ways:
 
 1. **Headless mode**. In this mode, the browser runs as normal but without any UI
-   components being visible. While this mode is obviously not useful for browsing the web,
-   it is useful for running automated tests in an unattended manner in a CI/CD pipeline.
+   components being visible. While this mode is not useful for browsing the web,
+   it's useful for running automated tests in an unattended manner in a CI/CD pipeline.
    [Chrome](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md)
    and [Firefox](https://developer.mozilla.org/docs/Mozilla/Firefox) browsers can be run in headless mode.
 	
-   This mode generally consumes less resources on the machine because the UI is not
+   This mode generally consumes less resources on the machine because the UI isn't
    rendered and tests run faster. As a result, potentially more tests can be run in
    parallel on the same machine to reduce the total test execution time. 
 
@@ -44,7 +44,7 @@ When running Selenium tests for a web app, you can launch the browser in two way
 1. **Visible UI mode**. In this mode, the browser runs normally and the UI components are visible.
    When running tests in this mode on Windows, [special configuration of the agents](#visible-ui-mode) is required.
 
-If you are running UI tests for a desktop application, such as
+If you're running UI tests for a desktop application, such as
 [Appium tests using WinAppDriver](https://github.com/Microsoft/WinAppDriver) or Coded UI tests,
 a [special configuration of the agents](#visible-ui-mode) is required.
 
@@ -66,36 +66,36 @@ A special configuration is required for agents to run UI tests in visible UI mod
 
 ### Visible UI testing using Microsoft-hosted agents
 
-Microsoft-hosted agents are pre-configured for UI testing and UI tests for both
+Microsoft-hosted agents are preconfigured for UI testing and UI tests for both
 web apps and desktop apps. Microsoft-hosted agents are also
-pre-configured with [popular browsers and matching web-driver versions](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md)
+preconfigured with [popular browsers and matching web-driver versions](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md)
 that can be used for running Selenium tests.
 The browsers and corresponding web-drivers are updated on a periodic basis.
-To learn more about running Selenium tests, see [UI test with Selenium](continuous-test-selenium.md)
+To learn more about running Selenium tests, see [UI test with Selenium](continuous-test-selenium.md).
 
 <a name="self-hosted-agents"></a>
 
 ### Visible UI testing using self-hosted Windows agents
 
 Agents that are configured to run as service can run Selenium tests only with headless browsers.
-If you are not using a headless browser, or if you are running UI tests for desktop apps,
-Windows agents _must_ be configured to run as an interactive process with auto-logon enabled.
+If you aren't using a headless browser, or if you're running UI tests for desktop apps,
+Windows agents _must_ be configured to run as an interactive process with autologon enabled.
 
 When configuring agents, select 'No' when prompted to run as a service.
-Subsequent steps then allow you to configure the agent with auto-logon.
+Subsequent steps then allow you to configure the agent with autologon.
 When your UI tests run, applications and browsers are launched in the
-context of the user specified in the auto-logon settings.
+context of the user specified in the autologon settings.
 
 If you use Remote Desktop to access the computer on which an agent is running
-with auto-logon, simply disconnecting the Remote Desktop causes the computer
-to be locked and any UI tests that run on this agent may fail.
-To avoid this, use the [tscon](/windows-server/administration/windows-commands/tscon)
+with autologon, simply disconnecting the Remote Desktop causes the computer
+to be locked and any UI tests that run on this agent could fail.
+To avoid failure, use the [tscon](/windows-server/administration/windows-commands/tscon)
 command on the remote computer to disconnect from Remote Desktop. For example: 
 
 `%windir%\System32\tscon.exe 1 /dest:console`
 
 In this example, the number '1' is the ID of the remote desktop session.
-This number may change between remote sessions, but can be viewed in Task Manager. 
+This number could change between remote sessions, but can be viewed in Task Manager. 
 Alternatively, to automate finding the current session ID, create a batch file
 containing the following code:
 
@@ -110,21 +110,21 @@ Running the batch file from this shortcut disconnects from the remote desktop bu
 
 ## Provisioning agents in Azure VMs for UI testing 
 
-If you are provisioning virtual machines (VMs) on Azure, agent configuration for UI testing is available
+If you're provisioning virtual machines (VMs) on Azure, agent configuration for UI testing is available
 through the [Agent artifact for DevTest Labs](https://github.com/Azure/azure-devtestlab/tree/master/Artifacts/windows-vsts-build-agent).
 
 ![agentArtifactDTL](media/agentartifact-dtl.png)
 
 ## Setting screen resolution
 
-Before running UI tests you may need to adjust the screen resolution so that apps render correctly.
+Before running UI tests, you might need to adjust the screen resolution so that apps render correctly.
 For this, a [screen resolution utility task](https://marketplace.visualstudio.com/items?itemName=ms-autotest.screen-resolution-utility-task)
 is available from Marketplace. Use this task in your pipeline to set the screen resolution
 to a value that is supported by the agent machine. By default, this utility sets the resolution to
 the optimal value supported by the agent machine.
 
 If you encounter failures using the screen resolution task, ensure that the agent is configured
-to run with auto-logon enabled and that all remote desktop sessions are safely disconnected using
+to run with autologon enabled and that all remote desktop sessions are safely disconnected using
 the **tscon** command as described above.
 
 > [!NOTE]
@@ -164,15 +164,15 @@ Use the `TestContext.AddTestAttachment()` method available in NUnit 3.7 or highe
 ---
 
 If you use the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2)
-to publish results, test result attachments can only be published if you are using
+to publish results, test result attachments can only be published if you're using
 the VSTest (TRX) results format or the [NUnit 3.0 results](https://github.com/nunit/docs/wiki/Test-Result-XML-Format)
 format. 
 
-Result attachments cannot be published if you use JUnit or xUnit test results. This is because these test result formats do not have a formal definition for attachments in the results schema. You can use one of the below approaches to publish test attachments instead.
+Result attachments can't be published if you use JUnit or xUnit test results. This is because these test result formats don't have a formal definition for attachments in the results schema. You can use one of the below approaches to publish test attachments instead.
 
-* If you are running tests in the build (CI) pipeline, you can use the
-  [Copy and Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/copy-publish-build-artifacts-v1) task to publish any additional files created in your tests.
-  These will appear in the **Artifacts** page of your build summary. 
+* If you're running tests in the build (CI) pipeline, you can use the
+  [Copy and Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/copy-publish-build-artifacts-v1) task to publish any more files created in your tests.
+  These appear in the **Artifacts** page of your build summary. 
 
 * Use the REST APIs to publish the necessary attachments. Code samples can be found
   in [this GitHub repository](https://github.com/ManojBableshwar/VstsTestRestApiSamples/blob/master/PublishResultsFromCsvWithAttachments/PublishResultsFromCsvWithAttachments.cs).
