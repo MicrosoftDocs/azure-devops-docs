@@ -55,36 +55,6 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 
 * Avoiding the need to store production secrets in Azure Pipelines service connections. 
 
-This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. At the top you will find a list of our large multi-quarter initiatives and the features that they break down into. Further down you will find the full list of significant features we have planned. 
-
-Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans and are subject to change. The Timeframe columns reflect when we expect the feature to be available on Azure DevOps Services; the Server columns reflect when we expect the feature to ship in Azure DevOps Server. 
-
-## Initiatives
-
-### GitHub Advanced Security for Azure DevOps
-
-GitHub Advanced Security (GHAS) for Azure DevOps is now generally available. Any project collection administrator can now enable Advanced Security for their organization, projects and repos from the Project Settings or Organization Settings. You can learn more about how to configure GitHub Advanced Security for Azure DevOps in our [documentation](/azure/devops/repos/security/configure-github-advanced-security-features). 
-
-New capabilities we expect to deliver in the upcoming semester include: 
-
-* Similar to GHAS-for-GitHub, any third-party open source or commercial security analysis pipeline task that generates results in conforming SARIF format can display those results in the Advanced Security Code Scanning alerts hub. This gives you a single pane of glass natively built into Azure DevOps to view your repository code security alerts from all your analysis tools. 
-
-* Detection and blocking of more kinds of secrets.
-
- 
-### Minimizing the risks associated with credential theft
-
-Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Microsoft Entra ID (formerly Azure Active Directory) access tokens. These mechanisms are not created equally from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure. To minimize the risks of credential theft, we will focus our efforts in the upcoming quarters in the following areas: 
-
-* Enable administrators to improve authentication security through control plane policies. 
-
-* Reducing the need for PATs and other stealable secrets by adding support for more secure alternatives. 
-
-* Deepening Azure DevOps' integration with Microsoft Entra ID to better support its various security features. 
-
-* Avoiding the need to store production secrets in Azure Pipelines service connections. 
-
-
 <table>
     <thead>
         <tr>
