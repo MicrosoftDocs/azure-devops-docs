@@ -734,7 +734,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-3p-sarif" data-raw-source="[Third-party SARIF support](/azure/devops/release-notes/roadmap/2024/ghazdo-3p-sarif)">Third-party SARIF support</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/3p-sarif" data-raw-source="[Third-party SARIF support](/azure/devops/release-notes/roadmap/2024/ghazdo/3p-sarif)">Third-party SARIF support</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>N/A</td>
       </tr>
