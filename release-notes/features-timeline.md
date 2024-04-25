@@ -804,7 +804,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/general/pr-search" data-raw-source="[PR search](/azure/devops/release-notes/roadmap/2024/general/PR-search)">PR search</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/pr-search" data-raw-source="[PR search](/azure/devops/release-notes/roadmap/2024/pr-search)">PR search</a></td>
         <td>General</td>
         <td>Future</td>
       </tr>   
