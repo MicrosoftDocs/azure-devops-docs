@@ -32,11 +32,15 @@ Each feature is linked to an article where you can learn more about a particular
 
 GitHub Advanced Security (GHAS) for Azure DevOps is now generally available. Any project collection administrator can now enable Advanced Security for their organization, projects and repos from the Project Settings or Organization Settings. You can learn more about how to configure GitHub Advanced Security for Azure DevOps in our [documentation](/azure/devops/repos/security/configure-github-advanced-security-features). 
 
-New capabilities we expect to deliver in the upcoming semester include: 
+New capabilities we expect to deliver include: 
 
 * Similar to GHAS-for-GitHub, any third-party open source or commercial security analysis pipeline task that generates results in conforming SARIF format can display those results in the Advanced Security Code Scanning alerts hub. This gives you a single pane of glass natively built into Azure DevOps to view your repository code security alerts from all your analysis tools. 
 
-* Detection and blocking of more kinds of secrets.
+* Bringing contextual comments to pull requests containing newly introduced Advanced Security findings
+
+* Determining Validity for detected partner secrets
+
+* Bringing Dependabot Security Updates to Azure DevOps to automatically fix detected Dependency Scanning vulnerabilities 
 
  
 ### Minimizing the risks associated with credential theft
@@ -657,7 +661,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="21"><strong>2024 Q2</strong></td>
+      <td rowspan="22"><strong>2024 Q2</strong></td>
        <td>
          <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
        </td>
@@ -730,22 +734,12 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
          <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings" data-raw-source="[In-product recommendations for secure settings](/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td>
-        <td>Pipelines</td>
-        <td>Future</td>
-      </tr>
-      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages" data-raw-source="[Manual queuing of stages](/azure/devops/release-notes/roadmap/2024/manual-queuing-of-stages)">Manual queuing of stages</a></td>
          <td>Pipelines</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-concurrency" data-raw-source="[Stage-level concurrency](/azure/devops/release-notes/roadmap/2024/stage-conncurrency)">Stage-level concurrency</a></td>
-         <td>Pipelines</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
          <td>Pipelines</td>
          <td>Future</td>
       </tr>
@@ -758,6 +752,11 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td><a href="/azure/devops/release-notes/roadmap/2023/code-coverage-policy" data-raw-source="[Code coverage policy at a folder level](/azure/devops/release-notes/roadmap/2022/code-coverage-policy)">Code coverage policy at a folder level</a></td>
         <td>Test Plans</td>
         <td>Future</td>
+      </tr>
+       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation" data-raw-source="[Pull Request Annotation](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation)">Newly introduced findings are highlighted in PR comments</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+        <td>N/A</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo-improved-generic-secrets" data-raw-source="[Improved secret detection](/azure/devops/release-notes/roadmap/2024/ghazdo-improved-generic-secrets)">Improved secret detection</a></td>
@@ -774,7 +773,17 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>N/A</td>
       </tr>
-      <td rowspan="27"><strong>Future</strong></td>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[DependaBot Security Update Support](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Dependabot Security Update Support</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+        <td>N/A</td>
+      </tr>
+      <td rowspan="28"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -841,6 +850,11 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Checks extensibility](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
          <td>Pipelines</td>
          <td>Future</td>
       </tr>
