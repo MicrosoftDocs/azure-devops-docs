@@ -99,6 +99,28 @@ To access our Azure Key Vault, we need to set up a service principal to grant ac
 > [!NOTE]
 > Azure Key Vaults that use Azure role-based access control (Azure RBAC) are not supported.
 
+## Add role assignment
+
+In the next step, we'll create an ARM service connection using service principal. Before we can verify the connection, we need to grant the service principal **Read** access at the subscription level:
+
+1. Navigate to [Azure portal](https://azure.microsoft.com/)
+
+1. Select **Subscriptions** from the left navigation panel, and then find and select your subscription.
+
+1. Select **Access control**, and then select **Add** > **Add role assignment**.
+
+    :::image type="content" border="false" source="media/add-service-principal-role-assignment.png" alt-text="A screenshot showing how to add a new role assignment at the subscription level.":::
+
+1. Select **Reader** under the **Role** tab, and then select **Next**.
+
+1. Select **User, group, or service principal**, and then select **Select members**. 
+
+    :::image type="content" border="false" source="media/azure-add-members-to-role-assignment.png" alt-text="A screenshot showing how to add members to role assignment in Azure.":::
+
+1. Use the search bar to find your service principal, and then select the "+" sign to select it, then click on the **Select** button.
+ 
+1. Select **Review + assign**, review your settings, and then select **Review + assign** once more to confirm your choices and add the role assignment.
+
 ## Create a service connection
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
