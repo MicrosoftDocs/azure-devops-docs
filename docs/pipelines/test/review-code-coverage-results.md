@@ -86,7 +86,7 @@ The code coverage artifacts published during the build can be viewed under the *
 
 ## Tasks
 
-* [Publish Code Coverage Results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) publishes code coverage results to Azure Pipelines or TFS,
+* [Publish Code Coverage Results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) publishes code coverage results to Azure Pipelines or TFS,
   which were produced by a build in [Cobertura](https://cobertura.github.io/cobertura/) or [JaCoCo](https://www.eclemma.org/jacoco/) format. 
 * Built-in tasks such as [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2),
   [.NET Core](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2), [Ant](/azure/devops/pipelines/tasks/reference/ant-v1), [Maven](/azure/devops/pipelines/tasks/reference/maven-v3),
