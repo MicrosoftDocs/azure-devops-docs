@@ -512,7 +512,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="22"><strong>2024 Q2</strong></td>
+      <td rowspan="21"><strong>2024 Q2</strong></td>
        <td>
          <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
        </td>
@@ -561,11 +561,6 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
       </tr>
       </tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16" data-raw-source="[All in-the-box tasks run on Node 16](/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16)">All in-the-box tasks run on Node 16</a></td>
-         <td>Pipelines</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/install-old-runner" data-raw-source="[Ability to download and install old runners on self-hosted agents](/azure/devops/release-notes/roadmap/2023/install-old-runner)">Ability to download and install old runners on self-hosted agents</a></td>
          <td>Pipelines</td>
          <td>Future</td>
       </tr>
