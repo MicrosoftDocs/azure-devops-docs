@@ -44,7 +44,7 @@ Dependency scanning supports both direct and transitive dependencies for all sup
 |  Gradle | Java  | `*.lockfile`  | 
 |  Maven | Java  | `pom.xml`  | 
 |  npm | JavaScript  | `package-lock.json`, `package.json`, `npm-shrinkwrap.json`, `lerna.json` | 
-|  NuGet | C# | `*.packages.config`,  `*.project.assets (*.csproj)` | 
+|  NuGet | C# | `*.packages.config`,  `*.project.assets`, `*.csproj` | 
 |  pip | Python  | `setup.py`, `requirements.txt`  | 
 |  pnpm | JavaScript  | `package.json` | 
 |  RubyGems | Ruby  |  `Gemfile.lock` | 
