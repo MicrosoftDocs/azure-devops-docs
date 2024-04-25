@@ -36,11 +36,11 @@ New capabilities we expect to deliver include:
 
 * Similar to GHAS-for-GitHub, any third-party open source or commercial security analysis pipeline task that generates results in conforming SARIF format can display those results in the Advanced Security Code Scanning alerts hub. This gives you a single pane of glass natively built into Azure DevOps to view your repository code security alerts from all your analysis tools. 
 
-* Bringing contextual comments to pull requests containing newly introduced Advanced Security findings
+* Bringing contextual comments to pull requests containing newly introduced Advanced Security findings.
 
-* Determining Validity for detected partner secrets
+* Determining Validity for detected partner secrets.
 
-* Bringing Dependabot Security Updates to Azure DevOps to automatically fix detected Dependency Scanning vulnerabilities 
+* Bringing Dependabot Security Updates to Azure DevOps to automatically fix detected Dependency Scanning vulnerabilities.
 
  
 ### Minimizing the risks associated with credential theft
@@ -220,98 +220,6 @@ Note that most new features we are shipping in Boards are only available in the 
     </tbody>
 </table>
 
-
-### Improved Boards + GitHub Integration
-
-The existing Azure Boards + GitHub integration has been in place for several years now. The integration is a great starting point, but it does not offer the level of traceability that our customers have grown accustomed to. Based on customer feedback, we have put together set of investments to enhance this integration. Our goal is to improve upon it so that Azure Boards customers who choose to use GitHub repositories can maintain an equivalent level of traceability to having repositories in Azure DevOps.
-
-These investments include:
-
-<table>
-    <thead>
-        <tr>
-            <th>Feature</th>
-            <th>Area</th>
-            <th>Service</th>
-            <th>Server</th>
-    </thead>
-    <tbody>
-       <tr>
-         <td><a href="/azure/devops/release-notes/2022/sprint-203-update#move-to-column-position-on-kanban-board" data-raw-source="[Move to position](/azure/devops/release-notes/2022/sprint-203-update#move-to-column-position-on-kanban-board)">Move to position</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q2</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2022/sprint-205-update#assigned-to-children-in-kanban-cards" data-raw-source="[Adding Assigned To avatar to child items on cards](/azure/devops/release-notes/2022/sprint-205-update#assigned-to-children-in-kanban-cards)">Adding Assigned To avatar to child items on cards</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q2</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2022/boards/sprint-210-update#move-to-column-and-move-to-swimlane" data-raw-source="[Move to Column and Move to Swimlane](/azure/devops/release-notes/2022/boards/sprint-210-update#move-to-column-and-move-to-swimlane)">Move to Column and Move to Swimlane</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q1</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2022/sprint-206-update#filter-on-work-item-history" data-raw-source="[Filter to work item history](/azure/devops/release-notes/2022/sprint-206-update#filter-on-work-item-history)">Filter to work item history</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q3</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url" data-raw-source="[Copy work item attachment URL](/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url)">Copy work item attachment URL</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters" data-raw-source="[Maintain backlog hierarchy when filters are applied](/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters)">Maintain backlog hierarchy when filters are applied</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types" data-raw-source="[Ability to change link type from Web UI](/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types)">Ability to change link type from Web UI</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/2023/sprint-215-update#swimlane-colors" data-raw-source="[Swimlane colors on Kanban board.](/azure/devops/release-notes/2023/sprint-215-update#swimlane-colors)">Swimlane colors on Kanban board</a></td>
-        <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q1</td>
-        <td>Future</td>      
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-221-update#azure-boards-1" data-raw-source="[Swimlane rules on Kanban board](/azure/devops/release-notes/2023/sprint-221-update#azure-boards-1)">Swimlane rules on Kanban board</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q2</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Work item markdown support](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (preview)</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q2</td>
-         <td>Future</td>
-      </tr>     
-      <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/2024/sprint-233-update#team-automation-rules-is-generally-available)">Automated team work item rules</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
-         <td>Future</td>
-      </tr>             
-      <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default" data-raw-source="[New boards hub on by default.](/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default)">New Boards Hub on by default for all organizations</a></td>
-         <td>Boards</td>
-         <td>2024 Q2</td>
-         <td>Future</td>
-      </tr>             
-    </tbody>
-</table>
-
-
 ### Improved Boards + GitHub Integration
 
 The existing Azure Boards + GitHub integration has been in place for several years now. The integration is a great starting point, but it does not offer the level of traceability that our customers have grown accustomed to. Based on customer feedback, we have put together set of investments to enhance this integration. Our goal is to improve upon it so that Azure Boards customers who choose to use GitHub repositories can maintain an equivalent level of traceability to having repositories in Azure DevOps.
@@ -326,32 +234,6 @@ These investments include:
             <th>Service</th>
             <th>Server</th>
         </tr>
-    </thead>
-    <tbody>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-233-update#github-integration---improved-ab-validation-is-generally-available" data-raw-source="[Improved AB# validation](/azure/devops/release-notes/2024/sprint-233-update#github-integration---improved-ab-validation-is-generally-available)">Improved AB#{ID} validation</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q4</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#add-link-to-github-commit-or-pull-request-is-generally-available" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/2024/sprint-237-update#add-link-to-github-commit-or-pull-request-is-generally-available)">Add link to GitHub commit or pull request from work item</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/2024/sprint-235-update#show-github-pull-request-details-preview)">Show more details about a GitHub pull request (preview)</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
-         <td>Future</td>
-      </tr>      
-      <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/2024/sprint-237-update#connect-to-github-repository-search-improvements-preview)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project (preview)</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q2</td>
-         <td>Future</td>
-      </tr>
     </thead>
     <tbody>
       <tr>
@@ -402,7 +284,6 @@ These investments include:
          <td>2024 Q2</td>
          <td>Future</td>
       </tr>
-    
     </tbody>
 </table>
 
