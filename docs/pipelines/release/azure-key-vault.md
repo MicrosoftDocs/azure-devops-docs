@@ -198,6 +198,7 @@ In the next step, we'll create an ARM service connection using service principal
     
     steps:
     - task: AzureKeyVault@2
+      displayName: Azure Key Vault
       inputs:
         azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
         KeyVaultName: 'YOUR_KEY_VAULT_NAME'
@@ -216,7 +217,7 @@ In the next step, we'll create an ARM service connection using service principal
     
     steps:
     - task: AzureKeyVault@2
-      display name: Azure Key Vault
+      displayName: Azure Key Vault
       inputs:
         azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
         KeyVaultName: 'YOUR_KEY_VAULT_NAME'
@@ -224,18 +225,18 @@ In the next step, we'll create an ARM service connection using service principal
         RunAsPreJob: false
     
     - task: CmdLine@2
-      display name: Create file
+      displayName: Create file
       inputs:
         script: 'echo $(YOUR_SECRET_NAME) > secret.txt'
     
     - task: CopyFiles@2
-      display name: Copy file
+      displayName: Copy file
       inputs:
         Contents: secret.txt
         targetFolder: '$(Build.ArtifactStagingDirectory)'
 
     - task: PublishBuildArtifacts@1
-      display name: Publish Artifact
+      displayName: Publish Artifact
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
@@ -403,15 +404,15 @@ In the next step, we'll create an ARM service connection using service principal
     - main
     
     pool:
-      vmImage: ubuntu-latest
+      name: default
     
     steps:
-    - task: AzureKeyVault@2
+    - task: AzureKeyVault@1
+      displayName: Azure Key Vault
       inputs:
         azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
         KeyVaultName: 'YOUR_KEY_VAULT_NAME'
         SecretsFilter: '*'
-        RunAsPreJob: false
     ```
 
 1. Let's add the following tasks to copy and publish our secret. This example is for demonstration purposes only and should not be implemented in a production environment.
@@ -421,30 +422,29 @@ In the next step, we'll create an ARM service connection using service principal
     - main
     
     pool:
-      vmImage: ubuntu-latest
+      name: default
     
     steps:
-    - task: AzureKeyVault@2
-      display name: Azure Key Vault
+    - task: AzureKeyVault@1
+      displayName: Azure Key Vault
       inputs:
         azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
         KeyVaultName: 'YOUR_KEY_VAULT_NAME'
         SecretsFilter: '*'
-        RunAsPreJob: false
     
     - task: CmdLine@2
-      display name: Create file
+      displayName: Create file
       inputs:
         script: 'echo $(YOUR_SECRET_NAME) > secret.txt'
     
     - task: CopyFiles@2
-      display name: Copy file
+      displayName: Copy file
       inputs:
         Contents: secret.txt
         targetFolder: '$(Build.ArtifactStagingDirectory)'
 
     - task: PublishBuildArtifacts@1
-      display name: Publish Artifact
+      displayName: Publish Artifact
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
@@ -458,7 +458,6 @@ In the next step, we'll create an ARM service connection using service principal
 1. In the newly opened window, select **drop** > **secret.txt**, select the ellipsis icon (...), and then select **download** to save the text file.
 
 1. Open the text file you just downloaded, it should contain the secret from your Azure key vault.
-
 
 ***
 
