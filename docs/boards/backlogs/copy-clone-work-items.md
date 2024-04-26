@@ -54,7 +54,7 @@ In other words, **copy** a work item to create a new work item with prepopulated
 	> [!NOTE]
 	> - When you copy the work item to a different project, **Include child work items** is disabled. 
 	> - When you copy a work item and choose to **Include child work items**, a copy is made of each child work item and linked to the copied work item through a Parent-Child link. 
-	> - The **Include child work items** feature requires installation of Azure DevOps Server 2020.1 update.   
+	> - The **Include child work items** feature requires installation of Azure DevOps Server 2020.1 update.
 
 3. In the work item form that opens, update other fields as needed. All work items start in the New state.
 
