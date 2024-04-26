@@ -130,7 +130,7 @@ Agents in this mode accept only one job and then spin down gracefully (useful fo
 
 ## Run as a launchd service
 
-We provide the `./svc.sh` script for you to run and manage your agent as a launchd LaunchAgent service. This script will be generated after you configure the agent. The service has access to the UI to run your UI tests.
+We provide the `./svc.sh` script for you to run and manage your agent as a `launchd` LaunchAgent service. This script will be generated after you configure the agent. The service has access to the UI to run your UI tests.
 
 > [!NOTE]
 > If you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
@@ -168,7 +168,7 @@ Command:
 ./svc.sh install
 ```
 
-This command creates a launchd plist that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agent's host.
+This command creates a `launchd` plist that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agent's host.
 
 
 #### Start
@@ -299,7 +299,7 @@ For example:
 
 ### Alternative service mechanisms
 
-We provide the `./svc.sh` script as a convenient way for you to run and manage your agent as a launchd LaunchAgent service. But you can use whatever kind of service mechanism you prefer.
+We provide the `./svc.sh` script as a convenient way for you to run and manage your agent as a `launchd` LaunchAgent service. But you can use whatever kind of service mechanism you prefer.
 
 You can use the template described above as to facilitate generating other kinds of service files. For example, you modify the template to generate a service that runs as a launch daemon if you don't need UI tests and don't want to configure automatic log on and lock. See [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/macOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
 
