@@ -175,6 +175,65 @@ In the next step, we'll create an ARM service connection using service principal
 
 ::: moniker range=">= azure-devops-2020"
 
+#### [Classic](#tab/classic)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, and then select **New Pipeline**.
+
+1. Select **Use the classic editor** to create a classic pipeline.
+
+1. Select **Azure Repos Git**, select your repository and default branch, and then select **Continue**.
+
+1. Select the **.Net Desktop** pipeline template.
+
+1. For this example, we will only need the last two tasks. Press CTRL and then select the first five tasks, right-click and choose **Remove selected tasks(s)** to delete them.
+
+    :::image type="content" border="false" source="media/delete-tasks.png" alt-text="A screenshot showing how to delete multiple pipeline tasks.":::
+
+1. Select **+** to add a new task. Search for the **Command line** task, select it, and then select **Add** to add it to your pipeline. Once added, configure it as follows:
+    
+    - **Display name**: Create file
+    - **Script**: `echo $(YOUR_SECRET_NAME) > secret.txt`
+
+    :::image type="content" border="false" source="media/create-secret-file.png" alt-text="A screenshot showing how to configure the command line task.":::
+
+1. Select **+** to add a new task. Search for the **Azure Key Vault** task, select it, and then select *Add** to add it to your pipeline. Once added, configure it as follows:
+
+    - **Display name**: Azure Key Vault
+    - **Azure subscription**: select your service principal service connection you created earlier
+    - **Key vault**: select your key vault
+    - **Secret filter**: A comma separated list of secret names or leave * to download all secrets from the selected key vault
+    
+    :::image type="content" border="false" source="media/azure-key-vault-classic-task-setup.png" alt-text="A screenshot showing how to set up the Azure Key Vault task in classic pipelines.":::
+
+1. Select the **Copy files** task and fill out the required fields as follows:
+    
+    - **Display name**: Copy File
+    - **Contents**: secret.txt
+    - **Target Folder**: $(build.artifactstagingdirectory)
+
+    :::image type="content" border="false" source="media/copy-files-task-classic-pipeline.png" alt-text="A screenshot showing how to set up the copy files task in classic pipelines.":::
+
+1. Select the **Publish Artifacts** task and fill out the required fields as follows:
+
+    - **Display name**: Publish Artifact
+    - **Path to publish**: $(build.artifactstagingdirectory)
+    - **Artifact name**: drop
+    - **Artifact publish location**: Azure Pipelines
+    
+    :::image type="content" border="false" source="media/publish-artifacts-classic-pipeline.png" alt-text="A screenshot showing how to set up the publish artifacts task in classic pipelines.":::
+
+1. Select **Save and queue**, and then select **Run** to run your pipeline.
+
+1. Once the pipeline run is complete, return to the pipeline summary and select the published artifact.
+
+1. Select **drop** > **secret.txt** to download the published artifact.
+
+    :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to download the published artifact.":::
+
+1. Open the text file you just downloaded, the text file should contain the secret from your Azure key vault.
+
 #### [YAML](#tab/yaml)
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
@@ -254,65 +313,6 @@ In the next step, we'll create an ARM service connection using service principal
     :::image type="content" border="false" source="media/azure-key-vault/pipeline-summary.png" alt-text="A screenshot showing the published artifact in the summary tab.":::
 
 1. Select **drop** > **secret.txt** to download it.
-
-    :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to download the published artifact.":::
-
-1. Open the text file you just downloaded, the text file should contain the secret from your Azure key vault.
-
-#### [Classic](#tab/classic)
-
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Pipelines**, and then select **New Pipeline**.
-
-1. Select **Use the classic editor** to create a classic pipeline.
-
-1. Select **Azure Repos Git**, select your repository and default branch, and then select **Continue**.
-
-1. Select the **.Net Desktop** pipeline template.
-
-1. For this example, we will only need the last two tasks. Press CTRL and then select the first five tasks, right-click and choose **Remove selected tasks(s)** to delete them.
-
-    :::image type="content" border="false" source="media/delete-tasks.png" alt-text="A screenshot showing how to delete multiple pipeline tasks.":::
-
-1. Select **+** to add a new task. Search for the **Command line** task, select it, and then select **Add** to add it to your pipeline. Once added, configure it as follows:
-    
-    - **Display name**: Create file
-    - **Script**: `echo $(YOUR_SECRET_NAME) > secret.txt`
-
-    :::image type="content" border="false" source="media/create-secret-file.png" alt-text="A screenshot showing how to configure the command line task.":::
-
-1. Select **+** to add a new task. Search for the **Azure Key Vault** task, select it, and then select *Add** to add it to your pipeline. Once added, configure it as follows:
-
-    - **Display name**: Azure Key Vault
-    - **Azure subscription**: select your service principal service connection you created earlier
-    - **Key vault**: select your key vault
-    - **Secret filter**: A comma separated list of secret names or leave * to download all secrets from the selected key vault
-    
-    :::image type="content" border="false" source="media/azure-key-vault-classic-task-setup.png" alt-text="A screenshot showing how to set up the Azure Key Vault task in classic pipelines.":::
-
-1. Select the **Copy files** task and fill out the required fields as follows:
-    
-    - **Display name**: Copy File
-    - **Contents**: secret.txt
-    - **Target Folder**: $(build.artifactstagingdirectory)
-
-    :::image type="content" border="false" source="media/copy-files-task-classic-pipeline.png" alt-text="A screenshot showing how to set up the copy files task in classic pipelines.":::
-
-1. Select the **Publish Artifacts** task and fill out the required fields as follows:
-
-    - **Display name**: Publish Artifact
-    - **Path to publish**: $(build.artifactstagingdirectory)
-    - **Artifact name**: drop
-    - **Artifact publish location**: Azure Pipelines
-    
-    :::image type="content" border="false" source="media/publish-artifacts-classic-pipeline.png" alt-text="A screenshot showing how to set up the publish artifacts task in classic pipelines.":::
-
-1. Select **Save and queue**, and then select **Run** to run your pipeline.
-
-1. Once the pipeline run is complete, return to the pipeline summary and select the published artifact.
-
-1. Select **drop** > **secret.txt** to download the published artifact.
 
     :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to download the published artifact.":::
 
