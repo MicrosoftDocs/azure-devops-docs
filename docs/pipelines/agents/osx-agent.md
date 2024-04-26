@@ -116,7 +116,7 @@ To run the agent interactively:
   To restart the agent, press Ctrl+C and then run `run.sh` to restart it.
 
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
-If you didn't choose a different pool, your agent will be in the **Default** pool.
+If you didn't choose a different pool, your agent is placed in the **Default** pool.
 
 ### Run once
 
@@ -130,7 +130,7 @@ Agents in this mode accept only one job and then spin down gracefully (useful fo
 
 ## Run as a launchd service
 
-We provide the `./svc.sh` script for you to run and manage your agent as a `launchd` LaunchAgent service. This script will be generated after you configure the agent. The service has access to the UI to run your UI tests.
+We provide the `./svc.sh` script for you to run and manage your agent as a `launchd` LaunchAgent service. This script is generated after you configure the agent. The service has access to the UI to run your UI tests.
 
 > [!NOTE]
 > If you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
@@ -143,7 +143,7 @@ In the section below, these tokens are replaced:
 
 * `{tfs-name}`
 
-For example, you have configured an agent (see above) with the name `our-osx-agent`. In the following examples, `{tfs-name}` will be either:
+For example, you have configured an agent (as shown in the previous example) with the name `our-osx-agent`. In the following examples, `{tfs-name}` is either:
 
 * Azure Pipelines: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `vsts.agent.fabrikam.our-osx-agent`
 
@@ -365,14 +365,14 @@ If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.
 (The Oracle JRE and OpenJDK aren't sufficient for this purpose.)
 
 [TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
-It has an EULA, which you'll need to accept during configuration if you plan to work with TFVC.
+It has an EULA, which you must to accept during configuration if you plan to work with TFVC.
 
-Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin will be downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin will be removed after the job execution.
+Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin is downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin is removed after the job execution.
 
 > [!NOTE]
 > Note: You may notice your checkout task taking a long time to start working because of this download mechanism.
 
-If the agent is running behind a proxy or a firewall, you'll need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
+If the agent is running behind a proxy or a firewall, you must accept to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin is downloaded from this address.
 
 If you're using a self-hosted agent and facing issues with TEE downloading, you may install TEE manually:
 1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`. This variable prevents the agent from removing the TEE plugin after TFVC repository checkout.
