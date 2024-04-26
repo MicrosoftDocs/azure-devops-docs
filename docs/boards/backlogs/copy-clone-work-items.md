@@ -101,9 +101,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 
 2. Open the &hellip; context menu of one of the selected work items, and then choose **Copy to clipboard** or **Copy as HTML**.
 
-    Here we multi-select from the product backlog and choose **Copy to clipboard**.
-
-    ![Screenshot shows backlog page, multi-select items, open context menu, Copy to clipboard.](media/copy-work-item-copy-to-clipboard-ts-1.png) 
+    ![Screenshot shows backlog page, multi-select items, open context menu, Copy as HTML.](media/copy-work-item-copy-to-clipboard-ts-1.png) 
 
 ## Paste the contents into your email client
 
