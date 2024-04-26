@@ -242,6 +242,22 @@ In the next step, we'll create an ARM service connection using service principal
         publishLocation: 'Container'
     ```
 
+1. Select **Save and run**, and then select it once more to commit your changes and trigger the pipeline. You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once.
+
+1. Select the **CmdLine** task to view the logs.
+
+    :::image type="content" border="false" source="media/azure-key-vault/command-line-task.png" alt-text="A screenshot showing the command-line task logs.":::
+
+1. Once the pipeline run is complete, return to the pipeline summary and select the published artifact.
+
+    :::image type="content" border="false" source="media/azure-key-vault/pipeline-summary.png" alt-text="A screenshot showing the published artifact in the summary tab.":::
+
+1. Select **drop** > **secret.txt** to download it.
+
+    :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to download the published artifact.":::
+
+1. Open the text file you just downloaded, the text file should contain the secret from your Azure key vault.
+
 #### [Classic](#tab/classic)
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
@@ -291,7 +307,18 @@ In the next step, we'll create an ARM service connection using service principal
     
     :::image type="content" border="false" source="media/publish-artifacts-classic-pipeline.png" alt-text="A screenshot showing how to set up the publish artifacts task in classic pipelines.":::
 
+1. Select **Save and queue**, and then select **Run** to run your pipeline.
+
+1. Once the pipeline run is complete, return to the pipeline summary and select the published artifact.
+
+1. Select **drop** > **secret.txt** to download the published artifact.
+
+    :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to download the published artifact.":::
+
+1. Open the text file you just downloaded, the text file should contain the secret from your Azure key vault.
+
 ***
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -346,6 +373,14 @@ In the next step, we'll create an ARM service connection using service principal
     - **Artifact publish location**: Azure Pipelines
     
     :::image type="content" border="false" source="media/publish-artifacts-classic-pipeline.png" alt-text="A screenshot showing how to set up the publish artifacts task in classic pipelines in Azure DevOps Server 2019.":::
+
+1. Select **Save & queue**, and then select **Save & queue** to run your build pipeline.
+
+1. Once the pipeline run is complete, select **Artifacts** and then select **drop**.
+
+1. In the newly opened window, select **drop** > **secret.txt**, select the ellipsis icon (...), and then select **download** to save the text file.
+
+1. Open the text file you just downloaded, it should contain the secret from your Azure key vault.
 
 #### [YAML](#tab/yaml)
 
@@ -415,29 +450,19 @@ In the next step, we'll create an ARM service connection using service principal
         ArtifactName: 'drop'
         publishLocation: 'Container'
     ```
+
+1. Select **Save and run**, and then select it once more to commit your changes and trigger the pipeline.
+
+1. Once the pipeline run is complete, select **Artifacts** and then select **drop**.
+
+1. In the newly opened window, select **drop** > **secret.txt**, select the ellipsis icon (...), and then select **download** to save the text file.
+
+1. Open the text file you just downloaded, it should contain the secret from your Azure key vault.
+
+
 ***
 
 ::: moniker-end
-
-## Run and review the pipeline
-
-1. Return to the previous tab where we left off.
-
-1. Select **Save**, and then select **Save** again to commit your changes and trigger the pipeline. You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once.
-
-1. Select the **CmdLine** task to view the logs.
-
-    :::image type="content" border="false" source="media/azure-key-vault/command-line-task.png" alt-text="A screenshot showing the command-line task logs.":::
-
-1. Return to pipeline summary and select the published artifact.
-
-    :::image type="content" border="false" source="media/azure-key-vault/pipeline-summary.png" alt-text="A screenshot showing the pipeline summary and the published artifact.":::
-
-1. Select the **secret.txt** artifact to open it.
-
-    :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to open the published artifact.":::
-
-1. The text file should contain our secret: *mysecretpassword*.
 
 > [!WARNING]
 > This tutorial is for educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
@@ -446,12 +471,12 @@ In the next step, we'll create an ARM service connection using service principal
 
 Follow the steps below to delete the resources you created:
 
-1. If you created a new organization to host your project, see [how to delete your organization](../../organizations/accounts/delete-your-organization.md), otherwise [delete your project](../../organizations/projects/delete-project.md).
+1. If you've created a new organization to host your project, see [how to delete your organization](../../organizations/accounts/delete-your-organization.md), otherwise [delete your project](../../organizations/projects/delete-project.md).
 
-1. All Azure resources created during this tutorial are hosted under a single resource group *PipelinesKeyVaultResourceGroup*. Run the following command to delete the resource group and all of its resources.
+1. All Azure resources created during this tutorial are hosted under a single resource group. Run the following command to delete your resource group and all of its resources.
 
     ```azurecli
-    az group delete --name PipelinesKeyVaultResourceGroup
+    az group delete --name <YOUR_RESOURCE_GROUP_NAME>
     ```
 
 ## FAQ
@@ -469,10 +494,8 @@ $spnObjectId=$spn.Id;
 Set-AzureRmKeyVaultAccessPolicy -VaultName key-vault-tutorial -ObjectId $spnObjectId -PermissionsToSecrets get,list;
 ```
 
-## Next steps
+## Related articles
 
-> [!div class="nextstepaction"]
->
-> [Artifacts in Azure Pipelines](../artifacts/artifacts-overview.md)
-> [Publish and download artifacts in Azure Pipelines](../artifacts/pipeline-artifacts.md)
-> [Release artifacts and artifact sources](artifacts.md)
+- [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md)
+- [Release artifacts and artifact sources](artifacts.md)
+- [Use gates and approvals to control deployment](deploy-using-approvals.md)
