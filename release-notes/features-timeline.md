@@ -59,8 +59,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
     <thead>
         <tr>
             <th>Feature</th>
-            <th>Area</th>
-            <th>Service</th>
+            <th>Area</th>            
             <th>Service</th>
             <th>Server</th>
         </tr>
