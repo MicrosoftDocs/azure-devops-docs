@@ -137,7 +137,7 @@ We provide the `./svc.sh` script for you to run and manage your agent as a `laun
 
 ### Tokens
 
-In the section below, these tokens are replaced:
+In the following section, these tokens are replaced:
 
 * `{agent-name}`
 
@@ -168,7 +168,7 @@ Command:
 ./svc.sh install
 ```
 
-This command creates a `launchd` plist that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agent's host.
+This command creates a `launchd` plist that points to `./runsvc.sh`. This script sets up the environment (more details in the following section) and starts the agent's host.
 
 
 #### Start
