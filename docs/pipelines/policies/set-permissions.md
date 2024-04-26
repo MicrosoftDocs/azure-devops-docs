@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 Permissions for build and release pipelines are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level.
 
-You can manage security for different types of resources such as variable groups, secure files, and deployment groups by adding users or groups to that role. Project administrator can grant or restrict access to project resources. If you want to allow a team member to edit pipelines, you must be a project administrator in order to do so.
+You can manage security for different types of resources such as variable groups, secure files, and deployment groups by granting permissions to that resource to users or groups. Project administrators can grant or restrict access to project resources. If you want to allow a team member to edit pipelines, you must be a project administrator in order to do so.
 
 ::: moniker range="<=azure-devops"
 
