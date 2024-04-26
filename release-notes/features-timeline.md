@@ -542,7 +542,7 @@ Azure DevOps is enhancing the dashboard experience, focusing on simplifying the 
       </tr>
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-delete-area-path" data-raw-source="[Prevent the deleting of an acrive area or iteration path](/azure/devops/release-notes/roadmap/2024/boards-delete-area-path)">Prevent the deleting of an active area or iteration path</a>
+            <a href="/azure/devops/release-notes/roadmap/2024/boards-delete-area-path" data-raw-source="[Prevent the deleting of an active area or iteration path](/azure/devops/release-notes/roadmap/2024/boards-delete-area-path)">Prevent the deleting of an active area or iteration path</a>
          </td>
          <td>Boards</td>        
          <td>Future</td>
