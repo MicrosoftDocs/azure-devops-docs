@@ -232,13 +232,13 @@ bash, sudo, which, and groupadd.
 
 ### Bring your own Node.js
 You're responsible for adding a Node binary to your container.
-Node 14 is a safe choice.
-You can start from the `node:14-alpine` image.
+Node 18 is a safe choice.
+You can start from the `node:18-alpine` image.
 
 ### Tell the agent about Node.js
 The agent will read a container label "com.azure.dev.pipelines.handler.node.path".
 If this label exists, it must be the path to the Node.js binary.
-For example, in an image based on `node:10-alpine`, add this line to your Dockerfile:
+For example, in an image based on `node:18-alpine`, add this line to your Dockerfile:
 ```
 LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
 ```
