@@ -1,6 +1,6 @@
 ---
-title: Container Jobs in Azure Pipelines and TFS
-description: Run pipeline jobs inside of a container
+title: Container Jobs in Azure Pipelines
+description: Run pipeline jobs inside of a container.
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
 ms.date: 05/01/2023
@@ -86,7 +86,7 @@ steps:
 
 This tells the system to fetch the `ubuntu` image tagged `18.04` from
 [Docker Hub](https://hub.docker.com) and then start the container. When the
-`printenv` command runs, it will happen inside the `ubuntu:18.04` container.
+`printenv` command runs, it happens inside the `ubuntu:18.04` container.
 
 A Windows example:
 
@@ -177,7 +177,7 @@ steps:
 - script: echo hello
 ```
 
-Running `docker create --help` will give you the list of options that can be passed to Docker invocation. Not all of these options are guarenteed to work with Azure DevOps. Check first to see if you can use a container property to accomplish the same goal. For more information, see `resources.containers.container` in the [YAML schema](/azure/devops/pipelines/yaml-schema/resources-containers-container) and the [`docker create` command](https://docs.docker.com/engine/reference/commandline/create/) reference.
+Running `docker create --help` gives you the list of options that can be passed to Docker invocation. Not all of these options are guaranteed to work with Azure DevOps. Check first to see if you can use a container property to accomplish the same goal. For more information, see `resources.containers.container` in the [YAML schema](/azure/devops/pipelines/yaml-schema/resources-containers-container) and the [`docker create` command](https://docs.docker.com/engine/reference/commandline/create/) reference.
 
 ## Reusable container definition
 
@@ -219,12 +219,12 @@ jobs:
 
 ## Non glibc-based containers
 
-The Azure Pipelines agent supplies a copy of Node.js, which is required to run tasks and scripts. To find out the version of Node.js for an hosted agent, see [Microsoft-hosted agents](../agents/hosted.md#software). 
+The Azure Pipelines agent supplies a copy of Node.js, which is required to run tasks and scripts. To find out the version of Node.js for a hosted agent, see [Microsoft-hosted agents](../agents/hosted.md#software). 
 The version of Node.js is compiled against the C runtime we use in our hosted cloud, typically glibc.
 Some variants of Linux use other C runtimes.
 For instance, Alpine Linux uses musl.
 
-If you want to use a non-glibc-based container as a job container, you will need to arrange a few things on your own.
+If you want to use a non-glibc-based container as a job container, you need to arrange a few things on your own.
 First, you must supply your own copy of Node.js.
 Second, you must add a label to your image telling the agent where to find the Node.js binary.
 Finally, stock Alpine doesn't come with other dependencies that Azure Pipelines depends on:
@@ -232,13 +232,13 @@ bash, sudo, which, and groupadd.
 
 ### Bring your own Node.js
 You're responsible for adding a Node binary to your container.
-Node 14 is a safe choice.
-You can start from the `node:14-alpine` image.
+Node 18 is a safe choice.
+You can start from the `node:18-alpine` image.
 
 ### Tell the agent about Node.js
 The agent will read a container label "com.azure.dev.pipelines.handler.node.path".
 If this label exists, it must be the path to the Node.js binary.
-For example, in an image based on `node:10-alpine`, add this line to your Dockerfile:
+For example, in an image based on `node:18-alpine`, add this line to your Dockerfile:
 ```
 LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
 ```
