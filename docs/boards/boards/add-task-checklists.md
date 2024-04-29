@@ -55,9 +55,9 @@ Make use of the following features for checklists.
 
 ## Add one or more child items to a checklist
 
-In this example, tasks are added to the product Kanban board using the checklist feature. You can use the same procedures to add any other supported checklist item from your board.  
+In the following example, tasks get added to the product Kanban board using the checklist feature. You can use the same procedures to add any other supported checklist item from your board.  
 
-1. From your Kanban board, select :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Work item actions** > **+ Add Task**.   
+1. From your Kanban board, select :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Work item actions** > **+ Add Task**. If you already have a work item open, select **Add link** > **New item**. For more information, see [Link work items to objects](../backlogs/add-link.md).
 
     :::image type="content" source="media/checklists/add-task-menu.png" alt-text="Screenshot of open the context menu of work item to add a task.":::
 
