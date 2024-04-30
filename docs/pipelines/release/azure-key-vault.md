@@ -1,8 +1,8 @@
 ---
 title: Use Azure Key Vault secrets in Azure Pipelines
-description: How to create Azure Key vaults, store secrets, and use those secrets in your Azure Pipelines
+description: How to create Azure Key vaults, store secrets, and use them in your Azure Pipelines.
 ms.topic: tutorial
-ms.date: 05/16/2022
+ms.date: 04/23/2024
 ms.custom: devx-track-azurecli, arm2024
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
@@ -12,7 +12,8 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Azure Key Vault enables developers to securely store and manage secrets such as API keys, credentials or certificates. Azure Key Vault service supports two types of containers: vaults and managed HSM (hardware security module) pools. Vaults support storing software and HSM-backed keys, secrets, and certificates, while managed HSM pools only support HSM-backed keys.
+Azure Key Vault allows developers to securely store and manage sensitive information like API keys, credentials, or certificates. 
+Azure Key Vault service supports two types of containers: vaults and managed HSM (Hardware Security Module) pools. Vaults can store both software and HSM-backed keys, secrets, and certificates, while managed HSM pools exclusively support HSM-backed keys.
 
 In this tutorial, you will learn how to:
 
@@ -24,112 +25,247 @@ In this tutorial, you will learn how to:
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [create one for free](../get-started/pipelines-sign-up.md).
-* An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) if you don't have one already.
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) if you don't have one already.
+
+## Create a repo
+
+If you already have your own repository, proceed to the next step. Otherwise, follow the instructions below to initialize your repository. We will use this Azure Repo to set up our pipeline.
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Repos**, and then select **Initialize** to initialize the main branch with a README.
+
+    :::image type="content" border="false" source="media/azure-key-vault/initialize-repo.png" alt-text="A screenshot showing how to initialize a repository with a README file.":::
 
 ## Create an Azure Key Vault
 
-[!INCLUDE [include](../ecosystems/includes/sign-in-azure-cli.md)]
+1. Sign in to the [Azure Portal](https://portal.azure.com/), and then select the [Cloud Shell](/azure/cloud-shell/overview) button in the upper-right corner.
 
 1. If you have more than one Azure subscription associated with your account, use the command below to specify a default subscription. You can use `az account list` to generate a list of your subscriptions.
 
     ```azurecli
-    az account set --subscription <your_subscription_name_or_ID>
+    az account set --subscription <YOUR_SUBSCRIPTION_NAME_OR_ID>
     ```
 
 1. Set your default Azure region. You can use `az account list-locations` to generate a list of available regions.
 
     ```azurecli
-    az config set defaults.location=<your_region>
+    az config set defaults.location=<YOUR_REGION>
     ```
 
-    For example, this command will select the westus2 region:
+1. Create a new resource group.
 
     ```azurecli
-    az config set defaults.location=westus2
+    az group create --name <YOUR_RESOURCE_GROUP_NAME>
     ```
 
-1. Create a new resource group. A resource group is a container that holds related resources for an Azure solution.
-
-    ```azurecli
-    az group create --name <your-resource-group>
-    ```
-
-1. Create a new key vault.
+1. Create a new Azure Key Vault.
 
     ```azurecli
     az keyvault create \
-      --name <your-key-vault> \
-      --resource-group <your-resource-group>
+      --name <YOUR_KEY_VAULT_NAME> \
+      --resource-group <YOUR_RESOURCE_GROUP_NAME>
     ```
 
 1. Create a new secret in your Azure key vault.
 
     ```azurecli
     az keyvault secret set \
-      --name "Password" \
-      --value "mysecretpassword" \
-      --vault-name <your-key-vault-name>
+      --name <YOUR_SECRET_NAME> \
+      --value <YOUR_ACTUAL_SECRET> \
+      --vault-name <YOUR_KEY_VAULT_NAME>
     ```
 
-## Create a project
+## Set up key vault access policies
 
-1. Sign in to your [Azure DevOps organization](https://dev.azure.com/).
+To access our Azure Key Vault, we need to set up a service principal to grant access to Azure Pipelines. Follow [this guide](/cli/azure/azure-cli-sp-tutorial-1#create-a-service-principal) to create a service principal with Azure CLI, and then continue with the next steps in this section.
 
-1. If you don't have any projects in your organization yet, select **Create a project to get started**. Otherwise, select **New project** in the upper-right corner.
+1. Navigate to [Azure portal](https://azure.microsoft.com/), and then use the search bar to find the key vault you created earlier.
 
-## Create a repo
+    :::image type="content" border="false" source="media/azure-key-vault/search-azure-key-vault.png" alt-text="A screenshot showing how to search for your Azure Key Vault.":::
 
-We will use YAML to create our pipeline but first we need to create a new repo.
+1. Select **Access policies**, and then select **Create** to create a new policy.
 
-1. Sign in to your Azure DevOps organization and navigate to your project.
+1. Under **Secret permissions**, select **Get** and **List**.
 
-1. Select **Repos**, and then select **Initialize** to initialize a new repo with a README.
+1. Select **Next**, and then select the service principal you created earlier. A service principal is an object that represents an application or service that's requesting access to Azure resources.
 
-    :::image type="content" border="false" source="media/azure-key-vault/initialize-repo.png" alt-text="A screenshot showing how to initialize a repository.":::
+1. Select **Next**, and then **Next** once more.
+
+1. Review your policies, and then select **Create** when you're done.
+
+> [!NOTE]
+> Azure Key Vaults that use Azure role-based access control (Azure RBAC) are not supported.
+
+## Add role assignment
+
+In the next step, we'll create an ARM service connection using service principal. Before we can verify the connection, we need to grant the service principal **Read** access at the subscription level:
+
+1. Navigate to [Azure portal](https://azure.microsoft.com/)
+
+1. Select **Subscriptions** from the left navigation panel, and then find and select your subscription.
+
+1. Select **Access control**, and then select **Add** > **Add role assignment**.
+
+    :::image type="content" border="false" source="media/add-service-principal-role-assignment.png" alt-text="A screenshot showing how to add a new role assignment at the subscription level.":::
+
+1. Select **Reader** under the **Role** tab, and then select **Next**.
+
+1. Select **User, group, or service principal**, and then select **Select members**. 
+
+    :::image type="content" border="false" source="media/azure-add-members-to-role-assignment.png" alt-text="A screenshot showing how to add members to role assignment in Azure.":::
+
+1. Use the search bar to find your service principal, and then select the "+" sign to select it, then click on the **Select** button.
+ 
+1. Select **Review + assign**, review your settings, and then select **Review + assign** once more to confirm your choices and add the role assignment.
+
+## Create a service connection
+
+::: moniker range=">= azure-devops-2020"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Project settings** > **Service connections**, and then select **New service connection** to create a new service connection.
+
+1. Select **Azure Resource Manager**, and then select **Next**.
+
+1. Select **Service principal (manual)**, and then select **Next**.
+
+1. Select **Azure Cloud** for **Environment** and **Subscription** for the **Scope Level**, then enter your **Subscription Id** and your **Subscription Name**.
+
+1. Fill out the following fields with the information you obtained when creating the service principal, and then select **Verify** when you're done: 
+
+    - **Service Principal Id**: Your service principal **appId**.
+    - **Service Principal key**: Your service principal **password**.
+    - **Tenant ID**: Your service principal **tenant**.
+
+1. Once the verification has succeeded, provide a name and description (optional) for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
+
+1. Select **Verify and save** when you're done.
+
+    :::image type="content" source="media/manual-service-principal-service-connection.png" alt-text="A screenshot showing how to create a new Azure Resource Manager service connection using service principal.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Project settings** > **Service connections** > **New service connection** and then select **Azure Resource Manager** to create a new ARM service connection.
+
+1. Give your service connection a name, and then select **Azure Cloud** for **Environment** and **Subscription** for the **Scope Level**.
+
+1. Enter your **Subscription Id** and your **Subscription Name**.
+
+1. Fill out the following fields with the information you obtained when creating the service principal, and then select **Verify connection** when you're done: 
+
+    - **Service Principal client Id**: Your service principal **appId**.
+    - **Service Principal key**: Your service principal **password**.
+    - **Tenant ID**: Your service principal **tenant**.
+
+1. Check the **Allow all pipelines to use this connection** checkbox, and then select **Ok** when you're done.
+
+    :::image type="content" source="media/new-service-principal-arm-service-connection-server-2019.png" alt-text="A screenshot showing how to create a new ARM service connection using service principal in Azure DevOps Server 2019.":::
+
+::: moniker-end
 
 ## Create a new pipeline
 
-#### [YAML](#tab/yaml)
+::: moniker range=">= azure-devops-2020"
+
+#### [Classic](#tab/classic)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Pipelines**, and then select **New Pipeline**.
 
-1. Select **Azure Repos Git** (YAML).
+1. Select **Use the classic editor** to create a classic pipeline.
 
-    :::image type="content" border="false" source="media/azure-key-vault/create-pipeline.png" alt-text="A screenshot showing how to select Azure Repos source control.":::
+1. Select **Azure Repos Git**, select your repository and default branch, and then select **Continue**.
 
-1. Select the repository you created in the previous step.
+1. Select the **.Net Desktop** pipeline template.
+
+1. For this example, we will only need the last two tasks. Press CTRL and then select the first five tasks, right-click and choose **Remove selected tasks(s)** to delete them.
+
+    :::image type="content" border="false" source="media/delete-tasks.png" alt-text="A screenshot showing how to delete multiple pipeline tasks.":::
+
+1. Select **+** to add a new task. Search for the **Command line** task, select it, and then select **Add** to add it to your pipeline. Once added, configure it as follows:
+    
+    - **Display name**: Create file
+    - **Script**: `echo $(YOUR_SECRET_NAME) > secret.txt`
+
+    :::image type="content" border="false" source="media/create-secret-file.png" alt-text="A screenshot showing how to configure the command line task.":::
+
+1. Select **+** to add a new task. Search for the **Azure Key Vault** task, select it, and then select *Add** to add it to your pipeline. Once added, configure it as follows:
+
+    - **Display name**: Azure Key Vault
+    - **Azure subscription**: select your service principal service connection you created earlier
+    - **Key vault**: select your key vault
+    - **Secret filter**: A comma separated list of secret names or leave * to download all secrets from the selected key vault
+    
+    :::image type="content" border="false" source="media/azure-key-vault-classic-task-setup.png" alt-text="A screenshot showing how to set up the Azure Key Vault task in classic pipelines.":::
+
+1. Select the **Copy files** task and fill out the required fields as follows:
+    
+    - **Display name**: Copy File
+    - **Contents**: secret.txt
+    - **Target Folder**: $(build.artifactstagingdirectory)
+
+    :::image type="content" border="false" source="media/copy-files-task-classic-pipeline.png" alt-text="A screenshot showing how to set up the copy files task in classic pipelines.":::
+
+1. Select the **Publish Artifacts** task and fill out the required fields as follows:
+
+    - **Display name**: Publish Artifact
+    - **Path to publish**: $(build.artifactstagingdirectory)
+    - **Artifact name**: drop
+    - **Artifact publish location**: Azure Pipelines
+    
+    :::image type="content" border="false" source="media/publish-artifacts-classic-pipeline.png" alt-text="A screenshot showing how to set up the publish artifacts task in classic pipelines.":::
+
+1. Select **Save and queue**, and then select **Run** to run your pipeline.
+
+1. Once the pipeline run is complete, return to the pipeline summary and select the published artifact.
+
+1. Select **drop** > **secret.txt** to download the published artifact.
+
+    :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to download the published artifact.":::
+
+1. Open the text file you just downloaded, the text file should contain the secret from your Azure key vault.
+
+#### [YAML](#tab/yaml)
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, and then select **New Pipeline**.
+
+1. Select **Azure Repos Git** (YAML), and then select your repository.
 
 1. Select the **Starter pipeline** template.
 
-1. The default pipeline will include a few scripts that run echo commands. Those are not needed so we can delete them. Your new YAML file should look like this:
+1. The default pipeline will include a script that runs echo commands. Those are not needed so we can delete them.
 
-    ```YAML
+1. Add the AzureKeyVault task, replacing the placeholders with the name of the service connection you created earlier and your key vault name. Your YAML file should resemble the following snippet:
+
+    ```yml
     trigger:
     - main
     
     pool:
-        vmImage: 'ubuntu-latest'
+      vmImage: ubuntu-latest
     
     steps:
+    - task: AzureKeyVault@2
+      displayName: Azure Key Vault
+      inputs:
+        azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
+        KeyVaultName: 'YOUR_KEY_VAULT_NAME'
+        SecretsFilter: '*'
+        RunAsPreJob: false
     ```
 
-1. Select **Show assistant** to expand the assistant panel. This panel provides convenient and searchable list of pipeline tasks.  
-
-    :::image type="content" border="false" source="media/azure-key-vault/show-assistant.png" alt-text="A screenshot showing how to access the task assistant panel.":::
-
-1. Search for **vault** and select the **Azure Key Vault** task.
-
-    :::image type="content" border="false" source="media/azure-key-vault/azure-key-vault-task.png" alt-text="A screenshot showing how to search for the Azure Key Vault task.":::
-
-1. Select your **Azure subscription** and then select **Authorize**. Select your **Key vault** from the dropdown menu, and then select **Add** to add the task to your YAML pipeline.
-
-    :::image type="content" border="false" source="media/azure-key-vault/configure-azure-key-vault-task.png" alt-text="A screenshot showing how to configure the Azure Key Vault task.":::
-
-    > [!NOTE]
-    > The **Make secrets available to whole job** feature is not supported in Azure DevOps Server 2019 and 2020.
-
-1. Your YAML file should look like the following:
+1. Let's add the following tasks to copy and publish our secret. This example is for demonstration purposes only and should not be implemented in a production environment.
 
     ```YAML
     trigger:
@@ -140,112 +276,192 @@ We will use YAML to create our pipeline but first we need to create a new repo.
     
     steps:
     - task: AzureKeyVault@2
+      displayName: Azure Key Vault
       inputs:
-        azureSubscription: 'Your-Azure-Subscription'
-        KeyVaultName: 'Your-Key-Vault-Name'
+        azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
+        KeyVaultName: 'YOUR_KEY_VAULT_NAME'
         SecretsFilter: '*'
         RunAsPreJob: false
     
     - task: CmdLine@2
+      displayName: Create file
       inputs:
-        script: 'echo $(Your-Secret-Name) > secret.txt'
+        script: 'echo $(YOUR_SECRET_NAME) > secret.txt'
     
     - task: CopyFiles@2
+      displayName: Copy file
       inputs:
         Contents: secret.txt
         targetFolder: '$(Build.ArtifactStagingDirectory)'
 
     - task: PublishBuildArtifacts@1
+      displayName: Publish Artifact
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
     ```
 
-#### [Classic](#tab/classic)
-
-1. Select **Pipelines**, and then select **New Pipeline**.
-
-1. Select **Use the classic editor** to create a pipeline without YAML.
-
-1. Select **Azure Repos Git**, and then select your repository and default branch. Select **Continue** when you are done.
-
-1. Select the **.Net Desktop** pipeline template.
-
-1. For this example, we will only need the last two tasks from the template. Press CTRL and then select the first five tasks, right-click and choose **Remove selected tasks(s)** to delete them.
-
-    :::image type="content" border="false" source="media/delete-tasks.png" alt-text="A screenshot showing how to delete pipeline tasks.":::
-
-1. Select **+** to add a new task. Add the **Command line** task and configure it as follows:
-    
-    Display name: Command Line Script.
-    Script: ```echo $(Your-Secret-Name) > secret.txt```
-
-    :::image type="content" border="false" source="media/cmd-task.png" alt-text="A screenshot showing how to configure the command line task.":::
-
-1. Select **+** to add a new task. Add the **Azure Key Vault** task and configure it as follows:
-
-    Display Name: Azure Key Vault
-    Azure subscription: Select your Azure subscription from the list, and then select **Authorize**.
-    Key vault: Select your key vault
-    Secret filter: A comma separated list of secret names or leave * to download all secrets from the selected key vault.
-    
-    :::image type="content" border="false" source="media/key-vault-classic.png" alt-text="A screenshot showing how to configure the Azure Key Vault task.":::
-
-1. Select the **Copy files** task and fill out the required fields.
-
-    :::image type="content" border="false" source="media/copy-task.png" alt-text="A screenshot showing how to set up the copy files task.":::
-
-1. Select the **Publish Artifacts** and keep the default settings.
-
-    :::image type="content" border="false" source="media/publish-artifacts.png" alt-text="A screenshot showing how to set up the publish artifacts task.":::
-
-***
-
-Don't save or queue your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your browser tab open, we will resume the remaining steps once we set up the key vault permissions.
-
-## Set up Azure Key Vault access policies
-
-In order to access our Azure Key Vault, we must first set up a service principal to give access to Azure Pipelines. Follow [this guide](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) to create your service principal and then proceed with the next steps in this section.
-
-1. Navigate to [Azure portal](https://azure.microsoft.com/).
-
-1. Use the search bar to search for the key vault you created earlier.
-
-    :::image type="content" border="false" source="media/azure-key-vault/search-azure-key-vault.png" alt-text="A screenshot showing how to search for your Azure Key Vault.":::
-
-1. Under **Settings** Select **Access policies**.
-
-1. Select **Add Access Policy** to add a new policy.
-
-1. For **Secret permissions**, select **Get** and **List**.
-
-1. Select the option to select a service principal and search for the one you created in the beginning of this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
-
-1. Select **Add** to create the access policy, then select **Save** when you are done.
-
-> [!NOTE]
-> Azure Key Vaults that use Azure role-based access control (Azure RBAC) are not supported.
-
-## Run and review the pipeline
-
-1. Return to the previous tab where we left off.
-
-1. Select **Save**, and then select **Save** again to commit your changes and trigger the pipeline. You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once.
+1. Select **Save and run**, and then select it once more to commit your changes and trigger the pipeline. You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once.
 
 1. Select the **CmdLine** task to view the logs.
 
     :::image type="content" border="false" source="media/azure-key-vault/command-line-task.png" alt-text="A screenshot showing the command-line task logs.":::
 
-1. Return to pipeline summary and select the published artifact.
+1. Once the pipeline run is complete, return to the pipeline summary and select the published artifact.
 
-    :::image type="content" border="false" source="media/azure-key-vault/pipeline-summary.png" alt-text="A screenshot showing the pipeline summary and the published artifact.":::
+    :::image type="content" border="false" source="media/azure-key-vault/pipeline-summary.png" alt-text="A screenshot showing the published artifact in the summary tab.":::
 
-1. Select the **secret.txt** artifact to open it.
+1. Select **drop** > **secret.txt** to download it.
 
-    :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to open the published artifact.":::
+    :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to download the published artifact.":::
 
-1. The text file should contain our secret: *mysecretpassword*.
+1. Open the text file you just downloaded, the text file should contain the secret from your Azure key vault.
+
+***
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+#### [Classic](#tab/classic)
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Pipelines**, and then select **Builds**.
+
+1. Select **New** > **New build pipeline**.
+
+1. Select **Use the classic editor** to create a new classic build pipeline.
+
+1. Select **Azure Repos Git**, select your repository and your default branch, and then select **Continue**.
+
+1. Select the **.Net Desktop** pipeline template, and then select **Apply**.
+
+1. For this example, we will only need the last two tasks. Press CTRL and then select the first five tasks, right-click and choose **Remove selected tasks(s)** to delete them.
+
+    :::image type="content" border="false" source="media/delete-tasks.png" alt-text="A screenshot showing how to delete multiple pipeline tasks in classic pipelines in Azure DevOps Server 2019.":::
+
+1. Select **+** to add a new task. Search for the **Command line** task, select it, and then select **Add** to add it to your pipeline. Once added, configure it as follows:
+    
+    - **Display name**: Create file
+    - **Script**: `echo $(YOUR_SECRET_NAME) > secret.txt`
+
+    :::image type="content" border="false" source="media/create-secret-file.png" alt-text="A screenshot showing how to configure the command line task in classic pipelines in Azure DevOps Server 2019.":::
+
+1. Select **+** to add a new task. Search for the **Azure Key Vault** task, select it, and then select *Add** to add it to your pipeline. Once added, configure it as follows:
+
+    - **Display name**: Azure Key Vault
+    - **Azure subscription**: select your service principal service connection you created earlier
+    - **Key vault**: select your key vault
+    - **Secret filter**: A comma separated list of secret names or leave * to download all secrets from the selected key vault
+    
+    :::image type="content" border="false" source="media/azure-key-vault-classic-task-setup-server-2019.png" alt-text="A screenshot showing how to set up the Azure Key Vault task in a classic pipeline in Azure DevOps Server 2019.":::
+
+1. Select the **Copy files** task and fill out the required fields as follows:
+    
+    - **Display name**: Copy File
+    - **Contents**: secret.txt
+    - **Target Folder**: $(build.artifactstagingdirectory)
+
+    :::image type="content" border="false" source="media/copy-files-task-classic-pipeline.png" alt-text="A screenshot showing how to set up the copy files task in classic pipelines in Azure DevOps Server 2019.":::
+
+1. Select the **Publish Artifacts** task and fill out the required fields as follows:
+
+    - **Display name**: Publish Artifact
+    - **Path to publish**: $(build.artifactstagingdirectory)
+    - **Artifact name**: drop
+    - **Artifact publish location**: Azure Pipelines
+    
+    :::image type="content" border="false" source="media/publish-artifacts-classic-pipeline.png" alt-text="A screenshot showing how to set up the publish artifacts task in classic pipelines in Azure DevOps Server 2019.":::
+
+1. Select **Save & queue**, and then select **Save & queue** to run your build pipeline.
+
+1. Once the pipeline run is complete, select **Artifacts** and then select **drop**.
+
+1. In the newly opened window, select **drop** > **secret.txt**, select the ellipsis icon (...), and then select **download** to save the text file.
+
+1. Open the text file you just downloaded, it should contain the secret from your Azure key vault.
+
+#### [YAML](#tab/yaml)
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Pipelines**, and then select **Builds**.
+
+1. Select **New** > **New build pipeline**.
+
+1. Select **Azure Repos Git** (YAML), and then select your repository.
+
+1. Select the **Starter pipeline** template.
+
+1. The default pipeline will include a script that runs echo commands. Those are not needed so we can delete them.
+
+1. Add the AzureKeyVault task, replacing the placeholders with the name of the service connection you created earlier and your key vault name. Your YAML file should resemble the following snippet:
+
+    ```yml
+    trigger:
+    - main
+    
+    pool:
+      name: default
+    
+    steps:
+    - task: AzureKeyVault@1
+      displayName: Azure Key Vault
+      inputs:
+        azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
+        KeyVaultName: 'YOUR_KEY_VAULT_NAME'
+        SecretsFilter: '*'
+    ```
+
+1. Let's add the following tasks to copy and publish our secret. This example is for demonstration purposes only and should not be implemented in a production environment.
+
+    ```YAML
+    trigger:
+    - main
+    
+    pool:
+      name: default
+    
+    steps:
+    - task: AzureKeyVault@1
+      displayName: Azure Key Vault
+      inputs:
+        azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
+        KeyVaultName: 'YOUR_KEY_VAULT_NAME'
+        SecretsFilter: '*'
+    
+    - task: CmdLine@2
+      displayName: Create file
+      inputs:
+        script: 'echo $(YOUR_SECRET_NAME) > secret.txt'
+    
+    - task: CopyFiles@2
+      displayName: Copy file
+      inputs:
+        Contents: secret.txt
+        targetFolder: '$(Build.ArtifactStagingDirectory)'
+
+    - task: PublishBuildArtifacts@1
+      displayName: Publish Artifact
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+    ```
+
+1. Select **Save and run**, and then select it once more to commit your changes and trigger the pipeline.
+
+1. Once the pipeline run is complete, select **Artifacts** and then select **drop**.
+
+1. In the newly opened window, select **drop** > **secret.txt**, select the ellipsis icon (...), and then select **download** to save the text file.
+
+1. Open the text file you just downloaded, it should contain the secret from your Azure key vault.
+
+***
+
+::: moniker-end
 
 > [!WARNING]
 > This tutorial is for educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
@@ -254,12 +470,12 @@ In order to access our Azure Key Vault, we must first set up a service principal
 
 Follow the steps below to delete the resources you created:
 
-1. If you created a new organization to host your project, see [how to delete your organization](../../organizations/accounts/delete-your-organization.md), otherwise [delete your project](../../organizations/projects/delete-project.md).
+1. If you've created a new organization to host your project, see [how to delete your organization](../../organizations/accounts/delete-your-organization.md), otherwise [delete your project](../../organizations/projects/delete-project.md).
 
-1. All Azure resources created during this tutorial are hosted under a single resource group *PipelinesKeyVaultResourceGroup*. Run the following command to delete the resource group and all of its resources.
+1. All Azure resources created during this tutorial are hosted under a single resource group. Run the following command to delete your resource group and all of its resources.
 
     ```azurecli
-    az group delete --name PipelinesKeyVaultResourceGroup
+    az group delete --name <YOUR_RESOURCE_GROUP_NAME>
     ```
 
 ## FAQ
@@ -277,10 +493,8 @@ $spnObjectId=$spn.Id;
 Set-AzureRmKeyVaultAccessPolicy -VaultName key-vault-tutorial -ObjectId $spnObjectId -PermissionsToSecrets get,list;
 ```
 
-## Next steps
+## Related articles
 
-> [!div class="nextstepaction"]
->
-> [Artifacts in Azure Pipelines](../artifacts/artifacts-overview.md)
-> [Publish and download artifacts in Azure Pipelines](../artifacts/pipeline-artifacts.md)
-> [Release artifacts and artifact sources](artifacts.md)
+- [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md)
+- [Release artifacts and artifact sources](artifacts.md)
+- [Use gates and approvals to control deployment](deploy-using-approvals.md)
