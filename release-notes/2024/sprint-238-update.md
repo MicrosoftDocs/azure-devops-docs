@@ -1,11 +1,11 @@
 ---
-title: Improvements to secret scanning capabilities and New Board Hub on by default
+title: TBD
 author: ckanyika
 ms.author: ckanyika
 ms.date: 5/1/2024
-description: Improvements to secret scanning capabilities and New Board Hub on by default
+description: TBD
 ---
-# Improvements to secret scanning capabilities and New Board Hub on by default
+# TBD
 
 We're excited to announce we're rolling out a security overview, a single pane of glass view for your Advanced Security alerts and enablement, and we've also improved our secret scanning capabilities by adding more partner patterns in GitHub Advanced Security! This will significantly increase the detection abilities of our secret scanning feature, providing a more secure environment for your projects.
 
@@ -13,25 +13,25 @@ With this update, we're close to making New Boards Hub your default experience! 
 
 Check out the release notes for details.
 
+### General
+
+[!INCLUDE [sprint-238-update-links](includes/general/sprint-238-update-links.md)]
+
 ### GitHub Advanced Security for Azure DevOps
 
 [!INCLUDE [sprint-238-update-links](includes/ghazdo/sprint-238-update-links.md)]
-
-### Azure Boards
-
-[!INCLUDE [sprint-238-update-links](includes/boards/sprint-238-update-links.md)]
 
 ### Azure Pipelines
 
 [!INCLUDE [sprint-238-update-links](includes/pipelines/sprint-238-update-links.md)]
 
+## General
+
+[!INCLUDE [sprint-238-update](includes/general/sprint-238-update.md)]
+
 ## GitHub Advanced Security for Azure DevOps
 
 [!INCLUDE [sprint-238-update](includes/ghazdo/sprint-238-update.md)]
-
-## Azure Boards
-
-[!INCLUDE [sprint-238-update](includes/boards/sprint-238-update.md)]
 
 ## Azure Pipelines
 

@@ -37,6 +37,14 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="5"><a href="2024/sprint-238-update.md" data-raw-source="[1 May 2024](2024/sprint-238-update.md)"> 1 May  2024</a></td>
+     <td>Wildcard as prefix search / substring search</td><td>General</td><td>Future</td></tr>
+    <td>Security overview risk view links to repository alerts</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Publish task for integrating with third-party providers</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>macOS-14 Sonoma is available in preview, macOS-11 will be retired June 2024</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Node 10 removed from pipelines-* Pipeline agent packages</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
+<tr>
     <td rowspan="8"><a href="2024/sprint-237-update.md" data-raw-source="[10 April 2024](2024/sprint-237-update.md)"> 10 April  2024</a></td>
     <td>Expanded set of Secret Scanning detections</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Secret Scanning now detects non-provider patterns</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
