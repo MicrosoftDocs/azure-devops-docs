@@ -238,7 +238,7 @@ Next, create the Dockerfile.
       # Another option is to run the agent as root.
       # ENV AGENT_ALLOW_RUNASROOT="true"
 
-      ENTRYPOINT ./start.sh
+      ENTRYPOINT [ "./start.sh" ]
       ```
 
     * For Ubuntu 22.04:
@@ -263,7 +263,7 @@ Next, create the Dockerfile.
       # Another option is to run the agent as root.
       # ENV AGENT_ALLOW_RUNASROOT="true"
 
-      ENTRYPOINT ./start.sh
+      ENTRYPOINT [ "./start.sh" ]
       ```
 
     Uncomment the `ENV AGENT_ALLOW_RUNASROOT="true"` line and remove adding the `agent` user before this line if you want to run the agent as root.

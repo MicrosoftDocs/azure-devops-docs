@@ -17,7 +17,7 @@ ms.date: 10/26/2022
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can create work items and monitor work item activity in your Azure Boards project from your Teams channel. You accomplish this by adding the [Azure Boards app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview) to your Teams channel.
+If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can create work items and monitor work item activity in your Azure Boards project from your Teams channel. You accomplish this by adding the Azure Boards app for Microsoft Teams to your Teams channel.
 
 The Azure Boards app for Microsoft Teams enables users to complete the following tasks: 
 - Set up and manage subscriptions for creating and updating work items
@@ -356,7 +356,7 @@ This scenario isn't supported today
   
  ## Troubleshoot errors
 
-If you're experiencing the following errors when using the [Azure Boards App for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview), follow the procedures in this section.
+If you're experiencing the following errors when using the Azure Boards App for Microsoft Teams, follow the procedures in this section.
 
 [!INCLUDE [troubleshooting](includes/boards-troubleshoot-authentication.md)]
 

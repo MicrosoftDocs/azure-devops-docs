@@ -50,7 +50,7 @@ Assign any of the following roles to a user under the subscription your organiza
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Learn about Azure Cost Management and Billing](/azure/cost-management-billing/cost-management-billing-overview)
+> [Learn about Azure Cost Management and billing](/azure/cost-management-billing/cost-management-billing-overview)
 
 ## Related articles
 

@@ -39,9 +39,9 @@
   - name: Remove users from Azure DevOps
     displayName: delete, revoke, organization, members
     href: ../accounts/delete-organization-users.md
-  - name: Remove user accounts from Active Directory
+  - name: Remove user accounts from Microsoft Entra ID
     displayName: delete, revoke, organization, members
-    href: remove-users-prohibit-access.md
+    href: /azure/active-directory/add-users-azure-active-directory#delete-a-user
   - name: Manage access with Microsoft Entra ID
     items:
     - name: Connect organization to Microsoft Entra ID
@@ -75,7 +75,7 @@
     href: ../accounts/delete-organization-users.md
   - name: Remove user accounts from Active Directory
     displayName: delete, revoke, organization, members
-    href: remove-users-prohibit-access.md
+    href: /azure/active-directory/add-users-azure-active-directory#delete-a-user?toc=/azure/devops/organizations/security/toc.json
 - name: Billing
   href: ../billing/toc.yml
 - name: Authenticate, PATs, & secure applications
@@ -270,8 +270,6 @@
     href: troubleshoot-permissions.md
   - name: User & permissions management FAQs
     href: ../accounts/faq-user-and-permissions-management.yml?toc=/azure/devops/organizations/security/toc.json
-  - name: Access and permissions FAQs
-    href: faq-permissions.yml
   - name: Authenticate & invite with GitHub
     href: faq-github-authentication.yml
   - name: Access with Microsoft Entra FAQs
@@ -304,9 +302,6 @@
     href: manage-tokens-namespaces.md
   - name: Enable DevSecOps with Azure and GitHub
     href: /devops/devsecops/enable-devsecops-azure-github
-  - name: Security key concepts
-    displayName: definitions, terms, manage, authentication, permission
-    href: security-glossary.md
 - name: Resources
   items:
   - name: Get started

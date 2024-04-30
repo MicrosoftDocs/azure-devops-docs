@@ -33,6 +33,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
 | Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-latest` OR `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme)
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://aka.ms/ubuntu-20.04-readme)
+| macOS 14 Sonoma (preview) | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 | macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
 | macOS 12 Monterey | *macOS-12* | `macOS-latest` OR `macOS-12` | [Link](https://aka.ms/macOS-12-readme) |
 | macOS 11 Big Sur (deprecated) | *macOS-11* | `macOS-11` | [Link](https://aka.ms/macOS-11-readme) |
@@ -44,6 +45,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
+* The macOS-14 Sonoma image is available in preview
 * The macOS-11 Big Sur image is deprecated and will be retired June 28, 2024.
 * All Microsoft hosted agents will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS starting January 28. For more information, including potential breaking changes, see [Microsoft hosted agents use PowerShell 7.4](/azure/devops/release-notes/2024/sprint-233-update#microsoft-hosted-agents-use-powershell-74).
 * The macOS 13 image is generally available
