@@ -1,6 +1,6 @@
 ---
 title: Deploy an Azure Pipelines agent on Windows (2.x)
-description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS (2.x)
+description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and Azure DevOps Server (2.x)
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.date: 04/17/2024
@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 :::moniker range="azure-devops"
 
 > [!IMPORTANT]
-> This article provides guidance for using the 2.x version agent software with Azure DevOps Server and TFS. If you're using Azure DevOps Services, see [Self-hosted Windows agents](windows-agent.md).
+> This article provides guidance for using the 2.x version agent software with Azure DevOps Server. If you're using Azure DevOps Services, see [Self-hosted Windows agents](windows-agent.md).
 
 :::moniker-end
 
@@ -152,20 +152,20 @@ Then paste the [PAT token you created](#permissions) into the command prompt win
 > 
 > Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
 
-When you configure your agent to connect to TFS, you've got the following options:
+When you configure your agent to connect to Azure DevOps Server, you've got the following options:
 
-* **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
+* **Alternate** Connect to Azure DevOps Server using Basic authentication. After you select Alternate you'll be prompted for your credentials.
 
-* **Negotiate** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
+* **Negotiate** Connect to Azure DevOps Server as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
 
-* **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
+* **Integrated** (Default) Connect a Windows agent to Azure DevOps Server using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
 
-* **PAT** Supported only on Azure Pipelines and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
+* **PAT** After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your Azure DevOps Server instance and the agent machine are not in a trusted domain. PAT authentication is handled by your Azure DevOps Server instance instead of the domain controller.
 
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. If the PAT needs to be regenerated, no further changes are needed to the agent. 
 
-Learn more at [Communication with Azure Pipelines or TFS](agents.md#communication).
+Learn more at [Communication with Azure Pipelines or Azure DevOps Server](agents.md#communication).
 
 ::: moniker-end
 
