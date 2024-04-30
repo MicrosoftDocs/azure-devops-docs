@@ -34,7 +34,7 @@ Most areas of Azure DevOps localize using your Profile settings, but the followi
 
 - Audit TimeStamps are always in UTC.
 
-- Scheduled triggers in code, for example, run with a `cron` job, don't require a time zone to be included. If you don't add add a time zone to your trigger, the organization's time zone is used. In classic pipelines, the schedules are in the organization's time zone. For more information about configuring your pipeline to run with a `cron` job, see [Configure schedules for pipelines](../../pipelines/process/scheduled-triggers.md).
+- Scheduled triggers in code, for example, run with a `cron` job, don't require a time zone to be included. If you don't add a time zone to your trigger, the organization's time zone is used. In classic pipelines, the schedules are in the organization's time zone. For more information about configuring your pipeline to run with a `cron` job, see [Configure schedules for pipelines](../../pipelines/process/scheduled-triggers.md).
 
 If you change the organization time zone, it doesn't retroactively update existing time stamps that aren't localized. For example, if your organization is set to UTC and you set up a YAML pipeline with a `cron` job set to 12PM without including EST, this pipeline runs at 5PM EST. If you change the organization's time zone to EST, then this pipeline runs at midnight. If you specify 5PM EST in the code, after the change, it continues to run at 5PM. 
 
