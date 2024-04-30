@@ -49,7 +49,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 ### Hardware specs 
 
 The hardware specs for your agents vary with your needs, team size, etc.
-It's not possible to make a general recommendation that apply to everyone.
+It's not possible to make a general recommendation that applies to everyone.
 As a point of reference, the Azure DevOps team builds the hosted agents code using pipelines that utilize [hosted agents](hosted.md).
 On the other hand, the bulk of the Azure DevOps code is built by 24-core server class machines
 running 4 self-hosted agents apiece.
@@ -154,9 +154,9 @@ Then paste the [PAT token you created](#permissions) into the command prompt win
 
 When you configure your agent to connect to Azure DevOps Server, you've got the following options:
 
-* **Alternate** Connect to Azure DevOps Server using Basic authentication. After you select Alternate you are prompted for your credentials.
+* **Alternate** Connect to Azure DevOps Server using Basic authentication. After you select Alternate you're prompted for your credentials.
 
-* **Negotiate** Connect to Azure DevOps Server as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you are prompted for credentials.
+* **Negotiate** Connect to Azure DevOps Server as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you're prompted for credentials.
 
 * **Integrated** (Default) Connect a Windows agent to Azure DevOps Server using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
 
@@ -201,9 +201,9 @@ Agents in this mode will accept only one job and then spin down gracefully (usef
 ### Run as a service
 
 If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for one of:
-- "Azure Pipelines Agent (*name of your agent*)".
-- "VSTS Agent (*name of your agent*)".
-- "vstsagent.(*organization name*).(*name of your agent*)".
+- `Azure Pipelines Agent (*name of your agent*)`
+- `VSTS Agent (*name of your agent*)`
+- `vstsagent.(*organization name*).(*name of your agent*)`
 
 > [!Note]
 > To allow more flexibility with access control of an agent running as a service it
@@ -292,7 +292,7 @@ The help provides information on authentication alternatives and unattended conf
 
 ### How do I restart the agent
 
-If you are running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you are running the agent as a service, restart the agent by following the steps in [Run as a service](#run-as-a-service).
+If you're running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you're running the agent as a service, restart the agent by following the steps in [Run as a service](#run-as-a-service).
 
 ::: moniker range="azure-devops"
 ### How do I set different environment variables for each individual agent?
