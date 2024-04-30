@@ -1,17 +1,29 @@
 ---
-title: Connect to Azure Artifacts feeds - dotnet
-description: How to connect to an Azure Artifacts feed - dotnet
+title: Connect to Azure Artifacts feeds with dotnet
+description: How to connect to Azure Artifacts feeds with dotnet
 ms.service: azure-devops-artifacts
 ms.custom: devx-track-dotnet
 ms.topic: conceptual
-ms.date: 07/12/2022
-monikerRange: '<= azure-devops'
+ms.date: 04/30/2024
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Connect to Azure Artifacts feeds (dotnet)
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
+Using Azure Artifacts, you can seamlessly publish your NuGet packages to Azure Artifacts feeds so you can share them with others privately or publicly based on your feed's visibility settings. This guide will walk you through setting up your project to authenticate with your Azure Artifacts feed using the dotnet command-line interface.
+
+## Prerequisites
+
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
+
+- Download and install the [Credential provider](https://github.com/microsoft/artifacts-credprovider).
+
+- Download and install the [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download).
 
 ## Project setup
 
