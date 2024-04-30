@@ -18,7 +18,7 @@ monikerRange: '<= azure-devops'
 
 :::moniker-end
 
-To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
+To build and deploy Windows, Azure, and other Visual Studio solutions you need at least one Windows agent. Windows agents can also build Java and Android apps.
 
 > Before you begin:
 > * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
@@ -48,8 +48,8 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### Hardware specs 
 
-The hardware specs for your agents will vary with your needs, team size, etc.
-It's not possible to make a general recommendation that will apply to everyone.
+The hardware specs for your agents vary with your needs, team size, etc.
+It's not possible to make a general recommendation that apply to everyone.
 As a point of reference, the Azure DevOps team builds the hosted agents code using pipelines that utilize [hosted agents](hosted.md).
 On the other hand, the bulk of the Azure DevOps code is built by 24-core server class machines
 running 4 self-hosted agents apiece.
@@ -65,7 +65,7 @@ running 4 self-hosted agents apiece.
 
 ### Azure Pipelines
 
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
+1. Log on to the machine using the account for which you've prepared permissions as explained in the previous section.
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
@@ -83,7 +83,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 1. Follow the instructions on the page to download the agent.
 
-1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
+1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`, and respond to a series of questions to configure the agent.
 
 ::: moniker-end
 
@@ -154,9 +154,9 @@ Then paste the [PAT token you created](#permissions) into the command prompt win
 
 When you configure your agent to connect to Azure DevOps Server, you've got the following options:
 
-* **Alternate** Connect to Azure DevOps Server using Basic authentication. After you select Alternate you'll be prompted for your credentials.
+* **Alternate** Connect to Azure DevOps Server using Basic authentication. After you select Alternate you are prompted for your credentials.
 
-* **Negotiate** Connect to Azure DevOps Server as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
+* **Negotiate** Connect to Azure DevOps Server as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you are prompted for credentials.
 
 * **Integrated** (Default) Connect a Windows agent to Azure DevOps Server using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
 
