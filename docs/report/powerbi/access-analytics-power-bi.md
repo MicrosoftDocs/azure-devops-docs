@@ -38,7 +38,7 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
 
 3. On the Power BI Desktop welcome page or home ribbon, select **Get data**.
 
-	:::image type="content" source="media/data-connector/get-data-splash-screen.png" alt-text="Screenshot of Power BI Desktop splash screen, "Get data" button."::: 
+	:::image type="content" source="media/data-connector/get-data-splash-screen.png" alt-text="Screenshot of Power BI Desktop splash screen, Get data button."::: 
 
 4. Select **Other** > **OData Feed** > **Connect**.  
     
