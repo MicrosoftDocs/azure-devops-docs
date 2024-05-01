@@ -38,23 +38,21 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
 
 3. On the Power BI Desktop welcome page or home ribbon, select **Get data**.
 
-	> [!div class="mx-imgBorder"]  
-    ![Screenshot of Power BI Desktop splash screen, "Get data" button.](media/data-connector/get-data-splash-screen.png) 
+	:::image type="content" source="media/data-connector/get-data-splash-screen.png" alt-text="Screenshot of Power BI Desktop splash screen, "Get data" button."::: 
 
 4. Select **Other** > **OData Feed** > **Connect**.  
     
-    > [!div class="mx-imgBorder"]  
-    ![Screenshot showing the OData Feed button.](media/pbi2.png)  
+    :::image type="content" source="media/pbi2.png" alt-text="Screenshot showing the OData Feed button."::: 
 
 5. In a supported browser, enter the URL in the following format 
 `https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/`.  
 
    For example, if {*OrganizationName*} is **fabrikam** and {*version*} is **v1.0**, the URL is `https://analytics.dev.azure.com/fabrikam/_odata/v1.0/`.
 
-    ![Screenshot of Enter OData Feed URL.](media/pbi3.png)
+    :::image type="content" source="media/pbi3.png" alt-text="Screenshot of Enter OData Feed URL.":::
 
    > [!NOTE]  
-   >Alternatively, you can enter the URL with the *ProjectName* specified, as shown in the following example:  
+   > Alternatively, you can enter the URL with the *ProjectName* specified, as shown in the following example:  
    >`https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/`
    >Using this format trims the results by the specified project across all entities related to that project.
 
@@ -65,9 +63,9 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
 	> [!IMPORTANT]  
 	> Do not select entities whose name includes *Snapshot*. Such entities contain the state of every work item on each day since the work item was created. For repositories of any size, selecting these entities causes tens to hundreds of millions of work items to fail to load. *Snapshot* tables are intended only for [aggregation queries](../extend-analytics/odata-query-guidelines.md).
 
-    ![Screenshot of the Entities list on the Navigator page.](media/pbi4.png)
+    :::image type="content" source="media/pbi4.png" alt-text="Screenshot of the Entities list on the Navigator page.":::
 
-3. Select **Transform Data**. *Don't* select **Load**. 
+8. Select **Transform Data**. *Don't* select **Load**. 
 
    > [!IMPORTANT]
    > For each entity that you've selected, Power Query creates a query. You must manually update each query to *prevent throttling errors*. Power Query attempts to resolve null values as errors by generating an additional query for every null value it encounters. This action can result in thousands of queries, which can quickly exceed your usage threshold, beyond which your user account gets throttled.
@@ -76,26 +74,25 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
    > - Instruct Power BI to reference OData v4.
    > - Instruct the Analytics service to omit any values that are null, which improves query performance.
 
-4. For each entity that you selected in the preceding steps, do the following steps:
+9. For each entity that you selected in the preceding steps, do the following steps:
 
     a. In the **Queries** list, select an entity whose query you want to. In this example, **Areas** is selected.
-      
-    ![Screenshot of the Power BI OData Feed Queries list.](media/pbi5.png)  
+    
+    :::image type="content" source="media/pbi5.png" alt-text="Screenshot of the Power BI OData Feed Queries list.":::
     
     b. In the ribbon, select **Advanced Editor**.
     
-    ![Screenshot of the Power BI OData Feed Advanced Editor button.](media/AdvancedEditor.png)
+    :::image type="content" source="media/AdvancedEditor.png" alt-text="Screenshot of the Power BI OData Feed Advanced Editor button.":::
     
     c. In the **Query** pane, scroll horizontally to view the `[Implementation="2.0"]` parameter.
     
-    ![Screenshot of the Advanced Editor Query pane.](media/odataquery-powerbi-advancededitor1.png)
+    :::image type="content" source="media/odataquery-powerbi-advancededitor1.png" alt-text="Screenshot of the Advanced Editor Query pane.":::
     
-    d. Replace `[Implementation="2.0"]` with the following string:  
-        `[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]` 
+    d. Replace `[Implementation="2.0"]` with the following string: `[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]` 
     
-    ![Screenshot showing the replaced string.](media/odataquery-powerbi-advancededitor2.png)
+    :::image type="content" source="media/odataquery-powerbi-advancededitor2.png" alt-text="Screenshot showing the replaced string.":::
     
-5. Select **Close & Apply**. 
+10. Select **Close & Apply**. 
 
 ## Related content
 
