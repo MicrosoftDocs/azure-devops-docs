@@ -38,13 +38,15 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
 
 3. On the Power BI Desktop welcome page or home ribbon, select **Get data**.
 
-	![Screenshot of Power BI Desktop splash screen, "Get data" button.](media/data-connector/get-data-splash-screen.png) 
+	> [!div class="mx-imgBorder"]  
+    ![Screenshot of Power BI Desktop splash screen, "Get data" button.](media/data-connector/get-data-splash-screen.png) 
 
-4. In the left pane, select **Other** > **OData Feed**, and then select **Connect**.  
-
+4. Select **Other** > **OData Feed** > **Connect**.  
+    
+    > [!div class="mx-imgBorder"]  
     ![Screenshot showing the OData Feed button.](media/pbi2.png)  
 
-5. In a supported browser, enter the URL in the format 
+5. In a supported browser, enter the URL in the following format 
 `https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/`.  
 
    For example, if {*OrganizationName*} is **fabrikam** and {*version*} is **v1.0**, the URL is `https://analytics.dev.azure.com/fabrikam/_odata/v1.0/`.
@@ -56,12 +58,12 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
    >`https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/`
    >Using this format trims the results by the specified project across all entities related to that project.
 
-1. At the prompt, [authenticate against the service](client-authentication-options.md).
+6. At the prompt, [authenticate against the service](client-authentication-options.md).
 
-2. Select the check boxes next to the entities whose data you want to retrieve.
+7. Select the check boxes next to the entities whose data you want to retrieve.
 
 	> [!IMPORTANT]  
-	> Do *not* select entities whose name includes *Snapshot*. Such entities contain the state of every work item on each day since the work item was created. For repositories of any size, selecting these entities will cause tens to hundreds of millions of work items to fail to load. *Snapshot* tables are intended only for [aggregation queries](../extend-analytics/odata-query-guidelines.md).
+	> Do not select entities whose name includes *Snapshot*. Such entities contain the state of every work item on each day since the work item was created. For repositories of any size, selecting these entities causes tens to hundreds of millions of work items to fail to load. *Snapshot* tables are intended only for [aggregation queries](../extend-analytics/odata-query-guidelines.md).
 
     ![Screenshot of the Entities list on the Navigator page.](media/pbi4.png)
 
