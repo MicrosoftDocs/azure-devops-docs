@@ -8,7 +8,7 @@ ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/30/2024
+ms.date: 05/01/2024
 ---
 
 # Connect to Analytics data by using the Power BI OData feed
