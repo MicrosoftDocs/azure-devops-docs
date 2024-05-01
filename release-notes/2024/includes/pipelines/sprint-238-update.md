@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 5/1/2024
+ms.date: 5/2/2024
 ms.topic: include
 ---
 
@@ -34,14 +34,14 @@ As new Node versions are released, [tasks](https://github.com/microsoft/azure-pi
 
 As Node versions exit out of the upstream maintenance window, some Pipelines tasks still depend on it. Azure DevOps updates supported tasks to a supported Node version. Third party tasks may still need older Node versions to run.
 
-To accommodate this, we have 2 flavors of packages:
+To accommodate this, we have two packages:
 
 | Packages             | Node versions | Description                |
 |----------------------|---------------|----------------------------|
 | `vsts-agent-*`       | 6, 10, 16, 20 | Includes all Node versions that can be used as task execution handler |
 | `pipelines-agents-*` | 16, 20        | Includes only recent Node versions. The goal for these packages is to not include any end-of-life version of Node. |
 
-If you want to run a task that requires the Node 10 execution handler on an agent that does not have Node 10 bundled, you can install the execution handler by inserting the [NodeTaskRunnerInstaller@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0?view=azure-pipelines) task in your pipeline:
+If you want to run a task that requires the Node 10 execution handler on an agent that doesn't have Node 10 bundled, you can install the execution handler by inserting the [NodeTaskRunnerInstaller@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0?view=azure-pipelines) task in your pipeline:
 
 ```yaml
   steps:

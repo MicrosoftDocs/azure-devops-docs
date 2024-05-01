@@ -37,7 +37,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="5"><a href="2024/sprint-238-update.md" data-raw-source="[1 May 2024](2024/sprint-238-update.md)"> 1 May  2024</a></td>
+    <td rowspan="5"><a href="2024/sprint-238-update.md" data-raw-source="[2 May 2024](2024/sprint-238-update.md)"> 2 May  2024</a></td>
      <td>Wildcard as prefix search / substring search</td><td>General</td><td>Future</td></tr>
     <td>Security overview risk view links to repository alerts</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Publish task for integrating with third-party providers</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
