@@ -1,11 +1,11 @@
 ---
-title: Improved code security integration with third-party providers
+title: View third-party providers code scan results in Azure DevOps
 author: ckanyika
 ms.author: ckanyika
 ms.date: 5/2/2024
-description: Improved code security integration with third-party providers
+description: View third-party providers code scan results in Azure DevOps
 ---
-# Improved code security integration with third-party providers
+# View third-party providers code scan results in Azure DevOps
 
 As we continue our integration with GitHub Advanced Security, we are excited to announce that you can now leverage the publish task (AdvancedSecurity-Publish@1) to import security results from third-party providers into the Advanced Security Code Scanning alerts hub! 
 

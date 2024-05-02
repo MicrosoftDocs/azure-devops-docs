@@ -38,10 +38,10 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     </thead>
 <tr>
     <td rowspan="5"><a href="2024/sprint-238-update.md" data-raw-source="[2 May 2024](2024/sprint-238-update.md)"> 2 May  2024</a></td>
-    <td>Improve Search Results with Wildcard Prefixes and Substrings</td><td>General</td><td>Future</td></tr>
+    <td>Improve Search Results with wildcard prefixes and substrings</td><td>General</td><td>Future</td></tr>
     <td>Security overview risk view links to repository alerts</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Publish task for integrating with third-party providers</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-    <td>macOS-14 Sonoma is available in preview, macOS-11 will be retired June 2024 (preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>macOS-14 Sonoma preview and macOS-11 retirement </td><td>Pipelines</td><td>Future</td></tr>
     <td>Node 10 removed from pipelines-* Pipeline agent packages</td><td>Pipelines</td><td>Future</td></tr>
 <tr>
 <tr>

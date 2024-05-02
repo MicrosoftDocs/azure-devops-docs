@@ -5,7 +5,7 @@ ms.date: 5/2/2024
 ms.topic: include
 ---
 
-### macOS-14 Sonoma is available in preview, macOS-11 will be retired June 2024 (preview)
+### macOS-14 Sonoma preview and macOS-11 retirement 
 
 The `macOS-14` image is now available in preview for Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'macos-14'`:  
 
