@@ -5,4 +5,4 @@ ms.date: 5/2/2024
 ms.topic: include
 ---
 
-- [Wildcard as prefix search / substring search](#wildcard-as-prefix-search-substring-search)
+- [Improve Search Results with Wildcard Prefixes and Substringss](#improve-search-results-with-wildcard-prefixes-and-substrings)

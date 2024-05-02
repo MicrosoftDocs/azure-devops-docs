@@ -5,7 +5,7 @@ ms.date: 5/2/2024
 ms.topic: include
 ---
 
-### macOS-14 Sonoma is available in preview, macOS-11 will be retired June 2024
+### macOS-14 Sonoma is available in preview, macOS-11 will be retired June 2024 (preview)
 
 The `macOS-14` image is now available in preview for Azure Pipelines hosted agents. To use this image, update your YAML file to include `vmImage:'macos-14'`:  
 
@@ -26,15 +26,15 @@ The `macOS-12` image will still be used when specifying `macOS-latest`. Once `ma
 The `macOS-11` image is deprecated and will be retired June 2024.
 
 
-### Node 10 removed from pipelines-* Agent packages
+### Node 10 removed from pipelines-* Agent packages 
 
-Agent tasks can be implemented in PowerShell or Node. The agent ships with multiple versions of Node that tasks can target.
+Our agents support tasks implemented in PowerShell or Node. The agent ships with multiple versions of Node accommodate different task requirements.
 
-As new Node versions are released, [tasks](https://github.com/microsoft/azure-pipelines-tasks) are updated to use new Node versions. The runtimes are included with the agent.
+As new versions of Node are released, [tasks](https://github.com/microsoft/azure-pipelines-tasks) are update to utilize these newer Node versions. The required runtimes are included with the agent.
 
-As Node versions exit out of the upstream maintenance window, some Pipelines tasks still depend on it. Azure DevOps updates supported tasks to a supported Node version. Third party tasks may still need older Node versions to run.
+However, as older Nodes exit their maintenance window, some Pipelines tasks might still depend on them. Azure DevOps updates supported tasks to a Node version that's still supported, although third-party tasks might require older versions to run.
 
-To accommodate this, we have two packages:
+To manage this, we have two Pipeline agent [packages](https://github.com/microsoft/azure-pipelines-agent/releases):
 
 | Packages             | Node versions | Description                |
 |----------------------|---------------|----------------------------|

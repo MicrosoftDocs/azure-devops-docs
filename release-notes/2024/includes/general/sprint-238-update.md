@@ -5,6 +5,6 @@ ms.date: 5/2/2024
 ms.topic: include
 ---
 
-### Wildcard as prefix search / substring search
+### Improve Search Results with Wildcard Prefixes and Substrings
 
-Add wildcard to the beginning and to the end of a search term to look for all the strings, which contain your term across code, work items, wiki and packages. For example: if you type *test* in the search box, you'll get mytestclass, improvecodewithtest, and test_wikiarticle as search results. This feature is in the rollout phase and will be available to all customers during the next couple of weeks.
+We’re excited to announce our new search feature, which now supports wildcard as prefix and substring searches across code, work items, wiki, and packages. By adding a wildcard at the beginning and end of your search term, you can find all relevant strings that contain your term. For instance, entering “test” in the search box will yield results like “mytestclass”, “improvecodewithtest”, and “test_wikiarticle”. This feature will be rolled out over the next few weeks.
