@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps release notes - Azure DevOps Sprint 238 update
+title: Azure DevOps release notes - Azure DevOps Sprint 238 Update
 description: See the Sprint 238 feature updates for Azure DevOps, including next steps.
 author: ckanyika
 ms.author: ckanyika
