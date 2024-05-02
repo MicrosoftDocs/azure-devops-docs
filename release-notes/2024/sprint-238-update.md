@@ -1,13 +1,13 @@
 ---
-title: Simplifying Code Security Integration with Third-Party Providers
+title: Improved code security integration with third-party providers
 author: ckanyika
 ms.author: ckanyika
 ms.date: 5/2/2024
-description: Simplifying Code Security Integration with Third-Party Providers
+description: Improved code security integration with third-party providers
 ---
-# Simplifying Code Security Integration with Third-Party Providers
+# Improved code security integration with third-party providers
 
-As we continue our integration with GitHub Advanced Security, we are excited to announce that you can now leverage the publish task (AdvancedSecurity-Publish@1) to import security results from third-party providers into the Advanced Security Code Scanning alerts hub. This update supports SARIF 2.1, enabling a comprehensive view of security alerts across various analysis tools directly within Azure DevOps, simplifying the management of code security. 
+As we continue our integration with GitHub Advanced Security, we are excited to announce that you can now leverage the publish task (AdvancedSecurity-Publish@1) to import security results from third-party providers into the Advanced Security Code Scanning alerts hub! This update supports SARIF 2.1, enabling a comprehensive view of security alerts across various analysis tools directly within Azure DevOps, simplifying the management of code security.
 
 Check out the release notes for details.
 
