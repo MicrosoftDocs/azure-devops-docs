@@ -30,11 +30,11 @@ The `macOS-11` image is deprecated and will be retired June 2024.
 
 Our agents support tasks implemented in PowerShell or Node. The agent ships with multiple versions of Node accommodate different task requirements.
 
-As new versions of Node are released, [tasks](https://github.com/microsoft/azure-pipelines-tasks) are update to utilize these newer Node versions. The required runtimes are included with the agent.
+As new versions of Node are released, [tasks](https://github.com/microsoft/azure-pipelines-tasks) are updated to utilize these newer Node versions. The required runtimes are included with the agent.
 
 However, as older Nodes exit their maintenance window, some Pipelines tasks might still depend on them. Azure DevOps updates supported tasks to a Node version that's still supported, although third-party tasks might require older versions to run.
 
-To manage this, we have two Pipeline agent [packages](https://github.com/microsoft/azure-pipelines-agent/releases):
+To manage this, we have two Pipeline agents [packages](https://github.com/microsoft/azure-pipelines-agent/releases):
 
 | Packages             | Node versions | Description                |
 |----------------------|---------------|----------------------------|
