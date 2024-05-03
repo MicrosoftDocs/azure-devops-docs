@@ -28,7 +28,7 @@ The `macOS-11` image is deprecated and will be retired June 2024.
 
 ### Node 10 removed from pipelines-* Agent packages 
 
-Our agents support tasks implemented in PowerShell or Node. The agent ships with multiple versions of Node accommodate different task requirements.
+Our agents support tasks implemented in PowerShell or Node. The agent ships with multiple versions of Node accommodating different task requirements.
 
 As new versions of Node are released, [tasks](https://github.com/microsoft/azure-pipelines-tasks) are updated to utilize these newer Node versions. The required runtimes are included with the agent.
 
