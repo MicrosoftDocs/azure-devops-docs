@@ -22,16 +22,22 @@ This article will walk you through configuring your inbound access points to acc
 
 - An Azure subscription. [Create a free Azure account](https://azure.microsoft.com/free) if you don't have one already.
 
+- An Azure key vault. [Create a new Azure key vault](azure/key-vault/general/quick-create-portal).
+
+- A virtual network. [Create a virtual network](azure/virtual-network/quick-create-portal) if you have haven't already.
+
 ## Link key vault to a variable group
 
 Azure Pipelines enables developers to link an Azure key vault to a variable group and map selective vault secrets to it. A key vault that is used as a variable group can be accessed:
 
-1. From Azure DevOps, during the variable group configuration time.
+1. From Azure DevOps, during the variable group configuration time. (This approach is only supported in Azure DevOps Services).
 1. From a Self-hosted agent, during the pipeline job runtime.
 
 Follow the steps outlined in [Add & use variable groups](../library/variable-groups.md#link-secrets-from-an-azure-key-vault) to link your secrets to a variable group. See also [Manage key vault secrets](../library/variable-groups.md#link-secrets-from-an-azure-key-vault) for additional guidance on effectively managing your secrets.
 
 :::image type="content" source="media/access-private-key-vault.png" alt-text="A diagram showing the two different paths to access a private key vault.":::   
+
+::: moniker range="azure-devops"
 
 ## 1. Configure inbound access from Azure DevOps
 
@@ -48,3 +54,22 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 1. [Find your geography IP V4 ranges](../../organizations/security/allow-list-ip-url.md#inbound-connections).
 
 1. [Configure your key vault](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips) to allow access from static IP ranges.
+
+::: moniker-end
+
+## 2. Configure inbound access from Self-hosted Agents
+
+To have the ability to access a private key vault from an Azure Pipelines agent, you'll need to use either a Self-hosted agent ([Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [Mac](../agents/osx-agent.md)) or [Scale Set agents](../agents/scale-set-agents.md). This is because Microsoft Hosted agents, like other generic compute services, are not included in the key vault's list of [trusted services](/azure/key-vault/general/overview-vnet-service-endpoints#trusted-services).
+
+To establish connectivity with your private key vault, you must provide a [line of sight](../agents/agents.md#communication-to-deploy-to-target-servers) connectivity by configuring a private endpoint for your key vault. This endpoint must be routable and have its private DNS name resolvable from the Self-hosted Pipeline agent.
+
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+
+1. Use the search bar at the top of the page to find your Azure key vault.
+
+1. Once you've located your key vault in the search results, select it, and then navigate to **Settings** > **Networking**.
+
+1. Select **Private endpoint connections**, and then select **Create** to create a new private endpoint.
+
+    :::image type="content" source="media/key-vault-private-endpoint.png" alt-text="A screenshot showing how to create a new private endpoint connection for an Azure Key Vault.":::   
+
