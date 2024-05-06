@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 ms.date: 05/02/2024
 ---
 
-# Use the Dependency Tracker
+# Use the Dependency Tracker extension
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
@@ -82,7 +82,7 @@ Also, you should do the following configuration or customization tasks:
 - Customize your process as needed to support any other work items or fields. 
 - [Configure the Dependency Tracker](#configuration) to support your business needs and address any customizations.
 
-## Open the Dependency Tracker
+## Open the Dependency Tracker extension
 
 1. Open the web portal for the project where your team is defined.  
 
@@ -91,7 +91,7 @@ Also, you should do the following configuration or customization tasks:
     > [!div class="mx-imgBorder"]  
     > ![Screenshot showing Dependency Tracker hub in Azure Boards.](media/tracker/select-dependency-tracker.png)
 
-3. Choose the **Area** that corresponds to the team you want to view dependencies for.   
+3. Choose the **Area** that corresponds to the team you want to view dependencies for from the dropdown menu.   
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot showing selecting Area.](media/tracker/choose-area-path.png)
@@ -113,14 +113,13 @@ Toggle filters on and off by choosing the filter icon. To see more filters use t
 
 Choose one or more values from the drop-down menu for each field. These fields populate with the following values:
 
-- **State**: Check one or more check boxes for the  work item states you want to view. The drop-down list should include all workflow States defined for all work item types shown in the selected view.  
 - **Work item type**: Check one or more check boxes for the Work item types you want to view. Work item types configured to participate in dependency tracking. The default work item types are: Epic, Feature, User Story, and Bug. To modify the configuration, see [Configuration of Dependency Tracker](#configuration).
+- **State**: Check one or more check boxes for the  work item states you want to view. The drop-down list should include all workflow States defined for all work item types shown in the selected view.  
 - **Iteration**: Check one or more check boxes for the Iteration Paths you want to view. The drop-down list should include all Iteration Paths [configured for the project](../../organizations/settings/set-iteration-paths-sprints.md) and for which there are work items listed in the current view.
 - **Priority**:  Check one or more check boxes for the Priorities you want to view. The priority values assigned to work items  
 - **Partner**: The partner organization for which the work item is defined. 
 
-> [!NOTE]   
-> Filter options are dependent on the [configuration](#configuration) defined for the Dependency Tracker. Also, only those options that correspond to work items shown in the selected view that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option doesn't appear in the filter options for the Iteration Path. 
+Your filtering options are dependent on the [configuration](#configuration) defined for the Dependency Tracker and that correspond to work items shown in the selected view that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option doesn't appear in the filter options for the Iteration Path. 
 
 You can drop dependencies within the selected area, which excludes dependencies inside your team.
 
@@ -174,7 +173,7 @@ A dependency represents work where one team is dependent on another team. Both t
 
    The work items that you linked are highlighted.    
     
-    As shown in this example, the Fabrikam Fiber/Service Delivery/Voice team is dependent on the MyFirstProject team to deliver their `User Story 706: Cancel order form` to complete `Bug 390: Cancel order form`. 
+    In the following example, the Fabrikam Fiber/Service Delivery/Voice team is dependent on the MyFirstProject team to deliver their `User Story 706: Cancel order form` to complete `Bug 390: Cancel order form`. 
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of Create dependency dialog, Linked dependent work items.](media/tracker/linked-dependent-work-items.png)
