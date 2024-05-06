@@ -3,7 +3,7 @@ title: Deploy an Azure Pipelines agent on Linux
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 04/03/2024
+ms.date: 05/06/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -48,6 +48,7 @@ We support the following subset of .NET 6 supported distributions:
     * SUSE Enterprise Linux 12 SP2 or later
     * Ubuntu 22.04, 20.04, 18.04, 16.04
     * Azure Linux 2.0
+    * Oracle Linux 7 and higher
   * ARM64
     * Debian 10+
     * Ubuntu 22.04, 20.04, 18.04

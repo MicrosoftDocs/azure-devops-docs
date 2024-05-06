@@ -3,7 +3,7 @@ title: Agent software version 3
 description: Learn how to run pipelines using the version 3 agent software.
 monikerRange: '>= azure-devops-2022'
 ms.topic: conceptual
-ms.date: 11/27/2023
+ms.date: 05/06/2024
 ---
 
 # Agent software version 3
@@ -36,6 +36,7 @@ The following operating systems are supported by the 3.x agent.
     * SUSE Enterprise Linux 12 SP2 or later
     * Ubuntu 22.04, 20.04, 18.04, 16.04
     * Azure Linux 2.0
+    * Oracle Linux 7 and higher
   * ARM64
     * Debian 10+
     * Ubuntu 22.04, 20.04, 18.04
