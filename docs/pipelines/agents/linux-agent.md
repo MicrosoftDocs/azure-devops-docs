@@ -13,8 +13,7 @@ monikerRange: '<= azure-devops'
 
 :::moniker range="<=azure-devops"
 
-> [!IMPORTANT]
-> This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Services. If you're using Azure DevOps Server or TFS, see [Self-hosted Linux agents (Agent version 2.x)](v2-linux-agent.md).
+This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Services and current versions of Azure DevOps Server. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
 
 :::moniker-end
 

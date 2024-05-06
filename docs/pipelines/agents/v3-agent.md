@@ -129,7 +129,20 @@ The version of .NET used to run the 3.x agent is self-contained in the agent ins
 
 ### I use Azure DevOps Server and not Azure DevOps Service. Does this change impact me?
 
-No. The new agent is only applicable for Azure DevOps Service customers at this time. However, a future version of Azure DevOps Server will include the new agent. The pipelines team recommends that you update your agent machines to newer operating systems that are supported by .NET 6 starting now, if you plan to keep up with the Azure DevOps Server releases in the future.
+Yes, if you are using any of the versions of Azure DevOps Server listed in the following section.
+
+The pipelines team recommends that you update your agent machines to newer operating systems that are supported by .NET 6 starting now, if you plan to keep up with the Azure DevOps Server releases in the future.
+
+### Does Azure DevOps Server support the 3.x agent
+
+Azure DevOps Server versions support the version of the agent that is deployed with that version. The following versions of Azure DevOps Server include a version of the 3.x agent.
+
+* [Azure DevOps Server 2022 Update 1](/azure/devops/server/release-notes/azuredevops2022u1)
+* [Azure DevOps Server 2022 Update 0.1 Patch 4 and later](/azure/devops/server/release-notes/azuredevops2022#azure-devops-server-2022-update-01-patch-4-release-date-october-10-2023)
+* [Azure DevOps Server 2020 Update 1.2 Patch 9 and later](/azure/devops/server/release-notes/azuredevops2020u1#azure-devops-server-2020-update-12-patch-9-release-date-october-10-2023)
+* [Azure DevOps Server 2020 Update 0.2 Patch 4 and later](/azure/devops/server/release-notes/azuredevops2020#azure-devops-server-2020-update-02-patch-4-release-date-september-12-2023)
+* [Azure DevOps Server 2019 Update 1.2 Patch 5 and later](/azure/devops/server/release-notes/azuredevops2019u1#azure-devops-server-2019-update-12-patch-5-release-date-september-12-2023)
+* [Azure DevOps Server 2019 - patch 15 and later](/azure/devops/server/release-notes/azuredevops2019#azure-devops-server-201901-patch-15-release-date-september-12-2023)
 
 ### What is the timeline for agent version 3 deployment?
 
