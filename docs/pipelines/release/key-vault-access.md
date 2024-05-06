@@ -71,5 +71,35 @@ To establish connectivity with your private key vault, you must provide a [line 
 
 1. Select **Private endpoint connections**, and then select **Create** to create a new private endpoint.
 
-    :::image type="content" source="media/key-vault-private-endpoint.png" alt-text="A screenshot showing how to create a new private endpoint connection for an Azure Key Vault.":::   
+    :::image type="content" source="media/key-vault-private-endpoint.png" alt-text="A screenshot showing how to create a new private endpoint connection for an Azure key vault.":::   
 
+1. Select the **Resource Group** that hosts the virtual network that you created earlier. Provide a **Name** and a **Network Interface Name** for your instance, and make sure that you select the same **Region** as the virtual network you created earlier. Select **Next** when you're done.
+
+    :::image type="content" source="media/key-vault-new-private-endpoint.png" alt-text="A screenshot showing how to configure the basics tab when creating a new private endpoint instance for your Azure key vault.":::   
+
+1. Select **Connect to an Azure resource in my directory** for the **Connection method**, and then choose **Microsoft.KeyVault/vaults** from the dropdown menu for the **Resource type**. Select your **Resource** from the dropdown menu. The **Target sub-resource** will be auto-populated with the value: *vault*. Select **Next** when you're done. 
+
+    :::image type="content" source="media/key-vault-private-endpoint-resource.png" alt-text="A screenshot showing how to configure the resource tab when creating a new private endpoint instance for your Azure key vault.":::  
+
+1. Under the **Virtual Network** tab, select the **Virtual network** and **Subnet** that you created earlier and leave the rest of the fields as default. Select **Next** when you're done.
+
+1. Continue through the **DNS** and **Tags** tabs, accepting the default settings. Under the On the **Review + Create** tab, select **Create** when you're done.
+
+1. Once your resource is deployed, navigate to your key vault > **Settings** > **Networking** > **Private endpoint connections**, you private endpoint should be listed with a **Connection state** *approved*. If you're linking to an Azure resource in a different directory, you'll need to wait for the resource owner to approve your connection request.
+
+    :::image type="content" source="media/key-vault-approved-private-endpoint-connection.png" alt-text="A screenshot showing an approved private endpoint connection":::  
+
+## Access key vault from pipeline
+
+If you want to access your key vault from your pipeline, set the **runAsPreJob** argument to true. This ensures that the [AzureKeyVault](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) task is executed before other tasks in your pipeline. 
+This approach serves as a workaround if you prefer not to grant Azure DevOps inbound access to your private key vault, as omitting this access would disrupt Variable Group integration. However, by enabling the *runAsPreJob* argument, Azure Pipelines injects the KeyVault task before your tasks run, mirroring the same workflow when Variable Group integration is used.
+
+```yml
+  - task: AzureKeyVault@2
+    displayName: 'Access Azure Key Vault pre-job'
+    inputs:
+      azureSubscription: '$(SERVICE_CONNECTION_NAME)'
+      keyVaultName: $(KEY_VAULT_NAME)
+      secretsFilter: '*'
+      runAsPreJob: true
+```
