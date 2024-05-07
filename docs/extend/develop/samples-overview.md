@@ -40,7 +40,7 @@ The following Microsoft samples show the capabilities of the extension framework
 
 ## DevLabs examples
 
-Other open source samples that you might be interested in.
+Other open source examples that you might be interested in.
 
 | Sample | Source | Contributions | Description |
 |--------|-------|---------------|-------------|
