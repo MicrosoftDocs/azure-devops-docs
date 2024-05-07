@@ -1,13 +1,13 @@
 ---
 title: Connect an Azure Boards or Azure DevOps project to a GitHub repository
 titleSuffix: Azure Boards
-description: Configure one or more GitHub repositories to integrate with Azure Boards 
+description: Configure one or more GitHub repositories to integrate with Azure Boards. 
 ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/03/2023
+ms.date: 05/07/2024
 ---
 
 # Connect Azure Boards to GitHub (cloud) 
@@ -76,11 +76,11 @@ You can connect up to 500 GitHub repositories to an Azure Boards project.
 
 2. Choose the GitHub account or organization that you want to connect. Only those organizations that you own or are an administrator for are listed.  
 
-	If all repositories for an organization have already been connected to Azure Boards, you see the following message. 
+	If all repositories for an organization are already connected to Azure Boards, you see the following message. 
 
 	:::image type="content" source="media/connect-cloud/message-all-repositories-already-connected.png" alt-text="Screenshot of message where no more repositories exist to connect."::: 
 
-3. Enter your GitHub credentials. If you have two-factor authentication enabled, enter the authentication code that GitHub sent you and choose **Verify**. Otherwise, the system automatically recognizes your GitHub organization as your GitHub account has previously been associated with your Azure DevOps Services account. 
+3. Enter your GitHub credentials. If you have two-factor authentication enabled, enter the authentication code that GitHub sent you and choose **Verify**. Otherwise, the system automatically recognizes your GitHub organization as your GitHub account is associated with your Azure DevOps Services account. 
 
 <a id="choose-repositories"></a> 
 
@@ -159,10 +159,10 @@ If you plan to use OAuth to connect Azure DevOps with your GitHub Enterprise Ser
 
    :::image type="content" source="media/github-ent/ghe-settings-dev-oauth.png" alt-text="Screenshot showing sequence for New OAuth App.":::
 
-3. Enter information to register your application.  
+3. Enter registration information.  
 
-	For the <strong>Homepage URL</strong>, specify the <strong>Organization URL</strong> of your organization.  
-	For the <strong>Authorization callback URL</strong>, use the following pattern to construct the URL.  
+	For the **Homepage URL**, specify the **Organization URL** of your organization.  
+	For the **Authorization callback URL**, use the following pattern to construct the URL.  
 
 	`{Azure DevOps Services Organization URL}/_admin/oauth2/callback`
 
@@ -313,14 +313,14 @@ The following authentication options are supported based on the GitHub platform 
 
 #### Grant Azure Boards organization access 
 
-If the integration between Azure Boards and GitHub isn't working as expected, verify you've granted organization access. 
+If the integration between Azure Boards and GitHub isn't working as expected, verify that you granted organization access. 
 
 1. From GitHub web portal, open **Settings** from your profile menu.  
 	:::image type="content" source="media/troubleshoot/choose-settings.png" alt-text="Screenshot of open profile, choose Settings.":::
 
 2. Select **Applications** under **Integrations** > **Authorized OAuth Apps** > **Azure Boards**.
 
-3. Under **Organization access**, resolve any issues that may appear. Select **Grant** to grant access to any organizations that show as having an **Access request pending**. 
+3. Under **Organization access**, resolve any issues that might appear. Select **Grant** to grant access to any organizations that show as having an **Access request pending**. 
 
    :::image type="content" source="media/troubleshoot/organization-access-issues.png" alt-text="Screenshot of Organization access with organizations without access.":::
 
@@ -341,8 +341,8 @@ To resolve this issue, consider the following items:
 	Delete and recreate the connection to the GitHub repository. This recreated connection causes GitHub to prompt to reauthorize Azure Boards.   
 
 - **If the connection is using a PAT:**
-  - The PAT may have been revoked or the required permission scopes changed and are insufficient.
-  - The user may have lost admin permissions on the GitHub repo.  
+  - The PAT might be revoked or the required permission scopes changed and are insufficient.
+  - The user might not have admin permissions on the GitHub repo.  
 
 	Recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`. 
 
@@ -350,21 +350,21 @@ To resolve this issue, consider the following items:
 
 #### Resolve broken GitHub Enterprise Server connection  
 
-If you've migrated from Azure DevOps Server to Azure DevOps Services with an existing GitHub Enterprise Server connection, your existing connection won't work as expected. Work item mentions within GitHub may be delayed or never show up in Azure DevOps Services. This problem occurs because the callback url associated with GitHub is no longer valid. 
+If you migrated from Azure DevOps Server to Azure DevOps Services with an existing GitHub Enterprise Server connection, your existing connection doesn't work as expected. Work item mentions within GitHub might be delayed or never show up in Azure DevOps Services. This problem occurs because the callback URL associated with GitHub is no longer valid. 
 
 Consider the following resolutions:
 
 - **Remove and re-create the connection**:
   Remove and re-create the connection to the GitHub Enterprise Server repository. Follow the sequence of steps provided in [Connect from Azure Boards](connect-to-github.md#github-ent-oauth-services) documentation.
 
-- **Fix the webhook url**:
-  Go to GitHub's repository settings page and edit the webhook url to point out to the migrated Azure DevOps Services organization url: ```https://dev.azure.com/{OrganizationName}/_apis/work/events?api-version=5.2-preview```
+- **Fix the webhook URL**:
+  Go to GitHub's repository settings page and edit the webhook URL, pointing to the migrated Azure DevOps organization URL: ```https://dev.azure.com/{OrganizationName}/_apis/work/events?api-version=5.2-preview```
 
 <a id="integrate-repo-to-several-organizations"></a>
 
 #### Connect to multiple Azure DevOps organizations 
 
-If you connect your GitHub repository to two or more projects that are defined in more than one Azure DevOps organization, such as dev.azure.com/Contoso and dev.azure.com/Fabrikam, you may get unexpected results when using **AB#** mentions to link to work items. This problem occurs because work item IDs aren't unique across Azure DevOps organizations, so **AB#12** can refer to a work item in either the Contoso or Fabrikam organization. So, when a work item is mentioned in a commit message or pull request, both organizations attempt to create a link to a work item with a matching ID (if one exists). 
+If you connect your GitHub repository to two or more projects that are defined in more than one Azure DevOps organization, such as dev.azure.com/Contoso and dev.azure.com/Fabrikam, you might get unexpected results when using **AB#** mentions linking to work items. This problem occurs because work item IDs aren't unique across Azure DevOps organizations, so **AB#12** can refer to a work item in either the Contoso or Fabrikam organization. When a work item gets mentioned in a commit message or pull request, both organizations can attempt to create a link to a work item with a matching ID if one exists. 
 
 In general, a user intends an **AB#** mention to link to a single work item in one of the projects. But, if a work item of the same ID exists in both accounts, then links get created for both work items, likely causing confusion.
 
@@ -377,7 +377,7 @@ Currently, there's no way to work around this issue, so we recommend that you co
 
 #### Update XML definitions for select work item types 
 
-If your organization uses the Hosted XML or On-premises XML process model to customize the work tracking experience and you want to link to and view the GitHub link types from the Development section in the work item forms, you'll need to update the XML definitions for the work item types. 
+Update the XML definitions for the work item types, if your organization uses the Hosted XML or on-premises XML process model to customize the work tracking experience and you want to link to and view the GitHub link types from the Development section in the work item forms. 
 
 For example, if you want to link user stories and bugs to GitHub commits and pull requests from the **Development** section, you need to update the XML definitions for user stories and bugs. 
 
@@ -389,7 +389,7 @@ Follow the sequence of tasks provided in [Hosted XML process model](../../organi
 >              <ExternalLinkFilter Type="GitHub Commit" />  
 > ```
 
-When it's updated, the section should appear as follows. 
+When updated, the section should appear as follows. 
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -414,6 +414,20 @@ When it's updated, the section should appear as follows.
 >    </Control>  
 > </Group>  
 > ```
+
+<a id="faqs"></a>
+
+## FAQs (Frequently asked questions)
+
+### Q: Some of my users in Azure DevOps have GitHub identities. Do I need to add them as new GitHub users into my organization?
+A: No. Ask your users to sign out, and then from a fresh browser session, sign back in to the organization with their GitHub credentials. This action will help establish the users as having valid GitHub identities.
+
+### Q: I'm an organization Administrator and I turned on the policy that enables inviting GitHub users. Why can't I invite new GitHub users?
+A: Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials.    
+
+### Q: I signed in with my GitHub credentials, but why can't I invite GitHub users?
+
+A: Only organization or project Administrators can invite new users to join the organization. You might not have the permission required to add new users. Work with your administrator to get you the right permissions or ask them to add the user for you.
 
 ## Next steps
 

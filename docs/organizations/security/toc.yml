@@ -270,8 +270,8 @@
     href: troubleshoot-permissions.md
   - name: User & permissions management FAQs
     href: ../accounts/faq-user-and-permissions-management.yml?toc=/azure/devops/organizations/security/toc.json
-  - name: Authenticate & invite with GitHub
-    href: faq-github-authentication.yml
+  - name: Connect to GitHub, FAQs
+    href: ../../boards/github/connect-to-github.md#faqs?toc=/azure/devops/organizations/security/toc.json
   - name: Access with Microsoft Entra FAQs
     href: ../accounts/faq-azure-access.yml?toc=/azure/devops/organizations/security/toc.json
   - name: Set up Visual Studio
