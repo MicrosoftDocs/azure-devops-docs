@@ -37,7 +37,7 @@ The following Microsoft samples show the capabilities of the extension framework
 | [WorkItemFormGroup](./custom-control.md) | [GitHub](https://github.com/microsoft/azure-devops-extension-sample/tree/master/src/Samples/WorkItemFormGroup) | Work Item Form Group | Adds a **Sample WorkItem Form Group** extension to the work item form to show how to interact with the `IWorkItemFormService` service and `IWorkItemNotificationListener`. Provides a UI to show case how to change field values using the form service and displaying work item form notification events. |
 | [WorkItemOpen](./add-hub.md) | [GitHub](https://github.com/microsoft/azure-devops-extension-sample/tree/master/src/Samples/WorkItemOpen) | Hub | Adds a **Sample WorkItem Open** hub to the **Boards** hub group to show how to interact with the `IWorkItemFormNavigationService` service. Provides a UI for you to open an existing work item by ID, or open the work item form for a new work item by work item type. Either of these options open a dialog in the host frame. |
 
-## Microsoft DevLabs extension samples
+## Extension samples from DevLabs
 
 Other open source samples that you might be interested in.
 
