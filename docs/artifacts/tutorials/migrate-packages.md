@@ -1,6 +1,6 @@
 ---
-title: Migrate from MyGet to Azure Artifacts
-description: How to migrate your NuGet packages from MyGet to an Azure Artifacts Feed
+title: Migrate NuGet packages from MyGet to Azure Artifacts
+description: How to migrate your NuGet packages from MyGet to an Azure Artifacts feed
 ms.service: azure-devops-artifacts
 ms.reviewer: elbatk 
 ms.date: 06/22/2023
