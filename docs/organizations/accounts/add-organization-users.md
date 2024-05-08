@@ -67,7 +67,7 @@ To give other users access to your organization, add their email addresses.
    > [!div class="mx-imgBorder"]  
    >![Web portal, organization admin context, Add new users dialog box](media/add-organization-users-from-user-hub/add-new-users-dialog.png)
 
-   * **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.yml). To add a service principal, enter the display name of the application or managed identity.
+   * **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [Connect to GitHub/FAQs](../../boards/github/connect-to-github.md#faqs). To add a service principal, enter the display name of the application or managed identity.
    * **Access level:** Leave the access level as **Basic** for users who contribute to the code base. To learn more, see [About access levels](../security/access-levels.md).  
    * **Add to projects:** Select the project you want to add them to.  
    * **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).  
