@@ -840,10 +840,16 @@ You can use Azure Pipelines to deploy Django apps to Azure App Service on Linux 
 
 As described in [Configure Python app on App Service - Container startup process](/azure/app-service/containers/how-to-configure-python#container-startup-process), App Service automatically looks for a *wsgi.py* file within your app code, which typically contains the app object. If you want to customize the startup command in any way, use the `startUpCommand` parameter in the `AzureWebApp@1` step of your YAML pipeline file, as described in the previous section.
 
-When using Django, you typically want to migrate the data models using `manage.py migrate` after deploying the app code. You can add `startUpCommand` with the post-deployment script for this purpose:
+When using Django, you typically want to migrate the data models using `manage.py migrate` after deploying the app code. You can add `startUpCommand` with a post-deployment script for this purpose. For example, here's the `startUpCommand` property in the AzureWebApp@1 task. 
 
 ```yml
-startUpCommand:  python manage.py migrate
+  - task: AzureWebApp@1
+      displayName: 'Deploy Azure Web App : $(webAppName)'
+      inputs:
+        azureSubscription: $(azureServiceConnectionId)
+        appName: $(webAppName)
+        package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+        startUpCommand: 'python manage.py migrate'
 ```
 
 ## Run tests on the build agent

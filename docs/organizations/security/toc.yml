@@ -39,9 +39,9 @@
   - name: Remove users from Azure DevOps
     displayName: delete, revoke, organization, members
     href: ../accounts/delete-organization-users.md
-  - name: Remove user accounts from Active Directory
+  - name: Remove user accounts from Microsoft Entra ID
     displayName: delete, revoke, organization, members
-    href: remove-users-prohibit-access.md
+    href: /azure/active-directory/add-users-azure-active-directory#delete-a-user
   - name: Manage access with Microsoft Entra ID
     items:
     - name: Connect organization to Microsoft Entra ID
@@ -75,7 +75,7 @@
     href: ../accounts/delete-organization-users.md
   - name: Remove user accounts from Active Directory
     displayName: delete, revoke, organization, members
-    href: remove-users-prohibit-access.md
+    href: /azure/active-directory/add-users-azure-active-directory#delete-a-user?toc=/azure/devops/organizations/security/toc.json
 - name: Billing
   href: ../billing/toc.yml
 - name: Authenticate, PATs, & secure applications

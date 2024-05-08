@@ -54,12 +54,12 @@ resources:        # types: pipelines | builds | repositories | containers | pack
   - pipeline: string  # identifier for the resource used in pipeline resource variables
     project: string # project for the source; optional for current project
     source: string  # name of the pipeline that produces an artifact. If it is in a different pipelines folder, it needs to be the full path, e.g. MyTeam/MyPipeline
-    version: string  # the pipeline run number to pick the artifact, defaults to latest pipeline successful across all stages; Used only for manual or scheduled triggers
+    version: string  # the pipeline run number (Build.BuildNumber) to pick the artifact, defaults to latest pipeline successful run across all stages; Used only for manual or scheduled triggers
     branch: string  # branch to pick the artifact, optional; defaults to all branches; Used only for manual or scheduled triggers
     tags: [ string ] # list of tags required on the pipeline to pickup default artifacts, optional; Used only for manual or scheduled triggers
     trigger:     # triggers aren't enabled by default unless you add trigger section to the resource
       branches:  # branch conditions to filter the events, optional; Defaults to all branches.
-        include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
+        include: [ string ]  # branches to consider for the trigger events, optional; Defaults to all branches.
         exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
       tags: [ string ]  # list of tags to evaluate for trigger event, optional
       stages: [ string ] # list of stages to evaluate for trigger event, optional
@@ -149,8 +149,6 @@ These examples are tags set on the continuous integration (CI) pipeline. These t
 > [!IMPORTANT]
 > When you define a resource trigger, if its pipeline resource is from the same repository (say self) as the current pipeline, triggering follows the same branch and commit on which the event is raised.
 > But, if the pipeline resource is from a different repository, the current pipeline triggers on the default branch of the self repository.
-
-
 
 ### Evaluation of artifact version
 
@@ -253,7 +251,9 @@ Artifacts from the `pipeline` resource get downloaded to `$(PIPELINE.WORKSPACE)/
 
 ### Pipeline resource variables
 
-In each run, the metadata for a pipeline resource is available to all jobs in the form of [predefined variables](../build/variables.md). The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime.
+In each run, the metadata for a pipeline resource is available to all jobs in the form of [predefined variables](../build/variables.md). The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime. 
+
+To learn more about variable syntax, see [Define variables](variables.md). 
 
 ## [Schema](#tab/schema)
 

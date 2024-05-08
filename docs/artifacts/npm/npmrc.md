@@ -103,7 +103,7 @@ The following steps will guide you through setting up the first configuration fi
 
     1. Run the following command in a command prompt window, and then paste your personal access token when prompted:
 
-        ```Cli
+        ```Command
         node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
         ```
 
