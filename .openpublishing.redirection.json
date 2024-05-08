@@ -453,6 +453,10 @@
     {
       "source_path": "docs/organizations/organizations/security/remove-users-prohibit-access.md",
       "redirect_url": "/azure/active-directory/add-users-azure-active-directory#delete-a-user"
+    },
+    {
+      "source_path": "docs/organizations/security/faq-github-authentication.yml",
+      "redirect_url": "/azure/devops/boards/github/connect-to-github#faqs"
     }
   ]
 }

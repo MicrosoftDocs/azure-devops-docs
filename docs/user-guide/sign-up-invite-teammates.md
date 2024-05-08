@@ -58,4 +58,4 @@ Sign in to your organization at any time `https://dev.azure.com/{Your_Organizati
 - [Change the location of your organization](../organizations/accounts/change-organization-location.md)
 - [Add users to your organization](../organizations/accounts/add-organization-users.md)
 - [Add users or groups to a team or project](../organizations/security/add-users-team-project.md)
-- [GitHub authentication FAQs](../organizations/security/faq-github-authentication.yml)
+- [Connect to GitHub, FAQs](../boards/github/connect-to-github.md#faqs)
