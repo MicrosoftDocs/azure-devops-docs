@@ -144,6 +144,8 @@ A Git project has a list of repositories. To expand your search, check the proje
 
 Code Search can index different branches in a Git repository. It only indexes files in the default branch of your Git repositories by default. The default branch is usually main. To index other branches, go to the **Options** tab in the **Repositories** section of the [project settings page](../navigation/go-to-service-page.md#open-project-settings).
 
+Note: By default code search will search for the string in the main/default branch, until user specify filter for a specific branch.
+
 ::: moniker range=">= azure-devops-2019"
 ![Screenshot showing Git branches for configuration.](media/advanced-work-item-search-syntax/configure-branches.png)
 ::: moniker-end
