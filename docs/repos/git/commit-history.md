@@ -43,7 +43,7 @@ For each commit, you can view the following key elements:
 * Build and PR information - You can view the pull request that brought this commit to the branch selected on the page, and view the build status of the current commit.
 
     ![Build and PR details on commit history](media/commit-history/5-BuildandPRInfo.png)
-
+  
 * You can select a repository from the repository picker to view the history of a particular repository.
 
     ![repository picker](media/commit-history/6-RepoPicker.png)
@@ -65,6 +65,9 @@ For each commit, you can view the following key elements:
 
 You can filter the results using the following advanced filtering modes: **simple history**, **first parent**, **full history**, and **full history with simplified merges**. For more information, see [advanced git history options](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History).
 
+> [!NOTE]
+> The **full history** filter reveals the complete history of changes to the selected file, as well as all PR merges that occurred before and after the changes in the current branch (even those that contain no changes to the file). This is different from the behavior of the Git client when executing the "git log --full-history \<Filename>" command.
+> 
 ![Advanced filters for git log](media/commit-history/10-AdvancedFilter.png)
 
 You can also filter commits by authors. You will see authors of most recent commits in the author filter drop down. In case you are not able to find an author in the drop down, then you can type the author name or email address and search for all commits by that author.
