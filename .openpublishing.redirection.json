@@ -456,7 +456,7 @@
     },
     {
       "source_path": "docs/organizations/security/faq-github-authentication.yml",
-      "redirect_url": "/azure/boards/github/connect-to-github#faqs"
+      "redirect_url": "/azure/devops/boards/github/connect-to-github#faqs"
     }
   ]
 }
