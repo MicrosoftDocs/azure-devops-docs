@@ -271,7 +271,7 @@
   - name: User & permissions management FAQs
     href: ../accounts/faq-user-and-permissions-management.yml?toc=/azure/devops/organizations/security/toc.json
   - name: Connect to GitHub, FAQs
-    href: ../../boards/github/connect-to-github.md#faqs?toc=/azure/devops/organizations/security/toc.json
+    href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/security/toc.json
   - name: Access with Microsoft Entra FAQs
     href: ../accounts/faq-azure-access.yml?toc=/azure/devops/organizations/security/toc.json
   - name: Set up Visual Studio
