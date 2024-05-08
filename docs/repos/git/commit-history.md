@@ -67,6 +67,9 @@ You can filter the results using the following advanced filtering modes: **simpl
 
 ![Advanced filters for git log](media/commit-history/10-AdvancedFilter.png)
 
+> [!NOTE]
+> Pressing the "Full history" button, in contrast to executing the "git log --full-history <filename>" command, reveals not just the complete history of changes of the selected file, but also includes all PR merges that occurred both before and after in the current branch (with no changes to those files).
+
 You can also filter commits by authors. You will see authors of most recent commits in the author filter drop down. In case you are not able to find an author in the drop down, then you can type the author name or email address and search for all commits by that author.
 
 ![Author filter](media/commit-history/11-AuthorFilter.png)
