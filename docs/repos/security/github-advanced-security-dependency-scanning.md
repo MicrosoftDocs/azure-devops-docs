@@ -478,6 +478,10 @@ This action only dismisses the alert for your selected branch. Other branches th
 
 ## Troubleshooting dependency scanning 
 
+### Dependency scanning not identifying any components
+
+If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step prior to the `AdvancedSecurity-Dependency-Scanning@1` task. 
+
 ### Dependency scanning task timeout 
 
 The default time that the dependency scanning task runs before timing out is 300 seconds, or 5 minutes. If the task is timing out prior to completion, you can set a pipeline variable `DependencyScanning.Timeout`, which expects an integer representing seconds, such as `DependencyScanning.Timeout: 600`. Anything under the default timeout of 300 seconds has no effect. 
