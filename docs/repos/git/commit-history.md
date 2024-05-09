@@ -70,7 +70,7 @@ You can filter the results using the following advanced filtering modes: **simpl
 > 
 ![Advanced filters for git log](media/commit-history/10-AdvancedFilter.png)
 
-You can also filter commits by authors. You will see authors of most recent commits in the author filter drop down. In case you are not able to find an author in the drop down, then you can type the author name or email address and search for all commits by that author.
+You can also filter commits by authors. You'll see authors of most recent commits in the author filter drop down. In case you aren't able to find an author in the drop down, then you can type the author name or email address and search for all commits by that author.
 
 ![Author filter](media/commit-history/11-AuthorFilter.png)
 
@@ -80,13 +80,13 @@ In case you want to view commits that were authored between any two dates, you c
 
 ## Commit search
 
-You can also search for a commit using its Commit ID. You can search for all commits starting with a commit ID. If you enter the 40 character Commit ID then you will be redirected directly to the commit details page.
+You can also search for a commit using its Commit ID. You can search for all commits starting with a commit ID. If you enter the 40 character Commit ID then you'll be redirected directly to the commit details page.
 
 ![Commit search page](media/commit-history/13-SearchCommit.png)
 
 ## Commit for file renames
 
-In case a file or folder is renamed, you will see all commits until the file or folder got renamed. You will also see a link suggesting **Show rename history**. 
+In case a file or folder is renamed, you'll see all commits until the file or folder got renamed. You'll also see a link suggesting **Show rename history**. 
 
 ![Show rename files or folder history](media/commit-history/renamefiles.png)
 
