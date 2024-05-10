@@ -45,7 +45,6 @@ Further information:
 
 > [!NOTE]
 > Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](/entra/fundamentals/new-name).
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWY8q]
 
 #### Create a managed identity
