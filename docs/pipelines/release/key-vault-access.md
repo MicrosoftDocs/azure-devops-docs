@@ -77,7 +77,7 @@ Let's start by creating a new service principal, this will enable us to access A
 > [!IMPORTANT]
 > If you're enable to verify your service principal connection, grant the service principal **Reader** access to your subscription.
 
-## Link key vault to a variable group
+## Access private key vaults
 
 Azure Pipelines enables developers to link an Azure key vault to a variable group and map selective vault secrets to it. A key vault that is used as a variable group can be accessed:
 
@@ -90,7 +90,29 @@ Follow the steps outlined in [Add & use variable groups](../library/variable-gro
 
 ::: moniker range="azure-devops"
 
-## 1. Configure inbound access from Azure DevOps
+## Access private key vaults from Azure Devops
+
+We will use Variable Groups to link and map secrets from our key vaults and use it in our pipeline. In this article, we will explore two approaches: first, setting up inbound access by allowing static IP ranges. Then, we'll demonstrate dynamically adding Microsoft-hosted agent IP address to our key vault's firewall allowlist, querying the key vault, and subsequently removing the IP after completion.
+
+## 1. Map key vault secrets with variable groups
+
+1. Sign in to your Azure DevOps organization, and the navigate to your project.
+
+1. Select **Pipelines** > **Library**, and then select **+ Variable group**
+
+1. Name your variable group, and then select the toggle button to enable the **Link secrets from an Azure key vault as variable** button.
+
+1. Select your Azure service connection you created earlier from the dropdown menu, and then select your key vault.
+
+    :::image type="content" source="media/new-variable-group-get-list-error.png" alt-text="A screenshot demonstrating the process of linking a new variable group to an Azure Key Vault, with an error indicating missing 'get' and 'list' permissions.."::: 
+
+1. If you encounter the error message: *Specified Azure service connection needs to have "Get, List" secret management permissions on the selected key vault.* as shown above. Navigate to your key vault in Azure Portal, select **Access control (IAM)** > **Add role assignment** > **key vault secrets user** > **Next**, then add your service principal, then select **Review + assign** when you're done.
+
+    :::image type="content" source="media/add-role-assignment-secret-user-service-principal-.png.png" alt-text="A screenshot showing how to add a service principal as a secret user for an Azure key vault."::: 
+
+1. Add your secrets and then select **Save** when you're done.
+
+## 2.a Configure inbound access from Azure DevOps
 
 To enable access to your key vault from Azure DevOps, you must grant access from specific static IP ranges. These ranges are determined by the geographical location of your Azure DevOps organization.
 
@@ -106,7 +128,44 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 
 1. [Configure your key vault](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips) to allow access from static IP ranges.
 
+
+## 2.b Dynamically allow Microsoft-hosted agent IP
+
+In this approach, we'll start by querying the IP of the Microsoft-hosted agent at the beginning of our pipeline. Then, we'll add it to the key vault allowlist, proceed with the remaining tasks, and finally, remove the IP from the key vault's firewall allowlist.
+
+
+```yml
+- task: AzurePowerShell@5
+  displayName: 'Allow agent IP'
+  inputs:
+    azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
+    azurePowerShellVersion: LatestVersion
+    ScriptType: InlineScript
+    Inline: |
+     $ip = (Invoke-WebRequest -uri "http://ifconfig.me/ip").Content
+     Add-AzKeyVaultNetworkRule -VaultName "YOUR_KEY_VAULT_NAME" -ResourceGroupName "YOUR_RESOURCE_GROUP_NAME" -IpAddressRange $ip
+     echo "##vso[task.setvariable variable=agentIP]ip"
+    
+- task: AzureKeyVault@2
+  inputs:
+    azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
+    KeyVaultName: 'YOUR_KEY_VAULT_NAME'
+    SecretsFilter: '*'
+    RunAsPreJob: false
+
+- task: AzurePowerShell@5
+  displayName: 'Remove agent IP'
+  inputs:
+    azureSubscription: 'YOUR_SERVICE_CONNECTION_NAME'
+    azurePowerShellVersion: LatestVersion
+    ScriptType: InlineScript
+    Inline: |
+     $ipRange = $env:agentIP + "/32"
+     Remove-AzKeyVaultNetworkRule -VaultName "pv-kv-pipeline-05-09" -IpAddressRange $ipRange
+```
+
 ::: moniker-end
+
 
 ## 2. Configure inbound access from Self-hosted Agents
 
