@@ -24,7 +24,58 @@ This article will walk you through configuring your inbound access points to acc
 
 - An Azure key vault. [Create a new Azure key vault](azure/key-vault/general/quick-create-portal).
 
-- A virtual network. [Create a virtual network](azure/virtual-network/quick-create-portal) if you have haven't already.
+## Create a service principal
+
+Let's start by creating a new service principal, this will enable us to access Azure resources. Next, we will create a new ARM service connection in Azure DevOps using this service principal to enable us to query our Azure Key Vault from Azure Pipelines.
+
+1. Navigate to [Azure portal](https://ms.portal.azure/).
+
+1. Open the **Cloud Shell**, and then select **Bash**.
+
+1. Run the following command to create a new service principal:
+
+    ```Azure CLI
+    az ad sp create-for-rbac --name YOUR_SERVICE_PRINCIPAL_NAME
+    ```
+
+1. Make sure to copy the output, as we will use it to create the service connection in the next step.
+
+## Create a service connection
+
+::: moniker range=">= azure-devops-2020"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Project settings** > **Service connections** > **New service connection**.
+
+1. Select **Azure Resource Manager**, > **Next**, and then select **Service principal (manual)** > **Next**.
+
+1. Select **Azure Cloud** for **Environment** and **Subscription** for the **Scope Level**, then enter your **Subscription Id** and your **Subscription Name**.
+
+1. Enter your service principal information, and then select **Verify**.
+
+1. After successful verification, name your service connection, add a description, and then check the **Grant access permission to all pipelines** checkbox. Select **Verify and save** when you're done.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Project settings** > **Service connections** > **New service connection**.
+
+1. Select **Azure Resource Manager**, name your service connection, and then select **Azure Cloud** for **Environment** and **Subscription** for the **Scope Level**.
+
+1. Enter your **Subscription Id** and your **Subscription Name**.
+
+1. Enter your service principal information, and then select **Verify connection**.
+
+1. Check the **Allow all pipelines to use this connection** checkbox, and then select **Ok** when you're done.
+
+::: moniker-end
+
+> [!IMPORTANT]
+> If you're enable to verify your service principal connection, grant the service principal **Reader** access to your subscription.
 
 ## Link key vault to a variable group
 
@@ -63,9 +114,9 @@ To have the ability to access a private key vault from an Azure Pipelines agent,
 
 To establish connectivity with your private key vault, you must provide a [line of sight](../agents/agents.md#communication-to-deploy-to-target-servers) connectivity by configuring a private endpoint for your key vault. This endpoint must be routable and have its private DNS name resolvable from the Self-hosted Pipeline agent.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. Follow the provided instruction to [Create a virtual network](azure/virtual-network/quick-create-portal).
 
-1. Use the search bar at the top of the page to find your Azure key vault.
+1. In [Azure portal](https://portal.azure.com/), use the search bar at the top of the page to find your Azure key vault.
 
 1. Once you've located your key vault in the search results, select it, and then navigate to **Settings** > **Networking**.
 
@@ -103,3 +154,4 @@ This approach serves as a workaround if you prefer not to grant Azure DevOps inb
       secretsFilter: '*'
       runAsPreJob: true
 ```
+
