@@ -44,9 +44,9 @@ Further information:
 * [Use the portal to create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 > [!NOTE]
-> Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](https://learn.microsoft.com/en-us/entra/fundamentals/new-name).
+> Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](/entra/fundamentals/new-name).
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWY8q]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWY8q]
 
 #### Create a managed identity
 
@@ -61,9 +61,9 @@ For more information, see the following articles and video:
 * [Configure managed identities for Azure resources on a VM using the Azure portal](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
 
 > [!NOTE]
-> Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](https://learn.microsoft.com/en-us/entra/fundamentals/new-name).
+> Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](/entra/fundamentals/new-name).
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8K]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWL8K]
 
 ### 2. Add and manage service principals in an Azure DevOps organization
 
@@ -82,9 +82,9 @@ If you're a PCA, you can also grant a service principal access to specific proje
 After your service principals are added to the organization, you can treat them similarly to standard user accounts. You can assign permissions directly on a service principal, add it to security groups and teams, assign it to any access level, and remove it from the organization. You can also use the [`Service Principal Graph APIs`](/rest/api/azure/devops/graph/service-principals?view=azure-devops-rest-7.1&preserve-view=true) to perform CRUD operations on service principals.
 
 > [!NOTE]
-> Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](https://learn.microsoft.com/en-us/entra/fundamentals/new-name).
+> Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](/entra/fundamentals/new-name).
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWG70]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWG70]
 
 Management of service principals differs from user accounts in the following key ways:
 
@@ -108,9 +108,9 @@ The returned access token is a JWT with the defined roles, which can be used to 
 In the following video example, we move from authenticating with a PAT to using a token from a service principal. We start by using a client secret for authentication, then move to using a client certificate. 
 
 > [!NOTE]
-> Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](https://learn.microsoft.com/en-us/entra/fundamentals/new-name).
+> Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](/entra/fundamentals/new-name).
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWNVM]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWNVM]
 
 * While service principals can be added to Microsoft Entra ID groups (in the Azure portal), we have a current technical limitation preventing us from being able to display them in a list of Microsoft Entra ID group members. This limitation isn't true for Azure DevOps groups. That being said, a service principal still inherits any group permissions set on top of a Microsoft Entra ID group they belong to. 
 * Not all users in a Microsoft Entra ID group are immediately part of an Azure DevOps organization just because an admin creates a group and adds a Microsoft Entra ID group to it. We have a process called "materialization" that happens once a user from a Microsoft Entra ID group signs in to the organization for the first time. A user signing into an organization allows us to determine which users should be granted a license. Since sign-in isn't possible for service principals, an admin must explicitly add it to an organization as described earlier. 
@@ -120,9 +120,9 @@ In the following video example, we move from authenticating with a PAT to using 
 Another example demonstrates how to connect to Azure DevOps using a User Assigned Managed Identity within an Azure Function.
 
 > [!NOTE]
-> Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](https://learn.microsoft.com/en-us/entra/fundamentals/new-name).
+> Azure Active Directory is now Microsoft Entra ID. For more information, see [New name for Azure AD](/entra/fundamentals/new-name).
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8L]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWL8L]
 
 Follow along with these examples by finding the app code in our [collection of sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples).
 
