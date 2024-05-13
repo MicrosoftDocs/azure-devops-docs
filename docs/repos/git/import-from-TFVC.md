@@ -90,7 +90,7 @@ In order to make migrations easier, there are a number of requirements before fo
 * Migrate only a single branch. When [planning the migration](/devops/develop/git/centralized-to-git), choose a new
    branching strategy for Git. Migrating only the main branch supports a topic-branch based workflow like
    [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/)
-   or [GitHub Flow](https://guides.github.com/introduction/flow/index.html).
+   or [GitHub Flow](https://docs.github.com/get-started/using-github/github-flow).
 * Do a tip migration, as in, import only the latest version of the source code. If TFVC history is simple,
    there's an option to migrate some history, up to 180 days, so that the team can work only out of Git.
    For more information, see [Plan your migration to Git](/devops/develop/git/centralized-to-git).
