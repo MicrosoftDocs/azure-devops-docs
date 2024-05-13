@@ -18,8 +18,6 @@ If you use any of the Node 10-enabled tasks, your self-hosted agents will update
 
 When you use scale set agents, Azure Pipelines manages the scaling up and down of agent instances. When Azure Pipelines detects an unhealthy VM in the scale set, it will log the issue to the Pool Diagnostics UI and attempt to delete the VM. There are many reasons why a VM can be unhealthy: the scale set's network configuration may have prevented the Azure Pipelines extension from downloading the latest agent, your custom script extension may have failed, or the scale set VM image may have a pending reboot or pending Windows Updates.
   
-<br><img src="../../media/177-pipelines-3-0.png" width="500" alt="check agent">  
-<br>
 By deleting unhealthy VMs, Azure Pipelines keeps your agent pool optimized to run CI/CD jobs. In some cases, you may be able to use the Azure Pipelines diagnostics page (shown above) or the Azure diagnostics page to debug this problem. However, in many cases, the best way to diagnose the problem is to log into the VM and review the agent logs and event viewer logs. At present, this is not easy to do since the unhealthy VM is deleted automatically.
 
 With this release, we enhanced the diagnosability of unhealthy VMs by giving you the ability to save an unhealthy agent for investigation. 
