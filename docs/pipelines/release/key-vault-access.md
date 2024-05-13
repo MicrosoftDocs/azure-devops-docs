@@ -22,7 +22,7 @@ This article will walk you through configuring your inbound access points to acc
 
 - An Azure subscription. [Create a free Azure account](https://azure.microsoft.com/free) if you don't have one already.
 
-- An Azure key vault. [Create a new Azure key vault](azure/key-vault/general/quick-create-portal).
+- An Azure key vault. [Create a new Azure key vault](azure/key-vault/general/quick-create-portal) if you haven't already.
 
 ## Create a service principal
 
@@ -84,7 +84,7 @@ Azure Pipelines enables developers to link an Azure key vault to a variable grou
 1. From Azure DevOps, during the variable group configuration time. (This approach is only supported in Azure DevOps Services).
 1. From a Self-hosted agent, during the pipeline job runtime.
 
-Follow the steps outlined in [Add & use variable groups](../library/variable-groups.md#link-secrets-from-an-azure-key-vault) to link your secrets to a variable group. See also [Manage key vault secrets](../library/variable-groups.md#link-secrets-from-an-azure-key-vault) for additional guidance on effectively managing your secrets.
+If you prefer not to use variable groups, you can jump to [Dynamically allow Microsoft-hosted agent IP](#dynamically-allow-microsoft--hosted-agent-ip) to learn how to query your private key vault, and then clear your firewall allowList.
 
 :::image type="content" source="media/access-private-key-vault.png" alt-text="A diagram showing the two different paths to access a private key vault.":::   
 
@@ -92,7 +92,8 @@ Follow the steps outlined in [Add & use variable groups](../library/variable-gro
 
 ## Access private key vaults from Azure Devops
 
-We will use Variable Groups to link and map secrets from our key vaults and use it in our pipeline. In this article, we will explore two approaches: first, setting up inbound access by allowing static IP ranges. Then, we'll demonstrate dynamically adding Microsoft-hosted agent IP address to our key vault's firewall allowlist, querying the key vault, and subsequently removing the IP after completion.
+In this section, we will explore two approaches for accessing a private key vault from Azure DevOps. First, we will use Variable Groups to link and map secrets from our key vault, and then set up inbound access by allowing static IP ranges. 
+For our second approach, we'll demonstrate dynamically adding Microsoft-hosted agent IP address to our key vault's firewall allowlist, querying the key vault, and subsequently removing the IP after completion.
 
 ## 1. Map key vault secrets with variable groups
 
@@ -112,7 +113,7 @@ We will use Variable Groups to link and map secrets from our key vaults and use 
 
 1. Add your secrets and then select **Save** when you're done.
 
-## 2.a Configure inbound access from Azure DevOps
+## 1.2 Configure inbound access from Azure DevOps
 
 To enable access to your key vault from Azure DevOps, you must grant access from specific static IP ranges. These ranges are determined by the geographical location of your Azure DevOps organization.
 
@@ -128,11 +129,12 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 
 1. [Configure your key vault](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips) to allow access from static IP ranges.
 
+## 2 Dynamically allow Microsoft-hosted agent IP
 
-## 2.b Dynamically allow Microsoft-hosted agent IP
+We'll start by querying the IP of the Microsoft-hosted agent at the beginning of our pipeline. Then, we'll add it to the key vault allowlist, proceed with the remaining tasks, and finally, remove the IP from the key vault's firewall allowlist.
 
-In this approach, we'll start by querying the IP of the Microsoft-hosted agent at the beginning of our pipeline. Then, we'll add it to the key vault allowlist, proceed with the remaining tasks, and finally, remove the IP from the key vault's firewall allowlist.
-
+> [IMPORTANT]
+> Ensure that the service principal you're using to access your key vault from your pipeline holds the **Key vault contributor** role within your key vault's Access control (IAM).
 
 ```yml
 - task: AzurePowerShell@5
@@ -161,17 +163,18 @@ In this approach, we'll start by querying the IP of the Microsoft-hosted agent a
     ScriptType: InlineScript
     Inline: |
      $ipRange = $env:agentIP + "/32"
-     Remove-AzKeyVaultNetworkRule -VaultName "pv-kv-pipeline-05-09" -IpAddressRange $ipRange
+     Remove-AzKeyVaultNetworkRule -VaultName "YOUR_KEY_VAULT_NAME" -IpAddressRange $ipRange
 ```
 
 ::: moniker-end
 
-
-## 2. Configure inbound access from Self-hosted Agents
+## Access private key vaults from a self-hosted agent
 
 To have the ability to access a private key vault from an Azure Pipelines agent, you'll need to use either a Self-hosted agent ([Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [Mac](../agents/osx-agent.md)) or [Scale Set agents](../agents/scale-set-agents.md). This is because Microsoft Hosted agents, like other generic compute services, are not included in the key vault's list of [trusted services](/azure/key-vault/general/overview-vnet-service-endpoints#trusted-services).
 
 To establish connectivity with your private key vault, you must provide a [line of sight](../agents/agents.md#communication-to-deploy-to-target-servers) connectivity by configuring a private endpoint for your key vault. This endpoint must be routable and have its private DNS name resolvable from the Self-hosted Pipeline agent.
+
+## Configure inbound access from a self-hosted Agent
 
 1. Follow the provided instruction to [Create a virtual network](azure/virtual-network/quick-create-portal).
 
@@ -199,10 +202,9 @@ To establish connectivity with your private key vault, you must provide a [line 
 
     :::image type="content" source="media/key-vault-approved-private-endpoint-connection.png" alt-text="A screenshot showing an approved private endpoint connection":::  
 
-## Access key vault from pipeline
+## Run pipeline from a self-hosted Agent
 
-If you want to access your key vault from your pipeline, set the **runAsPreJob** argument to true. This ensures that the [AzureKeyVault](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) task is executed before other tasks in your pipeline. 
-This approach serves as a workaround if you prefer not to grant Azure DevOps inbound access to your private key vault, as omitting this access would disrupt Variable Group integration. However, by enabling the *runAsPreJob* argument, Azure Pipelines injects the KeyVault task before your tasks run, mirroring the same workflow when Variable Group integration is used.
+If you prefer not to grant Azure DevOps inbound access to your private key vault, set the **runAsPreJob** argument to true. This ensures that the [AzureKeyVault](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) task is executed before other tasks in your pipeline, mirroring the same workflow when Variable Group integration is used.
 
 ```yml
   - task: AzureKeyVault@2
@@ -213,4 +215,27 @@ This approach serves as a workaround if you prefer not to grant Azure DevOps inb
       secretsFilter: '*'
       runAsPreJob: true
 ```
+
+## Troubleshooting
+
+If you are experiencing the following errors, follow the steps in this section to troubleshoot and resolve the issue:
+
+- ```Public network access is disabled and request is not from a trusted service nor via an approved private link.```
+
+This indicates that public access has been disabled, and neither a private endpoint connection nor firewall exceptions have been set up. Follow the steps under [#configure-inbound-access-from-a-self--hosted-agent] and [Configure inbound access from Azure DevOps](#configure-inbound-access-from-azure-devOps) to set up access to your private key vault.
+
+- ```Request was not allowed by NSP rules and the client address is not authorized and caller was ignored because bypass is set to None Client address: <x.x.x.x>```
+
+This error message indicates that the key vault's public access has been disabled and the **Allow trusted Microsoft services to bypass this firewall** option is unchecked, but the client IP address hasn't been added to the key vault firewall. Navigate to your key vault in the Azure Portal, then **Settings** > **Networking** and add your client IP to the firewall's allowlist.
+
+- ```Error: Client address is not authorized and caller is not a trusted service.```
+
+Make sure you add your geography's IPV4 ranges to your key vault allowlist. See [Configure inbound access from Azure DevOps](#configure-inbound-access-from-azure-devops) for details. 
+Alternatively, you can jump to [Dynamically allow Microsoft-hosted agent IP](#dynamically-allow-microsoft--hosted-agent-ip) to learn how to add your client IP to the key vault's firewall during runtime.
+
+## Related articles
+
+- [Manage service connections](../library/service-endpoints.md)
+- [Library & shared resources](../library/index.md)
+- [Manage agents and agent pools](../agents/agents.md)
 
