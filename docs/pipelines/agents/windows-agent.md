@@ -166,9 +166,9 @@ To restart the agent, press Ctrl+C to stop the agent, and then run `run.cmd` to 
 > before executing tasks.
 > 
 > ```yml    
->      variables:
->        AZP_AGENT_CLEANUP_PSMODULES_IN_POWERSHELL: "true"
->    ```
+> variables:
+>  AZP_AGENT_CLEANUP_PSMODULES_IN_POWERSHELL: "true"
+> ```
 >
 > If this workaround does not resolve your issue, or if you need to use custom module locations, you can set the `$Env:PSModulePath` variable as needed in your PowerShell Core window before running the agent.
 
