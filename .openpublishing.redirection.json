@@ -457,6 +457,34 @@
     {
       "source_path": "docs/organizations/security/faq-github-authentication.yml",
       "redirect_url": "/azure/devops/boards/github/connect-to-github#faqs"
+    },
+    {
+      "source_path": "docs/migrate/migrate-from-tfs.md",
+      "redirect_url": "/azure/devops/migrate/migration-overview"
+    },
+    {
+      "source_path": "docs/migrate/migration-import-large-collections.md",
+      "redirect_url": "/azure/devops/migrate/migration-prepare-test-run#migrate-large-collections"
+    },
+    {
+      "source_path": "docs/migrate/migration-restricting-access-to-azure-devops-services.md",
+      "redirect_url": "/azure/devops/migrate/migration-prepare-test-run#restrict-access-to-azure-devops-services"
+    },
+    {
+      "source_path": "docs/migrate/migration-import.md",
+      "redirect_url": "/azure/devops/migrate/migration-test-run"
+    },
+    {
+      "source_path": "docs/migrate/migration-processtemplates.md",
+      "redirect_url": "/azure/devops/migrate/migration-validate"
+    },
+    {
+      "source_path": "docs/migrate/faqs.yml",
+      "redirect_url": "/azure/devops/migrate/migration-troubleshooting"
+    },
+    {
+      "source_path": "docs/migrate/migration-post-import.md",
+      "redirect_url": "/azure/devops/migrate/migration-post-migration"
     }
   ]
 }

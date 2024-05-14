@@ -1,86 +1,148 @@
 ---
-title: Azure DevOps Server to Services Migration overview
-description: Overview of the high fidelity migration process from Server to Services
+title: Azure DevOps Server to Azure DevOps Services Migration overview
+description: Overview of the high fidelity migration process from on-premises Server to cloud Services.
 ms.topic: overview
 ms.subservice: azure-devops-migrate
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2021
+ms.date: 05/17/2024
 ---
 
-# Migrate data from Azure DevOps Server to Azure DevOps Services  
+# Migration overview 
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. It's recommended that you download the [migration guide and tool](https://aka.ms/AzureDevOpsImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
+Moving from Azure DevOps Server to Azure DevOps Services is an essential step for organizations that want to take advantage of cloud-based collaboration, scalability, and enhanced features. In this overview, we explore the options for transferring your valuable data from the on-premises Azure DevOps Server to the cloud-based Azure DevOps Services. 
 
-## Supported Azure DevOps Server versions for import
+For information about the main differences between on-premises Azure DevOps Server and the cloud-based Azure DevOps Services, see [Compare Azure DevOps Services with Azure DevOps Server - Azure DevOps](../user-guide/about-azure-devops-services-tfs.md). 
 
-> [!IMPORTANT] 
-> It can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online for that version. It's important to take this into consideration when choosing to upgrade shortly after a new RTW Azure DevOps Server release.
+Regardless of your selected migration option, we recommend that you determine your most important assets, such as source code and work items. You should think about your data size, organization complexity and make sure that you have enough time for dry runs before actual migration for a smooth and successful transition. 
 
-The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
+## Approaches to migration 
 
-* Azure DevOps Server 2022.0.1
-* Azure DevOps Server 2022.1
+ When contemplating data migration from on-premises to the cloud, you have several options. It’s crucial to assess the pros and cons of each approach based on your specific motivations for adopting Azure DevOps Services. The right strategy depends on your unique context and requirements.   
 
-> [!NOTE]
-> The data migration tool doesn't support imports from Azure DevOps Server release candidates (RC). If you're planning on importing your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you'll need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous Azure DevOps Server version to import. 
+|Options  |Recommended scenarios  |Limitations  |
+|---------|---------|---------|
+|1: Manual migration   |  Use for smaller projects or specific data subsets.    | Not all data can be migrated with full fidelity and is subject to throttling. This migration doesn’t support migrating XML templates, so you need to recreate process templates as inherited templates.         |
+|2: [Azure DevOps Data Migration Tool](https://marketplace.visualstudio.com/items?itemName=nkdagility.vsts-sync-migration)    | Use for medium to large-scale migrations with varied data types and complex structures.      |  You can only "lift and shift" one Azure DevOps Server collection to one new Azure DevOps Services organization, with no modifications. For more information, see the [Limitations section](#migration-tool-limitations).    |
+|3: API-based migration     | Offers flexibility and customization for organizations with unique migration requirements or automation needs.   | Low fidelity, data loss, and ID changes can occur. For more information, see the [Limitations section](#api-based-migration-limitations).        |
 
-Normal release cadence for new Azure DevOps Server versions is once every three-to-four months. Meaning that support for a given version of Azure DevOps Server for migration to Azure DevOps Services should last for anywhere between six-to-eight months. It's important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
+## Option 1: Manual migration
 
-## Preview features
+For example, when the Azure DevOps team at Microsoft chose to move from Azure DevOps Server to Azure DevOps Services, we also decided to move from Team Foundation Version Control (TFVC) to Git. Migration required lots of planning, but when we migrated, we created a new Git repo using the "tip" version of our TFVC sources and left our history behind in Azure DevOps Server. We also moved our active work items, and left behind all our old bugs, completed user stories and tasks, and so on.
 
-> [!Note]
-> If you're not including preview features when running the migration tool, then you'll need to re-run the migration tool prepare to generate a new import.json to queue an import. You DO NOT need to include preview features when you re-generate your import.json.  
->
-> If you had previously been including preview features then you DO NOT need to take any additional actions after Monday, April 23, 2020. 
+### Manual migration process
 
+1. Identify the most important assets that you need to migrate - typically source code, work items, or both. Other assets in Azure DevOps Server - build pipelines, test plans, and so forth - are harder to manually migrate. 
+1. Identify a suitable time to make the transition. 
+1. Prepare your target organizations. Create the organizations and team projects that you need, provision users, and so on. 
+1. Migrate your data. 
+1. Consider making the source Azure DevOps Server deployments read-only. You can do so in the following ways: 
+   - [Adjust project-level permissions](../organizations/security/change-project-level-permissions.md): Set the permissions for all users or groups to read-only at the project level, which you can do by modifying the security roles in **Project settings**. 
+   - [Modify repository settings](../organizations/security/set-object-level-permissions.md): For each repository, you can change the settings to make them read-only, which involves adjusting the permissions for each user or group to only allow read actions. 
+   - [Use built-in security groups](../organizations/security/permissions-access.md): Utilize the built-in security groups to manage permissions more efficiently. You can assign users to groups like "Readers" to provide read-only access. 
+   - Scripting permission changes: If you have many projects or repositories, you might need to script them. You can use the [Azure CLI DevOps extension](../cli/index.md) to list all permissions and update them as needed.
+   - Disable repository feature: Disables access to the repository, including builds and pull requests, but keeps the repository discoverable with a warning. Go to **Project settings** > **Repositories** > your repo, and next to Disable Repository, move the toggle to **On**. 
 
-The following features can be included with your import, but are currently in a preview state. 
+## Option 2: Azure DevOps Migration Tool
 
-* [Analytics](../report/powerbi/what-is-analytics.md) - Note this is only supported for Azure DevOps Server 2019 and later.
+The Azure DevOps Data Migration Tool is a set of utilities provided by Microsoft to facilitate the migration of data from Azure DevOps Server to Azure DevOps Services. These tools offer a streamlined approach to migrate various artifacts, including source code, work items, test cases, and other project-related data.  
 
-When queueing an import, you can elect to include preview features with your import. If you do, data related to these features will be copied into your new organization along with all your other data. If you choose not to include these features then their data won't be copied.
+Before you initiate the migration process, the tools can perform a premigration analysis to assess the readiness of the source environment and identify potential issues or dependencies that might affect the migration. Assess readiness, so you can plan and mitigate potential challenges beforehand. 
 
-For a list of items not included with an import, see the [migration guide and tool](https://aka.ms/AzureDevOpsImport).
+## Migration Tool limitations
 
-## Data migration tool for Azure DevOps resources
+The tool allows you to "lift and shift" one Azure DevOps Server Collection to one new Azure DevOps Service Organization, with no modifications for the following reasons: 
 
-In general, you should use the [Migration guide and tool](https://aka.ms/AzureDevOpsImport) when going through an import. When it's required, the guide links back to the following articles. These articles offer deeper technical knowledge on various import topics. 
+- Data integrity and consistency: 
+  - When you migrate data, maintaining integrity and consistency is crucial. Allowing modifications during migration could lead to data corruption or inconsistencies. 
+  - The tool ensures that data remains intact during the transfer process, minimizing the risk of errors. 
+- Source data preservation: 
+  - The migration tool aims to faithfully replicate the source data in the target environment. 
+  - Modifications could alter the original data, potentially causing discrepancies between the migrated data and the source data. 
+- Predictable behavior: 
+  - By restricting modifications, the tool ensures predictable behavior during migration. 
+  - Users can rely on consistent results without unexpected changes. 
+- Migration focus, not transformation: 
+  - The primary purpose of the migration tool is to move data from one location to another. 
+  - Data transformation (such as modifying values) is typically handled separately after migration. 
 
-### Import process 
+You can purge data that you don’t need before or after the migration. 
 
-* [Validate a collection for import](migration-import.md#validate-a-collection)
-* [Prepare a collection for import](migration-import.md#generate-import-files) 
-* [Prepare for import](migration-import.md#prepare-import)
-	* [Prepare large collections for import](migration-import-large-collections.md)
-* [Run an import](migration-import.md#run-an-import)
-* [Post import steps](migration-post-import.md)
+## Migration Tool process
 
-### Troubleshooting 
+1. Complete the prerequisites such as updating Azure DevOps Server to one of the two most recent releases. 
+1. Validate each collection that you want to move to Azure DevOps Services. 
+1. Generate migration files. 
+1. Prepare everything for your migration execution. 
+1. Perform a test run. 
+1. Carry out a migration. 
+1. Confirm that your users and data got migrated, and the collection is functioning as expected. 
 
-* [Troubleshooting validation errors](migration-troubleshooting.md)
-* [Troubleshooting process errors](migration-processtemplates.md#dealing-with-process-errors)
-* [Troubleshooting import errors](migration-troubleshooting.md#resolve-import-errors)
+## Option 3: API-based migration
 
+If for some reason you can't use the Data Migration Tool but still want a higher fidelity migration than [Option 2](#option-2-azure-devops-migration-tool), you can choose from various tools that use public APIs to move data.  
 
-## Q & A
+## API-based migration limitations
 
-<!-- BEGINSECTION class="md-qanda" -->
+The following limitations occur with API-based migration: 
 
-### Q: Will my Personal Access Tokens also migrate when I migrate from on-premises to Azure DevOps Services?
+- Low fidelity migration: 
+  - Limitation: API-based tools provide a higher fidelity than manual copying but are still relatively low fidelity. 
+  - Implication: While these tools offer some fidelity, they don’t preserve all aspects of your data. 
+    - Example: None of them retain the original dates of TFVC changesets (Team Foundation Version Control). 
+    - Many don’t preserve the changed dates of work item revisions either. 
+- Data loss and ID changes: 
+  - Limitation: During migration, the tools replay work item changes, TFVC changesets, package feeds, and pipeline artifacts. 
+  - Implication: This process might lead to data loss, generate new IDs, and alter creation, modification, and closure dates. 
+    - Example: Historical context tied to specific dates might get lost, affecting reporting and traceability. 
 
-A: **No**. Your tokens won't migrate and you'll need to [regenerate your Personal Access Tokens](../organizations/accounts/use-personal-access-tokens-to-authenticate.md?tabs=preview-page) on Azure DevOps Services.
+## API-based migration process
 
-### Q: If I have feedback or other questions is there somewhere I can reach out?
+In general, we only recommend this approach if extra fidelity beyond a manual copy is critical. If you decide to take this approach, you might consider hiring a consultant who has experience with one or more of the tools and do a test migration before your final migration. 
 
-A: You can search the [developer community portal](https://developercommunity.visualstudio.com/report?space=21&entry=problem) to see if your question is asked and answered and if not, open up a new issue. If you need assistance with a failed import, contact Azure DevOps [customer support](https://aka.ms/AzureDevOpsImportSupport). 
-<!-- ENDSECTION --> 
+Many organizations need a very high-fidelity migration for only a subset of their work. New work could potentially start directly in Azure DevOps Services. Other work, with less stringent fidelity requirements, could be migrated using one of the other approaches.
+
+## Supported process models
+
+Azure DevOps Services supports the following process models: 
+
+- [Inherited](../organizations/settings/work/customize-process.md) 
+- [Hosted XML](../organizations/settings/work/hosted-xml-process-model.md)
+
+By default, Hosted XML is turned **off** in Azure DevOps Services. We turn on the Hosted XML process model during migration only if you customized a project in Azure DevOps Server. Once your project is on Hosted XML, you can [upgrade it to inherited post migration](../organizations/settings/work/hosted-xml-process-model.md).
+
+## Key principles 
+
+When migrating into Azure DevOps Services, keep in mind the following key principles and limitations: 
+
+- **Azure DevOps Services is English only**: Azure DevOps Server supports multiple languages, however today, Azure DevOps Services only supports English. If your collection uses the non-English language or used non-English in the past and you converted the language to English during an upgrade, you can’t use the Data Migration Tool. 
+- **Inheritance**: A project, which was created from the Agile, Scrum or CMMI process template and was never customized, is on the Inheritance process model after the migration. 
+- **Hosted XML**: Any project with customizations uses the Hosted XML process model. 
+- **Process per customized project**: Although Azure DevOps Services allows projects to share a process, the Data Migration Tool creates a Hosted XML process for each customized team project. For example, if you have 30 customized projects, you have 30 Hosted XML processes to manage. If you want to further customize your Hosted XML process for all your projects, you must update each Hosted XML process separately. 
+- **Process validation**: The process validation of the Data Migration Tool detects the target process model for each project. Before you can migrate, you need to fix any process validation errors for the Hosted XML projects. You might want to consider updating the process of your projects to match one of our processes (Agile, Scrum or CMMI) to take advantage of the Inheritance process model. Learn more on the process validation types in our documentation. 
+
+## Resources 
+
+- [Report an issue in the Developer Community](https://developercommunity.visualstudio.com/AzureDevOps/report) 
+- [Get support and provide feedback](../user-guide/provide-feedback.md)
+
+## Next steps 
+
+Get started with Azure DevOps Migration Tool(link) 
+<!--
+Add links to next steps and related articles.
+ -->
 
 ## Related articles
 
-- [Migration and process model FAQs](faqs.yml)
+- Complete prerequisites for migration(link) 
+- Validate and prepare for migration(link) 
+- Prepare for test run(link) 
+- Do test run migration(link) 
+- Migrate to Azure DevOps Services(link) 
+- Complete post-migration tasks(link) 
 

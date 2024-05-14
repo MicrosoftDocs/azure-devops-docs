@@ -143,12 +143,8 @@ productDirectory:
           text: Setup and upgrade requirements
         - url: /azure/devops/server/install/get-started
           text: Install
-        - url: /azure/devops/server/upgrade/get-started
-          text: Upgrade
-        - url: ./migrate/migrate-from-tfs.md
+        - url: /azure/devops/migrate/migration-overview.md
           text: Migrate
-        - url: /azure/devops/server/server/
-          text: See more >
 tools: 
   title: Build & deploy your apps
   items: 
