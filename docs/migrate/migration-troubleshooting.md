@@ -338,7 +338,7 @@ The region that you entered for your Azure DevOps Services migration isn't suppo
 
 `VS403254: Region {0} might not be used for the Import, it is not a supported region.`
 
-Open your migration specification file and update the region that you provided with the correct short name for the [region](migration-migrate.md#supported-azure-regions-for-import). 
+Open your migration specification file and update the region that you provided with the correct short name for the [region](migration-migrate.md#supported-azure-regions-for-migration). 
 
 **VS403249**
 
@@ -356,7 +356,7 @@ The DACPAC isn't built off a detached collection.
 
 `VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.`
 
-[Detach](migration-migrate.md#step-1-detach-your-collection) your collection database and generate the DACPAC again.
+[Detach](migration-test-run.md#step-1-detach-your-collection) your collection database and generate the DACPAC again.
 
 **VS403243**
 
@@ -374,7 +374,7 @@ The collection database isn't detached.
 
 `VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server.`
 
-[Detach](migration-migrate.md#step-1-detach-your-collection) your collection database and retry the migration queue.  
+[Detach](migration-test-run.md#step-1-detach-your-collection) your collection database and retry the migration queue.  
 
 **VS403261**
 
@@ -398,7 +398,7 @@ Your SQL sign in user account doesn't have the required database role.
 
 `VS403263: The User ID {0} must be member of the database role {1}.`
 
-Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-migrate.md#configure-your-collection-for-migration) role. 
+Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-test-run.md#configure-your-collection-for-migration) role. 
 
 > [!NOTE]   
 > There is a known issue with using `sp_addrolemember` to add `TFSEXECROLE` to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your migration.

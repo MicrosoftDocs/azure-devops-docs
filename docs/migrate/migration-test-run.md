@@ -310,7 +310,7 @@ You might find that your drive C is too small to support creating a DACPAC. You 
 The *DataMigrationTool.log* file provides a list of the largest tables in the collection each time the command is run. For an example of table sizes for a collection, see the following output. Compare the size of the largest table with the free space on the drive that hosts your temporary directory. 
 
 > [!IMPORTANT]  
-> Before you proceed with generating a DACPAC file, ensure that your collection is [detached](migration-migrate.md#step-1-detach-your-collection).
+> Before you proceed with generating a DACPAC file, ensure that your collection is [detached](#step-1-detach-your-collection).
  
 
 ```cmdline 
@@ -351,7 +351,7 @@ SqlPackage.exe /sourceconnectionstring:"Data Source=localhost;Initial Catalog=Fo
 
 The output of the command is a DACPAC file, generated from the collection database *Foo* called *Foo.dacpac*. 
  
-#### Configure your collection for import
+#### Configure your collection for migration
 
 After your collection database restores on your Azure VM, configure a SQL sign-in to allow Azure DevOps Services to connect to the database to migration the data. This sign-in allows only *read* access to a single database. 
 
@@ -451,7 +451,7 @@ You can generate SAS tokens [using the Azure portal](/azure/storage/blobs/blob-c
 
 1. Select only **Read** and **List** as permissions for your SAS token. No other permissions are required.
 2. Set an expiry time no further than seven days into the future.
-3. [Restrict access to Azure DevOps Services IPs only](migration-prepare-test-run.md#restrict-access-to-azure-devops-services-ips-only.md).
+3. [Restrict access to Azure DevOps Services IPs only](migration-prepare-test-run.md#restrict-access-to-azure-devops-services-ips-only).
 4. Treat the SAS key as a secret. Do not leave the key in an insecure location as it grants read and list access to any data that you have stored in the container.
 
 ### Step 5: Complete the migration specification
@@ -496,7 +496,7 @@ Before you can run a second test run migration or the final production migration
 It can take up to one hour for an organization name to become available after deleting or renaming. 
 For more information about post-import activities, see the [post import](migration-post-migration.md) article. 
 
-If you encounter any migration problems, see [Troubleshoot migration and migration errors](migration-troubleshooting.md#resolve-import-errors). 
+If you encounter any migration problems, see [Troubleshoot migration and migration errors](migration-troubleshooting.md#resolve-migration-errors). 
 
 <a id="run-an-import"></a>
 
@@ -521,12 +521,12 @@ You can then contact Azure DevOps Services customer support for help with unders
 
 Before generating a backup of your SQL database, the Data Migration Tool requires the collection to be completely detached from Azure DevOps Server (not SQL). The detach process in Azure DevOps Server transfers user identity information that is stored outside of the collection database and makes it portable to move to a new TFS server or in this case, to Azure DevOps Services. 
 
-Detaching a collection is easily done from the Azure DevOps Server Administration Console on your Azure DevOps Server instance. For more information, see [Move project collection, Detach the collection](/azure/devops/server/admin/move-project-collection?view=azure-devops-2022). 
+Detaching a collection is easily done from the Azure DevOps Server Administration Console on your Azure DevOps Server instance. For more information, see [Move project collection, Detach the collection](/azure/devops/server/admin/move-project-collection). 
 
 ### Queue the migration
 
 > [!IMPORTANT] 
-> Before you proceed, ensure that your collection was [detached](migration-migration.md#step-1-detach-your-collection) prior to generating a DACPAC file or uploading the collection database to a SQL Azure VM. If you don't complete this step, the migration fails. In the event that your migration fails, see [Troubleshoot migration and migration errors](migration-troubleshooting.md). 
+> Before you proceed, ensure that your collection was [detached](#step-1-detach-your-collection) prior to generating a DACPAC file or uploading the collection database to a SQL Azure VM. If you don't complete this step, the migration fails. In the event that your migration fails, see [Resolve migration errors](migration-troubleshooting.md). 
 
 Start a migration by using the Data Migration Tool's **import** command. The migration command takes a migration specification file as input. It parses the file to ensure that the provided values are valid and, if successful, it queues a migration to Azure DevOps Services. The migration command requires an internet connection, but doesn't* require a connection to your Azure DevOps Server instance. 
 
