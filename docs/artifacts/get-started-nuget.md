@@ -1,10 +1,12 @@
 ---
 title: Get started with NuGet packages and Azure Artifacts
-description: Use Azure Artifacts to publish and download NuGet packages from your feeds
+description: How to use Azure Artifacts to publish and download NuGet packages from your feed.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
+ms.author: rabououn
+author: ramiMSFT
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.date: 06/08/2023
+ms.date: 05/14/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -18,10 +20,10 @@ Azure Artifacts enables developers to publish and download NuGet packages from d
 In this article, you'll learn how to:
 
 > [!div class="checklist"]    
-> * Create a new feed  
-> * Set up your project and connect to your feed  
-> * Publish NuGet packages
-> * Download packages from your feed  
+> * Create a new feed.
+> * Set up your project and connect to your feed.
+> * Publish NuGet packages.
+> * Download packages from your feed.
 
 ## Prerequisites
 
@@ -29,35 +31,29 @@ In this article, you'll learn how to:
 
 - Install the [latest NuGet version](https://www.nuget.org/downloads).
 
-- Install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+- Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
-## Create a feed
-
-Azure Artifacts offers two types of feeds: project-scoped feeds and organization-scoped feeds. if you want to create a public feed, begin by creating a project-scoped feed, and then adjust the visibility settings of the project hosting your feed to public. This will effectively make your project-scoped feed accessible to the public.
+## Create Feed
 
 [!INCLUDE [](includes/create-feed.md)]
 
-## Connect to feed
+## Connect to Feed
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-1. Select **Connect to feed**.
+1. Select **Connect to feed**, and then select **NuGet.exe** from the left navigation pane. If this is the first time using Azure Artifacts with Nuget.exe, ensure that you have installed all the prerequisites.
 
     :::image type="content" source="./media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot showing the connect to feed button.":::
 
-1. Select **NuGet.exe**. If this is the first time using Azure Artifacts with Nuget.exe, ensure that you have installed all the prerequisites.
-
-1. Follow the instructions provided in the **Project setup** section to configure your nuget.config file.
+1. Follow the instructions provided in the **Project setup** section to configure your *nuget.config* file and authenticate with Azure Artifacts.
 
     :::image type="content" source="./media/project-setup.png" alt-text="A screenshot showing how to set up your project.":::
 
 ::: moniker-end
-
-
 
 ## Download packages
 
