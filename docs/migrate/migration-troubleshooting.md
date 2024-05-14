@@ -338,7 +338,7 @@ The region that you entered for your Azure DevOps Services migration isn't suppo
 
 `VS403254: Region {0} might not be used for the Import, it is not a supported region.`
 
-Open your migration specification file and update the region that you provided with the correct short name for the [region](migration-migrate.md#supported-azure-regions-for-migration). 
+Open your migration specification file and update the region that you provided with the correct short name for the [region](migration-test-run.md#supported-azure-regions-for-migration). 
 
 **VS403249**
 

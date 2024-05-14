@@ -20,11 +20,11 @@ As you move to the second phase of migrating to Azure DevOps Services with the A
 
 ## Update Azure DevOps Server 
 
-The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases.
+The Data Migration Tool for Azure DevOps supports the [two latest releases of Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops) at a given time. Releases include updates and major releases.
 
 It can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for migration support to come online for that version. Consider this possibility when you choose to upgrade shortly after a new RTW Azure DevOps Server release. 
 
-The data migration tool doesn't support migration from Azure DevOps Server release candidates (RC). If you're planning to migrate your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you upgrade, then you must wait and upgrade to the release to web (RTW) version when it's available. Or, restore a backup copy of your database from a previous Azure DevOps Server version to migrate. You can't downgrade to a previous version of Azure DevOps, but must revert using a backup of the database at that version. 
+The Data Migration Tool doesn't support migration from Azure DevOps Server release candidates (RC). If you're planning to migrate your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you upgrade, then you must wait and upgrade to the release to web (RTW) version when it's available. Or, restore a backup copy of your database from a previous Azure DevOps Server version to migrate. You can't downgrade to a previous version of Azure DevOps, but must revert using a backup of the database at that version. 
 
 Normal release cadence for new Azure DevOps Server versions is once every three to four months. Meaning that support for a given version of Azure DevOps Server for migration to Azure DevOps Services should last for anywhere between six-to-eight months. It's important to ensure that your plan accounts for this support window to avoid having to suddenly upgrade to migrate. 
 
