@@ -158,6 +158,20 @@ If you configured the agent to run interactively, run the following the command 
 
 To restart the agent, press Ctrl+C to stop the agent, and then run `run.cmd` to restart it. 
 
+> [!Note]
+> Please, be aware that if you are running the agent from PowerShell Core to execute Windows PowerShell tasks, your pipeline may fail. This is because 
+> Windows PowerShell inherits the `PSModulePath` environment variable, which includes PowerShell Core module locations, from its parent process. 
+>
+> As a workaround, you can set the agent's knob `AZP_AGENT_CLEANUP_PSMODULES_IN_POWERSHELL` to `"true"` in the pipeline. This will allow the agent to reset `PSModulePath` 
+> before executing tasks.
+> 
+> ```yml    
+>      variables:
+>        AZP_AGENT_CLEANUP_PSMODULES_IN_POWERSHELL: "true"
+>    ```
+>
+> If this workaround does not resolve your issue, or if you need to use custom module locations, you can set the `$Env:PSModulePath` variable as needed in your PowerShell Core window before running the agent.
+
 #### Run once
 
 You can also choose to have the agent accept only one job and then exit.
