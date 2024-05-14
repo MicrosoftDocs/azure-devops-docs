@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot migration errors
+title: Resolve migration errors
 titleSuffix: Azure DevOps
-description: Resolve common Data Migration Tool validation errors. 
+description: Troubleshoot and resolve common Data Migration Tool validation errors. 
 ms.topic: troubleshooting
 ms.subservice: azure-devops-migrate
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
@@ -12,16 +12,11 @@ monikerRange: '<= azure-devops'
 ms.date: 05/17/2024
 ---
 
-# Troubleshoot migration errors
+# Resolve migration errors
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-The data migration tool flags errors that you need to correct prior to performing a migration to Azure DevOps Services. This article describes the most common warnings and errors that you might receive when you're preparing to migrate. After you correct each error, run the **migrator validate** command again to verify resolution.
-
-> [!NOTE]
-> We recommended that you use the [Migration guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation as needed.
->
-> With the release of Azure DevOps Server 2019, the Team Foundation Server (TFS) Database Import Service was re-branded to become the data migration tool for Azure DevOps. The data migration tool, **TfsMigrator** has been renamed **Migrator** for short. The service still works exactly the same as the previous import service. If you're on an older version of on-premises with TFS as the branding, you can still use **Migrator** to migrate to Azure DevOps as long as you upgrade to one of the supported versions. For details, see [Migrate data from Azure DevOps Server to Azure DevOps Services](migration-overview.md).
+The Data Migration Tool flags errors that you need to correct before you migrate to Azure DevOps Services. This article describes the most common warnings and errors that you might receive when you're preparing to migrate. After you correct each error, run the **migrator validate** command again to verify resolution.
 
 ## Resolve size warnings
 
@@ -85,7 +80,7 @@ This warning requires you to acknowledge acceptance of the warning. Accepting th
 
 When you migrate an unsupported collation into Azure DevOps Services, the collation is transformed to a supported collation. While this transform generally works without issue, unexpected results post migration or migration failures could occur.  
 
-For instance, customers might notice different ordering for strings containing non-English characters. Non-English characters like 'é' might become equivalent to the English 'e' after migration. It's important that you complete and verify a test run migration when importing a collection with a nonsupported collation.
+For instance, customers might notice different ordering for strings containing non-English characters. Non-English characters like 'é' might become equivalent to the English 'e' after migration. It's important that you complete and verify a test run migration when you migrate a collection with an unsupported collation.
 
 ### No native support, no internet connection
 
@@ -107,7 +102,7 @@ In order to continue, you need to [change your collection's collation](/sql/rela
     
 ## Resolve identity errors
 
-Fix identity errors before migration to prevent problems. They're rare and happen when old TFS operations are invalid on new Azure DevOps Server. For instance, some users can’t be in valid users group anymore.
+Fix identity errors before migration to prevent problems. They're rare and happen when old TFS operations are invalid on a new Azure DevOps Server. For instance, some users can’t be in valid users group anymore.
 
 The following sections provide guidance for resolving the most common identity errors.
 
@@ -331,7 +326,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 
 ## Resolve migration errors
 
-Failures that occur during migration fall into one of two categories, [verification failure](#verification-failures) and [import failure](#import-failures).  
+Failures that occur during migration fall into one of two categories, [verification failure](#verification-failures) and [migration failure](#migration-failures).  
 
 ### Verification failures
 
@@ -343,11 +338,11 @@ The region that you entered for your Azure DevOps Services migration isn't suppo
 
 `VS403254: Region {0} might not be used for the Import, it is not a supported region.`
 
-Open your migration specification file and update the region that you provided with the correct short name for the [region](migration-migration.md#supported-azure-regions-for-import). 
+Open your migration specification file and update the region that you provided with the correct short name for the [region](migration-migrate.md#supported-azure-regions-for-import). 
 
 **VS403249**
 
-The organization name your team selected is already in use by an existing organization. All Azure DevOps Services imports go into a new organization that is created at migration time. 
+The organization name your team selected is already in use by an existing organization. All Azure DevOps Services migrations go into a new organization that is created at migration time. 
 
 `VS403249: The organization {0} already exists. Please select a different name and try the migration again.`
 
@@ -361,7 +356,7 @@ The DACPAC isn't built off a detached collection.
 
 `VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.`
 
-[Detach](migration-migration.md#step-1-detach-your-collection) your collection database and generate the DACPAC again.
+[Detach](migration-migrate.md#step-1-detach-your-collection) your collection database and generate the DACPAC again.
 
 **VS403243**
 
@@ -379,7 +374,7 @@ The collection database isn't detached.
 
 `VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server.`
 
-[Detach](migration-migration.md#step-1-detach-your-collection) your collection database and retry the migration queue.  
+[Detach](migration-migrate.md#step-1-detach-your-collection) your collection database and retry the migration queue.  
 
 **VS403261**
 
@@ -403,10 +398,10 @@ Your SQL sign in user account doesn't have the required database role.
 
 `VS403263: The User ID {0} must be member of the database role {1}.`
 
-Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-migration.md#configure-your-collection-for-import) role. 
+Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-migrate.md#configure-your-collection-for-migration) role. 
 
 > [!NOTE]   
-> There is a known issue with using `sp_addrolemember` to add `TFSEXECROLE` to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your migration. Details on how to create a new SQL login that's ready to be used for migration can be found at [Import large collections](migration-import-large-collections.md).
+> There is a known issue with using `sp_addrolemember` to add `TFSEXECROLE` to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your migration.
 
 **VS403264**
 
@@ -418,7 +413,7 @@ Verify or correct the connection string points to your collection database.
 
 **VS40325**
 
-The Azure DevOps Server Update has queued the file migration job. Imports can't be performed until this job completes. The completion time for this job is dependent on the size of the collection. 
+The Azure DevOps Server Update has queued the file migration job. You can't perform migrations until this job completes. The completion time for this job is dependent on the size of the collection. 
 
 `VS403255: The collection cannot be imported due to an ongoing post upgrade job. Please wait and try again later`
 
@@ -473,11 +468,11 @@ List of Azure DevOps Services IPs:
 
 Verify that you entered the information correctly in your connection string and that you can connect to the VM. 
 
-The IPs that the error message lists are for Azure DevOps Services. Azure DevOps Services IPs can change temporarily during deployments. Add them to your firewall exceptions and try queuing the migration again. For a list of IP addresses, see [Import large collections, Restrict access to Azure DevOps Services IPs only.](migration-import-large-collections.md#ips)
+The IPs that the error message lists are for Azure DevOps Services. Azure DevOps Services IPs can change temporarily during deployments. Add them to your firewall exceptions and try queuing the migration again. For a list of IP addresses, see [Migrate large collections, Restrict access to Azure DevOps Services IPs only](migration-prepare-test-run.md#migrate-large-collections).
 
 **VS403373**
 
-The Data Migration Tool doesn't support importing multiple copies of the **SAME** collection. However, it **DOES** support importing **split** copies of a collection. Change the GUID for the **_DataImportCollectionID_**.
+The Data Migration Tool doesn't support migrating multiple copies of the **SAME** collection. However, it **DOES** support migrating **split** copies of a collection. Change the GUID for the **_DataImportCollectionID_**.
 
 From SQL Server Management Studio (SSMS), open the extended properties for the split copies that you didn't migrate yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then rerun the **prepare** command and use the new **migration.json** file to queue the migration.
 
@@ -489,14 +484,13 @@ Data migration fails as one or more projects found in this collection are in the
 
 Verify the collection against which you're running the Data Migration Tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which the deleted project can be restored. You can read about how to restore a deleted project in [Restore a project](../organizations/projects/delete-project.md#restore-a-deleted-project). If you have projects in the soft-deleted stage, remove them completely or restore them back before running data migration.
 
-### Import failures
+### Migration failures
 
-Import failures mean that the migration queued, but didn't complete. The individual who queued the migration receives a failure email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your migration. 
+Migration failures mean that the migration queued, but didn't complete. The individual who queued the migration receives a failure email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your migration. 
 
 If the error is more complex, then the email you receive provides instructions on how to file a [customer support case](https://aka.ms/AzureDevOpsImportSupport). After you submit a customer support case, your team must roll back by bringing your Azure DevOps Server instance back online and reattach your collection. Your team members can then continue working. We recommended that you don't try the migration again until the failure causing the issue gets resolved.
  
 ## Related articles
 
-- 
-- [Post-import](migration-post-import.md)
+- [Complete post migration tasks](migration-post-import.md)
 - [Delete a project](../organizations/projects/delete-project.md)

@@ -140,4 +140,4 @@ landingContent:
           - text: Post-migration
             url: ../migrate/migration-post-migration.md
           - text: Troubleshoot
-            url: ../migrate/migration-troubleshoot.md
+            url: ../migrate/migration-troubleshooting.md

@@ -18,7 +18,7 @@ Moving from Azure DevOps Server to Azure DevOps Services is an essential step fo
 
 For information about the main differences between on-premises Azure DevOps Server and the cloud-based Azure DevOps Services, see [Compare Azure DevOps Services with Azure DevOps Server - Azure DevOps](../user-guide/about-azure-devops-services-tfs.md). 
 
-Regardless of your selected migration option, we recommend that you determine your most important assets, such as source code and work items. You should think about your data size, organization complexity and make sure that you have enough time for dry runs before actual migration for a smooth and successful transition. 
+Regardless of your selected migration option, we recommend that you determine your most important assets, such as source code and work items. You should think about your data size, organization complexity and make sure that you have enough time for test runs before actual migration for a smooth and successful transition. 
 
 ## Approaches to migration 
 
@@ -132,17 +132,14 @@ When migrating into Azure DevOps Services, keep in mind the following key princi
 
 ## Next steps 
 
-Get started with Azure DevOps Migration Tool(link) 
-<!--
-Add links to next steps and related articles.
- -->
+> [!div class="nextstepaction"]
+> [Get started with Azure DevOps Migration Tool](migration-get-started.md)
 
 ## Related articles
 
-- Complete prerequisites for migration(link) 
-- Validate and prepare for migration(link) 
-- Prepare for test run(link) 
-- Do test run migration(link) 
-- Migrate to Azure DevOps Services(link) 
-- Complete post-migration tasks(link) 
-
+- [Complete prerequisites for migration](migration-prerequisites.md)
+- [Validate and prepare for migration](migration-validate.md)
+- [Prepare for test run](migration-prepare-test-run.md) 
+- [Do test run migration](migration-test-run.md)
+- [Migrate to Azure DevOps Services](migration-migrate.md) 
+- [Complete post-migration tasks](migration-post-migration.md)

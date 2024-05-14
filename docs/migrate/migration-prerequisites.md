@@ -93,6 +93,6 @@ You must have the following items:
 
 - [Prepare for test run](migration-prepare-test-run.md)
 - [Do test run migration](migration-test-run.md)
-- Migrate to Azure DevOps Services(link) 
-- Complete post-migration tasks(link) 
+- [Migrate to Azure DevOps Services](migration-migrate.md)
+- [Complete post-migration tasks](migration-post-migration.md)
  

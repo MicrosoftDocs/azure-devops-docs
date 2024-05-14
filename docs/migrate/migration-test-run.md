@@ -310,7 +310,7 @@ You might find that your drive C is too small to support creating a DACPAC. You 
 The *DataMigrationTool.log* file provides a list of the largest tables in the collection each time the command is run. For an example of table sizes for a collection, see the following output. Compare the size of the largest table with the free space on the drive that hosts your temporary directory. 
 
 > [!IMPORTANT]  
-> Before you proceed with generating a DACPAC file, ensure that your collection is [detached](migration-migration.md#step-1-detach-your-collection).
+> Before you proceed with generating a DACPAC file, ensure that your collection is [detached](migration-migrate.md#step-1-detach-your-collection).
  
 
 ```cmdline 
@@ -393,13 +393,13 @@ Update the migration specification file to include information about how to conn
 
     The migration specification before the change is shown in the following code.
     
-    ![Screenshot of the migration specification before the change.](media/migration-import/importSpecBefore.png)
+    ![Screenshot of the migration specification before the change.](media/import-spec-before.png)
     
     The migration specification after the change is shown in the following code.
     
-    ![Screenshot of the migration specification after the change.](media/migration-import/importSpecAfter.png)
+    ![Screenshot of the migration specification after the change.](media/import-spec-after.png)
 
-1. Fill out the required parameters and add the following properties object within your source object in the specification file.
+2. Fill out the required parameters and add the following properties object within your source object in the specification file.
 
     ```json
     "Properties":
@@ -410,7 +410,7 @@ Update the migration specification file to include information about how to conn
 
 After you apply the changes, the migration specification looks like the following example.
 
-![Screenshot of the migration specification referencing a SQL Azure VM.](media/migration-import/importSpecIaaS.png)
+![Screenshot of the migration specification referencing a SQL Azure VM.](media/import-spec-iaas.png)
 
 Your migration specification is now configured to use a SQL Azure VM for migration. Proceed with the rest of preparation steps to migration to Azure DevOps Services. After the migration finishes, be sure to delete the SQL sign-in or rotate the password. Microsoft doesn't retain the sign-in information after the migration finished. 
 
@@ -447,12 +447,12 @@ After the migration finishes, delete the blob container and accompanying storage
 
 A [shared access signature (SAS) token](/azure/storage/common/storage-sas-overview) provides delegated access to resources in a storage account. The token allows you to give Microsoft the lowest level of privilege required to access your data for executing the migration. 
 
-SAS tokens can be [generated using the Azure portal](/azure/storage/blobs/blob-containers-portal#generate-a-shared-access-signature). From a security point-of-view, we recommend:
+You can generate SAS tokens [using the Azure portal](/azure/storage/blobs/blob-containers-portal#generate-a-shared-access-signature). From a security point-of-view, we recommend doing the following tasks:
 
 1. Select only **Read** and **List** as permissions for your SAS token. No other permissions are required.
 2. Set an expiry time no further than seven days into the future.
-3. [Restrict access to Azure DevOps Services IPs only](migration-prepare-test-tun.md#restrict-access-to-azure-devops-services-ips-only.md).
-4. Place the SAS token in a secure location.
+3. [Restrict access to Azure DevOps Services IPs only](migration-prepare-test-run.md#restrict-access-to-azure-devops-services-ips-only.md).
+4. Treat the SAS key as a secret. Do not leave the key in an insecure location as it grants read and list access to any data that you have stored in the container.
 
 ### Step 5: Complete the migration specification
 
@@ -483,8 +483,17 @@ Imports can be queued as either a test run or a production run. The **ImportType
 
 Test run organizations help teams test the migration of their collections. Before a production migration can be run, any completed [test run organizations must be deleted](#prepare-for-migration). All test run organizations have a *limited existence and are automatically deleted after a set period of time*. Information about when the organization is deleted is included in the success email you should receive after the migration finishes. Be sure to take note of this date and plan accordingly. 
 
-Most test run organizations have 15 days before they're deleted. Test run organizations can also have a 21-day expiration if more than 100 users have a basic or greater license at *import time*. After the specified time period, the test run organization is deleted. You can repeat test run imports as many times as you need before you do a production migration. You need to delete any previous test runs before you attempt a new one. When your team is ready to perform a production migration, you need to manually delete the test run organization. 
+Most test run organizations have 15 days before they're deleted. Test run organizations can also have a 21-day expiration if more than 100 users have a basic or greater license at *import time*. After the specified time period, the test run organization is deleted. You can repeat test run imports as many times as you need before you do a production migration. 
 
+## Delete test runs
+
+Delete any previous test runs before you attempt a new one. When your team is ready to perform a production migration, you need to manually delete the test run organization. 
+Before you can run a second test run migration or the final production migration, make sure you delete any previous Azure DevOps Services organizations that you created in a previous test run. For more information, see [Delete organization](../organizations/accounts/delete-your-organization.md). 
+
+> [!TIP]
+> Optional information to help a user be more successfulAny test run migration that follows the first is expected to take longer given the extra time required to clean up resources from previous test runs. 
+
+It can take up to one hour for an organization name to become available after deleting or renaming. 
 For more information about post-import activities, see the [post import](migration-post-migration.md) article. 
 
 If you encounter any migration problems, see [Troubleshoot migration and migration errors](migration-troubleshooting.md#resolve-import-errors). 
@@ -504,7 +513,15 @@ Your team is now ready to begin the process of running a migration. We recommend
 
 A common concern for teams doing a final production run is their rollback plan, if anything goes wrong with migration. We highly recommend doing a test run to make sure that you can test the migration settings you provide to the Data Migration Tool for Azure DevOps.
 
-Rollback for the final production run is fairly simple. Before you queue the migration, you detach the team project collection from Azure DevOps Server, which makes it unavailable to your team members. If for any reason you need to roll back the production run and bring the on-premises server back online for your team members, you can do so. Attach the team project collection on-premises again and inform your team that they continue to work normally while your team regroups to understand any potential failures.
+Rollback for the final production run is fairly simple. Before you queue the migration, detach the team project collection from Azure DevOps Server, which makes it unavailable to your team members. If for any reason you need to roll back the production run and bring the on-premises server back online for your team members, you can do so. Attach the team project collection on-premises again and inform your team that they continue to work normally while your team regroups to understand any potential failures.
+
+You can then contact Azure DevOps Services customer support for help with understanding the failure's cause if you can't determine the cause. For more information, see the [Troubleshooting article](migration-troubleshooting.md). Customer support tickets can be opened from the following page https://aka.ms/AzureDevOpsImportSupport. It’s important to note that if the issue requires product group engineers to engage those cases will be handled during regular business hours. 
+
+#### Detach your team project collection from Azure DevOps Server to prepare it for migration. 
+
+Before generating a backup of your SQL database, the Data Migration Tool requires the collection to be completely detached from Azure DevOps Server (not SQL). The detach process in Azure DevOps Server transfers user identity information that is stored outside of the collection database and makes it portable to move to a new TFS server or in this case, to Azure DevOps Services. 
+
+Detaching a collection is easily done from the Azure DevOps Server Administration Console on your Azure DevOps Server instance. For more information, see [Move project collection, Detach the collection](/azure/devops/server/admin/move-project-collection?view=azure-devops-2022). 
 
 ### Queue the migration
 
@@ -542,8 +559,8 @@ The Data Migration Tool flags errors that you need to correct before migration. 
 
 ## Next steps
 
-
-Resolve migration errors
+> [!div class="nextstepaction"]
+> [Resolve migration errors](migration-troubleshooting.md)
 
 ## Related articles
 

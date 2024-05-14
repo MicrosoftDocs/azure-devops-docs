@@ -129,5 +129,5 @@ By following this approach, you have a smooth transition while ensuring your pre
 - [Validate and prepare for migration](migration-validate.md)
 - [Prepare for test run](migration-prepare-test-run.md)
 - [Do test run migration](migration-test-run.md)
-- Migrate to Azure DevOps Services(link) 
-- Complete post-migration tasks(link)
+- [Migrate to Azure DevOps Services](migration-migrate.md) 
+- [Complete post-migration tasks](migration-post-migration.md)
