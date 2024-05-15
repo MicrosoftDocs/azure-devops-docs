@@ -1,0 +1,39 @@
+schedules:
+- cron: "0 17 * * 1-5"
+  displayName: "Scheduled run at 10 AM PT on weekdays"
+  branches:
+    include:
+    - main
+  always: false # This ensures the pipeline only runs if there have been changes since the last successful run.
+
+- cron: "0 22 * * 1-5"
+  displayName: "Afternoon run at 3:00 PM PT M-F"
+  branches:
+    include:
+    - main
+  always: false
+
+trigger:
+- main
+
+jobs:
+- job: MergeMainToLive
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - checkout: self
+    persistCredentials: true
+  - script: |
+      git config --global user.name "Ted Hudek"
+      git config --global user.email "tedhudek@users.noreply.github.com"
+      git checkout main
+      git checkout live
+      git merge main --no-ff --no-commit
+      if [ $? -eq 0 ]; then
+        git commit -m "Merged main into live"
+        git push origin live
+      else
+        echo "Error merging main to live"
+        exit 1
+      fi
+    displayName: 'Merge main to live if main has changed'
