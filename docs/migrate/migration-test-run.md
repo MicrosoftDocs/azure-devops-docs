@@ -28,37 +28,37 @@ Complete the [Prepare test run phase](migration-prepare-test-run.md) before you 
 Validate each collection that you want to migrate to Azure DevOps Services. The validation step examines various aspects of your collection, including, but not limited to, size, collation, identity, and processes. 
 
 Run the validation by using the Data Migration Tool. 
-1. [Download the tool](https://aka.ms/AzureDevOpsImport)
-2. Copy the zip file to one of your Azure DevOps Server application tiers
+1. [Download the Data Migration Tool](https://azure.microsoft.com/products/devops/migrate/).
+2. Copy the zip file to one of your Azure DevOps Server application tiers.
 3. Unzip the file. 
    You can also run the tool from a different machine without Azure DevOps Server installed, as long as the machine can connect to the configuration database of the Azure DevOps Server instance.
 4. Open a Command Prompt window on the server, and enter a cd command to change to the directory where the Data Migration Tool is stored. Take a few moments to review the help content for the tool. 
  
-   a. To view the top-level help and guidance, run the following command:
+   a. To view the top-level help and guidance, run the following command.
 
 	```cmdline
 	Migrator /help
 	```
 
-   b. View the help text for the command:
+   b. View the help text for the command.
 
 	```cmdline
 	Migrator validate /help 
 	```
 
-5. As your first time validating a collection, your command should have the following simple structure:
+5. As your first time validating a collection, your command should have the following simple structure.
 
 	```cmdline
 	Migrator validate /collection:{collection URL} /tenantDomainName:{name} /region:{region}
 	```
 
-	Where `{name}` provides the name of your Microsoft Entra tenant, for example, to run against the *DefaultCollection* and the *fabrikam* tenant, the command would look like the following example:
+	Where `{name}` provides the name of your Microsoft Entra tenant, for example, to run against the *DefaultCollection* and the *fabrikam* tenant, the command would look like the following example.
 
 	```cmdline
 	Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region}
 	```
 
-6. To run the tool from a machine other than the Azure DevOps Server, you need the **/connectionString** parameter. The connection string parameter points to your Azure DevOps Server configuration database. As an example, if the validated command runs by the Fabrikam corporation, the command would look like:
+6. To run the tool from a machine other than the Azure DevOps Server, you need the **/connectionString** parameter. The connection string parameter points to your Azure DevOps Server configuration database. As an example, if the validated command runs by the Fabrikam corporation, the command would look like.
 
 	```cmdline
 	Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region} /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
@@ -69,7 +69,7 @@ Run the validation by using the Data Migration Tool.
 
 7.	After the validation is complete, you can view the log files and results. 
 
-	![Screenshot of the validation results and logs in the Command Prompt window.](media/migration-import/tfsmigratorConsole.png)
+	:::image type="content" source="media/migration-import/tfsmigratorConsole.png" alt-text="Screenshot of the validation results and logs in the Command Prompt window.":::
 
     During validation, you receive a warning if some of your pipelines contain per-pipeline retention rules. Azure DevOps Services uses a [project-based retention model](../pipelines/policies/retention.md?view=azure-devops&preserve-view=true) and doesn't support per-pipeline retention policies. If you proceed with the migration, the policies aren't carried over to the hosted version. Instead, the default project-level retention policies apply. Retain builds important to you to avoid their loss.
 
@@ -260,10 +260,7 @@ You don't need to repeat a test run migration if users' Visual Studio subscripti
 
 Now you have everything ready to execute on your  test run migration. Schedule downtime with your team to take the collection offline for the migration. When you agree upon a time to run the migration, upload the required assets you generated and a copy of the database to Azure. Preparing for migration consists of the following five steps.
 
-Step 1: [Take the collection offline and detach it](#step-1-detach-your-collection).  
-
-   The collection size limit for the DACPAC method is 150 GB. If the Data Migration Tool displays a warning that you can't use the DACPAC method, you have to perform the migration by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions provided in [Import large collections](migration-import-large-collections.md) and then continue to section [determine the migration type](#determine-the-migration-type).
-
+Step 1: [Take the collection offline and detach it](#step-1-detach-your-collection).
 Step 2: [Generate a DACPAC file from the collection you're going to migrate](#step-2-generate-a-dacpac-file).  
 Step 3: [Upload the DACPAC file and migration files to an Azure storage account](#step-3-upload-the-dacpac-file).  
 Step 4: [Generate an SAS token to access the storage account](#step-4-generate-an-sas-token).  
@@ -274,9 +271,9 @@ Step 5: [Complete the migration specification](#step-5-complete-the-migration-sp
 
 ### Step 1: Detach your collection
 
-[Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the migration process. Identity data for the collection resides in the Azure DevOps Server instance's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance, it takes a copy of that identity data and packages it with the collection for transport. Without this data, the identity portion of the migration *can't* be executed. We recommend that you keep the collection detached until the migration completes, because there isn't a way to migration the changes that occurred during the migration.
+[Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the migration process. Identity data for the collection resides in the Azure DevOps Server instance's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance, it takes a copy of that identity data and packages it with the collection for transport. Without this data, the identity portion of the migration *can't* be executed. 
 
-We recommend that you reattach your collection after you back it up for migration, so you aren't concerned about having the latest data for this type of migration. To avoid offline time altogether, you can also choose to employ an [offline detach](/azure/devops/server/command-line/tfsconfig-cmd#offlinedetach) for test runs. 
+**Recommendation:** keep the collection detached until the migration completes, because there isn't a way to migration the changes that occurred during the migration. Reattach your collection after you back it up for migration, so you aren't concerned about having the latest data for this type of migration. To avoid offline time altogether, you can also choose to employ an [offline detach](/azure/devops/server/command-line/tfsconfig-cmd#offlinedetach) for test runs. 
 
 It's important to weigh the cost of choosing to incur zero downtime for a test run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the end.
 
@@ -287,8 +284,7 @@ It's important to weigh the cost of choosing to incur zero downtime for a test r
 DACPACs offer a fast and relatively easy method for moving collections into Azure DevOps Services. However, after a collection database size exceeds a certain threshold, the benefits of using a DACPAC start to diminish. 
 
 > [!NOTE] 
-> If the Data Migration Tool displays a warning that you can't use the DACPAC method, you have to perform the migration by using the SQL Azure virtual machine (VM) method provided in [Import large collections](migration-import-large-collections.md).  
-> 
+> If the Data Migration Tool displays a warning that you can't use the DACPAC method, you have to perform the migration by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions provided in [Import large collections](migration-import-large-collections.md) and then continue to section [determine the migration type](#determine-the-migration-type). 
 > If the Data Migration Tool doesn't display a warning, use the DACPAC method described in this step.  
 
 [DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications) is a feature of SQL Server that allows databases to be packaged into a single file and deployed to other instances of SQL Server. A DACPAC file can also be restored directly to Azure DevOps Services, so you can use it as the packaging method for getting your collection's data in the cloud.

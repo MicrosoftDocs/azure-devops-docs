@@ -35,7 +35,7 @@ Do the following steps to queue the migration with the Data Migration Tool.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Complete post-migration tasks](migration-post-migration.md).
+> [Complete post-migration tasks](migration-post-migration.md)
 
 ## Related articles 
 

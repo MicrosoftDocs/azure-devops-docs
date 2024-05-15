@@ -1,10 +1,10 @@
-- name: Migrate data to Azure DevOps Services overview
+- name: Migration overview
   displayName: migration, migration guide, migration tool
   href: migration-overview.md
 - name: Get started
   displayName: migration options, database, migration guide
   href: migration-get-started.md
-- name: Prerequisites
+- name: Complete prerequisites
   displayName: database import, data migration tool, validate collection
   href: migration-prerequisites.md
 - name: Validate
@@ -13,15 +13,15 @@
 - name: Prepare test run
   displayName: restrict access to azure devops services ips only
   href: migration-prepare-test-run.md
-- name: Test run
+- name: Do test run
   displayName: inherited process model, hosted xml process model
   href: migration-test-run.md
-- hame: Resolve migration errors
-  displayName: migration errors, migration issues, migration problems
-  href: migration-troubleshooting.md
 - name: Migrate
   displayName: migration tool, migration process, migration service
   href: migration-migrate.md
-- name: Post-migration
+- name: Complete post-migration tasks
+  displayName: post migration tasks, post migration steps, post migration activities
   href: migration-post-migration.md
-
+- hame: Resolve migration errors
+  displayName: migration errors, migration issues, migration problems, troubleshoot migration
+  href: migration-troubleshooting.md

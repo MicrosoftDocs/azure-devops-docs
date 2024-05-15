@@ -262,7 +262,7 @@ If the number of active users is over 50,000, the volume of identities being map
 
 ## Resolve process errors
 
-See the separate [Process Templates](migration-processtemplates.md) page for details on resolving common process errors.
+See the [Validate phase article, Resolve process templates](migration-validate.md#resolve-process-template-errors) for details on resolving common process errors.
 
 ## Resolve field validation errors
 
@@ -324,15 +324,11 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 > [!IMPORTANT]
 > Deleting a field results in a loss of field data across the collection.
 
-## Resolve migration errors
+## Resolve verification failures
 
-Failures that occur during migration fall into one of two categories, [verification failure](#verification-failures) and [migration failure](#migration-failures).  
+Verification failures mean the migration didn't start. The Data Migration Tool attempted to queue a migration, but got an error instead. Your migration request isn't valid. Fix the error messages and then try to migrate again.   
 
-### Verification failures
-
-Verification failures mean the migration didn't start. The Data Migration Tool attempted to queue a migration, but got an error instead. Your migration request isn't valid. Fix the error messages and then try to migration again.   
-
-**VS403254**
+#### VS403254
 
 The region that you entered for your Azure DevOps Services migration isn't supported. 
 
@@ -340,7 +336,7 @@ The region that you entered for your Azure DevOps Services migration isn't suppo
 
 Open your migration specification file and update the region that you provided with the correct short name for the [region](migration-test-run.md#supported-azure-regions-for-migration). 
 
-**VS403249**
+#### VS403249
 
 The organization name your team selected is already in use by an existing organization. All Azure DevOps Services migrations go into a new organization that is created at migration time. 
 
@@ -348,7 +344,7 @@ The organization name your team selected is already in use by an existing organi
 
 Select a different organization name and update the migration specification file before retrying the migration. 
 
-**VS403250 & VS403286**
+#### VS403250 & VS403286
 
 The DACPAC isn't built off a detached collection. 
 
@@ -358,7 +354,7 @@ The DACPAC isn't built off a detached collection.
 
 [Detach](migration-test-run.md#step-1-detach-your-collection) your collection database and generate the DACPAC again.
 
-**VS403243**
+#### VS403243
 
 Unable to make a connection to the database using the provided SQL Connection String. 
 
@@ -366,7 +362,7 @@ Unable to make a connection to the database using the provided SQL Connection St
 
 Review the parameters that were provided to ensure they're correct and try again.
 
-**VS403260 & VS403351**
+#### VS403260 & VS403351
 
 The collection database isn't detached.
 
@@ -376,7 +372,7 @@ The collection database isn't detached.
 
 [Detach](migration-test-run.md#step-1-detach-your-collection) your collection database and retry the migration queue.  
 
-**VS403261**
+#### VS403261
 
 The connection string must be encrypted otherwise the password is sent in the clear. 
 
@@ -384,7 +380,7 @@ The connection string must be encrypted otherwise the password is sent in the cl
     
 Add **Encrypt=true** to your SQL connection string.
 
-**VS403262**
+#### VS403262
 
 The connection string must use SQL Authentication. 
 
@@ -392,7 +388,7 @@ The connection string must use SQL Authentication.
 
 Add **Integrated Security=False** to your SQL connection string.
 
-**VS403263**
+#### VS403263
 
 Your SQL sign in user account doesn't have the required database role.
 
@@ -403,7 +399,7 @@ Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration
 > [!NOTE]   
 > There is a known issue with using `sp_addrolemember` to add `TFSEXECROLE` to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your migration.
 
-**VS403264**
+#### VS403264
 
 The connection string doesn't point to an Azure DevOps Server collection database. 
 
@@ -411,7 +407,7 @@ The connection string doesn't point to an Azure DevOps Server collection databas
 
 Verify or correct the connection string points to your collection database. 
 
-**VS40325**
+#### VS40325
 
 The Azure DevOps Server Update has queued the file migration job. You can't perform migrations until this job completes. The completion time for this job is dependent on the size of the collection. 
 
@@ -428,7 +424,7 @@ WHERE   PartitionId > 0
 
 Once the number of files remaining to migrate is zero, you can run the Data Migration Tool. 
 
-**VS403282**   
+#### VS403282   
 
 A new line character exists in the source location value. This character might remain after copying the SAS key from your windows console.
 
@@ -436,7 +432,7 @@ A new line character exists in the source location value. This character might r
 
 Remove the line break and try again.
 
-**VS403271**   
+#### VS403271   
 
 Your migration files and DACPAC aren't located in the **required** Azure region to complete the migration to your target Azure DevOps Services region. 
 
@@ -448,7 +444,7 @@ Your migration files and DACPAC aren't located in the **required** Azure region 
 AzCopy.exe /Source:https://accountSCUS.blob.core.windows.net/mycontainer /SourceKey:"primary access key" /Dest:https://accountCUS.blob.core.windows.net/mycontainer /DestKey:"primary access key" /S
 ```
 
-**VS403316**
+#### VS403316
 
 Inconsistencies were detected in some Team Foundation version control (TFVC) files within your collection.
 
@@ -456,7 +452,7 @@ Inconsistencies were detected in some Team Foundation version control (TFVC) fil
 
 Work with Azure DevOps Services [customer support](https://aka.ms/AzureDevOpsImportSupport). Open a support ticket and they work with you to resolve the error. 
 
-**VS403366**
+#### VS403366
 
 The Data Migration Tool was unable to connect to the SQL Azure VM. 
 
@@ -470,13 +466,13 @@ Verify that you entered the information correctly in your connection string and 
 
 The IPs that the error message lists are for Azure DevOps Services. Azure DevOps Services IPs can change temporarily during deployments. Add them to your firewall exceptions and try queuing the migration again. For a list of IP addresses, see [Migrate large collections, Restrict access to Azure DevOps Services IPs only](migration-prepare-test-run.md#migrate-large-collections).
 
-**VS403373**
+#### VS403373
 
 The Data Migration Tool doesn't support migrating multiple copies of the **SAME** collection. However, it **DOES** support migrating **split** copies of a collection. Change the GUID for the **_DataImportCollectionID_**.
 
 From SQL Server Management Studio (SSMS), open the extended properties for the split copies that you didn't migrate yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then rerun the **prepare** command and use the new **migration.json** file to queue the migration.
 
-**VS403379**
+#### VS403379
 
 Data migration fails as one or more projects found in this collection are in the soft-deleted stage. Restore the soft-deleted projects or delete them permanently before running the data migration. For details, see [Delete a project](../organizations/projects/delete-project.md).
 
@@ -484,7 +480,7 @@ Data migration fails as one or more projects found in this collection are in the
 
 Verify the collection against which you're running the Data Migration Tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which the deleted project can be restored. You can read about how to restore a deleted project in [Restore a project](../organizations/projects/delete-project.md#restore-a-deleted-project). If you have projects in the soft-deleted stage, remove them completely or restore them back before running data migration.
 
-### Migration failures
+## Resolve migration failures
 
 Migration failures mean that the migration queued, but didn't complete. The individual who queued the migration receives a failure email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your migration. 
 

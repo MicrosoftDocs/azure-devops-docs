@@ -69,28 +69,20 @@ A question that typically comes up with migration is what type of licensing a co
 
 |#|Column 1 |Column 2 | 
 ||---------|---------| 
+|1|Number of team members              |         |
+|2|Number of stakeholders              |         |
+|3|Subtract line (2) from line (1)*    |         |
+|4|# of Visual Studio subscribers**    |         |
+|5|Subtract line (4) from line (3)     |         |
+|6|Subtract line (5) from line (5)***  |         |
 
-|1|Number of team members              |         | 
+- *Stakeholders are free 
+- ** Visual Studio Subscribers have Azure DevOps Services included as a benefit of the subscription 
+- ***Each Azure DevOps Services organization gets five free users 
 
-|2|Number of stakeholders              |         | 
+For more information about cost-effective options for accessing features, see the [Billing overview](../organizations/billing/overview.md) and the [Azure Pricing Calculator]( https://aka.ms/AzureDevOpsPricing). 
 
-|3|Subtract line (2) from line (1)*    |         | 
-
-|4|# of Visual Studio subscribers**    |         | 
-
-|5|Subtract line (4) from line (3)     |         | 
-
-|6|Subtract line (5) from line (5)***  |         | 
-
-- *Stakeholders are free. 
-- ** Visual Studio Subscribers have Azure DevOps Services included as a benefit of the subscription. 
-- ***Each Azure DevOps Services organization gets five free users. 
-
-For more information about cost-effective options for accessing features, see the [Billing overview](../organizations/billing/overview.md). 
-
-Buy any needed Azure DevOps Services user licenses through the Visual Studio Marketplace or the Azure portal. We delve into this process during the Prepare for Test Run phase. 
-
-For more information, see the [Azure Pricing Calculator]( https://aka.ms/AzureDevOpsPricing). 
+Buy any needed Azure DevOps Services user licenses through the Visual Studio Marketplace or the Azure portal. We delve into this process during the [Prepare for test run phase](migration-prepare-test-run.md). 
 
 In addition to the core features, the following value-added services are available in Azure DevOps that you might find beneficial: 
 

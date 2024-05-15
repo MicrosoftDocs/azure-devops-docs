@@ -45,10 +45,10 @@ The migration specification file is a JSON file that instructs the Data Migratio
 
 Many of the fields are auto populated during the prepare step but you must configure the following fields: 
 
-- Organization name: The name of the organization you want to create for migrating your data. 
-- Location: A backup of your database and migration files to be uploaded to an Azure storage container. This field specifies the SAS key used by the migration tool to securely connect to and read the source files from the Azure storage container. Creating the storage container is covered later in Phase 5 and generating a SAS key is covered in Phase 6 before you queue for a new migration. 
-- DACPAC: A file that packages up your collection’s SQL database. 
-- Migration type: The type of migration: Test run or Production run. 
+- **Organization name:** The name of the organization you want to create for migrating your data. 
+- **Location:** A backup of your database and migration files to be uploaded to an Azure storage container. This field specifies the SAS key used by the migration tool to securely connect to and read the source files from the Azure storage container. Creating the storage container is covered later in Phase 5 and generating a SAS key is covered in Phase 6 before you queue for a new migration. 
+- **DACPAC:** A file that packages up your collection’s SQL database. 
+- **Migration type:** The type of migration: Test run or Production run. 
 
 Each migration specification file is meant for a single collection. If you try to use a migration specification file generated for another collection, the migration doesn’t start. You will need to run prepare for each collection you wish to migrate to and use the generated migration specification file to queue the migration. 
 
@@ -92,8 +92,8 @@ You don’t need to repeat a test run migration if users don’t automatically g
 
 ## Restrict access to Azure DevOps Services IPs only 
 
-[Option 1: Use Service Tags](#option-1-use-service-tags) 
-[Option 2: Use IP List](#option-2-use-ip-list)
+- [Option 1: Use Service Tags](#option-1-use-service-tags) 
+- [Option 2: Use IP List](#option-2-use-ip-list)
 
 **Recommendation:** Restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You can restrict access by only allowing connections from Azure DevOps Services IPs that are involved in the collection database migration process. The IPs that need to be granted access to your storage account depend on the region you're migrating into. 
 
@@ -125,14 +125,14 @@ Do the following steps to grant exceptions for the necessary IPs handled at the 
 1. Go to your SQL Azure VM. 
 1. In **Settings**, select **Networking**.  
 1. Select **Add inbound port rule**.
-   ![Screenshot of the "Add inbound port rule" button on your SQL Azure VM network interface page.](media/migration-import/inbound.png) 
-1. Select **Advanced** to configure an inbound port rule for a specific IP. 
-   ![Screenshot of the "Advanced" button on the "Add inbound security rule" pane.](media/migration-import/advanced.png)
-1. In the **Source** drop-down list, select **IP Addresses**, enter an IP address that needs to be granted an exception, set the **Destination port range** to `1433` and, in the **Name** box, enter a name that best describes the exception you're configuring. 
+   :::image type="content" source="media/migration-import/inbound.png" alt-text="Screenshot of the Add inbound port rule button on your SQL Azure VM network interface page.":::
+2. Select **Advanced** to configure an inbound port rule for a specific IP. 
+   :::image type="content" source="media/migration-import/advanced.png" alt-text="Screenshot of the Advanced button on the Add inbound security rule pane.":::
+3. In the **Source** drop-down list, select **IP Addresses**, enter an IP address that needs to be granted an exception, set the **Destination port range** to `1433` and, in the **Name** box, enter a name that best describes the exception you're configuring. 
 
 Depending on other configured inbound port rules, you might need to change the default priority for the Azure DevOps Services exceptions, so they don't get ignored. For example, if you have a "deny on all inbound connections to 1433" rule with a higher priority than your Azure DevOps Services exceptions, the Data Migration Tool might be unable to make a successful connection to your database.
 
-![Screenshot of a completed inbound port rule configuration.](media/migration-import/example.png)
+:::image type="content" source="media/migration-import/example.png" alt-text="Screenshot of a completed inbound port rule configuration.":::
 
 Repeat adding inbound port rules until all necessary Azure DevOps Services IPs are granted an exception. Missing one IP could result in your migration failing to start. 
 
@@ -167,17 +167,17 @@ If you're under the DACPAC threshold, follow the instructions to generate a DACP
 
 Do the following high-level steps to set up a SQL Azure virtual machine (VM) to migrate to Azure DevOps Services. 
 
-- [Set up a SQL Azure VM](#set-up-a-sql-azure-vm). 
-- [Configure IP firewall exceptions](#configure-ip-firewall-exceptions-for-sql-azure). 
-- [Restore your database on the VM](#restore-your-database-on-the-vm). 
-- [Configure your collection for migration]. 
-- [Configure the migration specification file to target the VM](#configure-the-migration-specification-file-to-target-the-vm). 
+- [Set up a SQL Azure VM](#set-up-a-sql-azure-vm)
+- [Configure IP firewall exceptions](#configure-ip-firewall-exceptions-for-sql-azure)
+- [Restore your database on the VM](#restore-your-database-on-the-vm) 
+- [[Configure your collection for migration](#configure-your-collection-for-migration)
+- [Configure the migration specification file to target the VM](#configure-the-migration-specification-file-to-target-the-vm) 
 
 ### Set up a SQL Azure VM 
 You can set up a SQL Azure VM from the Azure portal quickly. For more information, see [Use the Azure portal to provision a Windows virtual machine with SQL Server](/azure/azure-sql/virtual-machines/windows/create-sql-vm-portal?view=azuresql). 
 
 **Recommendation:** The performance of your SQL Azure VM and attached data disks have a significant impact on the performance of the migration. For this reason, we highly recommend doing the following tasks: 
-- Select a VM Size at the level of `D8s_v5_*` or greater. 
+- Select a VM Size at the level of `D8s_v5_*` or greater.
 - Use managed disks. 
 - Consult [virtual machine and disk performance](/azure/virtual-machines/disks-performance). Ensure your infrastructure is configured so that the VM IOPS (input/output per second) and storage IOPS don't become a bottleneck on the performance of the migration. For example, ensure the number of data disks attached to your VM is sufficient to support the IOPS from the VM. 
 
@@ -207,29 +207,29 @@ After your collection database restores on your Azure VM, configure a SQL sign-i
 1. Open SQL Server Management Studio on the VM, and then open a new query window against the database to be migrated.
 2. Set the database's recovery to simple: 
 
-```sql
-ALTER DATABASE [<Database name>] SET RECOVERY SIMPLE;
-```
+    ```sql
+    ALTER DATABASE [<Database name>] SET RECOVERY SIMPLE;
+    ```
 
 3. Create a SQL sign-in for the database, and assign that sign-in the 'TFSEXECROLE', like the following example. 
 
-```sql
-USE [<database name>] 
-CREATE LOGIN <pick a username> WITH PASSWORD = '<pick a password>' 
-CREATE USER <username> FOR LOGIN <username> WITH DEFAULT_SCHEMA=[dbo] 
-EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='<username>'
-```
+    ```sql
+    USE [<database name>] 
+    CREATE LOGIN <pick a username> WITH PASSWORD = '<pick a password>' 
+    CREATE USER <username> FOR LOGIN <username> WITH DEFAULT_SCHEMA=[dbo] 
+    EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='<username>'
+    ```
 
 See the following example of the SQL command:  
 
-```sql
-ALTER DATABASE [Foo] SET RECOVERY SIMPLE; 
- 
-USE [Foo] 
-CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!' 
-CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo] 
-EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
-```
+    ```sql
+    ALTER DATABASE [Foo] SET RECOVERY SIMPLE; 
+     
+    USE [Foo] 
+    CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!' 
+    CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo] 
+    EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
+    ```
 
 > [!IMPORTANT]
 > Enable SQL Server and Windows authentication mode in SQL Server Management Studio on the VM. If you don't enable authentication mode, the migration fails. 
@@ -249,12 +249,12 @@ Update the migration specification file to include information about how to conn
 
 2. Enter the required parameters and add the following properties object within your source object in the specification file. 
 
-```json
-"Properties": 
-{ 
-    "ConnectionString": "Data Source={SQL Azure VM Public IP};Initial Catalog={Database Name};Integrated Security=False;User ID={SQL Login Username};Password={SQL Login Password};Encrypt=True;TrustServerCertificate=True"  
-}
-```
+    ```json
+    "Properties": 
+    { 
+        "ConnectionString": "Data Source={SQL Azure VM Public IP};Initial Catalog={Database Name};Integrated Security=False;User ID={SQL Login Username};Password={SQL Login Password};Encrypt=True;TrustServerCertificate=True"  
+    }
+    ```
 
 After you apply the changes, the migration specification looks like the following example.
 
