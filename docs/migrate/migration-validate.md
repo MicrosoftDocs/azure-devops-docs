@@ -177,7 +177,7 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 
 ### TF402571: Required element BugWorkItems is missing from Process Configuration. 
 
-This error is commonly seen when a process wasn't updated for some time. To fix it, run the [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017) for each project.
+This error is commonly seen when a process wasn't updated for some time. To fix it, run the [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) for each project.
 
 ### TF402564: You've defined XX global lists. Only 64 are allowed 
 

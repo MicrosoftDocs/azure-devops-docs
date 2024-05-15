@@ -20,7 +20,7 @@ As you move to the second phase of migrating to Azure DevOps Services with the A
 
 ## Update Azure DevOps Server 
 
-The Data Migration Tool for Azure DevOps supports the [two latest releases of Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops) at a given time. Releases include updates and major releases.
+The Data Migration Tool for Azure DevOps supports the [two latest releases of Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true) at a given time. Releases include updates and major releases.
 
 It can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for migration support to come online for that version. Consider this possibility when you choose to upgrade shortly after a new RTW Azure DevOps Server release. 
 

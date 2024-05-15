@@ -174,7 +174,7 @@ Do the following high-level steps to set up a SQL Azure virtual machine (VM) to 
 - [Configure the migration specification file to target the VM](#configure-the-migration-specification-file-to-target-the-vm) 
 
 ### Set up a SQL Azure VM 
-You can set up a SQL Azure VM from the Azure portal quickly. For more information, see [Use the Azure portal to provision a Windows virtual machine with SQL Server](/azure/azure-sql/virtual-machines/windows/create-sql-vm-portal?view=azuresql). 
+You can set up a SQL Azure VM from the Azure portal quickly. For more information, see [Use the Azure portal to provision a Windows virtual machine with SQL Server](/azure/azure-sql/virtual-machines/windows/create-sql-vm-portal?view=azuresql&preserve-view=true). 
 
 **Recommendation:** The performance of your SQL Azure VM and attached data disks have a significant impact on the performance of the migration. For this reason, we highly recommend doing the following tasks: 
 - Select a VM Size at the level of `D8s_v5_*` or greater.
@@ -222,14 +222,14 @@ After your collection database restores on your Azure VM, configure a SQL sign-i
 
 See the following example of the SQL command:  
 
-    ```sql
+```sql
     ALTER DATABASE [Foo] SET RECOVERY SIMPLE; 
      
     USE [Foo] 
     CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!' 
     CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo] 
     EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
-    ```
+```
 
 > [!IMPORTANT]
 > Enable SQL Server and Windows authentication mode in SQL Server Management Studio on the VM. If you don't enable authentication mode, the migration fails. 
@@ -281,7 +281,6 @@ We remind you again in the Post-migration phase(link) for when you need to do th
 
 ## Related articles 
 
-Migrate to Azure DevOps Services(link) 
-Complete post-migration tasks(link) 
-
+- [Migrate to Azure DevOps Services](migration-migrate.md) 
+- [Complete post-migration tasks](migration-post-migration.md)
  

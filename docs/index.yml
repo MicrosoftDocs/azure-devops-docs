@@ -143,7 +143,7 @@ productDirectory:
           text: Setup and upgrade requirements
         - url: /azure/devops/server/install/get-started
           text: Install
-        - url: /azure/devops/migrate/migration-overview.md
+        - url: /azure/devops/migrate
           text: Migrate
 tools: 
   title: Build & deploy your apps

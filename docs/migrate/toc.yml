@@ -22,6 +22,6 @@
 - name: Complete post-migration tasks
   displayName: post migration tasks, post migration steps, post migration activities
   href: migration-post-migration.md
-- hame: Resolve migration errors
+- name: Resolve migration errors
   displayName: migration errors, migration issues, migration problems, troubleshoot migration
   href: migration-troubleshooting.md
