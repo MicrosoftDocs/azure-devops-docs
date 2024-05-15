@@ -55,6 +55,34 @@ In this article, you'll learn how to:
 
 ::: moniker-end
 
+::: moniker range="azure-devops-2020 || azure-devops-2022"
+
+1. Sign in to your Azure DevOps server, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Connect to Feed**, and then select **NuGet.exe** from the left.
+
+1. Follow the instructions in the **Project setup** section to connect to your feed.
+
+    :::image type="content" source="./media/connect-to-feed-nuget-server-2020.png" alt-text="A screenshot showing how to set up your NuGet project in Server 2020 and Server 2022.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in to your Azure DevOps server, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Connect to Feed**, and then select **NuGet** from the left.
+
+1. Follow the instructions to add your package source URL to your *nuget.config*.
+
+    :::image type="content" source="./media/connect-to-feed-nuget-server-2019.png" alt-text="A screenshot showing how to set up your NuGet project in Server 2019.":::
+
+::: moniker-end
+
 ## Download packages
 
 [!INCLUDE [](includes/nuget/consume.md)]
@@ -62,13 +90,13 @@ In this article, you'll learn how to:
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> Using NuGet Package Explorer to search for packages in upstreams is not supported.
+> Using NuGet Package Explorer to search for packages in upstream sources is not supported.
 
 ::: moniker-end
 
 ## Publish packages  
 
-Run the following command to publish your package to your feed. You can use any string for the *ApiKey* argument.
+Run the following command to publish your package to your feed. You can enter any string for the *ApiKey* argument.
 
 ```Command
 nuget.exe push -Source <SOURCE_NAME> -ApiKey key <PACKAGE_PATH>
@@ -76,6 +104,6 @@ nuget.exe push -Source <SOURCE_NAME> -ApiKey key <PACKAGE_PATH>
 
 ## Related articles
 
-- [Publish NuGet packages with Azure Pipelines](../pipelines/artifacts/nuget.md)
+- [Publish NuGet packages with Azure Pipelines (YAML/Classic)](../pipelines/artifacts/nuget.md)
 - [Publish packages to NuGet.org](./nuget/publish-to-nuget-org.md)
-- [NuGet.org upstream source](./nuget/upstream-sources.md)
+- [Use packages from NuGet Gallery](./nuget/upstream-sources.md)
