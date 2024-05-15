@@ -20,7 +20,7 @@ Using Azure Artifacts, you can easily manage the publication and retrieval of np
 
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-feed) if you don't have one already.
 
 - [Download Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
