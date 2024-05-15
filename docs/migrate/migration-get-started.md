@@ -1,5 +1,5 @@
 ---
-title: Get started with migration
+title: Get started with Azure DevOps Data Migration Tool
 description: Overview of the high fidelity migration process from on-premises Server to cloud Azure DevOps Services.
 ms.topic: how-to
 ms.subservice: azure-devops-migrate
@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 ms.date: 05/17/2024
 ---
 
-# Get started with migration
+# Get started with Azure DevOps Data Migration Tool
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
