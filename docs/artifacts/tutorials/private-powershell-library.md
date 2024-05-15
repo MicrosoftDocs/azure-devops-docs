@@ -29,7 +29,7 @@ This article will guide you through setting up your Azure Artifacts feed as a pr
 - [NuGet.exe](https://www.nuget.org/downloads)
 - [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider)
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
-- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-feed) if you don't have one already.
 
 ## Create a personal access token
 
