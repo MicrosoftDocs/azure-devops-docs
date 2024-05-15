@@ -6,8 +6,8 @@
   - name: Azure Artifacts overview
     displayName: get started, introduction
     href: start-using-azure-artifacts.md
-  - name: View Artifacts storage consumption
-    displayName: storage, limit, size, consumption, billing, charges
+  - name: Monitor Artifacts storage
+    displayName: storage, consumption, usage, billing
     href: artifact-storage.md
   - name: Best practices
     displayName: best practices, concepts
