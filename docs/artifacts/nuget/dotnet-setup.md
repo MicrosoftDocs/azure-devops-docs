@@ -19,7 +19,7 @@ Using Azure Artifacts, you can seamlessly publish your NuGet packages to Azure A
 
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-feed) if you don't have one already.
 
 - Download and install the [Credential provider](https://github.com/microsoft/artifacts-credprovider).
 

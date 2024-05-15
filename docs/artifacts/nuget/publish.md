@@ -18,7 +18,7 @@ With Azure Artifacts, you can publish your NuGet packages to both public and pri
 
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-feed) if you don't have one already.
 
 - [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
 

@@ -3,10 +3,10 @@ ms.topic: include
 ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 05/10/2022
+ms.date: 05/15/2024
 ---
 
-#### 1. Get the feed's source URL
+#### 1. Get the package source URL
 
 [!INCLUDE [get a NuGet URL](nuget-consume-endpoint.md)]
 
@@ -52,6 +52,6 @@ ms.date: 05/10/2022
 
 1. Select **Browse**, and then select your feed from the **Package source** dropdown menu.
     
-    :::image type="content" source="../../media/select-pkg-src.png" alt-text="A screenshot showing how to select your feed source.":::
+    :::image type="content" source="../../media/select-pkg-src.png" alt-text="A screenshot showing how to select your package source in Visual Studio.":::
 
 1. Use the search bar to search for packages from your feed.
