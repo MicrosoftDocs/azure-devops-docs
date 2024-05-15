@@ -68,19 +68,19 @@ You must have the following items:
 
 ### Download the tool 
 
-1. Download the latest version of the Data Migration Tool.
-1. Copy the zip file to one of your Azure DevOps Server application tiers. 
-1. Unzip the file. 
+1. Download the latest version of the [Data Migration Tool.](https://www.microsoft.com/download/details.aspx?id=54274)
+2. Copy the zip file to one of your Azure DevOps Server application tiers. 
+3. Unzip the file. 
     You can also run the tool from a different machine without Azure DevOps Server installed, if it can connect to the configuration database of the Azure DevOps Server instance. 
 1.Open a Command Prompt window on the server and go to the directory where the Data Migration Tool is stored. 
 1. Review the help content for the tool: 
    1. To view the top-level help and guidance, run the following command:  
     `Migrator /help`
-   1. View the help text for the validation command: 
+   2. View the help text for the validation command: 
     `Migrator validate /help`
     For your first time validating a collection, keep it simple. Your command should have the following structure: 
     `Migrator validate /collection:{collection URL} /tenantDomainName:{name} /region:{region}`
-1. Replace {name} with the name of your Microsoft Entra tenant. For example, to run against the DefaultCollection and the fabrikam tenant, the command would look like this: 
+2. Replace {name} with the name of your Microsoft Entra tenant. For example, to run against the DefaultCollection and the fabrikam tenant, the command would look like this: 
     `Migrator validate /collection:[^1^][4]	(http://localhost:8080/DefaultCollection) /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region}`
     If you need to run the tool from a machine other than the Azure DevOps Server, use the `/connectionString` parameter. 
 

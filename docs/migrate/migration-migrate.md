@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 ms.date: 05/17/2024
 ---
 
-# Migrate from Azure DevOps Server to Azure DevOps Services 
+# Migrate to Azure DevOps Services 
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 

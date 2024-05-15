@@ -20,15 +20,15 @@ For information about the main differences between on-premises Azure DevOps Serv
 
 Regardless of your selected migration option, we recommend that you determine your most important assets, such as source code and work items. You should think about your data size, organization complexity and make sure that you have enough time for test runs before actual migration for a smooth and successful transition. 
 
-## Approaches to migration 
+### Approaches to migration 
 
- When contemplating data migration from on-premises to the cloud, you have several options. It’s crucial to assess the pros and cons of each approach based on your specific motivations for adopting Azure DevOps Services. The right strategy depends on your unique context and requirements.   
+It’s crucial to assess the pros and cons of each approach to migration, based on your specific motivations for adopting Azure DevOps Services. The right strategy depends on your unique context and requirements.   
 
 |Options  |Recommended scenarios  |Limitations  |
 |---------|---------|---------|
-|1: Manual migration   |  Use for smaller projects or specific data subsets.    | Not all data can be migrated with full fidelity and is subject to throttling. This migration doesn’t support migrating XML templates, so you need to recreate process templates as inherited templates.         |
-|2: [Azure DevOps Data Migration Tool](https://marketplace.visualstudio.com/items?itemName=nkdagility.vsts-sync-migration)    | Use for medium to large-scale migrations with varied data types and complex structures.      |  You can only "lift and shift" one Azure DevOps Server collection to one new Azure DevOps Services organization, with no modifications. For more information, see the [Limitations section](#migration-tool-limitations).    |
-|3: API-based migration     | Offers flexibility and customization for organizations with unique migration requirements or automation needs.   | Low fidelity, data loss, and ID changes can occur. For more information, see the [Limitations section](#api-based-migration-limitations).        |
+|[1: Manual migration](#option-1-manual-migration)   |  Use for smaller projects or specific data subsets.    | Not all data can be migrated with full fidelity and is subject to throttling. This migration doesn’t support migrating XML templates, so you need to recreate process templates as inherited templates.   |
+|[2: Azure DevOps Data Migration Tool](#option-2-azure-devops-migration-tool)  | Use for medium to large-scale migrations with varied data types and complex structures.      |  You can only "lift and shift" one Azure DevOps Server collection to one new Azure DevOps Services organization, with no modifications. For more information, see the [Limitations section](#migration-tool-limitations).  |
+|[3: API-based migration](#option-3-api-based-migration)     | Offers flexibility and customization for organizations with unique migration requirements or automation needs.   | Low fidelity, data loss, and ID changes can occur. For more information, see the [Limitations section](#api-based-migration-limitations). |
 
 ## Option 1: Manual migration
 
@@ -49,7 +49,7 @@ For example, when the Azure DevOps team at Microsoft chose to move from Azure De
 
 ## Option 2: Azure DevOps Migration Tool
 
-The Azure DevOps Data Migration Tool is a set of utilities provided by Microsoft to facilitate the migration of data from Azure DevOps Server to Azure DevOps Services. These tools offer a streamlined approach to migrate various artifacts, including source code, work items, test cases, and other project-related data.  
+The [Azure DevOps Data Migration Tool](https://www.microsoft.com/download/details.aspx?id=54274) is a set of utilities provided by Microsoft to facilitate the migration of data from Azure DevOps Server to Azure DevOps Services. These tools offer a streamlined approach to migrate various artifacts, including source code, work items, test cases, and other project-related data.  
 
 Before you initiate the migration process, the tools can perform a premigration analysis to assess the readiness of the source environment and identify potential issues or dependencies that might affect the migration. Assess readiness, so you can plan and mitigate potential challenges beforehand. 
 

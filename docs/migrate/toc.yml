@@ -1,25 +1,25 @@
 - name: Migration overview
   displayName: migration, migration guide, migration tool
   href: migration-overview.md
-- name: Get started
+- name: 1. Get started
   displayName: migration options, database, migration guide
   href: migration-get-started.md
-- name: Complete prerequisites
+- name: 2. Complete prerequisites
   displayName: database import, data migration tool, validate collection
   href: migration-prerequisites.md
-- name: Validate
+- name: 3. Validate & prepare server environment
   displayName: reduce collection size
   href: migration-validate.md
-- name: Prepare test run
+- name: 4. Prepare test run
   displayName: restrict access to azure devops services ips only
   href: migration-prepare-test-run.md
-- name: Do test run
+- name: 5. Do test run
   displayName: inherited process model, hosted xml process model
   href: migration-test-run.md
-- name: Migrate
+- name: 6. Migrate
   displayName: migration tool, migration process, migration service
   href: migration-migrate.md
-- name: Complete post-migration tasks
+- name: 7. Complete post-migration tasks
   displayName: post migration tasks, post migration steps, post migration activities
   href: migration-post-migration.md
 - name: Resolve migration errors
