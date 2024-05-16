@@ -11,7 +11,7 @@ ms.date: 05/15/2024
 
 1. Sign in to your Azure DevOps server, and then go to your project.
 
-1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to Feed**.
 
 1. Select **NuGet** from the left pane, and then copy your **Package source URL** value.
 
@@ -21,7 +21,7 @@ ms.date: 05/15/2024
 
 1. Sign in to your Azure DevOps server, and then go to your project.
 
-1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to Feed**.
 
 1. Select **Visual Studio** from the left pane, and then copy your **Source** URL.
 

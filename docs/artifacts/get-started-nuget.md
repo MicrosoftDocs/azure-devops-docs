@@ -49,11 +49,11 @@ In this quickstart, you learn how to:
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-1. Select **Connect to feed**, and then select **NuGet.exe** from the left pane. If this is your first time using Azure Artifacts with *Nuget.exe*, ensure that you installed all the prerequisites.
+1. Select **Connect to Feed**, and then select **NuGet.exe** from the left pane. If this is your first time using Azure Artifacts with *Nuget.exe*, ensure that you installed all the prerequisites.
 
     :::image type="content" source="./media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot that shows the button for connecting to a feed.":::
 
-1. Follow the instructions provided in the **Project setup** section to configure your *nuget.config* file and authenticate with Azure Artifacts.
+1. Follow the instructions in the **Project setup** section to configure your *nuget.config* file and authenticate with Azure Artifacts.
 
     :::image type="content" source="./media/project-setup.png" alt-text="Screenshot that shows onscreen instructions for setting up a project.":::
 
