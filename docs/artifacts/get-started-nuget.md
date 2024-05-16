@@ -37,7 +37,7 @@ In this quickstart, you learn how to:
 
 * Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
-## Create a feed
+## Create feed
 
 [!INCLUDE [](includes/create-feed.md)]
 
@@ -100,7 +100,7 @@ In this quickstart, you learn how to:
 
 ## Publish packages  
 
-To publish your package to your feed, run the following command . You can enter any string for the `ApiKey` argument.
+To publish your package to your feed, run the following command. You can enter any string for the `ApiKey` argument.
 
 ```Command
 nuget.exe push -Source <SOURCE_NAME> -ApiKey key <PACKAGE_PATH>
