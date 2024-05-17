@@ -14,7 +14,7 @@ ms.date: 05/17/2024
 
 Validation involves preparing your upgraded Azure DevOps Server environment for migration. This article assists you in troubleshooting common issues. If there were no errors and all the validation checks passed, then your team project collection is ready and you can move on to the next phase. Look through the log files to find any errors if not all checks passed.
 
-:::image type="content" source="media/validate-stage-migration-highres.png" alt-text=".":::
+:::image type="content" source="media/validate-stage-migration-highres.png" alt-text="Diagram of highlighted Validate stage of the seven stages of migration.":::
 
 ## Prerequisites
 
@@ -85,7 +85,8 @@ Consider the following tools for resolving process errors:
 
 To fix the errors, change the XML syntax and apply the changes back to the project.
 
-**Recommendation:** Modify the XML manually, rather than using TFS Power Tools. 
+> [!TIP]
+> We recommend that you modify the XML manually, rather than using TFS Power Tools. 
 
 To get the process template from the project, add the `/SaveProcesses` parameter when you run the Data Migration Tool command. 
 

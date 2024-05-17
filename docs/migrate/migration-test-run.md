@@ -271,7 +271,8 @@ Step 5: [Complete the migration specification](#step-5-complete-the-migration-sp
 
 [Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the migration process. Identity data for the collection resides in the Azure DevOps Server instance's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance, it takes a copy of that identity data and packages it with the collection for transport. Without this data, the identity portion of the migration *can't* be executed. 
 
-**Recommendation:** keep the collection detached until the migration completes, because there isn't a way to migration the changes that occurred during the migration. Reattach your collection after you back it up for migration, so you aren't concerned about having the latest data for this type of migration. To avoid offline time altogether, you can also choose to employ an [offline detach](/azure/devops/server/command-line/tfsconfig-cmd#offlinedetach) for test runs. 
+> [!TIP]
+> We recommend that you keep the collection detached until the migration completes, because there isn't a way to migration the changes that occurred during the migration. Reattach your collection after you back it up for migration, so you aren't concerned about having the latest data for this type of migration. To avoid offline time altogether, you can also choose to employ an [offline detach](/azure/devops/server/command-line/tfsconfig-cmd#offlinedetach) for test runs. 
 
 It's important to weigh the cost of choosing to incur zero downtime for a test run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the end.
 

@@ -30,18 +30,17 @@ Normal release cadence for new Azure DevOps Server versions is once every three 
 
 Ensure your team has a functional Microsoft Entra ID tenant for authenticating members in your Azure DevOps Services organization. In Azure DevOps Services, user authentication relies on a Microsoft Entra ID tenant like Azure DevOps Server user authentication relies on Active Directory. During the Test Run phase(link), you verify an identity map log file to match your on-premises Active Directory organizations with Microsoft Entra ID organizations. This file isn't used by the migration service. This action ensures individual history visibility, security permissions preservation, and access to personal settings. 
 
-**Recommendation:** Use the same Microsoft Entra ID tenant as other Microsoft Cloud services. If your company already has Microsoft Entra ID, skip this step. 
-
 > [!TIP]
-> While Microsoft accounts (MSAs) work for Azure DevOps Services authentication, they can't be mapped during Azure DevOps Server database migration.
+> - We recommend that you use the same Microsoft Entra ID tenant as other Microsoft Cloud services. If your company already has Microsoft Entra ID, skip this step. 
+> - While Microsoft accounts (MSAs) work for Azure DevOps Services authentication, they can't be mapped during Azure DevOps Server database migration.
 
 ### Synchronize identities and groups with Microsoft Entra ID Connect 
 
 Synchronize your on-premises Active Directory with Microsoft Entra ID, so your team members can use the same credentials to authenticate. Also, your Azure DevOps Services administrators can use your Active Directory groups for setting permissions within your organization. 
 
 To set up the synchronization, do the following steps: 
-- Utilize the [Microsoft Entra ID Connect](https://aka.ms/AzureADConnect) technology. 
-- To configure Microsoft Entra ID Connect with your on-premises environment, collaborate with your IT department, DevOps Partner, Microsoft Premier Support, or Microsoft Consulting Services. 
+1. Utilize the [Microsoft Entra ID Connect](https://aka.ms/AzureADConnect) technology. 
+2. To configure Microsoft Entra ID Connect with your on-premises environment, collaborate with your IT department, DevOps Partner, Microsoft Premier Support, or Microsoft Consulting Services. 
 
 For more information on setting up Microsoft Entra ID Connect, see [Microsoft Entra Connect Sync](https://aka.ms/AzureADConnect).
 

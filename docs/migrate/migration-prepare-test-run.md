@@ -14,7 +14,7 @@ ms.date: 05/17/2024
 
 This article focuses on team preparation and file generation required by the Data Migration Tool.
 
-:::image type="content" source="media/prepare-test-run-stage-migration-highres.png" alt-text="Visual highlighting Prepare for test run stage of the seven stages of migration.":::
+:::image type="content" source="media/prepare-test-run-stage-migration-highres.png" alt-text="Diagram of highlighted Prepare for test run stage of the seven stages of migration.":::
 
 ## Prerequisites 
 
@@ -48,7 +48,7 @@ Many of the fields are auto populated during the prepare step but you must confi
 - **DACPAC:** A file that packages up your collection’s SQL database. 
 - **Migration type:** The type of migration: Test run or Production run. 
 
-Each migration specification file is meant for a single collection. If you try to use a migration specification file generated for another collection, the migration doesn’t start. You will need to run prepare for each collection you wish to migrate to and use the generated migration specification file to queue the migration. 
+Each migration specification file is meant for a single collection. If you try to use a migration specification file generated for another collection, the migration doesn’t start. You need to prepare a test run for each collection you wish to migrate and use the generated migration specification file to queue the migration. 
 
 ## Review the identity map log file 
 
@@ -93,7 +93,7 @@ You don’t need to repeat a test run migration if users don’t automatically g
 - [Option 1: Use Service Tags](#option-1-use-service-tags) 
 - [Option 2: Use IP List](#option-2-use-ip-list)
 
-**Recommendation:** Restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You can restrict access by only allowing connections from Azure DevOps Services IPs that are involved in the collection database migration process. The IPs that need to be granted access to your storage account depend on the region you're migrating into. 
+Restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You can restrict access by only allowing connections from Azure DevOps Services IPs that are involved in the collection database migration process. The IPs that need to be granted access to your storage account depend on the region you're migrating into. 
 
 ### Option 1: Use Service Tags 
 
@@ -140,7 +140,7 @@ For databases that the Data Migration Tool warns are too large, a different data
 
 ### Determine if you can reduce the collection size 
 
-**Recommendation:** Check to see whether you can clean up old data. Over time, collections can build up large volumes of data. This growth is a natural part of the DevOps process, but you might find you don't need to retain all the data. Some common examples of no longer relevant data are older workspaces and build results. 
+Check to see whether you can clean up old data. Over time, collections can build up large volumes of data. This growth is a natural part of the DevOps process, but you might find you don't need to retain all the data. Some common examples of no longer relevant data are older workspaces and build results. 
 
 The Data Migration Tool scans your collection and compares it to the limits mentioned previously. It then reports whether your collection is eligible for DACPAC or SQL migration method. In general, the idea is that if your collection is small enough to fit within the DACPAC limits, you can use the faster and simpler DACPAC approach. However, if your collection is too large, you need to use the SQL migration method, which involves setting up a SQL Azure VM and migrating the database manually. 
 
@@ -165,16 +165,16 @@ If you're under the DACPAC threshold, follow the instructions to generate a DACP
 
 Do the following high-level steps to set up a SQL Azure virtual machine (VM) to migrate to Azure DevOps Services. 
 
-- [Set up a SQL Azure VM](#set-up-a-sql-azure-vm)
-- [Configure IP firewall exceptions](#configure-ip-firewall-exceptions-for-sql-azure)
-- [Restore your database on the VM](#restore-your-database-on-the-vm) 
-- [[Configure your collection for migration](#configure-your-collection-for-migration)
-- [Configure the migration specification file to target the VM](#configure-the-migration-specification-file-to-target-the-vm) 
+1. [Set up a SQL Azure VM](#set-up-a-sql-azure-vm)
+1. [Configure IP firewall exceptions](#configure-ip-firewall-exceptions-for-sql-azure)
+1. [Restore your database on the VM](#restore-your-database-on-the-vm) 
+1. [[Configure your collection for migration](#configure-your-collection-for-migration)
+1. [Configure the migration specification file to target the VM](#configure-the-migration-specification-file-to-target-the-vm) 
 
 ### Set up a SQL Azure VM 
 You can set up a SQL Azure VM from the Azure portal quickly. For more information, see [Use the Azure portal to provision a Windows virtual machine with SQL Server](/azure/azure-sql/virtual-machines/windows/create-sql-vm-portal?view=azuresql&preserve-view=true). 
 
-**Recommendation:** The performance of your SQL Azure VM and attached data disks have a significant impact on the performance of the migration. For this reason, we highly recommend doing the following tasks: 
+The performance of your SQL Azure VM and attached data disks have a significant impact on the performance of the migration. For this reason, we highly recommend doing the following tasks: 
 - Select a VM Size at the level of `D8s_v5_*` or greater.
 - Use managed disks. 
 - Consult [virtual machine and disk performance](/azure/virtual-machines/disks-performance). Ensure your infrastructure is configured so that the VM IOPS (input/output per second) and storage IOPS don't become a bottleneck on the performance of the migration. For example, ensure the number of data disks attached to your VM is sufficient to support the IOPS from the VM. 
@@ -189,7 +189,7 @@ If you're using this migration method, create your VM in a supported region. Alt
 > [!NOTE]
 > DACPAC customers should consult the region table in the "Step 3: Upload the DACPAC file](migration-test-run.md#)" section. The preceding guidelines are for SQL Azure VMs only. If you're a DACPAC customer, see [supported Azure regions for migration](migration-test-run.md#supported-azure-regions-for-migration). 
 
-**Recommendation:** Use the following SQL Azure VM configurations: 
+Use the following SQL Azure VM configurations: 
 - Configure the SQL temporary database to use a drive other than drive C. Ideally the drive should have ample free space; at least equivalent to your database's largest table. 
 - If your source database is still over 1 terabyte (TB) after you reduced its size, you need to attach more 1-TB disks and combine them into a single partition to restore your database on the VM. 
 - If your collection databases are over 1 TB in size, consider using an SSD (solid state hard drives) for both the temporary database and collection database. Also, consider using larger VMs with 16 virtual CPUs (vCPUs) and 128 GB (gigabytes) of RAM (random access memory). 

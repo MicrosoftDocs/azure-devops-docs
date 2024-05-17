@@ -15,6 +15,8 @@ ms.date: 05/17/2024
 
 When migration completes, an email gets sent to the organization owner and at this point, anyone with access can sign in to the newly migrated Azure DevOps Services organization. But, before you make the organization available to all users, you should complete the common tasks listed within this article.
 
+:::image type="content" source="media/post-migration-stage-migration-highres.png" alt-text="Diagram of highlighted post-migration stage of the seven stages of migration.":::
+
 ## Spot check 
 
 Immediately after the organization becomes available, take a small team and do spot checks on the organization. We recommend that this team consists of the project collection administrators. This check shouldn't be in-depth, but rather making sure that major pieces from your collection were brought over.
