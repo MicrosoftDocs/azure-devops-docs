@@ -19,9 +19,6 @@ ms.date: 03/15/2024
 
     :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a new feed in Azure DevOps Services.":::
 
-> [!NOTE]
-> By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
-
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022 || azure-devops-2020"
@@ -40,9 +37,6 @@ ms.date: 03/15/2024
 
     :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="A screenshot showing how to create a new feed in Azure DevOps 2022.":::
 
-> [!NOTE]
-> By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
-
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
@@ -50,9 +44,6 @@ ms.date: 03/15/2024
 4. Select **Create** when you're done.
 
     :::image type="content" source="../media/create-new-feed-server-2020.png" alt-text="A screenshot showing how to create a new feed in Azure DevOps 2020.":::
-
-> [!NOTE]
-> By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
 
 ::: moniker-end
 
@@ -68,7 +59,7 @@ ms.date: 03/15/2024
 
     :::image type="content" source="../media/create-new-feed-server-2019.png" alt-text="A screenshot showing how to create a new feed in Azure DevOps 2019.":::
 
+::: moniker-end
+
 > [!NOTE]
 > By default, newly created feeds have their project's *Build Service* set to **Feed and Upstream Reader (Collaborator)**.
-
-::: moniker-end
