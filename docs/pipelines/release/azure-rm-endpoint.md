@@ -98,7 +98,7 @@ The best approach to resolve this issue, while granting only the minimum additio
 
 1. Select **Manage external collaboration settings** from the **External users** section.
 
-1. Change the **Guest user permissions are limited** option  to **No**.
+1. In **Guest user access restrictions**, select **Guest users have the same access as members (most inclusive)**.
 
 Alternatively, if you are prepared to give the user additional permissions (administrator-level), you can make the user a member of the **Global administrator** role. To do so follow the steps below:
 
