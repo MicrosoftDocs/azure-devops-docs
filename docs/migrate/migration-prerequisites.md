@@ -12,8 +12,6 @@ ms.date: 05/17/2024
 
 # Complete prerequisites for migration
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
-
 As you move to the second phase of migrating to Azure DevOps Services with the Azure DevOps Data Migration Tool, you must complete the prerequisites for transferring your data to the cloud. If your organization already meets these prerequisites, you can skip this phase entirely.
 
 :::image type="content" source="media/prerequisites-stage-migration-highres.png" alt-text="Diagram highlighting the Prerequisites stage in sequential stages.":::

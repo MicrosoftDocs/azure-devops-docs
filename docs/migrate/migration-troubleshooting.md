@@ -14,8 +14,6 @@ ms.date: 05/17/2024
 
 # Resolve migration errors
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
-
 The Data Migration Tool flags errors that you need to correct before you migrate to Azure DevOps Services. This article describes the most common warnings and errors that you might receive when you're preparing to migrate. After you correct each error, run the **migrator validate** command again to verify resolution.
 
 ## Resolve size warnings

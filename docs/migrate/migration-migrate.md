@@ -13,8 +13,6 @@ ms.date: 05/17/2024
 
 # Migrate to Azure DevOps Services 
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
-
 You completed the [Test run](migration-test-run.md) phase and familiarized yourself with the process. Now, it’s time to embark on the actual journey of migrating to Azure DevOps Services. 
 
 :::image type="content" source="media/migrate-stage-migration-highres.png" alt-text="Visual highlighting the Migrate stage of the seven stages of migration.":::

@@ -12,8 +12,6 @@ ms.date: 05/17/2024
 
 # Validate and prepare server environment for migration
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
-
 Validation involves preparing your upgraded Azure DevOps Server environment for migration. This article assists you in troubleshooting common issues. If there were no errors and all the validation checks passed, then your team project collection is ready and you can move on to the next phase. Look through the log files to find any errors if not all checks passed.
 
 :::image type="content" source="media/validate-stage-migration-highres.png" alt-text=".":::

@@ -1,7 +1,7 @@
 - name: Migration overview
   displayName: migration, migration guide, migration tool
   href: migration-overview.md
-- name: 1. Get started
+- name: 1. Get started with Data Migration Tool
   displayName: migration options, database, migration guide
   href: migration-get-started.md
 - name: 2. Complete prerequisites

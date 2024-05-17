@@ -12,8 +12,6 @@ ms.date: 05/17/2024
 
 # Get started with Azure DevOps Data Migration Tool
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
-
 Before you use the Azure DevOps Data Migration Tool to migrate your database with high fidelity, learn some of the basic concepts in this article.
 
 :::image type="content" source="media/get-started-stage-migration-highres.png" alt-text="Diagram highlighting the Get started stage in sequential stages.":::

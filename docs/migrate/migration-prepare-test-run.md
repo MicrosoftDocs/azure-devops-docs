@@ -12,8 +12,6 @@ ms.date: 05/17/2024
 
 # Prepare for test run migration
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
-
 This article focuses on team preparation and file generation required by the Data Migration Tool.
 
 :::image type="content" source="media/prepare-test-run-stage-migration-highres.png" alt-text="Visual highlighting Prepare for test run stage of the seven stages of migration.":::

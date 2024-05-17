@@ -13,8 +13,6 @@ ms.date: 05/17/2024
 
 # Do test run migration
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
-
 Your team is now ready to begin the process of starting a test run of your migration and then finally a full production migration. In this phase, we discuss the final steps to queue a migration in addition to other tasks that typically come up at the end of the migration project. 
 
 :::image type="content" source="media/test-run-stage-migration-highres.png" alt-text="Diagram highlighting the Prerequisites stage in sequential stages.":::

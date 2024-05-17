@@ -13,8 +13,6 @@ ms.date: 05/17/2024
 
 # Complete post migration tasks
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
-
 When migration completes, an email gets sent to the organization owner and at this point, anyone with access can sign in to the newly migrated Azure DevOps Services organization. But, before you make the organization available to all users, you should complete the common tasks listed within this article.
 
 ## Spot check 
