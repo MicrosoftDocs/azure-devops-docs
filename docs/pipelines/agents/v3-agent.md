@@ -3,7 +3,7 @@ title: Agent software version 3
 description: Learn how to run pipelines using the version 3 agent software.
 monikerRange: '>= azure-devops-2022'
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 05/17/2024
 ---
 
 # Agent software version 3
@@ -135,8 +135,9 @@ The pipelines team recommends that you update your agent machines to newer opera
 
 ### Does Azure DevOps Server support the 3.x agent
 
-Azure DevOps Server versions support the version of the agent that is deployed with that version. The following versions of Azure DevOps Server include a version of the 3.x agent.
+Azure DevOps Server versions support the version of the agent that is deployed with that version. The following versions of Azure DevOps Server include a version of the 3.x agent that is supported for that Azure DevOps Server version. To get the 3.x agent installed in your Azure DevOps Server installation, update your Azure DevOps Server version to one of the following versions.
 
+* [Azure DevOps Server 2022 Update 2](/azure/devops/server/release-notes/azuredevops2022u2)
 * [Azure DevOps Server 2022 Update 1](/azure/devops/server/release-notes/azuredevops2022u1)
 * [Azure DevOps Server 2022 Update 0.1 Patch 4 and later](/azure/devops/server/release-notes/azuredevops2022#azure-devops-server-2022-update-01-patch-4-release-date-october-10-2023)
 * [Azure DevOps Server 2020 Update 1.2 Patch 9 and later](/azure/devops/server/release-notes/azuredevops2020u1#azure-devops-server-2020-update-12-patch-9-release-date-october-10-2023)
