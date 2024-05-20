@@ -1,35 +1,36 @@
 ---
-title: Connect to Azure Artifacts with npm projects
-description: How to set up your npm project and connect to Azure Artifacts feeds
+title: Connect your npm project to Azure Artifacts
+description: Learn how to set up your npm project and connect to Azure Artifacts
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
 ms.topic: conceptual
-ms.date: 04/02/2024
+ms.date: 05/20/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Connect your npm project to Azure Artifacts feeds
+# Connect your npm project to Azure Artifacts
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to publish and install various package types from feeds and public registries like npmjs.com. To authenticate with Azure Artifacts, it's necessary to configure your npm config file. 
-This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The .npmrc file is typically located in the user's home directory but can also be created at the project level to override default settings. By modifying the .npmrc file, users can personalize their npm experience to meet their specific requirements.
+Azure Artifacts enables developers to manage their packages from various sources, including both public registries like npmjs.com and private feeds. To authenticate with Azure Artifacts, you will need to configure your npm config file. This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The *.npmrc* file is typically located in the user's home directory but can also be created at the project level to override default settings.
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
 
-- An Azure Artifacts feed. [Create a new feed](../get-started-npm.md#create-a-feed) if you don't have one already.
+- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
+
+- An Azure Artifacts feed. [Create one for free](../get-started-npm.md#create-a-feed).
 
 - [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-## Project setup
+## Connect to Feed
 
-For best practices, it's recommended to use two separate configuration files. The first one is used for authenticating with Azure Artifacts, while the second one is stored locally and holds your credentials.
+Azure Artifacts recommends using two separate configuration files. The first is dedicated to authenticating with Azure Artifacts, while the second should be kept locally to store your credentials. This approach allows you to share your configuration file while keeping your credentials secure.
 
-To set up the second file, simply place it in your home directory on your development machine and include all of your registry credentials. This way, the npm client can easily access your credentials for authentication, allowing you to share your configuration file while keeping your credentials secure.
+To set up the second file, simply place it in your home directory on your development machine and include all your registry credentials. This enables the npm client to easily access your credentials for authentication.
 
 The following steps will guide you through setting up the first configuration file:
 
@@ -46,27 +47,26 @@ The following steps will guide you through setting up the first configuration fi
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select **Connect to feed**.
+1. Select **Artifacts**, and then select **Connect to Feed**.
  
-    :::image type="content" source="../media/npm-connect-to-feed-azure-devops.png" alt-text="A screenshot showing how to connect to a feed.":::
+    :::image type="content" source="../media/npm-connect-to-feed-azure-devops.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Services.":::
 
-1. Select **npm** from the left navigation pane.
+1. Select **npm** from the left sidebar. If this is the first time using Azure Artifacts with npm, make sure you've installed the prerequisites.
 
-1. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
-
-1. Follow the instructions in **Project setup** to connect to your feed.
+1. Follow the instructions in the **Project setup** section to connect to your feed.
 
     :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot showing how to set up your npm project.":::
 
 ### [Other](#tab/other/)
 
-1. Add a *.npmrc* file in your project's directory, in the same directory as your package.json file, and copy the following snippet into it. 
+1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and copy the following snippet into it. 
 
     ```Cli
     registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
                         
     always-auth=true
     ```
+
 ### Setup credentials
 
 1. Copy the following snippet into your user-level *npmrc* file:
@@ -99,23 +99,19 @@ The following steps will guide you through setting up the first configuration fi
 
 1. Generate a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
 
-1. Encode your newly generated personal access token as follows:
+1. Run the following command in a command prompt window, and then paste your personal access token when prompted. Once done, copy the generated Base 64 encoded value.
 
-    1. Run the following command in a command prompt window, and then paste your personal access token when prompted:
+    ```Command
+    node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
+    ```
 
-        ```Command
-        node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
-        ```
+1. If you're on Linux/Mac, you can alternatively use the following command to convert your personal access token to Base 64. Copy the resulting Base64 encoded value.
 
-        You can also use the following command to convert your personal access token to Base 64. 
+    ```Command
+    echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64
+    ```
 
-        - **Linux/Mac**:
-            ```Command
-            echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64
-            ```
-    1. Copy the Base 64 encoded value.
-
-1. Replace both *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* values in your user .npmrc file with your personal access token from Step 3.
+1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user *.npmrc* file with the encoded personal access token obtained from the previous step
 
 * * *
 
