@@ -19,7 +19,7 @@ For example, `VSTS_AGENT_INPUT_PASSWORD` instead of specifying `--password`.
 - `--url <url>` - URL of the server. For example: https://dev.azure.com/myorganization or http://my-azure-devops-server:8080/tfs
 - `--auth <type>` - authentication type. Valid values are:
   - `pat` (Personal access token)
-  - `SP` (Service Principal) (Requires [agent version 3.227.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v3.227.1))
+  - `SP` (Service Principal) (Requires [agent version 3.227.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v3.227.1) or newer)
   - `negotiate` (Kerberos or NTLM)
   - `alt` (Basic authentication)
   - `integrated` (Windows default credentials)
@@ -34,7 +34,7 @@ For example, `VSTS_AGENT_INPUT_PASSWORD` instead of specifying `--password`.
 - If you chose `--auth SP`:
   - `--clientID <clientID>` - specifies the Client ID of the Service Principal with access to register agents
   - `--tenantId <tenantID>` - specifies the Tenant ID which the Service Principal is registered in
-  - `--clientSecret <clientID>` - specifies the Client Secret of the Service Principal
+  - `--clientSecret <clientSecret>` - specifies the Client Secret of the Service Principal
   - See [Register an agent using a service principal](../../service-principal-agent-registration.md) for more information
 
 
