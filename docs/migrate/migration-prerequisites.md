@@ -53,9 +53,9 @@ Also, explore how you can configure Azure DevOps Services to use Microsoft Entra
 
 The bulk of the work throughout the migration to Azure DevOps Services gets handled by the Data Migration Tool. The tool gets used with the following high-level steps: 
 
-- Validate a team project collection. 
-- Generate the files used to customize the migration. 
-- Queue migration of an Azure DevOps Server database to Azure DevOps Services. 
+1. Validate a team project collection. 
+1. Generate the files used to customize the migration. 
+1. Queue migration of an Azure DevOps Server database to Azure DevOps Services. 
 
 You must have the following items: 
 

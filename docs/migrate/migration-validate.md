@@ -94,7 +94,7 @@ To get the process template from the project, add the `/SaveProcesses` parameter
 Migrator validate /collection:{collection URL} /tenantDomainName:{name} /region:{region} /SaveProcesses 
 ```
 
-This command extracts the XML from the project and place it into the same folder as the logs. Extract the zip files to your local machine so that you can edit the files. 
+This command extracts the XML from the project and places it into the same folder as the logs. Extract the zip files to your local machine so that you can edit the files. 
 
 Now, fix the XML. Use the logs from the DataMigrationTool.log file to determine the errors for each project. 
 
