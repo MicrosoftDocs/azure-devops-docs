@@ -37,7 +37,7 @@ In this quickstart, you learn how to:
 
 * Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
-## Create feed
+## <a name = "createfeed"></a> Create a feed
 
 [!INCLUDE [](includes/create-feed.md)]
 
