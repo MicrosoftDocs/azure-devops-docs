@@ -119,13 +119,25 @@ landingContent:
             url: ../project/navigation/index.md
           - text: Team Explorer navigation
             url: ../user-guide/work-team-explorer.md
-  - title: Migrate & import
+  - title: Migrate
     linkLists:
       - linkListType: concept
         links:
-          - text: Migrate from Azure DevOps Server to Azure DevOps Services
+          - text: Migration overview
             url: ../migrate/migration-overview.md
-          - text: Migration options
-            url: ../migrate/migrate-from-tfs.md
-          - text: Import
-            url: ../migrate/migration-import.md
+          - text: Get started
+            url: ../migrate/migration-get-started.md
+          - text: Prerequisites
+            url: ../migrate/migration-prerequisites.md
+          - text: Validate
+            url: ../migrate/migration-validate.md
+          - text: Prepare test run
+            url: ../migrate/migration-prepare-test-run.md
+          - text: Test run
+            url: ../migrate/migration-test-run.md
+          - text: Migrate
+            url: ../migrate/migration-migrate.md
+          - text: Post-migration
+            url: ../migrate/migration-post-migration.md
+          - text: Troubleshoot
+            url: ../migrate/migration-troubleshooting.md

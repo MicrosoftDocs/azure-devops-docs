@@ -1,26 +1,27 @@
-- name: Migrate data to Azure DevOps Services
+- name: Migration overview
   displayName: migration, migration guide, migration tool
   href: migration-overview.md
-- name: Migrate options
+- name: 1. Get started with Data Migration Tool
   displayName: migration options, database, migration guide
-  href: migrate-from-tfs.md
-- name: Import
+  href: migration-get-started.md
+- name: 2. Complete prerequisites
   displayName: database import, data migration tool, validate collection
-  href: migration-import.md
-- name: Import large collections
+  href: migration-prerequisites.md
+- name: 3. Validate & prepare server environment
   displayName: reduce collection size
-  href: migration-import-large-collections.md
-- name: Restrict access to Azure DevOps Services IPs only
+  href: migration-validate.md
+- name: 4. Prepare test run
   displayName: restrict access to azure devops services ips only
-  href: migration-restricting-access-to-azure-devops-services.md
-- name: Process templates
+  href: migration-prepare-test-run.md
+- name: 5. Do test run
   displayName: inherited process model, hosted xml process model
-  href: migration-processtemplates.md
-- name: Post-import
-  href: migration-post-import.md
-- name: Troubleshooting
-  displayName: maximum supported size, isverror 100014, isverror 300005, VS4034, VS4032, VS4033
+  href: migration-test-run.md
+- name: 6. Migrate
+  displayName: migration tool, migration process, migration service
+  href: migration-migrate.md
+- name: 7. Complete post-migration tasks
+  displayName: post migration tasks, post migration steps, post migration activities
+  href: migration-post-migration.md
+- name: Resolve migration errors
+  displayName: migration errors, migration issues, migration problems, troubleshoot migration
   href: migration-troubleshooting.md
-- name: FAQs, migration and process models
-  displayName: hosted xml
-  href: faqs.yml

@@ -299,7 +299,7 @@ To add an observer to the work item, which listens to the work item events, add 
 ## Changes with New Boards Hub
 
 > [!NOTE]
-> New Boards Hub is currently in preview but is on track be available for everyone in 2024. We strongly suggest that you immediately enable New Boards Hub and test your internal extensions. [Learn more](../../release-notes/2022/general/sprint-202-update#new-boards-hubs-now-available-in-public-preview).
+> New Boards Hub is currently in preview but is on track be available for everyone in 2024. We strongly suggest that you immediately enable New Boards Hub and test your internal extensions.
 
 ### Use the latests SDK's
 
