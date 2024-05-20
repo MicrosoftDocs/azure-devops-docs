@@ -8,7 +8,7 @@ ms.contentid:
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/17/2024
+ms.date: 05/20/2024
 ---
 
 # Migrate to Azure DevOps Services 

@@ -8,7 +8,7 @@ ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/17/2024
+ms.date: 05/20/2024
 ---
 
 # Do test run migration
@@ -283,7 +283,7 @@ It's important to weigh the cost of choosing to incur zero downtime for a test r
 DACPACs offer a fast and relatively easy method for moving collections into Azure DevOps Services. However, after a collection database size exceeds a certain threshold, the benefits of using a DACPAC start to diminish. 
 
 > [!NOTE] 
-> If the Data Migration Tool displays a warning that you can't use the DACPAC method, you have to perform the migration by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions provided in [Import large collections](migration-import-large-collections.md) and then continue to section [determine the migration type](#determine-the-migration-type). 
+> If the Data Migration Tool displays a warning that you can't use the DACPAC method, you have to perform the migration by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions in the [Prepare test run phase, Migrate large collections section](migration-prepare-test-run.md#migrate-large-collections), and then continue to [determine the migration type](#determine-the-migration-type). 
 > If the Data Migration Tool doesn't display a warning, use the DACPAC method described in this step.  
 
 [DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications) is a feature of SQL Server that allows databases to be packaged into a single file and deployed to other instances of SQL Server. A DACPAC file can also be restored directly to Azure DevOps Services, so you can use it as the packaging method for getting your collection's data in the cloud.
@@ -478,7 +478,7 @@ Imports can be queued as either a test run or a production run. The **ImportType
 
 Test run organizations help teams test the migration of their collections. Before a production migration can be run, any completed [test run organizations must be deleted](#prepare-for-migration). All test run organizations have a *limited existence and are automatically deleted after a set period of time*. Information about when the organization is deleted is included in the success email you should receive after the migration finishes. Be sure to take note of this date and plan accordingly. 
 
-Most test run organizations have 15 days before they're deleted. Test run organizations can also have a 21-day expiration if more than 100 users have a basic or greater license at *import time*. After the specified time period, the test run organization is deleted. You can repeat test run imports as many times as you need before you do a production migration. 
+Test run organizations have 45 days before they're deleted. After the specified time period, the test run organization is deleted. You can repeat test run imports as many times as you need before you do a production migration. 
 
 ## Delete test runs
 
@@ -489,7 +489,7 @@ Before you can run a second test run migration or the final production migration
 > Optional information to help a user be more successfulAny test run migration that follows the first is expected to take longer given the extra time required to clean up resources from previous test runs. 
 
 It can take up to one hour for an organization name to become available after deleting or renaming. 
-For more information about post-import activities, see the [post import](migration-post-migration.md) article. 
+For more information,, see the [Post migration tasks](migration-post-migration.md) article. 
 
 If you encounter any migration problems, see [Troubleshoot migration and migration errors](migration-troubleshooting.md#resolve-migration-errors). 
 

@@ -8,7 +8,7 @@ ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/17/2024
+ms.date: 05/20/2024
 ---
 
 # Complete post migration tasks
