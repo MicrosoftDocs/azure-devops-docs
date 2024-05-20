@@ -148,7 +148,7 @@ Configure your project in **Project settings**.
 
 ![Screenshot showing the Project settings button.](../media/settings/open-project-settings-vert-brn.png)
 
-For more information about managing projects, see [Manage projects in Azure DevOps](../organizations/projects/about-projects.md). You can move a project to a different organization by migrating the data. For more information about migrating your project, see [Migration options](../migrate/migrate-from-tfs.md).
+For more information about managing projects, see [Manage projects in Azure DevOps](../organizations/projects/about-projects.md). You can move a project to a different organization by migrating the data. For more information about migrating your project, see the [Migration overview](../migrate/migration-overview.md).
 
 ## Manage version control
 
