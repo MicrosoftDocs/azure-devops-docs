@@ -19,7 +19,7 @@ For example, `VSTS_AGENT_INPUT_PASSWORD` instead of specifying `--password`.
 - `--url <url>` - URL of the server. For example: https://dev.azure.com/myorganization or http://my-azure-devops-server:8080/tfs
 - `--auth <type>` - authentication type. Valid values are:
   - `pat` (Personal access token)
-  - `SP` (Service Principal)
+  - `SP` (Service Principal) (Requires [agent version 3.227.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v3.227.1))
   - `negotiate` (Kerberos or NTLM)
   - `alt` (Basic authentication)
   - `integrated` (Windows default credentials)
