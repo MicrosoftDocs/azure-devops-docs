@@ -15,8 +15,8 @@ Edit task group
 
 -->
 
-|Task|Readers|Contributors|Build Admins|Project Admins|Release Admins|
-|----|-------|------------|------------|--------------|--------------|
-|Administer task group permissions| | |✔️|✔️|✔️|  
-|Delete task group| | |✔️|✔️|✔️|  
-|Edit task group|  | |✔️|✔️|✔️|  
+|Task                             |Readers|Contributors|Build Admins|Project Admins|Release Admins|
+|----                             |:-------:|:------------:|:------------:|:--------------:|--------------|
+|Administer task group permissions|       |            |✔️          |✔️           |✔️           |  
+|Delete task group                |       |            |✔️          |✔️           |✔️           |  
+|Edit task group                  |       |✔️         |✔️          |✔️           |✔️           |  
