@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to manage their packages from various sources, including both public registries like npmjs.com and private feeds. To authenticate with Azure Artifacts, you will need to configure your npm config file. This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The *.npmrc* file is typically located in the user's home directory but can also be created at the project level to override default settings.
+Azure Artifacts enables developers to manage their packages from various sources, including both public registries like npmjs.com and private feeds. To authenticate with Azure Artifacts, you'll need to configure your npm config file. This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The *.npmrc* file is typically located in the user's home directory but can also be created at the project level to override default settings.
 
 ## Prerequisites
 
@@ -333,6 +333,8 @@ When using task runners such as gulp or Grunt, it's to prioritize setting your *
 > [!NOTE]
 > If your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. See [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md) for details.
 
+::: moniker range="azure-devops"   
+
 ## Troubleshoot
 
 #### vsts-npm-auth is not recognized
@@ -372,6 +374,8 @@ Follow these steps to reset your vsts-npm-auth credentials:
     ```
     npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
     ```
+
+::: moniker-end
 
 ## Related articles
 
