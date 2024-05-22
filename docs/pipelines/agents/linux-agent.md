@@ -30,7 +30,7 @@ To run your jobs, you need at least one agent. A Linux agent can build and deplo
 
 ## Check prerequisites
 
-::: moniker range="<=azure-devops"
+::: moniker range=">=azure-devops-2022"
 
 The agent is based on .NET 6.
 You can run this agent on several Linux distributions.
