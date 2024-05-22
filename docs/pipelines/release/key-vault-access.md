@@ -1,6 +1,6 @@
 ---
 title: Access private key vaults from your pipeline
-description: How to access a key vault with disabled public access from your pipeline.
+description: Learn how to access a private key vault from your pipeline.
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 05/02/2024
@@ -22,13 +22,13 @@ This article will walk you through configuring your inbound access points to acc
 
 - An Azure subscription. [Create a free Azure account](https://azure.microsoft.com/free) if you don't have one already.
 
-- An Azure key vault. [Create a new Azure key vault](azure/key-vault/general/quick-create-portal) if you haven't already.
+- An Azure key vault. [Create a new Azure key vault](/azure/key-vault/general/quick-create-portal) if you haven't already.
 
 ## Create a service principal
 
 Let's start by creating a new service principal, this will enable us to access Azure resources. Next, we will create a new ARM service connection in Azure DevOps using this service principal to enable us to query our Azure Key Vault from Azure Pipelines.
 
-1. Navigate to [Azure portal](https://ms.portal.azure/).
+1. Navigate to [Azure portal](https://ms.portal.azure.com/).
 
 1. Open the **Cloud Shell**, and then select **Bash**.
 
@@ -84,8 +84,6 @@ Azure Pipelines enables developers to link an Azure key vault to a variable grou
 1. From Azure DevOps, during the variable group configuration time.
 1. From a Self-hosted agent, during the pipeline job runtime.
 
-If you prefer not to use variable groups, you can jump to [Dynamically allow Microsoft-hosted agent IP](#dynamically-allow-microsoft--hosted-agent-ip) to learn how to query your private key vault, and then clear your firewall allowlist.
-
 :::image type="content" source="media/access-private-key-vault.png" alt-text="A diagram showing the two different paths to access a private key vault.":::   
 
 ## Access private key vaults from Azure Devops
@@ -132,7 +130,7 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 
 ## 1.3 Query private key vaults with a variable group
 
-In this example, we utilize the variable group set up earlier and authorized with a service principal to query and copy our secret from our private Azure Key Vault simply by using the linked variable group:
+In this example, we use the variable group, set up earlier and authorized with a service principal, to query and copy our secret from our private Azure Key Vault simply by using the linked variable group:
 
 ```yml
 variables:
@@ -203,7 +201,7 @@ To establish connectivity with your private key vault, you must provide a [line 
 
 ## Configure inbound access from a self-hosted Agent
 
-1. Follow the provided instruction to [Create a virtual network](azure/virtual-network/quick-create-portal).
+1. Follow the provided instruction to [Create a virtual network](/azure/virtual-network/quick-create-portal).
 
 1. In [Azure portal](https://portal.azure.com/), use the search bar at the top of the page to find your Azure key vault.
 
@@ -304,7 +302,7 @@ If you're experiencing the following errors, follow the steps in this section to
 
 - ```Public network access is disabled and request is not from a trusted service nor via an approved private link.```
 
-This indicates that public access has been disabled, and neither a private endpoint connection nor firewall exceptions have been set up. Follow the steps under [#configure-inbound-access-from-a-self--hosted-agent] and [Configure inbound access from Azure DevOps](#configure-inbound-access-from-azure-devOps) to set up access to your private key vault.
+This indicates that public access has been disabled, and neither a private endpoint connection nor firewall exceptions have been set up. Follow the steps under [#configure-inbound-access-from-a-self--hosted-agent] and [Configure inbound access from Azure DevOps](#12-configure-inbound-access-from-azure-devops) to set up access to your private key vault.
 
 - ```Request was not allowed by NSP rules and the client address is not authorized and caller was ignored because bypass is set to None Client address: <x.x.x.x>```
 
@@ -312,8 +310,8 @@ This error message indicates that the key vault's public access has been disable
 
 - ```Error: Client address is not authorized and caller is not a trusted service.```
 
-Make sure you add your geography's IPV4 ranges to your key vault allowlist. See [Configure inbound access from Azure DevOps](#configure-inbound-access-from-azure-devops) for details. 
-Alternatively, you can jump to [Dynamically allow Microsoft-hosted agent IP](#dynamically-allow-microsoft--hosted-agent-ip) to learn how to add your client IP to the key vault's firewall during runtime.
+Make sure you add your geography's IPV4 ranges to your key vault allowlist. See [Configure inbound access from Azure DevOps](#12-configure-inbound-access-from-azure-devops) for details. 
+Alternatively, you can jump to [Dynamically allow Microsoft-hosted agent IP](#2-dynamically-allow-microsoft-hosted-agent-ip) to learn how to add your client IP to the key vault's firewall during runtime.
 
 ## Related articles
 
