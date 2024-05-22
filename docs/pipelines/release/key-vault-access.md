@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Access private key vaults from your pipeline
 
-Azure Key Vaults offer a robust solution for managing credentials such as keys, secrets, and certificates with seamless security. Using Azure Pipelines, you can streamline the process of accessing and using key vaults, making it effortless to store and retrieve credentials.
+Azure key vaults offer a robust solution for managing credentials such as keys, secrets, and certificates with seamless security. Using Azure Pipelines, you can streamline the process of accessing and using key vaults, making it effortless to store and retrieve credentials.
 
 In certain scenarios, organizations prioritize security by restricting access to key vaults exclusively to designated Azure virtual networks to ensure the highest level of security for critical applications.
 
@@ -26,7 +26,7 @@ This article will walk you through configuring your inbound access points to acc
 
 ## Create a service principal
 
-Let's start by creating a new service principal, this will enable us to access Azure resources. Next, we will create a new ARM service connection in Azure DevOps using this service principal to enable us to query our Azure Key Vault from Azure Pipelines.
+Let's start by creating a new service principal, this will enable us to access Azure resources. Next, we will create a new ARM service connection in Azure DevOps using this service principal to enable us to query our Azure key vault from Azure Pipelines.
 
 1. Navigate to [Azure portal](https://ms.portal.azure.com/).
 
@@ -74,8 +74,8 @@ Let's start by creating a new service principal, this will enable us to access A
 
 ::: moniker-end
 
-> [!IMPORTANT]
-> If you're enable to verify your service principal connection, grant the service principal **Reader** access to your subscription.
+> [!TIP]
+> If you're unable to verify your service principal connection, grant the service principal **Reader** access to your subscription.
 
 ## Access private key vaults
 
@@ -88,9 +88,7 @@ Azure Pipelines enables developers to link an Azure key vault to a variable grou
 
 ## Access private key vaults from Azure Devops
 
-In this section, we'll explore two methods for accessing a private key vault from Azure DevOps. First, we'll use Variable Groups to link and map secrets from our key vault, followed by setting up inbound access by allowing static IP ranges. We establish inbound access because Azure Pipelines uses the posted Azure DevOps Public IP when querying the Azure Key Vault from our Azure DevOps Variable Group.
-
-Therefore, by adding inbound connections to the Azure Key Vault firewall, we can successfully connect to the Azure Key Vault.
+In this section, we'll explore two methods for accessing a private key vault from Azure DevOps. First, we'll use Variable Groups to link and map secrets from our key vault, followed by setting up inbound access by allowing static IP ranges. We establish inbound access because Azure Pipelines uses the posted Azure DevOps Public IP when querying the Azure key vault from a Variable Group. Therefore, by adding inbound connections to the Azure key vault firewall, we can successfully connect to our Azure key vault.
 
 For our second approach, we'll demonstrate dynamically adding the Microsoft-hosted agent IP address to our key vault's firewall allowlist, querying the key vault, and subsequently removing the IP after completion. This second approach is for demonstration purposes and is not the recommended approach by Azure Pipelines.
 
@@ -104,7 +102,7 @@ For our second approach, we'll demonstrate dynamically adding the Microsoft-host
 
 1. Select your Azure service connection you created earlier from the dropdown menu, and then select your key vault.
 
-    :::image type="content" source="media/new-variable-group-get-list-error.png" alt-text="A screenshot showing how to link a variable group to an Azure Key Vault with an error indicating missing get and list permissions."::: 
+    :::image type="content" source="media/new-variable-group-get-list-error.png" alt-text="A screenshot showing how to link a variable group to an Azure key vault with an error indicating missing get and list permissions."::: 
 
 1. If you encounter the error message: *Specified Azure service connection needs to have "Get, List" secret management permissions on the selected key vault.* as shown above. Navigate to your key vault in Azure portal, select **Access control (IAM)** > **Add role assignment** > **key vault secrets user** > **Next**, then add your service principal, then select **Review + assign** when you're done.
 
@@ -130,7 +128,7 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 
 ## 1.3 Query private key vaults with a variable group
 
-In this example, we use the variable group, set up earlier and authorized with a service principal, to query and copy our secret from our private Azure Key Vault simply by using the linked variable group. Azure Pipelines uses the posted public IP when querying the Azure Key Vault from a Variable Group, so make sure you have [configured inbound access](#12-configure-inbound-access-from-azure-devops) for this to work properly:
+In this example, we use the variable group, set up earlier and authorized with a service principal, to query and copy our secret from our private Azure key vault simply by using the linked variable group. Azure Pipelines uses the posted public IP when querying the Azure key vault from a Variable Group, so make sure you have [configured inbound access](#12-configure-inbound-access-from-azure-devops) for this to work properly:
 
 ```yml
 variables:
