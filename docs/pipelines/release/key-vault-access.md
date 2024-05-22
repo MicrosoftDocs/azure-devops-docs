@@ -130,7 +130,7 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 
 ## 1.3 Query private key vaults with a variable group
 
-In this example, we use the variable group, set up earlier and authorized with a service principal, to query and copy our secret from our private Azure Key Vault simply by using the linked variable group. Azure Pipelines uses the posted public IP when querying the Azure Key Vault from a Variable Group, so make sure you have [configured inbound access](##1.2-configure-inbound-access-from-azure-devops) for this to work properly:
+In this example, we use the variable group, set up earlier and authorized with a service principal, to query and copy our secret from our private Azure Key Vault simply by using the linked variable group. Azure Pipelines uses the posted public IP when querying the Azure Key Vault from a Variable Group, so make sure you have [configured inbound access](#12-configure-inbound-access-from-azure-devops) for this to work properly:
 
 ```yml
 variables:
