@@ -229,6 +229,20 @@ To establish connectivity with your private key vault, you must provide a [line 
 
     :::image type="content" source="media/key-vault-approved-private-endpoint-connection.png" alt-text="A screenshot showing an approved private endpoint connection":::  
 
+## Allow your virtual network
+
+1. Navigate to [Azure portal](https://portal.azure.com/), and then find your Azure key vault.
+ 
+1. Select **Settings** > **Networking**, and make sure you're under the **Firewalls and virtual networks** tab.
+
+1. Select **Add a virtual network** > **Add existing virtual networks**.
+
+1. Select your **Subscription** from the dropdown menu, and then select the virtual network you created earlier, and then select your **Subnets**.
+
+1. Select **Add** when you're done, and then scroll to the bottom of the page and select **Apply** to save your changes.
+
+    :::image type="content" source="media/add-new-virtual-network-key-vault-firewall.png" alt-text="A screenshot showing how to add an existing virtual network to Azure key vault firewall.":::  
+
 ## Run pipeline from a self-hosted Agent
 
 If you prefer not to grant Azure DevOps inbound access to your private key vault, set the **runAsPreJob** argument to true. This ensures that the [AzureKeyVault](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) task is executed before other tasks in your pipeline, mirroring the same workflow when Variable Group integration is used.
