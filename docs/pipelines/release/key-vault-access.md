@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Access private key vaults from your pipeline
 
-Azure Key Vaults offer a robust solution for managing credentials such as keys, secrets, and certificates with seamless security. Using Azure pipelines, you can streamline the process of accessing and using key vaults, making it effortless to store and retrieve credentials.
+Azure Key Vaults offer a robust solution for managing credentials such as keys, secrets, and certificates with seamless security. Using Azure Pipelines, you can streamline the process of accessing and using key vaults, making it effortless to store and retrieve credentials.
 
 In certain scenarios, organizations prioritize security by restricting access to key vaults exclusively to designated Azure virtual networks to ensure the highest level of security for critical applications.
 
@@ -38,7 +38,7 @@ Let's start by creating a new service principal, this will enable us to access A
     az ad sp create-for-rbac --name YOUR_SERVICE_PRINCIPAL_NAME
     ```
 
-1. Make sure to copy the output, as we will use it to create the service connection in the next step.
+1. Make sure to copy the output, as we'll use it to create the service connection in the next step.
 
 ## Create a service connection
 
@@ -84,7 +84,7 @@ Azure Pipelines enables developers to link an Azure key vault to a variable grou
 1. From Azure DevOps, during the variable group configuration time.
 1. From a Self-hosted agent, during the pipeline job runtime.
 
-If you prefer not to use variable groups, you can jump to [Dynamically allow Microsoft-hosted agent IP](#dynamically-allow-microsoft--hosted-agent-ip) to learn how to query your private key vault, and then clear your firewall allowList.
+If you prefer not to use variable groups, you can jump to [Dynamically allow Microsoft-hosted agent IP](#dynamically-allow-microsoft--hosted-agent-ip) to learn how to query your private key vault, and then clear your firewall allowlist.
 
 :::image type="content" source="media/access-private-key-vault.png" alt-text="A diagram showing the two different paths to access a private key vault.":::   
 
@@ -108,7 +108,7 @@ For our second approach, we'll demonstrate dynamically adding the Microsoft-host
 
     :::image type="content" source="media/new-variable-group-get-list-error.png" alt-text="A screenshot showing how to link a variable group to an Azure Key Vault with an error indicating missing get and list permissions."::: 
 
-1. If you encounter the error message: *Specified Azure service connection needs to have "Get, List" secret management permissions on the selected key vault.* as shown above. Navigate to your key vault in Azure Portal, select **Access control (IAM)** > **Add role assignment** > **key vault secrets user** > **Next**, then add your service principal, then select **Review + assign** when you're done.
+1. If you encounter the error message: *Specified Azure service connection needs to have "Get, List" secret management permissions on the selected key vault.* as shown above. Navigate to your key vault in Azure portal, select **Access control (IAM)** > **Add role assignment** > **key vault secrets user** > **Next**, then add your service principal, then select **Review + assign** when you're done.
 
     :::image type="content" source="media/add-role-assignment-secret-user-service-principal.png" alt-text="A screenshot showing how to add a service principal as a secret user for an Azure key vault."::: 
 
@@ -223,9 +223,9 @@ To establish connectivity with your private key vault, you must provide a [line 
 
 1. Under the **Virtual Network** tab, select the **Virtual network** and **Subnet** that you created earlier and leave the rest of the fields as default. Select **Next** when you're done.
 
-1. Continue through the **DNS** and **Tags** tabs, accepting the default settings. Under the On the **Review + Create** tab, select **Create** when you're done.
+1. Continue through the **DNS** and **Tags** tabs, accepting the default settings. Under the **Review + Create** tab, select **Create** when you're done.
 
-1. Once your resource is deployed, navigate to your key vault > **Settings** > **Networking** > **Private endpoint connections**, you private endpoint should be listed with a **Connection state** *approved*. If you're linking to an Azure resource in a different directory, you'll need to wait for the resource owner to approve your connection request.
+1. Once your resource is deployed, navigate to your key vault > **Settings** > **Networking** > **Private endpoint connections**, your private endpoint should be listed with a **Connection state** *approved*. If you're linking to an Azure resource in a different directory, you'll need to wait for the resource owner to approve your connection request.
 
     :::image type="content" source="media/key-vault-approved-private-endpoint-connection.png" alt-text="A screenshot showing an approved private endpoint connection":::  
 
@@ -243,23 +243,64 @@ To establish connectivity with your private key vault, you must provide a [line 
 
     :::image type="content" source="media/add-new-virtual-network-key-vault-firewall.png" alt-text="A screenshot showing how to add an existing virtual network to Azure key vault firewall.":::  
 
-## Run pipeline from a self-hosted Agent
+## Query private key vault from a self-hosted Agent
 
-If you prefer not to grant Azure DevOps inbound access to your private key vault, set the **runAsPreJob** argument to true. This ensures that the [AzureKeyVault](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) task is executed before other tasks in your pipeline, mirroring the same workflow when Variable Group integration is used.
+The following example uses an agent set up on the virtual network's VM to query the private key vault through the variable group:
 
 ```yml
-  - task: AzureKeyVault@2
-    displayName: 'Access Azure Key Vault pre-job'
-    inputs:
-      azureSubscription: '$(SERVICE_CONNECTION_NAME)'
-      keyVaultName: $(KEY_VAULT_NAME)
-      secretsFilter: '*'
-      runAsPreJob: true
+pool: Self-hosted-pool
+
+variables:
+  group: mySecret-VG
+
+steps:
+- task: CmdLine@2
+  inputs:
+    script: 'echo $(mySecret) > secret.txt'
+    
+- task: CopyFiles@2
+  inputs:
+    Contents: secret.txt
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 ```
 
-## Troubleshooting
+If you prefer not to grant Azure DevOps inbound access to your private key vault, you can use the [AzureKeyVault](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) task to query your key vault. However, you must ensure that you allow the virtual network hosting your agent in your key vault firewall settings.
 
-If you are experiencing the following errors, follow the steps in this section to troubleshoot and resolve the issue:
+```yml
+pool: Self-hosted-pool
+
+steps:
+- task: AzureKeyVault@2
+  inputs:
+    azureSubscription: '$(SERVICE_CONNECTION_NAME)'
+    keyVaultName: $(KEY_VAULT_NAME)
+    SecretsFilter: '*'
+
+- task: CmdLine@2
+  inputs:
+    script: 'echo $(mySecret) > secret.txt'
+    
+- task: CopyFiles@2
+  inputs:
+    Contents: secret.txt
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+```
+
+## Troubleshoot
+
+If you're experiencing the following errors, follow the steps in this section to troubleshoot and resolve the issue:
 
 - ```Public network access is disabled and request is not from a trusted service nor via an approved private link.```
 
@@ -267,7 +308,7 @@ This indicates that public access has been disabled, and neither a private endpo
 
 - ```Request was not allowed by NSP rules and the client address is not authorized and caller was ignored because bypass is set to None Client address: <x.x.x.x>```
 
-This error message indicates that the key vault's public access has been disabled and the **Allow trusted Microsoft services to bypass this firewall** option is unchecked, but the client IP address hasn't been added to the key vault firewall. Navigate to your key vault in the Azure Portal, then **Settings** > **Networking** and add your client IP to the firewall's allowlist.
+This error message indicates that the key vault's public access has been disabled and the **Allow trusted Microsoft services to bypass this firewall** option is unchecked, but the client IP address hasn't been added to the key vault firewall. Navigate to your key vault in the Azure portal, then **Settings** > **Networking** and add your client IP to the firewall's allowlist.
 
 - ```Error: Client address is not authorized and caller is not a trusted service.```
 
