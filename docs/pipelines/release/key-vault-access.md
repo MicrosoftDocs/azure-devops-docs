@@ -81,21 +81,22 @@ Let's start by creating a new service principal, this will enable us to access A
 
 Azure Pipelines enables developers to link an Azure key vault to a variable group and map selective vault secrets to it. A key vault that is used as a variable group can be accessed:
 
-1. From Azure DevOps, during the variable group configuration time. (This approach is only supported in Azure DevOps Services).
+1. From Azure DevOps, during the variable group configuration time.
 1. From a Self-hosted agent, during the pipeline job runtime.
 
 If you prefer not to use variable groups, you can jump to [Dynamically allow Microsoft-hosted agent IP](#dynamically-allow-microsoft--hosted-agent-ip) to learn how to query your private key vault, and then clear your firewall allowList.
 
 :::image type="content" source="media/access-private-key-vault.png" alt-text="A diagram showing the two different paths to access a private key vault.":::   
 
-::: moniker range="azure-devops"
-
 ## Access private key vaults from Azure Devops
 
-In this section, we will explore two approaches for accessing a private key vault from Azure DevOps. First, we will use Variable Groups to link and map secrets from our key vault, and then set up inbound access by allowing static IP ranges. 
-For our second approach, we'll demonstrate dynamically adding Microsoft-hosted agent IP address to our key vault's firewall allowlist, querying the key vault, and subsequently removing the IP after completion.
+In this section, we'll explore two methods for accessing a private key vault from Azure DevOps. First, we'll use Variable Groups to link and map secrets from our key vault, followed by setting up inbound access by allowing static IP ranges. We establish inbound access because Azure Pipelines uses the posted Azure DevOps Public IP when querying the Azure Key Vault from our Azure DevOps Variable Group.
 
-## 1. Map key vault secrets with variable groups
+Therefore, by adding inbound connections to the Azure Key Vault firewall, we can successfully connect to the Azure Key Vault.
+
+For our second approach, we'll demonstrate dynamically adding the Microsoft-hosted agent IP address to our key vault's firewall allowlist, querying the key vault, and subsequently removing the IP after completion. This second approach is for demonstration purposes and is not the recommended approach by Azure Pipelines.
+
+## 1. Map key vault secrets with a variable group
 
 1. Sign in to your Azure DevOps organization, and the navigate to your project.
 
@@ -105,11 +106,11 @@ For our second approach, we'll demonstrate dynamically adding Microsoft-hosted a
 
 1. Select your Azure service connection you created earlier from the dropdown menu, and then select your key vault.
 
-    :::image type="content" source="media/new-variable-group-get-list-error.png" alt-text="A screenshot demonstrating the process of linking a new variable group to an Azure Key Vault, with an error indicating missing 'get' and 'list' permissions.."::: 
+    :::image type="content" source="media/new-variable-group-get-list-error.png" alt-text="A screenshot showing how to link a variable group to an Azure Key Vault with an error indicating missing get and list permissions."::: 
 
 1. If you encounter the error message: *Specified Azure service connection needs to have "Get, List" secret management permissions on the selected key vault.* as shown above. Navigate to your key vault in Azure Portal, select **Access control (IAM)** > **Add role assignment** > **key vault secrets user** > **Next**, then add your service principal, then select **Review + assign** when you're done.
 
-    :::image type="content" source="media/add-role-assignment-secret-user-service-principal-.png.png" alt-text="A screenshot showing how to add a service principal as a secret user for an Azure key vault."::: 
+    :::image type="content" source="media/add-role-assignment-secret-user-service-principal.png" alt-text="A screenshot showing how to add a service principal as a secret user for an Azure key vault."::: 
 
 1. Add your secrets and then select **Save** when you're done.
 
@@ -129,11 +130,36 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 
 1. [Configure your key vault](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips) to allow access from static IP ranges.
 
+## 1.3 Query private key vaults with a variable group
+
+In this example, we utilize the variable group set up earlier and authorized with a service principal to query and copy our secret from our private Azure Key Vault simply by using the linked variable group:
+
+```yml
+variables:
+  group: mySecret-VG
+
+steps:
+- task: CmdLine@2
+  inputs:
+    script: 'echo $(mySecret) > secret.txt'
+    
+- task: CopyFiles@2
+  inputs:
+    Contents: secret.txt
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+```
+
 ## 2 Dynamically allow Microsoft-hosted agent IP
 
-We'll start by querying the IP of the Microsoft-hosted agent at the beginning of our pipeline. Then, we'll add it to the key vault allowlist, proceed with the remaining tasks, and finally, remove the IP from the key vault's firewall allowlist.
+In this second approach, we'll start by querying the IP of the Microsoft-hosted agent at the beginning of our pipeline. Then, we'll add it to the key vault allowlist, proceed with the remaining tasks, and finally, remove the IP from the key vault's firewall allowlist.
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > Ensure that the service principal you're using to access your key vault from your pipeline holds the **Key vault contributor** role within your key vault's Access control (IAM).
 
 ```yml
@@ -166,7 +192,8 @@ We'll start by querying the IP of the Microsoft-hosted agent at the beginning of
      Remove-AzKeyVaultNetworkRule -VaultName "YOUR_KEY_VAULT_NAME" -IpAddressRange $ipRange
 ```
 
-::: moniker-end
+> [!NOTE]
+> This approach is for demonstration purposes only and is not the recommended approach by Azure Pipelines.
 
 ## Access private key vaults from a self-hosted agent
 
