@@ -85,7 +85,7 @@ Follow these steps to set permissions for project-level task groups:
 
 1. From your project, select **Pipelines** > **Task groups**. 
 
-    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of Task group selection.":::
+    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of task group selection.":::
 
 1. Select **Security**.
 
@@ -201,7 +201,7 @@ Follow these steps to set permissions for a task group:
 
 1. From your project, select **Pipelines** > **Task groups**. 
 
-    :::image type="content" source="media/task-group-menu-item-2019.png" alt-text="Screenshot of Task group selection.":::
+    :::image type="content" source="media/task-group-menu-item-2019.png" alt-text="Screenshot of task group menu item.":::
 
 1. Select a task group. 
 

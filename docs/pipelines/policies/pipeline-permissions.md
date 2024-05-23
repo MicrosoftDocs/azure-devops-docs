@@ -238,7 +238,7 @@ Follow these steps to set object-level permissions for a pipeline:
 
 1. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
 
-    :::image type="content" source="media/individual-pipeline-permissions-dialog-2020.png" alt-text="Screenshot of pipeline security add user or group selection.":::
+    :::image type="content" source="media/individual-pipeline-permissions-dialog-2020.png" alt-text="Screenshot of pipeline security add user or group.":::
 
 1. Select a user or group and set the permissions.
 1. You can select more users and groups to change their permissions.
