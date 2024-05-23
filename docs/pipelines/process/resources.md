@@ -652,6 +652,8 @@ Location variable is only applicable for `ACR` type of container resources.
 
 In this example, there's an [Azure Resource Manager service connection](../library/service-endpoints.md#common-service-connection-types) named `arm-connection`. For more information, see [Azure container registries, repositories, and images](/azure/container-registry/container-registry-concepts).
 
+Replace the value `mycontainer` in each container resource variable with the name of your container. 
+
 ```yaml
 resources:
   containers:

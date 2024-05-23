@@ -35,7 +35,6 @@ If you previously enabled Advanced Security for repositories in an Azure DevOps 
 
 Various updates to the Advanced Security APIs recently shipped: 
 * The GET Alerts API now supports a new parameter, `ModifiedSince`, to return an incremental list of alerts and only return alerts that were modified since this date. For more information, see [Alerts - List](/rest/api/azure/devops/advancedsecurity/alerts/list).
-* The GET SARIFs API now returns specific upload errors to help you troubleshoot any SARIF upload failures. For more information, see [SARIFs](/rest/api/azure/devops/advancedsecurity/sarifs/get).
 * There are two new endpoints to fetch or update an organization or project's Advanced Security enablement status. Both endpoints return a list of repositories with Advanced Security enabled. For more information, see [Org - Enablement](/rest/api/azure/devops/advancedsecurity/org-enablement) or [Project - Enablement](/rest/api/azure/devops/advancedsecurity/project-enablement).
 * There are two new endpoints to fetch an estimate of your active committer count for an organization or project to reflect what your estimated Advanced Security meter usage may cost. For more information, see [Org Meter Usage Estimate](/rest/api/azure/devops/advancedsecurity/org-meter-usage-estimate/list) or [Project Meter Usage Estimate](/rest/api/azure/devops/advancedsecurity/project-meter-usage-estimate/list).
 
