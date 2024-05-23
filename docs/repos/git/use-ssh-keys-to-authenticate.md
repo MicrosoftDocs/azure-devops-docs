@@ -69,7 +69,7 @@ Enter file in which to save the key (C:\Users\username/.ssh/id_rsa):
 ```
 
 You can press Enter to accept the default, or specify a path and/or filename where you would like your keys to be generated.
-At this point, you'll be prompted to use a passphrase to encrypt your private key files. The passphrase can be empty but it's not recommended.
+At this point, you'll be prompted to use a passphrase to encrypt your private key files. Make sure you choose a strong passphrase.
 The passphrase works with the key file to provide two-factor authentication.
 
 ```Output
