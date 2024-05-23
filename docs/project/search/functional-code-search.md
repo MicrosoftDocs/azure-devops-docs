@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/14/2023
+ms.date: 05/08/2024
 ---
 
 # Functional code search  
@@ -143,6 +143,9 @@ Here are some more code search functions. You can search for code types in C#, C
 A Git project has a list of repositories. To expand your search, check the project and repository boxes. You can search all or more projects, or fewer projects and repositories. If there are many projects or repositories, select **Show more** to see them all.
 
 Code Search can index different branches in a Git repository. It only indexes files in the default branch of your Git repositories by default. The default branch is usually main. To index other branches, go to the **Options** tab in the **Repositories** section of the [project settings page](../navigation/go-to-service-page.md#open-project-settings).
+
+> [!NOTE]
+> By default, code search looks for the specified string in the main or default branch of a repository. But, you can narrow down the search by specifying a filter for a specific branch.
 
 ::: moniker range=">= azure-devops-2019"
 ![Screenshot showing Git branches for configuration.](media/advanced-work-item-search-syntax/configure-branches.png)
