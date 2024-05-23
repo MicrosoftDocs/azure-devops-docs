@@ -12,13 +12,13 @@ monikerRange: '<= azure-devops'
 ms.date: 05/23/2024
 --- 
 
-# Security groups, service accounts, and permissions in Azure DevOps
+# Security groups, service accounts, and permissions reference
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article provides a comprehensive reference for each built-in user, group, and permission.
 
-For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [Get started with permissions, access, and security groups](about-permissions.md). In addition to security groups, there are also [security roles](about-security-roles.md), which provide permissions for select areas. 
+For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [About permissions, access, and security groups](about-permissions.md), [About security roles](about-security-roles.md), and [About access levels](access-levels.md). 
 
 To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 

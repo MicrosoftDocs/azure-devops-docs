@@ -1,7 +1,7 @@
 ---
-title: Get started with permissions and access levels
+title: About permissions and security groups
 titleSuffix: Azure DevOps
-description: Learn about permissions and access in Azure DevOps via inheritance, security groups, roles, and more.
+description: Learn about permissions and access levels in Azure DevOps via inheritance, security groups, roles, and more.
 ms.subservice: azure-devops-security
 ms.assetid: 
 toc: show
@@ -12,13 +12,13 @@ monikerRange: '<= azure-devops'
 ms.date: 05/23/2024
 ---
 
-# Get started with permissions and access levels
+# About permissions and security groups
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In this article, learn about access levels and permissions via inheritance, security groups, roles, and more in Azure DevOps.
 
-For an overview of default permissions, see [Default permissions quick reference](permissions-access.md). For a description of each default security group, see [Security groups, service accounts, and permissions](permissions.md#groups).
+For an overview of default permissions, see [Default permissions quick reference](permissions-access.md). For a description of each default security group, see [Security groups, service accounts, and permissions reference](permissions.md#groups).
 
 ## Access levels 
 
@@ -26,10 +26,8 @@ All users added to Azure DevOps are assigned an *access level*, which grants or 
 
 There are three main access levels: **Stakeholder**, **Basic**, and **Basic + Test Plans**. Stakeholder access provides free access to an unlimited number of users to a limited set of features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 
-To give a user access to Agile portfolio management or test case management features, [change access levels](change-access-levels.md), not permissions. 
+To give a user access to Agile portfolio management or test case management features, [change access levels](change-access-levels.md), not permissions. For more information, see [About access levels](access-levels.md).
  
-Changing the access level for users or groups doesn’t automatically grant them access to a project or the web portal. To connect to a project and the web portal, users or groups must be added to a team or a security group. Ensure that your users have both the necessary permissions and the appropriate access level by [adding them to the project or a team](add-users-team-project.md).
-
 ## Permissions   
 
 All users added to Azure DevOps are added to one or more default *security groups*. Security groups are assigned *permissions*, which either **Allow** or **Deny** access to a feature or task. 
@@ -80,11 +78,9 @@ In some cases, members of the **Project Collection Administrators** or **Team Fo
 > [!WARNING]
 > When you modify a permission for a group it affects all users in that group. Even a single permission change can impact hundreds of users, so it’s crucial to consider the potential effects before making any adjustments.
 
-## Permission inheritance and security groups 
+## Permission inheritance
 
-Permissions follow a hierarchy, allowing inheritance from a parent or by overriding. Security groups assign specific permissions to their members.
-
-### Permission inheritance
+Permissions follow a hierarchy, allowing inheritance from a parent or by overriding.
 
 - **Group inheritance:** Users inherit permissions from the groups they belong to. If a user has an **Allow** permission directly or through group membership, but also has a **Deny** permission through another group, the Deny permission takes precedence. However, members of **Project Collection Administrators** or **Team Foundation Administrators** retain most allowed permissions, even if they belong to other groups that deny those permissions (except for work item operations).
 - **Object-Level inheritance:** Object-level permissions (assigned to nodes like areas, iterations, version control folders, and work item query folders) are inherited down the hierarchy.
@@ -135,7 +131,9 @@ A new window shows the inheritance information for that permission.
 
 * * *
 
-## Security groups and membership  
+## Security groups and membership
+
+Security groups assign specific permissions to their members.
 
 With the creation of an organization, collection, or project&mdash;Azure DevOps creates a set of default security groups, which are automatically assigned default permissions. More security groups are defined with the following actions: 
 - When you create custom security groups at the following levels: 
@@ -277,6 +275,8 @@ With Role-based permissions, you assign user accounts or security groups to a ro
 - [Marketplace extension Manager role](../../marketplace/grant-permissions.md): Members of the Manager role can install extensions and respond to requests for extensions to be installed.  
 - [Pipeline security roles](about-security-roles.md): Several roles are used to manage library resources, project-level, and collection-level pipeline resources. 
 - [Team administrator role](../settings/manage-teams.md)  Team administrators are able to manage all team tools.   
+
+For more information, see [About security roles](about-security-roles.md).
 
 ::: moniker range="azure-devops"
 The following image illustrates how security groups defined at the project and collection level can assign permissions to objects, projects, and the organization.
