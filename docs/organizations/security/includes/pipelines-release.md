@@ -20,19 +20,19 @@ View releases
 -->
 
 
-| Task                    | Stakeholders | Readers | Contributors | Project Admins | Release Admins |
-|-------------------------|---------------|----------|---------------|-------------|----------------|
-| Approve releases                 | ✔️          |         | ✔️           | ✔️            | ✔️ |
-| View releases                    | ✔️          | ✔️      | ✔️          | ✔️             | ✔️ |
-| View release pipeline            |              | ✔️     | ✔️           | ✔️            | ✔️ |
-| Administer release permissions   |              |         |              | ✔️            | ✔️ |
-| Delete release pipeline or stage |              |         | ✔️          | ✔️             | ✔️ |
-| Delete releases                  |              |         | ✔️          | ✔️             | ✔️ |
-| Edit release pipeline            |              |         |              | ✔️            | ✔️ |
-| Edit release stage               |              |         | ✔️          | ✔️             | ✔️ |
-| Manage deployments               |              |         |              | ✔️            | ✔️ |
-| Manage release approvers         |              |         | ✔️          | ✔️             | ✔️ |
-| Manage releases                  |              |         |              | ✔️            | ✔️ |
+| Task | Stakeholders | Readers | Contributors | Project Admins | Release Admins |
+|------|:------------:|:-------:|:------------:|:--------------:|:--------------:|
+| Approve releases  |✔️| |✔️|✔️|✔️|
+| View releases     |✔️|✔️|✔️|✔️|✔️|
+| View release pipeline  | |✔️|✔️|✔️|✔️|
+| Administer release permissions   | | | |✔️|✔️|
+| Delete release pipeline or stage | | |✔️|✔️|✔️|
+| Delete releases                  | | |✔️|✔️|✔️|
+| Edit release pipeline            | | | ✔️|✔️|✔️|
+| Edit release stage               | | |✔️|✔️|✔️|
+| Manage deployments               | | | ✔️|✔️|✔️|
+| Manage release approvers         | | |✔️|✔️|✔️|
+| Manage releases                  | | |✔️|✔️|✔️|
 
 
 
