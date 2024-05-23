@@ -8,8 +8,6 @@ ms.date: 05/17/2024
 
 # Agent software version 3
 
-> [!CAUTION]
-> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and planning accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 The pipelines team is upgrading the agent software from version 2.x (using .NET Core 3.1) to version 3.x (using .NET 6). The new agent version supports new Apple silicon hardware and newer operating systems like Ubuntu 22.04, or Windows on ARM64.
 
@@ -27,7 +25,6 @@ The following operating systems are supported by the 3.x agent.
 
 * **Linux**
   * x64
-    * CentOS 7, 8
     * Debian 10+
     * Fedora 36+
     * openSUSE 15+
@@ -70,7 +67,6 @@ The following list of operating systems are commonly used for self-hosted 2.x ag
 
 | System/Distribution | Version not supported by .NET 6 |
 |---------------------|---------------------------------|
-| CentOS | < 7 |
 | Debian | <= 4.9 |
 | Fedora | <= 32 |
 | RedHat Enterprise Linux | <= 6 |
