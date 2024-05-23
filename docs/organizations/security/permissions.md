@@ -1716,7 +1716,6 @@ By default, team administrators are granted all permissions for their team dashb
 |Delete dashboard<br/>`DashboardsPrivileges, Delete`  | Can delete the specific team dashboard. |
 |Edit dashboard<br/>`DashboardsPrivileges, Edit`  |  Can add widgets to and change the layout of the specific team dashboard. |
 
-
    <a name="build"></a>
    <a name="build-object-level"></a>
 
@@ -1734,8 +1733,6 @@ Manage pipeline permissions [for each pipeline defined in the web portal](../../
 > ![Screenshot of Pipeline object-level permissions dialog.](media/permissions/edit-build-pipeline-object-level-permissions-s163.png)
 
 ::: moniker-end
-
-
 
 Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build definition.
 
@@ -1932,7 +1929,6 @@ You can define the following permissions in Build at both levels.
 
 Manage the security of each [Git repository](../../repos/git/set-git-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a project that configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
 
-
 ::: moniker range="azure-devops" 
 
 > [!div class="mx-imgBorder"]  
@@ -1940,13 +1936,10 @@ Manage the security of each [Git repository](../../repos/git/set-git-repository-
 
 ::: moniker-end 
 
- 
-
 > [!NOTE]  
 > Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from  the top-level **Git repositories** entry. Branches inherit permissions from assignments made at the repository level. By default, the project level Readers groups only have Read permissions.
 
 To manage Git repo and branch permissions, see [Set branch permissions](../../repos/git/branch-permissions.md).
-
 
 :::row:::
    :::column span="2":::
@@ -2396,7 +2389,7 @@ Members of the Project Administrators group are automatically granted permission
 
 <a name="iteration-path-permissions"></a>
 
-## Iteration Path (object-level) 
+## Iteration path (object-level) 
 
 Iteration path permissions grant or restrict access to create and manage iteration paths, also referred to as sprints.
 
@@ -2406,7 +2399,6 @@ Members of the Project Administrators group are automatically granted these perm
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Iteration Path permissions dialog.](media/permissions/iteration-path-permissions-vsts.png)
-
 
 :::row:::
    :::column span="1":::
@@ -2466,7 +2458,7 @@ Members of the Project Administrators group are automatically granted these perm
    :::column-end:::
 :::row-end:::
 
-   <a id="query">  </a>
+<a id="query">  </a>
 
 ## Work item query and query folder (object-level)
 
@@ -2527,13 +2519,11 @@ Consider granting the **Contribute** permissions to users or groups that require
    :::column-end:::
 :::row-end:::
 
-   <a id="plan-permissions">  </a>
-
+<a id="plan-permissions">  </a>
 
 ## Delivery Plans (object-level)   
 
 Manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). Manage permissions for each plan through its Security dialog. Project Administrators are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
-
 
 :::row:::
    :::column span="1":::
@@ -2630,7 +2620,6 @@ You can manage tagging permissions using [az devops security permission](manage-
 ::: moniker range="< azure-devops"
 You can manage tagging permissions using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions). Contributors can add tags to work items and use them to quickly filter a backlog, board, or query results view.
    ::: moniker-end
-
 :::row:::
    :::column span="1":::
    ### Permission (UI)   
@@ -2718,14 +2707,12 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    View releases
 -->
 
-   <a id="release_management">  </a>
-   <a id="release-management">  </a>
-
+<a id="release_management">  </a>
+<a id="release-management">  </a>
 
 ## Release (object-level) 
 
 Manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions work in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
-
 
 :::image type="content" source="media/permissions/release-object-level-permissions.png" alt-text="Screenshot showing Releases object-level permissions.":::
 
@@ -2900,7 +2887,6 @@ The following permissions are defined in Release Management. The scope column ex
    :::column-end:::
 :::row-end:::
 
-
 Default values for all of these permissions are set for team project collections and project groups. For example,
 **Project Collection Administrators**, **Project Administrators**, and
 **Release Administrators** are given all of the above permissions by
@@ -2909,7 +2895,7 @@ Default values for all of these permissions are set for team project collections
    are denied all permissions except **View release pipeline** and
 **View releases**.
 
-   <a id="task-group">  </a>
+<a id="task-group">  </a>
 
 ## Task group (Build and Release) permissions
 
@@ -2924,8 +2910,7 @@ Use task groups to encapsulate a sequence of tasks already defined in a build or
 > | **Delete task group** | Can delete a task group. | 
 > | **Edit task group** | Can create, modify, or delete a task group. | 
 
-
-   <a id="alerts">  </a>
+<a id="alerts">  </a>
 
 ## Notifications or alerts 
 
@@ -2935,7 +2920,6 @@ There are no UI permissions associated with [managing email notifications or ale
 ::: moniker range="< azure-devops-2020"
 There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, you can manage them using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tool.
 ::: moniker-end
-
 
 - By default, members of the project level **Contributors** group can subscribe to alerts for themselves.
 - Members of the **Project Collection Administrators** group,
