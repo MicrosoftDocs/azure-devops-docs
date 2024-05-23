@@ -8,7 +8,7 @@ ms.date: 05/15/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Configure Deployment group security in Azure Pipelines
+# Configure deployment group security in Azure Pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
