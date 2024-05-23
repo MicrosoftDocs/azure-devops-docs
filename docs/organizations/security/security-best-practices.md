@@ -70,7 +70,7 @@ A few ways to do so might include:
 The system manages permissions at different levels - individual, collection, project, and object - and assigns them to one or more built-in groups by default.
 
 - Only give users and services the minimum amount of access needed to perform their business functions.
-- Disable inheritance where possible. Due to the allow-by-default nature of inheritance, unexpected users can get access or permissions. For more information, read about [inheritance](about-permissions.md#permission-inheritance-and-security-groups). 
+- Disable inheritance where possible. Due to the allow-by-default nature of inheritance, unexpected users can get access or permissions. For more information, read about [inheritance](about-permissions.md#permission-inheritance). 
 - Learn more about permissions here:
   - [Permissions and role lookup guide](permissions-lookup-guide.md)
   - [Permissions, security groups, and service accounts reference](permissions.md)

@@ -156,7 +156,7 @@ To set permissions for a custom security group, you must have defined that group
 	> [!div class="mx-imgBorder"]  
 	> ![Enable or disable inheritance for a specific repository.](media/git-permissions/disable-inheritance-specific-repo.png)  
 
-	To learn about inheritance, see [About permissions and groups, Inheritance and security groups](../../organizations/security/about-permissions.md#inheritance). 
+	To learn about inheritance, see [About permissions and groups, Inheritance and security groups](../../organizations/security/about-permissions.md#permission-inheritance). 
 
 ::: moniker-end
 

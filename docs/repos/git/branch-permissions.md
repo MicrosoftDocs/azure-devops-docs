@@ -58,8 +58,7 @@ The user or group will still exist in your Project and this change will not affe
 ## Set permissions 
 
 Control branch permission settings from the branch permission view. Users and groups with permissions set at the repository level will
-[inherit those permissions](../../organizations/security/about-permissions.md#inheritance) by default. To learn more about how permissions work, see [Permission settings](../../organizations/security/about-permissions.md#permission-settings). 
-
+[inherit those permissions](../../organizations/security/about-permissions.md#permission-inheritance) by default.
 
 ::: moniker range=">= azure-devops-2019"
 The following permissions are automatically assigned to branch creators: **Contribute**, **Force push**, **Manage permissions** (when allowed through the repository setting **Permissions management**), and **Remove others' locks**.
