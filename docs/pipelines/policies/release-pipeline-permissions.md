@@ -1,5 +1,5 @@
 ---
-title: Set Release Pipeline Permissions in Azure Pipelines
+title: Set release pipeline permissions in Azure Pipelines
 ms.topic: how-to
 description: Learn how to set user and group permissions to securely manage release pipelines.
 ms.author: v-catherbund
@@ -180,7 +180,7 @@ You can set the permissions to **Allow**, **Deny**, or to **Not set** if the per
 
 1. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
 
-1. Select a user and group and set the permission to **Allow**, **Deny**, or **Not set**, or the inherited value (for example, **Allow (inherited).
+1. Select a user and group and set the permission to **Allow**, **Deny**, or **Not set**, or the inherited value (for example, **Allow (inherited)**).
 
     :::image type="content" source="media/releases-individual-pipeline-permissions-2019.png" alt-text="Screenshot of release pipeline security add user or group selection.":::
 

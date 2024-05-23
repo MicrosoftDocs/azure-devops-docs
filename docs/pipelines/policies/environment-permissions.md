@@ -1,5 +1,5 @@
 ---
-title: Configure Security for Environments in Azure Pipelines
+title: Configure security for environments in Azure Pipelines
 ms.topic: how-to
 description: Configure security for the environments in Azure Pipelines.
 ms.author: v-catherbund
@@ -12,9 +12,9 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-gt-eq-2020.md)]
 
-This article provides guidance on managing security for environments in Azure Pipelines. Environments group together deployment targets for use with YAML pipelines. However, they are not supported in classic pipelines. 
+This article provides guidance on managing security for environments in Azure Pipelines. Environments group together deployment targets for use with YAML pipelines. However, they aren't supported in classic pipelines. 
 
-By default, all environments in a project inherit security roles that are assigned to a set of default users and groups at the project level. Security settings can be managed at both the project level and the object level for individual environments..
+By default, all environments in a project inherit security roles that are assigned to a set of default users and groups at the project level. Security settings can be managed at both the project level and the object level for individual environments.
 
 Security roles for environments are:
 
@@ -34,7 +34,7 @@ The default user and group role assignments are:
 | [*project name*]\Project Administrators | Creator |
 | [*project name*]\Project Valid Users | Reader |
 
-The creator of an environment is automatically assigned the **Administrator** role for that environment, and this assignment cannot be changed.
+The creator of an environment is automatically assigned the **Administrator** role for that environment, and this assignment can't be changed.
 
 ## Prerequisites
 

@@ -1,5 +1,5 @@
 ---
-title: Configure Service Connections Security in Azure Pipelines
+title: Configure service connections security in Azure Pipelines
 ms.topic: how-to
 description: Configure security for service connection in Azure Pipelines.
 ms.author: v-catherbund
@@ -121,7 +121,7 @@ Follow these steps to configure security roles for an individual service connect
 
 1. In the **User permissions** section of the **Security** dialog, select **Project** to manage project-level users and groups, or **Organization** to manage organization- or collection-level users and groups.
 
-   :::image type="content" source="media/indivdual-service-connection-permission-user-dialog.png" alt-text="Screenshot of user permissions dialog for individual service connections.":::
+   :::image type="content" source="media/individual-service-connection-permission-user-dialog.png" alt-text="Screenshot of user permissions dialog for individual service connections.":::
 
 1. Select users and groups and change their roles. To lower the privilege level of an inherited role, inheritance must be disabled.
 1. To remove a user or group, select the user or group and select the delete button:::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. Inherited users and groups can't be removed unless inheritance is disabled.

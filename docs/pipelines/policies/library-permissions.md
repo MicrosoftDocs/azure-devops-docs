@@ -1,5 +1,5 @@
 ---
-title: Configure Library Security in Azure Pipelines
+title: Configure library security in Azure Pipelines
 ms.topic: how-to
 description: Configure security for the library and library assets in Azure Pipelines.
 ms.author: v-catherbund
@@ -64,6 +64,12 @@ To add project users or groups that aren't listed in the security dialog:
 1. Enter the user or group in the search bar, then select the user or group from the search result. You can add multiple users and groups.
 1. Select the **Role**.
 1. Select **Add** to save the changes.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+You can manage access for all library assets, such as [variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md), from the project-level library security settings.
 
 ::: moniker-end
 

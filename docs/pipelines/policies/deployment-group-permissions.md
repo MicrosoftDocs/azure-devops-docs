@@ -1,5 +1,5 @@
 ---
-title: Configure Deployment Group Security in Azure Pipelines
+title: Configure deployment group security in Azure Pipelines
 ms.topic: how-to
 description: Configure security for the deployment groups in Azure Pipelines.
 ms.author: v-catherbund

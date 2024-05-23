@@ -1,5 +1,5 @@
 ---
-title: Set Build Pipeline Permissions in Azure Pipelines 
+title: Set build pipeline permissions in Azure Pipelines 
 ms.topic: how-to
 description: Understand how to set project and object level permissions to securely manage build pipelines.
 ms.author: v-catherbund
@@ -129,7 +129,7 @@ Follow these steps to configure project-level permissions for users and groups a
 
 1. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
 
-    :::image type="content" source="media/pipeline-security-add-user-2019.png" alt-text="Screenshot of pipeline security add user or group selection":::
+    :::image type="content" source="media/pipeline-security-add-user-2019.png" alt-text="Screenshot of pipeline security add user or group selection.":::
 
 1. Select a user or group and set the permissions.
 

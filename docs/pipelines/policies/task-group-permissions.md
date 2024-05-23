@@ -1,5 +1,5 @@
 ---
-title: Set Task Group Permissions in Azure Pipelines
+title: Set task group permissions in Azure Pipelines
 ms.topic: how-to
 description: Learn how to set user and group permissions to securely manage task groups.
 ms.author: v-catherbund
@@ -89,7 +89,7 @@ Follow these steps to set permissions for project-level task groups:
 
 1. Select **Security**.
 
-    :::image type="content" source="media/task-group-security-project.png" alt-text="Select Task groups security selection.":::
+    :::image type="content" source="media/task-group-security-project.png" alt-text="Screenshot of task groups security selection.":::
 
 1. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
 
@@ -200,6 +200,8 @@ You can set the permissions to **Allow**, **Deny**, or to **Not set** if the per
 Follow these steps to set permissions for a task group:
 
 1. From your project, select **Pipelines** > **Task groups**. 
+
+    :::image type="content" source="media/task-group-menu-item-2019.png" alt-text="Screenshot of Task group selection.":::
 
 1. Select a task group. 
 

@@ -1,5 +1,5 @@
 ---
-title: Configure Agent Pool Security in Azure Pipelines
+title: Configure agent pool security in Azure Pipelines
 ms.topic: how-to
 description: Configure agent pool security in Azure Pipelines.
 ms.author: v-catherbund
@@ -112,7 +112,11 @@ To configure security roles for all agent pools in the collection:
 
 1. Go to **Organization settings** ::::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent pools**.
 1. Select an agent pool.
+
 1. Select **Security**. 
+
+    :::image type="content" source="media\agent-pools-organization-level-security-dialog.png" alt-text="Screenshot of organization-level security dialog for all agent pools.":::
+
 1. To add users and groups:
     1. Select **Add**
     1. Enter a user or group and select it from the search results.
@@ -154,6 +158,7 @@ To configure security roles for all agent pools in the collection:
     1. Repeat the previous step to add more users and groups.
     1. Select a role and select **Add**. 
     
+    
         :::image type="content" source="media/agent-pool-add-user.png" alt-text="Screenshot of add user dialog for all agent pools.":::
 
 1. To remove a user or group from the list, select the user or group and select the delete button:::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. Inheritance must be turned off or the user or group must not be inherited from the project-level security settings.
@@ -185,6 +190,7 @@ To configure security roles for all agent pools in the collection:
     1. Repeat the previous step to add more users and groups.
     1. Select a role and select **Add**.
      
+        
         :::image type="content" source="media/agent-pool-add-user.png" alt-text="Screenshot of collection-level add user dialog.":::
 
 1. To remove a user or group, select the user or group and select the delete button:::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
@@ -217,7 +223,9 @@ To configure security roles for all agent pools in the collection:
     1. Enter a user or group and select it from the search results.
     1. Repeat the previous step to add more users and groups.
     1. Select a role and select **Add**.
+        
         :::image type="content" source="media/agent-pool-add-user.png" alt-text="Screenshot of collection-level add user dialog.":::
+
 1. To remove a user or group from the list, select the user or group and select the delete button:::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
 
 1. To change a security role, select the user or group and select the role from the dropdown list.
@@ -235,14 +243,18 @@ The security roles at this level are **Reader**, **Service Account**, and **Admi
 To configure security roles for all agent pools in the collection:
 
 1. Go to **Collection settings** ::::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent pools**.
+
 1. Select an agent pool.
+
 1. Select the **Roles** tab. 
 1. To add users and groups:
     1. Select **Add**
     1. Enter a user or group and select it from the search results.
     1. Repeat the previous step to add more users and groups.
     1. Select a role and select **Add**.
+    
         :::image type="content" source="media/agent-pool-add-user.png" alt-text="Screenshot of collection-level add user dialog."::: 
+
 1. To remove a user or group from the list, select the user or group and select the delete button:::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. 
 1. To change a security role, select the user or group and select the role from the dropdown list.
 1. Select the **Save changes** button:::image type="icon" source="media/save-icon.png" border="false"::: to save your changes or the **Reset changes** button:::image type="icon" source="media/reset-icon.png" border="false"::: to revert unsaved changes.
@@ -284,6 +296,7 @@ You can override project-level user and group role assignments, and set pipeline
 To open the security dialog:
 
 1. From your project, select **Project settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent pools**.
+
 1. Select an agent pool.
 1. Select **Security**.
 
@@ -322,6 +335,7 @@ When you explicitly set a role, the inheritance for that user or group is turned
 To add project users or groups that aren't listed in the security dialog:
 
 1. Select the **Add** button.
+
 1. Enter the user or group in the search bar, then select the user or group from the search result. You can add multiple users and groups.
 1. Select the **Role**.
 1. Select **Add** to save the changes.
@@ -356,6 +370,7 @@ When you explicitly set a role, the inheritance for that user or group is turned
 To add project users or groups that aren't listed in the security dialog:
 
 1. Select the **Add** button.
+
 1. Enter the user or group in the search bar, then select the user or group from the search result. You can add multiple users and groups.
 1. Select the **Role**.
 1. Select **Add** to save the changes.

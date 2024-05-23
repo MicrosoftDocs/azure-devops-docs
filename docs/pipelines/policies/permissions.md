@@ -13,13 +13,13 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines security helps you control access to your pipelines and pipeline resources. Access is managed through a hierarchial system of built-in and custom security groups and users.  
+Azure Pipelines security helps you control access to your pipelines and pipeline resources. Access is managed through a hierarchical system of built-in and custom security groups and users.  
 
 Pipeline resources are features and objects that are used in pipelines, but exist outside of the pipeline itself. For example, release pipelines, task groups, agent pools, and service connections are all pipeline resources. 
 
-Upon the creation of a pipeline or resource, a set of built-in security groups and users are assigned access permissions or roles at the project level. These project-level security settings are then inherited at the object level for individual objects. For instance, when you create a pipeline, a default set of users and groups are assigned permissions at the project level. These security settings are subsequently inherited at the object level for all pipelines within the project.
+Upon the creation of a pipeline or resource, a set of built-in security groups and users are assigned access permissions or roles at the project level. These project-level security settings are then inherited at the object level for individual objects. For instance, when you create a pipeline, a default set of users and groups is assigned permissions at the project level. These security settings are then inherited at the object level for all pipelines within the project.
 
-Commonly, administrator groups are given full access to all pipelines and resources. Contributors are often granted access to manage resources and pipelines, while readers are given view-only access.  Users are assigned to security groups based on their role in the project and the permissions they need to perform their tasks.
+Commonly, administrator groups are given full access to all pipelines and resources. Contributors are often granted access to manage resources and pipelines, while readers are given view-only access. Users are assigned to security groups based on their role in the project and the permissions they need to perform their tasks.
 
 You can add and delete users and groups and change their permissions and roles at both the project- and object-levels. Object-level inheritance can be enabled and disabled.  
 
