@@ -132,7 +132,7 @@ Throughout these docs, users can refer to all identities that have been added to
 
 ::: moniker-end
 
-The most effective means for managing accounts is by [adding them to security groups](about-permissions.md#security-group-membership). 
+The most effective means for managing accounts is by [adding them to security groups](about-permissions.md#security-groups-membership). 
 
 > [!NOTE]  
 > The organization owner and members of the Project Collection Administrators group are granted full access to most all features and functions. 
