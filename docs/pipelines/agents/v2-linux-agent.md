@@ -18,11 +18,9 @@ monikerRange: '<= azure-devops'
 
 :::moniker-end
 
-> [!CAUTION]
-> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and planning accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 
-To run your jobs, you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu, Red Hat, and CentOS.
+To run your jobs, you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu and Red Hat.
 
 > Before you begin:
 > * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
@@ -38,7 +36,6 @@ The agent is based on .NET Core 3.1.
 You can run this agent on several Linux distributions.
 We support the following subset of .NET Core supported distributions:
 - x64
-  - CentOS 7, 6 (see note 1)
   - Debian 9
   - Fedora 30, 29
   - Linux Mint 18, 17
@@ -56,7 +53,7 @@ We support the following subset of .NET Core supported distributions:
   - Ubuntu 21.04, 20.04, 18.04
 
 > [!NOTE]
-> Note 1: RHEL 6 and CentOS 6 require installing the specialized `rhel.6-x64` version of the agent.
+> Note 1: RHEL 6 requires installing the specialized `rhel.6-x64` version of the agent.
 
 > [!IMPORTANT]
 > As of February 2023, no more agent releases support RHEL 6. For more information, see [Customers using Red Hat Enterprise Linux (RHEL) 6 should upgrade the OS on Self-hosted agents](https://devblogs.microsoft.com/devops/customers-using-red-hat-enterprise-linux-rhel-6-should-upgrade-the-os-on-self-hosted-agents/).
