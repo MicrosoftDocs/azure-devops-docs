@@ -115,8 +115,6 @@ To configure security roles for all agent pools in the collection:
 
 1. Select **Security**. 
 
-    :::image type="content" source="media\agent-pools-organization-level-security-dialog.png" alt-text="Screenshot of organization-level security dialog for an individual agent pool.":::
-
 1. To add users and groups:
     1. Select **Add**
     1. Enter a user or group and select it from the search results.
