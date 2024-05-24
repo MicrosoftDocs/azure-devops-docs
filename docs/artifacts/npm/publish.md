@@ -42,27 +42,61 @@ Using Azure Artifacts, you can easily manage the publication and retrieval of yo
 
 ::: moniker-end
 
+::: moniker range="< azure-devops"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+2. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+3. Select **Connect to Feed**, and then select **npm** from the left navigation area.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2022"
+
+4. Follow the instructions in the **Project setup** section to connect to your feed.
+
+    :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot that shows how to connect to your feed in Azure DevOps Server 2022.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+4. Follow the instructions in the **Project setup** section to connect to your feed.
+    
+    :::image type="content" source="../media/npm-project-setup-server-2020-1.png" alt-text="A screenshot that shows how to connect to your feed in Azure DevOps Server 2020.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+4. Follow the provided instructions to set up your project and connect to your feed.
+    
+    :::image type="content" source="../media/npm-project-setup-server-2019-1.png" alt-text="A screenshot that shows how to connect to your feed in Azure DevOps Server 2019.":::
+
+::: moniker-end
+
 ## Publish packages
 
-Run the following command in your project directory to publish the npm packages listed in your *package.json*:
+1. Run the following command in your project directory to publish the npm packages listed in your *package.json*:
 
-```Cli
-npm publish
-```
+    ```Cli
+    npm publish
+    ```
 
 ## Restore packages
 
-Run the following command in your project directory to restore all your npm packages:
+1. Run the following command in your project directory to restore all your npm packages:
    
-```Cli
-npm install
-```
+    ```Cli
+    npm install
+    ```
 
-If you want to restore a specific package, run the following command in your project directory:
+1. If you want to restore a specific package, run the following command in your project directory:
 
-```Cli
-npm install --save <PACKAGE_NAME>
-```
+    ```Cli
+    npm install --save <PACKAGE_NAME>
+    ```
 
 ## Related articles
 
