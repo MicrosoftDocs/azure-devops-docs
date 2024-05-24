@@ -70,7 +70,7 @@ steps:
 ```
 #### [Classic](#tab/classic)
 
-:::moniker range=">= azure-devops-2020"
+:::moniker range="azure-devops"
 
 1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
 
@@ -82,7 +82,7 @@ steps:
    
 :::moniker-end
 
-:::moniker range="azure-devops-2019"
+:::moniker range="<=azure-devops-2022"
 
 1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
 
