@@ -70,31 +70,37 @@ steps:
 ```
 #### [Classic](#tab/classic)
 
-:::moniker range="azure-devops"
+:::moniker range=">= azure-devops-2022"
 
 1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
 
-    ![Apply version to assemblies build task](media/BldScriptPSExmpVerAssembliesBuildStep.png)
+    ::: image type="content" source="media\BldScriptPSExmpVerAssembliesBuildStep.png" alt-text="Apply version to assemblies build task":::
 
 1. Next, specify your build number.
 
     :::image type="content" source="media\BldScriptPSExmpVerAssembliesBuildNumFormat.png" alt-text="Build number format":::
+
+1. Save your changes.
    
 :::moniker-end
 
-:::moniker range="<=azure-devops-2022"
+:::moniker range="< azure-devops-2022"
 
 1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
 
-    :::image type="content" source="media\BldScriptPSExmpVerAssembliesBuildNumFormat-2019.png" alt-text="Apply version to assemblies build task":::
+    ::: image type="content" source="media\BldScriptPSExmpVerAssembliesBuildStep-2020.png" alt-text="Apply version to assemblies build task":::
 
 1. Next, specify your build number.
 
-    ![Build number format](media/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
+    :::image type="content" source="media\BldScriptPSExmpVerAssembliesBuildNumFormat-2019.png" alt-text="Apply version to assemblies build task":::
+
+1. Save your changes.
 
 :::moniker-end
 
 ---
+
+Example PowerShell script to version assemblies:
 
 ```ps
 # If found use it to version the assemblies.
@@ -196,6 +202,8 @@ In this example, you use the `SYSTEM_ACCESSTOKEN` variable to access the [Azure 
 
 You can use `$env:SYSTEM_ACCESSTOKEN` in your script in a YAML pipeline to access the OAuth token. 
 
+The following example inline PowerShell script uses the OAuth token to access the Azure Pipelines REST API that retrieves the pipeline definition.
+
 ```yaml
 - task: PowerShell@2
   inputs:
@@ -218,7 +226,9 @@ To enable your script to use the build process OAuth token, go to the **Tasks** 
 
 To enable your script to use the build process OAuth token, navigate to the **Tasks** tab of the build definition, select an **Agent job**, and in the **Additional options** section, select **Allow Scripts to Access OAuth Token**.
 
-After you do that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md). For example:
+After you do that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md).
+
+The following example PowerShell script uses the OAuth token to access the Azure Pipelines REST API that retrieves the pipeline definition.
 
 ```ps
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
@@ -228,7 +238,6 @@ $pipeline = Invoke-RestMethod -Uri $url -Headers @{
 }
 Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 ```
-
 
 --- 
 
