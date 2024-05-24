@@ -226,7 +226,7 @@ To enable your script to use the build process OAuth token, go to the **Tasks** 
 
 To enable your script to use the build process OAuth token, navigate to the **Tasks** tab of the build definition, select an **Agent job**, and in the **Additional options** section, select **Allow Scripts to Access OAuth Token**.
 
-    :::image type="content" source="media\Allow-scripts-to-access-oauth-token.png alt-text="Screenshot enabling OAuth token access for scripts.":::
+:::image type="content" source="media\Allow-scripts-to-access-oauth-token.png alt-text="Screenshot enabling OAuth token access for scripts.":::
 
 After you do that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md).
 
