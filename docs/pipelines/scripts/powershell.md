@@ -74,7 +74,7 @@ steps:
 
 1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
 
-    ::: image type="content" source="media\BldScriptPSExmpVerAssembliesBuildStep.png" alt-text="Apply version to assemblies build task":::
+    :::image type="content" source="media\BldScriptPSExmpVerAssembliesBuildStep.png" alt-text="Apply version to assemblies build task":::
 
 1. Next, specify your build number.
 
@@ -88,7 +88,7 @@ steps:
 
 1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
 
-    ::: image type="content" source="media\BldScriptPSExmpVerAssembliesBuildStep-2020.png" alt-text="Apply version to assemblies build task":::
+    :::image type="content" source="media\BldScriptPSExmpVerAssembliesBuildStep-2020.png" alt-text="Apply version to assemblies build task":::
 
 1. Next, specify your build number.
 
@@ -100,7 +100,7 @@ steps:
 
 ---
 
-Example PowerShell script to version assemblies:
+Example PowerShell script:
 
 ```ps
 # If found use it to version the assemblies.
