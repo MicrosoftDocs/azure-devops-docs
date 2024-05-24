@@ -2,9 +2,12 @@
 title: Quickstart - Use Azure Pipelines to build and publish a Python app
 description: Automatically build and test Python apps with Azure Pipelines.
 ms.topic: quickstart
+ms.date: 03/27/2024
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 monikerRange: '>=azure-devops-2019'
 ms.custom: devx-track-python, freshness-fy22q2
+ms.author: v-catherbund
+author: cebundy
 ---
 
 # Build Python apps
