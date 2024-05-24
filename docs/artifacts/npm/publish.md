@@ -1,11 +1,11 @@
 ---
 title: Publish and restore npm packages CLI
-description: How to publish and restore npm packages from the command line
+description: Learn how to publish and restore npm packages from the command line
 ms.assetid: 85773969-1491-4242-A060-BD5D193961A0
 ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
 ms.topic: conceptual
-ms.date: 03/25/2024
+ms.date: 05/24/2024
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
@@ -14,27 +14,33 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Using Azure Artifacts, you can easily manage the publication and retrieval of npm packages from various sources, including feeds and public registries like npmjs.com. This article will walk you through setting up your project, and publishing and restoring your npm packages from your Azure Artifacts feed.
+Using Azure Artifacts, you can easily manage the publication and retrieval of your npm packages from various sources, including feeds and public registries like npmjs.com. This article will walk you through setting up your project, publishing, and restoring your npm packages from your Azure Artifacts feed.
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
 
-- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-feed) if you don't have one already.
+- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
 
-- [Download Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+- An Azure Artifacts feed. [Create one for free](../get-started-npm.md#create-a-feed).
 
-## Connect to feed
+- [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+
+## Connect to Feed
+
+::: moniker range="azure-devops"  
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
-1.  Select **Connect to feed**, and then select **npm** from the left.
+1. Select **Connect to Feed**, and then select **npm** from the left navigation area.
 
-1. In the **Project setup** section, choose **Windows** if your operating system is Windows; otherwise, select **Other**. Follow the provided instructions to configure your .npmrc file and connect to your feed. If this is the first time using Azure Artifacts with npm, make sure you **Get the tools** at the top right corner of the page.
+1. Follow the instructions in the **Project setup** section to configure your *.npmrc* file and connect to your feed.
 
-    :::image type="content" source="../npm/media/project-setup-npm.png" alt-text="A screenshot showing how to connect to your feed." lightbox="../npm/media/project-setup-npm.png":::
+    :::image type="content" source="../npm/media/project-setup-npm.png" alt-text="Screenshot that shows how to connect to a feed in Azure DevOps services." lightbox="../npm/media/project-setup-npm.png":::
+
+::: moniker-end
 
 ## Publish packages
 
