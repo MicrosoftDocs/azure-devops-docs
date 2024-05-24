@@ -1,6 +1,6 @@
 ---
 title: Publish and restore npm packages CLI
-description: Learn how to publish and restore npm packages from the command line
+description: Learn how to publish and restore npm packages from the command line.
 ms.assetid: 85773969-1491-4242-A060-BD5D193961A0
 ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Using Azure Artifacts, you can easily manage the publication and retrieval of your npm packages from various sources, including feeds and public registries like npmjs.com. This article will walk you through setting up your project, publishing, and restoring your npm packages from your Azure Artifacts feed.
+Using Azure Artifacts, you can easily manage the publication and retrieval of your npm packages from various sources, including feeds and public registries like npmjs.com. This article walks you through setting up your project, publishing, and restoring your npm packages from your Azure Artifacts feed.
 
 ## Prerequisites
 
