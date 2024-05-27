@@ -120,10 +120,11 @@ Default values are set for project collections and project groups. For example, 
 > | Permission | Description |
 > |------------|-------------|
 > | **Administer build permissions** | Can change any of the other permissions listed here. |
+> | **Create build pipeline** | Can create build pipeline(s). |
 > | **Delete build pipeline** | Can delete build pipeline(s). |
 > | **Delete builds** | Can delete builds for a pipeline. Deleted builds are [retained](retention.md) in the **Deleted** tab for a period before they're destroyed. |
 > | **Destroy builds** | Can delete builds from the **Deleted** tab. |
-> | **Edit build pipeline** | Can create pipelines and save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. |
+> | **Edit build pipeline** | Can create pipelines and save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Cannot create new pipeline(s).|
 > | **Edit build quality** | Can add tags to a build. |
 > | **Manage build qualities** | _Only applies to XAML builds_ |
 > | **Manage build queue** | _Only applies to XAML builds_ |
