@@ -100,7 +100,19 @@ A: Any problems with the formatting of your CSV/XLSX file appear in the import v
 A: No, all work items aren't supported. The Test case import only supports the following work item types:
 
 - Test Case
-- Shared Steps
+
+Important for referencing shared steps in test case using import functionality:
+
+- A shared steps work item shall already exists and the ID of that shared steps work item can be referenced in the CSV.
+  CSV\XLSX import functionality do not support creating the new shared steps work item if it is referenced without ID and import functionality will fail with the error invalid column.
+
+- You can create new shared steps work item from a test case work item UI and using create shared steps option in it.
+
+- Once the shared steps work item is created, you can refer the ID of the shared step in CSV.
+
+:::image type="content" source="media/bulk-import-test-case/shared-steps-reference-in-csv.png" alt-text="Screenshot of shared step reference in CSV.":::
+
+- Note that if the shared steps work item reference is provided with the steps to it in CSV\XLSX, it will update the shared steps workitem, so if you just want to provide the reference to the shared steps, do not add steps to it in the CSV\XLSX 
 
 Azure Boards has a separate bulk import functionality using CSV files. For more information, see [Bulk import or update (CSV)](../boards/queries/import-work-items-from-csv.md).
 
