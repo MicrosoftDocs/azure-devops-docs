@@ -400,7 +400,7 @@ Select **Security** from **More actions** :::image type="icon" source="../../med
 See the following frequently asked questions (FAQs) about pipeline permissions.
 ### Q: Why can't I create a new pipeline?
 
-A: You need **Edit build pipeline** permissions to create a new pipeline. To add permission, open the security settings for all pipelines and verify that **Edit build pipeline** is set to _Allow_ for your security group. 
+A: You need **Create build pipeline** permissions to create a new pipeline. To add permission, open the security settings for all pipelines and verify that **Create build pipeline** is set to _Allow_ for your security group. 
 
 If you still can't create a pipeline, check to see if your [access level](../../organizations/security/access-levels.md) is set to **Stakeholder**. If you have stakeholder access, change your access to **Basic**. 
 
