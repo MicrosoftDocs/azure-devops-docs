@@ -113,6 +113,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Collection-level information](change-organization-collection-level-permissions.md)
    - [Configure Azure Boards (Team)](../settings/manage-teams.md)
    - [Create a workspace (Collection)](change-organization-collection-level-permissions.md)
+   - [Create build pipeline (Object)](../../pipelines/policies/permissions.md)
    - [Create child nodes (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Create child nodes (Iteration Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Create new projects (Collection)](change-organization-collection-level-permissions.md)
