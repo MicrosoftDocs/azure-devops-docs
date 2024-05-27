@@ -1819,6 +1819,15 @@ You can define the following permissions in Build at both levels.
 :::row-end:::
 :::row:::
    :::column span="2":::
+   <a id="create-build-pipeline"></a> Create build pipeline
+   `Build, CreateBuildDefinition`
+   :::column-end:::
+   :::column span="2":::
+   Can create pipelines.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
    <a id="delete-build-definition-permission"></a> Delete build definition  
    `Build, DeleteBuildDefinition`
    :::column-end:::
@@ -1852,7 +1861,7 @@ You can define the following permissions in Build at both levels.
    :::column-end:::
    :::column span="2":::
    
-   **Edit build pipeline** Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. Replaces Edit build definition.  
+   **Edit build pipeline** Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. Replaces Edit build definition. Cannot create new pipelines.
    **Edit build definition** Can create and modify build definitions for this project.
    :::column-end:::
 :::row-end:::
