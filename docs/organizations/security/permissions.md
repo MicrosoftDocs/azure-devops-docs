@@ -1819,7 +1819,8 @@ You can define the following permissions in Build at both levels.
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="create-build-pipeline"></a> Create build pipeline
+   <a id="create-build-pipeline-permission"></a> 
+   Create build pipeline
    `Build, CreateBuildDefinition`
    :::column-end:::
    :::column span="2":::
