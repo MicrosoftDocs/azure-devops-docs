@@ -58,7 +58,7 @@ For YAML pipelines, the process for cloning is to copy the YAML from the source 
 
 If your new pipeline can be created by copying another classic pipeline in the same project, follow the instructions in this section. If your pipeline is in another project, you can use [import/export](#export-and-import-a-pipeline) to copy the pipeline.
 
-You need `Edit release pipeline` or `Edit build pipeline` permissions to clone a Classic pipeline. 
+You need `Edit release pipeline` or `Create build pipeline` permissions to clone a Classic pipeline. 
  
 :::moniker range=">= azure-devops-2019"
 
