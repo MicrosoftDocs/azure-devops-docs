@@ -581,9 +581,26 @@
   - name: Configure and pay for parallel jobs
     displayName: parallel jobs, microsoft-hosted, self-hosted
     href: licensing/concurrent-jobs.md
-  - name: Set pipeline permissions
-    displayName: release permissions, task group permissions, service permissions, environment permissions
-    href: policies/permissions.md
+  - name: Permissions
+    items:
+    - name: Permissions overview
+      href: policies/permissions.md
+    - name: Pipeline permissions
+      href: policies/pipeline-permissions.md
+    - name: Release pipeline permissions
+      href: policies/release-pipeline-permissions.md
+    - name: Task group permissions
+      href: policies/task-group-permissions.md
+    - name: Agent pool security
+      href: policies/agent-pool-permissions.md
+    - name: Service connection security
+      href: policies/service-connection-permissions.md
+    - name: Library security
+      href: policies/library-permissions.md
+    - name: Deployment group security
+      href: policies/deployment-group-permissions.md
+    - name: Environment security
+      href: policies/environment-permissions.md
   - name: Add users to contribute to pipelines
     displayName: add administrators, add users
     href: policies/set-permissions.md
