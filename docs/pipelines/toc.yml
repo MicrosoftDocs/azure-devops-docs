@@ -584,7 +584,7 @@
   - name: Pipelines permissions
     items:
     - name: Permissions overview
-      href: permissions.md
+      href: policies/permissions.md
     - name: Pipeline permissions
       href: policies/pipeline-permissions.md
     - name: Release pipeline permissions
