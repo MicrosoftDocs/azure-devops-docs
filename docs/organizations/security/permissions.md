@@ -74,9 +74,9 @@ To learn how to add users to a group or set a specific permission that you can m
      - [Analytics views](../../report/powerbi/analytics-security.md) 
      - [SQL Server Reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports) 
   ::: moniker-end
-  
    :::column-end:::
 :::row-end:::
+---
 
 > [!NOTE]  
 > The images shown in your web portal might differ from the images in this article due to system updates, but the basic functionality remains the same unless explicitly mentioned. 
@@ -93,7 +93,7 @@ The system generates a few service accounts to support specific operations. The 
 | *ProjectName* Build Service | Has permissions to run build services for the project and is a legacy user used for XAML builds. It gets added to the Security Service Group, which is used to store users with granted permissions, but not added to any other security group.  |  
 | Project Collection Build Service | Has permissions to run build services for the collection. It gets added to the Security Service Group, which is used to store users with granted permissions, but not added to any other security group.  |  
 
-   <a name="groups"></a>
+<a name="groups"></a>
 
 ## Groups
 
@@ -233,11 +233,9 @@ When you create an organization or project collection in Azure DevOps, the syste
 
 ::: moniker-end
 
-
 The full name of each of these groups is **[{collection name}]\\{group name}**. 
 So the full name of the administrator group for the default collection is 
 **[Default Collection]\\Project Collection Administrators**.
-
 
 :::row:::
    :::column span="1":::
@@ -371,13 +369,11 @@ So the full name of the administrator group for the default collection is
    Release Administrators  
 [team name]
 -->
-
-   <a id="project-level-groups"></a>
+<a id="project-level-groups"></a>
 
 ## Project-level groups
 
 For each project that you create, the system creates the followings project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
-
 
 ::: moniker range="azure-devops"
 
@@ -392,8 +388,7 @@ For each project that you create, the system creates the followings project-leve
  
 :::image type="content" source="media/permissions/project-level-groups-current.png" alt-text="Screenshot of Project-level groups and permissions, Azure DevOps current.":::
 
----
-
+* * *
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"
@@ -401,8 +396,6 @@ For each project that you create, the system creates the followings project-leve
 :::image type="content" source="media/permissions/project-level-groups-current.png" alt-text="Screenshot of Project-level groups and permissions, Azure DevOps current.":::
 
 ::: moniker-end
-
-
 
 > [!TIP]  
 > The full name of each of these groups is **[{project name}]\\{group name}**. 
@@ -508,8 +501,6 @@ For each project that you create, the system creates the followings project-leve
    Add members of the team to this group. To grant access to configure team settings, [add a team member to the team administrator role](../settings/add-team-administrator.md).
    :::column-end:::
 :::row-end:::
-
-
    <!---
    Create and manage team alerts
    Create and manage team rooms
@@ -521,7 +512,6 @@ For each project that you create, the system creates the followings project-leve
    Set working days off
    Show bugs on backlogs and boards
 -->
-
 
 ## Team administrator role
 
@@ -545,11 +535,8 @@ In the following sections, the namespace permission is provided following the pe
    `Tagging, Create`
 
 For more information, see [Security namespace and permission reference](namespace-reference.md).
-
-
    <a id="server">  </a>
    <a id="server-permissions">  </a>
-
 ::: moniker range="< azure-devops"
 
 ## Server-level permissions 
@@ -572,6 +559,7 @@ Manage server-level permissions through the [Team Foundation Administration Cons
 :::row:::
    :::column span="2":::
    <a id="administer-warehouse-permission"></a> Administer warehouse  
+
    `Warehouse, Administer`
    :::column-end:::
    :::column span="2":::
@@ -585,6 +573,7 @@ Manage server-level permissions through the [Team Foundation Administration Cons
 :::row:::
    :::column span="2":::
    <a id="create-team-project-collection-permission"></a> Create project collection  
+
    `CollectionManagement, CreateCollection`
    :::column-end:::
    :::column span="2":::
@@ -594,6 +583,7 @@ Manage server-level permissions through the [Team Foundation Administration Cons
 :::row:::
    :::column span="2":::
    <a id="delete-team-project-collection-permission"></a> Delete project collection  
+
    `CollectionManagement, DeleteCollection`
    :::column-end:::
    :::column span="2":::   
@@ -606,6 +596,7 @@ Manage server-level permissions through the [Team Foundation Administration Cons
    :::column span="2":::
    <a id="edit-instance-level-information-permission"></a> 
    Edit instance-level information  
+
    `Server, GenericWrite`
    :::column-end:::
    :::column span="2":::
@@ -630,6 +621,7 @@ Manage server-level permissions through the [Team Foundation Administration Cons
 :::row:::
    :::column span="2":::
    <a id="make-requests-on-behalf-of-others-permission"></a> Make requests on behalf of others    
+
    `Server, Impersonate`
    :::column-end:::
    :::column span="2":::
@@ -639,6 +631,7 @@ Manage server-level permissions through the [Team Foundation Administration Cons
 :::row:::
    :::column span="2":::
    <a id="trigger-events-permission"></a> Trigger events  
+
    `Server, TriggerEvent`
    :::column-end:::
    :::column span="2":::
@@ -664,6 +657,7 @@ Manage server-level permissions through the [Team Foundation Administration Cons
 :::row:::
    :::column span="2":::
    <a id="view-instance-level-information-permission"></a> View instance-level information  
+
    `Server, GenericRead`
    :::column-end:::
    :::column span="2":::
@@ -673,13 +667,9 @@ Manage server-level permissions through the [Team Foundation Administration Cons
    :::column-end:::
 :::row-end:::
 
-
 ::: moniker-end
-
    <a id="collection">  </a>
    <a id="collection-level"> </a>
-
-
 ::: moniker range="azure-devops"
 
 ## Organization-level permissions
@@ -705,6 +695,7 @@ Manage organization-level permissions through the [web portal admin context](../
   #### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="4":::
    #### General
@@ -713,6 +704,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="alter-trace-settings"></a> Alter trace settings  
+
   `Collection, DIAGNOSTIC_TRACE`
    :::column-end:::
    :::column span="2":::
@@ -722,6 +714,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="create-new-team-projects"></a> Create new projects  
+
    (formerly Create new team projects)  
   `Collection, CREATE_PROJECTS`
    :::column-end:::
@@ -732,6 +725,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="delete-team-project"></a> Delete team project  
+
   `Project, DELETE`
    :::column-end:::
    :::column span="2":::
@@ -741,14 +735,12 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="edit-collection-level-information"></a> Edit instance-level information  
+
   `Collection, GENERIC_WRITE`
    :::column-end:::
    :::column span="2":::
    Can set organization and project-level settings.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
+
    > [!NOTE]   
    > **Edit instance-level information** includes the ability to perform these tasks for all projects defined in an organization or collection:  
    > - Modify organization **Overview** settings, **Extensions**, and **Microsoft Entra ID**  settings
@@ -760,12 +752,14 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-collection-level-information"></a> View instance-level information  
+
   `Collection, GENERIC_READ` 
    :::column-end:::
    :::column span="2":::
    Can view organization-level permissions for a user or group. 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="4":::
    #### Service Account
@@ -774,6 +768,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::  
    :::column span="2":::
    <a id="make-requests-on-behalf-of-others"></a> Make requests on behalf of others  
+
   `Server, Impersonate`    
    :::column-end:::
    :::column span="2":::
@@ -784,6 +779,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="trigger-events"></a> Trigger events  
+
   `Collection, TRIGGER_EVENT`
   `Server, TRIGGER_EVENT`
    :::column-end:::
@@ -794,12 +790,14 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-system-synchronization-information"></a> View system synchronization information 
+
   `Collection, SYNCHRONIZE_READ`      
    :::column-end:::
    :::column span="2":::
    Can call the synchronization application programming interfaces. Assign only to service accounts.
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="4":::
    #### Boards  
@@ -808,6 +806,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="administer-process-permissions"></a> Administer process permissions  
+
   `Process, AdministerProcessPermissions`
    :::column-end:::
    :::column span="2":::
@@ -819,6 +818,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="create-process"></a> Create process  
+
   `Process, Create`
    :::column-end:::
    :::column span="2":::
@@ -828,6 +828,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="delete-field"></a> Delete field from organization  
+
   `Collection, DELETE_FIELD`
    :::column-end:::
    :::column span="2":::
@@ -837,6 +838,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="delete-process"></a> Delete process  
+
   `Process, Delete`
    :::column-end:::
    :::column span="2":::
@@ -846,12 +848,14 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="edit-process"></a> Edit process  
+
   `Process, Edit`
    :::column-end:::
    :::column span="2":::
    Can edit a [custom inherited process](../settings/work/customize-process.md).
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="4":::
    #### Repos  
@@ -861,6 +865,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="administer-shelved-changes"></a>Administer shelved changes  
+
   `VersionControlPrivileges, AdminWorkspaces`
    :::column-end:::
    :::column span="2":::
@@ -870,6 +875,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="administer-workspaces"></a> Administer workspaces  
+
   `Workspaces, Administer`
    :::column-end:::
    :::column span="2":::
@@ -879,12 +885,14 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="create-a-workspace"></a> Create a workspace  
+
   `VersionControlPrivileges, CreateWorkspace`
    :::column-end:::
    :::column span="2":::
    Can create a version control workspace. The **Create a workspace** permission is granted to all users as part of their membership within the Project Collection Valid Users group.
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="4":::
    #### Pipelines  
@@ -893,6 +901,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="administer-build-resource-permissions"></a> Administer build resource permissions  
+
   `BuildAdministration, AdministerBuildResourcePermissions`
    :::column-end:::
    :::column span="2":::
@@ -908,6 +917,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="manage-build-resources"></a> Manage build resources  
+
   `BuildAdministration, ManageBuildResources`
    :::column-end:::
    :::column span="2":::
@@ -916,7 +926,8 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="manage-build-resources"></a> Manage pipeline policies  
+   <a id="manage-build-resources"></a> Manage pipeline policies 
+
   `BuildAdministration, ManagePipelinePolicies`
    :::column-end:::
    :::column span="2":::
@@ -926,6 +937,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="use-build-resources"></a> Use build resources  
+
   `BuildAdministration, UseBuildResources`
    :::column-end:::
    :::column span="2":::
@@ -935,12 +947,14 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-build-resources"></a> View build resources  
+
   `BuildAdministration, ViewBuildResources`
    :::column-end:::
    :::column span="2":::
    Can view, but not use, build controllers and build agents that are configured for an organization or project collection.
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="4":::
    #### Test Plans
@@ -949,21 +963,25 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="manage-test-controllers"></a> Manage test controllers  
+
   `Collection, MANAGE_TEST_CONTROLLERS`
    :::column-end:::
    :::column span="2":::
    Can register and deregister test controllers.
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="4":::
    <a id="audit-streams-permissions"></a> 
+
    #### Auditing
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2"::: 
    <a id="delete-audit-streams-permission"></a> Delete audit streams  
+
   `AuditLog, Delete_Streams`
    :::column-end:::
    :::column span="2":::
@@ -973,6 +991,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="manage-audit-streams-permission"></a> Manage audit streams  
+
   `AuditLog, Manage_Streams`
    :::column-end:::
    :::column span="2":::
@@ -982,12 +1001,14 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-audit-log-permission"></a> View audit log  
+
   `AuditLog, Read`
    :::column-end:::
    :::column span="2":::
    Can view and export audit logs. Audit logs are in preview. For more information, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md). 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="4":::
    #### Policies  
@@ -996,6 +1017,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="manage-enterprise-policies-permission"></a> Manage enterprise policies  
+
   `Collection, MANAGE_ENTERPRISE_POLICIES`
    :::column-end:::
    :::column span="2":::
@@ -1008,9 +1030,7 @@ Manage organization-level permissions through the [web portal admin context](../
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Collection-level permissions dialog, Azure DevOps Services current page and on-premises.](media/permissions/collection-level-permissions.png)
 
-
 [!INCLUDE [note-collection-level-permissions](includes/note-collection-level-permissions.md)]
-
 
 [!INCLUDE [collection-level-permissions-reference-table](includes/collection-level-permissions-reference-table-cloud.md)]
 
@@ -1052,18 +1072,14 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 ::: moniker-end
 
-
-
-
 [!INCLUDE [note-collection-level-permissions](includes/note-collection-level-permissions.md)]
-
 
 [!INCLUDE [collection-level-permissions-reference-table](includes/collection-level-permissions-reference-table.md)]
 
-   <a name="project-level" />
+   <a name="project-level"> </a>
    <a name="project_test">  </a>
    <a name="team-project-level-permissions">  </a>
-   <a name="project-level-permissions" />
+   <a name="project-level-permissions"> </a>
 
 ## Project-level permissions
 
@@ -1079,9 +1095,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Project-level permissions dialog, Azure DevOps Services preview page.](media/permissions/project-permissions-contributors.png)
 
-
 [!INCLUDE [note-project-level-permissions](includes/note-project-level-permissions.md)]
-
 
 :::row:::
    :::column span="2":::
@@ -1100,6 +1114,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="delete-team-project-permission"></a> Delete team project  
+
    `Project, DELETE`
    :::column-end:::
    :::column span="2":::
@@ -1111,6 +1126,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="edit-team-project-level-information-permission"></a> Edit project-level information  
+
    `Project, MANAGE_PROPERTIES`
    :::column-end:::
    :::column span="2":::
@@ -1125,6 +1141,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="manage-team-project-property-permission"></a>  
    Manage project properties  
+
    `Project, MANAGE_SYSTEM_PROPERTIES`
    :::column-end:::
    :::column span="2":::
@@ -1134,6 +1151,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="rename-team-project-permission"></a> Rename project  
+
    `Project, RENAME`
    :::column-end:::
    :::column span="2":::
@@ -1143,6 +1161,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="suppress-notifications-for-work-item-updates-permission"></a> Suppress notifications for work item updates  
+
    `Project, SUPPRESS_NOTIFICATIONS`
    :::column-end:::
    :::column span="2":::
@@ -1154,6 +1173,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="update-project-visibility"></a> Update project visibility  
+
    `Project, UPDATE_VISIBILITY`
    :::column-end:::
    :::column span="2":::
@@ -1162,7 +1182,8 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="view-team-project-level-information-permission"></a> View project-level information  
+   <a id="view-team-project-level-information-permission"></a> View project-level information 
+
    `Project, GENERIC_READ`
    :::column-end:::
    :::column span="2":::
@@ -1177,6 +1198,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="bypass-rules-permission"></a> Bypass rules on work item updates  
+
    `Project, BYPASS_RULES`
    :::column-end:::
    :::column span="2":::
@@ -1188,6 +1210,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="change-process-team-project-permission"></a> Change process of project  
+
    `Project, CHANGE_PROCESS`
    :::column-end:::
    :::column span="2":::
@@ -1197,6 +1220,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="create-tag-definition-permission"></a> Create tag definition  
+
    `Tagging, Create`
    :::column-end:::
    :::column span="2":::
@@ -1220,7 +1244,8 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="delete-work-items-in-this-project-permission"></a> 
-   Delete and restore work items or Delete work items in this project  
+   Delete and restore work items or Delete work items in this project 
+
    `Project, WORK_ITEM_DELETE`
    :::column-end:::
    :::column span="2":::
@@ -1230,6 +1255,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="move-work-items-out-of-this-project-permission"></a> Move work items out of this project  
+
    `Project, WORK_ITEM_MOVE`
    :::column-end:::
    :::column span="2":::
@@ -1239,6 +1265,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="permanently-delete-work-items-in-this-project-permission"></a> Permanently delete work items in this project  
+
    `Project, WORK_ITEM_PERMANENTLY_DELETE`
    :::column-end:::
    :::column span="2":::
@@ -1254,6 +1281,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="delete-shared-analytic-views-permission"></a> Delete shared Analytics view  
+
    `AnalyticsViews, Delete`  
    :::column-end:::
    :::column span="2":::
@@ -1264,6 +1292,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="edit-shared-analytic-views-permission"></a> Edit shared Analytics view  
+
    `AnalyticsViews, Edit`
    :::column-end:::
    :::column span="2":::
@@ -1273,6 +1302,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="view-analytics-permission"></a> View analytics  
+
    `AnalyticsViews, Read`
    :::column-end:::
    :::column span="2":::
@@ -1287,7 +1317,8 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="create-test-runs-permission"></a> Create test runs  
-    `Project, PUBLISH_TEST_RESULTS`
+
+   `Project, PUBLISH_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
    Can add and remove test results and add or modify test runs. For more information, see [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../test/run-manual-tests.md). 
@@ -1296,6 +1327,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="delete-test-runs-permission"></a> Delete test runs  
+
    `Project, DELETE_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
@@ -1305,6 +1337,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="manage-test-configurations-permission"></a> Manage test configurations  
+
    `Project, MANAGE_TEST_CONFIGURATIONS`
    :::column-end:::
    :::column span="2":::
@@ -1314,6 +1347,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="manage-test-environments-permission"></a> Manage test environments  
+
    `Project, MANAGE_TEST_ENVIRONMENTS`
    :::column-end:::
    :::column span="2":::
@@ -1323,6 +1357,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="view-test-runs-permission"></a> View test runs  
+
    `Project, VIEW_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
@@ -1355,8 +1390,6 @@ Manage project-level permissions through the [web portal admin context](change-p
   > ![Screenshot of Project-level permissions, on-premises, Inherited process model.](media/permissions/project-level-permissions.png)
 ::: moniker-end
 
-
-
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="2":::
@@ -1373,6 +1406,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="bypass-rules-permission"></a>  
    Bypass rules on work item updates  
+
    `Project, BYPASS_RULES`
    :::column-end:::
    :::column span="2":::
@@ -1386,6 +1420,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="change-process-team-project-permission"></a>  
    Change process of project  
+
    `Project, CHANGE_PROCESS`
    :::column-end:::
    :::column span="2":::
@@ -1397,7 +1432,8 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="create-tag-definition-permission"></a>  
-   Create tag definition  
+   Create tag definition 
+
    `Tagging, Create`
    :::column-end:::
    :::column span="2":::
@@ -1422,6 +1458,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="create-test-runs-permission"></a>  
    Create test runs  
+
     `Project, PUBLISH_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
@@ -1432,6 +1469,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="delete-work-items-in-this-project-permission"></a> 
    Delete and restore work items or Delete work items in this project  
+
    `Project, WORK_ITEM_DELETE`
    :::column-end:::
    :::column span="2":::
@@ -1444,6 +1482,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="delete-shared-analytic-views-permission"></a>  
    Delete shared Analytics view  
+
    `AnalyticsViews, Delete`
    :::column-end:::
    :::column span="2":::
@@ -1456,6 +1495,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="delete-team-project-permission"></a>  
    Delete project  
+
    `Project, DELETE`
    :::column-end:::
    :::column span="2":::
@@ -1466,6 +1506,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="delete-test-runs-permission"></a>  
    Delete test runs  
+
    `Project, DELETE_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
@@ -1476,6 +1517,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="edit-team-project-level-information-permission"></a>  
    Edit project-level information 
+
    `Project, MANAGE_PROPERTIES`
    :::column-end:::
    :::column span="2":::
@@ -1492,6 +1534,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="edit-shared-analytic-views-permission"></a>  
    Edit shared Analytics view  
+
    `AnalyticsViews, Edit` 
    :::column-end:::
    :::column span="2":::
@@ -1504,6 +1547,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="manage-team-project-property-permission"></a>  
    Manage project properties  
+
    `Project, MANAGE_SYSTEM_PROPERTIES`
    :::column-end:::
    :::column span="2":::
@@ -1514,6 +1558,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="manage-test-configurations-permission"></a>  
    Manage test configurations  
+
    `Project, MANAGE_TEST_CONFIGURATIONS`
    :::column-end:::
    :::column span="2":::
@@ -1524,6 +1569,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="manage-test-environments-permission"></a>  
    Manage test environments  
+
    `Project, MANAGE_TEST_ENVIRONMENTS`
    :::column-end:::
    :::column span="2":::
@@ -1534,6 +1580,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="move-work-items-out-of-this-project-permission"></a>  
    Move work items out of this project  
+
    `Project, WORK_ITEM_MOVE`
    :::column-end:::
    :::column span="2":::
@@ -1544,6 +1591,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="permanently-delete-work-items-in-this-project-permission"></a>  
    Permanently delete work items in this project 
+
    `Project, WORK_ITEM_PERMANENTLY_DELETE`
    :::column-end:::
    :::column span="2":::
@@ -1554,6 +1602,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="rename-team-project-permission"></a>  
    Rename project 
+
    `Project, RENAME`
    :::column-end:::
    :::column span="2":::
@@ -1564,6 +1613,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="suppress-notifications-for-work-item-updates-permission"></a>  
    Suppress notifications for work item updates 
+
    `Project, SUPPRESS_NOTIFICATIONS`
    :::column-end:::
    :::column span="2":::
@@ -1576,6 +1626,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="update-project-visibility"></a>  
    Update project visibility  
+
    `Project, UPDATE_VISIBILITY`
    :::column-end:::
    :::column span="2":::
@@ -1585,7 +1636,8 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="view-analytics-permission"></a>  
-   View analytics  
+   View analytics 
+
    `AnalyticsViews, Read` 
    :::column-end:::
    :::column span="2":::
@@ -1596,6 +1648,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="view-team-project-level-information-permission"></a>  
    View project-level information  
+
    `Project, GENERIC_READ`
    :::column-end:::
    :::column span="2":::
@@ -1606,6 +1659,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
    <a id="view-test-runs-permission"></a>  
    View test runs   
+
    `Project, VIEW_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
@@ -1638,7 +1692,8 @@ The following permissions are defined for each shared Analytics view. All valid 
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="av-delete-permission"></a> Delete shared Analytics views  
+   <a id="av-delete-permission"></a> Delete shared Analytics views
+
    `AnalyticsViews, Delete`  
    :::column-end:::
    :::column span="2":::
@@ -1647,7 +1702,8 @@ The following permissions are defined for each shared Analytics view. All valid 
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="av-edit-permission"></a> Edit shared Analytics views 
+   <a id="av-edit-permission"></a> Edit shared Analytics views
+
    `AnalyticsViews, Edit`  
    :::column-end:::
    :::column span="2":::  
@@ -1657,6 +1713,7 @@ The following permissions are defined for each shared Analytics view. All valid 
 :::row:::
    :::column span="2":::
    <a id="av-view-permission"></a> View shared Analytics views 
+
    `AnalyticsViews, Read`  
    :::column-end:::
    :::column span="2":::

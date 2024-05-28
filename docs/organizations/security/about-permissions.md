@@ -43,6 +43,7 @@ When it comes to managing permissions in Azure DevOps, there are two key groups 
 - They can perform all operations for the entire collection.
 - Their responsibilities include managing settings, policies, and processes for the organization.
 - Additionally, they can create and manage all projects and extensions within the organization.
+
 **Project Administrators:**
 - Project Administrators operate at the project level.
 - They manage security groups and permissions primarily from the web portal’s Project settings.
@@ -87,7 +88,6 @@ Permissions follow a hierarchy, allowing inheritance from a parent or by overrid
 
 For example, let’s break down the permission inheritance and specificity rules and remember, explicit permissions always take precedence over inherited ones:
 
-**Inheritance:**
 - When a user’s permissions are set at a higher-level node (area-1), those permissions get inherited by all subnodes (area-1/sub-area-1) unless explicitly overridden.
 - If a permission is **not** explicitly allowed or denied for a subnode, it inherits the permission from its parent.
 - However, if a permission is explicitly set for a subnode (area-1/sub-area-1), the parent’s permission is **not** inherited, regardless of whether it's allowed or denied.
@@ -249,7 +249,7 @@ no members of the group are able to access the project, collection, or deploymen
 
 ::: moniker range="azure-devops"
 
-### Project-scoped Users group 
+### Project-scoped users group 
 
 By default, users added to an organization can view all organization and project information and settings. These settings include the list of users, the list of projects, billing details, usage data, and more, which you can access through **Organization settings**. 
 
