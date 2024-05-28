@@ -22,7 +22,6 @@ For a quick reference to default assignments, see [Default permissions and acces
 
 To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
----
 :::row:::
    :::column span="1":::
   **Users and groups**  
@@ -33,7 +32,6 @@ To learn how to add users to a group or set a specific permission that you can m
      - [Add users to a project or a team](add-users-team-project.md)  
      - [Add a team administrator](../settings/add-team-administrator.md)  
   ::: moniker-end
-
   ::: moniker range="< azure-devops"
      - [Add users to the Project Administrators group](change-project-level-permissions.md)
      - [Add users to the Project Collection Administrators group](change-organization-collection-level-permissions.md)
@@ -41,7 +39,6 @@ To learn how to add users to a group or set a specific permission that you can m
      - [Add users to a project or team](add-users-team-project.md)  
      - [Add a team administrator](../settings/add-team-administrator.md)  
   ::: moniker-end
-  ---
   **Wiki**
      - [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)  
    :::column-end:::
@@ -62,7 +59,6 @@ To learn how to add users to a group or set a specific permission that you can m
      - [Queries and folders](../../boards/queries/set-query-permissions.md)  
      - [Plan permissions](set-permissions-access-work-tracking.md)  
      - [Customize process](set-permissions-access-work-tracking.md#process-permissions)  
-  ---
   **Reporting**
   ::: moniker range="azure-devops"
      - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
@@ -223,7 +219,7 @@ When you create an organization or project collection in Azure DevOps, the syste
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Project collection groups, on-premises versions.](media/permissions/collection-admin-permissions-vsts.png)
 
-***
+---
 
 The full name of each of these groups is **[{collection name}]\\{group name}**. 
 So the full name of the administrator group for the default collection is 
@@ -378,7 +374,7 @@ For each project that you create, the system creates the followings project-leve
 
 :::image type="content" source="media/permissions/project-level-groups-current.png" alt-text="Screenshot of Project-level groups and permissions, Azure DevOps current.":::
 
-***
+---
 
 > [!TIP]  
 > The full name of each of these groups is **[{project name}]\\{group name}**. 
@@ -672,7 +668,7 @@ Manage organization-level permissions through the [web portal admin context](../
 
 :::row:::
    :::column span="2":::
-   #### Permission (UI)<br/>
+   #### Permission (UI)<br />
    `Namespace permission`  
    :::column-end:::
    :::column span="2":::
@@ -991,7 +987,7 @@ Manage organization-level permissions through the [web portal admin context](../
 
 [!INCLUDE [collection-level-permissions-reference-table](includes/collection-level-permissions-reference-table-cloud.md)]
 
-***
+---
 
 ::: moniker-end
 
@@ -1153,20 +1149,17 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="bypass-rules-permission"></a> Bypass rules on work item updates  
-
+   <a id="bypass-rules-permission"></a> Bypass rules on work item updates  <br />
    `Project, BYPASS_RULES`
    :::column-end:::
    :::column span="2":::
-   Users with this permission can save a work item that ignores rules, such as [copy, constraint, or conditional rules](../settings/work/rule-reference.md), defined for the work item type. Useful scenarios are migrations where you don't want to update the by/date fields on import or when you want to skip the validation of a work item.  
-   
+   Users with this permission can save a work item that ignores rules, such as [copy, constraint, or conditional rules](../settings/work/rule-reference.md), defined for the work item type. Useful scenarios are migrations where you don't want to update the by/date fields on import or when you want to skip the validation of a work item.  <br />
    Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypass rules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="change-process-team-project-permission"></a> Change process of project  
-
+   <a id="change-process-team-project-permission"></a> Change process of project  <br />
    `Project, CHANGE_PROCESS`
    :::column-end:::
    :::column span="2":::
@@ -1175,8 +1168,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="create-tag-definition-permission"></a> Create tag definition  
-
+   <a id="create-tag-definition-permission"></a> Create tag definition  <br />
    `Tagging, Create`
    :::column-end:::
    :::column span="2":::
@@ -1200,8 +1192,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="delete-work-items-in-this-project-permission"></a> 
-   Delete and restore work items or Delete work items in this project. 
-
+   Delete and restore work items or Delete work items in this project. <br />
    `Project, WORK_ITEM_DELETE`
    :::column-end:::
    :::column span="2":::
@@ -1210,8 +1201,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="move-work-items-out-of-this-project-permission"></a> Move work items out of this project  
-
+   <a id="move-work-items-out-of-this-project-permission"></a> Move work items out of this project  <br />
    `Project, WORK_ITEM_MOVE`
    :::column-end:::
    :::column span="2":::
@@ -1220,8 +1210,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="permanently-delete-work-items-in-this-project-permission"></a> Permanently delete work items in this project  
-
+   <a id="permanently-delete-work-items-in-this-project-permission"></a> Permanently delete work items in this project  <br />
    `Project, WORK_ITEM_PERMANENTLY_DELETE`
    :::column-end:::
    :::column span="2":::
@@ -1236,8 +1225,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="delete-shared-analytic-views-permission"></a> Delete shared Analytics view  
-
+   <a id="delete-shared-analytic-views-permission"></a> Delete shared Analytics view  <br />
    `AnalyticsViews, Delete`  
    :::column-end:::
    :::column span="2":::
@@ -1247,8 +1235,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="edit-shared-analytic-views-permission"></a> Edit shared Analytics view  
-
+   <a id="edit-shared-analytic-views-permission"></a> Edit shared Analytics view  <br />
    `AnalyticsViews, Edit`
    :::column-end:::
    :::column span="2":::
@@ -1257,8 +1244,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="view-analytics-permission"></a> View analytics  
-
+   <a id="view-analytics-permission"></a> View analytics  <br />
    `AnalyticsViews, Read`
    :::column-end:::
    :::column span="2":::
@@ -1272,8 +1258,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="create-test-runs-permission"></a> Create test runs  
-
+   <a id="create-test-runs-permission"></a> Create test runs  <br />
    `Project, PUBLISH_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
@@ -1282,8 +1267,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="delete-test-runs-permission"></a> Delete test runs  
-
+   <a id="delete-test-runs-permission"></a> Delete test runs  <br />
    `Project, DELETE_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
@@ -1292,8 +1276,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="manage-test-configurations-permission"></a> Manage test configurations  
-
+   <a id="manage-test-configurations-permission"></a> Manage test configurations  <br />
    `Project, MANAGE_TEST_CONFIGURATIONS`
    :::column-end:::
    :::column span="2":::
@@ -1302,8 +1285,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="manage-test-environments-permission"></a> Manage test environments  
-
+   <a id="manage-test-environments-permission"></a> Manage test environments  <br />
    `Project, MANAGE_TEST_ENVIRONMENTS`
    :::column-end:::
    :::column span="2":::
@@ -1312,8 +1294,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="view-test-runs-permission"></a> View test runs  
-
+   <a id="view-test-runs-permission"></a> View test runs  <br />
    `Project, VIEW_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
@@ -1333,8 +1314,8 @@ Manage project-level permissions through the [web portal admin context](change-p
 > [!NOTE]
 > Several permissions granted to members of the [Project Administrators group](#project-administrator-group) don't surface within the user interface.  
 
-  > [!div class="mx-imgBorder"]  
-  > ![Screenshot of Project-level permissions, on-premises, Inherited process model.](media/permissions/project-level-permissions.png)
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Project-level permissions, on-premises, Inherited process model.](media/permissions/project-level-permissions.png)
 
 :::row:::
    :::column span="2":::
@@ -1349,8 +1330,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="bypass-rules-permission"></a>  
-   Bypass rules on work item updates  
-
+   Bypass rules on work item updates  <br />
    `Project, BYPASS_RULES`
    :::column-end:::
    :::column span="2":::
@@ -1361,8 +1341,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="change-process-team-project-permission"></a>  
-   Change process of project  
-
+   Change process of project  <br />
    `Project, CHANGE_PROCESS`
    :::column-end:::
    :::column span="2":::
@@ -1372,8 +1351,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="create-tag-definition-permission"></a>  
-   Create tag definition 
-
+   Create tag definition <br />
    `Tagging, Create`
    :::column-end:::
    :::column span="2":::
@@ -1397,9 +1375,8 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="create-test-runs-permission"></a>  
-   Create test runs  
-
-    `Project, PUBLISH_TEST_RESULTS`
+   Create test runs  <br />
+   `Project, PUBLISH_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
    Can add and remove test results and add or modify test runs. For more information, see [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../test/run-manual-tests.md). 
@@ -1408,8 +1385,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="delete-work-items-in-this-project-permission"></a> 
-   Delete and restore work items or Delete work items in this project  
-
+   Delete and restore work items or Delete work items in this project  <br />
    `Project, WORK_ITEM_DELETE`
    :::column-end:::
    :::column span="2":::
@@ -1419,8 +1395,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="delete-shared-analytic-views-permission"></a>  
-   Delete shared Analytics view  
-
+   Delete shared Analytics view  <br />
    `AnalyticsViews, Delete`
    :::column-end:::
    :::column span="2":::
@@ -1430,8 +1405,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="delete-team-project-permission"></a>  
-   Delete project  
-
+   Delete project  <br />
    `Project, DELETE`
    :::column-end:::
    :::column span="2":::
@@ -1441,8 +1415,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="delete-test-runs-permission"></a>  
-   Delete test runs  
-
+   Delete test runs  <br />
    `Project, DELETE_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
@@ -1452,8 +1425,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="edit-team-project-level-information-permission"></a>  
-   Edit project-level information 
-
+   Edit project-level information <br />
    `Project, MANAGE_PROPERTIES`
    :::column-end:::
    :::column span="2":::
@@ -1467,8 +1439,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="edit-shared-analytic-views-permission"></a>  
-   Edit shared Analytics view  
-
+   Edit shared Analytics view  <br />
    `AnalyticsViews, Edit` 
    :::column-end:::
    :::column span="2":::
@@ -1478,8 +1449,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="manage-team-project-property-permission"></a>  
-   Manage project properties  
-
+   Manage project properties  <br />
    `Project, MANAGE_SYSTEM_PROPERTIES`
    :::column-end:::
    :::column span="2":::
@@ -1489,8 +1459,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="manage-test-configurations-permission"></a>  
-   Manage test configurations  
-
+   Manage test configurations  <br />
    `Project, MANAGE_TEST_CONFIGURATIONS`
    :::column-end:::
    :::column span="2":::
@@ -1500,8 +1469,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="manage-test-environments-permission"></a>  
-   Manage test environments  
-
+   Manage test environments  <br />
    `Project, MANAGE_TEST_ENVIRONMENTS`
    :::column-end:::
    :::column span="2":::
@@ -1511,8 +1479,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="move-work-items-out-of-this-project-permission"></a>  
-   Move work items out of this project  
-
+   Move work items out of this project  <br />
    `Project, WORK_ITEM_MOVE`
    :::column-end:::
    :::column span="2":::
@@ -1522,8 +1489,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="permanently-delete-work-items-in-this-project-permission"></a>  
-   Permanently delete work items in this project 
-
+   Permanently delete work items in this project <br />
    `Project, WORK_ITEM_PERMANENTLY_DELETE`
    :::column-end:::
    :::column span="2":::
@@ -1533,8 +1499,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="rename-team-project-permission"></a>  
-   Rename project 
-
+   Rename project <br />
    `Project, RENAME`
    :::column-end:::
    :::column span="2":::
@@ -1544,21 +1509,18 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="suppress-notifications-for-work-item-updates-permission"></a>  
-   Suppress notifications for work item updates 
-
+   Suppress notifications for work item updates <br />
    `Project, SUPPRESS_NOTIFICATIONS`
    :::column-end:::
    :::column span="2":::
-   Users with this permission can update work items without generating notifications. Useful for performing migrations of bulk updates by tools and skipping generating notifications.  
-
+   Users with this permission can update work items without generating notifications. Useful for performing migrations of bulk updates by tools and skipping generating notifications.  <br />
    Consider granting this permission to service accounts or users with the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
    <a id="update-project-visibility"></a>  
-   Update project visibility  
-
+   Update project visibility  <br />
    `Project, UPDATE_VISIBILITY`
    :::column-end:::
    :::column span="2":::
@@ -1568,8 +1530,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="view-analytics-permission"></a>  
-   View analytics 
-
+   View analytics <br />
    `AnalyticsViews, Read` 
    :::column-end:::
    :::column span="2":::
@@ -1579,8 +1540,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="view-team-project-level-information-permission"></a>  
-   View project-level information  
-
+   View project-level information  <br />
    `Project, GENERIC_READ`
    :::column-end:::
    :::column span="2":::
@@ -1590,8 +1550,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="view-test-runs-permission"></a>  
-   View test runs   
-
+   View test runs   <br />
    `Project, VIEW_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
@@ -1599,7 +1558,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column-end:::
 :::row-end:::
 
-***
+---
 
 ## Analytics views (object-level)  
 
@@ -1666,11 +1625,11 @@ Permissions for team and project dashboards can be set individually. The default
 
 By default, the creator of the project dashboard is the dashboard owner and granted all permissions for that dashboard. 
 
-|**Permission**<br/>`Namespace permission`  | **Description** |
+|**Permission**<br />`Namespace permission`  | **Description** |
 |-----------| ----------- |
-|Delete dashboard<br/>`DashboardsPrivileges, Delete`   | Can delete the project dashboard. |
-|Edit dashboard<br/>`DashboardsPrivileges, Edit`  |  Can add widgets to and change the layout of the project dashboard. |
-|Manage Permissions<br/>`DashboardsPrivileges, ManagePermissions`  | Can manage permissions for the project dashboard. |
+|Delete dashboard<br />`DashboardsPrivileges, Delete`   | Can delete the project dashboard. |
+|Edit dashboard<br />`DashboardsPrivileges, Edit`  |  Can add widgets to and change the layout of the project dashboard. |
+|Manage Permissions<br />`DashboardsPrivileges, ManagePermissions`  | Can manage permissions for the project dashboard. |
 
 ::: moniker-end
 
@@ -1685,11 +1644,11 @@ By default, the creator of the project dashboard is the dashboard owner and gran
 
 By default, team administrators are granted all permissions for their team dashboards, including managing default and individual dashboard permissions. 
 
-|**Permission**<br/>`Namespace permission`  | **Description** |
+|**Permission**<br />`Namespace permission`  | **Description** |
 |-----------| ----------- |
-|Create dashboards<br/>`DashboardsPrivileges, Create`  | Can create a team dashboard. |
-|Delete dashboards<br/>`DashboardsPrivileges, Delete` | Can delete a team dashboard. |
-|Edit dashboards<br/>`DashboardsPrivileges, Edit` |  Can add widgets to and change the layout of a team dashboard. |
+|Create dashboards<br />`DashboardsPrivileges, Create`  | Can create a team dashboard. |
+|Delete dashboards<br />`DashboardsPrivileges, Delete` | Can delete a team dashboard. |
+|Edit dashboards<br />`DashboardsPrivileges, Edit` |  Can add widgets to and change the layout of a team dashboard. |
 
 ### Individual team dashboard permissions
 
@@ -1698,10 +1657,10 @@ By default, team administrators are granted all permissions for their team dashb
 
    Team administrators can change the permissions for individual team dashboards by changing the following two permissions.  
 
-|**Permission**<br/>`Namespace permission`  | **Description** |
+|**Permission**<br />`Namespace permission`  | **Description** |
 |-----------| ----------- |
-|Delete dashboard<br/>`DashboardsPrivileges, Delete`  | Can delete the specific team dashboard. |
-|Edit dashboard<br/>`DashboardsPrivileges, Edit`  |  Can add widgets to and change the layout of the specific team dashboard. |
+|Delete dashboard<br />`DashboardsPrivileges, Delete`  | Can delete the specific team dashboard. |
+|Edit dashboard<br />`DashboardsPrivileges, Edit`  |  Can add widgets to and change the layout of the specific team dashboard. |
 
    <a name="build"></a>
    <a name="build-object-level"></a>
@@ -1779,7 +1738,7 @@ You can define the following permissions in Build at both levels.
 :::row:::
    :::column span="2":::
    <a id="edit-build-pipeline-permission"></a>
-   <a id="edit-build-definition-permission"></a> Edit build pipeline</br>Edit build definition   
+   <a id="edit-build-definition-permission"></a> Edit build pipeline<br />Edit build definition   
    `Build, EditBuildDefinition`
    :::column-end:::
    :::column span="2":::
@@ -2159,7 +2118,7 @@ In version control permissions, explicit **Deny** takes precedence over administ
    :::column span="2":::
    Can check out and make a pending change to items in a folder. 
    Examples of pending changes include adding, editing, renaming, deleting,
-   undeleting, branching, and merging a file.
+   un-deleting, branching, and merging a file.
    Pending changes must be checked in,
    so users also must have the Check-in permission
    to share their changes with the team.*
