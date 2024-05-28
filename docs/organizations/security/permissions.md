@@ -688,7 +688,6 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="alter-trace-settings"></a> Alter trace settings  
-
   `Collection, DIAGNOSTIC_TRACE`
    :::column-end:::
    :::column span="2":::
@@ -698,7 +697,6 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="create-new-team-projects"></a> Create new projects  
-
    (formerly Create new team projects)  
   `Collection, CREATE_PROJECTS`
    :::column-end:::
@@ -709,7 +707,6 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="delete-team-project"></a> Delete team project  
-
   `Project, DELETE`
    :::column-end:::
    :::column span="2":::
@@ -719,7 +716,6 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="edit-collection-level-information"></a> Edit instance-level information  
-
   `Collection, GENERIC_WRITE`
    :::column-end:::
    :::column span="2":::
@@ -745,7 +741,6 @@ Manage organization-level permissions through the [web portal admin context](../
 ---
 :::row:::
    :::column span="4":::
-
    #### Service Account
    :::column-end:::
 :::row-end:::
@@ -787,7 +782,6 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="administer-process-permissions"></a> Administer process permissions  
-
   `Process, AdministerProcessPermissions`
    :::column-end:::
    :::column span="2":::
@@ -835,7 +829,6 @@ Manage organization-level permissions through the [web portal admin context](../
 ---
 :::row:::
    :::column span="4":::
-
    #### Repos  
    Applies only to Team Foundation version control (TFVC)
    :::column-end:::
@@ -870,14 +863,12 @@ Manage organization-level permissions through the [web portal admin context](../
 ---
 :::row:::
    :::column span="4":::
-
    #### Pipelines  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
    <a id="administer-build-resource-permissions"></a> Administer build resource permissions  
-
   `BuildAdministration, AdministerBuildResourcePermissions`
    :::column-end:::
    :::column span="2":::
@@ -893,7 +884,6 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="manage-build-resources"></a> Manage build resources  
-
   `BuildAdministration, ManageBuildResources`
    :::column-end:::
    :::column span="2":::
@@ -903,7 +893,6 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="manage-build-resources"></a> Manage pipeline policies 
-
   `BuildAdministration, ManagePipelinePolicies`
    :::column-end:::
    :::column span="2":::
@@ -931,7 +920,6 @@ Manage organization-level permissions through the [web portal admin context](../
 ---
 :::row:::
    :::column span="4":::
-
    #### Test Plans
    :::column-end:::
 :::row-end:::
@@ -948,14 +936,12 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="4":::
    <a id="audit-streams-permissions"></a> 
-
    #### Auditing
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2"::: 
    <a id="delete-audit-streams-permission"></a> Delete audit streams  
-
   `AuditLog, Delete_Streams`
    :::column-end:::
    :::column span="2":::
@@ -965,7 +951,6 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="manage-audit-streams-permission"></a> Manage audit streams  
-
   `AuditLog, Manage_Streams`
    :::column-end:::
    :::column span="2":::
@@ -984,14 +969,12 @@ Manage organization-level permissions through the [web portal admin context](../
 ---
 :::row:::
    :::column span="4":::
-   
    #### Policies  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
    <a id="manage-enterprise-policies-permission"></a> Manage enterprise policies  
-
   `Collection, MANAGE_ENTERPRISE_POLICIES`
    :::column-end:::
    :::column span="2":::
@@ -1003,7 +986,6 @@ Manage organization-level permissions through the [web portal admin context](../
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Collection-level permissions dialog, Azure DevOps Services current page and on-premises.](media/permissions/collection-level-permissions.png)
-
 
 [!INCLUDE [note-collection-level-permissions](includes/note-collection-level-permissions.md)]
 
