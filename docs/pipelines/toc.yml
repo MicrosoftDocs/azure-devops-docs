@@ -581,7 +581,7 @@
   - name: Configure and pay for parallel jobs
     displayName: parallel jobs, microsoft-hosted, self-hosted
     href: licensing/concurrent-jobs.md
-  - name: Pipelines permissions
+  - name: Permissions
     items:
     - name: Permissions overview
       href: policies/permissions.md
