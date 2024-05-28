@@ -33,7 +33,6 @@ Each feature is linked to an article where you can learn more about a particular
 GitHub Advanced Security (GHAS) for Azure DevOps is now generally available. Any project collection administrator can now enable Advanced Security for their organization, projects and repos from the Project Settings or Organization Settings. You can learn more about how to configure GitHub Advanced Security for Azure DevOps in our [documentation](/azure/devops/repos/security/configure-github-advanced-security-features). 
 
 New capabilities we expect to deliver include: 
-
 <table>
     <thead>
         <tr>
@@ -45,25 +44,25 @@ New capabilities we expect to deliver include:
     </thead>
     <tbody>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/3p-sarif" data-raw-source="[Similar to GHAS-for-GitHub, any third-party open source or commercial security analysis pipeline task that generates results in conforming SARIF format can display those results in the Advanced Security Code Scanning alerts hub. This gives you a single pane of glass natively built into Azure DevOps to view your repository code security alerts from all your analysis tools](/azure/devops/release-notes/roadmap/2024/ghazdo/3p-sarif)">Similar to GHAS-for-GitHub, any third-party open source or commercial security analysis pipeline task that generates results in conforming SARIF format can display those results in the Advanced Security Code Scanning alerts hub. This gives you a single pane of glass natively built into Azure DevOps to view your repository code security alerts from all your analysis tools</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/3p-sarif" data-raw-source="[Display code scanning alerts for third-party tools that produce SARIF)">Display code scanning alerts for third-party tools that produce SARIF</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>2024 Q2</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation" data-raw-source="[Bringing contextual comments to pull requests containing newly introduced Advanced Security findings](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation)">Bringing contextual comments to pull requests containing newly introduced Advanced Security findings</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation" data-raw-source="[Display contextual comments to pull requests containing newly introduced Advanced Security findings](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation)">Display contextual comments to pull requests containing newly introduced Advanced Security findings</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>2024 Q2</td>        
         <td>N/A</td>
       </tr>      
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Determining Validity for detected partner secrets](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Determining Validity for detected partner secrets</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Determine detected partner secrets validity](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Determine detected partner secrets validity</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>2024 Q2</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[Bringing Dependabot Security Updates to Azure DevOps to automatically fix detected Dependency Scanning vulnerabilities](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Bringing Dependabot Security Updates to Azure DevOps to automatically fix detected Dependency Scanning vulnerabilities</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[Automatically fix detected dependency scanning vulnerabilities with Dependabot security updates](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Automatically fix detected dependency scanning vulnerabilities with Dependabot security updates</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>2024 Q2</td>
         <td>N/A</td>
