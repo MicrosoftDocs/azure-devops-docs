@@ -217,12 +217,12 @@ When you create an organization or project collection in Azure DevOps, the syste
 <!---Project Collection Administrators, Project Collection Build Administrators, Project Collection Build Service Accounts, Project Collection Proxy Service Accounts, Project Collection Service Accounts, Project Collection Test Service Accounts, Project Collection Valid Users, Security Service Group-->
 
 ::: moniker range="azure-devops"
-
 > [!NOTE]   
-> To enable the **Organizations Permissions Settings Page v2** preview page,see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page doesn't.  
+> To enable the **Organizations Permissions Settings Page v2** preview page,see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page doesn't.
+::: moniker-end  
 
 #### [Preview page](#tab/preview-page) 
-
+::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Project collection groups, new user interface.](media/permissions/collection-admin-permissions-vsts-new.png)
 
@@ -382,26 +382,24 @@ So the full name of the administrator group for the default collection is
 For each project that you create, the system creates the followings project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
 ::: moniker range="azure-devops"
-
 > [!NOTE]   
 > To enable the preview page for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+::: moniker-end
+
 
 #### [Preview page](#tab/preview-page) 
- 
+::: moniker range="azure-devops"
 :::image type="content" source="media/permissions/project-level-groups-new.png" alt-text="Screenshot of Project-level groups and permissions, Azure DevOps preview version.":::
+::: moniker-end
 
 #### [Current page](#tab/current-page) 
- 
-:::image type="content" source="media/permissions/project-level-groups-current.png" alt-text="Screenshot of Project-level groups and permissions, Azure DevOps current.":::
-
-* * *
-::: moniker-end
 
 ::: moniker range=" < azure-devops"
- 
 :::image type="content" source="media/permissions/project-level-groups-current.png" alt-text="Screenshot of Project-level groups and permissions, Azure DevOps current.":::
 
 ::: moniker-end
+
+* * *
 
 > [!TIP]  
 > The full name of each of these groups is **[{project name}]\\{group name}**. 
@@ -684,8 +682,12 @@ Manage organization-level permissions through the [web portal admin context](../
 
 > [!NOTE]   
 > To enable the preview page for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+::: moniker-end
+
 
 #### [Preview page](#tab/preview-page) 
+
+::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization-level permissions and groups, Azure DevOps Services.](media/permissions/collection-level-permissions-new.png)   
@@ -821,8 +823,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="create-process"></a> Create process  
-
-  `Process, Create`
+   `Process, Create`
    :::column-end:::
    :::column span="2":::
    Can [create an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. Users  granted Basic and Stakeholder access are granted this permission by default. 
@@ -831,8 +832,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="delete-field"></a> Delete field from organization  
-
-  `Collection, DELETE_FIELD`
+   `Collection, DELETE_FIELD`
    :::column-end:::
    :::column span="2":::
    Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md).
@@ -841,8 +841,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="delete-process"></a> Delete process  
-
-  `Process, Delete`
+   `Process, Delete`
    :::column-end:::
    :::column span="2":::
    Can [delete an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. 
@@ -868,8 +867,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="administer-shelved-changes"></a>Administer shelved changes  
-
-  `VersionControlPrivileges, AdminWorkspaces`
+   `VersionControlPrivileges, AdminWorkspaces`
    :::column-end:::
    :::column span="2":::
    Can delete [shelvesets created by other users](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md).  
@@ -878,8 +876,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="administer-workspaces"></a> Administer workspaces  
-
-  `Workspaces, Administer`
+   `Workspaces, Administer`
    :::column-end:::
    :::column span="2":::
    Can [create and delete workspaces for other users](../../repos/tfvc/create-work-workspaces.md).  
@@ -1026,7 +1023,11 @@ Manage organization-level permissions through the [web portal admin context](../
    :::column-end:::
 :::row-end:::
 
+::: moniker-end
+
 #### [Current page](#tab/current-page) 
+
+::: moniker range=" < azure-devops"
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Collection-level permissions dialog, Azure DevOps Services current page and on-premises.](media/permissions/collection-level-permissions.png)
@@ -1035,21 +1036,16 @@ Manage organization-level permissions through the [web portal admin context](../
 
 [!INCLUDE [collection-level-permissions-reference-table](includes/collection-level-permissions-reference-table-cloud.md)]
 
+::: moniker-end
+
 * * *
  
-::: moniker-end
 
 ::: moniker range="< azure-devops"
 
 ## Collection-level permissions
 
-::: moniker-end
-
-::: moniker range="< azure-devops"
 Manage collection-level permissions through the [web portal admin context](../../project/navigation/go-to-service-page.md#collection-admin-context) or the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
-::: moniker-end
-
-::: moniker range=" < azure-devops"
 
 The permissions available for Azure DevOps Server 2019 and later versions vary depending on the process model configured for the collection. For an overview of process models, see [Customize work tracking](../../reference/customize-work.md). 
 
@@ -1071,11 +1067,12 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
   > ![Screenshot of Collection level permissions, on-premises, On-premises XML process model.](media/permissions/collection-level-permissions-2020-xml-on-premises-1.png)
    :::column-end:::
 :::row-end:::
-::: moniker-end
 
 [!INCLUDE [note-collection-level-permissions](includes/note-collection-level-permissions.md)]
 
 [!INCLUDE [collection-level-permissions-reference-table](includes/collection-level-permissions-reference-table.md)]
+
+::: moniker-end
 
    <a name="project-level"> </a>
    <a name="project_test">  </a>
@@ -1091,8 +1088,11 @@ Manage project-level permissions through the [web portal admin context](change-p
 > [!NOTE]   
 > To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
+::: moniker-end
+
 #### [Preview page](#tab/preview-page) 
 
+::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Project-level permissions dialog, Azure DevOps Services preview page.](media/permissions/project-permissions-contributors.png)
 
@@ -1366,26 +1366,20 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column-end:::
 :::row-end:::
 
-#### [Current page](#tab/current-page) 
+::: moniker-end
 
+#### [Current page](#tab/current-page)
+
+::: moniker range=" < azure-devops"
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Project-level permissions dialog, Azure DevOps Services current page.](media/permissions/project-level-permissions.png)
 
 [!INCLUDE [project-level-permissions-reference-table](includes/project-level-permissions-reference-table-cloud.md)]
 
-* * *
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
 Manage project-level permissions through the [web portal admin context](change-project-level-permissions.md) or the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
 
 > [!NOTE]
 > Several permissions granted to members of the [Project Administrators group](#project-administrator-group) don't surface within the user interface.  
-::: moniker-end
-
-::: moniker range=" < azure-devops"
 
   > [!div class="mx-imgBorder"]  
   > ![Screenshot of Project-level permissions, on-premises, Inherited process model.](media/permissions/project-level-permissions.png)
@@ -1667,7 +1661,10 @@ Manage project-level permissions through the [web portal admin context](change-p
    Can view test plans under the project area path. 
    :::column-end:::
 :::row-end:::
+
 ::: moniker-end
+
+* * *
 
 ## Analytics views (object-level)  
 
