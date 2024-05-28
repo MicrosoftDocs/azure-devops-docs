@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/23/2024
+ms.date: 05/28/2024
 --- 
 
 # Security groups, service accounts, and permissions reference
@@ -33,6 +33,7 @@ To learn how to add users to a group or set a specific permission that you can m
      - [Add users to a project or a team](add-users-team-project.md)  
      - [Add a team administrator](../settings/add-team-administrator.md)  
   ::: moniker-end
+
   ::: moniker range="< azure-devops"
      - [Add users to the Project Administrators group](change-project-level-permissions.md)
      - [Add users to the Project Collection Administrators group](change-organization-collection-level-permissions.md)
@@ -49,11 +50,11 @@ To learn how to add users to a group or set a specific permission that you can m
      - [Git branch](../../repos/git/branch-permissions.md)  
      - [Git repositories](../../repos/git/set-git-repository-permissions.md)  
      - [TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
-     - [Build and release pipelines](../../pipelines/policies/set-permissions.md)  
+     - [Build and release pipelines](../../pipelines/policies/pipeline-permissions.md)  
      - [Approvals and approvers](../../pipelines/release/approvals/index.md)  
-     - [Task groups](../../pipelines/policies/set-permissions.md)   
-     - [Variable groups](../../pipelines/policies/set-permissions.md)  
-     - [Role-based resources](../../pipelines/policies/set-permissions.md)  
+     - [Task groups](../../pipelines/policies/task-group-permissions.md)   
+     - [Variable groups](../../pipelines/policies/library-permissions.md)  
+     - [Role-based resources](../../pipelines/policies/permissions.md)  
    :::column-end:::
    :::column span="1":::
   **Work tracking**  
@@ -90,8 +91,8 @@ The system generates a few service accounts to support specific operations. The 
 | Agent Pool Service | Has permission to listen to the message queue for the specific pool to receive work. In most cases, you don't need to manage group members directly - the agent registration process handles it for you. When you register the agent, the service account you specify (typically Network Service) automatically gets added. Responsible for performing Azure Boards read/write operations and updating work items when GitHub objects change.   |  
 | Azure Boards | Added when Azure Boards is [connected to GitHub](../../boards/github/connect-to-github.md). You shouldn't have to manage members of this group. Responsible for managing the link creation between GitHub and Azure Boards. |  
 | PipelinesSDK | Added as needed to support the Pipelines policy service scope tokens. This user account is similar to the build service identities but supports locking down permissions separately. In practice, the tokens that involve this identity are granted read-only permissions to pipeline resources and the one-time ability to approve policy requests. This account should be treated in the same way that the build service identities are treated.   |  
-| *ProjectName* Build Service | Has permissions to run build services for the project and is a legacy user used for XAML builds. It gets added to the Security Service Group, which is used to store users with granted permissions, but not added to any other security group.  |  
-| Project Collection Build Service | Has permissions to run build services for the collection. It gets added to the Security Service Group, which is used to store users with granted permissions, but not added to any other security group.  |  
+| *ProjectName* Build Service | Has permissions to run build services for the project and is a legacy user used for XAML builds. It's added to the Security Service Group, which is used to store users who are granted permissions, but not added to any other security group.  |  
+| Project Collection Build Service | Has permissions to run build services for the collection. It's added to the Security Service Group, which is used to store users who are granted permissions, but not added to any other security group.  |  
 
 <a name="groups"></a>
 
@@ -1167,7 +1168,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column-end:::
    :::column span="2":::
    Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.  
-   
+
    Consider granting this permission to service accounts or users with the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).
    :::column-end:::
 :::row-end:::
@@ -1245,7 +1246,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row:::
    :::column span="2":::
    <a id="delete-work-items-in-this-project-permission"></a> 
-   Delete and restore work items or Delete work items in this project 
+   Delete and restore work items or Delete work items in this project. 
 
    `Project, WORK_ITEM_DELETE`
    :::column-end:::
@@ -1613,7 +1614,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column-end:::
    :::column span="2":::
    Users with this permission can update work items without generating notifications. Useful for performing migrations of bulk updates by tools and skipping generating notifications.  
-   
+
    Consider granting this permission to service accounts or users with the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).
    :::column-end:::
 :::row-end:::
@@ -1678,7 +1679,6 @@ With shared Analytics views, you can grant specific permissions to view, edit, o
 ::: Moniker-end
 
 The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. For more information, see [What are Analytics views?](../../report/powerbi/what-are-analytics-views.md) and [Security namespace and permission reference](namespace-reference.md#analytic-views-namespace).   
-
 :::row:::
    :::column span="2":::
    ### Permission (UI)   
@@ -1776,7 +1776,7 @@ By default, team administrators are granted all permissions for their team dashb
 
 ## Pipeline or Build (object-level)
 
-Manage pipeline permissions [for each pipeline defined in the web portal](../../pipelines/policies/set-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#build-permissions). Project Administrators are granted all pipeline permissions and Build Administrators are assigned most of these permissions. You can set pipeline permissions for all pipelines defined for a project or for each pipeline definition.
+Manage pipeline permissions [for each pipeline defined in the web portal](../../pipelines/policies/pipeline-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#build-permissions). Project Administrators are granted all pipeline permissions and Build Administrators are assigned most of these permissions. You can set pipeline permissions for all pipelines defined for a project or for each pipeline definition.
 
 ::: moniker range="azure-devops"
 :::image type="content" source="media/permissions/pipeline-object-level-permissions-cloud.png" alt-text="Screenshot of pipeline object-level security dialog, cloud."::: 
@@ -2203,6 +2203,7 @@ In version control permissions, explicit **Deny** takes precedence over administ
    :::column span="2":::
    Can check in items and revise any committed changeset comments.
    Pending changes are committed at check-in.*
+
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2255,7 +2256,7 @@ In version control permissions, explicit **Deny** takes precedence over administ
    :::column span="2":::
    Can convert any folder under that path into a branch,
    and also take the following actions on a branch:
-   edit its properties, reparent it, and convert it to a folder.
+   edit its properties, re-parent it, and convert it to a folder.
    Users who have this permission can branch this branch
    only if they also have the Merge permission for the target path.
    Users can't create branches from a branch
@@ -2767,7 +2768,7 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
 
 ## Release (object-level) 
 
-Manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions work in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
+Manage permissions [for each release defined in the web portal](../../pipelines/policies/pipeline-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions work in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
 
 :::image type="content" source="media/permissions/release-object-level-permissions.png" alt-text="Screenshot showing Releases object-level permissions.":::
 
@@ -2954,7 +2955,7 @@ Default values for all of these permissions are set for team project collections
 
 ## Task group (Build and Release) permissions
 
-Manage permissions [for task groups from the **Build and Release** hub](../../pipelines/policies/set-permissions.md) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual task group definition.
+Manage permissions [for task groups from the **Build and Release** hub](../../pipelines/policies/pipeline-permissions.md) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual task group definition.
 
 Use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. [Define and manage task groups](../../pipelines/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
 
