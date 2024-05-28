@@ -114,14 +114,8 @@ These groups and the default permissions they're assigned get defined at differe
 
 When you install Azure DevOps Server, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can't remove or delete the built-in server-level groups.
 
-::: moniker-end
-
-::: moniker range=" < azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Azure DevOps Security group dialog.](media/permissions/server-level-groups-azdo-2019-update1.png) 
-::: moniker-end
-
-::: moniker range="< azure-devops"
 
 You can't remove or delete the default server level groups. 
 
@@ -130,9 +124,6 @@ You can't remove or delete the default server level groups.
 > So the full name of the server level administrators group is
 > **[Team Foundation]\\Team Foundation Administrators**.
  
-::: moniker-end
-
-::: moniker range=" < azure-devops"
 :::row:::
    :::column span="1":::
    **Group name**
@@ -223,20 +214,14 @@ When you create an organization or project collection in Azure DevOps, the syste
 ::: moniker-end  
 
 #### [Preview page](#tab/preview-page) 
-::: moniker range="azure-devops"
+
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Project collection groups, new user interface.](media/permissions/collection-admin-permissions-vsts-new.png)
 
-::: moniker-end
-
 #### [Current page](#tab/current-page)
-
-::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Project collection groups, on-premises versions.](media/permissions/collection-admin-permissions-vsts.png)
-
- ::: moniker-end
 
 * * *
 
@@ -382,23 +367,16 @@ So the full name of the administrator group for the default collection is
 
 For each project that you create, the system creates the followings project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
-::: moniker range="azure-devops"
 > [!NOTE]   
 > To enable the preview page for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
-::: moniker-end
-
 
 #### [Preview page](#tab/preview-page) 
-::: moniker range="azure-devops"
+
 :::image type="content" source="media/permissions/project-level-groups-new.png" alt-text="Screenshot of Project-level groups and permissions, Azure DevOps preview version.":::
-::: moniker-end
 
 #### [Current page](#tab/current-page) 
 
-::: moniker range=" < azure-devops"
 :::image type="content" source="media/permissions/project-level-groups-current.png" alt-text="Screenshot of Project-level groups and permissions, Azure DevOps current.":::
-
-::: moniker-end
 
 * * *
 
@@ -675,6 +653,7 @@ Manage server-level permissions through the [Team Foundation Administration Cons
 ::: moniker-end
    <a id="collection">  </a>
    <a id="collection-level"> </a>
+
 ::: moniker range="azure-devops"
 
 ## Organization-level permissions
@@ -683,12 +662,8 @@ Manage organization-level permissions through the [web portal admin context](../
 
 > [!NOTE]   
 > To enable the preview page for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
-::: moniker-end
 
-
-#### [Preview page](#tab/preview-page) 
-
-::: moniker range="azure-devops"
+#### [Preview page](#tab/preview-page)
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization-level permissions and groups, Azure DevOps Services.](media/permissions/collection-level-permissions-new.png)   
@@ -1024,23 +999,19 @@ Manage organization-level permissions through the [web portal admin context](../
    :::column-end:::
 :::row-end:::
 
-::: moniker-end
-
 #### [Current page](#tab/current-page) 
-
-::: moniker range=" < azure-devops"
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Collection-level permissions dialog, Azure DevOps Services current page and on-premises.](media/permissions/collection-level-permissions.png)
+
 
 [!INCLUDE [note-collection-level-permissions](includes/note-collection-level-permissions.md)]
 
 [!INCLUDE [collection-level-permissions-reference-table](includes/collection-level-permissions-reference-table-cloud.md)]
 
-::: moniker-end
-
 * * *
- 
+
+::: moniker-end
 
 ::: moniker range="< azure-devops"
 
@@ -1058,6 +1029,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
   **On-premises XML process model**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
   > [!div class="mx-imgBorder"]  
@@ -1093,7 +1065,6 @@ Manage project-level permissions through the [web portal admin context](change-p
 
 #### [Preview page](#tab/preview-page) 
 
-::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Project-level permissions dialog, Azure DevOps Services preview page.](media/permissions/project-permissions-contributors.png)
 
@@ -1367,11 +1338,8 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column-end:::
 :::row-end:::
 
-::: moniker-end
-
 #### [Current page](#tab/current-page)
 
-::: moniker range=" < azure-devops"
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Project-level permissions dialog, Azure DevOps Services current page.](media/permissions/project-level-permissions.png)
 
@@ -1384,9 +1352,7 @@ Manage project-level permissions through the [web portal admin context](change-p
 
   > [!div class="mx-imgBorder"]  
   > ![Screenshot of Project-level permissions, on-premises, Inherited process model.](media/permissions/project-level-permissions.png)
-::: moniker-end
 
-::: moniker range="< azure-devops"
 :::row:::
    :::column span="2":::
    ### Permission (UI)   
@@ -1396,8 +1362,6 @@ Manage project-level permissions through the [web portal admin context](change-p
   ### Description 
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range="< azure-devops"
 :::row:::
    :::column span="2":::
    <a id="bypass-rules-permission"></a>  
@@ -1410,8 +1374,6 @@ Manage project-level permissions through the [web portal admin context](change-p
    Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypass rules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=" < azure-devops"
 :::row:::
    :::column span="2":::
    <a id="change-process-team-project-permission"></a>  
@@ -1423,8 +1385,6 @@ Manage project-level permissions through the [web portal admin context](change-p
    When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. For more information, see [Create and manage inherited processes](../settings/work/manage-process.md).  
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range="< azure-devops"
 :::row:::
    :::column span="2":::
    <a id="create-tag-definition-permission"></a>  
@@ -1472,8 +1432,6 @@ Manage project-level permissions through the [web portal admin context](change-p
    Can [mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md). The Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default.  
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=" < azure-devops"
 :::row:::
    :::column span="2":::
    <a id="delete-shared-analytic-views-permission"></a>  
@@ -1485,8 +1443,6 @@ Manage project-level permissions through the [web portal admin context](change-p
    Can delete [Analytics views](../../report/powerbi/analytics-views-manage.md) under the Shared area.   
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range="< azure-devops"
 :::row:::
    :::column span="2":::
    <a id="delete-team-project-permission"></a>  
@@ -1524,8 +1480,6 @@ Manage project-level permissions through the [web portal admin context](change-p
    > The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the **Project Administrators** group. It isn't controlled by a permissions surfaced within the user interface.
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=" < azure-devops"
 :::row:::
    :::column span="2":::
    <a id="edit-shared-analytic-views-permission"></a>  
@@ -1537,8 +1491,6 @@ Manage project-level permissions through the [web portal admin context](change-p
    Can create and modify [shared Analytics views](../../report/powerbi/analytics-views-manage.md).  
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range="< azure-devops"
 :::row:::
    :::column span="2":::
    <a id="manage-team-project-property-permission"></a>  
@@ -1663,8 +1615,6 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column-end:::
 :::row-end:::
 
-::: moniker-end
-
 * * *
 
 ## Analytics views (object-level)  
@@ -1723,9 +1673,6 @@ The following permissions are defined for each shared Analytics view. All valid 
 
 ::: moniker range="azure-devops"
 Permissions for team and project dashboards can be set individually. The default permissions for a team can be set for a project. Manage the security of dashboards from the web portal. More namespace permissions are supported as defined in [Security namespace and permission reference](namespace-reference.md#dashboard-previleges-namespace).   
-::: moniker-end
-
-::: moniker range="azure-devops"
 
 ### Project dashboard permissions
 
@@ -2324,7 +2271,7 @@ In version control permissions, explicit **Deny** takes precedence over administ
    :::column-end:::
 :::row-end:::
 
-* Consider adding this permission to any manually added users or groups that are responsible for supervising or monitoring the project and that might or must change the comments on checked-in files, even if another user checked in the file.
+`*` Consider adding this permission to any manually added users or groups that are responsible for supervising or monitoring the project and that might or must change the comments on checked-in files, even if another user checked in the file.
 
 ## Area path (object-level) 
 
