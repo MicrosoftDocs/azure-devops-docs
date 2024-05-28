@@ -584,7 +584,6 @@
   - name: Pipelines permissions
     items:
     - name: Permissions overview
-      displayName: permissions, security, roles, access, authorization, authentication
       href: permissions.md
     - name: Pipeline permissions
       href: policies/pipeline-permissions.md
@@ -601,7 +600,7 @@
     - name: Deployment group security
       href: policies/deployment-group-permissions.md
     - name: Environment security
-      href: policies: environment-permissions.md
+      href: policies/environment-permissions.md
   - name: Add users to contribute to pipelines
     displayName: add administrators, add users
     href: policies/set-permissions.md
