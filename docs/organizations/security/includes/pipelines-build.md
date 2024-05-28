@@ -13,18 +13,18 @@ ms.date: 08/18/2021
  
 
 
-| Task                    | Readers | Contributors | Build Admins | Project Admins | 
-|-------------------------|---------|--------------|--------------|----------------|
-| View builds             | ✔️      |     ✔️      | ✔️           | ✔️            | 
-| View build pipeline      | ✔️     | ✔️          | ✔️           | ✔️            | 
-| Administer build permissions|     |              | ✔️           | ✔️            | 
-| Delete or edit build pipeline|    |   ✔️         | ✔️           | ✔️            | 
-| Delete or destroy builds |              |         | ✔️          | ✔️             | 
-|Edit build quality        |              |  ✔️       | ✔️          | ✔️          | 
-|Manage build qualities    |              |         |      ✔️        | ✔️          | 
-|Manage build queue        |              |         | ✔️          | ✔️             | 
-|Override check-in validation by build|              |         |             | ✔️  | 
-|Queue builds              |              |     ✔️    | ✔️          | ✔️           | 
-|Retain indefinitely       |        ✔️|   ✔️      |       ✔️       | ✔️            | 
-|Stop builds               | ||✔️|✔️|
-|Update build information ||||✔️|
+| Task | Readers | Contributors | Build Admins | Project Admins | 
+|------|:-------:|:------------:|:------------:|:--------------:|
+| View builds             |✔️|✔️|✔️|✔️| 
+| View build pipeline      |✔️|✔️|✔️|✔️| 
+| Administer build permissions| | |✔️|✔️| 
+| Delete or edit build pipeline| |✔️|✔️|✔️| 
+| Delete or destroy builds | | |✔️|✔️| 
+|Edit build quality        | |✔️|✔️|✔️| 
+|Manage build qualities    | | |✔️|✔️| 
+|Manage build queue        | | |✔️|✔️| 
+|Override check-in validation by build| | | |✔️| 
+|Queue builds              | |✔️|✔️|✔️| 
+|Retain indefinitely       |✔️|✔️|✔️|✔️| 
+|Stop builds               | | |✔️|✔️|
+|Update build information | | | |✔️|

@@ -1,12 +1,12 @@
 ---
 title: Run automated tests from test plans
-description: Run automated tests on-demand against Team Foundation builds from test plans in the Test Manager with a build or release pipeline
+description: Run automated tests on-demand against Team Foundation builds from test plans in the Test Manager with a build or release pipeline.
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: conceptual 
-ms.author: rbatra
-author: rohit-batra
+ms.author: jeom
+author: wisdeom
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
 ---
@@ -28,7 +28,7 @@ Automate test cases in your test plans and run them directly from **Azure Test P
    - A [test plan](create-a-test-plan.md) that contains your automated tests associated with automated test methods using [Visual Studio 2017](associate-automated-test-with-test-case.md) or [Visual Studio 2015 or earlier](/previous-versions/visualstudio/visual-studio-2013/dd380741(v=vs.120)).
    - A [build pipeline](../pipelines/apps/aspnet/build-aspnet-4.md) that generates builds containing the test binaries.
    - An app to test. You can deploy the app as part of the [build and release workflow](../pipelines/get-started/what-is-azure-pipelines.md) and also use it for on-demand testing.
-   - Permissions to create and manage releases, edit a release environment, and manage deployment.  For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and [Release permissions](../pipelines/policies/permissions.md#set-release-permissions).
+   - Permissions to create and manage releases, edit a release environment, and manage deployment.  For more information, see [Release permissions](../pipelines/policies/release-pipeline-permissions.md).
 
 ## Set up your environment
 
@@ -148,8 +148,7 @@ See the following frequently asked questions (FAQs) about Azure Test Plans.
 * Edit release stage
 * Manage deployment
 
-For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
-[Release permissions](../pipelines/policies/permissions.md#set-release-permissions).
+For more information, see [Release permissions](../pipelines/policies/release-pipeline-permissions.md).
 
 ### Q: Can I override the build or stage set at the test plan level for a specific instance of test run?
 
@@ -257,7 +256,7 @@ file to pass values as parameters to your test code. For example, in a release t
 * I get an error that I don't have sufficient permission to trigger a release.
    - Configure **Create releases** and **Manage deployments** permissions for
      the user in the **Security** menu of the release pipeline.
-     See [Release permissions](../pipelines/policies/permissions.md#set-release-permissions).<p />
+     See [Release permissions](../pipelines/policies/release-pipeline-permissions.md).<p />
    
 * I get an error that no automated tests were found.
    - Check the automation status of the selected tests. Do so in the work item for the test case, or use the **Column options** link in **Azure Test Plans** to add the **Automation status** column to the list of tests. For more information, see the [prerequisites section](run-automated-tests-from-test-hub.md#prerequisites).
