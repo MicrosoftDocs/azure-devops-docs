@@ -1,10 +1,10 @@
 ---
 title: Publish and download npm packages
-description: How to set up your config file to publish and download npm packages.
+description: Learn how to set up your project to manage your npm packages in Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
-ms.date: 10/16/2023
+ms.date: 05/28/2024
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -13,13 +13,17 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Artifacts, you can publish and download npm packages from feeds and public registries like npmjs.com. This quickstart will walk you through the process of creating your feed, configuring your project, and publishing and downloading npm packages to and from your Azure Artifacts feed.
+Using Azure Artifacts, you can publish and download your npm packages from feeds and public registries such as npmjs.com. This quickstart will guide you through creating your feed, configuring your project, and managing npm packages with your Azure Artifacts feed.
 
+## Prerequisites
 
+- An Azure DevOps organization. [Create one for free](../organizations/accounts/create-organization.md).
 
-## Create a feed
+- An Azure DevOps project. Create a new [project](../organizations/projects/create-project.md#create-a-project) if you don't have one already.
 
-A feed is an organizational construct that allows users to store their packages and control who can access them. Azure Artifacts support storing several package types in a single feed such as NuGet, npm, Maven, Python, Cargo, and Universal packages.
+- [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+
+## Create Feed
 
 [!INCLUDE [](includes/create-feed.md)]
 
