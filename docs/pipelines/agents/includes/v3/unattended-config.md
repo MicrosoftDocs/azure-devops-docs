@@ -28,6 +28,7 @@ For example, `VSTS_AGENT_INPUT_PASSWORD` instead of specifying `--password`.
 
 - If you chose `--auth pat`:
   - `--token <token>` - specifies your personal access token
+  - You can also pass an OAuth 2.0 token as the `--token` parameter.
 - If you chose `--auth negotiate` or `--auth alt`:
   - `--userName <userName>` - specifies a Windows username in the format `domain\userName` or `userName@domain.com`
   - `--password <password>` - specifies a password
