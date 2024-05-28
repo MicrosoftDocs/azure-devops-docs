@@ -912,7 +912,7 @@ Manage organization-level permissions through the [web portal admin context](../
    - [Add and manage agent pools](../../pipelines/agents/pools-queues.md)
    - [Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)
    > [!NOTE]   
-   > In addition to this permission, Azure DevOps provides role-based permissions governing the [security of agent pools](../../pipelines/policies/permissions.md#set-agent-pool-permissions). Other [object-level settings](#build-object-level) override those set at the organization or project-level. 
+   > In addition to this permission, Azure DevOps provides role-based permissions governing the [security of agent pools](../../pipelines/policies/permissions.md). Other [object-level settings](#build-object-level) override those set at the organization or project-level. 
    :::column-end:::
 :::row-end:::
 :::row:::
