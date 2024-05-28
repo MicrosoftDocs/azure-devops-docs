@@ -223,7 +223,7 @@ When you create an organization or project collection in Azure DevOps, the syste
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Project collection groups, on-premises versions.](media/permissions/collection-admin-permissions-vsts.png)
 
-* * *
+***
 
 The full name of each of these groups is **[{collection name}]\\{group name}**. 
 So the full name of the administrator group for the default collection is 
@@ -378,7 +378,7 @@ For each project that you create, the system creates the followings project-leve
 
 :::image type="content" source="media/permissions/project-level-groups-current.png" alt-text="Screenshot of Project-level groups and permissions, Azure DevOps current.":::
 
-* * *
+***
 
 > [!TIP]  
 > The full name of each of these groups is **[{project name}]\\{group name}**. 
@@ -991,7 +991,7 @@ Manage organization-level permissions through the [web portal admin context](../
 
 [!INCLUDE [collection-level-permissions-reference-table](includes/collection-level-permissions-reference-table-cloud.md)]
 
-* * *
+***
 
 ::: moniker-end
 
@@ -1061,6 +1061,7 @@ Manage project-level permissions through the [web portal admin context](change-p
   ### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="4":::
    #### General  
@@ -1344,6 +1345,7 @@ Manage project-level permissions through the [web portal admin context](change-p
   ### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    <a id="bypass-rules-permission"></a>  
@@ -1597,7 +1599,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column-end:::
 :::row-end:::
 
-* * *
+***
 
 ## Analytics views (object-level)  
 
@@ -1620,6 +1622,7 @@ The following permissions are defined for each shared Analytics view. All valid 
   ### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    <a id="av-delete-permission"></a> Delete shared Analytics views
@@ -1735,6 +1738,7 @@ You can define the following permissions in Build at both levels.
   ### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    <a id="administer-build-permissions-permission"></a> 
@@ -1934,6 +1938,7 @@ To manage Git repo and branch permissions, see [Set branch permissions](../../re
   ### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    <a id="git-bypass-policies-when-completing-pull-requests"></a> Bypass policies when completing pull requests  
@@ -2115,6 +2120,7 @@ In version control permissions, explicit **Deny** takes precedence over administ
   ### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    Administer labels  
@@ -2229,9 +2235,7 @@ In version control permissions, explicit **Deny** takes precedence over administ
    `VersionControlItems, ReviseOther`  
    :::column-end:::
    :::column span="2":::
-   Can edit the comments on checked-in files, even if another user checked in the file. 
-   > [!NOTE]   
-   > Consider adding this permission to any manually added users or groups that are responsible for supervising or monitoring the project and that might or must change the comments on checked-in files, even if another user checked in the file.*
+   Can edit the comments on checked-in files, even if another user checked in the file.*
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2280,6 +2284,7 @@ Members of the Project Administrators group are automatically granted permission
   ### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    <a id="area-create-child-nodes-permission"></a> Create child nodes  
@@ -2363,6 +2368,7 @@ Members of the Project Administrators group are automatically granted permission
 :::row:::
    :::column span="1":::
    <a id="area-view-work-items-in-this-node-permission"></a> View work items in this node 
+   
    `CSS, GENERIC_READ`  
    :::column-end:::
    :::column span="2":::
@@ -2394,6 +2400,7 @@ Members of the Project Administrators group are automatically granted these perm
   ### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    <a id="iteration-create-child-nodes-permission"></a> Create child nodes  
@@ -2466,6 +2473,7 @@ Consider granting the **Contribute** permissions to users or groups that require
   ### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    <a id="workitemqueryfolders-contribute-permission"></a> Contribute  
@@ -2519,6 +2527,7 @@ Manage plan permissions through the [web portal](set-permissions-access-work-tra
   ### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    <a id="delete-plan-permission"></a> Delete  
@@ -2569,6 +2578,7 @@ You can manage the permissions for each inherited process that you create throug
   ### Description 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    <a id="admin-process-permission"></a> Administer process permissions  
@@ -2626,7 +2636,7 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="4":::
+   :::column span="2":::
    > [!NOTE]   
    > By default, Contributors are assigned the **Create tag definition** permission. Although the **Create tag definition** permission appears in the security settings at the project-level, tagging permissions are actually collection-level permissions that are scoped at the project level when they appear in the user interface. To scope tagging permissions to a single project when you're using a command-line tool, you must provide the GUID for the project as part of the command syntax. Otherwise, your change applies to the entire collection. Keep this in mind when changing or setting these permissions.
    :::column-end:::
@@ -2641,7 +2651,7 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="4":::
+   :::column span="2":::
    > [!NOTE]   
    > This permission doesn't appear in the UI. It can only be set by using a command-line tool. There is also no UI to explicitly delete a tag. Instead, when a tag has not been in use for 3 days, the system automatically deletes it.
    :::column-end:::
@@ -2658,7 +2668,7 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="4":::
+   :::column span="2":::
    > [!NOTE]   
    > This permission doesn't appear in the UI. It can only be set by using a command-line tool. 
    > The **View project-level information** implicitly allows users to view existing tags.
@@ -2675,22 +2685,6 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    > This permission doesn't appear in the UI. It can only be set by using a command-line tool. 
    :::column-end:::
 :::row-end:::
-
-
-   <!---
-   Administer release permissions
-   Create releases
-   Delete release definition
-   Delete release environment
-   Delete releases
-   Edit release pipeline
-   Edit release environment
-   Manage deployments
-   Manage release approvers
-   Manage releases
-   View release definition
-   View releases
--->
 
 <a id="release_management">  </a>
 <a id="release-management">  </a>
@@ -2719,6 +2713,7 @@ The following permissions are defined in Release Management. The scope column ex
    **Scopes**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    <a id="admin-release-permission"></a> Administer release permissions
@@ -2887,8 +2882,7 @@ Default values for all of these permissions are set for team project collections
 Manage permissions [for task groups from the **Build and Release** hub](../../pipelines/policies/pipeline-permissions.md) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual task group definition.
 
 Use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. [Define and manage task groups](../../pipelines/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
-
-> [!div class="tdCol2BreakAll"]  
+ 
 > | Permission | Description | 
 > |------------|-------------| 
 > | **Administer task group permissions** | Can add and remove users or groups to task group security. |
@@ -2933,6 +2927,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
   **Project Collection Service Accounts**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="":::
   `CREATE_SOAP_SUBSCRIPTION`
