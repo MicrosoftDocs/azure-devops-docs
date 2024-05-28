@@ -221,17 +221,23 @@ When you create an organization or project collection in Azure DevOps, the syste
 > [!NOTE]   
 > To enable the **Organizations Permissions Settings Page v2** preview page,see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page doesn't.  
 
+#### [Preview page](#tab/preview-page) 
+
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Project collection groups, new user interface.](media/permissions/collection-admin-permissions-vsts-new.png)
 
 ::: moniker-end
+
+#### [Current page](#tab/current-page)
 
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Project collection groups, on-premises versions.](media/permissions/collection-admin-permissions-vsts.png)
 
-::: moniker-end
+ ::: moniker-end
+
+* * *
 
 The full name of each of these groups is **[{collection name}]\\{group name}**. 
 So the full name of the administrator group for the default collection is 
@@ -752,8 +758,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-collection-level-information"></a> View instance-level information  
-
-  `Collection, GENERIC_READ` 
+   `Collection, GENERIC_READ` 
    :::column-end:::
    :::column span="2":::
    Can view organization-level permissions for a user or group. 
@@ -762,14 +767,14 @@ Manage organization-level permissions through the [web portal admin context](../
 ---
 :::row:::
    :::column span="4":::
+
    #### Service Account
    :::column-end:::
 :::row-end:::
 :::row:::  
    :::column span="2":::
    <a id="make-requests-on-behalf-of-others"></a> Make requests on behalf of others  
-
-  `Server, Impersonate`    
+   `Server, Impersonate`    
    :::column-end:::
    :::column span="2":::
    Can perform operations on behalf of other users or services.
@@ -779,7 +784,6 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="trigger-events"></a> Trigger events  
-
   `Collection, TRIGGER_EVENT`
   `Server, TRIGGER_EVENT`
    :::column-end:::
@@ -790,8 +794,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-system-synchronization-information"></a> View system synchronization information 
-
-  `Collection, SYNCHRONIZE_READ`      
+   `Collection, SYNCHRONIZE_READ`
    :::column-end:::
    :::column span="2":::
    Can call the synchronization application programming interfaces. Assign only to service accounts.
@@ -848,8 +851,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="edit-process"></a> Edit process  
-
-  `Process, Edit`
+   `Process, Edit`
    :::column-end:::
    :::column span="2":::
    Can edit a [custom inherited process](../settings/work/customize-process.md).
@@ -858,6 +860,7 @@ Manage organization-level permissions through the [web portal admin context](../
 ---
 :::row:::
    :::column span="4":::
+
    #### Repos  
    Applies only to Team Foundation version control (TFVC)
    :::column-end:::
@@ -885,8 +888,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="create-a-workspace"></a> Create a workspace  
-
-  `VersionControlPrivileges, CreateWorkspace`
+   `VersionControlPrivileges, CreateWorkspace`
    :::column-end:::
    :::column span="2":::
    Can create a version control workspace. The **Create a workspace** permission is granted to all users as part of their membership within the Project Collection Valid Users group.
@@ -895,6 +897,7 @@ Manage organization-level permissions through the [web portal admin context](../
 ---
 :::row:::
    :::column span="4":::
+
    #### Pipelines  
    :::column-end:::
 :::row-end:::
@@ -937,8 +940,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="use-build-resources"></a> Use build resources  
-
-  `BuildAdministration, UseBuildResources`
+   `BuildAdministration, UseBuildResources`
    :::column-end:::
    :::column span="2":::
    Can reserve and allocate build agents. Assign only to service accounts for build services.
@@ -947,8 +949,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-build-resources"></a> View build resources  
-
-  `BuildAdministration, ViewBuildResources`
+   `BuildAdministration, ViewBuildResources`
    :::column-end:::
    :::column span="2":::
    Can view, but not use, build controllers and build agents that are configured for an organization or project collection.
@@ -957,14 +958,14 @@ Manage organization-level permissions through the [web portal admin context](../
 ---
 :::row:::
    :::column span="4":::
+
    #### Test Plans
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
    <a id="manage-test-controllers"></a> Manage test controllers  
-
-  `Collection, MANAGE_TEST_CONTROLLERS`
+   `Collection, MANAGE_TEST_CONTROLLERS`
    :::column-end:::
    :::column span="2":::
    Can register and deregister test controllers.
@@ -1001,8 +1002,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-audit-log-permission"></a> View audit log  
-
-  `AuditLog, Read`
+   `AuditLog, Read`
    :::column-end:::
    :::column span="2":::
    Can view and export audit logs. Audit logs are in preview. For more information, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md). 
@@ -1011,6 +1011,7 @@ Manage organization-level permissions through the [web portal admin context](../
 ---
 :::row:::
    :::column span="4":::
+   
    #### Policies  
    :::column-end:::
 :::row-end:::
@@ -1034,7 +1035,7 @@ Manage organization-level permissions through the [web portal admin context](../
 
 [!INCLUDE [collection-level-permissions-reference-table](includes/collection-level-permissions-reference-table-cloud.md)]
 
----
+* * *
  
 ::: moniker-end
 
