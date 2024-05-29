@@ -27,7 +27,7 @@ To open the Security dialog, select :::image type="icon" source="../../media/ico
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Wiki, Choose More, select security.](media/wiki/wiki-open-security.png)
 
-For definitions of each repository permission, see [Git repository permissions](../../organizations/security/permissions.md#git-repository).
+For definitions of each repository permission, see [Git repository permissions](../../organizations/security/permissions.md).
 
 :::image type="content" source="media/wiki/security-dialog.png" alt-text="Screenshot of Wiki security dialog.":::
 
