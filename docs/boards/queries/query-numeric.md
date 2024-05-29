@@ -191,6 +191,8 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 
 For information on system-defined sprint burndown charts, see [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md).
 
+<a id="fields"></a>
+
 ## Fields used to estimate and track work
 
 The following table describes the activity-based and numeric fields that you can use to track work. For information on date-related fields, such as Start Date, Finish Date, and Target Date, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
