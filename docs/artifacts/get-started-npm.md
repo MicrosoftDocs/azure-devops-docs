@@ -23,108 +23,69 @@ Using Azure Artifacts, you can publish and download your npm packages from feeds
 
 - [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-## Create Feed
+## Create a feed
 
 [!INCLUDE [](includes/create-feed.md)]
 
-::: moniker range=">= azure-devops-2019"
-
-## Set up your .npmrc files
+## Connect to a feed
 
 > [!NOTE]
 > `vsts-npm-auth` is not supported in Azure DevOps Server.
 
-We recommend using two .npmrc files. The first one should be located in the same directory as your package.json file. The second should be placed in the *$home* directory (Linux/macOS) or *$env.HOME* (Windows) to securely store your credentials. The npm client will then be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
+Azure Artifacts recommends using two .npmrc files. The first one should be placed in the *$home* directory (Linux/macOS) or *$env.HOME* (Windows) to securely store your credentials. This allows the npm client to locate the file and retrieve your credentials for authentication, enabling you to share your config file without exposing your credentials. In this section, we will set up the second *.npmrc* file, which should be placed in the same directory as your *package.json* file.
+
+::: moniker range="azure-devops"   
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select **Connect to feed**.
 
-1. Select **npm** from the left navigation pane. If this is your first time using Azure Artifacts with npm, select **Get the tools** and follow the steps to download Node.js and set up your machine.
+1. Select **npm** from the left navigation area. If this is your first time using Azure Artifacts with npm, make sure you've installed the prerequisites.
 
-1. Insert the following snippet into your .npmrc file, the one located in the same directory as your package.json file. Replace the placeholders with the appropriate values.
+1. Follow the instructions in the **Project setup** section to set up your config file and connect to your feed.
 
-    - **Organization-scoped feed**:
-    
-    ```npmrc
-    registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
-                            
-    always-auth=true
-    ```
-
-    - **Project-scoped feed**:   
-    
-    ```npmrc
-    registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
-                            
-    always-auth=true
-    ```
-
-## Setup credentials
-
-> [!IMPORTANT]
-> npm supports a single `registry` in your .npmrc file. Multiple registries are possible with [scopes](npm/scopes.md) and [upstream sources](npm/upstream-sources.md).
-
-#### [Windows](#tab/Windows/)
-
-If you're developing on Windows, we recommend using *vsts-npm-auth* to authenticate with Azure Artifacts. Make sure you have *vsts-npm-auth* installed from **Get the tools** and then run vsts-npm-auth to get an Azure Artifacts token added to your user-level npmrc file:
-
-```Command
-vsts-npm-auth -config .npmrc
-```
-
-#### [Other](#tab/Other/)
-
-If you're developing on a non-Windows platform and need to authenticate with Azure Artifacts, you need to create a personal access token, encode it in Base 64, and then add it to your user-level npmrc file.
-
-1. Generate a [personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
-
-1. Encode your newly generated personal access token as follows:
-
-    1. Run the following command in a command prompt window to encode your PAT: 
-        
-        ```Command
-        node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
-        ```
-
-    1. Paste your personal access token, and then press **Enter**.
- 
-    1. Copy the Base 64 encoded personal access token.
-
-
-1. Copy the following code snippet to your user-level .npmrc file and replace the `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` placeholder with your Base 64 personal access token: 
-
-    - **Organization-scoped feed**:
-
-        ```Command
-        ; begin auth token
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/:username=[ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
-        ; end auth token
-        ```
-    
-    - **Project-scoped feed**:
-
-        ```Command
-        ; begin auth token
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
-        ; end auth token
-        ```
+    :::image type="content" source="media/npm-project-setup-azure-devops.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
-* * * 
+::: moniker range="azure-devops-2022"
 
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
+1. Select **Artifacts**, and then select **Connect to Feed**.
+
+1. Select **npm** from the left, and then follow the instructions in the **Project setup** section to connect to your feed.
+
+   :::image type="content" source="media/npm-project-setup-server-2022-1.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2022.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to feed**.
+
+1. Select **npm** from the left, and then follow the instructions in **Project setup** to set up your config file and connect to your feed.
+
+   :::image type="content" source="media/npm-project-setup-server-2020-1.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2020.":::
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to feed**.
+
+1. A new window will appear. From the left navigation pane, select **npm** and follow the instructions to set up your **project** and **user** *.npmrc* files.
+
+   :::image type="content" source="media/npm-project-setup-server-2019w-1.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2019.":::
+
+::: moniker-end
+
+> [!IMPORTANT]
+> npm supports a single `registry` in your .npmrc file. Multiple registries are possible with [scopes](npm/scopes.md) and [upstream sources](npm/upstream-sources.md).
 
 ## Publish packages
 
