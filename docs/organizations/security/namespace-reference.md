@@ -90,7 +90,7 @@ The following table describes the namespaces that manage object-level permission
       `ManagePermissions`   
    :::column-end:::
    :::column span="2":::
-      [Manages Analytics views permissions at the project-level and object-level](permissions.md#analytics-views-permissions) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](../../report/powerbi/analytics-security.md).  
+      [Manages Analytics views permissions at the project-level and object-level](permissions.md#analytics-views-object-level) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](../../report/powerbi/analytics-security.md).  
       <br/>
       **Token format for project level permissions**: `$/Shared/PROJECT_ID`  
       **Example**: `$/Shared/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`   
@@ -167,7 +167,7 @@ The following table describes the namespaces that manage object-level permission
       `MaterializeDashboards`   
    :::column-end:::
    :::column span="2":::
-      [Manages dashboard object-level permissions](permissions.md#dashboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
+      [Manages dashboard object-level permissions](permissions.md#dashboards-object-level) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
       <br/>
       **ID:** `8adf73b7-389a-4276-b638-fe1653f7efc7`
    :::column-end:::
@@ -196,7 +196,7 @@ The following table describes the namespaces that manage object-level permission
       `PullRequestBypassPolicy`  
    :::column-end:::
    :::column span="2":::
-      [Manages Git repository permissions at the project-level and object-level](permissions.md#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/git/set-git-repository-permissions.md).  
+      [Manages Git repository permissions at the project-level and object-level](permissions.md#git-repository-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/git/set-git-repository-permissions.md).  
       <br/>
       The `Administer` permission was divided into several more granular permissions [in 2017](/previous-versions/azure/devops/2017/jan-25-team-services#repo-admin-permission-changes), and shouldn't be used.
       <br/>
