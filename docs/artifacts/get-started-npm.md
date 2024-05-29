@@ -80,7 +80,7 @@ Azure Artifacts recommends using two .npmrc files. The first one should be place
 
 1. A new window will appear. From the left navigation pane, select **npm** and follow the instructions to set up your **project** and **user** *.npmrc* files.
 
-   :::image type="content" source="media/npm-project-setup-server-2019w-1.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2019.":::
+   :::image type="content" source="media/npm-project-setup-server-2019-1.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2019.":::
 
 ::: moniker-end
 
