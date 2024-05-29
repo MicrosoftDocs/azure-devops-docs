@@ -89,7 +89,7 @@ Azure Artifacts recommends using two .npmrc files. The first one should be place
 
 ## Publish packages
 
-To publish your npm package, run the following command in your project directory:
+Run the following command in your project directory to publish your npm packages:
 
 ```Command
 npm publish
@@ -100,16 +100,16 @@ npm publish
 
 ## Restore packages
 
-To restore an npm package, run the following command in your project directory:
-
-```Command
-npm install --save <package>
-```
-
-To restore all your npm packages, run the following command from your project directory:
+Run the following command in your project directory to restore your npm packages:
 
 ```Command
 npm install
+```
+
+To restore a specific npm package, run the following command from your project directory:
+
+```Command
+npm install --save <PACKAGE_NAME>
 ```
 
 ## Related articles
