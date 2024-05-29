@@ -1051,8 +1051,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column span="2":::
   ### Description 
    :::column-end:::
-:::row-end:::
----
+:::row-end::: 
 :::row:::
    :::column span="4":::
    #### General  
@@ -1321,7 +1320,6 @@ Manage project-level permissions through the [web portal admin context](change-p
   ### Description 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
    <a id="bypass-rules-permission"></a>  
