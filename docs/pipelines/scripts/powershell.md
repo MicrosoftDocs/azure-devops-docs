@@ -43,11 +43,11 @@ steps:
 
 1. Add the PowerShell Script task to your pipeline. The same [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) works for PowerShell Core and Windows PowerShell. 
 
-    :::image type="content" source="media/powershell-script.png" alt-text="Add the PowerShell task.":::
+    :::image type="content" source="media/powershell-script.png" alt-text="Screenshot of PowerShell task selection.":::
 
 1. Add your file to the **Script Path**. 
     
-    :::image type="content" source="media/powershell-update-script-path.png" alt-text="Add the script path.":::
+    :::image type="content" source="media/powershell-update-script-path.png" alt-text="Screenshot of PowerShell task script path setting.":::
 
 ---
 
@@ -74,11 +74,11 @@ steps:
 
 1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
 
-    :::image type="content" source="media\BldScriptPSExmpVerAssembliesBuildStep.png" alt-text="Apply version to assemblies build task":::
+    :::image type="content" source="media\powershell-script-task.png" alt-text="Screenshot of PowerShell script task.":::
 
 1. Next, specify your build number.
 
-    :::image type="content" source="media\BldScriptPSExmpVerAssembliesBuildNumFormat.png" alt-text="Build number format":::
+    :::image type="content" source="media\build-number-format.png" alt-text="Screenshot of build number format setting.":::
 
 1. Save your changes.
    
@@ -88,11 +88,11 @@ steps:
 
 1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
 
-    :::image type="content" source="media\BldScriptPSExmpVerAssembliesBuildStep-2020.png" alt-text="Screenshot of PowerShell build task.":::
+    :::image type="content" source="media\powershell-script-task-2020.png" alt-text="Screenshot of PowerShell build task.":::
 
 1. Next, specify your build number.
 
-    :::image type="content" source="media\BldScriptPSExmpVerAssembliesBuildNumFormat-2019.png" alt-text="Apply version to assemblies build task.":::
+    :::image type="content" source="media\build-number-format-2019.png" alt-text="Screenshot of build number format setting.":::
 
 1. Save your changes.
 
