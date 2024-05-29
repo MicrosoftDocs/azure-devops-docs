@@ -668,14 +668,13 @@ Manage organization-level permissions through the [web portal admin context](../
 
 :::row:::
    :::column span="2":::
-   #### Permission (UI)<br />
+   #### Permission (UI)<br/>
    `Namespace permission`  
    :::column-end:::
    :::column span="2":::
   #### Description 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="4":::
    #### General
@@ -697,7 +696,7 @@ Manage organization-level permissions through the [web portal admin context](../
   `Collection, CREATE_PROJECTS`
    :::column-end:::
    :::column span="2":::
-   Can [add a project](../projects/create-project.md) to an organization or project collection. More permissions might be required depending on your on-premises deployment. 
+   Can [add a project](../projects/create-project.md) to an organization or project collection. More permissions may be required depending on your on-premises deployment. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -706,7 +705,7 @@ Manage organization-level permissions through the [web portal admin context](../
   `Project, DELETE`
    :::column-end:::
    :::column span="2":::
-   Can [delete a project](../projects/delete-project.md). Deleting a project deletes all data that is associated with the project. You can't undo the deletion of a project except by restoring the collection to a point before the project was deleted.  
+   Can [delete a project](../projects/delete-project.md).  Deleting a project deletes all data that is associated with the project. You can't undo the deletion of a project except by restoring the collection to a point before the project was deleted.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -716,7 +715,10 @@ Manage organization-level permissions through the [web portal admin context](../
    :::column-end:::
    :::column span="2":::
    Can set organization and project-level settings.
-
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
    > [!NOTE]   
    > **Edit instance-level information** includes the ability to perform these tasks for all projects defined in an organization or collection:  
    > - Modify organization **Overview** settings, **Extensions**, and **Microsoft Entra ID**  settings
@@ -728,13 +730,12 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-collection-level-information"></a> View instance-level information  
-   `Collection, GENERIC_READ` 
+  `Collection, GENERIC_READ` 
    :::column-end:::
    :::column span="2":::
    Can view organization-level permissions for a user or group. 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="4":::
    #### Service Account
@@ -743,7 +744,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::  
    :::column span="2":::
    <a id="make-requests-on-behalf-of-others"></a> Make requests on behalf of others  
-   `Server, Impersonate`    
+  `Server, Impersonate`    
    :::column-end:::
    :::column span="2":::
    Can perform operations on behalf of other users or services.
@@ -763,13 +764,12 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-system-synchronization-information"></a> View system synchronization information 
-   `Collection, SYNCHRONIZE_READ`
+  `Collection, SYNCHRONIZE_READ`      
    :::column-end:::
    :::column span="2":::
    Can call the synchronization application programming interfaces. Assign only to service accounts.
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="4":::
    #### Boards  
@@ -789,7 +789,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="create-process"></a> Create process  
-   `Process, Create`
+  `Process, Create`
    :::column-end:::
    :::column span="2":::
    Can [create an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. Users  granted Basic and Stakeholder access are granted this permission by default. 
@@ -798,7 +798,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="delete-field"></a> Delete field from organization  
-   `Collection, DELETE_FIELD`
+  `Collection, DELETE_FIELD`
    :::column-end:::
    :::column span="2":::
    Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md).
@@ -807,7 +807,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="delete-process"></a> Delete process  
-   `Process, Delete`
+  `Process, Delete`
    :::column-end:::
    :::column span="2":::
    Can [delete an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. 
@@ -816,13 +816,12 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="edit-process"></a> Edit process  
-   `Process, Edit`
+  `Process, Edit`
    :::column-end:::
    :::column span="2":::
    Can edit a [custom inherited process](../settings/work/customize-process.md).
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="4":::
    #### Repos  
@@ -832,7 +831,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="administer-shelved-changes"></a>Administer shelved changes  
-   `VersionControlPrivileges, AdminWorkspaces`
+  `VersionControlPrivileges, AdminWorkspaces`
    :::column-end:::
    :::column span="2":::
    Can delete [shelvesets created by other users](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md).  
@@ -841,7 +840,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="administer-workspaces"></a> Administer workspaces  
-   `Workspaces, Administer`
+  `Workspaces, Administer`
    :::column-end:::
    :::column span="2":::
    Can [create and delete workspaces for other users](../../repos/tfvc/create-work-workspaces.md).  
@@ -850,13 +849,12 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="create-a-workspace"></a> Create a workspace  
-   `VersionControlPrivileges, CreateWorkspace`
+  `VersionControlPrivileges, CreateWorkspace`
    :::column-end:::
    :::column span="2":::
    Can create a version control workspace. The **Create a workspace** permission is granted to all users as part of their membership within the Project Collection Valid Users group.
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="4":::
    #### Pipelines  
@@ -874,7 +872,7 @@ Manage organization-level permissions through the [web portal admin context](../
    - [Add and manage agent pools](../../pipelines/agents/pools-queues.md)
    - [Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)
    > [!NOTE]   
-   > In addition to this permission, Azure DevOps provides role-based permissions governing the [security of agent pools](../../pipelines/policies/permissions.md). Other [object-level settings](#build-object-level) override those set at the organization or project-level. 
+   > In addition to this permission, Azure DevOps provides role-based permissions governing the [security of agent pools](../../pipelines/policies/permissions.md#set-agent-pool-permissions). Other, [object-level settings](#build-object-level) will override those set at the organization or project-level. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -888,7 +886,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row-end:::
 :::row:::
    :::column span="2":::
-   <a id="manage-build-resources"></a> Manage pipeline policies 
+   <a id="manage-build-resources"></a> Manage pipeline policies  
   `BuildAdministration, ManagePipelinePolicies`
    :::column-end:::
    :::column span="2":::
@@ -898,7 +896,7 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="use-build-resources"></a> Use build resources  
-   `BuildAdministration, UseBuildResources`
+  `BuildAdministration, UseBuildResources`
    :::column-end:::
    :::column span="2":::
    Can reserve and allocate build agents. Assign only to service accounts for build services.
@@ -907,13 +905,12 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-build-resources"></a> View build resources  
-   `BuildAdministration, ViewBuildResources`
+  `BuildAdministration, ViewBuildResources`
    :::column-end:::
    :::column span="2":::
    Can view, but not use, build controllers and build agents that are configured for an organization or project collection.
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="4":::
    #### Test Plans
@@ -922,13 +919,12 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="manage-test-controllers"></a> Manage test controllers  
-   `Collection, MANAGE_TEST_CONTROLLERS`
+  `Collection, MANAGE_TEST_CONTROLLERS`
    :::column-end:::
    :::column span="2":::
    Can register and deregister test controllers.
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="4":::
    <a id="audit-streams-permissions"></a> 
@@ -956,13 +952,12 @@ Manage organization-level permissions through the [web portal admin context](../
 :::row:::
    :::column span="2":::
    <a id="view-audit-log-permission"></a> View audit log  
-   `AuditLog, Read`
+  `AuditLog, Read`
    :::column-end:::
    :::column span="2":::
    Can view and export audit logs. Audit logs are in preview. For more information, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md). 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="4":::
    #### Policies  
