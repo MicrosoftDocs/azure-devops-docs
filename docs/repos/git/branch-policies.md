@@ -1138,7 +1138,7 @@ Two permissions allow users to bypass branch policy in different ways:
 
 ![Screenshot showing bypass policy enforcement permissions.](media/branch-policies/policy-exempt-permission.png)
 
-For more information about managing these permissions, see [Git permissions](../../organizations/security/permissions.md#git-repository-permissions-object-level).
+For more information about managing these permissions, see [Git permissions](../../organizations/security/about-permissions.md#permission-inheritance).
 
 ::: moniker-end
 
