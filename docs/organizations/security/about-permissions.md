@@ -123,7 +123,7 @@ The preview user interface for the Project Permissions settings page isn't avail
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]  
-> ![Permissions dialog, current page, Why link annotated.](media/about-permissions-why.png)
+> ![Screenshot showing Permissions dialog, current page, Why link annotated.](media/about-permissions-why.png)
 
 A new window shows the inheritance information for that permission.  
 
