@@ -987,7 +987,7 @@ Manage organization-level permissions through the [web portal admin context](../
 
 [!INCLUDE [collection-level-permissions-reference-table](includes/collection-level-permissions-reference-table-cloud.md)]
 
----
+* * *
 
 ::: moniker-end
 
@@ -1558,7 +1558,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column-end:::
 :::row-end:::
 
----
+* * *
 
 ## Analytics views (object-level)  
 
