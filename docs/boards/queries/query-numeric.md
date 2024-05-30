@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 05/29/2024
+ms.date: 05/30/2024
 ---
 
 # Query by numeric fields
