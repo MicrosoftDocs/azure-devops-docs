@@ -23,8 +23,6 @@ With Azure Pipelines, you can publish your npm packages to Azure Artifacts feeds
 
 - An Azure Artifacts feed. [Create one for free](../../artifacts/get-started-npm.md#create-a-feed).
 
-- [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
-
 ## Publish to Azure Artifacts feeds
 
 > [!NOTE]
