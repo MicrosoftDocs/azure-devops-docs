@@ -49,34 +49,53 @@ With Azure Pipelines, you can publish your npm packages to Azure Artifacts feeds
 
 #### [Classic](#tab/classic/)
 
-1. From within your pipeline, select the `+` sign to add a task to your pipeline, then search for the *npm* task. Select **Add** to add it to your pipeline.
+::: moniker range="azure-devops-2019"
 
-    :::image type="content" source="./media/add-npm-task.png" alt-text="A screenshot showing how to find and add the npm task.":::
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
-1. Name your task and select **Publish** from the dropdown menu. Select your package.json path, your **Registry location**, and your **Target registry**
+2. Select **Pipelines** > **Builds**, and then select your build definition. 
 
-    :::image type="content" source="./media/npm-publish.png" alt-text="A screenshot showing how to configure the npm publish task.":::
+3. Select **Edit**, and then select the `+` sign to add a new task. Search for the *npm* task, and then select **Add** to add it to your pipeline.
 
-- **Working folder that contains package.json**: path to the folder containing the target package.json and .npmrc files. Leave this blank if those files are at the root of your repo.
-- **Registry location**: select **Registry I select here** to publish to an Azure Artifacts feed. select your feed from the dropdown menu.
+    :::image type="content" source="./media/add-npm-task.png" alt-text="A screenshot that shows how to find and add the npm task.":::
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+1. Navigate to the Azure DevOps portal, and then select your project.
+
+2. Select **Pipelines**, and then select your pipeline definition. 
+
+3. Select **Edit**, and then select the `+` sign to add a new task. Search for the *npm* task, and then select **Add** to add it to your pipeline.
+
+    :::image type="content" source="./media/add-npm-task.png" alt-text="A screenshot that shows how to find and add the npm task.":::
+
+::: moniker-end
+
+4. Name your task and then select **Publish** from the commands dropdown menu. Specify your *package.json* path, your **Registry location**, and your **Target registry**.
+
+    - **Working folder that contains package.json**: path to the folder containing the target *package.json* and *.npmrc* files. Leave this blank if those files are at the root of your repo.
+    - **Registry location**: select **Registry I select here** to publish to a feed.
+    - **Target registry**: select your feed from the dropdown menu.
+    
+    :::image type="content" source="./media/npm-publish.png" alt-text="A screenshot that shows how to configure the npm task to publish packages to an Azure Artifacts feed.":::
 
 * * *
 
 ## Publish to a public registry
 
-To publish your packages to a public npm registry such as *npmjs.com*, you must first create a service connection to connect to the desired external service.
+Before publishing your packages to a public npm registry like npmjs.com, you must first create a service connection to authenticate with the desired external service.
 
-1. Select **Project settings**, and then select **Service connections**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Create service connection** to create a new service connection.
+1. Select **Project settings** > **Service connections**, and then select **Create service connection**.
 
-    :::image type="content" source="./media/create-service-connection.png" alt-text="Screenshot showing how to create a new service connection":::
+    :::image type="content" source="./media/create-service-connection.png" alt-text="A screenshot that shows how to create a new service connection in Azure DevOps.":::
 
 1. Select **npm** and then select **Next**. Fill out the required fields, and then select **Save** when you're done.
 
 #### [YAML](#tab/yaml/)
-
-::: moniker range=">= azure-devops-2019"
 
 ```yaml
 - task: Npm@1
@@ -86,29 +105,47 @@ To publish your packages to a public npm registry such as *npmjs.com*, you must 
     publishEndpoint: '<NAME_OF_YOUR_SERVICE_CONNECTION>'
 ```
 
-- **publishRegistry**: Select *useExternalRegistry* to publish to a public registry. Options: useExternalRegistry | useFeed.
-- **publishEndpoint**: required when `publishRegistry == useExternalRegistry`. Replace the placeholder with the name of the service connection you created earlier.
-
-::: moniker-end
-
+- **publishRegistry**: select *useExternalRegistry* to publish to a public registry. Options: useExternalRegistry | useFeed.
+- **publishEndpoint**: replace the placeholder with the name of the service connection you created earlier. required when *publishRegistry* == *useExternalRegistry*.
 
 #### [Classic](#tab/classic/)
 
-1. From within your pipeline, select the `+` sign to add a task to your pipeline, then search for the *npm* task. Select **Add** to add it to your pipeline.
+::: moniker range="azure-devops-2019"
 
-    :::image type="content" source="./media/add-npm-task.png" alt-text="Screenshot showing how to find and add the npm task":::
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
-1. Name your task, and then select **Publish** from the dropdown menu. Select your *package.json* path, your **Registry location**, and your **External registry**.
+2. Select **Pipelines** > **Builds**, and then select your build definition. 
 
-    :::image type="content" source="./media/npm-publish-registry.png" alt-text="A screenshot showing how to configure the npm publish task to publish packages to public registries.":::
+3. Select **Edit**, and then select the `+` sign to add a new task. Search for the *npm* task, and then select **Add** to add it to your pipeline.
 
-- **Working folder that contains package.json**: path to the folder containing the target package.json and .npmrc files. Leave this blank if those files are at the root of your repo.
-- **Registry location**: select **External npm registry** to publish to public registries such as npmjs.com. Enter the name of the service connection you created earlier.
+    :::image type="content" source="./media/add-npm-task.png" alt-text="A screenshot that shows how to find and add the npm task.":::
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+1. Navigate to the Azure DevOps portal, and then select your project.
+
+2. Select **Pipelines**, and then select your pipeline definition. 
+
+3. Select **Edit**, and then select the `+` sign to add a new task. Search for the *npm* task, and then select **Add** to add it to your pipeline.
+
+    :::image type="content" source="./media/add-npm-task.png" alt-text="A screenshot that shows how to find and add the npm task.":::
+
+::: moniker-end
+
+4. Name your task and then select **Publish** from the commands dropdown menu. Specify your *package.json* path, your **Registry location**, and your **External registry**.
+
+    - **Working folder that contains package.json**: path to the folder containing the target *package.json* and *.npmrc* files. Leave this blank if those files are at the root of your repo.
+    - **Registry location**: select **External npm registry** to publish to a public registry such as npmjs.com. 
+    - **External registry**: select the service connection you created earlier.
+
+    :::image type="content" source="./media/npm-publish-registry.png" alt-text="A screenshot that shows how to configure the npm task to publish packages to a public registry.":::
 
 * * *
 
 ## Related articles
 
-- [Publish and download Artifacts in Azure Pipelines](./pipeline-artifacts.md).
-- [Publish npm packages from the command line](../../artifacts/npm/publish.md).
+- [Publish and restore npm packages from the command line](../../artifacts/npm/publish.md).
 - [Use packages from npmjs.com](../../artifacts/npm/upstream-sources.md).
+- [Publish and download pipeline artifacts](./pipeline-artifacts.md).
