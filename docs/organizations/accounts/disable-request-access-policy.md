@@ -41,14 +41,13 @@ You must be a member of the [Project Collection Administrators group](../securit
    ![Enter the URL to your organization's internal process for gaining access.](media/disable-request-access-provide-url.png)
 
 **Results:**
-For users who are already part of the organization:
-- If they lack permission to access a specific project, they get a 404 error. To maintain confidentiality, the 404 error doesn’t reveal whether the project exists or not, and so doesn't provide a link to request access.
-For users who are **not** part of the organization:
-- If they attempt to access a resource, they get a 401 error, which includes a link to the configured custom URL for requesting access.
+
+- For users who are already part of the organization: If they lack permission to access a specific project, they get a 404 error. To maintain confidentiality, the 404 error doesn’t reveal whether the project exists or not, and so doesn't provide a link to request access.
+- For users who are **not** part of the organization: If they attempt to access a resource, they get a 401 error, which includes a link to the configured custom URL for requesting access.
 
 ## Related articles
 
 - [Need help?](faq-configure-customize-organization.yml#get-support)
 - [Assign access levels by group membership](assign-access-levels-by-group-membership.md)
 - [Manage Conditional Access](change-application-access-policies.md)
-- [Change application access policies](change-application-access-policies.md).
+- [Change application access policies](change-application-access-policies.md)
