@@ -167,6 +167,8 @@ Then, add a stacked area trend chart that sums the Story Points.
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Configure chart dialog, trend, sum of story points.](media/numeric/config-trend-sum-story-points.png)  
 
+<a id="work"/>
+
 ## Query for remaining and completed work
 
 Based on the process your project references, you can assign the following fields to tasks or bugs. 
