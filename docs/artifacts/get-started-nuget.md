@@ -7,6 +7,41 @@ author: ramiMSFT
 ms.date: 03/15/2024
 ---
 
+<<<<<<< HEAD
+=======
+# Quickstart: Get started with NuGet packages in Azure Artifacts
+
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+
+Azure Artifacts enables developers to publish and download NuGet packages from sources such as feeds and public registries. With Azure Artifacts, you can create feeds that are either:
+
+* Private, so you can share packages with your team and specific users.
+* Public, so you can share packages openly with anyone on the internet.
+
+In this quickstart, you learn how to:
+
+> [!div class="checklist"]
+>
+> * Create a new feed.
+> * Set up your project and connect to your feed.
+> * Publish NuGet packages.
+> * Download packages from your feed.
+
+## Prerequisites
+
+* Create an Azure DevOps [organization](../organizations/accounts/create-organization.md) and a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+* Install the [latest NuGet version](https://www.nuget.org/downloads).
+
+* Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+
+## <a name = "create-feed"></a> Create a feed
+
+[!INCLUDE [](includes/create-feed.md)]
+
+## Connect to a feed
+
+>>>>>>> cb3196f31566c7b52671fad1d2ece4ceee5d23f7
 ::: moniker range="azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then go to your project.
