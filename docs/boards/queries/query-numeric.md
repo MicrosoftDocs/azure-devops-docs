@@ -100,7 +100,7 @@ The following table shows useful filters for queries.
  
 ---
 
-<a id="counts"/>
+<a id="counts"></a>
 
 ## Query for count of work items
 
@@ -124,7 +124,7 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Configure chart dialog, pivot by state and area.](media/numeric/config-pivot-state-area.png)  
 
-<a id="undefined-value"/>
+<a id="undefined-value"></a>
 
 ## Query for undefined field values
 
@@ -135,7 +135,7 @@ You can find work items that have an undefined field value by using the *equals*
 
 To list work items based on a field that isn't blank, use the *not* operator, `<>`, and leave the Value blank.
 
-<a id="effort"/>
+<a id="effort"></a>
 
 ## Query for effort or story points
 
@@ -167,7 +167,7 @@ Then, add a stacked area trend chart that sums the Story Points.
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Configure chart dialog, trend, sum of story points.](media/numeric/config-trend-sum-story-points.png)  
 
-<a id="work"/>
+<a id="work"></a>
 
 ## Query for remaining and completed work
 
