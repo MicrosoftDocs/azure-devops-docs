@@ -23,11 +23,8 @@ ms.date: 03/15/2024
 
 1. Select **Create** when you're done.
 
-<<<<<<< HEAD
-    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="Screenshot that shows selections for creating a new feed in Azure DevOps Services.":::
-=======
-    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="A screenshot showing how to create a new feed in Azure DevOps Services.":::
->>>>>>> 1d652a00656bfd2190c3a4be21c36181cf2f5403
+    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="Screenshot that shows selections for creating a new feed in Azure DevOps Services.":::
+>>>>>>> main
 
 ::: moniker-end
 
