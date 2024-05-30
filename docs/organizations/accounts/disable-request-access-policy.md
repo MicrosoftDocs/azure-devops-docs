@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 07/25/2022
+ms.date: 05/30/2024
 monikerRange: 'azure-devops'
 ---
 
@@ -16,9 +16,9 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Stop your users from requesting access to your organization or project within your organization, by disabling the Request Access policy.
+To prevent users from requesting access to your organization or a project within your organization, disable the 'Request Access' policy. When this policy is enabled, users can request access to a resource. Such requests trigger email notifications to administrators, prompting them to review and grant access as necessary.
 
-When this policy is on, users can request access to a resource. A request results in an email notification to the administrators asking for review and access, as needed. 
+Disabling the 'Request Access' policy prevents users from requesting access. Administrators don’t receive email notifications for access requests when the policy is disabled.
 
 ## Prerequisites
 
@@ -39,6 +39,12 @@ You must be a member of the [Project Collection Administrators group](../securit
 4. Provide the URL to your internal process for gaining access. Users see this URL in the error report when they try to access the organization or a project within the organization that they don't have access to.
 
    ![Enter the URL to your organization's internal process for gaining access.](media/disable-request-access-provide-url.png)
+
+**Results:**
+For users who are already part of the organization:
+- If they lack permission to access a specific project, they get a 404 error. To maintain confidentiality, the 404 error doesn’t reveal whether the project exists or not, and so doesn't provide a link to request access.
+For users who are **not** part of the organization:
+- If they attempt to access a resource, they get a 401 error, which includes a link to the configured custom URL for requesting access.
 
 ## Related articles
 
