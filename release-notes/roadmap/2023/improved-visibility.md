@@ -1,15 +1,15 @@
 ---
-title: Improved co-relation between test run and test case versions
+title: New Test Runs experience
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/16/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Improved co-relation between test run and test case versions
+description: New Test Runs experience
 hide_comments: true
 ---
 
-# Improved co-relation between test run and test case versions
+# New Test Runs experience
 
-We're improving the co-relation experience between test results and the version of test case definition used to execute that particular run. We're also reducing the number of steps & clicks it takes to view the test case definition of a run. Test run is an important pillar of Azure Test Plans and these improvements will address long-standing user needs around post execution analysis.
+We're are redesigning the Test Runs experience to let users work with test runs and test results in a much simpler way. The new design will also make it easier to understand the co-relation between test results and the version of a test case definition used to execute that particular run. Test Runs is an important part of Azure Test Plans product and these improvements will address long-standing user needs around post execution analysis.

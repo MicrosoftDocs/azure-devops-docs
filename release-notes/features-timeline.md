@@ -341,7 +341,7 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="19"><strong>2024 Q2</strong></td>
+      <td rowspan="17"><strong>2024 Q2</strong></td>
        <td>
          <a href="/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full web support for Conditional Access Policies](/azure/devops/release-notes/roadmap/conditional-access-policy)">Full web support for Conditional Access Policies</a>
        </td>
@@ -407,16 +407,6 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/reduce-time-to-filter" data-raw-source="[Reduce time to filter test plans and test suites in copy and import operations](/azure/devops/release-notes/roadmap/2022/reduce-time-to-filter)">Reduce time to filter test plans and test suites in copy and import operations</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/code-coverage-policy" data-raw-source="[Code coverage policy at a folder level](/azure/devops/release-notes/roadmap/2022/code-coverage-policy)">Code coverage policy at a folder level</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation" data-raw-source="[Pull Request Annotation](/azure/devops/release-notes/roadmap/2024/ghazdo/pull-request-annotation)">Newly introduced findings are highlighted in PR comments</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>N/A</td>
@@ -446,7 +436,7 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
         <td>GitHub Advanced Security for Azure DevOps</td>
         <td>N/A</td>
       </tr>
-      <td rowspan="3"><strong>2024 Q3</strong></td>
+      <td rowspan="4"><strong>2024 Q3</strong></td>
        <td>
          <a href="/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default" data-raw-source="[New Boards Hub on by default](/azure/devops/release-notes/2024/sprint-237-update#new-boards-hub-on-by-default)">New Boards Hub on by default</a>
         </td>
@@ -466,8 +456,13 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
          </td>
          <td>Boards</td>         
          <td>Future</td>
-      </tr>   
-      <td rowspan="27"><strong>Future</strong></td>
+      </tr>    
+       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/self-service-restore" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2022/self-service-restore)">Restore deleted test plans and test suites using REST API</a></td>
+        <td>Test Plans</td>
+        <td>Future</td>
+      </tr>
+      <td rowspan="22"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
@@ -548,21 +543,6 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
         <td>Future</td>   
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-global-parameter" data-raw-source="[Dashboard Global Parameter](azure/devops/release-notes/roadmap/2024/dashboard-global-parameter)">Dashboard Global Parameter</a></td>
-         <td>Reporting</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/dashboard-template" data-raw-source="[Dashboard Template](/azure/devops/release-notes/roadmap/2024/dashboard-template)">Dashboard Template</a></td>
-         <td>Reporting</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/sort-test-plans" data-raw-source="[Pause and resume manual test execution](/azure/devops/release-notes/roadmap/2022/sort-test-plans)">Sort test plans by any column</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/test-plan-task-in-pipelines" data-raw-source="[Test Plan task in Pipelines](/azure/devops/release-notes/roadmap/2022/test-plan-task-in-pipelines)">Test Plan task in Pipelines</a></td>
         <td>Test Plans</td>
         <td>Future</td>
@@ -573,22 +553,12 @@ Next, we'll focus on **deployment functionality**, to make it possible to have d
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/improved-visibility" data-raw-source="[Improved co-relation between test run and test case versions](/azure/devops/release-notes/roadmap/2022/improved-visibility)">Improved co-relation between test run and test case versions</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/self-service-restore" data-raw-source="[Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2022/self-service-restore)">Restore deleted test plans and test suites using REST API</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/improved-visibility" data-raw-source="[New Test Runs experience](/azure/devops/release-notes/roadmap/2022/improved-visibility)">New Test Runs experience</a></td>
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/improve-traceability" data-raw-source="[Improve traceability of in-progress test executions](/azure/devops/release-notes/roadmap/2022/improve-traceability)">Improve traceability of in-progress test executions</a></td>
-        <td>Test Plans</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/alphabetical-sort" data-raw-source="[Sort test suites in alphabetical order](/azure/devops/release-notes/roadmap/2022/alphabetical-sort)">Sort test suites in alphabetical order</a></td>
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
