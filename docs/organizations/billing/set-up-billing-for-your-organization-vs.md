@@ -53,15 +53,14 @@ Set up billing in Azure DevOps before you make purchases, so it's already in pla
    > [!TIP]
    > If you can't see an Azure Subscription associated with a different tenant ID, it’s likely due to authentication issues. Here’s how you can address this situation:
    e to authentication issues. Here’s how you can address this situation:
-   **Tenant context:**
-    - Your organization might be connected to 'Tenant A,' where your user account is registered.
-    - But, the Azure subscription you’re trying to access is associated with 'Tenant B,' a different Microsoft Entra ID tenant.
-   **Authentication steps:**
-    - To access the subscription in 'Tenant B,' you must authenticate with that specific tenant.
-    1. Go to aex.dev.azure.com directly.
-    2. In the dropdown menu, select the desired Microsoft Entra ID tenant, 'Tenant B.'
-    3. Retry the operation, and you should see the subscription.
-    Remember to ensure that you’re authenticated with the correct tenant to access the Azure resources associated with that tenant.
+   >**Tenant context:**
+   > - Your organization might be connected to 'Tenant A,' where your user account is registered.
+   > - But, the Azure subscription you’re trying to access is associated with 'Tenant B,' a different Microsoft Entra ID tenant.
+   >**Authentication steps:**
+   > - To access the subscription in 'Tenant B,' you must authenticate with that specific tenant.
+   > 1. Go to aex.dev.azure.com directly.
+   > 2. In the dropdown menu, select the desired Microsoft Entra ID tenant, 'Tenant B.'
+   > 3. Retry the operation, and you should see the subscription.
 
 Billing is set up for your Azure DevOps organization. You can [review your individual Azure subscription bill](/azure/cost-management-billing/understand/review-individual-bill) at any time.
 
