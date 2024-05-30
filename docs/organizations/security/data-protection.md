@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 04/19/2024
+ms.date: 05/28/2024
 monikerRange: 'azure-devops'
 ---
 # Data protection overview
@@ -184,7 +184,7 @@ We encrypt data via HTTPS and SSL to help ensure that it isn't intercepted or mo
 - Azure Blob Storage connections are encrypted to help protect your data in transit. For data at rest stored in Azure Blob Storage, Azure DevOps uses [service-side encryption](/azure/storage/common/storage-service-encryption).
 
 > [!NOTE]
-> Azure DevOps is not Federal Information Processing Standards (FIPS) 140-2 or 140-3 compliant.
+> Azure DevOps is Federal Information Processing Standards (FIPS) 140-2 or 140-3 compliant.
 
 The Azure DevOps team uses the Azure infrastructure to log and monitor key aspects of the service. Logging and monitoring help ensure that activities within the service are legitimate, and they help detect breaches or attempted breaches.
 

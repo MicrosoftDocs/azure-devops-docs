@@ -1,9 +1,9 @@
 ---
 title: Use PowerShell scripts to customize pipelines
-description: Learn how you can use a script to customize your pipeline
+description: Learn how you can use a script to customize your pipeline.
 ms.topic: conceptual
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.date: 01/06/2023
+ms.date: 05/24/2024
 monikerRange: '<= azure-devops'
 ---
 
@@ -13,9 +13,10 @@ monikerRange: '<= azure-devops'
 
 
 
-When you're ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline. You can run Windows PowerShell on a [Windows build agent](../agents/windows-agent.md). PowerShell Core runs on any platform. 
+When you're ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline. You can run Windows PowerShell on a [Windows build agent](../agents/windows-agent.md) or PowerShell Core on any platform. 
 
-::: moniker range=">= azure-devops-2019"
+When you use the PowerShell task [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2), your PowerShell script runs in your pipeline. You can use PowerShell to access the Azure DevOps REST API, work with the Azure DevOps work items and test management, and call other services as needed.
+
 ## Add a PowerShell script
 ### [YAML](#tab/yaml)
 
@@ -23,7 +24,10 @@ The syntax for including PowerShell Core is slightly different from the syntax f
 
 1. Push your PowerShell script to your repo.
 
-2. Add a `pwsh` or `powershell` step. The `pwsh` keyword is a shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) for PowerShell Core. The `powershell` keyword is another shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2).
+1. Add a `pwsh` or `powershell` step to your pipeline
+    The `pwsh` keyword is a shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) for PowerShell Core. The `powershell` keyword is another shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2).
+
+Examples:
 
 ```yaml
 # for PowerShell Core
@@ -39,20 +43,17 @@ steps:
 
 1. Add the PowerShell Script task to your pipeline. The same [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) works for PowerShell Core and Windows PowerShell. 
 
-    :::image type="content" source="media/powershell-script.png" alt-text="Add the PowerShell task.":::
+    :::image type="content" source="media/powershell-script.png" alt-text="Screenshot of PowerShell task selection.":::
 
-2. Add your file to the **Script Path**. 
+1. Add your file to the **Script Path**. 
     
-    :::image type="content" source="media/powershell-update-script-path.png" alt-text="Add the script path.":::
+    :::image type="content" source="media/powershell-update-script-path.png" alt-text="Screenshot of PowerShell task script path setting.":::
 
 ---
-::: moniker-end
-
-
 
 ## Example PowerShell script: version assemblies
 
-Here's an example script to version your assemblies. For the script to run successfully, you'll need to update your build number to use a format with four periods (example: `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`). Build number can also be referred to as run number.
+Here's an example script to version your assemblies. For the script to run successfully, you need to update your build number to use a format with four periods (example: `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`). Build number can also be referred to as run number.
 
 ### [YAML](#tab/yaml)
 
@@ -69,15 +70,37 @@ steps:
 ```
 #### [Classic](#tab/classic)
 
+:::moniker range=">= azure-devops-2022"
+
 1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
 
-    ![Apply version to assemblies build task](media/BldScriptPSExmpVerAssembliesBuildStep.png)
+    :::image type="content" source="media\powershell-script-task.png" alt-text="Screenshot of PowerShell script task.":::
 
-2. Next, specify your build number.
+1. Next, specify your build number.
 
-    ![Build number format](media/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
+    :::image type="content" source="media\build-number-format.png" alt-text="Screenshot of build number format setting.":::
+
+1. Save your changes.
+   
+:::moniker-end
+
+:::moniker range="< azure-devops-2022"
+
+1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
+
+    :::image type="content" source="media\powershell-script-task-2020.png" alt-text="Screenshot of PowerShell build task.":::
+
+1. Next, specify your build number.
+
+    :::image type="content" source="media\build-number-format-2019.png" alt-text="Screenshot of build number format setting.":::
+
+1. Save your changes.
+
+:::moniker-end
 
 ---
+
+Example PowerShell script:
 
 ```ps
 # If found use it to version the assemblies.
@@ -173,11 +196,13 @@ else
 
 ## Example PowerShell script: access REST API
 
-In this example, you'll use the `SYSTEM_ACCESSTOKEN` variable to access the [Azure Pipelines REST API](../../integrate/index.md). 
+In this example, you use the `SYSTEM_ACCESSTOKEN` variable to access the [Azure Pipelines REST API](../../integrate/index.md). 
 
 #### [YAML](#tab/yaml)
 
 You can use `$env:SYSTEM_ACCESSTOKEN` in your script in a YAML pipeline to access the OAuth token. 
+
+The following example inline PowerShell script uses the OAuth token to access the Azure Pipelines REST API that retrieves the pipeline definition.
 
 ```yaml
 - task: PowerShell@2
@@ -197,9 +222,15 @@ You can use `$env:SYSTEM_ACCESSTOKEN` in your script in a YAML pipeline to acces
 
 #### [Classic](#tab/classic)
 
-To enable your script to use the build process OAuth token, go to the **Tasks** tab of the build definition and within your build phase, select **Allow Scripts to Access OAuth Token**, which is located in the **Additional options** section.
+To enable your script to use the build process OAuth token, go to the **Tasks** tab of the build definition and select an **Agent job** and  select **Allow Scripts to Access OAuth Token** located in the **Additional options** section.
 
-After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md). For example:
+To enable your script to use the build process OAuth token, navigate to the **Tasks** tab of the build definition, select an **Agent job**, and in the **Additional options** section, select **Allow Scripts to Access OAuth Token**.
+
+:::image type="content" source="media\Allow-scripts-to-access-oauth-token.png" alt-text="Screenshot enabling OAuth token access for scripts.":::
+
+After you do that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md).
+
+The following example PowerShell script uses the OAuth token to access the Azure Pipelines REST API that retrieves the pipeline definition.
 
 ```ps
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
@@ -209,7 +240,6 @@ $pipeline = Invoke-RestMethod -Uri $url -Headers @{
 }
 Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 ```
-
 
 --- 
 
@@ -226,10 +256,10 @@ You can use [predefined variables](../build/variables.md) in your scripts. For m
 
 ### Which branch of the script does the build run?
 
-The build will use the active branch of your code. If your pipeline run uses the `main` branch, your script will also use the `main` branch. 
+The build uses the active branch of your code. If your pipeline run uses the `main` branch, your script also uses the `main` branch. 
 ### What kinds of parameters can I use?
 
-You can use named parameters. Other kinds of parameters, such as switch parameters, aren't supported. You'll see errors if you try to use switch parameters. 
+You can use named parameters. Other kinds of parameters, such as switch parameters, aren't supported. You see errors if you try to use switch parameters. 
 
 ::: moniker range="< azure-devops"
 [!INCLUDE [temp](../includes/qa-versions.md)]

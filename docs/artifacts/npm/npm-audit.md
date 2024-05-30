@@ -34,7 +34,7 @@ This synchronization ensures that other projects sharing the same feed will also
     npm audit
     ```
 
-1. If you want to attempt to upgrade to non-vulnerable package versions, make sure you're [connected to your feed](./npmrc.md#project-setup) first, then run the following command in your project directory:
+1. If you want to attempt to upgrade to non-vulnerable package versions, make sure you're [connected to your feed](./npmrc.md#connect-to-feed) first, then run the following command in your project directory:
 
     ```Command
     npm audit fix

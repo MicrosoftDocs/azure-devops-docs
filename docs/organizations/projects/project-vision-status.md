@@ -61,7 +61,7 @@ Each project provides a **Summary** or home page to share information and showca
   - Change the repository that you use to share project information
   - Manage project membership
 - To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
-- To view the project **Summary**, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../security/about-permissions.md#validusers).
+- To view the project **Summary**, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../security/about-permissions.md#valid-user-groups).
 - To add or edit project **Tags**, you must have the project-level **Manage properties** permission set to **Allow**. This permission controls the project properties REST API. The project properties REST API is used to drive the project tags experience in the product.  
 
 > [!TIP]    
