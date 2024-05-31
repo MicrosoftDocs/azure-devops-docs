@@ -124,7 +124,6 @@ steps:
 > [!NOTE]
 > `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. See [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) for more details.
 
-
 ```yaml
 task: DotNetCoreCLI@2
 inputs:
@@ -201,38 +200,72 @@ To publish your packages to external NuGet feeds or public registries, such as f
 
 1. Fill out the required fields and then select **Save** when you're done. See [Manage service connections](../library/service-endpoints.md) for more details.  
 
-> [!NOTE]
-> The **NuGetAuthenticate@1** task supports a service connection using basic authenication.  The task doesn't support NuGet API key authentication. If your service connection uses **ApiKey**, you must use the **NuGetCommand@2** task and specify the NuGet API key in the **arguments** field. For more information, see [NuGet task](/azure/devops/pipelines/tasks/reference/nuget-command-v2).
-To publish a package to an external NuGet feed, add the following snippet to your YAML pipeline.
-**Using the** [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) (with NuGet.exe):
-```yaml
-  - task: NuGetAuthenticate@1
-    inputs:
-      nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
-      
-  - script: |
-      nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
-    displayName: "Push"          
-```
-**Using the** [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) (with dotnet):
-  ```yaml
-    - task: NuGetAuthenticate@1
-      inputs:
-        nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
-        
-    - script: |
-        dotnet build <CSPROJ_PATH> --configuration <CONFIGURATION>
-        dotnet pack <CSPROJ_PATH> -p:PackageVersion=<YOUR_PACKAGE_VERSION> --output <OUTPUT_DIRECTORY> --configuration <CONFIGURATION>
-        dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING>
-      displayName: "Build, pack and push"          
-  ```
-> [!NOTE]
-> The `ApiKey` is required, but you can use any arbitrary value when pushing to Azure Artifacts feeds.
+#### [YAML](#tab/yaml/)
 
+> [!NOTE]
+> The [NuGetAuthenticate@1 task](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) supports service connections with basic authentication but does not support Apikey authentication. To use ApiKey authentication, you must use the [NuGetCommand@2 task](/azure/devops/pipelines/tasks/reference/nuget-command-v2) instead.
+
+To publish your NuGet packages to a feed in a different organization, add the following snippet to your YAML pipeline:
+
+- **Using the [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) and NuGet.exe**:
+
+    ```yaml
+      - task: NuGetAuthenticate@1
+        inputs:
+          nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
+          
+      - script: |
+          nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
+        displayName: "Push"          
+    ```
+
+- **Using the [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) and dotnet**:
+  
+    ```yaml
+        - task: NuGetAuthenticate@1
+          inputs:
+            nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
+            
+        - script: |
+            dotnet build <CSPROJ_PATH> --configuration <CONFIGURATION>
+            dotnet pack <CSPROJ_PATH> -p:PackageVersion=<YOUR_PACKAGE_VERSION> --output <OUTPUT_DIRECTORY> --configuration <CONFIGURATION>
+            dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING>
+          displayName: "Build, pack and push"          
+      ```
+
+> [!NOTE]
+> The `ApiKey` is required, but you can use any string when publishing to an Azure Artifacts feed.
+
+#### [Classic](#tab/classic/)
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+2. Select **Pipelines** > **Builds**, and then select your build definition. 
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+1. Navigate to the Azure DevOps portal, and then select your project.
+
+2. Select **Pipelines**, and then select your pipeline definition. 
+
+::: moniker-end
+
+3. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet task* to your pipeline definition and configure it as follows:
+
+    - **Command**: *push*.
+    - **Path to NuGet package(s) to publish**: the pattern to match or the path to the *nupkg* files.
+    - **Target feed location**: choose *External NuGet server (including other accounts/collections)*.
+    - **NuGet server**: select the NuGet service connection that you created earlier.
+
+- - -
 
 ## Publish to NuGet.org
 
-1. [Generate an API key](../../artifacts/nuget/publish-to-nuget-org.md#generate-an-api-key).
+1. Sign in to your nuget.org account and [Generate an API key](../../artifacts/nuget/publish-to-nuget-org.md#generate-an-api-key).
 
 1. Navigate to your Azure DevOps project and then select ![gear icon](../../media/icons/gear-icon.png) **Project settings**.
 
@@ -240,16 +273,13 @@ To publish a package to an external NuGet feed, add the following snippet to you
 
 1. Select **NuGet**, and then select **Next**.
 
-1. Select **ApiKey** as your authentication method. Use the following url for your **Feed URL**: *https://api.nuget.org/v3/index.json*. 
+1. Select **ApiKey** as your authentication method, and use the following url for your **Feed URL**: *https://api.nuget.org/v3/index.json*. 
 
-1. Enter the **ApiKey** you generated earlier, and then enter a **Service connection name**. 
+1. Enter the **ApiKey** you generated earlier, then provide a **Service connection name**. 
 
-1. Select **Grant access permission to all pipelines**, and then select **Save** when you're done. To select this option, you need the [service connection **Administrator** role](../library/add-resource-protection.md). 
-
+1. Select **Grant access permission to all pipelines**, and then select **Save** when you're done. Note that you need the [service connection](../library/add-resource-protection.md) Administrator role to select this option. 
 
 #### [YAML](#tab/yaml/)
-
-Add the following YAML snippet to your pipeline definition:
 
 ```yml
 steps:
@@ -260,25 +290,38 @@ steps:
     nuGetFeedType: external
     publishFeedCredentials: nuget.org
 ```
+
 #### [Classic](#tab/classic/)
 
-Add the NuGet task to your pipeline definition and configure it as follows:
+::: moniker range="azure-devops-2019"
 
-1. Select the Push **Command**.
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
-1. Select the **Path to NuGet package(s) to publish** or keep the default value. 
+2. Select **Pipelines** > **Builds**, and then select your build definition. 
 
-1. Select **External NuGet server** for your **Target feed location**, and then select the service connection you created earlier.
+::: moniker-end
 
-1. Select **Save & queue** when you're done.
+::: moniker range="> azure-devops-2019"
 
-:::image type="content" source="media/push-to-nuget-org.png" alt-text="Screenshot showing how to configure the NuGet push task in Azure Pipelines":::
+1. Navigate to the Azure DevOps portal, and then select your project.
+
+2. Select **Pipelines**, and then select your pipeline definition. 
+
+::: moniker-end
+
+3. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet task* to your pipeline definition and configure it as follows:
+
+    - **Command**: *push*.
+    - **Path to NuGet package(s) to publish**: the pattern to match or the path to the *nupkg* files.
+    - **Target feed location**: choose *External NuGet server (including other accounts/collections)*.
+    - **NuGet server**: select the NuGet service connection that you created earlier.
+
+    :::image type="content" source="media/push-to-nuget-org.png" alt-text="A screenshot that shows how to configure the NuGet task to publish packages to nuget.org.":::
 
 - - -
 
 ## Related articles
 
 - [Publish npm packages with Azure Pipelines](./npm.md)
-- [Publish and download Universal Packages in Azure Pipelines](./universal-packages.md)
-- [Releases in Azure Pipelines](../release/releases.md)
-- [Release artifacts and artifact sources](../release/artifacts.md)
+- [Use packages from NuGet.org](../../artifacts/nuget/upstream-sources.md)
+- [Publish and download Universal Packages with Azure Pipelines](./universal-packages.md)
