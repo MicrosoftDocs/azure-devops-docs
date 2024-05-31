@@ -28,7 +28,7 @@ Learn how to invite external users to your organization. If you access Azure Dev
 ![External guest access turned on](media/add-external-user/guest-access-preview.png)
 
 > [!NOTE]
-> Use a different email address or user principal name (UPN) for your personal and business accounts. This eliminates the challenge of disambiguating between your business and personal accounts when the email or UPN is the same.
+> **Required:** Use a different email address or user principal name (UPN) for your personal and business accounts. This eliminates the challenge of disambiguating between your business and personal accounts when the email or UPN is the same.
 
 ## Invite external user
 
